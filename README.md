@@ -84,19 +84,25 @@ grok-build
 open-code
 ```
 
-El resultado se imprime en terminal y tambien genera el archivo mas importante para cualquier IA:
+El resultado se imprime en terminal y tambien genera una super guia practica especifica para ese proyecto:
+
+```txt
+ai_index/SUPERGUIAS/<nombre-del-proyecto>.md
+```
+
+Tambien actualiza este alias con la ultima recomendacion:
 
 ```txt
 ai_index/CONTEXT_PACKS/latest.md
 ```
 
-Ese archivo es una super guia practica optimizada para tokens. Incluye diagnostico de intencion, herramienta efectiva inferida, finalistas, por que entra cada repo, como funciona, orden de instalacion, si va global/local/Docker/referencia, cautelas, instrucciones para humano e instrucciones para una IA instaladora. Puedes decirle a cualquier chat/agente:
+La super guia generada es el archivo mas importante para cualquier IA. Incluye diagnostico de intencion, herramienta efectiva inferida, finalistas, por que entra cada repo, como funciona, orden de instalacion, si va global/local/Docker/referencia, cautelas, instrucciones para humano e instrucciones para una IA instaladora. Puedes decirle a cualquier chat/agente:
 
 ```txt
 Lee ai_index/CONTEXT_PACKS/latest.md. Con eso decide que repos instalar, en que modo y en que orden. No leas repos completos salvo finalistas.
 ```
 
-Tambien puedes compartir solo ese archivo con otra IA si no quieres darle toda la biblioteca.
+Tambien puedes compartir el archivo de `ai_index/SUPERGUIAS/` con otra IA si no quieres darle toda la biblioteca ni perder recomendaciones anteriores.
 
 Regla importante: `--tool` indica con que asistente estas ejecutando el sistema, pero la descripcion del proyecto puede mencionar otra herramienta objetivo. Si ejecutas desde Codex pero escribes "optimizar Claude Code", el sistema prioriza el ecosistema Claude Code.
 
@@ -127,10 +133,10 @@ uv run repo-intelligence report daily
 
 | Objetivo | Estado | Notas |
 |---|---|---|
-| Usuario describe proyecto y herramienta de construccion | Cubierto | `recommend --tool ... --project ...` genera recomendaciones y contexto IA. |
+| Usuario describe proyecto y herramienta de construccion | Cubierto | `recommend --tool ... --project ...` genera una super guia practica por proyecto. |
 | Elegir repos por funcion real | Cubierto | Usa `REPOS.scan`, `REPOS.detail`, tags, recetas, boosts por herramienta e intencion detectada. |
 | Decidir global/local/Docker/referencia/diferido | Cubierto inicial | Cada recomendacion trae `install_mode`. |
-| Explicar orden de instalacion | Cubierto | `latest.md` separa global/local/Docker/referencia/diferido y da el orden operativo. |
+| Explicar orden de instalacion | Cubierto | La super guia separa global/local/Docker/referencia/diferido y da el orden operativo. |
 | Generar guia practica por repo finalista | Cubierto inicial | Incluye por que, como funciona, pasos, cautelas e instrucciones para humano/IA; algunos comandos exactos aun dependen del README finalista. |
 | Inferir herramienta objetivo desde el texto | Cubierto inicial | Por ejemplo, una consulta sobre Claude Code prioriza repos de Claude Code aunque el comando se corra con `--tool codex`. |
 | Instalar automaticamente repos elegidos | No automatico | Por seguridad, el sistema recomienda; la instalacion se ejecuta despues conscientemente. |
@@ -226,16 +232,17 @@ El sistema separa:
 
 ### Paso 4: Dale el contexto a tu agente de IA
 
-Archivo generado:
+Archivos generados:
 
 ```txt
+ai_index/SUPERGUIAS/<nombre-del-proyecto>.md
 ai_index/CONTEXT_PACKS/latest.md
 ```
 
 Prompt recomendado:
 
 ```txt
-Lee ai_index/CONTEXT_PACKS/latest.md. Usa solo los repos recomendados como finalistas. Indica que instalar global, local y Docker. No instales catalogos completos de skills. No leas repos completos salvo que el contexto diga que son finalistas.
+Lee la super guia generada en ai_index/SUPERGUIAS/ o, si estas trabajando con la ultima consulta, ai_index/CONTEXT_PACKS/latest.md. Usa solo los repos recomendados como finalistas. Indica que instalar global, local y Docker. No instales catalogos completos de skills. No leas repos completos salvo que el contexto diga que son finalistas.
 ```
 
 ### Paso 5: Instala en orden
@@ -295,12 +302,13 @@ Salida esperada: frontend/UI, datos, graficas, skills de diseño y librerías de
 
 Lectura minima, en este orden:
 
-1. `ai_index/CONTEXT_PACKS/latest.md` si ya existe una descripcion de proyecto.
-2. `ai_index/WINNERS.json` para decisiones base por funcion.
-3. `ai_index/ROUTER.json` para saber que leer primero y que evitar.
-4. `ai_index/REPOS.scan.json` para explorar la biblioteca con bajo costo.
-5. `ai_index/REPOS.detail.json` solo para finalistas.
-6. `human/fichas/<repo>.md` solo para repos candidatos.
+1. `ai_index/SUPERGUIAS/<nombre-del-proyecto>.md` si ya existe una recomendacion para ese proyecto.
+2. `ai_index/CONTEXT_PACKS/latest.md` si quieres la ultima recomendacion generada.
+3. `ai_index/WINNERS.json` para decisiones base por funcion.
+4. `ai_index/ROUTER.json` para saber que leer primero y que evitar.
+5. `ai_index/REPOS.scan.json` para explorar la biblioteca con bajo costo.
+6. `ai_index/REPOS.detail.json` solo para finalistas.
+7. `human/fichas/<repo>.md` solo para repos candidatos.
 
 ## Salidas humanas
 

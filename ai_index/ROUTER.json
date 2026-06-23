@@ -1,6 +1,13 @@
 {
   "questions": [
     {
+      "intent": "instalar repos para proyecto concreto",
+      "generate_first": "uv run repo-intelligence recommend --tool <herramienta> --project \"<descripcion>\" --max-repos 7",
+      "read_first": ["ai_index/SUPERGUIAS/<proyecto>.md", "ai_index/CONTEXT_PACKS/latest.md"],
+      "avoid_first": ["repos completos", "todos los README", "catalogos completos de skills"],
+      "output_expected": "superguia con por que, como funciona, modo global/local/Docker/referencia, orden, cautelas e instrucciones humano/IA"
+    },
+    {
       "intent": "decidir que repo usar",
       "read_first": ["ai_index/WINNERS.json", "ai_index/REPOS.scan.json", "registry/repos.yaml"],
       "avoid_first": ["Guia.md", "repos completos", "todos los README"]

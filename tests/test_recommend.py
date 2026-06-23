@@ -59,6 +59,14 @@ def test_recommend_infers_claude_code_and_filters_generic_code(tmp_path: Path) -
         "context-engineering",
         "prompt-master",
     ]
+    superguide = tmp_path / result["superguide_file"]
+    latest = tmp_path / result["latest_superguide_file"]
+    assert superguide.exists()
+    assert latest.exists()
+    text = superguide.read_text(encoding="utf-8")
+    assert "# Super Guia Practica Del Proyecto" in text
+    assert "Quiero optimizar y ultralizar Claude Code para uso diario" in text
+    assert "Prompt Para El Agente Instalador" in text
 
 
 def _repo(repo_id: str, role: str, tags: list[str]) -> dict[str, object]:

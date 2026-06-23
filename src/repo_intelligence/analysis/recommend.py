@@ -354,12 +354,15 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
     reference_only = [item for item in selected if item["install_mode"] == "reference_only"]
     deferred = [item for item in selected if item["install_mode"] == "deferred"]
 
+    safe_name = _slug(project)[:80] or "project"
     result = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "project": project,
         "requested_tool": build_tool,
         "build_tool": effective_tool,
         "detected_intents": sorted(intents),
+        "superguide_file": f"ai_index/SUPERGUIAS/{safe_name}.md",
+        "latest_superguide_file": "ai_index/CONTEXT_PACKS/latest.md",
         "read_first_for_any_ai": [
             "ai_index/WINNERS.json",
             "ai_index/ROUTER.json",
@@ -376,15 +379,30 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
         "avoid_by_default": _avoid_by_default(winners),
     }
 
-    safe_name = _slug(project)[:80] or "project"
     write_json(project_root / "data" / "decisions" / f"{safe_name}.json", result)
-    write_context_pack(project_root, result)
+    write_superguide(project_root, result, safe_name=safe_name)
     return result
 
 
+def write_superguide(project_root: Path, result: dict[str, Any], safe_name: str | None = None) -> Path:
+    safe_name = safe_name or _slug(result.get("project", ""))[:80] or "project"
+    text = _render_superguide(result)
+    superguide = project_root / "ai_index" / "SUPERGUIAS" / f"{safe_name}.md"
+    latest = project_root / "ai_index" / "CONTEXT_PACKS" / "latest.md"
+    superguide.parent.mkdir(parents=True, exist_ok=True)
+    latest.parent.mkdir(parents=True, exist_ok=True)
+    superguide.write_text(text, encoding="utf-8")
+    latest.write_text(text, encoding="utf-8")
+    return superguide
+
+
 def write_context_pack(project_root: Path, result: dict[str, Any]) -> Path:
+    return write_superguide(project_root, result)
+
+
+def _render_superguide(result: dict[str, Any]) -> str:
     lines = [
-        "# Super Guia Practica Para IA",
+        "# Super Guia Practica Del Proyecto",
         "",
         f"Generado: {result['generated_at']}",
         "",
@@ -402,6 +420,8 @@ def write_context_pack(project_root: Path, result: dict[str, Any]) -> Path:
         f"- Herramienta efectiva inferida: `{result.get('build_tool', '')}`",
         f"- Intenciones detectadas: {', '.join(result.get('detected_intents', [])) or 'general'}",
         "- Regla aplicada: la herramienta con la que construyes no siempre es el proveedor LLM de la app. Si el texto menciona Claude Code, se prioriza su ecosistema aunque el comando se haya ejecutado desde Codex.",
+        f"- Archivo estable de esta recomendacion: `{result.get('superguide_file', '')}`",
+        f"- Alias siempre actualizado: `{result.get('latest_superguide_file', 'ai_index/CONTEXT_PACKS/latest.md')}`",
         "",
         "## Indices que cualquier IA debe leer primero",
         "",
@@ -412,7 +432,7 @@ def write_context_pack(project_root: Path, result: dict[str, Any]) -> Path:
             "",
             "## Veredicto Rapido",
             "",
-            "Estos son los finalistas. No instales catalogos completos: instala o copia piezas concretas despues de leer la seccion de cada repo.",
+            "Estos son los finalistas para este proyecto concreto. No instales catalogos completos: instala o copia piezas concretas despues de leer la seccion de cada repo.",
             "",
             "| Orden | Repo | Papel en el stack | Instalacion | Por que entra | Cuidado |",
             "|---:|---|---|---|---|---|",
@@ -494,22 +514,28 @@ def write_context_pack(project_root: Path, result: dict[str, Any]) -> Path:
     lines.extend(
         [
             "",
+            "## Instrucciones Para El Humano",
+            "",
+            "1. Usa esta guia como lista de compra del proyecto, no como catalogo general.",
+            "2. Instala primero lo global, despues lo local, luego Docker, y al final copia piezas de referencia.",
+            "3. Si un repo esta marcado como `reference_only`, no lo instales completo: copia solo la skill, prompt, comando, hook o plantilla concreta que necesites.",
+            "4. Si dos repos compiten, elige uno. Si se complementan, respeta el orden de esta guia.",
+            "5. Guarda esta superguia dentro de la documentacion del proyecto real si vas a delegar la instalacion a otra IA.",
+            "",
             "## Prompt Para El Agente Instalador",
             "",
             "```txt",
-            "Lee este archivo completo. Usa solo los repos finalistas y respeta el orden.",
+            "Lee esta superguia completa. Fue generada para un proyecto concreto; no la sustituyas por una lectura masiva de la biblioteca.",
+            "Usa solo los repos finalistas y respeta el orden.",
             "Antes de instalar, separa: global, local del proyecto, Docker local, referencia y diferido.",
             "Para repos de tipo skill/directory, no copies catalogos completos: elige piezas concretas, explica por que, revisa permisos y evita instrucciones duplicadas.",
             "Si necesitas abrir mas contexto, abre primero REPOS.detail.json por id y despues la ficha humana del repo finalista. No leas repos completos salvo que vayas a instalar ese repo.",
+            "Antes de ejecutar cambios, reporta el plan de instalacion con comandos o acciones concretas para cada grupo.",
             "```",
             "",
         ]
     )
-
-    output = project_root / "ai_index" / "CONTEXT_PACKS" / "latest.md"
-    output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    return output
+    return "\n".join(lines) + "\n"
 
 
 def _append_install_group(lines: list[str], repos: list[dict[str, Any]]) -> None:

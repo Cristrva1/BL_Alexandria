@@ -170,7 +170,8 @@ def recommend_project(
         reason = repo.get("expert_reason") or ", ".join(repo.get("reasons", []))
         table.add_row(repo["id"], str(repo["score"]), repo["install_mode"], _first_line(reason, 110))
     console.print(table)
-    console.print(f"Wrote {paths.project_root / 'ai_index' / 'CONTEXT_PACKS' / 'latest.md'}")
+    console.print(f"Wrote {paths.project_root / result['superguide_file']}")
+    console.print(f"Updated {paths.project_root / result['latest_superguide_file']}")
 
 
 @guide_app.command("build")
@@ -197,8 +198,8 @@ def context_build(
     """Create a portable AI context pack for a project/query."""
     paths = ProjectPaths.load()
     result = recommend(paths.project_root, query or "general repository intelligence project", max_repos=max_repos, build_tool=tool)
-    output = paths.project_root / "ai_index" / "CONTEXT_PACKS" / "latest.md"
-    console.print(f"Wrote {output}")
+    console.print(f"Wrote {paths.project_root / result['superguide_file']}")
+    console.print(f"Updated {paths.project_root / result['latest_superguide_file']}")
     console.print(f"Recommended {len(result['recommended_repos'])} repos")
 
 

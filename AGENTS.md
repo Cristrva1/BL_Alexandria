@@ -6,6 +6,9 @@ Esta biblioteca contiene **156 repositorios** de IA y automatización, ya analiz
 
 ## ⚡ TL;DR — protocolo de selección (en orden)
 
+0. **Si el usuario ya describió un proyecto concreto**, genera primero su superguía:
+   `uv run repo-intelligence recommend --tool <herramienta> --project "<descripcion>" --max-repos 7`.
+   Luego lee `ai_index/SUPERGUIAS/<proyecto>.md` o `ai_index/CONTEXT_PACKS/latest.md`. Esa guía ya trae finalistas, orden, instalación y cautelas.
 1. **Lee `INDICE_IA.json`** (índice compacto, 1 línea por repo). Es la única lectura obligatoria. No abras los `.md` todavía.
 2. **Filtra candidatos** por `cat` (categoría), `tags`, `role`, `exec`, `setup`, `prov` (proveedor LLM) y palabras de `one` (resumen de una línea).
 3. **Desempata** entre repos parecidos con el campo `alt` (alternativas): si ya elegiste uno, **descarta sus `alt`** — cumplen la misma función, no necesitas dos.
@@ -24,6 +27,8 @@ Esta biblioteca contiene **156 repositorios** de IA y automatización, ya analiz
 | **`AGENTS.md`** (este) | Instrucciones de navegación | Primero, siempre |
 | **`INDICE_IA.json`** | Índice **compacto** (scan): id, cat, tags, role, exec, setup, prov, resumen, alternativas | Para preseleccionar (lectura principal) |
 | **`INDICE_IA.detalle.json`** | Detalle por `id`: desc completa, stack, choose_if, avoid_if, combines_with | Solo para finalistas |
+| **`ai_index/SUPERGUIAS/*.md`** | Superguías generadas por proyecto: finalistas, por qué, cómo, orden, global/local/Docker/referencia | Primero si ya hay una descripción de proyecto |
+| **`ai_index/CONTEXT_PACKS/latest.md`** | Alias de la última superguía generada | Para continuar la última recomendación |
 | **`guia/NN-*.md`** | Ficha **humana** completa por categoría (13 archivos) | Lectura humana o detalle máximo |
 | **`guia/README.md`** | Mapa de categorías + leyenda + recetas (versión humana) | Navegación humana |
 | **`Catalogo.md`** | Tabla plana de los 156 repos (instalación + API) | Referencia rápida tabular |
