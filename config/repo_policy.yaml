@@ -1,0 +1,51 @@
+rules:
+  max_recommendations_per_function: 3
+  read_full_readme_only_for_finalists: true
+  install_catalogs_as_dependencies: false
+  daily_repomix_all_repos: false
+  daily_llm_on_unchanged_repos: false
+install_modes:
+  global:
+    - git
+    - gh
+    - node
+    - pnpm
+    - uv
+    - docker
+    - repomix
+    - gitnexus
+    - markitdown
+  local_project:
+    - typer
+    - rich
+    - pydantic
+    - pyyaml
+    - orjson
+    - gitpython
+    - unidiff
+    - requests
+    - python-dotenv
+    - sqlalchemy
+    - duckdb
+    - pandas
+    - jinja2
+    - networkx
+    - rapidfuzz
+    - loguru
+    - crawl4ai
+  docker_later:
+    - n8n
+    - langfuse
+  deferred:
+    - graphrag
+    - graphify
+    - crewai
+    - ag2
+    - dify
+    - flowise
+    - openhands
+    - mem0
+    - agentmemory
+    - mcp-use
+    - firecrawl
+    - browser-use

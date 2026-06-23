@@ -1,0 +1,37 @@
+global_allowed:
+  - git
+  - gh
+  - node
+  - pnpm
+  - uv
+  - docker
+  - repomix
+  - gitnexus
+  - markitdown
+local_allowed:
+  - crawl4ai
+  - markitdown
+  - typer
+  - rich
+  - pydantic
+  - pyyaml
+  - orjson
+  - gitpython
+  - unidiff
+  - requests
+  - python-dotenv
+  - sqlalchemy
+  - duckdb
+  - pandas
+  - jinja2
+  - networkx
+  - rapidfuzz
+  - loguru
+reference_only:
+  - awesome-agent-skills
+  - antigravity-awesome-skills
+  - marketingskills
+  - taste-skill
+  - Context-Engineering
+  - prompt-master
+  - SkillSpector

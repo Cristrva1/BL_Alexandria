@@ -1,0 +1,20 @@
+repo_library_management:
+  description: "Administrar y decidir que repos usar en la biblioteca local."
+  winners:
+    - scripts_propios
+    - repomix
+    - gitnexus
+    - markitdown
+    - crawl4ai
+repo_context_packaging:
+  winner: repomix
+  alternative: manual_context_pack
+repo_structure_analysis:
+  winner: gitnexus
+  alternative: codegraph
+document_conversion:
+  winner: markitdown
+  alternative: custom_parser
+web_docs_extraction:
+  winner: crawl4ai
+  alternative: manual_browser

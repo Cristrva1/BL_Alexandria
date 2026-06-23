@@ -1,0 +1,31 @@
+{
+  "repo_library_management": {
+    "winner": "scripts_propios",
+    "support_tools": ["repomix", "gitnexus", "markitdown", "crawl4ai"],
+    "avoid_now": ["graphrag", "crewai", "dify", "flowise"],
+    "reason": "El problema principal es curaduria e indices compactos, no una plataforma multiagente."
+  },
+  "repo_context_packaging": {
+    "winner": "repomix",
+    "alternative": "manual_context_pack",
+    "avoid_now": ["full_readme_dump"],
+    "reason": "Repomix empaqueta repos finalistas; no debe usarse para toda la biblioteca."
+  },
+  "repo_structure_analysis": {
+    "winner": "gitnexus",
+    "alternative": "codegraph",
+    "defer": ["graphify", "graphrag"],
+    "reason": "GitNexus ofrece CLI clara y analisis local; GraphRAG es excesivo para V1."
+  },
+  "document_conversion": {
+    "winner": "markitdown",
+    "alternative": "custom_parser",
+    "reason": "Convierte multiples formatos a Markdown para indexado."
+  },
+  "web_docs_extraction": {
+    "winner": "crawl4ai",
+    "alternative": "manual_browser",
+    "defer": ["firecrawl", "browser-use"],
+    "reason": "Crawl4AI local cubre extraccion web sin depender primero de SaaS."
+  }
+}

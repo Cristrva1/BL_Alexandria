@@ -1,0 +1,19 @@
+{
+  "questions": [
+    {
+      "intent": "decidir que repo usar",
+      "read_first": ["ai_index/WINNERS.json", "ai_index/REPOS.scan.json", "registry/repos.yaml"],
+      "avoid_first": ["Guia.md", "repos completos", "todos los README"]
+    },
+    {
+      "intent": "analizar repo finalista",
+      "read_first": ["ai_index/WINNERS.json", "data/extracted/{repo}/facts.json"],
+      "use_tools_if_needed": ["repomix", "gitnexus"]
+    },
+    {
+      "intent": "extraer documentacion externa",
+      "read_first": ["README local", "metadata gh"],
+      "use_tools_if_needed": ["crawl4ai", "markitdown"]
+    }
+  ]
+}

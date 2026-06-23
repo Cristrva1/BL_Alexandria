@@ -1,0 +1,19 @@
+tools:
+  git:
+    install_mode: global
+    purpose: "Actualizar y analizar repos."
+  gh:
+    install_mode: global
+    purpose: "Metadata oficial de GitHub sin scraping."
+  repomix:
+    install_mode: global
+    purpose: "Empaquetar repos finalistas para contexto IA."
+  gitnexus:
+    install_mode: global
+    purpose: "Analisis estructural de repos grandes."
+  markitdown:
+    install_mode: global_and_local
+    purpose: "Convertir documentos a Markdown."
+  crawl4ai:
+    install_mode: local_project
+    purpose: "Extraer documentacion web cuando README y gh no bastan."

@@ -1,0 +1,13 @@
+weights:
+  problem_fit: 5
+  install_friction: -2
+  maintenance_cost: -2
+  local_first: 2
+  token_savings: 3
+  duplicates_existing_winner: -4
+thresholds:
+  defer_if_install_friction_at_least: 4
+  defer_if_problem_fit_below: 5
+  reference_only_roles:
+    - directory
+    - skill
