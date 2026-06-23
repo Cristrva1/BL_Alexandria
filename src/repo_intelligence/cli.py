@@ -167,7 +167,8 @@ def recommend_project(
     table.add_column("Install")
     table.add_column("Reason")
     for repo in result["recommended_repos"]:
-        table.add_row(repo["id"], str(repo["score"]), repo["install_mode"], _first_line(", ".join(repo.get("reasons", [])), 90))
+        reason = repo.get("expert_reason") or ", ".join(repo.get("reasons", []))
+        table.add_row(repo["id"], str(repo["score"]), repo["install_mode"], _first_line(reason, 110))
     console.print(table)
     console.print(f"Wrote {paths.project_root / 'ai_index' / 'CONTEXT_PACKS' / 'latest.md'}")
 

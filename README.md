@@ -90,13 +90,15 @@ El resultado se imprime en terminal y tambien genera el archivo mas importante p
 ai_index/CONTEXT_PACKS/latest.md
 ```
 
-Ese archivo es el paquete de contexto optimizado. Puedes decirle a cualquier chat/agente:
+Ese archivo es una super guia practica optimizada para tokens. Incluye diagnostico de intencion, herramienta efectiva inferida, finalistas, por que entra cada repo, como funciona, orden de instalacion, si va global/local/Docker/referencia, cautelas, instrucciones para humano e instrucciones para una IA instaladora. Puedes decirle a cualquier chat/agente:
 
 ```txt
 Lee ai_index/CONTEXT_PACKS/latest.md. Con eso decide que repos instalar, en que modo y en que orden. No leas repos completos salvo finalistas.
 ```
 
 Tambien puedes compartir solo ese archivo con otra IA si no quieres darle toda la biblioteca.
+
+Regla importante: `--tool` indica con que asistente estas ejecutando el sistema, pero la descripcion del proyecto puede mencionar otra herramienta objetivo. Si ejecutas desde Codex pero escribes "optimizar Claude Code", el sistema prioriza el ecosistema Claude Code.
 
 ### 2. Mantener y mejorar la biblioteca
 
@@ -126,10 +128,11 @@ uv run repo-intelligence report daily
 | Objetivo | Estado | Notas |
 |---|---|---|
 | Usuario describe proyecto y herramienta de construccion | Cubierto | `recommend --tool ... --project ...` genera recomendaciones y contexto IA. |
-| Elegir repos por funcion real | Cubierto inicial | Usa `REPOS.scan`, `REPOS.detail`, tags, recetas y boosts por herramienta. |
+| Elegir repos por funcion real | Cubierto | Usa `REPOS.scan`, `REPOS.detail`, tags, recetas, boosts por herramienta e intencion detectada. |
 | Decidir global/local/Docker/referencia/diferido | Cubierto inicial | Cada recomendacion trae `install_mode`. |
-| Explicar orden de instalacion | Cubierto inicial | `latest.md` separa global/local/Docker/referencia/diferido y da el orden operativo. |
-| Generar comandos exactos por repo finalista | Parcial | El sistema aun no extrae automaticamente el comando preciso desde cada README actualizado. |
+| Explicar orden de instalacion | Cubierto | `latest.md` separa global/local/Docker/referencia/diferido y da el orden operativo. |
+| Generar guia practica por repo finalista | Cubierto inicial | Incluye por que, como funciona, pasos, cautelas e instrucciones para humano/IA; algunos comandos exactos aun dependen del README finalista. |
+| Inferir herramienta objetivo desde el texto | Cubierto inicial | Por ejemplo, una consulta sobre Claude Code prioriza repos de Claude Code aunque el comando se corra con `--tool codex`. |
 | Instalar automaticamente repos elegidos | No automatico | Por seguridad, el sistema recomienda; la instalacion se ejecuta despues conscientemente. |
 | Actualizar biblioteca local | Cubierto | `pull --safe`, `discover`, `snapshot`. |
 | Regenerar catalogos/guias/fichas/playbooks | Cubierto | `guide build` genera salidas humanas e indices IA. |
@@ -247,6 +250,14 @@ Orden recomendado:
 6. Diferir todo lo marcado como `deferred`.
 
 ## Ejemplos
+
+### Optimizar Claude Code para uso diario
+
+```powershell
+uv run repo-intelligence recommend --tool codex --project "Quiero optimizar y ultralizar Claude Code para uso diario" --max-repos 7
+```
+
+Salida esperada: `superpowers`, `agent-toolkit`, `claude-plugins-official`, `awesome-claude-code`, `skillspector`, `context-engineering`, `prompt-master`. El sistema infiere `claude-code` como herramienta efectiva porque aparece en la descripcion.
 
 ### Bot de WhatsApp con IA
 
