@@ -1,6 +1,6 @@
 # 🌌 Catálogo de Repositorios de IA & Automatización
 
-Catálogo operativo de los **156 repositorios** locales del workspace, diseñado para **entender, comparar, elegir y combinar** repos rápido.
+Catálogo operativo de los **171 repositorios** locales del workspace, diseñado para **entender, comparar, elegir y combinar** repos rápido.
 
 ---
 
@@ -26,6 +26,10 @@ Cada ficha abre con una línea **Etiquetas:** que nombra cada valor — `Ejecuci
 - **Setup:** 🟢 fácil (CLI/instalar) · 🟡 medio (config/servicios) · 🔴 pesado (GPU/infra/self-host)
 
 ---
+
+<!-- BL_ALEXANDRIA_STATUS -->
+> Estado actual: **171 repos detectados** en la biblioteca local; **156 repos curados** con ficha completa en esta guía. Los repos nuevos sin ficha curada se agregan al apéndice automático sin reescribir el cuerpo editorial.
+<!-- /BL_ALEXANDRIA_STATUS -->
 
 ## 📂 Mapa de categorías
 
@@ -2441,3 +2445,31 @@ Conversión de formatos, generación de slides y herramientas de PDF.
 **Elige si:** quieres slides web — **Evita si:** necesitas PPTX editable en Office ([ppt-master](#-ppt-master)).
 **Combina con:** [markitdown](#-markitdown)
 **Repo:** [GitHub](https://github.com/hakimel/reveal.js)
+
+---
+
+<!-- BL_ALEXANDRIA_AUTO_APPEND_START -->
+## 🆕 Repos detectados pendientes de curaduría
+
+Generado: 2026-06-23T20:37:40.215555+00:00
+
+Esta sección se actualiza automáticamente para no destruir la guía curada. Integra manualmente estas fichas al cuerpo principal cuando quieras dejar la guía completamente editorial.
+
+| Repo | Categoria | Instalacion | Resumen |
+|---|---:|---|---|
+| [appsmith](human/fichas/appsmith.md) | 0 | reference_only | --- |
+| [ArchiveBox](human/fichas/archivebox.md) | 0 | reference_only | ▶️ <a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart">Quickstart</a> \| <a href="https://demo.archivebox.io">Demo</a> \| <a href="https://github.com/ArchiveBox/ArchiveBox">GitHub</a> \| <a href="https://github.com/ArchiveBox/ArchiveBox/wiki">Docu... |
+| [autogen](human/fichas/autogen.md) | 0 | reference_only | AutoGen [![Maintenance Mode](https://img.shields.io/badge/status-maintenance%20mode-orange)](https://github.com/microsoft/agent-framework) |
+| [awesome-mcp-clients](human/fichas/awesome-mcp-clients.md) | 0 | reference_only | Awesome MCP Clients [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) |
+| [budibase](human/fichas/budibase.md) | 0 | reference_only | Budibase |
+| [defending-code-reference-harness](human/fichas/defending-code-reference-harness.md) | 0 | reference_only | Defending Code Reference Harness |
+| [github-mcp-server](human/fichas/github-mcp-server.md) | 0 | reference_only | GitHub MCP Server |
+| [gradio](human/fichas/gradio.md) | 0 | reference_only | \| [Documentation](https://gradio.app/docs/) |
+| [Guardrails](human/fichas/guardrails.md) | 0 | reference_only | NVIDIA NeMo Guardrails Library |
+| [guia](human/fichas/guia.md) | 0 | reference_only | 🌌 Catálogo de Repositorios de IA & Automatización |
+| [NeMo](human/fichas/nemo.md) | 0 | reference_only | **NVIDIA NeMo Speech** |
+| [Nemotron](human/fichas/nemotron.md) | 0 | reference_only | NVIDIA Nemotron Developer Repository |
+| [repomix](human/fichas/repomix.md) | 0 | global | Need discussion? Join us on <a href="https://discord.gg/wNYzTwZFku">Discord</a>!<br> |
+| [ToolJet](human/fichas/tooljet.md) | 0 | reference_only | ToolJet is the open-source foundation of ToolJet AI - the AI-native platform for building and deploying internal tools, workflows and AI agents. The community edition provides a powerful visual builder, drag-and-drop UI, and integrations with databases, APIs,... |
+| [tools](human/fichas/tools.md) | 0 | reference_only | Repo detectado localmente, pendiente de ficha curada. |
+<!-- BL_ALEXANDRIA_AUTO_APPEND_END -->

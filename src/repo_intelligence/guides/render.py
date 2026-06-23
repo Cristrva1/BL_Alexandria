@@ -8,6 +8,12 @@ from typing import Any
 from repo_intelligence.core.io import read_json, read_yaml, write_json
 
 
+ROOT_GUIDE_APPEND_START = "<!-- BL_ALEXANDRIA_AUTO_APPEND_START -->"
+ROOT_GUIDE_APPEND_END = "<!-- BL_ALEXANDRIA_AUTO_APPEND_END -->"
+SCAN_ALIASES = {"ui": "ui-shadcn"}
+ROOT_GUIDE_CROSS_NOTE = '> Cada repo vive en **una** categoría; los cruces se resuelven con "Combina con". Excluidos por ser propios: `Binarias_Labs_C21`, `Binarias_Labs_Pruebas`.'
+
+
 def render_all(project_root: Path) -> dict[str, int]:
     compact = read_json(project_root / "INDICE_IA.json", {})
     detail = read_json(project_root / "INDICE_IA.detalle.json", {})
@@ -16,6 +22,9 @@ def render_all(project_root: Path) -> dict[str, int]:
 
     repos = compact.get("repos", [])
     detail_repos: dict[str, dict[str, Any]] = detail.get("repos", {})
+    scan_repos = scan.get("repos", [])
+    guide_repos = _merge_scan_repos(repos, scan_repos)
+    detected_repo_count = len(scan_repos) or len(guide_repos)
     local_by_id = _local_index(scan.get("repos", []), registry.get("repos", []))
     categories = compact.get("categories", [])
     recipes = compact.get("recipes", [])
@@ -24,7 +33,7 @@ def render_all(project_root: Path) -> dict[str, int]:
     _render_detail_index(project_root, generated_at, repos, detail_repos, local_by_id)
     _render_human_home(project_root, generated_at, repos, categories, recipes)
     _render_catalog(project_root, generated_at, repos, detail_repos, local_by_id)
-    _render_root_guide(project_root, generated_at, repos, detail_repos, categories, recipes)
+    _render_root_guide(project_root, generated_at, guide_repos, detail_repos, categories, recipes, detected_repo_count)
     _render_sections(project_root, generated_at, repos, detail_repos)
     _render_categories(project_root, generated_at, repos, detail_repos, categories)
     _render_cards(project_root, generated_at, repos, detail_repos, local_by_id)
@@ -32,7 +41,7 @@ def render_all(project_root: Path) -> dict[str, int]:
     _render_playbooks(project_root, generated_at, recipes, detail_repos)
 
     return {
-        "repos": len(repos),
+        "repos": detected_repo_count,
         "categories": len(categories),
         "cards": len(detail_repos),
         "comparisons": comparisons,
@@ -163,6 +172,7 @@ def _render_root_guide(
     detail_repos: dict[str, dict[str, Any]],
     categories: list[dict[str, Any]],
     recipes: list[dict[str, Any]],
+    detected_repo_count: int | None = None,
 ) -> None:
     by_cat: dict[int, list[dict[str, Any]]] = {}
     for repo in repos:
@@ -230,7 +240,7 @@ def _render_root_guide(
 
     generated_text = "\n".join(lines) + "\n"
     _write_text(project_root / "human" / "guia-generada.md", generated_text)
-    _update_rich_root_guide(project_root, generated_text, repos, detail_repos, generated_at)
+    _update_rich_root_guide(project_root, generated_text, repos, detail_repos, generated_at, detected_repo_count=detected_repo_count)
 
 
 def _update_rich_root_guide(
@@ -239,6 +249,7 @@ def _update_rich_root_guide(
     repos: list[dict[str, Any]],
     detail_repos: dict[str, dict[str, Any]],
     generated_at: str,
+    detected_repo_count: int | None = None,
 ) -> None:
     guide_path = project_root / "Guia.md"
     if not guide_path.exists():
@@ -250,40 +261,139 @@ def _update_rich_root_guide(
         _write_text(guide_path, fallback_text)
         return
 
+    current = _strip_root_guide_appendix(current)
+    current = _update_rich_guide_counts(current, repos, detail_repos, detected_repo_count=detected_repo_count)
     missing = _repos_missing_from_rich_guide(current, repos)
     if not missing:
+        if current != guide_path.read_text(encoding="utf-8"):
+            _write_text(guide_path, current)
         return
 
     appendix = _render_new_repo_appendix(missing, detail_repos, generated_at)
-    start = "<!-- BL_ALEXANDRIA_AUTO_APPEND_START -->"
-    end = "<!-- BL_ALEXANDRIA_AUTO_APPEND_END -->"
-    if start in current and end in current:
-        before = current.split(start, 1)[0].rstrip()
-        after = current.split(end, 1)[1].lstrip()
+    if ROOT_GUIDE_APPEND_START in current and ROOT_GUIDE_APPEND_END in current:
+        before = current.split(ROOT_GUIDE_APPEND_START, 1)[0].rstrip()
+        after = current.split(ROOT_GUIDE_APPEND_END, 1)[1].lstrip()
         updated = f"{before}\n\n{appendix}\n\n{after}"
     else:
-        updated = f"{current.rstrip()}\n\n---\n\n{appendix}\n"
+        base = re.sub(r"\n---\s*$", "", current.rstrip()).rstrip()
+        updated = f"{base}\n\n---\n\n{appendix}\n"
     _write_text(guide_path, updated)
+
+
+def _merge_scan_repos(compact_repos: list[dict[str, Any]], scan_repos: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    merged = list(compact_repos)
+    seen = {_norm(repo.get("id", "")) for repo in compact_repos}
+    for repo in scan_repos:
+        repo_id = _norm(repo.get("id", ""))
+        if not repo_id or repo_id in seen:
+            continue
+        alias = SCAN_ALIASES.get(repo_id)
+        if alias and _norm(alias) in seen:
+            continue
+        merged.append(
+            {
+                "id": repo.get("id"),
+                "name": repo.get("name") or repo.get("id"),
+                "cat": repo.get("cat") or 0,
+                "role": repo.get("role") or "unknown",
+                "exec": repo.get("exec") or "unknown",
+                "setup": repo.get("setup") or "unknown",
+                "tags": repo.get("tags", []),
+                "one": repo.get("one") or "Repo detectado localmente, pendiente de ficha curada.",
+                "install_mode": repo.get("install_mode") or "reference_only",
+                "decision": repo.get("decision") or "reference",
+                "alt": repo.get("alt", []),
+            }
+        )
+        seen.add(repo_id)
+    return merged
+
+
+def _strip_root_guide_appendix(current: str) -> str:
+    if ROOT_GUIDE_APPEND_START not in current or ROOT_GUIDE_APPEND_END not in current:
+        return current
+    before = current.split(ROOT_GUIDE_APPEND_START, 1)[0].rstrip()
+    before = re.sub(r"\n---\s*$", "", before).rstrip()
+    after = current.split(ROOT_GUIDE_APPEND_END, 1)[1].lstrip()
+    if after:
+        return f"{before}\n\n{after}"
+    return before + "\n"
+
+
+def _update_rich_guide_counts(
+    current: str,
+    repos: list[dict[str, Any]],
+    detail_repos: dict[str, dict[str, Any]],
+    detected_repo_count: int | None = None,
+) -> str:
+    total = detected_repo_count or len(repos)
+    curated = len(detail_repos)
+    current = re.sub(
+        r"Catálogo operativo de los \*\*\d+ repositorios\*\* locales del workspace",
+        f"Catálogo operativo de los **{total} repositorios** locales del workspace",
+        current,
+        count=1,
+    )
+    note = (
+        f"> Estado actual: **{total} repos detectados** en la biblioteca local; "
+        f"**{curated} repos curados** con ficha completa en esta guía. "
+        "Los repos nuevos sin ficha curada se agregan al apéndice automático sin reescribir el cuerpo editorial."
+    )
+    marker = "<!-- BL_ALEXANDRIA_STATUS -->"
+    status_block = f"{marker}\n{note}\n<!-- /BL_ALEXANDRIA_STATUS -->"
+    if marker in current and "<!-- /BL_ALEXANDRIA_STATUS -->" in current:
+        before = current.split(marker, 1)[0].rstrip()
+        after = current.split("<!-- /BL_ALEXANDRIA_STATUS -->", 1)[1].lstrip()
+        current = f"{before}\n\n{status_block}\n\n{after}"
+    else:
+        current = current.replace("## 📂 Mapa de categorías", f"{status_block}\n\n## 📂 Mapa de categorías", 1)
+    return _ensure_root_guide_cross_note(current)
+
+
+def _ensure_root_guide_cross_note(current: str) -> str:
+    if ROOT_GUIDE_CROSS_NOTE in current:
+        return current
+    marker = "\n---\n\n## 🔗 Recetas de integración"
+    if marker not in current:
+        return current
+    return current.replace(marker, f"\n{ROOT_GUIDE_CROSS_NOTE}\n{marker}", 1)
 
 
 def _repos_missing_from_rich_guide(current: str, repos: list[dict[str, Any]]) -> list[dict[str, Any]]:
     haystack = current.lower()
     missing: list[dict[str, Any]] = []
     for repo in repos:
-        repo_id = repo["id"]
-        repo_name = repo.get("name") or repo_id
-        candidates = {
-            repo_id.lower(),
-            repo_name.lower(),
-            _slug(repo_id),
-            _slug(repo_name),
-            _slug(repo_id).replace("-", "_"),
-            _slug(repo_name).replace("-", "_"),
-            f"#-{_slug(repo_id)}",
-        }
-        if not any(candidate and candidate in haystack for candidate in candidates):
+        if not _repo_has_rich_entry(haystack, repo):
             missing.append(repo)
     return missing
+
+
+def _repo_has_rich_entry(haystack: str, repo: dict[str, Any]) -> bool:
+    repo_id = repo["id"]
+    repo_name = repo.get("name") or repo_id
+    headings = [line for line in haystack.splitlines() if line.startswith("### ")]
+    slugs = {
+        _slug(repo_id),
+        _slug(repo_name),
+        _slug(repo_id).replace("-", "_"),
+        _slug(repo_name).replace("-", "_"),
+    }
+    for slug in slugs:
+        if not slug:
+            continue
+        if f"human/fichas/{slug}.md" in haystack:
+            return True
+    candidates = {
+        _norm(repo_id),
+        _norm(str(repo_name)),
+        _slug(repo_id),
+        _slug(str(repo_name)),
+    }
+    for heading in headings:
+        normalized = {_norm(heading).strip("# "), _slug(heading)}
+        if any(candidate and any(value == candidate or value.endswith(f"-{candidate}") for value in normalized) for candidate in candidates):
+            return True
+    return False
 
 
 def _render_new_repo_appendix(
@@ -292,8 +402,8 @@ def _render_new_repo_appendix(
     generated_at: str,
 ) -> str:
     lines = [
-        "<!-- BL_ALEXANDRIA_AUTO_APPEND_START -->",
-        "## 🆕 Repos detectados después de la guía curada",
+        ROOT_GUIDE_APPEND_START,
+        "## 🆕 Repos detectados pendientes de curaduría",
         "",
         f"Generado: {generated_at}",
         "",
@@ -314,7 +424,7 @@ def _render_new_repo_appendix(
                 desc=_esc(detail.get("desc") or repo.get("one") or ""),
             )
         )
-    lines.append("<!-- BL_ALEXANDRIA_AUTO_APPEND_END -->")
+    lines.append(ROOT_GUIDE_APPEND_END)
     return "\n".join(lines)
 
 
