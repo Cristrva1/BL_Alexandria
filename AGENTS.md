@@ -7,7 +7,8 @@ Esta biblioteca contiene **156 repositorios** de IA y automatización, ya analiz
 ## ⚡ TL;DR — protocolo de selección (en orden)
 
 0. **Si el usuario ya describió un proyecto concreto**, genera primero su superguía:
-   `uv run repo-intelligence recommend --tool <herramienta> --project "<descripcion>" --max-repos 7`.
+   `uv run repo-intelligence recommend --project "<descripcion con herramienta incluida>" --max-repos 7`.
+   Para briefs largos usa `uv run repo-intelligence recommend --project-file proyecto.md --max-repos 7`.
    Luego lee `ai_index/SUPERGUIAS/<proyecto>.md` o `ai_index/CONTEXT_PACKS/latest.md`. Esa guía ya trae finalistas, orden, instalación y cautelas.
 1. **Lee `INDICE_IA.json`** (índice compacto, 1 línea por repo). Es la única lectura obligatoria. No abras los `.md` todavía.
 2. **Filtra candidatos** por `cat` (categoría), `tags`, `role`, `exec`, `setup`, `prov` (proveedor LLM) y palabras de `one` (resumen de una línea).

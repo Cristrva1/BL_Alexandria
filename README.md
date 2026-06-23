@@ -5,7 +5,7 @@ Repo Intelligence Hub ayuda a una persona a decidir que repositorios de una bibl
 El caso de uso principal es simple: llegas con una idea, dices con que herramienta la vas a construir, y el sistema te recomienda que instalar, que leer, que diferir y en que orden avanzar.
 
 ```powershell
-uv run repo-intelligence recommend --tool codex --project "bot de WhatsApp con IA para responder clientes y guardar leads" --max-repos 7
+uv run repo-intelligence recommend --project "bot de WhatsApp con IA para responder clientes y guardar leads. Lo voy a construir con Codex." --max-repos 7
 ```
 
 ## Explorar la biblioteca sin instalar nada
@@ -71,13 +71,15 @@ El sistema debe responder:
 Comando principal:
 
 ```powershell
-uv run repo-intelligence recommend --tool codex --project "quiero hacer un bot de WhatsApp con IA para responder clientes, guardar leads y escalar a humano" --max-repos 7
+uv run repo-intelligence recommend --project "quiero hacer un bot de WhatsApp con IA para responder clientes, guardar leads y escalar a humano. Lo voy a construir con Codex." --max-repos 7
 ```
 
-Herramientas aceptadas en `--tool`:
+`--tool` es opcional y por defecto vale `auto`. El sistema intenta tomar la herramienta desde la redaccion del proyecto. Si quieres dar una pista manual, estas son las opciones aceptadas:
 
 ```txt
+auto
 codex
+claude
 claude-code
 antigravity
 grok-build
@@ -104,7 +106,7 @@ Lee ai_index/CONTEXT_PACKS/latest.md. Con eso decide que repos instalar, en que 
 
 Tambien puedes compartir el archivo de `ai_index/SUPERGUIAS/` con otra IA si no quieres darle toda la biblioteca ni perder recomendaciones anteriores.
 
-Regla importante: `--tool` indica con que asistente estas ejecutando el sistema, pero la descripcion del proyecto puede mencionar otra herramienta objetivo. Si ejecutas desde Codex pero escribes "optimizar Claude Code", el sistema prioriza el ecosistema Claude Code.
+Regla importante: la descripcion del proyecto manda. Si escribes "optimizar Claude Code", el sistema prioriza el ecosistema Claude Code aunque no pongas `--tool`.
 
 ### 2. Mantener y mejorar la biblioteca
 
@@ -133,12 +135,12 @@ uv run repo-intelligence report daily
 
 | Objetivo | Estado | Notas |
 |---|---|---|
-| Usuario describe proyecto y herramienta de construccion | Cubierto | `recommend --tool ... --project ...` genera una super guia practica por proyecto. |
+| Usuario describe proyecto y herramienta de construccion | Cubierto | `recommend --project ...` o `recommend --project-file proyecto.md` genera una super guia practica por proyecto. |
 | Elegir repos por funcion real | Cubierto | Usa `REPOS.scan`, `REPOS.detail`, tags, recetas, boosts por herramienta e intencion detectada. |
 | Decidir global/local/Docker/referencia/diferido | Cubierto inicial | Cada recomendacion trae `install_mode`. |
 | Explicar orden de instalacion | Cubierto | La super guia separa global/local/Docker/referencia/diferido y da el orden operativo. |
 | Generar guia practica por repo finalista | Cubierto inicial | Incluye por que, como funciona, pasos, cautelas e instrucciones para humano/IA; algunos comandos exactos aun dependen del README finalista. |
-| Inferir herramienta objetivo desde el texto | Cubierto inicial | Por ejemplo, una consulta sobre Claude Code prioriza repos de Claude Code aunque el comando se corra con `--tool codex`. |
+| Inferir herramienta objetivo desde el texto | Cubierto inicial | Por ejemplo, una consulta sobre Claude Code prioriza repos de Claude Code sin obligarte a escribir `--tool claude-code`. |
 | Instalar automaticamente repos elegidos | No automatico | Por seguridad, el sistema recomienda; la instalacion se ejecuta despues conscientemente. |
 | Actualizar biblioteca local | Cubierto | `pull --safe`, `discover`, `snapshot`. |
 | Regenerar catalogos/guias/fichas/playbooks | Cubierto | `guide build` genera salidas humanas e indices IA. |
@@ -215,7 +217,19 @@ Quiero crear un sistema para analizar campañas de Meta Ads, scrapear datos publ
 ### Paso 2: Ejecuta `recommend`
 
 ```powershell
-uv run repo-intelligence recommend --tool claude-code --project "Quiero crear un sistema para analizar campañas de Meta Ads, scrapear datos publicos de competencia, generar reportes ejecutivos y automatizar envios por email" --max-repos 7
+uv run repo-intelligence recommend --project "Quiero crear un sistema para analizar campañas de Meta Ads, scrapear datos publicos de competencia, generar reportes ejecutivos y automatizar envios por email. Lo voy a construir con Claude Code." --max-repos 7
+```
+
+Si el planteamiento es largo, crea un archivo `proyecto.md` en la carpeta del sistema y escribe ahi todo el brief. Luego ejecuta:
+
+```powershell
+uv run repo-intelligence recommend --project-file proyecto.md --max-repos 7
+```
+
+Tambien puedes combinar una frase corta con el archivo:
+
+```powershell
+uv run repo-intelligence recommend --project "Prioriza instalacion local primero" --project-file proyecto.md --max-repos 7
 ```
 
 ### Paso 3: Lee el resultado
@@ -261,15 +275,15 @@ Orden recomendado:
 ### Optimizar Claude Code para uso diario
 
 ```powershell
-uv run repo-intelligence recommend --tool codex --project "Quiero optimizar y ultralizar Claude Code para uso diario" --max-repos 7
+uv run repo-intelligence recommend --project "Quiero optimizar y ultralizar Claude Code para uso diario" --max-repos 7
 ```
 
-Salida esperada: `superpowers`, `agent-toolkit`, `claude-plugins-official`, `awesome-claude-code`, `skillspector`, `context-engineering`, `prompt-master`. El sistema infiere `claude-code` como herramienta efectiva porque aparece en la descripcion.
+Salida esperada: `superpowers`, `agent-toolkit`, `claude-plugins-official`, `awesome-claude-code`, `skillspector`, `context-engineering`, `prompt-master`. El sistema infiere `claude-code` porque aparece en la descripcion.
 
 ### Bot de WhatsApp con IA
 
 ```powershell
-uv run repo-intelligence recommend --tool codex --project "bot de WhatsApp con IA para responder clientes, guardar leads y escalar a humano" --max-repos 7
+uv run repo-intelligence recommend --project "bot de WhatsApp con IA para responder clientes, guardar leads y escalar a humano. Lo voy a construir con Codex." --max-repos 7
 ```
 
 Salida esperada: `evolution-api`, `n8n`, `chatwoot`, `n8n-mcp`, `n8n-skills`, alternativas y diferidos.
@@ -277,7 +291,7 @@ Salida esperada: `evolution-api`, `n8n`, `chatwoot`, `n8n-mcp`, `n8n-skills`, al
 ### Sistema MCP para Codex
 
 ```powershell
-uv run repo-intelligence recommend --tool codex --project "sistema MCP para conectar archivos locales y herramientas a Codex" --max-repos 5
+uv run repo-intelligence recommend --project "sistema MCP para conectar archivos locales y herramientas a Codex" --max-repos 5
 ```
 
 Salida esperada: repos MCP, servidores, catálogos y herramientas de conectividad.
@@ -285,7 +299,7 @@ Salida esperada: repos MCP, servidores, catálogos y herramientas de conectivida
 ### Pipeline de Reels
 
 ```powershell
-uv run repo-intelligence recommend --tool antigravity --project "pipeline de reels con transcripcion, voz, subtitulos y render de video" --max-repos 7
+uv run repo-intelligence recommend --project "pipeline de reels con transcripcion, voz, subtitulos y render de video. Lo voy a construir con Antigravity." --max-repos 7
 ```
 
 Salida esperada: `whisperX`, `supertonic` o `TTS`, `moviepy` o `remotion`, y herramientas de video.
@@ -293,7 +307,7 @@ Salida esperada: `whisperX`, `supertonic` o `TTS`, `moviepy` o `remotion`, y her
 ### Web app moderna con IA
 
 ```powershell
-uv run repo-intelligence recommend --tool open-code --project "web app moderna con IA, dashboard, graficas y frontend pulido" --max-repos 7
+uv run repo-intelligence recommend --project "web app moderna con IA, dashboard, graficas y frontend pulido. Lo voy a construir con Open Code." --max-repos 7
 ```
 
 Salida esperada: frontend/UI, datos, graficas, skills de diseño y librerías de apoyo.

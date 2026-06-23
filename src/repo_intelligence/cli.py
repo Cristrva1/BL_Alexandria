@@ -154,13 +154,15 @@ def decide(project_type: Annotated[str, typer.Option("--project-type")] = "repo_
 
 @app.command("recommend")
 def recommend_project(
-    project: Annotated[str, typer.Option("--project", "-p", help="Describe the project you want to build.")],
-    tool: Annotated[str, typer.Option("--tool", help="Tool used to build it: codex, claude-code, antigravity, grok-build, open-code.")] = "codex",
+    project: Annotated[str, typer.Option("--project", "-p", help="Describe the project you want to build.")] = "",
+    project_file: Annotated[Path | None, typer.Option("--project-file", help="Markdown/text file with a long project brief.")] = None,
+    tool: Annotated[str, typer.Option("--tool", help="Tool hint: auto, codex, claude-code, claude, antigravity, grok-build, open-code.")] = "auto",
     max_repos: Annotated[int, typer.Option("--max-repos", help="Maximum repositories to recommend.")] = 5,
 ) -> None:
     """Recommend repositories and install modes for a concrete project."""
     paths = ProjectPaths.load()
-    result = recommend(paths.project_root, project, max_repos=max_repos, build_tool=tool)
+    project_text = _load_project_text(project, project_file)
+    result = recommend(paths.project_root, project_text, max_repos=max_repos, build_tool=tool)
     table = Table(title="Recommended Repositories")
     table.add_column("Repo")
     table.add_column("Score")
@@ -192,12 +194,14 @@ def guide_build(changed_only: Annotated[bool, typer.Option("--changed-only")] = 
 @context_app.command("build")
 def context_build(
     query: Annotated[str, typer.Option("--query")] = "",
-    tool: Annotated[str, typer.Option("--tool")] = "codex",
+    project_file: Annotated[Path | None, typer.Option("--project-file")] = None,
+    tool: Annotated[str, typer.Option("--tool")] = "auto",
     max_repos: Annotated[int, typer.Option("--max-repos")] = 3,
 ) -> None:
     """Create a portable AI context pack for a project/query."""
     paths = ProjectPaths.load()
-    result = recommend(paths.project_root, query or "general repository intelligence project", max_repos=max_repos, build_tool=tool)
+    project_text = _load_project_text(query, project_file) if (query or project_file) else "general repository intelligence project"
+    result = recommend(paths.project_root, project_text, max_repos=max_repos, build_tool=tool)
     console.print(f"Wrote {paths.project_root / result['superguide_file']}")
     console.print(f"Updated {paths.project_root / result['latest_superguide_file']}")
     console.print(f"Recommended {len(result['recommended_repos'])} repos")
@@ -220,3 +224,19 @@ def _now() -> str:
 def _first_line(value: str, limit: int = 100) -> str:
     line = value.splitlines()[0] if value else ""
     return line[:limit]
+
+
+def _load_project_text(project: str, project_file: Path | None) -> str:
+    chunks: list[str] = []
+    if project:
+        chunks.append(project.strip())
+    if project_file:
+        if not project_file.exists():
+            raise typer.BadParameter(f"No existe el archivo: {project_file}")
+        if not project_file.is_file():
+            raise typer.BadParameter(f"No es un archivo: {project_file}")
+        chunks.append(project_file.read_text(encoding="utf-8").strip())
+    text = "\n\n".join(chunk for chunk in chunks if chunk)
+    if not text:
+        raise typer.BadParameter("Escribe --project o usa --project-file proyecto.md")
+    return text

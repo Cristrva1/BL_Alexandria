@@ -45,10 +45,11 @@ def test_recommend_infers_claude_code_and_filters_generic_code(tmp_path: Path) -
         tmp_path,
         "Quiero optimizar y ultralizar Claude Code para uso diario",
         max_repos=7,
-        build_tool="codex",
+        build_tool="auto",
     )
 
     ids = [repo["id"] for repo in result["recommended_repos"]]
+    assert result["requested_tool"] == "auto"
     assert result["build_tool"] == "claude-code"
     assert ids == [
         "superpowers",
@@ -67,6 +68,18 @@ def test_recommend_infers_claude_code_and_filters_generic_code(tmp_path: Path) -
     assert "# Super Guia Practica Del Proyecto" in text
     assert "Quiero optimizar y ultralizar Claude Code para uso diario" in text
     assert "Prompt Para El Agente Instalador" in text
+
+
+def test_recommend_accepts_claude_alias_from_tool_hint(tmp_path: Path) -> None:
+    ai_index = tmp_path / "ai_index"
+    ai_index.mkdir()
+    write_json(ai_index / "REPOS.scan.json", {"repos": [_repo("superpowers", role="skill", tags=["skills", "agents"])]})
+    write_json(ai_index / "REPOS.detail.json", {"repos": [{"id": "superpowers", "desc": "metodologia para agentes"}]})
+    write_json(ai_index / "WINNERS.json", {})
+
+    result = recommend(tmp_path, "Optimizar mi flujo diario", max_repos=1, build_tool="claude")
+
+    assert result["build_tool"] == "claude-code"
 
 
 def _repo(repo_id: str, role: str, tags: list[str]) -> dict[str, object]:

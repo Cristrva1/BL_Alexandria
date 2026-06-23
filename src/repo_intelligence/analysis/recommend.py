@@ -324,7 +324,7 @@ INSTALL_HINTS = {
 }
 
 
-def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: str = "codex") -> dict[str, Any]:
+def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: str = "auto") -> dict[str, Any]:
     scan = read_json(project_root / "ai_index" / "REPOS.scan.json", {"repos": []})
     detail = read_json(project_root / "ai_index" / "REPOS.detail.json", {"repos": []})
     winners = read_json(project_root / "ai_index" / "WINNERS.json", {})
@@ -358,7 +358,7 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
     result = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "project": project,
-        "requested_tool": build_tool,
+        "requested_tool": _norm_tool(build_tool),
         "build_tool": effective_tool,
         "detected_intents": sorted(intents),
         "superguide_file": f"ai_index/SUPERGUIAS/{safe_name}.md",
@@ -410,14 +410,14 @@ def _render_superguide(result: dict[str, Any]) -> str:
         "",
         result["project"],
         "",
-        "## Herramienta con la que se construira",
+        "## Herramienta detectada para construir",
         "",
         result.get("build_tool", "codex"),
         "",
         "## Diagnostico",
         "",
-        f"- Herramienta solicitada: `{result.get('requested_tool', result.get('build_tool', ''))}`",
-        f"- Herramienta efectiva inferida: `{result.get('build_tool', '')}`",
+        f"- Pista indicada en `--tool`: `{result.get('requested_tool', 'auto')}`",
+        f"- Herramienta tomada del planteamiento: `{result.get('build_tool', '')}`",
         f"- Intenciones detectadas: {', '.join(result.get('detected_intents', [])) or 'general'}",
         "- Regla aplicada: la herramienta con la que construyes no siempre es el proveedor LLM de la app. Si el texto menciona Claude Code, se prioriza su ecosistema aunque el comando se haya ejecutado desde Codex.",
         f"- Archivo estable de esta recomendacion: `{result.get('superguide_file', '')}`",
@@ -550,7 +550,7 @@ def score_repo(
     project: str,
     repo: dict[str, Any],
     detail: dict[str, Any],
-    build_tool: str = "codex",
+    build_tool: str = "auto",
     intents: set[str] | None = None,
 ) -> tuple[int, list[str]]:
     text = _norm_text(project)
@@ -706,7 +706,7 @@ def _unique_tools(tools: list[dict[str, str]]) -> list[dict[str, str]]:
 
 def _detect_effective_tool(project: str, requested_tool: str) -> str:
     text = _norm_text(project)
-    if _has_phrase(text, "claude code"):
+    if _has_phrase(text, "claude code") or _has_phrase(text, "claude"):
         return "claude-code"
     if _has_phrase(text, "grok build"):
         return "grok-build"
@@ -716,7 +716,14 @@ def _detect_effective_tool(project: str, requested_tool: str) -> str:
         return "antigravity"
     if _has_phrase(text, "codex"):
         return "codex"
-    return _norm_tool(requested_tool)
+    tool = _norm_tool(requested_tool)
+    if tool == "claude":
+        return "claude-code"
+    if tool == "opencode":
+        return "open-code"
+    if tool == "auto":
+        return "codex"
+    return tool
 
 
 def _detect_intents(project: str) -> set[str]:
