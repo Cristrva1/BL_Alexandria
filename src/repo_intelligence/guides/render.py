@@ -228,7 +228,94 @@ def _render_root_guide(
             )
         lines.append("")
 
-    _write_text(project_root / "Guia.md", "\n".join(lines) + "\n")
+    generated_text = "\n".join(lines) + "\n"
+    _write_text(project_root / "human" / "guia-generada.md", generated_text)
+    _update_rich_root_guide(project_root, generated_text, repos, detail_repos, generated_at)
+
+
+def _update_rich_root_guide(
+    project_root: Path,
+    fallback_text: str,
+    repos: list[dict[str, Any]],
+    detail_repos: dict[str, dict[str, Any]],
+    generated_at: str,
+) -> None:
+    guide_path = project_root / "Guia.md"
+    if not guide_path.exists():
+        _write_text(guide_path, fallback_text)
+        return
+
+    current = guide_path.read_text(encoding="utf-8")
+    if "# 🌌 Catálogo de Repositorios de IA & Automatización" not in current:
+        _write_text(guide_path, fallback_text)
+        return
+
+    missing = _repos_missing_from_rich_guide(current, repos)
+    if not missing:
+        return
+
+    appendix = _render_new_repo_appendix(missing, detail_repos, generated_at)
+    start = "<!-- BL_ALEXANDRIA_AUTO_APPEND_START -->"
+    end = "<!-- BL_ALEXANDRIA_AUTO_APPEND_END -->"
+    if start in current and end in current:
+        before = current.split(start, 1)[0].rstrip()
+        after = current.split(end, 1)[1].lstrip()
+        updated = f"{before}\n\n{appendix}\n\n{after}"
+    else:
+        updated = f"{current.rstrip()}\n\n---\n\n{appendix}\n"
+    _write_text(guide_path, updated)
+
+
+def _repos_missing_from_rich_guide(current: str, repos: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    haystack = current.lower()
+    missing: list[dict[str, Any]] = []
+    for repo in repos:
+        repo_id = repo["id"]
+        repo_name = repo.get("name") or repo_id
+        candidates = {
+            repo_id.lower(),
+            repo_name.lower(),
+            _slug(repo_id),
+            _slug(repo_name),
+            _slug(repo_id).replace("-", "_"),
+            _slug(repo_name).replace("-", "_"),
+            f"#-{_slug(repo_id)}",
+        }
+        if not any(candidate and candidate in haystack for candidate in candidates):
+            missing.append(repo)
+    return missing
+
+
+def _render_new_repo_appendix(
+    repos: list[dict[str, Any]],
+    detail_repos: dict[str, dict[str, Any]],
+    generated_at: str,
+) -> str:
+    lines = [
+        "<!-- BL_ALEXANDRIA_AUTO_APPEND_START -->",
+        "## 🆕 Repos detectados después de la guía curada",
+        "",
+        f"Generado: {generated_at}",
+        "",
+        "Esta sección se actualiza automáticamente para no destruir la guía curada. Integra manualmente estas fichas al cuerpo principal cuando quieras dejar la guía completamente editorial.",
+        "",
+        "| Repo | Categoria | Instalacion | Resumen |",
+        "|---|---:|---|---|",
+    ]
+    for repo in repos:
+        repo_id = repo["id"]
+        detail = detail_repos.get(repo_id, {})
+        lines.append(
+            "| [{name}](human/fichas/{ficha}.md) | {cat} | {install} | {desc} |".format(
+                name=_esc(repo.get("name") or repo_id),
+                ficha=_slug(repo_id),
+                cat=repo.get("cat", ""),
+                install=_install_mode(repo),
+                desc=_esc(detail.get("desc") or repo.get("one") or ""),
+            )
+        )
+    lines.append("<!-- BL_ALEXANDRIA_AUTO_APPEND_END -->")
+    return "\n".join(lines)
 
 
 def _render_sections(
