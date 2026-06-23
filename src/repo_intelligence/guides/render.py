@@ -24,6 +24,7 @@ def render_all(project_root: Path) -> dict[str, int]:
     _render_detail_index(project_root, generated_at, repos, detail_repos, local_by_id)
     _render_human_home(project_root, generated_at, repos, categories, recipes)
     _render_catalog(project_root, generated_at, repos, detail_repos, local_by_id)
+    _render_root_guide(project_root, generated_at, repos, detail_repos, categories, recipes)
     _render_sections(project_root, generated_at, repos, detail_repos)
     _render_categories(project_root, generated_at, repos, detail_repos, categories)
     _render_cards(project_root, generated_at, repos, detail_repos, local_by_id)
@@ -153,6 +154,81 @@ def _render_catalog(
     text = "\n".join(lines) + "\n"
     _write_text(project_root / "human" / "catalogo.md", text)
     _write_text(project_root / "Catalogo.md", text)
+
+
+def _render_root_guide(
+    project_root: Path,
+    generated_at: str,
+    repos: list[dict[str, Any]],
+    detail_repos: dict[str, dict[str, Any]],
+    categories: list[dict[str, Any]],
+    recipes: list[dict[str, Any]],
+) -> None:
+    by_cat: dict[int, list[dict[str, Any]]] = {}
+    for repo in repos:
+        by_cat.setdefault(int(repo.get("cat") or 0), []).append(repo)
+
+    lines = [
+        "# Guia de la biblioteca",
+        "",
+        f"Generado: {generated_at}",
+        "",
+        "Esta guia se regenera con `uv run repo-intelligence guide build`.",
+        "",
+        "## Lectura rapida",
+        "",
+        "- [Catalogo.md](Catalogo.md): tabla plana de repos.",
+        "- [human/README.md](human/README.md): guia humana navegable.",
+        "- [human/fichas/](human/fichas/): ficha individual por repo.",
+        "- [human/comparativas/](human/comparativas/): alternativas y solapamientos.",
+        "- [human/playbooks/](human/playbooks/): recetas end-to-end.",
+        "- [ai_index/REPOS.scan.json](ai_index/REPOS.scan.json): indice compacto para IA.",
+        "",
+        "## Como usar esta guia",
+        "",
+        "1. Empieza por una categoria o playbook.",
+        "2. Elige como maximo 3 repos finalistas por funcion.",
+        "3. Abre solo las fichas de esos finalistas.",
+        "4. Instala solo lo marcado como global, local del proyecto o Docker local.",
+        "5. Deja los catalogos de skills como referencia salvo que una ficha indique lo contrario.",
+        "",
+        "## Playbooks",
+        "",
+    ]
+
+    for recipe in recipes:
+        lines.append(f"- [{recipe['title']}](human/playbooks/{_slug(recipe['id'])}.md): {recipe.get('goal') or ''}")
+
+    lines.extend(["", "## Categorias", ""])
+    for category in categories:
+        num = int(category["num"])
+        title = category["title"]
+        category_file = f"human/categorias/{num:02d}-{_slug(title)}.md"
+        category_repos = by_cat.get(num, [])
+        lines.extend(
+            [
+                f"### {num}. [{title}]({category_file})",
+                "",
+                "| Repo | Decision | Instalacion | Resumen |",
+                "|---|---|---|---|",
+            ]
+        )
+        for repo in category_repos:
+            repo_id = repo["id"]
+            detail = detail_repos.get(repo_id, {})
+            ficha = f"human/fichas/{_slug(repo_id)}.md"
+            lines.append(
+                "| [{name}]({ficha}) | {decision} | {install} | {desc} |".format(
+                    name=_esc(repo.get("name") or repo_id),
+                    ficha=ficha,
+                    decision=_decision(repo),
+                    install=_install_mode(repo),
+                    desc=_esc(detail.get("desc") or repo.get("one") or ""),
+                )
+            )
+        lines.append("")
+
+    _write_text(project_root / "Guia.md", "\n".join(lines) + "\n")
 
 
 def _render_sections(
