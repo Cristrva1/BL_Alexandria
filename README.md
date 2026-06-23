@@ -15,6 +15,7 @@ Si solo quieres ver que repos contiene la biblioteca, no hace falta leer este RE
 | Quiero ver... | Abrir |
 |---|---|
 | Catalogo completo de repos | [Catalogo.md](Catalogo.md) |
+| Guia monolitica completa | [Guia.md](Guia.md) |
 | Guia humana navegable | [human/README.md](human/README.md) |
 | Repos por categoria | [human/categorias/](human/categorias/) |
 | Fichas individuales | [human/fichas/](human/fichas/) |
