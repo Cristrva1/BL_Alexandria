@@ -1,6 +1,6 @@
 # crawl4ai
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ USAR AHORA
 
 ## Para que sirve realmente
 
-librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA.
+🚀 Crawl4AI Cloud API — Closed Beta (Launching Soon) Reliable, large-scale web extraction, now built to be _**drastically more cost-effective**_ than any of the existing solutions.
 
 ## Que problema resuelve
 
-necesitas volumen barato
+quieres 🚀🤖 crawl4ai: open-source llm friendly web crawler & scraper.
 
 ## Por que tiene valor
 
-Aporta valor en `library` para scraping. Stack declarado: Python.
+Aporta valor en `app` para docker, fastapi, javascript, postgres, python, react, scraping, typescript. Stack declarado: python, typescript, javascript, react, docker, postgres, fastapi.
 
 ## Cuando usarlo
 
-necesitas volumen barato
+quieres 🚀🤖 crawl4ai: open-source llm friendly web crawler & scraper.
 
 ## Cuando NO usarlo
 
-quieres una API hosted simple ([firecrawl](#-firecrawl)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 local_project
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, react, docker, postgres, fastapi
 
 ## Instalacion detectada
 
@@ -37,11 +41,12 @@ Repo local detectado: si
 ## Con que se combina
 
 - `firecrawl`
-- `gpt-researcher`
+- `scrapy`
+- `crawlee`
 
 ## Contra que compite
 
-- `firecrawl`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con firecrawl, gpt-researcher cuando el flujo necesite mas de una pieza.
+Combinar con firecrawl, scrapy, crawlee cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: usar ahora. Tiene sentido si necesitas volumen barato. No debe instalarse por inercia.
+Veredicto: usar ahora. Tiene sentido si quieres 🚀🤖 crawl4ai: open-source llm friendly web crawler & scraper.. No debe instalarse por inercia.

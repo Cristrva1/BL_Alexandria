@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-06-25T04:57:21.613488+00:00",
+  "profile": {
+    "id": "fluxer",
+    "name": "fluxer",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\fluxer",
+    "repo_url": "https://github.com/fluxerapp/fluxer.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml"
+    ],
+    "intro": {
+      "title": "> [!CAUTION]",
+      "desc": "As of this writing (15 June 2026), we are working to finalise the API and self-hosting documentation over the next few days."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript"
+    ],
+    "one": "> [!CAUTION]",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "fluxer",
+    "name": "fluxer",
+    "cat": 12,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "typescript"
+    ],
+    "one": "> [!CAUTION]",
+    "alt": [],
+    "doc": "human/fichas/fluxer.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "fluxer",
+    "cat": 12,
+    "desc": "As of this writing (15 June 2026), we are working to finalise the API and self-hosting documentation over the next few days.",
+    "stack": "javascript/typescript, typescript, javascript",
+    "choose_if": "quieres > [!caution]",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "whisper",
+      "faster-whisper",
+      "whisperx"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/fluxerapp/fluxer.git",
+    "doc": "human/fichas/fluxer.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:21.613289+00:00"
+  }
+}

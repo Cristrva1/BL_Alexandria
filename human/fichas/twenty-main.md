@@ -1,34 +1,38 @@
 # twenty-main
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-DIFERIR
+REFERENCIA
 
 ## Para que sirve realmente
 
-CRM open-source orientado a desarrolladores, alternativa moderna y personalizable a Salesforce/HubSpot que modela tu negocio mediante objetos y campos propios.
+Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack.
 
 ## Que problema resuelve
 
-quieres un CRM que se adapte 1:1 a tu negocio
+quieres why twenty
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para automation, crm. Stack declarado: TypeScript, React, NestJS, PostgreSQL, Docker.
+Aporta valor en `runtime` para automation, docker, javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, docker, postgres.
 
 ## Cuando usarlo
 
-quieres un CRM que se adapte 1:1 a tu negocio
+quieres why twenty
 
 ## Cuando NO usarlo
 
-buscas algo plug-and-play sin self-host.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
-deferred
+reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, typescript, javascript, react, docker, postgres
 
 ## Instalacion detectada
 
@@ -37,7 +41,8 @@ Repo local detectado: si
 ## Con que se combina
 
 - `evolution-api`
-- `n8n`
+- `whatsapp-agentkit`
+- `activepieces`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
 
 ## Ideas profesionales
 
-Combinar con evolution-api, n8n cuando el flujo necesite mas de una pieza.
+Combinar con evolution-api, whatsapp-agentkit, activepieces cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres un CRM que se adapte 1:1 a tu negocio. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres why twenty. No debe instalarse por inercia.

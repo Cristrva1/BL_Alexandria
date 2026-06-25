@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-06-25T04:59:53.609603+00:00",
+  "profile": {
+    "id": "sandbox",
+    "name": "sandbox",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\sandbox",
+    "repo_url": "https://github.com/agent-infra/sandbox.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "docker-compose.yaml"
+    ],
+    "intro": {
+      "title": "AIO Sandbox - All-in-One Agent Sandbox Environment",
+      "desc": "🌐 <a href=\"https://sandbox.agent-infra.com/\">Website</a>&nbsp&nbsp."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "langchain"
+    ],
+    "one": "AIO Sandbox - All-in-One Agent Sandbox Environment",
+    "install_hints": [
+      "docker run --security-opt seccomp=unconfined --rm -it -p 8080:8080 ghcr.io/agent-infra/sandbox:latest",
+      "docker run --security-opt seccomp=unconfined --rm -it -p 8080:8080 enterprise-public-cn-beijing.cr.volces.com/vefaas-public/all-in-one-sandb",
+      "docker run --security-opt seccomp=unconfined --rm -it -p 8080:8080 ghcr.io/agent-infra/sandbox:1.11.0"
+    ]
+  },
+  "compact": {
+    "id": "sandbox",
+    "name": "sandbox",
+    "cat": 3,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "langchain",
+      "python",
+      "react"
+    ],
+    "one": "AIO Sandbox - All-in-One Agent Sandbox Environment",
+    "alt": [],
+    "doc": "human/fichas/sandbox.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "sandbox",
+    "cat": 3,
+    "desc": "🌐 Website &nbsp&nbsp.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, docker, langchain",
+    "choose_if": "quieres aio sandbox - all-in-one agent sandbox environment",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/agent-infra/sandbox.git",
+    "doc": "human/fichas/sandbox.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:53.609365+00:00"
+  }
+}

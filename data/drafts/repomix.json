@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-06-25T04:59:48.647745+00:00",
+  "profile": {
+    "id": "repomix",
+    "name": "repomix",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\repomix",
+    "repo_url": "https://github.com/yamadashy/repomix.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<div align=\"center\" markdown=\"1\">",
+      "desc": "Need discussion? Join us on <a href=\"https://discord.gg/wNYzTwZFku\">Discord</a>!<br>."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres"
+    ],
+    "one": "Need discussion? Join us on <a href=\"https://discord.gg/wNYzTwZFku\">Discord</a>!<br>",
+    "install_hints": [
+      "docker run -v .:/app -it --rm ghcr.io/yamadashy/repomix",
+      "docker run -v .:/app -it --rm ghcr.io/yamadashy/repomix path/to/directory",
+      "docker run -v ./output:/app -it --rm ghcr.io/yamadashy/repomix --remote https://github.com/yamadashy/repomix"
+    ]
+  },
+  "compact": {
+    "id": "repomix",
+    "name": "repomix",
+    "cat": 3,
+    "role": "library",
+    "exec": "local",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "Need discussion? Join us on <a href=\"https://discord.gg/wNYzTwZFku\">Discord</a>!<br>",
+    "alt": [],
+    "doc": "human/fichas/repomix.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "repomix",
+    "cat": 3,
+    "desc": "Need discussion? Join us on Discord ! .",
+    "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres",
+    "choose_if": "quieres need discussion? join us on <a href=\"https://discord.gg/wnyztwzfku\">discord</a>!",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/yamadashy/repomix.git",
+    "doc": "human/fichas/repomix.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:48.647513+00:00"
+  }
+}

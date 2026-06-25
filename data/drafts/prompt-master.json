@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:59:40.274483+00:00",
+  "profile": {
+    "id": "prompt-master",
+    "name": "prompt-master",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\prompt-master",
+    "repo_url": "https://github.com/nidhinjs/prompt-master.git",
+    "manifests": [],
+    "intro": {
+      "title": "",
+      "desc": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention. No re-prompting your way to an answer you should have gotten on attempt one."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "postgres",
+      "comfy"
+    ],
+    "one": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention. No re-prompting your way to an answer you should have gotten on attempt one.",
+    "install_hints": [
+      "git clone https://github.com/nidhinjs/prompt-master.git ~/.claude/skills/prompt-master"
+    ]
+  },
+  "compact": {
+    "id": "prompt-master",
+    "name": "prompt-master",
+    "cat": 2,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "comfy",
+      "javascript",
+      "postgres",
+      "python",
+      "react",
+      "skills",
+      "typescript"
+    ],
+    "one": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention. No re-prompting your way to an answer you should have gotten on attempt one.",
+    "alt": [],
+    "doc": "human/fichas/prompt-master.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "prompt-master",
+    "cat": 2,
+    "desc": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention. No re-prompting your way to an answer you should have gotten on attempt one.",
+    "stack": "python, typescript, javascript, react, postgres, comfy",
+    "choose_if": "quieres a claude skill that writes the accurate prompts for any ai tool. zero tokens or credits wa",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/nidhinjs/prompt-master.git",
+    "doc": "human/fichas/prompt-master.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:40.274255+00:00"
+  }
+}

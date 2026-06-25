@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-06-25T04:57:51.556316+00:00",
+  "profile": {
+    "id": "humanizer",
+    "name": "humanizer",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\humanizer",
+    "repo_url": "https://github.com/blader/humanizer.git",
+    "manifests": [],
+    "intro": {
+      "title": "Humanizer",
+      "desc": "A skill for Claude Code and OpenCode that removes signs of AI-generated writing from text, making it sound more natural and human."
+    },
+    "features": [],
+    "stack": [
+      "typescript"
+    ],
+    "one": "Humanizer",
+    "install_hints": [
+      "git clone https://github.com/blader/humanizer.git ~/.claude/skills/humanizer",
+      "git clone https://github.com/blader/humanizer.git ~/.config/opencode/skills/humanizer"
+    ]
+  },
+  "compact": {
+    "id": "humanizer",
+    "name": "humanizer",
+    "cat": 2,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "typescript"
+    ],
+    "one": "Humanizer",
+    "alt": [],
+    "doc": "human/fichas/humanizer.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "humanizer",
+    "cat": 2,
+    "desc": "A skill for Claude Code and OpenCode that removes signs of AI-generated writing from text, making it sound more natural and human.",
+    "stack": "typescript",
+    "choose_if": "quieres humanizer",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/blader/humanizer.git",
+    "doc": "human/fichas/humanizer.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:51.556054+00:00"
+  }
+}

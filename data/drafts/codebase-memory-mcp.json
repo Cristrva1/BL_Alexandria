@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T04:56:33.799581+00:00",
+  "profile": {
+    "id": "codebase-memory-mcp",
+    "name": "codebase-memory-mcp",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\codebase-memory-mcp",
+    "repo_url": "https://github.com/DeusData/codebase-memory-mcp.git",
+    "manifests": [],
+    "intro": {
+      "title": "codebase-memory-mcp",
+      "desc": "The fastest and most efficient code intelligence engine for AI coding agents.** Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for macOS, Linux, and Windows — download, run `install`, done."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker"
+    ],
+    "one": "codebase-memory-mcp",
+    "install_hints": [
+      "git clone https://github.com/DeusData/codebase-memory-mcp.git"
+    ]
+  },
+  "compact": {
+    "id": "codebase-memory-mcp",
+    "name": "codebase-memory-mcp",
+    "cat": 3,
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "mcp",
+      "python",
+      "typescript"
+    ],
+    "one": "codebase-memory-mcp",
+    "alt": [],
+    "doc": "human/fichas/codebase-memory-mcp.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "codebase-memory-mcp",
+    "cat": 3,
+    "desc": "The fastest and most efficient code intelligence engine for AI coding agents.** Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for macOS, Linux, and Windows — download, run `install`, done.",
+    "stack": "python, typescript, javascript, docker",
+    "choose_if": "quieres codebase-memory-mcp",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/DeusData/codebase-memory-mcp.git",
+    "doc": "human/fichas/codebase-memory-mcp.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:33.799380+00:00"
+  }
+}

@@ -1,6 +1,6 @@
 # metabase
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL.
+The easiest way to get started with Metabase is to sign up for a free trial of Metabase Cloud.
 
 ## Que problema resuelve
 
-quieres BI accesible
+necesitas exponer herramientas o contexto a agentes vía MCP
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para dataviz. Stack declarado: Java/Clojure, BD, web.
+Aporta valor en `platform` para docker, javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, docker, postgres.
 
 ## Cuando usarlo
 
-quieres BI accesible
+necesitas exponer herramientas o contexto a agentes vía MCP
 
 ## Cuando NO usarlo
 
-necesitas analítica de eventos ([posthog](#-posthog)).
+prefieres conexiones directas sin protocolo estándar
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, typescript, javascript, react, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,12 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `posthog`
-- `echarts`
+- `claude-plugins-official`
+- `n8n-skills`
+- `mcp`
 
 ## Contra que compite
 
-- `posthog`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con posthog, echarts cuando el flujo necesite mas de una pieza.
+Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres BI accesible. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.

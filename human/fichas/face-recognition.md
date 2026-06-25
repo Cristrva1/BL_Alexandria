@@ -1,6 +1,6 @@
 # face_recognition
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-librería de Python sencilla para detección y reconocimiento facial, con una API de alto nivel para localizar, comparar e identificar caras en imágenes.
+_You can also read a translated version of this file in Chinese 简体中文版 or in Korean 한국어 or in Japanese 日本語._.
 
 ## Que problema resuelve
 
-necesitas reconocimiento facial básico
+quieres face recognition
 
 ## Por que tiene valor
 
-Aporta valor en `library` para image. Stack declarado: Python, dlib.
+Aporta valor en `library` para docker, postgres, python, typescript. Stack declarado: python, typescript, docker, postgres.
 
 ## Cuando usarlo
 
-necesitas reconocimiento facial básico
+quieres face recognition
 
 ## Cuando NO usarlo
 
-buscas restauración/animación.
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,7 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `deep-live-cam`
+- `litellm`
+- `cosmos`
+- `comfyui`
 
 ## Contra que compite
 
@@ -48,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con deep-live-cam cuando el flujo necesite mas de una pieza.
+Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas reconocimiento facial básico. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres face recognition. No debe instalarse por inercia.

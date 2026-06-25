@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-06-25T04:56:55.278956+00:00",
+  "profile": {
+    "id": "data-science-ipython-notebooks",
+    "name": "data-science-ipython-notebooks",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\data-science-ipython-notebooks",
+    "repo_url": "https://github.com/donnemartin/data-science-ipython-notebooks.git",
+    "manifests": [],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "data-science-ipython-notebooks."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "postgres"
+    ],
+    "one": "data-science-ipython-notebooks",
+    "install_hints": [
+      "$ git clone https://github.com/donnemartin/data-science-ipython-notebooks.git"
+    ]
+  },
+  "compact": {
+    "id": "data-science-ipython-notebooks",
+    "name": "data-science-ipython-notebooks",
+    "cat": 7,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "data-science-ipython-notebooks",
+    "alt": [],
+    "doc": "human/fichas/data-science-ipython-notebooks.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "data-science-ipython-notebooks",
+    "cat": 7,
+    "desc": "data-science-ipython-notebooks.",
+    "stack": "python, typescript, postgres",
+    "choose_if": "quieres data-science-ipython-notebooks",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "codegraph",
+      "gitnexus",
+      "deepseek-coder"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/donnemartin/data-science-ipython-notebooks.git",
+    "doc": "human/fichas/data-science-ipython-notebooks.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:55.278747+00:00"
+  }
+}

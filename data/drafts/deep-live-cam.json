@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:56:56.905949+00:00",
+  "profile": {
+    "id": "deep-live-cam",
+    "name": "Deep-Live-Cam",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Deep-Live-Cam",
+    "repo_url": "https://github.com/hacksider/Deep-Live-Cam.git",
+    "manifests": [
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "<h1 align=\"center\">Deep-Live-Cam 2.1.6</h1>",
+      "desc": "Real-time face swap and video deepfake with a single click and only a single image."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "postgres"
+    ],
+    "one": "Real-time face swap and video deepfake with a single click and only a single image.",
+    "install_hints": [
+      "git clone https://github.com/hacksider/Deep-Live-Cam.git",
+      "pip install -r requirements.txt",
+      "pip install -r requirements.txt"
+    ]
+  },
+  "compact": {
+    "id": "deep-live-cam",
+    "name": "Deep-Live-Cam",
+    "cat": 11,
+    "role": "app",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "multimedia",
+      "postgres",
+      "python",
+      "typescript",
+      "vision"
+    ],
+    "one": "Real-time face swap and video deepfake with a single click and only a single image.",
+    "alt": [],
+    "doc": "human/fichas/deep-live-cam.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "Deep-Live-Cam",
+    "cat": 11,
+    "desc": "Real-time face swap and video deepfake with a single click and only a single image.",
+    "stack": "python, typescript, postgres",
+    "choose_if": "quieres deep-live-cam 2.1.6",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "comfyui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/hacksider/Deep-Live-Cam.git",
+    "doc": "human/fichas/deep-live-cam.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:56.905756+00:00"
+  }
+}

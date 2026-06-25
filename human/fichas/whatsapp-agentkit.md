@@ -1,6 +1,6 @@
 # whatsapp-agentkit
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-plantilla guiada que construye un agente conversacional de WhatsApp en menos de 30 minutos sin necesidad de programar, partiendo de preguntas sobre tu negocio.
+Construye tu propio agente de WhatsApp con inteligencia artificial en menos de 30 minutos. No necesitas saber programar. Claude Code construye todo por ti.
 
 ## Que problema resuelve
 
-quieres arrancar sin partir de cero
+quieres agentkit — whatsapp ai agent builder
 
 ## Por que tiene valor
 
-Aporta valor en `skill` para automation, whatsapp, agents. Stack declarado: Node.js/Python, APIs de WhatsApp.
+Aporta valor en `directory` para agents, automation, docker, fastapi, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, docker, postgres, fastapi.
 
 ## Cuando usarlo
 
-quieres arrancar sin partir de cero
+quieres agentkit — whatsapp ai agent builder
 
 ## Cuando NO usarlo
 
-necesitas control fino del stack.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, docker, postgres, fastapi
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
+- `twenty-main`
 - `evolution-api`
-- `n8n-mcp`
+- `activepieces`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con evolution-api, n8n-mcp cuando el flujo necesite mas de una pieza.
+Combinar con twenty-main, evolution-api, activepieces cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres arrancar sin partir de cero. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres agentkit — whatsapp ai agent builder. No debe instalarse por inercia.

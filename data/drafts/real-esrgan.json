@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-06-25T04:59:45.317850+00:00",
+  "profile": {
+    "id": "real-esrgan",
+    "name": "Real-ESRGAN",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Real-ESRGAN",
+    "repo_url": "https://github.com/xinntao/Real-ESRGAN.git",
+    "manifests": [
+      "requirements.txt",
+      "setup.py"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "👀[**Demos**](#-demos-videos) **|** 🚩[**Updates**](#-updates) **|** ⚡[**Usage**](#-quick-inference) **|** 🏰[**Model Zoo**](docs/model_zoo.md) **|** 🔧[Install](#-dependencies-and-installation)  **|** 💻[Train](docs/Training.md) **|** ❓[FAQ](docs/FAQ.md) **|** 🎨[Contribution](docs/CONTRIBUTING.md)."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "postgres"
+    ],
+    "one": "👀[**Demos**](#-demos-videos) **|** 🚩[**Updates**](#-updates) **|** ⚡[**Usage**](#-quick-inference) **|** 🏰[**Model Zoo**](docs/model_zoo.md) **|** 🔧[Install](#-dependencies-and-installation)  **|** 💻[Train](docs/Training.md) **|** ❓[FAQ](docs/FAQ.md) **|** 🎨[...",
+    "install_hints": [
+      "git clone https://github.com/xinntao/Real-ESRGAN.git",
+      "pip install basicsr",
+      "pip install facexlib"
+    ]
+  },
+  "compact": {
+    "id": "real-esrgan",
+    "name": "Real-ESRGAN",
+    "cat": 9,
+    "role": "library",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "multimedia",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "👀[**Demos**](#-demos-videos) **|** 🚩[**Updates**](#-updates) **|** ⚡[**Usage**](#-quick-inference) **|** 🏰[**Model Zoo**](docs/model_zoo.md) **|** 🔧[Install](#-dependencies-and-installation)  **|** 💻[Train](docs/Training.md) **|** ❓[FAQ](docs/FAQ.md) **|** 🎨[...",
+    "alt": [],
+    "doc": "human/fichas/real-esrgan.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "Real-ESRGAN",
+    "cat": 9,
+    "desc": "👀**Demos** **|** 🚩**Updates** **|** ⚡**Usage** **|** 🏰**Model Zoo** **|** 🔧Install **|** 💻Train **|** ❓FAQ **|** 🎨Contribution.",
+    "stack": "python, typescript, postgres",
+    "choose_if": "quieres 👀[**demos**](#-demos-videos) **|** 🚩[**updates**](#-updates) **|** ⚡[**usage**](",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/xinntao/Real-ESRGAN.git",
+    "doc": "human/fichas/real-esrgan.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:45.317456+00:00"
+  }
+}

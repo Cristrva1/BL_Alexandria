@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-06-25T04:59:22.267507+00:00",
+  "profile": {
+    "id": "openmontage",
+    "name": "OpenMontage",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\OpenMontage",
+    "repo_url": "https://github.com/calesthio/OpenMontage.git",
+    "manifests": [
+      "requirements.txt",
+      "setup.py"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "Turn your AI coding assistant into a full video production studio. Describe what you want in plain language — your agent handles research, scripting, asset generation, editing, and final composition."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "postgres",
+      "whisper"
+    ],
+    "one": "---",
+    "install_hints": [
+      "git clone https://github.com/calesthio/OpenMontage.git",
+      "> **No `make`?** Run manually: `pip install -r requirements.txt && cd remotion-composer && npm install && cd .. && pip install piper-tts && "
+    ]
+  },
+  "compact": {
+    "id": "openmontage",
+    "name": "OpenMontage",
+    "cat": 2,
+    "role": "skill",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "multimedia",
+      "postgres",
+      "python",
+      "react",
+      "typescript",
+      "whisper"
+    ],
+    "one": "---",
+    "alt": [],
+    "doc": "human/fichas/openmontage.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "OpenMontage",
+    "cat": 2,
+    "desc": "Turn your AI coding assistant into a full video production studio. Describe what you want in plain language — your agent handles research, scripting, asset generation, editing, and final composition.",
+    "stack": "python, typescript, javascript, react, postgres, whisper",
+    "choose_if": "quieres ---",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/calesthio/OpenMontage.git",
+    "doc": "human/fichas/openmontage.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:22.267305+00:00"
+  }
+}

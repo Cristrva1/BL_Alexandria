@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T04:59:05.856589+00:00",
+  "profile": {
+    "id": "novu",
+    "name": "novu",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\novu",
+    "repo_url": "https://github.com/novuhq/novu.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml"
+    ],
+    "intro": {
+      "title": "<a href=\"https://go.novu.co/github?utm_campaign=readme-logo\" target=\"_blank\" rel=\"noopener noreferrer\">",
+      "desc": "The open-source communication infrastructure for agents and products."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react"
+    ],
+    "one": ">",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "novu",
+    "name": "novu",
+    "cat": 1,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "javascript",
+      "javascript-typescript",
+      "react",
+      "typescript"
+    ],
+    "one": ">",
+    "alt": [],
+    "doc": "human/fichas/novu.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "novu",
+    "cat": 1,
+    "desc": "The open-source communication infrastructure for agents and products.",
+    "stack": "javascript/typescript, typescript, javascript, react",
+    "choose_if": "quieres >",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "twenty-main",
+      "evolution-api",
+      "whatsapp-agentkit"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/novuhq/novu.git",
+    "doc": "human/fichas/novu.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:05.856350+00:00"
+  }
+}

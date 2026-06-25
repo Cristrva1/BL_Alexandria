@@ -1,34 +1,38 @@
 # nanoGPT
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-implementación mínima y limpia de Andrej Karpathy para entrenar y afinar GPTs, pensada para que el código quepa en la cabeza y se entienda de extremo a extremo.
+Update Nov 2025** nanoGPT has a new and improved cousin called nanochat. It is very likely you meant to use/find nanochat instead. nanoGPT (this repo) is now very old and deprecated but I will leave it up for posterity.
 
 ## Que problema resuelve
 
-quieres entender el entrenamiento
+quieres nanogpt
 
 ## Por que tiene valor
 
-Aporta valor en `library` para code, training. Stack declarado: Python, PyTorch, GPU.
+Aporta valor en `library` para javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, postgres.
 
 ## Cuando usarlo
 
-quieres entender el entrenamiento
+quieres nanogpt
 
 ## Cuando NO usarlo
 
-solo consumes modelos vía API.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
-reference_only
+deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, postgres
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `nanochat`
-- `llmc`
+- `andrej-karpathy-skills`
+- `antigravity-awesome-skills`
+- `awesome-agent-skills`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con nanochat, llmc cuando el flujo necesite mas de una pieza.
+Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres entender el entrenamiento. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres nanogpt. No debe instalarse por inercia.

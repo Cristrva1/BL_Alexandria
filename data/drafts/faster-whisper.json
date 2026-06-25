@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-06-25T04:57:15.079433+00:00",
+  "profile": {
+    "id": "faster-whisper",
+    "name": "faster-whisper",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\faster-whisper",
+    "repo_url": "https://github.com/SYSTRAN/faster-whisper.git",
+    "manifests": [
+      "requirements.txt",
+      "setup.py"
+    ],
+    "intro": {
+      "title": "Faster Whisper transcription with CTranslate2",
+      "desc": "faster-whisper** is a reimplementation of OpenAI's Whisper model using [CTranslate2](https://github.com/OpenNMT/CTranslate2/), which is a fast inference engine for Transformer models."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "docker",
+      "fastapi",
+      "whisper"
+    ],
+    "one": "Faster Whisper transcription with CTranslate2",
+    "install_hints": [
+      "**Note**: The latest versions of `ctranslate2` only support CUDA 12 and cuDNN 9. For CUDA 11 and cuDNN 8, the current workaround is downgrad",
+      "pip install nvidia-cublas-cu12 nvidia-cudnn-cu12==9.*",
+      "pip install faster-whisper"
+    ]
+  },
+  "compact": {
+    "id": "faster-whisper",
+    "name": "faster-whisper",
+    "cat": 12,
+    "role": "runtime",
+    "exec": "cloud",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "fastapi",
+      "multimedia",
+      "python",
+      "typescript",
+      "whisper"
+    ],
+    "one": "Faster Whisper transcription with CTranslate2",
+    "alt": [],
+    "doc": "human/fichas/faster-whisper.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "faster-whisper",
+    "cat": 12,
+    "desc": "faster-whisper** is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models.",
+    "stack": "python, typescript, docker, fastapi, whisper",
+    "choose_if": "quieres faster whisper transcription with ctranslate2",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "whisper",
+      "whisperx"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/SYSTRAN/faster-whisper.git",
+    "doc": "human/fichas/faster-whisper.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:15.079201+00:00"
+  }
+}

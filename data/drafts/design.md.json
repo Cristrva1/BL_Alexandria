@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-06-25T04:57:03.490534+00:00",
+  "profile": {
+    "id": "design.md",
+    "name": "design.md",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\design.md",
+    "repo_url": "https://github.com/google-labs-code/design.md.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "DESIGN.md",
+      "desc": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript"
+    ],
+    "one": "DESIGN.md",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "design.md",
+    "name": "design.md",
+    "cat": 9,
+    "role": "directory",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "frontend",
+      "javascript",
+      "javascript-typescript",
+      "typescript"
+    ],
+    "one": "DESIGN.md",
+    "alt": [],
+    "doc": "human/fichas/design.md.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "design.md",
+    "cat": 9,
+    "desc": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+    "stack": "javascript/typescript, typescript, javascript",
+    "choose_if": "quieres design.md",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/google-labs-code/design.md.git",
+    "doc": "human/fichas/design.md.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:03.490319+00:00"
+  }
+}

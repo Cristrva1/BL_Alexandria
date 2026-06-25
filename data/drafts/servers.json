@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T05:00:03.518051+00:00",
+  "profile": {
+    "id": "servers",
+    "name": "servers",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\servers",
+    "repo_url": "https://github.com/modelcontextprotocol/servers.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "Model Context Protocol servers",
+      "desc": "This repository is a collection of *reference implementations* for the [Model Context Protocol](https://modelcontextprotocol.io/) (MCP), as well as references to community-built servers and additional resources."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "postgres"
+    ],
+    "one": "Model Context Protocol servers",
+    "install_hints": [
+      "pip install mcp-server-git"
+    ]
+  },
+  "compact": {
+    "id": "servers",
+    "name": "servers",
+    "cat": 5,
+    "role": "directory",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "Model Context Protocol servers",
+    "alt": [],
+    "doc": "human/fichas/servers.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "servers",
+    "cat": 5,
+    "desc": "This repository is a collection of *reference implementations* for the Model Context Protocol (MCP), as well as references to community-built servers and additional resources.",
+    "stack": "javascript/typescript, python, typescript, javascript, postgres",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+      "claude-plugins-official",
+      "n8n-skills",
+      "mcp"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/modelcontextprotocol/servers.git",
+    "doc": "human/fichas/servers.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:03.517838+00:00"
+  }
+}

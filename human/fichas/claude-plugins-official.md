@@ -1,6 +1,6 @@
 # claude-plugins-official
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-plugins y extensiones oficiales para Claude, distribuidos junto al repositorio de Claude Code de Anthropic.
+A curated directory of high-quality plugins for Claude Code.
 
 ## Que problema resuelve
 
-quieres extensiones oficiales
+necesitas exponer herramientas o contexto a agentes vía MCP
 
 ## Por que tiene valor
 
-Aporta valor en `directory` para skills. Stack declarado: Markdown/JS.
+Aporta valor en `platform` para typescript. Stack declarado: typescript.
 
 ## Cuando usarlo
 
-quieres extensiones oficiales
+necesitas exponer herramientas o contexto a agentes vía MCP
 
 ## Cuando NO usarlo
 
-buscas aportes comunitarios amplios.
+prefieres conexiones directas sin protocolo estándar
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+typescript
 
 ## Instalacion detectada
 
@@ -36,7 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
+- `n8n-skills`
+- `mcp`
+- `servers`
 
 ## Contra que compite
 
@@ -44,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code cuando el flujo necesite mas de una pieza.
+Combinar con n8n-skills, mcp, servers cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres extensiones oficiales. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.

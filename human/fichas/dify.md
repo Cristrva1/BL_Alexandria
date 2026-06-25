@@ -1,6 +1,6 @@
 # dify
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-plataforma integral para construir apps de IA con backend y UI listos. Combina orquestación de prompts, RAG, agentes y observabilidad en un mismo producto autoalojable.
+alt="chat on Discord"> alt="join Reddit"> alt="follow on X(Twitter)"> alt="follow on LinkedIn"> .
 
 ## Que problema resuelve
 
-quieres una app IA completa
+quieres alt="chat on discord"></a>
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para agents, rag, skills, ui, llmops. Stack declarado: Python/TS, Docker.
+Aporta valor en `platform` para automation, docker, javascript, javascript-typescript, postgres, python, react, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, react, docker, postgres.
 
 ## Cuando usarlo
 
-quieres una app IA completa
+quieres alt="chat on discord"></a>
 
 ## Cuando NO usarlo
 
-solo necesitas una librería.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, python, typescript, javascript, react, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `langflow`
-- `flowise`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con langflow, flowise cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres una app IA completa. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres alt="chat on discord"></a>. No debe instalarse por inercia.

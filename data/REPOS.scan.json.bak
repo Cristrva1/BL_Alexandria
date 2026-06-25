@@ -1,0 +1,2823 @@
+{
+  "generated_at": "2026-06-23T06:05:24.152325+00:00",
+  "source": "registry/repos.yaml + INDICE_IA.json",
+  "repos": [
+    {
+      "id": "activepieces",
+      "name": "activepieces",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "automation"
+      ],
+      "one": "plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\activepieces"
+    },
+    {
+      "id": "ag2",
+      "name": "ag2",
+      "role": "library",
+      "exec": "cloud",
+      "setup": "medium",
+      "tags": [
+        "agents"
+      ],
+      "one": "framework maduro para sistemas multiagente con patrones de colaboración (heredero de AutoGen)",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ag2"
+    },
+    {
+      "id": "agency-agents",
+      "name": "agency-agents",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "medium",
+      "tags": [
+        "skills",
+        "agents"
+      ],
+      "one": "conjunto de playbooks y agentes especializados (incluye un Digital Marketing Pro) diseñados para operar una agencia multicanal a…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\agency-agents"
+    },
+    {
+      "id": "agent-toolkit",
+      "name": "agent-toolkit",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills",
+        "agents"
+      ],
+      "one": "conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code en tareas de desarrollo, documentación y…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "superpowers"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\agent-toolkit"
+    },
+    {
+      "id": "agentmemory",
+      "name": "agentmemory",
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "easy",
+      "tags": [
+        "llmops",
+        "memory",
+        "agents"
+      ],
+      "one": "memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini, Codex…), construida sobre el motor iii y…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\agentmemory"
+    },
+    {
+      "id": "agents-towards-production",
+      "name": "agents-towards-production",
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "medium",
+      "tags": [
+        "skills",
+        "agents"
+      ],
+      "one": "playbook open-source con tutoriales end-to-end para llevar agentes GenAI de prototipo a producto real, cubriendo el ciclo…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\agents-towards-production"
+    },
+    {
+      "id": "andrej-karpathy-skills",
+      "name": "andrej-karpathy-skills",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills",
+        "agents"
+      ],
+      "one": "guía de 4 principios (inspirada en las ideas de Andrej Karpathy sobre asistentes de código) que define cómo debe responder un…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\andrej-karpathy-skills"
+    },
+    {
+      "id": "antigravity-awesome-skills",
+      "name": "antigravity-awesome-skills",
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills"
+      ],
+      "one": "catálogo masivo con más de 1.678 habilidades (`SKILL.md`) categorizadas por dominio (desarrollo, QA, DevOps, seguridad,…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "awesome-agent-skills"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\antigravity-awesome-skills"
+    },
+    {
+      "id": "appsmith",
+      "name": "appsmith",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "---",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\appsmith"
+    },
+    {
+      "id": "archivebox",
+      "name": "ArchiveBox",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "▶️ <a href=\"https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart\">Quickstart</a> | <a href=\"https://demo.archivebox.io\">Demo</a> | <a href=\"https://github.com/ArchiveBox/ArchiveBox\">GitHub</a> | <a href=\"https://github.com/ArchiveBox/ArchiveBox/wiki\">Docu...",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ArchiveBox"
+    },
+    {
+      "id": "autogen",
+      "name": "autogen",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "AutoGen [![Maintenance Mode](https://img.shields.io/badge/status-maintenance%20mode-orange)](https://github.com/microsoft/agent-framework)",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\autogen"
+    },
+    {
+      "id": "autoresearch",
+      "name": "autoresearch",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "agents",
+        "research"
+      ],
+      "one": "enfoque experimental para automatizar investigación iterativa mediante bucles de búsqueda y refinamiento",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "gpt-researcher"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\autoresearch"
+    },
+    {
+      "id": "awesome-agent-skills",
+      "name": "awesome-agent-skills",
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills",
+        "agents"
+      ],
+      "one": "colección curada de habilidades oficiales y comunitarias publicadas por marcas líderes (Anthropic, Google, Stripe, Netlify…) como…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\awesome-agent-skills"
+    },
+    {
+      "id": "awesome-bigdata",
+      "name": "awesome-bigdata",
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "code",
+        "bigdata"
+      ],
+      "one": "directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\awesome-bigdata"
+    },
+    {
+      "id": "awesome-claude-code",
+      "name": "awesome-claude-code",
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills",
+        "agents"
+      ],
+      "one": "lista \"awesome\" curada de scripts, agentes, hooks, slash commands y extensiones específicos del ecosistema de Claude Code.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\awesome-claude-code"
+    },
+    {
+      "id": "awesome-dataviz",
+      "name": "awesome-dataviz",
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "dataviz"
+      ],
+      "one": "directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\awesome-dataviz"
+    },
+    {
+      "id": "awesome-langgraph",
+      "name": "awesome-LangGraph",
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "agents",
+        "graph"
+      ],
+      "one": "repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\awesome-LangGraph"
+    },
+    {
+      "id": "awesome-mcp-clients",
+      "name": "awesome-mcp-clients",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "Awesome MCP Clients [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\awesome-mcp-clients"
+    },
+    {
+      "id": "awesome-mcp-servers",
+      "name": "awesome-mcp-servers",
+      "role": "directory",
+      "exec": "hybrid",
+      "setup": "easy",
+      "tags": [
+        "mcp"
+      ],
+      "one": "directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\awesome-mcp-servers"
+    },
+    {
+      "id": "browser-use",
+      "name": "browser-use",
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "scraping",
+        "browser",
+        "agents",
+        "video"
+      ],
+      "one": "biblioteca que da a los LLMs la capacidad de usar navegadores reales con interfaz para modelos de visión, dejando que el agente…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "playwright"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\browser-use"
+    },
+    {
+      "id": "budibase",
+      "name": "budibase",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "Budibase",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\budibase"
+    },
+    {
+      "id": "chatwoot",
+      "name": "chatwoot",
+      "role": "platform",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "automation",
+        "whatsapp",
+        "email"
+      ],
+      "one": "plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\chatwoot"
+    },
+    {
+      "id": "claude-plugins-official",
+      "name": "claude-plugins-official",
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills"
+      ],
+      "one": "plugins y extensiones oficiales para Claude, distribuidos junto al repositorio de Claude Code de Anthropic.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\claude-plugins-official"
+    },
+    {
+      "id": "codegraph",
+      "name": "codegraph",
+      "role": "runtime",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "code",
+        "graph"
+      ],
+      "one": "CLI que indexa tu código y da a los asistentes de IA inteligencia semántica 100% local, permitiéndoles entender la estructura y…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\codegraph"
+    },
+    {
+      "id": "comfyui",
+      "name": "ComfyUI",
+      "role": "runtime",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "image",
+        "graph"
+      ],
+      "one": "motor local modular para crear pipelines visuales de generación con IA mediante un grafo de nodos, donde cada paso (carga de…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [
+        "fooocus"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ComfyUI"
+    },
+    {
+      "id": "comfyui-ipadapter-plus",
+      "name": "ComfyUI_IPAdapter_plus",
+      "role": "runtime",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "image"
+      ],
+      "one": "conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una imagen de referencia para…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ComfyUI_IPAdapter_plus"
+    },
+    {
+      "id": "context-engineering",
+      "name": "Context-Engineering",
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills",
+        "context"
+      ],
+      "one": "guía y curso práctico sobre \"ingeniería de contexto\", es decir, llenar la ventana de contexto con la información justa que el…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Context-Engineering"
+    },
+    {
+      "id": "controlnet",
+      "name": "ControlNet",
+      "role": "runtime",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "image"
+      ],
+      "one": "método y modelos para condicionar la generación text-to-image con señales externas como poses, bordes, profundidad o mapas de…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [
+        "sd-webui-controlnet"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ControlNet"
+    },
+    {
+      "id": "cosmos",
+      "name": "cosmos",
+      "role": "runtime",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "tags": [
+        "code",
+        "agents",
+        "training"
+      ],
+      "one": "plataforma de \"world foundation models\" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\cosmos"
+    },
+    {
+      "id": "crawl4ai",
+      "name": "crawl4ai",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "scraping"
+      ],
+      "one": "librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente…",
+      "install_mode": "local_project",
+      "decision": "use_now",
+      "alt": [
+        "firecrawl"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\crawl4ai"
+    },
+    {
+      "id": "crawlee",
+      "name": "crawlee",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "scraping",
+        "browser"
+      ],
+      "one": "framework moderno de crawling para Node.js con antibloqueo integrado, unifico scraping de HTTP y de navegador bajo una misma API…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "crawlee-python"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\crawlee"
+    },
+    {
+      "id": "crawlee-python",
+      "name": "crawlee-python",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "scraping",
+        "browser"
+      ],
+      "one": "versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\crawlee-python"
+    },
+    {
+      "id": "crewai",
+      "name": "crewAI",
+      "role": "library",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "agents"
+      ],
+      "one": "framework para orquestar \"crews\" de agentes con roles y tareas",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\crewAI"
+    },
+    {
+      "id": "dash",
+      "name": "dash",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "dataviz",
+        "ui"
+      ],
+      "one": "framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con componentes de UI…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "streamlit"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\dash"
+    },
+    {
+      "id": "data-science-ipython-notebooks",
+      "name": "data-science-ipython-notebooks",
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "code",
+        "notebooks",
+        "bigdata"
+      ],
+      "one": "gran colección de notebooks de ciencia de datos y machine learning que cubre desde pandas y NumPy hasta deep learning y big data,…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\data-science-ipython-notebooks"
+    },
+    {
+      "id": "deep-live-cam",
+      "name": "Deep-Live-Cam",
+      "role": "runtime",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "image",
+        "video"
+      ],
+      "one": "herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video con salvaguardas de…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Deep-Live-Cam"
+    },
+    {
+      "id": "deepseek-coder",
+      "name": "DeepSeek-Coder",
+      "role": "runtime",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "tags": [
+        "code",
+        "training"
+      ],
+      "one": "familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\DeepSeek-Coder"
+    },
+    {
+      "id": "deer-flow",
+      "name": "deer-flow",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "agents",
+        "memory",
+        "skills"
+      ],
+      "one": "super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\deer-flow"
+    },
+    {
+      "id": "defending-code-reference-harness",
+      "name": "defending-code-reference-harness",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "Defending Code Reference Harness",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\defending-code-reference-harness"
+    },
+    {
+      "id": "designmd",
+      "name": "design.md",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "ui",
+        "agents"
+      ],
+      "one": "especificación de formato para describir una identidad visual a agentes de código (tokens YAML + prosa), de modo que el agente…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\design.md"
+    },
+    {
+      "id": "diffusers",
+      "name": "diffusers",
+      "role": "library",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "image",
+        "audio",
+        "video"
+      ],
+      "one": "librería de Hugging Face para construir y ejecutar pipelines de modelos de difusión (imagen, video, audio) desde código, con APIs…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [
+        "fooocus"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\diffusers"
+    },
+    {
+      "id": "dify",
+      "name": "dify",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "agents",
+        "rag",
+        "skills",
+        "ui",
+        "llmops"
+      ],
+      "one": "plataforma integral para construir apps de IA con backend y UI listos",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\dify"
+    },
+    {
+      "id": "ecc",
+      "name": "ECC",
+      "role": "platform",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "local",
+        "agents"
+      ],
+      "one": "sistema operativo/arnés unificado para desarrollar, ejecutar y desplegar en local agentes de IA de alto rendimiento de forma…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ECC"
+    },
+    {
+      "id": "echarts",
+      "name": "echarts",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "dataviz"
+      ],
+      "one": "librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "uplot"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\echarts"
+    },
+    {
+      "id": "evolution-api",
+      "name": "evolution-api",
+      "role": "platform",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "automation",
+        "whatsapp"
+      ],
+      "one": "API REST robusta que actúa como middleware para automatizar WhatsApp y mensajería multicanal, exponiendo el envío/recepción de…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\evolution-api"
+    },
+    {
+      "id": "face-recognition",
+      "name": "face_recognition",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "image"
+      ],
+      "one": "librería de Python sencilla para detección y reconocimiento facial, con una API de alto nivel para localizar, comparar e…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\face_recognition"
+    },
+    {
+      "id": "faster-whisper",
+      "name": "faster-whisper",
+      "role": "runtime",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "media",
+        "memory",
+        "audio"
+      ],
+      "one": "reimplementación de Whisper sobre CTranslate2 que transcribe mucho más rápido y con menor consumo de memoria, manteniendo la…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "whisperx"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\faster-whisper"
+    },
+    {
+      "id": "firecrawl",
+      "name": "firecrawl",
+      "role": "platform",
+      "exec": "cloud",
+      "setup": "medium",
+      "tags": [
+        "scraping",
+        "agents"
+      ],
+      "one": "plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\firecrawl"
+    },
+    {
+      "id": "flowise",
+      "name": "Flowise",
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "easy",
+      "tags": [
+        "agents"
+      ],
+      "one": "builder visual drag-and-drop para pipelines LLM",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "dify"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Flowise"
+    },
+    {
+      "id": "fluxer",
+      "name": "fluxer",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "image",
+        "audio",
+        "video",
+        "local"
+      ],
+      "one": "plataforma generativa emergente con foco en audio y video mejorados, ofrecida como cliente Canary web/desktop; su API y self-host…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\fluxer"
+    },
+    {
+      "id": "fooocus",
+      "name": "Fooocus",
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "image"
+      ],
+      "one": "herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "comfyui"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Fooocus"
+    },
+    {
+      "id": "geo-seo-claude",
+      "name": "geo-seo-claude",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills"
+      ],
+      "one": "skill GEO-first con soporte SEO clásico para optimizar la visibilidad de sitios ante motores de búsqueda con IA (Generative…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\geo-seo-claude"
+    },
+    {
+      "id": "gfpgan",
+      "name": "GFPGAN",
+      "role": "runtime",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "image",
+        "training"
+      ],
+      "one": "algoritmo de restauración facial que reconstruye rostros degradados o de baja calidad usando priors generativos (GAN)…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "real-esrgan"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\GFPGAN"
+    },
+    {
+      "id": "github-mcp-server",
+      "name": "github-mcp-server",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "GitHub MCP Server",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\github-mcp-server"
+    },
+    {
+      "id": "gitnexus",
+      "name": "GitNexus",
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "easy",
+      "tags": [
+        "code"
+      ],
+      "one": "herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en…",
+      "install_mode": "global",
+      "decision": "use_now",
+      "alt": [
+        "codegraph"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\GitNexus"
+    },
+    {
+      "id": "gpt-researcher",
+      "name": "gpt-researcher",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "agents",
+        "research"
+      ],
+      "one": "agente autónomo que investiga en línea y consolida reportes citados y estructurados",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\gpt-researcher"
+    },
+    {
+      "id": "gradio",
+      "name": "gradio",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "| [Documentation](https://gradio.app/docs/)",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\gradio"
+    },
+    {
+      "id": "graphify",
+      "name": "graphify",
+      "role": "runtime",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "code",
+        "graph",
+        "video"
+      ],
+      "one": "generador de grafos de conocimiento para proyectos locales que mapea código, PDFs, imágenes y video en diagramas interactivos,…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "codegraph"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\graphify"
+    },
+    {
+      "id": "graphrag",
+      "name": "graphrag",
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "code",
+        "rag",
+        "graph"
+      ],
+      "one": "sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\graphrag"
+    },
+    {
+      "id": "gsap",
+      "name": "GSAP",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "ui",
+        "animation"
+      ],
+      "one": "librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "motion"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\GSAP"
+    },
+    {
+      "id": "guardrails",
+      "name": "Guardrails",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "NVIDIA NeMo Guardrails Library",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Guardrails"
+    },
+    {
+      "id": "guia",
+      "name": "guia",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "🌌 Catálogo de Repositorios de IA & Automatización",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\guia"
+    },
+    {
+      "id": "headroom",
+      "name": "headroom",
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "easy",
+      "tags": [
+        "llmops",
+        "context"
+      ],
+      "one": "utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\headroom"
+    },
+    {
+      "id": "hermes-agent",
+      "name": "hermes-agent",
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "agents",
+        "research",
+        "ui"
+      ],
+      "one": "entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\hermes-agent"
+    },
+    {
+      "id": "heroui",
+      "name": "heroui",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "ui",
+        "dataviz"
+      ],
+      "one": "librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\heroui"
+    },
+    {
+      "id": "how-to-train-your-gpt",
+      "name": "how-to-train-your-gpt",
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "code",
+        "training"
+      ],
+      "one": "guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material de estudio más que como librería de producción.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "nanogpt"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\how-to-train-your-gpt"
+    },
+    {
+      "id": "huginn",
+      "name": "huginn",
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "automation",
+        "agents",
+        "local"
+      ],
+      "one": "sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un \"IFTTT/Zapier que…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\huginn"
+    },
+    {
+      "id": "humanizer",
+      "name": "humanizer",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills"
+      ],
+      "one": "skill para Claude Code/OpenCode que elimina las señales típicas (\"tells\") de la escritura generada por IA para que el texto suene…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\humanizer"
+    },
+    {
+      "id": "hyperframes",
+      "name": "hyperframes",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "media",
+        "animation"
+      ],
+      "one": "framework npm para generar animaciones frame a frame de forma programática desde código.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "remotion"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\hyperframes"
+    },
+    {
+      "id": "impeccable",
+      "name": "impeccable",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "ui",
+        "browser",
+        "agents",
+        "skills"
+      ],
+      "one": "guía de diseño para agentes de código (1 skill, 23 comandos, iteración en browser y 44 detectores de \"tells\" de UI por IA) que…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\impeccable"
+    },
+    {
+      "id": "instaloader",
+      "name": "instaloader",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "scraping"
+      ],
+      "one": "herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "snscrape"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\instaloader"
+    },
+    {
+      "id": "invokeai",
+      "name": "InvokeAI",
+      "role": "app",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "image",
+        "automation",
+        "ui"
+      ],
+      "one": "suite profesional y unificada para Stable Diffusion que combina una UI pulida con canvas, capas, inpainting y gestión de modelos…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [
+        "fooocus"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\InvokeAI"
+    },
+    {
+      "id": "langchain",
+      "name": "langchain",
+      "role": "library",
+      "exec": "cloud",
+      "setup": "medium",
+      "tags": [
+        "agents",
+        "rag"
+      ],
+      "one": "framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas)",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\langchain"
+    },
+    {
+      "id": "langflow",
+      "name": "langflow",
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "agents"
+      ],
+      "one": "constructor visual de flujos LLM/agentes construido sobre LangChain",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\langflow"
+    },
+    {
+      "id": "langfuse",
+      "name": "langfuse",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "llmops",
+        "agents"
+      ],
+      "one": "plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\langfuse"
+    },
+    {
+      "id": "listmonk",
+      "name": "listmonk",
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "automation",
+        "email",
+        "local"
+      ],
+      "one": "gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depender de un SaaS.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "mautic"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\listmonk"
+    },
+    {
+      "id": "litellm",
+      "name": "litellm",
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "easy",
+      "tags": [
+        "llmops"
+      ],
+      "one": "gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\litellm"
+    },
+    {
+      "id": "liveportrait",
+      "name": "LivePortrait",
+      "role": "runtime",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "image",
+        "video"
+      ],
+      "one": "sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [
+        "deep-live-cam"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\LivePortrait"
+    },
+    {
+      "id": "llm-council",
+      "name": "llm-council",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "agents"
+      ],
+      "one": "\"consejo\" donde varios LLMs deliberan y se evalúan entre sí para responder",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\llm-council"
+    },
+    {
+      "id": "llm-scraper",
+      "name": "llm-scraper",
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "easy",
+      "tags": [
+        "scraping"
+      ],
+      "one": "librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "scrapegraph-ai"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\llm-scraper"
+    },
+    {
+      "id": "llmc",
+      "name": "llm.c",
+      "role": "library",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "code",
+        "training"
+      ],
+      "one": "implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [
+        "nanogpt"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\llm.c"
+    },
+    {
+      "id": "llmfit",
+      "name": "llmfit",
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "easy",
+      "tags": [
+        "llmops"
+      ],
+      "one": "herramienta para evaluar y medir el \"fit\" y la calidad de LLMs en una tarea concreta, orientada a comparar modelos con datos.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\llmfit"
+    },
+    {
+      "id": "loguru",
+      "name": "loguru",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "llmops"
+      ],
+      "one": "librería de logging para Python centrada en la simplicidad (\"logging that doesn't suck\"), lista para usar sin configuración…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\loguru"
+    },
+    {
+      "id": "lossless-cut",
+      "name": "lossless-cut",
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "media",
+        "audio",
+        "video"
+      ],
+      "one": "aplicación de escritorio para recortar, fusionar y reorganizar video/audio sin recodificar, conservando la calidad original.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "moviepy"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\lossless-cut"
+    },
+    {
+      "id": "magicui",
+      "name": "magicui",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "ui",
+        "animation"
+      ],
+      "one": "librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "heroui"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\magicui"
+    },
+    {
+      "id": "marketingskills",
+      "name": "marketingskills",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills",
+        "agents",
+        "dataviz"
+      ],
+      "one": "colección de skills de marketing que cubren conversión, copywriting, SEO, analítica y growth para usar con agentes de código.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\marketingskills"
+    },
+    {
+      "id": "markitdown",
+      "name": "markitdown",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "docs",
+        "audio"
+      ],
+      "one": "utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown…",
+      "install_mode": "local_project",
+      "decision": "use_now",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\markitdown"
+    },
+    {
+      "id": "mautic",
+      "name": "mautic",
+      "role": "platform",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "automation",
+        "local"
+      ],
+      "one": "plataforma open-source de marketing automation y segmentación de audiencias, alternativa soberana a suites comerciales como…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [
+        "listmonk"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\mautic"
+    },
+    {
+      "id": "mcp",
+      "name": "mcp",
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "mcp"
+      ],
+      "one": "núcleo del Model Context Protocol (spec y SDKs oficiales) para que herramientas, datos y clientes de IA interoperen bajo un mismo…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "mcp-use"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\mcp"
+    },
+    {
+      "id": "mcp-neo4j",
+      "name": "mcp-neo4j",
+      "role": "runtime",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "mcp",
+        "graph"
+      ],
+      "one": "conjunto de servidores MCP oficiales para conectar bases de datos de grafos Neo4j a asistentes de IA, con soporte de despliegue…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\mcp-neo4j"
+    },
+    {
+      "id": "mcp-use",
+      "name": "mcp-use",
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "mcp"
+      ],
+      "one": "framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\mcp-use"
+    },
+    {
+      "id": "mem0",
+      "name": "mem0",
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "easy",
+      "tags": [
+        "llmops",
+        "memory",
+        "agents"
+      ],
+      "one": "capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "mempalace"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\mem0"
+    },
+    {
+      "id": "mempalace",
+      "name": "mempalace",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "llmops",
+        "memory"
+      ],
+      "one": "memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin enviar datos a servicios…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\mempalace"
+    },
+    {
+      "id": "metabase",
+      "name": "metabase",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "dataviz"
+      ],
+      "one": "herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "posthog"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\metabase"
+    },
+    {
+      "id": "mirofish",
+      "name": "MiroFish",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "tags": [
+        "agents"
+      ],
+      "one": "motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\MiroFish"
+    },
+    {
+      "id": "motion",
+      "name": "motion",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "ui",
+        "animation"
+      ],
+      "one": "librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "gsap"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\motion"
+    },
+    {
+      "id": "moviepy",
+      "name": "moviepy",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "media",
+        "audio",
+        "video"
+      ],
+      "one": "librería Python para edición de video programática: cortar, concatenar, superponer texto, subtítulos y audio, y exportar el…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "remotion"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\moviepy"
+    },
+    {
+      "id": "multica",
+      "name": "multica",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "agents"
+      ],
+      "one": "plataforma para que humanos y agentes trabajen lado a lado (\"tus próximas 10 contrataciones no serán humanas\")",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\multica"
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "automation"
+      ],
+      "one": "plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\n8n"
+    },
+    {
+      "id": "n8n-mcp",
+      "name": "n8n-mcp",
+      "role": "runtime",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "mcp"
+      ],
+      "one": "servidor MCP que expone a la IA la documentación y los esquemas de los más de 1.845 nodos de n8n para ayudar a construir y…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\n8n-mcp"
+    },
+    {
+      "id": "n8n-skills",
+      "name": "n8n-skills",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills",
+        "automation"
+      ],
+      "one": "conjunto de 14 skills estructuradas para Claude Code orientadas a construir flujos de n8n correctos, evitando errores al generar…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\n8n-skills"
+    },
+    {
+      "id": "n8n-io",
+      "name": "n8n_io",
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "automation",
+        "code"
+      ],
+      "one": "copia local del repositorio oficial de n8n (mismo proyecto que [n8n](#-n8n)), mantenida como referencia o espejo del código…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "n8n"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\n8n_io"
+    },
+    {
+      "id": "nanochat",
+      "name": "nanochat",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "code",
+        "training"
+      ],
+      "one": "pipeline full-stack mínimo de Andrej Karpathy para entrenar un \"ChatGPT\" de principio a fin, cubriendo desde el preentrenamiento…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "nanogpt"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\nanochat"
+    },
+    {
+      "id": "nanogpt",
+      "name": "nanoGPT",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "code",
+        "training"
+      ],
+      "one": "implementación mínima y limpia de Andrej Karpathy para entrenar y afinar GPTs, pensada para que el código quepa en la cabeza y se…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\nanoGPT"
+    },
+    {
+      "id": "nemo",
+      "name": "NeMo",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "**NVIDIA NeMo Speech**",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\NeMo"
+    },
+    {
+      "id": "nemo-agent-toolkit",
+      "name": "NeMo-Agent-Toolkit",
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "tags": [
+        "agents"
+      ],
+      "one": "toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo)",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\NeMo-Agent-Toolkit"
+    },
+    {
+      "id": "nemotron",
+      "name": "Nemotron",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "NVIDIA Nemotron Developer Repository",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Nemotron"
+    },
+    {
+      "id": "normalizecss",
+      "name": "normalize.css",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "ui",
+        "browser"
+      ],
+      "one": "hoja de estilos que normaliza los defaults entre navegadores para partir de una base de rendering uniforme.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\normalize.css"
+    },
+    {
+      "id": "notebooklm-mcp-cli",
+      "name": "notebooklm-mcp-cli",
+      "role": "runtime",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "local",
+        "mcp",
+        "notebooks"
+      ],
+      "one": "CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde terminal o desde…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "notebooklm-py"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\notebooklm-mcp-cli"
+    },
+    {
+      "id": "notebooklm-py",
+      "name": "notebooklm-py",
+      "role": "library",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "local",
+        "notebooks"
+      ],
+      "one": "API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "open-notebook"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\notebooklm-py"
+    },
+    {
+      "id": "novu",
+      "name": "novu",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "automation",
+        "email",
+        "notifications"
+      ],
+      "one": "infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "listmonk"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\novu"
+    },
+    {
+      "id": "odysseus",
+      "name": "odysseus",
+      "role": "platform",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "local",
+        "email",
+        "research",
+        "agents"
+      ],
+      "one": "workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\odysseus"
+    },
+    {
+      "id": "omnivoice-studio",
+      "name": "OmniVoice-Studio",
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "media",
+        "audio",
+        "video"
+      ],
+      "one": "suite de voz de escritorio open-source planteada como alternativa a ElevenLabs, con dictado en tiempo real, clonación zero-shot y…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "tts"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\OmniVoice-Studio"
+    },
+    {
+      "id": "open-design",
+      "name": "open-design",
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "ui"
+      ],
+      "one": "editor/workspace de diseño colaborativo asistido por IA que genera, maqueta y anima interfaces a partir de instrucciones en…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "plasmic"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\open-design"
+    },
+    {
+      "id": "open-generative-ai",
+      "name": "Open-Generative-AI",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "image",
+        "agents",
+        "video"
+      ],
+      "one": "plataforma alternativa libre a servicios premium de video/imagen que agrupa más de 200 modelos generativos accesibles desde…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "comfyui"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Open-Generative-AI"
+    },
+    {
+      "id": "open-notebook",
+      "name": "open-notebook",
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "local",
+        "notebooks"
+      ],
+      "one": "clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes,…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "notebooklm-py"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\open-notebook"
+    },
+    {
+      "id": "openai-python",
+      "name": "openai-python",
+      "role": "library",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "code",
+        "audio"
+      ],
+      "one": "SDK oficial de OpenAI para Python, que expone de forma tipada y cómoda la API (chat, embeddings, imágenes, audio) y es la base…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "litellm"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\openai-python"
+    },
+    {
+      "id": "opencut",
+      "name": "OpenCut",
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "media",
+        "ui",
+        "video"
+      ],
+      "one": "editor de video open-source con UI moderna, planteado como alternativa libre tipo CapCut, usable en web o escritorio.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "moviepy"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\OpenCut"
+    },
+    {
+      "id": "openevolve",
+      "name": "openevolve",
+      "role": "runtime",
+      "exec": "cloud",
+      "setup": "heavy",
+      "tags": [
+        "agents"
+      ],
+      "one": "agente de codificación evolutivo que optimiza algoritmos por simulación genética",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\openevolve"
+    },
+    {
+      "id": "openhands",
+      "name": "OpenHands",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "agents"
+      ],
+      "one": "plataforma de agentes que ejecutan acciones reales en entornos de desarrollo (ex-OpenDevin)",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\OpenHands"
+    },
+    {
+      "id": "openscreen",
+      "name": "openscreen",
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "easy",
+      "tags": [
+        "media",
+        "video"
+      ],
+      "one": "herramienta ligera de grabación de pantalla para screencasts y demos; el proyecto original está archivado y continúa mediante un…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\openscreen"
+    },
+    {
+      "id": "openwa",
+      "name": "OpenWA",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "automation",
+        "whatsapp",
+        "llmops"
+      ],
+      "one": "gateway/SDK abierto para conectar y automatizar cuentas de WhatsApp de forma directa desde código, sin infraestructura pesada.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\OpenWA"
+    },
+    {
+      "id": "pdfcraft",
+      "name": "pdfcraft",
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "docs",
+        "browser",
+        "local"
+      ],
+      "one": "conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "markitdown"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\pdfcraft"
+    },
+    {
+      "id": "penpot",
+      "name": "penpot",
+      "role": "app",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "ui",
+        "local"
+      ],
+      "one": "plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [
+        "open-design"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\penpot"
+    },
+    {
+      "id": "plasmic",
+      "name": "plasmic",
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "ui",
+        "code"
+      ],
+      "one": "builder visual para apps y sitios conectado a tu propia base de código, que permite diseñar y publicar sin perder el control del…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "open-design"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\plasmic"
+    },
+    {
+      "id": "playwright",
+      "name": "playwright",
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "scraping",
+        "browser",
+        "automation"
+      ],
+      "one": "framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "browser-use"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\playwright"
+    },
+    {
+      "id": "playwright-cli",
+      "name": "playwright-cli",
+      "role": "skill",
+      "exec": "hybrid",
+      "setup": "easy",
+      "tags": [
+        "scraping",
+        "browser",
+        "agents",
+        "skills",
+        "context"
+      ],
+      "one": "interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\playwright-cli"
+    },
+    {
+      "id": "posthog",
+      "name": "posthog",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "tags": [
+        "dataviz"
+      ],
+      "one": "plataforma de product analytics y eventos para entender el comportamiento de usuarios, con funnels, session replay y feature…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [
+        "metabase"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\posthog"
+    },
+    {
+      "id": "ppt-master",
+      "name": "ppt-master",
+      "role": "runtime",
+      "exec": "hybrid",
+      "setup": "easy",
+      "tags": [
+        "docs"
+      ],
+      "one": "generador que transforma documentos de texto en presentaciones PowerPoint (.pptx) editables nativas, listas para abrir y ajustar…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "revealjs"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ppt-master"
+    },
+    {
+      "id": "prompt-master",
+      "name": "prompt-master",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills"
+      ],
+      "one": "skill que ayuda a redactar prompts precisos para cualquier herramienta de IA, buscando el mejor resultado sin desperdiciar tokens.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\prompt-master"
+    },
+    {
+      "id": "public-apis",
+      "name": "public-apis",
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "mcp"
+      ],
+      "one": "directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\public-apis"
+    },
+    {
+      "id": "react-three-fiber",
+      "name": "react-three-fiber",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "ui",
+        "animation"
+      ],
+      "one": "renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "threejs"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\react-three-fiber"
+    },
+    {
+      "id": "real-esrgan",
+      "name": "Real-ESRGAN",
+      "role": "runtime",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "image"
+      ],
+      "one": "herramienta de superresolución y restauración para imágenes reales que reescala y limpia material de baja calidad sin rehacerlo.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "gfpgan"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Real-ESRGAN"
+    },
+    {
+      "id": "remotion",
+      "name": "remotion",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "media",
+        "video"
+      ],
+      "one": "framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "moviepy"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\remotion"
+    },
+    {
+      "id": "repomix",
+      "name": "repomix",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "Need discussion? Join us on <a href=\"https://discord.gg/wNYzTwZFku\">Discord</a>!<br>",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\repomix"
+    },
+    {
+      "id": "revealjs",
+      "name": "reveal.js",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "docs"
+      ],
+      "one": "framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "ppt-master"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\reveal.js"
+    },
+    {
+      "id": "ruflo",
+      "name": "ruflo",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "tags": [
+        "agents",
+        "memory"
+      ],
+      "one": "harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow)",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ruflo"
+    },
+    {
+      "id": "sandbox",
+      "name": "sandbox",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "llmops",
+        "browser",
+        "mcp",
+        "agents"
+      ],
+      "one": "entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\sandbox"
+    },
+    {
+      "id": "scrapegraph-ai",
+      "name": "Scrapegraph-ai",
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "scraping",
+        "graph"
+      ],
+      "one": "framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "llm-scraper"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Scrapegraph-ai"
+    },
+    {
+      "id": "scrapely",
+      "name": "scrapely",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "scraping"
+      ],
+      "one": "librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\scrapely"
+    },
+    {
+      "id": "scrapling",
+      "name": "Scrapling",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "scraping"
+      ],
+      "one": "librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica los elementos…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Scrapling"
+    },
+    {
+      "id": "scrapy",
+      "name": "scrapy",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "scraping"
+      ],
+      "one": "framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\scrapy"
+    },
+    {
+      "id": "sd-webui-controlnet",
+      "name": "sd-webui-controlnet",
+      "role": "runtime",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "image"
+      ],
+      "one": "extensión que integra el control estructural de ControlNet directamente en Stable Diffusion WebUI, con preprocesadores para…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\sd-webui-controlnet"
+    },
+    {
+      "id": "servers",
+      "name": "servers",
+      "role": "directory",
+      "exec": "hybrid",
+      "setup": "medium",
+      "tags": [
+        "mcp"
+      ],
+      "one": "colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\servers"
+    },
+    {
+      "id": "skills",
+      "name": "skills",
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills"
+      ],
+      "one": "colección de skills de referencia mantenida por el proyecto aihero.dev / Total TypeScript, pensada como ejemplos limpios y bien…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\skills"
+    },
+    {
+      "id": "skills-emil",
+      "name": "skills_emil",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills",
+        "ui"
+      ],
+      "one": "colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrollador (design…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\skills_emil"
+    },
+    {
+      "id": "skillspector",
+      "name": "SkillSpector",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills"
+      ],
+      "one": "herramienta para auditar la seguridad de skills y detectar patrones potencialmente riesgosos antes de instalarlas.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\SkillSpector"
+    },
+    {
+      "id": "snscrape",
+      "name": "snscrape",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "scraping"
+      ],
+      "one": "scraper de redes sociales (Twitter/X, Reddit, Telegram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "instaloader"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\snscrape"
+    },
+    {
+      "id": "stable-diffusion-webui",
+      "name": "stable-diffusion-webui",
+      "role": "app",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "image",
+        "browser"
+      ],
+      "one": "interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [
+        "invokeai"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\stable-diffusion-webui"
+    },
+    {
+      "id": "stop-slop",
+      "name": "stop-slop",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills"
+      ],
+      "one": "skill que enseña al modelo a eliminar patrones y \"tells\" de la prosa generada por IA, mejorando ritmo y estilo.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "humanizer"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\stop-slop"
+    },
+    {
+      "id": "streamlit",
+      "name": "streamlit",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "dataviz",
+        "ui"
+      ],
+      "one": "framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "dash"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\streamlit"
+    },
+    {
+      "id": "superpowers",
+      "name": "superpowers",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills",
+        "agents"
+      ],
+      "one": "metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\superpowers"
+    },
+    {
+      "id": "supertonic",
+      "name": "supertonic",
+      "role": "runtime",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "media",
+        "browser",
+        "audio"
+      ],
+      "one": "motor TTS multilingüe ultrarrápido de Supertone que sintetiza voz directamente en el dispositivo, incluso en el navegador vía…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "voxcpm"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\supertonic"
+    },
+    {
+      "id": "swr",
+      "name": "swr",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "ui",
+        "data"
+      ],
+      "one": "librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\swr"
+    },
+    {
+      "id": "tailwindcss",
+      "name": "tailwindcss",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "ui"
+      ],
+      "one": "framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\tailwindcss"
+    },
+    {
+      "id": "taste-skill",
+      "name": "taste-skill",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills",
+        "ui",
+        "image"
+      ],
+      "one": "skills \"anti-slop\" para producir frontends premium (layout, tipografía, motion) más skills de generación de imagen para crear…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\taste-skill"
+    },
+    {
+      "id": "threejs",
+      "name": "three.js",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "ui",
+        "browser",
+        "animation",
+        "dataviz"
+      ],
+      "one": "motor 3D (WebGL) para renderizar gráficos y escenas interactivas directamente en el navegador.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\three.js"
+    },
+    {
+      "id": "tooljet",
+      "name": "ToolJet",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "ToolJet is the open-source foundation of ToolJet AI - the AI-native platform for building and deploying internal tools, workflows and AI agents. The community edition provides a powerful visual builder, drag-and-drop UI, and integrations with databases, APIs,...",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ToolJet"
+    },
+    {
+      "id": "tools",
+      "name": "tools",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\tools"
+    },
+    {
+      "id": "tts",
+      "name": "TTS",
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "media",
+        "training",
+        "audio"
+      ],
+      "one": "toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "supertonic"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\TTS"
+    },
+    {
+      "id": "turbovec",
+      "name": "turbovec",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "llmops"
+      ],
+      "one": "librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\turbovec"
+    },
+    {
+      "id": "twenty-main",
+      "name": "twenty-main",
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "tags": [
+        "automation",
+        "crm"
+      ],
+      "one": "CRM open-source orientado a desarrolladores, alternativa moderna y personalizable a Salesforce/HubSpot que modela tu negocio…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\twenty-main"
+    },
+    {
+      "id": "ui",
+      "name": "ui",
+      "role": null,
+      "exec": null,
+      "setup": null,
+      "tags": [],
+      "one": "shadcn/ui",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ui"
+    },
+    {
+      "id": "ui-ux-pro-max-skill",
+      "name": "ui-ux-pro-max-skill",
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "tags": [
+        "skills",
+        "ui"
+      ],
+      "one": "habilidades que dotan al asistente de inteligencia de diseño UI/UX y estilos avanzados para producir interfaces más profesionales.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ui-ux-pro-max-skill"
+    },
+    {
+      "id": "uplot",
+      "name": "uPlot",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "dataviz"
+      ],
+      "one": "librería ultraligera para gráficos de series temporales capaz de pintar cientos de miles de puntos sin penalizar el rendimiento.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "echarts"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\uPlot"
+    },
+    {
+      "id": "videofy-minimal",
+      "name": "videofy_minimal",
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "media",
+        "video"
+      ],
+      "one": "herramienta minimalista (de Schibsted) que convierte contenido textual en videos cortos de forma local, sin pipeline complejo.",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "remotion"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\videofy_minimal"
+    },
+    {
+      "id": "voxcpm",
+      "name": "VoxCPM",
+      "role": "runtime",
+      "exec": "local",
+      "setup": "heavy",
+      "tags": [
+        "media",
+        "audio"
+      ],
+      "one": "sistema TTS de alta fidelidad de OpenBMB que prescinde del tokenizador tradicional para lograr una prosodia y fluidez muy…",
+      "install_mode": "deferred",
+      "decision": "defer",
+      "alt": [
+        "supertonic"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\VoxCPM"
+    },
+    {
+      "id": "whatsapp-agentkit",
+      "name": "whatsapp-agentkit",
+      "role": "skill",
+      "exec": "hybrid",
+      "setup": "easy",
+      "tags": [
+        "automation",
+        "whatsapp",
+        "agents"
+      ],
+      "one": "plantilla guiada que construye un agente conversacional de WhatsApp en menos de 30 minutos sin necesidad de programar, partiendo…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\whatsapp-agentkit"
+    },
+    {
+      "id": "whisper",
+      "name": "whisper",
+      "role": "runtime",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "media",
+        "audio"
+      ],
+      "one": "modelo de reconocimiento de voz y traducción de audio multilingüe de OpenAI, estándar de la industria que transcribe casi…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "faster-whisper"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\whisper"
+    },
+    {
+      "id": "whisperx",
+      "name": "whisperX",
+      "role": "runtime",
+      "exec": "local",
+      "setup": "medium",
+      "tags": [
+        "media",
+        "audio"
+      ],
+      "one": "extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [
+        "whisper"
+      ],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\whisperX"
+    },
+    {
+      "id": "youtube2webpage",
+      "name": "Youtube2Webpage",
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "tags": [
+        "media",
+        "audio",
+        "video"
+      ],
+      "one": "script en Perl que genera una página web legible a partir de un video de YouTube, intercalando la transcripción de subtítulos con…",
+      "install_mode": "reference_only",
+      "decision": "reference",
+      "alt": [],
+      "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Youtube2Webpage"
+    }
+  ]
+}

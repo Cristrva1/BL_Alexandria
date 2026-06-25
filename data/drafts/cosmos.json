@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T04:56:43.715439+00:00",
+  "profile": {
+    "id": "cosmos",
+    "name": "cosmos",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\cosmos",
+    "repo_url": "https://github.com/NVIDIA/cosmos.git",
+    "manifests": [],
+    "intro": {
+      "title": "Cosmos",
+      "desc": "Table of Contents."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "docker",
+      "postgres"
+    ],
+    "one": "Cosmos",
+    "install_hints": [
+      "uv pip install --torch-backend=auto \\",
+      "docker run --runtime nvidia --gpus all \\",
+      "uv pip install --torch-backend=cu130 \\"
+    ]
+  },
+  "compact": {
+    "id": "cosmos",
+    "name": "cosmos",
+    "cat": 11,
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "Cosmos",
+    "alt": [],
+    "doc": "human/fichas/cosmos.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "cosmos",
+    "cat": 11,
+    "desc": "Table of Contents.",
+    "stack": "python, typescript, docker, postgres",
+    "choose_if": "quieres cosmos",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "comfyui",
+      "stable-diffusion-webui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/NVIDIA/cosmos.git",
+    "doc": "human/fichas/cosmos.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:43.715227+00:00"
+  }
+}

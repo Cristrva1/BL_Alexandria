@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-06-25T04:58:34.499052+00:00",
+  "profile": {
+    "id": "mem0",
+    "name": "mem0",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\mem0",
+    "repo_url": "https://github.com/mem0ai/mem0.git",
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "New Memory Algorithm (April 2026)."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "·",
+    "install_hints": [
+      "npm install -g @mem0/cli      # or: pip install mem0-cli",
+      "| **Setup** | `pip install mem0ai` | `docker compose up` | Sign up at [app.mem0.ai](https://app.mem0.ai?utm_source=oss&utm_medium=readme) |",
+      "pip install mem0ai"
+    ]
+  },
+  "compact": {
+    "id": "mem0",
+    "name": "mem0",
+    "cat": 6,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "·",
+    "alt": [],
+    "doc": "human/fichas/mem0.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "mem0",
+    "cat": 6,
+    "desc": "New Memory Algorithm (April 2026).",
+    "stack": "python, typescript, javascript, docker, postgres",
+    "choose_if": "quieres ·",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "agentmemory",
+      "mempalace",
+      "loguru"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/mem0ai/mem0.git",
+    "doc": "human/fichas/mem0.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:34.498817+00:00"
+  }
+}

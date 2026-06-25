@@ -1,6 +1,6 @@
 # open-notebook
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo.
+An open source, privacy-focused alternative to Google's Notebook LM!.
 
 ## Que problema resuelve
 
-quieres NotebookLM privado
+quieres an open source, privacy-focused alternative to google's notebook lm!
 
 ## Por que tiene valor
 
-Aporta valor en `app` para local, notebooks. Stack declarado: Python (FastAPI), React/Next.js.
+Aporta valor en `platform` para docker, fastapi, langchain, postgres, python, react, typescript. Stack declarado: python, typescript, react, docker, postgres, fastapi, langchain.
 
 ## Cuando usarlo
 
-quieres NotebookLM privado
+quieres an open source, privacy-focused alternative to google's notebook lm!
 
 ## Cuando NO usarlo
 
-prefieres el NotebookLM real automatizado ([notebooklm-py](#-notebooklm-py)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, react, docker, postgres, fastapi, langchain
 
 ## Instalacion detectada
 
@@ -36,12 +40,11 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `odysseus`
-- `markitdown`
+- Ninguno declarado.
 
 ## Contra que compite
 
-- `notebooklm-py`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -49,8 +52,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con odysseus, markitdown cuando el flujo necesite mas de una pieza.
+Usarlo como finalista solo despues de comparar contra alternativas del mismo caso de uso.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres NotebookLM privado. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres an open source, privacy-focused alternative to google's notebook lm!. No debe instalarse por inercia.

@@ -1,34 +1,38 @@
 # ppt-master
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-generador que transforma documentos de texto en presentaciones PowerPoint (.pptx) editables nativas, listas para abrir y ajustar en Office.
+English | 中文.
 
 ## Que problema resuelve
 
-quieres PPTX editable
+quieres ppt master — ai generates natively editable pptx from any document
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para docs. Stack declarado: Python, python-pptx.
+Aporta valor en `library` para postgres, python, typescript. Stack declarado: python, typescript, postgres.
 
 ## Cuando usarlo
 
-quieres PPTX editable
+quieres ppt master — ai generates natively editable pptx from any document
 
 ## Cuando NO usarlo
 
-prefieres slides web ([reveal.js](#-revealjs)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
-reference_only
+deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, postgres
 
 ## Instalacion detectada
 
@@ -37,19 +41,21 @@ Repo local detectado: si
 ## Con que se combina
 
 - `markitdown`
+- `revealjs`
+- `reveal.js`
 
 ## Contra que compite
 
-- `revealjs`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con markitdown cuando el flujo necesite mas de una pieza.
+Combinar con markitdown, revealjs, reveal.js cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres PPTX editable. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres ppt master — ai generates natively editable pptx from any document. No debe instalarse por inercia.

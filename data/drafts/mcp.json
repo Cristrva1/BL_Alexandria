@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-06-25T04:58:29.516081+00:00",
+  "profile": {
+    "id": "mcp",
+    "name": "mcp",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\mcp",
+    "repo_url": "https://github.com/google/mcp.git",
+    "manifests": [],
+    "intro": {
+      "title": "`google/mcp`",
+      "desc": "This repository contains a list of Google's official Model Context Protocol (MCP) servers, guidance on how to deploy MCP servers to Google Cloud, and examples to get started."
+    },
+    "features": [],
+    "stack": [
+      "typescript",
+      "postgres"
+    ],
+    "one": "`google/mcp`",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "mcp",
+    "name": "mcp",
+    "cat": 5,
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+      "mcp",
+      "postgres",
+      "typescript"
+    ],
+    "one": "`google/mcp`",
+    "alt": [],
+    "doc": "human/fichas/mcp.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "mcp",
+    "cat": 5,
+    "desc": "This repository contains a list of Google's official Model Context Protocol (MCP) servers, guidance on how to deploy MCP servers to Google Cloud, and examples to get started.",
+    "stack": "typescript, postgres",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+      "claude-plugins-official",
+      "n8n-skills",
+      "servers"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/google/mcp.git",
+    "doc": "human/fichas/mcp.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:29.515877+00:00"
+  }
+}

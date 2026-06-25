@@ -1,6 +1,6 @@
 # Guia humana
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 Esta carpeta contiene salidas navegables para entender la biblioteca sin abrir GitHub ni leer repos completos.
 
@@ -17,7 +17,7 @@ Esta carpeta contiene salidas navegables para entender la biblioteca sin abrir G
 
 ## Resumen
 
-- Repos documentados en indice: 156
+- Repos documentados en indice: 185
 - Categorias: 13
 - Playbooks/recetas: 9
 

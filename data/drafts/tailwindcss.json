@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-06-25T05:00:26.459420+00:00",
+  "profile": {
+    "id": "tailwindcss",
+    "name": "tailwindcss",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\tailwindcss",
+    "repo_url": "https://github.com/tailwindlabs/tailwindcss.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "A utility-first CSS framework for rapidly building custom user interfaces."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "javascript"
+    ],
+    "one": "A utility-first CSS framework for rapidly building custom user interfaces.",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "tailwindcss",
+    "name": "tailwindcss",
+    "cat": 9,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript"
+    ],
+    "one": "A utility-first CSS framework for rapidly building custom user interfaces.",
+    "alt": [],
+    "doc": "human/fichas/tailwindcss.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "tailwindcss",
+    "cat": 9,
+    "desc": "A utility-first CSS framework for rapidly building custom user interfaces.",
+    "stack": "javascript/typescript, javascript",
+    "choose_if": "quieres a utility-first css framework for rapidly building custom user interfaces.",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/tailwindlabs/tailwindcss.git",
+    "doc": "human/fichas/tailwindcss.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:26.459216+00:00"
+  }
+}

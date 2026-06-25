@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-06-25T05:00:00.179420+00:00",
+  "profile": {
+    "id": "scrapy",
+    "name": "scrapy",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\scrapy",
+    "repo_url": "https://github.com/scrapy/scrapy.git",
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "intro": {
+      "title": ".. |logo| image:: https://raw.githubusercontent.com/scrapy/scrapy/master/docs/_static/logo.svg",
+      "desc": ":target: https://scrapy.org."
+    },
+    "features": [],
+    "stack": [
+      "python"
+    ],
+    "one": "|logo|",
+    "install_hints": [
+      "pip install scrapy"
+    ]
+  },
+  "compact": {
+    "id": "scrapy",
+    "name": "scrapy",
+    "cat": 4,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "python",
+      "scraping"
+    ],
+    "one": "|logo|",
+    "alt": [],
+    "doc": "human/fichas/scrapy.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "scrapy",
+    "cat": 4,
+    "desc": ":target: https://scrapy.org.",
+    "stack": "python",
+    "choose_if": "quieres .. |logo| image:: https://raw.githubusercontent.com/scrapy/scrapy/master/docs/_static/logo",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "firecrawl",
+      "crawl4ai",
+      "crawlee"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/scrapy/scrapy.git",
+    "doc": "human/fichas/scrapy.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:00.179216+00:00"
+  }
+}

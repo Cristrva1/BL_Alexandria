@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-06-25T04:57:31.502664+00:00",
+  "profile": {
+    "id": "gpt-researcher",
+    "name": "gpt-researcher",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\gpt-researcher",
+    "repo_url": "https://github.com/assafelovic/gpt-researcher.git",
+    "manifests": [
+      "pyproject.toml",
+      "requirements.txt",
+      "setup.py",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<div align=\"center\" id=\"top\">",
+      "desc": "🔎 GPT Researcher."
+    },
+    "features": [
+      "📝 Generate detailed research reports using web and local documents.",
+      "🖼️ Smart image scraping and filtering for reports.",
+      "🍌 **AI-generated inline images** using Google Gemini (Nano Banana) for visual illustrations.",
+      "📜 Generate detailed reports exceeding 2,000 words.",
+      "🌐 Aggregate over 20 sources for objective conclusions.",
+      "🖥️ Frontend available in lightweight (HTML/CSS/JS) and production-ready (NextJS + Tailwind) versions."
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "fastapi",
+      "langchain"
+    ],
+    "one": "🔎 GPT Researcher",
+    "install_hints": [
+      "git clone https://github.com/assafelovic/gpt-researcher.git",
+      "pip install -r requirements.txt",
+      "pip install gpt-researcher"
+    ]
+  },
+  "compact": {
+    "id": "gpt-researcher",
+    "name": "gpt-researcher",
+    "cat": 3,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "fastapi",
+      "javascript",
+      "langchain",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "🔎 GPT Researcher",
+    "alt": [],
+    "doc": "human/fichas/gpt-researcher.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "gpt-researcher",
+    "cat": 3,
+    "desc": "🔎 GPT Researcher.",
+    "stack": "python, typescript, javascript, react, docker, fastapi, langchain",
+    "choose_if": "quieres 🔎 gpt researcher",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/assafelovic/gpt-researcher.git",
+    "doc": "human/fichas/gpt-researcher.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:31.502380+00:00"
+  }
+}

@@ -1,6 +1,6 @@
 # deer-flow
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles. Coordina tareas complejas delegando en agentes especializados.
+English | 中文 | 日本語 | Français | Русский.
 
 ## Que problema resuelve
 
-quieres un orquestador completo
+quieres 🦌 deerflow - 2.0
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para agents, memory, skills. Stack declarado: Python/TS.
+Aporta valor en `skill` para automation, docker, javascript, langchain, python, typescript. Stack declarado: python, typescript, javascript, docker, langchain.
 
 ## Cuando usarlo
 
-quieres un orquestador completo
+quieres 🦌 deerflow - 2.0
 
 ## Cuando NO usarlo
 
-buscas algo minimalista.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, docker, langchain
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `gpt-researcher`
-- `firecrawl`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con gpt-researcher, firecrawl cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres un orquestador completo. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres 🦌 deerflow - 2.0. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # swr
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano.
+SWR is a React Hooks library for data fetching.
 
 ## Que problema resuelve
 
-manejas datos remotos en React
+quieres introduction
 
 ## Por que tiene valor
 
-Aporta valor en `library` para ui, data. Stack declarado: JavaScript/React.
+Aporta valor en `library` para javascript, javascript-typescript, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react.
 
 ## Cuando usarlo
 
-manejas datos remotos en React
+quieres introduction
 
 ## Cuando NO usarlo
 
-prefieres otra solución de datos.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, typescript, javascript, react
 
 ## Instalacion detectada
 
@@ -36,7 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `heroui`
+- `openwa`
+- `skills`
+- `agency-agents`
 
 ## Contra que compite
 
@@ -48,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con heroui cuando el flujo necesite mas de una pieza.
+Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si manejas datos remotos en React. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres introduction. No debe instalarse por inercia.

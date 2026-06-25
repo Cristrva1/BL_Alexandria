@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-06-25T04:56:27.205039+00:00",
+  "profile": {
+    "id": "browser-use",
+    "name": "browser-use",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\browser-use",
+    "repo_url": "https://github.com/browser-use/browser-use.git",
+    "manifests": [
+      "pyproject.toml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<source media=\"(prefers-color-scheme: light)\" srcset=\"https://github.com/user-attachments/assets/2ccdb752-22fb-41c7-8948",
+      "desc": "🌤️ Want to skip the setup? Use our <b>[cloud](https://cloud.browser-use.com?utm_source=github&utm_medium=readme-skip-setup)</b> for faster, scalable, stealth-enabled browser automation!."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "docker"
+    ],
+    "one": "---",
+    "install_hints": [
+      "uv add \"browser-use[core]\"",
+      "# or: pip install \"browser-use[core]\"",
+      "uv add \"browser-use[core]\""
+    ]
+  },
+  "compact": {
+    "id": "browser-use",
+    "name": "browser-use",
+    "cat": 1,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "python",
+      "typescript"
+    ],
+    "one": "---",
+    "alt": [],
+    "doc": "human/fichas/browser-use.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "browser-use",
+    "cat": 1,
+    "desc": "🌤️ Want to skip the setup? Use our cloud for faster, scalable, stealth-enabled browser automation!.",
+    "stack": "python, typescript, docker",
+    "choose_if": "quieres <source media=\"(prefers-color-scheme: light)\" srcset=\"https://github.com/user-attachments/",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "twenty-main",
+      "evolution-api",
+      "whatsapp-agentkit"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/browser-use/browser-use.git",
+    "doc": "human/fichas/browser-use.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:27.204837+00:00"
+  }
+}

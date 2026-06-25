@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-06-25T05:00:24.874527+00:00",
+  "profile": {
+    "id": "swr",
+    "name": "swr",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\swr",
+    "repo_url": "https://github.com/vercel/swr.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "SWR is a React Hooks library for data fetching."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react"
+    ],
+    "one": "Introduction",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "swr",
+    "name": "swr",
+    "cat": 9,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "react",
+      "typescript"
+    ],
+    "one": "Introduction",
+    "alt": [],
+    "doc": "human/fichas/swr.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "swr",
+    "cat": 9,
+    "desc": "SWR is a React Hooks library for data fetching.",
+    "stack": "javascript/typescript, typescript, javascript, react",
+    "choose_if": "quieres introduction",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/vercel/swr.git",
+    "doc": "human/fichas/swr.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:24.874265+00:00"
+  }
+}

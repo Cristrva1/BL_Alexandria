@@ -1,34 +1,38 @@
 # supertonic
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-motor TTS multilingüe ultrarrápido de Supertone que sintetiza voz directamente en el dispositivo, incluso en el navegador vía WebGPU.
+Supertonic** is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns.
 
 ## Que problema resuelve
 
-quieres voz local en tiempo real
+quieres supertonic — lightning fast, on-device, accurate tts
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para media, browser, audio. Stack declarado: Python, Rust (ONNX/PyTorch), Node.js.
+Aporta valor en `library` para javascript, multimedia, python, typescript. Stack declarado: python, typescript, javascript.
 
 ## Cuando usarlo
 
-quieres voz local en tiempo real
+quieres supertonic — lightning fast, on-device, accurate tts
 
 ## Cuando NO usarlo
 
-priorizas clonación de máxima fidelidad ([VoxCPM](#-voxcpm)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
-reference_only
+deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript
 
 ## Instalacion detectada
 
@@ -36,21 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `whisperx`
-- `moviepy`
+- `fluxer`
+- `whisper`
+- `faster-whisper`
 
 ## Contra que compite
 
-- `voxcpm`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con whisperx, moviepy cuando el flujo necesite mas de una pieza.
+Combinar con fluxer, whisper, faster-whisper cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres voz local en tiempo real. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres supertonic — lightning fast, on-device, accurate tts. No debe instalarse por inercia.

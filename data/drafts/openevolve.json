@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:59:18.965365+00:00",
+  "profile": {
+    "id": "openevolve",
+    "name": "openevolve",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\openevolve",
+    "repo_url": "https://github.com/algorithmicsuperintelligence/openevolve.git",
+    "manifests": [
+      "pyproject.toml",
+      "setup.py",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "OpenEvolve",
+      "desc": "🧬 The most advanced open-source evolutionary coding agent**."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "docker"
+    ],
+    "one": "OpenEvolve",
+    "install_hints": [
+      "pip install openevolve",
+      "pip install openevolve",
+      "git clone https://github.com/algorithmicsuperintelligence/openevolve.git"
+    ]
+  },
+  "compact": {
+    "id": "openevolve",
+    "name": "openevolve",
+    "cat": 1,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "python",
+      "typescript"
+    ],
+    "one": "OpenEvolve",
+    "alt": [],
+    "doc": "human/fichas/openevolve.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "openevolve",
+    "cat": 1,
+    "desc": "🧬 The most advanced open-source evolutionary coding agent**.",
+    "stack": "python, typescript, docker",
+    "choose_if": "quieres openevolve",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "twenty-main",
+      "evolution-api",
+      "whatsapp-agentkit"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/algorithmicsuperintelligence/openevolve.git",
+    "doc": "human/fichas/openevolve.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:18.965151+00:00"
+  }
+}

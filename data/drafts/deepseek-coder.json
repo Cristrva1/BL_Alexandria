@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-06-25T04:56:58.526556+00:00",
+  "profile": {
+    "id": "deepseek-coder",
+    "name": "DeepSeek-Coder",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\DeepSeek-Coder",
+    "repo_url": "https://github.com/deepseek-ai/DeepSeek-Coder.git",
+    "manifests": [
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "1. Introduction of DeepSeek Coder."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker"
+    ],
+    "one": "1. Introduction of DeepSeek Coder",
+    "install_hints": [
+      "pip install -r requirements.txt",
+      "pip install -r finetune/requirements.txt",
+      "git clone https://github.com/DOGEwbx/llama.cpp.git"
+    ]
+  },
+  "compact": {
+    "id": "deepseek-coder",
+    "name": "DeepSeek-Coder",
+    "cat": 7,
+    "role": "library",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "python",
+      "typescript"
+    ],
+    "one": "1. Introduction of DeepSeek Coder",
+    "alt": [],
+    "doc": "human/fichas/deepseek-coder.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "DeepSeek-Coder",
+    "cat": 7,
+    "desc": "1. Introduction of DeepSeek Coder.",
+    "stack": "python, typescript, javascript, docker",
+    "choose_if": "quieres 1. introduction of deepseek coder",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "codegraph",
+      "gitnexus",
+      "llmc"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/deepseek-ai/DeepSeek-Coder.git",
+    "doc": "human/fichas/deepseek-coder.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:58.526346+00:00"
+  }
+}

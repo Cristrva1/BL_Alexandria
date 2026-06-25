@@ -1,6 +1,6 @@
 # Construir una app/servidor MCP
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Objetivo
 
@@ -8,10 +8,10 @@ exponer datos o herramientas propias a asistentes.
 
 ## Stack sugerido
 
-- `mcp-use`: framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable.
-- `mcp`: núcleo del Model Context Protocol (spec y SDKs oficiales) para que herramientas, datos y clientes de IA interoperen bajo un mismo estándar abierto.
-- `servers`: colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad.
-- `awesome-mcp-servers`: directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar.
+- `mcp-use`: to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.
+- `mcp`: This repository contains a list of Google's official Model Context Protocol (MCP) servers, guidance on how to deploy MCP servers to Google Cloud, and examples to get started.
+- `servers`: This repository is a collection of *reference implementations* for the Model Context Protocol (MCP), as well as references to community-built servers and additional resources.
+- `awesome-mcp-servers`: A curated list of awesome Model Context Protocol (MCP) servers.
 
 ## Como se conecta
 

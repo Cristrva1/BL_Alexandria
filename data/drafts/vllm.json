@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-06-25T05:00:47.935194+00:00",
+  "profile": {
+    "id": "vllm",
+    "name": "vllm",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\vllm",
+    "repo_url": "https://github.com/vllm-project/vllm.git",
+    "manifests": [
+      "pyproject.toml",
+      "setup.py"
+    ],
+    "intro": {
+      "title": "<!-- markdownlint-disable MD001 MD041 -->",
+      "desc": "Easy, fast, and cheap LLM serving for everyone."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript"
+    ],
+    "one": "Easy, fast, and cheap LLM serving for everyone",
+    "install_hints": [
+      "uv pip install vllm"
+    ]
+  },
+  "compact": {
+    "id": "vllm",
+    "name": "vllm",
+    "cat": 9,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "python",
+      "typescript"
+    ],
+    "one": "Easy, fast, and cheap LLM serving for everyone",
+    "alt": [],
+    "doc": "human/fichas/vllm.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "vllm",
+    "cat": 9,
+    "desc": "Easy, fast, and cheap LLM serving for everyone.",
+    "stack": "python, typescript",
+    "choose_if": "quieres easy, fast, and cheap llm serving for everyone",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/vllm-project/vllm.git",
+    "doc": "human/fichas/vllm.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:47.934976+00:00"
+  }
+}

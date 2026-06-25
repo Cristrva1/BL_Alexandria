@@ -1,6 +1,6 @@
 # SkillSpector
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-herramienta para auditar la seguridad de skills y detectar patrones potencialmente riesgosos antes de instalarlas.
+Security scanner for AI agent skills.** Detect vulnerabilities, malicious patterns, and security risks before installing agent skills.
 
 ## Que problema resuelve
 
-instalas skills externas
+quieres skillspector
 
 ## Por que tiene valor
 
-Aporta valor en `skill` para skills. Stack declarado: Python/Node.
+Aporta valor en `skill` para docker, javascript, python, skills, typescript. Stack declarado: python, typescript, javascript, docker.
 
 ## Cuando usarlo
 
-instalas skills externas
+quieres skillspector
 
 ## Cuando NO usarlo
 
-solo usas skills propias confiables.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, docker
 
 ## Instalacion detectada
 
@@ -36,7 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
+- `andrej-karpathy-skills`
 - `antigravity-awesome-skills`
+- `awesome-agent-skills`
 
 ## Contra que compite
 
@@ -48,8 +54,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con antigravity-awesome-skills cuando el flujo necesite mas de una pieza.
+Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si instalas skills externas. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres skillspector. No debe instalarse por inercia.

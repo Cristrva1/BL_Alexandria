@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-06-25T04:58:51.026631+00:00",
+  "profile": {
+    "id": "n8n-io",
+    "name": "n8n_io",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\n8n_io",
+    "repo_url": "https://github.com/n8n-io/n8n.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml"
+    ],
+    "intro": {
+      "title": "n8n - Secure Workflow Automation for Technical Teams",
+      "desc": "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "langchain"
+    ],
+    "one": "n8n - Secure Workflow Automation for Technical Teams",
+    "install_hints": [
+      "docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n"
+    ]
+  },
+  "compact": {
+    "id": "n8n-io",
+    "name": "n8n_io",
+    "cat": 1,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "langchain",
+      "python",
+      "typescript"
+    ],
+    "one": "n8n - Secure Workflow Automation for Technical Teams",
+    "alt": [],
+    "doc": "human/fichas/n8n-io.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "n8n_io",
+    "cat": 1,
+    "desc": "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.",
+    "stack": "javascript/typescript, python, typescript, javascript, docker, langchain",
+    "choose_if": "quieres n8n - secure workflow automation for technical teams",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "twenty-main",
+      "evolution-api",
+      "whatsapp-agentkit"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/n8n-io/n8n.git",
+    "doc": "human/fichas/n8n-io.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:51.026424+00:00"
+  }
+}

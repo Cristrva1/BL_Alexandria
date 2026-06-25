@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T04:58:06.401536+00:00",
+  "profile": {
+    "id": "listmonk",
+    "name": "listmonk",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\listmonk",
+    "repo_url": "https://github.com/knadh/listmonk.git",
+    "manifests": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<a href=\"https://zerodha.tech\"><img src=\"https://zerodha.tech/static/images/github-badge.svg\" align=\"right\" /></a>",
+      "desc": "listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL database as its data store."
+    },
+    "features": [],
+    "stack": [
+      "typescript",
+      "docker",
+      "postgres"
+    ],
+    "one": "listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL database as its data store.",
+    "install_hints": [
+      "docker compose up -d"
+    ]
+  },
+  "compact": {
+    "id": "listmonk",
+    "name": "listmonk",
+    "cat": 1,
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "postgres",
+      "typescript"
+    ],
+    "one": "listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL database as its data store.",
+    "alt": [],
+    "doc": "human/fichas/listmonk.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "listmonk",
+    "cat": 1,
+    "desc": "listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL database as its data store.",
+    "stack": "typescript, docker, postgres",
+    "choose_if": "quieres listmonk is a standalone, self-hosted, newsletter and mailing list manager. it i",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "twenty-main",
+      "evolution-api",
+      "whatsapp-agentkit"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/knadh/listmonk.git",
+    "doc": "human/fichas/listmonk.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:06.401322+00:00"
+  }
+}

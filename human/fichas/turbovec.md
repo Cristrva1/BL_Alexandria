@@ -1,6 +1,6 @@
 # turbovec
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida.
+A 10 million document corpus takes 31 GB of RAM as float32. turbovec fits it in 4 GB - and searches it faster than FAISS.**.
 
 ## Que problema resuelve
 
-necesitas vector search veloz
+quieres ---
 
 ## Por que tiene valor
 
-Aporta valor en `library` para llmops. Stack declarado: Python / Rust.
+Aporta valor en `directory` para automation, langchain, python, typescript. Stack declarado: python, typescript, langchain.
 
 ## Cuando usarlo
 
-necesitas vector search veloz
+quieres ---
 
 ## Cuando NO usarlo
 
-ya usas una vector DB completa.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, langchain
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `mem0`
-- `graphrag`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con mem0, graphrag cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas vector search veloz. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres ---. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # public-apis
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos.
+The Public APIs repository is manually curated by community members like you and folks working at APILayer. It includes an extensive list of public APIs from many domains that you can use for your own products. Consider it a treasure trove of APIs well-managed by the community over the years.
 
 ## Que problema resuelve
 
-buscas datos externos
+necesitas exponer herramientas o contexto a agentes vía MCP
 
 ## Por que tiene valor
 
-Aporta valor en `directory` para mcp. Stack declarado: Markdown.
+Aporta valor en `directory` para docker, javascript, postgres, python, react, typescript. Stack declarado: python, typescript, javascript, react, docker, postgres.
 
 ## Cuando usarlo
 
-buscas datos externos
+necesitas exponer herramientas o contexto a agentes vía MCP
 
 ## Cuando NO usarlo
 
-ya tienes tus fuentes definidas.
+prefieres conexiones directas sin protocolo estándar
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, react, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `n8n`
-- `firecrawl`
+- `claude-plugins-official`
+- `n8n-skills`
+- `mcp`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con n8n, firecrawl cuando el flujo necesite mas de una pieza.
+Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si buscas datos externos. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.

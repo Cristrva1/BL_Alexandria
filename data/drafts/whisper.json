@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-06-25T05:00:52.940452+00:00",
+  "profile": {
+    "id": "whisper",
+    "name": "whisper",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\whisper",
+    "repo_url": "https://github.com/openai/whisper.git",
+    "manifests": [
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "Whisper",
+      "desc": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "postgres",
+      "whisper"
+    ],
+    "one": "Whisper",
+    "install_hints": [
+      "pip install -U openai-whisper",
+      "pip install git+https://github.com/openai/whisper.git",
+      "pip install --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git"
+    ]
+  },
+  "compact": {
+    "id": "whisper",
+    "name": "whisper",
+    "cat": 12,
+    "role": "library",
+    "exec": "cloud",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "multimedia",
+      "postgres",
+      "python",
+      "typescript",
+      "whisper"
+    ],
+    "one": "Whisper",
+    "alt": [],
+    "doc": "human/fichas/whisper.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "whisper",
+    "cat": 12,
+    "desc": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification.",
+    "stack": "python, typescript, postgres, whisper",
+    "choose_if": "quieres whisper",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "faster-whisper",
+      "whisperx"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/openai/whisper.git",
+    "doc": "human/fichas/whisper.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:52.940236+00:00"
+  }
+}

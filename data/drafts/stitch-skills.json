@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-06-25T05:00:16.657296+00:00",
+  "profile": {
+    "id": "stitch-skills",
+    "name": "stitch-skills",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\stitch-skills",
+    "repo_url": "https://github.com/google-labs-code/stitch-skills.git",
+    "manifests": [],
+    "intro": {
+      "title": "Stitch Design Skills",
+      "desc": "A collection of agent skills and plugins for [Google Stitch](https://stitch.withgoogle.com), following the [Agent Skills](https://agentskills.io) open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, and Cursor."
+    },
+    "features": [],
+    "stack": [
+      "typescript",
+      "react"
+    ],
+    "one": "Stitch Design Skills",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "stitch-skills",
+    "name": "stitch-skills",
+    "cat": 9,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "frontend",
+      "react",
+      "skills",
+      "typescript"
+    ],
+    "one": "Stitch Design Skills",
+    "alt": [],
+    "doc": "human/fichas/stitch-skills.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "stitch-skills",
+    "cat": 9,
+    "desc": "A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, and Cursor.",
+    "stack": "typescript, react",
+    "choose_if": "quieres stitch design skills",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/google-labs-code/stitch-skills.git",
+    "doc": "human/fichas/stitch-skills.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:16.657041+00:00"
+  }
+}

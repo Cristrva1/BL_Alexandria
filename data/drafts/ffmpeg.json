@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-06-25T04:57:16.721839+00:00",
+  "profile": {
+    "id": "ffmpeg",
+    "name": "FFmpeg",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\FFmpeg",
+    "repo_url": "https://github.com/FFmpeg/FFmpeg.git",
+    "manifests": [],
+    "intro": {
+      "title": "FFmpeg README",
+      "desc": "FFmpeg is a collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata."
+    },
+    "features": [],
+    "stack": [
+      "typescript"
+    ],
+    "one": "FFmpeg README",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "ffmpeg",
+    "name": "FFmpeg",
+    "cat": 12,
+    "role": "directory",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "typescript"
+    ],
+    "one": "FFmpeg README",
+    "alt": [],
+    "doc": "human/fichas/ffmpeg.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "FFmpeg",
+    "cat": 12,
+    "desc": "FFmpeg is a collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata.",
+    "stack": "typescript",
+    "choose_if": "quieres ffmpeg readme",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "whisper",
+      "faster-whisper"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/FFmpeg/FFmpeg.git",
+    "doc": "human/fichas/ffmpeg.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:16.721636+00:00"
+  }
+}

@@ -1,6 +1,6 @@
 # andrej-karpathy-skills
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-guía de 4 principios (inspirada en las ideas de Andrej Karpathy sobre asistentes de código) que define cómo debe responder un agente para maximizar utilidad y reducir verbosidad innecesaria.
+Check out my new project Multica — an open-source platform for running and managing coding agents with reusable skills.
 
 ## Que problema resuelve
 
-quieres respuestas más útiles ya
+quieres karpathy-inspired claude code guidelines
 
 ## Por que tiene valor
 
-Aporta valor en `skill` para skills, agents. Stack declarado: Markdown (`CLAUDE.md`).
+Aporta valor en `skill` para skills, typescript. Stack declarado: typescript.
 
 ## Cuando usarlo
 
-quieres respuestas más útiles ya
+quieres karpathy-inspired claude code guidelines
 
 ## Cuando NO usarlo
 
-buscas skills ejecutables concretas.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+typescript
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `context-engineering`
+- `antigravity-awesome-skills`
+- `awesome-agent-skills`
+- `superpowers`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, context-engineering cuando el flujo necesite mas de una pieza.
+Combinar con antigravity-awesome-skills, awesome-agent-skills, superpowers cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres respuestas más útiles ya. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres karpathy-inspired claude code guidelines. No debe instalarse por inercia.

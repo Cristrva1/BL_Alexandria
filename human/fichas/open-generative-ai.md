@@ -1,6 +1,6 @@
 # Open-Generative-AI
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-plataforma alternativa libre a servicios premium de video/imagen que agrupa más de 200 modelos generativos accesibles desde terminal o integrados con agentes.
+The free, open-source alternative to AI Video Platforms.** Generate AI images and videos using 200+ state-of-the-art models — no content filters, no closed ecosystem, no subscription fees.
 
 ## Que problema resuelve
 
-quieres un hub de generación
+quieres open generative ai — open-source alternative to ai video platforms
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para image, agents, video. Stack declarado: Python, Node.js.
+Aporta valor en `skill` para comfy, docker, javascript, javascript-typescript, multimedia, python, react, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, react, docker, comfy.
 
 ## Cuando usarlo
 
-quieres un hub de generación
+quieres open generative ai — open-source alternative to ai video platforms
 
 ## Cuando NO usarlo
 
-ya tienes tu pipeline local ([ComfyUI](#-comfyui)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, python, typescript, javascript, react, docker, comfy
 
 ## Instalacion detectada
 
@@ -36,20 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `remotion`
+- `andrej-karpathy-skills`
+- `antigravity-awesome-skills`
+- `awesome-agent-skills`
 
 ## Contra que compite
 
-- `comfyui`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con remotion cuando el flujo necesite mas de una pieza.
+Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres un hub de generación. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres open generative ai — open-source alternative to ai video platforms. No debe instalarse por inercia.

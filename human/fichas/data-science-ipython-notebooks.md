@@ -1,6 +1,6 @@
 # data-science-ipython-notebooks
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-gran colección de notebooks de ciencia de datos y machine learning que cubre desde pandas y NumPy hasta deep learning y big data, con ejemplos listos para ejecutar.
+data-science-ipython-notebooks.
 
 ## Que problema resuelve
 
-estudias/consultas DS
+quieres data-science-ipython-notebooks
 
 ## Por que tiene valor
 
-Aporta valor en `directory` para code, notebooks, bigdata. Stack declarado: Python, Jupyter.
+Aporta valor en `library` para postgres, python, typescript. Stack declarado: python, typescript, postgres.
 
 ## Cuando usarlo
 
-estudias/consultas DS
+quieres data-science-ipython-notebooks
 
 ## Cuando NO usarlo
 
-buscas una librería, no ejemplos.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, postgres
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `dash`
-- `streamlit`
+- `codegraph`
+- `gitnexus`
+- `deepseek-coder`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
 
 ## Ideas profesionales
 
-Combinar con dash, streamlit cuando el flujo necesite mas de una pieza.
+Combinar con codegraph, gitnexus, deepseek-coder cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si estudias/consultas DS. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres data-science-ipython-notebooks. No debe instalarse por inercia.

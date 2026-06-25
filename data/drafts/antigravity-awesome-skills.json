@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-25T04:56:05.601270+00:00",
+  "profile": {
+    "id": "antigravity-awesome-skills",
+    "name": "antigravity-awesome-skills",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\antigravity-awesome-skills",
+    "repo_url": "https://github.com/sickn33/antigravity-awesome-skills.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "<!-- registry-sync: version=13.1.1; skills=1682; stars=41431; updated_at=2026-06-23T05:53:18+00:00 -->",
+      "desc": "🌌 Antigravity Awesome Skills: 1,682+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "postgres"
+    ],
+    "one": "🌌 Antigravity Awesome Skills: 1,682+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "antigravity-awesome-skills",
+    "name": "antigravity-awesome-skills",
+    "cat": 2,
+    "role": "skill",
+    "exec": "local",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "python",
+      "react",
+      "skills",
+      "typescript"
+    ],
+    "one": "🌌 Antigravity Awesome Skills: 1,682+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More",
+    "alt": [],
+    "doc": "human/fichas/antigravity-awesome-skills.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "antigravity-awesome-skills",
+    "cat": 2,
+    "desc": "🌌 Antigravity Awesome Skills: 1,682+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, postgres",
+    "choose_if": "quieres 🌌 antigravity awesome skills: 1,682+ agentic skills for claude code, gemini cli,",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "awesome-agent-skills",
+      "superpowers"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/sickn33/antigravity-awesome-skills.git",
+    "doc": "human/fichas/antigravity-awesome-skills.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:05.601054+00:00"
+  }
+}

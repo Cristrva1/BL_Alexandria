@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:58:21.304687+00:00",
+  "profile": {
+    "id": "luxtts",
+    "name": "LuxTTS",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\LuxTTS",
+    "repo_url": "https://github.com/ysharma3501/LuxTTS.git",
+    "manifests": [
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "LuxTTS",
+      "desc": "LuxTTS is an lightweight zipvoice based text-to-speech model designed for high quality voice cloning and realistic generation at speeds exceeding 150x realtime."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "comfy"
+    ],
+    "one": "LuxTTS",
+    "install_hints": [
+      "git clone https://github.com/ysharma3501/LuxTTS.git",
+      "pip install -r requirements.txt"
+    ]
+  },
+  "compact": {
+    "id": "luxtts",
+    "name": "LuxTTS",
+    "cat": 11,
+    "role": "directory",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "comfy",
+      "javascript",
+      "multimedia",
+      "python",
+      "typescript"
+    ],
+    "one": "LuxTTS",
+    "alt": [],
+    "doc": "human/fichas/luxtts.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "LuxTTS",
+    "cat": 11,
+    "desc": "LuxTTS is an lightweight zipvoice based text-to-speech model designed for high quality voice cloning and realistic generation at speeds exceeding 150x realtime.",
+    "stack": "python, typescript, javascript, comfy",
+    "choose_if": "quieres luxtts",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "comfyui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/ysharma3501/LuxTTS.git",
+    "doc": "human/fichas/luxtts.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:21.304489+00:00"
+  }
+}

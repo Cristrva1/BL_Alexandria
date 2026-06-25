@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-06-25T05:00:11.719305+00:00",
+  "profile": {
+    "id": "snscrape",
+    "name": "snscrape",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\snscrape",
+    "repo_url": "https://github.com/JustAnotherArchivist/snscrape.git",
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "intro": {
+      "title": "snscrape",
+      "desc": "snscrape is a scraper for social networking services (SNS). It scrapes things like user profiles, hashtags, or searches and returns the discovered items, e.g. the relevant posts."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript"
+    ],
+    "one": "snscrape",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "snscrape",
+    "name": "snscrape",
+    "cat": 4,
+    "role": "directory",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "python",
+      "scraping",
+      "typescript"
+    ],
+    "one": "snscrape",
+    "alt": [],
+    "doc": "human/fichas/snscrape.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "snscrape",
+    "cat": 4,
+    "desc": "snscrape is a scraper for social networking services (SNS). It scrapes things like user profiles, hashtags, or searches and returns the discovered items, e.g. the relevant posts.",
+    "stack": "python, typescript",
+    "choose_if": "quieres snscrape",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "firecrawl",
+      "crawl4ai",
+      "scrapy"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/JustAnotherArchivist/snscrape.git",
+    "doc": "human/fichas/snscrape.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:11.719018+00:00"
+  }
+}

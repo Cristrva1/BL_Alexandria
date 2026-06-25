@@ -1,6 +1,6 @@
 # skills_emil
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrollador (design engineering).
+For designers and engineers to help them build better user interfaces.
 
 ## Que problema resuelve
 
-trabajas diseño+dev en equipo
+quieres skills for design engineers
 
 ## Por que tiene valor
 
-Aporta valor en `skill` para skills, ui. Stack declarado: Markdown (skills).
+Aporta valor en `skill` para frontend, skills, typescript. Stack declarado: typescript.
 
 ## Cuando usarlo
 
-trabajas diseño+dev en equipo
+quieres skills for design engineers
 
 ## Cuando NO usarlo
 
-buscas componentes listos.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+typescript
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `designmd`
-- `ui-ux-pro-max-skill`
+- `openwa`
+- `skills`
+- `agency-agents`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con designmd, ui-ux-pro-max-skill cuando el flujo necesite mas de una pieza.
+Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si trabajas diseño+dev en equipo. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres skills for design engineers. No debe instalarse por inercia.

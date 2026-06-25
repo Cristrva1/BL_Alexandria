@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-06-25T05:00:15.021261+00:00",
+  "profile": {
+    "id": "stitch-sdk",
+    "name": "stitch-sdk",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\stitch-sdk",
+    "repo_url": "https://github.com/google-labs-code/stitch-sdk.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "@google/stitch-sdk",
+      "desc": "Generate UI screens from text prompts and extract their HTML and screenshots programmatically."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript"
+    ],
+    "one": "@google/stitch-sdk",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "stitch-sdk",
+    "name": "stitch-sdk",
+    "cat": 2,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "typescript"
+    ],
+    "one": "@google/stitch-sdk",
+    "alt": [],
+    "doc": "human/fichas/stitch-sdk.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "stitch-sdk",
+    "cat": 2,
+    "desc": "Generate UI screens from text prompts and extract their HTML and screenshots programmatically.",
+    "stack": "javascript/typescript, typescript, javascript",
+    "choose_if": "quieres @google/stitch-sdk",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/google-labs-code/stitch-sdk.git",
+    "doc": "human/fichas/stitch-sdk.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:15.021055+00:00"
+  }
+}

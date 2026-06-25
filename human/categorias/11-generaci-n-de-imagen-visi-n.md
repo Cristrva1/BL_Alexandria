@@ -1,21 +1,23 @@
 # Generación de Imagen & Visión
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 | Repo | Rol | Instalacion | Decision | Uso real |
 |---|---|---|---|---|
-| ComfyUI | runtime | deferred | defer | motor local modular para crear pipelines visuales de generación con IA mediante un grafo de nodos, donde cada paso (carga de modelo, sampling, postproceso) es un bloque conectable y reutilizable. |
-| stable-diffusion-webui | app | deferred | defer | interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de extensiones desde el navegador. |
-| Fooocus | app | reference_only | reference | herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros técnicos tras presets inteligentes. |
-| InvokeAI | app | deferred | defer | suite profesional y unificada para Stable Diffusion que combina una UI pulida con canvas, capas, inpainting y gestión de modelos y workflows. |
-| diffusers | library | deferred | defer | librería de Hugging Face para construir y ejecutar pipelines de modelos de difusión (imagen, video, audio) desde código, con APIs estandarizadas para schedulers y modelos. |
-| ControlNet | runtime | deferred | defer | método y modelos para condicionar la generación text-to-image con señales externas como poses, bordes, profundidad o mapas de segmentación, fijando la estructura del resultado. |
-| sd-webui-controlnet | runtime | deferred | defer | extensión que integra el control estructural de ControlNet directamente en Stable Diffusion WebUI, con preprocesadores para poses, bordes, profundidad y más. |
-| ComfyUI_IPAdapter_plus | runtime | deferred | defer | conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una imagen de referencia para transferir estilo o identidad. |
-| GFPGAN | runtime | reference_only | reference | algoritmo de restauración facial que reconstruye rostros degradados o de baja calidad usando priors generativos (GAN) preentrenados. |
-| Real-ESRGAN | runtime | reference_only | reference | herramienta de superresolución y restauración para imágenes reales que reescala y limpia material de baja calidad sin rehacerlo. |
-| LivePortrait | runtime | deferred | defer | sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen. |
-| Deep-Live-Cam | runtime | deferred | defer | herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video con salvaguardas de uso. |
-| face_recognition | library | reference_only | reference | librería de Python sencilla para detección y reconocimiento facial, con una API de alto nivel para localizar, comparar e identificar caras en imágenes. |
-| Open-Generative-AI | platform | reference_only | reference | plataforma alternativa libre a servicios premium de video/imagen que agrupa más de 200 modelos generativos accesibles desde terminal o integrados con agentes. |
-| fluxer | platform | reference_only | reference | plataforma generativa emergente con foco en audio y video mejorados, ofrecida como cliente Canary web/desktop; su API y self-host aún están en finalización. |
+| ComfyUI | runtime | deferred | defer | The most powerful and modular AI engine for content creation.**. |
+| ComfyUI_IPAdapter_plus | library | deferred | defer | The IPAdapter are very powerful models for image-to-image conditioning. The subject or even just the style of the reference image(s) can be easily transferred to a generation. Think of it as a 1-image lora. |
+| ControlNet | library | deferred | defer | Below is ControlNet 1.0. |
+| cosmos | runtime | reference_only | reference | Table of Contents. |
+| Deep-Live-Cam | app | reference_only | reference | Real-time face swap and video deepfake with a single click and only a single image. |
+| diffusers | library | reference_only | reference | Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at. |
+| face_recognition | library | reference_only | reference | _You can also read a translated version of this file in Chinese 简体中文版 or in Korean 한국어 or in Japanese 日本語._. |
+| Fooocus | skill | reference_only | reference | Fooocus is an image generating software (based on Gradio ). |
+| GFPGAN | library | reference_only | reference | 1. :boom: **Updated** online demo: ![Replicate](https://replicate.com/tencentarc/gfpgan). Here is the backup. 1. :boom: **Updated** online demo: ![Huggingface Gradio](https://huggingface.co/spaces/Xintao/GFPGAN) 1. . |
+| InvokeAI | runtime | reference_only | reference | Invoke - Professional Creative AI Tools for Visual Media. |
+| litellm | platform | reference_only | reference | LiteLLM is an open source AI Gateway that gives you a single, unified interface to call 100+ LLM providers — OpenAI, Anthropic, Gemini, Bedrock, Azure, and more — using the OpenAI format. |
+| LivePortrait | library | deferred | defer | `2025/06/01`**: 🌍 Over the past year, **LivePortrait** has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as numerous startups and creators. 🎉 `2025/01/01`**: 🐶 We updated a new version of the Animals model with more data, see **here**. `2024/10/18`**: ❗ We have upda. |
+| LuxTTS | directory | reference_only | reference | LuxTTS is an lightweight zipvoice based text-to-speech model designed for high quality voice cloning and realistic generation at speeds exceeding 150x realtime. |
+| NeMo | runtime | reference_only | reference | Checkout our HuggingFace🤗 collection for the latest open weight checkpoints and demos!. |
+| sd-webui-controlnet | library | reference_only | reference | The WebUI extension for ControlNet and other injection-based SD controls. |
+| stable-diffusion-webui | skill | reference_only | reference | A web interface for Stable Diffusion, implemented using Gradio library. |
+| TTS | library | deferred | defer | 📣 ⓍTTSv2 is here with 16 languages and better performance across the board. 📣 ⓍTTS fine-tuning code is out. Check the example recipes. 📣 ⓍTTS can now stream with <200ms latency. 📣 ⓍTTS, our production TTS model that can speak 13 languages, is released Blog Post, Demo, [Docs](. |

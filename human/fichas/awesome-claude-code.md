@@ -1,6 +1,6 @@
 # awesome-claude-code
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-lista "awesome" curada de scripts, agentes, hooks, slash commands y extensiones específicos del ecosistema de Claude Code.
+The old ways have come and gone. It's time to embrace the next phase. The previous Table of Contents was no longer fit for purpose, so a new organizational system is being prepared. Thanks to everyone who has contributed to and supported this repo, be ye human or machine.
 
 ## Que problema resuelve
 
-vives en Claude Code
+quieres awesome claude code
 
 ## Por que tiene valor
 
-Aporta valor en `directory` para skills, agents. Stack declarado: Python / Markdown.
+Aporta valor en `skill` para automation, python, typescript. Stack declarado: python, typescript.
 
 ## Cuando usarlo
 
-vives en Claude Code
+quieres awesome claude code
 
 ## Cuando NO usarlo
 
-usas otro asistente.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `claude-plugins-official`
-- `superpowers`
+- `agents-towards-production`
+- `ag2`
+- `crewai`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con claude-plugins-official, superpowers cuando el flujo necesite mas de una pieza.
+Combinar con agents-towards-production, ag2, crewai cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si vives en Claude Code. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres awesome claude code. No debe instalarse por inercia.

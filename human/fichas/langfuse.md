@@ -1,6 +1,6 @@
 # langfuse
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente.
+alt="chat on Discord"> alt="follow on X(Twitter)"> alt="follow on LinkedIn"> .
 
 ## Que problema resuelve
 
-operas agentes en serio
+quieres <img width="2400" alt="hero-b (1)" src="https://github.com/user-attachments/assets/5810ae1
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para llmops, agents. Stack declarado: TS, Docker, self-host/cloud.
+Aporta valor en `platform` para automation, docker, fastapi, javascript, javascript-typescript, langchain, python, react. Stack declarado: javascript/typescript, python, typescript, javascript, react, docker, fastapi, langchain.
 
 ## Cuando usarlo
 
-operas agentes en serio
+quieres <img width="2400" alt="hero-b (1)" src="https://github.com/user-attachments/assets/5810ae1
 
 ## Cuando NO usarlo
 
-haces prototipos triviales.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, python, typescript, javascript, react, docker, fastapi, langchain
 
 ## Instalacion detectada
 
@@ -36,8 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `langchain`
-- `litellm`
+- `awesome-claude-code`
+- `agents-towards-production`
 - `ag2`
 
 ## Contra que compite
@@ -50,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con langchain, litellm, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si operas agentes en serio. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres <img width="2400" alt="hero-b (1)" src="https://github.com/user-attachments/assets/5810ae1. No debe instalarse por inercia.

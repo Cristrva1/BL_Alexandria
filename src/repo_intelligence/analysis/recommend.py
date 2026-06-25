@@ -166,6 +166,23 @@ INTENT_BOOSTS = {
     },
 }
 
+INTENT_TERMS = {
+    "optimization": {
+        "optimizar",
+        "ultralizar",
+        "uso diario",
+        "productividad",
+        "mejorar",
+        "skills",
+        "plugins",
+        "hooks",
+        "commands",
+        "comandos",
+        "flujo",
+        "workflow",
+    },
+}
+
 
 CONDITIONAL_SKILLS = {
     "n8n-skills": {"n8n", "automatizacion", "automation", "workflow", "flujos"},
@@ -254,7 +271,7 @@ REPO_GUIDANCE = {
     },
     "context-engineering": {
         "stack_role": "Guia para diseñar contexto compacto y reutilizable.",
-        "why": "Ayuda a que Claude Code, Codex u otro agente no dependan de prompts enormes ni lecturas repetidas.",
+        "why": "Ayuda a que tu agente de construccion no dependa de prompts enormes ni lecturas repetidas.",
         "how": "Funciona como material de diseño: enseña a decidir que entra al contexto, que queda como referencia y como mantener instrucciones pequeñas.",
         "install": [
             "No instalar como dependencia.",
@@ -331,6 +348,8 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
     detail_by_id = {item["id"]: item for item in detail.get("repos", [])}
     effective_tool = _detect_effective_tool(project, build_tool)
     intents = _detect_intents(project)
+    required_capabilities = _infer_required_capabilities(project)
+    effective_max_repos = _effective_max_repos(max_repos, required_capabilities)
 
     scored = []
     for repo in scan.get("repos", []):
@@ -345,8 +364,10 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
         scored.append(enriched)
 
     scored.sort(key=lambda item: (item["score"], _mode_priority(item["install_mode"])), reverse=True)
-    selected = _dedupe_alternatives(scored, max_repos)
+    selected = _dedupe_alternatives(scored, effective_max_repos)
+    selected = _ensure_capability_coverage(required_capabilities, scored, selected, effective_max_repos)
     selected = [_enrich_recommendation(item, position=index + 1) for index, item in enumerate(selected)]
+    capability_coverage = _capability_coverage(required_capabilities, selected)
 
     global_tools = _global_tools_for_project(selected, winners)
     local_project = [item for item in selected if item["install_mode"] == "local_project"]
@@ -361,15 +382,12 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
         "requested_tool": _norm_tool(build_tool),
         "build_tool": effective_tool,
         "detected_intents": sorted(intents),
+        "detected_capabilities": [cap for cap, _ in required_capabilities.most_common()],
+        "requested_max_repos": max_repos,
+        "effective_max_repos": effective_max_repos,
+        "capability_coverage": capability_coverage,
         "superguide_file": f"ai_index/SUPERGUIAS/{safe_name}.md",
         "latest_superguide_file": "ai_index/CONTEXT_PACKS/latest.md",
-        "read_first_for_any_ai": [
-            "ai_index/WINNERS.json",
-            "ai_index/ROUTER.json",
-            "ai_index/REPOS.scan.json",
-            "ai_index/REPOS.detail.json only for finalists",
-            "human/fichas/<repo>.md only for chosen finalists",
-        ],
         "global_tools": global_tools,
         "recommended_repos": selected,
         "local_project": local_project,
@@ -419,14 +437,27 @@ def _render_superguide(result: dict[str, Any]) -> str:
         f"- Herramienta solicitada: `{result.get('requested_tool', result.get('build_tool', ''))}`",
         f"- Herramienta efectiva inferida: `{result.get('build_tool', '')}`",
         f"- Intenciones detectadas: {', '.join(result.get('detected_intents', [])) or 'general'}",
-        "- Regla aplicada: la herramienta con la que construyes no siempre es el proveedor LLM de la app. Si el texto menciona Claude Code, se prioriza su ecosistema aunque el comando se haya ejecutado desde Codex.",
-        f"- Archivo estable de esta recomendacion: `{result.get('superguide_file', '')}`",
-        f"- Alias siempre actualizado: `{result.get('latest_superguide_file', 'ai_index/CONTEXT_PACKS/latest.md')}`",
-        "",
-        "## Indices que cualquier IA debe leer primero",
-        "",
+        f"- Capacidades detectadas del proyecto: {', '.join(result.get('detected_capabilities', [])) or 'general'}",
+        f"- Finalistas solicitados: `{result.get('requested_max_repos', '')}` | Finalistas efectivos por complejidad: `{result.get('effective_max_repos', '')}`",
+        "- Regla aplicada: la herramienta con la que construyes no siempre es el proveedor LLM de la app; se prioriza la herramienta declarada en el proyecto.",
+        f"- Archivo estable de esta recomendacion: `{_public_label(result.get('superguide_file', ''))}`",
+        f"- Alias siempre actualizado: `{_public_label(result.get('latest_superguide_file', 'latest.md'))}`",
     ]
-    lines.extend(f"- `{path}`" for path in result["read_first_for_any_ai"])
+    lines.extend(
+        [
+            "",
+            "## Cobertura por capacidad",
+            "",
+            "Esta matriz explica como los finalistas cubren lo que el proyecto realmente necesita.",
+            "",
+            "| Capacidad | Cobertura | Repos seleccionados |",
+            "|---|---|---|",
+        ]
+    )
+    for cap in result.get("detected_capabilities", []):
+        coverage = result.get("capability_coverage", {}).get(cap, [])
+        status = "cubierta" if coverage else "pendiente"
+        lines.append(f"| {cap} | {status} | {', '.join(f'`{rid}`' for rid in coverage) if coverage else '-'} |")
     lines.extend(
         [
             "",
@@ -481,7 +512,7 @@ def _render_superguide(result: dict[str, Any]) -> str:
                 f"- score: `{repo['score']}`",
                 f"- instalacion: `{repo['install_mode']}`",
                 f"- orden: `{repo.get('order', '')}`",
-                f"- ruta local: `{_repo_path(repo)}`",
+                f"- carpeta local: `{_public_label(_repo_path(repo))}`",
                 f"- papel en el stack: {repo.get('stack_role', '')}",
                 f"- por que se recomienda: {repo.get('expert_reason') or ', '.join(repo.get('reasons', []))}",
                 f"- como funciona: {repo.get('how_it_works', '')}",
@@ -543,7 +574,7 @@ def _append_install_group(lines: list[str], repos: list[dict[str, Any]]) -> None
         lines.append("- Ninguno.")
         return
     for repo in repos:
-        lines.append(f"- `{repo['id']}`: {repo.get('install_hint', '')} Ruta: `{_repo_path(repo)}`")
+        lines.append(f"- `{repo['id']}`: {repo.get('install_hint', '')} Carpeta: `{_public_label(_repo_path(repo))}`")
 
 
 def score_repo(
@@ -729,10 +760,11 @@ def _detect_effective_tool(project: str, requested_tool: str) -> str:
 def _detect_intents(project: str) -> set[str]:
     text = _norm_text(project)
     intents: set[str] = set()
-    if any(_has_phrase(text, phrase) for phrase in ["claude code", "codex", "antigravity", "open code", "opencode"]):
-        if any(_has_phrase(text, phrase) for phrase in ["optimizar", "ultralizar", "uso diario", "productividad", "mejorar", "skills", "plugins", "hooks", "commands", "comandos"]):
-            intents.add("agent_ide_optimization")
-    if _has_phrase(text, "claude code"):
+    has_tool_signal = any(_has_phrase(text, phrase) for phrase in ["claude code", "codex", "antigravity", "open code", "opencode"])
+    has_optimization_signal = any(_has_phrase(text, phrase) for phrase in INTENT_TERMS["optimization"])
+    if has_tool_signal and has_optimization_signal:
+        intents.add("agent_ide_optimization")
+    if _has_phrase(text, "claude code") and has_optimization_signal:
         intents.add("claude_code_daily")
     return intents
 
@@ -870,6 +902,16 @@ def _repo_path(repo: dict[str, Any]) -> str:
     return repo.get("local_path") or repo.get("path") or ""
 
 
+def _public_label(path_like: str) -> str:
+    text = (path_like or "").strip()
+    if not text:
+        return "n/a"
+    cleaned = text.replace("\\", "/").rstrip("/")
+    if not cleaned:
+        return "n/a"
+    return cleaned.split("/")[-1] or "n/a"
+
+
 def _sentence(value: str, limit: int = 180) -> str:
     text = " ".join((value or "").split())
     if len(text) <= limit:
@@ -925,3 +967,162 @@ def _domain_boost(text: str, repo_id: str) -> int:
         if tokens & {_norm_text(keyword) for keyword in domain["keywords"]}:
             boost += domain["repos"].get(repo_id, 0)
     return boost
+
+
+def _infer_required_capabilities(project: str) -> Counter[str]:
+    text = _norm_text(project)
+    capabilities: Counter[str] = Counter()
+
+    for capability, synonyms in TAG_SYNONYMS.items():
+        for synonym in synonyms:
+            normalized = _norm_text(synonym)
+            if _has_phrase(text, normalized):
+                capabilities[capability] += 2 if " " in normalized else 1
+
+    # Signals commonly found in implementation briefs that are easy to miss by raw tag matching.
+    if any(_has_phrase(text, phrase) for phrase in ["rag", "retrieval", "brochure", "brochures", "lista de precios", "documentos"]):
+        capabilities["docs"] += 2
+        capabilities["research"] += 1
+    if any(_has_phrase(text, phrase) for phrase in ["crm", "lead", "leads", "seguimiento", "pipeline"]):
+        capabilities["automation"] += 2
+        capabilities["marketing"] += 1
+    if any(_has_phrase(text, phrase) for phrase in ["dashboard", "estadisticas", "metricas", "analytics", "reportes"]):
+        capabilities["dataviz"] += 2
+        capabilities["ui"] += 1
+    if any(_has_phrase(text, phrase) for phrase in ["24 horas", "24/7", "robusto", "escalar", "concurrencia", "simultaneo", "simultaneamente"]):
+        capabilities["llmops"] += 1
+        capabilities["memory"] += 1
+    if any(_has_phrase(text, phrase) for phrase in ["orquestacion", "multiagente", "agentes", "agent"]):
+        capabilities["agents"] += 2
+
+    return capabilities
+
+
+def _effective_max_repos(max_repos: int, required_capabilities: Counter[str]) -> int:
+    if max_repos >= 8:
+        return max_repos
+    strong_caps = [cap for cap, weight in required_capabilities.items() if weight >= 2]
+    if len(required_capabilities) >= 7:
+        return max(max_repos, 8)
+    if len(strong_caps) >= 5:
+        return max(max_repos, 8)
+    if len(strong_caps) >= 3:
+        return max(max_repos, 6)
+    return max_repos
+
+
+def _repo_capabilities(repo: dict[str, Any]) -> set[str]:
+    haystack = _norm_text(
+        " ".join(
+            [
+                repo.get("id", ""),
+                repo.get("name", ""),
+                repo.get("one", "") or "",
+                repo.get("desc", "") or "",
+                " ".join(repo.get("tags", [])),
+                repo.get("stack", "") or "",
+                repo.get("choose_if", "") or "",
+            ]
+        )
+    )
+    capabilities: set[str] = set()
+    for capability, synonyms in TAG_SYNONYMS.items():
+        if any(_has_phrase(haystack, _norm_text(synonym)) for synonym in synonyms):
+            capabilities.add(capability)
+
+    role = repo.get("role", "")
+    if role in {"skill", "directory"}:
+        capabilities.add("agents")
+    return capabilities
+
+
+def _capability_coverage(required_capabilities: Counter[str], selected: list[dict[str, Any]]) -> dict[str, list[str]]:
+    coverage: dict[str, list[str]] = {}
+    for capability, _weight in required_capabilities.most_common():
+        covered_by: list[str] = []
+        for repo in selected:
+            if capability in _repo_capabilities(repo):
+                covered_by.append(repo.get("id", ""))
+        coverage[capability] = covered_by
+    return coverage
+
+
+def _ensure_capability_coverage(
+    required_capabilities: Counter[str],
+    scored: list[dict[str, Any]],
+    selected: list[dict[str, Any]],
+    max_repos: int,
+) -> list[dict[str, Any]]:
+    if not required_capabilities:
+        return selected[:max_repos]
+
+    selected_ids = {item["id"] for item in selected}
+    repo_caps = {item["id"]: _repo_capabilities(item) for item in scored}
+    strong_caps = [cap for cap, weight in required_capabilities.most_common() if weight >= 2]
+    if not strong_caps:
+        strong_caps = [cap for cap, _ in required_capabilities.most_common(3)]
+    secondary_caps = [cap for cap, _ in required_capabilities.most_common() if cap not in strong_caps]
+    target_capabilities = strong_caps + secondary_caps
+
+    for capability in target_capabilities:
+        covered = any(capability in repo_caps.get(item["id"], set()) for item in selected)
+        if covered:
+            continue
+
+        candidate = next(
+            (
+                item
+                for item in scored
+                if item["id"] not in selected_ids and capability in repo_caps.get(item["id"], set())
+            ),
+            None,
+        )
+        if not candidate:
+            continue
+
+        if len(selected) < max_repos:
+            selected.append(candidate)
+            selected_ids.add(candidate["id"])
+            continue
+
+        replace_index = _replacement_slot(selected, repo_caps, required_capabilities)
+        if replace_index is None:
+            continue
+        selected_ids.discard(selected[replace_index]["id"])
+        selected[replace_index] = candidate
+        selected_ids.add(candidate["id"])
+
+    selected.sort(key=lambda item: (item["score"], _mode_priority(item.get("install_mode", "reference_only"))), reverse=True)
+    return selected[:max_repos]
+
+
+def _replacement_slot(
+    selected: list[dict[str, Any]],
+    repo_caps: dict[str, set[str]],
+    required_capabilities: Counter[str],
+) -> int | None:
+    candidates: list[tuple[int, int]] = []
+    top_required = {cap for cap, _ in required_capabilities.most_common(5)}
+
+    for index, item in enumerate(selected):
+        item_id = item.get("id")
+        if item_id in {"superpowers", "agent-toolkit", "claude-plugins-official"}:
+            continue
+
+        caps = repo_caps.get(item_id, set())
+        protected = len(caps & top_required)
+        penalty = 0
+        if item.get("role") in {"skill", "directory"}:
+            penalty += 2
+        if item.get("install_mode") == "reference_only":
+            penalty += 1
+
+        effective_score = int(item.get("score", 0)) + (protected * 3) - penalty
+        candidates.append((effective_score, index))
+
+    if not candidates:
+        return None
+    candidates.sort(key=lambda pair: pair[0])
+    return candidates[0][1]
+
+

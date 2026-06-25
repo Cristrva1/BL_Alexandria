@@ -1,6 +1,6 @@
 # huginn
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú".
+Huginn is a system for building agents that perform automated tasks for you online. They can read the web, watch for events, and take actions on your behalf. Huginn's Agents create and consume events, propagating them along a directed graph. Think of it as a hackable version of IFTTT or Zapier on your own server. You always know who has your data. You do.
 
 ## Que problema resuelve
 
-automatizas tareas orientadas a eventos
+quieres what is huginn?
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para automation, agents, local. Stack declarado: Ruby, Node.js, BD, self-host.
+Aporta valor en `directory` para automation, docker, javascript, javascript-typescript, postgres, typescript. Stack declarado: javascript/typescript, typescript, javascript, docker, postgres.
 
 ## Cuando usarlo
 
-automatizas tareas orientadas a eventos
+quieres what is huginn?
 
 ## Cuando NO usarlo
 
-quieres editor visual amigable.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, typescript, javascript, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `n8n`
-- `novu`
+- `twenty-main`
+- `evolution-api`
+- `whatsapp-agentkit`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con n8n, novu cuando el flujo necesite mas de una pieza.
+Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si automatizas tareas orientadas a eventos. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres what is huginn?. No debe instalarse por inercia.

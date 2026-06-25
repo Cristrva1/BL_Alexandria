@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-06-25T04:57:54.830340+00:00",
+  "profile": {
+    "id": "impeccable",
+    "name": "impeccable",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\impeccable",
+    "repo_url": "https://github.com/pbakaus/impeccable.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "Impeccable",
+      "desc": "Design guidance for AI coding agents. 1 skill, 23 commands, live browser iteration, and 44 deterministic detector rules for AI-generated frontend design."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript"
+    ],
+    "one": "Impeccable",
+    "install_hints": [
+      "> 1. Install preview version: `npm i -g @google/gemini-cli@preview`"
+    ]
+  },
+  "compact": {
+    "id": "impeccable",
+    "name": "impeccable",
+    "cat": 9,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "typescript"
+    ],
+    "one": "Impeccable",
+    "alt": [],
+    "doc": "human/fichas/impeccable.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "impeccable",
+    "cat": 9,
+    "desc": "Design guidance for AI coding agents. 1 skill, 23 commands, live browser iteration, and 44 deterministic detector rules for AI-generated frontend design.",
+    "stack": "javascript/typescript, typescript, javascript",
+    "choose_if": "quieres impeccable",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/pbakaus/impeccable.git",
+    "doc": "human/fichas/impeccable.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:54.830141+00:00"
+  }
+}

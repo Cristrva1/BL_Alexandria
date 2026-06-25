@@ -1,6 +1,6 @@
 # listmonk
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depender de un SaaS.
+listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL database as its data store.
 
 ## Que problema resuelve
 
-quieres email marketing simple y propio
+quieres listmonk is a standalone, self-hosted, newsletter and mailing list manager. it i
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para automation, email, local. Stack declarado: Go, PostgreSQL, self-host.
+Aporta valor en `directory` para automation, docker, postgres, typescript. Stack declarado: typescript, docker, postgres.
 
 ## Cuando usarlo
 
-quieres email marketing simple y propio
+quieres listmonk is a standalone, self-hosted, newsletter and mailing list manager. it i
 
 ## Cuando NO usarlo
 
-necesitas nurturing avanzado ([mautic](#-mautic)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+typescript, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,21 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `mautic`
-- `n8n`
+- `twenty-main`
+- `evolution-api`
+- `whatsapp-agentkit`
 
 ## Contra que compite
 
-- `mautic`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con mautic, n8n cuando el flujo necesite mas de una pieza.
+Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres email marketing simple y propio. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres listmonk is a standalone, self-hosted, newsletter and mailing list manager. it i. No debe instalarse por inercia.

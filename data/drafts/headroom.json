@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-06-25T04:57:43.117949+00:00",
+  "profile": {
+    "id": "headroom",
+    "name": "headroom",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\headroom",
+    "repo_url": "https://github.com/headroomlabs-ai/headroom.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<div align=\"center\"><pre>",
+      "desc": "██╗  ██╗███████╗ █████╗ ██████╗ ██████╗  ██████╗  ██████╗ ███╗   ███╗ ██║  ██║██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗██╔═══██╗████╗ ████║ ███████║█████╗  ███████║██║  ██║██████╔╝██║   ██║██║   ██║██╔████╔██║ ██╔══██║██╔══╝  ██╔══██║██║  ██║██╔══██╗██║   ██║██║   ██║██║╚██╔╝██║ ██║  ██║███████╗██║  ██║██████╔╝██║  ██║╚██████╔╝╚██████╔╝██║ ╚═╝ ██║ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝     ╚═╝ ."
+    },
+    "features": [
+      "**Library** — `compress(messages)` in Python or TypeScript, inline in any app",
+      "**Proxy** — `headroom proxy --port 8787`, zero code changes, any language",
+      "**Agent wrap** — `headroom wrap claude|codex|cursor|aider|copilot|opencode` in one command",
+      "**MCP server** — `headroom_compress`, `headroom_retrieve`, `headroom_stats` for any MCP client",
+      "**Cross-agent memory** — shared store across Claude, Codex, Gemini, auto-dedup",
+      "**`headroom learn`** — mines failed sessions, writes corrections to `CLAUDE.md` / `AGENTS.md`"
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres",
+      "langchain"
+    ],
+    "one": "██╗  ██╗███████╗ █████╗ ██████╗ ██████╗  ██████╗  ██████╗ ███╗   ███╗",
+    "install_hints": [
+      "pip install \"headroom-ai[all]\"          # Python",
+      "pip install \"headroom-ai[all]\"          # Python, everything",
+      "If `pip install \"headroom-ai[all]\"` fails with `CERTIFICATE_VERIFY_FAILED`"
+    ]
+  },
+  "compact": {
+    "id": "headroom",
+    "name": "headroom",
+    "cat": 3,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "langchain",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "██╗  ██╗███████╗ █████╗ ██████╗ ██████╗  ██████╗  ██████╗ ███╗   ███╗",
+    "alt": [],
+    "doc": "human/fichas/headroom.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "headroom",
+    "cat": 3,
+    "desc": "██╗ ██╗███████╗ █████╗ ██████╗ ██████╗ ██████╗ ██████╗ ███╗ ███╗ ██║ ██║██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗██╔═══██╗████╗ ████║ ███████║█████╗ ███████║██║ ██║██████╔╝██║ ██║██║ ██║██╔████╔██║ ██╔══██║██╔══╝ ██╔══██║██║ ██║██╔══██╗██║ ██║██║ ██║██║╚██╔╝██║ ██║ ██║███████╗██║ ██║██████╔╝██║ ██║╚██████╔╝╚██████╔╝██║ ╚═╝ ██║ ╚═╝ ╚═╝╚══════╝╚═╝ ╚═╝╚═════╝ ╚═╝ ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═╝ .",
+    "stack": "python, typescript, javascript, docker, postgres, langchain",
+    "choose_if": "quieres ██╗  ██╗███████╗ █████╗ ██████╗ ██████╗  ██████╗  ██████╗ ███╗   ███╗",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/headroomlabs-ai/headroom.git",
+    "doc": "human/fichas/headroom.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:43.117741+00:00"
+  }
+}

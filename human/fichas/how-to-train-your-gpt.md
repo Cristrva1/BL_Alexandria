@@ -1,6 +1,6 @@
 # how-to-train-your-gpt
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material de estudio más que como librería de producción.
+A guide to building a world-class language model from absolute scratch. Taught like you're five. Built like you're an engineer.*.
 
 ## Que problema resuelve
 
-quieres una guía explicada
+quieres 🧠 how to train your gpt
 
 ## Por que tiene valor
 
-Aporta valor en `directory` para code, training. Stack declarado: Python.
+Aporta valor en `runtime` para python, typescript. Stack declarado: python, typescript.
 
 ## Cuando usarlo
 
-quieres una guía explicada
+quieres 🧠 how to train your gpt
 
 ## Cuando NO usarlo
 
-prefieres solo el código ([nanoGPT](#-nanogpt)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript
 
 ## Instalacion detectada
 
@@ -36,21 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `nanogpt`
-- `nanochat`
+- `firecrawl`
+- `crawl4ai`
+- `scrapy`
 
 ## Contra que compite
 
-- `nanogpt`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
 
 ## Ideas profesionales
 
-Combinar con nanogpt, nanochat cuando el flujo necesite mas de una pieza.
+Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres una guía explicada. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres 🧠 how to train your gpt. No debe instalarse por inercia.

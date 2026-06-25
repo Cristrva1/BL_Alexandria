@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-06-25T04:58:54.248835+00:00",
+  "profile": {
+    "id": "nanogpt",
+    "name": "nanoGPT",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\nanoGPT",
+    "repo_url": "https://github.com/karpathy/nanoGPT.git",
+    "manifests": [],
+    "intro": {
+      "title": "nanoGPT",
+      "desc": "Update Nov 2025** nanoGPT has a new and improved cousin called [nanochat](https://github.com/karpathy/nanochat). It is very likely you meant to use/find nanochat instead. nanoGPT (this repo) is now very old and deprecated but I will leave it up for posterity."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "postgres"
+    ],
+    "one": "nanoGPT",
+    "install_hints": [
+      "pip install torch numpy transformers datasets tiktoken wandb tqdm"
+    ]
+  },
+  "compact": {
+    "id": "nanogpt",
+    "name": "nanoGPT",
+    "cat": 2,
+    "role": "library",
+    "exec": "cloud",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "nanoGPT",
+    "alt": [],
+    "doc": "human/fichas/nanogpt.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "nanoGPT",
+    "cat": 2,
+    "desc": "Update Nov 2025** nanoGPT has a new and improved cousin called nanochat. It is very likely you meant to use/find nanochat instead. nanoGPT (this repo) is now very old and deprecated but I will leave it up for posterity.",
+    "stack": "python, typescript, javascript, postgres",
+    "choose_if": "quieres nanogpt",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/karpathy/nanoGPT.git",
+    "doc": "human/fichas/nanogpt.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:54.248627+00:00"
+  }
+}

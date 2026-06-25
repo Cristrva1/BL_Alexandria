@@ -1,6 +1,6 @@
 # magicui
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio.
+UI Library for Design Engineers.
 
 ## Que problema resuelve
 
-priorizas estética y velocidad
+quieres ui library for design engineers
 
 ## Por que tiene valor
 
-Aporta valor en `library` para ui, animation. Stack declarado: Node.js, React/Next.js.
+Aporta valor en `runtime` para frontend, javascript, javascript-typescript, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react.
 
 ## Cuando usarlo
 
-priorizas estética y velocidad
+quieres ui library for design engineers
 
 ## Cuando NO usarlo
 
-necesitas accesibilidad estricta ([heroui](#-heroui)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, typescript, javascript, react
 
 ## Instalacion detectada
 
@@ -36,12 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `tailwindcss`
-- `motion`
+- `openwa`
+- `skills`
+- `agency-agents`
 
 ## Contra que compite
 
-- `heroui`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con tailwindcss, motion cuando el flujo necesite mas de una pieza.
+Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si priorizas estética y velocidad. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres ui library for design engineers. No debe instalarse por inercia.

@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-06-25T04:57:18.367482+00:00",
+  "profile": {
+    "id": "firecrawl",
+    "name": "firecrawl",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\firecrawl",
+    "repo_url": "https://github.com/firecrawl/firecrawl.git",
+    "manifests": [
+      "docker-compose.yaml"
+    ],
+    "intro": {
+      "title": "<h3 align=\"center\">",
+      "desc": "src=\"https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_logo.png\"."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker"
+    ],
+    "one": "src=\"https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_logo.png\"",
+    "install_hints": [
+      "pip install firecrawl-py"
+    ]
+  },
+  "compact": {
+    "id": "firecrawl",
+    "name": "firecrawl",
+    "cat": 4,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "python",
+      "scraping",
+      "typescript"
+    ],
+    "one": "src=\"https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_logo.png\"",
+    "alt": [],
+    "doc": "human/fichas/firecrawl.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "firecrawl",
+    "cat": 4,
+    "desc": "src=\"https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_logo.png\".",
+    "stack": "python, typescript, javascript, docker",
+    "choose_if": "quieres src=\"https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_lo",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "crawl4ai",
+      "scrapy",
+      "crawlee"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/firecrawl/firecrawl.git",
+    "doc": "human/fichas/firecrawl.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:18.367283+00:00"
+  }
+}

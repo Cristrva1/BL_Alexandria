@@ -1,6 +1,6 @@
 # hyperframes
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-framework npm para generar animaciones frame a frame de forma programática desde código.
+HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos. Use it locally with the CLI, from AI coding agents with skills, or as the rendering core behind hosted authoring workflows.
 
 ## Que problema resuelve
 
-generas animación por frames
+quieres hyperframes is an open-source framework for turning html, css, media, and seekab
 
 ## Por que tiene valor
 
-Aporta valor en `library` para media, animation. Stack declarado: Node.js/TypeScript.
+Aporta valor en `skill` para agents, automation, docker, javascript, javascript-typescript, multimedia, python, react. Stack declarado: javascript/typescript, python, typescript, javascript, react, docker.
 
 ## Cuando usarlo
 
-generas animación por frames
+quieres hyperframes is an open-source framework for turning html, css, media, and seekab
 
 ## Cuando NO usarlo
 
-prefieres video en React ([remotion](#-remotion)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, python, typescript, javascript, react, docker
 
 ## Instalacion detectada
 
@@ -36,20 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `remotion`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
-- `remotion`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con remotion cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si generas animación por frames. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres hyperframes is an open-source framework for turning html, css, media, and seekab. No debe instalarse por inercia.

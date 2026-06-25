@@ -1,6 +1,6 @@
 # echarts
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos.
+Apache ECharts is a free, powerful charting and visualization library offering easy ways to add intuitive, interactive, and highly customizable charts to your commercial products. It is written in pure JavaScript and based on zrender , which is a whole new lightweight canvas library.
 
 ## Que problema resuelve
 
-necesitas gráficos ricos
+quieres apache echarts
 
 ## Por que tiene valor
 
-Aporta valor en `library` para dataviz. Stack declarado: JavaScript/TypeScript.
+Aporta valor en `library` para javascript, javascript-typescript, typescript. Stack declarado: javascript/typescript, typescript, javascript.
 
 ## Cuando usarlo
 
-necesitas gráficos ricos
+quieres apache echarts
 
 ## Cuando NO usarlo
 
-solo series temporales simples ([uPlot](#-uplot)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, typescript, javascript
 
 ## Instalacion detectada
 
@@ -36,12 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `metabase`
-- `heroui`
+- `codegraph`
+- `gitnexus`
+- `deepseek-coder`
 
 ## Contra que compite
 
-- `uplot`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con metabase, heroui cuando el flujo necesite mas de una pieza.
+Combinar con codegraph, gitnexus, deepseek-coder cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas gráficos ricos. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres apache echarts. No debe instalarse por inercia.

@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-06-25T04:59:17.362390+00:00",
+  "profile": {
+    "id": "opencut",
+    "name": "OpenCut",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\OpenCut",
+    "repo_url": "https://github.com/OpenCut-app/OpenCut.git",
+    "manifests": [],
+    "intro": {
+      "title": "<table width=\"100%\">",
+      "desc": "OpenCut is being rewritten from the ground up.** What's coming:."
+    },
+    "features": [],
+    "stack": [
+      "typescript"
+    ],
+    "one": "Status",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "opencut",
+    "name": "OpenCut",
+    "cat": 5,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "typescript"
+    ],
+    "one": "Status",
+    "alt": [],
+    "doc": "human/fichas/opencut.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "OpenCut",
+    "cat": 5,
+    "desc": "OpenCut is being rewritten from the ground up.** What's coming:.",
+    "stack": "typescript",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+      "claude-plugins-official",
+      "n8n-skills",
+      "mcp"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/OpenCut-app/OpenCut.git",
+    "doc": "human/fichas/opencut.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:17.362184+00:00"
+  }
+}

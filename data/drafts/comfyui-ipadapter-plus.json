@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:56:38.744657+00:00",
+  "profile": {
+    "id": "comfyui-ipadapter-plus",
+    "name": "ComfyUI_IPAdapter_plus",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ComfyUI_IPAdapter_plus",
+    "repo_url": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "intro": {
+      "title": "ComfyUI IPAdapter plus",
+      "desc": "The IPAdapter are very powerful models for image-to-image conditioning. The subject or even just the style of the reference image(s) can be easily transferred to a generation. Think of it as a 1-image lora."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "postgres",
+      "comfy"
+    ],
+    "one": "ComfyUI IPAdapter plus",
+    "install_hints": [
+      "Download or git clone this repository inside `ComfyUI/custom_nodes/` directory or use the Manager. IPAdapter always requires the latest vers"
+    ]
+  },
+  "compact": {
+    "id": "comfyui-ipadapter-plus",
+    "name": "ComfyUI_IPAdapter_plus",
+    "cat": 11,
+    "role": "library",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "comfy",
+      "frontend",
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "ComfyUI IPAdapter plus",
+    "alt": [],
+    "doc": "human/fichas/comfyui-ipadapter-plus.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "ComfyUI_IPAdapter_plus",
+    "cat": 11,
+    "desc": "The IPAdapter are very powerful models for image-to-image conditioning. The subject or even just the style of the reference image(s) can be easily transferred to a generation. Think of it as a 1-image lora.",
+    "stack": "python, typescript, javascript, postgres, comfy",
+    "choose_if": "quieres comfyui ipadapter plus",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "comfyui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "doc": "human/fichas/comfyui-ipadapter-plus.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:38.744437+00:00"
+  }
+}

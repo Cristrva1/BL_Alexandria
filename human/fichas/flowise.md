@@ -1,6 +1,6 @@
 # Flowise
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-builder visual drag-and-drop para pipelines LLM. Permite montar chatflows y agentes conectando nodos y exponerlos como API o widget embebible.
+English | 繁體中文 | 简体中文 | 日本語 | 한국어.
 
 ## Que problema resuelve
 
-quieres un prototipo ya
+quieres english | [繁體中文](./i18n/readme-tw.md) | [简体中文](./i18n/readme-zh.md) | [日本語](./i1
 
 ## Por que tiene valor
 
-Aporta valor en `app` para agents. Stack declarado: Node.js, web.
+Aporta valor en `platform` para automation, docker, javascript, javascript-typescript, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, docker.
 
 ## Cuando usarlo
 
-quieres un prototipo ya
+quieres english | [繁體中文](./i18n/readme-tw.md) | [简体中文](./i18n/readme-zh.md) | [日本語](./i1
 
 ## Cuando NO usarlo
 
-necesitas plataforma completa ([dify](#-dify)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, typescript, javascript, react, docker
 
 ## Instalacion detectada
 
@@ -36,12 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `dify`
-- `langflow`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
-- `dify`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con dify, langflow cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres un prototipo ya. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres english | [繁體中文](./i18n/readme-tw.md) | [简体中文](./i18n/readme-zh.md) | [日本語](./i1. No debe instalarse por inercia.

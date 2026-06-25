@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-06-25T05:00:49.555637+00:00",
+  "profile": {
+    "id": "voxcpm",
+    "name": "VoxCPM",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\VoxCPM",
+    "repo_url": "https://github.com/OpenBMB/VoxCPM.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "<h2 align=\"center\">VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Li",
+      "desc": "👋 Join our community for discussion and support!."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres",
+      "fastapi",
+      "comfy"
+    ],
+    "one": "👋 Join our community for discussion and support!",
+    "install_hints": [
+      "pip install voxcpm",
+      "pip install modelscope",
+      "pip install nano-vllm-voxcpm"
+    ]
+  },
+  "compact": {
+    "id": "voxcpm",
+    "name": "VoxCPM",
+    "cat": 12,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "comfy",
+      "docker",
+      "fastapi",
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "👋 Join our community for discussion and support!",
+    "alt": [],
+    "doc": "human/fichas/voxcpm.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "VoxCPM",
+    "cat": 12,
+    "desc": "👋 Join our community for discussion and support!.",
+    "stack": "python, typescript, javascript, docker, postgres, fastapi, comfy",
+    "choose_if": "quieres voxcpm2: tokenizer-free tts for multilingual speech generation, creative voice design, and",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "whisper",
+      "faster-whisper"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/OpenBMB/VoxCPM.git",
+    "doc": "human/fichas/voxcpm.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:49.555429+00:00"
+  }
+}

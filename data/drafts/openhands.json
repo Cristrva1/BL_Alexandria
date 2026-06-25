@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-25T04:59:20.599427+00:00",
+  "profile": {
+    "id": "openhands",
+    "name": "OpenHands",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\OpenHands",
+    "repo_url": "https://github.com/OpenHands/OpenHands.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock",
+      "docker-compose.yml"
+    ],
+    "intro": {
+      "title": "<a name=\"readme-top\"></a>",
+      "desc": "Run OpenHands, Claude Code, Codex, Gemini, or any ACP-compatible agent across local, remote, and cloud backends."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker"
+    ],
+    "one": "Run OpenHands, Claude Code, Codex, Gemini, or any ACP-compatible agent across local, remote, and cloud backends.",
+    "install_hints": [
+      "docker run -it --rm \\",
+      "git clone https://github.com/OpenHands/agent-canvas.git"
+    ]
+  },
+  "compact": {
+    "id": "openhands",
+    "name": "OpenHands",
+    "cat": 3,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "automation",
+      "docker",
+      "javascript",
+      "python",
+      "typescript"
+    ],
+    "one": "Run OpenHands, Claude Code, Codex, Gemini, or any ACP-compatible agent across local, remote, and cloud backends.",
+    "alt": [],
+    "doc": "human/fichas/openhands.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "OpenHands",
+    "cat": 3,
+    "desc": "Run OpenHands, Claude Code, Codex, Gemini, or any ACP-compatible agent across local, remote, and cloud backends.",
+    "stack": "python, typescript, javascript, docker",
+    "choose_if": "quieres run openhands, claude code, codex, gemini, or any acp-compatible agent across lo",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/OpenHands/OpenHands.git",
+    "doc": "human/fichas/openhands.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:20.599228+00:00"
+  }
+}

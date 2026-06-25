@@ -1,34 +1,38 @@
 # autoresearch
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-enfoque experimental para automatizar investigación iterativa mediante bucles de búsqueda y refinamiento. Proyecto pequeño y exploratorio más que una herramienta pulida.
+One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synchronizing once in a while using sound wave interconnect in the ritual of "group meeting". That era is long gone. Research is now entirely the domain of autonomous swarms of AI agents running across compute cluster megastructures in the skies. The agents claim that we are now in the 10,205th generatio.
 
 ## Que problema resuelve
 
-experimentas con research iterativo
+quieres autoresearch
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para agents, research. Stack declarado: Python.
+Aporta valor en `platform` para python, typescript. Stack declarado: python, typescript.
 
 ## Cuando usarlo
 
-experimentas con research iterativo
+quieres autoresearch
 
 ## Cuando NO usarlo
 
-quieres salida pulida ([gpt-researcher](#-gpt-researcher)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
-reference_only
+deferred
+
+## Stack / tecnologia detectada
+
+python, typescript
 
 ## Instalacion detectada
 
@@ -36,21 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `gpt-researcher`
-- `crawl4ai`
+- `andrej-karpathy-skills`
+- `antigravity-awesome-skills`
+- `awesome-agent-skills`
 
 ## Contra que compite
 
-- `gpt-researcher`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con gpt-researcher, crawl4ai cuando el flujo necesite mas de una pieza.
+Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si experimentas con research iterativo. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres autoresearch. No debe instalarse por inercia.

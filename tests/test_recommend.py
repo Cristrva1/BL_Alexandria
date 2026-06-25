@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from repo_intelligence.analysis.recommend import recommend
+from repo_intelligence.analysis.recommend import _effective_max_repos, _infer_required_capabilities, recommend
 from repo_intelligence.core.io import write_json
 
 
@@ -80,6 +80,51 @@ def test_recommend_accepts_claude_alias_from_tool_hint(tmp_path: Path) -> None:
     result = recommend(tmp_path, "Optimizar mi flujo diario", max_repos=1, build_tool="claude")
 
     assert result["build_tool"] == "claude-code"
+
+
+def test_infer_required_capabilities_detects_product_needs() -> None:
+    caps = _infer_required_capabilities(
+        """
+        Bot de whatsapp para leads con seguimiento desde CRM,
+        documentos para RAG y dashboard web con metricas y analitica.
+        """
+    )
+    assert caps["whatsapp"] > 0
+    assert caps["automation"] > 0
+    assert caps["docs"] > 0
+    assert caps["dataviz"] > 0
+    assert caps["ui"] > 0
+
+
+def test_effective_max_repos_scales_for_complex_projects() -> None:
+    caps = _infer_required_capabilities(
+        "whatsapp crm dashboard web analitica mcp agentes docs rag"
+    )
+    assert _effective_max_repos(5, caps) >= 6
+
+
+def test_superguide_uses_public_folder_names_not_absolute_paths(tmp_path: Path) -> None:
+    ai_index = tmp_path / "ai_index"
+    ai_index.mkdir()
+    write_json(
+        ai_index / "REPOS.scan.json",
+        {
+            "repos": [
+                {
+                    **_repo("superpowers", role="skill", tags=["skills", "agents"]),
+                    "local_path": r"C:\\Users\\someone\\Repos\\superpowers",
+                }
+            ]
+        },
+    )
+    write_json(ai_index / "REPOS.detail.json", {"repos": [{"id": "superpowers", "desc": "metodologia para agentes"}]})
+    write_json(ai_index / "WINNERS.json", {})
+
+    result = recommend(tmp_path, "Optimizar Claude Code", max_repos=1, build_tool="auto")
+    text = (tmp_path / result["superguide_file"]).read_text(encoding="utf-8")
+
+    assert "C:\\Users\\" not in text
+    assert "superpowers" in text
 
 
 def _repo(repo_id: str, role: str, tags: list[str]) -> dict[str, object]:

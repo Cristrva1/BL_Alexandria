@@ -1,6 +1,6 @@
 # GSAP
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados.
+GSAP is a **framework-agnostic** JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in **every** major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects... anything JavaScript can touch! GSAP's ScrollTrigger plugin delivers jaw-droppin.
 
 ## Que problema resuelve
 
-necesitas animación avanzada
+quieres gsap (greensock animation platform)
 
 ## Por que tiene valor
 
-Aporta valor en `library` para ui, animation. Stack declarado: JavaScript.
+Aporta valor en `runtime` para javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, postgres.
 
 ## Cuando usarlo
 
-necesitas animación avanzada
+quieres gsap (greensock animation platform)
 
 ## Cuando NO usarlo
 
-te basta animar componentes React ([motion](#-motion)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, typescript, javascript, react, postgres
 
 ## Instalacion detectada
 
@@ -36,12 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `threejs`
-- `motion`
+- `openwa`
+- `skills`
+- `agency-agents`
 
 ## Contra que compite
 
-- `motion`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con threejs, motion cuando el flujo necesite mas de una pieza.
+Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas animación avanzada. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres gsap (greensock animation platform). No debe instalarse por inercia.

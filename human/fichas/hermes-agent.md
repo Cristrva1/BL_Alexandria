@@ -1,6 +1,6 @@
 # hermes-agent
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. Ofrece un panel de control de escritorio para delegar tareas a agentes que corren en una sandbox local.
+The self-improving AI agent built by Nous Research.** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing w.
 
 ## Que problema resuelve
 
-quieres agentes locales con UI
+quieres hermes agent ☤
 
 ## Por que tiene valor
 
-Aporta valor en `app` para agents, research, ui. Stack declarado: Rust (Tauri), TypeScript, Python.
+Aporta valor en `skill` para agents, docker, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, docker, postgres.
 
 ## Cuando usarlo
 
-quieres agentes locales con UI
+quieres hermes agent ☤
 
 ## Cuando NO usarlo
 
-prefieres orquestación en nube.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `ecc`
-- `odysseus`
+- `andrej-karpathy-skills`
+- `antigravity-awesome-skills`
+- `awesome-agent-skills`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con ecc, odysseus cuando el flujo necesite mas de una pieza.
+Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres agentes locales con UI. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres hermes agent ☤. No debe instalarse por inercia.

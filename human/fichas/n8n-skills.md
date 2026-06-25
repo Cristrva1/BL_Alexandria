@@ -1,6 +1,6 @@
 # n8n-skills
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-conjunto de 14 skills estructuradas para Claude Code orientadas a construir flujos de n8n correctos, evitando errores al generar su JSON.
+Expert Claude Code skills for building flawless n8n workflows using the n8n-mcp MCP server**.
 
 ## Que problema resuelve
 
-generas workflows n8n con IA
+necesitas exponer herramientas o contexto a agentes vía MCP
 
 ## Por que tiene valor
 
-Aporta valor en `skill` para skills, automation. Stack declarado: `SKILL.md`, Markdown.
+Aporta valor en `skill` para docker, javascript, langchain, postgres, python, skills, typescript. Stack declarado: python, typescript, javascript, docker, postgres, langchain.
 
 ## Cuando usarlo
 
-generas workflows n8n con IA
+necesitas exponer herramientas o contexto a agentes vía MCP
 
 ## Cuando NO usarlo
 
-no usas n8n.
+prefieres conexiones directas sin protocolo estándar
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, docker, postgres, langchain
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `n8n`
-- `n8n-mcp`
+- `claude-plugins-official`
+- `mcp`
+- `servers`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con n8n, n8n-mcp cuando el flujo necesite mas de una pieza.
+Combinar con claude-plugins-official, mcp, servers cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si generas workflows n8n con IA. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.

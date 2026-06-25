@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-06-25T04:58:13.047919+00:00",
+  "profile": {
+    "id": "llm-scraper",
+    "name": "llm-scraper",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\llm-scraper",
+    "repo_url": "https://github.com/mishushakov/llm-scraper.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "LLM Scraper",
+      "desc": "LLM Scraper is a TypeScript library that allows you to extract structured data from **any** webpage using LLMs."
+    },
+    "features": [
+      "Supports GPT, Sonnet, Gemini, Llama, Qwen model series",
+      "Schemas defined with Zod or JSON Schema",
+      "Full type-safety with TypeScript",
+      "Based on Playwright framework",
+      "Streaming objects",
+      "[Code-generation](#code-generation)"
+    ],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript"
+    ],
+    "one": "LLM Scraper",
+    "install_hints": [
+      "npm i zod playwright llm-scraper",
+      "npm i @ai-sdk/openai",
+      "npm i @ai-sdk/anthropic"
+    ]
+  },
+  "compact": {
+    "id": "llm-scraper",
+    "name": "llm-scraper",
+    "cat": 4,
+    "role": "platform",
+    "exec": "cloud",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "scraping",
+      "typescript"
+    ],
+    "one": "LLM Scraper",
+    "alt": [],
+    "doc": "human/fichas/llm-scraper.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "llm-scraper",
+    "cat": 4,
+    "desc": "LLM Scraper is a TypeScript library that allows you to extract structured data from **any** webpage using LLMs.",
+    "stack": "javascript/typescript, typescript, javascript",
+    "choose_if": "quieres llm scraper",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "firecrawl",
+      "crawl4ai",
+      "scrapy"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/mishushakov/llm-scraper.git",
+    "doc": "human/fichas/llm-scraper.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:13.047717+00:00"
+  }
+}

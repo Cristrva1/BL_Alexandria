@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-06-25T04:58:59.134230+00:00",
+  "profile": {
+    "id": "nemotron",
+    "name": "Nemotron",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Nemotron",
+    "repo_url": "https://github.com/NVIDIA-NeMo/Nemotron.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "NVIDIA Nemotron Developer Repository",
+      "desc": "Open and efficient models for agentic AI.** Training recipes, deployment guides, and use-case examples for the Nemotron family."
+    },
+    "features": [
+      "**Nano** — Optimized for edge and PC deployments",
+      "**Super** — Single GPU deployment with highest throughput",
+      "**Ultra** — Multi-GPU datacenter applications"
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "postgres"
+    ],
+    "one": "NVIDIA Nemotron Developer Repository",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "nemotron",
+    "name": "Nemotron",
+    "cat": 9,
+    "role": "app",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "NVIDIA Nemotron Developer Repository",
+    "alt": [],
+    "doc": "human/fichas/nemotron.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "Nemotron",
+    "cat": 9,
+    "desc": "Open and efficient models for agentic AI.** Training recipes, deployment guides, and use-case examples for the Nemotron family.",
+    "stack": "python, typescript, postgres",
+    "choose_if": "quieres nvidia nemotron developer repository",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/NVIDIA-NeMo/Nemotron.git",
+    "doc": "human/fichas/nemotron.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:59.133986+00:00"
+  }
+}

@@ -1,24 +1,40 @@
 # Frameworks & Orquestación de Agentes
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 | Repo | Rol | Instalacion | Decision | Uso real |
 |---|---|---|---|---|
-| ag2 | library | reference_only | reference | framework maduro para sistemas multiagente con patrones de colaboración (heredero de AutoGen). Modela conversaciones entre varios agentes que se delegan tareas hasta resolver un objetivo. |
-| crewAI | library | reference_only | reference | framework para orquestar "crews" de agentes con roles y tareas. Cada agente recibe un rol y objetivo, y el equipo coopera o se reparte el trabajo de forma secuencial o jerárquica. |
-| langchain | library | reference_only | reference | framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). Ofrece abstracciones y conectores para casi cualquier modelo, base de datos vectorial y fuente de datos. |
-| langflow | app | reference_only | reference | constructor visual de flujos LLM/agentes construido sobre LangChain. Permite arrastrar y conectar componentes en un lienzo y exportarlos como API o código. |
-| dify | platform | reference_only | reference | plataforma integral para construir apps de IA con backend y UI listos. Combina orquestación de prompts, RAG, agentes y observabilidad en un mismo producto autoalojable. |
-| Flowise | app | reference_only | reference | builder visual drag-and-drop para pipelines LLM. Permite montar chatflows y agentes conectando nodos y exponerlos como API o widget embebible. |
-| OpenHands | platform | reference_only | reference | plataforma de agentes que ejecutan acciones reales en entornos de desarrollo (ex-OpenDevin). El agente puede leer y editar código, correr comandos y navegar la web dentro de un sandbox. |
-| deer-flow | platform | reference_only | reference | super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles. Coordina tareas complejas delegando en agentes especializados. |
-| NeMo-Agent-Toolkit | library | deferred | defer | toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo). Aporta componentes para conectar, evaluar y desplegar agentes en infraestructura empresarial. |
-| hermes-agent | app | reference_only | reference | entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. Ofrece un panel de control de escritorio para delegar tareas a agentes que corren en una sandbox local. |
-| openevolve | runtime | deferred | defer | agente de codificación evolutivo que optimiza algoritmos por simulación genética. Genera, evalúa y muta candidatos de código a lo largo de múltiples generaciones. |
-| gpt-researcher | platform | reference_only | reference | agente autónomo que investiga en línea y consolida reportes citados y estructurados. Planifica sub-preguntas, busca fuentes y redacta un informe con referencias. |
-| autoresearch | platform | reference_only | reference | enfoque experimental para automatizar investigación iterativa mediante bucles de búsqueda y refinamiento. Proyecto pequeño y exploratorio más que una herramienta pulida. |
-| ruflo | platform | deferred | defer | harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). Orquesta swarms de agentes especializados a escala. |
-| multica | platform | reference_only | reference | plataforma para que humanos y agentes trabajen lado a lado ("tus próximas 10 contrataciones no serán humanas"). Integra colaboradores humanos y agentes en un mismo espacio de trabajo. Proyecto de nicho. |
-| MiroFish | platform | deferred | defer | motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios. Permite simular dinámicas sociales en un "sandbox". Proyecto de nicho. |
-| llm-council | platform | reference_only | reference | "consejo" donde varios LLMs deliberan y se evalúan entre sí para responder. Cada modelo aporta una respuesta y luego se contrastan para llegar a un consenso. |
-| awesome-LangGraph | directory | reference_only | reference | repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain. Es una lista curada, no una herramienta ejecutable. |
+| ag2 | platform | reference_only | reference | AG2 was evolved from AutoGen. Fully open-sourced. We invite collaborators from all organizations to contribute. |
+| agents-towards-production | skill | reference_only | reference | Agents Towards Production. |
+| autogen | runtime | reference_only | reference | AutoGen ![Maintenance Mode](https://github.com/microsoft/agent-framework). |
+| awesome-claude-code | skill | reference_only | reference | The old ways have come and gone. It's time to embrace the next phase. The previous Table of Contents was no longer fit for purpose, so a new organizational system is being prepared. Thanks to everyone who has contributed to and supported this repo, be ye human or machine. |
+| awesome-dataviz | directory | reference_only | reference | A curated list of awesome **open-source** data visualizations frameworks, libraries and software. Inspired by awesome-python and originally created by fasouto. |
+| awesome-LangGraph | directory | reference_only | reference | 🦜🕸️ Awesome LangGraph & LangChain Ecosystem !Awesome !Last Updated. |
+| awesome-mcp-servers | directory | reference_only | reference | A curated list of awesome Model Context Protocol (MCP) servers. |
+| codebase-memory-mcp | runtime | reference_only | reference | The fastest and most efficient code intelligence engine for AI coding agents.** Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for macOS, Linux, and Windows — download, run `install`, done. |
+| crewAI | runtime | reference_only | reference | Fast and Flexible Multi-Agent Automation Framework. |
+| dash | platform | reference_only | reference | Dash is the most downloaded, trusted Python framework for building ML & data science web apps*. |
+| deer-flow | skill | reference_only | reference | English \| 中文 \| 日本語 \| Français \| Русский. |
+| defending-code-reference-harness | library | reference_only | reference | A reference implementation for autonomous vulnerability discovery and remediation with Claude, based on our learnings from partnering with security teams at several organizations since launching Claude Mythos Preview. For a write up of these learnings along with best practices, see the accompanying blog post (also avail. |
+| dify | platform | reference_only | reference | alt="chat on Discord"> alt="join Reddit"> alt="follow on X(Twitter)"> alt="follow on LinkedIn"> . |
+| ECC | app | reference_only | reference | Official sources only.** Install ECC only from verified channels: the GitHub repository github.com/affaan-m/ECC, the npm packages `ecc-universal` and `ecc-agentshield`, the GitHub App, the plugin slug `ecc@ecc`, and the project website [ecc.tools](http. |
+| Flowise | platform | reference_only | reference | English \| 繁體中文 \| 简体中文 \| 日本語 \| 한국어. |
+| gpt-researcher | skill | reference_only | reference | 🔎 GPT Researcher. |
+| Guardrails | platform | reference_only | reference | LATEST RELEASE / DEVELOPMENT VERSION**: The develop branch tracks the latest top of tree development. The latest released version is 0.21.0. |
+| headroom | platform | reference_only | reference | ██╗ ██╗███████╗ █████╗ ██████╗ ██████╗ ██████╗ ██████╗ ███╗ ███╗ ██║ ██║██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗██╔═══██╗████╗ ████║ ███████║█████╗ ███████║██║ ██║██████╔╝██║ ██║██║ ██║██╔████╔██║ ██╔══██║██╔══╝ ██╔══██║██║ ██║██╔══██╗██║ ██║██║ ██║██║╚██╔╝██║ ██║ ██║███████╗██║ ██║██████╔╝██║ ██║╚██████╔╝╚██████╔╝██║ ╚═╝ ██║ ╚═╝ ╚═╝╚══════╝╚═╝ ╚═╝╚═════╝ ╚═╝ ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═╝ . |
+| hyperframes | skill | reference_only | reference | HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos. Use it locally with the CLI, from AI coding agents with skills, or as the rendering core behind hosted authoring workflows. |
+| langchain | runtime | reference_only | reference | LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves. |
+| langflow | platform | reference_only | reference | ✨ Highlight features. |
+| langfuse | platform | reference_only | reference | alt="chat on Discord"> alt="follow on X(Twitter)"> alt="follow on LinkedIn"> . |
+| mcp-use | platform | reference_only | reference | to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents. |
+| NeMo-Agent-Toolkit | directory | reference_only | reference | SPDX-License-Identifier: Apache-2.0. |
+| OpenHands | platform | reference_only | reference | Run OpenHands, Claude Code, Codex, Gemini, or any ACP-compatible agent across local, remote, and cloud backends. |
+| openscreen | platform | reference_only | reference | This started as a side project that blew up; not production grade and you'll hit bugs, but hopefully it covers what you need. **This project will soon be archived.**. |
+| playwright | runtime | reference_only | reference | Playwright is a framework for web automation and testing. It drives Chromium, Firefox, and WebKit with a single API — in your tests, in your scripts, and as a tool for AI agents. |
+| ponytail | library | reference_only | reference | You know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty lines; he looks at them, says nothing, and replaces them with one. |
+| repomix | library | global | use_now | Need discussion? Join us on Discord ! . |
+| ruflo | runtime | reference_only | reference | An agent meta-harness for Claude Code and Codex.**. |
+| sandbox | library | reference_only | reference | 🌐 Website &nbsp&nbsp. |
+| Scrapling | library | reference_only | reference | Scrapling is an adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl. |
+| ToolJet | app | reference_only | reference | :star: If you find ToolJet useful, please consider giving us a star on GitHub! Your support helps us continue to innovate and deliver exciting features. |
+| turbovec | directory | reference_only | reference | A 10 million document corpus takes 31 GB of RAM as float32. turbovec fits it in 4 GB - and searches it faster than FAISS.**. |

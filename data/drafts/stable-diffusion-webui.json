@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-06-25T05:00:13.361501+00:00",
+  "profile": {
+    "id": "stable-diffusion-webui",
+    "name": "stable-diffusion-webui",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\stable-diffusion-webui",
+    "repo_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui.git",
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "Stable Diffusion web UI",
+      "desc": "A web interface for Stable Diffusion, implemented using Gradio library."
+    },
+    "features": [
+      "Original txt2img and img2img modes",
+      "One click install and run script (but you still must install python and git)",
+      "Outpainting",
+      "Inpainting",
+      "Color Sketch",
+      "Prompt Matrix"
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "postgres"
+    ],
+    "one": "Stable Diffusion web UI",
+    "install_hints": [
+      "3. Download the stable-diffusion-webui repository, for example by running `git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui"
+    ]
+  },
+  "compact": {
+    "id": "stable-diffusion-webui",
+    "name": "stable-diffusion-webui",
+    "cat": 11,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "frontend",
+      "javascript",
+      "postgres",
+      "python",
+      "typescript",
+      "vision"
+    ],
+    "one": "Stable Diffusion web UI",
+    "alt": [],
+    "doc": "human/fichas/stable-diffusion-webui.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "stable-diffusion-webui",
+    "cat": 11,
+    "desc": "A web interface for Stable Diffusion, implemented using Gradio library.",
+    "stack": "python, typescript, javascript, postgres",
+    "choose_if": "quieres stable diffusion web ui",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "comfyui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/AUTOMATIC1111/stable-diffusion-webui.git",
+    "doc": "human/fichas/stable-diffusion-webui.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:13.361293+00:00"
+  }
+}

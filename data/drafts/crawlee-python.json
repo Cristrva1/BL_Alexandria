@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-06-25T04:56:48.647762+00:00",
+  "profile": {
+    "id": "crawlee-python",
+    "name": "crawlee-python",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\crawlee-python",
+    "repo_url": "https://github.com/apify/crawlee-python.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "<h1 align=\"center\">",
+      "desc": "Crawlee covers your crawling and scraping end-to-end and **helps you build reliable scrapers. Fast.**."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react"
+    ],
+    "one": "Crawlee covers your crawling and scraping end-to-end and **helps you build reliable scrapers. Fast.**",
+    "install_hints": [
+      "python -m pip install 'crawlee[all]'"
+    ]
+  },
+  "compact": {
+    "id": "crawlee-python",
+    "name": "crawlee-python",
+    "cat": 4,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "python",
+      "react",
+      "scraping",
+      "typescript"
+    ],
+    "one": "Crawlee covers your crawling and scraping end-to-end and **helps you build reliable scrapers. Fast.**",
+    "alt": [],
+    "doc": "human/fichas/crawlee-python.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "crawlee-python",
+    "cat": 4,
+    "desc": "Crawlee covers your crawling and scraping end-to-end and **helps you build reliable scrapers. Fast.**.",
+    "stack": "python, typescript, javascript, react",
+    "choose_if": "quieres crawlee covers your crawling and scraping end-to-end and **helps you build relia",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "firecrawl",
+      "crawl4ai",
+      "scrapy"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/apify/crawlee-python.git",
+    "doc": "human/fichas/crawlee-python.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:48.647553+00:00"
+  }
+}

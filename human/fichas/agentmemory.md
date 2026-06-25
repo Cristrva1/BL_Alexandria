@@ -1,6 +1,6 @@
 # agentmemory
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes.
+Your coding agent remembers everything. No more re-explaining. Built on iii engine Persistent memory for Claude Code, GitHub Copilot CLI, Cursor, Gemini CLI, Codex CLI, Hermes, OpenClaw, pi, OpenCode, and any MCP client.
 
 ## Que problema resuelve
 
-cambias de asistente y quieres una memoria común
+quieres your coding agent remembers everything. no more re-explaining.
 
 ## Por que tiene valor
 
-Aporta valor en `library` para llmops, memory, agents. Stack declarado: motor iii.
+Aporta valor en `runtime` para agents, docker, javascript, javascript-typescript, postgres, python, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, docker, postgres.
 
 ## Cuando usarlo
 
-cambias de asistente y quieres una memoria común
+quieres your coding agent remembers everything. no more re-explaining.
 
 ## Cuando NO usarlo
 
-te basta la memoria nativa del cliente.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, python, typescript, javascript, docker, postgres
 
 ## Instalacion detectada
 
@@ -37,7 +41,8 @@ Repo local detectado: si
 ## Con que se combina
 
 - `mem0`
-- `ruflo`
+- `mempalace`
+- `loguru`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con mem0, ruflo cuando el flujo necesite mas de una pieza.
+Combinar con mem0, mempalace, loguru cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si cambias de asistente y quieres una memoria común. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres your coding agent remembers everything. no more re-explaining.. No debe instalarse por inercia.

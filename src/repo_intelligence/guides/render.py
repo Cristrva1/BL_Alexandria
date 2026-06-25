@@ -7,6 +7,26 @@ from typing import Any
 
 from repo_intelligence.core.io import read_json, read_yaml, write_json
 
+# Support drafts for complete coverage of newly added repos
+def _load_drafts(project_root: Path) -> dict[str, dict[str, Any]]:
+    drafts: dict[str, dict[str, Any]] = {}
+    ddir = project_root / "data" / "drafts"
+    if not ddir.exists():
+        return drafts
+    for p in ddir.glob("*.json"):
+        try:
+            d = read_json(p, {})
+            if "detalle" in d:
+                rid = d.get("detalle", {}).get("name") or p.stem
+                # normalize
+                drafts[p.stem] = {
+                    "compact": d.get("compact", {}),
+                    "detalle": d.get("detalle", {}),
+                }
+        except Exception:
+            continue
+    return drafts
+
 
 ROOT_GUIDE_APPEND_START = "<!-- BL_ALEXANDRIA_AUTO_APPEND_START -->"
 ROOT_GUIDE_APPEND_END = "<!-- BL_ALEXANDRIA_AUTO_APPEND_END -->"
@@ -19,9 +39,15 @@ def render_all(project_root: Path) -> dict[str, int]:
     detail = read_json(project_root / "INDICE_IA.detalle.json", {})
     scan = read_json(project_root / "ai_index" / "REPOS.scan.json", {"repos": []})
     registry = read_yaml(project_root / "registry" / "repos.yaml", {"repos": []})
+    drafts = _load_drafts(project_root)
 
     repos = compact.get("repos", [])
-    detail_repos: dict[str, dict[str, Any]] = detail.get("repos", {})
+    detail_repos: dict[str, dict[str, Any]] = {**detail.get("repos", {})}
+    # Merge drafts so that newly added repos get full fichas and rich data
+    for rid, d in drafts.items():
+        if rid not in detail_repos and "detalle" in d:
+            detail_repos[rid] = d["detalle"]
+
     scan_repos = scan.get("repos", [])
     guide_repos = _merge_scan_repos(repos, scan_repos)
     detected_repo_count = len(scan_repos) or len(guide_repos)
@@ -510,8 +536,11 @@ def _render_cards(
     for repo_id, detail in detail_repos.items():
         compact = compact_by_id.get(repo_id, {})
         local = local_by_id.get(_norm(repo_id), {})
+        is_auto = detail.get("_auto") or compact.get("_auto")
+        auto_note = " (borrador automático - revisar y enriquecer)" if is_auto else ""
+
         lines = [
-            f"# {detail.get('name') or compact.get('name') or repo_id}",
+            f"# {detail.get('name') or compact.get('name') or repo_id}{auto_note}",
             "",
             f"Generado: {generated_at}",
             "",
@@ -521,7 +550,7 @@ def _render_cards(
             "",
             "## Para que sirve realmente",
             "",
-            detail.get("desc") or compact.get("one") or "Sin descripcion en el indice.",
+            detail.get("desc") or compact.get("one") or "Sin descripcion en el indice. Contenido extraído automáticamente del README y manifiestos.",
             "",
             "## Que problema resuelve",
             "",
@@ -542,6 +571,10 @@ def _render_cards(
             "## Tipo de instalacion",
             "",
             _install_mode(compact),
+            "",
+            "## Stack / tecnologia detectada",
+            "",
+            detail.get("stack") or compact.get("stack") or "Ver manifiestos del repo.",
             "",
             "## Instalacion detectada",
             "",
@@ -568,6 +601,8 @@ def _render_cards(
             _verdict(compact, detail),
             "",
         ]
+        if is_auto:
+            lines.append("\n> Esta ficha fue generada automáticamente por el pipeline de curaduría. Revisa y mejora los campos antes de considerarla final.")
         _write_text(project_root / "human" / "fichas" / f"{_slug(repo_id)}.md", "\n".join(lines))
 
 

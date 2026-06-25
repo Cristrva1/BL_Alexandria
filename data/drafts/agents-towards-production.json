@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:56:02.302729+00:00",
+  "profile": {
+    "id": "agents-towards-production",
+    "name": "agents-towards-production",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\agents-towards-production",
+    "repo_url": "https://github.com/NirDiamant/agents-towards-production.git",
+    "manifests": [],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "Agents Towards Production."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "docker",
+      "fastapi",
+      "langchain"
+    ],
+    "one": "Agents Towards Production",
+    "install_hints": [
+      "git clone https://github.com/NirDiamant/agents-towards-production.git",
+      "pip install -r meeting-recorder-agent/requirements.txt"
+    ]
+  },
+  "compact": {
+    "id": "agents-towards-production",
+    "name": "agents-towards-production",
+    "cat": 3,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "automation",
+      "docker",
+      "fastapi",
+      "langchain",
+      "python",
+      "typescript"
+    ],
+    "one": "Agents Towards Production",
+    "alt": [],
+    "doc": "human/fichas/agents-towards-production.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "agents-towards-production",
+    "cat": 3,
+    "desc": "Agents Towards Production.",
+    "stack": "python, typescript, docker, fastapi, langchain",
+    "choose_if": "quieres agents towards production",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "ag2",
+      "crewai"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/NirDiamant/agents-towards-production.git",
+    "doc": "human/fichas/agents-towards-production.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:02.302520+00:00"
+  }
+}

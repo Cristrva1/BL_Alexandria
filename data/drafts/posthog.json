@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-06-25T04:59:37.026916+00:00",
+  "profile": {
+    "id": "posthog",
+    "name": "posthog",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\posthog",
+    "repo_url": "https://github.com/PostHog/posthog.git",
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "uv.lock",
+      "pnpm-lock.yaml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "PostHog is an all-in-one, open source platform for building successful products."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker"
+    ],
+    "one": "PostHog is an all-in-one, open source platform for building successful products",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "posthog",
+    "name": "posthog",
+    "cat": 9,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "PostHog is an all-in-one, open source platform for building successful products",
+    "alt": [],
+    "doc": "human/fichas/posthog.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "posthog",
+    "cat": 9,
+    "desc": "PostHog is an all-in-one, open source platform for building successful products.",
+    "stack": "python, typescript, javascript, react, docker",
+    "choose_if": "quieres posthog is an all-in-one, open source platform for building successful products",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/PostHog/posthog.git",
+    "doc": "human/fichas/posthog.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:37.026702+00:00"
+  }
+}

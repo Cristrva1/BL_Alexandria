@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-06-25T04:56:07.287194+00:00",
+  "profile": {
+    "id": "appsmith",
+    "name": "appsmith",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\appsmith",
+    "repo_url": "https://github.com/appsmithorg/appsmith.git",
+    "manifests": [
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our [website](https://www.appsmith.com?utm_source=github&utm_medium=organic&utm_campaign=readme."
+    },
+    "features": [],
+    "stack": [
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "---",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "appsmith",
+    "name": "appsmith",
+    "cat": 1,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "postgres",
+      "typescript"
+    ],
+    "one": "---",
+    "alt": [],
+    "doc": "human/fichas/appsmith.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "appsmith",
+    "cat": 1,
+    "desc": "Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our [website](https://www.appsmith.com?utm_source=github&utm_medium=organic&utm_campaign=readme.",
+    "stack": "typescript, javascript, docker, postgres",
+    "choose_if": "quieres ---",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "twenty-main",
+      "evolution-api",
+      "whatsapp-agentkit"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/appsmithorg/appsmith.git",
+    "doc": "human/fichas/appsmith.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:07.286992+00:00"
+  }
+}

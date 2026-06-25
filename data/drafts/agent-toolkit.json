@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-06-25T04:55:58.892379+00:00",
+  "profile": {
+    "id": "agent-toolkit",
+    "name": "agent-toolkit",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\agent-toolkit",
+    "repo_url": "https://github.com/softaworks/agent-toolkit.git",
+    "manifests": [],
+    "intro": {
+      "title": "Softaworks Agent Skills",
+      "desc": "Opinionated skills shared by [@leonardocouy](https://github.com/leonardocouy) for improving daily work efficiency with Claude Code. Skills are packaged instructions and scripts that extend agent capabilities across development, documentation, planning, and professional workflows."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "react"
+    ],
+    "one": "Softaworks Agent Skills",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "agent-toolkit",
+    "name": "agent-toolkit",
+    "cat": 2,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "Softaworks Agent Skills",
+    "alt": [],
+    "doc": "human/fichas/agent-toolkit.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "agent-toolkit",
+    "cat": 2,
+    "desc": "Opinionated skills shared by @leonardocouy for improving daily work efficiency with Claude Code. Skills are packaged instructions and scripts that extend agent capabilities across development, documentation, planning, and professional workflows.",
+    "stack": "python, typescript, react",
+    "choose_if": "quieres softaworks agent skills",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/softaworks/agent-toolkit.git",
+    "doc": "human/fichas/agent-toolkit.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:55:58.892173+00:00"
+  }
+}

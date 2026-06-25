@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-06-25T04:56:35.427500+00:00",
+  "profile": {
+    "id": "codegraph",
+    "name": "codegraph",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\codegraph",
+    "repo_url": "https://github.com/colbymchenry/codegraph.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "Already installed? Run `codegraph upgrade` to update in place."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "postgres",
+      "fastapi"
+    ],
+    "one": "CodeGraph",
+    "install_hints": [
+      "npm i -g @colbymchenry/codegraph",
+      "- Install from npm (`npm i @colbymchenry/codegraph`) so the matching",
+      "- **You're on an old (pre-0.9) install.** Reinstall to get the bundled runtime — `curl -fsSL https://raw.githubusercontent.com/colbymchenry/"
+    ]
+  },
+  "compact": {
+    "id": "codegraph",
+    "name": "codegraph",
+    "cat": 7,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "fastapi",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "CodeGraph",
+    "alt": [],
+    "doc": "human/fichas/codegraph.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "codegraph",
+    "cat": 7,
+    "desc": "Already installed? Run `codegraph upgrade` to update in place.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, postgres, fastapi",
+    "choose_if": "quieres codegraph",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "gitnexus",
+      "deepseek-coder",
+      "llmc"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/colbymchenry/codegraph.git",
+    "doc": "human/fichas/codegraph.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:35.427284+00:00"
+  }
+}

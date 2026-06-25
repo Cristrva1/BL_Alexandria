@@ -1,6 +1,6 @@
 # mcp-neo4j
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-conjunto de servidores MCP oficiales para conectar bases de datos de grafos Neo4j a asistentes de IA, con soporte de despliegue en cloud.
+These MCP servers are a part of the Neo4j Labs program. They are developed and maintained by the Neo4j Field GenAI team and welcome contributions from the larger developer community. These servers are frequently updated with new and experimental features, but are not supported by the Neo4j product team.
 
 ## Que problema resuelve
 
-usas Neo4j con IA
+necesitas exponer herramientas o contexto a agentes vía MCP
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para mcp, graph. Stack declarado: Python, Docker.
+Aporta valor en `directory` para mcp, typescript. Stack declarado: typescript.
 
 ## Cuando usarlo
 
-usas Neo4j con IA
+necesitas exponer herramientas o contexto a agentes vía MCP
 
 ## Cuando NO usarlo
 
-no trabajas con grafos.
+prefieres conexiones directas sin protocolo estándar
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+typescript
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `graphrag`
-- `awesome-mcp-servers`
+- `claude-plugins-official`
+- `n8n-skills`
+- `mcp`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con graphrag, awesome-mcp-servers cuando el flujo necesite mas de una pieza.
+Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si usas Neo4j con IA. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.

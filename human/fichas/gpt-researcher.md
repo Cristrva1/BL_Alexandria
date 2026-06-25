@@ -1,6 +1,6 @@
 # gpt-researcher
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-agente autónomo que investiga en línea y consolida reportes citados y estructurados. Planifica sub-preguntas, busca fuentes y redacta un informe con referencias.
+🔎 GPT Researcher.
 
 ## Que problema resuelve
 
-necesitas research profundo citado
+quieres 🔎 gpt researcher
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para agents, research. Stack declarado: Python, Next.js, FastAPI.
+Aporta valor en `skill` para automation, docker, fastapi, javascript, langchain, python, react, typescript. Stack declarado: python, typescript, javascript, react, docker, fastapi, langchain.
 
 ## Cuando usarlo
 
-necesitas research profundo citado
+quieres 🔎 gpt researcher
 
 ## Cuando NO usarlo
 
-solo quieres una respuesta corta.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, react, docker, fastapi, langchain
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `firecrawl`
-- `browser-use`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con firecrawl, browser-use cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas research profundo citado. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres 🔎 gpt researcher. No debe instalarse por inercia.

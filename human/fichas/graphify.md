@@ -1,34 +1,38 @@
 # graphify
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-generador de grafos de conocimiento para proyectos locales que mapea código, PDFs, imágenes y video en diagramas interactivos, revelando cómo se conectan las piezas de un sistema.
+🇺🇸 English | 🇨🇳 简体中文 | 🇯🇵 日本語 | 🇰🇷 한국어 | 🇩🇪 Deutsch | 🇫🇷 Français | 🇪🇸 Español | 🇮🇳 <a href="docs/translatio.
 
 ## Que problema resuelve
 
-quieres ver conexiones visualmente
+necesitas exponer herramientas o contexto a agentes vía MCP
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para code, graph, video. Stack declarado: Python 3.10+, uv/pipx.
+Aporta valor en `library` para docker, javascript, multimedia, postgres, python, typescript, whisper. Stack declarado: python, typescript, javascript, docker, postgres, whisper.
 
 ## Cuando usarlo
 
-quieres ver conexiones visualmente
+necesitas exponer herramientas o contexto a agentes vía MCP
 
 ## Cuando NO usarlo
 
-solo necesitas índice textual ([codegraph](#-codegraph)).
+prefieres conexiones directas sin protocolo estándar
 
 ## Tipo de instalacion
 
-reference_only
+deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, docker, postgres, whisper
 
 ## Instalacion detectada
 
@@ -36,21 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `codegraph`
-- `graphrag`
+- `claude-plugins-official`
+- `n8n-skills`
+- `mcp`
 
 ## Contra que compite
 
-- `codegraph`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con codegraph, graphrag cuando el flujo necesite mas de una pieza.
+Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres ver conexiones visualmente. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.

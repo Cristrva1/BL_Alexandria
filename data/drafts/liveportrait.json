@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-06-25T04:58:09.697783+00:00",
+  "profile": {
+    "id": "liveportrait",
+    "name": "LivePortrait",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\LivePortrait",
+    "repo_url": "https://github.com/KlingAIResearch/LivePortrait.git",
+    "manifests": [
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "<h1 align=\"center\">LivePortrait: Efficient Portrait Animation with Stitching and Retargeting Control</h1>",
+      "desc": "`2025/06/01`**: 🌍 Over the past year, **LivePortrait** has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as numerous startups and creators. 🎉 `2025/01/01`**: 🐶 We updated a new version of the Animals model with more data, see [**here**](./assets/docs/changelog/2025-01-01.md). `2024/10/18`**: ❗ We have upda."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "postgres",
+      "comfy"
+    ],
+    "one": "🔥 Updates",
+    "install_hints": [
+      "git clone https://github.com/KlingTeam/LivePortrait",
+      "pip install torch==1.10.1+cu111 torchvision==0.11.2 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html",
+      "pip install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cu118"
+    ]
+  },
+  "compact": {
+    "id": "liveportrait",
+    "name": "LivePortrait",
+    "cat": 11,
+    "role": "library",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "comfy",
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "🔥 Updates",
+    "alt": [],
+    "doc": "human/fichas/liveportrait.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "LivePortrait",
+    "cat": 11,
+    "desc": "`2025/06/01`**: 🌍 Over the past year, **LivePortrait** has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as numerous startups and creators. 🎉 `2025/01/01`**: 🐶 We updated a new version of the Animals model with more data, see **here**. `2024/10/18`**: ❗ We have upda.",
+    "stack": "python, typescript, javascript, postgres, comfy",
+    "choose_if": "quieres liveportrait: efficient portrait animation with stitching and retargeting control",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "comfyui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/KlingAIResearch/LivePortrait.git",
+    "doc": "human/fichas/liveportrait.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:09.697575+00:00"
+  }
+}

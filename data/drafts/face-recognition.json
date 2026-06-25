@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-06-25T04:57:13.404885+00:00",
+  "profile": {
+    "id": "face-recognition",
+    "name": "face_recognition",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\face_recognition",
+    "repo_url": "https://github.com/ageitgey/face_recognition.git",
+    "manifests": [
+      "pyproject.toml",
+      "requirements.txt",
+      "setup.py",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "Face Recognition",
+      "desc": "_You can also read a translated version of this file [in Chinese 简体中文版](https://github.com/ageitgey/face_recognition/blob/master/README_Simplified_Chinese.md) or [in Korean 한국어](https://github.com/ageitgey/face_recognition/blob/master/README_Korean.md) or [in Japanese 日本語](https://github.com/m-i-k-i/face_recognition/blob/master/README_Japanese.md)._."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "docker",
+      "postgres"
+    ],
+    "one": "Face Recognition",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "face-recognition",
+    "name": "face_recognition",
+    "cat": 11,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "Face Recognition",
+    "alt": [],
+    "doc": "human/fichas/face-recognition.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "face_recognition",
+    "cat": 11,
+    "desc": "_You can also read a translated version of this file in Chinese 简体中文版 or in Korean 한국어 or in Japanese 日本語._.",
+    "stack": "python, typescript, docker, postgres",
+    "choose_if": "quieres face recognition",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "comfyui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/ageitgey/face_recognition.git",
+    "doc": "human/fichas/face-recognition.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:13.404651+00:00"
+  }
+}

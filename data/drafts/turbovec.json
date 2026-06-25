@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-06-25T05:00:34.812389+00:00",
+  "profile": {
+    "id": "turbovec",
+    "name": "turbovec",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\turbovec",
+    "repo_url": "https://github.com/RyanCodrai/turbovec.git",
+    "manifests": [],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "A 10 million document corpus takes 31 GB of RAM as float32. turbovec fits it in 4 GB - and searches it faster than FAISS.**."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "langchain"
+    ],
+    "one": "---",
+    "install_hints": [
+      "pip install turbovec",
+      "- [LangChain](docs/integrations/langchain.md) — `pip install turbovec[langchain]` · replaces `langchain_core.vectorstores.InMemoryVectorStor",
+      "- [LlamaIndex](docs/integrations/llama_index.md) — `pip install turbovec[llama-index]` · replaces `llama_index.core.vector_stores.SimpleVect"
+    ]
+  },
+  "compact": {
+    "id": "turbovec",
+    "name": "turbovec",
+    "cat": 3,
+    "role": "directory",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "langchain",
+      "python",
+      "typescript"
+    ],
+    "one": "---",
+    "alt": [],
+    "doc": "human/fichas/turbovec.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "turbovec",
+    "cat": 3,
+    "desc": "A 10 million document corpus takes 31 GB of RAM as float32. turbovec fits it in 4 GB - and searches it faster than FAISS.**.",
+    "stack": "python, typescript, langchain",
+    "choose_if": "quieres ---",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/RyanCodrai/turbovec.git",
+    "doc": "human/fichas/turbovec.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:34.812170+00:00"
+  }
+}

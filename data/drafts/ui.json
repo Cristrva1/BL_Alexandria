@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-06-25T05:00:38.089009+00:00",
+  "profile": {
+    "id": "ui",
+    "name": "ui",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ui",
+    "repo_url": "https://github.com/shadcn-ui/ui.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml"
+    ],
+    "intro": {
+      "title": "shadcn/ui",
+      "desc": "A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code. **Use this to build your own component library**."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript"
+    ],
+    "one": "shadcn/ui",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "ui",
+    "name": "ui",
+    "cat": 9,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "frontend",
+      "javascript",
+      "javascript-typescript",
+      "typescript"
+    ],
+    "one": "shadcn/ui",
+    "alt": [],
+    "doc": "human/fichas/ui.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "ui",
+    "cat": 9,
+    "desc": "A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code. **Use this to build your own component library**.",
+    "stack": "javascript/typescript, typescript, javascript",
+    "choose_if": "quieres shadcn/ui",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/shadcn-ui/ui.git",
+    "doc": "human/fichas/ui.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:38.088811+00:00"
+  }
+}

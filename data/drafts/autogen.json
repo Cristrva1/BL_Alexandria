@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-06-25T04:56:10.617475+00:00",
+  "profile": {
+    "id": "autogen",
+    "name": "autogen",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\autogen",
+    "repo_url": "https://github.com/microsoft/autogen.git",
+    "manifests": [],
+    "intro": {
+      "title": "<a name=\"readme-top\"></a>",
+      "desc": "AutoGen [![Maintenance Mode](https://img.shields.io/badge/status-maintenance%20mode-orange)](https://github.com/microsoft/agent-framework)."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "postgres"
+    ],
+    "one": "AutoGen [![Maintenance Mode](https://img.shields.io/badge/status-maintenance%20mode-orange)](https://github.com/microsoft/agent-framework)",
+    "install_hints": [
+      "pip install -U \"autogen-agentchat\" \"autogen-ext[openai]\"",
+      "pip install -U \"autogenstudio\""
+    ]
+  },
+  "compact": {
+    "id": "autogen",
+    "name": "autogen",
+    "cat": 3,
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "automation",
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "AutoGen [![Maintenance Mode](https://img.shields.io/badge/status-maintenance%20mode-orange)](https://github.com/microsoft/agent-framework)",
+    "alt": [],
+    "doc": "human/fichas/autogen.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "autogen",
+    "cat": 3,
+    "desc": "AutoGen ![Maintenance Mode](https://github.com/microsoft/agent-framework).",
+    "stack": "python, typescript, javascript, postgres",
+    "choose_if": "quieres autogen [![maintenance mode](https://img.shields.io/badge/status-maintenance%20m",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/microsoft/autogen.git",
+    "doc": "human/fichas/autogen.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:10.617146+00:00"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:58:32.814432+00:00",
+  "profile": {
+    "id": "mcp-use",
+    "name": "mcp-use",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\mcp-use",
+    "repo_url": "https://github.com/mcp-use/mcp-use.git",
+    "manifests": [],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "langchain"
+    ],
+    "one": "&nbsp;",
+    "install_hints": [
+      "pip install mcp-use",
+      "pip install mcp-use langchain-openai"
+    ]
+  },
+  "compact": {
+    "id": "mcp-use",
+    "name": "mcp-use",
+    "cat": 3,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+      "automation",
+      "javascript",
+      "langchain",
+      "mcp",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "&nbsp;",
+    "alt": [],
+    "doc": "human/fichas/mcp-use.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "mcp-use",
+    "cat": 3,
+    "desc": "to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
+    "stack": "python, typescript, javascript, react, langchain",
+    "choose_if": "quieres &nbsp;",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/mcp-use/mcp-use.git",
+    "doc": "human/fichas/mcp-use.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:32.814227+00:00"
+  }
+}

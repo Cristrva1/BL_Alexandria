@@ -1,6 +1,6 @@
 # codegraph
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-CLI que indexa tu código y da a los asistentes de IA inteligencia semántica 100% local, permitiéndoles entender la estructura y el flujo de un repo sin leer archivo por archivo ni gastar llamadas a herramientas.
+Already installed? Run `codegraph upgrade` to update in place.
 
 ## Que problema resuelve
 
-trabajas repos grandes
+quieres codegraph
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para code, graph. Stack declarado: JavaScript/Node.js (binario autónomo).
+Aporta valor en `library` para fastapi, javascript, javascript-typescript, postgres, python, react, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, react, postgres, fastapi.
 
 ## Cuando usarlo
 
-trabajas repos grandes
+quieres codegraph
 
 ## Cuando NO usarlo
 
-tu base de código es pequeña.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, python, typescript, javascript, react, postgres, fastapi
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `graphify`
-- `headroom`
+- `gitnexus`
+- `deepseek-coder`
+- `llmc`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con graphify, headroom cuando el flujo necesite mas de una pieza.
+Combinar con gitnexus, deepseek-coder, llmc cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si trabajas repos grandes. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres codegraph. No debe instalarse por inercia.

@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-06-25T04:58:03.001613+00:00",
+  "profile": {
+    "id": "langfuse",
+    "name": "langfuse",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\langfuse",
+    "repo_url": "https://github.com/langfuse/langfuse.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "docker-compose.yml"
+    ],
+    "intro": {
+      "title": "<img width=\"2400\" alt=\"hero-b (1)\" src=\"https://github.com/user-attachments/assets/5810ae13-15d6-4b60-afd2-927adc501861\"",
+      "desc": "alt=\"chat on Discord\"></a> alt=\"follow on X(Twitter)\"></a> alt=\"follow on LinkedIn\"></a>."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "fastapi",
+      "langchain"
+    ],
+    "one": "alt=\"chat on Discord\"></a>",
+    "install_hints": [
+      "- [Local (docker compose)](https://langfuse.com/self-hosting/local): Run Langfuse on your own machine in 5 minutes using Docker Compose.",
+      "git clone --depth=1 https://github.com/langfuse/langfuse.git",
+      "# Run the langfuse docker compose"
+    ]
+  },
+  "compact": {
+    "id": "langfuse",
+    "name": "langfuse",
+    "cat": 3,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "fastapi",
+      "javascript",
+      "javascript-typescript",
+      "langchain",
+      "python",
+      "react"
+    ],
+    "one": "alt=\"chat on Discord\"></a>",
+    "alt": [],
+    "doc": "human/fichas/langfuse.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "langfuse",
+    "cat": 3,
+    "desc": "alt=\"chat on Discord\"> alt=\"follow on X(Twitter)\"> alt=\"follow on LinkedIn\"> .",
+    "stack": "javascript/typescript, python, typescript, javascript, react, docker, fastapi, langchain",
+    "choose_if": "quieres <img width=\"2400\" alt=\"hero-b (1)\" src=\"https://github.com/user-attachments/assets/5810ae1",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/langfuse/langfuse.git",
+    "doc": "human/fichas/langfuse.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:03.001352+00:00"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:56:53.636885+00:00",
+  "profile": {
+    "id": "dash",
+    "name": "dash",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\dash",
+    "repo_url": "https://github.com/plotly/dash.git",
+    "manifests": [
+      "package.json",
+      "setup.py",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "Dash",
+      "desc": "Dash is the most downloaded, trusted Python framework for building ML & data science web apps*."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "postgres"
+    ],
+    "one": "Dash",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "dash",
+    "name": "dash",
+    "cat": 3,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "javascript",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "Dash",
+    "alt": [],
+    "doc": "human/fichas/dash.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "dash",
+    "cat": 3,
+    "desc": "Dash is the most downloaded, trusted Python framework for building ML & data science web apps*.",
+    "stack": "python, typescript, javascript, react, postgres",
+    "choose_if": "quieres dash",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/plotly/dash.git",
+    "doc": "human/fichas/dash.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:53.636684+00:00"
+  }
+}

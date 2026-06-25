@@ -1,6 +1,6 @@
 # agents-towards-production
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-playbook open-source con tutoriales end-to-end para llevar agentes GenAI de prototipo a producto real, cubriendo el ciclo completo de producción.
+Agents Towards Production.
 
 ## Que problema resuelve
 
-vas a producción con agentes
+quieres agents towards production
 
 ## Por que tiene valor
 
-Aporta valor en `directory` para skills, agents. Stack declarado: Python, varios.
+Aporta valor en `skill` para agents, automation, docker, fastapi, langchain, python, typescript. Stack declarado: python, typescript, docker, fastapi, langchain.
 
 ## Cuando usarlo
 
-vas a producción con agentes
+quieres agents towards production
 
 ## Cuando NO usarlo
 
-solo experimentas localmente.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, docker, fastapi, langchain
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `langfuse`
+- `awesome-claude-code`
 - `ag2`
+- `crewai`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con langfuse, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, ag2, crewai cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si vas a producción con agentes. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres agents towards production. No debe instalarse por inercia.

@@ -1,20 +1,21 @@
 # Scraping, Búsqueda & Research Web
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 | Repo | Rol | Instalacion | Decision | Uso real |
 |---|---|---|---|---|
-| firecrawl | platform | reference_only | reference | plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
-| crawl4ai | library | local_project | use_now | librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. |
-| scrapy | library | reference_only | reference | framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. |
-| crawlee | library | reference_only | reference | framework moderno de crawling para Node.js con antibloqueo integrado, unifico scraping de HTTP y de navegador bajo una misma API con colas y reintentos. |
-| crawlee-python | library | reference_only | reference | versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. |
-| Scrapling | library | reference_only | reference | librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica los elementos cuando el HTML cambia. |
-| scrapely | library | reference_only | reference | librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales. |
-| llm-scraper | library | reference_only | reference | librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído. |
-| Scrapegraph-ai | library | reference_only | reference | framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. |
-| playwright | library | reference_only | reference | framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
-| playwright-cli | skill | reference_only | reference | interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto. |
-| browser-use | library | reference_only | reference | biblioteca que da a los LLMs la capacidad de usar navegadores reales con interfaz para modelos de visión, dejando que el agente perciba la pantalla y actúe sin selectores fijos. |
-| instaloader | library | reference_only | reference | herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de Instagram. |
-| snscrape | library | reference_only | reference | scraper de redes sociales (Twitter/X, Reddit, Telegram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves. |
+| ArchiveBox | platform | reference_only | reference | ▶️ Quickstart \| Demo \| GitHub \| Documentation \| Info & Motivation \| Communi. |
+| crawl4ai | app | local_project | use_now | 🚀 Crawl4AI Cloud API — Closed Beta (Launching Soon) Reliable, large-scale web extraction, now built to be _**drastically more cost-effective**_ than any of the existing solutions. |
+| crawlee | runtime | reference_only | reference | Crawlee covers your crawling and scraping end-to-end and **helps you build reliable scrapers. Fast.**. |
+| crawlee-python | library | reference_only | reference | Crawlee covers your crawling and scraping end-to-end and **helps you build reliable scrapers. Fast.**. |
+| firecrawl | library | reference_only | reference | src="https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_logo.png". |
+| how-to-train-your-gpt | runtime | reference_only | reference | A guide to building a world-class language model from absolute scratch. Taught like you're five. Built like you're an engineer.*. |
+| instaloader | library | reference_only | reference | .. \|pypi\| image:: https://img.shields.io/pypi/v/instaloader.svg :alt: Instaloader PyPI Project Page :target: https://pypi.org/project/instaloader/. |
+| llm-scraper | platform | reference_only | reference | LLM Scraper is a TypeScript library that allows you to extract structured data from **any** webpage using LLMs. |
+| motion | runtime | deferred | defer | An open source animation library for JavaScript, React and Vue. |
+| normalize.css | library | reference_only | reference | src="https://necolas.github.io/normalize.css/logo.svg" alt="Normalize Logo" width="80" height="80" align="right"> . |
+| odysseus | skill | reference_only | reference | A self-hosted AI workspace for chat, agents, research, documents, email, notes, calendar, and local model workflows. |
+| Scrapegraph-ai | platform | reference_only | reference | 🕷️ ScrapeGraphAI: You Only Scrape Once. |
+| scrapely | library | reference_only | reference | .. image:: https://api.travis-ci.org/scrapy/scrapely.svg?branch=master :target: https://travis-ci.org/scrapy/scrapely. |
+| scrapy | library | reference_only | reference | :target: https://scrapy.org. |
+| snscrape | directory | reference_only | reference | snscrape is a scraper for social networking services (SNS). It scrapes things like user profiles, hashtags, or searches and returns the discovered items, e.g. the relevant posts. |

@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T04:58:52.635760+00:00",
+  "profile": {
+    "id": "nanochat",
+    "name": "nanochat",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\nanochat",
+    "repo_url": "https://github.com/karpathy/nanochat.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "nanochat",
+      "desc": "nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all major LLM stages including tokenization, pretraining, finetuning, evaluation, inference, and a chat UI. For example, you can train your own GPT-2 capability LLM (which cost ~$43,000 to train in 2019) for only $48 (~2 hours of 8XH100 GPU node) and then talk to it ."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "whisper"
+    ],
+    "one": "nanochat",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "nanochat",
+    "name": "nanochat",
+    "cat": 9,
+    "role": "app",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "multimedia",
+      "python",
+      "typescript",
+      "whisper"
+    ],
+    "one": "nanochat",
+    "alt": [],
+    "doc": "human/fichas/nanochat.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "nanochat",
+    "cat": 9,
+    "desc": "nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all major LLM stages including tokenization, pretraining, finetuning, evaluation, inference, and a chat UI. For example, you can train your own GPT-2 capability LLM (which cost ~$43,000 to train in 2019) for only $48 (~2 hours of 8XH100 GPU node) and then talk to it .",
+    "stack": "python, typescript, javascript, whisper",
+    "choose_if": "quieres nanochat",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/karpathy/nanochat.git",
+    "doc": "human/fichas/nanochat.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:52.635566+00:00"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-06-25T05:00:08.429196+00:00",
+  "profile": {
+    "id": "skills-remotion",
+    "name": "skills_remotion",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\skills_remotion",
+    "repo_url": "https://github.com/remotion-dev/skills.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "@remotion/skills",
+      "desc": "This is an internal package and has no documentation."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "javascript"
+    ],
+    "one": "@remotion/skills",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "skills-remotion",
+    "name": "skills_remotion",
+    "cat": 2,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "skills"
+    ],
+    "one": "@remotion/skills",
+    "alt": [],
+    "doc": "human/fichas/skills-remotion.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "skills_remotion",
+    "cat": 2,
+    "desc": "This is an internal package and has no documentation.",
+    "stack": "javascript/typescript, javascript",
+    "choose_if": "quieres @remotion/skills",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/remotion-dev/skills.git",
+    "doc": "human/fichas/skills-remotion.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:08.428991+00:00"
+  }
+}

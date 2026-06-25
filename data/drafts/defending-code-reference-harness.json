@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T04:57:01.859047+00:00",
+  "profile": {
+    "id": "defending-code-reference-harness",
+    "name": "defending-code-reference-harness",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\defending-code-reference-harness",
+    "repo_url": "https://github.com/anthropics/defending-code-reference-harness.git",
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "intro": {
+      "title": "Defending Code Reference Harness",
+      "desc": "A reference implementation for autonomous vulnerability discovery and remediation with Claude, based on our learnings from [partnering with security teams at several organizations](https://www.anthropic.com/glasswing) since launching Claude Mythos Preview. For a write up of these learnings along with best practices, see the [accompanying blog post](https://claude.com/blog/using-llms-to-secure-source-code) (also avail."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "docker"
+    ],
+    "one": "Defending Code Reference Harness",
+    "install_hints": [
+      "git clone https://github.com/anthropics/defending-code-reference-harness",
+      "python3 -m venv .venv && .venv/bin/pip install -e ."
+    ]
+  },
+  "compact": {
+    "id": "defending-code-reference-harness",
+    "name": "defending-code-reference-harness",
+    "cat": 3,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "python",
+      "typescript"
+    ],
+    "one": "Defending Code Reference Harness",
+    "alt": [],
+    "doc": "human/fichas/defending-code-reference-harness.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "defending-code-reference-harness",
+    "cat": 3,
+    "desc": "A reference implementation for autonomous vulnerability discovery and remediation with Claude, based on our learnings from partnering with security teams at several organizations since launching Claude Mythos Preview. For a write up of these learnings along with best practices, see the accompanying blog post (also avail.",
+    "stack": "python, typescript, docker",
+    "choose_if": "quieres defending code reference harness",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/anthropics/defending-code-reference-harness.git",
+    "doc": "human/fichas/defending-code-reference-harness.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:01.858806+00:00"
+  }
+}

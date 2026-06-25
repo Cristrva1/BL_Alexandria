@@ -1,6 +1,6 @@
 # lossless-cut
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-aplicación de escritorio para recortar, fusionar y reorganizar video/audio sin recodificar, conservando la calidad original.
+The swiss army knife of lossless video/audio editing.
 
 ## Que problema resuelve
 
-cortas material rápido
+quieres the swiss army knife of lossless video/audio editing
 
 ## Por que tiene valor
 
-Aporta valor en `app` para media, audio, video. Stack declarado: Node.js/Electron, ffmpeg.
+Aporta valor en `app` para javascript, javascript-typescript, multimedia, postgres, python, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, postgres.
 
 ## Cuando usarlo
 
-cortas material rápido
+quieres the swiss army knife of lossless video/audio editing
 
 ## Cuando NO usarlo
 
-necesitas edición compositiva ([moviepy](#-moviepy)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, python, typescript, javascript, postgres
 
 ## Instalacion detectada
 
@@ -36,11 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `moviepy`
+- `fluxer`
+- `whisper`
+- `faster-whisper`
 
 ## Contra que compite
 
-- `moviepy`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -48,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con moviepy cuando el flujo necesite mas de una pieza.
+Combinar con fluxer, whisper, faster-whisper cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si cortas material rápido. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres the swiss army knife of lossless video/audio editing. No debe instalarse por inercia.

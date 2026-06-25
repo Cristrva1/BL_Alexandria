@@ -1,34 +1,38 @@
 # motion
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código.
+An open source animation library for JavaScript, React and Vue.
 
 ## Que problema resuelve
 
-animas en React
+quieres <img width="35" height="35" alt="motion logo" src="https://github.com/user-attachments/ass
 
 ## Por que tiene valor
 
-Aporta valor en `library` para ui, animation. Stack declarado: JavaScript/React.
+Aporta valor en `runtime` para javascript, javascript-typescript, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react.
 
 ## Cuando usarlo
 
-animas en React
+quieres <img width="35" height="35" alt="motion logo" src="https://github.com/user-attachments/ass
 
 ## Cuando NO usarlo
 
-necesitas timelines complejos ([GSAP](#-gsap)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
-reference_only
+deferred
+
+## Stack / tecnologia detectada
+
+javascript/typescript, typescript, javascript, react
 
 ## Instalacion detectada
 
@@ -36,21 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `magicui`
-- `react-three-fiber`
+- `firecrawl`
+- `crawl4ai`
+- `scrapy`
 
 ## Contra que compite
 
-- `gsap`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con magicui, react-three-fiber cuando el flujo necesite mas de una pieza.
+Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si animas en React. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres <img width="35" height="35" alt="motion logo" src="https://github.com/user-attachments/ass. No debe instalarse por inercia.

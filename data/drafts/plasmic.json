@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-06-25T04:59:30.441735+00:00",
+  "profile": {
+    "id": "plasmic",
+    "name": "plasmic",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\plasmic",
+    "repo_url": "https://github.com/plasmicapp/plasmic.git",
+    "manifests": [
+      "package.json",
+      "docker-compose.yml"
+    ],
+    "intro": {
+      "title": "<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->",
+      "desc": "The open-source visual builder for your codebase. Build beautiful apps and websites incredibly fast. Drag and drop your own components, integrate with your codebase. Break through the low-code ceiling."
+    },
+    "features": [
+      "Applications: let developers and technical users quickly build internal tools, client portals, and business software",
+      "Website builder and design tool that doesn’t limit you to some built-in ecommerce platform, CMS, or hosting"
+    ],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react",
+      "docker"
+    ],
+    "one": "Plasmic",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "plasmic",
+    "name": "plasmic",
+    "cat": 9,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "react",
+      "typescript"
+    ],
+    "one": "Plasmic",
+    "alt": [],
+    "doc": "human/fichas/plasmic.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "plasmic",
+    "cat": 9,
+    "desc": "The open-source visual builder for your codebase. Build beautiful apps and websites incredibly fast. Drag and drop your own components, integrate with your codebase. Break through the low-code ceiling.",
+    "stack": "javascript/typescript, typescript, javascript, react, docker",
+    "choose_if": "quieres plasmic",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/plasmicapp/plasmic.git",
+    "doc": "human/fichas/plasmic.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:30.441520+00:00"
+  }
+}

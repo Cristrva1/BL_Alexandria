@@ -1,34 +1,38 @@
 # openevolve
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-DIFERIR
+REFERENCIA
 
 ## Para que sirve realmente
 
-agente de codificación evolutivo que optimiza algoritmos por simulación genética. Genera, evalúa y muta candidatos de código a lo largo de múltiples generaciones.
+🧬 The most advanced open-source evolutionary coding agent**.
 
 ## Que problema resuelve
 
-optimizas problemas algorítmicos
+quieres openevolve
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para agents. Stack declarado: Python, PyTorch/numpy, Rust.
+Aporta valor en `library` para automation, docker, python, typescript. Stack declarado: python, typescript, docker.
 
 ## Cuando usarlo
 
-optimizas problemas algorítmicos
+quieres openevolve
 
 ## Cuando NO usarlo
 
-haces tareas de texto comunes.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
-deferred
+reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, docker
 
 ## Instalacion detectada
 
@@ -36,7 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `llm-council`
+- `twenty-main`
+- `evolution-api`
+- `whatsapp-agentkit`
 
 ## Contra que compite
 
@@ -44,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
 
 ## Ideas profesionales
 
-Combinar con llm-council cuando el flujo necesite mas de una pieza.
+Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si optimizas problemas algorítmicos. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres openevolve. No debe instalarse por inercia.

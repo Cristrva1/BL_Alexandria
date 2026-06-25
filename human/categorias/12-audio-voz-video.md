@@ -1,21 +1,19 @@
 # Audio, Voz & Video
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 | Repo | Rol | Instalacion | Decision | Uso real |
 |---|---|---|---|---|
-| whisper | runtime | reference_only | reference | modelo de reconocimiento de voz y traducción de audio multilingüe de OpenAI, estándar de la industria que transcribe casi cualquier idioma con un solo modelo. |
-| faster-whisper | runtime | reference_only | reference | reimplementación de Whisper sobre CTranslate2 que transcribe mucho más rápido y con menor consumo de memoria, manteniendo la misma precisión. |
-| whisperX | runtime | reference_only | reference | extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
-| supertonic | runtime | reference_only | reference | motor TTS multilingüe ultrarrápido de Supertone que sintetiza voz directamente en el dispositivo, incluso en el navegador vía WebGPU. |
-| VoxCPM | runtime | deferred | defer | sistema TTS de alta fidelidad de OpenBMB que prescinde del tokenizador tradicional para lograr una prosodia y fluidez muy naturales, con clonación de voz. |
-| TTS | library | reference_only | reference | toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz. |
-| OmniVoice-Studio | app | reference_only | reference | suite de voz de escritorio open-source planteada como alternativa a ElevenLabs, con dictado en tiempo real, clonación zero-shot y doblaje de video en hasta 646 idiomas, todo local. |
-| lossless-cut | app | reference_only | reference | aplicación de escritorio para recortar, fusionar y reorganizar video/audio sin recodificar, conservando la calidad original. |
-| moviepy | library | reference_only | reference | librería Python para edición de video programática: cortar, concatenar, superponer texto, subtítulos y audio, y exportar el resultado. |
-| remotion | library | reference_only | reference | framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
-| videofy_minimal | app | reference_only | reference | herramienta minimalista (de Schibsted) que convierte contenido textual en videos cortos de forma local, sin pipeline complejo. |
-| OpenCut | app | reference_only | reference | editor de video open-source con UI moderna, planteado como alternativa libre tipo CapCut, usable en web o escritorio. |
-| openscreen | app | reference_only | reference | herramienta ligera de grabación de pantalla para screencasts y demos; el proyecto original está archivado y continúa mediante un fork comunitario. |
-| Youtube2Webpage | library | reference_only | reference | script en Perl que genera una página web legible a partir de un video de YouTube, intercalando la transcripción de subtítulos con capturas de pantalla del momento citado. |
-| hyperframes | library | reference_only | reference | framework npm para generar animaciones frame a frame de forma programática desde código. |
+| faster-whisper | runtime | deferred | defer | faster-whisper** is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models. |
+| FFmpeg | directory | reference_only | reference | FFmpeg is a collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata. |
+| fluxer | platform | reference_only | reference | As of this writing (15 June 2026), we are working to finalise the API and self-hosting documentation over the next few days. |
+| lossless-cut | app | reference_only | reference | The swiss army knife of lossless video/audio editing. |
+| moviepy | library | reference_only | reference | MoviePy recently upgraded to v2.0, introducing major breaking changes. You can consult the last v1 docs here but beware that v1 is no longer maintained. For more info on how to update your code from v1 to v2, see this guide. |
+| OmniVoice-Studio | platform | deferred | defer | OmniVoice Studio is in active beta.** Things may break between releases. For the latest features and fixes, clone the repo and run from source rather than using pre-built installers. Bug reports and PRs are very welcome — open an issue or join Discord. |
+| supertonic | library | deferred | defer | Supertonic** is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns. |
+| VibeVoice | directory | reference_only | reference | 🎙️ VibeVoice: Open-Source Frontier Voice AI. |
+| video-use | skill | reference_only | reference | Introducing **video-use** — edit videos with Claude Code. 100% open source. |
+| videofy_minimal | platform | reference_only | reference | Videofy Minimal is a local tool for turning news articles into short videos for digital signage screens. |
+| VoxCPM | library | deferred | defer | 👋 Join our community for discussion and support!. |
+| whisper | library | deferred | defer | Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification. |
+| whisperX | library | deferred | defer | Recall.ai - Meeting Transcription API. |

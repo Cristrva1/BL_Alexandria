@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-06-25T04:56:17.234425+00:00",
+  "profile": {
+    "id": "awesome-claude-code",
+    "name": "awesome-claude-code",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\awesome-claude-code",
+    "repo_url": "https://github.com/hesreallyhim/awesome-claude-code.git",
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "intro": {
+      "title": "Awesome Claude Code",
+      "desc": "The old ways have come and gone. It's time to embrace the next phase. The previous Table of Contents was no longer fit for purpose, so a new organizational system is being prepared. Thanks to everyone who has contributed to and supported this repo, be ye human or machine."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript"
+    ],
+    "one": "Awesome Claude Code",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "awesome-claude-code",
+    "name": "awesome-claude-code",
+    "cat": 3,
+    "role": "skill",
+    "exec": "cloud",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "python",
+      "typescript"
+    ],
+    "one": "Awesome Claude Code",
+    "alt": [],
+    "doc": "human/fichas/awesome-claude-code.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "awesome-claude-code",
+    "cat": 3,
+    "desc": "The old ways have come and gone. It's time to embrace the next phase. The previous Table of Contents was no longer fit for purpose, so a new organizational system is being prepared. Thanks to everyone who has contributed to and supported this repo, be ye human or machine.",
+    "stack": "python, typescript",
+    "choose_if": "quieres awesome claude code",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "agents-towards-production",
+      "ag2",
+      "crewai"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/hesreallyhim/awesome-claude-code.git",
+    "doc": "human/fichas/awesome-claude-code.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:17.234215+00:00"
+  }
+}

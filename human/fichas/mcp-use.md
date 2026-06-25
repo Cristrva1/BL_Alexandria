@@ -1,6 +1,6 @@
 # mcp-use
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable.
+to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.
 
 ## Que problema resuelve
 
-construyes un servidor MCP propio
+quieres &nbsp;
 
 ## Por que tiene valor
 
-Aporta valor en `library` para mcp. Stack declarado: TypeScript o Python.
+Aporta valor en `platform` para automation, javascript, langchain, mcp, python, react, typescript. Stack declarado: python, typescript, javascript, react, langchain.
 
 ## Cuando usarlo
 
-construyes un servidor MCP propio
+quieres &nbsp;
 
 ## Cuando NO usarlo
 
-solo buscas usar uno ya hecho.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, react, langchain
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `mcp`
-- `awesome-mcp-servers`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con mcp, awesome-mcp-servers cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si construyes un servidor MCP propio. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres &nbsp;. No debe instalarse por inercia.

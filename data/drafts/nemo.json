@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-06-25T04:58:55.866299+00:00",
+  "profile": {
+    "id": "nemo",
+    "name": "NeMo",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\NeMo",
+    "repo_url": "https://github.com/NVIDIA-NeMo/NeMo.git",
+    "manifests": [
+      "pyproject.toml",
+      "setup.py",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "**NVIDIA NeMo Speech**",
+      "desc": "Checkout our [HuggingFace🤗 collection](https://huggingface.co/collections/nvidia/nemotron-speech) for the latest open weight checkpoints and demos!."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "docker"
+    ],
+    "one": "**NVIDIA NeMo Speech**",
+    "install_hints": [
+      "git clone https://github.com/NVIDIA-NeMo/NeMo.git",
+      "git clone https://github.com/NVIDIA-NeMo/NeMo.git",
+      "docker run --rm -it --gpus all -v \"$PWD:/workspace\" nemo-speech bash"
+    ]
+  },
+  "compact": {
+    "id": "nemo",
+    "name": "NeMo",
+    "cat": 11,
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "python",
+      "typescript"
+    ],
+    "one": "**NVIDIA NeMo Speech**",
+    "alt": [],
+    "doc": "human/fichas/nemo.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "NeMo",
+    "cat": 11,
+    "desc": "Checkout our HuggingFace🤗 collection for the latest open weight checkpoints and demos!.",
+    "stack": "python, typescript, docker",
+    "choose_if": "quieres **nvidia nemo speech**",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "comfyui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/NVIDIA-NeMo/NeMo.git",
+    "doc": "human/fichas/nemo.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:55.866065+00:00"
+  }
+}

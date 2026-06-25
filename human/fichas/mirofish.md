@@ -1,34 +1,38 @@
 # MiroFish
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-DIFERIR
+REFERENCIA
 
 ## Para que sirve realmente
 
-motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios. Permite simular dinámicas sociales en un "sandbox". Proyecto de nicho.
+简洁通用的群体智能引擎，预测万物.
 
 ## Que problema resuelve
 
-simulas futuros/escenarios
+quieres 简洁通用的群体智能引擎，预测万物
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para agents. Stack declarado: Python/web.
+Aporta valor en `runtime` para docker, javascript, javascript-typescript, postgres, python, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, docker, postgres.
 
 ## Cuando usarlo
 
-simulas futuros/escenarios
+quieres 简洁通用的群体智能引擎，预测万物
 
 ## Cuando NO usarlo
 
-necesitas tareas deterministas.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
-deferred
+reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, python, typescript, javascript, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,7 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openevolve`
+- `openwa`
+- `skills`
+- `agency-agents`
 
 ## Contra que compite
 
@@ -44,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
 
 ## Ideas profesionales
 
-Combinar con openevolve cuando el flujo necesite mas de una pieza.
+Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si simulas futuros/escenarios. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres 简洁通用的群体智能引擎，预测万物. No debe instalarse por inercia.

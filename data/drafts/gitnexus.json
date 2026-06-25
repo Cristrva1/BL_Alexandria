@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-06-25T04:57:29.825289+00:00",
+  "profile": {
+    "id": "gitnexus",
+    "name": "GitNexus",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\GitNexus",
+    "repo_url": "https://github.com/abhigyanpatwari/GitNexus.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json",
+      "docker-compose.yaml"
+    ],
+    "intro": {
+      "title": "GitNexus",
+      "desc": "⚠️ Important Notice:** GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name on Pump.fun or any other platform is **not affiliated with, endorsed by, or created by** this project or its maintainers. Do not purchase any cryptocurrency claiming association with GitNexus."
+    },
+    "features": [
+      "**Exploring** — Navigate unfamiliar code using the knowledge graph",
+      "**Debugging** — Trace bugs through call chains",
+      "**Impact Analysis** — Analyze blast radius before changes",
+      "**Refactoring** — Plan safe refactors using dependency mapping"
+    ],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "langchain"
+    ],
+    "one": "GitNexus",
+    "install_hints": [
+      "> **Recommended for fastest startup:** install gitnexus globally (`npm i -g gitnexus`) and run `gitnexus setup` — this writes an absolute-pa",
+      "git clone https://github.com/abhigyanpatwari/gitnexus.git",
+      "> slugs. Update your `docker run` / compose files accordingly (or just adopt"
+    ]
+  },
+  "compact": {
+    "id": "gitnexus",
+    "name": "GitNexus",
+    "cat": 7,
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "langchain",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "GitNexus",
+    "alt": [],
+    "doc": "human/fichas/gitnexus.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "GitNexus",
+    "cat": 7,
+    "desc": "⚠️ Important Notice:** GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name on Pump.fun or any other platform is **not affiliated with, endorsed by, or created by** this project or its maintainers. Do not purchase any cryptocurrency claiming association with GitNexus.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, docker, langchain",
+    "choose_if": "quieres gitnexus",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "codegraph",
+      "deepseek-coder",
+      "llmc"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/abhigyanpatwari/GitNexus.git",
+    "doc": "human/fichas/gitnexus.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:29.825019+00:00"
+  }
+}

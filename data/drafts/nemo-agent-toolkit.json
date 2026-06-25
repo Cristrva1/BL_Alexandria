@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-06-25T04:58:57.489689+00:00",
+  "profile": {
+    "id": "nemo-agent-toolkit",
+    "name": "NeMo-Agent-Toolkit",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\NeMo-Agent-Toolkit",
+    "repo_url": "https://github.com/NVIDIA/NeMo-Agent-Toolkit.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "SPDX-FileCopyrightText: Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+      "desc": "SPDX-License-Identifier: Apache-2.0."
+    },
+    "features": [
+      "The top-level command name, such as `run`, `serve`, or `evaluate`.",
+      "The second-level command name when applicable, such as `list-components` for `nat info list-components`.",
+      "The outcome: `success`, `failure`, or `interrupted`.",
+      "The wall-clock duration in milliseconds.",
+      "The process exit code.",
+      "The Python class name of the raised exception on failure (the message is not collected)."
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "fastapi",
+      "langchain"
+    ],
+    "one": "SPDX-FileCopyrightText: Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+    "install_hints": [
+      "pip install nvidia-nat",
+      "pip install \"nvidia-nat[langchain]\""
+    ]
+  },
+  "compact": {
+    "id": "nemo-agent-toolkit",
+    "name": "NeMo-Agent-Toolkit",
+    "cat": 3,
+    "role": "directory",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "fastapi",
+      "javascript",
+      "langchain",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "SPDX-FileCopyrightText: Copyright (c) 2024-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.",
+    "alt": [],
+    "doc": "human/fichas/nemo-agent-toolkit.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "NeMo-Agent-Toolkit",
+    "cat": 3,
+    "desc": "SPDX-License-Identifier: Apache-2.0.",
+    "stack": "python, typescript, javascript, react, fastapi, langchain",
+    "choose_if": "quieres spdx-filecopyrighttext: copyright (c) 2024-2026, nvidia corporation & affiliates. all righ",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/NVIDIA/NeMo-Agent-Toolkit.git",
+    "doc": "human/fichas/nemo-agent-toolkit.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:57.489476+00:00"
+  }
+}

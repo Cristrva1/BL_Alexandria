@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-06-25T04:58:41.121935+00:00",
+  "profile": {
+    "id": "motion",
+    "name": "motion",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\motion",
+    "repo_url": "https://github.com/motiondivision/motion.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "<h1 align=\"center\"> <img width=\"35\" height=\"35\" alt=\"Motion logo\" src=\"https://github.com/user-attachments/assets/00d6d1",
+      "desc": "An open source animation library<br />for JavaScript, React and Vue."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react"
+    ],
+    "one": "An open source animation library<br />for JavaScript, React and Vue",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "motion",
+    "name": "motion",
+    "cat": 4,
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "react",
+      "typescript"
+    ],
+    "one": "An open source animation library<br />for JavaScript, React and Vue",
+    "alt": [],
+    "doc": "human/fichas/motion.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "motion",
+    "cat": 4,
+    "desc": "An open source animation library for JavaScript, React and Vue.",
+    "stack": "javascript/typescript, typescript, javascript, react",
+    "choose_if": "quieres <img width=\"35\" height=\"35\" alt=\"motion logo\" src=\"https://github.com/user-attachments/ass",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "firecrawl",
+      "crawl4ai",
+      "scrapy"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/motiondivision/motion.git",
+    "doc": "human/fichas/motion.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:41.121738+00:00"
+  }
+}

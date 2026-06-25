@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-06-25T04:59:10.770172+00:00",
+  "profile": {
+    "id": "open-design",
+    "name": "open-design",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\open-design",
+    "repo_url": "https://github.com/nexu-io/open-design.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml"
+    ],
+    "intro": {
+      "title": "<h1 align=\"center\">Open Design: The open-source Claude Design alternative</h1>",
+      "desc": "🔥 **Open Design 0.10.0 is here: the all-in-one Agentic design workspace.** The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing off to an editor or a Code Agent — without leaving the app. With parallel sessions, it stops feeling like one assistant and starts feeling like a local design team ."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres"
+    ],
+    "one": "> 🔥 **Open Design 0.10.0 is here: the all-in-one Agentic design workspace.** The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing o...",
+    "install_hints": [
+      "git clone https://github.com/nexu-io/open-design.git",
+      "docker compose up -d",
+      "git clone https://github.com/nexu-io/open-design.git"
+    ]
+  },
+  "compact": {
+    "id": "open-design",
+    "name": "open-design",
+    "cat": 9,
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "docker",
+      "frontend",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "react",
+      "typescript"
+    ],
+    "one": "> 🔥 **Open Design 0.10.0 is here: the all-in-one Agentic design workspace.** The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing o...",
+    "alt": [],
+    "doc": "human/fichas/open-design.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "open-design",
+    "cat": 9,
+    "desc": "🔥 **Open Design 0.10.0 is here: the all-in-one Agentic design workspace.** The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing off to an editor or a Code Agent — without leaving the app. With parallel sessions, it stops feeling like one assistant and starts feeling like a local design team .",
+    "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
+    "choose_if": "quieres open design: the open-source claude design alternative",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/nexu-io/open-design.git",
+    "doc": "human/fichas/open-design.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:10.769841+00:00"
+  }
+}

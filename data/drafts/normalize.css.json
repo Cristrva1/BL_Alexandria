@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:59:00.871501+00:00",
+  "profile": {
+    "id": "normalize.css",
+    "name": "normalize.css",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\normalize.css",
+    "repo_url": "https://github.com/necolas/normalize.css.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "normalize.css",
+      "desc": "src=\"https://necolas.github.io/normalize.css/logo.svg\" alt=\"Normalize Logo\" width=\"80\" height=\"80\" align=\"right\"></a>."
+    },
+    "features": [
+      "Preserves useful defaults, unlike many CSS resets.",
+      "Normalizes styles for a wide range of elements.",
+      "Corrects bugs and common browser inconsistencies.",
+      "Improves usability with subtle modifications.",
+      "Explains what code does using detailed comments."
+    ],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript"
+    ],
+    "one": "normalize.css",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "normalize.css",
+    "name": "normalize.css",
+    "cat": 4,
+    "role": "library",
+    "exec": "local",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "typescript"
+    ],
+    "one": "normalize.css",
+    "alt": [],
+    "doc": "human/fichas/normalize.css.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "normalize.css",
+    "cat": 4,
+    "desc": "src=\"https://necolas.github.io/normalize.css/logo.svg\" alt=\"Normalize Logo\" width=\"80\" height=\"80\" align=\"right\"> .",
+    "stack": "javascript/typescript, typescript, javascript",
+    "choose_if": "quieres normalize.css",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "firecrawl",
+      "crawl4ai",
+      "scrapy"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/necolas/normalize.css.git",
+    "doc": "human/fichas/normalize.css.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:00.870988+00:00"
+  }
+}

@@ -1,6 +1,6 @@
 # diffusers vs fooocus
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-24T18:45:16.466468+00:00
 
 | Criterio | diffusers | Fooocus |
 |---|---|---|

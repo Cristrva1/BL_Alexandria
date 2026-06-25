@@ -8,15 +8,36 @@ from repo_intelligence.core.io import read_json, write_json
 from repo_intelligence.core.models import RepoRecord, ScanRepo
 from repo_intelligence.extract.readme import short_summary
 
+# Support for provisional/drafted data (key to integral updates)
+try:
+    from repo_intelligence.core.paths import ProjectPaths
+except Exception:
+    ProjectPaths = None  # type: ignore
+
 
 def build_scan_index(project_root: Path, output: Path, records: list[RepoRecord]) -> Path:
     compact_index = read_json(project_root / "INDICE_IA.json", {})
     indexed = _index_library(compact_index.get("repos", []))
 
+    # Load auto-generated drafts so new repos get decent metadata in scan immediately
+    drafts: dict[str, dict[str, Any]] = {}
+    try:
+        drafts_dir = project_root / "data" / "drafts"
+        if drafts_dir.exists():
+            for p in drafts_dir.glob("*.json"):
+                try:
+                    d = read_json(p, {})
+                    if "compact" in d:
+                        drafts[d["compact"].get("id", p.stem)] = d["compact"]
+                except Exception:
+                    pass
+    except Exception:
+        pass
+
     scan_repos: list[dict[str, Any]] = []
     for record in records:
         key = _match_key(record, indexed)
-        meta = indexed.get(key or "", {})
+        meta = indexed.get(key or "", {}) or drafts.get(record.id, {}) or {}
         one = meta.get("one") or short_summary(Path(record.readme) if record.readme else None)
         scan = ScanRepo(
             id=meta.get("id") or record.id,
@@ -35,7 +56,7 @@ def build_scan_index(project_root: Path, output: Path, records: list[RepoRecord]
 
     data = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "source": "registry/repos.yaml + INDICE_IA.json",
+        "source": "registry/repos.yaml + INDICE_IA.json + drafts",
         "repos": scan_repos,
     }
     write_json(output, data)

@@ -1,6 +1,6 @@
 # normalize.css
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:01:02.236908+00:00
 
 ## Decision
 
@@ -29,6 +29,10 @@ ya usas el preflight de Tailwind.
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+CSS
 
 ## Instalacion detectada
 

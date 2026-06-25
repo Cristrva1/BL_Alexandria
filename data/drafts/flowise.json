@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-06-25T04:57:19.963615+00:00",
+  "profile": {
+    "id": "flowise",
+    "name": "Flowise",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Flowise",
+    "repo_url": "https://github.com/FlowiseAI/Flowise.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<!-- markdownlint-disable MD030 -->",
+      "desc": "English | [繁體中文](./i18n/README-TW.md) | [简体中文](./i18n/README-ZH.md) | [日本語](./i18n/README-JA.md) | [한국어](./i18n/README-KR.md)."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react",
+      "docker"
+    ],
+    "one": "English | [繁體中文](./i18n/README-TW.md) | [简体中文](./i18n/README-ZH.md) | [日本語](./i18n/README-JA.md) | [한국어](./i18n/README-KR.md)",
+    "install_hints": [
+      "### Docker Compose",
+      "4. `docker compose up -d`",
+      "6. You can bring the containers down by `docker compose stop`"
+    ]
+  },
+  "compact": {
+    "id": "flowise",
+    "name": "Flowise",
+    "cat": 3,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "react",
+      "typescript"
+    ],
+    "one": "English | [繁體中文](./i18n/README-TW.md) | [简体中文](./i18n/README-ZH.md) | [日本語](./i18n/README-JA.md) | [한국어](./i18n/README-KR.md)",
+    "alt": [],
+    "doc": "human/fichas/flowise.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "Flowise",
+    "cat": 3,
+    "desc": "English | 繁體中文 | 简体中文 | 日本語 | 한국어.",
+    "stack": "javascript/typescript, typescript, javascript, react, docker",
+    "choose_if": "quieres english | [繁體中文](./i18n/readme-tw.md) | [简体中文](./i18n/readme-zh.md) | [日本語](./i1",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/FlowiseAI/Flowise.git",
+    "doc": "human/fichas/flowise.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:19.963412+00:00"
+  }
+}

@@ -1,34 +1,38 @@
 # Deep-Live-Cam
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-DIFERIR
+REFERENCIA
 
 ## Para que sirve realmente
 
-herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video con salvaguardas de uso.
+Real-time face swap and video deepfake with a single click and only a single image.
 
 ## Que problema resuelve
 
-necesitas swap en vivo legítimo
+quieres deep-live-cam 2.1.6
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para image, video. Stack declarado: Python, GPU.
+Aporta valor en `app` para multimedia, postgres, python, typescript, vision. Stack declarado: python, typescript, postgres.
 
 ## Cuando usarlo
 
-necesitas swap en vivo legítimo
+quieres deep-live-cam 2.1.6
 
 ## Cuando NO usarlo
 
-no puedes garantizar uso ético/consentimiento.
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
-deferred
+reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, postgres
 
 ## Instalacion detectada
 
@@ -36,7 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `face-recognition`
+- `litellm`
+- `cosmos`
+- `comfyui`
 
 ## Contra que compite
 
@@ -44,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
 
 ## Ideas profesionales
 
-Combinar con face-recognition cuando el flujo necesite mas de una pieza.
+Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si necesitas swap en vivo legítimo. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres deep-live-cam 2.1.6. No debe instalarse por inercia.

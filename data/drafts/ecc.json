@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-06-25T04:57:08.438437+00:00",
+  "profile": {
+    "id": "ecc",
+    "name": "ECC",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ECC",
+    "repo_url": "https://github.com/affaan-m/ECC.git",
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "**Language:** English | [Português (Brasil)](docs/pt-BR/README.md) | [简体中文](README.zh-CN.md) | [繁體中文](docs/zh-TW/README.",
+      "desc": "Official sources only.** Install ECC only from verified channels: the GitHub repository [github.com/affaan-m/ECC](https://github.com/affaan-m/ECC), the npm packages [`ecc-universal`](https://www.npmjs.com/package/ecc-universal) and [`ecc-agentshield`](https://www.npmjs.com/package/ecc-agentshield), the [GitHub App](https://github.com/apps/ecc-tools), the plugin slug `ecc@ecc`, and the project website [ecc.tools](http."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres",
+      "fastapi"
+    ],
+    "one": "**Language:** English | [Português (Brasil)](docs/pt-BR/README.md) | [简体中文](README.zh-CN.md) | [繁體中文](docs/zh-TW/README.md) | [日本語](docs/ja-JP/README.md) | [한국어](docs/ko-KR/README.md) | [Türkçe](docs/tr/README.md) | [Русский](docs/ru/README.md) | [Tiếng Việt]...",
+    "install_hints": [
+      "git clone https://github.com/affaan-m/ECC.git",
+      "|   |-- docker-patterns/            # Docker Compose, networking, volumes, container security (NEW)",
+      "> git clone https://github.com/affaan-m/ECC.git"
+    ]
+  },
+  "compact": {
+    "id": "ecc",
+    "name": "ECC",
+    "cat": 3,
+    "role": "app",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "fastapi",
+      "javascript",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "**Language:** English | [Português (Brasil)](docs/pt-BR/README.md) | [简体中文](README.zh-CN.md) | [繁體中文](docs/zh-TW/README.md) | [日本語](docs/ja-JP/README.md) | [한국어](docs/ko-KR/README.md) | [Türkçe](docs/tr/README.md) | [Русский](docs/ru/README.md) | [Tiếng Việt]...",
+    "alt": [],
+    "doc": "human/fichas/ecc.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "ECC",
+    "cat": 3,
+    "desc": "Official sources only.** Install ECC only from verified channels: the GitHub repository github.com/affaan-m/ECC, the npm packages `ecc-universal` and `ecc-agentshield`, the GitHub App, the plugin slug `ecc@ecc`, and the project website [ecc.tools](http.",
+    "stack": "python, typescript, javascript, react, docker, postgres, fastapi",
+    "choose_if": "quieres **language:** english |  |  | [繁體中文](docs/zh-tw/readme.",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/affaan-m/ECC.git",
+    "doc": "human/fichas/ecc.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:08.438226+00:00"
+  }
+}

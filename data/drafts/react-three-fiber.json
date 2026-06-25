@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T04:59:43.697888+00:00",
+  "profile": {
+    "id": "react-three-fiber",
+    "name": "react-three-fiber",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\react-three-fiber",
+    "repo_url": "https://github.com/pmndrs/react-three-fiber.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "<h1>@react-three/fiber</h1>",
+      "desc": "react-three-fiber is a <a href=\"https://reactjs.org/docs/codebase-overview.html#renderers\">React renderer</a> for threejs."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react",
+      "postgres"
+    ],
+    "one": "react-three-fiber is a <a href=\"https://reactjs.org/docs/codebase-overview.html#renderers\">React renderer</a> for threejs.",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "react-three-fiber",
+    "name": "react-three-fiber",
+    "cat": 9,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "react",
+      "typescript"
+    ],
+    "one": "react-three-fiber is a <a href=\"https://reactjs.org/docs/codebase-overview.html#renderers\">React renderer</a> for threejs.",
+    "alt": [],
+    "doc": "human/fichas/react-three-fiber.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "react-three-fiber",
+    "cat": 9,
+    "desc": "react-three-fiber is a React renderer for threejs.",
+    "stack": "javascript/typescript, typescript, javascript, react, postgres",
+    "choose_if": "quieres @react-three/fiber",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/pmndrs/react-three-fiber.git",
+    "doc": "human/fichas/react-three-fiber.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:43.697640+00:00"
+  }
+}

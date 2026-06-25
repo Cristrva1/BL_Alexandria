@@ -1,6 +1,6 @@
 # ui (shadcn)
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -16,7 +16,7 @@ quieres dueño del código
 
 ## Por que tiene valor
 
-Aporta valor en `library` para ui. Stack declarado: Node.js, React, Tailwind.
+Aporta valor en `repo` para sin tags. Stack declarado: Node.js, React, Tailwind.
 
 ## Cuando usarlo
 
@@ -29,6 +29,10 @@ prefieres una lib "llave en mano" ([heroui](#-heroui)).
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+Node.js, React, Tailwind
 
 ## Instalacion detectada
 

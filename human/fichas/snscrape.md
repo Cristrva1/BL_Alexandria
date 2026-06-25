@@ -1,6 +1,6 @@
 # snscrape
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-scraper de redes sociales (Twitter/X, Reddit, Telegram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves.
+snscrape is a scraper for social networking services (SNS). It scrapes things like user profiles, hashtags, or searches and returns the discovered items, e.g. the relevant posts.
 
 ## Que problema resuelve
 
-recolectas varias redes
+quieres snscrape
 
 ## Por que tiene valor
 
-Aporta valor en `library` para scraping. Stack declarado: Python.
+Aporta valor en `directory` para python, scraping, typescript. Stack declarado: python, typescript.
 
 ## Cuando usarlo
 
-recolectas varias redes
+quieres snscrape
 
 ## Cuando NO usarlo
 
-solo necesitas Instagram ([instaloader](#-instaloader)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript
 
 ## Instalacion detectada
 
@@ -36,20 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `instaloader`
+- `firecrawl`
+- `crawl4ai`
+- `scrapy`
 
 ## Contra que compite
 
-- `instaloader`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con instaloader cuando el flujo necesite mas de una pieza.
+Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si recolectas varias redes. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres snscrape. No debe instalarse por inercia.

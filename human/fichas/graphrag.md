@@ -1,34 +1,38 @@
 # graphrag
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud.
+👉 Microsoft Research Blog Post 👉 Read the docs 👉 GraphRAG Arxiv.
 
 ## Que problema resuelve
 
-tu corpus tiene relaciones ricas
+quieres graphrag
 
 ## Por que tiene valor
 
-Aporta valor en `library` para code, rag, graph. Stack declarado: Python.
+Aporta valor en `library` para python, typescript. Stack declarado: python, typescript.
 
 ## Cuando usarlo
 
-tu corpus tiene relaciones ricas
+quieres graphrag
 
 ## Cuando NO usarlo
 
-un RAG simple basta.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
-reference_only
+deferred
+
+## Stack / tecnologia detectada
+
+python, typescript
 
 ## Instalacion detectada
 
@@ -36,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `graphify`
-- `mcp-neo4j`
-- `turbovec`
+- `openwa`
+- `skills`
+- `agency-agents`
 
 ## Contra que compite
 
@@ -46,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con graphify, mcp-neo4j, turbovec cuando el flujo necesite mas de una pieza.
+Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si tu corpus tiene relaciones ricas. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres graphrag. No debe instalarse por inercia.

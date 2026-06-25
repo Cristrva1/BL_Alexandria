@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-06-25T04:59:12.439124+00:00",
+  "profile": {
+    "id": "open-generative-ai",
+    "name": "Open-Generative-AI",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Open-Generative-AI",
+    "repo_url": "https://github.com/Anil-matcha/Open-Generative-AI.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "Open Generative AI — Open-Source Alternative to AI Video Platforms",
+      "desc": "The free, open-source alternative to AI Video Platforms.** Generate AI images and videos using 200+ state-of-the-art models — no content filters, no closed ecosystem, no subscription fees."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "comfy"
+    ],
+    "one": "Open Generative AI — Open-Source Alternative to AI Video Platforms",
+    "install_hints": [
+      "git clone https://github.com/deepbeepmeep/Wan2GP",
+      "git clone --recurse-submodules https://github.com/Anil-matcha/Open-Generative-AI.git"
+    ]
+  },
+  "compact": {
+    "id": "open-generative-ai",
+    "name": "Open-Generative-AI",
+    "cat": 2,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "comfy",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "multimedia",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "Open Generative AI — Open-Source Alternative to AI Video Platforms",
+    "alt": [],
+    "doc": "human/fichas/open-generative-ai.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "Open-Generative-AI",
+    "cat": 2,
+    "desc": "The free, open-source alternative to AI Video Platforms.** Generate AI images and videos using 200+ state-of-the-art models — no content filters, no closed ecosystem, no subscription fees.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, docker, comfy",
+    "choose_if": "quieres open generative ai — open-source alternative to ai video platforms",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/Anil-matcha/Open-Generative-AI.git",
+    "doc": "human/fichas/open-generative-ai.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:12.438915+00:00"
+  }
+}

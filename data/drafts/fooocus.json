@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-25T04:57:23.250288+00:00",
+  "profile": {
+    "id": "fooocus",
+    "name": "Fooocus",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Fooocus",
+    "repo_url": "https://github.com/lllyasviel/Fooocus.git",
+    "manifests": [
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<div align=center>",
+      "desc": "Fooocus is an image generating software (based on [Gradio](https://www.gradio.app/) <a href='https://github.com/gradio-app/gradio'><img src='https://img.shields.io/github/stars/gradio-app/gradio'></a>)."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "comfy"
+    ],
+    "one": "Fooocus",
+    "install_hints": [
+      "git clone https://github.com/lllyasviel/Fooocus.git",
+      "pip install -r requirements_versions.txt",
+      "git clone https://github.com/lllyasviel/Fooocus.git"
+    ]
+  },
+  "compact": {
+    "id": "fooocus",
+    "name": "Fooocus",
+    "cat": 11,
+    "role": "skill",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "comfy",
+      "docker",
+      "javascript",
+      "python",
+      "typescript"
+    ],
+    "one": "Fooocus",
+    "alt": [],
+    "doc": "human/fichas/fooocus.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "Fooocus",
+    "cat": 11,
+    "desc": "Fooocus is an image generating software (based on Gradio ).",
+    "stack": "python, typescript, javascript, docker, comfy",
+    "choose_if": "quieres fooocus",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "comfyui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/lllyasviel/Fooocus.git",
+    "doc": "human/fichas/fooocus.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:23.250067+00:00"
+  }
+}

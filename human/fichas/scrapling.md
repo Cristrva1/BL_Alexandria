@@ -1,6 +1,6 @@
 # Scrapling
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica los elementos cuando el HTML cambia.
+Scrapling is an adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl.
 
 ## Que problema resuelve
 
-los sitios cambian o te bloquean
+quieres &middot;
 
 ## Por que tiene valor
 
-Aporta valor en `library` para scraping. Stack declarado: Python.
+Aporta valor en `library` para automation, docker, javascript, postgres, python, scraping, typescript. Stack declarado: python, typescript, javascript, docker, postgres.
 
 ## Cuando usarlo
 
-los sitios cambian o te bloquean
+quieres &middot;
 
 ## Cuando NO usarlo
 
-el target es estable y simple.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,7 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `scrapy`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
@@ -48,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con scrapy cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si los sitios cambian o te bloquean. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres &middot;. No debe instalarse por inercia.

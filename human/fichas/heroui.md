@@ -1,6 +1,6 @@
 # heroui
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes.
+packages/react/README.md
 
 ## Que problema resuelve
 
-quieres calidad + accesibilidad
+quieres packages/react/readme.md
 
 ## Por que tiene valor
 
-Aporta valor en `library` para ui, dataviz. Stack declarado: Node.js, React, Tailwind.
+Aporta valor en `library` para frontend, javascript, javascript-typescript, react. Stack declarado: javascript/typescript, javascript, react.
 
 ## Cuando usarlo
 
-quieres calidad + accesibilidad
+quieres packages/react/readme.md
 
 ## Cuando NO usarlo
 
-quieres control copy-paste ([ui](#-ui-shadcn)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, javascript, react
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `tailwindcss`
-- `swr`
+- `openwa`
+- `skills`
+- `agency-agents`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con tailwindcss, swr cuando el flujo necesite mas de una pieza.
+Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres calidad + accesibilidad. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres packages/react/readme.md. No debe instalarse por inercia.

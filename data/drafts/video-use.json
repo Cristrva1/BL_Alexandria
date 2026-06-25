@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-25T05:00:44.687766+00:00",
+  "profile": {
+    "id": "video-use",
+    "name": "video-use",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\video-use",
+    "repo_url": "https://github.com/browser-use/video-use.git",
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "Introducing **video-use** — edit videos with Claude Code. 100% open source."
+    },
+    "features": [
+      "**Cuts out filler words** (`umm`, `uh`, false starts) and dead space between takes",
+      "**Auto color grades** every segment (warm cinematic, neutral punch, or any custom ffmpeg chain)",
+      "**30ms audio fades** at every cut so you never hear a pop",
+      "**Burns subtitles** in your style — 2-word UPPERCASE chunks by default, fully customizable",
+      "**Self-evaluates the rendered output** at every cut boundary before showing you anything",
+      "**Persists session memory** in `project.md` so next week's session picks up where you left off"
+    ],
+    "stack": [
+      "python",
+      "typescript"
+    ],
+    "one": "video-use",
+    "install_hints": [
+      "git clone https://github.com/browser-use/video-use ~/Developer/video-use",
+      "uv sync                         # or: pip install -e ."
+    ]
+  },
+  "compact": {
+    "id": "video-use",
+    "name": "video-use",
+    "cat": 12,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "multimedia",
+      "python",
+      "typescript"
+    ],
+    "one": "video-use",
+    "alt": [],
+    "doc": "human/fichas/video-use.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "video-use",
+    "cat": 12,
+    "desc": "Introducing **video-use** — edit videos with Claude Code. 100% open source.",
+    "stack": "python, typescript",
+    "choose_if": "quieres video-use",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "whisper",
+      "faster-whisper"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/browser-use/video-use.git",
+    "doc": "human/fichas/video-use.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:44.687556+00:00"
+  }
+}

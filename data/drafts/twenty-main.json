@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-25T05:00:36.466681+00:00",
+  "profile": {
+    "id": "twenty-main",
+    "name": "twenty-main",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\twenty-main",
+    "repo_url": "",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres"
+    ],
+    "one": "Why Twenty",
+    "install_hints": [
+      "Run Twenty on your own infrastructure with [Docker Compose](https://docs.twenty.com/developers/self-host/capabilities/docker-compose), or co"
+    ]
+  },
+  "compact": {
+    "id": "twenty-main",
+    "name": "twenty-main",
+    "cat": 1,
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "react",
+      "typescript"
+    ],
+    "one": "Why Twenty",
+    "alt": [],
+    "doc": "human/fichas/twenty-main.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "twenty-main",
+    "cat": 1,
+    "desc": "Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack.",
+    "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
+    "choose_if": "quieres why twenty",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "evolution-api",
+      "whatsapp-agentkit",
+      "activepieces"
+    ],
+    "alternatives": [],
+    "repo": "",
+    "doc": "human/fichas/twenty-main.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:36.466412+00:00"
+  }
+}

@@ -1,6 +1,6 @@
 # react-three-fiber
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos.
+react-three-fiber is a React renderer for threejs.
 
 ## Que problema resuelve
 
-haces 3D en React
+quieres @react-three/fiber
 
 ## Por que tiene valor
 
-Aporta valor en `library` para ui, animation. Stack declarado: JavaScript/React.
+Aporta valor en `library` para javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, postgres.
 
 ## Cuando usarlo
 
-haces 3D en React
+quieres @react-three/fiber
 
 ## Cuando NO usarlo
 
-no usas React ([three.js](#-threejs) directo).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, typescript, javascript, react, postgres
 
 ## Instalacion detectada
 
@@ -36,12 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `threejs`
-- `motion`
+- `openwa`
+- `skills`
+- `agency-agents`
 
 ## Contra que compite
 
-- `threejs`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con threejs, motion cuando el flujo necesite mas de una pieza.
+Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si haces 3D en React. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres @react-three/fiber. No debe instalarse por inercia.

@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-06-25T04:58:14.712359+00:00",
+  "profile": {
+    "id": "llm.c",
+    "name": "llm.c",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\llm.c",
+    "repo_url": "https://github.com/karpathy/llm.c.git",
+    "manifests": [
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "llm.c",
+      "desc": "LLMs in simple, pure C/CUDA with no need for 245MB of PyTorch or 107MB of cPython. Current focus is on pretraining, in particular reproducing the [GPT-2](https://github.com/openai/gpt-2) and [GPT-3](https://arxiv.org/abs/2005.14165) miniseries, along with a parallel PyTorch reference implementation in [train_gpt2.py](train_gpt2.py). You'll recognize this file as a slightly tweaked [nanoGPT](https://github.com/karpath."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript"
+    ],
+    "one": "llm.c",
+    "install_hints": [
+      "pip install -r requirements.txt"
+    ]
+  },
+  "compact": {
+    "id": "llm.c",
+    "name": "llm.c",
+    "cat": 7,
+    "role": "app",
+    "exec": "cloud",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "python",
+      "typescript"
+    ],
+    "one": "llm.c",
+    "alt": [],
+    "doc": "human/fichas/llm.c.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "llm.c",
+    "cat": 7,
+    "desc": "LLMs in simple, pure C/CUDA with no need for 245MB of PyTorch or 107MB of cPython. Current focus is on pretraining, in particular reproducing the GPT-2 and GPT-3 miniseries, along with a parallel PyTorch reference implementation in train_gpt2.py. You'll recognize this file as a slightly tweaked [nanoGPT](https://github.com/karpath.",
+    "stack": "python, typescript, javascript",
+    "choose_if": "quieres llm.c",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "codegraph",
+      "gitnexus",
+      "deepseek-coder"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/karpathy/llm.c.git",
+    "doc": "human/fichas/llm.c.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:14.712076+00:00"
+  }
+}

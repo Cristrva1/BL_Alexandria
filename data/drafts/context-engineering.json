@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-06-25T04:56:40.368532+00:00",
+  "profile": {
+    "id": "context-engineering",
+    "name": "Context-Engineering",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Context-Engineering",
+    "repo_url": "https://github.com/jasontang-ai/Context-Engineering.git",
+    "manifests": [],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "Context Engineering."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "react",
+      "postgres"
+    ],
+    "one": "Context Engineering",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "context-engineering",
+    "name": "Context-Engineering",
+    "cat": 2,
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "Context Engineering",
+    "alt": [],
+    "doc": "human/fichas/context-engineering.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "Context-Engineering",
+    "cat": 2,
+    "desc": "Context Engineering.",
+    "stack": "python, typescript, react, postgres",
+    "choose_if": "quieres context engineering",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/jasontang-ai/Context-Engineering.git",
+    "doc": "human/fichas/context-engineering.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:40.368323+00:00"
+  }
+}

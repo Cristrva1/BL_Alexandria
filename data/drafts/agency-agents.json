@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-06-25T04:55:57.260749+00:00",
+  "profile": {
+    "id": "agency-agents",
+    "name": "agency-agents",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\agency-agents",
+    "repo_url": "https://github.com/msitarzewski/agency-agents.git",
+    "manifests": [],
+    "intro": {
+      "title": "🎭 The Agency: AI Specialists Ready to Transform Your Workflow",
+      "desc": "A complete AI agency at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "react",
+      "postgres",
+      "whisper"
+    ],
+    "one": "🎭 The Agency: AI Specialists Ready to Transform Your Workflow",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "agency-agents",
+    "name": "agency-agents",
+    "cat": 9,
+    "role": "skill",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "multimedia",
+      "postgres",
+      "python",
+      "react",
+      "typescript",
+      "whisper"
+    ],
+    "one": "🎭 The Agency: AI Specialists Ready to Transform Your Workflow",
+    "alt": [],
+    "doc": "human/fichas/agency-agents.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "agency-agents",
+    "cat": 9,
+    "desc": "A complete AI agency at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+    "stack": "python, typescript, react, postgres, whisper",
+    "choose_if": "quieres 🎭 the agency: ai specialists ready to transform your workflow",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "taste-skill"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/msitarzewski/agency-agents.git",
+    "doc": "human/fichas/agency-agents.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:55:57.260535+00:00"
+  }
+}

@@ -1,34 +1,38 @@
 # stable-diffusion-webui
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-DIFERIR
+REFERENCIA
 
 ## Para que sirve realmente
 
-interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de extensiones desde el navegador.
+A web interface for Stable Diffusion, implemented using Gradio library.
 
 ## Que problema resuelve
 
-quieres extensiones y comunidad
+quieres stable diffusion web ui
 
 ## Por que tiene valor
 
-Aporta valor en `app` para image, browser. Stack declarado: Python, GPU, modelos locales.
+Aporta valor en `skill` para frontend, javascript, postgres, python, typescript, vision. Stack declarado: python, typescript, javascript, postgres.
 
 ## Cuando usarlo
 
-quieres extensiones y comunidad
+quieres stable diffusion web ui
 
 ## Cuando NO usarlo
 
-prefieres flujo moderno/limpio ([InvokeAI](#-invokeai)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
-deferred
+reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, postgres
 
 ## Instalacion detectada
 
@@ -36,20 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `sd-webui-controlnet`
+- `litellm`
+- `cosmos`
+- `comfyui`
 
 ## Contra que compite
 
-- `invokeai`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con sd-webui-controlnet cuando el flujo necesite mas de una pieza.
+Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres extensiones y comunidad. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres stable diffusion web ui. No debe instalarse por inercia.

@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T04:59:38.629038+00:00",
+  "profile": {
+    "id": "ppt-master",
+    "name": "ppt-master",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ppt-master",
+    "repo_url": "https://github.com/hugohe3/ppt-master.git",
+    "manifests": [
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "PPT Master — AI generates natively editable PPTX from any document",
+      "desc": "English | [中文](./README_CN.md)."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "postgres"
+    ],
+    "one": "PPT Master — AI generates natively editable PPTX from any document",
+    "install_hints": [
+      "**You only need Python.** Everything else is installed via `pip install -r requirements.txt`.",
+      "> **TL;DR** — Install Python, run `pip install -r requirements.txt`, and you're ready to generate presentations.",
+      "Quick version: download Python from [python.org](https://www.python.org/downloads/) → **check \"Add to PATH\"** during install → `pip install "
+    ]
+  },
+  "compact": {
+    "id": "ppt-master",
+    "name": "ppt-master",
+    "cat": 13,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "PPT Master — AI generates natively editable PPTX from any document",
+    "alt": [],
+    "doc": "human/fichas/ppt-master.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "ppt-master",
+    "cat": 13,
+    "desc": "English | 中文.",
+    "stack": "python, typescript, postgres",
+    "choose_if": "quieres ppt master — ai generates natively editable pptx from any document",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "markitdown",
+      "revealjs",
+      "reveal.js"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/hugohe3/ppt-master.git",
+    "doc": "human/fichas/ppt-master.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:38.628727+00:00"
+  }
+}

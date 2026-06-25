@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T04:56:15.614591+00:00",
+  "profile": {
+    "id": "awesome-bigdata",
+    "name": "awesome-bigdata",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\awesome-bigdata",
+    "repo_url": "https://github.com/oxnr/awesome-bigdata.git",
+    "manifests": [],
+    "intro": {
+      "title": "Awesome Big Data",
+      "desc": "A curated list of awesome big data frameworks, resources and other awesomeness. Inspired by [awesome-php](https://github.com/ziadoz/awesome-php), [awesome-python](https://github.com/vinta/awesome-python), [awesome-ruby](https://github.com/Sdogruyol/awesome-ruby), [hadoopecosystemtable](http://hadoopecosystemtable.github.io/) & [big-data](http://usefulstuff.io/big-data/)."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres"
+    ],
+    "one": "Awesome Big Data",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "awesome-bigdata",
+    "name": "awesome-bigdata",
+    "cat": 7,
+    "role": "directory",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "Awesome Big Data",
+    "alt": [],
+    "doc": "human/fichas/awesome-bigdata.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "awesome-bigdata",
+    "cat": 7,
+    "desc": "A curated list of awesome big data frameworks, resources and other awesomeness. Inspired by awesome-php, awesome-python, awesome-ruby, hadoopecosystemtable & big-data.",
+    "stack": "python, typescript, javascript, react, docker, postgres",
+    "choose_if": "quieres awesome big data",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "codegraph",
+      "gitnexus",
+      "deepseek-coder"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/oxnr/awesome-bigdata.git",
+    "doc": "human/fichas/awesome-bigdata.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:15.614360+00:00"
+  }
+}

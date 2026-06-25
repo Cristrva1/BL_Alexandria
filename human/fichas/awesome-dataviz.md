@@ -1,6 +1,6 @@
 # awesome-dataviz
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad.
+A curated list of awesome **open-source** data visualizations frameworks, libraries and software. Inspired by awesome-python and originally created by fasouto.
 
 ## Que problema resuelve
 
-buscas opciones de visualización
+quieres awesome dataviz
 
 ## Por que tiene valor
 
-Aporta valor en `directory` para dataviz. Stack declarado: Markdown.
+Aporta valor en `directory` para automation, javascript, postgres, python, react, typescript. Stack declarado: python, typescript, javascript, react, postgres.
 
 ## Cuando usarlo
 
-buscas opciones de visualización
+quieres awesome dataviz
 
 ## Cuando NO usarlo
 
-ya elegiste tu librería.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, react, postgres
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `echarts`
-- `awesome-bigdata`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con echarts, awesome-bigdata cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si buscas opciones de visualización. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres awesome dataviz. No debe instalarse por inercia.

@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-06-25T04:58:24.576480+00:00",
+  "profile": {
+    "id": "marketingskills",
+    "name": "marketingskills",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\marketingskills",
+    "repo_url": "https://github.com/coreyhaines31/marketingskills.git",
+    "manifests": [],
+    "intro": {
+      "title": "Marketing Skills for AI Agents",
+      "desc": "A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the [Agent Skills spec](https://agentskills.io)."
+    },
+    "features": [],
+    "stack": [
+      "typescript",
+      "postgres"
+    ],
+    "one": "Marketing Skills for AI Agents",
+    "install_hints": [
+      "git clone https://github.com/coreyhaines31/marketingskills.git"
+    ]
+  },
+  "compact": {
+    "id": "marketingskills",
+    "name": "marketingskills",
+    "cat": 2,
+    "role": "skill",
+    "exec": "cloud",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "postgres",
+      "skills",
+      "typescript"
+    ],
+    "one": "Marketing Skills for AI Agents",
+    "alt": [],
+    "doc": "human/fichas/marketingskills.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "marketingskills",
+    "cat": 2,
+    "desc": "A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the Agent Skills spec.",
+    "stack": "typescript, postgres",
+    "choose_if": "quieres marketing skills for ai agents",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/coreyhaines31/marketingskills.git",
+    "doc": "human/fichas/marketingskills.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:24.576241+00:00"
+  }
+}

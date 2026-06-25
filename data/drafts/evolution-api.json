@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-06-25T04:57:11.754825+00:00",
+  "profile": {
+    "id": "evolution-api",
+    "name": "evolution-api",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\evolution-api",
+    "repo_url": "https://github.com/evolution-foundation/evolution-api.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json",
+      "docker-compose.yaml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "Open-source REST API for WhatsApp and multi-channel messaging — part of the Evolution Foundation ecosystem."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "Open-source REST API for WhatsApp and multi-channel messaging — part of the Evolution Foundation ecosystem.",
+    "install_hints": [
+      "git clone git@github.com:evolution-foundation/evolution-api.git",
+      "docker run -p 8080:8080 --env-file .env evoapicloud/evolution-api:latest"
+    ]
+  },
+  "compact": {
+    "id": "evolution-api",
+    "name": "evolution-api",
+    "cat": 1,
+    "role": "app",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "typescript"
+    ],
+    "one": "Open-source REST API for WhatsApp and multi-channel messaging — part of the Evolution Foundation ecosystem.",
+    "alt": [],
+    "doc": "human/fichas/evolution-api.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "evolution-api",
+    "cat": 1,
+    "desc": "Open-source REST API for WhatsApp and multi-channel messaging — part of the Evolution Foundation ecosystem.",
+    "stack": "javascript/typescript, typescript, javascript, docker, postgres",
+    "choose_if": "quieres open-source rest api for whatsapp and multi-channel messaging — part of the evol",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "twenty-main",
+      "whatsapp-agentkit",
+      "activepieces"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/evolution-foundation/evolution-api.git",
+    "doc": "human/fichas/evolution-api.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:11.754555+00:00"
+  }
+}

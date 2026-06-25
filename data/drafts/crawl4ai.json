@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-06-25T04:56:45.364431+00:00",
+  "profile": {
+    "id": "crawl4ai",
+    "name": "crawl4ai",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\crawl4ai",
+    "repo_url": "https://github.com/unclecode/crawl4ai.git",
+    "manifests": [
+      "pyproject.toml",
+      "requirements.txt",
+      "setup.py",
+      "uv.lock",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper.",
+      "desc": "🚀 Crawl4AI Cloud API — Closed Beta (Launching Soon) Reliable, large-scale web extraction, now built to be _**drastically more cost-effective**_ than any of the existing solutions."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres",
+      "fastapi"
+    ],
+    "one": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper.",
+    "install_hints": [
+      "pip install -U crawl4ai",
+      "pip install crawl4ai --pre",
+      "pip install crawl4ai"
+    ]
+  },
+  "compact": {
+    "id": "crawl4ai",
+    "name": "crawl4ai",
+    "cat": 4,
+    "role": "app",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "fastapi",
+      "javascript",
+      "postgres",
+      "python",
+      "react",
+      "scraping",
+      "typescript"
+    ],
+    "one": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper.",
+    "alt": [],
+    "doc": "human/fichas/crawl4ai.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "crawl4ai",
+    "cat": 4,
+    "desc": "🚀 Crawl4AI Cloud API — Closed Beta (Launching Soon) Reliable, large-scale web extraction, now built to be _**drastically more cost-effective**_ than any of the existing solutions.",
+    "stack": "python, typescript, javascript, react, docker, postgres, fastapi",
+    "choose_if": "quieres 🚀🤖 crawl4ai: open-source llm friendly web crawler & scraper.",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "firecrawl",
+      "scrapy",
+      "crawlee"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/unclecode/crawl4ai.git",
+    "doc": "human/fichas/crawl4ai.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:45.364188+00:00"
+  }
+}

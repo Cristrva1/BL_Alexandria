@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-06-25T04:56:08.938833+00:00",
+  "profile": {
+    "id": "archivebox",
+    "name": "ArchiveBox",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ArchiveBox",
+    "repo_url": "https://github.com/ArchiveBox/ArchiveBox.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<div align=\"center\" style=\"text-align: center; width: 100%\">",
+      "desc": "▶️ <a href=\"https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart\">Quickstart</a> | <a href=\"https://demo.archivebox.io\">Demo</a> | <a href=\"https://github.com/ArchiveBox/ArchiveBox\">GitHub</a> | <a href=\"https://github.com/ArchiveBox/ArchiveBox/wiki\">Documentation</a> | <a href=\"#background--motivation\">Info & Motivation</a> | <a href=\"https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community\">Communi."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "▶️ <a href=\"https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart\">Quickstart</a> | <a href=\"https://demo.archivebox.io\">Demo</a> | <a href=\"https://github.com/ArchiveBox/ArchiveBox\">GitHub</a> | <a href=\"https://github.com/ArchiveBox/ArchiveBox/wiki\">Docu...",
+    "install_hints": [
+      "<pre lang=\"bash\"><code style=\"white-space: pre-line\"># Option A: Get ArchiveBox with Docker Compose (recommended):",
+      "docker compose run archivebox init",
+      "# docker compose run archivebox add 'https://example.com'"
+    ]
+  },
+  "compact": {
+    "id": "archivebox",
+    "name": "ArchiveBox",
+    "cat": 4,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "▶️ <a href=\"https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart\">Quickstart</a> | <a href=\"https://demo.archivebox.io\">Demo</a> | <a href=\"https://github.com/ArchiveBox/ArchiveBox\">GitHub</a> | <a href=\"https://github.com/ArchiveBox/ArchiveBox/wiki\">Docu...",
+    "alt": [],
+    "doc": "human/fichas/archivebox.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "ArchiveBox",
+    "cat": 4,
+    "desc": "▶️ Quickstart | Demo | GitHub | Documentation | Info & Motivation | Communi.",
+    "stack": "python, typescript, javascript, docker, postgres",
+    "choose_if": "quieres ▶️ <a href=\"https://github.com/archivebox/archivebox/wiki/quickstart\">quickstart",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "firecrawl",
+      "crawl4ai",
+      "scrapy"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/ArchiveBox/ArchiveBox.git",
+    "doc": "human/fichas/archivebox.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:08.938415+00:00"
+  }
+}

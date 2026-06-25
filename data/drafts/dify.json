@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-06-25T04:57:06.749075+00:00",
+  "profile": {
+    "id": "dify",
+    "name": "dify",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\dify",
+    "repo_url": "https://github.com/langgenius/dify.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "alt=\"chat on Discord\"></a> alt=\"join Reddit\"></a> alt=\"follow on X(Twitter)\"></a> alt=\"follow on LinkedIn\"></a>."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres"
+    ],
+    "one": "alt=\"chat on Discord\"></a>",
+    "install_hints": [
+      "The easiest way to start the Dify server is through [Docker Compose](docker/docker-compose.yaml). Before running Dify with the following com",
+      "docker compose up -d",
+      "If you need to customize the configuration, edit `docker/.env`. The essential startup defaults live in [`docker/.env.example`](docker/.env.e"
+    ]
+  },
+  "compact": {
+    "id": "dify",
+    "name": "dify",
+    "cat": 3,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "alt=\"chat on Discord\"></a>",
+    "alt": [],
+    "doc": "human/fichas/dify.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "dify",
+    "cat": 3,
+    "desc": "alt=\"chat on Discord\"> alt=\"join Reddit\"> alt=\"follow on X(Twitter)\"> alt=\"follow on LinkedIn\"> .",
+    "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres",
+    "choose_if": "quieres alt=\"chat on discord\"></a>",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/langgenius/dify.git",
+    "doc": "human/fichas/dify.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:06.748705+00:00"
+  }
+}

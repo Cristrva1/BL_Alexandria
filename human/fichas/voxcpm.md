@@ -1,6 +1,6 @@
 # VoxCPM
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ DIFERIR
 
 ## Para que sirve realmente
 
-sistema TTS de alta fidelidad de OpenBMB que prescinde del tokenizador tradicional para lograr una prosodia y fluidez muy naturales, con clonación de voz.
+👋 Join our community for discussion and support!.
 
 ## Que problema resuelve
 
-quieres voz muy natural/clonada
+quieres voxcpm2: tokenizer-free tts for multilingual speech generation, creative voice design, and
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para media, audio. Stack declarado: Python, PyTorch, GPU.
+Aporta valor en `library` para comfy, docker, fastapi, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, docker, postgres, fastapi, comfy.
 
 ## Cuando usarlo
 
-quieres voz muy natural/clonada
+quieres voxcpm2: tokenizer-free tts for multilingual speech generation, creative voice design, and
 
 ## Cuando NO usarlo
 
-priorizas latencia mínima ([supertonic](#-supertonic)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
 deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, docker, postgres, fastapi, comfy
 
 ## Instalacion detectada
 
@@ -36,11 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `tts`
+- `fluxer`
+- `whisper`
+- `faster-whisper`
 
 ## Contra que compite
 
-- `supertonic`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -48,8 +54,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con tts cuando el flujo necesite mas de una pieza.
+Combinar con fluxer, whisper, faster-whisper cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres voz muy natural/clonada. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres voxcpm2: tokenizer-free tts for multilingual speech generation, creative voice design, and. No debe instalarse por inercia.

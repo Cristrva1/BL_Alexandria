@@ -1,6 +1,6 @@
 # awesome-bigdata
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.
+A curated list of awesome big data frameworks, resources and other awesomeness. Inspired by awesome-php, awesome-python, awesome-ruby, hadoopecosystemtable & big-data.
 
 ## Que problema resuelve
 
-diseñas pipelines de datos grandes
+quieres awesome big data
 
 ## Por que tiene valor
 
-Aporta valor en `directory` para code, bigdata. Stack declarado: Markdown.
+Aporta valor en `directory` para docker, javascript, postgres, python, react, typescript. Stack declarado: python, typescript, javascript, react, docker, postgres.
 
 ## Cuando usarlo
 
-diseñas pipelines de datos grandes
+quieres awesome big data
 
 ## Cuando NO usarlo
 
-tu proyecto es pequeño.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, react, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,7 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-dataviz`
+- `codegraph`
+- `gitnexus`
+- `deepseek-coder`
 
 ## Contra que compite
 
@@ -48,8 +54,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con awesome-dataviz cuando el flujo necesite mas de una pieza.
+Combinar con codegraph, gitnexus, deepseek-coder cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si diseñas pipelines de datos grandes. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres awesome big data. No debe instalarse por inercia.

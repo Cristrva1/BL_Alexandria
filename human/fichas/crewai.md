@@ -1,6 +1,6 @@
 # crewAI
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-framework para orquestar "crews" de agentes con roles y tareas. Cada agente recibe un rol y objetivo, y el equipo coopera o se reparte el trabajo de forma secuencial o jerárquica.
+Fast and Flexible Multi-Agent Automation Framework.
 
 ## Que problema resuelve
 
-quieres velocidad
+quieres ·
 
 ## Por que tiene valor
 
-Aporta valor en `library` para agents. Stack declarado: Python.
+Aporta valor en `runtime` para automation, langchain, postgres, python, typescript. Stack declarado: python, typescript, postgres, langchain.
 
 ## Cuando usarlo
 
-quieres velocidad
+quieres ·
 
 ## Cuando NO usarlo
 
-necesitas control de bajo nivel.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, postgres, langchain
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `langchain`
-- `mem0`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con langchain, mem0 cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres velocidad. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres ·. No debe instalarse por inercia.

@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-06-25T04:57:58.045137+00:00",
+  "profile": {
+    "id": "invokeai",
+    "name": "InvokeAI",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\InvokeAI",
+    "repo_url": "https://github.com/invoke-ai/InvokeAI.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "Invoke - Professional Creative AI Tools for Visual Media."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker"
+    ],
+    "one": "Invoke - Professional Creative AI Tools for Visual Media",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "invokeai",
+    "name": "InvokeAI",
+    "cat": 11,
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "Invoke - Professional Creative AI Tools for Visual Media",
+    "alt": [],
+    "doc": "human/fichas/invokeai.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "InvokeAI",
+    "cat": 11,
+    "desc": "Invoke - Professional Creative AI Tools for Visual Media.",
+    "stack": "python, typescript, javascript, react, docker",
+    "choose_if": "quieres invoke - professional creative ai tools for visual media",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "comfyui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/invoke-ai/InvokeAI.git",
+    "doc": "human/fichas/invokeai.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:58.044931+00:00"
+  }
+}

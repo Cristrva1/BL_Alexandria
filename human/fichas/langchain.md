@@ -1,6 +1,6 @@
 # langchain
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). Ofrece abstracciones y conectores para casi cualquier modelo, base de datos vectorial y fuente de datos.
+LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves.
 
 ## Que problema resuelve
 
-quieres la base estándar
+quieres langchain is a framework for building agents and llm-powered applications. it he
 
 ## Por que tiene valor
 
-Aporta valor en `library` para agents, rag. Stack declarado: Python/JS.
+Aporta valor en `runtime` para agents, automation, langchain, python, typescript. Stack declarado: python, typescript, langchain.
 
 ## Cuando usarlo
 
-quieres la base estándar
+quieres langchain is a framework for building agents and llm-powered applications. it he
 
 ## Cuando NO usarlo
 
-prefieres mínima abstracción.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, langchain
 
 ## Instalacion detectada
 
@@ -36,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `langflow`
-- `langfuse`
-- `litellm`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
@@ -50,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con langflow, langfuse, litellm cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres la base estándar. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres langchain is a framework for building agents and llm-powered applications. it he. No debe instalarse por inercia.

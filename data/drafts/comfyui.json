@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-06-25T04:56:37.075117+00:00",
+  "profile": {
+    "id": "comfyui",
+    "name": "ComfyUI",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ComfyUI",
+    "repo_url": "https://github.com/Comfy-Org/ComfyUI.git",
+    "manifests": [
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "The most powerful and modular AI engine for content creation.**."
+    },
+    "features": [
+      "Image Models",
+      "SD1.x, SD2.x ([unCLIP](https://comfyanonymous.github.io/ComfyUI_examples/unclip/))",
+      "[Stable Cascade](https://comfyanonymous.github.io/ComfyUI_examples/stable_cascade/)",
+      "[SD3 and SD3.5](https://comfyanonymous.github.io/ComfyUI_examples/sd3/)",
+      "Pixart Alpha and Sigma",
+      "[AuraFlow](https://comfyanonymous.github.io/ComfyUI_examples/aura_flow/)"
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "comfy"
+    ],
+    "one": "ComfyUI",
+    "install_hints": [
+      "pip install comfy-cli",
+      "Git clone this repo.",
+      "```pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm7.2```"
+    ]
+  },
+  "compact": {
+    "id": "comfyui",
+    "name": "ComfyUI",
+    "cat": 11,
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "comfy",
+      "docker",
+      "frontend",
+      "javascript",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "ComfyUI",
+    "alt": [],
+    "doc": "human/fichas/comfyui.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "ComfyUI",
+    "cat": 11,
+    "desc": "The most powerful and modular AI engine for content creation.**.",
+    "stack": "python, typescript, javascript, react, docker, comfy",
+    "choose_if": "quieres comfyui",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "stable-diffusion-webui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/Comfy-Org/ComfyUI.git",
+    "doc": "human/fichas/comfyui.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:37.074923+00:00"
+  }
+}

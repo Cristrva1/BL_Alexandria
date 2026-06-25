@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-06-25T05:00:51.234485+00:00",
+  "profile": {
+    "id": "whatsapp-agentkit",
+    "name": "whatsapp-agentkit",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\whatsapp-agentkit",
+    "repo_url": "https://github.com/Hainrixz/whatsapp-agentkit.git",
+    "manifests": [],
+    "intro": {
+      "title": "AgentKit — WhatsApp AI Agent Builder",
+      "desc": "Construye tu propio agente de WhatsApp con inteligencia artificial en menos de 30 minutos. No necesitas saber programar. Claude Code construye todo por ti."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres",
+      "fastapi"
+    ],
+    "one": "AgentKit — WhatsApp AI Agent Builder",
+    "install_hints": [
+      "git clone https://github.com/Hainrixz/whatsapp-agentkit.git",
+      "git clone https://github.com/Hainrixz/whatsapp-agentkit.git",
+      "docker compose up --build"
+    ]
+  },
+  "compact": {
+    "id": "whatsapp-agentkit",
+    "name": "whatsapp-agentkit",
+    "cat": 1,
+    "role": "directory",
+    "exec": "cloud",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "automation",
+      "docker",
+      "fastapi",
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "AgentKit — WhatsApp AI Agent Builder",
+    "alt": [],
+    "doc": "human/fichas/whatsapp-agentkit.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "whatsapp-agentkit",
+    "cat": 1,
+    "desc": "Construye tu propio agente de WhatsApp con inteligencia artificial en menos de 30 minutos. No necesitas saber programar. Claude Code construye todo por ti.",
+    "stack": "python, typescript, javascript, docker, postgres, fastapi",
+    "choose_if": "quieres agentkit — whatsapp ai agent builder",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "twenty-main",
+      "evolution-api",
+      "activepieces"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/Hainrixz/whatsapp-agentkit.git",
+    "doc": "human/fichas/whatsapp-agentkit.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:51.234144+00:00"
+  }
+}

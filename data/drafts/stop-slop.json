@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-06-25T05:00:18.252007+00:00",
+  "profile": {
+    "id": "stop-slop",
+    "name": "stop-slop",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\stop-slop",
+    "repo_url": "https://github.com/hardikpandya/stop-slop.git",
+    "manifests": [],
+    "intro": {
+      "title": "Stop Slop",
+      "desc": "A skill for removing AI tells from prose."
+    },
+    "features": [],
+    "stack": [
+      "typescript"
+    ],
+    "one": "Stop Slop",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "stop-slop",
+    "name": "stop-slop",
+    "cat": 2,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "typescript"
+    ],
+    "one": "Stop Slop",
+    "alt": [],
+    "doc": "human/fichas/stop-slop.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "stop-slop",
+    "cat": 2,
+    "desc": "A skill for removing AI tells from prose.",
+    "stack": "typescript",
+    "choose_if": "quieres stop slop",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/hardikpandya/stop-slop.git",
+    "doc": "human/fichas/stop-slop.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:18.251809+00:00"
+  }
+}

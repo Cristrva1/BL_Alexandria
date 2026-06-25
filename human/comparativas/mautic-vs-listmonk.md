@@ -1,6 +1,6 @@
 # mautic vs listmonk
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-24T18:31:47.743718+00:00
 
 | Criterio | mautic | listmonk |
 |---|---|---|

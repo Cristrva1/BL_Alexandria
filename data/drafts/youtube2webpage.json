@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-06-25T05:00:56.198566+00:00",
+  "profile": {
+    "id": "youtube2webpage",
+    "name": "Youtube2Webpage",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Youtube2Webpage",
+    "repo_url": "https://github.com/obra/Youtube2Webpage.git",
+    "manifests": [],
+    "intro": {
+      "title": "Youtube-to-Webpage",
+      "desc": "Youtube-to-Webpage is a Perl script to create a webpage from a Youtube video with a transcript generated from the video's closed captions paired with screenshots of the video."
+    },
+    "features": [],
+    "stack": [
+      "typescript",
+      "postgres"
+    ],
+    "one": "Youtube-to-Webpage",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "youtube2webpage",
+    "name": "Youtube2Webpage",
+    "cat": 9,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "postgres",
+      "typescript"
+    ],
+    "one": "Youtube-to-Webpage",
+    "alt": [],
+    "doc": "human/fichas/youtube2webpage.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "Youtube2Webpage",
+    "cat": 9,
+    "desc": "Youtube-to-Webpage is a Perl script to create a webpage from a Youtube video with a transcript generated from the video's closed captions paired with screenshots of the video.",
+    "stack": "typescript, postgres",
+    "choose_if": "quieres youtube-to-webpage",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/obra/Youtube2Webpage.git",
+    "doc": "human/fichas/youtube2webpage.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:56.198366+00:00"
+  }
+}

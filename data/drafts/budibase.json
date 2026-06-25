@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:56:28.882684+00:00",
+  "profile": {
+    "id": "budibase",
+    "name": "budibase",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\budibase",
+    "repo_url": "https://github.com/Budibase/budibase.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "AI Agents that run your operations Budibase is an open-source operations platform that saves engineers 100s of hours building Agents, Apps and Automations, securely."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "Budibase",
+    "install_hints": [
+      "- [Docker Compose](https://docs.budibase.com/docs/docker-compose)"
+    ]
+  },
+  "compact": {
+    "id": "budibase",
+    "name": "budibase",
+    "cat": 1,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "typescript"
+    ],
+    "one": "Budibase",
+    "alt": [],
+    "doc": "human/fichas/budibase.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "budibase",
+    "cat": 1,
+    "desc": "AI Agents that run your operations Budibase is an open-source operations platform that saves engineers 100s of hours building Agents, Apps and Automations, securely.",
+    "stack": "javascript/typescript, typescript, javascript, docker, postgres",
+    "choose_if": "quieres budibase",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "twenty-main",
+      "evolution-api",
+      "whatsapp-agentkit"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/Budibase/budibase.git",
+    "doc": "human/fichas/budibase.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:28.882477+00:00"
+  }
+}

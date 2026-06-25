@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-06-25T04:58:36.122700+00:00",
+  "profile": {
+    "id": "mempalace",
+    "name": "mempalace",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\mempalace",
+    "repo_url": "https://github.com/MemPalace/mempalace.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "Local-first AI memory. Verbatim storage, pluggable backend, 96.6% R@5 raw on LongMemEval — zero API calls."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "react",
+      "docker",
+      "postgres"
+    ],
+    "one": "MemPalace",
+    "install_hints": [
+      "pip install mempalace",
+      "docker run -i --rm -v mempalace-data:/data mempalace",
+      "docker run --rm -v mempalace-data:/data -v /path/to/project:/work mempalace mine /work"
+    ]
+  },
+  "compact": {
+    "id": "mempalace",
+    "name": "mempalace",
+    "cat": 6,
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "MemPalace",
+    "alt": [],
+    "doc": "human/fichas/mempalace.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "mempalace",
+    "cat": 6,
+    "desc": "Local-first AI memory. Verbatim storage, pluggable backend, 96.6% R@5 raw on LongMemEval — zero API calls.",
+    "stack": "python, typescript, react, docker, postgres",
+    "choose_if": "quieres mempalace",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "mem0",
+      "agentmemory",
+      "loguru"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/MemPalace/mempalace.git",
+    "doc": "human/fichas/mempalace.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:36.122495+00:00"
+  }
+}

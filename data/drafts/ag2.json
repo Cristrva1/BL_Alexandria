@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:55:55.579912+00:00",
+  "profile": {
+    "id": "ag2",
+    "name": "ag2",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ag2",
+    "repo_url": "https://github.com/ag2ai/ag2.git",
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "intro": {
+      "title": "<a name=\"readme-top\"></a>",
+      "desc": "AG2 was evolved from AutoGen. Fully open-sourced. We invite collaborators from all organizations to contribute."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "react",
+      "docker"
+    ],
+    "one": "AG2 was evolved from AutoGen. Fully open-sourced. We invite collaborators from all organizations to contribute.",
+    "install_hints": [
+      "pip install ag2[openai]",
+      "pip install 'ag2[openai]'",
+      "pip install prek"
+    ]
+  },
+  "compact": {
+    "id": "ag2",
+    "name": "ag2",
+    "cat": 3,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "AG2 was evolved from AutoGen. Fully open-sourced. We invite collaborators from all organizations to contribute.",
+    "alt": [],
+    "doc": "human/fichas/ag2.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "ag2",
+    "cat": 3,
+    "desc": "AG2 was evolved from AutoGen. Fully open-sourced. We invite collaborators from all organizations to contribute.",
+    "stack": "python, typescript, react, docker",
+    "choose_if": "quieres ag2 was evolved from autogen. fully open-sourced. we invite collaborators from a",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "crewai"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/ag2ai/ag2.git",
+    "doc": "human/fichas/ag2.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:55:55.579709+00:00"
+  }
+}

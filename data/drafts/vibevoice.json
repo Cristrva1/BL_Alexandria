@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-06-25T05:00:43.051789+00:00",
+  "profile": {
+    "id": "vibevoice",
+    "name": "VibeVoice",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\VibeVoice",
+    "repo_url": "https://github.com/microsoft/VibeVoice.git",
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "🎙️ VibeVoice: Open-Source Frontier Voice AI."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "postgres"
+    ],
+    "one": "🎙️ VibeVoice: Open-Source Frontier Voice AI",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "vibevoice",
+    "name": "VibeVoice",
+    "cat": 12,
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "multimedia",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "🎙️ VibeVoice: Open-Source Frontier Voice AI",
+    "alt": [],
+    "doc": "human/fichas/vibevoice.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "VibeVoice",
+    "cat": 12,
+    "desc": "🎙️ VibeVoice: Open-Source Frontier Voice AI.",
+    "stack": "python, typescript, postgres",
+    "choose_if": "quieres 🎙️ vibevoice: open-source frontier voice ai",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "whisper",
+      "faster-whisper"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/microsoft/VibeVoice.git",
+    "doc": "human/fichas/vibevoice.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:43.051558+00:00"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-06-25T04:56:32.174106+00:00",
+  "profile": {
+    "id": "claude-plugins-official",
+    "name": "claude-plugins-official",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\claude-plugins-official",
+    "repo_url": "https://github.com/anthropics/claude-plugins-official.git",
+    "manifests": [],
+    "intro": {
+      "title": "Claude Code Plugins Directory",
+      "desc": "A curated directory of high-quality plugins for Claude Code."
+    },
+    "features": [],
+    "stack": [
+      "typescript"
+    ],
+    "one": "Claude Code Plugins Directory",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "claude-plugins-official",
+    "name": "claude-plugins-official",
+    "cat": 5,
+    "role": "platform",
+    "exec": "cloud",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "typescript"
+    ],
+    "one": "Claude Code Plugins Directory",
+    "alt": [],
+    "doc": "human/fichas/claude-plugins-official.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "claude-plugins-official",
+    "cat": 5,
+    "desc": "A curated directory of high-quality plugins for Claude Code.",
+    "stack": "typescript",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+      "n8n-skills",
+      "mcp",
+      "servers"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/anthropics/claude-plugins-official.git",
+    "doc": "human/fichas/claude-plugins-official.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:32.173903+00:00"
+  }
+}

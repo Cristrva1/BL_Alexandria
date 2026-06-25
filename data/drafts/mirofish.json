@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-06-25T04:58:39.444625+00:00",
+  "profile": {
+    "id": "mirofish",
+    "name": "MiroFish",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\MiroFish",
+    "repo_url": "https://github.com/666ghj/MiroFish.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "简洁通用的群体智能引擎，预测万物."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "简洁通用的群体智能引擎，预测万物",
+    "install_hints": [
+      "docker compose up -d"
+    ]
+  },
+  "compact": {
+    "id": "mirofish",
+    "name": "MiroFish",
+    "cat": 9,
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "简洁通用的群体智能引擎，预测万物",
+    "alt": [],
+    "doc": "human/fichas/mirofish.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "MiroFish",
+    "cat": 9,
+    "desc": "简洁通用的群体智能引擎，预测万物.",
+    "stack": "javascript/typescript, python, typescript, javascript, docker, postgres",
+    "choose_if": "quieres 简洁通用的群体智能引擎，预测万物",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/666ghj/MiroFish.git",
+    "doc": "human/fichas/mirofish.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:39.444417+00:00"
+  }
+}

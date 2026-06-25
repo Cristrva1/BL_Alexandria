@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-06-25T04:56:20.523014+00:00",
+  "profile": {
+    "id": "awesome-langgraph",
+    "name": "awesome-LangGraph",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\awesome-LangGraph",
+    "repo_url": "https://github.com/vonzosten/awesome-LangGraph.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "<!--lint disable awesome-badge awesome-list-item double-link no-heading-punctuation table-pipe-alignment table-cell-padd",
+      "desc": "🦜🕸️ Awesome LangGraph & LangChain Ecosystem ![Awesome](https://awesome.re/badge.svg) ![Last Updated](https://img.shields.io/github/last-commit/von-development/awesome-LangGraph)."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres",
+      "fastapi",
+      "langchain"
+    ],
+    "one": "🦜🕸️ Awesome LangGraph & LangChain Ecosystem ![Awesome](https://awesome.re/badge.svg) ![Last Updated](https://img.shields.io/github/last-commit/von-development/awesome-LangGraph)",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "awesome-langgraph",
+    "name": "awesome-LangGraph",
+    "cat": 3,
+    "role": "directory",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "fastapi",
+      "javascript",
+      "javascript-typescript",
+      "langchain",
+      "postgres",
+      "python"
+    ],
+    "one": "🦜🕸️ Awesome LangGraph & LangChain Ecosystem ![Awesome](https://awesome.re/badge.svg) ![Last Updated](https://img.shields.io/github/last-commit/von-development/awesome-LangGraph)",
+    "alt": [],
+    "doc": "human/fichas/awesome-langgraph.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "awesome-LangGraph",
+    "cat": 3,
+    "desc": "🦜🕸️ Awesome LangGraph & LangChain Ecosystem !Awesome !Last Updated.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres, fastapi, langchain",
+    "choose_if": "quieres <!--lint disable awesome-badge awesome-list-item double-link no-heading-punctuation table-",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/vonzosten/awesome-LangGraph.git",
+    "doc": "human/fichas/awesome-langgraph.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:20.522806+00:00"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-06-25T04:58:19.595281+00:00",
+  "profile": {
+    "id": "lossless-cut",
+    "name": "lossless-cut",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\lossless-cut",
+    "repo_url": "https://github.com/mifi/lossless-cut.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "The swiss army knife of lossless video/audio editing."
+    },
+    "features": [
+      "Lossless cutting of most video and audio formats",
+      "[Smart cut](https://github.com/mifi/lossless-cut/issues/126) (experimental)",
+      "Losslessly cut out parts of video/audio (for cutting away commercials etc.)",
+      "Losslessly rearrange the order of video/audio segments",
+      "Lossless merge/concatenation of arbitrary files (with identical codecs parameters, e.g. from the same camera)",
+      "Lossless multi track/stream editing"
+    ],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "postgres"
+    ],
+    "one": "The swiss army knife of lossless video/audio editing",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "lossless-cut",
+    "name": "lossless-cut",
+    "cat": 12,
+    "role": "app",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "multimedia",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "The swiss army knife of lossless video/audio editing",
+    "alt": [],
+    "doc": "human/fichas/lossless-cut.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "lossless-cut",
+    "cat": 12,
+    "desc": "The swiss army knife of lossless video/audio editing.",
+    "stack": "javascript/typescript, python, typescript, javascript, postgres",
+    "choose_if": "quieres the swiss army knife of lossless video/audio editing",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "whisper",
+      "faster-whisper"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/mifi/lossless-cut.git",
+    "doc": "human/fichas/lossless-cut.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:19.595084+00:00"
+  }
+}

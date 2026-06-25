@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-06-25T05:00:10.043412+00:00",
+  "profile": {
+    "id": "skillspector",
+    "name": "SkillSpector",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\SkillSpector",
+    "repo_url": "https://github.com/NVIDIA/SkillSpector.git",
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "uv.lock",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "SkillSpector",
+      "desc": "Security scanner for AI agent skills.** Detect vulnerabilities, malicious patterns, and security risks before installing agent skills."
+    },
+    "features": [
+      "**Multi-format input**: Scan Git repos, URLs, zip files, directories, or single files",
+      "**Two-stage analysis**: Fast static analysis + optional LLM semantic evaluation",
+      "**Multiple output formats**: Terminal, JSON, Markdown, and SARIF reports",
+      "**Risk scoring**: 0-100 score with severity labels and clear recommendations"
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker"
+    ],
+    "one": "SkillSpector",
+    "install_hints": [
+      "git clone https://github.com/NVIDIA/skillspector.git",
+      "docker run --rm -v \"$PWD:/scan\" skillspector scan ./my-skill/ --no-llm",
+      "docker run --rm \\"
+    ]
+  },
+  "compact": {
+    "id": "skillspector",
+    "name": "SkillSpector",
+    "cat": 2,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "python",
+      "skills",
+      "typescript"
+    ],
+    "one": "SkillSpector",
+    "alt": [],
+    "doc": "human/fichas/skillspector.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "SkillSpector",
+    "cat": 2,
+    "desc": "Security scanner for AI agent skills.** Detect vulnerabilities, malicious patterns, and security risks before installing agent skills.",
+    "stack": "python, typescript, javascript, docker",
+    "choose_if": "quieres skillspector",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/NVIDIA/SkillSpector.git",
+    "doc": "human/fichas/skillspector.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:10.043142+00:00"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-06-25T04:57:10.065061+00:00",
+  "profile": {
+    "id": "echarts",
+    "name": "echarts",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\echarts",
+    "repo_url": "https://github.com/apache/echarts.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "Apache ECharts",
+      "desc": "Apache ECharts is a free, powerful charting and visualization library offering easy ways to add intuitive, interactive, and highly customizable charts to your commercial products. It is written in pure JavaScript and based on <a href=\"https://github.com/ecomfe/zrender\">zrender</a>, which is a whole new lightweight canvas library."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript"
+    ],
+    "one": "Apache ECharts",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "echarts",
+    "name": "echarts",
+    "cat": 7,
+    "role": "library",
+    "exec": "local",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "typescript"
+    ],
+    "one": "Apache ECharts",
+    "alt": [],
+    "doc": "human/fichas/echarts.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "echarts",
+    "cat": 7,
+    "desc": "Apache ECharts is a free, powerful charting and visualization library offering easy ways to add intuitive, interactive, and highly customizable charts to your commercial products. It is written in pure JavaScript and based on zrender , which is a whole new lightweight canvas library.",
+    "stack": "javascript/typescript, typescript, javascript",
+    "choose_if": "quieres apache echarts",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "codegraph",
+      "gitnexus",
+      "deepseek-coder"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/apache/echarts.git",
+    "doc": "human/fichas/echarts.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:10.064855+00:00"
+  }
+}

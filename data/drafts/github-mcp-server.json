@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-25T04:57:28.185328+00:00",
+  "profile": {
+    "id": "github-mcp-server",
+    "name": "github-mcp-server",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\github-mcp-server",
+    "repo_url": "https://github.com/github/github-mcp-server.git",
+    "manifests": [
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "GitHub MCP Server",
+      "desc": "The GitHub MCP Server connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate workflows. All through natural language interactions."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker"
+    ],
+    "one": "GitHub MCP Server",
+    "install_hints": [
+      "claude mcp add github -e GITHUB_PERSONAL_ACCESS_TOKEN=$GITHUB_PAT -- docker run -i --rm -e GITHUB_PERSONAL_ACCESS_TOKEN ghcr.io/github/githu",
+      "Example (color output requires a TTY; use `docker run -t` (or `-it`) when running in Docker):",
+      "docker run -it --rm ghcr.io/github/github-mcp-server tool-search \"issue\" --max-results 5"
+    ]
+  },
+  "compact": {
+    "id": "github-mcp-server",
+    "name": "github-mcp-server",
+    "cat": 5,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "mcp",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "GitHub MCP Server",
+    "alt": [],
+    "doc": "human/fichas/github-mcp-server.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "github-mcp-server",
+    "cat": 5,
+    "desc": "The GitHub MCP Server connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate workflows. All through natural language interactions.",
+    "stack": "python, typescript, javascript, react, docker",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+      "claude-plugins-official",
+      "n8n-skills",
+      "mcp"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/github/github-mcp-server.git",
+    "doc": "human/fichas/github-mcp-server.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:28.185067+00:00"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-06-25T04:58:26.205129+00:00",
+  "profile": {
+    "id": "markitdown",
+    "name": "markitdown",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\markitdown",
+    "repo_url": "https://github.com/microsoft/markitdown.git",
+    "manifests": [
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "MarkItDown",
+      "desc": "MarkItDown performs I/O with the privileges of the current process. Like open() or requests.get(), it will access resources that the process itself can access. Sanitize your inputs in untrusted environments, and call the narrowest `convert_*` function needed for your use case (e.g., `convert_stream()`, or `convert_local()`). See the [Security Considerations](#security-considerations) section of the documentation for ."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "docker",
+      "postgres"
+    ],
+    "one": "MarkItDown",
+    "install_hints": [
+      "# NOTE: Be sure to use 'uv pip install' rather than just 'pip install' to install packages in this virtual environment",
+      "To install MarkItDown, use pip: `pip install 'markitdown[all]'`. Alternatively, you can install it from the source:",
+      "git clone git@github.com:microsoft/markitdown.git"
+    ]
+  },
+  "compact": {
+    "id": "markitdown",
+    "name": "markitdown",
+    "cat": 13,
+    "role": "directory",
+    "exec": "local",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "MarkItDown",
+    "alt": [],
+    "doc": "human/fichas/markitdown.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "markitdown",
+    "cat": 13,
+    "desc": "MarkItDown performs I/O with the privileges of the current process. Like open() or requests.get(), it will access resources that the process itself can access. Sanitize your inputs in untrusted environments, and call the narrowest `convert_*` function needed for your use case (e.g., `convert_stream()`, or `convert_local()`). See the Security Considerations section of the documentation for .",
+    "stack": "python, typescript, docker, postgres",
+    "choose_if": "quieres markitdown",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "ppt-master",
+      "revealjs",
+      "reveal.js"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/microsoft/markitdown.git",
+    "doc": "human/fichas/markitdown.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:26.204921+00:00"
+  }
+}

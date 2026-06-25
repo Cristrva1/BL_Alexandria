@@ -1,6 +1,6 @@
 # n8n
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos.
+n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.
 
 ## Que problema resuelve
 
-quieres el motor central de automatización
+quieres n8n - secure workflow automation for technical teams
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para automation. Stack declarado: Node.js, Docker.
+Aporta valor en `platform` para automation, docker, javascript, javascript-typescript, langchain, python, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, docker, langchain.
 
 ## Cuando usarlo
 
-quieres el motor central de automatización
+quieres n8n - secure workflow automation for technical teams
 
 ## Cuando NO usarlo
 
-buscas algo minimalista.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, python, typescript, javascript, docker, langchain
 
 ## Instalacion detectada
 
@@ -36,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `n8n-mcp`
-- `n8n-skills`
+- `twenty-main`
 - `evolution-api`
+- `whatsapp-agentkit`
 
 ## Contra que compite
 
@@ -50,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con n8n-mcp, n8n-skills, evolution-api cuando el flujo necesite mas de una pieza.
+Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres el motor central de automatización. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres n8n - secure workflow automation for technical teams. No debe instalarse por inercia.

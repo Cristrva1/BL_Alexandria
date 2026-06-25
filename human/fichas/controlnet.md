@@ -1,6 +1,6 @@
 # ControlNet
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ DIFERIR
 
 ## Para que sirve realmente
 
-método y modelos para condicionar la generación text-to-image con señales externas como poses, bordes, profundidad o mapas de segmentación, fijando la estructura del resultado.
+Below is ControlNet 1.0.
 
 ## Que problema resuelve
 
-necesitas control estructural
+quieres news: a nightly version of controlnet 1.1 is released!
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para image. Stack declarado: Python, difusión, GPU.
+Aporta valor en `library` para python, typescript. Stack declarado: python, typescript.
 
 ## Cuando usarlo
 
-necesitas control estructural
+quieres news: a nightly version of controlnet 1.1 is released!
 
 ## Cuando NO usarlo
 
-ya trabajas en SD WebUI ([sd-webui-controlnet](#-sd-webui-controlnet)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
 deferred
+
+## Stack / tecnologia detectada
+
+python, typescript
 
 ## Instalacion detectada
 
@@ -36,12 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `diffusers`
+- `litellm`
+- `cosmos`
 - `comfyui`
 
 ## Contra que compite
 
-- `sd-webui-controlnet`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -49,8 +54,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con diffusers, comfyui cuando el flujo necesite mas de una pieza.
+Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si necesitas control estructural. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres news: a nightly version of controlnet 1.1 is released!. No debe instalarse por inercia.

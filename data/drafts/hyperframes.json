@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-06-25T04:57:53.207234+00:00",
+  "profile": {
+    "id": "hyperframes",
+    "name": "hyperframes",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\hyperframes",
+    "repo_url": "https://github.com/heygen-com/hyperframes.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos. Use it locally with the CLI, from AI coding agents with skills, or as the rendering core behind hosted authoring workflows."
+    },
+    "features": [
+      "Product launch videos and feature announcements",
+      "PR walkthroughs with animated code diffs, narration, and captions",
+      "Data visualizations, chart races, and map animations",
+      "Social videos with kinetic captions, overlays, and music",
+      "Docs-to-video, PDF-to-video, and website-to-video explainers",
+      "Reusable motion graphics for automated content pipelines"
+    ],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker"
+    ],
+    "one": "HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos. Use it locally with the CLI, from AI coding agents with skills, or as the rendering core behind hosted authoring workflows.",
+    "install_hints": [
+      "GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/heygen-com/hyperframes.git"
+    ]
+  },
+  "compact": {
+    "id": "hyperframes",
+    "name": "hyperframes",
+    "cat": 3,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "multimedia",
+      "python",
+      "react"
+    ],
+    "one": "HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos. Use it locally with the CLI, from AI coding agents with skills, or as the rendering core behind hosted authoring workflows.",
+    "alt": [],
+    "doc": "human/fichas/hyperframes.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "hyperframes",
+    "cat": 3,
+    "desc": "HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos. Use it locally with the CLI, from AI coding agents with skills, or as the rendering core behind hosted authoring workflows.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, docker",
+    "choose_if": "quieres hyperframes is an open-source framework for turning html, css, media, and seekab",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/heygen-com/hyperframes.git",
+    "doc": "human/fichas/hyperframes.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:53.207033+00:00"
+  }
+}

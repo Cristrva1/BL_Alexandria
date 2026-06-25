@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:58:11.382434+00:00",
+  "profile": {
+    "id": "llm-council",
+    "name": "llm-council",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\llm-council",
+    "repo_url": "https://github.com/karpathy/llm-council.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "LLM Council",
+      "desc": "The idea of this repo is that instead of asking a question to your favorite LLM provider (e.g. OpenAI GPT 5.1, Google Gemini 3.0 Pro, Anthropic Claude Sonnet 4.5, xAI Grok 4, eg.c), you can group them into your \"LLM Council\". This repo is a simple, local web app that essentially looks like ChatGPT except it uses OpenRouter to send your query to multiple LLMs, it then asks them to review and rank each other's work, an."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "postgres",
+      "fastapi"
+    ],
+    "one": "LLM Council",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "llm-council",
+    "name": "llm-council",
+    "cat": 2,
+    "role": "platform",
+    "exec": "cloud",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "fastapi",
+      "javascript",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "LLM Council",
+    "alt": [],
+    "doc": "human/fichas/llm-council.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "llm-council",
+    "cat": 2,
+    "desc": "The idea of this repo is that instead of asking a question to your favorite LLM provider (e.g. OpenAI GPT 5.1, Google Gemini 3.0 Pro, Anthropic Claude Sonnet 4.5, xAI Grok 4, eg.c), you can group them into your \"LLM Council\". This repo is a simple, local web app that essentially looks like ChatGPT except it uses OpenRouter to send your query to multiple LLMs, it then asks them to review and rank each other's work, an.",
+    "stack": "python, typescript, javascript, react, postgres, fastapi",
+    "choose_if": "quieres llm council",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/karpathy/llm-council.git",
+    "doc": "human/fichas/llm-council.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:11.382219+00:00"
+  }
+}

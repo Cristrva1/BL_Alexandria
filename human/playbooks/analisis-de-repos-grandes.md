@@ -1,6 +1,6 @@
 # Análisis de repos grandes
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Objetivo
 
@@ -8,10 +8,10 @@ que un asistente entienda una base de código enorme barato.
 
 ## Stack sugerido
 
-- `codegraph`: CLI que indexa tu código y da a los asistentes de IA inteligencia semántica 100% local, permitiéndoles entender la estructura y el flujo de un repo sin leer archivo por archivo ni gastar llamadas a herramientas.
-- `graphify`: generador de grafos de conocimiento para proyectos locales que mapea código, PDFs, imágenes y video en diagramas interactivos, revelando cómo se conectan las piezas de un sistema.
-- `graphrag`: sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud.
-- `gitnexus`: herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva.
+- `codegraph`: Already installed? Run `codegraph upgrade` to update in place.
+- `graphify`: 🇺🇸 English | 🇨🇳 简体中文 | 🇯🇵 日本語 | 🇰🇷 한국어 | 🇩🇪 Deutsch | 🇫🇷 Français | 🇪🇸 Español | 🇮🇳 <a href="docs/translatio.
+- `graphrag`: 👉 Microsoft Research Blog Post 👉 Read the docs 👉 GraphRAG Arxiv.
+- `gitnexus`: ⚠️ Important Notice:** GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name on Pump.fun or any other platform is **not affiliated with, endorsed by, or created by** this project or its maintainers. Do not purchase any cryptocurrency claiming association with GitNexus.
 
 ## Como se conecta
 

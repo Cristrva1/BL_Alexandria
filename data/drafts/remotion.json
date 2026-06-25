@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-06-25T04:59:46.965133+00:00",
+  "profile": {
+    "id": "remotion",
+    "name": "remotion",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\remotion",
+    "repo_url": "https://github.com/remotion-dev/remotion.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "Remotion is a framework for **creating videos programmatically using React.**."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react"
+    ],
+    "one": "Remotion is a framework for **creating videos programmatically using React.**",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "remotion",
+    "name": "remotion",
+    "cat": 9,
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "multimedia",
+      "react",
+      "typescript"
+    ],
+    "one": "Remotion is a framework for **creating videos programmatically using React.**",
+    "alt": [],
+    "doc": "human/fichas/remotion.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "remotion",
+    "cat": 9,
+    "desc": "Remotion is a framework for **creating videos programmatically using React.**.",
+    "stack": "javascript/typescript, typescript, javascript, react",
+    "choose_if": "quieres remotion is a framework for **creating videos programmatically using react.**",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/remotion-dev/remotion.git",
+    "doc": "human/fichas/remotion.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:46.964886+00:00"
+  }
+}

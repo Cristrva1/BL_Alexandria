@@ -1,6 +1,6 @@
 # scrapely
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales.
+.. image:: https://api.travis-ci.org/scrapy/scrapely.svg?branch=master :target: https://travis-ci.org/scrapy/scrapely.
 
 ## Que problema resuelve
 
-prefieres enseñar por ejemplos
+quieres ========
 
 ## Por que tiene valor
 
-Aporta valor en `library` para scraping. Stack declarado: Python.
+Aporta valor en `library` para javascript, python, scraping, typescript. Stack declarado: python, typescript, javascript.
 
 ## Cuando usarlo
 
-prefieres enseñar por ejemplos
+quieres ========
 
 ## Cuando NO usarlo
 
-necesitas un crawler completo.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript
 
 ## Instalacion detectada
 
@@ -36,6 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
+- `firecrawl`
+- `crawl4ai`
 - `scrapy`
 
 ## Contra que compite
@@ -48,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con scrapy cuando el flujo necesite mas de una pieza.
+Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si prefieres enseñar por ejemplos. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres ========. No debe instalarse por inercia.

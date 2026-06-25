@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-06-25T04:56:42.049851+00:00",
+  "profile": {
+    "id": "controlnet",
+    "name": "ControlNet",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ControlNet",
+    "repo_url": "https://github.com/lllyasviel/ControlNet.git",
+    "manifests": [],
+    "intro": {
+      "title": "News: A nightly version of ControlNet 1.1 is released!",
+      "desc": "Below is ControlNet 1.0."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript"
+    ],
+    "one": "News: A nightly version of ControlNet 1.1 is released!",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "controlnet",
+    "name": "ControlNet",
+    "cat": 11,
+    "role": "library",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "python",
+      "typescript"
+    ],
+    "one": "News: A nightly version of ControlNet 1.1 is released!",
+    "alt": [],
+    "doc": "human/fichas/controlnet.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "ControlNet",
+    "cat": 11,
+    "desc": "Below is ControlNet 1.0.",
+    "stack": "python, typescript",
+    "choose_if": "quieres news: a nightly version of controlnet 1.1 is released!",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "comfyui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/lllyasviel/ControlNet.git",
+    "doc": "human/fichas/controlnet.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:42.049638+00:00"
+  }
+}

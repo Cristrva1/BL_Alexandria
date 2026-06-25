@@ -1,34 +1,38 @@
 # whisper
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-modelo de reconocimiento de voz y traducción de audio multilingüe de OpenAI, estándar de la industria que transcribe casi cualquier idioma con un solo modelo.
+Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification.
 
 ## Que problema resuelve
 
-quieres la referencia
+quieres whisper
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para media, audio. Stack declarado: Python 3.9+, PyTorch.
+Aporta valor en `library` para multimedia, postgres, python, typescript, whisper. Stack declarado: python, typescript, postgres, whisper.
 
 ## Cuando usarlo
 
-quieres la referencia
+quieres whisper
 
 ## Cuando NO usarlo
 
-necesitas más velocidad ([faster-whisper](#-faster-whisper)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
-reference_only
+deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, postgres, whisper
 
 ## Instalacion detectada
 
@@ -36,20 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
+- `fluxer`
+- `faster-whisper`
 - `whisperx`
 
 ## Contra que compite
 
-- `faster-whisper`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con whisperx cuando el flujo necesite mas de una pieza.
+Combinar con fluxer, faster-whisper, whisperx cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres la referencia. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres whisper. No debe instalarse por inercia.

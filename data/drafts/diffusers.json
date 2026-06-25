@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-06-25T04:57:05.107153+00:00",
+  "profile": {
+    "id": "diffusers",
+    "name": "diffusers",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\diffusers",
+    "repo_url": "https://github.com/huggingface/diffusers.git",
+    "manifests": [
+      "pyproject.toml",
+      "setup.py"
+    ],
+    "intro": {
+      "title": "Copyright 2022 - The HuggingFace Team. All rights reserved.",
+      "desc": "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "postgres"
+    ],
+    "one": "Copyright 2022 - The HuggingFace Team. All rights reserved.",
+    "install_hints": [
+      "pip install --upgrade diffusers[torch]"
+    ]
+  },
+  "compact": {
+    "id": "diffusers",
+    "name": "diffusers",
+    "cat": 11,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "Copyright 2022 - The HuggingFace Team. All rights reserved.",
+    "alt": [],
+    "doc": "human/fichas/diffusers.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "diffusers",
+    "cat": 11,
+    "desc": "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at.",
+    "stack": "python, typescript, postgres",
+    "choose_if": "quieres copyright 2022 - the huggingface team. all rights reserved.",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "comfyui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/huggingface/diffusers.git",
+    "doc": "human/fichas/diffusers.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:05.106904+00:00"
+  }
+}

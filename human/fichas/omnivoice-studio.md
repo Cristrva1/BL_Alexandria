@@ -1,34 +1,38 @@
 # OmniVoice-Studio
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-suite de voz de escritorio open-source planteada como alternativa a ElevenLabs, con dictado en tiempo real, clonación zero-shot y doblaje de video en hasta 646 idiomas, todo local.
+OmniVoice Studio is in active beta.** Things may break between releases. For the latest features and fixes, clone the repo and run from source rather than using pre-built installers. Bug reports and PRs are very welcome — open an issue or join Discord.
 
 ## Que problema resuelve
 
-quieres suite de voz completa local
+quieres > [!warning]
 
 ## Por que tiene valor
 
-Aporta valor en `app` para media, audio, video. Stack declarado: desktop/Python.
+Aporta valor en `platform` para docker, fastapi, javascript, multimedia, python, react, typescript, whisper. Stack declarado: python, typescript, javascript, react, docker, fastapi, whisper.
 
 ## Cuando usarlo
 
-quieres suite de voz completa local
+quieres > [!warning]
 
 ## Cuando NO usarlo
 
-solo necesitas TTS simple ([TTS](#-tts)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
-reference_only
+deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, react, docker, fastapi, whisper
 
 ## Instalacion detectada
 
@@ -36,20 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `whisperx`
+- `fluxer`
+- `whisper`
+- `faster-whisper`
 
 ## Contra que compite
 
-- `tts`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con whisperx cuando el flujo necesite mas de una pieza.
+Combinar con fluxer, whisper, faster-whisper cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres suite de voz completa local. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres > [!warning]. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # 🤖 AGENTS.md — Punto de entrada para agentes de IA
 
-Esta biblioteca contiene **156 repositorios** de IA y automatización, ya analizados, comparados y clasificados. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Léelo entero (es corto); luego abre solo lo que necesites.
+Esta biblioteca contiene **~177 repositorios curados** (171+ detectados localmente) de IA y automatización, ya analizados, comparados y clasificados con flujo integral (analyze + enrich). Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Léelo entero (es corto); luego abre solo lo que necesites.
 
 ---
 
@@ -15,7 +15,7 @@ Esta biblioteca contiene **156 repositorios** de IA y automatización, ya analiz
 3. **Desempata** entre repos parecidos con el campo `alt` (alternativas): si ya elegiste uno, **descarta sus `alt`** — cumplen la misma función, no necesitas dos.
 4. **Combina** con `recipes` (stacks completos ya probados) si el proyecto necesita un flujo end-to-end, no una pieza suelta.
 5. **Considera la herramienta del usuario** (Antigravity, Codex, Claude Code, Grok, Deepseek) con `model_guidance` y el campo opcional `agent_tools`. Ver regla abajo.
-6. **Solo para los finalistas (<8 repos)**: abre `INDICE_IA.detalle.json` por `id`, o la ficha humana en el campo `doc` (`guia/NN-*.md#ancla`). Ahí está stack, instalación, "elige si / evita si" y "combina con".
+6. **Solo para los finalistas (<8 repos)**: abre `INDICE_IA.detalle.json` por `id`, o la ficha humana en el campo `doc` (`human/fichas/<id>.md`). Ahí está stack, instalación, "elige si / evita si" y "combina con".
 
 > Coste: pasos 1-5 ≈ un solo archivo (~20k tokens). No leas `Guia.md` (es el documento monolítico viejo) ni las 13 fichas completas salvo que hayas reducido la lista.
 
@@ -30,9 +30,9 @@ Esta biblioteca contiene **156 repositorios** de IA y automatización, ya analiz
 | **`INDICE_IA.detalle.json`** | Detalle por `id`: desc completa, stack, choose_if, avoid_if, combines_with | Solo para finalistas |
 | **`ai_index/SUPERGUIAS/*.md`** | Superguías generadas por proyecto: finalistas, por qué, cómo, orden, global/local/Docker/referencia | Primero si ya hay una descripción de proyecto |
 | **`ai_index/CONTEXT_PACKS/latest.md`** | Alias de la última superguía generada | Para continuar la última recomendación |
-| **`guia/NN-*.md`** | Ficha **humana** completa por categoría (13 archivos) | Lectura humana o detalle máximo |
-| **`guia/README.md`** | Mapa de categorías + leyenda + recetas (versión humana) | Navegación humana |
-| **`Catalogo.md`** | Tabla plana de los 156 repos (instalación + API) | Referencia rápida tabular |
+| `human/categorias/NN-*.md` | Ficha **humana** completa por categoría (13 archivos) | Lectura humana o detalle máximo |
+| `human/README.md` | Mapa de categorías + leyenda + recetas (versión humana) | Navegación humana |
+| `Catalogo.md` | Tabla plana de los repos curados (instalación + API) | Referencia rápida tabular |
 
 ---
 
@@ -55,23 +55,23 @@ Separa **dos** decisiones que se confunden:
 
 ---
 
-## 📂 Categorías (156 repos)
+## 📂 Categorías (repos curados con datos completos)
 
 | # | Categoría | Repos | Archivo |
 |---|---|---|---|
-| 1 | Automatización, Mensajería & CRM | 12 | `guia/01-automatizacion-mensajeria-crm.md` |
-| 2 | Skills, Prompts & Guías de Agente | 21 | `guia/02-skills-prompts-guias-de-agente.md` |
-| 3 | Frameworks & Orquestación de Agentes | 18 | `guia/03-frameworks-orquestacion-de-agentes.md` |
-| 4 | Scraping, Búsqueda & Research Web | 14 | `guia/04-scraping-busqueda-research-web.md` |
-| 5 | MCP & Conectividad | 7 | `guia/05-mcp-conectividad.md` |
-| 6 | Memoria, LLM Ops & Observabilidad | 10 | `guia/06-memoria-llm-ops-observabilidad.md` |
-| 7 | Inteligencia de Código, Datos & Entrenamiento | 13 | `guia/07-inteligencia-de-codigo-datos-entrenamiento.md` |
-| 8 | Workspaces de IA Local & Notebooks | 5 | `guia/08-workspaces-de-ia-local-notebooks.md` |
-| 9 | Diseño, UI & Frontend | 15 | `guia/09-diseno-ui-frontend.md` |
-| 10 | Analítica & Visualización | 7 | `guia/10-analitica-visualizacion.md` |
-| 11 | Generación de Imagen & Visión | 15 | `guia/11-generacion-de-imagen-vision.md` |
-| 12 | Audio, Voz & Video | 15 | `guia/12-audio-voz-video.md` |
-| 13 | Documentos & Presentaciones | 4 | `guia/13-documentos-presentaciones.md` |
+| 1 | Automatización, Mensajería & CRM | 12 | `human/categorias/01-automatizaci-n-mensajer-a-crm.md` |
+| 2 | Skills, Prompts & Guías de Agente | 21 | `human/categorias/02-skills-prompts-gu-as-de-agente.md` |
+| 3 | Frameworks & Orquestación de Agentes | 18 | `human/categorias/03-frameworks-orquestaci-n-de-agentes.md` |
+| 4 | Scraping, Búsqueda & Research Web | 14 | `human/categorias/04-scraping-b-squeda-research-web.md` |
+| 5 | MCP & Conectividad | 7 | `human/categorias/05-mcp-conectividad.md` |
+| 6 | Memoria, LLM Ops & Observabilidad | 10 | `human/categorias/06-memoria-llm-ops-observabilidad.md` |
+| 7 | Inteligencia de Código, Datos & Entrenamiento | 13 | `human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md` |
+| 8 | Workspaces de IA Local & Notebooks | 5 | `human/categorias/08-workspaces-de-ia-local-notebooks.md` |
+| 9 | Diseño, UI & Frontend | 15 | `human/categorias/09-dise-o-ui-frontend.md` |
+| 10 | Analítica & Visualización | 7 | `human/categorias/10-anal-tica-visualizaci-n.md` |
+| 11 | Generación de Imagen & Visión | 15 | `human/categorias/11-generaci-n-de-imagen-visi-n.md` |
+| 12 | Audio, Voz & Video | 15 | `human/categorias/12-audio-voz-video.md` |
+| 13 | Documentos & Presentaciones | 4 | `human/categorias/13-documentos-presentaciones.md` |
 
 ---
 
@@ -102,12 +102,43 @@ Cuando el usuario describe un **producto** (no una pieza), busca primero la rece
 
 ---
 
-## 🔧 Mantenimiento (para humanos)
+## 🔧 Mantenimiento (para humanos) — flujo integral al agregar repos
 
-La **fuente de verdad** son los `guia/NN-*.md`. Para enriquecer: edita la ficha en su `.md` (respeta el formato de campos `**Qué es:** / **Stack:** / **Elige si:** …`) y regenera los índices:
+La **fuente de verdad** para los datos curados son `INDICE_IA.json` (compacto) + `INDICE_IA.detalle.json` (detalle por repo con desc, stack, choose_if, etc.).
 
-```bash
-python tools/regenerar_indice.py
+Los `human/*`, `Catalogo.md`, `Guia.md` y `ai_index/REPOS.*` se generan automáticamente.
+
+**Flujo recomendado cuando agregas repos nuevos a la biblioteca (../Repositorios_Prueba):**
+
+1. Clona o copia el repo en la carpeta de la biblioteca.
+2. Descubre:
+   ```powershell
+   uv run repo-intelligence discover
+   ```
+3. **Analiza en profundidad** (extrae código, README limpio, estructura):
+   ```powershell
+   uv run repo-intelligence analyze --new
+   # o para uno: uv run repo-intelligence analyze --id <repo-id> --force
+   ```
+4. **Genera borradores ricos** (inferencia automática de categoría, rol, stack técnico, desc teórica, choose/avoid, combines...):
+   ```powershell
+   uv run repo-intelligence enrich --new --auto-merge
+   ```
+   - Crea `data/drafts/<id>.json` (revisables).
+   - Con `--auto-merge` los incorpora a los INDICE_IA* (pasan a ser "curados" con datos completos).
+5. Revisa/edita los drafts o las entradas en los JSON si quieres ajustar la curaduría.
+6. Regenera **todo** (catálogos, fichas completas, Guia, etc.):
+   ```powershell
+   uv run repo-intelligence guide build
+   ```
+
+Esto hace que agregar un repo sea **mucho más integral y completo**: obtiene stack técnico real, descripciones teóricas de valor, inferencia de metadatos y propagación automática a todas las salidas.
+
+Comando todo-en-uno aproximado:
+```powershell
+uv run repo-intelligence discover && uv run repo-intelligence analyze --new && uv run repo-intelligence enrich --new --auto-merge && uv run repo-intelligence guide build
 ```
 
-Eso reconstruye `INDICE_IA.json` y `INDICE_IA.detalle.json` desde los `.md`.
+Nota: `human/*.md` y similares se sobrescriben en cada `guide build`.
+
+(Para la lógica de inferencia ver `src/repo_intelligence/analysis/curation.py` — keywords por categoría + extracción de README + manifests.)

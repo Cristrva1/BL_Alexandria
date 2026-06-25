@@ -1,6 +1,6 @@
 # playwright-cli
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto.
+Playwright CLI with SKILLS.
 
 ## Que problema resuelve
 
-tu agente vive en CLI
+quieres playwright-cli
 
 ## Por que tiene valor
 
-Aporta valor en `skill` para scraping, browser, agents, skills, context. Stack declarado: TypeScript/CLI.
+Aporta valor en `skill` para javascript, javascript-typescript, python, typescript. Stack declarado: javascript/typescript, python, typescript, javascript.
 
 ## Cuando usarlo
 
-tu agente vive en CLI
+quieres playwright-cli
 
 ## Cuando NO usarlo
 
-necesitas estado persistente (usa Playwright MCP).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, python, typescript, javascript
 
 ## Instalacion detectada
 
@@ -36,7 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `playwright`
+- `andrej-karpathy-skills`
+- `antigravity-awesome-skills`
+- `awesome-agent-skills`
 
 ## Contra que compite
 
@@ -48,8 +54,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con playwright cuando el flujo necesite mas de una pieza.
+Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si tu agente vive en CLI. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres playwright-cli. No debe instalarse por inercia.

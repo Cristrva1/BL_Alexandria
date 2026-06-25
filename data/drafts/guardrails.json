@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-06-25T04:57:39.682774+00:00",
+  "profile": {
+    "id": "guardrails",
+    "name": "Guardrails",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Guardrails",
+    "repo_url": "https://github.com/NVIDIA-NeMo/Guardrails.git",
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "package-lock.json",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "NVIDIA NeMo Guardrails Library",
+      "desc": "LATEST RELEASE / DEVELOPMENT VERSION**: The [develop](https://github.com/NVIDIA-NeMo/Guardrails/tree/develop) branch tracks the latest top of tree development. The latest released version is [0.21.0](https://github.com/NVIDIA-NeMo/Guardrails/tree/v0.21.0)."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "langchain"
+    ],
+    "one": "NVIDIA NeMo Guardrails Library",
+    "install_hints": [
+      "> pip install nemoguardrails"
+    ]
+  },
+  "compact": {
+    "id": "guardrails",
+    "name": "Guardrails",
+    "cat": 3,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "langchain",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "NVIDIA NeMo Guardrails Library",
+    "alt": [],
+    "doc": "human/fichas/guardrails.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "Guardrails",
+    "cat": 3,
+    "desc": "LATEST RELEASE / DEVELOPMENT VERSION**: The develop branch tracks the latest top of tree development. The latest released version is 0.21.0.",
+    "stack": "python, typescript, javascript, react, docker, langchain",
+    "choose_if": "quieres nvidia nemo guardrails library",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/NVIDIA-NeMo/Guardrails.git",
+    "doc": "human/fichas/guardrails.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:39.682572+00:00"
+  }
+}

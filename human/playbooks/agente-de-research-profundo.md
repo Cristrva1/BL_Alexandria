@@ -1,6 +1,6 @@
 # Agente de research profundo
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Objetivo
 
@@ -8,13 +8,13 @@ investigación citada y estructurada a partir de la web.
 
 ## Stack sugerido
 
-- `gpt-researcher`: agente autónomo que investiga en línea y consolida reportes citados y estructurados. Planifica sub-preguntas, busca fuentes y redacta un informe con referencias.
-- `deer-flow`: super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles. Coordina tareas complejas delegando en agentes especializados.
-- `firecrawl`: plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript.
-- `crawl4ai`: librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA.
-- `browser-use`: biblioteca que da a los LLMs la capacidad de usar navegadores reales con interfaz para modelos de visión, dejando que el agente perciba la pantalla y actúe sin selectores fijos.
-- `markitdown`: utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman.
-- `langfuse`: plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente.
+- `gpt-researcher`: 🔎 GPT Researcher.
+- `deer-flow`: English | 中文 | 日本語 | Français | Русский.
+- `firecrawl`: src="https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_logo.png".
+- `crawl4ai`: 🚀 Crawl4AI Cloud API — Closed Beta (Launching Soon) Reliable, large-scale web extraction, now built to be _**drastically more cost-effective**_ than any of the existing solutions.
+- `browser-use`: 🌤️ Want to skip the setup? Use our cloud for faster, scalable, stealth-enabled browser automation!.
+- `markitdown`: MarkItDown performs I/O with the privileges of the current process. Like open() or requests.get(), it will access resources that the process itself can access. Sanitize your inputs in untrusted environments, and call the narrowest `convert_*` function needed for your use case (e.g., `convert_stream()`, or `convert_local()`). See the Security Considerations section of the documentation for .
+- `langfuse`: alt="chat on Discord"> alt="follow on X(Twitter)"> alt="follow on LinkedIn"> .
 
 ## Como se conecta
 

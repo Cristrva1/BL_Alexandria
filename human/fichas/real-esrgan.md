@@ -1,34 +1,38 @@
 # Real-ESRGAN
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-herramienta de superresolución y restauración para imágenes reales que reescala y limpia material de baja calidad sin rehacerlo.
+👀**Demos** **|** 🚩**Updates** **|** ⚡**Usage** **|** 🏰**Model Zoo** **|** 🔧Install **|** 💻Train **|** ❓FAQ **|** 🎨Contribution.
 
 ## Que problema resuelve
 
-reescalas imágenes
+quieres 👀[**demos**](#-demos-videos) **|** 🚩[**updates**](#-updates) **|** ⚡[**usage**](
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para image. Stack declarado: Python, PyTorch, GPU.
+Aporta valor en `library` para multimedia, postgres, python, typescript. Stack declarado: python, typescript, postgres.
 
 ## Cuando usarlo
 
-reescalas imágenes
+quieres 👀[**demos**](#-demos-videos) **|** 🚩[**updates**](#-updates) **|** ⚡[**usage**](
 
 ## Cuando NO usarlo
 
-solo necesitas arreglar rostros ([GFPGAN](#-gfpgan)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
-reference_only
+deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, postgres
 
 ## Instalacion detectada
 
@@ -36,20 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `gfpgan`
+- `openwa`
+- `skills`
+- `agency-agents`
 
 ## Contra que compite
 
-- `gfpgan`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con gfpgan cuando el flujo necesite mas de una pieza.
+Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si reescalas imágenes. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres 👀[**demos**](#-demos-videos) **|** 🚩[**updates**](#-updates) **|** ⚡[**usage**](. No debe instalarse por inercia.

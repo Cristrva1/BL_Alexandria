@@ -1,6 +1,6 @@
 # ag2
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-framework maduro para sistemas multiagente con patrones de colaboración (heredero de AutoGen). Modela conversaciones entre varios agentes que se delegan tareas hasta resolver un objetivo.
+AG2 was evolved from AutoGen. Fully open-sourced. We invite collaborators from all organizations to contribute.
 
 ## Que problema resuelve
 
-construyes multiagente serio
+quieres ag2 was evolved from autogen. fully open-sourced. we invite collaborators from a
 
 ## Por que tiene valor
 
-Aporta valor en `library` para agents. Stack declarado: Python.
+Aporta valor en `platform` para automation, docker, python, react, typescript. Stack declarado: python, typescript, react, docker.
 
 ## Cuando usarlo
 
-construyes multiagente serio
+quieres ag2 was evolved from autogen. fully open-sourced. we invite collaborators from a
 
 ## Cuando NO usarlo
 
-te basta un agente único.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, react, docker
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `langchain`
-- `langfuse`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `crewai`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con langchain, langfuse cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, crewai cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si construyes multiagente serio. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres ag2 was evolved from autogen. fully open-sourced. we invite collaborators from a. No debe instalarse por inercia.

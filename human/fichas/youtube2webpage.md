@@ -1,6 +1,6 @@
 # Youtube2Webpage
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-script en Perl que genera una página web legible a partir de un video de YouTube, intercalando la transcripción de subtítulos con capturas de pantalla del momento citado.
+Youtube-to-Webpage is a Perl script to create a webpage from a Youtube video with a transcript generated from the video's closed captions paired with screenshots of the video.
 
 ## Que problema resuelve
 
-quieres video → artículo
+quieres youtube-to-webpage
 
 ## Por que tiene valor
 
-Aporta valor en `library` para media, audio, video. Stack declarado: Perl, yt-dlp.
+Aporta valor en `library` para postgres, typescript. Stack declarado: typescript, postgres.
 
 ## Cuando usarlo
 
-quieres video → artículo
+quieres youtube-to-webpage
 
 ## Cuando NO usarlo
 
-necesitas edición de video.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+typescript, postgres
 
 ## Instalacion detectada
 
@@ -36,7 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `whisper`
+- `openwa`
+- `skills`
+- `agency-agents`
 
 ## Contra que compite
 
@@ -48,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con whisper cuando el flujo necesite mas de una pieza.
+Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres video → artículo. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres youtube-to-webpage. No debe instalarse por inercia.

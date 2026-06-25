@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-25T05:00:41.387663+00:00",
+  "profile": {
+    "id": "uplot",
+    "name": "uPlot",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\uPlot",
+    "repo_url": "https://github.com/leeoniya/uPlot.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "<h2><img src=\"uPlot.svg\" alt=\"uPlot logo\" height=\"36\" align=\"top\"> μPlot</h2>",
+      "desc": "A small ([~50 KB min](https://github.com/leeoniya/uPlot/tree/master/dist/uPlot.iife.min.js)), [fast](#performance) chart for time series, lines, areas, ohlc & bars _(MIT Licensed)_."
+    },
+    "features": [
+      "Multiple series w/toggle",
+      "Multiple y-axes, scales & grids",
+      "Temporal or numeric x-axis",
+      "Linear, uniform or [logarithmic](https://leeoniya.github.io/uPlot/demos/log-scales.html) scales",
+      "Line & Area styles (stroke, fill, width, dash)",
+      "Pluggable path renderers [linear, spline, stepped, bars](https://leeoniya.github.io/uPlot/demos/line-paths.html)"
+    ],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "react"
+    ],
+    "one": "A small ([~50 KB min](https://github.com/leeoniya/uPlot/tree/master/dist/uPlot.iife.min.js)), [fast](#performance) chart for time series, lines, areas, ohlc & bars _(MIT Licensed)_",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "uplot",
+    "name": "uPlot",
+    "cat": 10,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "A small ([~50 KB min](https://github.com/leeoniya/uPlot/tree/master/dist/uPlot.iife.min.js)), [fast](#performance) chart for time series, lines, areas, ohlc & bars _(MIT Licensed)_",
+    "alt": [],
+    "doc": "human/fichas/uplot.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "uPlot",
+    "cat": 10,
+    "desc": "A small (~50 KB min), fast chart for time series, lines, areas, ohlc & bars _(MIT Licensed)_.",
+    "stack": "javascript/typescript, python, typescript, javascript, react",
+    "choose_if": "quieres a small ([~50 kb min](https://github.com/leeoniya/uplot/tree/master/dist/uplot.i",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "streamlit"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/leeoniya/uPlot.git",
+    "doc": "human/fichas/uplot.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:41.387445+00:00"
+  }
+}

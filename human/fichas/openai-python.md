@@ -1,6 +1,6 @@
 # openai-python
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-SDK oficial de OpenAI para Python, que expone de forma tipada y cómoda la API (chat, embeddings, imágenes, audio) y es la base habitual para apps que usan sus modelos.
+The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.9+ application. The library includes type definitions for all request params and response fields, and offers both synchronous and asynchronous clients powered by httpx.
 
 ## Que problema resuelve
 
-usas modelos de OpenAI
+quieres openai python api library
 
 ## Por que tiene valor
 
-Aporta valor en `library` para code, audio. Stack declarado: Python.
+Aporta valor en `platform` para javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, postgres.
 
 ## Cuando usarlo
 
-usas modelos de OpenAI
+quieres openai python api library
 
 ## Cuando NO usarlo
 
-quieres abstracción multi-proveedor ([litellm](06-memoria-llm-ops-observabilidad.md#-litellm)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, postgres
 
 ## Instalacion detectada
 
@@ -36,12 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `litellm`
-- `langchain`
+- `codegraph`
+- `gitnexus`
+- `deepseek-coder`
 
 ## Contra que compite
 
-- `litellm`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con litellm, langchain cuando el flujo necesite mas de una pieza.
+Combinar con codegraph, gitnexus, deepseek-coder cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si usas modelos de OpenAI. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres openai python api library. No debe instalarse por inercia.

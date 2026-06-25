@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T04:59:42.046316+00:00",
+  "profile": {
+    "id": "public-apis",
+    "name": "public-apis",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\public-apis",
+    "repo_url": "https://github.com/public-apis/public-apis.git",
+    "manifests": [],
+    "intro": {
+      "title": "Try Public APIs for free",
+      "desc": "The Public APIs repository is manually curated by community members like you and folks working at [APILayer](https://apilayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo). It includes an extensive list of public APIs from many domains that you can use for your own products. Consider it a treasure trove of APIs well-managed by the community over the years."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres"
+    ],
+    "one": "Try Public APIs for free",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "public-apis",
+    "name": "public-apis",
+    "cat": 5,
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "Try Public APIs for free",
+    "alt": [],
+    "doc": "human/fichas/public-apis.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "public-apis",
+    "cat": 5,
+    "desc": "The Public APIs repository is manually curated by community members like you and folks working at APILayer. It includes an extensive list of public APIs from many domains that you can use for your own products. Consider it a treasure trove of APIs well-managed by the community over the years.",
+    "stack": "python, typescript, javascript, react, docker, postgres",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+      "claude-plugins-official",
+      "n8n-skills",
+      "mcp"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/public-apis/public-apis.git",
+    "doc": "human/fichas/public-apis.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:42.046092+00:00"
+  }
+}

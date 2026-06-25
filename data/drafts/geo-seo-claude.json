@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-06-25T04:57:24.881775+00:00",
+  "profile": {
+    "id": "geo-seo-claude",
+    "name": "geo-seo-claude",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\geo-seo-claude",
+    "repo_url": "https://github.com/zubair-trabzada/geo-seo-claude.git",
+    "manifests": [
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "(ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews) while maintaining traditional SEO foundations."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript"
+    ],
+    "one": "(ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews) while maintaining traditional SEO foundations.",
+    "install_hints": [
+      "git clone https://github.com/zubair-trabzada/geo-seo-claude.git",
+      "git clone https://github.com/zubair-trabzada/geo-seo-claude.git"
+    ]
+  },
+  "compact": {
+    "id": "geo-seo-claude",
+    "name": "geo-seo-claude",
+    "cat": 2,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "python",
+      "typescript"
+    ],
+    "one": "(ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews) while maintaining traditional SEO foundations.",
+    "alt": [],
+    "doc": "human/fichas/geo-seo-claude.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "geo-seo-claude",
+    "cat": 2,
+    "desc": "(ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews) while maintaining traditional SEO foundations.",
+    "stack": "python, typescript",
+    "choose_if": "quieres (chatgpt, claude, perplexity, gemini, google ai overviews) while maintaining tra",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/zubair-trabzada/geo-seo-claude.git",
+    "doc": "human/fichas/geo-seo-claude.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:24.881503+00:00"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-06-25T04:58:47.708220+00:00",
+  "profile": {
+    "id": "n8n-mcp",
+    "name": "n8n-mcp",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\n8n-mcp",
+    "repo_url": "https://github.com/czlonkowski/n8n-mcp.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "n8n-MCP",
+      "desc": "A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations. Deploy in minutes to give Claude and other AI assistants deep knowledge about n8n's 1,845 workflow automation nodes (816 core + 1,029 community)."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "langchain"
+    ],
+    "one": "n8n-MCP",
+    "install_hints": [
+      "- Production deployment with Docker Compose"
+    ]
+  },
+  "compact": {
+    "id": "n8n-mcp",
+    "name": "n8n-mcp",
+    "cat": 1,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "langchain",
+      "mcp",
+      "python",
+      "typescript"
+    ],
+    "one": "n8n-MCP",
+    "alt": [],
+    "doc": "human/fichas/n8n-mcp.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "n8n-mcp",
+    "cat": 1,
+    "desc": "A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations. Deploy in minutes to give Claude and other AI assistants deep knowledge about n8n's 1,845 workflow automation nodes (816 core + 1,029 community).",
+    "stack": "javascript/typescript, python, typescript, javascript, docker, langchain",
+    "choose_if": "quieres n8n-mcp",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "twenty-main",
+      "evolution-api",
+      "whatsapp-agentkit"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/czlonkowski/n8n-mcp.git",
+    "doc": "human/fichas/n8n-mcp.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:47.708019+00:00"
+  }
+}

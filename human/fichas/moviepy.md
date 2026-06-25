@@ -1,6 +1,6 @@
 # moviepy
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-librería Python para edición de video programática: cortar, concatenar, superponer texto, subtítulos y audio, y exportar el resultado.
+MoviePy recently upgraded to v2.0, introducing major breaking changes. You can consult the last v1 docs here but beware that v1 is no longer maintained. For more info on how to update your code from v1 to v2, see this guide.
 
 ## Que problema resuelve
 
-ensamblas video por código
+quieres moviepy
 
 ## Por que tiene valor
 
-Aporta valor en `library` para media, audio, video. Stack declarado: Python, ffmpeg.
+Aporta valor en `library` para docker, postgres, python, typescript. Stack declarado: python, typescript, docker, postgres.
 
 ## Cuando usarlo
 
-ensamblas video por código
+quieres moviepy
 
 ## Cuando NO usarlo
 
-prefieres React/programático web ([remotion](#-remotion)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,12 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `whisperx`
-- `tts`
+- `fluxer`
+- `whisper`
+- `faster-whisper`
 
 ## Contra que compite
 
-- `remotion`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con whisperx, tts cuando el flujo necesite mas de una pieza.
+Combinar con fluxer, whisper, faster-whisper cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si ensamblas video por código. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres moviepy. No debe instalarse por inercia.

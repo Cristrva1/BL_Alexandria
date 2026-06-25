@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-06-25T04:58:08.055113+00:00",
+  "profile": {
+    "id": "litellm",
+    "name": "litellm",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\litellm",
+    "repo_url": "https://github.com/BerriAI/litellm.git",
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "uv.lock",
+      "package-lock.json",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<h1 align=\"center\">",
+      "desc": "LiteLLM is an open source AI Gateway that gives you a single, unified interface to call 100+ LLM providers — OpenAI, Anthropic, Gemini, Bedrock, Azure, and more — using the OpenAI format."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "🚅 LiteLLM",
+    "install_hints": [
+      "uv add litellm",
+      "git clone https://github.com/BerriAI/litellm.git",
+      "git clone https://github.com/BerriAI/litellm.git"
+    ]
+  },
+  "compact": {
+    "id": "litellm",
+    "name": "litellm",
+    "cat": 11,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "🚅 LiteLLM",
+    "alt": [],
+    "doc": "human/fichas/litellm.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "litellm",
+    "cat": 11,
+    "desc": "LiteLLM is an open source AI Gateway that gives you a single, unified interface to call 100+ LLM providers — OpenAI, Anthropic, Gemini, Bedrock, Azure, and more — using the OpenAI format.",
+    "stack": "python, typescript, javascript, docker, postgres",
+    "choose_if": "quieres 🚅 litellm",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "cosmos",
+      "comfyui",
+      "stable-diffusion-webui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/BerriAI/litellm.git",
+    "doc": "human/fichas/litellm.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:08.054895+00:00"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-06-25T04:56:03.953100+00:00",
+  "profile": {
+    "id": "andrej-karpathy-skills",
+    "name": "andrej-karpathy-skills",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\andrej-karpathy-skills",
+    "repo_url": "https://github.com/multica-ai/andrej-karpathy-skills.git",
+    "manifests": [],
+    "intro": {
+      "title": "Karpathy-Inspired Claude Code Guidelines",
+      "desc": "Check out my new project [Multica](https://github.com/multica-ai/multica) — an open-source platform for running and managing coding agents with reusable skills."
+    },
+    "features": [],
+    "stack": [
+      "typescript"
+    ],
+    "one": "Karpathy-Inspired Claude Code Guidelines",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "andrej-karpathy-skills",
+    "name": "andrej-karpathy-skills",
+    "cat": 2,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "skills",
+      "typescript"
+    ],
+    "one": "Karpathy-Inspired Claude Code Guidelines",
+    "alt": [],
+    "doc": "human/fichas/andrej-karpathy-skills.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "andrej-karpathy-skills",
+    "cat": 2,
+    "desc": "Check out my new project Multica — an open-source platform for running and managing coding agents with reusable skills.",
+    "stack": "typescript",
+    "choose_if": "quieres karpathy-inspired claude code guidelines",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "antigravity-awesome-skills",
+      "awesome-agent-skills",
+      "superpowers"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/multica-ai/andrej-karpathy-skills.git",
+    "doc": "human/fichas/andrej-karpathy-skills.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:03.952891+00:00"
+  }
+}

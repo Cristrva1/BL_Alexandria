@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-06-25T04:57:48.196972+00:00",
+  "profile": {
+    "id": "how-to-train-your-gpt",
+    "name": "how-to-train-your-gpt",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\how-to-train-your-gpt",
+    "repo_url": "https://github.com/raiyanyahya/how-to-train-your-gpt.git",
+    "manifests": [
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "🧠 How to Train Your GPT",
+      "desc": "A guide to building a world-class language model from absolute scratch. Taught like you're five. Built like you're an engineer.*."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript"
+    ],
+    "one": "🧠 How to Train Your GPT",
+    "install_hints": [
+      "**🔧 Prerequisites:** Python basics (variables, functions, classes, `pip install`). That's it. No calculus, no linear algebra, no PyTorch exp",
+      "git clone https://github.com/raiyanyahya/how-to-train-your-gpt.git",
+      "pip install torch tiktoken datasets numpy matplotlib --index-url https://download.pytorch.org/whl/cpu"
+    ]
+  },
+  "compact": {
+    "id": "how-to-train-your-gpt",
+    "name": "how-to-train-your-gpt",
+    "cat": 4,
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "python",
+      "typescript"
+    ],
+    "one": "🧠 How to Train Your GPT",
+    "alt": [],
+    "doc": "human/fichas/how-to-train-your-gpt.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "how-to-train-your-gpt",
+    "cat": 4,
+    "desc": "A guide to building a world-class language model from absolute scratch. Taught like you're five. Built like you're an engineer.*.",
+    "stack": "python, typescript",
+    "choose_if": "quieres 🧠 how to train your gpt",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "firecrawl",
+      "crawl4ai",
+      "scrapy"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/raiyanyahya/how-to-train-your-gpt.git",
+    "doc": "human/fichas/how-to-train-your-gpt.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:48.196613+00:00"
+  }
+}

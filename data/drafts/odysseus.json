@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-06-25T04:59:07.487134+00:00",
+  "profile": {
+    "id": "odysseus",
+    "name": "odysseus",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\odysseus",
+    "repo_url": "https://github.com/pewdiepie-archdaemon/odysseus.git",
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "requirements.txt",
+      "setup.py",
+      "package-lock.json",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "A self-hosted AI workspace for chat, agents, research, documents, email, notes, calendar, and local model workflows."
+    },
+    "features": [
+      "**Chat + Agents** — local/API models, tools, MCP, files, shell, skills, and memory.",
+      "**Cookbook** — hardware-aware model recommendations, downloads, and serving.",
+      "**Deep Research** — multi-step web research with source reading and report generation.",
+      "**Compare** — blind side-by-side model testing and synthesis.",
+      "**Documents** — writing-first editor with AI edits, suggestions, Markdown, HTML, CSV, and syntax highlighting.",
+      "**Email** — IMAP/SMTP inbox with triage, tags, summaries, reminders, and reply drafts."
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "A self-hosted AI workspace for chat, agents, research, documents, email, notes, calendar, and local model workflows.",
+    "install_hints": [
+      "git clone https://github.com/pewdiepie-archdaemon/odysseus.git",
+      "docker compose up -d --build",
+      "Open `http://localhost:7000` when the containers are healthy. The first admin password is printed in `docker compose logs odysseus`."
+    ]
+  },
+  "compact": {
+    "id": "odysseus",
+    "name": "odysseus",
+    "cat": 4,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "docker",
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "A self-hosted AI workspace for chat, agents, research, documents, email, notes, calendar, and local model workflows.",
+    "alt": [],
+    "doc": "human/fichas/odysseus.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "odysseus",
+    "cat": 4,
+    "desc": "A self-hosted AI workspace for chat, agents, research, documents, email, notes, calendar, and local model workflows.",
+    "stack": "python, typescript, javascript, docker, postgres",
+    "choose_if": "quieres a self-hosted ai workspace for chat, agents, research, documents, email, notes, ",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "firecrawl",
+      "crawl4ai",
+      "scrapy"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/pewdiepie-archdaemon/odysseus.git",
+    "doc": "human/fichas/odysseus.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:07.486928+00:00"
+  }
+}

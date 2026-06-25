@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-06-25T05:00:31.473265+00:00",
+  "profile": {
+    "id": "tooljet",
+    "name": "ToolJet",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ToolJet",
+    "repo_url": "https://github.com/ToolJet/ToolJet.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json",
+      "docker-compose.yaml"
+    ],
+    "intro": {
+      "title": "ToolJet is the open-source foundation of ToolJet AI - the AI-native platform for building and deploying internal tools, ",
+      "desc": ":star: If you find ToolJet useful, please consider giving us a star on GitHub! Your support helps us continue to innovate and deliver exciting features."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "ToolJet is the open-source foundation of ToolJet AI - the AI-native platform for building and deploying internal tools, workflows and AI agents. The community edition provides a powerful visual builder, drag-and-drop UI, and integrations with databases, APIs,...",
+    "install_hints": [
+      "docker run \\"
+    ]
+  },
+  "compact": {
+    "id": "tooljet",
+    "name": "ToolJet",
+    "cat": 3,
+    "role": "app",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "ToolJet is the open-source foundation of ToolJet AI - the AI-native platform for building and deploying internal tools, workflows and AI agents. The community edition provides a powerful visual builder, drag-and-drop UI, and integrations with databases, APIs,...",
+    "alt": [],
+    "doc": "human/fichas/tooljet.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "ToolJet",
+    "cat": 3,
+    "desc": ":star: If you find ToolJet useful, please consider giving us a star on GitHub! Your support helps us continue to innovate and deliver exciting features.",
+    "stack": "javascript/typescript, python, typescript, javascript, docker, postgres",
+    "choose_if": "quieres tooljet is the open-source foundation of tooljet ai - the ai-native platform for building ",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/ToolJet/ToolJet.git",
+    "doc": "human/fichas/tooljet.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:31.473061+00:00"
+  }
+}

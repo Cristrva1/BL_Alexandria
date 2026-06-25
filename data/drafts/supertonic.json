@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-06-25T05:00:23.273739+00:00",
+  "profile": {
+    "id": "supertonic",
+    "name": "supertonic",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\supertonic",
+    "repo_url": "https://github.com/supertone-inc/supertonic.git",
+    "manifests": [],
+    "intro": {
+      "title": "Supertonic — Lightning Fast, On-Device, Accurate TTS",
+      "desc": "Supertonic** is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript"
+    ],
+    "one": "Supertonic — Lightning Fast, On-Device, Accurate TTS",
+    "install_hints": [
+      "- **2025.12.10** - Added `supertonic` PyPI package! Install via `pip install supertonic`. For details, visit [supertonic-py documentation](h",
+      "pip install supertonic",
+      "pip install 'supertonic[serve]'"
+    ]
+  },
+  "compact": {
+    "id": "supertonic",
+    "name": "supertonic",
+    "cat": 12,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "multimedia",
+      "python",
+      "typescript"
+    ],
+    "one": "Supertonic — Lightning Fast, On-Device, Accurate TTS",
+    "alt": [],
+    "doc": "human/fichas/supertonic.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "supertonic",
+    "cat": 12,
+    "desc": "Supertonic** is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns.",
+    "stack": "python, typescript, javascript",
+    "choose_if": "quieres supertonic — lightning fast, on-device, accurate tts",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "whisper",
+      "faster-whisper"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/supertone-inc/supertonic.git",
+    "doc": "human/fichas/supertonic.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:23.273533+00:00"
+  }
+}

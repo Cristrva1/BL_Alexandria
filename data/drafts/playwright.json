@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-06-25T04:59:32.177517+00:00",
+  "profile": {
+    "id": "playwright",
+    "name": "playwright",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\playwright",
+    "repo_url": "https://github.com/microsoft/playwright.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "🎭 Playwright",
+      "desc": "Playwright is a framework for web automation and testing. It drives Chromium, Firefox, and WebKit with a single API — in your tests, in your scripts, and as a tool for AI agents."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "postgres"
+    ],
+    "one": "🎭 Playwright",
+    "install_hints": [
+      "| **[Playwright CLI](#playwright-cli)** | Coding agents (Claude Code, Copilot) | `npm i -g @playwright/cli@latest` |",
+      "| **[Playwright Library](#playwright-library)** | Browser automation scripts | `npm i playwright` |",
+      "npm i -D @playwright/test"
+    ]
+  },
+  "compact": {
+    "id": "playwright",
+    "name": "playwright",
+    "cat": 3,
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "🎭 Playwright",
+    "alt": [],
+    "doc": "human/fichas/playwright.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "playwright",
+    "cat": 3,
+    "desc": "Playwright is a framework for web automation and testing. It drives Chromium, Firefox, and WebKit with a single API — in your tests, in your scripts, and as a tool for AI agents.",
+    "stack": "javascript/typescript, python, typescript, javascript, postgres",
+    "choose_if": "quieres 🎭 playwright",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/microsoft/playwright.git",
+    "doc": "human/fichas/playwright.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:32.177294+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-06-25T04:56:18.882665+00:00",
+  "profile": {
+    "id": "awesome-dataviz",
+    "name": "awesome-dataviz",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\awesome-dataviz",
+    "repo_url": "https://github.com/hal9ai/awesome-dataviz.git",
+    "manifests": [],
+    "intro": {
+      "title": "Awesome Dataviz",
+      "desc": "A curated list of awesome **open-source** data visualizations frameworks, libraries and software. Inspired by [awesome-python](https://github.com/vinta/awesome-python) and originally created by [fasouto](https://github.com/fasouto)."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "postgres"
+    ],
+    "one": "Awesome Dataviz",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "awesome-dataviz",
+    "name": "awesome-dataviz",
+    "cat": 3,
+    "role": "directory",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "javascript",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "Awesome Dataviz",
+    "alt": [],
+    "doc": "human/fichas/awesome-dataviz.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "awesome-dataviz",
+    "cat": 3,
+    "desc": "A curated list of awesome **open-source** data visualizations frameworks, libraries and software. Inspired by awesome-python and originally created by fasouto.",
+    "stack": "python, typescript, javascript, react, postgres",
+    "choose_if": "quieres awesome dataviz",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/hal9ai/awesome-dataviz.git",
+    "doc": "human/fichas/awesome-dataviz.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:18.882460+00:00"
+  }
+}

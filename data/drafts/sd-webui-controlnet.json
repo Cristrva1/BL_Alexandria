@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-06-25T05:00:01.913162+00:00",
+  "profile": {
+    "id": "sd-webui-controlnet",
+    "name": "sd-webui-controlnet",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\sd-webui-controlnet",
+    "repo_url": "https://github.com/Mikubill/sd-webui-controlnet.git",
+    "manifests": [
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "ControlNet for Stable Diffusion WebUI",
+      "desc": "The WebUI extension for ControlNet and other injection-based SD controls."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "postgres"
+    ],
+    "one": "ControlNet for Stable Diffusion WebUI",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "sd-webui-controlnet",
+    "name": "sd-webui-controlnet",
+    "cat": 11,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "frontend",
+      "postgres",
+      "python",
+      "typescript",
+      "vision"
+    ],
+    "one": "ControlNet for Stable Diffusion WebUI",
+    "alt": [],
+    "doc": "human/fichas/sd-webui-controlnet.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "sd-webui-controlnet",
+    "cat": 11,
+    "desc": "The WebUI extension for ControlNet and other injection-based SD controls.",
+    "stack": "python, typescript, postgres",
+    "choose_if": "quieres controlnet for stable diffusion webui",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "comfyui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/Mikubill/sd-webui-controlnet.git",
+    "doc": "human/fichas/sd-webui-controlnet.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:01.912959+00:00"
+  }
+}

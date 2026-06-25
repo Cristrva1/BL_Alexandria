@@ -1,6 +1,6 @@
 # GFPGAN
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-algoritmo de restauración facial que reconstruye rostros degradados o de baja calidad usando priors generativos (GAN) preentrenados.
+1. :boom: **Updated** online demo: ![Replicate](https://replicate.com/tencentarc/gfpgan). Here is the backup. 1. :boom: **Updated** online demo: ![Huggingface Gradio](https://huggingface.co/spaces/Xintao/GFPGAN) 1. .
 
 ## Que problema resuelve
 
-restauras rostros
+quieres 1. :boom: **updated** online demo: [![replicate](https://img.shields.io/static/v
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para image, training. Stack declarado: Python, PyTorch, GPU opcional.
+Aporta valor en `library` para javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, postgres.
 
 ## Cuando usarlo
 
-restauras rostros
+quieres 1. :boom: **updated** online demo: [![replicate](https://img.shields.io/static/v
 
 ## Cuando NO usarlo
 
-necesitas upscaling general ([Real-ESRGAN](#-real-esrgan)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, postgres
 
 ## Instalacion detectada
 
@@ -36,11 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `real-esrgan`
+- `litellm`
+- `cosmos`
+- `comfyui`
 
 ## Contra que compite
 
-- `real-esrgan`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -48,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con real-esrgan cuando el flujo necesite mas de una pieza.
+Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si restauras rostros. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres 1. :boom: **updated** online demo: [![replicate](https://img.shields.io/static/v. No debe instalarse por inercia.

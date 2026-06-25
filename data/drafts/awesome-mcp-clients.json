@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-06-25T04:56:22.234006+00:00",
+  "profile": {
+    "id": "awesome-mcp-clients",
+    "name": "awesome-mcp-clients",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\awesome-mcp-clients",
+    "repo_url": "https://github.com/punkpeye/awesome-mcp-clients.git",
+    "manifests": [],
+    "intro": {
+      "title": "Awesome MCP Clients [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
+      "desc": "A curated list of awesome Model Context Protocol (MCP) clients."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres",
+      "langchain"
+    ],
+    "one": "Awesome MCP Clients [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
+    "install_hints": [
+      "`pip install git+https://github.com/johnrobinsn/askit.git`",
+      "`pip install dolphin-mcp`",
+      "pip install fastchat-mcp"
+    ]
+  },
+  "compact": {
+    "id": "awesome-mcp-clients",
+    "name": "awesome-mcp-clients",
+    "cat": 5,
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "langchain",
+      "mcp",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "Awesome MCP Clients [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)",
+    "alt": [],
+    "doc": "human/fichas/awesome-mcp-clients.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "awesome-mcp-clients",
+    "cat": 5,
+    "desc": "A curated list of awesome Model Context Protocol (MCP) clients.",
+    "stack": "python, typescript, javascript, react, docker, postgres, langchain",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+      "claude-plugins-official",
+      "n8n-skills",
+      "mcp"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/punkpeye/awesome-mcp-clients.git",
+    "doc": "human/fichas/awesome-mcp-clients.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:22.233783+00:00"
+  }
+}

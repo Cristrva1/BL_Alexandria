@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-06-25T04:58:42.778923+00:00",
+  "profile": {
+    "id": "moviepy",
+    "name": "moviepy",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\moviepy",
+    "repo_url": "https://github.com/Zulko/moviepy.git",
+    "manifests": [
+      "pyproject.toml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "MoviePy",
+      "desc": "MoviePy recently upgraded to v2.0, introducing major breaking changes. You can consult the last v1 docs [here](https://zulko.github.io/moviepy/v1.0.3/) but beware that v1 is no longer maintained. For more info on how to update your code from v1 to v2, see [this guide](https://zulko.github.io/moviepy/getting_started/updating_to_v2.html)."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "docker",
+      "postgres"
+    ],
+    "one": "MoviePy",
+    "install_hints": [
+      "Intall moviepy with `pip install moviepy`. For additional installation options, such as a custom FFMPEG or for previewing, see [this section",
+      "The online documentation ([here](https://zulko.github.io/moviepy/)) is automatically built at every push to the master branch. To build the "
+    ]
+  },
+  "compact": {
+    "id": "moviepy",
+    "name": "moviepy",
+    "cat": 12,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "MoviePy",
+    "alt": [],
+    "doc": "human/fichas/moviepy.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "moviepy",
+    "cat": 12,
+    "desc": "MoviePy recently upgraded to v2.0, introducing major breaking changes. You can consult the last v1 docs here but beware that v1 is no longer maintained. For more info on how to update your code from v1 to v2, see this guide.",
+    "stack": "python, typescript, docker, postgres",
+    "choose_if": "quieres moviepy",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "whisper",
+      "faster-whisper"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/Zulko/moviepy.git",
+    "doc": "human/fichas/moviepy.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:42.778661+00:00"
+  }
+}

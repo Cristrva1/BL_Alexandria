@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-06-25T05:00:29.785177+00:00",
+  "profile": {
+    "id": "three.js",
+    "name": "three.js",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\three.js",
+    "repo_url": "https://github.com/mrdoob/three.js.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "three.js",
+      "desc": "JavaScript 3D library."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript"
+    ],
+    "one": "three.js",
+    "install_hints": [
+      "git clone --depth=1 https://github.com/mrdoob/three.js.git"
+    ]
+  },
+  "compact": {
+    "id": "three.js",
+    "name": "three.js",
+    "cat": 9,
+    "role": "library",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "typescript"
+    ],
+    "one": "three.js",
+    "alt": [],
+    "doc": "human/fichas/three.js.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "three.js",
+    "cat": 9,
+    "desc": "JavaScript 3D library.",
+    "stack": "javascript/typescript, typescript, javascript",
+    "choose_if": "quieres three.js",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/mrdoob/three.js.git",
+    "doc": "human/fichas/three.js.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:29.784924+00:00"
+  }
+}

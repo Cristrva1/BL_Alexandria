@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-06-25T05:00:54.585249+00:00",
+  "profile": {
+    "id": "whisperx",
+    "name": "whisperX",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\whisperX",
+    "repo_url": "https://github.com/m-bain/whisperX.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "<h1 align=\"center\">WhisperX</h1>",
+      "desc": "Recall.ai - Meeting Transcription API."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "whisper"
+    ],
+    "one": "Recall.ai - Meeting Transcription API",
+    "install_hints": [
+      "pip install whisperx",
+      "git clone https://github.com/m-bain/whisperX.git"
+    ]
+  },
+  "compact": {
+    "id": "whisperx",
+    "name": "whisperX",
+    "cat": 12,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "multimedia",
+      "python",
+      "typescript",
+      "whisper"
+    ],
+    "one": "Recall.ai - Meeting Transcription API",
+    "alt": [],
+    "doc": "human/fichas/whisperx.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "whisperX",
+    "cat": 12,
+    "desc": "Recall.ai - Meeting Transcription API.",
+    "stack": "python, typescript, whisper",
+    "choose_if": "quieres whisperx",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "whisper",
+      "faster-whisper"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/m-bain/whisperX.git",
+    "doc": "human/fichas/whisperx.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:54.585036+00:00"
+  }
+}

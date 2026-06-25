@@ -1,6 +1,6 @@
 # ui-ux-pro-max-skill
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-habilidades que dotan al asistente de inteligencia de diseño UI/UX y estilos avanzados para producir interfaces más profesionales.
+An AI skill that provides design intelligence for building professional UI/UX across multiple platforms and frameworks.
 
 ## Que problema resuelve
 
-generas UI con IA y quieres calidad
+quieres an ai skill that provides design intelligence for building professional ui/ux ac
 
 ## Por que tiene valor
 
-Aporta valor en `skill` para skills, ui. Stack declarado: Node.js (uipro-cli), Python.
+Aporta valor en `skill` para frontend, javascript, python, react, skills, typescript. Stack declarado: python, typescript, javascript, react.
 
 ## Cuando usarlo
 
-generas UI con IA y quieres calidad
+quieres an ai skill that provides design intelligence for building professional ui/ux ac
 
 ## Cuando NO usarlo
 
-no trabajas frontend.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, react
 
 ## Instalacion detectada
 
@@ -36,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `taste-skill`
-- `impeccable`
-- `tailwindcss`
+- `andrej-karpathy-skills`
+- `antigravity-awesome-skills`
+- `awesome-agent-skills`
 
 ## Contra que compite
 
@@ -50,8 +54,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con taste-skill, impeccable, tailwindcss cuando el flujo necesite mas de una pieza.
+Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si generas UI con IA y quieres calidad. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres an ai skill that provides design intelligence for building professional ui/ux ac. No debe instalarse por inercia.

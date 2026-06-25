@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:58:16.335555+00:00",
+  "profile": {
+    "id": "llmfit",
+    "name": "llmfit",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\llmfit",
+    "repo_url": "https://github.com/AlexsJones/llmfit.git",
+    "manifests": [
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "llmfit",
+      "desc": "New: [Community Leaderboard](#community-leaderboard-b)** — Browse real-world performance data from actual users. Press `b` to see measured tok/s, TTFT, and VRAM for any GPU — not just yours. Pick from 27+ hardware presets (RTX 5090 to Apple M1) with `H` to compare real numbers before you buy or build."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "llmfit",
+    "install_hints": [
+      "docker run ghcr.io/alexsjones/llmfit",
+      "git clone https://github.com/AlexsJones/llmfit.git"
+    ]
+  },
+  "compact": {
+    "id": "llmfit",
+    "name": "llmfit",
+    "cat": 9,
+    "role": "app",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "llmfit",
+    "alt": [],
+    "doc": "human/fichas/llmfit.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "llmfit",
+    "cat": 9,
+    "desc": "New: Community Leaderboard** — Browse real-world performance data from actual users. Press `b` to see measured tok/s, TTFT, and VRAM for any GPU — not just yours. Pick from 27+ hardware presets (RTX 5090 to Apple M1) with `H` to compare real numbers before you buy or build.",
+    "stack": "python, typescript, javascript, docker, postgres",
+    "choose_if": "quieres llmfit",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/AlexsJones/llmfit.git",
+    "doc": "human/fichas/llmfit.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:16.335353+00:00"
+  }
+}

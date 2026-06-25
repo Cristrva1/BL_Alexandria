@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-25T04:56:13.957488+00:00",
+  "profile": {
+    "id": "awesome-agent-skills",
+    "name": "awesome-agent-skills",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\awesome-agent-skills",
+    "repo_url": "https://github.com/VoltAgent/awesome-agent-skills.git",
+    "manifests": [],
+    "intro": {
+      "title": "<a href=\"https://github.com/VoltAgent/voltagent\">",
+      "desc": "Hand-picked, not AI-slop generated."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres",
+      "fastapi",
+      "langchain",
+      "whisper"
+    ],
+    "one": "Hand-picked, not AI-slop generated.",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "awesome-agent-skills",
+    "name": "awesome-agent-skills",
+    "cat": 2,
+    "role": "skill",
+    "exec": "cloud",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "fastapi",
+      "javascript",
+      "langchain",
+      "multimedia",
+      "postgres",
+      "python",
+      "react"
+    ],
+    "one": "Hand-picked, not AI-slop generated.",
+    "alt": [],
+    "doc": "human/fichas/awesome-agent-skills.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "awesome-agent-skills",
+    "cat": 2,
+    "desc": "Hand-picked, not AI-slop generated.",
+    "stack": "python, typescript, javascript, react, docker, postgres, fastapi, langchain, whisper",
+    "choose_if": "quieres hand-picked, not ai-slop generated.",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "superpowers"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/VoltAgent/awesome-agent-skills.git",
+    "doc": "human/fichas/awesome-agent-skills.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:13.957280+00:00"
+  }
+}

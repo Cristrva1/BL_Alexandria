@@ -129,6 +129,24 @@ uv run repo-intelligence guide build
 uv run repo-intelligence report daily
 ```
 
+**Al agregar nuevos repositorios a la biblioteca (para que tengan toda la información técnica y teórica completa):**
+
+```powershell
+# 1. Descubrir
+uv run repo-intelligence discover
+
+# 2. Análisis profundo (repomix + markitdown + extracción)
+uv run repo-intelligence analyze --new
+
+# 3. Generar borradores ricos + incorporar (inferencia de cat, stack, choose/avoid, etc.)
+uv run repo-intelligence enrich --new --auto-merge
+
+# 4. Regenerar catálogos, fichas, Guia.md, human/* e índices
+uv run repo-intelligence guide build
+```
+
+Ver también AGENTS.md → sección Mantenimiento para el flujo completo y recomendaciones de revisión de drafts en `data/drafts/`.
+
 `pull --safe` usa red porque ejecuta Git contra los remotos. Los demas comandos son locales.
 
 ## Estado actual frente a los 2 objetivos

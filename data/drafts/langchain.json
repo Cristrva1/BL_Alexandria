@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-06-25T04:57:59.658556+00:00",
+  "profile": {
+    "id": "langchain",
+    "name": "langchain",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\langchain",
+    "repo_url": "https://github.com/langchain-ai/langchain.git",
+    "manifests": [],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "langchain"
+    ],
+    "one": "LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technol...",
+    "install_hints": [
+      "uv add langchain"
+    ]
+  },
+  "compact": {
+    "id": "langchain",
+    "name": "langchain",
+    "cat": 3,
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "automation",
+      "langchain",
+      "python",
+      "typescript"
+    ],
+    "one": "LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technol...",
+    "alt": [],
+    "doc": "human/fichas/langchain.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "langchain",
+    "cat": 3,
+    "desc": "LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves.",
+    "stack": "python, typescript, langchain",
+    "choose_if": "quieres langchain is a framework for building agents and llm-powered applications. it he",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/langchain-ai/langchain.git",
+    "doc": "human/fichas/langchain.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:59.658357+00:00"
+  }
+}

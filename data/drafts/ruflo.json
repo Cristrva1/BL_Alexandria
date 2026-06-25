@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-06-25T04:59:51.995387+00:00",
+  "profile": {
+    "id": "ruflo",
+    "name": "ruflo",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ruflo",
+    "repo_url": "https://github.com/ruvnet/ruflo.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "An agent meta-harness for Claude Code and Codex.**."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres"
+    ],
+    "one": "Ruflo",
+    "install_hints": [
+      "[![Git clones (14d)](https://img.shields.io/badge/git%20clones%2014d-106k-blueviolet?style=flat-square&logo=github)](https://github.com/ruvn"
+    ]
+  },
+  "compact": {
+    "id": "ruflo",
+    "name": "ruflo",
+    "cat": 3,
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "react",
+      "typescript"
+    ],
+    "one": "Ruflo",
+    "alt": [],
+    "doc": "human/fichas/ruflo.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "ruflo",
+    "cat": 3,
+    "desc": "An agent meta-harness for Claude Code and Codex.**.",
+    "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
+    "choose_if": "quieres ruflo",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/ruvnet/ruflo.git",
+    "doc": "human/fichas/ruflo.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:51.995176+00:00"
+  }
+}

@@ -1,6 +1,6 @@
 # litellm
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI.
+LiteLLM is an open source AI Gateway that gives you a single, unified interface to call 100+ LLM providers — OpenAI, Anthropic, Gemini, Bedrock, Azure, and more — using the OpenAI format.
 
 ## Que problema resuelve
 
-trabajas con múltiples modelos
+quieres 🚅 litellm
 
 ## Por que tiene valor
 
-Aporta valor en `library` para llmops. Stack declarado: Python.
+Aporta valor en `platform` para docker, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, docker, postgres.
 
 ## Cuando usarlo
 
-trabajas con múltiples modelos
+quieres 🚅 litellm
 
 ## Cuando NO usarlo
 
-usas un único proveedor fijo.
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `langchain`
-- `langfuse`
-- `llm-council`
+- `cosmos`
+- `comfyui`
+- `stable-diffusion-webui`
 
 ## Contra que compite
 
@@ -50,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con langchain, langfuse, llm-council cuando el flujo necesite mas de una pieza.
+Combinar con cosmos, comfyui, stable-diffusion-webui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si trabajas con múltiples modelos. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres 🚅 litellm. No debe instalarse por inercia.

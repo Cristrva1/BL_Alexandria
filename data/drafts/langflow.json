@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-25T04:58:01.350455+00:00",
+  "profile": {
+    "id": "langflow",
+    "name": "langflow",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\langflow",
+    "repo_url": "https://github.com/langflow-ai/langflow.git",
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "uv.lock",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "<!-- markdownlint-disable MD030 -->",
+      "desc": "✨ Highlight features."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker"
+    ],
+    "one": "✨ Highlight features",
+    "install_hints": [
+      "uv pip install langflow -U",
+      "docker run -p 7860:7860 langflowai/langflow:latest"
+    ]
+  },
+  "compact": {
+    "id": "langflow",
+    "name": "langflow",
+    "cat": 3,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "python",
+      "typescript"
+    ],
+    "one": "✨ Highlight features",
+    "alt": [],
+    "doc": "human/fichas/langflow.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "langflow",
+    "cat": 3,
+    "desc": "✨ Highlight features.",
+    "stack": "python, typescript, javascript, docker",
+    "choose_if": "quieres ✨ highlight features",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/langflow-ai/langflow.git",
+    "doc": "human/fichas/langflow.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:01.350251+00:00"
+  }
+}

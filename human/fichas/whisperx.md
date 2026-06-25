@@ -1,34 +1,38 @@
 # whisperX
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional.
+Recall.ai - Meeting Transcription API.
 
 ## Que problema resuelve
 
-necesitas subtítulos precisos
+quieres whisperx
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para media, audio. Stack declarado: Python, modelos Whisper.
+Aporta valor en `library` para multimedia, python, typescript, whisper. Stack declarado: python, typescript, whisper.
 
 ## Cuando usarlo
 
-necesitas subtítulos precisos
+quieres whisperx
 
 ## Cuando NO usarlo
 
-te basta texto plano ([whisper](#-whisper)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
-reference_only
+deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, whisper
 
 ## Instalacion detectada
 
@@ -36,21 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
+- `fluxer`
 - `whisper`
-- `moviepy`
+- `faster-whisper`
 
 ## Contra que compite
 
-- `whisper`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con whisper, moviepy cuando el flujo necesite mas de una pieza.
+Combinar con fluxer, whisper, faster-whisper cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas subtítulos precisos. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres whisperx. No debe instalarse por inercia.

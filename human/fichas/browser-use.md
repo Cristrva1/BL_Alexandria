@@ -1,6 +1,6 @@
 # browser-use
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-biblioteca que da a los LLMs la capacidad de usar navegadores reales con interfaz para modelos de visión, dejando que el agente perciba la pantalla y actúe sin selectores fijos.
+🌤️ Want to skip the setup? Use our cloud for faster, scalable, stealth-enabled browser automation!.
 
 ## Que problema resuelve
 
-quieres navegación como humano
+quieres <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/
 
 ## Por que tiene valor
 
-Aporta valor en `library` para scraping, browser, agents, video. Stack declarado: Python 3.11+, Rust (core), Playwright.
+Aporta valor en `platform` para automation, docker, python, typescript. Stack declarado: python, typescript, docker.
 
 ## Cuando usarlo
 
-quieres navegación como humano
+quieres <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/
 
 ## Cuando NO usarlo
 
-necesitas scripts deterministas ([playwright](#-playwright)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, docker
 
 ## Instalacion detectada
 
@@ -36,12 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `playwright`
-- `gpt-researcher`
+- `twenty-main`
+- `evolution-api`
+- `whatsapp-agentkit`
 
 ## Contra que compite
 
-- `playwright`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con playwright, gpt-researcher cuando el flujo necesite mas de una pieza.
+Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres navegación como humano. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/. No debe instalarse por inercia.

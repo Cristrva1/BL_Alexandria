@@ -1,6 +1,6 @@
 # multica
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-plataforma para que humanos y agentes trabajen lado a lado ("tus próximas 10 contrataciones no serán humanas"). Integra colaboradores humanos y agentes en un mismo espacio de trabajo. Proyecto de nicho.
+Your next 10 hires won't be human.**.
 
 ## Que problema resuelve
 
-mezclas trabajo humano y agentes
+quieres multica
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para agents. Stack declarado: web/TS.
+Aporta valor en `skill` para docker, javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, docker, postgres.
 
 ## Cuando usarlo
 
-mezclas trabajo humano y agentes
+quieres multica
 
 ## Cuando NO usarlo
 
-quieres automatización 100% headless.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, typescript, javascript, react, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `ruflo`
-- `chatwoot`
+- `andrej-karpathy-skills`
+- `antigravity-awesome-skills`
+- `awesome-agent-skills`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con ruflo, chatwoot cuando el flujo necesite mas de una pieza.
+Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si mezclas trabajo humano y agentes. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres multica. No debe instalarse por inercia.

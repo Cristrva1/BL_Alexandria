@@ -1,6 +1,6 @@
 # DeepSeek-Coder
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ DIFERIR
 
 ## Para que sirve realmente
 
-familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software.
+1. Introduction of DeepSeek Coder.
 
 ## Que problema resuelve
 
-quieres un modelo de código abierto
+quieres 1. introduction of deepseek coder
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para code, training. Stack declarado: Python, PyTorch, GPU.
+Aporta valor en `library` para docker, javascript, python, typescript. Stack declarado: python, typescript, javascript, docker.
 
 ## Cuando usarlo
 
-quieres un modelo de código abierto
+quieres 1. introduction of deepseek coder
 
 ## Cuando NO usarlo
 
-prefieres APIs comerciales gestionadas.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, docker
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `litellm`
 - `codegraph`
+- `gitnexus`
+- `llmc`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con litellm, codegraph cuando el flujo necesite mas de una pieza.
+Combinar con codegraph, gitnexus, llmc cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres un modelo de código abierto. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres 1. introduction of deepseek coder. No debe instalarse por inercia.

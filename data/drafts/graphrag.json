@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-06-25T04:57:36.403072+00:00",
+  "profile": {
+    "id": "graphrag",
+    "name": "graphrag",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\graphrag",
+    "repo_url": "https://github.com/microsoft/graphrag.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "GraphRAG",
+      "desc": "👉 [Microsoft Research Blog Post](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)<br/> 👉 [Read the docs](https://microsoft.github.io/graphrag)<br/> 👉 [GraphRAG Arxiv](https://arxiv.org/pdf/2404.16130)."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript"
+    ],
+    "one": "GraphRAG",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "graphrag",
+    "name": "graphrag",
+    "cat": 9,
+    "role": "library",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "python",
+      "typescript"
+    ],
+    "one": "GraphRAG",
+    "alt": [],
+    "doc": "human/fichas/graphrag.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "graphrag",
+    "cat": 9,
+    "desc": "👉 Microsoft Research Blog Post 👉 Read the docs 👉 GraphRAG Arxiv.",
+    "stack": "python, typescript",
+    "choose_if": "quieres graphrag",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/microsoft/graphrag.git",
+    "doc": "human/fichas/graphrag.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:36.402860+00:00"
+  }
+}

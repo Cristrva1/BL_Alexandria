@@ -1,6 +1,6 @@
 # Fooocus
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros técnicos tras presets inteligentes.
+Fooocus is an image generating software (based on Gradio ).
 
 ## Que problema resuelve
 
-quieres resultados ya
+quieres fooocus
 
 ## Por que tiene valor
 
-Aporta valor en `app` para image. Stack declarado: Python, GPU, modelos locales.
+Aporta valor en `skill` para comfy, docker, javascript, python, typescript. Stack declarado: python, typescript, javascript, docker, comfy.
 
 ## Cuando usarlo
 
-quieres resultados ya
+quieres fooocus
 
 ## Cuando NO usarlo
 
-necesitas control fino ([ComfyUI](#-comfyui)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, docker, comfy
 
 ## Instalacion detectada
 
@@ -36,20 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `real-esrgan`
+- `litellm`
+- `cosmos`
+- `comfyui`
 
 ## Contra que compite
 
-- `comfyui`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con real-esrgan cuando el flujo necesite mas de una pieza.
+Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres resultados ya. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres fooocus. No debe instalarse por inercia.

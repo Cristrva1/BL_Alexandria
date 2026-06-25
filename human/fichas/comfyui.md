@@ -1,6 +1,6 @@
 # ComfyUI
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ DIFERIR
 
 ## Para que sirve realmente
 
-motor local modular para crear pipelines visuales de generación con IA mediante un grafo de nodos, donde cada paso (carga de modelo, sampling, postproceso) es un bloque conectable y reutilizable.
+The most powerful and modular AI engine for content creation.**.
 
 ## Que problema resuelve
 
-quieres control total
+quieres comfyui
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para image, graph. Stack declarado: Python, GPU, modelos locales.
+Aporta valor en `runtime` para comfy, docker, frontend, javascript, python, react, typescript. Stack declarado: python, typescript, javascript, react, docker, comfy.
 
 ## Cuando usarlo
 
-quieres control total
+quieres comfyui
 
 ## Cuando NO usarlo
 
-buscas simplicidad ([Fooocus](#-fooocus)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
 deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, react, docker, comfy
 
 ## Instalacion detectada
 
@@ -36,12 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `comfyui-ipadapter-plus`
-- `real-esrgan`
+- `litellm`
+- `cosmos`
+- `stable-diffusion-webui`
 
 ## Contra que compite
 
-- `fooocus`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -49,8 +54,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con comfyui-ipadapter-plus, real-esrgan cuando el flujo necesite mas de una pieza.
+Combinar con litellm, cosmos, stable-diffusion-webui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres control total. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres comfyui. No debe instalarse por inercia.

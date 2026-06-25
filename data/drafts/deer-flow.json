@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:57:00.175625+00:00",
+  "profile": {
+    "id": "deer-flow",
+    "name": "deer-flow",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\deer-flow",
+    "repo_url": "https://github.com/bytedance/deer-flow.git",
+    "manifests": [],
+    "intro": {
+      "title": "🦌 DeerFlow - 2.0",
+      "desc": "English | [中文](./README_zh.md) | [日本語](./README_ja.md) | [Français](./README_fr.md) | [Русский](./README_ru.md)."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "langchain"
+    ],
+    "one": "🦌 DeerFlow - 2.0",
+    "install_hints": [
+      "git clone https://github.com/bytedance/deer-flow.git",
+      "5. For Docker Compose deployments, keep `state_dir` on a persistent volume so the `get_updates_buf` cursor and saved auth state survive rest",
+      "When DeerFlow runs in Docker Compose, IM channels execute inside the `gateway` container. In that case, do not point `channels.langgraph_url"
+    ]
+  },
+  "compact": {
+    "id": "deer-flow",
+    "name": "deer-flow",
+    "cat": 3,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "langchain",
+      "python",
+      "typescript"
+    ],
+    "one": "🦌 DeerFlow - 2.0",
+    "alt": [],
+    "doc": "human/fichas/deer-flow.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "deer-flow",
+    "cat": 3,
+    "desc": "English | 中文 | 日本語 | Français | Русский.",
+    "stack": "python, typescript, javascript, docker, langchain",
+    "choose_if": "quieres 🦌 deerflow - 2.0",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/bytedance/deer-flow.git",
+    "doc": "human/fichas/deer-flow.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:00.175395+00:00"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-06-25T04:58:49.328598+00:00",
+  "profile": {
+    "id": "n8n-skills",
+    "name": "n8n-skills",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\n8n-skills",
+    "repo_url": "https://github.com/czlonkowski/n8n-skills.git",
+    "manifests": [],
+    "intro": {
+      "title": "n8n-skills",
+      "desc": "Expert Claude Code skills for building flawless n8n workflows using the n8n-mcp MCP server**."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres",
+      "langchain"
+    ],
+    "one": "n8n-skills",
+    "install_hints": [
+      "- Docker Compose behind **Caddy** with automatic HTTPS; asks **single vs queue mode** first",
+      "git clone https://github.com/czlonkowski/n8n-skills.git"
+    ]
+  },
+  "compact": {
+    "id": "n8n-skills",
+    "name": "n8n-skills",
+    "cat": 5,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "langchain",
+      "postgres",
+      "python",
+      "skills",
+      "typescript"
+    ],
+    "one": "n8n-skills",
+    "alt": [],
+    "doc": "human/fichas/n8n-skills.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "n8n-skills",
+    "cat": 5,
+    "desc": "Expert Claude Code skills for building flawless n8n workflows using the n8n-mcp MCP server**.",
+    "stack": "python, typescript, javascript, docker, postgres, langchain",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+      "claude-plugins-official",
+      "mcp",
+      "servers"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/czlonkowski/n8n-skills.git",
+    "doc": "human/fichas/n8n-skills.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:49.328391+00:00"
+  }
+}

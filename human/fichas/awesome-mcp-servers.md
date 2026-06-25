@@ -1,6 +1,6 @@
 # awesome-mcp-servers
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar.
+A curated list of awesome Model Context Protocol (MCP) servers.
 
 ## Que problema resuelve
 
-buscas antes de construir
+quieres > [!important]
 
 ## Por que tiene valor
 
-Aporta valor en `directory` para mcp. Stack declarado: Markdown.
+Aporta valor en `directory` para automation, comfy, docker, fastapi, javascript, langchain, mcp, multimedia. Stack declarado: python, typescript, javascript, react, docker, postgres, fastapi, langchain, whisper, comfy.
 
 ## Cuando usarlo
 
-buscas antes de construir
+quieres > [!important]
 
 ## Cuando NO usarlo
 
-ya sabes que necesitas uno a medida.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, react, docker, postgres, fastapi, langchain, whisper, comfy
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `mcp-use`
-- `servers`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con mcp-use, servers cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si buscas antes de construir. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres > [!important]. No debe instalarse por inercia.

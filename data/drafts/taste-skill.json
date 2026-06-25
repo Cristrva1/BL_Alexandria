@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-06-25T05:00:28.086794+00:00",
+  "profile": {
+    "id": "taste-skill",
+    "name": "taste-skill",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\taste-skill",
+    "repo_url": "https://github.com/Leonxlnx/taste-skill.git",
+    "manifests": [],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typography, motion, and spacing instead of boilerplate-looking UIs. This repo also includes **image-generation skills** for reference boards (web, mobile, brand kits). Pair them with **ChatGPT Images** or similar generators, then hand the frames to Codex, Cursor, or Claude Code for implementation."
+    },
+    "features": [],
+    "stack": [
+      "typescript",
+      "react",
+      "postgres"
+    ],
+    "one": "Taste Skill",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "taste-skill",
+    "name": "taste-skill",
+    "cat": 9,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "postgres",
+      "react",
+      "skills",
+      "typescript"
+    ],
+    "one": "Taste Skill",
+    "alt": [],
+    "doc": "human/fichas/taste-skill.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "taste-skill",
+    "cat": 9,
+    "desc": "Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typography, motion, and spacing instead of boilerplate-looking UIs. This repo also includes **image-generation skills** for reference boards (web, mobile, brand kits). Pair them with **ChatGPT Images** or similar generators, then hand the frames to Codex, Cursor, or Claude Code for implementation.",
+    "stack": "typescript, react, postgres",
+    "choose_if": "quieres taste skill",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/Leonxlnx/taste-skill.git",
+    "doc": "human/fichas/taste-skill.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:28.086588+00:00"
+  }
+}

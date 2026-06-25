@@ -1,6 +1,6 @@
 # LivePortrait
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ DIFERIR
 
 ## Para que sirve realmente
 
-sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen.
+`2025/06/01`**: 🌍 Over the past year, **LivePortrait** has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as numerous startups and creators. 🎉 `2025/01/01`**: 🐶 We updated a new version of the Animals model with more data, see **here**. `2024/10/18`**: ❗ We have upda.
 
 ## Que problema resuelve
 
-animas retratos
+quieres liveportrait: efficient portrait animation with stitching and retargeting control
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para image, video. Stack declarado: Python, GPU.
+Aporta valor en `library` para comfy, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, postgres, comfy.
 
 ## Cuando usarlo
 
-animas retratos
+quieres liveportrait: efficient portrait animation with stitching and retargeting control
 
 ## Cuando NO usarlo
 
-necesitas swap en vivo ([Deep-Live-Cam](#-deep-live-cam)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
 deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, postgres, comfy
 
 ## Instalacion detectada
 
@@ -36,11 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `moviepy`
+- `litellm`
+- `cosmos`
+- `comfyui`
 
 ## Contra que compite
 
-- `deep-live-cam`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -48,8 +54,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con moviepy cuando el flujo necesite mas de una pieza.
+Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si animas retratos. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres liveportrait: efficient portrait animation with stitching and retargeting control. No debe instalarse por inercia.

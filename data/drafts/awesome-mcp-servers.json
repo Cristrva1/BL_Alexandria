@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-06-25T04:56:23.950629+00:00",
+  "profile": {
+    "id": "awesome-mcp-servers",
+    "name": "awesome-mcp-servers",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\awesome-mcp-servers",
+    "repo_url": "https://github.com/punkpeye/awesome-mcp-servers.git",
+    "manifests": [],
+    "intro": {
+      "title": "",
+      "desc": "A curated list of awesome Model Context Protocol (MCP) servers."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres",
+      "fastapi",
+      "langchain",
+      "whisper",
+      "comfy"
+    ],
+    "one": "> [!IMPORTANT]",
+    "install_hints": [
+      "- [alexar76/aimarket-plugins](https://github.com/alexar76/aimarket-plugins) [![alexar76/aimarket-plugins MCP server](https://glama.ai/mcp/se",
+      "- [scotia1973-bot/api-hub](https://github.com/scotia1973-bot/api-hub) [![scotia1973-bot/api-hub MCP server](https://glama.ai/mcp/servers/sco",
+      "- [rdanieli/tentra-mcp](https://github.com/rdanieli/tentra-mcp) [![rdanieli/tentra-mcp MCP server](https://glama.ai/mcp/servers/rdanieli/ten"
+    ]
+  },
+  "compact": {
+    "id": "awesome-mcp-servers",
+    "name": "awesome-mcp-servers",
+    "cat": 3,
+    "role": "directory",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+      "automation",
+      "comfy",
+      "docker",
+      "fastapi",
+      "javascript",
+      "langchain",
+      "mcp",
+      "multimedia"
+    ],
+    "one": "> [!IMPORTANT]",
+    "alt": [],
+    "doc": "human/fichas/awesome-mcp-servers.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "awesome-mcp-servers",
+    "cat": 3,
+    "desc": "A curated list of awesome Model Context Protocol (MCP) servers.",
+    "stack": "python, typescript, javascript, react, docker, postgres, fastapi, langchain, whisper, comfy",
+    "choose_if": "quieres > [!important]",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/punkpeye/awesome-mcp-servers.git",
+    "doc": "human/fichas/awesome-mcp-servers.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:23.950401+00:00"
+  }
+}

@@ -1,34 +1,38 @@
 # ECC
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-DIFERIR
+REFERENCIA
 
 ## Para que sirve realmente
 
-sistema operativo/arnés unificado para desarrollar, ejecutar y desplegar en local agentes de IA de alto rendimiento de forma segura, sirviendo de capa intermedia entre el modelo y tu sistema.
+Official sources only.** Install ECC only from verified channels: the GitHub repository github.com/affaan-m/ECC, the npm packages `ecc-universal` and `ecc-agentshield`, the GitHub App, the plugin slug `ecc@ecc`, and the project website [ecc.tools](http.
 
 ## Que problema resuelve
 
-ejecutas agentes con riesgo
+quieres **language:** english |  |  | [繁體中文](docs/zh-tw/readme.
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para local, agents. Stack declarado: Rust (core), TypeScript, Python, Go.
+Aporta valor en `app` para automation, docker, fastapi, javascript, postgres, python, react, typescript. Stack declarado: python, typescript, javascript, react, docker, postgres, fastapi.
 
 ## Cuando usarlo
 
-ejecutas agentes con riesgo
+quieres **language:** english |  |  | [繁體中文](docs/zh-tw/readme.
 
 ## Cuando NO usarlo
 
-solo haces prompts de chat.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
-deferred
+reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, react, docker, postgres, fastapi
 
 ## Instalacion detectada
 
@@ -36,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openhands`
-- `sandbox`
-- `hermes-agent`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
@@ -46,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
 
 ## Ideas profesionales
 
-Combinar con openhands, sandbox, hermes-agent cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si ejecutas agentes con riesgo. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres **language:** english |  |  | [繁體中文](docs/zh-tw/readme.. No debe instalarse por inercia.

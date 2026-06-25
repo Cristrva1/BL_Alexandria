@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:59:35.401107+00:00",
+  "profile": {
+    "id": "ponytail",
+    "name": "ponytail",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ponytail",
+    "repo_url": "https://github.com/DietrichGebert/ponytail.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "You know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty lines; he looks at them, says nothing, and replaces them with one."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "fastapi"
+    ],
+    "one": "---",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "ponytail",
+    "name": "ponytail",
+    "cat": 3,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "fastapi",
+      "javascript",
+      "javascript-typescript",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "---",
+    "alt": [],
+    "doc": "human/fichas/ponytail.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "ponytail",
+    "cat": 3,
+    "desc": "You know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty lines; he looks at them, says nothing, and replaces them with one.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, fastapi",
+    "choose_if": "quieres ---",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/DietrichGebert/ponytail.git",
+    "doc": "human/fichas/ponytail.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:35.400896+00:00"
+  }
+}

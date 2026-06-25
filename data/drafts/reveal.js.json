@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-06-25T04:59:50.284348+00:00",
+  "profile": {
+    "id": "reveal.js",
+    "name": "reveal.js",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\reveal.js",
+    "repo_url": "https://github.com/hakimel/reveal.js.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at [revealjs.com](https://revealjs.com/)."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript"
+    ],
+    "one": "reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at [revealjs.com](https://revealjs.com/).",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "reveal.js",
+    "name": "reveal.js",
+    "cat": 13,
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "typescript"
+    ],
+    "one": "reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at [revealjs.com](https://revealjs.com/).",
+    "alt": [],
+    "doc": "human/fichas/reveal.js.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "reveal.js",
+    "cat": 13,
+    "desc": "reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at revealjs.com.",
+    "stack": "javascript/typescript, typescript, javascript",
+    "choose_if": "quieres reveal.js is an open source html presentation framework. it enables anyone with ",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "markitdown",
+      "ppt-master",
+      "revealjs"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/hakimel/reveal.js.git",
+    "doc": "human/fichas/reveal.js.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:50.284135+00:00"
+  }
+}

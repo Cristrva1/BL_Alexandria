@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-06-25T04:59:58.569793+00:00",
+  "profile": {
+    "id": "scrapling",
+    "name": "Scrapling",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Scrapling",
+    "repo_url": "https://github.com/D4Vinci/Scrapling.git",
+    "manifests": [
+      "pyproject.toml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<!-- mcp-name: io.github.D4Vinci/Scrapling -->",
+      "desc": "Scrapling is an adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "&middot;",
+    "install_hints": [
+      "pip install scrapling",
+      "pip install \"scrapling[fetchers]\"",
+      "pip install \"scrapling[ai]\""
+    ]
+  },
+  "compact": {
+    "id": "scrapling",
+    "name": "Scrapling",
+    "cat": 3,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "postgres",
+      "python",
+      "scraping",
+      "typescript"
+    ],
+    "one": "&middot;",
+    "alt": [],
+    "doc": "human/fichas/scrapling.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "Scrapling",
+    "cat": 3,
+    "desc": "Scrapling is an adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl.",
+    "stack": "python, typescript, javascript, docker, postgres",
+    "choose_if": "quieres &middot;",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/D4Vinci/Scrapling.git",
+    "doc": "human/fichas/scrapling.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:58.569571+00:00"
+  }
+}

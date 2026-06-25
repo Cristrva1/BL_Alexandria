@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-06-25T05:00:06.803012+00:00",
+  "profile": {
+    "id": "skills-emil",
+    "name": "skills_emil",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\skills_emil",
+    "repo_url": "https://github.com/emilkowalski/skills.git",
+    "manifests": [],
+    "intro": {
+      "title": "Skills For Design Engineers",
+      "desc": "For designers and engineers to help them build better user interfaces."
+    },
+    "features": [],
+    "stack": [
+      "typescript"
+    ],
+    "one": "Skills For Design Engineers",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "skills-emil",
+    "name": "skills_emil",
+    "cat": 9,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "frontend",
+      "skills",
+      "typescript"
+    ],
+    "one": "Skills For Design Engineers",
+    "alt": [],
+    "doc": "human/fichas/skills-emil.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "skills_emil",
+    "cat": 9,
+    "desc": "For designers and engineers to help them build better user interfaces.",
+    "stack": "typescript",
+    "choose_if": "quieres skills for design engineers",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/emilkowalski/skills.git",
+    "doc": "human/fichas/skills-emil.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:06.802730+00:00"
+  }
+}

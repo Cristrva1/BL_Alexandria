@@ -1,34 +1,38 @@
 # faster-whisper
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-reimplementación de Whisper sobre CTranslate2 que transcribe mucho más rápido y con menor consumo de memoria, manteniendo la misma precisión.
+faster-whisper** is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models.
 
 ## Que problema resuelve
 
-el rendimiento importa
+quieres faster whisper transcription with ctranslate2
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para media, memory, audio. Stack declarado: Python, CTranslate2.
+Aporta valor en `runtime` para docker, fastapi, multimedia, python, typescript, whisper. Stack declarado: python, typescript, docker, fastapi, whisper.
 
 ## Cuando usarlo
 
-el rendimiento importa
+quieres faster whisper transcription with ctranslate2
 
 ## Cuando NO usarlo
 
-necesitas alineación/diarización ([whisperX](#-whisperx)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
-reference_only
+deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, docker, fastapi, whisper
 
 ## Instalacion detectada
 
@@ -36,20 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
+- `fluxer`
+- `whisper`
 - `whisperx`
 
 ## Contra que compite
 
-- `whisperx`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con whisperx cuando el flujo necesite mas de una pieza.
+Combinar con fluxer, whisper, whisperx cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si el rendimiento importa. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres faster whisper transcription with ctranslate2. No debe instalarse por inercia.

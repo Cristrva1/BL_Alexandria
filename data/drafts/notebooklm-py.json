@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-25T04:59:04.215849+00:00",
+  "profile": {
+    "id": "notebooklm-py",
+    "name": "notebooklm-py",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\notebooklm-py",
+    "repo_url": "https://github.com/teng-lin/notebooklm-py.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "notebooklm-py",
+      "desc": "A Comprehensive NotebookLM Skill & Unofficial Python API.** Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "postgres",
+      "fastapi"
+    ],
+    "one": "notebooklm-py",
+    "install_hints": [
+      "**Why `uv tool` / `pipx`?** They install the CLI into its own isolated environment and put `notebooklm` on your `PATH` — no dependency clash",
+      "pip install \"notebooklm-py[browser]\"",
+      "uv add notebooklm-py                    # or, inside a virtualenv: pip install notebooklm-py"
+    ]
+  },
+  "compact": {
+    "id": "notebooklm-py",
+    "name": "notebooklm-py",
+    "cat": 2,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "fastapi",
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "notebooklm-py",
+    "alt": [],
+    "doc": "human/fichas/notebooklm-py.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "notebooklm-py",
+    "cat": 2,
+    "desc": "A Comprehensive NotebookLM Skill & Unofficial Python API.** Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
+    "stack": "python, typescript, javascript, postgres, fastapi",
+    "choose_if": "quieres notebooklm-py",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/teng-lin/notebooklm-py.git",
+    "doc": "human/fichas/notebooklm-py.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:04.215591+00:00"
+  }
+}

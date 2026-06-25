@@ -1,6 +1,6 @@
 # open-design
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-editor/workspace de diseño colaborativo asistido por IA que genera, maqueta y anima interfaces a partir de instrucciones en lenguaje natural; alternativa libre a Claude Design Artifacts.
+🔥 **Open Design 0.10.0 is here: the all-in-one Agentic design workspace.** The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing off to an editor or a Code Agent — without leaving the app. With parallel sessions, it stops feeling like one assistant and starts feeling like a local design team .
 
 ## Que problema resuelve
 
-generas UI desde texto
+quieres open design: the open-source claude design alternative
 
 ## Por que tiene valor
 
-Aporta valor en `app` para ui. Stack declarado: TypeScript/React, Tauri (Rust).
+Aporta valor en `runtime` para agents, docker, frontend, javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, docker, postgres.
 
 ## Cuando usarlo
 
-generas UI desde texto
+quieres open design: the open-source claude design alternative
 
 ## Cuando NO usarlo
 
-prefieres editar sobre tu código ([plasmic](#-plasmic)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, typescript, javascript, react, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,12 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `tailwindcss`
-- `heroui`
+- `openwa`
+- `skills`
+- `agency-agents`
 
 ## Contra que compite
 
-- `plasmic`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con tailwindcss, heroui cuando el flujo necesite mas de una pieza.
+Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si generas UI desde texto. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres open design: the open-source claude design alternative. No debe instalarse por inercia.

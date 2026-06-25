@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-06-25T04:59:09.142827+00:00",
+  "profile": {
+    "id": "omnivoice-studio",
+    "name": "OmniVoice-Studio",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\OmniVoice-Studio",
+    "repo_url": "https://github.com/debpalash/OmniVoice-Studio.git",
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "OmniVoice Studio is in active beta.** Things may break between releases. For the latest features and fixes, clone the repo and run from source rather than using pre-built installers. Bug reports and PRs are very welcome — [open an issue](https://github.com/debpalash/OmniVoice-Studio/issues) or [join Discord](https://discord.gg/bzQavDfVV9)."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "fastapi",
+      "whisper"
+    ],
+    "one": "> [!WARNING]",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "omnivoice-studio",
+    "name": "OmniVoice-Studio",
+    "cat": 12,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "fastapi",
+      "javascript",
+      "multimedia",
+      "python",
+      "react",
+      "typescript",
+      "whisper"
+    ],
+    "one": "> [!WARNING]",
+    "alt": [],
+    "doc": "human/fichas/omnivoice-studio.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "OmniVoice-Studio",
+    "cat": 12,
+    "desc": "OmniVoice Studio is in active beta.** Things may break between releases. For the latest features and fixes, clone the repo and run from source rather than using pre-built installers. Bug reports and PRs are very welcome — open an issue or join Discord.",
+    "stack": "python, typescript, javascript, react, docker, fastapi, whisper",
+    "choose_if": "quieres > [!warning]",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "whisper",
+      "faster-whisper"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/debpalash/OmniVoice-Studio.git",
+    "doc": "human/fichas/omnivoice-studio.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:09.142623+00:00"
+  }
+}

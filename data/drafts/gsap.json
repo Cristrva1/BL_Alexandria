@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T04:57:38.039919+00:00",
+  "profile": {
+    "id": "gsap",
+    "name": "GSAP",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\GSAP",
+    "repo_url": "https://github.com/greensock/GSAP.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "GSAP (GreenSock Animation Platform)",
+      "desc": "GSAP is a **framework-agnostic** JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in **every** major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects... anything JavaScript can touch! GSAP's <a href=\"https://gsap.com/docs/v3/Plugins/ScrollTrigger/\">ScrollTrigger</a> plugin delivers jaw-droppin."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react",
+      "postgres"
+    ],
+    "one": "GSAP (GreenSock Animation Platform)",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "gsap",
+    "name": "GSAP",
+    "cat": 9,
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "react",
+      "typescript"
+    ],
+    "one": "GSAP (GreenSock Animation Platform)",
+    "alt": [],
+    "doc": "human/fichas/gsap.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "GSAP",
+    "cat": 9,
+    "desc": "GSAP is a **framework-agnostic** JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in **every** major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects... anything JavaScript can touch! GSAP's ScrollTrigger plugin delivers jaw-droppin.",
+    "stack": "javascript/typescript, typescript, javascript, react, postgres",
+    "choose_if": "quieres gsap (greensock animation platform)",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/greensock/GSAP.git",
+    "doc": "human/fichas/gsap.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:38.039725+00:00"
+  }
+}

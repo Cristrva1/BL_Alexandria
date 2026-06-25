@@ -1,19 +1,14 @@
 # Inteligencia de Código, Datos & Entrenamiento
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 | Repo | Rol | Instalacion | Decision | Uso real |
 |---|---|---|---|---|
-| codegraph | runtime | reference_only | reference | CLI que indexa tu código y da a los asistentes de IA inteligencia semántica 100% local, permitiéndoles entender la estructura y el flujo de un repo sin leer archivo por archivo ni gastar llamadas a herramientas. |
-| graphify | runtime | reference_only | reference | generador de grafos de conocimiento para proyectos locales que mapea código, PDFs, imágenes y video en diagramas interactivos, revelando cómo se conectan las piezas de un sistema. |
-| graphrag | library | reference_only | reference | sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. |
-| GitNexus | app | global | use_now | herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. |
-| DeepSeek-Coder | runtime | deferred | defer | familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software. |
-| nanoGPT | library | reference_only | reference | implementación mínima y limpia de Andrej Karpathy para entrenar y afinar GPTs, pensada para que el código quepa en la cabeza y se entienda de extremo a extremo. |
-| nanochat | library | reference_only | reference | pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. |
-| llm.c | library | deferred | defer | implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo al desnudo. |
-| how-to-train-your-gpt | directory | reference_only | reference | guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material de estudio más que como librería de producción. |
-| cosmos | runtime | deferred | defer | plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. |
-| data-science-ipython-notebooks | directory | reference_only | reference | gran colección de notebooks de ciencia de datos y machine learning que cubre desde pandas y NumPy hasta deep learning y big data, con ejemplos listos para ejecutar. |
-| awesome-bigdata | directory | reference_only | reference | directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. |
-| openai-python | library | reference_only | reference | SDK oficial de OpenAI para Python, que expone de forma tipada y cómoda la API (chat, embeddings, imágenes, audio) y es la base habitual para apps que usan sus modelos. |
+| awesome-bigdata | directory | reference_only | reference | A curated list of awesome big data frameworks, resources and other awesomeness. Inspired by awesome-php, awesome-python, awesome-ruby, hadoopecosystemtable & big-data. |
+| codegraph | library | reference_only | reference | Already installed? Run `codegraph upgrade` to update in place. |
+| data-science-ipython-notebooks | library | reference_only | reference | data-science-ipython-notebooks. |
+| DeepSeek-Coder | library | deferred | defer | 1. Introduction of DeepSeek Coder. |
+| echarts | library | reference_only | reference | Apache ECharts is a free, powerful charting and visualization library offering easy ways to add intuitive, interactive, and highly customizable charts to your commercial products. It is written in pure JavaScript and based on zrender , which is a whole new lightweight canvas library. |
+| GitNexus | runtime | global | use_now | ⚠️ Important Notice:** GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name on Pump.fun or any other platform is **not affiliated with, endorsed by, or created by** this project or its maintainers. Do not purchase any cryptocurrency claiming association with GitNexus. |
+| llm.c | app | deferred | defer | LLMs in simple, pure C/CUDA with no need for 245MB of PyTorch or 107MB of cPython. Current focus is on pretraining, in particular reproducing the GPT-2 and GPT-3 miniseries, along with a parallel PyTorch reference implementation in train_gpt2.py. You'll recognize this file as a slightly tweaked [nanoGPT](https://github.com/karpath. |
+| openai-python | platform | reference_only | reference | The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.9+ application. The library includes type definitions for all request params and response fields, and offers both synchronous and asynchronous clients powered by httpx. |

@@ -21,8 +21,8 @@ class ProjectPaths:
     packed_dir: Path
 
     @classmethod
-    def load(cls, project_root: Path | None = None) -> "ProjectPaths":
-        root = project_root or Path.cwd()
+    def load(cls, project_root: Path | str | None = None) -> "ProjectPaths":
+        root = Path(project_root) if project_root is not None else Path.cwd()
         config_file = root / "config" / "paths.yaml"
         raw: dict[str, Any] = {}
         if config_file.exists():

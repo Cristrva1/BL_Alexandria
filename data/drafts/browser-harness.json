@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-06-25T04:56:25.564153+00:00",
+  "profile": {
+    "id": "browser-harness",
+    "name": "browser-harness",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\browser-harness",
+    "repo_url": "https://github.com/browser-use/browser-harness.git",
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "intro": {
+      "title": "<img src=\"https://raw.githubusercontent.com/browser-use/media/main/browser-harness/banner-ink.svg\" alt=\"Browser Harness\"",
+      "desc": "Browser Harness ♞."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "postgres"
+    ],
+    "one": "Browser Harness ♞",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "browser-harness",
+    "name": "browser-harness",
+    "cat": 2,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "Browser Harness ♞",
+    "alt": [],
+    "doc": "human/fichas/browser-harness.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "browser-harness",
+    "cat": 2,
+    "desc": "Browser Harness ♞.",
+    "stack": "python, typescript, postgres",
+    "choose_if": "quieres <img src=\"https://raw.githubusercontent.com/browser-use/media/main/browser-harness/banner-",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/browser-use/browser-harness.git",
+    "doc": "human/fichas/browser-harness.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:25.563951+00:00"
+  }
+}

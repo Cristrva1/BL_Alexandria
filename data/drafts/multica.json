@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-25T04:58:44.405799+00:00",
+  "profile": {
+    "id": "multica",
+    "name": "multica",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\multica",
+    "repo_url": "https://github.com/multica-ai/multica.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "Your next 10 hires won't be human.**."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres"
+    ],
+    "one": "Multica",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "multica",
+    "name": "multica",
+    "cat": 2,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "react",
+      "typescript"
+    ],
+    "one": "Multica",
+    "alt": [],
+    "doc": "human/fichas/multica.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "multica",
+    "cat": 2,
+    "desc": "Your next 10 hires won't be human.**.",
+    "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
+    "choose_if": "quieres multica",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/multica-ai/multica.git",
+    "doc": "human/fichas/multica.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:44.405603+00:00"
+  }
+}

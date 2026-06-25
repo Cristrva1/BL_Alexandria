@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-06-25T04:59:02.578667+00:00",
+  "profile": {
+    "id": "notebooklm-mcp-cli",
+    "name": "notebooklm-mcp-cli",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\notebooklm-mcp-cli",
+    "repo_url": "https://github.com/jacob-bd/notebooklm-mcp-cli.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "NotebookLM CLI & MCP Server",
+      "desc": "Programmatic access to Google NotebookLM** — via command-line interface (CLI) or Model Context Protocol (MCP) server."
+    },
+    "features": [
+      "**[Getting Started](docs/GETTING_STARTED.md)** — Install, login, agent setup, and migration from another NotebookLM MCP",
+      "**[CLI Guide](docs/CLI_GUIDE.md)** — Complete command reference",
+      "**[MCP Guide](docs/MCP_GUIDE.md)** — All 35 MCP tools with examples",
+      "**[Authentication](docs/AUTHENTICATION.md)** — Setup and troubleshooting",
+      "**[Remote MCP](docs/REMOTE_MCP.md)** — Web/mobile connector feasibility, security, and authentication limitations",
+      "**[API Reference](docs/API_REFERENCE.md)** — Internal API docs for contributors"
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "react",
+      "postgres"
+    ],
+    "one": "NotebookLM CLI & MCP Server",
+    "install_hints": [
+      "pip install notebooklm-mcp-cli",
+      "git clone https://github.com/jacob-bd/notebooklm-mcp-cli.git",
+      "pip install --upgrade notebooklm-mcp-cli"
+    ]
+  },
+  "compact": {
+    "id": "notebooklm-mcp-cli",
+    "name": "notebooklm-mcp-cli",
+    "cat": 5,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+      "mcp",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "NotebookLM CLI & MCP Server",
+    "alt": [],
+    "doc": "human/fichas/notebooklm-mcp-cli.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "notebooklm-mcp-cli",
+    "cat": 5,
+    "desc": "Programmatic access to Google NotebookLM** — via command-line interface (CLI) or Model Context Protocol (MCP) server.",
+    "stack": "python, typescript, react, postgres",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+      "claude-plugins-official",
+      "n8n-skills",
+      "mcp"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/jacob-bd/notebooklm-mcp-cli.git",
+    "doc": "human/fichas/notebooklm-mcp-cli.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:02.578454+00:00"
+  }
+}

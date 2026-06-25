@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-06-25T04:57:44.850070+00:00",
+  "profile": {
+    "id": "hermes-agent",
+    "name": "hermes-agent",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\hermes-agent",
+    "repo_url": "https://github.com/NousResearch/hermes-agent.git",
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "setup.py",
+      "uv.lock",
+      "package-lock.json",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "The self-improving AI agent built by [Nous Research](https://nousresearch.com).** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing w."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "Hermes Agent ☤",
+    "install_hints": [
+      "uv pip install -e \".[all,dev]\"",
+      "uv pip install -e \".[all,dev]\""
+    ]
+  },
+  "compact": {
+    "id": "hermes-agent",
+    "name": "hermes-agent",
+    "cat": 2,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "docker",
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "Hermes Agent ☤",
+    "alt": [],
+    "doc": "human/fichas/hermes-agent.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "hermes-agent",
+    "cat": 2,
+    "desc": "The self-improving AI agent built by Nous Research.** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing w.",
+    "stack": "python, typescript, javascript, docker, postgres",
+    "choose_if": "quieres hermes agent ☤",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/NousResearch/hermes-agent.git",
+    "doc": "human/fichas/hermes-agent.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:44.849540+00:00"
+  }
+}

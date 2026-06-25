@@ -1,6 +1,6 @@
 # Context-Engineering
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso.
+Context Engineering.
 
 ## Que problema resuelve
 
-quieres profundizar en contexto
+quieres context engineering
 
 ## Por que tiene valor
 
-Aporta valor en `directory` para skills, context. Stack declarado: Markdown/notebooks.
+Aporta valor en `runtime` para postgres, python, react, typescript. Stack declarado: python, typescript, react, postgres.
 
 ## Cuando usarlo
 
-quieres profundizar en contexto
+quieres context engineering
 
 ## Cuando NO usarlo
 
-buscas skills ejecutables.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, react, postgres
 
 ## Instalacion detectada
 
@@ -37,7 +41,8 @@ Repo local detectado: si
 ## Con que se combina
 
 - `andrej-karpathy-skills`
-- `headroom`
+- `antigravity-awesome-skills`
+- `awesome-agent-skills`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
 
 ## Ideas profesionales
 
-Combinar con andrej-karpathy-skills, headroom cuando el flujo necesite mas de una pieza.
+Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres profundizar en contexto. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres context engineering. No debe instalarse por inercia.

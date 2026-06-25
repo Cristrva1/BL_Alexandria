@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-06-25T04:57:56.436543+00:00",
+  "profile": {
+    "id": "instaloader",
+    "name": "instaloader",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\instaloader",
+    "repo_url": "https://github.com/instaloader/instaloader.git",
+    "manifests": [
+      "setup.py"
+    ],
+    "intro": {
+      "title": ".. image:: https://raw.githubusercontent.com/instaloader/instaloader/master/docs/logo_heading.png",
+      "desc": ".. |pypi| image:: https://img.shields.io/pypi/v/instaloader.svg :alt: Instaloader PyPI Project Page :target: https://pypi.org/project/instaloader/."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript"
+    ],
+    "one": ".. image:: https://raw.githubusercontent.com/instaloader/instaloader/master/docs/logo_heading.png",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "instaloader",
+    "name": "instaloader",
+    "cat": 4,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "python",
+      "typescript",
+      "vision"
+    ],
+    "one": ".. image:: https://raw.githubusercontent.com/instaloader/instaloader/master/docs/logo_heading.png",
+    "alt": [],
+    "doc": "human/fichas/instaloader.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "instaloader",
+    "cat": 4,
+    "desc": ".. |pypi| image:: https://img.shields.io/pypi/v/instaloader.svg :alt: Instaloader PyPI Project Page :target: https://pypi.org/project/instaloader/.",
+    "stack": "python, typescript",
+    "choose_if": "quieres .. image:: https://raw.githubusercontent.com/instaloader/instaloader/master/docs/logo_head",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "firecrawl",
+      "crawl4ai",
+      "scrapy"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/instaloader/instaloader.git",
+    "doc": "human/fichas/instaloader.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:56.436339+00:00"
+  }
+}

@@ -1,34 +1,38 @@
 # sd-webui-controlnet
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-DIFERIR
+REFERENCIA
 
 ## Para que sirve realmente
 
-extensión que integra el control estructural de ControlNet directamente en Stable Diffusion WebUI, con preprocesadores para poses, bordes, profundidad y más.
+The WebUI extension for ControlNet and other injection-based SD controls.
 
 ## Que problema resuelve
 
-ya usas SD WebUI
+quieres controlnet for stable diffusion webui
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para image. Stack declarado: Python, SD WebUI, modelos ControlNet.
+Aporta valor en `library` para frontend, postgres, python, typescript, vision. Stack declarado: python, typescript, postgres.
 
 ## Cuando usarlo
 
-ya usas SD WebUI
+quieres controlnet for stable diffusion webui
 
 ## Cuando NO usarlo
 
-trabajas en ComfyUI o por código.
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
-deferred
+reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, postgres
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `stable-diffusion-webui`
-- `controlnet`
+- `litellm`
+- `cosmos`
+- `comfyui`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
 
 ## Ideas profesionales
 
-Combinar con stable-diffusion-webui, controlnet cuando el flujo necesite mas de una pieza.
+Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si ya usas SD WebUI. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres controlnet for stable diffusion webui. No debe instalarse por inercia.

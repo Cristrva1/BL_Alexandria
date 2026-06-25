@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T04:59:23.884545+00:00",
+  "profile": {
+    "id": "openscreen",
+    "name": "openscreen",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\openscreen",
+    "repo_url": "https://github.com/siddharthvaddem/openscreen.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "> OpenScreen is now archived and no longer maintained. For continued maintenance and development, a community-driven spi",
+      "desc": "This started as a side project that blew up; not production grade and you'll hit bugs, but hopefully it covers what you need. **This project will soon be archived.**."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "postgres"
+    ],
+    "one": "> [!Note]",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "openscreen",
+    "name": "openscreen",
+    "cat": 3,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "typescript"
+    ],
+    "one": "> [!Note]",
+    "alt": [],
+    "doc": "human/fichas/openscreen.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "openscreen",
+    "cat": 3,
+    "desc": "This started as a side project that blew up; not production grade and you'll hit bugs, but hopefully it covers what you need. **This project will soon be archived.**.",
+    "stack": "javascript/typescript, typescript, javascript, postgres",
+    "choose_if": "quieres > openscreen is now archived and no longer maintained. for continued maintenance and devel",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/siddharthvaddem/openscreen.git",
+    "doc": "human/fichas/openscreen.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:23.884340+00:00"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T05:00:39.727898+00:00",
+  "profile": {
+    "id": "ui-ux-pro-max-skill",
+    "name": "ui-ux-pro-max-skill",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\ui-ux-pro-max-skill",
+    "repo_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+    "manifests": [],
+    "intro": {
+      "title": "[UI UX Pro Max](https://uupm.cc)",
+      "desc": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms and frameworks."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react"
+    ],
+    "one": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms and frameworks.",
+    "install_hints": [
+      "git clone https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git"
+    ]
+  },
+  "compact": {
+    "id": "ui-ux-pro-max-skill",
+    "name": "ui-ux-pro-max-skill",
+    "cat": 2,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "frontend",
+      "javascript",
+      "python",
+      "react",
+      "skills",
+      "typescript"
+    ],
+    "one": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms and frameworks.",
+    "alt": [],
+    "doc": "human/fichas/ui-ux-pro-max-skill.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "ui-ux-pro-max-skill",
+    "cat": 2,
+    "desc": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms and frameworks.",
+    "stack": "python, typescript, javascript, react",
+    "choose_if": "quieres an ai skill that provides design intelligence for building professional ui/ux ac",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+    "doc": "human/fichas/ui-ux-pro-max-skill.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:39.727686+00:00"
+  }
+}

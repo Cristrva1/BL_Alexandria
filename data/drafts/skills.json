@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-06-25T05:00:05.173941+00:00",
+  "profile": {
+    "id": "skills",
+    "name": "skills",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\skills",
+    "repo_url": "https://github.com/mattpocock/skills.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "<a href=\"https://www.aihero.dev/s/skills-newsletter\">",
+      "desc": "Skills For Real Engineers."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript"
+    ],
+    "one": "Skills For Real Engineers",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "skills",
+    "name": "skills",
+    "cat": 9,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "skills",
+      "typescript"
+    ],
+    "one": "Skills For Real Engineers",
+    "alt": [],
+    "doc": "human/fichas/skills.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "skills",
+    "cat": 9,
+    "desc": "Skills For Real Engineers.",
+    "stack": "javascript/typescript, typescript, javascript",
+    "choose_if": "quieres skills for real engineers",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "agency-agents",
+      "taste-skill"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/mattpocock/skills.git",
+    "doc": "human/fichas/skills.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:05.173685+00:00"
+  }
+}

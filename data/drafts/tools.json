@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-06-25T05:00:31.522329+00:00",
+  "profile": {
+    "id": "tools",
+    "name": "tools",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\tools",
+    "repo_url": "",
+    "manifests": [],
+    "intro": {
+      "title": "",
+      "desc": ""
+    },
+    "features": [],
+    "stack": [],
+    "one": "",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "tools",
+    "name": "tools",
+    "cat": 0,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [],
+    "one": "",
+    "alt": [],
+    "doc": "human/fichas/tools.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "tools",
+    "cat": 0,
+    "desc": "",
+    "stack": "See repo",
+    "choose_if": "quieres necesitas las capacidades que ofrece este repo",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [],
+    "alternatives": [],
+    "repo": "",
+    "doc": "human/fichas/tools.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:31.522158+00:00"
+  }
+}

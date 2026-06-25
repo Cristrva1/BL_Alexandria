@@ -1,6 +1,6 @@
 # langflow
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-constructor visual de flujos LLM/agentes construido sobre LangChain. Permite arrastrar y conectar componentes en un lienzo y exportarlos como API o código.
+✨ Highlight features.
 
 ## Que problema resuelve
 
-prefieres construir en visual
+quieres ✨ highlight features
 
 ## Por que tiene valor
 
-Aporta valor en `app` para agents. Stack declarado: Python, web.
+Aporta valor en `platform` para automation, docker, javascript, python, typescript. Stack declarado: python, typescript, javascript, docker.
 
 ## Cuando usarlo
 
-prefieres construir en visual
+quieres ✨ highlight features
 
 ## Cuando NO usarlo
 
-quieres todo en código.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, docker
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `langchain`
-- `dify`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con langchain, dify cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si prefieres construir en visual. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres ✨ highlight features. No debe instalarse por inercia.

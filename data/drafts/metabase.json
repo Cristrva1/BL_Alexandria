@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:58:37.797842+00:00",
+  "profile": {
+    "id": "metabase",
+    "name": "metabase",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\metabase",
+    "repo_url": "https://github.com/metabase/metabase.git",
+    "manifests": [
+      "package.json",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "Metabase",
+      "desc": "The easiest way to get started with Metabase is to sign up for a free trial of [Metabase Cloud](https://store.metabase.com/checkout)."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres"
+    ],
+    "one": "Metabase",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "metabase",
+    "name": "metabase",
+    "cat": 5,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "react",
+      "typescript"
+    ],
+    "one": "Metabase",
+    "alt": [],
+    "doc": "human/fichas/metabase.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "metabase",
+    "cat": 5,
+    "desc": "The easiest way to get started with Metabase is to sign up for a free trial of Metabase Cloud.",
+    "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+      "claude-plugins-official",
+      "n8n-skills",
+      "mcp"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/metabase/metabase.git",
+    "doc": "human/fichas/metabase.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:37.797576+00:00"
+  }
+}

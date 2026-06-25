@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-06-25T04:57:46.532869+00:00",
+  "profile": {
+    "id": "heroui",
+    "name": "heroui",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\heroui",
+    "repo_url": "https://github.com/heroui-inc/heroui.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml"
+    ],
+    "intro": {
+      "title": "packages/react/README.md",
+      "desc": ""
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "javascript",
+      "react"
+    ],
+    "one": "packages/react/README.md",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "heroui",
+    "name": "heroui",
+    "cat": 9,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "frontend",
+      "javascript",
+      "javascript-typescript",
+      "react"
+    ],
+    "one": "packages/react/README.md",
+    "alt": [],
+    "doc": "human/fichas/heroui.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "heroui",
+    "cat": 9,
+    "desc": "",
+    "stack": "javascript/typescript, javascript, react",
+    "choose_if": "quieres packages/react/readme.md",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/heroui-inc/heroui.git",
+    "doc": "human/fichas/heroui.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:46.532650+00:00"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-06-25T04:56:52.010593+00:00",
+  "profile": {
+    "id": "daily-stock-analysis",
+    "name": "daily_stock_analysis",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\daily_stock_analysis",
+    "repo_url": "https://github.com/ZhuLinsen/daily_stock_analysis.git",
+    "manifests": [
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "docker",
+      "postgres",
+      "fastapi"
+    ],
+    "one": "📈 股票智能分析系统",
+    "install_hints": [
+      "git clone https://github.com/ZhuLinsen/daily_stock_analysis.git && cd daily_stock_analysis",
+      "pip install -r requirements.txt"
+    ]
+  },
+  "compact": {
+    "id": "daily-stock-analysis",
+    "name": "daily_stock_analysis",
+    "cat": 9,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "fastapi",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "📈 股票智能分析系统",
+    "alt": [],
+    "doc": "human/fichas/daily-stock-analysis.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "daily_stock_analysis",
+    "cat": 9,
+    "desc": "🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱.",
+    "stack": "python, typescript, docker, postgres, fastapi",
+    "choose_if": "quieres 📈 股票智能分析系统",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/ZhuLinsen/daily_stock_analysis.git",
+    "doc": "human/fichas/daily-stock-analysis.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:52.010333+00:00"
+  }
+}

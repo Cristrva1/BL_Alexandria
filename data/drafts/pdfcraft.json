@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-06-25T04:59:27.176987+00:00",
+  "profile": {
+    "id": "pdfcraft",
+    "name": "pdfcraft",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\pdfcraft",
+    "repo_url": "https://github.com/PDFCraftTool/pdfcraft.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "PDFCraft",
+      "desc": "Merge, split, compress, convert, and edit PDF files online without uploading to servers."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres"
+    ],
+    "one": "PDFCraft",
+    "install_hints": [
+      "git clone https://github.com/PDFCraftTool/pdfcraft.git",
+      "PDFCraft provides both pre-built Docker images and Docker Compose for flexible deployment options.",
+      "docker run -d -p 8080:80 --name pdfcraft ghcr.io/pdfcrafttool/pdfcraft:latest"
+    ]
+  },
+  "compact": {
+    "id": "pdfcraft",
+    "name": "pdfcraft",
+    "cat": 9,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "react",
+      "typescript"
+    ],
+    "one": "PDFCraft",
+    "alt": [],
+    "doc": "human/fichas/pdfcraft.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "pdfcraft",
+    "cat": 9,
+    "desc": "Merge, split, compress, convert, and edit PDF files online without uploading to servers.",
+    "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
+    "choose_if": "quieres pdfcraft",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/PDFCraftTool/pdfcraft.git",
+    "doc": "human/fichas/pdfcraft.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:27.176773+00:00"
+  }
+}

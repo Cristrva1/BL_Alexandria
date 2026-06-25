@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-06-25T04:56:50.320106+00:00",
+  "profile": {
+    "id": "crewai",
+    "name": "crewAI",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\crewAI",
+    "repo_url": "https://github.com/crewAIInc/crewAI.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "Fast and Flexible Multi-Agent Automation Framework."
+    },
+    "features": [
+      "[Can CrewAI handle complex use cases?](#q-can-crewai-handle-complex-use-cases)",
+      "[Can I use CrewAI with local AI models?](#q-can-i-use-crewai-with-local-ai-models)",
+      "[What makes Crews different from Flows?](#q-what-makes-crews-different-from-flows)",
+      "[How is CrewAI better than LangChain?](#q-how-is-crewai-better-than-langchain)"
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "postgres",
+      "langchain"
+    ],
+    "one": "·",
+    "install_hints": [
+      "uv pip install crewai",
+      "uv pip install 'crewai[tools]'",
+      "- Install tiktoken explicitly: `uv pip install 'crewai[embeddings]'`"
+    ]
+  },
+  "compact": {
+    "id": "crewai",
+    "name": "crewAI",
+    "cat": 3,
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "langchain",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "·",
+    "alt": [],
+    "doc": "human/fichas/crewai.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "crewAI",
+    "cat": 3,
+    "desc": "Fast and Flexible Multi-Agent Automation Framework.",
+    "stack": "python, typescript, postgres, langchain",
+    "choose_if": "quieres ·",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/crewAIInc/crewAI.git",
+    "doc": "human/fichas/crewai.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:50.319692+00:00"
+  }
+}

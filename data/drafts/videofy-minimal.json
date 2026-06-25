@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-06-25T05:00:46.333297+00:00",
+  "profile": {
+    "id": "videofy-minimal",
+    "name": "videofy_minimal",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\videofy_minimal",
+    "repo_url": "https://github.com/schibsted/videofy_minimal.git",
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "uv.lock",
+      "package-lock.json",
+      "docker-compose.yml"
+    ],
+    "intro": {
+      "title": "Videofy Minimal",
+      "desc": "Videofy Minimal is a local tool for turning news articles into short videos for digital signage screens."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "fastapi"
+    ],
+    "one": "Videofy Minimal",
+    "install_hints": [
+      "## Docker Compose",
+      "docker compose up --build",
+      "Docker Compose reads the same local `.env` file for values such as `OPENAI_API_KEY` and `ELEVENLABS_API_KEY`."
+    ]
+  },
+  "compact": {
+    "id": "videofy-minimal",
+    "name": "videofy_minimal",
+    "cat": 12,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "fastapi",
+      "javascript",
+      "multimedia",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "Videofy Minimal",
+    "alt": [],
+    "doc": "human/fichas/videofy-minimal.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "videofy_minimal",
+    "cat": 12,
+    "desc": "Videofy Minimal is a local tool for turning news articles into short videos for digital signage screens.",
+    "stack": "python, typescript, javascript, react, docker, fastapi",
+    "choose_if": "quieres videofy minimal",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "whisper",
+      "faster-whisper"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/schibsted/videofy_minimal.git",
+    "doc": "human/fichas/videofy-minimal.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:46.333091+00:00"
+  }
+}

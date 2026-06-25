@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-06-25T05:00:21.601807+00:00",
+  "profile": {
+    "id": "superpowers",
+    "name": "superpowers",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\superpowers",
+    "repo_url": "https://github.com/obra/superpowers.git",
+    "manifests": [
+      "package.json"
+    ],
+    "intro": {
+      "title": "Superpowers",
+      "desc": "Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript"
+    ],
+    "one": "Superpowers",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "superpowers",
+    "name": "superpowers",
+    "cat": 2,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "typescript"
+    ],
+    "one": "Superpowers",
+    "alt": [],
+    "doc": "human/fichas/superpowers.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "superpowers",
+    "cat": 2,
+    "desc": "Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them.",
+    "stack": "javascript/typescript, typescript, javascript",
+    "choose_if": "quieres superpowers",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/obra/superpowers.git",
+    "doc": "human/fichas/superpowers.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:21.601564+00:00"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-06-25T05:00:19.853712+00:00",
+  "profile": {
+    "id": "streamlit",
+    "name": "streamlit",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\streamlit",
+    "repo_url": "https://github.com/streamlit/streamlit.git",
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "intro": {
+      "title": "<img src=\"https://user-images.githubusercontent.com/7164864/217935870-c0bc60a3-6fc0-4047-b011-7b4c59488c91.png\" alt=\"Str",
+      "desc": "Welcome to Streamlit 👋."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript"
+    ],
+    "one": "Welcome to Streamlit 👋",
+    "install_hints": [
+      "$ pip install streamlit"
+    ]
+  },
+  "compact": {
+    "id": "streamlit",
+    "name": "streamlit",
+    "cat": 10,
+    "role": "platform",
+    "exec": "local",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "python",
+      "typescript"
+    ],
+    "one": "Welcome to Streamlit 👋",
+    "alt": [],
+    "doc": "human/fichas/streamlit.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "streamlit",
+    "cat": 10,
+    "desc": "Welcome to Streamlit 👋.",
+    "stack": "python, typescript",
+    "choose_if": "quieres <img src=\"https://user-images.githubusercontent.com/7164864/217935870-c0bc60a3-6fc0-4047-b",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "uplot"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/streamlit/streamlit.git",
+    "doc": "human/fichas/streamlit.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T05:00:19.853506+00:00"
+  }
+}

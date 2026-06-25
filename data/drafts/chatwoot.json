@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-06-25T04:56:30.488990+00:00",
+  "profile": {
+    "id": "chatwoot",
+    "name": "chatwoot",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\chatwoot",
+    "repo_url": "https://github.com/chatwoot/chatwoot.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "docker-compose.yaml"
+    ],
+    "intro": {
+      "title": "<img src=\"./.github/screenshots/header.png#gh-light-mode-only\" width=\"100%\" alt=\"Header light mode\"/>",
+      "desc": "The modern customer support platform, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "docker"
+    ],
+    "one": "___",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "chatwoot",
+    "name": "chatwoot",
+    "cat": 1,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "typescript"
+    ],
+    "one": "___",
+    "alt": [],
+    "doc": "human/fichas/chatwoot.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "chatwoot",
+    "cat": 1,
+    "desc": "The modern customer support platform, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc.",
+    "stack": "javascript/typescript, typescript, javascript, docker",
+    "choose_if": "quieres ___",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "twenty-main",
+      "evolution-api",
+      "whatsapp-agentkit"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/chatwoot/chatwoot.git",
+    "doc": "human/fichas/chatwoot.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:30.488788+00:00"
+  }
+}

@@ -1,6 +1,6 @@
 # fluxer
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-plataforma generativa emergente con foco en audio y video mejorados, ofrecida como cliente Canary web/desktop; su API y self-host aún están en finalización.
+As of this writing (15 June 2026), we are working to finalise the API and self-hosting documentation over the next few days.
 
 ## Que problema resuelve
 
-quieres probar algo nuevo
+quieres > [!caution]
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para image, audio, video, local. Stack declarado: web/TS.
+Aporta valor en `platform` para javascript, javascript-typescript, typescript. Stack declarado: javascript/typescript, typescript, javascript.
 
 ## Cuando usarlo
 
-quieres probar algo nuevo
+quieres > [!caution]
 
 ## Cuando NO usarlo
 
-necesitas estabilidad de producción (API aún en finalización).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, typescript, javascript
 
 ## Instalacion detectada
 
@@ -36,7 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `open-generative-ai`
+- `whisper`
+- `faster-whisper`
+- `whisperx`
 
 ## Contra que compite
 
@@ -48,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con open-generative-ai cuando el flujo necesite mas de una pieza.
+Combinar con whisper, faster-whisper, whisperx cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres probar algo nuevo. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres > [!caution]. No debe instalarse por inercia.

@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-06-25T04:59:25.555648+00:00",
+  "profile": {
+    "id": "openwa",
+    "name": "OpenWA",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\OpenWA",
+    "repo_url": "https://github.com/rmyndharis/OpenWA.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "OpenWA** is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres"
+    ],
+    "one": "---",
+    "install_hints": [
+      "git clone https://github.com/rmyndharis/OpenWA.git",
+      "docker compose -f docker-compose.dev.yml up -d",
+      "git clone https://github.com/rmyndharis/OpenWA.git"
+    ]
+  },
+  "compact": {
+    "id": "openwa",
+    "name": "OpenWA",
+    "cat": 9,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "---",
+    "alt": [],
+    "doc": "human/fichas/openwa.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "OpenWA",
+    "cat": 9,
+    "desc": "OpenWA** is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres",
+    "choose_if": "quieres ---",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "skills",
+      "agency-agents",
+      "taste-skill"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/rmyndharis/OpenWA.git",
+    "doc": "human/fichas/openwa.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:25.555410+00:00"
+  }
+}

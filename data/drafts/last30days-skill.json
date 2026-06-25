@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-06-25T04:58:04.669062+00:00",
+  "profile": {
+    "id": "last30days-skill",
+    "name": "last30days-skill",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\last30days-skill",
+    "repo_url": "https://github.com/mvanhorn/last30days-skill.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "/last30days",
+      "desc": "An AI agent-led search engine scored by upvotes, likes, and real money - not editors.**."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react"
+    ],
+    "one": "/last30days",
+    "install_hints": [
+      "git clone https://github.com/mvanhorn/last30days-skill.git"
+    ]
+  },
+  "compact": {
+    "id": "last30days-skill",
+    "name": "last30days-skill",
+    "cat": 2,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "python",
+      "react",
+      "skills",
+      "typescript"
+    ],
+    "one": "/last30days",
+    "alt": [],
+    "doc": "human/fichas/last30days-skill.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "last30days-skill",
+    "cat": 2,
+    "desc": "An AI agent-led search engine scored by upvotes, likes, and real money - not editors.**.",
+    "stack": "python, typescript, javascript, react",
+    "choose_if": "quieres /last30days",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/mvanhorn/last30days-skill.git",
+    "doc": "human/fichas/last30days-skill.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:04.668835+00:00"
+  }
+}

@@ -24,3 +24,16 @@ def detect_manifests(repo: Path) -> list[Path]:
         if candidate.exists():
             found.append(candidate)
     return found
+
+
+def infer_primary_language(manifests: list[str]) -> str:
+    ms = " ".join(manifests).lower()
+    if "pyproject" in ms or "requirements" in ms or "setup.py" in ms:
+        return "python"
+    if "package.json" in ms:
+        return "javascript/typescript"
+    return ""
+
+
+def has_docker(manifests: list[str]) -> bool:
+    return any("docker" in m.lower() for m in manifests)

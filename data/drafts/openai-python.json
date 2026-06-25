@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:59:15.724116+00:00",
+  "profile": {
+    "id": "openai-python",
+    "name": "openai-python",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\openai-python",
+    "repo_url": "https://github.com/openai/openai-python.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "OpenAI Python API library",
+      "desc": "The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.9+ application. The library includes type definitions for all request params and response fields, and offers both synchronous and asynchronous clients powered by [httpx](https://github.com/encode/httpx)."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "postgres"
+    ],
+    "one": "OpenAI Python API library",
+    "install_hints": [
+      "pip install openai",
+      "pip install openai[aiohttp]",
+      "pip install 'openai[bedrock]'"
+    ]
+  },
+  "compact": {
+    "id": "openai-python",
+    "name": "openai-python",
+    "cat": 7,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "OpenAI Python API library",
+    "alt": [],
+    "doc": "human/fichas/openai-python.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "openai-python",
+    "cat": 7,
+    "desc": "The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.9+ application. The library includes type definitions for all request params and response fields, and offers both synchronous and asynchronous clients powered by httpx.",
+    "stack": "python, typescript, javascript, postgres",
+    "choose_if": "quieres openai python api library",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "codegraph",
+      "gitnexus",
+      "deepseek-coder"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/openai/openai-python.git",
+    "doc": "human/fichas/openai-python.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:15.723849+00:00"
+  }
+}

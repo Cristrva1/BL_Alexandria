@@ -1,6 +1,6 @@
 # agency-agents
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-conjunto de playbooks y agentes especializados (incluye un Digital Marketing Pro) diseñados para operar una agencia multicanal a escala.
+A complete AI agency at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
 
 ## Que problema resuelve
 
-operas una agencia
+quieres 🎭 the agency: ai specialists ready to transform your workflow
 
 ## Por que tiene valor
 
-Aporta valor en `skill` para skills, agents. Stack declarado: Python, Node.js.
+Aporta valor en `skill` para multimedia, postgres, python, react, typescript, whisper. Stack declarado: python, typescript, react, postgres, whisper.
 
 ## Cuando usarlo
 
-operas una agencia
+quieres 🎭 the agency: ai specialists ready to transform your workflow
 
 ## Cuando NO usarlo
 
-eres un solo proyecto pequeño.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, react, postgres, whisper
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `marketingskills`
-- `geo-seo-claude`
+- `openwa`
+- `skills`
+- `taste-skill`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con marketingskills, geo-seo-claude cuando el flujo necesite mas de una pieza.
+Combinar con openwa, skills, taste-skill cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si operas una agencia. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres 🎭 the agency: ai specialists ready to transform your workflow. No debe instalarse por inercia.

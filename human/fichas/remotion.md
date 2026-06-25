@@ -1,6 +1,6 @@
 # remotion
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4.
+Remotion is a framework for **creating videos programmatically using React.**.
 
 ## Que problema resuelve
 
-generas video a escala con React
+quieres remotion is a framework for **creating videos programmatically using react.**
 
 ## Por que tiene valor
 
-Aporta valor en `library` para media, video. Stack declarado: Node.js, React.
+Aporta valor en `runtime` para javascript, javascript-typescript, multimedia, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react.
 
 ## Cuando usarlo
 
-generas video a escala con React
+quieres remotion is a framework for **creating videos programmatically using react.**
 
 ## Cuando NO usarlo
 
-trabajas en Python ([moviepy](#-moviepy)).
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, typescript, javascript, react
 
 ## Instalacion detectada
 
@@ -36,11 +40,13 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `open-generative-ai`
+- `openwa`
+- `skills`
+- `agency-agents`
 
 ## Contra que compite
 
-- `moviepy`
+- Ninguno declarado.
 
 ## Riesgos
 
@@ -48,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con open-generative-ai cuando el flujo necesite mas de una pieza.
+Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si generas video a escala con React. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres remotion is a framework for **creating videos programmatically using react.**. No debe instalarse por inercia.

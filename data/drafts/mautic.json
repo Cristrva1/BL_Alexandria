@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-06-25T04:58:27.845011+00:00",
+  "profile": {
+    "id": "mautic",
+    "name": "mautic",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\mautic",
+    "repo_url": "https://github.com/mautic/mautic.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "<div align=\"center\">",
+      "desc": "Open Source Marketing Automation Software."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "postgres"
+    ],
+    "one": "Open Source Marketing Automation Software.",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "mautic",
+    "name": "mautic",
+    "cat": 1,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "Open Source Marketing Automation Software.",
+    "alt": [],
+    "doc": "human/fichas/mautic.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "mautic",
+    "cat": 1,
+    "desc": "Open Source Marketing Automation Software.",
+    "stack": "javascript/typescript, python, typescript, javascript, postgres",
+    "choose_if": "quieres open source marketing automation software.",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "twenty-main",
+      "evolution-api",
+      "whatsapp-agentkit"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/mautic/mautic.git",
+    "doc": "human/fichas/mautic.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:27.844804+00:00"
+  }
+}

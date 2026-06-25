@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:57:26.518340+00:00",
+  "profile": {
+    "id": "gfpgan",
+    "name": "GFPGAN",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\GFPGAN",
+    "repo_url": "https://github.com/TencentARC/GFPGAN.git",
+    "manifests": [
+      "requirements.txt",
+      "setup.py"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "1. :boom: **Updated** online demo: [![Replicate](https://img.shields.io/static/v1?label=Demo&message=Replicate&color=blue)](https://replicate.com/tencentarc/gfpgan). Here is the [backup](https://replicate.com/xinntao/gfpgan). 1. :boom: **Updated** online demo: [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/Xintao/GFPGAN) 1. ."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "postgres"
+    ],
+    "one": "1. :boom: **Updated** online demo: [![Replicate](https://img.shields.io/static/v1?label=Demo&message=Replicate&color=blue)](https://replicate.com/tencentarc/gfpgan). Here is the [backup](https://replicate.com/xinntao/gfpgan).",
+    "install_hints": [
+      "git clone https://github.com/TencentARC/GFPGAN.git",
+      "pip install basicsr",
+      "pip install facexlib"
+    ]
+  },
+  "compact": {
+    "id": "gfpgan",
+    "name": "GFPGAN",
+    "cat": 11,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "1. :boom: **Updated** online demo: [![Replicate](https://img.shields.io/static/v1?label=Demo&message=Replicate&color=blue)](https://replicate.com/tencentarc/gfpgan). Here is the [backup](https://replicate.com/xinntao/gfpgan).",
+    "alt": [],
+    "doc": "human/fichas/gfpgan.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "GFPGAN",
+    "cat": 11,
+    "desc": "1. :boom: **Updated** online demo: ![Replicate](https://replicate.com/tencentarc/gfpgan). Here is the backup. 1. :boom: **Updated** online demo: ![Huggingface Gradio](https://huggingface.co/spaces/Xintao/GFPGAN) 1. .",
+    "stack": "python, typescript, javascript, postgres",
+    "choose_if": "quieres 1. :boom: **updated** online demo: [![replicate](https://img.shields.io/static/v",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "comfyui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/TencentARC/GFPGAN.git",
+    "doc": "human/fichas/gfpgan.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:26.518136+00:00"
+  }
+}

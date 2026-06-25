@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T04:58:22.931219+00:00",
+  "profile": {
+    "id": "magicui",
+    "name": "magicui",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\magicui",
+    "repo_url": "https://github.com/magicuidesign/magicui.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml"
+    ],
+    "intro": {
+      "title": "<img alt=\"Magic UI - UI Library for Design Engineers\" src=\"https://cdn.magicui.design/bento-grid.gif\" width=\"100%\">",
+      "desc": "UI Library for Design Engineers."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react"
+    ],
+    "one": "UI Library for Design Engineers",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "magicui",
+    "name": "magicui",
+    "cat": 9,
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "frontend",
+      "javascript",
+      "javascript-typescript",
+      "react",
+      "typescript"
+    ],
+    "one": "UI Library for Design Engineers",
+    "alt": [],
+    "doc": "human/fichas/magicui.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "magicui",
+    "cat": 9,
+    "desc": "UI Library for Design Engineers.",
+    "stack": "javascript/typescript, typescript, javascript, react",
+    "choose_if": "quieres ui library for design engineers",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "openwa",
+      "skills",
+      "agency-agents"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/magicuidesign/magicui.git",
+    "doc": "human/fichas/magicui.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:22.930944+00:00"
+  }
+}

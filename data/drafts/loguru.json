@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-25T04:58:17.972917+00:00",
+  "profile": {
+    "id": "loguru",
+    "name": "loguru",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\loguru",
+    "repo_url": "https://github.com/Delgan/loguru.git",
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "______________________________________________________________________."
+    },
+    "features": [
+      "[Ready to use out of the box without boilerplate](#ready-to-use-out-of-the-box-without-boilerplate)",
+      "[Modern string formatting using braces style](#modern-string-formatting-using-braces-style)",
+      "[Exceptions catching within threads or main](#exceptions-catching-within-threads-or-main)",
+      "[Pretty logging with colors](#pretty-logging-with-colors)",
+      "[Asynchronous, Thread-safe, Multiprocess-safe](#asynchronous-thread-safe-multiprocess-safe)",
+      "[Fully descriptive exceptions](#fully-descriptive-exceptions)"
+    ],
+    "stack": [
+      "python",
+      "typescript"
+    ],
+    "one": "______________________________________________________________________",
+    "install_hints": [
+      "pip install loguru"
+    ]
+  },
+  "compact": {
+    "id": "loguru",
+    "name": "loguru",
+    "cat": 6,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "python",
+      "typescript"
+    ],
+    "one": "______________________________________________________________________",
+    "alt": [],
+    "doc": "human/fichas/loguru.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "loguru",
+    "cat": 6,
+    "desc": "______________________________________________________________________.",
+    "stack": "python, typescript",
+    "choose_if": "quieres ______________________________________________________________________",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "mem0",
+      "agentmemory",
+      "mempalace"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/Delgan/loguru.git",
+    "doc": "human/fichas/loguru.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:58:17.972713+00:00"
+  }
+}

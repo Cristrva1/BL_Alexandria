@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-06-25T04:57:41.364079+00:00",
+  "profile": {
+    "id": "guia",
+    "name": "guia",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\guia",
+    "repo_url": "",
+    "manifests": [],
+    "intro": {
+      "title": "🌌 Catálogo de Repositorios de IA & Automatización",
+      "desc": "Catálogo operativo de los **156 repositorios** locales del workspace, diseñado para **entender, comparar, elegir y combinar** repos rápido."
+    },
+    "features": [],
+    "stack": [
+      "typescript",
+      "whisper",
+      "comfy"
+    ],
+    "one": "🌌 Catálogo de Repositorios de IA & Automatización",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "guia",
+    "name": "guia",
+    "cat": 2,
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "comfy",
+      "frontend",
+      "multimedia",
+      "typescript",
+      "whisper"
+    ],
+    "one": "🌌 Catálogo de Repositorios de IA & Automatización",
+    "alt": [],
+    "doc": "human/fichas/guia.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "guia",
+    "cat": 2,
+    "desc": "Catálogo operativo de los **156 repositorios** locales del workspace, diseñado para **entender, comparar, elegir y combinar** repos rápido.",
+    "stack": "typescript, whisper, comfy",
+    "choose_if": "quieres 🌌 catálogo de repositorios de ia & automatización",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "",
+    "doc": "human/fichas/guia.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:57:41.363803+00:00"
+  }
+}

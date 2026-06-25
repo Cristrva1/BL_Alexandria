@@ -1,6 +1,6 @@
 # 🌌 Catálogo de Repositorios de IA & Automatización
 
-Catálogo operativo de los **171 repositorios** locales del workspace, diseñado para **entender, comparar, elegir y combinar** repos rápido.
+Catálogo operativo de los **185 repositorios** locales del workspace, diseñado para **entender, comparar, elegir y combinar** repos rápido.
 
 ---
 
@@ -28,7 +28,7 @@ Cada ficha abre con una línea **Etiquetas:** que nombra cada valor — `Ejecuci
 ---
 
 <!-- BL_ALEXANDRIA_STATUS -->
-> Estado actual: **171 repos detectados** en la biblioteca local; **156 repos curados** con ficha completa en esta guía. Los repos nuevos sin ficha curada se agregan al apéndice automático sin reescribir el cuerpo editorial.
+> Estado actual: **185 repos detectados** en la biblioteca local; **186 repos curados** con ficha completa en esta guía. Los repos nuevos sin ficha curada se agregan al apéndice automático sin reescribir el cuerpo editorial.
 <!-- /BL_ALEXANDRIA_STATUS -->
 
 ## 📂 Mapa de categorías
@@ -2451,25 +2451,40 @@ Conversión de formatos, generación de slides y herramientas de PDF.
 <!-- BL_ALEXANDRIA_AUTO_APPEND_START -->
 ## 🆕 Repos detectados pendientes de curaduría
 
-Generado: 2026-06-23T20:37:40.215555+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 Esta sección se actualiza automáticamente para no destruir la guía curada. Integra manualmente estas fichas al cuerpo principal cuando quieras dejar la guía completamente editorial.
 
 | Repo | Categoria | Instalacion | Resumen |
 |---|---:|---|---|
-| [appsmith](human/fichas/appsmith.md) | 0 | reference_only | --- |
-| [ArchiveBox](human/fichas/archivebox.md) | 0 | reference_only | ▶️ <a href="https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart">Quickstart</a> \| <a href="https://demo.archivebox.io">Demo</a> \| <a href="https://github.com/ArchiveBox/ArchiveBox">GitHub</a> \| <a href="https://github.com/ArchiveBox/ArchiveBox/wiki">Docu... |
-| [autogen](human/fichas/autogen.md) | 0 | reference_only | AutoGen [![Maintenance Mode](https://img.shields.io/badge/status-maintenance%20mode-orange)](https://github.com/microsoft/agent-framework) |
-| [awesome-mcp-clients](human/fichas/awesome-mcp-clients.md) | 0 | reference_only | Awesome MCP Clients [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) |
-| [budibase](human/fichas/budibase.md) | 0 | reference_only | Budibase |
-| [defending-code-reference-harness](human/fichas/defending-code-reference-harness.md) | 0 | reference_only | Defending Code Reference Harness |
-| [github-mcp-server](human/fichas/github-mcp-server.md) | 0 | reference_only | GitHub MCP Server |
-| [gradio](human/fichas/gradio.md) | 0 | reference_only | \| [Documentation](https://gradio.app/docs/) |
-| [Guardrails](human/fichas/guardrails.md) | 0 | reference_only | NVIDIA NeMo Guardrails Library |
-| [guia](human/fichas/guia.md) | 0 | reference_only | 🌌 Catálogo de Repositorios de IA & Automatización |
-| [NeMo](human/fichas/nemo.md) | 0 | reference_only | **NVIDIA NeMo Speech** |
-| [Nemotron](human/fichas/nemotron.md) | 0 | reference_only | NVIDIA Nemotron Developer Repository |
-| [repomix](human/fichas/repomix.md) | 0 | global | Need discussion? Join us on <a href="https://discord.gg/wNYzTwZFku">Discord</a>!<br> |
-| [ToolJet](human/fichas/tooljet.md) | 0 | reference_only | ToolJet is the open-source foundation of ToolJet AI - the AI-native platform for building and deploying internal tools, workflows and AI agents. The community edition provides a powerful visual builder, drag-and-drop UI, and integrations with databases, APIs,... |
-| [tools](human/fichas/tools.md) | 0 | reference_only | Repo detectado localmente, pendiente de ficha curada. |
+| [tools](human/fichas/tools.md) | 0 | reference_only |  |
+| [appsmith](human/fichas/appsmith.md) | 1 | reference_only | Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our [website](https://www.appsmith.com?utm_source=github&utm_medium=organic&utm_campaign=readme. |
+| [budibase](human/fichas/budibase.md) | 1 | reference_only | AI Agents that run your operations Budibase is an open-source operations platform that saves engineers 100s of hours building Agents, Apps and Automations, securely. |
+| [browser-harness](human/fichas/browser-harness.md) | 2 | reference_only | Browser Harness ♞. |
+| [guia](human/fichas/guia.md) | 2 | reference_only | Catálogo operativo de los **156 repositorios** locales del workspace, diseñado para **entender, comparar, elegir y combinar** repos rápido. |
+| [last30days-skill](human/fichas/last30days-skill.md) | 2 | reference_only | An AI agent-led search engine scored by upvotes, likes, and real money - not editors.**. |
+| [OpenMontage](human/fichas/openmontage.md) | 2 | reference_only | Turn your AI coding assistant into a full video production studio. Describe what you want in plain language — your agent handles research, scripting, asset generation, editing, and final composition. |
+| [skills_remotion](human/fichas/skills-remotion.md) | 2 | reference_only | This is an internal package and has no documentation. |
+| [stitch-sdk](human/fichas/stitch-sdk.md) | 2 | reference_only | Generate UI screens from text prompts and extract their HTML and screenshots programmatically. |
+| [autogen](human/fichas/autogen.md) | 3 | reference_only | AutoGen ![Maintenance Mode](https://github.com/microsoft/agent-framework). |
+| [codebase-memory-mcp](human/fichas/codebase-memory-mcp.md) | 3 | reference_only | The fastest and most efficient code intelligence engine for AI coding agents.** Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for macOS, Linux, and Windows — download, run `install`, done. |
+| [defending-code-reference-harness](human/fichas/defending-code-reference-harness.md) | 3 | reference_only | A reference implementation for autonomous vulnerability discovery and remediation with Claude, based on our learnings from partnering with security teams at several organizations since launching Claude Mythos Preview. For a write up of these learnings along with best practices, see the accompanying blog post (also avail. |
+| [Guardrails](human/fichas/guardrails.md) | 3 | reference_only | LATEST RELEASE / DEVELOPMENT VERSION**: The develop branch tracks the latest top of tree development. The latest released version is 0.21.0. |
+| [ponytail](human/fichas/ponytail.md) | 3 | reference_only | You know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty lines; he looks at them, says nothing, and replaces them with one. |
+| [repomix](human/fichas/repomix.md) | 3 | global | Need discussion? Join us on Discord ! . |
+| [ToolJet](human/fichas/tooljet.md) | 3 | reference_only | :star: If you find ToolJet useful, please consider giving us a star on GitHub! Your support helps us continue to innovate and deliver exciting features. |
+| [ArchiveBox](human/fichas/archivebox.md) | 4 | reference_only | ▶️ Quickstart \| Demo \| GitHub \| Documentation \| Info & Motivation \| Communi. |
+| [awesome-mcp-clients](human/fichas/awesome-mcp-clients.md) | 5 | reference_only | A curated list of awesome Model Context Protocol (MCP) clients. |
+| [github-mcp-server](human/fichas/github-mcp-server.md) | 5 | reference_only | The GitHub MCP Server connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate workflows. All through natural language interactions. |
+| [daily_stock_analysis](human/fichas/daily-stock-analysis.md) | 9 | reference_only | 🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱. |
+| [gradio](human/fichas/gradio.md) | 9 | reference_only | English \| 中文. |
+| [Nemotron](human/fichas/nemotron.md) | 9 | deferred | Open and efficient models for agentic AI.** Training recipes, deployment guides, and use-case examples for the Nemotron family. |
+| [stitch-skills](human/fichas/stitch-skills.md) | 9 | reference_only | A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, and Cursor. |
+| [ui](human/fichas/ui.md) | 9 | reference_only | A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code. **Use this to build your own component library**. |
+| [vllm](human/fichas/vllm.md) | 9 | reference_only | Easy, fast, and cheap LLM serving for everyone. |
+| [LuxTTS](human/fichas/luxtts.md) | 11 | reference_only | LuxTTS is an lightweight zipvoice based text-to-speech model designed for high quality voice cloning and realistic generation at speeds exceeding 150x realtime. |
+| [NeMo](human/fichas/nemo.md) | 11 | reference_only | Checkout our HuggingFace🤗 collection for the latest open weight checkpoints and demos!. |
+| [FFmpeg](human/fichas/ffmpeg.md) | 12 | reference_only | FFmpeg is a collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata. |
+| [VibeVoice](human/fichas/vibevoice.md) | 12 | reference_only | 🎙️ VibeVoice: Open-Source Frontier Voice AI. |
+| [video-use](human/fichas/video-use.md) | 12 | reference_only | Introducing **video-use** — edit videos with Claude Code. 100% open source. |
 <!-- BL_ALEXANDRIA_AUTO_APPEND_END -->

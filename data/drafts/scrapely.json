@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-25T04:59:56.937376+00:00",
+  "profile": {
+    "id": "scrapely",
+    "name": "scrapely",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\scrapely",
+    "repo_url": "https://github.com/scrapy/scrapely.git",
+    "manifests": [
+      "requirements.txt",
+      "setup.py"
+    ],
+    "intro": {
+      "title": "",
+      "desc": ".. image:: https://api.travis-ci.org/scrapy/scrapely.svg?branch=master :target: https://travis-ci.org/scrapy/scrapely."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript"
+    ],
+    "one": "========",
+    "install_hints": [
+      "pip install scrapely"
+    ]
+  },
+  "compact": {
+    "id": "scrapely",
+    "name": "scrapely",
+    "cat": 4,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "python",
+      "scraping",
+      "typescript"
+    ],
+    "one": "========",
+    "alt": [],
+    "doc": "human/fichas/scrapely.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "scrapely",
+    "cat": 4,
+    "desc": ".. image:: https://api.travis-ci.org/scrapy/scrapely.svg?branch=master :target: https://travis-ci.org/scrapy/scrapely.",
+    "stack": "python, typescript, javascript",
+    "choose_if": "quieres ========",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "firecrawl",
+      "crawl4ai",
+      "scrapy"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/scrapy/scrapely.git",
+    "doc": "human/fichas/scrapely.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:56.937151+00:00"
+  }
+}

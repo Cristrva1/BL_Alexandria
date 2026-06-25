@@ -1,6 +1,6 @@
 # n8n-mcp
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-servidor MCP que expone a la IA la documentación y los esquemas de los más de 1.845 nodos de n8n para ayudar a construir y depurar flujos.
+A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations. Deploy in minutes to give Claude and other AI assistants deep knowledge about n8n's 1,845 workflow automation nodes (816 core + 1,029 community).
 
 ## Que problema resuelve
 
-generas flujos n8n con IA
+quieres n8n-mcp
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para mcp. Stack declarado: Node.js/TypeScript, MCP.
+Aporta valor en `platform` para automation, docker, javascript, javascript-typescript, langchain, mcp, python, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, docker, langchain.
 
 ## Cuando usarlo
 
-generas flujos n8n con IA
+quieres n8n-mcp
 
 ## Cuando NO usarlo
 
-no usas n8n.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+javascript/typescript, python, typescript, javascript, docker, langchain
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `n8n`
-- `n8n-skills`
+- `twenty-main`
+- `evolution-api`
+- `whatsapp-agentkit`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con n8n, n8n-skills cuando el flujo necesite mas de una pieza.
+Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si generas flujos n8n con IA. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres n8n-mcp. No debe instalarse por inercia.

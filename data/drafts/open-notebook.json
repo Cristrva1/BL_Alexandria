@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-25T04:59:14.084837+00:00",
+  "profile": {
+    "id": "open-notebook",
+    "name": "open-notebook",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\open-notebook",
+    "repo_url": "https://github.com/lfnovo/open-notebook.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<a id=\"readme-top\"></a>",
+      "desc": "An open source, privacy-focused alternative to Google's Notebook LM!."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "react",
+      "docker",
+      "postgres",
+      "fastapi",
+      "langchain"
+    ],
+    "one": "An open source, privacy-focused alternative to Google's Notebook LM!",
+    "install_hints": [
+      "docker compose up -d"
+    ]
+  },
+  "compact": {
+    "id": "open-notebook",
+    "name": "open-notebook",
+    "cat": 8,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "fastapi",
+      "langchain",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "An open source, privacy-focused alternative to Google's Notebook LM!",
+    "alt": [],
+    "doc": "human/fichas/open-notebook.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "open-notebook",
+    "cat": 8,
+    "desc": "An open source, privacy-focused alternative to Google's Notebook LM!.",
+    "stack": "python, typescript, react, docker, postgres, fastapi, langchain",
+    "choose_if": "quieres an open source, privacy-focused alternative to google's notebook lm!",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [],
+    "alternatives": [],
+    "repo": "https://github.com/lfnovo/open-notebook.git",
+    "doc": "human/fichas/open-notebook.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:59:14.084630+00:00"
+  }
+}

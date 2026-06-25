@@ -1,12 +1,12 @@
 # ui-shadcn vs heroui
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:03:55.373584+00:00
 
 | Criterio | ui (shadcn) | heroui |
 |---|---|---|
-| Uso real | colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. | librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. |
-| Elegir si | quieres dueño del código | quieres calidad + accesibilidad |
-| Evitar si | prefieres una lib "llave en mano" ([heroui](#-heroui)). | quieres control copy-paste ([ui](#-ui-shadcn)). |
+| Uso real | colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. | packages/react/README.md |
+| Elegir si | quieres dueño del código | quieres packages/react/readme.md |
+| Evitar si | prefieres una lib "llave en mano" ([heroui](#-heroui)). | ya tienes una herramienta equivalente o no encaja con tu stack actual |
 | Instalacion | reference_only | reference_only |
 
 ## Regla practica

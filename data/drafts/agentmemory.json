@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-06-25T04:56:00.516220+00:00",
+  "profile": {
+    "id": "agentmemory",
+    "name": "agentmemory",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\agentmemory",
+    "repo_url": "https://github.com/rohitg00/agentmemory.git",
+    "manifests": [
+      "package.json",
+      "docker-compose.yml"
+    ],
+    "intro": {
+      "title": "<p align=\"center\">",
+      "desc": "Your coding agent remembers everything. No more re-explaining. Built on <a href=\"https://github.com/iii-hq/iii\">iii engine</a> Persistent memory for Claude Code, GitHub Copilot CLI, Cursor, Gemini CLI, Codex CLI, Hermes, OpenClaw, pi, OpenCode, and any MCP client."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "Your coding agent remembers everything. No more re-explaining.",
+    "install_hints": [
+      "pip install iii-sdk         # Python",
+      "git clone https://github.com/rohitg00/agentmemory.git && cd agentmemory",
+      "This starts agentmemory with a local `iii-engine` if `iii` is already installed, or falls back to Docker Compose if Docker is available. RES"
+    ]
+  },
+  "compact": {
+    "id": "agentmemory",
+    "name": "agentmemory",
+    "cat": 6,
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "Your coding agent remembers everything. No more re-explaining.",
+    "alt": [],
+    "doc": "human/fichas/agentmemory.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "agentmemory",
+    "cat": 6,
+    "desc": "Your coding agent remembers everything. No more re-explaining. Built on iii engine Persistent memory for Claude Code, GitHub Copilot CLI, Cursor, Gemini CLI, Codex CLI, Hermes, OpenClaw, pi, OpenCode, and any MCP client.",
+    "stack": "javascript/typescript, python, typescript, javascript, docker, postgres",
+    "choose_if": "quieres your coding agent remembers everything. no more re-explaining.",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "mem0",
+      "mempalace",
+      "loguru"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/rohitg00/agentmemory.git",
+    "doc": "human/fichas/agentmemory.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:56:00.515982+00:00"
+  }
+}

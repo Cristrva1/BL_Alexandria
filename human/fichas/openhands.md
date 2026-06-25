@@ -1,6 +1,6 @@
 # OpenHands
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
@@ -8,27 +8,31 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-plataforma de agentes que ejecutan acciones reales en entornos de desarrollo (ex-OpenDevin). El agente puede leer y editar código, correr comandos y navegar la web dentro de un sandbox.
+Run OpenHands, Claude Code, Codex, Gemini, or any ACP-compatible agent across local, remote, and cloud backends.
 
 ## Que problema resuelve
 
-quieres un agente que "haga", no solo hable
+quieres run openhands, claude code, codex, gemini, or any acp-compatible agent across lo
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para agents. Stack declarado: Python/TS, Docker.
+Aporta valor en `platform` para agents, automation, docker, javascript, python, typescript. Stack declarado: python, typescript, javascript, docker.
 
 ## Cuando usarlo
 
-quieres un agente que "haga", no solo hable
+quieres run openhands, claude code, codex, gemini, or any acp-compatible agent across lo
 
 ## Cuando NO usarlo
 
-solo necesitas chat/RAG.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
 reference_only
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, docker
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `ecc`
-- `sandbox`
+- `awesome-claude-code`
+- `agents-towards-production`
+- `ag2`
 
 ## Contra que compite
 
@@ -49,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con ecc, sandbox cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres un agente que "haga", no solo hable. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres run openhands, claude code, codex, gemini, or any acp-compatible agent across lo. No debe instalarse por inercia.

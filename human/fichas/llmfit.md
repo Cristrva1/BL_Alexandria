@@ -1,34 +1,38 @@
 # llmfit
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-herramienta para evaluar y medir el "fit" y la calidad de LLMs en una tarea concreta, orientada a comparar modelos con datos.
+New: Community Leaderboard** — Browse real-world performance data from actual users. Press `b` to see measured tok/s, TTFT, and VRAM for any GPU — not just yours. Pick from 27+ hardware presets (RTX 5090 to Apple M1) with `H` to compare real numbers before you buy or build.
 
 ## Que problema resuelve
 
-necesitas elegir modelo con datos
+quieres llmfit
 
 ## Por que tiene valor
 
-Aporta valor en `library` para llmops. Stack declarado: Go/Python.
+Aporta valor en `app` para docker, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, docker, postgres.
 
 ## Cuando usarlo
 
-necesitas elegir modelo con datos
+quieres llmfit
 
 ## Cuando NO usarlo
 
-ya tienes el modelo decidido.
+ya tienes una herramienta equivalente o no encaja con tu stack actual
 
 ## Tipo de instalacion
 
-reference_only
+deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, javascript, docker, postgres
 
 ## Instalacion detectada
 
@@ -36,8 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `litellm`
-- `langfuse`
+- `openwa`
+- `skills`
+- `agency-agents`
 
 ## Contra que compite
 
@@ -45,12 +50,12 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con litellm, langfuse cuando el flujo necesite mas de una pieza.
+Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas elegir modelo con datos. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres llmfit. No debe instalarse por inercia.

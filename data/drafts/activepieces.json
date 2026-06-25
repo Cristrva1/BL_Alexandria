@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-06-25T04:55:53.960334+00:00",
+  "profile": {
+    "id": "activepieces",
+    "name": "activepieces",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\activepieces",
+    "repo_url": "https://github.com/activepieces/activepieces.git",
+    "manifests": [
+      "package.json",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "<h1 align=\"center\">",
+      "desc": "href=\"https://activepieces.com\"."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "docker"
+    ],
+    "one": "target=\"_blank\"",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "activepieces",
+    "name": "activepieces",
+    "cat": 1,
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "typescript"
+    ],
+    "one": "target=\"_blank\"",
+    "alt": [],
+    "doc": "human/fichas/activepieces.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "activepieces",
+    "cat": 1,
+    "desc": "href=\"https://activepieces.com\".",
+    "stack": "javascript/typescript, typescript, javascript, docker",
+    "choose_if": "quieres target=\"_blank\"",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "twenty-main",
+      "evolution-api",
+      "whatsapp-agentkit"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/activepieces/activepieces.git",
+    "doc": "human/fichas/activepieces.md",
+    "_auto": true,
+    "_generated_at": "2026-06-25T04:55:53.960109+00:00"
+  }
+}

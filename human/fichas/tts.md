@@ -1,34 +1,38 @@
 # TTS
 
-Generado: 2026-06-23T16:56:54.761958+00:00
+Generado: 2026-06-25T05:05:06.808623+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz.
+📣 ⓍTTSv2 is here with 16 languages and better performance across the board. 📣 ⓍTTS fine-tuning code is out. Check the example recipes. 📣 ⓍTTS can now stream with <200ms latency. 📣 ⓍTTS, our production TTS model that can speak 13 languages, is released Blog Post, Demo, [Docs](.
 
 ## Que problema resuelve
 
-quieres flexibilidad
+quieres 🐸coqui.ai news
 
 ## Por que tiene valor
 
-Aporta valor en `library` para media, training, audio. Stack declarado: Python, modelos descargables.
+Aporta valor en `library` para docker, python, typescript. Stack declarado: python, typescript, docker.
 
 ## Cuando usarlo
 
-quieres flexibilidad
+quieres 🐸coqui.ai news
 
 ## Cuando NO usarlo
 
-necesitas tiempo real puro ([supertonic](#-supertonic)).
+el caso no requiere generación multimedia o ya usas alternativas dedicadas
 
 ## Tipo de instalacion
 
-reference_only
+deferred
+
+## Stack / tecnologia detectada
+
+python, typescript, docker
 
 ## Instalacion detectada
 
@@ -36,21 +40,22 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `whisperx`
-- `moviepy`
+- `litellm`
+- `cosmos`
+- `comfyui`
 
 ## Contra que compite
 
-- `supertonic`
+- Ninguno declarado.
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
-Combinar con whisperx, moviepy cuando el flujo necesite mas de una pieza.
+Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres flexibilidad. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres 🐸coqui.ai news. No debe instalarse por inercia.
