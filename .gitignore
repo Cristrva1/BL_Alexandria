@@ -19,6 +19,9 @@ data/conflicts/
 data/decisions/
 data/reports/
 data/snapshots/
+data/*.bak
+data/readmes_backup.zip
+tmp_*.py
 registry/repos.yaml
 ai_index/REPOS.scan.json
 ai_index/REPOS.detail.json
