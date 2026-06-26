@@ -1,6 +1,6 @@
 # n8n_io
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -24,7 +24,7 @@ quieres n8n - secure workflow automation for technical teams
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+ya usas la ficha [n8n](#-n8n) (es el mismo proyecto).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `twenty-main`
-- `evolution-api`
-- `whatsapp-agentkit`
+- `n8n`
 
 ## Contra que compite
 
@@ -54,7 +52,7 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
+Combinar con n8n cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 

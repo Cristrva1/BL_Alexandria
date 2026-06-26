@@ -2513,7 +2513,7 @@ Conversión de formatos, generación de slides y herramientas de PDF.
 <!-- BL_ALEXANDRIA_AUTO_APPEND_START -->
 ## 🆕 Repos detectados pendientes de curaduría
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 Esta sección se actualiza automáticamente para no destruir la guía curada. Integra manualmente estas fichas al cuerpo principal cuando quieras dejar la guía completamente editorial.
 

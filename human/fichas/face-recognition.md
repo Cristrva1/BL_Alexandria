@@ -1,6 +1,6 @@
 # face_recognition
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ _You can also read a translated version of this file in Chinese 简体中文版 
 
 ## Que problema resuelve
 
-quieres face recognition
+necesitas reconocimiento facial básico y rápido de implementar
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para docker, postgres, python, typescript. Stack decla
 
 ## Cuando usarlo
 
-quieres face recognition
+necesitas reconocimiento facial básico y rápido de implementar
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+buscas restauración/animación ([GFPGAN](#-gfpgan)/[LivePortrait](#-liveportrait)) o precisión de producción (mejor DeepFace/InsightFace).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `litellm`
-- `cosmos`
-- `comfyui`
+- `deep-live-cam`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
+Combinar con deep-live-cam cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres face recognition. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si necesitas reconocimiento facial básico y rápido de implementar. No debe instalarse por inercia.

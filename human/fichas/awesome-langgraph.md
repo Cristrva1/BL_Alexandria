@@ -1,6 +1,6 @@
 # awesome-LangGraph
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ REFERENCIA
 
 ## Que problema resuelve
 
-quieres <!--lint disable awesome-badge awesome-list-item double-link no-heading-punctuation table-
+construyes con LangGraph y quieres patrones de referencia
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para automation, docker, fastapi, javascript, javasc
 
 ## Cuando usarlo
 
-quieres <!--lint disable awesome-badge awesome-list-item double-link no-heading-punctuation table-
+construyes con LangGraph y quieres patrones de referencia
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+no usas ese ecosistema.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+- `langchain`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con langchain cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres <!--lint disable awesome-badge awesome-list-item double-link no-heading-punctuation table-. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si construyes con LangGraph y quieres patrones de referencia. No debe instalarse por inercia.

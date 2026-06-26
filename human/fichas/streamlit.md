@@ -1,6 +1,6 @@
 # streamlit
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Welcome to Streamlit 👋.
 
 ## Que problema resuelve
 
-quieres <img src="https://user-images.githubusercontent.com/7164864/217935870-c0bc60a3-6fc0-4047-b
+quieres una UI de datos al vuelo y prototipos rápidos
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para python, typescript. Stack declarado: python, typ
 
 ## Cuando usarlo
 
-quieres <img src="https://user-images.githubusercontent.com/7164864/217935870-c0bc60a3-6fc0-4047-b
+quieres una UI de datos al vuelo y prototipos rápidos
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas una app productiva con control fino del frontend ([dash](#-dash)).
 
 ## Tipo de instalacion
 
@@ -40,7 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `uplot`
+- `dash`
+- `data-science-ipython-notebooks`
 
 ## Contra que compite
 
@@ -52,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con uplot cuando el flujo necesite mas de una pieza.
+Combinar con dash, data-science-ipython-notebooks cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres <img src="https://user-images.githubusercontent.com/7164864/217935870-c0bc60a3-6fc0-4047-b. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres una UI de datos al vuelo y prototipos rápidos. No debe instalarse por inercia.

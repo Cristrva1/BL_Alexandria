@@ -1,6 +1,6 @@
 # Open-Generative-AI
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ The free, open-source alternative to AI Video Platforms.** Generate AI images an
 
 ## Que problema resuelve
 
-quieres open generative ai — open-source alternative to ai video platforms
+quieres un hub de generación multi-modal sin atarte a un SaaS
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para comfy, docker, javascript, javascript-typescript, m
 
 ## Cuando usarlo
 
-quieres open generative ai — open-source alternative to ai video platforms
+quieres un hub de generación multi-modal sin atarte a un SaaS
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+ya tienes tu pipeline local ([ComfyUI](#-comfyui)) o necesitas control fino por nodo.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+- `remotion`
+- `marketing de agencia`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
+Combinar con remotion, marketing de agencia cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres open generative ai — open-source alternative to ai video platforms. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres un hub de generación multi-modal sin atarte a un SaaS. No debe instalarse por inercia.

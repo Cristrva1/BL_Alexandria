@@ -1,6 +1,6 @@
 # awesome-dataviz
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 
 ## Que problema resuelve
 
-quieres awesome dataviz
+buscas opciones de visualización y aún no has elegido
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para automation, javascript, postgres, python, react
 
 ## Cuando usarlo
 
-quieres awesome dataviz
+buscas opciones de visualización y aún no has elegido
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+ya elegiste tu librería y solo necesitas usarla.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+- `echarts`
+- `awesome-bigdata`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con echarts, awesome-bigdata cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres awesome dataviz. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si buscas opciones de visualización y aún no has elegido. No debe instalarse por inercia.

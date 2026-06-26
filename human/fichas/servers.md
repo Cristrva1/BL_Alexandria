@@ -1,6 +1,6 @@
 # servers
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ This repository is a collection of *reference implementations* for the Model Con
 
 ## Que problema resuelve
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+quieres ejemplos canónicos y plantillas fiables
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para javascript, javascript-typescript, postgres, py
 
 ## Cuando usarlo
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+quieres ejemplos canónicos y plantillas fiables
 
 ## Cuando NO usarlo
 
-prefieres conexiones directas sin protocolo estándar
+buscas soluciones listas para producción (son demos educativas, no hardening).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `claude-plugins-official`
-- `n8n-skills`
-- `mcp`
+- `mcp-use`
+- `awesome-mcp-servers`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
+Combinar con mcp-use, awesome-mcp-servers cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres ejemplos canónicos y plantillas fiables. No debe instalarse por inercia.

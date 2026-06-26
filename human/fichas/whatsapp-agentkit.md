@@ -1,6 +1,6 @@
 # whatsapp-agentkit
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Construye tu propio agente de WhatsApp con inteligencia artificial en menos de 3
 
 ## Que problema resuelve
 
-quieres agentkit — whatsapp ai agent builder
+quieres arrancar sin partir de cero y te vale con lo que Claude Code genere
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para agents, automation, docker, fastapi, javascript
 
 ## Cuando usarlo
 
-quieres agentkit — whatsapp ai agent builder
+quieres arrancar sin partir de cero y te vale con lo que Claude Code genere
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas control fino del stack o ya tienes el bot hecho.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `twenty-main`
 - `evolution-api`
-- `activepieces`
+- `n8n-mcp`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con twenty-main, evolution-api, activepieces cuando el flujo necesite mas de una pieza.
+Combinar con evolution-api, n8n-mcp cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres agentkit — whatsapp ai agent builder. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres arrancar sin partir de cero y te vale con lo que Claude Code genere. No debe instalarse por inercia.

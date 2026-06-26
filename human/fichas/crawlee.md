@@ -1,6 +1,6 @@
 # crawlee
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Crawlee covers your crawling and scraping end-to-end and **helps you build relia
 
 ## Que problema resuelve
 
-quieres crawlee covers your crawling and scraping end-to-end and **helps you build relia
+scrapeas con Node y necesitas antibloqueo
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para docker, javascript, javascript-typescript, python
 
 ## Cuando usarlo
 
-quieres crawlee covers your crawling and scraping end-to-end and **helps you build relia
+scrapeas con Node y necesitas antibloqueo
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+trabajas en Python ([crawlee-python](#-crawlee-python)) o no necesitas evasión.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `firecrawl`
-- `crawl4ai`
-- `scrapy`
+- `playwright`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
+Combinar con playwright cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres crawlee covers your crawling and scraping end-to-end and **helps you build relia. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si scrapeas con Node y necesitas antibloqueo. No debe instalarse por inercia.

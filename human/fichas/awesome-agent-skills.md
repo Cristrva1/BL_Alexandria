@@ -1,6 +1,6 @@
 # awesome-agent-skills
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Hand-picked, not AI-slop generated.
 
 ## Que problema resuelve
 
-quieres hand-picked, not ai-slop generated.
+valoras respaldo de marca y curaduría
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para docker, fastapi, javascript, langchain, multimedia,
 
 ## Cuando usarlo
 
-quieres hand-picked, not ai-slop generated.
+valoras respaldo de marca y curaduría
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas máxima cantidad o variedad ([antigravity-awesome-skills](#-antigravity-awesome-skills)).
 
 ## Tipo de instalacion
 
@@ -58,4 +58,4 @@ Combinar con andrej-karpathy-skills, antigravity-awesome-skills, superpowers cua
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres hand-picked, not ai-slop generated.. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si valoras respaldo de marca y curaduría. No debe instalarse por inercia.

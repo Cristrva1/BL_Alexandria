@@ -1,6 +1,6 @@
 # videofy_minimal
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Videofy Minimal is a local tool for turning news articles into short videos for 
 
 ## Que problema resuelve
 
-quieres videofy minimal
+quieres reels simples ya, sin montar un pipeline entero
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para docker, fastapi, javascript, multimedia, python,
 
 ## Cuando usarlo
 
-quieres videofy minimal
+quieres reels simples ya, sin montar un pipeline entero
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+necesitas variantes programáticas a escala ([remotion](#-remotion)) o control fino por código ([moviepy](#-moviepy)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `fluxer`
 - `whisper`
-- `faster-whisper`
+- `supertonic`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con fluxer, whisper, faster-whisper cuando el flujo necesite mas de una pieza.
+Combinar con whisper, supertonic cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres videofy minimal. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres reels simples ya, sin montar un pipeline entero. No debe instalarse por inercia.

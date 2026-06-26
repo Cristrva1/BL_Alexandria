@@ -1,6 +1,6 @@
 # OpenHands
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Run OpenHands, Claude Code, Codex, Gemini, or any ACP-compatible agent across lo
 
 ## Que problema resuelve
 
-quieres run openhands, claude code, codex, gemini, or any acp-compatible agent across lo
+quieres un agente que "haga", no solo hable
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para agents, automation, docker, javascript, python, 
 
 ## Cuando usarlo
 
-quieres run openhands, claude code, codex, gemini, or any acp-compatible agent across lo
+quieres un agente que "haga", no solo hable
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+solo necesitas chat/RAG o no puedes correr Docker.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+- `ecc`
+- `sandbox`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con ecc, sandbox cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres run openhands, claude code, codex, gemini, or any acp-compatible agent across lo. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres un agente que "haga", no solo hable. No debe instalarse por inercia.

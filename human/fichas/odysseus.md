@@ -1,6 +1,6 @@
 # odysseus
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ A self-hosted AI workspace for chat, agents, research, documents, email, notes, 
 
 ## Que problema resuelve
 
-quieres a self-hosted ai workspace for chat, agents, research, documents, email, notes, 
+quieres operación privada todo-en-uno y aceptas operar la infra
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para agents, docker, javascript, postgres, python, types
 
 ## Cuando usarlo
 
-quieres a self-hosted ai workspace for chat, agents, research, documents, email, notes, 
+quieres operación privada todo-en-uno y aceptas operar la infra
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+prefieres SaaS gestionado sin mantenimiento.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,10 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `firecrawl`
-- `crawl4ai`
-- `scrapy`
+- `open-notebook`
+- `ecc`
+- `mem0`
+- `workspace privado`
 
 ## Contra que compite
 
@@ -54,8 +55,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
+Combinar con open-notebook, ecc, mem0, workspace privado cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres a self-hosted ai workspace for chat, agents, research, documents, email, notes, . No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres operación privada todo-en-uno y aceptas operar la infra. No debe instalarse por inercia.

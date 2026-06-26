@@ -1,6 +1,6 @@
 # normalize.css
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ src="https://necolas.github.io/normalize.css/logo.svg" alt="Normalize Logo" widt
 
 ## Que problema resuelve
 
-quieres normalize.css
+quieres base CSS uniforme y ligera
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para javascript, javascript-typescript, typescript. St
 
 ## Cuando usarlo
 
-quieres normalize.css
+quieres base CSS uniforme y ligera
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+ya usas el preflight de Tailwind, que cubre lo mismo.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `firecrawl`
-- `crawl4ai`
-- `scrapy`
+- `tailwindcss`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
+Combinar con tailwindcss cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres normalize.css. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres base CSS uniforme y ligera. No debe instalarse por inercia.

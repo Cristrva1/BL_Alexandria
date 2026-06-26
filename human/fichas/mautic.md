@@ -1,6 +1,6 @@
 # mautic
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Open Source Marketing Automation Software.
 
 ## Que problema resuelve
 
-quieres open source marketing automation software.
+necesitas automatización de marketing seria y soberana
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para automation, javascript, javascript-typescript, p
 
 ## Cuando usarlo
 
-quieres open source marketing automation software.
+necesitas automatización de marketing seria y soberana
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+te basta una newsletter simple ([listmonk](#-listmonk)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `twenty-main`
-- `evolution-api`
-- `whatsapp-agentkit`
+- `listmonk`
+- `marketingskills`
+- `marketing de agencia`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
+Combinar con listmonk, marketingskills, marketing de agencia cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres open source marketing automation software.. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si necesitas automatización de marketing seria y soberana. No debe instalarse por inercia.

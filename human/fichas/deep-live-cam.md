@@ -1,6 +1,6 @@
 # Deep-Live-Cam
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Real-time face swap and video deepfake with a single click and only a single ima
 
 ## Que problema resuelve
 
-quieres deep-live-cam 2.1.6
+necesitas swap en vivo legítimo con consentimiento
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `app` para multimedia, postgres, python, typescript, vision. Sta
 
 ## Cuando usarlo
 
-quieres deep-live-cam 2.1.6
+necesitas swap en vivo legítimo con consentimiento
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+no puedes garantizar uso ético/consentimiento o no tienes GPU.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `litellm`
-- `cosmos`
-- `comfyui`
+- `face-recognition`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
+Combinar con face-recognition cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres deep-live-cam 2.1.6. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si necesitas swap en vivo legítimo con consentimiento. No debe instalarse por inercia.

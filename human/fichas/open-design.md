@@ -1,6 +1,6 @@
 # open-design
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ REFERENCIA
 
 ## Que problema resuelve
 
-quieres open design: the open-source claude design alternative
+generas UI desde texto y quieres edición visual
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para agents, docker, frontend, javascript, javascript-
 
 ## Cuando usarlo
 
-quieres open design: the open-source claude design alternative
+generas UI desde texto y quieres edición visual
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+prefieres editar visualmente sobre tu código existente ([plasmic](#-plasmic)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `tailwindcss`
+- `heroui`
+- `web app moderna`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con tailwindcss, heroui, web app moderna cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres open design: the open-source claude design alternative. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si generas UI desde texto y quieres edición visual. No debe instalarse por inercia.

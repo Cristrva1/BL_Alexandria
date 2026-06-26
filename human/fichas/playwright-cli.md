@@ -1,6 +1,6 @@
 # playwright-cli
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Playwright CLI with SKILLS.
 
 ## Que problema resuelve
 
-quieres playwright-cli
+tu agente vive en CLI y el contexto es un recurso caro
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para javascript, javascript-typescript, python, typescri
 
 ## Cuando usarlo
 
-quieres playwright-cli
+tu agente vive en CLI y el contexto es un recurso caro
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas estado persistente entre sesiones o un servidor MCP con recursos expuestos (usa Playwright MCP).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+- `playwright`
+- `browser-use`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
+Combinar con playwright, browser-use cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres playwright-cli. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si tu agente vive en CLI y el contexto es un recurso caro. No debe instalarse por inercia.

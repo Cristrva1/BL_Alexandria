@@ -1,6 +1,6 @@
 # OmniVoice-Studio
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ OmniVoice Studio is in active beta.** Things may break between releases. For the
 
 ## Que problema resuelve
 
-quieres > [!warning]
+quieres suite de voz completa local (dictado + clonación + dubbing)
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para docker, fastapi, javascript, multimedia, python,
 
 ## Cuando usarlo
 
-quieres > [!warning]
+quieres suite de voz completa local (dictado + clonación + dubbing)
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+solo necesitas TTS simple por CLI/librería ([TTS](#-tts)) o estabilidad de producción.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `fluxer`
-- `whisper`
-- `faster-whisper`
+- `whisperx`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con fluxer, whisper, faster-whisper cuando el flujo necesite mas de una pieza.
+Combinar con whisperx cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres > [!warning]. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres suite de voz completa local (dictado + clonación + dubbing). No debe instalarse por inercia.

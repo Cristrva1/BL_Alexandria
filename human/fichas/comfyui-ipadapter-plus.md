@@ -1,6 +1,6 @@
 # ComfyUI_IPAdapter_plus
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ The IPAdapter are very powerful models for image-to-image conditioning. The subj
 
 ## Que problema resuelve
 
-quieres comfyui ipadapter plus
+trabajas en ComfyUI y necesitas consistencia visual por referencia
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para comfy, frontend, javascript, postgres, python, ty
 
 ## Cuando usarlo
 
-quieres comfyui ipadapter plus
+trabajas en ComfyUI y necesitas consistencia visual por referencia
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+no usas ComfyUI o te basta con prompts de estilo.
 
 ## Tipo de instalacion
 
@@ -58,4 +58,4 @@ Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres comfyui ipadapter plus. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si trabajas en ComfyUI y necesitas consistencia visual por referencia. No debe instalarse por inercia.

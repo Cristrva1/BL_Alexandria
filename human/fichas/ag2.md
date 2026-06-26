@@ -1,6 +1,6 @@
 # ag2
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ AG2 was evolved from AutoGen. Fully open-sourced. We invite collaborators from a
 
 ## Que problema resuelve
 
-quieres ag2 was evolved from autogen. fully open-sourced. we invite collaborators from a
+construyes multiagente serio en Python
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para automation, docker, python, react, typescript. S
 
 ## Cuando usarlo
 
-quieres ag2 was evolved from autogen. fully open-sourced. we invite collaborators from a
+construyes multiagente serio en Python
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+te basta un agente único o quieres orquestación visual.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `crewai`
+- `langchain`
+- `langfuse`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, agents-towards-production, crewai cuando el flujo necesite mas de una pieza.
+Combinar con langchain, langfuse cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres ag2 was evolved from autogen. fully open-sourced. we invite collaborators from a. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si construyes multiagente serio en Python. No debe instalarse por inercia.

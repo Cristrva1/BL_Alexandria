@@ -1,6 +1,6 @@
 # Automatización, Mensajería & CRM
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 | Repo | Rol | Instalacion | Decision | Uso real |
 |---|---|---|---|---|
@@ -20,3 +20,4 @@ Generado: 2026-06-25T05:05:06.808623+00:00
 | openevolve | library | reference_only | reference | 🧬 The most advanced open-source evolutionary coding agent**. |
 | twenty-main | runtime | reference_only | reference | Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack. |
 | whatsapp-agentkit | directory | reference_only | reference | Construye tu propio agente de WhatsApp con inteligencia artificial en menos de 30 minutos. No necesitas saber programar. Claude Code construye todo por ti. |
+| OpenWA | platform | reference_only | reference | OpenWA** is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls. |

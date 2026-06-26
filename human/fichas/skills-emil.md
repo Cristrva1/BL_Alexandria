@@ -1,6 +1,6 @@
 # skills_emil
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ For designers and engineers to help them build better user interfaces.
 
 ## Que problema resuelve
 
-quieres skills for design engineers
+trabajas diseño+dev en equipo y sufres el handoff
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para frontend, skills, typescript. Stack declarado: type
 
 ## Cuando usarlo
 
-quieres skills for design engineers
+trabajas diseño+dev en equipo y sufres el handoff
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+buscas componentes listos o trabajas solo.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `design.md`
+- `ui-ux-pro-max-skill`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con design.md, ui-ux-pro-max-skill cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres skills for design engineers. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si trabajas diseño+dev en equipo y sufres el handoff. No debe instalarse por inercia.

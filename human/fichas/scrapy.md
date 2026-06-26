@@ -1,6 +1,6 @@
 # scrapy
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ REFERENCIA
 
 ## Que problema resuelve
 
-quieres .. |logo| image:: https://raw.githubusercontent.com/scrapy/scrapy/master/docs/_static/logo
+quieres un crawler sólido y configurable a escala
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para python, scraping. Stack declarado: python.
 
 ## Cuando usarlo
 
-quieres .. |logo| image:: https://raw.githubusercontent.com/scrapy/scrapy/master/docs/_static/logo
+quieres un crawler sólido y configurable a escala
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+buscas salida lista para LLM o algo puntual sin curva de framework.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `firecrawl`
-- `crawl4ai`
-- `crawlee`
+- `scrapely`
+- `crawlee-python`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con firecrawl, crawl4ai, crawlee cuando el flujo necesite mas de una pieza.
+Combinar con scrapely, crawlee-python cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres .. |logo| image:: https://raw.githubusercontent.com/scrapy/scrapy/master/docs/_static/logo. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres un crawler sólido y configurable a escala. No debe instalarse por inercia.

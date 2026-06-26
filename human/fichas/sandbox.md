@@ -1,6 +1,6 @@
 # sandbox
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ REFERENCIA
 
 ## Que problema resuelve
 
-quieres aio sandbox - all-in-one agent sandbox environment
+quieres aislar la ejecución de agentes y reproducibilidad
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para agents, automation, docker, javascript, javascrip
 
 ## Cuando usarlo
 
-quieres aio sandbox - all-in-one agent sandbox environment
+quieres aislar la ejecución de agentes y reproducibilidad
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+te basta correr local sin sandbox o no puedes asumir el overhead de Docker.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+- `openhands`
+- `ecc`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con openhands, ecc cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres aio sandbox - all-in-one agent sandbox environment. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres aislar la ejecución de agentes y reproducibilidad. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # whisperX
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Recall.ai - Meeting Transcription API.
 
 ## Que problema resuelve
 
-quieres whisperx
+necesitas subtítulos precisos o diarización
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para multimedia, python, typescript, whisper. Stack de
 
 ## Cuando usarlo
 
-quieres whisperx
+necesitas subtítulos precisos o diarización
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+te basta texto plano ([whisper](#-whisper)) o no quieres gestionar tokens de HF.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `fluxer`
 - `whisper`
-- `faster-whisper`
+- `moviepy`
+- `pipeline de reels`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con fluxer, whisper, faster-whisper cuando el flujo necesite mas de una pieza.
+Combinar con whisper, moviepy, pipeline de reels cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres whisperx. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si necesitas subtítulos precisos o diarización. No debe instalarse por inercia.

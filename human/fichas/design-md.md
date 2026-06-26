@@ -1,6 +1,6 @@
 # design.md
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ A format specification for describing a visual identity to coding agents. DESIGN
 
 ## Que problema resuelve
 
-quieres design.md
+quieres consistencia de marca con IA y usas agentes para UI
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para frontend, javascript, javascript-typescript, ty
 
 ## Cuando usarlo
 
-quieres design.md
+quieres consistencia de marca con IA y usas agentes para UI
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+no usas agentes para generar código de UI.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `impeccable`
+- `skills-emil`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con impeccable, skills-emil cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres design.md. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres consistencia de marca con IA y usas agentes para UI. No debe instalarse por inercia.

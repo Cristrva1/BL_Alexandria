@@ -1,6 +1,6 @@
 # browser-use
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ REFERENCIA
 
 ## Que problema resuelve
 
-quieres <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/
+quieres navegación como humano y tolerancia a cambios de UI
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para automation, docker, python, typescript. Stack de
 
 ## Cuando usarlo
 
-quieres <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/
+quieres navegación como humano y tolerancia a cambios de UI
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas scripts deterministas y baratos ([playwright](#-playwright)) o no quieres depender de un LLM por paso.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `twenty-main`
-- `evolution-api`
-- `whatsapp-agentkit`
+- `playwright`
+- `gpt-researcher`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
+Combinar con playwright, gpt-researcher cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres navegación como humano y tolerancia a cambios de UI. No debe instalarse por inercia.

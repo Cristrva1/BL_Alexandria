@@ -348,7 +348,7 @@
         "postgres",
         "typescript"
       ],
-      "one": "---",
+      "one": "Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service manageme",
       "alt": [],
       "doc": "human/fichas/appsmith.md"
     },
@@ -367,7 +367,7 @@
         "python",
         "typescript"
       ],
-      "one": "---",
+      "one": "🌤️ Want to skip the setup? Use our cloud for faster, scalable, stealth-enabled browser automation!.",
       "alt": [],
       "doc": "human/fichas/browser-use.md"
     },
@@ -388,7 +388,7 @@
         "postgres",
         "typescript"
       ],
-      "one": "Budibase",
+      "one": "AI Agents that run your operations Budibase is an open-source operations platform that saves engineers 100s of hours bui",
       "alt": [],
       "doc": "human/fichas/budibase.md"
     },
@@ -408,7 +408,7 @@
         "javascript-typescript",
         "typescript"
       ],
-      "one": "___",
+      "one": "The modern customer support platform, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc.",
       "alt": [],
       "doc": "human/fichas/chatwoot.md"
     },
@@ -450,7 +450,7 @@
         "postgres",
         "typescript"
       ],
-      "one": "-----",
+      "one": "Huginn is a system for building agents that perform automated tasks for you online. They can read the web, watch for eve",
       "alt": [],
       "doc": "human/fichas/huginn.md"
     },
@@ -557,7 +557,7 @@
         "python",
         "typescript"
       ],
-      "one": "n8n-MCP",
+      "one": "A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, p",
       "alt": [],
       "doc": "human/fichas/n8n-mcp.md"
     },
@@ -577,7 +577,7 @@
         "react",
         "typescript"
       ],
-      "one": ">",
+      "one": "The open-source communication infrastructure for agents and products.",
       "alt": [],
       "doc": "human/fichas/novu.md"
     },
@@ -596,7 +596,7 @@
         "python",
         "typescript"
       ],
-      "one": "OpenEvolve",
+      "one": "🧬 The most advanced open-source evolutionary coding agent**.",
       "alt": [],
       "doc": "human/fichas/openevolve.md"
     },
@@ -618,7 +618,7 @@
         "react",
         "typescript"
       ],
-      "one": "Why Twenty",
+      "one": "Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts a",
       "alt": [],
       "doc": "human/fichas/twenty-main.md"
     },
@@ -717,7 +717,7 @@
         "python",
         "typescript"
       ],
-      "one": "autoresearch",
+      "one": "One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synch",
       "alt": [],
       "doc": "human/fichas/autoresearch.md"
     },
@@ -835,7 +835,7 @@
         "python",
         "typescript"
       ],
-      "one": "Hermes Agent ☤",
+      "one": "The self-improving AI agent built by Nous Research.** It's the only agent with a built-in learning loop — it creates ski",
       "alt": [],
       "doc": "human/fichas/hermes-agent.md"
     },
@@ -851,7 +851,7 @@
       "tags": [
         "typescript"
       ],
-      "one": "Humanizer",
+      "one": "A skill for Claude Code and OpenCode that removes signs of AI-generated writing from text, making it sound more natural ",
       "alt": [],
       "doc": "human/fichas/humanizer.md"
     },
@@ -871,7 +871,7 @@
         "skills",
         "typescript"
       ],
-      "one": "/last30days",
+      "one": "An AI agent-led search engine scored by upvotes, likes, and real money - not editors.**.",
       "alt": [],
       "doc": "human/fichas/last30days-skill.md"
     },
@@ -892,7 +892,7 @@
         "react",
         "typescript"
       ],
-      "one": "LLM Council",
+      "one": "The idea of this repo is that instead of asking a question to your favorite LLM provider (e.g. OpenAI GPT 5.1, Google Ge",
       "alt": [],
       "doc": "human/fichas/llm-council.md"
     },
@@ -932,7 +932,7 @@
         "react",
         "typescript"
       ],
-      "one": "Multica",
+      "one": "Your next 10 hires won't be human.**.",
       "alt": [],
       "doc": "human/fichas/multica.md"
     },
@@ -951,7 +951,7 @@
         "python",
         "typescript"
       ],
-      "one": "nanoGPT",
+      "one": "Update Nov 2025** nanoGPT has a new and improved cousin called nanochat. It is very likely you meant to use/find nanocha",
       "alt": [],
       "doc": "human/fichas/nanogpt.md"
     },
@@ -971,7 +971,7 @@
         "python",
         "typescript"
       ],
-      "one": "notebooklm-py",
+      "one": "A Comprehensive NotebookLM Skill & Unofficial Python API.** Full programmatic access to NotebookLM's features—including ",
       "alt": [],
       "doc": "human/fichas/notebooklm-py.md"
     },
@@ -1016,7 +1016,7 @@
         "typescript",
         "whisper"
       ],
-      "one": "---",
+      "one": "Turn your AI coding assistant into a full video production studio. Describe what you want in plain language — your agent",
       "alt": [],
       "doc": "human/fichas/openmontage.md"
     },
@@ -1035,7 +1035,7 @@
         "python",
         "typescript"
       ],
-      "one": "playwright-cli",
+      "one": "Playwright CLI with SKILLS.",
       "alt": [],
       "doc": "human/fichas/playwright-cli.md"
     },
@@ -1095,7 +1095,7 @@
         "skills",
         "typescript"
       ],
-      "one": "SkillSpector",
+      "one": "Security scanner for AI agent skills.** Detect vulnerabilities, malicious patterns, and security risks before installing",
       "alt": [],
       "doc": "human/fichas/skillspector.md"
     },
@@ -1129,7 +1129,7 @@
       "tags": [
         "typescript"
       ],
-      "one": "Stop Slop",
+      "one": "A skill for removing AI tells from prose.",
       "alt": [],
       "doc": "human/fichas/stop-slop.md"
     },
@@ -1147,7 +1147,7 @@
         "javascript-typescript",
         "typescript"
       ],
-      "one": "Superpowers",
+      "one": "Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable s",
       "alt": [],
       "doc": "human/fichas/superpowers.md"
     },
@@ -1316,7 +1316,7 @@
         "mcp",
         "multimedia"
       ],
-      "one": "> [!IMPORTANT]",
+      "one": "A curated list of awesome Model Context Protocol (MCP) servers.",
       "alt": [],
       "doc": "human/fichas/awesome-mcp-servers.md"
     },
@@ -1357,7 +1357,7 @@
         "python",
         "typescript"
       ],
-      "one": "·",
+      "one": "Fast and Flexible Multi-Agent Automation Framework.",
       "alt": [],
       "doc": "human/fichas/crewai.md"
     },
@@ -1378,7 +1378,7 @@
         "react",
         "typescript"
       ],
-      "one": "Dash",
+      "one": "Dash is the most downloaded, trusted Python framework for building ML & data science web apps*.",
       "alt": [],
       "doc": "human/fichas/dash.md"
     },
@@ -1660,7 +1660,7 @@
         "react",
         "typescript"
       ],
-      "one": "&nbsp;",
+      "one": "to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
       "alt": [],
       "doc": "human/fichas/mcp-use.md"
     },
@@ -1723,7 +1723,7 @@
         "postgres",
         "typescript"
       ],
-      "one": "> [!Note]",
+      "one": "This started as a side project that blew up; not production grade and you'll hit bugs, but hopefully it covers what you ",
       "alt": [],
       "doc": "human/fichas/openscreen.md"
     },
@@ -1744,7 +1744,7 @@
         "python",
         "typescript"
       ],
-      "one": "🎭 Playwright",
+      "one": "Playwright is a framework for web automation and testing. It drives Chromium, Firefox, and WebKit with a single API — in",
       "alt": [],
       "doc": "human/fichas/playwright.md"
     },
@@ -1766,7 +1766,7 @@
         "react",
         "typescript"
       ],
-      "one": "---",
+      "one": "You know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty l",
       "alt": [],
       "doc": "human/fichas/ponytail.md"
     },
@@ -1811,7 +1811,7 @@
         "react",
         "typescript"
       ],
-      "one": "Ruflo",
+      "one": "An agent meta-harness for Claude Code and Codex.**.",
       "alt": [],
       "doc": "human/fichas/ruflo.md"
     },
@@ -1856,7 +1856,7 @@
         "scraping",
         "typescript"
       ],
-      "one": "&middot;",
+      "one": "Scrapling is an adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl.",
       "alt": [],
       "doc": "human/fichas/scrapling.md"
     },
@@ -1898,7 +1898,7 @@
         "python",
         "typescript"
       ],
-      "one": "---",
+      "one": "A 10 million document corpus takes 31 GB of RAM as float32. turbovec fits it in 4 GB - and searches it faster than FAISS",
       "alt": [],
       "doc": "human/fichas/turbovec.md"
     },
@@ -2057,7 +2057,7 @@
         "scraping",
         "typescript"
       ],
-      "one": "LLM Scraper",
+      "one": "LLM Scraper is a TypeScript library that allows you to extract structured data from **any** webpage using LLMs.",
       "alt": [],
       "doc": "human/fichas/llm-scraper.md"
     },
@@ -2094,7 +2094,7 @@
         "javascript-typescript",
         "typescript"
       ],
-      "one": "normalize.css",
+      "one": "src=\"https://necolas.github.io/normalize.css/logo.svg\" alt=\"Normalize Logo\" width=\"80\" height=\"80\" align=\"right\"> .",
       "alt": [],
       "doc": "human/fichas/normalize.css.md"
     },
@@ -2155,7 +2155,7 @@
         "scraping",
         "typescript"
       ],
-      "one": "========",
+      "one": ".. image:: https://api.travis-ci.org/scrapy/scrapely.svg?branch=master :target: https://travis-ci.org/scrapy/scrapely.",
       "alt": [],
       "doc": "human/fichas/scrapely.md"
     },
@@ -2172,7 +2172,7 @@
         "python",
         "scraping"
       ],
-      "one": "|logo|",
+      "one": ":target: https://scrapy.org.",
       "alt": [],
       "doc": "human/fichas/scrapy.md"
     },
@@ -2190,7 +2190,7 @@
         "scraping",
         "typescript"
       ],
-      "one": "snscrape",
+      "one": "snscrape is a scraper for social networking services (SNS). It scrapes things like user profiles, hashtags, or searches ",
       "alt": [],
       "doc": "human/fichas/snscrape.md"
     },
@@ -2290,7 +2290,7 @@
         "postgres",
         "typescript"
       ],
-      "one": "`google/mcp`",
+      "one": "This repository contains a list of Google's official Model Context Protocol (MCP) servers, guidance on how to deploy MCP",
       "alt": [],
       "doc": "human/fichas/mcp.md"
     },
@@ -2328,7 +2328,7 @@
         "react",
         "typescript"
       ],
-      "one": "Metabase",
+      "one": "The easiest way to get started with Metabase is to sign up for a free trial of Metabase Cloud.",
       "alt": [],
       "doc": "human/fichas/metabase.md"
     },
@@ -2350,7 +2350,7 @@
         "skills",
         "typescript"
       ],
-      "one": "n8n-skills",
+      "one": "Expert Claude Code skills for building flawless n8n workflows using the n8n-mcp MCP server**.",
       "alt": [],
       "doc": "human/fichas/n8n-skills.md"
     },
@@ -2386,7 +2386,7 @@
       "tags": [
         "typescript"
       ],
-      "one": "Status",
+      "one": "OpenCut is being rewritten from the ground up.** What's coming:.",
       "alt": [],
       "doc": "human/fichas/opencut.md"
     },
@@ -2486,7 +2486,7 @@
         "python",
         "typescript"
       ],
-      "one": "·",
+      "one": "New Memory Algorithm (April 2026).",
       "alt": [],
       "doc": "human/fichas/mem0.md"
     },
@@ -2506,7 +2506,7 @@
         "react",
         "typescript"
       ],
-      "one": "MemPalace",
+      "one": "Local-first AI memory. Verbatim storage, pluggable backend, 96.6% R@5 raw on LongMemEval — zero API calls.",
       "alt": [],
       "doc": "human/fichas/mempalace.md"
     },
@@ -2549,7 +2549,7 @@
         "react",
         "typescript"
       ],
-      "one": "CodeGraph",
+      "one": "Already installed? Run `codegraph upgrade` to update in place.",
       "alt": [],
       "doc": "human/fichas/codegraph.md"
     },
@@ -2604,7 +2604,7 @@
         "javascript-typescript",
         "typescript"
       ],
-      "one": "Apache ECharts",
+      "one": "Apache ECharts is a free, powerful charting and visualization library offering easy ways to add intuitive, interactive, ",
       "alt": [],
       "doc": "human/fichas/echarts.md"
     },
@@ -2626,7 +2626,7 @@
         "react",
         "typescript"
       ],
-      "one": "GitNexus",
+      "one": "⚠️ Important Notice:** GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name o",
       "alt": [],
       "doc": "human/fichas/gitnexus.md"
     },
@@ -2644,7 +2644,7 @@
         "python",
         "typescript"
       ],
-      "one": "llm.c",
+      "one": "LLMs in simple, pure C/CUDA with no need for 245MB of PyTorch or 107MB of cPython. Current focus is on pretraining, in p",
       "alt": [],
       "doc": "human/fichas/llm.c.md"
     },
@@ -2726,7 +2726,7 @@
         "python",
         "typescript"
       ],
-      "one": "📈 股票智能分析系统",
+      "one": "🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱.",
       "alt": [],
       "doc": "human/fichas/daily-stock-analysis.md"
     },
@@ -2745,7 +2745,7 @@
         "javascript-typescript",
         "typescript"
       ],
-      "one": "DESIGN.md",
+      "one": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structure",
       "alt": [],
       "doc": "human/fichas/design.md.md"
     },
@@ -2783,7 +2783,7 @@
         "python",
         "typescript"
       ],
-      "one": "GraphRAG",
+      "one": "👉 Microsoft Research Blog Post 👉 Read the docs 👉 GraphRAG Arxiv.",
       "alt": [],
       "doc": "human/fichas/graphrag.md"
     },
@@ -2840,7 +2840,7 @@
         "javascript-typescript",
         "typescript"
       ],
-      "one": "Impeccable",
+      "one": "Design guidance for AI coding agents. 1 skill, 23 commands, live browser iteration, and 44 deterministic detector rules ",
       "alt": [],
       "doc": "human/fichas/impeccable.md"
     },
@@ -2860,7 +2860,7 @@
         "python",
         "typescript"
       ],
-      "one": "llmfit",
+      "one": "New: Community Leaderboard** — Browse real-world performance data from actual users. Press `b` to see measured tok/s, TT",
       "alt": [],
       "doc": "human/fichas/llmfit.md"
     },
@@ -2921,7 +2921,7 @@
         "typescript",
         "whisper"
       ],
-      "one": "nanochat",
+      "one": "nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is",
       "alt": [],
       "doc": "human/fichas/nanochat.md"
     },
@@ -2969,7 +2969,7 @@
     {
       "id": "openwa",
       "name": "OpenWA",
-      "cat": 9,
+      "cat": 1,
       "role": "platform",
       "exec": "hybrid",
       "setup": "medium",
@@ -2984,7 +2984,7 @@
         "react",
         "typescript"
       ],
-      "one": "---",
+      "one": "OpenWA** is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging ",
       "alt": [],
       "doc": "human/fichas/openwa.md"
     },
@@ -3005,7 +3005,7 @@
         "react",
         "typescript"
       ],
-      "one": "PDFCraft",
+      "one": "Merge, split, compress, convert, and edit PDF files online without uploading to servers.",
       "alt": [],
       "doc": "human/fichas/pdfcraft.md"
     },
@@ -3048,7 +3048,7 @@
         "react",
         "typescript"
       ],
-      "one": "Plasmic",
+      "one": "The open-source visual builder for your codebase. Build beautiful apps and websites incredibly fast. Drag and drop your ",
       "alt": [],
       "doc": "human/fichas/plasmic.md"
     },
@@ -3202,7 +3202,7 @@
         "react",
         "typescript"
       ],
-      "one": "Introduction",
+      "one": "SWR is a React Hooks library for data fetching.",
       "alt": [],
       "doc": "human/fichas/swr.md"
     },
@@ -3238,7 +3238,7 @@
         "skills",
         "typescript"
       ],
-      "one": "Taste Skill",
+      "one": "Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typography, motion, and spacing instead of ",
       "alt": [],
       "doc": "human/fichas/taste-skill.md"
     },
@@ -3256,7 +3256,7 @@
         "javascript-typescript",
         "typescript"
       ],
-      "one": "three.js",
+      "one": "JavaScript 3D library.",
       "alt": [],
       "doc": "human/fichas/three.js.md"
     },
@@ -3275,7 +3275,7 @@
         "javascript-typescript",
         "typescript"
       ],
-      "one": "shadcn/ui",
+      "one": "A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own.",
       "alt": [],
       "doc": "human/fichas/ui.md"
     },
@@ -3368,7 +3368,7 @@
         "react",
         "typescript"
       ],
-      "one": "ComfyUI",
+      "one": "The most powerful and modular AI engine for content creation.**.",
       "alt": [],
       "doc": "human/fichas/comfyui.md"
     },
@@ -3425,7 +3425,7 @@
         "python",
         "typescript"
       ],
-      "one": "Cosmos",
+      "one": "Table of Contents.",
       "alt": [],
       "doc": "human/fichas/cosmos.md"
     },
@@ -3502,7 +3502,7 @@
         "python",
         "typescript"
       ],
-      "one": "Fooocus",
+      "one": "Fooocus is an image generating software (based on Gradio ).",
       "alt": [],
       "doc": "human/fichas/fooocus.md"
     },
@@ -3561,7 +3561,7 @@
         "python",
         "typescript"
       ],
-      "one": "🚅 LiteLLM",
+      "one": "LiteLLM is an open source AI Gateway that gives you a single, unified interface to call 100+ LLM providers — OpenAI, Ant",
       "alt": [],
       "doc": "human/fichas/litellm.md"
     },
@@ -3581,7 +3581,7 @@
         "python",
         "typescript"
       ],
-      "one": "🔥 Updates",
+      "one": "`2025/06/01`**: 🌍 Over the past year, **LivePortrait** has 🚀 become an efficient portrait-animation (humans, cats and do",
       "alt": [],
       "doc": "human/fichas/liveportrait.md"
     },
@@ -3601,7 +3601,7 @@
         "python",
         "typescript"
       ],
-      "one": "LuxTTS",
+      "one": "LuxTTS is an lightweight zipvoice based text-to-speech model designed for high quality voice cloning and realistic gener",
       "alt": [],
       "doc": "human/fichas/luxtts.md"
     },
@@ -3678,7 +3678,7 @@
         "python",
         "typescript"
       ],
-      "one": "🐸Coqui.ai News",
+      "one": "📣 ⓍTTSv2 is here with 16 languages and better performance across the board. 📣 ⓍTTS fine-tuning code is out. Check the ex",
       "alt": [],
       "doc": "human/fichas/tts.md"
     },
@@ -3715,7 +3715,7 @@
       "tags": [
         "typescript"
       ],
-      "one": "FFmpeg README",
+      "one": "FFmpeg is a collection of libraries and tools to process multimedia content such as audio, video, subtitles and related ",
       "alt": [],
       "doc": "human/fichas/ffmpeg.md"
     },
@@ -3733,7 +3733,7 @@
         "javascript-typescript",
         "typescript"
       ],
-      "one": "> [!CAUTION]",
+      "one": "As of this writing (15 June 2026), we are working to finalise the API and self-hosting documentation over the next few d",
       "alt": [],
       "doc": "human/fichas/fluxer.md"
     },
@@ -3773,7 +3773,7 @@
         "python",
         "typescript"
       ],
-      "one": "MoviePy",
+      "one": "MoviePy recently upgraded to v2.0, introducing major breaking changes. You can consult the last v1 docs here but beware ",
       "alt": [],
       "doc": "human/fichas/moviepy.md"
     },
@@ -3796,7 +3796,7 @@
         "typescript",
         "whisper"
       ],
-      "one": "> [!WARNING]",
+      "one": "OmniVoice Studio is in active beta.** Things may break between releases. For the latest features and fixes, clone the re",
       "alt": [],
       "doc": "human/fichas/omnivoice-studio.md"
     },
@@ -3852,7 +3852,7 @@
         "python",
         "typescript"
       ],
-      "one": "video-use",
+      "one": "Introducing **video-use** — edit videos with Claude Code. 100% open source.",
       "alt": [],
       "doc": "human/fichas/video-use.md"
     },
@@ -3916,7 +3916,7 @@
         "typescript",
         "whisper"
       ],
-      "one": "Whisper",
+      "one": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a m",
       "alt": [],
       "doc": "human/fichas/whisper.md"
     },
@@ -3954,7 +3954,7 @@
         "python",
         "typescript"
       ],
-      "one": "MarkItDown",
+      "one": "MarkItDown performs I/O with the privileges of the current process. Like open() or requests.get(), it will access resour",
       "alt": [],
       "doc": "human/fichas/markitdown.md"
     },

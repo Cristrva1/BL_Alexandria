@@ -1,6 +1,6 @@
 # GSAP
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ GSAP is a **framework-agnostic** JavaScript animation library that turns develop
 
 ## Que problema resuelve
 
-quieres gsap (greensock animation platform)
+necesitas animación avanzada y control fino de timelines
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para javascript, javascript-typescript, postgres, reac
 
 ## Cuando usarlo
 
-quieres gsap (greensock animation platform)
+necesitas animación avanzada y control fino de timelines
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+te basta animar componentes React con API declarativa ([motion](#-motion)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `three.js`
+- `motion`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con three.js, motion cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres gsap (greensock animation platform). No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si necesitas animación avanzada y control fino de timelines. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # LivePortrait
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ DIFERIR
 
 ## Que problema resuelve
 
-quieres liveportrait: efficient portrait animation with stitching and retargeting control
+animas retratos a partir de una foto
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para comfy, javascript, postgres, python, typescript. 
 
 ## Cuando usarlo
 
-quieres liveportrait: efficient portrait animation with stitching and retargeting control
+animas retratos a partir de una foto
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+necesitas swap en vivo ([Deep-Live-Cam](#-deep-live-cam)) o no tienes GPU.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `litellm`
-- `cosmos`
-- `comfyui`
+- `moviepy`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
+Combinar con moviepy cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres liveportrait: efficient portrait animation with stitching and retargeting control. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si animas retratos a partir de una foto. No debe instalarse por inercia.

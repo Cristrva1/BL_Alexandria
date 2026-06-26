@@ -1,6 +1,6 @@
 # turbovec
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ A 10 million document corpus takes 31 GB of RAM as float32. turbovec fits it in 
 
 ## Que problema resuelve
 
-quieres ---
+necesitas vector search veloz y embebido sin desplegar una DB
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para automation, langchain, python, typescript. Stac
 
 ## Cuando usarlo
 
-quieres ---
+necesitas vector search veloz y embebido sin desplegar una DB
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+ya usas una vector DB completa con persistencia y escalado horizontal.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+- `mem0`
+- `graphrag`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con mem0, graphrag cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres ---. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si necesitas vector search veloz y embebido sin desplegar una DB. No debe instalarse por inercia.

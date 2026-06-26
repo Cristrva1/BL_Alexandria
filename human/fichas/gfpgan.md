@@ -1,6 +1,6 @@
 # GFPGAN
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ REFERENCIA
 
 ## Que problema resuelve
 
-quieres 1. :boom: **updated** online demo: [![replicate](https://img.shields.io/static/v
+restauras rostros borrosos o fundidos
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para javascript, postgres, python, typescript. Stack d
 
 ## Cuando usarlo
 
-quieres 1. :boom: **updated** online demo: [![replicate](https://img.shields.io/static/v
+restauras rostros borrosos o fundidos
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+necesitas upscaling general de la imagen ([Real-ESRGAN](#-real-esrgan)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `litellm`
-- `cosmos`
-- `comfyui`
+- `real-esrgan`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
+Combinar con real-esrgan cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres 1. :boom: **updated** online demo: [![replicate](https://img.shields.io/static/v. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si restauras rostros borrosos o fundidos. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # instaloader
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ REFERENCIA
 
 ## Que problema resuelve
 
-quieres .. image:: https://raw.githubusercontent.com/instaloader/instaloader/master/docs/logo_head
+necesitas datos de Instagram de forma fiable
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para python, typescript, vision. Stack declarado: pyth
 
 ## Cuando usarlo
 
-quieres .. image:: https://raw.githubusercontent.com/instaloader/instaloader/master/docs/logo_head
+necesitas datos de Instagram de forma fiable
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+quieres varias redes a la vez ([snscrape](#-snscrape)) o el contenido requiere API oficial por ToS.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `firecrawl`
-- `crawl4ai`
-- `scrapy`
+- `snscrape`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
+Combinar con snscrape cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres .. image:: https://raw.githubusercontent.com/instaloader/instaloader/master/docs/logo_head. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si necesitas datos de Instagram de forma fiable. No debe instalarse por inercia.

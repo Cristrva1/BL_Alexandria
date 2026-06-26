@@ -1,6 +1,6 @@
 # GitNexus
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ USAR AHORA
 
 ## Que problema resuelve
 
-quieres gitnexus
+quieres entender un repo puntual de forma visual
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para docker, javascript, javascript-typescript, langch
 
 ## Cuando usarlo
 
-quieres gitnexus
+quieres entender un repo puntual de forma visual
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas indexar muchos repos a escala ([codegraph](#-codegraph)) o no quieres front web.
 
 ## Tipo de instalacion
 
@@ -41,8 +41,7 @@ Repo local detectado: si
 ## Con que se combina
 
 - `codegraph`
-- `deepseek-coder`
-- `llmc`
+- `análisis de repos`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con codegraph, deepseek-coder, llmc cuando el flujo necesite mas de una pieza.
+Combinar con codegraph, análisis de repos cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: usar ahora. Tiene sentido si quieres gitnexus. No debe instalarse por inercia.
+Veredicto: usar ahora. Tiene sentido si quieres entender un repo puntual de forma visual. No debe instalarse por inercia.

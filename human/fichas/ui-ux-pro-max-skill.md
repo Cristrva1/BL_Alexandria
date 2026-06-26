@@ -1,6 +1,6 @@
 # ui-ux-pro-max-skill
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ An AI skill that provides design intelligence for building professional UI/UX ac
 
 ## Que problema resuelve
 
-quieres an ai skill that provides design intelligence for building professional ui/ux ac
+generas UI con IA y el resultado se ve genérico o despulido
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para frontend, javascript, python, react, skills, typesc
 
 ## Cuando usarlo
 
-quieres an ai skill that provides design intelligence for building professional ui/ux ac
+generas UI con IA y el resultado se ve genérico o despulido
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+no trabajas frontend o ya tienes un sistema de diseño impuesto.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+- `taste-skill`
+- `impeccable`
+- `tailwindcss`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
+Combinar con taste-skill, impeccable, tailwindcss cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres an ai skill that provides design intelligence for building professional ui/ux ac. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si generas UI con IA y el resultado se ve genérico o despulido. No debe instalarse por inercia.

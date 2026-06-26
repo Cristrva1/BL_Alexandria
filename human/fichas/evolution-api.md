@@ -1,6 +1,6 @@
 # evolution-api
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Open-source REST API for WhatsApp and multi-channel messaging — part of the Ev
 
 ## Que problema resuelve
 
-quieres open-source rest api for whatsapp and multi-channel messaging — part of the evol
+operas WhatsApp en producción con varias instancias
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `app` para automation, docker, javascript, javascript-typescript
 
 ## Cuando usarlo
 
-quieres open-source rest api for whatsapp and multi-channel messaging — part of the evol
+operas WhatsApp en producción con varias instancias
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+solo necesitas un bot de prueba o un único script ([OpenWA](#-openwa) basta).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `twenty-main`
-- `whatsapp-agentkit`
-- `activepieces`
+- `n8n`
+- `chatwoot`
+- `bot whatsapp`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con twenty-main, whatsapp-agentkit, activepieces cuando el flujo necesite mas de una pieza.
+Combinar con n8n, chatwoot, bot whatsapp cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres open-source rest api for whatsapp and multi-channel messaging — part of the evol. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si operas WhatsApp en producción con varias instancias. No debe instalarse por inercia.

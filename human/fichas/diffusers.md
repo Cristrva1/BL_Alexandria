@@ -1,6 +1,6 @@
 # diffusers
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Licensed under the Apache License, Version 2.0 (the "License"); you may not use 
 
 ## Que problema resuelve
 
-quieres copyright 2022 - the huggingface team. all rights reserved.
+programas generación y quieres control total por código
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para postgres, python, typescript. Stack declarado: py
 
 ## Cuando usarlo
 
-quieres copyright 2022 - the huggingface team. all rights reserved.
+programas generación y quieres control total por código
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+quieres una UI lista ([Fooocus](#-fooocus)) o grafos nodales ([ComfyUI](#-comfyui)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `litellm`
+- `controlnet`
 - `cosmos`
-- `comfyui`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
+Combinar con controlnet, cosmos cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres copyright 2022 - the huggingface team. all rights reserved.. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si programas generación y quieres control total por código. No debe instalarse por inercia.

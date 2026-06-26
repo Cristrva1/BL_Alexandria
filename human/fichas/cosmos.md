@@ -1,6 +1,6 @@
 # cosmos
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Table of Contents.
 
 ## Que problema resuelve
 
-quieres cosmos
+trabajas IA física/robótica y necesitas datos sintéticos
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para docker, postgres, python, typescript. Stack decla
 
 ## Cuando usarlo
 
-quieres cosmos
+trabajas IA física/robótica y necesitas datos sintéticos
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+haces tareas de texto/UI o no tienes GPU para servirlo.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `litellm`
-- `comfyui`
-- `stable-diffusion-webui`
+- `diffusers`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con litellm, comfyui, stable-diffusion-webui cuando el flujo necesite mas de una pieza.
+Combinar con diffusers cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres cosmos. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si trabajas IA física/robótica y necesitas datos sintéticos. No debe instalarse por inercia.

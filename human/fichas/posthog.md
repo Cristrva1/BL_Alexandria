@@ -1,6 +1,6 @@
 # posthog
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ PostHog is an all-in-one, open source platform for building successful products.
 
 ## Que problema resuelve
 
-quieres posthog is an all-in-one, open source platform for building successful products
+quieres entender el uso real y el comportamiento de usuarios
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para docker, javascript, python, react, typescript. Stac
 
 ## Cuando usarlo
 
-quieres posthog is an all-in-one, open source platform for building successful products
+quieres entender el uso real y el comportamiento de usuarios
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+solo necesitas BI sobre una BD estática ([metabase](#-metabase)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `metabase`
+- `marketing de agencia`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con metabase, marketing de agencia cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres posthog is an all-in-one, open source platform for building successful products. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres entender el uso real y el comportamiento de usuarios. No debe instalarse por inercia.

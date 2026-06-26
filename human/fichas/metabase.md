@@ -1,6 +1,6 @@
 # metabase
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ The easiest way to get started with Metabase is to sign up for a free trial of M
 
 ## Que problema resuelve
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+quieres BI accesible para perfiles no técnicos
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para docker, javascript, javascript-typescript, postg
 
 ## Cuando usarlo
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+quieres BI accesible para perfiles no técnicos
 
 ## Cuando NO usarlo
 
-prefieres conexiones directas sin protocolo estándar
+necesitas analítica de eventos por usuario ([posthog](#-posthog)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `claude-plugins-official`
-- `n8n-skills`
-- `mcp`
+- `posthog`
+- `echarts`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
+Combinar con posthog, echarts cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres BI accesible para perfiles no técnicos. No debe instalarse por inercia.

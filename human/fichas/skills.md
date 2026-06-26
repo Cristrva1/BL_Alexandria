@@ -1,6 +1,6 @@
 # skills
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Skills For Real Engineers.
 
 ## Que problema resuelve
 
-quieres skills for real engineers
+buscas referencias limpias y didácticas
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para javascript, javascript-typescript, skills, typescri
 
 ## Cuando usarlo
 
-quieres skills for real engineers
+buscas referencias limpias y didácticas
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+quieres un catálogo masivo ([antigravity-awesome-skills](#-antigravity-awesome-skills)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `agency-agents`
-- `taste-skill`
+- `awesome-agent-skills`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con openwa, agency-agents, taste-skill cuando el flujo necesite mas de una pieza.
+Combinar con awesome-agent-skills cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres skills for real engineers. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si buscas referencias limpias y didácticas. No debe instalarse por inercia.

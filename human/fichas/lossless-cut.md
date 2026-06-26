@@ -1,6 +1,6 @@
 # lossless-cut
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ The swiss army knife of lossless video/audio editing.
 
 ## Que problema resuelve
 
-quieres the swiss army knife of lossless video/audio editing
+cortas material rápido y sin recomprimir
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `app` para javascript, javascript-typescript, multimedia, postgr
 
 ## Cuando usarlo
 
-quieres the swiss army knife of lossless video/audio editing
+cortas material rápido y sin recomprimir
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+necesitas edición compositiva, efectos o reencode ([moviepy](#-moviepy)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `fluxer`
-- `whisper`
-- `faster-whisper`
+- `moviepy`
+- `pipeline de reels`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con fluxer, whisper, faster-whisper cuando el flujo necesite mas de una pieza.
+Combinar con moviepy, pipeline de reels cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres the swiss army knife of lossless video/audio editing. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si cortas material rápido y sin recomprimir. No debe instalarse por inercia.

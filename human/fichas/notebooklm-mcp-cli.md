@@ -1,6 +1,6 @@
 # notebooklm-mcp-cli
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Programmatic access to Google NotebookLM** — via command-line interface (CLI) 
 
 ## Que problema resuelve
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+integras NotebookLM con tu asistente MCP
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para mcp, postgres, python, react, typescript. Stack 
 
 ## Cuando usarlo
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+integras NotebookLM con tu asistente MCP
 
 ## Cuando NO usarlo
 
-prefieres conexiones directas sin protocolo estándar
+prefieres la API directa en scripts ([notebooklm-py](#-notebooklm-py)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `claude-plugins-official`
-- `n8n-skills`
-- `mcp`
+- `notebooklm-py`
+- `awesome-mcp-servers`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
+Combinar con notebooklm-py, awesome-mcp-servers cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si integras NotebookLM con tu asistente MCP. No debe instalarse por inercia.

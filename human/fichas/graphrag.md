@@ -1,6 +1,6 @@
 # graphrag
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ DIFERIR
 
 ## Que problema resuelve
 
-quieres graphrag
+tu corpus tiene relaciones ricas y el RAG por fragmentos se queda corto
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para python, typescript. Stack declarado: python, type
 
 ## Cuando usarlo
 
-quieres graphrag
+tu corpus tiene relaciones ricas y el RAG por fragmentos se queda corto
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+un RAG simple basta o el coste de indexado con LLM es prohibitivo.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `graphify`
+- `mcp-neo4j`
+- `turbovec`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con graphify, mcp-neo4j, turbovec cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres graphrag. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si tu corpus tiene relaciones ricas y el RAG por fragmentos se queda corto. No debe instalarse por inercia.

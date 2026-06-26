@@ -1,6 +1,6 @@
 # mcp
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ This repository contains a list of Google's official Model Context Protocol (MCP
 
 ## Que problema resuelve
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+programas MCP a bajo nivel o necesitas conformidad estricta con la spec
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para mcp, postgres, typescript. Stack declarado: typ
 
 ## Cuando usarlo
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+programas MCP a bajo nivel o necesitas conformidad estricta con la spec
 
 ## Cuando NO usarlo
 
-prefieres conexiones directas sin protocolo estándar
+prefieres un framework de alto nivel que abstraiga el protocolo ([mcp-use](#-mcp-use)).
 
 ## Tipo de instalacion
 
@@ -40,8 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `claude-plugins-official`
-- `n8n-skills`
+- `mcp-use`
 - `servers`
 
 ## Contra que compite
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con claude-plugins-official, n8n-skills, servers cuando el flujo necesite mas de una pieza.
+Combinar con mcp-use, servers cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si programas MCP a bajo nivel o necesitas conformidad estricta con la spec. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # agency-agents
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ A complete AI agency at your fingertips** - From frontend wizards to Reddit comm
 
 ## Que problema resuelve
 
-quieres 🎭 the agency: ai specialists ready to transform your workflow
+operas una agencia con muchas marcas
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para multimedia, postgres, python, react, typescript, wh
 
 ## Cuando usarlo
 
-quieres 🎭 the agency: ai specialists ready to transform your workflow
+operas una agencia con muchas marcas
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+eres un solo proyecto pequeño ([marketingskills](#-marketingskills) basta).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `taste-skill`
+- `marketingskills`
+- `geo-seo-claude`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, taste-skill cuando el flujo necesite mas de una pieza.
+Combinar con marketingskills, geo-seo-claude cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres 🎭 the agency: ai specialists ready to transform your workflow. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si operas una agencia con muchas marcas. No debe instalarse por inercia.

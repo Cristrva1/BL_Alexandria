@@ -1,6 +1,6 @@
 # plasmic
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ The open-source visual builder for your codebase. Build beautiful apps and websi
 
 ## Que problema resuelve
 
-quieres plasmic
+quieres editar visual sobre tu código React
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para docker, javascript, javascript-typescript, react,
 
 ## Cuando usarlo
 
-quieres plasmic
+quieres editar visual sobre tu código React
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+generas desde texto sin codebase previo ([open-design](#-open-design)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `tailwindcss`
+- `ui`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con tailwindcss, ui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres plasmic. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres editar visual sobre tu código React. No debe instalarse por inercia.

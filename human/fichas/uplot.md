@@ -1,6 +1,6 @@
 # uPlot
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ A small (~50 KB min), fast chart for time series, lines, areas, ohlc & bars _(MI
 
 ## Que problema resuelve
 
-quieres a small ([~50 kb min](https://github.com/leeoniya/uplot/tree/master/dist/uplot.i
+priorizas velocidad y peso del bundle
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para javascript, javascript-typescript, python, react,
 
 ## Cuando usarlo
 
-quieres a small ([~50 kb min](https://github.com/leeoniya/uplot/tree/master/dist/uplot.i
+priorizas velocidad y peso del bundle
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas tipos de gráfico variados ([echarts](#-echarts)).
 
 ## Tipo de instalacion
 
@@ -40,7 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `streamlit`
+- `swr`
+- `web app moderna`
 
 ## Contra que compite
 
@@ -52,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con streamlit cuando el flujo necesite mas de una pieza.
+Combinar con swr, web app moderna cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres a small ([~50 kb min](https://github.com/leeoniya/uplot/tree/master/dist/uplot.i. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si priorizas velocidad y peso del bundle. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # gpt-researcher
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ REFERENCIA
 
 ## Que problema resuelve
 
-quieres 🔎 gpt researcher
+necesitas research profundo citado
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para automation, docker, fastapi, javascript, langchain,
 
 ## Cuando usarlo
 
-quieres 🔎 gpt researcher
+necesitas research profundo citado
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+solo quieres una respuesta corta o un chat simple.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+- `firecrawl`
+- `browser-use`
+- `research profundo`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con firecrawl, browser-use, research profundo cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres 🔎 gpt researcher. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si necesitas research profundo citado. No debe instalarse por inercia.

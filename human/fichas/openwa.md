@@ -1,6 +1,6 @@
 # OpenWA
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ OpenWA** is a free, open-source WhatsApp API Gateway designed for developers who
 
 ## Que problema resuelve
 
-quieres ---
+desarrollas scripts o bots individuales y quieres arrancar rápido
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para docker, javascript, javascript-typescript, postg
 
 ## Cuando usarlo
 
-quieres ---
+desarrollas scripts o bots individuales y quieres arrancar rápido
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas infra multi-instancia o alta disponibilidad ([evolution-api](#-evolution-api)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `skills`
-- `agency-agents`
-- `taste-skill`
+- `n8n`
+- `evolution-api`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con skills, agency-agents, taste-skill cuando el flujo necesite mas de una pieza.
+Combinar con n8n, evolution-api cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres ---. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si desarrollas scripts o bots individuales y quieres arrancar rápido. No debe instalarse por inercia.

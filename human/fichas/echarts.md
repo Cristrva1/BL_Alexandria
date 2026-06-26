@@ -1,6 +1,6 @@
 # echarts
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Apache ECharts is a free, powerful charting and visualization library offering e
 
 ## Que problema resuelve
 
-quieres apache echarts
+necesitas gráficos ricos y variados embebidos
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para javascript, javascript-typescript, typescript. St
 
 ## Cuando usarlo
 
-quieres apache echarts
+necesitas gráficos ricos y variados embebidos
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+solo series temporales simples y priorizas peso ([uPlot](#-uplot)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `codegraph`
-- `gitnexus`
-- `deepseek-coder`
+- `metabase`
+- `heroui`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con codegraph, gitnexus, deepseek-coder cuando el flujo necesite mas de una pieza.
+Combinar con metabase, heroui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres apache echarts. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si necesitas gráficos ricos y variados embebidos. No debe instalarse por inercia.

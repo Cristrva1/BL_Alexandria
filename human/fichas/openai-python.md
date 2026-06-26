@@ -1,6 +1,6 @@
 # openai-python
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ The OpenAI Python library provides convenient access to the OpenAI REST API from
 
 ## Que problema resuelve
 
-quieres openai python api library
+usas modelos de OpenAI desde Python y quieres el cliente oficial
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para javascript, postgres, python, typescript. Stack 
 
 ## Cuando usarlo
 
-quieres openai python api library
+usas modelos de OpenAI desde Python y quieres el cliente oficial
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+quieres abstracción multi-proveedor ([litellm](#-litellm)) o no usas OpenAI.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `codegraph`
-- `gitnexus`
-- `deepseek-coder`
+- `litellm`
+- `langchain`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con codegraph, gitnexus, deepseek-coder cuando el flujo necesite mas de una pieza.
+Combinar con litellm, langchain cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres openai python api library. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si usas modelos de OpenAI desde Python y quieres el cliente oficial. No debe instalarse por inercia.

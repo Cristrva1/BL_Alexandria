@@ -1,6 +1,6 @@
 # stable-diffusion-webui
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ A web interface for Stable Diffusion, implemented using Gradio library.
 
 ## Que problema resuelve
 
-quieres stable diffusion web ui
+quieres extensiones y comunidad amplia
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para frontend, javascript, postgres, python, typescript,
 
 ## Cuando usarlo
 
-quieres stable diffusion web ui
+quieres extensiones y comunidad amplia
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+prefieres un flujo moderno y limpio ([InvokeAI](#-invokeai)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `litellm`
-- `cosmos`
-- `comfyui`
+- `sd-webui-controlnet`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
+Combinar con sd-webui-controlnet cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres stable diffusion web ui. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres extensiones y comunidad amplia. No debe instalarse por inercia.

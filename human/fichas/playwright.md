@@ -1,6 +1,6 @@
 # playwright
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Playwright is a framework for web automation and testing. It drives Chromium, Fi
 
 ## Que problema resuelve
 
-quieres 🎭 playwright
+necesitas control preciso y reproducible del browser
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para automation, javascript, javascript-typescript, po
 
 ## Cuando usarlo
 
-quieres 🎭 playwright
+necesitas control preciso y reproducible del browser
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+quieres que el agente navegue por visión ([browser-use](#-browser-use)) o no necesitas un navegador real.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+- `browser-use`
+- `crawlee`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con browser-use, crawlee cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres 🎭 playwright. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si necesitas control preciso y reproducible del browser. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # nanochat
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ nanochat is the simplest experimental harness for training LLMs. It is designed 
 
 ## Que problema resuelve
 
-quieres nanochat
+quieres el pipeline completo de un chat end-to-end
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `app` para javascript, multimedia, python, typescript, whisper. 
 
 ## Cuando usarlo
 
-quieres nanochat
+quieres el pipeline completo de un chat end-to-end
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+solo necesitas el core del modelo ([nanoGPT](#-nanogpt)) o un modelo listo para usar.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `nanogpt`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con nanogpt cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres nanochat. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres el pipeline completo de un chat end-to-end. No debe instalarse por inercia.

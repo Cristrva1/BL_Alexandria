@@ -1,6 +1,6 @@
 # n8n-skills
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Expert Claude Code skills for building flawless n8n workflows using the n8n-mcp 
 
 ## Que problema resuelve
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+generas workflows n8n con IA y te cansan los fallos de JSON
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para docker, javascript, langchain, postgres, python, sk
 
 ## Cuando usarlo
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+generas workflows n8n con IA y te cansan los fallos de JSON
 
 ## Cuando NO usarlo
 
-prefieres conexiones directas sin protocolo estándar
+no usas n8n.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `claude-plugins-official`
-- `mcp`
-- `servers`
+- `n8n`
+- `n8n-mcp`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con claude-plugins-official, mcp, servers cuando el flujo necesite mas de una pieza.
+Combinar con n8n, n8n-mcp cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si generas workflows n8n con IA y te cansan los fallos de JSON. No debe instalarse por inercia.

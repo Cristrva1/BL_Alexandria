@@ -1,6 +1,6 @@
 # markitdown
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ MarkItDown performs I/O with the privileges of the current process. Like open() 
 
 ## Que problema resuelve
 
-quieres markitdown
+alimentas LLMs con documentos de formatos variados
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para docker, postgres, python, typescript. Stack dec
 
 ## Cuando usarlo
 
-quieres markitdown
+alimentas LLMs con documentos de formatos variados
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+ya tienes el texto limpio o necesitas fidelidad de layout total (no es un reconstructor de PDF).
 
 ## Tipo de instalacion
 
@@ -41,8 +41,8 @@ Repo local detectado: si
 ## Con que se combina
 
 - `ppt-master`
-- `revealjs`
-- `reveal.js`
+- `open-notebook`
+- `docs → presentaciones`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con ppt-master, revealjs, reveal.js cuando el flujo necesite mas de una pieza.
+Combinar con ppt-master, open-notebook, docs → presentaciones cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: usar ahora. Tiene sentido si quieres markitdown. No debe instalarse por inercia.
+Veredicto: usar ahora. Tiene sentido si alimentas LLMs con documentos de formatos variados. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # crawl4ai
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ USAR AHORA
 
 ## Que problema resuelve
 
-quieres 🚀🤖 crawl4ai: open-source llm friendly web crawler & scraper.
+necesitas volumen barato y self-host
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `app` para docker, fastapi, javascript, postgres, python, react,
 
 ## Cuando usarlo
 
-quieres 🚀🤖 crawl4ai: open-source llm friendly web crawler & scraper.
+necesitas volumen barato y self-host
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+quieres una API hosted simple sin operar navegadores ([firecrawl](#-firecrawl)).
 
 ## Tipo de instalacion
 
@@ -41,8 +41,7 @@ Repo local detectado: si
 ## Con que se combina
 
 - `firecrawl`
-- `scrapy`
-- `crawlee`
+- `gpt-researcher`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con firecrawl, scrapy, crawlee cuando el flujo necesite mas de una pieza.
+Combinar con firecrawl, gpt-researcher cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: usar ahora. Tiene sentido si quieres 🚀🤖 crawl4ai: open-source llm friendly web crawler & scraper.. No debe instalarse por inercia.
+Veredicto: usar ahora. Tiene sentido si necesitas volumen barato y self-host. No debe instalarse por inercia.

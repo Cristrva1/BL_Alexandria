@@ -1,6 +1,6 @@
 # mcp-use
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.
 
 ## Que problema resuelve
 
-quieres &nbsp;
+construyes un servidor MCP propio y quieres productividad
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para automation, javascript, langchain, mcp, python, 
 
 ## Cuando usarlo
 
-quieres &nbsp;
+construyes un servidor MCP propio y quieres productividad
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+solo buscas usar uno ya hecho ([awesome-mcp-servers](#-awesome-mcp-servers)) o necesitas control a nivel spec.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+- `mcp`
+- `awesome-mcp-servers`
+- `app mcp`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con mcp, awesome-mcp-servers, app mcp cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres &nbsp;. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si construyes un servidor MCP propio y quieres productividad. No debe instalarse por inercia.

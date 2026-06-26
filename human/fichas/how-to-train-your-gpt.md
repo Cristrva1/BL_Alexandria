@@ -1,6 +1,6 @@
 # how-to-train-your-gpt
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ A guide to building a world-class language model from absolute scratch. Taught l
 
 ## Que problema resuelve
 
-quieres 🧠 how to train your gpt
+quieres una guía explicada y narrada
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para python, typescript. Stack declarado: python, type
 
 ## Cuando usarlo
 
-quieres 🧠 how to train your gpt
+quieres una guía explicada y narrada
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+prefieres solo el código limpio ([nanoGPT](#-nanogpt)) o buscas algo productivo.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `firecrawl`
-- `crawl4ai`
-- `scrapy`
+- `nanogpt`
+- `nanochat`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
+Combinar con nanogpt, nanochat cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres 🧠 how to train your gpt. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres una guía explicada y narrada. No debe instalarse por inercia.

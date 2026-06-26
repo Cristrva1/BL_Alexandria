@@ -1,6 +1,6 @@
 # awesome-bigdata
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ A curated list of awesome big data frameworks, resources and other awesomeness. 
 
 ## Que problema resuelve
 
-quieres awesome big data
+diseñas pipelines de datos grandes y necesitas descubrir el ecosistema
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para docker, javascript, postgres, python, react, ty
 
 ## Cuando usarlo
 
-quieres awesome big data
+diseñas pipelines de datos grandes y necesitas descubrir el ecosistema
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+tu proyecto es pequeño y no justifica herramientas de big data.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `codegraph`
-- `gitnexus`
-- `deepseek-coder`
+- `awesome-dataviz`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con codegraph, gitnexus, deepseek-coder cuando el flujo necesite mas de una pieza.
+Combinar con awesome-dataviz cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres awesome big data. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si diseñas pipelines de datos grandes y necesitas descubrir el ecosistema. No debe instalarse por inercia.

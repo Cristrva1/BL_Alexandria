@@ -1,6 +1,6 @@
 # llm-scraper
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ LLM Scraper is a TypeScript library that allows you to extract structured data f
 
 ## Que problema resuelve
 
-quieres llm scraper
+quieres salida tipada y validada en stack TS
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para javascript, javascript-typescript, scraping, typ
 
 ## Cuando usarlo
 
-quieres llm scraper
+quieres salida tipada y validada en stack TS
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+prefieres extracción semántica por grafos ([Scrapegraph-ai](#-scrapegraph-ai)) o trabajas en Python.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
+- `playwright`
 - `firecrawl`
-- `crawl4ai`
-- `scrapy`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
+Combinar con playwright, firecrawl cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres llm scraper. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres salida tipada y validada en stack TS. No debe instalarse por inercia.

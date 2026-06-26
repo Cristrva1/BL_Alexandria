@@ -1,6 +1,6 @@
 # mcp-neo4j
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ These MCP servers are a part of the Neo4j Labs program. They are developed and m
 
 ## Que problema resuelve
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+usas Neo4j con IA y quieres que el asistente hable Cypher
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para mcp, typescript. Stack declarado: typescript.
 
 ## Cuando usarlo
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+usas Neo4j con IA y quieres que el asistente hable Cypher
 
 ## Cuando NO usarlo
 
-prefieres conexiones directas sin protocolo estándar
+no trabajas con grafos o tu base es relacional pura.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `claude-plugins-official`
-- `n8n-skills`
-- `mcp`
+- `graphrag`
+- `awesome-mcp-servers`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
+Combinar con graphrag, awesome-mcp-servers cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si usas Neo4j con IA y quieres que el asistente hable Cypher. No debe instalarse por inercia.

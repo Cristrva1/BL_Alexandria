@@ -1,6 +1,6 @@
 # fluxer
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ As of this writing (15 June 2026), we are working to finalise the API and self-h
 
 ## Que problema resuelve
 
-quieres > [!caution]
+quieres probar algo nuevo y seguir su evolución
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para javascript, javascript-typescript, typescript. S
 
 ## Cuando usarlo
 
-quieres > [!caution]
+quieres probar algo nuevo y seguir su evolución
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+necesitas estabilidad de producción (API aún en finalización).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `whisper`
-- `faster-whisper`
-- `whisperx`
+- `open-generative-ai`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con whisper, faster-whisper, whisperx cuando el flujo necesite mas de una pieza.
+Combinar con open-generative-ai cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres > [!caution]. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres probar algo nuevo y seguir su evolución. No debe instalarse por inercia.

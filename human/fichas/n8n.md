@@ -1,6 +1,6 @@
 # n8n
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ n8n is a workflow automation platform that gives technical teams the flexibility
 
 ## Que problema resuelve
 
-quieres n8n - secure workflow automation for technical teams
+quieres el motor central de automatización con máximo catálogo
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para automation, docker, javascript, javascript-types
 
 ## Cuando usarlo
 
-quieres n8n - secure workflow automation for technical teams
+quieres el motor central de automatización con máximo catálogo
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+buscas algo minimalista o sin self-host.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `twenty-main`
+- `n8n-mcp`
+- `n8n-skills`
 - `evolution-api`
-- `whatsapp-agentkit`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
+Combinar con n8n-mcp, n8n-skills, evolution-api cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres n8n - secure workflow automation for technical teams. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres el motor central de automatización con máximo catálogo. No debe instalarse por inercia.

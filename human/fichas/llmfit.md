@@ -1,6 +1,6 @@
 # llmfit
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ New: Community Leaderboard** — Browse real-world performance data from actual 
 
 ## Que problema resuelve
 
-quieres llmfit
+necesitas elegir modelo con datos y reproducibilidad
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `app` para docker, javascript, postgres, python, typescript. Sta
 
 ## Cuando usarlo
 
-quieres llmfit
+necesitas elegir modelo con datos y reproducibilidad
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+ya tienes el modelo decidido o tu caso no justifica un harness de evaluación.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `litellm`
+- `langfuse`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con litellm, langfuse cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres llmfit. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si necesitas elegir modelo con datos y reproducibilidad. No debe instalarse por inercia.

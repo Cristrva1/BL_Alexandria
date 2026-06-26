@@ -1,6 +1,6 @@
 # nanoGPT
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Update Nov 2025** nanoGPT has a new and improved cousin called nanochat. It is v
 
 ## Que problema resuelve
 
-quieres nanogpt
+quieres entender el entrenamiento de un GPT desde cero
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para javascript, postgres, python, typescript. Stack d
 
 ## Cuando usarlo
 
-quieres nanogpt
+quieres entender el entrenamiento de un GPT desde cero
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+solo consumes modelos vía API o necesitas un pipeline de chat completo ([nanochat](#-nanochat)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+- `nanochat`
+- `llm.c`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
+Combinar con nanochat, llm.c cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres nanogpt. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres entender el entrenamiento de un GPT desde cero. No debe instalarse por inercia.

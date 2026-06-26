@@ -1,6 +1,6 @@
 # TTS
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ DIFERIR
 
 ## Que problema resuelve
 
-quieres 🐸coqui.ai news
+quieres flexibilidad y varios modelos en una librería
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para docker, python, typescript. Stack declarado: pyth
 
 ## Cuando usarlo
 
-quieres 🐸coqui.ai news
+quieres flexibilidad y varios modelos en una librería
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+necesitas tiempo real puro ([supertonic](#-supertonic)) o soporte comercial (Coqui está inactivo).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `litellm`
-- `cosmos`
-- `comfyui`
+- `whisperx`
+- `moviepy`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
+Combinar con whisperx, moviepy cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres 🐸coqui.ai news. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres flexibilidad y varios modelos en una librería. No debe instalarse por inercia.

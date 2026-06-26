@@ -1,6 +1,6 @@
 # public-apis
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ The Public APIs repository is manually curated by community members like you and
 
 ## Que problema resuelve
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+buscas datos externos y no sabes qué API usar
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para docker, javascript, postgres, python, react, ty
 
 ## Cuando usarlo
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+buscas datos externos y no sabes qué API usar
 
 ## Cuando NO usarlo
 
-prefieres conexiones directas sin protocolo estándar
+ya tienes tus fuentes definidas o necesitas SLA empresarial (son APIs públicas, sin garantías).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `claude-plugins-official`
-- `n8n-skills`
-- `mcp`
+- `n8n`
+- `firecrawl`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
+Combinar con n8n, firecrawl cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si buscas datos externos y no sabes qué API usar. No debe instalarse por inercia.

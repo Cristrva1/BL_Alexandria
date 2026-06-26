@@ -1,6 +1,6 @@
 # Scrapegraph-ai
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ REFERENCIA
 
 ## Que problema resuelve
 
-quieres 🚀 **looking for an even faster and simpler way to scrape at scale (only 5 lines of code)?*
+quieres estructura semántica "by prompt" en Python
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para docker, javascript, langchain, python, scraping,
 
 ## Cuando usarlo
 
-quieres 🚀 **looking for an even faster and simpler way to scrape at scale (only 5 lines of code)?*
+quieres estructura semántica "by prompt" en Python
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+te basta un esquema simple ([llm-scraper](#-llm-scraper)) o el coste de LLM por página es alto.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `firecrawl`
 - `crawl4ai`
-- `scrapy`
+- `graphrag`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
+Combinar con crawl4ai, graphrag cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres 🚀 **looking for an even faster and simpler way to scrape at scale (only 5 lines of code)?*. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres estructura semántica "by prompt" en Python. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # listmonk
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ listmonk is a standalone, self-hosted, newsletter and mailing list manager. It i
 
 ## Que problema resuelve
 
-quieres listmonk is a standalone, self-hosted, newsletter and mailing list manager. it i
+quieres email marketing simple, rápido y propio
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para automation, docker, postgres, typescript. Stack
 
 ## Cuando usarlo
 
-quieres listmonk is a standalone, self-hosted, newsletter and mailing list manager. it i
+quieres email marketing simple, rápido y propio
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas nurturing avanzado o scoring de leads ([mautic](#-mautic)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `twenty-main`
-- `evolution-api`
-- `whatsapp-agentkit`
+- `mautic`
+- `n8n`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
+Combinar con mautic, n8n cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres listmonk is a standalone, self-hosted, newsletter and mailing list manager. it i. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres email marketing simple, rápido y propio. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # Context-Engineering
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Context Engineering.
 
 ## Que problema resuelve
 
-quieres context engineering
+quieres profundizar en contexto y RAG
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para postgres, python, react, typescript. Stack declar
 
 ## Cuando usarlo
 
-quieres context engineering
+quieres profundizar en contexto y RAG
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+buscas skills ejecutables listas para copiar.
 
 ## Tipo de instalacion
 
@@ -41,8 +41,7 @@ Repo local detectado: si
 ## Con que se combina
 
 - `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+- `headroom`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
+Combinar con andrej-karpathy-skills, headroom cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres context engineering. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres profundizar en contexto y RAG. No debe instalarse por inercia.

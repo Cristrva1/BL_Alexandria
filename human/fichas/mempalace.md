@@ -1,6 +1,6 @@
 # mempalace
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Local-first AI memory. Verbatim storage, pluggable backend, 96.6% R@5 raw on Lon
 
 ## Que problema resuelve
 
-quieres mempalace
+la privacidad es prioridad y no quieres llamadas a API
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para docker, postgres, python, react, typescript. St
 
 ## Cuando usarlo
 
-quieres mempalace
+la privacidad es prioridad y no quieres llamadas a API
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+quieres un SaaS gestionado con escalado automático o integraciones de framework ya hechas ([mem0](#-mem0)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `mem0`
-- `agentmemory`
-- `loguru`
+- `open-notebook`
+- `odysseus`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con mem0, agentmemory, loguru cuando el flujo necesite mas de una pieza.
+Combinar con open-notebook, odysseus cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres mempalace. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si la privacidad es prioridad y no quieres llamadas a API. No debe instalarse por inercia.

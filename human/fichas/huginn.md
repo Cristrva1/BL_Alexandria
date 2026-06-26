@@ -1,6 +1,6 @@
 # huginn
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Huginn is a system for building agents that perform automated tasks for you onli
 
 ## Que problema resuelve
 
-quieres what is huginn?
+automatizas tareas orientadas a eventos y valoras la privacidad
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para automation, docker, javascript, javascript-type
 
 ## Cuando usarlo
 
-quieres what is huginn?
+automatizas tareas orientadas a eventos y valoras la privacidad
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+quieres editor visual moderno o IA nativa ([n8n](#-n8n)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `twenty-main`
-- `evolution-api`
-- `whatsapp-agentkit`
+- `n8n`
+- `novu`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
+Combinar con n8n, novu cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres what is huginn?. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si automatizas tareas orientadas a eventos y valoras la privacidad. No debe instalarse por inercia.

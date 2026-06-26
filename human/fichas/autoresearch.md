@@ -1,6 +1,6 @@
 # autoresearch
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ One day, frontier AI research used to be done by meat computers in between eatin
 
 ## Que problema resuelve
 
-quieres autoresearch
+experimentas con research iterativo o quieres un punto de partida
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para python, typescript. Stack declarado: python, typ
 
 ## Cuando usarlo
 
-quieres autoresearch
+experimentas con research iterativo o quieres un punto de partida
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+quieres salida pulida y lista ([gpt-researcher](#-gpt-researcher)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+- `gpt-researcher`
+- `crawl4ai`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
+Combinar con gpt-researcher, crawl4ai cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres autoresearch. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si experimentas con research iterativo o quieres un punto de partida. No debe instalarse por inercia.

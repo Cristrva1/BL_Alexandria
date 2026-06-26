@@ -1,6 +1,6 @@
 # hyperframes
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ HyperFrames is an open-source framework for turning HTML, CSS, media, and seekab
 
 ## Que problema resuelve
 
-quieres hyperframes is an open-source framework for turning html, css, media, and seekab
+generas animación por frames con control por código
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para agents, automation, docker, javascript, javascript-
 
 ## Cuando usarlo
 
-quieres hyperframes is an open-source framework for turning html, css, media, and seekab
+generas animación por frames con control por código
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+prefieres video en React con reloj integrado ([remotion](#-remotion)) o edición visual.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+- `remotion`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con remotion cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres hyperframes is an open-source framework for turning html, css, media, and seekab. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si generas animación por frames con control por código. No debe instalarse por inercia.

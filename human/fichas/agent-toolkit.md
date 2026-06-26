@@ -1,6 +1,6 @@
 # agent-toolkit
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Opinionated skills shared by @leonardocouy for improving daily work efficiency w
 
 ## Que problema resuelve
 
-quieres softaworks agent skills
+quieres productividad inmediata con tareas comunes
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para agents, python, react, typescript. Stack declarado:
 
 ## Cuando usarlo
 
-quieres softaworks agent skills
+quieres productividad inmediata con tareas comunes
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+buscas un método integral ([superpowers](#-superpowers)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+- `superpowers`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
+Combinar con superpowers cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres softaworks agent skills. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres productividad inmediata con tareas comunes. No debe instalarse por inercia.

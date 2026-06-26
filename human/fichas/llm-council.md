@@ -1,6 +1,6 @@
 # llm-council
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ The idea of this repo is that instead of asking a question to your favorite LLM 
 
 ## Que problema resuelve
 
-quieres llm council
+quieres consenso entre modelos o comparar proveedores
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para fastapi, javascript, postgres, python, react, ty
 
 ## Cuando usarlo
 
-quieres llm council
+quieres consenso entre modelos o comparar proveedores
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+te basta un único LLM o el coste multi-modelo no es asumible.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+- `litellm`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
+Combinar con litellm cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres llm council. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres consenso entre modelos o comparar proveedores. No debe instalarse por inercia.

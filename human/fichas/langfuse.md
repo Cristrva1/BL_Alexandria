@@ -1,6 +1,6 @@
 # langfuse
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ alt="chat on Discord"> alt="follow on X(Twitter)"> alt="follow on LinkedIn"> .
 
 ## Que problema resuelve
 
-quieres <img width="2400" alt="hero-b (1)" src="https://github.com/user-attachments/assets/5810ae1
+operas agentes en serio y necesitas trazas/costes/eval
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para automation, docker, fastapi, javascript, javascr
 
 ## Cuando usarlo
 
-quieres <img width="2400" alt="hero-b (1)" src="https://github.com/user-attachments/assets/5810ae1
+operas agentes en serio y necesitas trazas/costes/eval
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+haces prototipos triviales o no quieres operar el backend.
 
 ## Tipo de instalacion
 
@@ -40,8 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `agents-towards-production`
+- `langchain`
+- `litellm`
 - `ag2`
 
 ## Contra que compite
@@ -54,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con langchain, litellm, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres <img width="2400" alt="hero-b (1)" src="https://github.com/user-attachments/assets/5810ae1. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si operas agentes en serio y necesitas trazas/costes/eval. No debe instalarse por inercia.

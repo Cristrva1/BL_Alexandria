@@ -1,6 +1,6 @@
 # ruflo
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ An agent meta-harness for Claude Code and Codex.**.
 
 ## Que problema resuelve
 
-quieres ruflo
+orquestas muchos agentes a escala y quieres rendimiento
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para automation, docker, javascript, javascript-typesc
 
 ## Cuando usarlo
 
-quieres ruflo
+orquestas muchos agentes a escala y quieres rendimiento
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+solo necesitas 1-2 agentes o no usas Claude Code/Codex.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+- `mem0`
+- `ecc`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con mem0, ecc cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres ruflo. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si orquestas muchos agentes a escala y quieres rendimiento. No debe instalarse por inercia.

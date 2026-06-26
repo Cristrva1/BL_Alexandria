@@ -1,6 +1,6 @@
 # hermes-agent
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ The self-improving AI agent built by Nous Research.** It's the only agent with a
 
 ## Que problema resuelve
 
-quieres hermes agent ☤
+quieres agentes locales con UI y memoria persistente
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para agents, docker, javascript, postgres, python, types
 
 ## Cuando usarlo
 
-quieres hermes agent ☤
+quieres agentes locales con UI y memoria persistente
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+prefieres orquestación en nube o no quieres compilar Tauri.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+- `ecc`
+- `odysseus`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
+Combinar con ecc, odysseus cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres hermes agent ☤. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres agentes locales con UI y memoria persistente. No debe instalarse por inercia.

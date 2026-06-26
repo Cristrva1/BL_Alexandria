@@ -1,6 +1,6 @@
 # litellm
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ LiteLLM is an open source AI Gateway that gives you a single, unified interface 
 
 ## Que problema resuelve
 
-quieres 🚅 litellm
+trabajas con múltiples modelos o quieres fallback/control de costos
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para docker, javascript, postgres, python, typescript
 
 ## Cuando usarlo
 
-quieres 🚅 litellm
+trabajas con múltiples modelos o quieres fallback/control de costos
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+usas un único proveedor fijo y no necesitas abstracción.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `cosmos`
-- `comfyui`
-- `stable-diffusion-webui`
+- `langchain`
+- `langfuse`
+- `llm-council`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con cosmos, comfyui, stable-diffusion-webui cuando el flujo necesite mas de una pieza.
+Combinar con langchain, langfuse, llm-council cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres 🚅 litellm. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si trabajas con múltiples modelos o quieres fallback/control de costos. No debe instalarse por inercia.

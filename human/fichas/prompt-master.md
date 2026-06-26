@@ -1,6 +1,6 @@
 # prompt-master
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or 
 
 ## Que problema resuelve
 
-quieres a claude skill that writes the accurate prompts for any ai tool. zero tokens or credits wa
+quieres dejar de re-promptear y acertar antes
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para comfy, javascript, postgres, python, react, skills,
 
 ## Cuando usarlo
 
-quieres a claude skill that writes the accurate prompts for any ai tool. zero tokens or credits wa
+quieres dejar de re-promptear y acertar antes
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+ya tienes prompts afinados y estables.
 
 ## Tipo de instalacion
 
@@ -58,4 +58,4 @@ Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-s
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres a claude skill that writes the accurate prompts for any ai tool. zero tokens or credits wa. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres dejar de re-promptear y acertar antes. No debe instalarse por inercia.

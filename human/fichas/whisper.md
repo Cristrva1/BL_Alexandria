@@ -1,6 +1,6 @@
 # whisper
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Whisper is a general-purpose speech recognition model. It is trained on a large 
 
 ## Que problema resuelve
 
-quieres whisper
+quieres la referencia robusta y no te obsesiona la latencia
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para multimedia, postgres, python, typescript, whisper
 
 ## Cuando usarlo
 
-quieres whisper
+quieres la referencia robusta y no te obsesiona la latencia
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+necesitas más velocidad ([faster-whisper](#-faster-whisper)) o timings por palabra ([whisperX](#-whisperx)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `fluxer`
-- `faster-whisper`
 - `whisperx`
+- `pipeline de reels`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con fluxer, faster-whisper, whisperx cuando el flujo necesite mas de una pieza.
+Combinar con whisperx, pipeline de reels cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres whisper. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres la referencia robusta y no te obsesiona la latencia. No debe instalarse por inercia.

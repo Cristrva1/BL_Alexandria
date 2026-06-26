@@ -1,6 +1,6 @@
 # awesome-claude-code
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ The old ways have come and gone. It's time to embrace the next phase. The previo
 
 ## Que problema resuelve
 
-quieres awesome claude code
+vives en Claude Code y quieres exprimirlo
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para automation, python, typescript. Stack declarado: py
 
 ## Cuando usarlo
 
-quieres awesome claude code
+vives en Claude Code y quieres exprimirlo
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+usas otro asistente (no aplica).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `agents-towards-production`
-- `ag2`
-- `crewai`
+- `claude-plugins-official`
+- `superpowers`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con agents-towards-production, ag2, crewai cuando el flujo necesite mas de una pieza.
+Combinar con claude-plugins-official, superpowers cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres awesome claude code. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si vives en Claude Code y quieres exprimirlo. No debe instalarse por inercia.

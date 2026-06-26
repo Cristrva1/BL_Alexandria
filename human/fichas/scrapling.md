@@ -1,6 +1,6 @@
 # Scrapling
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Scrapling is an adaptive Web Scraping framework that handles everything from a s
 
 ## Que problema resuelve
 
-quieres &middot;
+los sitios cambian o te bloquean a menudo
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para automation, docker, javascript, postgres, python,
 
 ## Cuando usarlo
 
-quieres &middot;
+los sitios cambian o te bloquean a menudo
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+el target es estable y simple, o no necesitas stealth.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+- `scrapy`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con scrapy cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres &middot;. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si los sitios cambian o te bloquean a menudo. No debe instalarse por inercia.

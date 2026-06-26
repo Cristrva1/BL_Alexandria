@@ -1,6 +1,6 @@
 # Flowise
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ English | 繁體中文 | 简体中文 | 日本語 | 한국어.
 
 ## Que problema resuelve
 
-quieres english | [繁體中文](./i18n/readme-tw.md) | [简体中文](./i18n/readme-zh.md) | [日本語](./i1
+quieres un prototipo visual ya, en stack JS
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para automation, docker, javascript, javascript-types
 
 ## Cuando usarlo
 
-quieres english | [繁體中文](./i18n/readme-tw.md) | [简体中文](./i18n/readme-zh.md) | [日本語](./i1
+quieres un prototipo visual ya, en stack JS
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas plataforma completa con RAG/observabilidad ([dify](#-dify)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+- `dify`
+- `langflow`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
+Combinar con dify, langflow cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres english | [繁體中文](./i18n/readme-tw.md) | [简体中文](./i18n/readme-zh.md) | [日本語](./i1. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres un prototipo visual ya, en stack JS. No debe instalarse por inercia.

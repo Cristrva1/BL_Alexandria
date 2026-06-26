@@ -1,6 +1,6 @@
 # moviepy
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ MoviePy recently upgraded to v2.0, introducing major breaking changes. You can c
 
 ## Que problema resuelve
 
-quieres moviepy
+ensamblas video por código en Python
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para docker, postgres, python, typescript. Stack decla
 
 ## Cuando usarlo
 
-quieres moviepy
+ensamblas video por código en Python
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+prefieres React/programático web ([remotion](#-remotion)) o una UI ([OpenCut](#-opencut)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `fluxer`
-- `whisper`
-- `faster-whisper`
+- `whisperx`
+- `tts`
+- `pipeline de reels`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con fluxer, whisper, faster-whisper cuando el flujo necesite mas de una pieza.
+Combinar con whisperx, tts, pipeline de reels cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres moviepy. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si ensamblas video por código en Python. No debe instalarse por inercia.

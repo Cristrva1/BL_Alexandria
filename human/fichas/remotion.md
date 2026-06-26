@@ -1,6 +1,6 @@
 # remotion
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Remotion is a framework for **creating videos programmatically using React.**.
 
 ## Que problema resuelve
 
-quieres remotion is a framework for **creating videos programmatically using react.**
+generas video a escala con React y quieres variantes parametrizadas
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para javascript, javascript-typescript, multimedia, re
 
 ## Cuando usarlo
 
-quieres remotion is a framework for **creating videos programmatically using react.**
+generas video a escala con React y quieres variantes parametrizadas
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+trabajas en Python ([moviepy](#-moviepy)) o buscas un editor visual.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `open-generative-ai`
+- `pipeline de reels`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con open-generative-ai, pipeline de reels cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres remotion is a framework for **creating videos programmatically using react.**. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si generas video a escala con React y quieres variantes parametrizadas. No debe instalarse por inercia.

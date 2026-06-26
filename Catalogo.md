@@ -1,6 +1,6 @@
 # Catalogo generado
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 | Repo | Categoria | Rol | Instalacion | Decision | Resumen | Local |
 |---|---:|---|---|---|---|---|
@@ -136,7 +136,7 @@ Generado: 2026-06-25T05:05:06.808623+00:00
 | nanochat | 9 | app | deferred | defer | nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all major LLM stages including tokenization, pretraining, finetuning, evaluation, inference, and a chat UI. For example, you can train your own GPT-2 capability LLM (which cost ~$43,000 to train in 2019) for only $48 (~2 hours of 8XH100 GPU node) and then talk to it . | si |
 | Nemotron | 9 | app | deferred | defer | Open and efficient models for agentic AI.** Training recipes, deployment guides, and use-case examples for the Nemotron family. | si |
 | open-design | 9 | runtime | reference_only | reference | 🔥 **Open Design 0.10.0 is here: the all-in-one Agentic design workspace.** The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing off to an editor or a Code Agent — without leaving the app. With parallel sessions, it stops feeling like one assistant and starts feeling like a local design team . | si |
-| OpenWA | 9 | platform | reference_only | reference | OpenWA** is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls. | si |
+| OpenWA | 1 | platform | reference_only | reference | OpenWA** is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls. | si |
 | pdfcraft | 9 | platform | reference_only | reference | Merge, split, compress, convert, and edit PDF files online without uploading to servers. | si |
 | penpot | 9 | platform | reference_only | reference | Penpot is the open-source design platform for teams that build digital products at scale. | si |
 | plasmic | 9 | library | reference_only | reference | The open-source visual builder for your codebase. Build beautiful apps and websites incredibly fast. Drag and drop your own components, integrate with your codebase. Break through the low-code ceiling. | si |

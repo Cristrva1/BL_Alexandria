@@ -1,6 +1,6 @@
 # ComfyUI
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ The most powerful and modular AI engine for content creation.**.
 
 ## Que problema resuelve
 
-quieres comfyui
+quieres control total y pipelines reproducibles
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para comfy, docker, frontend, javascript, python, reac
 
 ## Cuando usarlo
 
-quieres comfyui
+quieres control total y pipelines reproducibles
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+buscas simplicidad inmediata ([Fooocus](#-fooocus)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `litellm`
-- `cosmos`
-- `stable-diffusion-webui`
+- `comfyui-ipadapter-plus`
+- `real-esrgan`
+- `pipeline de reels`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con litellm, cosmos, stable-diffusion-webui cuando el flujo necesite mas de una pieza.
+Combinar con comfyui-ipadapter-plus, real-esrgan, pipeline de reels cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres comfyui. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres control total y pipelines reproducibles. No debe instalarse por inercia.

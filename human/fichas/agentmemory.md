@@ -1,6 +1,6 @@
 # agentmemory
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Your coding agent remembers everything. No more re-explaining. Built on iii engi
 
 ## Que problema resuelve
 
-quieres your coding agent remembers everything. no more re-explaining.
+cambias de asistente y quieres una memoria común entre ellos
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para agents, docker, javascript, javascript-typescript
 
 ## Cuando usarlo
 
-quieres your coding agent remembers everything. no more re-explaining.
+cambias de asistente y quieres una memoria común entre ellos
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+te basta la memoria nativa de un único cliente o no usas MCP.
 
 ## Tipo de instalacion
 
@@ -41,8 +41,7 @@ Repo local detectado: si
 ## Con que se combina
 
 - `mem0`
-- `mempalace`
-- `loguru`
+- `ruflo`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con mem0, mempalace, loguru cuando el flujo necesite mas de una pieza.
+Combinar con mem0, ruflo cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres your coding agent remembers everything. no more re-explaining.. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si cambias de asistente y quieres una memoria común entre ellos. No debe instalarse por inercia.

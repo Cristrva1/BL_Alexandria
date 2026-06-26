@@ -1,6 +1,6 @@
 # stop-slop
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ A skill for removing AI tells from prose.
 
 ## Que problema resuelve
 
-quieres stop slop
+quieres prosa más natural y te molesta el tono IA
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para typescript. Stack declarado: typescript.
 
 ## Cuando usarlo
 
-quieres stop slop
+quieres prosa más natural y te molesta el tono IA
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+ya usas [humanizer](#-humanizer) (solapan) o escribes a mano.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+- `humanizer`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
+Combinar con humanizer cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres stop slop. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres prosa más natural y te molesta el tono IA. No debe instalarse por inercia.

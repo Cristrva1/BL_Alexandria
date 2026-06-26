@@ -1,6 +1,6 @@
 # andrej-karpathy-skills
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Check out my new project Multica — an open-source platform for running and man
 
 ## Que problema resuelve
 
-quieres karpathy-inspired claude code guidelines
+quieres respuestas más útiles ya, sin curar prompts largos
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para skills, typescript. Stack declarado: typescript.
 
 ## Cuando usarlo
 
-quieres karpathy-inspired claude code guidelines
+quieres respuestas más útiles ya, sin curar prompts largos
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+buscas skills ejecutables con scripts concretos.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
-- `superpowers`
+- `awesome-claude-code`
+- `context-engineering`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con antigravity-awesome-skills, awesome-agent-skills, superpowers cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code, context-engineering cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres karpathy-inspired claude code guidelines. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres respuestas más útiles ya, sin curar prompts largos. No debe instalarse por inercia.

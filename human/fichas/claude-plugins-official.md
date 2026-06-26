@@ -1,6 +1,6 @@
 # claude-plugins-official
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ A curated directory of high-quality plugins for Claude Code.
 
 ## Que problema resuelve
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+quieres extensiones oficiales con garantía de compatibilidad
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para typescript. Stack declarado: typescript.
 
 ## Cuando usarlo
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+quieres extensiones oficiales con garantía de compatibilidad
 
 ## Cuando NO usarlo
 
-prefieres conexiones directas sin protocolo estándar
+buscas aportes comunitarios amplios ([awesome-claude-code](#-awesome-claude-code)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `n8n-skills`
-- `mcp`
-- `servers`
+- `awesome-claude-code`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con n8n-skills, mcp, servers cuando el flujo necesite mas de una pieza.
+Combinar con awesome-claude-code cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres extensiones oficiales con garantía de compatibilidad. No debe instalarse por inercia.

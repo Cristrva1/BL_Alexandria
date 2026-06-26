@@ -1,6 +1,6 @@
 # pdfcraft
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Merge, split, compress, convert, and edit PDF files online without uploading to 
 
 ## Que problema resuelve
 
-quieres pdfcraft
+manipulas PDFs con privacidad y sin instalar nada
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para docker, javascript, javascript-typescript, postg
 
 ## Cuando usarlo
 
-quieres pdfcraft
+manipulas PDFs con privacidad y sin instalar nada
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas conversión a Markdown para IA ([markitdown](#-markitdown)) o edición de contenido (no solo manipulación de páginas).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `markitdown`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con markitdown cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres pdfcraft. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si manipulas PDFs con privacidad y sin instalar nada. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # magicui
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ UI Library for Design Engineers.
 
 ## Que problema resuelve
 
-quieres ui library for design engineers
+priorizas estética y velocidad
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para frontend, javascript, javascript-typescript, reac
 
 ## Cuando usarlo
 
-quieres ui library for design engineers
+priorizas estética y velocidad
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas accesibilidad estricta ([heroui](#-heroui)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `tailwindcss`
+- `motion`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con tailwindcss, motion cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres ui library for design engineers. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si priorizas estética y velocidad. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # taste-skill
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typ
 
 ## Que problema resuelve
 
-quieres taste skill
+quieres frontends con gusto y no te basta con UI funcional
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para postgres, react, skills, typescript. Stack declarad
 
 ## Cuando usarlo
 
-quieres taste skill
+quieres frontends con gusto y no te basta con UI funcional
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+ya tienes un design system cerrado o no usas generadores de imagen.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `ui-ux-pro-max-skill`
+- `impeccable`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con ui-ux-pro-max-skill, impeccable cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres taste skill. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres frontends con gusto y no te basta con UI funcional. No debe instalarse por inercia.

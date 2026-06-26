@@ -1,6 +1,6 @@
 # antigravity-awesome-skills
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ REFERENCIA
 
 ## Que problema resuelve
 
-quieres 🌌 antigravity awesome skills: 1,682+ agentic skills for claude code, gemini cli,
+quieres opciones por cantidad y dominio
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para agents, javascript, javascript-typescript, postgres
 
 ## Cuando usarlo
 
-quieres 🌌 antigravity awesome skills: 1,682+ agentic skills for claude code, gemini cli,
+quieres opciones por cantidad y dominio
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+prefieres curaduría oficial y respaldo de marca ([awesome-agent-skills](#-awesome-agent-skills)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `andrej-karpathy-skills`
+- `skillspector`
 - `awesome-agent-skills`
-- `superpowers`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con andrej-karpathy-skills, awesome-agent-skills, superpowers cuando el flujo necesite mas de una pieza.
+Combinar con skillspector, awesome-agent-skills cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres 🌌 antigravity awesome skills: 1,682+ agentic skills for claude code, gemini cli,. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres opciones por cantidad y dominio. No debe instalarse por inercia.

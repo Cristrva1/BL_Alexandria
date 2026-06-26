@@ -1,6 +1,6 @@
 # three.js
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ JavaScript 3D library.
 
 ## Que problema resuelve
 
-quieres three.js
+renderizas 3D en web y quieres control a bajo nivel
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para javascript, javascript-typescript, typescript. St
 
 ## Cuando usarlo
 
-quieres three.js
+renderizas 3D en web y quieres control a bajo nivel
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+trabajas solo 2D o prefieres la ergonomía de React ([react-three-fiber](#-react-three-fiber)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `react-three-fiber`
+- `gsap`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con react-three-fiber, gsap cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres three.js. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si renderizas 3D en web y quieres control a bajo nivel. No debe instalarse por inercia.

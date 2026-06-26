@@ -1,6 +1,6 @@
 # agents-towards-production
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Agents Towards Production.
 
 ## Que problema resuelve
 
-quieres agents towards production
+vas a producción con agentes y necesitas el ciclo completo
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para agents, automation, docker, fastapi, langchain, pyt
 
 ## Cuando usarlo
 
-quieres agents towards production
+vas a producción con agentes y necesitas el ciclo completo
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+solo experimentas localmente o buscas skills, no tutoriales.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `awesome-claude-code`
+- `langfuse`
 - `ag2`
-- `crewai`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con awesome-claude-code, ag2, crewai cuando el flujo necesite mas de una pieza.
+Combinar con langfuse, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres agents towards production. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si vas a producción con agentes y necesitas el ciclo completo. No debe instalarse por inercia.

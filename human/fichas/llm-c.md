@@ -1,6 +1,6 @@
 # llm.c
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ LLMs in simple, pure C/CUDA with no need for 245MB of PyTorch or 107MB of cPytho
 
 ## Que problema resuelve
 
-quieres llm.c
+quieres bajo nivel sin abstracciones y tienes GPU CUDA
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `app` para javascript, python, typescript. Stack declarado: pyth
 
 ## Cuando usarlo
 
-quieres llm.c
+quieres bajo nivel sin abstracciones y tienes GPU CUDA
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+prefieres PyTorch ([nanoGPT](#-nanogpt)) o no tienes CUDA.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `codegraph`
-- `gitnexus`
-- `deepseek-coder`
+- `nanogpt`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con codegraph, gitnexus, deepseek-coder cuando el flujo necesite mas de una pieza.
+Combinar con nanogpt cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres llm.c. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres bajo nivel sin abstracciones y tienes GPU CUDA. No debe instalarse por inercia.

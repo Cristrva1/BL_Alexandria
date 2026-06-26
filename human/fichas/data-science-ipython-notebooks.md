@@ -1,6 +1,6 @@
 # data-science-ipython-notebooks
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ data-science-ipython-notebooks.
 
 ## Que problema resuelve
 
-quieres data-science-ipython-notebooks
+estudias/consultas DS con ejemplos ejecutables
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para postgres, python, typescript. Stack declarado: py
 
 ## Cuando usarlo
 
-quieres data-science-ipython-notebooks
+estudias/consultas DS con ejemplos ejecutables
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+buscas una librería, no ejemplos, o necesitas material actualizado a las versiones más recientes.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `codegraph`
-- `gitnexus`
-- `deepseek-coder`
+- `dash`
+- `streamlit`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con codegraph, gitnexus, deepseek-coder cuando el flujo necesite mas de una pieza.
+Combinar con dash, streamlit cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres data-science-ipython-notebooks. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si estudias/consultas DS con ejemplos ejecutables. No debe instalarse por inercia.

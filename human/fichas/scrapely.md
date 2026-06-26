@@ -1,6 +1,6 @@
 # scrapely
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ REFERENCIA
 
 ## Que problema resuelve
 
-quieres ========
+prefieres enseñar por ejemplos y el sitio es homogéneo
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para javascript, python, scraping, typescript. Stack d
 
 ## Cuando usarlo
 
-quieres ========
+prefieres enseñar por ejemplos y el sitio es homogéneo
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas un crawler completo o el proyecto exige mantenimiento activo.
 
 ## Tipo de instalacion
 
@@ -58,4 +58,4 @@ Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pie
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres ========. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si prefieres enseñar por ejemplos y el sitio es homogéneo. No debe instalarse por inercia.

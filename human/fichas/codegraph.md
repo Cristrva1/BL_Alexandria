@@ -1,6 +1,6 @@
 # codegraph
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Already installed? Run `codegraph upgrade` to update in place.
 
 ## Que problema resuelve
 
-quieres codegraph
+trabajas repos grandes y el contexto del agente es caro
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para fastapi, javascript, javascript-typescript, postg
 
 ## Cuando usarlo
 
-quieres codegraph
+trabajas repos grandes y el contexto del agente es caro
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+tu base de código es pequeña y no justifica mantener un índice.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `gitnexus`
-- `deepseek-coder`
-- `llmc`
+- `graphify`
+- `headroom`
+- `análisis de repos`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con gitnexus, deepseek-coder, llmc cuando el flujo necesite mas de una pieza.
+Combinar con graphify, headroom, análisis de repos cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres codegraph. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si trabajas repos grandes y el contexto del agente es caro. No debe instalarse por inercia.

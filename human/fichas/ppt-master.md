@@ -1,6 +1,6 @@
 # ppt-master
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ English | 中文.
 
 ## Que problema resuelve
 
-quieres ppt master — ai generates natively editable pptx from any document
+quieres PPTX editable de Office rápido
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para postgres, python, typescript. Stack declarado: py
 
 ## Cuando usarlo
 
-quieres ppt master — ai generates natively editable pptx from any document
+quieres PPTX editable de Office rápido
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+prefieres slides web por código ([reveal.js](#-revealjs)) o control de diseño pixel-perfect.
 
 ## Tipo de instalacion
 
@@ -41,8 +41,7 @@ Repo local detectado: si
 ## Con que se combina
 
 - `markitdown`
-- `revealjs`
-- `reveal.js`
+- `docs → presentaciones`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con markitdown, revealjs, reveal.js cuando el flujo necesite mas de una pieza.
+Combinar con markitdown, docs → presentaciones cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres ppt master — ai generates natively editable pptx from any document. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres PPTX editable de Office rápido. No debe instalarse por inercia.

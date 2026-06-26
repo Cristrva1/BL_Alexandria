@@ -1,6 +1,6 @@
 # faster-whisper
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ faster-whisper** is a reimplementation of OpenAI's Whisper model using CTranslat
 
 ## Que problema resuelve
 
-quieres faster whisper transcription with ctranslate2
+el rendimiento, la memoria o el coste de GPU importan
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para docker, fastapi, multimedia, python, typescript, 
 
 ## Cuando usarlo
 
-quieres faster whisper transcription with ctranslate2
+el rendimiento, la memoria o el coste de GPU importan
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+necesitas alineación/diarización ([whisperX](#-whisperx)) o te basta el CLI oficial.
 
 ## Tipo de instalacion
 
@@ -58,4 +58,4 @@ Combinar con fluxer, whisper, whisperx cuando el flujo necesite mas de una pieza
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres faster whisper transcription with ctranslate2. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si el rendimiento, la memoria o el coste de GPU importan. No debe instalarse por inercia.

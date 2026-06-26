@@ -1,6 +1,6 @@
 # n8n-mcp
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ A Model Context Protocol (MCP) server that provides AI assistants with comprehen
 
 ## Que problema resuelve
 
-quieres n8n-mcp
+generas flujos n8n con IA y quieres menos alucinaciones de parámetros
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para automation, docker, javascript, javascript-types
 
 ## Cuando usarlo
 
-quieres n8n-mcp
+generas flujos n8n con IA y quieres menos alucinaciones de parámetros
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+no usas n8n o construyes los flujos a mano.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `twenty-main`
-- `evolution-api`
-- `whatsapp-agentkit`
+- `n8n`
+- `n8n-skills`
+- `bot whatsapp`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
+Combinar con n8n, n8n-skills, bot whatsapp cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres n8n-mcp. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si generas flujos n8n con IA y quieres menos alucinaciones de parámetros. No debe instalarse por inercia.

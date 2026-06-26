@@ -1,6 +1,6 @@
 # penpot
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Penpot is the open-source design platform for teams that build digital products 
 
 ## Que problema resuelve
 
-quieres penpot is the open-source design platform for teams that build digital products 
+quieres diseño abierto y soberano, self-host
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para docker, frontend, javascript, javascript-typescr
 
 ## Cuando usarlo
 
-quieres penpot is the open-source design platform for teams that build digital products 
+quieres diseño abierto y soberano, self-host
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas generación por IA ([open-design](#-open-design)) o no quieres operar Docker.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `design.md`
+- `plasmic`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con design.md, plasmic cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres penpot is the open-source design platform for teams that build digital products . No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres diseño abierto y soberano, self-host. No debe instalarse por inercia.

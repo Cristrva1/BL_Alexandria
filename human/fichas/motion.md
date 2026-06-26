@@ -1,6 +1,6 @@
 # motion
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ An open source animation library for JavaScript, React and Vue.
 
 ## Que problema resuelve
 
-quieres <img width="35" height="35" alt="motion logo" src="https://github.com/user-attachments/ass
+animas componentes React con API declarativa
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para javascript, javascript-typescript, react, typescr
 
 ## Cuando usarlo
 
-quieres <img width="35" height="35" alt="motion logo" src="https://github.com/user-attachments/ass
+animas componentes React con API declarativa
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas timelines complejos no ligados a React ([GSAP](#-gsap)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `firecrawl`
-- `crawl4ai`
-- `scrapy`
+- `magicui`
+- `react-three-fiber`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
+Combinar con magicui, react-three-fiber cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si quieres <img width="35" height="35" alt="motion logo" src="https://github.com/user-attachments/ass. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si animas componentes React con API declarativa. No debe instalarse por inercia.

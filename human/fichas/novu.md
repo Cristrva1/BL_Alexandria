@@ -1,6 +1,6 @@
 # novu
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ The open-source communication infrastructure for agents and products.
 
 ## Que problema resuelve
 
-quieres >
+envías notificaciones por varios canales y quieres un único backend
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para automation, javascript, javascript-typescript, re
 
 ## Cuando usarlo
 
-quieres >
+envías notificaciones por varios canales y quieres un único backend
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+solo necesitas email ([listmonk](#-listmonk)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `twenty-main`
-- `evolution-api`
-- `whatsapp-agentkit`
+- `chatwoot`
+- `activepieces`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
+Combinar con chatwoot, activepieces cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres >. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si envías notificaciones por varios canales y quieres un único backend. No debe instalarse por inercia.

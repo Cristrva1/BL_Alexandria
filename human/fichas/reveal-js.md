@@ -1,6 +1,6 @@
 # reveal.js
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ reveal.js is an open source HTML presentation framework. It enables anyone with 
 
 ## Que problema resuelve
 
-quieres reveal.js is an open source html presentation framework. it enables anyone with 
+quieres slides web por código, versionables
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para javascript, javascript-typescript, typescript. St
 
 ## Cuando usarlo
 
-quieres reveal.js is an open source html presentation framework. it enables anyone with 
+quieres slides web por código, versionables
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+necesitas PPTX editable en Office ([ppt-master](#-ppt-master)) o un editor visual de slides.
 
 ## Tipo de instalacion
 
@@ -58,4 +58,4 @@ Combinar con markitdown, ppt-master, revealjs cuando el flujo necesite mas de un
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres reveal.js is an open source html presentation framework. it enables anyone with . No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres slides web por código, versionables. No debe instalarse por inercia.

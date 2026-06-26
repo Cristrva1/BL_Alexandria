@@ -1,6 +1,6 @@
 # Guia humana
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 Esta carpeta contiene salidas navegables para entender la biblioteca sin abrir GitHub ni leer repos completos.
 

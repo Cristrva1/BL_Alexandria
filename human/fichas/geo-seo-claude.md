@@ -1,6 +1,6 @@
 # geo-seo-claude
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ REFERENCIA
 
 ## Que problema resuelve
 
-quieres (chatgpt, claude, perplexity, gemini, google ai overviews) while maintaining tra
+te importa el descubrimiento por IA, no solo Google
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para python, typescript. Stack declarado: python, typesc
 
 ## Cuando usarlo
 
-quieres (chatgpt, claude, perplexity, gemini, google ai overviews) while maintaining tra
+te importa el descubrimiento por IA, no solo Google
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+solo haces SEO clásico sin objetivo generativo.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+- `marketingskills`
+- `agency-agents`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
+Combinar con marketingskills, agency-agents cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres (chatgpt, claude, perplexity, gemini, google ai overviews) while maintaining tra. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si te importa el descubrimiento por IA, no solo Google. No debe instalarse por inercia.

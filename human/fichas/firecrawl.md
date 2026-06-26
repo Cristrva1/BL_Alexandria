@@ -1,6 +1,6 @@
 # firecrawl
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ src="https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_lo
 
 ## Que problema resuelve
 
-quieres src="https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_lo
+alimentas agentes/RAG con web y quieres salida limpia
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para docker, javascript, python, scraping, typescript.
 
 ## Cuando usarlo
 
-quieres src="https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_lo
+alimentas agentes/RAG con web y quieres salida limpia
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+solo quieres HTML crudo o el presupuesto de API no encaja.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
+- `gpt-researcher`
 - `crawl4ai`
-- `scrapy`
-- `crawlee`
+- `research profundo`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con crawl4ai, scrapy, crawlee cuando el flujo necesite mas de una pieza.
+Combinar con gpt-researcher, crawl4ai, research profundo cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres src="https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_lo. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si alimentas agentes/RAG con web y quieres salida limpia. No debe instalarse por inercia.

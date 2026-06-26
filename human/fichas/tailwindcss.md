@@ -1,6 +1,6 @@
 # tailwindcss
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ A utility-first CSS framework for rapidly building custom user interfaces.
 
 ## Que problema resuelve
 
-quieres a utility-first css framework for rapidly building custom user interfaces.
+quieres estilar rápido y consistente
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para javascript, javascript-typescript. Stack declara
 
 ## Cuando usarlo
 
-quieres a utility-first css framework for rapidly building custom user interfaces.
+quieres estilar rápido y consistente
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+prefieres CSS-in-JS o estilos scoped por componente.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,9 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `openwa`
-- `skills`
-- `agency-agents`
+- `heroui`
+- `ui`
+- `magicui`
 
 ## Contra que compite
 
@@ -54,8 +54,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
+Combinar con heroui, ui, magicui cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres a utility-first css framework for rapidly building custom user interfaces.. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres estilar rápido y consistente. No debe instalarse por inercia.

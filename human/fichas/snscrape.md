@@ -1,6 +1,6 @@
 # snscrape
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ snscrape is a scraper for social networking services (SNS). It scrapes things li
 
 ## Que problema resuelve
 
-quieres snscrape
+recolectas varias redes y no te sirve una API oficial
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `directory` para python, scraping, typescript. Stack declarado: 
 
 ## Cuando usarlo
 
-quieres snscrape
+recolectas varias redes y no te sirve una API oficial
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+solo necesitas Instagram ([instaloader](#-instaloader)) o la plataforma ya bloqueó el acceso no oficial.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `firecrawl`
-- `crawl4ai`
-- `scrapy`
+- `instaloader`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
+Combinar con instaloader cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres snscrape. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si recolectas varias redes y no te sirve una API oficial. No debe instalarse por inercia.

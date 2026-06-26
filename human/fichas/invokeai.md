@@ -1,6 +1,6 @@
 # InvokeAI
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Invoke - Professional Creative AI Tools for Visual Media.
 
 ## Que problema resuelve
 
-quieres invoke - professional creative ai tools for visual media
+trabajas creatividad profesional y quieres una app estable con canvas
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `runtime` para docker, javascript, python, react, typescript. St
 
 ## Cuando usarlo
 
-quieres invoke - professional creative ai tools for visual media
+trabajas creatividad profesional y quieres una app estable con canvas
 
 ## Cuando NO usarlo
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+solo haces una prueba puntual ([Fooocus](#-fooocus)) o prefieres grafos nodales ([ComfyUI](#-comfyui)).
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `litellm`
-- `cosmos`
-- `comfyui`
+- `diffusers`
+- `controlnet`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
+Combinar con diffusers, controlnet cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres invoke - professional creative ai tools for visual media. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si trabajas creatividad profesional y quieres una app estable con canvas. No debe instalarse por inercia.

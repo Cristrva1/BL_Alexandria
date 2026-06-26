@@ -1,6 +1,6 @@
 # multica
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ Your next 10 hires won't be human.**.
 
 ## Que problema resuelve
 
-quieres multica
+mezclas trabajo humano y agentes en un mismo flujo
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `skill` para docker, javascript, javascript-typescript, postgres
 
 ## Cuando usarlo
 
-quieres multica
+mezclas trabajo humano y agentes en un mismo flujo
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+quieres automatización 100% headless o un producto maduro.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+- `ruflo`
+- `chatwoot`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
+Combinar con ruflo, chatwoot cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres multica. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si mezclas trabajo humano y agentes en un mismo flujo. No debe instalarse por inercia.

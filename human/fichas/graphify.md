@@ -1,6 +1,6 @@
 # graphify
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ DIFERIR
 
 ## Que problema resuelve
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+quieres ver conexiones visualmente o auditar un sistema
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `library` para docker, javascript, multimedia, postgres, python,
 
 ## Cuando usarlo
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+quieres ver conexiones visualmente o auditar un sistema
 
 ## Cuando NO usarlo
 
-prefieres conexiones directas sin protocolo estándar
+solo necesitas índice textual barato ([codegraph](#-codegraph)) o tu proyecto es trivial.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `claude-plugins-official`
-- `n8n-skills`
-- `mcp`
+- `codegraph`
+- `graphrag`
 
 ## Contra que compite
 
@@ -54,8 +53,8 @@ Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista clar
 
 ## Ideas profesionales
 
-Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
+Combinar con codegraph, graphrag cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: diferir. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si quieres ver conexiones visualmente o auditar un sistema. No debe instalarse por inercia.

@@ -1,6 +1,6 @@
 # open-notebook
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ An open source, privacy-focused alternative to Google's Notebook LM!.
 
 ## Que problema resuelve
 
-quieres an open source, privacy-focused alternative to google's notebook lm!
+quieres NotebookLM privado y sin cuotas
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para docker, fastapi, langchain, postgres, python, re
 
 ## Cuando usarlo
 
-quieres an open source, privacy-focused alternative to google's notebook lm!
+quieres NotebookLM privado y sin cuotas
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+prefieres el NotebookLM real automatizado ([notebooklm-py](#-notebooklm-py)).
 
 ## Tipo de instalacion
 
@@ -40,7 +40,8 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- Ninguno declarado.
+- `odysseus`
+- `markitdown`
 
 ## Contra que compite
 
@@ -52,8 +53,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Usarlo como finalista solo despues de comparar contra alternativas del mismo caso de uso.
+Combinar con odysseus, markitdown cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres an open source, privacy-focused alternative to google's notebook lm!. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres NotebookLM privado y sin cuotas. No debe instalarse por inercia.

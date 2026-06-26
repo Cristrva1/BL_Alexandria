@@ -1,6 +1,6 @@
 # loguru
 
-Generado: 2026-06-25T05:05:06.808623+00:00
+Generado: 2026-06-26T07:47:33.067156+00:00
 
 ## Decision
 
@@ -12,7 +12,7 @@ ______________________________________________________________________.
 
 ## Que problema resuelve
 
-quieres ______________________________________________________________________
+quieres logging fácil y legible en Python sin pelear con stdlib
 
 ## Por que tiene valor
 
@@ -20,11 +20,11 @@ Aporta valor en `platform` para python, typescript. Stack declarado: python, typ
 
 ## Cuando usarlo
 
-quieres ______________________________________________________________________
+quieres logging fácil y legible en Python sin pelear con stdlib
 
 ## Cuando NO usarlo
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+ya usas el stdlib `logging` configurado o tienes un stack de observabilidad corporativo.
 
 ## Tipo de instalacion
 
@@ -40,9 +40,7 @@ Repo local detectado: si
 
 ## Con que se combina
 
-- `mem0`
-- `agentmemory`
-- `mempalace`
+- `litellm`
 
 ## Contra que compite
 
@@ -54,8 +52,8 @@ Riesgo bajo o medio; validar solo cuando sea necesario para una decision concret
 
 ## Ideas profesionales
 
-Combinar con mem0, agentmemory, mempalace cuando el flujo necesite mas de una pieza.
+Combinar con litellm cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres ______________________________________________________________________. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres logging fácil y legible en Python sin pelear con stdlib. No debe instalarse por inercia.
