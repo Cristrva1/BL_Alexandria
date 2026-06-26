@@ -20,10 +20,10 @@ Hay **tres formas de leerla** según lo que necesites:
 
 Cada ficha abre con una línea **Etiquetas:** que nombra cada valor — `Ejecución <x> · [MCP 🔌 ·] Rol <y> · Setup <z>`:
 
-- **Ejecución:** 🏠 local-first · ☁️ API/cloud · 🔀 híbrido (local o API)
-- **MCP:** 🔌 expone o consume Model Context Protocol
-- **Rol:** ⚙️ plataforma · 🧩 motor/runtime · 📚 librería/SDK · 🎨 skill/prompt · 📂 directorio/recurso · 🖥️ app/UI
-- **Setup:** 🟢 fácil (CLI/instalar) · 🟡 medio (config/servicios) · 🔴 pesado (GPU/infra/self-host)
+- **Ejecución:** 🏠 local-first (corre en tu máquina, sin depender de un servicio externo) · ☁️ API/cloud (depende de un proveedor o servicio remoto) · 🔀 híbrido (puede operar local o vía API según la configuración)
+- **MCP:** 🔌 expone o consume Model Context Protocol — el estándar abierto que permite que asistentes como Claude o Cursor usen herramientas y datos externos de forma uniforme
+- **Rol:** ⚙️ plataforma (producto integral con UI y backend) · 🧩 motor/runtime (componente que ejecuta lógica de IA) · 📚 librería/SDK (importas desde tu código) · 🎨 skill/prompt (instrucción o habilidad para un asistente) · 📂 directorio/recurso (catálogo o índice curado) · 🖥️ app/UI (aplicación visual con interfaz propia)
+- **Setup:** 🟢 fácil (un comando CLI o instalar paquete) · 🟡 medio (requiere configurar servicios, credenciales o dependencias) · 🔴 pesado (necesita GPU, infraestructura o self-host con varios componentes)
 
 ---
 
@@ -36,19 +36,19 @@ Cada ficha abre con una línea **Etiquetas:** que nombra cada valor — `Ejecuci
 
 | # | Categoría | Repos | Para qué |
 |---|---|---|---|
-| 1 | [Automatización, Mensajería & CRM](#1-automatización-mensajería--crm) | 12 | WhatsApp, workflows, CRM, email, notificaciones |
-| 2 | [Skills, Prompts & Guías de Agente](#2-skills-prompts--guías-de-agente) | 21 | Habilidades `SKILL.md`, playbooks, calidad de prompts |
-| 3 | [Frameworks & Orquestación de Agentes](#3-frameworks--orquestación-de-agentes) | 18 | Multiagente, research autónomo, low-code de IA |
-| 4 | [Scraping, Búsqueda & Research Web](#4-scraping-búsqueda--research-web) | 14 | Crawling, extracción, navegación con LLM |
-| 5 | [MCP & Conectividad](#5-mcp--conectividad) | 7 | Servidores/clientes MCP, APIs públicas |
-| 6 | [Memoria, LLM Ops & Observabilidad](#6-memoria-llm-ops--observabilidad) | 10 | Memoria de agentes, gateways, trazas, logging |
-| 7 | [Inteligencia de Código, Datos & Entrenamiento](#7-inteligencia-de-código-datos--entrenamiento) | 13 | Indexar repos, grafos, entrenar modelos desde cero |
-| 8 | [Workspaces de IA Local & Notebooks](#8-workspaces-de-ia-local--notebooks) | 5 | Entornos privados todo-en-uno, NotebookLM |
-| 9 | [Diseño, UI & Frontend](#9-diseño-ui--frontend) | 15 | Diseño asistido, libs de componentes, animación, 3D |
-| 10 | [Analítica & Visualización](#10-analítica--visualización) | 7 | Product analytics, dashboards, gráficos |
-| 11 | [Generación de Imagen & Visión](#11-generación-de-imagen--visión) | 15 | Difusión, control, restauración, rostros |
-| 12 | [Audio, Voz & Video](#12-audio-voz--video) | 15 | STT, TTS, edición y render de video |
-| 13 | [Documentos & Presentaciones](#13-documentos--presentaciones) | 4 | Conversión a Markdown, PPTX, PDF, slides |
+| 1 | [Automatización, Mensajería & CRM](#1-automatización-mensajería--crm) | 12 | WhatsApp, workflows, CRM, email, notificaciones — bots de venta, gateways multicanal, bandejas de soporte |
+| 2 | [Skills, Prompts & Guías de Agente](#2-skills-prompts--guías-de-agente) | 21 | Habilidades `SKILL.md`, playbooks, calidad de prompts — catálogos de skills, anti-slop, metodologías de agente |
+| 3 | [Frameworks & Orquestación de Agentes](#3-frameworks--orquestación-de-agentes) | 18 | Multiagente, research autónomo, low-code de IA — crews, grafos de agentes, builders visuales |
+| 4 | [Scraping, Búsqueda & Research Web](#4-scraping-búsqueda--research-web) | 14 | Crawling, extracción, navegación con LLM — scrapers, navegadores agentizados, datasets sociales |
+| 5 | [MCP & Conectividad](#5-mcp--conectividad) | 7 | Servidores/clientes MCP, APIs públicas — SDK del protocolo, servidores de referencia, directorios |
+| 6 | [Memoria, LLM Ops & Observabilidad](#6-memoria-llm-ops--observabilidad) | 10 | Memoria de agentes, gateways, trazas, logging — memorias persistentes, proxies de LLM, telemetría |
+| 7 | [Inteligencia de Código, Datos & Entrenamiento](#7-inteligencia-de-código-datos--entrenamiento) | 13 | Indexar repos, grafos, entrenar modelos desde cero — codegraph, RAG sobre código, nanoGPT/llm.c |
+| 8 | [Workspaces de IA Local & Notebooks](#8-workspaces-de-ia-local--notebooks) | 5 | Entornos privados todo-en-uno, NotebookLM — asistentes locales soberanos, clones open-source |
+| 9 | [Diseño, UI & Frontend](#9-diseño-ui--frontend) | 15 | Diseño asistido, libs de componentes, animación, 3D — Figma open-source, shadcn/Tailwind, GSAP/three.js |
+| 10 | [Analítica & Visualización](#10-analítica--visualización) | 7 | Product analytics, dashboards, gráficos — PostHog, Metabase, ECharts, uPlot, Streamlit |
+| 11 | [Generación de Imagen & Visión](#11-generación-de-imagen--visión) | 15 | Difusión, control, restauración, rostros — ComfyUI, SD WebUI, ControlNet, GFPGAN, LivePortrait |
+| 12 | [Audio, Voz & Video](#12-audio-voz--video) | 15 | STT, TTS, edición y render de video — whisper/whisperX, supertonic, moviepy/remotion, lossless-cut |
+| 13 | [Documentos & Presentaciones](#13-documentos--presentaciones) | 4 | Conversión a Markdown, PPTX, PDF, slides — markitdown, ppt-master, reveal.js, pdfcraft |
 
 > Cada repo vive en **una** categoría; los cruces se resuelven con "Combina con". Excluidos por ser propios: `Binarias_Labs_C21`, `Binarias_Labs_Pruebas`.
 
@@ -62,39 +62,55 @@ Combos end-to-end que unen varios repos. Útiles cuando un repo solo no resuelve
 **Objetivo:** atención/ventas automatizada por WhatsApp con un agente LLM.
 **Stack:** [evolution-api](#-evolution-api) (canal WhatsApp) → [n8n](#-n8n) (orquestación) + [n8n-mcp](#-n8n-mcp) y [n8n-skills](#-n8n-skills) (que Claude construya los flujos) → LLM → [chatwoot](#-chatwoot) (handoff a humano) + [novu](#-novu) (notificaciones).
 **Cómo encaja:** evolution-api recibe/envía mensajes vía webhook; n8n enruta y llama al LLM; chatwoot centraliza cuando entra un agente humano.
+**Cuándo NO:** si solo necesitas respuestas simples sin handoff humano, basta con evolution-api + un webhook propio; si no quieres self-host, usa un SaaS de WhatsApp.
 
 ### 🎬 2. Pipeline de Reels / video corto
 **Objetivo:** convertir contenido en video corto con voz y subtítulos.
 **Stack:** [whisperX](#-whisperx) (subtítulos alineados) + [supertonic](#-supertonic) o [TTS](#-tts) (voz) + [ComfyUI](#-comfyui) o [Fooocus](#-fooocus) (visuales) + [Real-ESRGAN](#-real-esrgan) (upscale) → [moviepy](#-moviepy) o [remotion](#-remotion) (ensamblaje) → [lossless-cut](#-lossless-cut) (corte final).
 **Cómo encaja:** [videofy_minimal](#-videofy_minimal) puede orquestar el flujo simple; remotion/moviepy escalan a variantes programáticas.
+**Cuándo NO:** si no tienes GPU para los modelos de difusión, usa un servicio de generación de imagen en la nube; si solo necesitas cortar y subtitular un video existente, whisperX + lossless-cut bastan.
 
 ### 🔎 3. Agente de research profundo
 **Objetivo:** investigación citada y estructurada a partir de la web.
 **Stack:** [gpt-researcher](#-gpt-researcher) o [deer-flow](#-deer-flow) (orquestador) + [firecrawl](#-firecrawl) / [crawl4ai](#-crawl4ai) (extracción) + [browser-use](#-browser-use) (navegación) + [markitdown](#-markitdown) (ingesta) + [langfuse](#-langfuse) (trazas).
+**Cómo encaja:** el orquestador coordina sub-agentes que extraen, leen y sintetizan; firecrawl/crawl4ai convierten páginas a Markdown limpio; browser-use maneja sitios dinámicos; langfuse registra cada paso para depurar.
+**Cuándo NO:** si la investigación es sobre fuentes internas (no web), prescinde de firecrawl/browser-use y usa markitdown + RAG local.
 
 ### 🏠 4. Workspace privado local soberano
 **Objetivo:** asistente todo-en-uno sin fuga de datos.
 **Stack:** [odysseus](#-odysseus) (workspace) + [open-notebook](#-open-notebook) (conocimiento) + [ECC](#-ecc) (control seguro de agentes) + Ollama (modelos) + [mem0](#-mem0) (memoria).
+**Cómo encaja:** odysseus centraliza chat, docs y tareas; open-notebook indexa tus fuentes con RAG local; ECC valida lo que el agente ejecuta en tu sistema; mem0 da memoria entre sesiones.
+**Cuándo NO:** si no te importa la soberanía de datos, un SaaS (NotebookLM, Copilot) es más simple; si tu hardware no corre modelos locales, usa APIs comerciales con ECC.
 
 ### 🧠 5. Análisis de repos grandes
 **Objetivo:** que un asistente entienda una base de código enorme barato.
 **Stack:** [codegraph](#-codegraph) (índice local) + [graphify](#-graphify) / [graphrag](#-graphrag) (grafo) + [GitNexus](#-gitnexus) (exploración) + Claude Code.
+**Cómo encaja:** codegraph indexa el repo en un grafo local; graphify/graphrag enriquecen las relaciones; GitNexus expone la navegación; Claude Code consulta el índice para responder sobre el código.
+**Cuándo NO:** si el repo es pequeño (<10k líneas), Claude Code con `@` references basta; si necesitas análisis跨-repo, combina varios codegraph.
 
 ### 📈 6. Marketing de agencia
 **Objetivo:** operar campañas y contenido a escala.
 **Stack:** [marketingskills](#-marketingskills) + [agency-agents](#-agency-agents) (playbooks) + [mautic](#-mautic) (automatización) + [listmonk](#-listmonk) (email) + [posthog](#-posthog) / [metabase](#-metabase) (analítica) + [Open-Generative-AI](#-open-generative-ai) (creativos).
+**Cómo encaja:** los playbooks guían al agente en cada canal; mautic segmenta y nutre leads; listmonk envía newsletters; posthog/metabase miden conversión; Open-Generative-AI genera visuales.
+**Cuándo NO:** si operas una sola marca pequeña, mautic es excesivo; si no necesitas email masivo, prescinde de listmonk.
 
 ### 🌐 7. Web app moderna con IA
 **Objetivo:** construir frontend pulido rápido.
 **Stack:** [open-design](#-open-design) o [plasmic](#-plasmic) (diseño→código) + [tailwindcss](#-tailwindcss) + [heroui](#-heroui) o [ui](#-ui-shadcn) (componentes) + [GSAP](#-gsap) / [motion](#-motion) / [three.js](#-threejs) (animación/3D) + [swr](#-swr) (datos) + [echarts](#-echarts) / [uPlot](#-uplot) (gráficos).
+**Cómo encaja:** open-design/plasmic generan la estructura visual; Tailwind + shadcn/heroui dan componentes pulidos; GSAP/motion/three.js añaden animación; SWR gestiona el fetch; echarts/uPlot renderizan datos.
+**Cuándo NO:** si el proyecto es una landing estática, Tailwind + un componente de hero bastan; si necesitas un dashboard complejo, prioriza echarts/streamlit sobre animación.
 
 ### 🔌 8. Construir una app/servidor MCP
 **Objetivo:** exponer datos o herramientas propias a asistentes.
 **Stack:** [mcp-use](#-mcp-use) (framework) + [mcp](#-mcp) (SDK) + [servers](#-servers) (ejemplos de referencia) + [awesome-mcp-servers](#-awesome-mcp-servers) (qué ya existe).
+**Cómo encaja:** mcp-use abstrae el protocolo para que pases de prototipo a app desplegable; mcp da el SDK base; servers muestra patrones reales; awesome-mcp-servers evita que reinventes lo que ya existe.
+**Cuándo NO:** si solo necesitas consumir un servidor MCP existente, no construyas uno — busca en awesome-mcp-servers primero.
 
 ### 📊 9. Documentos → presentaciones
 **Objetivo:** pasar texto/informes a slides editables.
 **Stack:** [markitdown](#-markitdown) (todo → Markdown limpio) → [ppt-master](#-ppt-master) (PPTX) o [reveal.js](#-revealjs) (slides web).
+**Cómo encaja:** markitdown normaliza cualquier formato (PDF, DOCX, HTML) a Markdown; ppt-master genera PPTX editable en Office; reveal.js produce slides web navegables.
+**Cuándo NO:** si el contenido ya está en Markdown, salta markitdown; si necesitas diseño pixel-perfect, una herramienta de slides dedicada (Gamma, Pitch) da más control.
 
 ---
 
