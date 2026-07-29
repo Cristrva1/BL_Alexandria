@@ -4,235 +4,239 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `comfyui`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=['local']
+role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=—
 
-**Qué es:** motor local modular para crear pipelines visuales de generación con IA mediante un grafo de nodos, donde cada paso (carga de modelo, sampling, postproceso) es un bloque conectable y reutilizable.
-**Stack:** Python, GPU, modelos locales
-**Repo:** https://github.com/comfyanonymous/ComfyUI
+**Qué es:** The most powerful and modular AI engine for content creation.**.
+**Stack:** python, typescript, javascript, react, docker, comfy
+**Repo:** https://github.com/Comfy-Org/ComfyUI.git
 
-**Instalación** [~]: `git clone https://github.com/comfyanonymous/ComfyUI && cd ComfyUI && (uv sync || pip install -r requirements.txt)`
-_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+**Instalación** [~]: `git clone https://github.com/Comfy-Org/ComfyUI.git && cd ComfyUI && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres control total
-**Evita si:** buscas simplicidad ([Fooocus](#-fooocus)).
-**Combina con:** `comfyui-ipadapter-plus`, `real-esrgan`
-**Alternativas (elige una):** `fooocus`
+**Elige si:** —
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `stable-diffusion-webui`
 
 ## `comfyui-ipadapter-plus`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=['local']
+role=library · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una imagen de referencia para transferir estilo o identidad.
-**Stack:** Python, ComfyUI
-**Repo:** https://github.com/cubiq/ComfyUI_IPAdapter_plus
+**Qué es:** The IPAdapter are very powerful models for image-to-image conditioning. The subject or even just the style of the reference image(s) can be easily transferred to a generation. Think of it as a 1-image lora.
+**Stack:** python, typescript, javascript, postgres, comfy
+**Repo:** https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
 
-**Instalación** [~]: `git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus && cd ComfyUI_IPAdapter_plus && (uv sync || pip install -r requirements.txt)`
-_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+**Instalación** [~]: `pip install comfyui_ipadapter_plus   (o: uv add comfyui_ipadapter_plus)`
+_Nombre PyPI puede diferir de 'ComfyUI_IPAdapter_plus'; verifica en pypi.org._
 
-**Elige si:** trabajas en ComfyUI y necesitas consistencia
-**Evita si:** no usas ComfyUI.
-**Combina con:** `comfyui`
+**Elige si:** quieres comfyui ipadapter plus
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `comfyui`
 
 ## `controlnet`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=['local']
+role=library · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** método y modelos para condicionar la generación text-to-image con señales externas como poses, bordes, profundidad o mapas de segmentación, fijando la estructura del resultado.
-**Stack:** Python, difusión, GPU
-**Repo:** https://github.com/lllyasviel/ControlNet
+**Qué es:** News: A nightly version of ControlNet 1.1 is released!
+**Stack:** python, typescript
+**Repo:** https://github.com/lllyasviel/ControlNet.git
 
-**Instalación** [~]: `git clone https://github.com/lllyasviel/ControlNet && cd ControlNet && (uv sync || pip install -r requirements.txt)`
-_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+**Instalación** [~]: `pip install controlnet   (o: uv add controlnet)`
+_Nombre PyPI puede diferir de 'ControlNet'; verifica en pypi.org._
 
-**Elige si:** necesitas control estructural
-**Evita si:** ya trabajas en SD WebUI ([sd-webui-controlnet](#-sd-webui-controlnet)).
-**Combina con:** `diffusers`, `comfyui`
-**Alternativas (elige una):** `sd-webui-controlnet`
+**Elige si:** quieres news: a nightly version of controlnet 1.1 is released!
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `comfyui`
+
+## `cosmos`
+role=runtime · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Table of Contents.
+**Stack:** python, typescript, docker, postgres
+**Repo:** https://github.com/NVIDIA/cosmos.git
+
+**Instalación** [~]: `git clone https://github.com/NVIDIA/cosmos.git && cd cosmos && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** —
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `comfyui`, `stable-diffusion-webui`
 
 ## `deep-live-cam`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=—
+role=app · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video con salvaguardas de uso.
-**Stack:** Python, GPU
-**Repo:** https://github.com/hacksider/Deep-Live-Cam
+**Qué es:** Real-time face swap and video deepfake with a single click and only a single image.
+**Stack:** python, typescript, postgres
+**Repo:** https://github.com/hacksider/Deep-Live-Cam.git
 
-**Instalación** [~]: `git clone https://github.com/hacksider/Deep-Live-Cam && cd Deep-Live-Cam && (uv sync || pip install -r requirements.txt)`
+**Instalación** [~]: `git clone https://github.com/hacksider/Deep-Live-Cam.git && cd Deep-Live-Cam && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** necesitas swap en vivo legítimo
-**Evita si:** no puedes garantizar uso ético/consentimiento.
-**Combina con:** `face-recognition`
+**Elige si:** quieres deep-live-cam 2.1.6
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `comfyui`
 
 ## `diffusers`
-role=library · exec=local · setup=heavy · mcp=False · prov=['anthropic', 'local']
+role=library · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** librería de Hugging Face para construir y ejecutar pipelines de modelos de difusión (imagen, video, audio) desde código, con APIs estandarizadas para schedulers y modelos.
-**Stack:** Python, PyTorch
-**Repo:** https://github.com/huggingface/diffusers
+**Qué es:** Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at.
+**Stack:** python, typescript, postgres
+**Repo:** https://github.com/huggingface/diffusers.git
 
 **Instalación** [~]: `pip install diffusers   (o: uv add diffusers)`
 _Nombre PyPI puede diferir de 'diffusers'; verifica en pypi.org._
 
-**Elige si:** programas generación
-**Evita si:** quieres una UI lista ([Fooocus](#-fooocus)).
-**Combina con:** `controlnet`, `cosmos`
-**Alternativas (elige una):** `fooocus`
+**Elige si:** quieres copyright 2022 - the huggingface team. all rights reserved.
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `comfyui`
 
 ## `face-recognition`
 role=library · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** librería de Python sencilla para detección y reconocimiento facial, con una API de alto nivel para localizar, comparar e identificar caras en imágenes.
-**Stack:** Python, dlib
-**Repo:** https://github.com/ageitgey/face_recognition
+**Qué es:** _You can also read a translated version of this file in Chinese 简体中文版 or in Korean 한국어 or in Japanese 日本語._.
+**Stack:** python, typescript, docker, postgres
+**Repo:** https://github.com/ageitgey/face_recognition.git
 
 **Instalación** [~]: `pip install face_recognition   (o: uv add face_recognition)`
 _Nombre PyPI puede diferir de 'face_recognition'; verifica en pypi.org._
 
-**Elige si:** necesitas reconocimiento facial básico
-**Evita si:** buscas restauración/animación.
-**Combina con:** `deep-live-cam`
-
-## `fluxer`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
-
-**Qué es:** plataforma generativa emergente con foco en audio y video mejorados, ofrecida como cliente Canary web/desktop; su API y self-host aún están en finalización.
-**Stack:** web/TS
-**Repo:** https://github.com/fluxerapp/fluxer
-
-**Instalación** [?]: `git clone https://github.com/fluxerapp/fluxer (verificar README para build/run)`
-_Stack no claro; revisa el README tras clonar._
-
-**Elige si:** quieres probar algo nuevo
-**Evita si:** necesitas estabilidad de producción (API aún en finalización).
-**Combina con:** `open-generative-ai`
+**Elige si:** quieres face recognition
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `comfyui`
 
 ## `fooocus`
-role=app · exec=local · setup=medium · mcp=False · prov=['openai', 'local']
+role=skill · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros técnicos tras presets inteligentes.
-**Stack:** Python, GPU, modelos locales
-**Repo:** https://github.com/lllyasviel/Fooocus
+**Qué es:** Fooocus is an image generating software (based on Gradio ).
+**Stack:** python, typescript, javascript, docker, comfy
+**Repo:** https://github.com/lllyasviel/Fooocus.git
 
-**Instalación** [~]: `git clone https://github.com/lllyasviel/Fooocus && cd Fooocus && (uv sync || pip install -r requirements.txt)`
-_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/Fooocus/). Si necesitas el código: git clone https://github.com/lllyasviel/Fooocus.git`
+_Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres resultados ya
-**Evita si:** necesitas control fino ([ComfyUI](#-comfyui)).
-**Combina con:** `real-esrgan`
-**Alternativas (elige una):** `comfyui`
+**Elige si:** —
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `comfyui`
 
 ## `gfpgan`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** algoritmo de restauración facial que reconstruye rostros degradados o de baja calidad usando priors generativos (GAN) preentrenados.
-**Stack:** Python, PyTorch, GPU opcional
-**Repo:** https://github.com/TencentARC/GFPGAN
+**Qué es:** 1. :boom: **Updated** online demo: ![Replicate](https://replicate.com/tencentarc/gfpgan). Here is the backup. 1. :boom: **Updated** online demo: ![Huggingface Gradio](https://huggingface.co/spaces/Xintao/GFPGAN) 1. .
+**Stack:** python, typescript, javascript, postgres
+**Repo:** https://github.com/TencentARC/GFPGAN.git
 
-**Instalación** [~]: `git clone https://github.com/TencentARC/GFPGAN && cd GFPGAN && (uv sync || pip install -r requirements.txt)`
-_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+**Instalación** [~]: `pip install gfpgan   (o: uv add gfpgan)`
+_Nombre PyPI puede diferir de 'GFPGAN'; verifica en pypi.org._
 
-**Elige si:** restauras rostros
-**Evita si:** necesitas upscaling general ([Real-ESRGAN](#-real-esrgan)).
-**Combina con:** `real-esrgan`
-**Alternativas (elige una):** `real-esrgan`
+**Elige si:** quieres 1. :boom: **updated** online demo: [![replicate](https://img.shields.io/static/v
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `comfyui`
 
 ## `invokeai`
-role=app · exec=local · setup=heavy · mcp=False · prov=['openai', 'local']
+role=runtime · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** suite profesional y unificada para Stable Diffusion que combina una UI pulida con canvas, capas, inpainting y gestión de modelos y workflows.
-**Stack:** Python, GPU, modelos locales
-**Repo:** https://github.com/invoke-ai/InvokeAI
+**Qué es:** Invoke - Professional Creative AI Tools for Visual Media.
+**Stack:** python, typescript, javascript, react, docker
+**Repo:** https://github.com/invoke-ai/InvokeAI.git
 
-**Instalación** [~]: `git clone https://github.com/invoke-ai/InvokeAI && cd InvokeAI && (uv sync || pip install -r requirements.txt)`
-_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+**Instalación** [~]: `git clone https://github.com/invoke-ai/InvokeAI.git && cd InvokeAI && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** trabajas creatividad profesional
-**Evita si:** solo haces una prueba puntual ([Fooocus](#-fooocus)).
-**Combina con:** `diffusers`, `controlnet`
-**Alternativas (elige una):** `fooocus`
+**Elige si:** quieres invoke - professional creative ai tools for visual media
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `comfyui`
+
+## `litellm`
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** LiteLLM is an open source AI Gateway that gives you a single, unified interface to call 100+ LLM providers — OpenAI, Anthropic, Gemini, Bedrock, Azure, and more — using the OpenAI format.
+**Stack:** python, typescript, javascript, docker, postgres
+**Repo:** https://github.com/BerriAI/litellm.git
+
+**Instalación** [~]: `git clone https://github.com/BerriAI/litellm.git && cd litellm && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** quieres 🚅 litellm
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `cosmos`, `comfyui`, `stable-diffusion-webui`
 
 ## `liveportrait`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=['local']
+role=library · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen.
-**Stack:** Python, GPU
-**Repo:** https://github.com/KwaiVGI/LivePortrait
+**Qué es:** `2025/06/01`**: 🌍 Over the past year, **LivePortrait** has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as numerous startups and creators. 🎉 `2025/01/01`**: 🐶 We updated a new version of the Animals model with more data, see **here**. `2024/10/18`**: ❗ We have upda.
+**Stack:** python, typescript, javascript, postgres, comfy
+**Repo:** https://github.com/KlingAIResearch/LivePortrait.git
 
-**Instalación** [~]: `git clone https://github.com/KwaiVGI/LivePortrait && cd LivePortrait && (uv sync || pip install -r requirements.txt)`
-_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+**Instalación** [~]: `pip install liveportrait   (o: uv add liveportrait)`
+_Nombre PyPI puede diferir de 'LivePortrait'; verifica en pypi.org._
 
-**Elige si:** animas retratos
-**Evita si:** necesitas swap en vivo ([Deep-Live-Cam](#-deep-live-cam)).
-**Combina con:** `moviepy`
-**Alternativas (elige una):** `deep-live-cam`
+**Elige si:** quieres liveportrait: efficient portrait animation with stitching and retargeting control
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `comfyui`
+
+## `luxtts`
+role=directory · exec=local · setup=heavy · mcp=False · prov=—
+
+**Qué es:** LuxTTS is an lightweight zipvoice based text-to-speech model designed for high quality voice cloning and realistic generation at speeds exceeding 150x realtime.
+**Stack:** python, typescript, javascript, comfy
+**Repo:** https://github.com/ysharma3501/LuxTTS.git
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/LuxTTS/). Si necesitas el código: git clone https://github.com/ysharma3501/LuxTTS.git`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** —
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `comfyui`
 
 ## `nemo`
 role=runtime · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** Checkout our [HuggingFace🤗 collection](https://huggingface.co/collections/nvidia/nemotron-speech) for the latest open weight checkpoints and demos!.
-**Stack:** python, typescript
+**Qué es:** Checkout our HuggingFace🤗 collection for the latest open weight checkpoints and demos!.
+**Stack:** python, typescript, docker
 **Repo:** https://github.com/NVIDIA-NeMo/NeMo.git
 
-**Instalación** [~]: `git clone https://github.com/NVIDIA-NeMo/NeMo.git && cd NeMo && (uv sync || pip install -r requirements.txt)`
-_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+**Instalación** [~]: `git clone https://github.com/NVIDIA-NeMo/NeMo.git && cd NeMo && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
 **Elige si:** quieres **nvidia nemo speech**
 **Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `comfyui`, `stable-diffusion-webui`, `fooocus`
-
-## `open-generative-ai`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic', 'google', 'mcp']
-
-**Qué es:** plataforma alternativa libre a servicios premium de video/imagen que agrupa más de 200 modelos generativos accesibles desde terminal o integrados con agentes.
-**Stack:** Python, Node.js
-**Repo:** https://github.com/Anil-matcha/Open-Generative-AI
-
-**Instalación** [~]: `git clone https://github.com/Anil-matcha/Open-Generative-AI && cd Open-Generative-AI && (uv sync || pip install -r requirements.txt)`
-_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
-
-**Elige si:** quieres un hub de generación
-**Evita si:** ya tienes tu pipeline local ([ComfyUI](#-comfyui)).
-**Combina con:** `remotion`
-**Alternativas (elige una):** `comfyui`
-
-## `real-esrgan`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
-
-**Qué es:** herramienta de superresolución y restauración para imágenes reales que reescala y limpia material de baja calidad sin rehacerlo.
-**Stack:** Python, PyTorch, GPU
-**Repo:** https://github.com/xinntao/Real-ESRGAN
-
-**Instalación** [~]: `git clone https://github.com/xinntao/Real-ESRGAN && cd Real-ESRGAN && (uv sync || pip install -r requirements.txt)`
-_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
-
-**Elige si:** reescalas imágenes
-**Evita si:** solo necesitas arreglar rostros ([GFPGAN](#-gfpgan)).
-**Combina con:** `gfpgan`
-**Alternativas (elige una):** `gfpgan`
+**Combina con:** `litellm`, `cosmos`, `comfyui`
 
 ## `sd-webui-controlnet`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=['local']
+role=library · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** extensión que integra el control estructural de ControlNet directamente en Stable Diffusion WebUI, con preprocesadores para poses, bordes, profundidad y más.
-**Stack:** Python, SD WebUI, modelos ControlNet
-**Repo:** https://github.com/Mikubill/sd-webui-controlnet
+**Qué es:** The WebUI extension for ControlNet and other injection-based SD controls.
+**Stack:** python, typescript, postgres
+**Repo:** https://github.com/Mikubill/sd-webui-controlnet.git
 
-**Instalación** [~]: `git clone https://github.com/Mikubill/sd-webui-controlnet && cd sd-webui-controlnet && (uv sync || pip install -r requirements.txt)`
-_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+**Instalación** [~]: `pip install sd-webui-controlnet   (o: uv add sd-webui-controlnet)`
+_Nombre PyPI puede diferir de 'sd-webui-controlnet'; verifica en pypi.org._
 
-**Elige si:** ya usas SD WebUI
-**Evita si:** trabajas en ComfyUI o por código.
-**Combina con:** `stable-diffusion-webui`, `controlnet`
+**Elige si:** quieres controlnet for stable diffusion webui
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `comfyui`
 
 ## `stable-diffusion-webui`
-role=app · exec=local · setup=heavy · mcp=False · prov=['local']
+role=skill · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de extensiones desde el navegador.
-**Stack:** Python, GPU, modelos locales
-**Repo:** https://github.com/AUTOMATIC1111/stable-diffusion-webui
+**Qué es:** A web interface for Stable Diffusion, implemented using Gradio library.
+**Stack:** python, typescript, javascript, postgres
+**Repo:** https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 
-**Instalación** [~]: `git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui && cd stable-diffusion-webui && (uv sync || pip install -r requirements.txt)`
-_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/stable-diffusion-webui/). Si necesitas el código: git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git`
+_Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres extensiones y comunidad
-**Evita si:** prefieres flujo moderno/limpio ([InvokeAI](#-invokeai)).
-**Combina con:** `sd-webui-controlnet`
-**Alternativas (elige una):** `invokeai`
+**Elige si:** quieres stable diffusion web ui
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `comfyui`
+
+## `tts`
+role=library · exec=local · setup=heavy · mcp=False · prov=—
+
+**Qué es:** 📣 ⓍTTSv2 is here with 16 languages and better performance across the board. 📣 ⓍTTS fine-tuning code is out. Check the example recipes. 📣 ⓍTTS can now stream with <200ms latency. 📣 ⓍTTS, our production TTS model that can speak 13 languages, is released Blog Post, Demo, [Docs](.
+**Stack:** python, typescript, docker
+**Repo:** https://github.com/coqui-ai/TTS.git
+
+**Instalación** [~]: `pip install tts   (o: uv add tts)`
+_Nombre PyPI puede diferir de 'TTS'; verifica en pypi.org._
+
+**Elige si:** quieres 🐸coqui.ai news
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `comfyui`

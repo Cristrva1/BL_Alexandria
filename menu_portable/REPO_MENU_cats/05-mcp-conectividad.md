@@ -7,7 +7,7 @@
 role=directory · exec=hybrid · setup=medium · mcp=True · prov=—
 
 **Qué es:** A curated list of awesome Model Context Protocol (MCP) clients.
-**Stack:** python, typescript, javascript, docker
+**Stack:** python, typescript, javascript, react, docker, postgres, langchain
 **Repo:** https://github.com/punkpeye/awesome-mcp-clients.git
 
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-mcp-clients/). Si necesitas el código: git clone https://github.com/punkpeye/awesome-mcp-clients.git`
@@ -15,27 +15,27 @@ _Material de referencia/playbook; no es una dependencia runtime._
 
 **Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
 **Evita si:** prefieres conexiones directas sin protocolo estándar
-**Combina con:** `mcp`, `mcp-use`, `servers`
+**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
 
-## `awesome-mcp-servers`
-role=directory · exec=hybrid · setup=easy · mcp=False · prov=['anthropic', 'mcp']
+## `claude-plugins-official`
+role=platform · exec=cloud · setup=medium · mcp=False · prov=—
 
-**Qué es:** directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar.
-**Stack:** Markdown
-**Repo:** https://github.com/punkpeye/awesome-mcp-servers
+**Qué es:** A curated directory of high-quality plugins for Claude Code.
+**Stack:** typescript
+**Repo:** https://github.com/anthropics/claude-plugins-official.git
 
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-mcp-servers/). Si necesitas el código: git clone https://github.com/punkpeye/awesome-mcp-servers`
-_Material de referencia/playbook; no es una dependencia runtime._
+**Instalación** [+]: `Crear cuenta / API key en el proveedor (no self-host).`
+_Servicio gestionado; no se clona._
 
-**Elige si:** buscas antes de construir
-**Evita si:** ya sabes que necesitas uno a medida.
-**Combina con:** `mcp-use`, `servers`
+**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
+**Evita si:** prefieres conexiones directas sin protocolo estándar
+**Combina con:** `n8n-skills`, `mcp`, `servers`
 
 ## `github-mcp-server`
 role=platform · exec=local · setup=medium · mcp=True · prov=—
 
 **Qué es:** The GitHub MCP Server connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate workflows. All through natural language interactions.
-**Stack:** typescript, docker
+**Stack:** python, typescript, javascript, react, docker
 **Repo:** https://github.com/github/github-mcp-server.git
 
 **Instalación** [~]: `git clone https://github.com/github/github-mcp-server.git && cd github-mcp-server && docker compose up -d`
@@ -43,89 +43,130 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
 **Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
 **Evita si:** prefieres conexiones directas sin protocolo estándar
-**Combina con:** `mcp`, `mcp-use`, `servers`
+**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
+
+## `graphify`
+role=library · exec=local · setup=heavy · mcp=False · prov=—
+
+**Qué es:** 🇺🇸 English | 🇨🇳 简体中文 | 🇯🇵 日本語 | 🇰🇷 한국어 | 🇩🇪 Deutsch | 🇫🇷 Français | 🇪🇸 Español | 🇮🇳 <a href="docs/translatio.
+**Stack:** python, typescript, javascript, docker, postgres, whisper
+**Repo:** https://github.com/safishamsi/graphify.git
+
+**Instalación** [~]: `pip install graphify   (o: uv add graphify)`
+_Nombre PyPI puede diferir de 'graphify'; verifica en pypi.org._
+
+**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
+**Evita si:** prefieres conexiones directas sin protocolo estándar
+**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
 
 ## `mcp`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=['google', 'mcp']
+role=directory · exec=hybrid · setup=medium · mcp=True · prov=—
 
-**Qué es:** núcleo del Model Context Protocol (spec y SDKs oficiales) para que herramientas, datos y clientes de IA interoperen bajo un mismo estándar abierto.
-**Stack:** TS/Python
-**Repo:** https://github.com/modelcontextprotocol/modelcontextprotocol
+**Qué es:** This repository contains a list of Google's official Model Context Protocol (MCP) servers, guidance on how to deploy MCP servers to Google Cloud, and examples to get started.
+**Stack:** typescript, postgres
+**Repo:** https://github.com/google/mcp.git
 
-**Instalación** [~]: `pip install mcp   (o: uv add mcp)`
-_Nombre PyPI puede diferir de 'mcp'; verifica en pypi.org._
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/mcp/). Si necesitas el código: git clone https://github.com/google/mcp.git`
+_Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** programas MCP a bajo nivel
-**Evita si:** prefieres un framework de alto nivel ([mcp-use](#-mcp-use)).
-**Combina con:** `mcp-use`, `servers`
-**Alternativas (elige una):** `mcp-use`
+**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
+**Evita si:** prefieres conexiones directas sin protocolo estándar
+**Combina con:** `claude-plugins-official`, `n8n-skills`, `servers`
 
 ## `mcp-neo4j`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=['anthropic', 'google', 'mcp']
+role=directory · exec=local · setup=medium · mcp=True · prov=—
 
-**Qué es:** conjunto de servidores MCP oficiales para conectar bases de datos de grafos Neo4j a asistentes de IA, con soporte de despliegue en cloud.
-**Stack:** Python, Docker
-**Repo:** https://github.com/neo4j-contrib/mcp-neo4j
+**Qué es:** These MCP servers are a part of the Neo4j Labs program. They are developed and maintained by the Neo4j Field GenAI team and welcome contributions from the larger developer community. These servers are frequently updated with new and experimental features, but are not supported by the Neo4j product team.
+**Stack:** typescript
+**Repo:** https://github.com/neo4j-contrib/mcp-neo4j.git
 
-**Instalación** [~]: `git clone https://github.com/neo4j-contrib/mcp-neo4j && cd mcp-neo4j && docker compose up -d`
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/mcp-neo4j/). Si necesitas el código: git clone https://github.com/neo4j-contrib/mcp-neo4j.git`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
+**Evita si:** prefieres conexiones directas sin protocolo estándar
+**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
+
+## `metabase`
+role=platform · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** The easiest way to get started with Metabase is to sign up for a free trial of Metabase Cloud.
+**Stack:** javascript/typescript, typescript, javascript, react, docker, postgres
+**Repo:** https://github.com/metabase/metabase.git
+
+**Instalación** [~]: `git clone https://github.com/metabase/metabase.git && cd metabase && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** usas Neo4j con IA
-**Evita si:** no trabajas con grafos.
-**Combina con:** `graphrag`, `awesome-mcp-servers`
+**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
+**Evita si:** prefieres conexiones directas sin protocolo estándar
+**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
 
-## `mcp-use`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic', 'mcp']
+## `n8n-skills`
+role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable.
-**Stack:** TypeScript o Python
-**Repo:** https://github.com/mcp-use/mcp-use
+**Qué es:** Expert Claude Code skills for building flawless n8n workflows using the n8n-mcp MCP server**.
+**Stack:** python, typescript, javascript, docker, postgres, langchain
+**Repo:** https://github.com/czlonkowski/n8n-skills.git
 
-**Instalación** [~]: `pip install mcp-use   (o: uv add mcp-use)`
-_Nombre PyPI puede diferir de 'mcp-use'; verifica en pypi.org._
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/n8n-skills/). Si necesitas el código: git clone https://github.com/czlonkowski/n8n-skills.git`
+_Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** construyes un servidor MCP propio
-**Evita si:** solo buscas usar uno ya hecho.
-**Combina con:** `mcp`, `awesome-mcp-servers`
+**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
+**Evita si:** prefieres conexiones directas sin protocolo estándar
+**Combina con:** `claude-plugins-official`, `mcp`, `servers`
 
-## `n8n-mcp`
-role=runtime · exec=hybrid · setup=medium · mcp=True · prov=['openai', 'anthropic', 'mcp']
+## `notebooklm-mcp-cli`
+role=platform · exec=hybrid · setup=medium · mcp=True · prov=—
 
-**Qué es:** servidor MCP que expone a la IA la documentación y los esquemas de los más de 1.845 nodos de n8n para ayudar a construir y depurar flujos.
-**Stack:** Node.js/TypeScript, MCP
-**Repo:** https://github.com/czlonkowski/n8n-mcp
+**Qué es:** Programmatic access to Google NotebookLM** — via command-line interface (CLI) or Model Context Protocol (MCP) server.
+**Stack:** python, typescript, react, postgres
+**Repo:** https://github.com/jacob-bd/notebooklm-mcp-cli.git
 
-**Instalación** [~]: `git clone https://github.com/czlonkowski/n8n-mcp && cd n8n-mcp && (pnpm install || npm install)`
+**Instalación** [~]: `git clone https://github.com/jacob-bd/notebooklm-mcp-cli.git && cd notebooklm-mcp-cli && (uv sync || pip install -r requirements.txt)`
+_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+
+**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
+**Evita si:** prefieres conexiones directas sin protocolo estándar
+**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
+
+## `opencut`
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** OpenCut is being rewritten from the ground up.** What's coming:.
+**Stack:** typescript
+**Repo:** https://github.com/OpenCut-app/OpenCut.git
+
+**Instalación** [~]: `git clone https://github.com/OpenCut-app/OpenCut.git && cd OpenCut && (pnpm install || npm install)`
 _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 
-**Elige si:** generas flujos n8n con IA
-**Evita si:** no usas n8n.
-**Combina con:** `n8n`, `n8n-skills`
+**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
+**Evita si:** prefieres conexiones directas sin protocolo estándar
+**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
 
 ## `public-apis`
-role=directory · exec=cloud · setup=easy · mcp=False · prov=—
+role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos.
-**Stack:** Markdown
-**Repo:** https://github.com/public-apis/public-apis
+**Qué es:** The Public APIs repository is manually curated by community members like you and folks working at APILayer. It includes an extensive list of public APIs from many domains that you can use for your own products. Consider it a treasure trove of APIs well-managed by the community over the years.
+**Stack:** python, typescript, javascript, react, docker, postgres
+**Repo:** https://github.com/public-apis/public-apis.git
 
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/public-apis/). Si necesitas el código: git clone https://github.com/public-apis/public-apis`
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/public-apis/). Si necesitas el código: git clone https://github.com/public-apis/public-apis.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** buscas datos externos
-**Evita si:** ya tienes tus fuentes definidas.
-**Combina con:** `n8n`, `firecrawl`
+**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
+**Evita si:** prefieres conexiones directas sin protocolo estándar
+**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
 
 ## `servers`
-role=directory · exec=hybrid · setup=medium · mcp=False · prov=['anthropic', 'mcp']
+role=directory · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad.
-**Stack:** TS/Python
-**Repo:** https://github.com/modelcontextprotocol/servers
+**Qué es:** This repository is a collection of *reference implementations* for the Model Context Protocol (MCP), as well as references to community-built servers and additional resources.
+**Stack:** javascript/typescript, python, typescript, javascript, postgres
+**Repo:** https://github.com/modelcontextprotocol/servers.git
 
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/servers/). Si necesitas el código: git clone https://github.com/modelcontextprotocol/servers`
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/servers/). Si necesitas el código: git clone https://github.com/modelcontextprotocol/servers.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres ejemplos canónicos
-**Evita si:** buscas soluciones listas para prod (son demos).
-**Combina con:** `mcp-use`, `awesome-mcp-servers`
+**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
+**Evita si:** prefieres conexiones directas sin protocolo estándar
+**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`

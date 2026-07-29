@@ -22,6 +22,7 @@ Si solo quieres ver que repos contiene la biblioteca, no hace falta leer este RE
 | Comparativas entre alternativas | [human/comparativas/](human/comparativas/) |
 | Playbooks o recetas end-to-end | [human/playbooks/](human/playbooks/) |
 | Indice compacto para IA | [ai_index/REPOS.scan.json](ai_index/REPOS.scan.json) |
+| Menu portable para otro proyecto | [menu_portable/](menu_portable/) |
 
 El README explica como usar el sistema. El catalogo y las guias viven en archivos separados para que GitHub sea navegable sin convertir esta portada en un documento enorme.
 
@@ -44,6 +45,46 @@ Si lo clonas en otra maquina, cambia esas rutas en:
 ```txt
 config/paths.yaml
 ```
+
+## Menu portable para otro proyecto
+
+El comando `menu export` genera un paquete autocontenido y optimizado para tokens que puedes copiar a la raiz de un proyecto NUEVO. Una IA lee ese paquete y decide que repos instalar sin visitar la web ni abrir READMEs completos.
+
+```powershell
+uv run repo-intelligence menu export
+```
+
+Salida:
+
+```txt
+menu_portable/
+    REPO_MENU.md            <- ENTRY POINT. La IA lee solo esto para preseleccionar.
+    REPO_MENU_cats/         <- detalle por categoria (abrir solo para finalistas)
+        01-*.md ... 13-*.md
+    REPO_MENU_DATA.json     <- espejo machine-readable (opcional)
+```
+
+Como lo usa la IA (el protocolo esta dentro del propio `REPO_MENU.md`):
+
+1. Lee `REPO_MENU.md` y filtra candidatos por categoria, `role`, `exec`, `setup` y la descripcion de una linea por repo.
+2. Desempata con `alt`/alternativas: si ya eligio un repo, descarta sus alternativas.
+3. Combina con `recipes` si el proyecto es un flujo end-to-end.
+4. Solo para finalistas (<8): abre el archivo de su categoria en `REPO_MENU_cats/` para ver desc completa, `choose_if`, `avoid_if`, `combines_with` y el comando de instalacion derivado.
+5. Instala con el comando marcado por confianza: `+` seguro, `~` verificar nombre de paquete, `?` solo clone + README.
+
+Para copiarlo directamente a otro proyecto:
+
+```powershell
+uv run repo-intelligence menu export -o ../mi_nuevo_proyecto/menu_portable
+```
+
+Y en el `AGENTS.md` o system prompt de ese proyecto:
+
+```txt
+Antes de elegir dependencias, lee menu_portable/REPO_MENU.md y sigue su protocolo.
+```
+
+Regenera el paquete cada vez que agregues o cure repos nuevos (`discover` + `analyze` + `enrich` + `guide build` + `menu export`).
 
 ## Las 2 partes del proyecto
 
@@ -126,6 +167,7 @@ uv run repo-intelligence score
 uv run repo-intelligence conflicts
 uv run repo-intelligence decide --project-type repo_library_management
 uv run repo-intelligence guide build
+uv run repo-intelligence menu export
 uv run repo-intelligence report daily
 ```
 
@@ -143,6 +185,9 @@ uv run repo-intelligence enrich --new --auto-merge
 
 # 4. Regenerar catálogos, fichas, Guia.md, human/* e índices
 uv run repo-intelligence guide build
+
+# 5. Regenerar el menú portable para otros proyectos
+uv run repo-intelligence menu export
 ```
 
 Ver también AGENTS.md → sección Mantenimiento para el flujo completo y recomendaciones de revisión de drafts en `data/drafts/`.
@@ -162,6 +207,7 @@ Ver también AGENTS.md → sección Mantenimiento para el flujo completo y recom
 | Instalar automaticamente repos elegidos | No automatico | Por seguridad, el sistema recomienda; la instalacion se ejecuta despues conscientemente. |
 | Actualizar biblioteca local | Cubierto | `pull --safe`, `discover`, `snapshot`. |
 | Regenerar catalogos/guias/fichas/playbooks | Cubierto | `guide build` genera salidas humanas e indices IA. |
+| Exportar menu portable para otro proyecto | Cubierto | `menu export` genera `menu_portable/` autocontenido con comandos de instalacion derivados. |
 | Usar APIs de IA | No por defecto | La V1 es deterministica. |
 
 ## Instalacion del sistema
@@ -336,11 +382,12 @@ Lectura minima, en este orden:
 
 1. `ai_index/SUPERGUIAS/<nombre-del-proyecto>.md` si ya existe una recomendacion para ese proyecto.
 2. `ai_index/CONTEXT_PACKS/latest.md` si quieres la ultima recomendacion generada.
-3. `ai_index/WINNERS.json` para decisiones base por funcion.
-4. `ai_index/ROUTER.json` para saber que leer primero y que evitar.
-5. `ai_index/REPOS.scan.json` para explorar la biblioteca con bajo costo.
-6. `ai_index/REPOS.detail.json` solo para finalistas.
-7. `human/fichas/<repo>.md` solo para repos candidatos.
+3. `menu_portable/REPO_MENU.md` si vas a trabajar en otro proyecto y quieres un menu autocontenido (ver seccion "Menu portable para otro proyecto").
+4. `ai_index/WINNERS.json` para decisiones base por funcion.
+5. `ai_index/ROUTER.json` para saber que leer primero y que evitar.
+6. `ai_index/REPOS.scan.json` para explorar la biblioteca con bajo costo.
+7. `ai_index/REPOS.detail.json` solo para finalistas.
+8. `human/fichas/<repo>.md` solo para repos candidatos.
 
 ## Salidas humanas
 
@@ -366,6 +413,7 @@ Por defecto, el sistema no llama a OpenAI, Anthropic, Gemini, Grok ni modelos re
 | `snapshot` | No | Lee estado Git local. |
 | `scan` | No | Reconstruye indices locales. |
 | `guide build` | No | Renderiza Markdown desde JSON local. |
+| `menu export` | No | Genera el paquete portable desde indices locales. |
 | `pull --safe` | Si | Contacta remotos Git. |
 | `crawl4ai` runner | Si | Solo si se le da una URL. |
 | `gh` | Si | Disponible para metadata GitHub futura, no usado automaticamente en V1. |
