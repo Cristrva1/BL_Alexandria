@@ -5,6 +5,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from repo_intelligence.core.install_mode import decision as _decision
+from repo_intelligence.core.install_mode import install_mode as _install_mode
 from repo_intelligence.core.io import read_json, read_yaml, write_json
 
 # Support drafts for complete coverage of newly added repos
@@ -695,29 +697,6 @@ def _local_index(scan_repos: list[dict[str, Any]], registry_repos: list[dict[str
         local.setdefault(_norm(repo.get("id", "")), repo)
         local.setdefault(_norm(repo.get("name", "")), repo)
     return {key: value for key, value in local.items() if key}
-
-
-def _install_mode(repo: dict[str, Any]) -> str:
-    repo_id = repo.get("id", "")
-    role = repo.get("role")
-    if repo_id in {"repomix", "gitnexus"}:
-        return "global"
-    if repo_id in {"markitdown", "crawl4ai"}:
-        return "local_project"
-    if role in {"skill", "directory"}:
-        return "reference_only"
-    if repo.get("setup") == "heavy":
-        return "deferred"
-    return "reference_only"
-
-
-def _decision(repo: dict[str, Any]) -> str:
-    mode = _install_mode(repo)
-    if mode in {"global", "local_project"}:
-        return "use_now"
-    if mode == "deferred":
-        return "defer"
-    return "reference"
 
 
 def _human_decision(repo: dict[str, Any]) -> str:

@@ -4,6 +4,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from repo_intelligence.core.install_mode import decision as _decision
+from repo_intelligence.core.install_mode import install_mode as _install_mode
 from repo_intelligence.core.io import read_json, write_json
 from repo_intelligence.core.models import RepoRecord, ScanRepo
 from repo_intelligence.extract.readme import short_summary
@@ -82,26 +84,3 @@ def _match_key(record: RepoRecord, indexed: dict[str, dict[str, Any]]) -> str | 
 
 def _norm(value: str) -> str:
     return value.lower().replace("_", "-").replace(".", "-")
-
-
-def _install_mode(meta: dict[str, Any]) -> str:
-    repo_id = meta.get("id", "")
-    role = meta.get("role")
-    if repo_id in {"repomix", "gitnexus"}:
-        return "global"
-    if repo_id in {"markitdown", "crawl4ai"}:
-        return "local_project"
-    if role in {"skill", "directory"}:
-        return "reference_only"
-    if meta.get("setup") == "heavy":
-        return "deferred"
-    return "reference_only"
-
-
-def _decision(meta: dict[str, Any]) -> str:
-    install_mode = _install_mode(meta)
-    if install_mode in {"global", "local_project"}:
-        return "use_now"
-    if install_mode == "deferred":
-        return "defer"
-    return "reference"

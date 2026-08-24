@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from repo_intelligence.core.install_mode import install_mode as _install_mode
 from repo_intelligence.core.io import read_json, write_json
 
 
@@ -698,26 +699,6 @@ def _avoid_by_default(winners: dict[str, Any]) -> list[str]:
             avoid.extend(value.get("avoid_now", []))
             avoid.extend(value.get("defer", []))
     return sorted(set(avoid))
-
-
-def _install_mode(repo: dict[str, Any]) -> str:
-    repo_id = repo.get("id", "")
-    role = repo.get("role")
-    if repo_id in REPO_GUIDANCE:
-        return REPO_GUIDANCE[repo_id].get("install_mode", "reference_only")
-    if repo_id in {"repomix", "gitnexus"}:
-        return "global"
-    if repo_id in {"markitdown", "crawl4ai"}:
-        return "local_project"
-    if repo_id in {"n8n", "langfuse", "evolution-api", "chatwoot", "novu", "mautic", "listmonk", "posthog", "metabase"}:
-        return "docker_local"
-    if repo_id in {"litellm"}:
-        return "local_project"
-    if role in {"skill", "directory"}:
-        return "reference_only"
-    if repo.get("setup") == "heavy":
-        return "deferred"
-    return repo.get("install_mode") or "reference_only"
 
 
 def _mode_priority(mode: str) -> int:

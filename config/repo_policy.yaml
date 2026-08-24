@@ -49,3 +49,21 @@ install_modes:
     - mcp-use
     - firecrawl
     - browser-use
+repo_install_modes:
+  global:
+    - repomix
+    - gitnexus
+  local_project:
+    - markitdown
+    - crawl4ai
+    - litellm
+  docker_local:
+    - n8n
+    - langfuse
+    - evolution-api
+    - chatwoot
+    - novu
+    - mautic
+    - listmonk
+    - posthog
+    - metabase
