@@ -1597,24 +1597,6 @@
       "repo": "https://github.com/heroui-inc/heroui.git",
       "doc": "human/fichas/heroui.md"
     },
-    "ui-shadcn": {
-      "name": "ui (shadcn)",
-      "cat": 9,
-      "desc": "colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada.",
-      "stack": "Node.js, React, Tailwind",
-      "models_note": "N/A.",
-      "choose_if": "quieres dueño del código",
-      "avoid_if": "prefieres una lib \"llave en mano\" ([heroui](#-heroui)).",
-      "combines_with": [
-        "tailwindcss",
-        "plasmic"
-      ],
-      "alternatives": [
-        "heroui"
-      ],
-      "repo": "https://github.com/shadcn-ui/ui",
-      "doc": "human/fichas/ui-shadcn.md"
-    },
     "gsap": {
       "name": "GSAP",
       "cat": 9,
@@ -2580,16 +2562,19 @@
     "ui": {
       "name": "ui",
       "cat": 9,
-      "desc": "A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code. **Use this to build your own component library**.",
-      "stack": "javascript/typescript, typescript, javascript",
-      "choose_if": "quieres ser dueño del código de UI",
-      "avoid_if": "prefieres una lib \"llave en mano\" con updates automáticos ([heroui](#-heroui)).",
+      "desc": "colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada.",
+      "stack": "Node.js, React, Tailwind",
+      "models_note": "N/A.",
+      "choose_if": "quieres dueño del código",
+      "avoid_if": "prefieres una lib \"llave en mano\" ([heroui](#-heroui)).",
       "combines_with": [
         "tailwindcss",
         "plasmic"
       ],
-      "alternatives": [],
-      "repo": "https://github.com/shadcn-ui/ui.git",
+      "alternatives": [
+        "heroui"
+      ],
+      "repo": "https://github.com/shadcn-ui/ui",
       "doc": "human/fichas/ui.md"
     },
     "browser-harness": {

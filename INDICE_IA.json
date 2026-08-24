@@ -1,7 +1,7 @@
 {
   "$schema_version": "1.1",
   "meta": {
-    "title": "Índice IA — 156 repos curados (171 detectados) de IA & Automatización",
+    "title": "Índice IA — 185 repos curados de IA y Automatización",
     "purpose": "Que un agente seleccione repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
     "how_to_use": [
       "1. Lee solo este JSON. Filtra por cat/tags/role/exec/prov/one.",
@@ -93,79 +93,79 @@
       "num": 1,
       "title": "Automatización, Mensajería & CRM",
       "file": "human/categorias/01-automatizaci-n-mensajer-a-crm.md",
-      "count": 12
+      "count": 17
     },
     {
       "num": 2,
       "title": "Skills, Prompts & Guías de Agente",
       "file": "human/categorias/02-skills-prompts-gu-as-de-agente.md",
-      "count": 21
+      "count": 27
     },
     {
       "num": 3,
       "title": "Frameworks & Orquestación de Agentes",
       "file": "human/categorias/03-frameworks-orquestaci-n-de-agentes.md",
-      "count": 18
+      "count": 34
     },
     {
       "num": 4,
       "title": "Scraping, Búsqueda & Research Web",
       "file": "human/categorias/04-scraping-b-squeda-research-web.md",
-      "count": 14
+      "count": 15
     },
     {
       "num": 5,
       "title": "MCP & Conectividad",
       "file": "human/categorias/05-mcp-conectividad.md",
-      "count": 7
+      "count": 12
     },
     {
       "num": 6,
       "title": "Memoria, LLM Ops & Observabilidad",
       "file": "human/categorias/06-memoria-llm-ops-observabilidad.md",
-      "count": 10
+      "count": 4
     },
     {
       "num": 7,
       "title": "Inteligencia de Código, Datos & Entrenamiento",
       "file": "human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md",
-      "count": 13
+      "count": 8
     },
     {
       "num": 8,
       "title": "Workspaces de IA Local & Notebooks",
       "file": "human/categorias/08-workspaces-de-ia-local-notebooks.md",
-      "count": 5
+      "count": 1
     },
     {
       "num": 9,
       "title": "Diseño, UI & Frontend",
       "file": "human/categorias/09-dise-o-ui-frontend.md",
-      "count": 15
+      "count": 31
     },
     {
       "num": 10,
       "title": "Analítica & Visualización",
       "file": "human/categorias/10-anal-tica-visualizaci-n.md",
-      "count": 7
+      "count": 2
     },
     {
       "num": 11,
       "title": "Generación de Imagen & Visión",
       "file": "human/categorias/11-generaci-n-de-imagen-visi-n.md",
-      "count": 15
+      "count": 17
     },
     {
       "num": 12,
       "title": "Audio, Voz & Video",
       "file": "human/categorias/12-audio-voz-video.md",
-      "count": 15
+      "count": 13
     },
     {
       "num": 13,
       "title": "Documentos & Presentaciones",
       "file": "human/categorias/13-documentos-presentaciones.md",
-      "count": 4
+      "count": 3
     }
   ],
   "recipes": [
@@ -329,7 +329,9 @@
         "typescript"
       ],
       "one": "target=\"_blank\"",
-      "alt": [],
+      "alt": [
+        "n8n"
+      ],
       "doc": "human/fichas/activepieces.md"
     },
     {
@@ -513,7 +515,10 @@
         "typescript"
       ],
       "one": "n8n - Secure Workflow Automation for Technical Teams",
-      "alt": [],
+      "alt": [
+        "activepieces",
+        "huginn"
+      ],
       "doc": "human/fichas/n8n.md"
     },
     {
@@ -662,7 +667,10 @@
       ],
       "one": "Softaworks Agent Skills",
       "alt": [],
-      "doc": "human/fichas/agent-toolkit.md"
+      "doc": "human/fichas/agent-toolkit.md",
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "andrej-karpathy-skills",
@@ -702,7 +710,11 @@
       ],
       "one": "🌌 Antigravity Awesome Skills: 1,682+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More",
       "alt": [],
-      "doc": "human/fichas/antigravity-awesome-skills.md"
+      "doc": "human/fichas/antigravity-awesome-skills.md",
+      "agent_tools": [
+        "antigravity",
+        "codex"
+      ]
     },
     {
       "id": "autoresearch",
@@ -742,7 +754,11 @@
       ],
       "one": "Hand-picked, not AI-slop generated.",
       "alt": [],
-      "doc": "human/fichas/awesome-agent-skills.md"
+      "doc": "human/fichas/awesome-agent-skills.md",
+      "agent_tools": [
+        "antigravity",
+        "codex"
+      ]
     },
     {
       "id": "browser-harness",
@@ -796,7 +812,10 @@
       ],
       "one": "(ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews) while maintaining traditional SEO foundations.",
       "alt": [],
-      "doc": "human/fichas/geo-seo-claude.md"
+      "doc": "human/fichas/geo-seo-claude.md",
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "guia",
@@ -913,7 +932,10 @@
       ],
       "one": "Marketing Skills for AI Agents",
       "alt": [],
-      "doc": "human/fichas/marketingskills.md"
+      "doc": "human/fichas/marketingskills.md",
+      "agent_tools": [
+        "codex"
+      ]
     },
     {
       "id": "multica",
@@ -1059,7 +1081,10 @@
       ],
       "one": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention. No re-prompting your way to an answer you should have gotten on attempt one.",
       "alt": [],
-      "doc": "human/fichas/prompt-master.md"
+      "doc": "human/fichas/prompt-master.md",
+      "agent_tools": [
+        "antigravity"
+      ]
     },
     {
       "id": "skills-remotion",
@@ -1149,7 +1174,10 @@
       ],
       "one": "Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable s",
       "alt": [],
-      "doc": "human/fichas/superpowers.md"
+      "doc": "human/fichas/superpowers.md",
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "ui-ux-pro-max-skill",
@@ -1251,7 +1279,10 @@
       ],
       "one": "Awesome Claude Code",
       "alt": [],
-      "doc": "human/fichas/awesome-claude-code.md"
+      "doc": "human/fichas/awesome-claude-code.md",
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "awesome-dataviz",
@@ -2231,7 +2262,10 @@
       ],
       "one": "Claude Code Plugins Directory",
       "alt": [],
-      "doc": "human/fichas/claude-plugins-official.md"
+      "doc": "human/fichas/claude-plugins-official.md",
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "github-mcp-server",
@@ -2352,7 +2386,10 @@
       ],
       "one": "Expert Claude Code skills for building flawless n8n workflows using the n8n-mcp MCP server**.",
       "alt": [],
-      "doc": "human/fichas/n8n-skills.md"
+      "doc": "human/fichas/n8n-skills.md",
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "notebooklm-mcp-cli",
@@ -2588,7 +2625,10 @@
       ],
       "one": "1. Introduction of DeepSeek Coder",
       "alt": [],
-      "doc": "human/fichas/deepseek-coder.md"
+      "doc": "human/fichas/deepseek-coder.md",
+      "agent_tools": [
+        "deepseek"
+      ]
     },
     {
       "id": "echarts",
@@ -2708,7 +2748,10 @@
       ],
       "one": "🎭 The Agency: AI Specialists Ready to Transform Your Workflow",
       "alt": [],
-      "doc": "human/fichas/agency-agents.md"
+      "doc": "human/fichas/agency-agents.md",
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "daily-stock-analysis",
@@ -3148,7 +3191,10 @@
       ],
       "one": "Skills For Real Engineers",
       "alt": [],
-      "doc": "human/fichas/skills.md"
+      "doc": "human/fichas/skills.md",
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "skills-emil",
@@ -3240,7 +3286,10 @@
       ],
       "one": "Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typography, motion, and spacing instead of ",
       "alt": [],
-      "doc": "human/fichas/taste-skill.md"
+      "doc": "human/fichas/taste-skill.md",
+      "agent_tools": [
+        "codex"
+      ]
     },
     {
       "id": "three.js",
