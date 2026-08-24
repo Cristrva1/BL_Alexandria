@@ -1,6 +1,6 @@
 # 🤖 AGENTS.md — Punto de entrada para agentes de IA
 
-Esta biblioteca contiene **~177 repositorios curados** (171+ detectados localmente) de IA y automatización, ya analizados, comparados y clasificados con flujo integral (analyze + enrich). Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Léelo entero (es corto); luego abre solo lo que necesites.
+Esta biblioteca contiene **185 repositorios curados** compactos (mismo conjunto en `INDICE_IA.detalle.json`) de IA y automatización, ya analizados, comparados y clasificados con flujo integral (analyze + enrich). Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Léelo entero (es corto); luego abre solo lo que necesites.
 
 ---
 
