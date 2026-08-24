@@ -109,18 +109,18 @@ WhatsApp, motores de workflow, CRM, email y notificaciones.
 
 | Repo | Qué es | Ejec. | Setup | Elige si… |
 |---|---|---|---|---|
-| [twenty-main](#-twenty-main) | CRM open-source tipo Salesforce, modelado por metadatos | 🔀 | 🔴 | Quieres un CRM versionable como código |
-| [evolution-api](#-evolution-api) | API REST multi-instancia para WhatsApp en producción | 🏠 | 🔴 | Necesitas WhatsApp robusto con webhooks |
-| [OpenWA](#-openwa) | SDK ligero de WhatsApp vía automatización de navegador | 🏠 | 🟢 | Prototipas un bot simple sin infra pesada |
-| [whatsapp-agentkit](#-whatsapp-agentkit) | Plantilla guiada que autogenera un bot con Claude Code | 🔀 | 🟢 | Quieres un bot en <30 min sin programar |
-| [activepieces](#-activepieces) | Automatización low-code tipo Zapier con piezas TS y MCP | 🔀 | 🟡 | Buscas low-code extensible con IA |
-| [n8n](#-n8n) | Motor de workflows self-host con cientos de nodos | 🏠 | 🟡 | Necesitas automatización seria y flexible |
-| [n8n_io](#-n8n_io) | Espejo del repo oficial de n8n (duplicado) | 🏠 | 🟡 | (duplicado — usa `n8n`) |
-| [huginn](#-huginn) | Agentes por eventos/polling encadenables (Ruby on Rails) | 🏠 | 🟡 | Monitoreas fuentes y reaccionas a cambios |
-| [mautic](#-mautic) | Marketing automation open-source con segmentación | 🏠 | 🔴 | Quieres segmentación y nurturing soberano |
-| [chatwoot](#-chatwoot) | Bandeja unificada de soporte multicanal (Rails) | 🏠 | 🔴 | Centralizas conversaciones multicanal |
-| [listmonk](#-listmonk) | Newsletters self-host en un binario Go de alto rendimiento | 🏠 | 🟡 | Email masivo self-hosted y rápido |
-| [novu](#-novu) | Infra de notificaciones multicanal con inbox unificado | 🔀 | 🟡 | Unificas email/SMS/push/chat en un backend |
+| [twenty-main](#-twenty-main) | CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones. | 🔀 | 🔴 | Quieres un CRM que se adapte 1:1 a tu negocio y vivir en self-host. |
+| [evolution-api](#-evolution-api) | API REST que actúa como middleware para automatizar WhatsApp y mensajería multicanal, exponiendo el envío/recepción de mensajes a tus aplicaciones mediante una capa gestionable. | 🏠 | 🔴 | Operas WhatsApp en producción con varias instancias. |
+| [OpenWA](#-openwa) | Gateway/SDK abierto para conectar y automatizar cuentas de WhatsApp de forma directa desde código, sin infraestructura pesada. | 🏠 | 🟢 | Desarrollas scripts o bots individuales y quieres arrancar rápido. |
+| [whatsapp-agentkit](#-whatsapp-agentkit) | Plantilla guiada que construye un agente conversacional de WhatsApp en menos de 30 minutos sin necesidad de programar, partiendo de preguntas sobre tu negocio. | 🔀 | 🟢 | Quieres arrancar sin partir de cero y te vale con lo que Claude Code genere. |
+| [activepieces](#-activepieces) | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. | 🔀 | 🟡 | Quieres reemplazar Zapier con piezas propias en TypeScript. |
+| [n8n](#-n8n) | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. | 🏠 | 🟡 | Quieres el motor central de automatización con máximo catálogo. |
+| [n8n_io](#-n8n_io) | Copia local del repositorio oficial de n8n (mismo proyecto que n8n), mantenida como referencia o espejo del código fuente. | 🏠 | 🟡 | Es el mismo proyecto que n8n; usa esa ficha. |
+| [huginn](#-huginn) | Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos. | 🏠 | 🟡 | Automatizas tareas orientadas a eventos y valoras la privacidad. |
+| [mautic](#-mautic) | Plataforma open-source de marketing automation y segmentación de audiencias, alternativa soberana a suites comerciales como HubSpot o Marketo. | 🏠 | 🔴 | Necesitas automatización de marketing seria y soberana. |
+| [chatwoot](#-chatwoot) | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. | 🏠 | 🔴 | Das soporte por varios canales y necesitas handoff humano. |
+| [listmonk](#-listmonk) | Gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depender de un SaaS. | 🏠 | 🟡 | Quieres email marketing simple, rápido y propio. |
+| [novu](#-novu) | Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend. | 🔀 | 🟡 | Envías notificaciones por varios canales y quieres un único backend. |
 
 ### ⚖️ ¿Cuál elegir? — Canal de WhatsApp
 
@@ -301,27 +301,27 @@ Habilidades `SKILL.md`, playbooks, guías `CLAUDE.md` y herramientas para mejora
 
 | Repo | Qué es | Rol | Setup | Elige si… |
 |---|---|---|---|---|
-| [andrej-karpathy-skills](#-andrej-karpathy-skills) | 4 principios para asistentes de código (CLAUDE.md) | 🎨 | 🟢 | Quieres respuestas más útiles y menos ruido |
-| [antigravity-awesome-skills](#-antigravity-awesome-skills) | Catálogo de +1.678 skills por dominio | 📂 | 🟢 | Buscas skills ya hechas por dominio |
-| [awesome-agent-skills](#-awesome-agent-skills) | Skills oficiales de marcas líderes (Anthropic, Google, Stripe) | 📂 | 🟢 | Quieres skills respaldadas por marca |
-| [awesome-claude-code](#-awesome-claude-code) | Scripts/hooks/agentes para Claude Code | 📂 | 🟢 | Personalizas Claude Code a fondo |
-| [superpowers](#-superpowers) | Metodología completa de desarrollo composable | 🎨 | 🟢 | Quieres un método, no piezas sueltas |
-| [skills](#-skills) | Colección de skills de referencia (aihero.dev) | 📂 | 🟢 | Exploras skills limpias como plantilla |
-| [claude-plugins-official](#-claude-plugins-official) | Plugins oficiales de Claude (Anthropic) | 📂 | 🟢 | Buscas extensiones oficiales soportadas |
-| [agents-towards-production](#-agents-towards-production) | Playbook agente→producto end-to-end | 📂 | 🟡 | Llevas un agente de prototipo a prod |
-| [Context-Engineering](#-context-engineering) | Curso/guía de ingeniería de contexto | 📂 | 🟢 | Quieres dominar el manejo del contexto |
-| [agent-toolkit](#-agent-toolkit) | Skills de productividad diaria para Claude Code | 🎨 | 🟢 | Aceleras tareas repetitivas |
-| [n8n-skills](#-n8n-skills) | 14 skills para flujos n8n sin fallos de JSON | 🎨 | 🟢 | Generas JSON de n8n sin errores |
-| [marketingskills](#-marketingskills) | Skills de marketing/growth (copy, SEO, CRO) | 🎨 | 🟢 | Automatizas conversión, copy y SEO |
-| [agency-agents](#-agency-agents) | Playbooks de agencia multicanal (12 partes) | 🎨 | 🟡 | Operas 50-200 marcas en paralelo |
-| [geo-seo-claude](#-geo-seo-claude) | SEO/GEO para buscadores con IA | 🎨 | 🟢 | Optimizas para ChatGPT/Perplexity/AI Overviews |
-| [prompt-master](#-prompt-master) | Genera prompts precisos para cualquier IA | 🎨 | 🟢 | Quieres acertar el prompt al primer intento |
-| [ui-ux-pro-max-skill](#-ui-ux-pro-max-skill) | Inteligencia de diseño UI/UX | 🎨 | 🟢 | Elevas el acabado visual generado por IA |
-| [taste-skill](#-taste-skill) | Skills anti-slop para frontends premium | 🎨 | 🟢 | Quieres UIs con mejor gusto, no boilerplate |
-| [skills_emil](#-skills_emil) | Skills de colaboración diseño-dev | 🎨 | 🟢 | Mejoras el handoff diseñador↔ingeniero |
-| [SkillSpector](#-skillspector) | Auditoría de seguridad de skills | 🎨 | 🟢 | Revisas skills por patrones riesgosos |
-| [humanizer](#-humanizer) | Quita "tells" de texto IA | 🎨 | 🟢 | Quieres prosa que no suene a IA |
-| [stop-slop](#-stop-slop) | Elimina patrones de "slop" en prosa | 🎨 | 🟢 | Pules estilo de escritura del LLM |
+| [andrej-karpathy-skills](#-andrej-karpathy-skills) | Guía de 4 principios (inspirada en las ideas de Andrej Karpathy sobre asistentes de código) que define cómo debe responder un agente para maximizar utilidad y reducir verbosidad innecesaria. | 🎨 | 🟢 | Quieres respuestas más útiles ya, sin curar prompts largos. |
+| [antigravity-awesome-skills](#-antigravity-awesome-skills) | Catálogo masivo con más de 1.678 habilidades (`SKILL.md`) categorizadas por dominio (desarrollo, QA, DevOps, seguridad, marketing) listas para instalar en distintos asistentes. | 📂 | 🟢 | Quieres opciones por cantidad y dominio. |
+| [awesome-agent-skills](#-awesome-agent-skills) | Colección curada de habilidades oficiales y comunitarias publicadas por marcas líderes (Anthropic, Google, Stripe, Netlify…) como referencia de calidad para agentes. | 📂 | 🟢 | Valoras respaldo de marca y curaduría. |
+| [awesome-claude-code](#-awesome-claude-code) | Lista "awesome" curada de scripts, agentes, hooks, slash commands y extensiones específicos del ecosistema de Claude Code. | 📂 | 🟢 | Vives en Claude Code y quieres exprimirlo. |
+| [superpowers](#-superpowers) | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. | 🎨 | 🟢 | Quieres método, no fragmentos sueltos. |
+| [skills](#-skills) | Colección de skills de referencia mantenida por el proyecto aihero.dev / Total TypeScript, pensada como ejemplos limpios y bien construidos. | 📂 | 🟢 | Buscas referencias limpias y didácticas. |
+| [claude-plugins-official](#-claude-plugins-official) | Plugins y extensiones oficiales para Claude, distribuidos junto al repositorio de Claude Code de Anthropic. | 📂 | 🟢 | Quieres extensiones oficiales con garantía de compatibilidad. |
+| [agents-towards-production](#-agents-towards-production) | Playbook open-source con tutoriales end-to-end para llevar agentes GenAI de prototipo a producto real, cubriendo el ciclo completo de producción. | 📂 | 🟡 | Vas a producción con agentes y necesitas el ciclo completo. |
+| [Context-Engineering](#-context-engineering) | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso. | 📂 | 🟢 | Quieres profundizar en contexto y RAG. |
+| [agent-toolkit](#-agent-toolkit) | Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code en tareas de desarrollo, documentación y planificación. | 🎨 | 🟢 | Quieres productividad inmediata con tareas comunes. |
+| [n8n-skills](#-n8n-skills) | Conjunto de 14 skills estructuradas para Claude Code orientadas a construir flujos de n8n correctos, evitando errores al generar su JSON. | 🎨 | 🟢 | Generas workflows n8n con IA y te cansan los fallos de JSON. |
+| [marketingskills](#-marketingskills) | Colección de skills de marketing que cubren conversión, copywriting, SEO, analítica y growth para usar con agentes de código. | 🎨 | 🟢 | Automatizas marketing con agentes y quieres playbooks. |
+| [agency-agents](#-agency-agents) | Conjunto de playbooks y agentes especializados (incluye un Digital Marketing Pro) diseñados para operar una agencia multicanal a escala. | 🎨 | 🟡 | Operas una agencia con muchas marcas. |
+| [geo-seo-claude](#-geo-seo-claude) | Skill GEO-first con soporte SEO clásico para optimizar la visibilidad de sitios ante motores de búsqueda con IA (Generative Engine Optimization). | 🎨 | 🟢 | Te importa el descubrimiento por IA, no solo Google. |
+| [prompt-master](#-prompt-master) | Skill que ayuda a redactar prompts precisos para cualquier herramienta de IA, buscando el mejor resultado sin desperdiciar tokens. | 🎨 | 🟢 | Quieres dejar de re-promptear y acertar antes. |
+| [ui-ux-pro-max-skill](#-ui-ux-pro-max-skill) | Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla". | 🎨 | 🟢 | Generas UI con IA y el resultado se ve genérico o despulido. |
+| [taste-skill](#-taste-skill) | Skills "anti-slop" para producir frontends premium (layout, tipografía, motion y espaciado) más skills de generación de imagen para crear mood boards de referencia. | 🎨 | 🟢 | Quieres frontends con gusto y no te basta con UI funcional. |
+| [skills_emil](#-skills_emil) | Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrollador (design engineering). | 🎨 | 🟢 | Trabajas diseño+dev en equipo y sufres el handoff. |
+| [SkillSpector](#-skillspector) | Herramienta para auditar la seguridad de skills de agentes y detectar patrones potencialmente riesgosos (comandos peligrosos, exfiltración, prompts ocultos) antes de instalarlas. | 🎨 | 🟢 | Instalas skills externas o curas catálogos. |
+| [humanizer](#-humanizer) | Skill para Claude Code y OpenCode que elimina las señales típicas ("tells") de la escritura generada por IA para que el texto suene más natural. | 🎨 | 🟢 | Publicas prosa generada por IA y quieres evitar el "tono IA". |
+| [stop-slop](#-stop-slop) | Skill que enseña al modelo a eliminar patrones y "tells" de la prosa generada por IA, mejorando ritmo y estilo. | 🎨 | 🟢 | Quieres prosa más natural y te molesta el tono IA. |
 
 ### ⚖️ ¿Cuál elegir? — Catálogos de skills vs. metodología
 

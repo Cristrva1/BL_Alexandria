@@ -28,7 +28,7 @@ Cada ficha abre con una línea **Etiquetas:** que nombra cada valor — `Ejecuci
 ---
 
 <!-- BL_ALEXANDRIA_STATUS -->
-> Estado actual: **211 repos detectados** en la biblioteca local; **212 repos curados** con ficha completa en esta guía. Los repos nuevos sin ficha curada se agregan al apéndice automático sin reescribir el cuerpo editorial.
+> Estado actual: **211 repos detectados** en la biblioteca local; **212 repos curados** en el índice compacto. Los repos nuevos sin ficha editorial se agregan al apéndice automático sin reescribir el cuerpo de esta guía.
 <!-- /BL_ALEXANDRIA_STATUS -->
 
 ## 📂 Mapa de categorías
@@ -122,18 +122,18 @@ WhatsApp, motores de workflow, CRM, email y notificaciones.
 
 | Repo | Qué es | Ejec. | Setup | Elige si… |
 |---|---|---|---|---|
-| [twenty-main](#-twenty-main) | CRM open-source tipo Salesforce, modelado por metadatos | 🔀 | 🔴 | Quieres un CRM versionable como código |
-| [evolution-api](#-evolution-api) | API REST multi-instancia para WhatsApp en producción | 🏠 | 🔴 | Necesitas WhatsApp robusto con webhooks |
-| [OpenWA](#-openwa) | SDK ligero de WhatsApp vía automatización de navegador | 🏠 | 🟢 | Prototipas un bot simple sin infra pesada |
-| [whatsapp-agentkit](#-whatsapp-agentkit) | Plantilla guiada que autogenera un bot con Claude Code | 🔀 | 🟢 | Quieres un bot en <30 min sin programar |
-| [activepieces](#-activepieces) | Automatización low-code tipo Zapier con piezas TS y MCP | 🔀 | 🟡 | Buscas low-code extensible con IA |
-| [n8n](#-n8n) | Motor de workflows self-host con cientos de nodos | 🏠 | 🟡 | Necesitas automatización seria y flexible |
-| [n8n_io](#-n8n_io) | Espejo del repo oficial de n8n (duplicado) | 🏠 | 🟡 | (duplicado — usa `n8n`) |
-| [huginn](#-huginn) | Agentes por eventos/polling encadenables (Ruby on Rails) | 🏠 | 🟡 | Monitoreas fuentes y reaccionas a cambios |
-| [mautic](#-mautic) | Marketing automation open-source con segmentación | 🏠 | 🔴 | Quieres segmentación y nurturing soberano |
-| [chatwoot](#-chatwoot) | Bandeja unificada de soporte multicanal (Rails) | 🏠 | 🔴 | Centralizas conversaciones multicanal |
-| [listmonk](#-listmonk) | Newsletters self-host en un binario Go de alto rendimiento | 🏠 | 🟡 | Email masivo self-hosted y rápido |
-| [novu](#-novu) | Infra de notificaciones multicanal con inbox unificado | 🔀 | 🟡 | Unificas email/SMS/push/chat en un backend |
+| [twenty-main](#-twenty-main) | CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones. | 🔀 | 🔴 | Quieres un CRM que se adapte 1:1 a tu negocio y vivir en self-host. |
+| [evolution-api](#-evolution-api) | API REST que actúa como middleware para automatizar WhatsApp y mensajería multicanal, exponiendo el envío/recepción de mensajes a tus aplicaciones mediante una capa gestionable. | 🏠 | 🔴 | Operas WhatsApp en producción con varias instancias. |
+| [OpenWA](#-openwa) | Gateway/SDK abierto para conectar y automatizar cuentas de WhatsApp de forma directa desde código, sin infraestructura pesada. | 🏠 | 🟢 | Desarrollas scripts o bots individuales y quieres arrancar rápido. |
+| [whatsapp-agentkit](#-whatsapp-agentkit) | Plantilla guiada que construye un agente conversacional de WhatsApp en menos de 30 minutos sin necesidad de programar, partiendo de preguntas sobre tu negocio. | 🔀 | 🟢 | Quieres arrancar sin partir de cero y te vale con lo que Claude Code genere. |
+| [activepieces](#-activepieces) | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. | 🔀 | 🟡 | Quieres reemplazar Zapier con piezas propias en TypeScript. |
+| [n8n](#-n8n) | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. | 🏠 | 🟡 | Quieres el motor central de automatización con máximo catálogo. |
+| [n8n_io](#-n8n_io) | Copia local del repositorio oficial de n8n (mismo proyecto que n8n), mantenida como referencia o espejo del código fuente. | 🏠 | 🟡 | Es el mismo proyecto que n8n; usa esa ficha. |
+| [huginn](#-huginn) | Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos. | 🏠 | 🟡 | Automatizas tareas orientadas a eventos y valoras la privacidad. |
+| [mautic](#-mautic) | Plataforma open-source de marketing automation y segmentación de audiencias, alternativa soberana a suites comerciales como HubSpot o Marketo. | 🏠 | 🔴 | Necesitas automatización de marketing seria y soberana. |
+| [chatwoot](#-chatwoot) | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. | 🏠 | 🔴 | Das soporte por varios canales y necesitas handoff humano. |
+| [listmonk](#-listmonk) | Gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depender de un SaaS. | 🏠 | 🟡 | Quieres email marketing simple, rápido y propio. |
+| [novu](#-novu) | Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend. | 🔀 | 🟡 | Envías notificaciones por varios canales y quieres un único backend. |
 
 ### ⚖️ ¿Cuál elegir? — Canal de WhatsApp
 
@@ -314,27 +314,27 @@ Habilidades `SKILL.md`, playbooks, guías `CLAUDE.md` y herramientas para mejora
 
 | Repo | Qué es | Rol | Setup | Elige si… |
 |---|---|---|---|---|
-| [andrej-karpathy-skills](#-andrej-karpathy-skills) | 4 principios para asistentes de código (CLAUDE.md) | 🎨 | 🟢 | Quieres respuestas más útiles y menos ruido |
-| [antigravity-awesome-skills](#-antigravity-awesome-skills) | Catálogo de +1.678 skills por dominio | 📂 | 🟢 | Buscas skills ya hechas por dominio |
-| [awesome-agent-skills](#-awesome-agent-skills) | Skills oficiales de marcas líderes (Anthropic, Google, Stripe) | 📂 | 🟢 | Quieres skills respaldadas por marca |
-| [awesome-claude-code](#-awesome-claude-code) | Scripts/hooks/agentes para Claude Code | 📂 | 🟢 | Personalizas Claude Code a fondo |
-| [superpowers](#-superpowers) | Metodología completa de desarrollo composable | 🎨 | 🟢 | Quieres un método, no piezas sueltas |
-| [skills](#-skills) | Colección de skills de referencia (aihero.dev) | 📂 | 🟢 | Exploras skills limpias como plantilla |
-| [claude-plugins-official](#-claude-plugins-official) | Plugins oficiales de Claude (Anthropic) | 📂 | 🟢 | Buscas extensiones oficiales soportadas |
-| [agents-towards-production](#-agents-towards-production) | Playbook agente→producto end-to-end | 📂 | 🟡 | Llevas un agente de prototipo a prod |
-| [Context-Engineering](#-context-engineering) | Curso/guía de ingeniería de contexto | 📂 | 🟢 | Quieres dominar el manejo del contexto |
-| [agent-toolkit](#-agent-toolkit) | Skills de productividad diaria para Claude Code | 🎨 | 🟢 | Aceleras tareas repetitivas |
-| [n8n-skills](#-n8n-skills) | 14 skills para flujos n8n sin fallos de JSON | 🎨 | 🟢 | Generas JSON de n8n sin errores |
-| [marketingskills](#-marketingskills) | Skills de marketing/growth (copy, SEO, CRO) | 🎨 | 🟢 | Automatizas conversión, copy y SEO |
-| [agency-agents](#-agency-agents) | Playbooks de agencia multicanal (12 partes) | 🎨 | 🟡 | Operas 50-200 marcas en paralelo |
-| [geo-seo-claude](#-geo-seo-claude) | SEO/GEO para buscadores con IA | 🎨 | 🟢 | Optimizas para ChatGPT/Perplexity/AI Overviews |
-| [prompt-master](#-prompt-master) | Genera prompts precisos para cualquier IA | 🎨 | 🟢 | Quieres acertar el prompt al primer intento |
-| [ui-ux-pro-max-skill](#-ui-ux-pro-max-skill) | Inteligencia de diseño UI/UX | 🎨 | 🟢 | Elevas el acabado visual generado por IA |
-| [taste-skill](#-taste-skill) | Skills anti-slop para frontends premium | 🎨 | 🟢 | Quieres UIs con mejor gusto, no boilerplate |
-| [skills_emil](#-skills_emil) | Skills de colaboración diseño-dev | 🎨 | 🟢 | Mejoras el handoff diseñador↔ingeniero |
-| [SkillSpector](#-skillspector) | Auditoría de seguridad de skills | 🎨 | 🟢 | Revisas skills por patrones riesgosos |
-| [humanizer](#-humanizer) | Quita "tells" de texto IA | 🎨 | 🟢 | Quieres prosa que no suene a IA |
-| [stop-slop](#-stop-slop) | Elimina patrones de "slop" en prosa | 🎨 | 🟢 | Pules estilo de escritura del LLM |
+| [andrej-karpathy-skills](#-andrej-karpathy-skills) | Guía de 4 principios (inspirada en las ideas de Andrej Karpathy sobre asistentes de código) que define cómo debe responder un agente para maximizar utilidad y reducir verbosidad innecesaria. | 🎨 | 🟢 | Quieres respuestas más útiles ya, sin curar prompts largos. |
+| [antigravity-awesome-skills](#-antigravity-awesome-skills) | Catálogo masivo con más de 1.678 habilidades (`SKILL.md`) categorizadas por dominio (desarrollo, QA, DevOps, seguridad, marketing) listas para instalar en distintos asistentes. | 📂 | 🟢 | Quieres opciones por cantidad y dominio. |
+| [awesome-agent-skills](#-awesome-agent-skills) | Colección curada de habilidades oficiales y comunitarias publicadas por marcas líderes (Anthropic, Google, Stripe, Netlify…) como referencia de calidad para agentes. | 📂 | 🟢 | Valoras respaldo de marca y curaduría. |
+| [awesome-claude-code](#-awesome-claude-code) | Lista "awesome" curada de scripts, agentes, hooks, slash commands y extensiones específicos del ecosistema de Claude Code. | 📂 | 🟢 | Vives en Claude Code y quieres exprimirlo. |
+| [superpowers](#-superpowers) | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. | 🎨 | 🟢 | Quieres método, no fragmentos sueltos. |
+| [skills](#-skills) | Colección de skills de referencia mantenida por el proyecto aihero.dev / Total TypeScript, pensada como ejemplos limpios y bien construidos. | 📂 | 🟢 | Buscas referencias limpias y didácticas. |
+| [claude-plugins-official](#-claude-plugins-official) | Plugins y extensiones oficiales para Claude, distribuidos junto al repositorio de Claude Code de Anthropic. | 📂 | 🟢 | Quieres extensiones oficiales con garantía de compatibilidad. |
+| [agents-towards-production](#-agents-towards-production) | Playbook open-source con tutoriales end-to-end para llevar agentes GenAI de prototipo a producto real, cubriendo el ciclo completo de producción. | 📂 | 🟡 | Vas a producción con agentes y necesitas el ciclo completo. |
+| [Context-Engineering](#-context-engineering) | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso. | 📂 | 🟢 | Quieres profundizar en contexto y RAG. |
+| [agent-toolkit](#-agent-toolkit) | Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code en tareas de desarrollo, documentación y planificación. | 🎨 | 🟢 | Quieres productividad inmediata con tareas comunes. |
+| [n8n-skills](#-n8n-skills) | Conjunto de 14 skills estructuradas para Claude Code orientadas a construir flujos de n8n correctos, evitando errores al generar su JSON. | 🎨 | 🟢 | Generas workflows n8n con IA y te cansan los fallos de JSON. |
+| [marketingskills](#-marketingskills) | Colección de skills de marketing que cubren conversión, copywriting, SEO, analítica y growth para usar con agentes de código. | 🎨 | 🟢 | Automatizas marketing con agentes y quieres playbooks. |
+| [agency-agents](#-agency-agents) | Conjunto de playbooks y agentes especializados (incluye un Digital Marketing Pro) diseñados para operar una agencia multicanal a escala. | 🎨 | 🟡 | Operas una agencia con muchas marcas. |
+| [geo-seo-claude](#-geo-seo-claude) | Skill GEO-first con soporte SEO clásico para optimizar la visibilidad de sitios ante motores de búsqueda con IA (Generative Engine Optimization). | 🎨 | 🟢 | Te importa el descubrimiento por IA, no solo Google. |
+| [prompt-master](#-prompt-master) | Skill que ayuda a redactar prompts precisos para cualquier herramienta de IA, buscando el mejor resultado sin desperdiciar tokens. | 🎨 | 🟢 | Quieres dejar de re-promptear y acertar antes. |
+| [ui-ux-pro-max-skill](#-ui-ux-pro-max-skill) | Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla". | 🎨 | 🟢 | Generas UI con IA y el resultado se ve genérico o despulido. |
+| [taste-skill](#-taste-skill) | Skills "anti-slop" para producir frontends premium (layout, tipografía, motion y espaciado) más skills de generación de imagen para crear mood boards de referencia. | 🎨 | 🟢 | Quieres frontends con gusto y no te basta con UI funcional. |
+| [skills_emil](#-skills_emil) | Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrollador (design engineering). | 🎨 | 🟢 | Trabajas diseño+dev en equipo y sufres el handoff. |
+| [SkillSpector](#-skillspector) | Herramienta para auditar la seguridad de skills de agentes y detectar patrones potencialmente riesgosos (comandos peligrosos, exfiltración, prompts ocultos) antes de instalarlas. | 🎨 | 🟢 | Instalas skills externas o curas catálogos. |
+| [humanizer](#-humanizer) | Skill para Claude Code y OpenCode que elimina las señales típicas ("tells") de la escritura generada por IA para que el texto suene más natural. | 🎨 | 🟢 | Publicas prosa generada por IA y quieres evitar el "tono IA". |
+| [stop-slop](#-stop-slop) | Skill que enseña al modelo a eliminar patrones y "tells" de la prosa generada por IA, mejorando ritmo y estilo. | 🎨 | 🟢 | Quieres prosa más natural y te molesta el tono IA. |
 
 ### ⚖️ ¿Cuál elegir? — Catálogos de skills vs. metodología
 
@@ -617,25 +617,25 @@ Plataformas para construir sistemas multiagente, research autónomo y flujos low
 
 | Repo | Qué es | Ejec. | Setup | Elige si… |
 |---|---|---|---|---|
-| [ag2](#-ag2) | Framework multiagente maduro (heredero de AutoGen) | ☁️ | 🟡 | Construyes sistemas multiagente en prod |
-| [crewAI](#-crewai) | Equipos de agentes con roles y tareas | ☁️ | 🟢 | Quieres avanzar rápido con "crews" |
-| [langchain](#-langchain) | Framework base de apps LLM (Python/JS) | ☁️ | 🟡 | Necesitas el estándar de orquestación |
-| [langflow](#-langflow) | Constructor visual de flujos LLM sobre LangChain | 🔀 | 🟡 | Prefieres iterar componentes en visual |
-| [dify](#-dify) | Plataforma integral de apps IA (backend+UI) | 🔀 | 🟡 | Quieres backend+UI listos para apps |
-| [Flowise](#-flowise) | Builder visual drag-and-drop de pipelines LLM | 🔀 | 🟢 | Prototipas pipelines sin código |
-| [OpenHands](#-openhands) | Agentes que ejecutan en entornos dev sandbox | 🔀 | 🟡 | Quieres un agente que programe/ejecute |
-| [deer-flow](#-deer-flow) | Super-agente con sub-agentes y sandbox (ByteDance) | 🔀 | 🟡 | Buscas orquestación potente extensible |
-| [NeMo-Agent-Toolkit](#-nemo-agent-toolkit) | Toolkit de agentes de NVIDIA (NIM) | 🔀 | 🔴 | Estás en stack NVIDIA/empresa |
-| [hermes-agent](#-hermes-agent) | Entorno desktop/CLI de agentes locales (Nous) | 🏠 | 🟡 | Ejecutas agentes locales con razonamiento |
-| [openevolve](#-openevolve) | Agente de código evolutivo (estilo AlphaEvolve) | ☁️ | 🔴 | Optimizas algoritmos por evolución |
-| [gpt-researcher](#-gpt-researcher) | Agente de research autónomo con citas | 🔀 | 🟡 | Necesitas reportes citados profundos |
-| [autoresearch](#-autoresearch) | Research iterativo experimental (Karpathy) | 🔀 | 🟡 | Exploras automatización de investigación |
-| [deer-flow](#-deer-flow) | (ver arriba) | 🔀 | 🟡 | — |
-| [ruflo](#-ruflo) | Swarm multiagente (Rust) para Claude/Codex | 🔀 | 🔴 | Coordinas 100+ agentes con memoria |
-| [multica](#-multica) | Plataforma humanos+agentes lado a lado | 🔀 | 🟡 | Mezclas equipo humano y agentes |
-| [MiroFish](#-mirofish) | Motor de predicción multiagente (simulación) | 🔀 | 🔴 | Simulas escenarios/futuros con agentes |
-| [llm-council](#-llm-council) | "Consejo" de varios LLMs deliberando | 🔀 | 🟡 | Quieres respuestas por consenso multi-modelo |
-| [awesome-LangGraph](#-awesome-langgraph) | Recursos curados del ecosistema LangGraph | 📂 | 🟢 | Construyes grafos cíclicos de agentes |
+| [ag2](#-ag2) | Framework maduro para sistemas multiagente con patrones de colaboración (heredero directo de AutoGen). | ☁️ | 🟡 | Construyes multiagente serio en Python. |
+| [crewAI](#-crewai) | Framework para orquestar "crews" de agentes con roles y tareas. | ☁️ | 🟢 | Quieres velocidad y un modelo mental simple de "equipo". |
+| [langchain](#-langchain) | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). | ☁️ | 🟡 | Quieres la base estándar con máximas integraciones. |
+| [langflow](#-langflow) | Constructor visual de flujos LLM/agentes construido sobre LangChain. | 🔀 | 🟡 | Prefieres construir en visual sobre LangChain. |
+| [dify](#-dify) | Plataforma integral para construir apps de IA con backend y UI listos. | 🔀 | 🟡 | Quieres una app IA completa autoalojada. |
+| [Flowise](#-flowise) | Builder visual drag-and-drop para pipelines LLM. Permite montar chatflows y agentes conectando nodos y exponerlos como API o widget embebible. | 🔀 | 🟢 | Quieres un prototipo visual ya, en stack JS. |
+| [OpenHands](#-openhands) | Plataforma de agentes que ejecutan acciones reales en entornos de desarrollo (ex-OpenDevin). | 🔀 | 🟡 | Quieres un agente que "haga", no solo hable. |
+| [deer-flow](#-deer-flow) | Super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles. | 🔀 | 🟡 | Quieres un orquestador completo y extensible. |
+| [NeMo-Agent-Toolkit](#-nemo-agent-toolkit) | Toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo). | 🔀 | 🔴 | Trabajas con infra NVIDIA o necesitas guardrails/eval empresarial. |
+| [hermes-agent](#-hermes-agent) | Entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. | 🏠 | 🟡 | Quieres agentes locales con UI y memoria persistente. |
+| [openevolve](#-openevolve) | Agente de codificación evolutivo que optimiza algoritmos por simulación genética. | ☁️ | 🔴 | Optimizas problemas algorítmicos donde cabe explorar muchas variantes. |
+| [gpt-researcher](#-gpt-researcher) | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. | 🔀 | 🟡 | Necesitas research profundo citado. |
+| [autoresearch](#-autoresearch) | Enfoque experimental para automatizar investigación iterativa mediante bucles de búsqueda y refinamiento. | 🔀 | 🟡 | Experimentas con research iterativo o quieres un punto de partida. |
+| [deer-flow](#-deer-flow) | Super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles. | 🔀 | 🟡 | Quieres un orquestador completo y extensible. |
+| [ruflo](#-ruflo) | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). | 🔀 | 🔴 | Orquestas muchos agentes a escala y quieres rendimiento. |
+| [multica](#-multica) | Plataforma para que humanos y agentes trabajen lado a lado ("tus próximas 10 contrataciones no serán humanas"). | 🔀 | 🟡 | Mezclas trabajo humano y agentes en un mismo flujo. |
+| [MiroFish](#-mirofish) | Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios. | 🔀 | 🔴 | Simulas futuros/escenarios con muchos actores. |
+| [llm-council](#-llm-council) | "consejo" donde varios LLMs deliberan y se evalúan entre sí para responder. | 🔀 | 🟡 | Quieres consenso entre modelos o comparar proveedores. |
+| [awesome-LangGraph](#-awesome-langgraph) | Repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain. | 📂 | 🟢 | Construyes con LangGraph y quieres patrones de referencia. |
 
 ### ⚖️ ¿Cuál elegir? — Frameworks de agentes
 
@@ -888,20 +888,20 @@ Crawling, extracción estructurada y navegación web con LLMs.
 
 | Repo | Qué es | Lenguaje | Setup | Elige si… |
 |---|---|---|---|---|
-| [firecrawl](#-firecrawl) | API search+scrape para agentes (Markdown/JSON) | TS/API | 🟡 | Quieres web → Markdown/JSON listo para LLM |
-| [crawl4ai](#-crawl4ai) | Crawling a gran escala orientado a IA | Python | 🟡 | Recolectas grandes volúmenes barato |
-| [scrapy](#-scrapy) | Framework clásico y maduro de scraping | Python | 🟡 | Necesitas un crawler maduro y robusto |
-| [crawlee](#-crawlee) | Framework de crawling moderno con antibloqueo | Node.js | 🟡 | Scrapeas con Node y antibloqueo |
-| [crawlee-python](#-crawlee-python) | Crawlee llevado a Python | Python | 🟡 | Quieres Crawlee pero en Python |
-| [Scrapling](#-scrapling) | Scraping adaptativo anti-bloqueo | Python | 🟡 | Las páginas cambian o te bloquean |
-| [scrapely](#-scrapely) | Extracción por ejemplos (sin reglas) | Python | 🟢 | Extraes por plantilla aprendida |
-| [llm-scraper](#-llm-scraper) | Web → datos estructurados con LLM + Zod | TS | 🟢 | Defines un esquema y el LLM lo llena |
-| [Scrapegraph-ai](#-scrapegraph-ai) | Scraping por grafos + LLM ("by prompt") | Python | 🟡 | Combinas extracción y estructura semántica |
-| [playwright](#-playwright) | Automatización/testing de navegador | TS/Python | 🟡 | Necesitas control preciso del browser |
-| [playwright-cli](#-playwright-cli) | Playwright como CLI + skills | TS | 🟢 | Tu agente automatiza web vía CLI |
-| [browser-use](#-browser-use) | Navegación web por visión para LLM | Python | 🟡 | El agente "ve" la pantalla y actúa |
-| [instaloader](#-instaloader) | Descarga de datos de Instagram | Python | 🟢 | Extraes contenido/metadata de IG |
-| [snscrape](#-snscrape) | Scraper de redes sociales | Python | 🟢 | Recolectas posts sin API oficial |
+| [firecrawl](#-firecrawl) | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. | TS/API | 🟡 | Alimentas agentes/RAG con web y quieres salida limpia. |
+| [crawl4ai](#-crawl4ai) | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para. | Python | 🟡 | Necesitas volumen barato y self-host. |
+| [scrapy](#-scrapy) | Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. | Python | 🟡 | Quieres un crawler sólido y configurable a escala. |
+| [crawlee](#-crawlee) | Framework moderno de crawling para Node.js con antibloqueo integrado, que unifica scraping de HTTP y de navegador bajo una misma API con colas y reintentos. | Node.js | 🟡 | Scrapeas con Node y necesitas antibloqueo. |
+| [crawlee-python](#-crawlee-python) | Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. | Python | 🟡 | Quieres Crawlee en Python con antibloqueo. |
+| [Scrapling](#-scrapling) | Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica los elementos cuando el HTML cambia. | Python | 🟡 | Los sitios cambian o te bloquean a menudo. |
+| [scrapely](#-scrapely) | Librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales. | Python | 🟢 | Prefieres enseñar por ejemplos y el sitio es homogéneo. |
+| [llm-scraper](#-llm-scraper) | Librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído. | TS | 🟢 | Quieres salida tipada y validada en stack TS. |
+| [Scrapegraph-ai](#-scrapegraph-ai) | Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. | Python | 🟡 | Quieres estructura semántica "by prompt" en Python. |
+| [playwright](#-playwright) | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. | TS/Python | 🟡 | Necesitas control preciso y reproducible del browser. |
+| [playwright-cli](#-playwright-cli) | Interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto. | TS | 🟢 | Tu agente vive en CLI y el contexto es un recurso caro. |
+| [browser-use](#-browser-use) | Biblioteca Python que da a los LLMs la capacidad de usar navegadores reales con interfaz para modelos de visión, dejando que el agente perciba la pantalla y actúe sin selectores fijos. | Python | 🟡 | Quieres navegación como humano y tolerancia a cambios de UI. |
+| [instaloader](#-instaloader) | Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de Instagram. | Python | 🟢 | Necesitas datos de Instagram de forma fiable. |
+| [snscrape](#-snscrape) | Scraper de redes sociales (Twitter/X, Reddit, Telegram, Instagram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves. | Python | 🟢 | Recolectas varias redes y no te sirve una API oficial. |
 
 ### ⚖️ ¿Cuál elegir? — Crawling/scraping
 
@@ -1104,13 +1104,13 @@ Servidores y clientes Model Context Protocol, y catálogos de APIs para conectar
 
 | Repo | Qué es | Rol | Elige si… | Setup |
 |---|---|---|---|---|
-| [mcp](#-mcp) | Spec y SDKs oficiales del protocolo MCP | 📚 | Trabajas con el estándar MCP directamente | 🟡 |
-| [mcp-use](#-mcp-use) | Framework fullstack para apps/servidores MCP | 📚 | Construyes tu propio servidor/app MCP | 🟡 |
-| [servers](#-servers) | Servidores MCP de referencia oficiales | 📂 | Quieres ejemplos canónicos para aprender | 🟡 |
-| [awesome-mcp-servers](#-awesome-mcp-servers) | Directorio curado de servidores MCP | 📂 | Buscas un servidor ya hecho antes de construir | 🟢 |
-| [mcp-neo4j](#-mcp-neo4j) | Servidores MCP oficiales para grafos Neo4j | 🧩 | Conectas grafos Neo4j a un asistente | 🟡 |
-| [n8n-mcp](#-n8n-mcp) | MCP que expone los 1.845 nodos de n8n | 🧩 | Quieres que la IA arme flujos n8n sin errores | 🟡 |
-| [public-apis](#-public-apis) | Directorio de miles de APIs públicas | 📂 | Buscas fuentes de datos externas para tu app | 🟢 |
+| [mcp](#-mcp) | Núcleo del Model Context Protocol (spec y SDKs oficiales) para que herramientas, datos y clientes de IA interoperen bajo un mismo estándar abierto. | 📚 | Programas MCP a bajo nivel o necesitas conformidad estricta con la spec. | 🟡 |
+| [mcp-use](#-mcp-use) | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. | 📚 | Construyes un servidor MCP propio y quieres productividad. | 🟡 |
+| [servers](#-servers) | Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad. | 📂 | Quieres ejemplos canónicos y plantillas fiables. | 🟡 |
+| [awesome-mcp-servers](#-awesome-mcp-servers) | Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar. | 📂 | Buscas antes de construir. | 🟢 |
+| [mcp-neo4j](#-mcp-neo4j) | Conjunto de servidores MCP oficiales para conectar bases de datos de grafos Neo4j a asistentes de IA, con soporte de despliegue en cloud. | 🧩 | Usas Neo4j con IA y quieres que el asistente hable Cypher. | 🟡 |
+| [n8n-mcp](#-n8n-mcp) | Servidor MCP que expone a la IA la documentación y los esquemas de los más de 1.845 nodos de n8n (816 core + 1.029 comunitarios) para ayudar a construir y depurar flujos. | 🧩 | Generas flujos n8n con IA y quieres menos alucinaciones de parámetros. | 🟡 |
+| [public-apis](#-public-apis) | Directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos. | 📂 | Buscas datos externos y no sabes qué API usar. | 🟢 |
 
 ### ⚖️ ¿Cuál elegir? — Crear vs. descubrir MCP
 
@@ -1215,16 +1215,16 @@ Memoria persistente de agentes, gateways de modelos, trazas/evaluación y loggin
 
 | Repo | Qué es | Rol | Elige si… | Setup |
 |---|---|---|---|---|
-| [mem0](#-mem0) | Capa de memoria persistente para agentes | 📚 | Quieres memoria estándar con integraciones amplias | 🟢 |
-| [agentmemory](#-agentmemory) | Memoria multi-cliente para agentes de código | 📚 | Tu agente debe recordar entre sesiones y clientes | 🟢 |
-| [mempalace](#-mempalace) | Memoria local-first verbatim | 📚 | Quieres memoria sin llamadas a API (privacidad) | 🟢 |
-| [turbovec](#-turbovec) | Búsqueda vectorial rápida (TurboQuant) | 📚 | Necesitas vector search embebido eficiente | 🟢 |
-| [litellm](#-litellm) | Gateway unificado a 100+ LLMs | 📚 | Cambias de proveedor sin tocar código | 🟢 |
-| [langfuse](#-langfuse) | Observabilidad/trazas de LLM | ⚙️ | Quieres ver y evaluar tus llamadas LLM | 🟡 |
-| [llmfit](#-llmfit) | Evaluación/ajuste de LLMs | 📚 | Mides calidad/fit de modelos con datos | 🟢 |
-| [headroom](#-headroom) | Compactación de contexto | 📚 | Te quedas sin ventana de contexto | 🟢 |
-| [sandbox](#-sandbox) | Sandbox all-in-one para agentes | ⚙️ | Necesitas browser+terminal+VSCode+MCP aislados | 🟡 |
-| [loguru](#-loguru) | Logging simple para Python | 📚 | Quieres logs limpios sin boilerplate | 🟢 |
+| [mem0](#-mem0) | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental. | 📚 | Quieres memoria estándar lista con integraciones amplias. | 🟢 |
+| [agentmemory](#-agentmemory) | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes. | 📚 | Cambias de asistente y quieres una memoria común entre ellos. | 🟢 |
+| [mempalace](#-mempalace) | Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin enviar datos a servicios externos. | 📚 | La privacidad es prioridad y no quieres llamadas a API. | 🟢 |
+| [turbovec](#-turbovec) | Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida. | 📚 | Necesitas vector search veloz y embebido sin desplegar una DB. | 🟢 |
+| [litellm](#-litellm) | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. | 📚 | Trabajas con múltiples modelos o quieres fallback/control de costos. | 🟢 |
+| [langfuse](#-langfuse) | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. | ⚙️ | Operas agentes en serio y necesitas trazas/costes/eval. | 🟡 |
+| [llmfit](#-llmfit) | Herramienta para evaluar y medir el "fit" y la calidad de LLMs en una tarea concreta, orientada a comparar modelos con datos. | 📚 | Necesitas elegir modelo con datos y reproducibilidad. | 🟢 |
+| [headroom](#-headroom) | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. | 📚 | Te quedas sin contexto en sesiones largas. | 🟢 |
+| [sandbox](#-sandbox) | Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. | ⚙️ | Quieres aislar la ejecución de agentes y reproducibilidad. | 🟡 |
+| [loguru](#-loguru) | Librería de logging para Python centrada en la simplicidad ("logging that doesn't suck"), lista para usar sin configuración previa. | 📚 | Quieres logging fácil y legible en Python sin pelear con stdlib. | 🟢 |
 
 ### ⚖️ ¿Cuál elegir? — Memoria de agentes
 
@@ -1365,19 +1365,19 @@ Indexar/mapear repos, grafos de conocimiento, ciencia de datos y entrenar modelo
 
 | Repo | Qué es | Rol | Elige si… | Setup |
 |---|---|---|---|---|
-| [codegraph](#-codegraph) | Índice semántico de código local | 🧩 | Quieres que la IA entienda repos grandes barato | 🟢 |
-| [graphify](#-graphify) | Grafo de conocimiento de proyecto | 🧩 | Visualizas relaciones de código/PDF/imagen | 🟡 |
-| [graphrag](#-graphrag) | RAG basado en grafos (Microsoft) | 📚 | Necesitas recuperación contextual por grafo | 🟡 |
-| [GitNexus](#-gitnexus) | Exploración visual de repos Git | 🖥️ | Navegas y entiendes un repo concreto visualmente | 🟢 |
-| [DeepSeek-Coder](#-deepseek-coder) | Modelo de código open-source | 🧩 | Generas/revisas código con modelo propio | 🔴 |
-| [nanoGPT](#-nanogpt) | GPT mínimo entrenable (Karpathy) | 📚 | Aprendes/entrenas un GPT desde cero | 🟡 |
-| [nanochat](#-nanochat) | ChatGPT mínimo full-stack (Karpathy) | 📚 | Entrenas un chat end-to-end didáctico | 🟡 |
-| [llm.c](#-llmc) | Entrenamiento de LLM en C/CUDA puro | 📚 | Quieres entrenar sin frameworks pesados | 🔴 |
-| [how-to-train-your-gpt](#-how-to-train-your-gpt) | Guía para entrenar un GPT | 📂 | Buscas un tutorial práctico paso a paso | 🟢 |
-| [cosmos](#-cosmos) | World foundation models de NVIDIA | 🧩 | Generas mundos/datos para IA física | 🔴 |
-| [data-science-ipython-notebooks](#-data-science-ipython-notebooks) | Notebooks de ciencia de datos | 📂 | Aprendes/consultas DS y ML con ejemplos | 🟢 |
-| [awesome-bigdata](#-awesome-bigdata) | Directorio de big data | 📂 | Buscas herramientas de datos a escala | 🟢 |
-| [openai-python](#-openai-python) | SDK oficial de OpenAI | 📚 | Llamas a la API de OpenAI desde Python | 🟢 |
+| [codegraph](#-codegraph) | CLI que indexa tu código y da a los asistentes de IA inteligencia semántica 100% local, permitiéndoles entender la estructura y el flujo de un repo sin leer archivo por archivo ni gastar llamadas a herramientas. | 🧩 | Trabajas repos grandes y el contexto del agente es caro. | 🟢 |
+| [graphify](#-graphify) | Generador de grafos de conocimiento para proyectos locales que mapea código, PDFs, imágenes y video en diagramas interactivos, revelando cómo se conectan las piezas de un sistema. | 🧩 | Quieres ver conexiones visualmente o auditar un sistema. | 🟡 |
+| [graphrag](#-graphrag) | Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. | 📚 | Tu corpus tiene relaciones ricas y el RAG por fragmentos se queda corto. | 🟡 |
+| [GitNexus](#-gitnexus) | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. | 🖥️ | Quieres entender un repo puntual de forma visual. | 🟢 |
+| [DeepSeek-Coder](#-deepseek-coder) | Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software. | 🧩 | Quieres un modelo de código abierto y desplegable on-prem. | 🔴 |
+| [nanoGPT](#-nanogpt) | Implementación mínima y limpia de Andrej Karpathy para entrenar y afinar GPTs, pensada para que el código quepa en la cabeza y se entienda de extremo a extremo. | 📚 | Quieres entender el entrenamiento de un GPT desde cero. | 🟡 |
+| [nanochat](#-nanochat) | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. | 📚 | Quieres el pipeline completo de un chat end-to-end. | 🟡 |
+| [llm.c](#-llmc) | Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo al desnudo. | 📚 | Quieres bajo nivel sin abstracciones y tienes GPU CUDA. | 🔴 |
+| [how-to-train-your-gpt](#-how-to-train-your-gpt) | Guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material de estudio más que como librería de producción. | 📂 | Quieres una guía explicada y narrada. | 🟢 |
+| [cosmos](#-cosmos) | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. | 🧩 | Trabajas IA física/robótica y necesitas datos sintéticos. | 🔴 |
+| [data-science-ipython-notebooks](#-data-science-ipython-notebooks) | Gran colección de notebooks de ciencia de datos y machine learning que cubre desde pandas y NumPy hasta deep learning y big data, con ejemplos listos para ejecutar. | 📂 | Estudias/consultas DS con ejemplos ejecutables. | 🟢 |
+| [awesome-bigdata](#-awesome-bigdata) | Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. | 📂 | Diseñas pipelines de datos grandes y necesitas descubrir el ecosistema. | 🟢 |
+| [openai-python](#-openai-python) | SDK oficial de OpenAI para Python, que expone de forma tipada y cómoda la API (chat, embeddings, imágenes, audio, asistentes) y es la base habitual para apps que usan sus modelos. | 📚 | Usas modelos de OpenAI desde Python y quieres el cliente oficial. | 🟢 |
 
 ### ⚖️ ¿Cuál elegir? — Entender código vs. grafos
 
@@ -1568,11 +1568,11 @@ Entornos privados todo-en-uno y herramientas tipo NotebookLM.
 
 | Repo | Qué es | Ejec. | Setup | Elige si… |
 |---|---|---|---|---|
-| [ECC](#-ecc) | Arnés/OS para agentes con escudo de seguridad | 🏠 | 🔴 | Das a agentes acceso real a tu máquina y necesitas validación |
-| [odysseus](#-odysseus) | Workspace privado todo-en-uno (chat, docs, correo) | 🏠 | 🔴 | Quieres un "Copilot" local soberano y auto-hospedado |
-| [open-notebook](#-open-notebook) | NotebookLM open-source y 100% local | 🏠 | 🟡 | Procesas fuentes y generas audios sin enviar datos a la nube |
-| [notebooklm-py](#-notebooklm-py) | API Python no oficial para NotebookLM | ☁️ | 🟢 | Automatizas el NotebookLM real desde scripts |
-| [notebooklm-mcp-cli](#-notebooklm-mcp-cli) | CLI + servidor MCP para NotebookLM | ☁️ | 🟢 | Integras NotebookLM con clientes MCP (Claude, etc.) |
+| [ECC](#-ecc) | Sistema operativo/arnés unificado para desarrollar, ejecutar y desplegar en local agentes de IA de alto rendimiento de forma segura. | 🏠 | 🔴 | Ejecutas agentes con acceso real a tu máquina y necesitas contención. |
+| [odysseus](#-odysseus) | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. | 🏠 | 🔴 | Quieres operación privada todo-en-uno y aceptas operar la infra. |
+| [open-notebook](#-open-notebook) | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. | 🏠 | 🟡 | Quieres NotebookLM privado y sin cuotas. |
+| [notebooklm-py](#-notebooklm-py) | API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código. | ☁️ | 🟢 | Automatizas el NotebookLM real y aceptas el riesgo de API no oficial. |
+| [notebooklm-mcp-cli](#-notebooklm-mcp-cli) | CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde terminal o desde clientes compatibles con MCP. | ☁️ | 🟢 | Integras NotebookLM con tu asistente MCP. |
 
 ### ⚖️ ¿Cuál elegir? — Local privado vs. NotebookLM
 
@@ -1654,21 +1654,21 @@ Diseño asistido, librerías de componentes, animación y 3D.
 
 | Repo | Qué es | Rol | Setup | Elige si… |
 |---|---|---|---|---|
-| [open-design](#-open-design) | Editor de diseño colaborativo asistido por IA | 🖥️ | 🟡 | Maquetas y animas UI desde texto con edición visual |
-| [penpot](#-penpot) | Diseño/prototipado colaborativo open-source | 🖥️ | 🔴 | Quieres alternativa abierta y self-host a Figma |
-| [plasmic](#-plasmic) | Builder visual conectado a tu propio código | 🖥️ | 🟡 | Construyes UI visual sobre tu codebase React/Next |
-| [design.md](#-designmd) | Spec de identidad visual para agentes de código | 🎨 | 🟢 | Das al agente un sistema de diseño persistente |
-| [impeccable](#-impeccable) | Guía de diseño anti-slop para agentes de código | 🎨 | 🟢 | Evitas los "tells" de UI generada por IA |
-| [tailwindcss](#-tailwindcss) | Framework CSS utility-first | 📚 | 🟢 | Estilas rápido y consistente con clases atómicas |
-| [magicui](#-magicui) | Componentes UI vistosos (animaciones, efectos) | 📚 | 🟢 | Quieres acabado visual impactante con poco esfuerzo |
-| [heroui](#-heroui) | Componentes React accesibles (React Aria + MCP) | 📚 | 🟢 | Montas SaaS/landing accesible y moderna |
-| [ui](#-ui-shadcn) | Componentes copy-paste (shadcn/ui) | 📚 | 🟢 | Quieres control total del código de UI |
-| [normalize.css](#-normalizecss) | Reset/normalización CSS cross-browser | 📚 | 🟢 | Igualas estilos base entre navegadores |
-| [GSAP](#-gsap) | Librería de animación web de alto rendimiento | 📚 | 🟡 | Necesitas timelines y animaciones avanzadas |
-| [motion](#-motion) | Animación declarativa para React (Framer Motion) | 📚 | 🟢 | Animas componentes React con poco código |
-| [three.js](#-threejs) | Motor 3D (WebGL) para la web | 📚 | 🟡 | Renderizas escenas 3D en el navegador |
-| [react-three-fiber](#-react-three-fiber) | Renderer de React para three.js | 📚 | 🟡 | Quieres 3D declarativo y reactivo en React |
-| [swr](#-swr) | Data fetching para React (stale-while-revalidate) | 📚 | 🟢 | Manejas datos remotos en frontend con caché |
+| [open-design](#-open-design) | Editor/workspace de diseño colaborativo asistido por IA que genera, maqueta y anima interfaces a partir de instrucciones en lenguaje natural; alternativa libre a Claude Design Artifacts. | 🖥️ | 🟡 | Generas UI desde texto y quieres edición visual. |
+| [penpot](#-penpot) | Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos. | 🖥️ | 🔴 | Quieres diseño abierto y soberano, self-host. |
+| [plasmic](#-plasmic) | Builder visual para apps y sitios conectado a tu propia base de código, que permite diseñar y publicar sin perder el control del código real. | 🖥️ | 🟡 | Quieres editar visual sobre tu código React. |
+| [design.md](#-designmd) | Especificación de formato para describir una identidad visual a agentes de código (tokens YAML + prosa), de modo que el agente herede un sistema de diseño coherente entre sesiones. | 🎨 | 🟢 | Quieres consistencia de marca con IA y usas agentes para UI. |
+| [impeccable](#-impeccable) | Guía de diseño para agentes de código (1 skill, 23 comandos, iteración en browser y 44 detectores de "tells" de UI por IA) que empuja al agente hacia frontends con criterio. | 🎨 | 🟢 | Quieres frontends que no parezcan generados por IA. |
+| [tailwindcss](#-tailwindcss) | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. | 📚 | 🟢 | Quieres estilar rápido y consistente. |
+| [magicui](#-magicui) | Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio. | 📚 | 🟢 | Priorizas estética y velocidad. |
+| [heroui](#-heroui) | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. | 📚 | 🟢 | Quieres calidad + accesibilidad listas. |
+| [ui](#-ui-shadcn) | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. | 📚 | 🟢 | Quieres control total del código de UI. |
+| [normalize.css](#-normalizecss) | Hoja de estilos que normaliza los defaults entre navegadores para partir de una base de rendering uniforme. | 📚 | 🟢 | Quieres base CSS uniforme y ligera. |
+| [GSAP](#-gsap) | Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. | 📚 | 🟡 | Necesitas animación avanzada y control fino de timelines. |
+| [motion](#-motion) | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. | 📚 | 🟢 | Animas componentes React con API declarativa. |
+| [three.js](#-threejs) | Motor 3D (WebGL) para renderizar gráficos y escenas interactivas directamente en el navegador. | 📚 | 🟡 | Renderizas 3D en web y quieres control a bajo nivel. |
+| [react-three-fiber](#-react-three-fiber) | Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. | 📚 | 🟡 | Haces 3D en React y quieres reactividad. |
+| [swr](#-swr) | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. | 📚 | 🟢 | Manejas datos remotos en React y quieres caché simple. |
 
 ### ⚖️ ¿Cuál elegir? — Diseño asistido vs. builder
 
@@ -1878,13 +1878,13 @@ Product analytics, dashboards y librerías de gráficos.
 
 | Repo | Qué es | Rol | Setup | Elige si… |
 |---|---|---|---|---|
-| [posthog](#-posthog) | Product analytics + session replay + feature flags | ⚙️ | 🔴 | Mides uso real, funnels y conversión |
-| [metabase](#-metabase) | BI/dashboards sobre tus bases de datos | ⚙️ | 🟡 | Quieres reporting sin SQL pesado |
-| [dash](#-dash) | Framework de apps analíticas en Python (Plotly) | 📚 | 🟡 | Montas dashboards productivos en Python |
-| [echarts](#-echarts) | Librería de gráficos web potente (Apache) | 📚 | 🟡 | Gráficos ricos embebidos en web |
-| [uPlot](#-uplot) | Gráficos de series temporales ultraligeros | 📚 | 🟢 | Necesitas charts rápidos y ligeros |
-| [streamlit](#-streamlit) | Apps de datos rápidas en Python | 📚 | 🟢 | Prototipas una UI de datos al vuelo |
-| [awesome-dataviz](#-awesome-dataviz) | Directorio curado de visualización | 📂 | 🟢 | Buscas y comparas herramientas de dataviz |
+| [posthog](#-posthog) | Plataforma de product analytics y eventos para entender el comportamiento de usuarios, con funnels, session replay y feature flags en una sola suite. | ⚙️ | 🔴 | Quieres entender el uso real y el comportamiento de usuarios. |
+| [metabase](#-metabase) | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir. | ⚙️ | 🟡 | Quieres BI accesible para perfiles no técnicos. |
+| [dash](#-dash) | Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con componentes de UI reactivos. | 📚 | 🟡 | Quieres dashboards productivos en Python con control del frontend. |
+| [echarts](#-echarts) | Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos. | 📚 | 🟡 | Necesitas gráficos ricos y variados embebidos. |
+| [uPlot](#-uplot) | Librería ultraligera para gráficos de series temporales capaz de pintar cientos de miles de puntos sin penalizar el rendimiento. | 📚 | 🟢 | Priorizas velocidad y peso del bundle. |
+| [streamlit](#-streamlit) | Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni. | 📚 | 🟢 | Quieres una UI de datos al vuelo y prototipos rápidos. |
+| [awesome-dataviz](#-awesome-dataviz) | Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad. | 📂 | 🟢 | Buscas opciones de visualización y aún no has elegido. |
 
 ### ⚖️ ¿Cuál elegir? — Plataforma vs. librería
 
@@ -1989,21 +1989,21 @@ Motores de difusión, control/condicionamiento, restauración y rostros.
 
 | Repo | Qué es | Ejec. | Setup | Elige si… |
 |---|---|---|---|---|
-| [ComfyUI](#-comfyui) | Pipelines visuales de difusión por nodos | 🏠 | 🔴 | Quieres control fino, modular y reproducible |
-| [stable-diffusion-webui](#-stable-diffusion-webui) | UI web clásica de Stable Diffusion (A1111) | 🏠 | 🔴 | Quieres el ecosistema y extensiones más grande |
-| [Fooocus](#-fooocus) | Generación de imagen SDXL sin fricción | 🏠 | 🟡 | Quieres resultados rápidos y simples sin tuning |
-| [InvokeAI](#-invokeai) | Suite profesional de Stable Diffusion | 🏠 | 🔴 | Buscas flujo creativo pulido y unificado |
-| [diffusers](#-diffusers) | Librería de pipelines de difusión (HF) | 🏠 | 🔴 | Programas generación desde Python |
-| [ControlNet](#-controlnet) | Control estructural de la generación | 🏠 | 🔴 | Guías composición con poses/bordes |
-| [sd-webui-controlnet](#-sd-webui-controlnet) | ControlNet como extensión de SD WebUI | 🏠 | 🔴 | Ya usas SD WebUI y quieres ControlNet |
-| [ComfyUI_IPAdapter_plus](#-comfyui_ipadapter_plus) | Condicionamiento imagen→imagen en ComfyUI | 🏠 | 🔴 | Mantienes identidad/estilo sin reentrenar |
-| [GFPGAN](#-gfpgan) | Restauración facial de rostros degradados | 🏠 | 🟡 | Recuperas caras borrosas o de baja resolución |
-| [Real-ESRGAN](#-real-esrgan) | Superresolución/upscaling de imágenes | 🏠 | 🟡 | Reescalas imágenes con calidad y detalle |
-| [LivePortrait](#-liveportrait) | Anima retratos estáticos | 🏠 | 🔴 | Conviertes una foto en avatar animado |
-| [Deep-Live-Cam](#-deep-live-cam) | Face swap en tiempo real (cámara) | 🏠 | 🔴 | Haces swaps en vivo (uso responsable) |
-| [face_recognition](#-face_recognition) | Reconocimiento facial (dlib) | 🏠 | 🟡 | Detectas/identificas rostros en imágenes |
-| [Open-Generative-AI](#-open-generative-ai) | Hub de +200 modelos imagen/video | 🔀 | 🟡 | Generas video/imagen desde terminal sin filtros |
-| [fluxer](#-fluxer) | Plataforma generativa (audio/video) | 🔀 | 🟡 | Exploras una plataforma generativa nueva |
+| [ComfyUI](#-comfyui) | Motor local modular para crear pipelines visuales de generación con IA mediante un grafo de nodos, donde cada paso (carga de modelo, sampling, postproceso) es un bloque conectable y reutilizable. | 🏠 | 🔴 | Quieres control total y pipelines reproducibles. |
+| [stable-diffusion-webui](#-stable-diffusion-webui) | Interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de extensiones desde el navegador. | 🏠 | 🔴 | Quieres extensiones y comunidad amplia. |
+| [Fooocus](#-fooocus) | Herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros técnicos tras presets inteligentes. | 🏠 | 🟡 | Quieres resultados ya, sin curva. |
+| [InvokeAI](#-invokeai) | Suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpainting, gestión de modelos y workflows encadenables. | 🏠 | 🔴 | Trabajas creatividad profesional y quieres una app estable con canvas. |
+| [diffusers](#-diffusers) | Librería de Hugging Face para construir y ejecutar pipelines de modelos de difusión (imagen, video, audio) desde código, con APIs estandarizadas para schedulers, componentes y modelos. | 🏠 | 🔴 | Programas generación y quieres control total por código. |
+| [ControlNet](#-controlnet) | Método y familia de modelos que condicionan la generación text-to-image con señales externas (poses, bordes Canny, profundidad, mapas de segmentación), fijando la estructura del resultado. | 🏠 | 🔴 | Necesitas control estructural fino de la composición. |
+| [sd-webui-controlnet](#-sd-webui-controlnet) | Extensión que integra ControlNet en Stable Diffusion WebUI (AUTOMATIC1111), con preprocesadores para poses, bordes, profundidad y más. | 🏠 | 🔴 | Ya usas SD WebUI y quieres ControlNet sin cambiar de entorno. |
+| [ComfyUI_IPAdapter_plus](#-comfyui_ipadapter_plus) | Conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una o varias imágenes de referencia para transferir estilo o identidad. | 🏠 | 🔴 | Trabajas en ComfyUI y necesitas consistencia visual por referencia. |
+| [GFPGAN](#-gfpgan) | Algoritmo de restauración facial de Tencent ARC que reconstruye rostros degradados o de baja calidad usando priors generativos (GAN) preentrenados. | 🏠 | 🟡 | Restauras rostros borrosos o fundidos. |
+| [Real-ESRGAN](#-real-esrgan) | Herramienta de superresolución y restauración para imágenes reales que reescala (2×/4×) y limpia material de baja calidad sin rehacerlo desde cero. | 🏠 | 🟡 | Reescalas imágenes o video a más resolución. |
+| [LivePortrait](#-liveportrait) | Sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen (humanos, pero también mascotas). | 🏠 | 🔴 | Animas retratos a partir de una foto. |
+| [Deep-Live-Cam](#-deep-live-cam) | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. | 🏠 | 🔴 | Necesitas swap en vivo legítimo con consentimiento. |
+| [face_recognition](#-face_recognition) | Librería de Python con API de alto nivel para detección y reconocimiento facial: localizar caras, compararlas e identificarlas por similitud. | 🏠 | 🟡 | Necesitas reconocimiento facial básico y rápido de implementar. |
+| [Open-Generative-AI](#-open-generative-ai) | Plataforma alternativa libre a servicios premium de video/imagen que agrupa más de 200 modelos generativos accesibles desde terminal o integrados con agentes. | 🔀 | 🟡 | Quieres un hub de generación multi-modal sin atarte a un SaaS. |
+| [fluxer](#-fluxer) | Plataforma generativa emergente con foco en audio y video mejorados, ofrecida como cliente Canary web/desktop; su API y self-host aún están en finalización. | 🔀 | 🟡 | Quieres probar algo nuevo y seguir su evolución. |
 
 ### ⚖️ ¿Cuál elegir? — Motor de generación de imagen
 
@@ -2226,21 +2226,21 @@ Transcripción (STT), síntesis de voz (TTS) y edición/render de video.
 
 | Repo | Qué es | Tipo | Elige si… | Setup |
 |---|---|---|---|---|
-| [whisper](#-whisper) | STT estándar multilingüe de OpenAI | STT | Quieres la referencia de transcripción robusta | 🟡 |
-| [faster-whisper](#-faster-whisper) | Whisper reescrito sobre CTranslate2 | STT | Te importa velocidad y memoria | 🟡 |
-| [whisperX](#-whisperx) | Whisper + alineación de palabra y diarización | STT | Necesitas subtítulos con timings finos y speakers | 🟡 |
-| [supertonic](#-supertonic) | TTS ultrarrápido on-device (ONNX/WebGPU) | TTS | Quieres voz local de baja latencia | 🟡 |
-| [VoxCPM](#-voxcpm) | TTS de alta fidelidad sin tokenizador | TTS | Buscas voz muy fluida o clonación | 🔴 |
-| [TTS](#-tts) | Toolkit TTS multilingüe (Coqui/XTTS) | TTS | Quieres flexibilidad y clonación | 🟡 |
-| [OmniVoice-Studio](#-omnivoice-studio) | Suite de voz/dubbing local (646 idiomas) | TTS/STT | Dictado, clonación y doblaje en local | 🟡 |
-| [lossless-cut](#-lossless-cut) | Corte de video sin recomprimir (ffmpeg) | Video | Cortas clips rápido sin perder calidad | 🟢 |
-| [moviepy](#-moviepy) | Edición de video programática en Python | Video | Ensamblas video desde scripts | 🟢 |
-| [remotion](#-remotion) | Video por código con React | Video | Generas variantes de video a escala | 🟡 |
-| [videofy_minimal](#-videofy_minimal) | Texto → video corto local | Video | Conviertes contenido en reels simple | 🟢 |
-| [OpenCut](#-opencut) | Editor de video open-source tipo CapCut | Video | Quieres un editor libre con UI moderna | 🟡 |
-| [openscreen](#-openscreen) | Grabación de pantalla en navegador | Video | Grabas screencasts (archivado) | 🟢 |
-| [Youtube2Webpage](#-youtube2webpage) | Video de YouTube → página legible | Video | Conviertes una charla en artículo | 🟢 |
-| [hyperframes](#-hyperframes) | Framework de animación por frames (Node) | Video | Generas animaciones programáticas | 🟡 |
+| [whisper](#-whisper) | Modelo de reconocimiento de voz y traducción de audio multilingüe de OpenAI, estándar de la industria que transcribe casi cualquier idioma con un solo modelo. | STT | Quieres la referencia robusta y no te obsesiona la latencia. | 🟡 |
+| [faster-whisper](#-faster-whisper) | Reimplementación de Whisper sobre CTranslate2 que transcribe mucho más rápido y con menor consumo de memoria, manteniendo la misma precisión. | STT | El rendimiento, la memoria o el coste de GPU importan. | 🟡 |
+| [whisperX](#-whisperx) | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. | STT | Necesitas subtítulos precisos o diarización. | 🟡 |
+| [supertonic](#-supertonic) | Motor TTS multilingüe ultrarrápido de Supertone que sintetiza voz directamente en el dispositivo, incluso en el navegador vía WebGPU. | TTS | Quieres voz local en tiempo real y sin nube. | 🟡 |
+| [VoxCPM](#-voxcpm) | Sistema TTS de alta fidelidad de OpenBMB que prescinde del tokenizador tradicional para lograr una prosodia y fluidez muy naturales, con clonación de voz a partir de pocos segundos de audio. | TTS | Quieres voz muy natural o clonada y tienes GPU. | 🔴 |
+| [TTS](#-tts) | Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz. | TTS | Quieres flexibilidad y varios modelos en una librería. | 🟡 |
+| [OmniVoice-Studio](#-omnivoice-studio) | Suite de voz de escritorio open-source planteada como alternativa a ElevenLabs, con dictado en tiempo real, clonación zero-shot y doblaje de video en hasta 646 idiomas, todo local. | TTS/STT | Quieres suite de voz completa local (dictado + clonación + dubbing). | 🟡 |
+| [lossless-cut](#-lossless-cut) | Aplicación de escritorio para recortar, fusionar y reorganizar video/audio sin recodificar, conservando la calidad original. | Video | Cortas material rápido y sin recomprimir. | 🟢 |
+| [moviepy](#-moviepy) | Librería Python para edición de video programática: cortar, concatenar, superponer texto, subtítulos y audio, y exportar el resultado. | Video | Ensamblas video por código en Python. | 🟢 |
+| [remotion](#-remotion) | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. | Video | Generas video a escala con React y quieres variantes parametrizadas. | 🟡 |
+| [videofy_minimal](#-videofy_minimal) | Herramienta minimalista (de Schibsted) que convierte contenido textual en videos cortos de forma local, sin pipeline complejo. | Video | Quieres reels simples ya, sin montar un pipeline entero. | 🟢 |
+| [OpenCut](#-opencut) | Editor de video open-source con UI moderna, planteado como alternativa libre tipo CapCut, usable en web o escritorio. | Video | Quieres un editor libre con UI moderna, sin CapCut. | 🟡 |
+| [openscreen](#-openscreen) | Herramienta ligera de grabación de pantalla para screencasts y demos, basada en las APIs de captura del navegador. | Video | Necesitas screencast simple desde el navegador. | 🟢 |
+| [Youtube2Webpage](#-youtube2webpage) | Script en Perl que genera una página web legible a partir de un video de YouTube, intercalando la transcripción de subtítulos con capturas de pantalla del momento citado. | Video | Quieres video → artículo con transcripción y capturas. | 🟢 |
+| [hyperframes](#-hyperframes) | Framework npm para generar animaciones frame a frame de forma programática desde código. | Video | Generas animación por frames con control por código. | 🟡 |
 
 ### ⚖️ ¿Cuál elegir? — Transcripción (STT)
 
@@ -2455,10 +2455,10 @@ Conversión de formatos, generación de slides y herramientas de PDF.
 
 | Repo | Qué es | Rol | Elige si… | Setup |
 |---|---|---|---|---|
-| [markitdown](#-markitdown) | Cualquier formato → Markdown para LLM | 📚 | Ingestas PDF/Word/Excel para IA | 🟢 |
-| [ppt-master](#-ppt-master) | Texto → PowerPoint editable | 🧩 | Generas presentaciones PPTX rápido | 🟢 |
-| [pdfcraft](#-pdfcraft) | Herramientas PDF en el navegador | 🖥️ | Editas/manipulas PDF privado y local | 🟢 |
-| [reveal.js](#-revealjs) | Slides en HTML | 📚 | Quieres presentaciones web por código | 🟢 |
+| [markitdown](#-markitdown) | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. | 📚 | Alimentas LLMs con documentos de formatos variados. | 🟢 |
+| [ppt-master](#-ppt-master) | Generador que transforma documentos de texto en presentaciones PowerPoint (.pptx) editables nativas, listas para abrir y ajustar en Office. | 🧩 | Quieres PPTX editable de Office rápido. | 🟢 |
+| [pdfcraft](#-pdfcraft) | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. | 🖥️ | Manipulas PDFs con privacidad y sin instalar nada. | 🟢 |
+| [reveal.js](#-revealjs) | Framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados. | 📚 | Quieres slides web por código, versionables. | 🟢 |
 
 ### 📝 markitdown
 **Etiquetas:** Ejecución 🏠 local-first · Rol 📚 librería/SDK · Setup 🟢 fácil

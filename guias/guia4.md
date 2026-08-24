@@ -9,11 +9,11 @@ Entornos privados todo-en-uno y herramientas tipo NotebookLM.
 
 | Repo | Qué es | Ejec. | Setup | Elige si… |
 |---|---|---|---|---|
-| [ECC](#-ecc) | Arnés/OS para agentes con escudo de seguridad | 🏠 | 🔴 | Das a agentes acceso real a tu máquina y necesitas validación |
-| [odysseus](#-odysseus) | Workspace privado todo-en-uno (chat, docs, correo) | 🏠 | 🔴 | Quieres un "Copilot" local soberano y auto-hospedado |
-| [open-notebook](#-open-notebook) | NotebookLM open-source y 100% local | 🏠 | 🟡 | Procesas fuentes y generas audios sin enviar datos a la nube |
-| [notebooklm-py](#-notebooklm-py) | API Python no oficial para NotebookLM | ☁️ | 🟢 | Automatizas el NotebookLM real desde scripts |
-| [notebooklm-mcp-cli](#-notebooklm-mcp-cli) | CLI + servidor MCP para NotebookLM | ☁️ | 🟢 | Integras NotebookLM con clientes MCP (Claude, etc.) |
+| [ECC](#-ecc) | Sistema operativo/arnés unificado para desarrollar, ejecutar y desplegar en local agentes de IA de alto rendimiento de forma segura. | 🏠 | 🔴 | Ejecutas agentes con acceso real a tu máquina y necesitas contención. |
+| [odysseus](#-odysseus) | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. | 🏠 | 🔴 | Quieres operación privada todo-en-uno y aceptas operar la infra. |
+| [open-notebook](#-open-notebook) | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. | 🏠 | 🟡 | Quieres NotebookLM privado y sin cuotas. |
+| [notebooklm-py](#-notebooklm-py) | API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código. | ☁️ | 🟢 | Automatizas el NotebookLM real y aceptas el riesgo de API no oficial. |
+| [notebooklm-mcp-cli](#-notebooklm-mcp-cli) | CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde terminal o desde clientes compatibles con MCP. | ☁️ | 🟢 | Integras NotebookLM con tu asistente MCP. |
 
 ### ⚖️ ¿Cuál elegir? — Local privado vs. NotebookLM
 
@@ -95,21 +95,21 @@ Diseño asistido, librerías de componentes, animación y 3D.
 
 | Repo | Qué es | Rol | Setup | Elige si… |
 |---|---|---|---|---|
-| [open-design](#-open-design) | Editor de diseño colaborativo asistido por IA | 🖥️ | 🟡 | Maquetas y animas UI desde texto con edición visual |
-| [penpot](#-penpot) | Diseño/prototipado colaborativo open-source | 🖥️ | 🔴 | Quieres alternativa abierta y self-host a Figma |
-| [plasmic](#-plasmic) | Builder visual conectado a tu propio código | 🖥️ | 🟡 | Construyes UI visual sobre tu codebase React/Next |
-| [design.md](#-designmd) | Spec de identidad visual para agentes de código | 🎨 | 🟢 | Das al agente un sistema de diseño persistente |
-| [impeccable](#-impeccable) | Guía de diseño anti-slop para agentes de código | 🎨 | 🟢 | Evitas los "tells" de UI generada por IA |
-| [tailwindcss](#-tailwindcss) | Framework CSS utility-first | 📚 | 🟢 | Estilas rápido y consistente con clases atómicas |
-| [magicui](#-magicui) | Componentes UI vistosos (animaciones, efectos) | 📚 | 🟢 | Quieres acabado visual impactante con poco esfuerzo |
-| [heroui](#-heroui) | Componentes React accesibles (React Aria + MCP) | 📚 | 🟢 | Montas SaaS/landing accesible y moderna |
-| [ui](#-ui-shadcn) | Componentes copy-paste (shadcn/ui) | 📚 | 🟢 | Quieres control total del código de UI |
-| [normalize.css](#-normalizecss) | Reset/normalización CSS cross-browser | 📚 | 🟢 | Igualas estilos base entre navegadores |
-| [GSAP](#-gsap) | Librería de animación web de alto rendimiento | 📚 | 🟡 | Necesitas timelines y animaciones avanzadas |
-| [motion](#-motion) | Animación declarativa para React (Framer Motion) | 📚 | 🟢 | Animas componentes React con poco código |
-| [three.js](#-threejs) | Motor 3D (WebGL) para la web | 📚 | 🟡 | Renderizas escenas 3D en el navegador |
-| [react-three-fiber](#-react-three-fiber) | Renderer de React para three.js | 📚 | 🟡 | Quieres 3D declarativo y reactivo en React |
-| [swr](#-swr) | Data fetching para React (stale-while-revalidate) | 📚 | 🟢 | Manejas datos remotos en frontend con caché |
+| [open-design](#-open-design) | Editor/workspace de diseño colaborativo asistido por IA que genera, maqueta y anima interfaces a partir de instrucciones en lenguaje natural; alternativa libre a Claude Design Artifacts. | 🖥️ | 🟡 | Generas UI desde texto y quieres edición visual. |
+| [penpot](#-penpot) | Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos. | 🖥️ | 🔴 | Quieres diseño abierto y soberano, self-host. |
+| [plasmic](#-plasmic) | Builder visual para apps y sitios conectado a tu propia base de código, que permite diseñar y publicar sin perder el control del código real. | 🖥️ | 🟡 | Quieres editar visual sobre tu código React. |
+| [design.md](#-designmd) | Especificación de formato para describir una identidad visual a agentes de código (tokens YAML + prosa), de modo que el agente herede un sistema de diseño coherente entre sesiones. | 🎨 | 🟢 | Quieres consistencia de marca con IA y usas agentes para UI. |
+| [impeccable](#-impeccable) | Guía de diseño para agentes de código (1 skill, 23 comandos, iteración en browser y 44 detectores de "tells" de UI por IA) que empuja al agente hacia frontends con criterio. | 🎨 | 🟢 | Quieres frontends que no parezcan generados por IA. |
+| [tailwindcss](#-tailwindcss) | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. | 📚 | 🟢 | Quieres estilar rápido y consistente. |
+| [magicui](#-magicui) | Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio. | 📚 | 🟢 | Priorizas estética y velocidad. |
+| [heroui](#-heroui) | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. | 📚 | 🟢 | Quieres calidad + accesibilidad listas. |
+| [ui](#-ui-shadcn) | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. | 📚 | 🟢 | Quieres control total del código de UI. |
+| [normalize.css](#-normalizecss) | Hoja de estilos que normaliza los defaults entre navegadores para partir de una base de rendering uniforme. | 📚 | 🟢 | Quieres base CSS uniforme y ligera. |
+| [GSAP](#-gsap) | Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. | 📚 | 🟡 | Necesitas animación avanzada y control fino de timelines. |
+| [motion](#-motion) | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. | 📚 | 🟢 | Animas componentes React con API declarativa. |
+| [three.js](#-threejs) | Motor 3D (WebGL) para renderizar gráficos y escenas interactivas directamente en el navegador. | 📚 | 🟡 | Renderizas 3D en web y quieres control a bajo nivel. |
+| [react-three-fiber](#-react-three-fiber) | Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. | 📚 | 🟡 | Haces 3D en React y quieres reactividad. |
+| [swr](#-swr) | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. | 📚 | 🟢 | Manejas datos remotos en React y quieres caché simple. |
 
 ### ⚖️ ¿Cuál elegir? — Diseño asistido vs. builder
 
@@ -319,13 +319,13 @@ Product analytics, dashboards y librerías de gráficos.
 
 | Repo | Qué es | Rol | Setup | Elige si… |
 |---|---|---|---|---|
-| [posthog](#-posthog) | Product analytics + session replay + feature flags | ⚙️ | 🔴 | Mides uso real, funnels y conversión |
-| [metabase](#-metabase) | BI/dashboards sobre tus bases de datos | ⚙️ | 🟡 | Quieres reporting sin SQL pesado |
-| [dash](#-dash) | Framework de apps analíticas en Python (Plotly) | 📚 | 🟡 | Montas dashboards productivos en Python |
-| [echarts](#-echarts) | Librería de gráficos web potente (Apache) | 📚 | 🟡 | Gráficos ricos embebidos en web |
-| [uPlot](#-uplot) | Gráficos de series temporales ultraligeros | 📚 | 🟢 | Necesitas charts rápidos y ligeros |
-| [streamlit](#-streamlit) | Apps de datos rápidas en Python | 📚 | 🟢 | Prototipas una UI de datos al vuelo |
-| [awesome-dataviz](#-awesome-dataviz) | Directorio curado de visualización | 📂 | 🟢 | Buscas y comparas herramientas de dataviz |
+| [posthog](#-posthog) | Plataforma de product analytics y eventos para entender el comportamiento de usuarios, con funnels, session replay y feature flags en una sola suite. | ⚙️ | 🔴 | Quieres entender el uso real y el comportamiento de usuarios. |
+| [metabase](#-metabase) | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir. | ⚙️ | 🟡 | Quieres BI accesible para perfiles no técnicos. |
+| [dash](#-dash) | Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con componentes de UI reactivos. | 📚 | 🟡 | Quieres dashboards productivos en Python con control del frontend. |
+| [echarts](#-echarts) | Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos. | 📚 | 🟡 | Necesitas gráficos ricos y variados embebidos. |
+| [uPlot](#-uplot) | Librería ultraligera para gráficos de series temporales capaz de pintar cientos de miles de puntos sin penalizar el rendimiento. | 📚 | 🟢 | Priorizas velocidad y peso del bundle. |
+| [streamlit](#-streamlit) | Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni. | 📚 | 🟢 | Quieres una UI de datos al vuelo y prototipos rápidos. |
+| [awesome-dataviz](#-awesome-dataviz) | Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad. | 📂 | 🟢 | Buscas opciones de visualización y aún no has elegido. |
 
 ### ⚖️ ¿Cuál elegir? — Plataforma vs. librería
 
@@ -430,21 +430,21 @@ Motores de difusión, control/condicionamiento, restauración y rostros.
 
 | Repo | Qué es | Ejec. | Setup | Elige si… |
 |---|---|---|---|---|
-| [ComfyUI](#-comfyui) | Pipelines visuales de difusión por nodos | 🏠 | 🔴 | Quieres control fino, modular y reproducible |
-| [stable-diffusion-webui](#-stable-diffusion-webui) | UI web clásica de Stable Diffusion (A1111) | 🏠 | 🔴 | Quieres el ecosistema y extensiones más grande |
-| [Fooocus](#-fooocus) | Generación de imagen SDXL sin fricción | 🏠 | 🟡 | Quieres resultados rápidos y simples sin tuning |
-| [InvokeAI](#-invokeai) | Suite profesional de Stable Diffusion | 🏠 | 🔴 | Buscas flujo creativo pulido y unificado |
-| [diffusers](#-diffusers) | Librería de pipelines de difusión (HF) | 🏠 | 🔴 | Programas generación desde Python |
-| [ControlNet](#-controlnet) | Control estructural de la generación | 🏠 | 🔴 | Guías composición con poses/bordes |
-| [sd-webui-controlnet](#-sd-webui-controlnet) | ControlNet como extensión de SD WebUI | 🏠 | 🔴 | Ya usas SD WebUI y quieres ControlNet |
-| [ComfyUI_IPAdapter_plus](#-comfyui_ipadapter_plus) | Condicionamiento imagen→imagen en ComfyUI | 🏠 | 🔴 | Mantienes identidad/estilo sin reentrenar |
-| [GFPGAN](#-gfpgan) | Restauración facial de rostros degradados | 🏠 | 🟡 | Recuperas caras borrosas o de baja resolución |
-| [Real-ESRGAN](#-real-esrgan) | Superresolución/upscaling de imágenes | 🏠 | 🟡 | Reescalas imágenes con calidad y detalle |
-| [LivePortrait](#-liveportrait) | Anima retratos estáticos | 🏠 | 🔴 | Conviertes una foto en avatar animado |
-| [Deep-Live-Cam](#-deep-live-cam) | Face swap en tiempo real (cámara) | 🏠 | 🔴 | Haces swaps en vivo (uso responsable) |
-| [face_recognition](#-face_recognition) | Reconocimiento facial (dlib) | 🏠 | 🟡 | Detectas/identificas rostros en imágenes |
-| [Open-Generative-AI](#-open-generative-ai) | Hub de +200 modelos imagen/video | 🔀 | 🟡 | Generas video/imagen desde terminal sin filtros |
-| [fluxer](#-fluxer) | Plataforma generativa (audio/video) | 🔀 | 🟡 | Exploras una plataforma generativa nueva |
+| [ComfyUI](#-comfyui) | Motor local modular para crear pipelines visuales de generación con IA mediante un grafo de nodos, donde cada paso (carga de modelo, sampling, postproceso) es un bloque conectable y reutilizable. | 🏠 | 🔴 | Quieres control total y pipelines reproducibles. |
+| [stable-diffusion-webui](#-stable-diffusion-webui) | Interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de extensiones desde el navegador. | 🏠 | 🔴 | Quieres extensiones y comunidad amplia. |
+| [Fooocus](#-fooocus) | Herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros técnicos tras presets inteligentes. | 🏠 | 🟡 | Quieres resultados ya, sin curva. |
+| [InvokeAI](#-invokeai) | Suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpainting, gestión de modelos y workflows encadenables. | 🏠 | 🔴 | Trabajas creatividad profesional y quieres una app estable con canvas. |
+| [diffusers](#-diffusers) | Librería de Hugging Face para construir y ejecutar pipelines de modelos de difusión (imagen, video, audio) desde código, con APIs estandarizadas para schedulers, componentes y modelos. | 🏠 | 🔴 | Programas generación y quieres control total por código. |
+| [ControlNet](#-controlnet) | Método y familia de modelos que condicionan la generación text-to-image con señales externas (poses, bordes Canny, profundidad, mapas de segmentación), fijando la estructura del resultado. | 🏠 | 🔴 | Necesitas control estructural fino de la composición. |
+| [sd-webui-controlnet](#-sd-webui-controlnet) | Extensión que integra ControlNet en Stable Diffusion WebUI (AUTOMATIC1111), con preprocesadores para poses, bordes, profundidad y más. | 🏠 | 🔴 | Ya usas SD WebUI y quieres ControlNet sin cambiar de entorno. |
+| [ComfyUI_IPAdapter_plus](#-comfyui_ipadapter_plus) | Conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una o varias imágenes de referencia para transferir estilo o identidad. | 🏠 | 🔴 | Trabajas en ComfyUI y necesitas consistencia visual por referencia. |
+| [GFPGAN](#-gfpgan) | Algoritmo de restauración facial de Tencent ARC que reconstruye rostros degradados o de baja calidad usando priors generativos (GAN) preentrenados. | 🏠 | 🟡 | Restauras rostros borrosos o fundidos. |
+| [Real-ESRGAN](#-real-esrgan) | Herramienta de superresolución y restauración para imágenes reales que reescala (2×/4×) y limpia material de baja calidad sin rehacerlo desde cero. | 🏠 | 🟡 | Reescalas imágenes o video a más resolución. |
+| [LivePortrait](#-liveportrait) | Sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen (humanos, pero también mascotas). | 🏠 | 🔴 | Animas retratos a partir de una foto. |
+| [Deep-Live-Cam](#-deep-live-cam) | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. | 🏠 | 🔴 | Necesitas swap en vivo legítimo con consentimiento. |
+| [face_recognition](#-face_recognition) | Librería de Python con API de alto nivel para detección y reconocimiento facial: localizar caras, compararlas e identificarlas por similitud. | 🏠 | 🟡 | Necesitas reconocimiento facial básico y rápido de implementar. |
+| [Open-Generative-AI](#-open-generative-ai) | Plataforma alternativa libre a servicios premium de video/imagen que agrupa más de 200 modelos generativos accesibles desde terminal o integrados con agentes. | 🔀 | 🟡 | Quieres un hub de generación multi-modal sin atarte a un SaaS. |
+| [fluxer](#-fluxer) | Plataforma generativa emergente con foco en audio y video mejorados, ofrecida como cliente Canary web/desktop; su API y self-host aún están en finalización. | 🔀 | 🟡 | Quieres probar algo nuevo y seguir su evolución. |
 
 ### ⚖️ ¿Cuál elegir? — Motor de generación de imagen
 

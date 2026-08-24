@@ -81,25 +81,25 @@ Plataformas para construir sistemas multiagente, research autónomo y flujos low
 
 | Repo | Qué es | Ejec. | Setup | Elige si… |
 |---|---|---|---|---|
-| [ag2](#-ag2) | Framework multiagente maduro (heredero de AutoGen) | ☁️ | 🟡 | Construyes sistemas multiagente en prod |
-| [crewAI](#-crewai) | Equipos de agentes con roles y tareas | ☁️ | 🟢 | Quieres avanzar rápido con "crews" |
-| [langchain](#-langchain) | Framework base de apps LLM (Python/JS) | ☁️ | 🟡 | Necesitas el estándar de orquestación |
-| [langflow](#-langflow) | Constructor visual de flujos LLM sobre LangChain | 🔀 | 🟡 | Prefieres iterar componentes en visual |
-| [dify](#-dify) | Plataforma integral de apps IA (backend+UI) | 🔀 | 🟡 | Quieres backend+UI listos para apps |
-| [Flowise](#-flowise) | Builder visual drag-and-drop de pipelines LLM | 🔀 | 🟢 | Prototipas pipelines sin código |
-| [OpenHands](#-openhands) | Agentes que ejecutan en entornos dev sandbox | 🔀 | 🟡 | Quieres un agente que programe/ejecute |
-| [deer-flow](#-deer-flow) | Super-agente con sub-agentes y sandbox (ByteDance) | 🔀 | 🟡 | Buscas orquestación potente extensible |
-| [NeMo-Agent-Toolkit](#-nemo-agent-toolkit) | Toolkit de agentes de NVIDIA (NIM) | 🔀 | 🔴 | Estás en stack NVIDIA/empresa |
-| [hermes-agent](#-hermes-agent) | Entorno desktop/CLI de agentes locales (Nous) | 🏠 | 🟡 | Ejecutas agentes locales con razonamiento |
-| [openevolve](#-openevolve) | Agente de código evolutivo (estilo AlphaEvolve) | ☁️ | 🔴 | Optimizas algoritmos por evolución |
-| [gpt-researcher](#-gpt-researcher) | Agente de research autónomo con citas | 🔀 | 🟡 | Necesitas reportes citados profundos |
-| [autoresearch](#-autoresearch) | Research iterativo experimental (Karpathy) | 🔀 | 🟡 | Exploras automatización de investigación |
-| [deer-flow](#-deer-flow) | (ver arriba) | 🔀 | 🟡 | — |
-| [ruflo](#-ruflo) | Swarm multiagente (Rust) para Claude/Codex | 🔀 | 🔴 | Coordinas 100+ agentes con memoria |
-| [multica](#-multica) | Plataforma humanos+agentes lado a lado | 🔀 | 🟡 | Mezclas equipo humano y agentes |
-| [MiroFish](#-mirofish) | Motor de predicción multiagente (simulación) | 🔀 | 🔴 | Simulas escenarios/futuros con agentes |
-| [llm-council](#-llm-council) | "Consejo" de varios LLMs deliberando | 🔀 | 🟡 | Quieres respuestas por consenso multi-modelo |
-| [awesome-LangGraph](#-awesome-langgraph) | Recursos curados del ecosistema LangGraph | 📂 | 🟢 | Construyes grafos cíclicos de agentes |
+| [ag2](#-ag2) | Framework maduro para sistemas multiagente con patrones de colaboración (heredero directo de AutoGen). | ☁️ | 🟡 | Construyes multiagente serio en Python. |
+| [crewAI](#-crewai) | Framework para orquestar "crews" de agentes con roles y tareas. | ☁️ | 🟢 | Quieres velocidad y un modelo mental simple de "equipo". |
+| [langchain](#-langchain) | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). | ☁️ | 🟡 | Quieres la base estándar con máximas integraciones. |
+| [langflow](#-langflow) | Constructor visual de flujos LLM/agentes construido sobre LangChain. | 🔀 | 🟡 | Prefieres construir en visual sobre LangChain. |
+| [dify](#-dify) | Plataforma integral para construir apps de IA con backend y UI listos. | 🔀 | 🟡 | Quieres una app IA completa autoalojada. |
+| [Flowise](#-flowise) | Builder visual drag-and-drop para pipelines LLM. Permite montar chatflows y agentes conectando nodos y exponerlos como API o widget embebible. | 🔀 | 🟢 | Quieres un prototipo visual ya, en stack JS. |
+| [OpenHands](#-openhands) | Plataforma de agentes que ejecutan acciones reales en entornos de desarrollo (ex-OpenDevin). | 🔀 | 🟡 | Quieres un agente que "haga", no solo hable. |
+| [deer-flow](#-deer-flow) | Super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles. | 🔀 | 🟡 | Quieres un orquestador completo y extensible. |
+| [NeMo-Agent-Toolkit](#-nemo-agent-toolkit) | Toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo). | 🔀 | 🔴 | Trabajas con infra NVIDIA o necesitas guardrails/eval empresarial. |
+| [hermes-agent](#-hermes-agent) | Entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. | 🏠 | 🟡 | Quieres agentes locales con UI y memoria persistente. |
+| [openevolve](#-openevolve) | Agente de codificación evolutivo que optimiza algoritmos por simulación genética. | ☁️ | 🔴 | Optimizas problemas algorítmicos donde cabe explorar muchas variantes. |
+| [gpt-researcher](#-gpt-researcher) | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. | 🔀 | 🟡 | Necesitas research profundo citado. |
+| [autoresearch](#-autoresearch) | Enfoque experimental para automatizar investigación iterativa mediante bucles de búsqueda y refinamiento. | 🔀 | 🟡 | Experimentas con research iterativo o quieres un punto de partida. |
+| [deer-flow](#-deer-flow) | Super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles. | 🔀 | 🟡 | Quieres un orquestador completo y extensible. |
+| [ruflo](#-ruflo) | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). | 🔀 | 🔴 | Orquestas muchos agentes a escala y quieres rendimiento. |
+| [multica](#-multica) | Plataforma para que humanos y agentes trabajen lado a lado ("tus próximas 10 contrataciones no serán humanas"). | 🔀 | 🟡 | Mezclas trabajo humano y agentes en un mismo flujo. |
+| [MiroFish](#-mirofish) | Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios. | 🔀 | 🔴 | Simulas futuros/escenarios con muchos actores. |
+| [llm-council](#-llm-council) | "consejo" donde varios LLMs deliberan y se evalúan entre sí para responder. | 🔀 | 🟡 | Quieres consenso entre modelos o comparar proveedores. |
+| [awesome-LangGraph](#-awesome-langgraph) | Repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain. | 📂 | 🟢 | Construyes con LangGraph y quieres patrones de referencia. |
 
 ### ⚖️ ¿Cuál elegir? — Frameworks de agentes
 
@@ -352,20 +352,20 @@ Crawling, extracción estructurada y navegación web con LLMs.
 
 | Repo | Qué es | Lenguaje | Setup | Elige si… |
 |---|---|---|---|---|
-| [firecrawl](#-firecrawl) | API search+scrape para agentes (Markdown/JSON) | TS/API | 🟡 | Quieres web → Markdown/JSON listo para LLM |
-| [crawl4ai](#-crawl4ai) | Crawling a gran escala orientado a IA | Python | 🟡 | Recolectas grandes volúmenes barato |
-| [scrapy](#-scrapy) | Framework clásico y maduro de scraping | Python | 🟡 | Necesitas un crawler maduro y robusto |
-| [crawlee](#-crawlee) | Framework de crawling moderno con antibloqueo | Node.js | 🟡 | Scrapeas con Node y antibloqueo |
-| [crawlee-python](#-crawlee-python) | Crawlee llevado a Python | Python | 🟡 | Quieres Crawlee pero en Python |
-| [Scrapling](#-scrapling) | Scraping adaptativo anti-bloqueo | Python | 🟡 | Las páginas cambian o te bloquean |
-| [scrapely](#-scrapely) | Extracción por ejemplos (sin reglas) | Python | 🟢 | Extraes por plantilla aprendida |
-| [llm-scraper](#-llm-scraper) | Web → datos estructurados con LLM + Zod | TS | 🟢 | Defines un esquema y el LLM lo llena |
-| [Scrapegraph-ai](#-scrapegraph-ai) | Scraping por grafos + LLM ("by prompt") | Python | 🟡 | Combinas extracción y estructura semántica |
-| [playwright](#-playwright) | Automatización/testing de navegador | TS/Python | 🟡 | Necesitas control preciso del browser |
-| [playwright-cli](#-playwright-cli) | Playwright como CLI + skills | TS | 🟢 | Tu agente automatiza web vía CLI |
-| [browser-use](#-browser-use) | Navegación web por visión para LLM | Python | 🟡 | El agente "ve" la pantalla y actúa |
-| [instaloader](#-instaloader) | Descarga de datos de Instagram | Python | 🟢 | Extraes contenido/metadata de IG |
-| [snscrape](#-snscrape) | Scraper de redes sociales | Python | 🟢 | Recolectas posts sin API oficial |
+| [firecrawl](#-firecrawl) | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. | TS/API | 🟡 | Alimentas agentes/RAG con web y quieres salida limpia. |
+| [crawl4ai](#-crawl4ai) | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para. | Python | 🟡 | Necesitas volumen barato y self-host. |
+| [scrapy](#-scrapy) | Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. | Python | 🟡 | Quieres un crawler sólido y configurable a escala. |
+| [crawlee](#-crawlee) | Framework moderno de crawling para Node.js con antibloqueo integrado, que unifica scraping de HTTP y de navegador bajo una misma API con colas y reintentos. | Node.js | 🟡 | Scrapeas con Node y necesitas antibloqueo. |
+| [crawlee-python](#-crawlee-python) | Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. | Python | 🟡 | Quieres Crawlee en Python con antibloqueo. |
+| [Scrapling](#-scrapling) | Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica los elementos cuando el HTML cambia. | Python | 🟡 | Los sitios cambian o te bloquean a menudo. |
+| [scrapely](#-scrapely) | Librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales. | Python | 🟢 | Prefieres enseñar por ejemplos y el sitio es homogéneo. |
+| [llm-scraper](#-llm-scraper) | Librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído. | TS | 🟢 | Quieres salida tipada y validada en stack TS. |
+| [Scrapegraph-ai](#-scrapegraph-ai) | Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. | Python | 🟡 | Quieres estructura semántica "by prompt" en Python. |
+| [playwright](#-playwright) | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. | TS/Python | 🟡 | Necesitas control preciso y reproducible del browser. |
+| [playwright-cli](#-playwright-cli) | Interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto. | TS | 🟢 | Tu agente vive en CLI y el contexto es un recurso caro. |
+| [browser-use](#-browser-use) | Biblioteca Python que da a los LLMs la capacidad de usar navegadores reales con interfaz para modelos de visión, dejando que el agente perciba la pantalla y actúe sin selectores fijos. | Python | 🟡 | Quieres navegación como humano y tolerancia a cambios de UI. |
+| [instaloader](#-instaloader) | Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de Instagram. | Python | 🟢 | Necesitas datos de Instagram de forma fiable. |
+| [snscrape](#-snscrape) | Scraper de redes sociales (Twitter/X, Reddit, Telegram, Instagram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves. | Python | 🟢 | Recolectas varias redes y no te sirve una API oficial. |
 
 ### ⚖️ ¿Cuál elegir? — Crawling/scraping
 

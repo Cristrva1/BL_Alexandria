@@ -59,13 +59,13 @@ Servidores y clientes Model Context Protocol, y catálogos de APIs para conectar
 
 | Repo | Qué es | Rol | Elige si… | Setup |
 |---|---|---|---|---|
-| [mcp](#-mcp) | Spec y SDKs oficiales del protocolo MCP | 📚 | Trabajas con el estándar MCP directamente | 🟡 |
-| [mcp-use](#-mcp-use) | Framework fullstack para apps/servidores MCP | 📚 | Construyes tu propio servidor/app MCP | 🟡 |
-| [servers](#-servers) | Servidores MCP de referencia oficiales | 📂 | Quieres ejemplos canónicos para aprender | 🟡 |
-| [awesome-mcp-servers](#-awesome-mcp-servers) | Directorio curado de servidores MCP | 📂 | Buscas un servidor ya hecho antes de construir | 🟢 |
-| [mcp-neo4j](#-mcp-neo4j) | Servidores MCP oficiales para grafos Neo4j | 🧩 | Conectas grafos Neo4j a un asistente | 🟡 |
-| [n8n-mcp](#-n8n-mcp) | MCP que expone los 1.845 nodos de n8n | 🧩 | Quieres que la IA arme flujos n8n sin errores | 🟡 |
-| [public-apis](#-public-apis) | Directorio de miles de APIs públicas | 📂 | Buscas fuentes de datos externas para tu app | 🟢 |
+| [mcp](#-mcp) | Núcleo del Model Context Protocol (spec y SDKs oficiales) para que herramientas, datos y clientes de IA interoperen bajo un mismo estándar abierto. | 📚 | Programas MCP a bajo nivel o necesitas conformidad estricta con la spec. | 🟡 |
+| [mcp-use](#-mcp-use) | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. | 📚 | Construyes un servidor MCP propio y quieres productividad. | 🟡 |
+| [servers](#-servers) | Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad. | 📂 | Quieres ejemplos canónicos y plantillas fiables. | 🟡 |
+| [awesome-mcp-servers](#-awesome-mcp-servers) | Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar. | 📂 | Buscas antes de construir. | 🟢 |
+| [mcp-neo4j](#-mcp-neo4j) | Conjunto de servidores MCP oficiales para conectar bases de datos de grafos Neo4j a asistentes de IA, con soporte de despliegue en cloud. | 🧩 | Usas Neo4j con IA y quieres que el asistente hable Cypher. | 🟡 |
+| [n8n-mcp](#-n8n-mcp) | Servidor MCP que expone a la IA la documentación y los esquemas de los más de 1.845 nodos de n8n (816 core + 1.029 comunitarios) para ayudar a construir y depurar flujos. | 🧩 | Generas flujos n8n con IA y quieres menos alucinaciones de parámetros. | 🟡 |
+| [public-apis](#-public-apis) | Directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos. | 📂 | Buscas datos externos y no sabes qué API usar. | 🟢 |
 
 ### ⚖️ ¿Cuál elegir? — Crear vs. descubrir MCP
 
@@ -170,16 +170,16 @@ Memoria persistente de agentes, gateways de modelos, trazas/evaluación y loggin
 
 | Repo | Qué es | Rol | Elige si… | Setup |
 |---|---|---|---|---|
-| [mem0](#-mem0) | Capa de memoria persistente para agentes | 📚 | Quieres memoria estándar con integraciones amplias | 🟢 |
-| [agentmemory](#-agentmemory) | Memoria multi-cliente para agentes de código | 📚 | Tu agente debe recordar entre sesiones y clientes | 🟢 |
-| [mempalace](#-mempalace) | Memoria local-first verbatim | 📚 | Quieres memoria sin llamadas a API (privacidad) | 🟢 |
-| [turbovec](#-turbovec) | Búsqueda vectorial rápida (TurboQuant) | 📚 | Necesitas vector search embebido eficiente | 🟢 |
-| [litellm](#-litellm) | Gateway unificado a 100+ LLMs | 📚 | Cambias de proveedor sin tocar código | 🟢 |
-| [langfuse](#-langfuse) | Observabilidad/trazas de LLM | ⚙️ | Quieres ver y evaluar tus llamadas LLM | 🟡 |
-| [llmfit](#-llmfit) | Evaluación/ajuste de LLMs | 📚 | Mides calidad/fit de modelos con datos | 🟢 |
-| [headroom](#-headroom) | Compactación de contexto | 📚 | Te quedas sin ventana de contexto | 🟢 |
-| [sandbox](#-sandbox) | Sandbox all-in-one para agentes | ⚙️ | Necesitas browser+terminal+VSCode+MCP aislados | 🟡 |
-| [loguru](#-loguru) | Logging simple para Python | 📚 | Quieres logs limpios sin boilerplate | 🟢 |
+| [mem0](#-mem0) | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental. | 📚 | Quieres memoria estándar lista con integraciones amplias. | 🟢 |
+| [agentmemory](#-agentmemory) | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes. | 📚 | Cambias de asistente y quieres una memoria común entre ellos. | 🟢 |
+| [mempalace](#-mempalace) | Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin enviar datos a servicios externos. | 📚 | La privacidad es prioridad y no quieres llamadas a API. | 🟢 |
+| [turbovec](#-turbovec) | Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida. | 📚 | Necesitas vector search veloz y embebido sin desplegar una DB. | 🟢 |
+| [litellm](#-litellm) | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. | 📚 | Trabajas con múltiples modelos o quieres fallback/control de costos. | 🟢 |
+| [langfuse](#-langfuse) | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. | ⚙️ | Operas agentes en serio y necesitas trazas/costes/eval. | 🟡 |
+| [llmfit](#-llmfit) | Herramienta para evaluar y medir el "fit" y la calidad de LLMs en una tarea concreta, orientada a comparar modelos con datos. | 📚 | Necesitas elegir modelo con datos y reproducibilidad. | 🟢 |
+| [headroom](#-headroom) | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. | 📚 | Te quedas sin contexto en sesiones largas. | 🟢 |
+| [sandbox](#-sandbox) | Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. | ⚙️ | Quieres aislar la ejecución de agentes y reproducibilidad. | 🟡 |
+| [loguru](#-loguru) | Librería de logging para Python centrada en la simplicidad ("logging that doesn't suck"), lista para usar sin configuración previa. | 📚 | Quieres logging fácil y legible en Python sin pelear con stdlib. | 🟢 |
 
 ### ⚖️ ¿Cuál elegir? — Memoria de agentes
 
@@ -320,19 +320,19 @@ Indexar/mapear repos, grafos de conocimiento, ciencia de datos y entrenar modelo
 
 | Repo | Qué es | Rol | Elige si… | Setup |
 |---|---|---|---|---|
-| [codegraph](#-codegraph) | Índice semántico de código local | 🧩 | Quieres que la IA entienda repos grandes barato | 🟢 |
-| [graphify](#-graphify) | Grafo de conocimiento de proyecto | 🧩 | Visualizas relaciones de código/PDF/imagen | 🟡 |
-| [graphrag](#-graphrag) | RAG basado en grafos (Microsoft) | 📚 | Necesitas recuperación contextual por grafo | 🟡 |
-| [GitNexus](#-gitnexus) | Exploración visual de repos Git | 🖥️ | Navegas y entiendes un repo concreto visualmente | 🟢 |
-| [DeepSeek-Coder](#-deepseek-coder) | Modelo de código open-source | 🧩 | Generas/revisas código con modelo propio | 🔴 |
-| [nanoGPT](#-nanogpt) | GPT mínimo entrenable (Karpathy) | 📚 | Aprendes/entrenas un GPT desde cero | 🟡 |
-| [nanochat](#-nanochat) | ChatGPT mínimo full-stack (Karpathy) | 📚 | Entrenas un chat end-to-end didáctico | 🟡 |
-| [llm.c](#-llmc) | Entrenamiento de LLM en C/CUDA puro | 📚 | Quieres entrenar sin frameworks pesados | 🔴 |
-| [how-to-train-your-gpt](#-how-to-train-your-gpt) | Guía para entrenar un GPT | 📂 | Buscas un tutorial práctico paso a paso | 🟢 |
-| [cosmos](#-cosmos) | World foundation models de NVIDIA | 🧩 | Generas mundos/datos para IA física | 🔴 |
-| [data-science-ipython-notebooks](#-data-science-ipython-notebooks) | Notebooks de ciencia de datos | 📂 | Aprendes/consultas DS y ML con ejemplos | 🟢 |
-| [awesome-bigdata](#-awesome-bigdata) | Directorio de big data | 📂 | Buscas herramientas de datos a escala | 🟢 |
-| [openai-python](#-openai-python) | SDK oficial de OpenAI | 📚 | Llamas a la API de OpenAI desde Python | 🟢 |
+| [codegraph](#-codegraph) | CLI que indexa tu código y da a los asistentes de IA inteligencia semántica 100% local, permitiéndoles entender la estructura y el flujo de un repo sin leer archivo por archivo ni gastar llamadas a herramientas. | 🧩 | Trabajas repos grandes y el contexto del agente es caro. | 🟢 |
+| [graphify](#-graphify) | Generador de grafos de conocimiento para proyectos locales que mapea código, PDFs, imágenes y video en diagramas interactivos, revelando cómo se conectan las piezas de un sistema. | 🧩 | Quieres ver conexiones visualmente o auditar un sistema. | 🟡 |
+| [graphrag](#-graphrag) | Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. | 📚 | Tu corpus tiene relaciones ricas y el RAG por fragmentos se queda corto. | 🟡 |
+| [GitNexus](#-gitnexus) | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. | 🖥️ | Quieres entender un repo puntual de forma visual. | 🟢 |
+| [DeepSeek-Coder](#-deepseek-coder) | Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software. | 🧩 | Quieres un modelo de código abierto y desplegable on-prem. | 🔴 |
+| [nanoGPT](#-nanogpt) | Implementación mínima y limpia de Andrej Karpathy para entrenar y afinar GPTs, pensada para que el código quepa en la cabeza y se entienda de extremo a extremo. | 📚 | Quieres entender el entrenamiento de un GPT desde cero. | 🟡 |
+| [nanochat](#-nanochat) | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. | 📚 | Quieres el pipeline completo de un chat end-to-end. | 🟡 |
+| [llm.c](#-llmc) | Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo al desnudo. | 📚 | Quieres bajo nivel sin abstracciones y tienes GPU CUDA. | 🔴 |
+| [how-to-train-your-gpt](#-how-to-train-your-gpt) | Guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material de estudio más que como librería de producción. | 📂 | Quieres una guía explicada y narrada. | 🟢 |
+| [cosmos](#-cosmos) | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. | 🧩 | Trabajas IA física/robótica y necesitas datos sintéticos. | 🔴 |
+| [data-science-ipython-notebooks](#-data-science-ipython-notebooks) | Gran colección de notebooks de ciencia de datos y machine learning que cubre desde pandas y NumPy hasta deep learning y big data, con ejemplos listos para ejecutar. | 📂 | Estudias/consultas DS con ejemplos ejecutables. | 🟢 |
+| [awesome-bigdata](#-awesome-bigdata) | Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. | 📂 | Diseñas pipelines de datos grandes y necesitas descubrir el ecosistema. | 🟢 |
+| [openai-python](#-openai-python) | SDK oficial de OpenAI para Python, que expone de forma tipada y cómoda la API (chat, embeddings, imágenes, audio, asistentes) y es la base habitual para apps que usan sus modelos. | 📚 | Usas modelos de OpenAI desde Python y quieres el cliente oficial. | 🟢 |
 
 ### ⚖️ ¿Cuál elegir? — Entender código vs. grafos
 

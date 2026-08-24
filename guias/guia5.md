@@ -161,21 +161,21 @@ Transcripción (STT), síntesis de voz (TTS) y edición/render de video.
 
 | Repo | Qué es | Tipo | Elige si… | Setup |
 |---|---|---|---|---|
-| [whisper](#-whisper) | STT estándar multilingüe de OpenAI | STT | Quieres la referencia de transcripción robusta | 🟡 |
-| [faster-whisper](#-faster-whisper) | Whisper reescrito sobre CTranslate2 | STT | Te importa velocidad y memoria | 🟡 |
-| [whisperX](#-whisperx) | Whisper + alineación de palabra y diarización | STT | Necesitas subtítulos con timings finos y speakers | 🟡 |
-| [supertonic](#-supertonic) | TTS ultrarrápido on-device (ONNX/WebGPU) | TTS | Quieres voz local de baja latencia | 🟡 |
-| [VoxCPM](#-voxcpm) | TTS de alta fidelidad sin tokenizador | TTS | Buscas voz muy fluida o clonación | 🔴 |
-| [TTS](#-tts) | Toolkit TTS multilingüe (Coqui/XTTS) | TTS | Quieres flexibilidad y clonación | 🟡 |
-| [OmniVoice-Studio](#-omnivoice-studio) | Suite de voz/dubbing local (646 idiomas) | TTS/STT | Dictado, clonación y doblaje en local | 🟡 |
-| [lossless-cut](#-lossless-cut) | Corte de video sin recomprimir (ffmpeg) | Video | Cortas clips rápido sin perder calidad | 🟢 |
-| [moviepy](#-moviepy) | Edición de video programática en Python | Video | Ensamblas video desde scripts | 🟢 |
-| [remotion](#-remotion) | Video por código con React | Video | Generas variantes de video a escala | 🟡 |
-| [videofy_minimal](#-videofy_minimal) | Texto → video corto local | Video | Conviertes contenido en reels simple | 🟢 |
-| [OpenCut](#-opencut) | Editor de video open-source tipo CapCut | Video | Quieres un editor libre con UI moderna | 🟡 |
-| [openscreen](#-openscreen) | Grabación de pantalla en navegador | Video | Grabas screencasts (archivado) | 🟢 |
-| [Youtube2Webpage](#-youtube2webpage) | Video de YouTube → página legible | Video | Conviertes una charla en artículo | 🟢 |
-| [hyperframes](#-hyperframes) | Framework de animación por frames (Node) | Video | Generas animaciones programáticas | 🟡 |
+| [whisper](#-whisper) | Modelo de reconocimiento de voz y traducción de audio multilingüe de OpenAI, estándar de la industria que transcribe casi cualquier idioma con un solo modelo. | STT | Quieres la referencia robusta y no te obsesiona la latencia. | 🟡 |
+| [faster-whisper](#-faster-whisper) | Reimplementación de Whisper sobre CTranslate2 que transcribe mucho más rápido y con menor consumo de memoria, manteniendo la misma precisión. | STT | El rendimiento, la memoria o el coste de GPU importan. | 🟡 |
+| [whisperX](#-whisperx) | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. | STT | Necesitas subtítulos precisos o diarización. | 🟡 |
+| [supertonic](#-supertonic) | Motor TTS multilingüe ultrarrápido de Supertone que sintetiza voz directamente en el dispositivo, incluso en el navegador vía WebGPU. | TTS | Quieres voz local en tiempo real y sin nube. | 🟡 |
+| [VoxCPM](#-voxcpm) | Sistema TTS de alta fidelidad de OpenBMB que prescinde del tokenizador tradicional para lograr una prosodia y fluidez muy naturales, con clonación de voz a partir de pocos segundos de audio. | TTS | Quieres voz muy natural o clonada y tienes GPU. | 🔴 |
+| [TTS](#-tts) | Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz. | TTS | Quieres flexibilidad y varios modelos en una librería. | 🟡 |
+| [OmniVoice-Studio](#-omnivoice-studio) | Suite de voz de escritorio open-source planteada como alternativa a ElevenLabs, con dictado en tiempo real, clonación zero-shot y doblaje de video en hasta 646 idiomas, todo local. | TTS/STT | Quieres suite de voz completa local (dictado + clonación + dubbing). | 🟡 |
+| [lossless-cut](#-lossless-cut) | Aplicación de escritorio para recortar, fusionar y reorganizar video/audio sin recodificar, conservando la calidad original. | Video | Cortas material rápido y sin recomprimir. | 🟢 |
+| [moviepy](#-moviepy) | Librería Python para edición de video programática: cortar, concatenar, superponer texto, subtítulos y audio, y exportar el resultado. | Video | Ensamblas video por código en Python. | 🟢 |
+| [remotion](#-remotion) | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. | Video | Generas video a escala con React y quieres variantes parametrizadas. | 🟡 |
+| [videofy_minimal](#-videofy_minimal) | Herramienta minimalista (de Schibsted) que convierte contenido textual en videos cortos de forma local, sin pipeline complejo. | Video | Quieres reels simples ya, sin montar un pipeline entero. | 🟢 |
+| [OpenCut](#-opencut) | Editor de video open-source con UI moderna, planteado como alternativa libre tipo CapCut, usable en web o escritorio. | Video | Quieres un editor libre con UI moderna, sin CapCut. | 🟡 |
+| [openscreen](#-openscreen) | Herramienta ligera de grabación de pantalla para screencasts y demos, basada en las APIs de captura del navegador. | Video | Necesitas screencast simple desde el navegador. | 🟢 |
+| [Youtube2Webpage](#-youtube2webpage) | Script en Perl que genera una página web legible a partir de un video de YouTube, intercalando la transcripción de subtítulos con capturas de pantalla del momento citado. | Video | Quieres video → artículo con transcripción y capturas. | 🟢 |
+| [hyperframes](#-hyperframes) | Framework npm para generar animaciones frame a frame de forma programática desde código. | Video | Generas animación por frames con control por código. | 🟡 |
 
 ### ⚖️ ¿Cuál elegir? — Transcripción (STT)
 
@@ -390,10 +390,10 @@ Conversión de formatos, generación de slides y herramientas de PDF.
 
 | Repo | Qué es | Rol | Elige si… | Setup |
 |---|---|---|---|---|
-| [markitdown](#-markitdown) | Cualquier formato → Markdown para LLM | 📚 | Ingestas PDF/Word/Excel para IA | 🟢 |
-| [ppt-master](#-ppt-master) | Texto → PowerPoint editable | 🧩 | Generas presentaciones PPTX rápido | 🟢 |
-| [pdfcraft](#-pdfcraft) | Herramientas PDF en el navegador | 🖥️ | Editas/manipulas PDF privado y local | 🟢 |
-| [reveal.js](#-revealjs) | Slides en HTML | 📚 | Quieres presentaciones web por código | 🟢 |
+| [markitdown](#-markitdown) | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. | 📚 | Alimentas LLMs con documentos de formatos variados. | 🟢 |
+| [ppt-master](#-ppt-master) | Generador que transforma documentos de texto en presentaciones PowerPoint (.pptx) editables nativas, listas para abrir y ajustar en Office. | 🧩 | Quieres PPTX editable de Office rápido. | 🟢 |
+| [pdfcraft](#-pdfcraft) | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. | 🖥️ | Manipulas PDFs con privacidad y sin instalar nada. | 🟢 |
+| [reveal.js](#-revealjs) | Framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados. | 📚 | Quieres slides web por código, versionables. | 🟢 |
 
 ### 📝 markitdown
 **Etiquetas:** Ejecución 🏠 local-first · Rol 📚 librería/SDK · Setup 🟢 fácil
