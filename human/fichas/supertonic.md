@@ -1,6 +1,6 @@
 # supertonic
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ DIFERIR
 
 ## Para que sirve realmente
 
-Supertonic** is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns.
+Supertonic is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns.
 
 ## Que problema resuelve
 

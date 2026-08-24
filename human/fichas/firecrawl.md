@@ -1,6 +1,6 @@
 # firecrawl
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-src="https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_logo.png".
+The API to search, scrape, and interact with the web at scale. 🔥 The web context API to find sources, extract content, and turn it into clean Markdown or structured data your agents can ship with. Open source and available as a hosted service.
 
 ## Que problema resuelve
 

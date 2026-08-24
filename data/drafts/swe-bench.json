@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-08-24T04:26:20.428974+00:00",
+  "profile": {
+    "id": "swe-bench",
+    "name": "SWE-bench",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\SWE-bench",
+    "repo_url": "https://github.com/SWE-bench/SWE-bench.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "Code and data for the following works:",
+      "desc": "SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub. Given a codebase and an issue, a language model is tasked with generating a patch that resolves the described problem."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "docker"
+    ],
+    "one": "SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub.",
+    "install_hints": [
+      "git clone git@github.com:SWE-bench/SWE-bench.git",
+      "pip install -e ."
+    ]
+  },
+  "compact": {
+    "id": "swe-bench",
+    "name": "SWE-bench",
+    "cat": 7,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "python",
+      "typescript"
+    ],
+    "one": "SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub.",
+    "alt": [],
+    "doc": "human/fichas/swe-bench.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "SWE-bench",
+    "cat": 7,
+    "desc": "SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub. Given a codebase and an issue, a language model is tasked with generating a patch that resolves the described problem.",
+    "stack": "python, typescript, docker",
+    "choose_if": "quieres code and data for the following works:",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "codegraph",
+      "gitnexus",
+      "deepseek-coder"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/SWE-bench/SWE-bench.git",
+    "doc": "human/fichas/swe-bench.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.428745+00:00"
+  }
+}

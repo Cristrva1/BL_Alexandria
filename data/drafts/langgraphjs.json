@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-08-24T04:26:20.035031+00:00",
+  "profile": {
+    "id": "langgraphjs",
+    "name": "langgraphjs",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\langgraphjs",
+    "repo_url": "https://github.com/langchain-ai/langgraphjs.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml"
+    ],
+    "intro": {
+      "title": "libs/langgraph-core/README.md",
+      "desc": "libs/langgraph-core/README.md."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "javascript"
+    ],
+    "one": "libs/langgraph-core/README.md.",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "langgraphjs",
+    "name": "langgraphjs",
+    "cat": 3,
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "javascript",
+      "javascript-typescript"
+    ],
+    "one": "libs/langgraph-core/README.md.",
+    "alt": [],
+    "doc": "human/fichas/langgraphjs.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "langgraphjs",
+    "cat": 3,
+    "desc": "libs/langgraph-core/README.md.",
+    "stack": "javascript/typescript, javascript",
+    "choose_if": "quieres libs/langgraph-core/readme.md",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/langchain-ai/langgraphjs.git",
+    "doc": "human/fichas/langgraphjs.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.034834+00:00"
+  }
+}

@@ -15,7 +15,7 @@ Cada ficha abre con una línea **Etiquetas:** que nombra cada valor — `Ejecuci
 ---
 
 <!-- BL_ALEXANDRIA_STATUS -->
-> Estado actual: **185 repos detectados** en la biblioteca local; **186 repos curados** con ficha completa en esta guía. Los repos nuevos sin ficha curada se agregan al apéndice automático sin reescribir el cuerpo editorial.
+> Estado actual: **211 repos detectados** en la biblioteca local; **212 repos curados** en el índice compacto. Los repos nuevos sin ficha editorial se agregan al apéndice automático sin reescribir el cuerpo de esta guía.
 <!-- /BL_ALEXANDRIA_STATUS -->
 
 ## 📂 Mapa de categorías

@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-08-24T04:26:20.495679+00:00",
+  "profile": {
+    "id": "timesfm",
+    "name": "timesfm",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\timesfm",
+    "repo_url": "https://github.com/google-research/timesfm.git",
+    "manifests": [
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation",
+      "desc": "model developed by Google Research for time-series forecasting."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "docker"
+    ],
+    "one": "model developed by Google Research for time-series forecasting.",
+    "install_hints": [
+      "pip install timesfm[torch]",
+      "pip install timesfm[flax]",
+      "pip install timesfm[xreg]"
+    ]
+  },
+  "compact": {
+    "id": "timesfm",
+    "name": "timesfm",
+    "cat": 4,
+    "role": "directory",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "python",
+      "typescript"
+    ],
+    "one": "model developed by Google Research for time-series forecasting.",
+    "alt": [],
+    "doc": "human/fichas/timesfm.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "timesfm",
+    "cat": 4,
+    "desc": "model developed by Google Research for time-series forecasting.",
+    "stack": "python, typescript, docker",
+    "choose_if": "quieres timesfm (time series foundation model) is a pretrained time-series foundation",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "firecrawl",
+      "crawl4ai",
+      "scrapy"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/google-research/timesfm.git",
+    "doc": "human/fichas/timesfm.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.495446+00:00"
+  }
+}

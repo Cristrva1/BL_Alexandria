@@ -1,6 +1,6 @@
 # playwright-cli
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-Playwright CLI with SKILLS.
+Playwright CLI empaquetado con skills de agente: permite manejar Chromium/Firefox/WebKit en scripts y en flujos de coding agents.
 
 ## Que problema resuelve
 

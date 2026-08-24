@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-08-24T04:26:19.637569+00:00",
+  "profile": {
+    "id": "computer-use-preview",
+    "name": "computer-use-preview",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\computer-use-preview",
+    "repo_url": "https://github.com/google-gemini/computer-use-preview.git",
+    "manifests": [
+      "requirements.txt"
+    ],
+    "intro": {
+      "title": "Computer Use Preview",
+      "desc": "This section will guide you through setting up and running Gemini Computer Use, using either the Gemini Developer API or Vertex AI. Follow these steps to get started."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "react"
+    ],
+    "one": "This section will guide you through setting up and running Gemini Computer Use, using either the Gemini Developer API or Vertex AI. Follow these steps to get started.",
+    "install_hints": [
+      "git clone https://github.com/google-gemini/computer-use-preview.git",
+      "pip install -r requirements.txt"
+    ]
+  },
+  "compact": {
+    "id": "computer-use-preview",
+    "name": "computer-use-preview",
+    "cat": 3,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "This section will guide you through setting up and running Gemini Computer Use, using either the Gemini Developer API or Vertex AI. Follow these steps to get started.",
+    "alt": [],
+    "doc": "human/fichas/computer-use-preview.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "computer-use-preview",
+    "cat": 3,
+    "desc": "This section will guide you through setting up and running Gemini Computer Use, using either the Gemini Developer API or Vertex AI. Follow these steps to get started.",
+    "stack": "python, typescript, react",
+    "choose_if": "quieres computer use preview",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/google-gemini/computer-use-preview.git",
+    "doc": "human/fichas/computer-use-preview.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:19.637227+00:00"
+  }
+}

@@ -1,6 +1,6 @@
 # GFPGAN
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-1. :boom: **Updated** online demo: ![Replicate](https://replicate.com/tencentarc/gfpgan). Here is the backup. 1. :boom: **Updated** online demo: ![Huggingface Gradio](https://huggingface.co/spaces/Xintao/GFPGAN) 1. .
+1. :boom: Updated online demo: . Here is the backup. 1. :boom: Updated online demo: 1. .
 
 ## Que problema resuelve
 

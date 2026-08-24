@@ -1,6 +1,6 @@
 # OmniVoice-Studio
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ DIFERIR
 
 ## Para que sirve realmente
 
-OmniVoice Studio is in active beta.** Things may break between releases. For the latest features and fixes, clone the repo and run from source rather than using pre-built installers. Bug reports and PRs are very welcome — open an issue or join Discord.
+OmniVoice Studio concentra clonación y síntesis de voz en un studio local. Está en beta; espera roturas entre versiones.
 
 ## Que problema resuelve
 
@@ -16,7 +16,7 @@ quieres suite de voz completa local (dictado + clonación + dubbing)
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para docker, fastapi, javascript, multimedia, python, react, typescript, whisper. Stack declarado: python, typescript, javascript, react, docker, fastapi, whisper.
+Aporta valor en `app` para docker, fastapi, javascript, multimedia, python, react, typescript, whisper. Stack declarado: python, typescript, javascript, react, docker, fastapi, whisper.
 
 ## Cuando usarlo
 

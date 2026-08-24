@@ -1,6 +1,6 @@
 # gpt-researcher
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-🔎 GPT Researcher.
+GPT Researcher the first open deep research agent designed for both web and local research on any given task.
 
 ## Que problema resuelve
 

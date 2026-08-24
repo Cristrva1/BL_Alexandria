@@ -24,30 +24,31 @@ from repo_intelligence.core.io import read_json, read_yaml, write_json
 from repo_intelligence.core.paths import ProjectPaths
 from repo_intelligence.extract.manifests import detect_manifests, has_docker, infer_primary_language
 from repo_intelligence.extract.readme import (
+    clip_sentence,
     extract_features,
     extract_install_hints,
     extract_intro_and_desc,
     guess_tech_stack,
     read_readme_text,
-    short_summary,
+    summarize_readme,
 )
 from repo_intelligence.tools import gitnexus_runner, markitdown_runner, repomix_runner
 
 # Strong keyword signals for category inference (extend as library grows)
 CATEGORY_KEYWORDS: dict[int, list[str]] = {
     1: ["whatsapp", "evolution", "n8n", "chatwoot", "crm", "automation", "email", "notif", "mautic", "listmonk", "novu", "huginn", "activepieces"],
-    2: ["skill", "prompt", "prompts", "awesome-agent", "karpathy", "context", "humanizer", "stop-slop", "marketingskills", "taste-skill", "ui-ux", "prompt-master"],
-    3: ["agent", "framework", "orchestrat", "crew", "langchain", "langgraph", "dify", "flowise", "autogen", "ag2", "openhands", "deer", "gpt-researcher", "nemo-agent"],
+    2: ["skill", "prompt", "prompts", "awesome-agent", "karpathy", "context", "humanizer", "stop-slop", "marketingskills", "taste-skill", "ui-ux", "prompt-master", "arcads", "t3code", "superpowers"],
+    3: ["agent", "framework", "orchestrat", "crew", "langchain", "langgraph", "dify", "flowise", "autogen", "ag2", "openhands", "deer", "gpt-researcher", "nemo-agent", "deepagent", "openclaw", "nemoclaw", "open-swe", "computer-use", "agent-protocol", "agent-reach", "mercury-agent", "loop-engineering", "deeptutor"],
     4: ["scrape", "crawl", "firecrawl", "crawl4ai", "playwright", "browser", "instaloader", "snscrape", "scrapy", "llm-scraper", "scrapegraph", "research", "archive"],
-    5: ["mcp", "server", "public-apis", "connect", "neo4j"],
-    6: ["mem0", "memory", "langfuse", "litellm", "observab", "loguru", "headroom", "sandbox", "agentmemory", "mempalace"],
-    7: ["codegraph", "gitnexus", "graph", "repomix", "deepseek", "nanogpt", "how-to-train", "cosmos", "data-science", "awesome-bigdata", "openai-python", "llmc"],
-    8: ["notebook", "odysseus", "ecc", "open-notebook", "workspace", "local-ai"],
+    5: ["mcp", "server", "public-apis", "connect", "neo4j", "context7", "davinci-resolve-mcp", "langchain-mcp"],
+    6: ["mem0", "memory", "langfuse", "litellm", "observab", "loguru", "headroom", "sandbox", "agentmemory", "mempalace", "engram"],
+    7: ["codegraph", "gitnexus", "graph", "repomix", "deepseek", "nanogpt", "how-to-train", "cosmos", "data-science", "awesome-bigdata", "openai-python", "llmc", "swe-bench", "timesfm"],
+    8: ["notebook", "odysseus", "ecc", "open-notebook", "workspace", "local-ai", "hermes-desktop"],
     9: ["design", "ui", "frontend", "tailwind", "heroui", "shadcn", "penpot", "plasmic", "open-design", "gsap", "motion", "three", "magicui", "impeccable", "react-three"],
     10: ["analytics", "posthog", "metabase", "dash", "echarts", "uplot", "streamlit", "dataviz"],
-    11: ["comfy", "stable-diffusion", "fooocus", "invoke", "diffusers", "controlnet", "gfpgan", "esrgan", "liveportrait", "deep-live", "face", "flux", "generative", "image", "vision"],
-    12: ["whisper", "tts", "supertonic", "voxcpm", "moviepy", "remotion", "lossless", "opencut", "openscreen", "video", "audio", "voice", "hyperframes", "videofy"],
-    13: ["markitdown", "ppt", "pdf", "reveal", "document", "present"],
+    11: ["comfy", "stable-diffusion", "fooocus", "invoke", "diffusers", "controlnet", "gfpgan", "esrgan", "liveportrait", "deep-live", "face", "flux", "generative", "image", "vision", "ocr"],
+    12: ["whisper", "tts", "supertonic", "voxcpm", "moviepy", "remotion", "lossless", "opencut", "openscreen", "video", "audio", "voice", "hyperframes", "videofy", "wan2gp", "wan"],
+    13: ["markitdown", "ppt", "pdf", "reveal", "document", "present", "pdfding", "pdf-inspector"],
 }
 
 ROLE_HINTS = {
@@ -204,7 +205,7 @@ def build_profile(repo_record: dict[str, Any], paths: ProjectPaths) -> dict[str,
         stack.append("docker")
 
     install_hints = extract_install_hints(raw_readme)
-    one = short_summary(readme_path) or _clean_text(intro.get("desc", ""))[:220]
+    one = summarize_readme(raw_readme, max_chars=220) or _clean_text(intro.get("desc", ""))[:220]
 
     # Try to enrich with packed content if present
     packed = paths.packed_dir / f"{rid}.xml"
@@ -328,8 +329,8 @@ def build_draft_entries(profile: dict[str, Any], existing_compact: dict[str, Any
     cat = infer_category(profile) or 0
     role, exec_, setup = infer_role_exec_setup(profile)
     tags = infer_tags(profile, cat)
-    one = profile.get("one", "")[:280]
-    desc = _clean_text(profile.get("intro", {}).get("desc", one))[:520]
+    one = clip_sentence(profile.get("one", "") or "", 220)
+    desc = clip_sentence(_clean_text(profile.get("intro", {}).get("desc", one) or one), 420)
     stack_str = ", ".join(profile.get("stack", [])) or "See repo"
 
     # Simple combines: look at existing that share tags or cat (very rough)

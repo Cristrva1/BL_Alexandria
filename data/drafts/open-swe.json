@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-08-24T04:26:20.210893+00:00",
+  "profile": {
+    "id": "open-swe",
+    "name": "open-swe",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\open-swe",
+    "repo_url": "https://github.com/langchain-ai/open-swe.git",
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "uv.lock",
+      "pnpm-lock.yaml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "Open-source framework for building your org's internal coding agent.",
+      "desc": "Elite engineering orgs like Stripe, Ramp, and Coinbase are building their own internal coding agents — Slackbots, CLIs, and web apps that meet engineers where they already work. These agents are connected to internal systems with the right context, permissioning, and safety boundaries to operate with minimal human oversight."
+    },
+    "features": [
+      "**Trigger from Linear, Slack, or GitHub** — mention `@openswe` in a comment to kick off a task",
+      "**Instant acknowledgement** — reacts with 👀 the moment it picks up your message",
+      "**Message it while it's running** — send follow-up messages mid-task and it'll pick them up before its next step",
+      "**Run multiple tasks in parallel** — each task runs in its own isolated cloud sandbox",
+      "**GitHub OAuth built-in** — authenticates with your GitHub account automatically",
+      "**Opens PRs automatically** — commits changes and opens a draft PR when done, linked back to your ticket"
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres",
+      "langchain"
+    ],
+    "one": "Elite engineering orgs like Stripe, Ramp, and Coinbase are building their own internal coding agents — Slackbots, CLIs, and web apps that meet engineers where they already work.",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "open-swe",
+    "name": "open-swe",
+    "cat": 3,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "automation",
+      "docker",
+      "javascript",
+      "langchain",
+      "postgres",
+      "python",
+      "react"
+    ],
+    "one": "Elite engineering orgs like Stripe, Ramp, and Coinbase are building their own internal coding agents — Slackbots, CLIs, and web apps that meet engineers where they already work.",
+    "alt": [],
+    "doc": "human/fichas/open-swe.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "open-swe",
+    "cat": 3,
+    "desc": "Elite engineering orgs like Stripe, Ramp, and Coinbase are building their own internal coding agents — Slackbots, CLIs, and web apps that meet engineers where they already work. These agents are connected to internal systems with the right context, permissioning, and safety boundaries to operate with minimal human oversight.",
+    "stack": "python, typescript, javascript, react, docker, postgres, langchain",
+    "choose_if": "quieres open-source framework for building your org's internal coding agent.",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/langchain-ai/open-swe.git",
+    "doc": "human/fichas/open-swe.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.210682+00:00"
+  }
+}

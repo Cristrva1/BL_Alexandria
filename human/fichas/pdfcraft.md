@@ -1,6 +1,6 @@
 # pdfcraft
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-Merge, split, compress, convert, and edit PDF files online without uploading to servers.
+PDFCraft procesa PDFs en el cliente. Encaja para utilidades locales de documentos, no para un pipeline de conversión masiva.
 
 ## Que problema resuelve
 
@@ -16,7 +16,7 @@ manipulas PDFs con privacidad y sin instalar nada
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para docker, javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, docker, postgres.
+Aporta valor en `app` para docker, javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, docker, postgres.
 
 ## Cuando usarlo
 

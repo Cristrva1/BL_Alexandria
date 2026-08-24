@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-08-24T04:26:19.864189+00:00",
+  "profile": {
+    "id": "engram",
+    "name": "engram",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\engram",
+    "repo_url": "https://github.com/Gentleman-Programming/engram.git",
+    "manifests": [],
+    "intro": {
+      "title": "Persistent memory for AI coding agents",
+      "desc": "One brain. Local or cloud. Agent-agnostic, single binary, zero dependencies."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "One brain. Local or cloud. Agent-agnostic, single binary, zero dependencies.",
+    "install_hints": [
+      "docker compose -f docker-compose.cloud.yml up -d",
+      "git clone https://github.com/Gentleman-Programming/engram.git engram-beta-repo",
+      "docker compose -f docker-compose.beta.yml up -d"
+    ]
+  },
+  "compact": {
+    "id": "engram",
+    "name": "engram",
+    "cat": 5,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "docker",
+      "javascript",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "One brain. Local or cloud. Agent-agnostic, single binary, zero dependencies.",
+    "alt": [],
+    "doc": "human/fichas/engram.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "engram",
+    "cat": 5,
+    "desc": "One brain. Local or cloud. Agent-agnostic, single binary, zero dependencies.",
+    "stack": "python, typescript, javascript, docker, postgres",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+      "claude-plugins-official",
+      "n8n-skills",
+      "mcp"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/Gentleman-Programming/engram.git",
+    "doc": "human/fichas/engram.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:19.863956+00:00"
+  }
+}

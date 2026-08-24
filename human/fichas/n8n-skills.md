@@ -1,6 +1,6 @@
 # n8n-skills
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-Expert Claude Code skills for building flawless n8n workflows using the n8n-mcp MCP server**.
+Paquete de skills para construir flujos n8n con un agente. Combínalo con n8n y n8n-mcp; no sustituye la instancia de n8n.
 
 ## Que problema resuelve
 

@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-08-24T04:26:20.166789+00:00",
+  "profile": {
+    "id": "nemoclaw",
+    "name": "NemoClaw",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\NemoClaw",
+    "repo_url": "https://github.com/NVIDIA/NemoClaw.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "NVIDIA NemoClaw: Reference Stack for Sandboxed AI Agents in OpenShell",
+      "desc": "NVIDIA NemoClaw is an open source reference stack for running supported AI agents more safely inside NVIDIA OpenShell sandboxes. It provides guided onboarding, managed inference, network policy, managed integrations, snapshots, and lifecycle operations through the NemoClaw CLI and its agent-specific aliases."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres",
+      "langchain"
+    ],
+    "one": "NVIDIA NemoClaw is an open source reference stack for running supported AI agents more safely inside NVIDIA OpenShell sandboxes.",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "nemoclaw",
+    "name": "NemoClaw",
+    "cat": 3,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "langchain",
+      "postgres",
+      "python"
+    ],
+    "one": "NVIDIA NemoClaw is an open source reference stack for running supported AI agents more safely inside NVIDIA OpenShell sandboxes.",
+    "alt": [],
+    "doc": "human/fichas/nemoclaw.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "NemoClaw",
+    "cat": 3,
+    "desc": "NVIDIA NemoClaw is an open source reference stack for running supported AI agents more safely inside NVIDIA OpenShell sandboxes. It provides guided onboarding, managed inference, network policy, managed integrations, snapshots, and lifecycle operations through the NemoClaw CLI and its agent-specific aliases.",
+    "stack": "javascript/typescript, python, typescript, javascript, docker, postgres, langchain",
+    "choose_if": "quieres nvidia nemoclaw: reference stack for sandboxed ai agents in openshell",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/NVIDIA/NemoClaw.git",
+    "doc": "human/fichas/nemoclaw.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.166589+00:00"
+  }
+}

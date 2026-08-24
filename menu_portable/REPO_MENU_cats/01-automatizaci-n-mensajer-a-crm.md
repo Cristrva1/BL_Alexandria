@@ -6,7 +6,7 @@
 ## `activepieces`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** href="https://activepieces.com".
+**Qué es:** Activepieces es un reemplazo open source de Zapier: orquestas automatizaciones con piezas auto-hospedables y un editor visual, sin ceder los datos a un SaaS cerrado.
 **Stack:** javascript/typescript, typescript, javascript, docker
 **Repo:** https://github.com/activepieces/activepieces.git
 
@@ -21,7 +21,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 ## `appsmith`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our [website](https://www.appsmith.com?utm_source=github&utm_medium=organic
+**Qué es:** Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our website.
 **Stack:** typescript, javascript, docker, postgres
 **Repo:** https://github.com/appsmithorg/appsmith.git
 
@@ -190,7 +190,7 @@ _Nombre npm puede diferir de 'novu'; verifica en npmjs.com._
 ## `openevolve`
 role=library · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** 🧬 The most advanced open-source evolutionary coding agent**.
+**Qué es:** 🧬 The most advanced open-source evolutionary coding agent.
 **Stack:** python, typescript, docker
 **Repo:** https://github.com/algorithmicsuperintelligence/openevolve.git
 
@@ -204,7 +204,7 @@ _Nombre PyPI puede diferir de 'openevolve'; verifica en pypi.org._
 ## `openwa`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** OpenWA** is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls.
+**Qué es:** OpenWA is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls.
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker, postgres
 **Repo:** https://github.com/rmyndharis/OpenWA.git
 

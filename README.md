@@ -2,7 +2,7 @@
 
 Repo Intelligence Hub ayuda a una persona a decidir que repositorios de una biblioteca de IA debe usar para construir un proyecto concreto.
 
-La biblioteca curada tiene **185 repositorios** en `INDICE_IA.json` (el mismo conjunto en `INDICE_IA.detalle.json`). El caso de uso principal es simple: llegas con una idea, dices con que herramienta la vas a construir, y el sistema te recomienda que instalar, que leer, que diferir y en que orden avanzar. Si no nombras herramienta y `--tool` queda en `auto`, no se asume Codex.
+La biblioteca curada tiene **212 repositorios** en `INDICE_IA.json` (el mismo conjunto en `INDICE_IA.detalle.json`). En disco hay **208 clones git** en `../Repositorios_Prueba`, más tres carpetas locales (`guia`, `tools`, `twenty-main`) y el alias `n8n-io`. El caso de uso principal es simple: llegas con una idea, dices con que herramienta la vas a construir, y el sistema te recomienda que instalar, que leer, que diferir y en que orden avanzar. Si no nombras herramienta y `--tool` queda en `auto`, no se asume Codex.
 
 ```powershell
 uv run repo-intelligence recommend --project "bot de WhatsApp con IA para responder clientes y guardar leads. Lo voy a construir con Codex." --max-repos 7

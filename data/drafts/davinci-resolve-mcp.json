@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-08-24T04:26:19.743444+00:00",
+  "profile": {
+    "id": "davinci-resolve-mcp",
+    "name": "davinci-resolve-mcp",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\davinci-resolve-mcp",
+    "repo_url": "https://github.com/samuelgursky/davinci-resolve-mcp.git",
+    "manifests": [
+      "package.json",
+      "requirements.txt",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "DaVinci Resolve MCP Server",
+      "desc": "18%20tools-blueviolet.svg)."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "whisper"
+    ],
+    "one": "18%20tools-blueviolet.svg).",
+    "install_hints": [
+      "git clone https://github.com/samuelgursky/davinci-resolve-mcp.git",
+      "| `pip install numpy` | Colour pre-balance, reference-still matching, sound-density audit | BSD |",
+      "| `pip install librosa` | Beat, bar and phrase detection for music-driven cutting | ISC |"
+    ]
+  },
+  "compact": {
+    "id": "davinci-resolve-mcp",
+    "name": "davinci-resolve-mcp",
+    "cat": 5,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "mcp",
+      "multimedia",
+      "python",
+      "typescript",
+      "whisper"
+    ],
+    "one": "18%20tools-blueviolet.svg).",
+    "alt": [],
+    "doc": "human/fichas/davinci-resolve-mcp.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "davinci-resolve-mcp",
+    "cat": 5,
+    "desc": "18%20tools-blueviolet.svg).",
+    "stack": "python, typescript, javascript, whisper",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+      "claude-plugins-official",
+      "n8n-skills",
+      "mcp"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/samuelgursky/davinci-resolve-mcp.git",
+    "doc": "human/fichas/davinci-resolve-mcp.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:19.743198+00:00"
+  }
+}

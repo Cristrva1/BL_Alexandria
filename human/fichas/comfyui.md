@@ -1,6 +1,6 @@
 # ComfyUI
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ DIFERIR
 
 ## Para que sirve realmente
 
-The most powerful and modular AI engine for content creation.**.
+The most powerful and modular AI engine for content creation..
 
 ## Que problema resuelve
 

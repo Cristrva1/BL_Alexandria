@@ -1,6 +1,6 @@
 # Descartar o dejar como alternativa
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 No se descartan por borrado. Se marcan como alternativas cuando duplican funcion con otro repo.
 
@@ -23,6 +23,7 @@ Alternativas declaradas: activepieces, huginn.
 - `n8n-io`: reference_only
 - `n8n-mcp`: reference_only
 - `openevolve`: reference_only
+- `openwa`: reference_only
 - `twenty-main`: reference_only
 - `whatsapp-agentkit`: reference_only
 - `agent-toolkit`: reference_only
@@ -30,6 +31,7 @@ Alternativas declaradas: activepieces, huginn.
 - `antigravity-awesome-skills`: reference_only
 - `awesome-agent-skills`: reference_only
 - `browser-harness`: reference_only
+- `cli`: reference_only
 - `context-engineering`: reference_only
 - `geo-seo-claude`: reference_only
 - `guia`: reference_only
@@ -49,8 +51,11 @@ Alternativas declaradas: activepieces, huginn.
 - `stitch-sdk`: reference_only
 - `stop-slop`: reference_only
 - `superpowers`: reference_only
+- `t3code`: reference_only
 - `ui-ux-pro-max-skill`: reference_only
 - `ag2`: reference_only
+- `agent-protocol`: reference_only
+- `agent-reach`: reference_only
 - `agents-towards-production`: reference_only
 - `autogen`: reference_only
 - `awesome-claude-code`: reference_only
@@ -58,8 +63,11 @@ Alternativas declaradas: activepieces, huginn.
 - `awesome-langgraph`: reference_only
 - `awesome-mcp-servers`: reference_only
 - `codebase-memory-mcp`: reference_only
+- `computer-use-preview`: reference_only
 - `crewai`: reference_only
 - `dash`: reference_only
+- `deepagents`: reference_only
+- `deeptutor`: reference_only
 - `deer-flow`: reference_only
 - `defending-code-reference-harness`: reference_only
 - `dify`: reference_only
@@ -68,29 +76,21 @@ Alternativas declaradas: activepieces, huginn.
 - `gpt-researcher`: reference_only
 - `guardrails`: reference_only
 - `headroom`: reference_only
+- `hermes-desktop`: reference_only
 - `hyperframes`: reference_only
 - `langchain`: reference_only
 - `langflow`: reference_only
+- `langgraph-supervisor-py`: reference_only
+- `langgraphjs`: reference_only
+- `loop-engineering`: reference_only
 - `mcp-use`: reference_only
+- `mercury-agent`: reference_only
 - `nemo-agent-toolkit`: reference_only
+- `nemoclaw`: reference_only
+- `open-swe`: reference_only
+- `openclaw`: reference_only
 - `openhands`: reference_only
 - `openscreen`: reference_only
 - `playwright`: reference_only
 - `ponytail`: reference_only
 - `ruflo`: reference_only
-- `sandbox`: reference_only
-- `scrapling`: reference_only
-- `tooljet`: reference_only
-- `turbovec`: reference_only
-- `archivebox`: reference_only
-- `crawlee`: reference_only
-- `crawlee-python`: reference_only
-- `firecrawl`: reference_only
-- `how-to-train-your-gpt`: reference_only
-- `instaloader`: reference_only
-- `llm-scraper`: reference_only
-- `normalize.css`: reference_only
-- `odysseus`: reference_only
-- `scrapegraph-ai`: reference_only
-- `scrapely`: reference_only
-- `scrapy`: reference_only

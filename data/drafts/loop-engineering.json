@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-08-24T04:26:20.082043+00:00",
+  "profile": {
+    "id": "loop-engineering",
+    "name": "loop-engineering",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\loop-engineering",
+    "repo_url": "https://github.com/cobusgreyling/loop-engineering.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "Loop Engineering",
+      "desc": "> Stop prompting. Design the loop. Get a score."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "postgres"
+    ],
+    "one": "> Stop prompting. Design the loop. Get a score.",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "loop-engineering",
+    "name": "loop-engineering",
+    "cat": 3,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "frontend",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "skills",
+      "typescript"
+    ],
+    "one": "> Stop prompting. Design the loop. Get a score.",
+    "alt": [],
+    "doc": "human/fichas/loop-engineering.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "loop-engineering",
+    "cat": 3,
+    "desc": "> Stop prompting. Design the loop. Get a score.",
+    "stack": "javascript/typescript, typescript, javascript, postgres",
+    "choose_if": "quieres loop engineering",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/cobusgreyling/loop-engineering.git",
+    "doc": "human/fichas/loop-engineering.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.081723+00:00"
+  }
+}

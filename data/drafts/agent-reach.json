@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-08-24T04:26:19.534692+00:00",
+  "profile": {
+    "id": "agent-reach",
+    "name": "Agent-Reach",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Agent-Reach",
+    "repo_url": "https://github.com/Panniantong/Agent-Reach.git",
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "intro": {
+      "title": "给你的 AI Agent 一键装上互联网能力",
+      "desc": "当下最稳的接入方式，替你选好、装好、体检好——接入方式会换代，你不用操心."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "postgres",
+      "whisper"
+    ],
+    "one": "当下最稳的接入方式，替你选好、装好、体检好——接入方式会换代，你不用操心.",
+    "install_hints": [
+      "> Agent Reach 依赖 Agent 执行 shell 命令（`pip install`、`mcporter`、`twitter` 等）。如果你的 OpenClaw 使用了默认的 `messaging` 工具配置，Agent 将无法执行命令。**安装前请先开启 exec "
+    ]
+  },
+  "compact": {
+    "id": "agent-reach",
+    "name": "Agent-Reach",
+    "cat": 3,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "javascript",
+      "multimedia",
+      "postgres",
+      "python",
+      "typescript",
+      "whisper"
+    ],
+    "one": "当下最稳的接入方式，替你选好、装好、体检好——接入方式会换代，你不用操心.",
+    "alt": [],
+    "doc": "human/fichas/agent-reach.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "Agent-Reach",
+    "cat": 3,
+    "desc": "当下最稳的接入方式，替你选好、装好、体检好——接入方式会换代，你不用操心.",
+    "stack": "python, typescript, javascript, postgres, whisper",
+    "choose_if": "quieres 给你的 ai agent 一键装上互联网能力",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/Panniantong/Agent-Reach.git",
+    "doc": "human/fichas/agent-reach.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:19.534424+00:00"
+  }
+}

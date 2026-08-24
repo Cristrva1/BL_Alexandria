@@ -1,14 +1,14 @@
 # cosmos
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
-REFERENCIA
+DIFERIR
 
 ## Para que sirve realmente
 
-Table of Contents.
+Colección NVIDIA Cosmos para modelos de mundo y video. Setup pesado: GPU y checkpoints. No es un editor de imagen ligero.
 
 ## Que problema resuelve
 
@@ -28,7 +28,7 @@ haces tareas de texto/UI o no tienes GPU para servirlo.
 
 ## Tipo de instalacion
 
-reference_only
+deferred
 
 ## Stack / tecnologia detectada
 
@@ -48,7 +48,7 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
 
 ## Ideas profesionales
 
@@ -56,4 +56,4 @@ Combinar con diffusers cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si trabajas IA física/robótica y necesitas datos sintéticos. No debe instalarse por inercia.
+Veredicto: diferir. Tiene sentido si trabajas IA física/robótica y necesitas datos sintéticos. No debe instalarse por inercia.

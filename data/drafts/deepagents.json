@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-08-24T04:26:19.774668+00:00",
+  "profile": {
+    "id": "deepagents",
+    "name": "deepagents",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\deepagents",
+    "repo_url": "https://github.com/langchain-ai/deepagents.git",
+    "manifests": [],
+    "intro": {
+      "title": "The batteries-included agent harness.",
+      "desc": "Deep Agents is an open source agent harness — an opinionated agent that runs out of the box. Extend, override, or replace any piece."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "langchain"
+    ],
+    "one": "Deep Agents is an open source agent harness — an opinionated agent that runs out of the box. Extend, override, or replace any piece.",
+    "install_hints": [
+      "uv add deepagents"
+    ]
+  },
+  "compact": {
+    "id": "deepagents",
+    "name": "deepagents",
+    "cat": 3,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "automation",
+      "javascript",
+      "langchain",
+      "python",
+      "typescript"
+    ],
+    "one": "Deep Agents is an open source agent harness — an opinionated agent that runs out of the box. Extend, override, or replace any piece.",
+    "alt": [],
+    "doc": "human/fichas/deepagents.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "deepagents",
+    "cat": 3,
+    "desc": "Deep Agents is an open source agent harness — an opinionated agent that runs out of the box. Extend, override, or replace any piece.",
+    "stack": "python, typescript, javascript, langchain",
+    "choose_if": "quieres the batteries-included agent harness.",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/langchain-ai/deepagents.git",
+    "doc": "human/fichas/deepagents.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:19.774358+00:00"
+  }
+}

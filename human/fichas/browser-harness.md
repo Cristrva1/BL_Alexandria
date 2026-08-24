@@ -1,6 +1,6 @@
 # browser-harness
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-Browser Harness ♞.
+Connect an LLM directly to your real browser with a thin, editable CDP harness. For browser tasks where you need complete freedom.
 
 ## Que problema resuelve
 

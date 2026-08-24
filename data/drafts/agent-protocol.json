@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-08-24T04:26:19.493865+00:00",
+  "profile": {
+    "id": "agent-protocol",
+    "name": "agent-protocol",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\agent-protocol",
+    "repo_url": "https://github.com/langchain-ai/agent-protocol.git",
+    "manifests": [],
+    "intro": {
+      "title": "Agent Protocol",
+      "desc": "Agent Protocol is our attempt at codifying the framework-agnostic APIs that are needed to serve LLM agents in production. This document explains the purpose of the protocol and makes the case for each of the endpoints in the spec. We finish by listing some roadmap items for the future."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "postgres",
+      "fastapi",
+      "langchain"
+    ],
+    "one": "Agent Protocol is our attempt at codifying the framework-agnostic APIs that are needed to serve LLM agents in production.",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "agent-protocol",
+    "name": "agent-protocol",
+    "cat": 3,
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "automation",
+      "fastapi",
+      "langchain",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "Agent Protocol is our attempt at codifying the framework-agnostic APIs that are needed to serve LLM agents in production.",
+    "alt": [],
+    "doc": "human/fichas/agent-protocol.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "agent-protocol",
+    "cat": 3,
+    "desc": "Agent Protocol is our attempt at codifying the framework-agnostic APIs that are needed to serve LLM agents in production. This document explains the purpose of the protocol and makes the case for each of the endpoints in the spec. We finish by listing some roadmap items for the future.",
+    "stack": "python, typescript, postgres, fastapi, langchain",
+    "choose_if": "quieres agent protocol",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/langchain-ai/agent-protocol.git",
+    "doc": "human/fichas/agent-protocol.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:19.493565+00:00"
+  }
+}

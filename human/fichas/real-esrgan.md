@@ -1,6 +1,6 @@
 # Real-ESRGAN
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ DIFERIR
 
 ## Para que sirve realmente
 
-👀**Demos** **|** 🚩**Updates** **|** ⚡**Usage** **|** 🏰**Model Zoo** **|** 🔧Install **|** 💻Train **|** ❓FAQ **|** 🎨Contribution.
+🔥 RealESRGANx4plusanime6B for anime images (动漫插图模型). Please see [animemodel].
 
 ## Que problema resuelve
 

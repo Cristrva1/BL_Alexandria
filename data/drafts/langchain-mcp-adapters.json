@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-08-24T04:26:19.967629+00:00",
+  "profile": {
+    "id": "langchain-mcp-adapters",
+    "name": "langchain-mcp-adapters",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\langchain-mcp-adapters",
+    "repo_url": "https://github.com/langchain-ai/langchain-mcp-adapters.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "LangChain MCP Adapters",
+      "desc": "This library provides a lightweight wrapper that makes Anthropic Model Context Protocol (MCP) tools compatible with LangChain and LangGraph."
+    },
+    "features": [
+      "📦 A client implementation that allows you to connect to multiple MCP servers and load tools from them"
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "langchain"
+    ],
+    "one": "This library provides a lightweight wrapper that makes Anthropic Model Context Protocol (MCP) tools compatible with LangChain and LangGraph.",
+    "install_hints": [
+      "pip install langchain-mcp-adapters",
+      "pip install langchain-mcp-adapters langgraph \"langchain[openai]\""
+    ]
+  },
+  "compact": {
+    "id": "langchain-mcp-adapters",
+    "name": "langchain-mcp-adapters",
+    "cat": 5,
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "easy",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "langchain",
+      "mcp",
+      "python",
+      "typescript"
+    ],
+    "one": "This library provides a lightweight wrapper that makes Anthropic Model Context Protocol (MCP) tools compatible with LangChain and LangGraph.",
+    "alt": [],
+    "doc": "human/fichas/langchain-mcp-adapters.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "langchain-mcp-adapters",
+    "cat": 5,
+    "desc": "This library provides a lightweight wrapper that makes Anthropic Model Context Protocol (MCP) tools compatible with LangChain and LangGraph.",
+    "stack": "python, typescript, javascript, langchain",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+      "claude-plugins-official",
+      "n8n-skills",
+      "mcp"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/langchain-ai/langchain-mcp-adapters.git",
+    "doc": "human/fichas/langchain-mcp-adapters.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:19.967282+00:00"
+  }
+}

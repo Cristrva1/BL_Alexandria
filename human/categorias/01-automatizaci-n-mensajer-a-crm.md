@@ -1,11 +1,11 @@
 # Automatización, Mensajería & CRM
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 | Repo | Rol | Instalacion | Decision | Uso real |
 |---|---|---|---|---|
-| activepieces | runtime | reference_only | reference | href="https://activepieces.com". |
-| appsmith | platform | reference_only | reference | Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our [website](https://www.appsmith.com?utm_source=github&utm_medium=organic&utm_campaign=readme. |
+| activepieces | runtime | reference_only | reference | Activepieces es un reemplazo open source de Zapier: orquestas automatizaciones con piezas auto-hospedables y un editor visual, sin ceder los datos a un SaaS cerrado. |
+| appsmith | platform | reference_only | reference | Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our website. |
 | browser-use | platform | reference_only | reference | 🌤️ Want to skip the setup? Use our cloud for faster, scalable, stealth-enabled browser automation!. |
 | budibase | platform | reference_only | reference | AI Agents that run your operations Budibase is an open-source operations platform that saves engineers 100s of hours building Agents, Apps and Automations, securely. |
 | chatwoot | library | docker_local | use_now | The modern customer support platform, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc. |
@@ -17,7 +17,7 @@ Generado: 2026-08-24T04:13:47.607813+00:00
 | n8n_io | platform | reference_only | reference | n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments. |
 | n8n-mcp | platform | reference_only | reference | A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations. Deploy in minutes to give Claude and other AI assistants deep knowledge about n8n's 1,845 workflow automation nodes (816 core + 1,029 community). |
 | novu | library | docker_local | use_now | The open-source communication infrastructure for agents and products. |
-| openevolve | library | reference_only | reference | 🧬 The most advanced open-source evolutionary coding agent**. |
+| openevolve | library | reference_only | reference | 🧬 The most advanced open-source evolutionary coding agent. |
+| OpenWA | platform | reference_only | reference | OpenWA is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls. |
 | twenty-main | runtime | reference_only | reference | Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack. |
 | whatsapp-agentkit | directory | reference_only | reference | Construye tu propio agente de WhatsApp con inteligencia artificial en menos de 30 minutos. No necesitas saber programar. Claude Code construye todo por ti. |
-| OpenWA | platform | reference_only | reference | OpenWA** is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls. |

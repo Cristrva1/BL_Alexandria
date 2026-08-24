@@ -1,6 +1,6 @@
 # ArchiveBox
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-▶️ Quickstart | Demo | GitHub | Documentation | Info & Motivation | Communi.
+ArchiveBox is a self-hosted app that lets you preserve content from websites in a variety of formats.
 
 ## Que problema resuelve
 

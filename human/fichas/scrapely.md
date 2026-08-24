@@ -1,6 +1,6 @@
 # scrapely
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-.. image:: https://api.travis-ci.org/scrapy/scrapely.svg?branch=master :target: https://travis-ci.org/scrapy/scrapely.
+some example web pages and the data to be extracted, scrapely constructs a parser for all similar pages.
 
 ## Que problema resuelve
 

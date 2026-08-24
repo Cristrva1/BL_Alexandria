@@ -1,6 +1,6 @@
 # sandbox
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-🌐 Website &nbsp&nbsp.
+AIO Sandbox concentra herramientas de ejecución aislada para agentes: filesystem, red y procesos sin dejarlos sueltos en el host.
 
 ## Que problema resuelve
 

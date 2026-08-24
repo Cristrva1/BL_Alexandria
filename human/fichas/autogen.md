@@ -1,6 +1,6 @@
 # autogen
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-AutoGen ![Maintenance Mode](https://github.com/microsoft/agent-framework).
+AutoGen orquesta conversaciones entre agentes LLM. Está en mantenimiento; para trabajo nuevo revisa el sucesor oficial antes de adoptarlo como runtime.
 
 ## Que problema resuelve
 

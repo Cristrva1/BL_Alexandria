@@ -1,6 +1,6 @@
 # 🌌 Catálogo de Repositorios de IA & Automatización
 
-Catálogo operativo de los **185 repositorios** locales del workspace, diseñado para **entender, comparar, elegir y combinar** repos rápido.
+Catálogo operativo de los **211 repositorios** locales del workspace, diseñado para **entender, comparar, elegir y combinar** repos rápido.
 
 ---
 
@@ -28,7 +28,7 @@ Cada ficha abre con una línea **Etiquetas:** que nombra cada valor — `Ejecuci
 ---
 
 <!-- BL_ALEXANDRIA_STATUS -->
-> Estado actual: **185 repos detectados** en la biblioteca local; **185 repos curados** con ficha completa en esta guía. Los repos nuevos sin ficha curada se agregan al apéndice automático sin reescribir el cuerpo editorial.
+> Estado actual: **211 repos detectados** en la biblioteca local; **212 repos curados** con ficha completa en esta guía. Los repos nuevos sin ficha curada se agregan al apéndice automático sin reescribir el cuerpo editorial.
 <!-- /BL_ALEXANDRIA_STATUS -->
 
 ## 📂 Mapa de categorías
@@ -2513,40 +2513,66 @@ Conversión de formatos, generación de slides y herramientas de PDF.
 <!-- BL_ALEXANDRIA_AUTO_APPEND_START -->
 ## 🆕 Repos detectados pendientes de curaduría
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 Esta sección se actualiza automáticamente para no destruir la guía curada. Integra manualmente estas fichas al cuerpo principal cuando quieras dejar la guía completamente editorial.
 
 | Repo | Categoria | Instalacion | Resumen |
 |---|---:|---|---|
-| [tools](human/fichas/tools.md) | 0 | reference_only |  |
-| [appsmith](human/fichas/appsmith.md) | 1 | reference_only | Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our [website](https://www.appsmith.com?utm_source=github&utm_medium=organic&utm_campaign=readme. |
+| [tools](human/fichas/tools.md) | 0 | reference_only | Carpeta de herramientas auxiliares del hub, no un repositorio de producto. Sirve como referencia interna, no como dependencia de un proyecto. |
+| [appsmith](human/fichas/appsmith.md) | 1 | reference_only | Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our website. |
 | [budibase](human/fichas/budibase.md) | 1 | reference_only | AI Agents that run your operations Budibase is an open-source operations platform that saves engineers 100s of hours building Agents, Apps and Automations, securely. |
-| [browser-harness](human/fichas/browser-harness.md) | 2 | reference_only | Browser Harness ♞. |
-| [guia](human/fichas/guia.md) | 2 | reference_only | Catálogo operativo de los **156 repositorios** locales del workspace, diseñado para **entender, comparar, elegir y combinar** repos rápido. |
-| [last30days-skill](human/fichas/last30days-skill.md) | 2 | reference_only | An AI agent-led search engine scored by upvotes, likes, and real money - not editors.**. |
+| [browser-harness](human/fichas/browser-harness.md) | 2 | reference_only | Connect an LLM directly to your real browser with a thin, editable CDP harness. For browser tasks where you need complete freedom. |
+| [guia](human/fichas/guia.md) | 2 | reference_only | Catálogo operativo de los 156 repositorios locales del workspace, diseñado para entender, comparar, elegir y combinar repos rápido. |
+| [last30days-skill](human/fichas/last30days-skill.md) | 2 | reference_only | An AI agent-led search engine scored by upvotes, likes, and real money - not editors.. |
 | [OpenMontage](human/fichas/openmontage.md) | 2 | reference_only | Turn your AI coding assistant into a full video production studio. Describe what you want in plain language — your agent handles research, scripting, asset generation, editing, and final composition. |
 | [skills_remotion](human/fichas/skills-remotion.md) | 2 | reference_only | This is an internal package and has no documentation. |
 | [stitch-sdk](human/fichas/stitch-sdk.md) | 2 | reference_only | Generate UI screens from text prompts and extract their HTML and screenshots programmatically. |
-| [autogen](human/fichas/autogen.md) | 3 | reference_only | AutoGen ![Maintenance Mode](https://github.com/microsoft/agent-framework). |
-| [codebase-memory-mcp](human/fichas/codebase-memory-mcp.md) | 3 | reference_only | The fastest and most efficient code intelligence engine for AI coding agents.** Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for macOS, Linux, and Windows — download, run `install`, done. |
+| [t3code](human/fichas/t3code.md) | 3 | reference_only | T3 Code orquesta los agentes que ya corren en el host desde una UI (iOS, Android, web, Electron). No sustituye al modelo ni al runtime del agente. |
+| [agent-protocol](human/fichas/agent-protocol.md) | 3 | reference_only | Agent Protocol intenta estandarizar cómo se expone un agente (run, I/O, estado) sin atarse a un framework. Es un spec/directorio, no un runtime completo. |
+| [Agent-Reach](human/fichas/agent-reach.md) | 3 | reference_only | Agent-Reach estabiliza cómo un agente se conecta a proveedores LLM. La idea es que el canal de acceso pueda cambiar sin que reescribas el resto del stack. |
+| [autogen](human/fichas/autogen.md) | 3 | reference_only | AutoGen orquesta conversaciones entre agentes LLM. Está en mantenimiento; para trabajo nuevo revisa el sucesor oficial antes de adoptarlo como runtime. |
+| [codebase-memory-mcp](human/fichas/codebase-memory-mcp.md) | 3 | reference_only | The fastest and most efficient code intelligence engine for AI coding agents. Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for macOS, Linux, and Windows — download, run `install`, done. |
+| [computer-use-preview](human/fichas/computer-use-preview.md) | 3 | reference_only | Preview de Gemini Computer Use: el modelo ve la pantalla y opera UI. Requiere API de Google y no es un agente genérico de código. |
+| [deepagents](human/fichas/deepagents.md) | 3 | reference_only | Deep Agents is an open source agent harness — an opinionated agent that runs out of the box. Extend, override, or replace any piece. |
+| [DeepTutor](human/fichas/deeptutor.md) | 3 | reference_only | DeepTutor es un sistema de tutoría con agentes para aprendizaje continuo. Encaja como producto educativo, no como orquestador genérico. |
 | [defending-code-reference-harness](human/fichas/defending-code-reference-harness.md) | 3 | reference_only | A reference implementation for autonomous vulnerability discovery and remediation with Claude, based on our learnings from partnering with security teams at several organizations since launching Claude Mythos Preview. For a write up of these learnings along with best practices, see the accompanying blog post (also avail. |
-| [Guardrails](human/fichas/guardrails.md) | 3 | reference_only | LATEST RELEASE / DEVELOPMENT VERSION**: The develop branch tracks the latest top of tree development. The latest released version is 0.21.0. |
+| [Guardrails](human/fichas/guardrails.md) | 3 | reference_only | > LATEST RELEASE / DEVELOPMENT VERSION: The develop branch tracks the latest top of tree development. The latest released version is 0.21.0. |
+| [hermes-desktop](human/fichas/hermes-desktop.md) | 8 | reference_only | Hermes Desktop envuelve el agente Hermes en una UI nativa. Úsalo si quieres Hermes como aplicación, no solo como CLI. |
+| [langgraph-supervisor-py](human/fichas/langgraph-supervisor-py.md) | 3 | reference_only | > Note: We now recommend using the supervisor pattern directly via tools rather than this library for most use cases. The tool-calling approach gives you more control over context engineering and is the recommended pattern in the LangChain multi-agent guide. See our supervisor tutorial for a step-by-step guide. We're making this library compatible with LangChain 1. |
+| [langgraphjs](human/fichas/langgraphjs.md) | 3 | reference_only | Implementación TypeScript de LangGraph. Sirve para construir, gestionar y desplegar agentes de larga duración con grafos de estado en Node o el navegador. |
+| [loop-engineering](human/fichas/loop-engineering.md) | 3 | reference_only | > Stop prompting. Design the loop. Get a score. |
+| [mercury-agent](human/fichas/mercury-agent.md) | 3 | reference_only | Remembers what matters. Asks before it acts. Runs 24/7 from CLI, Telegram, or Web. 31 built-in tools, Kanban boards, extensible skills, SQLite-backed Second Brain memory. |
+| [NemoClaw](human/fichas/nemoclaw.md) | 3 | reference_only | NVIDIA NemoClaw is an open source reference stack for running supported AI agents more safely inside NVIDIA OpenShell sandboxes. It provides guided onboarding, managed inference, network policy, managed integrations, snapshots, and lifecycle operations through the NemoClaw CLI and its agent-specific aliases. |
+| [open-swe](human/fichas/open-swe.md) | 3 | reference_only | Elite engineering orgs like Stripe, Ramp, and Coinbase are building their own internal coding agents — Slackbots, CLIs, and web apps that meet engineers where they already work. These agents are connected to internal systems with the right context, permissioning, and safety boundaries to operate with minimal human oversight. |
+| [openclaw](human/fichas/openclaw.md) | 3 | reference_only | OpenClaw is a personal AI assistant that runs on your devices and meets you in the channels you already use. It is designed for a single operator and connects models, tools, messaging channels, and optional companion apps through one Gateway. |
 | [ponytail](human/fichas/ponytail.md) | 3 | reference_only | You know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty lines; he looks at them, says nothing, and replaces them with one. |
-| [repomix](human/fichas/repomix.md) | 3 | global | Need discussion? Join us on Discord ! . |
+| [repomix](human/fichas/repomix.md) | 3 | global | Warp, built for coding with multiple AI agents Available for MacOS, Linux, & Windows. |
 | [ToolJet](human/fichas/tooljet.md) | 3 | reference_only | :star: If you find ToolJet useful, please consider giving us a star on GitHub! Your support helps us continue to innovate and deliver exciting features. |
-| [ArchiveBox](human/fichas/archivebox.md) | 4 | reference_only | ▶️ Quickstart \| Demo \| GitHub \| Documentation \| Info & Motivation \| Communi. |
+| [ArchiveBox](human/fichas/archivebox.md) | 4 | reference_only | ArchiveBox is a self-hosted app that lets you preserve content from websites in a variety of formats. |
+| [pdf-inspector](human/fichas/pdf-inspector.md) | 13 | reference_only | PDF Inspector detecta si un PDF es texto o escaneado y extrae contenido con coordenadas. Encaja en pipelines de documentos, no como visor. |
+| [timesfm](human/fichas/timesfm.md) | 7 | reference_only | TimesFM predice series temporales con un decoder-only pretrained. Es un modelo de investigación/producción de forecasting, no un dashboard. |
 | [awesome-mcp-clients](human/fichas/awesome-mcp-clients.md) | 5 | reference_only | A curated list of awesome Model Context Protocol (MCP) clients. |
+| [context7](human/fichas/context7.md) | 5 | reference_only | Context7 evita que el modelo alucine APIs viejas: trae docs versionadas al contexto. Instálalo como servidor MCP en el agente de código. |
+| [davinci-resolve-mcp](human/fichas/davinci-resolve-mcp.md) | 5 | reference_only | DaVinci Resolve MCP expone edición, media pool, render, color y Fusion a asistentes compatibles con Model Context Protocol. Requiere Resolve abierto y, para scripting externo, la edición Studio. |
+| [engram](human/fichas/engram.md) | 6 | reference_only | Engram da a cualquier agente compatible con MCP una memoria local (o cloud) en un solo binario, sin dependencias pesadas. |
 | [github-mcp-server](human/fichas/github-mcp-server.md) | 5 | reference_only | The GitHub MCP Server connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate workflows. All through natural language interactions. |
+| [langchain-mcp-adapters](human/fichas/langchain-mcp-adapters.md) | 5 | reference_only | Puente ligero entre servidores MCP y el ecosistema LangChain/LangGraph. Librería, no un servidor MCP en sí. |
+| [SWE-bench](human/fichas/swe-bench.md) | 7 | reference_only | SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub. Given a codebase and an issue, a language model is tasked with generating a patch that resolves the described problem. |
 | [daily_stock_analysis](human/fichas/daily-stock-analysis.md) | 9 | reference_only | 🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱. |
-| [gradio](human/fichas/gradio.md) | 9 | reference_only | English \| 中文. |
-| [Nemotron](human/fichas/nemotron.md) | 9 | deferred | Open and efficient models for agentic AI.** Training recipes, deployment guides, and use-case examples for the Nemotron family. |
+| [gradio](human/fichas/gradio.md) | 9 | reference_only | Gradio is an open-source Python package that allows you to quickly build a demo or web application for your machine learning model, API, or any arbitrary Python function. You can then share a link to your demo or web application in just a few seconds using Gradio's built-in sharing features. No JavaScript, CSS, or web hosting experience needed! |
+| [Nemotron](human/fichas/nemotron.md) | 9 | deferred | Open and efficient models for agentic AI. Training recipes, deployment guides, and use-case examples for the Nemotron family. |
 | [stitch-skills](human/fichas/stitch-skills.md) | 9 | reference_only | A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, and Cursor. |
 | [ui](human/fichas/ui.md) | 9 | reference_only | colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. |
 | [vllm](human/fichas/vllm.md) | 9 | reference_only | Easy, fast, and cheap LLM serving for everyone. |
 | [LuxTTS](human/fichas/luxtts.md) | 11 | reference_only | LuxTTS is an lightweight zipvoice based text-to-speech model designed for high quality voice cloning and realistic generation at speeds exceeding 150x realtime. |
 | [NeMo](human/fichas/nemo.md) | 11 | reference_only | Checkout our HuggingFace🤗 collection for the latest open weight checkpoints and demos!. |
+| [Unlimited-OCR](human/fichas/unlimited-ocr.md) | 11 | deferred | Unlimited OCR apunta a extracción de texto y estructura en documentos largos. Setup de visión; no es un editor PDF. |
+| [arcads-claude-code](human/fichas/arcads-claude-code.md) | 2 | reference_only | Plugin de skills que conecta un coding agent con Arcads para piezas creativas (video e imagen). Requiere cuenta Arcads; no es un renderer local. |
 | [FFmpeg](human/fichas/ffmpeg.md) | 12 | reference_only | FFmpeg is a collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata. |
+| [remotion-superpowers](human/fichas/remotion-superpowers.md) | 12 | deferred | A free, open-source Claude Code plugin that turns Remotion into a full video production studio — by Dojo Coding. |
 | [VibeVoice](human/fichas/vibevoice.md) | 12 | reference_only | 🎙️ VibeVoice: Open-Source Frontier Voice AI. |
-| [video-use](human/fichas/video-use.md) | 12 | reference_only | Introducing **video-use** — edit videos with Claude Code. 100% open source. |
+| [video-use](human/fichas/video-use.md) | 12 | reference_only | Introducing video-use — edit videos with Claude Code. 100% open source. |
+| [Wan2GP](human/fichas/wan2gp.md) | 12 | deferred | WanGP is a one-stop super app for the best open source generative models across video, image, audio, and text-to-speech. |
+| [PdfDing](human/fichas/pdfding.md) | 13 | reference_only | PdfDing es un manager de PDFs que hosteas tú. Alternativa ligera a suites documentales pesadas. |
 <!-- BL_ALEXANDRIA_AUTO_APPEND_END -->

@@ -17,10 +17,38 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Evita si:** te basta un agente único o quieres orquestación visual.
 **Combina con:** `langchain`, `langfuse`
 
+## `agent-protocol`
+role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** Agent Protocol intenta estandarizar cómo se expone un agente (run, I/O, estado) sin atarse a un framework. Es un spec/directorio, no un runtime completo.
+**Stack:** python, typescript, postgres, fastapi, langchain
+**Repo:** https://github.com/langchain-ai/agent-protocol.git
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/agent-protocol/). Si necesitas el código: git clone https://github.com/langchain-ai/agent-protocol.git`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres agent protocol
+**Evita si:** —
+**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+
+## `agent-reach`
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** Agent-Reach estabiliza cómo un agente se conecta a proveedores LLM. La idea es que el canal de acceso pueda cambiar sin que reescribas el resto del stack.
+**Stack:** python, typescript, javascript, postgres, whisper
+**Repo:** https://github.com/Panniantong/Agent-Reach.git
+
+**Instalación** [~]: `git clone https://github.com/Panniantong/Agent-Reach.git && cd Agent-Reach && (uv sync || pip install -r requirements.txt)`
+_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+
+**Elige si:** quieres 给你的 ai agent 一键装上互联网能力
+**Evita si:** —
+**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+
 ## `agents-towards-production`
 role=skill · exec=hybrid · setup=heavy · mcp=False · prov=—
 
-**Qué es:** Agents Towards Production.
+**Qué es:** The open-source playbook for turning AI agents into real-world products.
 **Stack:** python, typescript, docker, fastapi, langchain
 **Repo:** https://github.com/NirDiamant/agents-towards-production.git
 
@@ -34,7 +62,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `autogen`
 role=runtime · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** AutoGen ![Maintenance Mode](https://github.com/microsoft/agent-framework).
+**Qué es:** AutoGen orquesta conversaciones entre agentes LLM. Está en mantenimiento; para trabajo nuevo revisa el sucesor oficial antes de adoptarlo como runtime.
 **Stack:** python, typescript, javascript, postgres
 **Repo:** https://github.com/microsoft/autogen.git
 
@@ -62,7 +90,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `awesome-dataviz`
 role=directory · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** A curated list of awesome **open-source** data visualizations frameworks, libraries and software. Inspired by awesome-python and originally created by fasouto.
+**Qué es:** A curated list of awesome open-source data visualizations frameworks, libraries and software. Inspired by awesome-python and originally created by fasouto.
 **Stack:** python, typescript, javascript, react, postgres
 **Repo:** https://github.com/hal9ai/awesome-dataviz.git
 
@@ -104,7 +132,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `codebase-memory-mcp`
 role=runtime · exec=hybrid · setup=medium · mcp=True · prov=—
 
-**Qué es:** The fastest and most efficient code intelligence engine for AI coding agents.** Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for macOS, Linux, and Windows — download, run `install`, done.
+**Qué es:** The fastest and most efficient code intelligence engine for AI coding agents. Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for macOS, Linux, and Windows — download, run `install`, done.
 **Stack:** python, typescript, javascript, docker
 **Repo:** https://github.com/DeusData/codebase-memory-mcp.git
 
@@ -112,6 +140,20 @@ role=runtime · exec=hybrid · setup=medium · mcp=True · prov=—
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
 **Elige si:** —
+**Evita si:** —
+**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+
+## `computer-use-preview`
+role=library · exec=cloud · setup=medium · mcp=False · prov=['google']
+
+**Qué es:** Preview de Gemini Computer Use: el modelo ve la pantalla y opera UI. Requiere API de Google y no es un agente genérico de código.
+**Stack:** python, typescript, react
+**Repo:** https://github.com/google-gemini/computer-use-preview.git
+
+**Instalación** [~]: `pip install computer-use-preview   (o: uv add computer-use-preview)`
+_Nombre PyPI puede diferir de 'computer-use-preview'; verifica en pypi.org._
+
+**Elige si:** quieres computer use preview
 **Evita si:** —
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
@@ -143,10 +185,38 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Evita si:** prefieres prototipos ultrarrápidos ([streamlit](#-streamlit)).
 **Combina con:** `streamlit`, `echarts`
 
+## `deepagents`
+role=library · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Deep Agents is an open source agent harness — an opinionated agent that runs out of the box. Extend, override, or replace any piece.
+**Stack:** python, typescript, javascript, langchain
+**Repo:** https://github.com/langchain-ai/deepagents.git
+
+**Instalación** [~]: `pip install deepagents   (o: uv add deepagents)`
+_Nombre PyPI puede diferir de 'deepagents'; verifica en pypi.org._
+
+**Elige si:** quieres the batteries-included agent harness.
+**Evita si:** —
+**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+
+## `deeptutor`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** DeepTutor es un sistema de tutoría con agentes para aprendizaje continuo. Encaja como producto educativo, no como orquestador genérico.
+**Stack:** python, typescript, javascript, react, docker, postgres, fastapi, langchain
+**Repo:** https://github.com/HKUDS/DeepTutor.git
+
+**Instalación** [~]: `git clone https://github.com/HKUDS/DeepTutor.git && cd DeepTutor && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** quieres deeptutor: lifelong personalized tutoring
+**Evita si:** —
+**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+
 ## `deer-flow`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** English | 中文 | 日本語 | Français | Русский.
+**Qué es:** > On February 28th, 2026, DeerFlow claimed the 🏆 #1 spot on GitHub Trending following the launch of version 2. Thanks a million to our incredible community — you made this happen! 💪🔥.
 **Stack:** python, typescript, javascript, docker, langchain
 **Repo:** https://github.com/bytedance/deer-flow.git
 
@@ -174,7 +244,7 @@ _Nombre PyPI puede diferir de 'defending-code-reference-harness'; verifica en py
 ## `dify`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** alt="chat on Discord"> alt="join Reddit"> alt="follow on X(Twitter)"> alt="follow on LinkedIn"> .
+**Qué es:** Dify is an open-source LLM app development platform. Its intuitive interface combines AI workflow, RAG pipeline, agent capabilities, model management, observability features (including Opik, Langfuse, and Arize Phoenix) and more, letting you quickly go from prototype to production. Here's a list of the core features:.
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker, postgres
 **Repo:** https://github.com/langgenius/dify.git
 
@@ -188,7 +258,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 ## `ecc`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** Official sources only.** Install ECC only from verified channels: the GitHub repository github.com/affaan-m/ECC, the npm packages `ecc-universal` and `ecc-agentshield`, the GitHub App, the plugin slug `ecc@ecc`, and the project website [ecc.tools](http.
+**Qué es:** Official sources only. Install ECC only from verified channels: the GitHub repository github.com/affaan-m/ECC, the npm packages `ecc-universal` and `ecc-agentshield`, the GitHub App, the plugin slug `ecc@ecc`, and the project website ecc.tools.
 **Stack:** python, typescript, javascript, react, docker, postgres, fastapi
 **Repo:** https://github.com/affaan-m/ECC.git
 
@@ -202,7 +272,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 ## `flowise`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** English | 繁體中文 | 简体中文 | 日本語 | 한국어.
+**Qué es:** Flowise es un constructor visual de cadenas y agentes LLM. Encaja si quieres prototipar orquestación con nodos, no si necesitas un runtime embebido en tu código.
 **Stack:** javascript/typescript, typescript, javascript, react, docker
 **Repo:** https://github.com/FlowiseAI/Flowise.git
 
@@ -216,7 +286,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 ## `gpt-researcher`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** 🔎 GPT Researcher.
+**Qué es:** GPT Researcher the first open deep research agent designed for both web and local research on any given task.
 **Stack:** python, typescript, javascript, react, docker, fastapi, langchain
 **Repo:** https://github.com/assafelovic/gpt-researcher.git
 
@@ -230,7 +300,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `guardrails`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** LATEST RELEASE / DEVELOPMENT VERSION**: The develop branch tracks the latest top of tree development. The latest released version is 0.21.0.
+**Qué es:** > LATEST RELEASE / DEVELOPMENT VERSION: The develop branch tracks the latest top of tree development. The latest released version is 0.21.0.
 **Stack:** python, typescript, javascript, react, docker, langchain
 **Repo:** https://github.com/NVIDIA-NeMo/Guardrails.git
 
@@ -244,7 +314,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 ## `headroom`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** ██╗ ██╗███████╗ █████╗ ██████╗ ██████╗ ██████╗ ██████╗ ███╗ ███╗ ██║ ██║██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗██╔═══██╗████╗ ████║ ███████║█████╗ ███████║██║ ██║██████╔╝██║ ██║██║ ██║██╔████╔██║ ██╔══██║██╔══╝ ██╔══██║██║ ██║██╔══██╗██║ ██║██║ ██║██║╚██╔╝██║ ██║ ██║███████╗██║ ██║██████╔╝██║ ██║╚██████╔╝╚██████╔╝██║ ╚═╝ ██║ ╚═╝ ╚═╝╚══════╝╚═╝ ╚═╝╚═════╝ ╚═╝ ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═╝ .
+**Qué es:** 60–95% fewer tokens · library · proxy · MCP · 6 algorithms · local-first · reversible.
 **Stack:** python, typescript, javascript, docker, postgres, langchain
 **Repo:** https://github.com/headroomlabs-ai/headroom.git
 
@@ -286,7 +356,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 ## `langflow`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** ✨ Highlight features.
+**Qué es:** Langflow is a powerful platform for building and deploying AI-powered agents and workflows. It provides developers with both a visual authoring experience and built-in API and MCP servers that turn every workflow into a tool that can be integrated into applications built on any framework or stack.
 **Stack:** python, typescript, javascript, docker
 **Repo:** https://github.com/langflow-ai/langflow.git
 
@@ -300,7 +370,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 ## `langfuse`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** alt="chat on Discord"> alt="follow on X(Twitter)"> alt="follow on LinkedIn"> .
+**Qué es:** Langfuse uses GitHub Discussions for Support and Feature Requests.
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker, fastapi, langchain
 **Repo:** https://github.com/langfuse/langfuse.git
 
@@ -310,6 +380,48 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Elige si:** operas agentes en serio y necesitas trazas/costes/eval
 **Evita si:** haces prototipos triviales o no quieres operar el backend.
 **Combina con:** `langchain`, `litellm`, `ag2`
+
+## `langgraph-supervisor-py`
+role=runtime · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** > Note: We now recommend using the supervisor pattern directly via tools rather than this library for most use cases. The tool-calling approach gives you more control over context engineering and is the recommended pattern in the LangChain multi-agent guide. See our supervisor tutorial for a step-by-step guide. We're making this library compatible with LangChain 1.
+**Stack:** python, typescript, react, postgres, langchain
+**Repo:** https://github.com/langchain-ai/langgraph-supervisor-py.git
+
+**Instalación** [~]: `git clone https://github.com/langchain-ai/langgraph-supervisor-py.git && cd langgraph-supervisor-py && (uv sync || pip install -r requirements.txt)`
+_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+
+**Elige si:** quieres 🤖 langgraph multi-agent supervisor
+**Evita si:** —
+**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+
+## `langgraphjs`
+role=runtime · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Implementación TypeScript de LangGraph. Sirve para construir, gestionar y desplegar agentes de larga duración con grafos de estado en Node o el navegador.
+**Stack:** javascript/typescript, javascript
+**Repo:** https://github.com/langchain-ai/langgraphjs.git
+
+**Instalación** [~]: `git clone https://github.com/langchain-ai/langgraphjs.git && cd langgraphjs && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+
+**Elige si:** quieres libs/langgraph-core/readme.md
+**Evita si:** —
+**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+
+## `loop-engineering`
+role=skill · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** > Stop prompting. Design the loop. Get a score.
+**Stack:** javascript/typescript, typescript, javascript, postgres
+**Repo:** https://github.com/cobusgreyling/loop-engineering.git
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/loop-engineering/). Si necesitas el código: git clone https://github.com/cobusgreyling/loop-engineering.git`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres loop engineering
+**Evita si:** —
+**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `mcp-use`
 role=platform · exec=hybrid · setup=medium · mcp=True · prov=—
@@ -325,10 +437,24 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Evita si:** solo buscas usar uno ya hecho ([awesome-mcp-servers](#-awesome-mcp-servers)) o necesitas control a nivel spec.
 **Combina con:** `mcp`, `awesome-mcp-servers`, `app mcp`
 
+## `mercury-agent`
+role=skill · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Remembers what matters. Asks before it acts. Runs 24/7 from CLI, Telegram, or Web. 31 built-in tools, Kanban boards, extensible skills, SQLite-backed Second Brain memory.
+**Stack:** javascript/typescript, typescript, javascript, react, postgres
+**Repo:** https://github.com/cosmicstack-labs/mercury-agent.git
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/mercury-agent/). Si necesitas el código: git clone https://github.com/cosmicstack-labs/mercury-agent.git`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres soul-driven ai agent with permission-hardened tools, token budgets, and multi-channel acce
+**Evita si:** —
+**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+
 ## `nemo-agent-toolkit`
 role=directory · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** SPDX-License-Identifier: Apache-2.0.
+**Qué es:** NVIDIA NeMo Agent Toolkit adds intelligence to AI agents across any framework—enhancing speed, accuracy, and decision-making through enterprise-grade instrumentation, observability, and continuous learning.
 **Stack:** python, typescript, javascript, react, fastapi, langchain
 **Repo:** https://github.com/NVIDIA/NeMo-Agent-Toolkit.git
 
@@ -338,6 +464,48 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Elige si:** trabajas con infra NVIDIA o necesitas guardrails/eval empresarial
 **Evita si:** quieres algo ligero y agnóstico.
 **Combina con:** `langchain`
+
+## `nemoclaw`
+role=skill · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** NVIDIA NemoClaw is an open source reference stack for running supported AI agents more safely inside NVIDIA OpenShell sandboxes. It provides guided onboarding, managed inference, network policy, managed integrations, snapshots, and lifecycle operations through the NemoClaw CLI and its agent-specific aliases.
+**Stack:** javascript/typescript, python, typescript, javascript, docker, postgres, langchain
+**Repo:** https://github.com/NVIDIA/NemoClaw.git
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/NemoClaw/). Si necesitas el código: git clone https://github.com/NVIDIA/NemoClaw.git`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres nvidia nemoclaw: reference stack for sandboxed ai agents in openshell
+**Evita si:** —
+**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+
+## `open-swe`
+role=platform · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Elite engineering orgs like Stripe, Ramp, and Coinbase are building their own internal coding agents — Slackbots, CLIs, and web apps that meet engineers where they already work. These agents are connected to internal systems with the right context, permissioning, and safety boundaries to operate with minimal human oversight.
+**Stack:** python, typescript, javascript, react, docker, postgres, langchain
+**Repo:** https://github.com/langchain-ai/open-swe.git
+
+**Instalación** [~]: `git clone https://github.com/langchain-ai/open-swe.git && cd open-swe && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** quieres open-source framework for building your org's internal coding agent.
+**Evita si:** —
+**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+
+## `openclaw`
+role=library · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** OpenClaw is a personal AI assistant that runs on your devices and meets you in the channels you already use. It is designed for a single operator and connects models, tools, messaging channels, and optional companion apps through one Gateway.
+**Stack:** javascript/typescript, typescript, javascript, docker, postgres
+**Repo:** https://github.com/openclaw/openclaw.git
+
+**Instalación** [~]: `npm install openclaw   (o: pnpm add openclaw)`
+_Nombre npm puede diferir de 'openclaw'; verifica en npmjs.com._
+
+**Elige si:** quieres openclaw 🦞 — your assistant, on your devices, in your chats
+**Evita si:** —
+**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `openhands`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -356,7 +524,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 ## `openscreen`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** This started as a side project that blew up; not production grade and you'll hit bugs, but hopefully it covers what you need. **This project will soon be archived.**.
+**Qué es:** This started as a side project that blew up; not production grade and you'll hit bugs, but hopefully it covers what you need. This project will soon be archived..
 **Stack:** javascript/typescript, typescript, javascript, postgres
 **Repo:** https://github.com/siddharthvaddem/openscreen.git
 
@@ -398,7 +566,7 @@ _Nombre PyPI puede diferir de 'ponytail'; verifica en pypi.org._
 ## `repomix`
 role=library · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** Need discussion? Join us on Discord ! .
+**Qué es:** Warp, built for coding with multiple AI agents Available for MacOS, Linux, & Windows.
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker, postgres
 **Repo:** https://github.com/yamadashy/repomix.git
 
@@ -412,7 +580,7 @@ _Nombre PyPI puede diferir de 'repomix'; verifica en pypi.org._
 ## `ruflo`
 role=runtime · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** An agent meta-harness for Claude Code and Codex.**.
+**Qué es:** An agent meta-harness for Claude Code and Codex..
 **Stack:** javascript/typescript, typescript, javascript, react, docker, postgres
 **Repo:** https://github.com/ruvnet/ruflo.git
 
@@ -426,7 +594,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 ## `sandbox`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** AIO Sandbox - All-in-One Agent Sandbox Environment
+**Qué es:** AIO Sandbox concentra herramientas de ejecución aislada para agentes: filesystem, red y procesos sin dejarlos sueltos en el host.
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker, langchain
 **Repo:** https://github.com/agent-infra/sandbox.git
 
@@ -451,6 +619,20 @@ _Nombre PyPI puede diferir de 'Scrapling'; verifica en pypi.org._
 **Evita si:** el target es estable y simple, o no necesitas stealth.
 **Combina con:** `scrapy`
 
+## `t3code`
+role=app · exec=cloud · setup=medium · mcp=False · prov=—
+
+**Qué es:** T3 Code orquesta los agentes que ya corren en el host desde una UI (iOS, Android, web, Electron). No sustituye al modelo ni al runtime del agente.
+**Stack:** javascript/typescript, typescript, javascript, react
+**Repo:** https://github.com/pingdotgg/t3code.git
+
+**Instalación** [+]: `Crear cuenta / API key en el proveedor (no self-host).`
+_Servicio gestionado; no se clona._
+
+**Elige si:** quieres t3 code is an "agent harness control surface". it enables control of the agents on your ma
+**Evita si:** —
+**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+
 ## `tooljet`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=—
 
@@ -468,7 +650,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 ## `turbovec`
 role=directory · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** A 10 million document corpus takes 31 GB of RAM as float32. turbovec fits it in 4 GB - and searches it faster than FAISS.**.
+**Qué es:** A 10 million document corpus takes 31 GB of RAM as float32. turbovec fits it in 4 GB - and searches it faster than FAISS..
 **Stack:** python, typescript, langchain
 **Repo:** https://github.com/RyanCodrai/turbovec.git
 

@@ -1,6 +1,6 @@
 # motion
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ DIFERIR
 
 ## Para que sirve realmente
 
-An open source animation library for JavaScript, React and Vue.
+Motion (antes Framer Motion) anima interfaces web con una API declarativa. Úsala en el frontend, no como motor de video.
 
 ## Que problema resuelve
 
@@ -16,7 +16,7 @@ animas componentes React con API declarativa
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para javascript, javascript-typescript, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react.
+Aporta valor en `library` para javascript, javascript-typescript, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react.
 
 ## Cuando usarlo
 

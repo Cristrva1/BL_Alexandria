@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-08-24T04:26:19.919015+00:00",
+  "profile": {
+    "id": "hermes-desktop",
+    "name": "hermes-desktop",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\hermes-desktop",
+    "repo_url": "https://github.com/fathah/hermes-desktop.git",
+    "manifests": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "Español (LATAM)",
+      "desc": "> This project is in active development. Features may change, and some things might break. If you run into a problem or have an idea, open an issue. Contributions are welcome!"
+    },
+    "features": [
+      "**Guided first-run install** for Hermes Agent with progress tracking and dependency resolution",
+      "**Streaming chat UI** with SSE streaming, tool progress indicators, markdown rendering, and syntax highlighting",
+      "**Session management** — full-text search (SQLite FTS5), date-grouped history, resume and search across conversations",
+      "**Profile switching** — create, delete, and switch between separate Hermes environments with isolated config",
+      "**Persona editor** — edit and reset your agent's SOUL.md personality",
+      "**Saved models** — CRUD management for model configurations across providers"
+    ],
+    "stack": [
+      "javascript/typescript",
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "postgres"
+    ],
+    "one": "> This project is in active development. Features may change, and some things might break. If you run into a problem or have an idea, open an issue. Contributions are welcome!",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "hermes-desktop",
+    "name": "hermes-desktop",
+    "cat": 3,
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "> This project is in active development. Features may change, and some things might break. If you run into a problem or have an idea, open an issue. Contributions are welcome!",
+    "alt": [],
+    "doc": "human/fichas/hermes-desktop.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "hermes-desktop",
+    "cat": 3,
+    "desc": "> This project is in active development. Features may change, and some things might break. If you run into a problem or have an idea, open an issue. Contributions are welcome!",
+    "stack": "javascript/typescript, python, typescript, javascript, react, postgres",
+    "choose_if": "quieres español (latam)",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/fathah/hermes-desktop.git",
+    "doc": "human/fichas/hermes-desktop.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:19.918780+00:00"
+  }
+}

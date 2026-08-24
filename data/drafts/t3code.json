@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-08-24T04:26:20.465075+00:00",
+  "profile": {
+    "id": "t3code",
+    "name": "t3code",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\t3code",
+    "repo_url": "https://github.com/pingdotgg/t3code.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml"
+    ],
+    "intro": {
+      "title": "",
+      "desc": "T3 Code is an \"agent harness control surface\". It enables control of the agents on your machine with a best-in-class mobile app (iOS, Android), web app and Electron-based desktop app."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react"
+    ],
+    "one": "T3 Code is an \"agent harness control surface\". It enables control of the agents on your machine with a best-in-class mobile app (iOS, Android), web app and Electron-based desktop app.",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "t3code",
+    "name": "t3code",
+    "cat": 2,
+    "role": "platform",
+    "exec": "cloud",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "javascript",
+      "javascript-typescript",
+      "react",
+      "typescript"
+    ],
+    "one": "T3 Code is an \"agent harness control surface\". It enables control of the agents on your machine with a best-in-class mobile app (iOS, Android), web app and Electron-based desktop app.",
+    "alt": [],
+    "doc": "human/fichas/t3code.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "t3code",
+    "cat": 2,
+    "desc": "T3 Code is an \"agent harness control surface\". It enables control of the agents on your machine with a best-in-class mobile app (iOS, Android), web app and Electron-based desktop app.",
+    "stack": "javascript/typescript, typescript, javascript, react",
+    "choose_if": "quieres t3 code is an \"agent harness control surface\". it enables control of the agents on your ma",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/pingdotgg/t3code.git",
+    "doc": "human/fichas/t3code.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.464877+00:00"
+  }
+}

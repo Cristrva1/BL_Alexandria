@@ -20,7 +20,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `andrej-karpathy-skills`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** Check out my new project Multica — an open-source platform for running and managing coding agents with reusable skills.
+**Qué es:** > Check out my new project Multica — an open-source platform for running and managing coding agents with reusable skills.
 **Stack:** typescript
 **Repo:** https://github.com/multica-ai/andrej-karpathy-skills.git
 
@@ -45,10 +45,24 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Evita si:** prefieres curaduría oficial y respaldo de marca ([awesome-agent-skills](#-awesome-agent-skills)).
 **Combina con:** `skillspector`, `awesome-agent-skills`
 
+## `arcads-claude-code`
+role=skill · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Plugin de skills que conecta un coding agent con Arcads para piezas creativas (video e imagen). Requiere cuenta Arcads; no es un renderer local.
+**Stack:** python, typescript, javascript, react, postgres, whisper
+**Repo:** https://github.com/krusemediallc/arcads-claude-code.git
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/arcads-claude-code/). Si necesitas el código: git clone https://github.com/krusemediallc/arcads-claude-code.git`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres arcads ai video — agent skill pack
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `fluxer`, `whisper`, `faster-whisper`
+
 ## `autoresearch`
 role=platform · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synchronizing once in a while using sound wave interconnect in the ritual of "group meeting". That era is long gone. Research is now entirely the domain of autonomous swarms of AI agents running across compute cluster megastructures in the skies. The agents claim that we are now in th
+**Qué es:** One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synchronizing once in a while using sound wave interconnect in the ritual of "group meeting". That era is long gone. Research is now entirely the domain of autonomous swarms of AI agents running across compute cluster megastructures in the skies.
 **Stack:** python, typescript
 **Repo:** https://github.com/karpathy/autoresearch.git
 
@@ -62,7 +76,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 ## `awesome-agent-skills`
 role=skill · exec=cloud · setup=heavy · mcp=False · prov=—
 
-**Qué es:** Hand-picked, not AI-slop generated.
+**Qué es:** Directorio de agent skills revisado a mano. Úsalo para elegir piezas concretas; no instales el catálogo entero.
 **Stack:** python, typescript, javascript, react, docker, postgres, fastapi, langchain, whisper
 **Repo:** https://github.com/VoltAgent/awesome-agent-skills.git
 
@@ -76,7 +90,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `browser-harness`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** Browser Harness ♞.
+**Qué es:** Connect an LLM directly to your real browser with a thin, editable CDP harness. For browser tasks where you need complete freedom.
 **Stack:** python, typescript, postgres
 **Repo:** https://github.com/browser-use/browser-harness.git
 
@@ -90,7 +104,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `context-engineering`
 role=runtime · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** Context Engineering.
+**Qué es:** > "Context engineering is the delicate art and science of filling the context window with just the right information for the next step." — Andrej Karpathy.
 **Stack:** python, typescript, react, postgres
 **Repo:** https://github.com/jasontang-ai/Context-Engineering.git
 
@@ -118,7 +132,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `guia`
 role=skill · exec=hybrid · setup=heavy · mcp=False · prov=—
 
-**Qué es:** Catálogo operativo de los **156 repositorios** locales del workspace, diseñado para **entender, comparar, elegir y combinar** repos rápido.
+**Qué es:** Catálogo operativo de los 156 repositorios locales del workspace, diseñado para entender, comparar, elegir y combinar repos rápido.
 **Stack:** typescript, whisper, comfy
 **Repo:** —
 
@@ -132,7 +146,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `hermes-agent`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** The self-improving AI agent built by Nous Research.** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing w.
+**Qué es:** The self-improving AI agent built by Nous Research. It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing w.
 **Stack:** python, typescript, javascript, docker, postgres
 **Repo:** https://github.com/NousResearch/hermes-agent.git
 
@@ -160,7 +174,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `last30days-skill`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** An AI agent-led search engine scored by upvotes, likes, and real money - not editors.**.
+**Qué es:** An AI agent-led search engine scored by upvotes, likes, and real money - not editors..
 **Stack:** python, typescript, javascript, react
 **Repo:** https://github.com/mvanhorn/last30days-skill.git
 
@@ -174,7 +188,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `llm-council`
 role=platform · exec=cloud · setup=medium · mcp=False · prov=—
 
-**Qué es:** The idea of this repo is that instead of asking a question to your favorite LLM provider (e.g. OpenAI GPT 5.1, Google Gemini 3.0 Pro, Anthropic Claude Sonnet 4.5, xAI Grok 4, eg.c), you can group them into your "LLM Council". This repo is a simple, local web app that essentially looks like ChatGPT except it uses OpenRouter to send your query to multiple LLMs, it then asks them to review and rank e
+**Qué es:** The idea of this repo is that instead of asking a question to your favorite LLM provider (e.g. OpenAI GPT 5.1, Google Gemini 3.0 Pro, Anthropic Claude Sonnet 4.5, xAI Grok 4, eg.c), you can group them into your "LLM Council".
 **Stack:** python, typescript, javascript, react, postgres, fastapi
 **Repo:** https://github.com/karpathy/llm-council.git
 
@@ -202,7 +216,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `multica`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** Your next 10 hires won't be human.**.
+**Qué es:** The open-source managed agents platform.
 **Stack:** javascript/typescript, typescript, javascript, react, docker, postgres
 **Repo:** https://github.com/multica-ai/multica.git
 
@@ -213,10 +227,24 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Evita si:** quieres automatización 100% headless o un producto maduro.
 **Combina con:** `ruflo`, `chatwoot`
 
+## `n8n-skills`
+role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** Paquete de skills para construir flujos n8n con un agente. Combínalo con n8n y n8n-mcp; no sustituye la instancia de n8n.
+**Stack:** python, typescript, javascript, docker, postgres, langchain
+**Repo:** https://github.com/czlonkowski/n8n-skills.git
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/n8n-skills/). Si necesitas el código: git clone https://github.com/czlonkowski/n8n-skills.git`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** generas workflows n8n con IA y te cansan los fallos de JSON
+**Evita si:** no usas n8n.
+**Combina con:** `n8n`, `n8n-mcp`
+
 ## `nanogpt`
 role=library · exec=cloud · setup=heavy · mcp=False · prov=—
 
-**Qué es:** Update Nov 2025** nanoGPT has a new and improved cousin called nanochat. It is very likely you meant to use/find nanochat instead. nanoGPT (this repo) is now very old and deprecated but I will leave it up for posterity.
+**Qué es:** Update Nov 2025 nanoGPT has a new and improved cousin called nanochat. It is very likely you meant to use/find nanochat instead. nanoGPT (this repo) is now very old and deprecated but I will leave it up for posterity.
 **Stack:** python, typescript, javascript, postgres
 **Repo:** https://github.com/karpathy/nanoGPT.git
 
@@ -230,7 +258,7 @@ _Nombre PyPI puede diferir de 'nanoGPT'; verifica en pypi.org._
 ## `notebooklm-py`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** A Comprehensive NotebookLM Skill & Unofficial Python API.** Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.
+**Qué es:** A Comprehensive NotebookLM Skill & Unofficial Python API. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.
 **Stack:** python, typescript, javascript, postgres, fastapi
 **Repo:** https://github.com/teng-lin/notebooklm-py.git
 
@@ -244,7 +272,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `open-generative-ai`
 role=skill · exec=hybrid · setup=heavy · mcp=False · prov=—
 
-**Qué es:** The free, open-source alternative to AI Video Platforms.** Generate AI images and videos using 200+ state-of-the-art models — no content filters, no closed ecosystem, no subscription fees.
+**Qué es:** The free, open-source alternative to AI Video Platforms. Generate AI images and videos using 200+ state-of-the-art models — no content filters, no closed ecosystem, no subscription fees.
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker, comfy
 **Repo:** https://github.com/Anil-matcha/Open-Generative-AI.git
 
@@ -272,7 +300,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `playwright-cli`
 role=skill · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** Playwright CLI with SKILLS.
+**Qué es:** Playwright CLI empaquetado con skills de agente: permite manejar Chromium/Firefox/WebKit en scripts y en flujos de coding agents.
 **Stack:** javascript/typescript, python, typescript, javascript
 **Repo:** https://github.com/microsoft/playwright-cli.git
 
@@ -314,7 +342,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `skillspector`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** Security scanner for AI agent skills.** Detect vulnerabilities, malicious patterns, and security risks before installing agent skills.
+**Qué es:** Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks before installing agent skills.
 **Stack:** python, typescript, javascript, docker
 **Repo:** https://github.com/NVIDIA/SkillSpector.git
 
@@ -366,6 +394,20 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Elige si:** quieres método, no fragmentos sueltos
 **Evita si:** solo necesitas una skill aislada puntual.
 **Combina con:** `awesome-claude-code`, `agent-toolkit`
+
+## `taste-skill`
+role=skill · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** taste-skill corrige interfaces generadas por agentes: jerarquía visual, tipo, movimiento y espacio. No es un kit de componentes.
+**Stack:** typescript, react, postgres
+**Repo:** https://github.com/Leonxlnx/taste-skill.git
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/taste-skill/). Si necesitas el código: git clone https://github.com/Leonxlnx/taste-skill.git`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres frontends con gusto y no te basta con UI funcional
+**Evita si:** ya tienes un design system cerrado o no usas generadores de imagen.
+**Combina con:** `ui-ux-pro-max-skill`, `impeccable`
 
 ## `ui-ux-pro-max-skill`
 role=skill · exec=local · setup=medium · mcp=False · prov=—

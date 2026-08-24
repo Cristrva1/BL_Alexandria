@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-08-24T04:26:20.311816+00:00",
+  "profile": {
+    "id": "pdf-inspector",
+    "name": "pdf-inspector",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\pdf-inspector",
+    "repo_url": "https://github.com/firecrawl/pdf-inspector.git",
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "intro": {
+      "title": "pdf-inspector",
+      "desc": "Fast Rust library for PDF classification and text extraction. By default it detects whether a PDF is text-based or scanned, extracts text with position awareness, and converts to clean Markdown without OCR. Native Rust and CLI consumers can opt into selective OCR. Includes bindings for Python, Node.js, and browser WebAssembly."
+    },
+    "features": [
+      "**CID font support** — ToUnicode CMap decoding for Type0/Identity-H fonts, UTF-16BE, UTF-8, and Latin-1 encodings.",
+      "**Encoding issue detection** — Automatically flags broken font encodings so callers can fall back to OCR."
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript"
+    ],
+    "one": "Fast Rust library for PDF classification and text extraction. By default it detects whether a PDF is text-based or scanned, extracts text with position awareness, and converts to clean Markdown without OCR.",
+    "install_hints": [
+      "pip install pdf-inspector"
+    ]
+  },
+  "compact": {
+    "id": "pdf-inspector",
+    "name": "pdf-inspector",
+    "cat": 4,
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "python",
+      "typescript"
+    ],
+    "one": "Fast Rust library for PDF classification and text extraction. By default it detects whether a PDF is text-based or scanned, extracts text with position awareness, and converts to clean Markdown without OCR.",
+    "alt": [],
+    "doc": "human/fichas/pdf-inspector.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "pdf-inspector",
+    "cat": 4,
+    "desc": "Fast Rust library for PDF classification and text extraction. By default it detects whether a PDF is text-based or scanned, extracts text with position awareness, and converts to clean Markdown without OCR. Native Rust and CLI consumers can opt into selective OCR. Includes bindings for Python, Node.js, and browser WebAssembly.",
+    "stack": "python, typescript, javascript",
+    "choose_if": "quieres pdf-inspector",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "firecrawl",
+      "crawl4ai",
+      "scrapy"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/firecrawl/pdf-inspector.git",
+    "doc": "human/fichas/pdf-inspector.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.311582+00:00"
+  }
+}

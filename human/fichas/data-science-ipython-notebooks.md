@@ -1,6 +1,6 @@
 # data-science-ipython-notebooks
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-data-science-ipython-notebooks.
+Directorio de notebooks educativos de data science. Es material de referencia, no una librería para importar en producción.
 
 ## Que problema resuelve
 
@@ -16,7 +16,7 @@ estudias/consultas DS con ejemplos ejecutables
 
 ## Por que tiene valor
 
-Aporta valor en `library` para postgres, python, typescript. Stack declarado: python, typescript, postgres.
+Aporta valor en `directory` para postgres, python, typescript. Stack declarado: python, typescript, postgres.
 
 ## Cuando usarlo
 
@@ -49,7 +49,7 @@ Repo local detectado: si
 
 ## Riesgos
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
 
 ## Ideas profesionales
 

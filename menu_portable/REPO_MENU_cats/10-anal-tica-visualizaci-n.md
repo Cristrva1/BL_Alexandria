@@ -6,7 +6,7 @@
 ## `streamlit`
 role=platform · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** Welcome to Streamlit 👋.
+**Qué es:** A faster way to build and share data apps.
 **Stack:** python, typescript
 **Repo:** https://github.com/streamlit/streamlit.git
 

@@ -1,6 +1,6 @@
 # Scrapegraph-ai
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-🕷️ ScrapeGraphAI: You Only Scrape Once.
+ScrapeGraphAI convierte una instrucción en un grafo de extracción web. Encaja cuando el HTML es irregular y un scraper clásico se rompe.
 
 ## Que problema resuelve
 

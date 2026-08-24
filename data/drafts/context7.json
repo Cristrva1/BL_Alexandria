@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-08-24T04:26:19.685421+00:00",
+  "profile": {
+    "id": "context7",
+    "name": "context7",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\context7",
+    "repo_url": "https://github.com/upstash/context7.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml"
+    ],
+    "intro": {
+      "title": "Context7 Platform - Up-to-date Code Docs For Any Prompt",
+      "desc": "LLMs rely on outdated or generic information about the libraries you use. You get:."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react"
+    ],
+    "one": "LLMs rely on outdated or generic information about the libraries you use. You get:.",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "context7",
+    "name": "context7",
+    "cat": 5,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "javascript-typescript",
+      "react",
+      "typescript"
+    ],
+    "one": "LLMs rely on outdated or generic information about the libraries you use. You get:.",
+    "alt": [],
+    "doc": "human/fichas/context7.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "context7",
+    "cat": 5,
+    "desc": "LLMs rely on outdated or generic information about the libraries you use. You get:.",
+    "stack": "javascript/typescript, typescript, javascript, react",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+      "claude-plugins-official",
+      "n8n-skills",
+      "mcp"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/upstash/context7.git",
+    "doc": "human/fichas/context7.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:19.685200+00:00"
+  }
+}

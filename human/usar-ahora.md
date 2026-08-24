@@ -1,6 +1,6 @@
 # Usar ahora
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## chatwoot
 
@@ -42,19 +42,19 @@ The open-source communication infrastructure for agents and products.
 
 Tipo: `docker_local`
 
-alt="chat on Discord"> alt="follow on X(Twitter)"> alt="follow on LinkedIn"> .
+Langfuse uses GitHub Discussions for Support and Feature Requests.
 
 ## repomix
 
 Tipo: `global`
 
-Need discussion? Join us on Discord ! .
+Warp, built for coding with multiple AI agents Available for MacOS, Linux, & Windows.
 
 ## crawl4ai
 
 Tipo: `local_project`
 
-🚀 Crawl4AI Cloud API — Closed Beta (Launching Soon) Reliable, large-scale web extraction, now built to be _**drastically more cost-effective**_ than any of the existing solutions.
+🚀 Crawl4AI Cloud API — Closed Beta (Launching Soon) Reliable, large-scale web extraction, now built to be _drastically more cost-effective_ than any of the existing solutions.
 
 ## metabase
 
@@ -66,7 +66,7 @@ The easiest way to get started with Metabase is to sign up for a free trial of M
 
 Tipo: `global`
 
-⚠️ Important Notice:** GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name on Pump.fun or any other platform is **not affiliated with, endorsed by, or created by** this project or its maintainers. Do not purchase any cryptocurrency claiming association with GitNexus.
+⚠️ Important Notice: GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name on Pump.fun or any other platform is not affiliated with, endorsed by, or created by this project or its maintainers. Do not purchase any cryptocurrency claiming association with GitNexus.
 
 ## posthog
 

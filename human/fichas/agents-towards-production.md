@@ -1,6 +1,6 @@
 # agents-towards-production
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-Agents Towards Production.
+The open-source playbook for turning AI agents into real-world products.
 
 ## Que problema resuelve
 

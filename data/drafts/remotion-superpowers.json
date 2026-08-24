@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-08-24T04:26:20.382519+00:00",
+  "profile": {
+    "id": "remotion-superpowers",
+    "name": "remotion-superpowers",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\remotion-superpowers",
+    "repo_url": "https://github.com/DojoCodingLabs/remotion-superpowers.git",
+    "manifests": [],
+    "intro": {
+      "title": "🎬 Remotion Superpowers v2.1",
+      "desc": "A free, open-source Claude Code plugin that turns Remotion into a full video production studio — by Dojo Coding."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "whisper"
+    ],
+    "one": "A free, open-source Claude Code plugin that turns Remotion into a full video production studio — by Dojo Coding.",
+    "install_hints": [
+      "git clone https://github.com/DojoCodingLabs/remotion-superpowers.git"
+    ]
+  },
+  "compact": {
+    "id": "remotion-superpowers",
+    "name": "remotion-superpowers",
+    "cat": 12,
+    "role": "platform",
+    "exec": "cloud",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "javascript",
+      "multimedia",
+      "python",
+      "react",
+      "typescript",
+      "whisper"
+    ],
+    "one": "A free, open-source Claude Code plugin that turns Remotion into a full video production studio — by Dojo Coding.",
+    "alt": [],
+    "doc": "human/fichas/remotion-superpowers.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "remotion-superpowers",
+    "cat": 12,
+    "desc": "A free, open-source Claude Code plugin that turns Remotion into a full video production studio — by Dojo Coding.",
+    "stack": "python, typescript, javascript, react, whisper",
+    "choose_if": "quieres 🎬 remotion superpowers v2.1",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "whisper",
+      "faster-whisper"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/DojoCodingLabs/remotion-superpowers.git",
+    "doc": "human/fichas/remotion-superpowers.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.382272+00:00"
+  }
+}

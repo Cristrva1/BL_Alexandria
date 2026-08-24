@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-08-24T04:26:20.598937+00:00",
+  "profile": {
+    "id": "wan2gp",
+    "name": "Wan2GP",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Wan2GP",
+    "repo_url": "https://github.com/deepbeepmeep/Wan2GP.git",
+    "manifests": [
+      "requirements.txt",
+      "setup.py",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "WanGP by DeepBeepMeep : The best Open Source Generative Models Accessible to the GPU Poor",
+      "desc": "WanGP is a one-stop super app for the best open source generative models across video, image, audio, and text-to-speech."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "react",
+      "docker",
+      "postgres",
+      "comfy"
+    ],
+    "one": "WanGP is a one-stop super app for the best open source generative models across video, image, audio, and text-to-speech.",
+    "install_hints": [
+      "git clone https://github.com/deepbeepmeep/Wan2GP.git",
+      "pip install torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0 --index-url https://download.pytorch.org/whl/cu130",
+      "pip install -r requirements.txt"
+    ]
+  },
+  "compact": {
+    "id": "wan2gp",
+    "name": "Wan2GP",
+    "cat": 12,
+    "role": "platform",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "comfy",
+      "docker",
+      "multimedia",
+      "postgres",
+      "python",
+      "react",
+      "typescript",
+      "vision"
+    ],
+    "one": "WanGP is a one-stop super app for the best open source generative models across video, image, audio, and text-to-speech.",
+    "alt": [],
+    "doc": "human/fichas/wan2gp.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "Wan2GP",
+    "cat": 12,
+    "desc": "WanGP is a one-stop super app for the best open source generative models across video, image, audio, and text-to-speech.",
+    "stack": "python, typescript, react, docker, postgres, comfy",
+    "choose_if": "quieres wangp by deepbeepmeep : the best open source generative models accessible to the gpu poor",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "whisper",
+      "faster-whisper"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/deepbeepmeep/Wan2GP.git",
+    "doc": "human/fichas/wan2gp.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.598548+00:00"
+  }
+}

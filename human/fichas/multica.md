@@ -1,6 +1,6 @@
 # multica
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-Your next 10 hires won't be human.**.
+The open-source managed agents platform.
 
 ## Que problema resuelve
 

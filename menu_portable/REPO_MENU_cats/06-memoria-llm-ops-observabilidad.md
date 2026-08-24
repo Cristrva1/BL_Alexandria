@@ -17,10 +17,24 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Evita si:** te basta la memoria nativa de un único cliente o no usas MCP.
 **Combina con:** `mem0`, `ruflo`
 
+## `engram`
+role=runtime · exec=hybrid · setup=medium · mcp=True · prov=—
+
+**Qué es:** Engram da a cualquier agente compatible con MCP una memoria local (o cloud) en un solo binario, sin dependencias pesadas.
+**Stack:** python, typescript, javascript, docker, postgres
+**Repo:** https://github.com/Gentleman-Programming/engram.git
+
+**Instalación** [~]: `git clone https://github.com/Gentleman-Programming/engram.git && cd engram && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
+**Evita si:** prefieres conexiones directas sin protocolo estándar
+**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
+
 ## `loguru`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** ______________________________________________________________________.
+**Qué es:** Did you ever feel lazy about configuring a logger and used print() instead?... I did, yet logging is fundamental to every application and eases the process of debugging. Using Loguru you have no excuse not to use logging from the start, this is as simple as from loguru import logger.
 **Stack:** python, typescript
 **Repo:** https://github.com/Delgan/loguru.git
 
@@ -34,7 +48,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 ## `mem0`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** New Memory Algorithm (April 2026).
+**Qué es:** mem0 guarda y recupera hechos de usuario entre sesiones. Úsalo cuando el agente necesita memoria a largo plazo, no como base de datos general.
 **Stack:** python, typescript, javascript, docker, postgres
 **Repo:** https://github.com/mem0ai/mem0.git
 

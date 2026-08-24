@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-08-24T04:26:19.607620+00:00",
+  "profile": {
+    "id": "cli",
+    "name": "cli",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\cli",
+    "repo_url": "https://github.com/cli/cli.git",
+    "manifests": [],
+    "intro": {
+      "title": "",
+      "desc": "gh is GitHub on the command line. It brings pull requests, issues, and other GitHub concepts to the terminal next to where you are already working with git and your code."
+    },
+    "features": [],
+    "stack": [
+      "typescript"
+    ],
+    "one": "gh is GitHub on the command line. It brings pull requests, issues, and other GitHub concepts to the terminal next to where you are already working with git and your code.",
+    "install_hints": []
+  },
+  "compact": {
+    "id": "cli",
+    "name": "cli",
+    "cat": 2,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "typescript"
+    ],
+    "one": "gh is GitHub on the command line. It brings pull requests, issues, and other GitHub concepts to the terminal next to where you are already working with git and your code.",
+    "alt": [],
+    "doc": "human/fichas/cli.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "cli",
+    "cat": 2,
+    "desc": "gh is GitHub on the command line. It brings pull requests, issues, and other GitHub concepts to the terminal next to where you are already working with git and your code.",
+    "stack": "typescript",
+    "choose_if": "quieres gh is github on the command line. it brings pull requests, issues, and other github concep",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "andrej-karpathy-skills",
+      "antigravity-awesome-skills",
+      "awesome-agent-skills"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/cli/cli.git",
+    "doc": "human/fichas/cli.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:19.607354+00:00"
+  }
+}

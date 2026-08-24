@@ -36,7 +36,7 @@
     "openwa": {
       "name": "OpenWA",
       "cat": 1,
-      "desc": "OpenWA** is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls.",
+      "desc": "OpenWA is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres",
       "choose_if": "desarrollas scripts o bots individuales y quieres arrancar rápido",
       "avoid_if": "necesitas infra multi-instancia o alta disponibilidad ([evolution-api](#-evolution-api)).",
@@ -66,7 +66,7 @@
     "activepieces": {
       "name": "activepieces",
       "cat": 1,
-      "desc": "href=\"https://activepieces.com\".",
+      "desc": "Activepieces es un reemplazo open source de Zapier: orquestas automatizaciones con piezas auto-hospedables y un editor visual, sin ceder los datos a un SaaS cerrado.",
       "stack": "javascript/typescript, typescript, javascript, docker",
       "choose_if": "quieres reemplazar Zapier con piezas propias en TypeScript",
       "avoid_if": "ya dominas n8n y su ecosistema te basta.",
@@ -187,7 +187,7 @@
     "andrej-karpathy-skills": {
       "name": "andrej-karpathy-skills",
       "cat": 2,
-      "desc": "Check out my new project Multica — an open-source platform for running and managing coding agents with reusable skills.",
+      "desc": "> Check out my new project Multica — an open-source platform for running and managing coding agents with reusable skills.",
       "stack": "typescript",
       "choose_if": "quieres respuestas más útiles ya, sin curar prompts largos",
       "avoid_if": "buscas skills ejecutables con scripts concretos.",
@@ -217,7 +217,7 @@
     "awesome-agent-skills": {
       "name": "awesome-agent-skills",
       "cat": 2,
-      "desc": "Hand-picked, not AI-slop generated.",
+      "desc": "Directorio de agent skills revisado a mano. Úsalo para elegir piezas concretas; no instales el catálogo entero.",
       "stack": "python, typescript, javascript, react, docker, postgres, fastapi, langchain, whisper",
       "choose_if": "valoras respaldo de marca y curaduría",
       "avoid_if": "necesitas máxima cantidad o variedad ([antigravity-awesome-skills](#-antigravity-awesome-skills)).",
@@ -263,7 +263,7 @@
     "skills": {
       "name": "skills",
       "cat": 9,
-      "desc": "Skills For Real Engineers.",
+      "desc": "My agent skills that I use every day to do real engineering - not vibe coding.",
       "stack": "javascript/typescript, typescript, javascript",
       "choose_if": "buscas referencias limpias y didácticas",
       "avoid_if": "quieres un catálogo masivo ([antigravity-awesome-skills](#-antigravity-awesome-skills)).",
@@ -291,7 +291,7 @@
     "agents-towards-production": {
       "name": "agents-towards-production",
       "cat": 3,
-      "desc": "Agents Towards Production.",
+      "desc": "The open-source playbook for turning AI agents into real-world products.",
       "stack": "python, typescript, docker, fastapi, langchain",
       "choose_if": "vas a producción con agentes y necesitas el ciclo completo",
       "avoid_if": "solo experimentas localmente o buscas skills, no tutoriales.",
@@ -306,7 +306,7 @@
     "context-engineering": {
       "name": "Context-Engineering",
       "cat": 2,
-      "desc": "Context Engineering.",
+      "desc": "> \"Context engineering is the delicate art and science of filling the context window with just the right information for the next step.\" — Andrej Karpathy.",
       "stack": "python, typescript, react, postgres",
       "choose_if": "quieres profundizar en contexto y RAG",
       "avoid_if": "buscas skills ejecutables listas para copiar.",
@@ -334,8 +334,8 @@
     },
     "n8n-skills": {
       "name": "n8n-skills",
-      "cat": 5,
-      "desc": "Expert Claude Code skills for building flawless n8n workflows using the n8n-mcp MCP server**.",
+      "cat": 2,
+      "desc": "Paquete de skills para construir flujos n8n con un agente. Combínalo con n8n y n8n-mcp; no sustituye la instancia de n8n.",
       "stack": "python, typescript, javascript, docker, postgres, langchain",
       "choose_if": "generas workflows n8n con IA y te cansan los fallos de JSON",
       "avoid_if": "no usas n8n.",
@@ -366,7 +366,7 @@
     "agency-agents": {
       "name": "agency-agents",
       "cat": 9,
-      "desc": "A complete AI agency at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "desc": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "stack": "python, typescript, react, postgres, whisper",
       "choose_if": "operas una agencia con muchas marcas",
       "avoid_if": "eres un solo proyecto pequeño ([marketingskills](#-marketingskills) basta).",
@@ -427,8 +427,8 @@
     },
     "taste-skill": {
       "name": "taste-skill",
-      "cat": 9,
-      "desc": "Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typography, motion, and spacing instead of boilerplate-looking UIs. This repo also includes **image-generation skills** for reference boards (web, mobile, brand kits). Pair them with **ChatGPT Images** or similar generators, then hand the frames to Codex, Cursor, or Claude Code for implementation.",
+      "cat": 2,
+      "desc": "taste-skill corrige interfaces generadas por agentes: jerarquía visual, tipo, movimiento y espacio. No es un kit de componentes.",
       "stack": "typescript, react, postgres",
       "choose_if": "quieres frontends con gusto y no te basta con UI funcional",
       "avoid_if": "ya tienes un design system cerrado o no usas generadores de imagen.",
@@ -458,7 +458,7 @@
     "skillspector": {
       "name": "SkillSpector",
       "cat": 2,
-      "desc": "Security scanner for AI agent skills.** Detect vulnerabilities, malicious patterns, and security risks before installing agent skills.",
+      "desc": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks before installing agent skills.",
       "stack": "python, typescript, javascript, docker",
       "choose_if": "instalas skills externas o curas catálogos",
       "avoid_if": "solo usas skills propias de confianza.",
@@ -548,7 +548,7 @@
     "langflow": {
       "name": "langflow",
       "cat": 3,
-      "desc": "✨ Highlight features.",
+      "desc": "Langflow is a powerful platform for building and deploying AI-powered agents and workflows. It provides developers with both a visual authoring experience and built-in API and MCP servers that turn every workflow into a tool that can be integrated into applications built on any framework or stack.",
       "stack": "python, typescript, javascript, docker",
       "choose_if": "prefieres construir en visual sobre LangChain",
       "avoid_if": "quieres todo en código o no usas LangChain.",
@@ -563,7 +563,7 @@
     "dify": {
       "name": "dify",
       "cat": 3,
-      "desc": "alt=\"chat on Discord\"> alt=\"join Reddit\"> alt=\"follow on X(Twitter)\"> alt=\"follow on LinkedIn\"> .",
+      "desc": "Dify is an open-source LLM app development platform. Its intuitive interface combines AI workflow, RAG pipeline, agent capabilities, model management, observability features (including Opik, Langfuse, and Arize Phoenix) and more, letting you quickly go from prototype to production. Here's a list of the core features:.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres",
       "choose_if": "quieres una app IA completa autoalojada",
       "avoid_if": "solo necesitas una librería o un prototipo puntual.",
@@ -578,7 +578,7 @@
     "flowise": {
       "name": "Flowise",
       "cat": 3,
-      "desc": "English | 繁體中文 | 简体中文 | 日本語 | 한국어.",
+      "desc": "Flowise es un constructor visual de cadenas y agentes LLM. Encaja si quieres prototipar orquestación con nodos, no si necesitas un runtime embebido en tu código.",
       "stack": "javascript/typescript, typescript, javascript, react, docker",
       "choose_if": "quieres un prototipo visual ya, en stack JS",
       "avoid_if": "necesitas plataforma completa con RAG/observabilidad ([dify](#-dify)).",
@@ -608,7 +608,7 @@
     "deer-flow": {
       "name": "deer-flow",
       "cat": 3,
-      "desc": "English | 中文 | 日本語 | Français | Русский.",
+      "desc": "> On February 28th, 2026, DeerFlow claimed the 🏆 #1 spot on GitHub Trending following the launch of version 2. Thanks a million to our incredible community — you made this happen! 💪🔥.",
       "stack": "python, typescript, javascript, docker, langchain",
       "choose_if": "quieres un orquestador completo y extensible",
       "avoid_if": "buscas algo minimalista o sin Docker.",
@@ -623,7 +623,7 @@
     "nemo-agent-toolkit": {
       "name": "NeMo-Agent-Toolkit",
       "cat": 3,
-      "desc": "SPDX-License-Identifier: Apache-2.0.",
+      "desc": "NVIDIA NeMo Agent Toolkit adds intelligence to AI agents across any framework—enhancing speed, accuracy, and decision-making through enterprise-grade instrumentation, observability, and continuous learning.",
       "stack": "python, typescript, javascript, react, fastapi, langchain",
       "choose_if": "trabajas con infra NVIDIA o necesitas guardrails/eval empresarial",
       "avoid_if": "quieres algo ligero y agnóstico.",
@@ -637,7 +637,7 @@
     "hermes-agent": {
       "name": "hermes-agent",
       "cat": 2,
-      "desc": "The self-improving AI agent built by Nous Research.** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing w.",
+      "desc": "The self-improving AI agent built by Nous Research. It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing w.",
       "stack": "python, typescript, javascript, docker, postgres",
       "choose_if": "quieres agentes locales con UI y memoria persistente",
       "avoid_if": "prefieres orquestación en nube o no quieres compilar Tauri.",
@@ -652,7 +652,7 @@
     "openevolve": {
       "name": "openevolve",
       "cat": 1,
-      "desc": "🧬 The most advanced open-source evolutionary coding agent**.",
+      "desc": "🧬 The most advanced open-source evolutionary coding agent.",
       "stack": "python, typescript, docker",
       "choose_if": "optimizas problemas algorítmicos donde cabe explorar muchas variantes",
       "avoid_if": "haces tareas de texto comunes o buscas respuesta inmediata.",
@@ -666,7 +666,7 @@
     "gpt-researcher": {
       "name": "gpt-researcher",
       "cat": 3,
-      "desc": "🔎 GPT Researcher.",
+      "desc": "GPT Researcher the first open deep research agent designed for both web and local research on any given task.",
       "stack": "python, typescript, javascript, react, docker, fastapi, langchain",
       "choose_if": "necesitas research profundo citado",
       "avoid_if": "solo quieres una respuesta corta o un chat simple.",
@@ -682,7 +682,7 @@
     "autoresearch": {
       "name": "autoresearch",
       "cat": 2,
-      "desc": "One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synchronizing once in a while using sound wave interconnect in the ritual of \"group meeting\". That era is long gone. Research is now entirely the domain of autonomous swarms of AI agents running across compute cluster megastructures in the skies. The agents claim that we are now in the 10,205th generatio.",
+      "desc": "One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synchronizing once in a while using sound wave interconnect in the ritual of \"group meeting\". That era is long gone. Research is now entirely the domain of autonomous swarms of AI agents running across compute cluster megastructures in the skies.",
       "stack": "python, typescript",
       "choose_if": "experimentas con research iterativo o quieres un punto de partida",
       "avoid_if": "quieres salida pulida y lista ([gpt-researcher](#-gpt-researcher)).",
@@ -697,7 +697,7 @@
     "ruflo": {
       "name": "ruflo",
       "cat": 3,
-      "desc": "An agent meta-harness for Claude Code and Codex.**.",
+      "desc": "An agent meta-harness for Claude Code and Codex..",
       "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
       "choose_if": "orquestas muchos agentes a escala y quieres rendimiento",
       "avoid_if": "solo necesitas 1-2 agentes o no usas Claude Code/Codex.",
@@ -712,7 +712,7 @@
     "multica": {
       "name": "multica",
       "cat": 2,
-      "desc": "Your next 10 hires won't be human.**.",
+      "desc": "The open-source managed agents platform.",
       "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
       "choose_if": "mezclas trabajo humano y agentes en un mismo flujo",
       "avoid_if": "quieres automatización 100% headless o un producto maduro.",
@@ -727,7 +727,7 @@
     "mirofish": {
       "name": "MiroFish",
       "cat": 9,
-      "desc": "简洁通用的群体智能引擎，预测万物.",
+      "desc": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything.",
       "stack": "javascript/typescript, python, typescript, javascript, docker, postgres",
       "choose_if": "simulas futuros/escenarios con muchos actores",
       "avoid_if": "necesitas tareas deterministas o resultados reproducibles.",
@@ -741,7 +741,7 @@
     "llm-council": {
       "name": "llm-council",
       "cat": 2,
-      "desc": "The idea of this repo is that instead of asking a question to your favorite LLM provider (e.g. OpenAI GPT 5.1, Google Gemini 3.0 Pro, Anthropic Claude Sonnet 4.5, xAI Grok 4, eg.c), you can group them into your \"LLM Council\". This repo is a simple, local web app that essentially looks like ChatGPT except it uses OpenRouter to send your query to multiple LLMs, it then asks them to review and rank each other's work, an.",
+      "desc": "The idea of this repo is that instead of asking a question to your favorite LLM provider (e.g. OpenAI GPT 5.1, Google Gemini 3.0 Pro, Anthropic Claude Sonnet 4.5, xAI Grok 4, eg.c), you can group them into your \"LLM Council\".",
       "stack": "python, typescript, javascript, react, postgres, fastapi",
       "choose_if": "quieres consenso entre modelos o comparar proveedores",
       "avoid_if": "te basta un único LLM o el coste multi-modelo no es asumible.",
@@ -769,7 +769,7 @@
     "firecrawl": {
       "name": "firecrawl",
       "cat": 4,
-      "desc": "src=\"https://raw.githubusercontent.com/firecrawl/firecrawl/main/img/firecrawl_logo.png\".",
+      "desc": "The API to search, scrape, and interact with the web at scale. 🔥 The web context API to find sources, extract content, and turn it into clean Markdown or structured data your agents can ship with. Open source and available as a hosted service.",
       "stack": "python, typescript, javascript, docker",
       "choose_if": "alimentas agentes/RAG con web y quieres salida limpia",
       "avoid_if": "solo quieres HTML crudo o el presupuesto de API no encaja.",
@@ -785,7 +785,7 @@
     "crawl4ai": {
       "name": "crawl4ai",
       "cat": 4,
-      "desc": "🚀 Crawl4AI Cloud API — Closed Beta (Launching Soon) Reliable, large-scale web extraction, now built to be _**drastically more cost-effective**_ than any of the existing solutions.",
+      "desc": "🚀 Crawl4AI Cloud API — Closed Beta (Launching Soon) Reliable, large-scale web extraction, now built to be _drastically more cost-effective_ than any of the existing solutions.",
       "stack": "python, typescript, javascript, react, docker, postgres, fastapi",
       "choose_if": "necesitas volumen barato y self-host",
       "avoid_if": "quieres una API hosted simple sin operar navegadores ([firecrawl](#-firecrawl)).",
@@ -800,7 +800,7 @@
     "scrapy": {
       "name": "scrapy",
       "cat": 4,
-      "desc": ":target: https://scrapy.org.",
+      "desc": "Scrapy es el estándar de crawling en Python: spiders, pipelines y export. Úsalo para extracciones masivas, no para una sola página puntual.",
       "stack": "python",
       "choose_if": "quieres un crawler sólido y configurable a escala",
       "avoid_if": "buscas salida lista para LLM o algo puntual sin curva de framework.",
@@ -815,7 +815,7 @@
     "crawlee": {
       "name": "crawlee",
       "cat": 4,
-      "desc": "Crawlee covers your crawling and scraping end-to-end and **helps you build reliable scrapers. Fast.**.",
+      "desc": "Crawlee covers your crawling and scraping end-to-end and helps you build reliable scrapers. Fast..",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker",
       "choose_if": "scrapeas con Node y necesitas antibloqueo",
       "avoid_if": "trabajas en Python ([crawlee-python](#-crawlee-python)) o no necesitas evasión.",
@@ -829,7 +829,7 @@
     "crawlee-python": {
       "name": "crawlee-python",
       "cat": 4,
-      "desc": "Crawlee covers your crawling and scraping end-to-end and **helps you build reliable scrapers. Fast.**.",
+      "desc": "Crawlee covers your crawling and scraping end-to-end and helps you build reliable scrapers. Fast..",
       "stack": "python, typescript, javascript, react",
       "choose_if": "quieres Crawlee en Python con antibloqueo",
       "avoid_if": "ya usas scrapy y te basta, o no necesitas evasión.",
@@ -858,7 +858,7 @@
     "scrapely": {
       "name": "scrapely",
       "cat": 4,
-      "desc": ".. image:: https://api.travis-ci.org/scrapy/scrapely.svg?branch=master :target: https://travis-ci.org/scrapy/scrapely.",
+      "desc": "some example web pages and the data to be extracted, scrapely constructs a parser for all similar pages.",
       "stack": "python, typescript, javascript",
       "choose_if": "prefieres enseñar por ejemplos y el sitio es homogéneo",
       "avoid_if": "necesitas un crawler completo o el proyecto exige mantenimiento activo.",
@@ -874,7 +874,7 @@
     "llm-scraper": {
       "name": "llm-scraper",
       "cat": 4,
-      "desc": "LLM Scraper is a TypeScript library that allows you to extract structured data from **any** webpage using LLMs.",
+      "desc": "LLM Scraper is a TypeScript library that allows you to extract structured data from any webpage using LLMs.",
       "stack": "javascript/typescript, typescript, javascript",
       "choose_if": "quieres salida tipada y validada en stack TS",
       "avoid_if": "prefieres extracción semántica por grafos ([Scrapegraph-ai](#-scrapegraph-ai)) o trabajas en Python.",
@@ -889,7 +889,7 @@
     "scrapegraph-ai": {
       "name": "Scrapegraph-ai",
       "cat": 4,
-      "desc": "🕷️ ScrapeGraphAI: You Only Scrape Once.",
+      "desc": "ScrapeGraphAI convierte una instrucción en un grafo de extracción web. Encaja cuando el HTML es irregular y un scraper clásico se rompe.",
       "stack": "python, typescript, javascript, docker, langchain",
       "choose_if": "quieres estructura semántica \"by prompt\" en Python",
       "avoid_if": "te basta un esquema simple ([llm-scraper](#-llm-scraper)) o el coste de LLM por página es alto.",
@@ -919,7 +919,7 @@
     "playwright-cli": {
       "name": "playwright-cli",
       "cat": 2,
-      "desc": "Playwright CLI with SKILLS.",
+      "desc": "Playwright CLI empaquetado con skills de agente: permite manejar Chromium/Firefox/WebKit en scripts y en flujos de coding agents.",
       "stack": "javascript/typescript, python, typescript, javascript",
       "choose_if": "tu agente vive en CLI y el contexto es un recurso caro",
       "avoid_if": "necesitas estado persistente entre sesiones o un servidor MCP con recursos expuestos (usa Playwright MCP).",
@@ -949,7 +949,7 @@
     "instaloader": {
       "name": "instaloader",
       "cat": 4,
-      "desc": ".. |pypi| image:: https://img.shields.io/pypi/v/instaloader.svg :alt: Instaloader PyPI Project Page :target: https://pypi.org/project/instaloader/.",
+      "desc": "Instaloader es un scraper de Instagram orientado a archivo personal o datasets. No es un navegador agentizado; es una herramienta de extracción puntual.",
       "stack": "python, typescript",
       "choose_if": "necesitas datos de Instagram de forma fiable",
       "avoid_if": "quieres varias redes a la vez ([snscrape](#-snscrape)) o el contenido requiere API oficial por ToS.",
@@ -1084,7 +1084,7 @@
     "mem0": {
       "name": "mem0",
       "cat": 6,
-      "desc": "New Memory Algorithm (April 2026).",
+      "desc": "mem0 guarda y recupera hechos de usuario entre sesiones. Úsalo cuando el agente necesita memoria a largo plazo, no como base de datos general.",
       "stack": "python, typescript, javascript, docker, postgres",
       "choose_if": "quieres memoria estándar lista con integraciones amplias",
       "avoid_if": "necesitas todo local sin llamadas a API ([mempalace](#-mempalace)) o control total del almacenamiento.",
@@ -1130,7 +1130,7 @@
     "turbovec": {
       "name": "turbovec",
       "cat": 3,
-      "desc": "A 10 million document corpus takes 31 GB of RAM as float32. turbovec fits it in 4 GB - and searches it faster than FAISS.**.",
+      "desc": "A 10 million document corpus takes 31 GB of RAM as float32. turbovec fits it in 4 GB - and searches it faster than FAISS..",
       "stack": "python, typescript, langchain",
       "choose_if": "necesitas vector search veloz y embebido sin desplegar una DB",
       "avoid_if": "ya usas una vector DB completa con persistencia y escalado horizontal.",
@@ -1161,7 +1161,7 @@
     "langfuse": {
       "name": "langfuse",
       "cat": 3,
-      "desc": "alt=\"chat on Discord\"> alt=\"follow on X(Twitter)\"> alt=\"follow on LinkedIn\"> .",
+      "desc": "Langfuse uses GitHub Discussions for Support and Feature Requests.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, fastapi, langchain",
       "choose_if": "operas agentes en serio y necesitas trazas/costes/eval",
       "avoid_if": "haces prototipos triviales o no quieres operar el backend.",
@@ -1177,7 +1177,7 @@
     "llmfit": {
       "name": "llmfit",
       "cat": 9,
-      "desc": "New: Community Leaderboard** — Browse real-world performance data from actual users. Press `b` to see measured tok/s, TTFT, and VRAM for any GPU — not just yours. Pick from 27+ hardware presets (RTX 5090 to Apple M1) with `H` to compare real numbers before you buy or build.",
+      "desc": "New: Community Leaderboard — Browse real-world performance data from actual users. Press `b` to see measured tok/s, TTFT, and VRAM for any GPU — not just yours. Pick from 27+ hardware presets (RTX 5090 to Apple M1) with `H` to compare real numbers before you buy or build.",
       "stack": "python, typescript, javascript, docker, postgres",
       "choose_if": "necesitas elegir modelo con datos y reproducibilidad",
       "avoid_if": "ya tienes el modelo decidido o tu caso no justifica un harness de evaluación.",
@@ -1192,7 +1192,7 @@
     "headroom": {
       "name": "headroom",
       "cat": 3,
-      "desc": "██╗ ██╗███████╗ █████╗ ██████╗ ██████╗ ██████╗ ██████╗ ███╗ ███╗ ██║ ██║██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔═══██╗██╔═══██╗████╗ ████║ ███████║█████╗ ███████║██║ ██║██████╔╝██║ ██║██║ ██║██╔████╔██║ ██╔══██║██╔══╝ ██╔══██║██║ ██║██╔══██╗██║ ██║██║ ██║██║╚██╔╝██║ ██║ ██║███████╗██║ ██║██████╔╝██║ ██║╚██████╔╝╚██████╔╝██║ ╚═╝ ██║ ╚═╝ ╚═╝╚══════╝╚═╝ ╚═╝╚═════╝ ╚═╝ ╚═╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═╝ .",
+      "desc": "60–95% fewer tokens · library · proxy · MCP · 6 algorithms · local-first · reversible.",
       "stack": "python, typescript, javascript, docker, postgres, langchain",
       "choose_if": "te quedas sin contexto en sesiones largas",
       "avoid_if": "tus prompts ya caben holgados o la pérdida de detalle por resumen es inaceptable.",
@@ -1207,7 +1207,7 @@
     "sandbox": {
       "name": "sandbox",
       "cat": 3,
-      "desc": "🌐 Website &nbsp&nbsp.",
+      "desc": "AIO Sandbox concentra herramientas de ejecución aislada para agentes: filesystem, red y procesos sin dejarlos sueltos en el host.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, langchain",
       "choose_if": "quieres aislar la ejecución de agentes y reproducibilidad",
       "avoid_if": "te basta correr local sin sandbox o no puedes asumir el overhead de Docker.",
@@ -1222,7 +1222,7 @@
     "loguru": {
       "name": "loguru",
       "cat": 6,
-      "desc": "______________________________________________________________________.",
+      "desc": "Did you ever feel lazy about configuring a logger and used print() instead?... I did, yet logging is fundamental to every application and eases the process of debugging. Using Loguru you have no excuse not to use logging from the start, this is as simple as from loguru import logger.",
       "stack": "python, typescript",
       "choose_if": "quieres logging fácil y legible en Python sin pelear con stdlib",
       "avoid_if": "ya usas el stdlib `logging` configurado o tienes un stack de observabilidad corporativo.",
@@ -1236,7 +1236,7 @@
     "codegraph": {
       "name": "codegraph",
       "cat": 7,
-      "desc": "Already installed? Run `codegraph upgrade` to update in place.",
+      "desc": "CodeGraph construye un grafo del codebase para que un agente navegue símbolos y dependencias sin leer el repo entero.",
       "stack": "javascript/typescript, python, typescript, javascript, react, postgres, fastapi",
       "choose_if": "trabajas repos grandes y el contexto del agente es caro",
       "avoid_if": "tu base de código es pequeña y no justifica mantener un índice.",
@@ -1252,7 +1252,7 @@
     "graphify": {
       "name": "graphify",
       "cat": 5,
-      "desc": "🇺🇸 English | 🇨🇳 简体中文 | 🇯🇵 日本語 | 🇰🇷 한국어 | 🇩🇪 Deutsch | 🇫🇷 Français | 🇪🇸 Español | 🇮🇳 <a href=\"docs/translatio.",
+      "desc": "Type /graphify in your AI coding assistant and it maps your entire project — code, docs, PDFs, images, videos — into a knowledge graph you can query instead of grepping through files.",
       "stack": "python, typescript, javascript, docker, postgres, whisper",
       "choose_if": "quieres ver conexiones visualmente o auditar un sistema",
       "avoid_if": "solo necesitas índice textual barato ([codegraph](#-codegraph)) o tu proyecto es trivial.",
@@ -1283,7 +1283,7 @@
     "gitnexus": {
       "name": "GitNexus",
       "cat": 7,
-      "desc": "⚠️ Important Notice:** GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name on Pump.fun or any other platform is **not affiliated with, endorsed by, or created by** this project or its maintainers. Do not purchase any cryptocurrency claiming association with GitNexus.",
+      "desc": "⚠️ Important Notice: GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name on Pump.fun or any other platform is not affiliated with, endorsed by, or created by this project or its maintainers. Do not purchase any cryptocurrency claiming association with GitNexus.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, langchain",
       "choose_if": "quieres entender un repo puntual de forma visual",
       "avoid_if": "necesitas indexar muchos repos a escala ([codegraph](#-codegraph)) o no quieres front web.",
@@ -1298,7 +1298,7 @@
     "deepseek-coder": {
       "name": "DeepSeek-Coder",
       "cat": 7,
-      "desc": "1. Introduction of DeepSeek Coder.",
+      "desc": "DeepSeek Coder is composed of a series of code language models, each trained from scratch on 2T tokens, with a composition of 87% code and 13% natural language in both English and Chinese. We provide various sizes of the code model, ranging from 1B to 33B versions.",
       "stack": "python, typescript, javascript, docker",
       "choose_if": "quieres un modelo de código abierto y desplegable on-prem",
       "avoid_if": "prefieres APIs comerciales gestionadas o no tienes GPU para servirlo.",
@@ -1313,7 +1313,7 @@
     "nanogpt": {
       "name": "nanoGPT",
       "cat": 2,
-      "desc": "Update Nov 2025** nanoGPT has a new and improved cousin called nanochat. It is very likely you meant to use/find nanochat instead. nanoGPT (this repo) is now very old and deprecated but I will leave it up for posterity.",
+      "desc": "Update Nov 2025 nanoGPT has a new and improved cousin called nanochat. It is very likely you meant to use/find nanochat instead. nanoGPT (this repo) is now very old and deprecated but I will leave it up for posterity.",
       "stack": "python, typescript, javascript, postgres",
       "choose_if": "quieres entender el entrenamiento de un GPT desde cero",
       "avoid_if": "solo consumes modelos vía API o necesitas un pipeline de chat completo ([nanochat](#-nanochat)).",
@@ -1328,7 +1328,7 @@
     "nanochat": {
       "name": "nanochat",
       "cat": 9,
-      "desc": "nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all major LLM stages including tokenization, pretraining, finetuning, evaluation, inference, and a chat UI. For example, you can train your own GPT-2 capability LLM (which cost ~$43,000 to train in 2019) for only $48 (~2 hours of 8XH100 GPU node) and then talk to it .",
+      "desc": "nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all major LLM stages including tokenization, pretraining, finetuning, evaluation, inference, and a chat UI.",
       "stack": "python, typescript, javascript, whisper",
       "choose_if": "quieres el pipeline completo de un chat end-to-end",
       "avoid_if": "solo necesitas el core del modelo ([nanoGPT](#-nanogpt)) o un modelo listo para usar.",
@@ -1357,7 +1357,7 @@
     "cosmos": {
       "name": "cosmos",
       "cat": 11,
-      "desc": "Table of Contents.",
+      "desc": "Colección NVIDIA Cosmos para modelos de mundo y video. Setup pesado: GPU y checkpoints. No es un editor de imagen ligero.",
       "stack": "python, typescript, docker, postgres",
       "choose_if": "trabajas IA física/robótica y necesitas datos sintéticos",
       "avoid_if": "haces tareas de texto/UI o no tienes GPU para servirlo.",
@@ -1371,7 +1371,7 @@
     "data-science-ipython-notebooks": {
       "name": "data-science-ipython-notebooks",
       "cat": 7,
-      "desc": "data-science-ipython-notebooks.",
+      "desc": "Directorio de notebooks educativos de data science. Es material de referencia, no una librería para importar en producción.",
       "stack": "python, typescript, postgres",
       "choose_if": "estudias/consultas DS con ejemplos ejecutables",
       "avoid_if": "buscas una librería, no ejemplos, o necesitas material actualizado a las versiones más recientes.",
@@ -1415,7 +1415,7 @@
     "ecc": {
       "name": "ECC",
       "cat": 3,
-      "desc": "Official sources only.** Install ECC only from verified channels: the GitHub repository github.com/affaan-m/ECC, the npm packages `ecc-universal` and `ecc-agentshield`, the GitHub App, the plugin slug `ecc@ecc`, and the project website [ecc.tools](http.",
+      "desc": "Official sources only. Install ECC only from verified channels: the GitHub repository github.com/affaan-m/ECC, the npm packages `ecc-universal` and `ecc-agentshield`, the GitHub App, the plugin slug `ecc@ecc`, and the project website ecc.tools.",
       "stack": "python, typescript, javascript, react, docker, postgres, fastapi",
       "choose_if": "ejecutas agentes con acceso real a tu máquina y necesitas contención",
       "avoid_if": "solo haces prompts de chat sin ejecución de código.",
@@ -1463,7 +1463,7 @@
     "notebooklm-py": {
       "name": "notebooklm-py",
       "cat": 2,
-      "desc": "A Comprehensive NotebookLM Skill & Unofficial Python API.** Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
+      "desc": "A Comprehensive NotebookLM Skill & Unofficial Python API. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
       "stack": "python, typescript, javascript, postgres, fastapi",
       "choose_if": "automatizas el NotebookLM real y aceptas el riesgo de API no oficial",
       "avoid_if": "quieres todo local ([open-notebook](#-open-notebook)).",
@@ -1477,7 +1477,7 @@
     "notebooklm-mcp-cli": {
       "name": "notebooklm-mcp-cli",
       "cat": 5,
-      "desc": "Programmatic access to Google NotebookLM** — via command-line interface (CLI) or Model Context Protocol (MCP) server.",
+      "desc": "Programmatic access to Google NotebookLM — via command-line interface (CLI) or Model Context Protocol (MCP) server.",
       "stack": "python, typescript, react, postgres",
       "choose_if": "integras NotebookLM con tu asistente MCP",
       "avoid_if": "prefieres la API directa en scripts ([notebooklm-py](#-notebooklm-py)).",
@@ -1492,7 +1492,7 @@
     "open-design": {
       "name": "open-design",
       "cat": 9,
-      "desc": "🔥 **Open Design 0.10.0 is here: the all-in-one Agentic design workspace.** The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing off to an editor or a Code Agent — without leaving the app. With parallel sessions, it stops feeling like one assistant and starts feeling like a local design team .",
+      "desc": "🔥 Open Design 0.10.0 is here: the all-in-one Agentic design workspace. The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing off to an editor or a Code Agent — without leaving the app.",
       "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
       "choose_if": "generas UI desde texto y quieres edición visual",
       "avoid_if": "prefieres editar visualmente sobre tu código existente ([plasmic](#-plasmic)).",
@@ -1570,7 +1570,7 @@
     "magicui": {
       "name": "magicui",
       "cat": 9,
-      "desc": "UI Library for Design Engineers.",
+      "desc": "Visit https://magicui.design/docs to view the documentation.",
       "stack": "javascript/typescript, typescript, javascript, react",
       "choose_if": "priorizas estética y velocidad",
       "avoid_if": "necesitas accesibilidad estricta ([heroui](#-heroui)).",
@@ -1585,7 +1585,7 @@
     "heroui": {
       "name": "heroui",
       "cat": 9,
-      "desc": "",
+      "desc": "HeroUI (antes NextUI) entrega componentes React con tema. Elige esto si quieres una lib con actualizaciones; elige `ui` (shadcn) si quieres dueño del código copiado.",
       "stack": "javascript/typescript, javascript, react",
       "choose_if": "quieres calidad + accesibilidad listas",
       "avoid_if": "quieres control copy-paste del código ([ui](#-ui-shadcn)).",
@@ -1600,7 +1600,7 @@
     "gsap": {
       "name": "GSAP",
       "cat": 9,
-      "desc": "GSAP is a **framework-agnostic** JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in **every** major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects... anything JavaScript can touch! GSAP's ScrollTrigger plugin delivers jaw-droppin.",
+      "desc": "GSAP is a framework-agnostic JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, motion paths and generic objects.",
       "stack": "javascript/typescript, typescript, javascript, react, postgres",
       "choose_if": "necesitas animación avanzada y control fino de timelines",
       "avoid_if": "te basta animar componentes React con API declarativa ([motion](#-motion)).",
@@ -1614,8 +1614,8 @@
     },
     "motion": {
       "name": "motion",
-      "cat": 4,
-      "desc": "An open source animation library for JavaScript, React and Vue.",
+      "cat": 9,
+      "desc": "Motion (antes Framer Motion) anima interfaces web con una API declarativa. Úsala en el frontend, no como motor de video.",
       "stack": "javascript/typescript, typescript, javascript, react",
       "choose_if": "animas componentes React con API declarativa",
       "avoid_if": "necesitas timelines complejos no ligados a React ([GSAP](#-gsap)).",
@@ -1735,7 +1735,7 @@
     "streamlit": {
       "name": "streamlit",
       "cat": 10,
-      "desc": "Welcome to Streamlit 👋.",
+      "desc": "A faster way to build and share data apps.",
       "stack": "python, typescript",
       "choose_if": "quieres una UI de datos al vuelo y prototipos rápidos",
       "avoid_if": "necesitas una app productiva con control fino del frontend ([dash](#-dash)).",
@@ -1750,7 +1750,7 @@
     "awesome-dataviz": {
       "name": "awesome-dataviz",
       "cat": 3,
-      "desc": "A curated list of awesome **open-source** data visualizations frameworks, libraries and software. Inspired by awesome-python and originally created by fasouto.",
+      "desc": "A curated list of awesome open-source data visualizations frameworks, libraries and software. Inspired by awesome-python and originally created by fasouto.",
       "stack": "python, typescript, javascript, react, postgres",
       "choose_if": "buscas opciones de visualización y aún no has elegido",
       "avoid_if": "ya elegiste tu librería y solo necesitas usarla.",
@@ -1765,7 +1765,7 @@
     "comfyui": {
       "name": "ComfyUI",
       "cat": 11,
-      "desc": "The most powerful and modular AI engine for content creation.**.",
+      "desc": "The most powerful and modular AI engine for content creation..",
       "stack": "python, typescript, javascript, react, docker, comfy",
       "choose_if": "quieres control total y pipelines reproducibles",
       "avoid_if": "buscas simplicidad inmediata ([Fooocus](#-fooocus)).",
@@ -1839,7 +1839,7 @@
     "controlnet": {
       "name": "ControlNet",
       "cat": 11,
-      "desc": "Below is ControlNet 1.0.",
+      "desc": "ControlNet 1.1 is released. Those new models will be merged to this repo after we make sure that everything is good.",
       "stack": "python, typescript",
       "choose_if": "necesitas control estructural fino de la composición",
       "avoid_if": "ya trabajas en SD WebUI ([sd-webui-controlnet](#-sd-webui-controlnet)) o ComfyUI (tienen integración propia) y no necesitas el repo original.",
@@ -1885,7 +1885,7 @@
     "gfpgan": {
       "name": "GFPGAN",
       "cat": 11,
-      "desc": "1. :boom: **Updated** online demo: ![Replicate](https://replicate.com/tencentarc/gfpgan). Here is the backup. 1. :boom: **Updated** online demo: ![Huggingface Gradio](https://huggingface.co/spaces/Xintao/GFPGAN) 1. .",
+      "desc": "1. :boom: Updated online demo: . Here is the backup. 1. :boom: Updated online demo: 1. .",
       "stack": "python, typescript, javascript, postgres",
       "choose_if": "restauras rostros borrosos o fundidos",
       "avoid_if": "necesitas upscaling general de la imagen ([Real-ESRGAN](#-real-esrgan)).",
@@ -1899,7 +1899,7 @@
     "real-esrgan": {
       "name": "Real-ESRGAN",
       "cat": 9,
-      "desc": "👀**Demos** **|** 🚩**Updates** **|** ⚡**Usage** **|** 🏰**Model Zoo** **|** 🔧Install **|** 💻Train **|** ❓FAQ **|** 🎨Contribution.",
+      "desc": "🔥 RealESRGANx4plusanime6B for anime images (动漫插图模型). Please see [animemodel].",
       "stack": "python, typescript, postgres",
       "choose_if": "reescalas imágenes o video a más resolución",
       "avoid_if": "solo necesitas arreglar rostros ([GFPGAN](#-gfpgan)) o buscas difusión para reimaginar.",
@@ -1914,7 +1914,7 @@
     "liveportrait": {
       "name": "LivePortrait",
       "cat": 11,
-      "desc": "`2025/06/01`**: 🌍 Over the past year, **LivePortrait** has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as numerous startups and creators. 🎉 `2025/01/01`**: 🐶 We updated a new version of the Animals model with more data, see **here**. `2024/10/18`**: ❗ We have upda.",
+      "desc": "`2025/06/01`: 🌍 Over the past year, LivePortrait has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as numerous startups and creators. 🎉 `2025/01/01`: 🐶 We updated a new version of the Animals model with more data, see here. `2024/10/18`: ❗ We have upda.",
       "stack": "python, typescript, javascript, postgres, comfy",
       "choose_if": "animas retratos a partir de una foto",
       "avoid_if": "necesitas swap en vivo ([Deep-Live-Cam](#-deep-live-cam)) o no tienes GPU.",
@@ -1942,7 +1942,7 @@
     "face-recognition": {
       "name": "face_recognition",
       "cat": 11,
-      "desc": "_You can also read a translated version of this file in Chinese 简体中文版 or in Korean 한국어 or in Japanese 日本語._.",
+      "desc": "Recognize and manipulate faces from Python or from the command line with the world's simplest face recognition library.",
       "stack": "python, typescript, docker, postgres",
       "choose_if": "necesitas reconocimiento facial básico y rápido de implementar",
       "avoid_if": "buscas restauración/animación ([GFPGAN](#-gfpgan)/[LivePortrait](#-liveportrait)) o precisión de producción (mejor DeepFace/InsightFace).",
@@ -1956,7 +1956,7 @@
     "open-generative-ai": {
       "name": "Open-Generative-AI",
       "cat": 2,
-      "desc": "The free, open-source alternative to AI Video Platforms.** Generate AI images and videos using 200+ state-of-the-art models — no content filters, no closed ecosystem, no subscription fees.",
+      "desc": "The free, open-source alternative to AI Video Platforms. Generate AI images and videos using 200+ state-of-the-art models — no content filters, no closed ecosystem, no subscription fees.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, comfy",
       "choose_if": "quieres un hub de generación multi-modal sin atarte a un SaaS",
       "avoid_if": "ya tienes tu pipeline local ([ComfyUI](#-comfyui)) o necesitas control fino por nodo.",
@@ -2000,7 +2000,7 @@
     "faster-whisper": {
       "name": "faster-whisper",
       "cat": 12,
-      "desc": "faster-whisper** is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models.",
+      "desc": "faster-whisper is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models.",
       "stack": "python, typescript, docker, fastapi, whisper",
       "choose_if": "el rendimiento, la memoria o el coste de GPU importan",
       "avoid_if": "necesitas alineación/diarización ([whisperX](#-whisperx)) o te basta el CLI oficial.",
@@ -2016,7 +2016,7 @@
     "whisperx": {
       "name": "whisperX",
       "cat": 12,
-      "desc": "Recall.ai - Meeting Transcription API.",
+      "desc": "If you’re looking for a transcription API for meetings, consider checking out Recall.ai's Meeting Transcription API, an API that works with Zoom, Google Meet, Microsoft Teams, and more. Recall.ai diarizes by pulling the speaker data and separate audio streams from the meeting platforms, which means 100% accurate speaker diarization with actual speaker names.",
       "stack": "python, typescript, whisper",
       "choose_if": "necesitas subtítulos precisos o diarización",
       "avoid_if": "te basta texto plano ([whisper](#-whisper)) o no quieres gestionar tokens de HF.",
@@ -2032,7 +2032,7 @@
     "supertonic": {
       "name": "supertonic",
       "cat": 12,
-      "desc": "Supertonic** is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns.",
+      "desc": "Supertonic is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns.",
       "stack": "python, typescript, javascript",
       "choose_if": "quieres voz local en tiempo real y sin nube",
       "avoid_if": "priorizas clonación de máxima fidelidad ([VoxCPM](#-voxcpm)) o flexibilidad multi-modelo ([TTS](#-tts)).",
@@ -2061,7 +2061,7 @@
     "tts": {
       "name": "TTS",
       "cat": 11,
-      "desc": "📣 ⓍTTSv2 is here with 16 languages and better performance across the board. 📣 ⓍTTS fine-tuning code is out. Check the example recipes. 📣 ⓍTTS can now stream with <200ms latency. 📣 ⓍTTS, our production TTS model that can speak 13 languages, is released Blog Post, Demo, [Docs](.",
+      "desc": "📣 ⓍTTSv2 is here with 16 languages and better performance across the board. 📣 ⓍTTS fine-tuning code is out. Check the example recipes. 📣 ⓍTTS can now stream with <200ms latency. 📣 ⓍTTS, our production TTS model that can speak 13 languages, is released Blog Post, Demo, Docs.",
       "stack": "python, typescript, docker",
       "choose_if": "quieres flexibilidad y varios modelos en una librería",
       "avoid_if": "necesitas tiempo real puro ([supertonic](#-supertonic)) o soporte comercial (Coqui está inactivo).",
@@ -2076,7 +2076,7 @@
     "omnivoice-studio": {
       "name": "OmniVoice-Studio",
       "cat": 12,
-      "desc": "OmniVoice Studio is in active beta.** Things may break between releases. For the latest features and fixes, clone the repo and run from source rather than using pre-built installers. Bug reports and PRs are very welcome — open an issue or join Discord.",
+      "desc": "OmniVoice Studio concentra clonación y síntesis de voz en un studio local. Está en beta; espera roturas entre versiones.",
       "stack": "python, typescript, javascript, react, docker, fastapi, whisper",
       "choose_if": "quieres suite de voz completa local (dictado + clonación + dubbing)",
       "avoid_if": "solo necesitas TTS simple por CLI/librería ([TTS](#-tts)) o estabilidad de producción.",
@@ -2120,8 +2120,8 @@
     },
     "remotion": {
       "name": "remotion",
-      "cat": 9,
-      "desc": "Remotion is a framework for **creating videos programmatically using React.**.",
+      "cat": 12,
+      "desc": "Remotion renderiza video desde componentes React. Úsalo para piezas generadas por código (intros, datos, motion graphics), no como NLE clásico.",
       "stack": "javascript/typescript, typescript, javascript, react",
       "choose_if": "generas video a escala con React y quieres variantes parametrizadas",
       "avoid_if": "trabajas en Python ([moviepy](#-moviepy)) o buscas un editor visual.",
@@ -2151,7 +2151,7 @@
     "opencut": {
       "name": "OpenCut",
       "cat": 5,
-      "desc": "OpenCut is being rewritten from the ground up.** What's coming:.",
+      "desc": "OpenCut is being rewritten from the ground up. What's coming:.",
       "stack": "typescript",
       "choose_if": "quieres un editor libre con UI moderna, sin CapCut",
       "avoid_if": "prefieres edición por código ([moviepy](#-moviepy)) o cortes sin pérdida ([lossless-cut](#-lossless-cut)).",
@@ -2165,7 +2165,7 @@
     "openscreen": {
       "name": "openscreen",
       "cat": 3,
-      "desc": "This started as a side project that blew up; not production grade and you'll hit bugs, but hopefully it covers what you need. **This project will soon be archived.**.",
+      "desc": "This started as a side project that blew up; not production grade and you'll hit bugs, but hopefully it covers what you need. This project will soon be archived..",
       "stack": "javascript/typescript, typescript, javascript, postgres",
       "choose_if": "necesitas screencast simple desde el navegador",
       "avoid_if": "quieres algo mantenido y estable (el original está archivado) o grabación fuera del navegador.",
@@ -2223,7 +2223,7 @@
     "ppt-master": {
       "name": "ppt-master",
       "cat": 13,
-      "desc": "English | 中文.",
+      "desc": "This project is kept free and open source with the support of PackyCode , APIKEY.FUN , RunAPI , YouYun ZhiSuan and other sponsors.",
       "stack": "python, typescript, postgres",
       "choose_if": "quieres PPTX editable de Office rápido",
       "avoid_if": "prefieres slides web por código ([reveal.js](#-revealjs)) o control de diseño pixel-perfect.",
@@ -2237,8 +2237,8 @@
     },
     "pdfcraft": {
       "name": "pdfcraft",
-      "cat": 9,
-      "desc": "Merge, split, compress, convert, and edit PDF files online without uploading to servers.",
+      "cat": 13,
+      "desc": "PDFCraft procesa PDFs en el cliente. Encaja para utilidades locales de documentos, no para un pipeline de conversión masiva.",
       "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
       "choose_if": "manipulas PDFs con privacidad y sin instalar nada",
       "avoid_if": "necesitas conversión a Markdown para IA ([markitdown](#-markitdown)) o edición de contenido (no solo manipulación de páginas).",
@@ -2252,7 +2252,7 @@
     "appsmith": {
       "name": "appsmith",
       "cat": 1,
-      "desc": "Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our [website](https://www.appsmith.com?utm_source=github&utm_medium=organic&utm_campaign=readme.",
+      "desc": "Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our website.",
       "stack": "typescript, javascript, docker, postgres",
       "choose_if": "quieres ---",
       "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
@@ -2268,7 +2268,7 @@
     "archivebox": {
       "name": "ArchiveBox",
       "cat": 4,
-      "desc": "▶️ Quickstart | Demo | GitHub | Documentation | Info & Motivation | Communi.",
+      "desc": "ArchiveBox is a self-hosted app that lets you preserve content from websites in a variety of formats.",
       "stack": "python, typescript, javascript, docker, postgres",
       "choose_if": "quieres ▶️ <a href=\"https://github.com/archivebox/archivebox/wiki/quickstart\">quickstart",
       "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
@@ -2284,7 +2284,7 @@
     "autogen": {
       "name": "autogen",
       "cat": 3,
-      "desc": "AutoGen ![Maintenance Mode](https://github.com/microsoft/agent-framework).",
+      "desc": "AutoGen orquesta conversaciones entre agentes LLM. Está en mantenimiento; para trabajo nuevo revisa el sucesor oficial antes de adoptarlo como runtime.",
       "stack": "python, typescript, javascript, postgres",
       "choose_if": "quieres autogen [![maintenance mode](https://img.shields.io/badge/status-maintenance%20m",
       "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
@@ -2379,7 +2379,7 @@
     "gradio": {
       "name": "gradio",
       "cat": 9,
-      "desc": "English | 中文.",
+      "desc": "Gradio is an open-source Python package that allows you to quickly build a demo or web application for your machine learning model, API, or any arbitrary Python function. You can then share a link to your demo or web application in just a few seconds using Gradio's built-in sharing features. No JavaScript, CSS, or web hosting experience needed!",
       "stack": "python, typescript, javascript, react, postgres, fastapi",
       "choose_if": "quieres <!-- do not edit this file directly. instead edit the `readme_template.md` or `guides/01_g",
       "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
@@ -2395,7 +2395,7 @@
     "guardrails": {
       "name": "Guardrails",
       "cat": 3,
-      "desc": "LATEST RELEASE / DEVELOPMENT VERSION**: The develop branch tracks the latest top of tree development. The latest released version is 0.21.0.",
+      "desc": "> LATEST RELEASE / DEVELOPMENT VERSION: The develop branch tracks the latest top of tree development. The latest released version is 0.21.0.",
       "stack": "python, typescript, javascript, react, docker, langchain",
       "choose_if": "quieres nvidia nemo guardrails library",
       "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
@@ -2411,7 +2411,7 @@
     "guia": {
       "name": "guia",
       "cat": 2,
-      "desc": "Catálogo operativo de los **156 repositorios** locales del workspace, diseñado para **entender, comparar, elegir y combinar** repos rápido.",
+      "desc": "Catálogo operativo de los 156 repositorios locales del workspace, diseñado para entender, comparar, elegir y combinar repos rápido.",
       "stack": "typescript, whisper, comfy",
       "choose_if": "quieres 🌌 catálogo de repositorios de ia & automatización",
       "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
@@ -2427,7 +2427,7 @@
     "llm.c": {
       "name": "llm.c",
       "cat": 7,
-      "desc": "LLMs in simple, pure C/CUDA with no need for 245MB of PyTorch or 107MB of cPython. Current focus is on pretraining, in particular reproducing the GPT-2 and GPT-3 miniseries, along with a parallel PyTorch reference implementation in train_gpt2.py. You'll recognize this file as a slightly tweaked [nanoGPT](https://github.com/karpath.",
+      "desc": "LLMs in simple, pure C/CUDA with no need for 245MB of PyTorch or 107MB of cPython. Current focus is on pretraining, in particular reproducing the GPT-2 and GPT-3 miniseries, along with a parallel PyTorch reference implementation in train_gpt2.py. You'll recognize this file as a slightly tweaked nanoGPT.",
       "stack": "python, typescript, javascript",
       "choose_if": "quieres bajo nivel sin abstracciones y tienes GPU CUDA",
       "avoid_if": "prefieres PyTorch ([nanoGPT](#-nanogpt)) o no tienes CUDA.",
@@ -2457,7 +2457,7 @@
     "nemotron": {
       "name": "Nemotron",
       "cat": 9,
-      "desc": "Open and efficient models for agentic AI.** Training recipes, deployment guides, and use-case examples for the Nemotron family.",
+      "desc": "Open and efficient models for agentic AI. Training recipes, deployment guides, and use-case examples for the Nemotron family.",
       "stack": "python, typescript, postgres",
       "choose_if": "quieres nvidia nemotron developer repository",
       "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
@@ -2472,8 +2472,8 @@
     },
     "normalize.css": {
       "name": "normalize.css",
-      "cat": 4,
-      "desc": "src=\"https://necolas.github.io/normalize.css/logo.svg\" alt=\"Normalize Logo\" width=\"80\" height=\"80\" align=\"right\"> .",
+      "cat": 9,
+      "desc": "normalize.css alinea el render de elementos HTML entre navegadores. Es una base de CSS, no un sistema de diseño.",
       "stack": "javascript/typescript, typescript, javascript",
       "choose_if": "quieres base CSS uniforme y ligera",
       "avoid_if": "ya usas el preflight de Tailwind, que cubre lo mismo.",
@@ -2487,7 +2487,7 @@
     "repomix": {
       "name": "repomix",
       "cat": 3,
-      "desc": "Need discussion? Join us on Discord ! .",
+      "desc": "Warp, built for coding with multiple AI agents Available for MacOS, Linux, & Windows.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres",
       "choose_if": "quieres need discussion? join us on <a href=\"https://discord.gg/wnyztwzfku\">discord</a>!",
       "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
@@ -2519,7 +2519,7 @@
     "three.js": {
       "name": "three.js",
       "cat": 9,
-      "desc": "JavaScript 3D library.",
+      "desc": "The aim of the project is to create an easy-to-use, lightweight, cross-browser, general-purpose 3D library. The current builds only include WebGL and WebGPU renderers but SVG and CSS3D renderers are also available as addons.",
       "stack": "javascript/typescript, typescript, javascript",
       "choose_if": "renderizas 3D en web y quieres control a bajo nivel",
       "avoid_if": "trabajas solo 2D o prefieres la ergonomía de React ([react-three-fiber](#-react-three-fiber)).",
@@ -2550,7 +2550,7 @@
     "tools": {
       "name": "tools",
       "cat": 0,
-      "desc": "",
+      "desc": "Carpeta de herramientas auxiliares del hub, no un repositorio de producto. Sirve como referencia interna, no como dependencia de un proyecto.",
       "stack": "See repo",
       "choose_if": "quieres necesitas las capacidades que ofrece este repo",
       "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
@@ -2580,7 +2580,7 @@
     "browser-harness": {
       "name": "browser-harness",
       "cat": 2,
-      "desc": "Browser Harness ♞.",
+      "desc": "Connect an LLM directly to your real browser with a thin, editable CDP harness. For browser tasks where you need complete freedom.",
       "stack": "python, typescript, postgres",
       "choose_if": "quieres <img src=\"https://raw.githubusercontent.com/browser-use/media/main/browser-harness/banner-",
       "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
@@ -2596,7 +2596,7 @@
     "codebase-memory-mcp": {
       "name": "codebase-memory-mcp",
       "cat": 3,
-      "desc": "The fastest and most efficient code intelligence engine for AI coding agents.** Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for macOS, Linux, and Windows — download, run `install`, done.",
+      "desc": "The fastest and most efficient code intelligence engine for AI coding agents. Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for macOS, Linux, and Windows — download, run `install`, done.",
       "stack": "python, typescript, javascript, docker",
       "choose_if": "quieres codebase-memory-mcp",
       "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
@@ -2644,7 +2644,7 @@
     "last30days-skill": {
       "name": "last30days-skill",
       "cat": 2,
-      "desc": "An AI agent-led search engine scored by upvotes, likes, and real money - not editors.**.",
+      "desc": "An AI agent-led search engine scored by upvotes, likes, and real money - not editors..",
       "stack": "python, typescript, javascript, react",
       "choose_if": "quieres /last30days",
       "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
@@ -2740,7 +2740,7 @@
     "video-use": {
       "name": "video-use",
       "cat": 12,
-      "desc": "Introducing **video-use** — edit videos with Claude Code. 100% open source.",
+      "desc": "Introducing video-use — edit videos with Claude Code. 100% open source.",
       "stack": "python, typescript",
       "choose_if": "quieres video-use",
       "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
@@ -2800,6 +2800,438 @@
       "alternatives": [],
       "repo": "https://github.com/vllm-project/vllm.git",
       "doc": "human/fichas/vllm.md"
+    },
+    "agent-protocol": {
+      "name": "agent-protocol",
+      "cat": 3,
+      "desc": "Agent Protocol intenta estandarizar cómo se expone un agente (run, I/O, estado) sin atarse a un framework. Es un spec/directorio, no un runtime completo.",
+      "stack": "python, typescript, postgres, fastapi, langchain",
+      "choose_if": "quieres agent protocol",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "awesome-claude-code",
+        "agents-towards-production",
+        "ag2"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/langchain-ai/agent-protocol.git",
+      "doc": "human/fichas/agent-protocol.md"
+    },
+    "agent-reach": {
+      "name": "Agent-Reach",
+      "cat": 3,
+      "desc": "Agent-Reach estabiliza cómo un agente se conecta a proveedores LLM. La idea es que el canal de acceso pueda cambiar sin que reescribas el resto del stack.",
+      "stack": "python, typescript, javascript, postgres, whisper",
+      "choose_if": "quieres 给你的 ai agent 一键装上互联网能力",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "awesome-claude-code",
+        "agents-towards-production",
+        "ag2"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/Panniantong/Agent-Reach.git",
+      "doc": "human/fichas/agent-reach.md"
+    },
+    "arcads-claude-code": {
+      "name": "arcads-claude-code",
+      "cat": 2,
+      "desc": "Plugin de skills que conecta un coding agent con Arcads para piezas creativas (video e imagen). Requiere cuenta Arcads; no es un renderer local.",
+      "stack": "python, typescript, javascript, react, postgres, whisper",
+      "choose_if": "quieres arcads ai video — agent skill pack",
+      "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+      "combines_with": [
+        "fluxer",
+        "whisper",
+        "faster-whisper"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/krusemediallc/arcads-claude-code.git",
+      "doc": "human/fichas/arcads-claude-code.md"
+    },
+    "cli": {
+      "name": "cli",
+      "cat": 0,
+      "desc": "gh es la CLI oficial de GitHub. No es un agente; es la herramienta de git/GitHub que el resto del flujo asume instalada.",
+      "stack": "typescript",
+      "choose_if": "quieres gh is github on the command line. it brings pull requests, issues, and other github concep",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "andrej-karpathy-skills",
+        "antigravity-awesome-skills",
+        "awesome-agent-skills"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/cli/cli.git",
+      "doc": "human/fichas/cli.md"
+    },
+    "computer-use-preview": {
+      "name": "computer-use-preview",
+      "cat": 3,
+      "desc": "Preview de Gemini Computer Use: el modelo ve la pantalla y opera UI. Requiere API de Google y no es un agente genérico de código.",
+      "stack": "python, typescript, react",
+      "choose_if": "quieres computer use preview",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "awesome-claude-code",
+        "agents-towards-production",
+        "ag2"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/google-gemini/computer-use-preview.git",
+      "doc": "human/fichas/computer-use-preview.md"
+    },
+    "context7": {
+      "name": "context7",
+      "cat": 5,
+      "desc": "Context7 evita que el modelo alucine APIs viejas: trae docs versionadas al contexto. Instálalo como servidor MCP en el agente de código.",
+      "stack": "javascript/typescript, typescript, javascript, react",
+      "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+      "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+      "combines_with": [
+        "claude-plugins-official",
+        "n8n-skills",
+        "mcp"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/upstash/context7.git",
+      "doc": "human/fichas/context7.md"
+    },
+    "davinci-resolve-mcp": {
+      "name": "davinci-resolve-mcp",
+      "cat": 5,
+      "desc": "DaVinci Resolve MCP expone edición, media pool, render, color y Fusion a asistentes compatibles con Model Context Protocol. Requiere Resolve abierto y, para scripting externo, la edición Studio.",
+      "stack": "python, typescript, javascript, whisper",
+      "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+      "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+      "combines_with": [
+        "claude-plugins-official",
+        "n8n-skills",
+        "mcp"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/samuelgursky/davinci-resolve-mcp.git",
+      "doc": "human/fichas/davinci-resolve-mcp.md"
+    },
+    "deepagents": {
+      "name": "deepagents",
+      "cat": 3,
+      "desc": "Deep Agents is an open source agent harness — an opinionated agent that runs out of the box. Extend, override, or replace any piece.",
+      "stack": "python, typescript, javascript, langchain",
+      "choose_if": "quieres the batteries-included agent harness.",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "awesome-claude-code",
+        "agents-towards-production",
+        "ag2"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/langchain-ai/deepagents.git",
+      "doc": "human/fichas/deepagents.md"
+    },
+    "deeptutor": {
+      "name": "DeepTutor",
+      "cat": 3,
+      "desc": "DeepTutor es un sistema de tutoría con agentes para aprendizaje continuo. Encaja como producto educativo, no como orquestador genérico.",
+      "stack": "python, typescript, javascript, react, docker, postgres, fastapi, langchain",
+      "choose_if": "quieres deeptutor: lifelong personalized tutoring",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "awesome-claude-code",
+        "agents-towards-production",
+        "ag2"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/HKUDS/DeepTutor.git",
+      "doc": "human/fichas/deeptutor.md"
+    },
+    "engram": {
+      "name": "engram",
+      "cat": 6,
+      "desc": "Engram da a cualquier agente compatible con MCP una memoria local (o cloud) en un solo binario, sin dependencias pesadas.",
+      "stack": "python, typescript, javascript, docker, postgres",
+      "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+      "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+      "combines_with": [
+        "claude-plugins-official",
+        "n8n-skills",
+        "mcp"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/Gentleman-Programming/engram.git",
+      "doc": "human/fichas/engram.md"
+    },
+    "hermes-desktop": {
+      "name": "hermes-desktop",
+      "cat": 8,
+      "desc": "Hermes Desktop envuelve el agente Hermes en una UI nativa. Úsalo si quieres Hermes como aplicación, no solo como CLI.",
+      "stack": "javascript/typescript, python, typescript, javascript, react, postgres",
+      "choose_if": "quieres español (latam)",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "awesome-claude-code",
+        "agents-towards-production",
+        "ag2"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/fathah/hermes-desktop.git",
+      "doc": "human/fichas/hermes-desktop.md"
+    },
+    "langchain-mcp-adapters": {
+      "name": "langchain-mcp-adapters",
+      "cat": 5,
+      "desc": "Puente ligero entre servidores MCP y el ecosistema LangChain/LangGraph. Librería, no un servidor MCP en sí.",
+      "stack": "python, typescript, javascript, langchain",
+      "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+      "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+      "combines_with": [
+        "claude-plugins-official",
+        "n8n-skills",
+        "mcp"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/langchain-ai/langchain-mcp-adapters.git",
+      "doc": "human/fichas/langchain-mcp-adapters.md"
+    },
+    "langgraph-supervisor-py": {
+      "name": "langgraph-supervisor-py",
+      "cat": 3,
+      "desc": "> Note: We now recommend using the supervisor pattern directly via tools rather than this library for most use cases. The tool-calling approach gives you more control over context engineering and is the recommended pattern in the LangChain multi-agent guide. See our supervisor tutorial for a step-by-step guide. We're making this library compatible with LangChain 1.",
+      "stack": "python, typescript, react, postgres, langchain",
+      "choose_if": "quieres 🤖 langgraph multi-agent supervisor",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "awesome-claude-code",
+        "agents-towards-production",
+        "ag2"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/langchain-ai/langgraph-supervisor-py.git",
+      "doc": "human/fichas/langgraph-supervisor-py.md"
+    },
+    "langgraphjs": {
+      "name": "langgraphjs",
+      "cat": 3,
+      "desc": "Implementación TypeScript de LangGraph. Sirve para construir, gestionar y desplegar agentes de larga duración con grafos de estado en Node o el navegador.",
+      "stack": "javascript/typescript, javascript",
+      "choose_if": "quieres libs/langgraph-core/readme.md",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "awesome-claude-code",
+        "agents-towards-production",
+        "ag2"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/langchain-ai/langgraphjs.git",
+      "doc": "human/fichas/langgraphjs.md"
+    },
+    "loop-engineering": {
+      "name": "loop-engineering",
+      "cat": 3,
+      "desc": "> Stop prompting. Design the loop. Get a score.",
+      "stack": "javascript/typescript, typescript, javascript, postgres",
+      "choose_if": "quieres loop engineering",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "awesome-claude-code",
+        "agents-towards-production",
+        "ag2"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/cobusgreyling/loop-engineering.git",
+      "doc": "human/fichas/loop-engineering.md"
+    },
+    "mercury-agent": {
+      "name": "mercury-agent",
+      "cat": 3,
+      "desc": "Remembers what matters. Asks before it acts. Runs 24/7 from CLI, Telegram, or Web. 31 built-in tools, Kanban boards, extensible skills, SQLite-backed Second Brain memory.",
+      "stack": "javascript/typescript, typescript, javascript, react, postgres",
+      "choose_if": "quieres soul-driven ai agent with permission-hardened tools, token budgets, and multi-channel acce",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "awesome-claude-code",
+        "agents-towards-production",
+        "ag2"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/cosmicstack-labs/mercury-agent.git",
+      "doc": "human/fichas/mercury-agent.md"
+    },
+    "nemoclaw": {
+      "name": "NemoClaw",
+      "cat": 3,
+      "desc": "NVIDIA NemoClaw is an open source reference stack for running supported AI agents more safely inside NVIDIA OpenShell sandboxes. It provides guided onboarding, managed inference, network policy, managed integrations, snapshots, and lifecycle operations through the NemoClaw CLI and its agent-specific aliases.",
+      "stack": "javascript/typescript, python, typescript, javascript, docker, postgres, langchain",
+      "choose_if": "quieres nvidia nemoclaw: reference stack for sandboxed ai agents in openshell",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "awesome-claude-code",
+        "agents-towards-production",
+        "ag2"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/NVIDIA/NemoClaw.git",
+      "doc": "human/fichas/nemoclaw.md"
+    },
+    "open-swe": {
+      "name": "open-swe",
+      "cat": 3,
+      "desc": "Elite engineering orgs like Stripe, Ramp, and Coinbase are building their own internal coding agents — Slackbots, CLIs, and web apps that meet engineers where they already work. These agents are connected to internal systems with the right context, permissioning, and safety boundaries to operate with minimal human oversight.",
+      "stack": "python, typescript, javascript, react, docker, postgres, langchain",
+      "choose_if": "quieres open-source framework for building your org's internal coding agent.",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "awesome-claude-code",
+        "agents-towards-production",
+        "ag2"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/langchain-ai/open-swe.git",
+      "doc": "human/fichas/open-swe.md"
+    },
+    "openclaw": {
+      "name": "openclaw",
+      "cat": 3,
+      "desc": "OpenClaw is a personal AI assistant that runs on your devices and meets you in the channels you already use. It is designed for a single operator and connects models, tools, messaging channels, and optional companion apps through one Gateway.",
+      "stack": "javascript/typescript, typescript, javascript, docker, postgres",
+      "choose_if": "quieres openclaw 🦞 — your assistant, on your devices, in your chats",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "awesome-claude-code",
+        "agents-towards-production",
+        "ag2"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/openclaw/openclaw.git",
+      "doc": "human/fichas/openclaw.md"
+    },
+    "pdf-inspector": {
+      "name": "pdf-inspector",
+      "cat": 13,
+      "desc": "PDF Inspector detecta si un PDF es texto o escaneado y extrae contenido con coordenadas. Encaja en pipelines de documentos, no como visor.",
+      "stack": "python, typescript, javascript",
+      "choose_if": "quieres pdf-inspector",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "firecrawl",
+        "crawl4ai",
+        "scrapy"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/firecrawl/pdf-inspector.git",
+      "doc": "human/fichas/pdf-inspector.md"
+    },
+    "pdfding": {
+      "name": "PdfDing",
+      "cat": 13,
+      "desc": "PdfDing es un manager de PDFs que hosteas tú. Alternativa ligera a suites documentales pesadas.",
+      "stack": "python, typescript, javascript, docker",
+      "choose_if": "quieres selfhosted pdf manager, viewer and editor offering a seamless user experience on multiple ",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "markitdown",
+        "ppt-master",
+        "reveal.js"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/mrmn2/PdfDing.git",
+      "doc": "human/fichas/pdfding.md"
+    },
+    "remotion-superpowers": {
+      "name": "remotion-superpowers",
+      "cat": 12,
+      "desc": "A free, open-source Claude Code plugin that turns Remotion into a full video production studio — by Dojo Coding.",
+      "stack": "python, typescript, javascript, react, whisper",
+      "choose_if": "quieres 🎬 remotion superpowers v2.1",
+      "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+      "combines_with": [
+        "fluxer",
+        "whisper",
+        "faster-whisper"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/DojoCodingLabs/remotion-superpowers.git",
+      "doc": "human/fichas/remotion-superpowers.md"
+    },
+    "swe-bench": {
+      "name": "SWE-bench",
+      "cat": 7,
+      "desc": "SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub. Given a codebase and an issue, a language model is tasked with generating a patch that resolves the described problem.",
+      "stack": "python, typescript, docker",
+      "choose_if": "quieres code and data for the following works:",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "codegraph",
+        "gitnexus",
+        "deepseek-coder"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/SWE-bench/SWE-bench.git",
+      "doc": "human/fichas/swe-bench.md"
+    },
+    "t3code": {
+      "name": "t3code",
+      "cat": 3,
+      "desc": "T3 Code orquesta los agentes que ya corren en el host desde una UI (iOS, Android, web, Electron). No sustituye al modelo ni al runtime del agente.",
+      "stack": "javascript/typescript, typescript, javascript, react",
+      "choose_if": "quieres t3 code is an \"agent harness control surface\". it enables control of the agents on your ma",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "andrej-karpathy-skills",
+        "antigravity-awesome-skills",
+        "awesome-agent-skills"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/pingdotgg/t3code.git",
+      "doc": "human/fichas/t3code.md"
+    },
+    "timesfm": {
+      "name": "timesfm",
+      "cat": 7,
+      "desc": "TimesFM predice series temporales con un decoder-only pretrained. Es un modelo de investigación/producción de forecasting, no un dashboard.",
+      "stack": "python, typescript, docker",
+      "choose_if": "quieres timesfm (time series foundation model) is a pretrained time-series foundation",
+      "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+      "combines_with": [
+        "firecrawl",
+        "crawl4ai",
+        "scrapy"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/google-research/timesfm.git",
+      "doc": "human/fichas/timesfm.md"
+    },
+    "unlimited-ocr": {
+      "name": "Unlimited-OCR",
+      "cat": 11,
+      "desc": "Unlimited OCR apunta a extracción de texto y estructura en documentos largos. Setup de visión; no es un editor PDF.",
+      "stack": "python, typescript, docker, postgres",
+      "choose_if": "quieres unlimited ocr works",
+      "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+      "combines_with": [
+        "litellm",
+        "cosmos",
+        "comfyui"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/baidu/Unlimited-OCR.git",
+      "doc": "human/fichas/unlimited-ocr.md"
+    },
+    "wan2gp": {
+      "name": "Wan2GP",
+      "cat": 12,
+      "desc": "WanGP is a one-stop super app for the best open source generative models across video, image, audio, and text-to-speech.",
+      "stack": "python, typescript, react, docker, postgres, comfy",
+      "choose_if": "quieres wangp by deepbeepmeep : the best open source generative models accessible to the gpu poor",
+      "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+      "combines_with": [
+        "fluxer",
+        "whisper",
+        "faster-whisper"
+      ],
+      "alternatives": [],
+      "repo": "https://github.com/deepbeepmeep/Wan2GP.git",
+      "doc": "human/fichas/wan2gp.md"
     }
   }
 }

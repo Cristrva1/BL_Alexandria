@@ -6,7 +6,7 @@
 ## `faster-whisper`
 role=runtime · exec=cloud · setup=heavy · mcp=False · prov=—
 
-**Qué es:** faster-whisper** is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models.
+**Qué es:** faster-whisper is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models.
 **Stack:** python, typescript, docker, fastapi, whisper
 **Repo:** https://github.com/SYSTRAN/faster-whisper.git
 
@@ -74,9 +74,9 @@ _Nombre PyPI puede diferir de 'moviepy'; verifica en pypi.org._
 **Combina con:** `whisperx`, `tts`, `pipeline de reels`
 
 ## `omnivoice-studio`
-role=platform · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=app · exec=hybrid · setup=heavy · mcp=False · prov=—
 
-**Qué es:** OmniVoice Studio is in active beta.** Things may break between releases. For the latest features and fixes, clone the repo and run from source rather than using pre-built installers. Bug reports and PRs are very welcome — open an issue or join Discord.
+**Qué es:** OmniVoice Studio concentra clonación y síntesis de voz en un studio local. Está en beta; espera roturas entre versiones.
 **Stack:** python, typescript, javascript, react, docker, fastapi, whisper
 **Repo:** https://github.com/debpalash/OmniVoice-Studio.git
 
@@ -87,10 +87,38 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Evita si:** solo necesitas TTS simple por CLI/librería ([TTS](#-tts)) o estabilidad de producción.
 **Combina con:** `whisperx`
 
+## `remotion`
+role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** Remotion renderiza video desde componentes React. Úsalo para piezas generadas por código (intros, datos, motion graphics), no como NLE clásico.
+**Stack:** javascript/typescript, typescript, javascript, react
+**Repo:** https://github.com/remotion-dev/remotion.git
+
+**Instalación** [~]: `npm install remotion   (o: pnpm add remotion)`
+_Nombre npm puede diferir de 'remotion'; verifica en npmjs.com._
+
+**Elige si:** generas video a escala con React y quieres variantes parametrizadas
+**Evita si:** trabajas en Python ([moviepy](#-moviepy)) o buscas un editor visual.
+**Combina con:** `open-generative-ai`, `pipeline de reels`
+
+## `remotion-superpowers`
+role=platform · exec=cloud · setup=heavy · mcp=False · prov=—
+
+**Qué es:** A free, open-source Claude Code plugin that turns Remotion into a full video production studio — by Dojo Coding.
+**Stack:** python, typescript, javascript, react, whisper
+**Repo:** https://github.com/DojoCodingLabs/remotion-superpowers.git
+
+**Instalación** [+]: `Crear cuenta / API key en el proveedor (no self-host).`
+_Servicio gestionado; no se clona._
+
+**Elige si:** quieres 🎬 remotion superpowers v2.1
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `fluxer`, `whisper`, `faster-whisper`
+
 ## `supertonic`
 role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
 
-**Qué es:** Supertonic** is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns.
+**Qué es:** Supertonic is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns.
 **Stack:** python, typescript, javascript
 **Repo:** https://github.com/supertone-inc/supertonic.git
 
@@ -118,7 +146,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `video-use`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** Introducing **video-use** — edit videos with Claude Code. 100% open source.
+**Qué es:** Introducing video-use — edit videos with Claude Code. 100% open source.
 **Stack:** python, typescript
 **Repo:** https://github.com/browser-use/video-use.git
 
@@ -157,6 +185,20 @@ _Nombre PyPI puede diferir de 'VoxCPM'; verifica en pypi.org._
 **Evita si:** priorizas latencia mínima ([supertonic](#-supertonic)) o no tienes GPU.
 **Combina con:** `tts`
 
+## `wan2gp`
+role=platform · exec=local · setup=heavy · mcp=False · prov=—
+
+**Qué es:** WanGP is a one-stop super app for the best open source generative models across video, image, audio, and text-to-speech.
+**Stack:** python, typescript, react, docker, postgres, comfy
+**Repo:** https://github.com/deepbeepmeep/Wan2GP.git
+
+**Instalación** [~]: `git clone https://github.com/deepbeepmeep/Wan2GP.git && cd Wan2GP && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** quieres wangp by deepbeepmeep : the best open source generative models accessible to the gpu poor
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `fluxer`, `whisper`, `faster-whisper`
+
 ## `whisper`
 role=library · exec=cloud · setup=heavy · mcp=False · prov=—
 
@@ -174,7 +216,7 @@ _Nombre PyPI puede diferir de 'whisper'; verifica en pypi.org._
 ## `whisperx`
 role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
 
-**Qué es:** Recall.ai - Meeting Transcription API.
+**Qué es:** If you’re looking for a transcription API for meetings, consider checking out Recall.ai's Meeting Transcription API, an API that works with Zoom, Google Meet, Microsoft Teams, and more. Recall.ai diarizes by pulling the speaker data and separate audio streams from the meeting platforms, which means 100% accurate speaker diarization with actual speaker names.
 **Stack:** python, typescript, whisper
 **Repo:** https://github.com/m-bain/whisperX.git
 

@@ -1,6 +1,6 @@
 # andrej-karpathy-skills
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-Check out my new project Multica — an open-source platform for running and managing coding agents with reusable skills.
+> Check out my new project Multica — an open-source platform for running and managing coding agents with reusable skills.
 
 ## Que problema resuelve
 

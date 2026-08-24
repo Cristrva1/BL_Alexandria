@@ -1,6 +1,6 @@
 # notebooklm-mcp-cli
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-Programmatic access to Google NotebookLM** — via command-line interface (CLI) or Model Context Protocol (MCP) server.
+Programmatic access to Google NotebookLM — via command-line interface (CLI) or Model Context Protocol (MCP) server.
 
 ## Que problema resuelve
 

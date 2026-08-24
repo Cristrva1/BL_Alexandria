@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-08-24T04:26:20.266236+00:00",
+  "profile": {
+    "id": "openclaw",
+    "name": "openclaw",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\openclaw",
+    "repo_url": "https://github.com/openclaw/openclaw.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "OpenClaw 🦞 — Your assistant, on your devices, in your chats",
+      "desc": "OpenClaw is a personal AI assistant that runs on your devices and meets you in the channels you already use. It is designed for a single operator and connects models, tools, messaging channels, and optional companion apps through one Gateway."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "docker",
+      "postgres"
+    ],
+    "one": "OpenClaw is a personal AI assistant that runs on your devices and meets you in the channels you already use.",
+    "install_hints": [
+      "git clone https://github.com/openclaw/openclaw.git"
+    ]
+  },
+  "compact": {
+    "id": "openclaw",
+    "name": "openclaw",
+    "cat": 3,
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "typescript"
+    ],
+    "one": "OpenClaw is a personal AI assistant that runs on your devices and meets you in the channels you already use.",
+    "alt": [],
+    "doc": "human/fichas/openclaw.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "openclaw",
+    "cat": 3,
+    "desc": "OpenClaw is a personal AI assistant that runs on your devices and meets you in the channels you already use. It is designed for a single operator and connects models, tools, messaging channels, and optional companion apps through one Gateway.",
+    "stack": "javascript/typescript, typescript, javascript, docker, postgres",
+    "choose_if": "quieres openclaw 🦞 — your assistant, on your devices, in your chats",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/openclaw/openclaw.git",
+    "doc": "human/fichas/openclaw.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.266025+00:00"
+  }
+}

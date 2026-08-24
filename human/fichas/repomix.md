@@ -1,6 +1,6 @@
 # repomix
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ USAR AHORA
 
 ## Para que sirve realmente
 
-Need discussion? Join us on Discord ! .
+Warp, built for coding with multiple AI agents Available for MacOS, Linux, & Windows.
 
 ## Que problema resuelve
 

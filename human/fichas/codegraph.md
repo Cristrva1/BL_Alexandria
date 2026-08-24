@@ -1,6 +1,6 @@
 # codegraph
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-Already installed? Run `codegraph upgrade` to update in place.
+CodeGraph construye un grafo del codebase para que un agente navegue símbolos y dependencias sin leer el repo entero.
 
 ## Que problema resuelve
 

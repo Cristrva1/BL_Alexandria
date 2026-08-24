@@ -6,7 +6,7 @@
 ## `agency-agents`
 role=skill · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** A complete AI agency at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
+**Qué es:** A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
 **Stack:** python, typescript, react, postgres, whisper
 **Repo:** https://github.com/msitarzewski/agency-agents.git
 
@@ -48,7 +48,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `gradio`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** | [Documentation](https://gradio.app/docs/)
+**Qué es:** Gradio is an open-source Python package that allows you to quickly build a demo or web application for your machine learning model, API, or any arbitrary Python function. You can then share a link to your demo or web application in just a few seconds using Gradio's built-in sharing features. No JavaScript, CSS, or web hosting experience needed!
 **Stack:** python, typescript, javascript, react, postgres, fastapi
 **Repo:** https://github.com/gradio-app/gradio.git
 
@@ -76,7 +76,7 @@ _Nombre PyPI puede diferir de 'graphrag'; verifica en pypi.org._
 ## `gsap`
 role=runtime · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** GSAP is a **framework-agnostic** JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in **every** major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects... anything JavaScript can touch! GSAP's ScrollTrigger plugin delivers jaw-droppin.
+**Qué es:** GSAP is a framework-agnostic JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects... anything JavaScript can touch! GSAP's ScrollTrigger plugin delivers jaw-droppin.
 **Stack:** javascript/typescript, typescript, javascript, react, postgres
 **Repo:** https://github.com/greensock/GSAP.git
 
@@ -90,7 +90,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 ## `heroui`
 role=library · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** packages/react/README.md
+**Qué es:** HeroUI (antes NextUI) entrega componentes React con tema. Elige esto si quieres una lib con actualizaciones; elige `ui` (shadcn) si quieres dueño del código copiado.
 **Stack:** javascript/typescript, javascript, react
 **Repo:** https://github.com/heroui-inc/heroui.git
 
@@ -118,7 +118,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `llmfit`
 role=app · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** New: Community Leaderboard** — Browse real-world performance data from actual users. Press `b` to see measured tok/s, TTFT, and VRAM for any GPU — not just yours. Pick from 27+ hardware presets (RTX 5090 to Apple M1) with `H` to compare real numbers before you buy or build.
+**Qué es:** New: Community Leaderboard — Browse real-world performance data from actual users. Press `b` to see measured tok/s, TTFT, and VRAM for any GPU — not just yours. Pick from 27+ hardware presets (RTX 5090 to Apple M1) with `H` to compare real numbers before you buy or build.
 **Stack:** python, typescript, javascript, docker, postgres
 **Repo:** https://github.com/AlexsJones/llmfit.git
 
@@ -132,7 +132,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 ## `magicui`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** UI Library for Design Engineers.
+**Qué es:** Visit https://magicui.design/docs to view the documentation.
 **Stack:** javascript/typescript, typescript, javascript, react
 **Repo:** https://github.com/magicuidesign/magicui.git
 
@@ -146,7 +146,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 ## `mirofish`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** 简洁通用的群体智能引擎，预测万物.
+**Qué es:** A Simple and Universal Swarm Intelligence Engine, Predicting Anything.
 **Stack:** javascript/typescript, python, typescript, javascript, docker, postgres
 **Repo:** https://github.com/666ghj/MiroFish.git
 
@@ -157,10 +157,24 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Evita si:** necesitas tareas deterministas o resultados reproducibles.
 **Combina con:** `openevolve`
 
+## `motion`
+role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
+
+**Qué es:** Motion (antes Framer Motion) anima interfaces web con una API declarativa. Úsala en el frontend, no como motor de video.
+**Stack:** javascript/typescript, typescript, javascript, react
+**Repo:** https://github.com/motiondivision/motion.git
+
+**Instalación** [~]: `npm install motion   (o: pnpm add motion)`
+_Nombre npm puede diferir de 'motion'; verifica en npmjs.com._
+
+**Elige si:** animas componentes React con API declarativa
+**Evita si:** necesitas timelines complejos no ligados a React ([GSAP](#-gsap)).
+**Combina con:** `magicui`, `react-three-fiber`
+
 ## `nanochat`
 role=app · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all major LLM stages including tokenization, pretraining, finetuning, evaluation, inference, and a chat UI. For example, you can train your own GPT-2 capability LLM (which cost ~$43,000 to train in 2019) for only $48 (~2 hours of 8XH100 GPU node) 
+**Qué es:** nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all major LLM stages including tokenization, pretraining, finetuning, evaluation, inference, and a chat UI.
 **Stack:** python, typescript, javascript, whisper
 **Repo:** https://github.com/karpathy/nanochat.git
 
@@ -174,7 +188,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 ## `nemotron`
 role=app · exec=hybrid · setup=heavy · mcp=False · prov=—
 
-**Qué es:** Open and efficient models for agentic AI.** Training recipes, deployment guides, and use-case examples for the Nemotron family.
+**Qué es:** Open and efficient models for agentic AI. Training recipes, deployment guides, and use-case examples for the Nemotron family.
 **Stack:** python, typescript, postgres
 **Repo:** https://github.com/NVIDIA-NeMo/Nemotron.git
 
@@ -185,10 +199,24 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Evita si:** —
 **Combina con:** `openwa`, `skills`, `agency-agents`
 
+## `normalize.css`
+role=library · exec=local · setup=easy · mcp=False · prov=—
+
+**Qué es:** normalize.css alinea el render de elementos HTML entre navegadores. Es una base de CSS, no un sistema de diseño.
+**Stack:** javascript/typescript, typescript, javascript
+**Repo:** https://github.com/necolas/normalize.css.git
+
+**Instalación** [~]: `npm install normalize.css   (o: pnpm add normalize.css)`
+_Nombre npm puede diferir de 'normalize.css'; verifica en npmjs.com._
+
+**Elige si:** quieres base CSS uniforme y ligera
+**Evita si:** ya usas el preflight de Tailwind, que cubre lo mismo.
+**Combina con:** `tailwindcss`
+
 ## `open-design`
 role=runtime · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** 🔥 **Open Design 0.10.0 is here: the all-in-one Agentic design workspace.** The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing off to an editor or a Code Agent — without leaving the app. With parallel sessions, it stops feeling like one assistant and starts feeling like 
+**Qué es:** 🔥 Open Design 0.10.0 is here: the all-in-one Agentic design workspace. The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing off to an editor or a Code Agent — without leaving the app.
 **Stack:** javascript/typescript, typescript, javascript, react, docker, postgres
 **Repo:** https://github.com/nexu-io/open-design.git
 
@@ -198,20 +226,6 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Elige si:** generas UI desde texto y quieres edición visual
 **Evita si:** prefieres editar visualmente sobre tu código existente ([plasmic](#-plasmic)).
 **Combina con:** `tailwindcss`, `heroui`, `web app moderna`
-
-## `pdfcraft`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
-
-**Qué es:** Merge, split, compress, convert, and edit PDF files online without uploading to servers.
-**Stack:** javascript/typescript, typescript, javascript, react, docker, postgres
-**Repo:** https://github.com/PDFCraftTool/pdfcraft.git
-
-**Instalación** [~]: `git clone https://github.com/PDFCraftTool/pdfcraft.git && cd pdfcraft && docker compose up -d`
-_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
-
-**Elige si:** manipulas PDFs con privacidad y sin instalar nada
-**Evita si:** necesitas conversión a Markdown para IA ([markitdown](#-markitdown)) o edición de contenido (no solo manipulación de páginas).
-**Combina con:** `markitdown`
 
 ## `penpot`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
@@ -272,7 +286,7 @@ _Nombre npm puede diferir de 'react-three-fiber'; verifica en npmjs.com._
 ## `real-esrgan`
 role=library · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** 👀**Demos** **|** 🚩**Updates** **|** ⚡**Usage** **|** 🏰**Model Zoo** **|** 🔧Install **|** 💻Train **|** ❓FAQ **|** 🎨Contribution.
+**Qué es:** 🔥 RealESRGANx4plusanime6B for anime images (动漫插图模型). Please see [animemodel].
 **Stack:** python, typescript, postgres
 **Repo:** https://github.com/xinntao/Real-ESRGAN.git
 
@@ -283,24 +297,10 @@ _Nombre PyPI puede diferir de 'Real-ESRGAN'; verifica en pypi.org._
 **Evita si:** solo necesitas arreglar rostros ([GFPGAN](#-gfpgan)) o buscas difusión para reimaginar.
 **Combina con:** `gfpgan`, `pipeline de reels`
 
-## `remotion`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
-
-**Qué es:** Remotion is a framework for **creating videos programmatically using React.**.
-**Stack:** javascript/typescript, typescript, javascript, react
-**Repo:** https://github.com/remotion-dev/remotion.git
-
-**Instalación** [~]: `git clone https://github.com/remotion-dev/remotion.git && cd remotion && (pnpm install || npm install)`
-_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
-
-**Elige si:** generas video a escala con React y quieres variantes parametrizadas
-**Evita si:** trabajas en Python ([moviepy](#-moviepy)) o buscas un editor visual.
-**Combina con:** `open-generative-ai`, `pipeline de reels`
-
 ## `skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** Skills For Real Engineers.
+**Qué es:** My agent skills that I use every day to do real engineering - not vibe coding.
 **Stack:** javascript/typescript, typescript, javascript
 **Repo:** https://github.com/mattpocock/skills.git
 
@@ -367,24 +367,10 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Evita si:** prefieres CSS-in-JS o estilos scoped por componente.
 **Combina con:** `heroui`, `ui`, `magicui`
 
-## `taste-skill`
-role=skill · exec=local · setup=medium · mcp=False · prov=—
-
-**Qué es:** Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typography, motion, and spacing instead of boilerplate-looking UIs. This repo also includes **image-generation skills** for reference boards (web, mobile, brand kits). Pair them with **ChatGPT Images** or similar generators, then hand the frames to Codex, Cursor, or Claude Code for implementation.
-**Stack:** typescript, react, postgres
-**Repo:** https://github.com/Leonxlnx/taste-skill.git
-
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/taste-skill/). Si necesitas el código: git clone https://github.com/Leonxlnx/taste-skill.git`
-_Material de referencia/playbook; no es una dependencia runtime._
-
-**Elige si:** quieres frontends con gusto y no te basta con UI funcional
-**Evita si:** ya tienes un design system cerrado o no usas generadores de imagen.
-**Combina con:** `ui-ux-pro-max-skill`, `impeccable`
-
 ## `three.js`
 role=library · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** JavaScript 3D library.
+**Qué es:** The aim of the project is to create an easy-to-use, lightweight, cross-browser, general-purpose 3D library. The current builds only include WebGL and WebGPU renderers but SVG and CSS3D renderers are also available as addons.
 **Stack:** javascript/typescript, typescript, javascript
 **Repo:** https://github.com/mrdoob/three.js.git
 

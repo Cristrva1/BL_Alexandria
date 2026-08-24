@@ -6,7 +6,7 @@
 ## `comfyui`
 role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=—
 
-**Qué es:** The most powerful and modular AI engine for content creation.**.
+**Qué es:** The most powerful and modular AI engine for content creation..
 **Stack:** python, typescript, javascript, react, docker, comfy
 **Repo:** https://github.com/Comfy-Org/ComfyUI.git
 
@@ -34,7 +34,7 @@ _Nombre PyPI puede diferir de 'ComfyUI_IPAdapter_plus'; verifica en pypi.org._
 ## `controlnet`
 role=library · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** News: A nightly version of ControlNet 1.1 is released!
+**Qué es:** ControlNet 1.1 is released. Those new models will be merged to this repo after we make sure that everything is good.
 **Stack:** python, typescript
 **Repo:** https://github.com/lllyasviel/ControlNet.git
 
@@ -46,9 +46,9 @@ _Nombre PyPI puede diferir de 'ControlNet'; verifica en pypi.org._
 **Combina con:** `diffusers`, `comfyui`
 
 ## `cosmos`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** Table of Contents.
+**Qué es:** Colección NVIDIA Cosmos para modelos de mundo y video. Setup pesado: GPU y checkpoints. No es un editor de imagen ligero.
 **Stack:** python, typescript, docker, postgres
 **Repo:** https://github.com/NVIDIA/cosmos.git
 
@@ -90,7 +90,7 @@ _Nombre PyPI puede diferir de 'diffusers'; verifica en pypi.org._
 ## `face-recognition`
 role=library · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** _You can also read a translated version of this file in Chinese 简体中文版 or in Korean 한국어 or in Japanese 日本語._.
+**Qué es:** Recognize and manipulate faces from Python or from the command line with the world's simplest face recognition library.
 **Stack:** python, typescript, docker, postgres
 **Repo:** https://github.com/ageitgey/face_recognition.git
 
@@ -118,7 +118,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `gfpgan`
 role=library · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** 1. :boom: **Updated** online demo: ![Replicate](https://replicate.com/tencentarc/gfpgan). Here is the backup. 1. :boom: **Updated** online demo: ![Huggingface Gradio](https://huggingface.co/spaces/Xintao/GFPGAN) 1. .
+**Qué es:** 1. :boom: Updated online demo: . Here is the backup. 1. :boom: Updated online demo: 1. .
 **Stack:** python, typescript, javascript, postgres
 **Repo:** https://github.com/TencentARC/GFPGAN.git
 
@@ -160,7 +160,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 ## `liveportrait`
 role=library · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** `2025/06/01`**: 🌍 Over the past year, **LivePortrait** has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as numerous startups and creators. 🎉 `2025/01/01`**: 🐶 We updated a new version of the Animals model with more data, see **here**. `2024/10/18`**: ❗ We have upda.
+**Qué es:** `2025/06/01`: 🌍 Over the past year, LivePortrait has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as numerous startups and creators. 🎉 `2025/01/01`: 🐶 We updated a new version of the Animals model with more data, see here. `2024/10/18`: ❗ We have upda.
 **Stack:** python, typescript, javascript, postgres, comfy
 **Repo:** https://github.com/KlingAIResearch/LivePortrait.git
 
@@ -230,7 +230,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 ## `tts`
 role=library · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** 📣 ⓍTTSv2 is here with 16 languages and better performance across the board. 📣 ⓍTTS fine-tuning code is out. Check the example recipes. 📣 ⓍTTS can now stream with <200ms latency. 📣 ⓍTTS, our production TTS model that can speak 13 languages, is released Blog Post, Demo, [Docs](.
+**Qué es:** 📣 ⓍTTSv2 is here with 16 languages and better performance across the board. 📣 ⓍTTS fine-tuning code is out. Check the example recipes. 📣 ⓍTTS can now stream with <200ms latency. 📣 ⓍTTS, our production TTS model that can speak 13 languages, is released Blog Post, Demo, Docs.
 **Stack:** python, typescript, docker
 **Repo:** https://github.com/coqui-ai/TTS.git
 
@@ -240,3 +240,17 @@ _Nombre PyPI puede diferir de 'TTS'; verifica en pypi.org._
 **Elige si:** quieres flexibilidad y varios modelos en una librería
 **Evita si:** necesitas tiempo real puro ([supertonic](#-supertonic)) o soporte comercial (Coqui está inactivo).
 **Combina con:** `whisperx`, `moviepy`
+
+## `unlimited-ocr`
+role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
+
+**Qué es:** Unlimited OCR apunta a extracción de texto y estructura en documentos largos. Setup de visión; no es un editor PDF.
+**Stack:** python, typescript, docker, postgres
+**Repo:** https://github.com/baidu/Unlimited-OCR.git
+
+**Instalación** [~]: `pip install unlimited-ocr   (o: uv add unlimited-ocr)`
+_Nombre PyPI puede diferir de 'Unlimited-OCR'; verifica en pypi.org._
+
+**Elige si:** quieres unlimited ocr works
+**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Combina con:** `litellm`, `cosmos`, `comfyui`

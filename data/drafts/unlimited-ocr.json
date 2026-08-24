@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-08-24T04:26:20.544342+00:00",
+  "profile": {
+    "id": "unlimited-ocr",
+    "name": "Unlimited-OCR",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\Unlimited-OCR",
+    "repo_url": "https://github.com/baidu/Unlimited-OCR.git",
+    "manifests": [],
+    "intro": {
+      "title": "Unlimited OCR Works",
+      "desc": "Welcome the Era of One-shot Long-horizon Parsing."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "docker",
+      "postgres"
+    ],
+    "one": "Welcome the Era of One-shot Long-horizon Parsing.",
+    "install_hints": [
+      "uv pip install wheel/sglang-0.0.0.dev11416+g92e8bb79e-py3-none-any.whl",
+      "uv pip install kernels==0.11.7",
+      "uv pip install pymupdf==1.27.2.2"
+    ]
+  },
+  "compact": {
+    "id": "unlimited-ocr",
+    "name": "Unlimited-OCR",
+    "cat": 11,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "postgres",
+      "python",
+      "typescript"
+    ],
+    "one": "Welcome the Era of One-shot Long-horizon Parsing.",
+    "alt": [],
+    "doc": "human/fichas/unlimited-ocr.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "Unlimited-OCR",
+    "cat": 11,
+    "desc": "Welcome the Era of One-shot Long-horizon Parsing.",
+    "stack": "python, typescript, docker, postgres",
+    "choose_if": "quieres unlimited ocr works",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "litellm",
+      "cosmos",
+      "comfyui"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/baidu/Unlimited-OCR.git",
+    "doc": "human/fichas/unlimited-ocr.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.544112+00:00"
+  }
+}

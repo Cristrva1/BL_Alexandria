@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-08-24T04:26:20.006022+00:00",
+  "profile": {
+    "id": "langgraph-supervisor-py",
+    "name": "langgraph-supervisor-py",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\langgraph-supervisor-py",
+    "repo_url": "https://github.com/langchain-ai/langgraph-supervisor-py.git",
+    "manifests": [
+      "pyproject.toml",
+      "uv.lock"
+    ],
+    "intro": {
+      "title": "🤖 LangGraph Multi-Agent Supervisor",
+      "desc": "> Note: We now recommend using the supervisor pattern directly via tools rather than this library for most use cases. The tool-calling approach gives you more control over context engineering and is the recommended pattern in the LangChain multi-agent guide. See our supervisor tutorial for a step-by-step guide. We're making this library compatible with LangChain 1.0 to help users upgrade their existing code."
+    },
+    "features": [
+      "🤖 **Create a supervisor agent** to orchestrate multiple specialized agents",
+      "🛠️ **Tool-based agent handoff mechanism** for communication between agents",
+      "📝 **Flexible message history management** for conversation control"
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "react",
+      "postgres",
+      "langchain"
+    ],
+    "one": "> Note: We now recommend using the supervisor pattern directly via tools rather than this library for most use cases.",
+    "install_hints": [
+      "pip install langgraph-supervisor",
+      "pip install langgraph-supervisor langchain-openai",
+      "pip install langgraph-supervisor langchain-openai"
+    ]
+  },
+  "compact": {
+    "id": "langgraph-supervisor-py",
+    "name": "langgraph-supervisor-py",
+    "cat": 3,
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "langchain",
+      "postgres",
+      "python",
+      "react",
+      "typescript"
+    ],
+    "one": "> Note: We now recommend using the supervisor pattern directly via tools rather than this library for most use cases.",
+    "alt": [],
+    "doc": "human/fichas/langgraph-supervisor-py.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "langgraph-supervisor-py",
+    "cat": 3,
+    "desc": "> Note: We now recommend using the supervisor pattern directly via tools rather than this library for most use cases. The tool-calling approach gives you more control over context engineering and is the recommended pattern in the LangChain multi-agent guide. See our supervisor tutorial for a step-by-step guide. We're making this library compatible with LangChain 1.0 to help users upgrade their existing code.",
+    "stack": "python, typescript, react, postgres, langchain",
+    "choose_if": "quieres 🤖 langgraph multi-agent supervisor",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/langchain-ai/langgraph-supervisor-py.git",
+    "doc": "human/fichas/langgraph-supervisor-py.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.005806+00:00"
+  }
+}

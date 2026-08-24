@@ -3,6 +3,20 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `hermes-desktop`
+role=app · exec=local · setup=medium · mcp=False · prov=—
+
+**Qué es:** Hermes Desktop envuelve el agente Hermes en una UI nativa. Úsalo si quieres Hermes como aplicación, no solo como CLI.
+**Stack:** javascript/typescript, python, typescript, javascript, react, postgres
+**Repo:** https://github.com/fathah/hermes-desktop.git
+
+**Instalación** [~]: `git clone https://github.com/fathah/hermes-desktop.git && cd hermes-desktop && (uv sync || pip install -r requirements.txt)`
+_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+
+**Elige si:** quieres español (latam)
+**Evita si:** —
+**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+
 ## `open-notebook`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 

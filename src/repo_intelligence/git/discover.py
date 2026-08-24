@@ -14,7 +14,7 @@ def discover_repos(base: Path) -> list[RepoRecord]:
 
     records: list[RepoRecord] = []
     for child in sorted(base.iterdir(), key=lambda p: p.name.lower()):
-        if not child.is_dir():
+        if not child.is_dir() or child.name.startswith("."):
             continue
         is_git = status.is_git_repo(child)
         readme = find_readme(child)

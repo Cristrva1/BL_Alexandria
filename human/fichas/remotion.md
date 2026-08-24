@@ -1,6 +1,6 @@
 # remotion
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-Remotion is a framework for **creating videos programmatically using React.**.
+Remotion renderiza video desde componentes React. Úsalo para piezas generadas por código (intros, datos, motion graphics), no como NLE clásico.
 
 ## Que problema resuelve
 
@@ -16,7 +16,7 @@ generas video a escala con React y quieres variantes parametrizadas
 
 ## Por que tiene valor
 
-Aporta valor en `runtime` para javascript, javascript-typescript, multimedia, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react.
+Aporta valor en `library` para javascript, javascript-typescript, multimedia, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react.
 
 ## Cuando usarlo
 

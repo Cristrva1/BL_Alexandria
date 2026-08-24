@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-08-24T04:26:20.125124+00:00",
+  "profile": {
+    "id": "mercury-agent",
+    "name": "mercury-agent",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\mercury-agent",
+    "repo_url": "https://github.com/cosmicstack-labs/mercury-agent.git",
+    "manifests": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "package-lock.json"
+    ],
+    "intro": {
+      "title": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access.",
+      "desc": "Remembers what matters. Asks before it acts. Runs 24/7 from CLI, Telegram, or Web. 31 built-in tools, Kanban boards, extensible skills, SQLite-backed Second Brain memory."
+    },
+    "features": [],
+    "stack": [
+      "javascript/typescript",
+      "typescript",
+      "javascript",
+      "react",
+      "postgres"
+    ],
+    "one": "Remembers what matters. Asks before it acts. Runs 24/7 from CLI, Telegram, or Web. 31 built-in tools, Kanban boards, extensible skills, SQLite-backed Second Brain memory.",
+    "install_hints": [
+      "npm i -g @cosmicstack/mercury-agent",
+      "git clone https://github.com/cosmicstack-labs/mercury-agent.git"
+    ]
+  },
+  "compact": {
+    "id": "mercury-agent",
+    "name": "mercury-agent",
+    "cat": 3,
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "javascript",
+      "javascript-typescript",
+      "postgres",
+      "react",
+      "typescript"
+    ],
+    "one": "Remembers what matters. Asks before it acts. Runs 24/7 from CLI, Telegram, or Web. 31 built-in tools, Kanban boards, extensible skills, SQLite-backed Second Brain memory.",
+    "alt": [],
+    "doc": "human/fichas/mercury-agent.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "mercury-agent",
+    "cat": 3,
+    "desc": "Remembers what matters. Asks before it acts. Runs 24/7 from CLI, Telegram, or Web. 31 built-in tools, Kanban boards, extensible skills, SQLite-backed Second Brain memory.",
+    "stack": "javascript/typescript, typescript, javascript, react, postgres",
+    "choose_if": "quieres soul-driven ai agent with permission-hardened tools, token budgets, and multi-channel acce",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/cosmicstack-labs/mercury-agent.git",
+    "doc": "human/fichas/mercury-agent.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.124755+00:00"
+  }
+}

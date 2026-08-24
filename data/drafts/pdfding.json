@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-08-24T04:26:20.342501+00:00",
+  "profile": {
+    "id": "pdfding",
+    "name": "PdfDing",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\PdfDing",
+    "repo_url": "https://github.com/mrmn2/PdfDing.git",
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "package-lock.json",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "Selfhosted PDF manager, viewer and editor offering a seamless user experience on multiple devices.",
+      "desc": "PdfDing is a PDF manager, viewer and editor that you can host yourself. It offers a seamless user experience on multiple devices. It's designed be to be minimal, fast, and easy to set up using Docker."
+    },
+    "features": [
+      "Seamless browser based PDF viewing on multiple devices. Remembers current position - continue where you stopped reading",
+      "Stay on top of your PDF collection with workspaces, collections, multi-level tagging,"
+    ],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "docker"
+    ],
+    "one": "PdfDing is a PDF manager, viewer and editor that you can host yourself. It offers a seamless user experience on multiple devices. It's designed be to be minimal, fast, and easy to set up using Docker.",
+    "install_hints": [
+      "documentation and find instructions for setting up PdfDing via Docker, Docker Compose"
+    ]
+  },
+  "compact": {
+    "id": "pdfding",
+    "name": "PdfDing",
+    "cat": 13,
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "docker",
+      "frontend",
+      "javascript",
+      "python",
+      "typescript"
+    ],
+    "one": "PdfDing is a PDF manager, viewer and editor that you can host yourself. It offers a seamless user experience on multiple devices. It's designed be to be minimal, fast, and easy to set up using Docker.",
+    "alt": [],
+    "doc": "human/fichas/pdfding.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "PdfDing",
+    "cat": 13,
+    "desc": "PdfDing is a PDF manager, viewer and editor that you can host yourself. It offers a seamless user experience on multiple devices. It's designed be to be minimal, fast, and easy to set up using Docker.",
+    "stack": "python, typescript, javascript, docker",
+    "choose_if": "quieres selfhosted pdf manager, viewer and editor offering a seamless user experience on multiple ",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "markitdown",
+      "ppt-master",
+      "reveal.js"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/mrmn2/PdfDing.git",
+    "doc": "human/fichas/pdfding.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:20.342299+00:00"
+  }
+}

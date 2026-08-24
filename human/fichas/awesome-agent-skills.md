@@ -1,6 +1,6 @@
 # awesome-agent-skills
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-Hand-picked, not AI-slop generated.
+Directorio de agent skills revisado a mano. Úsalo para elegir piezas concretas; no instales el catálogo entero.
 
 ## Que problema resuelve
 

@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-08-24T04:26:19.578088+00:00",
+  "profile": {
+    "id": "arcads-claude-code",
+    "name": "arcads-claude-code",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\arcads-claude-code",
+    "repo_url": "https://github.com/krusemediallc/arcads-claude-code.git",
+    "manifests": [],
+    "intro": {
+      "title": "Arcads AI Video — Agent Skill Pack",
+      "desc": "Create AI marketing videos and images using your Arcads account, powered by AI agents in Claude Code or Cursor. Supports the full Arcads creative stack — Seedance 2.0 (flagship video), Sora 2, Veo 3.1, Kling 3.0, Grok Video, Nano Banana 2 / Pro / Edit, ChatGPT Image 2, OmniHuman, and Audio-driven — plus a 37-template static Meta image-ad library and a pipeline for Pixar-style and claymation animated ads."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "postgres",
+      "whisper"
+    ],
+    "one": "Create AI marketing videos and images using your Arcads account, powered by AI agents in Claude Code or Cursor. Supports the full Arcads creative stack — Seedance 2.0 (flagship video), Sora 2, Veo 3.1, Kling 3.",
+    "install_hints": [
+      "| **Python 3.10+** | Everything (the image-ad generators are stdlib-only — no pip install) | preinstalled or `brew install python@3.12` |",
+      "| **`whisper`** Python package | Caption transcription | `pip install openai-whisper` (or `pip3`) |",
+      "| **`meta-ad-builder` deps** | Publishing to Meta Marketing API | `pip install -r shared/skills/meta-ad-builder/scripts/requirements.txt` |"
+    ]
+  },
+  "compact": {
+    "id": "arcads-claude-code",
+    "name": "arcads-claude-code",
+    "cat": 12,
+    "role": "skill",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "agents",
+      "javascript",
+      "multimedia",
+      "postgres",
+      "python",
+      "react",
+      "typescript",
+      "vision"
+    ],
+    "one": "Create AI marketing videos and images using your Arcads account, powered by AI agents in Claude Code or Cursor. Supports the full Arcads creative stack — Seedance 2.0 (flagship video), Sora 2, Veo 3.1, Kling 3.",
+    "alt": [],
+    "doc": "human/fichas/arcads-claude-code.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "arcads-claude-code",
+    "cat": 12,
+    "desc": "Create AI marketing videos and images using your Arcads account, powered by AI agents in Claude Code or Cursor. Supports the full Arcads creative stack — Seedance 2.0 (flagship video), Sora 2, Veo 3.1, Kling 3.0, Grok Video, Nano Banana 2 / Pro / Edit, ChatGPT Image 2, OmniHuman, and Audio-driven — plus a 37-template static Meta image-ad library and a pipeline for Pixar-style and claymation animated ads.",
+    "stack": "python, typescript, javascript, react, postgres, whisper",
+    "choose_if": "quieres arcads ai video — agent skill pack",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+      "fluxer",
+      "whisper",
+      "faster-whisper"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/krusemediallc/arcads-claude-code.git",
+    "doc": "human/fichas/arcads-claude-code.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:19.577851+00:00"
+  }
+}

@@ -1,6 +1,6 @@
 # 🤖 AGENTS.md — Punto de entrada para agentes de IA
 
-Esta biblioteca contiene **185 repositorios curados** compactos (mismo conjunto en `INDICE_IA.detalle.json`) de IA y automatización, ya analizados, comparados y clasificados con flujo integral (analyze + enrich). Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Léelo entero (es corto); luego abre solo lo que necesites.
+Esta biblioteca contiene **212 repositorios curados** compactos (mismo conjunto en `INDICE_IA.detalle.json`; 208 clones git en `../Repositorios_Prueba` más carpetas locales y el alias `n8n-io`) de IA y automatización, ya analizados, comparados y clasificados con flujo integral (analyze + enrich). Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Léelo entero (es corto); luego abre solo lo que necesites.
 
 ---
 
@@ -59,19 +59,19 @@ Separa **dos** decisiones que se confunden:
 
 | # | Categoría | Repos | Archivo |
 |---|---|---|---|
-| 1 | Automatización, Mensajería & CRM | 12 | `human/categorias/01-automatizaci-n-mensajer-a-crm.md` |
-| 2 | Skills, Prompts & Guías de Agente | 21 | `human/categorias/02-skills-prompts-gu-as-de-agente.md` |
-| 3 | Frameworks & Orquestación de Agentes | 18 | `human/categorias/03-frameworks-orquestaci-n-de-agentes.md` |
-| 4 | Scraping, Búsqueda & Research Web | 14 | `human/categorias/04-scraping-b-squeda-research-web.md` |
-| 5 | MCP & Conectividad | 7 | `human/categorias/05-mcp-conectividad.md` |
-| 6 | Memoria, LLM Ops & Observabilidad | 10 | `human/categorias/06-memoria-llm-ops-observabilidad.md` |
-| 7 | Inteligencia de Código, Datos & Entrenamiento | 13 | `human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md` |
-| 8 | Workspaces de IA Local & Notebooks | 5 | `human/categorias/08-workspaces-de-ia-local-notebooks.md` |
-| 9 | Diseño, UI & Frontend | 15 | `human/categorias/09-dise-o-ui-frontend.md` |
-| 10 | Analítica & Visualización | 7 | `human/categorias/10-anal-tica-visualizaci-n.md` |
-| 11 | Generación de Imagen & Visión | 15 | `human/categorias/11-generaci-n-de-imagen-visi-n.md` |
-| 12 | Audio, Voz & Video | 15 | `human/categorias/12-audio-voz-video.md` |
-| 13 | Documentos & Presentaciones | 4 | `human/categorias/13-documentos-presentaciones.md` |
+| 1 | Automatización, Mensajería & CRM | 17 | `human/categorias/01-automatizaci-n-mensajer-a-crm.md` |
+| 2 | Skills, Prompts & Guías de Agente | 30 | `human/categorias/02-skills-prompts-gu-as-de-agente.md` |
+| 3 | Frameworks & Orquestación de Agentes | 47 | `human/categorias/03-frameworks-orquestaci-n-de-agentes.md` |
+| 4 | Scraping, Búsqueda & Research Web | 13 | `human/categorias/04-scraping-b-squeda-research-web.md` |
+| 5 | MCP & Conectividad | 14 | `human/categorias/05-mcp-conectividad.md` |
+| 6 | Memoria, LLM Ops & Observabilidad | 5 | `human/categorias/06-memoria-llm-ops-observabilidad.md` |
+| 7 | Inteligencia de Código, Datos & Entrenamiento | 10 | `human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md` |
+| 8 | Workspaces de IA Local & Notebooks | 2 | `human/categorias/08-workspaces-de-ia-local-notebooks.md` |
+| 9 | Diseño, UI & Frontend | 30 | `human/categorias/09-dise-o-ui-frontend.md` |
+| 10 | Analítica & Visualización | 2 | `human/categorias/10-anal-tica-visualizaci-n.md` |
+| 11 | Generación de Imagen & Visión | 18 | `human/categorias/11-generaci-n-de-imagen-visi-n.md` |
+| 12 | Audio, Voz & Video | 16 | `human/categorias/12-audio-voz-video.md` |
+| 13 | Documentos & Presentaciones | 6 | `human/categorias/13-documentos-presentaciones.md` |
 
 ---
 

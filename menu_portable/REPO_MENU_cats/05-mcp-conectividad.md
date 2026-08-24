@@ -31,6 +31,34 @@ _Servicio gestionado; no se clona._
 **Evita si:** buscas aportes comunitarios amplios ([awesome-claude-code](#-awesome-claude-code)).
 **Combina con:** `awesome-claude-code`
 
+## `context7`
+role=runtime · exec=local · setup=easy · mcp=True · prov=—
+
+**Qué es:** Context7 evita que el modelo alucine APIs viejas: trae docs versionadas al contexto. Instálalo como servidor MCP en el agente de código.
+**Stack:** javascript/typescript, typescript, javascript, react
+**Repo:** https://github.com/upstash/context7.git
+
+**Instalación** [~]: `git clone https://github.com/upstash/context7.git && cd context7 && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+
+**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
+**Evita si:** prefieres conexiones directas sin protocolo estándar
+**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
+
+## `davinci-resolve-mcp`
+role=runtime · exec=hybrid · setup=medium · mcp=True · prov=—
+
+**Qué es:** DaVinci Resolve MCP expone edición, media pool, render, color y Fusion a asistentes compatibles con Model Context Protocol. Requiere Resolve abierto y, para scripting externo, la edición Studio.
+**Stack:** python, typescript, javascript, whisper
+**Repo:** https://github.com/samuelgursky/davinci-resolve-mcp.git
+
+**Instalación** [~]: `git clone https://github.com/samuelgursky/davinci-resolve-mcp.git && cd davinci-resolve-mcp && (uv sync || pip install -r requirements.txt)`
+_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+
+**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
+**Evita si:** prefieres conexiones directas sin protocolo estándar
+**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
+
 ## `github-mcp-server`
 role=platform · exec=local · setup=medium · mcp=True · prov=—
 
@@ -48,7 +76,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 ## `graphify`
 role=library · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** 🇺🇸 English | 🇨🇳 简体中文 | 🇯🇵 日本語 | 🇰🇷 한국어 | 🇩🇪 Deutsch | 🇫🇷 Français | 🇪🇸 Español | 🇮🇳 <a href="docs/translatio.
+**Qué es:** Type /graphify in your AI coding assistant and it maps your entire project — code, docs, PDFs, images, videos — into a knowledge graph you can query instead of grepping through files.
 **Stack:** python, typescript, javascript, docker, postgres, whisper
 **Repo:** https://github.com/safishamsi/graphify.git
 
@@ -58,6 +86,20 @@ _Nombre PyPI puede diferir de 'graphify'; verifica en pypi.org._
 **Elige si:** quieres ver conexiones visualmente o auditar un sistema
 **Evita si:** solo necesitas índice textual barato ([codegraph](#-codegraph)) o tu proyecto es trivial.
 **Combina con:** `codegraph`, `graphrag`
+
+## `langchain-mcp-adapters`
+role=library · exec=hybrid · setup=easy · mcp=True · prov=—
+
+**Qué es:** Puente ligero entre servidores MCP y el ecosistema LangChain/LangGraph. Librería, no un servidor MCP en sí.
+**Stack:** python, typescript, javascript, langchain
+**Repo:** https://github.com/langchain-ai/langchain-mcp-adapters.git
+
+**Instalación** [~]: `pip install langchain-mcp-adapters   (o: uv add langchain-mcp-adapters)`
+_Nombre PyPI puede diferir de 'langchain-mcp-adapters'; verifica en pypi.org._
+
+**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
+**Evita si:** prefieres conexiones directas sin protocolo estándar
+**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
 
 ## `mcp`
 role=directory · exec=hybrid · setup=medium · mcp=True · prov=—
@@ -101,24 +143,10 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Evita si:** necesitas analítica de eventos por usuario ([posthog](#-posthog)).
 **Combina con:** `posthog`, `echarts`
 
-## `n8n-skills`
-role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
-
-**Qué es:** Expert Claude Code skills for building flawless n8n workflows using the n8n-mcp MCP server**.
-**Stack:** python, typescript, javascript, docker, postgres, langchain
-**Repo:** https://github.com/czlonkowski/n8n-skills.git
-
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/n8n-skills/). Si necesitas el código: git clone https://github.com/czlonkowski/n8n-skills.git`
-_Material de referencia/playbook; no es una dependencia runtime._
-
-**Elige si:** generas workflows n8n con IA y te cansan los fallos de JSON
-**Evita si:** no usas n8n.
-**Combina con:** `n8n`, `n8n-mcp`
-
 ## `notebooklm-mcp-cli`
 role=platform · exec=hybrid · setup=medium · mcp=True · prov=—
 
-**Qué es:** Programmatic access to Google NotebookLM** — via command-line interface (CLI) or Model Context Protocol (MCP) server.
+**Qué es:** Programmatic access to Google NotebookLM — via command-line interface (CLI) or Model Context Protocol (MCP) server.
 **Stack:** python, typescript, react, postgres
 **Repo:** https://github.com/jacob-bd/notebooklm-mcp-cli.git
 
@@ -132,7 +160,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 ## `opencut`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** OpenCut is being rewritten from the ground up.** What's coming:.
+**Qué es:** OpenCut is being rewritten from the ground up. What's coming:.
 **Stack:** typescript
 **Repo:** https://github.com/OpenCut-app/OpenCut.git
 

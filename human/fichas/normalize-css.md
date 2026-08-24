@@ -1,6 +1,6 @@
 # normalize.css
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Decision
 
@@ -8,7 +8,7 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-src="https://necolas.github.io/normalize.css/logo.svg" alt="Normalize Logo" width="80" height="80" align="right"> .
+normalize.css alinea el render de elementos HTML entre navegadores. Es una base de CSS, no un sistema de diseño.
 
 ## Que problema resuelve
 

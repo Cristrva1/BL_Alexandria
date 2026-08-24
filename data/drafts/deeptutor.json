@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-08-24T04:26:19.826271+00:00",
+  "profile": {
+    "id": "deeptutor",
+    "name": "DeepTutor",
+    "path": "C:\\Users\\criss\\Desktop\\Claude\\Repositorios_Prueba\\DeepTutor",
+    "repo_url": "https://github.com/HKUDS/DeepTutor.git",
+    "manifests": [
+      "pyproject.toml",
+      "requirements.txt",
+      "docker-compose.yml",
+      "Dockerfile"
+    ],
+    "intro": {
+      "title": "DeepTutor: Lifelong Personalized Tutoring",
+      "desc": "Features · Get Started · Explore · CLI · Ecosystem · Community."
+    },
+    "features": [],
+    "stack": [
+      "python",
+      "typescript",
+      "javascript",
+      "react",
+      "docker",
+      "postgres",
+      "fastapi",
+      "langchain"
+    ],
+    "one": "Features · Get Started · Explore · CLI · Ecosystem · Community.",
+    "install_hints": [
+      "pip install -U deeptutor",
+      "git clone https://github.com/HKUDS/DeepTutor.git",
+      "python -m pip install --upgrade pip"
+    ]
+  },
+  "compact": {
+    "id": "deeptutor",
+    "name": "DeepTutor",
+    "cat": 3,
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+      "automation",
+      "docker",
+      "fastapi",
+      "javascript",
+      "langchain",
+      "postgres",
+      "python",
+      "react"
+    ],
+    "one": "Features · Get Started · Explore · CLI · Ecosystem · Community.",
+    "alt": [],
+    "doc": "human/fichas/deeptutor.md",
+    "_auto": true
+  },
+  "detalle": {
+    "name": "DeepTutor",
+    "cat": 3,
+    "desc": "Features · Get Started · Explore · CLI · Ecosystem · Community.",
+    "stack": "python, typescript, javascript, react, docker, postgres, fastapi, langchain",
+    "choose_if": "quieres deeptutor: lifelong personalized tutoring",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+      "awesome-claude-code",
+      "agents-towards-production",
+      "ag2"
+    ],
+    "alternatives": [],
+    "repo": "https://github.com/HKUDS/DeepTutor.git",
+    "doc": "human/fichas/deeptutor.md",
+    "_auto": true,
+    "_generated_at": "2026-08-24T04:26:19.826056+00:00"
+  }
+}

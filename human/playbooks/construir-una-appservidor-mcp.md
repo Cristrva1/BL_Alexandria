@@ -1,6 +1,6 @@
 # Construir una app/servidor MCP
 
-Generado: 2026-08-24T04:13:47.607813+00:00
+Generado: 2026-08-24T04:31:34.499362+00:00
 
 ## Objetivo
 
