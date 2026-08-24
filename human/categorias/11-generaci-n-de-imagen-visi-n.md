@@ -1,6 +1,6 @@
 # Generación de Imagen & Visión
 
-Generado: 2026-06-26T07:47:33.067156+00:00
+Generado: 2026-08-24T04:13:47.607813+00:00
 
 | Repo | Rol | Instalacion | Decision | Uso real |
 |---|---|---|---|---|
@@ -14,7 +14,7 @@ Generado: 2026-06-26T07:47:33.067156+00:00
 | Fooocus | skill | reference_only | reference | Fooocus is an image generating software (based on Gradio ). |
 | GFPGAN | library | reference_only | reference | 1. :boom: **Updated** online demo: ![Replicate](https://replicate.com/tencentarc/gfpgan). Here is the backup. 1. :boom: **Updated** online demo: ![Huggingface Gradio](https://huggingface.co/spaces/Xintao/GFPGAN) 1. . |
 | InvokeAI | runtime | reference_only | reference | Invoke - Professional Creative AI Tools for Visual Media. |
-| litellm | platform | reference_only | reference | LiteLLM is an open source AI Gateway that gives you a single, unified interface to call 100+ LLM providers — OpenAI, Anthropic, Gemini, Bedrock, Azure, and more — using the OpenAI format. |
+| litellm | platform | local_project | use_now | LiteLLM is an open source AI Gateway that gives you a single, unified interface to call 100+ LLM providers — OpenAI, Anthropic, Gemini, Bedrock, Azure, and more — using the OpenAI format. |
 | LivePortrait | library | deferred | defer | `2025/06/01`**: 🌍 Over the past year, **LivePortrait** has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as numerous startups and creators. 🎉 `2025/01/01`**: 🐶 We updated a new version of the Animals model with more data, see **here**. `2024/10/18`**: ❗ We have upda. |
 | LuxTTS | directory | reference_only | reference | LuxTTS is an lightweight zipvoice based text-to-speech model designed for high quality voice cloning and realistic generation at speeds exceeding 150x realtime. |
 | NeMo | runtime | reference_only | reference | Checkout our HuggingFace🤗 collection for the latest open weight checkpoints and demos!. |

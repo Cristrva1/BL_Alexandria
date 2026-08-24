@@ -1,6 +1,6 @@
 # Frameworks & Orquestación de Agentes
 
-Generado: 2026-06-26T07:47:33.067156+00:00
+Generado: 2026-08-24T04:13:47.607813+00:00
 
 | Repo | Rol | Instalacion | Decision | Uso real |
 |---|---|---|---|---|
@@ -25,7 +25,7 @@ Generado: 2026-06-26T07:47:33.067156+00:00
 | hyperframes | skill | reference_only | reference | HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos. Use it locally with the CLI, from AI coding agents with skills, or as the rendering core behind hosted authoring workflows. |
 | langchain | runtime | reference_only | reference | LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves. |
 | langflow | platform | reference_only | reference | ✨ Highlight features. |
-| langfuse | platform | reference_only | reference | alt="chat on Discord"> alt="follow on X(Twitter)"> alt="follow on LinkedIn"> . |
+| langfuse | platform | docker_local | use_now | alt="chat on Discord"> alt="follow on X(Twitter)"> alt="follow on LinkedIn"> . |
 | mcp-use | platform | reference_only | reference | to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents. |
 | NeMo-Agent-Toolkit | directory | reference_only | reference | SPDX-License-Identifier: Apache-2.0. |
 | OpenHands | platform | reference_only | reference | Run OpenHands, Claude Code, Codex, Gemini, or any ACP-compatible agent across local, remote, and cloud backends. |

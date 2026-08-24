@@ -28,7 +28,7 @@ Cada ficha abre con una línea **Etiquetas:** que nombra cada valor — `Ejecuci
 ---
 
 <!-- BL_ALEXANDRIA_STATUS -->
-> Estado actual: **185 repos detectados** en la biblioteca local; **186 repos curados** con ficha completa en esta guía. Los repos nuevos sin ficha curada se agregan al apéndice automático sin reescribir el cuerpo editorial.
+> Estado actual: **185 repos detectados** en la biblioteca local; **185 repos curados** con ficha completa en esta guía. Los repos nuevos sin ficha curada se agregan al apéndice automático sin reescribir el cuerpo editorial.
 <!-- /BL_ALEXANDRIA_STATUS -->
 
 ## 📂 Mapa de categorías
@@ -2513,7 +2513,7 @@ Conversión de formatos, generación de slides y herramientas de PDF.
 <!-- BL_ALEXANDRIA_AUTO_APPEND_START -->
 ## 🆕 Repos detectados pendientes de curaduría
 
-Generado: 2026-06-26T07:47:33.067156+00:00
+Generado: 2026-08-24T04:13:47.607813+00:00
 
 Esta sección se actualiza automáticamente para no destruir la guía curada. Integra manualmente estas fichas al cuerpo principal cuando quieras dejar la guía completamente editorial.
 
@@ -2542,7 +2542,7 @@ Esta sección se actualiza automáticamente para no destruir la guía curada. In
 | [gradio](human/fichas/gradio.md) | 9 | reference_only | English \| 中文. |
 | [Nemotron](human/fichas/nemotron.md) | 9 | deferred | Open and efficient models for agentic AI.** Training recipes, deployment guides, and use-case examples for the Nemotron family. |
 | [stitch-skills](human/fichas/stitch-skills.md) | 9 | reference_only | A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, and Cursor. |
-| [ui](human/fichas/ui.md) | 9 | reference_only | A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code. **Use this to build your own component library**. |
+| [ui](human/fichas/ui.md) | 9 | reference_only | colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. |
 | [vllm](human/fichas/vllm.md) | 9 | reference_only | Easy, fast, and cheap LLM serving for everyone. |
 | [LuxTTS](human/fichas/luxtts.md) | 11 | reference_only | LuxTTS is an lightweight zipvoice based text-to-speech model designed for high quality voice cloning and realistic generation at speeds exceeding 150x realtime. |
 | [NeMo](human/fichas/nemo.md) | 11 | reference_only | Checkout our HuggingFace🤗 collection for the latest open weight checkpoints and demos!. |

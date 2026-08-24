@@ -13,9 +13,9 @@ role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/rohitg00/agentmemory.git && cd agentmemory && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres your coding agent remembers everything. no more re-explaining.
-**Evita si:** —
-**Combina con:** `mem0`, `mempalace`, `loguru`
+**Elige si:** cambias de asistente y quieres una memoria común entre ellos
+**Evita si:** te basta la memoria nativa de un único cliente o no usas MCP.
+**Combina con:** `mem0`, `ruflo`
 
 ## `loguru`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
@@ -27,9 +27,9 @@ role=platform · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/Delgan/loguru.git && cd loguru && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** quieres ______________________________________________________________________
-**Evita si:** —
-**Combina con:** `mem0`, `agentmemory`, `mempalace`
+**Elige si:** quieres logging fácil y legible en Python sin pelear con stdlib
+**Evita si:** ya usas el stdlib `logging` configurado o tienes un stack de observabilidad corporativo.
+**Combina con:** `litellm`
 
 ## `mem0`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -41,9 +41,9 @@ role=library · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `pip install mem0   (o: uv add mem0)`
 _Nombre PyPI puede diferir de 'mem0'; verifica en pypi.org._
 
-**Elige si:** quieres ·
-**Evita si:** —
-**Combina con:** `agentmemory`, `mempalace`, `loguru`
+**Elige si:** quieres memoria estándar lista con integraciones amplias
+**Evita si:** necesitas todo local sin llamadas a API ([mempalace](#-mempalace)) o control total del almacenamiento.
+**Combina con:** `crewai`, `langchain`, `agentmemory`
 
 ## `mempalace`
 role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -55,6 +55,6 @@ role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/mempalace/). Si necesitas el código: git clone https://github.com/MemPalace/mempalace.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `mem0`, `agentmemory`, `loguru`
+**Elige si:** la privacidad es prioridad y no quieres llamadas a API
+**Evita si:** quieres un SaaS gestionado con escalado automático o integraciones de framework ya hechas ([mem0](#-mem0)).
+**Combina con:** `open-notebook`, `odysseus`

@@ -13,9 +13,9 @@ role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/Comfy-Org/ComfyUI.git && cd ComfyUI && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** —
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `litellm`, `cosmos`, `stable-diffusion-webui`
+**Elige si:** quieres control total y pipelines reproducibles
+**Evita si:** buscas simplicidad inmediata ([Fooocus](#-fooocus)).
+**Combina con:** `comfyui-ipadapter-plus`, `real-esrgan`, `pipeline de reels`
 
 ## `comfyui-ipadapter-plus`
 role=library · exec=local · setup=heavy · mcp=False · prov=—
@@ -27,8 +27,8 @@ role=library · exec=local · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `pip install comfyui_ipadapter_plus   (o: uv add comfyui_ipadapter_plus)`
 _Nombre PyPI puede diferir de 'ComfyUI_IPAdapter_plus'; verifica en pypi.org._
 
-**Elige si:** quieres comfyui ipadapter plus
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Elige si:** trabajas en ComfyUI y necesitas consistencia visual por referencia
+**Evita si:** no usas ComfyUI o te basta con prompts de estilo.
 **Combina con:** `litellm`, `cosmos`, `comfyui`
 
 ## `controlnet`
@@ -41,9 +41,9 @@ role=library · exec=local · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `pip install controlnet   (o: uv add controlnet)`
 _Nombre PyPI puede diferir de 'ControlNet'; verifica en pypi.org._
 
-**Elige si:** quieres news: a nightly version of controlnet 1.1 is released!
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `litellm`, `cosmos`, `comfyui`
+**Elige si:** necesitas control estructural fino de la composición
+**Evita si:** ya trabajas en SD WebUI ([sd-webui-controlnet](#-sd-webui-controlnet)) o ComfyUI (tienen integración propia) y no necesitas el repo original.
+**Combina con:** `diffusers`, `comfyui`
 
 ## `cosmos`
 role=runtime · exec=local · setup=medium · mcp=False · prov=—
@@ -55,9 +55,9 @@ role=runtime · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/NVIDIA/cosmos.git && cd cosmos && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** —
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `litellm`, `comfyui`, `stable-diffusion-webui`
+**Elige si:** trabajas IA física/robótica y necesitas datos sintéticos
+**Evita si:** haces tareas de texto/UI o no tienes GPU para servirlo.
+**Combina con:** `diffusers`
 
 ## `deep-live-cam`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -69,9 +69,9 @@ role=app · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/hacksider/Deep-Live-Cam.git && cd Deep-Live-Cam && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** quieres deep-live-cam 2.1.6
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `litellm`, `cosmos`, `comfyui`
+**Elige si:** necesitas swap en vivo legítimo con consentimiento
+**Evita si:** no puedes garantizar uso ético/consentimiento o no tienes GPU.
+**Combina con:** `face-recognition`
 
 ## `diffusers`
 role=library · exec=local · setup=medium · mcp=False · prov=—
@@ -83,9 +83,9 @@ role=library · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `pip install diffusers   (o: uv add diffusers)`
 _Nombre PyPI puede diferir de 'diffusers'; verifica en pypi.org._
 
-**Elige si:** quieres copyright 2022 - the huggingface team. all rights reserved.
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `litellm`, `cosmos`, `comfyui`
+**Elige si:** programas generación y quieres control total por código
+**Evita si:** quieres una UI lista ([Fooocus](#-fooocus)) o grafos nodales ([ComfyUI](#-comfyui)).
+**Combina con:** `controlnet`, `cosmos`
 
 ## `face-recognition`
 role=library · exec=local · setup=medium · mcp=False · prov=—
@@ -97,9 +97,9 @@ role=library · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `pip install face_recognition   (o: uv add face_recognition)`
 _Nombre PyPI puede diferir de 'face_recognition'; verifica en pypi.org._
 
-**Elige si:** quieres face recognition
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `litellm`, `cosmos`, `comfyui`
+**Elige si:** necesitas reconocimiento facial básico y rápido de implementar
+**Evita si:** buscas restauración/animación ([GFPGAN](#-gfpgan)/[LivePortrait](#-liveportrait)) o precisión de producción (mejor DeepFace/InsightFace).
+**Combina con:** `deep-live-cam`
 
 ## `fooocus`
 role=skill · exec=local · setup=heavy · mcp=False · prov=—
@@ -111,9 +111,9 @@ role=skill · exec=local · setup=heavy · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/Fooocus/). Si necesitas el código: git clone https://github.com/lllyasviel/Fooocus.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** —
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `litellm`, `cosmos`, `comfyui`
+**Elige si:** quieres resultados ya, sin curva
+**Evita si:** necesitas control fino del pipeline ([ComfyUI](#-comfyui)).
+**Combina con:** `real-esrgan`
 
 ## `gfpgan`
 role=library · exec=local · setup=medium · mcp=False · prov=—
@@ -125,9 +125,9 @@ role=library · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `pip install gfpgan   (o: uv add gfpgan)`
 _Nombre PyPI puede diferir de 'GFPGAN'; verifica en pypi.org._
 
-**Elige si:** quieres 1. :boom: **updated** online demo: [![replicate](https://img.shields.io/static/v
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `litellm`, `cosmos`, `comfyui`
+**Elige si:** restauras rostros borrosos o fundidos
+**Evita si:** necesitas upscaling general de la imagen ([Real-ESRGAN](#-real-esrgan)).
+**Combina con:** `real-esrgan`
 
 ## `invokeai`
 role=runtime · exec=local · setup=medium · mcp=False · prov=—
@@ -139,9 +139,9 @@ role=runtime · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/invoke-ai/InvokeAI.git && cd InvokeAI && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres invoke - professional creative ai tools for visual media
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `litellm`, `cosmos`, `comfyui`
+**Elige si:** trabajas creatividad profesional y quieres una app estable con canvas
+**Evita si:** solo haces una prueba puntual ([Fooocus](#-fooocus)) o prefieres grafos nodales ([ComfyUI](#-comfyui)).
+**Combina con:** `diffusers`, `controlnet`
 
 ## `litellm`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -153,9 +153,9 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/BerriAI/litellm.git && cd litellm && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres 🚅 litellm
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `cosmos`, `comfyui`, `stable-diffusion-webui`
+**Elige si:** trabajas con múltiples modelos o quieres fallback/control de costos
+**Evita si:** usas un único proveedor fijo y no necesitas abstracción.
+**Combina con:** `langchain`, `langfuse`, `llm-council`
 
 ## `liveportrait`
 role=library · exec=local · setup=heavy · mcp=False · prov=—
@@ -167,9 +167,9 @@ role=library · exec=local · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `pip install liveportrait   (o: uv add liveportrait)`
 _Nombre PyPI puede diferir de 'LivePortrait'; verifica en pypi.org._
 
-**Elige si:** quieres liveportrait: efficient portrait animation with stitching and retargeting control
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `litellm`, `cosmos`, `comfyui`
+**Elige si:** animas retratos a partir de una foto
+**Evita si:** necesitas swap en vivo ([Deep-Live-Cam](#-deep-live-cam)) o no tienes GPU.
+**Combina con:** `moviepy`
 
 ## `luxtts`
 role=directory · exec=local · setup=heavy · mcp=False · prov=—
@@ -209,9 +209,9 @@ role=library · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `pip install sd-webui-controlnet   (o: uv add sd-webui-controlnet)`
 _Nombre PyPI puede diferir de 'sd-webui-controlnet'; verifica en pypi.org._
 
-**Elige si:** quieres controlnet for stable diffusion webui
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `litellm`, `cosmos`, `comfyui`
+**Elige si:** ya usas SD WebUI y quieres ControlNet sin cambiar de entorno
+**Evita si:** trabajas en ComfyUI (usa sus propios nodos) o por código ([diffusers](#-diffusers)).
+**Combina con:** `stable-diffusion-webui`, `controlnet`
 
 ## `stable-diffusion-webui`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
@@ -223,9 +223,9 @@ role=skill · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/stable-diffusion-webui/). Si necesitas el código: git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres stable diffusion web ui
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `litellm`, `cosmos`, `comfyui`
+**Elige si:** quieres extensiones y comunidad amplia
+**Evita si:** prefieres un flujo moderno y limpio ([InvokeAI](#-invokeai)).
+**Combina con:** `sd-webui-controlnet`
 
 ## `tts`
 role=library · exec=local · setup=heavy · mcp=False · prov=—
@@ -237,6 +237,6 @@ role=library · exec=local · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `pip install tts   (o: uv add tts)`
 _Nombre PyPI puede diferir de 'TTS'; verifica en pypi.org._
 
-**Elige si:** quieres 🐸coqui.ai news
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `litellm`, `cosmos`, `comfyui`
+**Elige si:** quieres flexibilidad y varios modelos en una librería
+**Evita si:** necesitas tiempo real puro ([supertonic](#-supertonic)) o soporte comercial (Coqui está inactivo).
+**Combina con:** `whisperx`, `moviepy`

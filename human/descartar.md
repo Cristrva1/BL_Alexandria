@@ -1,8 +1,16 @@
 # Descartar o dejar como alternativa
 
-Generado: 2026-06-26T07:47:33.067156+00:00
+Generado: 2026-08-24T04:13:47.607813+00:00
 
 No se descartan por borrado. Se marcan como alternativas cuando duplican funcion con otro repo.
+
+## activepieces
+
+Alternativas declaradas: n8n.
+
+## n8n
+
+Alternativas declaradas: activepieces, huginn.
 
 ## Referencia solamente
 
@@ -11,15 +19,9 @@ No se descartan por borrado. Se marcan como alternativas cuando duplican funcion
 - `appsmith`: reference_only
 - `browser-use`: reference_only
 - `budibase`: reference_only
-- `chatwoot`: reference_only
-- `evolution-api`: reference_only
 - `huginn`: reference_only
-- `listmonk`: reference_only
-- `mautic`: reference_only
-- `n8n`: reference_only
 - `n8n-io`: reference_only
 - `n8n-mcp`: reference_only
-- `novu`: reference_only
 - `openevolve`: reference_only
 - `twenty-main`: reference_only
 - `whatsapp-agentkit`: reference_only
@@ -69,7 +71,6 @@ No se descartan por borrado. Se marcan como alternativas cuando duplican funcion
 - `hyperframes`: reference_only
 - `langchain`: reference_only
 - `langflow`: reference_only
-- `langfuse`: reference_only
 - `mcp-use`: reference_only
 - `nemo-agent-toolkit`: reference_only
 - `openhands`: reference_only
@@ -86,3 +87,10 @@ No se descartan por borrado. Se marcan como alternativas cuando duplican funcion
 - `crawlee-python`: reference_only
 - `firecrawl`: reference_only
 - `how-to-train-your-gpt`: reference_only
+- `instaloader`: reference_only
+- `llm-scraper`: reference_only
+- `normalize.css`: reference_only
+- `odysseus`: reference_only
+- `scrapegraph-ai`: reference_only
+- `scrapely`: reference_only
+- `scrapy`: reference_only

@@ -1,10 +1,10 @@
 # mautic
 
-Generado: 2026-06-26T07:47:33.067156+00:00
+Generado: 2026-08-24T04:13:47.607813+00:00
 
 ## Decision
 
-REFERENCIA
+USAR AHORA
 
 ## Para que sirve realmente
 
@@ -28,7 +28,7 @@ te basta una newsletter simple ([listmonk](#-listmonk)).
 
 ## Tipo de instalacion
 
-reference_only
+docker_local
 
 ## Stack / tecnologia detectada
 
@@ -58,4 +58,4 @@ Combinar con listmonk, marketingskills, marketing de agencia cuando el flujo nec
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si necesitas automatización de marketing seria y soberana. No debe instalarse por inercia.
+Veredicto: usar ahora. Tiene sentido si necesitas automatización de marketing seria y soberana. No debe instalarse por inercia.

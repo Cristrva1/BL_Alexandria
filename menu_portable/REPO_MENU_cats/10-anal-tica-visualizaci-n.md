@@ -13,9 +13,9 @@ role=platform · exec=local · setup=easy · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/streamlit/streamlit.git && cd streamlit && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** quieres <img src="https://user-images.githubusercontent.com/7164864/217935870-c0bc60a3-6fc0-4047-b
-**Evita si:** —
-**Combina con:** `uplot`
+**Elige si:** quieres una UI de datos al vuelo y prototipos rápidos
+**Evita si:** necesitas una app productiva con control fino del frontend ([dash](#-dash)).
+**Combina con:** `dash`, `data-science-ipython-notebooks`
 
 ## `uplot`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -27,6 +27,6 @@ role=library · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `pip install uplot   (o: uv add uplot)`
 _Nombre PyPI puede diferir de 'uPlot'; verifica en pypi.org._
 
-**Elige si:** quieres a small ([~50 kb min](https://github.com/leeoniya/uplot/tree/master/dist/uplot.i
-**Evita si:** —
-**Combina con:** `streamlit`
+**Elige si:** priorizas velocidad y peso del bundle
+**Evita si:** necesitas tipos de gráfico variados ([echarts](#-echarts)).
+**Combina con:** `swr`, `web app moderna`

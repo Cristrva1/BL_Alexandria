@@ -1,10 +1,10 @@
 # langfuse
 
-Generado: 2026-06-26T07:47:33.067156+00:00
+Generado: 2026-08-24T04:13:47.607813+00:00
 
 ## Decision
 
-REFERENCIA
+USAR AHORA
 
 ## Para que sirve realmente
 
@@ -28,7 +28,7 @@ haces prototipos triviales o no quieres operar el backend.
 
 ## Tipo de instalacion
 
-reference_only
+docker_local
 
 ## Stack / tecnologia detectada
 
@@ -58,4 +58,4 @@ Combinar con langchain, litellm, ag2 cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si operas agentes en serio y necesitas trazas/costes/eval. No debe instalarse por inercia.
+Veredicto: usar ahora. Tiene sentido si operas agentes en serio y necesitas trazas/costes/eval. No debe instalarse por inercia.

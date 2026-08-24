@@ -27,9 +27,9 @@ role=platform · exec=cloud · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Crear cuenta / API key en el proveedor (no self-host).`
 _Servicio gestionado; no se clona._
 
-**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
-**Evita si:** prefieres conexiones directas sin protocolo estándar
-**Combina con:** `n8n-skills`, `mcp`, `servers`
+**Elige si:** quieres extensiones oficiales con garantía de compatibilidad
+**Evita si:** buscas aportes comunitarios amplios ([awesome-claude-code](#-awesome-claude-code)).
+**Combina con:** `awesome-claude-code`
 
 ## `github-mcp-server`
 role=platform · exec=local · setup=medium · mcp=True · prov=—
@@ -55,9 +55,9 @@ role=library · exec=local · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `pip install graphify   (o: uv add graphify)`
 _Nombre PyPI puede diferir de 'graphify'; verifica en pypi.org._
 
-**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
-**Evita si:** prefieres conexiones directas sin protocolo estándar
-**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
+**Elige si:** quieres ver conexiones visualmente o auditar un sistema
+**Evita si:** solo necesitas índice textual barato ([codegraph](#-codegraph)) o tu proyecto es trivial.
+**Combina con:** `codegraph`, `graphrag`
 
 ## `mcp`
 role=directory · exec=hybrid · setup=medium · mcp=True · prov=—
@@ -69,9 +69,9 @@ role=directory · exec=hybrid · setup=medium · mcp=True · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/mcp/). Si necesitas el código: git clone https://github.com/google/mcp.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
-**Evita si:** prefieres conexiones directas sin protocolo estándar
-**Combina con:** `claude-plugins-official`, `n8n-skills`, `servers`
+**Elige si:** programas MCP a bajo nivel o necesitas conformidad estricta con la spec
+**Evita si:** prefieres un framework de alto nivel que abstraiga el protocolo ([mcp-use](#-mcp-use)).
+**Combina con:** `mcp-use`, `servers`
 
 ## `mcp-neo4j`
 role=directory · exec=local · setup=medium · mcp=True · prov=—
@@ -83,9 +83,9 @@ role=directory · exec=local · setup=medium · mcp=True · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/mcp-neo4j/). Si necesitas el código: git clone https://github.com/neo4j-contrib/mcp-neo4j.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
-**Evita si:** prefieres conexiones directas sin protocolo estándar
-**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
+**Elige si:** usas Neo4j con IA y quieres que el asistente hable Cypher
+**Evita si:** no trabajas con grafos o tu base es relacional pura.
+**Combina con:** `graphrag`, `awesome-mcp-servers`
 
 ## `metabase`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
@@ -97,9 +97,9 @@ role=platform · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/metabase/metabase.git && cd metabase && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
-**Evita si:** prefieres conexiones directas sin protocolo estándar
-**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
+**Elige si:** quieres BI accesible para perfiles no técnicos
+**Evita si:** necesitas analítica de eventos por usuario ([posthog](#-posthog)).
+**Combina con:** `posthog`, `echarts`
 
 ## `n8n-skills`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -111,9 +111,9 @@ role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/n8n-skills/). Si necesitas el código: git clone https://github.com/czlonkowski/n8n-skills.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
-**Evita si:** prefieres conexiones directas sin protocolo estándar
-**Combina con:** `claude-plugins-official`, `mcp`, `servers`
+**Elige si:** generas workflows n8n con IA y te cansan los fallos de JSON
+**Evita si:** no usas n8n.
+**Combina con:** `n8n`, `n8n-mcp`
 
 ## `notebooklm-mcp-cli`
 role=platform · exec=hybrid · setup=medium · mcp=True · prov=—
@@ -125,9 +125,9 @@ role=platform · exec=hybrid · setup=medium · mcp=True · prov=—
 **Instalación** [~]: `git clone https://github.com/jacob-bd/notebooklm-mcp-cli.git && cd notebooklm-mcp-cli && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
-**Evita si:** prefieres conexiones directas sin protocolo estándar
-**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
+**Elige si:** integras NotebookLM con tu asistente MCP
+**Evita si:** prefieres la API directa en scripts ([notebooklm-py](#-notebooklm-py)).
+**Combina con:** `notebooklm-py`, `awesome-mcp-servers`
 
 ## `opencut`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -139,9 +139,9 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/OpenCut-app/OpenCut.git && cd OpenCut && (pnpm install || npm install)`
 _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 
-**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
-**Evita si:** prefieres conexiones directas sin protocolo estándar
-**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
+**Elige si:** quieres un editor libre con UI moderna, sin CapCut
+**Evita si:** prefieres edición por código ([moviepy](#-moviepy)) o cortes sin pérdida ([lossless-cut](#-lossless-cut)).
+**Combina con:** `lossless-cut`
 
 ## `public-apis`
 role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -153,9 +153,9 @@ role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/public-apis/). Si necesitas el código: git clone https://github.com/public-apis/public-apis.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
-**Evita si:** prefieres conexiones directas sin protocolo estándar
-**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
+**Elige si:** buscas datos externos y no sabes qué API usar
+**Evita si:** ya tienes tus fuentes definidas o necesitas SLA empresarial (son APIs públicas, sin garantías).
+**Combina con:** `n8n`, `firecrawl`
 
 ## `servers`
 role=directory · exec=local · setup=medium · mcp=False · prov=—
@@ -167,6 +167,6 @@ role=directory · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/servers/). Si necesitas el código: git clone https://github.com/modelcontextprotocol/servers.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** necesitas exponer herramientas o contexto a agentes vía MCP
-**Evita si:** prefieres conexiones directas sin protocolo estándar
-**Combina con:** `claude-plugins-official`, `n8n-skills`, `mcp`
+**Elige si:** quieres ejemplos canónicos y plantillas fiables
+**Evita si:** buscas soluciones listas para producción (son demos educativas, no hardening).
+**Combina con:** `mcp-use`, `awesome-mcp-servers`

@@ -1,10 +1,10 @@
 # n8n
 
-Generado: 2026-06-26T07:47:33.067156+00:00
+Generado: 2026-08-24T04:13:47.607813+00:00
 
 ## Decision
 
-REFERENCIA
+USAR AHORA
 
 ## Para que sirve realmente
 
@@ -28,7 +28,7 @@ buscas algo minimalista o sin self-host.
 
 ## Tipo de instalacion
 
-reference_only
+docker_local
 
 ## Stack / tecnologia detectada
 
@@ -46,7 +46,8 @@ Repo local detectado: si
 
 ## Contra que compite
 
-- Ninguno declarado.
+- `activepieces`
+- `huginn`
 
 ## Riesgos
 
@@ -58,4 +59,4 @@ Combinar con n8n-mcp, n8n-skills, evolution-api cuando el flujo necesite mas de 
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres el motor central de automatización con máximo catálogo. No debe instalarse por inercia.
+Veredicto: usar ahora. Tiene sentido si quieres el motor central de automatización con máximo catálogo. No debe instalarse por inercia.

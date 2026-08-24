@@ -13,8 +13,8 @@ role=runtime · exec=cloud · setup=heavy · mcp=False · prov=—
 **Instalación** [+]: `Crear cuenta / API key en el proveedor (no self-host).`
 _Servicio gestionado; no se clona._
 
-**Elige si:** quieres faster whisper transcription with ctranslate2
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
+**Elige si:** el rendimiento, la memoria o el coste de GPU importan
+**Evita si:** necesitas alineación/diarización ([whisperX](#-whisperx)) o te basta el CLI oficial.
 **Combina con:** `fluxer`, `whisper`, `whisperx`
 
 ## `ffmpeg`
@@ -41,9 +41,9 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/fluxerapp/fluxer.git && cd fluxer && (pnpm install || npm install)`
 _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 
-**Elige si:** quieres > [!caution]
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `whisper`, `faster-whisper`, `whisperx`
+**Elige si:** quieres probar algo nuevo y seguir su evolución
+**Evita si:** necesitas estabilidad de producción (API aún en finalización).
+**Combina con:** `open-generative-ai`
 
 ## `lossless-cut`
 role=app · exec=local · setup=medium · mcp=False · prov=—
@@ -55,9 +55,9 @@ role=app · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/mifi/lossless-cut.git && cd lossless-cut && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** quieres the swiss army knife of lossless video/audio editing
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `fluxer`, `whisper`, `faster-whisper`
+**Elige si:** cortas material rápido y sin recomprimir
+**Evita si:** necesitas edición compositiva, efectos o reencode ([moviepy](#-moviepy)).
+**Combina con:** `moviepy`, `pipeline de reels`
 
 ## `moviepy`
 role=library · exec=local · setup=medium · mcp=False · prov=—
@@ -69,9 +69,9 @@ role=library · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `pip install moviepy   (o: uv add moviepy)`
 _Nombre PyPI puede diferir de 'moviepy'; verifica en pypi.org._
 
-**Elige si:** —
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `fluxer`, `whisper`, `faster-whisper`
+**Elige si:** ensamblas video por código en Python
+**Evita si:** prefieres React/programático web ([remotion](#-remotion)) o una UI ([OpenCut](#-opencut)).
+**Combina con:** `whisperx`, `tts`, `pipeline de reels`
 
 ## `omnivoice-studio`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=—
@@ -83,9 +83,9 @@ role=platform · exec=hybrid · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/debpalash/OmniVoice-Studio.git && cd OmniVoice-Studio && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres > [!warning]
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `fluxer`, `whisper`, `faster-whisper`
+**Elige si:** quieres suite de voz completa local (dictado + clonación + dubbing)
+**Evita si:** solo necesitas TTS simple por CLI/librería ([TTS](#-tts)) o estabilidad de producción.
+**Combina con:** `whisperx`
 
 ## `supertonic`
 role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
@@ -97,9 +97,9 @@ role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `pip install supertonic   (o: uv add supertonic)`
 _Nombre PyPI puede diferir de 'supertonic'; verifica en pypi.org._
 
-**Elige si:** quieres supertonic — lightning fast, on-device, accurate tts
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `fluxer`, `whisper`, `faster-whisper`
+**Elige si:** quieres voz local en tiempo real y sin nube
+**Evita si:** priorizas clonación de máxima fidelidad ([VoxCPM](#-voxcpm)) o flexibilidad multi-modelo ([TTS](#-tts)).
+**Combina con:** `whisperx`, `moviepy`
 
 ## `vibevoice`
 role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -139,9 +139,9 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/schibsted/videofy_minimal.git && cd videofy_minimal && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres videofy minimal
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `fluxer`, `whisper`, `faster-whisper`
+**Elige si:** quieres reels simples ya, sin montar un pipeline entero
+**Evita si:** necesitas variantes programáticas a escala ([remotion](#-remotion)) o control fino por código ([moviepy](#-moviepy)).
+**Combina con:** `whisper`, `supertonic`
 
 ## `voxcpm`
 role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
@@ -153,9 +153,9 @@ role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `pip install voxcpm   (o: uv add voxcpm)`
 _Nombre PyPI puede diferir de 'VoxCPM'; verifica en pypi.org._
 
-**Elige si:** quieres voxcpm2: tokenizer-free tts for multilingual speech generation, creative voice design, and
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `fluxer`, `whisper`, `faster-whisper`
+**Elige si:** quieres voz muy natural o clonada y tienes GPU
+**Evita si:** priorizas latencia mínima ([supertonic](#-supertonic)) o no tienes GPU.
+**Combina con:** `tts`
 
 ## `whisper`
 role=library · exec=cloud · setup=heavy · mcp=False · prov=—
@@ -167,9 +167,9 @@ role=library · exec=cloud · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `pip install whisper   (o: uv add whisper)`
 _Nombre PyPI puede diferir de 'whisper'; verifica en pypi.org._
 
-**Elige si:** —
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `fluxer`, `faster-whisper`, `whisperx`
+**Elige si:** quieres la referencia robusta y no te obsesiona la latencia
+**Evita si:** necesitas más velocidad ([faster-whisper](#-faster-whisper)) o timings por palabra ([whisperX](#-whisperx)).
+**Combina con:** `whisperx`, `pipeline de reels`
 
 ## `whisperx`
 role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
@@ -181,6 +181,6 @@ role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `pip install whisperx   (o: uv add whisperx)`
 _Nombre PyPI puede diferir de 'whisperX'; verifica en pypi.org._
 
-**Elige si:** —
-**Evita si:** el caso no requiere generación multimedia o ya usas alternativas dedicadas
-**Combina con:** `fluxer`, `whisper`, `faster-whisper`
+**Elige si:** necesitas subtítulos precisos o diarización
+**Evita si:** te basta texto plano ([whisper](#-whisper)) o no quieres gestionar tokens de HF.
+**Combina con:** `whisper`, `moviepy`, `pipeline de reels`

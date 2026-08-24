@@ -1,6 +1,6 @@
 # Catalogo generado
 
-Generado: 2026-06-26T07:47:33.067156+00:00
+Generado: 2026-08-24T04:13:47.607813+00:00
 
 | Repo | Categoria | Rol | Instalacion | Decision | Resumen | Local |
 |---|---:|---|---|---|---|---|
@@ -9,15 +9,15 @@ Generado: 2026-06-26T07:47:33.067156+00:00
 | appsmith | 1 | platform | reference_only | reference | Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our [website](https://www.appsmith.com?utm_source=github&utm_medium=organic&utm_campaign=readme. | si |
 | browser-use | 1 | platform | reference_only | reference | 🌤️ Want to skip the setup? Use our cloud for faster, scalable, stealth-enabled browser automation!. | si |
 | budibase | 1 | platform | reference_only | reference | AI Agents that run your operations Budibase is an open-source operations platform that saves engineers 100s of hours building Agents, Apps and Automations, securely. | si |
-| chatwoot | 1 | library | reference_only | reference | The modern customer support platform, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc. | si |
-| evolution-api | 1 | app | reference_only | reference | Open-source REST API for WhatsApp and multi-channel messaging — part of the Evolution Foundation ecosystem. | si |
+| chatwoot | 1 | library | docker_local | use_now | The modern customer support platform, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc. | si |
+| evolution-api | 1 | app | docker_local | use_now | Open-source REST API for WhatsApp and multi-channel messaging — part of the Evolution Foundation ecosystem. | si |
 | huginn | 1 | directory | reference_only | reference | Huginn is a system for building agents that perform automated tasks for you online. They can read the web, watch for events, and take actions on your behalf. Huginn's Agents create and consume events, propagating them along a directed graph. Think of it as a hackable version of IFTTT or Zapier on your own server. You always know who has your data. You do. | si |
-| listmonk | 1 | directory | reference_only | reference | listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL database as its data store. | si |
-| mautic | 1 | platform | reference_only | reference | Open Source Marketing Automation Software. | si |
-| n8n | 1 | platform | reference_only | reference | n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments. | si |
+| listmonk | 1 | directory | docker_local | use_now | listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL database as its data store. | si |
+| mautic | 1 | platform | docker_local | use_now | Open Source Marketing Automation Software. | si |
+| n8n | 1 | platform | docker_local | use_now | n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments. | si |
 | n8n_io | 1 | platform | reference_only | reference | n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments. | si |
 | n8n-mcp | 1 | platform | reference_only | reference | A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations. Deploy in minutes to give Claude and other AI assistants deep knowledge about n8n's 1,845 workflow automation nodes (816 core + 1,029 community). | si |
-| novu | 1 | library | reference_only | reference | The open-source communication infrastructure for agents and products. | si |
+| novu | 1 | library | docker_local | use_now | The open-source communication infrastructure for agents and products. | si |
 | openevolve | 1 | library | reference_only | reference | 🧬 The most advanced open-source evolutionary coding agent**. | si |
 | twenty-main | 1 | runtime | reference_only | reference | Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack. | si |
 | whatsapp-agentkit | 1 | directory | reference_only | reference | Construye tu propio agente de WhatsApp con inteligencia artificial en menos de 30 minutos. No necesitas saber programar. Claude Code construye todo por ti. | si |
@@ -69,7 +69,7 @@ Generado: 2026-06-26T07:47:33.067156+00:00
 | hyperframes | 3 | skill | reference_only | reference | HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos. Use it locally with the CLI, from AI coding agents with skills, or as the rendering core behind hosted authoring workflows. | si |
 | langchain | 3 | runtime | reference_only | reference | LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves. | si |
 | langflow | 3 | platform | reference_only | reference | ✨ Highlight features. | si |
-| langfuse | 3 | platform | reference_only | reference | alt="chat on Discord"> alt="follow on X(Twitter)"> alt="follow on LinkedIn"> . | si |
+| langfuse | 3 | platform | docker_local | use_now | alt="chat on Discord"> alt="follow on X(Twitter)"> alt="follow on LinkedIn"> . | si |
 | mcp-use | 3 | platform | reference_only | reference | to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents. | si |
 | NeMo-Agent-Toolkit | 3 | directory | reference_only | reference | SPDX-License-Identifier: Apache-2.0. | si |
 | OpenHands | 3 | platform | reference_only | reference | Run OpenHands, Claude Code, Codex, Gemini, or any ACP-compatible agent across local, remote, and cloud backends. | si |
@@ -103,7 +103,7 @@ Generado: 2026-06-26T07:47:33.067156+00:00
 | graphify | 5 | library | deferred | defer | 🇺🇸 English \| 🇨🇳 简体中文 \| 🇯🇵 日本語 \| 🇰🇷 한국어 \| 🇩🇪 Deutsch \| 🇫🇷 Français \| 🇪🇸 Español \| 🇮🇳 <a href="docs/translatio. | si |
 | mcp | 5 | directory | reference_only | reference | This repository contains a list of Google's official Model Context Protocol (MCP) servers, guidance on how to deploy MCP servers to Google Cloud, and examples to get started. | si |
 | mcp-neo4j | 5 | directory | reference_only | reference | These MCP servers are a part of the Neo4j Labs program. They are developed and maintained by the Neo4j Field GenAI team and welcome contributions from the larger developer community. These servers are frequently updated with new and experimental features, but are not supported by the Neo4j product team. | si |
-| metabase | 5 | platform | reference_only | reference | The easiest way to get started with Metabase is to sign up for a free trial of Metabase Cloud. | si |
+| metabase | 5 | platform | docker_local | use_now | The easiest way to get started with Metabase is to sign up for a free trial of Metabase Cloud. | si |
 | n8n-skills | 5 | skill | reference_only | reference | Expert Claude Code skills for building flawless n8n workflows using the n8n-mcp MCP server**. | si |
 | notebooklm-mcp-cli | 5 | platform | reference_only | reference | Programmatic access to Google NotebookLM** — via command-line interface (CLI) or Model Context Protocol (MCP) server. | si |
 | OpenCut | 5 | platform | reference_only | reference | OpenCut is being rewritten from the ground up.** What's coming:. | si |
@@ -140,7 +140,7 @@ Generado: 2026-06-26T07:47:33.067156+00:00
 | pdfcraft | 9 | platform | reference_only | reference | Merge, split, compress, convert, and edit PDF files online without uploading to servers. | si |
 | penpot | 9 | platform | reference_only | reference | Penpot is the open-source design platform for teams that build digital products at scale. | si |
 | plasmic | 9 | library | reference_only | reference | The open-source visual builder for your codebase. Build beautiful apps and websites incredibly fast. Drag and drop your own components, integrate with your codebase. Break through the low-code ceiling. | si |
-| posthog | 9 | skill | reference_only | reference | PostHog is an all-in-one, open source platform for building successful products. | si |
+| posthog | 9 | skill | docker_local | use_now | PostHog is an all-in-one, open source platform for building successful products. | si |
 | react-three-fiber | 9 | library | reference_only | reference | react-three-fiber is a React renderer for threejs. | si |
 | Real-ESRGAN | 9 | library | deferred | defer | 👀**Demos** **\|** 🚩**Updates** **\|** ⚡**Usage** **\|** 🏰**Model Zoo** **\|** 🔧Install **\|** 💻Train **\|** ❓FAQ **\|** 🎨Contribution. | si |
 | remotion | 9 | runtime | reference_only | reference | Remotion is a framework for **creating videos programmatically using React.**. | si |
@@ -151,7 +151,7 @@ Generado: 2026-06-26T07:47:33.067156+00:00
 | tailwindcss | 9 | platform | reference_only | reference | A utility-first CSS framework for rapidly building custom user interfaces. | si |
 | taste-skill | 9 | skill | reference_only | reference | Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typography, motion, and spacing instead of boilerplate-looking UIs. This repo also includes **image-generation skills** for reference boards (web, mobile, brand kits). Pair them with **ChatGPT Images** or similar generators, then hand the frames to Codex, Cursor, or Claude Code for implementation. | si |
 | three.js | 9 | library | deferred | defer | JavaScript 3D library. | si |
-| ui | 9 | platform | reference_only | reference | A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code. **Use this to build your own component library**. | si |
+| ui | 9 | platform | reference_only | reference | colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. | si |
 | vllm | 9 | library | reference_only | reference | Easy, fast, and cheap LLM serving for everyone. | si |
 | Youtube2Webpage | 9 | library | reference_only | reference | Youtube-to-Webpage is a Perl script to create a webpage from a Youtube video with a transcript generated from the video's closed captions paired with screenshots of the video. | si |
 | streamlit | 10 | platform | reference_only | reference | Welcome to Streamlit 👋. | si |
@@ -166,7 +166,7 @@ Generado: 2026-06-26T07:47:33.067156+00:00
 | Fooocus | 11 | skill | reference_only | reference | Fooocus is an image generating software (based on Gradio ). | si |
 | GFPGAN | 11 | library | reference_only | reference | 1. :boom: **Updated** online demo: ![Replicate](https://replicate.com/tencentarc/gfpgan). Here is the backup. 1. :boom: **Updated** online demo: ![Huggingface Gradio](https://huggingface.co/spaces/Xintao/GFPGAN) 1. . | si |
 | InvokeAI | 11 | runtime | reference_only | reference | Invoke - Professional Creative AI Tools for Visual Media. | si |
-| litellm | 11 | platform | reference_only | reference | LiteLLM is an open source AI Gateway that gives you a single, unified interface to call 100+ LLM providers — OpenAI, Anthropic, Gemini, Bedrock, Azure, and more — using the OpenAI format. | si |
+| litellm | 11 | platform | local_project | use_now | LiteLLM is an open source AI Gateway that gives you a single, unified interface to call 100+ LLM providers — OpenAI, Anthropic, Gemini, Bedrock, Azure, and more — using the OpenAI format. | si |
 | LivePortrait | 11 | library | deferred | defer | `2025/06/01`**: 🌍 Over the past year, **LivePortrait** has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as numerous startups and creators. 🎉 `2025/01/01`**: 🐶 We updated a new version of the Animals model with more data, see **here**. `2024/10/18`**: ❗ We have upda. | si |
 | LuxTTS | 11 | directory | reference_only | reference | LuxTTS is an lightweight zipvoice based text-to-speech model designed for high quality voice cloning and realistic generation at speeds exceeding 150x realtime. | si |
 | NeMo | 11 | runtime | reference_only | reference | Checkout our HuggingFace🤗 collection for the latest open weight checkpoints and demos!. | si |

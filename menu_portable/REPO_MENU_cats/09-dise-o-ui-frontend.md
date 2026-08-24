@@ -13,9 +13,9 @@ role=skill · exec=local · setup=heavy · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/agency-agents/). Si necesitas el código: git clone https://github.com/msitarzewski/agency-agents.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres 🎭 the agency: ai specialists ready to transform your workflow
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `taste-skill`
+**Elige si:** operas una agencia con muchas marcas
+**Evita si:** eres un solo proyecto pequeño ([marketingskills](#-marketingskills) basta).
+**Combina con:** `marketingskills`, `geo-seo-claude`
 
 ## `daily-stock-analysis`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -41,9 +41,9 @@ role=directory · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/design.md/). Si necesitas el código: git clone https://github.com/google-labs-code/design.md.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** quieres consistencia de marca con IA y usas agentes para UI
+**Evita si:** no usas agentes para generar código de UI.
+**Combina con:** `impeccable`, `skills-emil`
 
 ## `gradio`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -69,9 +69,9 @@ role=library · exec=local · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `pip install graphrag   (o: uv add graphrag)`
 _Nombre PyPI puede diferir de 'graphrag'; verifica en pypi.org._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** tu corpus tiene relaciones ricas y el RAG por fragmentos se queda corto
+**Evita si:** un RAG simple basta o el coste de indexado con LLM es prohibitivo.
+**Combina con:** `graphify`, `mcp-neo4j`, `turbovec`
 
 ## `gsap`
 role=runtime · exec=local · setup=medium · mcp=False · prov=—
@@ -83,9 +83,9 @@ role=runtime · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/greensock/GSAP.git && cd GSAP && (pnpm install || npm install)`
 _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 
-**Elige si:** quieres gsap (greensock animation platform)
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** necesitas animación avanzada y control fino de timelines
+**Evita si:** te basta animar componentes React con API declarativa ([motion](#-motion)).
+**Combina con:** `three.js`, `motion`
 
 ## `heroui`
 role=library · exec=local · setup=medium · mcp=False · prov=—
@@ -97,9 +97,9 @@ role=library · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `npm install heroui   (o: pnpm add heroui)`
 _Nombre npm puede diferir de 'heroui'; verifica en npmjs.com._
 
-**Elige si:** quieres packages/react/readme.md
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** quieres calidad + accesibilidad listas
+**Evita si:** quieres control copy-paste del código ([ui](#-ui-shadcn)).
+**Combina con:** `tailwindcss`, `swr`
 
 ## `impeccable`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=—
@@ -111,9 +111,9 @@ role=skill · exec=hybrid · setup=easy · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/impeccable/). Si necesitas el código: git clone https://github.com/pbakaus/impeccable.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** quieres frontends que no parezcan generados por IA
+**Evita si:** no generas UI con agentes.
+**Combina con:** `taste-skill`, `ui-ux-pro-max-skill`, `design.md`
 
 ## `llmfit`
 role=app · exec=local · setup=heavy · mcp=False · prov=—
@@ -125,9 +125,9 @@ role=app · exec=local · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/AlexsJones/llmfit.git && cd llmfit && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** necesitas elegir modelo con datos y reproducibilidad
+**Evita si:** ya tienes el modelo decidido o tu caso no justifica un harness de evaluación.
+**Combina con:** `litellm`, `langfuse`
 
 ## `magicui`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -139,9 +139,9 @@ role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/magicuidesign/magicui.git && cd magicui && (pnpm install || npm install)`
 _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 
-**Elige si:** quieres ui library for design engineers
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** priorizas estética y velocidad
+**Evita si:** necesitas accesibilidad estricta ([heroui](#-heroui)).
+**Combina con:** `tailwindcss`, `motion`
 
 ## `mirofish`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -153,9 +153,9 @@ role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/666ghj/MiroFish.git && cd MiroFish && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres 简洁通用的群体智能引擎，预测万物
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** simulas futuros/escenarios con muchos actores
+**Evita si:** necesitas tareas deterministas o resultados reproducibles.
+**Combina con:** `openevolve`
 
 ## `nanochat`
 role=app · exec=local · setup=heavy · mcp=False · prov=—
@@ -167,9 +167,9 @@ role=app · exec=local · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/karpathy/nanochat.git && cd nanochat && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** quieres el pipeline completo de un chat end-to-end
+**Evita si:** solo necesitas el core del modelo ([nanoGPT](#-nanogpt)) o un modelo listo para usar.
+**Combina con:** `nanogpt`
 
 ## `nemotron`
 role=app · exec=hybrid · setup=heavy · mcp=False · prov=—
@@ -195,23 +195,9 @@ role=runtime · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/nexu-io/open-design.git && cd open-design && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres open design: the open-source claude design alternative
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
-
-## `openwa`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
-
-**Qué es:** OpenWA** is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls.
-**Stack:** javascript/typescript, python, typescript, javascript, react, docker, postgres
-**Repo:** https://github.com/rmyndharis/OpenWA.git
-
-**Instalación** [~]: `git clone https://github.com/rmyndharis/OpenWA.git && cd OpenWA && docker compose up -d`
-_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
-
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `skills`, `agency-agents`, `taste-skill`
+**Elige si:** generas UI desde texto y quieres edición visual
+**Evita si:** prefieres editar visualmente sobre tu código existente ([plasmic](#-plasmic)).
+**Combina con:** `tailwindcss`, `heroui`, `web app moderna`
 
 ## `pdfcraft`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
@@ -223,9 +209,9 @@ role=platform · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/PDFCraftTool/pdfcraft.git && cd pdfcraft && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** manipulas PDFs con privacidad y sin instalar nada
+**Evita si:** necesitas conversión a Markdown para IA ([markitdown](#-markitdown)) o edición de contenido (no solo manipulación de páginas).
+**Combina con:** `markitdown`
 
 ## `penpot`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
@@ -237,9 +223,9 @@ role=platform · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/penpot/penpot.git && cd penpot && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres penpot is the open-source design platform for teams that build digital products
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** quieres diseño abierto y soberano, self-host
+**Evita si:** necesitas generación por IA ([open-design](#-open-design)) o no quieres operar Docker.
+**Combina con:** `design.md`, `plasmic`
 
 ## `plasmic`
 role=library · exec=local · setup=medium · mcp=False · prov=—
@@ -251,9 +237,9 @@ role=library · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `npm install plasmic   (o: pnpm add plasmic)`
 _Nombre npm puede diferir de 'plasmic'; verifica en npmjs.com._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** quieres editar visual sobre tu código React
+**Evita si:** generas desde texto sin codebase previo ([open-design](#-open-design)).
+**Combina con:** `tailwindcss`, `ui`
 
 ## `posthog`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
@@ -265,9 +251,9 @@ role=skill · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/posthog/). Si necesitas el código: git clone https://github.com/PostHog/posthog.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres posthog is an all-in-one, open source platform for building successful products
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** quieres entender el uso real y el comportamiento de usuarios
+**Evita si:** solo necesitas BI sobre una BD estática ([metabase](#-metabase)).
+**Combina con:** `metabase`, `marketing de agencia`
 
 ## `react-three-fiber`
 role=library · exec=local · setup=medium · mcp=False · prov=—
@@ -279,9 +265,9 @@ role=library · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `npm install react-three-fiber   (o: pnpm add react-three-fiber)`
 _Nombre npm puede diferir de 'react-three-fiber'; verifica en npmjs.com._
 
-**Elige si:** quieres @react-three/fiber
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** haces 3D en React y quieres reactividad
+**Evita si:** no usas React o necesitas control a bajo nivel ([three.js](#-threejs) directo).
+**Combina con:** `three.js`, `motion`
 
 ## `real-esrgan`
 role=library · exec=local · setup=heavy · mcp=False · prov=—
@@ -293,9 +279,9 @@ role=library · exec=local · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `pip install real-esrgan   (o: uv add real-esrgan)`
 _Nombre PyPI puede diferir de 'Real-ESRGAN'; verifica en pypi.org._
 
-**Elige si:** quieres 👀[**demos**](#-demos-videos) **|** 🚩[**updates**](#-updates) **|** ⚡[**usage**](
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** reescalas imágenes o video a más resolución
+**Evita si:** solo necesitas arreglar rostros ([GFPGAN](#-gfpgan)) o buscas difusión para reimaginar.
+**Combina con:** `gfpgan`, `pipeline de reels`
 
 ## `remotion`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -307,9 +293,9 @@ role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/remotion-dev/remotion.git && cd remotion && (pnpm install || npm install)`
 _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 
-**Elige si:** quieres remotion is a framework for **creating videos programmatically using react.**
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** generas video a escala con React y quieres variantes parametrizadas
+**Evita si:** trabajas en Python ([moviepy](#-moviepy)) o buscas un editor visual.
+**Combina con:** `open-generative-ai`, `pipeline de reels`
 
 ## `skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
@@ -321,9 +307,9 @@ role=skill · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/skills/). Si necesitas el código: git clone https://github.com/mattpocock/skills.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres skills for real engineers
-**Evita si:** —
-**Combina con:** `openwa`, `agency-agents`, `taste-skill`
+**Elige si:** buscas referencias limpias y didácticas
+**Evita si:** quieres un catálogo masivo ([antigravity-awesome-skills](#-antigravity-awesome-skills)).
+**Combina con:** `awesome-agent-skills`
 
 ## `skills-emil`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
@@ -335,9 +321,9 @@ role=skill · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/skills_emil/). Si necesitas el código: git clone https://github.com/emilkowalski/skills.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres skills for design engineers
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** trabajas diseño+dev en equipo y sufres el handoff
+**Evita si:** buscas componentes listos o trabajas solo.
+**Combina con:** `design.md`, `ui-ux-pro-max-skill`
 
 ## `stitch-skills`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
@@ -363,9 +349,9 @@ role=library · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `npm install swr   (o: pnpm add swr)`
 _Nombre npm puede diferir de 'swr'; verifica en npmjs.com._
 
-**Elige si:** quieres introduction
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** manejas datos remotos en React y quieres caché simple
+**Evita si:** prefieres React Query con su modelo de caché global más rico.
+**Combina con:** `heroui`, `web app moderna`
 
 ## `tailwindcss`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -377,9 +363,9 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/tailwindlabs/tailwindcss.git && cd tailwindcss && (pnpm install || npm install)`
 _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 
-**Elige si:** quieres a utility-first css framework for rapidly building custom user interfaces.
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** quieres estilar rápido y consistente
+**Evita si:** prefieres CSS-in-JS o estilos scoped por componente.
+**Combina con:** `heroui`, `ui`, `magicui`
 
 ## `taste-skill`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
@@ -391,9 +377,9 @@ role=skill · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/taste-skill/). Si necesitas el código: git clone https://github.com/Leonxlnx/taste-skill.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres taste skill
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** quieres frontends con gusto y no te basta con UI funcional
+**Evita si:** ya tienes un design system cerrado o no usas generadores de imagen.
+**Combina con:** `ui-ux-pro-max-skill`, `impeccable`
 
 ## `three.js`
 role=library · exec=local · setup=heavy · mcp=False · prov=—
@@ -405,33 +391,19 @@ role=library · exec=local · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `npm install three.js   (o: pnpm add three.js)`
 _Nombre npm puede diferir de 'three.js'; verifica en npmjs.com._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** renderizas 3D en web y quieres control a bajo nivel
+**Evita si:** trabajas solo 2D o prefieres la ergonomía de React ([react-three-fiber](#-react-three-fiber)).
+**Combina con:** `react-three-fiber`, `gsap`
 
 ## `ui`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
-
-**Qué es:** A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code. **Use this to build your own component library**.
-**Stack:** javascript/typescript, typescript, javascript
-**Repo:** https://github.com/shadcn-ui/ui.git
-
-**Instalación** [~]: `git clone https://github.com/shadcn-ui/ui.git && cd ui && (pnpm install || npm install)`
-_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
-
-**Elige si:** quieres shadcn/ui
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
-
-## `ui-shadcn`
-role=? · exec=? · setup=? · mcp=None · prov=—
 
 **Qué es:** colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada.
 **Stack:** Node.js, React, Tailwind
 **Repo:** https://github.com/shadcn-ui/ui
 
-**Instalación** [?]: `git clone https://github.com/shadcn-ui/ui (verificar README)`
-_Tipo no reconocido._
+**Instalación** [~]: `git clone https://github.com/shadcn-ui/ui && cd ui && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 
 **Elige si:** quieres dueño del código
 **Evita si:** prefieres una lib "llave en mano" ([heroui](#-heroui)).
@@ -462,6 +434,6 @@ role=library · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `npm install youtube2webpage   (o: pnpm add youtube2webpage)`
 _Nombre npm puede diferir de 'Youtube2Webpage'; verifica en npmjs.com._
 
-**Elige si:** quieres youtube-to-webpage
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** quieres video → artículo con transcripción y capturas
+**Evita si:** necesitas edición de video o el contenido no tiene subtítulos.
+**Combina con:** `whisper`

@@ -1,6 +1,6 @@
 # REPO_MENU — Menú portable de la biblioteca de repositorios
 
-> Generado: 2026-06-25 · 186 repos curados · Documento 100% para IA.
+> Generado: 2026-08-24 · 185 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -9,7 +9,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **186 repos** de IA y
+proyecto concreto. Tienes un menú curado de **185 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -102,10 +102,10 @@ Formato: `id` [role|exec|setup|inst] — descripción — alt:…
 
 - `tools` [L|loc|M|?] — (ver ficha de tools)
 
-### 1. Automatización, Mensajería & CRM (16)
+### 1. Automatización, Mensajería & CRM (17)
 Detalle: `REPO_MENU_cats/01-automatizaci-n-mensajer-a-crm.md`
 
-- `activepieces` [R|hyb|M|~] — href="https://activepieces.com".
+- `activepieces` [R|hyb|M|~] — href="https://activepieces.com". — alt: n8n
 - `appsmith` [P|loc|M|~] — Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and servic
 - `browser-use` [P|loc|M|~] — 🌤️ Want to skip the setup? Use our cloud for faster, scalable, stealth-enabled browser automation!.
 - `budibase` [P|loc|M|~] — AI Agents that run your operations Budibase is an open-source operations platform that saves engineers 100s of
@@ -114,11 +114,12 @@ Detalle: `REPO_MENU_cats/01-automatizaci-n-mensajer-a-crm.md`
 - `huginn` [D|hyb|M|+] — Huginn is a system for building agents that perform automated tasks for you online. They can read the web, wat
 - `listmonk` [D|hyb|M|+] — listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and pack
 - `mautic` [P|loc|M|~] — Open Source Marketing Automation Software.
-- `n8n` [P|loc|M|~] — n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-
+- `n8n` [P|loc|M|~] — n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no- — alt: activepieces,huginn
 - `n8n-io` [P|loc|M|~] — n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-
 - `n8n-mcp` [P|loc|M|~] — A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node docume
 - `novu` [L|hyb|M|~] — The open-source communication infrastructure for agents and products.
 - `openevolve` [L|loc|M|~] — 🧬 The most advanced open-source evolutionary coding agent**.
+- `openwa` [P|hyb|M|~] — OpenWA** is a free, open-source WhatsApp API Gateway designed for developers who need full control over their 
 - `twenty-main` [R|loc|M|~] — Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickl
 - `whatsapp-agentkit` [D|cld|M|+] — Construye tu propio agente de WhatsApp con inteligencia artificial en menos de 30 minutos. No necesitas saber 
 
@@ -251,7 +252,7 @@ Detalle: `REPO_MENU_cats/08-workspaces-de-ia-local-notebooks.md`
 
 - `open-notebook` [P|hyb|M|~] — An open source, privacy-focused alternative to Google's Notebook LM!.
 
-### 9. Diseño, UI & Frontend (33)
+### 9. Diseño, UI & Frontend (31)
 Detalle: `REPO_MENU_cats/09-dise-o-ui-frontend.md`
 
 - `agency-agents` [S|loc|H|+] — A complete AI agency at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy inje
@@ -268,7 +269,6 @@ Detalle: `REPO_MENU_cats/09-dise-o-ui-frontend.md`
 - `nanochat` [A|loc|H|~] — nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, t
 - `nemotron` [A|hyb|H|~] — Open and efficient models for agentic AI.** Training recipes, deployment guides, and use-case examples for the
 - `open-design` [R|loc|M|~] — 🔥 **Open Design 0.10.0 is here: the all-in-one Agentic design workspace.** The whole craft now lives in one wi
-- `openwa` [P|hyb|M|~] — OpenWA** is a free, open-source WhatsApp API Gateway designed for developers who need full control over their 
 - `pdfcraft` [P|loc|M|~] — Merge, split, compress, convert, and edit PDF files online without uploading to servers.
 - `penpot` [P|loc|M|~] — Penpot is the open-source design platform for teams that build digital products at scale.
 - `plasmic` [L|loc|M|~] — The open-source visual builder for your codebase. Build beautiful apps and websites incredibly fast. Drag and 
@@ -283,8 +283,7 @@ Detalle: `REPO_MENU_cats/09-dise-o-ui-frontend.md`
 - `tailwindcss` [P|hyb|M|~] — A utility-first CSS framework for rapidly building custom user interfaces.
 - `taste-skill` [S|loc|M|+] — Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typography, motion, and spacing i
 - `three.js` [L|loc|H|~] — JavaScript 3D library.
-- `ui` [P|loc|M|~] — A set of beautifully designed components that you can customize, extend, and build on. Start here then make it
-- `ui-shadcn` [-|-|-|?] — colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de in — alt: heroui
+- `ui` [P|loc|M|~] — colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de in — alt: heroui
 - `vllm` [L|loc|M|~] — Easy, fast, and cheap LLM serving for everyone.
 - `youtube2webpage` [L|loc|M|~] — Youtube-to-Webpage is a Perl script to create a webpage from a Youtube video with a transcript generated from 
 

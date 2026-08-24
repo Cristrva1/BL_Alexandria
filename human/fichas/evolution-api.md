@@ -1,10 +1,10 @@
 # evolution-api
 
-Generado: 2026-06-26T07:47:33.067156+00:00
+Generado: 2026-08-24T04:13:47.607813+00:00
 
 ## Decision
 
-REFERENCIA
+USAR AHORA
 
 ## Para que sirve realmente
 
@@ -28,7 +28,7 @@ solo necesitas un bot de prueba o un único script ([OpenWA](#-openwa) basta).
 
 ## Tipo de instalacion
 
-reference_only
+docker_local
 
 ## Stack / tecnologia detectada
 
@@ -58,4 +58,4 @@ Combinar con n8n, chatwoot, bot whatsapp cuando el flujo necesite mas de una pie
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si operas WhatsApp en producción con varias instancias. No debe instalarse por inercia.
+Veredicto: usar ahora. Tiene sentido si operas WhatsApp en producción con varias instancias. No debe instalarse por inercia.

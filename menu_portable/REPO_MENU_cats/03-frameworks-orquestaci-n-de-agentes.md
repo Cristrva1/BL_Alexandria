@@ -13,9 +13,9 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/ag2ai/ag2.git && cd ag2 && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres ag2 was evolved from autogen. fully open-sourced. we invite collaborators from a
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `crewai`
+**Elige si:** construyes multiagente serio en Python
+**Evita si:** te basta un agente único o quieres orquestación visual.
+**Combina con:** `langchain`, `langfuse`
 
 ## `agents-towards-production`
 role=skill · exec=hybrid · setup=heavy · mcp=False · prov=—
@@ -27,9 +27,9 @@ role=skill · exec=hybrid · setup=heavy · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/agents-towards-production/). Si necesitas el código: git clone https://github.com/NirDiamant/agents-towards-production.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres agents towards production
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `ag2`, `crewai`
+**Elige si:** vas a producción con agentes y necesitas el ciclo completo
+**Evita si:** solo experimentas localmente o buscas skills, no tutoriales.
+**Combina con:** `langfuse`, `ag2`
 
 ## `autogen`
 role=runtime · exec=local · setup=medium · mcp=False · prov=—
@@ -55,9 +55,9 @@ role=skill · exec=cloud · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-claude-code/). Si necesitas el código: git clone https://github.com/hesreallyhim/awesome-claude-code.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres awesome claude code
-**Evita si:** —
-**Combina con:** `agents-towards-production`, `ag2`, `crewai`
+**Elige si:** vives en Claude Code y quieres exprimirlo
+**Evita si:** usas otro asistente (no aplica).
+**Combina con:** `claude-plugins-official`, `superpowers`
 
 ## `awesome-dataviz`
 role=directory · exec=local · setup=medium · mcp=False · prov=—
@@ -69,9 +69,9 @@ role=directory · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-dataviz/). Si necesitas el código: git clone https://github.com/hal9ai/awesome-dataviz.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres awesome dataviz
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** buscas opciones de visualización y aún no has elegido
+**Evita si:** ya elegiste tu librería y solo necesitas usarla.
+**Combina con:** `echarts`, `awesome-bigdata`
 
 ## `awesome-langgraph`
 role=directory · exec=local · setup=medium · mcp=False · prov=—
@@ -83,9 +83,9 @@ role=directory · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-LangGraph/). Si necesitas el código: git clone https://github.com/vonzosten/awesome-LangGraph.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres <!--lint disable awesome-badge awesome-list-item double-link no-heading-punctuation table-
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** construyes con LangGraph y quieres patrones de referencia
+**Evita si:** no usas ese ecosistema.
+**Combina con:** `langchain`
 
 ## `awesome-mcp-servers`
 role=directory · exec=local · setup=heavy · mcp=True · prov=—
@@ -97,9 +97,9 @@ role=directory · exec=local · setup=heavy · mcp=True · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-mcp-servers/). Si necesitas el código: git clone https://github.com/punkpeye/awesome-mcp-servers.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres > [!important]
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** buscas antes de construir
+**Evita si:** ya sabes que necesitas uno a medida y no te vale ninguno listado.
+**Combina con:** `mcp-use`, `servers`
 
 ## `codebase-memory-mcp`
 role=runtime · exec=hybrid · setup=medium · mcp=True · prov=—
@@ -125,9 +125,9 @@ role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/crewAIInc/crewAI.git && cd crewAI && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** quieres ·
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** quieres velocidad y un modelo mental simple de "equipo"
+**Evita si:** necesitas control de bajo nivel o orquestación muy custom.
+**Combina con:** `langchain`, `mem0`
 
 ## `dash`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
@@ -139,9 +139,9 @@ role=platform · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/plotly/dash.git && cd dash && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** quieres dashboards productivos en Python con control del frontend
+**Evita si:** prefieres prototipos ultrarrápidos ([streamlit](#-streamlit)).
+**Combina con:** `streamlit`, `echarts`
 
 ## `deer-flow`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -153,9 +153,9 @@ role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/deer-flow/). Si necesitas el código: git clone https://github.com/bytedance/deer-flow.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres 🦌 deerflow - 2.0
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** quieres un orquestador completo y extensible
+**Evita si:** buscas algo minimalista o sin Docker.
+**Combina con:** `gpt-researcher`, `firecrawl`
 
 ## `defending-code-reference-harness`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -181,9 +181,9 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/langgenius/dify.git && cd dify && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres alt="chat on discord"></a>
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** quieres una app IA completa autoalojada
+**Evita si:** solo necesitas una librería o un prototipo puntual.
+**Combina con:** `langflow`, `flowise`
 
 ## `ecc`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -195,9 +195,9 @@ role=app · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/affaan-m/ECC.git && cd ECC && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres **language:** english |  |  | [繁體中文](docs/zh-tw/readme.
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** ejecutas agentes con acceso real a tu máquina y necesitas contención
+**Evita si:** solo haces prompts de chat sin ejecución de código.
+**Combina con:** `openhands`, `sandbox`, `hermes-agent`
 
 ## `flowise`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
@@ -209,9 +209,9 @@ role=platform · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/FlowiseAI/Flowise.git && cd Flowise && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres english | [繁體中文](./i18n/readme-tw.md) | [简体中文](./i18n/readme-zh.md) | [日本語](./i1
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** quieres un prototipo visual ya, en stack JS
+**Evita si:** necesitas plataforma completa con RAG/observabilidad ([dify](#-dify)).
+**Combina con:** `dify`, `langflow`
 
 ## `gpt-researcher`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -223,9 +223,9 @@ role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/gpt-researcher/). Si necesitas el código: git clone https://github.com/assafelovic/gpt-researcher.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres 🔎 gpt researcher
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** necesitas research profundo citado
+**Evita si:** solo quieres una respuesta corta o un chat simple.
+**Combina con:** `firecrawl`, `browser-use`, `research profundo`
 
 ## `guardrails`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
@@ -251,9 +251,9 @@ role=platform · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/headroomlabs-ai/headroom.git && cd headroom && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres ██╗  ██╗███████╗ █████╗ ██████╗ ██████╗  ██████╗  ██████╗ ███╗   ███╗
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** te quedas sin contexto en sesiones largas
+**Evita si:** tus prompts ya caben holgados o la pérdida de detalle por resumen es inaceptable.
+**Combina con:** `context-engineering`, `codegraph`
 
 ## `hyperframes`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -265,9 +265,9 @@ role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/hyperframes/). Si necesitas el código: git clone https://github.com/heygen-com/hyperframes.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres hyperframes is an open-source framework for turning html, css, media, and seekab
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** generas animación por frames con control por código
+**Evita si:** prefieres video en React con reloj integrado ([remotion](#-remotion)) o edición visual.
+**Combina con:** `remotion`
 
 ## `langchain`
 role=runtime · exec=local · setup=medium · mcp=False · prov=—
@@ -279,9 +279,9 @@ role=runtime · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/langchain-ai/langchain.git && cd langchain && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** quieres langchain is a framework for building agents and llm-powered applications. it he
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** quieres la base estándar con máximas integraciones
+**Evita si:** prefieres mínima abstracción o un solo proveedor sin cambiar.
+**Combina con:** `langflow`, `langfuse`, `litellm`
 
 ## `langflow`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -293,9 +293,9 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/langflow-ai/langflow.git && cd langflow && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres ✨ highlight features
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** prefieres construir en visual sobre LangChain
+**Evita si:** quieres todo en código o no usas LangChain.
+**Combina con:** `langchain`, `dify`
 
 ## `langfuse`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
@@ -307,9 +307,9 @@ role=platform · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/langfuse/langfuse.git && cd langfuse && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres <img width="2400" alt="hero-b (1)" src="https://github.com/user-attachments/assets/5810ae1
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** operas agentes en serio y necesitas trazas/costes/eval
+**Evita si:** haces prototipos triviales o no quieres operar el backend.
+**Combina con:** `langchain`, `litellm`, `ag2`
 
 ## `mcp-use`
 role=platform · exec=hybrid · setup=medium · mcp=True · prov=—
@@ -321,9 +321,9 @@ role=platform · exec=hybrid · setup=medium · mcp=True · prov=—
 **Instalación** [~]: `git clone https://github.com/mcp-use/mcp-use.git && cd mcp-use && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** quieres &nbsp;
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** construyes un servidor MCP propio y quieres productividad
+**Evita si:** solo buscas usar uno ya hecho ([awesome-mcp-servers](#-awesome-mcp-servers)) o necesitas control a nivel spec.
+**Combina con:** `mcp`, `awesome-mcp-servers`, `app mcp`
 
 ## `nemo-agent-toolkit`
 role=directory · exec=local · setup=medium · mcp=False · prov=—
@@ -335,9 +335,9 @@ role=directory · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/NeMo-Agent-Toolkit/). Si necesitas el código: git clone https://github.com/NVIDIA/NeMo-Agent-Toolkit.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres spdx-filecopyrighttext: copyright (c) 2024-2026, nvidia corporation & affiliates. all righ
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** trabajas con infra NVIDIA o necesitas guardrails/eval empresarial
+**Evita si:** quieres algo ligero y agnóstico.
+**Combina con:** `langchain`
 
 ## `openhands`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -349,9 +349,9 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/OpenHands/OpenHands.git && cd OpenHands && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres run openhands, claude code, codex, gemini, or any acp-compatible agent across lo
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** quieres un agente que "haga", no solo hable
+**Evita si:** solo necesitas chat/RAG o no puedes correr Docker.
+**Combina con:** `ecc`, `sandbox`
 
 ## `openscreen`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -363,9 +363,9 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/siddharthvaddem/openscreen.git && cd openscreen && (pnpm install || npm install)`
 _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 
-**Elige si:** quieres > openscreen is now archived and no longer maintained. for continued maintenance and devel
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** necesitas screencast simple desde el navegador
+**Evita si:** quieres algo mantenido y estable (el original está archivado) o grabación fuera del navegador.
+**Combina con:** `opencut`
 
 ## `playwright`
 role=runtime · exec=hybrid · setup=easy · mcp=False · prov=—
@@ -377,9 +377,9 @@ role=runtime · exec=hybrid · setup=easy · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/microsoft/playwright.git && cd playwright && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** quieres 🎭 playwright
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** necesitas control preciso y reproducible del browser
+**Evita si:** quieres que el agente navegue por visión ([browser-use](#-browser-use)) o no necesitas un navegador real.
+**Combina con:** `browser-use`, `crawlee`
 
 ## `ponytail`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -419,9 +419,9 @@ role=runtime · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/ruvnet/ruflo.git && cd ruflo && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** orquestas muchos agentes a escala y quieres rendimiento
+**Evita si:** solo necesitas 1-2 agentes o no usas Claude Code/Codex.
+**Combina con:** `mem0`, `ecc`
 
 ## `sandbox`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -433,9 +433,9 @@ role=library · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `pip install sandbox   (o: uv add sandbox)`
 _Nombre PyPI puede diferir de 'sandbox'; verifica en pypi.org._
 
-**Elige si:** quieres aio sandbox - all-in-one agent sandbox environment
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** quieres aislar la ejecución de agentes y reproducibilidad
+**Evita si:** te basta correr local sin sandbox o no puedes asumir el overhead de Docker.
+**Combina con:** `openhands`, `ecc`
 
 ## `scrapling`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -447,9 +447,9 @@ role=library · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `pip install scrapling   (o: uv add scrapling)`
 _Nombre PyPI puede diferir de 'Scrapling'; verifica en pypi.org._
 
-**Elige si:** quieres &middot;
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** los sitios cambian o te bloquean a menudo
+**Evita si:** el target es estable y simple, o no necesitas stealth.
+**Combina con:** `scrapy`
 
 ## `tooljet`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -475,6 +475,6 @@ role=directory · exec=local · setup=heavy · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/turbovec/). Si necesitas el código: git clone https://github.com/RyanCodrai/turbovec.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
+**Elige si:** necesitas vector search veloz y embebido sin desplegar una DB
+**Evita si:** ya usas una vector DB completa con persistencia y escalado horizontal.
+**Combina con:** `mem0`, `graphrag`

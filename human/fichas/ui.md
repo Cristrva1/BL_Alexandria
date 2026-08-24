@@ -1,6 +1,6 @@
 # ui
 
-Generado: 2026-06-26T07:47:33.067156+00:00
+Generado: 2026-08-24T04:13:47.607813+00:00
 
 ## Decision
 
@@ -8,23 +8,23 @@ REFERENCIA
 
 ## Para que sirve realmente
 
-A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code. **Use this to build your own component library**.
+colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada.
 
 ## Que problema resuelve
 
-quieres ser dueño del código de UI
+quieres dueño del código
 
 ## Por que tiene valor
 
-Aporta valor en `platform` para frontend, javascript, javascript-typescript, typescript. Stack declarado: javascript/typescript, typescript, javascript.
+Aporta valor en `platform` para frontend, javascript, javascript-typescript, typescript. Stack declarado: Node.js, React, Tailwind.
 
 ## Cuando usarlo
 
-quieres ser dueño del código de UI
+quieres dueño del código
 
 ## Cuando NO usarlo
 
-prefieres una lib "llave en mano" con updates automáticos ([heroui](#-heroui)).
+prefieres una lib "llave en mano" ([heroui](#-heroui)).
 
 ## Tipo de instalacion
 
@@ -32,7 +32,7 @@ reference_only
 
 ## Stack / tecnologia detectada
 
-javascript/typescript, typescript, javascript
+Node.js, React, Tailwind
 
 ## Instalacion detectada
 
@@ -45,7 +45,7 @@ Repo local detectado: si
 
 ## Contra que compite
 
-- Ninguno declarado.
+- `heroui`
 
 ## Riesgos
 
@@ -57,4 +57,4 @@ Combinar con tailwindcss, plasmic cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres ser dueño del código de UI. No debe instalarse por inercia.
+Veredicto: referencia. Tiene sentido si quieres dueño del código. No debe instalarse por inercia.

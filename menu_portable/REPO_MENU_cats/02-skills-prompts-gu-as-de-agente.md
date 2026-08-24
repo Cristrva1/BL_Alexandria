@@ -13,9 +13,9 @@ role=skill · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/agent-toolkit/). Si necesitas el código: git clone https://github.com/softaworks/agent-toolkit.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres softaworks agent skills
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** quieres productividad inmediata con tareas comunes
+**Evita si:** buscas un método integral ([superpowers](#-superpowers)).
+**Combina con:** `superpowers`
 
 ## `andrej-karpathy-skills`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -27,9 +27,9 @@ role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/andrej-karpathy-skills/). Si necesitas el código: git clone https://github.com/multica-ai/andrej-karpathy-skills.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres karpathy-inspired claude code guidelines
-**Evita si:** —
-**Combina con:** `antigravity-awesome-skills`, `awesome-agent-skills`, `superpowers`
+**Elige si:** quieres respuestas más útiles ya, sin curar prompts largos
+**Evita si:** buscas skills ejecutables con scripts concretos.
+**Combina con:** `awesome-claude-code`, `context-engineering`
 
 ## `antigravity-awesome-skills`
 role=skill · exec=local · setup=easy · mcp=False · prov=—
@@ -41,9 +41,9 @@ role=skill · exec=local · setup=easy · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/antigravity-awesome-skills/). Si necesitas el código: git clone https://github.com/sickn33/antigravity-awesome-skills.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres 🌌 antigravity awesome skills: 1,682+ agentic skills for claude code, gemini cli,
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `awesome-agent-skills`, `superpowers`
+**Elige si:** quieres opciones por cantidad y dominio
+**Evita si:** prefieres curaduría oficial y respaldo de marca ([awesome-agent-skills](#-awesome-agent-skills)).
+**Combina con:** `skillspector`, `awesome-agent-skills`
 
 ## `autoresearch`
 role=platform · exec=local · setup=heavy · mcp=False · prov=—
@@ -55,9 +55,9 @@ role=platform · exec=local · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/karpathy/autoresearch.git && cd autoresearch && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** experimentas con research iterativo o quieres un punto de partida
+**Evita si:** quieres salida pulida y lista ([gpt-researcher](#-gpt-researcher)).
+**Combina con:** `gpt-researcher`, `crawl4ai`
 
 ## `awesome-agent-skills`
 role=skill · exec=cloud · setup=heavy · mcp=False · prov=—
@@ -69,8 +69,8 @@ role=skill · exec=cloud · setup=heavy · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-agent-skills/). Si necesitas el código: git clone https://github.com/VoltAgent/awesome-agent-skills.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres hand-picked, not ai-slop generated.
-**Evita si:** —
+**Elige si:** valoras respaldo de marca y curaduría
+**Evita si:** necesitas máxima cantidad o variedad ([antigravity-awesome-skills](#-antigravity-awesome-skills)).
 **Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `superpowers`
 
 ## `browser-harness`
@@ -97,9 +97,9 @@ role=runtime · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/jasontang-ai/Context-Engineering.git && cd Context-Engineering && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** quieres context engineering
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** quieres profundizar en contexto y RAG
+**Evita si:** buscas skills ejecutables listas para copiar.
+**Combina con:** `andrej-karpathy-skills`, `headroom`
 
 ## `geo-seo-claude`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -111,9 +111,9 @@ role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/geo-seo-claude/). Si necesitas el código: git clone https://github.com/zubair-trabzada/geo-seo-claude.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres (chatgpt, claude, perplexity, gemini, google ai overviews) while maintaining tra
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** te importa el descubrimiento por IA, no solo Google
+**Evita si:** solo haces SEO clásico sin objetivo generativo.
+**Combina con:** `marketingskills`, `agency-agents`
 
 ## `guia`
 role=skill · exec=hybrid · setup=heavy · mcp=False · prov=—
@@ -139,9 +139,9 @@ role=skill · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/hermes-agent/). Si necesitas el código: git clone https://github.com/NousResearch/hermes-agent.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres hermes agent ☤
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** quieres agentes locales con UI y memoria persistente
+**Evita si:** prefieres orquestación en nube o no quieres compilar Tauri.
+**Combina con:** `ecc`, `odysseus`
 
 ## `humanizer`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
@@ -153,9 +153,9 @@ role=skill · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/humanizer/). Si necesitas el código: git clone https://github.com/blader/humanizer.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** publicas prosa generada por IA y quieres evitar el "tono IA"
+**Evita si:** escribes a mano o el registro formal no es problema.
+**Combina con:** `stop-slop`
 
 ## `last30days-skill`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -181,9 +181,9 @@ role=platform · exec=cloud · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Crear cuenta / API key en el proveedor (no self-host).`
 _Servicio gestionado; no se clona._
 
-**Elige si:** quieres llm council
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** quieres consenso entre modelos o comparar proveedores
+**Evita si:** te basta un único LLM o el coste multi-modelo no es asumible.
+**Combina con:** `litellm`
 
 ## `marketingskills`
 role=skill · exec=cloud · setup=heavy · mcp=False · prov=—
@@ -195,9 +195,9 @@ role=skill · exec=cloud · setup=heavy · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/marketingskills/). Si necesitas el código: git clone https://github.com/coreyhaines31/marketingskills.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres marketing skills for ai agents
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** automatizas marketing con agentes y quieres playbooks
+**Evita si:** necesitas ejecución (no skills) o no haces marketing.
+**Combina con:** `agency-agents`, `mautic`, `marketing de agencia`
 
 ## `multica`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
@@ -209,9 +209,9 @@ role=skill · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/multica/). Si necesitas el código: git clone https://github.com/multica-ai/multica.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** mezclas trabajo humano y agentes en un mismo flujo
+**Evita si:** quieres automatización 100% headless o un producto maduro.
+**Combina con:** `ruflo`, `chatwoot`
 
 ## `nanogpt`
 role=library · exec=cloud · setup=heavy · mcp=False · prov=—
@@ -223,9 +223,9 @@ role=library · exec=cloud · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `pip install nanogpt   (o: uv add nanogpt)`
 _Nombre PyPI puede diferir de 'nanoGPT'; verifica en pypi.org._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** quieres entender el entrenamiento de un GPT desde cero
+**Evita si:** solo consumes modelos vía API o necesitas un pipeline de chat completo ([nanochat](#-nanochat)).
+**Combina con:** `nanochat`, `llm.c`
 
 ## `notebooklm-py`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -237,9 +237,9 @@ role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/notebooklm-py/). Si necesitas el código: git clone https://github.com/teng-lin/notebooklm-py.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** automatizas el NotebookLM real y aceptas el riesgo de API no oficial
+**Evita si:** quieres todo local ([open-notebook](#-open-notebook)).
+**Combina con:** `notebooklm-mcp-cli`
 
 ## `open-generative-ai`
 role=skill · exec=hybrid · setup=heavy · mcp=False · prov=—
@@ -251,9 +251,9 @@ role=skill · exec=hybrid · setup=heavy · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/Open-Generative-AI/). Si necesitas el código: git clone https://github.com/Anil-matcha/Open-Generative-AI.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres open generative ai — open-source alternative to ai video platforms
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** quieres un hub de generación multi-modal sin atarte a un SaaS
+**Evita si:** ya tienes tu pipeline local ([ComfyUI](#-comfyui)) o necesitas control fino por nodo.
+**Combina con:** `remotion`, `marketing de agencia`
 
 ## `openmontage`
 role=skill · exec=local · setup=heavy · mcp=False · prov=—
@@ -279,9 +279,9 @@ role=skill · exec=local · setup=easy · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/playwright-cli/). Si necesitas el código: git clone https://github.com/microsoft/playwright-cli.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** tu agente vive en CLI y el contexto es un recurso caro
+**Evita si:** necesitas estado persistente entre sesiones o un servidor MCP con recursos expuestos (usa Playwright MCP).
+**Combina con:** `playwright`, `browser-use`
 
 ## `prompt-master`
 role=skill · exec=hybrid · setup=heavy · mcp=False · prov=—
@@ -293,8 +293,8 @@ role=skill · exec=hybrid · setup=heavy · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/prompt-master/). Si necesitas el código: git clone https://github.com/nidhinjs/prompt-master.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres a claude skill that writes the accurate prompts for any ai tool. zero tokens or credits wa
-**Evita si:** —
+**Elige si:** quieres dejar de re-promptear y acertar antes
+**Evita si:** ya tienes prompts afinados y estables.
 **Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
 
 ## `skills-remotion`
@@ -321,8 +321,8 @@ role=skill · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/SkillSpector/). Si necesitas el código: git clone https://github.com/NVIDIA/SkillSpector.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** —
-**Evita si:** —
+**Elige si:** instalas skills externas o curas catálogos
+**Evita si:** solo usas skills propias de confianza.
 **Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
 
 ## `stitch-sdk`
@@ -349,9 +349,9 @@ role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/stop-slop/). Si necesitas el código: git clone https://github.com/hardikpandya/stop-slop.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres stop slop
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** quieres prosa más natural y te molesta el tono IA
+**Evita si:** ya usas [humanizer](#-humanizer) (solapan) o escribes a mano.
+**Combina con:** `humanizer`
 
 ## `superpowers`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
@@ -363,9 +363,9 @@ role=skill · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/superpowers/). Si necesitas el código: git clone https://github.com/obra/superpowers.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** quieres método, no fragmentos sueltos
+**Evita si:** solo necesitas una skill aislada puntual.
+**Combina con:** `awesome-claude-code`, `agent-toolkit`
 
 ## `ui-ux-pro-max-skill`
 role=skill · exec=local · setup=medium · mcp=False · prov=—
@@ -377,6 +377,6 @@ role=skill · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/ui-ux-pro-max-skill/). Si necesitas el código: git clone https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres an ai skill that provides design intelligence for building professional ui/ux ac
-**Evita si:** —
-**Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
+**Elige si:** generas UI con IA y el resultado se ve genérico o despulido
+**Evita si:** no trabajas frontend o ya tienes un sistema de diseño impuesto.
+**Combina con:** `taste-skill`, `impeccable`, `tailwindcss`

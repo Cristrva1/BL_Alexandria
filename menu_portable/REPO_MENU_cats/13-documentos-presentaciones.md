@@ -13,9 +13,9 @@ role=directory · exec=local · setup=easy · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/markitdown/). Si necesitas el código: git clone https://github.com/microsoft/markitdown.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `ppt-master`, `revealjs`, `reveal.js`
+**Elige si:** alimentas LLMs con documentos de formatos variados
+**Evita si:** ya tienes el texto limpio o necesitas fidelidad de layout total (no es un reconstructor de PDF).
+**Combina con:** `ppt-master`, `open-notebook`, `docs → presentaciones`
 
 ## `ppt-master`
 role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
@@ -27,9 +27,9 @@ role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
 **Instalación** [~]: `pip install ppt-master   (o: uv add ppt-master)`
 _Nombre PyPI puede diferir de 'ppt-master'; verifica en pypi.org._
 
-**Elige si:** quieres ppt master — ai generates natively editable pptx from any document
-**Evita si:** —
-**Combina con:** `markitdown`, `revealjs`, `reveal.js`
+**Elige si:** quieres PPTX editable de Office rápido
+**Evita si:** prefieres slides web por código ([reveal.js](#-revealjs)) o control de diseño pixel-perfect.
+**Combina con:** `markitdown`, `docs → presentaciones`
 
 ## `reveal.js`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -41,6 +41,6 @@ role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/hakimel/reveal.js.git && cd reveal.js && (pnpm install || npm install)`
 _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 
-**Elige si:** quieres reveal.js is an open source html presentation framework. it enables anyone with
-**Evita si:** —
+**Elige si:** quieres slides web por código, versionables
+**Evita si:** necesitas PPTX editable en Office ([ppt-master](#-ppt-master)) o un editor visual de slides.
 **Combina con:** `markitdown`, `ppt-master`, `revealjs`

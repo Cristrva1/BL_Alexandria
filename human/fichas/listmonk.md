@@ -1,10 +1,10 @@
 # listmonk
 
-Generado: 2026-06-26T07:47:33.067156+00:00
+Generado: 2026-08-24T04:13:47.607813+00:00
 
 ## Decision
 
-REFERENCIA
+USAR AHORA
 
 ## Para que sirve realmente
 
@@ -28,7 +28,7 @@ necesitas nurturing avanzado o scoring de leads ([mautic](#-mautic)).
 
 ## Tipo de instalacion
 
-reference_only
+docker_local
 
 ## Stack / tecnologia detectada
 
@@ -57,4 +57,4 @@ Combinar con mautic, n8n cuando el flujo necesite mas de una pieza.
 
 ## Veredicto
 
-Veredicto: referencia. Tiene sentido si quieres email marketing simple, rápido y propio. No debe instalarse por inercia.
+Veredicto: usar ahora. Tiene sentido si quieres email marketing simple, rápido y propio. No debe instalarse por inercia.

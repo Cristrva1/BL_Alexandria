@@ -13,5 +13,6 @@ role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/lfnovo/open-notebook.git && cd open-notebook && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres an open source, privacy-focused alternative to google's notebook lm!
-**Evita si:** —
+**Elige si:** quieres NotebookLM privado y sin cuotas
+**Evita si:** prefieres el NotebookLM real automatizado ([notebooklm-py](#-notebooklm-py)).
+**Combina con:** `odysseus`, `markitdown`

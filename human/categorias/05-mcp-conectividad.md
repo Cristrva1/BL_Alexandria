@@ -1,6 +1,6 @@
 # MCP & Conectividad
 
-Generado: 2026-06-26T07:47:33.067156+00:00
+Generado: 2026-08-24T04:13:47.607813+00:00
 
 | Repo | Rol | Instalacion | Decision | Uso real |
 |---|---|---|---|---|
@@ -10,7 +10,7 @@ Generado: 2026-06-26T07:47:33.067156+00:00
 | graphify | library | deferred | defer | 🇺🇸 English \| 🇨🇳 简体中文 \| 🇯🇵 日本語 \| 🇰🇷 한국어 \| 🇩🇪 Deutsch \| 🇫🇷 Français \| 🇪🇸 Español \| 🇮🇳 <a href="docs/translatio. |
 | mcp | directory | reference_only | reference | This repository contains a list of Google's official Model Context Protocol (MCP) servers, guidance on how to deploy MCP servers to Google Cloud, and examples to get started. |
 | mcp-neo4j | directory | reference_only | reference | These MCP servers are a part of the Neo4j Labs program. They are developed and maintained by the Neo4j Field GenAI team and welcome contributions from the larger developer community. These servers are frequently updated with new and experimental features, but are not supported by the Neo4j product team. |
-| metabase | platform | reference_only | reference | The easiest way to get started with Metabase is to sign up for a free trial of Metabase Cloud. |
+| metabase | platform | docker_local | use_now | The easiest way to get started with Metabase is to sign up for a free trial of Metabase Cloud. |
 | n8n-skills | skill | reference_only | reference | Expert Claude Code skills for building flawless n8n workflows using the n8n-mcp MCP server**. |
 | notebooklm-mcp-cli | platform | reference_only | reference | Programmatic access to Google NotebookLM** — via command-line interface (CLI) or Model Context Protocol (MCP) server. |
 | OpenCut | platform | reference_only | reference | OpenCut is being rewritten from the ground up.** What's coming:. |

@@ -13,9 +13,10 @@ role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/activepieces/activepieces.git && cd activepieces && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres target="_blank"
-**Evita si:** —
-**Combina con:** `twenty-main`, `evolution-api`, `whatsapp-agentkit`
+**Elige si:** quieres reemplazar Zapier con piezas propias en TypeScript
+**Evita si:** ya dominas n8n y su ecosistema te basta.
+**Combina con:** `n8n`, `novu`
+**Alternativas (elige una):** `n8n`
 
 ## `appsmith`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
@@ -41,9 +42,9 @@ role=platform · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/browser-use/browser-use.git && cd browser-use && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/
-**Evita si:** —
-**Combina con:** `twenty-main`, `evolution-api`, `whatsapp-agentkit`
+**Elige si:** quieres navegación como humano y tolerancia a cambios de UI
+**Evita si:** necesitas scripts deterministas y baratos ([playwright](#-playwright)) o no quieres depender de un LLM por paso.
+**Combina con:** `playwright`, `gpt-researcher`
 
 ## `budibase`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
@@ -69,9 +70,9 @@ role=library · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `npm install chatwoot   (o: pnpm add chatwoot)`
 _Nombre npm puede diferir de 'chatwoot'; verifica en npmjs.com._
 
-**Elige si:** quieres ___
-**Evita si:** —
-**Combina con:** `twenty-main`, `evolution-api`, `whatsapp-agentkit`
+**Elige si:** das soporte por varios canales y necesitas handoff humano
+**Evita si:** solo necesitas enviar mensajes salientes ([evolution-api](#-evolution-api)).
+**Combina con:** `evolution-api`, `novu`
 
 ## `evolution-api`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -83,9 +84,9 @@ role=app · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/evolution-foundation/evolution-api.git && cd evolution-api && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres open-source rest api for whatsapp and multi-channel messaging — part of the evol
-**Evita si:** —
-**Combina con:** `twenty-main`, `whatsapp-agentkit`, `activepieces`
+**Elige si:** operas WhatsApp en producción con varias instancias
+**Evita si:** solo necesitas un bot de prueba o un único script ([OpenWA](#-openwa) basta).
+**Combina con:** `n8n`, `chatwoot`, `bot whatsapp`
 
 ## `huginn`
 role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -97,9 +98,9 @@ role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/huginn/). Si necesitas el código: git clone https://github.com/huginn/huginn.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres what is huginn?
-**Evita si:** —
-**Combina con:** `twenty-main`, `evolution-api`, `whatsapp-agentkit`
+**Elige si:** automatizas tareas orientadas a eventos y valoras la privacidad
+**Evita si:** quieres editor visual moderno o IA nativa ([n8n](#-n8n)).
+**Combina con:** `n8n`, `novu`
 
 ## `listmonk`
 role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -111,9 +112,9 @@ role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/listmonk/). Si necesitas el código: git clone https://github.com/knadh/listmonk.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres listmonk is a standalone, self-hosted, newsletter and mailing list manager. it i
-**Evita si:** —
-**Combina con:** `twenty-main`, `evolution-api`, `whatsapp-agentkit`
+**Elige si:** quieres email marketing simple, rápido y propio
+**Evita si:** necesitas nurturing avanzado o scoring de leads ([mautic](#-mautic)).
+**Combina con:** `mautic`, `n8n`
 
 ## `mautic`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
@@ -125,9 +126,9 @@ role=platform · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/mautic/mautic.git && cd mautic && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
-**Elige si:** quieres open source marketing automation software.
-**Evita si:** —
-**Combina con:** `twenty-main`, `evolution-api`, `whatsapp-agentkit`
+**Elige si:** necesitas automatización de marketing seria y soberana
+**Evita si:** te basta una newsletter simple ([listmonk](#-listmonk)).
+**Combina con:** `listmonk`, `marketingskills`, `marketing de agencia`
 
 ## `n8n`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
@@ -139,9 +140,10 @@ role=platform · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `git clone https://github.com/n8n-io/n8n.git && cd n8n && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres n8n - secure workflow automation for technical teams
-**Evita si:** —
-**Combina con:** `twenty-main`, `evolution-api`, `whatsapp-agentkit`
+**Elige si:** quieres el motor central de automatización con máximo catálogo
+**Evita si:** buscas algo minimalista o sin self-host.
+**Combina con:** `n8n-mcp`, `n8n-skills`, `evolution-api`
+**Alternativas (elige una):** `activepieces`, `huginn`
 
 ## `n8n-io`
 role=platform · exec=local · setup=medium · mcp=False · prov=—
@@ -154,8 +156,8 @@ role=platform · exec=local · setup=medium · mcp=False · prov=—
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
 **Elige si:** quieres n8n - secure workflow automation for technical teams
-**Evita si:** —
-**Combina con:** `twenty-main`, `evolution-api`, `whatsapp-agentkit`
+**Evita si:** ya usas la ficha [n8n](#-n8n) (es el mismo proyecto).
+**Combina con:** `n8n`
 
 ## `n8n-mcp`
 role=platform · exec=local · setup=medium · mcp=True · prov=—
@@ -167,9 +169,9 @@ role=platform · exec=local · setup=medium · mcp=True · prov=—
 **Instalación** [~]: `git clone https://github.com/czlonkowski/n8n-mcp.git && cd n8n-mcp && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `twenty-main`, `evolution-api`, `whatsapp-agentkit`
+**Elige si:** generas flujos n8n con IA y quieres menos alucinaciones de parámetros
+**Evita si:** no usas n8n o construyes los flujos a mano.
+**Combina con:** `n8n`, `n8n-skills`, `bot whatsapp`
 
 ## `novu`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=—
@@ -181,9 +183,9 @@ role=library · exec=hybrid · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `npm install novu   (o: pnpm add novu)`
 _Nombre npm puede diferir de 'novu'; verifica en npmjs.com._
 
-**Elige si:** quieres >
-**Evita si:** —
-**Combina con:** `twenty-main`, `evolution-api`, `whatsapp-agentkit`
+**Elige si:** envías notificaciones por varios canales y quieres un único backend
+**Evita si:** solo necesitas email ([listmonk](#-listmonk)).
+**Combina con:** `chatwoot`, `activepieces`
 
 ## `openevolve`
 role=library · exec=local · setup=medium · mcp=False · prov=—
@@ -195,23 +197,37 @@ role=library · exec=local · setup=medium · mcp=False · prov=—
 **Instalación** [~]: `pip install openevolve   (o: uv add openevolve)`
 _Nombre PyPI puede diferir de 'openevolve'; verifica en pypi.org._
 
-**Elige si:** —
-**Evita si:** —
-**Combina con:** `twenty-main`, `evolution-api`, `whatsapp-agentkit`
+**Elige si:** optimizas problemas algorítmicos donde cabe explorar muchas variantes
+**Evita si:** haces tareas de texto comunes o buscas respuesta inmediata.
+**Combina con:** `llm-council`
+
+## `openwa`
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+
+**Qué es:** OpenWA** is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls.
+**Stack:** javascript/typescript, python, typescript, javascript, react, docker, postgres
+**Repo:** https://github.com/rmyndharis/OpenWA.git
+
+**Instalación** [~]: `git clone https://github.com/rmyndharis/OpenWA.git && cd OpenWA && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** desarrollas scripts o bots individuales y quieres arrancar rápido
+**Evita si:** necesitas infra multi-instancia o alta disponibilidad ([evolution-api](#-evolution-api)).
+**Combina con:** `n8n`, `evolution-api`
 
 ## `twenty-main`
 role=runtime · exec=local · setup=medium · mcp=False · prov=—
 
 **Qué es:** Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack.
 **Stack:** javascript/typescript, typescript, javascript, react, docker, postgres
-**Repo:** —
+**Repo:** https://github.com/twentyhq/twenty
 
-**Instalación** [~]: `git clone <twenty-main> && cd twenty-main && docker compose up -d`
+**Instalación** [~]: `git clone https://github.com/twentyhq/twenty && cd twenty && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
-**Elige si:** quieres why twenty
-**Evita si:** —
-**Combina con:** `evolution-api`, `whatsapp-agentkit`, `activepieces`
+**Elige si:** quieres un CRM que se adapte 1:1 a tu negocio y vivir en self-host
+**Evita si:** buscas algo plug-and-play gestionado o no quieres operar PostgreSQL y Docker.
+**Combina con:** `evolution-api`, `n8n`
 
 ## `whatsapp-agentkit`
 role=directory · exec=cloud · setup=medium · mcp=False · prov=—
@@ -223,6 +239,6 @@ role=directory · exec=cloud · setup=medium · mcp=False · prov=—
 **Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/whatsapp-agentkit/). Si necesitas el código: git clone https://github.com/Hainrixz/whatsapp-agentkit.git`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres agentkit — whatsapp ai agent builder
-**Evita si:** —
-**Combina con:** `twenty-main`, `evolution-api`, `activepieces`
+**Elige si:** quieres arrancar sin partir de cero y te vale con lo que Claude Code genere
+**Evita si:** necesitas control fino del stack o ya tienes el bot hecho.
+**Combina con:** `evolution-api`, `n8n-mcp`

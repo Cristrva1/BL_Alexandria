@@ -1,6 +1,6 @@
 # Diseño, UI & Frontend
 
-Generado: 2026-06-26T07:47:33.067156+00:00
+Generado: 2026-08-24T04:13:47.607813+00:00
 
 | Repo | Rol | Instalacion | Decision | Uso real |
 |---|---|---|---|---|
@@ -21,7 +21,7 @@ Generado: 2026-06-26T07:47:33.067156+00:00
 | pdfcraft | platform | reference_only | reference | Merge, split, compress, convert, and edit PDF files online without uploading to servers. |
 | penpot | platform | reference_only | reference | Penpot is the open-source design platform for teams that build digital products at scale. |
 | plasmic | library | reference_only | reference | The open-source visual builder for your codebase. Build beautiful apps and websites incredibly fast. Drag and drop your own components, integrate with your codebase. Break through the low-code ceiling. |
-| posthog | skill | reference_only | reference | PostHog is an all-in-one, open source platform for building successful products. |
+| posthog | skill | docker_local | use_now | PostHog is an all-in-one, open source platform for building successful products. |
 | react-three-fiber | library | reference_only | reference | react-three-fiber is a React renderer for threejs. |
 | Real-ESRGAN | library | deferred | defer | 👀**Demos** **\|** 🚩**Updates** **\|** ⚡**Usage** **\|** 🏰**Model Zoo** **\|** 🔧Install **\|** 💻Train **\|** ❓FAQ **\|** 🎨Contribution. |
 | remotion | runtime | reference_only | reference | Remotion is a framework for **creating videos programmatically using React.**. |
@@ -32,6 +32,6 @@ Generado: 2026-06-26T07:47:33.067156+00:00
 | tailwindcss | platform | reference_only | reference | A utility-first CSS framework for rapidly building custom user interfaces. |
 | taste-skill | skill | reference_only | reference | Portable **Agent Skills** that upgrade AI-built interfaces: stronger layout, typography, motion, and spacing instead of boilerplate-looking UIs. This repo also includes **image-generation skills** for reference boards (web, mobile, brand kits). Pair them with **ChatGPT Images** or similar generators, then hand the frames to Codex, Cursor, or Claude Code for implementation. |
 | three.js | library | deferred | defer | JavaScript 3D library. |
-| ui | platform | reference_only | reference | A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code. **Use this to build your own component library**. |
+| ui | platform | reference_only | reference | colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. |
 | vllm | library | reference_only | reference | Easy, fast, and cheap LLM serving for everyone. |
 | Youtube2Webpage | library | reference_only | reference | Youtube-to-Webpage is a Perl script to create a webpage from a Youtube video with a transcript generated from the video's closed captions paired with screenshots of the video. |
