@@ -431,4 +431,14 @@ Si el brief **nombra Codex**, `BUILD_TOOL_REPOS["codex"]` empuja catálogos cros
 
 ---
 
-*Análisis de solo lectura. Único archivo nuevo: este mapa. Tests: 11/11. Doctor: OK. No se ejecutó `discover` / `guide build` / `enrich` / `recommend` sobre el árbol vivo.*
+## 15. Estado tras Plan A
+
+Fecha: 2026-08-24. Rama de trabajo: `fix/coherencia-post-analisis`. Tests: 29 passed (`uv run pytest -v`). Doctor: OK.
+
+Cerrado: `install_mode`/`decision` viven solo en `src/repo_intelligence/core/install_mode.py` (listas en `config/repo_policy.yaml`). n8n es `docker_local` / USAR AHORA en scan, recommend y `human/fichas/n8n.md`. `--tool auto` sin frase de herramienta queda `auto`, no Codex. `enrich --id` filtra con `resolve_enrich_targets`. Compact y detalle tienen 185 ids (alias `ui-shadcn` fusionado en `ui`). `n8n.alt` = activepieces, huginn. `score`/`conflicts`/`decide`/`report daily` leen índices reales.
+
+Fuera de alcance (sigue vigente): `recommend` no lee `INDICE_IA.json` ni `recipes[]`; `--changed-only` no es incremental; `choose_if` auto; `data/packed/` vacío; deps no usadas; `llm/` y crawl4ai sin cablear al CLI; `check_guias.py` sigue en 156 fichas editoriales.
+
+---
+
+*Plan A ejecutado. Tests: 29/29. Doctor: OK. `guide build` + `menu export` regeneraron `human/*`, `Catalogo.md` y `menu_portable/`. Cuerpo editorial de `Guia.md` intacto (solo STATUS + apéndice).*

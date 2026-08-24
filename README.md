@@ -194,16 +194,18 @@ Ver también AGENTS.md → sección Mantenimiento para el flujo completo y recom
 
 `pull --safe` usa red porque ejecuta Git contra los remotos. Los demas comandos son locales.
 
+`scan --changed-only` y `guide build --changed-only` aceptan el flag por compatibilidad; V1 regenera todo. `score`, `conflicts`, `decide` y `report daily` leen los indices reales: `conflicts` sale de pares `alt`, `score` resume el scan, `decide` usa `analysis/decisions.py`. El modo de instalacion de cada repo (`global` / `local_project` / `docker_local` / `reference_only` / `deferred`) vive en un solo sitio: `src/repo_intelligence/core/install_mode.py`, alimentado por `config/repo_policy.yaml`.
+
 ## Estado actual frente a los 2 objetivos
 
 | Objetivo | Estado | Notas |
 |---|---|---|
 | Usuario describe proyecto y herramienta de construccion | Cubierto | `recommend --project ...` o `recommend --project-file proyecto.md` genera una super guia practica por proyecto. |
 | Elegir repos por funcion real | Cubierto | Usa `REPOS.scan`, `REPOS.detail`, tags, recetas, boosts por herramienta e intencion detectada. |
-| Decidir global/local/Docker/referencia/diferido | Cubierto inicial | Cada recomendacion trae `install_mode`. |
+| Decidir global/local/Docker/referencia/diferido | Cubierto | Una sola `install_mode` (recommend, scan y fichas humanas) leida de `config/repo_policy.yaml`. |
 | Explicar orden de instalacion | Cubierto | La super guia separa global/local/Docker/referencia/diferido y da el orden operativo. |
 | Generar guia practica por repo finalista | Cubierto inicial | Incluye por que, como funciona, pasos, cautelas e instrucciones para humano/IA; algunos comandos exactos aun dependen del README finalista. |
-| Inferir herramienta objetivo desde el texto | Cubierto inicial | Por ejemplo, una consulta sobre Claude Code prioriza repos de Claude Code sin obligarte a escribir `--tool claude-code`. |
+| Inferir herramienta objetivo desde el texto | Cubierto | Si el brief nombra Claude Code/Codex/etc. gana el texto. Si `--tool auto` y el brief no nombra herramienta, queda `auto` (no se asume Codex). |
 | Instalar automaticamente repos elegidos | No automatico | Por seguridad, el sistema recomienda; la instalacion se ejecuta despues conscientemente. |
 | Actualizar biblioteca local | Cubierto | `pull --safe`, `discover`, `snapshot`. |
 | Regenerar catalogos/guias/fichas/playbooks | Cubierto | `guide build` genera salidas humanas e indices IA. |
