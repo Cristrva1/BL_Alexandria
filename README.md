@@ -115,7 +115,7 @@ Comando principal:
 uv run repo-intelligence recommend --project "quiero hacer un bot de WhatsApp con IA para responder clientes, guardar leads y escalar a humano. Lo voy a construir con Codex." --max-repos 7
 ```
 
-`--tool` es opcional y por defecto vale `auto`. El sistema intenta tomar la herramienta desde la redaccion del proyecto. Si quieres dar una pista manual, estas son las opciones aceptadas:
+`--tool` es opcional y por defecto vale `auto`. El sistema intenta tomar la herramienta desde la redaccion del proyecto. Si pones `auto` y el brief no nombra herramienta, no se asume Codex y no hay boost de catalogo de skills. Si quieres dar una pista manual, estas son las opciones aceptadas:
 
 ```txt
 auto

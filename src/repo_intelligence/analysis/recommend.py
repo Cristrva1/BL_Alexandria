@@ -734,7 +734,7 @@ def _detect_effective_tool(project: str, requested_tool: str) -> str:
     if tool == "opencode":
         return "open-code"
     if tool == "auto":
-        return "codex"
+        return "auto"
     return tool
 
 

@@ -103,6 +103,44 @@ def test_effective_max_repos_scales_for_complex_projects() -> None:
     assert _effective_max_repos(5, caps) >= 6
 
 
+def test_auto_without_tool_phrase_does_not_assume_codex(tmp_path: Path) -> None:
+    ai_index = tmp_path / "ai_index"
+    ai_index.mkdir()
+    write_json(
+        ai_index / "REPOS.scan.json",
+        {
+            "repos": [
+                _repo("evolution-api", role="app", tags=["whatsapp", "automation"]),
+                _repo("n8n", role="platform", tags=["automation"]),
+                _repo("awesome-agent-skills", role="directory", tags=["skills"]),
+            ]
+        },
+    )
+    write_json(
+        ai_index / "REPOS.detail.json",
+        {
+            "repos": [
+                {"id": "evolution-api", "desc": "api de whatsapp"},
+                {"id": "n8n", "desc": "automatizacion de flujos"},
+                {"id": "awesome-agent-skills", "desc": "catalogo de skills"},
+            ]
+        },
+    )
+    write_json(ai_index / "WINNERS.json", {})
+
+    result = recommend(
+        tmp_path,
+        "bot de WhatsApp con IA para responder clientes y guardar leads",
+        max_repos=5,
+        build_tool="auto",
+    )
+    ids = [repo["id"] for repo in result["recommended_repos"]]
+    assert result["requested_tool"] == "auto"
+    assert result["build_tool"] == "auto"
+    assert "awesome-agent-skills" not in ids
+    assert "evolution-api" in ids
+
+
 def test_superguide_uses_public_folder_names_not_absolute_paths(tmp_path: Path) -> None:
     ai_index = tmp_path / "ai_index"
     ai_index.mkdir()
