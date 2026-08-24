@@ -9,8 +9,15 @@ import typer
 from rich.console import Console
 from rich.table import Table
 
+from repo_intelligence.analysis.decisions import INITIAL_DECISIONS
 from repo_intelligence.analysis.recommend import recommend
-from repo_intelligence.core.io import read_yaml, write_json, write_yaml
+from repo_intelligence.analysis.reports import (
+    build_conflicts,
+    build_daily_report,
+    build_score_report,
+    render_decision,
+)
+from repo_intelligence.core.io import read_json, read_yaml, write_json, write_yaml
 from repo_intelligence.core.paths import ProjectPaths
 from repo_intelligence.git.discover import discover_repos
 from repo_intelligence.git.snapshots import write_snapshot
@@ -93,7 +100,11 @@ def pull(safe: Annotated[bool, typer.Option("--safe", help="Skip dirty repos and
 
 
 @app.command()
-def scan(changed_only: Annotated[bool, typer.Option("--changed-only")] = False) -> None:
+def scan(
+    changed_only: Annotated[
+        bool, typer.Option("--changed-only", help="Accepted for compatibility; V1 always rebuilds.")
+    ] = False,
+) -> None:
     """Rebuild the compact AI scan index."""
     paths = ProjectPaths.load()
     registry = read_yaml(paths.registry_file, {"repos": []})
@@ -110,51 +121,38 @@ def scan(changed_only: Annotated[bool, typer.Option("--changed-only")] = False) 
 
 @app.command()
 def score() -> None:
-    """Create an initial score report placeholder from deterministic rules."""
+    """Write a scan summary using scoring_rules.yaml weights as declared metadata."""
     paths = ProjectPaths.load()
+    scan_data = read_json(paths.scan_index, {"repos": []})
+    rules = read_yaml(paths.project_root / "config" / "scoring_rules.yaml", {})
+    payload = build_score_report(scan_data, rules)
+    payload["generated_at"] = _now()
     output = paths.project_root / "data" / "reports" / "score.json"
-    write_json(output, {"generated_at": _now(), "status": "v1_placeholder", "rule_file": "config/scoring_rules.yaml"})
+    write_json(output, payload)
     console.print(f"Wrote {output}")
 
 
 @app.command()
 def conflicts() -> None:
-    """Write initial known conflicts."""
+    """Write functional-overlap conflicts derived from compact alt pairs."""
     paths = ProjectPaths.load()
+    compact = read_json(paths.project_root / "INDICE_IA.json", {})
+    payload = build_conflicts(compact.get("repos") or [])
+    payload["generated_at"] = _now()
     output = paths.project_root / "ai_index" / "CONFLICTS.json"
-    write_json(
-        output,
-        {
-            "generated_at": _now(),
-            "conflicts": [
-                {
-                    "repo_a": "n8n",
-                    "repo_b": "activepieces",
-                    "type": "functional_overlap",
-                    "severity": "medium",
-                    "reason": "Ambos son plataformas visuales de automatizacion.",
-                    "recommendation": "Elegir n8n como estandar y dejar Activepieces como alternativa.",
-                }
-            ],
-        },
-    )
+    write_json(output, payload)
     console.print(f"Wrote {output}")
 
 
 @app.command()
 def decide(project_type: Annotated[str, typer.Option("--project-type")] = "repo_library_management") -> None:
     """Write a compact decision file for a project type."""
+    if project_type not in INITIAL_DECISIONS:
+        raise typer.BadParameter(f"Tipo de proyecto desconocido: {project_type}")
     paths = ProjectPaths.load()
     output = paths.project_root / "data" / "decisions" / f"{project_type}.md"
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(
-        "# Decision\n\n"
-        f"Project type: `{project_type}`\n\n"
-        "Winner: `scripts_propios`\n\n"
-        "Support tools: `repomix`, `gitnexus`, `markitdown`, `crawl4ai`.\n\n"
-        "Avoid now: `graphrag`, `crewai`, `dify`, `flowise`.\n",
-        encoding="utf-8",
-    )
+    output.write_text(render_decision(project_type, INITIAL_DECISIONS), encoding="utf-8")
     console.print(f"Wrote {output}")
 
 
@@ -183,7 +181,11 @@ def recommend_project(
 
 
 @guide_app.command("build")
-def guide_build(changed_only: Annotated[bool, typer.Option("--changed-only")] = False) -> None:
+def guide_build(
+    changed_only: Annotated[
+        bool, typer.Option("--changed-only", help="Accepted for compatibility; V1 always rebuilds.")
+    ] = False,
+) -> None:
     """Rebuild human guides, cards, comparisons, playbooks, and detail index."""
     paths = ProjectPaths.load()
     stats = render_all(paths.project_root)
@@ -236,11 +238,27 @@ def context_build(
 
 @report_app.command("daily")
 def report_daily() -> None:
-    """Create a tiny daily report."""
+    """Create a daily report from real index counts."""
     paths = ProjectPaths.load()
+    compact = read_json(paths.project_root / "INDICE_IA.json", {})
+    scan_data = read_json(paths.scan_index, {"repos": []})
+    detalle = read_json(paths.project_root / "INDICE_IA.detalle.json", {})
+    drafts_dir = paths.project_root / "data" / "drafts"
+    drafts = len(list(drafts_dir.glob("*.json"))) if drafts_dir.exists() else 0
+    packed_empty = (not paths.packed_dir.exists()) or (not any(paths.packed_dir.iterdir()))
+    det_repos = detalle.get("repos") or {}
+    detalle_n = len(det_repos) if isinstance(det_repos, dict) else len(det_repos)
+    text = build_daily_report(
+        generated_at=_now(),
+        compact=len(compact.get("repos") or []),
+        scan=len(scan_data.get("repos") or []),
+        detalle=detalle_n,
+        drafts=drafts,
+        packed_empty=packed_empty,
+    )
     output = paths.project_root / "data" / "reports" / "daily.md"
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(f"# Daily report\n\nGenerated: {_now()}\n", encoding="utf-8")
+    output.write_text(text, encoding="utf-8")
     console.print(f"Wrote {output}")
 
 
