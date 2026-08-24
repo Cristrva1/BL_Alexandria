@@ -82,6 +82,20 @@ def _load_existing_indices(project_root: Path) -> tuple[dict[str, Any], dict[str
     return compact, detalle
 
 
+def resolve_enrich_targets(
+    registry_ids: list[str],
+    curated_ids: set[str],
+    only_new: bool,
+    ids: list[str] | None,
+) -> list[str]:
+    if ids:
+        wanted = [i for i in ids if i in registry_ids]
+        return wanted
+    if only_new:
+        return [i for i in registry_ids if i not in curated_ids]
+    return list(registry_ids)
+
+
 def get_new_repo_ids(project_root: Path | str) -> list[str]:
     """Return ids present in registry/scan but missing from curated INDICE."""
     root = Path(project_root)
@@ -89,7 +103,8 @@ def get_new_repo_ids(project_root: Path | str) -> list[str]:
     compact = read_json(root / "INDICE_IA.json", {})
     curated = {r["id"] for r in compact.get("repos", [])}
     all_ids = [r.get("id") or _norm(r.get("name", "")) for r in registry.get("repos", [])]
-    return [iid for iid in all_ids if iid and iid not in curated]
+    all_ids = [iid for iid in all_ids if iid]
+    return resolve_enrich_targets(all_ids, curated, only_new=True, ids=None)
 
 
 def ensure_analyzed(paths: ProjectPaths, repo_id: str, repo_path: Path, force: bool = False) -> dict[str, Any]:
@@ -441,15 +456,16 @@ def run_enrich_for_new(
     only_new: bool = True,
     auto_merge: bool = False,
     force_analyze: bool = False,
+    ids: list[str] | None = None,
 ) -> dict[str, Any]:
     """High level entry: analyze + draft + optional merge for new repos."""
     paths = ProjectPaths.load(project_root)
     registry = read_yaml(paths.registry_file, {"repos": []})
     records = {r["id"]: r for r in registry.get("repos", [])}
 
-    targets = get_new_repo_ids(project_root) if only_new else list(records.keys())
-
     compact_idx, det_idx = _load_existing_indices(project_root)
+    curated_ids = {r["id"] for r in compact_idx.get("repos", [])}
+    targets = resolve_enrich_targets(list(records.keys()), curated_ids, only_new, ids)
 
     results = {"analyzed": [], "drafted": [], "merged": []}
 

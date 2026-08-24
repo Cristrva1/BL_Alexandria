@@ -299,6 +299,7 @@ def enrich(
         only_new=new,
         auto_merge=auto_merge,
         force_analyze=force,
+        ids=ids,
     )
     console.print(f"Analyzed: {len(res['analyzed'])}  Drafted: {len(res['drafted'])}  Merged: {len(res.get('merged', []))}")
     if res["drafted"]:
