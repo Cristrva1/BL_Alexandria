@@ -1,0 +1,29 @@
+{
+  "id": "hyperframes",
+  "name": "HyperFrames",
+  "role": "runtime",
+  "exec": "local",
+  "setup": "easy",
+  "mcp": true,
+  "prov": ["mcp"],
+  "tags": ["video", "agents", "skills", "typescript"],
+  "one": "Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes.",
+  "desc": "HyperFrames define cada video como un archivo HTML con atributos de tiempo y pistas, animado con GSAP, CSS, Lottie, Three.js u otras librerías, y lo renderiza a MP4. Incluye CLI para crear, previsualizar y renderizar, un catálogo de unos 450 bloques (transiciones, subtítulos, gráficos, mapas) y skills para que Claude Code, Codex o Cursor produzcan videos a partir de una petición.",
+  "why": "Usa HTML plano en vez de React y licencia Apache 2.0 sin cuotas por render, a diferencia de Remotion. El render es determinista (misma entrada, mismos fotogramas), lo que encaja en CI y pipelines automáticos.",
+  "how": "El motor abre la composición en Chrome headless con Puppeteer, avanza fotograma a fotograma mediante adaptadores de animación con búsqueda temporal y codifica con FFmpeg mezclando el audio. Renderiza en local, en Docker o distribuido en AWS Lambda.",
+  "install": "`npx hyperframes init my-video`, luego `npx hyperframes preview` y `npx hyperframes render` (Node.js 22+ y FFmpeg). Para agentes: `npx hyperframes skills update`, o en Claude Code `claude plugin marketplace add heygen-com/hyperframes` y `claude plugin install hyperframes@hyperframes`.",
+  "cases": [
+    "Videos de lanzamiento de producto generados por un agente",
+    "Explicar un PR con diffs animados, narración y subtítulos",
+    "Animaciones de datos y mapas para redes sociales"
+  ],
+  "stack": "TypeScript, Node.js, Puppeteer, FFmpeg, GSAP",
+  "models": "No llama a un LLM por sí mismo: lo opera tu agente de código (Claude Code, Codex, Cursor, Gemini CLI). El plan Pro del Studio añade modelos de video, voz y música de HeyGen.",
+  "choose_if": "quieres que un agente de código genere videos con motion graphics a partir de HTML, con licencia permisiva",
+  "avoid_if": "tu equipo ya trabaja con componentes React y el ecosistema de `remotion`, o prefieres editar en una línea de tiempo visual",
+  "limits": "Necesita Node.js 22+ y FFmpeg, el Studio todavía está evolucionando y los modelos generativos de HeyGen del plan Pro son de pago.",
+  "combines_with": ["claude-code", "gsap", "kokoro", "whisperx"],
+  "alternatives": ["remotion"],
+  "pick": true,
+  "notes": "El texto previo lo describía como una librería npm pequeña de animación frame a frame; en realidad es un framework completo de HeyGen (CLI, motor, catálogo, Studio, skills y render en AWS Lambda). HeyGen ofrece además un conector MCP alojado y el Studio expone herramientas WebMCP."
+}

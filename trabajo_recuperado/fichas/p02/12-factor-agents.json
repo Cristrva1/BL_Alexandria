@@ -1,0 +1,29 @@
+{
+  "id": "12-factor-agents",
+  "name": "12-Factor Agents",
+  "role": "directory",
+  "exec": "hybrid",
+  "setup": "easy",
+  "mcp": false,
+  "prov": [],
+  "tags": ["agents", "learning", "prompts", "typescript"],
+  "one": "Guía de 12 principios de ingeniería para construir agentes con LLM fiables en producción, inspirada en las 12 Factor Apps.",
+  "desc": "Ensayo de Dex Horthy (HumanLayer) que resume lo aprendido construyendo agentes para clientes reales: los productos que funcionan son sobre todo software determinista con pasos de LLM bien colocados. Cada factor (controlar tus prompts, tu ventana de contexto y tu flujo de control, pausar y reanudar, contactar a humanos con tool calls, agentes pequeños) tiene su capítulo con diagramas y ejemplos.",
+  "why": "Es agnóstico al framework y se ha vuelto una referencia habitual sobre context engineering y diseño de agentes. Ayuda a decidir qué partes conviene programar a mano en vez de dejarlas al bucle del agente.",
+  "how": "Es un README con un capítulo en Markdown por factor, diagramas y fragmentos de código, sobre todo en TypeScript; también enlaza la charla del AI Engineer World's Fair.",
+  "install": "No se instala: abre el repo y lee los factores en orden (empieza por el factor 3 si te interesa el context engineering).",
+  "cases": [
+    "Revisar la arquitectura de un agente antes de llevarlo a producción",
+    "Decidir cuándo usar un framework y cuándo código propio",
+    "Diseñar pasos con aprobación humana mediante tool calls"
+  ],
+  "stack": "Markdown, TypeScript (ejemplos)",
+  "models": "No usa LLM: es una guía; los principios aplican a cualquier proveedor.",
+  "choose_if": "vas a construir un agente para clientes reales y quieres principios de diseño antes de elegir framework",
+  "avoid_if": "buscas tutoriales con código ejecutable paso a paso; mira `agents-towards-production` o `ai-agents-for-beginners`",
+  "limits": "Sin cambios desde septiembre de 2025; el contenido es CC BY-SA 4.0 y el código Apache 2.0.",
+  "combines_with": ["context-engineering", "langgraph", "vercel-ai"],
+  "alternatives": [],
+  "pick": true,
+  "notes": "Repo nuevo. GitHub marca la licencia como NOASSERTION porque mezcla Apache 2.0 (código) y CC BY-SA 4.0 (texto)."
+}

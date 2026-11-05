@@ -1,0 +1,29 @@
+{
+  "id": "marketingskills",
+  "name": "Marketing Skills",
+  "role": "skill",
+  "exec": "hybrid",
+  "setup": "easy",
+  "mcp": false,
+  "prov": [],
+  "tags": ["skills", "analytics", "email", "search"],
+  "one": "Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros.",
+  "desc": "Skills de Corey Haines para marketers técnicos y founders que trabajan con agentes de código: conversión, copywriting, SEO y SEO para IA, anuncios, emails, analítica y atribución, pricing, lanzamientos, retención y ventas. La skill product-marketing guarda el contexto de tu producto y las demás la consultan antes de actuar.",
+  "why": "Las skills se referencian entre sí y comparten un único documento de contexto, así que el agente aplica marcos coherentes (CRO, copy, A/B testing) en lugar de consejos sueltos. Es MIT y declara aparte las integraciones de partners.",
+  "how": "Cada skill es una carpeta con su SKILL.md y material de referencia; el agente la carga cuando detecta una tarea de marketing. Una guía en `tools/` ayuda a conectar cuentas de marketing con credenciales de solo lectura.",
+  "install": "`npx skills add coreyhaines31/marketingskills` (o solo algunas con `--skill cro copywriting`); en Claude Code también `/plugin marketplace add coreyhaines31/marketingskills` y `/plugin install marketing-skills`.",
+  "cases": [
+    "Auditar y reescribir el copy de una landing page",
+    "Diseñar un test A/B o una secuencia de emails",
+    "Planificar un lanzamiento o una estrategia de pricing"
+  ],
+  "stack": "Markdown, SKILL.md, JavaScript (scripts del repo)",
+  "models": "No llama a un LLM: las skills las ejecuta tu agente (Claude Code, Codex, Cursor, Windsurf u otro compatible con Agent Skills).",
+  "choose_if": "eres founder o marketer técnico y quieres que tu agente de código haga trabajo de growth con marcos probados",
+  "avoid_if": "necesitas una herramienta que envíe campañas o mida resultados; mira `mautic`, `listmonk` o `posthog`",
+  "limits": "Son guías y marcos de trabajo: el agente no lanza campañas ni lee tus cuentas salvo que conectes herramientas aparte.",
+  "combines_with": ["agency-agents", "geo-seo-claude", "mautic", "posthog"],
+  "alternatives": [],
+  "pick": true,
+  "notes": "El `combines_with` anterior incluía 'marketing de agencia', que no es un id; corregido."
+}

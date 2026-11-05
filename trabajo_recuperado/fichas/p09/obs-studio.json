@@ -1,0 +1,29 @@
+{
+  "id": "obs-studio",
+  "name": "OBS Studio",
+  "role": "app",
+  "exec": "local",
+  "setup": "easy",
+  "mcp": false,
+  "prov": [],
+  "tags": ["video", "audio", "ui", "cpp"],
+  "one": "App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real.",
+  "desc": "OBS Studio captura, compone, codifica, graba y transmite video en Windows, macOS y Linux. Combinas en escenas la pantalla, ventanas, webcam, navegador y archivos multimedia, mezclas el audio con filtros y emites a YouTube, Twitch u otro servicio RTMP, o grabas a disco.",
+  "why": "Es el estándar libre para streaming y grabación de pantalla, con codificación por hardware (NVENC, AMF, QuickSync, Apple VT), cámara virtual, plugins y control remoto por WebSocket incluido.",
+  "how": "Su núcleo en C/C++ (libobs) compone en GPU las fuentes de cada escena y codifica con x264, FFmpeg o encoders de hardware. Se automatiza con scripts Lua o Python y con el protocolo obs-websocket.",
+  "install": "Instalador oficial en obsproject.com; también `brew install --cask obs` (macOS), `winget install OBSProject.OBSStudio` (Windows) o `flatpak install flathub com.obsproject.Studio` (Linux).",
+  "cases": [
+    "Grabar tutoriales y demos de producto con la webcam superpuesta",
+    "Transmitir en directo a YouTube o Twitch con varias escenas",
+    "Grabar clases o reuniones para transcribirlas después"
+  ],
+  "stack": "C, C++, Qt, FFmpeg",
+  "models": "No usa LLM.",
+  "choose_if": "necesitas grabar pantalla o transmitir en directo combinando varias fuentes en escenas",
+  "avoid_if": "lo que necesitas es montar o recortar el video ya grabado; usa `opencut` o `lossless-cut`",
+  "limits": "No es un editor: graba y emite, pero el montaje posterior requiere otra herramienta.",
+  "combines_with": ["lossless-cut", "opencut", "faster-whisper"],
+  "alternatives": [],
+  "pick": false,
+  "notes": ""
+}

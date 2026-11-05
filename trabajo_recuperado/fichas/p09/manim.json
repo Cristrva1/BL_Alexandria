@@ -1,0 +1,29 @@
+{
+  "id": "manim",
+  "name": "Manim (ManimGL)",
+  "role": "library",
+  "exec": "local",
+  "setup": "medium",
+  "mcp": false,
+  "prov": [],
+  "tags": ["video", "dataviz", "learning", "python"],
+  "one": "Motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL.",
+  "desc": "Manim permite describir en código Python escenas con fórmulas LaTeX, gráficas, geometría y transformaciones animadas, y exportarlas a video. Este repo es ManimGL, la versión original que Grant Sanderson usa en 3Blue1Brown; la edición comunitaria (ManimCommunity/manim) es un fork más estable y mejor documentado.",
+  "why": "Da una precisión difícil de lograr con un editor: cada objeto y transición se define por código y se puede versionar. Es la herramienta detrás de los videos de 3Blue1Brown y de muchos canales educativos.",
+  "how": "Cada escena es una clase Python con objetos matemáticos (Mobjects) y animaciones encadenadas; ManimGL las dibuja con OpenGL en una ventana interactiva y escribe el video con FFmpeg.",
+  "install": "`pip install manimgl` (Python 3.10+, con FFmpeg, OpenGL y, si quieres fórmulas, LaTeX; en Linux también Pango). Prueba con `manimgl example_scenes.py OpeningManimExample`.",
+  "cases": [
+    "Animar demostraciones y fórmulas para clases o YouTube",
+    "Visualizar algoritmos o conceptos de machine learning",
+    "Generar videos explicativos a partir de código escrito por un LLM"
+  ],
+  "stack": "Python, OpenGL, FFmpeg, LaTeX",
+  "models": "No usa LLM.",
+  "choose_if": "quieres animaciones matemáticas o técnicas precisas definidas en código Python",
+  "avoid_if": "buscas estabilidad y documentación para empezar (usa la edición comunitaria ManimCommunity/manim) o motion graphics de marketing; mira `remotion` o `hyperframes`",
+  "limits": "La API cambia entre versiones y no es compatible con la edición comunitaria, así que el código y los tutoriales de una no sirven para la otra.",
+  "combines_with": ["kokoro", "moviepy", "ffmpeg"],
+  "alternatives": [],
+  "pick": false,
+  "notes": "Este repo es ManimGL (paquete `manimgl`); la edición comunitaria ManimCommunity/manim (paquete `manim`) suele ser la recomendada para empezar y no está en la biblioteca."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "agents-towards-production",
+  "name": "Agents Towards Production",
+  "role": "directory",
+  "exec": "cloud",
+  "setup": "medium",
+  "mcp": true,
+  "prov": ["openai", "local"],
+  "tags": ["agents", "learning", "notebooks", "python"],
+  "one": "Colección de 28 tutoriales con código para llevar agentes de IA a producción: memoria, despliegue, seguridad, trazas y evaluación.",
+  "desc": "Playbook de Nir Diamant (DiamantAI) con un tutorial por carpeta, en notebooks o scripts listos para ejecutar, sobre cada pieza del stack de un agente: tool calling seguro, datos web, RAG, memoria (Redis, Mem0, Cognee), Docker, FastAPI, GPU, MCP, A2A, LangGraph, seguridad, fine-tuning, trazas y evaluación. Muchos tutoriales los aportan empresas patrocinadoras.",
+  "why": "Cubre lo que suele faltar después de la demo (estado, memoria, despliegue, guardrails, evaluación) con código que puedes ejecutar y adaptar. Cada tutorial es independiente, así que vas directo a la pieza que necesitas.",
+  "how": "Cada carpeta de `tutorials/` trae su README, su `requirements.txt` y un notebook o una app; la mayoría usa Python con LangChain o LangGraph y la API del proveedor o servicio que explica.",
+  "install": "`git clone https://github.com/NirDiamant/agents-towards-production` y, dentro del tutorial elegido, `pip install -r requirements.txt` y `jupyter notebook`; cada uno indica las API keys que necesita.",
+  "cases": [
+    "Añadir memoria persistente a un agente con Redis o Mem0",
+    "Desplegar un agente como API con FastAPI y Docker",
+    "Probar ataques de prompt injection y sus defensas"
+  ],
+  "stack": "Python, Jupyter, LangGraph, FastAPI, Docker",
+  "models": "Depende del tutorial: muchos usan la API de OpenAI y servicios de los patrocinadores; uno enseña a usar modelos locales con Ollama.",
+  "choose_if": "ya tienes un prototipo de agente y necesitas resolver memoria, despliegue, seguridad u observabilidad",
+  "avoid_if": "estás empezando con agentes desde cero; mira `ai-agents-for-beginners`",
+  "limits": "Licencia propia no comercial, y varios tutoriales dependen de servicios de patrocinadores (alguno ya retirado, como hushvert).",
+  "combines_with": ["langgraph", "mem0", "ollama"],
+  "alternatives": [],
+  "pick": false,
+  "notes": "La editorial previa citaba Langfuse para las trazas; el tutorial actual usa LangSmith. GitHub marca la licencia como NOASSERTION (licencia propia no comercial)."
+}

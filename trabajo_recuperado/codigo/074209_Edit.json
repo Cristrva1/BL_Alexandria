@@ -1,0 +1,6 @@
+{
+ "file_path": "/home/user/BL_Alexandria/src/repo_intelligence/guides/explorer.py",
+ "new_string": ".meta { display: flex; justify-content: space-between; gap: 8px; font: 400 .74rem/1.2 var(--font-mono); color: var(--muted); letter-spacing: .02em; }\n.meta .callno { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }\n.dlg-head .meta { padding-right: 40px; }",
+ "old_string": ".card .meta { display: flex; justify-content: space-between; gap: 8px; font: 400 .74rem/1.2 var(--font-mono); color: var(--muted); letter-spacing: .02em; }\n.card .meta .callno { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }",
+ "replace_all": false
+}
