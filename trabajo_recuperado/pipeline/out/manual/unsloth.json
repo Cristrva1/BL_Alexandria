@@ -1,0 +1,39 @@
+{
+ "id": "unsloth",
+ "name": "Unsloth",
+ "role": "app",
+ "exec": "local",
+ "setup": "medium",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "training",
+  "local",
+  "python"
+ ],
+ "one": "Fine-tuning y ejecución local de LLM hasta 2 veces más rápido y con mucha menos memoria, ahora con UI.",
+ "desc": "Afina modelos como Qwen, Llama o Gemma en una sola GPU y expórtalos a GGUF u Ollama. Ofrece notebooks gratuitos y una interfaz local.",
+ "why": "La forma más eficiente de afinar modelos en hardware modesto.",
+ "how": "Kernels optimizados a mano y cuantización reducen memoria y tiempo en LoRA y QLoRA.",
+ "install": "`pip install unsloth` o usa sus notebooks de Colab.",
+ "cases": [
+  "Afinar un modelo con datos propios",
+  "Entrenar en una GPU de consumo",
+  "Exportar a Ollama"
+ ],
+ "stack": "Python, Triton, PyTorch",
+ "models": "Modelos abiertos.",
+ "choose_if": "quieres afinar un LLM con pocos recursos",
+ "avoid_if": "necesitas muchas técnicas y una UI de entrenamiento; mira `llama-factory`",
+ "limits": "Requiere GPU NVIDIA para entrenar.",
+ "combines_with": [
+  "ollama",
+  "trl"
+ ],
+ "alternatives": [
+  "llama-factory"
+ ],
+ "pick": true,
+ "mcp": false
+}

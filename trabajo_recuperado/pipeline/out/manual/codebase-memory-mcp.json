@@ -1,0 +1,40 @@
+{
+ "id": "codebase-memory-mcp",
+ "name": "codebase-memory-mcp",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "mcp"
+ ],
+ "tags": [
+  "code",
+  "mcp",
+  "memory"
+ ],
+ "one": "Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes.",
+ "desc": "Indexa repos en milisegundos y da al agente herramientas MCP para entender arquitectura, dependencias y cambios sin leer archivo por archivo.",
+ "why": "Indexación muy rápida incluso en repos enormes.",
+ "how": "Parsea el código a un grafo persistente local y lo expone por MCP e interfaces propias.",
+ "install": "Descarga el binario de releases y añádelo como servidor MCP a tu agente.",
+ "cases": [
+  "Entender un repo grande con un agente",
+  "Analizar impacto de cambios",
+  "Memoria de arquitectura"
+ ],
+ "stack": "C",
+ "models": "No usa LLM.",
+ "choose_if": "tu agente trabaja en repos grandes",
+ "avoid_if": "tu repo es pequeño; usa `repomix`",
+ "combines_with": [
+  "claude-code",
+  "serena"
+ ],
+ "alternatives": [
+  "codegraph",
+  "gitnexus"
+ ],
+ "pick": false,
+ "limits": ""
+}

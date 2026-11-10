@@ -1,0 +1,36 @@
+{
+ "id": "nemotron",
+ "name": "Nemotron (NVIDIA)",
+ "role": "directory",
+ "exec": "local",
+ "setup": "heavy",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "training",
+  "inference"
+ ],
+ "one": "Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos.",
+ "desc": "Reúne guías de entrenamiento, despliegue y casos de uso de los modelos Nemotron, pensados para IA agéntica eficiente.",
+ "why": "Modelos abiertos con datos y recetas publicados, optimizados para GPUs NVIDIA.",
+ "how": "Notebooks y documentación que usan NeMo, vLLM o TensorRT-LLM.",
+ "install": "No se instala: sigue las guías del repo para el modelo que necesites.",
+ "cases": [
+  "Desplegar modelos abiertos de NVIDIA",
+  "Afinar Nemotron",
+  "Agentes con modelos eficientes"
+ ],
+ "stack": "Python, Jupyter",
+ "models": "Modelos Nemotron.",
+ "choose_if": "usas GPUs NVIDIA y quieres modelos abiertos optimizados",
+ "avoid_if": "buscas la forma más simple de correr modelos; mira `ollama`",
+ "combines_with": [
+  "vllm",
+  "nemoclaw"
+ ],
+ "alternatives": [],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

@@ -1,0 +1,35 @@
+{
+ "id": "tesseract",
+ "name": "Tesseract",
+ "role": "app",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "ocr",
+  "cpp"
+ ],
+ "one": "Motor de OCR open source clásico, con más de 100 idiomas.",
+ "desc": "Base de muchas herramientas de OCR, ligero y sin GPU.",
+ "why": "Estable, gratuito y disponible en todos los sistemas.",
+ "how": "Red LSTM que reconoce líneas de texto en imágenes preprocesadas.",
+ "install": "`brew install tesseract` o `apt install tesseract-ocr`.",
+ "cases": [
+  "OCR de imágenes simples",
+  "Base para OCRmyPDF",
+  "Digitalizar documentos sin GPU"
+ ],
+ "stack": "C++",
+ "models": "No usa LLM.",
+ "choose_if": "quieres OCR clásico sin GPU",
+ "avoid_if": "tus documentos tienen layouts complejos; mira `paddleocr`",
+ "combines_with": [
+  "ocrmypdf"
+ ],
+ "alternatives": [
+  "paddleocr"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

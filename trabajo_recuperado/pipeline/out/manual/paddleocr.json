@@ -1,0 +1,37 @@
+{
+ "id": "paddleocr",
+ "name": "PaddleOCR",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "ocr",
+  "docs",
+  "python"
+ ],
+ "one": "Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos estructurados para IA.",
+ "desc": "Reconoce texto en más de 80 idiomas y analiza documentos con tablas y layout. Incluye modelos pequeños para dispositivos.",
+ "why": "Precisión muy alta, multilingüe y con modelos optimizados.",
+ "how": "Modelos de detección, reconocimiento y análisis de layout en PaddlePaddle.",
+ "install": "`pip install paddleocr` (más `paddlepaddle`).",
+ "cases": [
+  "OCR de facturas y recibos",
+  "Documentos multilingües",
+  "OCR en dispositivos"
+ ],
+ "stack": "Python, PaddlePaddle",
+ "models": "Modelos propios.",
+ "choose_if": "necesitas OCR preciso y multilingüe",
+ "avoid_if": "solo quieres hacer buscables PDFs escaneados; mira `ocrmypdf`",
+ "combines_with": [
+  "docling"
+ ],
+ "alternatives": [
+  "tesseract",
+  "olmocr"
+ ],
+ "pick": true,
+ "mcp": false,
+ "prov": [],
+ "limits": ""
+}

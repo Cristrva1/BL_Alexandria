@@ -1,0 +1,33 @@
+{
+ "id": "d3",
+ "name": "D3.js",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "dataviz",
+  "javascript"
+ ],
+ "one": "Librería JavaScript para visualizaciones de datos a medida con SVG, Canvas y HTML.",
+ "desc": "Da control total sobre cada elemento visual. Base de muchas librerías de gráficos y del periodismo de datos.",
+ "why": "Flexibilidad sin límites para visualizaciones únicas.",
+ "how": "Une datos a elementos del DOM y ofrece módulos de escalas, formas, layouts y transiciones.",
+ "install": "`npm i d3`.",
+ "cases": [
+  "Visualizaciones interactivas únicas",
+  "Mapas y grafos personalizados",
+  "Gráficos para artículos"
+ ],
+ "stack": "JavaScript, SVG",
+ "models": "No usa LLM.",
+ "choose_if": "necesitas visualizaciones totalmente personalizadas",
+ "avoid_if": "quieres gráficos estándar rápido; mira `chart-js` o `recharts`",
+ "combines_with": [],
+ "alternatives": [
+  "echarts"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

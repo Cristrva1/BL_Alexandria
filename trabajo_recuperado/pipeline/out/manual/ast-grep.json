@@ -1,0 +1,37 @@
+{
+ "id": "ast-grep",
+ "name": "ast-grep",
+ "role": "app",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "code",
+  "security",
+  "rust"
+ ],
+ "one": "CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código.",
+ "desc": "Busca y reemplaza código por su estructura (AST), no por texto. Útil para refactors masivos y reglas de lint propias.",
+ "why": "Muy rápido y con patrones fáciles de escribir; los agentes de código lo usan bien.",
+ "how": "Parsea con tree-sitter y compara patrones contra el árbol sintáctico.",
+ "install": "`npm i -g @ast-grep/cli` o `brew install ast-grep`.",
+ "cases": [
+  "Refactors masivos seguros",
+  "Reglas de lint del equipo",
+  "Buscar patrones de bugs"
+ ],
+ "stack": "Rust, tree-sitter",
+ "models": "No usa LLM.",
+ "choose_if": "necesitas buscar o reescribir código por estructura",
+ "avoid_if": "buscas análisis de seguridad con reglas existentes; mira `semgrep`",
+ "combines_with": [
+  "tree-sitter",
+  "claude-code"
+ ],
+ "alternatives": [
+  "semgrep"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

@@ -1,0 +1,38 @@
+{
+ "id": "pdfmathtranslate",
+ "name": "PDFMathTranslate",
+ "role": "app",
+ "exec": "hybrid",
+ "setup": "easy",
+ "prov": [
+  "openai",
+  "google",
+  "local"
+ ],
+ "tags": [
+  "pdf",
+  "docs",
+  "python"
+ ],
+ "one": "Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe.",
+ "desc": "Ideal para leer artículos científicos en tu idioma sin perder el layout. Admite Google, DeepL, OpenAI, Ollama y más.",
+ "why": "Conserva fórmulas y diseño, algo que fallan otros traductores.",
+ "how": "Analiza el layout, traduce solo los bloques de texto y vuelve a componer el PDF.",
+ "install": "`pip install pdf2zh` y `pdf2zh archivo.pdf`, o la GUI web.",
+ "cases": [
+  "Leer papers en español",
+  "Traducir manuales técnicos",
+  "PDF bilingües para estudiar"
+ ],
+ "stack": "Python",
+ "models": "Google, DeepL, OpenAI, Ollama y otros.",
+ "choose_if": "traduces PDFs técnicos y quieres conservar el formato",
+ "avoid_if": "necesitas editar el PDF; mira `stirling-pdf`",
+ "limits": "Licencia AGPL-3.0.",
+ "combines_with": [
+  "ollama"
+ ],
+ "alternatives": [],
+ "mcp": false,
+ "pick": false
+}

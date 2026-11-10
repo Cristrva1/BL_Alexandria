@@ -1,0 +1,35 @@
+{
+ "id": "unlimited-ocr",
+ "name": "Unlimited-OCR",
+ "role": "library",
+ "exec": "local",
+ "setup": "heavy",
+ "tags": [
+  "ocr",
+  "docs",
+  "python"
+ ],
+ "one": "Modelo de Baidu para parsear documentos largos de una sola pasada con visión.",
+ "desc": "Extrae texto y estructura de documentos de muchas páginas sin dividirlos, pensado para contexto largo.",
+ "why": "Enfoque de una sola pasada para documentos largos.",
+ "how": "Un modelo de visión-lenguaje procesa secuencias largas de páginas y genera el texto estructurado.",
+ "install": "Sigue el README para descargar el modelo y ejecutar la inferencia (requiere GPU).",
+ "cases": [
+  "Parsear documentos largos",
+  "Contratos de muchas páginas",
+  "Investigación en OCR"
+ ],
+ "stack": "Python, PyTorch",
+ "models": "Modelo propio.",
+ "choose_if": "procesas documentos muy largos con GPU",
+ "avoid_if": "necesitas algo probado y ligero; mira `docling`",
+ "limits": "Requiere GPU; proyecto reciente.",
+ "combines_with": [],
+ "alternatives": [
+  "olmocr",
+  "paddleocr"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false
+}

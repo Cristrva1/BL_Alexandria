@@ -1,0 +1,31 @@
+{
+ "id": "pdfding",
+ "name": "PdfDing",
+ "role": "app",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "pdf",
+  "docker"
+ ],
+ "one": "Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.",
+ "desc": "Organiza y lee tus PDFs desde cualquier dispositivo. El desarrollo se trasladó a Codeberg.",
+ "why": "Alternativa ligera a suites documentales pesadas.",
+ "how": "App web Django que guarda PDFs, metadatos y anotaciones.",
+ "install": "`docker run -p 8000:8000 mrmn2/pdfding` (revisa la versión actual en Codeberg).",
+ "cases": [
+  "Biblioteca personal de PDFs",
+  "Leer y anotar desde el móvil",
+  "Compartir PDFs internos"
+ ],
+ "stack": "Python, Django, Docker",
+ "models": "No usa LLM.",
+ "choose_if": "quieres organizar y leer PDFs en tu servidor",
+ "avoid_if": "necesitas editar PDFs; mira `stirling-pdf`",
+ "limits": "El repo de GitHub está archivado: el proyecto sigue en Codeberg.",
+ "combines_with": [],
+ "alternatives": [],
+ "mcp": false,
+ "prov": [],
+ "pick": false
+}

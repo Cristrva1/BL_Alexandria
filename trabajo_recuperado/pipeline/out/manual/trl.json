@@ -1,0 +1,35 @@
+{
+ "id": "trl",
+ "name": "TRL",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "training",
+  "python"
+ ],
+ "one": "Librería de Hugging Face para entrenar LLM con aprendizaje por refuerzo: SFT, DPO, GRPO y más.",
+ "desc": "Ofrece entrenadores listos para ajuste supervisado y por preferencias, usados para alinear modelos.",
+ "why": "Implementaciones de referencia de las técnicas de alineamiento modernas.",
+ "how": "Entrenadores sobre Transformers que gestionan datos, recompensas y optimización.",
+ "install": "`pip install trl`.",
+ "cases": [
+  "Ajuste supervisado con tus datos",
+  "Alinear con DPO",
+  "Entrenar razonamiento con GRPO"
+ ],
+ "stack": "Python, PyTorch",
+ "models": "Modelos abiertos.",
+ "choose_if": "necesitas SFT o RL sobre modelos abiertos",
+ "avoid_if": "quieres algo sin código; mira `llama-factory`",
+ "combines_with": [
+  "transformers",
+  "peft",
+  "unsloth"
+ ],
+ "alternatives": [],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

@@ -1,0 +1,37 @@
+{
+ "id": "defending-code-reference-harness",
+ "name": "Defending Code Reference Harness",
+ "role": "skill",
+ "exec": "cloud",
+ "setup": "medium",
+ "prov": [
+  "anthropic"
+ ],
+ "tags": [
+  "security",
+  "skills",
+  "coding-agent"
+ ],
+ "one": "Arnés de referencia de Anthropic con skills para modelar amenazas, escanear, priorizar y parchear vulnerabilidades.",
+ "desc": "Implementación de referencia para descubrir y corregir vulnerabilidades de forma autónoma con Claude, basada en experiencia con equipos de seguridad.",
+ "why": "Recoge prácticas reales de seguridad con agentes; personalizable con /customize.",
+ "how": "Skills de Claude Code encadenan modelado de amenazas, escaneo, triaje y parcheo en un bucle autónomo.",
+ "install": "Clona el repo y usa las skills en Claude Code siguiendo el README.",
+ "cases": [
+  "Auditoría de seguridad con agentes",
+  "Triaje de hallazgos de escáneres",
+  "Parches automáticos revisables"
+ ],
+ "stack": "Python, Markdown",
+ "models": "Claude.",
+ "choose_if": "quieres un flujo de seguridad con agentes probado",
+ "avoid_if": "solo necesitas un escáner estático; mira `semgrep`",
+ "combines_with": [
+  "claude-code",
+  "semgrep"
+ ],
+ "alternatives": [],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

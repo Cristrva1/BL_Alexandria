@@ -1,0 +1,41 @@
+{
+ "id": "docling",
+ "name": "Docling",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "mcp": true,
+ "tags": [
+  "docs",
+  "pdf",
+  "ocr",
+  "python"
+ ],
+ "one": "Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA.",
+ "desc": "Entiende la estructura del documento (tablas, layout, fórmulas, orden de lectura) y la exporta para RAG y agentes.",
+ "why": "Excelente con tablas y layouts complejos, y totalmente local.",
+ "how": "Modelos de layout y de tablas analizan cada página y construyen un documento estructurado exportable.",
+ "install": "`pip install docling` y `docling archivo.pdf`.",
+ "cases": [
+  "Preparar PDFs para RAG",
+  "Extraer tablas de reportes",
+  "Convertir documentos Office a Markdown"
+ ],
+ "stack": "Python, PyTorch",
+ "models": "Modelos propios de layout; VLM opcionales.",
+ "choose_if": "quieres convertir documentos a Markdown con buena estructura",
+ "avoid_if": "solo tienes PDFs de texto simples; mira `markitdown`",
+ "combines_with": [
+  "llama-index",
+  "ragflow",
+  "qdrant"
+ ],
+ "alternatives": [
+  "marker",
+  "mineru",
+  "unstructured"
+ ],
+ "pick": true,
+ "prov": [],
+ "limits": ""
+}

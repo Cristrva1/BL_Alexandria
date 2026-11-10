@@ -1,0 +1,42 @@
+{
+ "id": "cognee",
+ "name": "cognee",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "easy",
+ "prov": [
+  "openai",
+  "local"
+ ],
+ "tags": [
+  "memory",
+  "rag",
+  "python"
+ ],
+ "one": "Plataforma de memoria para agentes que combina grafos de conocimiento y vectores, usable con modelos pequeños.",
+ "desc": "Convierte documentos y conversaciones en un grafo de conocimiento consultable para dar memoria de largo plazo a tus agentes.",
+ "why": "Une búsqueda semántica y relaciones del grafo con pocas líneas de código.",
+ "how": "Su pipeline cognify extrae entidades y relaciones con un LLM y las guarda en un grafo y una base vectorial.",
+ "install": "`pip install cognee`.",
+ "cases": [
+  "Memoria de clientes para un agente",
+  "Grafo de conocimiento de documentos",
+  "RAG con relaciones"
+ ],
+ "stack": "Python",
+ "models": "Agnóstico, incluidos modelos locales.",
+ "choose_if": "quieres memoria basada en grafo con poco esfuerzo",
+ "avoid_if": "necesitas un grafo temporal en tiempo real; mira `graphiti`",
+ "combines_with": [
+  "qdrant",
+  "mcp-neo4j"
+ ],
+ "alternatives": [
+  "graphiti",
+  "mem0",
+  "graphrag"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

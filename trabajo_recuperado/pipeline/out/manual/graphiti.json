@@ -1,0 +1,40 @@
+{
+ "id": "graphiti",
+ "name": "Graphiti",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "medium",
+ "prov": [
+  "openai",
+  "anthropic"
+ ],
+ "tags": [
+  "memory",
+  "rag",
+  "python"
+ ],
+ "one": "Librería de Zep para construir grafos de conocimiento temporales en tiempo real para agentes.",
+ "desc": "Actualiza el grafo con cada nuevo dato sin recalcular todo y guarda cuándo era válido cada hecho. Ideal para memoria de agentes que cambia.",
+ "why": "Manejo de tiempo y actualizaciones incrementales que otros grafos no ofrecen.",
+ "how": "Extrae entidades y relaciones con un LLM, las fusiona en Neo4j u otra base de grafos y consulta con búsqueda híbrida.",
+ "install": "`pip install graphiti-core` (requiere Neo4j o FalkorDB).",
+ "cases": [
+  "Memoria de agentes que evoluciona",
+  "Historial de relaciones con clientes",
+  "Grafos con validez temporal"
+ ],
+ "stack": "Python, Neo4j",
+ "models": "OpenAI, Anthropic y otros.",
+ "choose_if": "necesitas memoria que cambie con el tiempo y se pueda consultar",
+ "avoid_if": "solo quieres RAG sobre documentos estáticos; mira `lightrag`",
+ "combines_with": [
+  "mcp-neo4j"
+ ],
+ "alternatives": [
+  "cognee",
+  "graphrag"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

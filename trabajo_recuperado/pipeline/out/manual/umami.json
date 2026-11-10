@@ -1,0 +1,35 @@
+{
+ "id": "umami",
+ "name": "Umami",
+ "role": "platform",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "analytics",
+  "typescript",
+  "docker"
+ ],
+ "one": "Analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics.",
+ "desc": "Mide visitas, campañas, eventos, conversiones e ingresos en un panel simple, cumpliendo GDPR.",
+ "why": "Ligera, bonita y fácil de auto-hospedar.",
+ "how": "Un script pequeño envía eventos a un servidor Next.js que guarda en PostgreSQL o MySQL.",
+ "install": "`docker compose up -d` con el archivo del repo.",
+ "cases": [
+  "Analítica de un sitio sin cookies",
+  "Seguimiento de campañas",
+  "Eventos de producto"
+ ],
+ "stack": "TypeScript, Next.js, PostgreSQL",
+ "models": "No usa LLM.",
+ "choose_if": "quieres analítica web simple y privada",
+ "avoid_if": "necesitas analítica de producto avanzada; mira `posthog`",
+ "combines_with": [],
+ "alternatives": [
+  "plausible",
+  "matomo"
+ ],
+ "pick": true,
+ "mcp": false,
+ "prov": [],
+ "limits": ""
+}

@@ -1,0 +1,37 @@
+{
+ "id": "opik",
+ "name": "Opik",
+ "role": "platform",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "observability",
+  "evaluation",
+  "python"
+ ],
+ "one": "Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes.",
+ "desc": "Traza llamadas, ejecuta evaluaciones automáticas y monitorea producción con paneles. Incluye optimizador de prompts.",
+ "why": "Completa y open source, con buen rendimiento en volúmenes grandes.",
+ "how": "SDKs envían trazas a un backend con ClickHouse; la UI muestra trazas, métricas y experimentos.",
+ "install": "Clona el repo y ejecuta `./opik.sh` (Docker), o usa su cloud; `pip install opik`.",
+ "cases": [
+  "Monitorear un agente en producción",
+  "Evaluar con LLM juez",
+  "Optimizar prompts"
+ ],
+ "stack": "Python, Java, TypeScript, ClickHouse",
+ "models": "Agnóstico.",
+ "choose_if": "quieres observabilidad y evaluación en un solo producto abierto",
+ "avoid_if": "prefieres la opción más extendida; mira `langfuse`",
+ "combines_with": [
+  "langgraph"
+ ],
+ "alternatives": [
+  "langfuse",
+  "phoenix"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

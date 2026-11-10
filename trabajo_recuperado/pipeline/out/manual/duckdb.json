@@ -1,0 +1,38 @@
+{
+ "id": "duckdb",
+ "name": "DuckDB",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "data",
+  "analytics",
+  "cpp"
+ ],
+ "one": "Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL.",
+ "desc": "El \"SQLite de la analítica\": sin servidor, embebida en Python, R o Node, y capaz de procesar millones de filas en segundos.",
+ "why": "Rendimiento excelente sin infraestructura y SQL directo sobre archivos.",
+ "how": "Motor columnar vectorizado que lee formatos de archivo directamente y ejecuta SQL en paralelo.",
+ "install": "`pip install duckdb` o `brew install duckdb`.",
+ "cases": [
+  "Analizar CSV grandes con SQL",
+  "Pipelines de datos locales",
+  "Backend analítico de dashboards"
+ ],
+ "stack": "C++",
+ "models": "No usa LLM.",
+ "choose_if": "quieres SQL analítico rápido sin montar servidores",
+ "avoid_if": "necesitas una base transaccional multiusuario; usa PostgreSQL",
+ "combines_with": [
+  "polars",
+  "marimo",
+  "superset"
+ ],
+ "alternatives": [
+  "polars"
+ ],
+ "pick": true,
+ "mcp": false,
+ "prov": [],
+ "limits": ""
+}

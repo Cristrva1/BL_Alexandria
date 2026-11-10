@@ -1,0 +1,38 @@
+{
+ "id": "vllm",
+ "name": "vLLM",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "heavy",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "inference",
+  "python"
+ ],
+ "one": "Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU.",
+ "desc": "Sirve modelos abiertos a muchos usuarios con una API compatible con OpenAI, gracias a PagedAttention y batching continuo.",
+ "why": "Estándar en producción para servir LLM abiertos en GPU.",
+ "how": "Gestiona la caché KV por páginas, agrupa peticiones dinámicamente y soporta paralelismo entre GPUs.",
+ "install": "`pip install vllm` y `vllm serve Qwen/Qwen3-8B` (requiere GPU NVIDIA o AMD).",
+ "cases": [
+  "API privada de LLM para la empresa",
+  "Servir modelos afinados",
+  "Inferencia por lotes barata"
+ ],
+ "stack": "Python, CUDA, PyTorch",
+ "models": "Modelos abiertos de Hugging Face.",
+ "choose_if": "necesitas servir LLM abiertos a muchos usuarios en GPU",
+ "avoid_if": "solo los usas tú en un portátil; mira `ollama`",
+ "limits": "Requiere GPU con bastante memoria.",
+ "combines_with": [
+  "litellm",
+  "open-webui"
+ ],
+ "alternatives": [
+  "sglang"
+ ],
+ "pick": true,
+ "mcp": false
+}

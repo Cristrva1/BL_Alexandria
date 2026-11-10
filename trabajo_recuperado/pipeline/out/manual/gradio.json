@@ -1,0 +1,35 @@
+{
+ "id": "gradio",
+ "name": "Gradio",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "ui",
+  "python"
+ ],
+ "one": "Librería Python para crear y compartir apps web de modelos de ML en minutos.",
+ "desc": "Envuelve una función Python en una interfaz web con entradas y salidas de texto, imagen, audio o chat. Base de Hugging Face Spaces.",
+ "why": "La forma más rápida de poner una demo de IA en la web.",
+ "how": "Declaras componentes de entrada y salida y Gradio genera una app web con un servidor FastAPI.",
+ "install": "`pip install gradio`.",
+ "cases": [
+  "Demo de un modelo propio",
+  "Chat con interfaz en minutos",
+  "Compartir una app con un enlace"
+ ],
+ "stack": "Python, Svelte",
+ "models": "No usa LLM por sí misma.",
+ "choose_if": "quieres una demo web de tu modelo rápido",
+ "avoid_if": "construyes una app de datos con varias páginas; mira `streamlit`",
+ "combines_with": [
+  "transformers"
+ ],
+ "alternatives": [
+  "streamlit"
+ ],
+ "pick": true,
+ "mcp": false,
+ "prov": [],
+ "limits": ""
+}

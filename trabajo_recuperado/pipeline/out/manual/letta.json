@@ -1,0 +1,41 @@
+{
+ "id": "letta",
+ "name": "Letta",
+ "role": "platform",
+ "exec": "hybrid",
+ "setup": "medium",
+ "prov": [
+  "openai",
+  "anthropic",
+  "local"
+ ],
+ "tags": [
+  "memory",
+  "agents",
+  "python"
+ ],
+ "one": "Plataforma para agentes con estado y memoria avanzada que aprenden con el tiempo (antes MemGPT).",
+ "desc": "Crea agentes que gestionan su propia memoria en bloques editables y archivos, y persisten entre conversaciones. Incluye servidor, API y entorno de desarrollo.",
+ "why": "Nació del paper MemGPT; referencia en agentes con memoria de largo plazo.",
+ "how": "El agente edita su memoria con herramientas; el servidor guarda el estado en una base de datos y lo expone por API.",
+ "install": "`docker run -p 8283:8283 letta/letta:latest` o `pip install letta-client` para su cloud.",
+ "cases": [
+  "Asistentes que recuerdan a cada cliente",
+  "Agentes que mejoran con el uso",
+  "Compañeros de investigación persistentes"
+ ],
+ "stack": "Python, PostgreSQL",
+ "models": "Agnóstico.",
+ "choose_if": "quieres agentes con memoria de largo plazo gestionada",
+ "avoid_if": "solo necesitas una capa de memoria para tu app; mira `mem0`",
+ "combines_with": [
+  "ollama"
+ ],
+ "alternatives": [
+  "mem0",
+  "cognee"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

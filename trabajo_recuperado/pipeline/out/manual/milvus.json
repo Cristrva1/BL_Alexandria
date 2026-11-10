@@ -1,0 +1,38 @@
+{
+ "id": "milvus",
+ "name": "Milvus",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "heavy",
+ "tags": [
+  "vector-db",
+  "rag",
+  "go",
+  "docker"
+ ],
+ "one": "Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores.",
+ "desc": "Pensada para producción con grandes volúmenes, alta disponibilidad y varios tipos de índices. Tiene una versión ligera para empezar.",
+ "why": "Escala horizontal probada en empresas con volúmenes enormes.",
+ "how": "Arquitectura distribuida que separa almacenamiento y cómputo, con índices como HNSW, IVF y DiskANN.",
+ "install": "`pip install pymilvus` (incluye Milvus Lite) o Docker Compose para el modo standalone.",
+ "cases": [
+  "Búsqueda semántica a gran escala",
+  "Recomendaciones por similitud",
+  "RAG con millones de documentos"
+ ],
+ "stack": "Go, C++, Kubernetes",
+ "models": "No usa LLM.",
+ "choose_if": "esperas volúmenes muy grandes de vectores",
+ "avoid_if": "tu proyecto es pequeño; mira `chroma` o `qdrant`",
+ "combines_with": [
+  "llama-index"
+ ],
+ "alternatives": [
+  "qdrant",
+  "chroma"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

@@ -1,0 +1,37 @@
+{
+ "id": "recharts",
+ "name": "Recharts",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "dataviz",
+  "react",
+  "typescript"
+ ],
+ "one": "Librería de gráficos para React construida con D3, declarativa y componible.",
+ "desc": "Construye gráficos con componentes de React. Muy usada en dashboards de apps React y en shadcn/ui.",
+ "why": "Encaja de forma natural en proyectos React.",
+ "how": "Componentes React que renderizan SVG usando utilidades de D3.",
+ "install": "`npm i recharts`.",
+ "cases": [
+  "Gráficos en una app React",
+  "Dashboards con shadcn/ui",
+  "Reportes interactivos"
+ ],
+ "stack": "TypeScript, React, D3",
+ "models": "No usa LLM.",
+ "choose_if": "tu app es React y quieres gráficos declarativos",
+ "avoid_if": "no usas React; mira `chart-js`",
+ "combines_with": [
+  "ui"
+ ],
+ "alternatives": [
+  "chart-js",
+  "echarts"
+ ],
+ "pick": true,
+ "mcp": false,
+ "prov": [],
+ "limits": ""
+}

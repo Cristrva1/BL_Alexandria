@@ -1,0 +1,34 @@
+{
+ "id": "guardrails",
+ "name": "NeMo Guardrails",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "medium",
+ "tags": [
+  "security",
+  "chatbot",
+  "python"
+ ],
+ "one": "Toolkit de NVIDIA para añadir barreras programables a sistemas conversacionales con LLM.",
+ "desc": "Controla de qué puede hablar tu bot, bloquea jailbreaks y valida entradas y salidas con reglas en el lenguaje Colang.",
+ "why": "Respaldado por NVIDIA y muy flexible para políticas de conversación.",
+ "how": "Intercepta la conversación y aplica flujos de Colang y verificaciones (moderación, hechos) antes y después del LLM.",
+ "install": "`pip install nemoguardrails`.",
+ "cases": [
+  "Limitar temas de un chatbot",
+  "Bloquear inyecciones de prompt",
+  "Verificar respuestas contra hechos"
+ ],
+ "stack": "Python, Colang",
+ "models": "Agnóstico.",
+ "choose_if": "necesitas políticas de seguridad en un chatbot",
+ "avoid_if": "solo quieres probar vulnerabilidades; mira `promptfoo`",
+ "combines_with": [
+  "langchain"
+ ],
+ "alternatives": [],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

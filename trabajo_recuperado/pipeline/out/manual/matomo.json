@@ -1,0 +1,34 @@
+{
+ "id": "matomo",
+ "name": "Matomo",
+ "role": "platform",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "analytics",
+  "php"
+ ],
+ "one": "Alternativa open source a Google Analytics con control total de los datos.",
+ "desc": "Analítica web completa con embudos, mapas de calor y comercio electrónico, auto-hospedada.",
+ "why": "La alternativa más completa y veterana a Google Analytics.",
+ "how": "Un tracker JavaScript envía datos a una app PHP con MySQL que procesa informes.",
+ "install": "Self-host con el paquete oficial o `docker run -p 8080:80 matomo`.",
+ "cases": [
+  "Sustituir Google Analytics",
+  "Analítica de e-commerce",
+  "Cumplir normativas de datos"
+ ],
+ "stack": "PHP, MySQL",
+ "models": "No usa LLM.",
+ "choose_if": "necesitas analítica completa como Google Analytics pero propia",
+ "avoid_if": "quieres algo simple; mira `umami`",
+ "combines_with": [],
+ "alternatives": [
+  "umami",
+  "plausible"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

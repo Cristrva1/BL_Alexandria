@@ -1,0 +1,43 @@
+{
+ "id": "promptfoo",
+ "name": "promptfoo",
+ "role": "app",
+ "exec": "local",
+ "setup": "easy",
+ "prov": [
+  "openai",
+  "anthropic",
+  "google",
+  "local"
+ ],
+ "tags": [
+  "evaluation",
+  "security",
+  "typescript"
+ ],
+ "one": "CLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad.",
+ "desc": "Defines casos de prueba en YAML y comparas salidas de varios modelos con aserciones. También escanea vulnerabilidades como inyección de prompts.",
+ "why": "Muy práctico para CI: evaluación y red teaming en una sola herramienta.",
+ "how": "Ejecuta la matriz de prompts por modelos y casos, evalúa con reglas o con un LLM juez y muestra resultados en una web local.",
+ "install": "`npx promptfoo@latest init`.",
+ "cases": [
+  "Comparar GPT, Claude y Gemini en tu caso",
+  "Pruebas de regresión de prompts en CI",
+  "Red teaming de un chatbot"
+ ],
+ "stack": "TypeScript, Node.js",
+ "models": "Agnóstico.",
+ "choose_if": "quieres pruebas automáticas de prompts y seguridad",
+ "avoid_if": "necesitas observabilidad en producción; mira `langfuse`",
+ "combines_with": [
+  "langfuse",
+  "litellm"
+ ],
+ "alternatives": [
+  "deepeval",
+  "ragas"
+ ],
+ "pick": true,
+ "mcp": false,
+ "limits": ""
+}

@@ -1,0 +1,39 @@
+{
+ "id": "pandas-ai",
+ "name": "PandasAI",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "easy",
+ "prov": [
+  "openai",
+  "local"
+ ],
+ "tags": [
+  "analytics",
+  "data",
+  "python"
+ ],
+ "one": "Librería para conversar con tus datos (SQL, CSV, Parquet) usando LLM.",
+ "desc": "Haces preguntas en lenguaje natural y genera el código de análisis o gráficos. Útil para analistas y apps de datos.",
+ "why": "Hace accesible el análisis de datos a quien no programa.",
+ "how": "El LLM traduce la pregunta a código Python o SQL que se ejecuta sobre tus DataFrames.",
+ "install": "`pip install pandasai`.",
+ "cases": [
+  "Preguntar a un CSV de ventas",
+  "Gráficos por petición",
+  "Asistente de datos en una app"
+ ],
+ "stack": "Python, pandas",
+ "models": "Agnóstico, incluidos locales.",
+ "choose_if": "quieres preguntar a tus tablas en lenguaje natural",
+ "avoid_if": "necesitas text-to-SQL gobernado para la empresa; mira `wrenai`",
+ "limits": "Ejecuta código generado: úsalo en entornos aislados.",
+ "combines_with": [
+  "duckdb"
+ ],
+ "alternatives": [
+  "wrenai"
+ ],
+ "mcp": false,
+ "pick": false
+}

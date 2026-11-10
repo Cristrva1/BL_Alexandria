@@ -1,0 +1,38 @@
+{
+ "id": "chroma",
+ "name": "Chroma",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "vector-db",
+  "rag",
+  "rust"
+ ],
+ "one": "Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local.",
+ "desc": "Se usa embebida en tu script Python o como servidor, con embeddings automáticos. Perfecta para prototipos de RAG.",
+ "why": "Cero configuración: `pip install` y ya puedes guardar y buscar.",
+ "how": "Núcleo en Rust con índices HNSW y metadatos; corre en proceso o como servidor cliente-servidor.",
+ "install": "`pip install chromadb`.",
+ "cases": [
+  "Prototipo de RAG en un notebook",
+  "Memoria simple para un agente",
+  "Búsqueda semántica local"
+ ],
+ "stack": "Rust, Python, TypeScript",
+ "models": "No usa LLM.",
+ "choose_if": "empiezas con RAG y quieres lo más simple",
+ "avoid_if": "necesitas gran escala y filtros complejos; mira `qdrant` o `milvus`",
+ "combines_with": [
+  "llama-index",
+  "langchain"
+ ],
+ "alternatives": [
+  "qdrant",
+  "pgvector"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

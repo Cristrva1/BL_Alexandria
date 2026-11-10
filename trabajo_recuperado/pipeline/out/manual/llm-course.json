@@ -1,0 +1,37 @@
+{
+ "id": "llm-course",
+ "name": "LLM Course",
+ "role": "directory",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "learning",
+  "training",
+  "notebooks"
+ ],
+ "one": "Curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción.",
+ "desc": "Tres rutas: fundamentos, científico de LLM (entrenar y afinar) e ingeniero de LLM (apps y despliegue), con recursos y notebooks ejecutables.",
+ "why": "Ruta de aprendizaje muy clara y notebooks prácticos de fine-tuning y fusión de modelos.",
+ "how": "Guías en Markdown con enlaces a recursos y notebooks de Colab listos para ejecutar.",
+ "install": "No se instala: abre el repo y sigue la ruta que te interese.",
+ "cases": [
+  "Aprender a afinar modelos",
+  "Planear la formación de un equipo",
+  "Notebooks de cuantización"
+ ],
+ "stack": "Markdown, Jupyter, Python",
+ "models": "Modelos abiertos.",
+ "choose_if": "quieres una ruta completa para aprender LLM",
+ "avoid_if": "buscas un curso introductorio de apps; mira `generative-ai-for-beginners`",
+ "combines_with": [
+  "unsloth",
+  "llama-factory"
+ ],
+ "alternatives": [
+  "llms-from-scratch"
+ ],
+ "pick": true,
+ "mcp": false,
+ "prov": [],
+ "limits": ""
+}

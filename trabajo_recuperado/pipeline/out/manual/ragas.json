@@ -1,0 +1,39 @@
+{
+ "id": "ragas",
+ "name": "Ragas",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "easy",
+ "prov": [
+  "openai"
+ ],
+ "tags": [
+  "evaluation",
+  "rag",
+  "python"
+ ],
+ "one": "Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos.",
+ "desc": "Mide fidelidad, relevancia del contexto y calidad de respuestas, y genera conjuntos de prueba a partir de tus documentos.",
+ "why": "Referencia en métricas de RAG y generación de tests sintéticos.",
+ "how": "Usa un LLM juez y embeddings para calcular métricas sobre preguntas, contextos y respuestas.",
+ "install": "`pip install ragas`.",
+ "cases": [
+  "Medir calidad de un RAG",
+  "Generar preguntas de prueba",
+  "Comparar configuraciones de recuperación"
+ ],
+ "stack": "Python",
+ "models": "OpenAI por defecto; otros vía LangChain.",
+ "choose_if": "evalúas un sistema RAG",
+ "avoid_if": "necesitas red teaming de seguridad; mira `promptfoo`",
+ "combines_with": [
+  "llama-index",
+  "langfuse"
+ ],
+ "alternatives": [
+  "deepeval"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

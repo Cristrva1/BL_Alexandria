@@ -1,0 +1,38 @@
+{
+ "id": "pageindex",
+ "name": "PageIndex",
+ "role": "library",
+ "exec": "cloud",
+ "setup": "easy",
+ "prov": [
+  "openai"
+ ],
+ "tags": [
+  "rag",
+  "docs",
+  "python"
+ ],
+ "one": "Índice de documentos para RAG sin vectores, basado en razonamiento sobre una tabla de contenidos.",
+ "desc": "Genera un árbol tipo índice del documento y deja que el LLM navegue por él como un experto. Funciona bien con informes largos y estructurados.",
+ "why": "Evita los problemas de fragmentación de los embeddings en documentos largos.",
+ "how": "Construye una jerarquía de secciones con resúmenes y el modelo decide qué ramas leer para responder.",
+ "install": "`pip install pageindex` o clona el repo y usa su script con tu clave de OpenAI.",
+ "cases": [
+  "Preguntas sobre informes financieros",
+  "Navegar manuales largos",
+  "RAG sin base vectorial"
+ ],
+ "stack": "Python",
+ "models": "OpenAI.",
+ "choose_if": "tus documentos son largos y con estructura clara",
+ "avoid_if": "tienes miles de documentos cortos; usa búsqueda vectorial",
+ "combines_with": [
+  "docling"
+ ],
+ "alternatives": [
+  "lightrag"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

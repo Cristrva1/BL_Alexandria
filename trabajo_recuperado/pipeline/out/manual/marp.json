@@ -1,0 +1,34 @@
+{
+ "id": "marp",
+ "name": "Marp",
+ "role": "app",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "slides",
+  "typescript"
+ ],
+ "one": "Ecosistema para crear presentaciones con Markdown simple y exportarlas a PDF, PPTX o HTML.",
+ "desc": "Escribes Markdown con separadores y obtienes slides limpias; tiene extensión de VS Code.",
+ "why": "Mínimo esfuerzo y exportación a PowerPoint.",
+ "how": "Marpit convierte Markdown en slides HTML con temas CSS; el CLI exporta a otros formatos.",
+ "install": "`npm i -g @marp-team/marp-cli` o la extensión Marp for VS Code.",
+ "cases": [
+  "Slides rápidas desde notas",
+  "Exportar a PowerPoint",
+  "Presentaciones versionadas en Git"
+ ],
+ "stack": "TypeScript",
+ "models": "No usa LLM.",
+ "choose_if": "quieres slides simples en Markdown",
+ "avoid_if": "necesitas interactividad y componentes; mira `slidev`",
+ "combines_with": [],
+ "alternatives": [
+  "slidev",
+  "reveal.js"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

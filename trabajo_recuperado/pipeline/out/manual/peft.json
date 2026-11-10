@@ -1,0 +1,34 @@
+{
+ "id": "peft",
+ "name": "PEFT",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "training",
+  "python"
+ ],
+ "one": "Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA.",
+ "desc": "Adapta modelos grandes entrenando solo una pequeña parte de los parámetros, ahorrando memoria y tiempo.",
+ "why": "Implementación de referencia de LoRA y otras técnicas eficientes.",
+ "how": "Inserta adaptadores entrenables en el modelo base, que queda congelado.",
+ "install": "`pip install peft`.",
+ "cases": [
+  "Afinar con LoRA",
+  "Varios adaptadores sobre un modelo",
+  "Entrenar con poca memoria"
+ ],
+ "stack": "Python, PyTorch",
+ "models": "Modelos abiertos.",
+ "choose_if": "afinas modelos con código propio",
+ "avoid_if": "prefieres una herramienta lista; mira `unsloth`",
+ "combines_with": [
+  "transformers",
+  "trl"
+ ],
+ "alternatives": [],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

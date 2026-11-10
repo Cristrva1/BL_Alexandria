@@ -1,0 +1,36 @@
+{
+ "id": "unstructured",
+ "name": "Unstructured",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "medium",
+ "tags": [
+  "docs",
+  "data",
+  "python"
+ ],
+ "one": "ETL open source que transforma documentos complejos en datos estructurados para LLM.",
+ "desc": "Particiona más de 25 tipos de archivo en elementos (títulos, tablas, texto) y los prepara para bases vectoriales.",
+ "why": "Soporta muchos formatos y conectores de entrada y salida.",
+ "how": "Particionadores por tipo de archivo detectan elementos y los limpian y dividen en fragmentos.",
+ "install": "`pip install \"unstructured[all-docs]\"`.",
+ "cases": [
+  "Ingestar documentos variados para RAG",
+  "Normalizar correos y HTML",
+  "Pipelines ETL de documentos"
+ ],
+ "stack": "Python",
+ "models": "Modelos opcionales para PDFs e imágenes.",
+ "choose_if": "tienes muchos formatos de documentos distintos",
+ "avoid_if": "solo procesas PDFs; mira `docling`",
+ "limits": "Lo más avanzado está en su plataforma de pago.",
+ "combines_with": [
+  "llama-index"
+ ],
+ "alternatives": [
+  "docling"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false
+}

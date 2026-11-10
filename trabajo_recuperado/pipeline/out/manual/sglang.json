@@ -1,0 +1,37 @@
+{
+ "id": "sglang",
+ "name": "SGLang",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "heavy",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "inference",
+  "python"
+ ],
+ "one": "Framework de servicio de alto rendimiento para LLM y modelos multimodales.",
+ "desc": "Compite con vLLM en velocidad, con caché de prefijos RadixAttention y buen soporte de salidas estructuradas. Muy usado para modelos grandes como DeepSeek.",
+ "why": "Muy rápido en cargas con prefijos compartidos y en modelos MoE grandes.",
+ "how": "Reutiliza la caché KV entre peticiones con un árbol radix y optimiza el scheduler para alto throughput.",
+ "install": "`pip install \"sglang[all]\"` y `python -m sglang.launch_server --model-path Qwen/Qwen3-8B`.",
+ "cases": [
+  "Servir modelos MoE grandes",
+  "Agentes con muchos prompts compartidos",
+  "Salidas JSON restringidas"
+ ],
+ "stack": "Python, CUDA",
+ "models": "Modelos abiertos.",
+ "choose_if": "buscas el máximo rendimiento en servicio de LLM",
+ "avoid_if": "quieres la opción más documentada; mira `vllm`",
+ "limits": "Requiere GPU.",
+ "combines_with": [
+  "litellm"
+ ],
+ "alternatives": [
+  "vllm"
+ ],
+ "mcp": false,
+ "pick": false
+}

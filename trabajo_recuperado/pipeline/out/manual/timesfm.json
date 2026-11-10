@@ -1,0 +1,35 @@
+{
+ "id": "timesfm",
+ "name": "TimesFM",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "data",
+  "analytics",
+  "python"
+ ],
+ "one": "Modelo fundacional de Google Research para pronosticar series de tiempo sin entrenamiento previo.",
+ "desc": "Predice ventas, demanda o tráfico a partir del histórico sin entrenar un modelo propio (zero-shot).",
+ "why": "Calidad de pronóstico competitiva sin trabajo de modelado.",
+ "how": "Transformer decoder preentrenado con miles de millones de puntos de series temporales.",
+ "install": "`pip install timesfm`.",
+ "cases": [
+  "Pronóstico de ventas",
+  "Planificación de inventario",
+  "Predicción de tráfico web"
+ ],
+ "stack": "Python, PyTorch, JAX",
+ "models": "Modelo propio TimesFM.",
+ "choose_if": "necesitas pronósticos rápidos sin entrenar modelos",
+ "avoid_if": "necesitas explicabilidad estadística clásica",
+ "combines_with": [
+  "polars",
+  "duckdb"
+ ],
+ "alternatives": [],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

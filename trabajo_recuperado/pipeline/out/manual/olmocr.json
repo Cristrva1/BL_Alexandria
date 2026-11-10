@@ -1,0 +1,39 @@
+{
+ "id": "olmocr",
+ "name": "olmOCR",
+ "role": "app",
+ "exec": "local",
+ "setup": "heavy",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "ocr",
+  "pdf",
+  "python"
+ ],
+ "one": "Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión, a gran escala.",
+ "desc": "Pensado para crear datasets de entrenamiento a partir de millones de PDFs, con orden de lectura correcto.",
+ "why": "Calidad alta y coste por página muy bajo en lotes grandes.",
+ "how": "Un VLM afinado lee cada página como imagen y produce texto lineal; se sirve con vLLM.",
+ "install": "`pip install olmocr` (requiere GPU NVIDIA).",
+ "cases": [
+  "Convertir archivos de PDFs masivos",
+  "Crear datasets de texto",
+  "OCR de alta calidad"
+ ],
+ "stack": "Python, vLLM",
+ "models": "Modelo propio olmOCR.",
+ "choose_if": "procesas grandes volúmenes de PDFs con GPU",
+ "avoid_if": "no tienes GPU; mira `ocrmypdf` o `tesseract`",
+ "limits": "Requiere GPU con bastante memoria.",
+ "combines_with": [
+  "vllm"
+ ],
+ "alternatives": [
+  "paddleocr",
+  "docling"
+ ],
+ "mcp": false,
+ "pick": false
+}

@@ -1,0 +1,40 @@
+{
+ "id": "lightrag",
+ "name": "LightRAG",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "medium",
+ "prov": [
+  "openai",
+  "local"
+ ],
+ "tags": [
+  "rag",
+  "python"
+ ],
+ "one": "RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong.",
+ "desc": "Construye un grafo de entidades a partir de tus documentos y consulta en modo local, global o híbrido. Más barato que GraphRAG.",
+ "why": "Calidad de RAG con grafo a menor coste y con actualizaciones incrementales.",
+ "how": "Extrae entidades y relaciones con un LLM, las indexa en grafo y vectores, y recupera por ambos caminos.",
+ "install": "`pip install lightrag-hku` (incluye servidor con UI: `lightrag-server`).",
+ "cases": [
+  "RAG sobre documentación técnica",
+  "Preguntas que cruzan varios documentos",
+  "Alternativa barata a GraphRAG"
+ ],
+ "stack": "Python",
+ "models": "Agnóstico, incluido Ollama.",
+ "choose_if": "quieres RAG con grafo sin el coste de GraphRAG",
+ "avoid_if": "no necesitas relaciones entre entidades; usa RAG vectorial con `llama-index`",
+ "combines_with": [
+  "ollama",
+  "qdrant"
+ ],
+ "alternatives": [
+  "graphrag",
+  "ragflow"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

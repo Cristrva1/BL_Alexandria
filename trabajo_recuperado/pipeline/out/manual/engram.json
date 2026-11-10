@@ -1,0 +1,41 @@
+{
+ "id": "engram",
+ "name": "Engram",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "mcp"
+ ],
+ "tags": [
+  "memory",
+  "mcp",
+  "coding-agent",
+  "go"
+ ],
+ "one": "Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI.",
+ "desc": "Da a cualquier agente compatible con MCP una memoria local de decisiones y aprendizajes, sin dependencias pesadas.",
+ "why": "Agnóstico de agente, muy ligero y fácil de inspeccionar.",
+ "how": "Guarda observaciones en SQLite con búsqueda de texto completo (FTS5) y las expone por MCP, HTTP y CLI.",
+ "install": "`brew install gentleman-programming/tap/engram` o binario de releases; luego añádelo como servidor MCP.",
+ "cases": [
+  "Memoria compartida entre Claude Code y Codex",
+  "Registrar decisiones del proyecto",
+  "Buscar soluciones pasadas"
+ ],
+ "stack": "Go, SQLite",
+ "models": "No usa LLM.",
+ "choose_if": "quieres memoria local simple para cualquier agente",
+ "avoid_if": "solo usas Claude Code y quieres algo automático; mira `claude-mem`",
+ "combines_with": [
+  "claude-code",
+  "opencode"
+ ],
+ "alternatives": [
+  "claude-mem",
+  "agentmemory"
+ ],
+ "pick": false,
+ "limits": ""
+}

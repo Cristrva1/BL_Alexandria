@@ -1,0 +1,38 @@
+{
+ "id": "deepeval",
+ "name": "DeepEval",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "easy",
+ "prov": [
+  "openai"
+ ],
+ "tags": [
+  "evaluation",
+  "python"
+ ],
+ "one": "Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas.",
+ "desc": "Escribe pruebas para tus apps de LLM con métricas como fidelidad, relevancia o alucinación, e intégralas en tu CI.",
+ "why": "Experiencia tipo pytest muy familiar y muchas métricas de investigación.",
+ "how": "Cada métrica usa un LLM juez o reglas para puntuar casos de prueba que defines en Python.",
+ "install": "`pip install -U deepeval`.",
+ "cases": [
+  "Pruebas unitarias de un RAG",
+  "Detectar alucinaciones",
+  "Evaluar agentes en CI"
+ ],
+ "stack": "Python",
+ "models": "OpenAI por defecto; otros jueces configurables.",
+ "choose_if": "quieres tests de LLM en Python como pytest",
+ "avoid_if": "prefieres configurar en YAML y comparar modelos; mira `promptfoo`",
+ "combines_with": [
+  "langfuse"
+ ],
+ "alternatives": [
+  "ragas",
+  "promptfoo"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

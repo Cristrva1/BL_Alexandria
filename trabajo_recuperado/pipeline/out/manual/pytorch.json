@@ -1,0 +1,33 @@
+{
+ "id": "pytorch",
+ "name": "PyTorch",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "training",
+  "python"
+ ],
+ "one": "Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU.",
+ "desc": "Base de la mayoría de investigación y modelos abiertos actuales.",
+ "why": "El framework de deep learning más usado en investigación e industria.",
+ "how": "Tensores con autograd, ejecución eager y compilación con torch.compile para CPU y GPU.",
+ "install": "`pip install torch` (elige la variante de tu GPU en pytorch.org).",
+ "cases": [
+  "Entrenar redes neuronales",
+  "Investigación en IA",
+  "Base de otras librerías"
+ ],
+ "stack": "Python, C++, CUDA",
+ "models": "No aplica.",
+ "choose_if": "entrenas o investigas modelos",
+ "avoid_if": "solo consumes APIs de LLM",
+ "combines_with": [
+  "transformers"
+ ],
+ "alternatives": [],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

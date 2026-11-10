@@ -1,0 +1,42 @@
+{
+ "id": "claude-mem",
+ "name": "claude-mem",
+ "role": "skill",
+ "exec": "local",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "anthropic",
+  "mcp"
+ ],
+ "tags": [
+  "memory",
+  "coding-agent",
+  "mcp",
+  "typescript"
+ ],
+ "one": "Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA.",
+ "desc": "Registra lo que hace el agente en cada sesión, lo resume y vuelve a inyectar lo relevante al empezar la siguiente. Evita repetir contexto en proyectos largos.",
+ "why": "Uno de los plugins más populares de Claude Code; funciona sin configurar nada.",
+ "how": "Hooks capturan las acciones de la sesión, un modelo las comprime y una base local con búsqueda las recupera por MCP.",
+ "install": "En Claude Code: `/plugin marketplace add thedotmack/claude-mem` y `/plugin install claude-mem`.",
+ "cases": [
+  "Recordar decisiones de un proyecto",
+  "Retomar trabajo sin re-explicar",
+  "Buscar qué hizo el agente antes"
+ ],
+ "stack": "TypeScript, SQLite, Chroma",
+ "models": "Claude para resumir; búsqueda local.",
+ "choose_if": "usas Claude Code a diario y repites contexto entre sesiones",
+ "avoid_if": "necesitas memoria para una app propia; mira `mem0`",
+ "combines_with": [
+  "claude-code",
+  "superpowers"
+ ],
+ "alternatives": [
+  "engram",
+  "agentmemory"
+ ],
+ "pick": true,
+ "limits": ""
+}

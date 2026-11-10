@@ -1,0 +1,36 @@
+{
+ "id": "repomix",
+ "name": "Repomix",
+ "role": "app",
+ "exec": "local",
+ "setup": "easy",
+ "mcp": true,
+ "tags": [
+  "code",
+  "coding-agent",
+  "typescript"
+ ],
+ "one": "Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM.",
+ "desc": "Genera un archivo XML, Markdown o texto con la estructura y el código del repo, respetando .gitignore y contando tokens. También funciona como servidor MCP.",
+ "why": "Simple y muy útil para dar contexto completo a cualquier chat de IA.",
+ "how": "Recorre el repo, filtra archivos, opcionalmente comprime el código con tree-sitter y escribe un único archivo.",
+ "install": "`npx repomix` en la carpeta del repo (o `npm i -g repomix`).",
+ "cases": [
+  "Pasar un repo a ChatGPT o Claude",
+  "Revisiones de código con contexto completo",
+  "Documentar un proyecto con IA"
+ ],
+ "stack": "TypeScript, Node.js",
+ "models": "No usa LLM.",
+ "choose_if": "quieres dar tu repo completo a un LLM",
+ "avoid_if": "el repo es enorme; mira `codebase-memory-mcp` o `serena`",
+ "combines_with": [
+  "claude-code"
+ ],
+ "alternatives": [
+  "gitnexus"
+ ],
+ "pick": true,
+ "prov": [],
+ "limits": ""
+}
