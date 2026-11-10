@@ -1,0 +1,36 @@
+{
+ "id": "index-tts",
+ "name": "IndexTTS",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "tts",
+  "audio",
+  "python"
+ ],
+ "one": "Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción.",
+ "desc": "Clona voces sin entrenar y permite controlar la duración exacta, útil para doblaje.",
+ "why": "Control de duración que facilita sincronizar voz con video.",
+ "how": "Modelo autorregresivo con control explícito de duración y emoción.",
+ "install": "Clona el repo e instala con `uv sync`, luego descarga los modelos.",
+ "cases": [
+  "Doblaje sincronizado",
+  "Voces con emoción",
+  "Narración controlada"
+ ],
+ "stack": "Python, PyTorch",
+ "models": "Modelos propios.",
+ "choose_if": "necesitas controlar duración y emoción de la voz",
+ "avoid_if": "buscas licencia totalmente libre; revisa su licencia",
+ "limits": "Licencia propia con restricciones.",
+ "combines_with": [],
+ "alternatives": [
+  "cosyvoice"
+ ],
+ "mcp": false,
+ "pick": false
+}

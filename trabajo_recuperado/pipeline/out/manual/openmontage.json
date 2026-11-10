@@ -1,0 +1,36 @@
+{
+ "id": "openmontage",
+ "name": "OpenMontage",
+ "role": "skill",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "video",
+  "coding-agent",
+  "skills"
+ ],
+ "one": "Convierte tu agente de código en un estudio de producción de video completo.",
+ "desc": "Describes el video y el agente investiga, escribe el guion, genera recursos y monta el resultado.",
+ "why": "Cubre todo el proceso de producción desde un agente.",
+ "how": "Skills y herramientas que coordinan guion, voz, imágenes y montaje.",
+ "install": "Sigue el README (el repo original ya no está disponible en GitHub; usa tu clon local).",
+ "cases": [
+  "Videos explicativos automatizados",
+  "Contenido para redes",
+  "Prototipos de producción"
+ ],
+ "stack": "Markdown, Python",
+ "models": "Usa el modelo de tu agente.",
+ "choose_if": "quieres producir videos completos con un agente",
+ "avoid_if": "solo necesitas editar clips; mira `video-use`",
+ "limits": "El repositorio original ya no está disponible en GitHub; usa tu clon local o la alternativa `remotion-superpowers`.",
+ "combines_with": [
+  "remotion"
+ ],
+ "alternatives": [
+  "remotion-superpowers"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false
+}

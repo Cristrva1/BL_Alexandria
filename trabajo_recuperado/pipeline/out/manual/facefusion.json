@@ -1,0 +1,37 @@
+{
+ "id": "facefusion",
+ "name": "FaceFusion",
+ "role": "app",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "image",
+  "video",
+  "vision",
+  "python"
+ ],
+ "one": "Plataforma para intercambio y mejora de rostros en imágenes y video.",
+ "desc": "Herramienta líder para face swap, mejora facial y sincronía labial, con controles de uso responsable.",
+ "why": "Calidad alta y muchas opciones de procesamiento.",
+ "how": "Detección, alineación y modelos de intercambio facial en ONNX con interfaz Gradio.",
+ "install": "Sigue el instalador del README (requiere Python, ffmpeg y opcionalmente GPU).",
+ "cases": [
+  "Efectos en producción audiovisual",
+  "Doblaje con sincronía labial",
+  "Pruebas de identidad visual"
+ ],
+ "stack": "Python, ONNX, Gradio",
+ "models": "Modelos propios.",
+ "choose_if": "necesitas manipulación facial de calidad con consentimiento",
+ "avoid_if": "no tienes consentimiento de las personas",
+ "limits": "Úsalo solo con consentimiento; los deepfakes pueden ser ilegales.",
+ "combines_with": [
+  "ffmpeg"
+ ],
+ "alternatives": [
+  "deep-live-cam"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false
+}

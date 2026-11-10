@@ -1,0 +1,39 @@
+{
+ "id": "gpt-sovits",
+ "name": "GPT-SoVITS",
+ "role": "app",
+ "exec": "local",
+ "setup": "medium",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "tts",
+  "audio",
+  "python"
+ ],
+ "one": "Clonación de voz y TTS con solo un minuto de audio, con interfaz web para entrenar.",
+ "desc": "Entrena una voz con muy pocos datos y sintetiza en varios idiomas. Muy popular entre creadores.",
+ "why": "Resultados notables con pocos datos de entrenamiento.",
+ "how": "Combina un modelo GPT para tokens semánticos con SoVITS para generar el audio.",
+ "install": "Descarga el paquete integrado de releases o sigue la instalación del README.",
+ "cases": [
+  "Voces personalizadas para videos",
+  "Doblaje de personajes",
+  "Prototipos de voz"
+ ],
+ "stack": "Python, PyTorch, Gradio",
+ "models": "Modelos propios.",
+ "choose_if": "quieres entrenar una voz con pocos datos",
+ "avoid_if": "prefieres zero-shot sin entrenar; mira `chatterbox`",
+ "combines_with": [
+  "rvc"
+ ],
+ "alternatives": [
+  "chatterbox",
+  "fish-speech"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

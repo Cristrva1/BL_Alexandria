@@ -1,0 +1,39 @@
+{
+ "id": "sd-webui-forge",
+ "name": "Stable Diffusion WebUI Forge",
+ "role": "app",
+ "exec": "local",
+ "setup": "medium",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "image",
+  "local",
+  "python"
+ ],
+ "one": "Versión optimizada de la WebUI de Stable Diffusion, más rápida y con menos memoria.",
+ "desc": "Mantiene la interfaz de AUTOMATIC1111 con mejoras de rendimiento y soporte de modelos nuevos como FLUX.",
+ "why": "Mejor rendimiento en GPUs modestas con la interfaz conocida.",
+ "how": "Backend reescrito para gestión de memoria y nuevos samplers sobre la WebUI de Gradio.",
+ "install": "Descarga el paquete de un clic desde los releases o clona y ejecuta `webui-user`.",
+ "cases": [
+  "Generar imágenes en GPUs de 6-8 GB",
+  "Probar FLUX con interfaz clásica",
+  "Flujos con extensiones"
+ ],
+ "stack": "Python, Gradio, PyTorch",
+ "models": "Modelos de Stable Diffusion y FLUX.",
+ "choose_if": "quieres la WebUI clásica pero más rápida",
+ "avoid_if": "prefieres flujos por nodos; mira `comfyui`",
+ "limits": "Licencia AGPL-3.0; actualizaciones irregulares.",
+ "combines_with": [
+  "controlnet"
+ ],
+ "alternatives": [
+  "stable-diffusion-webui",
+  "comfyui"
+ ],
+ "mcp": false,
+ "pick": false
+}

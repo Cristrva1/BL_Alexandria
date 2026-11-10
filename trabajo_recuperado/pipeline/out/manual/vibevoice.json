@@ -1,0 +1,36 @@
+{
+ "id": "vibevoice",
+ "name": "VibeVoice",
+ "role": "library",
+ "exec": "local",
+ "setup": "heavy",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "tts",
+  "audio",
+  "python"
+ ],
+ "one": "Modelos de voz de frontera de Microsoft para podcasts largos con varios hablantes y tiempo real.",
+ "desc": "Genera conversaciones de hasta 90 minutos con cuatro voces distintas, y tiene variantes de baja latencia.",
+ "why": "Audio largo y multi-hablante con mucha naturalidad.",
+ "how": "Un LLM sobre tokenizadores de audio continuos y un cabezal de difusión para generar voz.",
+ "install": "Clona el repo, `pip install -e .` y descarga los modelos.",
+ "cases": [
+  "Podcasts generados con IA",
+  "Diálogos entre varios personajes",
+  "Voz en tiempo real"
+ ],
+ "stack": "Python, PyTorch",
+ "models": "Modelos VibeVoice.",
+ "choose_if": "quieres generar podcasts o diálogos largos",
+ "avoid_if": "solo necesitas frases cortas; mira `kokoro`",
+ "limits": "Microsoft limita su uso a investigación; requiere GPU.",
+ "combines_with": [
+  "open-notebook"
+ ],
+ "alternatives": [],
+ "mcp": false,
+ "pick": false
+}

@@ -1,0 +1,35 @@
+{
+ "id": "radix-primitives",
+ "name": "Radix Primitives",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "ui",
+  "react",
+  "typescript"
+ ],
+ "one": "Componentes React sin estilos y accesibles para construir sistemas de diseño propios.",
+ "desc": "Resuelven accesibilidad, foco y teclado en diálogos, menús o tooltips, dejándote el estilo. Son la base de shadcn/ui.",
+ "why": "Accesibilidad de primera y libertad total de estilo.",
+ "how": "Primitivos React headless con atributos ARIA y manejo de estado incorporado.",
+ "install": "`npm i radix-ui`.",
+ "cases": [
+  "Base de un sistema de diseño",
+  "Componentes accesibles con Tailwind",
+  "Menús y diálogos robustos"
+ ],
+ "stack": "TypeScript, React",
+ "models": "No usa LLM.",
+ "choose_if": "construyes tu propio sistema de diseño",
+ "avoid_if": "quieres componentes ya estilados; mira `ui`",
+ "combines_with": [
+  "ui",
+  "tailwindcss"
+ ],
+ "alternatives": [],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

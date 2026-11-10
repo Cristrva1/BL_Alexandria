@@ -1,0 +1,34 @@
+{
+ "id": "lucide",
+ "name": "Lucide",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "ui",
+  "design",
+  "typescript"
+ ],
+ "one": "Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más.",
+ "desc": "Iconos limpios y uniformes, usados por shadcn/ui y muchas apps.",
+ "why": "Estilo coherente y paquetes para todos los frameworks.",
+ "how": "SVG optimizados exportados como componentes por framework.",
+ "install": "`npm i lucide-react`.",
+ "cases": [
+  "Iconos en una app React",
+  "Sistema de diseño coherente",
+  "Prototipos rápidos"
+ ],
+ "stack": "TypeScript, SVG",
+ "models": "No usa LLM.",
+ "choose_if": "necesitas iconos consistentes",
+ "avoid_if": "buscas ilustraciones, no iconos",
+ "combines_with": [
+  "ui"
+ ],
+ "alternatives": [],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

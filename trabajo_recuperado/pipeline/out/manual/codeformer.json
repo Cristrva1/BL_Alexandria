@@ -1,0 +1,36 @@
+{
+ "id": "codeformer",
+ "name": "CodeFormer",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "image",
+  "vision",
+  "python"
+ ],
+ "one": "Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas.",
+ "desc": "Recupera detalles de caras en fotos de baja calidad con buena fidelidad.",
+ "why": "Equilibrio configurable entre calidad y fidelidad al original.",
+ "how": "Transformer que busca en un diccionario aprendido de rasgos faciales para reconstruir la cara.",
+ "install": "Clona el repo, `pip install -r requirements.txt` y ejecuta `inference_codeformer.py`.",
+ "cases": [
+  "Restaurar fotos familiares",
+  "Mejorar rostros en imágenes generadas",
+  "Limpiar fotos de baja calidad"
+ ],
+ "stack": "Python, PyTorch",
+ "models": "Modelo propio.",
+ "choose_if": "quieres restaurar rostros",
+ "avoid_if": "quieres escalar la imagen completa; mira `real-esrgan`",
+ "limits": "Licencia no comercial (S-Lab).",
+ "combines_with": [
+  "real-esrgan"
+ ],
+ "alternatives": [
+  "gfpgan"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false
+}

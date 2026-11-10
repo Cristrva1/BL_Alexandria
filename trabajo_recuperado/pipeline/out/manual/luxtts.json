@@ -1,0 +1,37 @@
+{
+ "id": "luxtts",
+ "name": "LuxTTS",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "tts",
+  "audio",
+  "python"
+ ],
+ "one": "Modelo de TTS ligero con clonación de voz que genera audio hasta 150 veces más rápido que tiempo real.",
+ "desc": "Basado en ZipVoice, pensado para clonación rápida y realista con pocos recursos.",
+ "why": "Velocidad muy alta con buena calidad.",
+ "how": "Modelo de flujo compacto que sintetiza en pocos pasos.",
+ "install": "Sigue el README para instalar y descargar el modelo.",
+ "cases": [
+  "TTS rápido en lote",
+  "Clonación de voz ligera",
+  "Prototipos de voz"
+ ],
+ "stack": "Python, PyTorch",
+ "models": "Modelo propio.",
+ "choose_if": "necesitas TTS con clonación muy rápido",
+ "avoid_if": "buscas el proyecto más maduro; mira `chatterbox`",
+ "combines_with": [],
+ "alternatives": [
+  "kokoro",
+  "chatterbox"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

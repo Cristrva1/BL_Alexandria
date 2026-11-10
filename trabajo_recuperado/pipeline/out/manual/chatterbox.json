@@ -1,0 +1,40 @@
+{
+ "id": "chatterbox",
+ "name": "Chatterbox",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "tts",
+  "audio",
+  "python"
+ ],
+ "one": "Modelo de texto a voz open source de Resemble AI con clonación de voz y control de emoción.",
+ "desc": "Clona una voz con unos segundos de audio y ajusta la expresividad. Multilingüe y con marca de agua.",
+ "why": "Calidad comparable a servicios comerciales con licencia MIT.",
+ "how": "Modelo basado en Llama que genera tokens de voz condicionados por una referencia.",
+ "install": "`pip install chatterbox-tts`.",
+ "cases": [
+  "Voz de marca para videos",
+  "Doblaje con clonación",
+  "Agentes de voz expresivos"
+ ],
+ "stack": "Python, PyTorch",
+ "models": "Modelo propio.",
+ "choose_if": "quieres clonar voces con calidad alta y licencia libre",
+ "avoid_if": "necesitas algo muy ligero en CPU; mira `kokoro`",
+ "combines_with": [
+  "pipecat"
+ ],
+ "alternatives": [
+  "fish-speech",
+  "gpt-sovits",
+  "kokoro"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

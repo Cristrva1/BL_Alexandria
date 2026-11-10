@@ -1,0 +1,39 @@
+{
+ "id": "cosyvoice",
+ "name": "CosyVoice",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "tts",
+  "audio",
+  "python"
+ ],
+ "one": "Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue.",
+ "desc": "Síntesis de voz natural con clonación y control de estilo, también en streaming.",
+ "why": "Muy buena calidad y soporte de streaming de baja latencia.",
+ "how": "Modelo de lenguaje para tokens de voz y un modelo de flujo para generar el audio.",
+ "install": "Clona el repo, instala dependencias con conda y descarga los modelos.",
+ "cases": [
+  "TTS en streaming para agentes",
+  "Clonación de voz multilingüe",
+  "Servicios de voz propios"
+ ],
+ "stack": "Python, PyTorch",
+ "models": "Modelos propios.",
+ "choose_if": "necesitas TTS multilingüe en streaming",
+ "avoid_if": "quieres instalación muy simple; mira `kokoro`",
+ "combines_with": [
+  "pipecat"
+ ],
+ "alternatives": [
+  "fish-speech",
+  "index-tts"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

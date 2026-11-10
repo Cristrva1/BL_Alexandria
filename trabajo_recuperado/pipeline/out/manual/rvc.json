@@ -1,0 +1,36 @@
+{
+ "id": "rvc",
+ "name": "RVC WebUI",
+ "role": "app",
+ "exec": "local",
+ "setup": "medium",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "audio",
+  "tts",
+  "python"
+ ],
+ "one": "Conversión de voz: entrena un modelo con menos de 10 minutos de audio y transforma una voz en otra.",
+ "desc": "Cambia la voz de una grabación manteniendo entonación. Muy usado para covers y doblaje.",
+ "why": "Fácil de entrenar con pocos datos y con interfaz web.",
+ "how": "Recupera rasgos de la voz objetivo de un índice y los aplica con un modelo VITS.",
+ "install": "Descarga el paquete de releases o instala con `pip` siguiendo el README.",
+ "cases": [
+  "Cambiar la voz de una grabación",
+  "Covers musicales",
+  "Doblaje de personajes"
+ ],
+ "stack": "Python, PyTorch, Gradio",
+ "models": "Modelos propios.",
+ "choose_if": "quieres convertir una voz grabada en otra",
+ "avoid_if": "necesitas generar voz desde texto; mira `chatterbox`",
+ "limits": "Usa voces solo con consentimiento.",
+ "combines_with": [
+  "gpt-sovits"
+ ],
+ "alternatives": [],
+ "mcp": false,
+ "pick": false
+}

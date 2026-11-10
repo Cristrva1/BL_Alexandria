@@ -1,0 +1,38 @@
+{
+ "id": "mui",
+ "name": "Material UI",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "ui",
+  "react",
+  "javascript"
+ ],
+ "one": "Librería de componentes React completa que implementa Material Design de Google.",
+ "desc": "Cientos de componentes accesibles y personalizables para apps React, con temas y sistema de estilos propio.",
+ "why": "Una de las librerías de UI más usadas, madura y bien documentada.",
+ "how": "Componentes React estilizados con Emotion y un sistema de temas centralizado.",
+ "install": "`npm i @mui/material @emotion/react @emotion/styled`.",
+ "cases": [
+  "Paneles de administración",
+  "Apps empresariales con Material Design",
+  "Prototipos rápidos en React"
+ ],
+ "stack": "JavaScript, TypeScript, React",
+ "models": "No usa LLM.",
+ "choose_if": "quieres una librería React completa y probada",
+ "avoid_if": "prefieres copiar componentes y estilarlos con Tailwind; mira `ui`",
+ "combines_with": [
+  "recharts"
+ ],
+ "alternatives": [
+  "ant-design",
+  "ui",
+  "heroui"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

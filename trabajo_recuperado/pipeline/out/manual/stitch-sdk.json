@@ -1,0 +1,38 @@
+{
+ "id": "stitch-sdk",
+ "name": "Stitch SDK",
+ "role": "library",
+ "exec": "cloud",
+ "setup": "easy",
+ "prov": [
+  "google"
+ ],
+ "tags": [
+  "ui",
+  "design",
+  "typescript"
+ ],
+ "one": "SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código.",
+ "desc": "Automatiza Stitch, el generador de interfaces de Google, para integrarlo en tus flujos y agentes.",
+ "why": "Acceso programático a la generación de UI de Google.",
+ "how": "Llama al servicio Stitch con prompts y descarga los resultados en HTML e imagen.",
+ "install": "`npm i @google/stitch-sdk` (requiere acceso a Stitch).",
+ "cases": [
+  "Generar pantallas en lote",
+  "Prototipos desde un agente",
+  "Explorar variantes de diseño"
+ ],
+ "stack": "TypeScript",
+ "models": "Modelos de Google.",
+ "choose_if": "quieres automatizar Stitch",
+ "avoid_if": "prefieres herramientas locales; mira `screenshot-to-code`",
+ "combines_with": [
+  "stitch-skills"
+ ],
+ "alternatives": [
+  "screenshot-to-code"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

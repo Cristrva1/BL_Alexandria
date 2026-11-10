@@ -1,0 +1,35 @@
+{
+ "id": "ultralytics",
+ "name": "Ultralytics YOLO",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "vision",
+  "training",
+  "python"
+ ],
+ "one": "Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar.",
+ "desc": "Entrena un detector con tus datos en pocas líneas y expórtalo a ONNX, TensorRT o móvil.",
+ "why": "La forma más popular y sencilla de hacer detección de objetos.",
+ "how": "Arquitecturas YOLO con una API común para entrenar, validar, predecir y exportar.",
+ "install": "`pip install ultralytics` y `yolo predict model=yolo11n.pt source=imagen.jpg`.",
+ "cases": [
+  "Detectar productos en estantes",
+  "Contar personas o vehículos",
+  "Inspección de calidad"
+ ],
+ "stack": "Python, PyTorch",
+ "models": "Modelos YOLO.",
+ "choose_if": "necesitas detección de objetos práctica",
+ "avoid_if": "necesitas licencia permisiva para producto cerrado; revisa su licencia",
+ "limits": "Licencia AGPL-3.0; uso comercial cerrado requiere licencia empresarial.",
+ "combines_with": [
+  "supervision",
+  "label-studio"
+ ],
+ "alternatives": [],
+ "pick": true,
+ "mcp": false,
+ "prov": []
+}

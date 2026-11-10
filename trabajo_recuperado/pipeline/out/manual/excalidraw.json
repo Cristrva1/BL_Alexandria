@@ -1,0 +1,36 @@
+{
+ "id": "excalidraw",
+ "name": "Excalidraw",
+ "role": "app",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "design",
+  "docs",
+  "typescript"
+ ],
+ "one": "Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa.",
+ "desc": "Dibuja diagramas rápidos que parecen bocetos, colabora en tiempo real y embébela en tus apps como componente React.",
+ "why": "Simple, bonita y muy usada para diagramas técnicos.",
+ "how": "Editor en canvas con estado en JSON; colaboración cifrada de extremo a extremo.",
+ "install": "Úsala en excalidraw.com, `npm i @excalidraw/excalidraw` o self-host con Docker.",
+ "cases": [
+  "Diagramas de arquitectura",
+  "Bocetos de UI",
+  "Pizarras en reuniones"
+ ],
+ "stack": "TypeScript, React, Canvas",
+ "models": "Funciones opcionales de IA.",
+ "choose_if": "quieres diagramas rápidos con estilo boceto",
+ "avoid_if": "prefieres diagramas como texto; mira `mermaid`",
+ "combines_with": [
+  "mermaid"
+ ],
+ "alternatives": [
+  "tldraw"
+ ],
+ "pick": true,
+ "mcp": false,
+ "prov": [],
+ "limits": ""
+}

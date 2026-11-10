@@ -1,0 +1,40 @@
+{
+ "id": "onlook",
+ "name": "Onlook",
+ "role": "app",
+ "exec": "local",
+ "setup": "easy",
+ "prov": [
+  "anthropic"
+ ],
+ "tags": [
+  "design",
+  "ui",
+  "coding-agent",
+  "typescript"
+ ],
+ "one": "Editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma.",
+ "desc": "Edita tu app en un lienzo visual o pide cambios a la IA, y Onlook escribe el código en tu proyecto.",
+ "why": "Une diseño visual y código real, alternativa abierta a Lovable o v0.",
+ "how": "Ejecuta tu app y mapea los elementos del DOM a su código fuente para editarlos visualmente o con IA.",
+ "install": "Úsalo en su web o sigue el README para correrlo en local.",
+ "cases": [
+  "Ajustar estilos sin tocar código",
+  "Prototipos con IA",
+  "Colaboración entre diseño y desarrollo"
+ ],
+ "stack": "TypeScript, Next.js, Tailwind",
+ "models": "Claude y otros.",
+ "choose_if": "quieres editar tu app React visualmente con ayuda de IA",
+ "avoid_if": "necesitas diseño desde cero en vectores; mira `penpot`",
+ "combines_with": [
+  "tailwindcss",
+  "ui"
+ ],
+ "alternatives": [
+  "open-design"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

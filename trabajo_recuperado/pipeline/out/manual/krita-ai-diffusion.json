@@ -1,0 +1,38 @@
+{
+ "id": "krita-ai-diffusion",
+ "name": "Krita AI Diffusion",
+ "role": "app",
+ "exec": "local",
+ "setup": "medium",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "image",
+  "design",
+  "python"
+ ],
+ "one": "Plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y outpainting.",
+ "desc": "Pinta, selecciona y genera dentro de tu editor de imágenes favorito; usa ComfyUI por debajo.",
+ "why": "Integra la IA en un flujo de ilustración real, sin cambiar de herramienta.",
+ "how": "El plugin envía capas y selecciones a un servidor ComfyUI local o remoto.",
+ "install": "Instala el plugin desde el gestor de Krita; él instala ComfyUI automáticamente.",
+ "cases": [
+  "Ilustración con apoyo de IA",
+  "Rellenar o extender imágenes",
+  "Bocetos a arte final"
+ ],
+ "stack": "Python, Krita, ComfyUI",
+ "models": "Modelos de Stable Diffusion y FLUX.",
+ "choose_if": "ilustras en Krita y quieres IA integrada",
+ "avoid_if": "quieres automatizar generación en lote; mira `comfyui`",
+ "combines_with": [
+  "comfyui"
+ ],
+ "alternatives": [
+  "invokeai"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

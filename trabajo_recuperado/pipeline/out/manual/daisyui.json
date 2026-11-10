@@ -1,0 +1,36 @@
+{
+ "id": "daisyui",
+ "name": "daisyUI",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "ui",
+  "design",
+  "javascript"
+ ],
+ "one": "La librería de componentes más popular para Tailwind CSS, con clases semánticas y temas.",
+ "desc": "Añade clases como `btn` o `card` sobre Tailwind para escribir menos HTML, sin JavaScript.",
+ "why": "Rápida de adoptar y compatible con cualquier framework.",
+ "how": "Plugin de Tailwind que genera clases de componentes y temas con variables CSS.",
+ "install": "`npm i -D daisyui` y añádelo como plugin en tu CSS de Tailwind.",
+ "cases": [
+  "Prototipos rápidos con Tailwind",
+  "Temas claro y oscuro",
+  "Proyectos sin React"
+ ],
+ "stack": "JavaScript, CSS, Tailwind",
+ "models": "No usa LLM.",
+ "choose_if": "usas Tailwind y quieres componentes sin JavaScript",
+ "avoid_if": "usas React y quieres control total; mira `ui`",
+ "combines_with": [
+  "tailwindcss"
+ ],
+ "alternatives": [
+  "ui"
+ ],
+ "pick": true,
+ "mcp": false,
+ "prov": [],
+ "limits": ""
+}

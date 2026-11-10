@@ -50,6 +50,11 @@ for p in sorted((SP / 'out').glob('auto/*.json')) + sorted((SP / 'out').glob('ma
     rid = data.get('id') or p.stem
     outs[rid] = data
 
+ONE_OVERRIDES = json.load(open(SP / 'overrides.json', encoding='utf-8')) if (SP / 'overrides.json').exists() else {}
+for _rid, _one in ONE_OVERRIDES.items():
+    if _rid in outs:
+        outs[_rid]['one'] = _one
+
 ROLES = {'platform', 'runtime', 'library', 'skill', 'directory', 'app'}
 EXECS = {'local', 'cloud', 'hybrid'}
 SETUPS = {'easy', 'medium', 'heavy'}

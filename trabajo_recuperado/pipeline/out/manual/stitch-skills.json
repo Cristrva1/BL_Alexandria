@@ -1,0 +1,35 @@
+{
+ "id": "stitch-skills",
+ "name": "Stitch Skills",
+ "role": "skill",
+ "exec": "cloud",
+ "setup": "easy",
+ "tags": [
+  "skills",
+  "design",
+  "ui"
+ ],
+ "one": "Colección de skills de agente para trabajar con el servidor MCP de Google Stitch.",
+ "desc": "Skills en el estándar abierto Agent Skills que enseñan a Claude Code, Codex o Gemini CLI a diseñar con Stitch.",
+ "why": "Oficial de Google Labs y compatible con varios agentes.",
+ "how": "Carpetas SKILL.md que el agente carga para usar las herramientas MCP de Stitch.",
+ "install": "Copia las skills a la carpeta de skills de tu agente y configura el MCP de Stitch.",
+ "cases": [
+  "Diseñar pantallas desde el agente",
+  "Iterar UI con Stitch",
+  "Pasar diseños a código"
+ ],
+ "stack": "TypeScript, Markdown",
+ "models": "Usa el modelo de tu agente.",
+ "choose_if": "usas Stitch con un agente de código",
+ "avoid_if": "no usas Stitch",
+ "combines_with": [
+  "stitch-sdk",
+  "gemini-cli"
+ ],
+ "alternatives": [],
+ "pick": true,
+ "mcp": false,
+ "prov": [],
+ "limits": ""
+}

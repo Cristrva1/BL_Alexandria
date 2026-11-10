@@ -1,0 +1,40 @@
+{
+ "id": "whisper-cpp",
+ "name": "whisper.cpp",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "easy",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "stt",
+  "audio",
+  "local",
+  "cpp"
+ ],
+ "one": "Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles.",
+ "desc": "Transcribe voz a texto en local sin Python ni GPU obligatoria, incluso en tiempo real. Base de muchas apps de dictado.",
+ "why": "Rendimiento excelente en hardware común y en Apple Silicon.",
+ "how": "Implementa el modelo Whisper sobre ggml con cuantización y aceleración Metal, CUDA o Vulkan.",
+ "install": "`brew install whisper-cpp` o compila con `cmake`; descarga un modelo con el script incluido.",
+ "cases": [
+  "Transcribir reuniones en local",
+  "Dictado en apps de escritorio",
+  "Subtítulos sin internet"
+ ],
+ "stack": "C++, C",
+ "models": "Modelos Whisper.",
+ "choose_if": "quieres transcribir en local sin GPU",
+ "avoid_if": "necesitas marcas de tiempo por palabra y diarización; mira `whisperx`",
+ "combines_with": [
+  "ffmpeg"
+ ],
+ "alternatives": [
+  "faster-whisper",
+  "whisper"
+ ],
+ "pick": true,
+ "mcp": false,
+ "limits": ""
+}

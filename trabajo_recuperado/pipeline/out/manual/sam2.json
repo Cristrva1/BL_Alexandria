@@ -1,0 +1,37 @@
+{
+ "id": "sam2",
+ "name": "SAM 2",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "vision",
+  "video",
+  "python"
+ ],
+ "one": "Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video.",
+ "desc": "Marca un objeto en un fotograma y SAM 2 lo sigue en todo el video. Más rápido que SAM en imágenes.",
+ "why": "Segmentación de video interactiva de alta calidad.",
+ "how": "Arquitectura con memoria en streaming que propaga máscaras entre fotogramas.",
+ "install": "Clona el repo, `pip install -e .` y descarga los checkpoints.",
+ "cases": [
+  "Rotoscopía de video",
+  "Seguimiento de objetos",
+  "Anotar datasets de video"
+ ],
+ "stack": "Python, PyTorch",
+ "models": "Modelo SAM 2.",
+ "choose_if": "necesitas segmentar objetos en video",
+ "avoid_if": "solo trabajas con imágenes sueltas; `segment-anything` basta",
+ "combines_with": [
+  "label-studio",
+  "supervision"
+ ],
+ "alternatives": [
+  "segment-anything"
+ ],
+ "pick": true,
+ "mcp": false,
+ "prov": [],
+ "limits": ""
+}

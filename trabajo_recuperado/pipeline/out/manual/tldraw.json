@@ -1,0 +1,35 @@
+{
+ "id": "tldraw",
+ "name": "tldraw",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "design",
+  "ui",
+  "react",
+  "typescript"
+ ],
+ "one": "SDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas.",
+ "desc": "Base de muchas herramientas de pizarra y de UI generativa con IA. Ofrece colaboración y personalización completa.",
+ "why": "SDK de lienzo muy pulido y extensible.",
+ "how": "Motor de canvas en React con formas, herramientas y almacén reactivo personalizable.",
+ "install": "`npm i tldraw`.",
+ "cases": [
+  "Pizarra dentro de tu app",
+  "Herramientas de diagramado propias",
+  "Prototipos con IA sobre lienzo"
+ ],
+ "stack": "TypeScript, React",
+ "models": "No usa LLM por sí mismo.",
+ "choose_if": "construyes una app con lienzo infinito",
+ "avoid_if": "solo necesitas una pizarra lista; usa `excalidraw`",
+ "limits": "Licencia propia: uso en producción requiere licencia o marca de agua.",
+ "combines_with": [],
+ "alternatives": [
+  "excalidraw"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false
+}

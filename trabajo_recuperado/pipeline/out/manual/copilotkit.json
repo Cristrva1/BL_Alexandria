@@ -1,0 +1,41 @@
+{
+ "id": "copilotkit",
+ "name": "CopilotKit",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "easy",
+ "prov": [
+  "openai",
+  "anthropic"
+ ],
+ "tags": [
+  "ui",
+  "agents",
+  "react",
+  "typescript"
+ ],
+ "one": "Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI.",
+ "desc": "Añade copilotos, chat y agentes que actúan sobre tu app, con estado compartido entre agente y UI. Se integra con LangGraph, Mastra y más.",
+ "why": "Conecta agentes del backend con la interfaz de forma estándar (AG-UI).",
+ "how": "Componentes React y un runtime que sincronizan estado, acciones y streaming entre la UI y el agente.",
+ "install": "`npx copilotkit@latest init` o `npm i @copilotkit/react-core @copilotkit/react-ui`.",
+ "cases": [
+  "Copiloto dentro de un SaaS",
+  "Agentes que editan formularios",
+  "UI generativa con LangGraph"
+ ],
+ "stack": "TypeScript, React",
+ "models": "Agnóstico.",
+ "choose_if": "quieres agentes que interactúen con la UI de tu app",
+ "avoid_if": "solo necesitas una ventana de chat; mira `assistant-ui`",
+ "combines_with": [
+  "langgraph",
+  "mastra"
+ ],
+ "alternatives": [
+  "assistant-ui"
+ ],
+ "pick": true,
+ "mcp": false,
+ "limits": ""
+}

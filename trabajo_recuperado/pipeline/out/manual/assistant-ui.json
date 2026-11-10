@@ -1,0 +1,38 @@
+{
+ "id": "assistant-ui",
+ "name": "assistant-ui",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "ui",
+  "chatbot",
+  "react",
+  "typescript"
+ ],
+ "one": "Librería React y TypeScript para interfaces de chat con IA de calidad producción.",
+ "desc": "Componentes componibles de chat con streaming, adjuntos, markdown y herramientas, compatibles con AI SDK y LangGraph.",
+ "why": "La experiencia de chat tipo ChatGPT más completa como librería.",
+ "how": "Primitivos headless y componentes estilados conectados a runtimes de distintos backends.",
+ "install": "`npx assistant-ui@latest init`.",
+ "cases": [
+  "Chat de soporte en tu web",
+  "Interfaz para un agente propio",
+  "Prototipo de asistente"
+ ],
+ "stack": "TypeScript, React",
+ "models": "Agnóstico.",
+ "choose_if": "necesitas una UI de chat pulida en React",
+ "avoid_if": "quieres agentes que manipulen tu app; mira `copilotkit`",
+ "combines_with": [
+  "vercel-ai",
+  "ui"
+ ],
+ "alternatives": [
+  "copilotkit"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}
