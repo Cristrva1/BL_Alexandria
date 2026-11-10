@@ -1,0 +1,35 @@
+{
+ "id": "plasmic",
+ "name": "plasmic",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "docker",
+  "javascript",
+  "react",
+  "typescript"
+ ],
+ "one": "Builder visual para apps y sitios conectado a tu propia base de código, que permite diseñar y publicar sin perder el control del código real.",
+ "desc": "Cubre el hueco entre no-code y desarrollo a medida.",
+ "why": "Une edición visual tipo no-code con tus componentes y datos existentes, reduciendo el salto entre diseñador y desarrollador. Soporta Next.js, Gatsby y otros frameworks React con un SDK que carga los diseños en runtime.",
+ "how": "Editor visual web que genera/consume componentes React/Next.js de tu repo y los sirve vía SDK (`@plasmicapp/loader-*`) o código generado, manteniendo sincronía con tu codebase.",
+ "install": "`npm i @plasmicapp/loader-nextjs` (o el loader del framework) y conectar el proyecto a tu app. Requiere un proyecto React/Next existente.",
+ "cases": [
+  "Construir landings/experiencias sobre un stack existente",
+  "Edición visual de componentes propios por perfiles no técnicos",
+  "Headless CMS visual"
+ ],
+ "stack": "Node.js, React/Next.js",
+ "models": "No específica.",
+ "choose_if": "quieres editar visual sobre tu código React",
+ "avoid_if": "generas desde texto sin codebase previo ([open-design](#-open-design))",
+ "limits": "",
+ "combines_with": [
+  "tailwindcss"
+ ],
+ "alternatives": [],
+ "pick": false
+}

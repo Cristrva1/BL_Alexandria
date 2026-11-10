@@ -1,0 +1,41 @@
+{
+ "id": "n8n",
+ "name": "n8n",
+ "role": "platform",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "automation",
+  "docker",
+  "javascript",
+  "python",
+  "typescript"
+ ],
+ "one": "Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos.",
+ "desc": "Resuelve la primitiva de \"conectar todo con todo\" en self-host, sin el coste recurrente de un SaaS.",
+ "why": "Se ha convertido en un estándar de facto para automatización self-hosted, muy adoptado por su enorme catálogo de nodos y su fuerte integración de IA (LangChain, MCP). Su comunidad y su documentación lo hacen el punto de partida habitual.",
+ "how": "Encadena nodos (triggers, transformaciones, integraciones) en un grafo de workflow ejecutado por un runtime Node.js, con nodos de IA basados en LangChain y soporte MCP. Los workflows se exportan como JSON, lo que permite versionarlos.",
+ "install": "Vía `docker compose` o imagen Docker oficial; también `npx n8n` para una prueba rápida local. Requiere una base de datos (SQLite por defecto, PostgreSQL para producción).",
+ "cases": [
+  "Extraer leads → enriquecer con IA → notificar",
+  "Pipelines de negocio sin SaaS cerrado",
+  "Workflows versionados como JSON junto al código"
+ ],
+ "stack": "Node.js, TypeScript, Docker",
+ "models": "Múltiples por nodo (OpenAI, Anthropic…); se potencia con MCP y LLMs.",
+ "choose_if": "quieres el motor central de automatización con máximo catálogo",
+ "avoid_if": "buscas algo minimalista o sin self-host",
+ "limits": "La versión self-host comunitaria tiene límites en ejecuciones y usuarios; algunas funciones avanzadas requieren licencia.",
+ "combines_with": [
+  "n8n-mcp",
+  "n8n-skills",
+  "evolution-api"
+ ],
+ "alternatives": [
+  "activepieces",
+  "huginn"
+ ],
+ "pick": false
+}

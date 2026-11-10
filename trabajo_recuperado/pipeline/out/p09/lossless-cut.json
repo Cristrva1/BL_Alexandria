@@ -1,0 +1,29 @@
+{
+  "id": "lossless-cut",
+  "name": "LosslessCut",
+  "role": "app",
+  "exec": "local",
+  "setup": "easy",
+  "mcp": false,
+  "prov": [],
+  "tags": ["video", "audio", "ui", "typescript"],
+  "one": "App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad.",
+  "desc": "LosslessCut es una interfaz gráfica sobre FFmpeg para recortar y fusionar archivos de video y audio sin recompresión. Sirve para descartar gigas de material de cámara, GoPro o dron, extraer o reemplazar pistas, cambiar de contenedor (MKV a MP4) y editar metadatos o capítulos, en Windows, macOS y Linux.",
+  "why": "Al copiar los streams en vez de recodificar, los cortes son casi instantáneos y sin pérdida incluso en archivos enormes. Detecta escenas, silencios y fotogramas negros, y ofrece CLI y API HTTP para automatizarlo.",
+  "how": "App Electron con React que reproduce con el motor HTML5 de Chromium (o con FFmpeg para formatos no soportados) y exporta desde el archivo original con FFmpeg en modo copia de stream, sin tocar los fotogramas.",
+  "install": "Descarga gratis el binario para Windows, macOS o Linux desde GitHub Releases, o instálalo desde Mac App Store, Microsoft Store o Snap Store. Ya incluye FFmpeg.",
+  "cases": [
+    "Recortar horas de grabación de cámara o dron en segundos",
+    "Extraer o reemplazar pistas de audio y subtítulos",
+    "Dividir por escenas o silencios antes de editar un reel"
+  ],
+  "stack": "TypeScript, Electron, React, FFmpeg",
+  "models": "No usa LLM.",
+  "choose_if": "necesitas recortar o unir material rápido y sin recomprimir, con interfaz gráfica",
+  "avoid_if": "necesitas efectos, transiciones o un montaje con capas; mira `opencut` o, por código, `moviepy`",
+  "limits": "Sin recodificar, los cortes solo caen exactos en fotogramas clave, así que el punto de corte puede desplazarse unos fotogramas.",
+  "combines_with": ["yt-dlp", "whisperx", "moviepy"],
+  "alternatives": [],
+  "pick": false,
+  "notes": "La versión de Flathub no es oficial (no la mantiene el autor); las descargas oficiales son GitHub Releases y las tiendas de Apple, Microsoft y Snap."
+}

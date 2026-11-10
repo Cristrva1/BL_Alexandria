@@ -1,0 +1,36 @@
+{
+ "id": "sd-webui-controlnet",
+ "name": "sd-webui-controlnet",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "postgres",
+  "python",
+  "typescript",
+  "vision"
+ ],
+ "one": "Extensión que integra el control estructural de ControlNet directamente en Stable Diffusion WebUI (AUTOMATIC1111), con preprocesadores para poses, bordes, profundidad y más.",
+ "desc": "Lleva el control composicional al flujo de trabajo habitual de la WebUI sin tocar código.",
+ "why": "Es la forma estándar de usar ControlNet dentro del ecosistema AUTOMATIC1111, con panel propio y soporte para múltiples unidades de control simultáneas; muy popular entre quienes ya viven en esa UI.",
+ "how": "Se instala como extensión de la WebUI y añade un panel que aplica modelos ControlNet sobre la difusión PyTorch+GPU del propio WebUI, encadenando preprocesador (genera el mapa) + modelo de control (inyecta la condición).",
+ "install": "Desde la pestaña Extensions de la WebUI (instalar por URL del repo) o `git clone` en `extensions/`; descargar luego los modelos ControlNet a `models/ControlNet`. Requiere la WebUI ya funcionando con GPU.",
+ "cases": [
+  "Afinar creativos en SD WebUI con poses/sketches/mapas",
+  "Combinar varios ControlNet a la vez (pose + depth)",
+  "Iterar composición sin salir de la UI"
+ ],
+ "stack": "Python, SD WebUI (AUTOMATIC1111), modelos ControlNet",
+ "models": "Local (difusión).",
+ "choose_if": "ya usas SD WebUI y quieres ControlNet sin cambiar de entorno",
+ "avoid_if": "trabajas en ComfyUI (usa sus propios nodos) o por código ([diffusers](#-diffusers))",
+ "limits": "",
+ "combines_with": [
+  "stable-diffusion-webui",
+  "controlnet"
+ ],
+ "alternatives": [],
+ "pick": false
+}

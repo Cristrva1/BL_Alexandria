@@ -1,0 +1,36 @@
+{
+ "id": "mirofish",
+ "name": "MiroFish",
+ "role": "runtime",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "docker",
+  "javascript",
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios.",
+ "desc": "Permite simular dinámicas sociales en un \"sandbox\". Proyecto de nicho.",
+ "why": "Simula futuros con agentes que tienen personalidad, memoria y lógica que evolucionan, ofreciendo una \"vista de dios\" del escenario. El enfoque de simulación multiagente lo distingue de los frameworks orientados a tareas.",
+ "how": "Según lo descrito, instancia muchos agentes con perfiles y memoria que interactúan en un mundo simulado para estimar resultados; pila Python/web con persistencia.",
+ "install": "Consulta el README del repo (`git clone` y ejecución en Python). Requiere claves de LLM para los agentes y cómputo no trivial para simulaciones grandes (de ahí el setup 🔴).",
+ "cases": [
+  "Simular impacto de una noticia/política",
+  "Predecir tendencias en un \"sandbox\" social",
+  "What-if sobre escenarios con muchos actores"
+ ],
+ "stack": "Python/web, Docker, PostgreSQL",
+ "models": "Múltiples; agnóstico vía variables de entorno.",
+ "choose_if": "simulas futuros/escenarios con muchos actores",
+ "avoid_if": "necesitas tareas deterministas o resultados reproducibles",
+ "limits": "Proyecto de nicho, coste de LLM alto por la cantidad de agentes y resultados no deterministas.",
+ "combines_with": [
+  "openevolve"
+ ],
+ "alternatives": [],
+ "pick": false
+}

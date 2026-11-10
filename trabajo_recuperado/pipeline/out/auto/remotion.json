@@ -1,0 +1,34 @@
+{
+ "id": "remotion",
+ "name": "remotion",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "react",
+  "typescript"
+ ],
+ "one": "Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4.",
+ "desc": "Convierte el video en un artefacto versionable y parametrizable desde tu código frontend.",
+ "why": "Muy popular para generar video a escala y plantillas parametrizadas (uno de los proyectos de video-por-código más activos del ecosistema JS); permite crear miles de variantes cambiando props.",
+ "how": "Renderiza componentes React frame a frame con un navegador headless (Chromium) y los une con ffmpeg; las props alimentan las plantillas, y el reloj de Remotion sincroniza animaciones con el tiempo del video.",
+ "install": "`npm create video` (o `npm i remotion @remotion/cli`). Requiere Node y Chromium para render; el render final usa ffmpeg.",
+ "cases": [
+  "Generar variantes de video a escala",
+  "Plantillas de video programáticas para marketing",
+  "Animaciones de datos sincronizadas con audio"
+ ],
+ "stack": "Node.js, React, Chromium, ffmpeg",
+ "models": "N/A.",
+ "choose_if": "generas video a escala con React y quieres variantes parametrizadas",
+ "avoid_if": "trabajas en Python ([moviepy](#-moviepy)) o buscas un editor visual",
+ "limits": "",
+ "combines_with": [
+  "open-generative-ai"
+ ],
+ "alternatives": [],
+ "pick": false
+}

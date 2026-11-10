@@ -1,0 +1,37 @@
+{
+ "id": "agent-reach",
+ "name": "Agent-Reach",
+ "role": "app",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "scraping",
+  "research",
+  "python"
+ ],
+ "one": "CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs.",
+ "desc": "Un solo comando para que el agente lea y busque en redes y plataformas populares, incluidas chinas como Bilibili y XiaoHongShu.",
+ "why": "Evita pagar APIs caras para que tu agente consulte redes sociales.",
+ "how": "Combina scrapers y clientes de cada plataforma detrás de una interfaz de línea de comandos que el agente invoca.",
+ "install": "Sigue el README: `pip install` del paquete y configura cookies si alguna plataforma lo pide.",
+ "cases": [
+  "Agente que lee hilos de Reddit",
+  "Resumir comentarios de YouTube",
+  "Investigar repos de GitHub"
+ ],
+ "stack": "Python",
+ "models": "No usa LLM; lo usa tu agente.",
+ "choose_if": "tu agente necesita leer redes sociales sin APIs de pago",
+ "avoid_if": "necesitas datos con garantías de términos de servicio",
+ "limits": "Puede violar términos de servicio de algunas plataformas; úsalo con cuidado.",
+ "combines_with": [
+  "claude-code",
+  "last30days-skill"
+ ],
+ "alternatives": [
+  "snscrape"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false
+}

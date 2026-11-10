@@ -1,0 +1,40 @@
+{
+ "id": "context7",
+ "name": "Context7",
+ "role": "runtime",
+ "exec": "cloud",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "mcp"
+ ],
+ "tags": [
+  "mcp",
+  "docs",
+  "typescript"
+ ],
+ "one": "Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente.",
+ "desc": "Evita que el modelo invente APIs viejas: busca la documentación vigente de la librería que estás usando y la inyecta en el prompt.",
+ "why": "Muy adoptado en agentes de código; reduce errores por APIs obsoletas.",
+ "how": "Indexa documentación de miles de proyectos y la sirve por MCP filtrada por librería y versión.",
+ "install": "Añade a tu cliente MCP: `npx -y @upstash/context7-mcp` (o el servidor remoto con clave).",
+ "cases": [
+  "Programar con librerías que cambian rápido",
+  "Evitar APIs alucinadas",
+  "Consultar docs sin salir del agente"
+ ],
+ "stack": "TypeScript",
+ "models": "No usa LLM.",
+ "choose_if": "tu agente de código usa librerías que cambian a menudo",
+ "avoid_if": "trabajas sin conexión a internet",
+ "limits": "Depende del servicio en la nube de Upstash.",
+ "combines_with": [
+  "claude-code",
+  "cline",
+  "opencode"
+ ],
+ "alternatives": [
+  "deepwiki-open"
+ ],
+ "pick": true
+}

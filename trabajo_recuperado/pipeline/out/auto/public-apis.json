@@ -1,0 +1,38 @@
+{
+ "id": "public-apis",
+ "name": "public-apis",
+ "role": "directory",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "docker",
+  "javascript",
+  "postgres",
+  "python",
+  "react",
+  "typescript"
+ ],
+ "one": "Directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos.",
+ "desc": "Resuelve el descubrimiento: en un solo lugar tienes URLs, autenticación y HTTPS de cada API en lugar de buscarlas una a una.",
+ "why": "Es una de las referencias más estrelladas de GitHub para encontrar fuentes de datos externas, mantenida por la comunidad y APILayer. Su organización temática y su antigüedad lo convierten en el catálogo de facto para este caso.",
+ "how": "Tabla en Markdown organizada por temática con la URL, tipo de autenticación (apiKey, OAuth, ninguno) y nivel de HTTPS de cada API; se navega y se consume cada API según su propia documentación.",
+ "install": "Sin instalación; se navega el README (o su versión web) y se consume cada API según su propia documentación y claves.",
+ "cases": [
+  "Conectar fuentes externas de datos",
+  "Encontrar una API para un proyecto",
+  "Explorar categorías (geocoding, finanzas, weather) antes de decidir stack"
+ ],
+ "stack": "Markdown",
+ "models": "N/A (catálogo; cada API define la suya).",
+ "choose_if": "buscas datos externos y no sabes qué API usar",
+ "avoid_if": "ya tienes tus fuentes definidas o necesitas SLA empresarial (son APIs públicas, sin garantías)",
+ "limits": "",
+ "combines_with": [
+  "n8n",
+  "firecrawl"
+ ],
+ "alternatives": [],
+ "pick": false
+}

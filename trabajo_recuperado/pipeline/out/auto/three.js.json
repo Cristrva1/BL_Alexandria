@@ -1,0 +1,34 @@
+{
+ "id": "three.js",
+ "name": "three.js",
+ "role": "library",
+ "exec": "local",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "typescript"
+ ],
+ "one": "Motor 3D (WebGL) para renderizar gráficos y escenas interactivas directamente en el navegador.",
+ "desc": "Abstrae la complejidad de WebGL en escenas, cámaras, luces y mallas.",
+ "why": "Es el estándar del 3D web, con un ecosistema enorme de ejemplos, loaders y helpers alrededor. Su longevidad (desde 2010) y la comunidad activa lo hacen la base de casi todo 3D web.",
+ "how": "Abstrae WebGL en un grafo de escena (escenas, cámaras, luces, mallas) y gestiona el bucle de render por ti, con materiales y geometrías listas para usar.",
+ "install": "`npm i three` o vía CDN/módulo ES. Para algo más que una demo necesitas familiaridad con conceptos de gráficos 3D.",
+ "cases": [
+  "Escenas 3D y visualizaciones inmersivas",
+  "Experiencias web interactivas",
+  "Base para frameworks como react-three-fiber"
+ ],
+ "stack": "JavaScript/WebGL",
+ "models": "N/A.",
+ "choose_if": "renderizas 3D en web y quieres control a bajo nivel",
+ "avoid_if": "trabajas solo 2D o prefieres la ergonomía de React ([react-three-fiber](#-react-three-fiber))",
+ "limits": "",
+ "combines_with": [
+  "react-three-fiber",
+  "gsap"
+ ],
+ "alternatives": [],
+ "pick": false
+}

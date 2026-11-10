@@ -1,0 +1,38 @@
+{
+ "id": "trigger-dev",
+ "name": "Trigger.dev",
+ "role": "platform",
+ "exec": "hybrid",
+ "setup": "medium",
+ "tags": [
+  "automation",
+  "agents",
+  "typescript"
+ ],
+ "one": "Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript.",
+ "desc": "Escribe tareas largas o con reintentos en TypeScript dentro de tu app y Trigger.dev las ejecuta, reintenta y monitorea. Ideal para equipos de producto con Next.js o Node que no quieren operar colas.",
+ "why": "Experiencia de desarrollo muy cuidada: código normal, sin timeouts y con observabilidad incluida.",
+ "how": "Despliegas tus tareas a su runtime (cloud o self-host), que las ejecuta con checkpoints, colas, concurrencia y reintentos.",
+ "install": "`npx trigger.dev@latest init` dentro de tu proyecto; se usa con su cloud o en self-host con Docker.",
+ "cases": [
+  "Generar PDFs o videos en segundo plano",
+  "Agentes de IA con pasos largos",
+  "Webhooks con reintentos"
+ ],
+ "stack": "TypeScript, Node.js, PostgreSQL, Docker",
+ "models": "Agnóstico: se integra con el AI SDK de Vercel y cualquier API.",
+ "choose_if": "tu app es TypeScript y necesitas tareas largas confiables sin montar colas",
+ "avoid_if": "quieres un editor visual para no programadores; mira `n8n`",
+ "combines_with": [
+  "vercel-ai",
+  "langfuse"
+ ],
+ "alternatives": [
+  "windmill",
+  "kestra"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

@@ -1,0 +1,34 @@
+{
+ "id": "whisperx",
+ "name": "whisperX",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "python",
+  "typescript"
+ ],
+ "one": "Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional.",
+ "desc": "Convierte la salida \"por segmento\" de Whisper en timings palabra a palabra con etiqueta de speaker.",
+ "why": "Es la opción de referencia cuando los timings finos y el \"quién habla\" importan, muy usada para subtítulos de reels y entrevistas; combina tres componentes probados en un solo pipeline.",
+ "how": "Usa faster-whisper para la transcripción, modelos wav2vec2 (torchaudio) para forzar la alineación fonema/palabra y pyannote para la diarización de hablantes; todo orquestado desde Python.",
+ "install": "`pip install whisperx` (requiere PyTorch y, para diarización, un token de Hugging Face con acceso aceptado a los modelos pyannote).",
+ "cases": [
+  "Subtítulos bien ajustados para reels/entrevistas",
+  "Separar hablantes en podcasts",
+  "Exportar SRT/VTT con timings de palabra"
+ ],
+ "stack": "Python, faster-whisper, wav2vec2, pyannote",
+ "models": "Local.",
+ "choose_if": "necesitas subtítulos precisos o diarización",
+ "avoid_if": "te basta texto plano ([whisper](#-whisper)) o no quieres gestionar tokens de HF",
+ "limits": "",
+ "combines_with": [
+  "whisper",
+  "moviepy"
+ ],
+ "alternatives": [],
+ "pick": false
+}

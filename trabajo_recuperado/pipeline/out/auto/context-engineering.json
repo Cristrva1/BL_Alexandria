@@ -1,0 +1,36 @@
+{
+ "id": "context-engineering",
+ "name": "Context-Engineering",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "postgres",
+  "python",
+  "react",
+  "typescript"
+ ],
+ "one": "Guía y curso práctico sobre \"ingeniería de contexto\", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso.",
+ "desc": "Resuelve la primitiva de \"qué meto en el prompt\" de forma sistemática.",
+ "why": "Aporta un marco conceptual sólido y didáctico en un tema cada vez más decisivo para el rendimiento de los agentes. Combina teoría y notebooks ejecutables, lo que lo hace útil tanto para aprender como para aplicar.",
+ "how": "Combina lecciones en Markdown y notebooks que enseñan técnicas de selección, compresión y estructuración de contexto, de forma agnóstica al modelo. Los notebooks muestran técnicas concretas (RAG, resumen, ventanas deslizantes) reproducibles.",
+ "install": "Clona el repo y abre los notebooks/Markdown localmente; no requiere instalación más allá de un entorno de notebooks (Jupyter) y claves de API para los ejemplos.",
+ "cases": [
+  "Diseñar prompts y contexto eficientes",
+  "Entender límites de ventana",
+  "Aplicar RAG y compresión de contexto"
+ ],
+ "stack": "Markdown/notebooks (Python)",
+ "models": "Agnóstico vía variables de entorno.",
+ "choose_if": "quieres profundizar en contexto y RAG",
+ "avoid_if": "buscas skills ejecutables listas para copiar",
+ "limits": "",
+ "combines_with": [
+  "andrej-karpathy-skills",
+  "headroom"
+ ],
+ "alternatives": [],
+ "pick": false
+}

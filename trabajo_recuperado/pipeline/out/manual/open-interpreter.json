@@ -1,0 +1,41 @@
+{
+ "id": "open-interpreter",
+ "name": "Open Interpreter",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "easy",
+ "prov": [
+  "openai",
+  "local"
+ ],
+ "tags": [
+  "coding-agent",
+  "local",
+  "rust"
+ ],
+ "one": "Agente de código para modelos abiertos como Kimi y GLM, pensado para correr con modelos locales o baratos.",
+ "desc": "Ejecuta código y comandos en tu máquina para cumplir tareas descritas en lenguaje natural. Su versión actual se enfoca en modelos abiertos.",
+ "why": "Proyecto pionero que popularizó dejar que un LLM ejecute código en tu equipo.",
+ "how": "El modelo genera código o comandos que se ejecutan localmente y su salida vuelve al bucle de conversación.",
+ "install": "Sigue la instalación del README (binario de releases o instalador del proyecto).",
+ "cases": [
+  "Automatizar tareas de archivos y datos",
+  "Agente con modelos abiertos baratos",
+  "Prototipos de análisis de datos"
+ ],
+ "stack": "Rust, Python",
+ "models": "Modelos abiertos (Kimi, GLM) y locales; compatible con APIs tipo OpenAI.",
+ "choose_if": "quieres un agente que ejecute código usando modelos abiertos",
+ "avoid_if": "buscas un agente maduro para repos grandes; mira `opencode`",
+ "limits": "Ejecuta código en tu máquina: úsalo con aprobación o en un entorno aislado.",
+ "combines_with": [
+  "ollama",
+  "e2b"
+ ],
+ "alternatives": [
+  "opencode",
+  "goose"
+ ],
+ "mcp": false,
+ "pick": false
+}

@@ -1,0 +1,44 @@
+{
+ "id": "goose",
+ "name": "goose",
+ "role": "runtime",
+ "exec": "hybrid",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "openai",
+  "anthropic",
+  "google",
+  "local"
+ ],
+ "tags": [
+  "coding-agent",
+  "agents",
+  "mcp",
+  "rust"
+ ],
+ "one": "Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM.",
+ "desc": "Funciona como app de escritorio o CLI y va más allá del código: automatiza tareas de desarrollo y de sistema con extensiones MCP. Nacido en Block.",
+ "why": "Diseñado alrededor de MCP desde el inicio, con app de escritorio y recetas compartibles.",
+ "how": "Un núcleo en Rust ejecuta el bucle del agente y carga extensiones MCP como herramientas.",
+ "install": "Descarga la app desde los releases o `curl -fsSL https://github.com/block/goose/releases/download/stable/download_cli.sh | bash`.",
+ "cases": [
+  "Automatizar tareas de desarrollo con MCP",
+  "Agente de escritorio para no programadores",
+  "Recetas reutilizables para el equipo"
+ ],
+ "stack": "Rust, TypeScript, Electron",
+ "models": "Agnóstico: cualquier proveedor o modelo local.",
+ "choose_if": "quieres un agente abierto con app de escritorio y MCP",
+ "avoid_if": "solo programas en terminal y quieres el más usado; mira `opencode`",
+ "combines_with": [
+  "playwright-mcp",
+  "github-mcp-server"
+ ],
+ "alternatives": [
+  "opencode",
+  "claude-code"
+ ],
+ "pick": false,
+ "limits": ""
+}

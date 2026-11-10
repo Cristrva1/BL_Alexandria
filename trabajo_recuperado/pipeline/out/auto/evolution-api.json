@@ -1,0 +1,37 @@
+{
+ "id": "evolution-api",
+ "name": "evolution-api",
+ "role": "app",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "automation",
+  "docker",
+  "javascript",
+  "postgres",
+  "typescript"
+ ],
+ "one": "API REST que actúa como middleware para automatizar WhatsApp y mensajería multicanal, exponiendo el envío/recepción de mensajes a tus aplicaciones mediante una capa gestionable.",
+ "desc": "Resuelve la primitiva de \"conectar WhatsApp a mi stack\" sin acoplarte a un SaaS cerrado.",
+ "why": "Es una de las puertas de enlace de WhatsApp open-source más usadas en LATAM y Brasil para producción, con comunidad activa y soporte de webhooks, multi-instancia y gestión de sesiones. Su adopción la convierte en el puente habitual hacia n8n o chatwoot.",
+ "how": "Mantiene sesiones de WhatsApp por instancia (vía Baileys/whatsapp-web.js) y reenvía eventos vía webhooks, apoyándose en Node.js/Fastify y Redis para estado y colas. Cada instancia se gestiona por API REST, lo que permite escalar horizontalmente con Docker.",
+ "install": "Despliegue habitual con `docker compose` usando la imagen oficial, configurando variables de entorno y Redis; requiere mantener las sesiones de WhatsApp activas.",
+ "cases": [
+  "Notificaciones de pedidos/facturas",
+  "Enrutar mensajes a agentes vía webhook",
+  "Puente entre WhatsApp y un LLM en n8n"
+ ],
+ "stack": "Node.js/TypeScript, Fastify, Redis, Docker",
+ "models": "No usa IA directa; es el puente al LLM que tú orquestes.",
+ "choose_if": "operas WhatsApp en producción con varias instancias",
+ "avoid_if": "solo necesitas un bot de prueba o un único script ([OpenWA](#-openwa) basta)",
+ "limits": "Las sesiones de WhatsApp pueden caer y requieren supervisión; el ToS de WhatsApp limita volumen y automatización masiva.",
+ "combines_with": [
+  "n8n",
+  "chatwoot"
+ ],
+ "alternatives": [],
+ "pick": false
+}

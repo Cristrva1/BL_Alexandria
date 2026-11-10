@@ -1,0 +1,36 @@
+{
+ "id": "stable-diffusion-webui",
+ "name": "stable-diffusion-webui",
+ "role": "skill",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "postgres",
+  "python",
+  "typescript",
+  "vision"
+ ],
+ "one": "Interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de extensiones desde el navegador.",
+ "desc": "Es la UI que popularizó la difusión local.",
+ "why": "Fue la UI que popularizó SD y mantiene una de las comunidades y catálogos de plugins más grandes del ecosistema. Su madurez y la cantidad de extensiones (ControlNet, ADetailer, ReActor) la hacen muy versátil.",
+ "how": "Levanta un servidor Gradio que orquesta modelos de difusión sobre PyTorch+GPU, con pestañas y scripts para cada modo de generación y un sistema de extensiones instalables desde la propia UI.",
+ "install": "`git clone` y ejecutar `webui-user.bat` (Windows) o `webui.sh` (Linux/Mac); el script crea el entorno e instala dependencias automáticamente. Requiere GPU con VRAM decente y checkpoints descargados aparte.",
+ "cases": [
+  "Probar estilos rápido desde una UI",
+  "Usar el enorme ecosistema de extensiones",
+  "Inpainting y img2img sin montar pipeline"
+ ],
+ "stack": "Python, GPU, PyTorch, Gradio, modelos locales",
+ "models": "Local-first (difusión).",
+ "choose_if": "quieres extensiones y comunidad amplia",
+ "avoid_if": "prefieres un flujo moderno y limpio ([InvokeAI](#-invokeai))",
+ "limits": "Requiere GPU con VRAM suficiente; la base de código es veterana y el flujo es menos limpio que alternativas modernas como InvokeAI.",
+ "combines_with": [
+  "sd-webui-controlnet"
+ ],
+ "alternatives": [],
+ "pick": false
+}

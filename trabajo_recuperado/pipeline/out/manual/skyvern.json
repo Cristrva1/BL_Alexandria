@@ -1,0 +1,40 @@
+{
+ "id": "skyvern",
+ "name": "Skyvern",
+ "role": "platform",
+ "exec": "hybrid",
+ "setup": "medium",
+ "prov": [
+  "openai",
+  "anthropic"
+ ],
+ "tags": [
+  "browser",
+  "automation",
+  "python"
+ ],
+ "one": "Automatiza flujos en el navegador con LLM y visión, sin selectores frágiles.",
+ "desc": "Completa formularios, compras o descargas en sitios que nunca vio, entendiendo la página con visión. Incluye UI, API y workflows.",
+ "why": "Robusto ante cambios de diseño porque no depende de XPaths.",
+ "how": "Agentes con visión analizan capturas y el DOM, planifican acciones y las ejecutan con Playwright.",
+ "install": "`pip install skyvern` y `skyvern quickstart`, o Docker Compose.",
+ "cases": [
+  "Rellenar formularios de proveedores",
+  "Descargar facturas de portales",
+  "Automatizar trámites web"
+ ],
+ "stack": "Python, Playwright, React",
+ "models": "OpenAI, Anthropic y otros.",
+ "choose_if": "automatizas portales web que cambian a menudo",
+ "avoid_if": "necesitas scraping masivo y barato; mira `crawl4ai`",
+ "limits": "Licencia AGPL-3.0.",
+ "combines_with": [
+  "n8n"
+ ],
+ "alternatives": [
+  "browser-use",
+  "stagehand"
+ ],
+ "mcp": false,
+ "pick": false
+}

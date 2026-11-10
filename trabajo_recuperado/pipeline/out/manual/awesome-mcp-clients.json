@@ -1,0 +1,32 @@
+{
+ "id": "awesome-mcp-clients",
+ "name": "Awesome MCP Clients",
+ "role": "directory",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "mcp"
+ ],
+ "one": "Lista curada de clientes que soportan Model Context Protocol: apps, IDEs y agentes.",
+ "desc": "Ayuda a elegir dónde usar tus servidores MCP: chats de escritorio, editores, CLIs y plataformas.",
+ "why": "Complementa a las listas de servidores con el otro lado del protocolo.",
+ "how": "Lista en Markdown organizada por tipo de cliente.",
+ "install": "No se instala: abre el repo y consulta la lista.",
+ "cases": [
+  "Elegir un cliente MCP",
+  "Comparar soporte de funciones",
+  "Descubrir apps nuevas"
+ ],
+ "stack": "Markdown",
+ "models": "No aplica.",
+ "choose_if": "buscas un cliente para tus servidores MCP",
+ "avoid_if": "buscas servidores; mira `awesome-mcp-servers`",
+ "combines_with": [
+  "awesome-mcp-servers"
+ ],
+ "alternatives": [],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

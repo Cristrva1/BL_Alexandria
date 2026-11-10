@@ -1,0 +1,35 @@
+{
+ "id": "notebooklm-py",
+ "name": "notebooklm-py",
+ "role": "skill",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código.",
+ "desc": "Cubre el vacío de automatización que la interfaz web oficial no ofrece.",
+ "why": "Abre el NotebookLM real a la automatización, algo que la interfaz web oficial no permite, útil para procesar fuentes a escala. Se instala como un paquete pip y expone una API síncrona clara.",
+ "how": "Envuelve los endpoints internos de NotebookLM en una librería Python que sube fuentes y dispara síntesis usando tu sesión/credenciales de Google (no hay API pública oficial).",
+ "install": "`pip install` de la librería más configuración de credenciales de Google (cookies de sesión o auth no oficial).",
+ "cases": [
+  "Subir 20 PDFs y pedir una síntesis temática",
+  "Automatizar generación de notas de audio en lote",
+  "Volcar fuentes a un notebook desde un pipeline"
+ ],
+ "stack": "Python",
+ "models": "NotebookLM/Google (Gemini Pro/Ultra).",
+ "choose_if": "automatizas el NotebookLM real y aceptas el riesgo de API no oficial",
+ "avoid_if": "quieres todo local ([open-notebook](#-open-notebook))",
+ "limits": "Usa endpoints internos no oficiales de Google; puede romper ante cambios de la web y depende de credenciales de sesión válidas.",
+ "combines_with": [
+  "notebooklm-mcp-cli"
+ ],
+ "alternatives": [],
+ "pick": false
+}

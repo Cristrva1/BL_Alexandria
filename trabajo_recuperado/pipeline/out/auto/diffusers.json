@@ -1,0 +1,35 @@
+{
+ "id": "diffusers",
+ "name": "diffusers",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "Librería de Hugging Face para construir y ejecutar pipelines de modelos de difusión (imagen, video, audio) desde código, con APIs estandarizadas para schedulers, componentes y modelos.",
+ "desc": "Es la capa de abstracción que unifica el zoo de modelos de difusión bajo una misma interfaz Python.",
+ "why": "Es el estándar de facto para usar difusión programáticamente, mantenido por Hugging Face y con soporte inmediato para los modelos más nuevos (SDXL, Flux, SD3, video). Su adopción es masiva: casi cualquier proyecto de difusión en Python la usa como base.",
+ "how": "Carga modelos open-source desde el Hub y ejecuta su inferencia sobre PyTorch+GPU (o alternativas como Flax/Diffusers-ONNX) mediante clases `Pipeline` componibles; cada paso (scheduler, VAE, U-Net/transformer) es intercambiable.",
+ "install": "`pip install diffusers transformers accelerate`; los pesos se descargan automáticamente desde el Hub al instanciar un pipeline. Requiere GPU para uso práctico (aunque corre en CPU, muy lento) y espacio en disco para los pesos.",
+ "cases": [
+  "Generación/transformación visual desde scripts propios",
+  "Base reutilizable para apps y servicios",
+  "Experimentación con schedulers y modelos nuevos"
+ ],
+ "stack": "Python, PyTorch, Hugging Face Hub",
+ "models": "Modelos open-source (local/self-host), agnóstico del proveedor.",
+ "choose_if": "programas generación y quieres control total por código",
+ "avoid_if": "quieres una UI lista ([Fooocus](#-fooocus)) o grafos nodales ([ComfyUI](#-comfyui))",
+ "limits": "GPU prácticamente obligatoria para latencia razonable; gestionar versiones de pesos y dependencias puede romper pipelines entre releases.",
+ "combines_with": [
+  "controlnet",
+  "cosmos"
+ ],
+ "alternatives": [],
+ "pick": false
+}

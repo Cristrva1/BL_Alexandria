@@ -1,0 +1,35 @@
+{
+ "id": "gsap",
+ "name": "GSAP",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "postgres",
+  "react",
+  "typescript"
+ ],
+ "one": "Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM.",
+ "desc": "Es la herramienta de referencia del motion web profesional.",
+ "why": "Referencia veterana del motion web profesional, con rendimiento y precisión difíciles de igualar para animación detallada. Su ecosistema de plugins (ScrollTrigger, Flip, DrawSVG) cubre casos que otras librerías no alcanzan.",
+ "how": "Motor JavaScript que anima propiedades de cualquier objeto/DOM mediante tweens y timelines encadenables, con plugins como ScrollTrigger para animaciones ligadas al scroll.",
+ "install": "`npm i gsap` o vía CDN. Algunos plugins premium requieren membresía del Club GreenSock; los core son libres.",
+ "cases": [
+  "Animaciones avanzadas y timelines sincronizados",
+  "Efectos scroll y transiciones complejas",
+  "Microinteracciones de alta precisión fuera de React"
+ ],
+ "stack": "JavaScript",
+ "models": "N/A.",
+ "choose_if": "necesitas animación avanzada y control fino de timelines",
+ "avoid_if": "te basta animar componentes React con API declarativa ([motion](#-motion))",
+ "limits": "",
+ "combines_with": [
+  "motion"
+ ],
+ "alternatives": [],
+ "pick": false
+}

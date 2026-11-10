@@ -1,0 +1,36 @@
+{
+ "id": "servers",
+ "name": "servers",
+ "role": "directory",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad.",
+ "desc": "Resuelve la falta de ejemplos canónicos: muestra cómo se construye un servidor MCP correcto, paso a paso.",
+ "why": "Es la fuente canónica y didáctica para entender cómo se construye un servidor MCP, respaldada por los mantenedores del propio protocolo. Incluye ejemplos prácticos (filesystem, fetch, git, etc.) que sirven de plantilla para los tuyos.",
+ "how": "Cada subdirectorio es un servidor MCP de ejemplo (filesystem, fetch, git…) que se ejecuta con `npx` y se conecta a un cliente compatible mediante el protocolo MCP sobre stdio o HTTP.",
+ "install": "Ejecutar un servidor del repo con `npx` (p. ej. `npx -y @modelcontextprotocol/server-filesystem /ruta`) y añadirlo a la config del cliente MCP. Requiere Node.js para los servers TS.",
+ "cases": [
+  "Aprender a construir un servidor MCP",
+  "Plantillas para arrancar el tuyo",
+  "Ejemplos educativos de features (tools, resources, prompts)"
+ ],
+ "stack": "TypeScript/Python",
+ "models": "Clientes MCP (Claude, Cursor, etc.); sin LLM propio.",
+ "choose_if": "quieres ejemplos canónicos y plantillas fiables",
+ "avoid_if": "buscas soluciones listas para producción (son demos educativas, no hardening)",
+ "limits": "",
+ "combines_with": [
+  "mcp-use",
+  "awesome-mcp-servers"
+ ],
+ "alternatives": [],
+ "pick": false
+}

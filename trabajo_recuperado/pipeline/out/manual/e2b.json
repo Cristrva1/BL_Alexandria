@@ -1,0 +1,37 @@
+{
+ "id": "e2b",
+ "name": "E2B",
+ "role": "platform",
+ "exec": "cloud",
+ "setup": "easy",
+ "tags": [
+  "agents",
+  "security",
+  "python"
+ ],
+ "one": "Sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas.",
+ "desc": "Arranca microVMs aisladas en milisegundos donde el agente puede ejecutar código, instalar paquetes o usar un escritorio. Muy usado para intérpretes de código y agentes de datos.",
+ "why": "Aislamiento real con Firecracker y SDKs simples; estándar en agentes que ejecutan código.",
+ "how": "Cada sandbox es una microVM Firecracker controlada por SDK; el agente envía código y recibe la salida.",
+ "install": "`pip install e2b-code-interpreter` o `npm i @e2b/code-interpreter` con tu clave de API.",
+ "cases": [
+  "Intérprete de código para un chatbot",
+  "Agentes de análisis de datos",
+  "Ejecutar código generado sin riesgo"
+ ],
+ "stack": "Python, TypeScript, Firecracker",
+ "models": "Agnóstico.",
+ "choose_if": "tu agente ejecuta código y necesitas aislarlo",
+ "avoid_if": "solo necesitas ejecutar código localmente de confianza",
+ "limits": "El servicio gestionado es de pago por uso; el self-host es más complejo.",
+ "combines_with": [
+  "smolagents",
+  "open-swe"
+ ],
+ "alternatives": [
+  "sandbox"
+ ],
+ "pick": true,
+ "mcp": false,
+ "prov": []
+}

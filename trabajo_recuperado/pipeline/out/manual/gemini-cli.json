@@ -1,0 +1,42 @@
+{
+ "id": "gemini-cli",
+ "name": "Gemini CLI",
+ "role": "runtime",
+ "exec": "cloud",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "google",
+  "mcp"
+ ],
+ "tags": [
+  "coding-agent",
+  "agents",
+  "typescript"
+ ],
+ "one": "Agente de IA open source de Google que lleva Gemini a tu terminal, con cuota gratuita generosa.",
+ "desc": "Programa, investiga y automatiza tareas desde la terminal con contexto de millones de tokens y búsqueda de Google integrada. Admite MCP y extensiones.",
+ "why": "Cuota gratuita amplia con cuenta de Google y ventana de contexto enorme.",
+ "how": "Un CLI en Node.js orquesta herramientas (archivos, shell, búsqueda web, MCP) con modelos Gemini.",
+ "install": "`npx @google/gemini-cli` o `npm install -g @google/gemini-cli` y ejecuta `gemini`.",
+ "cases": [
+  "Entender repos muy grandes",
+  "Investigar con búsqueda web integrada",
+  "Automatizar tareas sin pagar API"
+ ],
+ "stack": "TypeScript, Node.js",
+ "models": "Modelos Gemini de Google.",
+ "choose_if": "quieres un agente de terminal potente con cuota gratuita",
+ "avoid_if": "buscas el agente con mejor desempeño en tareas largas; mira `claude-code`",
+ "combines_with": [
+  "stitch-skills",
+  "context7"
+ ],
+ "alternatives": [
+  "claude-code",
+  "codex",
+  "opencode"
+ ],
+ "pick": false,
+ "limits": ""
+}

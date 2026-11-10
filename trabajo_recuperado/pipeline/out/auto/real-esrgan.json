@@ -1,0 +1,34 @@
+{
+ "id": "real-esrgan",
+ "name": "Real-ESRGAN",
+ "role": "library",
+ "exec": "local",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "Herramienta de superresolución y restauración para imágenes reales que reescala (2×/4×) y limpia material de baja calidad sin rehacerlo desde cero.",
+ "desc": "A diferencia de los upscalers bicúbicos, infiere detalle plausible al ampliar.",
+ "why": "Es uno de los upscalers open-source más usados y citados (del grupo de Xintao Wang), con resultados sólidos en fotos y arte, e integrado como opción nativa en SD WebUI, ComfyUI y muchas UIs.",
+ "how": "Emplea una red GAN práctica sobre PyTorch+GPU entrenada con un pipeline de degradaciones sintéticas (blur + ruido + compresión) para inferir detalle al ampliar la imagen; ofrece modelos específicos para anime vs. foto.",
+ "install": "`pip install realesrgan` o ejecutable portable; los modelos preentrenados se descargan al primer uso. GPU recomendada (también hay build CPU).",
+ "cases": [
+  "Reescalar creativos antiguos",
+  "Mejorar detalle de assets comprimidos",
+  "Upscaling de frames de video en pipelines"
+ ],
+ "stack": "Python, PyTorch, GPU",
+ "models": "Modelos locales.",
+ "choose_if": "reescalas imágenes o video a más resolución",
+ "avoid_if": "solo necesitas arreglar rostros ([GFPGAN](#-gfpgan)) o buscas difusión para reimaginar",
+ "limits": "",
+ "combines_with": [
+  "gfpgan"
+ ],
+ "alternatives": [],
+ "pick": false
+}

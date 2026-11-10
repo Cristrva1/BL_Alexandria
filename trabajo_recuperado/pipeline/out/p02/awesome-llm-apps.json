@@ -1,0 +1,29 @@
+{
+  "id": "awesome-llm-apps",
+  "name": "Awesome LLM Apps",
+  "role": "directory",
+  "exec": "hybrid",
+  "setup": "medium",
+  "mcp": false,
+  "prov": ["openai", "anthropic", "google", "local"],
+  "tags": ["agents", "rag", "learning", "python"],
+  "one": "Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM.",
+  "desc": "Repositorio de Shubham Saboo con plantillas de código abierto ordenadas por tipo: agentes simples de un solo archivo, agentes avanzados con herramientas y memoria, equipos multiagente, agentes de voz, agentes con MCP, RAG, chat con documentos y webs, fine-tuning y cursos rápidos de Google ADK y OpenAI Agents SDK. Según la app usa OpenAI, Anthropic, Google, xAI, DeepSeek o modelos abiertos.",
+  "why": "Cada ejemplo es un proyecto pequeño y completo que puedes ejecutar en minutos y adaptar a tu caso. Es Apache 2.0 y se añaden plantillas nuevas con frecuencia.",
+  "how": "Cada app vive en su carpeta con `requirements.txt` y un script principal, casi siempre en Python con Streamlit, y se ejecuta con tu API key. Las skills de `agent_skills/` se instalan en tu agente de código con el Skills CLI.",
+  "install": "`git clone https://github.com/Shubhamsaboo/awesome-llm-apps`, entra en la carpeta de la app, `pip install -r requirements.txt` y ejecuta su script (p. ej. `streamlit run travel_agent.py`) con la API key del modelo que use.",
+  "cases": [
+    "Partir de una plantilla de agente de research o de RAG",
+    "Comparar frameworks de agentes con apps parecidas",
+    "Probar un agente conectado a GitHub o Notion por MCP"
+  ],
+  "stack": "Python, Streamlit, OpenAI Agents SDK, Google ADK, Agno",
+  "models": "Varía por app: OpenAI, Anthropic, Google Gemini, xAI, DeepSeek y modelos abiertos como Llama o Qwen.",
+  "choose_if": "quieres una plantilla de app con LLM que funcione desde el primer día para adaptarla a tu proyecto",
+  "avoid_if": "buscas un curso estructurado con lecciones en orden; mira `ai-agents-for-beginners` o `generative-ai-for-beginners`",
+  "limits": "Son demos: la calidad y el mantenimiento varían entre apps y casi ninguna está preparada para producción tal cual.",
+  "combines_with": ["streamlit", "openai-agents-python", "adk-python", "firecrawl"],
+  "alternatives": ["openai-cookbook", "claude-cookbooks"],
+  "pick": false,
+  "notes": "Repo nuevo."
+}

@@ -1,0 +1,37 @@
+{
+ "id": "scrapegraph-ai",
+ "name": "Scrapegraph-ai",
+ "role": "platform",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "docker",
+  "javascript",
+  "python",
+  "scraping",
+  "typescript"
+ ],
+ "one": "Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping.",
+ "desc": "Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. Muy popular por permitir scraping \"by prompt\", combinando extracción con razonamiento del modelo y soporte para múltiples proveedores.",
+ "why": "Muy popular por permitir scraping \"by prompt\", combinando extracción con razonamiento del modelo y soporte para múltiples proveedores. Su filosofía \"You Only Scrape Once\" resume el valor: una descripción, un grafo.",
+ "how": "Construye un grafo dirigido de nodos (fetch, parse, generación con LLM) que recorre la página y produce el resultado estructurado pedido, usando LangGraph por debajo.",
+ "install": "`pip install scrapegraphai` más `playwright install` para el render dinámico. Requiere una clave de proveedor de LLM y los binarios de Playwright.",
+ "cases": [
+  "Extracción semántica de sitios",
+  "Datasets útiles para IA",
+  "Scraping sin selectores, solo describiendo los campos"
+ ],
+ "stack": "Python, LangChain/LangGraph, Playwright",
+ "models": "Múltiples LLMs (OpenAI, Anthropic, locales vía Ollama); agnóstico vía variables de entorno.",
+ "choose_if": "quieres estructura semántica \"by prompt\" en Python",
+ "avoid_if": "te basta un esquema simple ([llm-scraper](#-llm-scraper)) o el coste de LLM por página es alto",
+ "limits": "",
+ "combines_with": [
+  "crawl4ai",
+  "graphrag"
+ ],
+ "alternatives": [],
+ "pick": false
+}

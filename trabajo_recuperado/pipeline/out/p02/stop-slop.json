@@ -1,0 +1,29 @@
+{
+  "id": "stop-slop",
+  "name": "Stop Slop",
+  "role": "skill",
+  "exec": "hybrid",
+  "setup": "easy",
+  "mcp": false,
+  "prov": [],
+  "tags": ["skills", "prompts", "docs"],
+  "one": "Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad.",
+  "desc": "Un SKILL.md con tres archivos de referencia (frases a eliminar, estructuras a evitar y ejemplos antes/después) que enseña a Claude o a cualquier LLM a quitar muletillas, contrastes binarios, fragmentos dramáticos, voz pasiva y otros patrones predecibles. Cierra con una rúbrica de cinco dimensiones para decidir si el texto necesita otra vuelta.",
+  "why": "Es corto, sin dependencias y portable: funciona como skill de Claude Code, como conocimiento de un proyecto de Claude o pegado en un system prompt. La rúbrica sobre 50 puntos da un criterio concreto para revisar.",
+  "how": "El SKILL.md fija reglas de frase (sin aperturas de relleno, sin rayas, sin extremos vagos, voz activa) y remite a los archivos de referencia, que se cargan cuando hacen falta. Cada texto se puntúa en franqueza, ritmo, confianza, autenticidad y densidad.",
+  "install": "`git clone https://github.com/hardikpandya/stop-slop ~/.claude/skills/stop-slop`; en otros entornos, pega el contenido de `SKILL.md` en tus instrucciones o en el system prompt.",
+  "cases": [
+    "Limpiar muletillas y estructuras cliché de un borrador",
+    "Fijar reglas de estilo en el system prompt de una app",
+    "Puntuar un texto antes de publicarlo"
+  ],
+  "stack": "Markdown, SKILL.md",
+  "models": "No llama a un LLM: lo aplica tu agente o el modelo al que le pases el SKILL.md (Claude u otro).",
+  "choose_if": "quieres reglas de estilo compactas y portables que puedas usar como skill o dentro de un system prompt",
+  "avoid_if": "prefieres una skill que reescriba mostrando su proceso y pueda imitar tu voz; mira `humanizer`",
+  "limits": "Reglas pensadas para prosa en inglés y algunas muy estrictas (prohíbe todos los adverbios y las rayas); el repo casi no recibe cambios desde marzo de 2026.",
+  "combines_with": ["marketingskills", "claude-code"],
+  "alternatives": ["humanizer"],
+  "pick": false,
+  "notes": "`humanizer` cumple la misma función, así que pasa de combines_with a alternatives."
+}

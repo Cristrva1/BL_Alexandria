@@ -1,0 +1,38 @@
+{
+ "id": "headroom",
+ "name": "headroom",
+ "role": "platform",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "automation",
+  "docker",
+  "javascript",
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial.",
+ "desc": "Resuelve el dolor habitual de los agentes: quedarse sin ventana de contexto a mitad de una tarea larga.",
+ "why": "Proyecto pequeño y específico que ataca un problema real de los agentes de forma directa y agnóstica al proveedor. Su enfoque de \"maximizar señal por token\" encaja en pipelines donde el contexto crece sin control.",
+ "how": "Resume y condensa el contexto entrante para maximizar la señal por token antes de pasarlo al modelo, de forma agnóstica al proveedor, preservando las partes relevantes y descartando ruido.",
+ "install": "Instalación según el repo (`pip`/`npm`); requiere un LLM para la condensación (o modo local si lo soporta).",
+ "cases": [
+  "Resumir/condensar contexto largo",
+  "Ganar espacio en la ventana",
+  "Mantener conversaciones largas dentro del límite de tokens"
+ ],
+ "stack": "Python/TypeScript",
+ "models": "Agnóstico vía variables de entorno.",
+ "choose_if": "te quedas sin contexto en sesiones largas",
+ "avoid_if": "tus prompts ya caben holgados o la pérdida de detalle por resumen es inaceptable",
+ "limits": "",
+ "combines_with": [
+  "context-engineering",
+  "codegraph"
+ ],
+ "alternatives": [],
+ "pick": false
+}

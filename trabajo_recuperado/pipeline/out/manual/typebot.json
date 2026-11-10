@@ -1,0 +1,37 @@
+{
+ "id": "typebot",
+ "name": "Typebot",
+ "role": "platform",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "chatbot",
+  "automation",
+  "typescript"
+ ],
+ "one": "Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más.",
+ "desc": "Diseña conversaciones con bloques arrastrables (preguntas, condiciones, integraciones, IA) y publícalas en web o WhatsApp. Pensado para captar leads y formularios conversacionales.",
+ "why": "Editor muy pulido, con bloques de OpenAI y webhooks; alternativa abierta a Landbot.",
+ "how": "Una app Next.js guarda los flujos y un motor los ejecuta en el widget o por API.",
+ "install": "Self-host con Docker Compose siguiendo la guía del repo (requiere PostgreSQL y SMTP), o usa su cloud.",
+ "cases": [
+  "Captar leads con formularios conversacionales",
+  "Bots de FAQ en la web",
+  "Encuestas con IA"
+ ],
+ "stack": "TypeScript, Next.js, PostgreSQL, Docker",
+ "models": "Bloques para OpenAI y otros proveedores.",
+ "choose_if": "quieres un chatbot guiado sin programar, con buena UX",
+ "avoid_if": "necesitas un agente abierto con razonamiento libre; mira `botpress`",
+ "limits": "Licencia FSL: uso comercial con restricciones para ofrecerlo como SaaS.",
+ "combines_with": [
+  "n8n",
+  "evolution-api"
+ ],
+ "alternatives": [
+  "botpress"
+ ],
+ "pick": true,
+ "mcp": false,
+ "prov": []
+}

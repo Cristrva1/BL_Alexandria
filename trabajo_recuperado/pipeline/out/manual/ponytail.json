@@ -1,0 +1,35 @@
+{
+ "id": "ponytail",
+ "name": "Ponytail",
+ "role": "skill",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "skills",
+  "coding-agent"
+ ],
+ "one": "Skill que hace que tu agente de código piense como un senior minimalista: el mejor código es el que no escribes.",
+ "desc": "Empuja al agente a reutilizar, borrar y simplificar antes de añadir código nuevo. Reduce soluciones infladas y cambios innecesarios.",
+ "why": "Se volvió viral por atacar el problema más común de los agentes: escribir demasiado código.",
+ "how": "Instrucciones y reglas que el agente carga como skill o archivo de contexto antes de programar.",
+ "install": "Copia la skill a la carpeta de skills de tu agente siguiendo el README.",
+ "cases": [
+  "Revisiones que proponen borrar código",
+  "Refactors más pequeños",
+  "Evitar dependencias innecesarias"
+ ],
+ "stack": "Markdown, JavaScript",
+ "models": "Agnóstico.",
+ "choose_if": "tu agente tiende a sobrecomplicar las soluciones",
+ "avoid_if": "necesitas una metodología completa de proyecto; mira `bmad-method`",
+ "combines_with": [
+  "claude-code",
+  "superpowers",
+  "andrej-karpathy-skills"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": "",
+ "alternatives": []
+}

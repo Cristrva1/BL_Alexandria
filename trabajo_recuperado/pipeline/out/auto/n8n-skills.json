@@ -1,0 +1,38 @@
+{
+ "id": "n8n-skills",
+ "name": "n8n-skills",
+ "role": "skill",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "docker",
+  "javascript",
+  "postgres",
+  "python",
+  "skills",
+  "typescript"
+ ],
+ "one": "Conjunto de 14 skills estructuradas para Claude Code orientadas a construir flujos de n8n correctos, evitando errores al generar su JSON.",
+ "desc": "Resuelve la primitiva de \"JSON de n8n que no falla\" reduciendo bucles de error.",
+ "why": "Ataca un problema concreto y frecuente —el JSON de n8n generado por IA suele fallar— reduciendo bucles de error y timeouts. Su foco narrow la hace más eficaz que prompts genéricos para este caso.",
+ "how": "Las skills aportan plantillas y reglas de validación que guían al modelo a producir nodos y conexiones n8n sintácticamente válidos. Cada skill cubre un patrón de workflow (trigger, transformación, integración) con su esquema JSON.",
+ "install": "Clona el repo y copia las skills (`SKILL.md`) a tu directorio de skills de Claude Code u otro asistente compatible; sin dependencias.",
+ "cases": [
+  "Evitar errores de sintaxis al generar JSON de n8n",
+  "Plantillas de workflows complejos",
+  "Acelerar la creación de flujos con IA"
+ ],
+ "stack": "`SKILL.md`, Markdown",
+ "models": "Claude Code u otro que lea skills.",
+ "choose_if": "generas workflows n8n con IA y te cansan los fallos de JSON",
+ "avoid_if": "no usas n8n",
+ "limits": "",
+ "combines_with": [
+  "n8n",
+  "n8n-mcp"
+ ],
+ "alternatives": [],
+ "pick": false
+}

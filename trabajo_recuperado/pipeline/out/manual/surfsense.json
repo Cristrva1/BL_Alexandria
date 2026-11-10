@@ -1,0 +1,41 @@
+{
+ "id": "surfsense",
+ "name": "SurfSense",
+ "role": "app",
+ "exec": "hybrid",
+ "setup": "medium",
+ "prov": [
+  "openai",
+  "local"
+ ],
+ "tags": [
+  "research",
+  "rag",
+  "notebooks",
+  "python"
+ ],
+ "one": "Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos.",
+ "desc": "Conecta tus fuentes (archivos, Slack, Notion, GitHub, web) y conversa con ellas con citas, genera podcasts y reportes. Puede funcionar sin conexión.",
+ "why": "Más conectores y control que NotebookLM, con opción totalmente local.",
+ "how": "Indexa fuentes con búsqueda híbrida y reranking; agentes responden con citas usando el LLM elegido.",
+ "install": "Self-host con Docker Compose siguiendo la guía del repo.",
+ "cases": [
+  "Cuaderno de investigación privado",
+  "Podcasts a partir de documentos",
+  "Buscar en todas las fuentes del equipo"
+ ],
+ "stack": "Python, FastAPI, Next.js, PostgreSQL",
+ "models": "Agnóstico, incluidos modelos locales.",
+ "choose_if": "quieres un NotebookLM propio y con más fuentes",
+ "avoid_if": "solo quieres el NotebookLM de Google por código; mira `notebooklm-py`",
+ "combines_with": [
+  "ollama"
+ ],
+ "alternatives": [
+  "open-notebook",
+  "khoj"
+ ],
+ "pick": true,
+ "mcp": false,
+ "limits": ""
+}

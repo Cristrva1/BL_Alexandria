@@ -1,0 +1,44 @@
+{
+ "id": "langgraph",
+ "name": "LangGraph",
+ "role": "runtime",
+ "exec": "hybrid",
+ "setup": "medium",
+ "prov": [
+  "openai",
+  "anthropic",
+  "google",
+  "local"
+ ],
+ "tags": [
+  "agents",
+  "python"
+ ],
+ "one": "Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming.",
+ "desc": "Modela agentes y flujos multiagente como grafos de nodos con estado compartido y checkpoints. Pensado para agentes de producción que deben ser controlables y recuperables.",
+ "why": "Estándar de facto para agentes controlables en Python, usado en producción por muchas empresas.",
+ "how": "Cada nodo lee y escribe un estado tipado; un runtime ejecuta el grafo, guarda checkpoints y permite pausar para aprobación humana.",
+ "install": "`pip install -U langgraph`.",
+ "cases": [
+  "Agentes con aprobación humana",
+  "Flujos multiagente con supervisor",
+  "Agentes de larga duración recuperables"
+ ],
+ "stack": "Python, LangChain",
+ "models": "Agnóstico: cualquier modelo de LangChain.",
+ "choose_if": "necesitas agentes con estado, control fino y persistencia",
+ "avoid_if": "quieres algo mínimo para un agente simple; mira `smolagents`",
+ "combines_with": [
+  "langchain",
+  "langfuse",
+  "langgraph-supervisor-py"
+ ],
+ "alternatives": [
+  "crewai",
+  "openai-agents-python",
+  "pydantic-ai"
+ ],
+ "pick": true,
+ "mcp": false,
+ "limits": ""
+}

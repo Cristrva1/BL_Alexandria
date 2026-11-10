@@ -1,0 +1,36 @@
+{
+ "id": "loop-engineering",
+ "name": "Loop Engineering",
+ "role": "skill",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "coding-agent",
+  "skills",
+  "typescript"
+ ],
+ "one": "Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código en vez de prompts sueltos.",
+ "desc": "Propone dejar de escribir prompts aislados y diseñar ciclos con objetivo, verificación y puntuación para que el agente itere solo. Incluye starters y herramientas de línea de comandos.",
+ "why": "Enfoque práctico y medible: cada bucle termina con una puntuación que guía la siguiente iteración.",
+ "how": "Define el objetivo, las comprobaciones y el criterio de parada en archivos que el agente lee y ejecuta en bucle.",
+ "install": "`git clone https://github.com/cobusgreyling/loop-engineering` y copia el starter que necesites a tu proyecto.",
+ "cases": [
+  "Refactors largos con verificación automática",
+  "Mejorar un prompt con puntuación",
+  "Agentes que iteran hasta pasar tests"
+ ],
+ "stack": "TypeScript, Markdown",
+ "models": "Agnóstico: Claude Code, Codex u otros agentes.",
+ "choose_if": "quieres que tu agente de código itere solo con criterios medibles",
+ "avoid_if": "solo necesitas una lista de skills; mira `awesome-agent-skills`",
+ "combines_with": [
+  "claude-code",
+  "codex",
+  "superpowers"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": "",
+ "alternatives": []
+}

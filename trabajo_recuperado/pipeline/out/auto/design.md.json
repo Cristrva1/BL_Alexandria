@@ -1,0 +1,33 @@
+{
+ "id": "design.md",
+ "name": "design.md",
+ "role": "directory",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "typescript"
+ ],
+ "one": "Especificación de formato para describir una identidad visual a agentes de código (tokens YAML + prosa), de modo que el agente herede un sistema de diseño coherente entre sesiones.",
+ "desc": "Resuelve la inconsistencia de marca cuando varias personas o agentes tocan la UI.",
+ "why": "Propuesta de Google Labs que aporta no solo los valores sino el \"por qué\" y cómo aplicarlos, algo que un simple archivo de tokens no transmite. Al ser un formato declarativo, funciona con cualquier agente que lea Markdown.",
+ "how": "Archivo Markdown/YAML que el agente lee como contexto persistente, combinando tokens de diseño (color, tipografía, espaciado) con guías en prosa sobre cuándo usarlos.",
+ "install": "Crear un `design.md` en el repo siguiendo el formato (sin dependencias). Solo necesitas un agente de código que lo cargue como contexto.",
+ "cases": [
+  "Dar al agente un sistema de diseño persistente",
+  "Mantener coherencia de marca entre varios contribuyentes",
+  "Onboarding rápido de estilo para nuevos agentes"
+ ],
+ "stack": "Markdown/YAML",
+ "models": "Agentes de código (Claude Code, Cursor, etc.).",
+ "choose_if": "quieres consistencia de marca con IA y usas agentes para UI",
+ "avoid_if": "no usas agentes para generar código de UI",
+ "limits": "",
+ "combines_with": [
+  "impeccable"
+ ],
+ "alternatives": [],
+ "pick": false
+}

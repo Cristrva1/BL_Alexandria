@@ -1,0 +1,41 @@
+{
+ "id": "adk-python",
+ "name": "Agent Development Kit (ADK)",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "easy",
+ "prov": [
+  "google",
+  "openai",
+  "anthropic"
+ ],
+ "tags": [
+  "agents",
+  "python"
+ ],
+ "one": "Kit de Google para construir, evaluar y desplegar agentes en Python, optimizado para Gemini.",
+ "desc": "Define agentes y sistemas multiagente con herramientas, memoria y evaluación, con interfaz web de pruebas incluida. Se despliega fácil en Google Cloud.",
+ "why": "Respaldo de Google, buena herramienta de evaluación y despliegue directo a Vertex AI.",
+ "how": "Agentes declarados en código se componen en jerarquías; un runner gestiona sesiones, herramientas y eventos.",
+ "install": "`pip install google-adk` y prueba con `adk web`.",
+ "cases": [
+  "Agentes sobre Gemini en Google Cloud",
+  "Sistemas multiagente jerárquicos",
+  "Evaluar agentes con casos de prueba"
+ ],
+ "stack": "Python",
+ "models": "Gemini por defecto; otros vía LiteLLM.",
+ "choose_if": "trabajas con Gemini o Google Cloud",
+ "avoid_if": "tu stack es OpenAI; mira `openai-agents-python`",
+ "combines_with": [
+  "gemini-cli",
+  "fastmcp"
+ ],
+ "alternatives": [
+  "langgraph",
+  "openai-agents-python"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

@@ -1,0 +1,35 @@
+{
+ "id": "scrapely",
+ "name": "scrapely",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "easy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "python",
+  "scraping",
+  "typescript"
+ ],
+ "one": "Librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales.",
+ "desc": "Librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales. Pieza histórica del ecosistema Scrapy; nicho y poco activa hoy, pero útil cuando se quiere extraer \"por demostración\" en lugar de programar selectores.",
+ "why": "Pieza histórica del ecosistema Scrapy; nicho y poco activa hoy, pero útil cuando se quiere extraer \"por demostración\" en lugar de programar selectores. Su enfoque by-example sigue siendo didáctico.",
+ "how": "Se le da una URL de ejemplo con los datos marcados, induce una plantilla mediante alineación de HTML y la aplica a nuevas páginas con la misma estructura.",
+ "install": "`pip install scrapely`. Requiere Python; sin dependencias pesadas.",
+ "cases": [
+  "Extraer campos repetidos sin escribir reglas",
+  "Scraping por plantilla aprendida",
+  "Prototipar extracción sobre familias de páginas homogéneas"
+ ],
+ "stack": "Python",
+ "models": "N/A (no usa LLM).",
+ "choose_if": "prefieres enseñar por ejemplos y el sitio es homogéneo",
+ "avoid_if": "necesitas un crawler completo o el proyecto exige mantenimiento activo",
+ "limits": "Mantenimiento poco activo; conviene validar compatibilidad con Python actual antes de apostar por ella.",
+ "combines_with": [
+  "scrapy"
+ ],
+ "alternatives": [],
+ "pick": false
+}

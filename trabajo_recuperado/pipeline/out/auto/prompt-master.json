@@ -1,0 +1,37 @@
+{
+ "id": "prompt-master",
+ "name": "prompt-master",
+ "role": "skill",
+ "exec": "hybrid",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "postgres",
+  "python",
+  "react",
+  "skills",
+  "typescript"
+ ],
+ "one": "Skill que ayuda a redactar prompts precisos para cualquier herramienta de IA, buscando el mejor resultado sin desperdiciar tokens.",
+ "desc": "Resuelve la primitiva de \"meta-prompting\" reutilizable como capa por encima de cualquier IA.",
+ "why": "Es transversal a casi cualquier IA (texto, imagen, video, código), lo que la hace útil como capa de \"meta-prompting\" reutilizable. Su foco en acertar al primer intento reduce iteraciones y coste.",
+ "how": "La skill guía al asistente para clarificar la intención y construir el prompt óptimo, conservando contexto y memoria entre iteraciones. Aplica plantillas y criterios según el tipo de salida buscada (texto, imagen, código).",
+ "install": "Clona el repo y copia el `SKILL.md` a tu directorio de skills, o pega su contenido como instrucción en la IA que uses; sin dependencias.",
+ "cases": [
+  "Acertar el prompt al primer intento",
+  "Retención de contexto y memoria entre iteraciones",
+  "Meta-prompting para imagen y video"
+ ],
+ "stack": "Markdown/skill",
+ "models": "Claude, ChatGPT, Gemini, Cursor, Midjourney, etc. (agnóstico).",
+ "choose_if": "quieres dejar de re-promptear y acertar antes",
+ "avoid_if": "ya tienes prompts afinados y estables",
+ "limits": "",
+ "combines_with": [
+  "andrej-karpathy-skills"
+ ],
+ "alternatives": [],
+ "pick": false
+}

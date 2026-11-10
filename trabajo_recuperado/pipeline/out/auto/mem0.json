@@ -1,0 +1,38 @@
+{
+ "id": "mem0",
+ "name": "mem0",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "docker",
+  "javascript",
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental.",
+ "desc": "Resuelve el \"amnesia\" del LLM: el agente conserva preferencias y hechos entre sesiones sin reenviar todo el historial.",
+ "why": "Es uno de los proyectos de memoria de agentes más adoptados, con SDK estable en Python y TS e integraciones amplias en el ecosistema de frameworks (LangChain, CrewAI, etc.). Su enfoque de extracción+actualización incremental de hechos evita duplicados y desactualizaciones.",
+ "how": "Combina extracción de hechos vía LLM con almacenamiento en vector DBs (Qdrant, Chroma, etc.) para indexar y consultar memorias relevantes por similitud, actualizando o borrando recuerdos contradictorios en lugar de solo acumularlos.",
+ "install": "`pip install mem0ai` (también SDK en npm) o servicio gestionado; requiere un LLM y una vector DB configurados (o los defaults del cloud).",
+ "cases": [
+  "Recordar preferencias del usuario entre sesiones",
+  "Memoria long-term para agentes",
+  "Personalización acumulativa sin inflar el prompt"
+ ],
+ "stack": "Python/TypeScript, vector DBs (Qdrant, Chroma, pgvector)",
+ "models": "Múltiples LLMs + vector DBs; agnóstico vía variables de entorno.",
+ "choose_if": "quieres memoria estándar lista con integraciones amplias",
+ "avoid_if": "necesitas todo local sin llamadas a API ([mempalace](#-mempalace)) o control total del almacenamiento",
+ "limits": "",
+ "combines_with": [
+  "crewai",
+  "langchain",
+  "agentmemory"
+ ],
+ "alternatives": [],
+ "pick": false
+}

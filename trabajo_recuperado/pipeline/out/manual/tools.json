@@ -1,0 +1,29 @@
+{
+ "id": "tools",
+ "name": "tools",
+ "role": "directory",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "skills"
+ ],
+ "one": "Carpeta interna de herramientas auxiliares del hub; no es un producto para instalar.",
+ "desc": "Contiene utilidades de apoyo de la biblioteca. Sirve como referencia interna, no como dependencia de un proyecto.",
+ "why": "Uso interno.",
+ "how": "Scripts auxiliares locales.",
+ "install": "No se instala: es parte de este repositorio.",
+ "cases": [
+  "Mantenimiento interno de la biblioteca",
+  "Referencia de utilidades",
+  "Apoyo a los scripts del hub"
+ ],
+ "stack": "Python",
+ "models": "No usa LLM.",
+ "choose_if": "mantienes esta biblioteca",
+ "avoid_if": "buscas una herramienta para tu proyecto",
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": "",
+ "alternatives": []
+}

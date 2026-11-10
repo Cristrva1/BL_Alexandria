@@ -1,0 +1,37 @@
+{
+ "id": "flowise",
+ "name": "Flowise",
+ "role": "platform",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "automation",
+  "docker",
+  "javascript",
+  "react",
+  "typescript"
+ ],
+ "one": "Builder visual drag-and-drop para pipelines LLM.",
+ "desc": "Permite montar chatflows y agentes conectando nodos y exponerlos como API o widget embebible.",
+ "why": "Muy adoptado para prototipar flujos LLM en minutos sin escribir código. Al estar basado en LangChain.js, hereda sus conectores y se instala con un solo comando de npm.",
+ "how": "Cada nodo encapsula un componente (LLM, retriever, tool, memoria); el grafo se ejecuta en un backend Node.js y se sirve por API o widget. Persiste credenciales y conversaciones en SQLite/PostgreSQL.",
+ "install": "`npm install -g flowise && npx flowise start` o vía Docker. Requiere Node.js y las claves de los proveedores de LLM que uses.",
+ "cases": [
+  "Prototipar un flujo LLM rápido",
+  "Demos sin código",
+  "Widget de chat embebible en una web"
+ ],
+ "stack": "Node.js/TypeScript, React",
+ "models": "Múltiples; agnóstico vía LangChain.js.",
+ "choose_if": "quieres un prototipo visual ya, en stack JS",
+ "avoid_if": "necesitas plataforma completa con RAG/observabilidad ([dify](#-dify))",
+ "limits": "",
+ "combines_with": [
+  "dify",
+  "langflow"
+ ],
+ "alternatives": [],
+ "pick": false
+}

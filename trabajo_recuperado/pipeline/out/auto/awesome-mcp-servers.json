@@ -1,0 +1,36 @@
+{
+ "id": "awesome-mcp-servers",
+ "name": "awesome-mcp-servers",
+ "role": "directory",
+ "exec": "local",
+ "setup": "heavy",
+ "mcp": true,
+ "prov": [],
+ "tags": [
+  "automation",
+  "docker",
+  "javascript",
+  "mcp"
+ ],
+ "one": "Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar.",
+ "desc": "Resuelve el \"¿ya existe un servidor para X?\" antes de que construyas el tuyo desde cero.",
+ "why": "Es uno de los listados de referencia más consultados del ecosistema MCP y ayuda a no reinventar servidores que ya existen. Su organización por categorías y su actualización continua lo hacen el punto de partida habitual para descubrir integraciones.",
+ "how": "Lista en Markdown con enlaces a cada servidor; eliges uno, sigues su README y lo añades a la config de tu cliente MCP (normalmente vía `npx` o `pip`).",
+ "install": "Sin instalación propia; se consulta el README y luego se instala el servidor elegido (normalmente vía `npx` o `pip`) y se registra en el cliente MCP.",
+ "cases": [
+  "Descubrir un servidor ya hecho antes de implementar uno",
+  "Referencia rápida de integraciones por categoría",
+  "Comparar alternativas para un mismo servicio"
+ ],
+ "stack": "Markdown",
+ "models": "Cualquier cliente compatible con MCP (Claude, Cursor, ChatGPT).",
+ "choose_if": "buscas antes de construir",
+ "avoid_if": "ya sabes que necesitas uno a medida y no te vale ninguno listado",
+ "limits": "",
+ "combines_with": [
+  "mcp-use",
+  "servers"
+ ],
+ "alternatives": [],
+ "pick": false
+}

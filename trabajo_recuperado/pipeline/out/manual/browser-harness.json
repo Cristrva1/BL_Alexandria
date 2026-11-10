@@ -1,0 +1,38 @@
+{
+ "id": "browser-harness",
+ "name": "Browser Harness",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "browser",
+  "coding-agent",
+  "python"
+ ],
+ "one": "Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada.",
+ "desc": "Conecta el agente a tu navegador por CDP con un arnés pequeño y editable. Útil cuando necesitas libertad total y tus cuentas ya abiertas.",
+ "why": "De los creadores de browser-use; se configura con un solo prompt.",
+ "how": "Habla con Chrome por el protocolo DevTools y expone comandos simples que el agente invoca.",
+ "install": "Sigue el README: pide a tu agente que lo instale con el prompt indicado.",
+ "cases": [
+  "Automatizar tareas en webs donde ya estás logueado",
+  "Pruebas manuales asistidas",
+  "Investigación con tu sesión"
+ ],
+ "stack": "Python, CDP",
+ "models": "Usa el modelo de tu agente.",
+ "choose_if": "tu agente debe usar tu navegador real con sesión",
+ "avoid_if": "necesitas aislamiento; mira `playwright-mcp`",
+ "limits": "El agente actúa con tus cuentas reales: supervisa lo que hace.",
+ "combines_with": [
+  "claude-code",
+  "codex"
+ ],
+ "alternatives": [
+  "playwright-mcp",
+  "chrome-devtools-mcp"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false
+}

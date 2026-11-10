@@ -1,0 +1,43 @@
+{
+ "id": "lobehub",
+ "name": "LobeHub",
+ "role": "app",
+ "exec": "hybrid",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "openai",
+  "anthropic",
+  "google",
+  "local"
+ ],
+ "tags": [
+  "chatbot",
+  "agents",
+  "typescript"
+ ],
+ "one": "Espacio de trabajo con super-agentes y una interfaz de chat moderna, multi-proveedor y extensible.",
+ "desc": "Antes LobeChat: chat elegante con agentes, plugins, base de conocimiento y despliegue en un clic. Ahora añade agentes que trabajan en tus chats de equipo.",
+ "why": "Interfaz muy pulida y mercado de agentes y plugins.",
+ "how": "App Next.js con base de datos opcional; conecta proveedores por API y agentes con herramientas.",
+ "install": "`docker run -d -p 3210:3210 lobehub/lobehub` o despliegue en Vercel.",
+ "cases": [
+  "Chat personal elegante con varios modelos",
+  "Agentes compartidos en el equipo",
+  "Base de conocimiento privada"
+ ],
+ "stack": "TypeScript, Next.js",
+ "models": "Agnóstico.",
+ "choose_if": "quieres un chat bonito y extensible con agentes",
+ "avoid_if": "necesitas el máximo control empresarial; mira `librechat`",
+ "limits": "Licencia propia basada en Apache con restricciones comerciales.",
+ "combines_with": [
+  "ollama"
+ ],
+ "alternatives": [
+  "open-webui",
+  "librechat",
+  "cherry-studio"
+ ],
+ "pick": false
+}

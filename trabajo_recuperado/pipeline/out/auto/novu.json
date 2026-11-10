@@ -1,0 +1,36 @@
+{
+ "id": "novu",
+ "name": "novu",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "automation",
+  "javascript",
+  "react",
+  "typescript"
+ ],
+ "one": "Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend.",
+ "desc": "Resuelve la primitiva de \"un proveedor por canal\" evitando integrar y mantener cada uno por separado.",
+ "why": "Es el estándar open-source de referencia para notificaciones, muy adoptado por su API unificada y su inbox unificado. Su modelo de \"notification workflows\" abstrae el enrutamiento por canal sin acoplarte a un proveedor concreto.",
+ "how": "Define workflows de notificación que enrutan mensajes a distintos proveedores por canal (SendGrid, Twilio, FCM…), con un inbox unificado y plantillas, sobre un stack Node.js/TypeScript. Los proveedores se configuran por canal y se pueden intercambiar sin tocar el código de envío.",
+ "install": "Vía `docker compose` para self-host, o usando su plataforma cloud; el modo local requiere MongoDB/PostgreSQL y Redis.",
+ "cases": [
+  "Mensajes transaccionales y de producto desde un backend",
+  "Inbox unificado",
+  "Notificaciones multicanal con fallback de proveedor"
+ ],
+ "stack": "Node.js, TypeScript, Docker",
+ "models": "Compatible con agentes/automatizaciones externas vía API REST.",
+ "choose_if": "envías notificaciones por varios canales y quieres un único backend",
+ "avoid_if": "solo necesitas email ([listmonk](#-listmonk))",
+ "limits": "",
+ "combines_with": [
+  "chatwoot",
+  "activepieces"
+ ],
+ "alternatives": [],
+ "pick": false
+}

@@ -1,0 +1,29 @@
+{
+  "id": "geo-seo-claude",
+  "name": "GEO-SEO Claude",
+  "role": "skill",
+  "exec": "cloud",
+  "setup": "easy",
+  "mcp": false,
+  "prov": ["anthropic"],
+  "tags": ["skills", "search", "pdf", "python"],
+  "one": "Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF.",
+  "desc": "Añade a Claude Code comandos `/geo` que auditan un sitio para buscadores con IA (ChatGPT, Claude, Perplexity, Gemini, AI Overviews) sin dejar el SEO técnico: citabilidad del contenido, acceso de crawlers de IA en robots.txt, menciones de marca, datos estructurados y llms.txt. Genera informes para clientes en Markdown o PDF y lleva un pequeño CRM de prospectos.",
+  "why": "Está pensado para agencias y consultores: además de auditar, prepara propuestas, compara la evolución mes a mes y produce un PDF listo para entregar. Reparte la auditoría entre cinco subagentes en paralelo.",
+  "how": "Una skill principal enruta 13 sub-skills y 5 subagentes; scripts de Python descargan y analizan las páginas, puntúan la citabilidad y generan el PDF con ReportLab. Las dependencias van en un entorno virtual propio dentro de `~/.claude/skills/geo/`.",
+  "install": "`curl -fsSL https://raw.githubusercontent.com/zubair-trabzada/geo-seo-claude/main/install.sh | bash` (requiere Python 3.10+ y Claude Code); después, `/geo audit <url>`.",
+  "cases": [
+    "Auditar la visibilidad de una web en ChatGPT y Perplexity",
+    "Revisar robots.txt para crawlers de IA y generar un llms.txt",
+    "Entregar a un cliente un informe GEO en PDF"
+  ],
+  "stack": "Python, Markdown, ReportLab, JSON-LD, Playwright (opcional)",
+  "models": "Se ejecuta dentro de Claude Code con modelos de Anthropic.",
+  "choose_if": "quieres medir y mejorar cómo te citan los buscadores con IA, no solo tu posición en Google",
+  "avoid_if": "solo haces SEO clásico o no usas Claude Code; mira `marketingskills`",
+  "limits": "Depende de Claude Code y el README promociona una comunidad de pago (Skool); revisa los datos de mercado que cita antes de usarlos con clientes.",
+  "combines_with": ["marketingskills", "agency-agents", "playwright"],
+  "alternatives": [],
+  "pick": false,
+  "notes": "La editorial previa decía 'copia el SKILL.md, sin dependencias'; en realidad tiene instalador y dependencias Python en un venv propio, 13 sub-skills y 5 subagentes."
+}

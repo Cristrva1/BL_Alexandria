@@ -1,0 +1,40 @@
+{
+ "id": "private-gpt",
+ "name": "PrivateGPT",
+ "role": "platform",
+ "exec": "local",
+ "setup": "medium",
+ "prov": [
+  "local",
+  "openai"
+ ],
+ "tags": [
+  "rag",
+  "local",
+  "python"
+ ],
+ "one": "Capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP.",
+ "desc": "Ofrece una API lista para construir apps de IA sin que los datos salgan de tu entorno. Funciona con cualquier motor compatible con OpenAI.",
+ "why": "Enfoque claro en privacidad y en servir como backend de producto.",
+ "how": "Un servidor FastAPI con pipelines de ingesta, RAG y herramientas sobre el motor de inferencia configurado.",
+ "install": "Clona el repo y sigue la guía de instalación con `poetry` o Docker.",
+ "cases": [
+  "Backend privado para una app de documentos",
+  "RAG on-premise",
+  "API de IA sin nube"
+ ],
+ "stack": "Python, FastAPI",
+ "models": "Motores locales o compatibles con OpenAI.",
+ "choose_if": "construyes un producto de IA que no puede enviar datos fuera",
+ "avoid_if": "quieres una app lista para usuarios finales; mira `anything-llm`",
+ "combines_with": [
+  "ollama",
+  "qdrant"
+ ],
+ "alternatives": [
+  "anything-llm"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

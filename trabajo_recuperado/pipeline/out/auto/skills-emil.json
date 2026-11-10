@@ -1,0 +1,33 @@
+{
+ "id": "skills-emil",
+ "name": "skills_emil",
+ "role": "skill",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "skills",
+  "typescript"
+ ],
+ "one": "Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrollador (design engineering).",
+ "desc": "Resuelve el handoff diseño↔código, no solo la estética final.",
+ "why": "Pone el foco en la traducción de diseño a implementación (tokens, consistencia, decisiones compartidas), un ángulo menos cubierto por otras skills de UI que miran solo el resultado visual.",
+ "how": "Se entrega como un `SKILL.md` (skill `emil-design-eng`) que el asistente carga para guiar decisiones de diseño-implementación: estructura de componentes, naming, tokens y patrones coherentes entre Figma y código.",
+ "install": "Copia el `SKILL.md` al directorio de skills de tu asistente (Claude Code, Codex, Cursor); es referencia local del autor, así que consulta la fuente original para la versión más reciente.",
+ "cases": [
+  "Mejorar el handoff diseño↔ingeniería",
+  "Resultados UI más consistentes entre Figma y código",
+  "Alinear naming y tokens en un equipo"
+ ],
+ "stack": "Markdown (skills), TypeScript/React",
+ "models": "Agnóstico; cualquier asistente que cargue skills.",
+ "choose_if": "trabajas diseño+dev en equipo y sufres el handoff",
+ "avoid_if": "buscas componentes listos o trabajas solo",
+ "limits": "",
+ "combines_with": [
+  "ui-ux-pro-max-skill"
+ ],
+ "alternatives": [],
+ "pick": false
+}

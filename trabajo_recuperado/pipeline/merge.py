@@ -41,7 +41,7 @@ for line in open(SP / 'plan/new_repos.tsv', encoding='utf-8'):
 
 outs = {}
 bad_json = []
-for p in sorted((SP / 'out').glob('p*/*.json')):
+for p in sorted((SP / 'out').glob('auto/*.json')) + sorted((SP / 'out').glob('manual/*.json')) + sorted((SP / 'out').glob('p*/*.json')):
     try:
         data = json.load(open(p, encoding='utf-8'))
     except Exception as exc:  # noqa: BLE001

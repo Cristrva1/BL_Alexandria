@@ -1,0 +1,37 @@
+{
+ "id": "mcp-python-sdk",
+ "name": "MCP Python SDK",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "mcp"
+ ],
+ "tags": [
+  "mcp",
+  "python"
+ ],
+ "one": "SDK oficial de Python para crear servidores y clientes del Model Context Protocol.",
+ "desc": "Implementación de referencia del protocolo en Python, con la API FastMCP integrada para servidores sencillos.",
+ "why": "Es el SDK oficial y sigue la especificación al día.",
+ "how": "Implementa transporte, sesiones y mensajes MCP; expone una API de alto nivel para declarar herramientas.",
+ "install": "`pip install \"mcp[cli]\"`.",
+ "cases": [
+  "Servidor MCP mínimo y estándar",
+  "Clientes MCP en Python",
+  "Seguir la especificación oficial"
+ ],
+ "stack": "Python",
+ "models": "No usa LLM.",
+ "choose_if": "quieres el SDK oficial con mínima dependencia",
+ "avoid_if": "quieres funciones extra como auth y composición; mira `fastmcp`",
+ "combines_with": [
+  "mcp-inspector"
+ ],
+ "alternatives": [
+  "fastmcp"
+ ],
+ "pick": false,
+ "limits": ""
+}

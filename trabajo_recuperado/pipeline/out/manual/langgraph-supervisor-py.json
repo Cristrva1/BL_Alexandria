@@ -1,0 +1,35 @@
+{
+ "id": "langgraph-supervisor-py",
+ "name": "LangGraph Supervisor",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "easy",
+ "tags": [
+  "agents",
+  "python"
+ ],
+ "one": "Librería archivada para crear un agente supervisor que coordina a otros agentes en LangGraph.",
+ "desc": "Facilitaba el patrón supervisor en sistemas multiagente. LangChain ahora recomienda implementar ese patrón directamente con herramientas.",
+ "why": "Útil como referencia del patrón supervisor.",
+ "how": "Un agente supervisor decide a qué agente especializado delegar cada paso del grafo.",
+ "install": "`pip install langgraph-supervisor` (solo para proyectos existentes).",
+ "cases": [
+  "Estudiar el patrón supervisor",
+  "Mantener código existente",
+  "Prototipos multiagente simples"
+ ],
+ "stack": "Python, LangGraph",
+ "models": "Agnóstico.",
+ "choose_if": "mantienes código que ya la usa",
+ "avoid_if": "empiezas un proyecto nuevo; usa el patrón con herramientas en `langgraph`",
+ "limits": "Repositorio archivado: no recibe actualizaciones.",
+ "combines_with": [
+  "langgraph"
+ ],
+ "alternatives": [
+  "langgraph"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false
+}

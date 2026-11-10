@@ -1,0 +1,37 @@
+{
+ "id": "mempalace",
+ "name": "mempalace",
+ "role": "directory",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "docker",
+  "postgres",
+  "python",
+  "react",
+  "typescript"
+ ],
+ "one": "Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin enviar datos a servicios externos.",
+ "desc": "Resuelve la memoria privada: cero llamadas a API, tus textos no salen de tu máquina.",
+ "why": "Prioriza la privacidad total (cero llamadas a API) reportando recall competitivo en benchmarks de memoria de largo plazo. Su diseño verbatim evita la pérdida de detalle que sufren los enfoques que resumen con un LLM remoto.",
+ "how": "Guarda los textos verbatim y los recupera mediante un backend de búsqueda conectable, sin depender de un LLM remoto para almacenar ni para indexar; el backend se puede cambiar según tus necesidades.",
+ "install": "`pip install` desde PyPI; se configura el backend de búsqueda local según el repo. No requiere claves de API ni servicios externos.",
+ "cases": [
+  "Memoria privada para agentes",
+  "Recuerdo de largo plazo sin enviar datos a la nube",
+  "Casos con requisitos de confidencialidad (sanidad, legal)"
+ ],
+ "stack": "Python (PyPI)",
+ "models": "Local, backend conectable; sin proveedor LLM obligatorio.",
+ "choose_if": "la privacidad es prioridad y no quieres llamadas a API",
+ "avoid_if": "quieres un SaaS gestionado con escalado automático o integraciones de framework ya hechas ([mem0](#-mem0))",
+ "limits": "",
+ "combines_with": [
+  "open-notebook",
+  "odysseus"
+ ],
+ "alternatives": [],
+ "pick": false
+}

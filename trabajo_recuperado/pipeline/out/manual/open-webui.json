@@ -1,0 +1,44 @@
+{
+ "id": "open-webui",
+ "name": "Open WebUI",
+ "role": "app",
+ "exec": "local",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "openai",
+  "local"
+ ],
+ "tags": [
+  "chatbot",
+  "local",
+  "rag",
+  "docker"
+ ],
+ "one": "Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas.",
+ "desc": "Da a tu equipo un chat privado con usuarios, documentos, búsqueda web, herramientas y modelos locales o en la nube.",
+ "why": "La UI de chat auto-hospedada más popular, muy completa y activa.",
+ "how": "Backend Python y frontend Svelte que se conectan a Ollama o a cualquier API OpenAI, con RAG integrado.",
+ "install": "`docker run -d -p 3000:8080 -v open-webui:/app/backend/data ghcr.io/open-webui/open-webui:main`.",
+ "cases": [
+  "ChatGPT privado para tu empresa",
+  "Chat con documentos internos",
+  "Probar modelos locales"
+ ],
+ "stack": "Python, Svelte, Docker",
+ "models": "Ollama y cualquier API compatible con OpenAI.",
+ "choose_if": "necesitas un ChatGPT privado para tu equipo",
+ "avoid_if": "solo quieres una app de escritorio individual; mira `jan`",
+ "limits": "La licencia exige mantener la marca Open WebUI en despliegues grandes.",
+ "combines_with": [
+  "ollama",
+  "searxng",
+  "litellm"
+ ],
+ "alternatives": [
+  "librechat",
+  "lobehub",
+  "anything-llm"
+ ],
+ "pick": true
+}

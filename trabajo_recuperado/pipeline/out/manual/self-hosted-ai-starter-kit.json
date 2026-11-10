@@ -1,0 +1,37 @@
+{
+ "id": "self-hosted-ai-starter-kit",
+ "name": "Self-hosted AI Starter Kit",
+ "role": "platform",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "automation",
+  "local",
+  "rag",
+  "docker"
+ ],
+ "one": "Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos.",
+ "desc": "Kit oficial de n8n que levanta un entorno de IA privado: n8n para orquestar, Ollama para modelos, Qdrant como base vectorial y PostgreSQL. Útil para prototipar agentes y RAG sin enviar datos fuera.",
+ "why": "Mantenido por el equipo de n8n; resuelve en un comando el cableado entre las piezas.",
+ "how": "Un `docker-compose.yml` con perfiles para CPU y GPU arranca los servicios ya conectados entre sí.",
+ "install": "`git clone https://github.com/n8n-io/self-hosted-ai-starter-kit` y `docker compose --profile cpu up` (o `gpu-nvidia`).",
+ "cases": [
+  "Chat con tus documentos en local",
+  "Agentes de n8n con modelos privados",
+  "Demo de IA sin nube"
+ ],
+ "stack": "Docker Compose, n8n, Ollama, Qdrant, PostgreSQL",
+ "models": "Modelos locales vía Ollama (Llama, Qwen, etc.).",
+ "choose_if": "quieres un stack de IA local funcionando hoy con n8n",
+ "avoid_if": "vas a producción con alta carga; arma tu propio despliegue",
+ "limits": "Es un punto de partida, no un despliegue endurecido para producción.",
+ "combines_with": [
+  "n8n",
+  "ollama",
+  "qdrant"
+ ],
+ "pick": true,
+ "mcp": false,
+ "prov": [],
+ "alternatives": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ltx-video",
+  "name": "LTX-Video",
+  "role": "runtime",
+  "exec": "local",
+  "setup": "heavy",
+  "mcp": false,
+  "prov": ["local"],
+  "tags": ["video", "inference", "local", "python"],
+  "one": "Modelos abiertos de Lightricks (v0.9.x) para generar video desde texto o imagen, rápidos en GPU de consumo; hoy en modo legado.",
+  "desc": "LTX-Video es el repositorio de los modelos v0.9.x de Lightricks, un transformer de difusión (DiT) para texto a video, imagen a video, extensión de clips y video a video con condiciones por fotograma clave. Incluye variantes de 2B y 13B, destiladas y FP8, y LoRAs de control de pose, profundidad y bordes. Ya solo se mantiene como legado: los modelos nuevos están en LTX-2.",
+  "why": "Destacó por su velocidad: las versiones destiladas generan clips HD en segundos y hay variantes que caben en GPU de 8 GB. Tiene integración oficial con ComfyUI y Diffusers.",
+  "how": "DiT que trabaja sobre un VAE de video muy comprimido y acepta varias condiciones (imágenes o videos en fotogramas concretos) en una misma generación; un pipeline multiescala combina el modelo 13B con su versión destilada.",
+  "install": "`git clone https://github.com/Lightricks/LTX-Video.git && cd LTX-Video && python -m pip install -e .[inference]` y después `python inference.py --prompt ...`; para la mejor calidad, el equipo recomienda su flujo de ComfyUI.",
+  "cases": [
+    "Animar una imagen fija para un anuncio o un reel",
+    "Extender un clip existente hacia delante o hacia atrás",
+    "Prototipar planos con control de pose o de profundidad"
+  ],
+  "stack": "Python, PyTorch, Diffusers, ComfyUI",
+  "models": "Modelos LTX-Video v0.9.x en local (2B y 13B, destilados y FP8); no usa API externa.",
+  "choose_if": "necesitas reproducir resultados o mantener flujos existentes con los modelos LTX-Video v0.9.x",
+  "avoid_if": "empiezas un proyecto nuevo; Lightricks recomienda LTX-2.5 (repo Lightricks/LTX-2), o mira `wan2-2` y `wan2gp`",
+  "limits": "El repositorio ya no tiene desarrollo activo, y según el propio equipo el script de inferencia da peor calidad que su flujo de ComfyUI.",
+  "combines_with": ["comfyui", "diffusers", "real-esrgan"],
+  "alternatives": ["wan2-2", "hunyuanvideo"],
+  "pick": false,
+  "notes": "Repo legado: desde el 11/08/2026 Lightricks recomienda LTX-2.5, publicado en Lightricks/LTX-2 (activo; código Apache-2.0, pesos con LTX-2.x Community License), que genera audio y video sincronizados. Valorar sustituir este repo por LTX-2."
+}

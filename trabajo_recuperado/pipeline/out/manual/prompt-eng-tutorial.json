@@ -1,0 +1,38 @@
+{
+ "id": "prompt-eng-tutorial",
+ "name": "Anthropic's Prompt Engineering Tutorial",
+ "role": "directory",
+ "exec": "cloud",
+ "setup": "easy",
+ "tags": [
+  "learning",
+  "prompts",
+  "notebooks"
+ ],
+ "one": "Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.",
+ "desc": "Nueve capítulos con ejercicios sobre claridad, roles, ejemplos, razonamiento paso a paso y cómo evitar alucinaciones. Cada lección se practica contra la API de Claude.",
+ "why": "Material oficial y muy didáctico, con ejercicios que se corrigen solos.",
+ "how": "Notebooks de Jupyter que envían tus prompts a Claude y comprueban la respuesta.",
+ "install": "No se instala: abre los notebooks y configura tu clave de API de Anthropic.",
+ "cases": [
+  "Formar a un equipo en prompts",
+  "Mejorar prompts de producción",
+  "Entender técnicas como few-shot"
+ ],
+ "stack": "Python, Jupyter",
+ "models": "API de Anthropic (Claude).",
+ "prov": [
+  "anthropic"
+ ],
+ "choose_if": "quieres aprender prompts con práctica guiada",
+ "avoid_if": "buscas una guía amplia multi-modelo; mira `prompt-engineering-guide`",
+ "combines_with": [
+  "claude-cookbooks"
+ ],
+ "alternatives": [
+  "prompt-engineering-guide"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

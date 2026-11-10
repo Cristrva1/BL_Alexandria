@@ -1,0 +1,36 @@
+{
+ "id": "awesome-langgraph",
+ "name": "awesome-LangGraph",
+ "role": "directory",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "automation",
+  "docker",
+  "javascript",
+  "postgres",
+  "python"
+ ],
+ "one": "Repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain.",
+ "desc": "Es una lista curada, no una herramienta ejecutable.",
+ "why": "Índice organizado por áreas (RAG, web, finanzas, salud, seguridad) que facilita encontrar patrones y proyectos de referencia para LangGraph. Útil como punto de partida antes de diseñar un grafo de agentes.",
+ "how": "Una lista \"awesome\" en Markdown con enlaces a proyectos, plantillas y tutoriales del ecosistema LangGraph, clasificados por caso de uso.",
+ "install": "No requiere instalación; se consulta el repo (o `git clone` para uso offline).",
+ "cases": [
+  "Estructurar grafos cíclicos de agentes",
+  "Políticas de enrutamiento y estado",
+  "Encontrar plantillas de RAG/multiagente"
+ ],
+ "stack": "Markdown / Python-JS (LangGraph)",
+ "models": "N/A (recurso).",
+ "choose_if": "construyes con LangGraph y quieres patrones de referencia",
+ "avoid_if": "no usas ese ecosistema",
+ "limits": "",
+ "combines_with": [
+  "langchain"
+ ],
+ "alternatives": [],
+ "pick": false
+}

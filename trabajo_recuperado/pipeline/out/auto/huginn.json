@@ -1,0 +1,37 @@
+{
+ "id": "huginn",
+ "name": "huginn",
+ "role": "directory",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "automation",
+  "docker",
+  "javascript",
+  "postgres",
+  "typescript"
+ ],
+ "one": "Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un \"IFTTT/Zapier que controlas tú\".",
+ "desc": "Resuelve la primitiva de \"vigilar fuentes y disparar acciones\" sin depender de terceros.",
+ "why": "Proyecto veterano y muy respetado en la comunidad open-source para monitoreo y scraping, valorado por su privacidad y su modelo de agentes encadenables. Su longevidad lo hace una opción estable para flujos de vigilancia.",
+ "how": "Define \"agents\" que hacen polling o reciben webhooks y se conectan entre sí pasando eventos (la salida de uno alimenta al siguiente), sobre un stack Ruby on Rails con base de datos. Cada agent tiene un tipo (trigger, acción, filtro) y se configura por UI o YAML.",
+ "install": "Vía `docker` (imagen oficial) o desplegando la app Rails manualmente; requiere MySQL/PostgreSQL y un entorno Ruby.",
+ "cases": [
+  "Vigilar fuentes externas y disparar acciones",
+  "Scraping + reglas de automatización",
+  "Encadenar eventos entre servicios sin SaaS"
+ ],
+ "stack": "Ruby on Rails, MySQL/PostgreSQL, self-host",
+ "models": "No nativa; se integra vía APIs y webhooks.",
+ "choose_if": "automatizas tareas orientadas a eventos y valoras la privacidad",
+ "avoid_if": "quieres editor visual moderno o IA nativa ([n8n](#-n8n))",
+ "limits": "Proyecto veterano con ritmo de mantenimiento lento; sin IA integrada y UI menos pulida que alternativas modernas.",
+ "combines_with": [
+  "n8n",
+  "novu"
+ ],
+ "alternatives": [],
+ "pick": false
+}

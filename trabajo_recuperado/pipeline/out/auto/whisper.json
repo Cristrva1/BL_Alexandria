@@ -1,0 +1,34 @@
+{
+ "id": "whisper",
+ "name": "whisper",
+ "role": "library",
+ "exec": "cloud",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "Modelo de reconocimiento de voz y traducción de audio multilingüe de OpenAI, estándar de la industria que transcribe casi cualquier idioma con un solo modelo.",
+ "desc": "Cubre también identificación de idioma y traducción al inglés en la misma red.",
+ "why": "Es la referencia de facto del STT abierto, base de innumerables forks y servicios de transcripción; su robustez a ruido y acentos lo convirtió en el punto de partida habitual para cualquier pipeline de voz.",
+ "how": "Red Transformer encoder-decoder entrenada con audio supervisado a escala; corre sobre PyTorch y procesa el audio en ventanas de 30 s con desplazamiento. La CLI `whisper` genera SRT/VTT/JSON con timestamps.",
+ "install": "`pip install -U openai-whisper` (requiere ffmpeg en el sistema y PyTorch). El modelo se descarga al primer uso según `--model` (de `tiny` a `large`).",
+ "cases": [
+  "`whisper grabacion.mp3 --model medium` para SRT con timestamps",
+  "Subtitulado automático de video",
+  "Transcripción de reuniones y podcasts"
+ ],
+ "stack": "Python 3.9+, PyTorch",
+ "models": "Local (modelos tiny→large), sin API de pago.",
+ "choose_if": "quieres la referencia robusta y no te obsesiona la latencia",
+ "avoid_if": "necesitas más velocidad ([faster-whisper](#-faster-whisper)) o timings por palabra ([whisperX](#-whisperx))",
+ "limits": "",
+ "combines_with": [
+  "whisperx"
+ ],
+ "alternatives": [],
+ "pick": false
+}

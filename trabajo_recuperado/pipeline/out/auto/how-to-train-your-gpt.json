@@ -1,0 +1,34 @@
+{
+ "id": "how-to-train-your-gpt",
+ "name": "how-to-train-your-gpt",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "python",
+  "typescript"
+ ],
+ "one": "Guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material de estudio más que como librería de producción.",
+ "desc": "Resuelve el \"quiero entenderlo con explicación narrada\" frente al código desnudo de nanoGPT.",
+ "why": "Repo pequeño y poco conocido, útil como complemento explicado al entrenamiento; honestamente, es un material de aprendizaje modesto frente a referencias como nanoGPT. Su valor está en la narración guiada, no en la robustez del código.",
+ "how": "Recorre en Python el proceso de entrenar un GPT con explicaciones intercaladas, apoyándose en el ecosistema PyTorch para mostrar cada etapa de forma didáctica.",
+ "install": "`git clone https://github.com/raiyanyahya/how-to-train-your-gpt` y seguir las instrucciones del repositorio; requiere Python y PyTorch (GPU recomendada para entrenar).",
+ "cases": [
+  "Seguir un paso a paso de entrenamiento",
+  "Material de estudio para principiantes",
+  "Complemento narrado a nanoGPT"
+ ],
+ "stack": "Python, PyTorch",
+ "models": "Entrena modelos propios.",
+ "choose_if": "quieres una guía explicada y narrada",
+ "avoid_if": "prefieres solo el código limpio ([nanoGPT](#-nanogpt)) o buscas algo productivo",
+ "limits": "",
+ "combines_with": [
+  "nanogpt",
+  "nanochat"
+ ],
+ "alternatives": [],
+ "pick": false
+}

@@ -1,0 +1,29 @@
+{
+  "id": "openscreen",
+  "name": "OpenScreen",
+  "role": "app",
+  "exec": "local",
+  "setup": "easy",
+  "mcp": false,
+  "prov": [],
+  "tags": ["video", "ui", "typescript"],
+  "one": "App de escritorio para grabar demos de producto con zoom automático, webcam y subtítulos, alternativa libre a Screen Studio.",
+  "desc": "OpenScreen graba una ventana o la pantalla completa con micrófono y audio del sistema, y después te deja pulir la demo: zooms que siguen al cursor, webcam superpuesta, fondos, anotaciones, recorte y velocidad por tramo. Exporta a MP4 o GIF en varias proporciones. El proyecto original está archivado; su continuación activa es getopenscreen/openscreen.",
+  "why": "Cubre lo esencial de Screen Studio gratis y sin marcas de agua, también para uso comercial, y genera subtítulos automáticos en el propio equipo sin subir el audio.",
+  "how": "App Electron en TypeScript con render en PixiJS. En macOS y Windows captura con APIs nativas (ScreenCaptureKit, Windows Graphics Capture) y en Linux con la captura del navegador.",
+  "install": "Descarga el instalador desde GitHub Releases, o usa `brew install --cask siddharthvaddem/openscreen/openscreen` (macOS) o `winget install SiddharthVaddem.OpenScreen` (Windows).",
+  "cases": [
+    "Grabar demos de producto para X, Reddit o YouTube",
+    "Hacer tutoriales con zoom que sigue al cursor",
+    "Exportar GIFs cortos de una función para la documentación"
+  ],
+  "stack": "TypeScript, Electron, PixiJS",
+  "models": "No usa LLM; los subtítulos automáticos se generan con un modelo de voz a texto local.",
+  "choose_if": "quieres demos de pantalla pulidas con zoom automático sin pagar Screen Studio",
+  "avoid_if": "necesitas un proyecto mantenido; usa su continuación getopenscreen/openscreen, o `obs-studio` para grabación y streaming generales",
+  "limits": "El repositorio está archivado y sin mantenimiento (el propio autor advierte que no es de calidad de producción); la continuación comunitaria es getopenscreen/openscreen.",
+  "combines_with": ["lossless-cut", "opencut"],
+  "alternatives": ["obs-studio"],
+  "pick": false,
+  "notes": "Archivado. El texto previo lo describía como app web basada en getDisplayMedia y enlazaba a lacymorrow/openscreen (fork vacío); en realidad es una app Electron de escritorio y el fork que recomienda el autor es getopenscreen/openscreen, activo. Valorar sustituir el repo por ese fork."
+}

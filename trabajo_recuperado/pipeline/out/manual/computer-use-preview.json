@@ -1,0 +1,39 @@
+{
+ "id": "computer-use-preview",
+ "name": "Gemini Computer Use (preview)",
+ "role": "runtime",
+ "exec": "cloud",
+ "setup": "medium",
+ "prov": [
+  "google"
+ ],
+ "tags": [
+  "browser",
+  "agents",
+  "python"
+ ],
+ "one": "Implementación de referencia de Google para que Gemini vea la pantalla y opere interfaces web.",
+ "desc": "Muestra cómo un modelo Gemini con computer use controla un navegador para completar tareas. Es una vista previa, no un agente de propósito general.",
+ "why": "Referencia oficial para probar el modelo de uso de computadora de Google.",
+ "how": "Toma capturas del navegador con Playwright, Gemini decide la acción y el script la ejecuta.",
+ "install": "Clona el repo, `pip install -r requirements.txt` y configura tu clave de Gemini.",
+ "cases": [
+  "Probar agentes que usan el navegador",
+  "Automatizar formularios web",
+  "Investigar computer use"
+ ],
+ "stack": "Python, Playwright",
+ "models": "Gemini (modelo de computer use).",
+ "choose_if": "quieres probar computer use con Gemini",
+ "avoid_if": "buscas automatización web robusta; mira `browser-use` o `stagehand`",
+ "limits": "Es una vista previa: comportamiento y API pueden cambiar.",
+ "combines_with": [
+  "playwright"
+ ],
+ "alternatives": [
+  "browser-use",
+  "skyvern"
+ ],
+ "mcp": false,
+ "pick": false
+}

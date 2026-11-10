@@ -1,0 +1,42 @@
+{
+ "id": "openclaw",
+ "name": "OpenClaw",
+ "role": "app",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": true,
+ "prov": [
+  "anthropic",
+  "openai",
+  "local"
+ ],
+ "tags": [
+  "agents",
+  "chatbot",
+  "typescript"
+ ],
+ "one": "Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más.",
+ "desc": "Un solo operador, muchas superficies: el asistente vive en tu equipo, tiene memoria, ejecuta tareas reales y responde por los canales que ya usas. Es uno de los proyectos de IA más populares de GitHub.",
+ "why": "Enorme adopción y un ecosistema de skills y canales que lo convierten en un asistente realmente útil a diario.",
+ "how": "Un gateway local conecta canales de mensajería con un agente que usa herramientas, skills y el modelo configurado.",
+ "install": "`npm install -g openclaw@latest` y `openclaw onboard` para configurar canales y modelo.",
+ "cases": [
+  "Asistente personal por WhatsApp",
+  "Automatizar tareas del equipo desde Telegram",
+  "Agente con memoria que trabaja 24/7"
+ ],
+ "stack": "TypeScript, Node.js",
+ "models": "Agnóstico: Claude, GPT o modelos locales.",
+ "choose_if": "quieres un asistente personal que actúe por tus canales de chat",
+ "avoid_if": "necesitas un agente para tu empresa con varios usuarios; mira `hermes-agent`",
+ "limits": "Da mucho acceso a tu equipo y cuentas: revisa permisos y aíslalo con cuidado.",
+ "combines_with": [
+  "nemoclaw",
+  "claude-mem"
+ ],
+ "alternatives": [
+  "hermes-agent",
+  "mercury-agent"
+ ],
+ "pick": true
+}

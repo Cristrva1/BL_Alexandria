@@ -1,0 +1,35 @@
+{
+ "id": "mcp",
+ "name": "mcp",
+ "role": "directory",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": true,
+ "prov": [],
+ "tags": [
+  "mcp",
+  "postgres",
+  "typescript"
+ ],
+ "one": "Núcleo del Model Context Protocol (spec y SDKs oficiales) para que herramientas, datos y clientes de IA interoperen bajo un mismo estándar abierto.",
+ "desc": "Resuelve la fragmentación: cada integración de IA dejaba de ser ad-hoc y pasa a hablar un protocolo común.",
+ "why": "Es el protocolo de referencia del ecosistema, adoptado por Claude, Cursor, ChatGPT y muchos otros clientes, lo que lo convierte en la base sobre la que se construye todo lo demás. Su respaldo por Anthropic y la gobernanza abierta le dan tracción real frente a alternativas propietarias.",
+ "how": "Define el protocolo MCP (mensajes JSON-RPC 2.0 entre cliente y servidor sobre stdio o HTTP/SSE) y ofrece SDKs en TypeScript y Python para implementar servidores que exponen tools, resources y prompts conformes.",
+ "install": "`npm install @modelcontextprotocol/sdk` o `pip install mcp` según el lenguaje; requiere un cliente MCP (Claude Desktop, Cursor, etc.) para conectar.",
+ "cases": [
+  "Base de interoperabilidad para tu app de IA",
+  "Construir servidores/clientes conforme al estándar",
+  "Exponer herramientas internas a cualquier asistente compatible"
+ ],
+ "stack": "TypeScript/Python",
+ "models": "Clientes MCP (Claude, Cursor, ChatGPT); agnóstico respecto al LLM.",
+ "choose_if": "programas MCP a bajo nivel o necesitas conformidad estricta con la spec",
+ "avoid_if": "prefieres un framework de alto nivel que abstraiga el protocolo ([mcp-use](#-mcp-use))",
+ "limits": "",
+ "combines_with": [
+  "mcp-use",
+  "servers"
+ ],
+ "alternatives": [],
+ "pick": false
+}

@@ -1,0 +1,36 @@
+{
+ "id": "blender-mcp",
+ "name": "Blender MCP",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "mcp"
+ ],
+ "tags": [
+  "mcp",
+  "design",
+  "python"
+ ],
+ "one": "Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP.",
+ "desc": "Crea y modifica escenas, objetos y materiales hablando con tu asistente. Útil para prototipos 3D rápidos.",
+ "why": "Lleva el modelado 3D a la conversación con un agente; muy popular entre creadores.",
+ "how": "Un addon de Blender abre un socket y un servidor MCP traduce las herramientas del agente en comandos de Blender.",
+ "install": "Instala el addon en Blender y añade a tu cliente MCP: `uvx blender-mcp`.",
+ "cases": [
+  "Prototipar escenas 3D por chat",
+  "Automatizar tareas repetitivas en Blender",
+  "Generar assets simples"
+ ],
+ "stack": "Python, Blender",
+ "models": "No usa LLM.",
+ "choose_if": "quieres manejar Blender con tu agente",
+ "avoid_if": "no trabajas en 3D",
+ "limits": "No es oficial de la Blender Foundation; puede ejecutar código arbitrario en Blender.",
+ "combines_with": [
+  "claude-code"
+ ],
+ "alternatives": [],
+ "pick": false
+}

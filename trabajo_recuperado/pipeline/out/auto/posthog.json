@@ -1,0 +1,36 @@
+{
+ "id": "posthog",
+ "name": "posthog",
+ "role": "skill",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "docker",
+  "javascript",
+  "python",
+  "react",
+  "typescript"
+ ],
+ "one": "Plataforma de product analytics y eventos para entender el comportamiento de usuarios, con funnels, session replay y feature flags en una sola suite.",
+ "desc": "Cubre todo el ciclo de medición de producto sin integrar varias herramientas.",
+ "why": "Referente open source de analítica de producto, autohospedable y muy adoptado por equipos que quieren evitar el lock-in de herramientas SaaS. Su licencia MIT y la amplitud de funciones (replay, flags, A/B tests) lo hacen competitivo frente a Amplitude/Mixpanel.",
+ "how": "Instrumentas eventos con su SDK (JS/Python/etc.) que se ingieren en su backend, y exploras todo desde su panel web con funnels, grabaciones de sesión y experimentos.",
+ "install": "`docker compose` para self-host, o SDK vía `npm i posthog-js` / `pip install posthog` apuntando al cloud. El self-host requiere ClickHouse y recursos no triviales.",
+ "cases": [
+  "Medir conversiones antes/después de cambios",
+  "Funnels y session replay para diagnosticar fricción",
+  "Feature flags y A/B tests controlados"
+ ],
+ "stack": "Python/Node, ClickHouse, self-host o cloud",
+ "models": "Complementa apps instrumentadas con agentes.",
+ "choose_if": "quieres entender el uso real y el comportamiento de usuarios",
+ "avoid_if": "solo necesitas BI sobre una BD estática ([metabase](#-metabase))",
+ "limits": "",
+ "combines_with": [
+  "metabase"
+ ],
+ "alternatives": [],
+ "pick": false
+}

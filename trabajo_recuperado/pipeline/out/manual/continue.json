@@ -1,0 +1,40 @@
+{
+ "id": "continue",
+ "name": "Continue",
+ "role": "runtime",
+ "exec": "hybrid",
+ "setup": "easy",
+ "prov": [
+  "openai",
+  "anthropic",
+  "local"
+ ],
+ "tags": [
+  "coding-agent",
+  "typescript"
+ ],
+ "one": "Agente de código open source para VS Code, JetBrains y CI, con chat, autocompletado y revisiones.",
+ "desc": "Integra chat, edición y autocompletado en el IDE con cualquier modelo, y permite ejecutar comprobaciones de IA en los PRs.",
+ "why": "Muy configurable y con buen soporte de modelos locales para autocompletado.",
+ "how": "Una extensión de IDE y un CLI leen tu configuración de modelos y reglas y llaman al proveedor elegido.",
+ "install": "Instala la extensión \"Continue\" en VS Code o JetBrains; el CLI con `npm i -g @continuedev/cli`.",
+ "cases": [
+  "Autocompletado con modelos locales",
+  "Chat sobre tu código en el IDE",
+  "Revisiones automáticas en PRs"
+ ],
+ "stack": "TypeScript, Kotlin",
+ "models": "Agnóstico: OpenAI, Anthropic, Ollama y otros.",
+ "choose_if": "quieres autocompletado y chat en el IDE con modelos a elección",
+ "avoid_if": "buscas un agente autónomo para tareas largas; mira `cline`",
+ "combines_with": [
+  "ollama"
+ ],
+ "alternatives": [
+  "cline",
+  "aider"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

@@ -1,0 +1,36 @@
+{
+ "id": "markitdown",
+ "name": "markitdown",
+ "role": "directory",
+ "exec": "local",
+ "setup": "easy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "docker",
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman.",
+ "desc": "Es la puerta de entrada habitual para ingesta de documentos en pipelines RAG.",
+ "why": "Proyecto oficial de Microsoft muy adoptado como paso previo a LLMs, por su salida ordenada y su catálogo de convertidores y plugins; se integra fácil en flujos de ingesta por su CLI y API Python.",
+ "how": "Detecta el tipo de archivo y aplica el extractor adecuado (parsers de Office, OCR por modelos de visión, Whisper para audio), normalizando todo a Markdown estructurado con encabezados y tablas.",
+ "install": "`pip install markitdown` (o `pip install 'markitdown[all]'` para todos los formatos). Los convertidores de visión/audio requieren claves de API opcionales.",
+ "cases": [
+  "Convertir carpetas de informes (XLSX/PDF) a `.md`",
+  "Ingesta de datos para IA",
+  "Preprocesar documentos antes de indexarlos en un vector store"
+ ],
+ "stack": "Python 3.8+",
+ "models": "Opcional (visión para OCR, Whisper para audio), agnóstico vía variables de entorno.",
+ "choose_if": "alimentas LLMs con documentos de formatos variados",
+ "avoid_if": "ya tienes el texto limpio o necesitas fidelidad de layout total (no es un reconstructor de PDF)",
+ "limits": "",
+ "combines_with": [
+  "ppt-master",
+  "open-notebook"
+ ],
+ "alternatives": [],
+ "pick": false
+}

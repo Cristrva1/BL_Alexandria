@@ -1,0 +1,29 @@
+{
+ "id": "guia",
+ "name": "Guía (histórica)",
+ "role": "directory",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "learning"
+ ],
+ "one": "Guía editorial original de la biblioteca, hoy integrada en las fichas de cada repo.",
+ "desc": "El texto escrito a mano de la guía anterior se incorporó a las fichas; `Guia.md` ahora se genera desde el índice.",
+ "why": "Uso interno.",
+ "how": "Documento Markdown.",
+ "install": "No se instala: es parte de este repositorio.",
+ "cases": [
+  "Consultar el historial editorial",
+  "Referencia de redacción",
+  "Uso interno"
+ ],
+ "stack": "Markdown",
+ "models": "No usa LLM.",
+ "choose_if": "quieres ver el origen del texto de las fichas",
+ "avoid_if": "buscas una herramienta para tu proyecto",
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": "",
+ "alternatives": []
+}

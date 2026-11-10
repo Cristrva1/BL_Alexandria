@@ -1,0 +1,34 @@
+{
+ "id": "snscrape",
+ "name": "snscrape",
+ "role": "directory",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "python",
+  "scraping",
+  "typescript"
+ ],
+ "one": "Scraper de redes sociales (Twitter/X, Reddit, Telegram, Instagram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves.",
+ "desc": "Resuelve la recolección histórica de datos sociales cuando las APIs de pago no son viables o no existen.",
+ "why": "Referencia clásica para datasets sociales históricos sin pagar API, con CLI y librería Python en el mismo paquete. Su fiabilidad depende de los cambios y restricciones de cada plataforma, pero sigue siendo el punto de partida habitual para investigación de medios sociales.",
+ "how": "Raspa los endpoints y páginas públicas de cada red, devolviendo los resultados como objetos o JSON desde CLI o como librería, con soporte de rangos de fechas y paginación.",
+ "install": "`pip install snscrape` (o desde el repo para la versión de desarrollo, que suele ir por delante de PyPI). Algunas redes requieren sesión o cookies para funcionar.",
+ "cases": [
+  "Recolectar posts/tweets para análisis",
+  "Datasets sociales históricos",
+  "Alimentar pipelines de investigación con datos públicos"
+ ],
+ "stack": "Python",
+ "models": "N/A.",
+ "choose_if": "recolectas varias redes y no te sirve una API oficial",
+ "avoid_if": "solo necesitas Instagram ([instaloader](#-instaloader)) o la plataforma ya bloqueó el acceso no oficial",
+ "limits": "Muy sensible a cambios de frontend y bloqueos de cada plataforma (Twitter/X endureció el acceso); revisa los ToS antes de usarlo a escala, pues varias redes lo prohíben.",
+ "combines_with": [
+  "instaloader"
+ ],
+ "alternatives": [],
+ "pick": false
+}

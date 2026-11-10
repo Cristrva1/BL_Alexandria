@@ -1,0 +1,35 @@
+{
+ "id": "nanogpt",
+ "name": "nanoGPT",
+ "role": "library",
+ "exec": "cloud",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "Implementación mínima y limpia de Andrej Karpathy para entrenar y afinar GPTs, pensada para que el código quepa en la cabeza y se entienda de extremo a extremo.",
+ "desc": "Resuelve la opacidad de los frameworks: ves exactamente cómo se entrena un GPT sin capas de abstracción.",
+ "why": "Referencia didáctica de Karpathy ampliamente usada para aprender cómo funciona realmente el entrenamiento de un GPT, sin capas de abstracción. Su minimalismo (unos pocos cientos de líneas) lo hace el punto de partida habitual para entender y experimentar.",
+ "how": "Define el modelo GPT y su bucle de entrenamiento en PyTorch sobre GPU, reproduciendo resultados tipo GPT-2 con unos pocos cientos de líneas y dependencias mínimas.",
+ "install": "`git clone https://github.com/karpathy/nanoGPT` y `pip install torch numpy transformers datasets tiktoken`. Requiere GPU para entrenar (CPU solo sirve para pruebas triviales).",
+ "cases": [
+  "Aprender cómo se entrena un GPT",
+  "Experimentos pequeños reproducibles",
+  "Base para afinar modelos propios sobre datos propios"
+ ],
+ "stack": "Python, PyTorch, GPU",
+ "models": "Entrena modelos propios.",
+ "choose_if": "quieres entender el entrenamiento de un GPT desde cero",
+ "avoid_if": "solo consumes modelos vía API o necesitas un pipeline de chat completo ([nanochat](#-nanochat))",
+ "limits": "Entrenar a escala real exige GPU y tiempo; no es una librería de producción, sino un recurso educativo minimalista.",
+ "combines_with": [
+  "nanochat"
+ ],
+ "alternatives": [],
+ "pick": false
+}

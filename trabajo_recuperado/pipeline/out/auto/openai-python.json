@@ -1,0 +1,36 @@
+{
+ "id": "openai-python",
+ "name": "openai-python",
+ "role": "platform",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "SDK oficial de OpenAI para Python, que expone de forma tipada y cómoda la API (chat, embeddings, imágenes, audio, asistentes) y es la base habitual para apps que usan sus modelos.",
+ "desc": "Resuelve el glue HTTP: no escribes peticiones a mano, usas clientes tipados con streaming.",
+ "why": "Cliente oficial y al día mantenido por OpenAI, con amplia adopción y soporte inmediato de las novedades de la API. Su tipado, streaming y soporte síncrono/async lo hacen la base de facto para integrar GPT en Python.",
+ "how": "Envuelve las peticiones HTTP a la API en clientes Python síncronos y asíncronos, con tipado, streaming de respuestas, reintentos y manejo de errores integrados.",
+ "install": "`pip install openai` y configurar `OPENAI_API_KEY` (variable de entorno). Requiere una cuenta OpenAI con clave válida y saldo.",
+ "cases": [
+  "Llamar a la API de OpenAI",
+  "Base para apps que usan GPT",
+  "Consumir embeddings, imágenes y audio desde Python"
+ ],
+ "stack": "Python",
+ "models": "OpenAI (chat, embeddings, imágenes, audio).",
+ "choose_if": "usas modelos de OpenAI desde Python y quieres el cliente oficial",
+ "avoid_if": "quieres abstracción multi-proveedor ([litellm](#-litellm)) o no usas OpenAI",
+ "limits": "",
+ "combines_with": [
+  "litellm",
+  "langchain"
+ ],
+ "alternatives": [],
+ "pick": false
+}

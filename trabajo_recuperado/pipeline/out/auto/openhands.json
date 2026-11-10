@@ -1,0 +1,38 @@
+{
+ "id": "openhands",
+ "name": "OpenHands",
+ "role": "platform",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "agents",
+  "automation",
+  "docker",
+  "javascript",
+  "python",
+  "typescript"
+ ],
+ "one": "Plataforma de agentes que ejecutan acciones reales en entornos de desarrollo (ex-OpenDevin).",
+ "desc": "El agente puede leer y editar código, correr comandos y navegar la web dentro de un sandbox.",
+ "why": "Uno de los proyectos open-source de agentes de programación más populares, con foco en acciones reales en lugar de solo respuestas. Soporta varios runtimes (local, remoto, cloud) y agentes compatibles con ACP.",
+ "how": "Un bucle agente-acción-observación ejecuta tareas dentro de un contenedor Docker aislado; backend en Python con UI web, y el agente opera sobre el filesystem, shell y navegador del sandbox.",
+ "install": "`docker run` de la imagen oficial (o `pip install openhands-ai` para el modo CLI). Requiere Docker y una clave de proveedor de LLM.",
+ "cases": [
+  "Agente que edita código, corre comandos y navega",
+  "Automatizar tareas dev",
+  "Resolver issues end-to-end en un repo"
+ ],
+ "stack": "Python/TS, Docker",
+ "models": "OpenAI, Anthropic, Gemini, locales; agnóstico vía variables de entorno.",
+ "choose_if": "quieres un agente que \"haga\", no solo hable",
+ "avoid_if": "solo necesitas chat/RAG o no puedes correr Docker",
+ "limits": "El sandbox Docker consume recursos y la ejecución de código arbitrario exige cuidar el aislamiento.",
+ "combines_with": [
+  "ecc",
+  "sandbox"
+ ],
+ "alternatives": [],
+ "pick": false
+}

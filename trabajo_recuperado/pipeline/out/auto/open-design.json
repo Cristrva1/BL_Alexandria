@@ -1,0 +1,37 @@
+{
+ "id": "open-design",
+ "name": "open-design",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "agents",
+  "docker",
+  "javascript",
+  "postgres",
+  "react",
+  "typescript"
+ ],
+ "one": "Editor/workspace de diseño colaborativo asistido por IA que genera, maqueta y anima interfaces a partir de instrucciones en lenguaje natural; alternativa libre a Claude Design Artifacts.",
+ "desc": "Resuelve el ir y venir entre prompt, preview y código exportable.",
+ "why": "Combina generación por IA con edición visual real y enruta varios modelos en una sola herramienta, algo poco común en editores abiertos. Su arquitectura Tauri (Rust) le da un binario nativo ligero frente a apps puramente web.",
+ "how": "App de escritorio en React + Tauri (Rust) que traduce prompts a UI editable y la sincroniza de vuelta, con un enrutador AMR que reparte peticiones entre modelos según la tarea.",
+ "install": "Clonar el repo y compilar la app Tauri, o usar los binarios de release según plataforma. Requiere claves API de al menos un proveedor (OpenAI/Anthropic/Google/DeepSeek).",
+ "cases": [
+  "Describir una pantalla y ver cómo la IA la maqueta y anima",
+  "Importar sistemas de diseño (Figma, Tailwind) y iterarlos por voz"
+ ],
+ "stack": "TypeScript/React, Tauri (Rust)",
+ "models": "GPT-4o, Claude, Gemini, DeepSeek vía AMR.",
+ "choose_if": "generas UI desde texto y quieres edición visual",
+ "avoid_if": "prefieres editar visualmente sobre tu código existente ([plasmic](#-plasmic))",
+ "limits": "",
+ "combines_with": [
+  "tailwindcss",
+  "heroui"
+ ],
+ "alternatives": [],
+ "pick": false
+}

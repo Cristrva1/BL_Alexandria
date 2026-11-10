@@ -1,0 +1,35 @@
+{
+ "id": "motion",
+ "name": "motion",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "react",
+  "typescript"
+ ],
+ "one": "Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código.",
+ "desc": "Hizo accesible la animación en el ecosistema React.",
+ "why": "Su API declarativa hizo accesible la animación en React y es de las más adoptadas del ecosistema. La versión actual (`motion`) unifica React y vanilla bajo el mismo paquete.",
+ "how": "Componentes `motion.*` y hooks que interpolan props de estado y manejan entradas/salidas, gestos y layout animations automáticamente sin manipular el DOM a mano.",
+ "install": "`npm i motion` (o `framer-motion` para la versión legacy). Requiere React para los bindings `motion.*`.",
+ "cases": [
+  "Animar entradas/salidas de componentes",
+  "Microinteracciones y gestos fáciles",
+  "Animaciones de layout cuando reordenas listas"
+ ],
+ "stack": "JavaScript/React",
+ "models": "N/A.",
+ "choose_if": "animas componentes React con API declarativa",
+ "avoid_if": "necesitas timelines complejos no ligados a React ([GSAP](#-gsap))",
+ "limits": "",
+ "combines_with": [
+  "magicui",
+  "react-three-fiber"
+ ],
+ "alternatives": [],
+ "pick": false
+}

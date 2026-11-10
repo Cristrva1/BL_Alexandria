@@ -1,0 +1,39 @@
+{
+ "id": "ecc",
+ "name": "ECC",
+ "role": "app",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "automation",
+  "docker",
+  "javascript",
+  "postgres",
+  "python",
+  "react"
+ ],
+ "one": "Sistema operativo/arnés unificado para desarrollar, ejecutar y desplegar en local agentes de IA de alto rendimiento de forma segura.",
+ "desc": "Actúa como capa intermedia entre el modelo y tu sistema, de modo que las acciones del agente pasan por un escudo antes de tocar el filesystem o la shell.",
+ "why": "Aporta una capa de seguridad de ejecución poco común en arneses de agentes, orientada a equipos que dan acceso real a su máquina a herramientas como Claude Code o Cursor. Su core en Rust y el soporte multi-agente lo diferencian de los runtimes puramente en Python.",
+ "how": "Intercepta y valida las acciones del agente (comandos bash, ficheros, red) mediante un core en Rust con hooks y memoria persistente, y solo las deja proseguir si cumplen la política definida.",
+ "install": "`git clone` del repo y compilación del core en Rust más dependencias en TS/Python/Go. Requiere toolchain de Rust y permisos para instalar hooks a nivel de sistema.",
+ "cases": [
+  "Que Claude ejecute comandos bash sin poner en riesgo el sistema",
+  "Memoria persistente y hooks entre sesiones",
+  "Sandbox de agentes con auditoría de cada acción"
+ ],
+ "stack": "Rust (core), TypeScript, Python, Go",
+ "models": "Claude Code, Cursor, Zed, Codex, Gemini, Copilot.",
+ "choose_if": "ejecutas agentes con acceso real a tu máquina y necesitas contención",
+ "avoid_if": "solo haces prompts de chat sin ejecución de código",
+ "limits": "",
+ "combines_with": [
+  "openhands",
+  "sandbox",
+  "hermes-agent"
+ ],
+ "alternatives": [],
+ "pick": false
+}

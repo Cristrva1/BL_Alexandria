@@ -1,0 +1,35 @@
+{
+ "id": "llm-scraper",
+ "name": "llm-scraper",
+ "role": "platform",
+ "exec": "cloud",
+ "setup": "easy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "scraping",
+  "typescript"
+ ],
+ "one": "Librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído.",
+ "desc": "Librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído. Popular por su simplicidad: salida tipada y validada sin escribir parsers, integrándose directamente con Playwright y los SDKs de LLM.",
+ "why": "Popular por su simplicidad: salida tipada y validada sin escribir parsers, integrándose directamente con Playwright y los SDKs de LLM. El uso de Zod garantiza tipos correctos en tiempo de compilación.",
+ "how": "Carga la página con Playwright, la pasa a texto/markdown y pide al LLM que devuelva un objeto conforme al esquema Zod, garantizando tipos correctos y validación en runtime.",
+ "install": "`npm i llm-scraper playwright` y la SDK del proveedor de LLM elegido. Requiere Node.js, los binarios de Playwright y una clave de API de LLM.",
+ "cases": [
+  "Extraer datos tipados de sitios",
+  "Automatizar datasets estructurados",
+  "Poblar una API/DB desde páginas sin backend propio"
+ ],
+ "stack": "TypeScript, Playwright, Zod",
+ "models": "LLMs vía SDK (OpenAI, Anthropic, etc.); agnóstico vía variables de entorno.",
+ "choose_if": "quieres salida tipada y validada en stack TS",
+ "avoid_if": "prefieres extracción semántica por grafos ([Scrapegraph-ai](#-scrapegraph-ai)) o trabajas en Python",
+ "limits": "",
+ "combines_with": [
+  "playwright",
+  "firecrawl"
+ ],
+ "alternatives": [],
+ "pick": false
+}

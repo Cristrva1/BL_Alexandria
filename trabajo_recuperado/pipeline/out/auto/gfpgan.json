@@ -1,0 +1,35 @@
+{
+ "id": "gfpgan",
+ "name": "GFPGAN",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "Algoritmo de restauración facial de Tencent ARC que reconstruye rostros degradados o de baja calidad usando priors generativos (GAN) preentrenados.",
+ "desc": "Resuelve el problema concreto de las caras \"fundidas\" que aparecen al reescalar o comprimir fotos.",
+ "why": "Resuelve muy bien un problema acotado y es una utilidad ampliamente reutilizada como paso de postproceso en pipelines de imagen; cuenta con demos públicos (Hugging Face, Replicate) y se integra en muchas UIs de SD.",
+ "how": "Detecta el rostro, lo alinea y aplica una red GAN (GFPGANv1) sobre PyTorch (GPU opcional) que regenera detalle realista preservando la identidad; combina la salida con la imagen original para no alterar el resto.",
+ "install": "`pip install gfpgan` o `git clone` con sus dependencias; los pesos del modelo se descargan en el primer uso. En Windows puede necesitar compilación de extensiones de CUDA.",
+ "cases": [
+  "Mejorar retratos/frames antes de reutilizarlos",
+  "Recuperar rostros degradados en material antiguo",
+  "Postproceso de caras generadas por SD"
+ ],
+ "stack": "Python, PyTorch, GPU opcional",
+ "models": "Modelos locales.",
+ "choose_if": "restauras rostros borrosos o fundidos",
+ "avoid_if": "necesitas upscaling general de la imagen ([Real-ESRGAN](#-real-esrgan))",
+ "limits": "",
+ "combines_with": [
+  "real-esrgan"
+ ],
+ "alternatives": [],
+ "pick": false
+}

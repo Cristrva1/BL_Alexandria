@@ -1,0 +1,37 @@
+{
+ "id": "firecrawl",
+ "name": "firecrawl",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": true,
+ "prov": [],
+ "tags": [
+  "docker",
+  "javascript",
+  "python",
+  "scraping",
+  "typescript"
+ ],
+ "one": "Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript.",
+ "desc": "Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. Se ha vuelto la opción de referencia para alimentar pipelines RAG y agentes con web limpia; muy adoptada y con integración MCP de primera clase.",
+ "why": "Se ha vuelto la opción de referencia para alimentar pipelines RAG y agentes con web limpia; muy adoptada y con integración MCP de primera clase. Su salida Markdown/JSON normalizada ahorra el paso de limpiar HTML.",
+ "how": "Renderiza la página (incluido JS), normaliza el HTML y lo convierte a Markdown/JSON; expone endpoints scrape/crawl/search/map vía API REST y SDKs, más un servidor MCP para que los agentes lo usen como herramienta.",
+ "install": "API hosted con clave (`npm i @mendable/firecrawl-js` o `pip install firecrawl-py`); también self-host con Docker. Requiere una clave de API (gratuita con límite, de pago a escala) o infra para self-host.",
+ "cases": [
+  "Convertir páginas complejas en contexto limpio",
+  "Search + crawl para research",
+  "Alimentar RAG con documentación de sitios dinámicos"
+ ],
+ "stack": "API/SDK (TS/Python), hosted o self-host, Docker",
+ "models": "MCP y agentes; no atado a un proveedor de LLM.",
+ "choose_if": "alimentas agentes/RAG con web y quieres salida limpia",
+ "avoid_if": "solo quieres HTML crudo o el presupuesto de API no encaja",
+ "limits": "La API hosted de pago escala por páginas; el self-host requiere operar Redis, workers y Chromium.",
+ "combines_with": [
+  "gpt-researcher",
+  "crawl4ai"
+ ],
+ "alternatives": [],
+ "pick": false
+}

@@ -1,0 +1,37 @@
+{
+ "id": "crawlee-python",
+ "name": "crawlee-python",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "python",
+  "react",
+  "scraping",
+  "typescript"
+ ],
+ "one": "Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python.",
+ "desc": "Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. Acerca las ventajas del Crawlee de Node a quienes ya viven en Python, con respaldo oficial de Apify y adopción en crecimiento.",
+ "why": "Acerca las ventajas del Crawlee de Node a quienes ya viven en Python, con respaldo oficial de Apify y adopción en crecimiento. Encaja naturalmente con pandas, notebooks y pipelines de datos.",
+ "how": "Ofrece crawlers basados en BeautifulSoup/HTTPX o en Playwright, con una cola de requests unificada, autoescalado y gestión de sesiones y proxies.",
+ "install": "`pip install crawlee` (extras como `crawlee[playwright]` para el modo navegador). Requiere Python y, para el modo navegador, los binarios de Playwright.",
+ "cases": [
+  "Crawling moderno con antibloqueo en Python",
+  "Integrar con stack de datos Python",
+  "Alternativa a scrapy con evasión integrada"
+ ],
+ "stack": "Python",
+ "models": "N/A (no usa LLM).",
+ "choose_if": "quieres Crawlee en Python con antibloqueo",
+ "avoid_if": "ya usas scrapy y te basta, o no necesitas evasión",
+ "limits": "",
+ "combines_with": [
+  "scrapy",
+  "playwright"
+ ],
+ "alternatives": [],
+ "pick": false
+}

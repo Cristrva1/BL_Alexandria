@@ -1,0 +1,38 @@
+{
+ "id": "openwa",
+ "name": "OpenWA",
+ "role": "platform",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "docker",
+  "javascript",
+  "postgres",
+  "python",
+  "react",
+  "typescript"
+ ],
+ "one": "Gateway/SDK abierto para conectar y automatizar cuentas de WhatsApp de forma directa desde código, sin infraestructura pesada.",
+ "desc": "Resuelve la primitiva de \"enviar y recibir mensajes de WhatsApp desde mi script\" con una API expresiva.",
+ "why": "Muy adoptado para prototipos y bots individuales por su simplicidad y su API expresiva, con una comunidad consolidada alrededor de wa-automate. Es la opción ligera cuando evolution-api es excesivo.",
+ "how": "Controla una sesión de WhatsApp Web mediante automatización del navegador (Puppeteer) y expone eventos y métodos a tus scripts en Node.js, con bindings para Python. Cada sesión vive en un proceso, sin Redis ni orquestador.",
+ "install": "Vía `npm i @open-wa/wa-automate` en proyectos Node.js (o el paquete equivalente para Python); requiere un entorno con navegador headless para la sesión.",
+ "cases": [
+  "Bot que escucha eventos y ejecuta scripts locales",
+  "Respuestas rápidas con panel local",
+  "Prototipo de agente conversacional en una sola máquina"
+ ],
+ "stack": "Node.js, Puppeteer, bindings Python",
+ "models": "No nativa (requiere orquestación externa del LLM).",
+ "choose_if": "desarrollas scripts o bots individuales y quieres arrancar rápido",
+ "avoid_if": "necesitas infra multi-instancia o alta disponibilidad ([evolution-api](#-evolution-api))",
+ "limits": "Depende de automatizar el navegador, lo que es frágil ante cambios de WhatsApp Web; no está pensado para producción a escala.",
+ "combines_with": [
+  "n8n",
+  "evolution-api"
+ ],
+ "alternatives": [],
+ "pick": false
+}

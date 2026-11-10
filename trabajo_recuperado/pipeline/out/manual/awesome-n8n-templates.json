@@ -1,0 +1,35 @@
+{
+ "id": "awesome-n8n-templates",
+ "name": "Awesome n8n Templates",
+ "role": "directory",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "automation",
+  "prompts"
+ ],
+ "one": "Colección de más de 280 plantillas gratuitas de n8n listas para importar, con IA y apps populares.",
+ "desc": "Reúne workflows de n8n ordenados por tema (Gmail, Telegram, WhatsApp, Notion, OpenAI y más). Sirve para arrancar rápido y aprender patrones de automatización.",
+ "why": "Es el catálogo comunitario de plantillas de n8n más grande y activo.",
+ "how": "Cada plantilla es un JSON exportado de n8n que importas desde el editor.",
+ "install": "No se instala: abre el repo, descarga el JSON y usa Import from File en n8n.",
+ "cases": [
+  "Arrancar un bot de Telegram con IA",
+  "Resumir correos y guardarlos en Notion",
+  "Aprender patrones de workflows"
+ ],
+ "stack": "JSON de n8n",
+ "models": "Las plantillas usan OpenAI u otros modelos según el caso.",
+ "choose_if": "usas n8n y quieres partir de flujos hechos",
+ "avoid_if": "no usas n8n",
+ "limits": "La calidad varía entre plantillas; revisa credenciales y nodos antes de usarlas en producción.",
+ "combines_with": [
+  "n8n",
+  "n8n-mcp",
+  "n8n-skills"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "alternatives": []
+}

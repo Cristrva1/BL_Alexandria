@@ -1,0 +1,35 @@
+{
+ "id": "uplot",
+ "name": "uPlot",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "python",
+  "react",
+  "typescript"
+ ],
+ "one": "Librería ultraligera para gráficos de series temporales capaz de pintar cientos de miles de puntos sin penalizar el rendimiento.",
+ "desc": "Apuesta por hacer una sola cosa (líneas/áreas temporales) mejor que ninguna.",
+ "why": "Célebre por su tamaño minúsculo (pocos KB) y velocidad de renderizado, ideal cuando el peso del bundle y los FPS importan. Su autor (leeoniya) la mantiene con foco obsesivo en rendimiento.",
+ "how": "Dibuja líneas y áreas directamente sobre Canvas con una API minimalista en JavaScript optimizada para datasets enormes, sin dependencias y sin virtual DOM.",
+ "install": "`npm i uplot` o vía CDN. Sin dependencias; se integra en cualquier stack web.",
+ "cases": [
+  "Dashboards con muchísimos puntos",
+  "Charts rápidos en frontend embebido",
+  "Monitorización en tiempo real donde el peso importa"
+ ],
+ "stack": "JavaScript",
+ "models": "N/A.",
+ "choose_if": "priorizas velocidad y peso del bundle",
+ "avoid_if": "necesitas tipos de gráfico variados ([echarts](#-echarts))",
+ "limits": "",
+ "combines_with": [
+  "swr"
+ ],
+ "alternatives": [],
+ "pick": false
+}

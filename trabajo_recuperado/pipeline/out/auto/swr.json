@@ -1,0 +1,34 @@
+{
+ "id": "swr",
+ "name": "swr",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "react",
+  "typescript"
+ ],
+ "one": "Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano.",
+ "desc": "Cubre el caso de consumir APIs en frontend sin manejar caché a mano.",
+ "why": "Creada por Vercel, ofrece una DX muy pulida para consumir APIs y es referencia junto a React Query. Su peso mínimo y la revalidación en foco/intervalo cubren la mayoría de apps sin configuración.",
+ "how": "Hook `useSWR(key, fetcher)` que cachea por clave, revalida al recuperar foco o en intervalo, y deduplica peticiones simultáneas al mismo key.",
+ "install": "`npm i swr`. Solo necesita un fetcher (una función async) por clave; funciona con cualquier API REST/GraphQL.",
+ "cases": [
+  "Consumir APIs en frontend con caché y revalidación",
+  "Datos en tiempo casi real sin WebSocket",
+  "Mutaciones optimistas con `useSWRMutation`"
+ ],
+ "stack": "JavaScript/React",
+ "models": "N/A.",
+ "choose_if": "manejas datos remotos en React y quieres caché simple",
+ "avoid_if": "prefieres React Query con su modelo de caché global más rico",
+ "limits": "",
+ "combines_with": [
+  "heroui"
+ ],
+ "alternatives": [],
+ "pick": false
+}

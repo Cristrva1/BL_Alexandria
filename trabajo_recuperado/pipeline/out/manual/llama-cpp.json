@@ -1,0 +1,40 @@
+{
+ "id": "llama-cpp",
+ "name": "llama.cpp",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "medium",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "inference",
+  "local",
+  "cpp"
+ ],
+ "one": "Motor de inferencia en C/C++ que corre LLM cuantizados en CPU y GPU de casi cualquier equipo.",
+ "desc": "Base de Ollama, LM Studio y muchas apps. Incluye un servidor compatible con OpenAI y herramientas para cuantizar modelos GGUF.",
+ "why": "El motor de inferencia local de referencia, con rendimiento excelente en hardware común.",
+ "how": "Ejecuta modelos en formato GGUF con kernels optimizados para CPU, Metal, CUDA y Vulkan.",
+ "install": "`brew install llama.cpp` o binarios de releases; luego `llama-server -hf ggml-org/gemma-3-1b-it-GGUF`.",
+ "cases": [
+  "Inferencia local con máximo control",
+  "Cuantizar modelos propios",
+  "Servidor ligero compatible con OpenAI"
+ ],
+ "stack": "C++, C, CUDA, Metal",
+ "models": "Modelos abiertos en GGUF.",
+ "choose_if": "quieres el máximo control y rendimiento local",
+ "avoid_if": "prefieres simplicidad; mira `ollama`",
+ "combines_with": [
+  "open-webui"
+ ],
+ "alternatives": [
+  "ollama",
+  "llamafile",
+  "localai"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

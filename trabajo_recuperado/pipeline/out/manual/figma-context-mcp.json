@@ -1,0 +1,39 @@
+{
+ "id": "figma-context-mcp",
+ "name": "Figma Context MCP",
+ "role": "runtime",
+ "exec": "hybrid",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "mcp"
+ ],
+ "tags": [
+  "mcp",
+  "design",
+  "ui",
+  "typescript"
+ ],
+ "one": "Servidor MCP que entrega a los agentes de código el layout de tus diseños de Figma para implementarlos.",
+ "desc": "Simplifica la respuesta de la API de Figma y da al agente solo lo relevante (estructura, estilos, medidas) para convertir un diseño en código.",
+ "why": "Muy usado con Cursor y Claude Code para pasar de Figma a código con fidelidad.",
+ "how": "Llama a la API de Figma con tu token y transforma el resultado en un resumen compacto para el modelo.",
+ "install": "Añade a tu cliente MCP: `npx -y figma-developer-mcp --figma-api-key=TU_TOKEN --stdio`.",
+ "cases": [
+  "Implementar pantallas desde Figma",
+  "Mantener fidelidad de diseño",
+  "Acelerar maquetación"
+ ],
+ "stack": "TypeScript",
+ "models": "No usa LLM.",
+ "choose_if": "implementas diseños de Figma con un agente de código",
+ "avoid_if": "no usas Figma",
+ "combines_with": [
+  "claude-code",
+  "ui",
+  "tailwindcss"
+ ],
+ "alternatives": [],
+ "pick": false,
+ "limits": ""
+}

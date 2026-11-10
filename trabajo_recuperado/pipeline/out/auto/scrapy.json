@@ -1,0 +1,34 @@
+{
+ "id": "scrapy",
+ "name": "scrapy",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "python",
+  "scraping"
+ ],
+ "one": "Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala.",
+ "desc": "Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. Estándar de facto del scraping en Python desde hace más de una década, con enorme ecosistema de extensiones y base instalada masiva.",
+ "why": "Estándar de facto del scraping en Python desde hace más de una década, con enorme ecosistema de extensiones y base instalada masiva. Su robustez y extensibilidad lo mantienen vigente pese a su edad.",
+ "how": "Define spiders que emiten requests asíncronas sobre el motor Twisted, procesa respuestas con selectores (CSS/XPath) y pasa los items por pipelines de limpieza/almacenamiento.",
+ "install": "`pip install scrapy`; el comando `scrapy startproject` genera el andamiaje del proyecto. Requiere Python y, según el target, rotación de proxies/headers para evitar bloqueos.",
+ "cases": [
+  "Spiders robustos",
+  "Pipelines de extracción a gran escala",
+  "Feeds estructurados (JSON/CSV) hacia un data warehouse"
+ ],
+ "stack": "Python (Twisted)",
+ "models": "N/A (no usa LLM).",
+ "choose_if": "quieres un crawler sólido y configurable a escala",
+ "avoid_if": "buscas salida lista para LLM o algo puntual sin curva de framework",
+ "limits": "",
+ "combines_with": [
+  "scrapely",
+  "crawlee-python"
+ ],
+ "alternatives": [],
+ "pick": false
+}

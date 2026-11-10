@@ -1,0 +1,35 @@
+{
+ "id": "liveportrait",
+ "name": "LivePortrait",
+ "role": "library",
+ "exec": "local",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "Sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen (humanos, pero también mascotas).",
+ "desc": "Convierte una foto en un avatar que sigue las expresiones de un \"conductor\".",
+ "why": "Ofrece animación facial rápida y controlable (con retoque de ojos y boca vía \"stitching\" y retargeting), y ha sido adoptado por plataformas grandes (Kuaishou, Douyin, Jianying); es proyecto de KwaiVGI con pesos públicos.",
+ "how": "Usa un modelo de keypoints/warping implícito sobre PyTorch+GPU que deforma la cara de origen siguiendo el movimiento del conductor; un módulo de stitching suaviza la unión con el cuerpo y otro de retargeting controla ojos/boca de forma independiente.",
+ "install": "`git clone`, crear entorno y `pip install -r requirements.txt`; descargar los pesos preentrenados indicados en el repo. Requiere GPU NVIDIA con VRAM generosa.",
+ "cases": [
+  "Convertir una foto en avatar/recurso animado",
+  "Presentadores virtuales a partir de un retrato",
+  "Animar ilustraciones de personajes para reels"
+ ],
+ "stack": "Python, PyTorch, GPU",
+ "models": "Modelos locales.",
+ "choose_if": "animas retratos a partir de una foto",
+ "avoid_if": "necesitas swap en vivo ([Deep-Live-Cam](#-deep-live-cam)) o no tienes GPU",
+ "limits": "GPU obligatoria; la calidad cae con poses extremas o rostros muy distintos al conductor; revisar licencia antes de uso comercial.",
+ "combines_with": [
+  "moviepy"
+ ],
+ "alternatives": [],
+ "pick": false
+}

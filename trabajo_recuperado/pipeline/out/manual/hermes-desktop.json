@@ -1,0 +1,34 @@
+{
+ "id": "hermes-desktop",
+ "name": "Hermes Desktop",
+ "role": "app",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "agents",
+  "ui",
+  "typescript"
+ ],
+ "one": "App de escritorio que envuelve al agente Hermes en una interfaz nativa.",
+ "desc": "Para quien quiere usar Hermes Agent como aplicación y no solo desde la terminal.",
+ "why": "Hace accesible Hermes a usuarios no técnicos.",
+ "how": "Una app de escritorio que lanza y controla el agente Hermes local.",
+ "install": "Descarga el instalador desde los releases.",
+ "cases": [
+  "Usar Hermes sin terminal",
+  "Gestionar sesiones del agente",
+  "Asistente de escritorio"
+ ],
+ "stack": "TypeScript, Electron",
+ "models": "El modelo configurado en Hermes.",
+ "choose_if": "usas Hermes Agent y prefieres una app de escritorio",
+ "avoid_if": "no usas Hermes",
+ "combines_with": [
+  "hermes-agent"
+ ],
+ "alternatives": [],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

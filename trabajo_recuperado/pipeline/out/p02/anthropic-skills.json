@@ -1,0 +1,29 @@
+{
+  "id": "anthropic-skills",
+  "name": "Anthropic Skills",
+  "role": "skill",
+  "exec": "cloud",
+  "setup": "easy",
+  "mcp": false,
+  "prov": ["anthropic"],
+  "tags": ["skills", "docs", "pdf", "coding-agent", "python"],
+  "one": "Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills.",
+  "desc": "Repositorio de Anthropic con skills listas para Claude Code, Claude.ai y la API: creativas, técnicas (pruebas de apps web, creación de servidores MCP) y empresariales, más las skills de docx, pptx, xlsx y PDF que Claude usa para generar archivos. Incluye la especificación del estándar Agent Skills y una plantilla para crear las tuyas.",
+  "why": "Es la implementación de referencia del formato SKILL.md, publicada por quien definió el estándar. Las skills de documentos son las que Claude usa en producción, así que sirven de modelo para skills complejas.",
+  "how": "Cada skill es una carpeta con un SKILL.md (frontmatter YAML con nombre y descripción, más instrucciones) y a veces scripts. Claude ve la descripción y carga el contenido completo solo cuando la tarea lo pide.",
+  "install": "En Claude Code: `/plugin marketplace add anthropics/skills` y luego `/plugin install document-skills@anthropic-agent-skills` (o `example-skills@anthropic-agent-skills`).",
+  "cases": [
+    "Crear y editar docx, pptx, xlsx y PDF desde Claude Code",
+    "Generar un servidor MCP con la skill mcp-builder",
+    "Escribir tus propias skills partiendo de skill-creator o la plantilla"
+  ],
+  "stack": "Markdown, YAML, Python, JavaScript",
+  "models": "No llama a un LLM por sí mismo: las skills las ejecuta Claude (Claude Code, Claude.ai o la API de Claude).",
+  "choose_if": "quieres skills oficiales de Anthropic o un ejemplo de referencia para escribir las tuyas",
+  "avoid_if": "buscas volumen o skills de comunidad para varios agentes; mira `awesome-agent-skills` o `antigravity-awesome-skills`",
+  "limits": "Son skills de demostración y las de documentos (docx, pdf, pptx, xlsx) son source-available, no open source.",
+  "combines_with": ["claude-code", "claude-plugins-official", "superpowers"],
+  "alternatives": [],
+  "pick": true,
+  "notes": "Repo nuevo (anthropics/skills). No confundir con el id `skills`, que corresponde a mattpocock/skills."
+}

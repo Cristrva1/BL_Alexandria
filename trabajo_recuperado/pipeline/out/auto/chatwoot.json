@@ -1,0 +1,36 @@
+{
+ "id": "chatwoot",
+ "name": "chatwoot",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "automation",
+  "docker",
+  "javascript",
+  "typescript"
+ ],
+ "one": "Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada.",
+ "desc": "Resuelve la primitiva de \"bandeja omnicanal con handoff humano\" como alternativa a Intercom/Zendesk.",
+ "why": "Es una de las alternativas open-source más populares a Intercom/Zendesk, valorada por centralizar el soporte multicanal con handoff humano y asignación de tickets. Su comunidad activa y su integración con canales la hacen apta para producción.",
+ "how": "Centraliza conversaciones por canal en una bandeja con tickets y agentes, sobre un stack Ruby on Rails con PostgreSQL y Redis para tiempo real. Los agentes responden desde un panel unificado y los bots pueden intervenir antes del handoff.",
+ "install": "Vía `docker compose` con la imagen oficial, o instalación manual del stack Rails; requiere PostgreSQL y Redis.",
+ "cases": [
+  "Centralizar WhatsApp/web/correo en un panel",
+  "Tickets y agentes con handoff bot→humano",
+  "Soporte multicanal para una agencia"
+ ],
+ "stack": "Ruby on Rails, Vue.js, PostgreSQL, Redis, Docker",
+ "models": "Integración externa de IA vía webhooks.",
+ "choose_if": "das soporte por varios canales y necesitas handoff humano",
+ "avoid_if": "solo necesitas enviar mensajes salientes ([evolution-api](#-evolution-api))",
+ "limits": "Self-host con varios componentes (app, worker, Redis, Postgres); el setup y las actualizaciones corren por tu cuenta.",
+ "combines_with": [
+  "evolution-api",
+  "novu"
+ ],
+ "alternatives": [],
+ "pick": false
+}

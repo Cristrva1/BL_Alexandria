@@ -1,0 +1,29 @@
+{
+  "id": "claude-cookbooks",
+  "name": "Claude Cookbooks",
+  "role": "directory",
+  "exec": "cloud",
+  "setup": "easy",
+  "mcp": false,
+  "prov": ["anthropic"],
+  "tags": ["learning", "notebooks", "rag", "python"],
+  "one": "Recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización.",
+  "desc": "Notebooks y guías de Anthropic con código copiable para construir con Claude: clasificación, resumen, RAG (con Pinecone o embeddings de Voyage AI), tool use y un agente de atención al cliente, visión y extracción de formularios, subagentes, PDFs, salida JSON consistente, moderación, prompt caching y checklists de coste y latencia.",
+  "why": "Es la referencia oficial y sigue la evolución de la API, así que los patrones reflejan cómo recomienda Anthropic usar Claude. Cada receta es corta y se adapta fácil a otro lenguaje.",
+  "how": "Son notebooks de Jupyter agrupados por tema (capacidades, herramientas, integraciones, multimodal, técnicas avanzadas) que llaman a la API con el SDK `anthropic` de Python; el `pyproject.toml` incluye también el Claude Agent SDK.",
+  "install": "`git clone https://github.com/anthropics/claude-cookbooks && cd claude-cookbooks && uv sync` y abre los notebooks en Jupyter con tu `ANTHROPIC_API_KEY`.",
+  "cases": [
+    "Aprender tool use con un agente de atención al cliente",
+    "Aplicar prompt caching para bajar el coste de una app",
+    "Montar un RAG con Claude y una base vectorial"
+  ],
+  "stack": "Python, Jupyter, Anthropic SDK, Claude Agent SDK",
+  "models": "API de Claude (Anthropic); algunas recetas usan servicios externos como Voyage AI o Pinecone.",
+  "choose_if": "construyes sobre la API de Claude y quieres ejemplos oficiales que puedas copiar",
+  "avoid_if": "tu app usa la API de OpenAI; mira `openai-cookbook`",
+  "limits": "Casi todo el código es Python y necesitas una API key de Anthropic de pago para ejecutarlo.",
+  "combines_with": ["prompt-eng-tutorial", "anthropic-skills", "promptfoo"],
+  "alternatives": ["openai-cookbook"],
+  "pick": false,
+  "notes": "Repo nuevo. Antes se llamaba anthropic-cookbook y muchos enlaces del README siguen apuntando a ese nombre."
+}

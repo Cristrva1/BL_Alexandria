@@ -1,0 +1,42 @@
+{
+ "id": "haystack",
+ "name": "Haystack",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "medium",
+ "prov": [
+  "openai",
+  "anthropic",
+  "local"
+ ],
+ "tags": [
+  "rag",
+  "agents",
+  "python"
+ ],
+ "one": "Framework de deepset para pipelines de RAG y agentes listos para producción.",
+ "desc": "Compone pipelines modulares de recuperación, generación y agentes con componentes intercambiables. Muy usado en búsqueda empresarial.",
+ "why": "Arquitectura de pipelines clara y madura, con foco en producción y despliegue.",
+ "how": "Un grafo de componentes (recuperadores, generadores, rankers) pasa datos tipados entre ellos y se serializa en YAML.",
+ "install": "`pip install haystack-ai`.",
+ "cases": [
+  "Búsqueda semántica empresarial",
+  "RAG con varias fuentes",
+  "Pipelines serializables y desplegables"
+ ],
+ "stack": "Python",
+ "models": "Agnóstico.",
+ "choose_if": "quieres pipelines de RAG explícitos y listos para producción",
+ "avoid_if": "buscas el ecosistema más grande de integraciones; mira `llama-index`",
+ "combines_with": [
+  "qdrant",
+  "docling"
+ ],
+ "alternatives": [
+  "llama-index",
+  "langchain"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

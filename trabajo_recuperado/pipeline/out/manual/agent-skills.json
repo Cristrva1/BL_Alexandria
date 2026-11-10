@@ -1,0 +1,37 @@
+{
+ "id": "agent-skills",
+ "name": "Agent Skills (Addy Osmani)",
+ "role": "skill",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "skills",
+  "coding-agent"
+ ],
+ "one": "Colección de skills de ingeniería de producción para agentes de código, de Addy Osmani.",
+ "desc": "Skills listas para Claude Code, Codex y otros agentes que cubren pruebas, rendimiento, accesibilidad, revisión de código y buenas prácticas web. Pensadas para que el agente trabaje como un ingeniero senior.",
+ "why": "Autor con mucha experiencia en ingeniería web en Google; skills concretas y bien documentadas.",
+ "how": "Cada skill es una carpeta con SKILL.md e instrucciones que el agente carga cuando la tarea coincide.",
+ "install": "Copia las carpetas a `.claude/skills/` (o la carpeta de skills de tu agente) o instálalas como plugin.",
+ "cases": [
+  "Auditar rendimiento web",
+  "Revisiones de código más estrictas",
+  "Mejorar accesibilidad de una app"
+ ],
+ "stack": "Markdown, JavaScript",
+ "models": "Agnóstico: cualquier agente con soporte de skills.",
+ "choose_if": "quieres skills de ingeniería web de calidad para tu agente",
+ "avoid_if": "buscas un catálogo enorme de skills de todo tipo; mira `antigravity-awesome-skills`",
+ "combines_with": [
+  "claude-code",
+  "codex",
+  "superpowers"
+ ],
+ "alternatives": [
+  "superpowers"
+ ],
+ "pick": true,
+ "mcp": false,
+ "prov": [],
+ "limits": ""
+}

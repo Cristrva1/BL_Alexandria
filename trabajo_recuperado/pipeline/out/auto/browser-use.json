@@ -1,0 +1,36 @@
+{
+ "id": "browser-use",
+ "name": "browser-use",
+ "role": "platform",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "automation",
+  "docker",
+  "python",
+  "typescript"
+ ],
+ "one": "Biblioteca Python que da a los LLMs la capacidad de usar navegadores reales con interfaz para modelos de visión, dejando que el agente perciba la pantalla y actúe sin selectores fijos.",
+ "desc": "Resuelve la fragilidad del scraping basado en CSS: el agente \"ve\" la página como un humano y decide la siguiente acción.",
+ "why": "Uno de los proyectos de agentes-web más virales y populares, por permitir automatización robusta guiada por modelos multimodales incluso ante pop-ups y cambios de layout. Su adopción masiva y la opción de cloud gestionado lo consolidan como referencia en navegación agentica.",
+ "how": "Controla el navegador con Playwright, extrae el estado de la página (DOM simplificado + capturas) y lo pasa a un LLM con visión que devuelve la siguiente acción de click/escritura/navegación, repitiendo el bucle hasta cumplir el objetivo.",
+ "install": "`pip install browser-use` y `playwright install`; requiere clave de un LLM con visión (OpenAI, Anthropic o Google). Para escala/stealth existe cloud gestionado.",
+ "cases": [
+  "Agente que entra a un e-commerce, filtra y compra",
+  "Recuperación ante pop-ups/errores y CAPTCHAs suaves",
+  "Flujos multi-paso donde los selectores cambian entre visitas"
+ ],
+ "stack": "Python 3.11+, Rust (core), Playwright",
+ "models": "Multimodales con visión (GPT-4o, Claude, Gemini); agnóstico vía variables de entorno.",
+ "choose_if": "quieres navegación como humano y tolerancia a cambios de UI",
+ "avoid_if": "necesitas scripts deterministas y baratos ([playwright](#-playwright)) o no quieres depender de un LLM por paso",
+ "limits": "",
+ "combines_with": [
+  "playwright",
+  "gpt-researcher"
+ ],
+ "alternatives": [],
+ "pick": false
+}

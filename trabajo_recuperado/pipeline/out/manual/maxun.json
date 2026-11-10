@@ -1,0 +1,37 @@
+{
+ "id": "maxun",
+ "name": "Maxun",
+ "role": "platform",
+ "exec": "local",
+ "setup": "medium",
+ "tags": [
+  "scraping",
+  "automation",
+  "typescript"
+ ],
+ "one": "Plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción.",
+ "desc": "Grabas lo que quieres extraer haciendo clic en la página y Maxun crea un robot que lo repite, con paginación y programación. Ideal para equipos sin programadores.",
+ "why": "Alternativa abierta a herramientas como Browse AI, auto-hospedable.",
+ "how": "Un grabador en el navegador captura acciones y selectores; un ejecutor con Playwright las repite y guarda los datos.",
+ "install": "Self-host con `docker compose up -d` siguiendo el README.",
+ "cases": [
+  "Monitorear precios de la competencia",
+  "Extraer listados a Google Sheets",
+  "APIs de sitios sin API"
+ ],
+ "stack": "TypeScript, Playwright, PostgreSQL, Docker",
+ "models": "Opcionalmente usa LLM para extracción.",
+ "choose_if": "quieres extraer datos web sin programar",
+ "avoid_if": "programas y prefieres librerías; mira `crawl4ai` o `scrapy`",
+ "limits": "Licencia AGPL-3.0.",
+ "combines_with": [
+  "n8n"
+ ],
+ "alternatives": [
+  "scrapegraph-ai",
+  "llm-scraper"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false
+}

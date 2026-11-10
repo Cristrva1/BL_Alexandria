@@ -1,0 +1,34 @@
+{
+ "id": "nanochat",
+ "name": "nanochat",
+ "role": "app",
+ "exec": "local",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "python",
+  "typescript"
+ ],
+ "one": "Pipeline full-stack mínimo de Andrej Karpathy para entrenar un \"ChatGPT\" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible.",
+ "desc": "Resuelve la pregunta \"¿cómo se monta un asistente entero?\": lo muestra en un solo repo compacto y legible.",
+ "why": "Referencia didáctica de Karpathy que muestra el ciclo completo de un asistente conversacional en un solo repo compacto y legible. Su encadenamiento pretrain → SFT → inferencia lo hace el complemento natural de nanoGPT para ver el flujo end-to-end.",
+ "how": "Encadena las etapas pretrain → SFT → inferencia en PyTorch sobre GPU, con scripts que entrenan y luego sirven el modelo de chat para que puedas interactuar con él.",
+ "install": "`git clone https://github.com/karpathy/nanochat` y seguir el script de entrenamiento del README (entorno PyTorch con GPU). Requiere GPU seria para entrenar y datos de preentrenamiento.",
+ "cases": [
+  "Ver el ciclo completo (pretrain→SFT→chat)",
+  "Base educativa para entender un asistente entero",
+  "Punto de partida para experimentos de fine-tuning"
+ ],
+ "stack": "Python, PyTorch, GPU",
+ "models": "Entrena modelos propios.",
+ "choose_if": "quieres el pipeline completo de un chat end-to-end",
+ "avoid_if": "solo necesitas el core del modelo ([nanoGPT](#-nanogpt)) o un modelo listo para usar",
+ "limits": "Entrenar de cero exige GPU y corpus; es educativo, no una alternativa a un modelo comercial servido.",
+ "combines_with": [
+  "nanogpt"
+ ],
+ "alternatives": [],
+ "pick": false
+}

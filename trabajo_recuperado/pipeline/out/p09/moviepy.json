@@ -1,0 +1,29 @@
+{
+  "id": "moviepy",
+  "name": "MoviePy",
+  "role": "library",
+  "exec": "local",
+  "setup": "easy",
+  "mcp": false,
+  "prov": [],
+  "tags": ["video", "audio", "automation", "python"],
+  "one": "Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos.",
+  "desc": "MoviePy convierte la edición de video en código Python: abres clips, los recortas, superpones texto o imágenes, mezclas audio y exportas a MP4, WebM o GIF. Es la pieza de ensamblaje habitual en pipelines que generan videos cortos a partir de imágenes, voz sintética y subtítulos.",
+  "why": "Es la librería de edición de video más usada en Python, con una API legible y efectos incluidos. La versión 2.0 modernizó la API, aunque rompe la compatibilidad con el código escrito para v1.",
+  "how": "Importa fotogramas y audio como arrays de NumPy, aplica efectos y composiciones sobre clips (`VideoFileClip`, `TextClip`, `CompositeVideoClip`) y vuelve a codificar con FFmpeg, que obtiene mediante imageio-ffmpeg.",
+  "install": "`pip install moviepy` (Python 3.9+; trae FFmpeg mediante imageio-ffmpeg).",
+  "cases": [
+    "Montar reels con imágenes, voz TTS y subtítulos por script",
+    "Recortar clips y superponer títulos o marcas de agua en lote",
+    "Generar GIFs y videos de demo de forma reproducible"
+  ],
+  "stack": "Python, NumPy, Pillow, FFmpeg",
+  "models": "No usa LLM: compone el material que generan otras herramientas.",
+  "choose_if": "ensamblas video desde Python y quieres controlar cada clip por código",
+  "avoid_if": "prefieres plantillas en React (`remotion`) o en HTML (`hyperframes`), o solo necesitas cortar sin recodificar (`lossless-cut`)",
+  "limits": "Es más lento que llamar a FFmpeg directamente porque pasa cada fotograma por NumPy, y el código escrito para v1 hay que adaptarlo a v2.",
+  "combines_with": ["whisperx", "kokoro", "comfyui"],
+  "alternatives": ["remotion", "hyperframes"],
+  "pick": true,
+  "notes": "La API de v2 cambió nombres (p. ej. `subclipped` y `with_position` en lugar de `subclip` y `set_position`); el texto previo citaba la API de v1. Encajaría también en 12.programatico."
+}

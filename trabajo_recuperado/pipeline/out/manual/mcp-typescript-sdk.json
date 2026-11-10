@@ -1,0 +1,37 @@
+{
+ "id": "mcp-typescript-sdk",
+ "name": "MCP TypeScript SDK",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "mcp"
+ ],
+ "tags": [
+  "mcp",
+  "typescript"
+ ],
+ "one": "SDK oficial de TypeScript para crear servidores y clientes del Model Context Protocol.",
+ "desc": "Base de la mayoría de servidores MCP en Node.js, con transportes stdio y HTTP.",
+ "why": "SDK oficial y el más usado para servidores MCP en JavaScript.",
+ "how": "Clases McpServer y Client gestionan el protocolo; registras herramientas con esquemas Zod.",
+ "install": "`npm install @modelcontextprotocol/sdk`.",
+ "cases": [
+  "Servidor MCP para tu API en Node",
+  "Clientes MCP en apps web",
+  "Herramientas para agentes de código"
+ ],
+ "stack": "TypeScript, Node.js, Zod",
+ "models": "No usa LLM.",
+ "choose_if": "creas servidores MCP en TypeScript",
+ "avoid_if": "trabajas en Python; mira `fastmcp`",
+ "combines_with": [
+  "mcp-inspector"
+ ],
+ "alternatives": [
+  "mcp-use"
+ ],
+ "pick": true,
+ "limits": ""
+}

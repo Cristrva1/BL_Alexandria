@@ -1,0 +1,41 @@
+{
+ "id": "autogpt",
+ "name": "AutoGPT",
+ "role": "platform",
+ "exec": "hybrid",
+ "setup": "heavy",
+ "prov": [
+  "openai",
+  "anthropic"
+ ],
+ "tags": [
+  "agents",
+  "automation",
+  "python"
+ ],
+ "one": "Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un constructor visual de bloques.",
+ "desc": "El famoso proyecto de agentes autónomos evolucionó a una plataforma con editor de bloques, marketplace y servidor para agentes que corren en segundo plano.",
+ "why": "Proyecto pionero con enorme comunidad; hoy ofrece una plataforma completa y auto-hospedable.",
+ "how": "Un frontend de bloques define agentes como grafos; un backend Python los ejecuta con colas y base de datos.",
+ "install": "Self-host con Docker Compose siguiendo la guía del repo (requiere Supabase y varios servicios).",
+ "cases": [
+  "Agentes que generan contenido de forma continua",
+  "Automatizaciones con bloques de IA",
+  "Experimentar con agentes autónomos"
+ ],
+ "stack": "Python, TypeScript, Next.js, Docker",
+ "models": "Agnóstico: OpenAI, Anthropic y otros.",
+ "choose_if": "quieres agentes continuos con un editor visual propio",
+ "avoid_if": "buscas algo ligero y fácil de operar; mira `sim` o `flowise`",
+ "limits": "La plataforma usa licencia Polyform Shield y su self-host tiene muchas piezas.",
+ "combines_with": [
+  "n8n"
+ ],
+ "alternatives": [
+  "sim",
+  "langflow",
+  "flowise"
+ ],
+ "mcp": false,
+ "pick": false
+}

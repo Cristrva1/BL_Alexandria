@@ -1,0 +1,37 @@
+{
+ "id": "llamafile",
+ "name": "llamafile",
+ "role": "runtime",
+ "exec": "local",
+ "setup": "easy",
+ "prov": [
+  "local"
+ ],
+ "tags": [
+  "inference",
+  "local",
+  "cpp"
+ ],
+ "one": "Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier sistema operativo.",
+ "desc": "Empaqueta modelo y motor en un ejecutable que funciona en Windows, macOS y Linux sin instalar nada. Proyecto de Mozilla.",
+ "why": "Portabilidad extrema: un archivo y listo.",
+ "how": "Combina llama.cpp con Cosmopolitan Libc para crear binarios multiplataforma con el modelo embebido.",
+ "install": "Descarga un `.llamafile`, dale permiso de ejecución y ábrelo.",
+ "cases": [
+  "Llevar un modelo en una memoria USB",
+  "Demos sin instalación",
+  "IA local en equipos sin permisos"
+ ],
+ "stack": "C++, Cosmopolitan",
+ "models": "Modelos abiertos.",
+ "choose_if": "quieres repartir un modelo que funcione con doble clic",
+ "avoid_if": "vas a cambiar de modelos a menudo; mira `ollama`",
+ "combines_with": [],
+ "alternatives": [
+  "ollama",
+  "llama-cpp"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

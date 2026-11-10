@@ -1,0 +1,35 @@
+{
+ "id": "openevolve",
+ "name": "openevolve",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "automation",
+  "docker",
+  "python",
+  "typescript"
+ ],
+ "one": "Agente de codificación evolutivo que optimiza algoritmos por simulación genética.",
+ "desc": "Genera, evalúa y muta candidatos de código a lo largo de múltiples generaciones.",
+ "why": "Supera la generación en un solo paso al explorar el espacio de soluciones, encontrando algoritmos inéditos (inspirado en AlphaEvolve de Google). Es el proyecto open-source que más cerca está de replicar ese enfoque.",
+ "how": "Un bucle evolutivo usa el LLM como operador de mutación y una función de evaluación como fitness; implementado en Python con numpy/PyTorch y componentes en Rust para velocidad.",
+ "install": "`pip install openevolve` (o `git clone` del repo). Requiere un proveedor de LLM de frontera (Claude/GPT-4o) y, según el problema, cómputo no trivial para evaluar muchas generaciones.",
+ "cases": [
+  "Empaquetado geométrico",
+  "Optimización de carteras",
+  "Mejorar scripts en tiempo real"
+ ],
+ "stack": "Python, PyTorch/numpy, Rust",
+ "models": "Modelos de frontera creativos (Claude, GPT-4o); agnóstico vía variables de entorno.",
+ "choose_if": "optimizas problemas algorítmicos donde cabe explorar muchas variantes",
+ "avoid_if": "haces tareas de texto comunes o buscas respuesta inmediata",
+ "limits": "Consume muchos tokens de LLM y cómputo por generación; no es práctico para tareas triviales.",
+ "combines_with": [
+  "llm-council"
+ ],
+ "alternatives": [],
+ "pick": false
+}

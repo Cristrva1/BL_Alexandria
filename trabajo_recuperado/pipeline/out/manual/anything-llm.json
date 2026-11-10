@@ -1,0 +1,43 @@
+{
+ "id": "anything-llm",
+ "name": "AnythingLLM",
+ "role": "app",
+ "exec": "local",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "openai",
+  "anthropic",
+  "local"
+ ],
+ "tags": [
+  "rag",
+  "agents",
+  "local",
+  "javascript"
+ ],
+ "one": "App todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube.",
+ "desc": "Organiza documentos en espacios de trabajo, crea RAG sin configurar nada y añade agentes con herramientas. Escritorio o Docker multiusuario.",
+ "why": "La forma más fácil de tener RAG privado con agentes.",
+ "how": "Incluye base vectorial, embeddings y conectores a LLM; cada workspace tiene su contexto y agentes.",
+ "install": "Descarga la app de escritorio o `docker pull mintplexlabs/anythingllm`.",
+ "cases": [
+  "Chat con los documentos de la empresa",
+  "Agentes con búsqueda web",
+  "IA privada en un portátil"
+ ],
+ "stack": "JavaScript, Node.js, React",
+ "models": "Agnóstico: Ollama, OpenAI, Anthropic y más.",
+ "choose_if": "quieres RAG privado sin programar",
+ "avoid_if": "necesitas un pipeline de RAG a medida; mira `llama-index`",
+ "combines_with": [
+  "ollama"
+ ],
+ "alternatives": [
+  "open-webui",
+  "khoj",
+  "private-gpt"
+ ],
+ "pick": true,
+ "limits": ""
+}

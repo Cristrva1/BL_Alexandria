@@ -1,0 +1,37 @@
+{
+ "id": "deer-flow",
+ "name": "deer-flow",
+ "role": "skill",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "automation",
+  "docker",
+  "javascript",
+  "python",
+  "typescript"
+ ],
+ "one": "Super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles.",
+ "desc": "Coordina tareas complejas delegando en agentes especializados.",
+ "why": "Orquestación potente y extensible; alcanzó gran visibilidad (#1 en GitHub Trending en su lanzamiento v2) y cuenta con el respaldo de ByteDance. Su diseño por skills lo hace ampliable sin tocar el núcleo.",
+ "how": "Un orquestador reparte sub-tareas a agentes con herramientas y sandbox, integrando memoria entre pasos; implementado en Python/TS sobre LangChain.",
+ "install": "`git clone` del repo y arranque con sus scripts (o Docker). Requiere claves de proveedor de LLM y, para el sandbox, Docker.",
+ "cases": [
+  "Research profundo",
+  "Tareas complejas multi-paso con herramientas",
+  "Flujos extensibles vía skills propias"
+ ],
+ "stack": "Python/TS, LangChain, Docker",
+ "models": "Múltiples; agnóstico vía variables de entorno.",
+ "choose_if": "quieres un orquestador completo y extensible",
+ "avoid_if": "buscas algo minimalista o sin Docker",
+ "limits": "",
+ "combines_with": [
+  "gpt-researcher",
+  "firecrawl"
+ ],
+ "alternatives": [],
+ "pick": false
+}

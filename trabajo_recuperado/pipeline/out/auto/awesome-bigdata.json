@@ -1,0 +1,37 @@
+{
+ "id": "awesome-bigdata",
+ "name": "awesome-bigdata",
+ "role": "directory",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "docker",
+  "javascript",
+  "postgres",
+  "python",
+  "react",
+  "typescript"
+ ],
+ "one": "Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.",
+ "desc": "Resuelve el \"qué uso para X a escala\": un panorama del stack de datos grandes en un solo vistazo.",
+ "why": "Lista \"awesome\" ampliamente referenciada que ofrece un panorama completo del stack de datos grandes en un solo vistazo. Su organización por categorías (ingesta, almacenamiento, procesamiento, streaming) facilita comparar alternativas sin navegar decenas de sitios.",
+ "how": "Es un documento Markdown con enlaces clasificados por categoría; se consulta directamente en GitHub sin instalar nada, y cada enlace lleva al repo/docs de la herramienta.",
+ "install": "No requiere instalación; se navega online en el repositorio de GitHub y se elige la herramienta según tu caso.",
+ "cases": [
+  "Elegir stack de datos a escala",
+  "Descubrir herramientas por categoría",
+  "Comparar alternativas de ingesta/almacenamiento/procesamiento"
+ ],
+ "stack": "Markdown",
+ "models": "N/A (catálogo).",
+ "choose_if": "diseñas pipelines de datos grandes y necesitas descubrir el ecosistema",
+ "avoid_if": "tu proyecto es pequeño y no justifica herramientas de big data",
+ "limits": "",
+ "combines_with": [
+  "awesome-dataviz"
+ ],
+ "alternatives": [],
+ "pick": false
+}

@@ -1,0 +1,39 @@
+{
+ "id": "odysseus",
+ "name": "odysseus",
+ "role": "skill",
+ "exec": "hybrid",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "agents",
+  "docker",
+  "javascript",
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado.",
+ "desc": "Sustituye la dispersión entre varios SaaS por un único panel que tú controlas.",
+ "why": "Ofrece una alternativa local y soberana a las suites tipo Copilot/Workspace AI, juntando en un solo lugar lo que normalmente reparten varios servicios cerrados. Su enfoque todo-en-uno sobre stack open-source lo hace atractivo para perfiles técnicos que priorizan privacidad.",
+ "how": "Un backend Python orquesta los agentes sobre una base PostgreSQL y una UI React, conectando con modelos locales vía Ollama/Llama.cpp o con APIs comerciales para razonar sobre tus datos.",
+ "install": "`docker compose` para levantar backend, base de datos y frontend, o despliegue manual con Python y Node. Requiere PostgreSQL y un endpoint de modelo (Ollama local o API key comercial).",
+ "cases": [
+  "Asistente administrativo privado que redacta correos y agenda desde tus documentos",
+  "Research sobre tu propia base de conocimiento",
+  "Sustituto self-host de Copilot personal"
+ ],
+ "stack": "Python, React, PostgreSQL",
+ "models": "Ollama/Llama.cpp o APIs comerciales (agnóstico vía configuración).",
+ "choose_if": "quieres operación privada todo-en-uno y aceptas operar la infra",
+ "avoid_if": "prefieres SaaS gestionado sin mantenimiento",
+ "limits": "",
+ "combines_with": [
+  "open-notebook",
+  "ecc",
+  "mem0"
+ ],
+ "alternatives": [],
+ "pick": false
+}

@@ -1,0 +1,39 @@
+{
+ "id": "langchain-mcp-adapters",
+ "name": "LangChain MCP Adapters",
+ "role": "library",
+ "exec": "local",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "mcp"
+ ],
+ "tags": [
+  "mcp",
+  "agents",
+  "python"
+ ],
+ "one": "Puente que convierte herramientas de servidores MCP en herramientas de LangChain y LangGraph.",
+ "desc": "Permite que tus agentes de LangGraph usen cualquier servidor MCP sin escribir adaptadores. El repo está archivado y su función se integró en LangChain.",
+ "why": "Fue la vía estándar para usar MCP en LangGraph.",
+ "how": "Un cliente multi-servidor carga las herramientas MCP y las envuelve como herramientas de LangChain.",
+ "install": "`pip install langchain-mcp-adapters`.",
+ "cases": [
+  "Agentes de LangGraph con servidores MCP",
+  "Reutilizar herramientas MCP existentes",
+  "Prototipos rápidos"
+ ],
+ "stack": "Python, LangChain",
+ "models": "No usa LLM por sí misma.",
+ "choose_if": "usas LangGraph y quieres herramientas MCP",
+ "avoid_if": "no usas LangChain",
+ "limits": "Repositorio archivado: revisa la integración actual en la documentación de LangChain.",
+ "combines_with": [
+  "langgraph",
+  "langchain"
+ ],
+ "alternatives": [
+  "mcp-use"
+ ],
+ "pick": false
+}

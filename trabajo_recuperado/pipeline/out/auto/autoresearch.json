@@ -1,0 +1,34 @@
+{
+ "id": "autoresearch",
+ "name": "autoresearch",
+ "role": "platform",
+ "exec": "local",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "python",
+  "typescript"
+ ],
+ "one": "Enfoque experimental para automatizar investigación iterativa mediante bucles de búsqueda y refinamiento.",
+ "desc": "Proyecto pequeño y exploratorio de Karpathy, más que una herramienta pulida.",
+ "why": "Propuesta sencilla para experimentar con investigación autónoma en varias pasadas; valioso como punto de partida y referencia didáctica más que como producto cerrado.",
+ "how": "Repite ciclos de búsqueda y refinamiento sobre un tema, refinando consultas con cada iteración; implementado en Python con llamadas a LLM y búsqueda web.",
+ "install": "`git clone` del repo y ejecución de sus scripts en Python (consulta el README). Requiere una clave de LLM y acceso a búsqueda web.",
+ "cases": [
+  "Loops de búsqueda y refinamiento",
+  "Exploración de un tema en varias pasadas",
+  "Base para montar tu propio agente de research"
+ ],
+ "stack": "Python",
+ "models": "Múltiples; agnóstico vía variables de entorno.",
+ "choose_if": "experimentas con research iterativo o quieres un punto de partida",
+ "avoid_if": "quieres salida pulida y lista ([gpt-researcher](#-gpt-researcher))",
+ "limits": "",
+ "combines_with": [
+  "gpt-researcher",
+  "crawl4ai"
+ ],
+ "alternatives": [],
+ "pick": false
+}

@@ -1,0 +1,36 @@
+{
+ "id": "open-generative-ai",
+ "name": "Open-Generative-AI",
+ "role": "skill",
+ "exec": "hybrid",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "docker",
+  "javascript",
+  "python",
+  "react",
+  "typescript"
+ ],
+ "one": "Plataforma alternativa libre a servicios premium de video/imagen que agrupa más de 200 modelos generativos accesibles desde terminal o integrados con agentes.",
+ "desc": "Centraliza la generación visual sin filtros restrictivos ni suscripción.",
+ "why": "Ofrece un hub unificado pensado para conectar la generación visual a flujos de agentes (CLI + integraciones), frente a servicios cerrados como Runway o Pika; su catálogo amplio cubre imagen, video y audio en un solo punto.",
+ "how": "Orquesta modelos de difusión y video vía la API en nube MuAPI o sobre GPUs locales, exponiéndolos tras una interfaz de línea de comandos y endpoints reutilizables desde scripts de agentes.",
+ "install": "`git clone` del repo e instalar dependencias de Python/Node.js; configurar la clave de MuAPI (render en nube) o el backend de GPU local. Sin clave, solo queda la vía local con GPU.",
+ "cases": [
+  "Generar un clip promocional desde terminal",
+  "Activos visuales rápidos para agentes",
+  "Sustituir varias APIs de pago por un único hub"
+ ],
+ "stack": "Python, Node.js",
+ "models": "MuAPI (render en nube) o GPUs locales.",
+ "choose_if": "quieres un hub de generación multi-modal sin atarte a un SaaS",
+ "avoid_if": "ya tienes tu pipeline local ([ComfyUI](#-comfyui)) o necesitas control fino por nodo",
+ "limits": "",
+ "combines_with": [
+  "remotion"
+ ],
+ "alternatives": [],
+ "pick": false
+}

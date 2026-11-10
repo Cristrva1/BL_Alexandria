@@ -1,0 +1,35 @@
+{
+ "id": "prompts-chat",
+ "name": "prompts.chat",
+ "role": "directory",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "prompts",
+  "chatbot"
+ ],
+ "one": "La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable.",
+ "desc": "Reúne miles de prompts de rol y tarea para ChatGPT, Claude y otros, con buscador web. Puedes desplegar tu propia copia para tu organización.",
+ "why": "Es uno de los repos más populares de GitHub; fuente de inspiración para cualquier caso.",
+ "how": "Los prompts viven en un CSV y una app Next.js permite explorarlos, compartirlos y auto-hospedarlos.",
+ "install": "No se instala para usarlo: abre prompts.chat; para self-host clona el repo y sigue su guía.",
+ "cases": [
+  "Encontrar un prompt de rol rápido",
+  "Biblioteca interna de prompts",
+  "Inspiración para asistentes"
+ ],
+ "stack": "Next.js, TypeScript, CSV",
+ "models": "Agnóstico.",
+ "choose_if": "buscas prompts listos para copiar",
+ "avoid_if": "quieres ejecutarlos como comandos encadenables; mira `fabric`",
+ "combines_with": [
+  "fabric"
+ ],
+ "alternatives": [
+  "fabric"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

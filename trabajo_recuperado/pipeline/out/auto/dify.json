@@ -1,0 +1,38 @@
+{
+ "id": "dify",
+ "name": "dify",
+ "role": "platform",
+ "exec": "hybrid",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "automation",
+  "docker",
+  "javascript",
+  "postgres",
+  "python",
+  "react"
+ ],
+ "one": "Plataforma integral para construir apps de IA con backend y UI listos.",
+ "desc": "Combina orquestación de prompts, RAG, agentes, workflows y observabilidad en un mismo producto autoalojable.",
+ "why": "Todo-en-uno muy popular para llevar apps de IA a producción sin ensamblar piezas sueltas. Cubre desde el chatbot con RAG hasta workflows visuales y agentes, con gestión de usuarios y API propia.",
+ "how": "Define apps (chatbot, agente, workflow) desde un panel web; el backend en Python orquesta modelos y herramientas sobre PostgreSQL/Redis, y se despliega con Docker Compose.",
+ "install": "`docker compose up` desde el repo (o cloud gestionado de Dify). Requiere Docker y al menos una clave de proveedor de LLM.",
+ "cases": [
+  "Desplegar un chatbot/asistente con RAG",
+  "Apps IA para clientes",
+  "Workflows visuales con herramientas propias"
+ ],
+ "stack": "Python/TS, React, PostgreSQL, Redis, Docker",
+ "models": "OpenAI, Anthropic, Google, locales; agnóstico vía variables de entorno.",
+ "choose_if": "quieres una app IA completa autoalojada",
+ "avoid_if": "solo necesitas una librería o un prototipo puntual",
+ "limits": "",
+ "combines_with": [
+  "langflow",
+  "flowise"
+ ],
+ "alternatives": [],
+ "pick": false
+}

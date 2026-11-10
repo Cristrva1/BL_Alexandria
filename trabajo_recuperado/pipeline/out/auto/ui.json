@@ -1,0 +1,34 @@
+{
+ "id": "ui",
+ "name": "ui",
+ "role": "platform",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "typescript"
+ ],
+ "one": "Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada.",
+ "desc": "El código fuente pasa a ser tuyo y lo editas a voluntad.",
+ "why": "Popularizó el modelo \"el código es tuyo\": sin capa pesada ni lock-in, se ha vuelto la base de incontables design systems. Su combinación de Radix UI (accesibilidad) + Tailwind (estilos) es el patrón de facto en React moderno.",
+ "how": "CLI que copia el código fuente de cada componente (Radix + Tailwind) directamente a tu proyecto, para que lo edites y versiones como parte de tu codebase.",
+ "install": "`npx shadcn@latest init` y luego `npx shadcn add <componente>`. Requiere React + Tailwind configurados.",
+ "cases": [
+  "Pantallas administrativas o landings sobre tu stack",
+  "Base de un design system propio versionado",
+  "Punto de partida que personalizas sin límites"
+ ],
+ "stack": "Node.js, React, Tailwind, Radix UI",
+ "models": "N/A.",
+ "choose_if": "quieres ser dueño del código de UI",
+ "avoid_if": "prefieres una lib \"llave en mano\" con updates automáticos ([heroui](#-heroui))",
+ "limits": "",
+ "combines_with": [
+  "tailwindcss",
+  "plasmic"
+ ],
+ "alternatives": [],
+ "pick": false
+}

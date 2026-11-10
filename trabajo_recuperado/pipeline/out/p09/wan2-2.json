@@ -1,0 +1,29 @@
+{
+  "id": "wan2-2",
+  "name": "Wan2.2",
+  "role": "runtime",
+  "exec": "local",
+  "setup": "heavy",
+  "mcp": false,
+  "prov": ["local"],
+  "tags": ["video", "inference", "local", "python"],
+  "one": "Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0.",
+  "desc": "Wan2.2 publica pesos y código de inferencia de varios modelos de video: texto a video e imagen a video de 14B (MoE), un modelo híbrido de 5B que genera 720p a 24 fps en una RTX 4090, video guiado por voz (S2V) y animación o sustitución de personajes (Animate). Es la base de muchos flujos de ComfyUI y Diffusers.",
+  "why": "Combina calidad cercana a modelos cerrados con licencia Apache 2.0 y un ecosistema amplio: integración oficial en ComfyUI y Diffusers, y herramientas de la comunidad para GPU con poca memoria.",
+  "how": "Modelo de difusión con Mixture-of-Experts que reparte el denoising entre expertos según el paso, más un VAE de alta compresión (16x16x4) en el modelo 5B. El prompt se puede ampliar con un LLM Qwen local o por API.",
+  "install": "`git clone https://github.com/Wan-Video/Wan2.2.git && cd Wan2.2 && pip install -r requirements.txt` (torch 2.4+); descarga pesos con `huggingface-cli download Wan-AI/Wan2.2-TI2V-5B --local-dir ./Wan2.2-TI2V-5B` y ejecuta `python generate.py --task ti2v-5B`.",
+  "cases": [
+    "Generar clips 720p desde un prompt para anuncios o reels",
+    "Animar la foto de un producto o personaje con imagen a video",
+    "Crear el video de una persona hablando a partir de un audio"
+  ],
+  "stack": "Python, PyTorch, FlashAttention, Diffusers",
+  "models": "Pesos propios en local (T2V/I2V-A14B, TI2V-5B, S2V-14B, Animate-14B); la ampliación opcional del prompt usa Qwen local o la API de DashScope.",
+  "choose_if": "quieres el modelo de video abierto de referencia, con licencia permisiva, y tienes una GPU de 24 GB o más",
+  "avoid_if": "tu GPU tiene menos de 24 GB o prefieres no trabajar con scripts; usa `wan2gp` o `comfyui` con modelos cuantizados",
+  "limits": "Los modelos de 14B piden unos 80 GB de VRAM sin offload, y el de 5B al menos 24 GB.",
+  "combines_with": ["comfyui", "diffusers", "real-esrgan", "cosyvoice"],
+  "alternatives": ["hunyuanvideo", "ltx-video"],
+  "pick": true,
+  "notes": ""
+}

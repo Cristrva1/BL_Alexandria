@@ -1,0 +1,34 @@
+{
+ "id": "mcp-neo4j",
+ "name": "mcp-neo4j",
+ "role": "directory",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": true,
+ "prov": [],
+ "tags": [
+  "mcp",
+  "typescript"
+ ],
+ "one": "Conjunto de servidores MCP oficiales para conectar bases de datos de grafos Neo4j a asistentes de IA, con soporte de despliegue en cloud.",
+ "desc": "Resuelve el acceso natural a grafos desde un LLM: el asistente consulta y escribe Cypher sin que tú escribas el glue a mano.",
+ "why": "Lo mantiene el equipo Field GenAI de Neo4j Labs y viene contenedorizado y listo para HTTP, lo que facilita llevar grafos a producción con IA. Al ser oficial, sigue el ritmo de las versiones de Neo4j y del propio protocolo MCP.",
+ "how": "Expone consultas Cypher y operaciones sobre el grafo (lectura/escritura, esquema) como tools MCP que el cliente invoca mediante el protocolo, devolviendo resultados estructurados al LLM.",
+ "install": "`pip install mcp-neo4j-cypher` (o imagen Docker) y registrar el servidor en la config del cliente MCP. Requiere una instancia Neo4j accesible (local o Aura cloud) con credenciales.",
+ "cases": [
+  "Consultar/escribir grafos Neo4j desde un asistente",
+  "Backends de conocimiento basados en grafo",
+  "Exploración de datos relacionales por lenguaje natural"
+ ],
+ "stack": "Python, Docker",
+ "models": "Clientes MCP (Claude, Cursor, etc.); Neo4j como backend.",
+ "choose_if": "usas Neo4j con IA y quieres que el asistente hable Cypher",
+ "avoid_if": "no trabajas con grafos o tu base es relacional pura",
+ "limits": "",
+ "combines_with": [
+  "graphrag",
+  "awesome-mcp-servers"
+ ],
+ "alternatives": [],
+ "pick": false
+}

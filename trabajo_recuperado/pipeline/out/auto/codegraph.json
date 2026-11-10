@@ -1,0 +1,37 @@
+{
+ "id": "codegraph",
+ "name": "codegraph",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "postgres",
+  "python",
+  "react",
+  "typescript"
+ ],
+ "one": "CLI que indexa tu código y da a los asistentes de IA inteligencia semántica 100% local, permitiéndoles entender la estructura y el flujo de un repo sin leer archivo por archivo ni gastar llamadas a herramientas.",
+ "desc": "Resuelve el coste de contexto de los agentes en repos grandes.",
+ "why": "Convierte repos enormes en algo navegable para la IA con coste casi nulo; muy valorado en flujos de agentes de código por su ahorro real de tokens y tool calls. Su acoplamiento con Claude Code, Gemini y Cursor sin modelo propio lo hace fácil de adoptar.",
+ "how": "Construye un índice semántico local del repositorio (símbolos, referencias, flujo) que el asistente consulta vía comandos; se acopla a Claude Code, Gemini y Cursor sin necesidad de un modelo propio ni de enviar código a la nube.",
+ "install": "`npm install -g codegraph` (binario autónomo de Node.js) y luego `codegraph index .`. Requiere Node.js; el índice se regenera al cambiar el código.",
+ "cases": [
+  "`codegraph index .` para que el asistente entienda el flujo sin leer archivo por archivo",
+  "Onboarding de IA en monorepos grandes",
+  "Reducir tool calls en revisiones de código"
+ ],
+ "stack": "JavaScript/Node.js (binario autónomo)",
+ "models": "No requiere IA; se acopla a Claude Code, Gemini, Cursor.",
+ "choose_if": "trabajas repos grandes y el contexto del agente es caro",
+ "avoid_if": "tu base de código es pequeña y no justifica mantener un índice",
+ "limits": "",
+ "combines_with": [
+  "graphify",
+  "headroom"
+ ],
+ "alternatives": [],
+ "pick": false
+}

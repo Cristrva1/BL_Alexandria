@@ -1,0 +1,41 @@
+{
+ "id": "composio",
+ "name": "Composio",
+ "role": "platform",
+ "exec": "cloud",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "openai",
+  "anthropic",
+  "mcp"
+ ],
+ "tags": [
+  "agents",
+  "mcp",
+  "automation",
+  "typescript"
+ ],
+ "one": "Plataforma con más de 1000 integraciones con autenticación gestionada para que tus agentes actúen en apps reales.",
+ "desc": "Da a cualquier agente herramientas listas para Gmail, Slack, GitHub, Notion y cientos más, gestionando OAuth por ti. Funciona con los principales frameworks y por MCP.",
+ "why": "Resuelve la parte más tediosa de los agentes: autenticación y herramientas para muchas apps.",
+ "how": "Su API expone toolkits con auth gestionada; los SDK los convierten en herramientas para tu framework o en servidores MCP.",
+ "install": "`pip install composio` o `npm i @composio/core` y configura tu clave de API.",
+ "cases": [
+  "Agente que lee y responde correos",
+  "Automatizar tareas en Slack y GitHub",
+  "Herramientas MCP con OAuth"
+ ],
+ "stack": "TypeScript, Python",
+ "models": "Agnóstico.",
+ "choose_if": "tu agente necesita actuar en muchas apps SaaS",
+ "avoid_if": "quieres todo auto-hospedado sin servicio externo",
+ "limits": "Depende de su servicio en la nube y tiene planes de pago por uso.",
+ "combines_with": [
+  "langgraph",
+  "openai-agents-python",
+  "mastra"
+ ],
+ "alternatives": [],
+ "pick": true
+}

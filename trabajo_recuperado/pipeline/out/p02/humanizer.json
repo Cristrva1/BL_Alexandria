@@ -1,0 +1,29 @@
+{
+  "id": "humanizer",
+  "name": "Humanizer",
+  "role": "skill",
+  "exec": "hybrid",
+  "setup": "easy",
+  "mcp": false,
+  "prov": [],
+  "tags": ["skills", "prompts", "docs"],
+  "one": "Skill que reescribe texto generado por IA para que suene humano, basada en la guía de Wikipedia sobre señales de escritura IA.",
+  "desc": "Detecta 26 patrones típicos de la prosa de LLM (contrastes tipo 'no es X, es Y', cierres dramáticos, tríadas forzadas, frases de falsa profundidad, importancia inflada) y reescribe el texto sin cambiar lo que dice. Puede imitar tu estilo si le das una muestra y, sobre un archivo, solo toca la prosa: no el código, los datos ni el frontmatter.",
+  "why": "Parte de una fuente pública (la guía 'Signs of AI writing' de los editores de Wikipedia) y muestra su trabajo: primera reescritura, crítica de lo que aún suena artificial y versión final. No añade datos que no estuvieran en el original.",
+  "how": "El SKILL.md ordena los patrones por fuerza: los cinco primeros justifican un cambio con una sola aparición y los débiles solo cuentan si se acumulan. El agente marca las señales, redacta, contrasta el borrador con los patrones y las afirmaciones originales y entrega.",
+  "install": "En Claude Code: `/plugin marketplace add blader/humanizer` y `/plugin install humanizer@humanizer`; en otros agentes: `npx skills add blader/humanizer --global --agent '*'`.",
+  "cases": [
+    "Quitar el tono IA de un post o un anuncio de producto",
+    "Reescribir documentación generada sin perder los datos",
+    "Ajustar un borrador a tu propia voz con una muestra"
+  ],
+  "stack": "Markdown, SKILL.md",
+  "models": "No llama a un LLM: la ejecuta tu agente (Claude Code, Codex, Claude.ai, Gemini CLI, Copilot, Windsurf, etc.).",
+  "choose_if": "publicas textos redactados con IA y quieres que se lean como escritos por una persona",
+  "avoid_if": "quieres reglas de estilo cortas para pegar en un system prompt, con rúbrica propia; mira `stop-slop`",
+  "limits": "Sus patrones y ejemplos están pensados para prosa en inglés, y no busca engañar a los detectores de IA, que siguen marcando la mayoría de sus salidas.",
+  "combines_with": ["marketingskills", "claude-code", "codex"],
+  "alternatives": ["stop-slop"],
+  "pick": true,
+  "notes": "La editorial previa la limitaba a Claude Code y OpenCode; hoy se instala también en Codex, Claude.ai y cualquier agente del Skills CLI. `stop-slop` cumple la misma función, así que pasa de combines_with a alternatives."
+}

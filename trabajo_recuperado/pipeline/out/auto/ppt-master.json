@@ -1,0 +1,33 @@
+{
+ "id": "ppt-master",
+ "name": "ppt-master",
+ "role": "library",
+ "exec": "hybrid",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "Generador que transforma documentos de texto en presentaciones PowerPoint (.pptx) editables nativas, listas para abrir y ajustar en Office.",
+ "desc": "Sustituye el maquetado manual de slides por un borrador estructurado por un LLM.",
+ "why": "Entrega un PPTX realmente editable (formas y textos nativos) en lugar de un PDF plano, ahorrando el tedio de maquetar slides desde cero; útil para borradores rápidos a partir de un informe.",
+ "how": "Un LLM estructura el contenido en secciones y diapositivas (título, bullets, layout), y luego python-pptx genera el archivo .pptx con sus formas, textos y diseño aplicado a una plantilla.",
+ "install": "`git clone` del repo y `pip install -r requirements.txt`; requiere clave de API del modelo (Anthropic u OpenAI según configuración).",
+ "cases": [
+  "Pasar un informe Markdown a un borrador de slides corporativos en segundos",
+  "Generar una primera versión editable de una presentación a partir de notas"
+ ],
+ "stack": "Python, python-pptx",
+ "models": "Claude 3.5 Sonnet o GPT-4o para estructurar (vía API key).",
+ "choose_if": "quieres PPTX editable de Office rápido",
+ "avoid_if": "prefieres slides web por código ([reveal.js](#-revealjs)) o control de diseño pixel-perfect",
+ "limits": "",
+ "combines_with": [
+  "markitdown"
+ ],
+ "alternatives": [],
+ "pick": false
+}

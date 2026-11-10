@@ -1,0 +1,34 @@
+{
+ "id": "heroui",
+ "name": "heroui",
+ "role": "library",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": true,
+ "prov": [],
+ "tags": [
+  "javascript",
+  "react"
+ ],
+ "one": "Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes.",
+ "desc": "Resuelve la accesibilidad seria sin renunciar a un estilado moderno.",
+ "why": "Combina accesibilidad seria (React Aria de Adobe), integración MCP para asistentes y soporte de Next.js/React 19, una mezcla poco habitual en kits de UI. Su instalación por módulos evita inflar el bundle.",
+ "how": "Componentes React construidos sobre React Aria (comportamiento/accesibilidad) y estilados con Tailwind, instalables por módulos y con un plugin de Tailwind para los tokens del tema.",
+ "install": "`npm i @heroui/react` y configurar el plugin de Tailwind. Requiere React 18+ y Tailwind.",
+ "cases": [
+  "Dashboards, SaaS o landings accesibles y consistentes",
+  "Base de UI con accesibilidad out-of-the-box",
+  "Integración con asistentes vía MCP"
+ ],
+ "stack": "Node.js, React, Tailwind",
+ "models": "Tooling MCP/asistentes.",
+ "choose_if": "quieres calidad + accesibilidad listas",
+ "avoid_if": "quieres control copy-paste del código ([ui](#-ui-shadcn))",
+ "limits": "",
+ "combines_with": [
+  "tailwindcss",
+  "swr"
+ ],
+ "alternatives": [],
+ "pick": false
+}

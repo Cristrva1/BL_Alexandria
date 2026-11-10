@@ -1,0 +1,36 @@
+{
+ "id": "deepseek-coder",
+ "name": "DeepSeek-Coder",
+ "role": "library",
+ "exec": "local",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "docker",
+  "javascript",
+  "python",
+  "typescript"
+ ],
+ "one": "Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software.",
+ "desc": "Resuelve la dependencia de APIs propietarias para tareas de código: puedes desplegar el modelo en tu propia infraestructura.",
+ "why": "Una de las alternativas abiertas más fuertes para tareas de código, competitiva con modelos propietarios y desplegable en local. Su publicación de pesos y su buena recepción en benchmarks de código la consolidan como referencia open en este nicho.",
+ "how": "Modelos transformer ejecutados con PyTorch sobre GPU; se cargan en local (p. ej. vía Hugging Face Transformers o vLLM) o se consumen por la API oficial de DeepSeek, con contextos largos aptos para repos.",
+ "install": "`pip install transformers torch` y descarga de pesos desde Hugging Face, o uso vía API de DeepSeek. El despliegue local requiere GPU con VRAM generosa según el tamaño del modelo.",
+ "cases": [
+  "Generación y revisión de código",
+  "Asistencia técnica con modelo propio",
+  "Completado de código en entornos on-prem"
+ ],
+ "stack": "Python, PyTorch, GPU",
+ "models": "Modelos DeepSeek (local vía HF/vLLM o API oficial).",
+ "choose_if": "quieres un modelo de código abierto y desplegable on-prem",
+ "avoid_if": "prefieres APIs comerciales gestionadas o no tienes GPU para servirlo",
+ "limits": "El despliegue local exige GPU potente (VRAM escala con el tamaño del modelo); los pesos grandes son lentos de descargar y de servir.",
+ "combines_with": [
+  "litellm",
+  "codegraph"
+ ],
+ "alternatives": [],
+ "pick": false
+}

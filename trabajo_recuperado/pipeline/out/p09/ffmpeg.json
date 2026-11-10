@@ -1,0 +1,29 @@
+{
+  "id": "ffmpeg",
+  "name": "FFmpeg",
+  "role": "app",
+  "exec": "local",
+  "setup": "easy",
+  "mcp": false,
+  "prov": [],
+  "tags": ["video", "audio", "automation", "cpp"],
+  "one": "Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato.",
+  "desc": "FFmpeg es la base multimedia sobre la que se apoyan casi todos los editores, reproductores y pipelines de video. Incluye el CLI `ffmpeg` para convertir, recortar, concatenar, mezclar, quemar subtítulos y transmitir, `ffprobe` para inspeccionar archivos y las librerías libav* para integrarlo en tu propio software.",
+  "why": "Es el estándar de facto: soporta prácticamente todos los códecs, contenedores y protocolos (RTMP, HLS, RTSP) y lo usan por dentro herramientas como OBS, LosslessCut, MoviePy o Remotion.",
+  "how": "Las librerías libavcodec, libavformat y libavfilter decodifican, procesan con un grafo de filtros y vuelven a codificar; el CLI encadena entradas, filtros y salidas en un solo comando. Admite aceleración por hardware (NVENC, QSV, VideoToolbox).",
+  "install": "`brew install ffmpeg` (macOS) o `sudo apt install ffmpeg` (Linux); en Windows, descarga un binario desde ffmpeg.org.",
+  "cases": [
+    "Convertir y comprimir videos para redes con un solo comando",
+    "Extraer el audio de un video antes de transcribirlo",
+    "Quemar subtítulos SRT y concatenar clips en un pipeline"
+  ],
+  "stack": "C, ensamblador (x86/ARM), libavcodec, libavformat, libavfilter",
+  "models": "No usa LLM.",
+  "choose_if": "necesitas convertir, cortar, mezclar o transmitir audio y video desde la línea de comandos o un script",
+  "avoid_if": "quieres una interfaz gráfica para cortar sin pérdida (`lossless-cut`) o componer video desde Python con objetos (`moviepy`)",
+  "limits": "La sintaxis de filtros tiene una curva de aprendizaje alta, y algunos componentes opcionales (x264, x265) son GPL, lo que cambia las condiciones de redistribución.",
+  "combines_with": ["whisper", "yt-dlp", "moviepy"],
+  "alternatives": [],
+  "pick": true,
+  "notes": "El repo de GitHub es un espejo: el desarrollo ocurre en code.ffmpeg.org (Forgejo) y la lista ffmpeg-devel, y los pull requests de GitHub se ignoran."
+}

@@ -1,0 +1,37 @@
+{
+ "id": "bmad-method",
+ "name": "BMAD Method",
+ "role": "skill",
+ "exec": "local",
+ "setup": "easy",
+ "tags": [
+  "coding-agent",
+  "skills",
+  "agents"
+ ],
+ "one": "Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA.",
+ "desc": "Organiza el trabajo con IA en roles y documentos (brief, PRD, arquitectura, historias) que el agente de código sigue paso a paso. Útil para proyectos medianos donde los prompts sueltos se pierden.",
+ "why": "Muy adoptado en la comunidad; da estructura de equipo ágil a un agente de código.",
+ "how": "Instala agentes y flujos en tu proyecto; cada rol produce artefactos que alimentan al siguiente.",
+ "install": "`npx bmad-method install` en la raíz de tu proyecto.",
+ "cases": [
+  "Pasar de idea a PRD y arquitectura",
+  "Dividir un proyecto en historias",
+  "Mantener contexto en proyectos largos"
+ ],
+ "stack": "Markdown, Node.js",
+ "models": "Agnóstico: Claude Code, Cursor, Codex y otros.",
+ "choose_if": "quieres un proceso completo de producto a código con agentes",
+ "avoid_if": "prefieres algo ligero centrado en especificaciones; mira `spec-kit`",
+ "combines_with": [
+  "claude-code",
+  "codex"
+ ],
+ "alternatives": [
+  "spec-kit"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

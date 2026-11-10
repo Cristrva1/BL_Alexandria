@@ -1,0 +1,38 @@
+{
+ "id": "nemoclaw",
+ "name": "NemoClaw",
+ "role": "platform",
+ "exec": "hybrid",
+ "setup": "heavy",
+ "tags": [
+  "agents",
+  "security",
+  "typescript"
+ ],
+ "one": "Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes.",
+ "desc": "Ejecuta agentes populares dentro de los sandboxes de NVIDIA OpenShell con inferencia gestionada y políticas de seguridad. Pensado para empresas.",
+ "why": "Añade aislamiento y control a agentes muy capaces que normalmente corren con acceso total.",
+ "how": "Envuelve el agente en un sandbox OpenShell con políticas de red y archivos, y le da modelos vía inferencia gestionada.",
+ "install": "Sigue la guía del repo (requiere el entorno de NVIDIA OpenShell).",
+ "cases": [
+  "Desplegar OpenClaw con aislamiento",
+  "Agentes corporativos con políticas",
+  "Inferencia gestionada para agentes"
+ ],
+ "stack": "TypeScript, contenedores",
+ "models": "Modelos NVIDIA (Nemotron) y otros vía inferencia gestionada.",
+ "choose_if": "quieres correr agentes potentes con aislamiento corporativo",
+ "avoid_if": "solo necesitas un sandbox para ejecutar código; mira `e2b`",
+ "combines_with": [
+  "openclaw",
+  "hermes-agent",
+  "nemotron"
+ ],
+ "alternatives": [
+  "sandbox"
+ ],
+ "mcp": false,
+ "prov": [],
+ "pick": false,
+ "limits": ""
+}

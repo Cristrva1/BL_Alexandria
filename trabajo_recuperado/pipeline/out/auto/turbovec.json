@@ -1,0 +1,35 @@
+{
+ "id": "turbovec",
+ "name": "turbovec",
+ "role": "directory",
+ "exec": "local",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "automation",
+  "python",
+  "typescript"
+ ],
+ "one": "Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida.",
+ "desc": "Resuelve el coste de memoria y cómputo de la búsqueda vectorial cuando una vector DB completa es demasiado para tu escala.",
+ "why": "Apuesta por la eficiencia, aplicando una técnica de cuantización moderna para acelerar la búsqueda con bajo coste de memoria. Sus bindings en Python y Rust la hacen usable desde ambos ecosistemas sin cambiar de stack.",
+ "how": "Comprime los vectores con TurboQuant y resuelve las consultas por similitud directamente sobre la representación cuantizada, con bindings disponibles en Python y Rust para integrarse en pipelines existentes.",
+ "install": "`pip install` (Python) o crate de Rust según el repo; sin servicios externos ni GPU obligatoria para inferencia.",
+ "cases": [
+  "Capa de recuperación para RAG",
+  "Vector search eficiente embebido",
+  "Sustituto ligero de una vector DB cuando no necesitas persistencia distribuida"
+ ],
+ "stack": "Python / Rust",
+ "models": "N/A (infra de vectores).",
+ "choose_if": "necesitas vector search veloz y embebido sin desplegar una DB",
+ "avoid_if": "ya usas una vector DB completa con persistencia y escalado horizontal",
+ "limits": "",
+ "combines_with": [
+  "mem0",
+  "graphrag"
+ ],
+ "alternatives": [],
+ "pick": false
+}

@@ -1,0 +1,35 @@
+{
+ "id": "tts",
+ "name": "TTS",
+ "role": "library",
+ "exec": "local",
+ "setup": "heavy",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "docker",
+  "python",
+  "typescript"
+ ],
+ "one": "Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz.",
+ "desc": "Reúne en una sola librería modelos como Tacotron, VITS y XTTS, con CLI y API Python.",
+ "why": "Es uno de los kits TTS abiertos más completos y reutilizados; aunque Coqui cerró, su código y modelos (XTTSv2, 16+ idiomas) siguen siendo referencia comunitaria y se mantienen vía fork `coqui-tts`.",
+ "how": "Librería Python que carga modelos sobre PyTorch y expone CLI (`tts`) y API para generar o clonar voz; XTTS permite clonación zero-shot a partir de unos segundos de referencia.",
+ "install": "`pip install TTS` (o `coqui-tts`, el fork mantenido). Requiere PyTorch; la clonación con XTTS mejora con GPU.",
+ "cases": [
+  "Locuciones automáticas para anuncios/demos",
+  "Clonación de voz zero-shot",
+  "Base para apps de voz multilingües"
+ ],
+ "stack": "Python, PyTorch, modelos descargables",
+ "models": "Local.",
+ "choose_if": "quieres flexibilidad y varios modelos en una librería",
+ "avoid_if": "necesitas tiempo real puro ([supertonic](#-supertonic)) o soporte comercial (Coqui está inactivo)",
+ "limits": "El proyecto original de Coqui está inactivo; usa el fork `coqui-tts` para fixes; revisar licencia de XTTS antes de uso comercial.",
+ "combines_with": [
+  "whisperx",
+  "moviepy"
+ ],
+ "alternatives": [],
+ "pick": false
+}

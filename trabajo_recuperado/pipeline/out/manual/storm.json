@@ -1,0 +1,39 @@
+{
+ "id": "storm",
+ "name": "STORM",
+ "role": "runtime",
+ "exec": "hybrid",
+ "setup": "medium",
+ "prov": [
+  "openai"
+ ],
+ "tags": [
+  "research",
+  "agents",
+  "python"
+ ],
+ "one": "Sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia.",
+ "desc": "Simula conversaciones entre perspectivas para hacer preguntas, busca fuentes y redacta un artículo estructurado y citado. Útil para informes de fondo.",
+ "why": "Método publicado y probado para artículos largos y bien citados.",
+ "how": "Genera preguntas desde varias perspectivas, recupera fuentes con un buscador, crea un esquema y redacta sección por sección.",
+ "install": "`pip install knowledge-storm` y configura un buscador (p. ej. Bing o You.com) y tu modelo.",
+ "cases": [
+  "Informes de fondo con citas",
+  "Borradores de artículos tipo wiki",
+  "Revisiones de un tema nuevo"
+ ],
+ "stack": "Python, DSPy",
+ "models": "OpenAI y otros vía LiteLLM.",
+ "choose_if": "necesitas informes largos y citados sobre un tema",
+ "avoid_if": "quieres respuestas cortas con fuentes; mira `gpt-researcher`",
+ "combines_with": [
+  "searxng",
+  "firecrawl"
+ ],
+ "alternatives": [
+  "gpt-researcher"
+ ],
+ "mcp": false,
+ "pick": false,
+ "limits": ""
+}

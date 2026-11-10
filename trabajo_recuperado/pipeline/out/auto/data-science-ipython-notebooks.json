@@ -1,0 +1,35 @@
+{
+ "id": "data-science-ipython-notebooks",
+ "name": "data-science-ipython-notebooks",
+ "role": "directory",
+ "exec": "local",
+ "setup": "medium",
+ "mcp": false,
+ "prov": [],
+ "tags": [
+  "postgres",
+  "python",
+  "typescript"
+ ],
+ "one": "Gran colección de notebooks de ciencia de datos y machine learning que cubre desde pandas y NumPy hasta deep learning y big data, con ejemplos listos para ejecutar.",
+ "desc": "Resuelve el \"aprender DS con ejemplos reales\" sin tener que montarlos tú desde cero.",
+ "why": "Uno de los repositorios de referencia más populares para aprender DS de forma práctica, con material abundante y bien organizado por temas. Su antigüedad y su volumen de notebooks lo convierten en un clásico para consulta y estudio.",
+ "how": "Son notebooks Jupyter autocontenidos que se abren y ejecutan localmente, mostrando explicaciones y código sobre las librerías clásicas del ecosistema Python (pandas, NumPy, scikit-learn, etc.).",
+ "install": "`git clone https://github.com/donnemartin/data-science-ipython-notebooks` y abrir los notebooks con `jupyter lab` (o `jupyter notebook`). Requiere Python y las librerías de cada notebook.",
+ "cases": [
+  "Aprender pandas/NumPy/ML",
+  "Consultar ejemplos prácticos",
+  "Material de referencia para clases o autoestudio"
+ ],
+ "stack": "Python, Jupyter",
+ "models": "N/A.",
+ "choose_if": "estudias/consultas DS con ejemplos ejecutables",
+ "avoid_if": "buscas una librería, no ejemplos, o necesitas material actualizado a las versiones más recientes",
+ "limits": "",
+ "combines_with": [
+  "dash",
+  "streamlit"
+ ],
+ "alternatives": [],
+ "pick": false
+}

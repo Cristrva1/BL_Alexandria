@@ -1,0 +1,45 @@
+{
+ "id": "claude-code",
+ "name": "Claude Code",
+ "role": "runtime",
+ "exec": "cloud",
+ "setup": "easy",
+ "mcp": true,
+ "prov": [
+  "anthropic",
+  "mcp"
+ ],
+ "tags": [
+  "coding-agent",
+  "agents",
+  "mcp",
+  "typescript"
+ ],
+ "one": "Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio.",
+ "desc": "Lee y edita archivos, ejecuta comandos, hace commits y abre PRs a partir de instrucciones en lenguaje natural. Se extiende con skills, plugins, subagentes, hooks y servidores MCP.",
+ "why": "Referencia en agentes de código por su autonomía en tareas largas y su ecosistema de skills y plugins.",
+ "how": "Un bucle agéntico con Claude decide qué herramientas usar (leer, editar, bash, MCP) y pide permiso según el modo configurado.",
+ "install": "`curl -fsSL https://claude.ai/install.sh | bash` (o `npm install -g @anthropic-ai/claude-code`) y ejecuta `claude` en tu proyecto.",
+ "cases": [
+  "Implementar funciones completas con tests",
+  "Migrar o refactorizar código grande",
+  "Automatizar tareas con skills y hooks"
+ ],
+ "stack": "TypeScript, Node.js",
+ "models": "Modelos Claude de Anthropic (o vía Bedrock y Vertex).",
+ "choose_if": "quieres el agente de código más capaz para tareas largas en tu repo",
+ "avoid_if": "necesitas un agente totalmente abierto y multi-modelo; mira `opencode`",
+ "limits": "Requiere suscripción o clave de API de Anthropic; el código no es open source.",
+ "combines_with": [
+  "superpowers",
+  "anthropic-skills",
+  "claude-mem",
+  "context7"
+ ],
+ "alternatives": [
+  "codex",
+  "gemini-cli",
+  "opencode"
+ ],
+ "pick": true
+}
