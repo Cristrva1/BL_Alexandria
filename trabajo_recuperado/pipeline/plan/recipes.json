@@ -1,0 +1,236 @@
+[
+  {
+    "id": "bot-de-whatsapp-con-ia",
+    "emoji": "💬",
+    "title": "Bot de WhatsApp con IA",
+    "goal": "Atender y vender por WhatsApp con un agente LLM que guarda leads y pasa la conversación a una persona cuando hace falta.",
+    "steps": [
+      {"id": "evolution-api", "role": "Canal de WhatsApp: recibe y envía mensajes por webhook"},
+      {"id": "n8n", "role": "Orquesta el flujo: llama al LLM, guarda el lead y decide el traspaso"},
+      {"id": "n8n-mcp", "role": "Le da a tu agente de código el contexto de los nodos de n8n"},
+      {"id": "n8n-skills", "role": "Skills para que Claude Code diseñe los workflows sin errores"},
+      {"id": "chatwoot", "role": "Bandeja omnicanal para el traspaso a un agente humano"},
+      {"id": "novu", "role": "Notificaciones internas (email, push) cuando entra un lead"}
+    ],
+    "flow": [["Cliente", "evolution-api", "mensaje"], ["evolution-api", "n8n", "webhook"], ["n8n", "LLM", "prompt + contexto"], ["n8n", "chatwoot", "traspaso a humano"], ["n8n", "novu", "aviso al equipo"], ["n8n-mcp", "n8n", "diseño de flujos"]],
+    "how": "Evolution API mantiene la sesión de WhatsApp y reenvía cada mensaje a un webhook de n8n. El workflow de n8n arma el contexto, llama al LLM, guarda el lead y, si detecta una intención de compra o un problema, abre la conversación en Chatwoot para que responda una persona. Novu avisa al equipo. Con n8n-mcp y n8n-skills, tu agente de código construye y corrige esos workflows por ti.",
+    "when_not": "Si solo necesitas respuestas automáticas simples sin traspaso a humano, basta con Evolution API (o WAHA) y un webhook propio. Si no quieres operar servidores, usa la API oficial de WhatsApp Business con un proveedor gestionado."
+  },
+  {
+    "id": "pipeline-de-reels-video-corto",
+    "emoji": "🎬",
+    "title": "Pipeline de Reels / video corto",
+    "goal": "Convertir un guion o un video largo en clips verticales con voz, subtítulos y visuales generados.",
+    "steps": [
+      {"id": "whisperx", "role": "Transcribe y alinea palabra por palabra para los subtítulos"},
+      {"id": "chatterbox", "role": "Genera la voz en off (o clona una voz con consentimiento)"},
+      {"id": "comfyui", "role": "Genera imágenes o b-roll con modelos de difusión"},
+      {"id": "real-esrgan", "role": "Escala y limpia las imágenes antes del montaje"},
+      {"id": "remotion", "role": "Ensambla el video con plantillas en React"},
+      {"id": "ffmpeg", "role": "Render final, formatos y compresión"},
+      {"id": "moneyprinterturbo", "role": "Atajo todo-en-uno: tema → video corto automático"}
+    ],
+    "flow": [["Guion o video", "whisperx", "audio"], ["Guion o video", "chatterbox", "texto"], ["comfyui", "real-esrgan", "imágenes"], ["whisperx", "remotion", "subtítulos"], ["chatterbox", "remotion", "voz"], ["real-esrgan", "remotion", "visuales"], ["remotion", "ffmpeg", "render"]],
+    "how": "WhisperX saca los subtítulos con marcas de tiempo por palabra; Chatterbox genera la locución; ComfyUI produce los visuales y Real-ESRGAN los mejora. Remotion arma el clip con una plantilla reutilizable y FFmpeg exporta el formato final. Si quieres algo inmediato sin montar piezas, MoneyPrinterTurbo hace el recorrido completo desde un tema.",
+    "when_not": "Si no tienes GPU, usa APIs de generación de imagen y voz en la nube en lugar de ComfyUI y Chatterbox. Si solo necesitas cortar y subtitular un video existente, WhisperX más LosslessCut bastan."
+  },
+  {
+    "id": "agente-de-research-profundo",
+    "emoji": "🔎",
+    "title": "Agente de research profundo",
+    "goal": "Investigar un tema en la web y entregar un informe estructurado con fuentes citadas.",
+    "steps": [
+      {"id": "gpt-researcher", "role": "Orquestador: planifica preguntas, delega y redacta el informe"},
+      {"id": "searxng", "role": "Buscador privado y sin claves de API"},
+      {"id": "crawl4ai", "role": "Convierte cada página en Markdown limpio para el LLM"},
+      {"id": "browser-use", "role": "Navega sitios dinámicos o con login"},
+      {"id": "markitdown", "role": "Ingiere PDFs y documentos locales"},
+      {"id": "langfuse", "role": "Trazas, costos y depuración de cada paso"}
+    ],
+    "flow": [["Pregunta", "gpt-researcher", "tema"], ["gpt-researcher", "searxng", "consultas"], ["searxng", "crawl4ai", "URLs"], ["gpt-researcher", "browser-use", "sitios dinámicos"], ["markitdown", "gpt-researcher", "documentos"], ["crawl4ai", "gpt-researcher", "Markdown"], ["gpt-researcher", "langfuse", "trazas"], ["gpt-researcher", "Informe", "citas"]],
+    "how": "GPT Researcher divide la pregunta en sub-preguntas, busca con SearXNG y pasa las URLs a Crawl4AI, que devuelve Markdown listo para el modelo. Browser Use cubre las páginas que necesitan clics o sesión, y MarkItDown suma tus documentos. Langfuse registra cada llamada para revisar costos y errores. DeerFlow es la alternativa si prefieres un harness con sandbox y más autonomía.",
+    "when_not": "Si la investigación es solo sobre documentos internos, no necesitas buscador ni crawler: usa la receta de RAG sobre documentos."
+  },
+  {
+    "id": "workspace-privado-local-soberano",
+    "emoji": "🏠",
+    "title": "Workspace privado local soberano",
+    "goal": "Tener chat, documentos y memoria de IA en tu propia máquina, sin enviar datos a terceros.",
+    "steps": [
+      {"id": "ollama", "role": "Corre los modelos abiertos en local"},
+      {"id": "odysseus", "role": "Workspace todo-en-uno: chat, documentos y tareas"},
+      {"id": "open-notebook", "role": "Cuaderno de investigación con RAG sobre tus fuentes"},
+      {"id": "mem0", "role": "Memoria persistente entre sesiones"},
+      {"id": "searxng", "role": "Búsqueda web privada cuando hace falta"}
+    ],
+    "flow": [["Usuario", "odysseus", "chat"], ["odysseus", "ollama", "inferencia"], ["Usuario", "open-notebook", "fuentes"], ["open-notebook", "ollama", "embeddings + chat"], ["odysseus", "mem0", "memoria"], ["odysseus", "searxng", "búsqueda"]],
+    "how": "Ollama sirve los modelos en tu equipo con una API local. Odysseus centraliza chat, documentos y tareas; Open Notebook indexa tus fuentes para preguntarles como en NotebookLM; mem0 recuerda preferencias y hechos entre sesiones; SearXNG añade búsqueda web sin rastreo.",
+    "when_not": "Si tu equipo no puede correr modelos (poca RAM o sin GPU), apunta las mismas apps a una API comercial vía LiteLLM. Si la privacidad no es un requisito, un SaaS es más simple."
+  },
+  {
+    "id": "analisis-de-repos-grandes",
+    "emoji": "🧠",
+    "title": "Análisis de repos grandes",
+    "goal": "Que un agente de código entienda una base de código enorme sin gastar todo su contexto.",
+    "steps": [
+      {"id": "repomix", "role": "Empaqueta el repo (o una parte) en un archivo para el LLM"},
+      {"id": "codegraph", "role": "Grafo de código pre-indexado que se sincroniza con los cambios"},
+      {"id": "gitnexus", "role": "Explora dependencias y flujos sin servidor"},
+      {"id": "graphify", "role": "Grafo de conocimiento con código, docs y esquemas"},
+      {"id": "deepwiki-open", "role": "Genera una wiki navegable del repositorio"},
+      {"id": "claude-code", "role": "Agente que consulta los índices y edita el código"}
+    ],
+    "flow": [["Repositorio", "codegraph", "indexa"], ["Repositorio", "graphify", "grafo"], ["Repositorio", "repomix", "empaqueta"], ["codegraph", "claude-code", "consultas"], ["graphify", "claude-code", "contexto"], ["gitnexus", "claude-code", "navegación"], ["Repositorio", "deepwiki-open", "wiki"]],
+    "how": "CodeGraph y graphify construyen índices estructurales que el agente consulta en lugar de leer archivos completos; GitNexus ayuda a recorrer dependencias; Repomix empaqueta solo la parte relevante cuando necesitas pasar código a un chat. DeepWiki Open produce documentación para humanos. Claude Code (o Codex) usa todo eso como contexto barato.",
+    "when_not": "Si el repo es pequeño (menos de unas 10.000 líneas), el agente de código con referencias directas a archivos basta."
+  },
+  {
+    "id": "marketing-de-agencia",
+    "emoji": "📈",
+    "title": "Marketing de agencia",
+    "goal": "Operar campañas, contenido y email a escala con agentes y herramientas propias.",
+    "steps": [
+      {"id": "marketingskills", "role": "Skills de CRO, copy, SEO y analítica para tu agente"},
+      {"id": "agency-agents", "role": "Roles de agencia listos (estratega, redactor, analista…)"},
+      {"id": "mautic", "role": "Automatización de marketing: segmentos, scoring y nurturing"},
+      {"id": "listmonk", "role": "Newsletters y envíos masivos baratos"},
+      {"id": "posthog", "role": "Analítica de producto y embudos"},
+      {"id": "open-generative-ai", "role": "Creatividades de imagen y video"}
+    ],
+    "flow": [["marketingskills", "Agente", "skills"], ["agency-agents", "Agente", "roles"], ["Agente", "mautic", "campañas"], ["Agente", "listmonk", "newsletters"], ["Agente", "open-generative-ai", "creatividades"], ["posthog", "Agente", "métricas"]],
+    "how": "Las skills y los roles guían a tu agente de código en cada canal; Mautic segmenta y nutre leads; listmonk envía newsletters; PostHog mide conversión y retención; Open Generative AI produce piezas visuales. Metabase o Superset sirven si necesitas reportes para clientes.",
+    "when_not": "Si gestionas una sola marca pequeña, Mautic es excesivo: listmonk y una hoja de cálculo bastan."
+  },
+  {
+    "id": "web-app-moderna-con-ia",
+    "emoji": "🌐",
+    "title": "Web app moderna con IA",
+    "goal": "Construir un frontend pulido con chat o funciones de IA integradas.",
+    "steps": [
+      {"id": "ui", "role": "Componentes accesibles que copias a tu código (shadcn/ui)"},
+      {"id": "tailwindcss", "role": "Estilos utilitarios"},
+      {"id": "vercel-ai", "role": "AI SDK: streaming, tools y llamadas a cualquier LLM"},
+      {"id": "assistant-ui", "role": "Componentes de chat listos para conectar al AI SDK"},
+      {"id": "motion", "role": "Animaciones e interacciones"},
+      {"id": "recharts", "role": "Gráficos para dashboards"},
+      {"id": "swr", "role": "Fetching y caché de datos en React"}
+    ],
+    "flow": [["tailwindcss", "ui", "estilos"], ["ui", "App", "componentes"], ["assistant-ui", "App", "chat"], ["App", "vercel-ai", "streaming"], ["vercel-ai", "LLM", "tools"], ["motion", "App", "animación"], ["recharts", "App", "gráficos"], ["swr", "App", "datos"]],
+    "how": "shadcn/ui y Tailwind dan la base visual; el AI SDK de Vercel resuelve streaming, tool calling y proveedores; assistant-ui aporta la interfaz de chat; Motion anima y Recharts dibuja datos; SWR gestiona el fetching. Para diseñar antes de codificar, prueba Open Design o Penpot.",
+    "when_not": "Si es una landing estática, Tailwind y un par de componentes bastan. Si es un dashboard interno de datos, Streamlit o Superset son más rápidos."
+  },
+  {
+    "id": "construir-una-appservidor-mcp",
+    "emoji": "🔌",
+    "title": "Construir una app o servidor MCP",
+    "goal": "Exponer tus datos o herramientas a Claude, ChatGPT, Cursor y otros agentes con Model Context Protocol.",
+    "steps": [
+      {"id": "awesome-mcp-servers", "role": "Comprueba primero si ya existe un servidor para tu caso"},
+      {"id": "fastmcp", "role": "Framework Python para escribir el servidor en pocas líneas"},
+      {"id": "mcp-typescript-sdk", "role": "SDK oficial si tu servidor es TypeScript"},
+      {"id": "mcp-inspector", "role": "Prueba y depura el servidor antes de conectarlo"},
+      {"id": "servers", "role": "Implementaciones de referencia para copiar patrones"},
+      {"id": "mcp-use", "role": "Apps MCP y clientes full-stack cuando necesitas UI"}
+    ],
+    "flow": [["awesome-mcp-servers", "Decisión", "¿ya existe?"], ["Decisión", "fastmcp", "Python"], ["Decisión", "mcp-typescript-sdk", "TypeScript"], ["servers", "fastmcp", "patrones"], ["fastmcp", "mcp-inspector", "pruebas"], ["mcp-typescript-sdk", "mcp-inspector", "pruebas"], ["mcp-inspector", "Cliente MCP", "conectar"]],
+    "how": "Busca en awesome-mcp-servers antes de construir. Si no existe, FastMCP (Python) o el SDK oficial de TypeScript te dan el servidor con poco código; los servidores de referencia muestran cómo modelar tools, recursos y prompts. MCP Inspector valida el servidor antes de conectarlo a Claude Code, Codex o Cursor. mcp-use sirve cuando quieres una app MCP con interfaz propia.",
+    "when_not": "Si solo vas a consumir un servidor que ya existe, no construyas uno: instálalo desde su README."
+  },
+  {
+    "id": "documentos-presentaciones",
+    "emoji": "📊",
+    "title": "Documentos → presentaciones",
+    "goal": "Pasar informes, PDFs o notas a presentaciones editables o slides web.",
+    "steps": [
+      {"id": "markitdown", "role": "Convierte Office, HTML y PDF simples a Markdown"},
+      {"id": "docling", "role": "Para PDFs complejos: tablas, layout y OCR"},
+      {"id": "ppt-master", "role": "Genera PowerPoint nativo y editable con IA"},
+      {"id": "slidev", "role": "Slides web desde Markdown para presentaciones técnicas"},
+      {"id": "marp", "role": "Markdown → PDF/PPTX con una sintaxis mínima"}
+    ],
+    "flow": [["Documentos", "markitdown", "simples"], ["Documentos", "docling", "complejos"], ["markitdown", "ppt-master", "Markdown"], ["docling", "ppt-master", "Markdown"], ["markitdown", "slidev", "Markdown"], ["markitdown", "marp", "Markdown"]],
+    "how": "MarkItDown (o Docling si el PDF tiene tablas y columnas) normaliza todo a Markdown. Desde ahí, PPT Master genera un PowerPoint nativo editable, Slidev produce slides web con código y componentes, y Marp exporta a PDF o PPTX con estilos simples.",
+    "when_not": "Si el contenido ya está en Markdown, salta la conversión. Si necesitas un diseño de marca al píxel, una herramienta de diseño dedicada da más control."
+  },
+  {
+    "id": "chatgpt-privado-local",
+    "emoji": "🦙",
+    "title": "ChatGPT privado con modelos locales",
+    "goal": "Tener un chat tipo ChatGPT para ti o tu equipo con modelos que corren en tu máquina o servidor.",
+    "steps": [
+      {"id": "ollama", "role": "Descarga y sirve los modelos con una API local"},
+      {"id": "open-webui", "role": "Interfaz web con usuarios, RAG, voz y herramientas"},
+      {"id": "searxng", "role": "Búsqueda web privada para respuestas actualizadas"},
+      {"id": "litellm", "role": "Gateway opcional para mezclar modelos locales y APIs comerciales"}
+    ],
+    "flow": [["Usuario", "open-webui", "chat"], ["open-webui", "ollama", "modelos locales"], ["open-webui", "searxng", "búsqueda web"], ["open-webui", "litellm", "APIs externas"], ["litellm", "Proveedores", "OpenAI · Anthropic · Gemini"]],
+    "how": "Ollama corre los modelos y expone una API compatible con OpenAI; Open WebUI se conecta a ella y añade cuentas de usuario, subida de documentos, búsqueda web vía SearXNG y herramientas. Si algunos usuarios necesitan modelos comerciales, LiteLLM unifica el acceso con control de costos.",
+    "when_not": "Si es solo para ti en tu portátil, una app de escritorio como Jan o LM Studio es más simple. Si tu hardware no corre modelos medianos, usa directamente una API."
+  },
+  {
+    "id": "rag-sobre-documentos",
+    "emoji": "📎",
+    "title": "RAG sobre tus documentos",
+    "goal": "Preguntarle a tus PDFs, manuales y bases de conocimiento con respuestas citadas.",
+    "steps": [
+      {"id": "docling", "role": "Extrae texto, tablas y estructura de los documentos"},
+      {"id": "llama-index", "role": "Fragmenta, indexa y recupera; orquesta las consultas"},
+      {"id": "qdrant", "role": "Base vectorial para los embeddings"},
+      {"id": "litellm", "role": "Acceso unificado al LLM (local o en la nube)"},
+      {"id": "ragas", "role": "Evalúa la calidad de recuperación y respuesta"},
+      {"id": "langfuse", "role": "Trazas y costos en producción"}
+    ],
+    "flow": [["Documentos", "docling", "PDF · DOCX"], ["docling", "llama-index", "Markdown"], ["llama-index", "qdrant", "embeddings"], ["Pregunta", "llama-index", "consulta"], ["qdrant", "llama-index", "fragmentos"], ["llama-index", "litellm", "prompt + contexto"], ["llama-index", "ragas", "evaluación"], ["llama-index", "langfuse", "trazas"]],
+    "how": "Docling convierte los documentos en Markdown estructurado; LlamaIndex los fragmenta, genera embeddings y los guarda en Qdrant; en cada pregunta recupera los fragmentos relevantes y llama al modelo vía LiteLLM. Ragas mide si la respuesta usa bien el contexto y Langfuse registra cada consulta. Si prefieres una plataforma con UI, RAGFlow o AnythingLLM cubren el flujo completo.",
+    "when_not": "Si tienes pocos documentos y cortos, pegarlos en el contexto del modelo es más simple. Si las preguntas cruzan muchas entidades, mira GraphRAG o LightRAG."
+  },
+  {
+    "id": "agente-de-codigo-potenciado",
+    "emoji": "🛠️",
+    "title": "Agente de código potenciado",
+    "goal": "Sacar el máximo a Claude Code, Codex u opencode con método, contexto actualizado y memoria.",
+    "steps": [
+      {"id": "claude-code", "role": "Agente de código en la terminal (o Codex / opencode)"},
+      {"id": "superpowers", "role": "Metodología: planificar, probar y revisar antes de dar por hecho"},
+      {"id": "context7", "role": "Documentación actualizada de librerías vía MCP"},
+      {"id": "serena", "role": "Búsqueda y edición semántica del código vía MCP"},
+      {"id": "claude-mem", "role": "Memoria persistente entre sesiones"},
+      {"id": "skillspector", "role": "Audita skills de terceros antes de instalarlas"}
+    ],
+    "flow": [["Desarrollador", "claude-code", "tarea"], ["superpowers", "claude-code", "método"], ["context7", "claude-code", "docs al día"], ["serena", "claude-code", "símbolos y referencias"], ["claude-mem", "claude-code", "memoria"], ["skillspector", "superpowers", "auditoría"]],
+    "how": "Superpowers obliga al agente a planificar, escribir pruebas y revisar; Context7 le pasa la documentación vigente de cada librería; Serena le da navegación semántica del código en lugar de leer archivos enteros; claude-mem conserva decisiones entre sesiones. SkillSpector revisa cualquier skill nueva antes de instalarla.",
+    "when_not": "Si solo haces cambios pequeños y puntuales, el agente tal cual basta: cada pieza añade contexto y configuración."
+  },
+  {
+    "id": "agente-de-voz",
+    "emoji": "📞",
+    "title": "Agente de voz en tiempo real",
+    "goal": "Un asistente que escucha y responde por voz con baja latencia, en web o por teléfono.",
+    "steps": [
+      {"id": "pipecat", "role": "Orquesta la conversación: turnos, interrupciones y pipeline"},
+      {"id": "faster-whisper", "role": "Transcripción rápida (voz a texto)"},
+      {"id": "litellm", "role": "Acceso al LLM que decide la respuesta"},
+      {"id": "kokoro", "role": "Voz sintética ligera (texto a voz)"},
+      {"id": "livekit-agents", "role": "Alternativa con transporte WebRTC y telefonía integrados"}
+    ],
+    "flow": [["Usuario", "pipecat", "audio"], ["pipecat", "faster-whisper", "STT"], ["faster-whisper", "litellm", "texto"], ["litellm", "kokoro", "respuesta"], ["kokoro", "pipecat", "TTS"], ["pipecat", "Usuario", "voz"]],
+    "how": "Pipecat encadena transporte de audio, detección de voz, STT, LLM y TTS con manejo de interrupciones. faster-whisper transcribe, el LLM (vía LiteLLM) decide qué decir y Kokoro lo sintetiza. LiveKit Agents es la alternativa si quieres WebRTC y telefonía SIP resueltos de serie.",
+    "when_not": "Si te basta con dictado o transcripción sin respuesta hablada, usa solo Whisper o faster-whisper. Si no quieres operar infraestructura, un servicio gestionado de voz es más rápido de lanzar."
+  },
+  {
+    "id": "analitica-con-ia",
+    "emoji": "📊",
+    "title": "Analítica de producto con IA",
+    "goal": "Medir el uso de tu producto y responder preguntas de negocio en lenguaje natural.",
+    "steps": [
+      {"id": "posthog", "role": "Eventos, embudos, grabaciones y feature flags"},
+      {"id": "duckdb", "role": "Análisis SQL rápido sobre exportaciones o Parquet"},
+      {"id": "wrenai", "role": "Preguntas en lenguaje natural convertidas a SQL"},
+      {"id": "superset", "role": "Dashboards y exploración para todo el equipo"},
+      {"id": "umami", "role": "Alternativa ligera para analítica web sin cookies"}
+    ],
+    "flow": [["Producto", "posthog", "eventos"], ["posthog", "duckdb", "exportación"], ["duckdb", "wrenai", "esquema"], ["Pregunta", "wrenai", "lenguaje natural"], ["wrenai", "superset", "SQL"], ["duckdb", "superset", "datasets"]],
+    "how": "PostHog captura eventos y embudos; exportas a Parquet y analizas con DuckDB sin montar un warehouse; WrenAI traduce preguntas a SQL sobre tu esquema; Superset publica los dashboards. Si solo necesitas visitas y fuentes de tráfico, Umami o Plausible bastan.",
+    "when_not": "Si tu producto aún tiene poco tráfico, empieza solo con PostHog o Umami: el resto añade operación sin aportar todavía."
+  }
+]

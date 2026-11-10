@@ -1,0 +1,1799 @@
+{
+ "package": "p01",
+ "out_dir": "/home/claude/work/out/p01",
+ "categories": [
+  {
+   "num": 1,
+   "emoji": "🤖",
+   "title": "Automatización, Mensajería & CRM",
+   "desc": "Motores de workflow, ecosistema n8n, WhatsApp y chat, chatbots, CRM/ERP, email y apps internas.",
+   "subs": [
+    {
+     "key": "motores",
+     "title": "Motores de workflow y automatización"
+    },
+    {
+     "key": "n8n",
+     "title": "Ecosistema n8n"
+    },
+    {
+     "key": "whatsapp",
+     "title": "WhatsApp y mensajería"
+    },
+    {
+     "key": "chatbots",
+     "title": "Chatbots y asistentes conversacionales"
+    },
+    {
+     "key": "crm",
+     "title": "CRM, ERP y soporte al cliente"
+    },
+    {
+     "key": "marketing",
+     "title": "Email, marketing y notificaciones"
+    },
+    {
+     "key": "internas",
+     "title": "Apps internas y bases de datos no-code"
+    }
+   ]
+  }
+ ],
+ "repos": [
+  {
+   "id": "botpress",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "chatbots",
+   "gh": "botpress/botpress",
+   "github": {
+    "full_name": "botpress/botpress",
+    "stars": 14989,
+    "description": "The open-source hub to build & deploy GPT/LLM Agents ⚡️",
+    "topics": [
+     "agent",
+     "ai",
+     "botpress",
+     "chatbot",
+     "chatgpt",
+     "gpt",
+     "gpt-4",
+     "langchain",
+     "llm",
+     "nlp",
+     "openai",
+     "prompt"
+    ],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-09T20:44:33Z",
+    "archived": false,
+    "homepage": "https://botpress.com"
+   }
+  },
+  {
+   "id": "rasa",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "chatbots",
+   "gh": "RasaHQ/rasa",
+   "github": {
+    "full_name": "RasaHQ/rasa",
+    "stars": 21380,
+    "description": "💬   Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants",
+    "topics": [
+     "bot",
+     "bot-framework",
+     "botkit",
+     "bots",
+     "chatbot",
+     "chatbots",
+     "chatbots-framework",
+     "conversation-driven-development",
+     "conversational-agents",
+     "conversational-ai",
+     "conversational-bots",
+     "machine-learning",
+     "machine-learning-library",
+     "mitie",
+     "natural-language-processing",
+     "nlp",
+     "nlu",
+     "rasa",
+     "spacy",
+     "wit"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-07-24T07:39:04Z",
+    "archived": false,
+    "homepage": "https://rasa.com/docs/rasa/"
+   }
+  },
+  {
+   "id": "typebot",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "chatbots",
+   "gh": "baptisteArno/typebot.io",
+   "github": {
+    "full_name": "baptisteArno/typebot.io",
+    "stars": 10616,
+    "description": "💬 Typebot is a powerful chatbot builder that you can self-host.",
+    "topics": [
+     "chat-application",
+     "chatbot",
+     "conversational-bots",
+     "form-builder",
+     "nextjs",
+     "tailwindcss"
+    ],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-07T10:19:56Z",
+    "archived": false,
+    "homepage": "https://typebot.io"
+   }
+  },
+  {
+   "id": "chatwoot",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "crm",
+   "gh": "chatwoot/chatwoot",
+   "github": {
+    "full_name": "chatwoot/chatwoot",
+    "stars": 39548,
+    "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
+    "topics": [
+     "actioncable",
+     "chat-widget",
+     "conversation",
+     "customer-support",
+     "dashboard",
+     "design",
+     "docker",
+     "docker-image",
+     "heroku",
+     "intercom",
+     "javascript",
+     "livechat",
+     "opensource",
+     "rails",
+     "ruby",
+     "sass",
+     "vuejs",
+     "whatsapp",
+     "zendesk"
+    ],
+    "license": "NOASSERTION",
+    "language": "Ruby",
+    "pushed_at": "2026-11-10T12:14:45Z",
+    "archived": false,
+    "homepage": "https://www.chatwoot.com/help-center"
+   },
+   "current": {
+    "name": "chatwoot",
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "typescript"
+    ],
+    "one": "Chatwoot is the modern, open-source, and self-hosted customer support platform designed to help businesses deliver exceptional customer support experience.",
+    "alt": [],
+    "desc": "The modern customer support platform, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc.",
+    "stack": "javascript/typescript, typescript, javascript, docker",
+    "choose_if": "das soporte por varios canales y necesitas handoff humano",
+    "avoid_if": "solo necesitas enviar mensajes salientes ([evolution-api](#-evolution-api)).",
+    "combines_with": [
+     "evolution-api",
+     "novu"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/chatwoot/chatwoot.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol ⚙️ plataforma · Setup 🔴 pesado",
+    "Qué es": "plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. Resuelve la primitiva de \"bandeja omnicanal con handoff humano\" como alternativa a Intercom/Zendesk.",
+    "Por qué destaca": "es una de las alternativas open-source más populares a Intercom/Zendesk, valorada por centralizar el soporte multicanal con handoff humano y asignación de tickets. Su comunidad activa y su integración con canales la hacen apta para producción.",
+    "Cómo funciona": "centraliza conversaciones por canal en una bandeja con tickets y agentes, sobre un stack Ruby on Rails con PostgreSQL y Redis para tiempo real. Los agentes responden desde un panel unificado y los bots pueden intervenir antes del handoff.",
+    "Instalación": "vía `docker compose` con la imagen oficial, o instalación manual del stack Rails; requiere PostgreSQL y Redis.",
+    "Casos": "centralizar WhatsApp/web/correo en un panel · tickets y agentes con handoff bot→humano · soporte multicanal para una agencia.",
+    "Stack": "Ruby on Rails, Vue.js, PostgreSQL, Redis, Docker — **Modelo/API:** integración externa de IA vía webhooks.",
+    "Elige si": "das soporte por varios canales y necesitas handoff humano — **Evita si:** solo necesitas enviar mensajes salientes ([evolution-api](#-evolution-api)).",
+    "Limitaciones": "self-host con varios componentes (app, worker, Redis, Postgres); el setup y las actualizaciones corren por tu cuenta.",
+    "Combina con": "[evolution-api](#-evolution-api) · [novu](#-novu)",
+    "Repo": "[GitHub](https://github.com/chatwoot/chatwoot)"
+   }
+  },
+  {
+   "id": "erpnext",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "crm",
+   "gh": "frappe/erpnext",
+   "github": {
+    "full_name": "frappe/erpnext",
+    "stars": 41144,
+    "description": "Free and Open Source Enterprise Resource Planning (ERP)",
+    "topics": [
+     "accounting",
+     "asset-management",
+     "crm",
+     "distribution",
+     "erp",
+     "erpnext",
+     "frappe",
+     "healthcare",
+     "hrms",
+     "manufacturing",
+     "point-of-sale",
+     "procurement",
+     "project-management",
+     "python",
+     "retail",
+     "support"
+    ],
+    "license": "GPL-3.0",
+    "language": "Python",
+    "pushed_at": "2026-11-10T11:04:02Z",
+    "archived": false,
+    "homepage": "https://frappe.io/erpnext"
+   }
+  },
+  {
+   "id": "odoo",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "crm",
+   "gh": "odoo/odoo",
+   "github": {
+    "full_name": "odoo/odoo",
+    "stars": 55689,
+    "description": "Odoo. Open Source Apps To Grow Your Business.",
+    "topics": [
+     "apps",
+     "business",
+     "erp",
+     "management",
+     "odoo",
+     "odoo-apps",
+     "python"
+    ],
+    "license": "NOASSERTION",
+    "language": "Python",
+    "pushed_at": "2026-11-10T12:31:52Z",
+    "archived": false,
+    "homepage": "https://www.odoo.com"
+   }
+  },
+  {
+   "id": "twenty-main",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "crm",
+   "gh": "twentyhq/twenty",
+   "github": {
+    "full_name": "twentyhq/twenty",
+    "stars": 60721,
+    "description": "The open alternative to Salesforce, designed for AI.",
+    "topics": [
+     "crm",
+     "crm-system",
+     "customer",
+     "good-first-issue",
+     "graphql",
+     "hacktoberfest",
+     "javascript",
+     "marketing",
+     "monorepo",
+     "nestjs",
+     "open-source",
+     "postgresql",
+     "react",
+     "reactjs",
+     "sales",
+     "typescript",
+     "web"
+    ],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T12:30:04Z",
+    "archived": false,
+    "homepage": "https://twenty.com"
+   },
+   "current": {
+    "name": "twenty-main",
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "react",
+     "typescript"
+    ],
+    "one": "Website · Documentation · Roadmap · Discord · Figma.",
+    "alt": [],
+    "desc": "Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack.",
+    "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
+    "choose_if": "quieres un CRM que se adapte 1:1 a tu negocio y vivir en self-host",
+    "avoid_if": "buscas algo plug-and-play gestionado o no quieres operar PostgreSQL y Docker.",
+    "combines_with": [
+     "evolution-api",
+     "n8n"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/twentyhq/twenty",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🔴 pesado",
+    "Qué es": "CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones. La premisa es tratar el CRM como una pieza más de tu stack: lo construyes, lo despliegas y lo versionas igual que el código.",
+    "Por qué destaca": "combina una UI cuidada con un modelo de datos totalmente personalizable, lo que evita el \"molde\" rígido de los CRM SaaS. Su enfoque \"construye tu propio CRM\" y su comunidad activa lo han vuelto una de las opciones open-source de referencia para este caso.",
+    "Cómo funciona": "una arquitectura dirigida por metadatos describe objetos, campos y relaciones que se materializan en PostgreSQL; el backend en NestJS expone una API (GraphQL/REST) que consume un frontend en React. Todo corre en contenedores para reproducir el entorno.",
+    "Instalación": "la vía soportada es `docker compose` con la imagen oficial (levanta app, base de datos y worker); también puedes clonar el repo y arrancar los servicios con el stack Node/PostgreSQL para desarrollo. Requiere PostgreSQL y recursos no triviales (de ahí el setup 🔴).",
+    "Casos": "pipelines de venta versionados como código · panel a medida con objetos/campos propios · base de datos de clientes integrada con tus automatizaciones.",
+    "Stack": "TypeScript, React, NestJS, PostgreSQL, Docker — **Modelo/API:** no requiere LLM; opcionalmente, plugins de Claude Code/Codex permiten consultar el CRM en lenguaje natural.",
+    "Elige si": "quieres un CRM que se adapte 1:1 a tu negocio y vivir en self-host — **Evita si:** buscas algo plug-and-play gestionado o no quieres operar PostgreSQL y Docker.",
+    "Limitaciones": "self-host con setup pesado; necesitas mantener la base de datos y las actualizaciones tú mismo.",
+    "Combina con": "[evolution-api](#-evolution-api) · [n8n](#-n8n)",
+    "Repo": "[GitHub](https://github.com/twentyhq/twenty)"
+   }
+  },
+  {
+   "id": "appsmith",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "internas",
+   "gh": "appsmithorg/appsmith",
+   "github": {
+    "full_name": "appsmithorg/appsmith",
+    "stars": 41197,
+    "description": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API.",
+    "topics": [
+     "admin-dashboard",
+     "admin-panels",
+     "app-builder",
+     "automation",
+     "crud",
+     "custom-internal",
+     "developer-tools",
+     "gui",
+     "gui-application",
+     "hacktoberfest",
+     "internal-tools",
+     "java",
+     "javascript",
+     "low-code",
+     "low-code-framework",
+     "react",
+     "self-hosted",
+     "typescript",
+     "webdevelopment",
+     "workflows"
+    ],
+    "license": "Apache-2.0",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T12:12:12Z",
+    "archived": false,
+    "homepage": "https://www.appsmith.com"
+   },
+   "current": {
+    "name": "appsmith",
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "postgres",
+     "typescript"
+    ],
+    "one": "Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively.",
+    "alt": [],
+    "desc": "Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our website.",
+    "stack": "typescript, javascript, docker, postgres",
+    "choose_if": "quieres ---",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "twenty-main",
+     "evolution-api",
+     "whatsapp-agentkit"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/appsmithorg/appsmith.git"
+  },
+  {
+   "id": "budibase",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "internas",
+   "gh": "Budibase/budibase",
+   "github": {
+    "full_name": "Budibase/budibase",
+    "stars": 28398,
+    "description": "AI agents, automations and apps that run your operations. Model agnostic.",
+    "topics": [
+     "ai-app-builder",
+     "ai-applications",
+     "crud-app",
+     "crud-application",
+     "data-application",
+     "data-apps",
+     "internal-tools",
+     "it-workflows",
+     "low-code",
+     "low-code-no-code",
+     "low-code-platform",
+     "no-code",
+     "no-code-platform",
+     "open-source",
+     "rest-api-framework",
+     "sql-gui",
+     "workflow-apps",
+     "workflow-automation",
+     "workflow-engine"
+    ],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T12:30:30Z",
+    "archived": false,
+    "homepage": "https://budibase.com"
+   },
+   "current": {
+    "name": "budibase",
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "typescript"
+    ],
+    "one": "Budibase is an open-source operations platform that saves engineers 100s of hours building Agents, Apps and Automations, securely.",
+    "alt": [],
+    "desc": "AI Agents that run your operations Budibase is an open-source operations platform that saves engineers 100s of hours building Agents, Apps and Automations, securely.",
+    "stack": "javascript/typescript, typescript, javascript, docker, postgres",
+    "choose_if": "quieres budibase",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "twenty-main",
+     "evolution-api",
+     "whatsapp-agentkit"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/Budibase/budibase.git"
+  },
+  {
+   "id": "nocodb",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "internas",
+   "gh": "nocodb/nocodb",
+   "github": {
+    "full_name": "nocodb/nocodb",
+    "stars": 65468,
+    "description": "🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative",
+    "topics": [
+     "airtable",
+     "airtable-alternative",
+     "automatic-api",
+     "hacktoberfest",
+     "low-code",
+     "no-code",
+     "no-code-database",
+     "no-code-platform",
+     "postgresql",
+     "rest-api",
+     "restful-api",
+     "spreadsheet",
+     "sqlite",
+     "swagger"
+    ],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-09T21:01:24Z",
+    "archived": false,
+    "homepage": "https://nocodb.com"
+   }
+  },
+  {
+   "id": "tooljet",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "internas",
+   "gh": "ToolJet/ToolJet",
+   "github": {
+    "full_name": "ToolJet/ToolJet",
+    "stars": 41215,
+    "description": "Open-source foundation of ToolJet AI - the enterprise app generation platform for internal tools, dashboards, business applications, workflows and AI agents. Build visually, from a prompt, or from Claude Code, Codex and Cursor over MCP 🚀",
+    "topics": [
+     "ai-app-builder",
+     "docker",
+     "internal-applications",
+     "internal-project",
+     "internal-tool",
+     "internal-tools",
+     "javascript",
+     "kubernetes",
+     "low-code",
+     "low-code-development-platform",
+     "low-code-framework",
+     "no-code",
+     "nodejs",
+     "reactjs",
+     "self-hosted",
+     "typescript",
+     "web-development-tools",
+     "workflow-automation"
+    ],
+    "license": "AGPL-3.0",
+    "language": "HTML",
+    "pushed_at": "2026-11-10T11:31:58Z",
+    "archived": false,
+    "homepage": "https://tooljet.com"
+   },
+   "current": {
+    "name": "ToolJet",
+    "role": "app",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "agents",
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "python",
+     "typescript"
+    ],
+    "one": "ToolJet is the open-source foundation of ToolJet AI - the AI-native platform for building and deploying internal tools, workflows and AI agents.",
+    "alt": [],
+    "desc": ":star: If you find ToolJet useful, please consider giving us a star on GitHub! Your support helps us continue to innovate and deliver exciting features.",
+    "stack": "javascript/typescript, python, typescript, javascript, docker, postgres",
+    "choose_if": "quieres tooljet is the open-source foundation of tooljet ai - the ai-native platform for building ",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "awesome-claude-code",
+     "agents-towards-production",
+     "ag2"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/ToolJet/ToolJet.git"
+  },
+  {
+   "id": "listmonk",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "marketing",
+   "gh": "knadh/listmonk",
+   "github": {
+    "full_name": "knadh/listmonk",
+    "stars": 24238,
+    "description": "High performance, self-hosted, newsletter and mailing list manager with a modern dashboard. Single binary app.",
+    "topics": [
+     "campaign",
+     "campaign-management",
+     "email-marketing",
+     "email-subscription",
+     "listmonk",
+     "mailing-list",
+     "newsletter",
+     "newsletter-management",
+     "newsletter-software",
+     "self-hosted",
+     "sms-gateway",
+     "smtp",
+     "transactional-emails"
+    ],
+    "license": "AGPL-3.0",
+    "language": "Go",
+    "pushed_at": "2026-11-10T11:14:14Z",
+    "archived": false,
+    "homepage": "https://listmonk.app"
+   },
+   "current": {
+    "name": "listmonk",
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "postgres",
+     "typescript"
+    ],
+    "one": "listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL database as its data store.",
+    "alt": [],
+    "desc": "listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL database as its data store.",
+    "stack": "typescript, docker, postgres",
+    "choose_if": "quieres email marketing simple, rápido y propio",
+    "avoid_if": "necesitas nurturing avanzado o scoring de leads ([mautic](#-mautic)).",
+    "combines_with": [
+     "mautic",
+     "n8n"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/knadh/listmonk.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol ⚙️ plataforma · Setup 🟡 medio",
+    "Qué es": "gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depender de un SaaS. Resuelve la primitiva de \"enviar email a miles de suscriptores\" con un footprint mínimo.",
+    "Por qué destaca": "muy popular por su rapidez y su single-binary en Go, es una opción ligera y soberana muy recomendada para email masivo. Su simplicidad de despliegue contrasta con stacks más pesados como mautic.",
+    "Cómo funciona": "gestiona listas, suscriptores y campañas desde un panel y envía vía SMTP, sobre un binario único en Go con base de datos PostgreSQL. Soporta plantillas, segmentación básica y envíos programados.",
+    "Instalación": "vía `docker compose` o descargando el binario único de Go y apuntándolo a PostgreSQL; requiere un servidor SMTP (o servicio como SES) para los envíos.",
+    "Casos": "newsletter propia para leads · campañas de email desde workflows · envíos transaccionales a alta velocidad.",
+    "Stack": "Go, PostgreSQL, self-host — **Modelo/API:** no nativa; integrable con generadores de contenido.",
+    "Elige si": "quieres email marketing simple, rápido y propio — **Evita si:** necesitas nurturing avanzado o scoring de leads ([mautic](#-mautic)).",
+    "Combina con": "[mautic](#-mautic) · [n8n](#-n8n)",
+    "Repo": "[GitHub](https://github.com/knadh/listmonk)"
+   }
+  },
+  {
+   "id": "mautic",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "marketing",
+   "gh": "mautic/mautic",
+   "github": {
+    "full_name": "mautic/mautic",
+    "stars": 10961,
+    "description": "Mautic: Open Source Marketing Automation Software.",
+    "topics": [
+     "digital-experience-platform",
+     "digitalexperienceplatform",
+     "dxp",
+     "email-marketing",
+     "email-marketing-automation",
+     "email-marketing-software",
+     "hacktoberfest",
+     "marketing-automation",
+     "marketing-tools",
+     "mautic",
+     "open-source",
+     "php"
+    ],
+    "license": "NOASSERTION",
+    "language": "PHP",
+    "pushed_at": "2026-11-10T12:08:25Z",
+    "archived": false,
+    "homepage": "https://www.mautic.org"
+   },
+   "current": {
+    "name": "mautic",
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "python",
+     "typescript"
+    ],
+    "one": "Request a trial · Self-host/download · Community channels.",
+    "alt": [],
+    "desc": "Open Source Marketing Automation Software.",
+    "stack": "javascript/typescript, python, typescript, javascript, postgres",
+    "choose_if": "necesitas automatización de marketing seria y soberana",
+    "avoid_if": "te basta una newsletter simple ([listmonk](#-listmonk)).",
+    "combines_with": [
+     "listmonk",
+     "marketingskills",
+     "marketing de agencia"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/mautic/mautic.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol ⚙️ plataforma · Setup 🔴 pesado",
+    "Qué es": "plataforma open-source de marketing automation y segmentación de audiencias, alternativa soberana a suites comerciales como HubSpot o Marketo. Resuelve la primitiva de \"nutrir leads por email con reglas\" sin ceder tus datos a un SaaS.",
+    "Por qué destaca": "es la solución de marketing automation open-source más conocida y madura, respaldada por la Fundación Mautic y una comunidad amplia. Su madurez la hace apta para operaciones de marketing reales, no solo prototipos.",
+    "Cómo funciona": "ejecuta campañas, scoring de leads y nurturing por email mediante reglas y segmentos, sobre una aplicación PHP/Symfony con base de datos MySQL. Las campañas se definen como secuencias de pasos condicionales que disparan emails o acciones.",
+    "Instalación": "vía `docker compose` o instalación PHP/MySQL tradicional sobre un servidor web; requiere MySQL y un MTA o servicio SMTP para los envíos.",
+    "Casos": "nurturing por email · campañas segmentadas y scoring de leads · base de datos de audiencia soberana para tu agencia.",
+    "Stack": "PHP/Symfony, MySQL, self-host — **Modelo/API:** no nativa; complementa flujos de contenido IA.",
+    "Elige si": "necesitas automatización de marketing seria y soberana — **Evita si:** te basta una newsletter simple ([listmonk](#-listmonk)).",
+    "Limitaciones": "setup PHP/MySQL pesado y mantenimiento exigente; la curva de configuración de campañas no es trivial.",
+    "Combina con": "[listmonk](#-listmonk) · [marketingskills](#-marketingskills) · receta [Marketing de agencia](#-6-marketing-de-agencia)",
+    "Repo": "[GitHub](https://github.com/mautic/mautic)"
+   }
+  },
+  {
+   "id": "novu",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "marketing",
+   "gh": "novuhq/novu",
+   "github": {
+    "full_name": "novuhq/novu",
+    "stars": 40314,
+    "description": "The open-source communication infrastructure for agents and products",
+    "topics": [
+     "agents",
+     "communication",
+     "email",
+     "inbox",
+     "infrastructure",
+     "nodejs",
+     "notification-center",
+     "notifications",
+     "novu",
+     "push-notifications",
+     "react",
+     "reactjs",
+     "sms",
+     "transactional",
+     "typescript"
+    ],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T11:48:17Z",
+    "archived": false,
+    "homepage": "https://go.novu.co/github"
+   },
+   "current": {
+    "name": "novu",
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "javascript",
+     "javascript-typescript",
+     "react",
+     "typescript"
+    ],
+    "one": "One API and one unified conversation model to connect your products and your agents to every channel your users live on — Inbox, Email, SMS, Push, Chat, Slack, Microsoft Teams, Telegram, and more.",
+    "alt": [],
+    "desc": "The open-source communication infrastructure for agents and products.",
+    "stack": "javascript/typescript, typescript, javascript, react",
+    "choose_if": "envías notificaciones por varios canales y quieres un único backend",
+    "avoid_if": "solo necesitas email ([listmonk](#-listmonk)).",
+    "combines_with": [
+     "chatwoot",
+     "activepieces"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/novuhq/novu.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio",
+    "Qué es": "infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend. Resuelve la primitiva de \"un proveedor por canal\" evitando integrar y mantener cada uno por separado.",
+    "Por qué destaca": "es el estándar open-source de referencia para notificaciones, muy adoptado por su API unificada y su inbox unificado. Su modelo de \"notification workflows\" abstrae el enrutamiento por canal sin acoplarte a un proveedor concreto.",
+    "Cómo funciona": "define workflows de notificación que enrutan mensajes a distintos proveedores por canal (SendGrid, Twilio, FCM…), con un inbox unificado y plantillas, sobre un stack Node.js/TypeScript. Los proveedores se configuran por canal y se pueden intercambiar sin tocar el código de envío.",
+    "Instalación": "vía `docker compose` para self-host, o usando su plataforma cloud; el modo local requiere MongoDB/PostgreSQL y Redis.",
+    "Casos": "mensajes transaccionales y de producto desde un backend · inbox unificado · notificaciones multicanal con fallback de proveedor.",
+    "Stack": "Node.js, TypeScript, Docker — **Modelo/API:** compatible con agentes/automatizaciones externas vía API REST.",
+    "Elige si": "envías notificaciones por varios canales y quieres un único backend — **Evita si:** solo necesitas email ([listmonk](#-listmonk)).",
+    "Combina con": "[chatwoot](#-chatwoot) · [activepieces](#-activepieces)",
+    "Repo": "[GitHub](https://github.com/novuhq/novu)"
+   }
+  },
+  {
+   "id": "activepieces",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "motores",
+   "gh": "activepieces/activepieces",
+   "github": {
+    "full_name": "activepieces/activepieces",
+    "stars": 25463,
+    "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+    "topics": [
+     "ai-agent",
+     "ai-agent-tools",
+     "ai-agents",
+     "ai-agents-framework",
+     "mcp",
+     "mcp-server",
+     "mcp-tools",
+     "mcps",
+     "n8n-alternative",
+     "no-code-automation",
+     "workflow",
+     "workflow-automation",
+     "workflows"
+    ],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T12:29:33Z",
+    "archived": false,
+    "homepage": "https://www.activepieces.com"
+   },
+   "current": {
+    "name": "activepieces",
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "typescript"
+    ],
+    "one": "Plataforma open source de automatización tipo Zapier, auto-hospedable, con piezas y flujos visuales.",
+    "alt": [
+     "n8n"
+    ],
+    "desc": "Activepieces es un reemplazo open source de Zapier: orquestas automatizaciones con piezas auto-hospedables y un editor visual, sin ceder los datos a un SaaS cerrado.",
+    "stack": "javascript/typescript, typescript, javascript, docker",
+    "choose_if": "quieres reemplazar Zapier con piezas propias en TypeScript",
+    "avoid_if": "ya dominas n8n y su ecosistema te basta.",
+    "combines_with": [
+     "n8n",
+     "novu"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/activepieces/activepieces.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟡 medio",
+    "Qué es": "plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y \"pieces\" reutilizables. Resuelve la primitiva de \"orquestar mis apps sin código\" manteniéndote en self-host.",
+    "Por qué destaca": "muy adoptada como reemplazo open-source de Zapier, destaca por su soporte temprano de MCP y por permitir crear piezas propias en TypeScript. Su editor visual y su catálogo de conectores la hacen accesible para perfiles mixtos técnico/no-técnico.",
+    "Cómo funciona": "ejecuta flujos de pasos (triggers y acciones) basados en \"pieces\" escritas en TypeScript, con un motor Node.js y soporte de conectores de IA y MCP. Las pieces son paquetes versionables que puedes compartir entre proyectos.",
+    "Instalación": "vía `docker compose` para self-host, o usando su versión cloud si prefieres no operar la infra; requiere Node.js y una base de datos para el modo local.",
+    "Casos": "lead → consulta CRM → notifica al equipo · flujos para usuarios técnicos y no técnicos · integraciones con IA vía piezas MCP.",
+    "Stack": "Node.js, TypeScript, self-host/web — **Modelo/API:** OpenAI, Anthropic, MCP.",
+    "Elige si": "quieres reemplazar Zapier con piezas propias en TypeScript — **Evita si:** ya dominas n8n y su ecosistema te basta.",
+    "Combina con": "[n8n](#-n8n) · [novu](#-novu)",
+    "Repo": "[GitHub](https://github.com/activepieces/activepieces)"
+   }
+  },
+  {
+   "id": "huginn",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "motores",
+   "gh": "huginn/huginn",
+   "github": {
+    "full_name": "huginn/huginn",
+    "stars": 50473,
+    "description": "Create agents that monitor and act on your behalf.  Your agents are standing by!",
+    "topics": [
+     "agent",
+     "automation",
+     "feed",
+     "feedgenerator",
+     "huginn",
+     "monitoring",
+     "notifications",
+     "rss",
+     "scraper",
+     "webscraping"
+    ],
+    "license": "MIT",
+    "language": "Ruby",
+    "pushed_at": "2026-11-09T01:28:46Z",
+    "archived": false,
+    "homepage": ""
+   },
+   "current": {
+    "name": "huginn",
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "typescript"
+    ],
+    "one": "Huginn is a system for building agents that perform automated tasks for you online. They can read the web, watch for events, and take actions on your behalf.",
+    "alt": [],
+    "desc": "Huginn is a system for building agents that perform automated tasks for you online. They can read the web, watch for events, and take actions on your behalf. Huginn's Agents create and consume events, propagating them along a directed graph. Think of it as a hackable version of IFTTT or Zapier on your own server. You always know who has your data. You do.",
+    "stack": "javascript/typescript, typescript, javascript, docker, postgres",
+    "choose_if": "automatizas tareas orientadas a eventos y valoras la privacidad",
+    "avoid_if": "quieres editor visual moderno o IA nativa ([n8n](#-n8n)).",
+    "combines_with": [
+     "n8n",
+     "novu"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/huginn/huginn.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol ⚙️ plataforma · Setup 🟡 medio",
+    "Qué es": "sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un \"IFTTT/Zapier que controlas tú\". Resuelve la primitiva de \"vigilar fuentes y disparar acciones\" sin depender de terceros.",
+    "Por qué destaca": "proyecto veterano y muy respetado en la comunidad open-source para monitoreo y scraping, valorado por su privacidad y su modelo de agentes encadenables. Su longevidad lo hace una opción estable para flujos de vigilancia.",
+    "Cómo funciona": "define \"agents\" que hacen polling o reciben webhooks y se conectan entre sí pasando eventos (la salida de uno alimenta al siguiente), sobre un stack Ruby on Rails con base de datos. Cada agent tiene un tipo (trigger, acción, filtro) y se configura por UI o YAML.",
+    "Instalación": "vía `docker` (imagen oficial) o desplegando la app Rails manualmente; requiere MySQL/PostgreSQL y un entorno Ruby.",
+    "Casos": "vigilar fuentes externas y disparar acciones · scraping + reglas de automatización · encadenar eventos entre servicios sin SaaS.",
+    "Stack": "Ruby on Rails, MySQL/PostgreSQL, self-host — **Modelo/API:** no nativa; se integra vía APIs y webhooks.",
+    "Elige si": "automatizas tareas orientadas a eventos y valoras la privacidad — **Evita si:** quieres editor visual moderno o IA nativa ([n8n](#-n8n)).",
+    "Limitaciones": "proyecto veterano con ritmo de mantenimiento lento; sin IA integrada y UI menos pulida que alternativas modernas.",
+    "Combina con": "[n8n](#-n8n) · [novu](#-novu)",
+    "Repo": "[GitHub](https://github.com/huginn/huginn)"
+   }
+  },
+  {
+   "id": "kestra",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "motores",
+   "gh": "kestra-io/kestra",
+   "github": {
+    "full_name": "kestra-io/kestra",
+    "stars": 30188,
+    "description": "Orchestrate everything, everywhere. The open-source control plane for workflows across data, infrastructure, business processes and AI agents. Declarative YAML, event-driven, any language, Git-versioned, scalable to millions of executions.",
+    "topics": [
+     "ai-agents",
+     "automation",
+     "control-plane",
+     "data-engineering",
+     "data-orchestration",
+     "data-orchestrator",
+     "devops",
+     "etl",
+     "hacktoberfest",
+     "high-availability",
+     "infra-automation",
+     "infra-ops",
+     "infrastructure-as-code",
+     "java",
+     "low-code",
+     "orchestration",
+     "pipeline",
+     "pipeline-as-code",
+     "scheduler",
+     "workflow"
+    ],
+    "license": "Apache-2.0",
+    "language": "Java",
+    "pushed_at": "2026-11-10T12:11:31Z",
+    "archived": false,
+    "homepage": "https://go.kestra.io/home"
+   }
+  },
+  {
+   "id": "n8n",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "motores",
+   "gh": "n8n-io/n8n",
+   "github": {
+    "full_name": "n8n-io/n8n",
+    "stars": 209991,
+    "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+    "topics": [
+     "ai",
+     "apis",
+     "automation",
+     "cli",
+     "data-flow",
+     "development",
+     "integration-framework",
+     "integrations",
+     "ipaas",
+     "low-code",
+     "low-code-platform",
+     "mcp",
+     "mcp-client",
+     "mcp-server",
+     "n8n",
+     "no-code",
+     "self-hosted",
+     "typescript",
+     "workflow",
+     "workflow-automation"
+    ],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T12:30:30Z",
+    "archived": false,
+    "homepage": "https://n8n.io"
+   },
+   "current": {
+    "name": "n8n",
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "langchain",
+     "python",
+     "typescript"
+    ],
+    "one": "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code.",
+    "alt": [
+     "activepieces",
+     "huginn"
+    ],
+    "desc": "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.",
+    "stack": "javascript/typescript, python, typescript, javascript, docker, langchain",
+    "choose_if": "quieres el motor central de automatización con máximo catálogo",
+    "avoid_if": "buscas algo minimalista o sin self-host.",
+    "combines_with": [
+     "n8n-mcp",
+     "n8n-skills",
+     "evolution-api"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/n8n-io/n8n.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol ⚙️ plataforma · Setup 🟡 medio",
+    "Qué es": "plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. Resuelve la primitiva de \"conectar todo con todo\" en self-host, sin el coste recurrente de un SaaS.",
+    "Por qué destaca": "se ha convertido en un estándar de facto para automatización self-hosted, muy adoptado por su enorme catálogo de nodos y su fuerte integración de IA (LangChain, MCP). Su comunidad y su documentación lo hacen el punto de partida habitual.",
+    "Cómo funciona": "encadena nodos (triggers, transformaciones, integraciones) en un grafo de workflow ejecutado por un runtime Node.js, con nodos de IA basados en LangChain y soporte MCP. Los workflows se exportan como JSON, lo que permite versionarlos.",
+    "Instalación": "vía `docker compose` o imagen Docker oficial; también `npx n8n` para una prueba rápida local. Requiere una base de datos (SQLite por defecto, PostgreSQL para producción).",
+    "Casos": "extraer leads → enriquecer con IA → notificar · pipelines de negocio sin SaaS cerrado · workflows versionados como JSON junto al código.",
+    "Stack": "Node.js, TypeScript, Docker — **Modelo/API:** múltiples por nodo (OpenAI, Anthropic…); se potencia con MCP y LLMs.",
+    "Elige si": "quieres el motor central de automatización con máximo catálogo — **Evita si:** buscas algo minimalista o sin self-host.",
+    "Limitaciones": "la versión self-host comunitaria tiene límites en ejecuciones y usuarios; algunas funciones avanzadas requieren licencia.",
+    "Combina con": "[n8n-mcp](#-n8n-mcp) · [n8n-skills](#-n8n-skills) · [evolution-api](#-evolution-api)",
+    "Repo": "[GitHub](https://github.com/n8n-io/n8n)"
+   }
+  },
+  {
+   "id": "node-red",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "motores",
+   "gh": "node-red/node-red",
+   "github": {
+    "full_name": "node-red/node-red",
+    "stars": 23827,
+    "description": "Low-code programming for event-driven applications",
+    "topics": [
+     "flow-based-programming",
+     "javascript",
+     "low-code",
+     "node-red",
+     "openjs-foundation",
+     "visual-programming"
+    ],
+    "license": "Apache-2.0",
+    "language": "JavaScript",
+    "pushed_at": "2026-11-09T13:31:16Z",
+    "archived": false,
+    "homepage": "http://nodered.org"
+   }
+  },
+  {
+   "id": "trigger-dev",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "motores",
+   "gh": "triggerdotdev/trigger.dev",
+   "github": {
+    "full_name": "triggerdotdev/trigger.dev",
+    "stars": 16738,
+    "description": "Trigger.dev – build and deploy durable AI agents and workflows",
+    "topics": [
+     "ai",
+     "ai-agent-framework",
+     "ai-agents",
+     "automation",
+     "background-jobs",
+     "mcp",
+     "mcp-server",
+     "nextjs",
+     "orchestration",
+     "scheduler",
+     "serverless",
+     "workflow-automation",
+     "workflows"
+    ],
+    "license": "Apache-2.0",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-03T11:54:09Z",
+    "archived": false,
+    "homepage": "https://trigger.dev/changelog"
+   }
+  },
+  {
+   "id": "windmill",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "motores",
+   "gh": "windmill-labs/windmill",
+   "github": {
+    "full_name": "windmill-labs/windmill",
+    "stars": 18485,
+    "description": "Code-first platform for workflows, apps and AI agents, on the fastest self-hostable orchestrator (benchmarked against Airflow, Prefect and Temporal). Business teams build with AI, engineers control what ships. Open-source alternative to Lovable, Retool and n8n.",
+    "topics": [
+     "ai-agents",
+     "airflow-alternative",
+     "internal-tools",
+     "open-source",
+     "orchestration",
+     "postgresql",
+     "python",
+     "rust",
+     "self-hostable",
+     "self-hosted",
+     "typescript",
+     "vibe-coding",
+     "workflow-engine"
+    ],
+    "license": "NOASSERTION",
+    "language": "Rust",
+    "pushed_at": "2026-11-10T11:50:32Z",
+    "archived": false,
+    "homepage": "https://windmill.dev"
+   }
+  },
+  {
+   "id": "awesome-n8n-templates",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "n8n",
+   "gh": "enescingoz/awesome-n8n-templates",
+   "github": {
+    "full_name": "enescingoz/awesome-n8n-templates",
+    "stars": 26349,
+    "description": "280+ free n8n automation templates — ready-to-use workflows for Gmail, Telegram, Slack, Discord, WhatsApp, Google Drive, Notion, OpenAI, and more. AI agents, RAG   chatbots, email automation, social media, DevOps, and document processing. The largest open-source n8n template collection.",
+    "topics": [
+     "ai-agents",
+     "ai-automation",
+     "automation",
+     "automation-templates",
+     "awesome",
+     "awesome-list",
+     "integration",
+     "low-code",
+     "n8n",
+     "n8n-automation",
+     "n8n-template",
+     "no-code-ai",
+     "no-code-automation",
+     "self-hosted",
+     "telegram-bot",
+     "workflow-automation"
+    ],
+    "license": "NOASSERTION",
+    "language": null,
+    "pushed_at": "2026-09-12T13:00:32Z",
+    "archived": false,
+    "homepage": "https://n8n.partnerlinks.io/h1pwwf5m4toe"
+   }
+  },
+  {
+   "id": "n8n-io",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "n8n",
+   "gh": "n8n-io/n8n",
+   "github": {
+    "full_name": "n8n-io/n8n",
+    "stars": 209991,
+    "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+    "topics": [
+     "ai",
+     "apis",
+     "automation",
+     "cli",
+     "data-flow",
+     "development",
+     "integration-framework",
+     "integrations",
+     "ipaas",
+     "low-code",
+     "low-code-platform",
+     "mcp",
+     "mcp-client",
+     "mcp-server",
+     "n8n",
+     "no-code",
+     "self-hosted",
+     "typescript",
+     "workflow",
+     "workflow-automation"
+    ],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T12:30:30Z",
+    "archived": false,
+    "homepage": "https://n8n.io"
+   },
+   "current": {
+    "name": "n8n_io",
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "langchain",
+     "python",
+     "typescript"
+    ],
+    "one": "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code.",
+    "alt": [],
+    "desc": "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.",
+    "stack": "javascript/typescript, python, typescript, javascript, docker, langchain",
+    "choose_if": "quieres n8n - secure workflow automation for technical teams",
+    "avoid_if": "ya usas la ficha [n8n](#-n8n) (es el mismo proyecto).",
+    "combines_with": [
+     "n8n"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/n8n-io/n8n.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol ⚙️ plataforma · Setup 🟡 medio",
+    "Qué es": "copia local del repositorio oficial de n8n (mismo proyecto que [n8n](#-n8n)), mantenida como referencia o espejo del código fuente. No aporta nada distinto a la ficha principal.",
+    "Por qué destaca": "no aporta valor propio frente a la ficha principal; existe solo como duplicado del proyecto oficial bajo otro identificador local.",
+    "Cómo funciona": "es idéntica a n8n; encadena nodos en workflows ejecutados por un runtime Node.js con nodos de IA basados en LangChain.",
+    "Instalación": "la misma que n8n (`docker compose`, imagen Docker oficial o `npx n8n`).",
+    "Casos": "referencia/duplicado del código fuente de n8n — no hay caso de uso diferenciado.",
+    "Stack": "Node.js, TypeScript — **Modelo/API:** igual que n8n.",
+    "Elige si": "— **Evita si:** ya usas la ficha [n8n](#-n8n) (es el mismo proyecto).",
+    "Limitaciones": "usa la ficha [n8n](#-n8n) en su lugar; este duplicado no recibe curaduría independiente.",
+    "Combina con": "ver [n8n](#-n8n)",
+    "Repo": "[GitHub](https://github.com/n8n-io/n8n)"
+   },
+   "alias_of": "n8n"
+  },
+  {
+   "id": "n8n-mcp",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "n8n",
+   "gh": "czlonkowski/n8n-mcp",
+   "github": {
+    "full_name": "czlonkowski/n8n-mcp",
+    "stars": 23235,
+    "description": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you ",
+    "topics": [
+     "mcp",
+     "mcp-server",
+     "n8n",
+     "workflows"
+    ],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-09T12:08:18Z",
+    "archived": false,
+    "homepage": "https://www.n8n-mcp.com/"
+   },
+   "current": {
+    "name": "n8n-mcp",
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "langchain",
+     "mcp",
+     "python",
+     "typescript"
+    ],
+    "one": "A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations.",
+    "alt": [],
+    "desc": "A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations. Deploy in minutes to give Claude and other AI assistants deep knowledge about n8n's 1,845 workflow automation nodes (816 core + 1,029 community).",
+    "stack": "javascript/typescript, python, typescript, javascript, docker, langchain",
+    "choose_if": "generas flujos n8n con IA y quieres menos alucinaciones de parámetros",
+    "avoid_if": "no usas n8n o construyes los flujos a mano.",
+    "combines_with": [
+     "n8n",
+     "n8n-skills",
+     "bot whatsapp"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/czlonkowski/n8n-mcp.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · MCP 🔌 · Rol 🧩 motor/runtime · Setup 🟡 medio",
+    "Qué es": "servidor MCP que expone a la IA la documentación y los esquemas de los más de 1.845 nodos de n8n (816 core + 1.029 comunitarios) para ayudar a construir y depurar flujos. Resuelve el problema de que un LLM invente parámetros de nodos que no existen y genere workflows rotos.",
+    "Por qué destaca": "reduce drásticamente los errores cuando se pide a una IA que arme un workflow de n8n, al darle acceso fiable a los parámetros reales de cada nodo. Su enfoque de \"documentación como herramienta MCP\" es un patrón replicable para otras plataformas.",
+    "Cómo funciona": "el cliente MCP (Claude, Cursor, Gemini CLI) invoca tools del servidor para consultar nodos, propiedades y ejemplos vía el protocolo MCP; el LLM recibe esquemas exactos en lugar de alucinarlos.",
+    "Instalación": "`npx n8n-mcp` y añadirlo a la config del cliente MCP (p. ej. Claude Desktop). Requiere Node.js y, para flujos reales, una instancia n8n accesible.",
+    "Casos": "que Claude investigue parámetros del nodo de Gmail para armar un flujo · reducir errores al construir workflows · onboarding de IA al catálogo de nodos de n8n.",
+    "Stack": "Node.js/TypeScript, MCP — **Modelo/API:** Claude Desktop/Code, Cursor, Gemini CLI; agnóstico vía MCP.",
+    "Elige si": "generas flujos n8n con IA y quieres menos alucinaciones de parámetros — **Evita si:** no usas n8n o construyes los flujos a mano.",
+    "Combina con": "[n8n](#-n8n) · [n8n-skills](#-n8n-skills) · receta [Bot WhatsApp](#-1-bot-de-whatsapp-con-ia)",
+    "Repo": "[GitHub](https://github.com/czlonkowski/n8n-mcp)"
+   }
+  },
+  {
+   "id": "n8n-skills",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "n8n",
+   "gh": "czlonkowski/n8n-skills",
+   "github": {
+    "full_name": "czlonkowski/n8n-skills",
+    "stars": 6620,
+    "description": "n8n skillset for Claude Code to build flawless n8n workflows",
+    "topics": [
+     "ai-agents",
+     "n8n",
+     "workflow-automation"
+    ],
+    "license": "MIT",
+    "language": "Shell",
+    "pushed_at": "2026-10-24T11:44:27Z",
+    "archived": false,
+    "homepage": "https://www.n8n-skills.com"
+   },
+   "current": {
+    "name": "n8n-skills",
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "javascript",
+     "langchain",
+     "postgres",
+     "python",
+     "skills",
+     "typescript"
+    ],
+    "one": "Skills de Claude Code para diseñar workflows n8n usando el servidor n8n-mcp.",
+    "alt": [],
+    "desc": "Paquete de skills para construir flujos n8n con un agente. Combínalo con n8n y n8n-mcp; no sustituye la instancia de n8n.",
+    "stack": "python, typescript, javascript, docker, postgres, langchain",
+    "choose_if": "generas workflows n8n con IA y te cansan los fallos de JSON",
+    "avoid_if": "no usas n8n.",
+    "combines_with": [
+     "n8n",
+     "n8n-mcp"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/czlonkowski/n8n-skills.git",
+   "editorial": {
+    "Etiquetas": "Ejecución ☁️ API/cloud · Rol 🎨 skill/prompt · Setup 🟢 fácil",
+    "Qué es": "conjunto de 14 skills estructuradas para Claude Code orientadas a construir flujos de n8n correctos, evitando errores al generar su JSON. Resuelve la primitiva de \"JSON de n8n que no falla\" reduciendo bucles de error.",
+    "Por qué destaca": "ataca un problema concreto y frecuente —el JSON de n8n generado por IA suele fallar— reduciendo bucles de error y timeouts. Su foco narrow la hace más eficaz que prompts genéricos para este caso.",
+    "Cómo funciona": "las skills aportan plantillas y reglas de validación que guían al modelo a producir nodos y conexiones n8n sintácticamente válidos. Cada skill cubre un patrón de workflow (trigger, transformación, integración) con su esquema JSON.",
+    "Instalación": "clona el repo y copia las skills (`SKILL.md`) a tu directorio de skills de Claude Code u otro asistente compatible; sin dependencias.",
+    "Casos": "evitar errores de sintaxis al generar JSON de n8n · plantillas de workflows complejos · acelerar la creación de flujos con IA.",
+    "Stack": "`SKILL.md`, Markdown — **Modelo/API:** Claude Code u otro que lea skills.",
+    "Elige si": "generas workflows n8n con IA y te cansan los fallos de JSON — **Evita si:** no usas n8n.",
+    "Combina con": "[n8n](#-n8n) · [n8n-mcp](#-n8n-mcp)",
+    "Repo": "[GitHub](https://github.com/czlonkowski/n8n-skills)"
+   }
+  },
+  {
+   "id": "self-hosted-ai-starter-kit",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "n8n",
+   "gh": "n8n-io/self-hosted-ai-starter-kit",
+   "github": {
+    "full_name": "n8n-io/self-hosted-ai-starter-kit",
+    "stars": 15344,
+    "description": "The Self-hosted AI Starter Kit is an open-source template that quickly sets up a local AI environment. Curated by n8n, it provides essential tools for creating secure, self-hosted AI workflows.",
+    "topics": [
+     "ai",
+     "ai-agents",
+     "low-code",
+     "self-hosted",
+     "starter-kit"
+    ],
+    "license": "Apache-2.0",
+    "language": null,
+    "pushed_at": "2026-10-12T08:50:13Z",
+    "archived": false,
+    "homepage": "https://n8n.io"
+   }
+  },
+  {
+   "id": "baileys",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "whatsapp",
+   "gh": "WhiskeySockets/Baileys",
+   "github": {
+    "full_name": "WhiskeySockets/Baileys",
+    "stars": 11586,
+    "description": "Socket-based TS/JavaScript API for WhatsApp Web",
+    "topics": [
+     "bun",
+     "deno",
+     "nodejs",
+     "reverse-engineering",
+     "typescript",
+     "websockets",
+     "whatsapp-web",
+     "ws"
+    ],
+    "license": "MIT",
+    "language": "JavaScript",
+    "pushed_at": "2026-11-08T00:31:45Z",
+    "archived": false,
+    "homepage": "https://baileys.wiki/"
+   }
+  },
+  {
+   "id": "evolution-api",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "whatsapp",
+   "gh": "evolution-foundation/evolution-api",
+   "github": {
+    "full_name": "evolution-foundation/evolution-api",
+    "stars": 10081,
+    "description": "Evolution API is an open-source WhatsApp integration API",
+    "topics": [
+     "chatbot",
+     "chatwoot",
+     "cloud-api",
+     "dify",
+     "evolution",
+     "n8n",
+     "openai",
+     "pusher",
+     "rabbitmq",
+     "typebot",
+     "whatsapp",
+     "whatsapp-api",
+     "whatsapp-bot"
+    ],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-06T19:53:19Z",
+    "archived": false,
+    "homepage": "https://evolutionfoundation.com.br"
+   },
+   "current": {
+    "name": "evolution-api",
+    "role": "app",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "typescript"
+    ],
+    "one": "Open-source REST API for WhatsApp and multi-channel messaging — part of the Evolution Foundation ecosystem.",
+    "alt": [],
+    "desc": "Open-source REST API for WhatsApp and multi-channel messaging — part of the Evolution Foundation ecosystem.",
+    "stack": "javascript/typescript, typescript, javascript, docker, postgres",
+    "choose_if": "operas WhatsApp en producción con varias instancias",
+    "avoid_if": "solo necesitas un bot de prueba o un único script ([OpenWA](#-openwa) basta).",
+    "combines_with": [
+     "n8n",
+     "chatwoot",
+     "bot whatsapp"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/evolution-foundation/evolution-api.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol ⚙️ plataforma · Setup 🔴 pesado",
+    "Qué es": "API REST que actúa como middleware para automatizar WhatsApp y mensajería multicanal, exponiendo el envío/recepción de mensajes a tus aplicaciones mediante una capa gestionable. Resuelve la primitiva de \"conectar WhatsApp a mi stack\" sin acoplarte a un SaaS cerrado.",
+    "Por qué destaca": "es una de las puertas de enlace de WhatsApp open-source más usadas en LATAM y Brasil para producción, con comunidad activa y soporte de webhooks, multi-instancia y gestión de sesiones. Su adopción la convierte en el puente habitual hacia n8n o chatwoot.",
+    "Cómo funciona": "mantiene sesiones de WhatsApp por instancia (vía Baileys/whatsapp-web.js) y reenvía eventos vía webhooks, apoyándose en Node.js/Fastify y Redis para estado y colas. Cada instancia se gestiona por API REST, lo que permite escalar horizontalmente con Docker.",
+    "Instalación": "despliegue habitual con `docker compose` usando la imagen oficial, configurando variables de entorno y Redis; requiere mantener las sesiones de WhatsApp activas.",
+    "Casos": "notificaciones de pedidos/facturas · enrutar mensajes a agentes vía webhook · puente entre WhatsApp y un LLM en n8n.",
+    "Stack": "Node.js/TypeScript, Fastify, Redis, Docker — **Modelo/API:** no usa IA directa; es el puente al LLM que tú orquestes.",
+    "Elige si": "operas WhatsApp en producción con varias instancias — **Evita si:** solo necesitas un bot de prueba o un único script ([OpenWA](#-openwa) basta).",
+    "Limitaciones": "las sesiones de WhatsApp pueden caer y requieren supervisión; el ToS de WhatsApp limita volumen y automatización masiva.",
+    "Combina con": "[n8n](#-n8n) · [chatwoot](#-chatwoot) · receta [Bot WhatsApp](#-1-bot-de-whatsapp-con-ia)",
+    "Repo": "[GitHub](https://github.com/EvolutionAPI/evolution-api)"
+   }
+  },
+  {
+   "id": "fluxer",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "whatsapp",
+   "gh": "fluxerapp/fluxer",
+   "github": {
+    "full_name": "fluxerapp/fluxer",
+    "stars": 10836,
+    "description": "A free and open source instant messaging and VoIP chat app built for friends, groups, and communities.",
+    "topics": [
+     "fluxer",
+     "fluxerapp"
+    ],
+    "license": "AGPL-3.0",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-09T19:51:19Z",
+    "archived": false,
+    "homepage": "https://feedback.fluxer.com"
+   },
+   "current": {
+    "name": "fluxer",
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "javascript",
+     "javascript-typescript",
+     "typescript"
+    ],
+    "one": "> We apologise for the brief delay in open-source releases. We paused after spam waves created safety concerns while we built out Fluxer's trust and safety infrastructure.",
+    "alt": [],
+    "desc": "As of this writing (15 June 2026), we are working to finalise the API and self-hosting documentation over the next few days.",
+    "stack": "javascript/typescript, typescript, javascript",
+    "choose_if": "quieres probar algo nuevo y seguir su evolución",
+    "avoid_if": "necesitas estabilidad de producción (API aún en finalización).",
+    "combines_with": [
+     "open-generative-ai"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/fluxerapp/fluxer.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio",
+    "Qué es": "plataforma generativa emergente con foco en audio y video mejorados, ofrecida como cliente Canary web/desktop; su API y self-host aún están en finalización. Apunta a unificar varios modelos generativos tras un cliente único.",
+    "Por qué destaca": "apuesta por audio/video con mejoras continuas y un cliente nativo, aunque es un proyecto poco maduro y con documentación e instalación todavía limitadas (honestamente, oscuro). Útil solo para explorar el rumbo de la plataforma.",
+    "Cómo funciona": "cliente en TypeScript/web que orquesta múltiples modelos generativos a través de servicios, con backend self-host aún no estabilizado y API en finalización según sus propios avisos.",
+    "Instalación": "descargar el cliente Canary (web/desktop) o `git clone` del repo y compilar con el toolchain de Node/TS; self-host sujeto a cambios. No hay paquete estable publicado.",
+    "Casos": "explorar una plataforma generativa emergente · cliente Canary web/desktop para probar audio/video mejorado.",
+    "Stack": "web/TS — **Modelo/API:** múltiples (vía servicios del proyecto).",
+    "Elige si": "quieres probar algo nuevo y seguir su evolución — **Evita si:** necesitas estabilidad de producción (API aún en finalización).",
+    "Limitaciones": "proyecto en finalización: API, docs y self-host inestables; no apto para producción ni para depender de él hoy.",
+    "Combina con": "[Open-Generative-AI](#-open-generative-ai)",
+    "Repo": "[GitHub](https://github.com/fluxerapp/fluxer)"
+   }
+  },
+  {
+   "id": "openwa",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "whatsapp",
+   "gh": "rmyndharis/OpenWA",
+   "github": {
+    "full_name": "rmyndharis/OpenWA",
+    "stars": 16716,
+    "description": "Free, Open Source, Self-Hosted WhatsApp API Gateway",
+    "topics": [
+     "api",
+     "bot",
+     "gateway",
+     "self-hosted",
+     "whatsapp",
+     "whatsapp-api",
+     "whatsapp-automation",
+     "whatsapp-bot",
+     "whatsapp-gateway",
+     "whatsapp-gateway-api",
+     "whatsapp-web",
+     "whatsapp-web-api"
+    ],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T11:37:30Z",
+    "archived": false,
+    "homepage": "https://www.open-wa.org"
+   },
+   "current": {
+    "name": "OpenWA",
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "python",
+     "react",
+     "typescript"
+    ],
+    "one": "OpenWA is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls.",
+    "alt": [],
+    "desc": "OpenWA is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres",
+    "choose_if": "desarrollas scripts o bots individuales y quieres arrancar rápido",
+    "avoid_if": "necesitas infra multi-instancia o alta disponibilidad ([evolution-api](#-evolution-api)).",
+    "combines_with": [
+     "n8n",
+     "evolution-api"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/rmyndharis/OpenWA.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol 📚 librería/SDK · Setup 🟢 fácil",
+    "Qué es": "gateway/SDK abierto para conectar y automatizar cuentas de WhatsApp de forma directa desde código, sin infraestructura pesada. Resuelve la primitiva de \"enviar y recibir mensajes de WhatsApp desde mi script\" con una API expresiva.",
+    "Por qué destaca": "muy adoptado para prototipos y bots individuales por su simplicidad y su API expresiva, con una comunidad consolidada alrededor de wa-automate. Es la opción ligera cuando evolution-api es excesivo.",
+    "Cómo funciona": "controla una sesión de WhatsApp Web mediante automatización del navegador (Puppeteer) y expone eventos y métodos a tus scripts en Node.js, con bindings para Python. Cada sesión vive en un proceso, sin Redis ni orquestador.",
+    "Instalación": "vía `npm i @open-wa/wa-automate` en proyectos Node.js (o el paquete equivalente para Python); requiere un entorno con navegador headless para la sesión.",
+    "Casos": "bot que escucha eventos y ejecuta scripts locales · respuestas rápidas con panel local · prototipo de agente conversacional en una sola máquina.",
+    "Stack": "Node.js, Puppeteer, bindings Python — **Modelo/API:** no nativa (requiere orquestación externa del LLM).",
+    "Elige si": "desarrollas scripts o bots individuales y quieres arrancar rápido — **Evita si:** necesitas infra multi-instancia o alta disponibilidad ([evolution-api](#-evolution-api)).",
+    "Limitaciones": "depende de automatizar el navegador, lo que es frágil ante cambios de WhatsApp Web; no está pensado para producción a escala.",
+    "Combina con": "[n8n](#-n8n) · [evolution-api](#-evolution-api)",
+    "Repo": "[GitHub](https://github.com/open-wa/wa-automate-nodejs)"
+   }
+  },
+  {
+   "id": "waha",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "whatsapp",
+   "gh": "devlikeapro/waha",
+   "github": {
+    "full_name": "devlikeapro/waha",
+    "stars": 7792,
+    "description": "WAHA - WhatsApp HTTP API (REST API) that you can configure in a click! Multiple engines: WEBJS (browser based), NOWEB (websocket nodejs), GOWS (websocket go), WPP (browser)",
+    "topics": [
+     "ai-bot",
+     "bot",
+     "http-api",
+     "mcp",
+     "mcp-server",
+     "mcp-whatsapp",
+     "python-bot",
+     "whatsapp",
+     "whatsapp-api",
+     "whatsapp-automation",
+     "whatsapp-bot",
+     "whatsapp-chat",
+     "whatsapp-mcp",
+     "whatsapp-web",
+     "whatsapp-web-api"
+    ],
+    "license": "Apache-2.0",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-06T06:51:55Z",
+    "archived": false,
+    "homepage": "https://waha.devlike.pro/"
+   }
+  },
+  {
+   "id": "whatsapp-agentkit",
+   "is_new": false,
+   "target_cat": 1,
+   "target_sub": "whatsapp",
+   "gh": "Hainrixz/whatsapp-agentkit",
+   "github": {
+    "full_name": "Hainrixz/whatsapp-agentkit",
+    "stars": 554,
+    "description": "Construye tu agente de WhatsApp con IA en menos de 30 minutos. Claude Code te entrevista y escribe todo el código. Zernio o Meta Cloud API. Sin saber programar.",
+    "topics": [
+     "ai-agent",
+     "anthropic",
+     "chatbot",
+     "claude",
+     "claude-code",
+     "fastapi",
+     "meta-cloud-api",
+     "python",
+     "whatsapp",
+     "whatsapp-api",
+     "whatsapp-bot",
+     "zernio"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-10-25T06:02:06Z",
+    "archived": false,
+    "homepage": "https://hainrixz.github.io/whatsapp-agentkit/"
+   },
+   "current": {
+    "name": "whatsapp-agentkit",
+    "role": "directory",
+    "exec": "cloud",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "agents",
+     "automation",
+     "docker",
+     "fastapi",
+     "javascript",
+     "postgres",
+     "python",
+     "typescript"
+    ],
+    "one": "Construye tu propio agente de WhatsApp con inteligencia artificial en menos de 30 minutos. No necesitas saber programar. Claude Code construye todo por ti.",
+    "alt": [],
+    "desc": "Construye tu propio agente de WhatsApp con inteligencia artificial en menos de 30 minutos. No necesitas saber programar. Claude Code construye todo por ti.",
+    "stack": "python, typescript, javascript, docker, postgres, fastapi",
+    "choose_if": "quieres arrancar sin partir de cero y te vale con lo que Claude Code genere",
+    "avoid_if": "necesitas control fino del stack o ya tienes el bot hecho.",
+    "combines_with": [
+     "evolution-api",
+     "n8n-mcp"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/Hainrixz/whatsapp-agentkit.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol 🎨 skill/prompt · Setup 🟢 fácil",
+    "Qué es": "plantilla guiada que construye un agente conversacional de WhatsApp en menos de 30 minutos sin necesidad de programar, partiendo de preguntas sobre tu negocio. Resuelve la primitiva de \"arrancar un bot de WhatsApp sin tocar código\".",
+    "Por qué destaca": "baja drásticamente la barrera de entrada al delegar la generación del código en Claude Code, ideal para arranques rápidos y perfiles no técnicos. El resultado es código real que luego puedes editar, no una caja negra.",
+    "Cómo funciona": "un flujo de preguntas conversacionales alimenta a Claude Code, que autogenera el código del bot (Node.js/Python) y la configuración del webhook de WhatsApp. El asistente hace las veces de scaffolder guiado por tus respuestas.",
+    "Instalación": "`git clone` del repo y seguir el asistente con Claude Code; requiere una clave API de Anthropic y una cuenta/instancia de WhatsApp para el webhook.",
+    "Casos": "prototipo de atención al cliente · setup de webhook por preguntas conversacionales · demo de ventas por WhatsApp en una tarde.",
+    "Stack": "Node.js/Python, APIs de WhatsApp — **Modelo/API:** Claude (Code / Sonnet) para la autogeneración del bot.",
+    "Elige si": "quieres arrancar sin partir de cero y te vale con lo que Claude Code genere — **Evita si:** necesitas control fino del stack o ya tienes el bot hecho.",
+    "Combina con": "[evolution-api](#-evolution-api) · [n8n-mcp](#-n8n-mcp)",
+    "Repo": "[GitHub](https://github.com/Hainrixz/whatsapp-agentkit)"
+   }
+  },
+  {
+   "id": "whatsapp-web-js",
+   "is_new": true,
+   "target_cat": 1,
+   "target_sub": "whatsapp",
+   "gh": "wwebjs/whatsapp-web.js",
+   "github": {
+    "full_name": "wwebjs/whatsapp-web.js",
+    "stars": 22884,
+    "description": "A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app",
+    "topics": [
+     "api",
+     "bot",
+     "bot-api",
+     "hacktoberfest",
+     "whatsapp",
+     "whatsapp-api",
+     "whatsapp-bot",
+     "whatsapp-web",
+     "whatsapp-web-api"
+    ],
+    "license": "Apache-2.0",
+    "language": "JavaScript",
+    "pushed_at": "2026-11-08T12:03:05Z",
+    "archived": false,
+    "homepage": "https://wwebjs.dev"
+   }
+  }
+ ]
+}

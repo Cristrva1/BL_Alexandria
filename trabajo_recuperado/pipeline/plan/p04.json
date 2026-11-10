@@ -1,0 +1,2377 @@
+{
+ "package": "p04",
+ "out_dir": "/home/claude/work/out/p04",
+ "categories": [
+  {
+   "num": 3,
+   "emoji": "🕸️",
+   "title": "Frameworks & Orquestación de Agentes",
+   "desc": "Agentes de código, frameworks multiagente en Python y TypeScript, builders visuales, asistentes autónomos, research e infraestructura.",
+   "subs": [
+    {
+     "key": "coding",
+     "title": "Agentes de código (terminal e IDE)"
+    },
+    {
+     "key": "py",
+     "title": "Frameworks de agentes en Python"
+    },
+    {
+     "key": "ts",
+     "title": "Frameworks en TypeScript y multi-lenguaje"
+    },
+    {
+     "key": "visual",
+     "title": "Builders visuales y plataformas de agentes"
+    },
+    {
+     "key": "asistentes",
+     "title": "Asistentes autónomos y equipos de agentes"
+    },
+    {
+     "key": "research",
+     "title": "Agentes de research autónomo"
+    },
+    {
+     "key": "infra",
+     "title": "Infraestructura: sandboxes, herramientas y protocolos"
+    },
+    {
+     "key": "experimentos",
+     "title": "Simulación, evolución y debate entre modelos"
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "emoji": "🔌",
+   "title": "MCP & Conectividad",
+   "desc": "SDKs para crear servidores MCP, servidores destacados (navegador, GitHub, diseño, 3D), directorios y APIs públicas.",
+   "subs": [
+    {
+     "key": "sdk",
+     "title": "SDKs y frameworks para crear MCP"
+    },
+    {
+     "key": "servidores",
+     "title": "Servidores MCP destacados"
+    },
+    {
+     "key": "directorios",
+     "title": "Directorios, clientes y aprendizaje"
+    }
+   ]
+  }
+ ],
+ "repos": [
+  {
+   "id": "deeptutor",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "asistentes",
+   "gh": "HKUDS/DeepTutor",
+   "github": {
+    "full_name": "HKUDS/DeepTutor",
+    "stars": 57836,
+    "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+    "topics": [
+     "ai-agents",
+     "ai-tutor",
+     "clawbot",
+     "cli-tool",
+     "deepresearch",
+     "interactive-learning",
+     "learning",
+     "multi-agent-systems",
+     "rag"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-07T15:18:10Z",
+    "archived": false,
+    "homepage": "http://arxiv.org/abs/2604.26962"
+   },
+   "current": {
+    "name": "DeepTutor",
+    "role": "app",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "fastapi",
+     "javascript",
+     "langchain",
+     "postgres",
+     "python",
+     "react"
+    ],
+    "one": "Tutor personalizado de largo plazo: un agente que estudia contigo y recuerda el progreso.",
+    "alt": [],
+    "desc": "DeepTutor es un sistema de tutoría con agentes para aprendizaje continuo. Encaja como producto educativo, no como orquestador genérico.",
+    "stack": "python, typescript, javascript, react, docker, postgres, fastapi, langchain",
+    "choose_if": "quieres deeptutor: lifelong personalized tutoring",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "awesome-claude-code",
+     "agents-towards-production",
+     "ag2"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/HKUDS/DeepTutor.git"
+  },
+  {
+   "id": "hermes-agent",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "asistentes",
+   "gh": "NousResearch/hermes-agent",
+   "github": {
+    "full_name": "NousResearch/hermes-agent",
+    "stars": 262251,
+    "description": "The agent that grows with you",
+    "topics": [
+     "ai",
+     "ai-agent",
+     "ai-agents",
+     "anthropic",
+     "chatgpt",
+     "claude",
+     "claude-code",
+     "codex",
+     "hermes",
+     "hermes-agent",
+     "llm",
+     "nous-research",
+     "openai"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-11-10T12:29:24Z",
+    "archived": false,
+    "homepage": "https://hermes-agent.nousresearch.com"
+   },
+   "current": {
+    "name": "hermes-agent",
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "agents",
+     "docker",
+     "javascript",
+     "postgres",
+     "python",
+     "typescript"
+    ],
+    "one": "The self-improving AI agent built by Nous Research. It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own.",
+    "alt": [],
+    "desc": "The self-improving AI agent built by Nous Research. It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing w.",
+    "stack": "python, typescript, javascript, docker, postgres",
+    "choose_if": "quieres agentes locales con UI y memoria persistente",
+    "avoid_if": "prefieres orquestación en nube o no quieres compilar Tauri.",
+    "combines_with": [
+     "ecc",
+     "odysseus"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/NousResearch/hermes-agent.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol 🖥️ app/UI · Setup 🟡 medio",
+    "Qué es": "entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. Ofrece un panel de control de escritorio para delegar tareas a agentes que corren en una sandbox local.",
+    "Por qué destaca": "aprovecha el razonamiento estructurado de los modelos Hermes y prioriza la ejecución local frente a depender de la nube. Su rasgo distintivo es un learning loop: el agente crea skills desde la experiencia y persiste conocimiento entre sesiones.",
+    "Cómo funciona": "una app de escritorio (Tauri) coordina agentes con backend Python que invocan modelos Hermes locales o APIs comerciales como fallback, guardando memoria y skills autoaprendidas.",
+    "Instalación": "`git clone` y build con Tauri/Cargo (más dependencias Python). Para modo local puro necesitas pesos de Hermes y una GPU razonable; sin GPU puede usar APIs comerciales.",
+    "Casos": "delegar tareas en sandbox local · panel de control de escritorio (Tauri) · agente que acumula skills con el uso.",
+    "Stack": "Rust (Tauri), TypeScript, Python — **Modelo/API:** Hermes-3-Llama-3 local + APIs comerciales (OpenAI, Anthropic) como fallback.",
+    "Elige si": "quieres agentes locales con UI y memoria persistente — **Evita si:** prefieres orquestación en nube o no quieres compilar Tauri.",
+    "Limitaciones": "el build de Tauri y los pesos locales elevan la barrera de entrada frente a una solución hosted.",
+    "Combina con": "[ECC](#-ecc) · [odysseus](#-odysseus)",
+    "Repo": "[GitHub](https://github.com/NousResearch/hermes-agent)"
+   }
+  },
+  {
+   "id": "mercury-agent",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "asistentes",
+   "gh": "cosmicstack-labs/mercury-agent",
+   "github": {
+    "full_name": "cosmicstack-labs/mercury-agent",
+    "stars": 3891,
+    "description": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI, Telegram or More.",
+    "topics": [
+     "ai-agent",
+     "ai-assistant",
+     "llm"
+    ],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T10:30:55Z",
+    "archived": false,
+    "homepage": "https://mercuryagent.sh/"
+   },
+   "current": {
+    "name": "mercury-agent",
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "react",
+     "typescript"
+    ],
+    "one": "Remembers what matters. Asks before it acts. Runs 24/7 from CLI, Telegram, or Web. 31 built-in tools, Kanban boards, extensible skills, SQLite-backed Second Brain memory.",
+    "alt": [],
+    "desc": "Remembers what matters. Asks before it acts. Runs 24/7 from CLI, Telegram, or Web. 31 built-in tools, Kanban boards, extensible skills, SQLite-backed Second Brain memory.",
+    "stack": "javascript/typescript, typescript, javascript, react, postgres",
+    "choose_if": "quieres soul-driven ai agent with permission-hardened tools, token budgets, and multi-channel acce",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "awesome-claude-code",
+     "agents-towards-production",
+     "ag2"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/cosmicstack-labs/mercury-agent.git"
+  },
+  {
+   "id": "multica",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "asistentes",
+   "gh": "multica-ai/multica",
+   "github": {
+    "full_name": "multica-ai/multica",
+    "stars": 55520,
+    "description": "Make humans and AI agents work as one team — open-source and self-hostable.",
+    "topics": [],
+    "license": "NOASSERTION",
+    "language": "Go",
+    "pushed_at": "2026-11-10T12:30:29Z",
+    "archived": false,
+    "homepage": "https://multica.ai"
+   },
+   "current": {
+    "name": "multica",
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "react",
+     "typescript"
+    ],
+    "one": "The open-source managed agents platform.",
+    "alt": [],
+    "desc": "The open-source managed agents platform.",
+    "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
+    "choose_if": "mezclas trabajo humano y agentes en un mismo flujo",
+    "avoid_if": "quieres automatización 100% headless o un producto maduro.",
+    "combines_with": [
+     "ruflo",
+     "chatwoot"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/multica-ai/multica.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio",
+    "Qué es": "plataforma para que humanos y agentes trabajen lado a lado (\"tus próximas 10 contrataciones no serán humanas\"). Integra colaboradores humanos y agentes en un mismo espacio de trabajo. Proyecto de nicho.",
+    "Por qué destaca": "propone equipos mixtos humano+agente en un flujo común, en lugar de automatización totalmente headless. El ángulo es operativo: agentes como \"compañeros de equipo\" con contexto compartido.",
+    "Cómo funciona": "según lo descrito, ofrece un entorno web donde humanos y agentes comparten tareas y contexto; pila web/TypeScript con backend persistente.",
+    "Instalación": "consulta el README del repo (`git clone` / instalación web). Requiere claves de proveedor de LLM para los agentes.",
+    "Casos": "equipos mixtos humano+agente · operación con agentes como colaboradores · delegar tareas repetitivas a agentes dentro de un flujo humano.",
+    "Stack": "web/TS, Docker, PostgreSQL — **Modelo/API:** múltiples; agnóstico vía variables de entorno.",
+    "Elige si": "mezclas trabajo humano y agentes en un mismo flujo — **Evita si:** quieres automatización 100% headless o un producto maduro.",
+    "Limitaciones": "proyecto de nicho y madurez limitada; conviene validar estado antes de apostar por él.",
+    "Combina con": "[ruflo](#-ruflo) · [chatwoot](#-chatwoot)",
+    "Repo": "[GitHub](https://github.com/multica-ai/multica)"
+   }
+  },
+  {
+   "id": "openclaw",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "asistentes",
+   "gh": "openclaw/openclaw",
+   "github": {
+    "full_name": "openclaw/openclaw",
+    "stars": 394283,
+    "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
+    "topics": [
+     "ai",
+     "assistant",
+     "crustacean",
+     "molty",
+     "openclaw",
+     "own-your-data",
+     "personal"
+    ],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T12:31:02Z",
+    "archived": false,
+    "homepage": "https://openclaw.ai"
+   },
+   "current": {
+    "name": "openclaw",
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "typescript"
+    ],
+    "one": "OpenClaw is a personal AI assistant that runs on your devices and meets you in the channels you already use.",
+    "alt": [],
+    "desc": "OpenClaw is a personal AI assistant that runs on your devices and meets you in the channels you already use. It is designed for a single operator and connects models, tools, messaging channels, and optional companion apps through one Gateway.",
+    "stack": "javascript/typescript, typescript, javascript, docker, postgres",
+    "choose_if": "quieres openclaw 🦞 — your assistant, on your devices, in your chats",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "awesome-claude-code",
+     "agents-towards-production",
+     "ag2"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/openclaw/openclaw.git"
+  },
+  {
+   "id": "ruflo",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "asistentes",
+   "gh": "ruvnet/ruflo",
+   "github": {
+    "full_name": "ruvnet/ruflo",
+    "stars": 81398,
+    "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+    "topics": [
+     "agent-memory",
+     "agent-orchestration",
+     "agentic-ai",
+     "agentic-workflow",
+     "ai-agents",
+     "autonomous-agents",
+     "claude",
+     "claude-code",
+     "codex",
+     "hnsw",
+     "mcp",
+     "mcp-server",
+     "multi-agent",
+     "multi-agent-systems",
+     "plugins",
+     "rvf",
+     "swarm",
+     "swarm-intelligence",
+     "typescript",
+     "vector-search"
+    ],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T06:27:57Z",
+    "archived": false,
+    "homepage": "https://cognitum.one"
+   },
+   "current": {
+    "name": "ruflo",
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "react",
+     "typescript"
+    ],
+    "one": "> Agent = Model + Harness. The model writes; the harness gives it tools, memory, loops, sandboxes, and controls so it can actually work.",
+    "alt": [],
+    "desc": "An agent meta-harness for Claude Code and Codex..",
+    "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
+    "choose_if": "orquestas muchos agentes a escala y quieres rendimiento",
+    "avoid_if": "solo necesitas 1-2 agentes o no usas Claude Code/Codex.",
+    "combines_with": [
+     "mem0",
+     "ecc"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/ruvnet/ruflo.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🔴 pesado",
+    "Qué es": "harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). Orquesta swarms de agentes especializados a escala.",
+    "Por qué destaca": "motor en Rust con embeddings, memoria persistente y plugins, orientado a coordinación masiva de agentes con seguridad de nivel enterprise. Es de nicho pero ambicioso y aprovecha el rendimiento de Rust para la orquestación.",
+    "Cómo funciona": "un coordinador en Rust reparte trabajo entre agentes, comparte memoria federada (embeddings) y comunica equipos; se apoya en los CLIs de Claude Code y Codex como ejecutores.",
+    "Instalación": "`cargo install` o build desde fuente con `git clone` (consulta el README). Requiere tener instalados los CLIs de agentes (Claude Code/Codex) y sus claves.",
+    "Casos": "swarms de agentes especializados · memoria autoaprendida y comms entre equipos · paralelizar tareas de codificación a escala.",
+    "Stack": "Rust — **Modelo/API:** Claude Code, Codex (vía sus CLIs).",
+    "Elige si": "orquestas muchos agentes a escala y quieres rendimiento — **Evita si:** solo necesitas 1-2 agentes o no usas Claude Code/Codex.",
+    "Limitaciones": "setup pesado (Rust + CLIs de agentes) y caso de uso estrecho; no es una librería de uso general.",
+    "Combina con": "[mem0](#-mem0) · [ECC](#-ecc)",
+    "Repo": "[GitHub](https://github.com/ruvnet/ruflo)"
+   }
+  },
+  {
+   "id": "llm-council",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "experimentos",
+   "gh": "karpathy/llm-council",
+   "github": {
+    "full_name": "karpathy/llm-council",
+    "stars": 26374,
+    "description": "LLM Council works together to answer your hardest questions",
+    "topics": [],
+    "license": null,
+    "language": "Python",
+    "pushed_at": "2025-11-22T23:35:21Z",
+    "archived": false,
+    "homepage": ""
+   },
+   "current": {
+    "name": "llm-council",
+    "role": "platform",
+    "exec": "cloud",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "fastapi",
+     "javascript",
+     "postgres",
+     "python",
+     "react",
+     "typescript"
+    ],
+    "one": "The idea of this repo is that instead of asking a question to your favorite LLM provider (e.g. OpenAI GPT 5.1, Google Gemini 3.0 Pro, Anthropic Claude Sonnet 4.5, xAI Grok 4, eg.",
+    "alt": [],
+    "desc": "The idea of this repo is that instead of asking a question to your favorite LLM provider (e.g. OpenAI GPT 5.1, Google Gemini 3.0 Pro, Anthropic Claude Sonnet 4.5, xAI Grok 4, eg.c), you can group them into your \"LLM Council\".",
+    "stack": "python, typescript, javascript, react, postgres, fastapi",
+    "choose_if": "quieres consenso entre modelos o comparar proveedores",
+    "avoid_if": "te basta un único LLM o el coste multi-modelo no es asumible.",
+    "combines_with": [
+     "litellm"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/karpathy/llm-council.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio",
+    "Qué es": "\"consejo\" donde varios LLMs deliberan y se evalúan entre sí para responder. Cada modelo aporta una respuesta y luego se contrastan para llegar a un consenso.",
+    "Por qué destaca": "combina perspectivas de varios modelos para reducir el sesgo de uno solo; propuesta sencilla y didáctica popularizada por Karpathy. Sirve tanto para obtener mejores respuestas como para comparar modelos.",
+    "Cómo funciona": "envía la consulta a varios LLMs, los hace revisar las respuestas de los demás y agrega un resultado de consenso; app ligera en Python/web con backend FastAPI.",
+    "Instalación": "`git clone` del repo y ejecución según su README. Requiere claves de varios proveedores de LLM (OpenAI, Anthropic, Google, xAI) para que el consejo tenga variedad.",
+    "Casos": "respuestas por consenso multi-modelo · reducir sesgo de un solo modelo · comparar modelos en preguntas reales.",
+    "Stack": "Python, React, FastAPI, PostgreSQL — **Modelo/API:** múltiples LLMs (OpenAI, Anthropic, Google, xAI Grok).",
+    "Elige si": "quieres consenso entre modelos o comparar proveedores — **Evita si:** te basta un único LLM o el coste multi-modelo no es asumible.",
+    "Limitaciones": "cada consulta se multiplica por el nº de modelos del consejo, elevando coste y latencia.",
+    "Combina con": "[litellm](#-litellm)",
+    "Repo": "[GitHub](https://github.com/karpathy/llm-council)"
+   }
+  },
+  {
+   "id": "mirofish",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "experimentos",
+   "gh": "666ghj/MiroFish",
+   "github": {
+    "full_name": "666ghj/MiroFish",
+    "stars": 85143,
+    "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+    "topics": [
+     "agent-memory",
+     "financial-forecasting",
+     "future-prediction",
+     "knowledge-graph",
+     "llms",
+     "multi-agent-simulation",
+     "public-opinion-analysis",
+     "python3",
+     "social-prediction",
+     "swarm-intelligence"
+    ],
+    "license": "AGPL-3.0",
+    "language": "Python",
+    "pushed_at": "2026-10-16T03:32:19Z",
+    "archived": false,
+    "homepage": "https://mirofish.ai"
+   },
+   "current": {
+    "name": "MiroFish",
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "python",
+     "typescript"
+    ],
+    "one": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything.",
+    "alt": [],
+    "desc": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything.",
+    "stack": "javascript/typescript, python, typescript, javascript, docker, postgres",
+    "choose_if": "simulas futuros/escenarios con muchos actores",
+    "avoid_if": "necesitas tareas deterministas o resultados reproducibles.",
+    "combines_with": [
+     "openevolve"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/666ghj/MiroFish.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🔴 pesado",
+    "Qué es": "motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios. Permite simular dinámicas sociales en un \"sandbox\". Proyecto de nicho.",
+    "Por qué destaca": "simula futuros con agentes que tienen personalidad, memoria y lógica que evolucionan, ofreciendo una \"vista de dios\" del escenario. El enfoque de simulación multiagente lo distingue de los frameworks orientados a tareas.",
+    "Cómo funciona": "según lo descrito, instancia muchos agentes con perfiles y memoria que interactúan en un mundo simulado para estimar resultados; pila Python/web con persistencia.",
+    "Instalación": "consulta el README del repo (`git clone` y ejecución en Python). Requiere claves de LLM para los agentes y cómputo no trivial para simulaciones grandes (de ahí el setup 🔴).",
+    "Casos": "simular impacto de una noticia/política · predecir tendencias en un \"sandbox\" social · what-if sobre escenarios con muchos actores.",
+    "Stack": "Python/web, Docker, PostgreSQL — **Modelo/API:** múltiples; agnóstico vía variables de entorno.",
+    "Elige si": "simulas futuros/escenarios con muchos actores — **Evita si:** necesitas tareas deterministas o resultados reproducibles.",
+    "Limitaciones": "proyecto de nicho, coste de LLM alto por la cantidad de agentes y resultados no deterministas.",
+    "Combina con": "[openevolve](#-openevolve)",
+    "Repo": "[GitHub](https://github.com/666ghj/MiroFish)"
+   }
+  },
+  {
+   "id": "openevolve",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "experimentos",
+   "gh": "algorithmicsuperintelligence/openevolve",
+   "github": {
+    "full_name": "algorithmicsuperintelligence/openevolve",
+    "stars": 7752,
+    "description": "Open-source implementation of AlphaEvolve",
+    "topics": [
+     "alpha-evolve",
+     "alphacode",
+     "alphaevolve",
+     "coding-agent",
+     "deepmind",
+     "deepmind-lab",
+     "discovery",
+     "distributed-evolutionary-algorithms",
+     "evolutionary-algorithms",
+     "evolutionary-computation",
+     "genetic-algorithm",
+     "genetic-algorithms",
+     "iterative-methods",
+     "iterative-refinement",
+     "llm-engineering",
+     "llm-ensemble",
+     "llm-inference",
+     "openevolve",
+     "optimize"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-08T22:50:07Z",
+    "archived": false,
+    "homepage": ""
+   },
+   "current": {
+    "name": "openevolve",
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "python",
+     "typescript"
+    ],
+    "one": "Turn your LLMs into autonomous code optimizers that discover breakthrough algorithms.",
+    "alt": [],
+    "desc": "🧬 The most advanced open-source evolutionary coding agent.",
+    "stack": "python, typescript, docker",
+    "choose_if": "optimizas problemas algorítmicos donde cabe explorar muchas variantes",
+    "avoid_if": "haces tareas de texto comunes o buscas respuesta inmediata.",
+    "combines_with": [
+     "llm-council"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/algorithmicsuperintelligence/openevolve.git",
+   "editorial": {
+    "Etiquetas": "Ejecución ☁️ API/cloud · Rol 🧩 motor/runtime · Setup 🔴 pesado",
+    "Qué es": "agente de codificación evolutivo que optimiza algoritmos por simulación genética. Genera, evalúa y muta candidatos de código a lo largo de múltiples generaciones.",
+    "Por qué destaca": "supera la generación en un solo paso al explorar el espacio de soluciones, encontrando algoritmos inéditos (inspirado en AlphaEvolve de Google). Es el proyecto open-source que más cerca está de replicar ese enfoque.",
+    "Cómo funciona": "un bucle evolutivo usa el LLM como operador de mutación y una función de evaluación como fitness; implementado en Python con numpy/PyTorch y componentes en Rust para velocidad.",
+    "Instalación": "`pip install openevolve` (o `git clone` del repo). Requiere un proveedor de LLM de frontera (Claude/GPT-4o) y, según el problema, cómputo no trivial para evaluar muchas generaciones.",
+    "Casos": "empaquetado geométrico · optimización de carteras · mejorar scripts en tiempo real · descubrir heurísticas nuevas.",
+    "Stack": "Python, PyTorch/numpy, Rust — **Modelo/API:** modelos de frontera creativos (Claude, GPT-4o); agnóstico vía variables de entorno.",
+    "Elige si": "optimizas problemas algorítmicos donde cabe explorar muchas variantes — **Evita si:** haces tareas de texto comunes o buscas respuesta inmediata.",
+    "Limitaciones": "consume muchos tokens de LLM y cómputo por generación; no es práctico para tareas triviales.",
+    "Combina con": "[llm-council](#-llm-council)",
+    "Repo": "[GitHub](https://github.com/algorithmicsuperintelligence/openevolve)"
+   }
+  },
+  {
+   "id": "agent-protocol",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "infra",
+   "gh": "langchain-ai/agent-protocol",
+   "github": {
+    "full_name": "langchain-ai/agent-protocol",
+    "stars": 697,
+    "description": null,
+    "topics": [],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-11-05T16:16:56Z",
+    "archived": false,
+    "homepage": "https://langchain-ai.github.io/agent-protocol/api.html"
+   },
+   "current": {
+    "name": "agent-protocol",
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "agents",
+     "automation",
+     "fastapi",
+     "langchain",
+     "postgres",
+     "python",
+     "typescript"
+    ],
+    "one": "Especificación de APIs agnósticas a framework para servir agentes LLM en producción.",
+    "alt": [],
+    "desc": "Agent Protocol intenta estandarizar cómo se expone un agente (run, I/O, estado) sin atarse a un framework. Es un spec/directorio, no un runtime completo.",
+    "stack": "python, typescript, postgres, fastapi, langchain",
+    "choose_if": "quieres agent protocol",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "awesome-claude-code",
+     "agents-towards-production",
+     "ag2"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/langchain-ai/agent-protocol.git"
+  },
+  {
+   "id": "composio",
+   "is_new": true,
+   "target_cat": 3,
+   "target_sub": "infra",
+   "gh": "ComposioHQ/composio",
+   "github": {
+    "full_name": "ComposioHQ/composio",
+    "stars": 31010,
+    "description": "Composio powers 1000+ toolkits, tool search, context management, authentication, and a sandboxed workbench to help you build AI agents that turn intent into action.",
+    "topics": [
+     "agentic-ai",
+     "agents",
+     "ai",
+     "ai-agents",
+     "aiagents",
+     "developer-tools",
+     "function-calling",
+     "gpt-4",
+     "javascript",
+     "js",
+     "llm",
+     "llmops",
+     "mcp",
+     "python",
+     "remote-mcp-server",
+     "sse",
+     "typescript"
+    ],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T12:13:47Z",
+    "archived": false,
+    "homepage": "https://docs.composio.dev"
+   }
+  },
+  {
+   "id": "computer-use-preview",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "infra",
+   "gh": "google-gemini/computer-use-preview",
+   "github": {
+    "full_name": "google-gemini/computer-use-preview",
+    "stars": 3276,
+    "description": null,
+    "topics": [],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-07-28T14:08:36Z",
+    "archived": false,
+    "homepage": null
+   },
+   "current": {
+    "name": "computer-use-preview",
+    "role": "library",
+    "exec": "cloud",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [
+     "google"
+    ],
+    "tags": [
+     "automation",
+     "python",
+     "react",
+     "typescript"
+    ],
+    "one": "Código y guía de Gemini Computer Use para que un modelo controle el escritorio.",
+    "alt": [],
+    "desc": "Preview de Gemini Computer Use: el modelo ve la pantalla y opera UI. Requiere API de Google y no es un agente genérico de código.",
+    "stack": "python, typescript, react",
+    "choose_if": "quieres computer use preview",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "awesome-claude-code",
+     "agents-towards-production",
+     "ag2"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/google-gemini/computer-use-preview.git"
+  },
+  {
+   "id": "e2b",
+   "is_new": true,
+   "target_cat": 3,
+   "target_sub": "infra",
+   "gh": "e2b-dev/E2B",
+   "github": {
+    "full_name": "e2b-dev/E2B",
+    "stars": 14795,
+    "description": "Open-source, secure environment with real-world tools for enterprise-grade agents.",
+    "topics": [
+     "agent",
+     "ai",
+     "ai-agent",
+     "ai-agents",
+     "code-interpreter",
+     "copilot",
+     "development",
+     "devtools",
+     "gpt",
+     "gpt-4",
+     "javascript",
+     "llm",
+     "nextjs",
+     "openai",
+     "python",
+     "react",
+     "software",
+     "typescript"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-09T17:48:57Z",
+    "archived": false,
+    "homepage": "https://docs.e2b.dev/?utm_source=github&utm_medium=referral&utm_campaign=repo_website&utm_content=e2b"
+   }
+  },
+  {
+   "id": "nemo-agent-toolkit",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "infra",
+   "gh": "NVIDIA/NeMo-Agent-Toolkit",
+   "github": {
+    "full_name": "NVIDIA/NeMo-Agent-Toolkit",
+    "stars": 2698,
+    "description": "The NVIDIA NeMo Agent toolkit is an open-source library for efficiently connecting and optimizing teams of AI agents.",
+    "topics": [],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-09T15:41:54Z",
+    "archived": false,
+    "homepage": "https://docs.nvidia.com/nemo/agent-toolkit/latest/"
+   },
+   "current": {
+    "name": "NeMo-Agent-Toolkit",
+    "role": "directory",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "fastapi",
+     "javascript",
+     "langchain",
+     "python",
+     "react",
+     "typescript"
+    ],
+    "one": "NVIDIA NeMo Agent Toolkit adds intelligence to AI agents across any framework—enhancing speed, accuracy, and decision-making through enterprise-grade instrumentation, observability, and continuous learning.",
+    "alt": [],
+    "desc": "NVIDIA NeMo Agent Toolkit adds intelligence to AI agents across any framework—enhancing speed, accuracy, and decision-making through enterprise-grade instrumentation, observability, and continuous learning.",
+    "stack": "python, typescript, javascript, react, fastapi, langchain",
+    "choose_if": "trabajas con infra NVIDIA o necesitas guardrails/eval empresarial",
+    "avoid_if": "quieres algo ligero y agnóstico.",
+    "combines_with": [
+     "langchain"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/NVIDIA/NeMo-Agent-Toolkit.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🔴 pesado",
+    "Qué es": "toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo). Aporta componentes para conectar, evaluar y desplegar agentes en infraestructura empresarial.",
+    "Por qué destaca": "respaldo y rendimiento de NVIDIA, orientado a despliegues empresariales sobre su stack de modelos NIM e infra GPU. Incluye evaluación y guardrails, no solo orquestación.",
+    "Cómo funciona": "compone agentes y herramientas mediante perfiles configurables y los conecta a modelos NVIDIA NIM u otros compatibles (OpenAI-style); librería Python (Apache-2.0) con servidor FastAPI.",
+    "Instalación": "`pip install nvidia-nat` (o `git clone` del repo). Para sacar provecho real necesitas acceso a NIM/NGC o GPUs NVIDIA; de ahí el setup 🔴.",
+    "Casos": "agentes empresariales en stack NVIDIA · pipelines con modelos propios tras un firewall · RAG con guardrails y evaluación.",
+    "Stack": "Python, FastAPI (Apache-2.0) — **Modelo/API:** NVIDIA NIM y compatibles OpenAI.",
+    "Elige si": "trabajas con infra NVIDIA o necesitas guardrails/eval empresarial — **Evita si:** quieres algo ligero y agnóstico.",
+    "Combina con": "[langchain](#-langchain)",
+    "Repo": "[GitHub](https://github.com/NVIDIA/NeMo-Agent-Toolkit)"
+   }
+  },
+  {
+   "id": "nemoclaw",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "infra",
+   "gh": "NVIDIA/NemoClaw",
+   "github": {
+    "full_name": "NVIDIA/NemoClaw",
+    "stars": 23000,
+    "description": "Run agents like Hermes, LangChain Deep Agents, and OpenClaw more securely inside NVIDIA OpenShell with managed inference",
+    "topics": [
+     "ai-agents",
+     "deep-agents",
+     "hermes",
+     "nvidia",
+     "openclaw",
+     "openshell",
+     "sandboxing",
+     "typescript"
+    ],
+    "license": "Apache-2.0",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T12:27:11Z",
+    "archived": false,
+    "homepage": "https://docs.nvidia.com/nemoclaw/latest/"
+   },
+   "current": {
+    "name": "NemoClaw",
+    "role": "skill",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "agents",
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "langchain",
+     "postgres",
+     "python"
+    ],
+    "one": "NVIDIA NemoClaw is an open source reference stack for running supported AI agents more safely inside NVIDIA OpenShell sandboxes.",
+    "alt": [],
+    "desc": "NVIDIA NemoClaw is an open source reference stack for running supported AI agents more safely inside NVIDIA OpenShell sandboxes. It provides guided onboarding, managed inference, network policy, managed integrations, snapshots, and lifecycle operations through the NemoClaw CLI and its agent-specific aliases.",
+    "stack": "javascript/typescript, python, typescript, javascript, docker, postgres, langchain",
+    "choose_if": "quieres nvidia nemoclaw: reference stack for sandboxed ai agents in openshell",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "awesome-claude-code",
+     "agents-towards-production",
+     "ag2"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/NVIDIA/NemoClaw.git"
+  },
+  {
+   "id": "sandbox",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "infra",
+   "gh": "agent-infra/sandbox",
+   "github": {
+    "full_name": "agent-infra/sandbox",
+    "stars": 6317,
+    "description": "All-in-One Sandbox for AI Agents that combines Browser, Shell, File, MCP and VSCode Server in a single Docker container.",
+    "topics": [
+     "agent",
+     "all-in-one",
+     "browser",
+     "filesystem",
+     "mcp",
+     "sandbox",
+     "shell"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-09-14T08:47:20Z",
+    "archived": false,
+    "homepage": "https://sandbox.agent-infra.com"
+   },
+   "current": {
+    "name": "sandbox",
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "agents",
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "langchain",
+     "python",
+     "react"
+    ],
+    "one": "Sandbox all-in-one para ejecutar agentes con aislamiento de sistema y red.",
+    "alt": [],
+    "desc": "AIO Sandbox concentra herramientas de ejecución aislada para agentes: filesystem, red y procesos sin dejarlos sueltos en el host.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, docker, langchain",
+    "choose_if": "quieres aislar la ejecución de agentes y reproducibilidad",
+    "avoid_if": "te basta correr local sin sandbox o no puedes asumir el overhead de Docker.",
+    "combines_with": [
+     "openhands",
+     "ecc"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/agent-infra/sandbox.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟡 medio",
+    "Qué es": "entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. Resuelve el riesgo de dejar que un agente toque tu host: todo corre contenido en un contenedor reproducible.",
+    "Por qué destaca": "concentra en un solo contenedor todas las herramientas que un agente necesita, ofreciendo un entorno reproducible y aislado poco común. Su exposición vía web y MCP lo hace accesible desde cualquier cliente compatible sin configurar cada pieza por separado.",
+    "Cómo funciona": "levanta un contenedor con los servicios (browser, shell, editor, notebooks) expuestos vía web y conectables por clientes MCP, aislando la ejecución del host y limitando el alcance de las acciones del agente.",
+    "Instalación": "`docker run` de la imagen del proyecto; requiere Docker y recursos suficientes para correr navegador + servicios en paralelo.",
+    "Casos": "ejecutar agentes de forma aislada · entorno reproducible para tareas dev · probar agentes que manipulan archivos/terminal sin riesgo al host.",
+    "Stack": "Docker, web, MCP — **Modelo/API:** clientes MCP; sin LLM propio.",
+    "Elige si": "quieres aislar la ejecución de agentes y reproducibilidad — **Evita si:** te basta correr local sin sandbox o no puedes asumir el overhead de Docker.",
+    "Combina con": "[OpenHands](#-openhands) · [ECC](#-ecc)",
+    "Repo": "[GitHub](https://github.com/agent-infra/sandbox)"
+   }
+  },
+  {
+   "id": "autoresearch",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "research",
+   "gh": "karpathy/autoresearch",
+   "github": {
+    "full_name": "karpathy/autoresearch",
+    "stars": 99731,
+    "description": "AI agents running research on single-GPU nanochat training automatically",
+    "topics": [],
+    "license": null,
+    "language": "Python",
+    "pushed_at": "2026-03-26T00:07:37Z",
+    "archived": false,
+    "homepage": null
+   },
+   "current": {
+    "name": "autoresearch",
+    "role": "platform",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "python",
+     "typescript"
+    ],
+    "one": "One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synchronizing once in a while using sound wave interconnect in the ritual of \"group meeting\".",
+    "alt": [],
+    "desc": "One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synchronizing once in a while using sound wave interconnect in the ritual of \"group meeting\". That era is long gone. Research is now entirely the domain of autonomous swarms of AI agents running across compute cluster megastructures in the skies.",
+    "stack": "python, typescript",
+    "choose_if": "experimentas con research iterativo o quieres un punto de partida",
+    "avoid_if": "quieres salida pulida y lista ([gpt-researcher](#-gpt-researcher)).",
+    "combines_with": [
+     "gpt-researcher",
+     "crawl4ai"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/karpathy/autoresearch.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio",
+    "Qué es": "enfoque experimental para automatizar investigación iterativa mediante bucles de búsqueda y refinamiento. Proyecto pequeño y exploratorio de Karpathy, más que una herramienta pulida.",
+    "Por qué destaca": "propuesta sencilla para experimentar con investigación autónoma en varias pasadas; valioso como punto de partida y referencia didáctica más que como producto cerrado.",
+    "Cómo funciona": "repite ciclos de búsqueda y refinamiento sobre un tema, refinando consultas con cada iteración; implementado en Python con llamadas a LLM y búsqueda web.",
+    "Instalación": "`git clone` del repo y ejecución de sus scripts en Python (consulta el README). Requiere una clave de LLM y acceso a búsqueda web.",
+    "Casos": "loops de búsqueda y refinamiento · exploración de un tema en varias pasadas · base para montar tu propio agente de research.",
+    "Stack": "Python — **Modelo/API:** múltiples; agnóstico vía variables de entorno.",
+    "Elige si": "experimentas con research iterativo o quieres un punto de partida — **Evita si:** quieres salida pulida y lista ([gpt-researcher](#-gpt-researcher)).",
+    "Combina con": "[gpt-researcher](#-gpt-researcher) · [crawl4ai](#-crawl4ai)",
+    "Repo": "[GitHub](https://github.com/karpathy/autoresearch)"
+   }
+  },
+  {
+   "id": "deer-flow",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "research",
+   "gh": "bytedance/deer-flow",
+   "github": {
+    "full_name": "bytedance/deer-flow",
+    "stars": 85211,
+    "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+    "topics": [
+     "agent",
+     "agentic",
+     "agentic-framework",
+     "agentic-workflow",
+     "ai",
+     "ai-agents",
+     "deep-research",
+     "harness",
+     "langchain",
+     "langgraph",
+     "langmanus",
+     "llm",
+     "multi-agent",
+     "nodejs",
+     "podcast",
+     "python",
+     "superagent",
+     "typescript"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-11-10T10:41:27Z",
+    "archived": false,
+    "homepage": "https://deerflow.tech"
+   },
+   "current": {
+    "name": "deer-flow",
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "langchain",
+     "python",
+     "typescript"
+    ],
+    "one": "> On February 28th, 2026, DeerFlow claimed the 🏆 #1 spot on GitHub Trending following the launch of version 2. Thanks a million to our incredible community — you made this happen! 💪🔥.",
+    "alt": [],
+    "desc": "> On February 28th, 2026, DeerFlow claimed the 🏆 #1 spot on GitHub Trending following the launch of version 2. Thanks a million to our incredible community — you made this happen! 💪🔥.",
+    "stack": "python, typescript, javascript, docker, langchain",
+    "choose_if": "quieres un orquestador completo y extensible",
+    "avoid_if": "buscas algo minimalista o sin Docker.",
+    "combines_with": [
+     "gpt-researcher",
+     "firecrawl"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/bytedance/deer-flow.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio",
+    "Qué es": "super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles. Coordina tareas complejas delegando en agentes especializados.",
+    "Por qué destaca": "orquestación potente y extensible; alcanzó gran visibilidad (#1 en GitHub Trending en su lanzamiento v2) y cuenta con el respaldo de ByteDance. Su diseño por skills lo hace ampliable sin tocar el núcleo.",
+    "Cómo funciona": "un orquestador reparte sub-tareas a agentes con herramientas y sandbox, integrando memoria entre pasos; implementado en Python/TS sobre LangChain.",
+    "Instalación": "`git clone` del repo y arranque con sus scripts (o Docker). Requiere claves de proveedor de LLM y, para el sandbox, Docker.",
+    "Casos": "research profundo · tareas complejas multi-paso con herramientas · flujos extensibles vía skills propias.",
+    "Stack": "Python/TS, LangChain, Docker — **Modelo/API:** múltiples; agnóstico vía variables de entorno.",
+    "Elige si": "quieres un orquestador completo y extensible — **Evita si:** buscas algo minimalista o sin Docker.",
+    "Combina con": "[gpt-researcher](#-gpt-researcher) · [firecrawl](#-firecrawl)",
+    "Repo": "[GitHub](https://github.com/bytedance/deer-flow)"
+   }
+  },
+  {
+   "id": "gpt-researcher",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "research",
+   "gh": "assafelovic/gpt-researcher",
+   "github": {
+    "full_name": "assafelovic/gpt-researcher",
+    "stars": 30616,
+    "description": "An autonomous agent that conducts deep research on any data using any LLM providers",
+    "topics": [
+     "agent",
+     "ai",
+     "automation",
+     "deepresearch",
+     "llms",
+     "mcp",
+     "mcp-server",
+     "python",
+     "research",
+     "search",
+     "webscraping"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-09T15:17:21Z",
+    "archived": false,
+    "homepage": "https://gptr.dev"
+   },
+   "current": {
+    "name": "gpt-researcher",
+    "role": "skill",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "fastapi",
+     "javascript",
+     "langchain",
+     "python",
+     "react",
+     "typescript"
+    ],
+    "one": "GPT Researcher the first open deep research agent designed for both web and local research on any given task.",
+    "alt": [],
+    "desc": "GPT Researcher the first open deep research agent designed for both web and local research on any given task.",
+    "stack": "python, typescript, javascript, react, docker, fastapi, langchain",
+    "choose_if": "necesitas research profundo citado",
+    "avoid_if": "solo quieres una respuesta corta o un chat simple.",
+    "combines_with": [
+     "firecrawl",
+     "browser-use",
+     "research profundo"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/assafelovic/gpt-researcher.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio",
+    "Qué es": "agente autónomo que investiga en línea y consolida reportes citados y estructurados. Planifica sub-preguntas, busca fuentes y redacta un informe con referencias.",
+    "Por qué destaca": "muy popular para research profundo; automatiza horas de búsqueda recopilando y citando lo más relevante. Su arquitectura planificador-buscador-redactor es un patrón de referencia para research con agentes.",
+    "Cómo funciona": "un agente planificador genera consultas, agentes de búsqueda recopilan fuentes web (vía Tavily y otros) y un redactor sintetiza el reporte; backend Python (FastAPI) con frontend Next.js.",
+    "Instalación": "`pip install gpt-researcher` o vía Docker. Requiere una clave de LLM y, según configuración, una clave de búsqueda web (Tavily).",
+    "Casos": "análisis de un tema con fuentes · reportes en PDF/Markdown · briefing automático antes de una decisión.",
+    "Stack": "Python, Next.js, FastAPI — **Modelo/API:** GPT-4o, Claude, Gemini + locales; agnóstico vía variables de entorno.",
+    "Elige si": "necesitas research profundo citado — **Evita si:** solo quieres una respuesta corta o un chat simple.",
+    "Combina con": "[firecrawl](#-firecrawl) · [browser-use](#-browser-use) · receta [Research profundo](#-3-agente-de-research-profundo)",
+    "Repo": "[GitHub](https://github.com/assafelovic/gpt-researcher)"
+   }
+  },
+  {
+   "id": "storm",
+   "is_new": true,
+   "target_cat": 3,
+   "target_sub": "research",
+   "gh": "stanford-oval/storm",
+   "github": {
+    "full_name": "stanford-oval/storm",
+    "stars": 31848,
+    "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations.",
+    "topics": [
+     "agentic-rag",
+     "deep-research",
+     "emnlp2024",
+     "knowledge-curation",
+     "large-language-models",
+     "naacl",
+     "nlp",
+     "report-generation",
+     "retrieval-augmented-generation"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2025-09-30T18:07:21Z",
+    "archived": false,
+    "homepage": "http://storm.genie.stanford.edu"
+   }
+  },
+  {
+   "id": "autogpt",
+   "is_new": true,
+   "target_cat": 3,
+   "target_sub": "visual",
+   "gh": "Significant-Gravitas/AutoGPT",
+   "github": {
+    "full_name": "Significant-Gravitas/AutoGPT",
+    "stars": 187977,
+    "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+    "topics": [
+     "agentic-ai",
+     "agents",
+     "ai",
+     "artificial-intelligence",
+     "autonomous-agents",
+     "claude",
+     "gpt",
+     "llama-api",
+     "llm",
+     "openai",
+     "python"
+    ],
+    "license": "NOASSERTION",
+    "language": "Python",
+    "pushed_at": "2026-11-10T12:27:12Z",
+    "archived": false,
+    "homepage": "https://agpt.co"
+   }
+  },
+  {
+   "id": "dify",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "visual",
+   "gh": "langgenius/dify",
+   "github": {
+    "full_name": "langgenius/dify",
+    "stars": 160829,
+    "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+    "topics": [
+     "agent",
+     "agentic-ai",
+     "agentic-framework",
+     "agentic-workflow",
+     "ai",
+     "automation",
+     "claude",
+     "deepseek",
+     "genai",
+     "gpt",
+     "llm",
+     "low-code",
+     "mcp",
+     "nextjs",
+     "no-code",
+     "openai",
+     "python",
+     "skills",
+     "workflow"
+    ],
+    "license": "NOASSERTION",
+    "language": "Python",
+    "pushed_at": "2026-11-10T12:29:53Z",
+    "archived": false,
+    "homepage": "https://dify.ai"
+   },
+   "current": {
+    "name": "dify",
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "python",
+     "react",
+     "typescript"
+    ],
+    "one": "Dify is an open-source LLM app development platform. Its intuitive interface combines AI workflow, RAG pipeline, agent capabilities, model management, observability features (including Opik, Langfuse, and Arize Phoenix).",
+    "alt": [],
+    "desc": "Dify is an open-source LLM app development platform. Its intuitive interface combines AI workflow, RAG pipeline, agent capabilities, model management, observability features (including Opik, Langfuse, and Arize Phoenix) and more, letting you quickly go from prototype to production. Here's a list of the core features:.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres",
+    "choose_if": "quieres una app IA completa autoalojada",
+    "avoid_if": "solo necesitas una librería o un prototipo puntual.",
+    "combines_with": [
+     "langflow",
+     "flowise"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/langgenius/dify.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio",
+    "Qué es": "plataforma integral para construir apps de IA con backend y UI listos. Combina orquestación de prompts, RAG, agentes, workflows y observabilidad en un mismo producto autoalojable.",
+    "Por qué destaca": "todo-en-uno muy popular para llevar apps de IA a producción sin ensamblar piezas sueltas. Cubre desde el chatbot con RAG hasta workflows visuales y agentes, con gestión de usuarios y API propia.",
+    "Cómo funciona": "define apps (chatbot, agente, workflow) desde un panel web; el backend en Python orquesta modelos y herramientas sobre PostgreSQL/Redis, y se despliega con Docker Compose.",
+    "Instalación": "`docker compose up` desde el repo (o cloud gestionado de Dify). Requiere Docker y al menos una clave de proveedor de LLM.",
+    "Casos": "desplegar un chatbot/asistente con RAG · apps IA para clientes · workflows visuales con herramientas propias.",
+    "Stack": "Python/TS, React, PostgreSQL, Redis, Docker — **Modelo/API:** OpenAI, Anthropic, Google, locales; agnóstico vía variables de entorno.",
+    "Elige si": "quieres una app IA completa autoalojada — **Evita si:** solo necesitas una librería o un prototipo puntual.",
+    "Combina con": "[langflow](#-langflow) · [Flowise](#-flowise)",
+    "Repo": "[GitHub](https://github.com/langgenius/dify)"
+   }
+  },
+  {
+   "id": "flowise",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "visual",
+   "gh": "FlowiseAI/Flowise",
+   "github": {
+    "full_name": "FlowiseAI/Flowise",
+    "stars": 55564,
+    "description": "Build AI Agents, Visually",
+    "topics": [
+     "agentic-ai",
+     "agentic-workflow",
+     "agents",
+     "artificial-intelligence",
+     "chatbot",
+     "chatgpt",
+     "javascript",
+     "langchain",
+     "large-language-models",
+     "low-code",
+     "multiagent-systems",
+     "no-code",
+     "openai",
+     "rag",
+     "react",
+     "typescript",
+     "workflow-automation"
+    ],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-08-13T12:38:19Z",
+    "archived": true,
+    "homepage": "https://flowiseai.com"
+   },
+   "current": {
+    "name": "Flowise",
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "react",
+     "typescript"
+    ],
+    "one": "Builder visual low-code para agentes y flujos LLM, auto-hospedable.",
+    "alt": [],
+    "desc": "Flowise es un constructor visual de cadenas y agentes LLM. Encaja si quieres prototipar orquestación con nodos, no si necesitas un runtime embebido en tu código.",
+    "stack": "javascript/typescript, typescript, javascript, react, docker",
+    "choose_if": "quieres un prototipo visual ya, en stack JS",
+    "avoid_if": "necesitas plataforma completa con RAG/observabilidad ([dify](#-dify)).",
+    "combines_with": [
+     "dify",
+     "langflow"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/FlowiseAI/Flowise.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol 🖥️ app/UI · Setup 🟢 fácil",
+    "Qué es": "builder visual drag-and-drop para pipelines LLM. Permite montar chatflows y agentes conectando nodos y exponerlos como API o widget embebible.",
+    "Por qué destaca": "muy adoptado para prototipar flujos LLM en minutos sin escribir código. Al estar basado en LangChain.js, hereda sus conectores y se instala con un solo comando de npm.",
+    "Cómo funciona": "cada nodo encapsula un componente (LLM, retriever, tool, memoria); el grafo se ejecuta en un backend Node.js y se sirve por API o widget. Persiste credenciales y conversaciones en SQLite/PostgreSQL.",
+    "Instalación": "`npm install -g flowise && npx flowise start` o vía Docker. Requiere Node.js y las claves de los proveedores de LLM que uses.",
+    "Casos": "prototipar un flujo LLM rápido · demos sin código · widget de chat embebible en una web.",
+    "Stack": "Node.js/TypeScript, React — **Modelo/API:** múltiples; agnóstico vía LangChain.js.",
+    "Elige si": "quieres un prototipo visual ya, en stack JS — **Evita si:** necesitas plataforma completa con RAG/observabilidad ([dify](#-dify)).",
+    "Combina con": "[dify](#-dify) · [langflow](#-langflow)",
+    "Repo": "[GitHub](https://github.com/FlowiseAI/Flowise)"
+   }
+  },
+  {
+   "id": "langflow",
+   "is_new": false,
+   "target_cat": 3,
+   "target_sub": "visual",
+   "gh": "langflow-ai/langflow",
+   "github": {
+    "full_name": "langflow-ai/langflow",
+    "stars": 156502,
+    "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+    "topics": [
+     "agents",
+     "chatgpt",
+     "generative-ai",
+     "large-language-models",
+     "multiagent",
+     "react-flow"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-11-10T08:47:07Z",
+    "archived": false,
+    "homepage": "http://www.langflow.org"
+   },
+   "current": {
+    "name": "langflow",
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "python",
+     "typescript"
+    ],
+    "one": "Langflow is a powerful platform for building and deploying AI-powered agents and workflows. It provides developers with both a visual authoring experience and built-in API and MCP servers that turn every workflow into a.",
+    "alt": [],
+    "desc": "Langflow is a powerful platform for building and deploying AI-powered agents and workflows. It provides developers with both a visual authoring experience and built-in API and MCP servers that turn every workflow into a tool that can be integrated into applications built on any framework or stack.",
+    "stack": "python, typescript, javascript, docker",
+    "choose_if": "prefieres construir en visual sobre LangChain",
+    "avoid_if": "quieres todo en código o no usas LangChain.",
+    "combines_with": [
+     "langchain",
+     "dify"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/langflow-ai/langflow.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol 🖥️ app/UI · Setup 🟡 medio",
+    "Qué es": "constructor visual de flujos LLM/agentes construido sobre LangChain. Permite arrastrar y conectar componentes en un lienzo y exportarlos como API o código Python.",
+    "Por qué destaca": "une la potencia del ecosistema LangChain con una interfaz visual, muy valorado para prototipar sin escribir todo el código. Al generar LangChain real por debajo, lo que construyes en visual es portable a código.",
+    "Cómo funciona": "cada nodo del lienzo envuelve un componente LangChain (LLM, retriever, tool, prompt); el flujo se ejecuta como un grafo y se expone vía API. Corre sobre Python con frontend web (React).",
+    "Instalación": "`pip install langflow` o vía Docker. Requiere un proveedor de LLM configurado por entorno para los componentes que lo usen.",
+    "Casos": "iterar componentes de agente sin código · prototipar pipelines RAG · enseñar LangChain a perfiles no técnicos.",
+    "Stack": "Python, React, Docker — **Modelo/API:** múltiples; agnóstico vía LangChain.",
+    "Elige si": "prefieres construir en visual sobre LangChain — **Evita si:** quieres todo en código o no usas LangChain.",
+    "Combina con": "[langchain](#-langchain) · [dify](#-dify)",
+    "Repo": "[GitHub](https://github.com/langflow-ai/langflow)"
+   }
+  },
+  {
+   "id": "sim",
+   "is_new": true,
+   "target_cat": 3,
+   "target_sub": "visual",
+   "gh": "simstudioai/sim",
+   "github": {
+    "full_name": "simstudioai/sim",
+    "stars": 30118,
+    "description": "Sim is the collaborative workspace to build, deploy, and monitor AI agents and workflows. Used by 100,000+ builders.",
+    "topics": [
+     "agent-workflow",
+     "agentic-workflow",
+     "agents",
+     "ai",
+     "aiagents",
+     "anthropic",
+     "artificial-intelligence",
+     "automation",
+     "chatbot",
+     "deepseek",
+     "gemini",
+     "low-code",
+     "nextjs",
+     "no-code",
+     "openai",
+     "rag",
+     "react",
+     "typescript"
+    ],
+    "license": "Apache-2.0",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T12:05:06Z",
+    "archived": false,
+    "homepage": "https://www.sim.ai"
+   }
+  },
+  {
+   "id": "awesome-mcp-clients",
+   "is_new": false,
+   "target_cat": 5,
+   "target_sub": "directorios",
+   "gh": "punkpeye/awesome-mcp-clients",
+   "github": {
+    "full_name": "punkpeye/awesome-mcp-clients",
+    "stars": 6634,
+    "description": "A collection of MCP clients.",
+    "topics": [
+     "clients",
+     "mcp"
+    ],
+    "license": "MIT",
+    "language": null,
+    "pushed_at": "2026-06-07T18:57:48Z",
+    "archived": false,
+    "homepage": "https://glama.ai/mcp/clients"
+   },
+   "current": {
+    "name": "awesome-mcp-clients",
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+     "docker",
+     "javascript",
+     "langchain",
+     "mcp",
+     "postgres",
+     "python",
+     "react",
+     "typescript"
+    ],
+    "one": "A curated list of awesome Model Context Protocol (MCP) clients.",
+    "alt": [],
+    "desc": "A curated list of awesome Model Context Protocol (MCP) clients.",
+    "stack": "python, typescript, javascript, react, docker, postgres, langchain",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+     "claude-plugins-official",
+     "n8n-skills",
+     "mcp"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/punkpeye/awesome-mcp-clients.git"
+  },
+  {
+   "id": "awesome-mcp-servers",
+   "is_new": false,
+   "target_cat": 5,
+   "target_sub": "directorios",
+   "gh": "punkpeye/awesome-mcp-servers",
+   "github": {
+    "full_name": "punkpeye/awesome-mcp-servers",
+    "stars": 97557,
+    "description": "A collection of MCP servers.",
+    "topics": [
+     "ai",
+     "mcp"
+    ],
+    "license": "MIT",
+    "language": null,
+    "pushed_at": "2026-11-06T17:59:03Z",
+    "archived": false,
+    "homepage": "https://glama.ai/mcp/servers"
+   },
+   "current": {
+    "name": "awesome-mcp-servers",
+    "role": "directory",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+     "automation",
+     "comfy",
+     "docker",
+     "fastapi",
+     "javascript",
+     "langchain",
+     "mcp",
+     "multimedia"
+    ],
+    "one": "A curated list of awesome Model Context Protocol (MCP) servers.",
+    "alt": [],
+    "desc": "A curated list of awesome Model Context Protocol (MCP) servers.",
+    "stack": "python, typescript, javascript, react, docker, postgres, fastapi, langchain, whisper, comfy",
+    "choose_if": "buscas antes de construir",
+    "avoid_if": "ya sabes que necesitas uno a medida y no te vale ninguno listado.",
+    "combines_with": [
+     "mcp-use",
+     "servers"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/punkpeye/awesome-mcp-servers.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol 📂 directorio/recurso · Setup 🟢 fácil",
+    "Qué es": "directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar. Resuelve el \"¿ya existe un servidor para X?\" antes de que construyas el tuyo desde cero.",
+    "Por qué destaca": "es uno de los listados de referencia más consultados del ecosistema MCP y ayuda a no reinventar servidores que ya existen. Su organización por categorías y su actualización continua lo hacen el punto de partida habitual para descubrir integraciones.",
+    "Cómo funciona": "lista en Markdown con enlaces a cada servidor; eliges uno, sigues su README y lo añades a la config de tu cliente MCP (normalmente vía `npx` o `pip`).",
+    "Instalación": "sin instalación propia; se consulta el README y luego se instala el servidor elegido (normalmente vía `npx` o `pip`) y se registra en el cliente MCP.",
+    "Casos": "descubrir un servidor ya hecho antes de implementar uno · referencia rápida de integraciones por categoría · comparar alternativas para un mismo servicio.",
+    "Stack": "Markdown — **Modelo/API:** cualquier cliente compatible con MCP (Claude, Cursor, ChatGPT).",
+    "Elige si": "buscas antes de construir — **Evita si:** ya sabes que necesitas uno a medida y no te vale ninguno listado.",
+    "Combina con": "[mcp-use](#-mcp-use) · [servers](#-servers)",
+    "Repo": "[GitHub](https://github.com/punkpeye/awesome-mcp-servers)"
+   }
+  },
+  {
+   "id": "mcp",
+   "is_new": false,
+   "target_cat": 5,
+   "target_sub": "directorios",
+   "gh": "google/mcp",
+   "github": {
+    "full_name": "google/mcp",
+    "stars": 4696,
+    "description": "Google 💚 MCP",
+    "topics": [],
+    "license": "Apache-2.0",
+    "language": null,
+    "pushed_at": "2026-08-17T19:46:40Z",
+    "archived": false,
+    "homepage": ""
+   },
+   "current": {
+    "name": "mcp",
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+     "mcp",
+     "postgres",
+     "typescript"
+    ],
+    "one": "This repository contains a list of Google's official Model Context Protocol (MCP) servers, guidance on how to deploy MCP servers to Google Cloud, and examples to get started.",
+    "alt": [],
+    "desc": "This repository contains a list of Google's official Model Context Protocol (MCP) servers, guidance on how to deploy MCP servers to Google Cloud, and examples to get started.",
+    "stack": "typescript, postgres",
+    "choose_if": "programas MCP a bajo nivel o necesitas conformidad estricta con la spec",
+    "avoid_if": "prefieres un framework de alto nivel que abstraiga el protocolo ([mcp-use](#-mcp-use)).",
+    "combines_with": [
+     "mcp-use",
+     "servers"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/google/mcp.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟡 medio",
+    "Qué es": "núcleo del Model Context Protocol (spec y SDKs oficiales) para que herramientas, datos y clientes de IA interoperen bajo un mismo estándar abierto. Resuelve la fragmentación: cada integración de IA dejaba de ser ad-hoc y pasa a hablar un protocolo común.",
+    "Por qué destaca": "es el protocolo de referencia del ecosistema, adoptado por Claude, Cursor, ChatGPT y muchos otros clientes, lo que lo convierte en la base sobre la que se construye todo lo demás. Su respaldo por Anthropic y la gobernanza abierta le dan tracción real frente a alternativas propietarias.",
+    "Cómo funciona": "define el protocolo MCP (mensajes JSON-RPC 2.0 entre cliente y servidor sobre stdio o HTTP/SSE) y ofrece SDKs en TypeScript y Python para implementar servidores que exponen tools, resources y prompts conformes.",
+    "Instalación": "`npm install @modelcontextprotocol/sdk` o `pip install mcp` según el lenguaje; requiere un cliente MCP (Claude Desktop, Cursor, etc.) para conectar.",
+    "Casos": "base de interoperabilidad para tu app de IA · construir servidores/clientes conforme al estándar · exponer herramientas internas a cualquier asistente compatible.",
+    "Stack": "TypeScript/Python — **Modelo/API:** clientes MCP (Claude, Cursor, ChatGPT); agnóstico respecto al LLM.",
+    "Elige si": "programas MCP a bajo nivel o necesitas conformidad estricta con la spec — **Evita si:** prefieres un framework de alto nivel que abstraiga el protocolo ([mcp-use](#-mcp-use)).",
+    "Combina con": "[mcp-use](#-mcp-use) · [servers](#-servers)",
+    "Repo": "[GitHub](https://github.com/modelcontextprotocol/modelcontextprotocol)"
+   }
+  },
+  {
+   "id": "mcp-for-beginners",
+   "is_new": true,
+   "target_cat": 5,
+   "target_sub": "directorios",
+   "gh": "microsoft/mcp-for-beginners",
+   "github": {
+    "full_name": "microsoft/mcp-for-beginners",
+    "stars": 17633,
+    "description": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designed for developers, it focuses on practical techniques for building modular, scalable, and secure AI workflows from session setup to service orchestration.",
+    "topics": [
+     "csharp",
+     "java",
+     "javascript",
+     "javascript-applications",
+     "mcp",
+     "mcp-client",
+     "mcp-security",
+     "mcp-server",
+     "model",
+     "model-context-protocol",
+     "modelcontextprotocol",
+     "python",
+     "rust",
+     "typescript"
+    ],
+    "license": "MIT",
+    "language": "Jupyter Notebook",
+    "pushed_at": "2026-11-02T03:13:47Z",
+    "archived": false,
+    "homepage": ""
+   }
+  },
+  {
+   "id": "public-apis",
+   "is_new": false,
+   "target_cat": 5,
+   "target_sub": "directorios",
+   "gh": "public-apis/public-apis",
+   "github": {
+    "full_name": "public-apis/public-apis",
+    "stars": 497794,
+    "description": "A collective list of free APIs",
+    "topics": [
+     "api",
+     "apis",
+     "dataset",
+     "development",
+     "free",
+     "list",
+     "lists",
+     "open-source",
+     "public",
+     "public-api",
+     "public-apis",
+     "resources",
+     "software"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-11-07T19:45:54Z",
+    "archived": false,
+    "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo"
+   },
+   "current": {
+    "name": "public-apis",
+    "role": "directory",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "javascript",
+     "postgres",
+     "python",
+     "react",
+     "typescript"
+    ],
+    "one": "The Public APIs repository is manually curated by community members like you and folks working at APILayer. It includes an extensive list of public APIs from many domains that you can use for your own products.",
+    "alt": [],
+    "desc": "The Public APIs repository is manually curated by community members like you and folks working at APILayer. It includes an extensive list of public APIs from many domains that you can use for your own products. Consider it a treasure trove of APIs well-managed by the community over the years.",
+    "stack": "python, typescript, javascript, react, docker, postgres",
+    "choose_if": "buscas datos externos y no sabes qué API usar",
+    "avoid_if": "ya tienes tus fuentes definidas o necesitas SLA empresarial (son APIs públicas, sin garantías).",
+    "combines_with": [
+     "n8n",
+     "firecrawl"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/public-apis/public-apis.git",
+   "editorial": {
+    "Etiquetas": "Ejecución ☁️ API/cloud · Rol 📂 directorio/recurso · Setup 🟢 fácil",
+    "Qué es": "directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos. Resuelve el descubrimiento: en un solo lugar tienes URLs, autenticación y HTTPS de cada API en lugar de buscarlas una a una.",
+    "Por qué destaca": "es una de las referencias más estrelladas de GitHub para encontrar fuentes de datos externas, mantenida por la comunidad y APILayer. Su organización temática y su antigüedad lo convierten en el catálogo de facto para este caso.",
+    "Cómo funciona": "tabla en Markdown organizada por temática con la URL, tipo de autenticación (apiKey, OAuth, ninguno) y nivel de HTTPS de cada API; se navega y se consume cada API según su propia documentación.",
+    "Instalación": "sin instalación; se navega el README (o su versión web) y se consume cada API según su propia documentación y claves.",
+    "Casos": "conectar fuentes externas de datos · encontrar una API para un proyecto · explorar categorías (geocoding, finanzas, weather) antes de decidir stack.",
+    "Stack": "Markdown — **Modelo/API:** N/A (catálogo; cada API define la suya).",
+    "Elige si": "buscas datos externos y no sabes qué API usar — **Evita si:** ya tienes tus fuentes definidas o necesitas SLA empresarial (son APIs públicas, sin garantías).",
+    "Combina con": "[n8n](#-n8n) · [firecrawl](#-firecrawl)",
+    "Repo": "[GitHub](https://github.com/public-apis/public-apis)"
+   }
+  },
+  {
+   "id": "fastmcp",
+   "is_new": true,
+   "target_cat": 5,
+   "target_sub": "sdk",
+   "gh": "PrefectHQ/fastmcp",
+   "github": {
+    "full_name": "PrefectHQ/fastmcp",
+    "stars": 28367,
+    "description": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+    "topics": [
+     "agents",
+     "fastmcp",
+     "llms",
+     "mcp",
+     "mcp-clients",
+     "mcp-servers",
+     "mcp-tools",
+     "model-context-protocol",
+     "python"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-10T12:21:52Z",
+    "archived": false,
+    "homepage": "https://gofastmcp.com"
+   }
+  },
+  {
+   "id": "langchain-mcp-adapters",
+   "is_new": false,
+   "target_cat": 5,
+   "target_sub": "sdk",
+   "gh": "langchain-ai/langchain-mcp-adapters",
+   "github": {
+    "full_name": "langchain-ai/langchain-mcp-adapters",
+    "stars": 3644,
+    "description": "LangChain 🔌 MCP",
+    "topics": [
+     "langchain",
+     "langgraph",
+     "mcp",
+     "python",
+     "tools"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-09-16T03:16:07Z",
+    "archived": true,
+    "homepage": "https://docs.langchain.com/oss/python/langchain/mcp"
+   },
+   "current": {
+    "name": "langchain-mcp-adapters",
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "easy",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+     "javascript",
+     "langchain",
+     "mcp",
+     "python",
+     "typescript"
+    ],
+    "one": "Adaptadores que hacen herramientas MCP usables desde LangChain y LangGraph.",
+    "alt": [],
+    "desc": "Puente ligero entre servidores MCP y el ecosistema LangChain/LangGraph. Librería, no un servidor MCP en sí.",
+    "stack": "python, typescript, javascript, langchain",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+     "claude-plugins-official",
+     "n8n-skills",
+     "mcp"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/langchain-ai/langchain-mcp-adapters.git"
+  },
+  {
+   "id": "mcp-inspector",
+   "is_new": true,
+   "target_cat": 5,
+   "target_sub": "sdk",
+   "gh": "modelcontextprotocol/inspector",
+   "github": {
+    "full_name": "modelcontextprotocol/inspector",
+    "stars": 11268,
+    "description": "Deterministic testing tools for MCP servers",
+    "topics": [
+     "cli",
+     "debug",
+     "mcp",
+     "tool",
+     "tui",
+     "web"
+    ],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-05T23:07:44Z",
+    "archived": false,
+    "homepage": "https://modelcontextprotocol.io/docs/2026-07-28/tools/inspector"
+   }
+  },
+  {
+   "id": "mcp-python-sdk",
+   "is_new": true,
+   "target_cat": 5,
+   "target_sub": "sdk",
+   "gh": "modelcontextprotocol/python-sdk",
+   "github": {
+    "full_name": "modelcontextprotocol/python-sdk",
+    "stars": 24819,
+    "description": "The official Python SDK for Model Context Protocol servers and clients",
+    "topics": [
+     "mcp",
+     "mcp-client",
+     "mcp-server",
+     "python"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-11-05T13:38:56Z",
+    "archived": false,
+    "homepage": "https://py.sdk.modelcontextprotocol.io/"
+   }
+  },
+  {
+   "id": "mcp-typescript-sdk",
+   "is_new": true,
+   "target_cat": 5,
+   "target_sub": "sdk",
+   "gh": "modelcontextprotocol/typescript-sdk",
+   "github": {
+    "full_name": "modelcontextprotocol/typescript-sdk",
+    "stars": 13741,
+    "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
+    "topics": [
+     "mcp",
+     "mcp-client",
+     "mcp-server",
+     "typescript"
+    ],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-09T18:54:08Z",
+    "archived": false,
+    "homepage": "https://ts.sdk.modelcontextprotocol.io/v2"
+   }
+  },
+  {
+   "id": "mcp-use",
+   "is_new": false,
+   "target_cat": 5,
+   "target_sub": "sdk",
+   "gh": "mcp-use/mcp-use",
+   "github": {
+    "full_name": "mcp-use/mcp-use",
+    "stars": 10862,
+    "description": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
+    "topics": [
+     "agent-plugins",
+     "agentic-framework",
+     "ai",
+     "apps-sdk",
+     "chatgpt",
+     "claude-code",
+     "claude-connectors",
+     "llms",
+     "mcp",
+     "mcp-apps",
+     "mcp-client",
+     "mcp-gateway",
+     "mcp-inspector",
+     "mcp-server",
+     "mcp-servers",
+     "mcp-tools",
+     "mcp-ui",
+     "model-context-protocol",
+     "modelcontextprotocol",
+     "skills"
+    ],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-09T21:53:52Z",
+    "archived": false,
+    "homepage": "https://manufact.com"
+   },
+   "current": {
+    "name": "mcp-use",
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+     "automation",
+     "javascript",
+     "langchain",
+     "mcp",
+     "python",
+     "react",
+     "typescript"
+    ],
+    "one": "to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
+    "alt": [],
+    "desc": "to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
+    "stack": "python, typescript, javascript, react, langchain",
+    "choose_if": "construyes un servidor MCP propio y quieres productividad",
+    "avoid_if": "solo buscas usar uno ya hecho ([awesome-mcp-servers](#-awesome-mcp-servers)) o necesitas control a nivel spec.",
+    "combines_with": [
+     "mcp",
+     "awesome-mcp-servers",
+     "app mcp"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/mcp-use/mcp-use.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟡 medio",
+    "Qué es": "framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. Resuelve el salto del SDK base (verboso) a algo productivo: registro de tools, inspector y despliegue incluidos.",
+    "Por qué destaca": "abstrae el protocolo en una capa de alto nivel con SDK, inspector y documentación, lo que acorta el camino de la idea a producción frente a usar el SDK base. Su enfoque fullstack (TS y Python) y la integración con clientes como ChatGPT/Claude le dan versatilidad.",
+    "Cómo funciona": "envuelve el protocolo MCP exponiendo APIs de alto nivel para registrar tools/resources y conectar con clientes (Claude, ChatGPT), gestionando el ciclo de vida del servidor y el despliegue sin que toques JSON-RPC a mano.",
+    "Instalación": "`npm install mcp-use` o `pip install mcp-use` según el stack; requiere un cliente MCP para probar el resultado.",
+    "Casos": "exponer datos/herramientas internas vía MCP · pasar de local a app desplegable · prototipar un servidor con inspector antes de producción.",
+    "Stack": "TypeScript o Python, React (apps) — **Modelo/API:** ChatGPT, Claude y agentes MCP; agnóstico vía variables de entorno.",
+    "Elige si": "construyes un servidor MCP propio y quieres productividad — **Evita si:** solo buscas usar uno ya hecho ([awesome-mcp-servers](#-awesome-mcp-servers)) o necesitas control a nivel spec.",
+    "Combina con": "[mcp](#-mcp) · [awesome-mcp-servers](#-awesome-mcp-servers) · receta [App MCP](#-8-construir-una-appservidor-mcp)",
+    "Repo": "[GitHub](https://github.com/mcp-use/mcp-use)"
+   }
+  },
+  {
+   "id": "blender-mcp",
+   "is_new": true,
+   "target_cat": 5,
+   "target_sub": "servidores",
+   "gh": "ahujasid/mcp-for-blender",
+   "github": {
+    "full_name": "ahujasid/mcp-for-blender",
+    "stars": 33854,
+    "description": "Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation.",
+    "topics": [
+     "3d-modeling",
+     "ai",
+     "blender",
+     "blender-addon",
+     "blender-mcp",
+     "claude",
+     "generative-ai",
+     "llm",
+     "mcp",
+     "model-context-protocol",
+     "python"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-11-04T13:04:08Z",
+    "archived": false,
+    "homepage": "https://www.mcp-for-blender.com/"
+   }
+  },
+  {
+   "id": "chrome-devtools-mcp",
+   "is_new": true,
+   "target_cat": 5,
+   "target_sub": "servidores",
+   "gh": "ChromeDevTools/chrome-devtools-mcp",
+   "github": {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "stars": 55054,
+    "description": "Chrome DevTools for coding agents",
+    "topics": [
+     "browser",
+     "chrome",
+     "chrome-devtools",
+     "debugging",
+     "devtools",
+     "mcp",
+     "mcp-server",
+     "puppeteer"
+    ],
+    "license": "Apache-2.0",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T10:53:53Z",
+    "archived": false,
+    "homepage": "https://developer.chrome.com/docs/devtools/agents"
+   }
+  },
+  {
+   "id": "context7",
+   "is_new": false,
+   "target_cat": 5,
+   "target_sub": "servidores",
+   "gh": "upstash/context7",
+   "github": {
+    "full_name": "upstash/context7",
+    "stars": 64451,
+    "description": "Context7 Platform -- Up-to-date docs for AI agents",
+    "topics": [
+     "llm",
+     "mcp",
+     "mcp-server",
+     "vibe-coding"
+    ],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T12:19:37Z",
+    "archived": false,
+    "homepage": "https://context7.com"
+   },
+   "current": {
+    "name": "context7",
+    "role": "runtime",
+    "exec": "local",
+    "setup": "easy",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+     "mcp",
+     "docs",
+     "agents"
+    ],
+    "one": "MCP que inyecta documentación y ejemplos actualizados de librerías en el prompt del LLM.",
+    "alt": [],
+    "desc": "Context7 evita que el modelo alucine APIs viejas: trae docs versionadas al contexto. Instálalo como servidor MCP en el agente de código.",
+    "stack": "javascript/typescript, typescript, javascript, react",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+     "claude-plugins-official",
+     "n8n-skills",
+     "mcp"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/upstash/context7.git"
+  },
+  {
+   "id": "figma-context-mcp",
+   "is_new": true,
+   "target_cat": 5,
+   "target_sub": "servidores",
+   "gh": "GLips/Figma-Context-MCP",
+   "github": {
+    "full_name": "GLips/Figma-Context-MCP",
+    "stars": 16187,
+    "description": "MCP server to provide Figma layout information to AI coding agents like Cursor",
+    "topics": [
+     "ai",
+     "cursor",
+     "figma",
+     "mcp",
+     "typescript"
+    ],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-10-27T05:37:12Z",
+    "archived": false,
+    "homepage": "https://www.framelink.ai/"
+   }
+  },
+  {
+   "id": "github-mcp-server",
+   "is_new": false,
+   "target_cat": 5,
+   "target_sub": "servidores",
+   "gh": "github/github-mcp-server",
+   "github": {
+    "full_name": "github/github-mcp-server",
+    "stars": 34362,
+    "description": "GitHub's official MCP Server",
+    "topics": [
+     "github",
+     "mcp",
+     "mcp-server"
+    ],
+    "license": "MIT",
+    "language": "Go",
+    "pushed_at": "2026-11-09T18:56:03Z",
+    "archived": false,
+    "homepage": ""
+   },
+   "current": {
+    "name": "github-mcp-server",
+    "role": "platform",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+     "docker",
+     "javascript",
+     "mcp",
+     "python",
+     "react",
+     "typescript"
+    ],
+    "one": "The GitHub MCP Server connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate.",
+    "alt": [],
+    "desc": "The GitHub MCP Server connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate workflows. All through natural language interactions.",
+    "stack": "python, typescript, javascript, react, docker",
+    "choose_if": "necesitas exponer herramientas o contexto a agentes vía MCP",
+    "avoid_if": "prefieres conexiones directas sin protocolo estándar",
+    "combines_with": [
+     "claude-plugins-official",
+     "n8n-skills",
+     "mcp"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/github/github-mcp-server.git"
+  },
+  {
+   "id": "mcp-neo4j",
+   "is_new": false,
+   "target_cat": 5,
+   "target_sub": "servidores",
+   "gh": "neo4j-contrib/mcp-neo4j",
+   "github": {
+    "full_name": "neo4j-contrib/mcp-neo4j",
+    "stars": 989,
+    "description": "Neo4j Labs Model Context Protocol servers",
+    "topics": [
+     "database",
+     "mcp",
+     "mcp-server",
+     "neo4j",
+     "stdio"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-09-09T16:31:34Z",
+    "archived": false,
+    "homepage": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/"
+   },
+   "current": {
+    "name": "mcp-neo4j",
+    "role": "directory",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+     "mcp",
+     "typescript"
+    ],
+    "one": "These MCP servers are a part of the Neo4j Labs program. They are developed and maintained by the Neo4j Field GenAI team and welcome contributions from the larger developer community.",
+    "alt": [],
+    "desc": "These MCP servers are a part of the Neo4j Labs program. They are developed and maintained by the Neo4j Field GenAI team and welcome contributions from the larger developer community. These servers are frequently updated with new and experimental features, but are not supported by the Neo4j product team.",
+    "stack": "typescript",
+    "choose_if": "usas Neo4j con IA y quieres que el asistente hable Cypher",
+    "avoid_if": "no trabajas con grafos o tu base es relacional pura.",
+    "combines_with": [
+     "graphrag",
+     "awesome-mcp-servers"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/neo4j-contrib/mcp-neo4j.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🟡 medio",
+    "Qué es": "conjunto de servidores MCP oficiales para conectar bases de datos de grafos Neo4j a asistentes de IA, con soporte de despliegue en cloud. Resuelve el acceso natural a grafos desde un LLM: el asistente consulta y escribe Cypher sin que tú escribas el glue a mano.",
+    "Por qué destaca": "lo mantiene el equipo Field GenAI de Neo4j Labs y viene contenedorizado y listo para HTTP, lo que facilita llevar grafos a producción con IA. Al ser oficial, sigue el ritmo de las versiones de Neo4j y del propio protocolo MCP.",
+    "Cómo funciona": "expone consultas Cypher y operaciones sobre el grafo (lectura/escritura, esquema) como tools MCP que el cliente invoca mediante el protocolo, devolviendo resultados estructurados al LLM.",
+    "Instalación": "`pip install mcp-neo4j-cypher` (o imagen Docker) y registrar el servidor en la config del cliente MCP. Requiere una instancia Neo4j accesible (local o Aura cloud) con credenciales.",
+    "Casos": "consultar/escribir grafos Neo4j desde un asistente · backends de conocimiento basados en grafo · exploración de datos relacionales por lenguaje natural.",
+    "Stack": "Python, Docker — **Modelo/API:** clientes MCP (Claude, Cursor, etc.); Neo4j como backend.",
+    "Elige si": "usas Neo4j con IA y quieres que el asistente hable Cypher — **Evita si:** no trabajas con grafos o tu base es relacional pura.",
+    "Combina con": "[graphrag](#-graphrag) · [awesome-mcp-servers](#-awesome-mcp-servers)",
+    "Repo": "[GitHub](https://github.com/neo4j-contrib/mcp-neo4j)"
+   }
+  },
+  {
+   "id": "playwright-mcp",
+   "is_new": true,
+   "target_cat": 5,
+   "target_sub": "servidores",
+   "gh": "microsoft/playwright-mcp",
+   "github": {
+    "full_name": "microsoft/playwright-mcp",
+    "stars": 39407,
+    "description": "Playwright MCP server",
+    "topics": [
+     "mcp",
+     "playwright"
+    ],
+    "license": "Apache-2.0",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T01:37:49Z",
+    "archived": false,
+    "homepage": "https://www.npmjs.com/package/@playwright/mcp"
+   }
+  },
+  {
+   "id": "serena",
+   "is_new": true,
+   "target_cat": 5,
+   "target_sub": "servidores",
+   "gh": "oraios/serena",
+   "github": {
+    "full_name": "oraios/serena",
+    "stars": 31261,
+    "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+    "topics": [
+     "agent",
+     "ai",
+     "ai-coding",
+     "claude",
+     "claude-code",
+     "codex",
+     "ide",
+     "jetbrains",
+     "language-server",
+     "mcp-server",
+     "programming",
+     "vibe-coding"
+    ],
+    "license": "NOASSERTION",
+    "language": "Python",
+    "pushed_at": "2026-11-09T17:39:00Z",
+    "archived": false,
+    "homepage": "https://oraios.github.io/serena"
+   }
+  },
+  {
+   "id": "servers",
+   "is_new": false,
+   "target_cat": 5,
+   "target_sub": "servidores",
+   "gh": "modelcontextprotocol/servers",
+   "github": {
+    "full_name": "modelcontextprotocol/servers",
+    "stars": 91903,
+    "description": "Model Context Protocol Reference Servers",
+    "topics": [],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T05:11:54Z",
+    "archived": false,
+    "homepage": "https://modelcontextprotocol.io"
+   },
+   "current": {
+    "name": "servers",
+    "role": "directory",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "python",
+     "typescript"
+    ],
+    "one": "This repository is a collection of reference implementations for the Model Context Protocol (MCP), as well as references to community-built servers and additional resources.",
+    "alt": [],
+    "desc": "This repository is a collection of *reference implementations* for the Model Context Protocol (MCP), as well as references to community-built servers and additional resources.",
+    "stack": "javascript/typescript, python, typescript, javascript, postgres",
+    "choose_if": "quieres ejemplos canónicos y plantillas fiables",
+    "avoid_if": "buscas soluciones listas para producción (son demos educativas, no hardening).",
+    "combines_with": [
+     "mcp-use",
+     "awesome-mcp-servers"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/modelcontextprotocol/servers.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol 📂 directorio/recurso · Setup 🟡 medio",
+    "Qué es": "colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad. Resuelve la falta de ejemplos canónicos: muestra cómo se construye un servidor MCP correcto, paso a paso.",
+    "Por qué destaca": "es la fuente canónica y didáctica para entender cómo se construye un servidor MCP, respaldada por los mantenedores del propio protocolo. Incluye ejemplos prácticos (filesystem, fetch, git, etc.) que sirven de plantilla para los tuyos.",
+    "Cómo funciona": "cada subdirectorio es un servidor MCP de ejemplo (filesystem, fetch, git…) que se ejecuta con `npx` y se conecta a un cliente compatible mediante el protocolo MCP sobre stdio o HTTP.",
+    "Instalación": "ejecutar un servidor del repo con `npx` (p. ej. `npx -y @modelcontextprotocol/server-filesystem /ruta`) y añadirlo a la config del cliente MCP. Requiere Node.js para los servers TS.",
+    "Casos": "aprender a construir un servidor MCP · plantillas para arrancar el tuyo · ejemplos educativos de features (tools, resources, prompts).",
+    "Stack": "TypeScript/Python — **Modelo/API:** clientes MCP (Claude, Cursor, etc.); sin LLM propio.",
+    "Elige si": "quieres ejemplos canónicos y plantillas fiables — **Evita si:** buscas soluciones listas para producción (son demos educativas, no hardening).",
+    "Combina con": "[mcp-use](#-mcp-use) · [awesome-mcp-servers](#-awesome-mcp-servers)",
+    "Repo": "[GitHub](https://github.com/modelcontextprotocol/servers)"
+   }
+  }
+ ]
+}

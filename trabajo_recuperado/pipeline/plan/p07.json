@@ -1,0 +1,2544 @@
+{
+ "package": "p07",
+ "out_dir": "/home/claude/work/out/p07",
+ "categories": [
+  {
+   "num": 7,
+   "emoji": "🧑‍💻",
+   "title": "Inteligencia de Código, Datos & Entrenamiento",
+   "desc": "Entender y empaquetar codebases para agentes, calidad de código, entrenar y afinar modelos, modelos abiertos y herramientas de datos.",
+   "subs": [
+    {
+     "key": "codigo",
+     "title": "Entender y empaquetar código para agentes"
+    },
+    {
+     "key": "calidad",
+     "title": "Calidad, seguridad y benchmarks de código"
+    },
+    {
+     "key": "entrenamiento",
+     "title": "Entrenar y afinar modelos"
+    },
+    {
+     "key": "aprender",
+     "title": "Aprender LLMs desde cero"
+    },
+    {
+     "key": "modelos",
+     "title": "Modelos abiertos y fundacionales"
+    },
+    {
+     "key": "herramientas",
+     "title": "CLIs y SDKs de desarrollo"
+    },
+    {
+     "key": "datos",
+     "title": "Datos y notebooks"
+    }
+   ]
+  },
+  {
+   "num": 13,
+   "emoji": "📄",
+   "title": "Documentos & Presentaciones",
+   "desc": "Convertir documentos a Markdown/JSON para IA, OCR, herramientas PDF, presentaciones y diagramas.",
+   "subs": [
+    {
+     "key": "conversion",
+     "title": "Conversión de documentos para IA"
+    },
+    {
+     "key": "ocr",
+     "title": "OCR"
+    },
+    {
+     "key": "pdf",
+     "title": "Herramientas PDF"
+    },
+    {
+     "key": "slides",
+     "title": "Presentaciones"
+    },
+    {
+     "key": "diagramas",
+     "title": "Diagramas y documentación"
+    }
+   ]
+  }
+ ],
+ "repos": [
+  {
+   "id": "how-to-train-your-gpt",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "aprender",
+   "gh": "raiyanyahya/how-to-train-your-gpt",
+   "github": {
+    "full_name": "raiyanyahya/how-to-train-your-gpt",
+    "stars": 4177,
+    "description": "Build a modern LLM from scratch. Every line commented. Explained like we are five.",
+    "topics": [
+     "attention-mechanism",
+     "deep-learning",
+     "educational",
+     "from-scratch",
+     "gpt",
+     "language-model",
+     "llama",
+     "llm",
+     "machine-learning",
+     "natural-language-processing",
+     "python",
+     "pytorch",
+     "tokenisation",
+     "transformers",
+     "tutorial"
+    ],
+    "license": "MIT",
+    "language": "Jupyter Notebook",
+    "pushed_at": "2026-10-26T19:31:31Z",
+    "archived": false,
+    "homepage": ""
+   },
+   "current": {
+    "name": "how-to-train-your-gpt",
+    "role": "runtime",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "python",
+     "typescript"
+    ],
+    "one": "> A guide to building a world-class language model from absolute scratch. Taught like you're five. Built like you're an engineer.",
+    "alt": [],
+    "desc": "A guide to building a world-class language model from absolute scratch. Taught like you're five. Built like you're an engineer.*.",
+    "stack": "python, typescript",
+    "choose_if": "quieres una guía explicada y narrada",
+    "avoid_if": "prefieres solo el código limpio ([nanoGPT](#-nanogpt)) o buscas algo productivo.",
+    "combines_with": [
+     "nanogpt",
+     "nanochat"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/raiyanyahya/how-to-train-your-gpt.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol 📂 directorio/recurso · Setup 🟢 fácil",
+    "Qué es": "guía/tutorial práctico para entrenar un GPT paso a paso, pensado como material de estudio más que como librería de producción. Resuelve el \"quiero entenderlo con explicación narrada\" frente al código desnudo de nanoGPT.",
+    "Por qué destaca": "repo pequeño y poco conocido, útil como complemento explicado al entrenamiento; honestamente, es un material de aprendizaje modesto frente a referencias como nanoGPT. Su valor está en la narración guiada, no en la robustez del código.",
+    "Cómo funciona": "recorre en Python el proceso de entrenar un GPT con explicaciones intercaladas, apoyándose en el ecosistema PyTorch para mostrar cada etapa de forma didáctica.",
+    "Instalación": "`git clone https://github.com/raiyanyahya/how-to-train-your-gpt` y seguir las instrucciones del repositorio; requiere Python y PyTorch (GPU recomendada para entrenar).",
+    "Casos": "seguir un paso a paso de entrenamiento · material de estudio para principiantes · complemento narrado a nanoGPT.",
+    "Stack": "Python, PyTorch — **Modelo/API:** entrena modelos propios.",
+    "Elige si": "quieres una guía explicada y narrada — **Evita si:** prefieres solo el código limpio ([nanoGPT](#-nanogpt)) o buscas algo productivo.",
+    "Combina con": "[nanoGPT](#-nanogpt) · [nanochat](#-nanochat)",
+    "Repo": "[GitHub](https://github.com/raiyanyahya/how-to-train-your-gpt)"
+   }
+  },
+  {
+   "id": "llm-course",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "aprender",
+   "gh": "mlabonne/llm-course",
+   "github": {
+    "full_name": "mlabonne/llm-course",
+    "stars": 85024,
+    "description": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.",
+    "topics": [
+     "course",
+     "large-language-models",
+     "llm",
+     "machine-learning",
+     "roadmap"
+    ],
+    "license": "Apache-2.0",
+    "language": null,
+    "pushed_at": "2026-02-05T13:09:26Z",
+    "archived": false,
+    "homepage": "https://mlabonne.github.io/blog/"
+   }
+  },
+  {
+   "id": "llm.c",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "aprender",
+   "gh": "karpathy/llm.c",
+   "github": {
+    "full_name": "karpathy/llm.c",
+    "stars": 31422,
+    "description": "LLM training in simple, raw C/CUDA",
+    "topics": [],
+    "license": "MIT",
+    "language": "Cuda",
+    "pushed_at": "2025-06-26T17:03:40Z",
+    "archived": false,
+    "homepage": ""
+   },
+   "current": {
+    "name": "llm.c",
+    "role": "app",
+    "exec": "cloud",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "javascript",
+     "python",
+     "typescript"
+    ],
+    "one": "LLMs in simple, pure C/CUDA with no need for 245MB of PyTorch or 107MB of cPython. Current focus is on pretraining, in particular reproducing the GPT-2 and GPT-3 miniseries, along with a parallel PyTorch reference.",
+    "alt": [],
+    "desc": "LLMs in simple, pure C/CUDA with no need for 245MB of PyTorch or 107MB of cPython. Current focus is on pretraining, in particular reproducing the GPT-2 and GPT-3 miniseries, along with a parallel PyTorch reference implementation in train_gpt2.py. You'll recognize this file as a slightly tweaked nanoGPT.",
+    "stack": "python, typescript, javascript",
+    "choose_if": "quieres bajo nivel sin abstracciones y tienes GPU CUDA",
+    "avoid_if": "prefieres PyTorch ([nanoGPT](#-nanogpt)) o no tienes CUDA.",
+    "combines_with": [
+     "nanogpt"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/karpathy/llm.c.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol 📚 librería/SDK · Setup 🔴 pesado",
+    "Qué es": "implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo al desnudo. Resuelve la abstracción total: muestra qué hace realmente la GPU en cada pasada, sin ocultarlo tras un framework.",
+    "Por qué destaca": "referencia didáctica de Karpathy que reproduce GPT-2 con dependencias mínimas, ideal para entender qué hace realmente la GPU bajo el capó. Su valor educativo sobre el cómputo de bajo nivel es difícil de igualar en otros recursos.",
+    "Cómo funciona": "escribe a mano los kernels de las pasadas forward/backward en C y CUDA, gestionando memoria y operaciones que normalmente oculta un framework como PyTorch, reproduciendo el entrenamiento de GPT-2.",
+    "Instalación": "`git clone https://github.com/karpathy/llm.c`, instalar CUDA toolkit y compilar con `make`. Requiere una GPU NVIDIA con CUDA; sin él no tiene sentido.",
+    "Casos": "entrenar GPT-2 con mínima dependencia · entender el cómputo de bajo nivel · enseñar qué hace realmente un framework bajo el capó.",
+    "Stack": "C, CUDA — **Modelo/API:** entrena modelos propios.",
+    "Limitaciones": "exige GPU NVIDIA con CUDA y toolkit instalado; no es portable a otras arquitecturas y no busca ser productivo, sino pedagógico.",
+    "Elige si": "quieres bajo nivel sin abstracciones y tienes GPU CUDA — **Evita si:** prefieres PyTorch ([nanoGPT](#-nanogpt)) o no tienes CUDA.",
+    "Combina con": "[nanoGPT](#-nanogpt)",
+    "Repo": "[GitHub](https://github.com/karpathy/llm.c)"
+   }
+  },
+  {
+   "id": "llms-from-scratch",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "aprender",
+   "gh": "rasbt/LLMs-from-scratch",
+   "github": {
+    "full_name": "rasbt/LLMs-from-scratch",
+    "stars": 108156,
+    "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+    "topics": [
+     "ai",
+     "artificial-intelligence",
+     "attention-mechanism",
+     "deep-learning",
+     "finetuning",
+     "from-scratch",
+     "generative-ai",
+     "gpt",
+     "instruction-tuning",
+     "language-model",
+     "large-language-models",
+     "llm",
+     "machine-learning",
+     "natural-language-processing",
+     "pretraining",
+     "python",
+     "pytorch",
+     "tokenizer",
+     "transformers"
+    ],
+    "license": "NOASSERTION",
+    "language": "Jupyter Notebook",
+    "pushed_at": "2026-11-09T14:59:09Z",
+    "archived": false,
+    "homepage": "https://amzn.to/4fqvn0D"
+   }
+  },
+  {
+   "id": "nanochat",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "aprender",
+   "gh": "karpathy/nanochat",
+   "github": {
+    "full_name": "karpathy/nanochat",
+    "stars": 60418,
+    "description": "The best ChatGPT that $100 can buy.",
+    "topics": [],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-09-07T20:06:43Z",
+    "archived": false,
+    "homepage": ""
+   },
+   "current": {
+    "name": "nanochat",
+    "role": "app",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "javascript",
+     "multimedia",
+     "python",
+     "typescript",
+     "whisper"
+    ],
+    "one": "nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all major LLM stages including tokenization, pretraining.",
+    "alt": [],
+    "desc": "nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all major LLM stages including tokenization, pretraining, finetuning, evaluation, inference, and a chat UI.",
+    "stack": "python, typescript, javascript, whisper",
+    "choose_if": "quieres el pipeline completo de un chat end-to-end",
+    "avoid_if": "solo necesitas el core del modelo ([nanoGPT](#-nanogpt)) o un modelo listo para usar.",
+    "combines_with": [
+     "nanogpt"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/karpathy/nanochat.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol 📚 librería/SDK · Setup 🟡 medio",
+    "Qué es": "pipeline full-stack mínimo de Andrej Karpathy para entrenar un \"ChatGPT\" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. Resuelve la pregunta \"¿cómo se monta un asistente entero?\": lo muestra en un solo repo compacto y legible.",
+    "Por qué destaca": "referencia didáctica de Karpathy que muestra el ciclo completo de un asistente conversacional en un solo repo compacto y legible. Su encadenamiento pretrain → SFT → inferencia lo hace el complemento natural de nanoGPT para ver el flujo end-to-end.",
+    "Cómo funciona": "encadena las etapas pretrain → SFT → inferencia en PyTorch sobre GPU, con scripts que entrenan y luego sirven el modelo de chat para que puedas interactuar con él.",
+    "Instalación": "`git clone https://github.com/karpathy/nanochat` y seguir el script de entrenamiento del README (entorno PyTorch con GPU). Requiere GPU seria para entrenar y datos de preentrenamiento.",
+    "Casos": "ver el ciclo completo (pretrain→SFT→chat) · base educativa para entender un asistente entero · punto de partida para experimentos de fine-tuning.",
+    "Stack": "Python, PyTorch, GPU — **Modelo/API:** entrena modelos propios.",
+    "Limitaciones": "entrenar de cero exige GPU y corpus; es educativo, no una alternativa a un modelo comercial servido.",
+    "Elige si": "quieres el pipeline completo de un chat end-to-end — **Evita si:** solo necesitas el core del modelo ([nanoGPT](#-nanogpt)) o un modelo listo para usar.",
+    "Combina con": "[nanoGPT](#-nanogpt)",
+    "Repo": "[GitHub](https://github.com/karpathy/nanochat)"
+   }
+  },
+  {
+   "id": "nanogpt",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "aprender",
+   "gh": "karpathy/nanoGPT",
+   "github": {
+    "full_name": "karpathy/nanoGPT",
+    "stars": 64600,
+    "description": "The simplest, fastest repository for training/finetuning medium-sized GPTs.",
+    "topics": [],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2025-11-12T19:52:34Z",
+    "archived": false,
+    "homepage": ""
+   },
+   "current": {
+    "name": "nanoGPT",
+    "role": "library",
+    "exec": "cloud",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "javascript",
+     "postgres",
+     "python",
+     "typescript"
+    ],
+    "one": "Update Nov 2025 nanoGPT has a new and improved cousin called nanochat. It is very likely you meant to use/find nanochat instead. nanoGPT (this repo) is now very old and deprecated but I will leave it up for posterity.",
+    "alt": [],
+    "desc": "Update Nov 2025 nanoGPT has a new and improved cousin called nanochat. It is very likely you meant to use/find nanochat instead. nanoGPT (this repo) is now very old and deprecated but I will leave it up for posterity.",
+    "stack": "python, typescript, javascript, postgres",
+    "choose_if": "quieres entender el entrenamiento de un GPT desde cero",
+    "avoid_if": "solo consumes modelos vía API o necesitas un pipeline de chat completo ([nanochat](#-nanochat)).",
+    "combines_with": [
+     "nanochat",
+     "llm.c"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/karpathy/nanoGPT.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol 📚 librería/SDK · Setup 🟡 medio",
+    "Qué es": "implementación mínima y limpia de Andrej Karpathy para entrenar y afinar GPTs, pensada para que el código quepa en la cabeza y se entienda de extremo a extremo. Resuelve la opacidad de los frameworks: ves exactamente cómo se entrena un GPT sin capas de abstracción.",
+    "Por qué destaca": "referencia didáctica de Karpathy ampliamente usada para aprender cómo funciona realmente el entrenamiento de un GPT, sin capas de abstracción. Su minimalismo (unos pocos cientos de líneas) lo hace el punto de partida habitual para entender y experimentar.",
+    "Cómo funciona": "define el modelo GPT y su bucle de entrenamiento en PyTorch sobre GPU, reproduciendo resultados tipo GPT-2 con unos pocos cientos de líneas y dependencias mínimas.",
+    "Instalación": "`git clone https://github.com/karpathy/nanoGPT` y `pip install torch numpy transformers datasets tiktoken`. Requiere GPU para entrenar (CPU solo sirve para pruebas triviales).",
+    "Casos": "aprender cómo se entrena un GPT · experimentos pequeños reproducibles · base para afinar modelos propios sobre datos propios.",
+    "Stack": "Python, PyTorch, GPU — **Modelo/API:** entrena modelos propios.",
+    "Limitaciones": "entrenar a escala real exige GPU y tiempo; no es una librería de producción, sino un recurso educativo minimalista.",
+    "Elige si": "quieres entender el entrenamiento de un GPT desde cero — **Evita si:** solo consumes modelos vía API o necesitas un pipeline de chat completo ([nanochat](#-nanochat)).",
+    "Combina con": "[nanochat](#-nanochat) · [llm.c](#-llmc)",
+    "Repo": "[GitHub](https://github.com/karpathy/nanoGPT)"
+   }
+  },
+  {
+   "id": "ast-grep",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "calidad",
+   "gh": "ast-grep/ast-grep",
+   "github": {
+    "full_name": "ast-grep/ast-grep",
+    "stars": 16529,
+    "description": "⚡A CLI tool for code structural search, lint and rewriting. Written in Rust",
+    "topics": [
+     "ast",
+     "babel",
+     "codemod",
+     "codereview",
+     "command-line",
+     "command-line-tool",
+     "grep",
+     "linter",
+     "refactoring",
+     "rust",
+     "search",
+     "static-analysis",
+     "structural-search",
+     "tree-sitter",
+     "typescript"
+    ],
+    "license": "MIT",
+    "language": "Rust",
+    "pushed_at": "2026-11-10T09:39:04Z",
+    "archived": false,
+    "homepage": "https://ast-grep.github.io/"
+   }
+  },
+  {
+   "id": "defending-code-reference-harness",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "calidad",
+   "gh": "anthropics/defending-code-reference-harness",
+   "github": {
+    "full_name": "anthropics/defending-code-reference-harness",
+    "stars": 7728,
+    "description": "Skills for threat modeling, scanning, triage, patching, plus an autonomous scanning harness you can /customize",
+    "topics": [
+     "security"
+    ],
+    "license": "NOASSERTION",
+    "language": "Python",
+    "pushed_at": "2026-08-06T21:42:09Z",
+    "archived": false,
+    "homepage": "https://claude.com/blog/using-llms-to-secure-source-code"
+   },
+   "current": {
+    "name": "defending-code-reference-harness",
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "python",
+     "typescript"
+    ],
+    "one": "A reference implementation for autonomous vulnerability discovery and remediation with Claude, based on our learnings from partnering with security teams at several organizations.",
+    "alt": [],
+    "desc": "A reference implementation for autonomous vulnerability discovery and remediation with Claude, based on our learnings from partnering with security teams at several organizations since launching Claude Mythos Preview. For a write up of these learnings along with best practices, see the accompanying blog post (also avail.",
+    "stack": "python, typescript, docker",
+    "choose_if": "quieres defending code reference harness",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "awesome-claude-code",
+     "agents-towards-production",
+     "ag2"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/anthropics/defending-code-reference-harness.git"
+  },
+  {
+   "id": "semgrep",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "calidad",
+   "gh": "semgrep/semgrep",
+   "github": {
+    "full_name": "semgrep/semgrep",
+    "stars": 17586,
+    "description": "Lightweight static analysis for many languages. Find bug variants with patterns that look like source code.",
+    "topics": [
+     "c",
+     "go",
+     "java",
+     "javascript",
+     "python",
+     "r2c",
+     "ruby",
+     "sast",
+     "semgrep",
+     "static-analysis",
+     "static-code-analysis",
+     "typescript"
+    ],
+    "license": "LGPL-2.1",
+    "language": "C",
+    "pushed_at": "2026-11-10T09:32:16Z",
+    "archived": false,
+    "homepage": "https://semgrep.dev"
+   }
+  },
+  {
+   "id": "swe-bench",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "calidad",
+   "gh": "SWE-bench/SWE-bench",
+   "github": {
+    "full_name": "SWE-bench/SWE-bench",
+    "stars": 6166,
+    "description": "SWE-bench: Can Language Models Resolve Real-world Github Issues?",
+    "topics": [
+     "benchmark",
+     "language-model",
+     "software-engineering"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-09-18T05:08:56Z",
+    "archived": false,
+    "homepage": "https://www.swebench.com"
+   },
+   "current": {
+    "name": "SWE-bench",
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "python",
+     "typescript"
+    ],
+    "one": "SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub.",
+    "alt": [],
+    "desc": "SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub. Given a codebase and an issue, a language model is tasked with generating a patch that resolves the described problem.",
+    "stack": "python, typescript, docker",
+    "choose_if": "quieres code and data for the following works:",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "codegraph",
+     "gitnexus",
+     "deepseek-coder"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/SWE-bench/SWE-bench.git"
+  },
+  {
+   "id": "codebase-memory-mcp",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "codigo",
+   "gh": "DeusData/codebase-memory-mcp",
+   "github": {
+    "full_name": "DeusData/codebase-memory-mcp",
+    "stars": 48445,
+    "description": "Local code intelligence for developers and AI agents. Connect code, docs and infrastructure in a persistent graph, with CBM Lens, MCP tools, agent integrations and change-aware test selection.",
+    "topics": [
+     "aider",
+     "ast",
+     "claude-code",
+     "code-analysis",
+     "code-intelligence",
+     "codex",
+     "cursor",
+     "cypher",
+     "developer-tools",
+     "gemini-cli",
+     "graph-visualization",
+     "kilocode",
+     "knowledge-graph",
+     "mcp",
+     "mcp-server",
+     "model-context-protocol",
+     "opencode",
+     "sqlite",
+     "tree-sitter",
+     "windsurf"
+    ],
+    "license": "MIT",
+    "language": "C",
+    "pushed_at": "2026-11-10T01:49:49Z",
+    "archived": false,
+    "homepage": "https://deusdata.github.io/codebase-memory-mcp/"
+   },
+   "current": {
+    "name": "codebase-memory-mcp",
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": true,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "mcp",
+     "python",
+     "typescript"
+    ],
+    "one": "The fastest and most efficient code intelligence engine for AI coding agents. Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes.",
+    "alt": [],
+    "desc": "The fastest and most efficient code intelligence engine for AI coding agents. Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for macOS, Linux, and Windows — download, run `install`, done.",
+    "stack": "python, typescript, javascript, docker",
+    "choose_if": "quieres codebase-memory-mcp",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "awesome-claude-code",
+     "agents-towards-production",
+     "ag2"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/DeusData/codebase-memory-mcp.git"
+  },
+  {
+   "id": "codegraph",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "codigo",
+   "gh": "colbymchenry/codegraph",
+   "github": {
+    "full_name": "colbymchenry/codegraph",
+    "stars": 77265,
+    "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+    "topics": [],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-01T17:36:07Z",
+    "archived": false,
+    "homepage": "https://colbymchenry.github.io/codegraph/"
+   },
+   "current": {
+    "name": "codegraph",
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "fastapi",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "python",
+     "react",
+     "typescript"
+    ],
+    "one": "Indexa repositorios grandes como grafo de código y responde consultas estructurales.",
+    "alt": [],
+    "desc": "CodeGraph construye un grafo del codebase para que un agente navegue símbolos y dependencias sin leer el repo entero.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, postgres, fastapi",
+    "choose_if": "trabajas repos grandes y el contexto del agente es caro",
+    "avoid_if": "tu base de código es pequeña y no justifica mantener un índice.",
+    "combines_with": [
+     "graphify",
+     "headroom",
+     "análisis de repos"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/colbymchenry/codegraph.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol 🧩 motor/runtime · Setup 🟢 fácil",
+    "Qué es": "CLI que indexa tu código y da a los asistentes de IA inteligencia semántica 100% local, permitiéndoles entender la estructura y el flujo de un repo sin leer archivo por archivo ni gastar llamadas a herramientas. Resuelve el coste de contexto de los agentes en repos grandes.",
+    "Por qué destaca": "convierte repos enormes en algo navegable para la IA con coste casi nulo; muy valorado en flujos de agentes de código por su ahorro real de tokens y tool calls. Su acoplamiento con Claude Code, Gemini y Cursor sin modelo propio lo hace fácil de adoptar.",
+    "Cómo funciona": "construye un índice semántico local del repositorio (símbolos, referencias, flujo) que el asistente consulta vía comandos; se acopla a Claude Code, Gemini y Cursor sin necesidad de un modelo propio ni de enviar código a la nube.",
+    "Instalación": "`npm install -g codegraph` (binario autónomo de Node.js) y luego `codegraph index .`. Requiere Node.js; el índice se regenera al cambiar el código.",
+    "Casos": "`codegraph index .` para que el asistente entienda el flujo sin leer archivo por archivo · onboarding de IA en monorepos grandes · reducir tool calls en revisiones de código.",
+    "Stack": "JavaScript/Node.js (binario autónomo) — **Modelo/API:** no requiere IA; se acopla a Claude Code, Gemini, Cursor.",
+    "Elige si": "trabajas repos grandes y el contexto del agente es caro — **Evita si:** tu base de código es pequeña y no justifica mantener un índice.",
+    "Combina con": "[graphify](#-graphify) · [headroom](#-headroom) · receta [Análisis de repos](#-5-análisis-de-repos-grandes)",
+    "Repo": "[GitHub](https://github.com/colbymchenry/codegraph)"
+   }
+  },
+  {
+   "id": "deepwiki-open",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "codigo",
+   "gh": "AsyncFuncAI/deepwiki-open",
+   "github": {
+    "full_name": "AsyncFuncAI/deepwiki-open",
+    "stars": 18396,
+    "description": "Open Source DeepWiki: AI-Powered Wiki Generator for GitHub/Gitlab/Bitbucket Repositories. Join the discord: https://discord.gg/gMwThUMeme",
+    "topics": [
+     "ai",
+     "codex",
+     "gemini",
+     "github",
+     "grok-cli",
+     "ollama",
+     "open-source",
+     "openai",
+     "openrouter",
+     "self-hosted",
+     "wiki"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-11-10T08:13:03Z",
+    "archived": false,
+    "homepage": "https://grok-wiki.com/"
+   }
+  },
+  {
+   "id": "gitnexus",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "codigo",
+   "gh": "abhigyanpatwari/GitNexus",
+   "github": {
+    "full_name": "abhigyanpatwari/GitNexus",
+    "stars": 48392,
+    "description": "GitNexus: The Zero-Server Code Intelligence Engine ",
+    "topics": [],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T12:07:01Z",
+    "archived": false,
+    "homepage": "https://gitnexus.vercel.app"
+   },
+   "current": {
+    "name": "GitNexus",
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "langchain",
+     "python",
+     "react",
+     "typescript"
+    ],
+    "one": "⚠️ Important Notice: GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name on Pump.",
+    "alt": [],
+    "desc": "⚠️ Important Notice: GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name on Pump.fun or any other platform is not affiliated with, endorsed by, or created by this project or its maintainers. Do not purchase any cryptocurrency claiming association with GitNexus.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, docker, langchain",
+    "choose_if": "quieres entender un repo puntual de forma visual",
+    "avoid_if": "necesitas indexar muchos repos a escala ([codegraph](#-codegraph)) o no quieres front web.",
+    "combines_with": [
+     "codegraph",
+     "análisis de repos"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/abhigyanpatwari/GitNexus.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol 🖥️ app/UI · Setup 🟢 fácil",
+    "Qué es": "herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. Resuelve el \"llegar a un proyecto ajeno y no saber por dónde empezar\": lo navegas y lo discutes en vez de leer ficheros sueltos.",
+    "Por qué destaca": "facilita comprender un repo concreto de forma interactiva en vez de leer ficheros sueltos, útil cuando llegas a un proyecto ajeno. Su interfaz web con LLM integrado permite hacer preguntas y sugerir ideas sobre el código.",
+    "Cómo funciona": "una interfaz web (TypeScript) recorre el repositorio y lo presenta como vistas navegables, apoyándose en LLMs para responder preguntas y sugerir ideas sobre la estructura y el flujo del proyecto.",
+    "Instalación": "`git clone https://github.com/abhigyanpatwari/GitNexus` y arranque del front web según el README; requiere Node.js y una clave de LLM para las preguntas.",
+    "Casos": "onboarding en un repo nuevo · navegar relaciones y discutir ideas · entender la arquitectura de un proyecto heredado.",
+    "Stack": "web/TypeScript — **Modelo/API:** múltiples LLMs; configurable vía variables de entorno.",
+    "Elige si": "quieres entender un repo puntual de forma visual — **Evita si:** necesitas indexar muchos repos a escala ([codegraph](#-codegraph)) o no quieres front web.",
+    "Combina con": "[codegraph](#-codegraph) · receta [Análisis de repos](#-5-análisis-de-repos-grandes)",
+    "Repo": "[GitHub](https://github.com/abhigyanpatwari/GitNexus)"
+   }
+  },
+  {
+   "id": "graphify",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "codigo",
+   "gh": "Graphify-Labs/graphify",
+   "github": {
+    "full_name": "Graphify-Labs/graphify",
+    "stars": 145341,
+    "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+    "topics": [
+     "ai-agents",
+     "antigravity",
+     "ast",
+     "claude-code",
+     "code-analysis",
+     "code-search",
+     "codex",
+     "cursor",
+     "developer-tools",
+     "gemini",
+     "graphify",
+     "graphrag",
+     "knowledge-graph",
+     "leiden",
+     "llm",
+     "mcp",
+     "openclaw",
+     "rag",
+     "skills",
+     "tree-sitter"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-09T17:04:04Z",
+    "archived": false,
+    "homepage": "https://www.graphify.com"
+   },
+   "current": {
+    "name": "graphify",
+    "role": "library",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "javascript",
+     "multimedia",
+     "postgres",
+     "python",
+     "typescript",
+     "whisper"
+    ],
+    "one": "Type /graphify in your AI coding assistant and it maps your entire project — code, docs, PDFs, images, videos — into a knowledge graph you can query instead of grepping through files.",
+    "alt": [],
+    "desc": "Type /graphify in your AI coding assistant and it maps your entire project — code, docs, PDFs, images, videos — into a knowledge graph you can query instead of grepping through files.",
+    "stack": "python, typescript, javascript, docker, postgres, whisper",
+    "choose_if": "quieres ver conexiones visualmente o auditar un sistema",
+    "avoid_if": "solo necesitas índice textual barato ([codegraph](#-codegraph)) o tu proyecto es trivial.",
+    "combines_with": [
+     "codegraph",
+     "graphrag"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/safishamsi/graphify.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🟡 medio",
+    "Qué es": "generador de grafos de conocimiento para proyectos locales que mapea código, PDFs, imágenes y video en diagramas interactivos, revelando cómo se conectan las piezas de un sistema. Resuelve el onboarding visual: un índice textual no basta cuando hay relaciones entre archivos.",
+    "Por qué destaca": "combina visualización navegable, reporte legible y datos exportables en un solo paso, ideal para auditorías y onboarding cuando un índice de texto no basta. Su soporte multi-fuente (código + documentos + multimedia) lo diferencia de los indexadores puramente de código.",
+    "Cómo funciona": "analiza las fuentes del proyecto y produce un grafo con nodos y relaciones; opcionalmente usa un LLM (cloud o local) para enriquecer el análisis semántico y generar descripciones de cada nodo.",
+    "Instalación": "`pipx install graphify` o `uv tool install graphify`, luego `/graphify .` sobre el proyecto. Requiere Python 3.10+; el enriquecimiento con LLM necesita claves de API.",
+    "Casos": "`/graphify .` para mapear llamadas de funciones · auditoría rápida de un sistema · onboarding visual de un proyecto heredado.",
+    "Stack": "Python 3.10+, uv/pipx — **Modelo/API:** opcional (OpenAI/Anthropic o locales Llama/Mistral); agnóstico vía variables de entorno.",
+    "Elige si": "quieres ver conexiones visualmente o auditar un sistema — **Evita si:** solo necesitas índice textual barato ([codegraph](#-codegraph)) o tu proyecto es trivial.",
+    "Combina con": "[codegraph](#-codegraph) · [graphrag](#-graphrag)",
+    "Repo": "[GitHub](https://github.com/safishamsi/graphify)"
+   }
+  },
+  {
+   "id": "repomix",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "codigo",
+   "gh": "yamadashy/repomix",
+   "github": {
+    "full_name": "yamadashy/repomix",
+    "stars": 29211,
+    "description": "📦 Repomix is a powerful tool that packs your entire repository into a single, AI-friendly file. Perfect for when you need to feed your codebase to Large Language Models (LLMs) or other AI tools like Claude, ChatGPT, DeepSeek, Perplexity, Gemini, Gemma, Llama, Grok, and more.",
+    "topics": [
+     "ai",
+     "anthropic",
+     "artificial-intelligence",
+     "chatbot",
+     "chatgpt",
+     "claude",
+     "deepseek",
+     "developer-tools",
+     "gemini",
+     "genai",
+     "generative-ai",
+     "gpt",
+     "javascript",
+     "language-model",
+     "llama",
+     "llm",
+     "mcp",
+     "nodejs",
+     "openai",
+     "typescript"
+    ],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-08T08:56:26Z",
+    "archived": false,
+    "homepage": "https://repomix.com"
+   },
+   "current": {
+    "name": "repomix",
+    "role": "library",
+    "exec": "local",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "automation",
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "python",
+     "react",
+     "typescript"
+    ],
+    "one": "Warp, built for coding with multiple AI agents Available for MacOS, Linux, & Windows.",
+    "alt": [],
+    "desc": "Warp, built for coding with multiple AI agents Available for MacOS, Linux, & Windows.",
+    "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres",
+    "choose_if": "quieres need discussion? join us on <a href=\"https://discord.gg/wnyztwzfku\">discord</a>!",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "awesome-claude-code",
+     "agents-towards-production",
+     "ag2"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/yamadashy/repomix.git"
+  },
+  {
+   "id": "tree-sitter",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "codigo",
+   "gh": "tree-sitter/tree-sitter",
+   "github": {
+    "full_name": "tree-sitter/tree-sitter",
+    "stars": 27424,
+    "description": "An incremental parsing system for programming tools",
+    "topics": [
+     "c",
+     "incremental",
+     "parser",
+     "parsing",
+     "rust",
+     "tree-sitter",
+     "wasm"
+    ],
+    "license": "MIT",
+    "language": "Rust",
+    "pushed_at": "2026-11-10T10:00:32Z",
+    "archived": false,
+    "homepage": "https://tree-sitter.github.io"
+   }
+  },
+  {
+   "id": "awesome-bigdata",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "datos",
+   "gh": "oxnr/awesome-bigdata",
+   "github": {
+    "full_name": "oxnr/awesome-bigdata",
+    "stars": 14727,
+    "description": "A curated list of awesome big data frameworks, ressources and other awesomeness.",
+    "topics": [
+     "awesome",
+     "awesome-list",
+     "bigdata",
+     "data",
+     "data-analytics",
+     "data-science",
+     "data-stream",
+     "data-visualization",
+     "data-warehouse",
+     "database",
+     "distributed-database",
+     "series-database",
+     "stream-processing",
+     "streaming-data",
+     "visualize-data"
+    ],
+    "license": "MIT",
+    "language": null,
+    "pushed_at": "2026-11-06T15:10:05Z",
+    "archived": false,
+    "homepage": "https://github.com/onurakpolat/awesome-bigdata"
+   },
+   "current": {
+    "name": "awesome-bigdata",
+    "role": "directory",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "javascript",
+     "postgres",
+     "python",
+     "react",
+     "typescript"
+    ],
+    "one": "A curated list of awesome big data frameworks, resources and other awesomeness. Inspired by awesome-php, awesome-python, awesome-ruby, hadoopecosystemtable & big-data.",
+    "alt": [],
+    "desc": "A curated list of awesome big data frameworks, resources and other awesomeness. Inspired by awesome-php, awesome-python, awesome-ruby, hadoopecosystemtable & big-data.",
+    "stack": "python, typescript, javascript, react, docker, postgres",
+    "choose_if": "diseñas pipelines de datos grandes y necesitas descubrir el ecosistema",
+    "avoid_if": "tu proyecto es pequeño y no justifica herramientas de big data.",
+    "combines_with": [
+     "awesome-dataviz"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/oxnr/awesome-bigdata.git",
+   "editorial": {
+    "Etiquetas": "Ejecución ☁️ API/cloud · Rol 📂 directorio/recurso · Setup 🟢 fácil",
+    "Qué es": "directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. Resuelve el \"qué uso para X a escala\": un panorama del stack de datos grandes en un solo vistazo.",
+    "Por qué destaca": "lista \"awesome\" ampliamente referenciada que ofrece un panorama completo del stack de datos grandes en un solo vistazo. Su organización por categorías (ingesta, almacenamiento, procesamiento, streaming) facilita comparar alternativas sin navegar decenas de sitios.",
+    "Cómo funciona": "es un documento Markdown con enlaces clasificados por categoría; se consulta directamente en GitHub sin instalar nada, y cada enlace lleva al repo/docs de la herramienta.",
+    "Instalación": "no requiere instalación; se navega online en el repositorio de GitHub y se elige la herramienta según tu caso.",
+    "Casos": "elegir stack de datos a escala · descubrir herramientas por categoría · comparar alternativas de ingesta/almacenamiento/procesamiento.",
+    "Stack": "Markdown — **Modelo/API:** N/A (catálogo).",
+    "Elige si": "diseñas pipelines de datos grandes y necesitas descubrir el ecosistema — **Evita si:** tu proyecto es pequeño y no justifica herramientas de big data.",
+    "Combina con": "[awesome-dataviz](#-awesome-dataviz)",
+    "Repo": "[GitHub](https://github.com/oxnr/awesome-bigdata)"
+   }
+  },
+  {
+   "id": "data-science-ipython-notebooks",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "datos",
+   "gh": "donnemartin/data-science-ipython-notebooks",
+   "github": {
+    "full_name": "donnemartin/data-science-ipython-notebooks",
+    "stars": 29387,
+    "description": "Data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe, Keras), scikit-learn, Kaggle, big data (Spark, Hadoop MapReduce, HDFS), matplotlib, pandas, NumPy, SciPy, Python essentials, AWS, and various command lines.",
+    "topics": [
+     "aws",
+     "big-data",
+     "caffe",
+     "data-science",
+     "deep-learning",
+     "hadoop",
+     "kaggle",
+     "keras",
+     "machine-learning",
+     "mapreduce",
+     "matplotlib",
+     "numpy",
+     "pandas",
+     "python",
+     "scikit-learn",
+     "scipy",
+     "spark",
+     "tensorflow",
+     "theano"
+    ],
+    "license": "NOASSERTION",
+    "language": "Python",
+    "pushed_at": "2024-03-20T13:52:34Z",
+    "archived": false,
+    "homepage": ""
+   },
+   "current": {
+    "name": "data-science-ipython-notebooks",
+    "role": "directory",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "postgres",
+     "python",
+     "typescript"
+    ],
+    "one": "Colección de notebooks IPython de data science, machine learning y estadística.",
+    "alt": [],
+    "desc": "Directorio de notebooks educativos de data science. Es material de referencia, no una librería para importar en producción.",
+    "stack": "python, typescript, postgres",
+    "choose_if": "estudias/consultas DS con ejemplos ejecutables",
+    "avoid_if": "buscas una librería, no ejemplos, o necesitas material actualizado a las versiones más recientes.",
+    "combines_with": [
+     "dash",
+     "streamlit"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/donnemartin/data-science-ipython-notebooks.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol 📂 directorio/recurso · Setup 🟢 fácil",
+    "Qué es": "gran colección de notebooks de ciencia de datos y machine learning que cubre desde pandas y NumPy hasta deep learning y big data, con ejemplos listos para ejecutar. Resuelve el \"aprender DS con ejemplos reales\" sin tener que montarlos tú desde cero.",
+    "Por qué destaca": "uno de los repositorios de referencia más populares para aprender DS de forma práctica, con material abundante y bien organizado por temas. Su antigüedad y su volumen de notebooks lo convierten en un clásico para consulta y estudio.",
+    "Cómo funciona": "son notebooks Jupyter autocontenidos que se abren y ejecutan localmente, mostrando explicaciones y código sobre las librerías clásicas del ecosistema Python (pandas, NumPy, scikit-learn, etc.).",
+    "Instalación": "`git clone https://github.com/donnemartin/data-science-ipython-notebooks` y abrir los notebooks con `jupyter lab` (o `jupyter notebook`). Requiere Python y las librerías de cada notebook.",
+    "Casos": "aprender pandas/NumPy/ML · consultar ejemplos prácticos · material de referencia para clases o autoestudio.",
+    "Stack": "Python, Jupyter — **Modelo/API:** N/A.",
+    "Elige si": "estudias/consultas DS con ejemplos ejecutables — **Evita si:** buscas una librería, no ejemplos, o necesitas material actualizado a las versiones más recientes.",
+    "Combina con": "[dash](#-dash) · [streamlit](#-streamlit)",
+    "Repo": "[GitHub](https://github.com/donnemartin/data-science-ipython-notebooks)"
+   }
+  },
+  {
+   "id": "duckdb",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "datos",
+   "gh": "duckdb/duckdb",
+   "github": {
+    "full_name": "duckdb/duckdb",
+    "stars": 42956,
+    "description": "DuckDB is a high-performance analytical database system",
+    "topics": [
+     "analytics",
+     "database",
+     "embedded-database",
+     "olap",
+     "sql"
+    ],
+    "license": "MIT",
+    "language": "C++",
+    "pushed_at": "2026-11-10T12:23:56Z",
+    "archived": false,
+    "homepage": "http://www.duckdb.org"
+   }
+  },
+  {
+   "id": "marimo",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "datos",
+   "gh": "marimo-team/marimo",
+   "github": {
+    "full_name": "marimo-team/marimo",
+    "stars": 23494,
+    "description": "A reactive notebook for Python — run reproducible experiments, query with SQL, execute as a script, deploy as an app, and version with git. Stored as pure Python. All in a modern, AI-native editor.",
+    "topics": [
+     "artificial-intelligence",
+     "dag",
+     "data-science",
+     "data-visualization",
+     "dataflow",
+     "developer-tools",
+     "machine-learning",
+     "notebooks",
+     "pipeline",
+     "python",
+     "reactive",
+     "sql",
+     "web-app"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-10T12:20:47Z",
+    "archived": false,
+    "homepage": "https://marimo.io"
+   }
+  },
+  {
+   "id": "polars",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "datos",
+   "gh": "pola-rs/polars",
+   "github": {
+    "full_name": "pola-rs/polars",
+    "stars": 40301,
+    "description": "Extremely fast Query Engine for DataFrames, written in Rust",
+    "topics": [
+     "arrow",
+     "dataframe",
+     "dataframe-library",
+     "dataframes",
+     "out-of-core",
+     "polars",
+     "python",
+     "rust"
+    ],
+    "license": "MIT",
+    "language": "Rust",
+    "pushed_at": "2026-11-10T12:27:52Z",
+    "archived": false,
+    "homepage": "https://docs.pola.rs"
+   }
+  },
+  {
+   "id": "llama-factory",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "entrenamiento",
+   "gh": "hiyouga/LlamaFactory",
+   "github": {
+    "full_name": "hiyouga/LlamaFactory",
+    "stars": 75971,
+    "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+    "topics": [
+     "agent",
+     "ai",
+     "deepseek",
+     "fine-tuning",
+     "gemma",
+     "gpt",
+     "instruction-tuning",
+     "large-language-models",
+     "llama",
+     "llama3",
+     "llm",
+     "lora",
+     "moe",
+     "nlp",
+     "peft",
+     "qlora",
+     "quantization",
+     "qwen",
+     "rlhf",
+     "transformers"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-10T11:46:19Z",
+    "archived": false,
+    "homepage": "https://llamafactory.readthedocs.io"
+   }
+  },
+  {
+   "id": "peft",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "entrenamiento",
+   "gh": "huggingface/peft",
+   "github": {
+    "full_name": "huggingface/peft",
+    "stars": 21881,
+    "description": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning.",
+    "topics": [
+     "adapter",
+     "diffusion",
+     "fine-tuning",
+     "llm",
+     "lora",
+     "parameter-efficient-learning",
+     "peft",
+     "python",
+     "pytorch",
+     "transformers"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-10T08:54:35Z",
+    "archived": false,
+    "homepage": "https://huggingface.co/docs/peft"
+   }
+  },
+  {
+   "id": "pytorch",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "entrenamiento",
+   "gh": "pytorch/pytorch",
+   "github": {
+    "full_name": "pytorch/pytorch",
+    "stars": 105308,
+    "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+    "topics": [
+     "autograd",
+     "deep-learning",
+     "gpu",
+     "machine-learning",
+     "neural-network",
+     "numpy",
+     "python",
+     "tensor"
+    ],
+    "license": "NOASSERTION",
+    "language": "Python",
+    "pushed_at": "2026-11-10T12:29:46Z",
+    "archived": false,
+    "homepage": "https://pytorch.org"
+   }
+  },
+  {
+   "id": "transformers",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "entrenamiento",
+   "gh": "huggingface/transformers",
+   "github": {
+    "full_name": "huggingface/transformers",
+    "stars": 168732,
+    "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+    "topics": [
+     "audio",
+     "deep-learning",
+     "deepseek",
+     "gemma",
+     "glm",
+     "hacktoberfest",
+     "llm",
+     "machine-learning",
+     "model-hub",
+     "natural-language-processing",
+     "nlp",
+     "pretrained-models",
+     "python",
+     "pytorch",
+     "pytorch-transformers",
+     "qwen",
+     "speech-recognition",
+     "transformer",
+     "vlm"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-10T11:23:08Z",
+    "archived": false,
+    "homepage": "https://huggingface.co/transformers"
+   }
+  },
+  {
+   "id": "trl",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "entrenamiento",
+   "gh": "huggingface/trl",
+   "github": {
+    "full_name": "huggingface/trl",
+    "stars": 19704,
+    "description": "Train transformer language models with reinforcement learning.",
+    "topics": [],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-10T11:34:28Z",
+    "archived": false,
+    "homepage": "http://hf.co/docs/trl"
+   }
+  },
+  {
+   "id": "unsloth",
+   "is_new": true,
+   "target_cat": 7,
+   "target_sub": "entrenamiento",
+   "gh": "unslothai/unsloth",
+   "github": {
+    "full_name": "unslothai/unsloth",
+    "stars": 79276,
+    "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.",
+    "topics": [
+     "agent",
+     "ai",
+     "chatgpt",
+     "deepseek",
+     "fine-tuning",
+     "gemma",
+     "image-generation",
+     "llama",
+     "llm",
+     "llms",
+     "openai",
+     "python",
+     "qwen",
+     "reinforcement-learning",
+     "self-hosted",
+     "stable-diffusion",
+     "text-to-speech",
+     "tts",
+     "ui",
+     "unsloth"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-10T12:25:30Z",
+    "archived": false,
+    "homepage": "https://unsloth.ai/docs"
+   }
+  },
+  {
+   "id": "cli",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "herramientas",
+   "gh": "cli/cli",
+   "github": {
+    "full_name": "cli/cli",
+    "stars": 46948,
+    "description": "GitHub’s official command line tool",
+    "topics": [
+     "cli",
+     "git",
+     "github-api-v4",
+     "golang"
+    ],
+    "license": "MIT",
+    "language": "Go",
+    "pushed_at": "2026-11-10T10:13:05Z",
+    "archived": false,
+    "homepage": "https://cli.github.com"
+   },
+   "current": {
+    "name": "cli",
+    "role": "app",
+    "exec": "local",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "typescript"
+    ],
+    "one": "GitHub CLI (gh): pull requests, issues y el resto de GitHub desde la terminal.",
+    "alt": [],
+    "desc": "gh es la CLI oficial de GitHub. No es un agente; es la herramienta de git/GitHub que el resto del flujo asume instalada.",
+    "stack": "typescript",
+    "choose_if": "quieres gh is github on the command line. it brings pull requests, issues, and other github concep",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "andrej-karpathy-skills",
+     "antigravity-awesome-skills",
+     "awesome-agent-skills"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/cli/cli.git"
+  },
+  {
+   "id": "openai-python",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "herramientas",
+   "gh": "openai/openai-python",
+   "github": {
+    "full_name": "openai/openai-python",
+    "stars": 32103,
+    "description": "The official Python library for the OpenAI API",
+    "topics": [
+     "openai",
+     "python"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-10T08:01:21Z",
+    "archived": false,
+    "homepage": "https://pypi.org/project/openai/"
+   },
+   "current": {
+    "name": "openai-python",
+    "role": "platform",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "javascript",
+     "postgres",
+     "python",
+     "typescript"
+    ],
+    "one": "The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.9+ application.",
+    "alt": [],
+    "desc": "The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.9+ application. The library includes type definitions for all request params and response fields, and offers both synchronous and asynchronous clients powered by httpx.",
+    "stack": "python, typescript, javascript, postgres",
+    "choose_if": "usas modelos de OpenAI desde Python y quieres el cliente oficial",
+    "avoid_if": "quieres abstracción multi-proveedor ([litellm](#-litellm)) o no usas OpenAI.",
+    "combines_with": [
+     "litellm",
+     "langchain"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/openai/openai-python.git",
+   "editorial": {
+    "Etiquetas": "Ejecución ☁️ API/cloud · Rol 📚 librería/SDK · Setup 🟢 fácil",
+    "Qué es": "SDK oficial de OpenAI para Python, que expone de forma tipada y cómoda la API (chat, embeddings, imágenes, audio, asistentes) y es la base habitual para apps que usan sus modelos. Resuelve el glue HTTP: no escribes peticiones a mano, usas clientes tipados con streaming.",
+    "Por qué destaca": "cliente oficial y al día mantenido por OpenAI, con amplia adopción y soporte inmediato de las novedades de la API. Su tipado, streaming y soporte síncrono/async lo hacen la base de facto para integrar GPT en Python.",
+    "Cómo funciona": "envuelve las peticiones HTTP a la API en clientes Python síncronos y asíncronos, con tipado, streaming de respuestas, reintentos y manejo de errores integrados.",
+    "Instalación": "`pip install openai` y configurar `OPENAI_API_KEY` (variable de entorno). Requiere una cuenta OpenAI con clave válida y saldo.",
+    "Casos": "llamar a la API de OpenAI · base para apps que usan GPT · consumir embeddings, imágenes y audio desde Python.",
+    "Stack": "Python — **Modelo/API:** OpenAI (chat, embeddings, imágenes, audio).",
+    "Elige si": "usas modelos de OpenAI desde Python y quieres el cliente oficial — **Evita si:** quieres abstracción multi-proveedor ([litellm](#-litellm)) o no usas OpenAI.",
+    "Combina con": "[litellm](#-litellm) · [langchain](#-langchain)",
+    "Repo": "[GitHub](https://github.com/openai/openai-python)"
+   }
+  },
+  {
+   "id": "cosmos",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "modelos",
+   "gh": "NVIDIA/cosmos",
+   "github": {
+    "full_name": "NVIDIA/cosmos",
+    "stars": 12332,
+    "description": "NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous vehicles, smart infrastructure, and more.",
+    "topics": [],
+    "license": "NOASSERTION",
+    "language": null,
+    "pushed_at": "2026-11-10T01:44:53Z",
+    "archived": false,
+    "homepage": "https://www.nvidia.com/en-us/ai/cosmos/"
+   },
+   "current": {
+    "name": "cosmos",
+    "role": "runtime",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "postgres",
+     "python",
+     "typescript"
+    ],
+    "one": "Modelos NVIDIA Cosmos de world modeling y generación visual/simulación.",
+    "alt": [],
+    "desc": "Colección NVIDIA Cosmos para modelos de mundo y video. Setup pesado: GPU y checkpoints. No es un editor de imagen ligero.",
+    "stack": "python, typescript, docker, postgres",
+    "choose_if": "trabajas IA física/robótica y necesitas datos sintéticos",
+    "avoid_if": "haces tareas de texto/UI o no tienes GPU para servirlo.",
+    "combines_with": [
+     "diffusers"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/NVIDIA/cosmos.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🔴 pesado",
+    "Qué es": "plataforma de \"world foundation models\" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. Resuelve la escasez de datos físicos: genera escenas/vídeo sintético en lugar de capturarlos a mano.",
+    "Por qué destaca": "iniciativa de NVIDIA con ecosistema y pesos publicados en Hugging Face, una referencia clave para la generación de datos de simulación física. Su procedencia (NVIDIA) y el respaldo de la comunidad de robótica le dan credibilidad en un nicho emergente.",
+    "Cómo funciona": "ejecuta modelos generativos de mundo en Python sobre GPU para producir vídeo/escenas sintéticas que sirven como datos de entrenamiento o simulación para agentes físicos y robótica.",
+    "Instalación": "`git clone https://github.com/NVIDIA/Cosmos`, instalar dependencias del repo y descargar pesos Cosmos desde Hugging Face. Requiere GPU potente (NVIDIA, CUDA) para inferencia y generación.",
+    "Casos": "generar datos/mundos sintéticos · entrenar agentes físicos/robótica · simulación de escenas para entrenamiento.",
+    "Stack": "Python, GPU (NVIDIA/CUDA) — **Modelo/API:** modelos Cosmos de NVIDIA.",
+    "Limitaciones": "exige GPU de gama alta y descarga de pesos grandes; el dominio es muy específico (IA física), sin utilidad para tareas de texto/UI.",
+    "Elige si": "trabajas IA física/robótica y necesitas datos sintéticos — **Evita si:** haces tareas de texto/UI o no tienes GPU para servirlo.",
+    "Combina con": "[diffusers](#-diffusers)",
+    "Repo": "[GitHub](https://github.com/NVIDIA/Cosmos)"
+   }
+  },
+  {
+   "id": "deepseek-coder",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "modelos",
+   "gh": "deepseek-ai/DeepSeek-Coder",
+   "github": {
+    "full_name": "deepseek-ai/DeepSeek-Coder",
+    "stars": 24365,
+    "description": "DeepSeek Coder: Let the Code Write Itself",
+    "topics": [],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2025-11-11T06:44:56Z",
+    "archived": false,
+    "homepage": "https://chat.deepseek.com/"
+   },
+   "current": {
+    "name": "DeepSeek-Coder",
+    "role": "library",
+    "exec": "local",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "javascript",
+     "python",
+     "typescript"
+    ],
+    "one": "DeepSeek Coder is composed of a series of code language models, each trained from scratch on 2T tokens, with a composition of 87% code and 13% natural language in both English and Chinese.",
+    "alt": [],
+    "desc": "DeepSeek Coder is composed of a series of code language models, each trained from scratch on 2T tokens, with a composition of 87% code and 13% natural language in both English and Chinese. We provide various sizes of the code model, ranging from 1B to 33B versions.",
+    "stack": "python, typescript, javascript, docker",
+    "choose_if": "quieres un modelo de código abierto y desplegable on-prem",
+    "avoid_if": "prefieres APIs comerciales gestionadas o no tienes GPU para servirlo.",
+    "combines_with": [
+     "litellm",
+     "codegraph"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/deepseek-ai/DeepSeek-Coder.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🔴 pesado",
+    "Qué es": "familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software. Resuelve la dependencia de APIs propietarias para tareas de código: puedes desplegar el modelo en tu propia infraestructura.",
+    "Por qué destaca": "una de las alternativas abiertas más fuertes para tareas de código, competitiva con modelos propietarios y desplegable en local. Su publicación de pesos y su buena recepción en benchmarks de código la consolidan como referencia open en este nicho.",
+    "Cómo funciona": "modelos transformer ejecutados con PyTorch sobre GPU; se cargan en local (p. ej. vía Hugging Face Transformers o vLLM) o se consumen por la API oficial de DeepSeek, con contextos largos aptos para repos.",
+    "Instalación": "`pip install transformers torch` y descarga de pesos desde Hugging Face, o uso vía API de DeepSeek. El despliegue local requiere GPU con VRAM generosa según el tamaño del modelo.",
+    "Casos": "generación y revisión de código · asistencia técnica con modelo propio · completado de código en entornos on-prem.",
+    "Stack": "Python, PyTorch, GPU — **Modelo/API:** modelos DeepSeek (local vía HF/vLLM o API oficial).",
+    "Limitaciones": "el despliegue local exige GPU potente (VRAM escala con el tamaño del modelo); los pesos grandes son lentos de descargar y de servir.",
+    "Elige si": "quieres un modelo de código abierto y desplegable on-prem — **Evita si:** prefieres APIs comerciales gestionadas o no tienes GPU para servirlo.",
+    "Combina con": "[litellm](#-litellm) · [codegraph](#-codegraph)",
+    "Repo": "[GitHub](https://github.com/deepseek-ai/DeepSeek-Coder)"
+   }
+  },
+  {
+   "id": "nemotron",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "modelos",
+   "gh": "NVIDIA-NeMo/Nemotron",
+   "github": {
+    "full_name": "NVIDIA-NeMo/Nemotron",
+    "stars": 2318,
+    "description": "Developer Asset Hub for NVIDIA Nemotron — A one-stop resource for training recipes, usage cookbooks, datasets, and full end-to-end reference examples to build with Nemotron models",
+    "topics": [
+     "ai",
+     "fine-tuning",
+     "model-training",
+     "nemotron",
+     "nvidia",
+     "reinforcement-learning"
+    ],
+    "license": "Apache-2.0",
+    "language": "Jupyter Notebook",
+    "pushed_at": "2026-11-05T19:36:49Z",
+    "archived": false,
+    "homepage": "https://docs.nvidia.com/nemotron/latest/index.html"
+   },
+   "current": {
+    "name": "Nemotron",
+    "role": "app",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "postgres",
+     "python",
+     "typescript"
+    ],
+    "one": "Open and efficient models for agentic AI. Training recipes, deployment guides, and use-case examples for the Nemotron family.",
+    "alt": [],
+    "desc": "Open and efficient models for agentic AI. Training recipes, deployment guides, and use-case examples for the Nemotron family.",
+    "stack": "python, typescript, postgres",
+    "choose_if": "quieres nvidia nemotron developer repository",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "openwa",
+     "skills",
+     "agency-agents"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/NVIDIA-NeMo/Nemotron.git"
+  },
+  {
+   "id": "timesfm",
+   "is_new": false,
+   "target_cat": 7,
+   "target_sub": "modelos",
+   "gh": "google-research/timesfm",
+   "github": {
+    "full_name": "google-research/timesfm",
+    "stars": 35361,
+    "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+    "topics": [],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-09-29T19:36:25Z",
+    "archived": false,
+    "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/"
+   },
+   "current": {
+    "name": "timesfm",
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "python",
+     "typescript"
+    ],
+    "one": "Modelo fundacional de Google Research para forecasting de series temporales.",
+    "alt": [],
+    "desc": "TimesFM predice series temporales con un decoder-only pretrained. Es un modelo de investigación/producción de forecasting, no un dashboard.",
+    "stack": "python, typescript, docker",
+    "choose_if": "quieres timesfm (time series foundation model) is a pretrained time-series foundation",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "firecrawl",
+     "crawl4ai",
+     "scrapy"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/google-research/timesfm.git"
+  },
+  {
+   "id": "docling",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "conversion",
+   "gh": "docling-project/docling",
+   "github": {
+    "full_name": "docling-project/docling",
+    "stars": 70370,
+    "description": "Get your documents ready for gen AI",
+    "topics": [
+     "ai",
+     "convert",
+     "document-parser",
+     "document-parsing",
+     "documents",
+     "docx",
+     "html",
+     "markdown",
+     "pdf",
+     "pdf-converter",
+     "pdf-to-json",
+     "pdf-to-text",
+     "pptx",
+     "tables",
+     "xlsx"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-11-10T11:42:41Z",
+    "archived": false,
+    "homepage": "https://docling-project.github.io/docling"
+   }
+  },
+  {
+   "id": "marker",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "conversion",
+   "gh": "datalab-to/marker",
+   "github": {
+    "full_name": "datalab-to/marker",
+    "stars": 40838,
+    "description": "Convert PDF to markdown + JSON quickly with high accuracy",
+    "topics": [],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-10-29T18:11:14Z",
+    "archived": false,
+    "homepage": "https://www.datalab.to"
+   }
+  },
+  {
+   "id": "markitdown",
+   "is_new": false,
+   "target_cat": 13,
+   "target_sub": "conversion",
+   "gh": "microsoft/markitdown",
+   "github": {
+    "full_name": "microsoft/markitdown",
+    "stars": 194709,
+    "description": "Python tool for converting files and office documents to Markdown.",
+    "topics": [
+     "autogen",
+     "autogen-extension",
+     "langchain",
+     "markdown",
+     "microsoft-office",
+     "openai",
+     "pdf"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-11-07T00:14:01Z",
+    "archived": false,
+    "homepage": ""
+   },
+   "current": {
+    "name": "markitdown",
+    "role": "directory",
+    "exec": "local",
+    "setup": "easy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "postgres",
+     "python",
+     "typescript"
+    ],
+    "one": "> MarkItDown performs I/O with the privileges of the current process. Like open() or requests.get(), it will access resources that the process itself can access.",
+    "alt": [],
+    "desc": "MarkItDown performs I/O with the privileges of the current process. Like open() or requests.get(), it will access resources that the process itself can access. Sanitize your inputs in untrusted environments, and call the narrowest `convert_*` function needed for your use case (e.g., `convert_stream()`, or `convert_local()`). See the Security Considerations section of the documentation for .",
+    "stack": "python, typescript, docker, postgres",
+    "choose_if": "alimentas LLMs con documentos de formatos variados",
+    "avoid_if": "ya tienes el texto limpio o necesitas fidelidad de layout total (no es un reconstructor de PDF).",
+    "combines_with": [
+     "ppt-master",
+     "open-notebook",
+     "docs → presentaciones"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/microsoft/markitdown.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol 📚 librería/SDK · Setup 🟢 fácil",
+    "Qué es": "utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. Es la puerta de entrada habitual para ingesta de documentos en pipelines RAG.",
+    "Por qué destaca": "proyecto oficial de Microsoft muy adoptado como paso previo a LLMs, por su salida ordenada y su catálogo de convertidores y plugins; se integra fácil en flujos de ingesta por su CLI y API Python.",
+    "Cómo funciona": "detecta el tipo de archivo y aplica el extractor adecuado (parsers de Office, OCR por modelos de visión, Whisper para audio), normalizando todo a Markdown estructurado con encabezados y tablas.",
+    "Instalación": "`pip install markitdown` (o `pip install 'markitdown[all]'` para todos los formatos). Los convertidores de visión/audio requieren claves de API opcionales.",
+    "Casos": "convertir carpetas de informes (XLSX/PDF) a `.md` · ingesta de datos para IA · preprocesar documentos antes de indexarlos en un vector store.",
+    "Stack": "Python 3.8+ — **Modelo/API:** opcional (visión para OCR, Whisper para audio), agnóstico vía variables de entorno.",
+    "Elige si": "alimentas LLMs con documentos de formatos variados — **Evita si:** ya tienes el texto limpio o necesitas fidelidad de layout total (no es un reconstructor de PDF).",
+    "Combina con": "[ppt-master](#-ppt-master) · [open-notebook](#-open-notebook) · receta [Docs → presentaciones](#-9-documentos--presentaciones)",
+    "Repo": "[GitHub](https://github.com/microsoft/markitdown)"
+   }
+  },
+  {
+   "id": "mineru",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "conversion",
+   "gh": "opendatalab/MinerU",
+   "github": {
+    "full_name": "opendatalab/MinerU",
+    "stars": 83433,
+    "description": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.",
+    "topics": [
+     "ai4science",
+     "document-analysis",
+     "docx",
+     "extract-data",
+     "layout-analysis",
+     "ocr",
+     "parser",
+     "pdf",
+     "pdf-converter",
+     "pdf-extractor-llm",
+     "pdf-extractor-pretrain",
+     "pdf-extractor-rag",
+     "pdf-parser",
+     "pptx",
+     "python",
+     "xlsx"
+    ],
+    "license": "NOASSERTION",
+    "language": "Python",
+    "pushed_at": "2026-11-10T11:46:26Z",
+    "archived": false,
+    "homepage": "https://opendatalab.github.io/MinerU/"
+   }
+  },
+  {
+   "id": "pandoc",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "conversion",
+   "gh": "jgm/pandoc",
+   "github": {
+    "full_name": "jgm/pandoc",
+    "stars": 46873,
+    "description": "Universal markup converter",
+    "topics": [
+     "commonmark",
+     "converter",
+     "document",
+     "haskell",
+     "markdown",
+     "markup",
+     "pandoc",
+     "presentation",
+     "publishing"
+    ],
+    "license": "GPL-2.0",
+    "language": "Haskell",
+    "pushed_at": "2026-11-10T06:50:12Z",
+    "archived": false,
+    "homepage": "https://pandoc.org"
+   }
+  },
+  {
+   "id": "pdf-inspector",
+   "is_new": false,
+   "target_cat": 13,
+   "target_sub": "conversion",
+   "gh": "firecrawl/pdf-inspector",
+   "github": {
+    "full_name": "firecrawl/pdf-inspector",
+    "stars": 19980,
+    "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
+    "topics": [
+     "markdown",
+     "nodejs",
+     "ocr-routing",
+     "pdf",
+     "pdf-classification",
+     "pdf-extraction",
+     "pdf-parser",
+     "python",
+     "rust",
+     "text-extraction"
+    ],
+    "license": "MIT",
+    "language": "Rust",
+    "pushed_at": "2026-10-22T22:32:29Z",
+    "archived": false,
+    "homepage": "https://firecrawl.github.io/pdf-inspector/"
+   },
+   "current": {
+    "name": "pdf-inspector",
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "javascript",
+     "python",
+     "typescript"
+    ],
+    "one": "Librería Rust para clasificar PDFs (texto vs escaneado) y extraer texto con posiciones.",
+    "alt": [],
+    "desc": "PDF Inspector detecta si un PDF es texto o escaneado y extrae contenido con coordenadas. Encaja en pipelines de documentos, no como visor.",
+    "stack": "python, typescript, javascript",
+    "choose_if": "quieres pdf-inspector",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "firecrawl",
+     "crawl4ai",
+     "scrapy"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/firecrawl/pdf-inspector.git"
+  },
+  {
+   "id": "unstructured",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "conversion",
+   "gh": "Unstructured-IO/unstructured",
+   "github": {
+    "full_name": "Unstructured-IO/unstructured",
+    "stars": 15709,
+    "description": "Convert documents to structured data effortlessly. Unstructured is open-source ETL solution for transforming complex documents into clean, structured formats for language models.  Visit our website to learn more about our enterprise grade Platform product for production grade workflows, partitioning, enrichments, chunking and embedding.",
+    "topics": [
+     "data-pipelines",
+     "deep-learning",
+     "document-image-analysis",
+     "document-image-processing",
+     "document-parser",
+     "document-parsing",
+     "docx",
+     "donut",
+     "information-retrieval",
+     "langchain",
+     "llm",
+     "machine-learning",
+     "ml",
+     "natural-language-processing",
+     "nlp",
+     "ocr",
+     "pdf",
+     "pdf-to-json",
+     "pdf-to-text",
+     "preprocessing"
+    ],
+    "license": "Apache-2.0",
+    "language": "HTML",
+    "pushed_at": "2026-11-06T21:29:24Z",
+    "archived": false,
+    "homepage": "https://www.unstructured.io/"
+   }
+  },
+  {
+   "id": "youtube2webpage",
+   "is_new": false,
+   "target_cat": 13,
+   "target_sub": "conversion",
+   "gh": "obra/Youtube2Webpage",
+   "github": {
+    "full_name": "obra/Youtube2Webpage",
+    "stars": 1464,
+    "description": "I learn much better from text than from videos",
+    "topics": [],
+    "license": "MIT",
+    "language": "JavaScript",
+    "pushed_at": "2023-12-01T17:46:50Z",
+    "archived": false,
+    "homepage": null
+   },
+   "current": {
+    "name": "Youtube2Webpage",
+    "role": "library",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "postgres",
+     "typescript"
+    ],
+    "one": "Youtube-to-Webpage is a Perl script to create a webpage from a Youtube video with a transcript generated from the video's closed captions paired with screenshots of the video.",
+    "alt": [],
+    "desc": "Youtube-to-Webpage is a Perl script to create a webpage from a Youtube video with a transcript generated from the video's closed captions paired with screenshots of the video.",
+    "stack": "typescript, postgres",
+    "choose_if": "quieres video → artículo con transcripción y capturas",
+    "avoid_if": "necesitas edición de video o el contenido no tiene subtítulos.",
+    "combines_with": [
+     "whisper"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/obra/Youtube2Webpage.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol 📚 librería/SDK · Setup 🟢 fácil",
+    "Qué es": "script en Perl que genera una página web legible a partir de un video de YouTube, intercalando la transcripción de subtítulos con capturas de pantalla del momento citado. Convierte una charla en un artículo navegable con contexto visual.",
+    "Por qué destaca": "automatiza el paso de charla a artículo combinando texto e imágenes sincronizadas; es una utilidad de nicho y poco conocida, pero efectiva para su propósito.",
+    "Cómo funciona": "usa yt-dlp para descargar video y subtítulos y ffmpeg para extraer fotogramas en los timestamps relevantes, ensamblando todo en una página HTML estática con texto e imágenes alineadas.",
+    "Instalación": "clonar el repo y ejecutar el script Perl con yt-dlp y ffmpeg instalados en el sistema. Requiere Perl y los binarios mencionados.",
+    "Casos": "convertir una charla en artículo legible · documentar video como texto+imágenes · archivar contenido de YouTube como página estática.",
+    "Stack": "Perl, yt-dlp, ffmpeg — **Modelo/API:** N/A.",
+    "Elige si": "quieres video → artículo con transcripción y capturas — **Evita si:** necesitas edición de video o el contenido no tiene subtítulos.",
+    "Combina con": "[whisper](#-whisper)",
+    "Repo": "[GitHub](https://github.com/obra/Youtube2Webpage)"
+   }
+  },
+  {
+   "id": "mermaid",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "diagramas",
+   "gh": "mermaid-js/mermaid",
+   "github": {
+    "full_name": "mermaid-js/mermaid",
+    "stars": 91061,
+    "description": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown",
+    "topics": [
+     "diagrams",
+     "diagrams-as-code",
+     "documentation",
+     "flowchart",
+     "javascript",
+     "mindmap",
+     "typescript",
+     "uml-diagrams"
+    ],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T09:20:00Z",
+    "archived": false,
+    "homepage": "https://mermaid.ai/open-source/"
+   }
+  },
+  {
+   "id": "ocrmypdf",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "ocr",
+   "gh": "ocrmypdf/OCRmyPDF",
+   "github": {
+    "full_name": "ocrmypdf/OCRmyPDF",
+    "stars": 35286,
+    "description": "OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched",
+    "topics": [
+     "image-processing",
+     "ocr",
+     "pdf",
+     "python",
+     "tesseract"
+    ],
+    "license": "MPL-2.0",
+    "language": "Python",
+    "pushed_at": "2026-11-09T21:41:04Z",
+    "archived": false,
+    "homepage": "http://ocrmypdf.readthedocs.io/"
+   }
+  },
+  {
+   "id": "olmocr",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "ocr",
+   "gh": "allenai/olmocr",
+   "github": {
+    "full_name": "allenai/olmocr",
+    "stars": 19822,
+    "description": "Toolkit for linearizing PDFs for LLM datasets/training",
+    "topics": [],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-03-25T17:52:37Z",
+    "archived": false,
+    "homepage": null
+   }
+  },
+  {
+   "id": "paddleocr",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "ocr",
+   "gh": "PaddlePaddle/PaddleOCR",
+   "github": {
+    "full_name": "PaddlePaddle/PaddleOCR",
+    "stars": 92518,
+    "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
+    "topics": [
+     "ai4science",
+     "chineseocr",
+     "document-parsing",
+     "document-translation",
+     "kie",
+     "ocr",
+     "paddleocr-vl",
+     "pdf-extractor-rag",
+     "pdf-parser",
+     "pdf2markdown",
+     "pp-ocr",
+     "pp-structure",
+     "rag"
+    ],
+    "license": "Apache-2.0",
+    "language": "Python",
+    "pushed_at": "2026-09-16T03:31:50Z",
+    "archived": false,
+    "homepage": "https://www.paddleocr.com"
+   }
+  },
+  {
+   "id": "tesseract",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "ocr",
+   "gh": "tesseract-ocr/tesseract",
+   "github": {
+    "full_name": "tesseract-ocr/tesseract",
+    "stars": 77439,
+    "description": "Tesseract Open Source OCR Engine (main repository)",
+    "topics": [
+     "hacktoberfest",
+     "lstm",
+     "machine-learning",
+     "ocr",
+     "ocr-engine",
+     "tesseract",
+     "tesseract-ocr"
+    ],
+    "license": "Apache-2.0",
+    "language": "C++",
+    "pushed_at": "2026-11-09T11:40:17Z",
+    "archived": false,
+    "homepage": "https://tesseract-ocr.github.io/"
+   }
+  },
+  {
+   "id": "unlimited-ocr",
+   "is_new": false,
+   "target_cat": 13,
+   "target_sub": "ocr",
+   "gh": "baidu/Unlimited-OCR",
+   "github": {
+    "full_name": "baidu/Unlimited-OCR",
+    "stars": 31057,
+    "description": "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing.",
+    "topics": [],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-11-09T07:52:10Z",
+    "archived": false,
+    "homepage": null
+   },
+   "current": {
+    "name": "Unlimited-OCR",
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "vision",
+     "ocr",
+     "docs"
+    ],
+    "one": "OCR de Baidu para parsear documentos largos en una sola pasada.",
+    "alt": [],
+    "desc": "Unlimited OCR apunta a extracción de texto y estructura en documentos largos. Setup de visión; no es un editor PDF.",
+    "stack": "python, typescript, docker, postgres",
+    "choose_if": "quieres unlimited ocr works",
+    "avoid_if": "el caso no requiere generación multimedia o ya usas alternativas dedicadas",
+    "combines_with": [
+     "litellm",
+     "cosmos",
+     "comfyui"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/baidu/Unlimited-OCR.git"
+  },
+  {
+   "id": "pdfcraft",
+   "is_new": false,
+   "target_cat": 13,
+   "target_sub": "pdf",
+   "gh": "PDFCraftTool/pdfcraft",
+   "github": {
+    "full_name": "PDFCraftTool/pdfcraft",
+    "stars": 9810,
+    "description": "PDFCraft is a free, privacy-focused PDF toolkit that runs entirely in your browser. With 90+ professional tools, you can edit, convert, merge, split, and secure your PDF files without ever uploading them to a server.",
+    "topics": [],
+    "license": "AGPL-3.0",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-08T01:06:03Z",
+    "archived": false,
+    "homepage": "https://pdfcraft.devtoolcafe.com"
+   },
+   "current": {
+    "name": "pdfcraft",
+    "role": "app",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "javascript",
+     "javascript-typescript",
+     "postgres",
+     "react",
+     "typescript"
+    ],
+    "one": "Editor PDF en el navegador: fusionar, partir, comprimir y editar sin subir archivos.",
+    "alt": [],
+    "desc": "PDFCraft procesa PDFs en el cliente. Encaja para utilidades locales de documentos, no para un pipeline de conversión masiva.",
+    "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
+    "choose_if": "manipulas PDFs con privacidad y sin instalar nada",
+    "avoid_if": "necesitas conversión a Markdown para IA ([markitdown](#-markitdown)) o edición de contenido (no solo manipulación de páginas).",
+    "combines_with": [
+     "markitdown"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/PDFCraftTool/pdfcraft.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol 🖥️ app/UI · Setup 🟢 fácil",
+    "Qué es": "conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. Apunta a ser la alternativa local y sin nube a los servicios online de PDF.",
+    "Por qué destaca": "todo el procesamiento ocurre en tu navegador, así que los documentos nunca salen de tu equipo ni dependen de un servicio de pago; útil para manipular PDFs sensibles sin subirlos a terceros.",
+    "Cómo funciona": "carga el PDF en el cliente y manipula sus páginas con librerías JS de PDF (p. ej. pdf-lib) en el propio navegador, sin subir nada a la nube; las operaciones son por página o por documento completo.",
+    "Instalación": "abrir la web en el navegador, o `npm install` y ejecutar en local desde el repo. No requiere backend ni GPU.",
+    "Casos": "combinar/dividir/convertir PDF sin subirlos a la nube · manipulación local de documentos sensibles · comprimir PDF antes de enviarlos.",
+    "Stack": "web/TS — **Modelo/API:** N/A.",
+    "Elige si": "manipulas PDFs con privacidad y sin instalar nada — **Evita si:** necesitas conversión a Markdown para IA ([markitdown](#-markitdown)) o edición de contenido (no solo manipulación de páginas).",
+    "Combina con": "[markitdown](#-markitdown)",
+    "Repo": "[GitHub](https://github.com/PDFCraftTool/pdfcraft)"
+   }
+  },
+  {
+   "id": "pdfding",
+   "is_new": false,
+   "target_cat": 13,
+   "target_sub": "pdf",
+   "gh": "mrmn2/PdfDing",
+   "github": {
+    "full_name": "mrmn2/PdfDing",
+    "stars": 1839,
+    "description": "NOW MANAGED ON CODEBERG",
+    "topics": [
+     "document-management",
+     "lightweight",
+     "pdf",
+     "pdf-cloud",
+     "pdf-editor",
+     "pdf-management",
+     "pdf-viewer",
+     "self-hosted"
+    ],
+    "license": null,
+    "language": null,
+    "pushed_at": "2026-08-29T05:53:07Z",
+    "archived": true,
+    "homepage": "https://codeberg.org/mrmn/PdfDing"
+   },
+   "current": {
+    "name": "PdfDing",
+    "role": "app",
+    "exec": "local",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "docker",
+     "frontend",
+     "javascript",
+     "python",
+     "typescript"
+    ],
+    "one": "Gestor, visor y editor de PDFs auto-hospedable, pensado para ser mínimo y rápido.",
+    "alt": [],
+    "desc": "PdfDing es un manager de PDFs que hosteas tú. Alternativa ligera a suites documentales pesadas.",
+    "stack": "python, typescript, javascript, docker",
+    "choose_if": "quieres selfhosted pdf manager, viewer and editor offering a seamless user experience on multiple ",
+    "avoid_if": "ya tienes una herramienta equivalente o no encaja con tu stack actual",
+    "combines_with": [
+     "markitdown",
+     "ppt-master",
+     "reveal.js"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/mrmn2/PdfDing.git"
+  },
+  {
+   "id": "pdfmathtranslate",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "pdf",
+   "gh": "PDFMathTranslate/PDFMathTranslate",
+   "github": {
+    "full_name": "PDFMathTranslate/PDFMathTranslate",
+    "stars": 38344,
+    "description": "[EMNLP 2025 Demo] PDF scientific paper translation with preserved formats - 基于 AI 完整保留排版的 PDF 文档全文双语翻译，支持 Google/DeepL/Ollama/OpenAI 等服务，提供 CLI/GUI/MCP/Docker/Zotero",
+    "topics": [
+     "chinese",
+     "document",
+     "edit",
+     "english",
+     "japanese",
+     "korean",
+     "latex",
+     "math",
+     "mcp",
+     "modify",
+     "obsidian",
+     "openai",
+     "pdf",
+     "pdf2zh",
+     "python",
+     "russian",
+     "translate",
+     "translation",
+     "zotero"
+    ],
+    "license": "AGPL-3.0",
+    "language": "Python",
+    "pushed_at": "2026-11-10T12:15:47Z",
+    "archived": false,
+    "homepage": "https://pdf2zh.com"
+   }
+  },
+  {
+   "id": "stirling-pdf",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "pdf",
+   "gh": "Stirling-Tools/Stirling-PDF",
+   "github": {
+    "full_name": "Stirling-Tools/Stirling-PDF",
+    "stars": 96202,
+    "description": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
+    "topics": [
+     "docker",
+     "hacktoberfest",
+     "java",
+     "pdf",
+     "pdf-converter",
+     "pdf-editor",
+     "pdf-manipulation",
+     "pdf-merger",
+     "pdf-ocr",
+     "pdf-tools",
+     "pdf-web-apps",
+     "pdfmerger",
+     "self-hosted"
+    ],
+    "license": "NOASSERTION",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-10T12:22:30Z",
+    "archived": false,
+    "homepage": "https://stirling.com"
+   }
+  },
+  {
+   "id": "marp",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "slides",
+   "gh": "marp-team/marp",
+   "github": {
+    "full_name": "marp-team/marp",
+    "stars": 12738,
+    "description": "The entrance repository of Markdown presentation ecosystem",
+    "topics": [
+     "deck",
+     "markdown",
+     "marp",
+     "presentation",
+     "slides"
+    ],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-07T09:29:51Z",
+    "archived": false,
+    "homepage": "https://marp.app/"
+   }
+  },
+  {
+   "id": "ppt-master",
+   "is_new": false,
+   "target_cat": 13,
+   "target_sub": "slides",
+   "gh": "hugohe3/ppt-master",
+   "github": {
+    "full_name": "hugohe3/ppt-master",
+    "stars": 75513,
+    "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+    "topics": [
+     "ai-agent",
+     "aippt",
+     "office",
+     "powerpoint",
+     "powerpoint-generation",
+     "ppt",
+     "pptx",
+     "presentation",
+     "slide",
+     "slides"
+    ],
+    "license": "MIT",
+    "language": "Python",
+    "pushed_at": "2026-11-09T13:39:54Z",
+    "archived": false,
+    "homepage": "https://hugohe3.github.io/ppt-master-examples/"
+   },
+   "current": {
+    "name": "ppt-master",
+    "role": "library",
+    "exec": "hybrid",
+    "setup": "heavy",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "postgres",
+     "python",
+     "typescript"
+    ],
+    "one": "This project is kept free and open source with the support of PackyCode , APIKEY.FUN , RunAPI , YouYun ZhiSuan and other sponsors.",
+    "alt": [],
+    "desc": "This project is kept free and open source with the support of PackyCode , APIKEY.FUN , RunAPI , YouYun ZhiSuan and other sponsors.",
+    "stack": "python, typescript, postgres",
+    "choose_if": "quieres PPTX editable de Office rápido",
+    "avoid_if": "prefieres slides web por código ([reveal.js](#-revealjs)) o control de diseño pixel-perfect.",
+    "combines_with": [
+     "markitdown",
+     "docs → presentaciones"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/hugohe3/ppt-master.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🟢 fácil",
+    "Qué es": "generador que transforma documentos de texto en presentaciones PowerPoint (.pptx) editables nativas, listas para abrir y ajustar en Office. Sustituye el maquetado manual de slides por un borrador estructurado por un LLM.",
+    "Por qué destaca": "entrega un PPTX realmente editable (formas y textos nativos) en lugar de un PDF plano, ahorrando el tedio de maquetar slides desde cero; útil para borradores rápidos a partir de un informe.",
+    "Cómo funciona": "un LLM estructura el contenido en secciones y diapositivas (título, bullets, layout), y luego python-pptx genera el archivo .pptx con sus formas, textos y diseño aplicado a una plantilla.",
+    "Instalación": "`git clone` del repo y `pip install -r requirements.txt`; requiere clave de API del modelo (Anthropic u OpenAI según configuración).",
+    "Casos": "pasar un informe Markdown a un borrador de slides corporativos en segundos · generar una primera versión editable de una presentación a partir de notas.",
+    "Stack": "Python, python-pptx — **Modelo/API:** Claude 3.5 Sonnet o GPT-4o para estructurar (vía API key).",
+    "Elige si": "quieres PPTX editable de Office rápido — **Evita si:** prefieres slides web por código ([reveal.js](#-revealjs)) o control de diseño pixel-perfect.",
+    "Combina con": "[markitdown](#-markitdown) · receta [Docs → presentaciones](#-9-documentos--presentaciones)",
+    "Repo": "[GitHub](https://github.com/hugohe3/ppt-master)"
+   }
+  },
+  {
+   "id": "presenton",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "slides",
+   "gh": "presenton/presenton",
+   "github": {
+    "full_name": "presenton/presenton",
+    "stars": 11838,
+    "description": "Open-Source AI Presentation Generator and API (Gamma, Canva, Beautiful AI, Decktopus, Presentations AI Alternative)",
+    "topics": [
+     "ai-agent",
+     "ai-presentation",
+     "api",
+     "gamma",
+     "powerpoint-agent",
+     "powerpoint-ai",
+     "powerpoint-generation",
+     "presentation",
+     "presentation-agent"
+    ],
+    "license": "Apache-2.0",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-06T05:46:19Z",
+    "archived": false,
+    "homepage": "https://presenton.ai"
+   }
+  },
+  {
+   "id": "reveal.js",
+   "is_new": false,
+   "target_cat": 13,
+   "target_sub": "slides",
+   "gh": "hakimel/reveal.js",
+   "github": {
+    "full_name": "hakimel/reveal.js",
+    "stars": 72551,
+    "description": "The HTML Presentation Framework",
+    "topics": [
+     "presentations",
+     "slides",
+     "slideshow"
+    ],
+    "license": "MIT",
+    "language": "JavaScript",
+    "pushed_at": "2026-09-30T19:38:13Z",
+    "archived": false,
+    "homepage": "https://revealjs.com"
+   },
+   "current": {
+    "name": "reveal.js",
+    "role": "runtime",
+    "exec": "hybrid",
+    "setup": "medium",
+    "mcp": false,
+    "prov": [],
+    "tags": [
+     "javascript",
+     "javascript-typescript",
+     "typescript"
+    ],
+    "one": "reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at revealjs.com.",
+    "alt": [],
+    "desc": "reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at revealjs.com.",
+    "stack": "javascript/typescript, typescript, javascript",
+    "choose_if": "quieres slides web por código, versionables",
+    "avoid_if": "necesitas PPTX editable en Office ([ppt-master](#-ppt-master)) o un editor visual de slides.",
+    "combines_with": [
+     "markitdown",
+     "ppt-master",
+     "revealjs"
+    ],
+    "alternatives": []
+   },
+   "old_repo_url": "https://github.com/hakimel/reveal.js.git",
+   "editorial": {
+    "Etiquetas": "Ejecución 🏠 local-first · Rol 📚 librería/SDK · Setup 🟢 fácil",
+    "Qué es": "framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados. Convierte las diapositivas en una página web versionable y reproducible por código.",
+    "Por qué destaca": "estándar de facto para slides como código, muy popular y respaldado por una comunidad amplia y años de uso en producción; es la base de herramientas como Reveal y de innumerables charlas técnicas.",
+    "Cómo funciona": "defines las diapositivas como elementos HTML anidados (`<section>`) y la librería JS las renderiza en el navegador con navegación por teclado, animaciones, modo orador y exportación a PDF.",
+    "Instalación": "`npm install reveal.js` (o clonar el repo y abrir `index.html` en el navegador). Para exportar a PDF usa el modo de impresión del navegador.",
+    "Casos": "slides web versionables como código · presentaciones interactivas en el navegador · decks técnicos con demos en vivo embebidas.",
+    "Stack": "JavaScript/HTML — **Modelo/API:** N/A.",
+    "Elige si": "quieres slides web por código, versionables — **Evita si:** necesitas PPTX editable en Office ([ppt-master](#-ppt-master)) o un editor visual de slides.",
+    "Combina con": "[markitdown](#-markitdown)",
+    "Repo": "[GitHub](https://github.com/hakimel/reveal.js)"
+   }
+  },
+  {
+   "id": "slidev",
+   "is_new": true,
+   "target_cat": 13,
+   "target_sub": "slides",
+   "gh": "slidevjs/slidev",
+   "github": {
+    "full_name": "slidevjs/slidev",
+    "stars": 49417,
+    "description": "Presentation Slides for Developers",
+    "topics": [
+     "markdown",
+     "presentation",
+     "slides",
+     "vite",
+     "vue",
+     "vueuse"
+    ],
+    "license": "MIT",
+    "language": "TypeScript",
+    "pushed_at": "2026-11-05T06:29:21Z",
+    "archived": false,
+    "homepage": "https://sli.dev"
+   }
+  }
+ ]
+}

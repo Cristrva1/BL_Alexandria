@@ -1,0 +1,106 @@
+[
+  {"num": 0, "emoji": "🧰", "title": "Utilidades del hub", "desc": "Carpetas internas de la biblioteca; no son productos para instalar.", "subs": [
+    {"key": "hub", "title": "Internas del hub"}
+  ]},
+  {"num": 1, "emoji": "🤖", "title": "Automatización, Mensajería & CRM", "desc": "Motores de workflow, ecosistema n8n, WhatsApp y chat, chatbots, CRM/ERP, email y apps internas.", "subs": [
+    {"key": "motores", "title": "Motores de workflow y automatización"},
+    {"key": "n8n", "title": "Ecosistema n8n"},
+    {"key": "whatsapp", "title": "WhatsApp y mensajería"},
+    {"key": "chatbots", "title": "Chatbots y asistentes conversacionales"},
+    {"key": "crm", "title": "CRM, ERP y soporte al cliente"},
+    {"key": "marketing", "title": "Email, marketing y notificaciones"},
+    {"key": "internas", "title": "Apps internas y bases de datos no-code"}
+  ]},
+  {"num": 2, "emoji": "🧠", "title": "Skills, Prompts & Guías de Agente", "desc": "Catálogos de skills, metodologías para agentes de código, escritura sin 'slop', prompts, cursos y cookbooks.", "subs": [
+    {"key": "catalogos", "title": "Catálogos y marketplaces de skills"},
+    {"key": "metodologia", "title": "Metodologías y harness para agentes de código"},
+    {"key": "escritura", "title": "Escritura y calidad de texto"},
+    {"key": "dominio", "title": "Skills de dominio: marketing, SEO y negocio"},
+    {"key": "prompts", "title": "Prompts y prompt engineering"},
+    {"key": "guias", "title": "Guías, cursos y cookbooks"}
+  ]},
+  {"num": 3, "emoji": "🕸️", "title": "Frameworks & Orquestación de Agentes", "desc": "Agentes de código, frameworks multiagente en Python y TypeScript, builders visuales, asistentes autónomos, research e infraestructura.", "subs": [
+    {"key": "coding", "title": "Agentes de código (terminal e IDE)"},
+    {"key": "py", "title": "Frameworks de agentes en Python"},
+    {"key": "ts", "title": "Frameworks en TypeScript y multi-lenguaje"},
+    {"key": "visual", "title": "Builders visuales y plataformas de agentes"},
+    {"key": "asistentes", "title": "Asistentes autónomos y equipos de agentes"},
+    {"key": "research", "title": "Agentes de research autónomo"},
+    {"key": "infra", "title": "Infraestructura: sandboxes, herramientas y protocolos"},
+    {"key": "experimentos", "title": "Simulación, evolución y debate entre modelos"}
+  ]},
+  {"num": 4, "emoji": "🕷️", "title": "Scraping, Búsqueda & Research Web", "desc": "Crawlers que entregan Markdown para IA, scraping guiado por LLM, navegadores automatizados, buscadores y redes sociales.", "subs": [
+    {"key": "crawlers", "title": "Crawlers y extracción para IA"},
+    {"key": "llm", "title": "Scraping guiado por LLM"},
+    {"key": "navegador", "title": "Navegadores y automatización web"},
+    {"key": "busqueda", "title": "Búsqueda, monitoreo y research web"},
+    {"key": "social", "title": "Redes sociales y descarga de medios"}
+  ]},
+  {"num": 5, "emoji": "🔌", "title": "MCP & Conectividad", "desc": "SDKs para crear servidores MCP, servidores destacados (navegador, GitHub, diseño, 3D), directorios y APIs públicas.", "subs": [
+    {"key": "sdk", "title": "SDKs y frameworks para crear MCP"},
+    {"key": "servidores", "title": "Servidores MCP destacados"},
+    {"key": "directorios", "title": "Directorios, clientes y aprendizaje"}
+  ]},
+  {"num": 6, "emoji": "🧬", "title": "Memoria, RAG & LLM Ops", "desc": "Memoria persistente para agentes, RAG, bases vectoriales, serving y gateways de LLM, ahorro de tokens y observabilidad.", "subs": [
+    {"key": "memoria", "title": "Memoria persistente para agentes"},
+    {"key": "rag", "title": "RAG y motores de conocimiento"},
+    {"key": "vectores", "title": "Bases vectoriales y búsqueda semántica"},
+    {"key": "serving", "title": "Serving y gateways de LLM"},
+    {"key": "tokens", "title": "Ahorro de contexto y tokens"},
+    {"key": "observabilidad", "title": "Observabilidad, evaluación y guardrails"}
+  ]},
+  {"num": 7, "emoji": "🧑‍💻", "title": "Inteligencia de Código, Datos & Entrenamiento", "desc": "Entender y empaquetar codebases para agentes, calidad de código, entrenar y afinar modelos, modelos abiertos y herramientas de datos.", "subs": [
+    {"key": "codigo", "title": "Entender y empaquetar código para agentes"},
+    {"key": "calidad", "title": "Calidad, seguridad y benchmarks de código"},
+    {"key": "entrenamiento", "title": "Entrenar y afinar modelos"},
+    {"key": "aprender", "title": "Aprender LLMs desde cero"},
+    {"key": "modelos", "title": "Modelos abiertos y fundacionales"},
+    {"key": "herramientas", "title": "CLIs y SDKs de desarrollo"},
+    {"key": "datos", "title": "Datos y notebooks"}
+  ]},
+  {"num": 8, "emoji": "🏠", "title": "IA Local: Modelos, Chats & Workspaces", "desc": "Correr LLMs en tu máquina, interfaces tipo ChatGPT auto-hospedadas, workspaces privados y alternativas a NotebookLM.", "subs": [
+    {"key": "motores", "title": "Motores para correr modelos en local"},
+    {"key": "chats", "title": "Interfaces de chat auto-hospedadas"},
+    {"key": "workspaces", "title": "Workspaces privados y segundos cerebros"},
+    {"key": "notebooklm", "title": "NotebookLM: alternativas y clientes"}
+  ]},
+  {"num": 9, "emoji": "🎨", "title": "Diseño, UI & Frontend", "desc": "Componentes y sistemas de diseño, CSS, animación y 3D, canvas y builders, UI generada con IA y skills de diseño para agentes.", "subs": [
+    {"key": "componentes", "title": "Componentes, iconos y sistemas de diseño"},
+    {"key": "estilos", "title": "CSS y estilos"},
+    {"key": "animacion", "title": "Animación y 3D"},
+    {"key": "diseno", "title": "Diseño visual, canvas y builders"},
+    {"key": "ia-ui", "title": "UI generada con IA y frontends para agentes"},
+    {"key": "skills", "title": "Skills de diseño para agentes"}
+  ]},
+  {"num": 10, "emoji": "📊", "title": "Analítica & Visualización", "desc": "Analítica web y de producto, BI y dashboards, chat con tus datos, librerías de gráficos y apps de datos en Python.", "subs": [
+    {"key": "producto", "title": "Analítica web y de producto"},
+    {"key": "bi", "title": "BI, dashboards y chat con datos"},
+    {"key": "graficos", "title": "Librerías de gráficos"},
+    {"key": "apps", "title": "Apps de datos en Python"},
+    {"key": "recursos", "title": "Recursos y casos de uso"}
+  ]},
+  {"num": 11, "emoji": "🖼️", "title": "Generación de Imagen & Visión", "desc": "Interfaces de difusión, modelos y control, restauración y upscaling, rostros y visión por computador.", "subs": [
+    {"key": "interfaces", "title": "Interfaces para generar imágenes"},
+    {"key": "modelos", "title": "Modelos, librerías y control"},
+    {"key": "edicion", "title": "Restauración, upscaling y edición"},
+    {"key": "rostros", "title": "Rostros y retratos animados"},
+    {"key": "vision", "title": "Visión por computador"},
+    {"key": "suites", "title": "Suites generativas todo-en-uno"}
+  ]},
+  {"num": 12, "emoji": "🎬", "title": "Audio, Voz & Video", "desc": "Transcripción, síntesis y clonación de voz, agentes de voz, edición y subtítulos, video programático, video generativo y música.", "subs": [
+    {"key": "stt", "title": "Transcripción (voz a texto)"},
+    {"key": "tts", "title": "Síntesis y clonación de voz"},
+    {"key": "voz-agentes", "title": "Agentes de voz en tiempo real"},
+    {"key": "edicion", "title": "Edición, grabación y subtítulos"},
+    {"key": "programatico", "title": "Video programático y con agentes"},
+    {"key": "generativo", "title": "Video generativo y pipelines automáticos"},
+    {"key": "musica", "title": "Música y audio generativo"}
+  ]},
+  {"num": 13, "emoji": "📄", "title": "Documentos & Presentaciones", "desc": "Convertir documentos a Markdown/JSON para IA, OCR, herramientas PDF, presentaciones y diagramas.", "subs": [
+    {"key": "conversion", "title": "Conversión de documentos para IA"},
+    {"key": "ocr", "title": "OCR"},
+    {"key": "pdf", "title": "Herramientas PDF"},
+    {"key": "slides", "title": "Presentaciones"},
+    {"key": "diagramas", "title": "Diagramas y documentación"}
+  ]}
+]

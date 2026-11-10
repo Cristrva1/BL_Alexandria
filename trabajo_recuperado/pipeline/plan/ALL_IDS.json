@@ -1,0 +1,3314 @@
+[
+{
+"id": "guia",
+"name": "guia",
+"cat": 0,
+"sub": "hub",
+"gh": null,
+"what": "Catálogo operativo de los 156 repositorios locales del workspace, diseñado para entender, comparar, elegir y combinar repos rápido."
+},
+{
+"id": "tools",
+"name": "tools",
+"cat": 0,
+"sub": "hub",
+"gh": null,
+"what": "Utilidades locales del workspace de Alexandria; no es un producto de IA para instalar."
+},
+{
+"id": "botpress",
+"name": "botpress",
+"cat": 1,
+"sub": "chatbots",
+"gh": "botpress/botpress",
+"what": "The open-source hub to build & deploy GPT/LLM Agents ⚡️"
+},
+{
+"id": "rasa",
+"name": "rasa",
+"cat": 1,
+"sub": "chatbots",
+"gh": "RasaHQ/rasa",
+"what": "💬   Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Face"
+},
+{
+"id": "typebot",
+"name": "typebot.io",
+"cat": 1,
+"sub": "chatbots",
+"gh": "baptisteArno/typebot.io",
+"what": "💬 Typebot is a powerful chatbot builder that you can self-host."
+},
+{
+"id": "chatwoot",
+"name": "chatwoot",
+"cat": 1,
+"sub": "crm",
+"gh": "chatwoot/chatwoot",
+"what": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬"
+},
+{
+"id": "erpnext",
+"name": "erpnext",
+"cat": 1,
+"sub": "crm",
+"gh": "frappe/erpnext",
+"what": "Free and Open Source Enterprise Resource Planning (ERP)"
+},
+{
+"id": "odoo",
+"name": "odoo",
+"cat": 1,
+"sub": "crm",
+"gh": "odoo/odoo",
+"what": "Odoo. Open Source Apps To Grow Your Business."
+},
+{
+"id": "twenty-main",
+"name": "twenty-main",
+"cat": 1,
+"sub": "crm",
+"gh": "twentyhq/twenty",
+"what": "The open alternative to Salesforce, designed for AI."
+},
+{
+"id": "appsmith",
+"name": "appsmith",
+"cat": 1,
+"sub": "internas",
+"gh": "appsmithorg/appsmith",
+"what": "Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ databases and any API."
+},
+{
+"id": "budibase",
+"name": "budibase",
+"cat": 1,
+"sub": "internas",
+"gh": "Budibase/budibase",
+"what": "AI agents, automations and apps that run your operations. Model agnostic."
+},
+{
+"id": "nocodb",
+"name": "nocodb",
+"cat": 1,
+"sub": "internas",
+"gh": "nocodb/nocodb",
+"what": "🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative"
+},
+{
+"id": "tooljet",
+"name": "ToolJet",
+"cat": 1,
+"sub": "internas",
+"gh": "ToolJet/ToolJet",
+"what": "Open-source foundation of ToolJet AI - the enterprise app generation platform for internal tools, dashboards, business applications, workflo"
+},
+{
+"id": "listmonk",
+"name": "listmonk",
+"cat": 1,
+"sub": "marketing",
+"gh": "knadh/listmonk",
+"what": "High performance, self-hosted, newsletter and mailing list manager with a modern dashboard. Single binary app."
+},
+{
+"id": "mautic",
+"name": "mautic",
+"cat": 1,
+"sub": "marketing",
+"gh": "mautic/mautic",
+"what": "Mautic: Open Source Marketing Automation Software."
+},
+{
+"id": "novu",
+"name": "novu",
+"cat": 1,
+"sub": "marketing",
+"gh": "novuhq/novu",
+"what": "The open-source communication infrastructure for agents and products"
+},
+{
+"id": "activepieces",
+"name": "activepieces",
+"cat": 1,
+"sub": "motores",
+"gh": "activepieces/activepieces",
+"what": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents"
+},
+{
+"id": "huginn",
+"name": "huginn",
+"cat": 1,
+"sub": "motores",
+"gh": "huginn/huginn",
+"what": "Create agents that monitor and act on your behalf.  Your agents are standing by!"
+},
+{
+"id": "kestra",
+"name": "kestra",
+"cat": 1,
+"sub": "motores",
+"gh": "kestra-io/kestra",
+"what": "Orchestrate everything, everywhere. The open-source control plane for workflows across data, infrastructure, business processes and AI agent"
+},
+{
+"id": "n8n",
+"name": "n8n",
+"cat": 1,
+"sub": "motores",
+"gh": "n8n-io/n8n",
+"what": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integ"
+},
+{
+"id": "node-red",
+"name": "node-red",
+"cat": 1,
+"sub": "motores",
+"gh": "node-red/node-red",
+"what": "Low-code programming for event-driven applications"
+},
+{
+"id": "trigger-dev",
+"name": "trigger.dev",
+"cat": 1,
+"sub": "motores",
+"gh": "triggerdotdev/trigger.dev",
+"what": "Trigger.dev – build and deploy durable AI agents and workflows"
+},
+{
+"id": "windmill",
+"name": "windmill",
+"cat": 1,
+"sub": "motores",
+"gh": "windmill-labs/windmill",
+"what": "Code-first platform for workflows, apps and AI agents, on the fastest self-hostable orchestrator (benchmarked against Airflow, Prefect and T"
+},
+{
+"id": "awesome-n8n-templates",
+"name": "awesome-n8n-templates",
+"cat": 1,
+"sub": "n8n",
+"gh": "enescingoz/awesome-n8n-templates",
+"what": "280+ free n8n automation templates — ready-to-use workflows for Gmail, Telegram, Slack, Discord, WhatsApp, Google Drive, Notion, OpenAI, and"
+},
+{
+"id": "n8n-io",
+"name": "n8n_io",
+"cat": 1,
+"sub": "n8n",
+"gh": "n8n-io/n8n",
+"what": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integ"
+},
+{
+"id": "n8n-mcp",
+"name": "n8n-mcp",
+"cat": 1,
+"sub": "n8n",
+"gh": "czlonkowski/n8n-mcp",
+"what": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you "
+},
+{
+"id": "n8n-skills",
+"name": "n8n-skills",
+"cat": 1,
+"sub": "n8n",
+"gh": "czlonkowski/n8n-skills",
+"what": "n8n skillset for Claude Code to build flawless n8n workflows"
+},
+{
+"id": "self-hosted-ai-starter-kit",
+"name": "self-hosted-ai-starter-kit",
+"cat": 1,
+"sub": "n8n",
+"gh": "n8n-io/self-hosted-ai-starter-kit",
+"what": "The Self-hosted AI Starter Kit is an open-source template that quickly sets up a local AI environment. Curated by n8n, it provides essential"
+},
+{
+"id": "baileys",
+"name": "Baileys",
+"cat": 1,
+"sub": "whatsapp",
+"gh": "WhiskeySockets/Baileys",
+"what": "Socket-based TS/JavaScript API for WhatsApp Web"
+},
+{
+"id": "evolution-api",
+"name": "evolution-api",
+"cat": 1,
+"sub": "whatsapp",
+"gh": "evolution-foundation/evolution-api",
+"what": "Evolution API is an open-source WhatsApp integration API"
+},
+{
+"id": "fluxer",
+"name": "fluxer",
+"cat": 1,
+"sub": "whatsapp",
+"gh": "fluxerapp/fluxer",
+"what": "A free and open source instant messaging and VoIP chat app built for friends, groups, and communities."
+},
+{
+"id": "openwa",
+"name": "OpenWA",
+"cat": 1,
+"sub": "whatsapp",
+"gh": "rmyndharis/OpenWA",
+"what": "Free, Open Source, Self-Hosted WhatsApp API Gateway"
+},
+{
+"id": "waha",
+"name": "waha",
+"cat": 1,
+"sub": "whatsapp",
+"gh": "devlikeapro/waha",
+"what": "WAHA - WhatsApp HTTP API (REST API) that you can configure in a click! Multiple engines: WEBJS (browser based), NOWEB (websocket nodejs), GO"
+},
+{
+"id": "whatsapp-agentkit",
+"name": "whatsapp-agentkit",
+"cat": 1,
+"sub": "whatsapp",
+"gh": "Hainrixz/whatsapp-agentkit",
+"what": "Construye tu agente de WhatsApp con IA en menos de 30 minutos. Claude Code te entrevista y escribe todo el código. Zernio o Meta Cloud API. "
+},
+{
+"id": "whatsapp-web-js",
+"name": "whatsapp-web.js",
+"cat": 1,
+"sub": "whatsapp",
+"gh": "wwebjs/whatsapp-web.js",
+"what": "A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app"
+},
+{
+"id": "anthropic-skills",
+"name": "skills",
+"cat": 2,
+"sub": "catalogos",
+"gh": "anthropics/skills",
+"what": "Public repository for Agent Skills"
+},
+{
+"id": "antigravity-awesome-skills",
+"name": "antigravity-awesome-skills",
+"cat": 2,
+"sub": "catalogos",
+"gh": "sickn33/agentic-awesome-skills",
+"what": "2,955+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection "
+},
+{
+"id": "awesome-agent-skills",
+"name": "awesome-agent-skills",
+"cat": 2,
+"sub": "catalogos",
+"gh": "VoltAgent/awesome-agent-skills",
+"what": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor"
+},
+{
+"id": "awesome-claude-code",
+"name": "awesome-claude-code",
+"cat": 2,
+"sub": "catalogos",
+"gh": "hesreallyhim/awesome-claude-code",
+"what": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companion"
+},
+{
+"id": "awesome-claude-skills",
+"name": "awesome-claude-skills",
+"cat": 2,
+"sub": "catalogos",
+"gh": "ComposioHQ/awesome-claude-skills",
+"what": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
+},
+{
+"id": "awesome-copilot",
+"name": "awesome-copilot",
+"cat": 2,
+"sub": "catalogos",
+"gh": "github/awesome-copilot",
+"what": "Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot."
+},
+{
+"id": "claude-plugins-official",
+"name": "claude-plugins-official",
+"cat": 2,
+"sub": "catalogos",
+"gh": "anthropics/claude-plugins-official",
+"what": "Official, Anthropic-managed directory of high quality Claude Code Plugins."
+},
+{
+"id": "wshobson-agents",
+"name": "agents",
+"cat": 2,
+"sub": "catalogos",
+"gh": "wshobson/agents",
+"what": "Plugins, agents, skills, and commands for Claude Code, Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub Copilot, and Pi, written once in"
+},
+{
+"id": "agency-agents",
+"name": "agency-agents",
+"cat": 2,
+"sub": "dominio",
+"gh": "msitarzewski/agency-agents",
+"what": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each "
+},
+{
+"id": "arcads-claude-code",
+"name": "arcads-claude-code",
+"cat": 2,
+"sub": "dominio",
+"gh": null,
+"what": "Skills de Claude Code/Cursor para generar videos e imágenes de marketing con Arcads."
+},
+{
+"id": "geo-seo-claude",
+"name": "geo-seo-claude",
+"cat": 2,
+"sub": "dominio",
+"gh": "zubair-trabzada/geo-seo-claude",
+"what": "GEO-first SEO skill for Claude Code. Comprehensive AI search optimization for any website — citability scoring, AI crawler analysis, brand a"
+},
+{
+"id": "marketingskills",
+"name": "marketingskills",
+"cat": 2,
+"sub": "dominio",
+"gh": "coreyhaines31/marketingskills",
+"what": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering."
+},
+{
+"id": "humanizer",
+"name": "humanizer",
+"cat": 2,
+"sub": "escritura",
+"gh": "blader/humanizer",
+"what": "Agent skill that removes signs of AI-generated writing from text"
+},
+{
+"id": "stop-slop",
+"name": "stop-slop",
+"cat": 2,
+"sub": "escritura",
+"gh": "hardikpandya/stop-slop",
+"what": "A skill file for removing AI tells from prose"
+},
+{
+"id": "12-factor-agents",
+"name": "12-factor-agents",
+"cat": 2,
+"sub": "guias",
+"gh": "humanlayer/12-factor-agents",
+"what": "What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?"
+},
+{
+"id": "agents-towards-production",
+"name": "agents-towards-production",
+"cat": 2,
+"sub": "guias",
+"gh": "NirDiamant/agents-towards-production",
+"what": "End-to-end, code-first tutorials for building production-grade GenAI agents. From prototype to enterprise deployment."
+},
+{
+"id": "ai-agents-for-beginners",
+"name": "ai-agents-for-beginners",
+"cat": 2,
+"sub": "guias",
+"gh": "microsoft/ai-agents-for-beginners",
+"what": "18 Lessons to Get Started Building AI Agents"
+},
+{
+"id": "awesome-llm-apps",
+"name": "awesome-llm-apps",
+"cat": 2,
+"sub": "guias",
+"gh": "Shubhamsaboo/awesome-llm-apps",
+"what": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source."
+},
+{
+"id": "claude-cookbooks",
+"name": "claude-cookbooks",
+"cat": 2,
+"sub": "guias",
+"gh": "anthropics/claude-cookbooks",
+"what": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude."
+},
+{
+"id": "context-engineering",
+"name": "Context-Engineering",
+"cat": 2,
+"sub": "guias",
+"gh": "jasontang-ai/Context-Engineering",
+"what": "\"Context engineering is the delicate art and science of filling the context window with just the right information for the next step.\" — And"
+},
+{
+"id": "generative-ai-for-beginners",
+"name": "generative-ai-for-beginners",
+"cat": 2,
+"sub": "guias",
+"gh": "microsoft/generative-ai-for-beginners",
+"what": "21 Lessons, Get Started Building with Generative AI "
+},
+{
+"id": "loop-engineering",
+"name": "loop-engineering",
+"cat": 2,
+"sub": "guias",
+"gh": "cobusgreyling/loop-engineering",
+"what": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (insp"
+},
+{
+"id": "openai-cookbook",
+"name": "openai-cookbook",
+"cat": 2,
+"sub": "guias",
+"gh": "openai/openai-cookbook",
+"what": "Examples and guides for using the OpenAI API"
+},
+{
+"id": "agent-skills",
+"name": "agent-skills",
+"cat": 2,
+"sub": "metodologia",
+"gh": "addyosmani/agent-skills",
+"what": "Production-grade engineering skills for AI coding agents."
+},
+{
+"id": "agent-toolkit",
+"name": "agent-toolkit",
+"cat": 2,
+"sub": "metodologia",
+"gh": "softaworks/agent-toolkit",
+"what": "A curated collection of skills for AI coding agents. Skills are packaged instructions and scripts that extend agent capabilities across deve"
+},
+{
+"id": "andrej-karpathy-skills",
+"name": "andrej-karpathy-skills",
+"cat": 2,
+"sub": "metodologia",
+"gh": "multica-ai/andrej-karpathy-skills",
+"what": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls."
+},
+{
+"id": "bmad-method",
+"name": "BMAD-METHOD",
+"cat": 2,
+"sub": "metodologia",
+"gh": "bmad-code-org/BMAD-METHOD",
+"what": "Breakthrough Method for Agile Ai Driven Development"
+},
+{
+"id": "ecc",
+"name": "ECC",
+"cat": 2,
+"sub": "metodologia",
+"gh": "affaan-m/ECC",
+"what": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Code"
+},
+{
+"id": "ponytail",
+"name": "ponytail",
+"cat": 2,
+"sub": "metodologia",
+"gh": "DietrichGebert/ponytail",
+"what": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
+},
+{
+"id": "skills",
+"name": "skills",
+"cat": 2,
+"sub": "metodologia",
+"gh": "mattpocock/skills",
+"what": "Skills for Real Engineers. Straight from my .agents directory."
+},
+{
+"id": "skillspector",
+"name": "SkillSpector",
+"cat": 2,
+"sub": "metodologia",
+"gh": "NVIDIA/SkillSpector",
+"what": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and s"
+},
+{
+"id": "spec-kit",
+"name": "spec-kit",
+"cat": 2,
+"sub": "metodologia",
+"gh": "github/spec-kit",
+"what": "💫 Toolkit to help you get started with SDD or any other process!"
+},
+{
+"id": "superpowers",
+"name": "superpowers",
+"cat": 2,
+"sub": "metodologia",
+"gh": "obra/superpowers",
+"what": "An agentic skills framework & software development methodology that works."
+},
+{
+"id": "fabric",
+"name": "Fabric",
+"cat": 2,
+"sub": "prompts",
+"gh": "danielmiessler/Fabric",
+"what": "Fabric is an open-source framework for augmenting humans using AI. It provides a modular system for solving specific problems using a crowds"
+},
+{
+"id": "prompt-eng-tutorial",
+"name": "prompt-eng-interactive-tutorial",
+"cat": 2,
+"sub": "prompts",
+"gh": "anthropics/prompt-eng-interactive-tutorial",
+"what": "Anthropic's Interactive Prompt Engineering Tutorial"
+},
+{
+"id": "prompt-engineering-guide",
+"name": "Prompt-Engineering-Guide",
+"cat": 2,
+"sub": "prompts",
+"gh": "dair-ai/Prompt-Engineering-Guide",
+"what": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents."
+},
+{
+"id": "prompt-master",
+"name": "prompt-master",
+"cat": 2,
+"sub": "prompts",
+"gh": "nidhinjs/prompt-master",
+"what": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention"
+},
+{
+"id": "prompts-chat",
+"name": "prompts.chat",
+"cat": 2,
+"sub": "prompts",
+"gh": "f/prompts.chat",
+"what": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organizat"
+},
+{
+"id": "deeptutor",
+"name": "DeepTutor",
+"cat": 3,
+"sub": "asistentes",
+"gh": "HKUDS/DeepTutor",
+"what": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/."
+},
+{
+"id": "hermes-agent",
+"name": "hermes-agent",
+"cat": 3,
+"sub": "asistentes",
+"gh": "NousResearch/hermes-agent",
+"what": "The agent that grows with you"
+},
+{
+"id": "mercury-agent",
+"name": "mercury-agent",
+"cat": 3,
+"sub": "asistentes",
+"gh": "cosmicstack-labs/mercury-agent",
+"what": "Soul-driven AI agent with permission-hardened tools, token budgets, and multi-channel access. Runs 24/7 from CLI, Telegram or More."
+},
+{
+"id": "multica",
+"name": "multica",
+"cat": 3,
+"sub": "asistentes",
+"gh": "multica-ai/multica",
+"what": "Make humans and AI agents work as one team — open-source and self-hostable."
+},
+{
+"id": "openclaw",
+"name": "openclaw",
+"cat": 3,
+"sub": "asistentes",
+"gh": "openclaw/openclaw",
+"what": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 "
+},
+{
+"id": "ruflo",
+"name": "ruflo",
+"cat": 3,
+"sub": "asistentes",
+"gh": "ruvnet/ruflo",
+"what": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. "
+},
+{
+"id": "aider",
+"name": "aider",
+"cat": 3,
+"sub": "coding",
+"gh": "Aider-AI/aider",
+"what": "aider is AI pair programming in your terminal"
+},
+{
+"id": "claude-code",
+"name": "claude-code",
+"cat": 3,
+"sub": "coding",
+"gh": "anthropics/claude-code",
+"what": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine"
+},
+{
+"id": "cline",
+"name": "cline",
+"cat": 3,
+"sub": "coding",
+"gh": "cline/cline",
+"what": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant."
+},
+{
+"id": "codex",
+"name": "codex",
+"cat": 3,
+"sub": "coding",
+"gh": "openai/codex",
+"what": "Lightweight coding agent that runs in your terminal"
+},
+{
+"id": "continue",
+"name": "continue",
+"cat": 3,
+"sub": "coding",
+"gh": "continuedev/continue",
+"what": "open-source coding agent"
+},
+{
+"id": "gemini-cli",
+"name": "gemini-cli",
+"cat": 3,
+"sub": "coding",
+"gh": "google-gemini/gemini-cli",
+"what": "An open-source AI agent that brings the power of Gemini directly into your terminal."
+},
+{
+"id": "goose",
+"name": "goose",
+"cat": 3,
+"sub": "coding",
+"gh": "aaif-goose/goose",
+"what": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM"
+},
+{
+"id": "open-interpreter",
+"name": "openinterpreter",
+"cat": 3,
+"sub": "coding",
+"gh": "openinterpreter/openinterpreter",
+"what": "A coding agent for open models like Kimi K3 and GLM 5.3"
+},
+{
+"id": "open-swe",
+"name": "open-swe",
+"cat": 3,
+"sub": "coding",
+"gh": "langchain-ai/open-swe",
+"what": "An Open-Source Asynchronous Coding Agent"
+},
+{
+"id": "opencode",
+"name": "opencode",
+"cat": 3,
+"sub": "coding",
+"gh": "anomalyco/opencode",
+"what": "The open source coding agent."
+},
+{
+"id": "openhands",
+"name": "OpenHands",
+"cat": 3,
+"sub": "coding",
+"gh": "OpenHands/OpenHands",
+"what": "🙌 OpenHands: AI-Driven Development"
+},
+{
+"id": "swe-agent",
+"name": "SWE-agent",
+"cat": 3,
+"sub": "coding",
+"gh": "SWE-agent/SWE-agent",
+"what": "SWE-agent takes a GitHub issue and tries to automatically fix it, using your LM of choice. It can also be employed for offensive cybersecuri"
+},
+{
+"id": "t3code",
+"name": "t3code",
+"cat": 3,
+"sub": "coding",
+"gh": "pingdotgg/t3code",
+"what": "Superficie de control para agentes en tu máquina: app móvil, web y escritorio Electron."
+},
+{
+"id": "llm-council",
+"name": "llm-council",
+"cat": 3,
+"sub": "experimentos",
+"gh": "karpathy/llm-council",
+"what": "LLM Council works together to answer your hardest questions"
+},
+{
+"id": "mirofish",
+"name": "MiroFish",
+"cat": 3,
+"sub": "experimentos",
+"gh": "666ghj/MiroFish",
+"what": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物"
+},
+{
+"id": "openevolve",
+"name": "openevolve",
+"cat": 3,
+"sub": "experimentos",
+"gh": "algorithmicsuperintelligence/openevolve",
+"what": "Open-source implementation of AlphaEvolve"
+},
+{
+"id": "agent-protocol",
+"name": "agent-protocol",
+"cat": 3,
+"sub": "infra",
+"gh": "langchain-ai/agent-protocol",
+"what": "Especificación de APIs agnósticas a framework para servir agentes LLM en producción."
+},
+{
+"id": "composio",
+"name": "composio",
+"cat": 3,
+"sub": "infra",
+"gh": "ComposioHQ/composio",
+"what": "Composio powers 1000+ toolkits, tool search, context management, authentication, and a sandboxed workbench to help you build AI agents that "
+},
+{
+"id": "computer-use-preview",
+"name": "computer-use-preview",
+"cat": 3,
+"sub": "infra",
+"gh": "google-gemini/computer-use-preview",
+"what": "Código y guía de Gemini Computer Use para que un modelo controle el escritorio."
+},
+{
+"id": "e2b",
+"name": "E2B",
+"cat": 3,
+"sub": "infra",
+"gh": "e2b-dev/E2B",
+"what": "Open-source, secure environment with real-world tools for enterprise-grade agents."
+},
+{
+"id": "nemo-agent-toolkit",
+"name": "NeMo-Agent-Toolkit",
+"cat": 3,
+"sub": "infra",
+"gh": "NVIDIA/NeMo-Agent-Toolkit",
+"what": "The NVIDIA NeMo Agent toolkit is an open-source library for efficiently connecting and optimizing teams of AI agents."
+},
+{
+"id": "nemoclaw",
+"name": "NemoClaw",
+"cat": 3,
+"sub": "infra",
+"gh": "NVIDIA/NemoClaw",
+"what": "Run agents like Hermes, LangChain Deep Agents, and OpenClaw more securely inside NVIDIA OpenShell with managed inference"
+},
+{
+"id": "sandbox",
+"name": "sandbox",
+"cat": 3,
+"sub": "infra",
+"gh": "agent-infra/sandbox",
+"what": "All-in-One Sandbox for AI Agents that combines Browser, Shell, File, MCP and VSCode Server in a single Docker container."
+},
+{
+"id": "adk-python",
+"name": "adk-python",
+"cat": 3,
+"sub": "py",
+"gh": "google/adk-python",
+"what": "An open-source, code-first Python toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control."
+},
+{
+"id": "ag2",
+"name": "ag2",
+"cat": 3,
+"sub": "py",
+"gh": "ag2ai/ag2",
+"what": "AG2 (formerly AutoGen): The Open-Source AgentOS.Join us at: https://discord.gg/sNGSwQME3x"
+},
+{
+"id": "agno",
+"name": "agno",
+"cat": 3,
+"sub": "py",
+"gh": "agno-agi/agno",
+"what": "The self-driving agent platform"
+},
+{
+"id": "autogen",
+"name": "autogen",
+"cat": 3,
+"sub": "py",
+"gh": "microsoft/autogen",
+"what": "A programming framework for agentic AI"
+},
+{
+"id": "awesome-langgraph",
+"name": "awesome-LangGraph",
+"cat": 3,
+"sub": "py",
+"gh": "vonzosten/awesome-LangGraph",
+"what": "An index of the LangChain + LangGraph ecosystem: concepts, projects, tools, templates, and guides for LLM & multi-agent apps."
+},
+{
+"id": "crewai",
+"name": "crewAI",
+"cat": 3,
+"sub": "py",
+"gh": "crewAIInc/crewAI",
+"what": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work toge"
+},
+{
+"id": "deepagents",
+"name": "deepagents",
+"cat": 3,
+"sub": "py",
+"gh": "langchain-ai/deepagents",
+"what": "The batteries-included agent harness."
+},
+{
+"id": "dspy",
+"name": "dspy",
+"cat": 3,
+"sub": "py",
+"gh": "stanfordnlp/dspy",
+"what": "DSPy: The framework for programming—not prompting—language models"
+},
+{
+"id": "haystack",
+"name": "haystack",
+"cat": 3,
+"sub": "py",
+"gh": "deepset-ai/haystack",
+"what": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agen"
+},
+{
+"id": "langchain",
+"name": "langchain",
+"cat": 3,
+"sub": "py",
+"gh": "langchain-ai/langchain",
+"what": "The agent engineering platform."
+},
+{
+"id": "langgraph",
+"name": "langgraph",
+"cat": 3,
+"sub": "py",
+"gh": "langchain-ai/langgraph",
+"what": "Build resilient agents."
+},
+{
+"id": "langgraph-supervisor-py",
+"name": "langgraph-supervisor-py",
+"cat": 3,
+"sub": "py",
+"gh": "langchain-ai/langgraph-supervisor-py",
+"what": "> Note: We now recommend using the supervisor pattern directly via tools rather than this library for most use cases."
+},
+{
+"id": "llama-index",
+"name": "llama_index",
+"cat": 3,
+"sub": "py",
+"gh": "run-llama/llama_index",
+"what": "LlamaIndex is the document processing platform for AI"
+},
+{
+"id": "openai-agents-python",
+"name": "openai-agents-python",
+"cat": 3,
+"sub": "py",
+"gh": "openai/openai-agents-python",
+"what": "A lightweight, powerful framework for multi-agent workflows"
+},
+{
+"id": "pydantic-ai",
+"name": "pydantic-ai",
+"cat": 3,
+"sub": "py",
+"gh": "pydantic/pydantic-ai",
+"what": "How Python does AI. Agents, realtime voice, image generation, embeddings. Every model, every interface, typed end to end."
+},
+{
+"id": "smolagents",
+"name": "smolagents",
+"cat": 3,
+"sub": "py",
+"gh": "huggingface/smolagents",
+"what": "🤗 smolagents: a barebones library for agents that think in code."
+},
+{
+"id": "autoresearch",
+"name": "autoresearch",
+"cat": 3,
+"sub": "research",
+"gh": "karpathy/autoresearch",
+"what": "AI agents running research on single-GPU nanochat training automatically"
+},
+{
+"id": "deer-flow",
+"name": "deer-flow",
+"cat": 3,
+"sub": "research",
+"gh": "bytedance/deer-flow",
+"what": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, suba"
+},
+{
+"id": "gpt-researcher",
+"name": "gpt-researcher",
+"cat": 3,
+"sub": "research",
+"gh": "assafelovic/gpt-researcher",
+"what": "An autonomous agent that conducts deep research on any data using any LLM providers"
+},
+{
+"id": "storm",
+"name": "storm",
+"cat": 3,
+"sub": "research",
+"gh": "stanford-oval/storm",
+"what": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations."
+},
+{
+"id": "agent-framework",
+"name": "agent-framework",
+"cat": 3,
+"sub": "ts",
+"gh": "microsoft/agent-framework",
+"what": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET."
+},
+{
+"id": "langgraphjs",
+"name": "langgraphjs",
+"cat": 3,
+"sub": "ts",
+"gh": "langchain-ai/langgraphjs",
+"what": "Framework to build resilient language agents as graphs."
+},
+{
+"id": "mastra",
+"name": "mastra",
+"cat": 3,
+"sub": "ts",
+"gh": "mastra-ai/mastra",
+"what": "Mastra is the modern TypeScript framework for AI-powered applications and agents."
+},
+{
+"id": "semantic-kernel",
+"name": "semantic-kernel",
+"cat": 3,
+"sub": "ts",
+"gh": "microsoft/semantic-kernel",
+"what": "Integrate cutting-edge LLM technology quickly and easily into your apps"
+},
+{
+"id": "vercel-ai",
+"name": "ai",
+"cat": 3,
+"sub": "ts",
+"gh": "vercel/ai",
+"what": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications a"
+},
+{
+"id": "autogpt",
+"name": "AutoGPT",
+"cat": 3,
+"sub": "visual",
+"gh": "Significant-Gravitas/AutoGPT",
+"what": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on w"
+},
+{
+"id": "dify",
+"name": "dify",
+"cat": 3,
+"sub": "visual",
+"gh": "langgenius/dify",
+"what": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-ho"
+},
+{
+"id": "flowise",
+"name": "Flowise",
+"cat": 3,
+"sub": "visual",
+"gh": "FlowiseAI/Flowise",
+"what": "Build AI Agents, Visually"
+},
+{
+"id": "langflow",
+"name": "langflow",
+"cat": 3,
+"sub": "visual",
+"gh": "langflow-ai/langflow",
+"what": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows."
+},
+{
+"id": "sim",
+"name": "sim",
+"cat": 3,
+"sub": "visual",
+"gh": "simstudioai/sim",
+"what": "Sim is the collaborative workspace to build, deploy, and monitor AI agents and workflows. Used by 100,000+ builders."
+},
+{
+"id": "agent-reach",
+"name": "Agent-Reach",
+"cat": 4,
+"sub": "busqueda",
+"gh": "Panniantong/Agent-Reach",
+"what": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero AP"
+},
+{
+"id": "archivebox",
+"name": "ArchiveBox",
+"cat": 4,
+"sub": "busqueda",
+"gh": "ArchiveBox/ArchiveBox",
+"what": "🗃 Open source self-hosted web archiving. Takes URLs/browser history/bookmarks/Pocket/Pinboard/etc., saves HTML, JS, PDFs, media, and more..."
+},
+{
+"id": "changedetection",
+"name": "changedetection.io",
+"cat": 4,
+"sub": "busqueda",
+"gh": "dgtlmoon/changedetection.io",
+"what": "Best and simplest tool for website change detection, web page monitoring, and website change alerts. Perfect for tracking content changes, p"
+},
+{
+"id": "last30days-skill",
+"name": "last30days-skill",
+"cat": 4,
+"sub": "busqueda",
+"gh": "mvanhorn/last30days-skill",
+"what": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
+},
+{
+"id": "searxng",
+"name": "searxng",
+"cat": 4,
+"sub": "busqueda",
+"gh": "searxng/searxng",
+"what": "SearXNG is a free internet metasearch engine which aggregates results from various search services and databases. Users are neither tracked "
+},
+{
+"id": "vane",
+"name": "Vane",
+"cat": 4,
+"sub": "busqueda",
+"gh": "ItzCrazyKns/Vane",
+"what": "Vane is an AI-powered answering engine."
+},
+{
+"id": "crawl4ai",
+"name": "crawl4ai",
+"cat": 4,
+"sub": "crawlers",
+"gh": "unclecode/crawl4ai",
+"what": "Official Crawl4AI Cloud: a hosted web scraping, extraction, and search API for AI agents. Free API key, 1,000 credits a month, no card. Full"
+},
+{
+"id": "crawlee",
+"name": "crawlee",
+"cat": 4,
+"sub": "crawlers",
+"gh": "apify/crawlee",
+"what": "Crawlee—A web scraping and browser automation library for Node.js to build reliable crawlers. In JavaScript and TypeScript. Extract data for"
+},
+{
+"id": "crawlee-python",
+"name": "crawlee-python",
+"cat": 4,
+"sub": "crawlers",
+"gh": "apify/crawlee-python",
+"what": "Crawlee—A web scraping and browser automation library for Python to build reliable crawlers. Extract data for AI, LLMs, RAG, or GPTs. Downlo"
+},
+{
+"id": "firecrawl",
+"name": "firecrawl",
+"cat": 4,
+"sub": "crawlers",
+"gh": "firecrawl/firecrawl",
+"what": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥"
+},
+{
+"id": "jina-reader",
+"name": "reader",
+"cat": 4,
+"sub": "crawlers",
+"gh": "jina-ai/reader",
+"what": "Convert any URL to an LLM-friendly input with a simple prefix https://r.jina.ai/"
+},
+{
+"id": "scrapely",
+"name": "scrapely",
+"cat": 4,
+"sub": "crawlers",
+"gh": "scrapy/scrapely",
+"what": "A pure-python HTML screen-scraping library"
+},
+{
+"id": "scrapling",
+"name": "Scrapling",
+"cat": 4,
+"sub": "crawlers",
+"gh": "D4Vinci/Scrapling",
+"what": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://dis"
+},
+{
+"id": "scrapy",
+"name": "scrapy",
+"cat": 4,
+"sub": "crawlers",
+"gh": "scrapy/scrapy",
+"what": "Scrapy, a fast high-level web crawling & scraping framework for Python."
+},
+{
+"id": "llm-scraper",
+"name": "llm-scraper",
+"cat": 4,
+"sub": "llm",
+"gh": "mishushakov/llm-scraper",
+"what": "Turn any webpage into structured data using LLMs"
+},
+{
+"id": "maxun",
+"name": "maxun",
+"cat": 4,
+"sub": "llm",
+"gh": "getmaxun/maxun",
+"what": "Turn any website into a structured API. Extract, automate, search and monitor the web."
+},
+{
+"id": "scrapegraph-ai",
+"name": "Scrapegraph-ai",
+"cat": 4,
+"sub": "llm",
+"gh": "ScrapeGraphAI/Scrapegraph-ai",
+"what": "Python scraper based on AI"
+},
+{
+"id": "browser-harness",
+"name": "browser-harness",
+"cat": 4,
+"sub": "navegador",
+"gh": "browser-use/browser-harness",
+"what": "Let Claude Code, Codex or Cursor use your real Chrome, logged in as you. One prompt to set up. Open source, MIT."
+},
+{
+"id": "browser-use",
+"name": "browser-use",
+"cat": 4,
+"sub": "navegador",
+"gh": "browser-use/browser-use",
+"what": "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API."
+},
+{
+"id": "lightpanda",
+"name": "browser",
+"cat": 4,
+"sub": "navegador",
+"gh": "lightpanda-io/browser",
+"what": "Lightpanda: the headless browser designed for AI and automation"
+},
+{
+"id": "playwright",
+"name": "playwright",
+"cat": 4,
+"sub": "navegador",
+"gh": "microsoft/playwright",
+"what": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. "
+},
+{
+"id": "playwright-cli",
+"name": "playwright-cli",
+"cat": 4,
+"sub": "navegador",
+"gh": "microsoft/playwright-cli",
+"what": "CLI for common Playwright actions. Record and generate Playwright code, inspect selectors and take screenshots."
+},
+{
+"id": "puppeteer",
+"name": "puppeteer",
+"cat": 4,
+"sub": "navegador",
+"gh": "puppeteer/puppeteer",
+"what": "JavaScript API for Chrome and Firefox"
+},
+{
+"id": "selenium",
+"name": "selenium",
+"cat": 4,
+"sub": "navegador",
+"gh": "SeleniumHQ/selenium",
+"what": "A browser automation framework and ecosystem."
+},
+{
+"id": "skyvern",
+"name": "skyvern",
+"cat": 4,
+"sub": "navegador",
+"gh": "Skyvern-AI/skyvern",
+"what": "Automate browser based workflows with AI"
+},
+{
+"id": "stagehand",
+"name": "stagehand",
+"cat": 4,
+"sub": "navegador",
+"gh": "browserbase/stagehand",
+"what": "The SDK to extract data and interact with any site on the web. Get started with Claude Code, Codex, Eve, Mastra, and more."
+},
+{
+"id": "instaloader",
+"name": "instaloader",
+"cat": 4,
+"sub": "social",
+"gh": "instaloader/instaloader",
+"what": "Download pictures (or videos) along with their captions and other metadata from Instagram."
+},
+{
+"id": "snscrape",
+"name": "snscrape",
+"cat": 4,
+"sub": "social",
+"gh": "JustAnotherArchivist/snscrape",
+"what": "A social networking service scraper in Python"
+},
+{
+"id": "yt-dlp",
+"name": "yt-dlp",
+"cat": 4,
+"sub": "social",
+"gh": "yt-dlp/yt-dlp",
+"what": "A feature-rich command-line audio/video downloader"
+},
+{
+"id": "awesome-mcp-clients",
+"name": "awesome-mcp-clients",
+"cat": 5,
+"sub": "directorios",
+"gh": "punkpeye/awesome-mcp-clients",
+"what": "A collection of MCP clients."
+},
+{
+"id": "awesome-mcp-servers",
+"name": "awesome-mcp-servers",
+"cat": 5,
+"sub": "directorios",
+"gh": "punkpeye/awesome-mcp-servers",
+"what": "A collection of MCP servers."
+},
+{
+"id": "mcp",
+"name": "mcp",
+"cat": 5,
+"sub": "directorios",
+"gh": "google/mcp",
+"what": "Google 💚 MCP"
+},
+{
+"id": "mcp-for-beginners",
+"name": "mcp-for-beginners",
+"cat": 5,
+"sub": "directorios",
+"gh": "microsoft/mcp-for-beginners",
+"what": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET,"
+},
+{
+"id": "public-apis",
+"name": "public-apis",
+"cat": 5,
+"sub": "directorios",
+"gh": "public-apis/public-apis",
+"what": "A collective list of free APIs"
+},
+{
+"id": "fastmcp",
+"name": "fastmcp",
+"cat": 5,
+"sub": "sdk",
+"gh": "PrefectHQ/fastmcp",
+"what": "🚀 The fast, Pythonic way to build MCP servers and clients."
+},
+{
+"id": "langchain-mcp-adapters",
+"name": "langchain-mcp-adapters",
+"cat": 5,
+"sub": "sdk",
+"gh": "langchain-ai/langchain-mcp-adapters",
+"what": "LangChain 🔌 MCP"
+},
+{
+"id": "mcp-inspector",
+"name": "inspector",
+"cat": 5,
+"sub": "sdk",
+"gh": "modelcontextprotocol/inspector",
+"what": "Deterministic testing tools for MCP servers"
+},
+{
+"id": "mcp-python-sdk",
+"name": "python-sdk",
+"cat": 5,
+"sub": "sdk",
+"gh": "modelcontextprotocol/python-sdk",
+"what": "The official Python SDK for Model Context Protocol servers and clients"
+},
+{
+"id": "mcp-typescript-sdk",
+"name": "typescript-sdk",
+"cat": 5,
+"sub": "sdk",
+"gh": "modelcontextprotocol/typescript-sdk",
+"what": "The official TypeScript SDK for Model Context Protocol servers and clients"
+},
+{
+"id": "mcp-use",
+"name": "mcp-use",
+"cat": 5,
+"sub": "sdk",
+"gh": "mcp-use/mcp-use",
+"what": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents."
+},
+{
+"id": "blender-mcp",
+"name": "mcp-for-blender",
+"cat": 5,
+"sub": "servidores",
+"gh": "ahujasid/mcp-for-blender",
+"what": "Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation."
+},
+{
+"id": "chrome-devtools-mcp",
+"name": "chrome-devtools-mcp",
+"cat": 5,
+"sub": "servidores",
+"gh": "ChromeDevTools/chrome-devtools-mcp",
+"what": "Chrome DevTools for coding agents"
+},
+{
+"id": "context7",
+"name": "context7",
+"cat": 5,
+"sub": "servidores",
+"gh": "upstash/context7",
+"what": "Context7 Platform -- Up-to-date docs for AI agents"
+},
+{
+"id": "figma-context-mcp",
+"name": "Figma-Context-MCP",
+"cat": 5,
+"sub": "servidores",
+"gh": "GLips/Figma-Context-MCP",
+"what": "MCP server to provide Figma layout information to AI coding agents like Cursor"
+},
+{
+"id": "github-mcp-server",
+"name": "github-mcp-server",
+"cat": 5,
+"sub": "servidores",
+"gh": "github/github-mcp-server",
+"what": "GitHub's official MCP Server"
+},
+{
+"id": "mcp-neo4j",
+"name": "mcp-neo4j",
+"cat": 5,
+"sub": "servidores",
+"gh": "neo4j-contrib/mcp-neo4j",
+"what": "Neo4j Labs Model Context Protocol servers"
+},
+{
+"id": "playwright-mcp",
+"name": "playwright-mcp",
+"cat": 5,
+"sub": "servidores",
+"gh": "microsoft/playwright-mcp",
+"what": "Playwright MCP server"
+},
+{
+"id": "serena",
+"name": "serena",
+"cat": 5,
+"sub": "servidores",
+"gh": "oraios/serena",
+"what": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent"
+},
+{
+"id": "servers",
+"name": "servers",
+"cat": 5,
+"sub": "servidores",
+"gh": "modelcontextprotocol/servers",
+"what": "Model Context Protocol Reference Servers"
+},
+{
+"id": "agentmemory",
+"name": "agentmemory",
+"cat": 6,
+"sub": "memoria",
+"gh": "rohitg00/agentmemory",
+"what": "#1 Persistent memory for AI coding agents based on real-world benchmarks"
+},
+{
+"id": "claude-mem",
+"name": "claude-mem",
+"cat": 6,
+"sub": "memoria",
+"gh": "thedotmack/claude-mem",
+"what": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and inject"
+},
+{
+"id": "cognee",
+"name": "cognee",
+"cat": 6,
+"sub": "memoria",
+"gh": "topoteretes/cognee",
+"what": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free"
+},
+{
+"id": "engram",
+"name": "engram",
+"cat": 6,
+"sub": "memoria",
+"gh": "Gentleman-Programming/engram",
+"what": "Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP server, HTTP API, CLI, and TUI."
+},
+{
+"id": "graphiti",
+"name": "graphiti",
+"cat": 6,
+"sub": "memoria",
+"gh": "getzep/graphiti",
+"what": "Build Real-Time Knowledge Graphs for AI Agents"
+},
+{
+"id": "letta",
+"name": "letta",
+"cat": 6,
+"sub": "memoria",
+"gh": "letta-ai/letta",
+"what": "Platform for stateful agents: AI with advanced memory that can learn and self-improve over time."
+},
+{
+"id": "mem0",
+"name": "mem0",
+"cat": 6,
+"sub": "memoria",
+"gh": "mem0ai/mem0",
+"what": "The Memory Layer for AI Agents - Drop-in memory infrastructure for AI agents and apps. Context that persists. Built for production."
+},
+{
+"id": "mempalace",
+"name": "mempalace",
+"cat": 6,
+"sub": "memoria",
+"gh": "MemPalace/mempalace",
+"what": "The best-benchmarked open-source AI memory system. And it's free."
+},
+{
+"id": "supermemory",
+"name": "supermemory",
+"cat": 6,
+"sub": "memoria",
+"gh": "supermemoryai/supermemory",
+"what": "Memory and context engine + app that is extremely fast, scalable, and can be run fully locally. The Memory API for the AI era."
+},
+{
+"id": "deepeval",
+"name": "deepeval",
+"cat": 6,
+"sub": "observabilidad",
+"gh": "confident-ai/deepeval",
+"what": "The LLM Evaluation Framework"
+},
+{
+"id": "guardrails",
+"name": "Guardrails",
+"cat": 6,
+"sub": "observabilidad",
+"gh": "NVIDIA-NeMo/Guardrails",
+"what": "NeMo Guardrails is an open-source toolkit for easily adding programmable guardrails to LLM-based conversational systems."
+},
+{
+"id": "langfuse",
+"name": "langfuse",
+"cat": 6,
+"sub": "observabilidad",
+"gh": "langfuse/langfuse",
+"what": "🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform."
+},
+{
+"id": "loguru",
+"name": "loguru",
+"cat": 6,
+"sub": "observabilidad",
+"gh": "Delgan/loguru",
+"what": "Python logging made (stupidly) simple"
+},
+{
+"id": "mlflow",
+"name": "mlflow",
+"cat": 6,
+"sub": "observabilidad",
+"gh": "mlflow/mlflow",
+"what": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and "
+},
+{
+"id": "opik",
+"name": "opik",
+"cat": 6,
+"sub": "observabilidad",
+"gh": "comet-ml/opik",
+"what": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, an"
+},
+{
+"id": "phoenix",
+"name": "phoenix",
+"cat": 6,
+"sub": "observabilidad",
+"gh": "Arize-ai/phoenix",
+"what": "AI Observability & Evaluation"
+},
+{
+"id": "promptfoo",
+"name": "promptfoo",
+"cat": 6,
+"sub": "observabilidad",
+"gh": "promptfoo/promptfoo",
+"what": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, DeepS"
+},
+{
+"id": "ragas",
+"name": "ragas",
+"cat": 6,
+"sub": "observabilidad",
+"gh": "vibrantlabsai/ragas",
+"what": "Supercharge Your LLM Application Evaluations 🚀"
+},
+{
+"id": "graphrag",
+"name": "graphrag",
+"cat": 6,
+"sub": "rag",
+"gh": "microsoft/graphrag",
+"what": "A modular graph-based Retrieval-Augmented Generation (RAG) system"
+},
+{
+"id": "lightrag",
+"name": "LightRAG",
+"cat": 6,
+"sub": "rag",
+"gh": "HKUDS/LightRAG",
+"what": "[EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation"
+},
+{
+"id": "pageindex",
+"name": "PageIndex",
+"cat": 6,
+"sub": "rag",
+"gh": "VectifyAI/PageIndex",
+"what": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG"
+},
+{
+"id": "ragflow",
+"name": "ragflow",
+"cat": 6,
+"sub": "rag",
+"gh": "infiniflow/ragflow",
+"what": "RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engine that grew into context infrastructure."
+},
+{
+"id": "litellm",
+"name": "litellm",
+"cat": 6,
+"sub": "serving",
+"gh": "BerriAI/litellm",
+"what": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, l"
+},
+{
+"id": "sglang",
+"name": "sglang",
+"cat": 6,
+"sub": "serving",
+"gh": "sgl-project/sglang",
+"what": "SGLang is a high-performance serving framework for large language models and multimodal models."
+},
+{
+"id": "vllm",
+"name": "vllm",
+"cat": 6,
+"sub": "serving",
+"gh": "vllm-project/vllm",
+"what": "A high-throughput and memory-efficient inference and serving engine for LLMs"
+},
+{
+"id": "headroom",
+"name": "headroom",
+"cat": 6,
+"sub": "tokens",
+"gh": "headroomlabs-ai/headroom",
+"what": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JS"
+},
+{
+"id": "chroma",
+"name": "chroma",
+"cat": 6,
+"sub": "vectores",
+"gh": "chroma-core/chroma",
+"what": "Search infrastructure for AI"
+},
+{
+"id": "faiss",
+"name": "faiss",
+"cat": 6,
+"sub": "vectores",
+"gh": "facebookresearch/faiss",
+"what": "A library for efficient similarity search and clustering of dense vectors."
+},
+{
+"id": "milvus",
+"name": "milvus",
+"cat": 6,
+"sub": "vectores",
+"gh": "milvus-io/milvus",
+"what": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search"
+},
+{
+"id": "pgvector",
+"name": "pgvector",
+"cat": 6,
+"sub": "vectores",
+"gh": "pgvector/pgvector",
+"what": "Open-source vector similarity search for Postgres"
+},
+{
+"id": "qdrant",
+"name": "qdrant",
+"cat": 6,
+"sub": "vectores",
+"gh": "qdrant/qdrant",
+"what": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud"
+},
+{
+"id": "turbovec",
+"name": "turbovec",
+"cat": 6,
+"sub": "vectores",
+"gh": "RyanCodrai/turbovec",
+"what": "A vector index built on TurboQuant, written in Rust with Python bindings"
+},
+{
+"id": "how-to-train-your-gpt",
+"name": "how-to-train-your-gpt",
+"cat": 7,
+"sub": "aprender",
+"gh": "raiyanyahya/how-to-train-your-gpt",
+"what": "Build a modern LLM from scratch. Every line commented. Explained like we are five."
+},
+{
+"id": "llm-course",
+"name": "llm-course",
+"cat": 7,
+"sub": "aprender",
+"gh": "mlabonne/llm-course",
+"what": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks."
+},
+{
+"id": "llm.c",
+"name": "llm.c",
+"cat": 7,
+"sub": "aprender",
+"gh": "karpathy/llm.c",
+"what": "LLM training in simple, raw C/CUDA"
+},
+{
+"id": "llms-from-scratch",
+"name": "LLMs-from-scratch",
+"cat": 7,
+"sub": "aprender",
+"gh": "rasbt/LLMs-from-scratch",
+"what": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step"
+},
+{
+"id": "nanochat",
+"name": "nanochat",
+"cat": 7,
+"sub": "aprender",
+"gh": "karpathy/nanochat",
+"what": "The best ChatGPT that $100 can buy."
+},
+{
+"id": "nanogpt",
+"name": "nanoGPT",
+"cat": 7,
+"sub": "aprender",
+"gh": "karpathy/nanoGPT",
+"what": "The simplest, fastest repository for training/finetuning medium-sized GPTs."
+},
+{
+"id": "ast-grep",
+"name": "ast-grep",
+"cat": 7,
+"sub": "calidad",
+"gh": "ast-grep/ast-grep",
+"what": "⚡A CLI tool for code structural search, lint and rewriting. Written in Rust"
+},
+{
+"id": "defending-code-reference-harness",
+"name": "defending-code-reference-harness",
+"cat": 7,
+"sub": "calidad",
+"gh": "anthropics/defending-code-reference-harness",
+"what": "Skills for threat modeling, scanning, triage, patching, plus an autonomous scanning harness you can /customize"
+},
+{
+"id": "semgrep",
+"name": "semgrep",
+"cat": 7,
+"sub": "calidad",
+"gh": "semgrep/semgrep",
+"what": "Lightweight static analysis for many languages. Find bug variants with patterns that look like source code."
+},
+{
+"id": "swe-bench",
+"name": "SWE-bench",
+"cat": 7,
+"sub": "calidad",
+"gh": "SWE-bench/SWE-bench",
+"what": "SWE-bench: Can Language Models Resolve Real-world Github Issues?"
+},
+{
+"id": "codebase-memory-mcp",
+"name": "codebase-memory-mcp",
+"cat": 7,
+"sub": "codigo",
+"gh": "DeusData/codebase-memory-mcp",
+"what": "Local code intelligence for developers and AI agents. Connect code, docs and infrastructure in a persistent graph, with CBM Lens, MCP tools,"
+},
+{
+"id": "codegraph",
+"name": "codegraph",
+"cat": 7,
+"sub": "codigo",
+"gh": "colbymchenry/codegraph",
+"what": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, "
+},
+{
+"id": "deepwiki-open",
+"name": "deepwiki-open",
+"cat": 7,
+"sub": "codigo",
+"gh": "AsyncFuncAI/deepwiki-open",
+"what": "Open Source DeepWiki: AI-Powered Wiki Generator for GitHub/Gitlab/Bitbucket Repositories. Join the discord: https://discord.gg/gMwThUMeme"
+},
+{
+"id": "gitnexus",
+"name": "GitNexus",
+"cat": 7,
+"sub": "codigo",
+"gh": "abhigyanpatwari/GitNexus",
+"what": "GitNexus: The Zero-Server Code Intelligence Engine "
+},
+{
+"id": "graphify",
+"name": "graphify",
+"cat": 7,
+"sub": "codigo",
+"gh": "Graphify-Labs/graphify",
+"what": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Curso"
+},
+{
+"id": "repomix",
+"name": "repomix",
+"cat": 7,
+"sub": "codigo",
+"gh": "yamadashy/repomix",
+"what": "📦 Repomix is a powerful tool that packs your entire repository into a single, AI-friendly file. Perfect for when you need to feed your codeb"
+},
+{
+"id": "tree-sitter",
+"name": "tree-sitter",
+"cat": 7,
+"sub": "codigo",
+"gh": "tree-sitter/tree-sitter",
+"what": "An incremental parsing system for programming tools"
+},
+{
+"id": "awesome-bigdata",
+"name": "awesome-bigdata",
+"cat": 7,
+"sub": "datos",
+"gh": "oxnr/awesome-bigdata",
+"what": "A curated list of awesome big data frameworks, ressources and other awesomeness."
+},
+{
+"id": "data-science-ipython-notebooks",
+"name": "data-science-ipython-notebooks",
+"cat": 7,
+"sub": "datos",
+"gh": "donnemartin/data-science-ipython-notebooks",
+"what": "Data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe, Keras), scikit-learn, Kaggle, big data (Spark, Hadoop MapReduce, HD"
+},
+{
+"id": "duckdb",
+"name": "duckdb",
+"cat": 7,
+"sub": "datos",
+"gh": "duckdb/duckdb",
+"what": "DuckDB is a high-performance analytical database system"
+},
+{
+"id": "marimo",
+"name": "marimo",
+"cat": 7,
+"sub": "datos",
+"gh": "marimo-team/marimo",
+"what": "A reactive notebook for Python — run reproducible experiments, query with SQL, execute as a script, deploy as an app, and version with git. "
+},
+{
+"id": "polars",
+"name": "polars",
+"cat": 7,
+"sub": "datos",
+"gh": "pola-rs/polars",
+"what": "Extremely fast Query Engine for DataFrames, written in Rust"
+},
+{
+"id": "llama-factory",
+"name": "LlamaFactory",
+"cat": 7,
+"sub": "entrenamiento",
+"gh": "hiyouga/LlamaFactory",
+"what": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)"
+},
+{
+"id": "peft",
+"name": "peft",
+"cat": 7,
+"sub": "entrenamiento",
+"gh": "huggingface/peft",
+"what": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning."
+},
+{
+"id": "pytorch",
+"name": "pytorch",
+"cat": 7,
+"sub": "entrenamiento",
+"gh": "pytorch/pytorch",
+"what": "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
+},
+{
+"id": "transformers",
+"name": "transformers",
+"cat": 7,
+"sub": "entrenamiento",
+"gh": "huggingface/transformers",
+"what": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, f"
+},
+{
+"id": "trl",
+"name": "trl",
+"cat": 7,
+"sub": "entrenamiento",
+"gh": "huggingface/trl",
+"what": "Train transformer language models with reinforcement learning."
+},
+{
+"id": "unsloth",
+"name": "unsloth",
+"cat": 7,
+"sub": "entrenamiento",
+"gh": "unslothai/unsloth",
+"what": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more."
+},
+{
+"id": "cli",
+"name": "cli",
+"cat": 7,
+"sub": "herramientas",
+"gh": "cli/cli",
+"what": "GitHub’s official command line tool"
+},
+{
+"id": "openai-python",
+"name": "openai-python",
+"cat": 7,
+"sub": "herramientas",
+"gh": "openai/openai-python",
+"what": "The official Python library for the OpenAI API"
+},
+{
+"id": "cosmos",
+"name": "cosmos",
+"cat": 7,
+"sub": "modelos",
+"gh": "NVIDIA/cosmos",
+"what": "NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables developers to build Physical AI for robots, autonomous v"
+},
+{
+"id": "deepseek-coder",
+"name": "DeepSeek-Coder",
+"cat": 7,
+"sub": "modelos",
+"gh": "deepseek-ai/DeepSeek-Coder",
+"what": "DeepSeek Coder: Let the Code Write Itself"
+},
+{
+"id": "nemotron",
+"name": "Nemotron",
+"cat": 7,
+"sub": "modelos",
+"gh": "NVIDIA-NeMo/Nemotron",
+"what": "Developer Asset Hub for NVIDIA Nemotron — A one-stop resource for training recipes, usage cookbooks, datasets, and full end-to-end reference"
+},
+{
+"id": "timesfm",
+"name": "timesfm",
+"cat": 7,
+"sub": "modelos",
+"gh": "google-research/timesfm",
+"what": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting"
+},
+{
+"id": "cherry-studio",
+"name": "cherry-studio",
+"cat": 8,
+"sub": "chats",
+"gh": "CherryHQ/cherry-studio",
+"what": "Your AI workspace for models, agents, and productivity."
+},
+{
+"id": "jan",
+"name": "jan",
+"cat": 8,
+"sub": "chats",
+"gh": "janhq/jan",
+"what": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer."
+},
+{
+"id": "librechat",
+"name": "LibreChat",
+"cat": 8,
+"sub": "chats",
+"gh": "LibreChat-AI/LibreChat",
+"what": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, Open"
+},
+{
+"id": "lobehub",
+"name": "lobehub",
+"cat": 8,
+"sub": "chats",
+"gh": "lobehub/lobehub",
+"what": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better e"
+},
+{
+"id": "open-webui",
+"name": "open-webui",
+"cat": 8,
+"sub": "chats",
+"gh": "open-webui/open-webui",
+"what": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)"
+},
+{
+"id": "textgen",
+"name": "textgen",
+"cat": 8,
+"sub": "chats",
+"gh": "oobabooga/textgen",
+"what": "Open-source desktop app for local LLMs. Text, vision, tool-calling, OpenAI/Anthropic-compatible API. 100% private."
+},
+{
+"id": "exo",
+"name": "exo",
+"cat": 8,
+"sub": "motores",
+"gh": "exo-explore/exo",
+"what": "Run frontier AI locally."
+},
+{
+"id": "llama-cpp",
+"name": "llama.cpp",
+"cat": 8,
+"sub": "motores",
+"gh": "ggml-org/llama.cpp",
+"what": "LLM inference in C/C++"
+},
+{
+"id": "llamafile",
+"name": "llamafile",
+"cat": 8,
+"sub": "motores",
+"gh": "mozilla-ai/llamafile",
+"what": "Distribute and run LLMs with a single file."
+},
+{
+"id": "llmfit",
+"name": "llmfit",
+"cat": 8,
+"sub": "motores",
+"gh": "AlexsJones/llmfit",
+"what": "Hundreds of models & providers. One command to find what runs on your hardware."
+},
+{
+"id": "localai",
+"name": "LocalAI",
+"cat": 8,
+"sub": "motores",
+"gh": "mudler/LocalAI",
+"what": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required."
+},
+{
+"id": "ollama",
+"name": "ollama",
+"cat": 8,
+"sub": "motores",
+"gh": "ollama/ollama",
+"what": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+},
+{
+"id": "notebooklm-mcp-cli",
+"name": "notebooklm-mcp-cli",
+"cat": 8,
+"sub": "notebooklm",
+"gh": "jacob-bd/gemini-notebook-mcp-cli",
+"what": "Programmatic access to Gemini Notebook - via command-line interface (CLI), Model Context Protocol (MCP) server, and AI agent skills."
+},
+{
+"id": "notebooklm-py",
+"name": "notebooklm-py",
+"cat": 8,
+"sub": "notebooklm",
+"gh": "teng-lin/notebooklm-py",
+"what": "Unofficial Python API and agentic skill for Google Gemini Notebook. Full programmatic access to Gemini Notebook's features—including capabil"
+},
+{
+"id": "open-notebook",
+"name": "open-notebook",
+"cat": 8,
+"sub": "notebooklm",
+"gh": "lfnovo/open-notebook",
+"what": "An Open Source implementation of Notebook LM with more flexibility and features"
+},
+{
+"id": "surfsense",
+"name": "SurfSense",
+"cat": 8,
+"sub": "notebooklm",
+"gh": "MODSetter/SurfSense",
+"what": "Air-gapped, privacy-focused, open-source NotebookLM alternative. AI agent that researches, transforms, and edits your documents. Join our Di"
+},
+{
+"id": "anything-llm",
+"name": "anything-llm",
+"cat": 8,
+"sub": "workspaces",
+"gh": "Mintplex-Labs/anything-llm",
+"what": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience "
+},
+{
+"id": "hermes-desktop",
+"name": "hermes-desktop",
+"cat": 8,
+"sub": "workspaces",
+"gh": "fathah/hermes-desktop",
+"what": "Desktop Companion for Hermes Agent"
+},
+{
+"id": "khoj",
+"name": "khoj",
+"cat": 8,
+"sub": "workspaces",
+"gh": "khoj-ai/khoj",
+"what": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Tur"
+},
+{
+"id": "odysseus",
+"name": "odysseus",
+"cat": 8,
+"sub": "workspaces",
+"gh": "odysseus-dev/odysseus",
+"what": "Self-hosted AI workspace. "
+},
+{
+"id": "private-gpt",
+"name": "private-gpt",
+"cat": 8,
+"sub": "workspaces",
+"gh": "zylon-ai/private-gpt",
+"what": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compat"
+},
+{
+"id": "animejs",
+"name": "anime",
+"cat": 9,
+"sub": "animacion",
+"gh": "juliangarnier/anime",
+"what": "JavaScript animation engine"
+},
+{
+"id": "gsap",
+"name": "GSAP",
+"cat": 9,
+"sub": "animacion",
+"gh": "greensock/GSAP",
+"what": "GSAP (GreenSock Animation Platform), a JavaScript animation library for the modern web"
+},
+{
+"id": "motion",
+"name": "motion",
+"cat": 9,
+"sub": "animacion",
+"gh": "motiondivision/motion",
+"what": "A modern animation library for React and JavaScript"
+},
+{
+"id": "react-three-fiber",
+"name": "react-three-fiber",
+"cat": 9,
+"sub": "animacion",
+"gh": "pmndrs/react-three-fiber",
+"what": "🇨🇭 A React renderer for Three.js"
+},
+{
+"id": "three.js",
+"name": "three.js",
+"cat": 9,
+"sub": "animacion",
+"gh": "mrdoob/three.js",
+"what": "JavaScript 3D Library."
+},
+{
+"id": "ant-design",
+"name": "ant-design",
+"cat": 9,
+"sub": "componentes",
+"gh": "ant-design/ant-design",
+"what": "An enterprise-class UI design language and React UI library"
+},
+{
+"id": "heroui",
+"name": "heroui",
+"cat": 9,
+"sub": "componentes",
+"gh": "heroui-inc/heroui",
+"what": "🚀 Beautiful, fast and modern React UI library. (Previously NextUI)"
+},
+{
+"id": "lucide",
+"name": "lucide",
+"cat": 9,
+"sub": "componentes",
+"gh": "lucide-icons/lucide",
+"what": "Beautiful & consistent icon toolkit made by the community. Lucide is an open-source icon library that provides 2000+ vector (svg) files for "
+},
+{
+"id": "magicui",
+"name": "magicui",
+"cat": 9,
+"sub": "componentes",
+"gh": "magicuidesign/magicui",
+"what": "UI Library for Design Engineers. Animated components and effects you can copy and paste into your apps. Free. Open Source."
+},
+{
+"id": "mui",
+"name": "material-ui",
+"cat": 9,
+"sub": "componentes",
+"gh": "mui/material-ui",
+"what": "Material UI: Comprehensive React component library that implements Google's Material Design. Free forever."
+},
+{
+"id": "radix-primitives",
+"name": "primitives",
+"cat": 9,
+"sub": "componentes",
+"gh": "radix-ui/primitives",
+"what": "Radix Primitives is an open-source UI component library for building high-quality, accessible design systems and web apps. Maintained by @wo"
+},
+{
+"id": "react-bits",
+"name": "react-bits",
+"cat": 9,
+"sub": "componentes",
+"gh": "DavidHDev/react-bits",
+"what": "The largest open-source library of animated, interactive, and customizable React & Next.js components for building standout web products and"
+},
+{
+"id": "swr",
+"name": "swr",
+"cat": 9,
+"sub": "componentes",
+"gh": "vercel/swr",
+"what": "React Hooks for Data Fetching"
+},
+{
+"id": "ui",
+"name": "ui",
+"cat": 9,
+"sub": "componentes",
+"gh": "shadcn-ui/ui",
+"what": "Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize, extend, and make y"
+},
+{
+"id": "excalidraw",
+"name": "excalidraw",
+"cat": 9,
+"sub": "diseno",
+"gh": "excalidraw/excalidraw",
+"what": "Virtual whiteboard for sketching hand-drawn like diagrams"
+},
+{
+"id": "onlook",
+"name": "onlook",
+"cat": 9,
+"sub": "diseno",
+"gh": "onlook-dev/onlook",
+"what": "The Developer Tool for Visual Engineers • An Open-Source AI-First Design tool • Visually build, style, and edit your code with AI • World's "
+},
+{
+"id": "open-design",
+"name": "open-design",
+"cat": 9,
+"sub": "diseno",
+"gh": "nexu-io/open-design",
+"what": "The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prototypes, websites, apps, dashboards, present"
+},
+{
+"id": "penpot",
+"name": "penpot",
+"cat": 9,
+"sub": "diseno",
+"gh": "penpot/penpot",
+"what": "Penpot: The open-source design platform for Product teams that need scalable collaboration."
+},
+{
+"id": "plasmic",
+"name": "plasmic",
+"cat": 9,
+"sub": "diseno",
+"gh": "plasmicapp/plasmic",
+"what": "Visual builder for React. Build apps, websites, and content. Integrate with your codebase."
+},
+{
+"id": "tldraw",
+"name": "tldraw",
+"cat": 9,
+"sub": "diseno",
+"gh": "tldraw/tldraw",
+"what": "Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent recommended #1 five star SDK."
+},
+{
+"id": "daisyui",
+"name": "daisyui",
+"cat": 9,
+"sub": "estilos",
+"gh": "saadeghi/daisyui",
+"what": "🌼 🌼 🌼 🌼 🌼  The most popular, free and open-source Tailwind CSS component library"
+},
+{
+"id": "normalize.css",
+"name": "normalize.css",
+"cat": 9,
+"sub": "estilos",
+"gh": "necolas/normalize.css",
+"what": "A modern alternative to CSS resets"
+},
+{
+"id": "tailwindcss",
+"name": "tailwindcss",
+"cat": 9,
+"sub": "estilos",
+"gh": "tailwindlabs/tailwindcss",
+"what": "A utility-first CSS framework for rapid UI development."
+},
+{
+"id": "assistant-ui",
+"name": "assistant-ui",
+"cat": 9,
+"sub": "ia-ui",
+"gh": "assistant-ui/assistant-ui",
+"what": "Typescript/React Library for AI Chat 💬🚀"
+},
+{
+"id": "copilotkit",
+"name": "CopilotKit",
+"cat": 9,
+"sub": "ia-ui",
+"gh": "CopilotKit/CopilotKit",
+"what": "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.  Makers of the AG-UI Protocol"
+},
+{
+"id": "openui",
+"name": "openui",
+"cat": 9,
+"sub": "ia-ui",
+"gh": "thesysdev/openui",
+"what": "The Open Standard for Generative UI"
+},
+{
+"id": "screenshot-to-code",
+"name": "screenshot-to-code",
+"cat": 9,
+"sub": "ia-ui",
+"gh": "abi/screenshot-to-code",
+"what": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)"
+},
+{
+"id": "stitch-sdk",
+"name": "stitch-sdk",
+"cat": 9,
+"sub": "ia-ui",
+"gh": "google-labs-code/stitch-sdk",
+"what": "Generate UI screens from text prompts and extract their HTML and screenshots programmatically."
+},
+{
+"id": "design.md",
+"name": "design.md",
+"cat": 9,
+"sub": "skills",
+"gh": "google-labs-code/design.md",
+"what": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a"
+},
+{
+"id": "impeccable",
+"name": "impeccable",
+"cat": 9,
+"sub": "skills",
+"gh": "pbakaus/impeccable",
+"what": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships."
+},
+{
+"id": "skills-emil",
+"name": "skills_emil",
+"cat": 9,
+"sub": "skills",
+"gh": "emilkowalski/skills",
+"what": "Skills for Designers and Engineers."
+},
+{
+"id": "stitch-skills",
+"name": "stitch-skills",
+"cat": 9,
+"sub": "skills",
+"gh": "google-labs-code/stitch-skills",
+"what": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility "
+},
+{
+"id": "taste-skill",
+"name": "taste-skill",
+"cat": 9,
+"sub": "skills",
+"gh": "Leonxlnx/taste-skill",
+"what": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages"
+},
+{
+"id": "ui-ux-pro-max-skill",
+"name": "ui-ux-pro-max-skill",
+"cat": 9,
+"sub": "skills",
+"gh": "nextlevelbuilder/ui-ux-pro-max-skill",
+"what": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms."
+},
+{
+"id": "dash",
+"name": "dash",
+"cat": 10,
+"sub": "apps",
+"gh": "plotly/dash",
+"what": "Data Apps & Dashboards for Python. No JavaScript Required."
+},
+{
+"id": "gradio",
+"name": "gradio",
+"cat": 10,
+"sub": "apps",
+"gh": "gradio-app/gradio",
+"what": "Build and share delightful machine learning apps, all in Python. 🌟 Star to support our work!"
+},
+{
+"id": "streamlit",
+"name": "streamlit",
+"cat": 10,
+"sub": "apps",
+"gh": "streamlit/streamlit",
+"what": "Streamlit — A faster way to build and share data apps."
+},
+{
+"id": "grafana",
+"name": "grafana",
+"cat": 10,
+"sub": "bi",
+"gh": "grafana/grafana",
+"what": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Promet"
+},
+{
+"id": "metabase",
+"name": "metabase",
+"cat": 10,
+"sub": "bi",
+"gh": "metabase/metabase",
+"what": "The easy-to-use open source Business Intelligence and Embedded Analytics tool that lets everyone work with data :bar_chart:"
+},
+{
+"id": "pandas-ai",
+"name": "pandas-ai",
+"cat": 10,
+"sub": "bi",
+"gh": "sinaptik-ai/pandas-ai",
+"what": "Chat with your database or your datalake (SQL, CSV, parquet). PandasAI makes data analysis conversational using LLMs and RAG."
+},
+{
+"id": "redash",
+"name": "redash",
+"cat": 10,
+"sub": "bi",
+"gh": "getredash/redash",
+"what": "Make Your Company Data Driven. Connect to any data source, easily visualize, dashboard and share your data."
+},
+{
+"id": "superset",
+"name": "superset",
+"cat": 10,
+"sub": "bi",
+"gh": "apache/superset",
+"what": "Apache Superset is a Data Visualization and Data Exploration Platform"
+},
+{
+"id": "wrenai",
+"name": "WrenAI",
+"cat": 10,
+"sub": "bi",
+"gh": "Canner/WrenAI",
+"what": "GenBI (Generative BI) for AI agents, an open-source, governed text-to-SQL through an open context layer that turns natural-language question"
+},
+{
+"id": "chart-js",
+"name": "Chart.js",
+"cat": 10,
+"sub": "graficos",
+"gh": "chartjs/Chart.js",
+"what": "Simple HTML5 Charts using the <canvas> tag"
+},
+{
+"id": "d3",
+"name": "d3",
+"cat": 10,
+"sub": "graficos",
+"gh": "d3/d3",
+"what": "Bring data to life with SVG, Canvas and HTML. :bar_chart::chart_with_upwards_trend::tada:"
+},
+{
+"id": "echarts",
+"name": "echarts",
+"cat": 10,
+"sub": "graficos",
+"gh": "apache/echarts",
+"what": "Apache ECharts is a powerful, interactive charting and data visualization library for browser"
+},
+{
+"id": "recharts",
+"name": "recharts",
+"cat": 10,
+"sub": "graficos",
+"gh": "recharts/recharts",
+"what": "Redefined chart library built with React and D3"
+},
+{
+"id": "uplot",
+"name": "uPlot",
+"cat": 10,
+"sub": "graficos",
+"gh": "leeoniya/uPlot",
+"what": "📈 A small, fast chart for time series, lines, areas, ohlc & bars"
+},
+{
+"id": "matomo",
+"name": "matomo",
+"cat": 10,
+"sub": "producto",
+"gh": "matomo-org/matomo",
+"what": "Empowering People Ethically 🚀 — Matomo is hiring! Join us → https://matomo.org/jobs Matomo is the leading open-source alternative to Google "
+},
+{
+"id": "plausible",
+"name": "analytics",
+"cat": 10,
+"sub": "producto",
+"gh": "plausible/analytics",
+"what": "Open source, privacy-first web analytics. Lightweight, cookie-free Google Analytics alternative. Self-hosted or cloud."
+},
+{
+"id": "posthog",
+"name": "posthog",
+"cat": 10,
+"sub": "producto",
+"gh": "PostHog/posthog",
+"what": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session re"
+},
+{
+"id": "umami",
+"name": "umami",
+"cat": 10,
+"sub": "producto",
+"gh": "umami-software/umami",
+"what": "Umami is a privacy-first web and product analytics platform. Traffic, campaigns, behavior, conversions, and revenue in one place. No cookies"
+},
+{
+"id": "awesome-dataviz",
+"name": "awesome-dataviz",
+"cat": 10,
+"sub": "recursos",
+"gh": "hal9ai/awesome-dataviz",
+"what": "A curated list of awesome data visualization libraries and resources."
+},
+{
+"id": "daily-stock-analysis",
+"name": "daily_stock_analysis",
+"cat": 10,
+"sub": "recursos",
+"gh": "ZhuLinsen/daily_stock_analysis",
+"what": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time n"
+},
+{
+"id": "codeformer",
+"name": "CodeFormer",
+"cat": 11,
+"sub": "edicion",
+"gh": "sczhou/CodeFormer",
+"what": "[NeurIPS 2022] Towards Robust Blind Face Restoration with Codebook Lookup Transformer"
+},
+{
+"id": "gfpgan",
+"name": "GFPGAN",
+"cat": 11,
+"sub": "edicion",
+"gh": "TencentARC/GFPGAN",
+"what": "GFPGAN aims at developing Practical Algorithms for Real-world Face Restoration."
+},
+{
+"id": "real-esrgan",
+"name": "Real-ESRGAN",
+"cat": 11,
+"sub": "edicion",
+"gh": "xinntao/Real-ESRGAN",
+"what": "Real-ESRGAN aims at developing Practical Algorithms for General Image/Video Restoration."
+},
+{
+"id": "rembg",
+"name": "rembg",
+"cat": 11,
+"sub": "edicion",
+"gh": "danielgatis/rembg",
+"what": "Rembg is a tool to remove images background"
+},
+{
+"id": "comfyui",
+"name": "ComfyUI",
+"cat": 11,
+"sub": "interfaces",
+"gh": "Comfy-Org/ComfyUI",
+"what": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the w"
+},
+{
+"id": "fooocus",
+"name": "Fooocus",
+"cat": 11,
+"sub": "interfaces",
+"gh": "lllyasviel/Fooocus",
+"what": "Focus on prompting and generating"
+},
+{
+"id": "invokeai",
+"name": "InvokeAI",
+"cat": 11,
+"sub": "interfaces",
+"gh": "invoke-ai/InvokeAI",
+"what": "Invoke is a leading creative engine that uses image and video generation models to empower professionals, artists, and enthusiasts to genera"
+},
+{
+"id": "krita-ai-diffusion",
+"name": "krita-ai-diffusion",
+"cat": 11,
+"sub": "interfaces",
+"gh": "Acly/krita-ai-diffusion",
+"what": "Streamlined interface for generating images with AI in Krita. Inpaint and outpaint with optional text prompt, no tweaking required."
+},
+{
+"id": "sd-webui-forge",
+"name": "stable-diffusion-webui-forge",
+"cat": 11,
+"sub": "interfaces",
+"gh": "lllyasviel/stable-diffusion-webui-forge",
+"what": ""
+},
+{
+"id": "stable-diffusion-webui",
+"name": "stable-diffusion-webui",
+"cat": 11,
+"sub": "interfaces",
+"gh": "AUTOMATIC1111/stable-diffusion-webui",
+"what": "Stable Diffusion web UI"
+},
+{
+"id": "comfyui-ipadapter-plus",
+"name": "ComfyUI_IPAdapter_plus",
+"cat": 11,
+"sub": "modelos",
+"gh": "cubiq/ComfyUI_IPAdapter_plus",
+"what": "ComfyUI reference implementation for IPAdapter models."
+},
+{
+"id": "controlnet",
+"name": "ControlNet",
+"cat": 11,
+"sub": "modelos",
+"gh": "lllyasviel/ControlNet",
+"what": "Let us control diffusion models!"
+},
+{
+"id": "diffusers",
+"name": "diffusers",
+"cat": 11,
+"sub": "modelos",
+"gh": "huggingface/diffusers",
+"what": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch."
+},
+{
+"id": "flux",
+"name": "flux",
+"cat": 11,
+"sub": "modelos",
+"gh": "black-forest-labs/flux",
+"what": "Official inference repo for FLUX.1 models"
+},
+{
+"id": "sd-webui-controlnet",
+"name": "sd-webui-controlnet",
+"cat": 11,
+"sub": "modelos",
+"gh": "Mikubill/sd-webui-controlnet",
+"what": "WebUI extension for ControlNet"
+},
+{
+"id": "deep-live-cam",
+"name": "Deep-Live-Cam",
+"cat": 11,
+"sub": "rostros",
+"gh": "hacksider/Deep-Live-Cam",
+"what": "real time face swap and one-click video deepfake with only a single image"
+},
+{
+"id": "face-recognition",
+"name": "face_recognition",
+"cat": 11,
+"sub": "rostros",
+"gh": "ageitgey/face_recognition",
+"what": "The world's simplest facial recognition api for Python and the command line"
+},
+{
+"id": "facefusion",
+"name": "facefusion",
+"cat": 11,
+"sub": "rostros",
+"gh": "facefusion/facefusion",
+"what": "Industry leading face manipulation platform"
+},
+{
+"id": "insightface",
+"name": "insightface",
+"cat": 11,
+"sub": "rostros",
+"gh": "deepinsight/insightface",
+"what": "State-of-the-art 2D and 3D Face Analysis Project"
+},
+{
+"id": "liveportrait",
+"name": "LivePortrait",
+"cat": 11,
+"sub": "rostros",
+"gh": "KlingAIResearch/LivePortrait",
+"what": "Bring portraits to life!"
+},
+{
+"id": "open-generative-ai",
+"name": "Open-Generative-AI",
+"cat": 11,
+"sub": "suites",
+"gh": "Anil-matcha/Open-Generative-AI",
+"what": "Uncensored Open-source alternative to AI video platforms — Free AI image & video generation studio with 600+ models (Flux, Midjourney, Kling"
+},
+{
+"id": "label-studio",
+"name": "label-studio",
+"cat": 11,
+"sub": "vision",
+"gh": "HumanSignal/label-studio",
+"what": "Label Studio is a multi-type data labeling and annotation tool with standardized output format"
+},
+{
+"id": "opencv",
+"name": "opencv",
+"cat": 11,
+"sub": "vision",
+"gh": "opencv/opencv",
+"what": "Open Source Computer Vision Library"
+},
+{
+"id": "sam2",
+"name": "sam2",
+"cat": 11,
+"sub": "vision",
+"gh": "facebookresearch/sam2",
+"what": "The repository provides code for running inference with the Meta Segment Anything Model 2 (SAM 2), links for downloading the trained model c"
+},
+{
+"id": "segment-anything",
+"name": "segment-anything",
+"cat": 11,
+"sub": "vision",
+"gh": "facebookresearch/segment-anything",
+"what": "The repository provides code for running inference with the SegmentAnything Model (SAM), links for downloading the trained model checkpoints"
+},
+{
+"id": "supervision",
+"name": "supervision",
+"cat": 11,
+"sub": "vision",
+"gh": "roboflow/supervision",
+"what": "We write your reusable computer vision tools. 💜"
+},
+{
+"id": "ultralytics",
+"name": "ultralytics",
+"cat": 11,
+"sub": "vision",
+"gh": "ultralytics/ultralytics",
+"what": "Ultralytics YOLO27, YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose esti"
+},
+{
+"id": "davinci-resolve-mcp",
+"name": "davinci-resolve-mcp",
+"cat": 12,
+"sub": "edicion",
+"gh": "samuelgursky/davinci-resolve-mcp",
+"what": "MCP server integration for DaVinci Resolve Studio"
+},
+{
+"id": "ffmpeg",
+"name": "FFmpeg",
+"cat": 12,
+"sub": "edicion",
+"gh": "FFmpeg/FFmpeg",
+"what": "Mirror of https://git.ffmpeg.org/ffmpeg.git"
+},
+{
+"id": "lossless-cut",
+"name": "lossless-cut",
+"cat": 12,
+"sub": "edicion",
+"gh": "mifi/lossless-cut",
+"what": "The swiss army knife of lossless video/audio editing"
+},
+{
+"id": "moviepy",
+"name": "moviepy",
+"cat": 12,
+"sub": "edicion",
+"gh": "Zulko/moviepy",
+"what": "Video editing with Python"
+},
+{
+"id": "obs-studio",
+"name": "obs-studio",
+"cat": 12,
+"sub": "edicion",
+"gh": "obsproject/obs-studio",
+"what": "OBS Studio - Free and open source software for live streaming and screen recording"
+},
+{
+"id": "opencut",
+"name": "OpenCut",
+"cat": 12,
+"sub": "edicion",
+"gh": "OpenCut-app/OpenCut",
+"what": "The open-source CapCut alternative"
+},
+{
+"id": "openscreen",
+"name": "openscreen",
+"cat": 12,
+"sub": "edicion",
+"gh": "siddharthvaddem/openscreen",
+"what": "Create stunning demos for free. Open-source, no subscriptions, no watermarks, and free for commercial use. An alternative to Screen Studio."
+},
+{
+"id": "videolingo",
+"name": "VideoLingo",
+"cat": 12,
+"sub": "edicion",
+"gh": "Huanshere/VideoLingo",
+"what": "Netflix-level subtitle cutting, translation, alignment, and even dubbing - one-click fully automated AI video subtitle team | Netflix级字幕切割、翻"
+},
+{
+"id": "hunyuanvideo",
+"name": "HunyuanVideo",
+"cat": 12,
+"sub": "generativo",
+"gh": "Tencent-Hunyuan/HunyuanVideo",
+"what": "HunyuanVideo: A Systematic Framework For Large Video Generation Model"
+},
+{
+"id": "ltx-video",
+"name": "LTX-Video",
+"cat": 12,
+"sub": "generativo",
+"gh": "Lightricks/LTX-Video",
+"what": "Official repository for LTX-Video"
+},
+{
+"id": "moneyprinterturbo",
+"name": "MoneyPrinterTurbo",
+"cat": 12,
+"sub": "generativo",
+"gh": "harry0703/MoneyPrinterTurbo",
+"what": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow."
+},
+{
+"id": "wan2-2",
+"name": "Wan2.2",
+"cat": 12,
+"sub": "generativo",
+"gh": "Wan-Video/Wan2.2",
+"what": "Wan: Open and Advanced Large-Scale Video Generative Models"
+},
+{
+"id": "wan2gp",
+"name": "Wan2GP",
+"cat": 12,
+"sub": "generativo",
+"gh": null,
+"what": "WanGP is a one-stop super app for the best open source generative models across video, image, audio, and text-to-speech."
+},
+{
+"id": "audiocraft",
+"name": "audiocraft",
+"cat": 12,
+"sub": "musica",
+"gh": "facebookresearch/audiocraft",
+"what": "Audiocraft is a library for audio processing and generation with deep learning. It features the state-of-the-art EnCodec audio compressor / "
+},
+{
+"id": "hyperframes",
+"name": "hyperframes",
+"cat": 12,
+"sub": "programatico",
+"gh": "heygen-com/hyperframes",
+"what": "Write HTML. Render video. Built for agents."
+},
+{
+"id": "manim",
+"name": "manim",
+"cat": 12,
+"sub": "programatico",
+"gh": "3b1b/manim",
+"what": "Animation engine for explanatory math videos"
+},
+{
+"id": "openmontage",
+"name": "OpenMontage",
+"cat": 12,
+"sub": "programatico",
+"gh": null,
+"what": "Turn your AI coding assistant into a full video production studio. Describe what you want in plain language — your agent handles research, s"
+},
+{
+"id": "remotion",
+"name": "remotion",
+"cat": 12,
+"sub": "programatico",
+"gh": "remotion-dev/remotion",
+"what": "🎥      Make videos programmatically with React"
+},
+{
+"id": "remotion-superpowers",
+"name": "remotion-superpowers",
+"cat": 12,
+"sub": "programatico",
+"gh": "DojoCodingLabs/remotion-superpowers",
+"what": "🎬 Full video production studio for Remotion — for Claude Code, Codex, Gemini CLI & any Agent Skills agent. AI voiceovers, music, stock foota"
+},
+{
+"id": "skills-remotion",
+"name": "skills_remotion",
+"cat": 12,
+"sub": "programatico",
+"gh": "remotion-dev/skills",
+"what": "Agent Skills"
+},
+{
+"id": "video-use",
+"name": "video-use",
+"cat": 12,
+"sub": "programatico",
+"gh": "browser-use/video-use",
+"what": "Edit videos with coding agents"
+},
+{
+"id": "videofy-minimal",
+"name": "videofy_minimal",
+"cat": 12,
+"sub": "programatico",
+"gh": "schibsted/videofy_minimal",
+"what": "Videofy Minimal is a local tool for turning news articles into short videos for digital signage screens."
+},
+{
+"id": "faster-whisper",
+"name": "faster-whisper",
+"cat": 12,
+"sub": "stt",
+"gh": "SYSTRAN/faster-whisper",
+"what": "Faster Whisper transcription with CTranslate2"
+},
+{
+"id": "nemo",
+"name": "NeMo",
+"cat": 12,
+"sub": "stt",
+"gh": "NVIDIA-NeMo/Speech",
+"what": "A scalable generative AI framework built for researchers and developers working on Large Language Models, Multimodal, and Speech AI (Automat"
+},
+{
+"id": "whisper",
+"name": "whisper",
+"cat": 12,
+"sub": "stt",
+"gh": "openai/whisper",
+"what": "Robust Speech Recognition via Large-Scale Weak Supervision"
+},
+{
+"id": "whisper-cpp",
+"name": "whisper.cpp",
+"cat": 12,
+"sub": "stt",
+"gh": "ggml-org/whisper.cpp",
+"what": "Port of OpenAI's Whisper model in C/C++"
+},
+{
+"id": "whisperx",
+"name": "whisperX",
+"cat": 12,
+"sub": "stt",
+"gh": "m-bain/whisperX",
+"what": "WhisperX:  Automatic Speech Recognition with Word-level Timestamps (& Diarization)"
+},
+{
+"id": "chatterbox",
+"name": "chatterbox",
+"cat": 12,
+"sub": "tts",
+"gh": "resemble-ai/chatterbox",
+"what": "SoTA open-source TTS"
+},
+{
+"id": "cosyvoice",
+"name": "CosyVoice",
+"cat": 12,
+"sub": "tts",
+"gh": "QwenAudio/CosyVoice",
+"what": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability."
+},
+{
+"id": "fish-speech",
+"name": "fish-speech",
+"cat": 12,
+"sub": "tts",
+"gh": "fishaudio/fish-speech",
+"what": "SOTA Open Source TTS"
+},
+{
+"id": "gpt-sovits",
+"name": "GPT-SoVITS",
+"cat": 12,
+"sub": "tts",
+"gh": "RVC-Boss/GPT-SoVITS",
+"what": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning)"
+},
+{
+"id": "index-tts",
+"name": "index-tts",
+"cat": 12,
+"sub": "tts",
+"gh": "index-tts/index-tts",
+"what": "An Industrial-Level Controllable and Efficient Zero-Shot Text-To-Speech System"
+},
+{
+"id": "kokoro",
+"name": "kokoro",
+"cat": 12,
+"sub": "tts",
+"gh": "hexgrad/kokoro",
+"what": "https://hf.co/hexgrad/Kokoro-82M"
+},
+{
+"id": "luxtts",
+"name": "LuxTTS",
+"cat": 12,
+"sub": "tts",
+"gh": "ysharma3501/LuxTTS",
+"what": "A high-quality rapid TTS voice cloning model that reaches speeds of 150x realtime."
+},
+{
+"id": "omnivoice-studio",
+"name": "OmniVoice-Studio",
+"cat": 12,
+"sub": "tts",
+"gh": "debpalash/VoiceStudio",
+"what": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & "
+},
+{
+"id": "rvc",
+"name": "Retrieval-based-Voice-Conversion-WebUI",
+"cat": 12,
+"sub": "tts",
+"gh": "RVC-Project/Retrieval-based-Voice-Conversion-WebUI",
+"what": "Easily train a good VC model with voice data <= 10 mins!"
+},
+{
+"id": "supertonic",
+"name": "supertonic",
+"cat": 12,
+"sub": "tts",
+"gh": "supertone-oss-archive/supertonic",
+"what": "Lightning-Fast, On-Device, Multilingual TTS — running natively via ONNX."
+},
+{
+"id": "tts",
+"name": "TTS",
+"cat": 12,
+"sub": "tts",
+"gh": "coqui-ai/TTS",
+"what": "🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production"
+},
+{
+"id": "vibevoice",
+"name": "VibeVoice",
+"cat": 12,
+"sub": "tts",
+"gh": "microsoft/VibeVoice",
+"what": "Open-Source Frontier Voice AI"
+},
+{
+"id": "voxcpm",
+"name": "VoxCPM",
+"cat": 12,
+"sub": "tts",
+"gh": "OpenBMB/VoxCPM",
+"what": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning"
+},
+{
+"id": "livekit-agents",
+"name": "agents",
+"cat": 12,
+"sub": "voz-agentes",
+"gh": "livekit/agents",
+"what": "A framework for building realtime voice AI agents 🤖🎙️📹 "
+},
+{
+"id": "pipecat",
+"name": "pipecat",
+"cat": 12,
+"sub": "voz-agentes",
+"gh": "pipecat-ai/pipecat",
+"what": "Open Source framework for voice agents, multimodal apps, and realtime AI. Maintained by Daily and the community."
+},
+{
+"id": "docling",
+"name": "docling",
+"cat": 13,
+"sub": "conversion",
+"gh": "docling-project/docling",
+"what": "Get your documents ready for gen AI"
+},
+{
+"id": "marker",
+"name": "marker",
+"cat": 13,
+"sub": "conversion",
+"gh": "datalab-to/marker",
+"what": "Convert PDF to markdown + JSON quickly with high accuracy"
+},
+{
+"id": "markitdown",
+"name": "markitdown",
+"cat": 13,
+"sub": "conversion",
+"gh": "microsoft/markitdown",
+"what": "Python tool for converting files and office documents to Markdown."
+},
+{
+"id": "mineru",
+"name": "MinerU",
+"cat": 13,
+"sub": "conversion",
+"gh": "opendatalab/MinerU",
+"what": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows."
+},
+{
+"id": "pandoc",
+"name": "pandoc",
+"cat": 13,
+"sub": "conversion",
+"gh": "jgm/pandoc",
+"what": "Universal markup converter"
+},
+{
+"id": "pdf-inspector",
+"name": "pdf-inspector",
+"cat": 13,
+"sub": "conversion",
+"gh": "firecrawl/pdf-inspector",
+"what": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart "
+},
+{
+"id": "unstructured",
+"name": "unstructured",
+"cat": 13,
+"sub": "conversion",
+"gh": "Unstructured-IO/unstructured",
+"what": "Convert documents to structured data effortlessly. Unstructured is open-source ETL solution for transforming complex documents into clean, s"
+},
+{
+"id": "youtube2webpage",
+"name": "Youtube2Webpage",
+"cat": 13,
+"sub": "conversion",
+"gh": "obra/Youtube2Webpage",
+"what": "I learn much better from text than from videos"
+},
+{
+"id": "mermaid",
+"name": "mermaid",
+"cat": 13,
+"sub": "diagramas",
+"gh": "mermaid-js/mermaid",
+"what": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown"
+},
+{
+"id": "ocrmypdf",
+"name": "OCRmyPDF",
+"cat": 13,
+"sub": "ocr",
+"gh": "ocrmypdf/OCRmyPDF",
+"what": "OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched"
+},
+{
+"id": "olmocr",
+"name": "olmocr",
+"cat": 13,
+"sub": "ocr",
+"gh": "allenai/olmocr",
+"what": "Toolkit for linearizing PDFs for LLM datasets/training"
+},
+{
+"id": "paddleocr",
+"name": "PaddleOCR",
+"cat": 13,
+"sub": "ocr",
+"gh": "PaddlePaddle/PaddleOCR",
+"what": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDF"
+},
+{
+"id": "tesseract",
+"name": "tesseract",
+"cat": 13,
+"sub": "ocr",
+"gh": "tesseract-ocr/tesseract",
+"what": "Tesseract Open Source OCR Engine (main repository)"
+},
+{
+"id": "unlimited-ocr",
+"name": "Unlimited-OCR",
+"cat": 13,
+"sub": "ocr",
+"gh": "baidu/Unlimited-OCR",
+"what": "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing."
+},
+{
+"id": "pdfcraft",
+"name": "pdfcraft",
+"cat": 13,
+"sub": "pdf",
+"gh": "PDFCraftTool/pdfcraft",
+"what": "PDFCraft is a free, privacy-focused PDF toolkit that runs entirely in your browser. With 90+ professional tools, you can edit, convert, merg"
+},
+{
+"id": "pdfding",
+"name": "PdfDing",
+"cat": 13,
+"sub": "pdf",
+"gh": "mrmn2/PdfDing",
+"what": "NOW MANAGED ON CODEBERG"
+},
+{
+"id": "pdfmathtranslate",
+"name": "PDFMathTranslate",
+"cat": 13,
+"sub": "pdf",
+"gh": "PDFMathTranslate/PDFMathTranslate",
+"what": "[EMNLP 2025 Demo] PDF scientific paper translation with preserved formats - 基于 AI 完整保留排版的 PDF 文档全文双语翻译，支持 Google/DeepL/Ollama/OpenAI 等服务，提供 "
+},
+{
+"id": "stirling-pdf",
+"name": "Stirling-PDF",
+"cat": 13,
+"sub": "pdf",
+"gh": "Stirling-Tools/Stirling-PDF",
+"what": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere"
+},
+{
+"id": "marp",
+"name": "marp",
+"cat": 13,
+"sub": "slides",
+"gh": "marp-team/marp",
+"what": "The entrance repository of Markdown presentation ecosystem"
+},
+{
+"id": "ppt-master",
+"name": "ppt-master",
+"cat": 13,
+"sub": "slides",
+"gh": "hugohe3/ppt-master",
+"what": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and table"
+},
+{
+"id": "presenton",
+"name": "presenton",
+"cat": 13,
+"sub": "slides",
+"gh": "presenton/presenton",
+"what": "Open-Source AI Presentation Generator and API (Gamma, Canva, Beautiful AI, Decktopus, Presentations AI Alternative)"
+},
+{
+"id": "reveal.js",
+"name": "reveal.js",
+"cat": 13,
+"sub": "slides",
+"gh": "hakimel/reveal.js",
+"what": "The HTML Presentation Framework"
+},
+{
+"id": "slidev",
+"name": "slidev",
+"cat": 13,
+"sub": "slides",
+"gh": "slidevjs/slidev",
+"what": "Presentation Slides for Developers"
+}
+]
