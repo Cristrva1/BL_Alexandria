@@ -1,14 +1,24 @@
+[🏠 Inicio](../README.md) · [⚖️ Comparativas](README.md)
+
 # activepieces vs n8n
 
-Generado: 2026-08-24T04:31:34.499362+00:00
-
-| Criterio | activepieces | n8n |
+| | [activepieces](../fichas/activepieces.md) | [n8n](../fichas/n8n.md) |
 |---|---|---|
-| Uso real | Activepieces es un reemplazo open source de Zapier: orquestas automatizaciones con piezas auto-hospedables y un editor visual, sin ceder los datos a un SaaS cerrado. | n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments. |
-| Elegir si | quieres reemplazar Zapier con piezas propias en TypeScript | quieres el motor central de automatización con máximo catálogo |
-| Evitar si | ya dominas n8n y su ecosistema te basta. | buscas algo minimalista o sin self-host. |
-| Instalacion | reference_only | docker_local |
+| Qué hace | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
+| ⭐ Estrellas | 25.5k | 210k |
+| Elígelo si… | quieres reemplazar Zapier con piezas propias en TypeScript | quieres el motor central de automatización con máximo catálogo |
+| Evítalo si… | ya dominas n8n y su ecosistema te basta | buscas algo minimalista o sin self-host |
+| Ejecución | 🔀 híbrido | 🏠 local |
+| Setup | 🟡 medio | 🟡 medio |
+| Licencia | Otra (ver repo) | Otra (ver repo) |
+| Instalación | `docker compose` | `docker compose` |
 
-## Regla practica
+## Regla práctica
 
-Elige `activepieces` si su caso de uso encaja mejor ahora. Deja `n8n` como alternativa, salvo que el proyecto necesite explicitamente ambos.
+- Elige **activepieces** si quieres reemplazar Zapier con piezas propias en TypeScript.
+- Elige **n8n** si quieres el motor central de automatización con máximo catálogo.
+- Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
+
+---
+
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

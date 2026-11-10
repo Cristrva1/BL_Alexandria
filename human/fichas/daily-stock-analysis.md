@@ -1,61 +1,63 @@
-# daily_stock_analysis
+[🏠 Inicio](../README.md) › [📊 Analítica & Visualización](../categorias/10-anal-tica-visualizaci-n.md) › Recursos y casos de uso
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📚 daily_stock_analysis
 
-## Decision
+> Sistema que analiza acciones de varios mercados con LLM y envía un tablero de decisiones diario.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 69.5k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱.
+## Qué es
 
-## Que problema resuelve
+Combina datos de mercado, noticias en tiempo real y análisis con LLM para generar reportes automáticos por Telegram, Slack, correo o WeChat. Puede correr gratis con GitHub Actions.
 
-quieres 📈 股票智能分析系统
+## Por qué destaca
 
-## Por que tiene valor
+Ejemplo completo y muy popular de agente financiero automatizado.
 
-Aporta valor en `library` para docker, fastapi, postgres, python, typescript. Stack declarado: python, typescript, docker, postgres, fastapi.
+## Cómo funciona
 
-## Cuando usarlo
+Un job programado descarga datos de varias fuentes, pide análisis al LLM y envía un resumen con recomendaciones.
 
-quieres 📈 股票智能分析系统
+## Instalación rápida
 
-## Cuando NO usarlo
+Haz fork y configura los secretos para GitHub Actions, o ejecútalo con Docker siguiendo el README.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Reporte diario de tu cartera
+- Alertas con noticias del mercado
+- Ejemplo de agente financiero
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres un análisis bursátil diario automatizado | buscas asesoría financiera: esto no lo es |
 
-python, typescript, docker, postgres, fastapi
+**Limitaciones:** No es asesoría financiera; documentación principalmente en chino.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, GitHub Actions
+- **Modelos / API:** Gemini, OpenAI y otros compatibles.
+- **Etiquetas:** `analytics` `agents` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `openwa`
-- `skills`
-- `agency-agents`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [n8n](n8n.md) | 210k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)
+- 🌐 Web: <https://dsa.zhulinsen.tech>
 
-## Riesgos
+---
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres 📈 股票智能分析系统. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

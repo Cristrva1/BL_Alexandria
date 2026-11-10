@@ -1,61 +1,61 @@
-# github-mcp-server
+[🏠 Inicio](../README.md) › [🔌 MCP & Conectividad](../categorias/05-mcp-conectividad.md) › Servidores MCP destacados
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔌 GitHub MCP Server
 
-## Decision
+> Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 34.4k | MIT | Go | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-The GitHub MCP Server connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate workflows. All through natural language interactions.
+## Qué es
 
-## Que problema resuelve
+Conecta asistentes y agentes con la plataforma GitHub: repositorios, issues, pull requests, Actions y seguridad.
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+## Por qué destaca
 
-## Por que tiene valor
+Oficial y mantenido por GitHub, con un servidor remoto listo para usar.
 
-Aporta valor en `platform` para docker, javascript, mcp, python, react, typescript. Stack declarado: python, typescript, javascript, react, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Un servidor Go expone herramientas MCP que llaman a la API de GitHub con tu token u OAuth.
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+## Instalación rápida
 
-## Cuando NO usarlo
+Usa el servidor remoto `https://api.githubcopilot.com/mcp/` o `docker run -i ghcr.io/github/github-mcp-server` con tu token.
 
-prefieres conexiones directas sin protocolo estándar
+## Casos de uso
 
-## Tipo de instalacion
+- Triage de issues con un agente
+- Revisar PRs automáticamente
+- Consultar el estado de Actions
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| tu agente trabaja con GitHub | usas otra forja como GitLab |
 
-python, typescript, javascript, react, docker
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Go, Docker
+- **Modelos / API:** No usa LLM.
+- **Etiquetas:** `mcp` `code` `go`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 
-- `claude-plugins-official`
-- `n8n-skills`
-- `mcp`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [github/github-mcp-server](https://github.com/github/github-mcp-server)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

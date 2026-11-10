@@ -1,60 +1,69 @@
-# motion
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Animación y 3D
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🌀 motion
 
-## Decision
+> Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 35k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-Motion (antes Framer Motion) anima interfaces web con una API declarativa. Úsala en el frontend, no como motor de video.
+## Qué es
 
-## Que problema resuelve
+Hizo accesible la animación en el ecosistema React.
 
-animas componentes React con API declarativa
+## Por qué destaca
 
-## Por que tiene valor
+Su API declarativa hizo accesible la animación en React y es de las más adoptadas del ecosistema. La versión actual (`motion`) unifica React y vanilla bajo el mismo paquete.
 
-Aporta valor en `library` para javascript, javascript-typescript, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react.
+## Cómo funciona
 
-## Cuando usarlo
+Componentes `motion.*` y hooks que interpolan props de estado y manejan entradas/salidas, gestos y layout animations automáticamente sin manipular el DOM a mano.
 
-animas componentes React con API declarativa
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm i motion` (o `framer-motion` para la versión legacy). Requiere React para los bindings `motion.*`.
 
-necesitas timelines complejos no ligados a React ([GSAP](#-gsap)).
+## Casos de uso
 
-## Tipo de instalacion
+- Animar entradas/salidas de componentes
+- Microinteracciones y gestos fáciles
+- Animaciones de layout cuando reordenas listas
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| animas componentes React con API declarativa | necesitas timelines complejos no ligados a React (GSAP) |
 
-javascript/typescript, typescript, javascript, react
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** JavaScript/React
+- **Modelos / API:** N/A.
+- **Etiquetas:** `ui` `design` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [magicui](magicui.md) | 23.2k | Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio. |
+| [react-three-fiber](react-three-fiber.md) | 33.6k | Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. |
 
-- `magicui`
-- `react-three-fiber`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Anime.js](animejs.md) | 74.5k | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [motiondivision/motion](https://github.com/motiondivision/motion)
+- 🌐 Web: <https://motion.dev>
+- 🧪 Receta: [Web app moderna con IA](../playbooks/web-app-moderna-con-ia.md)
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+---
 
-## Ideas profesionales
-
-Combinar con magicui, react-three-fiber cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si animas componentes React con API declarativa. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

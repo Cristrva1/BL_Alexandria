@@ -1,60 +1,63 @@
-# awesome-mcp-servers
+[🏠 Inicio](../README.md) › [🔌 MCP & Conectividad](../categorias/05-mcp-conectividad.md) › Directorios, clientes y aprendizaje
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🗂️ awesome-mcp-servers
 
-## Decision
+> Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 97.6k | MIT | — | 2026-11-06 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-A curated list of awesome Model Context Protocol (MCP) servers.
+## Qué es
 
-## Que problema resuelve
+Resuelve el "¿ya existe un servidor para X?" antes de que construyas el tuyo desde cero.
 
-buscas antes de construir
+## Por qué destaca
 
-## Por que tiene valor
+Es uno de los listados de referencia más consultados del ecosistema MCP y ayuda a no reinventar servidores que ya existen. Su organización por categorías y su actualización continua lo hacen el punto de partida habitual para descubrir integraciones.
 
-Aporta valor en `directory` para automation, comfy, docker, fastapi, javascript, langchain, mcp, multimedia. Stack declarado: python, typescript, javascript, react, docker, postgres, fastapi, langchain, whisper, comfy.
+## Cómo funciona
 
-## Cuando usarlo
+Lista en Markdown con enlaces a cada servidor; eliges uno, sigues su README y lo añades a la config de tu cliente MCP (normalmente vía `npx` o `pip`).
 
-buscas antes de construir
+## Instalación rápida
 
-## Cuando NO usarlo
+Sin instalación propia; se consulta el README y luego se instala el servidor elegido (normalmente vía `npx` o `pip`) y se registra en el cliente MCP.
 
-ya sabes que necesitas uno a medida y no te vale ninguno listado.
+## Casos de uso
 
-## Tipo de instalacion
+- Descubrir un servidor ya hecho antes de implementar uno
+- Referencia rápida de integraciones por categoría
+- Comparar alternativas para un mismo servicio
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| buscas antes de construir | ya sabes que necesitas uno a medida y no te vale ninguno listado |
 
-python, typescript, javascript, react, docker, postgres, fastapi, langchain, whisper, comfy
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown
+- **Modelos / API:** Cualquier cliente compatible con MCP (Claude, Cursor, ChatGPT).
+- **Etiquetas:** `automation` `mcp`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [mcp-use](mcp-use.md) | 10.9k | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. |
+| [servers](servers.md) | 91.9k | Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad. |
 
-- `mcp-use`
-- `servers`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)
+- 🌐 Web: <https://glama.ai/mcp/servers>
+- 🧪 Receta: [Construir una app o servidor MCP](../playbooks/construir-una-appservidor-mcp.md)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con mcp-use, servers cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si buscas antes de construir. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

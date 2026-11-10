@@ -1,60 +1,70 @@
-# TTS
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Síntesis y clonación de voz
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎙️ TTS
 
-## Decision
+> Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 46.2k | MPL-2.0 | Python | 2024-08-16 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-📣 ⓍTTSv2 is here with 16 languages and better performance across the board. 📣 ⓍTTS fine-tuning code is out. Check the example recipes. 📣 ⓍTTS can now stream with <200ms latency. 📣 ⓍTTS, our production TTS model that can speak 13 languages, is released Blog Post, Demo, Docs.
+## Qué es
 
-## Que problema resuelve
+Reúne en una sola librería modelos como Tacotron, VITS y XTTS, con CLI y API Python.
 
-quieres flexibilidad y varios modelos en una librería
+## Por qué destaca
 
-## Por que tiene valor
+Es uno de los kits TTS abiertos más completos y reutilizados; aunque Coqui cerró, su código y modelos (XTTSv2, 16+ idiomas) siguen siendo referencia comunitaria y se mantienen vía fork `coqui-tts`.
 
-Aporta valor en `library` para docker, python, typescript. Stack declarado: python, typescript, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Librería Python que carga modelos sobre PyTorch y expone CLI (`tts`) y API para generar o clonar voz; XTTS permite clonación zero-shot a partir de unos segundos de referencia.
 
-quieres flexibilidad y varios modelos en una librería
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install TTS` (o `coqui-tts`, el fork mantenido). Requiere PyTorch; la clonación con XTTS mejora con GPU.
 
-necesitas tiempo real puro ([supertonic](#-supertonic)) o soporte comercial (Coqui está inactivo).
+## Casos de uso
 
-## Tipo de instalacion
+- Locuciones automáticas para anuncios/demos
+- Clonación de voz zero-shot
+- Base para apps de voz multilingües
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres flexibilidad y varios modelos en una librería | necesitas tiempo real puro (supertonic) o soporte comercial (Coqui está inactivo) |
 
-python, typescript, docker
+**Limitaciones:** El proyecto original de Coqui está inactivo; usa el fork `coqui-tts` para fixes; revisar licencia de XTTS antes de uso comercial.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, PyTorch, modelos descargables
+- **Modelos / API:** Local.
+- **Etiquetas:** `tts` `audio` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `whisperx`
-- `moviepy`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [whisperX](whisperx.md) | 25.2k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
+| [MoviePy](moviepy.md) | 15.1k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Kokoro](kokoro.md) | 10k | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. |
 
-## Riesgos
+## Enlaces
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+- 🐙 GitHub: [coqui-ai/TTS](https://github.com/coqui-ai/TTS)
+- 🌐 Web: <http://coqui.ai>
 
-## Ideas profesionales
+---
 
-Combinar con whisperx, moviepy cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si quieres flexibilidad y varios modelos en una librería. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

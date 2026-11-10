@@ -1,60 +1,70 @@
-# crewAI
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Frameworks de agentes en Python
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 👥 crewAI
 
-## Decision
+> Framework para orquestar "crews" de agentes con roles y tareas.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 60.7k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-Fast and Flexible Multi-Agent Automation Framework.
+## Qué es
 
-## Que problema resuelve
+Cada agente recibe un rol y objetivo, y el equipo coopera o se reparte el trabajo de forma secuencial o jerárquica.
 
-quieres velocidad y un modelo mental simple de "equipo"
+## Por qué destaca
 
-## Por que tiene valor
+Muy popular por su curva de aprendizaje suave; es de las formas más rápidas de montar un equipo de agentes funcional. Es independiente de LangChain y aporta un modelo mental claro (agentes, tareas, crew) que se lee casi como prosa.
 
-Aporta valor en `runtime` para automation, langchain, postgres, python, typescript. Stack declarado: python, typescript, postgres, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Declaras agentes (rol, meta, herramientas) y tareas, y CrewAI orquesta su ejecución secuencial o jerárquica; está escrito en Python y delega el LLM al proveedor que configures.
 
-quieres velocidad y un modelo mental simple de "equipo"
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install crewai` (o `crewai[tools]` para el set de herramientas integradas). Requiere una clave de API de LLM por entorno.
 
-necesitas control de bajo nivel o orquestación muy custom.
+## Casos de uso
 
-## Tipo de instalacion
+- Avanzar rápido en flujos de agentes
+- Prototipos colaborativos
+- Pipelines de research/redacción repartidos por rol
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres velocidad y un modelo mental simple de "equipo" | necesitas control de bajo nivel o orquestación muy custom |
 
-python, typescript, postgres, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python
+- **Modelos / API:** OpenAI, Anthropic, Gemini, locales; agnóstico vía variables de entorno.
+- **Etiquetas:** `automation` `agents` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [langchain](langchain.md) | 149k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
+| [mem0](mem0.md) | 68.7k | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental. |
 
-- `langchain`
-- `mem0`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [AutoGen](autogen.md) | 61.8k | Framework de Microsoft para conversaciones entre agentes, hoy en modo mantenimiento. |
+| [LangGraph](langgraph.md) | 44.7k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
+| [Agno](agno.md) | 43.1k | Framework y runtime de agentes en Python con memoria, conocimiento y equipos multiagente. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI)
+- 🌐 Web: <https://crewai.com>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con langchain, mem0 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres velocidad y un modelo mental simple de "equipo". No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

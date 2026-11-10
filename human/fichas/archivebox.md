@@ -1,61 +1,61 @@
-# ArchiveBox
+[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Búsqueda, monitoreo y research web
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔍 ArchiveBox
 
-## Decision
+> Archivador web auto-hospedado que guarda páginas en HTML, PDF, capturas y medios.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 29k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-ArchiveBox is a self-hosted app that lets you preserve content from websites in a variety of formats.
+## Qué es
 
-## Que problema resuelve
+Le das URLs, marcadores o historial y guarda copias completas para siempre. Útil para investigación y preservación de fuentes.
 
-quieres ▶️ <a href="https://github.com/archivebox/archivebox/wiki/quickstart">quickstart
+## Por qué destaca
 
-## Por que tiene valor
+Guarda cada página en varios formatos abiertos que siguen legibles sin la app.
 
-Aporta valor en `platform` para docker, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Usa Chrome headless, wget, yt-dlp y otras herramientas para capturar cada URL en carpetas con índice.
 
-quieres ▶️ <a href="https://github.com/archivebox/archivebox/wiki/quickstart">quickstart
+## Instalación rápida
 
-## Cuando NO usarlo
+`docker run -it -v $PWD:/data archivebox/archivebox init --setup`.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Archivar fuentes de una investigación
+- Respaldar marcadores
+- Guardar evidencia de páginas
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres conservar copias fieles de páginas web | solo necesitas el texto para un LLM; mira `jina-reader` |
 
-python, typescript, javascript, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, Django, Docker
+- **Modelos / API:** No usa LLM.
+- **Etiquetas:** `scraping` `data` `python` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [yt-dlp](yt-dlp.md) | 207k | Descargador de audio y video por línea de comandos compatible con miles de sitios. |
 
-- `firecrawl`
-- `crawl4ai`
-- `scrapy`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [ArchiveBox/ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)
+- 🌐 Web: <https://archivebox.io>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres ▶️ <a href="https://github.com/archivebox/archivebox/wiki/quickstart">quickstart. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,61 +1,68 @@
-# video-use
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Video programático y con agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎞️ video-use
 
-## Decision
+> Herramienta para editar videos con agentes de código como Claude Code, de los creadores de browser-use.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 30.8k | MIT | Python | 2026-10-08 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-Introducing video-use — edit videos with Claude Code. 100% open source.
+## Qué es
 
-## Que problema resuelve
+El agente corta, une, subtitula y ajusta videos a partir de instrucciones en lenguaje natural.
 
-quieres video-use
+## Por qué destaca
 
-## Por que tiene valor
+Lleva la edición de video al flujo de trabajo de un agente.
 
-Aporta valor en `skill` para multimedia, python, typescript. Stack declarado: python, typescript.
+## Cómo funciona
 
-## Cuando usarlo
+Expone operaciones de video (basadas en ffmpeg y transcripción) que el agente usa como herramientas.
 
-quieres video-use
+## Instalación rápida
 
-## Cuando NO usarlo
+Sigue el README para instalarlo y conectarlo a tu agente.
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+## Casos de uso
 
-## Tipo de instalacion
+- Cortar silencios de grabaciones
+- Subtitular clips
+- Montajes rápidos por instrucción
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres editar videos pidiéndoselo a tu agente | quieres una app de edición visual; mira `opencut` |
 
-python, typescript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, ffmpeg
+- **Modelos / API:** Usa el modelo de tu agente.
+- **Etiquetas:** `video` `coding-agent` `skills` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [FFmpeg](ffmpeg.md) | 66.9k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 
-- `fluxer`
-- `whisper`
-- `faster-whisper`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Remotion Superpowers](remotion-superpowers.md) | 164 | Plugin que convierte Remotion en un estudio de video para Claude Code, Codex o Gemini CLI. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [browser-use/video-use](https://github.com/browser-use/video-use)
+- 🌐 Web: <https://video-use.com>
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+---
 
-## Ideas profesionales
-
-Combinar con fluxer, whisper, faster-whisper cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres video-use. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

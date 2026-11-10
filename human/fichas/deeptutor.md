@@ -1,61 +1,67 @@
-# DeepTutor
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Asistentes autónomos y equipos de agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🦾 DeepTutor
 
-## Decision
+> Sistema de tutoría con agentes que personaliza el aprendizaje a partir de tus documentos.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 57.8k | Apache-2.0 | Python | 2026-11-07 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-DeepTutor es un sistema de tutoría con agentes para aprendizaje continuo. Encaja como producto educativo, no como orquestador genérico.
+## Qué es
 
-## Que problema resuelve
+Resuelve dudas, genera ejercicios y guía el estudio con RAG sobre tu material y memoria del alumno. Es un producto educativo, no un orquestador genérico.
 
-quieres deeptutor: lifelong personalized tutoring
+## Por qué destaca
 
-## Por que tiene valor
+Combina RAG, razonamiento por pasos y seguimiento del progreso en una app lista.
 
-Aporta valor en `app` para automation, docker, fastapi, javascript, langchain, postgres, python, react. Stack declarado: python, typescript, javascript, react, docker, postgres, fastapi, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Varios agentes (resolución, ejercicios, investigación) consultan una base de conocimiento de tus documentos.
 
-quieres deeptutor: lifelong personalized tutoring
+## Instalación rápida
 
-## Cuando NO usarlo
+Clona el repo y sigue la guía (Docker o instalación Python) con tus claves de modelo.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Tutor sobre apuntes de un curso
+- Generar exámenes de práctica
+- Estudio guiado de papers
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres un tutor con IA sobre tu propio material | buscas un framework para construir agentes; mira `langgraph` |
 
-python, typescript, javascript, react, docker, postgres, fastapi, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, Next.js
+- **Modelos / API:** Agnóstico: OpenAI u otros compatibles, también locales.
+- **Etiquetas:** `learning` `agents` `rag` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Docling](docling.md) | 70.4k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [open-notebook](open-notebook.md) | 41.8k | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor)
+- 🌐 Web: <http://arxiv.org/abs/2604.26962>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres deeptutor: lifelong personalized tutoring. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

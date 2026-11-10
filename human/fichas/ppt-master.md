@@ -1,60 +1,67 @@
-# ppt-master
+[🏠 Inicio](../README.md) › [📄 Documentos & Presentaciones](../categorias/13-documentos-presentaciones.md) › Presentaciones
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📊 ppt-master
 
-## Decision
+> Generador que transforma documentos de texto en presentaciones PowerPoint (.pptx) editables nativas, listas para abrir y ajustar en Office.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 75.5k | MIT | Python | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
-This project is kept free and open source with the support of PackyCode , APIKEY.FUN , RunAPI , YouYun ZhiSuan and other sponsors.
+## Qué es
 
-## Que problema resuelve
+Sustituye el maquetado manual de slides por un borrador estructurado por un LLM.
 
-quieres PPTX editable de Office rápido
+## Por qué destaca
 
-## Por que tiene valor
+Entrega un PPTX realmente editable (formas y textos nativos) en lugar de un PDF plano, ahorrando el tedio de maquetar slides desde cero; útil para borradores rápidos a partir de un informe.
 
-Aporta valor en `library` para postgres, python, typescript. Stack declarado: python, typescript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Un LLM estructura el contenido en secciones y diapositivas (título, bullets, layout), y luego python-pptx genera el archivo .pptx con sus formas, textos y diseño aplicado a una plantilla.
 
-quieres PPTX editable de Office rápido
+## Instalación rápida
 
-## Cuando NO usarlo
+`git clone` del repo y `pip install -r requirements.txt`; requiere clave de API del modelo (Anthropic u OpenAI según configuración).
 
-prefieres slides web por código ([reveal.js](#-revealjs)) o control de diseño pixel-perfect.
+## Casos de uso
 
-## Tipo de instalacion
+- Pasar un informe Markdown a un borrador de slides corporativos en segundos
+- Generar una primera versión editable de una presentación a partir de notas
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres PPTX editable de Office rápido | prefieres slides web por código (reveal.js) o control de diseño pixel-perfect |
 
-python, typescript, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, python-pptx
+- **Modelos / API:** Claude 3.5 Sonnet o GPT-4o para estructurar (vía API key).
+- **Etiquetas:** `slides` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [markitdown](markitdown.md) | 195k | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. |
 
-- `markitdown`
-- `docs → presentaciones`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Presenton](presenton.md) | 11.8k | Generador de presentaciones con IA, open source y con API, alternativa a Gamma o Beautiful.ai. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master)
+- 🌐 Web: <https://hugohe3.github.io/ppt-master-examples/>
+- 🧪 Receta: [Documentos → presentaciones](../playbooks/documentos-presentaciones.md)
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+---
 
-## Ideas profesionales
-
-Combinar con markitdown, docs → presentaciones cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si quieres PPTX editable de Office rápido. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,60 +1,64 @@
-# ruflo
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Asistentes autónomos y equipos de agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🐝 ruflo
 
-## Decision
+> Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow).
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 81.4k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
-An agent meta-harness for Claude Code and Codex..
+## Qué es
 
-## Que problema resuelve
+Orquesta swarms de agentes especializados a escala.
 
-orquestas muchos agentes a escala y quieres rendimiento
+## Por qué destaca
 
-## Por que tiene valor
+Motor en Rust con embeddings, memoria persistente y plugins, orientado a coordinación masiva de agentes con seguridad de nivel enterprise. Es de nicho pero ambicioso y aprovecha el rendimiento de Rust para la orquestación.
 
-Aporta valor en `runtime` para automation, docker, javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Un coordinador en Rust reparte trabajo entre agentes, comparte memoria federada (embeddings) y comunica equipos; se apoya en los CLIs de Claude Code y Codex como ejecutores.
 
-orquestas muchos agentes a escala y quieres rendimiento
+## Instalación rápida
 
-## Cuando NO usarlo
+`cargo install` o build desde fuente con `git clone` (consulta el README). Requiere tener instalados los CLIs de agentes (Claude Code/Codex) y sus claves.
 
-solo necesitas 1-2 agentes o no usas Claude Code/Codex.
+## Casos de uso
 
-## Tipo de instalacion
+- Swarms de agentes especializados
+- Memoria autoaprendida y comms entre equipos
+- Paralelizar tareas de codificación a escala
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| orquestas muchos agentes a escala y quieres rendimiento | solo necesitas 1-2 agentes o no usas Claude Code/Codex |
 
-javascript/typescript, typescript, javascript, react, docker, postgres
+**Limitaciones:** Setup pesado (Rust + CLIs de agentes) y caso de uso estrecho; no es una librería de uso general.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Rust
+- **Modelos / API:** Claude Code, Codex (vía sus CLIs).
+- **Etiquetas:** `automation` `agents` `typescript`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `mem0`
-- `ecc`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [mem0](mem0.md) | 68.7k | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental. |
+| [ECC](ecc.md) | 300k | Sistema operativo/arnés unificado para desarrollar, ejecutar y desplegar en local agentes de IA de alto rendimiento de forma segura. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [ruvnet/ruflo](https://github.com/ruvnet/ruflo)
+- 🌐 Web: <https://cognitum.one>
 
-## Riesgos
+---
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con mem0, ecc cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si orquestas muchos agentes a escala y quieres rendimiento. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

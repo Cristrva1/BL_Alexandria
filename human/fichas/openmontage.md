@@ -1,61 +1,69 @@
-# OpenMontage
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Video programático y con agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎞️ OpenMontage
 
-## Decision
+> Convierte tu agente de código en un estudio de producción de video completo.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| — | — | — | — | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
-Turn your AI coding assistant into a full video production studio. Describe what you want in plain language — your agent handles research, scripting, asset generation, editing, and final composition.
+## Qué es
 
-## Que problema resuelve
+Describes el video y el agente investiga, escribe el guion, genera recursos y monta el resultado.
 
-quieres ---
+## Por qué destaca
 
-## Por que tiene valor
+Cubre todo el proceso de producción desde un agente.
 
-Aporta valor en `skill` para javascript, multimedia, postgres, python, react, typescript, whisper. Stack declarado: python, typescript, javascript, react, postgres, whisper.
+## Cómo funciona
 
-## Cuando usarlo
+Skills y herramientas que coordinan guion, voz, imágenes y montaje.
 
-quieres ---
+## Instalación rápida
 
-## Cuando NO usarlo
+Sigue el README (el repo original ya no está disponible en GitHub; usa tu clon local).
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Videos explicativos automatizados
+- Contenido para redes
+- Prototipos de producción
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres producir videos completos con un agente | solo necesitas editar clips; mira `video-use` |
 
-python, typescript, javascript, react, postgres, whisper
+**Limitaciones:** El repositorio original ya no está disponible en GitHub; usa tu clon local o la alternativa `remotion-superpowers`.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Markdown, Python
+- **Modelos / API:** Usa el modelo de tu agente.
+- **Etiquetas:** `video` `coding-agent` `skills`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [remotion](remotion.md) | 72.2k | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Remotion Superpowers](remotion-superpowers.md) | 164 | Plugin que convierte Remotion en un estudio de video para Claude Code, Codex o Gemini CLI. |
+| [MoneyPrinterTurbo](moneyprinterturbo.md) | 142k | App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso. |
 
-## Riesgos
+## Enlaces
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+- 🐙 GitHub: [calesthio/OpenMontage.git](https://github.com/calesthio/OpenMontage.git)
 
-## Ideas profesionales
+---
 
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres ---. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

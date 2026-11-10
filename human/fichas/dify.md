@@ -1,60 +1,69 @@
-# dify
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Builders visuales y plataformas de agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧱 dify
 
-## Decision
+> Plataforma integral para construir apps de IA con backend y UI listos.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 161k | Otra (ver repo) | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-Dify is an open-source LLM app development platform. Its intuitive interface combines AI workflow, RAG pipeline, agent capabilities, model management, observability features (including Opik, Langfuse, and Arize Phoenix) and more, letting you quickly go from prototype to production. Here's a list of the core features:.
+## Qué es
 
-## Que problema resuelve
+Combina orquestación de prompts, RAG, agentes, workflows y observabilidad en un mismo producto autoalojable.
 
-quieres una app IA completa autoalojada
+## Por qué destaca
 
-## Por que tiene valor
+Todo-en-uno muy popular para llevar apps de IA a producción sin ensamblar piezas sueltas. Cubre desde el chatbot con RAG hasta workflows visuales y agentes, con gestión de usuarios y API propia.
 
-Aporta valor en `platform` para automation, docker, javascript, javascript-typescript, postgres, python, react, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, react, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Define apps (chatbot, agente, workflow) desde un panel web; el backend en Python orquesta modelos y herramientas sobre PostgreSQL/Redis, y se despliega con Docker Compose.
 
-quieres una app IA completa autoalojada
+## Instalación rápida
 
-## Cuando NO usarlo
+`docker compose up` desde el repo (o cloud gestionado de Dify). Requiere Docker y al menos una clave de proveedor de LLM.
 
-solo necesitas una librería o un prototipo puntual.
+## Casos de uso
 
-## Tipo de instalacion
+- Desplegar un chatbot/asistente con RAG
+- Apps IA para clientes
+- Workflows visuales con herramientas propias
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres una app IA completa autoalojada | solo necesitas una librería o un prototipo puntual |
 
-javascript/typescript, python, typescript, javascript, react, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python/TS, React, PostgreSQL, Redis, Docker
+- **Modelos / API:** OpenAI, Anthropic, Google, locales; agnóstico vía variables de entorno.
+- **Etiquetas:** `automation` `agents` `python` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [langflow](langflow.md) | 157k | Constructor visual de flujos LLM/agentes construido sobre LangChain. |
+| [Flowise](flowise.md) | 55.6k | Builder visual drag-and-drop para pipelines LLM. |
 
-- `langflow`
-- `flowise`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Sim](sim.md) | 30.1k | Espacio colaborativo para construir, desplegar y monitorear agentes y workflows de IA con un lienzo visual. |
+| [RAGFlow](ragflow.md) | 94k | Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [langgenius/dify](https://github.com/langgenius/dify)
+- 🌐 Web: <https://dify.ai>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con langflow, flowise cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres una app IA completa autoalojada. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,60 +1,68 @@
-# nanoGPT
+[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Aprender LLMs desde cero
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔬 nanoGPT
 
-## Decision
+> Implementación mínima y limpia de Andrej Karpathy para entrenar y afinar GPTs, pensada para que el código quepa en la cabeza y se entienda de extremo a extremo.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 64.6k | MIT | Python | 2025-11-12 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-Update Nov 2025 nanoGPT has a new and improved cousin called nanochat. It is very likely you meant to use/find nanochat instead. nanoGPT (this repo) is now very old and deprecated but I will leave it up for posterity.
+## Qué es
 
-## Que problema resuelve
+Resuelve la opacidad de los frameworks: ves exactamente cómo se entrena un GPT sin capas de abstracción.
 
-quieres entender el entrenamiento de un GPT desde cero
+## Por qué destaca
 
-## Por que tiene valor
+Referencia didáctica de Karpathy ampliamente usada para aprender cómo funciona realmente el entrenamiento de un GPT, sin capas de abstracción. Su minimalismo (unos pocos cientos de líneas) lo hace el punto de partida habitual para entender y experimentar.
 
-Aporta valor en `library` para javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Define el modelo GPT y su bucle de entrenamiento en PyTorch sobre GPU, reproduciendo resultados tipo GPT-2 con unos pocos cientos de líneas y dependencias mínimas.
 
-quieres entender el entrenamiento de un GPT desde cero
+## Instalación rápida
 
-## Cuando NO usarlo
+`git clone https://github.com/karpathy/nanoGPT` y `pip install torch numpy transformers datasets tiktoken`. Requiere GPU para entrenar (CPU solo sirve para pruebas triviales).
 
-solo consumes modelos vía API o necesitas un pipeline de chat completo ([nanochat](#-nanochat)).
+## Casos de uso
 
-## Tipo de instalacion
+- Aprender cómo se entrena un GPT
+- Experimentos pequeños reproducibles
+- Base para afinar modelos propios sobre datos propios
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres entender el entrenamiento de un GPT desde cero | solo consumes modelos vía API o necesitas un pipeline de chat completo (nanochat) |
 
-python, typescript, javascript, postgres
+**Limitaciones:** Entrenar a escala real exige GPU y tiempo; no es una librería de producción, sino un recurso educativo minimalista.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, PyTorch, GPU
+- **Modelos / API:** Entrena modelos propios.
+- **Etiquetas:** `learning` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `nanochat`
-- `llm.c`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [nanochat](nanochat.md) | 60.4k | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [LLMs from Scratch](llms-from-scratch.md) | 108k | Código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso. |
 
-## Riesgos
+## Enlaces
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+- 🐙 GitHub: [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT)
 
-## Ideas profesionales
+---
 
-Combinar con nanochat, llm.c cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si quieres entender el entrenamiento de un GPT desde cero. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

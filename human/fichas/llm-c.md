@@ -1,59 +1,62 @@
-# llm.c
+[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Aprender LLMs desde cero
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# ⚙️ llm.c
 
-## Decision
+> Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo al desnudo.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 31.4k | MIT | Cuda | 2025-06-26 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
-LLMs in simple, pure C/CUDA with no need for 245MB of PyTorch or 107MB of cPython. Current focus is on pretraining, in particular reproducing the GPT-2 and GPT-3 miniseries, along with a parallel PyTorch reference implementation in train_gpt2.py. You'll recognize this file as a slightly tweaked nanoGPT.
+## Qué es
 
-## Que problema resuelve
+Resuelve la abstracción total: muestra qué hace realmente la GPU en cada pasada, sin ocultarlo tras un framework.
 
-quieres bajo nivel sin abstracciones y tienes GPU CUDA
+## Por qué destaca
 
-## Por que tiene valor
+Referencia didáctica de Karpathy que reproduce GPT-2 con dependencias mínimas, ideal para entender qué hace realmente la GPU bajo el capó. Su valor educativo sobre el cómputo de bajo nivel es difícil de igualar en otros recursos.
 
-Aporta valor en `app` para javascript, python, typescript. Stack declarado: python, typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Escribe a mano los kernels de las pasadas forward/backward en C y CUDA, gestionando memoria y operaciones que normalmente oculta un framework como PyTorch, reproduciendo el entrenamiento de GPT-2.
 
-quieres bajo nivel sin abstracciones y tienes GPU CUDA
+## Instalación rápida
 
-## Cuando NO usarlo
+`git clone https://github.com/karpathy/llm.c`, instalar CUDA toolkit y compilar con `make`. Requiere una GPU NVIDIA con CUDA; sin él no tiene sentido.
 
-prefieres PyTorch ([nanoGPT](#-nanogpt)) o no tienes CUDA.
+## Casos de uso
 
-## Tipo de instalacion
+- Entrenar GPT-2 con mínima dependencia
+- Entender el cómputo de bajo nivel
+- Enseñar qué hace realmente un framework bajo el capó
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres bajo nivel sin abstracciones y tienes GPU CUDA | prefieres PyTorch (nanoGPT) o no tienes CUDA |
 
-python, typescript, javascript
+**Limitaciones:** Exige GPU NVIDIA con CUDA y toolkit instalado; no es portable a otras arquitecturas y no busca ser productivo, sino pedagógico.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** C, CUDA
+- **Modelos / API:** Entrena modelos propios.
+- **Etiquetas:** `learning`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `nanogpt`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [nanoGPT](nanogpt.md) | 64.6k | Implementación mínima y limpia de Andrej Karpathy para entrenar y afinar GPTs, pensada para que el código quepa en la cabeza y se entienda de extremo a extremo. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [karpathy/llm.c](https://github.com/karpathy/llm.c)
 
-## Riesgos
+---
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con nanogpt cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si quieres bajo nivel sin abstracciones y tienes GPU CUDA. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

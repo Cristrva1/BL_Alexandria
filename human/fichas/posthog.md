@@ -1,60 +1,63 @@
-# posthog
+[🏠 Inicio](../README.md) › [📊 Analítica & Visualización](../categorias/10-anal-tica-visualizaci-n.md) › Analítica web y de producto
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📈 posthog
 
-## Decision
+> Plataforma de product analytics y eventos para entender el comportamiento de usuarios, con funnels, session replay y feature flags en una sola suite.
 
-USAR AHORA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 40.7k | Otra (ver repo) | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
-PostHog is an all-in-one, open source platform for building successful products.
+## Qué es
 
-## Que problema resuelve
+Cubre todo el ciclo de medición de producto sin integrar varias herramientas.
 
-quieres entender el uso real y el comportamiento de usuarios
+## Por qué destaca
 
-## Por que tiene valor
+Referente open source de analítica de producto, autohospedable y muy adoptado por equipos que quieren evitar el lock-in de herramientas SaaS. Su licencia MIT y la amplitud de funciones (replay, flags, A/B tests) lo hacen competitivo frente a Amplitude/Mixpanel.
 
-Aporta valor en `skill` para docker, javascript, python, react, typescript. Stack declarado: python, typescript, javascript, react, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Instrumentas eventos con su SDK (JS/Python/etc.) que se ingieren en su backend, y exploras todo desde su panel web con funnels, grabaciones de sesión y experimentos.
 
-quieres entender el uso real y el comportamiento de usuarios
+## Instalación rápida
 
-## Cuando NO usarlo
+`docker compose` para self-host, o SDK vía `npm i posthog-js` / `pip install posthog` apuntando al cloud. El self-host requiere ClickHouse y recursos no triviales.
 
-solo necesitas BI sobre una BD estática ([metabase](#-metabase)).
+## Casos de uso
 
-## Tipo de instalacion
+- Medir conversiones antes/después de cambios
+- Funnels y session replay para diagnosticar fricción
+- Feature flags y A/B tests controlados
 
-docker_local
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres entender el uso real y el comportamiento de usuarios | solo necesitas BI sobre una BD estática (metabase) |
 
-python, typescript, javascript, react, docker
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python/Node, ClickHouse, self-host o cloud
+- **Modelos / API:** Complementa apps instrumentadas con agentes.
+- **Etiquetas:** `analytics` `python` `docker`
+- **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [metabase](metabase.md) | 50.3k | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. |
 
-- `metabase`
-- `marketing de agencia`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [PostHog/posthog](https://github.com/PostHog/posthog)
+- 🌐 Web: <https://posthog.com>
+- 🧪 Receta: [Marketing de agencia](../playbooks/marketing-de-agencia.md)
+- 🧪 Receta: [Analítica de producto con IA](../playbooks/analitica-con-ia.md)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con metabase, marketing de agencia cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: usar ahora. Tiene sentido si quieres entender el uso real y el comportamiento de usuarios. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

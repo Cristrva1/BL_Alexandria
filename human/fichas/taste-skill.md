@@ -1,60 +1,62 @@
-# taste-skill
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Skills de diseño para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🍷 taste-skill
 
-## Decision
+> Skills "anti-slop" para producir frontends premium (layout, tipografía, motion y espaciado) más skills de generación de imagen para crear mood boards de referencia.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 113k | MIT | JavaScript | 2026-11-08 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-taste-skill corrige interfaces generadas por agentes: jerarquía visual, tipo, movimiento y espacio. No es un kit de componentes.
+## Qué es
 
-## Que problema resuelve
+Ataca el acabado "de plantilla" que delata a las UIs generadas por IA.
 
-quieres frontends con gusto y no te basta con UI funcional
+## Por qué destaca
 
-## Por que tiene valor
+Aporta criterio de diseño además de código, y opcionalmente genera boards visuales (web, mobile, brand) para anclar el estilo antes de programar. Es portable entre asistentes (Codex, Cursor, Claude Code) y de foco estético.
 
-Aporta valor en `skill` para postgres, react, skills, typescript. Stack declarado: typescript, react, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Las skills inyectan guías de gusto visual en el contexto del asistente y, cuando se activan las de imagen, llaman a un generador (ChatGPT Images u otro) para producir boards de referencia que el modelo usa como guía.
 
-quieres frontends con gusto y no te basta con UI funcional
+## Instalación rápida
 
-## Cuando NO usarlo
+Clona el repo y copia las skills a tu directorio de skills (Codex, Cursor o Claude Code); las de imagen requieren un generador disponible y su correspondiente acceso/API.
 
-ya tienes un design system cerrado o no usas generadores de imagen.
+## Casos de uso
 
-## Tipo de instalacion
+- Subir el gusto de UIs construidas por IA
+- Boards de referencia (web/mobile/brand) antes de codificar
+- Alinear estética entre diseñador y agente
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres frontends con gusto y no te basta con UI funcional | ya tienes un design system cerrado o no usas generadores de imagen |
 
-typescript, react, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown/skills
+- **Modelos / API:** Codex, Cursor, Claude Code; las skills de imagen usan generadores como ChatGPT Images.
+- **Etiquetas:** `skills` `design` `javascript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) | 148k | Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla". |
+| [impeccable](impeccable.md) | 107k | Guía de diseño para agentes de código (1 skill, 23 comandos, iteración en browser y 44 detectores de "tells" de UI por IA) que empuja al agente hacia frontends con criterio. |
 
-- `ui-ux-pro-max-skill`
-- `impeccable`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill)
+- 🌐 Web: <https://tasteskill.dev>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con ui-ux-pro-max-skill, impeccable cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres frontends con gusto y no te basta con UI funcional. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

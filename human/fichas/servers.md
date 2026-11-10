@@ -1,60 +1,63 @@
-# servers
+[🏠 Inicio](../README.md) › [🔌 MCP & Conectividad](../categorias/05-mcp-conectividad.md) › Servidores MCP destacados
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📚 servers
 
-## Decision
+> Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 91.9k | Otra (ver repo) | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
-This repository is a collection of *reference implementations* for the Model Context Protocol (MCP), as well as references to community-built servers and additional resources.
+## Qué es
 
-## Que problema resuelve
+Resuelve la falta de ejemplos canónicos: muestra cómo se construye un servidor MCP correcto, paso a paso.
 
-quieres ejemplos canónicos y plantillas fiables
+## Por qué destaca
 
-## Por que tiene valor
+Es la fuente canónica y didáctica para entender cómo se construye un servidor MCP, respaldada por los mantenedores del propio protocolo. Incluye ejemplos prácticos (filesystem, fetch, git, etc.) que sirven de plantilla para los tuyos.
 
-Aporta valor en `directory` para javascript, javascript-typescript, postgres, python, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Cada subdirectorio es un servidor MCP de ejemplo (filesystem, fetch, git…) que se ejecuta con `npx` y se conecta a un cliente compatible mediante el protocolo MCP sobre stdio o HTTP.
 
-quieres ejemplos canónicos y plantillas fiables
+## Instalación rápida
 
-## Cuando NO usarlo
+Ejecutar un servidor del repo con `npx` (p. ej. `npx -y @modelcontextprotocol/server-filesystem /ruta`) y añadirlo a la config del cliente MCP. Requiere Node.js para los servers TS.
 
-buscas soluciones listas para producción (son demos educativas, no hardening).
+## Casos de uso
 
-## Tipo de instalacion
+- Aprender a construir un servidor MCP
+- Plantillas para arrancar el tuyo
+- Ejemplos educativos de features (tools, resources, prompts)
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres ejemplos canónicos y plantillas fiables | buscas soluciones listas para producción (son demos educativas, no hardening) |
 
-javascript/typescript, python, typescript, javascript, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** TypeScript/Python
+- **Modelos / API:** Clientes MCP (Claude, Cursor, etc.); sin LLM propio.
+- **Etiquetas:** `mcp` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [mcp-use](mcp-use.md) | 10.9k | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. |
+| [awesome-mcp-servers](awesome-mcp-servers.md) | 97.6k | Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar. |
 
-- `mcp-use`
-- `awesome-mcp-servers`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
+- 🌐 Web: <https://modelcontextprotocol.io>
+- 🧪 Receta: [Construir una app o servidor MCP](../playbooks/construir-una-appservidor-mcp.md)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con mcp-use, awesome-mcp-servers cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres ejemplos canónicos y plantillas fiables. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

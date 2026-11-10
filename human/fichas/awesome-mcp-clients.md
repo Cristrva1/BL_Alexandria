@@ -1,61 +1,61 @@
-# awesome-mcp-clients
+[🏠 Inicio](../README.md) › [🔌 MCP & Conectividad](../categorias/05-mcp-conectividad.md) › Directorios, clientes y aprendizaje
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📚 Awesome MCP Clients
 
-## Decision
+> Lista curada de clientes que soportan Model Context Protocol: apps, IDEs y agentes.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 6.6k | MIT | — | 2026-06-07 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-A curated list of awesome Model Context Protocol (MCP) clients.
+## Qué es
 
-## Que problema resuelve
+Ayuda a elegir dónde usar tus servidores MCP: chats de escritorio, editores, CLIs y plataformas.
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+## Por qué destaca
 
-## Por que tiene valor
+Complementa a las listas de servidores con el otro lado del protocolo.
 
-Aporta valor en `directory` para docker, javascript, langchain, mcp, postgres, python, react, typescript. Stack declarado: python, typescript, javascript, react, docker, postgres, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Lista en Markdown organizada por tipo de cliente.
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+## Instalación rápida
 
-## Cuando NO usarlo
+No se instala: abre el repo y consulta la lista.
 
-prefieres conexiones directas sin protocolo estándar
+## Casos de uso
 
-## Tipo de instalacion
+- Elegir un cliente MCP
+- Comparar soporte de funciones
+- Descubrir apps nuevas
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| buscas un cliente para tus servidores MCP | buscas servidores; mira `awesome-mcp-servers` |
 
-python, typescript, javascript, react, docker, postgres, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown
+- **Modelos / API:** No aplica.
+- **Etiquetas:** `mcp`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [awesome-mcp-servers](awesome-mcp-servers.md) | 97.6k | Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar. |
 
-- `claude-plugins-official`
-- `n8n-skills`
-- `mcp`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [punkpeye/awesome-mcp-clients](https://github.com/punkpeye/awesome-mcp-clients)
+- 🌐 Web: <https://glama.ai/mcp/clients>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

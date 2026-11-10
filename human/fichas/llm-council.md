@@ -1,59 +1,62 @@
-# llm-council
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Simulación, evolución y debate entre modelos
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🏛️ llm-council
 
-## Decision
+> "consejo" donde varios LLMs deliberan y se evalúan entre sí para responder.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 26.4k | — | Python | 2025-11-22 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-The idea of this repo is that instead of asking a question to your favorite LLM provider (e.g. OpenAI GPT 5.1, Google Gemini 3.0 Pro, Anthropic Claude Sonnet 4.5, xAI Grok 4, eg.c), you can group them into your "LLM Council".
+## Qué es
 
-## Que problema resuelve
+Cada modelo aporta una respuesta y luego se contrastan para llegar a un consenso.
 
-quieres consenso entre modelos o comparar proveedores
+## Por qué destaca
 
-## Por que tiene valor
+Combina perspectivas de varios modelos para reducir el sesgo de uno solo; propuesta sencilla y didáctica popularizada por Karpathy. Sirve tanto para obtener mejores respuestas como para comparar modelos.
 
-Aporta valor en `platform` para fastapi, javascript, postgres, python, react, typescript. Stack declarado: python, typescript, javascript, react, postgres, fastapi.
+## Cómo funciona
 
-## Cuando usarlo
+Envía la consulta a varios LLMs, los hace revisar las respuestas de los demás y agrega un resultado de consenso; app ligera en Python/web con backend FastAPI.
 
-quieres consenso entre modelos o comparar proveedores
+## Instalación rápida
 
-## Cuando NO usarlo
+`git clone` del repo y ejecución según su README. Requiere claves de varios proveedores de LLM (OpenAI, Anthropic, Google, xAI) para que el consejo tenga variedad.
 
-te basta un único LLM o el coste multi-modelo no es asumible.
+## Casos de uso
 
-## Tipo de instalacion
+- Respuestas por consenso multi-modelo
+- Reducir sesgo de un solo modelo
+- Comparar modelos en preguntas reales
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres consenso entre modelos o comparar proveedores | te basta un único LLM o el coste multi-modelo no es asumible |
 
-python, typescript, javascript, react, postgres, fastapi
+**Limitaciones:** Cada consulta se multiplica por el nº de modelos del consejo, elevando coste y latencia.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, React, FastAPI, PostgreSQL
+- **Modelos / API:** Múltiples LLMs (OpenAI, Anthropic, Google, xAI Grok).
+- **Etiquetas:** `agents` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `litellm`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [litellm](litellm.md) | 63k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [karpathy/llm-council](https://github.com/karpathy/llm-council)
 
-## Riesgos
+---
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con litellm cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres consenso entre modelos o comparar proveedores. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

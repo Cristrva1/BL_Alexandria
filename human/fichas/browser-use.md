@@ -1,60 +1,72 @@
-# browser-use
+[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Navegadores y automatización web
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🌐 browser-use
 
-## Decision
+> Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 121k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-🌤️ Want to skip the setup? Use our cloud for faster, scalable, stealth-enabled browser automation!.
+## Qué es
 
-## Que problema resuelve
+Resuelve la fragilidad del scraping basado en CSS: el agente "ve" la página como un humano y decide la siguiente acción.
 
-quieres navegación como humano y tolerancia a cambios de UI
+## Por qué destaca
 
-## Por que tiene valor
+Uno de los proyectos de agentes-web más virales y populares, por permitir automatización robusta guiada por modelos multimodales incluso ante pop-ups y cambios de layout. Su adopción masiva y la opción de cloud gestionado lo consolidan como referencia en navegación agentica.
 
-Aporta valor en `platform` para automation, docker, python, typescript. Stack declarado: python, typescript, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Controla el navegador con Playwright, extrae el estado de la página (DOM simplificado + capturas) y lo pasa a un LLM con visión que devuelve la siguiente acción de click/escritura/navegación, repitiendo el bucle hasta cumplir el objetivo.
 
-quieres navegación como humano y tolerancia a cambios de UI
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install browser-use` y `playwright install`; requiere clave de un LLM con visión (OpenAI, Anthropic o Google). Para escala/stealth existe cloud gestionado.
 
-necesitas scripts deterministas y baratos ([playwright](#-playwright)) o no quieres depender de un LLM por paso.
+## Casos de uso
 
-## Tipo de instalacion
+- Agente que entra a un e-commerce, filtra y compra
+- Recuperación ante pop-ups/errores y CAPTCHAs suaves
+- Flujos multi-paso donde los selectores cambian entre visitas
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres navegación como humano y tolerancia a cambios de UI | necesitas scripts deterministas y baratos (playwright) o no quieres depender de un LLM por paso |
 
-python, typescript, docker
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python 3.11+, Rust (core), Playwright
+- **Modelos / API:** Multimodales con visión (GPT-4o, Claude, Gemini); agnóstico vía variables de entorno.
+- **Etiquetas:** `automation` `browser` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [playwright](playwright.md) | 99.7k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
+| [gpt-researcher](gpt-researcher.md) | 30.6k | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
 
-- `playwright`
-- `gpt-researcher`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Gemini Computer Use (preview)](computer-use-preview.md) | 3.3k | Implementación de referencia de Google para que Gemini vea la pantalla y opere interfaces web. |
+| [Stagehand](stagehand.md) | 26k | SDK de Browserbase para automatizar el navegador mezclando código con acciones en lenguaje natural. |
+| [Skyvern](skyvern.md) | 23.4k | Automatiza flujos en el navegador con LLM y visión, sin selectores frágiles. |
+| [Playwright MCP](playwright-mcp.md) | 39.4k | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [browser-use/browser-use](https://github.com/browser-use/browser-use)
+- 🌐 Web: <https://browser-use.com>
+- 🧪 Receta: [Agente de research profundo](../playbooks/agente-de-research-profundo.md)
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con playwright, gpt-researcher cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres navegación como humano y tolerancia a cambios de UI. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

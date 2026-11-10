@@ -1,61 +1,60 @@
-# prompt-master
+[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Prompts y prompt engineering
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎯 prompt-master
 
-## Decision
+> Skill que ayuda a redactar prompts precisos para cualquier herramienta de IA, buscando el mejor resultado sin desperdiciar tokens.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 15.8k | MIT | — | 2026-10-22 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention. No re-prompting your way to an answer you should have gotten on attempt one.
+## Qué es
 
-## Que problema resuelve
+Te ayuda a escribir mejores prompts con meta-prompting reutilizable, como una capa por encima de cualquier IA.
 
-quieres dejar de re-promptear y acertar antes
+## Por qué destaca
 
-## Por que tiene valor
+Es transversal a casi cualquier IA (texto, imagen, video, código), lo que la hace útil como capa de "meta-prompting" reutilizable. Su foco en acertar al primer intento reduce iteraciones y coste.
 
-Aporta valor en `skill` para comfy, javascript, postgres, python, react, skills, typescript. Stack declarado: python, typescript, javascript, react, postgres, comfy.
+## Cómo funciona
 
-## Cuando usarlo
+La skill guía al asistente para clarificar la intención y construir el prompt óptimo, conservando contexto y memoria entre iteraciones. Aplica plantillas y criterios según el tipo de salida buscada (texto, imagen, código).
 
-quieres dejar de re-promptear y acertar antes
+## Instalación rápida
 
-## Cuando NO usarlo
+Clona el repo y copia el `SKILL.md` a tu directorio de skills, o pega su contenido como instrucción en la IA que uses; sin dependencias.
 
-ya tienes prompts afinados y estables.
+## Casos de uso
 
-## Tipo de instalacion
+- Acertar el prompt al primer intento
+- Retención de contexto y memoria entre iteraciones
+- Meta-prompting para imagen y video
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres dejar de re-promptear y acertar antes | ya tienes prompts afinados y estables |
 
-python, typescript, javascript, react, postgres, comfy
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown/skill
+- **Modelos / API:** Claude, ChatGPT, Gemini, Cursor, Midjourney, etc. (agnóstico).
+- **Etiquetas:** `skills` `prompts`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [andrej-karpathy-skills](andrej-karpathy-skills.md) | 232k | Guía de 4 principios inspirada en Andrej Karpathy para que tu agente de código responda útil y sin relleno. |
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [nidhinjs/prompt-master](https://github.com/nidhinjs/prompt-master)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres dejar de re-promptear y acertar antes. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,61 +1,66 @@
-# litellm
+[🏠 Inicio](../README.md) › [🧬 Memoria, RAG & LLM Ops](../categorias/06-memoria-rag-llm-ops.md) › Serving y gateways de LLM
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔀 litellm
 
-## Decision
+> Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI.
 
-USAR AHORA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 63k | Otra (ver repo) | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-LiteLLM is an open source AI Gateway that gives you a single, unified interface to call 100+ LLM providers — OpenAI, Anthropic, Gemini, Bedrock, Azure, and more — using the OpenAI format.
+## Qué es
 
-## Que problema resuelve
+Resuelve el lock-in: cambias de proveedor o añades fallback sin reescribir el código de tu app.
 
-trabajas con múltiples modelos o quieres fallback/control de costos
+## Por qué destaca
 
-## Por que tiene valor
+Es un estándar de facto para abstraer proveedores, muy adoptado por su routing, control de costos, reintentos y fallback entre modelos. Su amplia cobertura (OpenAI, Anthropic, Google, Bedrock, locales vía Ollama/vLLM) lo hace casi ubicuo en stacks multi-modelo.
 
-Aporta valor en `platform` para docker, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Traduce cada petición al formato del proveedor destino y puede correr como proxy/gateway (modo servidor) con balanceo, reintentos, budget tracking y registro de uso, además de como librería embebida.
 
-trabajas con múltiples modelos o quieres fallback/control de costos
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install litellm` (o despliegue del proxy vía Docker); requiere las claves de los proveedores que uses vía variables de entorno.
 
-usas un único proveedor fijo y no necesitas abstracción.
+## Casos de uso
 
-## Tipo de instalacion
+- Probar varios modelos sin reescribir código
+- Balancear costo/fallback entre proveedores
+- Centralizar control de costos y rate limits
 
-local_project
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| trabajas con múltiples modelos o quieres fallback/control de costos | usas un único proveedor fijo y no necesitas abstracción |
 
-python, typescript, javascript, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python
+- **Modelos / API:** OpenAI, Anthropic, Google, Bedrock, Azure, locales (Ollama, vLLM), etc.
+- **Etiquetas:** `inference` `llmops` `python` `docker`
+- **Modo de instalación sugerido:** 📦 **Dependencia del proyecto** — instálalo dentro de cada proyecto que lo use
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [langchain](langchain.md) | 149k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
+| [langfuse](langfuse.md) | 37.3k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
+| [llm-council](llm-council.md) | 26.4k | "consejo" donde varios LLMs deliberan y se evalúan entre sí para responder. |
 
-- `langchain`
-- `langfuse`
-- `llm-council`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [BerriAI/litellm](https://github.com/BerriAI/litellm)
+- 🌐 Web: <https://docs.litellm.ai/docs/>
+- 🧪 Receta: [ChatGPT privado con modelos locales](../playbooks/chatgpt-privado-local.md)
+- 🧪 Receta: [RAG sobre tus documentos](../playbooks/rag-sobre-documentos.md)
+- 🧪 Receta: [Agente de voz en tiempo real](../playbooks/agente-de-voz.md)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con langchain, langfuse, llm-council cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: usar ahora. Tiene sentido si trabajas con múltiples modelos o quieres fallback/control de costos. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

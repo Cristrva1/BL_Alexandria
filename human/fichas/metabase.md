@@ -1,60 +1,69 @@
-# metabase
+[🏠 Inicio](../README.md) › [📊 Analítica & Visualización](../categorias/10-anal-tica-visualizaci-n.md) › BI, dashboards y chat con datos
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📊 metabase
 
-## Decision
+> Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL.
 
-USAR AHORA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 50.3k | Otra (ver repo) | Clojure | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-The easiest way to get started with Metabase is to sign up for a free trial of Metabase Cloud.
+## Qué es
 
-## Que problema resuelve
+Apunta a perfiles no técnicos que necesitan reporting propio.
 
-quieres BI accesible para perfiles no técnicos
+## Por qué destaca
 
-## Por que tiene valor
+De las plataformas BI open source más populares por su facilidad de uso y su editor visual de consultas accesible para perfiles no técnicos. Su despliegue como JAR o contenedor lo hace muy portable.
 
-Aporta valor en `platform` para docker, javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Se conecta a tu BD (Postgres, MySQL, BigQuery, etc.), define preguntas mediante un constructor visual o SQL nativo, y las agrupa en dashboards interactivos servidos por web.
 
-quieres BI accesible para perfiles no técnicos
+## Instalación rápida
 
-## Cuando NO usarlo
+`docker run metabase/metabase`, o JAR ejecutable con Java. Requiere una BD de aplicación (H2 por defecto, recomendado Postgres/MySQL para producción).
 
-necesitas analítica de eventos por usuario ([posthog](#-posthog)).
+## Casos de uso
 
-## Tipo de instalacion
+- Tableros de marketing/ventas sin escribir SQL
+- Reporting de negocio sobre tu BD existente
+- Exploración ad-hoc por perfiles no técnicos
 
-docker_local
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres BI accesible para perfiles no técnicos | necesitas analítica de eventos por usuario (posthog) |
 
-javascript/typescript, typescript, javascript, react, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Java/Clojure, BD, web
+- **Modelos / API:** N/A.
+- **Etiquetas:** `analytics` `dataviz` `docker`
+- **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [posthog](posthog.md) | 40.7k | Plataforma de product analytics y eventos para entender el comportamiento de usuarios, con funnels, session replay y feature flags en una sola suite. |
+| [echarts](echarts.md) | 67.7k | Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos. |
 
-- `posthog`
-- `echarts`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Apache Superset](superset.md) | 75.5k | Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. |
+| [Redash](redash.md) | 28.9k | Herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [metabase/metabase](https://github.com/metabase/metabase)
+- 🌐 Web: <https://metabase.com>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con posthog, echarts cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: usar ahora. Tiene sentido si quieres BI accesible para perfiles no técnicos. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

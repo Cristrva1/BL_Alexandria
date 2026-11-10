@@ -1,61 +1,68 @@
-# repomix
+[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Entender y empaquetar código para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧬 Repomix
 
-## Decision
+> Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM.
 
-USAR AHORA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 29.2k | MIT | TypeScript | 2026-11-08 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-Warp, built for coding with multiple AI agents Available for MacOS, Linux, & Windows.
+## Qué es
 
-## Que problema resuelve
+Genera un archivo XML, Markdown o texto con la estructura y el código del repo, respetando .gitignore y contando tokens. También funciona como servidor MCP.
 
-quieres need discussion? join us on <a href="https://discord.gg/wnyztwzfku">discord</a>!
+## Por qué destaca
 
-## Por que tiene valor
+Simple y muy útil para dar contexto completo a cualquier chat de IA.
 
-Aporta valor en `library` para automation, docker, javascript, javascript-typescript, postgres, python, react, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, react, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Recorre el repo, filtra archivos, opcionalmente comprime el código con tree-sitter y escribe un único archivo.
 
-quieres need discussion? join us on <a href="https://discord.gg/wnyztwzfku">discord</a>!
+## Instalación rápida
 
-## Cuando NO usarlo
+`npx repomix` en la carpeta del repo (o `npm i -g repomix`).
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Pasar un repo a ChatGPT o Claude
+- Revisiones de código con contexto completo
+- Documentar un proyecto con IA
 
-global
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres dar tu repo completo a un LLM | el repo es enorme; mira `codebase-memory-mcp` o `serena` |
 
-javascript/typescript, python, typescript, javascript, react, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** TypeScript, Node.js
+- **Modelos / API:** No usa LLM.
+- **Etiquetas:** `code` `coding-agent` `typescript`
+- **Modo de instalación sugerido:** 🌍 **Global** — instálalo una vez en tu máquina
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [GitNexus](gitnexus.md) | 48.4k | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [yamadashy/repomix](https://github.com/yamadashy/repomix)
+- 🌐 Web: <https://repomix.com>
+- 🧪 Receta: [Análisis de repos grandes](../playbooks/analisis-de-repos-grandes.md)
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: usar ahora. Tiene sentido si quieres need discussion? join us on <a href="https://discord.gg/wnyztwzfku">discord</a>!. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

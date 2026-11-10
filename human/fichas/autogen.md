@@ -1,61 +1,71 @@
-# autogen
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Frameworks de agentes en Python
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🐍 AutoGen
 
-## Decision
+> Framework de Microsoft para conversaciones entre agentes, hoy en modo mantenimiento.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 61.8k | CC-BY-4.0 | Python | 2026-10-28 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
-AutoGen orquesta conversaciones entre agentes LLM. Está en mantenimiento; para trabajo nuevo revisa el sucesor oficial antes de adoptarlo como runtime.
+## Qué es
 
-## Que problema resuelve
+Popularizó los sistemas multiagente que conversan para resolver tareas. Microsoft recomienda usar Agent Framework para proyectos nuevos.
 
-quieres autogen [![maintenance mode](https://img.shields.io/badge/status-maintenance%20m
+## Por qué destaca
 
-## Por que tiene valor
+Proyecto influyente con mucha documentación y ejemplos de patrones multiagente.
 
-Aporta valor en `runtime` para agents, automation, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Agentes con roles intercambian mensajes en un runtime asíncrono basado en eventos.
 
-quieres autogen [![maintenance mode](https://img.shields.io/badge/status-maintenance%20m
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install -U "autogen-agentchat" "autogen-ext[openai]"`.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Estudiar patrones multiagente
+- Mantener proyectos existentes
+- Prototipos de debate entre agentes
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| mantienes un proyecto que ya usa AutoGen | empiezas algo nuevo; mira `agent-framework` |
 
-python, typescript, javascript, postgres
+**Limitaciones:** En modo mantenimiento: solo correcciones; el sucesor es Microsoft Agent Framework.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, .NET
+- **Modelos / API:** Agnóstico.
+- **Etiquetas:** `agents` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [litellm](litellm.md) | 63k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Microsoft Agent Framework](agent-framework.md) | 14.6k | Framework de Microsoft para agentes y workflows multiagente en Python y .NET, sucesor de AutoGen y Semantic Kernel. |
+| [ag2](ag2.md) | 5.1k | Framework maduro para sistemas multiagente con patrones de colaboración (heredero directo de AutoGen). |
+| [crewAI](crewai.md) | 60.7k | Framework para orquestar "crews" de agentes con roles y tareas. |
 
-## Riesgos
+## Enlaces
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+- 🐙 GitHub: [microsoft/autogen](https://github.com/microsoft/autogen)
+- 🌐 Web: <https://microsoft.github.io/autogen/>
 
-## Ideas profesionales
+---
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres autogen [![maintenance mode](https://img.shields.io/badge/status-maintenance%20m. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,61 +1,63 @@
-# last30days-skill
+[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Búsqueda, monitoreo y research web
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔍 last30days
 
-## Decision
+> Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket y la web de los últimos 30 días.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 67.2k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-An AI agent-led search engine scored by upvotes, likes, and real money - not editors..
+## Qué es
 
-## Que problema resuelve
+Busca lo que la gente está diciendo ahora sobre un tema y lo resume con fuentes. Prioriza señales reales como votos, likes y apuestas.
 
-quieres /last30days
+## Por qué destaca
 
-## Por que tiene valor
+Da a tu agente un pulso actual del tema, no solo resultados de buscador.
 
-Aporta valor en `skill` para javascript, python, react, skills, typescript. Stack declarado: python, typescript, javascript, react.
+## Cómo funciona
 
-## Cuando usarlo
+Lanza búsquedas en varias plataformas, puntúa resultados por interacción y sintetiza un resumen citado.
 
-quieres /last30days
+## Instalación rápida
 
-## Cuando NO usarlo
+Instálala como skill en Claude Code siguiendo el README (copia a `.claude/skills/`).
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Tendencias recientes de un producto
+- Opinión de la comunidad sobre una herramienta
+- Ideas de contenido actuales
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres saber qué se dice ahora sobre un tema | necesitas un informe académico; mira `storm` |
 
-python, typescript, javascript, react
+**Limitaciones:** Algunas fuentes requieren claves de API.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, Markdown
+- **Modelos / API:** Usa el modelo de tu agente.
+- **Etiquetas:** `research` `skills` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Agent-Reach](agent-reach.md) | 111k | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
 
-## Riesgos
+---
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres /last30days. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

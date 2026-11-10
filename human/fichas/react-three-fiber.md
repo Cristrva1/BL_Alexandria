@@ -1,60 +1,61 @@
-# react-three-fiber
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Animación y 3D
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔻 react-three-fiber
 
-## Decision
+> Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 33.6k | MIT | TypeScript | 2026-10-21 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-react-three-fiber is a React renderer for threejs.
+## Qué es
 
-## Que problema resuelve
+Lleva la mentalidad componible de React al 3D sin abandonar three.js por debajo.
 
-haces 3D en React y quieres reactividad
+## Por qué destaca
 
-## Por que tiene valor
+Lleva la mentalidad declarativa y componible de React al 3D, integrándose con el resto del ecosistema (estado, hooks, drei). Su ecosistema (`@react-three/drei`, `@react-three/postprocessing`) cubre la mayoría de necesidades comunes.
 
-Aporta valor en `library` para javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Reconciliador custom que traduce el árbol JSX a objetos de three.js y los actualiza con los cambios de estado de React, gestionando el bucle de render automáticamente.
 
-haces 3D en React y quieres reactividad
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm i three @react-three/fiber` (y normalmente `@react-three/drei` para helpers). Requiere React + three.js.
 
-no usas React o necesitas control a bajo nivel ([three.js](#-threejs) directo).
+## Casos de uso
 
-## Tipo de instalacion
+- Escenas 3D dentro de apps React
+- Integrar 3D con estado y hooks del ecosistema React
+- Visualizaciones reactivas a datos
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| haces 3D en React y quieres reactividad | no usas React o necesitas control a bajo nivel (three.js directo) |
 
-javascript/typescript, typescript, javascript, react, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** JavaScript/React
+- **Modelos / API:** N/A.
+- **Etiquetas:** `ui` `design` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [motion](motion.md) | 35k | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
 
-- `three.js`
-- `motion`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [pmndrs/react-three-fiber](https://github.com/pmndrs/react-three-fiber)
+- 🌐 Web: <https://docs.pmnd.rs/react-three-fiber>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con three.js, motion cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si haces 3D en React y quieres reactividad. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

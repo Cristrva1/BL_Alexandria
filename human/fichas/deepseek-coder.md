@@ -1,60 +1,64 @@
-# DeepSeek-Coder
+[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Modelos abiertos y fundacionales
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧩 DeepSeek-Coder
 
-## Decision
+> Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 24.4k | MIT | Python | 2025-11-11 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
-DeepSeek Coder is composed of a series of code language models, each trained from scratch on 2T tokens, with a composition of 87% code and 13% natural language in both English and Chinese. We provide various sizes of the code model, ranging from 1B to 33B versions.
+## Qué es
 
-## Que problema resuelve
+Resuelve la dependencia de APIs propietarias para tareas de código: puedes desplegar el modelo en tu propia infraestructura.
 
-quieres un modelo de código abierto y desplegable on-prem
+## Por qué destaca
 
-## Por que tiene valor
+Una de las alternativas abiertas más fuertes para tareas de código, competitiva con modelos propietarios y desplegable en local. Su publicación de pesos y su buena recepción en benchmarks de código la consolidan como referencia open en este nicho.
 
-Aporta valor en `library` para docker, javascript, python, typescript. Stack declarado: python, typescript, javascript, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Modelos transformer ejecutados con PyTorch sobre GPU; se cargan en local (p. ej. vía Hugging Face Transformers o vLLM) o se consumen por la API oficial de DeepSeek, con contextos largos aptos para repos.
 
-quieres un modelo de código abierto y desplegable on-prem
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install transformers torch` y descarga de pesos desde Hugging Face, o uso vía API de DeepSeek. El despliegue local requiere GPU con VRAM generosa según el tamaño del modelo.
 
-prefieres APIs comerciales gestionadas o no tienes GPU para servirlo.
+## Casos de uso
 
-## Tipo de instalacion
+- Generación y revisión de código
+- Asistencia técnica con modelo propio
+- Completado de código en entornos on-prem
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres un modelo de código abierto y desplegable on-prem | prefieres APIs comerciales gestionadas o no tienes GPU para servirlo |
 
-python, typescript, javascript, docker
+**Limitaciones:** El despliegue local exige GPU potente (VRAM escala con el tamaño del modelo); los pesos grandes son lentos de descargar y de servir.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, PyTorch, GPU
+- **Modelos / API:** Modelos DeepSeek (local vía HF/vLLM o API oficial).
+- **Etiquetas:** `inference` `python`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `litellm`
-- `codegraph`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [litellm](litellm.md) | 63k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
+| [codegraph](codegraph.md) | 77.3k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [deepseek-ai/DeepSeek-Coder](https://github.com/deepseek-ai/DeepSeek-Coder)
+- 🌐 Web: <https://chat.deepseek.com/>
 
-## Riesgos
+---
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con litellm, codegraph cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si quieres un modelo de código abierto y desplegable on-prem. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

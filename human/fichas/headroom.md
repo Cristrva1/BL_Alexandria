@@ -1,60 +1,62 @@
-# headroom
+[🏠 Inicio](../README.md) › [🧬 Memoria, RAG & LLM Ops](../categorias/06-memoria-rag-llm-ops.md) › Ahorro de contexto y tokens
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🗜️ headroom
 
-## Decision
+> Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 79.3k | Apache-2.0 | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-60–95% fewer tokens · library · proxy · MCP · 6 algorithms · local-first · reversible.
+## Qué es
 
-## Que problema resuelve
+Resuelve el dolor habitual de los agentes: quedarse sin ventana de contexto a mitad de una tarea larga.
 
-te quedas sin contexto en sesiones largas
+## Por qué destaca
 
-## Por que tiene valor
+Proyecto pequeño y específico que ataca un problema real de los agentes de forma directa y agnóstica al proveedor. Su enfoque de "maximizar señal por token" encaja en pipelines donde el contexto crece sin control.
 
-Aporta valor en `platform` para automation, docker, javascript, langchain, postgres, python, typescript. Stack declarado: python, typescript, javascript, docker, postgres, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Resume y condensa el contexto entrante para maximizar la señal por token antes de pasarlo al modelo, de forma agnóstica al proveedor, preservando las partes relevantes y descartando ruido.
 
-te quedas sin contexto en sesiones largas
+## Instalación rápida
 
-## Cuando NO usarlo
+Instalación según el repo (`pip`/`npm`); requiere un LLM para la condensación (o modo local si lo soporta).
 
-tus prompts ya caben holgados o la pérdida de detalle por resumen es inaceptable.
+## Casos de uso
 
-## Tipo de instalacion
+- Resumir/condensar contexto largo
+- Ganar espacio en la ventana
+- Mantener conversaciones largas dentro del límite de tokens
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| te quedas sin contexto en sesiones largas | tus prompts ya caben holgados o la pérdida de detalle por resumen es inaceptable |
 
-python, typescript, javascript, docker, postgres, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python/TypeScript
+- **Modelos / API:** Agnóstico vía variables de entorno.
+- **Etiquetas:** `automation` `llmops` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Context-Engineering](context-engineering.md) | 9.3k | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso. |
+| [codegraph](codegraph.md) | 77.3k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
 
-- `context-engineering`
-- `codegraph`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom)
+- 🌐 Web: <https://docs.headroomlabs.ai/docs>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con context-engineering, codegraph cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si te quedas sin contexto en sesiones largas. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,61 +1,69 @@
-# remotion-superpowers
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Video programático y con agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎞️ Remotion Superpowers
 
-## Decision
+> Plugin que convierte Remotion en un estudio de video para Claude Code, Codex o Gemini CLI.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 164 | MIT | Shell | 2026-10-29 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-A free, open-source Claude Code plugin that turns Remotion into a full video production studio — by Dojo Coding.
+## Qué es
 
-## Que problema resuelve
+Añade locución con IA, música, footage de stock e imágenes para producir videos en código.
 
-quieres 🎬 remotion superpowers v2.1
+## Por qué destaca
 
-## Por que tiene valor
+Lleva a Remotion las piezas que faltan para producir de principio a fin.
 
-Aporta valor en `platform` para javascript, multimedia, python, react, typescript, whisper. Stack declarado: python, typescript, javascript, react, whisper.
+## Cómo funciona
 
-## Cuando usarlo
+Skills que integran servicios de voz, música y medios con proyectos Remotion.
 
-quieres 🎬 remotion superpowers v2.1
+## Instalación rápida
 
-## Cuando NO usarlo
+Instálalo como plugin de Claude Code o copia las skills siguiendo el README.
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+## Casos de uso
 
-## Tipo de instalacion
+- Videos promocionales con locución
+- Reels generados por código
+- Explicativos animados
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| usas Remotion con un agente y quieres producción completa | no usas Remotion |
 
-python, typescript, javascript, react, whisper
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Shell, Markdown
+- **Modelos / API:** Usa el modelo de tu agente y servicios de voz.
+- **Etiquetas:** `video` `skills` `coding-agent`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [remotion](remotion.md) | 72.2k | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
+| [Remotion Agent Skills](skills-remotion.md) | 6.8k | Skills oficiales de Remotion para que tu agente de código cree videos con React. |
 
-- `fluxer`
-- `whisper`
-- `faster-whisper`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [OpenMontage](openmontage.md) | — | Convierte tu agente de código en un estudio de producción de video completo. |
+| [video-use](video-use.md) | 30.8k | Herramienta para editar videos con agentes de código como Claude Code, de los creadores de browser-use. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [DojoCodingLabs/remotion-superpowers](https://github.com/DojoCodingLabs/remotion-superpowers)
+- 🌐 Web: <https://github.com/DojoCodingLabs/remotion-superpowers>
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+---
 
-## Ideas profesionales
-
-Combinar con fluxer, whisper, faster-whisper cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si quieres 🎬 remotion superpowers v2.1. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

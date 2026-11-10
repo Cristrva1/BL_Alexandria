@@ -1,61 +1,62 @@
-# defending-code-reference-harness
+[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Calidad, seguridad y benchmarks de código
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🛡️ Defending Code Reference Harness
 
-## Decision
+> Arnés de referencia de Anthropic con skills para modelar amenazas, escanear, priorizar y parchear vulnerabilidades.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 7.7k | Otra (ver repo) | Python | 2026-08-06 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
-A reference implementation for autonomous vulnerability discovery and remediation with Claude, based on our learnings from partnering with security teams at several organizations since launching Claude Mythos Preview. For a write up of these learnings along with best practices, see the accompanying blog post (also avail.
+## Qué es
 
-## Que problema resuelve
+Implementación de referencia para descubrir y corregir vulnerabilidades de forma autónoma con Claude, basada en experiencia con equipos de seguridad.
 
-quieres defending code reference harness
+## Por qué destaca
 
-## Por que tiene valor
+Recoge prácticas reales de seguridad con agentes; personalizable con /customize.
 
-Aporta valor en `library` para automation, docker, python, typescript. Stack declarado: python, typescript, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Skills de Claude Code encadenan modelado de amenazas, escaneo, triaje y parcheo en un bucle autónomo.
 
-quieres defending code reference harness
+## Instalación rápida
 
-## Cuando NO usarlo
+Clona el repo y usa las skills en Claude Code siguiendo el README.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Auditoría de seguridad con agentes
+- Triaje de hallazgos de escáneres
+- Parches automáticos revisables
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres un flujo de seguridad con agentes probado | solo necesitas un escáner estático; mira `semgrep` |
 
-python, typescript, docker
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, Markdown
+- **Modelos / API:** Claude.
+- **Etiquetas:** `security` `skills` `coding-agent`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Semgrep](semgrep.md) | 17.6k | Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. |
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [anthropics/defending-code-reference-harness](https://github.com/anthropics/defending-code-reference-harness)
+- 🌐 Web: <https://claude.com/blog/using-llms-to-secure-source-code>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres defending code reference harness. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
