@@ -1,60 +1,65 @@
-# chatwoot
+[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › CRM, ERP y soporte al cliente
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 💬 chatwoot
 
-## Decision
+> Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada.
 
-USAR AHORA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 39.5k | Otra (ver repo) | Ruby | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
-The modern customer support platform, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc.
+## Qué es
 
-## Que problema resuelve
+Resuelve la primitiva de "bandeja omnicanal con handoff humano" como alternativa a Intercom/Zendesk.
 
-das soporte por varios canales y necesitas handoff humano
+## Por qué destaca
 
-## Por que tiene valor
+Es una de las alternativas open-source más populares a Intercom/Zendesk, valorada por centralizar el soporte multicanal con handoff humano y asignación de tickets. Su comunidad activa y su integración con canales la hacen apta para producción.
 
-Aporta valor en `library` para automation, docker, javascript, javascript-typescript, typescript. Stack declarado: javascript/typescript, typescript, javascript, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Centraliza conversaciones por canal en una bandeja con tickets y agentes, sobre un stack Ruby on Rails con PostgreSQL y Redis para tiempo real. Los agentes responden desde un panel unificado y los bots pueden intervenir antes del handoff.
 
-das soporte por varios canales y necesitas handoff humano
+## Instalación rápida
 
-## Cuando NO usarlo
+Vía `docker compose` con la imagen oficial, o instalación manual del stack Rails; requiere PostgreSQL y Redis.
 
-solo necesitas enviar mensajes salientes ([evolution-api](#-evolution-api)).
+## Casos de uso
 
-## Tipo de instalacion
+- Centralizar WhatsApp/web/correo en un panel
+- Tickets y agentes con handoff bot→humano
+- Soporte multicanal para una agencia
 
-docker_local
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| das soporte por varios canales y necesitas handoff humano | solo necesitas enviar mensajes salientes (evolution-api) |
 
-javascript/typescript, typescript, javascript, docker
+**Limitaciones:** Self-host con varios componentes (app, worker, Redis, Postgres); el setup y las actualizaciones corren por tu cuenta.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Ruby on Rails, Vue.js, PostgreSQL, Redis, Docker
+- **Modelos / API:** Integración externa de IA vía webhooks.
+- **Etiquetas:** `automation` `crm` `ruby` `docker`
+- **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
-## Con que se combina
+## Combina con
 
-- `evolution-api`
-- `novu`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [evolution-api](evolution-api.md) | 10.1k | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. |
+| [novu](novu.md) | 40.3k | Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [chatwoot/chatwoot](https://github.com/chatwoot/chatwoot)
+- 🌐 Web: <https://www.chatwoot.com/help-center>
+- 🧪 Receta: [Bot de WhatsApp con IA](../playbooks/bot-de-whatsapp-con-ia.md)
 
-## Riesgos
+---
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con evolution-api, novu cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: usar ahora. Tiene sentido si das soporte por varios canales y necesitas handoff humano. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

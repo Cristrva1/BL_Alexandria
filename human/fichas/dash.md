@@ -1,60 +1,62 @@
-# dash
+[🏠 Inicio](../README.md) › [📊 Analítica & Visualización](../categorias/10-anal-tica-visualizaci-n.md) › Apps de datos en Python
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧮 dash
 
-## Decision
+> Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con componentes de UI reactivos.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 24.5k | MIT | Python | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-Dash is the most downloaded, trusted Python framework for building ML & data science web apps*.
+## Qué es
 
-## Que problema resuelve
+Cubre el caso de dashboards productivos en Python sin salir del lenguaje.
 
-quieres dashboards productivos en Python con control del frontend
+## Por qué destaca
 
-## Por que tiene valor
+Estándar de facto para dashboards productivos en Python, respaldado por Plotly y muy usado en entornos científicos y empresariales. Su modelo de callbacks sobre Flask da control fino del frontend sin JS.
 
-Aporta valor en `platform` para automation, javascript, postgres, python, react, typescript. Stack declarado: python, typescript, javascript, react, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Declaras el layout y callbacks en Python sobre un servidor Flask, y renderiza gráficos interactivos con Plotly.js en el navegador, respondiendo a los inputs del usuario.
 
-quieres dashboards productivos en Python con control del frontend
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install dash`. Requiere Python y, para producción, un servidor WSGI (gunicorn/uwsgi).
 
-prefieres prototipos ultrarrápidos ([streamlit](#-streamlit)).
+## Casos de uso
 
-## Tipo de instalacion
+- Dashboard interno de campañas/telemetría
+- Paneles con Plotly y controles reactivos
+- Apps de datos productivas en Python
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres dashboards productivos en Python con control del frontend | prefieres prototipos ultrarrápidos (streamlit) |
 
-python, typescript, javascript, react, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, Plotly, Flask, web
+- **Modelos / API:** Consume resultados de pipelines IA.
+- **Etiquetas:** `automation` `ui` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [streamlit](streamlit.md) | 46.3k | Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS. |
+| [echarts](echarts.md) | 67.7k | Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos. |
 
-- `streamlit`
-- `echarts`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [plotly/dash](https://github.com/plotly/dash)
+- 🌐 Web: <https://plotly.com/dash>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con streamlit, echarts cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres dashboards productivos en Python con control del frontend. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

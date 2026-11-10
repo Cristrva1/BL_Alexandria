@@ -1,60 +1,62 @@
-# Context-Engineering
+[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Guías, cursos y cookbooks
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧩 Context-Engineering
 
-## Decision
+> Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 9.3k | MIT | Python | 2026-02-27 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-> "Context engineering is the delicate art and science of filling the context window with just the right information for the next step." — Andrej Karpathy.
+## Qué es
 
-## Que problema resuelve
+Resuelve la primitiva de "qué meto en el prompt" de forma sistemática.
 
-quieres profundizar en contexto y RAG
+## Por qué destaca
 
-## Por que tiene valor
+Aporta un marco conceptual sólido y didáctico en un tema cada vez más decisivo para el rendimiento de los agentes. Combina teoría y notebooks ejecutables, lo que lo hace útil tanto para aprender como para aplicar.
 
-Aporta valor en `runtime` para postgres, python, react, typescript. Stack declarado: python, typescript, react, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Combina lecciones en Markdown y notebooks que enseñan técnicas de selección, compresión y estructuración de contexto, de forma agnóstica al modelo. Los notebooks muestran técnicas concretas (RAG, resumen, ventanas deslizantes) reproducibles.
 
-quieres profundizar en contexto y RAG
+## Instalación rápida
 
-## Cuando NO usarlo
+Clona el repo y abre los notebooks/Markdown localmente; no requiere instalación más allá de un entorno de notebooks (Jupyter) y claves de API para los ejemplos.
 
-buscas skills ejecutables listas para copiar.
+## Casos de uso
 
-## Tipo de instalacion
+- Diseñar prompts y contexto eficientes
+- Entender límites de ventana
+- Aplicar RAG y compresión de contexto
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres profundizar en contexto y RAG | buscas skills ejecutables listas para copiar |
 
-python, typescript, react, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown/notebooks (Python)
+- **Modelos / API:** Agnóstico vía variables de entorno.
+- **Etiquetas:** `learning` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [andrej-karpathy-skills](andrej-karpathy-skills.md) | 232k | Guía de 4 principios inspirada en Andrej Karpathy para que tu agente de código responda útil y sin relleno. |
+| [headroom](headroom.md) | 79.3k | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. |
 
-- `andrej-karpathy-skills`
-- `headroom`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [jasontang-ai/Context-Engineering](https://github.com/jasontang-ai/Context-Engineering)
+- 🌐 Web: <https://deepwiki.com/davidkimai/Context-Engineering>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con andrej-karpathy-skills, headroom cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres profundizar en contexto y RAG. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

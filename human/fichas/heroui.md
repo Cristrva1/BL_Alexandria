@@ -1,60 +1,68 @@
-# heroui
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Componentes, iconos y sistemas de diseño
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🦸 heroui
 
-## Decision
+> Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 31.2k | Apache-2.0 | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-HeroUI (antes NextUI) entrega componentes React con tema. Elige esto si quieres una lib con actualizaciones; elige `ui` (shadcn) si quieres dueño del código copiado.
+## Qué es
 
-## Que problema resuelve
+Resuelve la accesibilidad seria sin renunciar a un estilado moderno.
 
-quieres calidad + accesibilidad listas
+## Por qué destaca
 
-## Por que tiene valor
+Combina accesibilidad seria (React Aria de Adobe), integración MCP para asistentes y soporte de Next.js/React 19, una mezcla poco habitual en kits de UI. Su instalación por módulos evita inflar el bundle.
 
-Aporta valor en `library` para frontend, javascript, javascript-typescript, react. Stack declarado: javascript/typescript, javascript, react.
+## Cómo funciona
 
-## Cuando usarlo
+Componentes React construidos sobre React Aria (comportamiento/accesibilidad) y estilados con Tailwind, instalables por módulos y con un plugin de Tailwind para los tokens del tema.
 
-quieres calidad + accesibilidad listas
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm i @heroui/react` y configurar el plugin de Tailwind. Requiere React 18+ y Tailwind.
 
-quieres control copy-paste del código ([ui](#-ui-shadcn)).
+## Casos de uso
 
-## Tipo de instalacion
+- Dashboards, SaaS o landings accesibles y consistentes
+- Base de UI con accesibilidad out-of-the-box
+- Integración con asistentes vía MCP
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres calidad + accesibilidad listas | quieres control copy-paste del código (ui) |
 
-javascript/typescript, javascript, react
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Node.js, React, Tailwind
+- **Modelos / API:** Tooling MCP/asistentes.
+- **Etiquetas:** `ui` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [tailwindcss](tailwindcss.md) | 98.7k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
+| [swr](swr.md) | 32.5k | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. |
 
-- `tailwindcss`
-- `swr`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Material UI](mui.md) | 99.3k | Librería de componentes React completa que implementa Material Design de Google. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [heroui-inc/heroui](https://github.com/heroui-inc/heroui)
+- 🌐 Web: <https://heroui.com>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con tailwindcss, swr cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres calidad + accesibilidad listas. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

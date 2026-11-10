@@ -1,61 +1,65 @@
-# mautic
+[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Email, marketing y notificaciones
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📣 mautic
 
-## Decision
+> Plataforma open-source de marketing automation y segmentación de audiencias, alternativa soberana a suites comerciales como HubSpot o Marketo.
 
-USAR AHORA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 11k | Otra (ver repo) | PHP | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
-Open Source Marketing Automation Software.
+## Qué es
 
-## Que problema resuelve
+Resuelve la primitiva de "nutrir leads por email con reglas" sin ceder tus datos a un SaaS.
 
-necesitas automatización de marketing seria y soberana
+## Por qué destaca
 
-## Por que tiene valor
+Es la solución de marketing automation open-source más conocida y madura, respaldada por la Fundación Mautic y una comunidad amplia. Su madurez la hace apta para operaciones de marketing reales, no solo prototipos.
 
-Aporta valor en `platform` para automation, javascript, javascript-typescript, postgres, python, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Ejecuta campañas, scoring de leads y nurturing por email mediante reglas y segmentos, sobre una aplicación PHP/Symfony con base de datos MySQL. Las campañas se definen como secuencias de pasos condicionales que disparan emails o acciones.
 
-necesitas automatización de marketing seria y soberana
+## Instalación rápida
 
-## Cuando NO usarlo
+Vía `docker compose` o instalación PHP/MySQL tradicional sobre un servidor web; requiere MySQL y un MTA o servicio SMTP para los envíos.
 
-te basta una newsletter simple ([listmonk](#-listmonk)).
+## Casos de uso
 
-## Tipo de instalacion
+- Nurturing por email
+- Campañas segmentadas y scoring de leads
+- Base de datos de audiencia soberana para tu agencia
 
-docker_local
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| necesitas automatización de marketing seria y soberana | te basta una newsletter simple (listmonk) |
 
-javascript/typescript, python, typescript, javascript, postgres
+**Limitaciones:** Setup PHP/MySQL pesado y mantenimiento exigente; la curva de configuración de campañas no es trivial.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** PHP/Symfony, MySQL, self-host
+- **Modelos / API:** No nativa; complementa flujos de contenido IA.
+- **Etiquetas:** `automation` `email` `php`
+- **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
-## Con que se combina
+## Combina con
 
-- `listmonk`
-- `marketingskills`
-- `marketing de agencia`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [listmonk](listmonk.md) | 24.2k | Gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depender de un SaaS. |
+| [Marketing Skills](marketingskills.md) | 59.5k | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [mautic/mautic](https://github.com/mautic/mautic)
+- 🌐 Web: <https://www.mautic.org>
+- 🧪 Receta: [Marketing de agencia](../playbooks/marketing-de-agencia.md)
 
-## Riesgos
+---
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con listmonk, marketingskills, marketing de agencia cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: usar ahora. Tiene sentido si necesitas automatización de marketing seria y soberana. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

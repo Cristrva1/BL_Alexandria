@@ -1,59 +1,63 @@
-# MiroFish
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Simulación, evolución y debate entre modelos
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🐟 MiroFish
 
-## Decision
+> Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 85.1k | AGPL-3.0 | Python | 2026-10-16 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
-A Simple and Universal Swarm Intelligence Engine, Predicting Anything.
+## Qué es
 
-## Que problema resuelve
+Permite simular dinámicas sociales en un "sandbox". Proyecto de nicho.
 
-simulas futuros/escenarios con muchos actores
+## Por qué destaca
 
-## Por que tiene valor
+Simula futuros con agentes que tienen personalidad, memoria y lógica que evolucionan, ofreciendo una "vista de dios" del escenario. El enfoque de simulación multiagente lo distingue de los frameworks orientados a tareas.
 
-Aporta valor en `runtime` para docker, javascript, javascript-typescript, postgres, python, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Según lo descrito, instancia muchos agentes con perfiles y memoria que interactúan en un mundo simulado para estimar resultados; pila Python/web con persistencia.
 
-simulas futuros/escenarios con muchos actores
+## Instalación rápida
 
-## Cuando NO usarlo
+Consulta el README del repo (`git clone` y ejecución en Python). Requiere claves de LLM para los agentes y cómputo no trivial para simulaciones grandes (de ahí el setup 🔴).
 
-necesitas tareas deterministas o resultados reproducibles.
+## Casos de uso
 
-## Tipo de instalacion
+- Simular impacto de una noticia/política
+- Predecir tendencias en un "sandbox" social
+- What-if sobre escenarios con muchos actores
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| simulas futuros/escenarios con muchos actores | necesitas tareas deterministas o resultados reproducibles |
 
-javascript/typescript, python, typescript, javascript, docker, postgres
+**Limitaciones:** Proyecto de nicho, coste de LLM alto por la cantidad de agentes y resultados no deterministas.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python/web, Docker, PostgreSQL
+- **Modelos / API:** Múltiples; agnóstico vía variables de entorno.
+- **Etiquetas:** `agents` `python`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `openevolve`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [openevolve](openevolve.md) | 7.8k | Agente de codificación evolutivo que optimiza algoritmos por simulación genética. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [666ghj/MiroFish](https://github.com/666ghj/MiroFish)
+- 🌐 Web: <https://mirofish.ai>
 
-## Riesgos
+---
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con openevolve cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si simulas futuros/escenarios con muchos actores. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

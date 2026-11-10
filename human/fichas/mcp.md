@@ -1,60 +1,61 @@
-# mcp
+[🏠 Inicio](../README.md) › [🔌 MCP & Conectividad](../categorias/05-mcp-conectividad.md) › Directorios, clientes y aprendizaje
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧩 mcp
 
-## Decision
+> Núcleo del Model Context Protocol (spec y SDKs oficiales) para que herramientas, datos y clientes de IA interoperen bajo un mismo estándar abierto.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 4.7k | Apache-2.0 | — | 2026-08-17 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
-This repository contains a list of Google's official Model Context Protocol (MCP) servers, guidance on how to deploy MCP servers to Google Cloud, and examples to get started.
+## Qué es
 
-## Que problema resuelve
+Resuelve la fragmentación: cada integración de IA dejaba de ser ad-hoc y pasa a hablar un protocolo común.
 
-programas MCP a bajo nivel o necesitas conformidad estricta con la spec
+## Por qué destaca
 
-## Por que tiene valor
+Es el protocolo de referencia del ecosistema, adoptado por Claude, Cursor, ChatGPT y muchos otros clientes, lo que lo convierte en la base sobre la que se construye todo lo demás. Su respaldo por Anthropic y la gobernanza abierta le dan tracción real frente a alternativas propietarias.
 
-Aporta valor en `directory` para mcp, postgres, typescript. Stack declarado: typescript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Define el protocolo MCP (mensajes JSON-RPC 2.0 entre cliente y servidor sobre stdio o HTTP/SSE) y ofrece SDKs en TypeScript y Python para implementar servidores que exponen tools, resources y prompts conformes.
 
-programas MCP a bajo nivel o necesitas conformidad estricta con la spec
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm install @modelcontextprotocol/sdk` o `pip install mcp` según el lenguaje; requiere un cliente MCP (Claude Desktop, Cursor, etc.) para conectar.
 
-prefieres un framework de alto nivel que abstraiga el protocolo ([mcp-use](#-mcp-use)).
+## Casos de uso
 
-## Tipo de instalacion
+- Base de interoperabilidad para tu app de IA
+- Construir servidores/clientes conforme al estándar
+- Exponer herramientas internas a cualquier asistente compatible
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| programas MCP a bajo nivel o necesitas conformidad estricta con la spec | prefieres un framework de alto nivel que abstraiga el protocolo (mcp-use) |
 
-typescript, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** TypeScript/Python
+- **Modelos / API:** Clientes MCP (Claude, Cursor, ChatGPT); agnóstico respecto al LLM.
+- **Etiquetas:** `mcp`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [mcp-use](mcp-use.md) | 10.9k | Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable. |
+| [servers](servers.md) | 91.9k | Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad. |
 
-- `mcp-use`
-- `servers`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [google/mcp](https://github.com/google/mcp)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con mcp-use, servers cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si programas MCP a bajo nivel o necesitas conformidad estricta con la spec. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,60 +1,64 @@
-# twenty-main
+[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › CRM, ERP y soporte al cliente
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 👥 twenty-main
 
-## Decision
+> CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 60.7k | Otra (ver repo) | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
-Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack.
+## Qué es
 
-## Que problema resuelve
+La premisa es tratar el CRM como una pieza más de tu stack: lo construyes, lo despliegas y lo versionas igual que el código.
 
-quieres un CRM que se adapte 1:1 a tu negocio y vivir en self-host
+## Por qué destaca
 
-## Por que tiene valor
+Combina una UI cuidada con un modelo de datos totalmente personalizable, lo que evita el "molde" rígido de los CRM SaaS. Su enfoque "construye tu propio CRM" y su comunidad activa lo han vuelto una de las opciones open-source de referencia para este caso.
 
-Aporta valor en `runtime` para automation, docker, javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Una arquitectura dirigida por metadatos describe objetos, campos y relaciones que se materializan en PostgreSQL; el backend en NestJS expone una API (GraphQL/REST) que consume un frontend en React. Todo corre en contenedores para reproducir el entorno.
 
-quieres un CRM que se adapte 1:1 a tu negocio y vivir en self-host
+## Instalación rápida
 
-## Cuando NO usarlo
+La vía soportada es `docker compose` con la imagen oficial (levanta app, base de datos y worker); también puedes clonar el repo y arrancar los servicios con el stack Node/PostgreSQL para desarrollo. Requiere PostgreSQL y recursos no triviales (de ahí el setup 🔴).
 
-buscas algo plug-and-play gestionado o no quieres operar PostgreSQL y Docker.
+## Casos de uso
 
-## Tipo de instalacion
+- Pipelines de venta versionados como código
+- Panel a medida con objetos/campos propios
+- Base de datos de clientes integrada con tus automatizaciones
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres un CRM que se adapte 1:1 a tu negocio y vivir en self-host | buscas algo plug-and-play gestionado o no quieres operar PostgreSQL y Docker |
 
-javascript/typescript, typescript, javascript, react, docker, postgres
+**Limitaciones:** Self-host con setup pesado; necesitas mantener la base de datos y las actualizaciones tú mismo.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** TypeScript, React, NestJS, PostgreSQL, Docker
+- **Modelos / API:** No requiere LLM; opcionalmente, plugins de Claude Code/Codex permiten consultar el CRM en lenguaje natural.
+- **Etiquetas:** `automation` `crm` `typescript` `docker`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `evolution-api`
-- `n8n`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [evolution-api](evolution-api.md) | 10.1k | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. |
+| [n8n](n8n.md) | 210k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [twentyhq/twenty](https://github.com/twentyhq/twenty)
+- 🌐 Web: <https://twenty.com>
 
-## Riesgos
+---
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con evolution-api, n8n cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres un CRM que se adapte 1:1 a tu negocio y vivir en self-host. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

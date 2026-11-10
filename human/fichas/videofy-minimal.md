@@ -1,60 +1,69 @@
-# videofy_minimal
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Video programático y con agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📲 videofy_minimal
 
-## Decision
+> Herramienta minimalista (de Schibsted) que convierte contenido textual en videos cortos de forma local, sin pipeline complejo.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 656 | Apache-2.0 | TypeScript | 2026-03-13 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-Videofy Minimal is a local tool for turning news articles into short videos for digital signage screens.
+## Qué es
 
-## Que problema resuelve
+Encadena TTS/STT y montaje en un solo flujo para pasar de texto a reel con lo mínimo.
 
-quieres reels simples ya, sin montar un pipeline entero
+## Por qué destaca
 
-## Por que tiene valor
+Prioriza la simplicidad para pasar de texto a reel rápido; es un proyecto pequeño y experimental, conviene revisar su estado antes de usarlo en serio.
 
-Aporta valor en `platform` para docker, fastapi, javascript, multimedia, python, react, typescript. Stack declarado: python, typescript, javascript, react, docker, fastapi.
+## Cómo funciona
 
-## Cuando usarlo
+Combina TTS/STT y un montador de video local para sincronizar narración, texto y fondos en un clip corto, orquestando los pasos sin depender de servicios externos.
 
-quieres reels simples ya, sin montar un pipeline entero
+## Instalación rápida
 
-## Cuando NO usarlo
+Clonar el repo e instalar dependencias Python/Node según el README (sin paquete publicado). Requiere los modelos TTS/STT que el proyecto utilice.
 
-necesitas variantes programáticas a escala ([remotion](#-remotion)) o control fino por código ([moviepy](#-moviepy)).
+## Casos de uso
 
-## Tipo de instalacion
+- Transformar noticias/contenido en reels
+- Video corto rápido sin pipeline complejo
+- Prototipos de texto-a-video local
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres reels simples ya, sin montar un pipeline entero | necesitas variantes programáticas a escala (remotion) o control fino por código (moviepy) |
 
-python, typescript, javascript, react, docker, fastapi
+**Limitaciones:** Proyecto pequeño y experimental; valida mantenimiento y calidad antes de depender de él.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python/Node
+- **Modelos / API:** Local + TTS/STT.
+- **Etiquetas:** `video` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `whisper`
-- `supertonic`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [whisper](whisper.md) | 112k | Modelo de reconocimiento de voz y traducción de audio multilingüe de OpenAI, estándar de la industria que transcribe casi cualquier idioma con un solo modelo. |
+| [supertonic](supertonic.md) | 13.8k | Motor TTS multilingüe ultrarrápido de Supertone que sintetiza voz directamente en el dispositivo, incluso en el navegador vía WebGPU. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [MoneyPrinterTurbo](moneyprinterturbo.md) | 142k | App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso. |
 
-## Riesgos
+## Enlaces
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+- 🐙 GitHub: [schibsted/videofy_minimal](https://github.com/schibsted/videofy_minimal)
 
-## Ideas profesionales
+---
 
-Combinar con whisper, supertonic cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres reels simples ya, sin montar un pipeline entero. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

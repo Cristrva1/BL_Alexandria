@@ -1,60 +1,63 @@
-# listmonk
+[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Email, marketing y notificaciones
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📬 listmonk
 
-## Decision
+> Gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depender de un SaaS.
 
-USAR AHORA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 24.2k | AGPL-3.0 | Go | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL database as its data store.
+## Qué es
 
-## Que problema resuelve
+Resuelve la primitiva de "enviar email a miles de suscriptores" con un footprint mínimo.
 
-quieres email marketing simple, rápido y propio
+## Por qué destaca
 
-## Por que tiene valor
+Muy popular por su rapidez y su single-binary en Go, es una opción ligera y soberana muy recomendada para email masivo. Su simplicidad de despliegue contrasta con stacks más pesados como mautic.
 
-Aporta valor en `directory` para automation, docker, postgres, typescript. Stack declarado: typescript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Gestiona listas, suscriptores y campañas desde un panel y envía vía SMTP, sobre un binario único en Go con base de datos PostgreSQL. Soporta plantillas, segmentación básica y envíos programados.
 
-quieres email marketing simple, rápido y propio
+## Instalación rápida
 
-## Cuando NO usarlo
+Vía `docker compose` o descargando el binario único de Go y apuntándolo a PostgreSQL; requiere un servidor SMTP (o servicio como SES) para los envíos.
 
-necesitas nurturing avanzado o scoring de leads ([mautic](#-mautic)).
+## Casos de uso
 
-## Tipo de instalacion
+- Newsletter propia para leads
+- Campañas de email desde workflows
+- Envíos transaccionales a alta velocidad
 
-docker_local
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres email marketing simple, rápido y propio | necesitas nurturing avanzado o scoring de leads (mautic) |
 
-typescript, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Go, PostgreSQL, self-host
+- **Modelos / API:** No nativa; integrable con generadores de contenido.
+- **Etiquetas:** `automation` `email` `go` `docker`
+- **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [mautic](mautic.md) | 11k | Plataforma open-source de marketing automation y segmentación de audiencias, alternativa soberana a suites comerciales como HubSpot o Marketo. |
+| [n8n](n8n.md) | 210k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
-- `mautic`
-- `n8n`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [knadh/listmonk](https://github.com/knadh/listmonk)
+- 🌐 Web: <https://listmonk.app>
+- 🧪 Receta: [Marketing de agencia](../playbooks/marketing-de-agencia.md)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con mautic, n8n cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: usar ahora. Tiene sentido si quieres email marketing simple, rápido y propio. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

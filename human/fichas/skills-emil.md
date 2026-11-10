@@ -1,60 +1,61 @@
-# skills_emil
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Skills de diseño para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# ✏️ skills_emil
 
-## Decision
+> Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrollador (design engineering).
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 55.6k | MIT | Markdown | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-For designers and engineers to help them build better user interfaces.
+## Qué es
 
-## Que problema resuelve
+Resuelve el handoff diseño↔código, no solo la estética final.
 
-trabajas diseño+dev en equipo y sufres el handoff
+## Por qué destaca
 
-## Por que tiene valor
+Pone el foco en la traducción de diseño a implementación (tokens, consistencia, decisiones compartidas), un ángulo menos cubierto por otras skills de UI que miran solo el resultado visual.
 
-Aporta valor en `skill` para frontend, skills, typescript. Stack declarado: typescript.
+## Cómo funciona
 
-## Cuando usarlo
+Se entrega como un `SKILL.md` (skill `emil-design-eng`) que el asistente carga para guiar decisiones de diseño-implementación: estructura de componentes, naming, tokens y patrones coherentes entre Figma y código.
 
-trabajas diseño+dev en equipo y sufres el handoff
+## Instalación rápida
 
-## Cuando NO usarlo
+Copia el `SKILL.md` al directorio de skills de tu asistente (Claude Code, Codex, Cursor); es referencia local del autor, así que consulta la fuente original para la versión más reciente.
 
-buscas componentes listos o trabajas solo.
+## Casos de uso
 
-## Tipo de instalacion
+- Mejorar el handoff diseño↔ingeniería
+- Resultados UI más consistentes entre Figma y código
+- Alinear naming y tokens en un equipo
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| trabajas diseño+dev en equipo y sufres el handoff | buscas componentes listos o trabajas solo |
 
-typescript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown (skills), TypeScript/React
+- **Modelos / API:** Agnóstico; cualquier asistente que cargue skills.
+- **Etiquetas:** `skills` `design`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) | 148k | Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla". |
 
-- `design.md`
-- `ui-ux-pro-max-skill`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [emilkowalski/skills](https://github.com/emilkowalski/skills)
+- 🌐 Web: <https://emilkowal.ski/skill>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con design.md, ui-ux-pro-max-skill cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si trabajas diseño+dev en equipo y sufres el handoff. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

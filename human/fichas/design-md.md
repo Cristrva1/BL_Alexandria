@@ -1,60 +1,61 @@
-# design.md
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Skills de diseño para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📐 design.md
 
-## Decision
+> Formato para describir una identidad visual a agentes de código con tokens YAML y prosa.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 28.8k | Apache-2.0 | TypeScript | 2026-11-06 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.
+## Qué es
 
-## Que problema resuelve
+Resuelve la inconsistencia de marca cuando varias personas o agentes tocan la UI.
 
-quieres consistencia de marca con IA y usas agentes para UI
+## Por qué destaca
 
-## Por que tiene valor
+Propuesta de Google Labs que aporta no solo los valores sino el "por qué" y cómo aplicarlos, algo que un simple archivo de tokens no transmite. Al ser un formato declarativo, funciona con cualquier agente que lea Markdown.
 
-Aporta valor en `directory` para frontend, javascript, javascript-typescript, typescript. Stack declarado: javascript/typescript, typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Archivo Markdown/YAML que el agente lee como contexto persistente, combinando tokens de diseño (color, tipografía, espaciado) con guías en prosa sobre cuándo usarlos.
 
-quieres consistencia de marca con IA y usas agentes para UI
+## Instalación rápida
 
-## Cuando NO usarlo
+Crear un `design.md` en el repo siguiendo el formato (sin dependencias). Solo necesitas un agente de código que lo cargue como contexto.
 
-no usas agentes para generar código de UI.
+## Casos de uso
 
-## Tipo de instalacion
+- Dar al agente un sistema de diseño persistente
+- Mantener coherencia de marca entre varios contribuyentes
+- Onboarding rápido de estilo para nuevos agentes
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres consistencia de marca con IA y usas agentes para UI | no usas agentes para generar código de UI |
 
-javascript/typescript, typescript, javascript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown/YAML
+- **Modelos / API:** Agentes de código (Claude Code, Cursor, etc.).
+- **Etiquetas:** `skills` `design` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [impeccable](impeccable.md) | 107k | Guía de diseño para agentes de código (1 skill, 23 comandos, iteración en browser y 44 detectores de "tells" de UI por IA) que empuja al agente hacia frontends con criterio. |
 
-- `impeccable`
-- `skills-emil`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [google-labs-code/design.md](https://github.com/google-labs-code/design.md)
+- 🌐 Web: <https://stitch.withgoogle.com/docs/design-md/specification>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con impeccable, skills-emil cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres consistencia de marca con IA y usas agentes para UI. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

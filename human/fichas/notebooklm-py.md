@@ -1,59 +1,63 @@
-# notebooklm-py
+[🏠 Inicio](../README.md) › [🏠 IA Local: Modelos, Chats & Workspaces](../categorias/08-ia-local-modelos-chats-workspaces.md) › NotebookLM: alternativas y clientes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎙️ notebooklm-py
 
-## Decision
+> API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 20.2k | MIT | Python | 2026-11-08 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-A Comprehensive NotebookLM Skill & Unofficial Python API. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.
+## Qué es
 
-## Que problema resuelve
+Cubre el vacío de automatización que la interfaz web oficial no ofrece.
 
-automatizas el NotebookLM real y aceptas el riesgo de API no oficial
+## Por qué destaca
 
-## Por que tiene valor
+Abre el NotebookLM real a la automatización, algo que la interfaz web oficial no permite, útil para procesar fuentes a escala. Se instala como un paquete pip y expone una API síncrona clara.
 
-Aporta valor en `skill` para fastapi, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, postgres, fastapi.
+## Cómo funciona
 
-## Cuando usarlo
+Envuelve los endpoints internos de NotebookLM en una librería Python que sube fuentes y dispara síntesis usando tu sesión/credenciales de Google (no hay API pública oficial).
 
-automatizas el NotebookLM real y aceptas el riesgo de API no oficial
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install` de la librería más configuración de credenciales de Google (cookies de sesión o auth no oficial).
 
-quieres todo local ([open-notebook](#-open-notebook)).
+## Casos de uso
 
-## Tipo de instalacion
+- Subir 20 PDFs y pedir una síntesis temática
+- Automatizar generación de notas de audio en lote
+- Volcar fuentes a un notebook desde un pipeline
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| automatizas el NotebookLM real y aceptas el riesgo de API no oficial | quieres todo local (open-notebook) |
 
-python, typescript, javascript, postgres, fastapi
+**Limitaciones:** Usa endpoints internos no oficiales de Google; puede romper ante cambios de la web y depende de credenciales de sesión válidas.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python
+- **Modelos / API:** NotebookLM/Google (Gemini Pro/Ultra).
+- **Etiquetas:** `notebooks` `research` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `notebooklm-mcp-cli`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [notebooklm-mcp-cli](notebooklm-mcp-cli.md) | 6.5k | CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde terminal o desde clientes compatibles con MCP. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [teng-lin/notebooklm-py](https://github.com/teng-lin/notebooklm-py)
+- 🌐 Web: <https://github.com/teng-lin/notebooklm-py>
 
-## Riesgos
+---
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con notebooklm-mcp-cli cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si automatizas el NotebookLM real y aceptas el riesgo de API no oficial. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

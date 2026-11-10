@@ -1,61 +1,70 @@
-# codegraph
+[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Entender y empaquetar código para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📊 codegraph
 
-## Decision
+> CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 77.3k | MIT | TypeScript | 2026-11-01 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
-CodeGraph construye un grafo del codebase para que un agente navegue símbolos y dependencias sin leer el repo entero.
+## Qué es
 
-## Que problema resuelve
+Resuelve el coste de contexto de los agentes en repos grandes.
 
-trabajas repos grandes y el contexto del agente es caro
+## Por qué destaca
 
-## Por que tiene valor
+Convierte repos enormes en algo navegable para la IA con coste casi nulo; muy valorado en flujos de agentes de código por su ahorro real de tokens y tool calls. Su acoplamiento con Claude Code, Gemini y Cursor sin modelo propio lo hace fácil de adoptar.
 
-Aporta valor en `library` para fastapi, javascript, javascript-typescript, postgres, python, react, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, react, postgres, fastapi.
+## Cómo funciona
 
-## Cuando usarlo
+Construye un índice semántico local del repositorio (símbolos, referencias, flujo) que el asistente consulta vía comandos; se acopla a Claude Code, Gemini y Cursor sin necesidad de un modelo propio ni de enviar código a la nube.
 
-trabajas repos grandes y el contexto del agente es caro
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm install -g codegraph` (binario autónomo de Node.js) y luego `codegraph index .`. Requiere Node.js; el índice se regenera al cambiar el código.
 
-tu base de código es pequeña y no justifica mantener un índice.
+## Casos de uso
 
-## Tipo de instalacion
+- `codegraph index .` para que el asistente entienda el flujo sin leer archivo por archivo
+- Onboarding de IA en monorepos grandes
+- Reducir tool calls en revisiones de código
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| trabajas repos grandes y el contexto del agente es caro | tu base de código es pequeña y no justifica mantener un índice |
 
-javascript/typescript, python, typescript, javascript, react, postgres, fastapi
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** JavaScript/Node.js (binario autónomo)
+- **Modelos / API:** No requiere IA; se acopla a Claude Code, Gemini, Cursor.
+- **Etiquetas:** `code` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [graphify](graphify.md) | 145k | Generador de grafos de conocimiento que mapea código, PDFs, imágenes y video en diagramas interactivos. |
+| [headroom](headroom.md) | 79.3k | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. |
 
-- `graphify`
-- `headroom`
-- `análisis de repos`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [codebase-memory-mcp](codebase-memory-mcp.md) | 48.4k | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. |
+| [Serena](serena.md) | 31.3k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)
+- 🌐 Web: <https://colbymchenry.github.io/codegraph/>
+- 🧪 Receta: [Análisis de repos grandes](../playbooks/analisis-de-repos-grandes.md)
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con graphify, headroom, análisis de repos cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si trabajas repos grandes y el contexto del agente es caro. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,61 +1,69 @@
-# codebase-memory-mcp
+[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Entender y empaquetar código para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧬 codebase-memory-mcp
 
-## Decision
+> Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 48.4k | MIT | C | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-The fastest and most efficient code intelligence engine for AI coding agents. Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for macOS, Linux, and Windows — download, run `install`, done.
+## Qué es
 
-## Que problema resuelve
+Indexa repos en milisegundos y da al agente herramientas MCP para entender arquitectura, dependencias y cambios sin leer archivo por archivo.
 
-quieres codebase-memory-mcp
+## Por qué destaca
 
-## Por que tiene valor
+Indexación muy rápida incluso en repos enormes.
 
-Aporta valor en `runtime` para automation, docker, javascript, mcp, python, typescript. Stack declarado: python, typescript, javascript, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Parsea el código a un grafo persistente local y lo expone por MCP e interfaces propias.
 
-quieres codebase-memory-mcp
+## Instalación rápida
 
-## Cuando NO usarlo
+Descarga el binario de releases y añádelo como servidor MCP a tu agente.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Entender un repo grande con un agente
+- Analizar impacto de cambios
+- Memoria de arquitectura
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| tu agente trabaja en repos grandes | tu repo es pequeño; usa `repomix` |
 
-python, typescript, javascript, docker
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** C
+- **Modelos / API:** No usa LLM.
+- **Etiquetas:** `code` `mcp` `memory`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Serena](serena.md) | 31.3k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [codegraph](codegraph.md) | 77.3k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
+| [GitNexus](gitnexus.md) | 48.4k | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp)
+- 🌐 Web: <https://deusdata.github.io/codebase-memory-mcp/>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres codebase-memory-mcp. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

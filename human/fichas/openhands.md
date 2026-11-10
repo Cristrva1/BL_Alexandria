@@ -1,60 +1,71 @@
-# OpenHands
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Agentes de código (terminal e IDE)
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🙌 OpenHands
 
-## Decision
+> Plataforma de agentes que ejecutan acciones reales en entornos de desarrollo (ex-OpenDevin).
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 93.1k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-Run OpenHands, Claude Code, Codex, Gemini, or any ACP-compatible agent across local, remote, and cloud backends.
+## Qué es
 
-## Que problema resuelve
+El agente puede leer y editar código, correr comandos y navegar la web dentro de un sandbox.
 
-quieres un agente que "haga", no solo hable
+## Por qué destaca
 
-## Por que tiene valor
+Uno de los proyectos open-source de agentes de programación más populares, con foco en acciones reales en lugar de solo respuestas. Soporta varios runtimes (local, remoto, cloud) y agentes compatibles con ACP.
 
-Aporta valor en `platform` para agents, automation, docker, javascript, python, typescript. Stack declarado: python, typescript, javascript, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Un bucle agente-acción-observación ejecuta tareas dentro de un contenedor Docker aislado; backend en Python con UI web, y el agente opera sobre el filesystem, shell y navegador del sandbox.
 
-quieres un agente que "haga", no solo hable
+## Instalación rápida
 
-## Cuando NO usarlo
+`docker run` de la imagen oficial (o `pip install openhands-ai` para el modo CLI). Requiere Docker y una clave de proveedor de LLM.
 
-solo necesitas chat/RAG o no puedes correr Docker.
+## Casos de uso
 
-## Tipo de instalacion
+- Agente que edita código, corre comandos y navega
+- Automatizar tareas dev
+- Resolver issues end-to-end en un repo
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres un agente que "haga", no solo hable | solo necesitas chat/RAG o no puedes correr Docker |
 
-python, typescript, javascript, docker
+**Limitaciones:** El sandbox Docker consume recursos y la ejecución de código arbitrario exige cuidar el aislamiento.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python/TS, Docker
+- **Modelos / API:** OpenAI, Anthropic, Gemini, locales; agnóstico vía variables de entorno.
+- **Etiquetas:** `agents` `automation` `typescript` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `ecc`
-- `sandbox`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [ECC](ecc.md) | 300k | Sistema operativo/arnés unificado para desarrollar, ejecutar y desplegar en local agentes de IA de alto rendimiento de forma segura. |
+| [sandbox](sandbox.md) | 6.3k | Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Open SWE](open-swe.md) | 11.2k | Agente de código asíncrono de LangChain para montar tu propio agente interno de ingeniería. |
+| [SWE-agent](swe-agent.md) | 20.8k | Agente de Princeton y Stanford que toma un issue de GitHub e intenta resolverlo solo. |
 
-## Riesgos
+## Enlaces
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+- 🐙 GitHub: [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands)
+- 🌐 Web: <https://openhands.dev>
 
-## Ideas profesionales
+---
 
-Combinar con ecc, sandbox cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres un agente que "haga", no solo hable. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

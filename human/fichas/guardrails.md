@@ -1,61 +1,61 @@
-# Guardrails
+[🏠 Inicio](../README.md) › [🧬 Memoria, RAG & LLM Ops](../categorias/06-memoria-rag-llm-ops.md) › Observabilidad, evaluación y guardrails
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📡 NeMo Guardrails
 
-## Decision
+> Toolkit de NVIDIA para añadir barreras programables a sistemas conversacionales con LLM.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 7.5k | Otra (ver repo) | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-> LATEST RELEASE / DEVELOPMENT VERSION: The develop branch tracks the latest top of tree development. The latest released version is 0.21.0.
+## Qué es
 
-## Que problema resuelve
+Controla de qué puede hablar tu bot, bloquea jailbreaks y valida entradas y salidas con reglas en el lenguaje Colang.
 
-quieres nvidia nemo guardrails library
+## Por qué destaca
 
-## Por que tiene valor
+Respaldado por NVIDIA y muy flexible para políticas de conversación.
 
-Aporta valor en `platform` para automation, docker, javascript, langchain, python, react, typescript. Stack declarado: python, typescript, javascript, react, docker, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Intercepta la conversación y aplica flujos de Colang y verificaciones (moderación, hechos) antes y después del LLM.
 
-quieres nvidia nemo guardrails library
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install nemoguardrails`.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Limitar temas de un chatbot
+- Bloquear inyecciones de prompt
+- Verificar respuestas contra hechos
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| necesitas políticas de seguridad en un chatbot | solo quieres probar vulnerabilidades; mira `promptfoo` |
 
-python, typescript, javascript, react, docker, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, Colang
+- **Modelos / API:** Agnóstico.
+- **Etiquetas:** `security` `chatbot` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [langchain](langchain.md) | 149k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [NVIDIA-NeMo/Guardrails](https://github.com/NVIDIA-NeMo/Guardrails)
+- 🌐 Web: <https://docs.nvidia.com/nemo/guardrails/latest/index.html>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres nvidia nemo guardrails library. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

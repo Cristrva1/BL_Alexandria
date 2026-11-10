@@ -1,60 +1,63 @@
-# novu
+[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Email, marketing y notificaciones
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔔 novu
 
-## Decision
+> Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend.
 
-USAR AHORA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 40.3k | Otra (ver repo) | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-The open-source communication infrastructure for agents and products.
+## Qué es
 
-## Que problema resuelve
+Resuelve la primitiva de "un proveedor por canal" evitando integrar y mantener cada uno por separado.
 
-envías notificaciones por varios canales y quieres un único backend
+## Por qué destaca
 
-## Por que tiene valor
+Es el estándar open-source de referencia para notificaciones, muy adoptado por su API unificada y su inbox unificado. Su modelo de "notification workflows" abstrae el enrutamiento por canal sin acoplarte a un proveedor concreto.
 
-Aporta valor en `library` para automation, javascript, javascript-typescript, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react.
+## Cómo funciona
 
-## Cuando usarlo
+Define workflows de notificación que enrutan mensajes a distintos proveedores por canal (SendGrid, Twilio, FCM…), con un inbox unificado y plantillas, sobre un stack Node.js/TypeScript. Los proveedores se configuran por canal y se pueden intercambiar sin tocar el código de envío.
 
-envías notificaciones por varios canales y quieres un único backend
+## Instalación rápida
 
-## Cuando NO usarlo
+Vía `docker compose` para self-host, o usando su plataforma cloud; el modo local requiere MongoDB/PostgreSQL y Redis.
 
-solo necesitas email ([listmonk](#-listmonk)).
+## Casos de uso
 
-## Tipo de instalacion
+- Mensajes transaccionales y de producto desde un backend
+- Inbox unificado
+- Notificaciones multicanal con fallback de proveedor
 
-docker_local
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| envías notificaciones por varios canales y quieres un único backend | solo necesitas email (listmonk) |
 
-javascript/typescript, typescript, javascript, react
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Node.js, TypeScript, Docker
+- **Modelos / API:** Compatible con agentes/automatizaciones externas vía API REST.
+- **Etiquetas:** `automation` `email` `typescript`
+- **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [chatwoot](chatwoot.md) | 39.5k | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. |
+| [activepieces](activepieces.md) | 25.5k | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. |
 
-- `chatwoot`
-- `activepieces`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [novuhq/novu](https://github.com/novuhq/novu)
+- 🌐 Web: <https://go.novu.co/github>
+- 🧪 Receta: [Bot de WhatsApp con IA](../playbooks/bot-de-whatsapp-con-ia.md)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con chatwoot, activepieces cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: usar ahora. Tiene sentido si envías notificaciones por varios canales y quieres un único backend. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

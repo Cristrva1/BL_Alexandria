@@ -1,59 +1,60 @@
-# Youtube2Webpage
+[🏠 Inicio](../README.md) › [📄 Documentos & Presentaciones](../categorias/13-documentos-presentaciones.md) › Conversión de documentos para IA
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📄 Youtube2Webpage
 
-## Decision
+> Script en Perl que genera una página web legible a partir de un video de YouTube, intercalando la transcripción de subtítulos con capturas de pantalla del momento citado.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 1.5k | MIT | JavaScript | 2023-12-01 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-Youtube-to-Webpage is a Perl script to create a webpage from a Youtube video with a transcript generated from the video's closed captions paired with screenshots of the video.
+## Qué es
 
-## Que problema resuelve
+Convierte una charla en un artículo navegable con contexto visual.
 
-quieres video → artículo con transcripción y capturas
+## Por qué destaca
 
-## Por que tiene valor
+Automatiza el paso de charla a artículo combinando texto e imágenes sincronizadas; es una utilidad de nicho y poco conocida, pero efectiva para su propósito.
 
-Aporta valor en `library` para postgres, typescript. Stack declarado: typescript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Usa yt-dlp para descargar video y subtítulos y ffmpeg para extraer fotogramas en los timestamps relevantes, ensamblando todo en una página HTML estática con texto e imágenes alineadas.
 
-quieres video → artículo con transcripción y capturas
+## Instalación rápida
 
-## Cuando NO usarlo
+Clonar el repo y ejecutar el script Perl con yt-dlp y ffmpeg instalados en el sistema. Requiere Perl y los binarios mencionados.
 
-necesitas edición de video o el contenido no tiene subtítulos.
+## Casos de uso
 
-## Tipo de instalacion
+- Convertir una charla en artículo legible
+- Documentar video como texto+imágenes
+- Archivar contenido de YouTube como página estática
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres video → artículo con transcripción y capturas | necesitas edición de video o el contenido no tiene subtítulos |
 
-typescript, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Perl, yt-dlp, ffmpeg
+- **Modelos / API:** N/A.
+- **Etiquetas:** `docs` `javascript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [whisper](whisper.md) | 112k | Modelo de reconocimiento de voz y traducción de audio multilingüe de OpenAI, estándar de la industria que transcribe casi cualquier idioma con un solo modelo. |
 
-- `whisper`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [obra/Youtube2Webpage](https://github.com/obra/Youtube2Webpage)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con whisper cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres video → artículo con transcripción y capturas. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

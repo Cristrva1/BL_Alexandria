@@ -1,59 +1,61 @@
-# skills
+[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Metodologías y harness para agentes de código
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📦 skills
 
-## Decision
+> Colección de skills de referencia mantenida por el proyecto aihero.dev / Total TypeScript, pensada como ejemplos limpios y bien construidos.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 320k | MIT | Shell | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-My agent skills that I use every day to do real engineering - not vibe coding.
+## Qué es
 
-## Que problema resuelve
+Resuelve la primitiva de "plantilla para aprender a escribir skills" con calidad por encima de cantidad.
 
-buscas referencias limpias y didácticas
+## Por qué destaca
 
-## Por que tiene valor
+Su valor está en la claridad y el mantenimiento, sirviendo de plantilla para aprender a escribir tus propias skills. Al venir de un proyecto educativo de TypeScript, el código asociado suele ser didáctico.
 
-Aporta valor en `skill` para javascript, javascript-typescript, skills, typescript. Stack declarado: javascript/typescript, typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Cada skill es un `SKILL.md` (a veces con scripts TS asociados) que copias al directorio de skills del asistente. Algunas incluyen scripts auxiliares en TypeScript que la skill invoca.
 
-buscas referencias limpias y didácticas
+## Instalación rápida
 
-## Cuando NO usarlo
+Clona el repo y copia las skills elegidas a tu directorio de skills, o úsalas como referencia para crear las tuyas; las que tengan scripts TS requieren Node.
 
-quieres un catálogo masivo ([antigravity-awesome-skills](#-antigravity-awesome-skills)).
+## Casos de uso
 
-## Tipo de instalacion
+- Explorar ejemplos de skills bien construidas
+- Base para crear las propias
+- Aprender el formato `SKILL.md`
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| buscas referencias limpias y didácticas | quieres un catálogo masivo (antigravity-awesome-skills) |
 
-javascript/typescript, typescript, javascript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown/TypeScript
+- **Modelos / API:** Claude Code y compatibles.
+- **Etiquetas:** `skills` `coding-agent`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Awesome Agent Skills](awesome-agent-skills.md) | 37k | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. |
 
-- `awesome-agent-skills`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [mattpocock/skills](https://github.com/mattpocock/skills)
+- 🌐 Web: <https://aihero.dev/skills>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con awesome-agent-skills cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si buscas referencias limpias y didácticas. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

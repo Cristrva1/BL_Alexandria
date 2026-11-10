@@ -1,60 +1,61 @@
-# autoresearch
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Agentes de research autónomo
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔬 autoresearch
 
-## Decision
+> Enfoque experimental para automatizar investigación iterativa mediante bucles de búsqueda y refinamiento.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 99.7k | — | Python | 2026-03-26 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synchronizing once in a while using sound wave interconnect in the ritual of "group meeting". That era is long gone. Research is now entirely the domain of autonomous swarms of AI agents running across compute cluster megastructures in the skies.
+## Qué es
 
-## Que problema resuelve
+Proyecto pequeño y exploratorio de Karpathy, más que una herramienta pulida.
 
-experimentas con research iterativo o quieres un punto de partida
+## Por qué destaca
 
-## Por que tiene valor
+Propuesta sencilla para experimentar con investigación autónoma en varias pasadas; valioso como punto de partida y referencia didáctica más que como producto cerrado.
 
-Aporta valor en `platform` para python, typescript. Stack declarado: python, typescript.
+## Cómo funciona
 
-## Cuando usarlo
+Repite ciclos de búsqueda y refinamiento sobre un tema, refinando consultas con cada iteración; implementado en Python con llamadas a LLM y búsqueda web.
 
-experimentas con research iterativo o quieres un punto de partida
+## Instalación rápida
 
-## Cuando NO usarlo
+`git clone` del repo y ejecución de sus scripts en Python (consulta el README). Requiere una clave de LLM y acceso a búsqueda web.
 
-quieres salida pulida y lista ([gpt-researcher](#-gpt-researcher)).
+## Casos de uso
 
-## Tipo de instalacion
+- Loops de búsqueda y refinamiento
+- Exploración de un tema en varias pasadas
+- Base para montar tu propio agente de research
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| experimentas con research iterativo o quieres un punto de partida | quieres salida pulida y lista (gpt-researcher) |
 
-python, typescript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python
+- **Modelos / API:** Múltiples; agnóstico vía variables de entorno.
+- **Etiquetas:** `research` `agents` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [gpt-researcher](gpt-researcher.md) | 30.6k | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
+| [crawl4ai](crawl4ai.md) | 87.2k | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. |
 
-- `gpt-researcher`
-- `crawl4ai`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [karpathy/autoresearch](https://github.com/karpathy/autoresearch)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con gpt-researcher, crawl4ai cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si experimentas con research iterativo o quieres un punto de partida. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,60 +1,68 @@
-# superpowers
+[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Metodologías y harness para agentes de código
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 💪 superpowers
 
-## Decision
+> Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 315k | MIT | Shell | 2026-11-03 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them.
+## Qué es
 
-## Que problema resuelve
+Resuelve la primitiva de "dar a tu agente un método coherente", no piezas sueltas.
 
-quieres método, no fragmentos sueltos
+## Por qué destaca
 
-## Por que tiene valor
+Ofrece un sistema coherente en lugar de piezas sueltas, lo que da consistencia al flujo de trabajo del agente entre tareas. Sus metaprompts fuerzan la invocación de skills, evitando que el agente las ignore.
 
-Aporta valor en `skill` para javascript, javascript-typescript, typescript. Stack declarado: javascript/typescript, typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Combina skills modulares con metaprompts/instrucciones que el agente lee y encadena para seguir un método paso a paso. Las skills se componen entre sí, de modo que el output de una alimenta la siguiente.
 
-quieres método, no fragmentos sueltos
+## Instalación rápida
 
-## Cuando NO usarlo
+Clona el repo y copia las skills e instrucciones a tu directorio de skills del asistente (p. ej. `~/.claude/skills`); sin dependencias.
 
-solo necesitas una skill aislada puntual.
+## Casos de uso
 
-## Tipo de instalacion
+- Dar a tu agente un método consistente
+- Estandarizar el flujo de desarrollo
+- Reducir variabilidad entre sesiones
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres método, no fragmentos sueltos | solo necesitas una skill aislada puntual |
 
-javascript/typescript, typescript, javascript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown/skills
+- **Modelos / API:** Claude Code y compatibles.
+- **Etiquetas:** `skills` `coding-agent`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Awesome Claude Code](awesome-claude-code.md) | 57.7k | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. |
+| [agent-toolkit](agent-toolkit.md) | 2.7k | Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code en tareas de desarrollo, documentación y planificación. |
 
-- `awesome-claude-code`
-- `agent-toolkit`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Agent Skills (Addy Osmani)](agent-skills.md) | 115k | Colección de skills de ingeniería de producción para agentes de código, de Addy Osmani. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [obra/superpowers](https://github.com/obra/superpowers)
+- 🧪 Receta: [Agente de código potenciado](../playbooks/agente-de-codigo-potenciado.md)
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+---
 
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agent-toolkit cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres método, no fragmentos sueltos. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

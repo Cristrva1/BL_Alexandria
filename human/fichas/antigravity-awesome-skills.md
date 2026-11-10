@@ -1,60 +1,73 @@
-# antigravity-awesome-skills
+[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Catálogos y marketplaces de skills
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🗂️ Agentic Awesome Skills
 
-## Decision
+> Biblioteca comunitaria de más de 2.800 skills SKILL.md para Claude Code, Codex, Cursor y Gemini CLI, con instalador npx y MCP local.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 49.5k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-🌌 Antigravity Awesome Skills: 1,682+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More.
+## Qué es
 
-## Que problema resuelve
+Antes llamada Antigravity Awesome Skills, reúne miles de skills por dominio (desarrollo, seguridad, DevOps, datos, marketing) instalables en Claude Code, Codex, Cursor, Gemini CLI, Kiro, OpenCode y otros agentes. Incluye bundles por rol, plugins temáticos y AAS Core, un MCP local para que el agente busque en el catálogo y elija skills antes de instalarlas.
 
-quieres opciones por cantidad y dominio
+## Por qué destaca
 
-## Por que tiene valor
+Destaca por volumen y por su instalador, que filtra por categoría, nivel de riesgo o lista exacta de ids. Con AAS Core el agente consulta el catálogo bajo demanda en lugar de cargar miles de skills en su contexto.
 
-Aporta valor en `skill` para agents, javascript, javascript-typescript, postgres, python, react, skills, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, react, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Cada skill vive en `skills/<nombre>/SKILL.md` y un índice JSON describe el catálogo. El CLI de npm copia la selección a la carpeta de skills de cada agente y AAS Core expone el catálogo como servidor MCP local con vista previa del plan.
 
-quieres opciones por cantidad y dominio
+## Instalación rápida
 
-## Cuando NO usarlo
+`npx agentic-awesome-skills --claude` (o `--codex`, `--cursor`, `--gemini`, `--path ./mis-skills`); añade `--skills <ids> --dry-run` para previsualizar. En Claude Code también: `/plugin marketplace add sickn33/agentic-awesome-skills`.
 
-prefieres curaduría oficial y respaldo de marca ([awesome-agent-skills](#-awesome-agent-skills)).
+## Casos de uso
 
-## Tipo de instalacion
+- Instalar solo las skills de un dominio con filtros de categoría
+- Dejar que Codex o Claude elijan skills a través del MCP AAS Core
+- Dar el mismo set de skills a varios agentes de código
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres cubrir muchos dominios con skills ya escritas y trabajas con uno o varios agentes de código | prefieres pocas skills oficiales y revisadas; mira `anthropic-skills` o `awesome-agent-skills` |
 
-javascript/typescript, python, typescript, javascript, react, postgres
+**Limitaciones:** La calidad varía entre skills de terceros y algunas dependen de servicios externos de pago; revísalas antes de instalarlas (por ejemplo con `skillspector`).
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Markdown, JavaScript (Node.js 22+), Python, MCP
+- **Modelos / API:** No llama a un LLM: las skills las ejecuta tu agente de código (Claude Code, Codex, Cursor, Gemini CLI, OpenCode, etc.).
+- **Etiquetas:** `skills` `coding-agent` `mcp` `javascript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `skillspector`
-- `awesome-agent-skills`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [SkillSpector](skillspector.md) | 25.2k | Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos. |
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Awesome Agent Skills](awesome-agent-skills.md) | 37k | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. |
+| [Awesome Claude Skills](awesome-claude-skills.md) | 79.2k | Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps. |
+| [wshobson/agents](wshobson-agents.md) | 42.4k | Marketplace de 94 plugins con más de 200 subagentes, 185 skills y 105 comandos para Claude Code, Codex, Cursor, OpenCode y Copilot. |
 
-## Riesgos
+## Enlaces
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+- 🐙 GitHub: [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills)
+- 🌐 Web: <https://aaskills.tech/>
 
-## Ideas profesionales
+---
 
-Combinar con skillspector, awesome-agent-skills cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres opciones por cantidad y dominio. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

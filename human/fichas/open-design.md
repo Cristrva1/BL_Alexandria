@@ -1,61 +1,67 @@
-# open-design
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Diseño visual, canvas y builders
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎨 open-design
 
-## Decision
+> Espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces desde lenguaje natural.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 107k | Apache-2.0 | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-🔥 Open Design 0.10.0 is here: the all-in-one Agentic design workspace. The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing off to an editor or a Code Agent — without leaving the app.
+## Qué es
 
-## Que problema resuelve
+Resuelve el ir y venir entre prompt, preview y código exportable.
 
-generas UI desde texto y quieres edición visual
+## Por qué destaca
 
-## Por que tiene valor
+Combina generación por IA con edición visual real y enruta varios modelos en una sola herramienta, algo poco común en editores abiertos. Su arquitectura Tauri (Rust) le da un binario nativo ligero frente a apps puramente web.
 
-Aporta valor en `runtime` para agents, docker, frontend, javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+App de escritorio en React + Tauri (Rust) que traduce prompts a UI editable y la sincroniza de vuelta, con un enrutador AMR que reparte peticiones entre modelos según la tarea.
 
-generas UI desde texto y quieres edición visual
+## Instalación rápida
 
-## Cuando NO usarlo
+Clonar el repo y compilar la app Tauri, o usar los binarios de release según plataforma. Requiere claves API de al menos un proveedor (OpenAI/Anthropic/Google/DeepSeek).
 
-prefieres editar visualmente sobre tu código existente ([plasmic](#-plasmic)).
+## Casos de uso
 
-## Tipo de instalacion
+- Describir una pantalla y ver cómo la IA la maqueta y anima
+- Importar sistemas de diseño (Figma, Tailwind) y iterarlos por voz
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| generas UI desde texto y quieres edición visual | prefieres editar visualmente sobre tu código existente (plasmic) |
 
-javascript/typescript, typescript, javascript, react, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** TypeScript/React, Tauri (Rust)
+- **Modelos / API:** GPT-4o, Claude, Gemini, DeepSeek vía AMR.
+- **Etiquetas:** `agents` `design` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [tailwindcss](tailwindcss.md) | 98.7k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
+| [heroui](heroui.md) | 31.2k | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. |
 
-- `tailwindcss`
-- `heroui`
-- `web app moderna`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Onlook](onlook.md) | 27.2k | Editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [nexu-io/open-design](https://github.com/nexu-io/open-design)
+- 🌐 Web: <https://open-design.ai>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con tailwindcss, heroui, web app moderna cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si generas UI desde texto y quieres edición visual. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

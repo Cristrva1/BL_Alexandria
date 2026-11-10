@@ -1,61 +1,68 @@
-# langgraphjs
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Frameworks en TypeScript y multi-lenguaje
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🟦 LangGraph.js
 
-## Decision
+> Versión TypeScript de LangGraph para agentes con estado como grafos en Node o el navegador.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 3.4k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
-Implementación TypeScript de LangGraph. Sirve para construir, gestionar y desplegar agentes de larga duración con grafos de estado en Node o el navegador.
+## Qué es
 
-## Que problema resuelve
+Lleva el modelo de grafos con estado, checkpoints y human-in-the-loop de LangGraph al ecosistema JavaScript.
 
-quieres libs/langgraph-core/readme.md
+## Por qué destaca
 
-## Por que tiene valor
+Paridad casi completa con la versión Python y despliegue en LangGraph Platform.
 
-Aporta valor en `runtime` para automation, javascript, javascript-typescript. Stack declarado: javascript/typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Nodos que leen y escriben un estado compartido, ejecutados por un runtime con persistencia.
 
-quieres libs/langgraph-core/readme.md
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm install @langchain/langgraph @langchain/core`.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Agentes con aprobación humana en Node
+- Flujos multiagente en TS
+- Agentes desplegados en LangGraph Platform
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres el modelo de LangGraph en TypeScript | buscas una experiencia TS más integrada; mira `mastra` |
 
-javascript/typescript, javascript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** TypeScript, Node.js
+- **Modelos / API:** Agnóstico vía LangChain.js.
+- **Etiquetas:** `agents` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [langfuse](langfuse.md) | 37.3k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Mastra](mastra.md) | 29.4k | Framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby. |
+| [AI SDK (Vercel)](vercel-ai.md) | 27.9k | Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [langchain-ai/langgraphjs](https://github.com/langchain-ai/langgraphjs)
+- 🌐 Web: <https://docs.langchain.com/oss/javascript/langgraph/>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres libs/langgraph-core/readme.md. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

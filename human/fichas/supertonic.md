@@ -1,60 +1,64 @@
-# supertonic
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Síntesis y clonación de voz
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔊 supertonic
 
-## Decision
+> Motor TTS multilingüe ultrarrápido de Supertone que sintetiza voz directamente en el dispositivo, incluso en el navegador vía WebGPU.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 13.8k | MIT | Swift | 2026-09-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
-Supertonic is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns.
+> ⚠️ Archivado en GitHub: ya no recibe cambios.
 
-## Que problema resuelve
+## Qué es
 
-quieres voz local en tiempo real y sin nube
+Apunta a latencia mínima con privacidad total, sin nube ni llamadas de API.
 
-## Por que tiene valor
+## Por qué destaca
 
-Aporta valor en `library` para javascript, multimedia, python, typescript. Stack declarado: python, typescript, javascript.
+Logra latencia muy baja con privacidad total al no depender de la nube, atractivo para voz en tiempo real y asistentes on-device; sus modelos se publican gratis en Hugging Face.
 
-## Cuando usarlo
+## Cómo funciona
 
-quieres voz local en tiempo real y sin nube
+Ejecuta modelos ONNX acelerados por WebGPU desde el navegador o por Rust/Python en escritorio, con inferencia optimizada para mantener el tiempo de primer audio bajo.
 
-## Cuando NO usarlo
+## Instalación rápida
 
-priorizas clonación de máxima fidelidad ([VoxCPM](#-voxcpm)) o flexibilidad multi-modelo ([TTS](#-tts)).
+Clonar el repo y seguir el ejemplo Node/Python, o probar la demo WebGPU (no hay paquete único oficial). Requiere un navegador/entorno con WebGPU o runtime ONNX adecuado.
 
-## Tipo de instalacion
+## Casos de uso
 
-deferred
+- Respuesta por voz en tiempo real
+- Locuciones de anuncios local
+- Asistentes on-device sin enviar audio a la nube
 
-## Stack / tecnologia detectada
+## ¿Es para ti?
 
-python, typescript, javascript
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres voz local en tiempo real y sin nube | priorizas clonación de máxima fidelidad (VoxCPM) o flexibilidad multi-modelo (TTS) |
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, Rust (ONNX), Node.js, WebGPU
+- **Modelos / API:** Modelos propios de Hugging Face, gratis.
+- **Etiquetas:** `tts` `audio`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `whisperx`
-- `moviepy`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [whisperX](whisperx.md) | 25.2k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
+| [MoviePy](moviepy.md) | 15.1k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [supertone-oss-archive/supertonic](https://github.com/supertone-oss-archive/supertonic)
+- 🌐 Web: <https://huggingface.co/spaces/Supertone/supertonic-3>
 
-## Riesgos
+---
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con whisperx, moviepy cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si quieres voz local en tiempo real y sin nube. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

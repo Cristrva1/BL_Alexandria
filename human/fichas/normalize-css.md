@@ -1,59 +1,61 @@
-# normalize.css
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › CSS y estilos
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧯 normalize.css
 
-## Decision
+> Hoja de estilos que normaliza los defaults entre navegadores para partir de una base de rendering uniforme.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 53.5k | MIT | CSS | 2024-06-12 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-normalize.css alinea el render de elementos HTML entre navegadores. Es una base de CSS, no un sistema de diseño.
+## Qué es
 
-## Que problema resuelve
+Resuelve las inconsistencias de margen, tipografía y formularios entre Chrome, Firefox y Safari.
 
-quieres base CSS uniforme y ligera
+## Por qué destaca
 
-## Por que tiene valor
+Clásico ampliamente usado que, en lugar de borrar estilos (como un reset agresivo), preserva los defaults útiles y corrige solo las inconsistencias. Lleva años como referencia cross-browser.
 
-Aporta valor en `library` para javascript, javascript-typescript, typescript. Stack declarado: javascript/typescript, typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Un único CSS que ajusta elementos donde los navegadores difieren (márgenes, alturas de línea, renderizado de fuentes), sin imponer una estética propia.
 
-quieres base CSS uniforme y ligera
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm i normalize.css` e importarlo al inicio de tu CSS, o enlazar por CDN. No requiere build step.
 
-ya usas el preflight de Tailwind, que cubre lo mismo.
+## Casos de uso
 
-## Tipo de instalacion
+- Base consistente antes de aplicar tu estilado
+- Igualar rendering cross-browser en proyectos legacy
+- Complemento de un reset propio
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres base CSS uniforme y ligera | ya usas el preflight de Tailwind, que cubre lo mismo |
 
-javascript/typescript, typescript, javascript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** CSS
+- **Modelos / API:** N/A.
+- **Etiquetas:** `ui` `design`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [tailwindcss](tailwindcss.md) | 98.7k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
 
-- `tailwindcss`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [necolas/normalize.css](https://github.com/necolas/normalize.css)
+- 🌐 Web: <http://necolas.github.io/normalize.css/>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con tailwindcss cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres base CSS uniforme y ligera. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

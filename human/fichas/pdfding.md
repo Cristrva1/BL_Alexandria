@@ -1,61 +1,67 @@
-# PdfDing
+[🏠 Inicio](../README.md) › [📄 Documentos & Presentaciones](../categorias/13-documentos-presentaciones.md) › Herramientas PDF
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📑 PdfDing
 
-## Decision
+> Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 1.8k | — | — | 2026-08-29 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-PdfDing es un manager de PDFs que hosteas tú. Alternativa ligera a suites documentales pesadas.
+> ⚠️ Archivado en GitHub: ya no recibe cambios.
 
-## Que problema resuelve
+## Qué es
 
-quieres selfhosted pdf manager, viewer and editor offering a seamless user experience on multiple 
+Organiza y lee tus PDFs desde cualquier dispositivo. El desarrollo se trasladó a Codeberg.
 
-## Por que tiene valor
+## Por qué destaca
 
-Aporta valor en `app` para docker, frontend, javascript, python, typescript. Stack declarado: python, typescript, javascript, docker.
+Alternativa ligera a suites documentales pesadas.
 
-## Cuando usarlo
+## Cómo funciona
 
-quieres selfhosted pdf manager, viewer and editor offering a seamless user experience on multiple 
+App web Django que guarda PDFs, metadatos y anotaciones.
 
-## Cuando NO usarlo
+## Instalación rápida
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+`docker run -p 8000:8000 mrmn2/pdfding` (revisa la versión actual en Codeberg).
 
-## Tipo de instalacion
+## Casos de uso
 
-reference_only
+- Biblioteca personal de PDFs
+- Leer y anotar desde el móvil
+- Compartir PDFs internos
 
-## Stack / tecnologia detectada
+## ¿Es para ti?
 
-python, typescript, javascript, docker
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres organizar y leer PDFs en tu servidor | necesitas editar PDFs; mira `stirling-pdf` |
 
-## Instalacion detectada
+**Limitaciones:** El repo de GitHub está archivado: el proyecto sigue en Codeberg.
 
-Repo local detectado: si
+## Stack y modelos
 
-## Con que se combina
+- **Stack:** Python, Django, Docker
+- **Modelos / API:** No usa LLM.
+- **Etiquetas:** `pdf` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-- `markitdown`
-- `ppt-master`
-- `reveal.js`
+## Combina con
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [markitdown](markitdown.md) | 195k | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. |
+| [ppt-master](ppt-master.md) | 75.5k | Generador que transforma documentos de texto en presentaciones PowerPoint (.pptx) editables nativas, listas para abrir y ajustar en Office. |
+| [reveal.js](reveal-js.md) | 72.6k | Framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [mrmn2/PdfDing](https://github.com/mrmn2/PdfDing)
+- 🌐 Web: <https://codeberg.org/mrmn/PdfDing>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con markitdown, ppt-master, reveal.js cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres selfhosted pdf manager, viewer and editor offering a seamless user experience on multiple . No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

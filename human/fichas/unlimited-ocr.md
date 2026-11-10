@@ -1,61 +1,71 @@
-# Unlimited-OCR
+[🏠 Inicio](../README.md) › [📄 Documentos & Presentaciones](../categorias/13-documentos-presentaciones.md) › OCR
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔠 Unlimited-OCR
 
-## Decision
+> Modelo de Baidu para parsear documentos largos de una sola pasada con visión.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 31.1k | MIT | Python | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
-Unlimited OCR apunta a extracción de texto y estructura en documentos largos. Setup de visión; no es un editor PDF.
+## Qué es
 
-## Que problema resuelve
+Extrae texto y estructura de documentos de muchas páginas sin dividirlos, pensado para contexto largo.
 
-quieres unlimited ocr works
+## Por qué destaca
 
-## Por que tiene valor
+Enfoque de una sola pasada para documentos largos.
 
-Aporta valor en `library` para vision, ocr, docs. Stack declarado: python, typescript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Un modelo de visión-lenguaje procesa secuencias largas de páginas y genera el texto estructurado.
 
-quieres unlimited ocr works
+## Instalación rápida
 
-## Cuando NO usarlo
+Sigue el README para descargar el modelo y ejecutar la inferencia (requiere GPU).
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+## Casos de uso
 
-## Tipo de instalacion
+- Parsear documentos largos
+- Contratos de muchas páginas
+- Investigación en OCR
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| procesas documentos muy largos con GPU | necesitas algo probado y ligero; mira `docling` |
 
-python, typescript, docker, postgres
+**Limitaciones:** Requiere GPU; proyecto reciente.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, PyTorch
+- **Modelos / API:** Modelo propio.
+- **Etiquetas:** `ocr` `docs` `python`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `litellm`
-- `cosmos`
-- `comfyui`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [litellm](litellm.md) | 63k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
+| [cosmos](cosmos.md) | 12.3k | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. |
+| [ComfyUI](comfyui.md) | 146k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [olmOCR](olmocr.md) | 19.8k | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión, a gran escala. |
+| [PaddleOCR](paddleocr.md) | 92.5k | Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos estructurados para IA. |
 
-## Riesgos
+## Enlaces
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+- 🐙 GitHub: [baidu/Unlimited-OCR](https://github.com/baidu/Unlimited-OCR)
 
-## Ideas profesionales
+---
 
-Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si quieres unlimited ocr works. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

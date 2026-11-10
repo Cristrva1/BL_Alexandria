@@ -1,60 +1,70 @@
-# agentmemory
+[🏠 Inicio](../README.md) › [🧬 Memoria, RAG & LLM Ops](../categorias/06-memoria-rag-llm-ops.md) › Memoria persistente para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 💾 agentmemory
 
-## Decision
+> Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 30.3k | Apache-2.0 | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-Your coding agent remembers everything. No more re-explaining. Built on iii engine Persistent memory for Claude Code, GitHub Copilot CLI, Cursor, Gemini CLI, Codex CLI, Hermes, OpenClaw, pi, OpenCode, and any MCP client.
+## Qué es
 
-## Que problema resuelve
+Resuelve el "re-explica todo" al cambiar de asistente: la memoria vive fuera del cliente.
 
-cambias de asistente y quieres una memoria común entre ellos
+## Por qué destaca
 
-## Por que tiene valor
+Evita re-explicar el contexto al cambiar de asistente, ofreciendo una memoria compartida poco común entre herramientas de coding. Su exposición vía MCP la hace compatible con cualquier cliente que hable el protocolo, no solo uno concreto.
 
-Aporta valor en `runtime` para agents, docker, javascript, javascript-typescript, postgres, python, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Se conecta vía MCP para que distintos clientes lean y escriban en el mismo almacén persistente del motor iii, manteniendo el contexto de proyecto/sesión al margen del IDE que uses en cada momento.
 
-cambias de asistente y quieres una memoria común entre ellos
+## Instalación rápida
 
-## Cuando NO usarlo
+Instalación del servidor MCP según el repo y configuración en cada cliente compatible (Claude Code, Cursor, etc.); requiere el motor iii como backend.
 
-te basta la memoria nativa de un único cliente o no usas MCP.
+## Casos de uso
 
-## Tipo de instalacion
+- Que el agente "recuerde todo" y no re-expliques el contexto
+- Memoria multi-cliente vía MCP
+- Continuidad de proyecto entre Claude Code y Cursor
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| cambias de asistente y quieres una memoria común entre ellos | te basta la memoria nativa de un único cliente o no usas MCP |
 
-javascript/typescript, python, typescript, javascript, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** motor iii, MCP
+- **Modelos / API:** Cualquier cliente MCP; sin LLM propio.
+- **Etiquetas:** `agents` `memory` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [mem0](mem0.md) | 68.7k | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental. |
+| [ruflo](ruflo.md) | 81.4k | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). |
 
-- `mem0`
-- `ruflo`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Engram](engram.md) | 7.9k | Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI. |
+| [supermemory](supermemory.md) | 31.6k | Motor de memoria y contexto muy rápido, con API para apps de IA y app propia, ejecutable en local. |
+| [claude-mem](claude-mem.md) | 116k | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [rohitg00/agentmemory](https://github.com/rohitg00/agentmemory)
+- 🌐 Web: <https://www.agent-memory.dev/docs>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con mem0, ruflo cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si cambias de asistente y quieres una memoria común entre ellos. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

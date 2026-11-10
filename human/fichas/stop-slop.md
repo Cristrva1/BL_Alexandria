@@ -1,59 +1,69 @@
-# stop-slop
+[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Escritura y calidad de texto
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧹 Stop Slop
 
-## Decision
+> Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 18.8k | MIT | — | 2026-03-17 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-A skill for removing AI tells from prose.
+## Qué es
 
-## Que problema resuelve
+Un SKILL.md con tres archivos de referencia (frases a eliminar, estructuras a evitar y ejemplos antes/después) que enseña a Claude o a cualquier LLM a quitar muletillas, contrastes binarios, fragmentos dramáticos, voz pasiva y otros patrones predecibles. Cierra con una rúbrica de cinco dimensiones para decidir si el texto necesita otra vuelta.
 
-quieres prosa más natural y te molesta el tono IA
+## Por qué destaca
 
-## Por que tiene valor
+Es corto, sin dependencias y portable: funciona como skill de Claude Code, como conocimiento de un proyecto de Claude o pegado en un system prompt. La rúbrica sobre 50 puntos da un criterio concreto para revisar.
 
-Aporta valor en `skill` para typescript. Stack declarado: typescript.
+## Cómo funciona
 
-## Cuando usarlo
+El SKILL.md fija reglas de frase (sin aperturas de relleno, sin rayas, sin extremos vagos, voz activa) y remite a los archivos de referencia, que se cargan cuando hacen falta. Cada texto se puntúa en franqueza, ritmo, confianza, autenticidad y densidad.
 
-quieres prosa más natural y te molesta el tono IA
+## Instalación rápida
 
-## Cuando NO usarlo
+`git clone https://github.com/hardikpandya/stop-slop ~/.claude/skills/stop-slop`; en otros entornos, pega el contenido de `SKILL.md` en tus instrucciones o en el system prompt.
 
-ya usas [humanizer](#-humanizer) (solapan) o escribes a mano.
+## Casos de uso
 
-## Tipo de instalacion
+- Limpiar muletillas y estructuras cliché de un borrador
+- Fijar reglas de estilo en el system prompt de una app
+- Puntuar un texto antes de publicarlo
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres reglas de estilo compactas y portables que puedas usar como skill o dentro de un system prompt | prefieres una skill que reescriba mostrando su proceso y pueda imitar tu voz; mira `humanizer` |
 
-typescript
+**Limitaciones:** Reglas pensadas para prosa en inglés y algunas muy estrictas (prohíbe todos los adverbios y las rayas); el repo casi no recibe cambios desde marzo de 2026.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Markdown, SKILL.md
+- **Modelos / API:** No llama a un LLM: lo aplica tu agente o el modelo al que le pases el SKILL.md (Claude u otro).
+- **Etiquetas:** `skills` `prompts` `docs`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `humanizer`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Marketing Skills](marketingskills.md) | 59.5k | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. |
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Humanizer](humanizer.md) | 67.4k | Skill que reescribe texto generado por IA para que suene humano, basada en la guía de Wikipedia sobre señales de escritura IA. |
 
-## Riesgos
+## Enlaces
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+- 🐙 GitHub: [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop)
 
-## Ideas profesionales
+---
 
-Combinar con humanizer cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres prosa más natural y te molesta el tono IA. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

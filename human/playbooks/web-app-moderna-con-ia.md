@@ -1,24 +1,51 @@
-# Web app moderna con IA
+[🏠 Inicio](../README.md) · [🧪 Todas las recetas](README.md)
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🌐 Web app moderna con IA
 
-## Objetivo
+> **Objetivo:** Construir un frontend pulido con chat o funciones de IA integradas.
 
-construir frontend pulido rápido.
+## 🗺️ Cómo fluye
 
-## Stack sugerido
+```mermaid
+flowchart LR
+  tailwindcss["tailwindcss"] -->|estilos| ui["ui"]
+  ui["ui"] -->|componentes| App["App"]
+  assistant_ui["assistant-ui"] -->|chat| App["App"]
+  App["App"] -->|streaming| vercel_ai["AI SDK (Vercel)"]
+  vercel_ai["AI SDK (Vercel)"] -->|tools| LLM["LLM"]
+  motion["motion"] -->|animación| App["App"]
+  recharts["Recharts"] -->|gráficos| App["App"]
+  swr["swr"] -->|datos| App["App"]
+```
 
-- `open-design`: 🔥 Open Design 0.10.0 is here: the all-in-one Agentic design workspace. The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing off to an editor or a Code Agent — without leaving the app.
-- `plasmic`: The open-source visual builder for your codebase. Build beautiful apps and websites incredibly fast. Drag and drop your own components, integrate with your codebase. Break through the low-code ceiling.
-- `tailwindcss`: A utility-first CSS framework for rapidly building custom user interfaces.
-- `heroui`: HeroUI (antes NextUI) entrega componentes React con tema. Elige esto si quieres una lib con actualizaciones; elige `ui` (shadcn) si quieres dueño del código copiado.
-- `gsap`: GSAP is a framework-agnostic JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, motion paths and generic objects.
-- `motion`: Motion (antes Framer Motion) anima interfaces web con una API declarativa. Úsala en el frontend, no como motor de video.
-- `threejs`: Sin ficha detallada.
-- `swr`: SWR is a React Hooks library for data fetching.
-- `echarts`: Apache ECharts is a free, powerful charting and visualization library offering easy ways to add intuitive, interactive, and highly customizable charts to your commercial products. It is written in pure JavaScript and based on zrender , which is a whole new lightweight canvas library.
-- `uplot`: A small (~50 KB min), fast chart for time series, lines, areas, ohlc & bars _(MIT Licensed)_.
+## 🧩 Piezas
 
-## Como se conecta
+| # | Repo | Papel en la receta | ⭐ | Instalación |
+|---:|---|---|---:|---|
+| 1 | [ui](../fichas/ui.md) | Componentes accesibles que copias a tu código (shadcn/ui) | 128k | `npx shadcn@latest init` |
+| 2 | [tailwindcss](../fichas/tailwindcss.md) | Estilos utilitarios | 98.7k | `npm i tailwindcss` |
+| 3 | [AI SDK (Vercel)](../fichas/vercel-ai.md) | AI SDK: streaming, tools y llamadas a cualquier LLM | 27.9k | `npm i ai` |
+| 4 | [assistant-ui](../fichas/assistant-ui.md) | Componentes de chat listos para conectar al AI SDK | 13k | `npx assistant-ui@latest init` |
+| 5 | [motion](../fichas/motion.md) | Animaciones e interacciones | 35k | `npm i motion` |
+| 6 | [Recharts](../fichas/recharts.md) | Gráficos para dashboards | 27.7k | `npm i recharts` |
+| 7 | [swr](../fichas/swr.md) | Fetching y caché de datos en React | 32.5k | `npm i swr` |
 
-Pendiente de especificar en el proyecto concreto.
+## 🔌 Cómo se conecta
+
+shadcn/ui y Tailwind dan la base visual; el AI SDK de Vercel resuelve streaming, tool calling y proveedores; assistant-ui aporta la interfaz de chat; Motion anima y Recharts dibuja datos; SWR gestiona el fetching. Para diseñar antes de codificar, prueba Open Design o Penpot.
+
+## 🚫 Cuándo NO usar esta receta
+
+Si es una landing estática, Tailwind y un par de componentes bastan. Si es un dashboard interno de datos, Streamlit o Superset son más rápidos.
+
+## 🔁 Variantes
+
+- En lugar de [ui](../fichas/ui.md): [Material UI](../fichas/mui.md), [Ant Design](../fichas/ant-design.md), [daisyUI](../fichas/daisyui.md)
+- En lugar de [AI SDK (Vercel)](../fichas/vercel-ai.md): [LangGraph.js](../fichas/langgraphjs.md), [Mastra](../fichas/mastra.md)
+- En lugar de [assistant-ui](../fichas/assistant-ui.md): [CopilotKit](../fichas/copilotkit.md)
+- En lugar de [motion](../fichas/motion.md): [Anime.js](../fichas/animejs.md)
+- En lugar de [Recharts](../fichas/recharts.md): [Chart.js](../fichas/chart-js.md), [echarts](../fichas/echarts.md)
+
+---
+
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,59 +1,71 @@
-# claude-plugins-official
+[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Catálogos y marketplaces de skills
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔌 Claude Code Plugins Directory
 
-## Decision
+> Marketplace oficial de Anthropic con plugins para Claude Code, propios y de socios: comandos, agentes, skills y servidores MCP.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 46.7k | Apache-2.0 | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-A curated directory of high-quality plugins for Claude Code.
+## Qué es
 
-## Que problema resuelve
+Directorio curado desde el que Claude Code instala plugins de forma nativa. En `/plugins` están los que mantiene Anthropic (revisión de código y PR, desarrollo de features, diseño frontend, hooks, gestión de CLAUDE.md, skill-creator) y en `/external_plugins` los de socios y comunidad que pasan su revisión (Figma, Atlassian, Cloudflare, Firebase, Context7, Superpowers y cientos más).
 
-quieres extensiones oficiales con garantía de compatibilidad
+## Por qué destaca
 
-## Por que tiene valor
+Es la fuente oficial: viene integrada en el sistema de plugins de Claude Code y los plugins externos deben cumplir criterios de calidad y seguridad para entrar. Evita copiar archivos a mano.
 
-Aporta valor en `platform` para typescript. Stack declarado: typescript.
+## Cómo funciona
 
-## Cuando usarlo
+Cada plugin es una carpeta con `.claude-plugin/plugin.json` y, si los necesita, comandos, agentes, skills y un `.mcp.json` con servidores MCP. Claude Code lee el `marketplace.json` del repo e instala cada plugin por su nombre.
 
-quieres extensiones oficiales con garantía de compatibilidad
+## Instalación rápida
 
-## Cuando NO usarlo
+En Claude Code: `/plugin install <plugin>@claude-plugins-official`, o explora el catálogo en `/plugin` > Discover.
 
-buscas aportes comunitarios amplios ([awesome-claude-code](#-awesome-claude-code)).
+## Casos de uso
 
-## Tipo de instalacion
+- Añadir revisión de PR y comandos de commit a Claude Code
+- Conectar Claude Code a Figma, Atlassian o Firebase con un plugin
+- Usar `example-plugin` como base para publicar el tuyo
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| usas Claude Code y quieres plugins oficiales o de socios que se instalan con un comando | buscas recursos comunitarios o trabajas con otro agente; mira `awesome-claude-code` o `wshobson-agents` |
 
-typescript
+**Limitaciones:** Anthropic no controla el contenido de los plugins externos ni de sus servidores MCP: revisa cada plugin antes de instalarlo.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Markdown, JSON, Python, MCP
+- **Modelos / API:** Los plugins los ejecuta Claude Code con modelos de Anthropic; algunos añaden servidores MCP de terceros.
+- **Etiquetas:** `skills` `coding-agent` `mcp`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `awesome-claude-code`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Anthropic Skills](anthropic-skills.md) | 192k | Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills. |
+| [Awesome Claude Code](awesome-claude-code.md) | 57.7k | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [wshobson/agents](wshobson-agents.md) | 42.4k | Marketplace de 94 plugins con más de 200 subagentes, 185 skills y 105 comandos para Claude Code, Codex, Cursor, OpenCode y Copilot. |
 
-## Riesgos
+## Enlaces
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+- 🐙 GitHub: [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)
+- 🌐 Web: <https://code.claude.com/docs/en/plugins>
 
-## Ideas profesionales
+---
 
-Combinar con awesome-claude-code cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres extensiones oficiales con garantía de compatibilidad. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

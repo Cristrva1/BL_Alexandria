@@ -1,61 +1,63 @@
-# ponytail
+[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Metodologías y harness para agentes de código
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧭 Ponytail
 
-## Decision
+> Skill que hace que tu agente de código piense como un senior minimalista: el mejor código es el que no escribes.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 188k | MIT | JavaScript | 2026-10-29 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-You know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty lines; he looks at them, says nothing, and replaces them with one.
+## Qué es
 
-## Que problema resuelve
+Empuja al agente a reutilizar, borrar y simplificar antes de añadir código nuevo. Reduce soluciones infladas y cambios innecesarios.
 
-quieres ---
+## Por qué destaca
 
-## Por que tiene valor
+Se volvió viral por atacar el problema más común de los agentes: escribir demasiado código.
 
-Aporta valor en `library` para automation, fastapi, javascript, javascript-typescript, python, react, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, react, fastapi.
+## Cómo funciona
 
-## Cuando usarlo
+Instrucciones y reglas que el agente carga como skill o archivo de contexto antes de programar.
 
-quieres ---
+## Instalación rápida
 
-## Cuando NO usarlo
+Copia la skill a la carpeta de skills de tu agente siguiendo el README.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Revisiones que proponen borrar código
+- Refactors más pequeños
+- Evitar dependencias innecesarias
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| tu agente tiende a sobrecomplicar las soluciones | necesitas una metodología completa de proyecto; mira `bmad-method` |
 
-javascript/typescript, python, typescript, javascript, react, fastapi
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown, JavaScript
+- **Modelos / API:** Agnóstico.
+- **Etiquetas:** `skills` `coding-agent`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [superpowers](superpowers.md) | 315k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
+| [andrej-karpathy-skills](andrej-karpathy-skills.md) | 232k | Guía de 4 principios inspirada en Andrej Karpathy para que tu agente de código responda útil y sin relleno. |
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
+- 🌐 Web: <https://ponytail.dev>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres ---. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

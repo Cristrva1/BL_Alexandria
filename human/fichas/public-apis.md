@@ -1,60 +1,62 @@
-# public-apis
+[🏠 Inicio](../README.md) › [🔌 MCP & Conectividad](../categorias/05-mcp-conectividad.md) › Directorios, clientes y aprendizaje
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🌍 public-apis
 
-## Decision
+> Directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 498k | MIT | Python | 2026-11-07 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-The Public APIs repository is manually curated by community members like you and folks working at APILayer. It includes an extensive list of public APIs from many domains that you can use for your own products. Consider it a treasure trove of APIs well-managed by the community over the years.
+## Qué es
 
-## Que problema resuelve
+Resuelve el descubrimiento: en un solo lugar tienes URLs, autenticación y HTTPS de cada API en lugar de buscarlas una a una.
 
-buscas datos externos y no sabes qué API usar
+## Por qué destaca
 
-## Por que tiene valor
+Es una de las referencias más estrelladas de GitHub para encontrar fuentes de datos externas, mantenida por la comunidad y APILayer. Su organización temática y su antigüedad lo convierten en el catálogo de facto para este caso.
 
-Aporta valor en `directory` para docker, javascript, postgres, python, react, typescript. Stack declarado: python, typescript, javascript, react, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Tabla en Markdown organizada por temática con la URL, tipo de autenticación (apiKey, OAuth, ninguno) y nivel de HTTPS de cada API; se navega y se consume cada API según su propia documentación.
 
-buscas datos externos y no sabes qué API usar
+## Instalación rápida
 
-## Cuando NO usarlo
+Sin instalación; se navega el README (o su versión web) y se consume cada API según su propia documentación y claves.
 
-ya tienes tus fuentes definidas o necesitas SLA empresarial (son APIs públicas, sin garantías).
+## Casos de uso
 
-## Tipo de instalacion
+- Conectar fuentes externas de datos
+- Encontrar una API para un proyecto
+- Explorar categorías (geocoding, finanzas, weather) antes de decidir stack
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| buscas datos externos y no sabes qué API usar | ya tienes tus fuentes definidas o necesitas SLA empresarial (son APIs públicas, sin garantías) |
 
-python, typescript, javascript, react, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown
+- **Modelos / API:** N/A (catálogo; cada API define la suya).
+- **Etiquetas:** `mcp` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [n8n](n8n.md) | 210k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
+| [firecrawl](firecrawl.md) | 200k | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
 
-- `n8n`
-- `firecrawl`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [public-apis/public-apis](https://github.com/public-apis/public-apis)
+- 🌐 Web: <https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con n8n, firecrawl cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si buscas datos externos y no sabes qué API usar. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

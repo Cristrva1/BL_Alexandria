@@ -1,60 +1,61 @@
-# data-science-ipython-notebooks
+[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Datos y notebooks
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📓 data-science-ipython-notebooks
 
-## Decision
+> Gran colección de notebooks de ciencia de datos y machine learning que cubre desde pandas y NumPy hasta deep learning y big data, con ejemplos listos para ejecutar.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 29.4k | Otra (ver repo) | Python | 2024-03-20 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-Directorio de notebooks educativos de data science. Es material de referencia, no una librería para importar en producción.
+## Qué es
 
-## Que problema resuelve
+Resuelve el "aprender DS con ejemplos reales" sin tener que montarlos tú desde cero.
 
-estudias/consultas DS con ejemplos ejecutables
+## Por qué destaca
 
-## Por que tiene valor
+Uno de los repositorios de referencia más populares para aprender DS de forma práctica, con material abundante y bien organizado por temas. Su antigüedad y su volumen de notebooks lo convierten en un clásico para consulta y estudio.
 
-Aporta valor en `directory` para postgres, python, typescript. Stack declarado: python, typescript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Son notebooks Jupyter autocontenidos que se abren y ejecutan localmente, mostrando explicaciones y código sobre las librerías clásicas del ecosistema Python (pandas, NumPy, scikit-learn, etc.).
 
-estudias/consultas DS con ejemplos ejecutables
+## Instalación rápida
 
-## Cuando NO usarlo
+`git clone https://github.com/donnemartin/data-science-ipython-notebooks` y abrir los notebooks con `jupyter lab` (o `jupyter notebook`). Requiere Python y las librerías de cada notebook.
 
-buscas una librería, no ejemplos, o necesitas material actualizado a las versiones más recientes.
+## Casos de uso
 
-## Tipo de instalacion
+- Aprender pandas/NumPy/ML
+- Consultar ejemplos prácticos
+- Material de referencia para clases o autoestudio
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| estudias/consultas DS con ejemplos ejecutables | buscas una librería, no ejemplos, o necesitas material actualizado a las versiones más recientes |
 
-python, typescript, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, Jupyter
+- **Modelos / API:** N/A.
+- **Etiquetas:** `data` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [dash](dash.md) | 24.5k | Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con componentes de UI reactivos. |
+| [streamlit](streamlit.md) | 46.3k | Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS. |
 
-- `dash`
-- `streamlit`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [donnemartin/data-science-ipython-notebooks](https://github.com/donnemartin/data-science-ipython-notebooks)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con dash, streamlit cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si estudias/consultas DS con ejemplos ejecutables. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

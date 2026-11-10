@@ -1,61 +1,67 @@
-# stitch-sdk
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › UI generada con IA y frontends para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🪄 Stitch SDK
 
-## Decision
+> SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 1.8k | Apache-2.0 | TypeScript | 2026-11-05 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-Generate UI screens from text prompts and extract their HTML and screenshots programmatically.
+## Qué es
 
-## Que problema resuelve
+Automatiza Stitch, el generador de interfaces de Google, para integrarlo en tus flujos y agentes.
 
-quieres @google/stitch-sdk
+## Por qué destaca
 
-## Por que tiene valor
+Acceso programático a la generación de UI de Google.
 
-Aporta valor en `skill` para javascript, javascript-typescript, typescript. Stack declarado: javascript/typescript, typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Llama al servicio Stitch con prompts y descarga los resultados en HTML e imagen.
 
-quieres @google/stitch-sdk
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm i @google/stitch-sdk` (requiere acceso a Stitch).
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Generar pantallas en lote
+- Prototipos desde un agente
+- Explorar variantes de diseño
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres automatizar Stitch | prefieres herramientas locales; mira `screenshot-to-code` |
 
-javascript/typescript, typescript, javascript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** TypeScript
+- **Modelos / API:** Modelos de Google.
+- **Etiquetas:** `ui` `design` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Stitch Skills](stitch-skills.md) | 8.7k | Colección de skills de agente para trabajar con el servidor MCP de Google Stitch. |
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [screenshot-to-code](screenshot-to-code.md) | 81.1k | Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [google-labs-code/stitch-sdk](https://github.com/google-labs-code/stitch-sdk)
+- 🌐 Web: <https://stitch.withgoogle.com/docs>
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+---
 
-## Ideas profesionales
-
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres @google/stitch-sdk. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

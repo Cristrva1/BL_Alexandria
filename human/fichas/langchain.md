@@ -1,61 +1,71 @@
-# langchain
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Frameworks de agentes en Python
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🦜 langchain
 
-## Decision
+> Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas).
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 149k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves.
+## Qué es
 
-## Que problema resuelve
+Ofrece abstracciones y conectores para casi cualquier modelo, base de datos vectorial y fuente de datos.
 
-quieres la base estándar con máximas integraciones
+## Por qué destaca
 
-## Por que tiene valor
+Estándar de facto del ecosistema LLM, con la comunidad e integraciones más grandes del sector. Su valor está en future-proofing: cambiar de modelo o vector store suele ser mover un parámetro, no reescribir código.
 
-Aporta valor en `runtime` para agents, automation, langchain, python, typescript. Stack declarado: python, typescript, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Encadena componentes (prompts, modelos, retrievers, tools) en pipelines o agentes; disponible en Python y JS/TS, con LangGraph para grafos cíclicos con estado.
 
-quieres la base estándar con máximas integraciones
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install langchain` o `npm install langchain`. Requiere la clave del proveedor de LLM que vayas a usar (OpenAI, Anthropic, etc.).
 
-prefieres mínima abstracción o un solo proveedor sin cambiar.
+## Casos de uso
 
-## Tipo de instalacion
+- Orquestar LLM + herramientas + memoria
+- Base de casi cualquier app de IA
+- RAG sobre documentos propios
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres la base estándar con máximas integraciones | prefieres mínima abstracción o un solo proveedor sin cambiar |
 
-python, typescript, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python/JS/TS
+- **Modelos / API:** Prácticamente todos (OpenAI, Anthropic, Google, locales vía Ollama).
+- **Etiquetas:** `agents` `automation` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [langflow](langflow.md) | 157k | Constructor visual de flujos LLM/agentes construido sobre LangChain. |
+| [langfuse](langfuse.md) | 37.3k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
+| [litellm](litellm.md) | 63k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
-- `langflow`
-- `langfuse`
-- `litellm`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [LlamaIndex](llama-index.md) | 52.9k | Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. |
+| [Haystack](haystack.md) | 27k | Framework de deepset para pipelines de RAG y agentes listos para producción. |
+| [Semantic Kernel](semantic-kernel.md) | 28.8k | SDK de Microsoft para integrar LLM en apps de C#, Python y Java con plugins y planificación. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [langchain-ai/langchain](https://github.com/langchain-ai/langchain)
+- 🌐 Web: <https://docs.langchain.com/langchain/>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con langflow, langfuse, litellm cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres la base estándar con máximas integraciones. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

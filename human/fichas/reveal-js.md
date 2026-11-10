@@ -1,61 +1,68 @@
-# reveal.js
+[🏠 Inicio](../README.md) › [📄 Documentos & Presentaciones](../categorias/13-documentos-presentaciones.md) › Presentaciones
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🖥️ reveal.js
 
-## Decision
+> Framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 72.6k | MIT | JavaScript | 2026-09-30 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at revealjs.com.
+## Qué es
 
-## Que problema resuelve
+Convierte las diapositivas en una página web versionable y reproducible por código.
 
-quieres slides web por código, versionables
+## Por qué destaca
 
-## Por que tiene valor
+Estándar de facto para slides como código, muy popular y respaldado por una comunidad amplia y años de uso en producción; es la base de herramientas como Reveal y de innumerables charlas técnicas.
 
-Aporta valor en `runtime` para javascript, javascript-typescript, typescript. Stack declarado: javascript/typescript, typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Defines las diapositivas como elementos HTML anidados (`<section>`) y la librería JS las renderiza en el navegador con navegación por teclado, animaciones, modo orador y exportación a PDF.
 
-quieres slides web por código, versionables
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm install reveal.js` (o clonar el repo y abrir `index.html` en el navegador). Para exportar a PDF usa el modo de impresión del navegador.
 
-necesitas PPTX editable en Office ([ppt-master](#-ppt-master)) o un editor visual de slides.
+## Casos de uso
 
-## Tipo de instalacion
+- Slides web versionables como código
+- Presentaciones interactivas en el navegador
+- Decks técnicos con demos en vivo embebidas
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres slides web por código, versionables | necesitas PPTX editable en Office (ppt-master) o un editor visual de slides |
 
-javascript/typescript, typescript, javascript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** JavaScript/HTML
+- **Modelos / API:** N/A.
+- **Etiquetas:** `slides` `javascript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [markitdown](markitdown.md) | 195k | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. |
 
-- `markitdown`
-- `ppt-master`
-- `revealjs`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Slidev](slidev.md) | 49.4k | Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. |
+| [Marp](marp.md) | 12.7k | Ecosistema para crear presentaciones con Markdown simple y exportarlas a PDF, PPTX o HTML. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [hakimel/reveal.js](https://github.com/hakimel/reveal.js)
+- 🌐 Web: <https://revealjs.com>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con markitdown, ppt-master, revealjs cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres slides web por código, versionables. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

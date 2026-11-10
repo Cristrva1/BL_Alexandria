@@ -1,59 +1,69 @@
-# OmniVoice-Studio
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Síntesis y clonación de voz
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎚️ OmniVoice-Studio
 
-## Decision
+> Alternativa local y open source a ElevenLabs: clonación, diseño y conversión de voz en una app.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 107k | AGPL-3.0 | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-OmniVoice Studio concentra clonación y síntesis de voz en un studio local. Está en beta; espera roturas entre versiones.
+## Qué es
 
-## Que problema resuelve
+Reúne STT, TTS y dubbing en una sola app sin claves de API.
 
-quieres suite de voz completa local (dictado + clonación + dubbing)
+## Por qué destaca
 
-## Por que tiene valor
+Combina dictado, clonación y dubbing en una sola app de escritorio sin nube ni API keys, algo poco común; está en beta activa y es un proyecto pequeño y poco conocido, conviene validarlo antes de depender de él.
 
-Aporta valor en `app` para docker, fastapi, javascript, multimedia, python, react, typescript, whisper. Stack declarado: python, typescript, javascript, react, docker, fastapi, whisper.
+## Cómo funciona
 
-## Cuando usarlo
+Envuelve modelos locales de STT y TTS en una interfaz de escritorio Python que orquesta transcripción, síntesis y reemplazo de audio en el video, manteniendo todo on-device.
 
-quieres suite de voz completa local (dictado + clonación + dubbing)
+## Instalación rápida
 
-## Cuando NO usarlo
+Clonar el repo e instalar dependencias Python según el README (sin paquete publicado); el README recomienda correr desde fuente por estar en beta.
 
-solo necesitas TTS simple por CLI/librería ([TTS](#-tts)) o estabilidad de producción.
+## Casos de uso
 
-## Tipo de instalacion
+- Dictado de escritorio sin nube
+- Doblar videos a otros idiomas
+- Clonar voz sin API keys
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres suite de voz completa local (dictado + clonación + dubbing) | solo necesitas TTS simple por CLI/librería (TTS) o estabilidad de producción |
 
-python, typescript, javascript, react, docker, fastapi, whisper
+**Limitaciones:** Beta activa: cosas pueden romperse entre releases; proyecto pequeño, valida mantenimiento antes de adoptarlo.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** desktop/Python
+- **Modelos / API:** Modelos locales.
+- **Etiquetas:** `tts` `audio` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `whisperx`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [whisperX](whisperx.md) | 25.2k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [VideoLingo](videolingo.md) | 19.1k | App que subtitula, traduce y dobla videos de forma automática: ASR con timestamps por palabra, traducción con LLM y TTS. |
 
-## Riesgos
+## Enlaces
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+- 🐙 GitHub: [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio)
+- 🌐 Web: <https://voicestudio.sh>
 
-## Ideas profesionales
+---
 
-Combinar con whisperx cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si quieres suite de voz completa local (dictado + clonación + dubbing). No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

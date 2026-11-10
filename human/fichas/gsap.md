@@ -1,60 +1,67 @@
-# GSAP
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Animación y 3D
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎞️ GSAP
 
-## Decision
+> Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 30.4k | — | JavaScript | 2026-11-04 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-GSAP is a framework-agnostic JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, motion paths and generic objects.
+## Qué es
 
-## Que problema resuelve
+Es la herramienta de referencia del motion web profesional.
 
-necesitas animación avanzada y control fino de timelines
+## Por qué destaca
 
-## Por que tiene valor
+Referencia veterana del motion web profesional, con rendimiento y precisión difíciles de igualar para animación detallada. Su ecosistema de plugins (ScrollTrigger, Flip, DrawSVG) cubre casos que otras librerías no alcanzan.
 
-Aporta valor en `runtime` para javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Motor JavaScript que anima propiedades de cualquier objeto/DOM mediante tweens y timelines encadenables, con plugins como ScrollTrigger para animaciones ligadas al scroll.
 
-necesitas animación avanzada y control fino de timelines
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm i gsap` o vía CDN. Algunos plugins premium requieren membresía del Club GreenSock; los core son libres.
 
-te basta animar componentes React con API declarativa ([motion](#-motion)).
+## Casos de uso
 
-## Tipo de instalacion
+- Animaciones avanzadas y timelines sincronizados
+- Efectos scroll y transiciones complejas
+- Microinteracciones de alta precisión fuera de React
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| necesitas animación avanzada y control fino de timelines | te basta animar componentes React con API declarativa (motion) |
 
-javascript/typescript, typescript, javascript, react, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** JavaScript
+- **Modelos / API:** N/A.
+- **Etiquetas:** `ui` `design` `javascript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [motion](motion.md) | 35k | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
 
-- `three.js`
-- `motion`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Anime.js](animejs.md) | 74.5k | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [greensock/GSAP](https://github.com/greensock/GSAP)
+- 🌐 Web: <https://gsap.com>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con three.js, motion cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si necesitas animación avanzada y control fino de timelines. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

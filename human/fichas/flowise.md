@@ -1,60 +1,71 @@
-# Flowise
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Builders visuales y plataformas de agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🌊 Flowise
 
-## Decision
+> Builder visual drag-and-drop para pipelines LLM.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 55.6k | Otra (ver repo) | TypeScript | 2026-08-13 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-Flowise es un constructor visual de cadenas y agentes LLM. Encaja si quieres prototipar orquestación con nodos, no si necesitas un runtime embebido en tu código.
+> ⚠️ Archivado en GitHub: ya no recibe cambios.
 
-## Que problema resuelve
+## Qué es
 
-quieres un prototipo visual ya, en stack JS
+Permite montar chatflows y agentes conectando nodos y exponerlos como API o widget embebible.
 
-## Por que tiene valor
+## Por qué destaca
 
-Aporta valor en `platform` para automation, docker, javascript, javascript-typescript, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, docker.
+Muy adoptado para prototipar flujos LLM en minutos sin escribir código. Al estar basado en LangChain.js, hereda sus conectores y se instala con un solo comando de npm.
 
-## Cuando usarlo
+## Cómo funciona
 
-quieres un prototipo visual ya, en stack JS
+Cada nodo encapsula un componente (LLM, retriever, tool, memoria); el grafo se ejecuta en un backend Node.js y se sirve por API o widget. Persiste credenciales y conversaciones en SQLite/PostgreSQL.
 
-## Cuando NO usarlo
+## Instalación rápida
 
-necesitas plataforma completa con RAG/observabilidad ([dify](#-dify)).
+`npm install -g flowise && npx flowise start` o vía Docker. Requiere Node.js y las claves de los proveedores de LLM que uses.
 
-## Tipo de instalacion
+## Casos de uso
 
-reference_only
+- Prototipar un flujo LLM rápido
+- Demos sin código
+- Widget de chat embebible en una web
 
-## Stack / tecnologia detectada
+## ¿Es para ti?
 
-javascript/typescript, typescript, javascript, react, docker
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres un prototipo visual ya, en stack JS | necesitas plataforma completa con RAG/observabilidad (dify) |
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Node.js/TypeScript, React
+- **Modelos / API:** Múltiples; agnóstico vía LangChain.js.
+- **Etiquetas:** `automation` `agents` `typescript` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `dify`
-- `langflow`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [dify](dify.md) | 161k | Plataforma integral para construir apps de IA con backend y UI listos. |
+| [langflow](langflow.md) | 157k | Constructor visual de flujos LLM/agentes construido sobre LangChain. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Sim](sim.md) | 30.1k | Espacio colaborativo para construir, desplegar y monitorear agentes y workflows de IA con un lienzo visual. |
+| [AutoGPT](autogpt.md) | 188k | Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un constructor visual de bloques. |
 
-## Riesgos
+## Enlaces
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+- 🐙 GitHub: [FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise)
+- 🌐 Web: <https://flowiseai.com>
 
-## Ideas profesionales
+---
 
-Combinar con dify, langflow cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres un prototipo visual ya, en stack JS. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

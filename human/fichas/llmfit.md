@@ -1,60 +1,61 @@
-# llmfit
+[🏠 Inicio](../README.md) › [🏠 IA Local: Modelos, Chats & Workspaces](../categorias/08-ia-local-modelos-chats-workspaces.md) › Motores para correr modelos en local
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📏 llmfit
 
-## Decision
+> Herramienta para evaluar y medir el "fit" y la calidad de LLMs en una tarea concreta, orientada a comparar modelos con datos.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 38.9k | MIT | Rust | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-New: Community Leaderboard — Browse real-world performance data from actual users. Press `b` to see measured tok/s, TTFT, and VRAM for any GPU — not just yours. Pick from 27+ hardware presets (RTX 5090 to Apple M1) with `H` to compare real numbers before you buy or build.
+## Qué es
 
-## Que problema resuelve
+Resuelve la elección subjetiva de modelo: la conviertes en un flujo objetivo y reproducible con métricas.
 
-necesitas elegir modelo con datos y reproducibilidad
+## Por qué destaca
 
-## Por que tiene valor
+Proyecto enfocado y de nicho, útil para llevar la elección de modelo a un flujo automatizable en CI en lugar de "probar a ojo". Su integración con pipelines de evaluación lo hace apto para comparaciones sistemáticas.
 
-Aporta valor en `app` para docker, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Ejecuta evaluaciones sobre las salidas de varios modelos frente a un dataset de prueba y reporta métricas de calidad, integrable en pipelines de integración continua para bloquear regresiones.
 
-necesitas elegir modelo con datos y reproducibilidad
+## Instalación rápida
 
-## Cuando NO usarlo
+Instalación según el repo (binario Go o paquete Python); requiere claves de los modelos a comparar y un dataset de evaluación.
 
-ya tienes el modelo decidido o tu caso no justifica un harness de evaluación.
+## Casos de uso
 
-## Tipo de instalacion
+- Comparar modelos para una tarea
+- CI de calidad de prompts/modelos
+- Bloquear deploys si un modelo regresa en métricas
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| necesitas elegir modelo con datos y reproducibilidad | ya tienes el modelo decidido o tu caso no justifica un harness de evaluación |
 
-python, typescript, javascript, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Go/Python
+- **Modelos / API:** Múltiples LLMs; agnóstico vía variables de entorno.
+- **Etiquetas:** `inference` `local` `rust`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [litellm](litellm.md) | 63k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
+| [langfuse](langfuse.md) | 37.3k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
-- `litellm`
-- `langfuse`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con litellm, langfuse cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si necesitas elegir modelo con datos y reproducibilidad. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
