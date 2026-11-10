@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "orquestar mis apps sin código" manteniéndote en self-host.
+Orquesta tus apps con flujos visuales sin código y conserva el control al alojarlo en tu servidor.
 
 ## Por qué destaca
 

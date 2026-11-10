@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "un proveedor por canal" evitando integrar y mantener cada uno por separado.
+Envía notificaciones por email, SMS, push y chat desde una sola API, sin integrar y mantener cada proveedor por separado.
 
 ## Por qué destaca
 

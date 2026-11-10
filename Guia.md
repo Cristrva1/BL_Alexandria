@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **413 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **411 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -98,7 +98,7 @@ Motores de workflow, ecosistema n8n, WhatsApp y chat, chatbots, CRM/ERP, email y
 
 #### 🔁 n8n ⭐
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 210k  
-**Qué es:** Resuelve la primitiva de "conectar todo con todo" en self-host, sin el coste recurrente de un SaaS.  
+**Qué es:** Conecta cualquier app con cualquier otra en tu propio servidor, sin pagar una suscripción mensual por cada flujo.  
 **Instalación:** Vía `docker compose` o imagen Docker oficial; también `npx n8n` para una prueba rápida local. Requiere una base de datos (SQLite por defecto, PostgreSQL para producción).  
 **Elige si:** quieres el motor central de automatización con máximo catálogo — **Evita si:** buscas algo minimalista o sin self-host  
 **Combina con:** [n8n-mcp](human/fichas/n8n-mcp.md) · [n8n-skills](human/fichas/n8n-skills.md) · [evolution-api](human/fichas/evolution-api.md)  
@@ -106,7 +106,7 @@ Motores de workflow, ecosistema n8n, WhatsApp y chat, chatbots, CRM/ERP, email y
 
 #### 🤖 huginn
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 50.5k  
-**Qué es:** Resuelve la primitiva de "vigilar fuentes y disparar acciones" sin depender de terceros.  
+**Qué es:** Vigila webs, feeds y APIs y dispara acciones cuando algo cambia, todo alojado por ti y sin depender de terceros.  
 **Instalación:** Vía `docker` (imagen oficial) o desplegando la app Rails manualmente; requiere MySQL/PostgreSQL y un entorno Ruby.  
 **Elige si:** automatizas tareas orientadas a eventos y valoras la privacidad — **Evita si:** quieres editor visual moderno o IA nativa (n8n)  
 **Combina con:** [novu](human/fichas/novu.md)  
@@ -122,7 +122,7 @@ Motores de workflow, ecosistema n8n, WhatsApp y chat, chatbots, CRM/ERP, email y
 
 #### 🧩 activepieces
 **Etiquetas:** Ejecución 🔀 híbrido · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 25.5k  
-**Qué es:** Resuelve la primitiva de "orquestar mis apps sin código" manteniéndote en self-host.  
+**Qué es:** Orquesta tus apps con flujos visuales sin código y conserva el control al alojarlo en tu servidor.  
 **Instalación:** Vía `docker compose` para self-host, o usando su versión cloud si prefieres no operar la infra; requiere Node.js y una base de datos para el modo local.  
 **Elige si:** quieres reemplazar Zapier con piezas propias en TypeScript — **Evita si:** ya dominas n8n y su ecosistema te basta  
 **Combina con:** [novu](human/fichas/novu.md)  
@@ -179,7 +179,7 @@ Motores de workflow, ecosistema n8n, WhatsApp y chat, chatbots, CRM/ERP, email y
 
 #### 🛠️ n8n-skills
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 🎨 skill/prompt · Setup 🟢 fácil · ⭐ 6.6k  
-**Qué es:** Resuelve la primitiva de "JSON de n8n que no falla" reduciendo bucles de error.  
+**Qué es:** Enseña a tu agente de código a escribir flujos de n8n en JSON que funcionan a la primera, con menos idas y vueltas de errores.  
 **Instalación:** Clona el repo y copia las skills (`SKILL.md`) a tu directorio de skills de Claude Code u otro asistente compatible; sin dependencias.  
 **Elige si:** generas workflows n8n con IA y te cansan los fallos de JSON — **Evita si:** no usas n8n  
 **Combina con:** [n8n](human/fichas/n8n.md) · [n8n-mcp](human/fichas/n8n-mcp.md)  
@@ -197,7 +197,7 @@ Motores de workflow, ecosistema n8n, WhatsApp y chat, chatbots, CRM/ERP, email y
 
 #### 🌐 OpenWA
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 16.7k  
-**Qué es:** Resuelve la primitiva de "enviar y recibir mensajes de WhatsApp desde mi script" con una API expresiva.  
+**Qué es:** Envía y recibe mensajes de WhatsApp desde tu propio script con una API sencilla y expresiva.  
 **Instalación:** Vía `npm i @open-wa/wa-automate` en proyectos Node.js (o el paquete equivalente para Python); requiere un entorno con navegador headless para la sesión.  
 **Elige si:** desarrollas scripts o bots individuales y quieres arrancar rápido — **Evita si:** necesitas infra multi-instancia o alta disponibilidad (evolution-api)  
 **Combina con:** [n8n](human/fichas/n8n.md) · [evolution-api](human/fichas/evolution-api.md)  
@@ -221,7 +221,7 @@ Motores de workflow, ecosistema n8n, WhatsApp y chat, chatbots, CRM/ERP, email y
 
 #### 🧬 evolution-api
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 10.1k  
-**Qué es:** Resuelve la primitiva de "conectar WhatsApp a mi stack" sin acoplarte a un SaaS cerrado.  
+**Qué es:** Conecta WhatsApp a tu stack mediante una API REST propia, sin quedar atado a un proveedor cerrado.  
 **Instalación:** Despliegue habitual con `docker compose` usando la imagen oficial, configurando variables de entorno y Redis; requiere mantener las sesiones de WhatsApp activas.  
 **Elige si:** operas WhatsApp en producción con varias instancias — **Evita si:** solo necesitas un bot de prueba o un único script (OpenWA basta)  
 **Combina con:** [n8n](human/fichas/n8n.md) · [chatwoot](human/fichas/chatwoot.md)  
@@ -237,7 +237,7 @@ Motores de workflow, ecosistema n8n, WhatsApp y chat, chatbots, CRM/ERP, email y
 
 #### 🤖 whatsapp-agentkit
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🎨 skill/prompt · Setup 🟢 fácil · ⭐ 554  
-**Qué es:** Resuelve la primitiva de "arrancar un bot de WhatsApp sin tocar código".  
+**Qué es:** Arranca un bot de WhatsApp con IA sin escribir código, a partir de una plantilla guiada.  
 **Instalación:** `git clone` del repo y seguir el asistente con Claude Code; requiere una clave API de Anthropic y una cuenta/instancia de WhatsApp para el webhook.  
 **Elige si:** quieres arrancar sin partir de cero y te vale con lo que Claude Code genere — **Evita si:** necesitas control fino del stack o ya tienes el bot hecho  
 **Combina con:** [evolution-api](human/fichas/evolution-api.md) · [n8n-mcp](human/fichas/n8n-mcp.md)  
@@ -297,7 +297,7 @@ Motores de workflow, ecosistema n8n, WhatsApp y chat, chatbots, CRM/ERP, email y
 
 #### 💬 chatwoot
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 39.5k  
-**Qué es:** Resuelve la primitiva de "bandeja omnicanal con handoff humano" como alternativa a Intercom/Zendesk.  
+**Qué es:** Reúne WhatsApp, email, web chat y redes en una sola bandeja, con paso a un humano cuando el bot no basta. Alternativa abierta a Intercom o Zendesk.  
 **Instalación:** Vía `docker compose` con la imagen oficial, o instalación manual del stack Rails; requiere PostgreSQL y Redis.  
 **Elige si:** das soporte por varios canales y necesitas handoff humano — **Evita si:** solo necesitas enviar mensajes salientes (evolution-api)  
 **Combina con:** [evolution-api](human/fichas/evolution-api.md) · [novu](human/fichas/novu.md)  
@@ -307,7 +307,7 @@ Motores de workflow, ecosistema n8n, WhatsApp y chat, chatbots, CRM/ERP, email y
 
 #### 🔔 novu ⭐
 **Etiquetas:** Ejecución 🔀 híbrido · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 40.3k  
-**Qué es:** Resuelve la primitiva de "un proveedor por canal" evitando integrar y mantener cada uno por separado.  
+**Qué es:** Envía notificaciones por email, SMS, push y chat desde una sola API, sin integrar y mantener cada proveedor por separado.  
 **Instalación:** Vía `docker compose` para self-host, o usando su plataforma cloud; el modo local requiere MongoDB/PostgreSQL y Redis.  
 **Elige si:** envías notificaciones por varios canales y quieres un único backend — **Evita si:** solo necesitas email (listmonk)  
 **Combina con:** [chatwoot](human/fichas/chatwoot.md) · [activepieces](human/fichas/activepieces.md)  
@@ -315,7 +315,7 @@ Motores de workflow, ecosistema n8n, WhatsApp y chat, chatbots, CRM/ERP, email y
 
 #### 📬 listmonk
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 24.2k  
-**Qué es:** Resuelve la primitiva de "enviar email a miles de suscriptores" con un footprint mínimo.  
+**Qué es:** Envía newsletters y campañas a miles de suscriptores desde un solo binario ligero que consume muy pocos recursos.  
 **Instalación:** Vía `docker compose` o descargando el binario único de Go y apuntándolo a PostgreSQL; requiere un servidor SMTP (o servicio como SES) para los envíos.  
 **Elige si:** quieres email marketing simple, rápido y propio — **Evita si:** necesitas nurturing avanzado o scoring de leads (mautic)  
 **Combina con:** [mautic](human/fichas/mautic.md) · [n8n](human/fichas/n8n.md)  
@@ -323,7 +323,7 @@ Motores de workflow, ecosistema n8n, WhatsApp y chat, chatbots, CRM/ERP, email y
 
 #### 📣 mautic
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 11k  
-**Qué es:** Resuelve la primitiva de "nutrir leads por email con reglas" sin ceder tus datos a un SaaS.  
+**Qué es:** Nutre leads por email con reglas y segmentos automáticos, sin ceder los datos de tus clientes a un SaaS.  
 **Instalación:** Vía `docker compose` o instalación PHP/MySQL tradicional sobre un servidor web; requiere MySQL y un MTA o servicio SMTP para los envíos.  
 **Elige si:** necesitas automatización de marketing seria y soberana — **Evita si:** te basta una newsletter simple (listmonk)  
 **Combina con:** [listmonk](human/fichas/listmonk.md) · [Marketing Skills](human/fichas/marketingskills.md)  
@@ -502,7 +502,7 @@ Catálogos de skills, metodologías para agentes de código, escritura sin 'slop
 
 #### 📦 skills
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 320k  
-**Qué es:** Resuelve la primitiva de "plantilla para aprender a escribir skills" con calidad por encima de cantidad.  
+**Qué es:** Muestra cómo se escribe una buena skill para agentes, con pocos ejemplos pero de alta calidad para usarlos como plantilla.  
 **Instalación:** Clona el repo y copia las skills elegidas a tu directorio de skills, o úsalas como referencia para crear las tuyas; las que tengan scripts TS requieren Node.  
 **Elige si:** buscas referencias limpias y didácticas — **Evita si:** quieres un catálogo masivo (antigravity-awesome-skills)  
 **Combina con:** [Awesome Agent Skills](human/fichas/awesome-agent-skills.md)  
@@ -510,7 +510,7 @@ Catálogos de skills, metodologías para agentes de código, escritura sin 'slop
 
 #### 💪 superpowers
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 🎨 skill/prompt · Setup 🟢 fácil · ⭐ 315k  
-**Qué es:** Resuelve la primitiva de "dar a tu agente un método coherente", no piezas sueltas.  
+**Qué es:** Le da a tu agente de código un método de trabajo completo y coherente (planear, probar, revisar), no piezas sueltas.  
 **Instalación:** Clona el repo y copia las skills e instrucciones a tu directorio de skills del asistente (p. ej. `~/.claude/skills`); sin dependencias.  
 **Elige si:** quieres método, no fragmentos sueltos — **Evita si:** solo necesitas una skill aislada puntual  
 **Combina con:** [Awesome Claude Code](human/fichas/awesome-claude-code.md) · [agent-toolkit](human/fichas/agent-toolkit.md)  
@@ -526,7 +526,7 @@ Catálogos de skills, metodologías para agentes de código, escritura sin 'slop
 
 #### 🧠 andrej-karpathy-skills
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 🎨 skill/prompt · Setup 🟢 fácil · ⭐ 232k  
-**Qué es:** Resuelve la primitiva de "alinea el comportamiento del asistente" sin atarte a una herramienta concreta.  
+**Qué es:** Ajusta el comportamiento de tu asistente con principios claros, sin atarte a una herramienta concreta.  
 **Instalación:** Clona el repo y copia el `CLAUDE.md` (o su contenido) en tu proyecto o en el directorio de configuración del asistente; no requiere dependencias ni claves.  
 **Elige si:** quieres respuestas más útiles ya, sin curar prompts largos — **Evita si:** buscas skills ejecutables con scripts concretos  
 **Combina con:** [Awesome Claude Code](human/fichas/awesome-claude-code.md) · [Context-Engineering](human/fichas/context-engineering.md)  
@@ -566,7 +566,7 @@ Catálogos de skills, metodologías para agentes de código, escritura sin 'slop
 
 #### 🧰 agent-toolkit
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 🎨 skill/prompt · Setup 🟢 fácil · ⭐ 2.7k  
-**Qué es:** Resuelve la primitiva de "productividad inmediata" con skills listas para tareas comunes.  
+**Qué es:** Te da skills listas para tareas comunes, para que tu agente sea productivo desde el primer día.  
 **Instalación:** Clona el repo y copia las carpetas de skill a tu directorio de skills de Claude Code; sin dependencias pesadas.  
 **Elige si:** quieres productividad inmediata con tareas comunes — **Evita si:** buscas un método integral (superpowers)  
 **Combina con:** [superpowers](human/fichas/superpowers.md)  
@@ -660,7 +660,7 @@ Catálogos de skills, metodologías para agentes de código, escritura sin 'slop
 
 #### 🎯 prompt-master
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 🎨 skill/prompt · Setup 🟢 fácil · ⭐ 15.8k  
-**Qué es:** Resuelve la primitiva de "meta-prompting" reutilizable como capa por encima de cualquier IA.  
+**Qué es:** Te ayuda a escribir mejores prompts con meta-prompting reutilizable, como una capa por encima de cualquier IA.  
 **Instalación:** Clona el repo y copia el `SKILL.md` a tu directorio de skills, o pega su contenido como instrucción en la IA que uses; sin dependencias.  
 **Elige si:** quieres dejar de re-promptear y acertar antes — **Evita si:** ya tienes prompts afinados y estables  
 **Combina con:** [andrej-karpathy-skills](human/fichas/andrej-karpathy-skills.md)  
@@ -734,7 +734,7 @@ Catálogos de skills, metodologías para agentes de código, escritura sin 'slop
 
 #### 🧩 Context-Engineering
 **Etiquetas:** Ejecución ☁️ cloud/API · Rol 📂 catálogo/recurso · Setup 🟢 fácil · ⭐ 9.3k  
-**Qué es:** Resuelve la primitiva de "qué meto en el prompt" de forma sistemática.  
+**Qué es:** Enseña de forma sistemática qué meter en el prompt y qué dejar fuera para que el modelo responda mejor.  
 **Instalación:** Clona el repo y abre los notebooks/Markdown localmente; no requiere instalación más allá de un entorno de notebooks (Jupyter) y claves de API para los ejemplos.  
 **Elige si:** quieres profundizar en contexto y RAG — **Evita si:** buscas skills ejecutables listas para copiar  
 **Combina con:** [andrej-karpathy-skills](human/fichas/andrej-karpathy-skills.md) · [headroom](human/fichas/headroom.md)  

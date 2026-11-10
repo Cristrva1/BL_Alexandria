@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "enviar email a miles de suscriptores" con un footprint mínimo.
+Envía newsletters y campañas a miles de suscriptores desde un solo binario ligero que consume muy pocos recursos.
 
 ## Por qué destaca
 

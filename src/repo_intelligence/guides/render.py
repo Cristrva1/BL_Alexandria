@@ -450,12 +450,30 @@ def _category_page(cat: Catalog, c: dict[str, Any], prev_c: dict[str, Any] | Non
     return "\n".join(lines)
 
 
+_COMMAND_STARTS = (
+    "npm", "npx", "pnpm", "yarn", "bun", "pip", "pipx", "uv", "uvx", "python", "docker", "git ", "brew",
+    "go ", "cargo", "curl", "wget", "/plugin", "ollama", "winget", "apt", "conda", "make", "helm", "deno",
+    "gem", "composer", "irm", "iwr", "claude ", "gh ", "dotnet", "mvn", "gradle", "flatpak", "snap",
+)
+
+
+def _looks_like_command(snippet: str) -> bool:
+    """True si el fragmento entre comillas invertidas es un comando, no una ruta o un nombre."""
+    s = snippet.strip()
+    return s.startswith(_COMMAND_STARTS) and " " in s
+
+
+def _public_count(repos: list[dict[str, Any]]) -> int:
+    """Repos de las 13 categorías públicas (sin las utilidades internas del hub)."""
+    return sum(1 for r in repos if int(r.get("cat") or 0) > 0)
+
+
 def _short_install(text: str | None) -> str:
     if not text:
         return "—"
-    match = re.search(r"`([^`]+)`", text)
-    if match:
-        return f"`{match.group(1)}`"
+    for snippet in re.findall(r"`([^`]+)`", text):
+        if _looks_like_command(snippet):
+            return f"`{snippet}`"
     return text if len(text) <= 90 else text[:87].rstrip() + "…"
 
 
@@ -747,7 +765,7 @@ def _render_catalog(project_root: Path, cat: Catalog, local_ids: set[str]) -> No
     lines = [
         "# 📚 Catálogo de BL_Alexandria",
         "",
-        f"**{len(repos)} repos** de IA y automatización en **{len(cat.public_categories())} categorías**, con una línea por repo."
+        f"**{_public_count(repos)} repos** de IA y automatización en **{len(cat.public_categories())} categorías**, con una línea por repo."
         + (f" Estrellas de GitHub al {cat.checked_at}." if cat.checked_at else ""),
         "",
         "[🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)",
@@ -800,7 +818,7 @@ def _render_guide(project_root: Path, cat: Catalog) -> None:
     lines = [
         "# 🌌 Guía completa de BL_Alexandria",
         "",
-        f"Las **{len(repos)} fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. "
+        f"Las **{_public_count(repos)} fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. "
         "Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) "
         "o el [explorador interactivo](docs/index.html).",
         "",
@@ -874,7 +892,7 @@ def _guide_card(cat: Catalog, repo: dict[str, Any]) -> list[str]:
 # ---------------------------------------------------------------------------
 
 def _render_human_home(project_root: Path, cat: Catalog) -> None:
-    repos = [r for r in cat.repos if not r.get("alias_of")]
+    repos = [r for r in cat.repos if not r.get("alias_of") and int(r.get("cat") or 0) > 0]
     new_count = sum(1 for r in repos if not r.get("lib") and r.get("status") != "local")
     lines = [
         "# 🗺️ Guía humana de BL_Alexandria",

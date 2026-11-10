@@ -11,7 +11,7 @@
 | Ejecución | 🏠 local | 🏠 local |
 | Setup | 🟡 medio | 🔴 pesado |
 | Licencia | AGPL-3.0 | AGPL-3.0 |
-| Instalación | `webui-user` | `git clone` |
+| Instalación | Descarga el paquete de un clic desde los releases o clona y ejecuta `webui-user`. | `git clone` |
 
 ## Regla práctica
 

@@ -16,7 +16,7 @@ Si solo vas a mirar unos pocos, empieza por estos:
 | [RAGFlow](../fichas/ragflow.md) | 94k | Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. | `git clone https://github.com/infiniflow/ragflow && cd ragflow/docker && docker compose up -d` |
 | [Qdrant](../fichas/qdrant.md) | 35.5k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. | `docker run -p 6333:6333 qdrant/qdrant` |
 | [vLLM](../fichas/vllm.md) | 96.7k | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. | `pip install vllm` |
-| [headroom](../fichas/headroom.md) | 79.3k | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. | `pip` |
+| [headroom](../fichas/headroom.md) | 79.3k | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. | Instalación según el repo (`pip`/`npm`); requiere un LLM para la condensación (o modo l… |
 | [promptfoo](../fichas/promptfoo.md) | 27k | CLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad. | `npx promptfoo@latest init` |
 
 ## 🧭 Subcategorías

@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "vigilar fuentes y disparar acciones" sin depender de terceros.
+Vigila webs, feeds y APIs y dispara acciones cuando algo cambia, todo alojado por ti y sin depender de terceros.
 
 ## Por qué destaca
 

@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "qué meto en el prompt" de forma sistemática.
+Enseña de forma sistemática qué meter en el prompt y qué dejar fuera para que el modelo responda mejor.
 
 ## Por qué destaca
 

@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "dar a tu agente un método coherente", no piezas sueltas.
+Le da a tu agente de código un método de trabajo completo y coherente (planear, probar, revisar), no piezas sueltas.
 
 ## Por qué destaca
 

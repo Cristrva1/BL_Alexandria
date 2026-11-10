@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "plantilla para aprender a escribir skills" con calidad por encima de cantidad.
+Muestra cómo se escribe una buena skill para agentes, con pocos ejemplos pero de alta calidad para usarlos como plantilla.
 
 ## Por qué destaca
 

@@ -11,7 +11,7 @@
 | Ejecución | 🔀 híbrido | 🏠 local |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | AGPL-3.0 | MIT |
-| Instalación | `plausible/community-edition` | `docker compose up -d` |
+| Instalación | Self-host con `plausible/community-edition` y Docker Compose. | `docker compose up -d` |
 
 ## Regla práctica
 

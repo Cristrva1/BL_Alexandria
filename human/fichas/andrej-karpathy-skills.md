@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "alinea el comportamiento del asistente" sin atarte a una herramienta concreta.
+Ajusta el comportamiento de tu asistente con principios claros, sin atarte a una herramienta concreta.
 
 ## Por qué destaca
 

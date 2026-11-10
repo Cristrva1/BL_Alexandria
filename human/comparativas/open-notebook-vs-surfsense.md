@@ -11,7 +11,7 @@
 | Ejecución | 🏠 local | 🔀 híbrido |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | MIT | Apache-2.0 |
-| Instalación | `docker` | Self-host con Docker Compose siguiendo la guía del repo. |
+| Instalación | `docker` (imagen oficial) o `pip` más Ollama para los modelos locales. Requiere Ollama… | Self-host con Docker Compose siguiendo la guía del repo. |
 
 ## Regla práctica
 

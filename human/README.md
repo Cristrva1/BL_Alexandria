@@ -1,6 +1,6 @@
 # 🗺️ Guía humana de BL_Alexandria
 
-> 413 repos de IA y automatización explicados en español: qué hace cada uno, cuándo usarlo, cómo instalarlo y con qué combinarlo.
+> 411 repos de IA y automatización explicados en español: qué hace cada uno, cuándo usarlo, cómo instalarlo y con qué combinarlo.
 
 [📚 Catálogo](../Catalogo.md) · [🔎 Explorador interactivo](../docs/index.html) · [🧪 Recetas](playbooks/README.md) · [⚖️ Comparativas](comparativas/README.md) · [🆕 Novedades (202)](novedades.md) · [📖 Guía completa](../Guia.md)
 

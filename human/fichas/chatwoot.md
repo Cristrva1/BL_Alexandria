@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "bandeja omnicanal con handoff humano" como alternativa a Intercom/Zendesk.
+Reúne WhatsApp, email, web chat y redes en una sola bandeja, con paso a un humano cuando el bot no basta. Alternativa abierta a Intercom o Zendesk.
 
 ## Por qué destaca
 

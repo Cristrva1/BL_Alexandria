@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "productividad inmediata" con skills listas para tareas comunes.
+Te da skills listas para tareas comunes, para que tu agente sea productivo desde el primer día.
 
 ## Por qué destaca
 

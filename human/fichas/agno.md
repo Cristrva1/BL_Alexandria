@@ -57,7 +57,6 @@ Agentes y equipos se declaran en Python; un servidor FastAPI los expone con alma
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [crewAI](crewai.md) | 60.7k | Framework para orquestar "crews" de agentes con roles y tareas. |
-| [LangGraph](langgraph.md) | 44.7k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
 
 ## Enlaces
 

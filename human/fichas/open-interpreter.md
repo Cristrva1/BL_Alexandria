@@ -58,7 +58,6 @@ Sigue la instalación del README (binario de releases o instalador del proyecto)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [OpenCode](opencode.md) | 226k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 | [goose](goose.md) | 56.4k | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. |
 
 ## Enlaces

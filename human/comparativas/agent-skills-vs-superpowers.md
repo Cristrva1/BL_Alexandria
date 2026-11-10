@@ -11,7 +11,7 @@
 | Ejecución | 🏠 local | ☁️ cloud/API |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | MIT |
-| Instalación | `.claude/skills/` | `~/.claude/skills` |
+| Instalación | Copia las carpetas a `.claude/skills/` (o la carpeta de skills de tu agente) o instálal… | Clona el repo y copia las skills e instrucciones a tu directorio de skills del asistent… |
 
 ## Regla práctica
 

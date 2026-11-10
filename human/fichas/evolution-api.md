@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "conectar WhatsApp a mi stack" sin acoplarte a un SaaS cerrado.
+Conecta WhatsApp a tu stack mediante una API REST propia, sin quedar atado a un proveedor cerrado.
 
 ## Por qué destaca
 

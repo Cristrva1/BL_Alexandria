@@ -51,7 +51,6 @@ Agentes y workflows basados en grafos se ejecutan con checkpoints, telemetría O
 |---|---:|---|
 | [AutoGen](autogen.md) | 61.8k | Framework de Microsoft para conversaciones entre agentes, hoy en modo mantenimiento. |
 | [Semantic Kernel](semantic-kernel.md) | 28.8k | SDK de Microsoft para integrar LLM en apps de C#, Python y Java con plugins y planificación. |
-| [LangGraph](langgraph.md) | 44.7k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
 
 ## Enlaces
 

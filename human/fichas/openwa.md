@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "enviar y recibir mensajes de WhatsApp desde mi script" con una API expresiva.
+Envía y recibe mensajes de WhatsApp desde tu propio script con una API sencilla y expresiva.
 
 ## Por qué destaca
 

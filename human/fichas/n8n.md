@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "conectar todo con todo" en self-host, sin el coste recurrente de un SaaS.
+Conecta cualquier app con cualquier otra en tu propio servidor, sin pagar una suscripción mensual por cada flujo.
 
 ## Por qué destaca
 

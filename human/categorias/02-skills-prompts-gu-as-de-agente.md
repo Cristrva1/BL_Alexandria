@@ -14,13 +14,13 @@ Si solo vas a mirar unos pocos, empieza por estos:
 |---|---:|---|---|
 | [Anthropic Skills](../fichas/anthropic-skills.md) | 192k | Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills. | `/plugin marketplace add anthropics/skills` |
 | [Claude Code Plugins Directory](../fichas/claude-plugins-official.md) | 46.7k | Marketplace oficial de Anthropic con plugins para Claude Code, propios y de socios: comandos, agentes, skills y servidores MCP. | `/plugin install <plugin>@claude-plugins-official` |
-| [Agent Skills (Addy Osmani)](../fichas/agent-skills.md) | 115k | Colección de skills de ingeniería de producción para agentes de código, de Addy Osmani. | `.claude/skills/` |
+| [Agent Skills (Addy Osmani)](../fichas/agent-skills.md) | 115k | Colección de skills de ingeniería de producción para agentes de código, de Addy Osmani. | Copia las carpetas a `.claude/skills/` (o la carpeta de skills de tu agente) o instálal… |
 | [Humanizer](../fichas/humanizer.md) | 67.4k | Skill que reescribe texto generado por IA para que suene humano, basada en la guía de Wikipedia sobre señales de escritura IA. | `/plugin marketplace add blader/humanizer` |
 | [Marketing Skills](../fichas/marketingskills.md) | 59.5k | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. | `npx skills add coreyhaines31/marketingskills` |
 | [Prompt Engineering Guide](../fichas/prompt-engineering-guide.md) | 80k | Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes. | No se instala: léela en promptingguide.ai o en el repo. |
 | [Fabric](../fichas/fabric.md) | 44.6k | CLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal. | `go install github.com/danielmiessler/fabric/cmd/fabric@latest` |
 | [Generative AI for Beginners](../fichas/generative-ai-for-beginners.md) | 123k | Curso gratuito de Microsoft con 21 lecciones para empezar a construir aplicaciones con IA generativa. | No se instala: abre el repo o haz fork y sigue las lecciones en Codespaces. |
-| [AI Agents for Beginners](../fichas/ai-agents-for-beginners.md) | 79.3k | Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español. | `00-course-setup` |
+| [AI Agents for Beginners](../fichas/ai-agents-for-beginners.md) | 79.3k | Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español. | Lee las lecciones en GitHub; para ejecutar el código, clona el repo (el README explica… |
 
 ## 🧭 Subcategorías
 

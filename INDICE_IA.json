@@ -3845,7 +3845,6 @@
    "pick": false,
    "one": "Agente de código para modelos abiertos como Kimi y GLM, pensado para correr con modelos locales o baratos.",
    "alt": [
-    "opencode",
     "goose"
    ],
    "doc": "human/fichas/open-interpreter.md"
@@ -4208,8 +4207,7 @@
    "pick": false,
    "one": "Framework y runtime de agentes en Python con memoria, conocimiento y equipos multiagente.",
    "alt": [
-    "crewai",
-    "langgraph"
+    "crewai"
    ],
    "doc": "human/fichas/agno.md"
   },
@@ -4618,8 +4616,7 @@
    "one": "Framework de Microsoft para agentes y workflows multiagente en Python y .NET, sucesor de AutoGen y Semantic Kernel.",
    "alt": [
     "autogen",
-    "semantic-kernel",
-    "langgraph"
+    "semantic-kernel"
    ],
    "doc": "human/fichas/agent-framework.md"
   },

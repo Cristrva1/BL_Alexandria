@@ -27,7 +27,7 @@ flowchart LR
 | 3 | [crawl4ai](../fichas/crawl4ai.md) | Convierte cada página en Markdown limpio para el LLM | 87.2k | `pip install crawl4ai` |
 | 4 | [browser-use](../fichas/browser-use.md) | Navega sitios dinámicos o con login | 121k | `pip install browser-use` |
 | 5 | [markitdown](../fichas/markitdown.md) | Ingiere PDFs y documentos locales | 195k | `pip install markitdown` |
-| 6 | [langfuse](../fichas/langfuse.md) | Trazas, costos y depuración de cada paso | 37.3k | `pip` |
+| 6 | [langfuse](../fichas/langfuse.md) | Trazas, costos y depuración de cada paso | 37.3k | Docker Compose para self-host (Postgres + backend + frontend) o cuenta cloud; SDKs vía… |
 
 ## 🔌 Cómo se conecta
 

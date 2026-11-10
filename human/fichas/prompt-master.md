@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "meta-prompting" reutilizable como capa por encima de cualquier IA.
+Te ayuda a escribir mejores prompts con meta-prompting reutilizable, como una capa por encima de cualquier IA.
 
 ## Por qué destaca
 

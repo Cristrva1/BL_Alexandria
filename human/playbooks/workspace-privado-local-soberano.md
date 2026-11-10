@@ -22,7 +22,7 @@ flowchart LR
 |---:|---|---|---:|---|
 | 1 | [Ollama](../fichas/ollama.md) | Corre los modelos abiertos en local | 187k | `curl -fsSL https://ollama.com/install.sh \| sh` |
 | 2 | [odysseus](../fichas/odysseus.md) | Workspace todo-en-uno: chat, documentos y tareas | 95.5k | `docker compose` |
-| 3 | [open-notebook](../fichas/open-notebook.md) | Cuaderno de investigación con RAG sobre tus fuentes | 41.8k | `docker` |
+| 3 | [open-notebook](../fichas/open-notebook.md) | Cuaderno de investigación con RAG sobre tus fuentes | 41.8k | `docker` (imagen oficial) o `pip` más Ollama para los modelos locales. Requiere Ollama… |
 | 4 | [mem0](../fichas/mem0.md) | Memoria persistente entre sesiones | 68.7k | `pip install mem0ai` |
 | 5 | [SearXNG](../fichas/searxng.md) | Búsqueda web privada cuando hace falta | 39.4k | `docker run -d -p 8080:8080 searxng/searxng` |
 

@@ -49,7 +49,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [wshobson/agents](fichas/wshobson-agents.md) | [Claude Code Plugins Directory](fichas/claude-plugins-official.md), [Agentic Awesome Skills](fichas/antigravity-awesome-skills.md), [The Agency (agency-agents)](fichas/agency-agents.md) |
 | [ag2](fichas/ag2.md) | [AutoGen](fichas/autogen.md) |
 | [Agent Development Kit (ADK)](fichas/adk-python.md) | [LangGraph](fichas/langgraph.md), [OpenAI Agents SDK](fichas/openai-agents-python.md) |
-| [Agno](fichas/agno.md) | [crewAI](fichas/crewai.md), [LangGraph](fichas/langgraph.md) |
+| [Agno](fichas/agno.md) | [crewAI](fichas/crewai.md) |
 | [AI SDK (Vercel)](fichas/vercel-ai.md) | [LangGraph.js](fichas/langgraphjs.md), [Mastra](fichas/mastra.md) |
 | [Aider](fichas/aider.md) | [OpenCode](fichas/opencode.md), [Cline](fichas/cline.md), [Continue](fichas/continue.md) |
 | [AutoGen](fichas/autogen.md) | [Microsoft Agent Framework](fichas/agent-framework.md), [ag2](fichas/ag2.md), [crewAI](fichas/crewai.md) |
@@ -79,9 +79,9 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [LlamaIndex](fichas/llama-index.md) | [Haystack](fichas/haystack.md), [langchain](fichas/langchain.md) |
 | [Mastra](fichas/mastra.md) | [LangGraph.js](fichas/langgraphjs.md), [AI SDK (Vercel)](fichas/vercel-ai.md) |
 | [Mercury Agent](fichas/mercury-agent.md) | [OpenClaw](fichas/openclaw.md), [hermes-agent](fichas/hermes-agent.md) |
-| [Microsoft Agent Framework](fichas/agent-framework.md) | [AutoGen](fichas/autogen.md), [Semantic Kernel](fichas/semantic-kernel.md), [LangGraph](fichas/langgraph.md) |
+| [Microsoft Agent Framework](fichas/agent-framework.md) | [AutoGen](fichas/autogen.md), [Semantic Kernel](fichas/semantic-kernel.md) |
 | [NemoClaw](fichas/nemoclaw.md) | [sandbox](fichas/sandbox.md) |
-| [Open Interpreter](fichas/open-interpreter.md) | [OpenCode](fichas/opencode.md), [goose](fichas/goose.md) |
+| [Open Interpreter](fichas/open-interpreter.md) | [goose](fichas/goose.md) |
 | [Open SWE](fichas/open-swe.md) | [OpenHands](fichas/openhands.md), [SWE-agent](fichas/swe-agent.md) |
 | [OpenAI Agents SDK](fichas/openai-agents-python.md) | [Pydantic AI](fichas/pydantic-ai.md), [LangGraph](fichas/langgraph.md), [smolagents](fichas/smolagents.md), [Deep Agents](fichas/deepagents.md), [Agent Development Kit (ADK)](fichas/adk-python.md) |
 | [OpenClaw](fichas/openclaw.md) | [hermes-agent](fichas/hermes-agent.md), [Mercury Agent](fichas/mercury-agent.md) |

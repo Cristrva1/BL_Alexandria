@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "arrancar un bot de WhatsApp sin tocar código".
+Arranca un bot de WhatsApp con IA sin escribir código, a partir de una plantilla guiada.
 
 ## Por qué destaca
 

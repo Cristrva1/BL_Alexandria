@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "nutrir leads por email con reglas" sin ceder tus datos a un SaaS.
+Nutre leads por email con reglas y segmentos automáticos, sin ceder los datos de tus clientes a un SaaS.
 
 ## Por qué destaca
 

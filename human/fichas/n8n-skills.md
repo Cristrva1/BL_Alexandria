@@ -12,7 +12,7 @@
 
 ## Qué es
 
-Resuelve la primitiva de "JSON de n8n que no falla" reduciendo bucles de error.
+Enseña a tu agente de código a escribir flujos de n8n en JSON que funcionan a la primera, con menos idas y vueltas de errores.
 
 ## Por qué destaca
 

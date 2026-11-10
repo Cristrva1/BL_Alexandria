@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**413 repos** de IA y automatización en **13 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-05.
+**411 repos** de IA y automatización en **13 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-05.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
