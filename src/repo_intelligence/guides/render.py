@@ -979,7 +979,7 @@ def _top_table(cat: Catalog, base: str, limit: int) -> str:
 # ---------------------------------------------------------------------------
 
 def _update_root_docs(project_root: Path, cat: Catalog) -> None:
-    repos = [r for r in cat.repos if not r.get("alias_of")]
+    repos = [r for r in cat.repos if not r.get("alias_of") and int(r.get("cat") or 0) > 0]
     local = sum(1 for r in repos if r.get("lib") and r.get("status") != "local")
     new = sum(1 for r in repos if not r.get("lib") and r.get("status") != "local")
     stats = (
