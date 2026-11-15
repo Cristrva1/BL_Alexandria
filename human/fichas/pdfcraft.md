@@ -1,59 +1,67 @@
-# pdfcraft
+[🏠 Inicio](../README.md) › [📄 Documentos & Presentaciones](../categorias/13-documentos-presentaciones.md) › Herramientas PDF
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📄 pdfcraft
 
-## Decision
+> Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 9.8k | AGPL-3.0 | TypeScript | 2026-11-08 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-PDFCraft procesa PDFs en el cliente. Encaja para utilidades locales de documentos, no para un pipeline de conversión masiva.
+## Qué es
 
-## Que problema resuelve
+Apunta a ser la alternativa local y sin nube a los servicios online de PDF.
 
-manipulas PDFs con privacidad y sin instalar nada
+## Por qué destaca
 
-## Por que tiene valor
+Todo el procesamiento ocurre en tu navegador, así que los documentos nunca salen de tu equipo ni dependen de un servicio de pago; útil para manipular PDFs sensibles sin subirlos a terceros.
 
-Aporta valor en `app` para docker, javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Carga el PDF en el cliente y manipula sus páginas con librerías JS de PDF (p. ej. pdf-lib) en el propio navegador, sin subir nada a la nube; las operaciones son por página o por documento completo.
 
-manipulas PDFs con privacidad y sin instalar nada
+## Instalación rápida
 
-## Cuando NO usarlo
+Abrir la web en el navegador, o `npm install` y ejecutar en local desde el repo. No requiere backend ni GPU.
 
-necesitas conversión a Markdown para IA ([markitdown](#-markitdown)) o edición de contenido (no solo manipulación de páginas).
+## Casos de uso
 
-## Tipo de instalacion
+- Combinar/dividir/convertir PDF sin subirlos a la nube
+- Manipulación local de documentos sensibles
+- Comprimir PDF antes de enviarlos
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| manipulas PDFs con privacidad y sin instalar nada | necesitas conversión a Markdown para IA (markitdown) o edición de contenido (no solo manipulación de páginas) |
 
-javascript/typescript, typescript, javascript, react, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** web/TS
+- **Modelos / API:** N/A.
+- **Etiquetas:** `pdf` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [markitdown](markitdown.md) | 195k | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. |
 
-- `markitdown`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Stirling-PDF](stirling-pdf.md) | 96.2k | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [PDFCraftTool/pdfcraft](https://github.com/PDFCraftTool/pdfcraft)
+- 🌐 Web: <https://pdfcraft.devtoolcafe.com>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con markitdown cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si manipulas PDFs con privacidad y sin instalar nada. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

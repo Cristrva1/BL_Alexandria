@@ -1,61 +1,62 @@
-# Nemotron
+[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Modelos abiertos y fundacionales
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧠 Nemotron (NVIDIA)
 
-## Decision
+> Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 2.3k | Apache-2.0 | Jupyter Notebook | 2026-11-05 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🔴 pesado
 
-Open and efficient models for agentic AI. Training recipes, deployment guides, and use-case examples for the Nemotron family.
+## Qué es
 
-## Que problema resuelve
+Reúne guías de entrenamiento, despliegue y casos de uso de los modelos Nemotron, pensados para IA agéntica eficiente.
 
-quieres nvidia nemotron developer repository
+## Por qué destaca
 
-## Por que tiene valor
+Modelos abiertos con datos y recetas publicados, optimizados para GPUs NVIDIA.
 
-Aporta valor en `app` para postgres, python, typescript. Stack declarado: python, typescript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Notebooks y documentación que usan NeMo, vLLM o TensorRT-LLM.
 
-quieres nvidia nemotron developer repository
+## Instalación rápida
 
-## Cuando NO usarlo
+No se instala: sigue las guías del repo para el modelo que necesites.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Desplegar modelos abiertos de NVIDIA
+- Afinar Nemotron
+- Agentes con modelos eficientes
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| usas GPUs NVIDIA y quieres modelos abiertos optimizados | buscas la forma más simple de correr modelos; mira `ollama` |
 
-python, typescript, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, Jupyter
+- **Modelos / API:** Modelos Nemotron.
+- **Etiquetas:** `training` `inference`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [vLLM](vllm.md) | 96.7k | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. |
+| [NemoClaw](nemoclaw.md) | 23k | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. |
 
-- `openwa`
-- `skills`
-- `agency-agents`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [NVIDIA-NeMo/Nemotron](https://github.com/NVIDIA-NeMo/Nemotron)
+- 🌐 Web: <https://docs.nvidia.com/nemotron/latest/index.html>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si quieres nvidia nemotron developer repository. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

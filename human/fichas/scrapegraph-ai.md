@@ -1,60 +1,68 @@
-# Scrapegraph-ai
+[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Scraping guiado por LLM
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🕸️ Scrapegraph-ai
 
-## Decision
+> Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 32.7k | MIT | Python | 2026-10-06 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-ScrapeGraphAI convierte una instrucción en un grafo de extracción web. Encaja cuando el HTML es irregular y un scraper clásico se rompe.
+## Qué es
 
-## Que problema resuelve
+Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. Muy popular por permitir scraping "by prompt", combinando extracción con razonamiento del modelo y soporte para múltiples proveedores.
 
-quieres estructura semántica "by prompt" en Python
+## Por qué destaca
 
-## Por que tiene valor
+Muy popular por permitir scraping "by prompt", combinando extracción con razonamiento del modelo y soporte para múltiples proveedores. Su filosofía "You Only Scrape Once" resume el valor: una descripción, un grafo.
 
-Aporta valor en `platform` para docker, javascript, langchain, python, scraping, typescript. Stack declarado: python, typescript, javascript, docker, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Construye un grafo dirigido de nodos (fetch, parse, generación con LLM) que recorre la página y produce el resultado estructurado pedido, usando LangGraph por debajo.
 
-quieres estructura semántica "by prompt" en Python
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install scrapegraphai` más `playwright install` para el render dinámico. Requiere una clave de proveedor de LLM y los binarios de Playwright.
 
-te basta un esquema simple ([llm-scraper](#-llm-scraper)) o el coste de LLM por página es alto.
+## Casos de uso
 
-## Tipo de instalacion
+- Extracción semántica de sitios
+- Datasets útiles para IA
+- Scraping sin selectores, solo describiendo los campos
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres estructura semántica "by prompt" en Python | te basta un esquema simple (llm-scraper) o el coste de LLM por página es alto |
 
-python, typescript, javascript, docker, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, LangChain/LangGraph, Playwright
+- **Modelos / API:** Múltiples LLMs (OpenAI, Anthropic, locales vía Ollama); agnóstico vía variables de entorno.
+- **Etiquetas:** `scraping` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [crawl4ai](crawl4ai.md) | 87.2k | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. |
+| [graphrag](graphrag.md) | 36.6k | Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. |
 
-- `crawl4ai`
-- `graphrag`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Maxun](maxun.md) | 18.2k | Plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [ScrapeGraphAI/Scrapegraph-ai](https://github.com/ScrapeGraphAI/Scrapegraph-ai)
+- 🌐 Web: <https://scrapegraphai.com>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con crawl4ai, graphrag cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres estructura semántica "by prompt" en Python. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

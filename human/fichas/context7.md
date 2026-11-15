@@ -1,61 +1,72 @@
-# context7
+[🏠 Inicio](../README.md) › [🔌 MCP & Conectividad](../categorias/05-mcp-conectividad.md) › Servidores MCP destacados
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔌 Context7
 
-## Decision
+> Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 64.5k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-Context7 evita que el modelo alucine APIs viejas: trae docs versionadas al contexto. Instálalo como servidor MCP en el agente de código.
+## Qué es
 
-## Que problema resuelve
+Evita que el modelo invente APIs viejas: busca la documentación vigente de la librería que estás usando y la inyecta en el prompt.
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+## Por qué destaca
 
-## Por que tiene valor
+Muy adoptado en agentes de código; reduce errores por APIs obsoletas.
 
-Aporta valor en `runtime` para mcp, docs, agents. Stack declarado: javascript/typescript, typescript, javascript, react.
+## Cómo funciona
 
-## Cuando usarlo
+Indexa documentación de miles de proyectos y la sirve por MCP filtrada por librería y versión.
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+## Instalación rápida
 
-## Cuando NO usarlo
+Añade a tu cliente MCP: `npx -y @upstash/context7-mcp` (o el servidor remoto con clave).
 
-prefieres conexiones directas sin protocolo estándar
+## Casos de uso
 
-## Tipo de instalacion
+- Programar con librerías que cambian rápido
+- Evitar APIs alucinadas
+- Consultar docs sin salir del agente
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| tu agente de código usa librerías que cambian a menudo | trabajas sin conexión a internet |
 
-javascript/typescript, typescript, javascript, react
+**Limitaciones:** Depende del servicio en la nube de Upstash.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** TypeScript
+- **Modelos / API:** No usa LLM.
+- **Etiquetas:** `mcp` `docs` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `claude-plugins-official`
-- `n8n-skills`
-- `mcp`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Cline](cline.md) | 71.5k | Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo. |
+| [OpenCode](opencode.md) | 226k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [DeepWiki Open](deepwiki-open.md) | 18.4k | Generador de wikis con IA para repos de GitHub, GitLab o Bitbucket, versión abierta de DeepWiki. |
 
-## Riesgos
+## Enlaces
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+- 🐙 GitHub: [upstash/context7](https://github.com/upstash/context7)
+- 🌐 Web: <https://context7.com>
+- 🧪 Receta: [Agente de código potenciado](../playbooks/agente-de-codigo-potenciado.md)
 
-## Ideas profesionales
+---
 
-Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

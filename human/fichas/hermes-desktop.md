@@ -1,61 +1,61 @@
-# hermes-desktop
+[🏠 Inicio](../README.md) › [🏠 IA Local: Modelos, Chats & Workspaces](../categorias/08-ia-local-modelos-chats-workspaces.md) › Workspaces privados y segundos cerebros
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🏠 Hermes Desktop
 
-## Decision
+> App de escritorio que envuelve al agente Hermes en una interfaz nativa.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 14.6k | MIT | TypeScript | 2026-10-13 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-Hermes Desktop envuelve el agente Hermes en una UI nativa. Úsalo si quieres Hermes como aplicación, no solo como CLI.
+## Qué es
 
-## Que problema resuelve
+Para quien quiere usar Hermes Agent como aplicación y no solo desde la terminal.
 
-quieres español (latam)
+## Por qué destaca
 
-## Por que tiene valor
+Hace accesible Hermes a usuarios no técnicos.
 
-Aporta valor en `app` para automation, javascript, javascript-typescript, postgres, python, react, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, react, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Una app de escritorio que lanza y controla el agente Hermes local.
 
-quieres español (latam)
+## Instalación rápida
 
-## Cuando NO usarlo
+Descarga el instalador desde los releases.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Usar Hermes sin terminal
+- Gestionar sesiones del agente
+- Asistente de escritorio
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| usas Hermes Agent y prefieres una app de escritorio | no usas Hermes |
 
-javascript/typescript, python, typescript, javascript, react, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** TypeScript, Electron
+- **Modelos / API:** El modelo configurado en Hermes.
+- **Etiquetas:** `agents` `ui` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [hermes-agent](hermes-agent.md) | 262k | Entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. |
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [fathah/hermes-desktop](https://github.com/fathah/hermes-desktop)
+- 🌐 Web: <https://hermesone.org>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres español (latam). No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

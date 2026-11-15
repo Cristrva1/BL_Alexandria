@@ -3,423 +3,493 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
-## `agency-agents`
-role=skill · exec=local · setup=heavy · mcp=False · prov=—
+## `animejs`
+role=library · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
-**Stack:** python, typescript, react, postgres, whisper
-**Repo:** https://github.com/msitarzewski/agency-agents.git
+**Qué es:** API simple y potente para líneas de tiempo, scroll y animaciones complejas.
+**Stack:** JavaScript
+**Repo:** https://github.com/juliangarnier/anime
 
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/agency-agents/). Si necesitas el código: git clone https://github.com/msitarzewski/agency-agents.git`
-_Material de referencia/playbook; no es una dependencia runtime._
+**Instalación** [~]: `npm install anime.js   (o: pnpm add anime.js)`
+_Nombre npm puede diferir de 'Anime.js'; verifica en npmjs.com._
 
-**Elige si:** operas una agencia con muchas marcas
-**Evita si:** eres un solo proyecto pequeño ([marketingskills](#-marketingskills) basta).
-**Combina con:** `marketingskills`, `geo-seo-claude`
+**Elige si:** quieres animaciones potentes sin framework
+**Evita si:** usas React y quieres animaciones declarativas; mira `motion`
+**Alternativas (elige una):** `gsap`, `motion`
 
-## `daily-stock-analysis`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+## `ant-design`
+role=library · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** 🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱.
-**Stack:** python, typescript, docker, postgres, fastapi
-**Repo:** https://github.com/ZhuLinsen/daily_stock_analysis.git
+**Qué es:** Componentes muy completos para apps de negocio: tablas, formularios, fechas y layouts de backoffice.
+**Stack:** TypeScript, React
+**Repo:** https://github.com/ant-design/ant-design
 
-**Instalación** [~]: `pip install daily_stock_analysis   (o: uv add daily_stock_analysis)`
-_Nombre PyPI puede diferir de 'daily_stock_analysis'; verifica en pypi.org._
+**Instalación** [~]: `npm install ant design   (o: pnpm add ant design)`
+_Nombre npm puede diferir de 'Ant Design'; verifica en npmjs.com._
 
-**Elige si:** quieres 📈 股票智能分析系统
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** construyes apps empresariales con muchos datos
+**Evita si:** quieres un estilo más personalizado; mira `ui`
+**Combina con:** `echarts`
+**Alternativas (elige una):** `mui`, `ui`
+
+## `assistant-ui`
+role=library · exec=local · setup=easy · mcp=False · prov=—
+
+**Qué es:** Componentes componibles de chat con streaming, adjuntos, markdown y herramientas, compatibles con AI SDK y LangGraph.
+**Stack:** TypeScript, React
+**Repo:** https://github.com/assistant-ui/assistant-ui
+
+**Instalación** [~]: `npm install assistant-ui   (o: pnpm add assistant-ui)`
+_Nombre npm puede diferir de 'assistant-ui'; verifica en npmjs.com._
+
+**Elige si:** necesitas una UI de chat pulida en React
+**Evita si:** quieres agentes que manipulen tu app; mira `copilotkit`
+**Combina con:** `vercel-ai`, `ui`
+**Alternativas (elige una):** `copilotkit`
+
+## `copilotkit`
+role=library · exec=hybrid · setup=easy · mcp=False · prov=['openai', 'anthropic']
+
+**Qué es:** Añade copilotos, chat y agentes que actúan sobre tu app, con estado compartido entre agente y UI. Se integra con LangGraph, Mastra y más.
+**Stack:** TypeScript, React
+**Repo:** https://github.com/CopilotKit/CopilotKit
+
+**Instalación** [~]: `npm install copilotkit   (o: pnpm add copilotkit)`
+_Nombre npm puede diferir de 'CopilotKit'; verifica en npmjs.com._
+
+**Elige si:** quieres agentes que interactúen con la UI de tu app
+**Evita si:** solo necesitas una ventana de chat; mira `assistant-ui`
+**Combina con:** `langgraph`, `mastra`
+**Alternativas (elige una):** `assistant-ui`
+
+## `daisyui`
+role=library · exec=local · setup=easy · mcp=False · prov=—
+
+**Qué es:** Añade clases como `btn` o `card` sobre Tailwind para escribir menos HTML, sin JavaScript.
+**Stack:** JavaScript, CSS, Tailwind
+**Repo:** https://github.com/saadeghi/daisyui
+
+**Instalación** [~]: `npm install daisyui   (o: pnpm add daisyui)`
+_Nombre npm puede diferir de 'daisyUI'; verifica en npmjs.com._
+
+**Elige si:** usas Tailwind y quieres componentes sin JavaScript
+**Evita si:** usas React y quieres control total; mira `ui`
+**Combina con:** `tailwindcss`
+**Alternativas (elige una):** `ui`
 
 ## `design.md`
-role=directory · exec=local · setup=medium · mcp=False · prov=—
+role=skill · exec=cloud · setup=easy · mcp=False · prov=—
 
-**Qué es:** A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.
-**Stack:** javascript/typescript, typescript, javascript
-**Repo:** https://github.com/google-labs-code/design.md.git
+**Qué es:** Resuelve la inconsistencia de marca cuando varias personas o agentes tocan la UI.
+**Stack:** Markdown/YAML
+**Repo:** https://github.com/google-labs-code/design.md
 
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/design.md/). Si necesitas el código: git clone https://github.com/google-labs-code/design.md.git`
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/design.md/). Si necesitas el código: git clone https://github.com/google-labs-code/design.md`
 _Material de referencia/playbook; no es una dependencia runtime._
 
 **Elige si:** quieres consistencia de marca con IA y usas agentes para UI
-**Evita si:** no usas agentes para generar código de UI.
-**Combina con:** `impeccable`, `skills-emil`
+**Evita si:** no usas agentes para generar código de UI
+**Combina con:** `impeccable`
 
-## `gradio`
-role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
+## `excalidraw`
+role=app · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** Gradio is an open-source Python package that allows you to quickly build a demo or web application for your machine learning model, API, or any arbitrary Python function. You can then share a link to your demo or web application in just a few seconds using Gradio's built-in sharing features. No JavaScript, CSS, or web hosting experience needed!
-**Stack:** python, typescript, javascript, react, postgres, fastapi
-**Repo:** https://github.com/gradio-app/gradio.git
+**Qué es:** Dibuja diagramas rápidos que parecen bocetos, colabora en tiempo real y embébela en tus apps como componente React.
+**Stack:** TypeScript, React, Canvas
+**Repo:** https://github.com/excalidraw/excalidraw
 
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/gradio/). Si necesitas el código: git clone https://github.com/gradio-app/gradio.git`
-_Material de referencia/playbook; no es una dependencia runtime._
-
-**Elige si:** quieres <!-- do not edit this file directly. instead edit the `readme_template.md` or `guides/01_g
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
-
-## `graphrag`
-role=library · exec=local · setup=heavy · mcp=False · prov=—
-
-**Qué es:** 👉 Microsoft Research Blog Post 👉 Read the docs 👉 GraphRAG Arxiv.
-**Stack:** python, typescript
-**Repo:** https://github.com/microsoft/graphrag.git
-
-**Instalación** [~]: `pip install graphrag   (o: uv add graphrag)`
-_Nombre PyPI puede diferir de 'graphrag'; verifica en pypi.org._
-
-**Elige si:** tu corpus tiene relaciones ricas y el RAG por fragmentos se queda corto
-**Evita si:** un RAG simple basta o el coste de indexado con LLM es prohibitivo.
-**Combina con:** `graphify`, `mcp-neo4j`, `turbovec`
-
-## `gsap`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
-
-**Qué es:** GSAP is a framework-agnostic JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects... anything JavaScript can touch! GSAP's ScrollTrigger plugin delivers jaw-droppin.
-**Stack:** javascript/typescript, typescript, javascript, react, postgres
-**Repo:** https://github.com/greensock/GSAP.git
-
-**Instalación** [~]: `git clone https://github.com/greensock/GSAP.git && cd GSAP && (pnpm install || npm install)`
+**Instalación** [~]: `git clone https://github.com/excalidraw/excalidraw && cd excalidraw && (pnpm install || npm install)`
 _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 
-**Elige si:** necesitas animación avanzada y control fino de timelines
-**Evita si:** te basta animar componentes React con API declarativa ([motion](#-motion)).
-**Combina con:** `three.js`, `motion`
+**Elige si:** quieres diagramas rápidos con estilo boceto
+**Evita si:** prefieres diagramas como texto; mira `mermaid`
+**Alternativas (elige una):** `tldraw`, `mermaid`
 
-## `heroui`
+## `gsap`
 role=library · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** HeroUI (antes NextUI) entrega componentes React con tema. Elige esto si quieres una lib con actualizaciones; elige `ui` (shadcn) si quieres dueño del código copiado.
-**Stack:** javascript/typescript, javascript, react
-**Repo:** https://github.com/heroui-inc/heroui.git
+**Qué es:** Es la herramienta de referencia del motion web profesional.
+**Stack:** JavaScript
+**Repo:** https://github.com/greensock/GSAP
+
+**Instalación** [~]: `npm install gsap   (o: pnpm add gsap)`
+_Nombre npm puede diferir de 'GSAP'; verifica en npmjs.com._
+
+**Elige si:** necesitas animación avanzada y control fino de timelines
+**Evita si:** te basta animar componentes React con API declarativa (motion)
+**Combina con:** `motion`
+**Alternativas (elige una):** `animejs`
+
+## `heroui`
+role=library · exec=local · setup=easy · mcp=True · prov=—
+
+**Qué es:** Resuelve la accesibilidad seria sin renunciar a un estilado moderno.
+**Stack:** Node.js, React, Tailwind
+**Repo:** https://github.com/heroui-inc/heroui
 
 **Instalación** [~]: `npm install heroui   (o: pnpm add heroui)`
 _Nombre npm puede diferir de 'heroui'; verifica en npmjs.com._
 
 **Elige si:** quieres calidad + accesibilidad listas
-**Evita si:** quieres control copy-paste del código ([ui](#-ui-shadcn)).
+**Evita si:** quieres control copy-paste del código (ui)
 **Combina con:** `tailwindcss`, `swr`
+**Alternativas (elige una):** `mui`
 
 ## `impeccable`
-role=skill · exec=hybrid · setup=easy · mcp=False · prov=—
+role=skill · exec=cloud · setup=easy · mcp=False · prov=—
 
-**Qué es:** Design guidance for AI coding agents. 1 skill, 23 commands, live browser iteration, and 44 deterministic detector rules for AI-generated frontend design.
-**Stack:** javascript/typescript, typescript, javascript
-**Repo:** https://github.com/pbakaus/impeccable.git
+**Qué es:** Ataca el patrón repetitivo de interfaces que "huelen" a IA.
+**Stack:** Node (`npx impeccable`)
+**Repo:** https://github.com/pbakaus/impeccable
 
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/impeccable/). Si necesitas el código: git clone https://github.com/pbakaus/impeccable.git`
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/impeccable/). Si necesitas el código: git clone https://github.com/pbakaus/impeccable`
 _Material de referencia/playbook; no es una dependencia runtime._
 
 **Elige si:** quieres frontends que no parezcan generados por IA
-**Evita si:** no generas UI con agentes.
-**Combina con:** `taste-skill`, `ui-ux-pro-max-skill`, `design.md`
+**Evita si:** no generas UI con agentes
+**Combina con:** `taste-skill`, `ui-ux-pro-max-skill`
 
-## `llmfit`
-role=app · exec=local · setup=heavy · mcp=False · prov=—
+## `lucide`
+role=library · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** New: Community Leaderboard — Browse real-world performance data from actual users. Press `b` to see measured tok/s, TTFT, and VRAM for any GPU — not just yours. Pick from 27+ hardware presets (RTX 5090 to Apple M1) with `H` to compare real numbers before you buy or build.
-**Stack:** python, typescript, javascript, docker, postgres
-**Repo:** https://github.com/AlexsJones/llmfit.git
+**Qué es:** Iconos limpios y uniformes, usados por shadcn/ui y muchas apps.
+**Stack:** TypeScript, SVG
+**Repo:** https://github.com/lucide-icons/lucide
 
-**Instalación** [~]: `git clone https://github.com/AlexsJones/llmfit.git && cd llmfit && docker compose up -d`
-_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+**Instalación** [~]: `npm install lucide   (o: pnpm add lucide)`
+_Nombre npm puede diferir de 'Lucide'; verifica en npmjs.com._
 
-**Elige si:** necesitas elegir modelo con datos y reproducibilidad
-**Evita si:** ya tienes el modelo decidido o tu caso no justifica un harness de evaluación.
-**Combina con:** `litellm`, `langfuse`
+**Elige si:** necesitas iconos consistentes
+**Evita si:** buscas ilustraciones, no iconos
+**Combina con:** `ui`
 
 ## `magicui`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** Visit https://magicui.design/docs to view the documentation.
-**Stack:** javascript/typescript, typescript, javascript, react
-**Repo:** https://github.com/magicuidesign/magicui.git
+**Qué es:** Apunta al impacto visual más que a la accesibilidad estricta.
+**Stack:** Node.js, React/Next.js
+**Repo:** https://github.com/magicuidesign/magicui
 
-**Instalación** [~]: `git clone https://github.com/magicuidesign/magicui.git && cd magicui && (pnpm install || npm install)`
-_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+**Instalación** [~]: `npm install magicui   (o: pnpm add magicui)`
+_Nombre npm puede diferir de 'magicui'; verifica en npmjs.com._
 
 **Elige si:** priorizas estética y velocidad
-**Evita si:** necesitas accesibilidad estricta ([heroui](#-heroui)).
+**Evita si:** necesitas accesibilidad estricta (heroui)
 **Combina con:** `tailwindcss`, `motion`
-
-## `mirofish`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
-
-**Qué es:** A Simple and Universal Swarm Intelligence Engine, Predicting Anything.
-**Stack:** javascript/typescript, python, typescript, javascript, docker, postgres
-**Repo:** https://github.com/666ghj/MiroFish.git
-
-**Instalación** [~]: `git clone https://github.com/666ghj/MiroFish.git && cd MiroFish && docker compose up -d`
-_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
-
-**Elige si:** simulas futuros/escenarios con muchos actores
-**Evita si:** necesitas tareas deterministas o resultados reproducibles.
-**Combina con:** `openevolve`
+**Alternativas (elige una):** `react-bits`
 
 ## `motion`
-role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** Motion (antes Framer Motion) anima interfaces web con una API declarativa. Úsala en el frontend, no como motor de video.
-**Stack:** javascript/typescript, typescript, javascript, react
-**Repo:** https://github.com/motiondivision/motion.git
+**Qué es:** Hizo accesible la animación en el ecosistema React.
+**Stack:** JavaScript/React
+**Repo:** https://github.com/motiondivision/motion
 
 **Instalación** [~]: `npm install motion   (o: pnpm add motion)`
 _Nombre npm puede diferir de 'motion'; verifica en npmjs.com._
 
 **Elige si:** animas componentes React con API declarativa
-**Evita si:** necesitas timelines complejos no ligados a React ([GSAP](#-gsap)).
+**Evita si:** necesitas timelines complejos no ligados a React (GSAP)
 **Combina con:** `magicui`, `react-three-fiber`
+**Alternativas (elige una):** `animejs`
 
-## `nanochat`
-role=app · exec=local · setup=heavy · mcp=False · prov=—
+## `mui`
+role=library · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all major LLM stages including tokenization, pretraining, finetuning, evaluation, inference, and a chat UI.
-**Stack:** python, typescript, javascript, whisper
-**Repo:** https://github.com/karpathy/nanochat.git
+**Qué es:** Cientos de componentes accesibles y personalizables para apps React, con temas y sistema de estilos propio.
+**Stack:** JavaScript, TypeScript, React
+**Repo:** https://github.com/mui/material-ui
 
-**Instalación** [~]: `git clone https://github.com/karpathy/nanochat.git && cd nanochat && (uv sync || pip install -r requirements.txt)`
-_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+**Instalación** [~]: `npm install material ui   (o: pnpm add material ui)`
+_Nombre npm puede diferir de 'Material UI'; verifica en npmjs.com._
 
-**Elige si:** quieres el pipeline completo de un chat end-to-end
-**Evita si:** solo necesitas el core del modelo ([nanoGPT](#-nanogpt)) o un modelo listo para usar.
-**Combina con:** `nanogpt`
-
-## `nemotron`
-role=app · exec=hybrid · setup=heavy · mcp=False · prov=—
-
-**Qué es:** Open and efficient models for agentic AI. Training recipes, deployment guides, and use-case examples for the Nemotron family.
-**Stack:** python, typescript, postgres
-**Repo:** https://github.com/NVIDIA-NeMo/Nemotron.git
-
-**Instalación** [~]: `git clone https://github.com/NVIDIA-NeMo/Nemotron.git && cd Nemotron && (uv sync || pip install -r requirements.txt)`
-_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
-
-**Elige si:** quieres nvidia nemotron developer repository
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** quieres una librería React completa y probada
+**Evita si:** prefieres copiar componentes y estilarlos con Tailwind; mira `ui`
+**Combina con:** `recharts`
+**Alternativas (elige una):** `ant-design`, `ui`, `heroui`
 
 ## `normalize.css`
 role=library · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** normalize.css alinea el render de elementos HTML entre navegadores. Es una base de CSS, no un sistema de diseño.
-**Stack:** javascript/typescript, typescript, javascript
-**Repo:** https://github.com/necolas/normalize.css.git
+**Qué es:** Resuelve las inconsistencias de margen, tipografía y formularios entre Chrome, Firefox y Safari.
+**Stack:** CSS
+**Repo:** https://github.com/necolas/normalize.css
 
-**Instalación** [~]: `npm install normalize.css   (o: pnpm add normalize.css)`
-_Nombre npm puede diferir de 'normalize.css'; verifica en npmjs.com._
+**Instalación** [?]: `git clone https://github.com/necolas/normalize.css (verificar README para install)`
+_Stack no claro; revisa el README tras clonar._
 
 **Elige si:** quieres base CSS uniforme y ligera
-**Evita si:** ya usas el preflight de Tailwind, que cubre lo mismo.
+**Evita si:** ya usas el preflight de Tailwind, que cubre lo mismo
 **Combina con:** `tailwindcss`
 
+## `onlook`
+role=app · exec=local · setup=easy · mcp=False · prov=['anthropic']
+
+**Qué es:** Edita tu app en un lienzo visual o pide cambios a la IA, y Onlook escribe el código en tu proyecto.
+**Stack:** TypeScript, Next.js, Tailwind
+**Repo:** https://github.com/onlook-dev/onlook
+
+**Instalación** [~]: `git clone https://github.com/onlook-dev/onlook && cd onlook && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+
+**Elige si:** quieres editar tu app React visualmente con ayuda de IA
+**Evita si:** necesitas diseño desde cero en vectores; mira `penpot`
+**Combina con:** `tailwindcss`, `ui`
+**Alternativas (elige una):** `open-design`
+
 ## `open-design`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=app · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** 🔥 Open Design 0.10.0 is here: the all-in-one Agentic design workspace. The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing off to an editor or a Code Agent — without leaving the app.
-**Stack:** javascript/typescript, typescript, javascript, react, docker, postgres
-**Repo:** https://github.com/nexu-io/open-design.git
+**Qué es:** Resuelve el ir y venir entre prompt, preview y código exportable.
+**Stack:** TypeScript/React, Tauri (Rust)
+**Repo:** https://github.com/nexu-io/open-design
 
-**Instalación** [~]: `git clone https://github.com/nexu-io/open-design.git && cd open-design && docker compose up -d`
-_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+**Instalación** [~]: `git clone https://github.com/nexu-io/open-design && cd open-design && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 
 **Elige si:** generas UI desde texto y quieres edición visual
-**Evita si:** prefieres editar visualmente sobre tu código existente ([plasmic](#-plasmic)).
-**Combina con:** `tailwindcss`, `heroui`, `web app moderna`
+**Evita si:** prefieres editar visualmente sobre tu código existente (plasmic)
+**Combina con:** `tailwindcss`, `heroui`
+**Alternativas (elige una):** `onlook`
+
+## `openui`
+role=library · exec=hybrid · setup=easy · mcp=False · prov=—
+
+**Qué es:** Permite que el modelo devuelva componentes interactivos (tablas, formularios, gráficos) que tu app renderiza.
+**Stack:** TypeScript, React
+**Repo:** https://github.com/thesysdev/openui
+
+**Instalación** [~]: `npm install openui   (o: pnpm add openui)`
+_Nombre npm puede diferir de 'OpenUI'; verifica en npmjs.com._
+
+**Elige si:** quieres que tu agente responda con interfaces
+**Evita si:** solo necesitas chat de texto; mira `assistant-ui`
+**Combina con:** `copilotkit`
 
 ## `penpot`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=app · exec=local · setup=heavy · mcp=False · prov=—
 
-**Qué es:** Penpot is the open-source design platform for teams that build digital products at scale.
-**Stack:** javascript/typescript, python, typescript, javascript, react, docker, postgres
-**Repo:** https://github.com/penpot/penpot.git
+**Qué es:** Es la alternativa abierta a Figma más conocida.
+**Stack:** stack web self-host, Docker (Clojure/ClojureScript)
+**Repo:** https://github.com/penpot/penpot
 
-**Instalación** [~]: `git clone https://github.com/penpot/penpot.git && cd penpot && docker compose up -d`
+**Instalación** [~]: `git clone https://github.com/penpot/penpot && cd penpot && docker compose up -d`
 _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 
 **Elige si:** quieres diseño abierto y soberano, self-host
-**Evita si:** necesitas generación por IA ([open-design](#-open-design)) o no quieres operar Docker.
-**Combina con:** `design.md`, `plasmic`
+**Evita si:** necesitas generación por IA (open-design) o no quieres operar Docker
+**Combina con:** `plasmic`
 
 ## `plasmic`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=app · exec=hybrid · setup=medium · mcp=False · prov=—
 
-**Qué es:** The open-source visual builder for your codebase. Build beautiful apps and websites incredibly fast. Drag and drop your own components, integrate with your codebase. Break through the low-code ceiling.
-**Stack:** javascript/typescript, typescript, javascript, react, docker
-**Repo:** https://github.com/plasmicapp/plasmic.git
+**Qué es:** Cubre el hueco entre no-code y desarrollo a medida.
+**Stack:** Node.js, React/Next.js
+**Repo:** https://github.com/plasmicapp/plasmic
 
-**Instalación** [~]: `npm install plasmic   (o: pnpm add plasmic)`
-_Nombre npm puede diferir de 'plasmic'; verifica en npmjs.com._
+**Instalación** [~]: `git clone https://github.com/plasmicapp/plasmic && cd plasmic && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 
 **Elige si:** quieres editar visual sobre tu código React
-**Evita si:** generas desde texto sin codebase previo ([open-design](#-open-design)).
-**Combina con:** `tailwindcss`, `ui`
+**Evita si:** generas desde texto sin codebase previo (open-design)
+**Combina con:** `tailwindcss`
 
-## `posthog`
-role=skill · exec=local · setup=medium · mcp=False · prov=—
+## `radix-primitives`
+role=library · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** PostHog is an all-in-one, open source platform for building successful products.
-**Stack:** python, typescript, javascript, react, docker
-**Repo:** https://github.com/PostHog/posthog.git
+**Qué es:** Resuelven accesibilidad, foco y teclado en diálogos, menús o tooltips, dejándote el estilo. Son la base de shadcn/ui.
+**Stack:** TypeScript, React
+**Repo:** https://github.com/radix-ui/primitives
 
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/posthog/). Si necesitas el código: git clone https://github.com/PostHog/posthog.git`
-_Material de referencia/playbook; no es una dependencia runtime._
+**Instalación** [~]: `npm install radix primitives   (o: pnpm add radix primitives)`
+_Nombre npm puede diferir de 'Radix Primitives'; verifica en npmjs.com._
 
-**Elige si:** quieres entender el uso real y el comportamiento de usuarios
-**Evita si:** solo necesitas BI sobre una BD estática ([metabase](#-metabase)).
-**Combina con:** `metabase`, `marketing de agencia`
+**Elige si:** construyes tu propio sistema de diseño
+**Evita si:** quieres componentes ya estilados; mira `ui`
+**Combina con:** `ui`, `tailwindcss`
+
+## `react-bits`
+role=library · exec=local · setup=easy · mcp=False · prov=—
+
+**Qué es:** Fondos, textos animados y efectos listos para copiar en proyectos React y Next.js.
+**Stack:** JavaScript, React
+**Repo:** https://github.com/DavidHDev/react-bits
+
+**Instalación** [~]: `npm install react bits   (o: pnpm add react bits)`
+_Nombre npm puede diferir de 'React Bits'; verifica en npmjs.com._
+
+**Elige si:** quieres efectos visuales llamativos en React
+**Evita si:** necesitas componentes de formulario y datos; mira `ui`
+**Combina con:** `ui`, `motion`
+**Alternativas (elige una):** `magicui`
 
 ## `react-three-fiber`
 role=library · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** react-three-fiber is a React renderer for threejs.
-**Stack:** javascript/typescript, typescript, javascript, react, postgres
-**Repo:** https://github.com/pmndrs/react-three-fiber.git
+**Qué es:** Lleva la mentalidad componible de React al 3D sin abandonar three.js por debajo.
+**Stack:** JavaScript/React
+**Repo:** https://github.com/pmndrs/react-three-fiber
 
 **Instalación** [~]: `npm install react-three-fiber   (o: pnpm add react-three-fiber)`
 _Nombre npm puede diferir de 'react-three-fiber'; verifica en npmjs.com._
 
 **Elige si:** haces 3D en React y quieres reactividad
-**Evita si:** no usas React o necesitas control a bajo nivel ([three.js](#-threejs) directo).
-**Combina con:** `three.js`, `motion`
+**Evita si:** no usas React o necesitas control a bajo nivel (three.js directo)
+**Combina con:** `motion`
 
-## `real-esrgan`
-role=library · exec=local · setup=heavy · mcp=False · prov=—
+## `screenshot-to-code`
+role=app · exec=cloud · setup=easy · mcp=False · prov=['openai', 'anthropic', 'google']
 
-**Qué es:** 🔥 RealESRGANx4plusanime6B for anime images (动漫插图模型). Please see [animemodel].
-**Stack:** python, typescript, postgres
-**Repo:** https://github.com/xinntao/Real-ESRGAN.git
+**Qué es:** Sube una imagen o graba un video de una web y obtén código funcional que puedes iterar.
+**Stack:** Python, TypeScript, React
+**Repo:** https://github.com/abi/screenshot-to-code
 
-**Instalación** [~]: `pip install real-esrgan   (o: uv add real-esrgan)`
-_Nombre PyPI puede diferir de 'Real-ESRGAN'; verifica en pypi.org._
+**Instalación** [+]: `Crear cuenta / API key en el proveedor (no self-host).`
+_Servicio gestionado; no se clona._
 
-**Elige si:** reescalas imágenes o video a más resolución
-**Evita si:** solo necesitas arreglar rostros ([GFPGAN](#-gfpgan)) o buscas difusión para reimaginar.
-**Combina con:** `gfpgan`, `pipeline de reels`
-
-## `skills`
-role=skill · exec=local · setup=medium · mcp=False · prov=—
-
-**Qué es:** My agent skills that I use every day to do real engineering - not vibe coding.
-**Stack:** javascript/typescript, typescript, javascript
-**Repo:** https://github.com/mattpocock/skills.git
-
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/skills/). Si necesitas el código: git clone https://github.com/mattpocock/skills.git`
-_Material de referencia/playbook; no es una dependencia runtime._
-
-**Elige si:** buscas referencias limpias y didácticas
-**Evita si:** quieres un catálogo masivo ([antigravity-awesome-skills](#-antigravity-awesome-skills)).
-**Combina con:** `awesome-agent-skills`
+**Elige si:** quieres pasar imágenes de diseño a código
+**Evita si:** trabajas desde Figma; mira `figma-context-mcp`
+**Combina con:** `tailwindcss`
+**Alternativas (elige una):** `stitch-sdk`
 
 ## `skills-emil`
-role=skill · exec=local · setup=medium · mcp=False · prov=—
+role=skill · exec=cloud · setup=easy · mcp=False · prov=—
 
-**Qué es:** For designers and engineers to help them build better user interfaces.
-**Stack:** typescript
-**Repo:** https://github.com/emilkowalski/skills.git
+**Qué es:** Resuelve el handoff diseño↔código, no solo la estética final.
+**Stack:** Markdown (skills), TypeScript/React
+**Repo:** https://github.com/emilkowalski/skills
 
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/skills_emil/). Si necesitas el código: git clone https://github.com/emilkowalski/skills.git`
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/skills_emil/). Si necesitas el código: git clone https://github.com/emilkowalski/skills`
 _Material de referencia/playbook; no es una dependencia runtime._
 
 **Elige si:** trabajas diseño+dev en equipo y sufres el handoff
-**Evita si:** buscas componentes listos o trabajas solo.
-**Combina con:** `design.md`, `ui-ux-pro-max-skill`
+**Evita si:** buscas componentes listos o trabajas solo
+**Combina con:** `ui-ux-pro-max-skill`
+
+## `stitch-sdk`
+role=library · exec=cloud · setup=easy · mcp=False · prov=['google']
+
+**Qué es:** Automatiza Stitch, el generador de interfaces de Google, para integrarlo en tus flujos y agentes.
+**Stack:** TypeScript
+**Repo:** https://github.com/google-labs-code/stitch-sdk
+
+**Instalación** [~]: `npm install stitch sdk   (o: pnpm add stitch sdk)`
+_Nombre npm puede diferir de 'Stitch SDK'; verifica en npmjs.com._
+
+**Elige si:** quieres automatizar Stitch
+**Evita si:** prefieres herramientas locales; mira `screenshot-to-code`
+**Combina con:** `stitch-skills`
+**Alternativas (elige una):** `screenshot-to-code`
 
 ## `stitch-skills`
-role=skill · exec=local · setup=medium · mcp=False · prov=—
+role=skill · exec=cloud · setup=easy · mcp=False · prov=—
 
-**Qué es:** A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, and Cursor.
-**Stack:** typescript, react
-**Repo:** https://github.com/google-labs-code/stitch-skills.git
+**Qué es:** Skills en el estándar abierto Agent Skills que enseñan a Claude Code, Codex o Gemini CLI a diseñar con Stitch.
+**Stack:** TypeScript, Markdown
+**Repo:** https://github.com/google-labs-code/stitch-skills
 
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/stitch-skills/). Si necesitas el código: git clone https://github.com/google-labs-code/stitch-skills.git`
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/Stitch Skills/). Si necesitas el código: git clone https://github.com/google-labs-code/stitch-skills`
 _Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres stitch design skills
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
+**Elige si:** usas Stitch con un agente de código
+**Evita si:** no usas Stitch
+**Combina con:** `stitch-sdk`, `gemini-cli`
 
 ## `swr`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** SWR is a React Hooks library for data fetching.
-**Stack:** javascript/typescript, typescript, javascript, react
-**Repo:** https://github.com/vercel/swr.git
+**Qué es:** Cubre el caso de consumir APIs en frontend sin manejar caché a mano.
+**Stack:** JavaScript/React
+**Repo:** https://github.com/vercel/swr
 
 **Instalación** [~]: `npm install swr   (o: pnpm add swr)`
 _Nombre npm puede diferir de 'swr'; verifica en npmjs.com._
 
 **Elige si:** manejas datos remotos en React y quieres caché simple
-**Evita si:** prefieres React Query con su modelo de caché global más rico.
-**Combina con:** `heroui`, `web app moderna`
+**Evita si:** prefieres React Query con su modelo de caché global más rico
+**Combina con:** `heroui`
 
 ## `tailwindcss`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** A utility-first CSS framework for rapidly building custom user interfaces.
-**Stack:** javascript/typescript, javascript
-**Repo:** https://github.com/tailwindlabs/tailwindcss.git
+**Qué es:** Elimina el contexto de estilos disperso entre hojas y componentes.
+**Stack:** Node.js, CSS
+**Repo:** https://github.com/tailwindlabs/tailwindcss
 
-**Instalación** [~]: `git clone https://github.com/tailwindlabs/tailwindcss.git && cd tailwindcss && (pnpm install || npm install)`
-_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+**Instalación** [~]: `npm install tailwindcss   (o: pnpm add tailwindcss)`
+_Nombre npm puede diferir de 'tailwindcss'; verifica en npmjs.com._
 
 **Elige si:** quieres estilar rápido y consistente
-**Evita si:** prefieres CSS-in-JS o estilos scoped por componente.
-**Combina con:** `heroui`, `ui`, `magicui`
+**Evita si:** prefieres CSS-in-JS o estilos scoped por componente
+**Combina con:** `heroui`, `magicui`
+
+## `taste-skill`
+role=skill · exec=cloud · setup=easy · mcp=False · prov=—
+
+**Qué es:** Ataca el acabado "de plantilla" que delata a las UIs generadas por IA.
+**Stack:** Markdown/skills
+**Repo:** https://github.com/Leonxlnx/taste-skill
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/taste-skill/). Si necesitas el código: git clone https://github.com/Leonxlnx/taste-skill`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres frontends con gusto y no te basta con UI funcional
+**Evita si:** ya tienes un design system cerrado o no usas generadores de imagen
+**Combina con:** `ui-ux-pro-max-skill`, `impeccable`
 
 ## `three.js`
-role=library · exec=local · setup=heavy · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=—
 
-**Qué es:** The aim of the project is to create an easy-to-use, lightweight, cross-browser, general-purpose 3D library. The current builds only include WebGL and WebGPU renderers but SVG and CSS3D renderers are also available as addons.
-**Stack:** javascript/typescript, typescript, javascript
-**Repo:** https://github.com/mrdoob/three.js.git
+**Qué es:** Abstrae la complejidad de WebGL en escenas, cámaras, luces y mallas.
+**Stack:** JavaScript/WebGL
+**Repo:** https://github.com/mrdoob/three.js
 
 **Instalación** [~]: `npm install three.js   (o: pnpm add three.js)`
 _Nombre npm puede diferir de 'three.js'; verifica en npmjs.com._
 
 **Elige si:** renderizas 3D en web y quieres control a bajo nivel
-**Evita si:** trabajas solo 2D o prefieres la ergonomía de React ([react-three-fiber](#-react-three-fiber)).
+**Evita si:** trabajas solo 2D o prefieres la ergonomía de React (react-three-fiber)
 **Combina con:** `react-three-fiber`, `gsap`
 
-## `ui`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+## `tldraw`
+role=library · exec=local · setup=easy · mcp=False · prov=—
 
-**Qué es:** colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada.
-**Stack:** Node.js, React, Tailwind
+**Qué es:** Base de muchas herramientas de pizarra y de UI generativa con IA. Ofrece colaboración y personalización completa.
+**Stack:** TypeScript, React
+**Repo:** https://github.com/tldraw/tldraw
+
+**Instalación** [~]: `npm install tldraw   (o: pnpm add tldraw)`
+_Nombre npm puede diferir de 'tldraw'; verifica en npmjs.com._
+
+**Elige si:** construyes una app con lienzo infinito
+**Evita si:** solo necesitas una pizarra lista; usa `excalidraw`
+**Alternativas (elige una):** `excalidraw`
+
+## `ui`
+role=library · exec=local · setup=easy · mcp=False · prov=—
+
+**Qué es:** El código fuente pasa a ser tuyo y lo editas a voluntad.
+**Stack:** Node.js, React, Tailwind, Radix UI
 **Repo:** https://github.com/shadcn-ui/ui
 
-**Instalación** [~]: `git clone https://github.com/shadcn-ui/ui && cd ui && (pnpm install || npm install)`
-_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+**Instalación** [~]: `npm install ui   (o: pnpm add ui)`
+_Nombre npm puede diferir de 'ui'; verifica en npmjs.com._
 
-**Elige si:** quieres dueño del código
-**Evita si:** prefieres una lib "llave en mano" ([heroui](#-heroui)).
+**Elige si:** quieres ser dueño del código de UI
+**Evita si:** prefieres una lib "llave en mano" con updates automáticos (heroui)
 **Combina con:** `tailwindcss`, `plasmic`
-**Alternativas (elige una):** `heroui`
+**Alternativas (elige una):** `mui`, `ant-design`, `daisyui`
 
-## `vllm`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+## `ui-ux-pro-max-skill`
+role=skill · exec=cloud · setup=easy · mcp=False · prov=—
 
-**Qué es:** Easy, fast, and cheap LLM serving for everyone.
-**Stack:** python, typescript
-**Repo:** https://github.com/vllm-project/vllm.git
+**Qué es:** Resuelve el punto débil habitual del código asistido por IA: la jerarquía visual y el acabado.
+**Stack:** Node.js (uipro-cli), TypeScript/React
+**Repo:** https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
 
-**Instalación** [~]: `pip install vllm   (o: uv add vllm)`
-_Nombre PyPI puede diferir de 'vllm'; verifica en pypi.org._
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/ui-ux-pro-max-skill/). Si necesitas el código: git clone https://github.com/nextlevelbuilder/ui-ux-pro-max-skill`
+_Material de referencia/playbook; no es una dependencia runtime._
 
-**Elige si:** quieres easy, fast, and cheap llm serving for everyone
-**Evita si:** —
-**Combina con:** `openwa`, `skills`, `agency-agents`
-
-## `youtube2webpage`
-role=library · exec=local · setup=medium · mcp=False · prov=—
-
-**Qué es:** Youtube-to-Webpage is a Perl script to create a webpage from a Youtube video with a transcript generated from the video's closed captions paired with screenshots of the video.
-**Stack:** typescript, postgres
-**Repo:** https://github.com/obra/Youtube2Webpage.git
-
-**Instalación** [~]: `npm install youtube2webpage   (o: pnpm add youtube2webpage)`
-_Nombre npm puede diferir de 'Youtube2Webpage'; verifica en npmjs.com._
-
-**Elige si:** quieres video → artículo con transcripción y capturas
-**Evita si:** necesitas edición de video o el contenido no tiene subtítulos.
-**Combina con:** `whisper`
+**Elige si:** generas UI con IA y el resultado se ve genérico o despulido
+**Evita si:** no trabajas frontend o ya tienes un sistema de diseño impuesto
+**Combina con:** `taste-skill`, `impeccable`, `tailwindcss`

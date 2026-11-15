@@ -1,61 +1,61 @@
-# skills_remotion
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Video programático y con agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎞️ Remotion Agent Skills
 
-## Decision
+> Skills oficiales de Remotion para que tu agente de código cree videos con React.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 6.8k | — | TypeScript | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-This is an internal package and has no documentation.
+## Qué es
 
-## Que problema resuelve
+Enseñan al agente las buenas prácticas de Remotion: composiciones, animaciones, audio y render.
 
-quieres @remotion/skills
+## Por qué destaca
 
-## Por que tiene valor
+Oficiales del equipo de Remotion.
 
-Aporta valor en `skill` para javascript, javascript-typescript, skills. Stack declarado: javascript/typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Carpetas SKILL.md que el agente carga al trabajar en proyectos Remotion.
 
-quieres @remotion/skills
+## Instalación rápida
 
-## Cuando NO usarlo
+`npx skills add remotion-dev/skills` o copia a la carpeta de skills de tu agente.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Generar videos con Claude Code
+- Animaciones de datos
+- Plantillas de video
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| haces videos con Remotion y un agente | no usas Remotion |
 
-javascript/typescript, javascript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** TypeScript, Markdown
+- **Modelos / API:** Usa el modelo de tu agente.
+- **Etiquetas:** `video` `skills`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [remotion](remotion.md) | 72.2k | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
+| [Remotion Superpowers](remotion-superpowers.md) | 164 | Plugin que convierte Remotion en un estudio de video para Claude Code, Codex o Gemini CLI. |
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [remotion-dev/skills](https://github.com/remotion-dev/skills)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres @remotion/skills. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

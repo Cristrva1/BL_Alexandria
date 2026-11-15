@@ -1,60 +1,61 @@
-# andrej-karpathy-skills
+[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Metodologías y harness para agentes de código
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧠 andrej-karpathy-skills
 
-## Decision
+> Guía de 4 principios inspirada en Andrej Karpathy para que tu agente de código responda útil y sin relleno.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 232k | — | — | 2026-04-20 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-> Check out my new project Multica — an open-source platform for running and managing coding agents with reusable skills.
+## Qué es
 
-## Que problema resuelve
+Ajusta el comportamiento de tu asistente con principios claros, sin atarte a una herramienta concreta.
 
-quieres respuestas más útiles ya, sin curar prompts largos
+## Por qué destaca
 
-## Por que tiene valor
+Condensa una filosofía conocida en reglas cortas y portables entre herramientas, lo que la hace fácil de adoptar sin atarse a un asistente concreto. Su origen en ideas de Karpathy le da peso frente a listas genéricas de "buenas prácticas".
 
-Aporta valor en `skill` para skills, typescript. Stack declarado: typescript.
+## Cómo funciona
 
-## Cuando usarlo
+Se carga como `CLAUDE.md`/instrucciones de sistema que el asistente lee al inicio de la sesión y aplica a cada respuesta. No ejecuta código: es pura directriz de estilo y foco.
 
-quieres respuestas más útiles ya, sin curar prompts largos
+## Instalación rápida
 
-## Cuando NO usarlo
+Clona el repo y copia el `CLAUDE.md` (o su contenido) en tu proyecto o en el directorio de configuración del asistente; no requiere dependencias ni claves.
 
-buscas skills ejecutables con scripts concretos.
+## Casos de uso
 
-## Tipo de instalacion
+- Mejorar señal/ruido del asistente
+- Base de buenas prácticas diarias
+- Punto de partida para tu propio `CLAUDE.md`
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres respuestas más útiles ya, sin curar prompts largos | buscas skills ejecutables con scripts concretos |
 
-typescript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown (`CLAUDE.md`)
+- **Modelos / API:** Claude Code, Cursor, Gemini CLI (agnóstico vía instrucciones de sistema).
+- **Etiquetas:** `skills` `coding-agent`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Awesome Claude Code](awesome-claude-code.md) | 57.7k | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. |
+| [Context-Engineering](context-engineering.md) | 9.3k | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso. |
 
-- `awesome-claude-code`
-- `context-engineering`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con awesome-claude-code, context-engineering cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres respuestas más útiles ya, sin curar prompts largos. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

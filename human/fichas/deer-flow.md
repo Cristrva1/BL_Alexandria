@@ -1,60 +1,62 @@
-# deer-flow
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Agentes de research autónomo
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🦌 deer-flow
 
-## Decision
+> Super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 85.2k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-> On February 28th, 2026, DeerFlow claimed the 🏆 #1 spot on GitHub Trending following the launch of version 2. Thanks a million to our incredible community — you made this happen! 💪🔥.
+## Qué es
 
-## Que problema resuelve
+Coordina tareas complejas delegando en agentes especializados.
 
-quieres un orquestador completo y extensible
+## Por qué destaca
 
-## Por que tiene valor
+Orquestación potente y extensible; alcanzó gran visibilidad (#1 en GitHub Trending en su lanzamiento v2) y cuenta con el respaldo de ByteDance. Su diseño por skills lo hace ampliable sin tocar el núcleo.
 
-Aporta valor en `skill` para automation, docker, javascript, langchain, python, typescript. Stack declarado: python, typescript, javascript, docker, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Un orquestador reparte sub-tareas a agentes con herramientas y sandbox, integrando memoria entre pasos; implementado en Python/TS sobre LangChain.
 
-quieres un orquestador completo y extensible
+## Instalación rápida
 
-## Cuando NO usarlo
+`git clone` del repo y arranque con sus scripts (o Docker). Requiere claves de proveedor de LLM y, para el sandbox, Docker.
 
-buscas algo minimalista o sin Docker.
+## Casos de uso
 
-## Tipo de instalacion
+- Research profundo
+- Tareas complejas multi-paso con herramientas
+- Flujos extensibles vía skills propias
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres un orquestador completo y extensible | buscas algo minimalista o sin Docker |
 
-python, typescript, javascript, docker, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python/TS, LangChain, Docker
+- **Modelos / API:** Múltiples; agnóstico vía variables de entorno.
+- **Etiquetas:** `automation` `research` `python` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [gpt-researcher](gpt-researcher.md) | 30.6k | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
+| [firecrawl](firecrawl.md) | 200k | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
 
-- `gpt-researcher`
-- `firecrawl`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [bytedance/deer-flow](https://github.com/bytedance/deer-flow)
+- 🌐 Web: <https://deerflow.tech>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con gpt-researcher, firecrawl cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres un orquestador completo y extensible. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

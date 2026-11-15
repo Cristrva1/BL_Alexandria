@@ -1,60 +1,61 @@
-# penpot
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Diseño visual, canvas y builders
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# ✏️ penpot
 
-## Decision
+> Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 62.2k | MPL-2.0 | Clojure | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🔴 pesado
 
-Penpot is the open-source design platform for teams that build digital products at scale.
+## Qué es
 
-## Que problema resuelve
+Es la alternativa abierta a Figma más conocida.
 
-quieres diseño abierto y soberano, self-host
+## Por qué destaca
 
-## Por que tiene valor
+Es la alternativa abierta a Figma más madura y adoptada, con estándares web (SVG nativo) y self-host real. Su licencia MPL y el respaldo de la Fundación Penpot le dan viabilidad a largo plazo.
 
-Aporta valor en `platform` para docker, frontend, javascript, javascript-typescript, postgres, python, react, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, react, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Suite web basada en SVG y CSS que corre sobre varios servicios desplegados con Docker (frontend, backend, bases de datos), con colaboración en tiempo real multiusuario.
 
-quieres diseño abierto y soberano, self-host
+## Instalación rápida
 
-## Cuando NO usarlo
+`docker compose` con los manifiestos oficiales (o plan cloud gestionado). Requiere varios contenedores y recursos no triviales, de ahí el setup 🔴.
 
-necesitas generación por IA ([open-design](#-open-design)) o no quieres operar Docker.
+## Casos de uso
 
-## Tipo de instalacion
+- Diseñar landings, componentes y sistemas de marca
+- Colaboración self-host con control de los archivos
+- Prototipado interactivo para equipos
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres diseño abierto y soberano, self-host | necesitas generación por IA (open-design) o no quieres operar Docker |
 
-javascript/typescript, python, typescript, javascript, react, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** stack web self-host, Docker (Clojure/ClojureScript)
+- **Modelos / API:** No nativa.
+- **Etiquetas:** `design` `docker`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [plasmic](plasmic.md) | 7.2k | Builder visual para apps y sitios conectado a tu propia base de código, que permite diseñar y publicar sin perder el control del código real. |
 
-- `design.md`
-- `plasmic`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [penpot/penpot](https://github.com/penpot/penpot)
+- 🌐 Web: <https://penpot.app>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con design.md, plasmic cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres diseño abierto y soberano, self-host. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

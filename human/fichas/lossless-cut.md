@@ -1,60 +1,65 @@
-# lossless-cut
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Edición, grabación y subtítulos
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# ✂️ LosslessCut
 
-## Decision
+> App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 45.9k | GPL-2.0 | TypeScript | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-The swiss army knife of lossless video/audio editing.
+## Qué es
 
-## Que problema resuelve
+LosslessCut es una interfaz gráfica sobre FFmpeg para recortar y fusionar archivos de video y audio sin recompresión. Sirve para descartar gigas de material de cámara, GoPro o dron, extraer o reemplazar pistas, cambiar de contenedor (MKV a MP4) y editar metadatos o capítulos, en Windows, macOS y Linux.
 
-cortas material rápido y sin recomprimir
+## Por qué destaca
 
-## Por que tiene valor
+Al copiar los streams en vez de recodificar, los cortes son casi instantáneos y sin pérdida incluso en archivos enormes. Detecta escenas, silencios y fotogramas negros, y ofrece CLI y API HTTP para automatizarlo.
 
-Aporta valor en `app` para javascript, javascript-typescript, multimedia, postgres, python, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+App Electron con React que reproduce con el motor HTML5 de Chromium (o con FFmpeg para formatos no soportados) y exporta desde el archivo original con FFmpeg en modo copia de stream, sin tocar los fotogramas.
 
-cortas material rápido y sin recomprimir
+## Instalación rápida
 
-## Cuando NO usarlo
+Descarga gratis el binario para Windows, macOS o Linux desde GitHub Releases, o instálalo desde Mac App Store, Microsoft Store o Snap Store. Ya incluye FFmpeg.
 
-necesitas edición compositiva, efectos o reencode ([moviepy](#-moviepy)).
+## Casos de uso
 
-## Tipo de instalacion
+- Recortar horas de grabación de cámara o dron en segundos
+- Extraer o reemplazar pistas de audio y subtítulos
+- Dividir por escenas o silencios antes de editar un reel
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| necesitas recortar o unir material rápido y sin recomprimir, con interfaz gráfica | necesitas efectos, transiciones o un montaje con capas; mira `opencut` o, por código, `moviepy` |
 
-javascript/typescript, python, typescript, javascript, postgres
+**Limitaciones:** Sin recodificar, los cortes solo caen exactos en fotogramas clave, así que el punto de corte puede desplazarse unos fotogramas.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** TypeScript, Electron, React, FFmpeg
+- **Modelos / API:** No usa LLM.
+- **Etiquetas:** `video` `audio` `ui` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `moviepy`
-- `pipeline de reels`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [yt-dlp](yt-dlp.md) | 207k | Descargador de audio y video por línea de comandos compatible con miles de sitios. |
+| [whisperX](whisperx.md) | 25.2k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
+| [MoviePy](moviepy.md) | 15.1k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [mifi/lossless-cut](https://github.com/mifi/lossless-cut)
+- 🌐 Web: <https://losslesscut.app/>
 
-## Riesgos
+---
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con moviepy, pipeline de reels cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si cortas material rápido y sin recomprimir. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

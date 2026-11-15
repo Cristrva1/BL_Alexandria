@@ -1,61 +1,62 @@
-# pdf-inspector
+[🏠 Inicio](../README.md) › [📄 Documentos & Presentaciones](../categorias/13-documentos-presentaciones.md) › Conversión de documentos para IA
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔄 PDF Inspector
 
-## Decision
+> Librería en Rust que clasifica PDFs (texto o escaneado) y extrae su texto con coordenadas.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 20k | MIT | Rust | 2026-10-22 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-PDF Inspector detecta si un PDF es texto o escaneado y extrae contenido con coordenadas. Encaja en pipelines de documentos, no como visor.
+## Qué es
 
-## Que problema resuelve
+Detecta si un PDF necesita OCR para enrutarlo al proceso correcto, y extrae texto rápido cuando no hace falta. De Firecrawl.
 
-quieres pdf-inspector
+## Por qué destaca
 
-## Por que tiene valor
+Ahorra OCR caro decidiendo qué PDFs lo necesitan.
 
-Aporta valor en `library` para javascript, python, typescript. Stack declarado: python, typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Analiza objetos del PDF para distinguir texto real de imágenes y extrae contenido con posiciones.
 
-quieres pdf-inspector
+## Instalación rápida
 
-## Cuando NO usarlo
+Añádelo como dependencia de Rust o usa sus bindings siguiendo el README.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Enrutar PDFs a OCR solo si hace falta
+- Extracción rápida de texto
+- Pipelines de documentos
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| procesas muchos PDFs y quieres ahorrar OCR | necesitas la conversión completa a Markdown; mira `docling` |
 
-python, typescript, javascript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Rust
+- **Modelos / API:** No usa LLM.
+- **Etiquetas:** `pdf` `docs` `rust`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [OCRmyPDF](ocrmypdf.md) | 35.3k | Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. |
+| [Docling](docling.md) | 70.4k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
 
-- `firecrawl`
-- `crawl4ai`
-- `scrapy`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [firecrawl/pdf-inspector](https://github.com/firecrawl/pdf-inspector)
+- 🌐 Web: <https://firecrawl.github.io/pdf-inspector/>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres pdf-inspector. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

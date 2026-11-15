@@ -1,60 +1,62 @@
-# openai-python
+[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › CLIs y SDKs de desarrollo
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🐍 openai-python
 
-## Decision
+> SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 32.1k | Apache-2.0 | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.9+ application. The library includes type definitions for all request params and response fields, and offers both synchronous and asynchronous clients powered by httpx.
+## Qué es
 
-## Que problema resuelve
+Resuelve el glue HTTP: no escribes peticiones a mano, usas clientes tipados con streaming.
 
-usas modelos de OpenAI desde Python y quieres el cliente oficial
+## Por qué destaca
 
-## Por que tiene valor
+Cliente oficial y al día mantenido por OpenAI, con amplia adopción y soporte inmediato de las novedades de la API. Su tipado, streaming y soporte síncrono/async lo hacen la base de facto para integrar GPT en Python.
 
-Aporta valor en `platform` para javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Envuelve las peticiones HTTP a la API en clientes Python síncronos y asíncronos, con tipado, streaming de respuestas, reintentos y manejo de errores integrados.
 
-usas modelos de OpenAI desde Python y quieres el cliente oficial
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install openai` y configurar `OPENAI_API_KEY` (variable de entorno). Requiere una cuenta OpenAI con clave válida y saldo.
 
-quieres abstracción multi-proveedor ([litellm](#-litellm)) o no usas OpenAI.
+## Casos de uso
 
-## Tipo de instalacion
+- Llamar a la API de OpenAI
+- Base para apps que usan GPT
+- Consumir embeddings, imágenes y audio desde Python
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| usas modelos de OpenAI desde Python y quieres el cliente oficial | quieres abstracción multi-proveedor (litellm) o no usas OpenAI |
 
-python, typescript, javascript, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python
+- **Modelos / API:** OpenAI (chat, embeddings, imágenes, audio).
+- **Etiquetas:** `code` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [litellm](litellm.md) | 63k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
+| [langchain](langchain.md) | 149k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
 
-- `litellm`
-- `langchain`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [openai/openai-python](https://github.com/openai/openai-python)
+- 🌐 Web: <https://pypi.org/project/openai/>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con litellm, langchain cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si usas modelos de OpenAI desde Python y quieres el cliente oficial. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,60 +1,68 @@
-# magicui
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Componentes, iconos y sistemas de diseño
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# ✨ magicui
 
-## Decision
+> Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 23.2k | MIT | MDX | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-Visit https://magicui.design/docs to view the documentation.
+## Qué es
 
-## Que problema resuelve
+Apunta al impacto visual más que a la accesibilidad estricta.
 
-priorizas estética y velocidad
+## Por qué destaca
 
-## Por que tiene valor
+Prioriza el impacto visual con piezas vistosas listas para usar, popular en landings y portfolios que buscan diferenciarse rápido. Es compatible con el registro de shadcn, así que se integra en el mismo flujo.
 
-Aporta valor en `runtime` para frontend, javascript, javascript-typescript, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react.
+## Cómo funciona
 
-## Cuando usarlo
+Componentes React/Next.js sobre Tailwind y motion que se copian o instalan vía CLI compatible con shadcn (`npx shadcn add`).
 
-priorizas estética y velocidad
+## Instalación rápida
 
-## Cuando NO usarlo
+`npx shadcn add` apuntando al registro de Magic UI, o copiar el componente directamente. Requiere Tailwind y motion instalados.
 
-necesitas accesibilidad estricta ([heroui](#-heroui)).
+## Casos de uso
 
-## Tipo de instalacion
+- Landing o dashboard con buen acabado desde el inicio
+- Prototipado vistoso para demos
+- Secciones hero con animaciones de impacto
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| priorizas estética y velocidad | necesitas accesibilidad estricta (heroui) |
 
-javascript/typescript, typescript, javascript, react
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Node.js, React/Next.js
+- **Modelos / API:** N/A.
+- **Etiquetas:** `ui`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [tailwindcss](tailwindcss.md) | 98.7k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
+| [motion](motion.md) | 35k | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
 
-- `tailwindcss`
-- `motion`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [React Bits](react-bits.md) | 51.6k | La mayor colección open source de componentes React animados e interactivos para webs llamativas. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [magicuidesign/magicui](https://github.com/magicuidesign/magicui)
+- 🌐 Web: <https://magicui.design>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con tailwindcss, motion cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si priorizas estética y velocidad. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

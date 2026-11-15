@@ -1,61 +1,72 @@
-# mem0
+[🏠 Inicio](../README.md) › [🧬 Memoria, RAG & LLM Ops](../categorias/06-memoria-rag-llm-ops.md) › Memoria persistente para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧠 mem0
 
-## Decision
+> Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 68.7k | Apache-2.0 | Python | 2026-11-06 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-mem0 guarda y recupera hechos de usuario entre sesiones. Úsalo cuando el agente necesita memoria a largo plazo, no como base de datos general.
+## Qué es
 
-## Que problema resuelve
+Resuelve el "amnesia" del LLM: el agente conserva preferencias y hechos entre sesiones sin reenviar todo el historial.
 
-quieres memoria estándar lista con integraciones amplias
+## Por qué destaca
 
-## Por que tiene valor
+Es uno de los proyectos de memoria de agentes más adoptados, con SDK estable en Python y TS e integraciones amplias en el ecosistema de frameworks (LangChain, CrewAI, etc.). Su enfoque de extracción+actualización incremental de hechos evita duplicados y desactualizaciones.
 
-Aporta valor en `library` para docker, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Combina extracción de hechos vía LLM con almacenamiento en vector DBs (Qdrant, Chroma, etc.) para indexar y consultar memorias relevantes por similitud, actualizando o borrando recuerdos contradictorios en lugar de solo acumularlos.
 
-quieres memoria estándar lista con integraciones amplias
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install mem0ai` (también SDK en npm) o servicio gestionado; requiere un LLM y una vector DB configurados (o los defaults del cloud).
 
-necesitas todo local sin llamadas a API ([mempalace](#-mempalace)) o control total del almacenamiento.
+## Casos de uso
 
-## Tipo de instalacion
+- Recordar preferencias del usuario entre sesiones
+- Memoria long-term para agentes
+- Personalización acumulativa sin inflar el prompt
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres memoria estándar lista con integraciones amplias | necesitas todo local sin llamadas a API (mempalace) o control total del almacenamiento |
 
-python, typescript, javascript, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python/TypeScript, vector DBs (Qdrant, Chroma, pgvector)
+- **Modelos / API:** Múltiples LLMs + vector DBs; agnóstico vía variables de entorno.
+- **Etiquetas:** `memory` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [crewAI](crewai.md) | 60.7k | Framework para orquestar "crews" de agentes con roles y tareas. |
+| [langchain](langchain.md) | 149k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
+| [agentmemory](agentmemory.md) | 30.3k | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes. |
 
-- `crewai`
-- `langchain`
-- `agentmemory`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Letta](letta.md) | 25.4k | Plataforma para agentes con estado y memoria avanzada que aprenden con el tiempo (antes MemGPT). |
+| [cognee](cognee.md) | 33.2k | Plataforma de memoria para agentes que combina grafos de conocimiento y vectores, usable con modelos pequeños. |
+| [supermemory](supermemory.md) | 31.6k | Motor de memoria y contexto muy rápido, con API para apps de IA y app propia, ejecutable en local. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [mem0ai/mem0](https://github.com/mem0ai/mem0)
+- 🌐 Web: <https://mem0.ai>
+- 🧪 Receta: [Workspace privado local soberano](../playbooks/workspace-privado-local-soberano.md)
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con crewai, langchain, agentmemory cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres memoria estándar lista con integraciones amplias. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

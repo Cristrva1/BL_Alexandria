@@ -1,18 +1,45 @@
-# Workspace privado local soberano
+[🏠 Inicio](../README.md) · [🧪 Todas las recetas](README.md)
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🏠 Workspace privado local soberano
 
-## Objetivo
+> **Objetivo:** Tener chat, documentos y memoria de IA en tu propia máquina, sin enviar datos a terceros.
 
-asistente todo-en-uno sin fuga de datos.
+## 🗺️ Cómo fluye
 
-## Stack sugerido
+```mermaid
+flowchart LR
+  Usuario["Usuario"] -->|chat| odysseus["odysseus"]
+  odysseus["odysseus"] -->|inferencia| ollama["Ollama"]
+  Usuario["Usuario"] -->|fuentes| open_notebook["open-notebook"]
+  open_notebook["open-notebook"] -->|embeddings + chat| ollama["Ollama"]
+  odysseus["odysseus"] -->|memoria| mem0["mem0"]
+  odysseus["odysseus"] -->|búsqueda| searxng["SearXNG"]
+```
 
-- `odysseus`: A self-hosted AI workspace for chat, agents, research, documents, email, notes, calendar, and local model workflows.
-- `open-notebook`: An open source, privacy-focused alternative to Google's Notebook LM!.
-- `ecc`: Official sources only. Install ECC only from verified channels: the GitHub repository github.com/affaan-m/ECC, the npm packages `ecc-universal` and `ecc-agentshield`, the GitHub App, the plugin slug `ecc@ecc`, and the project website ecc.tools.
-- `mem0`: mem0 guarda y recupera hechos de usuario entre sesiones. Úsalo cuando el agente necesita memoria a largo plazo, no como base de datos general.
+## 🧩 Piezas
 
-## Como se conecta
+| # | Repo | Papel en la receta | ⭐ | Instalación |
+|---:|---|---|---:|---|
+| 1 | [Ollama](../fichas/ollama.md) | Corre los modelos abiertos en local | 187k | `curl -fsSL https://ollama.com/install.sh \| sh` |
+| 2 | [odysseus](../fichas/odysseus.md) | Workspace todo-en-uno: chat, documentos y tareas | 95.5k | `docker compose` |
+| 3 | [open-notebook](../fichas/open-notebook.md) | Cuaderno de investigación con RAG sobre tus fuentes | 41.8k | `docker` (imagen oficial) o `pip` más Ollama para los modelos locales. Requiere Ollama… |
+| 4 | [mem0](../fichas/mem0.md) | Memoria persistente entre sesiones | 68.7k | `pip install mem0ai` |
+| 5 | [SearXNG](../fichas/searxng.md) | Búsqueda web privada cuando hace falta | 39.4k | `docker run -d -p 8080:8080 searxng/searxng` |
 
-Pendiente de especificar en el proyecto concreto.
+## 🔌 Cómo se conecta
+
+Ollama sirve los modelos en tu equipo con una API local. Odysseus centraliza chat, documentos y tareas; Open Notebook indexa tus fuentes para preguntarles como en NotebookLM; mem0 recuerda preferencias y hechos entre sesiones; SearXNG añade búsqueda web sin rastreo.
+
+## 🚫 Cuándo NO usar esta receta
+
+Si tu equipo no puede correr modelos (poca RAM o sin GPU), apunta las mismas apps a una API comercial vía LiteLLM. Si la privacidad no es un requisito, un SaaS es más simple.
+
+## 🔁 Variantes
+
+- En lugar de [Ollama](../fichas/ollama.md): [llama.cpp](../fichas/llama-cpp.md), [LocalAI](../fichas/localai.md), [llamafile](../fichas/llamafile.md)
+- En lugar de [open-notebook](../fichas/open-notebook.md): [DeepTutor](../fichas/deeptutor.md), [SurfSense](../fichas/surfsense.md)
+- En lugar de [mem0](../fichas/mem0.md): [Letta](../fichas/letta.md), [cognee](../fichas/cognee.md), [supermemory](../fichas/supermemory.md)
+
+---
+
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

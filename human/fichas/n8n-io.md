@@ -1,59 +1,63 @@
-# n8n_io
+[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Ecosistema n8n
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔁 n8n_io
 
-## Decision
+> Copia local del repositorio oficial de n8n (mismo proyecto que n8n), mantenida como referencia o espejo del código fuente.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 210k | Otra (ver repo) | TypeScript | 2026-11-10 | 🧰 Interna |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.
+> 🔁 Alias local de `n8n`; usa esa ficha.
 
-## Que problema resuelve
+## Qué es
 
-quieres n8n - secure workflow automation for technical teams
+No aporta nada distinto a la ficha principal.
 
-## Por que tiene valor
+## Por qué destaca
 
-Aporta valor en `platform` para automation, docker, javascript, javascript-typescript, langchain, python, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, docker, langchain.
+No aporta valor propio frente a la ficha principal; existe solo como duplicado del proyecto oficial bajo otro identificador local.
 
-## Cuando usarlo
+## Cómo funciona
 
-quieres n8n - secure workflow automation for technical teams
+Es idéntica a n8n; encadena nodos en workflows ejecutados por un runtime Node.js con nodos de IA basados en LangChain.
 
-## Cuando NO usarlo
+## Instalación rápida
 
-ya usas la ficha [n8n](#-n8n) (es el mismo proyecto).
+La misma que n8n (`docker compose`, imagen Docker oficial o `npx n8n`).
 
-## Tipo de instalacion
+## Casos de uso
 
-reference_only
+- Referencia/duplicado del código fuente de n8n — no hay caso de uso diferenciado
 
-## Stack / tecnologia detectada
+## ¿Es para ti?
 
-javascript/typescript, python, typescript, javascript, docker, langchain
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| — **Evita si:** ya usas la ficha n8n (es el mismo proyecto) | ya usas la ficha n8n (es el mismo proyecto) |
 
-## Instalacion detectada
+**Limitaciones:** Usa la ficha n8n en su lugar; este duplicado no recibe curaduría independiente.
 
-Repo local detectado: no
+## Stack y modelos
 
-## Con que se combina
+- **Stack:** Node.js, TypeScript
+- **Modelos / API:** Igual que n8n.
+- **Etiquetas:** `automation` `typescript` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-- `n8n`
+## Combina con
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [n8n](n8n.md) | 210k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [n8n-io/n8n](https://github.com/n8n-io/n8n)
+- 🌐 Web: <https://n8n.io>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con n8n cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres n8n - secure workflow automation for technical teams. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

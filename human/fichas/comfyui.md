@@ -1,61 +1,71 @@
-# ComfyUI
+[🏠 Inicio](../README.md) › [🖼️ Generación de Imagen & Visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Interfaces para generar imágenes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧠 ComfyUI
 
-## Decision
+> Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 146k | GPL-3.0 | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
-The most powerful and modular AI engine for content creation..
+## Qué es
 
-## Que problema resuelve
+Resuelve la composición de flujos de difusión complejos que una UI fija no permite.
 
-quieres control total y pipelines reproducibles
+## Por qué destaca
 
-## Por que tiene valor
+Es la referencia para flujos de difusión avanzados y reproducibles, con una comunidad enorme y un ecosistema de nodos/extensiones muy activo. Su autor (comfyanonymous) lo mantiene con foco en rendimiento y compatibilidad con los modelos más recientes (SDXL, Flux).
 
-Aporta valor en `runtime` para comfy, docker, frontend, javascript, python, react, typescript. Stack declarado: python, typescript, javascript, react, docker, comfy.
+## Cómo funciona
 
-## Cuando usarlo
+Ejecuta modelos de difusión (Stable Diffusion, SDXL, Flux) sobre PyTorch+GPU, encadenando nodos en un grafo visual servido desde una interfaz web local que expone cada paso como bloque configurable.
 
-quieres control total y pipelines reproducibles
+## Instalación rápida
 
-## Cuando NO usarlo
+`git clone` del repo y arranque con `python main.py` (o paquete portable en Windows); requiere descargar checkpoints aparte y una GPU con VRAM decente (8 GB+ recomendado).
 
-buscas simplicidad inmediata ([Fooocus](#-fooocus)).
+## Casos de uso
 
-## Tipo de instalacion
+- Pipeline para generar/transformar/exportar imágenes de campaña
+- Composición fina y repetible
+- Flujos con ControlNet/IPAdapter encadenados
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres control total y pipelines reproducibles | buscas simplicidad inmediata (Fooocus) |
 
-python, typescript, javascript, react, docker, comfy
+**Limitaciones:** Requiere GPU con VRAM suficiente; los checkpoints pesan varios GB y la curva del grafo de nodos es empinada para nuevos.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, GPU, PyTorch, modelos locales
+- **Modelos / API:** Local-first (difusión).
+- **Etiquetas:** `image` `python`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `comfyui-ipadapter-plus`
-- `real-esrgan`
-- `pipeline de reels`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Real-ESRGAN](real-esrgan.md) | 37.4k | Herramienta de superresolución y restauración para imágenes reales que reescala (2×/4×) y limpia material de baja calidad sin rehacerlo desde cero. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [WanGP](wan2gp.md) | — | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas. |
+| [Stable Diffusion WebUI Forge](sd-webui-forge.md) | 13.1k | Versión optimizada de la WebUI de Stable Diffusion, más rápida y con menos memoria. |
 
-## Riesgos
+## Enlaces
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+- 🐙 GitHub: [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI)
+- 🌐 Web: <https://www.comfy.org/>
+- 🧪 Receta: [Pipeline de Reels / video corto](../playbooks/pipeline-de-reels-video-corto.md)
 
-## Ideas profesionales
+---
 
-Combinar con comfyui-ipadapter-plus, real-esrgan, pipeline de reels cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si quieres control total y pipelines reproducibles. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

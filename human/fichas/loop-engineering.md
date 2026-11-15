@@ -1,61 +1,63 @@
-# loop-engineering
+[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Guías, cursos y cookbooks
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎓 Loop Engineering
 
-## Decision
+> Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código en vez de prompts sueltos.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 11.7k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-> Stop prompting. Design the loop. Get a score.
+## Qué es
 
-## Que problema resuelve
+Propone dejar de escribir prompts aislados y diseñar ciclos con objetivo, verificación y puntuación para que el agente itere solo. Incluye starters y herramientas de línea de comandos.
 
-quieres loop engineering
+## Por qué destaca
 
-## Por que tiene valor
+Enfoque práctico y medible: cada bucle termina con una puntuación que guía la siguiente iteración.
 
-Aporta valor en `skill` para automation, frontend, javascript, javascript-typescript, postgres, skills, typescript. Stack declarado: javascript/typescript, typescript, javascript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Define el objetivo, las comprobaciones y el criterio de parada en archivos que el agente lee y ejecuta en bucle.
 
-quieres loop engineering
+## Instalación rápida
 
-## Cuando NO usarlo
+`git clone https://github.com/cobusgreyling/loop-engineering` y copia el starter que necesites a tu proyecto.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Refactors largos con verificación automática
+- Mejorar un prompt con puntuación
+- Agentes que iteran hasta pasar tests
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres que tu agente de código itere solo con criterios medibles | solo necesitas una lista de skills; mira `awesome-agent-skills` |
 
-javascript/typescript, typescript, javascript, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** TypeScript, Markdown
+- **Modelos / API:** Agnóstico: Claude Code, Codex u otros agentes.
+- **Etiquetas:** `coding-agent` `skills` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
+| [superpowers](superpowers.md) | 315k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering)
+- 🌐 Web: <https://cobusgreyling.github.io/loop-engineering/>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres loop engineering. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

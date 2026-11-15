@@ -1,59 +1,71 @@
-# humanizer
+[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Escritura y calidad de texto
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧑 Humanizer
 
-## Decision
+> Skill que reescribe texto generado por IA para que suene humano, basada en la guía de Wikipedia sobre señales de escritura IA.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 67.4k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-A skill for Claude Code and OpenCode that removes signs of AI-generated writing from text, making it sound more natural and human.
+## Qué es
 
-## Que problema resuelve
+Detecta 26 patrones típicos de la prosa de LLM (contrastes tipo 'no es X, es Y', cierres dramáticos, tríadas forzadas, frases de falsa profundidad, importancia inflada) y reescribe el texto sin cambiar lo que dice. Puede imitar tu estilo si le das una muestra y, sobre un archivo, solo toca la prosa: no el código, los datos ni el frontmatter.
 
-publicas prosa generada por IA y quieres evitar el "tono IA"
+## Por qué destaca
 
-## Por que tiene valor
+Parte de una fuente pública (la guía 'Signs of AI writing' de los editores de Wikipedia) y muestra su trabajo: primera reescritura, crítica de lo que aún suena artificial y versión final. No añade datos que no estuvieran en el original.
 
-Aporta valor en `skill` para typescript. Stack declarado: typescript.
+## Cómo funciona
 
-## Cuando usarlo
+El SKILL.md ordena los patrones por fuerza: los cinco primeros justifican un cambio con una sola aparición y los débiles solo cuentan si se acumulan. El agente marca las señales, redacta, contrasta el borrador con los patrones y las afirmaciones originales y entrega.
 
-publicas prosa generada por IA y quieres evitar el "tono IA"
+## Instalación rápida
 
-## Cuando NO usarlo
+En Claude Code: `/plugin marketplace add blader/humanizer` y `/plugin install humanizer@humanizer`; en otros agentes: `npx skills add blader/humanizer --global --agent '*'`.
 
-escribes a mano o el registro formal no es problema.
+## Casos de uso
 
-## Tipo de instalacion
+- Quitar el tono IA de un post o un anuncio de producto
+- Reescribir documentación generada sin perder los datos
+- Ajustar un borrador a tu propia voz con una muestra
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| publicas textos redactados con IA y quieres que se lean como escritos por una persona | quieres reglas de estilo cortas para pegar en un system prompt, con rúbrica propia; mira `stop-slop` |
 
-typescript
+**Limitaciones:** Sus patrones y ejemplos están pensados para prosa en inglés, y no busca engañar a los detectores de IA, que siguen marcando la mayoría de sus salidas.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Markdown, SKILL.md
+- **Modelos / API:** No llama a un LLM: la ejecuta tu agente (Claude Code, Codex, Claude.ai, Gemini CLI, Copilot, Windsurf, etc.).
+- **Etiquetas:** `skills` `prompts` `docs`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `stop-slop`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Marketing Skills](marketingskills.md) | 59.5k | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. |
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Stop Slop](stop-slop.md) | 18.8k | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. |
 
-## Riesgos
+## Enlaces
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+- 🐙 GitHub: [blader/humanizer](https://github.com/blader/humanizer)
+- 🌐 Web: <https://skills.sh/blader/humanizer>
 
-## Ideas profesionales
+---
 
-Combinar con stop-slop cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si publicas prosa generada por IA y quieres evitar el "tono IA". No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

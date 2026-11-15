@@ -1,61 +1,70 @@
-# vllm
+[🏠 Inicio](../README.md) › [🧬 Memoria, RAG & LLM Ops](../categorias/06-memoria-rag-llm-ops.md) › Serving y gateways de LLM
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🚀 vLLM
 
-## Decision
+> Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 96.7k | Apache-2.0 | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
-Easy, fast, and cheap LLM serving for everyone.
+## Qué es
 
-## Que problema resuelve
+Sirve modelos abiertos a muchos usuarios con una API compatible con OpenAI, gracias a PagedAttention y batching continuo.
 
-quieres easy, fast, and cheap llm serving for everyone
+## Por qué destaca
 
-## Por que tiene valor
+Estándar en producción para servir LLM abiertos en GPU.
 
-Aporta valor en `library` para python, typescript. Stack declarado: python, typescript.
+## Cómo funciona
 
-## Cuando usarlo
+Gestiona la caché KV por páginas, agrupa peticiones dinámicamente y soporta paralelismo entre GPUs.
 
-quieres easy, fast, and cheap llm serving for everyone
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install vllm` y `vllm serve Qwen/Qwen3-8B` (requiere GPU NVIDIA o AMD).
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- API privada de LLM para la empresa
+- Servir modelos afinados
+- Inferencia por lotes barata
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| necesitas servir LLM abiertos a muchos usuarios en GPU | solo los usas tú en un portátil; mira `ollama` |
 
-python, typescript
+**Limitaciones:** Requiere GPU con bastante memoria.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, CUDA, PyTorch
+- **Modelos / API:** Modelos abiertos de Hugging Face.
+- **Etiquetas:** `inference` `python`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `openwa`
-- `skills`
-- `agency-agents`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [litellm](litellm.md) | 63k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
+| [Open WebUI](open-webui.md) | 158k | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [SGLang](sglang.md) | 38.7k | Framework de servicio de alto rendimiento para LLM y modelos multimodales. |
 
-## Riesgos
+## Enlaces
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+- 🐙 GitHub: [vllm-project/vllm](https://github.com/vllm-project/vllm)
+- 🌐 Web: <https://vllm.ai>
 
-## Ideas profesionales
+---
 
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres easy, fast, and cheap llm serving for everyone. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,144 +1,122 @@
 # 🤖 AGENTS.md — Punto de entrada para agentes de IA
 
-Esta biblioteca contiene **212 repositorios curados** compactos (mismo conjunto en `INDICE_IA.detalle.json`; 208 clones git en `../Repositorios_Prueba` más carpetas locales y el alias `n8n-io`) de IA y automatización, ya analizados, comparados y clasificados con flujo integral (analyze + enrich). Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Léelo entero (es corto); luego abre solo lo que necesites.
+Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
+
+<!-- BL:STATS -->
+**411 repos curados** · **13 categorías** · **14 recetas** · 209 ya en tu biblioteca local + 202 sugeridos nuevos · estrellas de GitHub al 2026-11-05
+<!-- /BL:STATS -->
 
 ---
 
-## ⚡ TL;DR — protocolo de selección (en orden)
+## ⚡ Protocolo de selección (en orden)
 
-0. **Si el usuario ya describió un proyecto concreto**, genera primero su superguía:
-   `uv run repo-intelligence recommend --project "<descripcion con herramienta incluida>" --max-repos 7`.
-   Para briefs largos usa `uv run repo-intelligence recommend --project-file proyecto.md --max-repos 7`.
-   Luego lee `ai_index/SUPERGUIAS/<proyecto>.md` o `ai_index/CONTEXT_PACKS/latest.md`. Esa guía ya trae finalistas, orden, instalación y cautelas.
-1. **Lee `INDICE_IA.json`** (índice compacto, 1 línea por repo). Es la única lectura obligatoria. No abras los `.md` todavía.
-2. **Filtra candidatos** por `cat` (categoría), `tags`, `role`, `exec`, `setup`, `prov` (proveedor LLM) y palabras de `one` (resumen de una línea).
-3. **Desempata** entre repos parecidos con el campo `alt` (alternativas): si ya elegiste uno, **descarta sus `alt`** — cumplen la misma función, no necesitas dos.
-4. **Combina** con `recipes` (stacks completos ya probados) si el proyecto necesita un flujo end-to-end, no una pieza suelta.
-5. **Considera la herramienta del usuario** (Antigravity, Codex, Claude Code, Grok, Deepseek) con `model_guidance` y el campo opcional `agent_tools`. Ver regla abajo.
-6. **Solo para los finalistas (<8 repos)**: abre `INDICE_IA.detalle.json` por `id`, o la ficha humana en el campo `doc` (`human/fichas/<id>.md`). Ahí está stack, instalación, "elige si / evita si" y "combina con".
+0. **Si el usuario describió un proyecto concreto**, genera primero su superguía:
+   `uv run repo-intelligence recommend --project "<descripción, con la herramienta si la nombra>" --max-repos 7`
+   (o `--project-file proyecto.md` para briefs largos). Después lee `ai_index/CONTEXT_PACKS/latest.md`: ya trae finalistas, orden e instalación.
+1. **Lee `INDICE_IA.json`**, el índice compacto con una entrada por repo. Es la única lectura obligatoria.
+2. **Filtra** por `cat`/`sub` (categoría y subcategoría), `tags`, `role`, `exec`, `setup`, `prov` y el resumen `one`. `pick: true` marca la opción recomendada de su subcategoría.
+3. **Desempata** con `alt`: si ya elegiste un repo, **descarta sus `alt`**, porque cumplen la misma función.
+4. **Parte de una receta** (`recipes`) si el usuario quiere un producto completo y no una pieza suelta.
+5. **Solo para finalistas (menos de 8)**, abre su entrada en `INDICE_IA.detalle.json` por `id`: `desc`, `why`, `how`, `install`, `choose_if`, `avoid_if`, `limits`, `combines_with`. La ficha humana equivalente está en `human/fichas/<id>.md`.
 
-> Coste: pasos 1-5 ≈ un solo archivo (~20k tokens). No leas `Guia.md` (es el documento monolítico viejo) ni las 13 fichas completas salvo que hayas reducido la lista.
+> Coste: los pasos 1 a 4 son un solo archivo. No leas `Guia.md` ni `Catalogo.md` enteros; son para humanos.
 
 ---
 
-## 🗺️ Archivos de esta biblioteca
+## 🗺️ Archivos
 
-| Archivo | Para qué | Cuándo leerlo |
+| Archivo | Para qué | Cuándo |
 |---|---|---|
-| **`AGENTS.md`** (este) | Instrucciones de navegación | Primero, siempre |
-| **`INDICE_IA.json`** | Índice **compacto** (scan): id, cat, tags, role, exec, setup, prov, resumen, alternativas | Para preseleccionar (lectura principal) |
-| **`INDICE_IA.detalle.json`** | Detalle por `id`: desc completa, stack, choose_if, avoid_if, combines_with | Solo para finalistas |
-| **`ai_index/SUPERGUIAS/*.md`** | Superguías generadas por proyecto: finalistas, por qué, cómo, orden, global/local/Docker/referencia | Primero si ya hay una descripción de proyecto |
-| **`ai_index/CONTEXT_PACKS/latest.md`** | Alias de la última superguía generada | Para continuar la última recomendación |
-| `human/categorias/NN-*.md` | Ficha **humana** completa por categoría (13 archivos) | Lectura humana o detalle máximo |
-| `human/README.md` | Mapa de categorías + leyenda + recetas (versión humana) | Navegación humana |
-| `Catalogo.md` | Tabla plana de los repos curados (instalación + API) | Referencia rápida tabular |
+| **`AGENTS.md`** (este) | Cómo navegar | Siempre, primero |
+| **`INDICE_IA.json`** | Índice compacto: id, cat, sub, role, exec, setup, mcp, prov, tags, stars, pick, one, alt | Para preseleccionar |
+| **`INDICE_IA.detalle.json`** | Ficha completa por `id` | Solo finalistas |
+| `ai_index/CONTEXT_PACKS/latest.md` | Última superguía generada por `recommend` | Si ya hay un proyecto descrito |
+| `menu_portable/REPO_MENU.md` | Menú autocontenido para copiar a otro proyecto | Al trabajar fuera de este repo |
+| `human/categorias/NN-*.md` | Categoría completa en formato humano | Lectura humana |
 
 ---
 
 ## 🧠 Regla clave: herramienta de código ≠ modelo en ejecución
 
-Separa **dos** decisiones que se confunden:
+- **El agente o IDE con el que se CONSTRUYE** (Claude Code, Codex, Antigravity, OpenCode…) solo importa para los repos `role = skill` o `directory` (skills, plugins, catálogos).
+- **El LLM que la APP llama EN EJECUCIÓN** está en `prov` (`openai`, `anthropic`, `google`, `local`, `mcp`). La mayoría de repos runtime son agnósticos: el proveedor se configura con variables de entorno. `prov: []` significa "no declarado", no "incompatible".
 
-- **(a) El agente/IDE con el que CONSTRUYES** — Antigravity, Codex, Claude Code, Grok, Deepseek-coder. Solo importa para los repos de tipo **`skill`/`directory`** (catálogos de skills, plugins, playbooks). Ahí mira `agent_tools`.
-- **(b) El LLM que tu APP llama EN EJECUCIÓN** — campo `prov` (`openai`/`anthropic`/`google`/`mcp`/`local`). **La mayoría de repos runtime son agnósticos**: el proveedor se configura por variables de entorno. No descartes un repo runtime por la herramienta de código del usuario.
-
-**Resumen por herramienta** (detalle en `model_guidance` del JSON):
-
+<!-- BL:AGENT_TOOLS -->
 | Herramienta | Repos específicos que le sirven |
 |---|---|
-| **Claude Code** | `claude-plugins-official`, `awesome-claude-code`, `superpowers`, `skills`, `agent-toolkit`, `n8n-skills`, `geo-seo-claude`, `agency-agents` |
-| **Antigravity** | `antigravity-awesome-skills` (nativo), `awesome-agent-skills`, `prompt-master` |
-| **Codex** | `antigravity-awesome-skills`, `awesome-agent-skills`, `marketingskills`, `taste-skill` (catálogos cross-tool) |
-| **Grok** | Ninguno específico — úsalo como proveedor LLM; los repos runtime lo aceptan vía API |
-| **Deepseek** | `deepseek-coder` (es el modelo); el resto es agnóstico vía proveedor compatible OpenAI |
+| **Claude Code** | `claude-code`, `anthropic-skills`, `claude-plugins-official`, `superpowers`, `awesome-claude-code`, `awesome-claude-skills`, `claude-mem`, `n8n-skills`, `geo-seo-claude`, `agency-agents` — Skills en .claude/skills y plugins con /plugin marketplace. |
+| **Codex** | `codex`, `agent-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`, `spec-kit`, `marketingskills`, `taste-skill` — Lee AGENTS.md y skills portables (formato Agent Skills). |
+| **Antigravity** | `antigravity-awesome-skills`, `awesome-agent-skills`, `prompt-master`, `stitch-skills` |
+| **Gemini CLI** | `gemini-cli`, `awesome-agent-skills`, `antigravity-awesome-skills`, `stitch-skills` |
+| **OpenCode** | `opencode`, `awesome-agent-skills`, `antigravity-awesome-skills`, `prompt-master` |
+| **Grok** | Sin repos específicos: úsalo como proveedor LLM en runtime (los repos agnósticos lo aceptan vía API compatible con OpenAI). |
+| **DeepSeek** | `deepseek-coder` — Es el modelo; el resto es agnóstico vía proveedor compatible con OpenAI. |
+<!-- /BL:AGENT_TOOLS -->
 
 ---
 
-## 📂 Categorías (repos curados con datos completos)
+## 📂 Categorías
 
-| # | Categoría | Repos | Archivo |
-|---|---|---|---|
-| 1 | Automatización, Mensajería & CRM | 17 | `human/categorias/01-automatizaci-n-mensajer-a-crm.md` |
-| 2 | Skills, Prompts & Guías de Agente | 30 | `human/categorias/02-skills-prompts-gu-as-de-agente.md` |
-| 3 | Frameworks & Orquestación de Agentes | 47 | `human/categorias/03-frameworks-orquestaci-n-de-agentes.md` |
-| 4 | Scraping, Búsqueda & Research Web | 13 | `human/categorias/04-scraping-b-squeda-research-web.md` |
-| 5 | MCP & Conectividad | 14 | `human/categorias/05-mcp-conectividad.md` |
-| 6 | Memoria, LLM Ops & Observabilidad | 5 | `human/categorias/06-memoria-llm-ops-observabilidad.md` |
-| 7 | Inteligencia de Código, Datos & Entrenamiento | 10 | `human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md` |
-| 8 | Workspaces de IA Local & Notebooks | 2 | `human/categorias/08-workspaces-de-ia-local-notebooks.md` |
-| 9 | Diseño, UI & Frontend | 30 | `human/categorias/09-dise-o-ui-frontend.md` |
-| 10 | Analítica & Visualización | 2 | `human/categorias/10-anal-tica-visualizaci-n.md` |
-| 11 | Generación de Imagen & Visión | 18 | `human/categorias/11-generaci-n-de-imagen-visi-n.md` |
-| 12 | Audio, Voz & Video | 16 | `human/categorias/12-audio-voz-video.md` |
-| 13 | Documentos & Presentaciones | 6 | `human/categorias/13-documentos-presentaciones.md` |
+<!-- BL:AGENT_CATEGORIES -->
+| # | Categoría | Repos | Subcategorías | Archivo |
+|---:|---|---:|---|---|
+| 1 | 🤖 Automatización, Mensajería & CRM | 32 | Motores de workflow y automatización, Ecosistema n8n, WhatsApp y mensajería, Chatbots y asistentes conversacionales, CRM, ERP y soporte al cliente, Email, marketing y notificaciones, Apps internas y bases de datos no-code | `human/categorias/01-automatizaci-n-mensajer-a-crm.md` |
+| 2 | 🧠 Skills, Prompts & Guías de Agente | 38 | Catálogos y marketplaces de skills, Metodologías y harness para agentes de código, Escritura y calidad de texto, Skills de dominio: marketing, SEO y negocio, Prompts y prompt engineering, Guías, cursos y cookbooks | `human/categorias/02-skills-prompts-gu-as-de-agente.md` |
+| 3 | 🕸️ Frameworks & Orquestación de Agentes | 59 | Agentes de código (terminal e IDE), Frameworks de agentes en Python, Frameworks en TypeScript y multi-lenguaje, Builders visuales y plataformas de agentes, Asistentes autónomos y equipos de agentes, Agentes de research autónomo, Infraestructura: sandboxes, herramientas y protocolos, Simulación, evolución y debate entre modelos | `human/categorias/03-frameworks-orquestaci-n-de-agentes.md` |
+| 4 | 🕷️ Scraping, Búsqueda & Research Web | 29 | Crawlers y extracción para IA, Scraping guiado por LLM, Navegadores y automatización web, Búsqueda, monitoreo y research web, Redes sociales y descarga de medios | `human/categorias/04-scraping-b-squeda-research-web.md` |
+| 5 | 🔌 MCP & Conectividad | 20 | SDKs y frameworks para crear MCP, Servidores MCP destacados, Directorios, clientes y aprendizaje | `human/categorias/05-mcp-conectividad.md` |
+| 6 | 🧬 Memoria, RAG & LLM Ops | 32 | Memoria persistente para agentes, RAG y motores de conocimiento, Bases vectoriales y búsqueda semántica, Serving y gateways de LLM, Ahorro de contexto y tokens, Observabilidad, evaluación y guardrails | `human/categorias/06-memoria-rag-llm-ops.md` |
+| 7 | 🧑‍💻 Inteligencia de Código, Datos & Entrenamiento | 34 | Entender y empaquetar código para agentes, Calidad, seguridad y benchmarks de código, Entrenar y afinar modelos, Aprender LLMs desde cero, Modelos abiertos y fundacionales, CLIs y SDKs de desarrollo, Datos y notebooks | `human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md` |
+| 8 | 🏠 IA Local: Modelos, Chats & Workspaces | 21 | Motores para correr modelos en local, Interfaces de chat auto-hospedadas, Workspaces privados y segundos cerebros, NotebookLM: alternativas y clientes | `human/categorias/08-ia-local-modelos-chats-workspaces.md` |
+| 9 | 🎨 Diseño, UI & Frontend | 34 | Componentes, iconos y sistemas de diseño, CSS y estilos, Animación y 3D, Diseño visual, canvas y builders, UI generada con IA y frontends para agentes, Skills de diseño para agentes | `human/categorias/09-dise-o-ui-frontend.md` |
+| 10 | 📊 Analítica & Visualización | 20 | Analítica web y de producto, BI, dashboards y chat con datos, Librerías de gráficos, Apps de datos en Python, Recursos y casos de uso | `human/categorias/10-anal-tica-visualizaci-n.md` |
+| 11 | 🖼️ Generación de Imagen & Visión | 27 | Interfaces para generar imágenes, Modelos, librerías y control, Restauración, upscaling y edición, Rostros y retratos animados, Visión por computador, Suites generativas todo-en-uno | `human/categorias/11-generaci-n-de-imagen-visi-n.md` |
+| 12 | 🎬 Audio, Voz & Video | 42 | Transcripción (voz a texto), Síntesis y clonación de voz, Agentes de voz en tiempo real, Edición, grabación y subtítulos, Video programático y con agentes, Video generativo y pipelines automáticos, Música y audio generativo | `human/categorias/12-audio-voz-video.md` |
+| 13 | 📄 Documentos & Presentaciones | 23 | Conversión de documentos para IA, OCR, Herramientas PDF, Presentaciones, Diagramas y documentación | `human/categorias/13-documentos-presentaciones.md` |
+<!-- /BL:AGENT_CATEGORIES -->
+
+## 🔗 Recetas
+
+<!-- BL:RECIPES -->
+- [💬 Bot de WhatsApp con IA](human/playbooks/bot-de-whatsapp-con-ia.md) — `evolution-api`, `n8n`, `n8n-mcp`, `n8n-skills`, `chatwoot`, `novu`
+- [🎬 Pipeline de Reels / video corto](human/playbooks/pipeline-de-reels-video-corto.md) — `whisperx`, `chatterbox`, `comfyui`, `real-esrgan`, `remotion`, `ffmpeg`, `moneyprinterturbo`
+- [🔎 Agente de research profundo](human/playbooks/agente-de-research-profundo.md) — `gpt-researcher`, `searxng`, `crawl4ai`, `browser-use`, `markitdown`, `langfuse`
+- [🏠 Workspace privado local soberano](human/playbooks/workspace-privado-local-soberano.md) — `ollama`, `odysseus`, `open-notebook`, `mem0`, `searxng`
+- [🧠 Análisis de repos grandes](human/playbooks/analisis-de-repos-grandes.md) — `repomix`, `codegraph`, `gitnexus`, `graphify`, `deepwiki-open`, `claude-code`
+- [📈 Marketing de agencia](human/playbooks/marketing-de-agencia.md) — `marketingskills`, `agency-agents`, `mautic`, `listmonk`, `posthog`, `open-generative-ai`
+- [🌐 Web app moderna con IA](human/playbooks/web-app-moderna-con-ia.md) — `ui`, `tailwindcss`, `vercel-ai`, `assistant-ui`, `motion`, `recharts`, `swr`
+- [🔌 Construir una app o servidor MCP](human/playbooks/construir-una-appservidor-mcp.md) — `awesome-mcp-servers`, `fastmcp`, `mcp-typescript-sdk`, `mcp-inspector`, `servers`, `mcp-use`
+- [📊 Documentos → presentaciones](human/playbooks/documentos-presentaciones.md) — `markitdown`, `docling`, `ppt-master`, `slidev`, `marp`
+- [🦙 ChatGPT privado con modelos locales](human/playbooks/chatgpt-privado-local.md) — `ollama`, `open-webui`, `searxng`, `litellm`
+- [📎 RAG sobre tus documentos](human/playbooks/rag-sobre-documentos.md) — `docling`, `llama-index`, `qdrant`, `litellm`, `ragas`, `langfuse`
+- [🛠️ Agente de código potenciado](human/playbooks/agente-de-codigo-potenciado.md) — `claude-code`, `superpowers`, `context7`, `serena`, `claude-mem`, `skillspector`
+- [📞 Agente de voz en tiempo real](human/playbooks/agente-de-voz.md) — `pipecat`, `faster-whisper`, `litellm`, `kokoro`, `livekit-agents`
+- [📊 Analítica de producto con IA](human/playbooks/analitica-con-ia.md) — `posthog`, `duckdb`, `wrenai`, `superset`, `umami`
+<!-- /BL:RECIPES -->
 
 ---
 
-## 🔗 Recetas (stacks end-to-end listos)
+## 🏷️ Leyenda de campos
 
-Cuando el usuario describe un **producto** (no una pieza), busca primero la receta y parte de ahí (detalle completo en `recipes` del JSON):
-
-1. **Bot de WhatsApp con IA** → evolution-api + n8n (+ n8n-mcp, n8n-skills) + chatwoot + novu
-2. **Pipeline de Reels / video corto** → whisperX + supertonic/TTS + ComfyUI/Fooocus + Real-ESRGAN + moviepy/remotion + lossless-cut
-3. **Agente de research profundo** → gpt-researcher/deer-flow + firecrawl/crawl4ai + browser-use + markitdown + langfuse
-4. **Workspace privado local soberano** → odysseus + open-notebook + ECC + mem0
-5. **Análisis de repos grandes** → codegraph + graphify/graphrag + GitNexus
-6. **Marketing de agencia** → marketingskills + agency-agents + mautic + listmonk + posthog/metabase
-7. **Web app moderna con IA** → open-design/plasmic + tailwindcss + heroui/ui + GSAP/motion/three.js + swr + echarts/uPlot
-8. **Construir una app/servidor MCP** → mcp-use + mcp + servers + awesome-mcp-servers
-9. **Documentos → presentaciones** → markitdown + ppt-master/reveal.js
-
----
-
-## 🏷️ Leyenda de campos (índice)
-
+- **`role`**: `platform` (plataforma) · `runtime` (motor) · `library` (librería/SDK) · `skill` (skill/prompt) · `directory` (catálogo) · `app` (app/UI)
 - **`exec`**: `local` 🏠 · `cloud` ☁️ · `hybrid` 🔀
-- **`role`**: `platform` (plataforma) · `runtime` (motor) · `library` (lib/SDK) · `skill` (skill/prompt) · `directory` (catálogo) · `app` (app/UI)
-- **`setup`**: `easy` 🟢 · `medium` 🟡 · `heavy` 🔴 (GPU/infra)
-- **`mcp`**: `true` si expone/consume Model Context Protocol
-- **`prov`**: APIs/LLM declarados. `[]` = no declarado (NO implica incompatibilidad)
-- **`alt`**: repos sustitutos (elige uno) · **`combines_with`** (en detalle): repos complementarios (úsalos juntos)
+- **`setup`**: `easy` 🟢 · `medium` 🟡 · `heavy` 🔴 (GPU o varios servicios)
+- **`mcp`**: `true` si expone o consume Model Context Protocol
+- **`lib`**: `true` si el repo ya está clonado en la biblioteca local; `false` = sugerido nuevo
+- **`alt`**: sustitutos (elige uno) · **`combines_with`** (en detalle): complementarios (úsalos juntos)
 
 ---
 
-## 🔧 Mantenimiento (para humanos) — flujo integral al agregar repos
+## 🔧 Mantenimiento
 
-La **fuente de verdad** para los datos curados son `INDICE_IA.json` (compacto) + `INDICE_IA.detalle.json` (detalle por repo con desc, stack, choose_if, etc.).
+La fuente de verdad son `INDICE_IA.json` + `INDICE_IA.detalle.json`. `Catalogo.md`, `Guia.md`, `human/`, `docs/index.html`, `menu_portable/` y los bloques `<!-- BL:* -->` de este archivo y del README se regeneran con:
 
-Los `human/*`, `Catalogo.md`, `Guia.md` y `ai_index/REPOS.*` se generan automáticamente.
-
-**Flujo recomendado cuando agregas repos nuevos a la biblioteca (../Repositorios_Prueba):**
-
-1. Clona o copia el repo en la carpeta de la biblioteca.
-2. Descubre:
-   ```powershell
-   uv run repo-intelligence discover
-   ```
-3. **Analiza en profundidad** (extrae código, README limpio, estructura):
-   ```powershell
-   uv run repo-intelligence analyze --new
-   # o para uno: uv run repo-intelligence analyze --id <repo-id> --force
-   ```
-4. **Genera borradores ricos** (inferencia automática de categoría, rol, stack técnico, desc teórica, choose/avoid, combines...):
-   ```powershell
-   uv run repo-intelligence enrich --new --auto-merge
-   ```
-   - Crea `data/drafts/<id>.json` (revisables).
-   - Con `--auto-merge` los incorpora a los INDICE_IA* (pasan a ser "curados" con datos completos).
-5. Revisa/edita los drafts o las entradas en los JSON si quieres ajustar la curaduría.
-6. Regenera **todo** (catálogos, fichas completas, Guia, etc.):
-   ```powershell
-   uv run repo-intelligence guide build
-   ```
-
-Esto hace que agregar un repo sea **mucho más integral y completo**: obtiene stack técnico real, descripciones teóricas de valor, inferencia de metadatos y propagación automática a todas las salidas.
-
-Comando todo-en-uno aproximado:
 ```powershell
-uv run repo-intelligence discover && uv run repo-intelligence analyze --new && uv run repo-intelligence enrich --new --auto-merge && uv run repo-intelligence guide build
+uv run repo-intelligence guide build
+uv run repo-intelligence menu export
+uv run pytest
 ```
 
-Nota: `human/*.md` y similares se sobrescriben en cada `guide build`.
+Para agregar repos con datos completos: `discover` → `analyze --new` → `enrich --new --auto-merge` (borradores revisables en `data/drafts/`) → `guide build`. La lógica de inferencia está en `src/repo_intelligence/analysis/curation.py`.
 
-(Para la lógica de inferencia ver `src/repo_intelligence/analysis/curation.py` — keywords por categoría + extracción de README + manifests.)
+Al editar a mano una entrada, mantén: `one` de 60 a 175 caracteres en español claro; `alt` simétrico (si A lista a B, B lista a A) y como máximo 5; ids de `alt` y `combines_with` que existan en el índice. Las pruebas lo comprueban.

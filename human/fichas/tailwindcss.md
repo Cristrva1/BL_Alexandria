@@ -1,61 +1,63 @@
-# tailwindcss
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › CSS y estilos
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🌬️ tailwindcss
 
-## Decision
+> Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 98.7k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-A utility-first CSS framework for rapidly building custom user interfaces.
+## Qué es
 
-## Que problema resuelve
+Elimina el contexto de estilos disperso entre hojas y componentes.
 
-quieres estilar rápido y consistente
+## Por qué destaca
 
-## Por que tiene valor
+Se ha vuelto el estándar de facto del estilado web moderno y la base sobre la que se montan casi todas las librerías de componentes actuales (shadcn, heroui, magicui). Su motor v4 con engine nativo en Rust aceleró el build.
 
-Aporta valor en `platform` para javascript, javascript-typescript. Stack declarado: javascript/typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Motor que escanea tus archivos de plantilla y genera solo el CSS de las utilidades usadas (purge automático), optimizando el bundle final a lo mínimo.
 
-quieres estilar rápido y consistente
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm i tailwindcss` y configurar el plugin de PostCSS/CLI, o vía CDN para pruebas rápidas. Requiere un build step para producción.
 
-prefieres CSS-in-JS o estilos scoped por componente.
+## Casos de uso
 
-## Tipo de instalacion
+- Estilar landings y apps sin escribir CSS a mano
+- Base de estilos de casi cualquier lib de componentes actual
+- Design system consistente por composición
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres estilar rápido y consistente | prefieres CSS-in-JS o estilos scoped por componente |
 
-javascript/typescript, javascript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Node.js, CSS
+- **Modelos / API:** N/A.
+- **Etiquetas:** `ui` `design` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [heroui](heroui.md) | 31.2k | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. |
+| [magicui](magicui.md) | 23.2k | Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio. |
 
-- `heroui`
-- `ui`
-- `magicui`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss)
+- 🌐 Web: <https://tailwindcss.com/>
+- 🧪 Receta: [Web app moderna con IA](../playbooks/web-app-moderna-con-ia.md)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con heroui, ui, magicui cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres estilar rápido y consistente. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

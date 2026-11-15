@@ -1,61 +1,69 @@
-# Agent-Reach
+[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Búsqueda, monitoreo y research web
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔍 Agent-Reach
 
-## Decision
+> CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 111k | MIT | Python | 2026-11-08 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-Agent-Reach estabiliza cómo un agente se conecta a proveedores LLM. La idea es que el canal de acceso pueda cambiar sin que reescribas el resto del stack.
+## Qué es
 
-## Que problema resuelve
+Un solo comando para que el agente lea y busque en redes y plataformas populares, incluidas chinas como Bilibili y XiaoHongShu.
 
-quieres 给你的 ai agent 一键装上互联网能力
+## Por qué destaca
 
-## Por que tiene valor
+Evita pagar APIs caras para que tu agente consulte redes sociales.
 
-Aporta valor en `runtime` para automation, javascript, multimedia, postgres, python, typescript, whisper. Stack declarado: python, typescript, javascript, postgres, whisper.
+## Cómo funciona
 
-## Cuando usarlo
+Combina scrapers y clientes de cada plataforma detrás de una interfaz de línea de comandos que el agente invoca.
 
-quieres 给你的 ai agent 一键装上互联网能力
+## Instalación rápida
 
-## Cuando NO usarlo
+Sigue el README: `pip install` del paquete y configura cookies si alguna plataforma lo pide.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Agente que lee hilos de Reddit
+- Resumir comentarios de YouTube
+- Investigar repos de GitHub
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| tu agente necesita leer redes sociales sin APIs de pago | necesitas datos con garantías de términos de servicio |
 
-python, typescript, javascript, postgres, whisper
+**Limitaciones:** Puede violar términos de servicio de algunas plataformas; úsalo con cuidado.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python
+- **Modelos / API:** No usa LLM; lo usa tu agente.
+- **Etiquetas:** `scraping` `research` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [last30days](last30days-skill.md) | 67.2k | Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket y la web de los últimos 30 días. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [snscrape](snscrape.md) | 5.5k | Scraper de redes sociales (Twitter/X, Reddit, Telegram, Instagram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves. |
 
-## Riesgos
+## Enlaces
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+- 🐙 GitHub: [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)
 
-## Ideas profesionales
+---
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres 给你的 ai agent 一键装上互联网能力. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

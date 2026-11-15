@@ -1,60 +1,68 @@
-# ag2
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Frameworks de agentes en Python
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🤝 ag2
 
-## Decision
+> Framework maduro para sistemas multiagente con patrones de colaboración (heredero directo de AutoGen).
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 5.1k | Apache-2.0 | Python | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-AG2 was evolved from AutoGen. Fully open-sourced. We invite collaborators from all organizations to contribute.
+## Qué es
 
-## Que problema resuelve
+Modela conversaciones entre varios agentes que se delegan tareas hasta resolver un objetivo.
 
-construyes multiagente serio en Python
+## Por qué destaca
 
-## Por que tiene valor
+Uno de los frameworks multiagente de referencia, con amplia adopción y comunidad activa heredada de AutoGen. Es totalmente open-source y aporta patrones de conversación (secuencial, anidado, grupo) ya probados en producción.
 
-Aporta valor en `platform` para automation, docker, python, react, typescript. Stack declarado: python, typescript, react, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Define agentes conversacionales (asistente, ejecutor de código, usuario) que intercambian mensajes según patrones predefinidos; corre sobre Python y se conecta a APIs de LLM vía variables de entorno.
 
-construyes multiagente serio en Python
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install ag2` (o `pyautogen` para el nombre legacy). Requiere una clave de API de LLM (OpenAI, Anthropic u otro) configurada por entorno.
 
-te basta un agente único o quieres orquestación visual.
+## Casos de uso
 
-## Tipo de instalacion
+- Equipos de agentes que se reparten tareas
+- Flujos de decisión estructurados
+- Agentes que escriben y ejecutan código en bucle
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| construyes multiagente serio en Python | te basta un agente único o quieres orquestación visual |
 
-python, typescript, react, docker
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python
+- **Modelos / API:** OpenAI, Anthropic, Gemini, locales (Ollama); agnóstico vía variables de entorno.
+- **Etiquetas:** `automation` `agents` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [langchain](langchain.md) | 149k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
+| [langfuse](langfuse.md) | 37.3k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
-- `langchain`
-- `langfuse`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [AutoGen](autogen.md) | 61.8k | Framework de Microsoft para conversaciones entre agentes, hoy en modo mantenimiento. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [ag2ai/ag2](https://github.com/ag2ai/ag2)
+- 🌐 Web: <https://ag2.ai>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con langchain, langfuse cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si construyes multiagente serio en Python. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

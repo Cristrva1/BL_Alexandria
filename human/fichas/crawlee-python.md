@@ -1,60 +1,62 @@
-# crawlee-python
+[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Crawlers y extracción para IA
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🦗 crawlee-python
 
-## Decision
+> Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 9.7k | Apache-2.0 | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-Crawlee covers your crawling and scraping end-to-end and helps you build reliable scrapers. Fast..
+## Qué es
 
-## Que problema resuelve
+Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. Acerca las ventajas del Crawlee de Node a quienes ya viven en Python, con respaldo oficial de Apify y adopción en crecimiento.
 
-quieres Crawlee en Python con antibloqueo
+## Por qué destaca
 
-## Por que tiene valor
+Acerca las ventajas del Crawlee de Node a quienes ya viven en Python, con respaldo oficial de Apify y adopción en crecimiento. Encaja naturalmente con pandas, notebooks y pipelines de datos.
 
-Aporta valor en `library` para javascript, python, react, scraping, typescript. Stack declarado: python, typescript, javascript, react.
+## Cómo funciona
 
-## Cuando usarlo
+Ofrece crawlers basados en BeautifulSoup/HTTPX o en Playwright, con una cola de requests unificada, autoescalado y gestión de sesiones y proxies.
 
-quieres Crawlee en Python con antibloqueo
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install crawlee` (extras como `crawlee[playwright]` para el modo navegador). Requiere Python y, para el modo navegador, los binarios de Playwright.
 
-ya usas scrapy y te basta, o no necesitas evasión.
+## Casos de uso
 
-## Tipo de instalacion
+- Crawling moderno con antibloqueo en Python
+- Integrar con stack de datos Python
+- Alternativa a scrapy con evasión integrada
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres Crawlee en Python con antibloqueo | ya usas scrapy y te basta, o no necesitas evasión |
 
-python, typescript, javascript, react
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python
+- **Modelos / API:** N/A (no usa LLM).
+- **Etiquetas:** `scraping` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [scrapy](scrapy.md) | 65.3k | Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. |
+| [playwright](playwright.md) | 99.7k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
 
-- `scrapy`
-- `playwright`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [apify/crawlee-python](https://github.com/apify/crawlee-python)
+- 🌐 Web: <https://crawlee.dev/python/>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con scrapy, playwright cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres Crawlee en Python con antibloqueo. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

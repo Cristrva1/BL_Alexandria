@@ -1,60 +1,62 @@
-# awesome-dataviz
+[🏠 Inicio](../README.md) › [📊 Analítica & Visualización](../categorias/10-anal-tica-visualizaci-n.md) › Recursos y casos de uso
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🗂️ awesome-dataviz
 
-## Decision
+> Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 4.5k | Otra (ver repo) | JavaScript | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-A curated list of awesome open-source data visualizations frameworks, libraries and software. Inspired by awesome-python and originally created by fasouto.
+## Qué es
 
-## Que problema resuelve
+Punto de partida para descubrir opciones de dataviz sin búsquedas dispersas.
 
-buscas opciones de visualización y aún no has elegido
+## Por qué destaca
 
-## Por que tiene valor
+Punto de partida cómodo de la serie "awesome" para descubrir y comparar opciones de dataviz sin búsquedas dispersas. Su organización por categorías (lenguaje, tipo de chart, plataforma) facilita el filtrado.
 
-Aporta valor en `directory` para automation, javascript, postgres, python, react, typescript. Stack declarado: python, typescript, javascript, react, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Es una lista en Markdown alojada en GitHub, organizada por categorías con enlaces a cada herramienta y recurso, mantenida por contribuciones de la comunidad.
 
-buscas opciones de visualización y aún no has elegido
+## Instalación rápida
 
-## Cuando NO usarlo
+No requiere instalación; se consulta en GitHub.
 
-ya elegiste tu librería y solo necesitas usarla.
+## Casos de uso
 
-## Tipo de instalacion
+- Elegir una librería de charts por lenguaje/plataforma
+- Descubrir recursos y ejemplos de dataviz
+- Comparar alternativas antes de decidir
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| buscas opciones de visualización y aún no has elegido | ya elegiste tu librería y solo necesitas usarla |
 
-python, typescript, javascript, react, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown
+- **Modelos / API:** N/A.
+- **Etiquetas:** `automation` `dataviz` `javascript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [echarts](echarts.md) | 67.7k | Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos. |
+| [awesome-bigdata](awesome-bigdata.md) | 14.7k | Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala. |
 
-- `echarts`
-- `awesome-bigdata`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [hal9ai/awesome-dataviz](https://github.com/hal9ai/awesome-dataviz)
+- 🌐 Web: <https://awesomedataviz.com>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con echarts, awesome-bigdata cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si buscas opciones de visualización y aún no has elegido. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

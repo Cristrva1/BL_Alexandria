@@ -1,61 +1,64 @@
-# davinci-resolve-mcp
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Edición, grabación y subtítulos
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# ✂️ DaVinci Resolve MCP
 
-## Decision
+> Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 4k | MIT | Python | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
-DaVinci Resolve MCP expone edición, media pool, render, color y Fusion a asistentes compatibles con Model Context Protocol. Requiere Resolve abierto y, para scripting externo, la edición Studio.
+## Qué es
 
-## Que problema resuelve
+Expone la API oficial de scripting de DaVinci Resolve como herramientas MCP para Claude, Cursor, Codex y otros clientes. Cubre montaje, organización del media pool, render, marcadores, color, Fusion y Fairlight, y añade análisis de medios que nunca modifica los originales. Incluye un panel de control local en el navegador.
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+## Por qué destaca
 
-## Por que tiene valor
+Cubre casi toda la API de Resolve, en un modo compacto de 37 herramientas o uno granular de 390, con operaciones protegidas. El instalador configura automáticamente una docena de clientes MCP.
 
-Aporta valor en `runtime` para mcp, video, agents. Stack declarado: python, typescript, javascript, whisper.
+## Cómo funciona
 
-## Cuando usarlo
+Servidor Python que se conecta a un Resolve abierto por su API de scripting externo y agrupa operaciones por acción para ahorrar contexto. Un servidor Node opcional edita archivos .drp/.drt sin Resolve abierto; ffmpeg y Whisper amplían el análisis.
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+## Instalación rápida
 
-## Cuando NO usarlo
+`npx davinci-resolve-mcp setup` (o `git clone` y `python install.py`). Antes, en Resolve Studio pon Preferences > General > External scripting using en Local.
 
-prefieres conexiones directas sin protocolo estándar
+## Casos de uso
 
-## Tipo de instalacion
+- Pedir a Claude que arme un timeline con clips del media pool
+- Automatizar ajustes de render y colas de exportación
+- Transcribir clips y escribir marcadores y metadatos en el proyecto
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| editas en DaVinci Resolve y quieres que un agente MCP automatice montaje, render o metadatos | no usas Resolve o prefieres montar video por código sin editor; mira `moviepy` o `ffmpeg` |
 
-python, typescript, javascript, whisper
+**Limitaciones:** El scripting externo solo funciona en Resolve Studio (de pago); en la edición gratuita depende de un puente interno que solo está verificado hasta Resolve 21.0.x.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, Node.js, DaVinci Resolve Scripting API, ffmpeg
+- **Modelos / API:** No llama a ningún LLM: lo usa el cliente MCP que elijas (Claude, Cursor, Codex...). Whisper local opcional para transcribir.
+- **Etiquetas:** `video` `mcp` `agents` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `claude-plugins-official`
-- `n8n-skills`
-- `mcp`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [FFmpeg](ffmpeg.md) | 66.9k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
+| [whisper](whisper.md) | 112k | Modelo de reconocimiento de voz y traducción de audio multilingüe de OpenAI, estándar de la industria que transcribe casi cualquier idioma con un solo modelo. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [samuelgursky/davinci-resolve-mcp](https://github.com/samuelgursky/davinci-resolve-mcp)
 
-## Riesgos
+---
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

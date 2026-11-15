@@ -1,60 +1,69 @@
-# sandbox
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Infraestructura: sandboxes, herramientas y protocolos
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📦 sandbox
 
-## Decision
+> Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 6.3k | Apache-2.0 | Python | 2026-09-14 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
-AIO Sandbox concentra herramientas de ejecución aislada para agentes: filesystem, red y procesos sin dejarlos sueltos en el host.
+## Qué es
 
-## Que problema resuelve
+Resuelve el riesgo de dejar que un agente toque tu host: todo corre contenido en un contenedor reproducible.
 
-quieres aislar la ejecución de agentes y reproducibilidad
+## Por qué destaca
 
-## Por que tiene valor
+Concentra en un solo contenedor todas las herramientas que un agente necesita, ofreciendo un entorno reproducible y aislado poco común. Su exposición vía web y MCP lo hace accesible desde cualquier cliente compatible sin configurar cada pieza por separado.
 
-Aporta valor en `library` para agents, automation, docker, javascript, javascript-typescript, langchain, python, react. Stack declarado: javascript/typescript, python, typescript, javascript, react, docker, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Levanta un contenedor con los servicios (browser, shell, editor, notebooks) expuestos vía web y conectables por clientes MCP, aislando la ejecución del host y limitando el alcance de las acciones del agente.
 
-quieres aislar la ejecución de agentes y reproducibilidad
+## Instalación rápida
 
-## Cuando NO usarlo
+`docker run` de la imagen del proyecto; requiere Docker y recursos suficientes para correr navegador + servicios en paralelo.
 
-te basta correr local sin sandbox o no puedes asumir el overhead de Docker.
+## Casos de uso
 
-## Tipo de instalacion
+- Ejecutar agentes de forma aislada
+- Entorno reproducible para tareas dev
+- Probar agentes que manipulan archivos/terminal sin riesgo al host
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres aislar la ejecución de agentes y reproducibilidad | te basta correr local sin sandbox o no puedes asumir el overhead de Docker |
 
-javascript/typescript, python, typescript, javascript, react, docker, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Docker, web, MCP
+- **Modelos / API:** Clientes MCP; sin LLM propio.
+- **Etiquetas:** `agents` `automation` `python` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [OpenHands](openhands.md) | 93.1k | Plataforma de agentes que ejecutan acciones reales en entornos de desarrollo (ex-OpenDevin). |
+| [ECC](ecc.md) | 300k | Sistema operativo/arnés unificado para desarrollar, ejecutar y desplegar en local agentes de IA de alto rendimiento de forma segura. |
 
-- `openhands`
-- `ecc`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [NemoClaw](nemoclaw.md) | 23k | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. |
+| [E2B](e2b.md) | 14.8k | Sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [agent-infra/sandbox](https://github.com/agent-infra/sandbox)
+- 🌐 Web: <https://sandbox.agent-infra.com>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con openhands, ecc cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres aislar la ejecución de agentes y reproducibilidad. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

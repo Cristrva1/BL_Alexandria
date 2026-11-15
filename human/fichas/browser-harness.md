@@ -1,61 +1,71 @@
-# browser-harness
+[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Navegadores y automatización web
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🌐 Browser Harness
 
-## Decision
+> Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 19k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
-Connect an LLM directly to your real browser with a thin, editable CDP harness. For browser tasks where you need complete freedom.
+## Qué es
 
-## Que problema resuelve
+Conecta el agente a tu navegador por CDP con un arnés pequeño y editable. Útil cuando necesitas libertad total y tus cuentas ya abiertas.
 
-quieres <img src="https://raw.githubusercontent.com/browser-use/media/main/browser-harness/banner-
+## Por qué destaca
 
-## Por que tiene valor
+De los creadores de browser-use; se configura con un solo prompt.
 
-Aporta valor en `skill` para postgres, python, typescript. Stack declarado: python, typescript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Habla con Chrome por el protocolo DevTools y expone comandos simples que el agente invoca.
 
-quieres <img src="https://raw.githubusercontent.com/browser-use/media/main/browser-harness/banner-
+## Instalación rápida
 
-## Cuando NO usarlo
+Sigue el README: pide a tu agente que lo instale con el prompt indicado.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Automatizar tareas en webs donde ya estás logueado
+- Pruebas manuales asistidas
+- Investigación con tu sesión
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| tu agente debe usar tu navegador real con sesión | necesitas aislamiento; mira `playwright-mcp` |
 
-python, typescript, postgres
+**Limitaciones:** El agente actúa con tus cuentas reales: supervisa lo que hace.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, CDP
+- **Modelos / API:** Usa el modelo de tu agente.
+- **Etiquetas:** `browser` `coding-agent` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Playwright MCP](playwright-mcp.md) | 39.4k | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
+| [Chrome DevTools MCP](chrome-devtools-mcp.md) | 55.1k | Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. |
 
-## Riesgos
+## Enlaces
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+- 🐙 GitHub: [browser-use/browser-harness](https://github.com/browser-use/browser-harness)
+- 🌐 Web: <https://browser-harness.com>
 
-## Ideas profesionales
+---
 
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres <img src="https://raw.githubusercontent.com/browser-use/media/main/browser-harness/banner-. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

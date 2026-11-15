@@ -1,61 +1,72 @@
-# moviepy
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Edición, grabación y subtítulos
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎬 MoviePy
 
-## Decision
+> Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 15.1k | MIT | Python | 2026-08-26 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-MoviePy recently upgraded to v2.0, introducing major breaking changes. You can consult the last v1 docs here but beware that v1 is no longer maintained. For more info on how to update your code from v1 to v2, see this guide.
+## Qué es
 
-## Que problema resuelve
+MoviePy convierte la edición de video en código Python: abres clips, los recortas, superpones texto o imágenes, mezclas audio y exportas a MP4, WebM o GIF. Es la pieza de ensamblaje habitual en pipelines que generan videos cortos a partir de imágenes, voz sintética y subtítulos.
 
-ensamblas video por código en Python
+## Por qué destaca
 
-## Por que tiene valor
+Es la librería de edición de video más usada en Python, con una API legible y efectos incluidos. La versión 2.0 modernizó la API, aunque rompe la compatibilidad con el código escrito para v1.
 
-Aporta valor en `library` para docker, postgres, python, typescript. Stack declarado: python, typescript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Importa fotogramas y audio como arrays de NumPy, aplica efectos y composiciones sobre clips (`VideoFileClip`, `TextClip`, `CompositeVideoClip`) y vuelve a codificar con FFmpeg, que obtiene mediante imageio-ffmpeg.
 
-ensamblas video por código en Python
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install moviepy` (Python 3.9+; trae FFmpeg mediante imageio-ffmpeg).
 
-prefieres React/programático web ([remotion](#-remotion)) o una UI ([OpenCut](#-opencut)).
+## Casos de uso
 
-## Tipo de instalacion
+- Montar reels con imágenes, voz TTS y subtítulos por script
+- Recortar clips y superponer títulos o marcas de agua en lote
+- Generar GIFs y videos de demo de forma reproducible
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| ensamblas video desde Python y quieres controlar cada clip por código | prefieres plantillas en React (`remotion`) o en HTML (`hyperframes`), o solo necesitas cortar sin recodificar (`lossless-cut`) |
 
-python, typescript, docker, postgres
+**Limitaciones:** Es más lento que llamar a FFmpeg directamente porque pasa cada fotograma por NumPy, y el código escrito para v1 hay que adaptarlo a v2.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, NumPy, Pillow, FFmpeg
+- **Modelos / API:** No usa LLM: compone el material que generan otras herramientas.
+- **Etiquetas:** `video` `audio` `automation` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `whisperx`
-- `tts`
-- `pipeline de reels`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [whisperX](whisperx.md) | 25.2k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
+| [Kokoro](kokoro.md) | 10k | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. |
+| [ComfyUI](comfyui.md) | 146k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [remotion](remotion.md) | 72.2k | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
+| [HyperFrames](hyperframes.md) | 82k | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. |
 
-## Riesgos
+## Enlaces
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+- 🐙 GitHub: [Zulko/moviepy](https://github.com/Zulko/moviepy)
+- 🌐 Web: <https://zulko.github.io/moviepy/>
 
-## Ideas profesionales
+---
 
-Combinar con whisperx, tts, pipeline de reels cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si ensamblas video por código en Python. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,60 +1,67 @@
-# llm-scraper
+[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Scraping guiado por LLM
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧾 llm-scraper
 
-## Decision
+> Librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 7k | MIT | TypeScript | 2026-10-26 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-LLM Scraper is a TypeScript library that allows you to extract structured data from any webpage using LLMs.
+## Qué es
 
-## Que problema resuelve
+Librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído. Popular por su simplicidad: salida tipada y validada sin escribir parsers, integrándose directamente con Playwright y los SDKs de LLM.
 
-quieres salida tipada y validada en stack TS
+## Por qué destaca
 
-## Por que tiene valor
+Popular por su simplicidad: salida tipada y validada sin escribir parsers, integrándose directamente con Playwright y los SDKs de LLM. El uso de Zod garantiza tipos correctos en tiempo de compilación.
 
-Aporta valor en `platform` para javascript, javascript-typescript, scraping, typescript. Stack declarado: javascript/typescript, typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Carga la página con Playwright, la pasa a texto/markdown y pide al LLM que devuelva un objeto conforme al esquema Zod, garantizando tipos correctos y validación en runtime.
 
-quieres salida tipada y validada en stack TS
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm i llm-scraper playwright` y la SDK del proveedor de LLM elegido. Requiere Node.js, los binarios de Playwright y una clave de API de LLM.
 
-prefieres extracción semántica por grafos ([Scrapegraph-ai](#-scrapegraph-ai)) o trabajas en Python.
+## Casos de uso
 
-## Tipo de instalacion
+- Extraer datos tipados de sitios
+- Automatizar datasets estructurados
+- Poblar una API/DB desde páginas sin backend propio
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres salida tipada y validada en stack TS | prefieres extracción semántica por grafos (Scrapegraph-ai) o trabajas en Python |
 
-javascript/typescript, typescript, javascript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** TypeScript, Playwright, Zod
+- **Modelos / API:** LLMs vía SDK (OpenAI, Anthropic, etc.); agnóstico vía variables de entorno.
+- **Etiquetas:** `scraping` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [playwright](playwright.md) | 99.7k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
+| [firecrawl](firecrawl.md) | 200k | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
 
-- `playwright`
-- `firecrawl`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Maxun](maxun.md) | 18.2k | Plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [mishushakov/llm-scraper](https://github.com/mishushakov/llm-scraper)
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con playwright, firecrawl cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres salida tipada y validada en stack TS. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

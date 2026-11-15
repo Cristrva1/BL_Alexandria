@@ -1,61 +1,69 @@
-# open-swe
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Agentes de código (terminal e IDE)
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 👨‍💻 Open SWE
 
-## Decision
+> Agente de código asíncrono de LangChain para montar tu propio agente interno de ingeniería.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 11.2k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
-Elite engineering orgs like Stripe, Ramp, and Coinbase are building their own internal coding agents — Slackbots, CLIs, and web apps that meet engineers where they already work. These agents are connected to internal systems with the right context, permissioning, and safety boundaries to operate with minimal human oversight.
+## Qué es
 
-## Que problema resuelve
+Trabaja en segundo plano a partir de issues o mensajes, planifica, programa en un sandbox y abre PRs. Inspirado en los agentes internos de empresas como Stripe o Ramp.
 
-quieres open-source framework for building your org's internal coding agent.
+## Por qué destaca
 
-## Por que tiene valor
+Base abierta y extensible sobre LangGraph para quien quiere su propio agente de ingeniería.
 
-Aporta valor en `platform` para agents, automation, docker, javascript, langchain, postgres, python, react. Stack declarado: python, typescript, javascript, react, docker, postgres, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Un grafo de LangGraph coordina planificador y programador; el código se ejecuta en sandboxes remotos y el resultado llega como PR.
 
-quieres open-source framework for building your org's internal coding agent.
+## Instalación rápida
 
-## Cuando NO usarlo
+Clona el repo y sigue la guía de despliegue en LangGraph Platform con tus claves.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Agente que resuelve issues y abre PRs
+- Bot interno de ingeniería en Slack
+- Tareas largas en segundo plano
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres construir el agente de código interno de tu empresa | solo quieres un agente para tu terminal; mira `claude-code` |
 
-python, typescript, javascript, react, docker, postgres, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, LangGraph, TypeScript
+- **Modelos / API:** Anthropic u OpenAI configurables.
+- **Etiquetas:** `coding-agent` `agents` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [LangGraph](langgraph.md) | 44.7k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
+| [E2B](e2b.md) | 14.8k | Sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas. |
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [OpenHands](openhands.md) | 93.1k | Plataforma de agentes que ejecutan acciones reales en entornos de desarrollo (ex-OpenDevin). |
+| [SWE-agent](swe-agent.md) | 20.8k | Agente de Princeton y Stanford que toma un issue de GitHub e intenta resolverlo solo. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [langchain-ai/open-swe](https://github.com/langchain-ai/open-swe)
+- 🌐 Web: <https://www.langchain.com/blog/open-swe-an-open-source-framework-for-internal-coding-agents>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres open-source framework for building your org's internal coding agent.. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

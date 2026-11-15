@@ -1,36 +1,172 @@
-# Skills, Prompts & Guías de Agente
+[🏠 Inicio](../README.md) · [📚 Catálogo](../../Catalogo.md) · [⬅️ 1. Automatización, Mensajería & CRM](01-automatizaci-n-mensajer-a-crm.md) · [3. Frameworks & Orquestación de Agentes ➡️](03-frameworks-orquestaci-n-de-agentes.md)
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧠 2. Skills, Prompts & Guías de Agente
 
-| Repo | Rol | Instalacion | Decision | Uso real |
-|---|---|---|---|---|
-| agent-toolkit | skill | reference_only | reference | Opinionated skills shared by @leonardocouy for improving daily work efficiency with Claude Code. Skills are packaged instructions and scripts that extend agent capabilities across development, documentation, planning, and professional workflows. |
-| andrej-karpathy-skills | skill | reference_only | reference | > Check out my new project Multica — an open-source platform for running and managing coding agents with reusable skills. |
-| antigravity-awesome-skills | skill | reference_only | reference | 🌌 Antigravity Awesome Skills: 1,682+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More. |
-| autoresearch | platform | deferred | defer | One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synchronizing once in a while using sound wave interconnect in the ritual of "group meeting". That era is long gone. Research is now entirely the domain of autonomous swarms of AI agents running across compute cluster megastructures in the skies. |
-| awesome-agent-skills | skill | reference_only | reference | Directorio de agent skills revisado a mano. Úsalo para elegir piezas concretas; no instales el catálogo entero. |
-| browser-harness | skill | reference_only | reference | Connect an LLM directly to your real browser with a thin, editable CDP harness. For browser tasks where you need complete freedom. |
-| Context-Engineering | runtime | reference_only | reference | > "Context engineering is the delicate art and science of filling the context window with just the right information for the next step." — Andrej Karpathy. |
-| geo-seo-claude | skill | reference_only | reference | (ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews) while maintaining traditional SEO foundations. |
-| guia | skill | reference_only | reference | Catálogo operativo de los 156 repositorios locales del workspace, diseñado para entender, comparar, elegir y combinar repos rápido. |
-| hermes-agent | skill | reference_only | reference | The self-improving AI agent built by Nous Research. It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing w. |
-| humanizer | skill | reference_only | reference | A skill for Claude Code and OpenCode that removes signs of AI-generated writing from text, making it sound more natural and human. |
-| last30days-skill | skill | reference_only | reference | An AI agent-led search engine scored by upvotes, likes, and real money - not editors.. |
-| llm-council | platform | reference_only | reference | The idea of this repo is that instead of asking a question to your favorite LLM provider (e.g. OpenAI GPT 5.1, Google Gemini 3.0 Pro, Anthropic Claude Sonnet 4.5, xAI Grok 4, eg.c), you can group them into your "LLM Council". |
-| marketingskills | skill | reference_only | reference | A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the Agent Skills spec. |
-| multica | skill | reference_only | reference | The open-source managed agents platform. |
-| nanoGPT | library | deferred | defer | Update Nov 2025 nanoGPT has a new and improved cousin called nanochat. It is very likely you meant to use/find nanochat instead. nanoGPT (this repo) is now very old and deprecated but I will leave it up for posterity. |
-| notebooklm-py | skill | reference_only | reference | A Comprehensive NotebookLM Skill & Unofficial Python API. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw. |
-| Open-Generative-AI | skill | reference_only | reference | The free, open-source alternative to AI Video Platforms. Generate AI images and videos using 200+ state-of-the-art models — no content filters, no closed ecosystem, no subscription fees. |
-| OpenMontage | skill | reference_only | reference | Turn your AI coding assistant into a full video production studio. Describe what you want in plain language — your agent handles research, scripting, asset generation, editing, and final composition. |
-| playwright-cli | skill | reference_only | reference | Playwright CLI empaquetado con skills de agente: permite manejar Chromium/Firefox/WebKit en scripts y en flujos de coding agents. |
-| prompt-master | skill | reference_only | reference | A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention. No re-prompting your way to an answer you should have gotten on attempt one. |
-| skills_remotion | skill | reference_only | reference | This is an internal package and has no documentation. |
-| SkillSpector | skill | reference_only | reference | Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks before installing agent skills. |
-| stitch-sdk | skill | reference_only | reference | Generate UI screens from text prompts and extract their HTML and screenshots programmatically. |
-| stop-slop | skill | reference_only | reference | A skill for removing AI tells from prose. |
-| superpowers | skill | reference_only | reference | Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them. |
-| ui-ux-pro-max-skill | skill | reference_only | reference | An AI skill that provides design intelligence for building professional UI/UX across multiple platforms and frameworks. |
-| n8n-skills | skill | reference_only | reference | Paquete de skills para construir flujos n8n con un agente. Combínalo con n8n y n8n-mcp; no sustituye la instancia de n8n. |
-| taste-skill | skill | reference_only | reference | taste-skill corrige interfaces generadas por agentes: jerarquía visual, tipo, movimiento y espacio. No es un kit de componentes. |
-| arcads-claude-code | skill | reference_only | reference | Plugin de skills que conecta un coding agent con Arcads para piezas creativas (video e imagen). Requiere cuenta Arcads; no es un renderer local. |
+> Catálogos de skills, metodologías para agentes de código, escritura sin 'slop', prompts, cursos y cookbooks.
+
+**38 repos** · 6 subcategorías · ⭐ 3.5M estrellas en total · 🆕 17 sugeridos nuevos
+
+## ⭐ Imprescindibles
+
+Si solo vas a mirar unos pocos, empieza por estos:
+
+| Repo | ⭐ | Qué hace | Instalación |
+|---|---:|---|---|
+| [Anthropic Skills](../fichas/anthropic-skills.md) | 192k | Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills. | `/plugin marketplace add anthropics/skills` |
+| [Claude Code Plugins Directory](../fichas/claude-plugins-official.md) | 46.7k | Marketplace oficial de Anthropic con plugins para Claude Code, propios y de socios: comandos, agentes, skills y servidores MCP. | `/plugin install <plugin>@claude-plugins-official` |
+| [Agent Skills (Addy Osmani)](../fichas/agent-skills.md) | 115k | Colección de skills de ingeniería de producción para agentes de código, de Addy Osmani. | Copia las carpetas a `.claude/skills/` (o la carpeta de skills de tu agente) o instálal… |
+| [Humanizer](../fichas/humanizer.md) | 67.4k | Skill que reescribe texto generado por IA para que suene humano, basada en la guía de Wikipedia sobre señales de escritura IA. | `/plugin marketplace add blader/humanizer` |
+| [Marketing Skills](../fichas/marketingskills.md) | 59.5k | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. | `npx skills add coreyhaines31/marketingskills` |
+| [Prompt Engineering Guide](../fichas/prompt-engineering-guide.md) | 80k | Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes. | No se instala: léela en promptingguide.ai o en el repo. |
+| [Fabric](../fichas/fabric.md) | 44.6k | CLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal. | `go install github.com/danielmiessler/fabric/cmd/fabric@latest` |
+| [Generative AI for Beginners](../fichas/generative-ai-for-beginners.md) | 123k | Curso gratuito de Microsoft con 21 lecciones para empezar a construir aplicaciones con IA generativa. | No se instala: abre el repo o haz fork y sigue las lecciones en Codespaces. |
+| [AI Agents for Beginners](../fichas/ai-agents-for-beginners.md) | 79.3k | Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español. | Lee las lecciones en GitHub; para ejecutar el código, clona el repo (el README explica… |
+
+## 🧭 Subcategorías
+
+- [Catálogos y marketplaces de skills](#catálogos-y-marketplaces-de-skills) — 8 repos
+- [Metodologías y harness para agentes de código](#metodologías-y-harness-para-agentes-de-código) — 10 repos
+- [Escritura y calidad de texto](#escritura-y-calidad-de-texto) — 2 repos
+- [Skills de dominio: marketing, SEO y negocio](#skills-de-dominio-marketing-seo-y-negocio) — 4 repos
+- [Prompts y prompt engineering](#prompts-y-prompt-engineering) — 5 repos
+- [Guías, cursos y cookbooks](#guías-cursos-y-cookbooks) — 9 repos
+
+## Catálogos y marketplaces de skills
+
+| Repo | ⭐ | Qué hace | Ideal si… | Setup |
+|---|---:|---|---|:---:|
+| ⭐ [Anthropic Skills](../fichas/anthropic-skills.md) 🆕 | 192k | Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills. | quieres skills oficiales de Anthropic o un ejemplo de referencia para escribir las tuyas | 🟢 |
+| ⭐ [Claude Code Plugins Directory](../fichas/claude-plugins-official.md) | 46.7k | Marketplace oficial de Anthropic con plugins para Claude Code, propios y de socios: comandos, agentes, skills y servidores MCP. | usas Claude Code y quieres plugins oficiales o de socios que se instalan con un comando | 🟢 |
+| [Awesome Claude Skills](../fichas/awesome-claude-skills.md) 🆕 | 79.2k | Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps. | usas Claude para tareas de negocio además de código y quieres skills ordenadas por área de trabajo | 🟢 |
+| [Awesome Claude Code](../fichas/awesome-claude-code.md) | 57.7k | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. | usas Claude Code a diario y quieres descubrir herramientas y flujos probados por la comunidad | 🟢 |
+| [Agentic Awesome Skills](../fichas/antigravity-awesome-skills.md) | 49.5k | Biblioteca comunitaria de más de 2.800 skills SKILL.md para Claude Code, Codex, Cursor y Gemini CLI, con instalador npx y MCP local. | quieres cubrir muchos dominios con skills ya escritas y trabajas con uno o varios agentes de código | 🟢 |
+| [wshobson/agents](../fichas/wshobson-agents.md) 🆕 | 42.4k | Marketplace de 94 plugins con más de 200 subagentes, 185 skills y 105 comandos para Claude Code, Codex, Cursor, OpenCode y Copilot. | quieres subagentes y comandos especializados por lenguaje o área, instalables plugin a plugin | 🟢 |
+| [Awesome GitHub Copilot](../fichas/awesome-copilot.md) 🆕 | 41k | Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y plugins para personalizar GitHub Copilot. | tu equipo trabaja con GitHub Copilot en VS Code o Copilot CLI y quiere personalizarlo | 🟢 |
+| [Awesome Agent Skills](../fichas/awesome-agent-skills.md) | 37k | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. | quieres skills con procedencia clara, publicadas por el equipo que mantiene cada herramienta | 🟢 |
+
+## Metodologías y harness para agentes de código
+
+| Repo | ⭐ | Qué hace | Ideal si… | Setup |
+|---|---:|---|---|:---:|
+| ⭐ [Agent Skills (Addy Osmani)](../fichas/agent-skills.md) 🆕 | 115k | Colección de skills de ingeniería de producción para agentes de código, de Addy Osmani. | quieres skills de ingeniería web de calidad para tu agente | 🟢 |
+| [skills](../fichas/skills.md) | 320k | Colección de skills de referencia mantenida por el proyecto aihero.dev / Total TypeScript, pensada como ejemplos limpios y bien construidos. | buscas referencias limpias y didácticas | 🟢 |
+| [superpowers](../fichas/superpowers.md) | 315k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. | quieres método, no fragmentos sueltos | 🟢 |
+| [ECC](../fichas/ecc.md) | 300k | Sistema operativo/arnés unificado para desarrollar, ejecutar y desplegar en local agentes de IA de alto rendimiento de forma segura. | ejecutas agentes con acceso real a tu máquina y necesitas contención | 🔴 |
+| [andrej-karpathy-skills](../fichas/andrej-karpathy-skills.md) | 232k | Guía de 4 principios inspirada en Andrej Karpathy para que tu agente de código responda útil y sin relleno. | quieres respuestas más útiles ya, sin curar prompts largos | 🟢 |
+| [Ponytail](../fichas/ponytail.md) | 188k | Skill que hace que tu agente de código piense como un senior minimalista: el mejor código es el que no escribes. | tu agente tiende a sobrecomplicar las soluciones | 🟢 |
+| [Spec Kit](../fichas/spec-kit.md) 🆕 | 149k | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. | quieres que el agente siga una especificación antes de programar | 🟢 |
+| [BMAD Method](../fichas/bmad-method.md) 🆕 | 55.2k | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. | quieres un proceso completo de producto a código con agentes | 🟢 |
+| [SkillSpector](../fichas/skillspector.md) | 25.2k | Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos. | instalas skills externas o curas catálogos | 🟢 |
+| [agent-toolkit](../fichas/agent-toolkit.md) | 2.7k | Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code en tareas de desarrollo, documentación y planificación. | quieres productividad inmediata con tareas comunes | 🟢 |
+
+## Escritura y calidad de texto
+
+| Repo | ⭐ | Qué hace | Ideal si… | Setup |
+|---|---:|---|---|:---:|
+| ⭐ [Humanizer](../fichas/humanizer.md) | 67.4k | Skill que reescribe texto generado por IA para que suene humano, basada en la guía de Wikipedia sobre señales de escritura IA. | publicas textos redactados con IA y quieres que se lean como escritos por una persona | 🟢 |
+| [Stop Slop](../fichas/stop-slop.md) | 18.8k | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. | quieres reglas de estilo compactas y portables que puedas usar como skill o dentro de un system prompt | 🟢 |
+
+## Skills de dominio: marketing, SEO y negocio
+
+| Repo | ⭐ | Qué hace | Ideal si… | Setup |
+|---|---:|---|---|:---:|
+| ⭐ [Marketing Skills](../fichas/marketingskills.md) | 59.5k | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. | eres founder o marketer técnico y quieres que tu agente de código haga trabajo de growth con marcos probados | 🟢 |
+| [The Agency (agency-agents)](../fichas/agency-agents.md) | 168k | Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Code y otros agentes. | quieres roles de negocio y técnicos ya definidos (marketing, ventas, producto, ingeniería) para tu agente de código | 🟢 |
+| [GEO-SEO Claude](../fichas/geo-seo-claude.md) | 11.6k | Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF. | quieres medir y mejorar cómo te citan los buscadores con IA, no solo tu posición en Google | 🟢 |
+| [Arcads AI Video Skill Pack](../fichas/arcads-claude-code.md) | — | Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen con la API de Arcads (Seedance, Sora, Veo, Kling). | ya tienes cuenta de Arcads y quieres producir creatividades publicitarias desde Claude Code o Cursor | 🟡 |
+
+## Prompts y prompt engineering
+
+| Repo | ⭐ | Qué hace | Ideal si… | Setup |
+|---|---:|---|---|:---:|
+| ⭐ [Prompt Engineering Guide](../fichas/prompt-engineering-guide.md) 🆕 | 80k | Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes. | quieres una referencia amplia de técnicas de prompting | 🟢 |
+| ⭐ [Fabric](../fichas/fabric.md) 🆕 | 44.6k | CLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal. | quieres prompts reutilizables desde la terminal | 🟢 |
+| [prompts.chat](../fichas/prompts-chat.md) 🆕 | 177k | La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable. | buscas prompts listos para copiar | 🟢 |
+| [Anthropic's Prompt Engineering Tutorial](../fichas/prompt-eng-tutorial.md) 🆕 | 39.2k | Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. | quieres aprender prompts con práctica guiada | 🟢 |
+| [prompt-master](../fichas/prompt-master.md) | 15.8k | Skill que ayuda a redactar prompts precisos para cualquier herramienta de IA, buscando el mejor resultado sin desperdiciar tokens. | quieres dejar de re-promptear y acertar antes | 🟢 |
+
+## Guías, cursos y cookbooks
+
+| Repo | ⭐ | Qué hace | Ideal si… | Setup |
+|---|---:|---|---|:---:|
+| ⭐ [Generative AI for Beginners](../fichas/generative-ai-for-beginners.md) 🆕 | 123k | Curso gratuito de Microsoft con 21 lecciones para empezar a construir aplicaciones con IA generativa. | quieres un curso estructurado y gratuito para empezar | 🟢 |
+| ⭐ [AI Agents for Beginners](../fichas/ai-agents-for-beginners.md) 🆕 | 79.3k | Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español. | estás empezando con agentes y quieres un curso guiado, gratuito y disponible en español | 🟡 |
+| [Awesome LLM Apps](../fichas/awesome-llm-apps.md) 🆕 | 144k | Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM. | quieres una plantilla de app con LLM que funcione desde el primer día para adaptarla a tu proyecto | 🟡 |
+| [OpenAI Cookbook](../fichas/openai-cookbook.md) 🆕 | 77k | Ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales. | construyes sobre la API de OpenAI y quieres ejemplos oficiales | 🟢 |
+| [Claude Cookbooks](../fichas/claude-cookbooks.md) 🆕 | 54.5k | Recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización. | construyes sobre la API de Claude y quieres ejemplos oficiales que puedas copiar | 🟢 |
+| [12-Factor Agents](../fichas/12-factor-agents.md) 🆕 | 27.1k | Guía de 12 principios de ingeniería para construir agentes con LLM fiables en producción, inspirada en las 12 Factor Apps. | vas a construir un agente para clientes reales y quieres principios de diseño antes de elegir framework | 🟢 |
+| [Agents Towards Production](../fichas/agents-towards-production.md) | 21.9k | Colección de 28 tutoriales con código para llevar agentes de IA a producción: memoria, despliegue, seguridad, trazas y evaluación. | ya tienes un prototipo de agente y necesitas resolver memoria, despliegue, seguridad u observabilidad | 🟡 |
+| [Loop Engineering](../fichas/loop-engineering.md) | 11.7k | Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código en vez de prompts sueltos. | quieres que tu agente de código itere solo con criterios medibles | 🟢 |
+| [Context-Engineering](../fichas/context-engineering.md) | 9.3k | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso. | quieres profundizar en contexto y RAG | 🟢 |
+
+## ⚖️ ¿Cuál elegir?
+
+Repos que cumplen la misma función: elige uno por grupo.
+
+### Claude Code Plugins Directory, The Agency (agency-agents), Awesome Claude Skills, Awesome Claude Code, Agentic Awesome Skills, wshobson/agents, Awesome Agent Skills
+
+| Repo | ⭐ | Elígelo si… | Evítalo si… |
+|---|---:|---|---|
+| [Claude Code Plugins Directory](../fichas/claude-plugins-official.md) | 46.7k | usas Claude Code y quieres plugins oficiales o de socios que se instalan con un comando | buscas recursos comunitarios o trabajas con otro agente; mira `awesome-claude-code` o `wshobson-agents` |
+| [The Agency (agency-agents)](../fichas/agency-agents.md) | 168k | quieres roles de negocio y técnicos ya definidos (marketing, ventas, producto, ingeniería) para tu agente de código | solo necesitas skills de marketing y growth; mira `marketingskills` |
+| [Awesome Claude Skills](../fichas/awesome-claude-skills.md) | 79.2k | usas Claude para tareas de negocio además de código y quieres skills ordenadas por área de trabajo | solo quieres skills de procedencia oficial; mira `anthropic-skills` o `awesome-agent-skills` |
+| [Awesome Claude Code](../fichas/awesome-claude-code.md) | 57.7k | usas Claude Code a diario y quieres descubrir herramientas y flujos probados por la comunidad | trabajas con otro agente o solo quieres plugins oficiales; mira `claude-plugins-official` o `awesome-agent-skills` |
+| [Agentic Awesome Skills](../fichas/antigravity-awesome-skills.md) | 49.5k | quieres cubrir muchos dominios con skills ya escritas y trabajas con uno o varios agentes de código | prefieres pocas skills oficiales y revisadas; mira `anthropic-skills` o `awesome-agent-skills` |
+| [wshobson/agents](../fichas/wshobson-agents.md) | 42.4k | quieres subagentes y comandos especializados por lenguaje o área, instalables plugin a plugin | solo quieres plugins oficiales de Anthropic y socios; mira `claude-plugins-official` |
+| [Awesome Agent Skills](../fichas/awesome-agent-skills.md) | 37k | quieres skills con procedencia clara, publicadas por el equipo que mantiene cada herramienta | prefieres instalar un lote grande con un solo comando; mira `antigravity-awesome-skills` |
+
+### Agent Skills (Addy Osmani), superpowers
+
+| Repo | ⭐ | Elígelo si… | Evítalo si… |
+|---|---:|---|---|
+| [Agent Skills (Addy Osmani)](../fichas/agent-skills.md) | 115k | quieres skills de ingeniería web de calidad para tu agente | buscas un catálogo enorme de skills de todo tipo; mira `antigravity-awesome-skills` |
+| [superpowers](../fichas/superpowers.md) | 315k | quieres método, no fragmentos sueltos | solo necesitas una skill aislada puntual |
+
+### Spec Kit, BMAD Method
+
+| Repo | ⭐ | Elígelo si… | Evítalo si… |
+|---|---:|---|---|
+| [Spec Kit](../fichas/spec-kit.md) | 149k | quieres que el agente siga una especificación antes de programar | buscas roles completos de equipo ágil; mira `bmad-method` |
+| [BMAD Method](../fichas/bmad-method.md) | 55.2k | quieres un proceso completo de producto a código con agentes | prefieres algo ligero centrado en especificaciones; mira `spec-kit` |
+
+### Humanizer, Stop Slop
+
+| Repo | ⭐ | Elígelo si… | Evítalo si… |
+|---|---:|---|---|
+| [Humanizer](../fichas/humanizer.md) | 67.4k | publicas textos redactados con IA y quieres que se lean como escritos por una persona | quieres reglas de estilo cortas para pegar en un system prompt, con rúbrica propia; mira `stop-slop` |
+| [Stop Slop](../fichas/stop-slop.md) | 18.8k | quieres reglas de estilo compactas y portables que puedas usar como skill o dentro de un system prompt | prefieres una skill que reescriba mostrando su proceso y pueda imitar tu voz; mira `humanizer` |
+
+### Prompt Engineering Guide, Anthropic's Prompt Engineering Tutorial
+
+| Repo | ⭐ | Elígelo si… | Evítalo si… |
+|---|---:|---|---|
+| [Prompt Engineering Guide](../fichas/prompt-engineering-guide.md) | 80k | quieres una referencia amplia de técnicas de prompting | prefieres ejercicios prácticos con corrección; mira `prompt-eng-tutorial` |
+| [Anthropic's Prompt Engineering Tutorial](../fichas/prompt-eng-tutorial.md) | 39.2k | quieres aprender prompts con práctica guiada | buscas una guía amplia multi-modelo; mira `prompt-engineering-guide` |
+
+### Fabric, prompts.chat
+
+| Repo | ⭐ | Elígelo si… | Evítalo si… |
+|---|---:|---|---|
+| [Fabric](../fichas/fabric.md) | 44.6k | quieres prompts reutilizables desde la terminal | buscas solo una lista de prompts para copiar; mira `prompts-chat` |
+| [prompts.chat](../fichas/prompts-chat.md) | 177k | buscas prompts listos para copiar | quieres ejecutarlos como comandos encadenables; mira `fabric` |
+
+### Awesome LLM Apps, OpenAI Cookbook, Claude Cookbooks
+
+| Repo | ⭐ | Elígelo si… | Evítalo si… |
+|---|---:|---|---|
+| [Awesome LLM Apps](../fichas/awesome-llm-apps.md) | 144k | quieres una plantilla de app con LLM que funcione desde el primer día para adaptarla a tu proyecto | buscas un curso estructurado con lecciones en orden; mira `ai-agents-for-beginners` o `generative-ai-for-beginners` |
+| [OpenAI Cookbook](../fichas/openai-cookbook.md) | 77k | construyes sobre la API de OpenAI y quieres ejemplos oficiales | usas Claude como modelo principal; mira `claude-cookbooks` |
+| [Claude Cookbooks](../fichas/claude-cookbooks.md) | 54.5k | construyes sobre la API de Claude y quieres ejemplos oficiales que puedas copiar | tu app usa la API de OpenAI; mira `openai-cookbook` |
+
+## 🧪 Recetas que usan esta categoría
+
+- [📈 Marketing de agencia](../playbooks/marketing-de-agencia.md) — Operar campañas, contenido y email a escala con agentes y herramientas propias.
+- [🛠️ Agente de código potenciado](../playbooks/agente-de-codigo-potenciado.md) — Sacar el máximo a Claude Code, Codex u opencode con método, contexto actualizado y memoria.
+
+## 🏷️ Leyenda
+
+⭐ imprescindible · 🆕 sugerido nuevo (aún no clonado en tu biblioteca) · Setup: 🟢 fácil · 🟡 medio · 🔴 pesado (GPU o varios servicios).
+
+---
+
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

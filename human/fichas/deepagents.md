@@ -1,61 +1,68 @@
-# deepagents
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Frameworks de agentes en Python
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🐍 Deep Agents
 
-## Decision
+> Arnés de agentes de LangChain listo para usar, con planificación, subagentes y sistema de archivos.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 31.2k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
-Deep Agents is an open source agent harness — an opinionated agent that runs out of the box. Extend, override, or replace any piece.
+## Qué es
 
-## Que problema resuelve
+Da a cualquier modelo las capacidades de los agentes profundos (planificar, delegar, usar archivos) sin construirlas tú. Cada pieza se puede extender o reemplazar.
 
-quieres the batteries-included agent harness.
+## Por qué destaca
 
-## Por que tiene valor
+Empaqueta lo que hace eficaz a Claude Code en un agente reutilizable sobre LangGraph.
 
-Aporta valor en `library` para agents, automation, javascript, langchain, python, typescript. Stack declarado: python, typescript, javascript, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Un agente de LangGraph con herramientas de tareas, archivos virtuales y subagentes que se crean bajo demanda.
 
-quieres the batteries-included agent harness.
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install deepagents`.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Agentes de investigación largos
+- Asistentes que planifican y delegan
+- Base para agentes de dominio
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres un agente potente sin diseñar el bucle desde cero | necesitas control total del grafo; usa `langgraph` directamente |
 
-python, typescript, javascript, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, LangGraph
+- **Modelos / API:** Agnóstico; Claude por defecto.
+- **Etiquetas:** `agents` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [LangGraph](langgraph.md) | 44.7k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
+| [langfuse](langfuse.md) | 37.3k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [OpenAI Agents SDK](openai-agents-python.md) | 30.6k | SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas integradas. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents)
+- 🌐 Web: <https://docs.langchain.com/deepagents>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres the batteries-included agent harness.. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

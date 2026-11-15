@@ -1,59 +1,60 @@
-# awesome-LangGraph
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Frameworks de agentes en Python
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🕸️ awesome-LangGraph
 
-## Decision
+> Repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 2k | CC0-1.0 | JavaScript | 2026-10-15 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-🦜🕸️ Awesome LangGraph & LangChain Ecosystem !Awesome !Last Updated.
+## Qué es
 
-## Que problema resuelve
+Es una lista curada, no una herramienta ejecutable.
 
-construyes con LangGraph y quieres patrones de referencia
+## Por qué destaca
 
-## Por que tiene valor
+Índice organizado por áreas (RAG, web, finanzas, salud, seguridad) que facilita encontrar patrones y proyectos de referencia para LangGraph. Útil como punto de partida antes de diseñar un grafo de agentes.
 
-Aporta valor en `directory` para automation, docker, fastapi, javascript, javascript-typescript, langchain, postgres, python. Stack declarado: javascript/typescript, python, typescript, javascript, react, docker, postgres, fastapi, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Una lista "awesome" en Markdown con enlaces a proyectos, plantillas y tutoriales del ecosistema LangGraph, clasificados por caso de uso.
 
-construyes con LangGraph y quieres patrones de referencia
+## Instalación rápida
 
-## Cuando NO usarlo
+No requiere instalación; se consulta el repo (o `git clone` para uso offline).
 
-no usas ese ecosistema.
+## Casos de uso
 
-## Tipo de instalacion
+- Estructurar grafos cíclicos de agentes
+- Políticas de enrutamiento y estado
+- Encontrar plantillas de RAG/multiagente
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| construyes con LangGraph y quieres patrones de referencia | no usas ese ecosistema |
 
-javascript/typescript, python, typescript, javascript, react, docker, postgres, fastapi, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown / Python-JS (LangGraph)
+- **Modelos / API:** N/A (recurso).
+- **Etiquetas:** `automation` `agents` `javascript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [langchain](langchain.md) | 149k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
 
-- `langchain`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [vonzosten/awesome-LangGraph](https://github.com/vonzosten/awesome-LangGraph)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con langchain cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si construyes con LangGraph y quieres patrones de referencia. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

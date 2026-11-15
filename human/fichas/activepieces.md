@@ -1,60 +1,67 @@
-# activepieces
+[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Motores de workflow y automatización
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧩 activepieces
 
-## Decision
+> Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 25.5k | Otra (ver repo) | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
-Activepieces es un reemplazo open source de Zapier: orquestas automatizaciones con piezas auto-hospedables y un editor visual, sin ceder los datos a un SaaS cerrado.
+## Qué es
 
-## Que problema resuelve
+Orquesta tus apps con flujos visuales sin código y conserva el control al alojarlo en tu servidor.
 
-quieres reemplazar Zapier con piezas propias en TypeScript
+## Por qué destaca
 
-## Por que tiene valor
+Muy adoptada como reemplazo open-source de Zapier, destaca por su soporte temprano de MCP y por permitir crear piezas propias en TypeScript. Su editor visual y su catálogo de conectores la hacen accesible para perfiles mixtos técnico/no-técnico.
 
-Aporta valor en `runtime` para automation, docker, javascript, javascript-typescript, typescript. Stack declarado: javascript/typescript, typescript, javascript, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Ejecuta flujos de pasos (triggers y acciones) basados en "pieces" escritas en TypeScript, con un motor Node.js y soporte de conectores de IA y MCP. Las pieces son paquetes versionables que puedes compartir entre proyectos.
 
-quieres reemplazar Zapier con piezas propias en TypeScript
+## Instalación rápida
 
-## Cuando NO usarlo
+Vía `docker compose` para self-host, o usando su versión cloud si prefieres no operar la infra; requiere Node.js y una base de datos para el modo local.
 
-ya dominas n8n y su ecosistema te basta.
+## Casos de uso
 
-## Tipo de instalacion
+- Lead → consulta CRM → notifica al equipo
+- Flujos para usuarios técnicos y no técnicos
+- Integraciones con IA vía piezas MCP
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres reemplazar Zapier con piezas propias en TypeScript | ya dominas n8n y su ecosistema te basta |
 
-javascript/typescript, typescript, javascript, docker
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Node.js, TypeScript, self-host/web
+- **Modelos / API:** OpenAI, Anthropic, MCP.
+- **Etiquetas:** `automation` `typescript` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [novu](novu.md) | 40.3k | Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend. |
 
-- `n8n`
-- `novu`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [n8n](n8n.md) | 210k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
-- `n8n`
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [activepieces/activepieces](https://github.com/activepieces/activepieces)
+- 🌐 Web: <https://www.activepieces.com>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con n8n, novu cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres reemplazar Zapier con piezas propias en TypeScript. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

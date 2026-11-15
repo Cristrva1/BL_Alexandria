@@ -1,61 +1,63 @@
-# markitdown
+[🏠 Inicio](../README.md) › [📄 Documentos & Presentaciones](../categorias/13-documentos-presentaciones.md) › Conversión de documentos para IA
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📝 markitdown
 
-## Decision
+> Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman.
 
-USAR AHORA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 195k | MIT | Python | 2026-11-07 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-MarkItDown performs I/O with the privileges of the current process. Like open() or requests.get(), it will access resources that the process itself can access. Sanitize your inputs in untrusted environments, and call the narrowest `convert_*` function needed for your use case (e.g., `convert_stream()`, or `convert_local()`). See the Security Considerations section of the documentation for .
+## Qué es
 
-## Que problema resuelve
+Es la puerta de entrada habitual para ingesta de documentos en pipelines RAG.
 
-alimentas LLMs con documentos de formatos variados
+## Por qué destaca
 
-## Por que tiene valor
+Proyecto oficial de Microsoft muy adoptado como paso previo a LLMs, por su salida ordenada y su catálogo de convertidores y plugins; se integra fácil en flujos de ingesta por su CLI y API Python.
 
-Aporta valor en `directory` para docker, postgres, python, typescript. Stack declarado: python, typescript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Detecta el tipo de archivo y aplica el extractor adecuado (parsers de Office, OCR por modelos de visión, Whisper para audio), normalizando todo a Markdown estructurado con encabezados y tablas.
 
-alimentas LLMs con documentos de formatos variados
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install markitdown` (o `pip install 'markitdown[all]'` para todos los formatos). Los convertidores de visión/audio requieren claves de API opcionales.
 
-ya tienes el texto limpio o necesitas fidelidad de layout total (no es un reconstructor de PDF).
+## Casos de uso
 
-## Tipo de instalacion
+- Convertir carpetas de informes (XLSX/PDF) a `.md`
+- Ingesta de datos para IA
+- Preprocesar documentos antes de indexarlos en un vector store
 
-local_project
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| alimentas LLMs con documentos de formatos variados | ya tienes el texto limpio o necesitas fidelidad de layout total (no es un reconstructor de PDF) |
 
-python, typescript, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python 3.8+
+- **Modelos / API:** Opcional (visión para OCR, Whisper para audio), agnóstico vía variables de entorno.
+- **Etiquetas:** `docs` `python`
+- **Modo de instalación sugerido:** 📦 **Dependencia del proyecto** — instálalo dentro de cada proyecto que lo use
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [ppt-master](ppt-master.md) | 75.5k | Generador que transforma documentos de texto en presentaciones PowerPoint (.pptx) editables nativas, listas para abrir y ajustar en Office. |
+| [open-notebook](open-notebook.md) | 41.8k | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. |
 
-- `ppt-master`
-- `open-notebook`
-- `docs → presentaciones`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [microsoft/markitdown](https://github.com/microsoft/markitdown)
+- 🧪 Receta: [Agente de research profundo](../playbooks/agente-de-research-profundo.md)
+- 🧪 Receta: [Documentos → presentaciones](../playbooks/documentos-presentaciones.md)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con ppt-master, open-notebook, docs → presentaciones cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: usar ahora. Tiene sentido si alimentas LLMs con documentos de formatos variados. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

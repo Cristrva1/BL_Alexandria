@@ -1,60 +1,60 @@
-# uPlot
+[🏠 Inicio](../README.md) › [📊 Analítica & Visualización](../categorias/10-anal-tica-visualizaci-n.md) › Librerías de gráficos
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📈 uPlot
 
-## Decision
+> Librería ultraligera para gráficos de series temporales capaz de pintar cientos de miles de puntos sin penalizar el rendimiento.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 10.6k | MIT | JavaScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-A small (~50 KB min), fast chart for time series, lines, areas, ohlc & bars _(MIT Licensed)_.
+## Qué es
 
-## Que problema resuelve
+Apuesta por hacer una sola cosa (líneas/áreas temporales) mejor que ninguna.
 
-priorizas velocidad y peso del bundle
+## Por qué destaca
 
-## Por que tiene valor
+Célebre por su tamaño minúsculo (pocos KB) y velocidad de renderizado, ideal cuando el peso del bundle y los FPS importan. Su autor (leeoniya) la mantiene con foco obsesivo en rendimiento.
 
-Aporta valor en `library` para javascript, javascript-typescript, python, react, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, react.
+## Cómo funciona
 
-## Cuando usarlo
+Dibuja líneas y áreas directamente sobre Canvas con una API minimalista en JavaScript optimizada para datasets enormes, sin dependencias y sin virtual DOM.
 
-priorizas velocidad y peso del bundle
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm i uplot` o vía CDN. Sin dependencias; se integra en cualquier stack web.
 
-necesitas tipos de gráfico variados ([echarts](#-echarts)).
+## Casos de uso
 
-## Tipo de instalacion
+- Dashboards con muchísimos puntos
+- Charts rápidos en frontend embebido
+- Monitorización en tiempo real donde el peso importa
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| priorizas velocidad y peso del bundle | necesitas tipos de gráfico variados (echarts) |
 
-javascript/typescript, python, typescript, javascript, react
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** JavaScript
+- **Modelos / API:** N/A.
+- **Etiquetas:** `dataviz` `javascript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [swr](swr.md) | 32.5k | Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano. |
 
-- `swr`
-- `web app moderna`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [leeoniya/uPlot](https://github.com/leeoniya/uPlot)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con swr, web app moderna cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si priorizas velocidad y peso del bundle. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

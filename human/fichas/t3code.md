@@ -1,61 +1,63 @@
-# t3code
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Agentes de código (terminal e IDE)
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 👨‍💻 T3 Code
 
-## Decision
+> Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 55k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-T3 Code orquesta los agentes que ya corren en el host desde una UI (iOS, Android, web, Electron). No sustituye al modelo ni al runtime del agente.
+## Qué es
 
-## Que problema resuelve
+No sustituye al agente: orquesta Claude Code, Codex y otros desde una UI cómoda, también en el móvil. Útil para lanzar y revisar sesiones a distancia.
 
-quieres t3 code is an "agent harness control surface". it enables control of the agents on your ma
+## Por qué destaca
 
-## Por que tiene valor
+Une varios agentes en una sola superficie de control, con apps para iOS, Android, web y escritorio.
 
-Aporta valor en `app` para agents, javascript, javascript-typescript, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react.
+## Cómo funciona
 
-## Cuando usarlo
+Un servicio en tu equipo habla con los CLIs de agentes instalados y expone sesiones a los clientes de T3 Code.
 
-quieres t3 code is an "agent harness control surface". it enables control of the agents on your ma
+## Instalación rápida
 
-## Cuando NO usarlo
+Descarga la app desde los releases o sigue el README para levantar el servidor local.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Revisar agentes desde el móvil
+- Lanzar varias sesiones en paralelo
+- Una UI para Claude Code y Codex
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| usas varios agentes de código y quieres controlarlos desde una UI | solo usas un agente en la terminal |
 
-javascript/typescript, typescript, javascript, react
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** TypeScript, Electron, React Native
+- **Modelos / API:** Usa los agentes y modelos que ya tengas instalados.
+- **Etiquetas:** `coding-agent` `ui` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
+| [OpenCode](opencode.md) | 226k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [pingdotgg/t3code](https://github.com/pingdotgg/t3code)
+- 🌐 Web: <https://t3.codes>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres t3 code is an "agent harness control surface". it enables control of the agents on your ma. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

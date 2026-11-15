@@ -1,61 +1,70 @@
-# firecrawl
+[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Crawlers y extracción para IA
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔥 firecrawl
 
-## Decision
+> Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 200k | AGPL-3.0 | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
-The API to search, scrape, and interact with the web at scale. 🔥 The web context API to find sources, extract content, and turn it into clean Markdown or structured data your agents can ship with. Open source and available as a hosted service.
+## Qué es
 
-## Que problema resuelve
+Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. Se ha vuelto la opción de referencia para alimentar pipelines RAG y agentes con web limpia; muy adoptada y con integración MCP de primera clase.
 
-alimentas agentes/RAG con web y quieres salida limpia
+## Por qué destaca
 
-## Por que tiene valor
+Se ha vuelto la opción de referencia para alimentar pipelines RAG y agentes con web limpia; muy adoptada y con integración MCP de primera clase. Su salida Markdown/JSON normalizada ahorra el paso de limpiar HTML.
 
-Aporta valor en `library` para docker, javascript, python, scraping, typescript. Stack declarado: python, typescript, javascript, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Renderiza la página (incluido JS), normaliza el HTML y lo convierte a Markdown/JSON; expone endpoints scrape/crawl/search/map vía API REST y SDKs, más un servidor MCP para que los agentes lo usen como herramienta.
 
-alimentas agentes/RAG con web y quieres salida limpia
+## Instalación rápida
 
-## Cuando NO usarlo
+API hosted con clave (`npm i @mendable/firecrawl-js` o `pip install firecrawl-py`); también self-host con Docker. Requiere una clave de API (gratuita con límite, de pago a escala) o infra para self-host.
 
-solo quieres HTML crudo o el presupuesto de API no encaja.
+## Casos de uso
 
-## Tipo de instalacion
+- Convertir páginas complejas en contexto limpio
+- Search + crawl para research
+- Alimentar RAG con documentación de sitios dinámicos
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| alimentas agentes/RAG con web y quieres salida limpia | solo quieres HTML crudo o el presupuesto de API no encaja |
 
-python, typescript, javascript, docker
+**Limitaciones:** La API hosted de pago escala por páginas; el self-host requiere operar Redis, workers y Chromium.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** API/SDK (TS/Python), hosted o self-host, Docker
+- **Modelos / API:** MCP y agentes; no atado a un proveedor de LLM.
+- **Etiquetas:** `scraping` `typescript` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `gpt-researcher`
-- `crawl4ai`
-- `research profundo`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [gpt-researcher](gpt-researcher.md) | 30.6k | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
+| [crawl4ai](crawl4ai.md) | 87.2k | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Jina Reader](jina-reader.md) | 12.2k | Servicio que convierte cualquier URL en Markdown listo para LLM con solo anteponer r.jina.ai. |
 
-## Riesgos
+## Enlaces
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+- 🐙 GitHub: [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)
+- 🌐 Web: <https://firecrawl.dev>
 
-## Ideas profesionales
+---
 
-Combinar con gpt-researcher, crawl4ai, research profundo cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si alimentas agentes/RAG con web y quieres salida limpia. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

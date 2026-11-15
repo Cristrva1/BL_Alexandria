@@ -347,6 +347,7 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
     detail = read_json(project_root / "ai_index" / "REPOS.detail.json", {"repos": []})
     winners = read_json(project_root / "ai_index" / "WINNERS.json", {})
     detail_by_id = {item["id"]: item for item in detail.get("repos", [])}
+    _merge_curated_index(project_root, scan, detail_by_id)
     effective_tool = _detect_effective_tool(project, build_tool)
     intents = _detect_intents(project)
     required_capabilities = _infer_required_capabilities(project)
@@ -401,6 +402,34 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
     write_json(project_root / "data" / "decisions" / f"{safe_name}.json", result)
     write_superguide(project_root, result, safe_name=safe_name)
     return result
+
+
+def _merge_curated_index(project_root: Path, scan: dict[str, Any], detail_by_id: dict[str, Any]) -> None:
+    """Completa el escaneo local con el índice curado (INDICE_IA*.json).
+
+    El escaneo solo conoce los repos clonados en disco; el índice curado tiene la
+    biblioteca entera. Así `recommend` funciona aunque no exista el escaneo o
+    aunque falten clones de los repos nuevos.
+    """
+    compact = read_json(project_root / "INDICE_IA.json", {"repos": []})
+    curated_detail = read_json(project_root / "INDICE_IA.detalle.json", {"repos": []})
+    raw_detail = curated_detail.get("repos", {})
+    if isinstance(raw_detail, dict):
+        curated_by_id = {rid: {"id": rid, **item} for rid, item in raw_detail.items()}
+    else:
+        curated_by_id = {item["id"]: item for item in raw_detail}
+    known = {item["id"] for item in scan.get("repos", [])}
+    repos = scan.setdefault("repos", [])
+    for entry in compact.get("repos", []):
+        if entry.get("alias_of"):
+            continue
+        rid = entry["id"]
+        extra = curated_by_id.get(rid, {})
+        if rid not in detail_by_id and extra:
+            detail_by_id[rid] = extra
+        if rid in known:
+            continue
+        repos.append({**entry, "alternatives": list(entry.get("alt") or extra.get("alternatives") or [])})
 
 
 def write_superguide(project_root: Path, result: dict[str, Any], safe_name: str | None = None) -> Path:

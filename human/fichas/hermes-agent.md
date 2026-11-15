@@ -1,60 +1,71 @@
-# hermes-agent
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Asistentes autónomos y equipos de agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# ☤ hermes-agent
 
-## Decision
+> Entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 262k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-The self-improving AI agent built by Nous Research. It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing w.
+## Qué es
 
-## Que problema resuelve
+Ofrece un panel de control de escritorio para delegar tareas a agentes que corren en una sandbox local.
 
-quieres agentes locales con UI y memoria persistente
+## Por qué destaca
 
-## Por que tiene valor
+Aprovecha el razonamiento estructurado de los modelos Hermes y prioriza la ejecución local frente a depender de la nube. Su rasgo distintivo es un learning loop: el agente crea skills desde la experiencia y persiste conocimiento entre sesiones.
 
-Aporta valor en `skill` para agents, docker, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Una app de escritorio (Tauri) coordina agentes con backend Python que invocan modelos Hermes locales o APIs comerciales como fallback, guardando memoria y skills autoaprendidas.
 
-quieres agentes locales con UI y memoria persistente
+## Instalación rápida
 
-## Cuando NO usarlo
+`git clone` y build con Tauri/Cargo (más dependencias Python). Para modo local puro necesitas pesos de Hermes y una GPU razonable; sin GPU puede usar APIs comerciales.
 
-prefieres orquestación en nube o no quieres compilar Tauri.
+## Casos de uso
 
-## Tipo de instalacion
+- Delegar tareas en sandbox local
+- Panel de control de escritorio (Tauri)
+- Agente que acumula skills con el uso
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres agentes locales con UI y memoria persistente | prefieres orquestación en nube o no quieres compilar Tauri |
 
-python, typescript, javascript, docker, postgres
+**Limitaciones:** El build de Tauri y los pesos locales elevan la barrera de entrada frente a una solución hosted.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Rust (Tauri), TypeScript, Python
+- **Modelos / API:** Hermes-3-Llama-3 local + APIs comerciales (OpenAI, Anthropic) como fallback.
+- **Etiquetas:** `agents` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `ecc`
-- `odysseus`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [ECC](ecc.md) | 300k | Sistema operativo/arnés unificado para desarrollar, ejecutar y desplegar en local agentes de IA de alto rendimiento de forma segura. |
+| [odysseus](odysseus.md) | 95.5k | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [OpenClaw](openclaw.md) | 394k | Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. |
+| [Mercury Agent](mercury-agent.md) | 3.9k | Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web. |
 
-## Riesgos
+## Enlaces
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+- 🐙 GitHub: [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)
+- 🌐 Web: <https://hermes-agent.nousresearch.com>
 
-## Ideas profesionales
+---
 
-Combinar con ecc, odysseus cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres agentes locales con UI y memoria persistente. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

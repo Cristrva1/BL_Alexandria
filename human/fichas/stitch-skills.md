@@ -1,61 +1,62 @@
-# stitch-skills
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Skills de diseño para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎯 Stitch Skills
 
-## Decision
+> Colección de skills de agente para trabajar con el servidor MCP de Google Stitch.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 8.7k | Apache-2.0 | TypeScript | 2026-08-17 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, and Cursor.
+## Qué es
 
-## Que problema resuelve
+Skills en el estándar abierto Agent Skills que enseñan a Claude Code, Codex o Gemini CLI a diseñar con Stitch.
 
-quieres stitch design skills
+## Por qué destaca
 
-## Por que tiene valor
+Oficial de Google Labs y compatible con varios agentes.
 
-Aporta valor en `skill` para frontend, react, skills, typescript. Stack declarado: typescript, react.
+## Cómo funciona
 
-## Cuando usarlo
+Carpetas SKILL.md que el agente carga para usar las herramientas MCP de Stitch.
 
-quieres stitch design skills
+## Instalación rápida
 
-## Cuando NO usarlo
+Copia las skills a la carpeta de skills de tu agente y configura el MCP de Stitch.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Diseñar pantallas desde el agente
+- Iterar UI con Stitch
+- Pasar diseños a código
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| usas Stitch con un agente de código | no usas Stitch |
 
-typescript, react
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** TypeScript, Markdown
+- **Modelos / API:** Usa el modelo de tu agente.
+- **Etiquetas:** `skills` `design` `ui`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Stitch SDK](stitch-sdk.md) | 1.8k | SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. |
+| [Gemini CLI](gemini-cli.md) | 109k | Agente de IA open source de Google que lleva Gemini a tu terminal, con cuota gratuita generosa. |
 
-- `openwa`
-- `skills`
-- `agency-agents`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills)
+- 🌐 Web: <https://stitch.withgoogle.com/docs/mcp/setup>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con openwa, skills, agency-agents cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres stitch design skills. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

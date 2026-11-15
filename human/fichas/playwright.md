@@ -1,60 +1,69 @@
-# playwright
+[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Navegadores y automatización web
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎭 playwright
 
-## Decision
+> Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 99.7k | Apache-2.0 | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
-Playwright is a framework for web automation and testing. It drives Chromium, Firefox, and WebKit with a single API — in your tests, in your scripts, and as a tool for AI agents.
+## Qué es
 
-## Que problema resuelve
+Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. Se ha convertido en el estándar moderno de automatización de browser, desplazando a Selenium/Puppeteer por su fiabilidad y su auto-espera de elementos.
 
-necesitas control preciso y reproducible del browser
+## Por qué destaca
 
-## Por que tiene valor
+Se ha convertido en el estándar moderno de automatización de browser, desplazando a Selenium/Puppeteer por su fiabilidad y su auto-espera de elementos. Microsoft lo mantiene y tiene bindings para Node.js, Python, Java y .NET.
 
-Aporta valor en `runtime` para automation, javascript, javascript-typescript, postgres, python, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Lanza navegadores reales en modo headless o con UI y los controla por protocolo (CDP), con waits automáticos, interceptación de red y captura de DOM/screenshots/traces.
 
-necesitas control preciso y reproducible del browser
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm i playwright` o `pip install playwright`, seguido de `playwright install` para los navegadores. Requiere descargar los binarios de Chromium/Firefox/WebKit (~varios cientos de MB).
 
-quieres que el agente navegue por visión ([browser-use](#-browser-use)) o no necesitas un navegador real.
+## Casos de uso
 
-## Tipo de instalacion
+- Testing E2E
+- Scraping dinámico
+- Scripting reproducible
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| necesitas control preciso y reproducible del browser | quieres que el agente navegue por visión (browser-use) o no necesitas un navegador real |
 
-javascript/typescript, python, typescript, javascript, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Node.js o Python (también Java/.NET)
+- **Modelos / API:** Se integra con MCP y agentes; no usa LLM por sí mismo.
+- **Etiquetas:** `automation` `browser` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [browser-use](browser-use.md) | 121k | Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. |
+| [crawlee](crawlee.md) | 26.4k | Framework moderno de crawling para Node.js con antibloqueo integrado, que unifica scraping de HTTP y de navegador bajo una misma API con colas y reintentos. |
 
-- `browser-use`
-- `crawlee`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Puppeteer](puppeteer.md) | 95.8k | Librería de Google para controlar Chrome y Firefox desde Node.js. |
+| [Selenium](selenium.md) | 34.6k | Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [microsoft/playwright](https://github.com/microsoft/playwright)
+- 🌐 Web: <https://playwright.dev>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con browser-use, crawlee cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si necesitas control preciso y reproducible del browser. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

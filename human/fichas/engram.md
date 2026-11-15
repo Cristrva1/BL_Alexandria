@@ -1,61 +1,69 @@
-# engram
+[🏠 Inicio](../README.md) › [🧬 Memoria, RAG & LLM Ops](../categorias/06-memoria-rag-llm-ops.md) › Memoria persistente para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧠 Engram
 
-## Decision
+> Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 7.9k | MIT | Go | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-Engram da a cualquier agente compatible con MCP una memoria local (o cloud) en un solo binario, sin dependencias pesadas.
+## Qué es
 
-## Que problema resuelve
+Da a cualquier agente compatible con MCP una memoria local de decisiones y aprendizajes, sin dependencias pesadas.
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+## Por qué destaca
 
-## Por que tiene valor
+Agnóstico de agente, muy ligero y fácil de inspeccionar.
 
-Aporta valor en `runtime` para memory, mcp, agents. Stack declarado: python, typescript, javascript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Guarda observaciones en SQLite con búsqueda de texto completo (FTS5) y las expone por MCP, HTTP y CLI.
 
-necesitas exponer herramientas o contexto a agentes vía MCP
+## Instalación rápida
 
-## Cuando NO usarlo
+`brew install gentleman-programming/tap/engram` o binario de releases; luego añádelo como servidor MCP.
 
-prefieres conexiones directas sin protocolo estándar
+## Casos de uso
 
-## Tipo de instalacion
+- Memoria compartida entre Claude Code y Codex
+- Registrar decisiones del proyecto
+- Buscar soluciones pasadas
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres memoria local simple para cualquier agente | solo usas Claude Code y quieres algo automático; mira `claude-mem` |
 
-python, typescript, javascript, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Go, SQLite
+- **Modelos / API:** No usa LLM.
+- **Etiquetas:** `memory` `mcp` `coding-agent` `go`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [OpenCode](opencode.md) | 226k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 
-- `claude-plugins-official`
-- `n8n-skills`
-- `mcp`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [claude-mem](claude-mem.md) | 116k | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. |
+| [agentmemory](agentmemory.md) | 30.3k | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [Gentleman-Programming/engram](https://github.com/Gentleman-Programming/engram)
+- 🌐 Web: <https://engram.gentlemanprogramming.com/>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con claude-plugins-official, n8n-skills, mcp cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si necesitas exponer herramientas o contexto a agentes vía MCP. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
