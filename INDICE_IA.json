@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 498 repos curados de IA y Automatización",
+  "title": "Índice IA — 676 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -185,7 +185,8 @@
    "added": 87,
    "snapshot": "reports/github-stars-2026-11-14.json"
   },
-  "access_checked": "2026-11-14"
+  "access_checked": "2026-11-14",
+  "document_checked": "2026-11-14"
  },
  "legend": {
   "exec": {
@@ -305,7 +306,7 @@
    "title": "Automatizar negocios y comunicación",
    "desc": "Conecta aplicaciones, organiza clientes, atiende mensajes o programa procesos. Empieza por un motor de flujos; añade canales y CRM según tu objetivo.",
    "file": "human/categorias/01-automatizaci-n-mensajer-a-crm.md",
-   "count": 36,
+   "count": 39,
    "subs": [
     {
      "key": "motores",
@@ -343,7 +344,7 @@
    "title": "Mejorar tu agente: skills y prompts",
    "desc": "Instrucciones, plugins y métodos que añades a un agente que ya utilizas. Distingue una skill concreta de un directorio que solo enlaza a otras.",
    "file": "human/categorias/02-skills-prompts-gu-as-de-agente.md",
-   "count": 54,
+   "count": 69,
    "subs": [
     {
      "key": "catalogos",
@@ -377,7 +378,7 @@
    "title": "Crear y usar agentes de IA",
    "desc": "Agentes listos para trabajar y frameworks para construir los tuyos. Un agente de código se utiliza; un framework se integra dentro de una aplicación.",
    "file": "human/categorias/03-frameworks-orquestaci-n-de-agentes.md",
-   "count": 73,
+   "count": 86,
    "subs": [
     {
      "key": "coding",
@@ -419,7 +420,7 @@
    "title": "Buscar y extraer información web",
    "desc": "Buscadores, crawlers y navegadores. Usa un crawler para extraer páginas, un navegador para interactuar y un agente para investigar con un modelo.",
    "file": "human/categorias/04-scraping-b-squeda-research-web.md",
-   "count": 34,
+   "count": 35,
    "subs": [
     {
      "key": "crawlers",
@@ -449,7 +450,7 @@
    "title": "Conectar herramientas con MCP",
    "desc": "SDKs, servidores y conectores que dejan a un agente usar herramientas. El servidor MCP aporta acciones o datos; el modelo pertenece al cliente.",
    "file": "human/categorias/05-mcp-conectividad.md",
-   "count": 24,
+   "count": 27,
    "subs": [
     {
      "key": "sdk",
@@ -479,7 +480,7 @@
    "title": "Memoria, conocimiento y operación de IA",
    "desc": "Guarda memoria, consulta documentos con RAG, sirve modelos y evalúa resultados. Una base vectorial y un sistema RAG completo resuelven capas distintas.",
    "file": "human/categorias/06-memoria-rag-llm-ops.md",
-   "count": 35,
+   "count": 42,
    "subs": [
     {
      "key": "memoria",
@@ -513,7 +514,7 @@
    "title": "Entender código, trabajar con datos y entrenar modelos",
    "desc": "Herramientas para analizar código, procesar datos, aprender machine learning y entrenar modelos. Separa los ejemplos de aprendizaje de las librerías que integras.",
    "file": "human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md",
-   "count": 44,
+   "count": 47,
    "subs": [
     {
      "key": "codigo",
@@ -551,7 +552,7 @@
    "title": "Usar modelos y asistentes locales",
    "desc": "Motores de modelos, clientes de chat y espacios de trabajo. Instalar una interfaz local no garantiza que el modelo sea local: comprueba su backend.",
    "file": "human/categorias/08-ia-local-modelos-chats-workspaces.md",
-   "count": 25,
+   "count": 28,
    "subs": [
     {
      "key": "motores",
@@ -577,7 +578,7 @@
    "title": "Diseñar y construir interfaces",
    "desc": "Componentes, estilos, animación, diseño visual y herramientas para crear pantallas. Las librerías de UI no necesitan por sí solas una API de IA.",
    "file": "human/categorias/09-dise-o-ui-frontend.md",
-   "count": 35,
+   "count": 59,
    "subs": [
     {
      "key": "componentes",
@@ -611,7 +612,7 @@
    "title": "Analizar datos, crear dashboards y mapas",
    "desc": "Herramientas para explorar datos, crear gráficos, medir productos y visualizar fuentes abiertas. El chat con datos sí puede añadir un modelo; un gráfico convencional no lo necesita.",
    "file": "human/categorias/10-anal-tica-visualizaci-n.md",
-   "count": 23,
+   "count": 26,
    "subs": [
     {
      "key": "producto",
@@ -636,6 +637,10 @@
     {
      "key": "osint",
      "title": "Inteligencia de fuentes abiertas y mapas"
+    },
+    {
+     "key": "geoespacial",
+     "title": "Fotogrametría y mapas desde imágenes"
     }
    ]
   },
@@ -645,7 +650,7 @@
    "title": "Generar imágenes y trabajar con visión",
    "desc": "Generación, restauración, detección, segmentación y etiquetado de imágenes. Revisa por separado la licencia de los pesos y el hardware del modelo.",
    "file": "human/categorias/11-generaci-n-de-imagen-visi-n.md",
-   "count": 28,
+   "count": 43,
    "subs": [
     {
      "key": "interfaces",
@@ -674,6 +679,10 @@
     {
      "key": "sensores",
      "title": "Sensores y percepción espacial"
+    },
+    {
+     "key": "creacion-3d",
+     "title": "Creación, renderizado y animación 3D"
     }
    ]
   },
@@ -683,7 +692,7 @@
    "title": "Crear audio, voz y video",
    "desc": "Transcribe, sintetiza voz, edita o genera video. El montaje local y la generación mediante un proveedor son rutas con requisitos diferentes.",
    "file": "human/categorias/12-audio-voz-video.md",
-   "count": 50,
+   "count": 69,
    "subs": [
     {
      "key": "stt",
@@ -721,7 +730,7 @@
    "title": "Trabajar con documentos y presentaciones",
    "desc": "Extrae texto, aplica OCR, transforma PDFs o crea diapositivas. Empieza por el formato de entrada y el resultado que necesitas.",
    "file": "human/categorias/13-documentos-presentaciones.md",
-   "count": 24,
+   "count": 28,
    "subs": [
     {
      "key": "conversion",
@@ -742,6 +751,10 @@
     {
      "key": "diagramas",
      "title": "Diagramas y documentación"
+    },
+    {
+     "key": "gestion",
+     "title": "Gestión y archivo de documentos"
     }
    ]
   },
@@ -769,7 +782,83 @@
      "title": "Ejemplos y aprendizaje"
     }
    ],
-   "count": 14
+   "count": 28
+  },
+  {
+   "num": 15,
+   "title": "Organizar notas, archivos y servicios personales",
+   "emoji": "🗂️",
+   "desc": "Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar.",
+   "file": "human/categorias/15-notas-archivos-y-servicios-personales.md",
+   "subs": [
+    {
+     "key": "notas",
+     "title": "Notas, bóvedas y conocimiento personal"
+    },
+    {
+     "key": "archivos",
+     "title": "Sincronización y gestión de archivos"
+    },
+    {
+     "key": "privacidad",
+     "title": "Credenciales y privacidad"
+    },
+    {
+     "key": "infraestructura",
+     "title": "Alojamiento y backend"
+    },
+    {
+     "key": "lectura",
+     "title": "Libros, podcasts y bibliotecas personales"
+    },
+    {
+     "key": "domotica",
+     "title": "Automatización del hogar"
+    },
+    {
+     "key": "personal",
+     "title": "Herramientas y organización personal"
+    },
+    {
+     "key": "aprendizaje",
+     "title": "Aprendizaje asistido"
+    }
+   ],
+   "count": 29
+  },
+  {
+   "num": 16,
+   "title": "Analizar software y comprobar su seguridad",
+   "emoji": "🔍",
+   "desc": "Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaja sobre software propio o con autorización y separa análisis, modificación y pruebas activas.",
+   "file": "human/categorias/16-analisis-de-software-y-seguridad.md",
+   "subs": [
+    {
+     "key": "reversing",
+     "title": "Ingeniería inversa y formatos binarios"
+    },
+    {
+     "key": "depuracion",
+     "title": "Depuración e inspección de procesos"
+    },
+    {
+     "key": "pruebas",
+     "title": "Tráfico, rendimiento y pruebas"
+    },
+    {
+     "key": "agentes",
+     "title": "Análisis y pruebas con agentes"
+    },
+    {
+     "key": "defensa",
+     "title": "Protección y verificación de software"
+    },
+    {
+     "key": "referencias",
+     "title": "Directorios y aprendizaje"
+    }
+   ],
+   "count": 21
   }
  ],
  "recipes": [
@@ -11010,7 +11099,8 @@
    "alt": [
     "open-webui",
     "khoj",
-    "private-gpt"
+    "private-gpt",
+    "onyx"
    ],
    "doc": "human/fichas/anything-llm.md",
    "github_id": 649170660,
@@ -15817,7 +15907,8 @@
    "one": "Convierte PDF a Markdown y JSON de forma rápida y precisa, con tablas, fórmulas y código.",
    "alt": [
     "docling",
-    "mineru"
+    "mineru",
+    "pdf-craft"
    ],
    "doc": "human/fichas/marker.md",
    "github_id": 712111618,
@@ -19721,6 +19812,6076 @@
     "claude",
     "codex"
    ]
+  },
+  {
+   "id": "openrv",
+   "name": "OpenRV",
+   "cat": 12,
+   "sub": "edicion",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "edicion",
+    "app",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual.",
+   "alt": [],
+   "stars": 797,
+   "github_id": 559748217,
+   "gh": "AcademySoftwareFoundation/OpenRV",
+   "lang": "C++",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "video"
+   ]
+  },
+  {
+   "id": "dream-loop",
+   "name": "dream-loop",
+   "cat": 9,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "skills",
+    "skill",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill que combina Blender, generación de imágenes y revisión por un agente para preparar visuales tridimensionales.",
+   "alt": [],
+   "stars": 2236,
+   "github_id": 1360317501,
+   "gh": "achimala/dream-loop",
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "web",
+    "skills",
+    "3d"
+   ]
+  },
+  {
+   "id": "adguardhome",
+   "name": "AdGuardHome",
+   "cat": 15,
+   "sub": "privacidad",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "privacidad",
+    "server",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central.",
+   "alt": [],
+   "stars": 38471,
+   "github_id": 62712899,
+   "gh": "AdguardTeam/AdGuardHome",
+   "lang": "TypeScript",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "id": "audiobookshelf",
+   "name": "audiobookshelf",
+   "cat": 15,
+   "sub": "lectura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "lectura",
+    "server",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reproducción.",
+   "alt": [],
+   "stars": 15007,
+   "github_id": 397401267,
+   "gh": "advplyr/audiobookshelf",
+   "lang": "JavaScript",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "id": "agentes-chat",
+   "name": "agentes-chat",
+   "cat": 3,
+   "sub": "asistentes",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "asistentes",
+    "agent",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que colaboran con personas y herramientas.",
+   "alt": [],
+   "stars": 1411,
+   "github_id": 1450794567,
+   "gh": "agentes-chat/agentes-chat",
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "claude-obsidian",
+   "name": "claude-obsidian",
+   "cat": 15,
+   "sub": "notas",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsidian.",
+   "alt": [
+    "obsidian-second-brain"
+   ],
+   "stars": 16493,
+   "github_id": 1203670949,
+   "gh": "AgriciDaniel/claude-obsidian",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "notas"
+   ]
+  },
+  {
+   "id": "claude-seo",
+   "name": "claude-seo",
+   "cat": 2,
+   "sub": "dominio",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "dominio",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web.",
+   "alt": [],
+   "stars": 29424,
+   "github_id": 1152014594,
+   "gh": "AgriciDaniel/claude-seo",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude"
+   ],
+   "goals": [
+    "skills"
+   ]
+  },
+  {
+   "id": "awesome-harness-engineering",
+   "name": "awesome-harness-engineering",
+   "cat": 2,
+   "sub": "guias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "guias",
+    "reference",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Directorio de herramientas y patrones para diseñar el entorno, memoria, evaluación y permisos de agentes de IA.",
+   "alt": [],
+   "stars": 5158,
+   "github_id": 1195371847,
+   "gh": "ai-boost/awesome-harness-engineering",
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "goals": [
+    "skills",
+    "aprender"
+   ]
+  },
+  {
+   "id": "ai-job-search",
+   "name": "ai-job-search",
+   "cat": 15,
+   "sub": "personal",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "personal",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y preparar cartas e entrevistas de empleo.",
+   "alt": [],
+   "stars": 71766,
+   "github_id": 1185389803,
+   "gh": "ai-job-search-dev/ai-job-search",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": []
+  },
+  {
+   "id": "finrl",
+   "name": "FinRL",
+   "cat": 14,
+   "sub": "cuant",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "cuant",
+    "framework",
+    "jupyter-notebook"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca y ejemplos para investigar estrategias de trading mediante aprendizaje por refuerzo y simulaciones.",
+   "alt": [],
+   "stars": 17073,
+   "github_id": 282653872,
+   "gh": "AI4Finance-Foundation/FinRL",
+   "lang": "Jupyter Notebook",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "finanzas"
+   ]
+  },
+  {
+   "id": "huashu-motion",
+   "name": "huashu-motion",
+   "cat": 12,
+   "sub": "programatico",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "programatico",
+    "skill",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión visual.",
+   "alt": [],
+   "stars": 2708,
+   "github_id": 1424340323,
+   "gh": "alchaincyf/huashu-motion",
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "video",
+    "skills"
+   ]
+  },
+  {
+   "id": "angr",
+   "name": "angr",
+   "cat": 16,
+   "sub": "reversing",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "reversing",
+    "library",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma en Python para analizar programas binarios mediante técnicas como ejecución simbólica y análisis de flujo.",
+   "alt": [],
+   "stars": 9379,
+   "github_id": 40328394,
+   "gh": "angr/angr",
+   "lang": "Python",
+   "license": "BSD-2-Clause",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "claude-agent-sdk-python",
+   "name": "claude-agent-sdk-python",
+   "cat": 3,
+   "sub": "py",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "py",
+    "framework",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia.",
+   "alt": [],
+   "stars": 8548,
+   "github_id": 1000486904,
+   "gh": "anthropics/claude-agent-sdk-python",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "claude",
+    "api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "anytype-ts",
+   "name": "Anytype Desktop",
+   "cat": 15,
+   "sub": "notas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "app",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": true,
+   "one": "Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal.",
+   "alt": [
+    "appflowy"
+   ],
+   "stars": 9094,
+   "github_id": 643874750,
+   "gh": "anyproto/anytype-ts",
+   "lang": "TypeScript",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "notas"
+   ]
+  },
+  {
+   "id": "appflowy",
+   "name": "AppFlowy",
+   "cat": 15,
+   "sub": "notas",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "app",
+    "dart"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento propio.",
+   "alt": [
+    "anytype-ts"
+   ],
+   "stars": 78921,
+   "github_id": 377496562,
+   "gh": "AppFlowy-IO/AppFlowy",
+   "lang": "Dart",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "api"
+   ],
+   "goals": [
+    "notas"
+   ]
+  },
+  {
+   "id": "blender-skills",
+   "name": "blender-skills",
+   "cat": 11,
+   "sub": "creacion-3d",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "creacion-3d",
+    "skill",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skills para guiar a un agente por modelado y preparación de escenas en Blender mediante herramientas y conexiones MCP.",
+   "alt": [],
+   "stars": 3263,
+   "github_id": 1289817225,
+   "gh": "arjun988/blender-skills",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "imagenes",
+    "3d"
+   ]
+  },
+  {
+   "id": "webgl-noise",
+   "name": "webgl-noise",
+   "cat": 9,
+   "sub": "animacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "animacion",
+    "library",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Rutinas de ruido procedural para shaders de WebGL, útiles para crear texturas y efectos visuales en tiempo real.",
+   "alt": [],
+   "stars": 3012,
+   "github_id": 1400125,
+   "gh": "ashima/webgl-noise",
+   "lang": "C++",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "web"
+   ]
+  },
+  {
+   "id": "genjutsu",
+   "name": "genjutsu",
+   "cat": 9,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "skills",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple.",
+   "alt": [],
+   "stars": 799,
+   "github_id": 1194124727,
+   "gh": "AThevon/genjutsu",
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude"
+   ],
+   "goals": [
+    "web",
+    "skills"
+   ]
+  },
+  {
+   "id": "company-pixel-office",
+   "name": "company-pixel-office",
+   "cat": 14,
+   "sub": "aprender",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "aprender",
+    "template",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Demostración de una oficina de trading en pixel art para estudiar su interfaz y la representación visual de un equipo.",
+   "alt": [],
+   "stars": 4,
+   "github_id": 1414581085,
+   "gh": "ATK-zk/company-pixel-office",
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "finanzas"
+   ]
+  },
+  {
+   "id": "i-have-adhd",
+   "name": "i-have-adhd",
+   "cat": 2,
+   "sub": "escritura",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "escritura",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos.",
+   "alt": [],
+   "stars": 61217,
+   "github_id": 1238120057,
+   "gh": "ayghri/i-have-adhd",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude"
+   ],
+   "goals": [
+    "skills"
+   ]
+  },
+  {
+   "id": "gods-eye-view",
+   "name": "gods-eye-view",
+   "cat": 10,
+   "sub": "osint",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "osint",
+    "app",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador.",
+   "alt": [],
+   "stars": 64884,
+   "github_id": 1277471539,
+   "gh": "bilawalsidhu/gods-eye-view",
+   "lang": "JavaScript",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "datos"
+   ]
+  },
+  {
+   "id": "bitwarden-clients",
+   "name": "Bitwarden Clients",
+   "cat": 15,
+   "sub": "privacidad",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "privacidad",
+    "app",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send.",
+   "alt": [],
+   "stars": 14233,
+   "github_id": 53538899,
+   "gh": "bitwarden/clients",
+   "lang": "TypeScript",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "blender",
+   "name": "blender",
+   "cat": 11,
+   "sub": "creacion-3d",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "creacion-3d",
+    "app",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Código de Blender, la aplicación para modelar, animar, renderizar y editar escenas y contenido tridimensional.",
+   "alt": [],
+   "stars": 22014,
+   "github_id": 213916896,
+   "gh": "blender/blender",
+   "lang": "C++",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "imagenes",
+    "3d"
+   ]
+  },
+  {
+   "id": "rubberband",
+   "name": "rubberband",
+   "cat": 12,
+   "sub": "edicion",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "edicion",
+    "library",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas.",
+   "alt": [],
+   "stars": 813,
+   "github_id": 51008065,
+   "gh": "breakfastquay/rubberband",
+   "lang": "C++",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "video"
+   ]
+  },
+  {
+   "id": "diagram-design",
+   "name": "diagram-design",
+   "cat": 13,
+   "sub": "diagramas",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "diagramas",
+    "skill",
+    "html"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad.",
+   "alt": [],
+   "stars": 67188,
+   "github_id": 1212769188,
+   "gh": "cathrynlavery/diagram-design",
+   "lang": "HTML",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "diagramas"
+   ]
+  },
+  {
+   "id": "ccxt",
+   "name": "ccxt",
+   "cat": 14,
+   "sub": "bots",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "bots",
+    "library",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca que unifica APIs de exchanges para consultar mercados y desarrollar integraciones de trading.",
+   "alt": [],
+   "stars": 44882,
+   "github_id": 91253698,
+   "gh": "ccxt/ccxt",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "finanzas"
+   ]
+  },
+  {
+   "id": "omniroute",
+   "name": "OmniRoute",
+   "cat": 6,
+   "sub": "serving",
+   "role": "platform",
+   "exec": "hybrid",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "serving",
+    "server",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso.",
+   "alt": [],
+   "stars": 87518,
+   "github_id": 1157102282,
+   "gh": "cheaper-inference/OmniRoute",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "local_model",
+    "api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "opencode-manager",
+   "name": "opencode-manager",
+   "cat": 3,
+   "sub": "coding",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "coding",
+    "agent",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil.",
+   "alt": [],
+   "stars": 1074,
+   "github_id": 1102782418,
+   "gh": "chriswritescode-dev/opencode-manager",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "api"
+   ],
+   "goals": [
+    "programar"
+   ]
+  },
+  {
+   "id": "threejs-skills",
+   "name": "threejs-skills",
+   "cat": 9,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "skills",
+    "skill",
+    "reference"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js.",
+   "alt": [
+    "3dviz-pro-max"
+   ],
+   "stars": 4197,
+   "github_id": 1137798986,
+   "gh": "CloudAI-X/threejs-skills",
+   "lang": null,
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude"
+   ],
+   "goals": [
+    "web",
+    "skills",
+    "3d"
+   ]
+  },
+  {
+   "id": "openpose",
+   "name": "openpose",
+   "cat": 11,
+   "sub": "vision",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "vision",
+    "model",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video.",
+   "alt": [],
+   "stars": 34579,
+   "github_id": 89247811,
+   "gh": "CMU-Perceptual-Computing-Lab/openpose",
+   "lang": "C++",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "imagenes"
+   ]
+  },
+  {
+   "id": "coolify",
+   "name": "coolify",
+   "cat": 15,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "infraestructura",
+    "server",
+    "php"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.",
+   "alt": [],
+   "stars": 66090,
+   "github_id": 332880689,
+   "gh": "coollabsio/coolify",
+   "lang": "PHP",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "id": "opendots",
+   "name": "OpenDots",
+   "cat": 3,
+   "sub": "asistentes",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "asistentes",
+    "agent",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de asistentes de IA persistentes que coordinan conversaciones, llamadas y servicios conectados.",
+   "alt": [],
+   "stars": 6601,
+   "github_id": 1396117711,
+   "gh": "CopilotKit/OpenDots",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "unity-mcp",
+   "name": "unity-mcp",
+   "cat": 5,
+   "sub": "servidores",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "servidores",
+    "mcp",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity.",
+   "alt": [],
+   "stars": 15975,
+   "github_id": 950564038,
+   "gh": "CoplayDev/unity-mcp",
+   "lang": "C#",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "mcp",
+    "3d"
+   ]
+  },
+  {
+   "id": "plugins",
+   "name": "plugins",
+   "cat": 2,
+   "sub": "catalogos",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "catalogos",
+    "reference",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente.",
+   "alt": [],
+   "stars": 16314,
+   "github_id": 1140229822,
+   "gh": "cursor/plugins",
+   "lang": "TypeScript",
+   "license": null,
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "goals": [
+    "skills",
+    "aprender"
+   ]
+  },
+  {
+   "id": "vaultwarden",
+   "name": "vaultwarden",
+   "cat": 15,
+   "sub": "privacidad",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "privacidad",
+    "server",
+    "rust"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia.",
+   "alt": [],
+   "stars": 70740,
+   "github_id": 121898717,
+   "gh": "dani-garcia/vaultwarden",
+   "lang": "Rust",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "id": "scenejs",
+   "name": "scenejs",
+   "cat": 9,
+   "sub": "animacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "animacion",
+    "library",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos.",
+   "alt": [],
+   "stars": 2789,
+   "github_id": 86044162,
+   "gh": "daybrush/scenejs",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "web"
+   ]
+  },
+  {
+   "id": "claude-code-hooks-mastery",
+   "name": "claude-code-hooks-mastery",
+   "cat": 2,
+   "sub": "metodologia",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "metodologia",
+    "reference",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo.",
+   "alt": [],
+   "stars": 3986,
+   "github_id": 1014394578,
+   "gh": "disler/claude-code-hooks-mastery",
+   "lang": "Python",
+   "license": null,
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "goals": [
+    "skills",
+    "aprender"
+   ]
+  },
+  {
+   "id": "dnspy",
+   "name": "dnSpy",
+   "cat": 16,
+   "sub": "depuracion",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "depuracion",
+    "app",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma.",
+   "alt": [],
+   "stars": 11483,
+   "github_id": 371358850,
+   "gh": "dnSpyEx/dnSpy",
+   "lang": "C#",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "docuseal",
+   "name": "docuseal",
+   "cat": 13,
+   "sub": "pdf",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pdf",
+    "server",
+    "ruby"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio.",
+   "alt": [],
+   "stars": 19053,
+   "github_id": 661850205,
+   "gh": "docusealco/docuseal",
+   "lang": "Ruby",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "documentos",
+    "servicios"
+   ]
+  },
+  {
+   "id": "dograh",
+   "name": "dograh",
+   "cat": 12,
+   "sub": "voz-agentes",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "voz-agentes",
+    "agent",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables.",
+   "alt": [],
+   "stars": 6094,
+   "github_id": 1053292493,
+   "gh": "dograh-hq/dograh",
+   "lang": "Python",
+   "license": "BSD-2-Clause",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "api"
+   ],
+   "goals": [
+    "mcp"
+   ]
+  },
+  {
+   "id": "papermorph",
+   "name": "Papermorph",
+   "cat": 12,
+   "sub": "programatico",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "programatico",
+    "skill",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill que convierte libros en experiencias web animadas y narradas, con distintas rutas de voz y recursos visuales.",
+   "alt": [],
+   "stars": 1690,
+   "github_id": 1402525166,
+   "gh": "DozenTwelve/Papermorph",
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude"
+   ],
+   "goals": [
+    "video",
+    "skills"
+   ]
+  },
+  {
+   "id": "raddebugger",
+   "name": "raddebugger",
+   "cat": 16,
+   "sub": "depuracion",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "depuracion",
+    "app",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Depurador gráfico nativo para inspeccionar procesos, código y memoria durante el análisis de programas.",
+   "alt": [],
+   "stars": 8844,
+   "github_id": 741625310,
+   "gh": "EpicGames/raddebugger",
+   "lang": "C",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "sellbird",
+   "name": "sellbird",
+   "cat": 1,
+   "sub": "marketing",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "marketing",
+    "agent",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes.",
+   "alt": [],
+   "stars": 5588,
+   "github_id": 1179388779,
+   "gh": "ethanplusai/sellbird",
+   "lang": "Python",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ],
+   "goals": []
+  },
+  {
+   "id": "obsidian-second-brain",
+   "name": "obsidian-second-brain",
+   "cat": 15,
+   "sub": "notas",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian.",
+   "alt": [
+    "claude-obsidian"
+   ],
+   "stars": 5324,
+   "github_id": 1190557545,
+   "gh": "eugeniughelbur/obsidian-second-brain",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "notas"
+   ]
+  },
+  {
+   "id": "open-seo",
+   "name": "open-seo",
+   "cat": 1,
+   "sub": "marketing",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "marketing",
+    "server",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio.",
+   "alt": [],
+   "stars": 27735,
+   "github_id": 1168753718,
+   "gh": "every-app/open-seo",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "id": "claude-task-master",
+   "name": "claude-task-master",
+   "cat": 3,
+   "sub": "infra",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "infra",
+    "agent",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP.",
+   "alt": [],
+   "stars": 28358,
+   "github_id": 942837343,
+   "gh": "eyaltoledano/claude-task-master",
+   "lang": "JavaScript",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "api"
+   ],
+   "goals": [
+    "mcp"
+   ]
+  },
+  {
+   "id": "videopose3d",
+   "name": "VideoPose3D",
+   "cat": 11,
+   "sub": "vision",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "vision",
+    "model",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Implementación de investigación para estimar pose humana 3D desde trayectorias de puntos 2D en secuencias de video.",
+   "alt": [],
+   "stars": 4062,
+   "github_id": 153697606,
+   "gh": "facebookresearch/VideoPose3D",
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "status": "archived",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "imagenes"
+   ]
+  },
+  {
+   "id": "freetoken",
+   "name": "FreeToken",
+   "cat": 8,
+   "sub": "motores",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "motores",
+    "engine",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto.",
+   "alt": [],
+   "stars": 17191,
+   "github_id": 1307001698,
+   "gh": "FlashML-org/FreeToken",
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "local"
+   ]
+  },
+  {
+   "id": "freqtrade",
+   "name": "freqtrade",
+   "cat": 14,
+   "sub": "bots",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "bots",
+    "app",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Bot de trading de criptomonedas con herramientas para preparar estrategias, hacer backtesting y operar en simulación.",
+   "alt": [],
+   "stars": 56895,
+   "github_id": 91629816,
+   "gh": "freqtrade/freqtrade",
+   "lang": "Python",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "finanzas"
+   ]
+  },
+  {
+   "id": "frida",
+   "name": "frida",
+   "cat": 16,
+   "sub": "reversing",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "reversing",
+    "app",
+    "meson"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramientas de instrumentación dinámica para observar y modificar el comportamiento de programas durante su ejecución.",
+   "alt": [],
+   "stars": 22792,
+   "github_id": 9405122,
+   "gh": "frida/frida",
+   "lang": "Meson",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "gstack",
+   "name": "gstack",
+   "cat": 2,
+   "sub": "metodologia",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "metodologia",
+    "skill",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code.",
+   "alt": [],
+   "stars": 141589,
+   "github_id": 1179264259,
+   "gh": "garrytan/gstack",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "skills"
+   ]
+  },
+  {
+   "id": "cleanyourtv",
+   "name": "cleanyourtv",
+   "cat": 15,
+   "sub": "personal",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "personal",
+    "app",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante ADB.",
+   "alt": [],
+   "stars": 57923,
+   "github_id": 1423101235,
+   "gh": "Gathin23/cleanyourtv",
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "srt-whiteboard-animation",
+   "name": "srt-whiteboard-animation",
+   "cat": 12,
+   "sub": "programatico",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "programatico",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill para crear animaciones de pizarra con trazos y contenido organizados a partir de archivos de subtítulos SRT.",
+   "alt": [],
+   "stars": 5608,
+   "github_id": 1314048518,
+   "gh": "geeklee/srt-whiteboard-animation",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "codex"
+   ],
+   "goals": [
+    "video",
+    "skills"
+   ]
+  },
+  {
+   "id": "agentic-rag-for-dummies",
+   "name": "agentic-rag-for-dummies",
+   "cat": 6,
+   "sub": "rag",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "rag",
+    "template",
+    "jupyter-notebook"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama.",
+   "alt": [],
+   "stars": 4381,
+   "github_id": 1075623145,
+   "gh": "GiovanniPasq/agentic-rag-for-dummies",
+   "lang": "Jupyter Notebook",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ],
+   "goals": [
+    "documentos"
+   ]
+  },
+  {
+   "id": "postiz-app",
+   "name": "postiz-app",
+   "cat": 1,
+   "sub": "marketing",
+   "role": "platform",
+   "exec": "hybrid",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "marketing",
+    "server",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA.",
+   "alt": [],
+   "stars": 41620,
+   "github_id": 664013991,
+   "gh": "gitroomhq/postiz-app",
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "api"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "id": "mediapipe",
+   "name": "mediapipe",
+   "cat": 11,
+   "sub": "vision",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "vision",
+    "library",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramientas de aprendizaje automático para tareas de visión y procesamiento de medios en dispositivos y aplicaciones.",
+   "alt": [],
+   "stars": 37694,
+   "github_id": 191820100,
+   "gh": "google-ai-edge/mediapipe",
+   "lang": "C++",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "imagenes"
+   ]
+  },
+  {
+   "id": "elephant-goldfish-model",
+   "name": "elephant-goldfish-model",
+   "cat": 2,
+   "sub": "metodologia",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "metodologia",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complementarias.",
+   "alt": [],
+   "stars": 19256,
+   "github_id": 1368596582,
+   "gh": "google/elephant-goldfish-model",
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "skills"
+   ]
+  },
+  {
+   "id": "filament",
+   "name": "filament",
+   "cat": 11,
+   "sub": "creacion-3d",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "creacion-3d",
+    "library",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Motor de renderizado físicamente basado para integrar gráficos 3D en aplicaciones móviles, web y de escritorio.",
+   "alt": [],
+   "stars": 20748,
+   "github_id": 143455116,
+   "gh": "google/filament",
+   "lang": "C++",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "imagenes",
+    "3d"
+   ]
+  },
+  {
+   "id": "google-skills",
+   "name": "skills",
+   "cat": 2,
+   "sub": "catalogos",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "catalogos",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatibles.",
+   "alt": [],
+   "stars": 24291,
+   "github_id": 1197652028,
+   "gh": "google/skills",
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "skills"
+   ]
+  },
+  {
+   "id": "modern-web-guidance",
+   "name": "modern-web-guidance",
+   "cat": 9,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "skills",
+    "skill",
+    "reference"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web.",
+   "alt": [],
+   "stars": 15592,
+   "github_id": 1189825116,
+   "gh": "GoogleChrome/modern-web-guidance",
+   "lang": null,
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "web",
+    "skills"
+   ]
+  },
+  {
+   "id": "k6",
+   "name": "k6",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "app",
+    "go"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta de pruebas de carga para medir cómo responden aplicaciones y servicios bajo distintos niveles de tráfico.",
+   "alt": [],
+   "stars": 32298,
+   "github_id": 54400687,
+   "gh": "grafana/k6",
+   "lang": "Go",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "gsap-skills",
+   "name": "gsap-skills",
+   "cat": 9,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "skills",
+    "skill",
+    "reference"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP.",
+   "alt": [],
+   "stars": 18463,
+   "github_id": 1172781277,
+   "gh": "greensock/gsap-skills",
+   "lang": null,
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "web",
+    "skills"
+   ]
+  },
+  {
+   "id": "ozz-animation",
+   "name": "ozz-animation",
+   "cat": 11,
+   "sub": "creacion-3d",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "creacion-3d",
+    "library",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca C++ y herramientas para preparar y reproducir animación esquelética dentro de motores y aplicaciones.",
+   "alt": [],
+   "stars": 3145,
+   "github_id": 41325282,
+   "gh": "guillaumeblanc/ozz-animation",
+   "lang": "C++",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "imagenes",
+    "3d"
+   ]
+  },
+  {
+   "id": "floorplan",
+   "name": "floorplan",
+   "cat": 7,
+   "sub": "codigo",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "codigo",
+    "skill",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto.",
+   "alt": [],
+   "stars": 4367,
+   "github_id": 1435672472,
+   "gh": "haydenschmitty/floorplan",
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "programar"
+   ]
+  },
+  {
+   "id": "vibe-trading",
+   "name": "Vibe-Trading",
+   "cat": 14,
+   "sub": "agentes",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "agentes",
+    "agent",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables.",
+   "alt": [],
+   "stars": 38250,
+   "github_id": 1198306812,
+   "gh": "HKUDS/Vibe-Trading",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ],
+   "goals": [
+    "finanzas"
+   ]
+  },
+  {
+   "id": "home-assistant",
+   "name": "Home Assistant",
+   "cat": 15,
+   "sub": "domotica",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "domotica",
+    "server",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Motor de Home Assistant para conectar dispositivos y automatizar acciones del hogar con control local.",
+   "alt": [],
+   "stars": 92331,
+   "github_id": 12888993,
+   "gh": "home-assistant/core",
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "id": "hummingbot",
+   "name": "hummingbot",
+   "cat": 14,
+   "sub": "bots",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "bots",
+    "app",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Software para desarrollar y ejecutar bots de trading de criptomonedas mediante conectores y estrategias configurables.",
+   "alt": [],
+   "stars": 21222,
+   "github_id": 179163124,
+   "gh": "hummingbot/hummingbot",
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "finanzas"
+   ]
+  },
+  {
+   "id": "hypit",
+   "name": "hypit",
+   "cat": 12,
+   "sub": "generativo",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "generativo",
+    "skill",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skills para agentes que organizan generación y edición de videos mediante modelos, servicios y recursos configurables.",
+   "alt": [],
+   "stars": 29867,
+   "github_id": 1316470719,
+   "gh": "hypit-ai/hypit",
+   "lang": "TypeScript",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "local_model",
+    "api"
+   ],
+   "goals": [
+    "video",
+    "skills"
+   ]
+  },
+  {
+   "id": "apktool",
+   "name": "Apktool",
+   "cat": 16,
+   "sub": "reversing",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "reversing",
+    "app",
+    "java"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta para decodificar recursos y reconstruir paquetes APK de Android durante el análisis de una aplicación.",
+   "alt": [],
+   "stars": 27222,
+   "github_id": 3766706,
+   "gh": "iBotPeaches/Apktool",
+   "lang": "Java",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "casaos",
+   "name": "CasaOS",
+   "cat": 15,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "infraestructura",
+    "server",
+    "go"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos.",
+   "alt": [],
+   "stars": 37644,
+   "github_id": 410430370,
+   "gh": "IceWhaleTech/CasaOS",
+   "lang": "Go",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "id": "ilspy",
+   "name": "ILSpy",
+   "cat": 16,
+   "sub": "reversing",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "reversing",
+    "app",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Descompilador de .NET para explorar ensamblados y estudiar el código y metadatos de aplicaciones compatibles.",
+   "alt": [],
+   "stars": 27070,
+   "github_id": 1327739,
+   "gh": "icsharpcode/ILSpy",
+   "lang": "C#",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "optimizerduck",
+   "name": "optimizerDuck",
+   "cat": 15,
+   "sub": "personal",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "personal",
+    "app",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación para revisar y ajustar opciones de rendimiento, privacidad y configuración de un equipo con Windows.",
+   "alt": [],
+   "stars": 11734,
+   "github_id": 1087077125,
+   "gh": "itsfatduck/optimizerDuck",
+   "lang": "C#",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "instagram-agent-skill",
+   "name": "instagram-agent-skill",
+   "cat": 2,
+   "sub": "dominio",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "dominio",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram.",
+   "alt": [],
+   "stars": 6477,
+   "github_id": 1368447577,
+   "gh": "Jakeschincariol/instagram-agent-skill",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude"
+   ],
+   "goals": [
+    "skills"
+   ]
+  },
+  {
+   "id": "linkedin-agent-skill",
+   "name": "linkedin-agent-skill",
+   "cat": 2,
+   "sub": "dominio",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "dominio",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn.",
+   "alt": [],
+   "stars": 3580,
+   "github_id": 1360725349,
+   "gh": "Jakeschincariol/linkedin-agent-skill",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude"
+   ],
+   "goals": [
+    "skills"
+   ]
+  },
+  {
+   "id": "pixel-hedge-fund",
+   "name": "pixel-hedge-fund",
+   "cat": 14,
+   "sub": "aprender",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "aprender",
+    "template",
+    "svelte"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Demostración de una oficina financiera en pixel art con interfaz de análisis y conexiones configurables a mercados.",
+   "alt": [],
+   "stars": 5,
+   "github_id": 1378011443,
+   "gh": "jaypolanco96/pixel-hedge-fund",
+   "lang": "Svelte",
+   "license": null,
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "finanzas"
+   ]
+  },
+  {
+   "id": "ai-website-cloner-template",
+   "name": "ai-website-cloner-template",
+   "cat": 9,
+   "sub": "ia-ui",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ia-ui",
+    "template",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz.",
+   "alt": [],
+   "stars": 39148,
+   "github_id": 1180745961,
+   "gh": "JCodesMore/ai-website-cloner-template",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "web"
+   ]
+  },
+  {
+   "id": "concat",
+   "name": "Concat",
+   "cat": 12,
+   "sub": "edicion",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "edicion",
+    "app",
+    "rust"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP.",
+   "alt": [],
+   "stars": 17637,
+   "github_id": 1346499044,
+   "gh": "jub0t/Concat",
+   "lang": "Rust",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "video"
+   ]
+  },
+  {
+   "id": "scientific-agent-skills",
+   "name": "scientific-agent-skills",
+   "cat": 2,
+   "sub": "dominio",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "dominio",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio.",
+   "alt": [],
+   "stars": 57225,
+   "github_id": 1079456184,
+   "gh": "K-Dense-AI/scientific-agent-skills",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "skills"
+   ]
+  },
+  {
+   "id": "logo-design-skill",
+   "name": "logo-design-skill",
+   "cat": 9,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "skills",
+    "skill",
+    "html"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño.",
+   "alt": [],
+   "stars": 6932,
+   "github_id": 1388867993,
+   "gh": "kaankiziltug/logo-design-skill",
+   "lang": "HTML",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "web",
+    "skills"
+   ]
+  },
+  {
+   "id": "karakeep",
+   "name": "karakeep",
+   "cat": 15,
+   "sub": "notas",
+   "role": "platform",
+   "exec": "hybrid",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "server",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación mediante IA.",
+   "alt": [],
+   "stars": 30536,
+   "github_id": 753589979,
+   "gh": "karakeep-app/karakeep",
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "api"
+   ],
+   "goals": [
+    "notas",
+    "servicios"
+   ]
+  },
+  {
+   "id": "40-questions",
+   "name": "40-questions",
+   "cat": 15,
+   "sub": "personal",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "personal",
+    "reference"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Colección de preguntas para revisar un año o una década y reflexionar sobre objetivos, hábitos y decisiones personales.",
+   "alt": [],
+   "stars": 1899,
+   "github_id": 164335612,
+   "gh": "kepano/40-questions",
+   "lang": null,
+   "license": null,
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "goals": [
+    "aprender"
+   ]
+  },
+  {
+   "id": "defuddle",
+   "name": "defuddle",
+   "cat": 4,
+   "sub": "crawlers",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "crawlers",
+    "library",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable.",
+   "alt": [],
+   "stars": 10034,
+   "github_id": 940076402,
+   "gh": "kepano/defuddle",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "investigar"
+   ]
+  },
+  {
+   "id": "flexoki",
+   "name": "flexoki",
+   "cat": 9,
+   "sub": "estilos",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "estilos",
+    "reference",
+    "css"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Paleta de color para texto, código e interfaces que puede servir de referencia al definir un sistema visual.",
+   "alt": [],
+   "stars": 3839,
+   "github_id": 701897407,
+   "gh": "kepano/flexoki",
+   "lang": "CSS",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "goals": [
+    "web",
+    "aprender"
+   ]
+  },
+  {
+   "id": "kepano-obsidian",
+   "name": "kepano-obsidian",
+   "cat": 15,
+   "sub": "notas",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "template",
+    "reference"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas e información personal.",
+   "alt": [],
+   "stars": 6011,
+   "github_id": 690786452,
+   "gh": "kepano/kepano-obsidian",
+   "lang": null,
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "notas"
+   ]
+  },
+  {
+   "id": "obsidian-minimal",
+   "name": "obsidian-minimal",
+   "cat": 15,
+   "sub": "notas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "app",
+    "css"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Tema configurable de Obsidian para ajustar la apariencia y reducir distracciones al trabajar con notas.",
+   "alt": [],
+   "stars": 5664,
+   "github_id": 282550237,
+   "gh": "kepano/obsidian-minimal",
+   "lang": "CSS",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "notas"
+   ]
+  },
+  {
+   "id": "shannon",
+   "name": "shannon",
+   "cat": 16,
+   "sub": "agentes",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "agentes",
+    "agent",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado.",
+   "alt": [],
+   "stars": 51901,
+   "github_id": 1065059442,
+   "gh": "KeygraphHQ/shannon",
+   "lang": "TypeScript",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "codex",
+    "local_model",
+    "api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "konva",
+   "name": "konva",
+   "cat": 9,
+   "sub": "componentes",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "componentes",
+    "library",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivos.",
+   "alt": [],
+   "stars": 14962,
+   "github_id": 29011477,
+   "gh": "konvajs/konva",
+   "lang": "TypeScript",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "web"
+   ]
+  },
+  {
+   "id": "kornia",
+   "name": "kornia",
+   "cat": 11,
+   "sub": "vision",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "vision",
+    "library",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de visión por computador para incorporar geometría, transformaciones y procesamiento de imágenes en PyTorch.",
+   "alt": [],
+   "stars": 12384,
+   "github_id": 145693916,
+   "gh": "kornia/kornia",
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "imagenes"
+   ]
+  },
+  {
+   "id": "pixelfund-ai",
+   "name": "PixelFund-AI",
+   "cat": 14,
+   "sub": "aprender",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "aprender",
+    "template",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación de simulación bursátil con agentes e interfaz en pixel art para explorar carteras y operaciones virtuales.",
+   "alt": [],
+   "stars": 6,
+   "github_id": 1257216735,
+   "gh": "kyjwang/PixelFund-AI",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "review"
+   ],
+   "goals": [
+    "finanzas"
+   ]
+  },
+  {
+   "id": "openidea",
+   "name": "openidea",
+   "cat": 3,
+   "sub": "coding",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "coding",
+    "app",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguajes.",
+   "alt": [],
+   "stars": 9002,
+   "github_id": 1428347546,
+   "gh": "l0ng-ai/openidea",
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "programar"
+   ]
+  },
+  {
+   "id": "brag",
+   "name": "brag",
+   "cat": 12,
+   "sub": "programatico",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "programatico",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skills para que un agente convierta un proyecto o sitio en un video breve de lanzamiento con composición y música.",
+   "alt": [],
+   "stars": 21524,
+   "github_id": 1271560627,
+   "gh": "latent-spaces/brag",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "video",
+    "skills"
+   ]
+  },
+  {
+   "id": "ghidramcp",
+   "name": "GhidraMCP",
+   "cat": 5,
+   "sub": "servidores",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "servidores",
+    "mcp",
+    "java"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios.",
+   "alt": [],
+   "stars": 11933,
+   "github_id": 953335676,
+   "gh": "LaurieWired/GhidraMCP",
+   "lang": "Java",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "mcp"
+   ]
+  },
+  {
+   "id": "lemo-opuscar",
+   "name": "lemo-opuscar",
+   "cat": 12,
+   "sub": "programatico",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "programatico",
+    "skill",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Colección de estilos e instrucciones para crear piezas audiovisuales por código con Claude Code.",
+   "alt": [],
+   "stars": 16277,
+   "github_id": 1389011744,
+   "gh": "lemomo-ai/lemo-opuscar",
+   "lang": "JavaScript",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "video",
+    "skills"
+   ]
+  },
+  {
+   "id": "earshot",
+   "name": "earshot",
+   "cat": 12,
+   "sub": "edicion",
+   "role": "runtime",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "edicion",
+    "mcp",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP.",
+   "alt": [],
+   "stars": 4836,
+   "github_id": 1420305104,
+   "gh": "Leonxlnx/earshot",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "local_model",
+    "api"
+   ],
+   "goals": [
+    "video",
+    "mcp"
+   ]
+  },
+  {
+   "id": "motion-design-skill",
+   "name": "motion-design-skill",
+   "cat": 9,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "skills",
+    "skill",
+    "reference"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces.",
+   "alt": [],
+   "stars": 3104,
+   "github_id": 1179682343,
+   "gh": "LottieFiles/motion-design-skill",
+   "lang": null,
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "web",
+    "skills"
+   ]
+  },
+  {
+   "id": "lumibot",
+   "name": "lumibot",
+   "cat": 14,
+   "sub": "cuant",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "cuant",
+    "framework",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Framework de Python para desarrollar estrategias, realizar backtesting y conectar simulación u operación con brokers.",
+   "alt": [],
+   "stars": 2236,
+   "github_id": 294371636,
+   "gh": "Lumiwealth/lumibot",
+   "lang": "Python",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "finanzas"
+   ]
+  },
+  {
+   "id": "airllm",
+   "name": "airllm",
+   "cat": 8,
+   "sub": "motores",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "motores",
+    "engine",
+    "jupyter-notebook"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes.",
+   "alt": [],
+   "stars": 42405,
+   "github_id": 652712035,
+   "gh": "lyogavin/airllm",
+   "lang": "Jupyter Notebook",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "local"
+   ]
+  },
+  {
+   "id": "claude-code-usage-monitor",
+   "name": "Claude-Code-Usage-Monitor",
+   "cat": 6,
+   "sub": "observabilidad",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "observabilidad",
+    "app",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible.",
+   "alt": [],
+   "stars": 8802,
+   "github_id": 1004631442,
+   "gh": "Maciek-roboblog/Claude-Code-Usage-Monitor",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "magnitude",
+   "name": "magnitude",
+   "cat": 8,
+   "sub": "motores",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "motores",
+    "engine",
+    "rust"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones.",
+   "alt": [],
+   "stars": 7809,
+   "github_id": 1267145484,
+   "gh": "magnitudedev/magnitude",
+   "lang": "Rust",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "local"
+   ]
+  },
+  {
+   "id": "cloud-mail",
+   "name": "cloud-mail",
+   "cat": 1,
+   "sub": "marketing",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "marketing",
+    "server",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio.",
+   "alt": [],
+   "stars": 16001,
+   "github_id": 971999086,
+   "gh": "maillab/cloud-mail",
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "id": "threejs-game-skills",
+   "name": "threejs-game-skills",
+   "cat": 9,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "skills",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skills para que un agente construya juegos de navegador con Three.js, interfaz y recursos visuales o sonoros opcionales.",
+   "alt": [],
+   "stars": 2814,
+   "github_id": 1268895491,
+   "gh": "majidmanzarpour/threejs-game-skills",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "web",
+    "skills",
+    "3d"
+   ]
+  },
+  {
+   "id": "backtrader",
+   "name": "backtrader",
+   "cat": 14,
+   "sub": "cuant",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "cuant",
+    "framework",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de Python para definir estrategias y estudiar su comportamiento mediante backtesting de datos de mercado.",
+   "alt": [
+    "nautilus-trader"
+   ],
+   "stars": 23745,
+   "github_id": 29050338,
+   "gh": "mementum/backtrader",
+   "lang": "Python",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "finanzas"
+   ]
+  },
+  {
+   "id": "zdog",
+   "name": "zdog",
+   "cat": 9,
+   "sub": "animacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "animacion",
+    "library",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG.",
+   "alt": [],
+   "stars": 10698,
+   "github_id": 174164624,
+   "gh": "metafizzy/zdog",
+   "lang": "JavaScript",
+   "license": null,
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "web"
+   ]
+  },
+  {
+   "id": "mitmproxy",
+   "name": "mitmproxy",
+   "cat": 16,
+   "sub": "pruebas",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "pruebas",
+    "app",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Proxy interactivo para inspeccionar tráfico HTTP y HTTPS al depurar aplicaciones o realizar pruebas autorizadas.",
+   "alt": [],
+   "stars": 46961,
+   "github_id": 519832,
+   "gh": "mitmproxy/mitmproxy",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "awesome-cad",
+   "name": "awesome-cad",
+   "cat": 11,
+   "sub": "creacion-3d",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "creacion-3d",
+    "reference"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Directorio de programas, bibliotecas y recursos de diseño asistido por computadora organizados por especialidad.",
+   "alt": [],
+   "stars": 243,
+   "github_id": 1126073325,
+   "gh": "mlightcad/awesome-cad",
+   "lang": null,
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "goals": [
+    "imagenes",
+    "aprender",
+    "3d"
+   ]
+  },
+  {
+   "id": "awesome-reverse-engineering",
+   "name": "awesome-reverse-engineering",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "referencias",
+    "reference",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos.",
+   "alt": [],
+   "stars": 2134,
+   "github_id": 1412022658,
+   "gh": "morluto/awesome-reverse-engineering",
+   "lang": "Python",
+   "license": "CC0-1.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "goals": [
+    "aprender",
+    "seguridad"
+   ]
+  },
+  {
+   "id": "rea",
+   "name": "rea",
+   "cat": 16,
+   "sub": "agentes",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "agentes",
+    "skill",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramientas e instrucciones para estudiar el comportamiento y la estructura de software mediante agentes de código.",
+   "alt": [],
+   "stars": 460150,
+   "github_id": 1209966933,
+   "gh": "morluto/rea",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "claude-animated-shorts",
+   "name": "claude-animated-shorts",
+   "cat": 12,
+   "sub": "programatico",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "programatico",
+    "skill",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion.",
+   "alt": [],
+   "stars": 3420,
+   "github_id": 1441526188,
+   "gh": "mromidev/claude-animated-shorts",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude"
+   ],
+   "goals": [
+    "video",
+    "skills"
+   ]
+  },
+  {
+   "id": "claude-code-router",
+   "name": "claude-code-router",
+   "cat": 6,
+   "sub": "serving",
+   "role": "platform",
+   "exec": "hybrid",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "serving",
+    "server",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local.",
+   "alt": [],
+   "stars": 38150,
+   "github_id": 938468965,
+   "gh": "musistudio/claude-code-router",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "mvanhorn",
+   "name": "mvanhorn",
+   "cat": 2,
+   "sub": "guias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "guias",
+    "reference"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo.",
+   "alt": [],
+   "stars": 53,
+   "github_id": 1176139654,
+   "gh": "mvanhorn/mvanhorn",
+   "lang": null,
+   "license": null,
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "goals": [
+    "skills",
+    "aprender"
+   ]
+  },
+  {
+   "id": "melotts",
+   "name": "MeloTTS",
+   "cat": 12,
+   "sub": "tts",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "tts",
+    "model",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles.",
+   "alt": [],
+   "stars": 7714,
+   "github_id": 760022246,
+   "gh": "myshell-ai/MeloTTS",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "narrar"
+   ]
+  },
+  {
+   "id": "laya",
+   "name": "laya",
+   "cat": 7,
+   "sub": "modelos",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "modelos",
+    "model",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados.",
+   "alt": [],
+   "stars": 35536,
+   "github_id": 1375382253,
+   "gh": "NandhaKishorM/laya",
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": []
+  },
+  {
+   "id": "ghidra",
+   "name": "ghidra",
+   "cat": 16,
+   "sub": "reversing",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "reversing",
+    "app",
+    "java"
+   ],
+   "lib": false,
+   "pick": true,
+   "one": "Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria.",
+   "alt": [
+    "radare2"
+   ],
+   "stars": 100096,
+   "github_id": 173228436,
+   "gh": "NationalSecurityAgency/ghidra",
+   "lang": "Java",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "nautilus-trader",
+   "name": "nautilus_trader",
+   "cat": 14,
+   "sub": "cuant",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "cuant",
+    "framework",
+    "rust"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Motor de trading y backtesting con arquitectura orientada a eventos para investigar y desarrollar estrategias.",
+   "alt": [
+    "backtrader"
+   ],
+   "stars": 31542,
+   "github_id": 138552196,
+   "gh": "nautechsystems/nautilus_trader",
+   "lang": "Rust",
+   "license": "LGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "finanzas"
+   ]
+  },
+  {
+   "id": "hallmark",
+   "name": "hallmark",
+   "cat": 9,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "skills",
+    "skill",
+    "css"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes.",
+   "alt": [],
+   "stars": 55089,
+   "github_id": 1222917575,
+   "gh": "Nutlope/hallmark",
+   "lang": "CSS",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "web",
+    "skills"
+   ]
+  },
+  {
+   "id": "jev-fraud",
+   "name": "jev-fraud",
+   "cat": 3,
+   "sub": "experimentos",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "experimentos",
+    "template",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude.",
+   "alt": [],
+   "stars": 17,
+   "github_id": 1377880130,
+   "gh": "Nutlope/jev-fraud",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "jsoncanvas",
+   "name": "jsoncanvas",
+   "cat": 15,
+   "sub": "notas",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "reference",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Especificación abierta de JSON Canvas para describir nodos y conexiones de un lienzo visual en un archivo.",
+   "alt": [],
+   "stars": 3884,
+   "github_id": 764771893,
+   "gh": "obsidianmd/jsoncanvas",
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "goals": [
+    "aprender",
+    "notas"
+   ]
+  },
+  {
+   "id": "obsidian-clipper",
+   "name": "obsidian-clipper",
+   "cat": 15,
+   "sub": "notas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "app",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Extensión oficial para capturar páginas y fragmentos de la web y guardarlos como notas en Obsidian.",
+   "alt": [],
+   "stars": 5585,
+   "github_id": 849500524,
+   "gh": "obsidianmd/obsidian-clipper",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "notas"
+   ]
+  },
+  {
+   "id": "obsidian-help",
+   "name": "obsidian-help",
+   "cat": 15,
+   "sub": "notas",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "reference",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Documentación oficial de Obsidian para aprender sus funciones, configuración y formas de organizar una bóveda.",
+   "alt": [],
+   "stars": 2005,
+   "github_id": 285425357,
+   "gh": "obsidianmd/obsidian-help",
+   "lang": "JavaScript",
+   "license": null,
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "goals": [
+    "aprender",
+    "notas"
+   ]
+  },
+  {
+   "id": "obsidian-importer",
+   "name": "obsidian-importer",
+   "cat": 15,
+   "sub": "notas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "app",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plugin oficial para convertir datos de otras aplicaciones en archivos Markdown que puedes abrir en Obsidian.",
+   "alt": [],
+   "stars": 1804,
+   "github_id": 665163927,
+   "gh": "obsidianmd/obsidian-importer",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "notas"
+   ]
+  },
+  {
+   "id": "obsidian-releases",
+   "name": "Obsidian: distribución y extensiones",
+   "cat": 15,
+   "sub": "notas",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "app",
+    "reference"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Repositorio de distribución de Obsidian y sus listados de plugins y temas; no contiene el código completo de la aplicación.",
+   "alt": [],
+   "stars": 23279,
+   "github_id": 262342594,
+   "gh": "obsidianmd/obsidian-releases",
+   "lang": null,
+   "license": null,
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "notas"
+   ]
+  },
+  {
+   "id": "obsidian-sample-plugin",
+   "name": "obsidian-sample-plugin",
+   "cat": 15,
+   "sub": "notas",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "template",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plantilla oficial para programar un plugin de Obsidian con una estructura inicial y configuración de desarrollo.",
+   "alt": [],
+   "stars": 4699,
+   "github_id": 307179377,
+   "gh": "obsidianmd/obsidian-sample-plugin",
+   "lang": "TypeScript",
+   "license": "0BSD",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "notas"
+   ]
+  },
+  {
+   "id": "obsidian-skills",
+   "name": "obsidian-skills",
+   "cat": 15,
+   "sub": "notas",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "notas",
+    "skill",
+    "shell"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases de datos y lienzos.",
+   "alt": [],
+   "stars": 52635,
+   "github_id": 1126947080,
+   "gh": "obsidianmd/obsidian-skills",
+   "lang": "Shell",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "notas"
+   ]
+  },
+  {
+   "id": "onyx",
+   "name": "onyx",
+   "cat": 6,
+   "sub": "rag",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "rag",
+    "agent",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso.",
+   "alt": [
+    "anything-llm"
+   ],
+   "stars": 33399,
+   "github_id": 633262635,
+   "gh": "onyx-dot-app/onyx",
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "local_model",
+    "api"
+   ],
+   "goals": [
+    "documentos",
+    "mcp"
+   ]
+  },
+  {
+   "id": "pdf-craft",
+   "name": "pdf-craft",
+   "cat": 13,
+   "sub": "ocr",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "ocr",
+    "library",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento.",
+   "alt": [
+    "marker"
+   ],
+   "stars": 6709,
+   "github_id": 931354511,
+   "gh": "oomol-lab/pdf-craft",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ],
+   "goals": [
+    "documentos"
+   ]
+  },
+  {
+   "id": "mmpose",
+   "name": "mmpose",
+   "cat": 11,
+   "sub": "vision",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "vision",
+    "model",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramientas y modelos de estimación de pose, incluidos RTMPose y otras variantes para analizar movimiento humano.",
+   "alt": [],
+   "stars": 8057,
+   "github_id": 278003645,
+   "gh": "open-mmlab/mmpose",
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "imagenes"
+   ]
+  },
+  {
+   "id": "odm",
+   "name": "ODM",
+   "cat": 10,
+   "sub": "geoespacial",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "geoespacial",
+    "app",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación.",
+   "alt": [],
+   "stars": 6602,
+   "github_id": 24470090,
+   "gh": "OpenDroneMap/ODM",
+   "lang": "Python",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "datos"
+   ]
+  },
+  {
+   "id": "openfilm",
+   "name": "openfilm",
+   "cat": 12,
+   "sub": "programatico",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "programatico",
+    "skill",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos.",
+   "alt": [],
+   "stars": 7162,
+   "github_id": 1404197626,
+   "gh": "openfilm/openfilm",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "video",
+    "skills"
+   ]
+  },
+  {
+   "id": "hello-halo",
+   "name": "hello-halo",
+   "cat": 3,
+   "sub": "asistentes",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "asistentes",
+    "agent",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores API.",
+   "alt": [],
+   "stars": 1939,
+   "github_id": 1133165145,
+   "gh": "openkursar/hello-halo",
+   "lang": "TypeScript",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "paperless-ngx",
+   "name": "paperless-ngx",
+   "cat": 13,
+   "sub": "gestion",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "gestion",
+    "server",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados.",
+   "alt": [],
+   "stars": 48127,
+   "github_id": 458648791,
+   "gh": "paperless-ngx/paperless-ngx",
+   "lang": "Python",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "id": "pixelfx",
+   "name": "pixelfx",
+   "cat": 9,
+   "sub": "animacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "animacion",
+    "library",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios.",
+   "alt": [],
+   "stars": 7478,
+   "github_id": 1439372976,
+   "gh": "patch-gg/pixelfx",
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "web"
+   ]
+  },
+  {
+   "id": "pencil",
+   "name": "pencil",
+   "cat": 12,
+   "sub": "edicion",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "edicion",
+    "app",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo.",
+   "alt": [],
+   "stars": 1895,
+   "github_id": 10978577,
+   "gh": "pencil2d/pencil",
+   "lang": "C++",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "video"
+   ]
+  },
+  {
+   "id": "no-ai-slop",
+   "name": "no-ai-slop",
+   "cat": 2,
+   "sub": "escritura",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "escritura",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.",
+   "alt": [],
+   "stars": 13508,
+   "github_id": 1291783779,
+   "gh": "petergyang/no-ai-slop",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "skills"
+   ]
+  },
+  {
+   "id": "planck-js",
+   "name": "planck.js",
+   "cat": 9,
+   "sub": "animacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "animacion",
+    "library",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript.",
+   "alt": [],
+   "stars": 5321,
+   "github_id": 54445812,
+   "gh": "piqnt/planck.js",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "web"
+   ]
+  },
+  {
+   "id": "react-three-rapier",
+   "name": "react-three-rapier",
+   "cat": 9,
+   "sub": "animacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "animacion",
+    "library",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales.",
+   "alt": [],
+   "stars": 1642,
+   "github_id": 487288999,
+   "gh": "pmndrs/react-three-rapier",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "web"
+   ]
+  },
+  {
+   "id": "vectorbt",
+   "name": "vectorbt",
+   "cat": 14,
+   "sub": "cuant",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "cuant",
+    "framework",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de análisis cuantitativo para explorar señales y comparar estrategias sobre datos de mercado.",
+   "alt": [],
+   "stars": 9851,
+   "github_id": 110684325,
+   "gh": "polakowo/vectorbt",
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "finanzas"
+   ]
+  },
+  {
+   "id": "py-clob-client",
+   "name": "py-clob-client",
+   "cat": 14,
+   "sub": "bots",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "bots",
+    "library",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Cliente Python antiguo para la API de órdenes de Polymarket; está archivado y conviene revisar su sucesor.",
+   "alt": [
+    "py-sdk"
+   ],
+   "stars": 1226,
+   "github_id": 455013779,
+   "gh": "Polymarket/py-clob-client",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "status": "archived",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "finanzas"
+   ]
+  },
+  {
+   "id": "py-sdk",
+   "name": "py-sdk",
+   "cat": 14,
+   "sub": "bots",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "bots",
+    "library",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "SDK Python de Polymarket para integrar funciones de su plataforma mediante las APIs y credenciales correspondientes.",
+   "alt": [
+    "py-clob-client"
+   ],
+   "stars": 154,
+   "github_id": 1228704556,
+   "gh": "Polymarket/py-sdk",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "finanzas"
+   ]
+  },
+  {
+   "id": "bla",
+   "name": "bla",
+   "cat": 16,
+   "sub": "defensa",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "defensa",
+    "app",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por agentes.",
+   "alt": [],
+   "stars": 5699,
+   "github_id": 1432859403,
+   "gh": "qybaihe/bla",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "mcp",
+    "seguridad"
+   ]
+  },
+  {
+   "id": "radare2",
+   "name": "radare2",
+   "cat": 16,
+   "sub": "reversing",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "reversing",
+    "app",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios.",
+   "alt": [
+    "rizin",
+    "ghidra"
+   ],
+   "stars": 25433,
+   "github_id": 4869294,
+   "gh": "radareorg/radare2",
+   "lang": "C",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "regl",
+   "name": "regl",
+   "cat": 9,
+   "sub": "animacion",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "animacion",
+    "library",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar gráficos acelerados en una aplicación web.",
+   "alt": [],
+   "stars": 5600,
+   "github_id": 52315611,
+   "gh": "regl-project/regl",
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "web"
+   ]
+  },
+  {
+   "id": "rizin",
+   "name": "rizin",
+   "cat": 16,
+   "sub": "reversing",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "reversing",
+    "app",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola.",
+   "alt": [
+    "radare2"
+   ],
+   "stars": 4196,
+   "github_id": 299867499,
+   "gh": "rizinorg/rizin",
+   "lang": "C",
+   "license": "LGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "fugu",
+   "name": "fugu",
+   "cat": 3,
+   "sub": "asistentes",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "asistentes",
+    "agent",
+    "shell"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Ejemplos y acceso a un sistema multiagente de Sakana que se consume como un servicio de modelos mediante API.",
+   "alt": [],
+   "stars": 1040,
+   "github_id": 1272437000,
+   "gh": "SakanaAI/fugu",
+   "lang": "Shell",
+   "license": null,
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "shepherd",
+   "name": "shepherd",
+   "cat": 3,
+   "sub": "infra",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "infra",
+    "framework",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Capa de ejecución que registra acciones y estado de un agente para permitir reproducir, bifurcar y revisar sus recorridos.",
+   "alt": [],
+   "stars": 2637,
+   "github_id": 1279435409,
+   "gh": "shepherd-agents/shepherd",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "4d-humans",
+   "name": "4D-Humans",
+   "cat": 11,
+   "sub": "vision",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "vision",
+    "model",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de video.",
+   "alt": [],
+   "stars": 1735,
+   "github_id": 647935862,
+   "gh": "shubham-goel/4D-Humans",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "imagenes"
+   ]
+  },
+  {
+   "id": "jadx",
+   "name": "jadx",
+   "cat": 16,
+   "sub": "reversing",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "reversing",
+    "app",
+    "java"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Descompilador de archivos DEX y APK para explorar código Java reconstruido y recursos de aplicaciones Android.",
+   "alt": [],
+   "stars": 51831,
+   "github_id": 8859474,
+   "gh": "skylot/jadx",
+   "lang": "Java",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "minimalist-entrepreneur-skills",
+   "name": "skills",
+   "cat": 2,
+   "sub": "dominio",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "dominio",
+    "skill",
+    "reference"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con un agente.",
+   "alt": [],
+   "stars": 11173,
+   "github_id": 1189893949,
+   "gh": "slavingia/skills",
+   "lang": null,
+   "license": null,
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude"
+   ],
+   "goals": [
+    "skills"
+   ]
+  },
+  {
+   "id": "craft-anything",
+   "name": "craft-anything",
+   "cat": 16,
+   "sub": "agentes",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "agentes",
+    "app",
+    "rust"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramientas para estudiar cómo funciona una aplicación y ayudar a construir una implementación propia con agentes.",
+   "alt": [],
+   "stars": 32904,
+   "github_id": 1440956372,
+   "gh": "storytold/craft-anything",
+   "lang": "Rust",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "claude",
+    "local_model",
+    "api"
+   ],
+   "goals": [
+    "mcp",
+    "seguridad"
+   ]
+  },
+  {
+   "id": "supabase",
+   "name": "supabase",
+   "cat": 15,
+   "sub": "infraestructura",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "infraestructura",
+    "server",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones.",
+   "alt": [],
+   "stars": 115046,
+   "github_id": 214587193,
+   "gh": "supabase/supabase",
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "servicios"
+   ]
+  },
+  {
+   "id": "treg",
+   "name": "treg",
+   "cat": 5,
+   "sub": "servidores",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": true,
+   "prov": [],
+   "tags": [
+    "servidores",
+    "mcp",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores.",
+   "alt": [],
+   "stars": 8030,
+   "github_id": 1301657572,
+   "gh": "superdesigndev/treg",
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "mcp"
+   ]
+  },
+  {
+   "id": "syncthing",
+   "name": "syncthing",
+   "cat": 15,
+   "sub": "archivos",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "archivos",
+    "app",
+    "go"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación para sincronizar archivos entre dispositivos directamente y controlar qué carpetas se comparten.",
+   "alt": [],
+   "stars": 90446,
+   "github_id": 14712850,
+   "gh": "syncthing/syncthing",
+   "lang": "Go",
+   "license": "MPL-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "motionmaxxing",
+   "name": "motionmaxxing",
+   "cat": 12,
+   "sub": "programatico",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "programatico",
+    "skill",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código.",
+   "alt": [],
+   "stars": 1609,
+   "github_id": 1407754231,
+   "gh": "Tejashmakwana/motionmaxxing",
+   "lang": "JavaScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "video",
+    "skills"
+   ]
+  },
+  {
+   "id": "tfjs-models",
+   "name": "tfjs-models",
+   "cat": 11,
+   "sub": "vision",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "vision",
+    "library",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Colección de modelos preparados para TensorFlow.js que permite integrar tareas de aprendizaje automático en aplicaciones.",
+   "alt": [],
+   "stars": 14814,
+   "github_id": 127968704,
+   "gh": "tensorflow/tfjs-models",
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "imagenes"
+   ]
+  },
+  {
+   "id": "openmaic",
+   "name": "OpenMAIC",
+   "cat": 15,
+   "sub": "aprendizaje",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "aprendizaje",
+    "agent",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configurables.",
+   "alt": [],
+   "stars": 43571,
+   "github_id": 1178737655,
+   "gh": "THU-MAIC/OpenMAIC",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "universal-android-debloater-next-generation",
+   "name": "universal-android-debloater-next-generation",
+   "cat": 15,
+   "sub": "personal",
+   "role": "app",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "personal",
+    "app",
+    "rust"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplicaciones.",
+   "alt": [],
+   "stars": 10085,
+   "github_id": 710425233,
+   "gh": "Universal-Debloater-Alliance/universal-android-debloater-next-generation",
+   "lang": "Rust",
+   "license": "GPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "strix",
+   "name": "strix",
+   "cat": 16,
+   "sub": "agentes",
+   "role": "app",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "agentes",
+    "agent",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de ChatGPT.",
+   "alt": [],
+   "stars": 75602,
+   "github_id": 1032808806,
+   "gh": "usestrix/strix",
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "mediabunny",
+   "name": "mediabunny",
+   "cat": 12,
+   "sub": "edicion",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "edicion",
+    "library",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video directamente en aplicaciones web.",
+   "alt": [],
+   "stars": 7501,
+   "github_id": 850821713,
+   "gh": "Vanilagy/mediabunny",
+   "lang": "TypeScript",
+   "license": "MPL-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "video"
+   ]
+  },
+  {
+   "id": "json-render",
+   "name": "json-render",
+   "cat": 9,
+   "sub": "ia-ui",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ia-ui",
+    "library",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Framework para generar interfaces desde una representación JSON y un catálogo de componentes definido por el desarrollador.",
+   "alt": [],
+   "stars": 19635,
+   "github_id": 1134411737,
+   "gh": "vercel-labs/json-render",
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "api"
+   ],
+   "goals": [
+    "web"
+   ]
+  },
+  {
+   "id": "ui-sdk",
+   "name": "UI SDK (Vercel)",
+   "cat": 9,
+   "sub": "ia-ui",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ia-ui",
+    "library",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos.",
+   "alt": [],
+   "stars": 4612,
+   "github_id": 1434724807,
+   "gh": "vercel-labs/ui",
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "web"
+   ]
+  },
+  {
+   "id": "3dviz-pro-max",
+   "name": "3dviz-pro-max",
+   "cat": 9,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "skills",
+    "skill",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código.",
+   "alt": [
+    "threejs-skills"
+   ],
+   "stars": 1297,
+   "github_id": 1363399964,
+   "gh": "viettranx/3dviz-pro-max",
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "web",
+    "skills",
+    "3d"
+   ]
+  },
+  {
+   "id": "video-shotcraft",
+   "name": "video-shotcraft",
+   "cat": 12,
+   "sub": "programatico",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "programatico",
+    "skill",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill para crear videos de producto editables con Remotion, composición de planos, movimiento y trabajo de sonido.",
+   "alt": [],
+   "stars": 19676,
+   "github_id": 1305663861,
+   "gh": "Vincentwei1021/video-shotcraft",
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "video",
+    "skills"
+   ]
+  },
+  {
+   "id": "book-to-skill",
+   "name": "book-to-skill",
+   "cat": 2,
+   "sub": "metodologia",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "metodologia",
+    "skill",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trabajo.",
+   "alt": [],
+   "stars": 37913,
+   "github_id": 1226123343,
+   "gh": "virgiliojr94/book-to-skill",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "skills"
+   ]
+  },
+  {
+   "id": "openviking",
+   "name": "OpenViking",
+   "cat": 6,
+   "sub": "memoria",
+   "role": "platform",
+   "exec": "hybrid",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "memoria",
+    "server",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información.",
+   "alt": [],
+   "stars": 42241,
+   "github_id": 1128123594,
+   "gh": "volcengine/OpenViking",
+   "lang": "Python",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "codex",
+    "local_model",
+    "api"
+   ],
+   "goals": []
+  },
+  {
+   "id": "webodm",
+   "name": "WebODM",
+   "cat": 10,
+   "sub": "geoespacial",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "geoespacial",
+    "server",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap.",
+   "alt": [],
+   "stars": 4273,
+   "github_id": 65209477,
+   "gh": "WebODM/WebODM",
+   "lang": "Python",
+   "license": "AGPL-3.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "datos"
+   ]
+  },
+  {
+   "id": "imhex",
+   "name": "ImHex",
+   "cat": 16,
+   "sub": "reversing",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "reversing",
+    "app",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Editor hexadecimal para inspeccionar archivos binarios, identificar estructuras y describir formatos mediante patrones.",
+   "alt": [],
+   "stars": 55863,
+   "github_id": 311683390,
+   "gh": "WerWolv/ImHex",
+   "lang": "C++",
+   "license": "GPL-2.0",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "anatomy",
+   "name": "anatomy",
+   "cat": 9,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "skills",
+    "skill",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales.",
+   "alt": [],
+   "stars": 27349,
+   "github_id": 1410124849,
+   "gh": "wheresryan22/anatomy",
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "web",
+    "skills",
+    "3d"
+   ]
+  },
+  {
+   "id": "x64dbg",
+   "name": "x64dbg",
+   "cat": 16,
+   "sub": "depuracion",
+   "role": "app",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "depuracion",
+    "app",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Depurador de Windows para inspeccionar programas en ejecución y estudiar instrucciones, memoria y llamadas.",
+   "alt": [],
+   "stars": 50315,
+   "github_id": 33791743,
+   "gh": "x64dbg/x64dbg",
+   "lang": "C++",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "seguridad"
+   ]
+  },
+  {
+   "id": "rnnoise",
+   "name": "rnnoise",
+   "cat": 12,
+   "sub": "edicion",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "edicion",
+    "model",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente.",
+   "alt": [],
+   "stars": 5966,
+   "github_id": 99199151,
+   "gh": "xiph/rnnoise",
+   "lang": "C",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "video"
+   ]
+  },
+  {
+   "id": "wham",
+   "name": "WHAM",
+   "cat": 11,
+   "sub": "vision",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "vision",
+    "model",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video.",
+   "alt": [],
+   "stars": 1178,
+   "github_id": 729041071,
+   "gh": "yohanshin/WHAM",
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "imagenes"
+   ]
+  },
+  {
+   "id": "design-dna",
+   "name": "design-dna",
+   "cat": 9,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "skills",
+    "skill",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo coherente.",
+   "alt": [],
+   "stars": 2125,
+   "github_id": 1189432033,
+   "gh": "zanwei/design-dna",
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "claude",
+    "codex"
+   ],
+   "goals": [
+    "web",
+    "skills"
+   ]
+  },
+  {
+   "id": "meshoptimizer",
+   "name": "meshoptimizer",
+   "cat": 11,
+   "sub": "creacion-3d",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "creacion-3d",
+    "library",
+    "c"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales.",
+   "alt": [],
+   "stars": 8856,
+   "github_id": 67768325,
+   "gh": "zeux/meshoptimizer",
+   "lang": "C++",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api"
+   ],
+   "goals": [
+    "imagenes",
+    "3d"
+   ]
+  },
+  {
+   "id": "awesome-ai-reverse-engineering",
+   "name": "awesome-ai-reverse-engineering",
+   "cat": 16,
+   "sub": "referencias",
+   "role": "directory",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "referencias",
+    "reference"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Directorio de herramientas de ingeniería inversa y análisis de software que pueden trabajar con agentes de IA.",
+   "alt": [],
+   "stars": 108,
+   "github_id": 1416831262,
+   "gh": "zhuyansen/awesome-ai-reverse-engineering",
+   "lang": null,
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "reference"
+   ],
+   "goals": [
+    "aprender",
+    "seguridad"
+   ]
+  },
+  {
+   "id": "easymocap",
+   "name": "EasyMocap",
+   "cat": 11,
+   "sub": "vision",
+   "role": "runtime",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "vision",
+    "model",
+    "python"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes.",
+   "alt": [],
+   "stars": 4980,
+   "github_id": 329620403,
+   "gh": "zju3dv/EasyMocap",
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [
+    "no_api",
+    "local_model"
+   ],
+   "goals": [
+    "imagenes"
+   ]
+  },
+  {
+   "id": "dsh-android",
+   "name": "dsh-android",
+   "cat": 3,
+   "sub": "coding",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "coding",
+    "plugin",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plugin de DeepSeek Harness para operar un emulador o dispositivo Android y revisar aplicaciones desde el agente.",
+   "alt": [],
+   "stars": 351,
+   "github_id": 1341805689,
+   "gh": "ZSeven-W/dsh-android",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [],
+   "goals": [
+    "programar"
+   ]
+  },
+  {
+   "id": "dsh-game-studio",
+   "name": "dsh-game-studio",
+   "cat": 3,
+   "sub": "coding",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "coding",
+    "plugin",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plugin de DeepSeek Harness para preparar y probar juegos pequeños con una interfaz de trabajo dentro del agente.",
+   "alt": [],
+   "stars": 556,
+   "github_id": 1446725818,
+   "gh": "ZSeven-W/dsh-game-studio",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [],
+   "goals": [
+    "programar"
+   ]
+  },
+  {
+   "id": "dsh-ios",
+   "name": "dsh-ios",
+   "cat": 3,
+   "sub": "coding",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "coding",
+    "plugin",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plugin de DeepSeek Harness para desarrollar y operar aplicaciones en simuladores iOS o dispositivos compatibles.",
+   "alt": [],
+   "stars": 466,
+   "github_id": 1339882322,
+   "gh": "ZSeven-W/dsh-ios",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [],
+   "goals": [
+    "programar"
+   ]
+  },
+  {
+   "id": "dsh-noema",
+   "name": "dsh-noema",
+   "cat": 6,
+   "sub": "memoria",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "memoria",
+    "plugin",
+    "typescript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración.",
+   "alt": [],
+   "stars": 144,
+   "github_id": 1334167430,
+   "gh": "ZSeven-W/dsh-noema",
+   "lang": "TypeScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [],
+   "goals": []
+  },
+  {
+   "id": "dsh-qa",
+   "name": "dsh-qa",
+   "cat": 7,
+   "sub": "calidad",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "calidad",
+    "plugin",
+    "javascript"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plugin de DeepSeek Harness para explorar aplicaciones, guardar evidencia y preparar recorridos de pruebas reproducibles.",
+   "alt": [],
+   "stars": 12,
+   "github_id": 1352490672,
+   "gh": "ZSeven-W/dsh-qa",
+   "lang": "JavaScript",
+   "license": "MIT",
+   "added_at": "2026-11-14",
+   "github_checked": "2026-11-14",
+   "routes": [],
+   "goals": [
+    "programar"
+   ]
   }
  ],
  "discovery": {
@@ -20236,6 +26397,114 @@
      "cripto",
      "mercados",
      "inversion"
+    ]
+   },
+   {
+    "id": "notas",
+    "title": "Organizar notas y conocimiento",
+    "description": "Elegir una aplicación o un conjunto pequeño de extensiones para guardar, enlazar y consultar información.",
+    "starters": [
+     "obsidian-releases",
+     "anytype-ts",
+     "appflowy"
+    ],
+    "guided": [
+     "obsidian-releases",
+     "anytype-ts",
+     "appflowy",
+     "claude-obsidian",
+     "obsidian-second-brain"
+    ],
+    "categories": [
+     15
+    ],
+    "keywords": [
+     "notas",
+     "obsidian",
+     "boveda",
+     "conocimiento personal"
+    ]
+   },
+   {
+    "id": "servicios",
+    "title": "Alojar servicios propios",
+    "description": "Entender qué aplicación vas a alojar, qué servidor necesita y qué servicios y cuentas se configuran aparte.",
+    "starters": [
+     "coolify",
+     "casaos",
+     "home-assistant"
+    ],
+    "guided": [
+     "coolify",
+     "casaos",
+     "home-assistant",
+     "vaultwarden",
+     "audiobookshelf"
+    ],
+    "categories": [
+     15
+    ],
+    "keywords": [
+     "servidor propio",
+     "autoalojar",
+     "selfhost",
+     "domotica",
+     "nube personal"
+    ]
+   },
+   {
+    "id": "seguridad",
+    "title": "Analizar software y su seguridad",
+    "description": "Escoger entre inspeccionar código, estudiar un binario o ejecutar pruebas en un entorno autorizado.",
+    "starters": [
+     "ghidra",
+     "jadx",
+     "shannon"
+    ],
+    "guided": [
+     "ghidra",
+     "jadx",
+     "imhex",
+     "shannon",
+     "strix"
+    ],
+    "categories": [
+     16
+    ],
+    "keywords": [
+     "seguridad",
+     "ingenieria inversa",
+     "pentest",
+     "depurar",
+     "binario"
+    ]
+   },
+   {
+    "id": "3d",
+    "title": "Crear escenas y proyectos 3D",
+    "description": "Elegir una aplicación visual, una biblioteca o instrucciones para un agente; revisar por separado modelos y recursos externos.",
+    "starters": [
+     "blender",
+     "3dviz-pro-max",
+     "unity-mcp"
+    ],
+    "guided": [
+     "blender",
+     "3dviz-pro-max",
+     "blender-skills",
+     "threejs-skills",
+     "unity-mcp"
+    ],
+    "categories": [
+     9,
+     11
+    ],
+    "keywords": [
+     "3d",
+     "blender",
+     "escena",
+     "modelado",
+     "motion capture"
     ]
    }
   ],

@@ -149,6 +149,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Combina con:** `metabase`, `heroui`
 **Alternativas (elige una):** `d3`, `chart-js`, `recharts`
 
+## `gods-eye-view`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=osint,app,javascript
+
+**Qué es:** Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador.
+**Stack:** JavaScript, Dockerfile, compose.yaml, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/bilawalsidhu/gods-eye-view
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/bilawalsidhu/gods-eye-view/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
 ## `gradio`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,python
 
@@ -234,6 +254,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** necesitas analítica de eventos por usuario (posthog)
 **Combina con:** `posthog`, `echarts`
 **Alternativas (elige una):** `superset`, `redash`
+
+## `odm`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=geoespacial,app,python
+
+**Qué es:** Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación.
+**Stack:** Python, Dockerfile
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/OpenDroneMap/ODM
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/OpenDroneMap/ODM/blob/master/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `osiris`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=osint,typescript
@@ -467,6 +507,27 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** priorizas velocidad y peso del bundle
 **Evita si:** necesitas tipos de gráfico variados (echarts)
 **Combina con:** `swr`
+
+## `webodm`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=geoespacial,server,python
+
+**Qué es:** Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap.
+**Stack:** Python, Dockerfile, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/WebODM/WebODM
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/WebODM/WebODM/blob/master/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+**Combina con:** `odm`
 
 ## `wrenai`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=openai,local · tags=analytics,data,agents,python

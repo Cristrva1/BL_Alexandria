@@ -277,6 +277,27 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** solo necesitas un escáner estático; mira `semgrep`
 **Combina con:** `claude-code`, `semgrep`
 
+## `dsh-qa`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=calidad,plugin,javascript
+
+**Qué es:** Plugin de DeepSeek Harness para explorar aplicaciones, guardar evidencia y preparar recorridos de pruebas reproducibles.
+**Stack:** JavaScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Otras rutas: Plugin para DeepSeek Harness (DSH). La cuenta, API o modelo se configura en ese anfitrión; no se declara instalación nativa en Claude Code o Codex.
+**Repo:** https://github.com/ZSeven-W/dsh-qa
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/ZSeven-W/dsh-qa/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Plugin de DeepSeek Harness para explorar aplicaciones, guardar evidencia y preparar recorridos de pruebas reproducibles.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
 ## `duckdb`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=data,analytics,cpp
 
@@ -298,6 +319,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** necesitas una base transaccional multiusuario; usa PostgreSQL
 **Combina con:** `marimo`, `superset`
 **Alternativas (elige una):** `polars`
+
+## `floorplan`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=codigo,skill,javascript
+
+**Qué es:** Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto.
+**Stack:** JavaScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/haydenschmitty/floorplan
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/haydenschmitty/floorplan/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `gitnexus`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=code,typescript
@@ -403,6 +444,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
 **Elige si:** necesitas gestionar cambios y cargas incrementales en un data lake
 **Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+
+## `laya`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=modelos,model,python
+
+**Qué es:** Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados.
+**Stack:** Python, Dockerfile, compose.yaml, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/NandhaKishorM/laya
+
+**Instalación** [+]: `python -m pip install laya`
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** buscas esta función: Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `llama-factory`
 role=app · exec=local · setup=medium · mcp=False · prov=local · tags=training,python

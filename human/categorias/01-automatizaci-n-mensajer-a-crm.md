@@ -4,7 +4,7 @@
 
 Conecta aplicaciones, organiza clientes, atiende mensajes o programa procesos. Empieza por un motor de flujos; añade canales y CRM según tu objetivo.
 
-35 repos · 7 secciones
+39 repos · 7 secciones
 
 ## Puntos de partida
 
@@ -27,7 +27,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 - [WhatsApp y mensajería](#whatsapp-y-mensajería) — 8 repos
 - [Chatbots y asistentes conversacionales](#chatbots-y-asistentes-conversacionales) — 3 repos
 - [CRM, ERP y soporte al cliente](#crm-erp-y-soporte-al-cliente) — 5 repos
-- [Email, marketing y notificaciones](#email-marketing-y-notificaciones) — 3 repos
+- [Email, marketing y notificaciones](#email-marketing-y-notificaciones) — 7 repos
 - [Apps internas y bases de datos no-code](#apps-internas-y-bases-de-datos-no-code) — 4 repos
 
 ## Motores de workflow y automatización
@@ -88,8 +88,12 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [novu](../fichas/novu.md) | Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend. | envías notificaciones por varios canales y quieres un único backend | Sin API de IA en la ruta básica |
+| [postiz-app](../fichas/postiz-app.md) | Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA. | buscas esta función: Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA. | API de IA opcional |
+| [open-seo](../fichas/open-seo.md) | Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio. | buscas esta función: Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio. | Sin API de IA en la ruta básica |
 | [listmonk](../fichas/listmonk.md) | Gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depender de un SaaS. | quieres email marketing simple, rápido y propio | Sin API de IA en la ruta básica |
+| [cloud-mail](../fichas/cloud-mail.md) | Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio. | buscas esta función: Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio. | Sin API de IA en la ruta básica |
 | [mautic](../fichas/mautic.md) | Plataforma open-source de marketing automation y segmentación de audiencias, alternativa soberana a suites comerciales como HubSpot o Marketo. | necesitas automatización de marketing seria y soberana | Sin API de IA en la ruta básica |
+| [sellbird](../fichas/sellbird.md) | Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes. | buscas esta función: Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes. | Sin API de IA en la ruta básica |
 
 ## Apps internas y bases de datos no-code
 

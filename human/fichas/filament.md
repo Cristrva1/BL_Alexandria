@@ -1,0 +1,85 @@
+[🏠 Inicio](../README.md) › [🖼️ Generar imágenes y trabajar con visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Creación, renderizado y animación 3D
+
+# 📚 filament
+
+> Motor de renderizado físicamente basado para integrar gráficos 3D en aplicaciones móviles, web y de escritorio.
+
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 20.7k | Apache-2.0 | C++ | 2026-11-14 |
+
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
+
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
+| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
+| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+
+Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+
+## Qué puedes hacer con él
+
+Motor de renderizado físicamente basado para integrar gráficos 3D en aplicaciones móviles, web y de escritorio.
+
+## Cómo funciona
+
+Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.
+
+## Cómo empezar
+
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
+
+1. Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.
+2. Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.
+3. Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación.
+
+[Instrucciones originales de instalación](https://github.com/google/filament/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar filament para mi objetivo y necesito pasos guiados. Lee https://github.com/google/filament/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Casos de uso
+
+- Motor de renderizado físicamente basado para integrar gráficos 3D en aplicaciones móviles, web y de escritorio.
+
+## ¿Es para ti?
+
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| buscas esta función: Motor de renderizado físicamente basado para integrar gráficos 3D en aplicaciones móviles, web y de escritorio. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+
+**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+
+## Stack y modelos
+
+- **Stack:** C++, CMakeLists.txt
+- **Etiquetas:** `creacion-3d` `library` `c`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Enlaces
+
+- 🐙 GitHub: [google/filament](https://github.com/google/filament)
+- 🌐 Web: <https://google.github.io/filament/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/google/filament/blob/main/README.md)
+
+---
+
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

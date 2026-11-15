@@ -214,6 +214,27 @@ _Una referencia no se instala como un servicio único._
 **Elige si:** quieres aprender el flujo de dominios y DNS con sus recursos de referencia
 **Evita si:** una conexión directa cubre el caso sin añadir infraestructura
 
+## `ghidramcp`
+role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=servidores,mcp,java
+
+**Qué es:** Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios.
+**Stack:** Java, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. El servidor aporta herramientas a un cliente MCP; el cliente aporta el modelo. Revisar los servicios que usa cada herramienta.
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo del agente que ya utilizas. El modelo se consume en el cliente MCP. Programas, licencias y servicios conectados pueden tener requisitos y tarifas independientes.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/LaurieWired/GhidraMCP
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/LaurieWired/GhidraMCP/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+**Combina con:** `ghidra`
+
 ## `github-mcp-server`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=mcp · tags=mcp,code,go
 
@@ -512,3 +533,44 @@ _Una referencia no se instala como un servicio único._
 **Elige si:** quieres ejemplos canónicos y plantillas fiables
 **Evita si:** buscas soluciones listas para producción (son demos educativas, no hardening)
 **Combina con:** `mcp-use`, `awesome-mcp-servers`
+
+## `treg`
+role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=servidores,mcp,python
+
+**Qué es:** Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores.
+**Stack:** Python, package.json, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función principal conecta servicios externos; sus claves no equivalen necesariamente a una API de un modelo de lenguaje.
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. Las herramientas del registro pueden consumir saldo o cuentas de servicios. El modelo se usa en el cliente MCP; verifica ambos costes por separado.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/superdesigndev/treg
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/superdesigndev/treg/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
+## `unity-mcp`
+role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=servidores,mcp,c
+
+**Qué es:** Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity.
+**Stack:** C#, docker-compose.yml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. El servidor aporta herramientas a un cliente MCP; el cliente aporta el modelo. Revisar los servicios que usa cada herramienta.
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo del agente que ya utilizas. El modelo se consume en el cliente MCP. Programas, licencias y servicios conectados pueden tener requisitos y tarifas independientes.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/CoplayDev/unity-mcp
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/CoplayDev/unity-mcp/blob/beta/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+**Combina con:** `blender`

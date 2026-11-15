@@ -24,6 +24,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** el formato de salida no encaja con tus documentos
 **Combina con:** `codex`
 
+## `diagram-design`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=diagramas,skill,html
+
+**Qué es:** Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad.
+**Stack:** HTML
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/cathrynlavery/diagram-design
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/cathrynlavery/diagram-design/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
 ## `docling`
 role=library · exec=local · setup=easy · mcp=True · prov=— · tags=docs,pdf,ocr,python
 
@@ -46,6 +66,26 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Combina con:** `llama-index`, `ragflow`, `qdrant`
 **Alternativas (elige una):** `marker`, `mineru`, `unstructured`, `olmocr`
 
+## `docuseal`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=pdf,server,ruby
+
+**Qué es:** Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio.
+**Stack:** Ruby, Dockerfile, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/docusealco/docuseal
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/docusealco/docuseal/blob/master/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
 ## `marker`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,pdf,python
 
@@ -66,7 +106,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Elige si:** conviertes PDFs largos con fórmulas
 **Evita si:** necesitas uso comercial sin licencia; revisa su licencia
 **Combina con:** `llama-index`
-**Alternativas (elige una):** `docling`, `mineru`
+**Alternativas (elige una):** `docling`, `mineru`, `pdf-craft`
 
 ## `markitdown`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,python
@@ -239,6 +279,48 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** necesitas convertir entre formatos de texto
 **Evita si:** necesitas extraer estructura de PDFs escaneados; mira `docling`
 **Combina con:** `markitdown`
+
+## `paperless-ngx`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=gestion,server,python
+
+**Qué es:** Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados.
+**Stack:** Python, Dockerfile, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/paperless-ngx/paperless-ngx
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/paperless-ngx/paperless-ngx/blob/dev/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
+## `pdf-craft`
+role=library · exec=hybrid · setup=medium · mcp=False · prov=local · tags=ocr,library,python
+
+**Qué es:** Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/oomol-lab/pdf-craft
+
+**Instalación** [+]: `python -m pip install pdf-craft`
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** buscas esta función: Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Combina con:** `unlimited-ocr`
+**Alternativas (elige una):** `marker`
 
 ## `pdf-inspector`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,docs,rust

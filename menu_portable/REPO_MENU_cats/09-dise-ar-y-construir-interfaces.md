@@ -3,6 +3,67 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `3dviz-pro-max`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,javascript
+
+**Qué es:** Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código.
+**Stack:** JavaScript
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/viettranx/3dviz-pro-max
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/viettranx/3dviz-pro-max/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+**Alternativas (elige una):** `threejs-skills`
+
+## `ai-website-cloner-template`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ia-ui,template,typescript
+
+**Qué es:** Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz.
+**Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/JCodesMore/ai-website-cloner-template
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/JCodesMore/ai-website-cloner-template/blob/master/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
+## `anatomy`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,javascript
+
+**Qué es:** Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales.
+**Stack:** JavaScript
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/wheresryan22/anatomy
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/wheresryan22/anatomy/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
 ## `animejs`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,javascript
 
@@ -112,6 +173,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Combina con:** `tailwindcss`
 **Alternativas (elige una):** `ui`
 
+## `design-dna`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,javascript
+
+**Qué es:** Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo coherente.
+**Stack:** JavaScript
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/zanwei/design-dna
+
+**Instalación** [+]: `npx skills add zanwei/design-dna`
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** buscas esta función: Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo coherente.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
 ## `design.md`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design,typescript
 
@@ -132,6 +213,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** quieres consistencia de marca con IA y usas agentes para UI
 **Evita si:** no usas agentes para generar código de UI
 **Combina con:** `impeccable`
+
+## `dream-loop`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,javascript
+
+**Qué es:** Skill que combina Blender, generación de imágenes y revisión por un agente para preparar visuales tridimensionales.
+**Stack:** JavaScript
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función. La generación externa de imágenes, clips, música o voces es una configuración distinta: el plan del agente no incluye automáticamente esas generaciones.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/achimala/dream-loop
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/achimala/dream-loop/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skill que combina Blender, generación de imágenes y revisión por un agente para preparar visuales tridimensionales.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `excalidraw`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=design,docs,typescript
@@ -154,6 +255,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** prefieres diagramas como texto; mira `mermaid`
 **Alternativas (elige una):** `tldraw`, `mermaid`
 
+## `flexoki`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=estilos,reference,css
+
+**Qué es:** Paleta de color para texto, código e interfaces que puede servir de referencia al definir un sistema visual.
+**Stack:** CSS
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/kepano/flexoki
+
+**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** buscas esta función: Paleta de color para texto, código e interfaces que puede servir de referencia al definir un sistema visual.
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+
 ## `front-end-checklist`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=skills,ai-agent,ai-agents,checklist,css,front-end-developer-tool,front-end-development,frontend
 
@@ -173,6 +294,26 @@ _Una referencia no se instala como un servicio único._
 
 **Elige si:** quieres una lista de revisión de interfaz y entrega web
 **Evita si:** tu interfaz ya cubre el mismo propósito con una herramienta equivalente
+
+## `genjutsu`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,python
+
+**Qué es:** Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/AThevon/genjutsu
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/AThevon/genjutsu/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `gsap`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ui,design,javascript
@@ -195,6 +336,46 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Evita si:** te basta animar componentes React con API declarativa (motion)
 **Combina con:** `motion`
 **Alternativas (elige una):** `animejs`
+
+## `gsap-skills`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,reference
+
+**Qué es:** Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP.
+**Stack:** —
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/greensock/gsap-skills
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/greensock/gsap-skills/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
+## `hallmark`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,css
+
+**Qué es:** Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes.
+**Stack:** CSS, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Nutlope/hallmark
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/Nutlope/hallmark/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `heroui`
 role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,typescript
@@ -239,6 +420,66 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Evita si:** no generas UI con agentes
 **Combina con:** `taste-skill`, `ui-ux-pro-max-skill`
 
+## `json-render`
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=ia-ui,library,typescript
+
+**Qué es:** Framework para generar interfaces desde una representación JSON y un catálogo de componentes definido por el desarrollador.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: API de IA opcional. La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/vercel-labs/json-render
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/vercel-labs/json-render/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Framework para generar interfaces desde una representación JSON y un catálogo de componentes definido por el desarrollador.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
+## `konva`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=componentes,library,typescript
+
+**Qué es:** Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivos.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/konvajs/konva
+
+**Instalación** [+]: `npm install konva`
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** buscas esta función: Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivos.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
+## `logo-design-skill`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,html
+
+**Qué es:** Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño.
+**Stack:** HTML
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/kaankiziltug/logo-design-skill
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/kaankiziltug/logo-design-skill/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
 ## `lucide`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,typescript
 
@@ -282,6 +523,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Combina con:** `tailwindcss`, `motion`
 **Alternativas (elige una):** `react-bits`
 
+## `modern-web-guidance`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,reference
+
+**Qué es:** Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web.
+**Stack:** package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/GoogleChrome/modern-web-guidance
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/GoogleChrome/modern-web-guidance/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
 ## `motion`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,typescript
 
@@ -303,6 +564,26 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Evita si:** necesitas timelines complejos no ligados a React (GSAP)
 **Combina con:** `magicui`, `react-three-fiber`
 **Alternativas (elige una):** `animejs`
+
+## `motion-design-skill`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,reference
+
+**Qué es:** Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces.
+**Stack:** —
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/LottieFiles/motion-design-skill
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/LottieFiles/motion-design-skill/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `mui`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,react,javascript
@@ -434,6 +715,46 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** necesitas generación por IA (open-design) o no quieres operar Docker
 **Combina con:** `plasmic`
 
+## `pixelfx`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,javascript
+
+**Qué es:** Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios.
+**Stack:** JavaScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/patch-gg/pixelfx
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/patch-gg/pixelfx/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
+## `planck-js`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,typescript
+
+**Qué es:** Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/piqnt/planck.js
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/piqnt/planck.js/blob/master/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
 ## `plasmic`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=design,typescript
 
@@ -518,6 +839,66 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** haces 3D en React y quieres reactividad
 **Evita si:** no usas React o necesitas control a bajo nivel (three.js directo)
 **Combina con:** `motion`
+
+## `react-three-rapier`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,typescript
+
+**Qué es:** Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/pmndrs/react-three-rapier
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/pmndrs/react-three-rapier/blob/main/readme.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
+## `regl`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,javascript
+
+**Qué es:** Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar gráficos acelerados en una aplicación web.
+**Stack:** JavaScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/regl-project/regl
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/regl-project/regl/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar gráficos acelerados en una aplicación web.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
+## `scenejs`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,typescript
+
+**Qué es:** Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/daybrush/scenejs
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/daybrush/scenejs/blob/master/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
 
 ## `screenshot-to-code`
 role=app · exec=cloud · setup=easy · mcp=False · prov=openai,anthropic,google · tags=ui,vision,code,python
@@ -689,6 +1070,47 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** trabajas solo 2D o prefieres la ergonomía de React (react-three-fiber)
 **Combina con:** `react-three-fiber`, `gsap`
 
+## `threejs-game-skills`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,python
+
+**Qué es:** Skills para que un agente construya juegos de navegador con Three.js, interfaz y recursos visuales o sonoros opcionales.
+**Stack:** Python, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función. La generación externa de imágenes, clips, música o voces es una configuración distinta: el plan del agente no incluye automáticamente esas generaciones.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/majidmanzarpour/threejs-game-skills
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/majidmanzarpour/threejs-game-skills/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skills para que un agente construya juegos de navegador con Three.js, interfaz y recursos visuales o sonoros opcionales.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
+## `threejs-skills`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=skills,skill,reference
+
+**Qué es:** Colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js.
+**Stack:** —
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/CloudAI-X/threejs-skills
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/CloudAI-X/threejs-skills/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+**Alternativas (elige una):** `3dviz-pro-max`
+
 ## `tldraw`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=design,ui,react,typescript
 
@@ -732,6 +1154,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Combina con:** `tailwindcss`, `plasmic`
 **Alternativas (elige una):** `mui`, `ant-design`, `daisyui`
 
+## `ui-sdk`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ia-ui,library,typescript
+
+**Qué es:** Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/vercel-labs/ui
+
+**Instalación** [+]: `npm install @ui-sdk/react @ui-sdk/core`
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** buscas esta función: Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
 ## `ui-ux-pro-max-skill`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design,python
 
@@ -752,3 +1194,43 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** generas UI con IA y el resultado se ve genérico o despulido
 **Evita si:** no trabajas frontend o ya tienes un sistema de diseño impuesto
 **Combina con:** `taste-skill`, `impeccable`, `tailwindcss`
+
+## `webgl-noise`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,c
+
+**Qué es:** Rutinas de ruido procedural para shaders de WebGL, útiles para crear texturas y efectos visuales en tiempo real.
+**Stack:** C++
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/ashima/webgl-noise
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/ashima/webgl-noise/blob/master/README`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Rutinas de ruido procedural para shaders de WebGL, útiles para crear texturas y efectos visuales en tiempo real.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
+## `zdog`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=animacion,library,javascript
+
+**Qué es:** Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG.
+**Stack:** JavaScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/metafizzy/zdog
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/metafizzy/zdog/blob/master/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código

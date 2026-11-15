@@ -4,7 +4,7 @@
 
 Transcribe, sintetiza voz, edita o genera video. El montaje local y la generación mediante un proveedor son rutas con requisitos diferentes.
 
-50 repos · 7 secciones
+69 repos · 7 secciones
 
 ## Puntos de partida
 
@@ -26,11 +26,11 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Transcripción (voz a texto)](#transcripción-voz-a-texto) — 5 repos
-- [Síntesis y clonación de voz](#síntesis-y-clonación-de-voz) — 14 repos
-- [Agentes de voz en tiempo real](#agentes-de-voz-en-tiempo-real) — 2 repos
-- [Edición, grabación y subtítulos](#edición-grabación-y-subtítulos) — 9 repos
-- [Video programático y con agentes](#video-programático-y-con-agentes) — 10 repos
-- [Video generativo y pipelines automáticos](#video-generativo-y-pipelines-automáticos) — 7 repos
+- [Síntesis y clonación de voz](#síntesis-y-clonación-de-voz) — 15 repos
+- [Agentes de voz en tiempo real](#agentes-de-voz-en-tiempo-real) — 3 repos
+- [Edición, grabación y subtítulos](#edición-grabación-y-subtítulos) — 16 repos
+- [Video programático y con agentes](#video-programático-y-con-agentes) — 19 repos
+- [Video generativo y pipelines automáticos](#video-generativo-y-pipelines-automáticos) — 8 repos
 - [Música y audio generativo](#música-y-audio-generativo) — 3 repos
 
 ## Transcripción (voz a texto)
@@ -60,6 +60,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [CosyVoice](../fichas/cosyvoice.md) | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. | necesitas TTS multilingüe en streaming | Sin API de IA en la ruta básica |
 | [supertonic](../fichas/supertonic.md) | Motor de texto a voz que ofrece modelos y ejemplos para sintetizar audio en dispositivos y navegadores compatibles. | quieres voz local en tiempo real y sin nube | Sin API de IA en la ruta básica |
 | [edge-tts](../fichas/edge-tts.md) | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | quieres generar narración sin instalar un modelo de voz local | Sin API de IA en la ruta básica |
+| [MeloTTS](../fichas/melotts.md) | Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles. | buscas esta función: Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles. | Sin API de IA en la ruta básica |
 | [LuxTTS](../fichas/luxtts.md) | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. | necesitas TTS con clonación muy rápido | Sin API de IA en la ruta básica |
 
 ## Agentes de voz en tiempo real
@@ -68,6 +69,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [Pipecat](../fichas/pipecat.md) | Framework open source para agentes de voz y apps multimodales en tiempo real. | construyes un agente de voz en Python | Depende de la ruta elegida |
 | [LiveKit Agents](../fichas/livekit-agents.md) | Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit. | necesitas agentes de voz escalables con WebRTC | Depende de la ruta elegida |
+| [dograh](../fichas/dograh.md) | Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables. | buscas esta función: Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables. | API de IA opcional |
 
 ## Edición, grabación y subtítulos
 
@@ -80,8 +82,15 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [LosslessCut](../fichas/lossless-cut.md) | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. | necesitas recortar o unir material rápido y sin recomprimir, con interfaz gráfica | Sin API de IA en la ruta básica |
 | [OpenScreen](../fichas/openscreen.md) | App de escritorio para grabar demos de producto con zoom automático, webcam y subtítulos, alternativa libre a Screen Studio. | quieres demos de pantalla pulidas con zoom automático sin pagar Screen Studio | Sin API de IA en la ruta básica |
 | [VideoLingo](../fichas/videolingo.md) | App que subtitula, traduce y dobla videos de forma automática: ASR con timestamps por palabra, traducción con LLM y TTS. | quieres subtitular, traducir o doblar videos de punta a punta con una interfaz y sin programar | Depende de la ruta elegida |
+| [Concat](../fichas/concat.md) | Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP. | buscas esta función: Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP. | Sin API de IA en la ruta básica |
 | [palmier-pro](../fichas/palmier-pro.md) | Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales. | usas macOS y quieres explorar edición de video asistida por agentes | Depende de la ruta elegida |
+| [mediabunny](../fichas/mediabunny.md) | Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video directamente en aplicaciones web. | buscas esta función: Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video directamente en aplicaciones web. | Sin API de IA en la ruta básica |
+| [rnnoise](../fichas/rnnoise.md) | Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente. | buscas esta función: Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente. | Sin API de IA en la ruta básica |
+| [earshot](../fichas/earshot.md) | Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP. | buscas esta función: Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP. | API de IA opcional |
 | [DaVinci Resolve MCP](../fichas/davinci-resolve-mcp.md) | Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render. | editas en DaVinci Resolve y quieres que un agente MCP automatice montaje, render o metadatos | Sin API de IA en la ruta básica |
+| [pencil](../fichas/pencil.md) | Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo. | buscas esta función: Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo. | Sin API de IA en la ruta básica |
+| [rubberband](../fichas/rubberband.md) | Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas. | buscas esta función: Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas. | Sin API de IA en la ruta básica |
+| [OpenRV](../fichas/openrv.md) | Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual. | buscas esta función: Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual. | Sin API de IA en la ruta básica |
 
 ## Video programático y con agentes
 
@@ -94,7 +103,16 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [remotion](../fichas/remotion.md) | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. | generas video a escala con React y quieres variantes parametrizadas | Sin API de IA en la ruta básica |
 | [manim](../fichas/manim-community.md) | Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. | necesitas animaciones matemáticas precisas y reproducibles | Sin API de IA en la ruta básica |
 | [video-use](../fichas/video-use.md) | Herramienta para editar videos con agentes de código como Claude Code, de los creadores de browser-use. | quieres editar videos pidiéndoselo a tu agente | Sin API de IA en la ruta básica |
+| [brag](../fichas/brag.md) | Skills para que un agente convierta un proyecto o sitio en un video breve de lanzamiento con composición y música. | buscas esta función: Skills para que un agente convierta un proyecto o sitio en un video breve de lanzamiento con composición y música. | Sin API de IA en la ruta básica |
+| [video-shotcraft](../fichas/video-shotcraft.md) | Skill para crear videos de producto editables con Remotion, composición de planos, movimiento y trabajo de sonido. | buscas esta función: Skill para crear videos de producto editables con Remotion, composición de planos, movimiento y trabajo de sonido. | Sin API de IA en la ruta básica |
+| [lemo-opuscar](../fichas/lemo-opuscar.md) | Colección de estilos e instrucciones para crear piezas audiovisuales por código con Claude Code. | buscas esta función: Colección de estilos e instrucciones para crear piezas audiovisuales por código con Claude Code. | Sin API de IA en la ruta básica |
 | [rea-video](../fichas/rea-video.md) | Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md. | quieres estudiar o recrear la estructura de un video de referencia | Sin API de IA en la ruta básica |
+| [openfilm](../fichas/openfilm.md) | Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos. | buscas esta función: Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos. | Sin API de IA en la ruta básica |
+| [srt-whiteboard-animation](../fichas/srt-whiteboard-animation.md) | Skill para crear animaciones de pizarra con trazos y contenido organizados a partir de archivos de subtítulos SRT. | buscas esta función: Skill para crear animaciones de pizarra con trazos y contenido organizados a partir de archivos de subtítulos SRT. | Sin API de IA en la ruta básica |
+| [claude-animated-shorts](../fichas/claude-animated-shorts.md) | Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion. | buscas esta función: Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion. | Sin API de IA en la ruta básica |
+| [huashu-motion](../fichas/huashu-motion.md) | Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión visual. | buscas esta función: Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión visual. | Sin API de IA en la ruta básica |
+| [Papermorph](../fichas/papermorph.md) | Skill que convierte libros en experiencias web animadas y narradas, con distintas rutas de voz y recursos visuales. | buscas esta función: Skill que convierte libros en experiencias web animadas y narradas, con distintas rutas de voz y recursos visuales. | Sin API de IA en la ruta básica |
+| [motionmaxxing](../fichas/motionmaxxing.md) | Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código. | buscas esta función: Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código. | Sin API de IA en la ruta básica |
 | [videofy_minimal](../fichas/videofy-minimal.md) | Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión. | quieres reels simples ya, sin montar un pipeline entero | API de IA necesaria |
 | [Remotion Superpowers](../fichas/remotion-superpowers.md) | Plugin que convierte Remotion en un estudio de video para Claude Code, Codex o Gemini CLI. | usas Remotion con un agente y quieres producción completa | Sin API de IA en la ruta básica |
 
@@ -104,6 +122,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md) | App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso. | quieres producir videos cortos narrados a partir de un tema sin editar a mano | Depende de la ruta elegida |
 | [Wan2.2](../fichas/wan2-2.md) | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. | quieres el modelo de video abierto de referencia, con licencia permisiva, y tienes una GPU de 24 GB o más | Sin API de IA en la ruta básica |
+| [hypit](../fichas/hypit.md) | Skills para agentes que organizan generación y edición de videos mediante modelos, servicios y recursos configurables. | buscas esta función: Skills para agentes que organizan generación y edición de videos mediante modelos, servicios y recursos configurables. | API de IA opcional |
 | [HunyuanVideo](../fichas/hunyuanvideo.md) | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. | tienes una GPU de 60-80 GB o varias GPU y quieres un modelo de texto a video abierto de alta calidad | Sin API de IA en la ruta básica |
 | [WanGP](../fichas/wan2gp.md) | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas. | quieres generar video e imagen con modelos abiertos en una GPU de consumo sin montar flujos a mano | Sin API de IA en la ruta básica |
 | [LTX-Video](../fichas/ltx-video.md) | Modelos abiertos de Lightricks (v0.9.x) para generar video desde texto o imagen, rápidos en GPU de consumo; hoy en modo legado. | necesitas reproducir resultados o mantener flujos existentes con los modelos LTX-Video v0.9.x | Sin API de IA en la ruta básica |

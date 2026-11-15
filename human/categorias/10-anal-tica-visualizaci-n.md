@@ -4,7 +4,7 @@
 
 Herramientas para explorar datos, crear gráficos, medir productos y visualizar fuentes abiertas. El chat con datos sí puede añadir un modelo; un gráfico convencional no lo necesita.
 
-23 repos · 6 secciones
+26 repos · 7 secciones
 
 ## Puntos de partida
 
@@ -25,7 +25,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 - [Librerías de gráficos](#librerías-de-gráficos) — 5 repos
 - [Apps de datos en Python](#apps-de-datos-en-python) — 3 repos
 - [Recursos y casos de uso](#recursos-y-casos-de-uso) — 3 repos
-- [Inteligencia de fuentes abiertas y mapas](#inteligencia-de-fuentes-abiertas-y-mapas) — 2 repos
+- [Inteligencia de fuentes abiertas y mapas](#inteligencia-de-fuentes-abiertas-y-mapas) — 3 repos
+- [Fotogrametría y mapas desde imágenes](#fotogrametría-y-mapas-desde-imágenes) — 2 repos
 
 ## Analítica web y de producto
 
@@ -77,8 +78,16 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
+| [gods-eye-view](../fichas/gods-eye-view.md) | Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador. | buscas esta función: Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador. | Sin API de IA en la ruta básica |
 | [osiris](../fichas/osiris.md) | Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales. | quieres visualizar varias fuentes de actualidad en un mapa | Sin API de IA en la ruta básica |
 | [Pythia](../fichas/pythia.md) | Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. | quieres explorar fuentes OSINT y escenarios desde un panel local | Sin API de IA en la ruta básica |
+
+## Fotogrametría y mapas desde imágenes
+
+| Repo | Para qué sirve | Elígelo si… | API de IA |
+|---|---|---|---|
+| [ODM](../fichas/odm.md) | Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación. | buscas esta función: Herramientas para convertir fotografías aéreas en mapas, nubes de puntos, modelos 3D y modelos de elevación. | Sin API de IA en la ruta básica |
+| [WebODM](../fichas/webodm.md) | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. | buscas esta función: Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. | Sin API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

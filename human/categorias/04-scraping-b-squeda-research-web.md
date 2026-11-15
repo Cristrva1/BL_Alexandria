@@ -4,7 +4,7 @@
 
 Buscadores, crawlers y navegadores. Usa un crawler para extraer páginas, un navegador para interactuar y un agente para investigar con un modelo.
 
-34 repos · 5 secciones
+35 repos · 5 secciones
 
 ## Puntos de partida
 
@@ -20,7 +20,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Crawlers y extracción para IA](#crawlers-y-extracción-para-ia) — 10 repos
+- [Crawlers y extracción para IA](#crawlers-y-extracción-para-ia) — 11 repos
 - [Scraping guiado por LLM](#scraping-guiado-por-llm) — 3 repos
 - [Navegadores y automatización web](#navegadores-y-automatización-web) — 12 repos
 - [Búsqueda, monitoreo y research web](#búsqueda-monitoreo-y-research-web) — 6 repos
@@ -36,6 +36,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [scrapy](../fichas/scrapy.md) | Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. | quieres un crawler sólido y configurable a escala | Sin API de IA en la ruta básica |
 | [crawlee](../fichas/crawlee.md) | Framework moderno de crawling para Node.js con antibloqueo integrado, que unifica scraping de HTTP y de navegador bajo una misma API con colas y reintentos. | scrapeas con Node y necesitas antibloqueo | Sin API de IA en la ruta básica |
 | [Jina Reader](../fichas/jina-reader.md) | Servicio que convierte cualquier URL en Markdown listo para LLM con solo anteponer r.jina.ai. | necesitas leer páginas como Markdown al instante | Depende de la ruta elegida |
+| [defuddle](../fichas/defuddle.md) | Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable. | buscas esta función: Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable. | Sin API de IA en la ruta básica |
 | [crawlee-python](../fichas/crawlee-python.md) | Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. | quieres Crawlee en Python con antibloqueo | Sin API de IA en la ruta básica |
 | [awesome-web-scraping](../fichas/awesome-web-scraping.md) | Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos. | quieres comparar librerías de scraping antes de elegir tu stack | Sin API de IA en la ruta básica |
 | [scrapydweb](../fichas/scrapydweb.md) | Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy. | operas varios spiders de Scrapy y necesitas un panel de administración | Sin API de IA en la ruta básica |

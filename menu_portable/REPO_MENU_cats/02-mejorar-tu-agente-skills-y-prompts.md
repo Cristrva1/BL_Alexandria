@@ -384,6 +384,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** usas Claude Code u otro agente; mira `claude-plugins-official` o `antigravity-awesome-skills`
 **Combina con:** `github-mcp-server`, `spec-kit`, `cli`
 
+## `awesome-harness-engineering`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=guias,reference,python
+
+**Qué es:** Directorio de herramientas y patrones para diseñar el entorno, memoria, evaluación y permisos de agentes de IA.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/ai-boost/awesome-harness-engineering
+
+**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** buscas esta función: Directorio de herramientas y patrones para diseñar el entorno, memoria, evaluación y permisos de agentes de IA.
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+
 ## `awesome-llm-apps`
 role=directory · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google,local · tags=agents,rag,learning,python
 
@@ -428,6 +448,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Combina con:** `claude-code`, `codex`
 **Alternativas (elige una):** `spec-kit`
 
+## `book-to-skill`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=metodologia,skill,python
+
+**Qué es:** Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trabajo.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/virgiliojr94/book-to-skill
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/virgiliojr94/book-to-skill/blob/master/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trabajo.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
 ## `chatgpt-dan`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=prompts,chatgpt,gpt-3-5,gpt-4,jailbreak,openai,prompt
 
@@ -467,6 +507,26 @@ _Una referencia no se instala como un servicio único._
 
 **Elige si:** quieres comparar patrones de prompts como material de investigación
 **Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+
+## `claude-code-hooks-mastery`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=metodologia,reference,python
+
+**Qué es:** Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/disler/claude-code-hooks-mastery
+
+**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** buscas esta función: Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo.
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
 
 ## `claude-cookbooks`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=anthropic · tags=learning,notebooks,rag,python
@@ -531,6 +591,26 @@ _Una referencia no se instala como un servicio único._
 
 **Elige si:** quieres partir de un ejemplo oficial al integrar la API de Claude
 **Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+
+## `claude-seo`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,python
+
+**Qué es:** Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/AgriciDaniel/claude-seo
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/AgriciDaniel/claude-seo/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `claude-token-efficient`
 role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=metodologia,python · tools=claude-code
@@ -613,6 +693,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** ejecutas agentes con acceso real a tu máquina y necesitas contención
 **Evita si:** solo haces prompts de chat sin ejecución de código
 **Combina con:** `openhands`, `sandbox`, `hermes-agent`
+
+## `elephant-goldfish-model`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=metodologia,skill,python
+
+**Qué es:** Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complementarias.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/google/elephant-goldfish-model
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/google/elephant-goldfish-model/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complementarias.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `fabric`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,local · tags=prompts,automation,go
@@ -720,6 +820,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** solo haces SEO clásico o no usas Claude Code; mira `marketingskills`
 **Combina con:** `marketingskills`, `agency-agents`, `playwright`
 
+## `google-skills`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=catalogos,skill,python
+
+**Qué es:** Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatibles.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/google/skills
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/google/skills/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatibles.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
 ## `grok-plugin-claude-code`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=xai · tags=metodologia,ai-agents,claude-code,grok,grok-cli,plugin,xai,javascript · tools=claude-code
 
@@ -739,6 +859,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
 **Elige si:** usas Claude Code y quieres consultar Grok dentro de ese flujo
 **Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+
+## `gstack`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=metodologia,skill,typescript
+
+**Qué es:** Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/garrytan/gstack
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/garrytan/gstack/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `humanizer`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=skills,prompts,docs
@@ -761,6 +901,66 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** quieres reglas de estilo cortas para pegar en un system prompt, con rúbrica propia; mira `stop-slop`
 **Combina con:** `marketingskills`, `claude-code`, `codex`
 **Alternativas (elige una):** `stop-slop`
+
+## `i-have-adhd`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=escritura,skill,python
+
+**Qué es:** Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos.
+**Stack:** Python, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/ayghri/i-have-adhd
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/ayghri/i-have-adhd/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
+## `instagram-agent-skill`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,python
+
+**Qué es:** Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Jakeschincariol/instagram-agent-skill
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/Jakeschincariol/instagram-agent-skill/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
+## `linkedin-agent-skill`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,python
+
+**Qué es:** Skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Jakeschincariol/linkedin-agent-skill
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/Jakeschincariol/linkedin-agent-skill/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `loop-engineering`
 role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=coding-agent,skills,typescript
@@ -804,6 +1004,66 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Evita si:** necesitas una herramienta que envíe campañas o mida resultados; mira `mautic`, `listmonk` o `posthog`
 **Combina con:** `agency-agents`, `geo-seo-claude`, `mautic`, `posthog`
 
+## `minimalist-entrepreneur-skills`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,reference
+
+**Qué es:** Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con un agente.
+**Stack:** —
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/slavingia/skills
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/slavingia/skills/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con un agente.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
+## `mvanhorn`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=guias,reference
+
+**Qué es:** Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo.
+**Stack:** —
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/mvanhorn/mvanhorn
+
+**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** buscas esta función: Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo.
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+
+## `no-ai-slop`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=escritura,skill,python
+
+**Qué es:** Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/petergyang/no-ai-slop
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/petergyang/no-ai-slop/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
 ## `openai-cookbook`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=learning,notebooks,python
 
@@ -825,6 +1085,26 @@ _Una referencia no se instala como un servicio único._
 **Evita si:** usas Claude como modelo principal; mira `claude-cookbooks`
 **Combina con:** `openai-python`, `openai-agents-python`
 **Alternativas (elige una):** `claude-cookbooks`, `awesome-llm-apps`
+
+## `plugins`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=catalogos,reference,typescript
+
+**Qué es:** Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente.
+**Stack:** TypeScript
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/cursor/plugins
+
+**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** buscas esta función: Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente.
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
 
 ## `ponytail`
 role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=skills,coding-agent
@@ -932,6 +1212,26 @@ _Una referencia no se instala como un servicio único._
 **Elige si:** buscas prompts listos para copiar
 **Evita si:** quieres ejecutarlos como comandos encadenables; mira `fabric`
 **Alternativas (elige una):** `fabric`
+
+## `scientific-agent-skills`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=dominio,skill,python
+
+**Qué es:** Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/K-Dense-AI/scientific-agent-skills
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `security-audit-skill`
 role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=metodologia,javascript

@@ -4,7 +4,7 @@
 
 Motores de modelos, clientes de chat y espacios de trabajo. Instalar una interfaz local no garantiza que el modelo sea local: comprueba su backend.
 
-25 repos · 4 secciones
+28 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -20,7 +20,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Motores para correr modelos en local](#motores-para-correr-modelos-en-local) — 7 repos
+- [Motores para correr modelos en local](#motores-para-correr-modelos-en-local) — 10 repos
 - [Interfaces de chat auto-hospedadas](#interfaces-de-chat-auto-hospedadas) — 7 repos
 - [Workspaces privados y segundos cerebros](#workspaces-privados-y-segundos-cerebros) — 7 repos
 - [NotebookLM: alternativas y clientes](#notebooklm-alternativas-y-clientes) — 4 repos
@@ -33,9 +33,12 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [llama.cpp](../fichas/llama-cpp.md) | Motor de inferencia en C/C++ que corre LLM cuantizados en CPU y GPU de casi cualquier equipo. | quieres el máximo control y rendimiento local | Sin API de IA en la ruta básica |
 | [LocalAI](../fichas/localai.md) | Servidor de IA local compatible con la API de OpenAI para texto, imagen, voz y video, sin GPU obligatoria. | quieres una API tipo OpenAI local para varias modalidades | Sin API de IA en la ruta básica |
 | [exo](../fichas/exo.md) | Ejecuta modelos grandes repartiéndolos entre varios equipos de tu casa u oficina. | tienes varios equipos y quieres correr un modelo grande | Sin API de IA en la ruta básica |
+| [airllm](../fichas/airllm.md) | Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes. | buscas esta función: Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes. | Sin API de IA en la ruta básica |
 | [llmfit](../fichas/llmfit.md) | Herramienta para evaluar y medir el "fit" y la calidad de LLMs en una tarea concreta, orientada a comparar modelos con datos. | necesitas elegir modelo con datos y reproducibilidad | Sin API de IA en la ruta básica |
 | [llamafile](../fichas/llamafile.md) | Distribuye y ejecuta un LLM como un solo archivo ejecutable en cualquier sistema operativo. | quieres repartir un modelo que funcione con doble clic | Sin API de IA en la ruta básica |
+| [FreeToken](../fichas/freetoken.md) | Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto. | buscas esta función: Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto. | Sin API de IA en la ruta básica |
 | [transformers.js](../fichas/transformers-js.md) | Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript. | quieres ejecutar un modelo compatible dentro del navegador | Sin API de IA en la ruta básica |
+| [magnitude](../fichas/magnitude.md) | Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. | buscas esta función: Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. | Sin API de IA en la ruta básica |
 
 ## Interfaces de chat auto-hospedadas
 

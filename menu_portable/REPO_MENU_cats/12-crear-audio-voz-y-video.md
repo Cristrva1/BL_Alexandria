@@ -65,6 +65,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** necesitas uso comercial (los pesos son CC-BY-NC 4.0) o generar voz hablada; para voz mira `kokoro` o `chatterbox`
 **Combina con:** `moviepy`, `remotion`, `ffmpeg`
 
+## `brag`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,python
+
+**Qué es:** Skills para que un agente convierta un proyecto o sitio en un video breve de lanzamiento con composición y música.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/latent-spaces/brag
+
+**Instalación** [+]: `npx skills add https://github.com/latent-spaces/brag --skill brag-slim`
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** buscas esta función: Skills para que un agente convierta un proyecto o sitio en un video breve de lanzamiento con composición y música.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
 ## `chatterbox`
 role=library · exec=local · setup=easy · mcp=False · prov=local · tags=tts,audio,python
 
@@ -86,6 +106,46 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Evita si:** necesitas algo muy ligero en CPU; mira `kokoro`
 **Combina con:** `pipecat`
 **Alternativas (elige una):** `fish-speech`, `gpt-sovits`, `kokoro`, `luxtts`
+
+## `claude-animated-shorts`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,typescript
+
+**Qué es:** Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion.
+**Stack:** TypeScript
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/mromidev/claude-animated-shorts
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/mromidev/claude-animated-shorts/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
+## `concat`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=edicion,app,rust
+
+**Qué es:** Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP.
+**Stack:** Rust
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/jub0t/Concat
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/jub0t/Concat/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `cosyvoice`
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=tts,audio,python
@@ -129,6 +189,46 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** editas en DaVinci Resolve y quieres que un agente MCP automatice montaje, render o metadatos
 **Evita si:** no usas Resolve o prefieres montar video por código sin editor; mira `moviepy` o `ffmpeg`
 **Combina con:** `claude-code`, `ffmpeg`, `whisper`
+
+## `dograh`
+role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=voz-agentes,agent,python
+
+**Qué es:** Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: API de IA opcional. El inicio documentado incluye claves generadas y una pila gestionada; también permite conectar proveedores propios. No se deduce de ello que sus modelos sean locales.
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. Revisar el acceso a la pila de Dograh y los proveedores de voz, modelos y telefonía; sus tarifas no se cubren automáticamente con el plan del agente.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/dograh-hq/dograh
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/dograh-hq/dograh/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
+## `earshot`
+role=runtime · exec=hybrid · setup=medium · mcp=True · prov=local · tags=edicion,mcp,python
+
+**Qué es:** Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. La herramienta opcional llm_critique utiliza GEMINI_API_KEY; las herramientas locales de audio no implican ese consumo.
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Modelos locales: Modelos locales documentados. El análisis de audio se ejecuta con modelos locales en CPU. La crítica con LLM es una función opcional separada.
+- Coste: El coste depende del proveedor o la ruta. Los modelos de audio locales consumen CPU, memoria y disco. La crítica opcional mediante Gemini tiene el acceso y las cuotas de ese proveedor.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Leonxlnx/earshot
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/Leonxlnx/earshot/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `edge-tts`
 role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=tts,speech-synthesis,text-to-speech,python
@@ -238,6 +338,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Combina con:** `rvc`
 **Alternativas (elige una):** `chatterbox`, `fish-speech`
 
+## `huashu-motion`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript
+
+**Qué es:** Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión visual.
+**Stack:** JavaScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función. La generación externa de imágenes, clips, música o voces es una configuración distinta: el plan del agente no incluye automáticamente esas generaciones.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/alchaincyf/huashu-motion
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/alchaincyf/huashu-motion/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión visual.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
 ## `hunyuanvideo`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=video,inference,local,python
 
@@ -282,6 +402,26 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Combina con:** `claude-code`, `gsap`, `kokoro`, `whisperx`
 **Alternativas (elige una):** `remotion`, `moviepy`
 
+## `hypit`
+role=skill · exec=local · setup=medium · mcp=False · prov=local · tags=generativo,skill,typescript
+
+**Qué es:** Skills para agentes que organizan generación y edición de videos mediante modelos, servicios y recursos configurables.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: API de IA opcional. Las instrucciones se usan en el agente. El README permite configurar la generación con HypiHub, APIs propias o modelos locales; cada ruta se prepara aparte.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: Modelos locales documentados. El autor menciona modelos locales como una ruta de generación. Confirma la compatibilidad de cada etapa y los recursos necesarios.
+- Coste: El coste depende del proveedor o la ruta. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/hypit-ai/hypit
+
+**Instalación** [+]: `npx skills add hypit-ai/hypit -g`
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** buscas esta función: Skills para agentes que organizan generación y edición de videos mediante modelos, servicios y recursos configurables.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
 ## `index-tts`
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=tts,audio,python
 
@@ -324,6 +464,26 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Evita si:** necesitas clonar voces; mira `chatterbox`
 **Combina con:** `pipecat`, `whisper-cpp`
 **Alternativas (elige una):** `chatterbox`, `tts`, `luxtts`, `edge-tts`
+
+## `lemo-opuscar`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript
+
+**Qué es:** Colección de estilos e instrucciones para crear piezas audiovisuales por código con Claude Code.
+**Stack:** JavaScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/lemomo-ai/lemo-opuscar
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/lemomo-ai/lemo-opuscar/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Colección de estilos e instrucciones para crear piezas audiovisuales por código con Claude Code.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `livekit-agents`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google · tags=audio,agents,video,python
@@ -456,6 +616,46 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Combina con:** `ffmpeg`
 **Alternativas (elige una):** `manim`
 
+## `mediabunny`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=edicion,library,typescript
+
+**Qué es:** Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video directamente en aplicaciones web.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Vanilagy/mediabunny
+
+**Instalación** [+]: `npm install mediabunny`
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** buscas esta función: Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video directamente en aplicaciones web.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
+## `melotts`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=tts,model,python
+
+**Qué es:** Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles.
+**Stack:** Python, Dockerfile
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/myshell-ai/MeloTTS
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/myshell-ai/MeloTTS/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
 ## `moneyprinterturbo`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google,local · tags=video,automation,tts,python
 
@@ -477,6 +677,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** necesitas control creativo plano a plano o una identidad visual propia; mira `remotion` u `openmontage`
 **Combina con:** `ollama`, `kokoro`, `faster-whisper`
 **Alternativas (elige una):** `openmontage`, `videofy-minimal`
+
+## `motionmaxxing`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript
+
+**Qué es:** Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código.
+**Stack:** JavaScript
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Tejashmakwana/motionmaxxing
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/Tejashmakwana/motionmaxxing/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `moviepy`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,automation,python
@@ -607,6 +827,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** necesitas estabilidad o automatización hoy; para montar por código mira `moviepy` o `remotion`, y para cortes sin pérdida `lossless-cut`
 **Combina con:** `lossless-cut`, `obs-studio`, `whisperx`
 
+## `openfilm`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,typescript
+
+**Qué es:** Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/openfilm/openfilm
+
+**Instalación** [+]: `npx skills add openfilm/openfilm`
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** buscas esta función: Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
 ## `openmontage`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=video,coding-agent,skills
 
@@ -628,6 +868,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** solo necesitas editar clips; mira `video-use`
 **Combina con:** `remotion`
 **Alternativas (elige una):** `remotion-superpowers`, `moneyprinterturbo`
+
+## `openrv`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=edicion,app,c
+
+**Qué es:** Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual.
+**Stack:** C++, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/AcademySoftwareFoundation/OpenRV
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/AcademySoftwareFoundation/OpenRV/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `openscreen`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,ui,typescript
@@ -670,6 +930,46 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
 **Elige si:** usas macOS y quieres explorar edición de video asistida por agentes
 **Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+
+## `papermorph`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,javascript
+
+**Qué es:** Skill que convierte libros en experiencias web animadas y narradas, con distintas rutas de voz y recursos visuales.
+**Stack:** JavaScript
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función. La generación externa de imágenes, clips, música o voces es una configuración distinta: el plan del agente no incluye automáticamente esas generaciones.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/DozenTwelve/Papermorph
+
+**Instalación** [+]: `npx skills add DozenTwelve/Papermorph --skill papermorph --agent claude-code`
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** buscas esta función: Skill que convierte libros en experiencias web animadas y narradas, con distintas rutas de voz y recursos visuales.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
+## `pencil`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=edicion,app,c
+
+**Qué es:** Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo.
+**Stack:** C++, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/pencil2d/pencil
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/pencil2d/pencil/blob/master/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Aplicación para crear animación 2D dibujada a mano mediante herramientas de dibujo y una línea de tiempo.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `pipecat`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google · tags=audio,agents,stt,tts,python
@@ -758,6 +1058,46 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Combina con:** `remotion`, `skills-remotion`
 **Alternativas (elige una):** `openmontage`, `video-use`
 
+## `rnnoise`
+role=runtime · exec=local · setup=medium · mcp=False · prov=local · tags=edicion,model,c
+
+**Qué es:** Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente.
+**Stack:** C
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/xiph/rnnoise
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/xiph/rnnoise/blob/main/README`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
+## `rubberband`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=edicion,library,c
+
+**Qué es:** Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas.
+**Stack:** C++
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/breakfastquay/rubberband
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/breakfastquay/rubberband/blob/default/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
 ## `rvc`
 role=app · exec=local · setup=medium · mcp=False · prov=local · tags=audio,tts,python
 
@@ -819,6 +1159,26 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Elige si:** haces videos con Remotion y un agente
 **Evita si:** no usas Remotion
 **Combina con:** `remotion`, `remotion-superpowers`
+
+## `srt-whiteboard-animation`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,python
+
+**Qué es:** Skill para crear animaciones de pizarra con trazos y contenido organizados a partir de archivos de subtítulos SRT.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Integración no documentada
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/geeklee/srt-whiteboard-animation
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/geeklee/srt-whiteboard-animation/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skill para crear animaciones de pizarra con trazos y contenido organizados a partir de archivos de subtítulos SRT.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `supertonic`
 role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=tts,audio
@@ -883,6 +1243,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** quieres generar podcasts o diálogos largos
 **Evita si:** solo necesitas frases cortas; mira `kokoro`
 **Combina con:** `open-notebook`
+
+## `video-shotcraft`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,skill,typescript
+
+**Qué es:** Skill para crear videos de producto editables con Remotion, composición de planos, movimiento y trabajo de sonido.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Vincentwei1021/video-shotcraft
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/Vincentwei1021/video-shotcraft/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skill para crear videos de producto editables con Remotion, composición de planos, movimiento y trabajo de sonido.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `video-use`
 role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=video,coding-agent,skills,python

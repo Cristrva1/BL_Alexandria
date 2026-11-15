@@ -1,0 +1,1109 @@
+{
+  "checked_at": "2026-11-14",
+  "source": "Documento de recursos aportado por el usuario; original conservado fuera del contenido público.",
+  "existing_reference_count": 62,
+  "added_count": 178,
+  "added": [
+    {
+      "id": "openrv",
+      "full_name": "AcademySoftwareFoundation/OpenRV",
+      "github_id": 559748217,
+      "readme_blob_sha": "6f064a629389367fee4fabd3ef2fc21a4afa9e03"
+    },
+    {
+      "id": "dream-loop",
+      "full_name": "achimala/dream-loop",
+      "github_id": 1360317501,
+      "readme_blob_sha": "324c9a24be4fcb269fabb5d1e04c2deda6a58901"
+    },
+    {
+      "id": "adguardhome",
+      "full_name": "AdguardTeam/AdGuardHome",
+      "github_id": 62712899,
+      "readme_blob_sha": "1dba24d23a305a0a15982fbc88f35c2b0ac9cea1"
+    },
+    {
+      "id": "audiobookshelf",
+      "full_name": "advplyr/audiobookshelf",
+      "github_id": 397401267,
+      "readme_blob_sha": "bcbdb7917c31899cb470a0da8c2d290d2dc7be54"
+    },
+    {
+      "id": "agentes-chat",
+      "full_name": "agentes-chat/agentes-chat",
+      "github_id": 1450794567,
+      "readme_blob_sha": "5bd2051d5d211b5bc5081c876bee92501f5d1db4"
+    },
+    {
+      "id": "claude-obsidian",
+      "full_name": "AgriciDaniel/claude-obsidian",
+      "github_id": 1203670949,
+      "readme_blob_sha": "3d650a524420af759a670cf1388a53610d5f34d7"
+    },
+    {
+      "id": "claude-seo",
+      "full_name": "AgriciDaniel/claude-seo",
+      "github_id": 1152014594,
+      "readme_blob_sha": "19506a163ef9641db40a11dd77b5995a4aa6bd7d"
+    },
+    {
+      "id": "awesome-harness-engineering",
+      "full_name": "ai-boost/awesome-harness-engineering",
+      "github_id": 1195371847,
+      "readme_blob_sha": "efdffeea2b9161c93343566982719b4abbff493d"
+    },
+    {
+      "id": "ai-job-search",
+      "full_name": "ai-job-search-dev/ai-job-search",
+      "github_id": 1185389803,
+      "readme_blob_sha": "dff848e745d453dbcf77c45bf4ab0dfc6f8108f4"
+    },
+    {
+      "id": "finrl",
+      "full_name": "AI4Finance-Foundation/FinRL",
+      "github_id": 282653872,
+      "readme_blob_sha": "50e026b2c8715f4683f548afde0d782da777fc9e"
+    },
+    {
+      "id": "huashu-motion",
+      "full_name": "alchaincyf/huashu-motion",
+      "github_id": 1424340323,
+      "readme_blob_sha": "c26019e8bd3754d3a42ed1edd1144f8b16fd9820"
+    },
+    {
+      "id": "angr",
+      "full_name": "angr/angr",
+      "github_id": 40328394,
+      "readme_blob_sha": "2f74ac7ec6f15dd7dc1814670f5abc208979511b"
+    },
+    {
+      "id": "claude-agent-sdk-python",
+      "full_name": "anthropics/claude-agent-sdk-python",
+      "github_id": 1000486904,
+      "readme_blob_sha": "360a4b79782472917a03c10161a35f19b11e05b0"
+    },
+    {
+      "id": "anytype-ts",
+      "full_name": "anyproto/anytype-ts",
+      "github_id": 643874750,
+      "readme_blob_sha": "057516bbf9293d319c9f5134ad410cab4060082e"
+    },
+    {
+      "id": "appflowy",
+      "full_name": "AppFlowy-IO/AppFlowy",
+      "github_id": 377496562,
+      "readme_blob_sha": "4072edec24f1e38f47c48ec774eca09ce06af354"
+    },
+    {
+      "id": "blender-skills",
+      "full_name": "arjun988/blender-skills",
+      "github_id": 1289817225,
+      "readme_blob_sha": "9b8bf1f445ac7c7f1855a838da4989440bc7d78f"
+    },
+    {
+      "id": "webgl-noise",
+      "full_name": "ashima/webgl-noise",
+      "github_id": 1400125,
+      "readme_blob_sha": "ea8b9383e10d6dbc3083982d8e464a0ec34933cd"
+    },
+    {
+      "id": "genjutsu",
+      "full_name": "AThevon/genjutsu",
+      "github_id": 1194124727,
+      "readme_blob_sha": "9079745ccb957851f2cb1e812b7be1b3d186707f"
+    },
+    {
+      "id": "company-pixel-office",
+      "full_name": "ATK-zk/company-pixel-office",
+      "github_id": 1414581085,
+      "readme_blob_sha": "a0e404aef159aa76653573dc7d885b58afc9fd3f"
+    },
+    {
+      "id": "i-have-adhd",
+      "full_name": "ayghri/i-have-adhd",
+      "github_id": 1238120057,
+      "readme_blob_sha": "d784a4359d68ae959e85ac7cd22bbebef42cc682"
+    },
+    {
+      "id": "gods-eye-view",
+      "full_name": "bilawalsidhu/gods-eye-view",
+      "github_id": 1277471539,
+      "readme_blob_sha": "1d7cb46d37de84301ce816a47e68669634cd8e1f"
+    },
+    {
+      "id": "bitwarden-clients",
+      "full_name": "bitwarden/clients",
+      "github_id": 53538899,
+      "readme_blob_sha": "d93d3c937064f6dd7e11a75303a3111b938cf6b3"
+    },
+    {
+      "id": "blender",
+      "full_name": "blender/blender",
+      "github_id": 213916896,
+      "readme_blob_sha": "0f97685b82467ea3f830f69404ae999c7ef5c21d"
+    },
+    {
+      "id": "rubberband",
+      "full_name": "breakfastquay/rubberband",
+      "github_id": 51008065,
+      "readme_blob_sha": "ce3a6d03429cfe178f0fded5452d6c2a4d3298a3"
+    },
+    {
+      "id": "diagram-design",
+      "full_name": "cathrynlavery/diagram-design",
+      "github_id": 1212769188,
+      "readme_blob_sha": "9a1ba32665c9fc50d6b0073d9bd603782847d5fc"
+    },
+    {
+      "id": "ccxt",
+      "full_name": "ccxt/ccxt",
+      "github_id": 91253698,
+      "readme_blob_sha": "d3bf60940bc083df731fdaca1672459dcc75a12e"
+    },
+    {
+      "id": "omniroute",
+      "full_name": "cheaper-inference/OmniRoute",
+      "github_id": 1157102282,
+      "readme_blob_sha": "e7bb16c9bc959e6144e9cffe732b6a5162d6a93d"
+    },
+    {
+      "id": "opencode-manager",
+      "full_name": "chriswritescode-dev/opencode-manager",
+      "github_id": 1102782418,
+      "readme_blob_sha": "54549c307c85b6c3b2b63b9652d03f8d8c2d85e0"
+    },
+    {
+      "id": "threejs-skills",
+      "full_name": "CloudAI-X/threejs-skills",
+      "github_id": 1137798986,
+      "readme_blob_sha": "a20a35bbb9c4d2cff145b55df2f8fc15d0d550c9"
+    },
+    {
+      "id": "openpose",
+      "full_name": "CMU-Perceptual-Computing-Lab/openpose",
+      "github_id": 89247811,
+      "readme_blob_sha": "b1b826e986a0acd3cef88b52334653a535b5ae8e"
+    },
+    {
+      "id": "coolify",
+      "full_name": "coollabsio/coolify",
+      "github_id": 332880689,
+      "readme_blob_sha": "b1b0780365edeb6a16df963b0b9d3381191c1c54"
+    },
+    {
+      "id": "opendots",
+      "full_name": "CopilotKit/OpenDots",
+      "github_id": 1396117711,
+      "readme_blob_sha": "051c45466a6a85bca8551de5179bfcb3d3be66a9"
+    },
+    {
+      "id": "unity-mcp",
+      "full_name": "CoplayDev/unity-mcp",
+      "github_id": 950564038,
+      "readme_blob_sha": "ac59a23c3f56fa643670aacab38f7de3be9a7e9b"
+    },
+    {
+      "id": "plugins",
+      "full_name": "cursor/plugins",
+      "github_id": 1140229822,
+      "readme_blob_sha": "3c4ad80484ee61810dee95de99e7d2db70ef3a32"
+    },
+    {
+      "id": "vaultwarden",
+      "full_name": "dani-garcia/vaultwarden",
+      "github_id": 121898717,
+      "readme_blob_sha": "0b24ba69a9ae454631797358527f715af2ce7d3c"
+    },
+    {
+      "id": "scenejs",
+      "full_name": "daybrush/scenejs",
+      "github_id": 86044162,
+      "readme_blob_sha": "4b06bda459a5f428248b973637471c1f51f60dac"
+    },
+    {
+      "id": "claude-code-hooks-mastery",
+      "full_name": "disler/claude-code-hooks-mastery",
+      "github_id": 1014394578,
+      "readme_blob_sha": "0adccd1a273c80cfb634048f47fa308fc3120c66"
+    },
+    {
+      "id": "dnspy",
+      "full_name": "dnSpyEx/dnSpy",
+      "github_id": 371358850,
+      "readme_blob_sha": "46681912505e90104ce8d7ebd16e11f86634ce9f"
+    },
+    {
+      "id": "docuseal",
+      "full_name": "docusealco/docuseal",
+      "github_id": 661850205,
+      "readme_blob_sha": "48f84058240f00e2ea746d01a37b1375bf29711a"
+    },
+    {
+      "id": "dograh",
+      "full_name": "dograh-hq/dograh",
+      "github_id": 1053292493,
+      "readme_blob_sha": "a9b33e44105bcf233a9f9484c78d793a0696d097"
+    },
+    {
+      "id": "papermorph",
+      "full_name": "DozenTwelve/Papermorph",
+      "github_id": 1402525166,
+      "readme_blob_sha": "984a6b336dde56ddeddde2ad00f54a7d6c80b288"
+    },
+    {
+      "id": "raddebugger",
+      "full_name": "EpicGames/raddebugger",
+      "github_id": 741625310,
+      "readme_blob_sha": "e815179722e0670c7c88437df1d96405f46b2a52"
+    },
+    {
+      "id": "sellbird",
+      "full_name": "ethanplusai/sellbird",
+      "github_id": 1179388779,
+      "readme_blob_sha": "92fd98dc2969eb57d41c6bdc5cedf0cb0eb6ea58"
+    },
+    {
+      "id": "obsidian-second-brain",
+      "full_name": "eugeniughelbur/obsidian-second-brain",
+      "github_id": 1190557545,
+      "readme_blob_sha": "e9d770381a5016901ac851e8348eeb67801e580f"
+    },
+    {
+      "id": "open-seo",
+      "full_name": "every-app/open-seo",
+      "github_id": 1168753718,
+      "readme_blob_sha": "a97eb496648266c53bb36b899e63aa1c0e77a780"
+    },
+    {
+      "id": "claude-task-master",
+      "full_name": "eyaltoledano/claude-task-master",
+      "github_id": 942837343,
+      "readme_blob_sha": "1bf67c568b7943b01b17263f7ac6226b4c63123f"
+    },
+    {
+      "id": "videopose3d",
+      "full_name": "facebookresearch/VideoPose3D",
+      "github_id": 153697606,
+      "readme_blob_sha": "335e9d931791334cc409a65ec7646b4dc48ece56"
+    },
+    {
+      "id": "freetoken",
+      "full_name": "FlashML-org/FreeToken",
+      "github_id": 1307001698,
+      "readme_blob_sha": "6774dd7ab96bfd516483c93b9e8555a0426ae5b7"
+    },
+    {
+      "id": "freqtrade",
+      "full_name": "freqtrade/freqtrade",
+      "github_id": 91629816,
+      "readme_blob_sha": "3d1a903ce1c76f32e5d3e7fc12f0e5c4845f2308"
+    },
+    {
+      "id": "frida",
+      "full_name": "frida/frida",
+      "github_id": 9405122,
+      "readme_blob_sha": "534f218300e81cb6d1ceef9ce15f03d3b69a28db"
+    },
+    {
+      "id": "gstack",
+      "full_name": "garrytan/gstack",
+      "github_id": 1179264259,
+      "readme_blob_sha": "e7d04738bc99ddf7be795941ca7f75d3ae73e933"
+    },
+    {
+      "id": "cleanyourtv",
+      "full_name": "Gathin23/cleanyourtv",
+      "github_id": 1423101235,
+      "readme_blob_sha": "20cc28eda97e4b178e1ec1a787db22fde496eb65"
+    },
+    {
+      "id": "srt-whiteboard-animation",
+      "full_name": "geeklee/srt-whiteboard-animation",
+      "github_id": 1314048518,
+      "readme_blob_sha": "c0e9989a5acc23137163c175b5b386a0044b88b5"
+    },
+    {
+      "id": "agentic-rag-for-dummies",
+      "full_name": "GiovanniPasq/agentic-rag-for-dummies",
+      "github_id": 1075623145,
+      "readme_blob_sha": "9500cbf4b7f6ea72802e326726549c40d0eb2a09"
+    },
+    {
+      "id": "postiz-app",
+      "full_name": "gitroomhq/postiz-app",
+      "github_id": 664013991,
+      "readme_blob_sha": "1b21e0a0d886e6a5e536837046e35eb86cd3ad31"
+    },
+    {
+      "id": "mediapipe",
+      "full_name": "google-ai-edge/mediapipe",
+      "github_id": 191820100,
+      "readme_blob_sha": "746f32d0d9d77200be506f50a8afcb812b1314ec"
+    },
+    {
+      "id": "elephant-goldfish-model",
+      "full_name": "google/elephant-goldfish-model",
+      "github_id": 1368596582,
+      "readme_blob_sha": "d570bc7dee8f29e09f243e6a6245976bb803da15"
+    },
+    {
+      "id": "filament",
+      "full_name": "google/filament",
+      "github_id": 143455116,
+      "readme_blob_sha": "a627ba6a00ea6f2652bf578089b97efe173c8597"
+    },
+    {
+      "id": "google-skills",
+      "full_name": "google/skills",
+      "github_id": 1197652028,
+      "readme_blob_sha": "9a8fea649874dbbc7d9aa71b35d8ef854f533430"
+    },
+    {
+      "id": "modern-web-guidance",
+      "full_name": "GoogleChrome/modern-web-guidance",
+      "github_id": 1189825116,
+      "readme_blob_sha": "5d84344b67f8fbec64c43e76a12571e7a84aeb96"
+    },
+    {
+      "id": "k6",
+      "full_name": "grafana/k6",
+      "github_id": 54400687,
+      "readme_blob_sha": "0bdb78405162fcac552d95344a639ac7af77c25d"
+    },
+    {
+      "id": "gsap-skills",
+      "full_name": "greensock/gsap-skills",
+      "github_id": 1172781277,
+      "readme_blob_sha": "5b7def98e5c1ad79d49c01d133f9370ebd65a2c5"
+    },
+    {
+      "id": "ozz-animation",
+      "full_name": "guillaumeblanc/ozz-animation",
+      "github_id": 41325282,
+      "readme_blob_sha": "15311e86545d46cc57171d68da5a00999a0ed115"
+    },
+    {
+      "id": "floorplan",
+      "full_name": "haydenschmitty/floorplan",
+      "github_id": 1435672472,
+      "readme_blob_sha": "ba72368e22e14c7d16323d84d5a61cef47252923"
+    },
+    {
+      "id": "vibe-trading",
+      "full_name": "HKUDS/Vibe-Trading",
+      "github_id": 1198306812,
+      "readme_blob_sha": "ee8e76acb3e18484f57675021d36a85f4edcb08a"
+    },
+    {
+      "id": "home-assistant",
+      "full_name": "home-assistant/core",
+      "github_id": 12888993,
+      "readme_blob_sha": "4125a7ffbc53e65bad8efae56e947e6233e61710"
+    },
+    {
+      "id": "hummingbot",
+      "full_name": "hummingbot/hummingbot",
+      "github_id": 179163124,
+      "readme_blob_sha": "20dadd44364c91a25448716ebb92e142797794da"
+    },
+    {
+      "id": "hypit",
+      "full_name": "hypit-ai/hypit",
+      "github_id": 1316470719,
+      "readme_blob_sha": "e1c6a36a448b48687b4a77a39080bc2b3b536bed"
+    },
+    {
+      "id": "apktool",
+      "full_name": "iBotPeaches/Apktool",
+      "github_id": 3766706,
+      "readme_blob_sha": "21e0fbecf4ebe808bcc28aca6bd4149217472098"
+    },
+    {
+      "id": "casaos",
+      "full_name": "IceWhaleTech/CasaOS",
+      "github_id": 410430370,
+      "readme_blob_sha": "d357658465d5bddfb80cf5970eb87ddffc678768"
+    },
+    {
+      "id": "ilspy",
+      "full_name": "icsharpcode/ILSpy",
+      "github_id": 1327739,
+      "readme_blob_sha": "77b3d3100a6a713f04512dc261102c5c3f530b0e"
+    },
+    {
+      "id": "optimizerduck",
+      "full_name": "itsfatduck/optimizerDuck",
+      "github_id": 1087077125,
+      "readme_blob_sha": "a5212c5805e294377419b782cee947cade945679"
+    },
+    {
+      "id": "instagram-agent-skill",
+      "full_name": "Jakeschincariol/instagram-agent-skill",
+      "github_id": 1368447577,
+      "readme_blob_sha": "26a4630274fb05cf5e0206d3fbc64bee655d4210"
+    },
+    {
+      "id": "linkedin-agent-skill",
+      "full_name": "Jakeschincariol/linkedin-agent-skill",
+      "github_id": 1360725349,
+      "readme_blob_sha": "07e49432aea34ebab7721c88c2845dcfa0328bc0"
+    },
+    {
+      "id": "pixel-hedge-fund",
+      "full_name": "jaypolanco96/pixel-hedge-fund",
+      "github_id": 1378011443,
+      "readme_blob_sha": "34b1c2e66f469ec37ab38cfbde5ddd3830ac80c2"
+    },
+    {
+      "id": "ai-website-cloner-template",
+      "full_name": "JCodesMore/ai-website-cloner-template",
+      "github_id": 1180745961,
+      "readme_blob_sha": "0234b66ae1896b94dad0b13db82d82f8b84be82c"
+    },
+    {
+      "id": "concat",
+      "full_name": "jub0t/Concat",
+      "github_id": 1346499044,
+      "readme_blob_sha": "b3054b50f5758618312bc75c36a23a1e020738a6"
+    },
+    {
+      "id": "scientific-agent-skills",
+      "full_name": "K-Dense-AI/scientific-agent-skills",
+      "github_id": 1079456184,
+      "readme_blob_sha": "3fcebf5c0e49e39dc87e5b577d0368d313124862"
+    },
+    {
+      "id": "logo-design-skill",
+      "full_name": "kaankiziltug/logo-design-skill",
+      "github_id": 1388867993,
+      "readme_blob_sha": "779d90c173f12448475b5a2cc82a6101c67fb36e"
+    },
+    {
+      "id": "karakeep",
+      "full_name": "karakeep-app/karakeep",
+      "github_id": 753589979,
+      "readme_blob_sha": "60c8deb2de8e4ae5e01a612472a9ee410ccdf5d0"
+    },
+    {
+      "id": "40-questions",
+      "full_name": "kepano/40-questions",
+      "github_id": 164335612,
+      "readme_blob_sha": "c3b8b6e61a2da091189482bdc0987cb0b821fb34"
+    },
+    {
+      "id": "defuddle",
+      "full_name": "kepano/defuddle",
+      "github_id": 940076402,
+      "readme_blob_sha": "0f163c9b70d5920a892bab590db53b25e306527f"
+    },
+    {
+      "id": "flexoki",
+      "full_name": "kepano/flexoki",
+      "github_id": 701897407,
+      "readme_blob_sha": "ae50e1667c1b05e0053e5ecb57f368eade834c16"
+    },
+    {
+      "id": "kepano-obsidian",
+      "full_name": "kepano/kepano-obsidian",
+      "github_id": 690786452,
+      "readme_blob_sha": "b027d3ec3f9dcc38a10c6aeeb2e4ee726d1d39e7"
+    },
+    {
+      "id": "obsidian-minimal",
+      "full_name": "kepano/obsidian-minimal",
+      "github_id": 282550237,
+      "readme_blob_sha": "e0172640df38704c5c2b18eb13659f700c902d39"
+    },
+    {
+      "id": "shannon",
+      "full_name": "KeygraphHQ/shannon",
+      "github_id": 1065059442,
+      "readme_blob_sha": "04c3b9417233e4e235d299208489ec06720fa69e"
+    },
+    {
+      "id": "konva",
+      "full_name": "konvajs/konva",
+      "github_id": 29011477,
+      "readme_blob_sha": "9b033a576aa5b262a11665b78ad5072ff5ab488a"
+    },
+    {
+      "id": "kornia",
+      "full_name": "kornia/kornia",
+      "github_id": 145693916,
+      "readme_blob_sha": "189c278a18607f25472b45e975e3a1372ea2f0af"
+    },
+    {
+      "id": "pixelfund-ai",
+      "full_name": "kyjwang/PixelFund-AI",
+      "github_id": 1257216735,
+      "readme_blob_sha": "2159c4c7159c2109fed1f16f8ac9924a5692065b"
+    },
+    {
+      "id": "openidea",
+      "full_name": "l0ng-ai/openidea",
+      "github_id": 1428347546,
+      "readme_blob_sha": "45cfcc56ad7ed6c98e50e3d7dd90e743ebabb161"
+    },
+    {
+      "id": "brag",
+      "full_name": "latent-spaces/brag",
+      "github_id": 1271560627,
+      "readme_blob_sha": "1a5db9b474e6a298de558a8dd6ede545e59dac24"
+    },
+    {
+      "id": "ghidramcp",
+      "full_name": "LaurieWired/GhidraMCP",
+      "github_id": 953335676,
+      "readme_blob_sha": "0fd84ad582a08391f267c5be00c4acbb9b09eea5"
+    },
+    {
+      "id": "lemo-opuscar",
+      "full_name": "lemomo-ai/lemo-opuscar",
+      "github_id": 1389011744,
+      "readme_blob_sha": "457ca524354b771051dfb94ffb8328d301c71850"
+    },
+    {
+      "id": "earshot",
+      "full_name": "Leonxlnx/earshot",
+      "github_id": 1420305104,
+      "readme_blob_sha": "a1ac732df4775714ae6be8a71e3e25289e264733"
+    },
+    {
+      "id": "motion-design-skill",
+      "full_name": "LottieFiles/motion-design-skill",
+      "github_id": 1179682343,
+      "readme_blob_sha": "aa631cc60eb17a3ff9fd4df6f03ddd466cc49efa"
+    },
+    {
+      "id": "lumibot",
+      "full_name": "Lumiwealth/lumibot",
+      "github_id": 294371636,
+      "readme_blob_sha": "3d0ce4474aa73fb7dd79ee4ce8248e2beb986584"
+    },
+    {
+      "id": "airllm",
+      "full_name": "lyogavin/airllm",
+      "github_id": 652712035,
+      "readme_blob_sha": "fc041e131bfee574ffa7de9c67c1079267417eb8"
+    },
+    {
+      "id": "claude-code-usage-monitor",
+      "full_name": "Maciek-roboblog/Claude-Code-Usage-Monitor",
+      "github_id": 1004631442,
+      "readme_blob_sha": "270b9dc93445e38aca76b9443e91b1a29a8ecdb4"
+    },
+    {
+      "id": "magnitude",
+      "full_name": "magnitudedev/magnitude",
+      "github_id": 1267145484,
+      "readme_blob_sha": "a2ca77d52358fb60992658a0fe6991bb26bda141"
+    },
+    {
+      "id": "cloud-mail",
+      "full_name": "maillab/cloud-mail",
+      "github_id": 971999086,
+      "readme_blob_sha": "ddb1b279f4b7480dd8c861f98fccc3584ebbc3fa"
+    },
+    {
+      "id": "threejs-game-skills",
+      "full_name": "majidmanzarpour/threejs-game-skills",
+      "github_id": 1268895491,
+      "readme_blob_sha": "1c0a14f49e20a5a419a6044b14c09b9c7393f03e"
+    },
+    {
+      "id": "backtrader",
+      "full_name": "mementum/backtrader",
+      "github_id": 29050338,
+      "readme_blob_sha": "56c664e45365dbd7e87b664d38a3c90e4831735d"
+    },
+    {
+      "id": "zdog",
+      "full_name": "metafizzy/zdog",
+      "github_id": 174164624,
+      "readme_blob_sha": "01a92dbd685d26f4403f6c9b22618de6b41be8c3"
+    },
+    {
+      "id": "mitmproxy",
+      "full_name": "mitmproxy/mitmproxy",
+      "github_id": 519832,
+      "readme_blob_sha": "dfc3fd1a81507f91b55a90eda9077b27c4248d68"
+    },
+    {
+      "id": "awesome-cad",
+      "full_name": "mlightcad/awesome-cad",
+      "github_id": 1126073325,
+      "readme_blob_sha": "c7a1ce125385fa5f8f9bbe011af3f75973ef7ac0"
+    },
+    {
+      "id": "awesome-reverse-engineering",
+      "full_name": "morluto/awesome-reverse-engineering",
+      "github_id": 1412022658,
+      "readme_blob_sha": "5771555a0f7c9d13c29705db27181c68c21fc651"
+    },
+    {
+      "id": "rea",
+      "full_name": "morluto/rea",
+      "github_id": 1209966933,
+      "readme_blob_sha": "78b7064b8053b0076b4329013611881f395b6aba"
+    },
+    {
+      "id": "claude-animated-shorts",
+      "full_name": "mromidev/claude-animated-shorts",
+      "github_id": 1441526188,
+      "readme_blob_sha": "422d67078b3ec0447547569cc040e8b787298762"
+    },
+    {
+      "id": "claude-code-router",
+      "full_name": "musistudio/claude-code-router",
+      "github_id": 938468965,
+      "readme_blob_sha": "c8b6cdc4f3e34665bb99cee513b232c71f722cb1"
+    },
+    {
+      "id": "mvanhorn",
+      "full_name": "mvanhorn/mvanhorn",
+      "github_id": 1176139654,
+      "readme_blob_sha": "91a8570fdf9ab3a81eb48c23509ee177d02b2876"
+    },
+    {
+      "id": "melotts",
+      "full_name": "myshell-ai/MeloTTS",
+      "github_id": 760022246,
+      "readme_blob_sha": "46cddb7756ac2a50814458a031ed8635ca52a2ba"
+    },
+    {
+      "id": "laya",
+      "full_name": "NandhaKishorM/laya",
+      "github_id": 1375382253,
+      "readme_blob_sha": "09fd44585d1e5f79cfeaa1579fcf08d97263949c"
+    },
+    {
+      "id": "ghidra",
+      "full_name": "NationalSecurityAgency/ghidra",
+      "github_id": 173228436,
+      "readme_blob_sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f"
+    },
+    {
+      "id": "nautilus-trader",
+      "full_name": "nautechsystems/nautilus_trader",
+      "github_id": 138552196,
+      "readme_blob_sha": "fd9b8301772e08b31cc38ab509893c357d741fe2"
+    },
+    {
+      "id": "hallmark",
+      "full_name": "Nutlope/hallmark",
+      "github_id": 1222917575,
+      "readme_blob_sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623"
+    },
+    {
+      "id": "jev-fraud",
+      "full_name": "Nutlope/jev-fraud",
+      "github_id": 1377880130,
+      "readme_blob_sha": "480e2a626aa66bdad7a33f7147f316218476ea4b"
+    },
+    {
+      "id": "jsoncanvas",
+      "full_name": "obsidianmd/jsoncanvas",
+      "github_id": 764771893,
+      "readme_blob_sha": "04b8a45061df24a548e07931d1e2efe09c37fae4"
+    },
+    {
+      "id": "obsidian-clipper",
+      "full_name": "obsidianmd/obsidian-clipper",
+      "github_id": 849500524,
+      "readme_blob_sha": "1f145ac4d5f39921c58558d1fe96c107c1772ad6"
+    },
+    {
+      "id": "obsidian-help",
+      "full_name": "obsidianmd/obsidian-help",
+      "github_id": 285425357,
+      "readme_blob_sha": "0f0c19944050d0a3a9f873bda7c55a6a5274b77a"
+    },
+    {
+      "id": "obsidian-importer",
+      "full_name": "obsidianmd/obsidian-importer",
+      "github_id": 665163927,
+      "readme_blob_sha": "1dfe07b221ab724ed4ec3af99814795c063f5772"
+    },
+    {
+      "id": "obsidian-releases",
+      "full_name": "obsidianmd/obsidian-releases",
+      "github_id": 262342594,
+      "readme_blob_sha": "bcc35a1ce9af721daef5efae6ca61cd8b99150b9"
+    },
+    {
+      "id": "obsidian-sample-plugin",
+      "full_name": "obsidianmd/obsidian-sample-plugin",
+      "github_id": 307179377,
+      "readme_blob_sha": "7cfe62169dacb53ccf0a2c1a9680ab92df71f744"
+    },
+    {
+      "id": "obsidian-skills",
+      "full_name": "obsidianmd/obsidian-skills",
+      "github_id": 1126947080,
+      "readme_blob_sha": "59e4fabe5a909e44f33dc5557739cf38570a9b04"
+    },
+    {
+      "id": "onyx",
+      "full_name": "onyx-dot-app/onyx",
+      "github_id": 633262635,
+      "readme_blob_sha": "c5b3a4de88bee20464050bf52344af1b0bce9dd6"
+    },
+    {
+      "id": "pdf-craft",
+      "full_name": "oomol-lab/pdf-craft",
+      "github_id": 931354511,
+      "readme_blob_sha": "7e60fe6dd714b96adbb3071715a6f42b1494c565"
+    },
+    {
+      "id": "mmpose",
+      "full_name": "open-mmlab/mmpose",
+      "github_id": 278003645,
+      "readme_blob_sha": "0f4baa23357c90e733d1a81dffad8ce41e730313"
+    },
+    {
+      "id": "odm",
+      "full_name": "OpenDroneMap/ODM",
+      "github_id": 24470090,
+      "readme_blob_sha": "d3b8719f4e0ca35eebec1126d7decf1dc113ee54"
+    },
+    {
+      "id": "openfilm",
+      "full_name": "openfilm/openfilm",
+      "github_id": 1404197626,
+      "readme_blob_sha": "a872f9c8ac5a438f950906011a98771704d56312"
+    },
+    {
+      "id": "hello-halo",
+      "full_name": "openkursar/hello-halo",
+      "github_id": 1133165145,
+      "readme_blob_sha": "9ef0b84ef6a257ca6ee90442a67a7bf1d7fe69db"
+    },
+    {
+      "id": "paperless-ngx",
+      "full_name": "paperless-ngx/paperless-ngx",
+      "github_id": 458648791,
+      "readme_blob_sha": "f1e5141043dcb5e36b496c7ce71192d9e5e24aea"
+    },
+    {
+      "id": "pixelfx",
+      "full_name": "patch-gg/pixelfx",
+      "github_id": 1439372976,
+      "readme_blob_sha": "7306bb34a3dbff6fb91aba6f9e9a003f328a9bcc"
+    },
+    {
+      "id": "pencil",
+      "full_name": "pencil2d/pencil",
+      "github_id": 10978577,
+      "readme_blob_sha": "f25674a7364bfcd30a0a3c92ba46c3c39ba770bd"
+    },
+    {
+      "id": "no-ai-slop",
+      "full_name": "petergyang/no-ai-slop",
+      "github_id": 1291783779,
+      "readme_blob_sha": "82f8b7af7e02918077afb447f8fc83c2d33483ba"
+    },
+    {
+      "id": "planck-js",
+      "full_name": "piqnt/planck.js",
+      "github_id": 54445812,
+      "readme_blob_sha": "40c1670f71e62134e44998bd4826c0eea7c44513"
+    },
+    {
+      "id": "react-three-rapier",
+      "full_name": "pmndrs/react-three-rapier",
+      "github_id": 487288999,
+      "readme_blob_sha": "9056337fd2254ce0b6dd985165af354dedf7c472"
+    },
+    {
+      "id": "vectorbt",
+      "full_name": "polakowo/vectorbt",
+      "github_id": 110684325,
+      "readme_blob_sha": "c104129f78d91e467a4d64da9b0cd9c8a5960dda"
+    },
+    {
+      "id": "py-clob-client",
+      "full_name": "Polymarket/py-clob-client",
+      "github_id": 455013779,
+      "readme_blob_sha": "47e527e26dcebb9afeb4e3d94daae553898f5696"
+    },
+    {
+      "id": "py-sdk",
+      "full_name": "Polymarket/py-sdk",
+      "github_id": 1228704556,
+      "readme_blob_sha": "2cd12b5e1979ea144cb2f2163c76d30223e5f2c1"
+    },
+    {
+      "id": "bla",
+      "full_name": "qybaihe/bla",
+      "github_id": 1432859403,
+      "readme_blob_sha": "97633ff094e993b02e2f0de3c253fa38483dfb5a"
+    },
+    {
+      "id": "radare2",
+      "full_name": "radareorg/radare2",
+      "github_id": 4869294,
+      "readme_blob_sha": "51aaf280797835b2d3f0008fb8ecf7cfef321ebd"
+    },
+    {
+      "id": "regl",
+      "full_name": "regl-project/regl",
+      "github_id": 52315611,
+      "readme_blob_sha": "d7cb65105f47e6217a63e2642f62b10606df6686"
+    },
+    {
+      "id": "rizin",
+      "full_name": "rizinorg/rizin",
+      "github_id": 299867499,
+      "readme_blob_sha": "f6f8f34340e9bde0a139d39c3edad8c418874819"
+    },
+    {
+      "id": "fugu",
+      "full_name": "SakanaAI/fugu",
+      "github_id": 1272437000,
+      "readme_blob_sha": "3102967912c3f5096b6896b0222851a6bc8ade41"
+    },
+    {
+      "id": "shepherd",
+      "full_name": "shepherd-agents/shepherd",
+      "github_id": 1279435409,
+      "readme_blob_sha": "a4a7c152bdb85ae655dbc209c29ee6dc9424b587"
+    },
+    {
+      "id": "4d-humans",
+      "full_name": "shubham-goel/4D-Humans",
+      "github_id": 647935862,
+      "readme_blob_sha": "c260ba18df341ea70b47c096d3551f62be45f2a0"
+    },
+    {
+      "id": "jadx",
+      "full_name": "skylot/jadx",
+      "github_id": 8859474,
+      "readme_blob_sha": "e062bdf30d45d586e18ce69ff969fe314d0bac21"
+    },
+    {
+      "id": "minimalist-entrepreneur-skills",
+      "full_name": "slavingia/skills",
+      "github_id": 1189893949,
+      "readme_blob_sha": "153fca5a5447d135d80be5e3083f8d19c88d35c9"
+    },
+    {
+      "id": "craft-anything",
+      "full_name": "storytold/craft-anything",
+      "github_id": 1440956372,
+      "readme_blob_sha": "02a6b393f96f3e31489e94b47f3c1fd0f0bee3ac"
+    },
+    {
+      "id": "supabase",
+      "full_name": "supabase/supabase",
+      "github_id": 214587193,
+      "readme_blob_sha": "163afeaf8ad8ee5d944e994becc27716431369f1"
+    },
+    {
+      "id": "treg",
+      "full_name": "superdesigndev/treg",
+      "github_id": 1301657572,
+      "readme_blob_sha": "9d2c2880548324c54dd20f7a6c94af8c1a5529a6"
+    },
+    {
+      "id": "syncthing",
+      "full_name": "syncthing/syncthing",
+      "github_id": 14712850,
+      "readme_blob_sha": "3167b1b4d3a85927d7dc4cd6d1fb98e22cd12a66"
+    },
+    {
+      "id": "motionmaxxing",
+      "full_name": "Tejashmakwana/motionmaxxing",
+      "github_id": 1407754231,
+      "readme_blob_sha": "69dbe52f294a0a760778f4287c3b25502cdfacae"
+    },
+    {
+      "id": "tfjs-models",
+      "full_name": "tensorflow/tfjs-models",
+      "github_id": 127968704,
+      "readme_blob_sha": "fdf294cb0a6c8260bd421922cc259cfae82fa6dd"
+    },
+    {
+      "id": "openmaic",
+      "full_name": "THU-MAIC/OpenMAIC",
+      "github_id": 1178737655,
+      "readme_blob_sha": "63a08732e7876839278c0087671a58cb540512be"
+    },
+    {
+      "id": "universal-android-debloater-next-generation",
+      "full_name": "Universal-Debloater-Alliance/universal-android-debloater-next-generation",
+      "github_id": 710425233,
+      "readme_blob_sha": "0ca712a0e9a37dee9feeb7893d493e87148f0174"
+    },
+    {
+      "id": "strix",
+      "full_name": "usestrix/strix",
+      "github_id": 1032808806,
+      "readme_blob_sha": "2cabdb1c9aa0f5d2c42955935f0bca0ed175dd5c"
+    },
+    {
+      "id": "mediabunny",
+      "full_name": "Vanilagy/mediabunny",
+      "github_id": 850821713,
+      "readme_blob_sha": "554599de2680b245038295f0e4063e5a83e3fad2"
+    },
+    {
+      "id": "json-render",
+      "full_name": "vercel-labs/json-render",
+      "github_id": 1134411737,
+      "readme_blob_sha": "8eb67ed19adf52135a399b71d93041973b6e2f8b"
+    },
+    {
+      "id": "ui-sdk",
+      "full_name": "vercel-labs/ui",
+      "github_id": 1434724807,
+      "readme_blob_sha": "c10e8fdb524548c52a813b27ee57de0902ef416a"
+    },
+    {
+      "id": "3dviz-pro-max",
+      "full_name": "viettranx/3dviz-pro-max",
+      "github_id": 1363399964,
+      "readme_blob_sha": "e4ed92833e3c4c1ee4318d901c17933ea2c98da0"
+    },
+    {
+      "id": "video-shotcraft",
+      "full_name": "Vincentwei1021/video-shotcraft",
+      "github_id": 1305663861,
+      "readme_blob_sha": "12e1521c14169412b7b64fde65c4c87a543729b7"
+    },
+    {
+      "id": "book-to-skill",
+      "full_name": "virgiliojr94/book-to-skill",
+      "github_id": 1226123343,
+      "readme_blob_sha": "f4beb1ed4072eb1e91b679e0bfa545577099d68d"
+    },
+    {
+      "id": "openviking",
+      "full_name": "volcengine/OpenViking",
+      "github_id": 1128123594,
+      "readme_blob_sha": "bfc447860187e4d699fb8c5d6dfabdf1e94161ed"
+    },
+    {
+      "id": "webodm",
+      "full_name": "WebODM/WebODM",
+      "github_id": 65209477,
+      "readme_blob_sha": "d4dd263e532cf4088c7eb40a0675d29ef3b3d745"
+    },
+    {
+      "id": "imhex",
+      "full_name": "WerWolv/ImHex",
+      "github_id": 311683390,
+      "readme_blob_sha": "cf4eb39b009afeca807c0f42143c949e489821c9"
+    },
+    {
+      "id": "anatomy",
+      "full_name": "wheresryan22/anatomy",
+      "github_id": 1410124849,
+      "readme_blob_sha": "fa98bff1a617aa8e5edf1b7b87c866815b6fa1bc"
+    },
+    {
+      "id": "x64dbg",
+      "full_name": "x64dbg/x64dbg",
+      "github_id": 33791743,
+      "readme_blob_sha": "87b9d6330995766cab9b793eaf9856769df5f35a"
+    },
+    {
+      "id": "rnnoise",
+      "full_name": "xiph/rnnoise",
+      "github_id": 99199151,
+      "readme_blob_sha": "b8b2c461c38856525cb85262104f9788461e4a17"
+    },
+    {
+      "id": "wham",
+      "full_name": "yohanshin/WHAM",
+      "github_id": 729041071,
+      "readme_blob_sha": "4c5b46b401c3deb797c5cfb3777be333c53eba18"
+    },
+    {
+      "id": "design-dna",
+      "full_name": "zanwei/design-dna",
+      "github_id": 1189432033,
+      "readme_blob_sha": "bc0c66427ba55595bdd61f906dd7a10efb9da470"
+    },
+    {
+      "id": "meshoptimizer",
+      "full_name": "zeux/meshoptimizer",
+      "github_id": 67768325,
+      "readme_blob_sha": "66e422b7a02a95ae38a6a30a1d499d391b47b5de"
+    },
+    {
+      "id": "awesome-ai-reverse-engineering",
+      "full_name": "zhuyansen/awesome-ai-reverse-engineering",
+      "github_id": 1416831262,
+      "readme_blob_sha": "8b616a71cb92e8fdf1c52f31f8ec15fe67f9215f"
+    },
+    {
+      "id": "easymocap",
+      "full_name": "zju3dv/EasyMocap",
+      "github_id": 329620403,
+      "readme_blob_sha": "1edbf0f945ce4f1f5517d1bb656d29273036a46e"
+    },
+    {
+      "id": "dsh-android",
+      "full_name": "ZSeven-W/dsh-android",
+      "github_id": 1341805689,
+      "readme_blob_sha": "fce54101ab9fa67901fb7750efc5db9baf48cfb1"
+    },
+    {
+      "id": "dsh-game-studio",
+      "full_name": "ZSeven-W/dsh-game-studio",
+      "github_id": 1446725818,
+      "readme_blob_sha": "1c0f0e35d2da538588b6d922903737445e934ae4"
+    },
+    {
+      "id": "dsh-ios",
+      "full_name": "ZSeven-W/dsh-ios",
+      "github_id": 1339882322,
+      "readme_blob_sha": "03bc396832169a377882722d30a166e1b404a831"
+    },
+    {
+      "id": "dsh-noema",
+      "full_name": "ZSeven-W/dsh-noema",
+      "github_id": 1334167430,
+      "readme_blob_sha": "d5e6130674817261b0fe89d4c15d5a5bedfd8d22"
+    },
+    {
+      "id": "dsh-qa",
+      "full_name": "ZSeven-W/dsh-qa",
+      "github_id": 1352490672,
+      "readme_blob_sha": "49ab816b56060f1f0bfb0a29359d2f45b106fed2"
+    }
+  ],
+  "total_public_repositories": 676,
+  "corrections": [
+    {
+      "reference": "anthropic/skills",
+      "resolved": "anthropics/skills",
+      "catalog_id": "anthropic-skills",
+      "reason": "Errata de propietario; el proyecto correcto ya estaba catalogado."
+    }
+  ],
+  "resolved_unlinked": [
+    {
+      "name": "RTMPose",
+      "resolved": "open-mmlab/mmpose",
+      "reason": "Modelo incluido en MMPose; no se duplica como repositorio."
+    },
+    {
+      "name": "Bitwarden Send",
+      "resolved": "bitwarden/clients",
+      "reason": "Función de los clientes oficiales, no repositorio independiente."
+    }
+  ],
+  "unresolved_names": [
+    "Conductor AI",
+    "Cybersecurity Skills",
+    "Kimi K2.7 Code",
+    "AgentOS - WhatsApp AI Agent Builder",
+    "Creative Architect"
+  ],
+  "notes": [
+    "No se ejecutó el software catalogado.",
+    "No se importaron repos enlazados únicamente desde README de terceros: el alcance es el documento del usuario.",
+    "El SDK nuevo de Polymarket aparece en el texto; se conserva su cliente antiguo como archivado, con identidad propia."
+  ]
+}

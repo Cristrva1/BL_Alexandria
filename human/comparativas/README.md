@@ -2,7 +2,7 @@
 
 # ⚖️ Comparativas
 
-63 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
+65 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
 
 ## 🤖 Automatizar negocios y comunicación
 
@@ -105,6 +105,14 @@
 - [Marp vs Slidev](marp-vs-slidev.md)
 - [PaddleOCR vs Tesseract](paddleocr-vs-tesseract.md)
 - [pdfcraft vs Stirling-PDF](pdfcraft-vs-stirling-pdf.md)
+
+## 🗂️ Organizar notas, archivos y servicios personales
+
+- [Anytype Desktop vs AppFlowy](anytype-ts-vs-appflowy.md)
+
+## 🔍 Analizar software y comprobar su seguridad
+
+- [ghidra vs radare2](ghidra-vs-radare2.md)
 
 ---
 

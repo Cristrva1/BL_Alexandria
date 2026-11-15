@@ -219,3 +219,51 @@ Consultar herramientas y ejemplos financieros distinguiendo análisis, backtesti
 | [TradingAgents](fichas/tradingagents.md) | Framework experimental que organiza agentes de análisis financiero, debate y evaluación de decisiones de trading. | Depende de la ruta elegida |
 
 [Ver la ruta en el explorador](../docs/index.html#/explorar?goal=finanzas)
+
+## Organizar notas y conocimiento
+
+Elegir una aplicación o un conjunto pequeño de extensiones para guardar, enlazar y consultar información.
+
+| Punto de partida | Qué hace | Acceso básico |
+|---|---|---|
+| [Obsidian: distribución y extensiones](fichas/obsidian-releases.md) | Repositorio de distribución de Obsidian y sus listados de plugins y temas; no contiene el código completo de la aplicación. | Sin API de IA en la ruta básica |
+| [Anytype Desktop](fichas/anytype-ts.md) | Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal. | Sin API de IA en la ruta básica |
+| [AppFlowy](fichas/appflowy.md) | Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento propio. | API de IA opcional |
+
+[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=notas)
+
+## Alojar servicios propios
+
+Entender qué aplicación vas a alojar, qué servidor necesita y qué servicios y cuentas se configuran aparte.
+
+| Punto de partida | Qué hace | Acceso básico |
+|---|---|---|
+| [coolify](fichas/coolify.md) | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. | Sin API de IA en la ruta básica |
+| [CasaOS](fichas/casaos.md) | Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. | Sin API de IA en la ruta básica |
+| [Home Assistant](fichas/home-assistant.md) | Motor de Home Assistant para conectar dispositivos y automatizar acciones del hogar con control local. | Sin API de IA en la ruta básica |
+
+[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=servicios)
+
+## Analizar software y su seguridad
+
+Escoger entre inspeccionar código, estudiar un binario o ejecutar pruebas en un entorno autorizado.
+
+| Punto de partida | Qué hace | Acceso básico |
+|---|---|---|
+| [ghidra](fichas/ghidra.md) | Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. | Sin API de IA en la ruta básica |
+| [jadx](fichas/jadx.md) | Descompilador de archivos DEX y APK para explorar código Java reconstruido y recursos de aplicaciones Android. | Sin API de IA en la ruta básica |
+| [shannon](fichas/shannon.md) | Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado. | API de IA opcional |
+
+[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=seguridad)
+
+## Crear escenas y proyectos 3D
+
+Elegir una aplicación visual, una biblioteca o instrucciones para un agente; revisar por separado modelos y recursos externos.
+
+| Punto de partida | Qué hace | Acceso básico |
+|---|---|---|
+| [blender](fichas/blender.md) | Código de Blender, la aplicación para modelar, animar, renderizar y editar escenas y contenido tridimensional. | Sin API de IA en la ruta básica |
+| [3dviz-pro-max](fichas/3dviz-pro-max.md) | Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código. | Sin API de IA en la ruta básica |
+| [unity-mcp](fichas/unity-mcp.md) | Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity. | Sin API de IA en la ruta básica |
+
+[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=3d)

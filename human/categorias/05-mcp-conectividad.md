@@ -4,7 +4,7 @@
 
 SDKs, servidores y conectores que dejan a un agente usar herramientas. El servidor MCP aporta acciones o datos; el modelo pertenece al cliente.
 
-24 repos · 5 secciones
+27 repos · 5 secciones
 
 ## Puntos de partida
 
@@ -21,7 +21,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [SDKs y frameworks para crear MCP](#sdks-y-frameworks-para-crear-mcp) — 6 repos
-- [Servidores MCP destacados](#servidores-mcp-destacados) — 10 repos
+- [Servidores MCP destacados](#servidores-mcp-destacados) — 13 repos
 - [Directorios, clientes y aprendizaje](#directorios-clientes-y-aprendizaje) — 5 repos
 - [Dominios y recursos de infraestructura](#dominios-y-recursos-de-infraestructura) — 2 repos
 - [Redes y transporte](#redes-y-transporte) — 1 repos
@@ -49,6 +49,9 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Blender MCP](../fichas/blender-mcp.md) | Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP. | quieres manejar Blender con tu agente | Sin API de IA en la ruta básica |
 | [Serena](../fichas/serena.md) | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. | tu agente trabaja en un repo grande y gasta muchos tokens leyendo | Sin API de IA en la ruta básica |
 | [Figma Context MCP](../fichas/figma-context-mcp.md) | Servidor MCP que entrega a los agentes de código el layout de tus diseños de Figma para implementarlos. | implementas diseños de Figma con un agente de código | Sin API de IA en la ruta básica |
+| [unity-mcp](../fichas/unity-mcp.md) | Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity. | buscas esta función: Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity. | Sin API de IA en la ruta básica |
+| [GhidraMCP](../fichas/ghidramcp.md) | Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios. | buscas esta función: Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios. | Sin API de IA en la ruta básica |
+| [treg](../fichas/treg.md) | Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores. | buscas esta función: Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores. | Sin API de IA en la ruta básica |
 | [annas-mcp](../fichas/annas-mcp.md) | Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos. | necesitas integrar búsquedas de documentos en un cliente MCP | Sin API de IA en la ruta básica |
 | [mcp-neo4j](../fichas/mcp-neo4j.md) | Conjunto de servidores MCP oficiales para conectar bases de datos de grafos Neo4j a asistentes de IA, con soporte de despliegue en cloud. | usas Neo4j con IA y quieres que el asistente hable Cypher | Sin API de IA en la ruta básica |
 
