@@ -12,4 +12,6 @@ def render_explorer(project_root: Path, cat: Catalog) -> Path:
 
     root = Path(project_root)
     build_site(root, root / "docs")
+    from repo_intelligence.core.handbook import render_handbook
+    render_handbook(root)
     return root / "docs" / "index.html"

@@ -29,6 +29,7 @@ El catálogo se consulta desde Markdown en GitHub o mediante un sitio estático 
 - Explicar APIs de IA, servicios externos, límites de planes y modelos locales como decisiones independientes.
 - Ofrecer instrucciones y comandos con fuente y fecha; señalar explícitamente lo que sigue por confirmar.
 - Mantener fichas, recetas, comparaciones y material de orientación coherentes desde los mismos índices.
+- Mantener un manual independiente del inventario de repos: configuración de agentes y modelos, IA local, automatización Android/iOS, prompts, comandos y servicios de despliegue. Cada guía muestra requisitos, cuenta y coste, primera prueba, mejoras, límites y fuentes. Control remoto de un agente y automatización del teléfono se explican como rutas distintas.
 - No confundir popularidad en GitHub con adecuación ni repos no descargados con incorporaciones recientes.
 
 ## Brand Commitments

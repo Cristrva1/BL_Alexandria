@@ -19,6 +19,9 @@ Las **679 fichas tienen revisión documental individual**: categoría, ejemplos 
 | Aprovechar mi acceso a Claude Code, Codex o Antigravity | [Formas de uso](human/formas-de-uso.md) |
 | Saber si necesito pagar una API o puedo usar un modelo local | [Acceso y costes](human/acceso.md) |
 | Comparar e instalar una herramienta concreta | [Guía de arranque](human/instalar.md) |
+| Configurar o mejorar un agente, modelo local o automatización del teléfono | [Configurar IA](https://cristrva1.github.io/BL_Alexandria/#/configurar) |
+| Copiar una plantilla o saber dónde ejecutar un comando | [Prompts y comandos](https://cristrva1.github.io/BL_Alexandria/#/prompts) |
+| Elegir alojamiento, datos, contenedores o acceso remoto | [Servicios y despliegue](https://cristrva1.github.io/BL_Alexandria/#/servicios) |
 | Explorar todo por tema | [Categorías y subcategorías](human/areas.md) |
 | Ver las incorporaciones recientes | [Novedades de la biblioteca](human/novedades.md) |
 
@@ -37,7 +40,7 @@ Si prefieres guardar una copia para consultar en tu equipo:
 1. En esta página de GitHub pulsa **Code → Download ZIP**.
 2. Extrae el ZIP en una carpeta de tu equipo.
 3. Abre la carpeta `docs` y haz doble clic en `index.html`.
-4. Entra en **Guíame**, elige qué quieres conseguir y revisa hasta tres opciones.
+4. Entra en **Guíame**, describe tu proyecto, experiencia, equipo y acceso a IA y revisa hasta tres opciones.
 
 No necesitas Python ni descargar los proyectos del catálogo para consultar el explorador. Si ya trabajas con el entorno de desarrollo del proyecto, también puedes levantarlo desde la terminal:
 

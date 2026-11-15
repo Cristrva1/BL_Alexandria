@@ -13,6 +13,10 @@
 | Quiero buscar, filtrar o comparar nombres concretos | [Explorador](../docs/index.html) |
 | Quiero ver qué se incorporó a la biblioteca | [Novedades](novedades.md) |
 
+## Configura, automatiza y publica
+
+Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servicios](MANUAL_IA.md). Sus guías complementan las fichas del catálogo y explican requisitos, cuentas, costes, primera prueba y mejoras.
+
 ## Explora por tema
 
 [Abrir categorías y subcategorías](areas.md). Cada proyecto conserva una ficha y puede aparecer en varias áreas.

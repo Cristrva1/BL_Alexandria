@@ -1,0 +1,461 @@
+{
+  "checked_at": "2026-11-15",
+  "method": "HTTP GET of public primary documentation; not an installation or feature test",
+  "sources": [
+    {
+      "url": "https://aider.chat/docs/install.html",
+      "status": 200,
+      "final_url": "https://aider.chat/docs/install.html",
+      "bytes": 33463,
+      "sha256": "94813b59ee4634dc763f37ed7fbd3bd67acc0a771780142b48c896d64a4cd774"
+    },
+    {
+      "url": "https://antigravity.google/docs/getting-started",
+      "status": 200,
+      "final_url": "https://antigravity.google/docs/getting-started",
+      "bytes": 235061,
+      "sha256": "e7b66a623ceb27f88736f9ef78625eb1377ad1748ac9285af899305f4e39d5dd"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/",
+      "status": 200,
+      "final_url": "https://api-docs.deepseek.com/",
+      "bytes": 51258,
+      "sha256": "6e3ebe19cc147b6b6dfba6b37ea4d7d920d1c3991ec37e1954b8afbf3fc92621"
+    },
+    {
+      "url": "https://appium.io/docs/en/latest/intro/",
+      "status": 200,
+      "final_url": "https://appium.io/docs/en/latest/intro/",
+      "bytes": 78061,
+      "sha256": "4d5e0f654a89d31d4291047a017c7dd27f6d0997c33934a924d6e668eb7dddd6"
+    },
+    {
+      "url": "https://caddyserver.com/docs/quick-starts",
+      "status": 200,
+      "final_url": "https://caddyserver.com/docs/quick-starts",
+      "bytes": 33994,
+      "sha256": "47c9d66782052ccc927f8e9ed6abe4bf7509e628be4851e546f3fa664587eefb"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/overview",
+      "status": 200,
+      "final_url": "https://code.claude.com/docs/en/overview",
+      "bytes": 348365,
+      "sha256": "0e3bede506e3880c0c7728a81778a60ce42212652fcf9dd7a4e7b0fa1d4167b8"
+    },
+    {
+      "url": "https://commandcode.ai/",
+      "status": 200,
+      "final_url": "https://commandcode.ai/",
+      "bytes": 351839,
+      "sha256": "fa71a9384eb6f9e0c8c3b09c905b55e52e9939654d84e57e5bbcfdb0c310e29e"
+    },
+    {
+      "url": "https://coolify.io/docs/",
+      "status": 200,
+      "final_url": "https://coolify.io/docs/",
+      "bytes": 565768,
+      "sha256": "57ec4ca0472a0c2aa74c5023a25d88bc9fba63c37373789c8db7dad42bbde1d1"
+    },
+    {
+      "url": "https://cursor.com/docs",
+      "status": 200,
+      "final_url": "https://cursor.com/docs",
+      "bytes": 626839,
+      "sha256": "ad6bb39b693afdf518032a65b80420d77989b20edd63af5e266728d4fb319544"
+    },
+    {
+      "url": "https://developer.android.com/tools/adb",
+      "status": 200,
+      "final_url": "https://developer.android.com/tools/adb",
+      "bytes": 368334,
+      "sha256": "b52e44b729df5af3fe6f780d28126f49e7fbcd2ca84f5af9fcb302ab36b0689f"
+    },
+    {
+      "url": "https://developers.cloudflare.com/",
+      "status": 200,
+      "final_url": "https://developers.cloudflare.com/",
+      "bytes": 201698,
+      "sha256": "9af3d41084b6a506df669c3a6d99d1d9c496c381b1c03e18c433854f71715fa8"
+    },
+    {
+      "url": "https://docs.cline.bot/",
+      "status": 200,
+      "final_url": "https://docs.cline.bot/cline-overview",
+      "bytes": 161339,
+      "sha256": "d6be5c4070b4f8d6d713d64c921f0ad592b042bba23fa65ba379a154da8bdf6d"
+    },
+    {
+      "url": "https://docs.devin.ai/get-started/devin-intro",
+      "status": 200,
+      "final_url": "https://docs.devin.ai/get-started/devin-intro",
+      "bytes": 545104,
+      "sha256": "15e10f452b2eda99c1c392a2c5bdbe02ec5b757a4f276041a38d4fb8128956b6"
+    },
+    {
+      "url": "https://docs.digitalocean.com/products/droplets/",
+      "status": 200,
+      "final_url": "https://docs.digitalocean.com/products/droplets/",
+      "bytes": 55799,
+      "sha256": "a7cfebe6d9f2cd84ba41f8fac4a61b645db254a44a84d3e51b9430ab32a9874a"
+    },
+    {
+      "url": "https://docs.docker.com/compose/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/compose/",
+      "bytes": 533985,
+      "sha256": "0db87f4c69df570ef1df2cf83b82197cfa39aa20b6950015ba48d89b4569fc1b"
+    },
+    {
+      "url": "https://docs.docker.com/get-started/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/get-started/",
+      "bytes": 181945,
+      "sha256": "0a96065f860d87e6200a8c1b4bc3eca8491034116eccab040555b574ead7b74b"
+    },
+    {
+      "url": "https://docs.docker.com/reference/cli/docker/compose/config/",
+      "status": 200,
+      "final_url": "https://docs.docker.com/reference/cli/docker/compose/config/",
+      "bytes": 442277,
+      "sha256": "0981064f3700b2863cd20f26420f4214a6e5262cdf09edcdda3e4751841ef96c"
+    },
+    {
+      "url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+      "status": 200,
+      "final_url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+      "bytes": 314019,
+      "sha256": "ad2952bd010465b1094f3662a4f7f9285468b012f70764bb98b4daea7b34013b"
+    },
+    {
+      "url": "https://docs.github.com/en/get-started",
+      "status": 200,
+      "final_url": "https://docs.github.com/en/get-started",
+      "bytes": 253779,
+      "sha256": "ad6f28a6e28e52b7a4ee1521fb0aabdc287ccd76b28dc58da77ec6f1a580e80a"
+    },
+    {
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "status": 200,
+      "final_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "bytes": 93879,
+      "sha256": "8a2fd223a99ae5d9748e5802b81dd01517c8d045c0c4ce87924a62782b144c3f"
+    },
+    {
+      "url": "https://docs.maestro.dev/",
+      "status": 200,
+      "final_url": "https://docs.maestro.dev/",
+      "bytes": 518488,
+      "sha256": "a79d8424910c08fe6fef9dd132a3917c2da7f6f1ec2f547e614e01d52a3365ee"
+    },
+    {
+      "url": "https://docs.n8n.io/",
+      "status": 200,
+      "final_url": "https://docs.n8n.io/",
+      "bytes": 484105,
+      "sha256": "318293fd30d0ddff6cfa3e628fe37215f71c78886735521dbcf986b0383342ed"
+    },
+    {
+      "url": "https://docs.ollama.com/quickstart",
+      "status": 200,
+      "final_url": "https://docs.ollama.com/quickstart",
+      "bytes": 240498,
+      "sha256": "31f759968cdf62d9186adefd6b37e691f9fb713e25546181ef6506638fcd421f"
+    },
+    {
+      "url": "https://docs.openclaw.ai/start/getting-started",
+      "status": 200,
+      "final_url": "https://docs.openclaw.ai/start/getting-started",
+      "bytes": 264075,
+      "sha256": "fd000b1670af8d2cd11862530e7abdfd3cb8f24fe8737cd6e7305007441840b9"
+    },
+    {
+      "url": "https://docs.openwebui.com/getting-started/",
+      "status": 200,
+      "final_url": "https://docs.openwebui.com/getting-started/",
+      "bytes": 37693,
+      "sha256": "3ae2ead0a8ecbfb74624cb5e76104fca31b25560b64789e4b0c8ecc85bd8f495"
+    },
+    {
+      "url": "https://docs.railway.com/quick-start",
+      "status": 200,
+      "final_url": "https://docs.railway.com/quick-start",
+      "bytes": 275987,
+      "sha256": "46296c58438fcf9be547199624cfd5eeca3f82b3d27dbc14830c175df9cc83fd"
+    },
+    {
+      "url": "https://docs.vllm.ai/en/latest/getting_started/quickstart/",
+      "status": 200,
+      "final_url": "https://docs.vllm.ai/en/latest/getting_started/quickstart/",
+      "bytes": 237384,
+      "sha256": "ea02759c8c61d3d940c26dd0d4878d93d871e46a850d0a7fccd6d96d7d0f01c9"
+    },
+    {
+      "url": "https://docs.x.ai/docs/overview",
+      "status": 200,
+      "final_url": "https://docs.x.ai/overview",
+      "bytes": 525680,
+      "sha256": "21fd5d86fd6cc53961570e26f1abff9fb4cceb1c877e34398fc5b245308431dc"
+    },
+    {
+      "url": "https://docs.x.ai/grok-bot/faq",
+      "status": 200,
+      "final_url": "https://docs.x.ai/grok-bot/faq",
+      "bytes": 316014,
+      "sha256": "6ee5bf0b2790186b5bf124941f106729c1556a19e47398264187337c86595274"
+    },
+    {
+      "url": "https://docs.z.ai/guides/overview/quick-start",
+      "status": 200,
+      "final_url": "https://docs.z.ai/guides/overview/quick-start",
+      "bytes": 301082,
+      "sha256": "e2aff9ffce96b33588875347cf3aecd35029e88a07a44a5dcac6a70f1c47cc18"
+    },
+    {
+      "url": "https://git-scm.com/docs/git-status",
+      "status": 200,
+      "final_url": "https://git-scm.com/docs/git-status",
+      "bytes": 99934,
+      "sha256": "b0dee7e072244e4e6ba95192278211014be50bf64875d3f88b03c9a0274a0538"
+    },
+    {
+      "url": "https://github.com/Genymobile/scrcpy",
+      "status": 200,
+      "final_url": "https://github.com/Genymobile/scrcpy",
+      "bytes": 305200,
+      "sha256": "e4087136fc057814cc6f2a25d42c3ce9d05dca8b73cf8a652958b0ef51749e4b"
+    },
+    {
+      "url": "https://github.com/MoonshotAI/kimi-cli/blob/main/docs/en/faq.md",
+      "status": 200,
+      "final_url": "https://github.com/MoonshotAI/kimi-cli/blob/main/docs/en/faq.md",
+      "bytes": 264755,
+      "sha256": "c66a5c7fb1ee6ceb6aedf635c74ed2398f1534ae064c81d66082df4aa3022924"
+    },
+    {
+      "url": "https://github.com/MoonshotAI/kimi-cli/blob/main/docs/en/reference/kimi-command.md",
+      "status": 200,
+      "final_url": "https://github.com/MoonshotAI/kimi-cli/blob/main/docs/en/reference/kimi-command.md",
+      "bytes": 301964,
+      "sha256": "b5dcaca7a82d17e9b38d3420ecf25124de7edc834671a63b1e9a4b8570abde67"
+    },
+    {
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "status": 200,
+      "final_url": "https://github.com/NousResearch/hermes-agent",
+      "bytes": 536521,
+      "sha256": "f62f9c28ec29aeb2fe837784494716d67cfe6365aaabfb968e6b00e9f7efa729"
+    },
+    {
+      "url": "https://github.com/QwenLM/qwen-code/blob/main/docs/users/quickstart.md",
+      "status": 200,
+      "final_url": "https://github.com/QwenLM/qwen-code/blob/main/docs/users/quickstart.md",
+      "bytes": 289324,
+      "sha256": "e42e234f9fca406fd0a7689a100ee83e58dc7a7963bda7a060a4c4e9f7b0a64d"
+    },
+    {
+      "url": "https://github.com/ZSeven-W/dsh-android",
+      "status": 200,
+      "final_url": "https://github.com/ZSeven-W/dsh-android",
+      "bytes": 393259,
+      "sha256": "270c433a402512224d1bf43452b67c20abaf3f07d3ac1f72a2abe6881f4ebf6f"
+    },
+    {
+      "url": "https://github.com/ZSeven-W/dsh-ios",
+      "status": 200,
+      "final_url": "https://github.com/ZSeven-W/dsh-ios",
+      "bytes": 396761,
+      "sha256": "6aef2fff5495f586f106cfb4a4f8af2e3f9f4f58426a18362571fb61c0c727cc"
+    },
+    {
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "status": 200,
+      "final_url": "https://github.com/deepseek-ai/deepseek-harness",
+      "bytes": 367770,
+      "sha256": "045df0a0a353c34d236293565c4c5ee7a036eb55825e16de9d272d5f072aece6"
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "status": 200,
+      "final_url": "https://github.com/ggml-org/llama.cpp",
+      "bytes": 387885,
+      "sha256": "1f6a7c79c5f41a69c0c0bc967356dabc5509ac9c8ecb2e9038e425f6729fe581"
+    },
+    {
+      "url": "https://github.com/louislam/uptime-kuma",
+      "status": 200,
+      "final_url": "https://github.com/louislam/uptime-kuma",
+      "bytes": 366199,
+      "sha256": "2810f37beb861f00624685b91b0381575ef71600358bbc06e5b1072c51e0ab85"
+    },
+    {
+      "url": "https://github.com/pingdotgg/t3code",
+      "status": 200,
+      "final_url": "https://github.com/pingdotgg/t3code",
+      "bytes": 333768,
+      "sha256": "26d17e06f4654cf8f2f13c48b6b61113b8ebafb3e8af74f6043e20dc6138bd54"
+    },
+    {
+      "url": "https://github.com/termux/termux-app",
+      "status": 200,
+      "final_url": "https://github.com/termux/termux-app",
+      "bytes": 372185,
+      "sha256": "dac93bd148cf85f82c607152601396a63ad1bb4ce5e6e647eb28903202939161"
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/auth",
+      "status": 200,
+      "final_url": "https://learn.chatgpt.com/docs/auth",
+      "bytes": 612484,
+      "sha256": "e04bed985b66bf823baf357274da1a647189596badf060afde9fae02c6a00cc0"
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/cli/reference",
+      "status": 200,
+      "final_url": "https://learn.chatgpt.com/docs/cli/reference",
+      "bytes": 910122,
+      "sha256": "5242f6e8ba2f1dc8696403cdf69206ef859cc1bbf2852aecb850ecf1ce01d9ed"
+    },
+    {
+      "url": "https://learn.chatgpt.com/docs/config-file/config-basic",
+      "status": 200,
+      "final_url": "https://learn.chatgpt.com/docs/config-file/config-basic",
+      "bytes": 429742,
+      "sha256": "ea470e39a56142ff0185f03bfdd830738fac0f4f0c5b06f09594209d421adcff"
+    },
+    {
+      "url": "https://lmstudio.ai/docs/app/basics",
+      "status": 200,
+      "final_url": "https://lmstudio.ai/docs/app/basics",
+      "bytes": 145235,
+      "sha256": "14468bbf2fc42582db31225e05051efa2e8536fb938dad53b28348069b519980"
+    },
+    {
+      "url": "https://macrodroid.com/",
+      "status": 200,
+      "final_url": "https://macrodroid.com/",
+      "bytes": 26177,
+      "sha256": "147cbac855d106cf82e5573a33bfdde405d487cc6d359dd738088d95d31476d9"
+    },
+    {
+      "url": "https://man.openbsd.org/ssh",
+      "status": 200,
+      "final_url": "https://man.openbsd.org/ssh",
+      "bytes": 82623,
+      "sha256": "ffa71eaec97454f46967d7b1b89a4f4204b44aec93e968f8ba48b8eed2ec2ff0"
+    },
+    {
+      "url": "https://muse.ai/",
+      "status": 200,
+      "final_url": "https://muse.ai/",
+      "bytes": 80780,
+      "sha256": "15805fa1f81fd8304a80e07cb4fcb6ece36ffefccad1360dd5aa55c3d1b07385"
+    },
+    {
+      "url": "https://neon.com/docs/introduction",
+      "status": 200,
+      "final_url": "https://neon.com/docs",
+      "bytes": 396784,
+      "sha256": "7df3fa4cb0e2dd2b34018b341d84f8066a741dda923bac8fbe9f43df8e0fa20e"
+    },
+    {
+      "url": "https://opencode.ai/docs/",
+      "status": 200,
+      "final_url": "https://opencode.ai/docs/",
+      "bytes": 52113,
+      "sha256": "6616f6a53b5cff5f9c5a0836bf3a84bd429254369e8aa339446befbb1f202f5d"
+    },
+    {
+      "url": "https://platform.minimax.io/docs/m-plan/claude-code",
+      "status": 200,
+      "final_url": "https://platform.minimax.io/docs/m-plan/claude-code",
+      "bytes": 204457,
+      "sha256": "ea6d86867c653048849fbb2cb91d970c9d003931edad6c23d15d4aa9a7957d83"
+    },
+    {
+      "url": "https://qwen.readthedocs.io/en/latest/",
+      "status": 200,
+      "final_url": "https://qwen.readthedocs.io/en/latest/",
+      "bytes": 22895,
+      "sha256": "a844f1c79c9fd8efb10cfc28f365bb26366bde3e53de7891c0fd01b36ce4ebce"
+    },
+    {
+      "url": "https://redis.io/docs/latest/",
+      "status": 200,
+      "final_url": "https://redis.io/docs/latest/",
+      "bytes": 121026,
+      "sha256": "a3223bb7ca7cd435c48264416d74eb5e1f697f2326dd6ac293e6bca4ba10a891"
+    },
+    {
+      "url": "https://restic.readthedocs.io/en/stable/",
+      "status": 200,
+      "final_url": "https://restic.readthedocs.io/en/stable/",
+      "bytes": 23960,
+      "sha256": "744617b1596e0591aa8b376118bb1a310307437b97d482475e5f49c71ed970f3"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/api/api-keys",
+      "status": 200,
+      "final_url": "https://supabase.com/docs/guides/getting-started/api-keys",
+      "bytes": 361008,
+      "sha256": "a5b7024845b5c3dee4410f22c954536fe7c3ee14cebb84d28975fdbd496c04f2"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/getting-started",
+      "status": 200,
+      "final_url": "https://supabase.com/docs/guides/getting-started",
+      "bytes": 175222,
+      "sha256": "c963c0b932e965cd7aa0d3afd692032d86574d738ffcae71c2349ff5494d115b"
+    },
+    {
+      "url": "https://supabase.com/docs/reference/cli/introduction",
+      "status": 200,
+      "final_url": "https://supabase.com/docs/reference/cli/introduction",
+      "bytes": 3469413,
+      "sha256": "1c906cab7d9ed4b01a175426fa239c83ec45a080b635924269754e37b1040586"
+    },
+    {
+      "url": "https://support.apple.com/en-gb/guide/shortcuts/apdfbdbd7123/ios",
+      "status": 200,
+      "final_url": "https://support.apple.com/en-gb/guide/shortcuts/apdfbdbd7123/ios",
+      "bytes": 634701,
+      "sha256": "414c3e5ee54b5faba1eb0bd90ec5c2457e3d4e788bc9548fd2b2ad7e7a7c5ceb"
+    },
+    {
+      "url": "https://tailscale.com/docs/how-to/quickstart",
+      "status": 200,
+      "final_url": "https://tailscale.com/docs/how-to/quickstart",
+      "bytes": 256765,
+      "sha256": "26af236fb9c885d591180634619f3e993d5bcb252934803a7c75299348afd1c6"
+    },
+    {
+      "url": "https://tasker.joaoapps.com/userguide/en/",
+      "status": 200,
+      "final_url": "https://tasker.joaoapps.com/userguide/en/",
+      "bytes": 4316,
+      "sha256": "c811719aa1924fd5b354c258ab4ceb7ba7637df8143de90caaed243da635f164"
+    },
+    {
+      "url": "https://vercel.com/docs",
+      "status": 200,
+      "final_url": "https://vercel.com/docs",
+      "bytes": 912788,
+      "sha256": "7d0fb64eba025e3de0a9e937cb4e4d32f18df0f2c0f7e58cbeb44ecb3c617248"
+    },
+    {
+      "url": "https://www.hostinger.com/tutorials/what-is-web-hosting",
+      "status": 200,
+      "final_url": "https://www.hostinger.com/tutorials/what-is-web-hosting/",
+      "bytes": 445826,
+      "sha256": "19cd4f99c2b84c70a95233f45051eb981d203cef2c6d7d536d14904643711ca4"
+    },
+    {
+      "url": "https://www.openssh.org/manual.html",
+      "status": 200,
+      "final_url": "https://www.openssh.org/manual.html",
+      "bytes": 5390,
+      "sha256": "b6717c69dee88ff1c69af0203fb96556cd25e1f9d708c34969b28c2533e887f4"
+    }
+  ]
+}
