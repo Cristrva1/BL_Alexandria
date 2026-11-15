@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 77k | MIT | Jupyter Notebook | 2026-11-09 | 🆕 Aún no (sugerido) |
+| 77.1k | MIT | Jupyter Notebook | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
@@ -49,15 +49,15 @@ No se instala: abre los notebooks en GitHub o en cookbook.openai.com.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [openai-python](openai-python.md) | 32.1k | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. |
-| [OpenAI Agents SDK](openai-agents-python.md) | 30.6k | SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas integradas. |
+| [openai-python](openai-python.md) | 32.2k | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. |
+| [OpenAI Agents SDK](openai-agents-python.md) | 30.7k | SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas integradas. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Claude Cookbooks](claude-cookbooks.md) | 54.5k | Recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización. |
-| [Awesome LLM Apps](awesome-llm-apps.md) | 144k | Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM. |
+| [Claude Cookbooks](claude-cookbooks.md) | 54.7k | Recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización. |
+| [Awesome LLM Apps](awesome-llm-apps.md) | 145k | Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM. |
 
 ## Enlaces
 
@@ -66,4 +66,4 @@ No se instala: abre los notebooks en GitHub o en cookbook.openai.com.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

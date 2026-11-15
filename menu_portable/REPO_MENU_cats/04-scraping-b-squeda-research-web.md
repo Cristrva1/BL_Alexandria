@@ -3,6 +3,21 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `agent-browser`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=navegador,rust
+
+**Qué es:** CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes. Mantiene una sesión de navegador y permite abrir páginas, inspeccionarlas y actuar por referencias desde la terminal.
+**Stack:** Rust, Node.js
+**Repo:** https://github.com/vercel-labs/agent-browser
+
+**Instalación** [~]: `git clone https://github.com/vercel-labs/agent-browser && cd agent-browser && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+
+**Elige si:** necesitas navegación programable con salidas compactas para un agente
+**Evita si:** la fuente ya ofrece una API o un archivo de datos suficiente
+**Combina con:** `codex`
+**Alternativas (elige una):** `playwright-cli`
+
 ## `agent-reach`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,research,python
 
@@ -31,6 +46,32 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Elige si:** quieres conservar copias fieles de páginas web
 **Evita si:** solo necesitas el texto para un LLM; mira `jina-reader`
 **Combina con:** `yt-dlp`
+
+## `awesome-chrome-devtools`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=navegador,awesome,awesome-list
+
+**Qué es:** Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol. Agrupa depuradores, visores de trazas y clientes del protocolo para localizar una herramienta adecuada.
+**Stack:** Node.js
+**Repo:** https://github.com/ChromeDevTools/awesome-chrome-devtools
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-chrome-devtools/). Si necesitas el código: git clone https://github.com/ChromeDevTools/awesome-chrome-devtools`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** buscas utilidades para depurar o automatizar Chrome
+**Evita si:** la fuente ya ofrece una API o un archivo de datos suficiente
+
+## `awesome-web-scraping`
+role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=crawlers,captcha-bypass,captcha-recaptcha,crawler,crawling,crawling-framework,crawling-python,crawling-tool
+
+**Qué es:** Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos. Organiza opciones por lenguaje y función para investigar alternativas de extracción.
+**Stack:** JavaScript, Node.js
+**Repo:** https://github.com/lorien/awesome-web-scraping
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-web-scraping/). Si necesitas el código: git clone https://github.com/lorien/awesome-web-scraping`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres comparar librerías de scraping antes de elegir tu stack
+**Evita si:** la fuente ya ofrece una API o un archivo de datos suficiente
 
 ## `browser-harness`
 role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=browser,coding-agent,python
@@ -61,6 +102,19 @@ _Nombre PyPI puede diferir de 'browser-use'; verifica en pypi.org._
 **Evita si:** necesitas scripts deterministas y baratos (playwright) o no quieres depender de un LLM por paso
 **Combina con:** `playwright`, `gpt-researcher`
 **Alternativas (elige una):** `computer-use-preview`, `stagehand`, `skyvern`, `playwright-mcp`
+
+## `camofox-browser`
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=navegador,ai-agent,anti-bot,antidetect-browser,automation,bot-detection,browser-automation,cloudflare-bypass
+
+**Qué es:** Servidor de automatización de navegador basado en Camoufox para ofrecer navegación a agentes. Expone un navegador derivado de Firefox mediante herramientas y endpoints de automatización.
+**Stack:** JavaScript, Docker, Node.js
+**Repo:** https://github.com/jo-inc/camofox-browser
+
+**Instalación** [~]: `git clone https://github.com/jo-inc/camofox-browser && cd camofox-browser && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** necesitas evaluar una alternativa de navegador automatizado para agentes
+**Evita si:** la fuente ya ofrece una API o un archivo de datos suficiente
 
 ## `changedetection`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,notifications,python,docker
@@ -176,6 +230,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Elige si:** quieres saber qué se dice ahora sobre un tema
 **Evita si:** necesitas un informe académico; mira `storm`
 **Combina con:** `claude-code`, `agent-reach`
+**Alternativas (elige una):** `social-media-research-skills`
 
 ## `lightpanda`
 role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=browser,scraping
@@ -249,6 +304,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Elige si:** tu agente vive en CLI y el contexto es un recurso caro
 **Evita si:** necesitas estado persistente entre sesiones o un servidor MCP con recursos expuestos (usa Playwright MCP)
 **Combina con:** `playwright`, `browser-use`
+**Alternativas (elige una):** `agent-browser`
 
 ## `puppeteer`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=browser,scraping,typescript
@@ -321,6 +377,20 @@ _Nombre PyPI puede diferir de 'scrapy'; verifica en pypi.org._
 **Elige si:** quieres un crawler sólido y configurable a escala
 **Evita si:** buscas salida lista para LLM o algo puntual sin curva de framework
 **Combina con:** `scrapely`, `crawlee-python`
+
+## `scrapydweb`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=crawlers,dashboard,log-analysis,log-parsing,scrapy,scrapy-log-analysis,scrapy-visualization,scrapyd
+
+**Qué es:** Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy. Conecta servidores Scrapyd y centraliza despliegues, tareas programadas y seguimiento de crawls.
+**Stack:** Python
+**Repo:** https://github.com/my8100/scrapydweb
+
+**Instalación** [~]: `git clone https://github.com/my8100/scrapydweb && cd scrapydweb && (uv sync || pip install -r requirements.txt)`
+_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+
+**Elige si:** operas varios spiders de Scrapy y necesitas un panel de administración
+**Evita si:** la fuente ya ofrece una API o un archivo de datos suficiente
+**Combina con:** `scrapy`
 
 ## `searxng`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=search,research,python,docker

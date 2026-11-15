@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 68.9k | Apache-2.0 | Rust | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 68.9k | Apache-2.0 | Rust | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
@@ -52,13 +52,13 @@ Sigue la instalación del README (binario de releases o instalador del proyecto)
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [E2B](e2b.md) | 14.8k | Sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas. |
+| [E2B](e2b.md) | 14.9k | Sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [goose](goose.md) | 56.4k | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. |
+| [goose](goose.md) | 56.6k | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. |
 
 ## Enlaces
 
@@ -67,4 +67,4 @@ Sigue la instalación del README (binario de releases o instalador del proyecto)
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

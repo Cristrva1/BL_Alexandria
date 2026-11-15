@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 55k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
+| 60.6k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
@@ -49,9 +49,9 @@ Descarga la app desde los releases o sigue el README para levantar el servidor l
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 | [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
-| [OpenCode](opencode.md) | 226k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
+| [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 
 ## Enlaces
 
@@ -60,4 +60,4 @@ Descarga la app desde los releases o sigue el README para levantar el servidor l
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

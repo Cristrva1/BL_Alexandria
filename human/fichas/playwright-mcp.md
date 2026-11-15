@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 39.4k | Apache-2.0 | TypeScript | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 39.7k | Apache-2.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
@@ -49,16 +49,16 @@ Añade a tu cliente MCP: `npx @playwright/mcp@latest`.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [playwright](playwright.md) | 99.7k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
+| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [playwright](playwright.md) | 100k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Chrome DevTools MCP](chrome-devtools-mcp.md) | 55.1k | Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. |
+| [Chrome DevTools MCP](chrome-devtools-mcp.md) | 56.3k | Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. |
 | [browser-use](browser-use.md) | 121k | Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. |
-| [Browser Harness](browser-harness.md) | 19k | Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada. |
+| [Browser Harness](browser-harness.md) | 19.1k | Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada. |
 
 ## Enlaces
 
@@ -67,4 +67,4 @@ Añade a tu cliente MCP: `npx @playwright/mcp@latest`.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

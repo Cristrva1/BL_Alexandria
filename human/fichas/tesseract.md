@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 77.4k | Apache-2.0 | C++ | 2026-11-09 | 🆕 Aún no (sugerido) |
+| 77.5k | Apache-2.0 | C++ | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
@@ -55,7 +55,7 @@ Red LSTM que reconoce líneas de texto en imágenes preprocesadas.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [PaddleOCR](paddleocr.md) | 92.5k | Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos estructurados para IA. |
+| [PaddleOCR](paddleocr.md) | 92.7k | Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos estructurados para IA. |
 
 ## Enlaces
 
@@ -64,4 +64,4 @@ Red LSTM que reconoce líneas de texto en imágenes preprocesadas.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 2.3k | Apache-2.0 | Jupyter Notebook | 2026-11-05 | 📦 Sí |
+| 2.3k | Apache-2.0 | Jupyter Notebook | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🔴 pesado
 
@@ -49,7 +49,7 @@ No se instala: sigue las guías del repo para el modelo que necesites.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [vLLM](vllm.md) | 96.7k | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. |
+| [vLLM](vllm.md) | 96.9k | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. |
 | [NemoClaw](nemoclaw.md) | 23k | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. |
 
 ## Enlaces
@@ -59,4 +59,4 @@ No se instala: sigue las guías del repo para el modelo que necesites.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 15.8k | MIT | — | 2026-10-22 | 📦 Sí |
+| 16k | MIT | — | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
@@ -49,7 +49,7 @@ Clona el repo y copia el `SKILL.md` a tu directorio de skills, o pega su conteni
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [andrej-karpathy-skills](andrej-karpathy-skills.md) | 232k | Guía de 4 principios inspirada en Andrej Karpathy para que tu agente de código responda útil y sin relleno. |
+| [andrej-karpathy-skills](andrej-karpathy-skills.md) | 233k | Guía de 4 principios inspirada en Andrej Karpathy para que tu agente de código responda útil y sin relleno. |
 
 ## Enlaces
 
@@ -57,4 +57,4 @@ Clona el repo y copia el `SKILL.md` a tu directorio de skills, o pega su conteni
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

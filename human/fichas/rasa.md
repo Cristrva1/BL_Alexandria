@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 21.4k | Apache-2.0 | Python | 2026-07-24 | 🆕 Aún no (sugerido) |
+| 21.4k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
@@ -51,7 +51,7 @@ Un modelo de NLU interpreta mensajes y un gestor de diálogo decide la siguiente
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [chatwoot](chatwoot.md) | 39.5k | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. |
+| [chatwoot](chatwoot.md) | 39.9k | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. |
 
 ## Alternativas (elige una)
 
@@ -66,4 +66,4 @@ Un modelo de NLU interpreta mensajes y un gestor de diálogo decide la siguiente
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

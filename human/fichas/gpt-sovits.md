@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 64.7k | MIT | Python | 2026-11-09 | 🆕 Aún no (sugerido) |
+| 65.1k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
@@ -49,13 +49,13 @@ Descarga el paquete integrado de releases o sigue la instalación del README.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [RVC WebUI](rvc.md) | 39.1k | Conversión de voz: entrena un modelo con menos de 10 minutos de audio y transforma una voz en otra. |
+| [RVC WebUI](rvc.md) | 39.3k | Conversión de voz: entrena un modelo con menos de 10 minutos de audio y transforma una voz en otra. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Chatterbox](chatterbox.md) | 27.7k | Modelo de texto a voz open source de Resemble AI con clonación de voz y control de emoción. |
+| [Chatterbox](chatterbox.md) | 27.8k | Modelo de texto a voz open source de Resemble AI con clonación de voz y control de emoción. |
 | [Fish Speech](fish-speech.md) | 33.7k | Sistema de texto a voz open source de alta calidad con clonación de voz multilingüe. |
 
 ## Enlaces
@@ -64,4 +64,4 @@ Descarga el paquete integrado de releases o sigue la instalación del README.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

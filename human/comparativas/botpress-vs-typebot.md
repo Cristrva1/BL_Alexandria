@@ -10,7 +10,7 @@
 | Evítalo si… | necesitas todo self-host y sin nube; mira `rasa` o `typebot` | necesitas un agente abierto con razonamiento libre; mira `botpress` |
 | Ejecución | 🔀 híbrido | 🏠 local |
 | Setup | 🟡 medio | 🟡 medio |
-| Licencia | MIT | Otra (ver repo) |
+| Licencia | MIT | NOASSERTION |
 | Instalación | `npm i -g @botpress/cli` | Self-host con Docker Compose siguiendo la guía del repo (requiere PostgreSQL y SMTP), o… |
 
 ## Regla práctica
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

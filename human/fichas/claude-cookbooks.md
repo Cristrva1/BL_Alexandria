@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 54.5k | MIT | Jupyter Notebook | 2026-11-04 | 🆕 Aún no (sugerido) |
+| 54.7k | MIT | Jupyter Notebook | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
@@ -51,16 +51,16 @@ Son notebooks de Jupyter agrupados por tema (capacidades, herramientas, integrac
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Anthropic's Prompt Engineering Tutorial](prompt-eng-tutorial.md) | 39.2k | Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. |
-| [Anthropic Skills](anthropic-skills.md) | 192k | Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills. |
-| [promptfoo](promptfoo.md) | 27k | CLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad. |
+| [Anthropic's Prompt Engineering Tutorial](prompt-eng-tutorial.md) | 39.3k | Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. |
+| [Anthropic Skills](anthropic-skills.md) | 195k | Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills. |
+| [promptfoo](promptfoo.md) | 27.2k | CLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [OpenAI Cookbook](openai-cookbook.md) | 77k | Ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales. |
-| [Awesome LLM Apps](awesome-llm-apps.md) | 144k | Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM. |
+| [OpenAI Cookbook](openai-cookbook.md) | 77.1k | Ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales. |
+| [Awesome LLM Apps](awesome-llm-apps.md) | 145k | Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM. |
 
 ## Enlaces
 
@@ -68,4 +68,4 @@ Son notebooks de Jupyter agrupados por tema (capacidades, herramientas, integrac
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

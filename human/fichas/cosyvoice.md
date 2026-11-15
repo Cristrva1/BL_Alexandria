@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 24.4k | Apache-2.0 | Python | 2026-05-25 | 🆕 Aún no (sugerido) |
+| 24.4k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
@@ -49,14 +49,14 @@ Clona el repo, instala dependencias con conda y descarga los modelos.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Pipecat](pipecat.md) | 17.2k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
+| [Pipecat](pipecat.md) | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Fish Speech](fish-speech.md) | 33.7k | Sistema de texto a voz open source de alta calidad con clonación de voz multilingüe. |
-| [IndexTTS](index-tts.md) | 25k | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. |
+| [IndexTTS](index-tts.md) | 25.1k | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. |
 
 ## Enlaces
 
@@ -65,4 +65,4 @@ Clona el repo, instala dependencias con conda y descarga los modelos.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 11.6k | MIT | JavaScript | 2026-11-08 | 🆕 Aún no (sugerido) |
+| 11.6k | MIT | JavaScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -52,7 +52,7 @@ Se conecta por WebSocket a los servidores de WhatsApp como si fuera un dispositi
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [evolution-api](evolution-api.md) | 10.1k | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. |
-| [n8n](n8n.md) | 210k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
+| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Alternativas (elige una)
 
@@ -68,4 +68,4 @@ Se conecta por WebSocket a los servidores de WhatsApp como si fuera un dispositi
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

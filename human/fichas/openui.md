@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 15k | MIT | TypeScript | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 15.2k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,7 +49,7 @@ Sigue el README para instalar el SDK de React.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [CopilotKit](copilotkit.md) | 38.6k | Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. |
+| [CopilotKit](copilotkit.md) | 38.7k | Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. |
 
 ## Enlaces
 
@@ -58,4 +58,4 @@ Sigue el README para instalar el SDK de React.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

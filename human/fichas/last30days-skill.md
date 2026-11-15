@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 67.2k | MIT | Python | 2026-11-10 | 📦 Sí |
+| 67.7k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
@@ -51,8 +51,14 @@ Instálala como skill en Claude Code siguiendo el README (copia a `.claude/skill
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Agent-Reach](agent-reach.md) | 111k | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs. |
+| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Agent-Reach](agent-reach.md) | 112k | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs. |
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [social-media-research-skills](social-media-research-skills.md) | 6.5k | Skills para investigar publicaciones, comentarios, competidores y anuncios en redes mediante ScrapeCreators. |
 
 ## Enlaces
 
@@ -60,4 +66,4 @@ Instálala como skill en Claude Code siguiendo el README (copia a `.claude/skill
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

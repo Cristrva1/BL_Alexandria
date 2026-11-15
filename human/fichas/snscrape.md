@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 5.5k | GPL-3.0 | Python | 2023-11-15 | 📦 Sí |
+| 5.5k | GPL-3.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -51,13 +51,13 @@ Raspa los endpoints y páginas públicas de cada red, devolviendo los resultados
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [instaloader](instaloader.md) | 13.8k | Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de Instagram. |
+| [instaloader](instaloader.md) | 13.9k | Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de Instagram. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Agent-Reach](agent-reach.md) | 111k | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs. |
+| [Agent-Reach](agent-reach.md) | 112k | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs. |
 
 ## Enlaces
 
@@ -65,4 +65,4 @@ Raspa los endpoints y páginas públicas de cada red, devolviendo los resultados
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

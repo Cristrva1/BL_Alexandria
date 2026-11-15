@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 33.6k | MIT | TypeScript | 2026-10-21 | 📦 Sí |
+| 33.7k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
@@ -49,7 +49,7 @@ Reconciliador custom que traduce el árbol JSX a objetos de three.js y los actua
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [motion](motion.md) | 35k | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
+| [motion](motion.md) | 35.2k | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
 
 ## Enlaces
 
@@ -58,4 +58,4 @@ Reconciliador custom que traduce el árbol JSX a objetos de three.js y los actua
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

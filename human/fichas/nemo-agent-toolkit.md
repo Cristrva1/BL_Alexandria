@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 2.7k | Apache-2.0 | Python | 2026-11-09 | 📦 Sí |
+| 2.7k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
@@ -49,7 +49,7 @@ Compone agentes y herramientas mediante perfiles configurables y los conecta a m
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [langchain](langchain.md) | 149k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
+| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
 
 ## Enlaces
 
@@ -58,4 +58,4 @@ Compone agentes y herramientas mediante perfiles configurables y los conecta a m
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

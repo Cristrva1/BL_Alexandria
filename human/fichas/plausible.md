@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 29.8k | AGPL-3.0 | Elixir | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 29.8k | AGPL-3.0 | Elixir | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
@@ -51,7 +51,7 @@ Self-host con `plausible/community-edition` y Docker Compose.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Umami](umami.md) | 40k | Analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics. |
+| [Umami](umami.md) | 40.2k | Analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics. |
 | [Matomo](matomo.md) | 22k | Alternativa open source a Google Analytics con control total de los datos. |
 
 ## Enlaces
@@ -61,4 +61,4 @@ Self-host con `plausible/community-edition` y Docker Compose.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

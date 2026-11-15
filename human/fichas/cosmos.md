@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 12.3k | Otra (ver repo) | — | 2026-11-10 | 📦 Sí |
+| 12.4k | NOASSERTION | — | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
@@ -60,4 +60,4 @@ Ejecuta modelos generativos de mundo en Python sobre GPU para producir vídeo/es
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

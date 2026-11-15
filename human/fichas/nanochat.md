@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 60.4k | MIT | Python | 2026-09-07 | 📦 Sí |
+| 60.6k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
@@ -51,7 +51,7 @@ Encadena las etapas pretrain → SFT → inferencia en PyTorch sobre GPU, con sc
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [nanoGPT](nanogpt.md) | 64.6k | Implementación mínima y limpia de Andrej Karpathy para entrenar y afinar GPTs, pensada para que el código quepa en la cabeza y se entienda de extremo a extremo. |
+| [nanoGPT](nanogpt.md) | 64.8k | Implementación mínima y limpia de Andrej Karpathy para entrenar y afinar GPTs, pensada para que el código quepa en la cabeza y se entienda de extremo a extremo. |
 
 ## Enlaces
 
@@ -59,4 +59,4 @@ Encadena las etapas pretrain → SFT → inferencia en PyTorch sobre GPU, con sc
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

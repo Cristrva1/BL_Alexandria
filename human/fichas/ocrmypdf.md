@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 35.3k | MPL-2.0 | Python | 2026-11-09 | 🆕 Aún no (sugerido) |
+| 35.3k | MPL-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
@@ -49,8 +49,8 @@ Usa Tesseract para reconocer texto y lo coloca como capa invisible sobre cada p�
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Tesseract](tesseract.md) | 77.4k | Motor de OCR open source clásico, con más de 100 idiomas. |
-| [Docling](docling.md) | 70.4k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
+| [Tesseract](tesseract.md) | 77.5k | Motor de OCR open source clásico, con más de 100 idiomas. |
+| [Docling](docling.md) | 70.6k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
 
 ## Enlaces
 
@@ -59,4 +59,4 @@ Usa Tesseract para reconocer texto y lo coloca como capa invisible sobre cada p�
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

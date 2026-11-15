@@ -2,7 +2,7 @@
 
 # ⚖️ Comparativas
 
-62 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
+63 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
 
 ## 🤖 Automatización, Mensajería & CRM
 
@@ -46,6 +46,7 @@
 
 - [claude-mem vs Engram](claude-mem-vs-engram.md)
 - [DeepEval vs promptfoo](deepeval-vs-promptfoo.md)
+- [headroom vs rtk](headroom-vs-rtk.md)
 - [LightRAG vs RAGFlow](lightrag-vs-ragflow.md)
 - [Milvus vs Qdrant](milvus-vs-qdrant.md)
 - [SGLang vs vLLM](sglang-vs-vllm.md)
@@ -107,4 +108,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

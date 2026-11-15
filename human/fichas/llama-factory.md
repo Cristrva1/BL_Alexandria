@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 76k | Apache-2.0 | Python | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 76k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
@@ -58,7 +58,7 @@ Unifica recetas de entrenamiento sobre Transformers y PEFT con una UI Gradio (Ll
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Unsloth](unsloth.md) | 79.3k | Fine-tuning y ejecución local de LLM hasta 2 veces más rápido y con mucha menos memoria, ahora con UI. |
+| [Unsloth](unsloth.md) | 79.5k | Fine-tuning y ejecución local de LLM hasta 2 veces más rápido y con mucha menos memoria, ahora con UI. |
 
 ## Enlaces
 
@@ -67,4 +67,4 @@ Unifica recetas de entrenamiento sobre Transformers y PEFT con una UI Gradio (Ll
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

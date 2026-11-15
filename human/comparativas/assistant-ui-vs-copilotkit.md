@@ -5,7 +5,7 @@
 | | [assistant-ui](../fichas/assistant-ui.md) | [CopilotKit](../fichas/copilotkit.md) |
 |---|---|---|
 | Qué hace | Librería React y TypeScript para interfaces de chat con IA de calidad producción. | Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. |
-| ⭐ Estrellas | 13k | 38.6k |
+| ⭐ Estrellas | 13.2k | 38.7k |
 | Elígelo si… | necesitas una UI de chat pulida en React | quieres agentes que interactúen con la UI de tu app |
 | Evítalo si… | quieres agentes que manipulen tu app; mira `copilotkit` | solo necesitas una ventana de chat; mira `assistant-ui` |
 | Ejecución | 🏠 local | 🔀 híbrido |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

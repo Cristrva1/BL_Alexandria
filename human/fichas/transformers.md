@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 169k | Apache-2.0 | Python | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 169k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -51,7 +51,7 @@ Define arquitecturas en PyTorch y carga pesos desde Hugging Face Hub con pipelin
 |---|---:|---|
 | [PEFT](peft.md) | 21.9k | Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA. |
 | [TRL](trl.md) | 19.7k | Librería de Hugging Face para entrenar LLM con aprendizaje por refuerzo: SFT, DPO, GRPO y más. |
-| [PyTorch](pytorch.md) | 105k | Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. |
+| [PyTorch](pytorch.md) | 106k | Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. |
 
 ## Enlaces
 
@@ -60,4 +60,4 @@ Define arquitecturas en PyTorch y carga pesos desde Hugging Face Hub con pipelin
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 96.3k | MIT | Python | 2026-09-09 | 🆕 Aún no (sugerido) |
+| 96.5k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
@@ -51,9 +51,15 @@ Cada escena es una clase Python con objetos matemáticos (Mobjects) y animacione
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Kokoro](kokoro.md) | 10k | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. |
-| [MoviePy](moviepy.md) | 15.1k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
-| [FFmpeg](ffmpeg.md) | 66.9k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
+| [Kokoro](kokoro.md) | 10.1k | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. |
+| [MoviePy](moviepy.md) | 15.2k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
+| [FFmpeg](ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [manim](manim-community.md) | 42.5k | Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. |
 
 ## Enlaces
 
@@ -61,4 +67,4 @@ Cada escena es una clase Python con objetos matemáticos (Mobjects) y animacione
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

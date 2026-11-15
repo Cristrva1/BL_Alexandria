@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 71.5k | Apache-2.0 | TypeScript | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 71.6k | Apache-2.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
@@ -49,15 +49,15 @@ Instala la extensión "Cline" desde el marketplace de VS Code y configura tu pro
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Context7](context7.md) | 64.5k | Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. |
-| [Playwright MCP](playwright-mcp.md) | 39.4k | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
+| [Context7](context7.md) | 64.8k | Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. |
+| [Playwright MCP](playwright-mcp.md) | 39.7k | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Continue](continue.md) | 36.5k | Agente de código open source para VS Code, JetBrains y CI, con chat, autocompletado y revisiones. |
-| [Aider](aider.md) | 50k | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. |
+| [Aider](aider.md) | 50.1k | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. |
 
 ## Enlaces
 
@@ -66,4 +66,4 @@ Instala la extensión "Cline" desde el marketplace de VS Code y configura tu pro
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

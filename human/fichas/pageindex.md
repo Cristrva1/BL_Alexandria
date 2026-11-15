@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 40.3k | MIT | Python | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 40.4k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,13 +49,13 @@ Construye una jerarquía de secciones con resúmenes y el modelo decide qué ram
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Docling](docling.md) | 70.4k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
+| [Docling](docling.md) | 70.6k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [LightRAG](lightrag.md) | 40.6k | RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. |
+| [LightRAG](lightrag.md) | 40.7k | RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. |
 
 ## Enlaces
 
@@ -64,4 +64,4 @@ Construye una jerarquía de secciones con resúmenes y el modelo decide qué ram
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

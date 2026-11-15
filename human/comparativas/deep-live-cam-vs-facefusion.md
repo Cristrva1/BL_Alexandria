@@ -5,12 +5,12 @@
 | | [Deep-Live-Cam](../fichas/deep-live-cam.md) | [FaceFusion](../fichas/facefusion.md) |
 |---|---|---|
 | Qué hace | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. | Plataforma para intercambio y mejora de rostros en imágenes y video. |
-| ⭐ Estrellas | 97.9k | 30.6k |
+| ⭐ Estrellas | 98.1k | 30.7k |
 | Elígelo si… | necesitas swap en vivo legítimo con consentimiento | necesitas manipulación facial de calidad con consentimiento |
 | Evítalo si… | no puedes garantizar uso ético/consentimiento o no tienes GPU | no tienes consentimiento de las personas |
 | Ejecución | 🏠 local | 🏠 local |
 | Setup | 🔴 pesado | 🟡 medio |
-| Licencia | AGPL-3.0 | Otra (ver repo) |
+| Licencia | AGPL-3.0 | NOASSERTION |
 | Instalación | `git clone` | Sigue el instalador del README (requiere Python, ffmpeg y opcionalmente GPU). |
 
 ## Regla práctica
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

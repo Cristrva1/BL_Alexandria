@@ -5,7 +5,7 @@
 | | [FastMCP](../fichas/fastmcp.md) | [MCP Python SDK](../fichas/mcp-python-sdk.md) |
 |---|---|---|
 | Qué hace | La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. | SDK oficial de Python para crear servidores y clientes del Model Context Protocol. |
-| ⭐ Estrellas | 28.4k | 24.8k |
+| ⭐ Estrellas | 28.5k | 24.9k |
 | Elígelo si… | quieres crear un servidor MCP en Python rápido | quieres el SDK oficial con mínima dependencia |
 | Evítalo si… | trabajas en TypeScript; mira `mcp-typescript-sdk` | quieres funciones extra como auth y composición; mira `fastmcp` |
 | Ejecución | 🏠 local | 🏠 local |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

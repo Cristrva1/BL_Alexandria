@@ -5,7 +5,7 @@
 | | [browser-use](../fichas/browser-use.md) | [Stagehand](../fichas/stagehand.md) |
 |---|---|---|
 | Qué hace | Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. | SDK de Browserbase para automatizar el navegador mezclando código con acciones en lenguaje natural. |
-| ⭐ Estrellas | 121k | 26k |
+| ⭐ Estrellas | 121k | 26.1k |
 | Elígelo si… | quieres navegación como humano y tolerancia a cambios de UI | quieres automatización web robusta con un toque de IA en TS |
 | Evítalo si… | necesitas scripts deterministas y baratos (playwright) o no quieres depender de un LLM por paso | quieres que un agente navegue solo; mira `browser-use` |
 | Ejecución | 🔀 híbrido | 🔀 híbrido |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

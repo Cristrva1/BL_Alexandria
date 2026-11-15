@@ -5,7 +5,7 @@
 | | [SGLang](../fichas/sglang.md) | [vLLM](../fichas/vllm.md) |
 |---|---|---|
 | Qué hace | Framework de servicio de alto rendimiento para LLM y modelos multimodales. | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. |
-| ⭐ Estrellas | 38.7k | 96.7k |
+| ⭐ Estrellas | 38.9k | 96.9k |
 | Elígelo si… | buscas el máximo rendimiento en servicio de LLM | necesitas servir LLM abiertos a muchos usuarios en GPU |
 | Evítalo si… | quieres la opción más documentada; mira `vllm` | solo los usas tú en un portátil; mira `ollama` |
 | Ejecución | 🏠 local | 🏠 local |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

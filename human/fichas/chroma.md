@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 29.7k | Apache-2.0 | Rust | 2026-11-07 | 🆕 Aún no (sugerido) |
+| 29.7k | Apache-2.0 | Rust | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
@@ -50,16 +50,16 @@ Núcleo en Rust con índices HNSW y metadatos; corre en proceso o como servidor 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [LlamaIndex](llama-index.md) | 52.9k | Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. |
-| [langchain](langchain.md) | 149k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
+| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Qdrant](qdrant.md) | 35.5k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
-| [pgvector](pgvector.md) | 23.6k | Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales. |
-| [Milvus](milvus.md) | 46.6k | Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. |
-| [Faiss](faiss.md) | 41.3k | Librería de Meta para búsqueda de similitud y clustering de vectores densos, en CPU y GPU. |
+| [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
+| [pgvector](pgvector.md) | 23.7k | Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales. |
+| [Milvus](milvus.md) | 46.7k | Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. |
+| [Faiss](faiss.md) | 41.7k | Librería de Meta para búsqueda de similitud y clustering de vectores densos, en CPU y GPU. |
 
 ## Enlaces
 
@@ -68,4 +68,4 @@ Núcleo en Rust con índices HNSW y metadatos; corre en proceso o como servidor 
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

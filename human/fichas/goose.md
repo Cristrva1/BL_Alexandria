@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 56.4k | Apache-2.0 | Rust | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 56.6k | Apache-2.0 | Rust | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
@@ -49,15 +49,15 @@ Descarga la app desde los releases o `curl -fsSL https://github.com/block/goose/
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Playwright MCP](playwright-mcp.md) | 39.4k | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
-| [GitHub MCP Server](github-mcp-server.md) | 34.4k | Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código. |
+| [Playwright MCP](playwright-mcp.md) | 39.7k | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
+| [GitHub MCP Server](github-mcp-server.md) | 34.5k | Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [OpenCode](opencode.md) | 226k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
-| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
+| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 | [Open Interpreter](open-interpreter.md) | 68.9k | Agente de código para modelos abiertos como Kimi y GLM, pensado para correr con modelos locales o baratos. |
 
 ## Enlaces
@@ -67,4 +67,4 @@ Descarga la app desde los releases o `curl -fsSL https://github.com/block/goose/
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

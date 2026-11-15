@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 35k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
+| 35.2k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,14 +49,14 @@ Componentes `motion.*` y hooks que interpolan props de estado y manejan entradas
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [magicui](magicui.md) | 23.2k | Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio. |
-| [react-three-fiber](react-three-fiber.md) | 33.6k | Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. |
+| [magicui](magicui.md) | 23.3k | Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio. |
+| [react-three-fiber](react-three-fiber.md) | 33.7k | Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Anime.js](animejs.md) | 74.5k | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. |
+| [Anime.js](animejs.md) | 74.7k | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. |
 
 ## Enlaces
 
@@ -66,4 +66,4 @@ Componentes `motion.*` y hooks que interpolan props de estado y manejan entradas
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

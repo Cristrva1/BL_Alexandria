@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 55.7k | Otra (ver repo) | Python | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 55.8k | NOASSERTION | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
@@ -51,14 +51,14 @@ Un servidor Python con ORM propio sobre PostgreSQL carga módulos que añaden mo
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [n8n](n8n.md) | 210k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
+| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 | [metabase](metabase.md) | 50.3k | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [ERPNext](erpnext.md) | 41.1k | ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura. |
+| [ERPNext](erpnext.md) | 41.3k | ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura. |
 
 ## Enlaces
 
@@ -67,4 +67,4 @@ Un servidor Python con ORM propio sobre PostgreSQL carga módulos que añaden mo
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

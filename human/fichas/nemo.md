@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 18.7k | Apache-2.0 | Python | 2026-11-10 | 📦 Sí |
+| 18.8k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
@@ -51,13 +51,13 @@ Colección de modelos y recetas sobre PyTorch Lightning optimizadas para GPUs NV
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Pipecat](pipecat.md) | 17.2k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
+| [Pipecat](pipecat.md) | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [whisperX](whisperx.md) | 25.2k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
+| [whisperX](whisperx.md) | 25.3k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
 
 ## Enlaces
 
@@ -66,4 +66,4 @@ Colección de modelos y recetas sobre PyTorch Lightning optimizadas para GPUs NV
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

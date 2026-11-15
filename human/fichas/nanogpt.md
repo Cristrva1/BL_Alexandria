@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 64.6k | MIT | Python | 2025-11-12 | 📦 Sí |
+| 64.8k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
@@ -51,7 +51,7 @@ Define el modelo GPT y su bucle de entrenamiento en PyTorch sobre GPU, reproduci
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [nanochat](nanochat.md) | 60.4k | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. |
+| [nanochat](nanochat.md) | 60.6k | Pipeline full-stack mínimo de Andrej Karpathy para entrenar un "ChatGPT" de principio a fin, cubriendo desde el preentrenamiento hasta el chat servible. |
 
 ## Alternativas (elige una)
 
@@ -65,4 +65,4 @@ Define el modelo GPT y su bucle de entrenamiento en PyTorch sobre GPU, reproduci
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

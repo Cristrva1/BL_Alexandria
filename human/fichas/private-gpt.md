@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 57.6k | Apache-2.0 | Python | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 57.6k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
@@ -50,13 +50,13 @@ Clona el repo y sigue la guía de instalación con `poetry` o Docker.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [Qdrant](qdrant.md) | 35.5k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
+| [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [AnythingLLM](anything-llm.md) | 68.1k | App todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. |
+| [AnythingLLM](anything-llm.md) | 68.3k | App todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. |
 
 ## Enlaces
 
@@ -65,4 +65,4 @@ Clona el repo y sigue la guía de instalación con `poetry` o Docker.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

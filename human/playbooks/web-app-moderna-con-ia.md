@@ -23,10 +23,10 @@ flowchart LR
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
 | 1 | [ui](../fichas/ui.md) | Componentes accesibles que copias a tu código (shadcn/ui) | 128k | `npx shadcn@latest init` |
-| 2 | [tailwindcss](../fichas/tailwindcss.md) | Estilos utilitarios | 98.7k | `npm i tailwindcss` |
-| 3 | [AI SDK (Vercel)](../fichas/vercel-ai.md) | AI SDK: streaming, tools y llamadas a cualquier LLM | 27.9k | `npm i ai` |
-| 4 | [assistant-ui](../fichas/assistant-ui.md) | Componentes de chat listos para conectar al AI SDK | 13k | `npx assistant-ui@latest init` |
-| 5 | [motion](../fichas/motion.md) | Animaciones e interacciones | 35k | `npm i motion` |
+| 2 | [tailwindcss](../fichas/tailwindcss.md) | Estilos utilitarios | 98.6k | `npm i tailwindcss` |
+| 3 | [AI SDK (Vercel)](../fichas/vercel-ai.md) | AI SDK: streaming, tools y llamadas a cualquier LLM | 28k | `npm i ai` |
+| 4 | [assistant-ui](../fichas/assistant-ui.md) | Componentes de chat listos para conectar al AI SDK | 13.2k | `npx assistant-ui@latest init` |
+| 5 | [motion](../fichas/motion.md) | Animaciones e interacciones | 35.2k | `npm i motion` |
 | 6 | [Recharts](../fichas/recharts.md) | Gráficos para dashboards | 27.7k | `npm i recharts` |
 | 7 | [swr](../fichas/swr.md) | Fetching y caché de datos en React | 32.5k | `npm i swr` |
 
@@ -48,4 +48,4 @@ Si es una landing estática, Tailwind y un par de componentes bastan. Si es un d
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 394k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
+| 394k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
@@ -52,13 +52,13 @@ Un gateway local conecta canales de mensajería con un agente que usa herramient
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [NemoClaw](nemoclaw.md) | 23k | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. |
-| [claude-mem](claude-mem.md) | 116k | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. |
+| [claude-mem](claude-mem.md) | 117k | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [hermes-agent](hermes-agent.md) | 262k | Entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. |
+| [hermes-agent](hermes-agent.md) | 263k | Entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. |
 | [Mercury Agent](mercury-agent.md) | 3.9k | Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web. |
 
 ## Enlaces
@@ -68,4 +68,4 @@ Un gateway local conecta canales de mensajería con un agente que usa herramient
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

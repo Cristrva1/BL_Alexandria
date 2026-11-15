@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 128k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
+| 128k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,7 +49,7 @@ CLI que copia el código fuente de cada componente (Radix + Tailwind) directamen
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [tailwindcss](tailwindcss.md) | 98.7k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
+| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
 | [plasmic](plasmic.md) | 7.2k | Builder visual para apps y sitios conectado a tu propia base de código, que permite diseñar y publicar sin perder el control del código real. |
 
 ## Alternativas (elige una)
@@ -68,4 +68,4 @@ CLI que copia el código fuente de cada componente (Radix + Tailwind) directamen
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

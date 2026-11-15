@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 14.8k | Apache-2.0 | Python | 2026-11-09 | 🆕 Aún no (sugerido) |
+| 14.9k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
@@ -51,7 +51,7 @@ Cada sandbox es una microVM Firecracker controlada por SDK; el agente envía có
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [smolagents](smolagents.md) | 30.3k | Librería mínima de Hugging Face para agentes que razonan escribiendo y ejecutando código Python. |
+| [smolagents](smolagents.md) | 30.4k | Librería mínima de Hugging Face para agentes que razonan escribiendo y ejecutando código Python. |
 | [Open SWE](open-swe.md) | 11.2k | Agente de código asíncrono de LangChain para montar tu propio agente interno de ingeniería. |
 
 ## Alternativas (elige una)
@@ -67,4 +67,4 @@ Cada sandbox es una microVM Firecracker controlada por SDK; el agente envía có
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

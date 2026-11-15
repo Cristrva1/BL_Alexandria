@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 41.1k | GPL-3.0 | Python | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 41.3k | GPL-3.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
@@ -51,14 +51,14 @@ Corre sobre Frappe, un framework Python con metadatos que genera formularios, pe
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [n8n](n8n.md) | 210k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
+| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 | [metabase](metabase.md) | 50.3k | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Odoo](odoo.md) | 55.7k | Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. |
+| [Odoo](odoo.md) | 55.8k | Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. |
 
 ## Enlaces
 
@@ -67,4 +67,4 @@ Corre sobre Frappe, un framework Python con metadatos que genera formularios, pe
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

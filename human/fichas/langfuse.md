@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 37.3k | Otra (ver repo) | TypeScript | 2026-11-10 | 📦 Sí |
+| 37.4k | NOASSERTION | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
@@ -49,17 +49,17 @@ Docker Compose para self-host (Postgres + backend + frontend) o cuenta cloud; SD
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [langchain](langchain.md) | 149k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
-| [litellm](litellm.md) | 63k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
+| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
+| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 | [ag2](ag2.md) | 5.1k | Framework maduro para sistemas multiagente con patrones de colaboración (heredero directo de AutoGen). |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Phoenix](phoenix.md) | 12.2k | Plataforma open source de Arize para observar, trazar y evaluar apps de LLM, con OpenTelemetry. |
-| [Opik](opik.md) | 23.3k | Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes. |
-| [MLflow](mlflow.md) | 28.7k | Plataforma open source para el ciclo de vida de modelos de ML y apps de LLM: experimentos, trazas y registro. |
+| [Phoenix](phoenix.md) | 12.3k | Plataforma open source de Arize para observar, trazar y evaluar apps de LLM, con OpenTelemetry. |
+| [Opik](opik.md) | 23.4k | Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes. |
+| [MLflow](mlflow.md) | 28.8k | Plataforma open source para el ciclo de vida de modelos de ML y apps de LLM: experimentos, trazas y registro. |
 
 ## Enlaces
 
@@ -70,4 +70,4 @@ Docker Compose para self-host (Postgres + backend + frontend) o cuenta cloud; SD
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

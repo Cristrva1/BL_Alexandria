@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 118k | MIT | JavaScript | 2026-11-10 | 📦 Sí |
+| 118k | MIT | JavaScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
@@ -49,8 +49,8 @@ Abstrae WebGL en un grafo de escena (escenas, cámaras, luces, mallas) y gestion
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [react-three-fiber](react-three-fiber.md) | 33.6k | Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. |
-| [GSAP](gsap.md) | 30.4k | Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. |
+| [react-three-fiber](react-three-fiber.md) | 33.7k | Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. |
+| [GSAP](gsap.md) | 30.6k | Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. |
 
 ## Enlaces
 
@@ -59,4 +59,4 @@ Abstrae WebGL en un grafo de escena (escenas, cámaras, luces, mallas) y gestion
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -3,6 +3,20 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `archify`
+role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=diagramas,agent-skills,ai-agents,architecture-diagram,claude-code,claude-skills,codex,coding-agents · tools=claude-code,codex
+
+**Qué es:** Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. El agente transforma una descripción en una visualización que se puede abrir y explorar en el navegador.
+**Stack:** JavaScript, Node.js
+**Repo:** https://github.com/tt-a1i/archify
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/archify/). Si necesitas el código: git clone https://github.com/tt-a1i/archify`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres explicar una arquitectura o un plan mediante una visualización interactiva
+**Evita si:** el formato de salida no encaja con tus documentos
+**Combina con:** `codex`
+
 ## `docling`
 role=library · exec=local · setup=easy · mcp=True · prov=— · tags=docs,pdf,ocr,python
 

@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 11.8k | Apache-2.0 | TypeScript | 2026-11-06 | 🆕 Aún no (sugerido) |
+| 11.9k | Apache-2.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
@@ -55,7 +55,7 @@ Un LLM genera estructura y contenido, que se aplica sobre plantillas HTML y se e
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [ppt-master](ppt-master.md) | 75.5k | Generador que transforma documentos de texto en presentaciones PowerPoint (.pptx) editables nativas, listas para abrir y ajustar en Office. |
+| [ppt-master](ppt-master.md) | 76.8k | Generador que transforma documentos de texto en presentaciones PowerPoint (.pptx) editables nativas, listas para abrir y ajustar en Office. |
 
 ## Enlaces
 
@@ -64,4 +64,4 @@ Un LLM genera estructura y contenido, que se aplica sobre plantillas HTML y se e
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

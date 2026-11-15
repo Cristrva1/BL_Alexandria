@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 14.6k | MIT | TypeScript | 2026-10-13 | 📦 Sí |
+| 14.6k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
@@ -49,7 +49,7 @@ Descarga el instalador desde los releases.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [hermes-agent](hermes-agent.md) | 262k | Entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. |
+| [hermes-agent](hermes-agent.md) | 263k | Entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. |
 
 ## Enlaces
 
@@ -58,4 +58,4 @@ Descarga el instalador desde los releases.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 109k | Apache-2.0 | TypeScript | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 109k | Apache-2.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
@@ -49,16 +49,16 @@ Un CLI en Node.js orquesta herramientas (archivos, shell, búsqueda web, MCP) co
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Stitch Skills](stitch-skills.md) | 8.7k | Colección de skills de agente para trabajar con el servidor MCP de Google Stitch. |
-| [Context7](context7.md) | 64.5k | Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. |
+| [Stitch Skills](stitch-skills.md) | 8.9k | Colección de skills de agente para trabajar con el servidor MCP de Google Stitch. |
+| [Context7](context7.md) | 64.8k | Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 | [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
-| [OpenCode](opencode.md) | 226k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
+| [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 
 ## Enlaces
 
@@ -67,4 +67,4 @@ Un CLI en Node.js orquesta herramientas (archivos, shell, búsqueda web, MCP) co
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

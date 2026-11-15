@@ -1,0 +1,1540 @@
+{
+  "user": "Cristrva1",
+  "checked_at": "2026-11-14",
+  "source": "https://api.github.com/users/Cristrva1/starred",
+  "count": 284,
+  "added_ids": [
+    "rea-video",
+    "agent-desktop",
+    "edge-tts",
+    "security-audit-skill",
+    "ai-engineering-hub",
+    "ai-youtube-shorts-generator",
+    "ace-step-1.5",
+    "social-media-agent",
+    "short-video-factory",
+    "local-deep-research",
+    "social-media-research-skills",
+    "awesome-chrome-devtools",
+    "archify",
+    "compai-crm",
+    "muse-spark",
+    "rtk",
+    "codex-plugin-cc",
+    "gemini-skills",
+    "nodeterm",
+    "codex-chatgpt-web",
+    "grok-plugin-claude-code",
+    "paperclip",
+    "hermes-agent-self-evolution",
+    "globalbuildingatlas",
+    "whatsmeow",
+    "langchain4j",
+    "pythia",
+    "transformers.js",
+    "annas-mcp",
+    "manim-community",
+    "warp",
+    "tensorrt-llm",
+    "open-deep-research",
+    "bionemo-recipes",
+    "cal.diy",
+    "train-llm-from-scratch",
+    "freedomain",
+    "palmier-pro",
+    "opencode-legacy",
+    "mimo-code",
+    "osiris",
+    "backdoor",
+    "masterdnsvpn",
+    "music-megathread",
+    "nextcloud-server",
+    "ruview",
+    "financial-services",
+    "dexter",
+    "metagpt",
+    "awesome-agents",
+    "500-ai-agents-projects",
+    "autohedge",
+    "camofox-browser",
+    "finceptterminal",
+    "claude-token-efficient",
+    "front-end-checklist",
+    "qlib",
+    "superclaude-framework",
+    "quantharness",
+    "agent-browser",
+    "claude-quickstarts",
+    "free-for-dev",
+    "system-prompts-and-models-of-ai-tools",
+    "autoskills",
+    "openclaude",
+    "chartanalyst",
+    "stocks-analyst",
+    "tensorflow",
+    "python-machine-learning-book",
+    "machine-learning-for-trading",
+    "machinelearning",
+    "awesome-machine-learning",
+    "bigdata",
+    "hudi",
+    "intellitrader",
+    "open-sol-bot",
+    "crypto-trader",
+    "binance-trader",
+    "data-analyst-roadmap",
+    "dataanalystportfolioprojects",
+    "tradingagents",
+    "chatgpt-system-prompt",
+    "chatbox",
+    "chatgpt-dan",
+    "opencursor",
+    "scrapydweb",
+    "awesome-web-scraping"
+  ],
+  "renamed": [
+    {
+      "id": "arcads-claude-code",
+      "old": "krusemediallc/arcads-claude-code",
+      "new": "mrpaidsocial/arcads-claude-code-mrpaidsocial"
+    },
+    {
+      "id": "openmontage",
+      "old": "calesthio/OpenMontage",
+      "new": "OpenMontageInc/OpenMontage"
+    },
+    {
+      "id": "wan2gp",
+      "old": "deepbeepmeep/Wan2GP",
+      "new": "deepbeepmeep/WanGP"
+    }
+  ],
+  "local_inventory": {
+    "checked_at": "2026-11-14",
+    "status": "library_deleted_by_user",
+    "configured_path": "../Repositorios_Prueba",
+    "previously_registered": 209
+  },
+  "stars": [
+    {
+      "github_id": 1438661890,
+      "full_name": "JuneYaooo/rea-video",
+      "catalog_id": "rea-video"
+    },
+    {
+      "github_id": 1161958643,
+      "full_name": "vercel-labs/agent-desktop",
+      "catalog_id": "agent-desktop"
+    },
+    {
+      "github_id": 366146447,
+      "full_name": "rany2/edge-tts",
+      "catalog_id": "edge-tts"
+    },
+    {
+      "github_id": 1273427276,
+      "full_name": "cloudflare/security-audit-skill",
+      "catalog_id": "security-audit-skill"
+    },
+    {
+      "github_id": 359952601,
+      "full_name": "pgvector/pgvector",
+      "catalog_id": "pgvector"
+    },
+    {
+      "github_id": 876064934,
+      "full_name": "patchy631/ai-engineering-hub",
+      "catalog_id": "ai-engineering-hub"
+    },
+    {
+      "github_id": 5905330,
+      "full_name": "greensock/GSAP",
+      "catalog_id": "gsap"
+    },
+    {
+      "github_id": 821280833,
+      "full_name": "Anil-matcha/AI-Youtube-Shorts-Generator",
+      "catalog_id": "ai-youtube-shorts-generator"
+    },
+    {
+      "github_id": 1050131556,
+      "full_name": "ace-step/ACE-Step-1.5",
+      "catalog_id": "ace-step-1.5"
+    },
+    {
+      "github_id": 892240018,
+      "full_name": "langchain-ai/social-media-agent",
+      "catalog_id": "social-media-agent"
+    },
+    {
+      "github_id": 1016509116,
+      "full_name": "YILS-LIN/short-video-factory",
+      "catalog_id": "short-video-factory"
+    },
+    {
+      "github_id": 929868765,
+      "full_name": "LearningCircuit/local-deep-research",
+      "catalog_id": "local-deep-research"
+    },
+    {
+      "github_id": 1261571908,
+      "full_name": "ScrapeCreators/social-media-research-skills",
+      "catalog_id": "social-media-research-skills"
+    },
+    {
+      "github_id": 53394547,
+      "full_name": "ChromeDevTools/awesome-chrome-devtools",
+      "catalog_id": "awesome-chrome-devtools"
+    },
+    {
+      "github_id": 1054793726,
+      "full_name": "ChromeDevTools/chrome-devtools-mcp",
+      "catalog_id": "chrome-devtools-mcp"
+    },
+    {
+      "github_id": 1211139949,
+      "full_name": "tt-a1i/archify",
+      "catalog_id": "archify"
+    },
+    {
+      "github_id": 1061953414,
+      "full_name": "anthropics/skills",
+      "catalog_id": "anthropic-skills"
+    },
+    {
+      "github_id": 1318768894,
+      "full_name": "trycompai/crm",
+      "catalog_id": "compai-crm"
+    },
+    {
+      "github_id": 1364404896,
+      "full_name": "muse-spark-app/muse-spark",
+      "catalog_id": "muse-spark"
+    },
+    {
+      "github_id": 725205304,
+      "full_name": "unslothai/unsloth",
+      "catalog_id": "unsloth"
+    },
+    {
+      "github_id": 1139971460,
+      "full_name": "rtk-ai/rtk",
+      "catalog_id": "rtk"
+    },
+    {
+      "github_id": 1196321162,
+      "full_name": "openai/codex-plugin-cc",
+      "catalog_id": "codex-plugin-cc"
+    },
+    {
+      "github_id": 937253475,
+      "full_name": "anthropics/claude-code",
+      "catalog_id": "claude-code"
+    },
+    {
+      "github_id": 1206390571,
+      "full_name": "debpalash/VoiceStudio",
+      "catalog_id": "omnivoice-studio"
+    },
+    {
+      "github_id": 274495425,
+      "full_name": "remotion-dev/remotion",
+      "catalog_id": "remotion"
+    },
+    {
+      "github_id": 1151113612,
+      "full_name": "google-gemini/gemini-skills",
+      "catalog_id": "gemini-skills"
+    },
+    {
+      "github_id": 1270584305,
+      "full_name": "eneskirca/nodeterm",
+      "catalog_id": "nodeterm"
+    },
+    {
+      "github_id": 1312807575,
+      "full_name": "miuuyy/codex-chatgpt-web",
+      "catalog_id": "codex-chatgpt-web"
+    },
+    {
+      "github_id": 1268596025,
+      "full_name": "zachdunn/grok-plugin-claude-code",
+      "catalog_id": "grok-plugin-claude-code"
+    },
+    {
+      "github_id": 1170821064,
+      "full_name": "paperclipai/paperclip",
+      "catalog_id": "paperclip"
+    },
+    {
+      "github_id": 1176753219,
+      "full_name": "NousResearch/hermes-agent-self-evolution",
+      "catalog_id": "hermes-agent-self-evolution"
+    },
+    {
+      "github_id": 700117650,
+      "full_name": "SWE-bench/SWE-bench",
+      "catalog_id": "swe-bench"
+    },
+    {
+      "github_id": 785613457,
+      "full_name": "zhu-xlab/GlobalBuildingAtlas",
+      "catalog_id": "globalbuildingatlas"
+    },
+    {
+      "github_id": 1195360525,
+      "full_name": "OpenMontageInc/OpenMontage",
+      "catalog_id": "openmontage"
+    },
+    {
+      "github_id": 414333257,
+      "full_name": "tulir/whatsmeow",
+      "catalog_id": "whatsmeow"
+    },
+    {
+      "github_id": 955620917,
+      "full_name": "upstash/context7",
+      "catalog_id": "context7"
+    },
+    {
+      "github_id": 950355259,
+      "full_name": "samuelgursky/davinci-resolve-mcp",
+      "catalog_id": "davinci-resolve-mcp"
+    },
+    {
+      "github_id": 1151702019,
+      "full_name": "firecrawl/pdf-inspector",
+      "catalog_id": "pdf-inspector"
+    },
+    {
+      "github_id": 1153213024,
+      "full_name": "DojoCodingLabs/remotion-superpowers",
+      "catalog_id": "remotion-superpowers"
+    },
+    {
+      "github_id": 940296815,
+      "full_name": "deepbeepmeep/WanGP",
+      "catalog_id": "wan2gp"
+    },
+    {
+      "github_id": 638513786,
+      "full_name": "Anil-matcha/Open-Generative-AI",
+      "catalog_id": "open-generative-ai"
+    },
+    {
+      "github_id": 1159234860,
+      "full_name": "Gentleman-Programming/engram",
+      "catalog_id": "engram"
+    },
+    {
+      "github_id": 656264456,
+      "full_name": "langchain4j/langchain4j",
+      "catalog_id": "langchain4j"
+    },
+    {
+      "github_id": 1281865046,
+      "full_name": "jangles-byte/Pythia",
+      "catalog_id": "pythia"
+    },
+    {
+      "github_id": 601161044,
+      "full_name": "huggingface/transformers.js",
+      "catalog_id": "transformers.js"
+    },
+    {
+      "github_id": 1103012935,
+      "full_name": "openclaw/openclaw",
+      "catalog_id": "openclaw"
+    },
+    {
+      "github_id": 793784055,
+      "full_name": "google-research/timesfm",
+      "catalog_id": "timesfm"
+    },
+    {
+      "github_id": 1124219907,
+      "full_name": "HKUDS/DeepTutor",
+      "catalog_id": "deeptutor"
+    },
+    {
+      "github_id": 894891699,
+      "full_name": "mrmn2/PdfDing",
+      "catalog_id": "pdfding"
+    },
+    {
+      "github_id": 1198651456,
+      "full_name": "mrpaidsocial/arcads-claude-code-mrpaidsocial",
+      "catalog_id": "arcads-claude-code"
+    },
+    {
+      "github_id": 1215974868,
+      "full_name": "cosmicstack-labs/mercury-agent",
+      "catalog_id": "mercury-agent"
+    },
+    {
+      "github_id": 1166102148,
+      "full_name": "DeusData/codebase-memory-mcp",
+      "catalog_id": "codebase-memory-mcp"
+    },
+    {
+      "github_id": 1263648864,
+      "full_name": "cobusgreyling/loop-engineering",
+      "catalog_id": "loop-engineering"
+    },
+    {
+      "github_id": 1016571503,
+      "full_name": "iosifache/annas-mcp",
+      "catalog_id": "annas-mcp"
+    },
+    {
+      "github_id": 978411532,
+      "full_name": "google-gemini/computer-use-preview",
+      "catalog_id": "computer-use-preview"
+    },
+    {
+      "github_id": 1044296738,
+      "full_name": "microsoft/VibeVoice",
+      "catalog_id": "vibevoice"
+    },
+    {
+      "github_id": 1140828984,
+      "full_name": "ysharma3501/LuxTTS",
+      "catalog_id": "luxtts"
+    },
+    {
+      "github_id": 599547518,
+      "full_name": "vllm-project/vllm",
+      "catalog_id": "vllm"
+    },
+    {
+      "github_id": 1614410,
+      "full_name": "FFmpeg/FFmpeg",
+      "catalog_id": "ffmpeg"
+    },
+    {
+      "github_id": 1140843380,
+      "full_name": "mvanhorn/last30days-skill",
+      "catalog_id": "last30days-skill"
+    },
+    {
+      "github_id": 1131513930,
+      "full_name": "ZhuLinsen/daily_stock_analysis",
+      "catalog_id": "daily-stock-analysis"
+    },
+    {
+      "github_id": 1266797999,
+      "full_name": "DietrichGebert/ponytail",
+      "catalog_id": "ponytail"
+    },
+    {
+      "github_id": 1108848699,
+      "full_name": "google-labs-code/stitch-sdk",
+      "catalog_id": "stitch-sdk"
+    },
+    {
+      "github_id": 1135847870,
+      "full_name": "google-labs-code/stitch-skills",
+      "catalog_id": "stitch-skills"
+    },
+    {
+      "github_id": 1137388347,
+      "full_name": "remotion-dev/skills",
+      "catalog_id": "skills-remotion"
+    },
+    {
+      "github_id": 1213049020,
+      "full_name": "browser-use/browser-harness",
+      "catalog_id": "browser-harness"
+    },
+    {
+      "github_id": 265122478,
+      "full_name": "ManimCommunity/manim",
+      "catalog_id": "manim-community"
+    },
+    {
+      "github_id": 1208221543,
+      "full_name": "browser-use/video-use",
+      "catalog_id": "video-use"
+    },
+    {
+      "github_id": 1100776768,
+      "full_name": "anthropics/claude-plugins-official",
+      "catalog_id": "claude-plugins-official"
+    },
+    {
+      "github_id": 781022269,
+      "full_name": "anthropics/prompt-eng-interactive-tutorial",
+      "catalog_id": "prompt-eng-tutorial"
+    },
+    {
+      "github_id": 471527576,
+      "full_name": "NVIDIA/warp",
+      "catalog_id": "warp"
+    },
+    {
+      "github_id": 679366051,
+      "full_name": "NVIDIA/TensorRT-LLM",
+      "catalog_id": "tensorrt-llm"
+    },
+    {
+      "github_id": 927970248,
+      "full_name": "langchain-ai/langgraph-supervisor-py",
+      "catalog_id": "langgraph-supervisor-py"
+    },
+    {
+      "github_id": 741100585,
+      "full_name": "langchain-ai/langgraphjs",
+      "catalog_id": "langgraphjs"
+    },
+    {
+      "github_id": 987975584,
+      "full_name": "langchain-ai/open-swe",
+      "catalog_id": "open-swe"
+    },
+    {
+      "github_id": 891642747,
+      "full_name": "langchain-ai/open_deep_research",
+      "catalog_id": "open-deep-research"
+    },
+    {
+      "github_id": 887568442,
+      "full_name": "langchain-ai/agent-protocol",
+      "catalog_id": "agent-protocol"
+    },
+    {
+      "github_id": 929158279,
+      "full_name": "langchain-ai/langchain-mcp-adapters",
+      "catalog_id": "langchain-mcp-adapters"
+    },
+    {
+      "github_id": 1027384981,
+      "full_name": "langchain-ai/deepagents",
+      "catalog_id": "deepagents"
+    },
+    {
+      "github_id": 1182547092,
+      "full_name": "NVIDIA/NemoClaw",
+      "catalog_id": "nemoclaw"
+    },
+    {
+      "github_id": 705428944,
+      "full_name": "NVIDIA-BioNeMo/bionemo-recipes",
+      "catalog_id": "bionemo-recipes"
+    },
+    {
+      "github_id": 1273138090,
+      "full_name": "baidu/Unlimited-OCR",
+      "catalog_id": "unlimited-ocr"
+    },
+    {
+      "github_id": 629494390,
+      "full_name": "NVIDIA-NeMo/Guardrails",
+      "catalog_id": "guardrails"
+    },
+    {
+      "github_id": 828119367,
+      "full_name": "yamadashy/repomix",
+      "catalog_id": "repomix"
+    },
+    {
+      "github_id": 680120071,
+      "full_name": "microsoft/autogen",
+      "catalog_id": "autogen"
+    },
+    {
+      "github_id": 942771284,
+      "full_name": "github/github-mcp-server",
+      "catalog_id": "github-mcp-server"
+    },
+    {
+      "github_id": 1246839757,
+      "full_name": "anthropics/defending-code-reference-harness",
+      "catalog_id": "defending-code-reference-harness"
+    },
+    {
+      "github_id": 8681349,
+      "full_name": "huginn/huginn",
+      "catalog_id": "huginn"
+    },
+    {
+      "github_id": 162405963,
+      "full_name": "gradio-app/gradio",
+      "catalog_id": "gradio"
+    },
+    {
+      "github_id": 333483116,
+      "full_name": "dgtlmoon/changedetection.io",
+      "catalog_id": "changedetection"
+    },
+    {
+      "github_id": 90356372,
+      "full_name": "ArchiveBox/ArchiveBox",
+      "catalog_id": "archivebox"
+    },
+    {
+      "github_id": 573661753,
+      "full_name": "activepieces/activepieces",
+      "catalog_id": "activepieces"
+    },
+    {
+      "github_id": 202291859,
+      "full_name": "chatwoot/chatwoot",
+      "catalog_id": "chatwoot"
+    },
+    {
+      "github_id": 350360184,
+      "full_name": "calcom/cal.diy",
+      "catalog_id": "cal.diy"
+    },
+    {
+      "github_id": 275993885,
+      "full_name": "appsmithorg/appsmith",
+      "catalog_id": "appsmith"
+    },
+    {
+      "github_id": 352933140,
+      "full_name": "ToolJet/ToolJet",
+      "catalog_id": "tooljet"
+    },
+    {
+      "github_id": 190729906,
+      "full_name": "Budibase/budibase",
+      "catalog_id": "budibase"
+    },
+    {
+      "github_id": 915233417,
+      "full_name": "punkpeye/awesome-mcp-clients",
+      "catalog_id": "awesome-mcp-clients"
+    },
+    {
+      "github_id": 1548202,
+      "full_name": "matomo-org/matomo",
+      "catalog_id": "matomo"
+    },
+    {
+      "github_id": 896335270,
+      "full_name": "punkpeye/awesome-mcp-servers",
+      "catalog_id": "awesome-mcp-servers"
+    },
+    {
+      "github_id": 349321229,
+      "full_name": "TencentARC/GFPGAN",
+      "catalog_id": "gfpgan"
+    },
+    {
+      "github_id": 685001175,
+      "full_name": "cubiq/ComfyUI_IPAdapter_plus",
+      "catalog_id": "comfyui-ipadapter-plus"
+    },
+    {
+      "github_id": 600798098,
+      "full_name": "Mikubill/sd-webui-controlnet",
+      "catalog_id": "sd-webui-controlnet"
+    },
+    {
+      "github_id": 595893961,
+      "full_name": "lllyasviel/ControlNet",
+      "catalog_id": "controlnet"
+    },
+    {
+      "github_id": 676676006,
+      "full_name": "lllyasviel/Fooocus",
+      "catalog_id": "fooocus"
+    },
+    {
+      "github_id": 525592995,
+      "full_name": "invoke-ai/InvokeAI",
+      "catalog_id": "invokeai"
+    },
+    {
+      "github_id": 498011141,
+      "full_name": "huggingface/diffusers",
+      "catalog_id": "diffusers"
+    },
+    {
+      "github_id": 527591471,
+      "full_name": "AUTOMATIC1111/stable-diffusion-webui",
+      "catalog_id": "stable-diffusion-webui"
+    },
+    {
+      "github_id": 193215554,
+      "full_name": "n8n-io/n8n",
+      "catalog_id": "n8n"
+    },
+    {
+      "github_id": 265612440,
+      "full_name": "coqui-ai/TTS",
+      "catalog_id": "tts"
+    },
+    {
+      "github_id": 589831718,
+      "full_name": "Comfy-Org/ComfyUI",
+      "catalog_id": "comfyui"
+    },
+    {
+      "github_id": 787076358,
+      "full_name": "firecrawl/firecrawl",
+      "catalog_id": "firecrawl"
+    },
+    {
+      "github_id": 235901813,
+      "full_name": "PostHog/posthog",
+      "catalog_id": "posthog"
+    },
+    {
+      "github_id": 30203935,
+      "full_name": "metabase/metabase",
+      "catalog_id": "metabase"
+    },
+    {
+      "github_id": 798201435,
+      "full_name": "unclecode/crawl4ai",
+      "catalog_id": "crawl4ai"
+    },
+    {
+      "github_id": 576201,
+      "full_name": "mrdoob/three.js",
+      "catalog_id": "three.js"
+    },
+    {
+      "github_id": 823745702,
+      "full_name": "KlingAIResearch/LivePortrait",
+      "catalog_id": "liveportrait"
+    },
+    {
+      "github_id": 576103395,
+      "full_name": "m-bain/whisperX",
+      "catalog_id": "whisperx"
+    },
+    {
+      "github_id": 771302083,
+      "full_name": "OpenHands/OpenHands",
+      "catalog_id": "openhands"
+    },
+    {
+      "github_id": 621803253,
+      "full_name": "FlowiseAI/Flowise",
+      "catalog_id": "flowise"
+    },
+    {
+      "github_id": 599320067,
+      "full_name": "langflow-ai/langflow",
+      "catalog_id": "langflow"
+    },
+    {
+      "github_id": 671269505,
+      "full_name": "BerriAI/litellm",
+      "catalog_id": "litellm"
+    },
+    {
+      "github_id": 656099147,
+      "full_name": "mem0ai/mem0",
+      "catalog_id": "mem0"
+    },
+    {
+      "github_id": 1010380782,
+      "full_name": "jasontang-ai/Context-Engineering",
+      "catalog_id": "context-engineering"
+    },
+    {
+      "github_id": 1160693255,
+      "full_name": "zubair-trabzada/geo-seo-claude",
+      "catalog_id": "geo-seo-claude"
+    },
+    {
+      "github_id": 1126407668,
+      "full_name": "fluxerapp/fluxer",
+      "catalog_id": "fluxer"
+    },
+    {
+      "github_id": 1033268244,
+      "full_name": "agent-infra/sandbox",
+      "catalog_id": "sandbox"
+    },
+    {
+      "github_id": 1187630119,
+      "full_name": "NVIDIA/SkillSpector",
+      "catalog_id": "skillspector"
+    },
+    {
+      "github_id": 1179046874,
+      "full_name": "nidhinjs/prompt-master",
+      "catalog_id": "prompt-master"
+    },
+    {
+      "github_id": 83844720,
+      "full_name": "ageitgey/face_recognition",
+      "catalog_id": "face-recognition"
+    },
+    {
+      "github_id": 1127001921,
+      "full_name": "PDFCraftTool/pdfcraft",
+      "catalog_id": "pdfcraft"
+    },
+    {
+      "github_id": 749126547,
+      "full_name": "ScrapeGraphAI/Scrapegraph-ai",
+      "catalog_id": "scrapegraph-ai"
+    },
+    {
+      "github_id": 611549512,
+      "full_name": "obra/Youtube2Webpage",
+      "catalog_id": "youtube2webpage"
+    },
+    {
+      "github_id": 1183325896,
+      "full_name": "emilkowalski/skills",
+      "catalog_id": "skills-emil"
+    },
+    {
+      "github_id": 915520679,
+      "full_name": "FareedKhan-dev/train-llm-from-scratch",
+      "catalog_id": "train-llm-from-scratch"
+    },
+    {
+      "github_id": 695864515,
+      "full_name": "hacksider/Deep-Live-Cam",
+      "catalog_id": "deep-live-cam"
+    },
+    {
+      "github_id": 808144141,
+      "full_name": "DigitalPlatDev/FreeDomain",
+      "catalog_id": "freedomain"
+    },
+    {
+      "github_id": 1132137660,
+      "full_name": "hardikpandya/stop-slop",
+      "catalog_id": "stop-slop"
+    },
+    {
+      "github_id": 778431525,
+      "full_name": "microsoft/graphrag",
+      "catalog_id": "graphrag"
+    },
+    {
+      "github_id": 897992568,
+      "full_name": "neo4j-contrib/mcp-neo4j",
+      "catalog_id": "mcp-neo4j"
+    },
+    {
+      "github_id": 1133707766,
+      "full_name": "multica-ai/multica",
+      "catalog_id": "multica"
+    },
+    {
+      "github_id": 100401612,
+      "full_name": "Delgan/loguru",
+      "catalog_id": "loguru"
+    },
+    {
+      "github_id": 1136666433,
+      "full_name": "blader/humanizer",
+      "catalog_id": "humanizer"
+    },
+    {
+      "github_id": 979115477,
+      "full_name": "bytedance/deer-flow",
+      "catalog_id": "deer-flow"
+    },
+    {
+      "github_id": 1203468533,
+      "full_name": "palmier-io/palmier-pro",
+      "catalog_id": "palmier-pro"
+    },
+    {
+      "github_id": 626805178,
+      "full_name": "langgenius/dify",
+      "catalog_id": "dify"
+    },
+    {
+      "github_id": 642497346,
+      "full_name": "langfuse/langfuse",
+      "catalog_id": "langfuse"
+    },
+    {
+      "github_id": 710601088,
+      "full_name": "crewAIInc/crewAI",
+      "catalog_id": "crewai"
+    },
+    {
+      "github_id": 676672661,
+      "full_name": "langchain-ai/langgraph",
+      "catalog_id": "langgraph"
+    },
+    {
+      "github_id": 552661142,
+      "full_name": "langchain-ai/langchain",
+      "catalog_id": "langchain"
+    },
+    {
+      "github_id": 944039567,
+      "full_name": "NVIDIA/NeMo-Agent-Toolkit",
+      "catalog_id": "nemo-agent-toolkit"
+    },
+    {
+      "github_id": 1137485434,
+      "full_name": "softaworks/agent-toolkit",
+      "catalog_id": "agent-toolkit"
+    },
+    {
+      "github_id": 881458615,
+      "full_name": "browser-use/browser-use",
+      "catalog_id": "browser-use"
+    },
+    {
+      "github_id": 984096689,
+      "full_name": "algorithmicsuperintelligence/openevolve",
+      "catalog_id": "openevolve"
+    },
+    {
+      "github_id": 1136590548,
+      "full_name": "affaan-m/ECC",
+      "catalog_id": "ecc"
+    },
+    {
+      "github_id": 890668799,
+      "full_name": "modelcontextprotocol/servers",
+      "catalog_id": "servers"
+    },
+    {
+      "github_id": 1134426800,
+      "full_name": "sickn33/agentic-awesome-skills",
+      "catalog_id": "antigravity-awesome-skills"
+    },
+    {
+      "github_id": 572984571,
+      "full_name": "twentyhq/twenty",
+      "catalog_id": "twenty-main"
+    },
+    {
+      "github_id": 1129940957,
+      "full_name": "headroomlabs-ai/headroom",
+      "catalog_id": "headroom"
+    },
+    {
+      "github_id": 888092115,
+      "full_name": "microsoft/markitdown",
+      "catalog_id": "markitdown"
+    },
+    {
+      "github_id": 876286167,
+      "full_name": "lfnovo/open-notebook",
+      "catalog_id": "open-notebook"
+    },
+    {
+      "github_id": 1121438740,
+      "full_name": "jacob-bd/gemini-notebook-mcp-cli",
+      "catalog_id": "notebooklm-mcp-cli"
+    },
+    {
+      "github_id": 1129786550,
+      "full_name": "teng-lin/notebooklm-py",
+      "catalog_id": "notebooklm-py"
+    },
+    {
+      "github_id": 1255180606,
+      "full_name": "odysseus-dev/odysseus",
+      "catalog_id": "odysseus"
+    },
+    {
+      "github_id": 949662713,
+      "full_name": "opencode-ai/opencode",
+      "catalog_id": "opencode-legacy"
+    },
+    {
+      "github_id": 1265025028,
+      "full_name": "XiaomiMiMo/MiMo-Code",
+      "catalog_id": "mimo-code"
+    },
+    {
+      "github_id": 1113573066,
+      "full_name": "hugohe3/ppt-master",
+      "catalog_id": "ppt-master"
+    },
+    {
+      "github_id": 1192555574,
+      "full_name": "RyanCodrai/turbovec",
+      "catalog_id": "turbovec"
+    },
+    {
+      "github_id": 1237031497,
+      "full_name": "simplifaisoul/osiris",
+      "catalog_id": "osiris"
+    },
+    {
+      "github_id": 1057664813,
+      "full_name": "OpenBMB/VoxCPM",
+      "catalog_id": "voxcpm"
+    },
+    {
+      "github_id": 1184935822,
+      "full_name": "Hainrixz/whatsapp-agentkit",
+      "catalog_id": "whatsapp-agentkit"
+    },
+    {
+      "github_id": 1147961398,
+      "full_name": "rmyndharis/OpenWA",
+      "catalog_id": "openwa"
+    },
+    {
+      "github_id": 1084853233,
+      "full_name": "VoltAgent/awesome-agent-skills",
+      "catalog_id": "awesome-agent-skills"
+    },
+    {
+      "github_id": 651487266,
+      "full_name": "evolution-foundation/evolution-api",
+      "catalog_id": "evolution-api"
+    },
+    {
+      "github_id": 910176789,
+      "full_name": "NVIDIA/cosmos",
+      "catalog_id": "cosmos"
+    },
+    {
+      "github_id": 1241825396,
+      "full_name": "ajsai47/backdoor",
+      "catalog_id": "backdoor"
+    },
+    {
+      "github_id": 1136974076,
+      "full_name": "masterking32/MasterDnsVPN",
+      "catalog_id": "masterdnsvpn"
+    },
+    {
+      "github_id": 39454666,
+      "full_name": "hal9ai/awesome-dataviz",
+      "catalog_id": "awesome-dataviz"
+    },
+    {
+      "github_id": 211381955,
+      "full_name": "leeoniya/uPlot",
+      "catalog_id": "uplot"
+    },
+    {
+      "github_id": 738633114,
+      "full_name": "MoonWalker440/Music-Megathread",
+      "catalog_id": "music-megathread"
+    },
+    {
+      "github_id": 60243197,
+      "full_name": "nextcloud/server",
+      "catalog_id": "nextcloud-server"
+    },
+    {
+      "github_id": 1042367133,
+      "full_name": "github/spec-kit",
+      "catalog_id": "spec-kit"
+    },
+    {
+      "github_id": 789480255,
+      "full_name": "mishushakov/llm-scraper",
+      "catalog_id": "llm-scraper"
+    },
+    {
+      "github_id": 1137078255,
+      "full_name": "colbymchenry/codegraph",
+      "catalog_id": "codegraph"
+    },
+    {
+      "github_id": 997737944,
+      "full_name": "ruvnet/RuView",
+      "catalog_id": "ruview"
+    },
+    {
+      "github_id": 1003143578,
+      "full_name": "NirDiamant/agents-towards-production",
+      "catalog_id": "agents-towards-production"
+    },
+    {
+      "github_id": 1006414368,
+      "full_name": "OpenCut-app/OpenCut",
+      "catalog_id": "opencut"
+    },
+    {
+      "github_id": 975734319,
+      "full_name": "anomalyco/opencode",
+      "catalog_id": "opencode"
+    },
+    {
+      "github_id": 707551301,
+      "full_name": "deepseek-ai/DeepSeek-Coder",
+      "catalog_id": "deepseek-coder"
+    },
+    {
+      "github_id": 1228312499,
+      "full_name": "raiyanyahya/how-to-train-your-gpt",
+      "catalog_id": "how-to-train-your-gpt"
+    },
+    {
+      "github_id": 1135212071,
+      "full_name": "coreyhaines31/marketingskills",
+      "catalog_id": "marketingskills"
+    },
+    {
+      "github_id": 12204147,
+      "full_name": "mautic/mautic",
+      "catalog_id": "mautic"
+    },
+    {
+      "github_id": 1098852899,
+      "full_name": "supertone-oss-archive/supertonic",
+      "catalog_id": "supertonic"
+    },
+    {
+      "github_id": 1165056385,
+      "full_name": "anthropics/financial-services",
+      "catalog_id": "financial-services"
+    },
+    {
+      "github_id": 1076426995,
+      "full_name": "virattt/dexter",
+      "catalog_id": "dexter"
+    },
+    {
+      "github_id": 1200597263,
+      "full_name": "Graphify-Labs/graphify",
+      "catalog_id": "graphify"
+    },
+    {
+      "github_id": 307213173,
+      "full_name": "openai/openai-python",
+      "catalog_id": "openai-python"
+    },
+    {
+      "github_id": 468576060,
+      "full_name": "openai/openai-cookbook",
+      "catalog_id": "openai-cookbook"
+    },
+    {
+      "github_id": 537603333,
+      "full_name": "openai/whisper",
+      "catalog_id": "whisper"
+    },
+    {
+      "github_id": 106017343,
+      "full_name": "tailwindlabs/tailwindcss",
+      "catalog_id": "tailwindcss"
+    },
+    {
+      "github_id": 1700621,
+      "full_name": "necolas/normalize.css",
+      "catalog_id": "normalize.css"
+    },
+    {
+      "github_id": 218115303,
+      "full_name": "vercel/swr",
+      "catalog_id": "swr"
+    },
+    {
+      "github_id": 660551251,
+      "full_name": "FoundationAgents/MetaGPT",
+      "catalog_id": "metagpt"
+    },
+    {
+      "github_id": 882354535,
+      "full_name": "vonzosten/awesome-LangGraph",
+      "catalog_id": "awesome-langgraph"
+    },
+    {
+      "github_id": 661283123,
+      "full_name": "kyrolabs/awesome-agents",
+      "catalog_id": "awesome-agents"
+    },
+    {
+      "github_id": 906251482,
+      "full_name": "ashishpatel26/500-AI-Agents-Projects",
+      "catalog_id": "500-ai-agents-projects"
+    },
+    {
+      "github_id": 639835356,
+      "full_name": "assafelovic/gpt-researcher",
+      "catalog_id": "gpt-researcher"
+    },
+    {
+      "github_id": 901529145,
+      "full_name": "The-Swarm-Corporation/AutoHedge",
+      "catalog_id": "autohedge"
+    },
+    {
+      "github_id": 1142274728,
+      "full_name": "jo-inc/camofox-browser",
+      "catalog_id": "camofox-browser"
+    },
+    {
+      "github_id": 849406496,
+      "full_name": "Fincept-Corporation/FinceptTerminal",
+      "catalog_id": "finceptterminal"
+    },
+    {
+      "github_id": 1075372545,
+      "full_name": "msitarzewski/agency-agents",
+      "catalog_id": "agency-agents"
+    },
+    {
+      "github_id": 1048065319,
+      "full_name": "thedotmack/claude-mem",
+      "catalog_id": "claude-mem"
+    },
+    {
+      "github_id": 1196181411,
+      "full_name": "drona23/claude-token-efficient",
+      "catalog_id": "claude-token-efficient"
+    },
+    {
+      "github_id": 1079619168,
+      "full_name": "czlonkowski/n8n-skills",
+      "catalog_id": "n8n-skills"
+    },
+    {
+      "github_id": 997890921,
+      "full_name": "czlonkowski/n8n-mcp",
+      "catalog_id": "n8n-mcp"
+    },
+    {
+      "github_id": 585146387,
+      "full_name": "shadcn-ui/ui",
+      "catalog_id": "ui"
+    },
+    {
+      "github_id": 1177402105,
+      "full_name": "heygen-com/hyperframes",
+      "catalog_id": "hyperframes"
+    },
+    {
+      "github_id": 107111421,
+      "full_name": "thedaviddias/Front-End-Checklist",
+      "catalog_id": "front-end-checklist"
+    },
+    {
+      "github_id": 287463830,
+      "full_name": "microsoft/qlib",
+      "catalog_id": "qlib"
+    },
+    {
+      "github_id": 793375104,
+      "full_name": "Shubhamsaboo/awesome-llm-apps",
+      "catalog_id": "awesome-llm-apps"
+    },
+    {
+      "github_id": 895508656,
+      "full_name": "microsoft/ai-agents-for-beginners",
+      "catalog_id": "ai-agents-for-beginners"
+    },
+    {
+      "github_id": 1006496207,
+      "full_name": "SuperClaude-Org/SuperClaude_Framework",
+      "catalog_id": "superclaude-framework"
+    },
+    {
+      "github_id": 969302809,
+      "full_name": "hesreallyhim/awesome-claude-code",
+      "catalog_id": "awesome-claude-code"
+    },
+    {
+      "github_id": 1201656210,
+      "full_name": "MemPalace/mempalace",
+      "catalog_id": "mempalace"
+    },
+    {
+      "github_id": 1166408297,
+      "full_name": "rohitg00/agentmemory",
+      "catalog_id": "agentmemory"
+    },
+    {
+      "github_id": 1017049444,
+      "full_name": "Y-Research-SBU/QuantHarness",
+      "catalog_id": "quantharness"
+    },
+    {
+      "github_id": 872119017,
+      "full_name": "D4Vinci/Scrapling",
+      "catalog_id": "scrapling"
+    },
+    {
+      "github_id": 529502,
+      "full_name": "scrapy/scrapy",
+      "catalog_id": "scrapy"
+    },
+    {
+      "github_id": 741365632,
+      "full_name": "apify/crawlee-python",
+      "catalog_id": "crawlee-python"
+    },
+    {
+      "github_id": 1106996539,
+      "full_name": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "catalog_id": "ui-ux-pro-max-skill"
+    },
+    {
+      "github_id": 1104332987,
+      "full_name": "666ghj/MiroFish",
+      "catalog_id": "mirofish"
+    },
+    {
+      "github_id": 1142983825,
+      "full_name": "multica-ai/andrej-karpathy-skills",
+      "catalog_id": "andrej-karpathy-skills"
+    },
+    {
+      "github_id": 1102157650,
+      "full_name": "karpathy/llm-council",
+      "catalog_id": "llm-council"
+    },
+    {
+      "github_id": 783833344,
+      "full_name": "karpathy/llm.c",
+      "catalog_id": "llm.c"
+    },
+    {
+      "github_id": 1075431749,
+      "full_name": "karpathy/nanochat",
+      "catalog_id": "nanochat"
+    },
+    {
+      "github_id": 582822129,
+      "full_name": "karpathy/nanoGPT",
+      "catalog_id": "nanogpt"
+    },
+    {
+      "github_id": 1174820787,
+      "full_name": "karpathy/autoresearch",
+      "catalog_id": "autoresearch"
+    },
+    {
+      "github_id": 1162099055,
+      "full_name": "Leonxlnx/taste-skill",
+      "catalog_id": "taste-skill"
+    },
+    {
+      "github_id": 1097346685,
+      "full_name": "pbakaus/impeccable",
+      "catalog_id": "impeccable"
+    },
+    {
+      "github_id": 1223170290,
+      "full_name": "nexu-io/open-design",
+      "catalog_id": "open-design"
+    },
+    {
+      "github_id": 54346799,
+      "full_name": "public-apis/public-apis",
+      "catalog_id": "public-apis"
+    },
+    {
+      "github_id": 1148788086,
+      "full_name": "mattpocock/skills",
+      "catalog_id": "skills"
+    },
+    {
+      "github_id": 1132001614,
+      "full_name": "vercel-labs/agent-browser",
+      "catalog_id": "agent-browser"
+    },
+    {
+      "github_id": 678973052,
+      "full_name": "anthropics/claude-cookbooks",
+      "catalog_id": "claude-cookbooks"
+    },
+    {
+      "github_id": 849553306,
+      "full_name": "anthropics/claude-quickstarts",
+      "catalog_id": "claude-quickstarts"
+    },
+    {
+      "github_id": 273562379,
+      "full_name": "microsoft/playwright-cli",
+      "catalog_id": "playwright-cli"
+    },
+    {
+      "github_id": 995029641,
+      "full_name": "ruvnet/ruflo",
+      "catalog_id": "ruflo"
+    },
+    {
+      "github_id": 1632998,
+      "full_name": "scrapy/scrapely",
+      "catalog_id": "scrapely"
+    },
+    {
+      "github_id": 1024554267,
+      "full_name": "NousResearch/hermes-agent",
+      "catalog_id": "hermes-agent"
+    },
+    {
+      "github_id": 32484381,
+      "full_name": "ripienaar/free-for-dev",
+      "catalog_id": "free-for-dev"
+    },
+    {
+      "github_id": 1207222725,
+      "full_name": "google-labs-code/design.md",
+      "catalog_id": "design.md"
+    },
+    {
+      "github_id": 1073433866,
+      "full_name": "siddharthvaddem/openscreen",
+      "catalog_id": "openscreen"
+    },
+    {
+      "github_id": 943398999,
+      "full_name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "catalog_id": "system-prompts-and-models-of-ai-tools"
+    },
+    {
+      "github_id": 1073224795,
+      "full_name": "obra/superpowers",
+      "catalog_id": "superpowers"
+    },
+    {
+      "github_id": 1110817322,
+      "full_name": "google/mcp",
+      "catalog_id": "mcp"
+    },
+    {
+      "github_id": 1191521334,
+      "full_name": "midudev/autoskills",
+      "catalog_id": "autoskills"
+    },
+    {
+      "github_id": 1197990888,
+      "full_name": "Twigpine/openclaude",
+      "catalog_id": "openclaude"
+    },
+    {
+      "github_id": 1031059905,
+      "full_name": "abhigyanpatwari/GitNexus",
+      "catalog_id": "gitnexus"
+    },
+    {
+      "github_id": 1158588224,
+      "full_name": "AlexsJones/llmfit",
+      "catalog_id": "llmfit"
+    },
+    {
+      "github_id": 62604727,
+      "full_name": "huima58/chartAnalyst",
+      "catalog_id": "chartanalyst"
+    },
+    {
+      "github_id": 38563384,
+      "full_name": "omerdr/stocks",
+      "catalog_id": "stocks-analyst"
+    },
+    {
+      "github_id": 45717250,
+      "full_name": "tensorflow/tensorflow",
+      "catalog_id": "tensorflow"
+    },
+    {
+      "github_id": 40380094,
+      "full_name": "rasbt/python-machine-learning-book",
+      "catalog_id": "python-machine-learning-book"
+    },
+    {
+      "github_id": 132754148,
+      "full_name": "stefan-jansen/machine-learning-for-trading",
+      "catalog_id": "machine-learning-for-trading"
+    },
+    {
+      "github_id": 27595858,
+      "full_name": "wepe/MachineLearning",
+      "catalog_id": "machinelearning"
+    },
+    {
+      "github_id": 21872392,
+      "full_name": "josephmisiti/awesome-machine-learning",
+      "catalog_id": "awesome-machine-learning"
+    },
+    {
+      "github_id": 29749635,
+      "full_name": "donnemartin/data-science-ipython-notebooks",
+      "catalog_id": "data-science-ipython-notebooks"
+    },
+    {
+      "github_id": 74181851,
+      "full_name": "monsonlee/BigData",
+      "catalog_id": "bigdata"
+    },
+    {
+      "github_id": 76474200,
+      "full_name": "apache/hudi",
+      "catalog_id": "hudi"
+    },
+    {
+      "github_id": 21500692,
+      "full_name": "oxnr/awesome-bigdata",
+      "catalog_id": "awesome-bigdata"
+    },
+    {
+      "github_id": 137500580,
+      "full_name": "jazzonaut/IntelliTrader",
+      "catalog_id": "intellitrader"
+    },
+    {
+      "github_id": 840194506,
+      "full_name": "ChainBuff/open-sol-bot",
+      "catalog_id": "open-sol-bot"
+    },
+    {
+      "github_id": 45860798,
+      "full_name": "pirate/crypto-trader",
+      "catalog_id": "crypto-trader"
+    },
+    {
+      "github_id": 106051375,
+      "full_name": "yasinkuyu/binance-trader",
+      "catalog_id": "binance-trader"
+    },
+    {
+      "github_id": 606301599,
+      "full_name": "mtahiraslan/data-analyst-roadmap",
+      "catalog_id": "data-analyst-roadmap"
+    },
+    {
+      "github_id": 385140996,
+      "full_name": "PriyankaJhaTheDeveloper/DataAnalystPortfolioProjects",
+      "catalog_id": "dataanalystportfolioprojects"
+    },
+    {
+      "github_id": 946380199,
+      "full_name": "openai/openai-agents-python",
+      "catalog_id": "openai-agents-python"
+    },
+    {
+      "github_id": 909213664,
+      "full_name": "TauricResearch/TradingAgents",
+      "catalog_id": "tradingagents"
+    },
+    {
+      "github_id": 712897010,
+      "full_name": "LouisShark/chatgpt_system_prompt",
+      "catalog_id": "chatgpt-system-prompt"
+    },
+    {
+      "github_id": 610260322,
+      "full_name": "chatboxai/chatbox",
+      "catalog_id": "chatbox"
+    },
+    {
+      "github_id": 602005115,
+      "full_name": "0xk1h0/ChatGPT_DAN",
+      "catalog_id": "chatgpt-dan"
+    },
+    {
+      "github_id": 575051095,
+      "full_name": "PawanOsman/OpenCursor",
+      "catalog_id": "opencursor"
+    },
+    {
+      "github_id": 150997854,
+      "full_name": "my8100/scrapydweb",
+      "catalog_id": "scrapydweb"
+    },
+    {
+      "github_id": 40621231,
+      "full_name": "lorien/awesome-web-scraping",
+      "catalog_id": "awesome-web-scraping"
+    }
+  ]
+}

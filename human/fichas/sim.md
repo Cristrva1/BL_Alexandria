@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 30.1k | Apache-2.0 | TypeScript | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 30.1k | Apache-2.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
@@ -50,7 +50,7 @@ Un editor Next.js guarda los workflows y un ejecutor corre cada bloque (LLM, her
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [langfuse](langfuse.md) | 37.3k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
+| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
 ## Alternativas (elige una)
 
@@ -68,4 +68,4 @@ Un editor Next.js guarda los workflows y un ejecutor corre cada bloque (LLM, her
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

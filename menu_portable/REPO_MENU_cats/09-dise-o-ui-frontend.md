@@ -105,6 +105,19 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Evita si:** prefieres diagramas como texto; mira `mermaid`
 **Alternativas (elige una):** `tldraw`, `mermaid`
 
+## `front-end-checklist`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=skills,ai-agent,ai-agents,checklist,css,front-end-developer-tool,front-end-development,frontend
+
+**Qué es:** Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo. Organiza comprobaciones de implementación y publica material para revisión humana y agentes.
+**Stack:** MDX, Node.js
+**Repo:** https://github.com/thedaviddias/Front-End-Checklist
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/Front-End-Checklist/). Si necesitas el código: git clone https://github.com/thedaviddias/Front-End-Checklist`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres una lista de revisión de interfaz y entrega web
+**Evita si:** tu interfaz ya cubre el mismo propósito con una herramienta equivalente
+
 ## `gsap`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ui,design,javascript
 

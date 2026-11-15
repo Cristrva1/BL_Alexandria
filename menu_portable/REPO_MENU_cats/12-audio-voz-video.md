@@ -3,6 +3,33 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `ace-step-1.5`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=musica,text2music,python
+
+**Qué es:** Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. Combina modelos de generación musical y una interfaz de inferencia para producir audio y personalizar estilos.
+**Stack:** Python, Docker, pyproject.toml, Node.js
+**Repo:** https://github.com/ace-step/ACE-Step-1.5
+
+**Instalación** [~]: `git clone https://github.com/ace-step/ACE-Step-1.5 && cd ACE-Step-1.5 && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** necesitas experimentar con generación musical en tu propio equipo
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+
+## `ai-youtube-shorts-generator`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=generativo,2short-ai-alternative,ai-clip-generator,ai-clipping,auto-clip,auto-crop,highlight-detection,klap-alternative
+
+**Qué es:** Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM. Transcribe, puntúa segmentos y recorta el video a formato vertical para producir clips cortos.
+**Stack:** Python
+**Repo:** https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator
+
+**Instalación** [~]: `git clone https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator && cd AI-Youtube-Shorts-Generator && (uv sync || pip install -r requirements.txt)`
+_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+
+**Elige si:** quieres convertir videos largos en una primera selección de shorts
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+**Combina con:** `ffmpeg`
+
 ## `audiocraft`
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=audio,inference,training,python
 
@@ -60,6 +87,21 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Elige si:** editas en DaVinci Resolve y quieres que un agente MCP automatice montaje, render o metadatos
 **Evita si:** no usas Resolve o prefieres montar video por código sin editor; mira `moviepy` o `ffmpeg`
 **Combina con:** `claude-code`, `ffmpeg`, `whisper`
+
+## `edge-tts`
+role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=tts,speech-synthesis,text-to-speech,python
+
+**Qué es:** Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. Envía texto al servicio de voz y guarda el audio y los subtítulos desde Python o la terminal.
+**Stack:** Python
+**Repo:** https://github.com/rany2/edge-tts
+
+**Instalación** [~]: `pip install edge-tts   (o: uv add edge-tts)`
+_Nombre PyPI puede diferir de 'edge-tts'; verifica en pypi.org._
+
+**Elige si:** quieres generar narración sin instalar un modelo de voz local
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+**Combina con:** `moviepy`
+**Alternativas (elige una):** `kokoro`
 
 ## `faster-whisper`
 role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=stt,audio,python
@@ -176,7 +218,7 @@ _Nombre PyPI puede diferir de 'Kokoro'; verifica en pypi.org._
 **Elige si:** quieres TTS ligero, rápido y con licencia permisiva
 **Evita si:** necesitas clonar voces; mira `chatterbox`
 **Combina con:** `pipecat`, `whisper-cpp`
-**Alternativas (elige una):** `chatterbox`, `tts`, `luxtts`
+**Alternativas (elige una):** `chatterbox`, `tts`, `luxtts`, `edge-tts`
 
 ## `livekit-agents`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google · tags=audio,agents,video,python
@@ -250,6 +292,22 @@ _Nombre PyPI puede diferir de 'Manim (ManimGL)'; verifica en pypi.org._
 **Elige si:** quieres animaciones matemáticas o técnicas precisas definidas en código Python
 **Evita si:** buscas estabilidad y documentación para empezar (usa la edición comunitaria ManimCommunity/manim) o motion graphics de marketing; mira `remotion` o `hyperframes`
 **Combina con:** `kokoro`, `moviepy`, `ffmpeg`
+**Alternativas (elige una):** `manim-community`
+
+## `manim-community`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,animations,hacktoberfest,manim,math,python
+
+**Qué es:** Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. Define objetos geométricos y transformaciones en código y renderiza la escena como video.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/ManimCommunity/manim
+
+**Instalación** [~]: `pip install manim   (o: uv add manim)`
+_Nombre PyPI puede diferir de 'manim'; verifica en pypi.org._
+
+**Elige si:** necesitas animaciones matemáticas precisas y reproducibles
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+**Combina con:** `ffmpeg`
+**Alternativas (elige una):** `manim`
 
 ## `moneyprinterturbo`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google,local · tags=video,automation,tts,python
@@ -280,6 +338,19 @@ _Nombre PyPI puede diferir de 'MoviePy'; verifica en pypi.org._
 **Evita si:** prefieres plantillas en React (`remotion`) o en HTML (`hyperframes`), o solo necesitas cortar sin recodificar (`lossless-cut`)
 **Combina con:** `whisperx`, `kokoro`, `comfyui`
 **Alternativas (elige una):** `remotion`, `hyperframes`
+
+## `music-megathread`
+role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=musica
+
+**Qué es:** Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música. Agrupa enlaces a proyectos y servicios musicales para explorar alternativas por función.
+**Stack:** Recursos y documentación
+**Repo:** https://github.com/MoonWalker440/Music-Megathread
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/Music-Megathread/). Si necesitas el código: git clone https://github.com/MoonWalker440/Music-Megathread`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** buscas recursos musicales y quieres comparar opciones desde una lista
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
 
 ## `nemo`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=stt,tts,audio,python
@@ -345,9 +416,9 @@ role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=video,
 
 **Qué es:** Describes el video y el agente investiga, escribe el guion, genera recursos y monta el resultado.
 **Stack:** Markdown, Python
-**Repo:** https://github.com/calesthio/OpenMontage.git
+**Repo:** https://github.com/OpenMontageInc/OpenMontage
 
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/OpenMontage/). Si necesitas el código: git clone https://github.com/calesthio/OpenMontage.git`
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/OpenMontage/). Si necesitas el código: git clone https://github.com/OpenMontageInc/OpenMontage`
 _Material de referencia/playbook; no es una dependencia runtime._
 
 **Elige si:** quieres producir videos completos con un agente
@@ -370,6 +441,19 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `lossless-cut`, `opencut`
 **Alternativas (elige una):** `obs-studio`
 
+## `palmier-pro`
+role=app · exec=local · setup=medium · mcp=True · prov=— · tags=edicion,ai-video,claude,macos,mcp,seedance2,swift,video-editor
+
+**Qué es:** Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales. Permite trabajar con una línea de tiempo y enlazar agentes mediante MCP en las versiones que lo incorporan.
+**Stack:** Swift
+**Repo:** https://github.com/palmier-io/palmier-pro
+
+**Instalación** [?]: `git clone https://github.com/palmier-io/palmier-pro (verificar README para build/run)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** usas macOS y quieres explorar edición de video asistida por agentes
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+
 ## `pipecat`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google · tags=audio,agents,stt,tts,python
 
@@ -384,6 +468,20 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Evita si:** quieres infraestructura WebRTC gestionada; mira `livekit-agents`
 **Combina con:** `kokoro`, `whisper-cpp`
 **Alternativas (elige una):** `livekit-agents`
+
+## `rea-video`
+role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=programatico,agent-skills,ai-video,aigc-detection,claude-code,codex,ffmpeg,prompt-engineering
+
+**Qué es:** Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md. Clasifica planos y registra capas, ritmo y técnicas de producción en un formato legible por agentes.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/JuneYaooo/rea-video
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/rea-video/). Si necesitas el código: git clone https://github.com/JuneYaooo/rea-video`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres estudiar o recrear la estructura de un video de referencia
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+**Combina con:** `remotion`
 
 ## `remotion`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=video,typescript
@@ -428,6 +526,19 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Elige si:** quieres convertir una voz grabada en otra
 **Evita si:** necesitas generar voz desde texto; mira `chatterbox`
 **Combina con:** `gpt-sovits`
+
+## `short-video-factory`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=generativo,ai,automatic,automation,clipping,cross-platform,desktop,linux
+
+**Qué es:** Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. Encadena generación de texto y voz con montaje automático en una interfaz de escritorio.
+**Stack:** TypeScript, Node.js
+**Repo:** https://github.com/YILS-LIN/short-video-factory
+
+**Instalación** [~]: `git clone https://github.com/YILS-LIN/short-video-factory && cd short-video-factory && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+
+**Elige si:** quieres producir variantes de videos promocionales desde materiales existentes
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
 
 ## `skills-remotion`
 role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=video,skills
@@ -565,9 +676,9 @@ role=app · exec=local · setup=heavy · mcp=True · prov=local,mcp · tags=vide
 
 **Qué es:** WanGP, antes Wan2GP, es una interfaz web para ejecutar en tu GPU decenas de modelos generativos abiertos: video (Wan 2.1/2.2, LTX-2, Hunyuan Video), imagen (Flux, Qwen Image), voz y música (Chatterbox, Index TTS, Ace Step) y 3D. Añade cola de trabajos, LoRAs, galerías y un asistente local, Deepy, que planifica y lanza las generaciones por ti.
 **Stack:** Python, PyTorch, Gradio, Diffusers, mmgp
-**Repo:** https://github.com/deepbeepmeep/Wan2GP
+**Repo:** https://github.com/deepbeepmeep/WanGP
 
-**Instalación** [~]: `git clone https://github.com/deepbeepmeep/Wan2GP && cd Wan2GP && (uv sync || pip install -r requirements.txt)`
+**Instalación** [~]: `git clone https://github.com/deepbeepmeep/WanGP && cd WanGP && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
 **Elige si:** quieres generar video e imagen con modelos abiertos en una GPU de consumo sin montar flujos a mano

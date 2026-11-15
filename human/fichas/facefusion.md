@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 30.6k | Otra (ver repo) | Python | 2026-11-09 | 🆕 Aún no (sugerido) |
+| 30.7k | NOASSERTION | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
@@ -51,13 +51,13 @@ Sigue el instalador del README (requiere Python, ffmpeg y opcionalmente GPU).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [FFmpeg](ffmpeg.md) | 66.9k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
+| [FFmpeg](ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Deep-Live-Cam](deep-live-cam.md) | 97.9k | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. |
+| [Deep-Live-Cam](deep-live-cam.md) | 98.1k | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. |
 
 ## Enlaces
 
@@ -66,4 +66,4 @@ Sigue el instalador del README (requiere Python, ffmpeg y opcionalmente GPU).
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

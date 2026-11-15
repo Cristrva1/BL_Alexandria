@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 51.4k | Otra (ver repo) | TypeScript | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 51.4k | NOASSERTION | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -51,7 +51,7 @@ Motor de canvas en React con formas, herramientas y almacén reactivo personaliz
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Excalidraw](excalidraw.md) | 135k | Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. |
+| [Excalidraw](excalidraw.md) | 136k | Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. |
 
 ## Enlaces
 
@@ -60,4 +60,4 @@ Motor de canvas en React con formas, herramientas y almacén reactivo personaliz
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

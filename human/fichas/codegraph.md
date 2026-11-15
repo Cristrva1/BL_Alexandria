@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 77.3k | MIT | TypeScript | 2026-11-01 | 📦 Sí |
+| 77.6k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
@@ -49,15 +49,15 @@ Construye un índice semántico local del repositorio (símbolos, referencias, f
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [graphify](graphify.md) | 145k | Generador de grafos de conocimiento que mapea código, PDFs, imágenes y video en diagramas interactivos. |
-| [headroom](headroom.md) | 79.3k | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. |
+| [graphify](graphify.md) | 148k | Generador de grafos de conocimiento que mapea código, PDFs, imágenes y video en diagramas interactivos. |
+| [headroom](headroom.md) | 79.7k | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [codebase-memory-mcp](codebase-memory-mcp.md) | 48.4k | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. |
-| [Serena](serena.md) | 31.3k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
+| [codebase-memory-mcp](codebase-memory-mcp.md) | 48.6k | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. |
+| [Serena](serena.md) | 31.4k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
 
 ## Enlaces
 
@@ -67,4 +67,4 @@ Construye un índice semántico local del repositorio (símbolos, referencias, f
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

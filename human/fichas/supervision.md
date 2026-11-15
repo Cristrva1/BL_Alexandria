@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 51.6k | MIT | Python | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 51.6k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,8 +49,8 @@ Convierte salidas de distintos modelos a un formato común y ofrece anotadores y
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Ultralytics YOLO](ultralytics.md) | 63.3k | Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. |
-| [OpenCV](opencv.md) | 91.5k | La librería de visión por computadora de referencia, con miles de algoritmos. |
+| [Ultralytics YOLO](ultralytics.md) | 63.4k | Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. |
+| [OpenCV](opencv.md) | 91.6k | La librería de visión por computadora de referencia, con miles de algoritmos. |
 
 ## Enlaces
 
@@ -59,4 +59,4 @@ Convierte salidas de distintos modelos a un formato común y ofrece anotadores y
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

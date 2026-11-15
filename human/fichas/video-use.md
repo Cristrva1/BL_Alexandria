@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 30.8k | MIT | Python | 2026-10-08 | 📦 Sí |
+| 31.1k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
@@ -49,14 +49,14 @@ Sigue el README para instalarlo y conectarlo a tu agente.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [FFmpeg](ffmpeg.md) | 66.9k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
-| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [FFmpeg](ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
+| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Remotion Superpowers](remotion-superpowers.md) | 164 | Plugin que convierte Remotion en un estudio de video para Claude Code, Codex o Gemini CLI. |
+| [Remotion Superpowers](remotion-superpowers.md) | 168 | Plugin que convierte Remotion en un estudio de video para Claude Code, Codex o Gemini CLI. |
 
 ## Enlaces
 
@@ -65,4 +65,4 @@ Sigue el README para instalarlo y conectarlo a tu agente.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

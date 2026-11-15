@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 30.2k | Apache-2.0 | Java | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 30.2k | Apache-2.0 | Java | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
@@ -51,15 +51,15 @@ Un servidor Java guarda los flujos YAML y reparte tareas a workers; cada tarea e
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [DuckDB](duckdb.md) | 43k | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
+| [DuckDB](duckdb.md) | 43.1k | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
 | [Apache Superset](superset.md) | 75.5k | Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Windmill](windmill.md) | 18.5k | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. |
-| [Trigger.dev](trigger-dev.md) | 16.7k | Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. |
+| [Windmill](windmill.md) | 18.6k | Plataforma code-first de workflows, scripts y apps internas, auto-hospedable y muy rápida. |
+| [Trigger.dev](trigger-dev.md) | 16.8k | Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. |
 
 ## Enlaces
 
@@ -68,4 +68,4 @@ Un servidor Java guarda los flujos YAML y reparte tareas a workers; cada tarea e
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

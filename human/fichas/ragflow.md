@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 94k | Apache-2.0 | Go | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 94.2k | Apache-2.0 | Go | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
@@ -52,14 +52,14 @@ Un parser de layout (DeepDoc) divide documentos en fragmentos con estructura; b�
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [Docling](docling.md) | 70.4k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
+| [Docling](docling.md) | 70.6k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [dify](dify.md) | 161k | Plataforma integral para construir apps de IA con backend y UI listos. |
-| [LightRAG](lightrag.md) | 40.6k | RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. |
+| [LightRAG](lightrag.md) | 40.7k | RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. |
 
 ## Enlaces
 
@@ -68,4 +68,4 @@ Un parser de layout (DeepDoc) divide documentos en fragmentos con estructura; b�
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

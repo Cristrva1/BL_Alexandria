@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 23.9k | Otra (ver repo) | Python | 2025-10-28 | 🆕 Aún no (sugerido) |
+| 23.9k | NOASSERTION | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -51,13 +51,13 @@ El LLM traduce la pregunta a código Python o SQL que se ejecuta sobre tus DataF
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [DuckDB](duckdb.md) | 43k | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
+| [DuckDB](duckdb.md) | 43.1k | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [WrenAI](wrenai.md) | 18.1k | BI generativo: convierte preguntas en SQL fiable a través de una capa semántica gobernada. |
+| [WrenAI](wrenai.md) | 18.2k | BI generativo: convierte preguntas en SQL fiable a través de una capa semántica gobernada. |
 
 ## Enlaces
 
@@ -66,4 +66,4 @@ El LLM traduce la pregunta a código Python o SQL que se ejecuta sobre tus DataF
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

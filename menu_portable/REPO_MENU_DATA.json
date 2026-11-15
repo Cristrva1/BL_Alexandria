@@ -17,67 +17,67 @@
     {
       "num": 1,
       "title": "Automatización, Mensajería & CRM",
-      "count": 33
+      "count": 36
     },
     {
       "num": 2,
       "title": "Skills, Prompts & Guías de Agente",
-      "count": 38
+      "count": 54
     },
     {
       "num": 3,
       "title": "Frameworks & Orquestación de Agentes",
-      "count": 59
+      "count": 73
     },
     {
       "num": 4,
       "title": "Scraping, Búsqueda & Research Web",
-      "count": 29
+      "count": 34
     },
     {
       "num": 5,
       "title": "MCP & Conectividad",
-      "count": 20
+      "count": 24
     },
     {
       "num": 6,
       "title": "Memoria, RAG & LLM Ops",
-      "count": 32
+      "count": 35
     },
     {
       "num": 7,
       "title": "Inteligencia de Código, Datos & Entrenamiento",
-      "count": 34
+      "count": 44
     },
     {
       "num": 8,
       "title": "IA Local: Modelos, Chats & Workspaces",
-      "count": 21
+      "count": 25
     },
     {
       "num": 9,
       "title": "Diseño, UI & Frontend",
-      "count": 34
+      "count": 35
     },
     {
       "num": 10,
       "title": "Analítica & Visualización",
-      "count": 20
+      "count": 37
     },
     {
       "num": 11,
       "title": "Generación de Imagen & Visión",
-      "count": 27
+      "count": 28
     },
     {
       "num": 12,
       "title": "Audio, Voz & Video",
-      "count": 42
+      "count": 50
     },
     {
       "num": 13,
       "title": "Documentos & Presentaciones",
-      "count": 23
+      "count": 24
     }
   ],
   "recipes": [
@@ -1457,6 +1457,37 @@
       ]
     },
     {
+      "id": "cal.diy",
+      "name": "cal.diy",
+      "cat": 1,
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "motores",
+        "next-auth",
+        "nextjs",
+        "open-source",
+        "postgresql",
+        "prisma",
+        "t3-stack",
+        "tailwindcss"
+      ],
+      "one": "Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia.",
+      "desc": "Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. Despliega la aplicación de calendario y configura base de datos, disponibilidad e integraciones.",
+      "stack": "TypeScript, Docker, Node.js",
+      "repo": "https://github.com/calcom/cal.diy",
+      "install": "git clone https://github.com/calcom/cal.diy && cd cal.diy && docker compose up -d",
+      "install_conf": "verify",
+      "install_note": "Requiere Docker; el compose puede variar — revisa docker-compose.yml.",
+      "choose_if": "quieres estudiar una agenda autoalojada para uso personal",
+      "avoid_if": "solo necesitas una integración sencilla sin operar una plataforma",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "chatwoot",
       "name": "chatwoot",
       "cat": 1,
@@ -1484,6 +1515,31 @@
         "evolution-api",
         "novu"
       ],
+      "alt": []
+    },
+    {
+      "id": "compai-crm",
+      "name": "crm",
+      "cat": 1,
+      "role": "platform",
+      "exec": "cloud",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "crm",
+        "typescript"
+      ],
+      "one": "CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia.",
+      "desc": "CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. Un agente trabaja sobre una cola y un presupuesto de investigación y mantiene la información del CRM.",
+      "stack": "TypeScript, Docker, Node.js",
+      "repo": "https://github.com/trycompai/crm",
+      "install": "Crear cuenta / API key en el proveedor (no self-host).",
+      "install_conf": "ok",
+      "install_note": "Servicio gestionado; no se clona.",
+      "choose_if": "quieres estudiar un CRM donde el agente organiza el seguimiento",
+      "avoid_if": "solo necesitas una integración sencilla sin operar una plataforma",
+      "combines_with": [],
       "alt": []
     },
     {
@@ -2250,6 +2306,35 @@
       ]
     },
     {
+      "id": "whatsmeow",
+      "name": "whatsmeow",
+      "cat": 1,
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "whatsapp",
+        "go",
+        "golang",
+        "whatsapp-web"
+      ],
+      "one": "Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web.",
+      "desc": "Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web. Gestiona la sesión del cliente y permite enviar mensajes, recibir eventos y mantener el estado de la cuenta.",
+      "stack": "Go, Go modules",
+      "repo": "https://github.com/tulir/whatsmeow",
+      "install": "git clone https://github.com/tulir/whatsmeow (verificar README para install)",
+      "install_conf": "clone",
+      "install_note": "Stack no claro; revisa el README tras clonar.",
+      "choose_if": "necesitas integrar WhatsApp Web en un servicio escrito en Go",
+      "avoid_if": "solo necesitas una integración sencilla sin operar una plataforma",
+      "combines_with": [
+        "n8n"
+      ],
+      "alt": []
+    },
+    {
       "id": "windmill",
       "name": "Windmill",
       "cat": 1,
@@ -2311,6 +2396,33 @@
         "langgraph",
         "vercel-ai"
       ],
+      "alt": []
+    },
+    {
+      "id": "500-ai-agents-projects",
+      "name": "500-AI-Agents-Projects",
+      "cat": 2,
+      "role": "directory",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "guias",
+        "ai-agents",
+        "genai",
+        "python"
+      ],
+      "one": "Colección de ideas, casos de uso y ejemplos de agentes de IA para distintos sectores y tareas.",
+      "desc": "Colección de ideas, casos de uso y ejemplos de agentes de IA para distintos sectores y tareas. Organiza proyectos y enlaces que sirven como punto de partida para prototipos y aprendizaje.",
+      "stack": "Python",
+      "repo": "https://github.com/ashishpatel26/500-AI-Agents-Projects",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/500-AI-Agents-Projects/). Si necesitas el código: git clone https://github.com/ashishpatel26/500-AI-Agents-Projects",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "buscas ejemplos de aplicaciones de agentes para adaptar a tu propio problema",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [],
       "alt": []
     },
     {
@@ -2473,6 +2585,37 @@
       "alt": []
     },
     {
+      "id": "ai-engineering-hub",
+      "name": "ai-engineering-hub",
+      "cat": 2,
+      "role": "directory",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "guias",
+        "agents",
+        "ai",
+        "llms",
+        "machine-learning",
+        "mcp",
+        "rag",
+        "jupyter notebook"
+      ],
+      "one": "Colección de tutoriales y proyectos prácticos sobre LLM, RAG, agentes y aplicaciones de inteligencia artificial.",
+      "desc": "Colección de tutoriales y proyectos prácticos sobre LLM, RAG, agentes y aplicaciones de inteligencia artificial. Cada carpeta presenta un ejemplo con sus dependencias y configuración propias.",
+      "stack": "Jupyter Notebook",
+      "repo": "https://github.com/patchy631/ai-engineering-hub",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/ai-engineering-hub/). Si necesitas el código: git clone https://github.com/patchy631/ai-engineering-hub",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres aprender implementando ejemplos de ingeniería de IA",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "andrej-karpathy-skills",
       "name": "andrej-karpathy-skills",
       "cat": 2,
@@ -2587,8 +2730,8 @@
       "one": "Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen con la API de Arcads (Seedance, Sora, Veo, Kling).",
       "desc": "Repo de trabajo que convierte Claude Code o Cursor en un estudio de anuncios: genera videos UGC, presentaciones de producto, lookbooks y miniaturas de YouTube con los modelos de Arcads, y anuncios estáticos para Meta con 37 plantillas. Incluye pipelines multipaso (estilo Pixar o plastilina con ffmpeg), subtitulado con Whisper y HyperFrames, y publicación como anuncios pausados en Meta.",
       "stack": "Python, Bash, ffmpeg, Node.js (HyperFrames), Whisper",
-      "repo": "https://github.com/krusemediallc/arcads-claude-code",
-      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/Arcads AI Video Skill Pack/). Si necesitas el código: git clone https://github.com/krusemediallc/arcads-claude-code",
+      "repo": "https://github.com/mrpaidsocial/arcads-claude-code-mrpaidsocial",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/Arcads AI Video Skill Pack/). Si necesitas el código: git clone https://github.com/mrpaidsocial/arcads-claude-code-mrpaidsocial",
       "install_conf": "ok",
       "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
       "choose_if": "ya tienes cuenta de Arcads y quieres producir creatividades publicitarias desde Claude Code o Cursor",
@@ -2598,6 +2741,33 @@
         "whisper",
         "ffmpeg",
         "marketingskills"
+      ],
+      "alt": []
+    },
+    {
+      "id": "autoskills",
+      "name": "autoskills",
+      "cat": 2,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "catalogos",
+        "ruby"
+      ],
+      "one": "CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia.",
+      "desc": "CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia. Inspecciona archivos de configuración y propone o instala skills relacionadas con el stack detectado.",
+      "stack": "Ruby, Node.js",
+      "repo": "https://github.com/midudev/autoskills",
+      "install": "git clone https://github.com/midudev/autoskills && cd autoskills && (pnpm install || npm install)",
+      "install_conf": "verify",
+      "install_note": "Proyecto Node; usa pnpm si hay pnpm-lock.yaml.",
+      "choose_if": "quieres preparar un conjunto de skills adaptado al stack de un proyecto",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [
+        "awesome-agent-skills"
       ],
       "alt": []
     },
@@ -2633,6 +2803,30 @@
         "antigravity-awesome-skills",
         "awesome-claude-skills"
       ]
+    },
+    {
+      "id": "awesome-agents",
+      "name": "awesome-agents",
+      "cat": 2,
+      "role": "directory",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "catalogos"
+      ],
+      "one": "Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial.",
+      "desc": "Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial. Agrupa frameworks, agentes y entornos de desarrollo mediante enlaces a sus repositorios.",
+      "stack": "Recursos y documentación",
+      "repo": "https://github.com/kyrolabs/awesome-agents",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-agents/). Si necesitas el código: git clone https://github.com/kyrolabs/awesome-agents",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres explorar alternativas de agentes antes de elegir una implementación",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "awesome-claude-code",
@@ -2807,6 +3001,64 @@
       ]
     },
     {
+      "id": "chatgpt-dan",
+      "name": "ChatGPT_DAN",
+      "cat": 2,
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "prompts",
+        "chatgpt",
+        "gpt-3-5",
+        "gpt-4",
+        "jailbreak",
+        "openai",
+        "prompt"
+      ],
+      "one": "Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones antiguas de ChatGPT.",
+      "desc": "Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones antiguas de ChatGPT. Recopila variantes de instrucciones para estudiar intentos de alterar el comportamiento de asistentes.",
+      "stack": "Recursos y documentación",
+      "repo": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/ChatGPT_DAN/). Si necesitas el código: git clone https://github.com/0xk1h0/ChatGPT_DAN",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres investigar prompts históricos y sus limitaciones",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "chatgpt-system-prompt",
+      "name": "chatgpt_system_prompt",
+      "cat": 2,
+      "role": "directory",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "prompts",
+        "gpt",
+        "prompt",
+        "prompt-engineering",
+        "html"
+      ],
+      "one": "Colección de prompts de GPT y recursos sobre instrucciones de sistema y extracción de prompts.",
+      "desc": "Colección de prompts de GPT y recursos sobre instrucciones de sistema y extracción de prompts. Organiza documentos de referencia para estudiar estructuras de instrucciones y comportamiento de asistentes.",
+      "stack": "HTML",
+      "repo": "https://github.com/LouisShark/chatgpt_system_prompt",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/chatgpt_system_prompt/). Si necesitas el código: git clone https://github.com/LouisShark/chatgpt_system_prompt",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres comparar patrones de prompts como material de investigación",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "claude-cookbooks",
       "name": "Claude Cookbooks",
       "cat": 2,
@@ -2874,6 +3126,91 @@
       ],
       "alt": [
         "wshobson-agents"
+      ]
+    },
+    {
+      "id": "claude-quickstarts",
+      "name": "claude-quickstarts",
+      "cat": 2,
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [
+        "anthropic"
+      ],
+      "tags": [
+        "guias",
+        "python"
+      ],
+      "one": "Ejemplos oficiales de Anthropic para construir aplicaciones con Claude, herramientas y uso de computadora.",
+      "desc": "Ejemplos oficiales de Anthropic para construir aplicaciones con Claude, herramientas y uso de computadora. Cada quickstart ofrece una aplicación base con código y pasos de configuración específicos.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/anthropics/claude-quickstarts",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/claude-quickstarts/). Si necesitas el código: git clone https://github.com/anthropics/claude-quickstarts",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres partir de un ejemplo oficial al integrar la API de Claude",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "claude-token-efficient",
+      "name": "claude-token-efficient",
+      "cat": 2,
+      "role": "skill",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "metodologia",
+        "python"
+      ],
+      "one": "Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto.",
+      "desc": "Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto. Añade reglas de concisión al contexto del proyecto e incluye perfiles y ejemplos de evaluación.",
+      "stack": "Python",
+      "repo": "https://github.com/drona23/claude-token-efficient",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/claude-token-efficient/). Si necesitas el código: git clone https://github.com/drona23/claude-token-efficient",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres probar respuestas más breves en tareas con mucha salida de texto",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [],
+      "alt": [],
+      "agent_tools": [
+        "claude-code"
+      ]
+    },
+    {
+      "id": "codex-plugin-cc",
+      "name": "codex-plugin-cc",
+      "cat": 2,
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [
+        "openai"
+      ],
+      "tags": [
+        "metodologia",
+        "javascript"
+      ],
+      "one": "Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas.",
+      "desc": "Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas. Añade comandos de revisión y delegación y conecta Claude Code con el runtime de Codex.",
+      "stack": "JavaScript, Node.js",
+      "repo": "https://github.com/openai/codex-plugin-cc",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/codex-plugin-cc/). Si necesitas el código: git clone https://github.com/openai/codex-plugin-cc",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres revisar código con Codex dentro de tu flujo de Claude Code",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [],
+      "alt": [],
+      "agent_tools": [
+        "claude-code"
       ]
     },
     {
@@ -2970,6 +3307,65 @@
       ]
     },
     {
+      "id": "financial-services",
+      "name": "financial-services",
+      "cat": 2,
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [
+        "anthropic"
+      ],
+      "tags": [
+        "dominio",
+        "python"
+      ],
+      "one": "Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros.",
+      "desc": "Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. Reúne instrucciones y conectores para tareas como análisis de empresas y gestión de documentos financieros.",
+      "stack": "Python",
+      "repo": "https://github.com/anthropics/financial-services",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/financial-services/). Si necesitas el código: git clone https://github.com/anthropics/financial-services",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres estudiar flujos financieros dentro del ecosistema de Claude",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [
+        "claude-code"
+      ],
+      "alt": []
+    },
+    {
+      "id": "gemini-skills",
+      "name": "gemini-skills",
+      "cat": 2,
+      "role": "skill",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [
+        "google"
+      ],
+      "tags": [
+        "catalogos",
+        "gemini",
+        "gemini-api",
+        "skills",
+        "python"
+      ],
+      "one": "Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini.",
+      "desc": "Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini. Añaden instrucciones y referencias sobre las interacciones y patrones de desarrollo de Gemini.",
+      "stack": "Python",
+      "repo": "https://github.com/google-gemini/gemini-skills",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/gemini-skills/). Si necesitas el código: git clone https://github.com/google-gemini/gemini-skills",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "construyes aplicaciones que llaman a Gemini y necesitas contexto actualizado para el agente",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "generative-ai-for-beginners",
       "name": "Generative AI for Beginners",
       "cat": 2,
@@ -3032,6 +3428,42 @@
         "playwright"
       ],
       "alt": []
+    },
+    {
+      "id": "grok-plugin-claude-code",
+      "name": "grok-plugin-claude-code",
+      "cat": 2,
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [
+        "xai"
+      ],
+      "tags": [
+        "metodologia",
+        "ai-agents",
+        "claude-code",
+        "grok",
+        "grok-cli",
+        "plugin",
+        "xai",
+        "javascript"
+      ],
+      "one": "Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar.",
+      "desc": "Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar. Envuelve el modo no interactivo de Grok CLI para ejecutar encargos y recuperar sus resultados.",
+      "stack": "JavaScript",
+      "repo": "https://github.com/zachdunn/grok-plugin-claude-code",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/grok-plugin-claude-code/). Si necesitas el código: git clone https://github.com/zachdunn/grok-plugin-claude-code",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "usas Claude Code y quieres consultar Grok dentro de ese flujo",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [],
+      "alt": [],
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "humanizer",
@@ -3305,6 +3737,33 @@
       ]
     },
     {
+      "id": "security-audit-skill",
+      "name": "security-audit-skill",
+      "cat": 2,
+      "role": "skill",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "metodologia",
+        "javascript"
+      ],
+      "one": "Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estructurados.",
+      "desc": "Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estructurados. Divide la revisión en reconocimiento, búsqueda por cobertura y verificación de candidatos antes del informe.",
+      "stack": "JavaScript",
+      "repo": "https://github.com/cloudflare/security-audit-skill",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/security-audit-skill/). Si necesitas el código: git clone https://github.com/cloudflare/security-audit-skill",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres un proceso reproducible de revisión de seguridad con agentes",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [
+        "codex"
+      ],
+      "alt": []
+    },
+    {
       "id": "skills",
       "name": "skills",
       "cat": 2,
@@ -3358,6 +3817,43 @@
         "antigravity-awesome-skills"
       ],
       "alt": []
+    },
+    {
+      "id": "social-media-research-skills",
+      "name": "social-media-research-skills",
+      "cat": 2,
+      "role": "skill",
+      "exec": "cloud",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "dominio",
+        "agent-skills",
+        "ai-agents",
+        "claude-code",
+        "claude-skills",
+        "competitor-analysis",
+        "content-marketing",
+        "cursor"
+      ],
+      "one": "Skills para investigar publicaciones, comentarios, competidores y anuncios en redes mediante ScrapeCreators.",
+      "desc": "Skills para investigar publicaciones, comentarios, competidores y anuncios en redes mediante ScrapeCreators. Guía al agente por flujos de investigación que consultan datos sociales y producen informes de negocio.",
+      "stack": "Python",
+      "repo": "https://github.com/ScrapeCreators/social-media-research-skills",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/social-media-research-skills/). Si necesitas el código: git clone https://github.com/ScrapeCreators/social-media-research-skills",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres investigación de contenido social desde un agente compatible con Agent Skills",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [],
+      "alt": [
+        "last30days-skill"
+      ],
+      "agent_tools": [
+        "claude-code",
+        "codex"
+      ]
     },
     {
       "id": "spec-kit",
@@ -3423,6 +3919,34 @@
       ]
     },
     {
+      "id": "superclaude-framework",
+      "name": "SuperClaude_Framework",
+      "cat": 2,
+      "role": "skill",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "metodologia",
+        "python"
+      ],
+      "one": "Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code.",
+      "desc": "Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. Instala instrucciones y componentes de flujo para organizar fases del desarrollo asistido.",
+      "stack": "Python, pyproject.toml, Node.js",
+      "repo": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/SuperClaude_Framework/). Si necesitas el código: git clone https://github.com/SuperClaude-Org/SuperClaude_Framework",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres estructurar el trabajo de Claude Code con comandos y convenciones",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [],
+      "alt": [],
+      "agent_tools": [
+        "claude-code"
+      ]
+    },
+    {
       "id": "superpowers",
       "name": "superpowers",
       "cat": 2,
@@ -3451,6 +3975,37 @@
       "alt": [
         "agent-skills"
       ]
+    },
+    {
+      "id": "system-prompts-and-models-of-ai-tools",
+      "name": "system-prompts-and-models-of-ai-tools",
+      "cat": 2,
+      "role": "directory",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "prompts",
+        "ai",
+        "bolt",
+        "cluely",
+        "copilot",
+        "cursor",
+        "cursorai",
+        "devin"
+      ],
+      "one": "Colección de prompts y configuraciones atribuidos a herramientas de IA para estudiar sus patrones de diseño.",
+      "desc": "Colección de prompts y configuraciones atribuidos a herramientas de IA para estudiar sus patrones de diseño. Organiza archivos por herramienta para consultar y comparar instrucciones y formatos.",
+      "stack": "Recursos y documentación",
+      "repo": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/system-prompts-and-models-of-ai-tools/). Si necesitas el código: git clone https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres investigar patrones de prompts utilizados por asistentes",
+      "avoid_if": "no utilizas un agente o flujo compatible con estas instrucciones",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "wshobson-agents",
@@ -3552,6 +4107,39 @@
       "alt": [
         "autogen"
       ]
+    },
+    {
+      "id": "agent-desktop",
+      "name": "agent-desktop",
+      "cat": 3,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "infra",
+        "accessibility",
+        "accessibility-api",
+        "ai-agents",
+        "automation",
+        "cli",
+        "computer-use",
+        "computer-use-agent"
+      ],
+      "one": "CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio.",
+      "desc": "CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio. Expone elementos de la interfaz como referencias sobre las que el agente puede actuar y comprobar resultados.",
+      "stack": "Rust, Cargo",
+      "repo": "https://github.com/vercel-labs/agent-desktop",
+      "install": "git clone https://github.com/vercel-labs/agent-desktop (verificar README para build/run)",
+      "install_conf": "clone",
+      "install_note": "Stack no claro; revisa el README tras clonar.",
+      "choose_if": "necesitas automatizar aplicaciones nativas desde un agente",
+      "avoid_if": "un flujo determinista resuelve el problema sin un agente",
+      "combines_with": [
+        "codex"
+      ],
+      "alt": []
     },
     {
       "id": "agent-framework",
@@ -3925,6 +4513,37 @@
       ]
     },
     {
+      "id": "codex-chatgpt-web",
+      "name": "codex-chatgpt-web",
+      "cat": 3,
+      "role": "app",
+      "exec": "cloud",
+      "setup": "medium",
+      "mcp": true,
+      "prov": [],
+      "tags": [
+        "infra",
+        "chatgpt",
+        "chatgpt-pro",
+        "codex",
+        "free-ai",
+        "mcp",
+        "openai",
+        "playwright"
+      ],
+      "one": "Integración de terceros que conecta una sesión de ChatGPT Web con el selector de modelos y herramientas de Codex.",
+      "desc": "Integración de terceros que conecta una sesión de ChatGPT Web con el selector de modelos y herramientas de Codex. Un launcher usa la sesión de la cuenta y enlaza herramientas mediante MCP para conservar el contexto de la tarea.",
+      "stack": "TypeScript, Node.js",
+      "repo": "https://github.com/miuuyy/codex-chatgpt-web",
+      "install": "Crear cuenta / API key en el proveedor (no self-host).",
+      "install_conf": "ok",
+      "install_note": "Servicio gestionado; no se clona.",
+      "choose_if": "quieres estudiar una integración entre ChatGPT Web y Codex",
+      "avoid_if": "un flujo determinista resuelve el problema sin un agente",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "composio",
       "name": "Composio",
       "cat": 3,
@@ -4056,7 +4675,8 @@
       "alt": [
         "autogen",
         "langgraph",
-        "agno"
+        "agno",
+        "metagpt"
       ]
     },
     {
@@ -4393,7 +5013,8 @@
       ],
       "alt": [
         "storm",
-        "vane"
+        "vane",
+        "open-deep-research"
       ]
     },
     {
@@ -4464,6 +5085,33 @@
       ]
     },
     {
+      "id": "hermes-agent-self-evolution",
+      "name": "hermes-agent-self-evolution",
+      "cat": 3,
+      "role": "library",
+      "exec": "cloud",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "experimentos",
+        "python"
+      ],
+      "one": "Herramientas para optimizar skills, prompts y código de Hermes Agent mediante búsqueda evolutiva con DSPy y GEPA.",
+      "desc": "Herramientas para optimizar skills, prompts y código de Hermes Agent mediante búsqueda evolutiva con DSPy y GEPA. Evalúa variantes de texto, analiza trazas y selecciona mejoras sin reentrenar pesos de un modelo.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/NousResearch/hermes-agent-self-evolution",
+      "install": "pip install hermes-agent-self-evolution   (o: uv add hermes-agent-self-evolution)",
+      "install_conf": "verify",
+      "install_note": "Nombre PyPI puede diferir de 'hermes-agent-self-evolution'; verifica en pypi.org.",
+      "choose_if": "quieres experimentar con mejoras de Hermes medidas sobre un conjunto de evaluación",
+      "avoid_if": "un flujo determinista resuelve el problema sin un agente",
+      "combines_with": [
+        "hermes-agent"
+      ],
+      "alt": []
+    },
+    {
       "id": "langchain",
       "name": "langchain",
       "cat": 3,
@@ -4496,6 +5144,37 @@
         "haystack",
         "semantic-kernel"
       ]
+    },
+    {
+      "id": "langchain4j",
+      "name": "langchain4j",
+      "cat": 3,
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": true,
+      "prov": [],
+      "tags": [
+        "ts",
+        "anthropic",
+        "chatgpt",
+        "chroma",
+        "embeddings",
+        "gemini",
+        "gpt",
+        "huggingface"
+      ],
+      "one": "Biblioteca de Java para integrar LLM, herramientas, agentes, RAG y almacenes vectoriales en aplicaciones de la JVM.",
+      "desc": "Biblioteca de Java para integrar LLM, herramientas, agentes, RAG y almacenes vectoriales en aplicaciones de la JVM. Ofrece interfaces comunes para proveedores y conectores y se integra con frameworks de Java.",
+      "stack": "Java",
+      "repo": "https://github.com/langchain4j/langchain4j",
+      "install": "git clone https://github.com/langchain4j/langchain4j (verificar README para install)",
+      "install_conf": "clone",
+      "install_note": "Stack no claro; revisa el README tras clonar.",
+      "choose_if": "tu aplicación usa Java y necesita integrar modelos o recuperación de documentos",
+      "avoid_if": "un flujo determinista resuelve el problema sin un agente",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "langflow",
@@ -4691,6 +5370,39 @@
       "alt": []
     },
     {
+      "id": "local-deep-research",
+      "name": "local-deep-research",
+      "cat": 3,
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "research",
+        "academia",
+        "anthropic",
+        "arxiv",
+        "brave",
+        "deep-research",
+        "encryption",
+        "home-automation"
+      ],
+      "one": "Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes.",
+      "desc": "Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes. Itera entre preguntas, búsquedas y síntesis y permite configurar motores de búsqueda y proveedores de modelos.",
+      "stack": "Python, Docker, pyproject.toml, Node.js",
+      "repo": "https://github.com/LearningCircuit/local-deep-research",
+      "install": "git clone https://github.com/LearningCircuit/local-deep-research && cd local-deep-research && docker compose up -d",
+      "install_conf": "verify",
+      "install_note": "Requiere Docker; el compose puede variar — revisa docker-compose.yml.",
+      "choose_if": "quieres investigar con un modelo local y conservar las fuentes consultadas",
+      "avoid_if": "un flujo determinista resuelve el problema sin un agente",
+      "combines_with": [],
+      "alt": [
+        "open-deep-research"
+      ]
+    },
+    {
       "id": "mastra",
       "name": "Mastra",
       "cat": 3,
@@ -4757,6 +5469,68 @@
         "openclaw",
         "hermes-agent"
       ]
+    },
+    {
+      "id": "metagpt",
+      "name": "MetaGPT",
+      "cat": 3,
+      "role": "runtime",
+      "exec": "cloud",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "py",
+        "agent",
+        "gpt",
+        "llm",
+        "metagpt",
+        "multi-agent",
+        "python"
+      ],
+      "one": "Framework de agentes que representa roles de un equipo de software para coordinar tareas de desarrollo.",
+      "desc": "Framework de agentes que representa roles de un equipo de software para coordinar tareas de desarrollo. Asigna responsabilidades y artefactos a agentes que colaboran sobre un encargo.",
+      "stack": "Python, Docker",
+      "repo": "https://github.com/FoundationAgents/MetaGPT",
+      "install": "Crear cuenta / API key en el proveedor (no self-host).",
+      "install_conf": "ok",
+      "install_note": "Servicio gestionado; no se clona.",
+      "choose_if": "quieres estudiar un flujo multiagente basado en roles de desarrollo",
+      "avoid_if": "un flujo determinista resuelve el problema sin un agente",
+      "combines_with": [],
+      "alt": [
+        "crewai"
+      ]
+    },
+    {
+      "id": "mimo-code",
+      "name": "MiMo-Code",
+      "cat": 3,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "coding",
+        "ai",
+        "ai-agents",
+        "cli",
+        "mimo",
+        "mimo-code",
+        "typescript"
+      ],
+      "one": "Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente.",
+      "desc": "Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. Mantiene el contexto del proyecto y usa herramientas para ejecutar tareas de desarrollo desde una conversación.",
+      "stack": "TypeScript, Node.js",
+      "repo": "https://github.com/XiaomiMiMo/MiMo-Code",
+      "install": "git clone https://github.com/XiaomiMiMo/MiMo-Code && cd MiMo-Code && (pnpm install || npm install)",
+      "install_conf": "verify",
+      "install_note": "Proyecto Node; usa pnpm si hay pnpm-lock.yaml.",
+      "choose_if": "quieres evaluar el agente de código del ecosistema Xiaomi MiMo",
+      "avoid_if": "un flujo determinista resuelve el problema sin un agente",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "mirofish",
@@ -4874,6 +5648,67 @@
       ]
     },
     {
+      "id": "nodeterm",
+      "name": "nodeterm",
+      "cat": 3,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "infra",
+        "adhd",
+        "agent-orchestration",
+        "ai-agents",
+        "canvas",
+        "claude-code",
+        "codex",
+        "coding-agents"
+      ],
+      "one": "Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto.",
+      "desc": "Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto. Mantiene terminales reales en nodos movibles y muestra sesiones de trabajo en un tablero.",
+      "stack": "TypeScript, Docker, Node.js",
+      "repo": "https://github.com/eneskirca/nodeterm",
+      "install": "git clone https://github.com/eneskirca/nodeterm && cd nodeterm && docker compose up -d",
+      "install_conf": "verify",
+      "install_note": "Requiere Docker; el compose puede variar — revisa docker-compose.yml.",
+      "choose_if": "gestionas muchas terminales o sesiones de agentes y prefieres una organización visual",
+      "avoid_if": "un flujo determinista resuelve el problema sin un agente",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "open-deep-research",
+      "name": "open_deep_research",
+      "cat": 3,
+      "role": "runtime",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": true,
+      "prov": [],
+      "tags": [
+        "research",
+        "python"
+      ],
+      "one": "Agente abierto de LangChain para investigación profunda configurable con distintos modelos, buscadores y servidores MCP.",
+      "desc": "Agente abierto de LangChain para investigación profunda configurable con distintos modelos, buscadores y servidores MCP. Organiza ciclos de planificación, búsqueda y síntesis mediante un grafo de investigación.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/langchain-ai/open_deep_research",
+      "install": "git clone https://github.com/langchain-ai/open_deep_research && cd open_deep_research && (uv sync || pip install -r requirements.txt)",
+      "install_conf": "verify",
+      "install_note": "Proyecto Python; usa uv si hay pyproject.toml/uv.lock.",
+      "choose_if": "quieres adaptar un agente de investigación construido con LangGraph",
+      "avoid_if": "un flujo determinista resuelve el problema sin un agente",
+      "combines_with": [
+        "langfuse"
+      ],
+      "alt": [
+        "local-deep-research",
+        "gpt-researcher"
+      ]
+    },
+    {
       "id": "open-interpreter",
       "name": "Open Interpreter",
       "cat": 3,
@@ -4979,6 +5814,35 @@
       ]
     },
     {
+      "id": "openclaude",
+      "name": "openclaude",
+      "cat": 3,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": true,
+      "prov": [],
+      "tags": [
+        "coding",
+        "ai",
+        "ai-agent",
+        "ai-tools",
+        "cli",
+        "typescript"
+      ],
+      "one": "Agente de código abierto para terminal que conecta proveedores remotos y modelos locales con herramientas y MCP.",
+      "desc": "Agente de código abierto para terminal que conecta proveedores remotos y modelos locales con herramientas y MCP. Mantiene una conversación de desarrollo con streaming, comandos y herramientas sobre el workspace.",
+      "stack": "TypeScript, Docker, Node.js",
+      "repo": "https://github.com/Twigpine/openclaude",
+      "install": "git clone https://github.com/Twigpine/openclaude && cd openclaude && docker compose up -d",
+      "install_conf": "verify",
+      "install_note": "Requiere Docker; el compose puede variar — revisa docker-compose.yml.",
+      "choose_if": "quieres evaluar un agente de terminal compatible con varios backends",
+      "avoid_if": "un flujo determinista resuelve el problema sin un agente",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "openclaw",
       "name": "OpenClaw",
       "cat": 3,
@@ -5056,6 +5920,67 @@
       ]
     },
     {
+      "id": "opencode-legacy",
+      "name": "opencode",
+      "cat": 3,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "coding",
+        "ai",
+        "claude",
+        "code",
+        "llm",
+        "openai",
+        "go"
+      ],
+      "one": "Agente de código en Go del antiguo proyecto opencode-ai, archivado y continuado bajo el nombre Crush.",
+      "desc": "Agente de código en Go del antiguo proyecto opencode-ai, archivado y continuado bajo el nombre Crush. Conserva una interfaz de terminal y el historial del agente original para consulta.",
+      "stack": "Go, Go modules",
+      "repo": "https://github.com/opencode-ai/opencode",
+      "install": "git clone https://github.com/opencode-ai/opencode (verificar README para build/run)",
+      "install_conf": "clone",
+      "install_note": "Stack no claro; revisa el README tras clonar.",
+      "choose_if": "necesitas estudiar la implementación histórica de OpenCode en Go",
+      "avoid_if": "un flujo determinista resuelve el problema sin un agente",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "opencursor",
+      "name": "OpenCursor",
+      "cat": 3,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": true,
+      "prov": [],
+      "tags": [
+        "coding",
+        "agent",
+        "ai",
+        "code",
+        "coder",
+        "cursor",
+        "extension",
+        "ide"
+      ],
+      "one": "Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos.",
+      "desc": "Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos. Integra conversación y acciones sobre el workspace con proveedores remotos o locales y herramientas MCP.",
+      "stack": "TypeScript, Node.js",
+      "repo": "https://github.com/PawanOsman/OpenCursor",
+      "install": "git clone https://github.com/PawanOsman/OpenCursor && cd OpenCursor && (pnpm install || npm install)",
+      "install_conf": "verify",
+      "install_note": "Proyecto Node; usa pnpm si hay pnpm-lock.yaml.",
+      "choose_if": "quieres evaluar un agente de código integrado en VS Code",
+      "avoid_if": "un flujo determinista resuelve el problema sin un agente",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "openevolve",
       "name": "openevolve",
       "cat": 3,
@@ -5115,6 +6040,37 @@
         "open-swe",
         "swe-agent"
       ]
+    },
+    {
+      "id": "paperclip",
+      "name": "paperclip",
+      "cat": 3,
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "asistentes",
+        "acpx",
+        "agent-orchestration",
+        "agent-skills",
+        "agentic-ai",
+        "ai-agents",
+        "ai-engineering",
+        "ai-governance"
+      ],
+      "one": "Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo.",
+      "desc": "Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. Conecta distintos runtimes y coordina sus encargos y costes desde una aplicación central.",
+      "stack": "TypeScript, Docker, Node.js",
+      "repo": "https://github.com/paperclipai/paperclip",
+      "install": "git clone https://github.com/paperclipai/paperclip && cd paperclip && docker compose up -d",
+      "install_conf": "verify",
+      "install_note": "Requiere Docker; el compose puede variar — revisa docker-compose.yml.",
+      "choose_if": "necesitas coordinar varios agentes y seguir su trabajo en un panel",
+      "avoid_if": "un flujo determinista resuelve el problema sin un agente",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "pydantic-ai",
@@ -5318,6 +6274,33 @@
       ]
     },
     {
+      "id": "social-media-agent",
+      "name": "social-media-agent",
+      "cat": 3,
+      "role": "runtime",
+      "exec": "cloud",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "asistentes",
+        "typescript"
+      ],
+      "one": "Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de publicarlas.",
+      "desc": "Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de publicarlas. Usa un flujo de LangGraph para investigar el enlace, redactar y solicitar aprobación de la publicación.",
+      "stack": "TypeScript, pyproject.toml, Node.js",
+      "repo": "https://github.com/langchain-ai/social-media-agent",
+      "install": "Crear cuenta / API key en el proveedor (no self-host).",
+      "install_conf": "ok",
+      "install_note": "Servicio gestionado; no se clona.",
+      "choose_if": "quieres preparar publicaciones para X o LinkedIn con una etapa de aprobación",
+      "avoid_if": "un flujo determinista resuelve el problema sin un agente",
+      "combines_with": [
+        "langgraphjs"
+      ],
+      "alt": []
+    },
+    {
       "id": "storm",
       "name": "STORM",
       "cat": 3,
@@ -5454,6 +6437,35 @@
       ]
     },
     {
+      "id": "agent-browser",
+      "name": "agent-browser",
+      "cat": 4,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "navegador",
+        "rust"
+      ],
+      "one": "CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes.",
+      "desc": "CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes. Mantiene una sesión de navegador y permite abrir páginas, inspeccionarlas y actuar por referencias desde la terminal.",
+      "stack": "Rust, Node.js",
+      "repo": "https://github.com/vercel-labs/agent-browser",
+      "install": "git clone https://github.com/vercel-labs/agent-browser && cd agent-browser && (pnpm install || npm install)",
+      "install_conf": "verify",
+      "install_note": "Proyecto Node; usa pnpm si hay pnpm-lock.yaml.",
+      "choose_if": "necesitas navegación programable con salidas compactas para un agente",
+      "avoid_if": "la fuente ya ofrece una API o un archivo de datos suficiente",
+      "combines_with": [
+        "codex"
+      ],
+      "alt": [
+        "playwright-cli"
+      ]
+    },
+    {
       "id": "agent-reach",
       "name": "Agent-Reach",
       "cat": 4,
@@ -5511,6 +6523,63 @@
       "combines_with": [
         "yt-dlp"
       ],
+      "alt": []
+    },
+    {
+      "id": "awesome-chrome-devtools",
+      "name": "awesome-chrome-devtools",
+      "cat": 4,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "navegador",
+        "awesome",
+        "awesome-list"
+      ],
+      "one": "Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol.",
+      "desc": "Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol. Agrupa depuradores, visores de trazas y clientes del protocolo para localizar una herramienta adecuada.",
+      "stack": "Node.js",
+      "repo": "https://github.com/ChromeDevTools/awesome-chrome-devtools",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-chrome-devtools/). Si necesitas el código: git clone https://github.com/ChromeDevTools/awesome-chrome-devtools",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "buscas utilidades para depurar o automatizar Chrome",
+      "avoid_if": "la fuente ya ofrece una API o un archivo de datos suficiente",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "awesome-web-scraping",
+      "name": "awesome-web-scraping",
+      "cat": 4,
+      "role": "directory",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "crawlers",
+        "captcha-bypass",
+        "captcha-recaptcha",
+        "crawler",
+        "crawling",
+        "crawling-framework",
+        "crawling-python",
+        "crawling-tool"
+      ],
+      "one": "Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos.",
+      "desc": "Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos. Organiza opciones por lenguaje y función para investigar alternativas de extracción.",
+      "stack": "JavaScript, Node.js",
+      "repo": "https://github.com/lorien/awesome-web-scraping",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-web-scraping/). Si necesitas el código: git clone https://github.com/lorien/awesome-web-scraping",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres comparar librerías de scraping antes de elegir tu stack",
+      "avoid_if": "la fuente ya ofrece una API o un archivo de datos suficiente",
+      "combines_with": [],
       "alt": []
     },
     {
@@ -5578,6 +6647,37 @@
         "skyvern",
         "playwright-mcp"
       ]
+    },
+    {
+      "id": "camofox-browser",
+      "name": "camofox-browser",
+      "cat": 4,
+      "role": "runtime",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "navegador",
+        "ai-agent",
+        "anti-bot",
+        "antidetect-browser",
+        "automation",
+        "bot-detection",
+        "browser-automation",
+        "cloudflare-bypass"
+      ],
+      "one": "Servidor de automatización de navegador basado en Camoufox para ofrecer navegación a agentes.",
+      "desc": "Servidor de automatización de navegador basado en Camoufox para ofrecer navegación a agentes. Expone un navegador derivado de Firefox mediante herramientas y endpoints de automatización.",
+      "stack": "JavaScript, Docker, Node.js",
+      "repo": "https://github.com/jo-inc/camofox-browser",
+      "install": "git clone https://github.com/jo-inc/camofox-browser && cd camofox-browser && docker compose up -d",
+      "install_conf": "verify",
+      "install_note": "Requiere Docker; el compose puede variar — revisa docker-compose.yml.",
+      "choose_if": "necesitas evaluar una alternativa de navegador automatizado para agentes",
+      "avoid_if": "la fuente ya ofrece una API o un archivo de datos suficiente",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "changedetection",
@@ -5811,7 +6911,9 @@
         "claude-code",
         "agent-reach"
       ],
-      "alt": []
+      "alt": [
+        "social-media-research-skills"
+      ]
     },
     {
       "id": "lightpanda",
@@ -5960,7 +7062,9 @@
         "playwright",
         "browser-use"
       ],
-      "alt": []
+      "alt": [
+        "agent-browser"
+      ]
     },
     {
       "id": "puppeteer",
@@ -6102,6 +7206,39 @@
       "combines_with": [
         "scrapely",
         "crawlee-python"
+      ],
+      "alt": []
+    },
+    {
+      "id": "scrapydweb",
+      "name": "scrapydweb",
+      "cat": 4,
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "crawlers",
+        "dashboard",
+        "log-analysis",
+        "log-parsing",
+        "scrapy",
+        "scrapy-log-analysis",
+        "scrapy-visualization",
+        "scrapyd"
+      ],
+      "one": "Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy.",
+      "desc": "Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy. Conecta servidores Scrapyd y centraliza despliegues, tareas programadas y seguimiento de crawls.",
+      "stack": "Python",
+      "repo": "https://github.com/my8100/scrapydweb",
+      "install": "git clone https://github.com/my8100/scrapydweb && cd scrapydweb && (uv sync || pip install -r requirements.txt)",
+      "install_conf": "verify",
+      "install_note": "Proyecto Python; usa uv si hay pyproject.toml/uv.lock.",
+      "choose_if": "operas varios spiders de Scrapy y necesitas un panel de administración",
+      "avoid_if": "la fuente ya ofrece una API o un archivo de datos suficiente",
+      "combines_with": [
+        "scrapy"
       ],
       "alt": []
     },
@@ -6331,6 +7468,36 @@
       "alt": []
     },
     {
+      "id": "annas-mcp",
+      "name": "annas-mcp",
+      "cat": 5,
+      "role": "runtime",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": true,
+      "prov": [],
+      "tags": [
+        "servidores",
+        "annas-archive",
+        "cli",
+        "mcp-server",
+        "go"
+      ],
+      "one": "Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos.",
+      "desc": "Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos. Expone búsquedas y descargas como herramientas MCP y permite seleccionar espejos disponibles.",
+      "stack": "Go, Go modules",
+      "repo": "https://github.com/iosifache/annas-mcp",
+      "install": "git clone https://github.com/iosifache/annas-mcp (verificar README para build/run)",
+      "install_conf": "clone",
+      "install_note": "Stack no claro; revisa el README tras clonar.",
+      "choose_if": "necesitas integrar búsquedas de documentos en un cliente MCP",
+      "avoid_if": "una conexión directa cubre el caso sin añadir infraestructura",
+      "combines_with": [
+        "markitdown"
+      ],
+      "alt": []
+    },
+    {
       "id": "awesome-mcp-clients",
       "name": "Awesome MCP Clients",
       "cat": 5,
@@ -6547,6 +7714,64 @@
       "alt": []
     },
     {
+      "id": "free-for-dev",
+      "name": "free-for-dev",
+      "cat": 5,
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "recursos",
+        "awesome-list",
+        "free-for-developers",
+        "html"
+      ],
+      "one": "Directorio de servicios de infraestructura y desarrollo que ofrecen planes o niveles gratuitos.",
+      "desc": "Directorio de servicios de infraestructura y desarrollo que ofrecen planes o niveles gratuitos. Agrupa servicios por capacidad para comparar opciones antes de configurar un proyecto.",
+      "stack": "HTML",
+      "repo": "https://github.com/ripienaar/free-for-dev",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/free-for-dev/). Si necesitas el código: git clone https://github.com/ripienaar/free-for-dev",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "buscas servicios de desarrollo con un nivel gratuito disponible",
+      "avoid_if": "una conexión directa cubre el caso sin añadir infraestructura",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "freedomain",
+      "name": "FreeDomain",
+      "cat": 5,
+      "role": "directory",
+      "exec": "cloud",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "recursos",
+        "digitalplat",
+        "dns",
+        "dns-tutorial",
+        "documentation",
+        "domain",
+        "domain-platform",
+        "domain-registration"
+      ],
+      "one": "Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat.",
+      "desc": "Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat. Reúne instrucciones para registrar un dominio, configurar nameservers y conectar un proyecto.",
+      "stack": "Markdown",
+      "repo": "https://github.com/DigitalPlatDev/FreeDomain",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/FreeDomain/). Si necesitas el código: git clone https://github.com/DigitalPlatDev/FreeDomain",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres aprender el flujo de dominios y DNS con sus recursos de referencia",
+      "avoid_if": "una conexión directa cubre el caso sin añadir infraestructura",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "github-mcp-server",
       "name": "GitHub MCP Server",
       "cat": 5,
@@ -6609,6 +7834,37 @@
       "alt": [
         "mcp-use"
       ]
+    },
+    {
+      "id": "masterdnsvpn",
+      "name": "MasterDnsVPN",
+      "cat": 5,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "redes",
+        "dns",
+        "dns-client",
+        "dns-proxy",
+        "dns-server",
+        "dns-tunnel",
+        "dns-tunneling",
+        "dnstt"
+      ],
+      "one": "Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS.",
+      "desc": "Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. Coordina cliente y servidor con retransmisión y selección de resolvers para enlaces con restricciones.",
+      "stack": "Go, Go modules",
+      "repo": "https://github.com/masterking32/MasterDnsVPN",
+      "install": "git clone https://github.com/masterking32/MasterDnsVPN (verificar README para build/run)",
+      "install_conf": "clone",
+      "install_note": "Stack no claro; revisa el README tras clonar.",
+      "choose_if": "quieres estudiar transporte de red sobre DNS en un entorno de pruebas",
+      "avoid_if": "una conexión directa cubre el caso sin añadir infraestructura",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "mcp",
@@ -6976,6 +8232,37 @@
       ]
     },
     {
+      "id": "backdoor",
+      "name": "backdoor",
+      "cat": 6,
+      "role": "runtime",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "serving",
+        "ai",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "deepseek",
+        "llm",
+        "ollama"
+      ],
+      "one": "Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code.",
+      "desc": "Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. Traduce solicitudes y gestiona la configuración de proveedores como servicios compatibles u Ollama.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/ajsai47/backdoor",
+      "install": "git clone https://github.com/ajsai47/backdoor && cd backdoor && (uv sync || pip install -r requirements.txt)",
+      "install_conf": "verify",
+      "install_note": "Proyecto Python; usa uv si hay pyproject.toml/uv.lock.",
+      "choose_if": "quieres estudiar cómo conectar otros modelos al harness de Claude Code",
+      "avoid_if": "el coste operativo supera el volumen de uso del proyecto",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "chroma",
       "name": "Chroma",
       "cat": 6,
@@ -7302,7 +8589,9 @@
         "context-engineering",
         "codegraph"
       ],
-      "alt": []
+      "alt": [
+        "rtk"
+      ]
     },
     {
       "id": "langfuse",
@@ -7865,6 +9154,39 @@
       ]
     },
     {
+      "id": "rtk",
+      "name": "rtk",
+      "cat": 6,
+      "role": "app",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "tokens",
+        "agentic-coding",
+        "ai-coding",
+        "anthropic",
+        "claude-code",
+        "cli",
+        "command-line-tool",
+        "cost-reduction"
+      ],
+      "one": "Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código.",
+      "desc": "Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. Resume resultados de pruebas, diffs y logs antes de entregarlos al agente y registra el ahorro observado.",
+      "stack": "Rust, Cargo",
+      "repo": "https://github.com/rtk-ai/rtk",
+      "install": "git clone https://github.com/rtk-ai/rtk (verificar README para build/run)",
+      "install_conf": "clone",
+      "install_note": "Stack no claro; revisa el README tras clonar.",
+      "choose_if": "tu agente consume demasiado contexto leyendo salidas extensas de terminal",
+      "avoid_if": "el coste operativo supera el volumen de uso del proyecto",
+      "combines_with": [],
+      "alt": [
+        "headroom"
+      ]
+    },
+    {
       "id": "sglang",
       "name": "SGLang",
       "cat": 6,
@@ -7925,6 +9247,36 @@
         "mem0",
         "agentmemory"
       ]
+    },
+    {
+      "id": "tensorrt-llm",
+      "name": "TensorRT-LLM",
+      "cat": 6,
+      "role": "library",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "serving",
+        "blackwell",
+        "cuda",
+        "llm-serving",
+        "moe",
+        "pytorch",
+        "python"
+      ],
+      "one": "Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados.",
+      "desc": "Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. Transforma modelos compatibles y los ejecuta con optimizaciones de memoria, precisión y paralelismo.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/NVIDIA/TensorRT-LLM",
+      "install": "pip install tensorrt-llm   (o: uv add tensorrt-llm)",
+      "install_conf": "verify",
+      "install_note": "Nombre PyPI puede diferir de 'TensorRT-LLM'; verifica en pypi.org.",
+      "choose_if": "despliegas LLM en GPU NVIDIA y necesitas optimizar la inferencia",
+      "avoid_if": "el coste operativo supera el volumen de uso del proyecto",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "turbovec",
@@ -8042,6 +9394,85 @@
       "combines_with": [
         "awesome-dataviz"
       ],
+      "alt": []
+    },
+    {
+      "id": "awesome-machine-learning",
+      "name": "awesome-machine-learning",
+      "cat": 7,
+      "role": "directory",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "aprender",
+        "python"
+      ],
+      "one": "Directorio de frameworks, bibliotecas y recursos de machine learning organizado por lenguaje y tema.",
+      "desc": "Directorio de frameworks, bibliotecas y recursos de machine learning organizado por lenguaje y tema. Reúne enlaces a implementaciones, cursos y material para comparar herramientas.",
+      "stack": "Python",
+      "repo": "https://github.com/josephmisiti/awesome-machine-learning",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-machine-learning/). Si necesitas el código: git clone https://github.com/josephmisiti/awesome-machine-learning",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "buscas alternativas de aprendizaje automático en distintos lenguajes",
+      "avoid_if": "necesitas una aplicación lista para usuarios sin trabajo técnico",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "bigdata",
+      "name": "BigData",
+      "cat": 7,
+      "role": "directory",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "datos",
+        "java"
+      ],
+      "one": "Colección educativa de proyectos de datos con ejercicios de Hive, HDFS, Spark, HBase y sistemas de recomendación.",
+      "desc": "Colección educativa de proyectos de datos con ejercicios de Hive, HDFS, Spark, HBase y sistemas de recomendación. Las carpetas desarrollan problemas de ingestión, análisis y procesamiento distribuido de datos.",
+      "stack": "Java",
+      "repo": "https://github.com/monsonlee/BigData",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/BigData/). Si necesitas el código: git clone https://github.com/monsonlee/BigData",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres estudiar ejemplos prácticos del ecosistema de big data",
+      "avoid_if": "necesitas una aplicación lista para usuarios sin trabajo técnico",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "bionemo-recipes",
+      "name": "bionemo-recipes",
+      "cat": 7,
+      "role": "directory",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "entrenamiento",
+        "drug-discovery",
+        "gpu",
+        "machine-learning",
+        "pytorch",
+        "python"
+      ],
+      "one": "Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala.",
+      "desc": "Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. Presenta configuraciones de entrenamiento con TransformerEngine y frameworks distribuidos para modelos biológicos.",
+      "stack": "Python",
+      "repo": "https://github.com/NVIDIA-BioNeMo/bionemo-recipes",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/bionemo-recipes/). Si necesitas el código: git clone https://github.com/NVIDIA-BioNeMo/bionemo-recipes",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "trabajas en entrenamiento de modelos para datos biológicos",
+      "avoid_if": "necesitas una aplicación lista para usuarios sin trabajo técnico",
+      "combines_with": [],
       "alt": []
     },
     {
@@ -8347,6 +9778,33 @@
       ]
     },
     {
+      "id": "globalbuildingatlas",
+      "name": "GlobalBuildingAtlas",
+      "cat": 7,
+      "role": "directory",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "datos",
+        "python"
+      ],
+      "one": "Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1.",
+      "desc": "Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. Publica distintas capas geoespaciales y herramientas para estimar alturas y construir representaciones de edificios.",
+      "stack": "Python",
+      "repo": "https://github.com/zhu-xlab/GlobalBuildingAtlas",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/GlobalBuildingAtlas/). Si necesitas el código: git clone https://github.com/zhu-xlab/GlobalBuildingAtlas",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "necesitas geometría de edificios para análisis territorial o visualización urbana",
+      "avoid_if": "necesitas una aplicación lista para usuarios sin trabajo técnico",
+      "combines_with": [
+        "three.js"
+      ],
+      "alt": []
+    },
+    {
       "id": "graphify",
       "name": "graphify",
       "cat": 7,
@@ -8399,6 +9857,37 @@
         "nanogpt",
         "nanochat"
       ],
+      "alt": []
+    },
+    {
+      "id": "hudi",
+      "name": "hudi",
+      "cat": 7,
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "datos",
+        "apacheflink",
+        "apachehudi",
+        "apachespark",
+        "bigdata",
+        "data-integration",
+        "datalake",
+        "hudi"
+      ],
+      "one": "Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos.",
+      "desc": "Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. Añade índices, actualizaciones y procesamiento incremental a tablas de un lago de datos.",
+      "stack": "Java, Docker",
+      "repo": "https://github.com/apache/hudi",
+      "install": "git clone https://github.com/apache/hudi && cd hudi && docker compose up -d",
+      "install_conf": "verify",
+      "install_note": "Requiere Docker; el compose puede variar — revisa docker-compose.yml.",
+      "choose_if": "necesitas gestionar cambios y cargas incrementales en un data lake",
+      "avoid_if": "necesitas una aplicación lista para usuarios sin trabajo técnico",
+      "combines_with": [],
       "alt": []
     },
     {
@@ -8521,6 +10010,31 @@
         "llm-course",
         "nanogpt"
       ]
+    },
+    {
+      "id": "machinelearning",
+      "name": "MachineLearning",
+      "cat": 7,
+      "role": "directory",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "aprender",
+        "python"
+      ],
+      "one": "Ejemplos educativos de algoritmos de machine learning y redes neuronales con Python.",
+      "desc": "Ejemplos educativos de algoritmos de machine learning y redes neuronales con Python. Agrupa implementaciones y ejercicios de clasificación, reducción de dimensiones y aprendizaje profundo.",
+      "stack": "Python",
+      "repo": "https://github.com/wepe/MachineLearning",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/MachineLearning/). Si necesitas el código: git clone https://github.com/wepe/MachineLearning",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres explorar implementaciones pequeñas de algoritmos clásicos",
+      "avoid_if": "necesitas una aplicación lista para usuarios sin trabajo técnico",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "marimo",
@@ -8724,6 +10238,37 @@
       ]
     },
     {
+      "id": "python-machine-learning-book",
+      "name": "python-machine-learning-book",
+      "cat": 7,
+      "role": "directory",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "aprender",
+        "data-mining",
+        "data-science",
+        "logistic-regression",
+        "machine-learning",
+        "machine-learning-algorithms",
+        "neural-network",
+        "python"
+      ],
+      "one": "Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación.",
+      "desc": "Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación. Presenta notebooks y scripts que acompañan los capítulos y conceptos del libro.",
+      "stack": "Jupyter Notebook",
+      "repo": "https://github.com/rasbt/python-machine-learning-book",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/python-machine-learning-book/). Si necesitas el código: git clone https://github.com/rasbt/python-machine-learning-book",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres estudiar los ejemplos de la primera edición del libro",
+      "avoid_if": "necesitas una aplicación lista para usuarios sin trabajo técnico",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "pytorch",
       "name": "PyTorch",
       "cat": 7,
@@ -8838,6 +10383,37 @@
       "alt": []
     },
     {
+      "id": "tensorflow",
+      "name": "tensorflow",
+      "cat": 7,
+      "role": "library",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "entrenamiento",
+        "deep-learning",
+        "deep-neural-networks",
+        "distributed",
+        "machine-learning",
+        "ml",
+        "neural-network",
+        "python"
+      ],
+      "one": "Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos.",
+      "desc": "Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. Define operaciones y modelos y ofrece herramientas de entrenamiento e inferencia en distintos dispositivos.",
+      "stack": "C++",
+      "repo": "https://github.com/tensorflow/tensorflow",
+      "install": "git clone https://github.com/tensorflow/tensorflow (verificar README para install)",
+      "install_conf": "clone",
+      "install_note": "Stack no claro; revisa el README tras clonar.",
+      "choose_if": "tu proyecto necesita el ecosistema TensorFlow para entrenamiento o despliegue",
+      "avoid_if": "necesitas una aplicación lista para usuarios sin trabajo técnico",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "timesfm",
       "name": "TimesFM",
       "cat": 7,
@@ -8864,6 +10440,37 @@
         "polars",
         "duckdb"
       ],
+      "alt": []
+    },
+    {
+      "id": "train-llm-from-scratch",
+      "name": "train-llm-from-scratch",
+      "cat": 7,
+      "role": "directory",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "aprender",
+        "gemini",
+        "large-language-models",
+        "llm",
+        "openai",
+        "training",
+        "transformers",
+        "python"
+      ],
+      "one": "Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generación.",
+      "desc": "Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generación. Implementa un Transformer y recorre preparación de datos, entrenamiento y ajuste del modelo.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/FareedKhan-dev/train-llm-from-scratch",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/train-llm-from-scratch/). Si necesitas el código: git clone https://github.com/FareedKhan-dev/train-llm-from-scratch",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres entender el entrenamiento de un LLM mediante una implementación completa",
+      "avoid_if": "necesitas una aplicación lista para usuarios sin trabajo técnico",
+      "combines_with": [],
       "alt": []
     },
     {
@@ -8987,6 +10594,37 @@
       ]
     },
     {
+      "id": "warp",
+      "name": "warp",
+      "cat": 7,
+      "role": "library",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "entrenamiento",
+        "cuda",
+        "differentiable-programming",
+        "gpu",
+        "gpu-acceleration",
+        "nvidia",
+        "nvidia-warp",
+        "python"
+      ],
+      "one": "Framework de NVIDIA que compila funciones de Python en kernels para simulación física y cálculo en CPU o GPU.",
+      "desc": "Framework de NVIDIA que compila funciones de Python en kernels para simulación física y cálculo en CPU o GPU. Compila funciones especializadas y aporta primitivas de geometría, física y diferenciación.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/NVIDIA/warp",
+      "install": "pip install warp   (o: uv add warp)",
+      "install_conf": "verify",
+      "install_note": "Nombre PyPI puede diferir de 'warp'; verifica en pypi.org.",
+      "choose_if": "quieres escribir simulaciones o kernels de cálculo acelerado desde Python",
+      "avoid_if": "necesitas una aplicación lista para usuarios sin trabajo técnico",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "anything-llm",
       "name": "AnythingLLM",
       "cat": 8,
@@ -9021,6 +10659,39 @@
         "open-webui",
         "khoj",
         "private-gpt"
+      ]
+    },
+    {
+      "id": "chatbox",
+      "name": "chatbox",
+      "cat": 8,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "chats",
+        "assistant",
+        "chatbot",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "copilot",
+        "deepseek"
+      ],
+      "one": "Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz común.",
+      "desc": "Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz común. Configura conexiones de modelos y conserva conversaciones en una aplicación multiplataforma.",
+      "stack": "TypeScript, Node.js",
+      "repo": "https://github.com/chatboxai/chatbox",
+      "install": "git clone https://github.com/chatboxai/chatbox && cd chatbox && (pnpm install || npm install)",
+      "install_conf": "verify",
+      "install_note": "Proyecto Node; usa pnpm si hay pnpm-lock.yaml.",
+      "choose_if": "quieres un cliente de escritorio que conecte varios modelos",
+      "avoid_if": "no quieres mantener modelos o un entorno de ejecución propio",
+      "combines_with": [],
+      "alt": [
+        "jan"
       ]
     },
     {
@@ -9148,7 +10819,8 @@
       ],
       "alt": [
         "cherry-studio",
-        "textgen"
+        "textgen",
+        "chatbox"
       ]
     },
     {
@@ -9389,6 +11061,68 @@
         "ollama",
         "llama-cpp"
       ]
+    },
+    {
+      "id": "muse-spark",
+      "name": "muse-spark",
+      "cat": 8,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "workspaces",
+        "download-muse-ai",
+        "download-muse-spark",
+        "muse",
+        "muse-ai",
+        "muse-spark",
+        "muse-spark-1-1",
+        "muse-spark-1-2"
+      ],
+      "one": "Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas.",
+      "desc": "Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas. El README describe un cliente multimodal y distribuciones binarias; el alcance real no se comprobó ejecutándolo.",
+      "stack": "Python",
+      "repo": "https://github.com/muse-spark-app/muse-spark",
+      "install": "git clone https://github.com/muse-spark-app/muse-spark && cd muse-spark && (uv sync || pip install -r requirements.txt)",
+      "install_conf": "verify",
+      "install_note": "Proyecto Python; usa uv si hay pyproject.toml/uv.lock.",
+      "choose_if": "solo deseas revisar su procedencia y código antes de evaluar el proyecto",
+      "avoid_if": "no quieres mantener modelos o un entorno de ejecución propio",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "nextcloud-server",
+      "name": "server",
+      "cat": 8,
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "workspaces",
+        "cloud",
+        "collaboration",
+        "decentralized",
+        "design",
+        "distributed",
+        "enterprise",
+        "federation"
+      ],
+      "one": "Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia.",
+      "desc": "Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. Opera una nube personal con usuarios, almacenamiento y aplicaciones integrables.",
+      "stack": "PHP, Node.js",
+      "repo": "https://github.com/nextcloud/server",
+      "install": "git clone https://github.com/nextcloud/server && cd server && (pnpm install || npm install)",
+      "install_conf": "verify",
+      "install_note": "Proyecto Node; usa pnpm si hay pnpm-lock.yaml.",
+      "choose_if": "necesitas una plataforma autoalojada para documentos y colaboración",
+      "avoid_if": "no quieres mantener modelos o un entorno de ejecución propio",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "notebooklm-mcp-cli",
@@ -9688,6 +11422,36 @@
       ]
     },
     {
+      "id": "transformers.js",
+      "name": "transformers.js",
+      "cat": 8,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "motores",
+        "browser",
+        "javascript",
+        "transformers",
+        "webml"
+      ],
+      "one": "Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript.",
+      "desc": "Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript. Carga modelos compatibles y realiza inferencia en el navegador o en entornos JavaScript sin un servidor de modelos propio.",
+      "stack": "JavaScript, Node.js",
+      "repo": "https://github.com/huggingface/transformers.js",
+      "install": "npm install transformers.js   (o: pnpm add transformers.js)",
+      "install_conf": "verify",
+      "install_note": "Nombre npm puede diferir de 'transformers.js'; verifica en npmjs.com.",
+      "choose_if": "quieres ejecutar un modelo compatible dentro del navegador",
+      "avoid_if": "no quieres mantener modelos o un entorno de ejecución propio",
+      "combines_with": [
+        "swr"
+      ],
+      "alt": []
+    },
+    {
       "id": "animejs",
       "name": "Anime.js",
       "cat": 9,
@@ -9900,6 +11664,37 @@
         "tldraw",
         "mermaid"
       ]
+    },
+    {
+      "id": "front-end-checklist",
+      "name": "Front-End-Checklist",
+      "cat": 9,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "skills",
+        "ai-agent",
+        "ai-agents",
+        "checklist",
+        "css",
+        "front-end-developer-tool",
+        "front-end-development",
+        "frontend"
+      ],
+      "one": "Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo.",
+      "desc": "Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo. Organiza comprobaciones de implementación y publica material para revisión humana y agentes.",
+      "stack": "MDX, Node.js",
+      "repo": "https://github.com/thedaviddias/Front-End-Checklist",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/Front-End-Checklist/). Si necesitas el código: git clone https://github.com/thedaviddias/Front-End-Checklist",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres una lista de revisión de interfaz y entrega web",
+      "avoid_if": "tu interfaz ya cubre el mismo propósito con una herramienta equivalente",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "gsap",
@@ -10701,6 +12496,37 @@
       "alt": []
     },
     {
+      "id": "autohedge",
+      "name": "AutoHedge",
+      "cat": 10,
+      "role": "runtime",
+      "exec": "cloud",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "finanzas",
+        "ai",
+        "blackrock",
+        "finance",
+        "goldmansachs",
+        "hedgefund",
+        "jpmorgan",
+        "ml"
+      ],
+      "one": "Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado.",
+      "desc": "Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado. Distribuye análisis y decisiones entre agentes con funciones especializadas y herramientas de mercado.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/The-Swarm-Corporation/AutoHedge",
+      "install": "Crear cuenta / API key en el proveedor (no self-host).",
+      "install_conf": "ok",
+      "install_note": "Servicio gestionado; no se clona.",
+      "choose_if": "quieres estudiar una arquitectura de agentes para investigación de trading",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "awesome-dataviz",
       "name": "awesome-dataviz",
       "cat": 10,
@@ -10730,6 +12556,37 @@
       "alt": []
     },
     {
+      "id": "binance-trader",
+      "name": "binance-trader",
+      "cat": 10,
+      "role": "app",
+      "exec": "cloud",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "finanzas",
+        "arbitrage",
+        "binance",
+        "bitcoin",
+        "btc",
+        "cryptocurrency",
+        "trade",
+        "python"
+      ],
+      "one": "Bot experimental de Python para estudiar estrategias y automatización con la API de Binance.",
+      "desc": "Bot experimental de Python para estudiar estrategias y automatización con la API de Binance. Consulta precios y procesa reglas de estrategia mediante scripts de prueba y ejecución.",
+      "stack": "Python, Docker",
+      "repo": "https://github.com/yasinkuyu/binance-trader",
+      "install": "Crear cuenta / API key en el proveedor (no self-host).",
+      "install_conf": "ok",
+      "install_note": "Servicio gestionado; no se clona.",
+      "choose_if": "quieres estudiar cómo se estructura un bot experimental conectado a Binance",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "chart-js",
       "name": "Chart.js",
       "cat": 10,
@@ -10756,6 +12613,62 @@
         "echarts",
         "recharts"
       ]
+    },
+    {
+      "id": "chartanalyst",
+      "name": "chartAnalyst",
+      "cat": 10,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "finanzas",
+        "python"
+      ],
+      "one": "Experimento de aprendizaje profundo que usa redes convolucionales para reconocer patrones en gráficos bursátiles.",
+      "desc": "Experimento de aprendizaje profundo que usa redes convolucionales para reconocer patrones en gráficos bursátiles. Convierte ventanas de precios en representaciones que una CNN usa para clasificar patrones.",
+      "stack": "Python",
+      "repo": "https://github.com/huima58/chartAnalyst",
+      "install": "pip install chartanalyst   (o: uv add chartanalyst)",
+      "install_conf": "verify",
+      "install_note": "Nombre PyPI puede diferir de 'chartAnalyst'; verifica en pypi.org.",
+      "choose_if": "quieres estudiar aprendizaje sobre imágenes de series financieras",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "crypto-trader",
+      "name": "crypto-trader",
+      "cat": 10,
+      "role": "library",
+      "exec": "cloud",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "finanzas",
+        "algorithm",
+        "bitcoin",
+        "bot",
+        "coinbase",
+        "exchange-api",
+        "gemini",
+        "market"
+      ],
+      "one": "Biblioteca de Python con bindings de la API de Gemini y un ejemplo de estrategia de criptomonedas.",
+      "desc": "Biblioteca de Python con bindings de la API de Gemini y un ejemplo de estrategia de criptomonedas. Expone operaciones de la API del exchange y tipos para construir solicitudes y órdenes.",
+      "stack": "Python",
+      "repo": "https://github.com/pirate/crypto-trader",
+      "install": "pip install crypto-trader   (o: uv add crypto-trader)",
+      "install_conf": "verify",
+      "install_note": "Nombre PyPI puede diferir de 'crypto-trader'; verifica en pypi.org.",
+      "choose_if": "quieres consultar una implementación sencilla de integración con Gemini",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "d3",
@@ -10845,6 +12758,93 @@
       "alt": []
     },
     {
+      "id": "data-analyst-roadmap",
+      "name": "data-analyst-roadmap",
+      "cat": 10,
+      "role": "directory",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "recursos",
+        "blogs",
+        "businessintelligence",
+        "courses",
+        "data",
+        "dataanalysis",
+        "dataanalyst",
+        "excel"
+      ],
+      "one": "Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera.",
+      "desc": "Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera. Organiza conocimientos y recursos desde bases de datos y programación hasta visualización y comunicación.",
+      "stack": "Recursos y documentación",
+      "repo": "https://github.com/mtahiraslan/data-analyst-roadmap",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/data-analyst-roadmap/). Si necesitas el código: git clone https://github.com/mtahiraslan/data-analyst-roadmap",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres ordenar un plan de aprendizaje para análisis de datos",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "dataanalystportfolioprojects",
+      "name": "DataAnalystPortfolioProjects",
+      "cat": 10,
+      "role": "directory",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "recursos",
+        "analytics",
+        "dashboard",
+        "data-visualization",
+        "excel",
+        "hadoop",
+        "hiveq",
+        "portfolio"
+      ],
+      "one": "Portafolio de ejemplos de análisis de datos con SQL, Python, Tableau, Excel y Hive.",
+      "desc": "Portafolio de ejemplos de análisis de datos con SQL, Python, Tableau, Excel y Hive. Presenta ejercicios de limpieza, exploración y construcción de dashboards sobre conjuntos de datos.",
+      "stack": "Jupyter Notebook",
+      "repo": "https://github.com/PriyankaJhaTheDeveloper/DataAnalystPortfolioProjects",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/DataAnalystPortfolioProjects/). Si necesitas el código: git clone https://github.com/PriyankaJhaTheDeveloper/DataAnalystPortfolioProjects",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres consultar ejemplos para construir tu propio portafolio de análisis",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "dexter",
+      "name": "dexter",
+      "cat": 10,
+      "role": "app",
+      "exec": "cloud",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "finanzas",
+        "typescript"
+      ],
+      "one": "Agente de investigación financiera que planifica consultas, obtiene datos de mercado y revisa sus análisis.",
+      "desc": "Agente de investigación financiera que planifica consultas, obtiene datos de mercado y revisa sus análisis. Ejecuta tareas de investigación con herramientas y modelos y organiza la evidencia obtenida.",
+      "stack": "TypeScript, Node.js",
+      "repo": "https://github.com/virattt/dexter",
+      "install": "Crear cuenta / API key en el proveedor (no self-host).",
+      "install_conf": "ok",
+      "install_note": "Servicio gestionado; no se clona.",
+      "choose_if": "quieres experimentar con investigación financiera asistida por un agente",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "echarts",
       "name": "echarts",
       "cat": 10,
@@ -10875,6 +12875,37 @@
         "chart-js",
         "recharts"
       ]
+    },
+    {
+      "id": "finceptterminal",
+      "name": "FinceptTerminal",
+      "cat": 10,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "finanzas",
+        "ai-agents",
+        "algorithmic-trading",
+        "bloomberg-terminal",
+        "cpp",
+        "finance",
+        "financial-markets",
+        "fintech"
+      ],
+      "one": "Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes.",
+      "desc": "Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes. Combina módulos de mercado y análisis en una aplicación de escritorio con integraciones de datos.",
+      "stack": "C++, Docker",
+      "repo": "https://github.com/Fincept-Corporation/FinceptTerminal",
+      "install": "git clone https://github.com/Fincept-Corporation/FinceptTerminal && cd FinceptTerminal && docker compose up -d",
+      "install_conf": "verify",
+      "install_note": "Requiere Docker; el compose puede variar — revisa docker-compose.yml.",
+      "choose_if": "quieres explorar una terminal abierta de investigación y datos financieros",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "gradio",
@@ -10932,6 +12963,68 @@
       "combines_with": [
         "langfuse"
       ],
+      "alt": []
+    },
+    {
+      "id": "intellitrader",
+      "name": "IntelliTrader",
+      "cat": 10,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "finanzas",
+        "binance",
+        "bitcoin",
+        "bot",
+        "crypto",
+        "cryptocurrencies",
+        "cryptocurrency",
+        "trading-bot"
+      ],
+      "one": "Bot configurable de criptomonedas con componentes de simulación, señales y conexión a exchanges.",
+      "desc": "Bot configurable de criptomonedas con componentes de simulación, señales y conexión a exchanges. Aplica una configuración de estrategias y proveedores para observar o ejecutar operaciones.",
+      "stack": "C#",
+      "repo": "https://github.com/jazzonaut/IntelliTrader",
+      "install": "git clone https://github.com/jazzonaut/IntelliTrader (verificar README para build/run)",
+      "install_conf": "clone",
+      "install_note": "Stack no claro; revisa el README tras clonar.",
+      "choose_if": "quieres estudiar la arquitectura de un bot con modo de trading virtual",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "machine-learning-for-trading",
+      "name": "machine-learning-for-trading",
+      "cat": 10,
+      "role": "directory",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "finanzas",
+        "algorithmic-trading",
+        "artificial-intelligence",
+        "backtesting",
+        "data-science",
+        "deep-learning",
+        "finance",
+        "investment"
+      ],
+      "one": "Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias.",
+      "desc": "Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. Recorre un flujo de investigación desde la obtención de datos hasta pruebas y despliegue de modelos.",
+      "stack": "Jupyter Notebook, Docker, pyproject.toml",
+      "repo": "https://github.com/stefan-jansen/machine-learning-for-trading",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/machine-learning-for-trading/). Si necesitas el código: git clone https://github.com/stefan-jansen/machine-learning-for-trading",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres aprender un proceso de investigación de trading basado en datos",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
       "alt": []
     },
     {
@@ -10993,6 +13086,61 @@
         "superset",
         "redash"
       ]
+    },
+    {
+      "id": "open-sol-bot",
+      "name": "open-sol-bot",
+      "cat": 10,
+      "role": "platform",
+      "exec": "hybrid",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "finanzas",
+        "blockchain",
+        "solana",
+        "telegram-bot",
+        "trader",
+        "transaction",
+        "python"
+      ],
+      "one": "Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado.",
+      "desc": "Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado. Conecta servicios de la cadena y componentes de aplicación para seguir eventos y procesar operaciones.",
+      "stack": "Python, Docker, pyproject.toml",
+      "repo": "https://github.com/ChainBuff/open-sol-bot",
+      "install": "git clone https://github.com/ChainBuff/open-sol-bot && cd open-sol-bot && docker compose up -d",
+      "install_conf": "verify",
+      "install_note": "Requiere Docker; el compose puede variar — revisa docker-compose.yml.",
+      "choose_if": "quieres estudiar automatización y seguimiento de transacciones en Solana",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "osiris",
+      "name": "osiris",
+      "cat": 10,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "osint",
+        "typescript"
+      ],
+      "one": "Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales.",
+      "desc": "Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales. Agrega feeds y los representa en una interfaz geográfica con distintas capas de información.",
+      "stack": "TypeScript, Docker, Node.js",
+      "repo": "https://github.com/simplifaisoul/osiris",
+      "install": "git clone https://github.com/simplifaisoul/osiris && cd osiris && docker compose up -d",
+      "install_conf": "verify",
+      "install_note": "Requiere Docker; el compose puede variar — revisa docker-compose.yml.",
+      "choose_if": "quieres visualizar varias fuentes de actualidad en un mapa",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "pandas-ai",
@@ -11084,6 +13232,89 @@
       "alt": []
     },
     {
+      "id": "pythia",
+      "name": "Pythia",
+      "cat": 10,
+      "role": "platform",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "osint",
+        "typescript"
+      ],
+      "one": "Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción.",
+      "desc": "Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. Combina un panel de eventos con MiroFish y modelos locales para consultar información agregada.",
+      "stack": "TypeScript, pyproject.toml",
+      "repo": "https://github.com/jangles-byte/Pythia",
+      "install": "git clone https://github.com/jangles-byte/Pythia && cd Pythia && (pnpm install || npm install)",
+      "install_conf": "verify",
+      "install_note": "Proyecto Node; usa pnpm si hay pnpm-lock.yaml.",
+      "choose_if": "quieres explorar fuentes OSINT y escenarios desde un panel local",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "qlib",
+      "name": "qlib",
+      "cat": 10,
+      "role": "platform",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "finanzas",
+        "algorithmic-trading",
+        "auto-quant",
+        "deep-learning",
+        "finance",
+        "fintech",
+        "investment",
+        "machine-learning"
+      ],
+      "one": "Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias.",
+      "desc": "Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. Organiza preparación de datos, entrenamiento, predicción y backtesting en pipelines de investigación.",
+      "stack": "Python, Docker, pyproject.toml, Node.js",
+      "repo": "https://github.com/microsoft/qlib",
+      "install": "git clone https://github.com/microsoft/qlib && cd qlib && docker compose up -d",
+      "install_conf": "verify",
+      "install_note": "Requiere Docker; el compose puede variar — revisa docker-compose.yml.",
+      "choose_if": "necesitas experimentar con modelos y evaluaciones cuantitativas reproducibles",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "quantharness",
+      "name": "QuantHarness",
+      "cat": 10,
+      "role": "runtime",
+      "exec": "cloud",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "finanzas",
+        "agentic-ai",
+        "large-language-models",
+        "html"
+      ],
+      "one": "Sistema experimental de agentes LLM que combina indicadores técnicos, patrones y tendencias para análisis de trading.",
+      "desc": "Sistema experimental de agentes LLM que combina indicadores técnicos, patrones y tendencias para análisis de trading. Coordina agentes con LangChain y LangGraph y presenta sus análisis mediante una interfaz web.",
+      "stack": "HTML",
+      "repo": "https://github.com/Y-Research-SBU/QuantHarness",
+      "install": "Crear cuenta / API key en el proveedor (no self-host).",
+      "install_conf": "ok",
+      "install_note": "Servicio gestionado; no se clona.",
+      "choose_if": "quieres estudiar la coordinación de agentes sobre señales de precio",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "recharts",
       "name": "Recharts",
       "cat": 10,
@@ -11142,6 +13373,31 @@
         "metabase",
         "superset"
       ]
+    },
+    {
+      "id": "stocks-analyst",
+      "name": "stocks",
+      "cat": 10,
+      "role": "directory",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "finanzas",
+        "jupyter notebook"
+      ],
+      "one": "Scripts para recopilar recomendaciones de analistas bursátiles y preparar datos para su evaluación histórica.",
+      "desc": "Scripts para recopilar recomendaciones de analistas bursátiles y preparar datos para su evaluación histórica. Extrae recomendaciones de sitios externos y organiza matrices para compararlas con resultados posteriores.",
+      "stack": "Jupyter Notebook",
+      "repo": "https://github.com/omerdr/stocks",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/stocks/). Si necesitas el código: git clone https://github.com/omerdr/stocks",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres estudiar el rendimiento histórico de recomendaciones publicadas",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "streamlit",
@@ -11206,6 +13462,36 @@
         "metabase",
         "redash"
       ]
+    },
+    {
+      "id": "tradingagents",
+      "name": "TradingAgents",
+      "cat": 10,
+      "role": "runtime",
+      "exec": "cloud",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "finanzas",
+        "agent",
+        "finance",
+        "llm",
+        "multiagent",
+        "trading",
+        "python"
+      ],
+      "one": "Framework experimental que organiza agentes de análisis financiero, debate y evaluación de decisiones de trading.",
+      "desc": "Framework experimental que organiza agentes de análisis financiero, debate y evaluación de decisiones de trading. Coordina roles que consultan datos, comparan argumentos y generan resultados de investigación.",
+      "stack": "Python, Docker, pyproject.toml",
+      "repo": "https://github.com/TauricResearch/TradingAgents",
+      "install": "Crear cuenta / API key en el proveedor (no self-host).",
+      "install_conf": "ok",
+      "install_note": "Servicio gestionado; no se clona.",
+      "choose_if": "quieres estudiar arquitecturas multiagente aplicadas a investigación de mercados",
+      "avoid_if": "necesitas resultados operativos validados en vez de material de investigación",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "umami",
@@ -11883,6 +14169,37 @@
       "alt": []
     },
     {
+      "id": "ruview",
+      "name": "RuView",
+      "cat": 11,
+      "role": "platform",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "sensores",
+        "claude",
+        "claude-code",
+        "esp32",
+        "firmware",
+        "home-assistant",
+        "home-automation",
+        "iot"
+      ],
+      "one": "Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento.",
+      "desc": "Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento. Procesa señales de radio y conecta componentes de detección con paneles y sistemas de domótica.",
+      "stack": "Rust, pyproject.toml",
+      "repo": "https://github.com/ruvnet/RuView",
+      "install": "git clone https://github.com/ruvnet/RuView (verificar README para build/run)",
+      "install_conf": "clone",
+      "install_note": "Stack no claro; revisa el README tras clonar.",
+      "choose_if": "quieres investigar percepción mediante radiofrecuencia y sensores WiFi",
+      "avoid_if": "no dispones de datos o hardware compatibles con el proyecto",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "sam2",
       "name": "SAM 2",
       "cat": 11,
@@ -12094,6 +14411,65 @@
       "alt": []
     },
     {
+      "id": "ace-step-1.5",
+      "name": "ACE-Step-1.5",
+      "cat": 12,
+      "role": "platform",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "musica",
+        "text2music",
+        "python"
+      ],
+      "one": "Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño.",
+      "desc": "Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. Combina modelos de generación musical y una interfaz de inferencia para producir audio y personalizar estilos.",
+      "stack": "Python, Docker, pyproject.toml, Node.js",
+      "repo": "https://github.com/ace-step/ACE-Step-1.5",
+      "install": "git clone https://github.com/ace-step/ACE-Step-1.5 && cd ACE-Step-1.5 && docker compose up -d",
+      "install_conf": "verify",
+      "install_note": "Requiere Docker; el compose puede variar — revisa docker-compose.yml.",
+      "choose_if": "necesitas experimentar con generación musical en tu propio equipo",
+      "avoid_if": "tu flujo audiovisual actual ya cubre esa etapa",
+      "combines_with": [],
+      "alt": []
+    },
+    {
+      "id": "ai-youtube-shorts-generator",
+      "name": "AI-Youtube-Shorts-Generator",
+      "cat": 12,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "generativo",
+        "2short-ai-alternative",
+        "ai-clip-generator",
+        "ai-clipping",
+        "auto-clip",
+        "auto-crop",
+        "highlight-detection",
+        "klap-alternative"
+      ],
+      "one": "Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM.",
+      "desc": "Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM. Transcribe, puntúa segmentos y recorta el video a formato vertical para producir clips cortos.",
+      "stack": "Python",
+      "repo": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator",
+      "install": "git clone https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator && cd AI-Youtube-Shorts-Generator && (uv sync || pip install -r requirements.txt)",
+      "install_conf": "verify",
+      "install_note": "Proyecto Python; usa uv si hay pyproject.toml/uv.lock.",
+      "choose_if": "quieres convertir videos largos en una primera selección de shorts",
+      "avoid_if": "tu flujo audiovisual actual ya cubre esa etapa",
+      "combines_with": [
+        "ffmpeg"
+      ],
+      "alt": []
+    },
+    {
       "id": "audiocraft",
       "name": "AudioCraft",
       "cat": 12,
@@ -12226,6 +14602,37 @@
         "whisper"
       ],
       "alt": []
+    },
+    {
+      "id": "edge-tts",
+      "name": "edge-tts",
+      "cat": 12,
+      "role": "library",
+      "exec": "cloud",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "tts",
+        "speech-synthesis",
+        "text-to-speech",
+        "python"
+      ],
+      "one": "Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge.",
+      "desc": "Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. Envía texto al servicio de voz y guarda el audio y los subtítulos desde Python o la terminal.",
+      "stack": "Python",
+      "repo": "https://github.com/rany2/edge-tts",
+      "install": "pip install edge-tts   (o: uv add edge-tts)",
+      "install_conf": "verify",
+      "install_note": "Nombre PyPI puede diferir de 'edge-tts'; verifica en pypi.org.",
+      "choose_if": "quieres generar narración sin instalar un modelo de voz local",
+      "avoid_if": "tu flujo audiovisual actual ya cubre esa etapa",
+      "combines_with": [
+        "moviepy"
+      ],
+      "alt": [
+        "kokoro"
+      ]
     },
     {
       "id": "faster-whisper",
@@ -12488,7 +14895,8 @@
       "alt": [
         "chatterbox",
         "tts",
-        "luxtts"
+        "luxtts",
+        "edge-tts"
       ]
     },
     {
@@ -12657,7 +15065,42 @@
         "moviepy",
         "ffmpeg"
       ],
-      "alt": []
+      "alt": [
+        "manim-community"
+      ]
+    },
+    {
+      "id": "manim-community",
+      "name": "manim",
+      "cat": 12,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "programatico",
+        "animations",
+        "hacktoberfest",
+        "manim",
+        "math",
+        "python"
+      ],
+      "one": "Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas.",
+      "desc": "Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. Define objetos geométricos y transformaciones en código y renderiza la escena como video.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/ManimCommunity/manim",
+      "install": "pip install manim   (o: uv add manim)",
+      "install_conf": "verify",
+      "install_note": "Nombre PyPI puede diferir de 'manim'; verifica en pypi.org.",
+      "choose_if": "necesitas animaciones matemáticas precisas y reproducibles",
+      "avoid_if": "tu flujo audiovisual actual ya cubre esa etapa",
+      "combines_with": [
+        "ffmpeg"
+      ],
+      "alt": [
+        "manim"
+      ]
     },
     {
       "id": "moneyprinterturbo",
@@ -12731,6 +15174,30 @@
         "remotion",
         "hyperframes"
       ]
+    },
+    {
+      "id": "music-megathread",
+      "name": "Music-Megathread",
+      "cat": 12,
+      "role": "directory",
+      "exec": "hybrid",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "musica"
+      ],
+      "one": "Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música.",
+      "desc": "Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música. Agrupa enlaces a proyectos y servicios musicales para explorar alternativas por función.",
+      "stack": "Recursos y documentación",
+      "repo": "https://github.com/MoonWalker440/Music-Megathread",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/Music-Megathread/). Si necesitas el código: git clone https://github.com/MoonWalker440/Music-Megathread",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "buscas recursos musicales y quieres comparar opciones desde una lista",
+      "avoid_if": "tu flujo audiovisual actual ya cubre esa etapa",
+      "combines_with": [],
+      "alt": []
     },
     {
       "id": "nemo",
@@ -12874,8 +15341,8 @@
       "one": "Convierte tu agente de código en un estudio de producción de video completo.",
       "desc": "Describes el video y el agente investiga, escribe el guion, genera recursos y monta el resultado.",
       "stack": "Markdown, Python",
-      "repo": "https://github.com/calesthio/OpenMontage.git",
-      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/OpenMontage/). Si necesitas el código: git clone https://github.com/calesthio/OpenMontage.git",
+      "repo": "https://github.com/OpenMontageInc/OpenMontage",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/OpenMontage/). Si necesitas el código: git clone https://github.com/OpenMontageInc/OpenMontage",
       "install_conf": "ok",
       "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
       "choose_if": "quieres producir videos completos con un agente",
@@ -12920,6 +15387,37 @@
       ]
     },
     {
+      "id": "palmier-pro",
+      "name": "palmier-pro",
+      "cat": 12,
+      "role": "app",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": true,
+      "prov": [],
+      "tags": [
+        "edicion",
+        "ai-video",
+        "claude",
+        "macos",
+        "mcp",
+        "seedance2",
+        "swift",
+        "video-editor"
+      ],
+      "one": "Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales.",
+      "desc": "Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales. Permite trabajar con una línea de tiempo y enlazar agentes mediante MCP en las versiones que lo incorporan.",
+      "stack": "Swift",
+      "repo": "https://github.com/palmier-io/palmier-pro",
+      "install": "git clone https://github.com/palmier-io/palmier-pro (verificar README para build/run)",
+      "install_conf": "clone",
+      "install_note": "Stack no claro; revisa el README tras clonar.",
+      "choose_if": "usas macOS y quieres explorar edición de video asistida por agentes",
+      "avoid_if": "tu flujo audiovisual actual ya cubre esa etapa",
+      "combines_with": [],
+      "alt": []
+    },
+    {
       "id": "pipecat",
       "name": "Pipecat",
       "cat": 12,
@@ -12955,6 +15453,39 @@
       "alt": [
         "livekit-agents"
       ]
+    },
+    {
+      "id": "rea-video",
+      "name": "rea-video",
+      "cat": 12,
+      "role": "skill",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "programatico",
+        "agent-skills",
+        "ai-video",
+        "aigc-detection",
+        "claude-code",
+        "codex",
+        "ffmpeg",
+        "prompt-engineering"
+      ],
+      "one": "Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md.",
+      "desc": "Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md. Clasifica planos y registra capas, ritmo y técnicas de producción en un formato legible por agentes.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/JuneYaooo/rea-video",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/rea-video/). Si necesitas el código: git clone https://github.com/JuneYaooo/rea-video",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres estudiar o recrear la estructura de un video de referencia",
+      "avoid_if": "tu flujo audiovisual actual ya cubre esa etapa",
+      "combines_with": [
+        "remotion"
+      ],
+      "alt": []
     },
     {
       "id": "remotion",
@@ -13046,6 +15577,37 @@
       "combines_with": [
         "gpt-sovits"
       ],
+      "alt": []
+    },
+    {
+      "id": "short-video-factory",
+      "name": "short-video-factory",
+      "cat": 12,
+      "role": "app",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "generativo",
+        "ai",
+        "automatic",
+        "automation",
+        "clipping",
+        "cross-platform",
+        "desktop",
+        "linux"
+      ],
+      "one": "Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos.",
+      "desc": "Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. Encadena generación de texto y voz con montaje automático en una interfaz de escritorio.",
+      "stack": "TypeScript, Node.js",
+      "repo": "https://github.com/YILS-LIN/short-video-factory",
+      "install": "git clone https://github.com/YILS-LIN/short-video-factory && cd short-video-factory && (pnpm install || npm install)",
+      "install_conf": "verify",
+      "install_note": "Proyecto Node; usa pnpm si hay pnpm-lock.yaml.",
+      "choose_if": "quieres producir variantes de videos promocionales desde materiales existentes",
+      "avoid_if": "tu flujo audiovisual actual ya cubre esa etapa",
+      "combines_with": [],
       "alt": []
     },
     {
@@ -13349,8 +15911,8 @@
       "one": "App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas.",
       "desc": "WanGP, antes Wan2GP, es una interfaz web para ejecutar en tu GPU decenas de modelos generativos abiertos: video (Wan 2.1/2.2, LTX-2, Hunyuan Video), imagen (Flux, Qwen Image), voz y música (Chatterbox, Index TTS, Ace Step) y 3D. Añade cola de trabajos, LoRAs, galerías y un asistente local, Deepy, que planifica y lanza las generaciones por ti.",
       "stack": "Python, PyTorch, Gradio, Diffusers, mmgp",
-      "repo": "https://github.com/deepbeepmeep/Wan2GP",
-      "install": "git clone https://github.com/deepbeepmeep/Wan2GP && cd Wan2GP && (uv sync || pip install -r requirements.txt)",
+      "repo": "https://github.com/deepbeepmeep/WanGP",
+      "install": "git clone https://github.com/deepbeepmeep/WanGP && cd WanGP && (uv sync || pip install -r requirements.txt)",
       "install_conf": "verify",
       "install_note": "Proyecto Python; usa uv si hay pyproject.toml/uv.lock.",
       "choose_if": "quieres generar video e imagen con modelos abiertos en una GPU de consumo sin montar flujos a mano",
@@ -13457,6 +16019,43 @@
       ],
       "alt": [
         "nemo"
+      ]
+    },
+    {
+      "id": "archify",
+      "name": "archify",
+      "cat": 13,
+      "role": "skill",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "diagramas",
+        "agent-skills",
+        "ai-agents",
+        "architecture-diagram",
+        "claude-code",
+        "claude-skills",
+        "codex",
+        "coding-agents"
+      ],
+      "one": "Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas.",
+      "desc": "Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. El agente transforma una descripción en una visualización que se puede abrir y explorar en el navegador.",
+      "stack": "JavaScript, Node.js",
+      "repo": "https://github.com/tt-a1i/archify",
+      "install": "Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/archify/). Si necesitas el código: git clone https://github.com/tt-a1i/archify",
+      "install_conf": "ok",
+      "install_note": "Material de referencia/playbook; no es una dependencia runtime.",
+      "choose_if": "quieres explicar una arquitectura o un plan mediante una visualización interactiva",
+      "avoid_if": "el formato de salida no encaja con tus documentos",
+      "combines_with": [
+        "codex"
+      ],
+      "alt": [],
+      "agent_tools": [
+        "claude-code",
+        "codex"
       ]
     },
     {

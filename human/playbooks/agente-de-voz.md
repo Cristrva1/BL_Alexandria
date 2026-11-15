@@ -20,10 +20,10 @@ flowchart LR
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [Pipecat](../fichas/pipecat.md) | Orquesta la conversación: turnos, interrupciones y pipeline | 17.2k | `pip install "pipecat-ai[daily,openai,cartesia]"` |
-| 2 | [faster-whisper](../fichas/faster-whisper.md) | Transcripción rápida (voz a texto) | 26.6k | `pip install faster-whisper` |
-| 3 | [litellm](../fichas/litellm.md) | Acceso al LLM que decide la respuesta | 63k | `pip install litellm` |
-| 4 | [Kokoro](../fichas/kokoro.md) | Voz sintética ligera (texto a voz) | 10k | `pip install kokoro soundfile` |
+| 1 | [Pipecat](../fichas/pipecat.md) | Orquesta la conversación: turnos, interrupciones y pipeline | 17.3k | `pip install "pipecat-ai[daily,openai,cartesia]"` |
+| 2 | [faster-whisper](../fichas/faster-whisper.md) | Transcripción rápida (voz a texto) | 26.8k | `pip install faster-whisper` |
+| 3 | [litellm](../fichas/litellm.md) | Acceso al LLM que decide la respuesta | 63.3k | `pip install litellm` |
+| 4 | [Kokoro](../fichas/kokoro.md) | Voz sintética ligera (texto a voz) | 10.1k | `pip install kokoro soundfile` |
 | 5 | [LiveKit Agents](../fichas/livekit-agents.md) | Alternativa con transporte WebRTC y telefonía integrados | 15.2k | `pip install "livekit-agents[openai,silero,deepgram]"` |
 
 ## 🔌 Cómo se conecta
@@ -43,4 +43,4 @@ Si te basta con dictado o transcripción sin respuesta hablada, usa solo Whisper
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

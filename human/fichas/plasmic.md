@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 7.2k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
+| 7.2k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
@@ -49,7 +49,7 @@ Editor visual web que genera/consume componentes React/Next.js de tu repo y los 
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [tailwindcss](tailwindcss.md) | 98.7k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
+| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
 
 ## Enlaces
 
@@ -58,4 +58,4 @@ Editor visual web que genera/consume componentes React/Next.js de tu repo y los 
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

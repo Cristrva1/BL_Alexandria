@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 8.7k | Apache-2.0 | TypeScript | 2026-08-17 | 📦 Sí |
+| 8.9k | Apache-2.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
@@ -49,7 +49,7 @@ Copia las skills a la carpeta de skills de tu agente y configura el MCP de Stitc
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Stitch SDK](stitch-sdk.md) | 1.8k | SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. |
+| [Stitch SDK](stitch-sdk.md) | 1.9k | SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. |
 | [Gemini CLI](gemini-cli.md) | 109k | Agente de IA open source de Google que lleva Gemini a tu terminal, con cuota gratuita generosa. |
 
 ## Enlaces
@@ -59,4 +59,4 @@ Copia las skills a la carpeta de skills de tu agente y configura el MCP de Stitc
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

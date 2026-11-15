@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 16.5k | MIT | Rust | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 16.6k | MIT | Rust | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
@@ -49,14 +49,14 @@ Parsea con tree-sitter y compara patrones contra el árbol sintáctico.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [tree-sitter](tree-sitter.md) | 27.4k | Sistema de parsing incremental para herramientas de programación, base de editores y agentes de código. |
-| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [tree-sitter](tree-sitter.md) | 27.5k | Sistema de parsing incremental para herramientas de programación, base de editores y agentes de código. |
+| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Semgrep](semgrep.md) | 17.6k | Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. |
+| [Semgrep](semgrep.md) | 17.7k | Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. |
 
 ## Enlaces
 
@@ -65,4 +65,4 @@ Parsea con tree-sitter y compara patrones contra el árbol sintáctico.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

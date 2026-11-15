@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 50.3k | Otra (ver repo) | Clojure | 2026-11-10 | 📦 Sí |
+| 50.3k | NOASSERTION | Clojure | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
@@ -49,7 +49,7 @@ Se conecta a tu BD (Postgres, MySQL, BigQuery, etc.), define preguntas mediante 
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [posthog](posthog.md) | 40.7k | Plataforma de product analytics y eventos para entender el comportamiento de usuarios, con funnels, session replay y feature flags en una sola suite. |
+| [posthog](posthog.md) | 40.8k | Plataforma de product analytics y eventos para entender el comportamiento de usuarios, con funnels, session replay y feature flags en una sola suite. |
 | [echarts](echarts.md) | 67.7k | Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos. |
 
 ## Alternativas (elige una)
@@ -66,4 +66,4 @@ Se conecta a tu BD (Postgres, MySQL, BigQuery, etc.), define preguntas mediante 
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

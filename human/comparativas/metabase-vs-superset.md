@@ -10,7 +10,7 @@
 | Evítalo si… | necesitas analítica de eventos por usuario (posthog) | buscas algo muy fácil para no técnicos; mira `metabase` |
 | Ejecución | 🔀 híbrido | 🏠 local |
 | Setup | 🟡 medio | 🟡 medio |
-| Licencia | Otra (ver repo) | Apache-2.0 |
+| Licencia | NOASSERTION | Apache-2.0 |
 | Instalación | `docker run metabase/metabase` | `git clone https://github.com/apache/superset && cd superset && docker compose -f docker-compose-image-tag.yml up` |
 
 ## Regla práctica
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

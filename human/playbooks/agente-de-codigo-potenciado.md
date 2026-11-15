@@ -20,12 +20,12 @@ flowchart LR
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [Claude Code](../fichas/claude-code.md) | Agente de código en la terminal (o Codex / opencode) | 155k | `curl -fsSL https://claude.ai/install.sh \| bash` |
-| 2 | [superpowers](../fichas/superpowers.md) | Metodología: planificar, probar y revisar antes de dar por hecho | 315k | Clona el repo y copia las skills e instrucciones a tu directorio de skills del asistent… |
-| 3 | [Context7](../fichas/context7.md) | Documentación actualizada de librerías vía MCP | 64.5k | `npx -y @upstash/context7-mcp` |
-| 4 | [Serena](../fichas/serena.md) | Búsqueda y edición semántica del código vía MCP | 31.3k | `uvx --from git+https://github.com/oraios/serena serena start-mcp-server` |
-| 5 | [claude-mem](../fichas/claude-mem.md) | Memoria persistente entre sesiones | 116k | `/plugin marketplace add thedotmack/claude-mem` |
-| 6 | [SkillSpector](../fichas/skillspector.md) | Audita skills de terceros antes de instalarlas | 25.2k | Clona el repo e instala sus dependencias (Python/Node) según el README; ejecútalo apunt… |
+| 1 | [Claude Code](../fichas/claude-code.md) | Agente de código en la terminal (o Codex / opencode) | 156k | `curl -fsSL https://claude.ai/install.sh \| bash` |
+| 2 | [superpowers](../fichas/superpowers.md) | Metodología: planificar, probar y revisar antes de dar por hecho | 318k | Clona el repo y copia las skills e instrucciones a tu directorio de skills del asistent… |
+| 3 | [Context7](../fichas/context7.md) | Documentación actualizada de librerías vía MCP | 64.8k | `npx -y @upstash/context7-mcp` |
+| 4 | [Serena](../fichas/serena.md) | Búsqueda y edición semántica del código vía MCP | 31.4k | `uvx --from git+https://github.com/oraios/serena serena start-mcp-server` |
+| 5 | [claude-mem](../fichas/claude-mem.md) | Memoria persistente entre sesiones | 117k | `/plugin marketplace add thedotmack/claude-mem` |
+| 6 | [SkillSpector](../fichas/skillspector.md) | Audita skills de terceros antes de instalarlas | 26.1k | Clona el repo e instala sus dependencias (Python/Node) según el README; ejecútalo apunt… |
 
 ## 🔌 Cómo se conecta
 
@@ -45,4 +45,4 @@ Si solo haces cambios pequeños y puntuales, el agente tal cual basta: cada piez
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

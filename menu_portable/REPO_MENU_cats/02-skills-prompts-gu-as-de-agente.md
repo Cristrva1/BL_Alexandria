@@ -17,6 +17,19 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Evita si:** buscas tutoriales con código ejecutable paso a paso; mira `agents-towards-production` o `ai-agents-for-beginners`
 **Combina con:** `context-engineering`, `langgraph`, `vercel-ai`
 
+## `500-ai-agents-projects`
+role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=guias,ai-agents,genai,python
+
+**Qué es:** Colección de ideas, casos de uso y ejemplos de agentes de IA para distintos sectores y tareas. Organiza proyectos y enlaces que sirven como punto de partida para prototipos y aprendizaje.
+**Stack:** Python
+**Repo:** https://github.com/ashishpatel26/500-AI-Agents-Projects
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/500-AI-Agents-Projects/). Si necesitas el código: git clone https://github.com/ashishpatel26/500-AI-Agents-Projects`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** buscas ejemplos de aplicaciones de agentes para adaptar a tu propio problema
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+
 ## `agency-agents`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=agents,prompts,skills,coding-agent
 
@@ -89,6 +102,19 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Evita si:** no quieres depender de Azure o ya llevas agentes a producción; mira `agents-towards-production` o `12-factor-agents`
 **Combina con:** `generative-ai-for-beginners`, `agent-framework`, `mcp-for-beginners`
 
+## `ai-engineering-hub`
+role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=guias,agents,ai,llms,machine-learning,mcp,rag,jupyter notebook
+
+**Qué es:** Colección de tutoriales y proyectos prácticos sobre LLM, RAG, agentes y aplicaciones de inteligencia artificial. Cada carpeta presenta un ejemplo con sus dependencias y configuración propias.
+**Stack:** Jupyter Notebook
+**Repo:** https://github.com/patchy631/ai-engineering-hub
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/ai-engineering-hub/). Si necesitas el código: git clone https://github.com/patchy631/ai-engineering-hub`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres aprender implementando ejemplos de ingeniería de IA
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+
 ## `andrej-karpathy-skills`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,coding-agent
 
@@ -137,14 +163,28 @@ role=skill · exec=cloud · setup=medium · mcp=False · prov=— · tags=video,
 
 **Qué es:** Repo de trabajo que convierte Claude Code o Cursor en un estudio de anuncios: genera videos UGC, presentaciones de producto, lookbooks y miniaturas de YouTube con los modelos de Arcads, y anuncios estáticos para Meta con 37 plantillas. Incluye pipelines multipaso (estilo Pixar o plastilina con ffmpeg), subtitulado con Whisper y HyperFrames, y publicación como anuncios pausados en Meta.
 **Stack:** Python, Bash, ffmpeg, Node.js (HyperFrames), Whisper
-**Repo:** https://github.com/krusemediallc/arcads-claude-code
+**Repo:** https://github.com/mrpaidsocial/arcads-claude-code-mrpaidsocial
 
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/Arcads AI Video Skill Pack/). Si necesitas el código: git clone https://github.com/krusemediallc/arcads-claude-code`
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/Arcads AI Video Skill Pack/). Si necesitas el código: git clone https://github.com/mrpaidsocial/arcads-claude-code-mrpaidsocial`
 _Material de referencia/playbook; no es una dependencia runtime._
 
 **Elige si:** ya tienes cuenta de Arcads y quieres producir creatividades publicitarias desde Claude Code o Cursor
 **Evita si:** quieres generar video con modelos abiertos sin servicio de pago; mira `comfyui` u `openmontage`
 **Combina con:** `hyperframes`, `whisper`, `ffmpeg`, `marketingskills`
+
+## `autoskills`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=catalogos,ruby
+
+**Qué es:** CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia. Inspecciona archivos de configuración y propone o instala skills relacionadas con el stack detectado.
+**Stack:** Ruby, Node.js
+**Repo:** https://github.com/midudev/autoskills
+
+**Instalación** [~]: `git clone https://github.com/midudev/autoskills && cd autoskills && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+
+**Elige si:** quieres preparar un conjunto de skills adaptado al stack de un proyecto
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+**Combina con:** `awesome-agent-skills`
 
 ## `awesome-agent-skills`
 role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=skills,coding-agent,agents
@@ -160,6 +200,19 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Evita si:** prefieres instalar un lote grande con un solo comando; mira `antigravity-awesome-skills`
 **Combina con:** `skillspector`, `claude-code`, `codex`
 **Alternativas (elige una):** `antigravity-awesome-skills`, `awesome-claude-skills`
+
+## `awesome-agents`
+role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=catalogos
+
+**Qué es:** Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial. Agrupa frameworks, agentes y entornos de desarrollo mediante enlaces a sus repositorios.
+**Stack:** Recursos y documentación
+**Repo:** https://github.com/kyrolabs/awesome-agents
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-agents/). Si necesitas el código: git clone https://github.com/kyrolabs/awesome-agents`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres explorar alternativas de agentes antes de elegir una implementación
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
 
 ## `awesome-claude-code`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=anthropic · tags=coding-agent,skills,agents
@@ -235,6 +288,32 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `claude-code`, `codex`
 **Alternativas (elige una):** `spec-kit`
 
+## `chatgpt-dan`
+role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=prompts,chatgpt,gpt-3-5,gpt-4,jailbreak,openai,prompt
+
+**Qué es:** Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones antiguas de ChatGPT. Recopila variantes de instrucciones para estudiar intentos de alterar el comportamiento de asistentes.
+**Stack:** Recursos y documentación
+**Repo:** https://github.com/0xk1h0/ChatGPT_DAN
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/ChatGPT_DAN/). Si necesitas el código: git clone https://github.com/0xk1h0/ChatGPT_DAN`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres investigar prompts históricos y sus limitaciones
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+
+## `chatgpt-system-prompt`
+role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=prompts,gpt,prompt,prompt-engineering,html
+
+**Qué es:** Colección de prompts de GPT y recursos sobre instrucciones de sistema y extracción de prompts. Organiza documentos de referencia para estudiar estructuras de instrucciones y comportamiento de asistentes.
+**Stack:** HTML
+**Repo:** https://github.com/LouisShark/chatgpt_system_prompt
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/chatgpt_system_prompt/). Si necesitas el código: git clone https://github.com/LouisShark/chatgpt_system_prompt`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres comparar patrones de prompts como material de investigación
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+
 ## `claude-cookbooks`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=anthropic · tags=learning,notebooks,rag,python
 
@@ -264,6 +343,45 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Evita si:** buscas recursos comunitarios o trabajas con otro agente; mira `awesome-claude-code` o `wshobson-agents`
 **Combina con:** `claude-code`, `anthropic-skills`, `awesome-claude-code`
 **Alternativas (elige una):** `wshobson-agents`
+
+## `claude-quickstarts`
+role=directory · exec=cloud · setup=medium · mcp=False · prov=anthropic · tags=guias,python
+
+**Qué es:** Ejemplos oficiales de Anthropic para construir aplicaciones con Claude, herramientas y uso de computadora. Cada quickstart ofrece una aplicación base con código y pasos de configuración específicos.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/anthropics/claude-quickstarts
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/claude-quickstarts/). Si necesitas el código: git clone https://github.com/anthropics/claude-quickstarts`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres partir de un ejemplo oficial al integrar la API de Claude
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+
+## `claude-token-efficient`
+role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=metodologia,python · tools=claude-code
+
+**Qué es:** Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto. Añade reglas de concisión al contexto del proyecto e incluye perfiles y ejemplos de evaluación.
+**Stack:** Python
+**Repo:** https://github.com/drona23/claude-token-efficient
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/claude-token-efficient/). Si necesitas el código: git clone https://github.com/drona23/claude-token-efficient`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres probar respuestas más breves en tareas con mucha salida de texto
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+
+## `codex-plugin-cc`
+role=skill · exec=cloud · setup=easy · mcp=False · prov=openai · tags=metodologia,javascript · tools=claude-code
+
+**Qué es:** Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas. Añade comandos de revisión y delegación y conecta Claude Code con el runtime de Codex.
+**Stack:** JavaScript, Node.js
+**Repo:** https://github.com/openai/codex-plugin-cc
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/codex-plugin-cc/). Si necesitas el código: git clone https://github.com/openai/codex-plugin-cc`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres revisar código con Codex dentro de tu flujo de Claude Code
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
 
 ## `context-engineering`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=learning,python
@@ -308,6 +426,33 @@ _Stack no claro; revisa el README tras clonar._
 **Combina con:** `ollama`, `yt-dlp`
 **Alternativas (elige una):** `prompts-chat`
 
+## `financial-services`
+role=skill · exec=cloud · setup=medium · mcp=False · prov=anthropic · tags=dominio,python
+
+**Qué es:** Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. Reúne instrucciones y conectores para tareas como análisis de empresas y gestión de documentos financieros.
+**Stack:** Python
+**Repo:** https://github.com/anthropics/financial-services
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/financial-services/). Si necesitas el código: git clone https://github.com/anthropics/financial-services`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres estudiar flujos financieros dentro del ecosistema de Claude
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+**Combina con:** `claude-code`
+
+## `gemini-skills`
+role=skill · exec=hybrid · setup=easy · mcp=False · prov=google · tags=catalogos,gemini,gemini-api,skills,python
+
+**Qué es:** Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini. Añaden instrucciones y referencias sobre las interacciones y patrones de desarrollo de Gemini.
+**Stack:** Python
+**Repo:** https://github.com/google-gemini/gemini-skills
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/gemini-skills/). Si necesitas el código: git clone https://github.com/google-gemini/gemini-skills`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** construyes aplicaciones que llaman a Gemini y necesitas contexto actualizado para el agente
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+
 ## `generative-ai-for-beginners`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=learning,prompts,python
 
@@ -336,6 +481,19 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Elige si:** quieres medir y mejorar cómo te citan los buscadores con IA, no solo tu posición en Google
 **Evita si:** solo haces SEO clásico o no usas Claude Code; mira `marketingskills`
 **Combina con:** `marketingskills`, `agency-agents`, `playwright`
+
+## `grok-plugin-claude-code`
+role=skill · exec=cloud · setup=easy · mcp=False · prov=xai · tags=metodologia,ai-agents,claude-code,grok,grok-cli,plugin,xai,javascript · tools=claude-code
+
+**Qué es:** Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar. Envuelve el modo no interactivo de Grok CLI para ejecutar encargos y recuperar sus resultados.
+**Stack:** JavaScript
+**Repo:** https://github.com/zachdunn/grok-plugin-claude-code
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/grok-plugin-claude-code/). Si necesitas el código: git clone https://github.com/zachdunn/grok-plugin-claude-code`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** usas Claude Code y quieres consultar Grok dentro de ese flujo
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
 
 ## `humanizer`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=skills,prompts,docs
@@ -467,6 +625,20 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Evita si:** quieres ejecutarlos como comandos encadenables; mira `fabric`
 **Alternativas (elige una):** `fabric`
 
+## `security-audit-skill`
+role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=metodologia,javascript
+
+**Qué es:** Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estructurados. Divide la revisión en reconocimiento, búsqueda por cobertura y verificación de candidatos antes del informe.
+**Stack:** JavaScript
+**Repo:** https://github.com/cloudflare/security-audit-skill
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/security-audit-skill/). Si necesitas el código: git clone https://github.com/cloudflare/security-audit-skill`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres un proceso reproducible de revisión de seguridad con agentes
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+**Combina con:** `codex`
+
 ## `skills`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,coding-agent
 
@@ -494,6 +666,20 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Elige si:** instalas skills externas o curas catálogos
 **Evita si:** solo usas skills propias de confianza
 **Combina con:** `antigravity-awesome-skills`
+
+## `social-media-research-skills`
+role=skill · exec=cloud · setup=medium · mcp=False · prov=— · tags=dominio,agent-skills,ai-agents,claude-code,claude-skills,competitor-analysis,content-marketing,cursor · tools=claude-code,codex
+
+**Qué es:** Skills para investigar publicaciones, comentarios, competidores y anuncios en redes mediante ScrapeCreators. Guía al agente por flujos de investigación que consultan datos sociales y producen informes de negocio.
+**Stack:** Python
+**Repo:** https://github.com/ScrapeCreators/social-media-research-skills
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/social-media-research-skills/). Si necesitas el código: git clone https://github.com/ScrapeCreators/social-media-research-skills`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres investigación de contenido social desde un agente compatible con Agent Skills
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+**Alternativas (elige una):** `last30days-skill`
 
 ## `spec-kit`
 role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=coding-agent,skills,python
@@ -525,6 +711,19 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `marketingskills`, `claude-code`
 **Alternativas (elige una):** `humanizer`
 
+## `superclaude-framework`
+role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=metodologia,python · tools=claude-code
+
+**Qué es:** Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. Instala instrucciones y componentes de flujo para organizar fases del desarrollo asistido.
+**Stack:** Python, pyproject.toml, Node.js
+**Repo:** https://github.com/SuperClaude-Org/SuperClaude_Framework
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/SuperClaude_Framework/). Si necesitas el código: git clone https://github.com/SuperClaude-Org/SuperClaude_Framework`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres estructurar el trabajo de Claude Code con comandos y convenciones
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+
 ## `superpowers`
 role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,coding-agent
 
@@ -539,6 +738,19 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Evita si:** solo necesitas una skill aislada puntual
 **Combina con:** `awesome-claude-code`, `agent-toolkit`
 **Alternativas (elige una):** `agent-skills`
+
+## `system-prompts-and-models-of-ai-tools`
+role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=prompts,ai,bolt,cluely,copilot,cursor,cursorai,devin
+
+**Qué es:** Colección de prompts y configuraciones atribuidos a herramientas de IA para estudiar sus patrones de diseño. Organiza archivos por herramienta para consultar y comparar instrucciones y formatos.
+**Stack:** Recursos y documentación
+**Repo:** https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/system-prompts-and-models-of-ai-tools/). Si necesitas el código: git clone https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres investigar patrones de prompts utilizados por asistentes
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
 
 ## `wshobson-agents`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=skills,coding-agent,agents,python

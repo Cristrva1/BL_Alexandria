@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 92.5k | Apache-2.0 | Python | 2026-09-16 | 🆕 Aún no (sugerido) |
+| 92.7k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
@@ -49,15 +49,15 @@ Modelos de detección, reconocimiento y análisis de layout en PaddlePaddle.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Docling](docling.md) | 70.4k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
+| [Docling](docling.md) | 70.6k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Tesseract](tesseract.md) | 77.4k | Motor de OCR open source clásico, con más de 100 idiomas. |
+| [Tesseract](tesseract.md) | 77.5k | Motor de OCR open source clásico, con más de 100 idiomas. |
 | [olmOCR](olmocr.md) | 19.8k | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión, a gran escala. |
-| [Unlimited-OCR](unlimited-ocr.md) | 31.1k | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. |
+| [Unlimited-OCR](unlimited-ocr.md) | 31.2k | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. |
 
 ## Enlaces
 
@@ -66,4 +66,4 @@ Modelos de detección, reconocimiento y análisis de layout en PaddlePaddle.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

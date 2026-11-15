@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 15.2k | Apache-2.0 | Python | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 15.2k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
@@ -49,13 +49,13 @@ Workers de agentes se conectan a salas LiveKit y procesan audio y video con plug
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Kokoro](kokoro.md) | 10k | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. |
+| [Kokoro](kokoro.md) | 10.1k | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Pipecat](pipecat.md) | 17.2k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
+| [Pipecat](pipecat.md) | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
 
 ## Enlaces
 
@@ -65,4 +65,4 @@ Workers de agentes se conectan a salas LiveKit y procesan audio y video con plug
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

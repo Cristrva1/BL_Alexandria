@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 6.8k | — | TypeScript | 2026-11-09 | 📦 Sí |
+| 7.1k | — | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
@@ -49,8 +49,8 @@ Carpetas SKILL.md que el agente carga al trabajar en proyectos Remotion.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [remotion](remotion.md) | 72.2k | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
-| [Remotion Superpowers](remotion-superpowers.md) | 164 | Plugin que convierte Remotion en un estudio de video para Claude Code, Codex o Gemini CLI. |
+| [remotion](remotion.md) | 73.2k | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
+| [Remotion Superpowers](remotion-superpowers.md) | 168 | Plugin que convierte Remotion en un estudio de video para Claude Code, Codex o Gemini CLI. |
 
 ## Enlaces
 
@@ -58,4 +58,4 @@ Carpetas SKILL.md que el agente carga al trabajar en proyectos Remotion.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

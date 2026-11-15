@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 23.2k | MIT | MDX | 2026-11-09 | 📦 Sí |
+| 23.3k | MIT | MDX | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,14 +49,14 @@ Componentes React/Next.js sobre Tailwind y motion que se copian o instalan vía 
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [tailwindcss](tailwindcss.md) | 98.7k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
-| [motion](motion.md) | 35k | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
+| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
+| [motion](motion.md) | 35.2k | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [React Bits](react-bits.md) | 51.6k | La mayor colección open source de componentes React animados e interactivos para webs llamativas. |
+| [React Bits](react-bits.md) | 52k | La mayor colección open source de componentes React animados e interactivos para webs llamativas. |
 
 ## Enlaces
 
@@ -65,4 +65,4 @@ Componentes React/Next.js sobre Tailwind y motion que se copian o instalan vía 
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

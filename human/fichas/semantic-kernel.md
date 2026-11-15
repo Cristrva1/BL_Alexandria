@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 28.8k | MIT | C# | 2026-11-09 | 🆕 Aún no (sugerido) |
+| 28.8k | MIT | C# | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
@@ -49,8 +49,8 @@ Un kernel registra servicios de IA y plugins (funciones) que el modelo puede inv
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Microsoft Agent Framework](agent-framework.md) | 14.6k | Framework de Microsoft para agentes y workflows multiagente en Python y .NET, sucesor de AutoGen y Semantic Kernel. |
-| [langchain](langchain.md) | 149k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
+| [Microsoft Agent Framework](agent-framework.md) | 14.7k | Framework de Microsoft para agentes y workflows multiagente en Python y .NET, sucesor de AutoGen y Semantic Kernel. |
+| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
 
 ## Enlaces
 
@@ -59,4 +59,4 @@ Un kernel registra servicios de IA y plugins (funciones) que el modelo puede inv
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 10.8k | AGPL-3.0 | TypeScript | 2026-11-09 | 📦 Sí |
+| 10.9k | AGPL-3.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
@@ -50,7 +50,7 @@ Descargar el cliente Canary (web/desktop) o `git clone` del repo y compilar con 
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Open-Generative-AI](open-generative-ai.md) | 33.8k | Plataforma alternativa libre a servicios premium de video/imagen que agrupa más de 200 modelos generativos accesibles desde terminal o integrados con agentes. |
+| [Open-Generative-AI](open-generative-ai.md) | 34.7k | Plataforma alternativa libre a servicios premium de video/imagen que agrupa más de 200 modelos generativos accesibles desde terminal o integrados con agentes. |
 
 ## Enlaces
 
@@ -59,4 +59,4 @@ Descargar el cliente Canary (web/desktop) o `git clone` del repo y compilar con 
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

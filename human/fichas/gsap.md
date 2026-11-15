@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 30.4k | — | JavaScript | 2026-11-04 | 📦 Sí |
+| 30.6k | — | JavaScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
@@ -49,13 +49,13 @@ Motor JavaScript que anima propiedades de cualquier objeto/DOM mediante tweens y
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [motion](motion.md) | 35k | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
+| [motion](motion.md) | 35.2k | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Anime.js](animejs.md) | 74.5k | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. |
+| [Anime.js](animejs.md) | 74.7k | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. |
 
 ## Enlaces
 
@@ -64,4 +64,4 @@ Motor JavaScript que anima propiedades de cualquier objeto/DOM mediante tweens y
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

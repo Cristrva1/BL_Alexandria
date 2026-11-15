@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 85k | Apache-2.0 | — | 2026-02-05 | 🆕 Aún no (sugerido) |
+| 85.1k | Apache-2.0 | — | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
@@ -49,7 +49,7 @@ No se instala: abre el repo y sigue la ruta que te interese.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Unsloth](unsloth.md) | 79.3k | Fine-tuning y ejecución local de LLM hasta 2 veces más rápido y con mucha menos memoria, ahora con UI. |
+| [Unsloth](unsloth.md) | 79.5k | Fine-tuning y ejecución local de LLM hasta 2 veces más rápido y con mucha menos memoria, ahora con UI. |
 | [LLaMA-Factory](llama-factory.md) | 76k | Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código. |
 
 ## Alternativas (elige una)
@@ -57,7 +57,7 @@ No se instala: abre el repo y sigue la ruta que te interese.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [LLMs from Scratch](llms-from-scratch.md) | 108k | Código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso. |
-| [Generative AI for Beginners](generative-ai-for-beginners.md) | 123k | Curso gratuito de Microsoft con 21 lecciones para empezar a construir aplicaciones con IA generativa. |
+| [Generative AI for Beginners](generative-ai-for-beginners.md) | 124k | Curso gratuito de Microsoft con 21 lecciones para empezar a construir aplicaciones con IA generativa. |
 
 ## Enlaces
 
@@ -66,4 +66,4 @@ No se instala: abre el repo y sigue la ruta que te interese.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

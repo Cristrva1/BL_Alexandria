@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 30.6k | MIT | Python | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 30.7k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
@@ -49,17 +49,17 @@ Un bucle ejecuta al agente, llama herramientas o transfiere a otro agente, y reg
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [openai-python](openai-python.md) | 32.1k | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. |
-| [FastMCP](fastmcp.md) | 28.4k | La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. |
+| [openai-python](openai-python.md) | 32.2k | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. |
+| [FastMCP](fastmcp.md) | 28.5k | La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Pydantic AI](pydantic-ai.md) | 21.1k | Framework de agentes del equipo de Pydantic, tipado de punta a punta y compatible con cualquier modelo. |
-| [LangGraph](langgraph.md) | 44.7k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
-| [smolagents](smolagents.md) | 30.3k | Librería mínima de Hugging Face para agentes que razonan escribiendo y ejecutando código Python. |
-| [Deep Agents](deepagents.md) | 31.2k | Arnés de agentes de LangChain listo para usar, con planificación, subagentes y sistema de archivos. |
+| [Pydantic AI](pydantic-ai.md) | 21.2k | Framework de agentes del equipo de Pydantic, tipado de punta a punta y compatible con cualquier modelo. |
+| [LangGraph](langgraph.md) | 45k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
+| [smolagents](smolagents.md) | 30.4k | Librería mínima de Hugging Face para agentes que razonan escribiendo y ejecutando código Python. |
+| [Deep Agents](deepagents.md) | 31.3k | Arnés de agentes de LangChain listo para usar, con planificación, subagentes y sistema de archivos. |
 | [Agent Development Kit (ADK)](adk-python.md) | 22.2k | Kit de Google para construir, evaluar y desplegar agentes en Python, optimizado para Gemini. |
 
 ## Enlaces
@@ -69,4 +69,4 @@ Un bucle ejecuta al agente, llama herramientas o transfiere a otro agente, y reg
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

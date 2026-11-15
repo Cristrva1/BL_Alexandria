@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 98k | MIT | TypeScript | 2026-09-24 | 📦 Sí |
+| 98.4k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
@@ -51,9 +51,9 @@ La versión clásica es una app Next.js con un núcleo Rust compilado a WebAssem
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [LosslessCut](lossless-cut.md) | 45.9k | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. |
-| [OBS Studio](obs-studio.md) | 79.3k | App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real. |
-| [whisperX](whisperx.md) | 25.2k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
+| [LosslessCut](lossless-cut.md) | 46k | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. |
+| [OBS Studio](obs-studio.md) | 79.6k | App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real. |
+| [whisperX](whisperx.md) | 25.3k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
 
 ## Enlaces
 
@@ -62,4 +62,4 @@ La versión clásica es una app Next.js con un núcleo Rust compilado a WebAssem
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

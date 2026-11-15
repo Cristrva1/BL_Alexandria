@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 68.1k | MIT | JavaScript | 2026-11-09 | 🆕 Aún no (sugerido) |
+| 68.3k | MIT | JavaScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
@@ -55,7 +55,7 @@ Descarga la app de escritorio o `docker pull mintplexlabs/anythingllm`.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Open WebUI](open-webui.md) | 158k | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. |
+| [Open WebUI](open-webui.md) | 159k | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. |
 | [Khoj](khoj.md) | 38.1k | Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. |
 | [PrivateGPT](private-gpt.md) | 57.6k | Capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. |
 
@@ -66,4 +66,4 @@ Descarga la app de escritorio o `docker pull mintplexlabs/anythingllm`.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 10.9k | GPL-3.0 | Python | 2026-11-06 | 🆕 Aún no (sugerido) |
+| 10.9k | GPL-3.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
@@ -49,7 +49,7 @@ Instala el plugin desde el gestor de Krita; él instala ComfyUI automáticamente
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [ComfyUI](comfyui.md) | 146k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
+| [ComfyUI](comfyui.md) | 147k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
 
 ## Alternativas (elige una)
 
@@ -64,4 +64,4 @@ Instala el plugin desde el gestor de Krita; él instala ComfyUI automáticamente
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -10,7 +10,7 @@
 | Evítalo si… | buscas solo una lista de prompts para copiar; mira `prompts-chat` | quieres ejecutarlos como comandos encadenables; mira `fabric` |
 | Ejecución | 🔀 híbrido | 🏠 local |
 | Setup | 🟢 fácil | 🟢 fácil |
-| Licencia | MIT | Otra (ver repo) |
+| Licencia | MIT | NOASSERTION |
 | Instalación | `go install github.com/danielmiessler/fabric/cmd/fabric@latest` | No se instala para usarlo: abre prompts.chat; para self-host clona el repo y sigue su g… |
 
 ## Regla práctica
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

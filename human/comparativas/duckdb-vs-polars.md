@@ -5,7 +5,7 @@
 | | [DuckDB](../fichas/duckdb.md) | [Polars](../fichas/polars.md) |
 |---|---|---|
 | Qué hace | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. | Librería de DataFrames escrita en Rust, mucho más rápida que pandas. |
-| ⭐ Estrellas | 43k | 40.3k |
+| ⭐ Estrellas | 43.1k | 40.3k |
 | Elígelo si… | quieres SQL analítico rápido sin montar servidores | tu análisis con pandas es lento |
 | Evítalo si… | necesitas una base transaccional multiusuario; usa PostgreSQL | prefieres SQL; mira `duckdb` |
 | Ejecución | 🏠 local | 🏠 local |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

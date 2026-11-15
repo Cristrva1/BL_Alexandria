@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 74.5k | MIT | JavaScript | 2026-11-02 | 🆕 Aún no (sugerido) |
+| 74.7k | MIT | JavaScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,8 +49,8 @@ Interpola propiedades con un motor de tiempo propio y líneas de tiempo encadena
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [GSAP](gsap.md) | 30.4k | Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. |
-| [motion](motion.md) | 35k | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
+| [GSAP](gsap.md) | 30.6k | Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. |
+| [motion](motion.md) | 35.2k | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
 
 ## Enlaces
 
@@ -59,4 +59,4 @@ Interpola propiedades con un motor de tiempo propio y líneas de tiempo encadena
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

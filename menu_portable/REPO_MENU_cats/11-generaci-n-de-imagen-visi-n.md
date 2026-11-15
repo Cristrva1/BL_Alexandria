@@ -293,6 +293,19 @@ _Nombre PyPI puede diferir de 'rembg'; verifica en pypi.org._
 **Evita si:** necesitas segmentar objetos específicos; mira `sam2`
 **Combina con:** `comfyui`
 
+## `ruview`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=sensores,claude,claude-code,esp32,firmware,home-assistant,home-automation,iot
+
+**Qué es:** Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento. Procesa señales de radio y conecta componentes de detección con paneles y sistemas de domótica.
+**Stack:** Rust, pyproject.toml
+**Repo:** https://github.com/ruvnet/RuView
+
+**Instalación** [?]: `git clone https://github.com/ruvnet/RuView (verificar README para build/run)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** quieres investigar percepción mediante radiofrecuencia y sensores WiFi
+**Evita si:** no dispones de datos o hardware compatibles con el proyecto
+
 ## `sam2`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=vision,video,python
 

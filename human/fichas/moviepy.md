@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 15.1k | MIT | Python | 2026-08-26 | 📦 Sí |
+| 15.2k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -51,16 +51,16 @@ Importa fotogramas y audio como arrays de NumPy, aplica efectos y composiciones 
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [whisperX](whisperx.md) | 25.2k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
-| [Kokoro](kokoro.md) | 10k | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. |
-| [ComfyUI](comfyui.md) | 146k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
+| [whisperX](whisperx.md) | 25.3k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
+| [Kokoro](kokoro.md) | 10.1k | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. |
+| [ComfyUI](comfyui.md) | 147k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [remotion](remotion.md) | 72.2k | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
-| [HyperFrames](hyperframes.md) | 82k | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. |
+| [remotion](remotion.md) | 73.2k | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
+| [HyperFrames](hyperframes.md) | 84.4k | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. |
 
 ## Enlaces
 
@@ -69,4 +69,4 @@ Importa fotogramas y audio como arrays de NumPy, aplica efectos y composiciones 
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

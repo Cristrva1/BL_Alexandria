@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 37.7k | Otra (ver repo) | Python | 2024-07-26 | 📦 Sí |
+| 37.7k | NOASSERTION | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
@@ -49,7 +49,7 @@ Detecta el rostro, lo alinea y aplica una red GAN (GFPGANv1) sobre PyTorch (GPU 
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Real-ESRGAN](real-esrgan.md) | 37.4k | Herramienta de superresolución y restauración para imágenes reales que reescala (2×/4×) y limpia material de baja calidad sin rehacerlo desde cero. |
+| [Real-ESRGAN](real-esrgan.md) | 37.5k | Herramienta de superresolución y restauración para imágenes reales que reescala (2×/4×) y limpia material de baja calidad sin rehacerlo desde cero. |
 
 ## Alternativas (elige una)
 
@@ -63,4 +63,4 @@ Detecta el rostro, lo alinea y aplica una red GAN (GFPGANv1) sobre PyTorch (GPU 
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

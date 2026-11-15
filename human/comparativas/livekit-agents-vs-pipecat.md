@@ -5,7 +5,7 @@
 | | [LiveKit Agents](../fichas/livekit-agents.md) | [Pipecat](../fichas/pipecat.md) |
 |---|---|---|
 | Qué hace | Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit. | Framework open source para agentes de voz y apps multimodales en tiempo real. |
-| ⭐ Estrellas | 15.2k | 17.2k |
+| ⭐ Estrellas | 15.2k | 17.3k |
 | Elígelo si… | necesitas agentes de voz escalables con WebRTC | construyes un agente de voz en Python |
 | Evítalo si… | quieres algo ligero sin servidor de medios; mira `pipecat` | quieres infraestructura WebRTC gestionada; mira `livekit-agents` |
 | Ejecución | 🔀 híbrido | 🔀 híbrido |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

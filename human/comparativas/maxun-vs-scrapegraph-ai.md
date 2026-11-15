@@ -5,7 +5,7 @@
 | | [Maxun](../fichas/maxun.md) | [Scrapegraph-ai](../fichas/scrapegraph-ai.md) |
 |---|---|---|
 | Qué hace | Plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción. | Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. |
-| ⭐ Estrellas | 18.2k | 32.7k |
+| ⭐ Estrellas | 18.4k | 32.8k |
 | Elígelo si… | quieres extraer datos web sin programar | quieres estructura semántica "by prompt" en Python |
 | Evítalo si… | programas y prefieres librerías; mira `crawl4ai` o `scrapy` | te basta un esquema simple (llm-scraper) o el coste de LLM por página es alto |
 | Ejecución | 🏠 local | 🔀 híbrido |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

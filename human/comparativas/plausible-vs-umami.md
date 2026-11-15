@@ -5,7 +5,7 @@
 | | [Plausible Analytics](../fichas/plausible.md) | [Umami](../fichas/umami.md) |
 |---|---|---|
 | Qué hace | Analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada. | Analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics. |
-| ⭐ Estrellas | 29.8k | 40k |
+| ⭐ Estrellas | 29.8k | 40.2k |
 | Elígelo si… | quieres analítica minimalista y privada | quieres analítica web simple y privada |
 | Evítalo si… | necesitas embudos y eventos complejos; mira `posthog` | necesitas analítica de producto avanzada; mira `posthog` |
 | Ejecución | 🔀 híbrido | 🏠 local |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -5,7 +5,7 @@
 | | [Anthropic's Prompt Engineering Tutorial](../fichas/prompt-eng-tutorial.md) | [Prompt Engineering Guide](../fichas/prompt-engineering-guide.md) |
 |---|---|---|
 | Qué hace | Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. | Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes. |
-| ⭐ Estrellas | 39.2k | 80k |
+| ⭐ Estrellas | 39.3k | 80.1k |
 | Elígelo si… | quieres aprender prompts con práctica guiada | quieres una referencia amplia de técnicas de prompting |
 | Evítalo si… | buscas una guía amplia multi-modelo; mira `prompt-engineering-guide` | prefieres ejercicios prácticos con corrección; mira `prompt-eng-tutorial` |
 | Ejecución | ☁️ cloud/API | ☁️ cloud/API |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

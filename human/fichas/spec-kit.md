@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 149k | MIT | Python | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 150k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
@@ -49,7 +49,7 @@ El CLI `specify` crea plantillas y comandos (/specify, /plan, /tasks) que tu age
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 | [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 | [Gemini CLI](gemini-cli.md) | 109k | Agente de IA open source de Google que lleva Gemini a tu terminal, con cuota gratuita generosa. |
 
@@ -57,7 +57,7 @@ El CLI `specify` crea plantillas y comandos (/specify, /plan, /tasks) que tu age
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [BMAD Method](bmad-method.md) | 55.2k | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. |
+| [BMAD Method](bmad-method.md) | 55.4k | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. |
 
 ## Enlaces
 
@@ -66,4 +66,4 @@ El CLI `specify` crea plantillas y comandos (/specify, /plan, /tasks) que tu age
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

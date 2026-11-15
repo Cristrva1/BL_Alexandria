@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 315k | MIT | Shell | 2026-11-03 | 📦 Sí |
+| 318k | MIT | Shell | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
@@ -49,14 +49,14 @@ Clona el repo y copia las skills e instrucciones a tu directorio de skills del a
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Awesome Claude Code](awesome-claude-code.md) | 57.7k | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. |
+| [Awesome Claude Code](awesome-claude-code.md) | 58k | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. |
 | [agent-toolkit](agent-toolkit.md) | 2.7k | Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code en tareas de desarrollo, documentación y planificación. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Agent Skills (Addy Osmani)](agent-skills.md) | 115k | Colección de skills de ingeniería de producción para agentes de código, de Addy Osmani. |
+| [Agent Skills (Addy Osmani)](agent-skills.md) | 118k | Colección de skills de ingeniería de producción para agentes de código, de Addy Osmani. |
 
 ## Enlaces
 
@@ -65,4 +65,4 @@ Clona el repo y copia las skills e instrucciones a tu directorio de skills del a
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

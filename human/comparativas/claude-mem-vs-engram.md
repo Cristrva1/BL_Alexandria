@@ -5,7 +5,7 @@
 | | [claude-mem](../fichas/claude-mem.md) | [Engram](../fichas/engram.md) |
 |---|---|---|
 | Qué hace | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. | Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI. |
-| ⭐ Estrellas | 116k | 7.9k |
+| ⭐ Estrellas | 117k | 8.2k |
 | Elígelo si… | usas Claude Code a diario y repites contexto entre sesiones | quieres memoria local simple para cualquier agente |
 | Evítalo si… | necesitas memoria para una app propia; mira `mem0` | solo usas Claude Code y quieres algo automático; mira `claude-mem` |
 | Ejecución | 🏠 local | 🏠 local |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

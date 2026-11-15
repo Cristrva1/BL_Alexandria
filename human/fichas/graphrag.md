@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 36.6k | MIT | Python | 2026-11-09 | 📦 Sí |
+| 36.6k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
@@ -49,7 +49,7 @@ Un LLM extrae entidades y relaciones para construir el grafo, lo resume por comu
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [graphify](graphify.md) | 145k | Generador de grafos de conocimiento que mapea código, PDFs, imágenes y video en diagramas interactivos. |
+| [graphify](graphify.md) | 148k | Generador de grafos de conocimiento que mapea código, PDFs, imágenes y video en diagramas interactivos. |
 | [mcp-neo4j](mcp-neo4j.md) | 989 | Conjunto de servidores MCP oficiales para conectar bases de datos de grafos Neo4j a asistentes de IA, con soporte de despliegue en cloud. |
 | [turbovec](turbovec.md) | 17.5k | Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida. |
 
@@ -57,9 +57,9 @@ Un LLM extrae entidades y relaciones para construir el grafo, lo resume por comu
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Graphiti](graphiti.md) | 32.7k | Librería de Zep para construir grafos de conocimiento temporales en tiempo real para agentes. |
-| [cognee](cognee.md) | 33.2k | Plataforma de memoria para agentes que combina grafos de conocimiento y vectores, usable con modelos pequeños. |
-| [LightRAG](lightrag.md) | 40.6k | RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. |
+| [Graphiti](graphiti.md) | 32.8k | Librería de Zep para construir grafos de conocimiento temporales en tiempo real para agentes. |
+| [cognee](cognee.md) | 33.3k | Plataforma de memoria para agentes que combina grafos de conocimiento y vectores, usable con modelos pequeños. |
+| [LightRAG](lightrag.md) | 40.7k | RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. |
 
 ## Enlaces
 
@@ -68,4 +68,4 @@ Un LLM extrae entidades y relaciones para construir el grafo, lo resume por comu
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

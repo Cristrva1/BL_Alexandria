@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 39.1k | MIT | Python | 2026-08-04 | 🆕 Aún no (sugerido) |
+| 39.3k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
@@ -51,7 +51,7 @@ Descarga el paquete de releases o instala con `pip` siguiendo el README.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [GPT-SoVITS](gpt-sovits.md) | 64.7k | Clonación de voz y TTS con solo un minuto de audio, con interfaz web para entrenar. |
+| [GPT-SoVITS](gpt-sovits.md) | 65.1k | Clonación de voz y TTS con solo un minuto de audio, con interfaz web para entrenar. |
 
 ## Enlaces
 
@@ -59,4 +59,4 @@ Descarga el paquete de releases o instala con `pip` siguiendo el README.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

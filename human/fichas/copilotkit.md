@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 38.6k | MIT | TypeScript | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 38.7k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,14 +49,14 @@ Componentes React y un runtime que sincronizan estado, acciones y streaming entr
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [LangGraph](langgraph.md) | 44.7k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
-| [Mastra](mastra.md) | 29.4k | Framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby. |
+| [LangGraph](langgraph.md) | 45k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
+| [Mastra](mastra.md) | 29.5k | Framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [assistant-ui](assistant-ui.md) | 13k | Librería React y TypeScript para interfaces de chat con IA de calidad producción. |
+| [assistant-ui](assistant-ui.md) | 13.2k | Librería React y TypeScript para interfaces de chat con IA de calidad producción. |
 
 ## Enlaces
 
@@ -65,4 +65,4 @@ Componentes React y un runtime que sincronizan estado, acciones y streaming entr
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

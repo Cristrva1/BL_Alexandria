@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 27.4k | MIT | Rust | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 27.5k | MIT | Rust | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
@@ -49,8 +49,8 @@ Gramáticas por lenguaje se compilan a parsers en C que producen árboles concre
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [ast-grep](ast-grep.md) | 16.5k | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. |
-| [Aider](aider.md) | 50k | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. |
+| [ast-grep](ast-grep.md) | 16.6k | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. |
+| [Aider](aider.md) | 50.1k | Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos. |
 
 ## Enlaces
 
@@ -59,4 +59,4 @@ Gramáticas por lenguaje se compilan a parsers en C que producen árboles concre
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -45,6 +45,7 @@ STATUS_LABELS: dict[str, str] = {
     "missing": "⚠️ El repositorio original ya no está disponible en GitHub; se conserva el clon local.",
     "local": "🧰 Carpeta interna del hub; no es un producto para instalar.",
     "alias": "🔁 Alias local de otro repo de la biblioteca.",
+    "unverified": "⚠️ Procedencia y funcionalidad sin verificar; conservar como referencia.",
 }
 
 

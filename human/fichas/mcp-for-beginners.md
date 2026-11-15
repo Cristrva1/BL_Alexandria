@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 17.6k | MIT | Jupyter Notebook | 2026-11-02 | 🆕 Aún no (sugerido) |
+| 17.7k | MIT | Jupyter Notebook | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
@@ -49,7 +49,7 @@ No se instala: abre el repo y sigue las lecciones.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [FastMCP](fastmcp.md) | 28.4k | La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. |
+| [FastMCP](fastmcp.md) | 28.5k | La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. |
 | [MCP Inspector](mcp-inspector.md) | 11.3k | Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. |
 
 ## Enlaces
@@ -58,4 +58,4 @@ No se instala: abre el repo y sigue las lecciones.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

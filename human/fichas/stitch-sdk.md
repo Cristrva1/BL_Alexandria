@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 1.8k | Apache-2.0 | TypeScript | 2026-11-05 | 📦 Sí |
+| 1.9k | Apache-2.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,13 +49,13 @@ Llama al servicio Stitch con prompts y descarga los resultados en HTML e imagen.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Stitch Skills](stitch-skills.md) | 8.7k | Colección de skills de agente para trabajar con el servidor MCP de Google Stitch. |
+| [Stitch Skills](stitch-skills.md) | 8.9k | Colección de skills de agente para trabajar con el servidor MCP de Google Stitch. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [screenshot-to-code](screenshot-to-code.md) | 81.1k | Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. |
+| [screenshot-to-code](screenshot-to-code.md) | 81.2k | Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue. |
 
 ## Enlaces
 
@@ -64,4 +64,4 @@ Llama al servicio Stitch con prompts y descarga los resultados en HTML e imagen.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

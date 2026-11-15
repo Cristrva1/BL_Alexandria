@@ -92,6 +92,19 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `n8n`
 **Alternativas (elige una):** `appsmith`, `tooljet`, `nocodb`
 
+## `cal.diy`
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=motores,next-auth,nextjs,open-source,postgresql,prisma,t3-stack,tailwindcss
+
+**Qué es:** Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. Despliega la aplicación de calendario y configura base de datos, disponibilidad e integraciones.
+**Stack:** TypeScript, Docker, Node.js
+**Repo:** https://github.com/calcom/cal.diy
+
+**Instalación** [~]: `git clone https://github.com/calcom/cal.diy && cd cal.diy && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** quieres estudiar una agenda autoalojada para uso personal
+**Evita si:** solo necesitas una integración sencilla sin operar una plataforma
+
 ## `chatwoot`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=automation,crm,ruby,docker
 
@@ -105,6 +118,19 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Elige si:** das soporte por varios canales y necesitas handoff humano
 **Evita si:** solo necesitas enviar mensajes salientes (evolution-api)
 **Combina con:** `evolution-api`, `novu`
+
+## `compai-crm`
+role=platform · exec=cloud · setup=heavy · mcp=False · prov=— · tags=crm,typescript
+
+**Qué es:** CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. Un agente trabaja sobre una cola y un presupuesto de investigación y mantiene la información del CRM.
+**Stack:** TypeScript, Docker, Node.js
+**Repo:** https://github.com/trycompai/crm
+
+**Instalación** [+]: `Crear cuenta / API key en el proveedor (no self-host).`
+_Servicio gestionado; no se clona._
+
+**Elige si:** quieres estudiar un CRM donde el agente organiza el seguimiento
+**Evita si:** solo necesitas una integración sencilla sin operar una plataforma
 
 ## `erpnext`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=crm,python
@@ -468,6 +494,20 @@ _Nombre npm puede diferir de 'whatsapp-web.js'; verifica en npmjs.com._
 **Evita si:** necesitas una API REST multi-sesión lista; mira `evolution-api` o `waha`
 **Combina con:** `n8n`, `chatwoot`
 **Alternativas (elige una):** `baileys`, `waha`, `evolution-api`
+
+## `whatsmeow`
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=whatsapp,go,golang,whatsapp-web
+
+**Qué es:** Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web. Gestiona la sesión del cliente y permite enviar mensajes, recibir eventos y mantener el estado de la cuenta.
+**Stack:** Go, Go modules
+**Repo:** https://github.com/tulir/whatsmeow
+
+**Instalación** [?]: `git clone https://github.com/tulir/whatsmeow (verificar README para install)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** necesitas integrar WhatsApp Web en un servicio escrito en Go
+**Evita si:** solo necesitas una integración sencilla sin operar una plataforma
+**Combina con:** `n8n`
 
 ## `windmill`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,agents,rust,docker

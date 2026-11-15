@@ -18,6 +18,20 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `ollama`
 **Alternativas (elige una):** `open-webui`, `khoj`, `private-gpt`
 
+## `chatbox`
+role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=chats,assistant,chatbot,chatgpt,claude,claude-code,copilot,deepseek
+
+**Qué es:** Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz común. Configura conexiones de modelos y conserva conversaciones en una aplicación multiplataforma.
+**Stack:** TypeScript, Node.js
+**Repo:** https://github.com/chatboxai/chatbox
+
+**Instalación** [~]: `git clone https://github.com/chatboxai/chatbox && cd chatbox && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+
+**Elige si:** quieres un cliente de escritorio que conecte varios modelos
+**Evita si:** no quieres mantener modelos o un entorno de ejecución propio
+**Alternativas (elige una):** `jan`
+
 ## `cherry-studio`
 role=app · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=chatbot,agents,typescript
 
@@ -74,7 +88,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Elige si:** quieres un ChatGPT local en tu escritorio
 **Evita si:** necesitas multiusuario; mira `open-webui`
 **Combina con:** `ollama`
-**Alternativas (elige una):** `cherry-studio`, `textgen`
+**Alternativas (elige una):** `cherry-studio`, `textgen`, `chatbox`
 
 ## `khoj`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=research,rag,agents,python
@@ -178,6 +192,32 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Evita si:** solo necesitas chat local simple; mira `ollama`
 **Combina con:** `anything-llm`
 **Alternativas (elige una):** `ollama`, `llama-cpp`
+
+## `muse-spark`
+role=app · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=workspaces,download-muse-ai,download-muse-spark,muse,muse-ai,muse-spark,muse-spark-1-1,muse-spark-1-2
+
+**Qué es:** Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas. El README describe un cliente multimodal y distribuciones binarias; el alcance real no se comprobó ejecutándolo.
+**Stack:** Python
+**Repo:** https://github.com/muse-spark-app/muse-spark
+
+**Instalación** [~]: `git clone https://github.com/muse-spark-app/muse-spark && cd muse-spark && (uv sync || pip install -r requirements.txt)`
+_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+
+**Elige si:** solo deseas revisar su procedencia y código antes de evaluar el proyecto
+**Evita si:** no quieres mantener modelos o un entorno de ejecución propio
+
+## `nextcloud-server`
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=workspaces,cloud,collaboration,decentralized,design,distributed,enterprise,federation
+
+**Qué es:** Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. Opera una nube personal con usuarios, almacenamiento y aplicaciones integrables.
+**Stack:** PHP, Node.js
+**Repo:** https://github.com/nextcloud/server
+
+**Instalación** [~]: `git clone https://github.com/nextcloud/server && cd server && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+
+**Elige si:** necesitas una plataforma autoalojada para documentos y colaboración
+**Evita si:** no quieres mantener modelos o un entorno de ejecución propio
 
 ## `notebooklm-mcp-cli`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=— · tags=mcp,notebooks,python
@@ -309,3 +349,17 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Elige si:** quieres experimentar con muchos backends locales
 **Evita si:** quieres algo sencillo; mira `jan` u `ollama`
 **Alternativas (elige una):** `jan`, `open-webui`
+
+## `transformers.js`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=motores,browser,javascript,transformers,webml
+
+**Qué es:** Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript. Carga modelos compatibles y realiza inferencia en el navegador o en entornos JavaScript sin un servidor de modelos propio.
+**Stack:** JavaScript, Node.js
+**Repo:** https://github.com/huggingface/transformers.js
+
+**Instalación** [~]: `npm install transformers.js   (o: pnpm add transformers.js)`
+_Nombre npm puede diferir de 'transformers.js'; verifica en npmjs.com._
+
+**Elige si:** quieres ejecutar un modelo compatible dentro del navegador
+**Evita si:** no quieres mantener modelos o un entorno de ejecución propio
+**Combina con:** `swr`

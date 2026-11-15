@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 42.4k | MIT | Python | 2026-11-09 | 🆕 Aún no (sugerido) |
+| 42.5k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
@@ -51,16 +51,16 @@ En Claude Code: `/plugin marketplace add wshobson/agents` y `/plugin install pyt
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 | [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
-| [SkillSpector](skillspector.md) | 25.2k | Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos. |
+| [SkillSpector](skillspector.md) | 26.1k | Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Claude Code Plugins Directory](claude-plugins-official.md) | 46.7k | Marketplace oficial de Anthropic con plugins para Claude Code, propios y de socios: comandos, agentes, skills y servidores MCP. |
-| [Agentic Awesome Skills](antigravity-awesome-skills.md) | 49.5k | Biblioteca comunitaria de más de 2.800 skills SKILL.md para Claude Code, Codex, Cursor y Gemini CLI, con instalador npx y MCP local. |
+| [Claude Code Plugins Directory](claude-plugins-official.md) | 47.3k | Marketplace oficial de Anthropic con plugins para Claude Code, propios y de socios: comandos, agentes, skills y servidores MCP. |
+| [Agentic Awesome Skills](antigravity-awesome-skills.md) | 49.7k | Biblioteca comunitaria de más de 2.800 skills SKILL.md para Claude Code, Codex, Cursor y Gemini CLI, con instalador npx y MCP local. |
 | [The Agency (agency-agents)](agency-agents.md) | 168k | Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Code y otros agentes. |
 
 ## Enlaces
@@ -70,4 +70,4 @@ En Claude Code: `/plugin marketplace add wshobson/agents` y `/plugin install pyt
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

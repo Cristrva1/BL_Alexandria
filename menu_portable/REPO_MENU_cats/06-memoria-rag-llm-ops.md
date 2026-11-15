@@ -18,6 +18,19 @@ _Stack no claro; revisa el README tras clonar._
 **Combina con:** `mem0`, `ruflo`
 **Alternativas (elige una):** `engram`, `supermemory`, `claude-mem`
 
+## `backdoor`
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=serving,ai,anthropic,claude,claude-code,deepseek,llm,ollama
+
+**Qué es:** Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. Traduce solicitudes y gestiona la configuración de proveedores como servicios compatibles u Ollama.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/ajsai47/backdoor
+
+**Instalación** [~]: `git clone https://github.com/ajsai47/backdoor && cd backdoor && (uv sync || pip install -r requirements.txt)`
+_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+
+**Elige si:** quieres estudiar cómo conectar otros modelos al harness de Claude Code
+**Evita si:** el coste operativo supera el volumen de uso del proyecto
+
 ## `chroma`
 role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=vector-db,rag,rust
 
@@ -165,6 +178,7 @@ _Nombre PyPI puede diferir de 'headroom'; verifica en pypi.org._
 **Elige si:** te quedas sin contexto en sesiones largas
 **Evita si:** tus prompts ya caben holgados o la pérdida de detalle por resumen es inaceptable
 **Combina con:** `context-engineering`, `codegraph`
+**Alternativas (elige una):** `rtk`
 
 ## `langfuse`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,observability,typescript,docker
@@ -418,6 +432,20 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `ollama`, `docling`
 **Alternativas (elige una):** `dify`, `lightrag`
 
+## `rtk`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=tokens,agentic-coding,ai-coding,anthropic,claude-code,cli,command-line-tool,cost-reduction
+
+**Qué es:** Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. Resume resultados de pruebas, diffs y logs antes de entregarlos al agente y registra el ahorro observado.
+**Stack:** Rust, Cargo
+**Repo:** https://github.com/rtk-ai/rtk
+
+**Instalación** [?]: `git clone https://github.com/rtk-ai/rtk (verificar README para build/run)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** tu agente consume demasiado contexto leyendo salidas extensas de terminal
+**Evita si:** el coste operativo supera el volumen de uso del proyecto
+**Alternativas (elige una):** `headroom`
+
 ## `sglang`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=inference,python
 
@@ -447,6 +475,19 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Evita si:** prefieres librería en Python; mira `mem0`
 **Combina con:** `vercel-ai`
 **Alternativas (elige una):** `mem0`, `agentmemory`
+
+## `tensorrt-llm`
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=serving,blackwell,cuda,llm-serving,moe,pytorch,python
+
+**Qué es:** Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. Transforma modelos compatibles y los ejecuta con optimizaciones de memoria, precisión y paralelismo.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/NVIDIA/TensorRT-LLM
+
+**Instalación** [~]: `pip install tensorrt-llm   (o: uv add tensorrt-llm)`
+_Nombre PyPI puede diferir de 'TensorRT-LLM'; verifica en pypi.org._
+
+**Elige si:** despliegas LLM en GPU NVIDIA y necesitas optimizar la inferencia
+**Evita si:** el coste operativo supera el volumen de uso del proyecto
 
 ## `turbovec`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=automation,vector-db,rust

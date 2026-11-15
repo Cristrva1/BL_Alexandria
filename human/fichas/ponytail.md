@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 188k | MIT | JavaScript | 2026-10-29 | 📦 Sí |
+| 191k | MIT | JavaScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
@@ -49,9 +49,9 @@ Copia la skill a la carpeta de skills de tu agente siguiendo el README.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [superpowers](superpowers.md) | 315k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
-| [andrej-karpathy-skills](andrej-karpathy-skills.md) | 232k | Guía de 4 principios inspirada en Andrej Karpathy para que tu agente de código responda útil y sin relleno. |
+| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
+| [andrej-karpathy-skills](andrej-karpathy-skills.md) | 233k | Guía de 4 principios inspirada en Andrej Karpathy para que tu agente de código responda útil y sin relleno. |
 
 ## Enlaces
 
@@ -60,4 +60,4 @@ Copia la skill a la carpeta de skills de tu agente siguiendo el README.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

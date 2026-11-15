@@ -32,6 +32,45 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Evita si:** tu proyecto es pequeño y no justifica herramientas de big data
 **Combina con:** `awesome-dataviz`
 
+## `awesome-machine-learning`
+role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=aprender,python
+
+**Qué es:** Directorio de frameworks, bibliotecas y recursos de machine learning organizado por lenguaje y tema. Reúne enlaces a implementaciones, cursos y material para comparar herramientas.
+**Stack:** Python
+**Repo:** https://github.com/josephmisiti/awesome-machine-learning
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-machine-learning/). Si necesitas el código: git clone https://github.com/josephmisiti/awesome-machine-learning`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** buscas alternativas de aprendizaje automático en distintos lenguajes
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+
+## `bigdata`
+role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=datos,java
+
+**Qué es:** Colección educativa de proyectos de datos con ejercicios de Hive, HDFS, Spark, HBase y sistemas de recomendación. Las carpetas desarrollan problemas de ingestión, análisis y procesamiento distribuido de datos.
+**Stack:** Java
+**Repo:** https://github.com/monsonlee/BigData
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/BigData/). Si necesitas el código: git clone https://github.com/monsonlee/BigData`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres estudiar ejemplos prácticos del ecosistema de big data
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+
+## `bionemo-recipes`
+role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=entrenamiento,drug-discovery,gpu,machine-learning,pytorch,python
+
+**Qué es:** Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. Presenta configuraciones de entrenamiento con TransformerEngine y frameworks distribuidos para modelos biológicos.
+**Stack:** Python
+**Repo:** https://github.com/NVIDIA-BioNeMo/bionemo-recipes
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/bionemo-recipes/). Si necesitas el código: git clone https://github.com/NVIDIA-BioNeMo/bionemo-recipes`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** trabajas en entrenamiento de modelos para datos biológicos
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+
 ## `cli`
 role=app · exec=cloud · setup=easy · mcp=False · prov=— · tags=code,go
 
@@ -177,6 +216,20 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `codegraph`
 **Alternativas (elige una):** `repomix`, `codebase-memory-mcp`, `serena`
 
+## `globalbuildingatlas`
+role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=datos,python
+
+**Qué es:** Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. Publica distintas capas geoespaciales y herramientas para estimar alturas y construir representaciones de edificios.
+**Stack:** Python
+**Repo:** https://github.com/zhu-xlab/GlobalBuildingAtlas
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/GlobalBuildingAtlas/). Si necesitas el código: git clone https://github.com/zhu-xlab/GlobalBuildingAtlas`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** necesitas geometría de edificios para análisis territorial o visualización urbana
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+**Combina con:** `three.js`
+
 ## `graphify`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=code,python
 
@@ -204,6 +257,19 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Elige si:** quieres una guía explicada y narrada
 **Evita si:** prefieres solo el código limpio (nanoGPT) o buscas algo productivo
 **Combina con:** `nanogpt`, `nanochat`
+
+## `hudi`
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=datos,apacheflink,apachehudi,apachespark,bigdata,data-integration,datalake,hudi
+
+**Qué es:** Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. Añade índices, actualizaciones y procesamiento incremental a tablas de un lago de datos.
+**Stack:** Java, Docker
+**Repo:** https://github.com/apache/hudi
+
+**Instalación** [~]: `git clone https://github.com/apache/hudi && cd hudi && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** necesitas gestionar cambios y cargas incrementales en un data lake
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
 
 ## `llama-factory`
 role=app · exec=local · setup=medium · mcp=False · prov=local · tags=training,python
@@ -263,6 +329,19 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Evita si:** solo quieres usar modelos existentes
 **Combina con:** `pytorch`
 **Alternativas (elige una):** `llm-course`, `nanogpt`
+
+## `machinelearning`
+role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=aprender,python
+
+**Qué es:** Ejemplos educativos de algoritmos de machine learning y redes neuronales con Python. Agrupa implementaciones y ejercicios de clasificación, reducción de dimensiones y aprendizaje profundo.
+**Stack:** Python
+**Repo:** https://github.com/wepe/MachineLearning
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/MachineLearning/). Si necesitas el código: git clone https://github.com/wepe/MachineLearning`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres explorar implementaciones pequeñas de algoritmos clásicos
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
 
 ## `marimo`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notebooks,data,python
@@ -364,6 +443,19 @@ _Nombre PyPI puede diferir de 'Polars'; verifica en pypi.org._
 **Combina con:** `marimo`
 **Alternativas (elige una):** `duckdb`
 
+## `python-machine-learning-book`
+role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=aprender,data-mining,data-science,logistic-regression,machine-learning,machine-learning-algorithms,neural-network,python
+
+**Qué es:** Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación. Presenta notebooks y scripts que acompañan los capítulos y conceptos del libro.
+**Stack:** Jupyter Notebook
+**Repo:** https://github.com/rasbt/python-machine-learning-book
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/python-machine-learning-book/). Si necesitas el código: git clone https://github.com/rasbt/python-machine-learning-book`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres estudiar los ejemplos de la primera edición del libro
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+
 ## `pytorch`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=training,python
 
@@ -422,6 +514,19 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Evita si:** solo quieres usar un agente
 **Combina con:** `swe-agent`
 
+## `tensorflow`
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=entrenamiento,deep-learning,deep-neural-networks,distributed,machine-learning,ml,neural-network,python
+
+**Qué es:** Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. Define operaciones y modelos y ofrece herramientas de entrenamiento e inferencia en distintos dispositivos.
+**Stack:** C++
+**Repo:** https://github.com/tensorflow/tensorflow
+
+**Instalación** [?]: `git clone https://github.com/tensorflow/tensorflow (verificar README para install)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** tu proyecto necesita el ecosistema TensorFlow para entrenamiento o despliegue
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+
 ## `timesfm`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=data,analytics,python
 
@@ -435,6 +540,19 @@ _Nombre PyPI puede diferir de 'TimesFM'; verifica en pypi.org._
 **Elige si:** necesitas pronósticos rápidos sin entrenar modelos
 **Evita si:** necesitas explicabilidad estadística clásica
 **Combina con:** `polars`, `duckdb`
+
+## `train-llm-from-scratch`
+role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=aprender,gemini,large-language-models,llm,openai,training,transformers,python
+
+**Qué es:** Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generación. Implementa un Transformer y recorre preparación de datos, entrenamiento y ajuste del modelo.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/FareedKhan-dev/train-llm-from-scratch
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/train-llm-from-scratch/). Si necesitas el código: git clone https://github.com/FareedKhan-dev/train-llm-from-scratch`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres entender el entrenamiento de un LLM mediante una implementación completa
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
 
 ## `transformers`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=training,inference,python
@@ -492,3 +610,16 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Evita si:** necesitas muchas técnicas y una UI de entrenamiento; mira `llama-factory`
 **Combina con:** `ollama`, `trl`
 **Alternativas (elige una):** `llama-factory`
+
+## `warp`
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=entrenamiento,cuda,differentiable-programming,gpu,gpu-acceleration,nvidia,nvidia-warp,python
+
+**Qué es:** Framework de NVIDIA que compila funciones de Python en kernels para simulación física y cálculo en CPU o GPU. Compila funciones especializadas y aporta primitivas de geometría, física y diferenciación.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/NVIDIA/warp
+
+**Instalación** [~]: `pip install warp   (o: uv add warp)`
+_Nombre PyPI puede diferir de 'warp'; verifica en pypi.org._
+
+**Elige si:** quieres escribir simulaciones o kernels de cálculo acelerado desde Python
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico

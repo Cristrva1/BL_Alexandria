@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 210k | Otra (ver repo) | TypeScript | 2026-11-10 | 🧰 Interna |
+| 211k | Otra (ver repo) | TypeScript | 2026-11-10 | 🧰 Interna |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
@@ -51,7 +51,7 @@ La misma que n8n (`docker compose`, imagen Docker oficial o `npx n8n`).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [n8n](n8n.md) | 210k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
+| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Enlaces
 
@@ -60,4 +60,4 @@ La misma que n8n (`docker compose`, imagen Docker oficial o `npx n8n`).
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

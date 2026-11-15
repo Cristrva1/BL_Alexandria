@@ -3,6 +3,20 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `annas-mcp`
+role=runtime · exec=hybrid · setup=medium · mcp=True · prov=— · tags=servidores,annas-archive,cli,mcp-server,go
+
+**Qué es:** Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos. Expone búsquedas y descargas como herramientas MCP y permite seleccionar espejos disponibles.
+**Stack:** Go, Go modules
+**Repo:** https://github.com/iosifache/annas-mcp
+
+**Instalación** [?]: `git clone https://github.com/iosifache/annas-mcp (verificar README para build/run)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** necesitas integrar búsquedas de documentos en un cliente MCP
+**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
+**Combina con:** `markitdown`
+
 ## `awesome-mcp-clients`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=mcp
 
@@ -104,6 +118,32 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Evita si:** no usas Figma
 **Combina con:** `claude-code`, `ui`, `tailwindcss`
 
+## `free-for-dev`
+role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=recursos,awesome-list,free-for-developers,html
+
+**Qué es:** Directorio de servicios de infraestructura y desarrollo que ofrecen planes o niveles gratuitos. Agrupa servicios por capacidad para comparar opciones antes de configurar un proyecto.
+**Stack:** HTML
+**Repo:** https://github.com/ripienaar/free-for-dev
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/free-for-dev/). Si necesitas el código: git clone https://github.com/ripienaar/free-for-dev`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** buscas servicios de desarrollo con un nivel gratuito disponible
+**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
+
+## `freedomain`
+role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=recursos,digitalplat,dns,dns-tutorial,documentation,domain,domain-platform,domain-registration
+
+**Qué es:** Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat. Reúne instrucciones para registrar un dominio, configurar nameservers y conectar un proyecto.
+**Stack:** Markdown
+**Repo:** https://github.com/DigitalPlatDev/FreeDomain
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/FreeDomain/). Si necesitas el código: git clone https://github.com/DigitalPlatDev/FreeDomain`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres aprender el flujo de dominios y DNS con sus recursos de referencia
+**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
+
 ## `github-mcp-server`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=mcp · tags=mcp,code,go
 
@@ -132,6 +172,19 @@ _Nombre PyPI puede diferir de 'LangChain MCP Adapters'; verifica en pypi.org._
 **Evita si:** no usas LangChain
 **Combina con:** `langgraph`, `langchain`
 **Alternativas (elige una):** `mcp-use`
+
+## `masterdnsvpn`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=redes,dns,dns-client,dns-proxy,dns-server,dns-tunnel,dns-tunneling,dnstt
+
+**Qué es:** Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. Coordina cliente y servidor con retransmisión y selección de resolvers para enlaces con restricciones.
+**Stack:** Go, Go modules
+**Repo:** https://github.com/masterking32/MasterDnsVPN
+
+**Instalación** [?]: `git clone https://github.com/masterking32/MasterDnsVPN (verificar README para build/run)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** quieres estudiar transporte de red sobre DNS en un entorno de pruebas
+**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
 
 ## `mcp`
 role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=mcp

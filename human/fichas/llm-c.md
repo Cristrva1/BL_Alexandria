@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 31.4k | MIT | Cuda | 2025-06-26 | 📦 Sí |
+| 31.5k | MIT | Cuda | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
@@ -51,7 +51,7 @@ Escribe a mano los kernels de las pasadas forward/backward en C y CUDA, gestiona
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [nanoGPT](nanogpt.md) | 64.6k | Implementación mínima y limpia de Andrej Karpathy para entrenar y afinar GPTs, pensada para que el código quepa en la cabeza y se entienda de extremo a extremo. |
+| [nanoGPT](nanogpt.md) | 64.8k | Implementación mínima y limpia de Andrej Karpathy para entrenar y afinar GPTs, pensada para que el código quepa en la cabeza y se entienda de extremo a extremo. |
 
 ## Enlaces
 
@@ -59,4 +59,4 @@ Escribe a mano los kernels de las pasadas forward/backward en C y CUDA, gestiona
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

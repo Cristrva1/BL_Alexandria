@@ -5,7 +5,7 @@
 | | [Milvus](../fichas/milvus.md) | [Qdrant](../fichas/qdrant.md) |
 |---|---|---|
 | Qué hace | Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
-| ⭐ Estrellas | 46.6k | 35.5k |
+| ⭐ Estrellas | 46.7k | 35.6k |
 | Elígelo si… | esperas volúmenes muy grandes de vectores | quieres una base vectorial dedicada y rápida |
 | Evítalo si… | tu proyecto es pequeño; mira `chroma` o `qdrant` | ya tienes PostgreSQL y poco volumen; mira `pgvector` |
 | Ejecución | 🏠 local | 🏠 local |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

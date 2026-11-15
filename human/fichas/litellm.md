@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 63k | Otra (ver repo) | Python | 2026-11-10 | 📦 Sí |
+| 63.3k | NOASSERTION | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,9 +49,9 @@ Traduce cada petición al formato del proveedor destino y puede correr como prox
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [langchain](langchain.md) | 149k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
-| [langfuse](langfuse.md) | 37.3k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
-| [llm-council](llm-council.md) | 26.4k | "consejo" donde varios LLMs deliberan y se evalúan entre sí para responder. |
+| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
+| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
+| [llm-council](llm-council.md) | 26.5k | "consejo" donde varios LLMs deliberan y se evalúan entre sí para responder. |
 
 ## Enlaces
 
@@ -63,4 +63,4 @@ Traduce cada petición al formato del proveedor destino y puede correr como prox
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

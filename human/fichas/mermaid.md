@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 91.1k | MIT | TypeScript | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 91.1k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,13 +49,13 @@ Parsea la sintaxis de texto y dibuja el diagrama en SVG.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Slidev](slidev.md) | 49.4k | Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. |
+| [Slidev](slidev.md) | 49.5k | Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Excalidraw](excalidraw.md) | 135k | Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. |
+| [Excalidraw](excalidraw.md) | 136k | Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. |
 
 ## Enlaces
 
@@ -64,4 +64,4 @@ Parsea la sintaxis de texto y dibuja el diagrama en SVG.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 39.4k | AGPL-3.0 | Python | 2026-11-09 | 🆕 Aún no (sugerido) |
+| 39.6k | AGPL-3.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
@@ -51,9 +51,9 @@ Envía tu consulta a varios motores, combina y ordena los resultados y los devue
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [gpt-researcher](gpt-researcher.md) | 30.6k | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
-| [Open WebUI](open-webui.md) | 158k | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. |
-| [Vane](vane.md) | 38.1k | Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity (antes Perplexica). |
+| [gpt-researcher](gpt-researcher.md) | 30.7k | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. |
+| [Open WebUI](open-webui.md) | 159k | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. |
+| [Vane](vane.md) | 38.2k | Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity (antes Perplexica). |
 
 ## Enlaces
 
@@ -65,4 +65,4 @@ Envía tu consulta a varios motores, combina y ordena los resultados y los devue
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -5,7 +5,7 @@
 | | [ast-grep](../fichas/ast-grep.md) | [Semgrep](../fichas/semgrep.md) |
 |---|---|---|
 | Qué hace | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. | Análisis estático ligero para muchos lenguajes con reglas que se parecen al código. |
-| ⭐ Estrellas | 16.5k | 17.6k |
+| ⭐ Estrellas | 16.6k | 17.7k |
 | Elígelo si… | necesitas buscar o reescribir código por estructura | quieres análisis de seguridad en CI |
 | Evítalo si… | buscas análisis de seguridad con reglas existentes; mira `semgrep` | solo quieres refactors estructurales; mira `ast-grep` |
 | Ejecución | 🏠 local | 🏠 local |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

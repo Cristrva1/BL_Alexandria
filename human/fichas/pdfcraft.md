@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 9.8k | AGPL-3.0 | TypeScript | 2026-11-08 | 📦 Sí |
+| 9.8k | AGPL-3.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
@@ -55,7 +55,7 @@ Abrir la web en el navegador, o `npm install` y ejecutar en local desde el repo.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Stirling-PDF](stirling-pdf.md) | 96.2k | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. |
+| [Stirling-PDF](stirling-pdf.md) | 96.6k | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. |
 
 ## Enlaces
 
@@ -64,4 +64,4 @@ Abrir la web en el navegador, o `npm install` y ejecutar en local desde el repo.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>
