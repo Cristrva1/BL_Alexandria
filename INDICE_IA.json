@@ -1141,7 +1141,7 @@
     },
     {
      "id": "n8n-skills",
-     "role": "Skills para que Claude Code diseñe los workflows sin errores"
+     "role": "Instrucciones y patrones para ayudar al agente a construir workflows de n8n"
     },
     {
      "id": "chatwoot",
@@ -1185,7 +1185,22 @@
     ]
    ],
    "how": "Evolution API mantiene la sesión de WhatsApp y reenvía cada mensaje a un webhook de n8n. El workflow de n8n arma el contexto, llama al LLM, guarda el lead y, si detecta una intención de compra o un problema, abre la conversación en Chatwoot para que responda una persona. Novu avisa al equipo. Con n8n-mcp y n8n-skills, tu agente de código construye y corrige esos workflows por ti.",
-   "when_not": "Si solo necesitas respuestas automáticas simples sin traspaso a humano, basta con Evolution API (o WAHA) y un webhook propio. Si no quieres operar servidores, usa la API oficial de WhatsApp Business con un proveedor gestionado."
+   "when_not": "Si solo necesitas respuestas automáticas simples sin traspaso a humano, basta con Evolution API (o WAHA) y un webhook propio. Si no quieres operar servidores, usa la API oficial de WhatsApp Business con un proveedor gestionado.",
+   "plan": {
+    "minimum": [
+     "evolution-api",
+     "n8n",
+     "chatwoot"
+    ],
+    "instead": [],
+    "inputs": "Un mensaje enviado desde un número de prueba",
+    "first_try": {
+     "action": "Recibe el mensaje, envíalo al flujo y pide pasar con una persona",
+     "success": "El mensaje llega a la bandeja y puedes responder manualmente",
+     "execution": "proposed_not_executed"
+    },
+    "note": "Decide primero la conexión del canal, sus políticas y posibles tarifas; las skills ayudan a construir y no ejecutan el bot"
+   }
   },
   {
    "id": "pipeline-de-reels-video-corto",
@@ -1269,7 +1284,24 @@
     ]
    ],
    "how": "Flujo propuesto: WhisperX prepara subtítulos; Kokoro sintetiza narración; ComfyUI genera visuales; Remotion compone y FFmpeg exporta. Comprueba los datos,la duración y la licencia de cada recurso. MoneyPrinterTurbo es otra aplicación con su configuración y costes propios.",
-   "when_not": "Si solo necesitas cortar un video existente,no necesitas generar voces o imágenes. Kokoro,ComfyUI y los demás modelos tienen requisitos de equipo distintos; si eliges servicios remotos,revisa sus tarifas. Chatterbox queda como archivo de investigación y no como voz inicial recomendada."
+   "when_not": "Si solo necesitas cortar un video existente,no necesitas generar voces o imágenes. Kokoro,ComfyUI y los demás modelos tienen requisitos de equipo distintos; si eliges servicios remotos,revisa sus tarifas. Chatterbox queda como archivo de investigación y no como voz inicial recomendada.",
+   "plan": {
+    "minimum": [
+     "kokoro",
+     "remotion",
+     "ffmpeg"
+    ],
+    "instead": [
+     "moneyprinterturbo"
+    ],
+    "inputs": "Un guion de 20 segundos y dos imágenes propias",
+    "first_try": {
+     "action": "Sintetiza la voz, monta una escena sencilla y exporta un clip",
+     "success": "El archivo reproduce imagen y voz con la duración esperada",
+     "execution": "proposed_not_executed"
+    },
+    "note": "WhisperX hace falta si partes de audio; generar imágenes y restaurarlas son ampliaciones, no requisitos de todo video"
+   }
   },
   {
    "id": "agente-de-research-profundo",
@@ -1353,13 +1385,27 @@
     ]
    ],
    "how": "GPT Researcher divide la pregunta en sub-preguntas, busca con SearXNG y pasa las URLs a Crawl4AI, que devuelve Markdown listo para el modelo. Browser Use cubre las páginas que necesitan clics o sesión, y MarkItDown suma tus documentos. Langfuse registra cada llamada para revisar costos y errores. DeerFlow es la alternativa si prefieres un harness con sandbox y más autonomía.",
-   "when_not": "Si la investigación es solo sobre documentos internos, no necesitas buscador ni crawler: usa la receta de RAG sobre documentos."
+   "when_not": "Si la investigación es solo sobre documentos internos, no necesitas buscador ni crawler: usa la receta de RAG sobre documentos.",
+   "plan": {
+    "minimum": [
+     "gpt-researcher",
+     "searxng"
+    ],
+    "instead": [],
+    "inputs": "Una pregunta acotada que puedas contrastar",
+    "first_try": {
+     "action": "Genera un informe breve y abre tres de sus fuentes",
+     "success": "Las fuentes existen y respaldan las afirmaciones del informe",
+     "execution": "proposed_not_executed"
+    },
+    "note": "Comprueba el proveedor de modelo y búsqueda; una cita no garantiza que la conclusión sea correcta"
+   }
   },
   {
    "id": "workspace-privado-local-soberano",
    "emoji": "🏠",
    "title": "Workspace privado local soberano",
-   "goal": "Tener chat, documentos y memoria de IA en tu propia máquina, sin enviar datos a terceros.",
+   "goal": "Preparar chat, documentos y memoria con rutas locales, comprobando por separado modelos, herramientas y conexiones externas.",
    "repos": [
     "ollama",
     "odysseus",
@@ -1421,8 +1467,22 @@
      "búsqueda"
     ]
    ],
-   "how": "Ollama sirve los modelos en tu equipo con una API local. Odysseus centraliza chat, documentos y tareas; Open Notebook indexa tus fuentes para preguntarles como en NotebookLM; mem0 recuerda preferencias y hechos entre sesiones; SearXNG añade búsqueda web sin rastreo.",
-   "when_not": "Si tu equipo no puede correr modelos (poca RAM o sin GPU), apunta las mismas apps a una API comercial vía LiteLLM. Si la privacidad no es un requisito, un SaaS es más simple."
+   "how": "Ollama sirve modelos en tu equipo. Conecta una interfaz compatible y prueba primero el chat. Después evalúa documentos, memoria y búsqueda; cada componente requiere su propia configuración y puede abrir conexiones externas.",
+   "when_not": "Si tu equipo no puede correr modelos (poca RAM o sin GPU), apunta las mismas apps a una API comercial vía LiteLLM. Si la privacidad no es un requisito, un SaaS es más simple.",
+   "plan": {
+    "minimum": [
+     "ollama",
+     "odysseus"
+    ],
+    "instead": [],
+    "inputs": "Un modelo que quepa en tu equipo y un archivo de prueba",
+    "first_try": {
+     "action": "Conecta el motor local al espacio de trabajo y prueba una conversación",
+     "success": "Identificas el endpoint del modelo y puedes revisar qué conexiones externas siguen activas",
+     "execution": "proposed_not_executed"
+    },
+    "note": "Configura y comprueba también embeddings, herramientas, memoria y búsqueda; local no garantiza ausencia de comunicaciones externas"
+   }
   },
   {
    "id": "analisis-de-repos-grandes",
@@ -1501,7 +1561,21 @@
     ]
    ],
    "how": "CodeGraph y graphify construyen índices estructurales que el agente consulta en lugar de leer archivos completos; GitNexus ayuda a recorrer dependencias; Repomix empaqueta solo la parte relevante cuando necesitas pasar código a un chat. DeepWiki Open produce documentación para humanos. Claude Code (o Codex) usa todo eso como contexto barato.",
-   "when_not": "Si el repo es pequeño (menos de unas 10.000 líneas), el agente de código con referencias directas a archivos basta."
+   "when_not": "Si el repo es pequeño (menos de unas 10.000 líneas), el agente de código con referencias directas a archivos basta.",
+   "plan": {
+    "minimum": [
+     "repomix",
+     "claude-code"
+    ],
+    "instead": [],
+    "inputs": "Un repo propio y una pregunta concreta sobre su código",
+    "first_try": {
+     "action": "Empaqueta solo una parte y pide ubicar una función con referencias",
+     "success": "Puedes abrir los archivos citados y comprobar la explicación",
+     "execution": "proposed_not_executed"
+    },
+    "note": "Revisa exclusiones y secretos antes de compartir código; los grafos son otra ampliación y tienen sus propias licencias"
+   }
   },
   {
    "id": "marketing-de-agencia",
@@ -1575,7 +1649,21 @@
     ]
    ],
    "how": "Las skills y los roles guían a tu agente de código en cada canal; Mautic segmenta y nutre leads; listmonk envía newsletters; PostHog mide conversión y retención; Open Generative AI produce piezas visuales. Metabase o Superset sirven si necesitas reportes para clientes.",
-   "when_not": "Si gestionas una sola marca pequeña, Mautic es excesivo: listmonk y una hoja de cálculo bastan."
+   "when_not": "Si gestionas una sola marca pequeña, Mautic es excesivo: listmonk y una hoja de cálculo bastan.",
+   "plan": {
+    "minimum": [
+     "marketingskills",
+     "listmonk"
+    ],
+    "instead": [],
+    "inputs": "Un borrador de campaña y una lista de prueba con permiso",
+    "first_try": {
+     "action": "Prepara un mensaje y realiza una prueba de envío a una dirección del equipo",
+     "success": "Puedes revisar el texto, la baja y la entrega antes de ampliar destinatarios",
+     "execution": "proposed_not_executed"
+    },
+    "note": "Skills y envío son capas distintas; SMTP, dominios, analítica y medios pueden añadir costes"
+   }
   },
   {
    "id": "web-app-moderna-con-ia",
@@ -1664,7 +1752,23 @@
     ]
    ],
    "how": "shadcn/ui y Tailwind dan la base visual; el AI SDK de Vercel resuelve streaming, tool calling y proveedores; assistant-ui aporta la interfaz de chat; Motion anima y Recharts dibuja datos; SWR gestiona el fetching. Para diseñar antes de codificar, prueba Open Design o Penpot.",
-   "when_not": "Si es una landing estática, Tailwind y un par de componentes bastan. Si es un dashboard interno de datos, Streamlit o Superset son más rápidos."
+   "when_not": "Si es una landing estática, Tailwind y un par de componentes bastan. Si es un dashboard interno de datos, Streamlit o Superset son más rápidos.",
+   "plan": {
+    "minimum": [
+     "ui",
+     "tailwindcss",
+     "vercel-ai",
+     "assistant-ui"
+    ],
+    "instead": [],
+    "inputs": "Una aplicación de prueba y una ruta de modelo elegida",
+    "first_try": {
+     "action": "Construye una pantalla de chat y envía una pregunta de prueba",
+     "success": "Puedes revisar respuesta, estado de carga y un error de conexión",
+     "execution": "proposed_not_executed"
+    },
+    "note": "Motion, gráficos y caché se añaden cuando la función los necesita; revisa API, alojamiento y autenticación por separado"
+   }
   },
   {
    "id": "construir-una-appservidor-mcp",
@@ -1743,7 +1847,23 @@
     ]
    ],
    "how": "Busca en awesome-mcp-servers antes de construir. Si no existe, FastMCP (Python) o el SDK oficial de TypeScript te dan el servidor con poco código; los servidores de referencia muestran cómo modelar tools, recursos y prompts. MCP Inspector valida el servidor antes de conectarlo a Claude Code, Codex o Cursor. mcp-use sirve cuando quieres una app MCP con interfaz propia.",
-   "when_not": "Si solo vas a consumir un servidor que ya existe, no construyas uno: instálalo desde su README."
+   "when_not": "Si solo vas a consumir un servidor que ya existe, no construyas uno: instálalo desde su README.",
+   "plan": {
+    "minimum": [
+     "fastmcp",
+     "mcp-inspector"
+    ],
+    "instead": [
+     "mcp-typescript-sdk"
+    ],
+    "inputs": "Una acción de solo lectura y datos de prueba",
+    "first_try": {
+     "action": "Expón una herramienta pequeña y compruébala con el inspector",
+     "success": "La entrada y la salida son las esperadas y el cliente puede descubrir la herramienta",
+     "execution": "proposed_not_executed"
+    },
+    "note": "Elige Python o TypeScript para construir la misma capa; añade autenticación y permisos según el entorno antes de compartirla"
+   }
   },
   {
    "id": "documentos-presentaciones",
@@ -1812,7 +1932,24 @@
     ]
    ],
    "how": "MarkItDown (o Docling si el PDF tiene tablas y columnas) normaliza todo a Markdown. Desde ahí, PPT Master genera un PowerPoint nativo editable, Slidev produce slides web con código y componentes, y Marp exporta a PDF o PPTX con estilos simples.",
-   "when_not": "Si el contenido ya está en Markdown, salta la conversión. Si necesitas un diseño de marca al píxel, una herramienta de diseño dedicada da más control."
+   "when_not": "Si el contenido ya está en Markdown, salta la conversión. Si necesitas un diseño de marca al píxel, una herramienta de diseño dedicada da más control.",
+   "plan": {
+    "minimum": [
+     "markitdown",
+     "ppt-master"
+    ],
+    "instead": [
+     "slidev",
+     "marp"
+    ],
+    "inputs": "Un documento breve y el formato de entrega",
+    "first_try": {
+     "action": "Extrae el texto, prepara tres diapositivas y abre la exportación",
+     "success": "El contenido coincide con la fuente y el formato sirve para la entrega",
+     "execution": "proposed_not_executed"
+    },
+    "note": "Elige el generador según PowerPoint, PDF o web; la conversión no garantiza que todos los elementos sean editables"
+   }
   },
   {
    "id": "chatgpt-privado-local",
@@ -1871,7 +2008,21 @@
     ]
    ],
    "how": "Ollama corre los modelos y expone una API compatible con OpenAI; Open WebUI se conecta a ella y añade cuentas de usuario, subida de documentos, búsqueda web vía SearXNG y herramientas. Si algunos usuarios necesitan modelos comerciales, LiteLLM unifica el acceso con control de costos.",
-   "when_not": "Si es solo para ti en tu portátil, una app de escritorio como Jan o LM Studio es más simple. Si tu hardware no corre modelos medianos, usa directamente una API."
+   "when_not": "Si es solo para ti en tu portátil, una app de escritorio como Jan o LM Studio es más simple. Si tu hardware no corre modelos medianos, usa directamente una API.",
+   "plan": {
+    "minimum": [
+     "ollama",
+     "open-webui"
+    ],
+    "instead": [],
+    "inputs": "Un modelo compatible y recursos de equipo suficientes",
+    "first_try": {
+     "action": "Conecta el chat al endpoint local y envía una pregunta",
+     "success": "Puedes identificar el modelo y comprobar dónde se procesa la conversación",
+     "execution": "proposed_not_executed"
+    },
+    "note": "Buscadores, herramientas y proveedores opcionales pueden salir a internet; verifica la configuración de cada uno"
+   }
   },
   {
    "id": "rag-sobre-documentos",
@@ -1955,7 +2106,21 @@
     ]
    ],
    "how": "Docling convierte los documentos en Markdown estructurado; LlamaIndex los fragmenta, genera embeddings y los guarda en Qdrant; en cada pregunta recupera los fragmentos relevantes y llama al modelo vía LiteLLM. Ragas mide si la respuesta usa bien el contexto y Langfuse registra cada consulta. Si prefieres una plataforma con UI, RAGFlow o AnythingLLM cubren el flujo completo.",
-   "when_not": "Si tienes pocos documentos y cortos, pegarlos en el contexto del modelo es más simple. Si las preguntas cruzan muchas entidades, mira GraphRAG o LightRAG."
+   "when_not": "Si tienes pocos documentos y cortos, pegarlos en el contexto del modelo es más simple. Si las preguntas cruzan muchas entidades, mira GraphRAG o LightRAG.",
+   "plan": {
+    "minimum": [
+     "docling",
+     "llama-index"
+    ],
+    "instead": [],
+    "inputs": "Un PDF de dos páginas y tres preguntas con respuesta conocida",
+    "first_try": {
+     "action": "Extrae el texto y crea una consulta mínima con un proveedor elegido",
+     "success": "Las respuestas pueden contrastarse con fragmentos del documento",
+     "execution": "proposed_not_executed"
+    },
+    "note": "El modelo y los embeddings necesitan configuración propia; almacenamiento vectorial, evaluación y trazas se añaden después"
+   }
   },
   {
    "id": "agente-de-codigo-potenciado",
@@ -2029,7 +2194,21 @@
     ]
    ],
    "how": "Superpowers obliga al agente a planificar, escribir pruebas y revisar; Context7 le pasa la documentación vigente de cada librería; Serena le da navegación semántica del código en lugar de leer archivos enteros; claude-mem conserva decisiones entre sesiones. SkillSpector revisa cualquier skill nueva antes de instalarla.",
-   "when_not": "Si solo haces cambios pequeños y puntuales, el agente tal cual basta: cada pieza añade contexto y configuración."
+   "when_not": "Si solo haces cambios pequeños y puntuales, el agente tal cual basta: cada pieza añade contexto y configuración.",
+   "plan": {
+    "minimum": [
+     "claude-code",
+     "superpowers"
+    ],
+    "instead": [],
+    "inputs": "Un repo de prueba y una tarea pequeña",
+    "first_try": {
+     "action": "Añade una metodología al agente y pide un cambio con su comprobación",
+     "success": "Puedes revisar el diff y el resultado de la comprobación",
+     "execution": "proposed_not_executed"
+    },
+    "note": "La ruta mínima usa Claude Code; compara la compatibilidad de cada complemento antes de adaptarla a Codex o Antigravity"
+   }
   },
   {
    "id": "agente-de-voz",
@@ -2098,7 +2277,24 @@
     ]
    ],
    "how": "Pipecat encadena transporte de audio, detección de voz, STT, LLM y TTS con manejo de interrupciones. faster-whisper transcribe, el LLM (vía LiteLLM) decide qué decir y Kokoro lo sintetiza. LiveKit Agents es la alternativa si quieres WebRTC y telefonía SIP resueltos de serie.",
-   "when_not": "Si te basta con dictado o transcripción sin respuesta hablada, usa solo Whisper o faster-whisper. Si no quieres operar infraestructura, un servicio gestionado de voz es más rápido de lanzar."
+   "when_not": "Si te basta con dictado o transcripción sin respuesta hablada, usa solo Whisper o faster-whisper. Si no quieres operar infraestructura, un servicio gestionado de voz es más rápido de lanzar.",
+   "plan": {
+    "minimum": [
+     "pipecat",
+     "faster-whisper",
+     "kokoro"
+    ],
+    "instead": [
+     "livekit-agents"
+    ],
+    "inputs": "Micrófono, auriculares y un modelo de conversación configurado",
+    "first_try": {
+     "action": "Prueba una frase corta de entrada, respuesta y reproducción",
+     "success": "La transcripción y la voz de salida corresponden a la conversación",
+     "execution": "proposed_not_executed"
+    },
+    "note": "Configura también el LLM; transcripción y voz locales no hacen local todo el flujo ni incluyen telefonía"
+   }
   },
   {
    "id": "analitica-con-ia",
@@ -2167,7 +2363,22 @@
     ]
    ],
    "how": "PostHog captura eventos y embudos; exportas a Parquet y analizas con DuckDB sin montar un warehouse; WrenAI traduce preguntas a SQL sobre tu esquema; Superset publica los dashboards. Si solo necesitas visitas y fuentes de tráfico, Umami o Plausible bastan.",
-   "when_not": "Si tu producto aún tiene poco tráfico, empieza solo con PostHog o Umami: el resto añade operación sin aportar todavía."
+   "when_not": "Si tu producto aún tiene poco tráfico, empieza solo con PostHog o Umami: el resto añade operación sin aportar todavía.",
+   "plan": {
+    "minimum": [
+     "posthog"
+    ],
+    "instead": [
+     "umami"
+    ],
+    "inputs": "Un sitio de prueba y un evento que puedas provocar",
+    "first_try": {
+     "action": "Registra un evento y compara el resultado con tu acción",
+     "success": "El evento aparece con el nombre y propiedades que esperabas",
+     "execution": "proposed_not_executed"
+    },
+    "note": "Empieza por medición; SQL, dashboards y preguntas con IA son ampliaciones con configuración y costes propios"
+   }
   }
  ],
  "detail_file": "INDICE_IA.detalle.json",
@@ -27651,6 +27862,12 @@
      "desarrollo",
      "vibe coding",
      "asistente de codigo"
+    ],
+    "outcome": "Una tarea de código pequeña y revisable",
+    "bring": "Un proyecto de prueba y una tarea concreta",
+    "decision": "¿Necesitas un agente de terminal o una aplicación con interfaz?",
+    "recipe_ids": [
+     "agente-de-codigo-potenciado"
     ]
    },
    {
@@ -27679,6 +27896,12 @@
      "flujo",
      "zapier",
      "integraciones"
+    ],
+    "outcome": "Un flujo con disparador, acción y registro del resultado",
+    "bring": "Dos aplicaciones y datos de prueba",
+    "decision": "¿Quieres conectar aplicaciones o construir una herramienta interna?",
+    "recipe_ids": [
+     "bot-de-whatsapp-con-ia"
     ]
    },
    {
@@ -27707,6 +27930,12 @@
      "ventas",
      "mensajes",
      "bot de whatsapp"
+    ],
+    "outcome": "Un canal que recibe mensajes y permite traspasarlos a una persona",
+    "bring": "Un número de prueba y una decisión sobre conexión oficial o pasarela",
+    "decision": "¿Necesitas solo el canal o también bandeja y automatizaciones?",
+    "recipe_ids": [
+     "bot-de-whatsapp-con-ia"
     ]
    },
    {
@@ -27740,6 +27969,13 @@
      "manuales",
      "preguntar a mis archivos",
      "conocimiento"
+    ],
+    "outcome": "Respuestas a preguntas con referencias a tus documentos",
+    "bring": "Un PDF pequeño y tres preguntas cuya respuesta conozcas",
+    "decision": "¿Quieres una aplicación lista o montar tu propio flujo RAG?",
+    "recipe_ids": [
+     "rag-sobre-documentos",
+     "workspace-privado-local-soberano"
     ]
    },
    {
@@ -27769,6 +28005,12 @@
      "buscar informacion",
      "fuentes",
      "informe"
+    ],
+    "outcome": "Un informe que permita volver a las fuentes",
+    "bring": "Una pregunta acotada y criterios para aceptar una fuente",
+    "decision": "¿Investigarás la web o solo tus documentos?",
+    "recipe_ids": [
+     "agente-de-research-profundo"
     ]
    },
    {
@@ -27800,6 +28042,13 @@
      "ollama",
      "privacidad",
      "sin api"
+    ],
+    "outcome": "Una ruta que ejecuta el modelo en tu equipo",
+    "bring": "RAM y GPU disponibles, espacio para pesos y un modelo compatible",
+    "decision": "¿Buscas un motor, un chat o un espacio con documentos?",
+    "recipe_ids": [
+     "chatgpt-privado-local",
+     "workspace-privado-local-soberano"
     ]
    },
    {
@@ -27832,6 +28081,12 @@
      "pagina",
      "aplicacion",
      "landing"
+    ],
+    "outcome": "Una primera pantalla que resuelve una tarea concreta",
+    "bring": "Un boceto, textos y la función principal de la página",
+    "decision": "¿Necesitas una página estática, una aplicación o un chat con IA?",
+    "recipe_ids": [
+     "web-app-moderna-con-ia"
     ]
    },
    {
@@ -27868,6 +28123,12 @@
      "montaje",
      "editar video",
      "animacion"
+    ],
+    "outcome": "Un clip exportado que puedas reproducir y revisar",
+    "bring": "Un clip o guion corto y recursos con permiso de uso",
+    "decision": "¿Vas a cortar material, programar escenas o generar imágenes?",
+    "recipe_ids": [
+     "pipeline-de-reels-video-corto"
     ]
    },
    {
@@ -27894,6 +28155,13 @@
      "transcripcion",
      "stt",
      "subtitulos"
+    ],
+    "outcome": "Texto o subtítulos que correspondan con la grabación",
+    "bring": "Un minuto de audio claro con permiso de uso",
+    "decision": "¿Necesitas texto, tiempos por palabra o distinguir hablantes?",
+    "recipe_ids": [
+     "pipeline-de-reels-video-corto",
+     "agente-de-voz"
     ]
    },
    {
@@ -27922,6 +28190,13 @@
      "narrar",
      "sintesis",
      "texto a voz"
+    ],
+    "outcome": "Una narración de prueba en una voz e idioma compatibles",
+    "bring": "Un párrafo breve y una voz autorizada",
+    "decision": "¿Quieres voces disponibles, clonación o una interfaz visual?",
+    "recipe_ids": [
+     "pipeline-de-reels-video-corto",
+     "agente-de-voz"
     ]
    },
    {
@@ -27954,6 +28229,12 @@
      "vision",
      "generar imagen",
      "upscale"
+    ],
+    "outcome": "Una imagen generada o una mejora que puedas comparar",
+    "bring": "Una imagen propia o un prompt, y los requisitos del modelo",
+    "decision": "¿Necesitas crear, editar, quitar fondo o aumentar resolución?",
+    "recipe_ids": [
+     "pipeline-de-reels-video-corto"
     ]
    },
    {
@@ -27982,6 +28263,12 @@
      "powerpoint",
      "slides",
      "diapositivas"
+    ],
+    "outcome": "Diapositivas que puedas abrir en el formato que necesitas",
+    "bring": "Un esquema breve y una decisión sobre el formato de entrega",
+    "decision": "¿Necesitas PowerPoint editable, PDF o diapositivas web?",
+    "recipe_ids": [
+     "documentos-presentaciones"
     ]
    },
    {
@@ -28008,7 +28295,11 @@
      "dibujar",
      "esquema",
      "mapa mental"
-    ]
+    ],
+    "outcome": "Un esquema que otra persona pueda interpretar",
+    "bring": "Un proceso o idea con pocas relaciones",
+    "decision": "¿Prefieres dibujar libremente o mantener el diagrama como texto?",
+    "recipe_ids": []
    },
    {
     "id": "datos",
@@ -28038,6 +28329,12 @@
      "analytics",
      "analitica",
      "graficos"
+    ],
+    "outcome": "Una visualización o consulta contrastada con datos conocidos",
+    "bring": "Un CSV pequeño o una base de prueba",
+    "decision": "¿Quieres un dashboard listo o una librería para tu aplicación?",
+    "recipe_ids": [
+     "analitica-con-ia"
     ]
    },
    {
@@ -28082,11 +28379,17 @@
      "herramientas",
      "servidor mcp",
      "conectar agente"
+    ],
+    "outcome": "Una herramienta conectada al cliente correcto",
+    "bring": "Un dato o acción de prueba y un agente compatible",
+    "decision": "¿Ya existe un servidor o necesitas escribir uno?",
+    "recipe_ids": [
+     "construir-una-appservidor-mcp"
     ]
    },
    {
     "id": "skills",
-    "title": "Mejorar Claude Code o Codex",
+    "title": "Mejorar Claude Code, Codex o Antigravity",
     "description": "Añadir instrucciones concretas al agente y conservar un conjunto pequeño.",
     "starters": [
      "superpowers",
@@ -28113,6 +28416,12 @@
      "mejorar agente",
      "claude code",
      "codex"
+    ],
+    "outcome": "Una mejora concreta en el flujo de tu agente",
+    "bring": "Tu cliente y una tarea repetitiva que quieras mejorar",
+    "decision": "¿Necesitas instrucciones, una herramienta MCP o cambiar el agente?",
+    "recipe_ids": [
+     "agente-de-codigo-potenciado"
     ]
    },
    {
@@ -28158,7 +28467,11 @@
      "principiante",
      "ejemplos",
      "desde cero"
-    ]
+    ],
+    "outcome": "Un ejemplo pequeño que entiendas y puedas modificar",
+    "bring": "Tu nivel actual y un objetivo de aprendizaje",
+    "decision": "¿Quieres fundamentos, ejemplos de aplicaciones o práctica guiada?",
+    "recipe_ids": []
    },
    {
     "id": "finanzas",
@@ -28186,7 +28499,11 @@
      "cripto",
      "mercados",
      "inversion"
-    ]
+    ],
+    "outcome": "Un análisis o backtest con datos y supuestos visibles",
+    "bring": "Datos de ejemplo y separación entre simulación y cuentas reales",
+    "decision": "¿Buscas información, probar una estrategia o conectar un exchange?",
+    "recipe_ids": []
    },
    {
     "id": "notas",
@@ -28212,6 +28529,12 @@
      "obsidian",
      "boveda",
      "conocimiento personal"
+    ],
+    "outcome": "Información guardada que puedas volver a encontrar",
+    "bring": "Unas notas de prueba y tus necesidades de sincronización",
+    "decision": "¿Buscas un editor, extensiones o preguntas con IA?",
+    "recipe_ids": [
+     "workspace-privado-local-soberano"
     ]
    },
    {
@@ -28242,7 +28565,11 @@
      "selfhost",
      "domotica",
      "nube personal"
-    ]
+    ],
+    "outcome": "Un servicio accesible con una prueba de respaldo",
+    "bring": "Un equipo o servidor, acceso y datos de prueba",
+    "decision": "¿Vas a alojar una aplicación o administrar varios servicios?",
+    "recipe_ids": []
    },
    {
     "id": "seguridad",
@@ -28269,7 +28596,11 @@
      "pentest",
      "depurar",
      "binario"
-    ]
+    ],
+    "outcome": "Un hallazgo que puedas explicar y reproducir",
+    "bring": "Código o una muestra de laboratorio que tengas autorización para analizar",
+    "decision": "¿Inspeccionarás código, un binario o el comportamiento de una aplicación?",
+    "recipe_ids": []
    },
    {
     "id": "3d",
@@ -28298,7 +28629,11 @@
      "escena",
      "modelado",
      "motion capture"
-    ]
+    ],
+    "outcome": "Una escena de prueba visible o renderizada",
+    "bring": "Una escena mínima y recursos con licencia compatible",
+    "decision": "¿Necesitas un editor visual, una librería o controlar un editor con un agente?",
+    "recipe_ids": []
    }
   ],
   "principles": [
@@ -35412,6 +35747,104 @@
    "date": "2026-11-15",
    "report": "reports/review-679-2026-11-14.json",
    "scope": "Documentación individual; ejemplos propuestos; sin pruebas de instalación de terceros."
-  }
+  },
+  "goal_groups": [
+   {
+    "id": "crear",
+    "title": "Crear contenido y explicar ideas",
+    "goals": [
+     "video",
+     "voz",
+     "narrar",
+     "imagenes",
+     "presentaciones",
+     "diagramas",
+     "3d"
+    ]
+   },
+   {
+    "id": "desarrollar",
+    "title": "Desarrollar y preparar tu asistente",
+    "goals": [
+     "programar",
+     "web",
+     "mcp",
+     "skills",
+     "aprender"
+    ]
+   },
+   {
+    "id": "negocio",
+    "title": "Automatizar y entender tu negocio",
+    "goals": [
+     "automatizar",
+     "whatsapp",
+     "datos",
+     "finanzas"
+    ]
+   },
+   {
+    "id": "conocimiento",
+    "title": "Investigar y organizar información",
+    "goals": [
+     "documentos",
+     "investigar",
+     "notas"
+    ]
+   },
+   {
+    "id": "entorno",
+    "title": "Trabajar en tu entorno y revisar seguridad",
+    "goals": [
+     "local",
+     "servicios",
+     "seguridad"
+    ]
+   }
+  ],
+  "compare_presets": [
+   {
+    "title": "Automatización de flujos",
+    "repos": [
+     "n8n",
+     "activepieces"
+    ]
+   },
+   {
+    "title": "Agentes de código",
+    "repos": [
+     "claude-code",
+     "codex"
+    ]
+   },
+   {
+    "title": "Video con código",
+    "repos": [
+     "remotion",
+     "hyperframes"
+    ]
+   },
+   {
+    "title": "Transcripción de audio",
+    "repos": [
+     "whisper-cpp",
+     "faster-whisper"
+    ]
+   },
+   {
+    "title": "Dashboards y análisis",
+    "repos": [
+     "metabase",
+     "superset"
+    ]
+   },
+   {
+    "title": "Diagramas: dibujo y texto",
+    "repos": [
+     "excalidraw",
+     "mermaid"
+    ]
+   }
+  ]
  }
 }

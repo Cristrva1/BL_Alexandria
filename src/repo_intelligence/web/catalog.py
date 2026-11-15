@@ -207,6 +207,7 @@ def build_catalog(project_root: Path) -> dict:
             "how": detail.get("how") or "",
             "why": detail.get("why") or "",
             "cases": detail.get("cases") or [],
+            "gh": source.get("gh") or "",
             "limits": detail.get("limits") or "",
             "getting_started": detail.get("getting_started") or {},
             "first_try": detail.get("first_try") or {},
@@ -338,6 +339,8 @@ def build_catalog(project_root: Path) -> dict:
                 "lesson": notes.get("lesson") or source.get("how") or source.get("goal") or "",
                 "pick_one": resolved_groups,
                 "steps": steps,
+                "plan": source.get("plan") or {},
+                "when_not": source.get("when_not") or "",
             }
         )
 

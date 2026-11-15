@@ -4,16 +4,25 @@
 
 > **Objetivo:** Sacar el máximo a Claude Code, Codex u opencode con método, contexto actualizado y memoria.
 
-## 🗺️ Cómo fluye
+## Empieza con una versión pequeña
+
+Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.
+
+**Piezas iniciales:** [Claude Code](../fichas/claude-code.md), [superpowers](../fichas/superpowers.md)
+
+**Prepara:** Un repo de prueba y una tarea pequeña
+
+**Primera prueba propuesta:** Añade una metodología al agente y pide un cambio con su comprobación
+
+**Qué comprobar:** Puedes revisar el diff y el resultado de la comprobación
+
+La ruta mínima usa Claude Code; compara la compatibilidad de cada complemento antes de adaptarla a Codex o Antigravity
+
+## Orden propuesto para preparar las piezas
 
 ```mermaid
 flowchart LR
-  Desarrollador["Desarrollador"] -->|tarea| claude_code["Claude Code"]
-  superpowers["superpowers"] -->|método| claude_code["Claude Code"]
-  context7["Context7"] -->|docs al día| claude_code["Claude Code"]
-  serena["Serena"] -->|símbolos y referencias| claude_code["Claude Code"]
-  claude_mem["claude-mem"] -->|memoria| claude_code["Claude Code"]
-  skillspector["SkillSpector"] -->|auditoría| superpowers["superpowers"]
+  claude_code["Claude Code"] --> superpowers["superpowers"]
 ```
 
 ## 🧩 Piezas

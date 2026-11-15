@@ -135,25 +135,29 @@
     return `#/explorar${search ? `?${search}` : ""}`;
   }
 
+  const sessionData = {};
   function storageGet(key, fallback) {
     try {
       const value = localStorage.getItem(key);
-      return value ? JSON.parse(value) : fallback;
+      return value ? JSON.parse(value) : sessionData[key] ?? fallback;
     } catch (_error) {
-      return fallback;
+      return sessionData[key] ?? fallback;
     }
   }
 
   function storageSet(key, value) {
+    sessionData[key] = value;
     try { localStorage.setItem(key, JSON.stringify(value)); } catch (_error) { /* Session remains usable without persistent storage. */ }
   }
 
   function compareList() {
-    return storageGet("alexandria-compare", []).filter((id) => repo(id));
+    const route=parseHash();
+    return AlexandriaDecisions.ids(route.parts[0]==="comparar" && route.params.has("ids") ? route.params.get("ids") : storageGet("alexandria-compare", []),byId);
   }
 
   function recipeDone(id) {
-    return new Set(storageGet(`alexandria-recipe:${id}`, []));
+    const saved=storageGet(`alexandria-recipe:${id}`, []);
+    return new Set(Array.isArray(saved)?saved:[]);
   }
 
   function resume() {
@@ -193,12 +197,12 @@
           <div class="nav-items">${items}</div>
           <p class="nav-foot">${catalog.counts.repos} repos · ${areas.length || catalog.counts.categories} áreas${areas.length ? ` · ${catalog.counts.topics} subtemas` : ""}</p>
         </nav>
-        <main id="contenido" class="main" tabindex="-1"><div class="wrap">${main}</div></main>
+        <main id="contenido" class="main" tabindex="-1"><div class="wrap">${main}<p id="app-feedback" class="meta" role="status"></p></div></main>
       </div>`;
   }
 
   function goalLinks(goals) {
-    return `<ul class="goal-list">${goals.map(goal => `<li><a href="#/explorar?goal=${esc(goal.id)}"><strong>${esc(goal.title)}</strong><span>${esc(goal.description)}</span></a></li>`).join("")}</ul>`;
+    return `<ul class="goal-list">${goals.map(goal => `<li><a href="#/rutas?goal=${esc(goal.id)}"><strong>${esc(goal.title)}</strong><span>${esc(goal.description)}</span></a></li>`).join("")}</ul>`;
   }
 
   function renderHome() {
@@ -220,8 +224,54 @@
     <section class="section reading-start"><h2>Una biblioteca que te orienta</h2><p>Abre una ficha para entender qué hace, con qué acceso funciona y cómo empezar. Compara hasta tres alternativas; utiliza una receta cuando necesites varias piezas.</p><p><a href="#/guias">Leer las guías</a> · <a href="#/salas">Explorar categorías</a> · <a href="#/novedades">Ver incorporaciones</a></p></section>`;
   }
 
-  function renderGoals() {
-    return `<h1>¿Qué quieres conseguir?</h1><p class="lede">No hace falta conocer el nombre del repo. Elige una tarea y compara unos pocos puntos de partida.</p>${goalLinks(catalog.discovery.goals)}`;
+  const accessChoices = [["","Sin preferencia de acceso"],["claude","Con Claude Code"],["codex","Con Codex"],["antigravity","Con Antigravity"],["local_model","Con modelos locales"],["no_api","Sin clave propia de API de IA"],["api","Con API de IA"]];
+  function routeOptions(current,empty=true) { return accessChoices.filter(([id])=>empty||id).map(([id,text])=>`<option value="${id}"${id===current?" selected":""}>${esc(text)}</option>`).join(""); }
+  function goalOptions(current,empty="Todos los objetivos") { return `<option value="">${empty}</option>`+catalog.discovery.goals.map(g=>`<option value="${esc(g.id)}"${g.id===current?" selected":""}>${esc(g.title)}</option>`).join(""); }
+  function comparisonHref(ids) { return AlexandriaDecisions.href(ids,byId); }
+  function pickList(items) {
+    return `<ol class="decision-picks">${items.map(item=>`<li><article><h3><a href="#/repo/${esc(item.id)}">${esc(item.name)}</a></h3><p>${esc(item.lead)}</p><p class="meta">${esc(preparation(item))} · ${esc(label("cost",item.access.cost))}</p><p><strong>Primera prueba:</strong> ${esc(item.first_try?.action||"Revisa el ejemplo de la documentación original.")}</p><a href="#/repo/${esc(item.id)}?section=start">Revisar requisitos y primeros pasos</a></article></li>`).join("")}</ol>`;
+  }
+  function renderGoals(params) {
+    const goal=catalog.discovery.goals.find(g=>g.id===params.get("goal"));
+    const route=accessChoices.some(([id])=>id===params.get("route"))?params.get("route"):"";
+    const context=new URLSearchParams();if(route)context.set("route",route);
+    const filters=`<form id="goal-context" class="decision-form"><div><label for="objective-goal">Qué quieres conseguir</label><select id="objective-goal" name="goal">${goalOptions(goal?.id,"Elige un objetivo")}</select></div><div><label for="objective-route">Cómo quieres usarlo</label><select id="objective-route" name="route">${routeOptions(route)}</select></div><button class="btn" type="submit">Ver mi ruta</button></form>`;
+    if(goal){
+      context.set("goal",goal.id);
+      const picks=AlexandriaSearch.guided(catalog.repos,catalog.categories,catalog.discovery.goals,context);
+      const related=catalog.recipes.filter(r=>(goal.recipe_ids||[]).includes(r.id));
+      return `<p class="breadcrumbs"><a href="#/rutas${route?`?route=${esc(route)}`:""}">Todos los objetivos</a></p><h1>${esc(goal.title)}</h1><p class="lede">${esc(goal.description)}</p>${filters}
+        <section class="decision-brief"><h2>Antes de elegir una herramienta</h2><dl><div><dt>Resultado buscado</dt><dd>${esc(goal.outcome||goal.description)}</dd></div><div><dt>Qué preparar</dt><dd>${esc(goal.bring||"Una tarea y datos de prueba")}</dd></div><div><dt>La decisión importante</dt><dd>${esc(goal.decision||"¿Qué parte de tu tarea necesita resolver esta herramienta?")}</dd></div></dl></section>
+        <section class="section"><h2>${picks.length?"Pocos puntos de partida, con funciones distintas":"No hay un punto de partida documentado con este acceso"}</h2><p class="meta">Selección editorial de hasta tres opciones. Revisa sus funciones: no todas son sustitutas ni tienen la misma preparación.</p>${picks.length?pickList(picks):`<p>Cambia la forma de acceso para explorar otras rutas. La ausencia de una coincidencia no demuestra incompatibilidad.</p>`}<div class="decision-actions">${picks.length>1?`<a class="btn" href="${comparisonHref(picks.map(p=>p.id))}">Comparar funciones de estas opciones</a>`:""}<a href="${exploreHref(context)}">Ver todas las herramientas para este objetivo</a></div></section>
+        ${related.length?`<section class="section"><h2>Si necesitas un flujo completo</h2><ul class="related-recipes">${related.map(r=>`<li><a href="#/receta/${esc(r.id)}">${esc(r.title)}</a><p>${esc(r.goal)}</p></li>`).join("")}</ul></section>`:""}`;
+    }
+    const groups=[...(catalog.discovery.goal_groups||[])];
+    const grouped=new Set(groups.flatMap(g=>g.goals)),other=catalog.discovery.goals.filter(g=>!grouped.has(g.id)).map(g=>g.id);
+    if(other.length)groups.push({id:"otros",title:"Otros objetivos",goals:other});
+    return `<h1>Empieza por el resultado</h1><p class="lede">Elige qué quieres conseguir. Te ayudaremos a preparar una primera prueba y a comparar unas pocas herramientas.</p>${filters}<nav class="area-jump" aria-label="Grupos de objetivos">${groups.map(g=>`<a href="#/rutas?group=${esc(g.id)}${route?`&route=${esc(route)}`:""}">${esc(g.title)}</a>`).join("")}${params.get("group")?`<a href="#/rutas${route?`?route=${esc(route)}`:""}">Ver todos</a>`:""}</nav>
+      ${groups.filter(g=>!params.get("group")||g.id===params.get("group")||!groups.some(x=>x.id===params.get("group"))).map(group=>`<section class="section"><h2>${esc(group.title)}</h2><ul class="objective-directory">${group.goals.map(id=>catalog.discovery.goals.find(g=>g.id===id)).filter(Boolean).map(g=>`<li><a href="#/rutas?goal=${esc(g.id)}${route?`&route=${esc(route)}`:""}"><h3>${esc(g.title)}</h3><p>${esc(g.outcome||g.description)}</p><span>Ver opciones y primera prueba</span></a></li>`).join("")}</ul></section>`).join("")}`;
+  }
+
+  const accessAdvice={
+    claude:{title:"Usar Claude Code",use:"Skills e instrucciones dentro del agente, herramientas MCP o una integración que el proyecto documente.",pay:"El acceso del agente y las tarifas de los servicios conectados se revisan por separado.",check:"Distingue las instrucciones para el agente de la cuenta que usará la aplicación en ejecución."},
+    codex:{title:"Usar Codex",use:"Skills compatibles, herramientas MCP y las rutas de integración indicadas en cada ficha.",pay:"Tener acceso a Codex no incluye automáticamente las APIs que utilice un proyecto.",check:"Comprueba el método de autenticación y si la ruta está documentada para tu cliente."},
+    antigravity:{title:"Usar Antigravity",use:"Recursos compatibles con ese cliente, con su propio método de instalación o conexión.",pay:"El acceso al agente no elimina los costes de servicios, medios o proveedores externos.",check:"No copies una configuración de otro cliente sin revisar el recorrido de Antigravity."},
+    local_model:{title:"Ejecutar un modelo en tu equipo",use:"Un motor o una aplicación con una ruta local documentada.",pay:"Equipo, energía y almacenamiento; también puede haber licencias o servicios externos.",check:"Verifica pesos, memoria, embeddings y herramientas: una etapa local no acredita un flujo íntegramente offline."},
+    no_api:{title:"Empezar sin clave propia de API de IA",use:"Software sin modelo, recursos para un agente o una ruta que permite prescindir de esa clave.",pay:"Puede seguir usando una suscripción o un servicio online. Sin clave no significa gratis.",check:"Lee qué cuenta, conexión y servicios exige la ruta básica."},
+    api:{title:"Configurar una API de IA",use:"Una aplicación que admite o necesita un proveedor de modelos configurado por ti.",pay:"Cuotas, créditos o consumo según proveedor y plan; alojamiento y otros servicios van aparte.",check:"Comprueba qué servicio recibe los datos y configura límites de gasto en el proveedor cuando estén disponibles."}
+  };
+  function renderAccess(params) {
+    if(params.has("section"))return renderReading("acceso");
+    const route=Object.hasOwn(accessAdvice,params.get("route"))?params.get("route"):"";
+    const goal=catalog.discovery.goals.find(g=>g.id===params.get("goal"));
+    const query=new URLSearchParams();if(route)query.set("route",route);if(goal)query.set("goal",goal.id);
+    const count=route?filtered(query).length:0,advice=accessAdvice[route];
+    const picks=route&&goal?AlexandriaSearch.guided(catalog.repos,catalog.categories,catalog.discovery.goals,query):[];
+    return `<h1>Elige tu acceso. Entiende el coste.</h1><p class="lede">Una suscripción, una API y un modelo local son formas distintas de usar IA. Empieza por tu caso y comprueba qué puede cobrar cada pieza.</p>
+      <form id="access-plan" class="decision-form"><div><label for="access-route">Con qué quieres trabajar</label><select id="access-route" name="route" required><option value="">Elige una forma de acceso</option>${routeOptions(route,false)}</select></div><div><label for="access-goal">Para qué lo necesitas</label><select id="access-goal" name="goal">${goalOptions(goal?.id,"Cualquier objetivo")}</select></div><button class="btn" type="submit">Entender mi ruta</button></form>
+      ${advice?`<section class="decision-brief" id="access-result" tabindex="-1"><h2>${esc(advice.title)}</h2><dl><div><dt>Cómo se usa</dt><dd>${esc(advice.use)}</dd></div><div><dt>Qué puede cobrar</dt><dd>${esc(advice.pay)}</dd></div><div><dt>Antes de empezar</dt><dd>${esc(advice.check)}</dd></div></dl><p><a class="btn" href="${exploreHref(query)}">${count?`Explorar ${count} herramientas con esta ruta`:"Revisar esta combinación en el catálogo"}</a></p>${goal?`<p>${picks.length?"Puntos de partida para tu objetivo:":"No hay una recomendación inicial documentada con esta combinación. Puedes cambiar el acceso sin perder tu objetivo."}</p>${picks.length?pickList(picks):""}`:""}</section>`:`<section class="section"><h2>¿Qué tienes ahora?</h2><ul class="access-directory">${Object.entries(accessAdvice).map(([id,item])=>`<li><h3><a href="#/acceso?route=${id}">${esc(item.title)}</a></h3><p>${esc(item.use)}</p></li>`).join("")}</ul></section>`}
+      <section class="section"><h2>Un presupuesto tiene varias partes</h2><p>Revisa estas capas antes de instalar. No se suman como una tarifa fija: dependen de la ruta, el volumen y la licencia.</p><dl class="cost-layers"><div><dt>Acceso al agente</dt><dd>La cuenta con la que trabajas en Claude Code, Codex o Antigravity y sus límites.</dd></div><div><dt>Modelo que usa la aplicación</dt><dd>API, créditos o modelo local. Puede ser diferente del que te ayuda a construirla.</dd></div><div><dt>Servicios y contenido</dt><dd>Hosting, búsqueda, telefonía, correo, datos, generación de medios y licencias.</dd></div><div><dt>Equipo y operación</dt><dd>RAM, GPU, espacio, energía, copias de seguridad y mantenimiento.</dd></div></dl></section>
+      <section class="section"><h2>Lee las etiquetas con cuidado</h2><ul class="reading-notes"><li><strong>Integración documentada:</strong> la fuente describe una ruta; no significa que Alexandría la haya ejecutado.</li><li><strong>Referencia:</strong> material para aprender, sin una conexión confirmada al cliente.</li><li><strong>Por confirmar:</strong> falta evidencia. No equivale a gratuito, compatible o imposible.</li></ul><p><a href="#/guia/acceso">Leer la guía completa, fuentes y fecha</a> · <a href="#/explorar?route=review">Ver requisitos que siguen por confirmar</a></p></section>`;
   }
 
   function preparation(item) {
@@ -495,27 +545,29 @@
   }
 
   function recipeCard(recipe) {
-    const layers = recipe.pick_one.length ? `${recipe.pick_one.length} ${recipe.pick_one.length === 1 ? "capa con alternativa" : "capas con alternativa"}` : "piezas que se suman";
-    return `<a class="recipe-link" href="#/receta/${esc(recipe.id)}">
-      <span class="meta">${recipe.steps.length} piezas · ${layers}</span>
-      <h3>${esc(recipe.title)}</h3>
-      <p>${esc(recipe.goal)}</p>
-    </a>`;
+    const parts=AlexandriaDecisions.recipeParts(recipe);
+    return `<article class="recipe-overview"><div><h2><a href="#/receta/${esc(recipe.id)}">${esc(recipe.title)}</a></h2><p>${esc(recipe.goal)}</p><p class="meta">${parts.minimum.length?`Propuesta inicial: ${parts.minimum.length} ${parts.minimum.length===1?"pieza":"piezas"}`:"Recorrido por revisar"} · ${recipe.steps.length} recursos en el recorrido completo</p></div><div><p><strong>Prepara:</strong> ${esc(recipe.plan?.inputs||"Una tarea acotada y datos de prueba")}</p><a href="#/receta/${esc(recipe.id)}">Ver cómo empezar y qué comprobar</a></div></article>`;
   }
 
-  function renderRecipes() {
-    return `
-      <h1>Un producto, pocas piezas</h1>
-      <p class="lede">Cada receta es un recorrido. El orden es el orden del flujo. Si un paso dice que comparte capa con otro, eliges uno.</p>
-      <div class="section cards">${catalog.recipes.map(recipeCard).join("")}</div>`;
+  function renderRecipes(params) {
+    const goal=catalog.discovery.goals.find(g=>g.id===params.get("goal"));
+    const recipes=goal?catalog.recipes.filter(r=>(goal.recipe_ids||[]).includes(r.id)):catalog.recipes;
+    return `<h1>Combina herramientas con un propósito</h1><p class="lede">Una receta explica qué hace cada pieza y con cuáles empezar. Primero una prueba pequeña; después, las ampliaciones que necesites.</p>
+      <form id="recipe-filter" class="decision-form"><div><label for="recipe-goal">Filtrar por lo que quieres conseguir</label><select id="recipe-goal" name="goal">${goalOptions(goal?.id)}</select></div><button class="btn" type="submit">Ver recetas</button></form>
+      <p class="meta">${recipes.length} ${recipes.length===1?"receta":"recetas"} para explorar. Son propuestas de combinación basadas en las fichas, sin una prueba de integración del conjunto.</p>
+      ${recipes.length?`<div class="recipe-directory">${recipes.map(recipeCard).join("")}</div>`:`<p class="empty">Todavía no hay una receta para este objetivo. <a href="#/rutas?goal=${esc(goal.id)}">Explora sus herramientas y primera prueba</a> o <a href="#/recetas">vuelve a todas las recetas</a>.</p>`}`;
   }
 
-  function renderRecipe(id) {
+  function renderRecipe(id,params) {
     const recipe = catalog.recipes.find((item) => item.id === id);
     if (!recipe) return missing("Esa receta no está.", "#/recetas");
     const done = recipeDone(recipe.id);
-    const realSteps = recipe.steps.filter((step) => step.id);
-    const items = recipe.steps.map((step, index) => {
+    const parts=AlexandriaDecisions.recipeParts(recipe),plan=recipe.plan||{};
+    const showAll=params.get("view")==="all"||!parts.minimum.length;
+    const visibleIds=showAll?recipe.steps.filter(s=>s.id).map(s=>s.id):parts.minimum;
+    const realSteps=visibleIds.map(rid=>recipe.steps.find(s=>s.id===rid));
+    const doneCount=visibleIds.filter(rid=>done.has(rid)).length;
+    const items = realSteps.map((step, index) => {
       if (!step.id) {
         return `<li><span class="step-no">${index + 1}</span><article><h3>${esc(step.label)}</h3><p>${esc(step.why)}</p></article></li>`;
       }
@@ -530,20 +582,29 @@
               <h3><a href="#/repo/${encodeURIComponent(step.id)}">${esc(item ? item.name : step.label)}</a></h3>
               <p>${esc(step.why)}</p>
               ${note}
+              <p class="meta">${parts.instead.includes(step.id)?"Otra ruta; no la sumes automáticamente al inicio.":parts.minimum.includes(step.id)?"Pieza de la propuesta inicial.":"Ampliación opcional del recorrido."}</p>
+              <dl class="piece-facts"><div><dt>Preparación</dt><dd>${esc(preparation(item))}</dd></div><div><dt>API de IA</dt><dd>${esc(label("api",item.access.api))}</dd></div><div><dt>Coste</dt><dd>${esc(item.access.cost_note)}</dd></div></dl>
+              <a href="#/repo/${esc(step.id)}?section=start">Abrir sus requisitos y arranque</a>
             </div>
-            <label class="check"><input type="checkbox" data-action="step" data-recipe="${esc(recipe.id)}" data-id="${esc(step.id)}"${done.has(step.id) ? " checked" : ""}> Ya lo entendí</label>
+            <label class="check"><input type="checkbox" data-action="step" data-recipe="${esc(recipe.id)}" data-id="${esc(step.id)}"${done.has(step.id) ? " checked" : ""}> Ya revisé esta pieza<span class="sr-only">: ${esc(item.name)}</span></label>
           </div>
         </article>
       </li>`;
     }).join("");
     return `
-      <h1>${esc(recipe.title)}</h1>
+      <p class="breadcrumbs"><a href="#/recetas">Todas las recetas</a></p><h1>${esc(recipe.title)}</h1>
       <p class="lede">${esc(recipe.goal)}</p>
       ${recipe.lesson ? `<p>${esc(recipe.lesson)}</p>` : ""}
-      ${recipe.how ? `<p class="meta">${rich(recipe.how)}</p>` : ""}
-      <p class="live" id="recipe-progress">${done.size} de ${realSteps.length} piezas marcadas. Es un recordatorio local, no un requisito.</p>
+      <p class="meta">Ruta propuesta por Alexandría; integración del conjunto no ejecutada. Una lista de piezas no sustituye sus dependencias, modelos ni cuentas.</p>
+      ${plan.inputs?`<section class="decision-brief"><h2>Tu primera versión</h2><dl><div><dt>Qué preparar</dt><dd>${esc(plan.inputs)}</dd></div><div><dt>Primera prueba propuesta</dt><dd>${esc(plan.first_try.action)}</dd></div><div><dt>Qué comprobar</dt><dd>${esc(plan.first_try.success)}</dd></div></dl><p>${esc(plan.note)}</p></section>`:""}
+      <section class="section"><h2>${showAll?"Todas las piezas y sus rutas":"Empieza con estas piezas"}</h2><p>${showAll?"Este inventario incluye ampliaciones y alternativas. No necesitas instalar todas para empezar.":"Propuesta inicial para acotar la prueba. Abre cada ficha y revisa su configuración antes de conectar las piezas."}</p><div class="decision-actions"><a class="${showAll?"":"selected-link"}" href="#/receta/${esc(id)}">Propuesta inicial</a><a class="${showAll?"selected-link":""}" href="#/receta/${esc(id)}?view=all">Recorrido completo (${recipe.steps.length} recursos)</a></div>
+      <p class="live meta" id="recipe-progress" role="status" data-step-ids="${esc(JSON.stringify(visibleIds))}">${doneCount} de ${realSteps.length} piezas visibles revisadas. Recordatorio guardado en este navegador; no acredita instalación.</p>
       <ol class="timeline">${items}</ol>
-      <p><a href="#/recetas">Volver a las recetas</a></p>`;
+      </section>
+      ${parts.extra.length&&!showAll?`<section class="section"><h2>Añade solo lo que te falte</h2><ul class="recipe-additions">${parts.extra.map(rid=>`<li><a href="#/repo/${esc(rid)}">${esc(repo(rid).name)}</a><p>${esc(recipe.steps.find(s=>s.id===rid).why)}</p></li>`).join("")}</ul></section>`:""}
+      ${parts.instead.length?`<section class="section"><h2>Otras rutas que puedes elegir</h2><p>Revisan otra forma de resolver una capa o el flujo. No son instalaciones adicionales obligatorias.</p><ul>${parts.instead.map(rid=>`<li><a href="#/repo/${esc(rid)}">${esc(repo(rid).name)}</a> — ${esc(repo(rid).lead)}</li>`).join("")}</ul></section>`:""}
+      <section class="section"><h2>Antes de ampliar el flujo</h2><p>Comprueba por pieza el proveedor del modelo, la licencia, el alojamiento y los servicios conectados. No hay un precio único ni una suscripción que incluya automáticamente todo el recorrido.</p><p><a href="#/acceso">Preparar el acceso y revisar los costes</a></p>${recipe.when_not?`<h3>Cuándo simplificar o elegir otra ruta</h3><p>${esc(recipe.when_not)}</p>`:""}</section>
+      ${recipe.how?`<details class="reading-details"><summary>Entender cómo se conectan las piezas</summary>${paragraphs(recipe.how)}</details>`:""}<p><a href="#/recetas">Volver a las recetas</a></p>`;
   }
 
   function renderLab(params) {
@@ -593,44 +654,37 @@
     </section>`;
   }
 
-  function renderCompare() {
-    const ids = compareList();
-    const picker = `<form class="toolbar" id="compare-add">
-      <label for="compare-repo">Añadir una herramienta a la comparación</label>
-      <select id="compare-repo" name="repo_id">
-        <option value="">Añadir un repo…</option>
-        ${catalog.repos.map((item) => `<option value="${esc(item.id)}">${esc(item.name)}</option>`).join("")}
-      </select>
-      <button class="btn small" type="submit">Añadir</button>
-    </form>`;
-    if (!ids.length) {
-      return `<h1>Pon hasta tres fichas juntas</h1>
-        <p class="lede">Sirve para desempatar, no para sumar. Si dos repos son alternativas, quédate con uno.</p>
-        ${picker}<p class="empty">Todavía no hay repos en la mesa. Ábrelos desde una ficha o elige uno aquí.</p>`;
-    }
-    const rows = [
-      ["Oficio", (item) => esc(item.lead)],
-      ["Papel", (item) => esc(label("role", item.role))],
-      ["Ejecución", (item) => esc(label("exec", item.exec))],
-      ["Arranque", (item) => esc(label("setup", item.setup))],
-      ["API de IA", item => esc(label("api", item.access.api))],
-      ["Claude Code", item => esc(label("client", item.access.claude_code))],
-      ["Codex", item => esc(label("client", item.access.codex))],
-      ["Antigravity", item => esc(label("client", item.access.antigravity))],
-      ["Modelo local", item => esc(label("local_model", item.access.local_model))],
-      ["Coste", item => esc(item.access.cost_note)],
-      ["Equipo", item => esc(item.access.hardware_note)],
-      ["Elige si", (item) => item.choose_if ? rich(item.choose_if) : "—"],
-      ["Evítalo si", (item) => item.avoid_if ? rich(item.avoid_if) : "—"],
-      ["Stack", (item) => esc(item.stack || "—")],
+  function comparePicker(params,ids) {
+    const query=params.get("q")||"",goal=catalog.discovery.goals.some(g=>g.id===params.get("goal"))?params.get("goal"):"";
+    const suggested=[...new Set(ids.flatMap(id=>repo(id).alt_refs.map(ref=>ref.id)).filter(Boolean))];
+    const starters=catalog.discovery.goals.find(g=>g.id===goal)?.starters||[];
+    const found=AlexandriaDecisions.candidates(catalog.repos,query,ids,goal,[...suggested,...starters]);
+    return `<search><form id="compare-search" class="decision-form"><div><label for="compare-query">Buscar por nombre o tecnología</label><input id="compare-query" name="q" type="search" value="${esc(query)}" placeholder="Por ejemplo: n8n, whisper o react" aria-describedby="compare-search-help"></div><div><label for="compare-goal">Acotar por objetivo</label><select id="compare-goal" name="goal">${goalOptions(goal)}</select></div><button class="btn" type="submit">Buscar herramientas</button></form></search><p id="compare-search-help" class="meta">Selecciona hasta tres. Cada resultado muestra su identidad para distinguir repos con el mismo nombre.</p>
+      <section aria-labelledby="compare-candidates-title"><h2 id="compare-candidates-title" class="compact-title">${query||goal?"Resultados para añadir":suggested.length?"Alternativas documentadas para seguir comparando":"Busca una herramienta o empieza con una comparación"}</h2><div id="compare-candidates" aria-live="polite">${found.length?`<p class="meta">${found.length} ${found.length===1?"coincidencia":"coincidencias"}${found.length>6?"; se muestran seis. Afina la búsqueda para ver otras.":"."}</p><ul class="compare-candidates">${found.slice(0,6).map(item=>`<li><div><strong>${esc(item.name)}</strong><span class="meta">${esc(item.gh||item.id)}</span><p>${esc(item.lead)}</p></div><button class="btn small ghost" type="button" data-action="compare" data-id="${esc(item.id)}" aria-label="Añadir ${esc(item.name)} (${esc(item.gh||item.id)}) a comparar"${ids.length===3?" disabled":""}>Añadir</button></li>`).join("")}</ul>`:query||goal?`<p>No hay coincidencias para esta búsqueda. Prueba un nombre más corto o cambia el objetivo.</p>`:""}</div></section>`;
+  }
+  function comparisonTable(group,items,differences) {
+    const rows=group.rows.filter(row=>!differences||AlexandriaDecisions.different(row,items));
+    const table=rows.length?`<div class="comparison-table-wrap" role="region" tabindex="0" aria-labelledby="comparison-${group.id}-caption"><table class="compare decision-table"><caption id="comparison-${group.id}-caption">${esc(group.title)} · ${items.length} ${items.length===1?"herramienta":"herramientas"}</caption><thead><tr><th scope="col">Criterio</th>${items.map(item=>`<th scope="col"><a href="#/repo/${esc(item.id)}">${esc(item.name)}</a></th>`).join("")}</tr></thead><tbody>${rows.map(row=>`<tr><th scope="row">${esc(row.title)}</th>${items.map(item=>`<td data-label="${esc(item.name)}">${row.render?row.render(item):esc(row.value(item)||"No documentado")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`:`<p class="meta">No hay diferencias en los criterios de esta sección. Desactiva el filtro para verlos.</p>`;
+    return group.id==="functions"?`<section class="section comparison-section"><h2>${esc(group.title)}</h2>${table}</section>`:`<details id="compare-details-${group.id}" class="comparison-section comparison-details"><summary>${esc(group.title)} · ${rows.length} criterios${differences?" con diferencias":""}</summary>${table}</details>`;
+  }
+  function renderCompare(params) {
+    const ids=compareList(),items=ids.map(repo),differences=params.get("diff")==="1"&&items.length>1;
+    const row=(title,value,render)=>({title,value,render});
+    const groups=[
+      {id:"functions",title:"Funciones y diferencias técnicas",rows:[
+        row("Qué hace",i=>i.lead),row("Usos concretos",i=>i.practical_examples.map(e=>e.scenario).join("; ")),
+        row("Tipo de pieza",i=>label("role",i.role)),row("Dónde se ejecuta el software",i=>label("exec",i.exec)),
+        row("Herramientas y dependencias",i=>i.stack),row("MCP",i=>i.mcp?"MCP indicado en la ficha":"No indicado en la ficha"),
+        row("Qué conviene saber",i=>i.how||i.limits)]},
+      {id:"start",title:"Preparación y primera prueba",rows:[row("Preparación",i=>preparation(i)),row("Equipo y requisitos",i=>i.access.hardware_note),row("Primera prueba propuesta",i=>i.first_try?.action),row("Qué comprobar",i=>i.first_try?.success)]},
+      {id:"access",title:"Acceso y costes",rows:[row("API de IA",i=>label("api",i.access.api)),row("Claude Code",i=>label("client",i.access.claude_code)),row("Codex",i=>label("client",i.access.codex)),row("Antigravity",i=>label("client",i.access.antigravity)),row("Modelo local",i=>label("local_model",i.access.local_model)),row("Tipo de coste",i=>label("cost",i.access.cost)),row("Qué puede cobrar",i=>i.access.cost_note)]},
+      {id:"sources",title:"Fuentes y alcance de revisión",rows:[row("Revisión de la ficha",i=>i.access.checked_at),row("Estado del proyecto",i=>i.status==="archived"?"Archivado":i.status==="unverified"?"Identidad por verificar":"Sin alerta de archivo; no acredita mantenimiento reciente"),row("Documentación",i=>i.access.sources.join("; "),i=>`<ul class="comparison-sources">${i.access.sources.slice(0,3).map((url,n)=>`<li><a href="${esc(safeUrl(url))}" target="_blank" rel="noreferrer">Fuente ${n+1}<span class="sr-only"> de ${esc(i.name)}</span></a></li>`).join("")}</ul>`)]}
     ];
-    const head = ids.map((id) => `<th scope="col"><a href="#/repo/${encodeURIComponent(id)}">${esc(repo(id).name)}</a><br><button class="btn small ghost" type="button" data-action="compare" data-id="${esc(id)}">Quitar</button></th>`).join("");
-    const body = rows.map(([name, cell]) => `<tr><th scope="row">${name}</th>${ids.map((id) => `<td>${cell(repo(id))}</td>`).join("")}</tr>`).join("");
-    return `
-      <h1>Míralos en la misma mesa</h1>
-      <p class="lede">Si comparten oficio, no los instales juntos. Lee «Evítalo si» antes de quedarte con los dos.</p>
-      ${picker}
-      <p class="mobile-hint meta">Si no ves todas las columnas, desliza la tabla hacia los lados.</p><div class="table-wrap" role="region" aria-label="Tabla de comparación desplazable" tabindex="0"><table class="compare"><caption>Comparación de función, acceso y requisitos</caption><thead><tr><th scope="col">Criterio</th>${head}</tr></thead><tbody>${body}</tbody></table></div>`;
+    const pairs=items.flatMap((a,index)=>items.slice(index+1).map(b=>({a,b,kind:AlexandriaDecisions.relationship(a,b)})));
+    const presets=catalog.discovery.compare_presets||[];
+    const selected=`<section class="section" aria-labelledby="selected-title"><div class="command-row"><h2 id="selected-title">Tu selección (${ids.length}/3)</h2>${ids.length?`<button class="btn small ghost" type="button" data-action="compare-clear">Vaciar comparación</button>`:""}</div>${items.length?`<ul class="compare-selection">${items.map(i=>`<li><div><a href="#/repo/${esc(i.id)}"><strong>${esc(i.name)}</strong></a><span class="meta">${esc(i.gh||i.id)}</span></div><button class="btn small ghost" type="button" data-action="compare" data-id="${esc(i.id)}" aria-label="Quitar ${esc(i.name)} de la comparación">Quitar</button></li>`).join("")}</ul>`:`<p>Busca por nombre, acota por objetivo o abre uno de los ejemplos de abajo. Las fichas también tienen un botón para añadirlas aquí.</p>`}${ids.length===3?`<p class="meta">Ya hay tres herramientas. Quita una antes de añadir otra; ninguna se reemplaza automáticamente.</p>`:""}</section>`;
+    return `<h1>Compara funciones antes de elegir</h1><p class="lede">Pon hasta tres herramientas frente a frente. Primero sus funciones y diferencias técnicas; después, preparación, acceso y costes.</p>${selected}${items.length>1?`<details class="reading-details compare-edit" id="compare-editor"><summary>Buscar otra herramienta para la comparación</summary>${comparePicker(params,ids)}</details>`:comparePicker(params,ids)}
+      ${items.length?`<section class="section"><div class="comparison-controls"><label class="check"><input id="compare-differences" type="checkbox"${differences?" checked":""}${items.length<2?" disabled":""}> Mostrar solo diferencias</label><button class="btn small ghost" type="button" data-action="copy" data-copy-kind="link" data-text="${esc('https://cristrva1.github.io/BL_Alexandria/'+comparisonHref(ids))}">Copiar enlace público</button><span class="copy-status meta" role="status"></span></div>${items.length<2?`<p class="meta">Añade una segunda herramienta para contrastar sus funciones.</p>`:`<h2 class="compact-title">Cómo se relacionan estas piezas</h2><ul class="comparison-relations">${pairs.map(({a,b,kind})=>`<li><strong>${esc(a.name)} y ${esc(b.name)}:</strong> ${kind==="alternative"?"figuran como alternativas en las fichas. Contrasta sus funciones para elegir.":kind==="complement"?"figuran como complementarias. Pueden cubrir etapas distintas; no necesitas descartar una por compararlas.":"su relación no está documentada como alternativa ni complemento. Revisa qué tarea resuelve cada una."}</li>`).join("")}</ul>`}</section>${groups.map(g=>comparisonTable(g,items,differences)).join("")}<p class="meta">Revisión documental; no son pruebas de rendimiento ni una evaluación de cuál es mejor. No documentado no significa incompatible.</p>`:presets.length?`<section class="section"><h2>Empieza con una comparación concreta</h2><ul class="comparison-presets">${presets.map(p=>`<li><a href="${comparisonHref(p.repos)}"><strong>${esc(p.title)}</strong><span>${p.repos.map(id=>esc(repo(id)?.name||id)).join(" · ")}</span></a></li>`).join("")}</ul></section>`:""}`;
   }
 
   function missing(text, href) {
@@ -667,20 +721,20 @@
     const [head, second] = route.parts;
     if (!head || head === "inicio") return renderHome();
     if (head === "curso") return second ? renderLesson(second) : renderCourse();
-    if (head === "rutas") return renderGoals();
+    if (head === "rutas") return renderGoals(route.params);
     if (head === "empezar") return renderGuided(route.params);
     if (head === "guias") return renderReading();
     if (head === "guia") return renderReading(second);
-    if (head === "acceso") return renderReading("acceso");
+    if (head === "acceso") return renderAccess(route.params);
     if (head === "novedades") return renderNew();
     if (head === "salas" || head === "sala") return renderRooms(route.params);
     if (head === "area") return renderArea(second || "");
     if (head === "explorar") return renderExplore(route.params);
     if (head === "repo") return renderRepo(decodeURIComponent(second || ""));
-    if (head === "recetas") return renderRecipes();
-    if (head === "receta") return renderRecipe(second || "");
+    if (head === "recetas") return renderRecipes(route.params);
+    if (head === "receta") return renderRecipe(second || "",route.params);
     if (head === "laboratorio") return renderLab(route.params);
-    if (head === "comparar") return renderCompare();
+    if (head === "comparar") return renderCompare(route.params);
     return missing("Esa sección no existe.", "#/inicio");
   }
 
@@ -705,9 +759,12 @@
   function draw() {
     clearTimeout(searchTimer);
     const route = parseHash();
+    const openComparisons=route.parts[0]==="comparar"?[...document.querySelectorAll('.comparison-details[open], .compare-edit[open]')].map(node=>node.id):[];
+    if(route.parts[0]==="comparar"&&route.params.has("ids"))storageSet("alexandria-compare",compareList());
     document.getElementById("app").innerHTML = layout(activeOf(route.parts), view(route));
+    openComparisons.forEach(id=>{const node=document.getElementById(id);if(node)node.open=true;});
     document.title = `${titleOf(route.parts,route.params)} — Alexandría`;
-    const path=route.parts.join("/");
+    const path=route.parts.join("/")+(["rutas","acceso"].includes(route.parts[0])?`:${route.params.get("goal")||""}:${route.params.get("route")||""}`:"");
     if(path!==lastPath){
       const heading=document.querySelector("main h1");
       if(heading){heading.tabIndex=-1;if(lastPath!==null)heading.focus({preventScroll:true});}
@@ -725,6 +782,17 @@
 
   let searchTimer;
   document.getElementById("app").addEventListener("input", (event) => {
+    if(event.target.id==="compare-query"&&!event.isComposing){
+      clearTimeout(searchTimer);searchTimer=setTimeout(()=>{
+        const params=parseHash().params,form=document.getElementById("compare-search");
+        for(const key of ["q","goal"]){const value=String(new FormData(form).get(key)||"").trim();if(value)params.set(key,value);else params.delete(key);}
+        params.set("ids",compareList().join(","));
+        history.replaceState(null,"",`#/comparar?${params}`);
+        const template=document.createElement("template");template.innerHTML=comparePicker(params,compareList());
+        document.getElementById("compare-candidates").innerHTML=template.content.querySelector("#compare-candidates").innerHTML;
+        document.getElementById("compare-candidates-title").textContent=template.content.querySelector("#compare-candidates-title").textContent;
+      },220);return;
+    }
     if(event.target.id!=="q" || event.isComposing)return;
     clearTimeout(searchTimer);
     searchTimer=setTimeout(()=>{
@@ -734,6 +802,15 @@
   });
 
   document.getElementById("app").addEventListener("submit", (event) => {
+    const destination={"goal-context":"rutas","access-plan":"acceso","recipe-filter":"recetas","compare-search":"comparar"}[event.target.id];
+    if(destination){
+      event.preventDefault();const params=new URLSearchParams();
+      new FormData(event.target).forEach((value,key)=>{if(String(value).trim())params.set(key,String(value).trim());});
+      if(destination==="comparar"){params.set("ids",compareList().join(","));if(parseHash().params.get("diff")==="1")params.set("diff","1");}
+      history.pushState(null,"",`#/${destination}${params.size?`?${params}`:""}`);draw();
+      const target=document.getElementById(destination==="acceso"?"access-result":destination==="comparar"?"compare-candidates-title":"contenido");
+      if(target){target.tabIndex=-1;target.focus();}return;
+    }
     if(event.target.id === "areas-search") {
       event.preventDefault();const params=new URLSearchParams(new FormData(event.target));
       if(!params.get("q"))params.delete("q");
@@ -745,15 +822,6 @@
       if(!params.get("route"))params.delete("route");
       history.pushState(null,"",`#/empezar?${params.toString()}`);draw();
       const results=document.getElementById("guided-results");if(results){results.focus({preventScroll:true});results.scrollIntoView({block:"start"});}
-    }
-    if (event.target.id === "compare-add") {
-      event.preventDefault();
-      const id = new FormData(event.target).get("repo_id");
-      if (!id) return;
-      const list = compareList().filter((item) => item !== id);
-      list.push(String(id));
-      storageSet("alexandria-compare", list.slice(-3));
-      draw();
     }
     if (event.target.id === "home-search") {
       event.preventDefault();
@@ -784,14 +852,23 @@
       } catch (_error) {
         button.textContent = "Selecciona y copia el texto";
       }
-      const status=button.parentElement.querySelector(".copy-status");if(status)status.textContent=button.textContent==="Copiado"?"Encargo copiado. Ya puedes pegarlo en tu asistente.":"Selecciona el texto del encargo y cópialo manualmente.";
+      const status=button.parentElement.querySelector(".copy-status");if(status)status.textContent=button.textContent==="Copiado"?(button.dataset.copyKind==="link"?"Enlace público copiado con las herramientas seleccionadas.":"Contenido copiado. Ya puedes pegarlo donde lo necesites."):"No se pudo acceder al portapapeles. Selecciona el contenido y cópialo manualmente.";
+    }
+    if(action==="compare-clear"){
+      storageSet("alexandria-compare",[]);const params=parseHash().params;params.set("ids","");params.delete("diff");
+      history.pushState(null,"",`#/comparar?${params}`);draw();document.getElementById("compare-query")?.focus();
     }
     if (action === "compare") {
       const id = button.dataset.id;
+      if(!repo(id))return;
       const list = compareList();
-      const next = list.includes(id) ? list.filter((item) => item !== id) : list.concat(id).slice(-3);
+      if(!list.includes(id)&&list.length===3){document.getElementById("app-feedback").textContent="Ya hay tres herramientas seleccionadas. Quita una desde Comparar antes de añadir otra.";return;}
+      const next = list.includes(id) ? list.filter((item) => item !== id) : list.concat(id);
       storageSet("alexandria-compare", next);
+      const route=parseHash();if(route.parts[0]==="comparar"){route.params.set("ids",next.join(","));history.pushState(null,"",`#/comparar?${route.params}`);}
       draw();
+      const target=parseHash().parts[0]==="comparar"?document.getElementById("selected-title"):[...document.querySelectorAll('[data-action="compare"]')].find(node=>node.dataset.id===id);
+      if(target){target.tabIndex=target.tagName==="BUTTON"?0:-1;target.focus();}
     }
     if (action === "choose-lab") {
       const route = parseHash();
@@ -803,6 +880,10 @@
   });
 
   document.getElementById("app").addEventListener("change", (event) => {
+    if(event.target.id==="compare-differences"){
+      const params=parseHash().params;params.set("ids",compareList().join(","));if(event.target.checked)params.set("diff","1");else params.delete("diff");
+      history.replaceState(null,"",`#/comparar?${params}`);draw();document.getElementById("compare-differences").focus();return;
+    }
     if(event.target.name === "area") {
       const select=document.getElementById("filter-topic"),area=areaById[event.target.value];
       if(select){select.disabled=!area;select.innerHTML=`<option value="">${area?"Todas las subcategorías":"Elige primero un área"}</option>`+(area?.topics||[]).map(topic=>`<option value="${esc(topic.id)}">${esc(topic.title)}</option>`).join("");}
@@ -820,8 +901,8 @@
     const progress = document.getElementById("recipe-progress");
     const recipe = catalog.recipes.find((item) => item.id === recipeId);
     if (progress && recipe) {
-      const total = recipe.steps.filter((step) => step.id).length;
-      progress.textContent = `${done.size} de ${total} piezas marcadas. Es un recordatorio local, no un requisito.`;
+      const visible=JSON.parse(progress.dataset.stepIds||"[]");
+      progress.textContent = `${visible.filter(id=>done.has(id)).length} de ${visible.length} piezas visibles revisadas. Recordatorio guardado en este navegador; no acredita instalación.`;
     }
   });
 

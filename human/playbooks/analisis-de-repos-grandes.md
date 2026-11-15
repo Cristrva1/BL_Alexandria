@@ -4,17 +4,25 @@
 
 > **Objetivo:** Que un agente de código entienda una base de código enorme sin gastar todo su contexto.
 
-## 🗺️ Cómo fluye
+## Empieza con una versión pequeña
+
+Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.
+
+**Piezas iniciales:** [Repomix](../fichas/repomix.md), [Claude Code](../fichas/claude-code.md)
+
+**Prepara:** Un repo propio y una pregunta concreta sobre su código
+
+**Primera prueba propuesta:** Empaqueta solo una parte y pide ubicar una función con referencias
+
+**Qué comprobar:** Puedes abrir los archivos citados y comprobar la explicación
+
+Revisa exclusiones y secretos antes de compartir código; los grafos son otra ampliación y tienen sus propias licencias
+
+## Orden propuesto para preparar las piezas
 
 ```mermaid
 flowchart LR
-  Repositorio["Repositorio"] -->|indexa| codegraph["codegraph"]
-  Repositorio["Repositorio"] -->|grafo| graphify["graphify"]
-  Repositorio["Repositorio"] -->|empaqueta| repomix["Repomix"]
-  codegraph["codegraph"] -->|consultas| claude_code["Claude Code"]
-  graphify["graphify"] -->|contexto| claude_code["Claude Code"]
-  gitnexus["GitNexus"] -->|navegación| claude_code["Claude Code"]
-  Repositorio["Repositorio"] -->|wiki| deepwiki_open["DeepWiki Open"]
+  repomix["Repomix"] --> claude_code["Claude Code"]
 ```
 
 ## 🧩 Piezas

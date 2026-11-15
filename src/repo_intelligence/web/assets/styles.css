@@ -508,3 +508,99 @@ textarea:focus-visible { outline: 3px solid var(--terra-deep); outline-offset: 3
   .access-links { display: grid; grid-template-columns: 1fr 1fr; }
   .access-links a { padding: .65rem; height: 100%; font-size: .9rem; }
 }
+
+/* Decision pages share the library's reading rhythm and native controls. */
+.decision-form { display: flex; flex-wrap: wrap; align-items: end; gap: 1rem; margin-block: 1.75rem; }
+.decision-form > div { flex: 1 1 16rem; min-width: 0; }
+.decision-form label { display: block; font-weight: 600; margin-bottom: .4rem; }
+.decision-form select, .decision-form input { min-height: 44px; }
+.decision-form .btn { min-height: 44px; flex: 0 0 auto; }
+.decision-actions, .comparison-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-block: 1.2rem; }
+.decision-actions a { padding-block: .5rem; }
+.selected-link { font-weight: 700; text-decoration-thickness: 2px; }
+.decision-brief { border-block: 1px solid var(--rule); padding-block: 1.2rem; margin-block: 2rem; }
+.decision-brief h2 { margin-top: 0; }
+.decision-brief dl, .cost-layers { margin-block: 1.25rem; }
+.decision-brief dl > div, .cost-layers > div { display: grid; grid-template-columns: 11rem minmax(0,1fr); gap: 1.5rem; padding-block: .65rem; }
+.decision-brief dt, .cost-layers dt, .piece-facts dt { font-weight: 600; }
+.decision-brief dd, .cost-layers dd, .piece-facts dd { margin: 0; max-width: 70ch; }
+.cost-layers > div { border-bottom: 1px solid var(--rule); padding-block: 1rem; }
+.objective-directory, .access-directory, .related-recipes, .recipe-additions, .compare-selection, .compare-candidates, .comparison-presets { list-style: none; margin: 0; padding: 0; }
+.objective-directory, .access-directory { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); column-gap: 2.5rem; }
+.objective-directory li, .access-directory li { border-bottom: 1px solid var(--rule); min-width: 0; }
+.objective-directory a { display: block; text-decoration: none; color: inherit; padding-block: 1.2rem; }
+.objective-directory h3, .access-directory h3 { margin-block: 0 .4rem; font-size: 1.35rem; color: var(--terra-deep); }
+.objective-directory p { margin-block: .4rem .75rem; max-width: 55ch; color: var(--ink-soft); }
+.objective-directory span { color: var(--terra-deep); text-decoration: underline; font-size: .9rem; }
+.access-directory li { padding-block: 1.2rem; }
+.access-directory p { color: var(--ink-soft); max-width: 60ch; }
+.decision-picks { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 2rem; padding-left: 1.3rem; margin-block: 1.5rem; }
+.decision-picks li { padding-top: .7rem; border-top: 1px solid var(--rule); min-width: 0; }
+.decision-picks h3 { font-size: 1.4rem; margin-block: 0 .5rem; }
+.decision-picks p { margin-block: .6rem; }
+.decision-picks .meta { font-size: .85rem; }
+.related-recipes li, .recipe-additions li { padding-block: .8rem; border-bottom: 1px solid var(--rule); }
+.related-recipes p, .recipe-additions p { margin-block: .35rem 0; color: var(--ink-soft); }
+.reading-notes { max-width: 75ch; padding-left: 1.3rem; }
+.reading-notes li { margin-block: .8rem; }
+.recipe-overview { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,1fr); gap: 2.5rem; border-top: 1px solid var(--rule); padding-block: 1.5rem; }
+.recipe-overview h2 { font-size: 1.55rem; margin-top: 0; }
+.recipe-overview p { max-width: 60ch; margin-block: .65rem; }
+.piece-facts { font-size: .9rem; color: var(--ink-soft); margin-block: 1rem; }
+.piece-facts > div { display: grid; grid-template-columns: 7rem minmax(0,1fr); gap: .75rem; margin-block: .55rem; }
+.reading-details, .comparison-details { border-block-start: 1px solid var(--rule); padding-block: .8rem; margin-block: .8rem; }
+.reading-details summary, .comparison-details summary { cursor: pointer; padding-block: .5rem; font-weight: 600; }
+.reading-details p { max-width: 75ch; }
+.compare-selection { display: flex; flex-wrap: wrap; gap: 1rem 2rem; }
+.compare-selection li { display: flex; flex: 1 1 17rem; justify-content: space-between; align-items: center; gap: .8rem; border-bottom: 1px solid var(--rule); padding-block: .65rem; min-width: 0; }
+.compare-selection li > div { min-width: 0; overflow-wrap: anywhere; }
+.compare-selection .meta { display: block; overflow-wrap: anywhere; font-size: .8rem; }
+.compare-candidates { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 2rem; }
+.compare-candidates li { display: flex; align-items: start; justify-content: space-between; gap: 1rem; padding-block: 1rem; border-bottom: 1px solid var(--rule); min-width: 0; }
+.compare-candidates li > div { min-width: 0; }
+.compare-candidates strong, .decision-picks h3 { overflow-wrap: anywhere; }
+.compare-candidates .meta { display: block; overflow-wrap: anywhere; font-size: .8rem; }
+.compare-candidates p { margin-block: .35rem 0; font-size: .9rem; }
+.compare-candidates .btn { flex-shrink: 0; }
+.compact-title { font-size: 1.4rem; margin-top: 1.5rem; }
+.comparison-controls .check { font-size: 1rem; color: var(--ink); min-height: 44px; }
+.comparison-relations { padding-left: 1.3rem; max-width: 85ch; }
+.comparison-relations li { margin-block: .6rem; }
+.comparison-presets { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 2rem; }
+.comparison-presets a { display: block; padding-block: 1rem; border-bottom: 1px solid var(--rule); }
+.comparison-presets span { display: block; color: var(--ink-soft); font-size: .9rem; margin-top: .3rem; }
+.comparison-section { container-type: inline-size; min-width: 0; }
+.comparison-table-wrap { overflow: auto; max-inline-size: 100%; max-block-size: min(70vh,42rem); border: 1px solid var(--rule); margin-block: 1rem; }
+.decision-table { border-collapse: separate; border-spacing: 0; border-radius: 0; overflow: visible; }
+.decision-table caption { text-align: start; padding: .85rem; color: var(--ink-soft); font-size: .9rem; }
+.decision-table th { font-family: var(--sans); font-weight: 600; }
+.decision-table thead { position: sticky; inset-block-start: 0; z-index: 2; background: var(--paper-2); }
+.decision-table thead th:first-child { position: sticky; inset-inline-start: 0; z-index: 3; background: var(--paper-2); }
+.decision-table tbody th { position: sticky; inset-inline-start: 0; z-index: 1; background: var(--paper-2); min-inline-size: 10rem; inline-size: 10rem; }
+.decision-table td { min-inline-size: 15rem; max-inline-size: 32rem; overflow-wrap: anywhere; }
+.comparison-sources { margin: 0; padding-left: 1.2rem; }
+.btn:disabled { opacity: .65; cursor: not-allowed; }
+input[type="checkbox"] { accent-color: var(--green); }
+input[type="checkbox"]:focus-visible, .comparison-table-wrap:focus-visible, summary:focus-visible { outline: 2px solid var(--terra-deep); outline-offset: 3px; }
+@container (width < 640px) {
+  .comparison-table-wrap { overflow: visible; max-block-size: none; border: 0; }
+  .decision-table, .decision-table tbody, .decision-table tr, .decision-table th, .decision-table td { display: block; }
+  .decision-table thead { display: none; }
+  .decision-table caption { display: block; padding-inline: 0; }
+  .decision-table tr { margin-block-end: 1.5rem; border-bottom: 1px solid var(--rule); }
+  .decision-table tbody th { position: static; inline-size: auto; min-inline-size: 0; padding-inline: 0; border-bottom: 1px solid var(--rule); }
+  .decision-table td { min-inline-size: 0; max-inline-size: none; padding-inline: 0; background: var(--paper); }
+  .decision-table td::before { content: attr(data-label) ": "; display: block; font-weight: 600; color: var(--terra-deep); margin-bottom: .3rem; }
+}
+@media (max-width: 900px) {
+  .decision-picks { grid-template-columns: 1fr; gap: 1.5rem; }
+  .recipe-overview { grid-template-columns: 1fr; gap: .2rem; }
+  .timeline .step-head { flex-direction: column; }
+}
+@media (max-width: 640px) {
+  .objective-directory, .access-directory, .compare-candidates, .comparison-presets { grid-template-columns: 1fr; }
+  .decision-brief dl > div, .cost-layers > div { grid-template-columns: 1fr; gap: .35rem; }
+  .piece-facts > div { grid-template-columns: 1fr; gap: .15rem; }
+  .decision-form > div, .decision-form .btn { flex-basis: 100%; }
+  .compare-selection li { flex-basis: 100%; }
+}

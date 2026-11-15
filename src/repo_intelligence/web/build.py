@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import shutil
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -12,6 +13,7 @@ from repo_intelligence.web.catalog import build_catalog
 
 _ASSETS = Path(__file__).resolve().parent / "assets"
 _TOKEN = "__CATALOG_JSON__"
+_ASSET_NAMES = ("app.js", "styles.css", "search.js", "decisions.js")
 
 
 class QuietHandler(SimpleHTTPRequestHandler):
@@ -37,9 +39,10 @@ def build_site(project_root: Path, output_dir: Path) -> dict:
     )
     if _TOKEN in payload:
         raise ValueError("El catálogo contiene el marcador reservado del HTML.")
-    html = (_ASSETS / "index.html").read_text(encoding="utf-8").replace(_TOKEN, payload)
+    version = hashlib.sha256(b''.join((_ASSETS/name).read_bytes().replace(b'\r\n',b'\n') for name in _ASSET_NAMES)).hexdigest()[:12]
+    html = (_ASSETS / "index.html").read_text(encoding="utf-8").replace('__ASSET_VERSION__',version).replace(_TOKEN, payload)
     (output / "index.html").write_text(html, encoding="utf-8")
-    for name in ("app.js", "styles.css", "search.js"):
+    for name in _ASSET_NAMES:
         shutil.copyfile(_ASSETS / name, output / name)
     (output / "catalog.json").write_text(
         json.dumps(catalog, ensure_ascii=False, indent=2) + "\n",

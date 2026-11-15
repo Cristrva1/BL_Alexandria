@@ -62,7 +62,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Recetas relacionadas
 
-- [Workspace privado local soberano](../playbooks/workspace-privado-local-soberano.md) — Tener chat, documentos y memoria de IA en tu propia máquina, sin enviar datos a terceros.
+- [Workspace privado local soberano](../playbooks/workspace-privado-local-soberano.md) — Preparar chat, documentos y memoria con rutas locales, comprobando por separado modelos, herramientas y conexiones externas.
 - [RAG sobre tus documentos](../playbooks/rag-sobre-documentos.md) — Preguntarle a tus PDFs, manuales y bases de conocimiento con respuestas citadas.
 - [Agente de código potenciado](../playbooks/agente-de-codigo-potenciado.md) — Sacar el máximo a Claude Code, Codex u opencode con método, contexto actualizado y memoria.
 
