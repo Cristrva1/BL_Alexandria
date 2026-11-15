@@ -1,61 +1,61 @@
-# agent-protocol
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Infraestructura: sandboxes, herramientas y protocolos
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🛠️ Agent Protocol
 
-## Decision
+> Especificación de LangChain para exponer cualquier agente con una API estándar de ejecuciones, hilos y estado.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 697 | MIT | Python | 2026-11-05 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-Agent Protocol intenta estandarizar cómo se expone un agente (run, I/O, estado) sin atarse a un framework. Es un spec/directorio, no un runtime completo.
+## Qué es
 
-## Que problema resuelve
+Define cómo se ejecuta un agente, cómo recibe entradas y cómo guarda su estado, sin atarse a un framework. Es una especificación, no un runtime.
 
-quieres agent protocol
+## Por qué destaca
 
-## Por que tiene valor
+Facilita que clientes y herramientas hablen con agentes distintos por la misma API.
 
-Aporta valor en `directory` para agents, automation, fastapi, langchain, postgres, python, typescript. Stack declarado: python, typescript, postgres, fastapi, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Un documento OpenAPI describe endpoints de runs, threads y store que cualquier servidor de agentes puede implementar.
 
-quieres agent protocol
+## Instalación rápida
 
-## Cuando NO usarlo
+No se instala: lee la especificación OpenAPI e impleméntala en tu servidor.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Estandarizar la API de tus agentes
+- Conectar una UI genérica a varios agentes
+- Diseñar plataformas de agentes
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| diseñas una plataforma que sirve agentes de distintos frameworks | solo necesitas construir un agente |
 
-python, typescript, postgres, fastapi, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** OpenAPI, Python
+- **Modelos / API:** No usa LLM.
+- **Etiquetas:** `agents` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [LangGraph](langgraph.md) | 44.7k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [langchain-ai/agent-protocol](https://github.com/langchain-ai/agent-protocol)
+- 🌐 Web: <https://langchain-ai.github.io/agent-protocol/api.html>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres agent protocol. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

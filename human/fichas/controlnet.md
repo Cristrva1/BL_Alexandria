@@ -1,60 +1,63 @@
-# ControlNet
+[🏠 Inicio](../README.md) › [🖼️ Generación de Imagen & Visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Modelos, librerías y control
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧭 ControlNet
 
-## Decision
+> Modelos que guían la generación de imágenes con poses, bordes, profundidad o segmentación.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 34.2k | Apache-2.0 | Python | 2024-02-25 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
-ControlNet 1.1 is released. Those new models will be merged to this repo after we make sure that everything is good.
+## Qué es
 
-## Que problema resuelve
+Resuelve el problema de que el texto por sí solo no controla la composición de la imagen.
 
-necesitas control estructural fino de la composición
+## Por qué destaca
 
-## Por que tiene valor
+Revolucionó el control de la difusión al permitir guiar la composición sin perder calidad; es trabajo de referencia de Lvmin Zhang (lllyasviel) ampliamente citado y adoptado, con versiones 1.0/1.1 y modelos para múltiples condiciones.
 
-Aporta valor en `library` para python, typescript. Stack declarado: python, typescript.
+## Cómo funciona
 
-## Cuando usarlo
+Añade una red paralela entrenable ("zero convolution") a un modelo de difusión sobre PyTorch+GPU que inyecta la condición (mapa de control) en cada paso de denoising del U-Net; el modelo base queda congelado durante el fine-tuning.
 
-necesitas control estructural fino de la composición
+## Instalación rápida
 
-## Cuando NO usarlo
+`git clone` del repo y entorno con sus dependencias; descargar los pesos de ControlNet además del modelo base de Stable Diffusion. Requiere GPU NVIDIA y disco para varios pares de pesos.
 
-ya trabajas en SD WebUI ([sd-webui-controlnet](#-sd-webui-controlnet)) o ComfyUI (tienen integración propia) y no necesitas el repo original.
+## Casos de uso
 
-## Tipo de instalacion
+- Guiar creativos con siluetas/poses/layouts
+- Control compositivo preciso a partir de un boceto o depth map
+- Mantener pose entre variantes de un personaje
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| necesitas control estructural fino de la composición | ya trabajas en SD WebUI (sd-webui-controlnet) o ComfyUI (tienen integración propia) y no necesitas el repo original |
 
-python, typescript
+**Limitaciones:** GPU obligatoria; cada tipo de control requiere su par de pesos; el repo original es más de investigación que de producto.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, PyTorch, difusión, GPU
+- **Modelos / API:** Local (Stable Diffusion).
+- **Etiquetas:** `image` `python`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `diffusers`
-- `comfyui`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [diffusers](diffusers.md) | 34.9k | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. |
+| [ComfyUI](comfyui.md) | 146k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet)
 
-## Riesgos
+---
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con diffusers, comfyui cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si necesitas control estructural fino de la composición. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

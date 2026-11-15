@@ -1,60 +1,69 @@
-# langflow
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Builders visuales y plataformas de agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔗 langflow
 
-## Decision
+> Constructor visual de flujos LLM/agentes construido sobre LangChain.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 157k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-Langflow is a powerful platform for building and deploying AI-powered agents and workflows. It provides developers with both a visual authoring experience and built-in API and MCP servers that turn every workflow into a tool that can be integrated into applications built on any framework or stack.
+## Qué es
 
-## Que problema resuelve
+Permite arrastrar y conectar componentes en un lienzo y exportarlos como API o código Python.
 
-prefieres construir en visual sobre LangChain
+## Por qué destaca
 
-## Por que tiene valor
+Une la potencia del ecosistema LangChain con una interfaz visual, muy valorado para prototipar sin escribir todo el código. Al generar LangChain real por debajo, lo que construyes en visual es portable a código.
 
-Aporta valor en `platform` para automation, docker, javascript, python, typescript. Stack declarado: python, typescript, javascript, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Cada nodo del lienzo envuelve un componente LangChain (LLM, retriever, tool, prompt); el flujo se ejecuta como un grafo y se expone vía API. Corre sobre Python con frontend web (React).
 
-prefieres construir en visual sobre LangChain
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install langflow` o vía Docker. Requiere un proveedor de LLM configurado por entorno para los componentes que lo usen.
 
-quieres todo en código o no usas LangChain.
+## Casos de uso
 
-## Tipo de instalacion
+- Iterar componentes de agente sin código
+- Prototipar pipelines RAG
+- Enseñar LangChain a perfiles no técnicos
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| prefieres construir en visual sobre LangChain | quieres todo en código o no usas LangChain |
 
-python, typescript, javascript, docker
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, React, Docker
+- **Modelos / API:** Múltiples; agnóstico vía LangChain.
+- **Etiquetas:** `automation` `agents` `python` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [langchain](langchain.md) | 149k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
+| [dify](dify.md) | 161k | Plataforma integral para construir apps de IA con backend y UI listos. |
 
-- `langchain`
-- `dify`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Sim](sim.md) | 30.1k | Espacio colaborativo para construir, desplegar y monitorear agentes y workflows de IA con un lienzo visual. |
+| [AutoGPT](autogpt.md) | 188k | Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un constructor visual de bloques. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [langflow-ai/langflow](https://github.com/langflow-ai/langflow)
+- 🌐 Web: <http://www.langflow.org>
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con langchain, dify cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si prefieres construir en visual sobre LangChain. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import re
-from datetime import datetime, timezone
 from pathlib import Path
 
 from repo_intelligence.menu.export import derive_install
@@ -269,7 +268,11 @@ def build_catalog(project_root: Path) -> dict:
     for source in compact.get("recipes") or []:
         recipe_id = source.get("id") or ""
         notes = RECIPE_LESSONS.get(recipe_id, {})
-        step_notes = notes.get("steps") or {}
+        step_notes = dict(notes.get("steps") or {})
+        # The curated recipe owns its current steps; teaching notes add context.
+        for step in source.get("steps") or []:
+            if step.get("id") and step.get("role"):
+                step_notes[step["id"]] = step["role"]
         resolved_groups: list[list[str]] = []
         exclusive: dict[str, list[str]] = {}
         for group in notes.get("pick_one") or []:
@@ -314,7 +317,7 @@ def build_catalog(project_root: Path) -> dict:
                 "title": source.get("title") or recipe_id,
                 "goal": source.get("goal") or "",
                 "how": source.get("how") or "",
-                "lesson": notes.get("lesson") or "",
+                "lesson": notes.get("lesson") or source.get("how") or source.get("goal") or "",
                 "pick_one": resolved_groups,
                 "steps": steps,
             }
@@ -351,7 +354,7 @@ def build_catalog(project_root: Path) -> dict:
         )
 
     return {
-        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "generated_at": (compact.get("meta") or {}).get("updated") or (compact.get("meta") or {}).get("stars_checked") or "",
         "title": (compact.get("meta") or {}).get("title") or "Alejandría",
         "counts": {
             "repos": len(repos),

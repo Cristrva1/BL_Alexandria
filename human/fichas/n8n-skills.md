@@ -1,60 +1,63 @@
-# n8n-skills
+[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Ecosistema n8n
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🛠️ n8n-skills
 
-## Decision
+> Conjunto de 14 skills estructuradas para Claude Code orientadas a construir flujos de n8n correctos, evitando errores al generar su JSON.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 6.6k | MIT | Shell | 2026-10-24 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-Paquete de skills para construir flujos n8n con un agente. Combínalo con n8n y n8n-mcp; no sustituye la instancia de n8n.
+## Qué es
 
-## Que problema resuelve
+Enseña a tu agente de código a escribir flujos de n8n en JSON que funcionan a la primera, con menos idas y vueltas de errores.
 
-generas workflows n8n con IA y te cansan los fallos de JSON
+## Por qué destaca
 
-## Por que tiene valor
+Ataca un problema concreto y frecuente —el JSON de n8n generado por IA suele fallar— reduciendo bucles de error y timeouts. Su foco narrow la hace más eficaz que prompts genéricos para este caso.
 
-Aporta valor en `skill` para docker, javascript, langchain, postgres, python, skills, typescript. Stack declarado: python, typescript, javascript, docker, postgres, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Las skills aportan plantillas y reglas de validación que guían al modelo a producir nodos y conexiones n8n sintácticamente válidos. Cada skill cubre un patrón de workflow (trigger, transformación, integración) con su esquema JSON.
 
-generas workflows n8n con IA y te cansan los fallos de JSON
+## Instalación rápida
 
-## Cuando NO usarlo
+Clona el repo y copia las skills (`SKILL.md`) a tu directorio de skills de Claude Code u otro asistente compatible; sin dependencias.
 
-no usas n8n.
+## Casos de uso
 
-## Tipo de instalacion
+- Evitar errores de sintaxis al generar JSON de n8n
+- Plantillas de workflows complejos
+- Acelerar la creación de flujos con IA
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| generas workflows n8n con IA y te cansan los fallos de JSON | no usas n8n |
 
-python, typescript, javascript, docker, postgres, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** `SKILL.md`, Markdown
+- **Modelos / API:** Claude Code u otro que lea skills.
+- **Etiquetas:** `skills` `automation`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [n8n](n8n.md) | 210k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
+| [n8n-mcp](n8n-mcp.md) | 23.2k | Servidor MCP que expone a la IA la documentación y los esquemas de los más de 1.845 nodos de n8n (816 core + 1.029 comunitarios) para ayudar a construir y depurar flujos. |
 
-- `n8n`
-- `n8n-mcp`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [czlonkowski/n8n-skills](https://github.com/czlonkowski/n8n-skills)
+- 🌐 Web: <https://www.n8n-skills.com>
+- 🧪 Receta: [Bot de WhatsApp con IA](../playbooks/bot-de-whatsapp-con-ia.md)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con n8n, n8n-mcp cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si generas workflows n8n con IA y te cansan los fallos de JSON. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

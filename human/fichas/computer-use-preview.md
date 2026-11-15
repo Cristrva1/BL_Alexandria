@@ -1,61 +1,69 @@
-# computer-use-preview
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Infraestructura: sandboxes, herramientas y protocolos
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🛠️ Gemini Computer Use (preview)
 
-## Decision
+> Implementación de referencia de Google para que Gemini vea la pantalla y opere interfaces web.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 3.3k | Apache-2.0 | Python | 2026-07-28 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
-Preview de Gemini Computer Use: el modelo ve la pantalla y opera UI. Requiere API de Google y no es un agente genérico de código.
+## Qué es
 
-## Que problema resuelve
+Muestra cómo un modelo Gemini con computer use controla un navegador para completar tareas. Es una vista previa, no un agente de propósito general.
 
-quieres computer use preview
+## Por qué destaca
 
-## Por que tiene valor
+Referencia oficial para probar el modelo de uso de computadora de Google.
 
-Aporta valor en `library` para automation, python, react, typescript. Stack declarado: python, typescript, react.
+## Cómo funciona
 
-## Cuando usarlo
+Toma capturas del navegador con Playwright, Gemini decide la acción y el script la ejecuta.
 
-quieres computer use preview
+## Instalación rápida
 
-## Cuando NO usarlo
+Clona el repo, `pip install -r requirements.txt` y configura tu clave de Gemini.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Probar agentes que usan el navegador
+- Automatizar formularios web
+- Investigar computer use
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres probar computer use con Gemini | buscas automatización web robusta; mira `browser-use` o `stagehand` |
 
-python, typescript, react
+**Limitaciones:** Es una vista previa: comportamiento y API pueden cambiar.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, Playwright
+- **Modelos / API:** Gemini (modelo de computer use).
+- **Etiquetas:** `browser` `agents` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [playwright](playwright.md) | 99.7k | Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [browser-use](browser-use.md) | 121k | Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. |
+| [Skyvern](skyvern.md) | 23.4k | Automatiza flujos en el navegador con LLM y visión, sin selectores frágiles. |
 
-## Riesgos
+## Enlaces
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+- 🐙 GitHub: [google-gemini/computer-use-preview](https://github.com/google-gemini/computer-use-preview)
 
-## Ideas profesionales
+---
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres computer use preview. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

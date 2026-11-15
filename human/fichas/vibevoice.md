@@ -1,61 +1,63 @@
-# VibeVoice
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Síntesis y clonación de voz
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🗣️ VibeVoice
 
-## Decision
+> Modelos de voz de frontera de Microsoft para podcasts largos con varios hablantes y tiempo real.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 56.9k | MIT | Python | 2026-10-08 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
-🎙️ VibeVoice: Open-Source Frontier Voice AI.
+## Qué es
 
-## Que problema resuelve
+Genera conversaciones de hasta 90 minutos con cuatro voces distintas, y tiene variantes de baja latencia.
 
-quieres 🎙️ vibevoice: open-source frontier voice ai
+## Por qué destaca
 
-## Por que tiene valor
+Audio largo y multi-hablante con mucha naturalidad.
 
-Aporta valor en `directory` para multimedia, postgres, python, typescript. Stack declarado: python, typescript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Un LLM sobre tokenizadores de audio continuos y un cabezal de difusión para generar voz.
 
-quieres 🎙️ vibevoice: open-source frontier voice ai
+## Instalación rápida
 
-## Cuando NO usarlo
+Clona el repo, `pip install -e .` y descarga los modelos.
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+## Casos de uso
 
-## Tipo de instalacion
+- Podcasts generados con IA
+- Diálogos entre varios personajes
+- Voz en tiempo real
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres generar podcasts o diálogos largos | solo necesitas frases cortas; mira `kokoro` |
 
-python, typescript, postgres
+**Limitaciones:** Microsoft limita su uso a investigación; requiere GPU.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, PyTorch
+- **Modelos / API:** Modelos VibeVoice.
+- **Etiquetas:** `tts` `audio` `python`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `fluxer`
-- `whisper`
-- `faster-whisper`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [open-notebook](open-notebook.md) | 41.8k | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [microsoft/VibeVoice](https://github.com/microsoft/VibeVoice)
+- 🌐 Web: <https://microsoft.github.io/VibeVoice/>
 
-## Riesgos
+---
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con fluxer, whisper, faster-whisper cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres 🎙️ vibevoice: open-source frontier voice ai. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

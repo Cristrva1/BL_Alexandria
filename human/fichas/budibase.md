@@ -1,61 +1,71 @@
-# budibase
+[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Apps internas y bases de datos no-code
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧱 Budibase
 
-## Decision
+> Plataforma open source para apps internas, automatizaciones y agentes de IA sobre tus datos.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 28.4k | Otra (ver repo) | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-AI Agents that run your operations Budibase is an open-source operations platform that saves engineers 100s of hours building Agents, Apps and Automations, securely.
+## Qué es
 
-## Que problema resuelve
+Genera apps CRUD, formularios y flujos a partir de bases existentes y ahora añade agentes de IA agnósticos de modelo. Pensada para equipos de operaciones.
 
-quieres budibase
+## Por qué destaca
 
-## Por que tiene valor
+Combina en un solo producto apps, automatizaciones y agentes con self-host fácil.
 
-Aporta valor en `platform` para automation, docker, javascript, javascript-typescript, postgres, typescript. Stack declarado: javascript/typescript, typescript, javascript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Un servidor Node conecta tus fuentes, genera pantallas a partir del esquema y ejecuta automatizaciones y agentes con el LLM que elijas.
 
-quieres budibase
+## Instalación rápida
 
-## Cuando NO usarlo
+`docker run -d -p 10000:80 budibase/budibase:latest`.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Portal de solicitudes internas
+- Apps CRUD sobre PostgreSQL
+- Agentes que operan procesos
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres apps internas y agentes en una sola plataforma self-host | buscas el editor más flexible para backoffices; mira `appsmith` |
 
-javascript/typescript, typescript, javascript, docker, postgres
+**Limitaciones:** Algunas funciones están en planes de pago.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** TypeScript, Svelte, Node.js, CouchDB, Docker
+- **Modelos / API:** Agnóstico: OpenAI, Anthropic u otros.
+- **Etiquetas:** `automation` `agents` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `twenty-main`
-- `evolution-api`
-- `whatsapp-agentkit`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [n8n](n8n.md) | 210k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Appsmith](appsmith.md) | 41.2k | Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases. |
+| [ToolJet](tooljet.md) | 41.2k | Plataforma low-code para herramientas internas, dashboards y flujos, con generación de apps por IA. |
+| [NocoDB](nocodb.md) | 65.5k | Alternativa auto-hospedable a Airtable que convierte bases SQL en hojas de cálculo colaborativas. |
 
-## Riesgos
+## Enlaces
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+- 🐙 GitHub: [Budibase/budibase](https://github.com/Budibase/budibase)
+- 🌐 Web: <https://budibase.com>
 
-## Ideas profesionales
+---
 
-Combinar con twenty-main, evolution-api, whatsapp-agentkit cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres budibase. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

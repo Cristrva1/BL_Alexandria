@@ -1,59 +1,61 @@
-# awesome-bigdata
+[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Datos y notebooks
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🗄️ awesome-bigdata
 
-## Decision
+> Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 14.7k | MIT | — | 2026-11-06 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-A curated list of awesome big data frameworks, resources and other awesomeness. Inspired by awesome-php, awesome-python, awesome-ruby, hadoopecosystemtable & big-data.
+## Qué es
 
-## Que problema resuelve
+Resuelve el "qué uso para X a escala": un panorama del stack de datos grandes en un solo vistazo.
 
-diseñas pipelines de datos grandes y necesitas descubrir el ecosistema
+## Por qué destaca
 
-## Por que tiene valor
+Lista "awesome" ampliamente referenciada que ofrece un panorama completo del stack de datos grandes en un solo vistazo. Su organización por categorías (ingesta, almacenamiento, procesamiento, streaming) facilita comparar alternativas sin navegar decenas de sitios.
 
-Aporta valor en `directory` para docker, javascript, postgres, python, react, typescript. Stack declarado: python, typescript, javascript, react, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Es un documento Markdown con enlaces clasificados por categoría; se consulta directamente en GitHub sin instalar nada, y cada enlace lleva al repo/docs de la herramienta.
 
-diseñas pipelines de datos grandes y necesitas descubrir el ecosistema
+## Instalación rápida
 
-## Cuando NO usarlo
+No requiere instalación; se navega online en el repositorio de GitHub y se elige la herramienta según tu caso.
 
-tu proyecto es pequeño y no justifica herramientas de big data.
+## Casos de uso
 
-## Tipo de instalacion
+- Elegir stack de datos a escala
+- Descubrir herramientas por categoría
+- Comparar alternativas de ingesta/almacenamiento/procesamiento
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| diseñas pipelines de datos grandes y necesitas descubrir el ecosistema | tu proyecto es pequeño y no justifica herramientas de big data |
 
-python, typescript, javascript, react, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Markdown
+- **Modelos / API:** N/A (catálogo).
+- **Etiquetas:** `data`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [awesome-dataviz](awesome-dataviz.md) | 4.5k | Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad. |
 
-- `awesome-dataviz`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [oxnr/awesome-bigdata](https://github.com/oxnr/awesome-bigdata)
+- 🌐 Web: <https://github.com/onurakpolat/awesome-bigdata>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con awesome-dataviz cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si diseñas pipelines de datos grandes y necesitas descubrir el ecosistema. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

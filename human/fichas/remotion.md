@@ -1,60 +1,69 @@
-# remotion
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Video programático y con agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# ⚛️ remotion
 
-## Decision
+> Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 72.2k | Otra (ver repo) | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-Remotion renderiza video desde componentes React. Úsalo para piezas generadas por código (intros, datos, motion graphics), no como NLE clásico.
+## Qué es
 
-## Que problema resuelve
+Convierte el video en un artefacto versionable y parametrizable desde tu código frontend.
 
-generas video a escala con React y quieres variantes parametrizadas
+## Por qué destaca
 
-## Por que tiene valor
+Muy popular para generar video a escala y plantillas parametrizadas (uno de los proyectos de video-por-código más activos del ecosistema JS); permite crear miles de variantes cambiando props.
 
-Aporta valor en `library` para javascript, javascript-typescript, multimedia, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react.
+## Cómo funciona
 
-## Cuando usarlo
+Renderiza componentes React frame a frame con un navegador headless (Chromium) y los une con ffmpeg; las props alimentan las plantillas, y el reloj de Remotion sincroniza animaciones con el tiempo del video.
 
-generas video a escala con React y quieres variantes parametrizadas
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm create video` (o `npm i remotion @remotion/cli`). Requiere Node y Chromium para render; el render final usa ffmpeg.
 
-trabajas en Python ([moviepy](#-moviepy)) o buscas un editor visual.
+## Casos de uso
 
-## Tipo de instalacion
+- Generar variantes de video a escala
+- Plantillas de video programáticas para marketing
+- Animaciones de datos sincronizadas con audio
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| generas video a escala con React y quieres variantes parametrizadas | trabajas en Python (moviepy) o buscas un editor visual |
 
-javascript/typescript, typescript, javascript, react
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Node.js, React, Chromium, ffmpeg
+- **Modelos / API:** N/A.
+- **Etiquetas:** `video` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Open-Generative-AI](open-generative-ai.md) | 33.8k | Plataforma alternativa libre a servicios premium de video/imagen que agrupa más de 200 modelos generativos accesibles desde terminal o integrados con agentes. |
 
-- `open-generative-ai`
-- `pipeline de reels`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [MoviePy](moviepy.md) | 15.1k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
+| [HyperFrames](hyperframes.md) | 82k | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [remotion-dev/remotion](https://github.com/remotion-dev/remotion)
+- 🌐 Web: <https://remotion.dev>
+- 🧪 Receta: [Pipeline de Reels / video corto](../playbooks/pipeline-de-reels-video-corto.md)
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con open-generative-ai, pipeline de reels cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si generas video a escala con React y quieres variantes parametrizadas. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

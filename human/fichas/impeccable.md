@@ -1,61 +1,62 @@
-# impeccable
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Skills de diseño para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 💎 impeccable
 
-## Decision
+> Guía de diseño para agentes de código (1 skill, 23 comandos, iteración en browser y 44 detectores de "tells" de UI por IA) que empuja al agente hacia frontends con criterio.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 107k | Apache-2.0 | Rust | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-Design guidance for AI coding agents. 1 skill, 23 commands, live browser iteration, and 44 deterministic detector rules for AI-generated frontend design.
+## Qué es
 
-## Que problema resuelve
+Ataca el patrón repetitivo de interfaces que "huelen" a IA.
 
-quieres frontends que no parezcan generados por IA
+## Por qué destaca
 
-## Por que tiene valor
+Ataca de forma deliberada el "AI slop" visual con reglas deterministas, un enfoque diferenciado frente a prompts genéricos de diseño. Su autor (pbakaus, ex Google) le da peso en la comunidad de diseño para agentes.
 
-Aporta valor en `skill` para javascript, javascript-typescript, typescript. Stack declarado: javascript/typescript, typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Se instala como skill que añade comandos y detectores; itera la UI en el navegador y señala patrones delatores (Inter omnipresente, gradientes morados, sombras genéricas, etc.).
 
-quieres frontends que no parezcan generados por IA
+## Instalación rápida
 
-## Cuando NO usarlo
+`npx impeccable` (skill para Claude Code y compatibles). Requiere Node y un agente compatible con skills.
 
-no generas UI con agentes.
+## Casos de uso
 
-## Tipo de instalacion
+- Evitar Inter+gradientes morados en todo
+- Iterar diseño en vivo en el navegador
+- Auditar una UI generada antes de entregarla
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres frontends que no parezcan generados por IA | no generas UI con agentes |
 
-javascript/typescript, typescript, javascript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Node (`npx impeccable`)
+- **Modelos / API:** Claude Code y compatibles.
+- **Etiquetas:** `skills` `design` `rust`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [taste-skill](taste-skill.md) | 113k | Skills "anti-slop" para producir frontends premium (layout, tipografía, motion y espaciado) más skills de generación de imagen para crear mood boards de referencia. |
+| [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) | 148k | Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla". |
 
-- `taste-skill`
-- `ui-ux-pro-max-skill`
-- `design.md`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
+- 🌐 Web: <https://impeccable.style>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con taste-skill, ui-ux-pro-max-skill, design.md cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres frontends que no parezcan generados por IA. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

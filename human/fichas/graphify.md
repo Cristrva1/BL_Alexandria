@@ -1,60 +1,63 @@
-# graphify
+[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Entender y empaquetar código para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🕸️ graphify
 
-## Decision
+> Generador de grafos de conocimiento que mapea código, PDFs, imágenes y video en diagramas interactivos.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 145k | Apache-2.0 | Python | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
-Type /graphify in your AI coding assistant and it maps your entire project — code, docs, PDFs, images, videos — into a knowledge graph you can query instead of grepping through files.
+## Qué es
 
-## Que problema resuelve
+Resuelve el onboarding visual: un índice textual no basta cuando hay relaciones entre archivos.
 
-quieres ver conexiones visualmente o auditar un sistema
+## Por qué destaca
 
-## Por que tiene valor
+Combina visualización navegable, reporte legible y datos exportables en un solo paso, ideal para auditorías y onboarding cuando un índice de texto no basta. Su soporte multi-fuente (código + documentos + multimedia) lo diferencia de los indexadores puramente de código.
 
-Aporta valor en `library` para docker, javascript, multimedia, postgres, python, typescript, whisper. Stack declarado: python, typescript, javascript, docker, postgres, whisper.
+## Cómo funciona
 
-## Cuando usarlo
+Analiza las fuentes del proyecto y produce un grafo con nodos y relaciones; opcionalmente usa un LLM (cloud o local) para enriquecer el análisis semántico y generar descripciones de cada nodo.
 
-quieres ver conexiones visualmente o auditar un sistema
+## Instalación rápida
 
-## Cuando NO usarlo
+`pipx install graphify` o `uv tool install graphify`, luego `/graphify .` sobre el proyecto. Requiere Python 3.10+; el enriquecimiento con LLM necesita claves de API.
 
-solo necesitas índice textual barato ([codegraph](#-codegraph)) o tu proyecto es trivial.
+## Casos de uso
 
-## Tipo de instalacion
+- `/graphify .` para mapear llamadas de funciones
+- Auditoría rápida de un sistema
+- Onboarding visual de un proyecto heredado
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres ver conexiones visualmente o auditar un sistema | solo necesitas índice textual barato (codegraph) o tu proyecto es trivial |
 
-python, typescript, javascript, docker, postgres, whisper
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python 3.10+, uv/pipx
+- **Modelos / API:** Opcional (OpenAI/Anthropic o locales Llama/Mistral); agnóstico vía variables de entorno.
+- **Etiquetas:** `code` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [codegraph](codegraph.md) | 77.3k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
+| [graphrag](graphrag.md) | 36.6k | Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. |
 
-- `codegraph`
-- `graphrag`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify)
+- 🌐 Web: <https://www.graphify.com>
+- 🧪 Receta: [Análisis de repos grandes](../playbooks/analisis-de-repos-grandes.md)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con codegraph, graphrag cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si quieres ver conexiones visualmente o auditar un sistema. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

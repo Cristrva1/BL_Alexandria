@@ -1,60 +1,66 @@
-# whisper
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Transcripción (voz a texto)
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📝 whisper
 
-## Decision
+> Modelo de reconocimiento de voz y traducción de audio multilingüe de OpenAI, estándar de la industria que transcribe casi cualquier idioma con un solo modelo.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 112k | MIT | Python | 2026-08-31 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
-Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification.
+## Qué es
 
-## Que problema resuelve
+Cubre también identificación de idioma y traducción al inglés en la misma red.
 
-quieres la referencia robusta y no te obsesiona la latencia
+## Por qué destaca
 
-## Por que tiene valor
+Es la referencia de facto del STT abierto, base de innumerables forks y servicios de transcripción; su robustez a ruido y acentos lo convirtió en el punto de partida habitual para cualquier pipeline de voz.
 
-Aporta valor en `library` para multimedia, postgres, python, typescript, whisper. Stack declarado: python, typescript, postgres, whisper.
+## Cómo funciona
 
-## Cuando usarlo
+Red Transformer encoder-decoder entrenada con audio supervisado a escala; corre sobre PyTorch y procesa el audio en ventanas de 30 s con desplazamiento. La CLI `whisper` genera SRT/VTT/JSON con timestamps.
 
-quieres la referencia robusta y no te obsesiona la latencia
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install -U openai-whisper` (requiere ffmpeg en el sistema y PyTorch). El modelo se descarga al primer uso según `--model` (de `tiny` a `large`).
 
-necesitas más velocidad ([faster-whisper](#-faster-whisper)) o timings por palabra ([whisperX](#-whisperx)).
+## Casos de uso
 
-## Tipo de instalacion
+- `whisper grabacion.mp3 --model medium` para SRT con timestamps
+- Subtitulado automático de video
+- Transcripción de reuniones y podcasts
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres la referencia robusta y no te obsesiona la latencia | necesitas más velocidad (faster-whisper) o timings por palabra (whisperX) |
 
-python, typescript, postgres, whisper
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python 3.9+, PyTorch
+- **Modelos / API:** Local (modelos tiny→large), sin API de pago.
+- **Etiquetas:** `stt` `audio` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [whisperX](whisperx.md) | 25.2k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
 
-- `whisperx`
-- `pipeline de reels`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [whisper.cpp](whisper-cpp.md) | 55.1k | Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [openai/whisper](https://github.com/openai/whisper)
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+---
 
-## Ideas profesionales
-
-Combinar con whisperx, pipeline de reels cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si quieres la referencia robusta y no te obsesiona la latencia. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

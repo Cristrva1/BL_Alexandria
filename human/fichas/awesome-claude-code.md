@@ -1,60 +1,70 @@
-# awesome-claude-code
+[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Catálogos y marketplaces de skills
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# ⭐ Awesome Claude Code
 
-## Decision
+> Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 57.7k | Otra (ver repo) | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-The old ways have come and gone. It's time to embrace the next phase. The previous Table of Contents was no longer fit for purpose, so a new organizational system is being prepared. Thanks to everyone who has contributed to and supported this repo, be ye human or machine.
+## Qué es
 
-## Que problema resuelve
+Índice comunitario del ecosistema de Claude Code organizado por temas: guías de inicio, recursos oficiales de Anthropic, skills, orquestación de agentes, memoria, observabilidad y coste, seguridad, status lines y configuración. Cada entrada incluye una breve valoración del mantenedor.
 
-vives en Claude Code y quieres exprimirlo
+## Por qué destaca
 
-## Por que tiene valor
+Se centra solo en Claude Code y se actualiza con frecuencia, así que es el atajo para descubrir herramientas que la comunidad ya probó en lugar de buscar repo a repo.
 
-Aporta valor en `skill` para automation, python, typescript. Stack declarado: python, typescript.
+## Cómo funciona
 
-## Cuando usarlo
+Es un README generado a partir de un registro de recursos y dividido en categorías; cada entrada enlaza al repo o artículo original. Instalas cada recurso desde su propia fuente.
 
-vives en Claude Code y quieres exprimirlo
+## Instalación rápida
 
-## Cuando NO usarlo
+No se instala: abre el repo y sigue el enlace del recurso que te interese.
 
-usas otro asistente (no aplica).
+## Casos de uso
 
-## Tipo de instalacion
+- Descubrir hooks, status lines y plugins para Claude Code
+- Comparar orquestadores y herramientas de memoria para agentes
+- Encontrar guías de inicio y referencias oficiales de Anthropic
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| usas Claude Code a diario y quieres descubrir herramientas y flujos probados por la comunidad | trabajas con otro agente o solo quieres plugins oficiales; mira `claude-plugins-official` o `awesome-agent-skills` |
 
-python, typescript
+**Limitaciones:** Licencia CC BY-NC-ND 4.0: puedes consultarla y compartirla, pero no publicar versiones modificadas ni usarla con fines comerciales sin permiso.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Markdown, Python (scripts que generan la lista)
+- **Modelos / API:** No usa LLM: es una lista; los recursos que enlaza funcionan con Claude Code y los modelos de Anthropic.
+- **Etiquetas:** `coding-agent` `skills` `agents`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `claude-plugins-official`
-- `superpowers`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Claude Code Plugins Directory](claude-plugins-official.md) | 46.7k | Marketplace oficial de Anthropic con plugins para Claude Code, propios y de socios: comandos, agentes, skills y servidores MCP. |
+| [superpowers](superpowers.md) | 315k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Awesome Claude Skills](awesome-claude-skills.md) | 79.2k | Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps. |
 
-## Riesgos
+## Enlaces
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+- 🐙 GitHub: [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)
 
-## Ideas profesionales
+---
 
-Combinar con claude-plugins-official, superpowers cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si vives en Claude Code y quieres exprimirlo. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

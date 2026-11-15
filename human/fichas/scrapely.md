@@ -1,61 +1,62 @@
-# scrapely
+[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Crawlers y extracción para IA
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📐 scrapely
 
-## Decision
+> Librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 1.9k | — | HTML | 2022-04-04 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-some example web pages and the data to be extracted, scrapely constructs a parser for all similar pages.
+## Qué es
 
-## Que problema resuelve
+Librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales. Pieza histórica del ecosistema Scrapy; nicho y poco activa hoy, pero útil cuando se quiere extraer "por demostración" en lugar de programar selectores.
 
-prefieres enseñar por ejemplos y el sitio es homogéneo
+## Por qué destaca
 
-## Por que tiene valor
+Pieza histórica del ecosistema Scrapy; nicho y poco activa hoy, pero útil cuando se quiere extraer "por demostración" en lugar de programar selectores. Su enfoque by-example sigue siendo didáctico.
 
-Aporta valor en `library` para javascript, python, scraping, typescript. Stack declarado: python, typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Se le da una URL de ejemplo con los datos marcados, induce una plantilla mediante alineación de HTML y la aplica a nuevas páginas con la misma estructura.
 
-prefieres enseñar por ejemplos y el sitio es homogéneo
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install scrapely`. Requiere Python; sin dependencias pesadas.
 
-necesitas un crawler completo o el proyecto exige mantenimiento activo.
+## Casos de uso
 
-## Tipo de instalacion
+- Extraer campos repetidos sin escribir reglas
+- Scraping por plantilla aprendida
+- Prototipar extracción sobre familias de páginas homogéneas
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| prefieres enseñar por ejemplos y el sitio es homogéneo | necesitas un crawler completo o el proyecto exige mantenimiento activo |
 
-python, typescript, javascript
+**Limitaciones:** Mantenimiento poco activo; conviene validar compatibilidad con Python actual antes de apostar por ella.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python
+- **Modelos / API:** N/A (no usa LLM).
+- **Etiquetas:** `scraping`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `firecrawl`
-- `crawl4ai`
-- `scrapy`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [scrapy](scrapy.md) | 65.3k | Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [scrapy/scrapely](https://github.com/scrapy/scrapely)
 
-## Riesgos
+---
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si prefieres enseñar por ejemplos y el sitio es homogéneo. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

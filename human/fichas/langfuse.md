@@ -1,61 +1,73 @@
-# langfuse
+[🏠 Inicio](../README.md) › [🧬 Memoria, RAG & LLM Ops](../categorias/06-memoria-rag-llm-ops.md) › Observabilidad, evaluación y guardrails
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📡 langfuse
 
-## Decision
+> Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente.
 
-USAR AHORA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 37.3k | Otra (ver repo) | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-Langfuse uses GitHub Discussions for Support and Feature Requests.
+## Qué es
 
-## Que problema resuelve
+Resuelve la opacidad: ves qué prompt, qué modelo, qué coste y qué salida tuvo cada paso de tu pipeline.
 
-operas agentes en serio y necesitas trazas/costes/eval
+## Por qué destaca
 
-## Por que tiene valor
+Es una de las plataformas de LLM observability de referencia, con self-host y cloud e integraciones con los frameworks más usados (LangChain, OpenAI SDK, LiteLLM, CrewAI). Su soporte de OpenTelemetry la hace compatible con instrumentación existente.
 
-Aporta valor en `platform` para automation, docker, fastapi, javascript, javascript-typescript, langchain, python, react. Stack declarado: javascript/typescript, python, typescript, javascript, react, docker, fastapi, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Instrumentas tu app con sus SDKs (o vía OpenTelemetry) para enviar trazas, costos y evaluaciones a un backend con UI de análisis, permitiendo seguir el árbol completo de una petición de agente paso a paso.
 
-operas agentes en serio y necesitas trazas/costes/eval
+## Instalación rápida
 
-## Cuando NO usarlo
+Docker Compose para self-host (Postgres + backend + frontend) o cuenta cloud; SDKs vía `pip`/`npm`. El self-host requiere mantener PostgreSQL.
 
-haces prototipos triviales o no quieres operar el backend.
+## Casos de uso
 
-## Tipo de instalacion
+- Ver el detalle de cada llamada/agente
+- Evaluar prompts y medir costos
+- Depurar flujos multi-paso de agentes
 
-docker_local
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| operas agentes en serio y necesitas trazas/costes/eval | haces prototipos triviales o no quieres operar el backend |
 
-javascript/typescript, python, typescript, javascript, react, docker, fastapi, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** TypeScript, Docker, PostgreSQL, self-host/cloud
+- **Modelos / API:** SDKs para múltiples frameworks; agnóstico respecto al LLM.
+- **Etiquetas:** `automation` `observability` `typescript` `docker`
+- **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [langchain](langchain.md) | 149k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
+| [litellm](litellm.md) | 63k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
+| [ag2](ag2.md) | 5.1k | Framework maduro para sistemas multiagente con patrones de colaboración (heredero directo de AutoGen). |
 
-- `langchain`
-- `litellm`
-- `ag2`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Phoenix](phoenix.md) | 12.2k | Plataforma open source de Arize para observar, trazar y evaluar apps de LLM, con OpenTelemetry. |
+| [Opik](opik.md) | 23.3k | Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes. |
+| [MLflow](mlflow.md) | 28.7k | Plataforma open source para el ciclo de vida de modelos de ML y apps de LLM: experimentos, trazas y registro. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [langfuse/langfuse](https://github.com/langfuse/langfuse)
+- 🌐 Web: <https://langfuse.com>
+- 🧪 Receta: [Agente de research profundo](../playbooks/agente-de-research-profundo.md)
+- 🧪 Receta: [RAG sobre tus documentos](../playbooks/rag-sobre-documentos.md)
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con langchain, litellm, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: usar ahora. Tiene sentido si operas agentes en serio y necesitas trazas/costes/eval. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

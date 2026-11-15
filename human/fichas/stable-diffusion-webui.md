@@ -1,59 +1,69 @@
-# stable-diffusion-webui
+[🏠 Inicio](../README.md) › [🖼️ Generación de Imagen & Visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Interfaces para generar imágenes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🖼️ stable-diffusion-webui
 
-## Decision
+> Interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de extensiones desde el navegador.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 165k | AGPL-3.0 | Python | 2026-03-02 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🔴 pesado
 
-A web interface for Stable Diffusion, implemented using Gradio library.
+## Qué es
 
-## Que problema resuelve
+Es la UI que popularizó la difusión local.
 
-quieres extensiones y comunidad amplia
+## Por qué destaca
 
-## Por que tiene valor
+Fue la UI que popularizó SD y mantiene una de las comunidades y catálogos de plugins más grandes del ecosistema. Su madurez y la cantidad de extensiones (ControlNet, ADetailer, ReActor) la hacen muy versátil.
 
-Aporta valor en `skill` para frontend, javascript, postgres, python, typescript, vision. Stack declarado: python, typescript, javascript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Levanta un servidor Gradio que orquesta modelos de difusión sobre PyTorch+GPU, con pestañas y scripts para cada modo de generación y un sistema de extensiones instalables desde la propia UI.
 
-quieres extensiones y comunidad amplia
+## Instalación rápida
 
-## Cuando NO usarlo
+`git clone` y ejecutar `webui-user.bat` (Windows) o `webui.sh` (Linux/Mac); el script crea el entorno e instala dependencias automáticamente. Requiere GPU con VRAM decente y checkpoints descargados aparte.
 
-prefieres un flujo moderno y limpio ([InvokeAI](#-invokeai)).
+## Casos de uso
 
-## Tipo de instalacion
+- Probar estilos rápido desde una UI
+- Usar el enorme ecosistema de extensiones
+- Inpainting y img2img sin montar pipeline
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres extensiones y comunidad amplia | prefieres un flujo moderno y limpio (InvokeAI) |
 
-python, typescript, javascript, postgres
+**Limitaciones:** Requiere GPU con VRAM suficiente; la base de código es veterana y el flujo es menos limpio que alternativas modernas como InvokeAI.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, GPU, PyTorch, Gradio, modelos locales
+- **Modelos / API:** Local-first (difusión).
+- **Etiquetas:** `vision` `image` `python`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `sd-webui-controlnet`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [sd-webui-controlnet](sd-webui-controlnet.md) | 17.8k | Extensión que integra el control estructural de ControlNet directamente en Stable Diffusion WebUI (AUTOMATIC1111), con preprocesadores para poses, bordes, profundidad y más. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Stable Diffusion WebUI Forge](sd-webui-forge.md) | 13.1k | Versión optimizada de la WebUI de Stable Diffusion, más rápida y con menos memoria. |
+| [FLUX](flux.md) | 26.1k | Repositorio oficial de inferencia de los modelos FLUX.1 de Black Forest Labs para generar imágenes. |
 
-## Riesgos
+## Enlaces
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+- 🐙 GitHub: [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
-## Ideas profesionales
+---
 
-Combinar con sd-webui-controlnet cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres extensiones y comunidad amplia. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

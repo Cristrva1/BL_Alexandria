@@ -1,60 +1,62 @@
-# three.js
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Animación y 3D
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔺 three.js
 
-## Decision
+> Motor 3D (WebGL) para renderizar gráficos y escenas interactivas directamente en el navegador.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 118k | MIT | JavaScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-The aim of the project is to create an easy-to-use, lightweight, cross-browser, general-purpose 3D library. The current builds only include WebGL and WebGPU renderers but SVG and CSS3D renderers are also available as addons.
+## Qué es
 
-## Que problema resuelve
+Abstrae la complejidad de WebGL en escenas, cámaras, luces y mallas.
 
-renderizas 3D en web y quieres control a bajo nivel
+## Por qué destaca
 
-## Por que tiene valor
+Es el estándar del 3D web, con un ecosistema enorme de ejemplos, loaders y helpers alrededor. Su longevidad (desde 2010) y la comunidad activa lo hacen la base de casi todo 3D web.
 
-Aporta valor en `library` para javascript, javascript-typescript, typescript. Stack declarado: javascript/typescript, typescript, javascript.
+## Cómo funciona
 
-## Cuando usarlo
+Abstrae WebGL en un grafo de escena (escenas, cámaras, luces, mallas) y gestiona el bucle de render por ti, con materiales y geometrías listas para usar.
 
-renderizas 3D en web y quieres control a bajo nivel
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm i three` o vía CDN/módulo ES. Para algo más que una demo necesitas familiaridad con conceptos de gráficos 3D.
 
-trabajas solo 2D o prefieres la ergonomía de React ([react-three-fiber](#-react-three-fiber)).
+## Casos de uso
 
-## Tipo de instalacion
+- Escenas 3D y visualizaciones inmersivas
+- Experiencias web interactivas
+- Base para frameworks como react-three-fiber
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| renderizas 3D en web y quieres control a bajo nivel | trabajas solo 2D o prefieres la ergonomía de React (react-three-fiber) |
 
-javascript/typescript, typescript, javascript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** JavaScript/WebGL
+- **Modelos / API:** N/A.
+- **Etiquetas:** `ui` `design` `javascript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [react-three-fiber](react-three-fiber.md) | 33.6k | Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. |
+| [GSAP](gsap.md) | 30.4k | Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. |
 
-- `react-three-fiber`
-- `gsap`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [mrdoob/three.js](https://github.com/mrdoob/three.js)
+- 🌐 Web: <https://threejs.org/>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con react-three-fiber, gsap cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si renderizas 3D en web y quieres control a bajo nivel. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

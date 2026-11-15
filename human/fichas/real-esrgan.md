@@ -1,60 +1,61 @@
-# Real-ESRGAN
+[🏠 Inicio](../README.md) › [🖼️ Generación de Imagen & Visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Restauración, upscaling y edición
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔍 Real-ESRGAN
 
-## Decision
+> Herramienta de superresolución y restauración para imágenes reales que reescala (2×/4×) y limpia material de baja calidad sin rehacerlo desde cero.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 37.4k | BSD-3-Clause | Python | 2024-08-06 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
-🔥 RealESRGANx4plusanime6B for anime images (动漫插图模型). Please see [animemodel].
+## Qué es
 
-## Que problema resuelve
+A diferencia de los upscalers bicúbicos, infiere detalle plausible al ampliar.
 
-reescalas imágenes o video a más resolución
+## Por qué destaca
 
-## Por que tiene valor
+Es uno de los upscalers open-source más usados y citados (del grupo de Xintao Wang), con resultados sólidos en fotos y arte, e integrado como opción nativa en SD WebUI, ComfyUI y muchas UIs.
 
-Aporta valor en `library` para multimedia, postgres, python, typescript. Stack declarado: python, typescript, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Emplea una red GAN práctica sobre PyTorch+GPU entrenada con un pipeline de degradaciones sintéticas (blur + ruido + compresión) para inferir detalle al ampliar la imagen; ofrece modelos específicos para anime vs. foto.
 
-reescalas imágenes o video a más resolución
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install realesrgan` o ejecutable portable; los modelos preentrenados se descargan al primer uso. GPU recomendada (también hay build CPU).
 
-solo necesitas arreglar rostros ([GFPGAN](#-gfpgan)) o buscas difusión para reimaginar.
+## Casos de uso
 
-## Tipo de instalacion
+- Reescalar creativos antiguos
+- Mejorar detalle de assets comprimidos
+- Upscaling de frames de video en pipelines
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| reescalas imágenes o video a más resolución | solo necesitas arreglar rostros (GFPGAN) o buscas difusión para reimaginar |
 
-python, typescript, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, PyTorch, GPU
+- **Modelos / API:** Modelos locales.
+- **Etiquetas:** `image` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [GFPGAN](gfpgan.md) | 37.7k | Algoritmo de restauración facial de Tencent ARC que reconstruye rostros degradados o de baja calidad usando priors generativos (GAN) preentrenados. |
 
-- `gfpgan`
-- `pipeline de reels`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [xinntao/Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)
+- 🧪 Receta: [Pipeline de Reels / video corto](../playbooks/pipeline-de-reels-video-corto.md)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con gfpgan, pipeline de reels cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si reescalas imágenes o video a más resolución. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

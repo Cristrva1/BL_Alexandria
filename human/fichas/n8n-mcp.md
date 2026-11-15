@@ -1,61 +1,63 @@
-# n8n-mcp
+[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Ecosistema n8n
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔌 n8n-mcp
 
-## Decision
+> Servidor MCP que expone a la IA la documentación y los esquemas de los más de 1.845 nodos de n8n (816 core + 1.029 comunitarios) para ayudar a construir y depurar flujos.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 23.2k | MIT | TypeScript | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
-A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations. Deploy in minutes to give Claude and other AI assistants deep knowledge about n8n's 1,845 workflow automation nodes (816 core + 1,029 community).
+## Qué es
 
-## Que problema resuelve
+Resuelve el problema de que un LLM invente parámetros de nodos que no existen y genere workflows rotos.
 
-generas flujos n8n con IA y quieres menos alucinaciones de parámetros
+## Por qué destaca
 
-## Por que tiene valor
+Reduce drásticamente los errores cuando se pide a una IA que arme un workflow de n8n, al darle acceso fiable a los parámetros reales de cada nodo. Su enfoque de "documentación como herramienta MCP" es un patrón replicable para otras plataformas.
 
-Aporta valor en `platform` para automation, docker, javascript, javascript-typescript, langchain, mcp, python, typescript. Stack declarado: javascript/typescript, python, typescript, javascript, docker, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+El cliente MCP (Claude, Cursor, Gemini CLI) invoca tools del servidor para consultar nodos, propiedades y ejemplos vía el protocolo MCP; el LLM recibe esquemas exactos en lugar de alucinarlos.
 
-generas flujos n8n con IA y quieres menos alucinaciones de parámetros
+## Instalación rápida
 
-## Cuando NO usarlo
+`npx n8n-mcp` y añadirlo a la config del cliente MCP (p. ej. Claude Desktop). Requiere Node.js y, para flujos reales, una instancia n8n accesible.
 
-no usas n8n o construyes los flujos a mano.
+## Casos de uso
 
-## Tipo de instalacion
+- Que Claude investigue parámetros del nodo de Gmail para armar un flujo
+- Reducir errores al construir workflows
+- Onboarding de IA al catálogo de nodos de n8n
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| generas flujos n8n con IA y quieres menos alucinaciones de parámetros | no usas n8n o construyes los flujos a mano |
 
-javascript/typescript, python, typescript, javascript, docker, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Node.js/TypeScript, MCP
+- **Modelos / API:** Claude Desktop/Code, Cursor, Gemini CLI; agnóstico vía MCP.
+- **Etiquetas:** `automation` `mcp` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [n8n](n8n.md) | 210k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
+| [n8n-skills](n8n-skills.md) | 6.6k | Conjunto de 14 skills estructuradas para Claude Code orientadas a construir flujos de n8n correctos, evitando errores al generar su JSON. |
 
-- `n8n`
-- `n8n-skills`
-- `bot whatsapp`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [czlonkowski/n8n-mcp](https://github.com/czlonkowski/n8n-mcp)
+- 🌐 Web: <https://www.n8n-mcp.com/>
+- 🧪 Receta: [Bot de WhatsApp con IA](../playbooks/bot-de-whatsapp-con-ia.md)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con n8n, n8n-skills, bot whatsapp cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si generas flujos n8n con IA y quieres menos alucinaciones de parámetros. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

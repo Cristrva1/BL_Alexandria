@@ -1,61 +1,61 @@
-# SWE-bench
+[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Calidad, seguridad y benchmarks de código
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🛡️ SWE-bench
 
-## Decision
+> Benchmark para evaluar si los modelos resuelven issues reales de GitHub.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 6.2k | MIT | Python | 2026-09-18 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🔴 pesado
 
-SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub. Given a codebase and an issue, a language model is tasked with generating a patch that resolves the described problem.
+## Qué es
 
-## Que problema resuelve
+Da al modelo un repositorio y un issue y comprueba si su parche pasa las pruebas. Es la referencia para medir agentes de código.
 
-quieres code and data for the following works:
+## Por qué destaca
 
-## Por que tiene valor
+Estándar de la industria para comparar agentes de programación.
 
-Aporta valor en `library` para docker, python, typescript. Stack declarado: python, typescript, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Ejecuta cada tarea en contenedores Docker y aplica los tests del repositorio al parche generado.
 
-quieres code and data for the following works:
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install swebench` (requiere Docker y mucho espacio en disco).
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Evaluar un agente de código propio
+- Comparar modelos
+- Investigación en agentes de software
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| necesitas medir agentes de código con un estándar | solo quieres usar un agente |
 
-python, typescript, docker
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, Docker
+- **Modelos / API:** El modelo que evalúes.
+- **Etiquetas:** `evaluation` `coding-agent` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [SWE-agent](swe-agent.md) | 20.8k | Agente de Princeton y Stanford que toma un issue de GitHub e intenta resolverlo solo. |
 
-- `codegraph`
-- `gitnexus`
-- `deepseek-coder`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [SWE-bench/SWE-bench](https://github.com/SWE-bench/SWE-bench)
+- 🌐 Web: <https://www.swebench.com>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con codegraph, gitnexus, deepseek-coder cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres code and data for the following works:. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

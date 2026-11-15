@@ -176,17 +176,19 @@ def test_real_library_catalog_resolves_every_recipe_step() -> None:
     assert set(range(1, 14)) <= set(CATEGORY_LESSONS)
     for number in range(1, 14):
         assert CATEGORY_LESSONS[number]["blurb"]
+    import json
+
+    source_recipes = json.loads((root / "INDICE_IA.json").read_text(encoding="utf-8"))["recipes"]
+    sources = {recipe["id"]: recipe for recipe in source_recipes}
+    assert {recipe["id"] for recipe in catalog["recipes"]} == set(sources)
     for recipe in catalog["recipes"]:
-        assert recipe["id"] in RECIPE_LESSONS
+        assert recipe["lesson"]
         assert recipe["steps"]
+        assert [step["id"] for step in recipe["steps"]] == sources[recipe["id"]]["repos"]
         for step in recipe["steps"]:
             assert step["id"] in ids
             assert step["missing"] is False
             assert step["why"]
-    web = next(recipe for recipe in catalog["recipes"] if recipe["id"] == "web-app-moderna-con-ia")
-    assert "three.js" in [step["id"] for step in web["steps"]]
-    docs = next(recipe for recipe in catalog["recipes"] if recipe["id"] == "documentos-presentaciones")
-    assert "reveal.js" in [step["id"] for step in docs["steps"]]
     pairs = {tuple(sorted((lab["a"], lab["b"]))) for lab in catalog["labs"]}
     assert ("heroui", "ui") in pairs
     assert ("comfyui", "fooocus") in pairs

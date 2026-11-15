@@ -1,61 +1,68 @@
-# mercury-agent
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Asistentes autónomos y equipos de agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🦾 Mercury Agent
 
-## Decision
+> Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 3.9k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-Remembers what matters. Asks before it acts. Runs 24/7 from CLI, Telegram, or Web. 31 built-in tools, Kanban boards, extensible skills, SQLite-backed Second Brain memory.
+## Qué es
 
-## Que problema resuelve
+Recuerda lo importante, pide permiso antes de actuar y trae 31 herramientas, tableros kanban y skills extensibles, con datos en SQLite.
 
-quieres soul-driven ai agent with permission-hardened tools, token budgets, and multi-channel acce
+## Por qué destaca
 
-## Por que tiene valor
+Enfoque en seguridad: herramientas con permisos y límites de gasto por diseño.
 
-Aporta valor en `skill` para automation, javascript, javascript-typescript, postgres, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Un proceso Node mantiene la memoria en SQLite y expone el agente por varios canales con políticas de aprobación.
 
-quieres soul-driven ai agent with permission-hardened tools, token budgets, and multi-channel acce
+## Instalación rápida
 
-## Cuando NO usarlo
+Sigue el README: clona el repo, configura tu clave de modelo y arranca el agente.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Asistente personal con límites de gasto
+- Gestión de tareas en kanban por chat
+- Agente siempre activo en Telegram
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres un asistente personal ligero con permisos claros | buscas el ecosistema más grande; mira `openclaw` |
 
-javascript/typescript, typescript, javascript, react, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** TypeScript, SQLite
+- **Modelos / API:** Agnóstico.
+- **Etiquetas:** `agents` `chatbot` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [claude-mem](claude-mem.md) | 116k | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. |
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [OpenClaw](openclaw.md) | 394k | Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. |
+| [hermes-agent](hermes-agent.md) | 262k | Entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [cosmicstack-labs/mercury-agent](https://github.com/cosmicstack-labs/mercury-agent)
+- 🌐 Web: <https://mercuryagent.sh/>
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+---
 
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres soul-driven ai agent with permission-hardened tools, token budgets, and multi-channel acce. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

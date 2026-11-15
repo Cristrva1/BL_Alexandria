@@ -1,59 +1,63 @@
-# LivePortrait
+[🏠 Inicio](../README.md) › [🖼️ Generación de Imagen & Visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Rostros y retratos animados
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧑 LivePortrait
 
-## Decision
+> Sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen (humanos, pero también mascotas).
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 19.4k | Otra (ver repo) | Python | 2026-06-01 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
-`2025/06/01`: 🌍 Over the past year, LivePortrait has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as numerous startups and creators. 🎉 `2025/01/01`: 🐶 We updated a new version of the Animals model with more data, see here. `2024/10/18`: ❗ We have upda.
+## Qué es
 
-## Que problema resuelve
+Convierte una foto en un avatar que sigue las expresiones de un "conductor".
 
-animas retratos a partir de una foto
+## Por qué destaca
 
-## Por que tiene valor
+Ofrece animación facial rápida y controlable (con retoque de ojos y boca vía "stitching" y retargeting), y ha sido adoptado por plataformas grandes (Kuaishou, Douyin, Jianying); es proyecto de KwaiVGI con pesos públicos.
 
-Aporta valor en `library` para comfy, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, postgres, comfy.
+## Cómo funciona
 
-## Cuando usarlo
+Usa un modelo de keypoints/warping implícito sobre PyTorch+GPU que deforma la cara de origen siguiendo el movimiento del conductor; un módulo de stitching suaviza la unión con el cuerpo y otro de retargeting controla ojos/boca de forma independiente.
 
-animas retratos a partir de una foto
+## Instalación rápida
 
-## Cuando NO usarlo
+`git clone`, crear entorno y `pip install -r requirements.txt`; descargar los pesos preentrenados indicados en el repo. Requiere GPU NVIDIA con VRAM generosa.
 
-necesitas swap en vivo ([Deep-Live-Cam](#-deep-live-cam)) o no tienes GPU.
+## Casos de uso
 
-## Tipo de instalacion
+- Convertir una foto en avatar/recurso animado
+- Presentadores virtuales a partir de un retrato
+- Animar ilustraciones de personajes para reels
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| animas retratos a partir de una foto | necesitas swap en vivo (Deep-Live-Cam) o no tienes GPU |
 
-python, typescript, javascript, postgres, comfy
+**Limitaciones:** GPU obligatoria; la calidad cae con poses extremas o rostros muy distintos al conductor; revisar licencia antes de uso comercial.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, PyTorch, GPU
+- **Modelos / API:** Modelos locales.
+- **Etiquetas:** `image` `vision` `python`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `moviepy`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [MoviePy](moviepy.md) | 15.1k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [KlingAIResearch/LivePortrait](https://github.com/KlingAIResearch/LivePortrait)
+- 🌐 Web: <https://liveportrait.github.io>
 
-## Riesgos
+---
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con moviepy cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si animas retratos a partir de una foto. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

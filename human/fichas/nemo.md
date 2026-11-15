@@ -1,61 +1,69 @@
-# NeMo
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Transcripción (voz a texto)
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎙️ NVIDIA NeMo Speech
 
-## Decision
+> Framework de NVIDIA para entrenar y usar modelos de voz: reconocimiento, síntesis y más.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 18.7k | Apache-2.0 | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
 
-Checkout our HuggingFace🤗 collection for the latest open weight checkpoints and demos!.
+## Qué es
 
-## Que problema resuelve
+Incluye modelos de ASR como Parakeet y Canary, que lideran rankings de transcripción, y herramientas para afinarlos.
 
-quieres **nvidia nemo speech**
+## Por qué destaca
 
-## Por que tiene valor
+Modelos de reconocimiento de voz de primer nivel y abiertos.
 
-Aporta valor en `runtime` para docker, python, typescript. Stack declarado: python, typescript, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Colección de modelos y recetas sobre PyTorch Lightning optimizadas para GPUs NVIDIA.
 
-quieres **nvidia nemo speech**
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install "nemo_toolkit[asr]"`.
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+## Casos de uso
 
-## Tipo de instalacion
+- Transcripción de alta precisión
+- Afinar ASR con tu vocabulario
+- Investigación en voz
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| necesitas ASR de máxima precisión y tienes GPU | quieres algo simple; mira `faster-whisper` |
 
-python, typescript, docker
+**Limitaciones:** Pesado de instalar; requiere GPU para entrenar.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, PyTorch
+- **Modelos / API:** Modelos propios (Parakeet, Canary).
+- **Etiquetas:** `stt` `tts` `audio` `python`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `litellm`
-- `cosmos`
-- `comfyui`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Pipecat](pipecat.md) | 17.2k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [whisperX](whisperx.md) | 25.2k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
 
-## Riesgos
+## Enlaces
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+- 🐙 GitHub: [NVIDIA-NeMo/Speech](https://github.com/NVIDIA-NeMo/Speech)
+- 🌐 Web: <https://docs.nvidia.com/nemo/speech/nightly/index.html>
 
-## Ideas profesionales
+---
 
-Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres **nvidia nemo speech**. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,60 +1,62 @@
-# mempalace
+[🏠 Inicio](../README.md) › [🧬 Memoria, RAG & LLM Ops](../categorias/06-memoria-rag-llm-ops.md) › Memoria persistente para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🏛️ mempalace
 
-## Decision
+> Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin enviar datos a servicios externos.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 60.5k | MIT | Python | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-Local-first AI memory. Verbatim storage, pluggable backend, 96.6% R@5 raw on LongMemEval — zero API calls.
+## Qué es
 
-## Que problema resuelve
+Resuelve la memoria privada: cero llamadas a API, tus textos no salen de tu máquina.
 
-la privacidad es prioridad y no quieres llamadas a API
+## Por qué destaca
 
-## Por que tiene valor
+Prioriza la privacidad total (cero llamadas a API) reportando recall competitivo en benchmarks de memoria de largo plazo. Su diseño verbatim evita la pérdida de detalle que sufren los enfoques que resumen con un LLM remoto.
 
-Aporta valor en `directory` para docker, postgres, python, react, typescript. Stack declarado: python, typescript, react, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Guarda los textos verbatim y los recupera mediante un backend de búsqueda conectable, sin depender de un LLM remoto para almacenar ni para indexar; el backend se puede cambiar según tus necesidades.
 
-la privacidad es prioridad y no quieres llamadas a API
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install` desde PyPI; se configura el backend de búsqueda local según el repo. No requiere claves de API ni servicios externos.
 
-quieres un SaaS gestionado con escalado automático o integraciones de framework ya hechas ([mem0](#-mem0)).
+## Casos de uso
 
-## Tipo de instalacion
+- Memoria privada para agentes
+- Recuerdo de largo plazo sin enviar datos a la nube
+- Casos con requisitos de confidencialidad (sanidad, legal)
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| la privacidad es prioridad y no quieres llamadas a API | quieres un SaaS gestionado con escalado automático o integraciones de framework ya hechas (mem0) |
 
-python, typescript, react, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python (PyPI)
+- **Modelos / API:** Local, backend conectable; sin proveedor LLM obligatorio.
+- **Etiquetas:** `memory` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [open-notebook](open-notebook.md) | 41.8k | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. |
+| [odysseus](odysseus.md) | 95.5k | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. |
 
-- `open-notebook`
-- `odysseus`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [MemPalace/mempalace](https://github.com/MemPalace/mempalace)
+- 🌐 Web: <http://mempalaceofficial.com/>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con open-notebook, odysseus cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si la privacidad es prioridad y no quieres llamadas a API. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

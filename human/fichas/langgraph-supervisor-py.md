@@ -1,61 +1,64 @@
-# langgraph-supervisor-py
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Frameworks de agentes en Python
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🐍 LangGraph Supervisor
 
-## Decision
+> Librería archivada para crear un agente supervisor que coordina a otros agentes en LangGraph.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 1.7k | MIT | Python | 2026-07-15 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-> Note: We now recommend using the supervisor pattern directly via tools rather than this library for most use cases. The tool-calling approach gives you more control over context engineering and is the recommended pattern in the LangChain multi-agent guide. See our supervisor tutorial for a step-by-step guide. We're making this library compatible with LangChain 1.
+> ⚠️ Archivado en GitHub: ya no recibe cambios.
 
-## Que problema resuelve
+## Qué es
 
-quieres 🤖 langgraph multi-agent supervisor
+Facilitaba el patrón supervisor en sistemas multiagente. LangChain ahora recomienda implementar ese patrón directamente con herramientas.
 
-## Por que tiene valor
+## Por qué destaca
 
-Aporta valor en `runtime` para automation, langchain, postgres, python, react, typescript. Stack declarado: python, typescript, react, postgres, langchain.
+Útil como referencia del patrón supervisor.
 
-## Cuando usarlo
+## Cómo funciona
 
-quieres 🤖 langgraph multi-agent supervisor
+Un agente supervisor decide a qué agente especializado delegar cada paso del grafo.
 
-## Cuando NO usarlo
+## Instalación rápida
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+`pip install langgraph-supervisor` (solo para proyectos existentes).
 
-## Tipo de instalacion
+## Casos de uso
 
-reference_only
+- Estudiar el patrón supervisor
+- Mantener código existente
+- Prototipos multiagente simples
 
-## Stack / tecnologia detectada
+## ¿Es para ti?
 
-python, typescript, react, postgres, langchain
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| mantienes código que ya la usa | empiezas un proyecto nuevo; usa el patrón con herramientas en `langgraph` |
 
-## Instalacion detectada
+**Limitaciones:** Repositorio archivado: no recibe actualizaciones.
 
-Repo local detectado: si
+## Stack y modelos
 
-## Con que se combina
+- **Stack:** Python, LangGraph
+- **Modelos / API:** Agnóstico.
+- **Etiquetas:** `agents` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [LangGraph](langgraph.md) | 44.7k | Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [langchain-ai/langgraph-supervisor-py](https://github.com/langchain-ai/langgraph-supervisor-py)
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres 🤖 langgraph multi-agent supervisor. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,23 +1,50 @@
-# Pipeline de Reels / video corto
+[🏠 Inicio](../README.md) · [🧪 Todas las recetas](README.md)
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎬 Pipeline de Reels / video corto
 
-## Objetivo
+> **Objetivo:** Convertir un guion o un video largo en clips verticales con voz, subtítulos y visuales generados.
 
-convertir contenido en video corto con voz y subtítulos.
+## 🗺️ Cómo fluye
 
-## Stack sugerido
+```mermaid
+flowchart LR
+  Guion_o_video["Guion o video"] -->|audio| whisperx["whisperX"]
+  Guion_o_video["Guion o video"] -->|texto| chatterbox["Chatterbox"]
+  comfyui["ComfyUI"] -->|imágenes| real_esrgan["Real-ESRGAN"]
+  whisperx["whisperX"] -->|subtítulos| remotion["remotion"]
+  chatterbox["Chatterbox"] -->|voz| remotion["remotion"]
+  real_esrgan["Real-ESRGAN"] -->|visuales| remotion["remotion"]
+  remotion["remotion"] -->|render| ffmpeg["FFmpeg"]
+```
 
-- `whisperx`: If you’re looking for a transcription API for meetings, consider checking out Recall.ai's Meeting Transcription API, an API that works with Zoom, Google Meet, Microsoft Teams, and more. Recall.ai diarizes by pulling the speaker data and separate audio streams from the meeting platforms, which means 100% accurate speaker diarization with actual speaker names.
-- `supertonic`: Supertonic is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns.
-- `tts`: 📣 ⓍTTSv2 is here with 16 languages and better performance across the board. 📣 ⓍTTS fine-tuning code is out. Check the example recipes. 📣 ⓍTTS can now stream with <200ms latency. 📣 ⓍTTS, our production TTS model that can speak 13 languages, is released Blog Post, Demo, Docs.
-- `comfyui`: The most powerful and modular AI engine for content creation..
-- `fooocus`: Fooocus is an image generating software (based on Gradio ).
-- `real-esrgan`: 🔥 RealESRGANx4plusanime6B for anime images (动漫插图模型). Please see [animemodel].
-- `moviepy`: MoviePy recently upgraded to v2.0, introducing major breaking changes. You can consult the last v1 docs here but beware that v1 is no longer maintained. For more info on how to update your code from v1 to v2, see this guide.
-- `remotion`: Remotion renderiza video desde componentes React. Úsalo para piezas generadas por código (intros, datos, motion graphics), no como NLE clásico.
-- `lossless-cut`: The swiss army knife of lossless video/audio editing.
+## 🧩 Piezas
 
-## Como se conecta
+| # | Repo | Papel en la receta | ⭐ | Instalación |
+|---:|---|---|---:|---|
+| 1 | [whisperX](../fichas/whisperx.md) | Transcribe y alinea palabra por palabra para los subtítulos | 25.2k | `pip install whisperx` |
+| 2 | [Chatterbox](../fichas/chatterbox.md) | Genera la voz en off (o clona una voz con consentimiento) | 27.7k | `pip install chatterbox-tts` |
+| 3 | [ComfyUI](../fichas/comfyui.md) | Genera imágenes o b-roll con modelos de difusión | 146k | `git clone` |
+| 4 | [Real-ESRGAN](../fichas/real-esrgan.md) | Escala y limpia las imágenes antes del montaje | 37.4k | `pip install realesrgan` |
+| 5 | [remotion](../fichas/remotion.md) | Ensambla el video con plantillas en React | 72.2k | `npm create video` |
+| 6 | [FFmpeg](../fichas/ffmpeg.md) | Render final, formatos y compresión | 66.9k | `brew install ffmpeg` |
+| 7 | [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md) | Atajo todo-en-uno: tema → video corto automático | 142k | `pip install mpt` |
 
-[videofy_minimal](#-videofy_minimal) puede orquestar el flujo simple; remotion/moviepy escalan a variantes programáticas.
+## 🔌 Cómo se conecta
+
+WhisperX saca los subtítulos con marcas de tiempo por palabra; Chatterbox genera la locución; ComfyUI produce los visuales y Real-ESRGAN los mejora. Remotion arma el clip con una plantilla reutilizable y FFmpeg exporta el formato final. Si quieres algo inmediato sin montar piezas, MoneyPrinterTurbo hace el recorrido completo desde un tema.
+
+## 🚫 Cuándo NO usar esta receta
+
+Si no tienes GPU, usa APIs de generación de imagen y voz en la nube en lugar de ComfyUI y Chatterbox. Si solo necesitas cortar y subtitular un video existente, WhisperX más LosslessCut bastan.
+
+## 🔁 Variantes
+
+- En lugar de [whisperX](../fichas/whisperx.md): [NVIDIA NeMo Speech](../fichas/nemo.md)
+- En lugar de [Chatterbox](../fichas/chatterbox.md): [Fish Speech](../fichas/fish-speech.md), [GPT-SoVITS](../fichas/gpt-sovits.md), [Kokoro](../fichas/kokoro.md)
+- En lugar de [ComfyUI](../fichas/comfyui.md): [WanGP](../fichas/wan2gp.md), [Stable Diffusion WebUI Forge](../fichas/sd-webui-forge.md)
+- En lugar de [remotion](../fichas/remotion.md): [MoviePy](../fichas/moviepy.md), [HyperFrames](../fichas/hyperframes.md)
+- En lugar de [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md): [OpenMontage](../fichas/openmontage.md), [videofy_minimal](../fichas/videofy-minimal.md)
+
+---
+
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

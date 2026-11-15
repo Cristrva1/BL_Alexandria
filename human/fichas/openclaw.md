@@ -1,61 +1,71 @@
-# openclaw
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Asistentes autónomos y equipos de agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🦾 OpenClaw
 
-## Decision
+> Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 394k | MIT | TypeScript | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
-OpenClaw is a personal AI assistant that runs on your devices and meets you in the channels you already use. It is designed for a single operator and connects models, tools, messaging channels, and optional companion apps through one Gateway.
+## Qué es
 
-## Que problema resuelve
+Un solo operador, muchas superficies: el asistente vive en tu equipo, tiene memoria, ejecuta tareas reales y responde por los canales que ya usas. Es uno de los proyectos de IA más populares de GitHub.
 
-quieres openclaw 🦞 — your assistant, on your devices, in your chats
+## Por qué destaca
 
-## Por que tiene valor
+Enorme adopción y un ecosistema de skills y canales que lo convierten en un asistente realmente útil a diario.
 
-Aporta valor en `library` para automation, docker, javascript, javascript-typescript, postgres, typescript. Stack declarado: javascript/typescript, typescript, javascript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Un gateway local conecta canales de mensajería con un agente que usa herramientas, skills y el modelo configurado.
 
-quieres openclaw 🦞 — your assistant, on your devices, in your chats
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm install -g openclaw@latest` y `openclaw onboard` para configurar canales y modelo.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Asistente personal por WhatsApp
+- Automatizar tareas del equipo desde Telegram
+- Agente con memoria que trabaja 24/7
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres un asistente personal que actúe por tus canales de chat | necesitas un agente para tu empresa con varios usuarios; mira `hermes-agent` |
 
-javascript/typescript, typescript, javascript, docker, postgres
+**Limitaciones:** Da mucho acceso a tu equipo y cuentas: revisa permisos y aíslalo con cuidado.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** TypeScript, Node.js
+- **Modelos / API:** Agnóstico: Claude, GPT o modelos locales.
+- **Etiquetas:** `agents` `chatbot` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `awesome-claude-code`
-- `agents-towards-production`
-- `ag2`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [NemoClaw](nemoclaw.md) | 23k | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. |
+| [claude-mem](claude-mem.md) | 116k | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [hermes-agent](hermes-agent.md) | 262k | Entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. |
+| [Mercury Agent](mercury-agent.md) | 3.9k | Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web. |
 
-## Riesgos
+## Enlaces
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+- 🐙 GitHub: [openclaw/openclaw](https://github.com/openclaw/openclaw)
+- 🌐 Web: <https://openclaw.ai>
 
-## Ideas profesionales
+---
 
-Combinar con awesome-claude-code, agents-towards-production, ag2 cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres openclaw 🦞 — your assistant, on your devices, in your chats. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

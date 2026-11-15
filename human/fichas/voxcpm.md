@@ -1,59 +1,63 @@
-# VoxCPM
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Síntesis y clonación de voz
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🗣️ VoxCPM
 
-## Decision
+> Modelo de texto a voz sin tokenizador que clona voces con naturalidad y expresividad alta.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 42.2k | Apache-2.0 | Python | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
-👋 Join our community for discussion and support!.
+## Qué es
 
-## Que problema resuelve
+Pertenece a la familia CPM de modelos generativos de OpenBMB.
 
-quieres voz muy natural o clonada y tienes GPU
+## Por qué destaca
 
-## Por que tiene valor
+Ofrece una naturalidad sobresaliente y clonación fiel con muy poco audio de referencia, dentro del ecosistema CPM de OpenBMB; su enfoque sin tokenizador reduce los artefactos típicos del TTS discreto.
 
-Aporta valor en `library` para comfy, docker, fastapi, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, docker, postgres, fastapi, comfy.
+## Cómo funciona
 
-## Cuando usarlo
+Modelo de difusión/autorregresivo sobre PyTorch que genera el habla en un espacio continuo en lugar de tokens discretos, modelando directamente la forma de onda; requiere GPU para inferencia en tiempo razonable.
 
-quieres voz muy natural o clonada y tienes GPU
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install voxcpm` (o desde el repo) con PyTorch y GPU recomendada; los pesos se descargan al instanciar el modelo.
 
-priorizas latencia mínima ([supertonic](#-supertonic)) o no tienes GPU.
+## Casos de uso
 
-## Tipo de instalacion
+- Clonación de voz de alta calidad
+- Locuciones muy naturales para narración
+- Doblaje de video con voz propia
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres voz muy natural o clonada y tienes GPU | priorizas latencia mínima (supertonic) o no tienes GPU |
 
-python, typescript, javascript, docker, postgres, fastapi, comfy
+**Limitaciones:** GPU prácticamente obligatoria; inferencia más lenta que los TTS en tiempo real; revisar licencia antes de uso comercial.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, PyTorch, GPU
+- **Modelos / API:** Modelos propios locales.
+- **Etiquetas:** `tts` `audio` `python`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `tts`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [TTS](tts.md) | 46.2k | Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM)
+- 🌐 Web: <https://voxcpm.com>
 
-## Riesgos
+---
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con tts cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si quieres voz muy natural o clonada y tienes GPU. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

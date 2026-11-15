@@ -1,61 +1,60 @@
-# guia
+[🏠 Inicio](../README.md)
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧰 Guía (histórica)
 
-## Decision
+> Guía editorial original de la biblioteca, hoy integrada en las fichas de cada repo.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| — | — | — | — | 🧰 Interna |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-Catálogo operativo de los 156 repositorios locales del workspace, diseñado para entender, comparar, elegir y combinar repos rápido.
+> 🧰 Carpeta interna del hub; no es un producto para instalar.
 
-## Que problema resuelve
+## Qué es
 
-quieres 🌌 catálogo de repositorios de ia & automatización
+El texto escrito a mano de la guía anterior se incorporó a las fichas; `Guia.md` ahora se genera desde el índice.
 
-## Por que tiene valor
+## Por qué destaca
 
-Aporta valor en `skill` para comfy, frontend, multimedia, typescript, whisper. Stack declarado: typescript, whisper, comfy.
+Uso interno.
 
-## Cuando usarlo
+## Cómo funciona
 
-quieres 🌌 catálogo de repositorios de ia & automatización
+Documento Markdown.
 
-## Cuando NO usarlo
+## Instalación rápida
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+No se instala: es parte de este repositorio.
 
-## Tipo de instalacion
+## Casos de uso
 
-reference_only
+- Consultar el historial editorial
+- Referencia de redacción
+- Uso interno
 
-## Stack / tecnologia detectada
+## ¿Es para ti?
 
-typescript, whisper, comfy
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres ver el origen del texto de las fichas | buscas una herramienta para tu proyecto |
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Markdown
+- **Modelos / API:** No usa LLM.
+- **Etiquetas:** `learning`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `andrej-karpathy-skills`
-- `antigravity-awesome-skills`
-- `awesome-agent-skills`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [andrej-karpathy-skills](andrej-karpathy-skills.md) | 232k | Guía de 4 principios inspirada en Andrej Karpathy para que tu agente de código responda útil y sin relleno. |
+| [Agentic Awesome Skills](antigravity-awesome-skills.md) | 49.5k | Biblioteca comunitaria de más de 2.800 skills SKILL.md para Claude Code, Codex, Cursor y Gemini CLI, con instalador npx y MCP local. |
+| [Awesome Agent Skills](awesome-agent-skills.md) | 37k | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. |
 
-## Contra que compite
+---
 
-- Ninguno declarado.
-
-## Riesgos
-
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con andrej-karpathy-skills, antigravity-awesome-skills, awesome-agent-skills cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres 🌌 catálogo de repositorios de ia & automatización. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

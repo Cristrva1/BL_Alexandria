@@ -1,59 +1,61 @@
-# Scrapling
+[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Crawlers y extracción para IA
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🩹 Scrapling
 
-## Decision
+> Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica los elementos cuando el HTML cambia.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 101k | BSD-3-Clause | Python | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-Scrapling is an adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl.
+## Qué es
 
-## Que problema resuelve
+Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica los elementos cuando el HTML cambia. Proyecto en alza por su enfoque "auto-reparable" de selectores, que evita reescribir scrapers cada vez que el sitio se actualiza.
 
-los sitios cambian o te bloquean a menudo
+## Por qué destaca
 
-## Por que tiene valor
+Proyecto en alza por su enfoque "auto-reparable" de selectores, que evita reescribir scrapers cada vez que el sitio se actualiza. Sus fetchers sigilosos imitan navegadores reales para sortear bloqueos.
 
-Aporta valor en `library` para automation, docker, javascript, postgres, python, scraping, typescript. Stack declarado: python, typescript, javascript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Rastrea atributos y posiciones de los elementos para reencontrarlos tras cambios en el DOM, con fetchers sigilosos (Camoufox/Playwright) que imitan navegadores reales para evadir detección.
 
-los sitios cambian o te bloquean a menudo
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install scrapling` (con `scrapling install` para los navegadores del modo sigiloso). Requiere Python y, para el modo stealth, los binarios de navegador que instala el subcomando.
 
-el target es estable y simple, o no necesitas stealth.
+## Casos de uso
 
-## Tipo de instalacion
+- Páginas que cambian de estructura
+- Evadir bloqueos sin reescribir selectores
+- Scraping resiliente sobre sitios volátiles
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| los sitios cambian o te bloquean a menudo | el target es estable y simple, o no necesitas stealth |
 
-python, typescript, javascript, docker, postgres
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python
+- **Modelos / API:** N/A (no usa LLM).
+- **Etiquetas:** `automation` `scraping` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [scrapy](scrapy.md) | 65.3k | Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. |
 
-- `scrapy`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)
+- 🌐 Web: <https://scrapling.readthedocs.io/en/latest/>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con scrapy cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si los sitios cambian o te bloquean a menudo. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

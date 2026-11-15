@@ -1,61 +1,70 @@
-# gpt-researcher
+[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Agentes de research autónomo
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔍 gpt-researcher
 
-## Decision
+> Agente autónomo que investiga en línea y consolida reportes citados y estructurados.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 30.6k | Apache-2.0 | Python | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-GPT Researcher the first open deep research agent designed for both web and local research on any given task.
+## Qué es
 
-## Que problema resuelve
+Planifica sub-preguntas, busca fuentes y redacta un informe con referencias.
 
-necesitas research profundo citado
+## Por qué destaca
 
-## Por que tiene valor
+Muy popular para research profundo; automatiza horas de búsqueda recopilando y citando lo más relevante. Su arquitectura planificador-buscador-redactor es un patrón de referencia para research con agentes.
 
-Aporta valor en `skill` para automation, docker, fastapi, javascript, langchain, python, react, typescript. Stack declarado: python, typescript, javascript, react, docker, fastapi, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Un agente planificador genera consultas, agentes de búsqueda recopilan fuentes web (vía Tavily y otros) y un redactor sintetiza el reporte; backend Python (FastAPI) con frontend Next.js.
 
-necesitas research profundo citado
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install gpt-researcher` o vía Docker. Requiere una clave de LLM y, según configuración, una clave de búsqueda web (Tavily).
 
-solo quieres una respuesta corta o un chat simple.
+## Casos de uso
 
-## Tipo de instalacion
+- Análisis de un tema con fuentes
+- Reportes en PDF/Markdown
+- Briefing automático antes de una decisión
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| necesitas research profundo citado | solo quieres una respuesta corta o un chat simple |
 
-python, typescript, javascript, react, docker, fastapi, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, Next.js, FastAPI
+- **Modelos / API:** GPT-4o, Claude, Gemini + locales; agnóstico vía variables de entorno.
+- **Etiquetas:** `automation` `research` `python` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [firecrawl](firecrawl.md) | 200k | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. |
+| [browser-use](browser-use.md) | 121k | Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. |
 
-- `firecrawl`
-- `browser-use`
-- `research profundo`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [STORM](storm.md) | 31.8k | Sistema de Stanford que investiga un tema en la web y escribe un informe largo con citas, al estilo Wikipedia. |
+| [Vane](vane.md) | 38.1k | Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity (antes Perplexica). |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher)
+- 🌐 Web: <https://gptr.dev>
+- 🧪 Receta: [Agente de research profundo](../playbooks/agente-de-research-profundo.md)
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+---
 
-## Ideas profesionales
-
-Combinar con firecrawl, browser-use, research profundo cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si necesitas research profundo citado. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

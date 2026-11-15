@@ -1,59 +1,61 @@
-# loguru
+[🏠 Inicio](../README.md) › [🧬 Memoria, RAG & LLM Ops](../categorias/06-memoria-rag-llm-ops.md) › Observabilidad, evaluación y guardrails
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📝 loguru
 
-## Decision
+> Librería de logging para Python centrada en la simplicidad ("logging that doesn't suck"), lista para usar sin configuración previa.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 24.2k | MIT | Python | 2026-11-06 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-Did you ever feel lazy about configuring a logger and used print() instead?... I did, yet logging is fundamental to every application and eases the process of debugging. Using Loguru you have no excuse not to use logging from the start, this is as simple as from loguru import logger.
+## Qué es
 
-## Que problema resuelve
+Resuelve la fricción del módulo `logging` stdlib, que exige boilerplate para algo tan básico como imprimir logs legibles.
 
-quieres logging fácil y legible en Python sin pelear con stdlib
+## Por qué destaca
 
-## Por que tiene valor
+Es una de las librerías de logging más populares en Python por su API mínima (un único objeto `logger`) y su gran ergonomía frente al módulo estándar. Su salida con colores, rotación y captura de excepciones en una sola línea la hace ubicua en scripts y pipelines.
 
-Aporta valor en `platform` para python, typescript. Stack declarado: python, typescript.
+## Cómo funciona
 
-## Cuando usarlo
+Expone un único objeto `logger` preconfigurado con rotación, retención, formato enriquecido (colores, timestamps) y captura de excepciones con traceback en una sola llamada, sin necesidad de handlers ni formatters.
 
-quieres logging fácil y legible en Python sin pelear con stdlib
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install loguru`; sin configuración previa, `from loguru import logger` y a usar.
 
-ya usas el stdlib `logging` configurado o tienes un stack de observabilidad corporativo.
+## Casos de uso
 
-## Tipo de instalacion
+- Logs legibles sin configuración
+- Instrumentar pipelines y scripts
+- Captura de excepciones con contexto sin boilerplate
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres logging fácil y legible en Python sin pelear con stdlib | ya usas el stdlib `logging` configurado o tienes un stack de observabilidad corporativo |
 
-python, typescript
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python
+- **Modelos / API:** N/A.
+- **Etiquetas:** `observability` `evaluation` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [litellm](litellm.md) | 63k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
-- `litellm`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [Delgan/loguru](https://github.com/Delgan/loguru)
+- 🌐 Web: <https://loguru.readthedocs.io>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con litellm cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres logging fácil y legible en Python sin pelear con stdlib. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

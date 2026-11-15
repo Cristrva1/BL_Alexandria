@@ -1,60 +1,62 @@
-# swr
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Componentes, iconos y sistemas de diseño
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🔄 swr
 
-## Decision
+> Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 32.5k | MIT | TypeScript | 2026-10-16 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-SWR is a React Hooks library for data fetching.
+## Qué es
 
-## Que problema resuelve
+Cubre el caso de consumir APIs en frontend sin manejar caché a mano.
 
-manejas datos remotos en React y quieres caché simple
+## Por qué destaca
 
-## Por que tiene valor
+Creada por Vercel, ofrece una DX muy pulida para consumir APIs y es referencia junto a React Query. Su peso mínimo y la revalidación en foco/intervalo cubren la mayoría de apps sin configuración.
 
-Aporta valor en `library` para javascript, javascript-typescript, react, typescript. Stack declarado: javascript/typescript, typescript, javascript, react.
+## Cómo funciona
 
-## Cuando usarlo
+Hook `useSWR(key, fetcher)` que cachea por clave, revalida al recuperar foco o en intervalo, y deduplica peticiones simultáneas al mismo key.
 
-manejas datos remotos en React y quieres caché simple
+## Instalación rápida
 
-## Cuando NO usarlo
+`npm i swr`. Solo necesita un fetcher (una función async) por clave; funciona con cualquier API REST/GraphQL.
 
-prefieres React Query con su modelo de caché global más rico.
+## Casos de uso
 
-## Tipo de instalacion
+- Consumir APIs en frontend con caché y revalidación
+- Datos en tiempo casi real sin WebSocket
+- Mutaciones optimistas con `useSWRMutation`
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| manejas datos remotos en React y quieres caché simple | prefieres React Query con su modelo de caché global más rico |
 
-javascript/typescript, typescript, javascript, react
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** JavaScript/React
+- **Modelos / API:** N/A.
+- **Etiquetas:** `ui` `typescript`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [heroui](heroui.md) | 31.2k | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. |
 
-- `heroui`
-- `web app moderna`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [vercel/swr](https://github.com/vercel/swr)
+- 🌐 Web: <https://swr.vercel.app>
+- 🧪 Receta: [Web app moderna con IA](../playbooks/web-app-moderna-con-ia.md)
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con heroui, web app moderna cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si manejas datos remotos en React y quieres caché simple. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,61 +1,69 @@
-# LuxTTS
+[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Síntesis y clonación de voz
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🗣️ LuxTTS
 
-## Decision
+> Modelo de TTS ligero con clonación de voz que genera audio hasta 150 veces más rápido que tiempo real.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 5.5k | Apache-2.0 | Python | 2026-06-05 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-LuxTTS is an lightweight zipvoice based text-to-speech model designed for high quality voice cloning and realistic generation at speeds exceeding 150x realtime.
+## Qué es
 
-## Que problema resuelve
+Basado en ZipVoice, pensado para clonación rápida y realista con pocos recursos.
 
-quieres luxtts
+## Por qué destaca
 
-## Por que tiene valor
+Velocidad muy alta con buena calidad.
 
-Aporta valor en `directory` para comfy, javascript, multimedia, python, typescript. Stack declarado: python, typescript, javascript, comfy.
+## Cómo funciona
 
-## Cuando usarlo
+Modelo de flujo compacto que sintetiza en pocos pasos.
 
-quieres luxtts
+## Instalación rápida
 
-## Cuando NO usarlo
+Sigue el README para instalar y descargar el modelo.
 
-el caso no requiere generación multimedia o ya usas alternativas dedicadas
+## Casos de uso
 
-## Tipo de instalacion
+- TTS rápido en lote
+- Clonación de voz ligera
+- Prototipos de voz
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| necesitas TTS con clonación muy rápido | buscas el proyecto más maduro; mira `chatterbox` |
 
-python, typescript, javascript, comfy
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, PyTorch
+- **Modelos / API:** Modelo propio.
+- **Etiquetas:** `tts` `audio` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [litellm](litellm.md) | 63k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
+| [cosmos](cosmos.md) | 12.3k | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. |
+| [ComfyUI](comfyui.md) | 146k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
 
-- `litellm`
-- `cosmos`
-- `comfyui`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Kokoro](kokoro.md) | 10k | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. |
+| [Chatterbox](chatterbox.md) | 27.7k | Modelo de texto a voz open source de Resemble AI con clonación de voz y control de emoción. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [ysharma3501/LuxTTS](https://github.com/ysharma3501/LuxTTS)
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
+---
 
-## Ideas profesionales
-
-Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres luxtts. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

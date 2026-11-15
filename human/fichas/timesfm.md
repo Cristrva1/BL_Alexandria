@@ -1,61 +1,62 @@
-# timesfm
+[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Modelos abiertos y fundacionales
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧠 TimesFM
 
-## Decision
+> Modelo fundacional de Google Research para pronosticar series de tiempo sin entrenamiento previo.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 35.4k | Apache-2.0 | Python | 2026-09-29 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-TimesFM predice series temporales con un decoder-only pretrained. Es un modelo de investigación/producción de forecasting, no un dashboard.
+## Qué es
 
-## Que problema resuelve
+Predice ventas, demanda o tráfico a partir del histórico sin entrenar un modelo propio (zero-shot).
 
-quieres timesfm (time series foundation model) is a pretrained time-series foundation
+## Por qué destaca
 
-## Por que tiene valor
+Calidad de pronóstico competitiva sin trabajo de modelado.
 
-Aporta valor en `library` para docker, python, typescript. Stack declarado: python, typescript, docker.
+## Cómo funciona
 
-## Cuando usarlo
+Transformer decoder preentrenado con miles de millones de puntos de series temporales.
 
-quieres timesfm (time series foundation model) is a pretrained time-series foundation
+## Instalación rápida
 
-## Cuando NO usarlo
+`pip install timesfm`.
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+## Casos de uso
 
-## Tipo de instalacion
+- Pronóstico de ventas
+- Planificación de inventario
+- Predicción de tráfico web
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| necesitas pronósticos rápidos sin entrenar modelos | necesitas explicabilidad estadística clásica |
 
-python, typescript, docker
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python, PyTorch, JAX
+- **Modelos / API:** Modelo propio TimesFM.
+- **Etiquetas:** `data` `analytics` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [Polars](polars.md) | 40.3k | Librería de DataFrames escrita en Rust, mucho más rápida que pandas. |
+| [DuckDB](duckdb.md) | 43k | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
 
-- `firecrawl`
-- `crawl4ai`
-- `scrapy`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [google-research/timesfm](https://github.com/google-research/timesfm)
+- 🌐 Web: <https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Combinar con firecrawl, crawl4ai, scrapy cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres timesfm (time series foundation model) is a pretrained time-series foundation. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

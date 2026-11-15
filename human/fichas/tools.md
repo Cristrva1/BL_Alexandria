@@ -1,59 +1,52 @@
-# tools
+[🏠 Inicio](../README.md)
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🧰 tools
 
-## Decision
+> Carpeta interna de herramientas auxiliares del hub; no es un producto para instalar.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| — | — | — | — | 🧰 Interna |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-Carpeta de herramientas auxiliares del hub, no un repositorio de producto. Sirve como referencia interna, no como dependencia de un proyecto.
+> 🧰 Carpeta interna del hub; no es un producto para instalar.
 
-## Que problema resuelve
+## Qué es
 
-quieres necesitas las capacidades que ofrece este repo
+Contiene utilidades de apoyo de la biblioteca. Sirve como referencia interna, no como dependencia de un proyecto.
 
-## Por que tiene valor
+## Por qué destaca
 
-Aporta valor en `library` para sin tags. Stack declarado: See repo.
+Uso interno.
 
-## Cuando usarlo
+## Cómo funciona
 
-quieres necesitas las capacidades que ofrece este repo
+Scripts auxiliares locales.
 
-## Cuando NO usarlo
+## Instalación rápida
 
-ya tienes una herramienta equivalente o no encaja con tu stack actual
+No se instala: es parte de este repositorio.
 
-## Tipo de instalacion
+## Casos de uso
 
-reference_only
+- Mantenimiento interno de la biblioteca
+- Referencia de utilidades
+- Apoyo a los scripts del hub
 
-## Stack / tecnologia detectada
+## ¿Es para ti?
 
-See repo
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| mantienes esta biblioteca | buscas una herramienta para tu proyecto |
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python
+- **Modelos / API:** No usa LLM.
+- **Etiquetas:** `skills`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+---
 
-- Ninguno declarado.
-
-## Contra que compite
-
-- Ninguno declarado.
-
-## Riesgos
-
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
-
-## Ideas profesionales
-
-Usarlo como finalista solo despues de comparar contra alternativas del mismo caso de uso.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres necesitas las capacidades que ofrece este repo. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

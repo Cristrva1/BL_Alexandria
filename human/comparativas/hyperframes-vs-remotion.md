@@ -1,14 +1,24 @@
-# hyperframes vs remotion
+[🏠 Inicio](../README.md) · [⚖️ Comparativas](README.md)
 
-Generado: 2026-06-25T03:39:27.698706+00:00
+# HyperFrames vs remotion
 
-| Criterio | hyperframes | remotion |
+| | [HyperFrames](../fichas/hyperframes.md) | [remotion](../fichas/remotion.md) |
 |---|---|---|
-| Uso real | framework npm para generar animaciones frame a frame de forma programática desde código. | framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
-| Elegir si | generas animación por frames | generas video a escala con React |
-| Evitar si | prefieres video en React ([remotion](#-remotion)). | trabajas en Python ([moviepy](#-moviepy)). |
-| Instalacion | reference_only | reference_only |
+| Qué hace | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
+| ⭐ Estrellas | 82k | 72.2k |
+| Elígelo si… | quieres que un agente de código genere videos con motion graphics a partir de HTML, con licencia permisiva | generas video a escala con React y quieres variantes parametrizadas |
+| Evítalo si… | tu equipo ya trabaja con componentes React y el ecosistema de `remotion`, o prefieres editar en una línea de tiempo visual | trabajas en Python (moviepy) o buscas un editor visual |
+| Ejecución | 🏠 local | 🏠 local |
+| Setup | 🟢 fácil | 🟡 medio |
+| Licencia | Apache-2.0 | Otra (ver repo) |
+| Instalación | `npx hyperframes init my-video` | `npm create video` |
 
-## Regla practica
+## Regla práctica
 
-Elige `hyperframes` si su caso de uso encaja mejor ahora. Deja `remotion` como alternativa, salvo que el proyecto necesite explicitamente ambos.
+- Elige **HyperFrames** si quieres que un agente de código genere videos con motion graphics a partir de HTML, con licencia permisiva.
+- Elige **remotion** si generas video a escala con React y quieres variantes parametrizadas.
+- Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
+
+---
+
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

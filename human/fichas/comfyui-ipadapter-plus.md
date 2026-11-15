@@ -1,61 +1,62 @@
-# ComfyUI_IPAdapter_plus
+[🏠 Inicio](../README.md) › [🖼️ Generación de Imagen & Visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Modelos, librerías y control
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🪞 ComfyUI_IPAdapter_plus
 
-## Decision
+> Conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una o varias imágenes de referencia para transferir estilo o identidad.
 
-DIFERIR
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 6.2k | GPL-3.0 | Python | 2025-04-14 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
-The IPAdapter are very powerful models for image-to-image conditioning. The subject or even just the style of the reference image(s) can be easily transferred to a generation. Think of it as a 1-image lora.
+## Qué es
 
-## Que problema resuelve
+Funciona como un "LoRA de una sola imagen": le das un referente y la salida hereda su look.
 
-trabajas en ComfyUI y necesitas consistencia visual por referencia
+## Por qué destaca
 
-## Por que tiene valor
+Es la implementación de referencia de IPAdapter en ComfyUI (de cubiq), un nodo casi imprescindible para mantener coherencia visual entre piezas de una misma campaña o serie.
 
-Aporta valor en `library` para comfy, frontend, javascript, postgres, python, typescript. Stack declarado: python, typescript, javascript, postgres, comfy.
+## Cómo funciona
 
-## Cuando usarlo
+Inyecta embeddings de imagen de referencia (extraídos vía CLIP vision) en el modelo de difusión sobre PyTorch+GPU durante el sampling de ComfyUI, ponderando la influencia del referente sin reentrenar el modelo base.
 
-trabajas en ComfyUI y necesitas consistencia visual por referencia
+## Instalación rápida
 
-## Cuando NO usarlo
+Clonar el repo en `custom_nodes/` de ComfyUI (o instalarlo desde ComfyUI Manager) y colocar los modelos IPAdapter y los pesos de CLIP vision en `models/`. Requiere ComfyUI con GPU.
 
-no usas ComfyUI o te basta con prompts de estilo.
+## Casos de uso
 
-## Tipo de instalacion
+- Mantener identidad/estilo entre piezas de una campaña
+- Control por referencia visual sin entrenar un LoRA
+- Transferir el look de un producto a variantes
 
-deferred
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| trabajas en ComfyUI y necesitas consistencia visual por referencia | no usas ComfyUI o te basta con prompts de estilo |
 
-python, typescript, javascript, postgres, comfy
+**Limitaciones:** Depende de pesos IPAdapter específicos (algunos de pago en civitai); la calidad de la transferencia varía mucho según el referente.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Python, ComfyUI, CLIP vision
+- **Modelos / API:** Local (difusión).
+- **Etiquetas:** `image` `python`
+- **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Con que se combina
+## Combina con
 
-- `litellm`
-- `cosmos`
-- `comfyui`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [ComfyUI](comfyui.md) | 146k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
 
-## Contra que compite
+## Enlaces
 
-- Ninguno declarado.
+- 🐙 GitHub: [cubiq/ComfyUI_IPAdapter_plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus)
 
-## Riesgos
+---
 
-Riesgo alto de instalacion o mantenimiento; diferir hasta que sea finalista claro.
-
-## Ideas profesionales
-
-Combinar con litellm, cosmos, comfyui cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: diferir. Tiene sentido si trabajas en ComfyUI y necesitas consistencia visual por referencia. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

@@ -1,60 +1,69 @@
-# huginn
+[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Motores de workflow y automatización
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🤖 huginn
 
-## Decision
+> Sistema de agentes self-hosted para automatizar tareas online y reaccionar a eventos, a menudo descrito como un "IFTTT/Zapier que controlas tú".
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 50.5k | MIT | Ruby | 2026-11-09 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-Huginn is a system for building agents that perform automated tasks for you online. They can read the web, watch for events, and take actions on your behalf. Huginn's Agents create and consume events, propagating them along a directed graph. Think of it as a hackable version of IFTTT or Zapier on your own server. You always know who has your data. You do.
+## Qué es
 
-## Que problema resuelve
+Vigila webs, feeds y APIs y dispara acciones cuando algo cambia, todo alojado por ti y sin depender de terceros.
 
-automatizas tareas orientadas a eventos y valoras la privacidad
+## Por qué destaca
 
-## Por que tiene valor
+Proyecto veterano y muy respetado en la comunidad open-source para monitoreo y scraping, valorado por su privacidad y su modelo de agentes encadenables. Su longevidad lo hace una opción estable para flujos de vigilancia.
 
-Aporta valor en `directory` para automation, docker, javascript, javascript-typescript, postgres, typescript. Stack declarado: javascript/typescript, typescript, javascript, docker, postgres.
+## Cómo funciona
 
-## Cuando usarlo
+Define "agents" que hacen polling o reciben webhooks y se conectan entre sí pasando eventos (la salida de uno alimenta al siguiente), sobre un stack Ruby on Rails con base de datos. Cada agent tiene un tipo (trigger, acción, filtro) y se configura por UI o YAML.
 
-automatizas tareas orientadas a eventos y valoras la privacidad
+## Instalación rápida
 
-## Cuando NO usarlo
+Vía `docker` (imagen oficial) o desplegando la app Rails manualmente; requiere MySQL/PostgreSQL y un entorno Ruby.
 
-quieres editor visual moderno o IA nativa ([n8n](#-n8n)).
+## Casos de uso
 
-## Tipo de instalacion
+- Vigilar fuentes externas y disparar acciones
+- Scraping + reglas de automatización
+- Encadenar eventos entre servicios sin SaaS
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| automatizas tareas orientadas a eventos y valoras la privacidad | quieres editor visual moderno o IA nativa (n8n) |
 
-javascript/typescript, typescript, javascript, docker, postgres
+**Limitaciones:** Proyecto veterano con ritmo de mantenimiento lento; sin IA integrada y UI menos pulida que alternativas modernas.
 
-## Instalacion detectada
+## Stack y modelos
 
-Repo local detectado: si
+- **Stack:** Ruby on Rails, MySQL/PostgreSQL, self-host
+- **Modelos / API:** No nativa; se integra vía APIs y webhooks.
+- **Etiquetas:** `automation` `ruby` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Con que se combina
+## Combina con
 
-- `n8n`
-- `novu`
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [novu](novu.md) | 40.3k | Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend. |
 
-## Contra que compite
+## Alternativas (elige una)
 
-- Ninguno declarado.
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [n8n](n8n.md) | 210k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
+| [Node-RED](node-red.md) | 23.8k | Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. |
 
-## Riesgos
+## Enlaces
 
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
+- 🐙 GitHub: [huginn/huginn](https://github.com/huginn/huginn)
 
-## Ideas profesionales
+---
 
-Combinar con n8n, novu cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si automatizas tareas orientadas a eventos y valoras la privacidad. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

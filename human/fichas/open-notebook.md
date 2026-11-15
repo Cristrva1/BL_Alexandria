@@ -1,60 +1,70 @@
-# open-notebook
+[🏠 Inicio](../README.md) › [🏠 IA Local: Modelos, Chats & Workspaces](../categorias/08-ia-local-modelos-chats-workspaces.md) › NotebookLM: alternativas y clientes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 📓 open-notebook
 
-## Decision
+> Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo.
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 41.8k | MIT | TypeScript | 2026-11-08 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-An open source, privacy-focused alternative to Google's Notebook LM!.
+## Qué es
 
-## Que problema resuelve
+Resuelve el envío de documentos sensibles a la nube que implica el NotebookLM oficial.
 
-quieres NotebookLM privado y sin cuotas
+## Por qué destaca
 
-## Por que tiene valor
+Cubre la demanda de un NotebookLM sin envío de datos a la nube y es uno de los proyectos de referencia en la comunidad open-source para este caso. Su autor (lfnovo) lo mantiene activo con soporte para modelos locales y comerciales.
 
-Aporta valor en `platform` para docker, fastapi, langchain, postgres, python, react, typescript. Stack declarado: python, typescript, react, docker, postgres, fastapi, langchain.
+## Cómo funciona
 
-## Cuando usarlo
+Un backend FastAPI indexa las fuentes y las consulta vía RAG contra modelos servidos por Ollama, con una UI React/Next.js para notebooks y generación de audio.
 
-quieres NotebookLM privado y sin cuotas
+## Instalación rápida
 
-## Cuando NO usarlo
+`docker` (imagen oficial) o `pip` más Ollama para los modelos locales. Requiere Ollama instalado y al menos un modelo descargado (p. ej. Llama 3) para el modo 100% local.
 
-prefieres el NotebookLM real automatizado ([notebooklm-py](#-notebooklm-py)).
+## Casos de uso
 
-## Tipo de instalacion
+- Subir un manual y generar un audio explicativo
+- Chats de consulta sobre tus PDFs privados
+- Síntesis temática de varias fuentes sin cuotas
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| quieres NotebookLM privado y sin cuotas | prefieres el NotebookLM real automatizado (notebooklm-py) |
 
-python, typescript, react, docker, postgres, fastapi, langchain
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Python (FastAPI), React/Next.js
+- **Modelos / API:** Llama 3/Gemma 2 vía Ollama o APIs comerciales.
+- **Etiquetas:** `notebooks` `research` `typescript` `docker`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [odysseus](odysseus.md) | 95.5k | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. |
+| [markitdown](markitdown.md) | 195k | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. |
 
-- `odysseus`
-- `markitdown`
+## Alternativas (elige una)
 
-## Contra que compite
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [DeepTutor](deeptutor.md) | 57.8k | Sistema de tutoría con agentes que personaliza el aprendizaje a partir de tus documentos. |
+| [SurfSense](surfsense.md) | 16.8k | Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. |
 
-- Ninguno declarado.
+## Enlaces
 
-## Riesgos
+- 🐙 GitHub: [lfnovo/open-notebook](https://github.com/lfnovo/open-notebook)
+- 🌐 Web: <https://www.open-notebook.ai>
+- 🧪 Receta: [Workspace privado local soberano](../playbooks/workspace-privado-local-soberano.md)
 
-Riesgo bajo o medio; validar solo cuando sea necesario para una decision concreta.
+---
 
-## Ideas profesionales
-
-Combinar con odysseus, markitdown cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si quieres NotebookLM privado y sin cuotas. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>

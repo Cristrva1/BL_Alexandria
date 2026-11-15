@@ -1,61 +1,63 @@
-# ui-ux-pro-max-skill
+[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Skills de diseño para agentes
 
-Generado: 2026-08-24T04:31:34.499362+00:00
+# 🎨 ui-ux-pro-max-skill
 
-## Decision
+> Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla".
 
-REFERENCIA
+| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
+|---|---|---|---|---|
+| 148k | MIT | Python | 2026-11-10 | 📦 Sí |
 
-## Para que sirve realmente
+**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-An AI skill that provides design intelligence for building professional UI/UX across multiple platforms and frameworks.
+## Qué es
 
-## Que problema resuelve
+Resuelve el punto débil habitual del código asistido por IA: la jerarquía visual y el acabado.
 
-generas UI con IA y el resultado se ve genérico o despulido
+## Por qué destaca
 
-## Por que tiene valor
+Aporta criterio de layout, tipografía y composición además de código, algo que los LLMs por sí solos no manejan bien. Se integra con asistentes populares (Claude Code, Codex, Cursor) vía una CLI propia y skills copiables.
 
-Aporta valor en `skill` para frontend, javascript, python, react, skills, typescript. Stack declarado: python, typescript, javascript, react.
+## Cómo funciona
 
-## Cuando usarlo
+Las skills inyectan guías de diseño (espaciado, jerarquía, motion) en el contexto del asistente, y la CLI `uipro-cli` (Node) orquesta la aplicación de esos criterios sobre el código generado, con reglas concretas para Tailwind/CSS.
 
-generas UI con IA y el resultado se ve genérico o despulido
+## Instalación rápida
 
-## Cuando NO usarlo
+Clona el repo y sigue su README; instala la CLI vía Node (`npx` o instalación local) y copia las skills al directorio de skills de tu asistente. Requiere Node.js y un asistente compatible con skills.
 
-no trabajas frontend o ya tienes un sistema de diseño impuesto.
+## Casos de uso
 
-## Tipo de instalacion
+- Mejorar layouts y jerarquía visual de UIs generadas por IA
+- Acabado profesional con Tailwind/CSS
+- Iterar diseño sin handoff manual con un diseñador
 
-reference_only
+## ¿Es para ti?
 
-## Stack / tecnologia detectada
+| ✅ Elígelo si… | ⛔ Evítalo si… |
+|---|---|
+| generas UI con IA y el resultado se ve genérico o despulido | no trabajas frontend o ya tienes un sistema de diseño impuesto |
 
-python, typescript, javascript, react
+## Stack y modelos
 
-## Instalacion detectada
+- **Stack:** Node.js (uipro-cli), TypeScript/React
+- **Modelos / API:** Agnóstico; funciona con cualquier asistente que cargue skills (Claude Code, Codex, Cursor).
+- **Etiquetas:** `skills` `design` `python`
+- **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-Repo local detectado: si
+## Combina con
 
-## Con que se combina
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [taste-skill](taste-skill.md) | 113k | Skills "anti-slop" para producir frontends premium (layout, tipografía, motion y espaciado) más skills de generación de imagen para crear mood boards de referencia. |
+| [impeccable](impeccable.md) | 107k | Guía de diseño para agentes de código (1 skill, 23 comandos, iteración en browser y 44 detectores de "tells" de UI por IA) que empuja al agente hacia frontends con criterio. |
+| [tailwindcss](tailwindcss.md) | 98.7k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
 
-- `taste-skill`
-- `impeccable`
-- `tailwindcss`
+## Enlaces
 
-## Contra que compite
+- 🐙 GitHub: [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
+- 🌐 Web: <https://www.uupm.cc/>
 
-- Ninguno declarado.
+---
 
-## Riesgos
-
-Riesgo de ruido: leer y seleccionar, no instalar catalogos completos.
-
-## Ideas profesionales
-
-Combinar con taste-skill, impeccable, tailwindcss cuando el flujo necesite mas de una pieza.
-
-## Veredicto
-
-Veredicto: referencia. Tiene sentido si generas UI con IA y el resultado se ve genérico o despulido. No debe instalarse por inercia.
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
