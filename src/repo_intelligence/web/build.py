@@ -14,6 +14,14 @@ from repo_intelligence.web.catalog import build_catalog
 _ASSETS = Path(__file__).resolve().parent / "assets"
 _TOKEN = "__CATALOG_JSON__"
 _ASSET_NAMES = ("app.js", "styles.css", "search.js", "decisions.js", "guided.js", "handbook.js", "techniques.js")
+# Binarias Labs brand files, copied as-is (see the brand guide: horizontal logo, isotype, app icon).
+_BRAND_FILES = (
+    "marca/binarias-labs.png",
+    "marca/binarias-labs-dark.png",
+    "marca/bl-mark-dark.png",
+    "marca/favicon.png",
+    "marca/apple-touch-icon.png",
+)
 
 
 class QuietHandler(SimpleHTTPRequestHandler):
@@ -43,6 +51,9 @@ def build_site(project_root: Path, output_dir: Path) -> dict:
     html = (_ASSETS / "index.html").read_text(encoding="utf-8").replace('__ASSET_VERSION__',version).replace(_TOKEN, payload)
     (output / "index.html").write_text(html, encoding="utf-8")
     for name in _ASSET_NAMES:
+        shutil.copyfile(_ASSETS / name, output / name)
+    for name in _BRAND_FILES:
+        (output / name).parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(_ASSETS / name, output / name)
     (output / "catalog.json").write_text(
         json.dumps(catalog, ensure_ascii=False, indent=2) + "\n",

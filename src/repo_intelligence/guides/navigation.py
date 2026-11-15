@@ -38,6 +38,10 @@ def render_navigation(root: Path, catalog: Catalog) -> None:
         readme[i:i]=['## Explora por área de trabajo', '', 'Empieza por [Frontend y páginas web](human/areas/frontend.md), [Ciberseguridad](human/areas/ciberseguridad.md), [Producción audiovisual](human/areas/audiovisual.md) o [Trading y finanzas](human/areas/trading.md). Consulta las demás áreas y sus subcategorías en [el mapa práctico](human/areas.md).', '', 'Para preparar tu agente: [Configuración de Claude Code](human/areas/configurar-claude-code.md) · [Configuración de Codex](human/areas/configurar-codex.md) · [Configuración de Antigravity](human/areas/configurar-antigravity.md).', '']
     start=readme.index('1. En esta página de GitHub pulsa **Code → Download ZIP**.')
     readme[start:start]=['Si prefieres guardar una copia para consultar en tu equipo:', '']
+    # Binarias Labs logo: web/build.py copies it to docs/marca when the explorer is built.
+    readme[0:0]=['<p align="center"><a href="https://cristrva1.github.io/BL_Alexandria/"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/marca/binarias-labs-dark.png"><img src="docs/marca/binarias-labs.png" alt="Binarias Labs" width="246" height="62"></picture></a></p>', '']
+    i=readme.index('**[Abrir Alexandría en línea](https://cristrva1.github.io/BL_Alexandria/)** — consulta la biblioteca sin descargar ni instalar nada.')
+    readme[i+1:i+1]=['', 'Un proyecto de **Binarias Labs**: tecnología que integra posibilidades.']
     (root/'README.md').write_text('\n'.join(readme)+'\n',encoding='utf8')
     for guide in GUIDES:
         lines=['[Inicio](README.md) · [Rutas por objetivo](rutas.md) · [Explorador](../docs/index.html)', '', '# '+guide['title'], '', guide['intro'], '']

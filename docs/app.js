@@ -219,8 +219,8 @@
       <div class="shell">
         <nav class="nav" aria-label="Secciones">
           <a class="brand" href="#/inicio">
-            <span class="seal" aria-hidden="true">A</span>
-            <span><small>Biblioteca de</small><strong>Alexandría</strong></span>
+            <img class="brand-mark" src="marca/bl-mark-dark.png" alt="" width="61" height="44">
+            <span><small>Binarias Labs</small><strong>Alexandría</strong></span>
           </a>
           <button class="nav-toggle" type="button" data-action="nav-toggle" aria-expanded="false" aria-controls="nav-items"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>Menú</button>
           <div class="nav-items" id="nav-items">${groups}</div>
@@ -233,7 +233,8 @@
   function siteFooter() {
     return `<footer class="site-foot"><div><h2>Biblioteca de Alexandría</h2><p>Un menú curado de ${catalog.counts.repos} repositorios de IA y automatización, explicado para personas que empiezan. Cada ficha separa qué hace, qué acceso necesita y cómo hacer una primera prueba.</p><p class="meta">Revisión documental: las instalaciones y los rendimientos no se ejecutaron en Alexandría. Comprueba siempre la fuente original.</p></div>
       <div><h2>Empieza</h2><ul><li><a href="#/empezar">Guíame paso a paso</a></li><li><a href="#/guia/vocabulario">Vocabulario básico</a></li><li><a href="#/acceso">Acceso y costes</a></li><li><a href="#/recetas">Recetas completas</a></li></ul></div>
-      <div><h2>Trabaja mejor</h2><ul><li><a href="#/tecnicas">Técnicas e ideas</a></li><li><a href="#/prompts">Plantillas de prompts</a></li><li><a href="#/prompts?type=commands">Comandos documentados</a></li><li><a href="https://github.com/Cristrva1/BL_Alexandria" target="_blank" rel="noreferrer">Código en GitHub</a></li></ul></div></footer>`;
+      <div><h2>Trabaja mejor</h2><ul><li><a href="#/tecnicas">Técnicas e ideas</a></li><li><a href="#/prompts">Plantillas de prompts</a></li><li><a href="#/prompts?type=commands">Comandos documentados</a></li><li><a href="https://github.com/Cristrva1/BL_Alexandria" target="_blank" rel="noreferrer">Código en GitHub</a></li></ul></div>
+      <div class="foot-brand"><picture><source srcset="marca/binarias-labs-dark.png" media="(prefers-color-scheme: dark)"><img src="marca/binarias-labs.png" alt="Binarias Labs" width="198" height="50" loading="lazy" decoding="async"></picture><p>Un proyecto de <strong>Binarias Labs</strong>. Tecnología que integra posibilidades.</p></div></footer>`;
   }
 
   function goalLinks(goals) {
