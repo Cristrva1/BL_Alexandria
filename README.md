@@ -2,6 +2,8 @@
 
 Encuentra qué usar entre cientos de repositorios de IA y automatización. Entiende qué hace cada uno, cómo empezar y si usa una suscripción, una API o un modelo local.
 
+**[Abrir Alexandría en línea](https://cristrva1.github.io/BL_Alexandria/)** — consulta la biblioteca sin descargar ni instalar nada.
+
 <!-- BL:STATS -->
 **498 repos curados** · **14 categorías** · **14 recetas** · 18 rutas por objetivo · acceso revisado el 2026-11-14
 <!-- /BL:STATS -->
@@ -21,6 +23,8 @@ Encuentra qué usar entre cientos de repositorios de IA y automatización. Entie
 ## Usa el explorador
 
 El explorador reúne búsqueda por tarea, filtros de acceso, fichas completas y comparación de hasta tres opciones. Incluye las guías y las recetas en la misma navegación.
+
+Si prefieres guardar una copia para consultar en tu equipo:
 
 1. En esta página de GitHub pulsa **Code → Download ZIP**.
 2. Extrae el ZIP en una carpeta de tu equipo.
