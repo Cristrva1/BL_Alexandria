@@ -1,18 +1,33 @@
-[🏠 Inicio](../README.md) › [📄 Documentos & Presentaciones](../categorias/13-documentos-presentaciones.md) › OCR
+[🏠 Inicio](../README.md) › [📄 Trabajar con documentos y presentaciones](../categorias/13-documentos-presentaciones.md) › OCR
 
 # 🔠 Tesseract
 
-> Motor de OCR open source clásico, con más de 100 idiomas.
+> Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idioma.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 77.5k | Apache-2.0 | C++ | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 77.5k | Apache-2.0 | C++ | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
 
-Base de muchas herramientas de OCR, ligero y sin GPU.
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
+
+Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idioma. La precisión depende del idioma, el escaneo y la preparación de la imagen.
 
 ## Por qué destaca
 
@@ -20,11 +35,21 @@ Estable, gratuito y disponible en todos los sistemas.
 
 ## Cómo funciona
 
-Red LSTM que reconoce líneas de texto en imágenes preprocesadas.
+Procesa imágenes y produce texto reconocible que puedes buscar, copiar o integrar en otros programas.
 
-## Instalación rápida
+## Cómo empezar
 
-`brew install tesseract` o `apt install tesseract-ocr`.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/tesseract-ocr/tesseract/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Tesseract para mi objetivo y necesito pasos guiados. Lee https://github.com/tesseract-ocr/tesseract/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Red LSTM que reconoce líneas de texto en imágenes preprocesadas.
 ## Stack y modelos
 
 - **Stack:** C++
-- **Modelos / API:** No usa LLM.
 - **Etiquetas:** `ocr` `cpp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -61,6 +85,12 @@ Red LSTM que reconoce líneas de texto en imágenes preprocesadas.
 
 - 🐙 GitHub: [tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract)
 - 🌐 Web: <https://tesseract-ocr.github.io/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/tesseract-ocr/tesseract/blob/main/README.md)
 
 ---
 

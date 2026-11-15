@@ -9,6 +9,9 @@
 | Elígelo si… | tienes una GPU de 60-80 GB o varias GPU y quieres un modelo de texto a video abierto de alta calidad | quieres el modelo de video abierto de referencia, con licencia permisiva, y tienes una GPU de 24 GB o más |
 | Evítalo si… | trabajas con GPU de consumo; prueba `ltx-video`, `wan2-2` o `wan2gp`, o la versión 1.5, más eficiente | tu GPU tiene menos de 24 GB o prefieres no trabajar con scripts; usa `wan2gp` o `comfyui` con modelos cuantizados |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🔴 pesado | 🔴 pesado |
 | Licencia | NOASSERTION | Apache-2.0 |
 | Instalación | `git clone https://github.com/Tencent-Hunyuan/HunyuanVideo` | `git clone https://github.com/Wan-Video/Wan2.2.git && cd Wan2.2 && pip install -r requirements.txt` |

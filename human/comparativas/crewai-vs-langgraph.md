@@ -9,6 +9,9 @@
 | Elígelo si… | quieres velocidad y un modelo mental simple de "equipo" | necesitas agentes con estado, control fino y persistencia |
 | Evítalo si… | necesitas control de bajo nivel o orquestación muy custom | quieres algo mínimo para un agente simple; mira `smolagents` |
 | Ejecución | ☁️ cloud/API | 🔀 híbrido |
+| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | Modelo local no documentado |
 | Setup | 🟢 fácil | 🟡 medio |
 | Licencia | MIT | MIT |
 | Instalación | `pip install crewai` | `pip install -U langgraph` |

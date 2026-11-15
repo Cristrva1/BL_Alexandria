@@ -1,16 +1,32 @@
-[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Agentes de código (terminal e IDE)
+[🏠 Inicio](../README.md) › [🕸️ Crear y usar agentes de IA](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Agentes de código (terminal e IDE)
 
 # 👨‍💻 Gemini CLI
 
 > Agente de IA open source de Google que lleva Gemini a tu terminal, con cuota gratuita generosa.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 109k | Apache-2.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 109k | Apache-2.0 | TypeScript | 2026-11-10 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
+| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Otras rutas | El README documenta acceso con una cuenta de Google mediante OAuth y rutas con API key. Consultar las cuotas del método elegido. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Programa, investiga y automatiza tareas desde la terminal con contexto de millones de tokens y búsqueda de Google integrada. Admite MCP y extensiones.
 
@@ -22,9 +38,27 @@ Cuota gratuita amplia con cuenta de Google y ventana de contexto enorme.
 
 Un CLI en Node.js orquesta herramientas (archivos, shell, búsqueda web, MCP) con modelos Gemini.
 
-## Instalación rápida
+## Cómo empezar
 
-`npx @google/gemini-cli` o `npm install -g @google/gemini-cli` y ejecuta `gemini`.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+**Comando de entrada documentado:**
+
+```shell
+npx @google/gemini-cli
+```
+
+Comando presente en el README revisado; no es una prueba de instalación.
+
+[Instrucciones originales de instalación](https://github.com/google-gemini/gemini-cli/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Gemini CLI para mi objetivo y necesito pasos guiados. Lee https://github.com/google-gemini/gemini-cli/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +75,6 @@ Un CLI en Node.js orquesta herramientas (archivos, shell, búsqueda web, MCP) co
 ## Stack y modelos
 
 - **Stack:** TypeScript, Node.js
-- **Modelos / API:** Modelos Gemini de Google.
 - **Etiquetas:** `coding-agent` `agents` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -64,6 +97,12 @@ Un CLI en Node.js orquesta herramientas (archivos, shell, búsqueda web, MCP) co
 
 - 🐙 GitHub: [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)
 - 🌐 Web: <https://geminicli.com>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/google-gemini/gemini-cli/blob/main/README.md)
 
 ---
 

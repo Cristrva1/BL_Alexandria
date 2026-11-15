@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🔌 MCP & Conectividad](../categorias/05-mcp-conectividad.md) › Servidores MCP destacados
+[🏠 Inicio](../README.md) › [🔌 Conectar herramientas con MCP](../categorias/05-mcp-conectividad.md) › Servidores MCP destacados
 
 # 🔌 Context7
 
 > Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 64.8k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 64.8k | MIT | TypeScript | 2026-08-23 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios. |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta. |
+| Coste | El coste depende del proveedor o la ruta. El cliente MCP usa su propio modelo. Context7 recomienda una API key y aplica límites o planes al servicio de documentación. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+
+Puede conectarse a un cliente con soporte MCP, incluido Claude Code o Codex. Debes configurar el servidor y sus permisos.
+
+## Qué puedes hacer con él
 
 Evita que el modelo invente APIs viejas: busca la documentación vigente de la librería que estás usando y la inyecta en el prompt.
 
@@ -22,9 +37,23 @@ Muy adoptado en agentes de código; reduce errores por APIs obsoletas.
 
 Indexa documentación de miles de proyectos y la sirve por MCP filtrada por librería y versión.
 
-## Instalación rápida
+## Cómo empezar
 
-Añade a tu cliente MCP: `npx -y @upstash/context7-mcp` (o el servidor remoto con clave).
+Se configura en tu agente. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un cliente MCP y el acceso a Context7 que requiera la ruta elegida.
+
+1. Elige el servidor remoto o la configuración documentada para tu cliente.
+2. Configura la API key recomendada y comprueba los límites de tu plan si la necesitas.
+3. Consulta la documentación de una librería concreta y verifica que la respuesta corresponde a su versión.
+
+[Instrucciones originales de instalación](https://github.com/upstash/context7/blob/master/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Context7 para mi objetivo y necesito pasos guiados. Lee https://github.com/upstash/context7/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +72,6 @@ Añade a tu cliente MCP: `npx -y @upstash/context7-mcp` (o el servidor remoto co
 ## Stack y modelos
 
 - **Stack:** TypeScript
-- **Modelos / API:** No usa LLM.
 - **Etiquetas:** `mcp` `docs` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -66,6 +94,12 @@ Añade a tu cliente MCP: `npx -y @upstash/context7-mcp` (o el servidor remoto co
 - 🐙 GitHub: [upstash/context7](https://github.com/upstash/context7)
 - 🌐 Web: <https://context7.com>
 - 🧪 Receta: [Agente de código potenciado](../playbooks/agente-de-codigo-potenciado.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/upstash/context7/blob/master/README.md)
 
 ---
 

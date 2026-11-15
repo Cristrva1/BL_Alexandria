@@ -10,47 +10,28 @@ Output package (default: ``menu_portable/``)::
     menu_portable/
         REPO_MENU.md            <- ENTRY POINT. AI reads this first.
         REPO_MENU_cats/         <- per-category detail (load only finalists)
-            01-*.md ... 13-*.md
+            NN-*.md
         REPO_MENU_DATA.json     <- machine-readable mirror (optional, for agents that prefer JSON)
 
 The compact index lists every repo as one line. Detail files add full desc,
-stack, derived install command (with confidence), choose_if/avoid_if,
+stack, sourced entry command (when documented), choose_if/avoid_if,
 combines_with and alternatives.
 """
 from __future__ import annotations
 
 import json
 import re
+from repo_intelligence.core.access import access_facts, access_routes, access_rows
 from datetime import datetime, timezone
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
-# Install command derivation
+# Documented entry commands
 # ---------------------------------------------------------------------------
 
 # Confidence symbols rendered in the menu.
-_OK = "ok"        # high confidence
-_MAYBE = "verify"  # medium: name/command may need adjustment
-_LOW = "clone"    # low: only clone is safe; check README
-
-# PyPI / npm name normalization: suffixes that are not part of the package name.
-_PKG_SUFFIXES = (
-    "-python", "-js", "-ts", "-core", "-sdk", "-cli", "-server", "-api",
-    "-lib", "-wrapper",
-)
-
-
-def _norm_pkg(name: str) -> str:
-    n = name.lower()
-    for suf in _PKG_SUFFIXES:
-        if n.endswith(suf) and len(n) > len(suf):
-            n = n[: -len(suf)]
-    return n
-
-
-def _has(stack: str, *needles: str) -> bool:
-    s = stack.lower()
-    return any(n in s for n in needles)
+_OK = "ok"        # command selected from the reviewed source
+_LOW = "clone"    # legacy key retained for exports: consult the original guide
 
 
 def derive_install(repo: dict) -> tuple[str, str, str]:
@@ -59,56 +40,14 @@ def derive_install(repo: dict) -> tuple[str, str, str]:
     ``repo`` is the merged view: compact fields (role/exec/setup) + detail
     fields (stack/repo). Missing fields are tolerated.
     """
-    role = (repo.get("role") or "").lower()
-    exec_ = (repo.get("exec") or "").lower()
-    stack = repo.get("stack") or ""
-    repo_url = repo.get("repo") or ""
-    name = repo.get("name") or repo.get("id") or ""
-    slug = repo_url.rstrip("/").split("/")[-1] if repo_url else name
-    if slug.endswith(".git"):
-        slug = slug[:-4]
-    clone = f"git clone {repo_url}" if repo_url else f"git clone <{name}>"
-
-    # --- Cloud / SaaS: no local install, just credentials -------------------
-    if exec_ == "cloud" and role in ("platform", "app", "runtime"):
-        return ("Crear cuenta / API key en el proveedor (no self-host).", _OK,
-                "Servicio gestionado; no se clona.")
-
-    # --- Skills / directories / catalogs: copy as reference -----------------
-    if role in ("skill", "directory"):
-        return (f"Copiar la skill a la carpeta de skills de tu agente "
-                f"(p.ej. .claude/skills/{name}/). Si necesitas el código: {clone}",
-                _OK, "Material de referencia/playbook; no es una dependencia runtime.")
-
-    # --- Platforms / runtimes / apps: usually clone + run -------------------
-    if role in ("platform", "runtime", "app"):
-        if _has(stack, "docker"):
-            return (f"{clone} && cd {slug} && docker compose up -d", _MAYBE,
-                    "Requiere Docker; el compose puede variar — revisa docker-compose.yml.")
-        if _has(stack, "python"):
-            return (f"{clone} && cd {slug} && (uv sync || pip install -r requirements.txt)", _MAYBE,
-                    "Proyecto Python; usa uv si hay pyproject.toml/uv.lock.")
-        if _has(stack, "node", "typescript", "javascript", "fastify", "nest"):
-            return (f"{clone} && cd {slug} && (pnpm install || npm install)", _MAYBE,
-                    "Proyecto Node; usa pnpm si hay pnpm-lock.yaml.")
-        return (f"{clone} (verificar README para build/run)", _LOW,
-                "Stack no claro; revisa el README tras clonar.")
-
-    # --- Libraries: prefer package manager ----------------------------------
-    if role == "library":
-        if _has(stack, "python"):
-            pkg = _norm_pkg(name)
-            return (f"pip install {pkg}   (o: uv add {pkg})", _MAYBE,
-                    f"Nombre PyPI puede diferir de '{name}'; verifica en pypi.org.")
-        if _has(stack, "node", "typescript", "javascript"):
-            pkg = _norm_pkg(name)
-            return (f"npm install {pkg}   (o: pnpm add {pkg})", _MAYBE,
-                    f"Nombre npm puede diferir de '{name}'; verifica en npmjs.com.")
-        return (f"{clone} (verificar README para install)", _LOW,
-                "Stack no claro; revisa el README tras clonar.")
-
-    # --- Fallback -----------------------------------------------------------
-    return (f"{clone} (verificar README)", _LOW, "Tipo no reconocido.")
+    getting = repo.get("getting_started") or {}
+    command = getting.get("command") or ""
+    if command and getting.get("command_status") == "documented":
+        return command, _OK, "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
+    if getting.get("kind") == "reference" or repo.get("role") == "directory":
+        return "Consultar el material original; elegir un ejemplo antes de instalar.", _LOW, "Una referencia no se instala como un servicio único."
+    source = getting.get("source") or repo.get("repo") or repo.get("repo_url") or "el README original"
+    return "Seguir la instalación original: " + source, _LOW, "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo."
 
 
 # ---------------------------------------------------------------------------
@@ -307,7 +246,7 @@ def _write_entry(out: Path, scan: dict, merged: dict, by_cat: dict,
     lines.append("6. **Solo para finalistas (<8):** abre `REPO_MENU_cats/NN-*.md` para")
     lines.append("   desc, `choose_if`, `avoid_if`, `combines_with` y el comando de")
     lines.append("   instalación derivado.")
-    lines.append("7. **Instalación:** comando marcado `+` seguro · `~` verificar nombre ·")
+    lines.append("7. **Instalación:** comando marcado `+` documentado en la fuente · `~` por revisar ·")
     lines.append("   `?` solo clone + README.")
     lines.append("")
     lines.append("REGLA CLAVE — herramienta de código ≠ modelo en ejecución:")
@@ -319,7 +258,7 @@ def _write_entry(out: Path, scan: dict, merged: dict, by_cat: dict,
     lines.append("LEYENDA de columnas del índice:")
     lines.append("`role`: P=plataforma R=runtime L=librería S=skill D=catálogo A=app")
     lines.append("`exec`: loc=local cld=cloud hyb=híbrido · `setup`: E=easy M=medium H=heavy")
-    lines.append("`inst`: +=comando seguro ~=verificar ?=solo clone")
+    lines.append("`inst`: +=documentado ~=revisar ?=consultar fuente")
     lines.append("`tags` / `prov` / `tools` (`agent_tools`): solo si el repo los declara")
     lines.append("`alt`: repos sustitutos (elige uno)")
     lines.append("")
@@ -394,7 +333,7 @@ def _write_entry(out: Path, scan: dict, merged: dict, by_cat: dict,
     lines.append("- `role=library` Python → `pip install <pkg>` / `uv add <pkg>` (verifica nombre).")
     lines.append("- `role=library` Node → `npm install <pkg>` (verifica nombre).")
     lines.append("- `exec=cloud` → servicio gestionado: API key, no se clona.")
-    lines.append("- Marca `?` → solo `git clone` es seguro; revisa el README del repo.")
+    lines.append("- Marca `?` → revisa la instalación original; clonar no equivale a instalar.")
     lines.append("")
     lines.append("> Si un comando marcado `~` falla, busca el nombre real del paquete en")
     lines.append("> pypi.org / npmjs.com o clona el repo y lee su manifest.")
@@ -482,6 +421,8 @@ def _detail_block(r: dict) -> str:
     b.append("")
     b.append(f"**Qué es:** {desc}")
     b.append(f"**Stack:** {stack}")
+    b.append("**Acceso y costes:**")
+    b.extend(f"- {title}: {body}" for title, body in access_rows(r))
     b.append(f"**Repo:** {repo_url}")
     b.append("")
     b.append(f"**Instalación** [{conf_icon}]: `{install}`")
@@ -512,6 +453,9 @@ def _json_repo(r: dict) -> dict:
         "mcp": r.get("mcp"),
         "prov": r.get("prov") or [],
         "tags": r.get("tags") or [],
+        "routes": access_routes(r),
+        "access": access_facts(r),
+        "getting_started": r.get("getting_started") or {},
         "one": _oneline(_compact_desc(r), 160),
         "desc": _oneline(_best_desc(r), 400),
         "stack": r.get("stack") or "",

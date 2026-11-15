@@ -1,18 +1,33 @@
-[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Ecosistema n8n
+[🏠 Inicio](../README.md) › [🤖 Automatizar negocios y comunicación](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Ecosistema n8n
 
 # 🔁 n8n_io
 
 > Copia local del repositorio oficial de n8n (mismo proyecto que n8n), mantenida como referencia o espejo del código fuente.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 211k | Otra (ver repo) | TypeScript | 2026-11-10 | 🧰 Interna |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 211k | Otra (ver repo) | TypeScript | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
 > 🔁 Alias local de `n8n`; usa esa ficha.
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | API: por confirmar. No se ha verificado si la ruta elegida necesita una API de IA. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Ejecución con modelos locales por confirmar. Ejecutar el programa en tu equipo no demuestra que el modelo también sea local. |
+| Coste | Coste por confirmar. Código disponible no significa servicios, modelos, infraestructura o licencias sin coste. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos originales de la variante que vayas a usar. |
+
+Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+
+## Qué puedes hacer con él
 
 No aporta nada distinto a la ficha principal.
 
@@ -24,7 +39,7 @@ No aporta valor propio frente a la ficha principal; existe solo como duplicado d
 
 Es idéntica a n8n; encadena nodos en workflows ejecutados por un runtime Node.js con nodos de IA basados en LangChain.
 
-## Instalación rápida
+## Cómo empezar
 
 La misma que n8n (`docker compose`, imagen Docker oficial o `npx n8n`).
 
@@ -43,7 +58,6 @@ La misma que n8n (`docker compose`, imagen Docker oficial o `npx n8n`).
 ## Stack y modelos
 
 - **Stack:** Node.js, TypeScript
-- **Modelos / API:** Igual que n8n.
 - **Etiquetas:** `automation` `typescript` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 

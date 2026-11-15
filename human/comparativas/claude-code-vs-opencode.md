@@ -9,6 +9,9 @@
 | Elígelo si… | quieres el agente de código más capaz para tareas largas en tu repo | quieres un agente de código abierto y multi-modelo |
 | Evítalo si… | necesitas un agente totalmente abierto y multi-modelo; mira `opencode` | prefieres la experiencia oficial de un proveedor; mira `claude-code` o `codex` |
 | Ejecución | ☁️ cloud/API | 🔀 híbrido |
+| API de IA | API de IA opcional | Depende de la ruta elegida |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | Modelo local no documentado |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | — | MIT |
 | Instalación | `curl -fsSL https://claude.ai/install.sh \| bash` | `curl -fsSL https://opencode.ai/install \| bash` |

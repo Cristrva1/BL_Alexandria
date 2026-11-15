@@ -9,6 +9,9 @@
 | Elígelo si… | quieres una librería React completa y probada | quieres ser dueño del código de UI |
 | Evítalo si… | prefieres copiar componentes y estilarlos con Tailwind; mira `ui` | prefieres una lib "llave en mano" con updates automáticos (heroui) |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | MIT |
 | Instalación | `npm i @mui/material @emotion/react @emotion/styled` | `npx shadcn@latest init` |

@@ -9,6 +9,9 @@
 | Elígelo si… | quieres NotebookLM privado y sin cuotas | quieres un NotebookLM propio y con más fuentes |
 | Evítalo si… | prefieres el NotebookLM real automatizado (notebooklm-py) | solo quieres el NotebookLM de Google por código; mira `notebooklm-py` |
 | Ejecución | 🏠 local | 🔀 híbrido |
+| API de IA | API de IA opcional | Depende de la ruta elegida |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelos locales documentados | Modelo local no documentado |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | MIT | Apache-2.0 |
 | Instalación | `docker` (imagen oficial) o `pip` más Ollama para los modelos locales. Requiere Ollama… | Self-host con Docker Compose siguiendo la guía del repo. |

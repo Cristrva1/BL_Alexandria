@@ -9,6 +9,9 @@
 | Elígelo si… | quieres tests de LLM en Python como pytest | quieres pruebas automáticas de prompts y seguridad |
 | Evítalo si… | prefieres configurar en YAML y comparar modelos; mira `promptfoo` | necesitas observabilidad en producción; mira `langfuse` |
 | Ejecución | 🔀 híbrido | 🏠 local |
+| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | Modelo local no documentado |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | Apache-2.0 | MIT |
 | Instalación | `pip install -U deepeval` | `npx promptfoo@latest init` |

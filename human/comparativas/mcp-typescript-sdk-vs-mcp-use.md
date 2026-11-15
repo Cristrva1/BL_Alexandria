@@ -9,6 +9,9 @@
 | Elígelo si… | creas servidores MCP en TypeScript | construyes un servidor MCP propio y quieres productividad |
 | Evítalo si… | trabajas en Python; mira `fastmcp` | solo buscas usar uno ya hecho (awesome-mcp-servers) o necesitas control a nivel spec |
 | Ejecución | 🏠 local | 🔀 híbrido |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟡 medio |
 | Licencia | NOASSERTION | MIT |
 | Instalación | `npm install @modelcontextprotocol/sdk` | `npm install mcp-use` |

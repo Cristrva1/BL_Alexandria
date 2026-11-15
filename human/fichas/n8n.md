@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Motores de workflow y automatización
+[🏠 Inicio](../README.md) › [🤖 Automatizar negocios y comunicación](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Motores de workflow y automatización
 
 # 🔁 n8n
 
 > Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 211k | NOASSERTION | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 211k | NOASSERTION | TypeScript | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | El coste depende del proveedor o la ruta. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Conecta cualquier app con cualquier otra en tu propio servidor, sin pagar una suscripción mensual por cada flujo.
 
@@ -22,9 +37,23 @@ Se ha convertido en un estándar de facto para automatización self-hosted, muy 
 
 Encadena nodos (triggers, transformaciones, integraciones) en un grafo de workflow ejecutado por un runtime Node.js, con nodos de IA basados en LangChain y soporte MCP. Los workflows se exportan como JSON, lo que permite versionarlos.
 
-## Instalación rápida
+## Cómo empezar
 
-Vía `docker compose` o imagen Docker oficial; también `npx n8n` para una prueba rápida local. Requiere una base de datos (SQLite por defecto, PostgreSQL para producción).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- n8n Cloud o un entorno para el despliegue propio indicado en su documentación.
+
+1. Elige servicio gestionado o despliegue propio; son instalaciones y costes diferentes.
+2. Crea un primer workflow con un disparador y una acción sin IA.
+3. Añade un nodo de modelo solo si lo necesitas y configura su proveedor o el backend local correspondiente.
+
+[Instrucciones originales de instalación](https://github.com/n8n-io/n8n/blob/master/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar n8n para mi objetivo y necesito pasos guiados. Lee https://github.com/n8n-io/n8n/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +72,6 @@ Vía `docker compose` o imagen Docker oficial; también `npx n8n` para una prueb
 ## Stack y modelos
 
 - **Stack:** Node.js, TypeScript, Docker
-- **Modelos / API:** Múltiples por nodo (OpenAI, Anthropic…); se potencia con MCP y LLMs.
 - **Etiquetas:** `automation` `typescript` `docker`
 - **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
@@ -51,8 +79,8 @@ Vía `docker compose` o imagen Docker oficial; también `npx n8n` para una prueb
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [n8n-mcp](n8n-mcp.md) | 23.3k | Servidor MCP que expone a la IA la documentación y los esquemas de los más de 1.845 nodos de n8n (816 core + 1.029 comunitarios) para ayudar a construir y depurar flujos. |
-| [n8n-skills](n8n-skills.md) | 6.6k | Conjunto de 14 skills estructuradas para Claude Code orientadas a construir flujos de n8n correctos, evitando errores al generar su JSON. |
+| [n8n-mcp](n8n-mcp.md) | 23.3k | Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows. |
+| [n8n-skills](n8n-skills.md) | 6.6k | Skills para ayudar a un agente a construir, revisar y depurar workflows de n8n con sus nodos y herramientas. |
 | [evolution-api](evolution-api.md) | 10.1k | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. |
 
 ## Alternativas (elige una)
@@ -69,6 +97,12 @@ Vía `docker compose` o imagen Docker oficial; también `npx n8n` para una prueb
 - 🐙 GitHub: [n8n-io/n8n](https://github.com/n8n-io/n8n)
 - 🌐 Web: <https://n8n.io>
 - 🧪 Receta: [Bot de WhatsApp con IA](../playbooks/bot-de-whatsapp-con-ia.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/n8n-io/n8n/blob/master/README.md)
 
 ---
 

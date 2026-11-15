@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Apps internas y bases de datos no-code
+[🏠 Inicio](../README.md) › [🤖 Automatizar negocios y comunicación](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Apps internas y bases de datos no-code
 
 # 🧱 ToolJet
 
 > Plataforma low-code para herramientas internas, dashboards y flujos, con generación de apps por IA.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 41.2k | AGPL-3.0 | HTML | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 41.2k | AGPL-3.0 | HTML | 2026-06-24 |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | El coste depende del proveedor o la ruta. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Construye apps internas arrastrando componentes y conectando bases y APIs, o genéralas describiéndolas con IA. Pensada para equipos de operaciones y TI.
 
@@ -22,9 +37,19 @@ Incluye base de datos propia, workflows y generación de apps con IA en la misma
 
 Un editor React define apps que consultan fuentes a través de un servidor Node; los workflows corren en el backend.
 
-## Instalación rápida
+## Cómo empezar
 
-`docker run -p 80:80 tooljet/try:ee-lts-latest` para probar; para producción usa su Docker Compose.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/ToolJet/ToolJet/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar ToolJet para mi objetivo y necesito pasos guiados. Lee https://github.com/ToolJet/ToolJet/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Un editor React define apps que consultan fuentes a través de un servidor Node;
 ## Stack y modelos
 
 - **Stack:** TypeScript, React, Node.js, PostgreSQL
-- **Modelos / API:** Generación de apps con IA vía su plataforma.
 - **Etiquetas:** `ui` `automation` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -64,6 +88,12 @@ Un editor React define apps que consultan fuentes a través de un servidor Node;
 
 - 🐙 GitHub: [ToolJet/ToolJet](https://github.com/ToolJet/ToolJet)
 - 🌐 Web: <https://tooljet.com>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/ToolJet/ToolJet/blob/main/README.md)
 
 ---
 

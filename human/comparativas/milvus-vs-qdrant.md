@@ -9,6 +9,9 @@
 | Elígelo si… | esperas volúmenes muy grandes de vectores | quieres una base vectorial dedicada y rápida |
 | Evítalo si… | tu proyecto es pequeño; mira `chroma` o `qdrant` | ya tienes PostgreSQL y poco volumen; mira `pgvector` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🔴 pesado | 🟢 fácil |
 | Licencia | Apache-2.0 | Apache-2.0 |
 | Instalación | `pip install pymilvus` | `docker run -p 6333:6333 qdrant/qdrant` |

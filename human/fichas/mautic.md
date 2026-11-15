@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Email, marketing y notificaciones
+[🏠 Inicio](../README.md) › [🤖 Automatizar negocios y comunicación](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Email, marketing y notificaciones
 
 # 📣 mautic
 
 > Plataforma open-source de marketing automation y segmentación de audiencias, alternativa soberana a suites comerciales como HubSpot o Marketo.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 11k | NOASSERTION | PHP | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 11k | NOASSERTION | PHP | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Nutre leads por email con reglas y segmentos automáticos, sin ceder los datos de tus clientes a un SaaS.
 
@@ -22,9 +37,19 @@ Es la solución de marketing automation open-source más conocida y madura, resp
 
 Ejecuta campañas, scoring de leads y nurturing por email mediante reglas y segmentos, sobre una aplicación PHP/Symfony con base de datos MySQL. Las campañas se definen como secuencias de pasos condicionales que disparan emails o acciones.
 
-## Instalación rápida
+## Cómo empezar
 
-Vía `docker compose` o instalación PHP/MySQL tradicional sobre un servidor web; requiere MySQL y un MTA o servicio SMTP para los envíos.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/mautic/mautic/blob/7.x/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar mautic para mi objetivo y necesito pasos guiados. Lee https://github.com/mautic/mautic/blob/7.x/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Vía `docker compose` o instalación PHP/MySQL tradicional sobre un servidor web
 ## Stack y modelos
 
 - **Stack:** PHP/Symfony, MySQL, self-host
-- **Modelos / API:** No nativa; complementa flujos de contenido IA.
 - **Etiquetas:** `automation` `email` `php`
 - **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
@@ -59,6 +83,12 @@ Vía `docker compose` o instalación PHP/MySQL tradicional sobre un servidor web
 - 🐙 GitHub: [mautic/mautic](https://github.com/mautic/mautic)
 - 🌐 Web: <https://www.mautic.org>
 - 🧪 Receta: [Marketing de agencia](../playbooks/marketing-de-agencia.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/mautic/mautic/blob/7.x/README.md)
 
 ---
 

@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🖼️ Generación de Imagen & Visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Modelos, librerías y control
+[🏠 Inicio](../README.md) › [🖼️ Generar imágenes y trabajar con visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Modelos, librerías y control
 
 # 🪞 ComfyUI_IPAdapter_plus
 
 > Conjunto de nodos para ComfyUI que implementa IPAdapter, permitiendo condicionar la generación con una o varias imágenes de referencia para transferir estilo o identidad.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 6.2k | GPL-3.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 6.2k | GPL-3.0 | Python | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
+| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
+| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Funciona como un "LoRA de una sola imagen": le das un referente y la salida hereda su look.
 
@@ -22,9 +37,19 @@ Es la implementación de referencia de IPAdapter en ComfyUI (de cubiq), un nodo 
 
 Inyecta embeddings de imagen de referencia (extraídos vía CLIP vision) en el modelo de difusión sobre PyTorch+GPU durante el sampling de ComfyUI, ponderando la influencia del referente sin reentrenar el modelo base.
 
-## Instalación rápida
+## Cómo empezar
 
-Clonar el repo en `custom_nodes/` de ComfyUI (o instalarlo desde ComfyUI Manager) y colocar los modelos IPAdapter y los pesos de CLIP vision en `models/`. Requiere ComfyUI con GPU.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/cubiq/ComfyUI_IPAdapter_plus/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar ComfyUI_IPAdapter_plus para mi objetivo y necesito pasos guiados. Lee https://github.com/cubiq/ComfyUI_IPAdapter_plus/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Clonar el repo en `custom_nodes/` de ComfyUI (o instalarlo desde ComfyUI Manager
 ## Stack y modelos
 
 - **Stack:** Python, ComfyUI, CLIP vision
-- **Modelos / API:** Local (difusión).
 - **Etiquetas:** `image` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -56,6 +80,12 @@ Clonar el repo en `custom_nodes/` de ComfyUI (o instalarlo desde ComfyUI Manager
 ## Enlaces
 
 - 🐙 GitHub: [cubiq/ComfyUI_IPAdapter_plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/cubiq/ComfyUI_IPAdapter_plus/blob/main/README.md)
 
 ---
 

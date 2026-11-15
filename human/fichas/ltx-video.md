@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Video generativo y pipelines automáticos
+[🏠 Inicio](../README.md) › [🎬 Crear audio, voz y video](../categorias/12-audio-voz-video.md) › Video generativo y pipelines automáticos
 
 # 🎬 LTX-Video
 
 > Modelos abiertos de Lightricks (v0.9.x) para generar video desde texto o imagen, rápidos en GPU de consumo; hoy en modo legado.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 11.4k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 11.4k | Apache-2.0 | Python | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
+| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
+| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 LTX-Video es el repositorio de los modelos v0.9.x de Lightricks, un transformer de difusión (DiT) para texto a video, imagen a video, extensión de clips y video a video con condiciones por fotograma clave. Incluye variantes de 2B y 13B, destiladas y FP8, y LoRAs de control de pose, profundidad y bordes. Ya solo se mantiene como legado: los modelos nuevos están en LTX-2.
 
@@ -22,9 +37,19 @@ Destacó por su velocidad: las versiones destiladas generan clips HD en segundos
 
 DiT que trabaja sobre un VAE de video muy comprimido y acepta varias condiciones (imágenes o videos en fotogramas concretos) en una misma generación; un pipeline multiescala combina el modelo 13B con su versión destilada.
 
-## Instalación rápida
+## Cómo empezar
 
-`git clone https://github.com/Lightricks/LTX-Video.git && cd LTX-Video && python -m pip install -e .[inference]` y después `python inference.py --prompt ...`; para la mejor calidad, el equipo recomienda su flujo de ComfyUI.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/Lightricks/LTX-Video/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar LTX-Video para mi objetivo y necesito pasos guiados. Lee https://github.com/Lightricks/LTX-Video/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ DiT que trabaja sobre un VAE de video muy comprimido y acepta varias condiciones
 ## Stack y modelos
 
 - **Stack:** Python, PyTorch, Diffusers, ComfyUI
-- **Modelos / API:** Modelos LTX-Video v0.9.x en local (2B y 13B, destilados y FP8); no usa API externa.
 - **Etiquetas:** `video` `inference` `local` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -66,6 +90,12 @@ DiT que trabaja sobre un VAE de video muy comprimido y acepta varias condiciones
 
 - 🐙 GitHub: [Lightricks/LTX-Video](https://github.com/Lightricks/LTX-Video)
 - 🌐 Web: <https://ltx.io/model>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/Lightricks/LTX-Video/blob/main/README.md)
 
 ---
 

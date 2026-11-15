@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧬 Memoria, RAG & LLM Ops](../categorias/06-memoria-rag-llm-ops.md) › Memoria persistente para agentes
+[🏠 Inicio](../README.md) › [🧬 Memoria, conocimiento y operación de IA](../categorias/06-memoria-rag-llm-ops.md) › Memoria persistente para agentes
 
 # 🧠 Graphiti
 
 > Librería de Zep para construir grafos de conocimiento temporales en tiempo real para agentes.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 32.8k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 32.8k | Apache-2.0 | Python | 2026-11-10 |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
+| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
+| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Actualiza el grafo con cada nuevo dato sin recalcular todo y guarda cuándo era válido cada hecho. Ideal para memoria de agentes que cambia.
 
@@ -22,9 +37,27 @@ Manejo de tiempo y actualizaciones incrementales que otros grafos no ofrecen.
 
 Extrae entidades y relaciones con un LLM, las fusiona en Neo4j u otra base de grafos y consulta con búsqueda híbrida.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install graphiti-core` (requiere Neo4j o FalkorDB).
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+**Comando de entrada documentado:**
+
+```shell
+pip install graphiti-core
+```
+
+Comando presente en el README revisado; no es una prueba de instalación.
+
+[Instrucciones originales de instalación](https://github.com/getzep/graphiti/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Graphiti para mi objetivo y necesito pasos guiados. Lee https://github.com/getzep/graphiti/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +74,6 @@ Extrae entidades y relaciones con un LLM, las fusiona en Neo4j u otra base de gr
 ## Stack y modelos
 
 - **Stack:** Python, Neo4j
-- **Modelos / API:** OpenAI, Anthropic y otros.
 - **Etiquetas:** `memory` `rag` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -62,6 +94,12 @@ Extrae entidades y relaciones con un LLM, las fusiona en Neo4j u otra base de gr
 
 - 🐙 GitHub: [getzep/graphiti](https://github.com/getzep/graphiti)
 - 🌐 Web: <https://help.getzep.com/graphiti>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/getzep/graphiti/blob/main/README.md)
 
 ---
 

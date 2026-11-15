@@ -1,18 +1,33 @@
-[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › WhatsApp y mensajería
+[🏠 Inicio](../README.md) › [🤖 Automatizar negocios y comunicación](../categorias/01-automatizaci-n-mensajer-a-crm.md) › WhatsApp y mensajería
 
 # 🌐 fluxer
 
-> Plataforma generativa emergente con foco en audio y video mejorados, ofrecida como cliente Canary web/desktop; su API y self-host aún están en finalización.
+> Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 10.9k | AGPL-3.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 10.9k | AGPL-3.0 | TypeScript | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
 
-Apunta a unificar varios modelos generativos tras un cliente único.
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
+
+Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio. Organiza canales y comunicación de grupos; no es un generador de audio o video.
 
 ## Por qué destaca
 
@@ -20,11 +35,21 @@ Apuesta por audio/video con mejoras continuas y un cliente nativo, aunque es un 
 
 ## Cómo funciona
 
-Cliente en TypeScript/web que orquesta múltiples modelos generativos a través de servicios, con backend self-host aún no estabilizado y API en finalización según sus propios avisos.
+Reúne conversaciones de texto, voz y funciones comunitarias en clientes web y de escritorio.
 
-## Instalación rápida
+## Cómo empezar
 
-Descargar el cliente Canary (web/desktop) o `git clone` del repo y compilar con el toolchain de Node/TS; self-host sujeto a cambios. No hay paquete estable publicado.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/fluxerapp/fluxer/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar fluxer para mi objetivo y necesito pasos guiados. Lee https://github.com/fluxerapp/fluxer/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -42,7 +67,6 @@ Descargar el cliente Canary (web/desktop) o `git clone` del repo y compilar con 
 ## Stack y modelos
 
 - **Stack:** web/TS
-- **Modelos / API:** Múltiples (vía servicios del proyecto).
 - **Etiquetas:** `whatsapp` `chatbot` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -50,12 +74,18 @@ Descargar el cliente Canary (web/desktop) o `git clone` del repo y compilar con 
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Open-Generative-AI](open-generative-ai.md) | 34.7k | Plataforma alternativa libre a servicios premium de video/imagen que agrupa más de 200 modelos generativos accesibles desde terminal o integrados con agentes. |
+| [Open-Generative-AI](open-generative-ai.md) | 34.7k | Estudio abierto de generación de imagen y video que utiliza modelos ofrecidos mediante servicios de MuAPI. |
 
 ## Enlaces
 
 - 🐙 GitHub: [fluxerapp/fluxer](https://github.com/fluxerapp/fluxer)
 - 🌐 Web: <https://feedback.fluxer.com>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/fluxerapp/fluxer/blob/main/README.md)
 
 ---
 

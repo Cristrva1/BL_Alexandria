@@ -9,6 +9,9 @@
 | Elígelo si… | quieres navegación como humano y tolerancia a cambios de UI | quieres automatización web robusta con un toque de IA en TS |
 | Evítalo si… | necesitas scripts deterministas y baratos (playwright) o no quieres depender de un LLM por paso | quieres que un agente navegue solo; mira `browser-use` |
 | Ejecución | 🔀 híbrido | 🔀 híbrido |
+| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | Modelo local no documentado |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | MIT | MIT |
 | Instalación | `pip install browser-use` | `npx create-browser-app` |

@@ -9,6 +9,9 @@
 | Elígelo si… | quieres reemplazar Zapier con piezas propias en TypeScript | quieres el motor central de automatización con máximo catálogo |
 | Evítalo si… | ya dominas n8n y su ecosistema te basta | buscas algo minimalista o sin self-host |
 | Ejecución | 🔀 híbrido | 🏠 local |
+| API de IA | API de IA opcional | API de IA opcional |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | NOASSERTION | NOASSERTION |
 | Instalación | `docker compose` | `docker compose` |

@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Crawlers y extracción para IA
+[🏠 Inicio](../README.md) › [🕷️ Buscar y extraer información web](../categorias/04-scraping-b-squeda-research-web.md) › Crawlers y extracción para IA
 
 # 🦗 crawlee-python
 
 > Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 9.7k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 9.7k | Apache-2.0 | Python | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. Acerca las ventajas del Crawlee de Node a quienes ya viven en Python, con respaldo oficial de Apify y adopción en crecimiento.
 
@@ -22,9 +37,19 @@ Acerca las ventajas del Crawlee de Node a quienes ya viven en Python, con respal
 
 Ofrece crawlers basados en BeautifulSoup/HTTPX o en Playwright, con una cola de requests unificada, autoescalado y gestión de sesiones y proxies.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install crawlee` (extras como `crawlee[playwright]` para el modo navegador). Requiere Python y, para el modo navegador, los binarios de Playwright.
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/apify/crawlee-python/blob/master/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar crawlee-python para mi objetivo y necesito pasos guiados. Lee https://github.com/apify/crawlee-python/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Ofrece crawlers basados en BeautifulSoup/HTTPX o en Playwright, con una cola de 
 ## Stack y modelos
 
 - **Stack:** Python
-- **Modelos / API:** N/A (no usa LLM).
 - **Etiquetas:** `scraping` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -56,6 +80,12 @@ Ofrece crawlers basados en BeautifulSoup/HTTPX o en Playwright, con una cola de 
 
 - 🐙 GitHub: [apify/crawlee-python](https://github.com/apify/crawlee-python)
 - 🌐 Web: <https://crawlee.dev/python/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/apify/crawlee-python/blob/master/README.md)
 
 ---
 

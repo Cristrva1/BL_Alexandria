@@ -9,6 +9,9 @@
 | Elígelo si… | alimentas agentes/RAG con web y quieres salida limpia | necesitas leer páginas como Markdown al instante |
 | Evítalo si… | solo quieres HTML crudo o el presupuesto de API no encaja | vas a rastrear sitios completos; mira `crawl4ai` o `firecrawl` |
 | Ejecución | ☁️ cloud/API | ☁️ cloud/API |
+| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | Modelo local no documentado |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | AGPL-3.0 | Apache-2.0 |
 | Instalación | `npm i @mendable/firecrawl-js` | `curl https://r.jina.ai/https://ejemplo.com` |

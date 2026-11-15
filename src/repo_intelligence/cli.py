@@ -165,11 +165,15 @@ def recommend_project(
     project_file: Annotated[Path | None, typer.Option("--project-file", help="Markdown/text file with a long project brief.")] = None,
     tool: Annotated[str, typer.Option("--tool", help="Tool hint: auto, codex, claude-code, claude, antigravity, grok-build, open-code.")] = "auto",
     max_repos: Annotated[int, typer.Option("--max-repos", help="Maximum repositories to recommend.")] = 5,
+    route: Annotated[str, typer.Option("--route", help="Access: no_api, claude, codex, local_model, api, reference, review.")] = "",
 ) -> None:
     """Recommend repositories and install modes for a concrete project."""
     paths = ProjectPaths.load()
     project_text = _load_project_text(project, project_file)
-    result = recommend(paths.project_root, project_text, max_repos=max_repos, build_tool=tool)
+    try:
+        result = recommend(paths.project_root, project_text, max_repos=max_repos, build_tool=tool, access_route=route)
+    except ValueError as exc:
+        raise typer.BadParameter(str(exc), param_hint="--route") from exc
     table = Table(title="Recommended Repositories")
     table.add_column("Repo")
     table.add_column("Score")

@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🏠 IA Local: Modelos, Chats & Workspaces](../categorias/08-ia-local-modelos-chats-workspaces.md) › Motores para correr modelos en local
+[🏠 Inicio](../README.md) › [🏠 Usar modelos y asistentes locales](../categorias/08-ia-local-modelos-chats-workspaces.md) › Motores para correr modelos en local
 
 # 📏 llmfit
 
 > Herramienta para evaluar y medir el "fit" y la calidad de LLMs en una tarea concreta, orientada a comparar modelos con datos.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 39k | MIT | Rust | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 39k | MIT | Rust | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Resuelve la elección subjetiva de modelo: la conviertes en un flujo objetivo y reproducible con métricas.
 
@@ -22,9 +37,27 @@ Proyecto enfocado y de nicho, útil para llevar la elección de modelo a un fluj
 
 Ejecuta evaluaciones sobre las salidas de varios modelos frente a un dataset de prueba y reporta métricas de calidad, integrable en pipelines de integración continua para bloquear regresiones.
 
-## Instalación rápida
+## Cómo empezar
 
-Instalación según el repo (binario Go o paquete Python); requiere claves de los modelos a comparar y un dataset de evaluación.
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+**Comando de entrada documentado:**
+
+```shell
+uv tool install -U llmfit
+```
+
+Comando presente en el README revisado; no es una prueba de instalación.
+
+[Instrucciones originales de instalación](https://github.com/AlexsJones/llmfit/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar llmfit para mi objetivo y necesito pasos guiados. Lee https://github.com/AlexsJones/llmfit/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +74,6 @@ Instalación según el repo (binario Go o paquete Python); requiere claves de lo
 ## Stack y modelos
 
 - **Stack:** Go/Python
-- **Modelos / API:** Múltiples LLMs; agnóstico vía variables de entorno.
 - **Etiquetas:** `inference` `local` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -55,6 +87,12 @@ Instalación según el repo (binario Go o paquete Python); requiere claves de lo
 ## Enlaces
 
 - 🐙 GitHub: [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/AlexsJones/llmfit/blob/main/README.md)
 
 ---
 

@@ -9,6 +9,9 @@
 | Elígelo si… | quieres slides simples en Markdown | haces presentaciones técnicas y quieres control como código |
 | Evítalo si… | necesitas interactividad y componentes; mira `slidev` | necesitas slides para negocio generadas con IA; mira `presenton` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | MIT |
 | Instalación | `npm i -g @marp-team/marp-cli` | `npm init slidev@latest` |

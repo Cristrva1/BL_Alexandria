@@ -1,18 +1,33 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Guías, cursos y cookbooks
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Guías, cursos y cookbooks
 
 # 🎓 Generative AI for Beginners
 
-> Curso gratuito de Microsoft con 21 lecciones para empezar a construir aplicaciones con IA generativa.
+> Curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 124k | MIT | Jupyter Notebook | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 124k | MIT | Jupyter Notebook | 2026-11-10 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
 
-Recorre desde qué es un LLM hasta prompts, RAG, agentes, seguridad y fine-tuning, con código en Python y TypeScript. Está traducido a muchos idiomas, incluido el español.
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
+| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
+
+Curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa. Leer el curso no requiere una API; ejecutar cada práctica puede requerir servicios o modelos específicos.
 
 ## Por qué destaca
 
@@ -20,11 +35,21 @@ Curso completo, gratuito y mantenido por Microsoft, con ejercicios prácticos en
 
 ## Cómo funciona
 
-Cada lección trae video, texto y notebooks que usan Azure OpenAI, OpenAI o modelos abiertos.
+Organiza lecciones y ejercicios que introducen modelos, prompts y aplicaciones.
 
-## Instalación rápida
+## Cómo empezar
 
-No se instala: abre el repo o haz fork y sigue las lecciones en Codespaces.
+Material para leer. [Entender los términos](../vocabulario.md).
+
+1. Abre el material original y elige un capítulo o ejemplo.
+2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
+3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+
+[Instrucciones originales de instalación](https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Generative AI for Beginners para mi objetivo y necesito pasos guiados. Lee https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ No se instala: abre el repo o haz fork y sigue las lecciones en Codespaces.
 ## Stack y modelos
 
 - **Stack:** Python, TypeScript, Jupyter
-- **Modelos / API:** Azure OpenAI, OpenAI o modelos de GitHub Models.
 - **Etiquetas:** `learning` `prompts` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -61,6 +85,12 @@ No se instala: abre el repo o haz fork y sigue las lecciones en Codespaces.
 ## Enlaces
 
 - 🐙 GitHub: [microsoft/generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md)
 
 ---
 

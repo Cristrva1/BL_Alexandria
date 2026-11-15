@@ -9,6 +9,9 @@
 | Elígelo si… | quieres el agente de código más capaz para tareas largas en tu repo | usas ChatGPT u OpenAI y quieres un agente abierto en terminal |
 | Evítalo si… | necesitas un agente totalmente abierto y multi-modelo; mira `opencode` | trabajas con Claude como modelo principal; mira `claude-code` |
 | Ejecución | ☁️ cloud/API | ☁️ cloud/API |
+| API de IA | API de IA opcional | API de IA opcional |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | Modelo local no documentado |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | — | Apache-2.0 |
 | Instalación | `curl -fsSL https://claude.ai/install.sh \| bash` | `npm i -g @openai/codex` |

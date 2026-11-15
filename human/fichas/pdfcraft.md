@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [📄 Documentos & Presentaciones](../categorias/13-documentos-presentaciones.md) › Herramientas PDF
+[🏠 Inicio](../README.md) › [📄 Trabajar con documentos y presentaciones](../categorias/13-documentos-presentaciones.md) › Herramientas PDF
 
 # 📄 pdfcraft
 
 > Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 9.8k | AGPL-3.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 9.8k | AGPL-3.0 | TypeScript | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Apunta a ser la alternativa local y sin nube a los servicios online de PDF.
 
@@ -22,9 +37,25 @@ Todo el procesamiento ocurre en tu navegador, así que los documentos nunca sale
 
 Carga el PDF en el cliente y manipula sus páginas con librerías JS de PDF (p. ej. pdf-lib) en el propio navegador, sin subir nada a la nube; las operaciones son por página o por documento completo.
 
-## Instalación rápida
+## Cómo empezar
 
-Abrir la web en el navegador, o `npm install` y ejecutar en local desde el repo. No requiere backend ni GPU.
+Aplicación con interfaz. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un navegador compatible y un PDF de prueba.
+
+1. Abre la web enlazada por el README para probar la interfaz sin desplegar el código.
+2. Elige una operación sencilla, por ejemplo combinar o dividir archivos, y utiliza documentos de prueba.
+3. Descarga y abre el resultado. El despliegue propio con Node o Docker es una ruta distinta que requiere preparación técnica.
+
+[Instrucciones originales de instalación](https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md)
+
+[Abrir la web o descarga indicada por el autor](https://pdfcraft.devtoolcafe.com/en/)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar pdfcraft para mi objetivo y necesito pasos guiados. Lee https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +72,6 @@ Abrir la web en el navegador, o `npm install` y ejecutar en local desde el repo.
 ## Stack y modelos
 
 - **Stack:** web/TS
-- **Modelos / API:** N/A.
 - **Etiquetas:** `pdf` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -61,6 +91,12 @@ Abrir la web en el navegador, o `npm install` y ejecutar en local desde el repo.
 
 - 🐙 GitHub: [PDFCraftTool/pdfcraft](https://github.com/PDFCraftTool/pdfcraft)
 - 🌐 Web: <https://pdfcraft.devtoolcafe.com>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md)
 
 ---
 

@@ -1,16 +1,32 @@
-[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Asistentes autónomos y equipos de agentes
+[🏠 Inicio](../README.md) › [🕸️ Crear y usar agentes de IA](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Asistentes autónomos y equipos de agentes
 
 # ☤ hermes-agent
 
 > Entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 263k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 263k | MIT | Python | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
+| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
+| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Otras rutas | El proyecto documenta una suscripción propia de Nous Portal además de otros proveedores; los servicios incluidos y sus límites pertenecen a ese plan. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Ofrece un panel de control de escritorio para delegar tareas a agentes que corren en una sandbox local.
 
@@ -22,9 +38,19 @@ Aprovecha el razonamiento estructurado de los modelos Hermes y prioriza la ejecu
 
 Una app de escritorio (Tauri) coordina agentes con backend Python que invocan modelos Hermes locales o APIs comerciales como fallback, guardando memoria y skills autoaprendidas.
 
-## Instalación rápida
+## Cómo empezar
 
-`git clone` y build con Tauri/Cargo (más dependencias Python). Para modo local puro necesitas pesos de Hermes y una GPU razonable; sin GPU puede usar APIs comerciales.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/NousResearch/hermes-agent/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar hermes-agent para mi objetivo y necesito pasos guiados. Lee https://github.com/NousResearch/hermes-agent/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +69,6 @@ Una app de escritorio (Tauri) coordina agentes con backend Python que invocan mo
 ## Stack y modelos
 
 - **Stack:** Rust (Tauri), TypeScript, Python
-- **Modelos / API:** Hermes-3-Llama-3 local + APIs comerciales (OpenAI, Anthropic) como fallback.
 - **Etiquetas:** `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -51,7 +76,7 @@ Una app de escritorio (Tauri) coordina agentes con backend Python que invocan mo
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [ECC](ecc.md) | 303k | Sistema operativo/arnés unificado para desarrollar, ejecutar y desplegar en local agentes de IA de alto rendimiento de forma segura. |
+| [ECC](ecc.md) | 303k | Colección de plugins, skills, hooks y convenciones para organizar el trabajo de agentes de código en un proyecto. |
 | [odysseus](odysseus.md) | 95.6k | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. |
 
 ## Alternativas (elige una)
@@ -65,6 +90,12 @@ Una app de escritorio (Tauri) coordina agentes con backend Python que invocan mo
 
 - 🐙 GitHub: [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)
 - 🌐 Web: <https://hermes-agent.nousresearch.com>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/NousResearch/hermes-agent/blob/main/README.md)
 
 ---
 

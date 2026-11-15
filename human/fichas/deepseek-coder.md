@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Modelos abiertos y fundacionales
+[🏠 Inicio](../README.md) › [🧑‍💻 Entender código, trabajar con datos y entrenar modelos](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Modelos abiertos y fundacionales
 
 # 🧩 DeepSeek-Coder
 
 > Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 24.4k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 24.4k | MIT | Python | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
+| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
+| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Resuelve la dependencia de APIs propietarias para tareas de código: puedes desplegar el modelo en tu propia infraestructura.
 
@@ -22,9 +37,19 @@ Una de las alternativas abiertas más fuertes para tareas de código, competitiv
 
 Modelos transformer ejecutados con PyTorch sobre GPU; se cargan en local (p. ej. vía Hugging Face Transformers o vLLM) o se consumen por la API oficial de DeepSeek, con contextos largos aptos para repos.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install transformers torch` y descarga de pesos desde Hugging Face, o uso vía API de DeepSeek. El despliegue local requiere GPU con VRAM generosa según el tamaño del modelo.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar DeepSeek-Coder para mi objetivo y necesito pasos guiados. Lee https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Modelos transformer ejecutados con PyTorch sobre GPU; se cargan en local (p. ej.
 ## Stack y modelos
 
 - **Stack:** Python, PyTorch, GPU
-- **Modelos / API:** Modelos DeepSeek (local vía HF/vLLM o API oficial).
 - **Etiquetas:** `inference` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -58,6 +82,12 @@ Modelos transformer ejecutados con PyTorch sobre GPU; se cargan en local (p. ej.
 
 - 🐙 GitHub: [deepseek-ai/DeepSeek-Coder](https://github.com/deepseek-ai/DeepSeek-Coder)
 - 🌐 Web: <https://chat.deepseek.com/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/deepseek-ai/DeepSeek-Coder/blob/main/README.md)
 
 ---
 

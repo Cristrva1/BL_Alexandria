@@ -9,6 +9,9 @@
 | Elígelo si… | quieres SQL analítico rápido sin montar servidores | tu análisis con pandas es lento |
 | Evítalo si… | necesitas una base transaccional multiusuario; usa PostgreSQL | prefieres SQL; mira `duckdb` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | MIT |
 | Instalación | `pip install duckdb` | `pip install polars` |

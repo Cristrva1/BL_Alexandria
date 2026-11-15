@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Entender y empaquetar código para agentes
+[🏠 Inicio](../README.md) › [🧑‍💻 Entender código, trabajar con datos y entrenar modelos](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Entender y empaquetar código para agentes
 
 # 🧭 GitNexus
 
 > Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 48.5k | NOASSERTION | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 48.5k | NOASSERTION | TypeScript | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Resuelve el "llegar a un proyecto ajeno y no saber por dónde empezar": lo navegas y lo discutes en vez de leer ficheros sueltos.
 
@@ -22,9 +37,27 @@ Facilita comprender un repo concreto de forma interactiva en vez de leer fichero
 
 Una interfaz web (TypeScript) recorre el repositorio y lo presenta como vistas navegables, apoyándose en LLMs para responder preguntas y sugerir ideas sobre la estructura y el flujo del proyecto.
 
-## Instalación rápida
+## Cómo empezar
 
-`git clone https://github.com/abhigyanpatwari/GitNexus` y arranque del front web según el README; requiere Node.js y una clave de LLM para las preguntas.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+**Comando de entrada documentado:**
+
+```shell
+npm install -g gitnexus
+```
+
+Comando presente en el README revisado; no es una prueba de instalación.
+
+[Instrucciones originales de instalación](https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar GitNexus para mi objetivo y necesito pasos guiados. Lee https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +74,6 @@ Una interfaz web (TypeScript) recorre el repositorio y lo presenta como vistas n
 ## Stack y modelos
 
 - **Stack:** web/TypeScript
-- **Modelos / API:** Múltiples LLMs; configurable vía variables de entorno.
 - **Etiquetas:** `code` `typescript`
 - **Modo de instalación sugerido:** 🌍 **Global** — instálalo una vez en tu máquina
 
@@ -64,6 +96,12 @@ Una interfaz web (TypeScript) recorre el repositorio y lo presenta como vistas n
 - 🐙 GitHub: [abhigyanpatwari/GitNexus](https://github.com/abhigyanpatwari/GitNexus)
 - 🌐 Web: <https://gitnexus.vercel.app>
 - 🧪 Receta: [Análisis de repos grandes](../playbooks/analisis-de-repos-grandes.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md)
 
 ---
 

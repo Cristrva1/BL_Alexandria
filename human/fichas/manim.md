@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Video programático y con agentes
+[🏠 Inicio](../README.md) › [🎬 Crear audio, voz y video](../categorias/12-audio-voz-video.md) › Video programático y con agentes
 
 # 🎞️ Manim (ManimGL)
 
 > Motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 96.5k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 96.5k | MIT | Python | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Manim permite describir en código Python escenas con fórmulas LaTeX, gráficas, geometría y transformaciones animadas, y exportarlas a video. Este repo es ManimGL, la versión original que Grant Sanderson usa en 3Blue1Brown; la edición comunitaria (ManimCommunity/manim) es un fork más estable y mejor documentado.
 
@@ -22,9 +37,27 @@ Da una precisión difícil de lograr con un editor: cada objeto y transición se
 
 Cada escena es una clase Python con objetos matemáticos (Mobjects) y animaciones encadenadas; ManimGL las dibuja con OpenGL en una ventana interactiva y escribe el video con FFmpeg.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install manimgl` (Python 3.10+, con FFmpeg, OpenGL y, si quieres fórmulas, LaTeX; en Linux también Pango). Prueba con `manimgl example_scenes.py OpeningManimExample`.
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+**Comando de entrada documentado:**
+
+```shell
+pip install manimgl
+```
+
+Comando presente en el README revisado; no es una prueba de instalación.
+
+[Instrucciones originales de instalación](https://github.com/3b1b/manim/blob/master/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Manim (ManimGL) para mi objetivo y necesito pasos guiados. Lee https://github.com/3b1b/manim/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +76,6 @@ Cada escena es una clase Python con objetos matemáticos (Mobjects) y animacione
 ## Stack y modelos
 
 - **Stack:** Python, OpenGL, FFmpeg, LaTeX
-- **Modelos / API:** No usa LLM.
 - **Etiquetas:** `video` `dataviz` `learning` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -51,7 +83,7 @@ Cada escena es una clase Python con objetos matemáticos (Mobjects) y animacione
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Kokoro](kokoro.md) | 10.1k | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. |
+| [Kokoro](kokoro.md) | 10.1k | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. |
 | [MoviePy](moviepy.md) | 15.2k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
 | [FFmpeg](ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
 
@@ -64,6 +96,12 @@ Cada escena es una clase Python con objetos matemáticos (Mobjects) y animacione
 ## Enlaces
 
 - 🐙 GitHub: [3b1b/manim](https://github.com/3b1b/manim)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/3b1b/manim/blob/master/README.md)
 
 ---
 

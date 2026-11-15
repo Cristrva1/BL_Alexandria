@@ -1,18 +1,33 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Metodologías y harness para agentes de código
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Metodologías y harness para agentes de código
 
 # 🌌 ECC
 
-> Sistema operativo/arnés unificado para desarrollar, ejecutar y desplegar en local agentes de IA de alto rendimiento de forma segura.
+> Colección de plugins, skills, hooks y convenciones para organizar el trabajo de agentes de código en un proyecto.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 303k | MIT | JavaScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 303k | MIT | JavaScript | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
-## Qué es
+## Acceso, coste y equipo
 
-Actúa como capa intermedia entre el modelo y tu sistema, de modo que las acciones del agente pasan por un escudo antes de tocar el filesystem o la shell.
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
+| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
+
+Colección de plugins, skills, hooks y convenciones para organizar el trabajo de agentes de código en un proyecto. Se integra con distintos agentes mediante rutas de instalación específicas; no es una plataforma de modelos locales.
 
 ## Por qué destaca
 
@@ -20,11 +35,21 @@ Aporta una capa de seguridad de ejecución poco común en arneses de agentes, or
 
 ## Cómo funciona
 
-Intercepta y valida las acciones del agente (comandos bash, ficheros, red) mediante un core en Rust con hooks y memoria persistente, y solo las deja proseguir si cumplen la política definida.
+Agrupa instrucciones y automatizaciones para planificación, implementación y revisión.
 
-## Instalación rápida
+## Cómo empezar
 
-`git clone` del repo y compilación del core en Rust más dependencias en TS/Python/Go. Requiere toolchain de Rust y permisos para instalar hooks a nivel de sistema.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/affaan-m/ECC/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar ECC para mi objetivo y necesito pasos guiados. Lee https://github.com/affaan-m/ECC/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Intercepta y valida las acciones del agente (comandos bash, ficheros, red) media
 ## Stack y modelos
 
 - **Stack:** Rust (core), TypeScript, Python, Go
-- **Modelos / API:** Claude Code, Cursor, Zed, Codex, Gemini, Copilot.
 - **Etiquetas:** `automation` `skills` `javascript`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -57,6 +81,12 @@ Intercepta y valida las acciones del agente (comandos bash, ficheros, red) media
 
 - 🐙 GitHub: [affaan-m/ECC](https://github.com/affaan-m/ECC)
 - 🌐 Web: <https://ecc.tools>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/affaan-m/ECC/blob/main/README.md)
 
 ---
 

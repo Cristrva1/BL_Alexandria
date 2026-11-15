@@ -4,15 +4,30 @@
 
 > Carpeta interna de herramientas auxiliares del hub; no es un producto para instalar.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| — | — | — | — | 🧰 Interna |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| — | — | — | 2026-06-24 |
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
 > 🧰 Carpeta interna del hub; no es un producto para instalar.
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | API: por confirmar. No se ha verificado si la ruta elegida necesita una API de IA. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Ejecución con modelos locales por confirmar. Ejecutar el programa en tu equipo no demuestra que el modelo también sea local. |
+| Coste | Coste por confirmar. Código disponible no significa servicios, modelos, infraestructura o licencias sin coste. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos originales de la variante que vayas a usar. |
+
+Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+
+## Qué puedes hacer con él
 
 Contiene utilidades de apoyo de la biblioteca. Sirve como referencia interna, no como dependencia de un proyecto.
 
@@ -24,7 +39,7 @@ Uso interno.
 
 Scripts auxiliares locales.
 
-## Instalación rápida
+## Cómo empezar
 
 No se instala: es parte de este repositorio.
 
@@ -43,7 +58,6 @@ No se instala: es parte de este repositorio.
 ## Stack y modelos
 
 - **Stack:** Python
-- **Modelos / API:** No usa LLM.
 - **Etiquetas:** `skills`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 

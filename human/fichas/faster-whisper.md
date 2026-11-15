@@ -1,18 +1,33 @@
-[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Transcripción (voz a texto)
+[🏠 Inicio](../README.md) › [🎬 Crear audio, voz y video](../categorias/12-audio-voz-video.md) › Transcripción (voz a texto)
 
 # ⚡ faster-whisper
 
-> Reimplementación de Whisper sobre CTranslate2 que transcribe mucho más rápido y con menor consumo de memoria, manteniendo la misma precisión.
+> Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 26.8k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 26.8k | MIT | Python | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
 
-Es el mismo modelo de OpenAI, pero con un runtime de inferencia optimizado.
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
+| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
+| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
+
+Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. Puede reducir requisitos frente a otras implementaciones; mide calidad y rendimiento con tu propio audio.
 
 ## Por qué destaca
 
@@ -20,11 +35,33 @@ Es la versión preferida en producción por su relación velocidad/calidad y su 
 
 ## Cómo funciona
 
-Ejecuta los mismos modelos Whisper convertidos al runtime CTranslate2, con cuantización int8/float16 que acelera tanto CPU como GPU y reduce la VRAM necesaria frente al Whisper original.
+Carga modelos Whisper compatibles y permite configurar dispositivo y precisión de inferencia.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install faster-whisper` (necesita ffmpeg). El modelo se descarga al primer uso; en GPU requiere drivers CUDA compatibles con CTranslate2.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Python y las dependencias de CPU o GPU correspondientes a la ruta elegida.
+
+1. Instala la biblioteca en un entorno aislado.
+2. Selecciona modelo, dispositivo y precisión siguiendo el ejemplo del README.
+3. Transcribe un audio corto y revisa el texto y el consumo de memoria antes de procesar material largo.
+
+**Comando de entrada documentado:**
+
+```shell
+pip install faster-whisper
+```
+
+Comando presente en el README revisado; no es una prueba de instalación.
+
+[Instrucciones originales de instalación](https://github.com/SYSTRAN/faster-whisper/blob/master/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar faster-whisper para mi objetivo y necesito pasos guiados. Lee https://github.com/SYSTRAN/faster-whisper/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +78,6 @@ Ejecuta los mismos modelos Whisper convertidos al runtime CTranslate2, con cuant
 ## Stack y modelos
 
 - **Stack:** Python, CTranslate2
-- **Modelos / API:** Modelos Whisper locales.
 - **Etiquetas:** `stt` `audio` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -49,7 +85,7 @@ Ejecuta los mismos modelos Whisper convertidos al runtime CTranslate2, con cuant
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [whisperX](whisperx.md) | 25.3k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
+| [whisperX](whisperx.md) | 25.3k | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
 
 ## Alternativas (elige una)
 
@@ -61,6 +97,12 @@ Ejecuta los mismos modelos Whisper convertidos al runtime CTranslate2, con cuant
 
 - 🐙 GitHub: [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper)
 - 🧪 Receta: [Agente de voz en tiempo real](../playbooks/agente-de-voz.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/SYSTRAN/faster-whisper/blob/master/README.md)
 
 ---
 

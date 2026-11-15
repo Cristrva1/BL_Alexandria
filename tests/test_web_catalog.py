@@ -94,7 +94,8 @@ def test_catalog_merges_detail_install_and_aliases(tmp_path: Path) -> None:
     catalog = build_catalog(tmp_path)
 
     n8n = next(repo for repo in catalog["repos"] if repo["id"] == "n8n")
-    assert "pip install" in n8n["install"]["command"]
+    assert "instalación original" in n8n["install"]["command"]
+    assert "pip install" not in n8n["install"]["command"]
     assert n8n["choose_if"].startswith("quieres orquestar")
     assert n8n["lead"].startswith("n8n is a workflow")
 
@@ -172,10 +173,10 @@ def test_real_library_catalog_resolves_every_recipe_step() -> None:
     catalog = build_catalog(root)
     ids = {repo["id"] for repo in catalog["repos"]}
     assert catalog["counts"]["repos"] == len(ids)
-    assert catalog["counts"]["categories"] == 13
-    assert set(range(1, 14)) <= set(CATEGORY_LESSONS)
-    for number in range(1, 14):
-        assert CATEGORY_LESSONS[number]["blurb"]
+    public_categories = [cat for cat in catalog["categories"] if cat["num"] > 0]
+    assert catalog["counts"]["categories"] == len(public_categories)
+    for category in public_categories:
+        assert category["description"]
     import json
 
     source_recipes = json.loads((root / "INDICE_IA.json").read_text(encoding="utf-8"))["recipes"]

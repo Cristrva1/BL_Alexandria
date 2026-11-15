@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Infraestructura: sandboxes, herramientas y protocolos
+[🏠 Inicio](../README.md) › [🕸️ Crear y usar agentes de IA](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Infraestructura: sandboxes, herramientas y protocolos
 
 # 🛠️ NemoClaw
 
 > Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 23k | Apache-2.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 23k | Apache-2.0 | TypeScript | 2026-08-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
+| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Ejecuta agentes populares dentro de los sandboxes de NVIDIA OpenShell con inferencia gestionada y políticas de seguridad. Pensado para empresas.
 
@@ -22,9 +37,19 @@ Añade aislamiento y control a agentes muy capaces que normalmente corren con ac
 
 Envuelve el agente en un sandbox OpenShell con políticas de red y archivos, y le da modelos vía inferencia gestionada.
 
-## Instalación rápida
+## Cómo empezar
 
-Sigue la guía del repo (requiere el entorno de NVIDIA OpenShell).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/NVIDIA/NemoClaw/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar NemoClaw para mi objetivo y necesito pasos guiados. Lee https://github.com/NVIDIA/NemoClaw/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Sigue la guía del repo (requiere el entorno de NVIDIA OpenShell).
 ## Stack y modelos
 
 - **Stack:** TypeScript, contenedores
-- **Modelos / API:** Modelos NVIDIA (Nemotron) y otros vía inferencia gestionada.
 - **Etiquetas:** `agents` `security` `typescript`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -63,6 +87,12 @@ Sigue la guía del repo (requiere el entorno de NVIDIA OpenShell).
 
 - 🐙 GitHub: [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw)
 - 🌐 Web: <https://docs.nvidia.com/nemoclaw/latest/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/NVIDIA/NemoClaw/blob/main/README.md)
 
 ---
 

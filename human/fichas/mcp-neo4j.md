@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🔌 MCP & Conectividad](../categorias/05-mcp-conectividad.md) › Servidores MCP destacados
+[🏠 Inicio](../README.md) › [🔌 Conectar herramientas con MCP](../categorias/05-mcp-conectividad.md) › Servidores MCP destacados
 
 # 🕸️ mcp-neo4j
 
 > Conjunto de servidores MCP oficiales para conectar bases de datos de grafos Neo4j a asistentes de IA, con soporte de despliegue en cloud.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 989 | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 989 | MIT | Python | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios. |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta. |
+| Coste | Consumo del agente que ya utilizas. El modelo se consume en el cliente. Los servicios que la herramienta consulta pueden tener cuentas o tarifas propias. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+
+Puede conectarse a un cliente con soporte MCP, incluido Claude Code o Codex. Debes configurar el servidor y sus permisos.
+
+## Qué puedes hacer con él
 
 Resuelve el acceso natural a grafos desde un LLM: el asistente consulta y escribe Cypher sin que tú escribas el glue a mano.
 
@@ -22,9 +37,24 @@ Lo mantiene el equipo Field GenAI de Neo4j Labs y viene contenedorizado y listo 
 
 Expone consultas Cypher y operaciones sobre el grafo (lectura/escritura, esquema) como tools MCP que el cliente invoca mediante el protocolo, devolviendo resultados estructurados al LLM.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install mcp-neo4j-cypher` (o imagen Docker) y registrar el servidor en la config del cliente MCP. Requiere una instancia Neo4j accesible (local o Aura cloud) con credenciales.
+Se configura en tu agente. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un cliente MCP compatible.
+- Las credenciales del servicio conectado, si las pide el servidor.
+
+1. Instala o configura el servidor según su README.
+2. Añade su comando o URL en la configuración MCP de tu cliente.
+3. Comprueba que aparecen las herramientas antes de asignar una tarea.
+
+[Instrucciones originales de instalación](https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar mcp-neo4j para mi objetivo y necesito pasos guiados. Lee https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +71,6 @@ Expone consultas Cypher y operaciones sobre el grafo (lectura/escritura, esquema
 ## Stack y modelos
 
 - **Stack:** Python, Docker
-- **Modelos / API:** Clientes MCP (Claude, Cursor, etc.); Neo4j como backend.
 - **Etiquetas:** `mcp` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -56,6 +85,12 @@ Expone consultas Cypher y operaciones sobre el grafo (lectura/escritura, esquema
 
 - 🐙 GitHub: [neo4j-contrib/mcp-neo4j](https://github.com/neo4j-contrib/mcp-neo4j)
 - 🌐 Web: <https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md)
 
 ---
 

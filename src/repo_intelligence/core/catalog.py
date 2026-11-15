@@ -16,6 +16,7 @@ from typing import Any
 from repo_intelligence.core.install_mode import decision as _decision
 from repo_intelligence.core.install_mode import install_mode as _install_mode
 from repo_intelligence.core.io import read_json
+from repo_intelligence.core.access import access_facts, access_routes
 
 EXEC_LABELS: dict[str, tuple[str, str]] = {
     "local": ("🏠", "local"),
@@ -117,6 +118,9 @@ class Catalog:
         return {"num": num, "title": f"Categoría {num}", "subs": [], "emoji": "📁", "desc": ""}
 
     def category_file(self, num: int) -> str:
+        file = self.category(num).get("file")
+        if file:
+            return Path(file).name
         return category_filename(num, self.category(num).get("title", ""))
 
     def public_categories(self) -> list[dict[str, Any]]:
@@ -174,6 +178,8 @@ def merge_repo(compact: dict[str, Any], detail: dict[str, Any]) -> dict[str, Any
     merged["repo_url"] = detail.get("repo") or (f"https://github.com/{gh}" if gh else "")
     merged["install_mode"] = _install_mode(compact)
     merged["decision"] = _decision(compact)
+    merged["access"] = access_facts(merged)
+    merged["routes"] = access_routes(merged)
     return merged
 
 

@@ -1,18 +1,33 @@
-[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Edición, grabación y subtítulos
+[🏠 Inicio](../README.md) › [🎬 Crear audio, voz y video](../categorias/12-audio-voz-video.md) › Edición, grabación y subtítulos
 
 # 🎞️ OpenCut
 
-> Editor de video libre con línea de tiempo, alternativa a CapCut, que funciona en el navegador y procesa en tu equipo.
+> Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 98.4k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 98.4k | MIT | TypeScript | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
 
-OpenCut es un editor de video pensado como alternativa abierta a CapCut: privado (los videos no salen de tu dispositivo), sin funciones de pago y fácil de usar. Hoy se usa la versión clásica en opencut.app mientras el equipo reescribe el proyecto desde cero, con un núcleo en Rust para web, escritorio y móvil.
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
+
+Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. El README diferencia opencut.app y opencut-classic de la reescritura en curso; comprueba qué versión necesitas antes de compilar.
 
 ## Por qué destaca
 
@@ -20,11 +35,27 @@ Cubre lo básico de CapCut sin muros de pago ni subir tus videos a un servidor. 
 
 ## Cómo funciona
 
-La versión clásica es una app Next.js con un núcleo Rust compilado a WebAssembly para composición en GPU, efectos y máscaras. La nueva arquitectura comparte ese núcleo Rust entre navegador, escritorio y móvil, en un monorepo gestionado con moon.
+La versión clásica permite probar el flujo de edición; la nueva arquitectura sigue otra ruta de desarrollo.
 
-## Instalación rápida
+## Cómo empezar
 
-Úsalo directamente en opencut.app (versión clásica). Para la reescritura: instala proto, ejecuta `proto use` y `moon run web:dev`; la versión clásica se auto-hospeda con `docker compose up -d`.
+Aplicación con interfaz. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un navegador y un clip pequeño de prueba.
+
+1. Abre opencut.app para probar la versión clásica; el README indica que este repositorio está en reescritura.
+2. Usa un clip de prueba para comprobar el flujo de edición disponible en esa versión.
+3. Revisa la exportación y sus límites. Preparar el nuevo código desde fuente es una ruta de desarrollo diferente.
+
+[Instrucciones originales de instalación](https://github.com/OpenCut-app/OpenCut/blob/main/README.md)
+
+[Abrir la web o descarga indicada por el autor](https://opencut.app)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar OpenCut para mi objetivo y necesito pasos guiados. Lee https://github.com/OpenCut-app/OpenCut/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +74,6 @@ La versión clásica es una app Next.js con un núcleo Rust compilado a WebAssem
 ## Stack y modelos
 
 - **Stack:** TypeScript, Rust, WebAssembly, Next.js
-- **Modelos / API:** No usa LLM.
 - **Etiquetas:** `video` `ui` `typescript` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -53,12 +83,18 @@ La versión clásica es una app Next.js con un núcleo Rust compilado a WebAssem
 |---|---:|---|
 | [LosslessCut](lossless-cut.md) | 46k | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. |
 | [OBS Studio](obs-studio.md) | 79.6k | App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real. |
-| [whisperX](whisperx.md) | 25.3k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
+| [whisperX](whisperx.md) | 25.3k | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
 
 ## Enlaces
 
 - 🐙 GitHub: [OpenCut-app/OpenCut](https://github.com/OpenCut-app/OpenCut)
 - 🌐 Web: <https://opencut.app>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/OpenCut-app/OpenCut/blob/main/README.md)
 
 ---
 

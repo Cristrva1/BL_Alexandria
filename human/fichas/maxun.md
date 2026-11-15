@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Scraping guiado por LLM
+[🏠 Inicio](../README.md) › [🕷️ Buscar y extraer información web](../categorias/04-scraping-b-squeda-research-web.md) › Scraping guiado por LLM
 
 # 🧠 Maxun
 
 > Plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 18.4k | AGPL-3.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 18.4k | AGPL-3.0 | TypeScript | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
+| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Grabas lo que quieres extraer haciendo clic en la página y Maxun crea un robot que lo repite, con paginación y programación. Ideal para equipos sin programadores.
 
@@ -22,9 +37,19 @@ Alternativa abierta a herramientas como Browse AI, auto-hospedable.
 
 Un grabador en el navegador captura acciones y selectores; un ejecutor con Playwright las repite y guarda los datos.
 
-## Instalación rápida
+## Cómo empezar
 
-Self-host con `docker compose up -d` siguiendo el README.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/getmaxun/maxun/blob/develop/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Maxun para mi objetivo y necesito pasos guiados. Lee https://github.com/getmaxun/maxun/blob/develop/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Self-host con `docker compose up -d` siguiendo el README.
 ## Stack y modelos
 
 - **Stack:** TypeScript, Playwright, PostgreSQL, Docker
-- **Modelos / API:** Opcionalmente usa LLM para extracción.
 - **Etiquetas:** `scraping` `automation` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -64,6 +88,12 @@ Self-host con `docker compose up -d` siguiendo el README.
 
 - 🐙 GitHub: [getmaxun/maxun](https://github.com/getmaxun/maxun)
 - 🌐 Web: <https://www.maxun.dev>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/getmaxun/maxun/blob/develop/README.md)
 
 ---
 

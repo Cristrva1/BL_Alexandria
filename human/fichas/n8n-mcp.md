@@ -1,18 +1,33 @@
-[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Ecosistema n8n
+[🏠 Inicio](../README.md) › [🤖 Automatizar negocios y comunicación](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Ecosistema n8n
 
 # 🔌 n8n-mcp
 
-> Servidor MCP que expone a la IA la documentación y los esquemas de los más de 1.845 nodos de n8n (816 core + 1.029 comunitarios) para ayudar a construir y depurar flujos.
+> Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 23.3k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 23.3k | MIT | TypeScript | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
-## Qué es
+## Acceso, coste y equipo
 
-Resuelve el problema de que un LLM invente parámetros de nodos que no existen y genere workflows rotos.
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios. |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta. |
+| Coste | Consumo del agente que ya utilizas. El modelo se consume en el cliente. Los servicios que la herramienta consulta pueden tener cuentas o tarifas propias. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+
+Puede conectarse a un cliente con soporte MCP, incluido Claude Code o Codex. Debes configurar el servidor y sus permisos.
+
+## Qué puedes hacer con él
+
+Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows. El cliente MCP y la instancia de n8n conservan sus propios requisitos de acceso.
 
 ## Por qué destaca
 
@@ -20,11 +35,25 @@ Reduce drásticamente los errores cuando se pide a una IA que arme un workflow d
 
 ## Cómo funciona
 
-El cliente MCP (Claude, Cursor, Gemini CLI) invoca tools del servidor para consultar nodos, propiedades y ejemplos vía el protocolo MCP; el LLM recibe esquemas exactos en lugar de alucinarlos.
+Expone herramientas de documentación y, con la configuración correspondiente, de gestión de workflows.
 
-## Instalación rápida
+## Cómo empezar
 
-`npx n8n-mcp` y añadirlo a la config del cliente MCP (p. ej. Claude Desktop). Requiere Node.js y, para flujos reales, una instancia n8n accesible.
+Se configura en tu agente. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un cliente MCP; una instancia de n8n y sus permisos solo si quieres administrarla.
+
+1. Elige el servidor gestionado o la instalación local según el README.
+2. Añade su URL o comando a la configuración MCP del cliente.
+3. Comprueba una consulta de documentación. Configura por separado la instancia y credenciales de n8n para operaciones sobre workflows.
+
+[Instrucciones originales de instalación](https://github.com/czlonkowski/n8n-mcp/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar n8n-mcp para mi objetivo y necesito pasos guiados. Lee https://github.com/czlonkowski/n8n-mcp/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +70,6 @@ El cliente MCP (Claude, Cursor, Gemini CLI) invoca tools del servidor para consu
 ## Stack y modelos
 
 - **Stack:** Node.js/TypeScript, MCP
-- **Modelos / API:** Claude Desktop/Code, Cursor, Gemini CLI; agnóstico vía MCP.
 - **Etiquetas:** `automation` `mcp` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -50,13 +78,19 @@ El cliente MCP (Claude, Cursor, Gemini CLI) invoca tools del servidor para consu
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
-| [n8n-skills](n8n-skills.md) | 6.6k | Conjunto de 14 skills estructuradas para Claude Code orientadas a construir flujos de n8n correctos, evitando errores al generar su JSON. |
+| [n8n-skills](n8n-skills.md) | 6.6k | Skills para ayudar a un agente a construir, revisar y depurar workflows de n8n con sus nodos y herramientas. |
 
 ## Enlaces
 
 - 🐙 GitHub: [czlonkowski/n8n-mcp](https://github.com/czlonkowski/n8n-mcp)
 - 🌐 Web: <https://www.n8n-mcp.com/>
 - 🧪 Receta: [Bot de WhatsApp con IA](../playbooks/bot-de-whatsapp-con-ia.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/czlonkowski/n8n-mcp/blob/main/README.md)
 
 ---
 

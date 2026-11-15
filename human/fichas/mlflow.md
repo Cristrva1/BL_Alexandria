@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧬 Memoria, RAG & LLM Ops](../categorias/06-memoria-rag-llm-ops.md) › Observabilidad, evaluación y guardrails
+[🏠 Inicio](../README.md) › [🧬 Memoria, conocimiento y operación de IA](../categorias/06-memoria-rag-llm-ops.md) › Observabilidad, evaluación y guardrails
 
 # 📡 MLflow
 
 > Plataforma open source para el ciclo de vida de modelos de ML y apps de LLM: experimentos, trazas y registro.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 28.8k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 28.8k | Apache-2.0 | Python | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | El coste depende del proveedor o la ruta. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Registra experimentos, versiona modelos y, para LLM, ofrece trazas, evaluación y gestión de prompts.
 
@@ -22,9 +37,19 @@ Estándar en MLOps, ahora con soporte fuerte para agentes y LLM.
 
 Un servidor de tracking guarda parámetros, métricas, artefactos y trazas; SDKs autologgean desde tus frameworks.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install mlflow` y `mlflow ui`.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/mlflow/mlflow/blob/master/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar MLflow para mi objetivo y necesito pasos guiados. Lee https://github.com/mlflow/mlflow/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Un servidor de tracking guarda parámetros, métricas, artefactos y trazas; SDKs
 ## Stack y modelos
 
 - **Stack:** Python, React
-- **Modelos / API:** No aplica.
 - **Etiquetas:** `observability` `training` `evaluation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -62,6 +86,12 @@ Un servidor de tracking guarda parámetros, métricas, artefactos y trazas; SDKs
 
 - 🐙 GitHub: [mlflow/mlflow](https://github.com/mlflow/mlflow)
 - 🌐 Web: <https://mlflow.org>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/mlflow/mlflow/blob/master/README.md)
 
 ---
 

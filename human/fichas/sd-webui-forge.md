@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🖼️ Generación de Imagen & Visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Interfaces para generar imágenes
+[🏠 Inicio](../README.md) › [🖼️ Generar imágenes y trabajar con visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Interfaces para generar imágenes
 
 # 🖼️ Stable Diffusion WebUI Forge
 
 > Versión optimizada de la WebUI de Stable Diffusion, más rápida y con menos memoria.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 13.1k | AGPL-3.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 13.1k | AGPL-3.0 | Python | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
+| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
+| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Mantiene la interfaz de AUTOMATIC1111 con mejoras de rendimiento y soporte de modelos nuevos como FLUX.
 
@@ -22,9 +37,19 @@ Mejor rendimiento en GPUs modestas con la interfaz conocida.
 
 Backend reescrito para gestión de memoria y nuevos samplers sobre la WebUI de Gradio.
 
-## Instalación rápida
+## Cómo empezar
 
-Descarga el paquete de un clic desde los releases o clona y ejecuta `webui-user`.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/lllyasviel/stable-diffusion-webui-forge/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Stable Diffusion WebUI Forge para mi objetivo y necesito pasos guiados. Lee https://github.com/lllyasviel/stable-diffusion-webui-forge/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Descarga el paquete de un clic desde los releases o clona y ejecuta `webui-user`
 ## Stack y modelos
 
 - **Stack:** Python, Gradio, PyTorch
-- **Modelos / API:** Modelos de Stable Diffusion y FLUX.
 - **Etiquetas:** `image` `local` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -63,6 +87,12 @@ Descarga el paquete de un clic desde los releases o clona y ejecuta `webui-user`
 ## Enlaces
 
 - 🐙 GitHub: [lllyasviel/stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/lllyasviel/stable-diffusion-webui-forge/blob/main/README.md)
 
 ---
 

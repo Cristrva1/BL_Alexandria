@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Redes sociales y descarga de medios
+[🏠 Inicio](../README.md) › [🕷️ Buscar y extraer información web](../categorias/04-scraping-b-squeda-research-web.md) › Redes sociales y descarga de medios
 
 # 📱 yt-dlp
 
 > Descargador de audio y video por línea de comandos compatible con miles de sitios.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 208k | Unlicense | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 208k | Unlicense | Python | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Descarga videos, audios, subtítulos y metadatos de YouTube y miles de plataformas. Base de muchos pipelines de transcripción.
 
@@ -22,9 +37,19 @@ El descargador más completo y actualizado; corrige rápido los cambios de los s
 
 Extractores por sitio obtienen los formatos disponibles y usan ffmpeg para unir audio y video.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install yt-dlp` o `brew install yt-dlp`.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/yt-dlp/yt-dlp/blob/master/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar yt-dlp para mi objetivo y necesito pasos guiados. Lee https://github.com/yt-dlp/yt-dlp/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Extractores por sitio obtienen los formatos disponibles y usan ffmpeg para unir 
 ## Stack y modelos
 
 - **Stack:** Python, ffmpeg
-- **Modelos / API:** No usa LLM.
 - **Etiquetas:** `video` `audio` `scraping` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -51,7 +75,7 @@ Extractores por sitio obtienen los formatos disponibles y usan ffmpeg para unir 
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [whisperX](whisperx.md) | 25.3k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
+| [whisperX](whisperx.md) | 25.3k | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
 | [FFmpeg](ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
 | [Fabric](fabric.md) | 44.6k | CLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal. |
 
@@ -59,6 +83,12 @@ Extractores por sitio obtienen los formatos disponibles y usan ffmpeg para unir 
 
 - 🐙 GitHub: [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - 🌐 Web: <https://discord.gg/H5MNcFW63r>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/yt-dlp/yt-dlp/blob/master/README.md)
 
 ---
 

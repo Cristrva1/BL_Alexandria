@@ -1,18 +1,33 @@
-[🏠 Inicio](../README.md) › [🖼️ Generación de Imagen & Visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Suites generativas todo-en-uno
+[🏠 Inicio](../README.md) › [🖼️ Generar imágenes y trabajar con visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Suites generativas todo-en-uno
 
 # 🎬 Open-Generative-AI
 
-> Plataforma alternativa libre a servicios premium de video/imagen que agrupa más de 200 modelos generativos accesibles desde terminal o integrados con agentes.
+> Estudio abierto de generación de imagen y video que utiliza modelos ofrecidos mediante servicios de MuAPI.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 34.7k | MIT | JavaScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 34.7k | MIT | JavaScript | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
 
-Centraliza la generación visual sin filtros restrictivos ni suscripción.
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | API de IA necesaria. La ruta documentada necesita credenciales de un proveedor de IA o servicio externo. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
+| Coste | Consumo de APIs o servicios. La aplicación utiliza MuAPI para generar medios. El código abierto no incluye el consumo de ese servicio. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
+
+Estudio abierto de generación de imagen y video que utiliza modelos ofrecidos mediante servicios de MuAPI. El código de la interfaz está disponible; las generaciones y otras modalidades del servicio tienen requisitos y tarifas propios.
 
 ## Por qué destaca
 
@@ -20,11 +35,21 @@ Ofrece un hub unificado pensado para conectar la generación visual a flujos de 
 
 ## Cómo funciona
 
-Orquesta modelos de difusión y video vía la API en nube MuAPI o sobre GPUs locales, exponiéndolos tras una interfaz de línea de comandos y endpoints reutilizables desde scripts de agentes.
+Reúne interfaces y flujos de generación en una aplicación que llama a proveedores externos.
 
-## Instalación rápida
+## Cómo empezar
 
-`git clone` del repo e instalar dependencias de Python/Node.js; configurar la clave de MuAPI (render en nube) o el backend de GPU local. Sin clave, solo queda la vía local con GPU.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/Anil-matcha/Open-Generative-AI/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Open-Generative-AI para mi objetivo y necesito pasos guiados. Lee https://github.com/Anil-matcha/Open-Generative-AI/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Orquesta modelos de difusión y video vía la API en nube MuAPI o sobre GPUs loc
 ## Stack y modelos
 
 - **Stack:** Python, Node.js
-- **Modelos / API:** MuAPI (render en nube) o GPUs locales.
 - **Etiquetas:** `image` `video` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -49,13 +73,19 @@ Orquesta modelos de difusión y video vía la API en nube MuAPI o sobre GPUs loc
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [remotion](remotion.md) | 73.2k | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
+| [remotion](remotion.md) | 73.2k | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. |
 
 ## Enlaces
 
 - 🐙 GitHub: [Anil-matcha/Open-Generative-AI](https://github.com/Anil-matcha/Open-Generative-AI)
 - 🌐 Web: <https://muapi.ai/open-generative-ai?utm_source=github&utm_medium=about&utm_campaign=open-generative-ai>
 - 🧪 Receta: [Marketing de agencia](../playbooks/marketing-de-agencia.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/Anil-matcha/Open-Generative-AI/blob/main/README.md)
 
 ---
 

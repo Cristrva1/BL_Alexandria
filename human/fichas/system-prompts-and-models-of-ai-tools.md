@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Prompts y prompt engineering
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Prompts y prompt engineering
 
 # 🧠 system-prompts-and-models-of-ai-tools
 
 > Colección de prompts y configuraciones atribuidos a herramientas de IA para estudiar sus patrones de diseño.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 145k | GPL-3.0 | — | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 145k | GPL-3.0 | — | 2026-11-14 |
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
+| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Colección de prompts y configuraciones atribuidos a herramientas de IA para estudiar sus patrones de diseño. Organiza archivos por herramienta para consultar y comparar instrucciones y formatos.
 
@@ -22,9 +37,19 @@ Quieres investigar patrones de prompts utilizados por asistentes.
 
 Organiza archivos por herramienta para consultar y comparar instrucciones y formatos.
 
-## Instalación rápida
+## Cómo empezar
 
-Consulta el [README y sus recursos](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/README.md); el catálogo no se instala como un servicio único.
+Material para leer. [Entender los términos](../vocabulario.md).
+
+1. Abre el material original y elige un capítulo o ejemplo.
+2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
+3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+
+[Instrucciones originales de instalación](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar system-prompts-and-models-of-ai-tools para mi objetivo y necesito pasos guiados. Lee https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,13 +66,18 @@ Consulta el [README y sus recursos](https://github.com/x1xhlol/system-prompts-an
 ## Stack y modelos
 
 - **Stack:** Recursos y documentación
-- **Modelos / API:** Configurar el proveedor o entorno indicado en el README; esta revisión no ejecutó el proyecto.
 - **Etiquetas:** `prompts` `ai` `bolt` `cluely` `copilot` `cursor` `cursorai` `devin`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
 ## Enlaces
 
 - 🐙 GitHub: [x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/README.md)
 
 ---
 

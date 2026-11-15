@@ -4,11 +4,14 @@
 
 | | [Flowise](../fichas/flowise.md) | [Sim](../fichas/sim.md) |
 |---|---|---|
-| Qué hace | Builder visual drag-and-drop para pipelines LLM. | Espacio colaborativo para construir, desplegar y monitorear agentes y workflows de IA con un lienzo visual. |
+| Qué hace | Constructor visual para diseñar aplicaciones de IA conectando modelos, herramientas, memoria y fuentes de datos. | Espacio colaborativo para construir, desplegar y monitorear agentes y workflows de IA con un lienzo visual. |
 | ⭐ Estrellas | 55.6k | 30.1k |
 | Elígelo si… | quieres un prototipo visual ya, en stack JS | quieres un constructor visual de agentes moderno y abierto |
 | Evítalo si… | necesitas plataforma completa con RAG/observabilidad (dify) | prefieres automatización general con cientos de apps; mira `n8n` |
 | Ejecución | 🔀 híbrido | 🔀 híbrido |
+| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | Modelo local no documentado |
 | Setup | 🟢 fácil | 🟡 medio |
 | Licencia | NOASSERTION | Apache-2.0 |
 | Instalación | `npm install -g flowise && npx flowise start` | `npx simstudio` |

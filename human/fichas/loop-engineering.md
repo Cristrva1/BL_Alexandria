@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Guías, cursos y cookbooks
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Guías, cursos y cookbooks
 
 # 🎓 Loop Engineering
 
 > Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código en vez de prompts sueltos.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 11.8k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 11.8k | MIT | TypeScript | 2026-08-23 |
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
+| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+
+## Qué puedes hacer con él
 
 Propone dejar de escribir prompts aislados y diseñar ciclos con objetivo, verificación y puntuación para que el agente itere solo. Incluye starters y herramientas de línea de comandos.
 
@@ -22,9 +37,23 @@ Enfoque práctico y medible: cada bucle termina con una puntuación que guía la
 
 Define el objetivo, las comprobaciones y el criterio de parada en archivos que el agente lee y ejecuta en bucle.
 
-## Instalación rápida
+## Cómo empezar
 
-`git clone https://github.com/cobusgreyling/loop-engineering` y copia el starter que necesites a tu proyecto.
+Se configura en tu agente. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un agente compatible y acceso activo a su modelo.
+
+1. Elige el agente indicado en Acceso y costes.
+2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
+3. Prueba una tarea pequeña y revisa si activa conectores externos.
+
+[Instrucciones originales de instalación](https://github.com/cobusgreyling/loop-engineering/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Loop Engineering para mi objetivo y necesito pasos guiados. Lee https://github.com/cobusgreyling/loop-engineering/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +70,6 @@ Define el objetivo, las comprobaciones y el criterio de parada en archivos que e
 ## Stack y modelos
 
 - **Stack:** TypeScript, Markdown
-- **Modelos / API:** Agnóstico: Claude Code, Codex u otros agentes.
 - **Etiquetas:** `coding-agent` `skills` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -57,6 +85,12 @@ Define el objetivo, las comprobaciones y el criterio de parada en archivos que e
 
 - 🐙 GitHub: [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering)
 - 🌐 Web: <https://cobusgreyling.github.io/loop-engineering/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/cobusgreyling/loop-engineering/blob/main/README.md)
 
 ---
 

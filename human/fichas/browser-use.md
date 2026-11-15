@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Navegadores y automatización web
+[🏠 Inicio](../README.md) › [🕷️ Buscar y extraer información web](../categorias/04-scraping-b-squeda-research-web.md) › Navegadores y automatización web
 
 # 🌐 browser-use
 
 > Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 121k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 121k | MIT | Python | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
+| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Resuelve la fragilidad del scraping basado en CSS: el agente "ve" la página como un humano y decide la siguiente acción.
 
@@ -22,9 +37,19 @@ Uno de los proyectos de agentes-web más virales y populares, por permitir autom
 
 Controla el navegador con Playwright, extrae el estado de la página (DOM simplificado + capturas) y lo pasa a un LLM con visión que devuelve la siguiente acción de click/escritura/navegación, repitiendo el bucle hasta cumplir el objetivo.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install browser-use` y `playwright install`; requiere clave de un LLM con visión (OpenAI, Anthropic o Google). Para escala/stealth existe cloud gestionado.
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/browser-use/browser-use/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar browser-use para mi objetivo y necesito pasos guiados. Lee https://github.com/browser-use/browser-use/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Controla el navegador con Playwright, extrae el estado de la página (DOM simpli
 ## Stack y modelos
 
 - **Stack:** Python 3.11+, Rust (core), Playwright
-- **Modelos / API:** Multimodales con visión (GPT-4o, Claude, Gemini); agnóstico vía variables de entorno.
 - **Etiquetas:** `automation` `browser` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -66,6 +90,12 @@ Controla el navegador con Playwright, extrae el estado de la página (DOM simpli
 - 🐙 GitHub: [browser-use/browser-use](https://github.com/browser-use/browser-use)
 - 🌐 Web: <https://browser-use.com>
 - 🧪 Receta: [Agente de research profundo](../playbooks/agente-de-research-profundo.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/browser-use/browser-use/blob/main/README.md)
 
 ---
 

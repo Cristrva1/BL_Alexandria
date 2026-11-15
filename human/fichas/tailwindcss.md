@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › CSS y estilos
+[🏠 Inicio](../README.md) › [🎨 Diseñar y construir interfaces](../categorias/09-dise-o-ui-frontend.md) › CSS y estilos
 
 # 🌬️ tailwindcss
 
 > Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 98.6k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 98.6k | MIT | TypeScript | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Elimina el contexto de estilos disperso entre hojas y componentes.
 
@@ -22,9 +37,19 @@ Se ha vuelto el estándar de facto del estilado web moderno y la base sobre la q
 
 Motor que escanea tus archivos de plantilla y genera solo el CSS de las utilidades usadas (purge automático), optimizando el bundle final a lo mínimo.
 
-## Instalación rápida
+## Cómo empezar
 
-`npm i tailwindcss` y configurar el plugin de PostCSS/CLI, o vía CDN para pruebas rápidas. Requiere un build step para producción.
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/tailwindlabs/tailwindcss/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar tailwindcss para mi objetivo y necesito pasos guiados. Lee https://github.com/tailwindlabs/tailwindcss/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Motor que escanea tus archivos de plantilla y genera solo el CSS de las utilidad
 ## Stack y modelos
 
 - **Stack:** Node.js, CSS
-- **Modelos / API:** N/A.
 - **Etiquetas:** `ui` `design` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -57,6 +81,12 @@ Motor que escanea tus archivos de plantilla y genera solo el CSS de las utilidad
 - 🐙 GitHub: [tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss)
 - 🌐 Web: <https://tailwindcss.com/>
 - 🧪 Receta: [Web app moderna con IA](../playbooks/web-app-moderna-con-ia.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/tailwindlabs/tailwindcss/blob/main/README.md)
 
 ---
 

@@ -1,18 +1,33 @@
-[🏠 Inicio](../README.md) › [📊 Analítica & Visualización](../categorias/10-anal-tica-visualizaci-n.md) › Librerías de gráficos
+[🏠 Inicio](../README.md) › [📊 Analizar datos, crear dashboards y mapas](../categorias/10-anal-tica-visualizaci-n.md) › Librerías de gráficos
 
 # 📉 Chart.js
 
-> Librería JavaScript sencilla para gráficos HTML5 en canvas.
+> Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 67.8k | MIT | JavaScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 67.8k | MIT | JavaScript | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
 
-Ocho tipos de gráfico listos, responsivos y animados con muy poco código. Ideal para dashboards web simples.
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
+
+Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web. No utiliza un modelo de IA para generar los gráficos.
 
 ## Por qué destaca
 
@@ -20,11 +35,21 @@ Muy fácil de usar y con enorme adopción.
 
 ## Cómo funciona
 
-Dibuja en un elemento canvas a partir de una configuración JSON.
+Recibe datos y configuración para renderizar gráficos de líneas, barras, áreas y otros tipos.
 
-## Instalación rápida
+## Cómo empezar
 
-`npm i chart.js`.
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/chartjs/Chart.js/blob/master/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Chart.js para mi objetivo y necesito pasos guiados. Lee https://github.com/chartjs/Chart.js/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Dibuja en un elemento canvas a partir de una configuración JSON.
 ## Stack y modelos
 
 - **Stack:** JavaScript, Canvas
-- **Modelos / API:** No usa LLM.
 - **Etiquetas:** `dataviz` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -56,6 +80,12 @@ Dibuja en un elemento canvas a partir de una configuración JSON.
 
 - 🐙 GitHub: [chartjs/Chart.js](https://github.com/chartjs/Chart.js)
 - 🌐 Web: <https://www.chartjs.org/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/chartjs/Chart.js/blob/master/README.md)
 
 ---
 

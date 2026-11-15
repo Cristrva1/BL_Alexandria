@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Catálogos y marketplaces de skills
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Catálogos y marketplaces de skills
 
 # 🗂️ Awesome Claude Skills
 
 > Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 79.5k | — | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 79.5k | — | Python | 2026-11-10 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
+| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Recopilación de skills por áreas (documentos, desarrollo, datos, marketing, escritura, multimedia, productividad, seguridad) que enlaza skills oficiales de Anthropic y de la comunidad, y aloja algunas propias. Incluye el plugin connect-apps, que usa Composio para que Claude envíe correos, cree issues o publique en Slack.
 
@@ -22,9 +37,19 @@ Cubre tareas de negocio y productividad además de programación, y explica bien
 
 Es un README por categorías con enlaces a cada skill, más algunas carpetas de skills dentro del propio repo. El plugin connect-apps se carga en Claude Code y delega la autenticación y las llamadas a la plataforma de Composio.
 
-## Instalación rápida
+## Cómo empezar
 
-No se instala entero: copia la carpeta de la skill que quieras a `~/.claude/skills/`. Para el plugin de apps: `claude --plugin-dir ./connect-apps-plugin` y luego `/connect-apps:setup` con tu API key de Composio.
+Material para leer. [Entender los términos](../vocabulario.md).
+
+1. Abre el material original y elige un capítulo o ejemplo.
+2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
+3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+
+[Instrucciones originales de instalación](https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Awesome Claude Skills para mi objetivo y necesito pasos guiados. Lee https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ No se instala entero: copia la carpeta de la skill que quieras a `~/.claude/skil
 ## Stack y modelos
 
 - **Stack:** Markdown, Python, Composio (plugin connect-apps)
-- **Modelos / API:** Pensada para Claude (Claude.ai, Claude Code y la API); muchas skills también funcionan en Codex, Cursor o Gemini CLI.
 - **Etiquetas:** `skills` `automation` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -66,6 +90,12 @@ No se instala entero: copia la carpeta de la skill que quieras a `~/.claude/skil
 ## Enlaces
 
 - 🐙 GitHub: [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md)
 
 ---
 

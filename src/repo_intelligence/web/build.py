@@ -37,7 +37,7 @@ def build_site(project_root: Path, output_dir: Path) -> dict:
         raise ValueError("El catálogo contiene el marcador reservado del HTML.")
     html = (_ASSETS / "index.html").read_text(encoding="utf-8").replace(_TOKEN, payload)
     (output / "index.html").write_text(html, encoding="utf-8")
-    for name in ("app.js", "styles.css"):
+    for name in ("app.js", "styles.css", "search.js"):
         shutil.copyfile(_ASSETS / name, output / name)
     (output / "catalog.json").write_text(
         json.dumps(catalog, ensure_ascii=False, indent=2) + "\n",

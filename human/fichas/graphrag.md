@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧬 Memoria, RAG & LLM Ops](../categorias/06-memoria-rag-llm-ops.md) › RAG y motores de conocimiento
+[🏠 Inicio](../README.md) › [🧬 Memoria, conocimiento y operación de IA](../categorias/06-memoria-rag-llm-ops.md) › RAG y motores de conocimiento
 
 # 🔗 graphrag
 
 > Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 36.6k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 36.6k | MIT | Python | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
+| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
+| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Resuelve las preguntas que requieren conectar entidades dispersas en muchos documentos, donde el RAG clásico falla.
 
@@ -22,9 +37,19 @@ Proyecto de Microsoft Research muy difundido que mejora las respuestas en pregun
 
 Un LLM extrae entidades y relaciones para construir el grafo, lo resume por comunidades con un LLM y luego responde combinando recuperación local (entidades concretas) y global (temas del corpus) con embeddings.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install graphrag` y luego `graphrag index` / `graphrag query` sobre tu corpus. Requiere claves de un LLM y embeddings; el indexado consume bastantes llamadas.
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/microsoft/graphrag/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar graphrag para mi objetivo y necesito pasos guiados. Lee https://github.com/microsoft/graphrag/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Un LLM extrae entidades y relaciones para construir el grafo, lo resume por comu
 ## Stack y modelos
 
 - **Stack:** Python
-- **Modelos / API:** Múltiples LLMs + embeddings (OpenAI, Azure, locales); configurable vía settings.yaml.
 - **Etiquetas:** `rag` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -65,6 +89,12 @@ Un LLM extrae entidades y relaciones para construir el grafo, lo resume por comu
 
 - 🐙 GitHub: [microsoft/graphrag](https://github.com/microsoft/graphrag)
 - 🌐 Web: <https://microsoft.github.io/graphrag/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/microsoft/graphrag/blob/main/README.md)
 
 ---
 

@@ -5,6 +5,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from repo_intelligence.core.access import API_LABELS, COST_LABELS, ROUTE_LABELS, access_facts, access_routes
 
 from repo_intelligence.core.install_mode import install_mode as _install_mode
 from repo_intelligence.core.io import read_json, write_json
@@ -342,12 +343,16 @@ INSTALL_HINTS = {
 }
 
 
-def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: str = "auto") -> dict[str, Any]:
+def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: str = "auto", access_route: str = "") -> dict[str, Any]:
+    if access_route and access_route not in ROUTE_LABELS:
+        raise ValueError("Unknown access route: " + access_route)
     scan = read_json(project_root / "ai_index" / "REPOS.scan.json", {"repos": []})
     detail = read_json(project_root / "ai_index" / "REPOS.detail.json", {"repos": []})
     winners = read_json(project_root / "ai_index" / "WINNERS.json", {})
     detail_by_id = {item["id"]: item for item in detail.get("repos", [])}
     _merge_curated_index(project_root, scan, detail_by_id)
+    discovery = read_json(project_root / "INDICE_IA.json", {}).get("discovery", {})
+    task_goals = _task_goals(project, discovery.get("goals", []))
     effective_tool = _detect_effective_tool(project, build_tool)
     intents = _detect_intents(project)
     required_capabilities = _infer_required_capabilities(project)
@@ -355,6 +360,13 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
 
     scored = []
     for repo in scan.get("repos", []):
+        candidate = {**repo, **detail_by_id.get(repo["id"], {})}
+        if candidate.get("alias_of") or candidate.get("cat") == 0:
+            continue
+        if access_route and access_route not in access_routes(candidate):
+            continue
+        if task_goals and "goals" in candidate and not task_goals.intersection(candidate["goals"]):
+            continue
         score, reasons = score_repo(project, repo, detail_by_id.get(repo["id"], {}), build_tool=effective_tool, intents=intents)
         if score <= 0:
             continue
@@ -381,6 +393,8 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
     result = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "project": project,
+        "access_route": access_route,
+        "task_goals": sorted(task_goals),
         "requested_tool": _norm_tool(build_tool),
         "build_tool": effective_tool,
         "detected_intents": sorted(intents),
@@ -404,6 +418,18 @@ def recommend(project_root: Path, project: str, max_repos: int = 5, build_tool: 
     return result
 
 
+def _task_goals(project: str, goals: list[dict]) -> set[str]:
+    """Use editorial task metadata before tool-name boosts fill unrelated slots."""
+    text = _norm_text(project)
+    access_words = {"codex", "claude code", "local", "offline", "sin api", "privacidad", "herramientas", "web", "aplicacion"}
+    matched = {goal["id"] for goal in goals if any(
+        _norm_text(word) not in access_words and _has_phrase(text, _norm_text(word))
+        for word in goal.get("keywords", [])
+    )}
+    broad = {"skills", "programar", "aprender", "local", "mcp", "web"}
+    return matched - broad if matched - broad else matched
+
+
 def _merge_curated_index(project_root: Path, scan: dict[str, Any], detail_by_id: dict[str, Any]) -> None:
     """Completa el escaneo local con el índice curado (INDICE_IA*.json).
 
@@ -425,8 +451,8 @@ def _merge_curated_index(project_root: Path, scan: dict[str, Any], detail_by_id:
             continue
         rid = entry["id"]
         extra = curated_by_id.get(rid, {})
-        if rid not in detail_by_id and extra:
-            detail_by_id[rid] = extra
+        if extra:
+            detail_by_id[rid] = {**detail_by_id.get(rid, {}), **extra}
         if rid in known:
             continue
         repos.append({**entry, "alternatives": list(entry.get("alt") or extra.get("alternatives") or [])})
@@ -505,6 +531,10 @@ def _render_superguide(result: dict[str, Any]) -> str:
             f"{repo.get('order', '')} | `{repo['id']}` | {repo.get('stack_role', '')} | `{repo['install_mode']}` | "
             f"{_sentence(repo.get('expert_reason') or ', '.join(repo.get('reasons', [])))} | {_sentence(repo.get('caution', ''))} |"
         )
+    lines.extend(["", "## Acceso y costes de los finalistas", "", "La herramienta con la que construyes y la autenticación de la aplicación se eligen por separado.", "", "| Repo | API de IA | Coste por ruta |", "|---|---|---|"])
+    for repo in result["recommended_repos"]:
+        access = access_facts(repo)
+        lines.append(f"| `{repo['id']}` | {API_LABELS[access['api']]} | {COST_LABELS[access['cost']]} |")
     lines.extend(["", "## Herramientas globales sugeridas", ""])
     for tool in result["global_tools"]:
         lines.append(f"- `{tool['id']}`: {tool['reason']}")
@@ -811,6 +841,13 @@ def _enrich_recommendation(repo: dict[str, Any], position: int) -> dict[str, Any
     enriched["expert_reason"] = guidance.get("why") or _default_reason(repo)
     enriched["how_it_works"] = guidance.get("how") or _default_how(repo)
     enriched["install_steps"] = guidance.get("install") or _default_install_steps(repo)
+    getting = repo.get("getting_started") or {}
+    if getting.get("steps"):
+        enriched["install_steps"] = list(getting["steps"])
+        if getting.get("command"):
+            enriched["install_steps"].append("Comando documentado: " + getting["command"])
+        if getting.get("source"):
+            enriched["install_steps"].append("Ver instalación completa: " + getting["source"])
     enriched["human_instructions"] = guidance.get("human") or _default_human_instruction(repo)
     enriched["ai_instructions"] = guidance.get("ai") or _default_ai_instruction(repo)
     enriched["caution"] = guidance.get("caution") or _default_caution(repo)

@@ -9,6 +9,9 @@
 | Elígelo si… | necesitas WhatsApp en código con bajo consumo de recursos | quieres programar un bot de WhatsApp en Node rápido |
 | Evítalo si… | prefieres una API REST lista; mira `evolution-api` | necesitas una API REST multi-sesión lista; mira `evolution-api` o `waha` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | Apache-2.0 |
 | Instalación | `npm i baileys` | `npm i whatsapp-web.js` |

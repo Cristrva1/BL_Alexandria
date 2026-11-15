@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Catálogos y marketplaces de skills
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Catálogos y marketplaces de skills
 
 # ⭐ Awesome Claude Code
 
 > Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 58k | NOASSERTION | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 58k | NOASSERTION | Python | 2026-06-23 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
+| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Índice comunitario del ecosistema de Claude Code organizado por temas: guías de inicio, recursos oficiales de Anthropic, skills, orquestación de agentes, memoria, observabilidad y coste, seguridad, status lines y configuración. Cada entrada incluye una breve valoración del mantenedor.
 
@@ -22,9 +37,19 @@ Se centra solo en Claude Code y se actualiza con frecuencia, así que es el ataj
 
 Es un README generado a partir de un registro de recursos y dividido en categorías; cada entrada enlaza al repo o artículo original. Instalas cada recurso desde su propia fuente.
 
-## Instalación rápida
+## Cómo empezar
 
-No se instala: abre el repo y sigue el enlace del recurso que te interese.
+Material para leer. [Entender los términos](../vocabulario.md).
+
+1. Abre el material original y elige un capítulo o ejemplo.
+2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
+3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+
+[Instrucciones originales de instalación](https://github.com/hesreallyhim/awesome-claude-code/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Awesome Claude Code para mi objetivo y necesito pasos guiados. Lee https://github.com/hesreallyhim/awesome-claude-code/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ No se instala: abre el repo y sigue el enlace del recurso que te interese.
 ## Stack y modelos
 
 - **Stack:** Markdown, Python (scripts que generan la lista)
-- **Modelos / API:** No usa LLM: es una lista; los recursos que enlaza funcionan con Claude Code y los modelos de Anthropic.
 - **Etiquetas:** `coding-agent` `skills` `agents`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -52,7 +76,7 @@ No se instala: abre el repo y sigue el enlace del recurso que te interese.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Claude Code Plugins Directory](claude-plugins-official.md) | 47.3k | Marketplace oficial de Anthropic con plugins para Claude Code, propios y de socios: comandos, agentes, skills y servidores MCP. |
+| [Claude Code Plugins Directory](claude-plugins-official.md) | 47.3k | Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. |
 | [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
 
 ## Alternativas (elige una)
@@ -64,6 +88,12 @@ No se instala: abre el repo y sigue el enlace del recurso que te interese.
 ## Enlaces
 
 - 🐙 GitHub: [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/hesreallyhim/awesome-claude-code/blob/main/README.md)
 
 ---
 

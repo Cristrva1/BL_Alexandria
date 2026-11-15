@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Skills de dominio: marketing, SEO y negocio
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Skills de dominio: marketing, SEO y negocio
 
 # 🏢 The Agency (agency-agents)
 
 > Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Code y otros agentes.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 168k | MIT | Shell | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 168k | MIT | Shell | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
+| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+
+## Qué puedes hacer con él
 
 Plantillas de subagente en Markdown agrupadas por divisiones, como una agencia completa: ingeniería, diseño, paid media, ventas, marketing, producto, testing, seguridad, soporte, finanzas, videojuegos y más. Cada agente define identidad, misión, flujo de trabajo, entregables con ejemplos y métricas de éxito, y hay runbooks que arman equipos para escenarios como un MVP o una campaña.
 
@@ -22,9 +37,23 @@ Cada agente es un rol concreto con proceso y entregables, no un prompt genérico
 
 Los agentes son archivos `.md` por división; `convert.sh` genera el formato de cada herramienta e `install.sh` los copia a su carpeta (por ejemplo `~/.claude/agents/`). También hay una app de escritorio que instala y actualiza el roster.
 
-## Instalación rápida
+## Cómo empezar
 
-`git clone https://github.com/msitarzewski/agency-agents && cd agency-agents && ./scripts/install.sh --tool claude-code --division engineering,marketing`, o la app de escritorio (`brew install --cask msitarzewski/agency-agents/agency-agents`).
+Se configura en tu agente. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un agente compatible y acceso activo a su modelo.
+
+1. Elige el agente indicado en Acceso y costes.
+2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
+3. Prueba una tarea pequeña y revisa si activa conectores externos.
+
+[Instrucciones originales de instalación](https://github.com/msitarzewski/agency-agents/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar The Agency (agency-agents) para mi objetivo y necesito pasos guiados. Lee https://github.com/msitarzewski/agency-agents/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +72,6 @@ Los agentes son archivos `.md` por división; `convert.sh` genera el formato de 
 ## Stack y modelos
 
 - **Stack:** Markdown, Bash, Python
-- **Modelos / API:** No llama a un LLM: los agentes los ejecuta tu herramienta (Claude Code, Cursor, Codex, Gemini CLI, OpenCode, Aider, etc.).
 - **Etiquetas:** `agents` `prompts` `skills` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -65,6 +93,12 @@ Los agentes son archivos `.md` por división; `convert.sh` genera el formato de 
 
 - 🐙 GitHub: [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)
 - 🧪 Receta: [Marketing de agencia](../playbooks/marketing-de-agencia.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/msitarzewski/agency-agents/blob/main/README.md)
 
 ---
 

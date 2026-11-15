@@ -9,6 +9,9 @@
 | Elígelo si… | necesitas herramientas internas con lógica y muchas fuentes de datos | quieres un Airtable propio sobre tu base de datos |
 | Evítalo si… | solo quieres hojas colaborativas; mira `nocodb` | necesitas apps internas con lógica compleja; mira `appsmith` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | API de IA opcional | Sin API de IA en la ruta básica |
+| Coste | El coste depende del proveedor o la ruta | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | Apache-2.0 | NOASSERTION |
 | Instalación | `docker run -d --name appsmith -p 80:80 -v "$PWD/stacks:/appsmith-stacks" appsmith/appsmith-ce` | `docker run -d -p 8080:8080 nocodb/nocodb:latest` |

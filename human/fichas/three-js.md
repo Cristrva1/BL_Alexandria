@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Animación y 3D
+[🏠 Inicio](../README.md) › [🎨 Diseñar y construir interfaces](../categorias/09-dise-o-ui-frontend.md) › Animación y 3D
 
 # 🔺 three.js
 
 > Motor 3D (WebGL) para renderizar gráficos y escenas interactivas directamente en el navegador.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 118k | MIT | JavaScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 118k | MIT | JavaScript | 2026-06-24 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Abstrae la complejidad de WebGL en escenas, cámaras, luces y mallas.
 
@@ -22,9 +37,19 @@ Es el estándar del 3D web, con un ecosistema enorme de ejemplos, loaders y help
 
 Abstrae WebGL en un grafo de escena (escenas, cámaras, luces, mallas) y gestiona el bucle de render por ti, con materiales y geometrías listas para usar.
 
-## Instalación rápida
+## Cómo empezar
 
-`npm i three` o vía CDN/módulo ES. Para algo más que una demo necesitas familiaridad con conceptos de gráficos 3D.
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/mrdoob/three.js/blob/dev/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar three.js para mi objetivo y necesito pasos guiados. Lee https://github.com/mrdoob/three.js/blob/dev/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Abstrae WebGL en un grafo de escena (escenas, cámaras, luces, mallas) y gestion
 ## Stack y modelos
 
 - **Stack:** JavaScript/WebGL
-- **Modelos / API:** N/A.
 - **Etiquetas:** `ui` `design` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -56,6 +80,12 @@ Abstrae WebGL en un grafo de escena (escenas, cámaras, luces, mallas) y gestion
 
 - 🐙 GitHub: [mrdoob/three.js](https://github.com/mrdoob/three.js)
 - 🌐 Web: <https://threejs.org/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/mrdoob/three.js/blob/dev/README.md)
 
 ---
 

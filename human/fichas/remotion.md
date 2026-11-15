@@ -1,18 +1,33 @@
-[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Video programático y con agentes
+[🏠 Inicio](../README.md) › [🎬 Crear audio, voz y video](../categorias/12-audio-voz-video.md) › Video programático y con agentes
 
 # ⚛️ remotion
 
-> Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4.
+> Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 73.2k | NOASSERTION | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 73.2k | NOASSERTION | TypeScript | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
 
-Convierte el video en un artefacto versionable y parametrizable desde tu código frontend.
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. El renderizado de React no requiere una API de IA. Revisar la licencia de Remotion para el tamaño del equipo y el uso comercial. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
+
+Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. El render no requiere por sí solo una API de IA; revisa las condiciones de licencia del proyecto.
 
 ## Por qué destaca
 
@@ -20,11 +35,33 @@ Muy popular para generar video a escala y plantillas parametrizadas (uno de los 
 
 ## Cómo funciona
 
-Renderiza componentes React frame a frame con un navegador headless (Chromium) y los une con ffmpeg; las props alimentan las plantillas, y el reloj de Remotion sincroniza animaciones con el tiempo del video.
+Representa cada fotograma mediante componentes y genera el archivo de video a partir de la composición.
 
-## Instalación rápida
+## Cómo empezar
 
-`npm create video` (o `npm i remotion @remotion/cli`). Requiere Node y Chromium para render; el render final usa ffmpeg.
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Node.js y el gestor de paquetes indicado por el proyecto.
+
+1. Crea un proyecto de video con el comando documentado.
+2. Abre una composición sencilla y ajusta el contenido y la duración.
+3. Prueba el renderizado local y revisa la licencia antes de una integración comercial o un servicio de render.
+
+**Comando de entrada documentado:**
+
+```shell
+npx create-video@latest
+```
+
+Comando presente en el README revisado; no es una prueba de instalación.
+
+[Instrucciones originales de instalación](https://github.com/remotion-dev/remotion/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar remotion para mi objetivo y necesito pasos guiados. Lee https://github.com/remotion-dev/remotion/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +78,6 @@ Renderiza componentes React frame a frame con un navegador headless (Chromium) y
 ## Stack y modelos
 
 - **Stack:** Node.js, React, Chromium, ffmpeg
-- **Modelos / API:** N/A.
 - **Etiquetas:** `video` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -49,7 +85,7 @@ Renderiza componentes React frame a frame con un navegador headless (Chromium) y
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Open-Generative-AI](open-generative-ai.md) | 34.7k | Plataforma alternativa libre a servicios premium de video/imagen que agrupa más de 200 modelos generativos accesibles desde terminal o integrados con agentes. |
+| [Open-Generative-AI](open-generative-ai.md) | 34.7k | Estudio abierto de generación de imagen y video que utiliza modelos ofrecidos mediante servicios de MuAPI. |
 
 ## Alternativas (elige una)
 
@@ -63,6 +99,12 @@ Renderiza componentes React frame a frame con un navegador headless (Chromium) y
 - 🐙 GitHub: [remotion-dev/remotion](https://github.com/remotion-dev/remotion)
 - 🌐 Web: <https://remotion.dev>
 - 🧪 Receta: [Pipeline de Reels / video corto](../playbooks/pipeline-de-reels-video-corto.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/remotion-dev/remotion/blob/main/README.md)
 
 ---
 

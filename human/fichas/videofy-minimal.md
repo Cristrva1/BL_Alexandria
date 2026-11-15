@@ -1,18 +1,33 @@
-[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Video programático y con agentes
+[🏠 Inicio](../README.md) › [🎬 Crear audio, voz y video](../categorias/12-audio-voz-video.md) › Video programático y con agentes
 
 # 📲 videofy_minimal
 
-> Herramienta minimalista (de Schibsted) que convierte contenido textual en videos cortos de forma local, sin pipeline complejo.
+> Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 656 | Apache-2.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 656 | Apache-2.0 | TypeScript | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
 
-Encadena TTS/STT y montaje en un solo flujo para pasar de texto a reel con lo mínimo.
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | API de IA necesaria. La ruta documentada necesita credenciales de un proveedor de IA o servicio externo. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
+| Coste | Consumo de APIs o servicios. El flujo documentado usa OPENAI_API_KEY y ELEVENLABS_API_KEY. La interfaz local no elimina esas llamadas remotas. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
+
+Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión. La ruta documentada requiere APIs de OpenAI y ElevenLabs aunque la interfaz y el montaje se ejecuten en tu equipo.
 
 ## Por qué destaca
 
@@ -20,11 +35,21 @@ Prioriza la simplicidad para pasar de texto a reel rápido; es un proyecto peque
 
 ## Cómo funciona
 
-Combina TTS/STT y un montador de video local para sincronizar narración, texto y fondos en un clip corto, orquestando los pasos sin depender de servicios externos.
+La interfaz coordina la obtención del artículo, guion, imágenes, narración y render del video.
 
-## Instalación rápida
+## Cómo empezar
 
-Clonar el repo e instalar dependencias Python/Node según el README (sin paquete publicado). Requiere los modelos TTS/STT que el proyecto utilice.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/schibsted/videofy_minimal/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar videofy_minimal para mi objetivo y necesito pasos guiados. Lee https://github.com/schibsted/videofy_minimal/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Clonar el repo e instalar dependencias Python/Node según el README (sin paquete
 ## Stack y modelos
 
 - **Stack:** Python/Node
-- **Modelos / API:** Local + TTS/STT.
 - **Etiquetas:** `video` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -51,8 +75,8 @@ Clonar el repo e instalar dependencias Python/Node según el README (sin paquete
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [whisper](whisper.md) | 113k | Modelo de reconocimiento de voz y traducción de audio multilingüe de OpenAI, estándar de la industria que transcribe casi cualquier idioma con un solo modelo. |
-| [supertonic](supertonic.md) | 13.8k | Motor TTS multilingüe ultrarrápido de Supertone que sintetiza voz directamente en el dispositivo, incluso en el navegador vía WebGPU. |
+| [whisper](whisper.md) | 113k | Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. |
+| [supertonic](supertonic.md) | 13.8k | Motor de texto a voz que ofrece modelos y ejemplos para sintetizar audio en dispositivos y navegadores compatibles. |
 
 ## Alternativas (elige una)
 
@@ -63,6 +87,12 @@ Clonar el repo e instalar dependencias Python/Node según el README (sin paquete
 ## Enlaces
 
 - 🐙 GitHub: [schibsted/videofy_minimal](https://github.com/schibsted/videofy_minimal)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/schibsted/videofy_minimal/blob/main/README.md)
 
 ---
 

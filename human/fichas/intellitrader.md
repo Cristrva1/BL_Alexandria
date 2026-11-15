@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [📊 Analítica & Visualización](../categorias/10-anal-tica-visualizaci-n.md) › Investigación financiera y trading experimental
+[🏠 Inicio](../README.md) › [📈 Investigar finanzas y mercados](../categorias/14-investigar-finanzas-y-mercados.md) › Bots y conexiones a exchanges
 
 # 📊 IntelliTrader
 
 > Bot configurable de criptomonedas con componentes de simulación, señales y conexión a exchanges.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 158 | NOASSERTION | C# | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 158 | NOASSERTION | C# | 2026-11-14 |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. La ruta básica no exige un LLM. Exchanges, brokers, datos de mercado y ejecución real pueden requerir cuentas, tarifas o fondos; los ejemplos no acreditan rentabilidad. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Bot configurable de criptomonedas con componentes de simulación, señales y conexión a exchanges. Aplica una configuración de estrategias y proveedores para observar o ejecutar operaciones.
 
@@ -22,9 +37,19 @@ Quieres estudiar la arquitectura de un bot con modo de trading virtual.
 
 Aplica una configuración de estrategias y proveedores para observar o ejecutar operaciones.
 
-## Instalación rápida
+## Cómo empezar
 
-Clona `git clone https://github.com/jazzonaut/IntelliTrader.git` y sigue la instalación del [README original](https://github.com/jazzonaut/IntelliTrader/blob/master/README.md). Las dependencias se configuran por proyecto.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/jazzonaut/IntelliTrader/blob/master/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar IntelliTrader para mi objetivo y necesito pasos guiados. Lee https://github.com/jazzonaut/IntelliTrader/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Clona `git clone https://github.com/jazzonaut/IntelliTrader.git` y sigue la inst
 ## Stack y modelos
 
 - **Stack:** C#
-- **Modelos / API:** Configurar el proveedor o entorno indicado en el README; esta revisión no ejecutó el proyecto.
 - **Etiquetas:** `finanzas` `binance` `bitcoin` `bot` `crypto` `cryptocurrencies` `cryptocurrency` `trading-bot`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -49,6 +73,12 @@ Clona `git clone https://github.com/jazzonaut/IntelliTrader.git` y sigue la inst
 
 - 🐙 GitHub: [jazzonaut/IntelliTrader](https://github.com/jazzonaut/IntelliTrader)
 - 🌐 Web: <http://intellitrader.io>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/jazzonaut/IntelliTrader/blob/master/README.md)
 
 ---
 

@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Frameworks de agentes en Python
+[🏠 Inicio](../README.md) › [🕸️ Crear y usar agentes de IA](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Frameworks de agentes en Python
 
 # 🦜 langchain
 
 > Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas).
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 150k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 150k | MIT | Python | 2026-06-23 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
+| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
+| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Ofrece abstracciones y conectores para casi cualquier modelo, base de datos vectorial y fuente de datos.
 
@@ -22,9 +37,27 @@ Estándar de facto del ecosistema LLM, con la comunidad e integraciones más gra
 
 Encadena componentes (prompts, modelos, retrievers, tools) en pipelines o agentes; disponible en Python y JS/TS, con LangGraph para grafos cíclicos con estado.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install langchain` o `npm install langchain`. Requiere la clave del proveedor de LLM que vayas a usar (OpenAI, Anthropic, etc.).
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+**Comando de entrada documentado:**
+
+```shell
+uv add langchain
+```
+
+Comando presente en el README revisado; no es una prueba de instalación.
+
+[Instrucciones originales de instalación](https://github.com/langchain-ai/langchain/blob/master/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar langchain para mi objetivo y necesito pasos guiados. Lee https://github.com/langchain-ai/langchain/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +74,6 @@ Encadena componentes (prompts, modelos, retrievers, tools) en pipelines o agente
 ## Stack y modelos
 
 - **Stack:** Python/JS/TS
-- **Modelos / API:** Prácticamente todos (OpenAI, Anthropic, Google, locales vía Ollama).
 - **Etiquetas:** `agents` `automation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -65,6 +97,12 @@ Encadena componentes (prompts, modelos, retrievers, tools) en pipelines o agente
 
 - 🐙 GitHub: [langchain-ai/langchain](https://github.com/langchain-ai/langchain)
 - 🌐 Web: <https://docs.langchain.com/langchain/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/langchain-ai/langchain/blob/master/README.md)
 
 ---
 

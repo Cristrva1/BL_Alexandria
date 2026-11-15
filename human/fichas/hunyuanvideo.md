@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Video generativo y pipelines automáticos
+[🏠 Inicio](../README.md) › [🎬 Crear audio, voz y video](../categorias/12-audio-voz-video.md) › Video generativo y pipelines automáticos
 
 # 🎬 HunyuanVideo
 
 > Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 12.8k | NOASSERTION | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 12.8k | NOASSERTION | Python | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
+| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
+| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 HunyuanVideo publica los pesos, la definición en PyTorch y el código de inferencia de un modelo de texto a video de más de 13.000 millones de parámetros, que genera clips de unos 5 segundos (129 fotogramas) en 540p o 720p. Las variantes de imagen a video, avatares guiados por audio y personalización viven en repos aparte.
 
@@ -22,9 +37,19 @@ Al publicarse fue el modelo de video abierto más grande, con calidad comparable
 
 Transformer de difusión que trabaja en un espacio latente comprimido por un VAE causal 3D; el prompt se codifica con un LLM multimodal en lugar de CLIP o T5. Admite inferencia paralela en varias GPU con xDiT.
 
-## Instalación rápida
+## Cómo empezar
 
-`git clone https://github.com/Tencent-Hunyuan/HunyuanVideo`, entorno conda con Python 3.10, PyTorch con CUDA y `pip install -r requirements.txt`; luego descarga los pesos de Hugging Face (tencent/HunyuanVideo).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar HunyuanVideo para mi objetivo y necesito pasos guiados. Lee https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Transformer de difusión que trabaja en un espacio latente comprimido por un VAE
 ## Stack y modelos
 
 - **Stack:** Python, PyTorch, Diffusers, FlashAttention, xDiT
-- **Modelos / API:** Modelos propios en local (HunyuanVideo con codificador de texto MLLM); no usa API externa.
 - **Etiquetas:** `video` `inference` `local` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -66,6 +90,12 @@ Transformer de difusión que trabaja en un espacio latente comprimido por un VAE
 
 - 🐙 GitHub: [Tencent-Hunyuan/HunyuanVideo](https://github.com/Tencent-Hunyuan/HunyuanVideo)
 - 🌐 Web: <https://aivideo.hunyuan.tencent.com>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/Tencent-Hunyuan/HunyuanVideo/blob/main/README.md)
 
 ---
 

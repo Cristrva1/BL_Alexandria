@@ -9,6 +9,9 @@
 | Elígelo si… | quieres entender un repo puntual de forma visual | quieres dar tu repo completo a un LLM |
 | Evítalo si… | necesitas indexar muchos repos a escala (codegraph) o no quieres front web | el repo es enorme; mira `codebase-memory-mcp` o `serena` |
 | Ejecución | 🔀 híbrido | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | NOASSERTION | MIT |
 | Instalación | `git clone https://github.com/abhigyanpatwari/GitNexus` | `npx repomix` |

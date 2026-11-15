@@ -18,8 +18,9 @@
   --nav-w: 232px;
 }
 
+
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: auto; }
 body {
   margin: 0;
   color: var(--ink);
@@ -208,12 +209,11 @@ a.badge { text-transform: none; letter-spacing: 0; font-size: 0.82rem; }
   padding: 1rem 1.05rem;
   border: 1px solid var(--rule);
 }
-.callout.yes { border-top: 4px solid var(--green); }
-.callout.no { border-top: 4px solid var(--terra); }
+.callout.yes h3 { color: var(--green); }
+.callout.no h3 { color: var(--terra-deep); }
 .callout h3 { font-size: 1.15rem; }
 .aside {
-  border-left: 3px solid var(--gold);
-  padding: 0.2rem 0 0.2rem 0.9rem;
+  padding: 0.5rem 0;
   color: var(--ink-soft);
   font-family: var(--serif);
   font-size: 1.2rem;
@@ -231,6 +231,7 @@ a.badge { text-transform: none; letter-spacing: 0; font-size: 0.82rem; }
 .toolbar select { flex: 1 1 8.5rem; width: auto; min-width: 8.5rem; max-width: 11.5rem; }
 .toolbar select[name="cat"] { flex-basis: 13rem; min-width: 13rem; max-width: 16rem; }
 #compare-add select { flex: 1 1 16rem; }
+#compare-add label { flex-basis: 100%; }
 #compare-add .btn { flex: 0 0 auto; align-self: center; }
 input[type="search"], select {
   width: 100%;
@@ -352,4 +353,111 @@ input:focus, select:focus, button:focus-visible, a:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; }
   .card:hover, .room:hover { transform: none; }
+}
+
+/* Library wayfinding extends the existing paper-and-ink identity. */
+::selection { background: #e9bca9; color: #241f1b; }
+input { caret-color: var(--terra-deep); }
+.library-intro { max-width: 76ch; }
+.library-intro h1 { font-size: 2.75rem; line-height: 1.12; }
+.home-search { margin-block: 2rem; }
+.home-search label { font-size: 1.1rem; font-weight: 600; }
+.home-search .meta { margin-block: .35rem .65rem; }
+.search-line { display: flex; gap: .6rem; }
+.search-line input { flex: 1; min-width: 0; }
+.home-search input, .library-filters input, .library-filters select {
+  width: 100%; min-height: 48px; font-size: 1rem; background: var(--paper-2);
+  border: 1px solid #88796a; border-radius: 6px; padding: .65rem .8rem;
+}
+.home-search .btn { flex: none; }
+.nav-items { display: flex; flex-direction: column; gap: .2rem; }
+.nav a.item { border-inline: 0; min-height: 44px; }
+.nav a.item[aria-current="page"] { background: #44342b; color: #fff6eb; }
+.goal-list, .guide-list, .shelf-list, .access-links { list-style: none; margin: 0; padding: 0; }
+.goal-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 2rem; }
+.goal-list li { border-bottom: 1px solid var(--rule); }
+.goal-list a { display: block; padding-block: 1rem; text-decoration: none; }
+.goal-list strong { display: block; color: var(--terra-deep); }
+.goal-list span { display: block; color: var(--ink-soft); margin-top: .3rem; font-size: .95rem; max-width: 48ch; }
+.access-links { display: flex; flex-wrap: wrap; gap: .5rem; margin-block: 1rem; }
+.access-links a { display: block; border: 1px solid #88796a; border-radius: 6px; padding: .7rem 1rem; }
+.reading-start { max-width: 70ch; }
+.reading, .reading-section { max-width: 73ch; }
+.reading p { font-size: 1.05rem; line-height: 1.7; }
+.reading-toc { border-block: 1px solid var(--rule); margin-block: 2rem; padding-block: 1rem; }
+.reading-toc h2 { margin-block: 0 .6rem; font-size: 1.2rem; }
+.reading-toc li { margin-block: .4rem; }
+.reading-section { scroll-margin-top: 1rem; }
+.guide-list li, .shelf-list li { padding-block: 1.1rem; border-bottom: 1px solid var(--rule); max-width: 75ch; }
+.guide-list h2, .shelf-list h2 { font-size: 1.5rem; margin-block: 0 .3rem; }
+.guide-list p, .shelf-list p { margin-block: .4rem; }
+.library-filters { margin-block: 1.5rem; }
+.library-filters label { display: block; font-size: .9rem; font-weight: 600; margin-bottom: .35rem; }
+.query-field { max-width: 75ch; margin-bottom: 1rem; }
+.filter-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+.advanced-filters { margin-top: 1rem; }
+.advanced-filters summary { cursor: pointer; padding-block: .5rem; }
+.filter-submit { margin-top: 1rem; }
+.repo-row { display: grid; grid-template-columns: minmax(0,1fr) minmax(190px, .4fr); gap: 1.5rem; padding-block: 1.35rem; border-bottom: 1px solid var(--rule); }
+.repo-summary h2 { font-size: 1.5rem; margin-block: .25rem .35rem; overflow-wrap: anywhere; }
+.repo-summary p { margin-block: .25rem; max-width: 65ch; }
+.repo-summary h2 a { text-decoration: none; }
+.repo-access { align-self: center; }
+.repo-access .badge { white-space: normal; }
+.repo-access a { font-size: .9rem; }
+.pagination { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem; margin-block: 2rem; }
+.access-facts { margin-block: 1.25rem; }
+.access-facts > div { display: grid; grid-template-columns: 150px minmax(0,1fr); gap: 1rem; border-bottom: 1px solid var(--rule); padding-block: .9rem; }
+.access-facts dt { font-weight: 600; }
+.access-facts dd { margin: 0; }
+.access-facts dd p { margin-block: .35rem 0; color: var(--ink-soft); max-width: 68ch; }
+.access-explanation { max-width: 73ch; }
+.start-steps li { margin-block: .7rem; max-width: 72ch; }
+.command { white-space: pre-wrap; overflow-wrap: anywhere; }
+.guided-entry { display: grid; justify-items: start; gap: .65rem; }
+.guided-entry span { color: var(--ink-soft); font-size: .95rem; }
+.guided-form { max-width: 70ch; margin-block: 2rem; display: grid; gap: 1.3rem; justify-items: start; }
+.guided-form .filter-field { width: 100%; }
+.guided-form label, .guided-help label { display: block; font-weight: 600; margin-bottom: .5rem; }
+.guided-form select, .guided-help textarea { width: 100%; min-height: 48px; font: inherit; padding: .75rem; border: 1px solid #88796a; border-radius: 6px; background: var(--paper-2); color: var(--ink); }
+.guided-form select { text-overflow: ellipsis; }
+.guided-picks { padding-left: 1.6rem; }
+.guided-picks li { padding-block: 1rem; border-bottom: 1px solid var(--rule); }
+.guided-picks h3 { margin-block: 0 .5rem; font-size: 1.5rem; }
+.guided-picks p { max-width: 72ch; }
+#guided-results { scroll-margin-top: 1rem; }
+.guided-help, .technical-details { border-block: 1px solid var(--rule); padding-block: 1rem; margin-block: 1.5rem; }
+.guided-help summary, .technical-details summary { cursor: pointer; font-weight: 600; padding-block: .4rem; }
+.guided-help textarea { display: block; margin-block: .6rem 1rem; resize: vertical; line-height: 1.6; }
+.guided-help .copy-status { min-height: 1.5em; }
+.repo-toc { display: flex; flex-wrap: wrap; gap: .7rem 1.5rem; margin-block: 1.4rem; }
+.mobile-hint { display: none; }
+.table-wrap:focus-visible { outline: 3px solid var(--terra-deep); outline-offset: 3px; }
+#repo-access, #repo-start { scroll-margin-top: 1rem; }
+textarea:focus-visible { outline: 3px solid var(--terra-deep); outline-offset: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+:where(a,button,input,select,summary):focus-visible { outline: 3px solid var(--terra-deep); outline-offset: 3px; }
+.kicker { display: none; }
+
+@media (max-width: 900px) {
+  .mobile-hint { display: block; }
+  .shell { display: block; }
+  .nav { width: 100%; height: auto; position: static; padding: .9rem 1rem; overflow: visible; display: block; }
+  .brand { margin-bottom: .7rem; width: fit-content; }
+  .nav-items { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .2rem; width: 100%; }
+  .nav a.item { white-space: normal; font-size: .9rem; padding: .55rem .5rem; min-width: 0; }
+  .nav-foot { display: none; }
+  .main { padding: 1.5rem 1rem 3rem; }
+  .library-intro h1 { font-size: 2.15rem; }
+  .repo-row { grid-template-columns: 1fr; gap: .6rem; }
+  .repo-access p { margin-block: .3rem; }
+}
+@media (max-width: 520px) {
+  .goal-list, .filter-grid { grid-template-columns: 1fr; }
+  .access-facts > div { grid-template-columns: 1fr; gap: .3rem; }
+  .library-intro h1 { font-size: 1.9rem; }
+  .search-line { flex-wrap: wrap; }
+  .search-line input { flex-basis: 100%; }
+  .access-links { display: grid; grid-template-columns: 1fr 1fr; }
+  .access-links a { padding: .65rem; height: 100%; font-size: .9rem; }
 }

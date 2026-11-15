@@ -4,15 +4,30 @@
 
 > Guía editorial original de la biblioteca, hoy integrada en las fichas de cada repo.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| — | — | — | — | 🧰 Interna |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| — | — | — | 2026-06-24 |
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
 > 🧰 Carpeta interna del hub; no es un producto para instalar.
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | API: por confirmar. No se ha verificado si la ruta elegida necesita una API de IA. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Ejecución con modelos locales por confirmar. Ejecutar el programa en tu equipo no demuestra que el modelo también sea local. |
+| Coste | Coste por confirmar. Código disponible no significa servicios, modelos, infraestructura o licencias sin coste. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos originales de la variante que vayas a usar. |
+
+Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+
+## Qué puedes hacer con él
 
 El texto escrito a mano de la guía anterior se incorporó a las fichas; `Guia.md` ahora se genera desde el índice.
 
@@ -24,7 +39,7 @@ Uso interno.
 
 Documento Markdown.
 
-## Instalación rápida
+## Cómo empezar
 
 No se instala: es parte de este repositorio.
 
@@ -43,7 +58,6 @@ No se instala: es parte de este repositorio.
 ## Stack y modelos
 
 - **Stack:** Markdown
-- **Modelos / API:** No usa LLM.
 - **Etiquetas:** `learning`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 

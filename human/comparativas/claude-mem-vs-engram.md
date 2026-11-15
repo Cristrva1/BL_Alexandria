@@ -9,6 +9,9 @@
 | Elígelo si… | usas Claude Code a diario y repites contexto entre sesiones | quieres memoria local simple para cualquier agente |
 | Evítalo si… | necesitas memoria para una app propia; mira `mem0` | solo usas Claude Code y quieres algo automático; mira `claude-mem` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | API de IA opcional | Sin API de IA en la ruta básica |
+| Coste | El coste depende del proveedor o la ruta | Consumo del agente que ya utilizas |
+| Modelos locales | La función básica no necesita un modelo | Modelo local no documentado |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | Apache-2.0 | MIT |
 | Instalación | `/plugin marketplace add thedotmack/claude-mem` | `brew install gentleman-programming/tap/engram` |

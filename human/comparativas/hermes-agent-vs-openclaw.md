@@ -9,6 +9,9 @@
 | Elígelo si… | quieres agentes locales con UI y memoria persistente | quieres un asistente personal que actúe por tus canales de chat |
 | Evítalo si… | prefieres orquestación en nube o no quieres compilar Tauri | necesitas un agente para tu empresa con varios usuarios; mira `hermes-agent` |
 | Ejecución | 🏠 local | 🔀 híbrido |
+| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | Modelo local no documentado |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | MIT | MIT |
 | Instalación | `git clone` | `npm install -g openclaw@latest` |

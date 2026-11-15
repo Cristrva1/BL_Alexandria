@@ -10,7 +10,7 @@ CATEGORY_LESSONS: dict[int, dict[str, str]] = {
     0: {
         "question": "¿Es una herramienta interna de esta biblioteca?",
         "blurb": (
-            "Utilidades del propio workspace. No forman parte de las 13 salas "
+            "Utilidades del propio workspace. No forman parte de las salas públicas "
             "y no se instalan como producto para un proyecto nuevo."
         ),
     },
@@ -183,9 +183,9 @@ LABELS: dict[str, dict[str, str]] = {
         "heavy": "Infra pesada",
     },
     "confidence": {
-        "ok": "Comando fiable",
-        "verify": "Verifica el paquete",
-        "clone": "Solo clonar",
+        "ok": "Documentado en la fuente",
+        "verify": "Por revisar",
+        "clone": "Consulta la fuente original",
     },
 }
 

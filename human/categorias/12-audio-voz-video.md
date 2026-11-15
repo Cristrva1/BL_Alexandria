@@ -1,29 +1,29 @@
-[🏠 Inicio](../README.md) · [📚 Catálogo](../../Catalogo.md) · [⬅️ 11. Generación de Imagen & Visión](11-generaci-n-de-imagen-visi-n.md) · [13. Documentos & Presentaciones ➡️](13-documentos-presentaciones.md)
+[Inicio](../README.md) · [Rutas por objetivo](../rutas.md) · [Acceso y costes](../acceso.md)
 
-# 🎬 12. Audio, Voz & Video
+# Crear audio, voz y video
 
-> Transcripción, síntesis y clonación de voz, agentes de voz, edición y subtítulos, video programático, video generativo y música.
+Transcribe, sintetiza voz, edita o genera video. El montaje local y la generación mediante un proveedor son rutas con requisitos diferentes.
 
-**50 repos** · 7 subcategorías · ⭐ 1.8M estrellas en total · 🆕 50 sugeridos nuevos
+50 repos · 7 secciones
 
-## ⭐ Imprescindibles
+## Puntos de partida
 
-Si solo vas a mirar unos pocos, empieza por estos:
+Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no por las estrellas.
 
-| Repo | ⭐ | Qué hace | Instalación |
-|---|---:|---|---|
-| [whisper.cpp](../fichas/whisper-cpp.md) | 55.2k | Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. | `brew install whisper-cpp` |
-| [Kokoro](../fichas/kokoro.md) | 10.1k | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. | `pip install kokoro soundfile` |
-| [Pipecat](../fichas/pipecat.md) | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. | `pip install "pipecat-ai[daily,openai,cartesia]"` |
-| [FFmpeg](../fichas/ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. | `brew install ffmpeg` |
-| [MoviePy](../fichas/moviepy.md) | 15.2k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. | `pip install moviepy` |
-| [HyperFrames](../fichas/hyperframes.md) | 84.4k | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | `npx hyperframes init my-video` |
-| [Remotion Agent Skills](../fichas/skills-remotion.md) | 7.1k | Skills oficiales de Remotion para que tu agente de código cree videos con React. | `npx skills add remotion-dev/skills` |
-| [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md) | 144k | App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso. | `pip install mpt` |
-| [Wan2.2](../fichas/wan2-2.md) | 18.7k | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. | `git clone https://github.com/Wan-Video/Wan2.2.git && cd Wan2.2 && pip install -r requirements.txt` |
-| [AudioCraft](../fichas/audiocraft.md) | 23.9k | Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. | `python -m pip install 'torch==2.1.0'` |
+| Repo | Qué hace | Acceso básico |
+|---|---|---|
+| [whisper.cpp](../fichas/whisper-cpp.md) | Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. | Sin API de IA en la ruta básica |
+| [Kokoro](../fichas/kokoro.md) | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. | Sin API de IA en la ruta básica |
+| [Pipecat](../fichas/pipecat.md) | Framework open source para agentes de voz y apps multimodales en tiempo real. | Depende de la ruta elegida |
+| [FFmpeg](../fichas/ffmpeg.md) | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. | Sin API de IA en la ruta básica |
+| [MoviePy](../fichas/moviepy.md) | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. | Sin API de IA en la ruta básica |
+| [HyperFrames](../fichas/hyperframes.md) | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | Sin API de IA en la ruta básica |
+| [Remotion Agent Skills](../fichas/skills-remotion.md) | Skills oficiales de Remotion para que tu agente de código cree videos con React. | Sin API de IA en la ruta básica |
+| [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md) | App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso. | Depende de la ruta elegida |
+| [Wan2.2](../fichas/wan2-2.md) | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. | Sin API de IA en la ruta básica |
+| [AudioCraft](../fichas/audiocraft.md) | Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. | Sin API de IA en la ruta básica |
 
-## 🧭 Subcategorías
+## Secciones
 
 - [Transcripción (voz a texto)](#transcripción-voz-a-texto) — 5 repos
 - [Síntesis y clonación de voz](#síntesis-y-clonación-de-voz) — 14 repos
@@ -35,182 +35,95 @@ Si solo vas a mirar unos pocos, empieza por estos:
 
 ## Transcripción (voz a texto)
 
-| Repo | ⭐ | Qué hace | Ideal si… | Setup |
-|---|---:|---|---|:---:|
-| ⭐ [whisper.cpp](../fichas/whisper-cpp.md) 🆕 | 55.2k | Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. | quieres transcribir en local sin GPU | 🟢 |
-| [whisper](../fichas/whisper.md) 🆕 | 113k | Modelo de reconocimiento de voz y traducción de audio multilingüe de OpenAI, estándar de la industria que transcribe casi cualquier idioma con un solo modelo. | quieres la referencia robusta y no te obsesiona la latencia | 🟡 |
-| [faster-whisper](../fichas/faster-whisper.md) 🆕 | 26.8k | Reimplementación de Whisper sobre CTranslate2 que transcribe mucho más rápido y con menor consumo de memoria, manteniendo la misma precisión. | el rendimiento, la memoria o el coste de GPU importan | 🟡 |
-| [whisperX](../fichas/whisperx.md) 🆕 | 25.3k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. | necesitas subtítulos precisos o diarización | 🟡 |
-| [NVIDIA NeMo Speech](../fichas/nemo.md) 🆕 | 18.8k | Framework de NVIDIA para entrenar y usar modelos de voz: reconocimiento, síntesis y más. | necesitas ASR de máxima precisión y tienes GPU | 🔴 |
+| Repo | Para qué sirve | Elígelo si… | API de IA |
+|---|---|---|---|
+| [whisper.cpp](../fichas/whisper-cpp.md) | Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. | quieres transcribir en local sin GPU | Sin API de IA en la ruta básica |
+| [whisper](../fichas/whisper.md) | Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. | quieres la referencia robusta y no te obsesiona la latencia | Sin API de IA en la ruta básica |
+| [faster-whisper](../fichas/faster-whisper.md) | Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. | el rendimiento, la memoria o el coste de GPU importan | Sin API de IA en la ruta básica |
+| [whisperX](../fichas/whisperx.md) | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. | necesitas subtítulos precisos o diarización | Sin API de IA en la ruta básica |
+| [NVIDIA NeMo Speech](../fichas/nemo.md) | Framework de NVIDIA para entrenar y usar modelos de voz: reconocimiento, síntesis y más. | necesitas ASR de máxima precisión y tienes GPU | Sin API de IA en la ruta básica |
 
 ## Síntesis y clonación de voz
 
-| Repo | ⭐ | Qué hace | Ideal si… | Setup |
-|---|---:|---|---|:---:|
-| ⭐ [Kokoro](../fichas/kokoro.md) 🆕 | 10.1k | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. | quieres TTS ligero, rápido y con licencia permisiva | 🟢 |
-| [OmniVoice-Studio](../fichas/omnivoice-studio.md) 🆕 | 111k | Alternativa local y open source a ElevenLabs: clonación, diseño y conversión de voz en una app. | quieres suite de voz completa local (dictado + clonación + dubbing) | 🟡 |
-| [GPT-SoVITS](../fichas/gpt-sovits.md) 🆕 | 65.1k | Clonación de voz y TTS con solo un minuto de audio, con interfaz web para entrenar. | quieres entrenar una voz con pocos datos | 🟡 |
-| [VibeVoice](../fichas/vibevoice.md) 🆕 | 57.2k | Modelos de voz de frontera de Microsoft para podcasts largos con varios hablantes y tiempo real. | quieres generar podcasts o diálogos largos | 🔴 |
-| [TTS](../fichas/tts.md) 🆕 | 46.2k | Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz. | quieres flexibilidad y varios modelos en una librería | 🟡 |
-| [VoxCPM](../fichas/voxcpm.md) 🆕 | 42.5k | Modelo de texto a voz sin tokenizador que clona voces con naturalidad y expresividad alta. | quieres voz muy natural o clonada y tienes GPU | 🔴 |
-| [RVC WebUI](../fichas/rvc.md) 🆕 | 39.3k | Conversión de voz: entrena un modelo con menos de 10 minutos de audio y transforma una voz en otra. | quieres convertir una voz grabada en otra | 🟡 |
-| [Fish Speech](../fichas/fish-speech.md) 🆕 | 33.7k | Sistema de texto a voz open source de alta calidad con clonación de voz multilingüe. | buscas TTS de alta calidad con clonación | 🟡 |
-| [Chatterbox](../fichas/chatterbox.md) 🆕 | 27.8k | Modelo de texto a voz open source de Resemble AI con clonación de voz y control de emoción. | quieres clonar voces con calidad alta y licencia libre | 🟢 |
-| [IndexTTS](../fichas/index-tts.md) 🆕 | 25.1k | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. | necesitas controlar duración y emoción de la voz | 🟡 |
-| [CosyVoice](../fichas/cosyvoice.md) 🆕 | 24.4k | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. | necesitas TTS multilingüe en streaming | 🟡 |
-| [supertonic](../fichas/supertonic.md) 🆕 | 13.8k | Motor TTS multilingüe ultrarrápido de Supertone que sintetiza voz directamente en el dispositivo, incluso en el navegador vía WebGPU. | quieres voz local en tiempo real y sin nube | 🟡 |
-| [edge-tts](../fichas/edge-tts.md) 🆕 | 12.5k | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | quieres generar narración sin instalar un modelo de voz local | 🟢 |
-| [LuxTTS](../fichas/luxtts.md) 🆕 | 5.6k | Modelo de TTS ligero con clonación de voz que genera audio hasta 150 veces más rápido que tiempo real. | necesitas TTS con clonación muy rápido | 🟢 |
+| Repo | Para qué sirve | Elígelo si… | API de IA |
+|---|---|---|---|
+| [Kokoro](../fichas/kokoro.md) | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. | quieres TTS ligero, rápido y con licencia permisiva | Sin API de IA en la ruta básica |
+| [OmniVoice-Studio](../fichas/omnivoice-studio.md) | Alternativa local y open source a ElevenLabs: clonación, diseño y conversión de voz en una app. | quieres suite de voz completa local (dictado + clonación + dubbing) | Sin API de IA en la ruta básica |
+| [GPT-SoVITS](../fichas/gpt-sovits.md) | Clonación de voz y TTS con solo un minuto de audio, con interfaz web para entrenar. | quieres entrenar una voz con pocos datos | Sin API de IA en la ruta básica |
+| [VibeVoice](../fichas/vibevoice.md) | Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio. | quieres generar podcasts o diálogos largos | Sin API de IA en la ruta básica |
+| [TTS](../fichas/tts.md) | Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz. | quieres flexibilidad y varios modelos en una librería | Sin API de IA en la ruta básica |
+| [VoxCPM](../fichas/voxcpm.md) | Modelo de texto a voz sin tokenizador que clona voces con naturalidad y expresividad alta. | quieres voz muy natural o clonada y tienes GPU | Sin API de IA en la ruta básica |
+| [RVC WebUI](../fichas/rvc.md) | Conversión de voz: entrena un modelo con menos de 10 minutos de audio y transforma una voz en otra. | quieres convertir una voz grabada en otra | Sin API de IA en la ruta básica |
+| [Fish Speech](../fichas/fish-speech.md) | Sistema de texto a voz open source de alta calidad con clonación de voz multilingüe. | buscas TTS de alta calidad con clonación | Sin API de IA en la ruta básica |
+| [Chatterbox](../fichas/chatterbox.md) | Modelo de texto a voz open source de Resemble AI con clonación de voz y control de emoción. | quieres clonar voces con calidad alta y licencia libre | Sin API de IA en la ruta básica |
+| [IndexTTS](../fichas/index-tts.md) | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. | necesitas controlar duración y emoción de la voz | Sin API de IA en la ruta básica |
+| [CosyVoice](../fichas/cosyvoice.md) | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. | necesitas TTS multilingüe en streaming | Sin API de IA en la ruta básica |
+| [supertonic](../fichas/supertonic.md) | Motor de texto a voz que ofrece modelos y ejemplos para sintetizar audio en dispositivos y navegadores compatibles. | quieres voz local en tiempo real y sin nube | Sin API de IA en la ruta básica |
+| [edge-tts](../fichas/edge-tts.md) | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | quieres generar narración sin instalar un modelo de voz local | Sin API de IA en la ruta básica |
+| [LuxTTS](../fichas/luxtts.md) | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. | necesitas TTS con clonación muy rápido | Sin API de IA en la ruta básica |
 
 ## Agentes de voz en tiempo real
 
-| Repo | ⭐ | Qué hace | Ideal si… | Setup |
-|---|---:|---|---|:---:|
-| ⭐ [Pipecat](../fichas/pipecat.md) 🆕 | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. | construyes un agente de voz en Python | 🟡 |
-| [LiveKit Agents](../fichas/livekit-agents.md) 🆕 | 15.2k | Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit. | necesitas agentes de voz escalables con WebRTC | 🟡 |
+| Repo | Para qué sirve | Elígelo si… | API de IA |
+|---|---|---|---|
+| [Pipecat](../fichas/pipecat.md) | Framework open source para agentes de voz y apps multimodales en tiempo real. | construyes un agente de voz en Python | Depende de la ruta elegida |
+| [LiveKit Agents](../fichas/livekit-agents.md) | Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit. | necesitas agentes de voz escalables con WebRTC | Depende de la ruta elegida |
 
 ## Edición, grabación y subtítulos
 
-| Repo | ⭐ | Qué hace | Ideal si… | Setup |
-|---|---:|---|---|:---:|
-| ⭐ [FFmpeg](../fichas/ffmpeg.md) 🆕 | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. | necesitas convertir, cortar, mezclar o transmitir audio y video desde la línea de comandos o un script | 🟢 |
-| ⭐ [MoviePy](../fichas/moviepy.md) 🆕 | 15.2k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. | ensamblas video desde Python y quieres controlar cada clip por código | 🟢 |
-| [OpenCut](../fichas/opencut.md) 🆕 | 98.4k | Editor de video libre con línea de tiempo, alternativa a CapCut, que funciona en el navegador y procesa en tu equipo. | quieres un editor con línea de tiempo, libre y privado, como alternativa a CapCut | 🟡 |
-| [OBS Studio](../fichas/obs-studio.md) 🆕 | 79.6k | App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real. | necesitas grabar pantalla o transmitir en directo combinando varias fuentes en escenas | 🟢 |
-| [LosslessCut](../fichas/lossless-cut.md) 🆕 | 46k | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. | necesitas recortar o unir material rápido y sin recomprimir, con interfaz gráfica | 🟢 |
-| [OpenScreen](../fichas/openscreen.md) 🆕 | 40k | App de escritorio para grabar demos de producto con zoom automático, webcam y subtítulos, alternativa libre a Screen Studio. | quieres demos de pantalla pulidas con zoom automático sin pagar Screen Studio | 🟢 |
-| [VideoLingo](../fichas/videolingo.md) 🆕 | 19.3k | App que subtitula, traduce y dobla videos de forma automática: ASR con timestamps por palabra, traducción con LLM y TTS. | quieres subtitular, traducir o doblar videos de punta a punta con una interfaz y sin programar | 🟡 |
-| [palmier-pro](../fichas/palmier-pro.md) 🆕 | 14.8k | Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales. | usas macOS y quieres explorar edición de video asistida por agentes | 🟡 |
-| [DaVinci Resolve MCP](../fichas/davinci-resolve-mcp.md) 🆕 | 4.1k | Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render. | editas en DaVinci Resolve y quieres que un agente MCP automatice montaje, render o metadatos | 🟡 |
+| Repo | Para qué sirve | Elígelo si… | API de IA |
+|---|---|---|---|
+| [FFmpeg](../fichas/ffmpeg.md) | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. | necesitas convertir, cortar, mezclar o transmitir audio y video desde la línea de comandos o un script | Sin API de IA en la ruta básica |
+| [MoviePy](../fichas/moviepy.md) | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. | ensamblas video desde Python y quieres controlar cada clip por código | Sin API de IA en la ruta básica |
+| [OpenCut](../fichas/opencut.md) | Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe. | quieres un editor con línea de tiempo, libre y privado, como alternativa a CapCut | Sin API de IA en la ruta básica |
+| [OBS Studio](../fichas/obs-studio.md) | App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real. | necesitas grabar pantalla o transmitir en directo combinando varias fuentes en escenas | Sin API de IA en la ruta básica |
+| [LosslessCut](../fichas/lossless-cut.md) | App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad. | necesitas recortar o unir material rápido y sin recomprimir, con interfaz gráfica | Sin API de IA en la ruta básica |
+| [OpenScreen](../fichas/openscreen.md) | App de escritorio para grabar demos de producto con zoom automático, webcam y subtítulos, alternativa libre a Screen Studio. | quieres demos de pantalla pulidas con zoom automático sin pagar Screen Studio | Sin API de IA en la ruta básica |
+| [VideoLingo](../fichas/videolingo.md) | App que subtitula, traduce y dobla videos de forma automática: ASR con timestamps por palabra, traducción con LLM y TTS. | quieres subtitular, traducir o doblar videos de punta a punta con una interfaz y sin programar | Depende de la ruta elegida |
+| [palmier-pro](../fichas/palmier-pro.md) | Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales. | usas macOS y quieres explorar edición de video asistida por agentes | Depende de la ruta elegida |
+| [DaVinci Resolve MCP](../fichas/davinci-resolve-mcp.md) | Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render. | editas en DaVinci Resolve y quieres que un agente MCP automatice montaje, render o metadatos | Sin API de IA en la ruta básica |
 
 ## Video programático y con agentes
 
-| Repo | ⭐ | Qué hace | Ideal si… | Setup |
-|---|---:|---|---|:---:|
-| ⭐ [HyperFrames](../fichas/hyperframes.md) 🆕 | 84.4k | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | quieres que un agente de código genere videos con motion graphics a partir de HTML, con licencia permisiva | 🟢 |
-| ⭐ [Remotion Agent Skills](../fichas/skills-remotion.md) 🆕 | 7.1k | Skills oficiales de Remotion para que tu agente de código cree videos con React. | haces videos con Remotion y un agente | 🟢 |
-| [Manim (ManimGL)](../fichas/manim.md) 🆕 | 96.5k | Motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL. | quieres animaciones matemáticas o técnicas precisas definidas en código Python | 🟡 |
-| [OpenMontage](../fichas/openmontage.md) 🆕 | 80.5k | Convierte tu agente de código en un estudio de producción de video completo. | quieres producir videos completos con un agente | 🟡 |
-| [remotion](../fichas/remotion.md) 🆕 | 73.2k | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. | generas video a escala con React y quieres variantes parametrizadas | 🟡 |
-| [manim](../fichas/manim-community.md) 🆕 | 42.5k | Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. | necesitas animaciones matemáticas precisas y reproducibles | 🟡 |
-| [video-use](../fichas/video-use.md) 🆕 | 31.1k | Herramienta para editar videos con agentes de código como Claude Code, de los creadores de browser-use. | quieres editar videos pidiéndoselo a tu agente | 🟢 |
-| [rea-video](../fichas/rea-video.md) 🆕 | 8.6k | Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md. | quieres estudiar o recrear la estructura de un video de referencia | 🟡 |
-| [videofy_minimal](../fichas/videofy-minimal.md) 🆕 | 656 | Herramienta minimalista (de Schibsted) que convierte contenido textual en videos cortos de forma local, sin pipeline complejo. | quieres reels simples ya, sin montar un pipeline entero | 🟢 |
-| [Remotion Superpowers](../fichas/remotion-superpowers.md) 🆕 | 168 | Plugin que convierte Remotion en un estudio de video para Claude Code, Codex o Gemini CLI. | usas Remotion con un agente y quieres producción completa | 🟢 |
+| Repo | Para qué sirve | Elígelo si… | API de IA |
+|---|---|---|---|
+| [HyperFrames](../fichas/hyperframes.md) | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | quieres que un agente de código genere videos con motion graphics a partir de HTML, con licencia permisiva | Sin API de IA en la ruta básica |
+| [Remotion Agent Skills](../fichas/skills-remotion.md) | Skills oficiales de Remotion para que tu agente de código cree videos con React. | haces videos con Remotion y un agente | Sin API de IA en la ruta básica |
+| [Manim (ManimGL)](../fichas/manim.md) | Motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL. | quieres animaciones matemáticas o técnicas precisas definidas en código Python | Sin API de IA en la ruta básica |
+| [OpenMontage](../fichas/openmontage.md) | Convierte tu agente de código en un estudio de producción de video completo. | quieres producir videos completos con un agente | Sin API de IA en la ruta básica |
+| [remotion](../fichas/remotion.md) | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. | generas video a escala con React y quieres variantes parametrizadas | Sin API de IA en la ruta básica |
+| [manim](../fichas/manim-community.md) | Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. | necesitas animaciones matemáticas precisas y reproducibles | Sin API de IA en la ruta básica |
+| [video-use](../fichas/video-use.md) | Herramienta para editar videos con agentes de código como Claude Code, de los creadores de browser-use. | quieres editar videos pidiéndoselo a tu agente | Sin API de IA en la ruta básica |
+| [rea-video](../fichas/rea-video.md) | Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md. | quieres estudiar o recrear la estructura de un video de referencia | Sin API de IA en la ruta básica |
+| [videofy_minimal](../fichas/videofy-minimal.md) | Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión. | quieres reels simples ya, sin montar un pipeline entero | API de IA necesaria |
+| [Remotion Superpowers](../fichas/remotion-superpowers.md) | Plugin que convierte Remotion en un estudio de video para Claude Code, Codex o Gemini CLI. | usas Remotion con un agente y quieres producción completa | Sin API de IA en la ruta básica |
 
 ## Video generativo y pipelines automáticos
 
-| Repo | ⭐ | Qué hace | Ideal si… | Setup |
-|---|---:|---|---|:---:|
-| ⭐ [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md) 🆕 | 144k | App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso. | quieres producir videos cortos narrados a partir de un tema sin editar a mano | 🟡 |
-| ⭐ [Wan2.2](../fichas/wan2-2.md) 🆕 | 18.7k | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. | quieres el modelo de video abierto de referencia, con licencia permisiva, y tienes una GPU de 24 GB o más | 🔴 |
-| [HunyuanVideo](../fichas/hunyuanvideo.md) 🆕 | 12.8k | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. | tienes una GPU de 60-80 GB o varias GPU y quieres un modelo de texto a video abierto de alta calidad | 🔴 |
-| [WanGP](../fichas/wan2gp.md) 🆕 | 11.8k | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas. | quieres generar video e imagen con modelos abiertos en una GPU de consumo sin montar flujos a mano | 🔴 |
-| [LTX-Video](../fichas/ltx-video.md) 🆕 | 11.4k | Modelos abiertos de Lightricks (v0.9.x) para generar video desde texto o imagen, rápidos en GPU de consumo; hoy en modo legado. | necesitas reproducir resultados o mantener flujos existentes con los modelos LTX-Video v0.9.x | 🔴 |
-| [short-video-factory](../fichas/short-video-factory.md) 🆕 | 6.1k | Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. | quieres producir variantes de videos promocionales desde materiales existentes | 🟡 |
-| [AI-Youtube-Shorts-Generator](../fichas/ai-youtube-shorts-generator.md) 🆕 | 6.1k | Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM. | quieres convertir videos largos en una primera selección de shorts | 🟡 |
+| Repo | Para qué sirve | Elígelo si… | API de IA |
+|---|---|---|---|
+| [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md) | App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso. | quieres producir videos cortos narrados a partir de un tema sin editar a mano | Depende de la ruta elegida |
+| [Wan2.2](../fichas/wan2-2.md) | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. | quieres el modelo de video abierto de referencia, con licencia permisiva, y tienes una GPU de 24 GB o más | Sin API de IA en la ruta básica |
+| [HunyuanVideo](../fichas/hunyuanvideo.md) | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. | tienes una GPU de 60-80 GB o varias GPU y quieres un modelo de texto a video abierto de alta calidad | Sin API de IA en la ruta básica |
+| [WanGP](../fichas/wan2gp.md) | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas. | quieres generar video e imagen con modelos abiertos en una GPU de consumo sin montar flujos a mano | Sin API de IA en la ruta básica |
+| [LTX-Video](../fichas/ltx-video.md) | Modelos abiertos de Lightricks (v0.9.x) para generar video desde texto o imagen, rápidos en GPU de consumo; hoy en modo legado. | necesitas reproducir resultados o mantener flujos existentes con los modelos LTX-Video v0.9.x | Sin API de IA en la ruta básica |
+| [short-video-factory](../fichas/short-video-factory.md) | Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. | quieres producir variantes de videos promocionales desde materiales existentes | Depende de la ruta elegida |
+| [AI-Youtube-Shorts-Generator](../fichas/ai-youtube-shorts-generator.md) | Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM. | quieres convertir videos largos en una primera selección de shorts | Depende de la ruta elegida |
 
 ## Música y audio generativo
 
-| Repo | ⭐ | Qué hace | Ideal si… | Setup |
-|---|---:|---|---|:---:|
-| ⭐ [AudioCraft](../fichas/audiocraft.md) 🆕 | 23.9k | Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. | necesitas generar música o efectos de sonido por texto en local, o investigar modelos de audio | 🟡 |
-| [ACE-Step-1.5](../fichas/ace-step-1-5.md) 🆕 | 14.8k | Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. | necesitas experimentar con generación musical en tu propio equipo | 🔴 |
-| [Music-Megathread](../fichas/music-megathread.md) 🆕 | 3.1k | Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música. | buscas recursos musicales y quieres comparar opciones desde una lista | 🟢 |
+| Repo | Para qué sirve | Elígelo si… | API de IA |
+|---|---|---|---|
+| [AudioCraft](../fichas/audiocraft.md) | Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. | necesitas generar música o efectos de sonido por texto en local, o investigar modelos de audio | Sin API de IA en la ruta básica |
+| [ACE-Step-1.5](../fichas/ace-step-1-5.md) | Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. | necesitas experimentar con generación musical en tu propio equipo | Sin API de IA en la ruta básica |
+| [Music-Megathread](../fichas/music-megathread.md) | Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música. | buscas recursos musicales y quieres comparar opciones desde una lista | Sin API de IA en la ruta básica |
 
-## ⚖️ ¿Cuál elegir?
+## Recetas relacionadas
 
-Repos que cumplen la misma función: elige uno por grupo.
+- [Pipeline de Reels / video corto](../playbooks/pipeline-de-reels-video-corto.md) — Convertir un guion o un video largo en clips verticales con voz, subtítulos y visuales generados.
+- [Agente de voz en tiempo real](../playbooks/agente-de-voz.md) — Un asistente que escucha y responde por voz con baja latencia, en web o por teléfono.
 
-### whisper.cpp, whisper, faster-whisper
-
-| Repo | ⭐ | Elígelo si… | Evítalo si… |
-|---|---:|---|---|
-| [whisper.cpp](../fichas/whisper-cpp.md) | 55.2k | quieres transcribir en local sin GPU | necesitas marcas de tiempo por palabra y diarización; mira `whisperx` |
-| [whisper](../fichas/whisper.md) | 113k | quieres la referencia robusta y no te obsesiona la latencia | necesitas más velocidad (faster-whisper) o timings por palabra (whisperX) |
-| [faster-whisper](../fichas/faster-whisper.md) | 26.8k | el rendimiento, la memoria o el coste de GPU importan | necesitas alineación/diarización (whisperX) o te basta el CLI oficial |
-
-### whisperX, NVIDIA NeMo Speech
-
-| Repo | ⭐ | Elígelo si… | Evítalo si… |
-|---|---:|---|---|
-| [whisperX](../fichas/whisperx.md) | 25.3k | necesitas subtítulos precisos o diarización | te basta texto plano (whisper) o no quieres gestionar tokens de HF |
-| [NVIDIA NeMo Speech](../fichas/nemo.md) | 18.8k | necesitas ASR de máxima precisión y tienes GPU | quieres algo simple; mira `faster-whisper` |
-
-### Kokoro, GPT-SoVITS, TTS, Fish Speech, Chatterbox, IndexTTS, CosyVoice
-
-| Repo | ⭐ | Elígelo si… | Evítalo si… |
-|---|---:|---|---|
-| [Kokoro](../fichas/kokoro.md) | 10.1k | quieres TTS ligero, rápido y con licencia permisiva | necesitas clonar voces; mira `chatterbox` |
-| [GPT-SoVITS](../fichas/gpt-sovits.md) | 65.1k | quieres entrenar una voz con pocos datos | prefieres zero-shot sin entrenar; mira `chatterbox` |
-| [TTS](../fichas/tts.md) | 46.2k | quieres flexibilidad y varios modelos en una librería | necesitas tiempo real puro (supertonic) o soporte comercial (Coqui está inactivo) |
-| [Fish Speech](../fichas/fish-speech.md) | 33.7k | buscas TTS de alta calidad con clonación | necesitas licencia comercial sin restricciones; mira `chatterbox` |
-| [Chatterbox](../fichas/chatterbox.md) | 27.8k | quieres clonar voces con calidad alta y licencia libre | necesitas algo muy ligero en CPU; mira `kokoro` |
-| [IndexTTS](../fichas/index-tts.md) | 25.1k | necesitas controlar duración y emoción de la voz | buscas licencia totalmente libre; revisa su licencia |
-| [CosyVoice](../fichas/cosyvoice.md) | 24.4k | necesitas TTS multilingüe en streaming | quieres instalación muy simple; mira `kokoro` |
-
-### OmniVoice-Studio, VideoLingo
-
-| Repo | ⭐ | Elígelo si… | Evítalo si… |
-|---|---:|---|---|
-| [OmniVoice-Studio](../fichas/omnivoice-studio.md) | 111k | quieres suite de voz completa local (dictado + clonación + dubbing) | solo necesitas TTS simple por CLI/librería (TTS) o estabilidad de producción |
-| [VideoLingo](../fichas/videolingo.md) | 19.3k | quieres subtitular, traducir o doblar videos de punta a punta con una interfaz y sin programar | solo necesitas transcribir o subtitular en el idioma original; te basta `whisperx` o `faster-whisper` |
-
-### Pipecat, LiveKit Agents
-
-| Repo | ⭐ | Elígelo si… | Evítalo si… |
-|---|---:|---|---|
-| [Pipecat](../fichas/pipecat.md) | 17.3k | construyes un agente de voz en Python | quieres infraestructura WebRTC gestionada; mira `livekit-agents` |
-| [LiveKit Agents](../fichas/livekit-agents.md) | 15.2k | necesitas agentes de voz escalables con WebRTC | quieres algo ligero sin servidor de medios; mira `pipecat` |
-
-### HyperFrames, MoviePy, remotion
-
-| Repo | ⭐ | Elígelo si… | Evítalo si… |
-|---|---:|---|---|
-| [HyperFrames](../fichas/hyperframes.md) | 84.4k | quieres que un agente de código genere videos con motion graphics a partir de HTML, con licencia permisiva | tu equipo ya trabaja con componentes React y el ecosistema de `remotion`, o prefieres editar en una línea de tiempo visual |
-| [MoviePy](../fichas/moviepy.md) | 15.2k | ensamblas video desde Python y quieres controlar cada clip por código | prefieres plantillas en React (`remotion`) o en HTML (`hyperframes`), o solo necesitas cortar sin recodificar (`lossless-cut`) |
-| [remotion](../fichas/remotion.md) | 73.2k | generas video a escala con React y quieres variantes parametrizadas | trabajas en Python (moviepy) o buscas un editor visual |
-
-### OBS Studio, OpenScreen
-
-| Repo | ⭐ | Elígelo si… | Evítalo si… |
-|---|---:|---|---|
-| [OBS Studio](../fichas/obs-studio.md) | 79.6k | necesitas grabar pantalla o transmitir en directo combinando varias fuentes en escenas | lo que necesitas es montar o recortar el video ya grabado; usa `opencut` o `lossless-cut` |
-| [OpenScreen](../fichas/openscreen.md) | 40k | quieres demos de pantalla pulidas con zoom automático sin pagar Screen Studio | necesitas un proyecto mantenido; usa su continuación getopenscreen/openscreen, o `obs-studio` para grabación y streaming generales |
-
-### Manim (ManimGL), manim
-
-| Repo | ⭐ | Elígelo si… | Evítalo si… |
-|---|---:|---|---|
-| [Manim (ManimGL)](../fichas/manim.md) | 96.5k | quieres animaciones matemáticas o técnicas precisas definidas en código Python | buscas estabilidad y documentación para empezar (usa la edición comunitaria ManimCommunity/manim) o motion graphics de marketing; mira `remotion` o `hyperframes` |
-| [manim](../fichas/manim-community.md) | 42.5k | necesitas animaciones matemáticas precisas y reproducibles | tu flujo audiovisual actual ya cubre esa etapa |
-
-### MoneyPrinterTurbo, OpenMontage, video-use, videofy_minimal, Remotion Superpowers
-
-| Repo | ⭐ | Elígelo si… | Evítalo si… |
-|---|---:|---|---|
-| [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md) | 144k | quieres producir videos cortos narrados a partir de un tema sin editar a mano | necesitas control creativo plano a plano o una identidad visual propia; mira `remotion` u `openmontage` |
-| [OpenMontage](../fichas/openmontage.md) | 80.5k | quieres producir videos completos con un agente | solo necesitas editar clips; mira `video-use` |
-| [video-use](../fichas/video-use.md) | 31.1k | quieres editar videos pidiéndoselo a tu agente | quieres una app de edición visual; mira `opencut` |
-| [videofy_minimal](../fichas/videofy-minimal.md) | 656 | quieres reels simples ya, sin montar un pipeline entero | necesitas variantes programáticas a escala (remotion) o control fino por código (moviepy) |
-| [Remotion Superpowers](../fichas/remotion-superpowers.md) | 168 | usas Remotion con un agente y quieres producción completa | no usas Remotion |
-
-### Wan2.2, HunyuanVideo, LTX-Video
-
-| Repo | ⭐ | Elígelo si… | Evítalo si… |
-|---|---:|---|---|
-| [Wan2.2](../fichas/wan2-2.md) | 18.7k | quieres el modelo de video abierto de referencia, con licencia permisiva, y tienes una GPU de 24 GB o más | tu GPU tiene menos de 24 GB o prefieres no trabajar con scripts; usa `wan2gp` o `comfyui` con modelos cuantizados |
-| [HunyuanVideo](../fichas/hunyuanvideo.md) | 12.8k | tienes una GPU de 60-80 GB o varias GPU y quieres un modelo de texto a video abierto de alta calidad | trabajas con GPU de consumo; prueba `ltx-video`, `wan2-2` o `wan2gp`, o la versión 1.5, más eficiente |
-| [LTX-Video](../fichas/ltx-video.md) | 11.4k | necesitas reproducir resultados o mantener flujos existentes con los modelos LTX-Video v0.9.x | empiezas un proyecto nuevo; Lightricks recomienda LTX-2.5 (repo Lightricks/LTX-2), o mira `wan2-2` y `wan2gp` |
-
-## 🧪 Recetas que usan esta categoría
-
-- [🎬 Pipeline de Reels / video corto](../playbooks/pipeline-de-reels-video-corto.md) — Convertir un guion o un video largo en clips verticales con voz, subtítulos y visuales generados.
-- [📞 Agente de voz en tiempo real](../playbooks/agente-de-voz.md) — Un asistente que escucha y responde por voz con baja latencia, en web o por teléfono.
-
-## 🏷️ Leyenda
-
-⭐ imprescindible · 🆕 sugerido nuevo (aún no clonado en tu biblioteca) · Setup: 🟢 fácil · 🟡 medio · 🔴 pesado (GPU o varios servicios).
+[Comparar alternativas](../comparativas/README.md) · [Cómo empezar](../instalar.md)
 
 ---
 

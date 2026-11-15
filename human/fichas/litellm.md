@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧬 Memoria, RAG & LLM Ops](../categorias/06-memoria-rag-llm-ops.md) › Serving y gateways de LLM
+[🏠 Inicio](../README.md) › [🧬 Memoria, conocimiento y operación de IA](../categorias/06-memoria-rag-llm-ops.md) › Serving y gateways de LLM
 
 # 🔀 litellm
 
 > Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 63.3k | NOASSERTION | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 63.3k | NOASSERTION | Python | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
+| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
+| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Resuelve el lock-in: cambias de proveedor o añades fallback sin reescribir el código de tu app.
 
@@ -22,9 +37,19 @@ Es un estándar de facto para abstraer proveedores, muy adoptado por su routing,
 
 Traduce cada petición al formato del proveedor destino y puede correr como proxy/gateway (modo servidor) con balanceo, reintentos, budget tracking y registro de uso, además de como librería embebida.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install litellm` (o despliegue del proxy vía Docker); requiere las claves de los proveedores que uses vía variables de entorno.
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/BerriAI/litellm/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar litellm para mi objetivo y necesito pasos guiados. Lee https://github.com/BerriAI/litellm/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Traduce cada petición al formato del proveedor destino y puede correr como prox
 ## Stack y modelos
 
 - **Stack:** Python
-- **Modelos / API:** OpenAI, Anthropic, Google, Bedrock, Azure, locales (Ollama, vLLM), etc.
 - **Etiquetas:** `inference` `llmops` `python` `docker`
 - **Modo de instalación sugerido:** 📦 **Dependencia del proyecto** — instálalo dentro de cada proyecto que lo use
 
@@ -60,6 +84,12 @@ Traduce cada petición al formato del proveedor destino y puede correr como prox
 - 🧪 Receta: [ChatGPT privado con modelos locales](../playbooks/chatgpt-privado-local.md)
 - 🧪 Receta: [RAG sobre tus documentos](../playbooks/rag-sobre-documentos.md)
 - 🧪 Receta: [Agente de voz en tiempo real](../playbooks/agente-de-voz.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/BerriAI/litellm/blob/main/README.md)
 
 ---
 

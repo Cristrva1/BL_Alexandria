@@ -9,6 +9,9 @@
 | Elígelo si… | quieres aprender prompts con práctica guiada | quieres una referencia amplia de técnicas de prompting |
 | Evítalo si… | buscas una guía amplia multi-modelo; mira `prompt-engineering-guide` | prefieres ejercicios prácticos con corrección; mira `prompt-eng-tutorial` |
 | Ejecución | ☁️ cloud/API | ☁️ cloud/API |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | — | MIT |
 | Instalación | No se instala: abre los notebooks y configura tu clave de API de Anthropic. | No se instala: léela en promptingguide.ai o en el repo. |

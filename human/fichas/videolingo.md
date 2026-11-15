@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Edición, grabación y subtítulos
+[🏠 Inicio](../README.md) › [🎬 Crear audio, voz y video](../categorias/12-audio-voz-video.md) › Edición, grabación y subtítulos
 
 # ✂️ VideoLingo
 
 > App que subtitula, traduce y dobla videos de forma automática: ASR con timestamps por palabra, traducción con LLM y TTS.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 19.3k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 19.3k | Apache-2.0 | Python | 2026-11-10 |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
+| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
+| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 VideoLingo reúne en una interfaz Streamlit el trabajo de un equipo de subtitulado: descarga el video con yt-dlp, lo transcribe con alineación por palabra, segmenta y traduce los subtítulos con un LLM y, si quieres, genera el doblaje con voz sintética o clonada. Produce archivos SRT y videos subtitulados o doblados.
 
@@ -22,9 +37,19 @@ Cuida el subtítulo, no solo la transcripción: corta frases con NLP y LLM, mant
 
 Pipeline Python por etapas con caché y reanudación: Qwen3-ASR con ForcedAligner en local (MLX en Apple Silicon), un LLM compatible con OpenAI para segmentar y traducir, y TTS intercambiable (GPT-SoVITS, Edge TTS, OpenAI, Fish Audio, F5-TTS).
 
-## Instalación rápida
+## Cómo empezar
 
-`git clone https://github.com/Huanshere/VideoLingo.git && cd VideoLingo && uv run start.py` (en Windows, `OneKeyStart.bat`). Luego configura URL, clave y modelo del LLM en la barra lateral.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/Huanshere/VideoLingo/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar VideoLingo para mi objetivo y necesito pasos guiados. Lee https://github.com/Huanshere/VideoLingo/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Pipeline Python por etapas con caché y reanudación: Qwen3-ASR con ForcedAligne
 ## Stack y modelos
 
 - **Stack:** Python, Streamlit, Qwen3-ASR, yt-dlp, FFmpeg
-- **Modelos / API:** Requiere un LLM con API compatible con OpenAI que devuelva JSON estructurado; ASR local (Qwen3-ASR) o en la nube (ElevenLabs, MAI-Transcribe) y TTS local o en la nube.
 - **Etiquetas:** `video` `stt` `tts` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -53,7 +77,7 @@ Pipeline Python por etapas con caché y reanudación: Qwen3-ASR con ForcedAligne
 |---|---:|---|
 | [yt-dlp](yt-dlp.md) | 208k | Descargador de audio y video por línea de comandos compatible con miles de sitios. |
 | [GPT-SoVITS](gpt-sovits.md) | 65.1k | Clonación de voz y TTS con solo un minuto de audio, con interfaz web para entrenar. |
-| [whisperX](whisperx.md) | 25.3k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
+| [whisperX](whisperx.md) | 25.3k | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
 
 ## Alternativas (elige una)
 
@@ -65,6 +89,12 @@ Pipeline Python por etapas con caché y reanudación: Qwen3-ASR con ForcedAligne
 
 - 🐙 GitHub: [Huanshere/VideoLingo](https://github.com/Huanshere/VideoLingo)
 - 🌐 Web: <https://docs.videolingo.io>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/Huanshere/VideoLingo/blob/main/README.md)
 
 ---
 

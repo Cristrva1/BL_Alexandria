@@ -4,11 +4,14 @@
 
 | | [PaddleOCR](../fichas/paddleocr.md) | [Tesseract](../fichas/tesseract.md) |
 |---|---|---|
-| Qué hace | Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos estructurados para IA. | Motor de OCR open source clásico, con más de 100 idiomas. |
+| Qué hace | Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos estructurados para IA. | Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idioma. |
 | ⭐ Estrellas | 92.7k | 77.5k |
 | Elígelo si… | necesitas OCR preciso y multilingüe | quieres OCR clásico sin GPU |
 | Evítalo si… | solo quieres hacer buscables PDFs escaneados; mira `ocrmypdf` | tus documentos tienen layouts complejos; mira `paddleocr` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelos locales documentados | La función básica no necesita un modelo |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | Apache-2.0 | Apache-2.0 |
 | Instalación | `pip install paddleocr` | `brew install tesseract` |

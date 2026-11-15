@@ -63,7 +63,7 @@ def test_every_category_has_a_pick(catalog):
 
 def test_guide_build_writes_navigable_pages(built):
     root, stats = built
-    assert stats["categories"] == 13
+    assert stats["categories"] == len(load_catalog(ROOT).public_categories())
     assert (root / "human" / "README.md").exists()
     assert (root / "Catalogo.md").exists()
     assert (root / "Guia.md").exists()

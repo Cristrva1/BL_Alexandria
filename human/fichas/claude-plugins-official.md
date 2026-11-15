@@ -1,18 +1,33 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Catálogos y marketplaces de skills
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Catálogos y marketplaces de skills
 
 # 🔌 Claude Code Plugins Directory
 
-> Marketplace oficial de Anthropic con plugins para Claude Code, propios y de socios: comandos, agentes, skills y servidores MCP.
+> Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 47.3k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 47.3k | Apache-2.0 | Python | 2026-06-23 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-## Qué es
+## Acceso, coste y equipo
 
-Directorio curado desde el que Claude Code instala plugins de forma nativa. En `/plugins` están los que mantiene Anthropic (revisión de código y PR, desarrollo de features, diseño frontend, hooks, gestión de CLAUDE.md, skill-creator) y en `/external_plugins` los de socios y comunidad que pasan su revisión (Figma, Atlassian, Cloudflare, Firebase, Context7, Superpowers y cientos más).
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
+| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+
+## Qué puedes hacer con él
+
+Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. Cada plugin puede tener requisitos distintos; el marketplace completo no es una aplicación que debas desplegar.
 
 ## Por qué destaca
 
@@ -20,11 +35,25 @@ Es la fuente oficial: viene integrada en el sistema de plugins de Claude Code y 
 
 ## Cómo funciona
 
-Cada plugin es una carpeta con `.claude-plugin/plugin.json` y, si los necesita, comandos, agentes, skills y un `.mcp.json` con servidores MCP. Claude Code lee el `marketplace.json` del repo e instala cada plugin por su nombre.
+Instalas los plugins concretos desde el cliente y configuras sus dependencias o servicios.
 
-## Instalación rápida
+## Cómo empezar
 
-En Claude Code: `/plugin install <plugin>@claude-plugins-official`, o explora el catálogo en `/plugin` > Discover.
+Se configura en tu agente. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un agente compatible y acceso activo a su modelo.
+
+1. Elige el agente indicado en Acceso y costes.
+2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
+3. Prueba una tarea pequeña y revisa si activa conectores externos.
+
+[Instrucciones originales de instalación](https://github.com/anthropics/claude-plugins-official/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Claude Code Plugins Directory para mi objetivo y necesito pasos guiados. Lee https://github.com/anthropics/claude-plugins-official/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +72,6 @@ En Claude Code: `/plugin install <plugin>@claude-plugins-official`, o explora el
 ## Stack y modelos
 
 - **Stack:** Markdown, JSON, Python, MCP
-- **Modelos / API:** Los plugins los ejecuta Claude Code con modelos de Anthropic; algunos añaden servidores MCP de terceros.
 - **Etiquetas:** `skills` `coding-agent` `mcp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -65,6 +93,12 @@ En Claude Code: `/plugin install <plugin>@claude-plugins-official`, o explora el
 
 - 🐙 GitHub: [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)
 - 🌐 Web: <https://code.claude.com/docs/en/plugins>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/anthropics/claude-plugins-official/blob/main/README.md)
 
 ---
 
