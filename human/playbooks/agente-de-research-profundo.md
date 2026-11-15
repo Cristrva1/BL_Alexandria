@@ -4,18 +4,25 @@
 
 > **Objetivo:** Investigar un tema en la web y entregar un informe estructurado con fuentes citadas.
 
-## 🗺️ Cómo fluye
+## Empieza con una versión pequeña
+
+Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.
+
+**Piezas iniciales:** [gpt-researcher](../fichas/gpt-researcher.md), [SearXNG](../fichas/searxng.md)
+
+**Prepara:** Una pregunta acotada que puedas contrastar
+
+**Primera prueba propuesta:** Genera un informe breve y abre tres de sus fuentes
+
+**Qué comprobar:** Las fuentes existen y respaldan las afirmaciones del informe
+
+Comprueba el proveedor de modelo y búsqueda; una cita no garantiza que la conclusión sea correcta
+
+## Orden propuesto para preparar las piezas
 
 ```mermaid
 flowchart LR
-  Pregunta["Pregunta"] -->|tema| gpt_researcher["gpt-researcher"]
-  gpt_researcher["gpt-researcher"] -->|consultas| searxng["SearXNG"]
-  searxng["SearXNG"] -->|URLs| crawl4ai["crawl4ai"]
-  gpt_researcher["gpt-researcher"] -->|sitios dinámicos| browser_use["browser-use"]
-  markitdown["markitdown"] -->|documentos| gpt_researcher["gpt-researcher"]
-  crawl4ai["crawl4ai"] -->|Markdown| gpt_researcher["gpt-researcher"]
-  gpt_researcher["gpt-researcher"] -->|trazas| langfuse["langfuse"]
-  gpt_researcher["gpt-researcher"] -->|citas| Informe["Informe"]
+  gpt_researcher["gpt-researcher"] --> searxng["SearXNG"]
 ```
 
 ## 🧩 Piezas

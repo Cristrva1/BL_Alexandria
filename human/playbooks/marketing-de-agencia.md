@@ -4,16 +4,25 @@
 
 > **Objetivo:** Operar campañas, contenido y email a escala con agentes y herramientas propias.
 
-## 🗺️ Cómo fluye
+## Empieza con una versión pequeña
+
+Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.
+
+**Piezas iniciales:** [Marketing Skills](../fichas/marketingskills.md), [listmonk](../fichas/listmonk.md)
+
+**Prepara:** Un borrador de campaña y una lista de prueba con permiso
+
+**Primera prueba propuesta:** Prepara un mensaje y realiza una prueba de envío a una dirección del equipo
+
+**Qué comprobar:** Puedes revisar el texto, la baja y la entrega antes de ampliar destinatarios
+
+Skills y envío son capas distintas; SMTP, dominios, analítica y medios pueden añadir costes
+
+## Orden propuesto para preparar las piezas
 
 ```mermaid
 flowchart LR
-  marketingskills["Marketing Skills"] -->|skills| Agente["Agente"]
-  agency_agents["The Agency (agency-agents)"] -->|roles| Agente["Agente"]
-  Agente["Agente"] -->|campañas| mautic["mautic"]
-  Agente["Agente"] -->|newsletters| listmonk["listmonk"]
-  Agente["Agente"] -->|creatividades| open_generative_ai["Open-Generative-AI"]
-  posthog["posthog"] -->|métricas| Agente["Agente"]
+  marketingskills["Marketing Skills"] --> listmonk["listmonk"]
 ```
 
 ## 🧩 Piezas

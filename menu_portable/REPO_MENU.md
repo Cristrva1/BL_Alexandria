@@ -60,79 +60,149 @@ LEYENDA de columnas del índice:
 | Grok | Sin repos específicos: úsalo como proveedor LLM en runtime (los repos agnósticos lo aceptan vía API compatible con OpenAI). |
 | Deepseek | `deepseek-coder` |
 
-## Recetas (stacks end-to-end listos)
+## Recetas: flujos propuestos
 
 Si el proyecto es un PRODUCTO (no una pieza suelta), parte de una
-receta y ajusta. Cada receta lista los repos en orden de uso.
+receta y ajusta. Empieza por su propuesta inicial; el recorrido completo incluye ampliaciones y otras rutas.
 
 ### Bot de WhatsApp con IA
-**Meta:** Atender y vender por WhatsApp con un agente LLM que guarda leads y pasa la conversación a una persona cuando hace falta.  
-**Stack:** `evolution-api` → `n8n` → `n8n-mcp` → `n8n-skills` → `chatwoot` → `novu`
+**Meta:** Atender y vender por WhatsApp con un agente LLM que guarda leads y pasa la conversación a una persona cuando hace falta.
+**Recursos del recorrido completo:** `evolution-api`, `n8n`, `n8n-mcp`, `n8n-skills`, `chatwoot`, `novu`
+**Empieza con:** `evolution-api`, `n8n`, `chatwoot`
+**Prepara:** Un mensaje enviado desde un número de prueba
+**Primera prueba propuesta:** Recibe el mensaje, envíalo al flujo y pide pasar con una persona
+**Qué comprobar:** El mensaje llega a la bandeja y puedes responder manualmente
+Decide primero la conexión del canal, sus políticas y posibles tarifas; las skills ayudan a construir y no ejecutan el bot
 **Cómo:** Evolution API mantiene la sesión de WhatsApp y reenvía cada mensaje a un webhook de n8n. El workflow de n8n arma el contexto, llama al LLM, guarda el lead y, si detecta una intención de compra o un problema, abre la conversación en Chatwoot para que responda una persona. Novu avisa al equipo. Con n8n-mcp y n8n-skills, tu agente de código construye y corrige esos workflows por ti.
 
 ### Pipeline de Reels / video corto
-**Meta:** Convertir un guion o un video largo en clips verticales con voz, subtítulos y visuales generados.  
-**Stack:** `whisperx` → `kokoro` → `comfyui` → `real-esrgan` → `remotion` → `ffmpeg` → `moneyprinterturbo`
+**Meta:** Convertir un guion o un video largo en clips verticales con voz, subtítulos y visuales generados.
+**Recursos del recorrido completo:** `whisperx`, `kokoro`, `comfyui`, `real-esrgan`, `remotion`, `ffmpeg`, `moneyprinterturbo`
+**Empieza con:** `kokoro`, `remotion`, `ffmpeg`
+**Prepara:** Un guion de 20 segundos y dos imágenes propias
+**Primera prueba propuesta:** Sintetiza la voz, monta una escena sencilla y exporta un clip
+**Qué comprobar:** El archivo reproduce imagen y voz con la duración esperada
+WhisperX hace falta si partes de audio; generar imágenes y restaurarlas son ampliaciones, no requisitos de todo video
 **Cómo:** Flujo propuesto: WhisperX prepara subtítulos; Kokoro sintetiza narración; ComfyUI genera visuales; Remotion compone y FFmpeg exporta. Comprueba los datos,la duración y la licencia de cada recurso. MoneyPrinterTurbo es otra aplicación con su configuración y costes propios.
 
 ### Agente de research profundo
-**Meta:** Investigar un tema en la web y entregar un informe estructurado con fuentes citadas.  
-**Stack:** `gpt-researcher` → `searxng` → `crawl4ai` → `browser-use` → `markitdown` → `langfuse`
+**Meta:** Investigar un tema en la web y entregar un informe estructurado con fuentes citadas.
+**Recursos del recorrido completo:** `gpt-researcher`, `searxng`, `crawl4ai`, `browser-use`, `markitdown`, `langfuse`
+**Empieza con:** `gpt-researcher`, `searxng`
+**Prepara:** Una pregunta acotada que puedas contrastar
+**Primera prueba propuesta:** Genera un informe breve y abre tres de sus fuentes
+**Qué comprobar:** Las fuentes existen y respaldan las afirmaciones del informe
+Comprueba el proveedor de modelo y búsqueda; una cita no garantiza que la conclusión sea correcta
 **Cómo:** GPT Researcher divide la pregunta en sub-preguntas, busca con SearXNG y pasa las URLs a Crawl4AI, que devuelve Markdown listo para el modelo. Browser Use cubre las páginas que necesitan clics o sesión, y MarkItDown suma tus documentos. Langfuse registra cada llamada para revisar costos y errores. DeerFlow es la alternativa si prefieres un harness con sandbox y más autonomía.
 
 ### Workspace privado local soberano
-**Meta:** Tener chat, documentos y memoria de IA en tu propia máquina, sin enviar datos a terceros.  
-**Stack:** `ollama` → `odysseus` → `open-notebook` → `mem0` → `searxng`
-**Cómo:** Ollama sirve los modelos en tu equipo con una API local. Odysseus centraliza chat, documentos y tareas; Open Notebook indexa tus fuentes para preguntarles como en NotebookLM; mem0 recuerda preferencias y hechos entre sesiones; SearXNG añade búsqueda web sin rastreo.
+**Meta:** Preparar chat, documentos y memoria con rutas locales, comprobando por separado modelos, herramientas y conexiones externas.
+**Recursos del recorrido completo:** `ollama`, `odysseus`, `open-notebook`, `mem0`, `searxng`
+**Empieza con:** `ollama`, `odysseus`
+**Prepara:** Un modelo que quepa en tu equipo y un archivo de prueba
+**Primera prueba propuesta:** Conecta el motor local al espacio de trabajo y prueba una conversación
+**Qué comprobar:** Identificas el endpoint del modelo y puedes revisar qué conexiones externas siguen activas
+Configura y comprueba también embeddings, herramientas, memoria y búsqueda; local no garantiza ausencia de comunicaciones externas
+**Cómo:** Ollama sirve modelos en tu equipo. Conecta una interfaz compatible y prueba primero el chat. Después evalúa documentos, memoria y búsqueda; cada componente requiere su propia configuración y puede abrir conexiones externas.
 
 ### Análisis de repos grandes
-**Meta:** Que un agente de código entienda una base de código enorme sin gastar todo su contexto.  
-**Stack:** `repomix` → `codegraph` → `gitnexus` → `graphify` → `deepwiki-open` → `claude-code`
+**Meta:** Que un agente de código entienda una base de código enorme sin gastar todo su contexto.
+**Recursos del recorrido completo:** `repomix`, `codegraph`, `gitnexus`, `graphify`, `deepwiki-open`, `claude-code`
+**Empieza con:** `repomix`, `claude-code`
+**Prepara:** Un repo propio y una pregunta concreta sobre su código
+**Primera prueba propuesta:** Empaqueta solo una parte y pide ubicar una función con referencias
+**Qué comprobar:** Puedes abrir los archivos citados y comprobar la explicación
+Revisa exclusiones y secretos antes de compartir código; los grafos son otra ampliación y tienen sus propias licencias
 **Cómo:** CodeGraph y graphify construyen índices estructurales que el agente consulta en lugar de leer archivos completos; GitNexus ayuda a recorrer dependencias; Repomix empaqueta solo la parte relevante cuando necesitas pasar código a un chat. DeepWiki Open produce documentación para humanos. Claude Code (o Codex) usa todo eso como contexto barato.
 
 ### Marketing de agencia
-**Meta:** Operar campañas, contenido y email a escala con agentes y herramientas propias.  
-**Stack:** `marketingskills` → `agency-agents` → `mautic` → `listmonk` → `posthog` → `open-generative-ai`
+**Meta:** Operar campañas, contenido y email a escala con agentes y herramientas propias.
+**Recursos del recorrido completo:** `marketingskills`, `agency-agents`, `mautic`, `listmonk`, `posthog`, `open-generative-ai`
+**Empieza con:** `marketingskills`, `listmonk`
+**Prepara:** Un borrador de campaña y una lista de prueba con permiso
+**Primera prueba propuesta:** Prepara un mensaje y realiza una prueba de envío a una dirección del equipo
+**Qué comprobar:** Puedes revisar el texto, la baja y la entrega antes de ampliar destinatarios
+Skills y envío son capas distintas; SMTP, dominios, analítica y medios pueden añadir costes
 **Cómo:** Las skills y los roles guían a tu agente de código en cada canal; Mautic segmenta y nutre leads; listmonk envía newsletters; PostHog mide conversión y retención; Open Generative AI produce piezas visuales. Metabase o Superset sirven si necesitas reportes para clientes.
 
 ### Web app moderna con IA
-**Meta:** Construir un frontend pulido con chat o funciones de IA integradas.  
-**Stack:** `ui` → `tailwindcss` → `vercel-ai` → `assistant-ui` → `motion` → `recharts` → `swr`
+**Meta:** Construir un frontend pulido con chat o funciones de IA integradas.
+**Recursos del recorrido completo:** `ui`, `tailwindcss`, `vercel-ai`, `assistant-ui`, `motion`, `recharts`, `swr`
+**Empieza con:** `ui`, `tailwindcss`, `vercel-ai`, `assistant-ui`
+**Prepara:** Una aplicación de prueba y una ruta de modelo elegida
+**Primera prueba propuesta:** Construye una pantalla de chat y envía una pregunta de prueba
+**Qué comprobar:** Puedes revisar respuesta, estado de carga y un error de conexión
+Motion, gráficos y caché se añaden cuando la función los necesita; revisa API, alojamiento y autenticación por separado
 **Cómo:** shadcn/ui y Tailwind dan la base visual; el AI SDK de Vercel resuelve streaming, tool calling y proveedores; assistant-ui aporta la interfaz de chat; Motion anima y Recharts dibuja datos; SWR gestiona el fetching. Para diseñar antes de codificar, prueba Open Design o Penpot.
 
 ### Construir una app o servidor MCP
-**Meta:** Exponer tus datos o herramientas a Claude, ChatGPT, Cursor y otros agentes con Model Context Protocol.  
-**Stack:** `awesome-mcp-servers` → `fastmcp` → `mcp-typescript-sdk` → `mcp-inspector` → `servers` → `mcp-use`
+**Meta:** Exponer tus datos o herramientas a Claude, ChatGPT, Cursor y otros agentes con Model Context Protocol.
+**Recursos del recorrido completo:** `awesome-mcp-servers`, `fastmcp`, `mcp-typescript-sdk`, `mcp-inspector`, `servers`, `mcp-use`
+**Empieza con:** `fastmcp`, `mcp-inspector`
+**Prepara:** Una acción de solo lectura y datos de prueba
+**Primera prueba propuesta:** Expón una herramienta pequeña y compruébala con el inspector
+**Qué comprobar:** La entrada y la salida son las esperadas y el cliente puede descubrir la herramienta
+Elige Python o TypeScript para construir la misma capa; añade autenticación y permisos según el entorno antes de compartirla
 **Cómo:** Busca en awesome-mcp-servers antes de construir. Si no existe, FastMCP (Python) o el SDK oficial de TypeScript te dan el servidor con poco código; los servidores de referencia muestran cómo modelar tools, recursos y prompts. MCP Inspector valida el servidor antes de conectarlo a Claude Code, Codex o Cursor. mcp-use sirve cuando quieres una app MCP con interfaz propia.
 
 ### Documentos → presentaciones
-**Meta:** Pasar informes, PDFs o notas a presentaciones editables o slides web.  
-**Stack:** `markitdown` → `docling` → `ppt-master` → `slidev` → `marp`
+**Meta:** Pasar informes, PDFs o notas a presentaciones editables o slides web.
+**Recursos del recorrido completo:** `markitdown`, `docling`, `ppt-master`, `slidev`, `marp`
+**Empieza con:** `markitdown`, `ppt-master`
+**Prepara:** Un documento breve y el formato de entrega
+**Primera prueba propuesta:** Extrae el texto, prepara tres diapositivas y abre la exportación
+**Qué comprobar:** El contenido coincide con la fuente y el formato sirve para la entrega
+Elige el generador según PowerPoint, PDF o web; la conversión no garantiza que todos los elementos sean editables
 **Cómo:** MarkItDown (o Docling si el PDF tiene tablas y columnas) normaliza todo a Markdown. Desde ahí, PPT Master genera un PowerPoint nativo editable, Slidev produce slides web con código y componentes, y Marp exporta a PDF o PPTX con estilos simples.
 
 ### ChatGPT privado con modelos locales
-**Meta:** Tener un chat tipo ChatGPT para ti o tu equipo con modelos que corren en tu máquina o servidor.  
-**Stack:** `ollama` → `open-webui` → `searxng` → `litellm`
+**Meta:** Tener un chat tipo ChatGPT para ti o tu equipo con modelos que corren en tu máquina o servidor.
+**Recursos del recorrido completo:** `ollama`, `open-webui`, `searxng`, `litellm`
+**Empieza con:** `ollama`, `open-webui`
+**Prepara:** Un modelo compatible y recursos de equipo suficientes
+**Primera prueba propuesta:** Conecta el chat al endpoint local y envía una pregunta
+**Qué comprobar:** Puedes identificar el modelo y comprobar dónde se procesa la conversación
+Buscadores, herramientas y proveedores opcionales pueden salir a internet; verifica la configuración de cada uno
 **Cómo:** Ollama corre los modelos y expone una API compatible con OpenAI; Open WebUI se conecta a ella y añade cuentas de usuario, subida de documentos, búsqueda web vía SearXNG y herramientas. Si algunos usuarios necesitan modelos comerciales, LiteLLM unifica el acceso con control de costos.
 
 ### RAG sobre tus documentos
-**Meta:** Preguntarle a tus PDFs, manuales y bases de conocimiento con respuestas citadas.  
-**Stack:** `docling` → `llama-index` → `qdrant` → `litellm` → `ragas` → `langfuse`
+**Meta:** Preguntarle a tus PDFs, manuales y bases de conocimiento con respuestas citadas.
+**Recursos del recorrido completo:** `docling`, `llama-index`, `qdrant`, `litellm`, `ragas`, `langfuse`
+**Empieza con:** `docling`, `llama-index`
+**Prepara:** Un PDF de dos páginas y tres preguntas con respuesta conocida
+**Primera prueba propuesta:** Extrae el texto y crea una consulta mínima con un proveedor elegido
+**Qué comprobar:** Las respuestas pueden contrastarse con fragmentos del documento
+El modelo y los embeddings necesitan configuración propia; almacenamiento vectorial, evaluación y trazas se añaden después
 **Cómo:** Docling convierte los documentos en Markdown estructurado; LlamaIndex los fragmenta, genera embeddings y los guarda en Qdrant; en cada pregunta recupera los fragmentos relevantes y llama al modelo vía LiteLLM. Ragas mide si la respuesta usa bien el contexto y Langfuse registra cada consulta. Si prefieres una plataforma con UI, RAGFlow o AnythingLLM cubren el flujo completo.
 
 ### Agente de código potenciado
-**Meta:** Sacar el máximo a Claude Code, Codex u opencode con método, contexto actualizado y memoria.  
-**Stack:** `claude-code` → `superpowers` → `context7` → `serena` → `claude-mem` → `skillspector`
+**Meta:** Sacar el máximo a Claude Code, Codex u opencode con método, contexto actualizado y memoria.
+**Recursos del recorrido completo:** `claude-code`, `superpowers`, `context7`, `serena`, `claude-mem`, `skillspector`
+**Empieza con:** `claude-code`, `superpowers`
+**Prepara:** Un repo de prueba y una tarea pequeña
+**Primera prueba propuesta:** Añade una metodología al agente y pide un cambio con su comprobación
+**Qué comprobar:** Puedes revisar el diff y el resultado de la comprobación
+La ruta mínima usa Claude Code; compara la compatibilidad de cada complemento antes de adaptarla a Codex o Antigravity
 **Cómo:** Superpowers obliga al agente a planificar, escribir pruebas y revisar; Context7 le pasa la documentación vigente de cada librería; Serena le da navegación semántica del código en lugar de leer archivos enteros; claude-mem conserva decisiones entre sesiones. SkillSpector revisa cualquier skill nueva antes de instalarla.
 
 ### Agente de voz en tiempo real
-**Meta:** Un asistente que escucha y responde por voz con baja latencia, en web o por teléfono.  
-**Stack:** `pipecat` → `faster-whisper` → `litellm` → `kokoro` → `livekit-agents`
+**Meta:** Un asistente que escucha y responde por voz con baja latencia, en web o por teléfono.
+**Recursos del recorrido completo:** `pipecat`, `faster-whisper`, `litellm`, `kokoro`, `livekit-agents`
+**Empieza con:** `pipecat`, `faster-whisper`, `kokoro`
+**Prepara:** Micrófono, auriculares y un modelo de conversación configurado
+**Primera prueba propuesta:** Prueba una frase corta de entrada, respuesta y reproducción
+**Qué comprobar:** La transcripción y la voz de salida corresponden a la conversación
+Configura también el LLM; transcripción y voz locales no hacen local todo el flujo ni incluyen telefonía
 **Cómo:** Pipecat encadena transporte de audio, detección de voz, STT, LLM y TTS con manejo de interrupciones. faster-whisper transcribe, el LLM (vía LiteLLM) decide qué decir y Kokoro lo sintetiza. LiveKit Agents es la alternativa si quieres WebRTC y telefonía SIP resueltos de serie.
 
 ### Analítica de producto con IA
-**Meta:** Medir el uso de tu producto y responder preguntas de negocio en lenguaje natural.  
-**Stack:** `posthog` → `duckdb` → `wrenai` → `superset` → `umami`
+**Meta:** Medir el uso de tu producto y responder preguntas de negocio en lenguaje natural.
+**Recursos del recorrido completo:** `posthog`, `duckdb`, `wrenai`, `superset`, `umami`
+**Empieza con:** `posthog`
+**Prepara:** Un sitio de prueba y un evento que puedas provocar
+**Primera prueba propuesta:** Registra un evento y compara el resultado con tu acción
+**Qué comprobar:** El evento aparece con el nombre y propiedades que esperabas
+Empieza por medición; SQL, dashboards y preguntas con IA son ampliaciones con configuración y costes propios
 **Cómo:** PostHog captura eventos y embudos; exportas a Parquet y analizas con DuckDB sin montar un warehouse; WrenAI traduce preguntas a SQL sobre tu esquema; Superset publica los dashboards. Si solo necesitas visitas y fuentes de tráfico, Umami o Plausible bastan.
 
 ---

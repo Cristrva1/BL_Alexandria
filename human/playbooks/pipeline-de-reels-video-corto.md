@@ -4,17 +4,28 @@
 
 > **Objetivo:** Convertir un guion o un video largo en clips verticales con voz, subtítulos y visuales generados.
 
-## 🗺️ Cómo fluye
+## Empieza con una versión pequeña
+
+Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.
+
+**Piezas iniciales:** [Kokoro](../fichas/kokoro.md), [remotion](../fichas/remotion.md), [FFmpeg](../fichas/ffmpeg.md)
+
+**Prepara:** Un guion de 20 segundos y dos imágenes propias
+
+**Primera prueba propuesta:** Sintetiza la voz, monta una escena sencilla y exporta un clip
+
+**Qué comprobar:** El archivo reproduce imagen y voz con la duración esperada
+
+WhisperX hace falta si partes de audio; generar imágenes y restaurarlas son ampliaciones, no requisitos de todo video
+
+**Otras rutas, no piezas que debas sumar:** [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md)
+
+## Orden propuesto para preparar las piezas
 
 ```mermaid
 flowchart LR
-  Guion_o_video["Guion o video"] -->|audio| whisperx["whisperX"]
-  Guion_o_video["Guion o video"] -->|texto| kokoro["Kokoro"]
-  comfyui["ComfyUI"] -->|imágenes| real_esrgan["Real-ESRGAN"]
-  whisperx["whisperX"] -->|subtítulos| remotion["remotion"]
-  kokoro["Kokoro"] -->|voz| remotion["remotion"]
-  real_esrgan["Real-ESRGAN"] -->|visuales| remotion["remotion"]
-  remotion["remotion"] -->|render| ffmpeg["FFmpeg"]
+  kokoro["Kokoro"] --> remotion["remotion"]
+  remotion["remotion"] --> ffmpeg["FFmpeg"]
 ```
 
 ## 🧩 Piezas

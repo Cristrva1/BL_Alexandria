@@ -4,17 +4,27 @@
 
 > **Objetivo:** Exponer tus datos o herramientas a Claude, ChatGPT, Cursor y otros agentes con Model Context Protocol.
 
-## 🗺️ Cómo fluye
+## Empieza con una versión pequeña
+
+Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.
+
+**Piezas iniciales:** [FastMCP](../fichas/fastmcp.md), [MCP Inspector](../fichas/mcp-inspector.md)
+
+**Prepara:** Una acción de solo lectura y datos de prueba
+
+**Primera prueba propuesta:** Expón una herramienta pequeña y compruébala con el inspector
+
+**Qué comprobar:** La entrada y la salida son las esperadas y el cliente puede descubrir la herramienta
+
+Elige Python o TypeScript para construir la misma capa; añade autenticación y permisos según el entorno antes de compartirla
+
+**Otras rutas, no piezas que debas sumar:** [MCP TypeScript SDK](../fichas/mcp-typescript-sdk.md)
+
+## Orden propuesto para preparar las piezas
 
 ```mermaid
 flowchart LR
-  awesome_mcp_servers["awesome-mcp-servers"] -->|¿ya existe?| Decisión["Decisión"]
-  Decisión["Decisión"] -->|Python| fastmcp["FastMCP"]
-  Decisión["Decisión"] -->|TypeScript| mcp_typescript_sdk["MCP TypeScript SDK"]
-  servers["servers"] -->|patrones| fastmcp["FastMCP"]
-  fastmcp["FastMCP"] -->|pruebas| mcp_inspector["MCP Inspector"]
-  mcp_typescript_sdk["MCP TypeScript SDK"] -->|pruebas| mcp_inspector["MCP Inspector"]
-  mcp_inspector["MCP Inspector"] -->|conectar| Cliente_MCP["Cliente MCP"]
+  fastmcp["FastMCP"] --> mcp_inspector["MCP Inspector"]
 ```
 
 ## 🧩 Piezas

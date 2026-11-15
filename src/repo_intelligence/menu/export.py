@@ -292,16 +292,21 @@ def _write_entry(out: Path, scan: dict, merged: dict, by_cat: dict,
 
     # Recipes
     if recipes:
-        lines.append("## Recetas (stacks end-to-end listos)")
+        lines.append("## Recetas: flujos propuestos")
         lines.append("")
         lines.append("Si el proyecto es un PRODUCTO (no una pieza suelta), parte de una")
-        lines.append("receta y ajusta. Cada receta lista los repos en orden de uso.")
+        lines.append("receta y ajusta. Empieza por su propuesta inicial; el recorrido completo incluye ampliaciones y otras rutas.")
         lines.append("")
         for rc in recipes:
             lines.append(f"### {rc.get('title','')}")
-            lines.append(f"**Meta:** {rc.get('goal','')}  ")
+            lines.append(f"**Meta:** {rc.get('goal','')}")
             repos = rc.get("repos", [])
-            lines.append("**Stack:** " + " → ".join(f"`{r}`" for r in repos))
+            lines.append("**Recursos del recorrido completo:** " + ", ".join(f"`{r}`" for r in repos))
+            if rc.get('plan'):
+                plan=rc['plan']
+                lines += ['**Empieza con:** '+', '.join('`'+rid+'`' for rid in plan['minimum']),
+                          '**Prepara:** '+plan['inputs'], '**Primera prueba propuesta:** '+plan['first_try']['action'],
+                          '**Qué comprobar:** '+plan['first_try']['success'], plan['note']]
             how = rc.get("how")
             if how:
                 lines.append(f"**Cómo:** {how}")

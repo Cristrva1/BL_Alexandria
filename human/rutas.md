@@ -8,17 +8,29 @@ Empieza por un resultado. Los repos de entrada son opciones para comparar, no un
 
 Elegir una herramienta de desarrollo y mejorar su flujo sin construir un agente desde cero.
 
+**Resultado buscado:** Una tarea de código pequeña y revisable
+
+**Prepara:** Un proyecto de prueba y una tarea concreta
+
+**Decide primero:** ¿Necesitas un agente de terminal o una aplicación con interfaz?
+
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
 | [Codex CLI](fichas/codex.md) | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. | API de IA opcional |
 | [Claude Code](fichas/claude-code.md) | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. | API de IA opcional |
 | [OpenCode](fichas/opencode.md) | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. | API de IA opcional |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=programar)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=programar)
 
 ## Automatizar tareas y conectar apps
 
 Diseñar flujos con disparadores, acciones y seguimiento.
+
+**Resultado buscado:** Un flujo con disparador, acción y registro del resultado
+
+**Prepara:** Dos aplicaciones y datos de prueba
+
+**Decide primero:** ¿Quieres conectar aplicaciones o construir una herramienta interna?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -26,11 +38,17 @@ Diseñar flujos con disparadores, acciones y seguimiento.
 | [activepieces](fichas/activepieces.md) | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. | API de IA opcional |
 | [Node-RED](fichas/node-red.md) | Editor visual de flujos por eventos para IoT, APIs y automatizaciones ligeras en Node.js. | Sin clave propia de API de IA en la ruta básica |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=automatizar)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=automatizar)
 
 ## Atender clientes por WhatsApp
 
 Conectar el canal, decidir el flujo y pasar a una persona cuando haga falta.
+
+**Resultado buscado:** Un canal que recibe mensajes y permite traspasarlos a una persona
+
+**Prepara:** Un número de prueba y una decisión sobre conexión oficial o pasarela
+
+**Decide primero:** ¿Necesitas solo el canal o también bandeja y automatizaciones?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -38,11 +56,17 @@ Conectar el canal, decidir el flujo y pasar a una persona cuando haga falta.
 | [WAHA](fichas/waha.md) | API REST de WhatsApp en un contenedor Docker, con varios motores y panel web. | Sin clave propia de API de IA en la ruta básica |
 | [chatwoot](fichas/chatwoot.md) | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. | API de IA opcional |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=whatsapp)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=whatsapp)
 
 ## Preguntar a documentos
 
 Extraer el contenido y elegir una solución de búsqueda o RAG.
+
+**Resultado buscado:** Respuestas a preguntas con referencias a tus documentos
+
+**Prepara:** Un PDF pequeño y tres preguntas cuya respuesta conozcas
+
+**Decide primero:** ¿Quieres una aplicación lista o montar tu propio flujo RAG?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -50,11 +74,17 @@ Extraer el contenido y elegir una solución de búsqueda o RAG.
 | [AnythingLLM](fichas/anything-llm.md) | App todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. | API de IA opcional |
 | [RAGFlow](fichas/ragflow.md) | Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. | Depende de la ruta elegida |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=documentos)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=documentos)
 
 ## Investigar un tema con fuentes
 
 Combinar búsqueda y síntesis con trazabilidad de las fuentes.
+
+**Resultado buscado:** Un informe que permita volver a las fuentes
+
+**Prepara:** Una pregunta acotada y criterios para aceptar una fuente
+
+**Decide primero:** ¿Investigarás la web o solo tus documentos?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -62,11 +92,17 @@ Combinar búsqueda y síntesis con trazabilidad de las fuentes.
 | [gpt-researcher](fichas/gpt-researcher.md) | Agente autónomo que investiga en línea y consolida reportes citados y estructurados. | API de IA opcional |
 | [deer-flow](fichas/deer-flow.md) | Super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles. | Depende de la ruta elegida |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=investigar)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=investigar)
 
 ## Usar IA con modelos locales
 
 Elegir un motor, un modelo y una interfaz que funcionen con tu equipo.
+
+**Resultado buscado:** Una ruta que ejecuta el modelo en tu equipo
+
+**Prepara:** RAM y GPU disponibles, espacio para pesos y un modelo compatible
+
+**Decide primero:** ¿Buscas un motor, un chat o un espacio con documentos?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -74,11 +110,17 @@ Elegir un motor, un modelo y una interfaz que funcionen con tu equipo.
 | [Jan](fichas/jan.md) | Aplicación de escritorio para conversar con modelos locales y configurar proveedores remotos desde una misma interfaz. | API de IA opcional |
 | [Open WebUI](fichas/open-webui.md) | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. | API de IA opcional |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=local)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=local)
 
 ## Crear una web o aplicación
 
 Elegir componentes y añadir IA solo si el producto la necesita.
+
+**Resultado buscado:** Una primera pantalla que resuelve una tarea concreta
+
+**Prepara:** Un boceto, textos y la función principal de la página
+
+**Decide primero:** ¿Necesitas una página estática, una aplicación o un chat con IA?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -86,11 +128,17 @@ Elegir componentes y añadir IA solo si el producto la necesita.
 | [tailwindcss](fichas/tailwindcss.md) | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. | Sin clave propia de API de IA en la ruta básica |
 | [assistant-ui](fichas/assistant-ui.md) | Librería React y TypeScript para interfaces de chat con IA de calidad producción. | Depende de la ruta elegida |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=web)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=web)
 
 ## Crear o editar videos
 
 Elegir entre editar material, programar escenas o generar clips.
+
+**Resultado buscado:** Un clip exportado que puedas reproducir y revisar
+
+**Prepara:** Un clip o guion corto y recursos con permiso de uso
+
+**Decide primero:** ¿Vas a cortar material, programar escenas o generar imágenes?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -98,11 +146,17 @@ Elegir entre editar material, programar escenas o generar clips.
 | [MoviePy](fichas/moviepy.md) | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. | Sin clave propia de API de IA en la ruta básica |
 | [FFmpeg](fichas/ffmpeg.md) | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. | Sin clave propia de API de IA en la ruta básica |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=video)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=video)
 
 ## Transcribir audio a texto
 
 Obtener texto o subtítulos a partir de una grabación.
+
+**Resultado buscado:** Texto o subtítulos que correspondan con la grabación
+
+**Prepara:** Un minuto de audio claro con permiso de uso
+
+**Decide primero:** ¿Necesitas texto, tiempos por palabra o distinguir hablantes?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -110,11 +164,17 @@ Obtener texto o subtítulos a partir de una grabación.
 | [faster-whisper](fichas/faster-whisper.md) | Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. | Sin clave propia de API de IA en la ruta básica |
 | [whisperX](fichas/whisperx.md) | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. | Sin clave propia de API de IA en la ruta básica |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=voz)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=voz)
 
 ## Crear voz a partir de texto
 
 Convertir un guion en narración con una ruta local o un servicio.
+
+**Resultado buscado:** Una narración de prueba en una voz e idioma compatibles
+
+**Prepara:** Un párrafo breve y una voz autorizada
+
+**Decide primero:** ¿Quieres voces disponibles, clonación o una interfaz visual?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -122,11 +182,17 @@ Convertir un guion en narración con una ruta local o un servicio.
 | [supertonic](fichas/supertonic.md) | Archivo de TTS local ONNX; desarrollo y soporte terminados,con licencias separadas de código y pesos. | Sin clave propia de API de IA en la ruta básica |
 | [edge-tts](fichas/edge-tts.md) | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | Sin clave propia de API de IA en la ruta básica |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=narrar)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=narrar)
 
 ## Generar o mejorar imágenes
 
 Elegir una interfaz y revisar modelos, pesos y requisitos de GPU.
+
+**Resultado buscado:** Una imagen generada o una mejora que puedas comparar
+
+**Prepara:** Una imagen propia o un prompt, y los requisitos del modelo
+
+**Decide primero:** ¿Necesitas crear, editar, quitar fondo o aumentar resolución?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -134,11 +200,17 @@ Elegir una interfaz y revisar modelos, pesos y requisitos de GPU.
 | [Fooocus](fichas/fooocus.md) | Herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros técnicos tras presets inteligentes. | Sin clave propia de API de IA en la ruta básica |
 | [rembg](fichas/rembg.md) | Herramienta para quitar el fondo de imágenes en local, por CLI, librería o servidor. | API de IA opcional |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=imagenes)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=imagenes)
 
 ## Crear una presentación
 
 Decidir si necesitas PowerPoint editable o diapositivas web.
+
+**Resultado buscado:** Diapositivas que puedas abrir en el formato que necesitas
+
+**Prepara:** Un esquema breve y una decisión sobre el formato de entrega
+
+**Decide primero:** ¿Necesitas PowerPoint editable, PDF o diapositivas web?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -146,11 +218,17 @@ Decidir si necesitas PowerPoint editable o diapositivas web.
 | [Presenton](fichas/presenton.md) | Generador de presentaciones con IA, open source y con API, alternativa a Gamma o Beautiful.ai. | API de IA opcional |
 | [Slidev](fichas/slidev.md) | Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. | Sin clave propia de API de IA en la ruta básica |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=presentaciones)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=presentaciones)
 
 ## Dibujar un diagrama
 
 Explicar una idea con un dibujo, un esquema o un diagrama por código.
+
+**Resultado buscado:** Un esquema que otra persona pueda interpretar
+
+**Prepara:** Un proceso o idea con pocas relaciones
+
+**Decide primero:** ¿Prefieres dibujar libremente o mantener el diagrama como texto?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -158,11 +236,17 @@ Explicar una idea con un dibujo, un esquema o un diagrama por código.
 | [Mermaid](fichas/mermaid.md) | Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown. | Sin clave propia de API de IA en la ruta básica |
 | [tldraw](fichas/tldraw.md) | SDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas. | Sin clave propia de API de IA en la ruta básica |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=diagramas)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=diagramas)
 
 ## Explorar datos y crear dashboards
 
 Elegir una herramienta de BI o una librería de gráficos.
+
+**Resultado buscado:** Una visualización o consulta contrastada con datos conocidos
+
+**Prepara:** Un CSV pequeño o una base de prueba
+
+**Decide primero:** ¿Quieres un dashboard listo o una librería para tu aplicación?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -170,11 +254,17 @@ Elegir una herramienta de BI o una librería de gráficos.
 | [Apache Superset](fichas/superset.md) | Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. | Sin clave propia de API de IA en la ruta básica |
 | [streamlit](fichas/streamlit.md) | Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS. | API de IA opcional |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=datos)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=datos)
 
 ## Dar herramientas a mi agente
 
 Buscar un servidor existente antes de programar un conector.
+
+**Resultado buscado:** Una herramienta conectada al cliente correcto
+
+**Prepara:** Un dato o acción de prueba y un agente compatible
+
+**Decide primero:** ¿Ya existe un servidor o necesitas escribir uno?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -182,11 +272,17 @@ Buscar un servidor existente antes de programar un conector.
 | [Playwright MCP](fichas/playwright-mcp.md) | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. | Sin clave propia de API de IA en la ruta básica |
 | [GitHub MCP Server](fichas/github-mcp-server.md) | Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código. | Sin clave propia de API de IA en la ruta básica |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=mcp)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=mcp)
 
-## Mejorar Claude Code o Codex
+## Mejorar Claude Code, Codex o Antigravity
 
 Añadir instrucciones concretas al agente y conservar un conjunto pequeño.
+
+**Resultado buscado:** Una mejora concreta en el flujo de tu agente
+
+**Prepara:** Tu cliente y una tarea repetitiva que quieras mejorar
+
+**Decide primero:** ¿Necesitas instrucciones, una herramienta MCP o cambiar el agente?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -194,11 +290,17 @@ Añadir instrucciones concretas al agente y conservar un conjunto pequeño.
 | [Agent Skills (Addy Osmani)](fichas/agent-skills.md) | Colección de Addy Osmani con skills de ingeniería para especificar, planificar, construir, verificar y revisar software con agentes. | Sin clave propia de API de IA en la ruta básica |
 | [impeccable](fichas/impeccable.md) | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. | API de IA opcional |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=skills)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=skills)
 
 ## Aprender a construir con IA
 
 Empezar por un curso o ejemplo antes de desplegar una plataforma.
+
+**Resultado buscado:** Un ejemplo pequeño que entiendas y puedas modificar
+
+**Prepara:** Tu nivel actual y un objetivo de aprendizaje
+
+**Decide primero:** ¿Quieres fundamentos, ejemplos de aplicaciones o práctica guiada?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -206,11 +308,17 @@ Empezar por un curso o ejemplo antes de desplegar una plataforma.
 | [ai-engineering-hub](fichas/ai-engineering-hub.md) | Colección de tutoriales y proyectos prácticos sobre LLM, RAG, agentes y aplicaciones de inteligencia artificial. | API de IA opcional |
 | [LLMs from Scratch](fichas/llms-from-scratch.md) | Código del libro de Sebastian Raschka para implementar un LLM tipo ChatGPT en PyTorch paso a paso. | API de IA opcional |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=aprender)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=aprender)
 
 ## Investigar mercados y estrategias
 
 Consultar herramientas y ejemplos financieros distinguiendo análisis, backtesting y ejecución.
+
+**Resultado buscado:** Un análisis o backtest con datos y supuestos visibles
+
+**Prepara:** Datos de ejemplo y separación entre simulación y cuentas reales
+
+**Decide primero:** ¿Buscas información, probar una estrategia o conectar un exchange?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -218,11 +326,17 @@ Consultar herramientas y ejemplos financieros distinguiendo análisis, backtesti
 | [dexter](fichas/dexter.md) | Agente de investigación financiera que planifica consultas, obtiene datos de mercado y revisa sus análisis. | Depende de la ruta elegida |
 | [TradingAgents](fichas/tradingagents.md) | Framework experimental que organiza agentes de análisis financiero, debate y evaluación de decisiones de trading. | Depende de la ruta elegida |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=finanzas)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=finanzas)
 
 ## Organizar notas y conocimiento
 
 Elegir una aplicación o un conjunto pequeño de extensiones para guardar, enlazar y consultar información.
+
+**Resultado buscado:** Información guardada que puedas volver a encontrar
+
+**Prepara:** Unas notas de prueba y tus necesidades de sincronización
+
+**Decide primero:** ¿Buscas un editor, extensiones o preguntas con IA?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -230,11 +344,17 @@ Elegir una aplicación o un conjunto pequeño de extensiones para guardar, enlaz
 | [Anytype Desktop](fichas/anytype-ts.md) | Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal. | Sin clave propia de API de IA en la ruta básica |
 | [AppFlowy](fichas/appflowy.md) | Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento propio. | API de IA opcional |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=notas)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=notas)
 
 ## Alojar servicios propios
 
 Entender qué aplicación vas a alojar, qué servidor necesita y qué servicios y cuentas se configuran aparte.
+
+**Resultado buscado:** Un servicio accesible con una prueba de respaldo
+
+**Prepara:** Un equipo o servidor, acceso y datos de prueba
+
+**Decide primero:** ¿Vas a alojar una aplicación o administrar varios servicios?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -242,11 +362,17 @@ Entender qué aplicación vas a alojar, qué servidor necesita y qué servicios 
 | [CasaOS](fichas/casaos.md) | Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. | Sin clave propia de API de IA en la ruta básica |
 | [Home Assistant](fichas/home-assistant.md) | Motor de Home Assistant para conectar dispositivos y automatizar acciones del hogar con control local. | API de IA opcional |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=servicios)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=servicios)
 
 ## Analizar software y su seguridad
 
 Escoger entre inspeccionar código, estudiar un binario o ejecutar pruebas en un entorno autorizado.
+
+**Resultado buscado:** Un hallazgo que puedas explicar y reproducir
+
+**Prepara:** Código o una muestra de laboratorio que tengas autorización para analizar
+
+**Decide primero:** ¿Inspeccionarás código, un binario o el comportamiento de una aplicación?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -254,11 +380,17 @@ Escoger entre inspeccionar código, estudiar un binario o ejecutar pruebas en un
 | [jadx](fichas/jadx.md) | Descompilador de archivos DEX y APK para explorar código Java reconstruido y recursos de aplicaciones Android. | Sin clave propia de API de IA en la ruta básica |
 | [shannon](fichas/shannon.md) | Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado. | Depende de la ruta elegida |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=seguridad)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=seguridad)
 
 ## Crear escenas y proyectos 3D
 
 Elegir una aplicación visual, una biblioteca o instrucciones para un agente; revisar por separado modelos y recursos externos.
+
+**Resultado buscado:** Una escena de prueba visible o renderizada
+
+**Prepara:** Una escena mínima y recursos con licencia compatible
+
+**Decide primero:** ¿Necesitas un editor visual, una librería o controlar un editor con un agente?
 
 | Punto de partida | Qué hace | Acceso básico |
 |---|---|---|
@@ -266,4 +398,4 @@ Elegir una aplicación visual, una biblioteca o instrucciones para un agente; re
 | [3dviz-pro-max](fichas/3dviz-pro-max.md) | Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código. | Sin clave propia de API de IA en la ruta básica |
 | [unity-mcp](fichas/unity-mcp.md) | Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity. | Sin clave propia de API de IA en la ruta básica |
 
-[Ver la ruta en el explorador](../docs/index.html#/explorar?goal=3d)
+[Ver la ruta en el explorador](../docs/index.html#/rutas?goal=3d)

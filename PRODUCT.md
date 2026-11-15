@@ -10,6 +10,8 @@ web
 
 Personas sin experiencia técnica que necesitan pasos guiados. La entrada debe explicar términos y decisiones antes de mostrar detalles de instalación. El detalle técnico sigue disponible para quien vaya a configurar la herramienta o ayude a hacerlo.
 
+En Comparar, las funciones y diferencias técnicas tienen prioridad. La preparación, los costes, la compatibilidad y las fuentes se consultan después, sin convertir coincidencias de categoría en afirmaciones de equivalencia ni elegir un ganador automático.
+
 ## Product Purpose
 
 La Biblioteca de Alexandría ayuda a encontrar una herramienta entre cientos de repositorios, entender qué hace, cómo empezar y qué cuenta, API, suscripción o modelo local necesita. El resultado útil es una selección corta y un primer paso comprensible.

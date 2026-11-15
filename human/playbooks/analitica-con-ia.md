@@ -4,17 +4,21 @@
 
 > **Objetivo:** Medir el uso de tu producto y responder preguntas de negocio en lenguaje natural.
 
-## 🗺️ Cómo fluye
+## Empieza con una versión pequeña
 
-```mermaid
-flowchart LR
-  Producto["Producto"] -->|eventos| posthog["posthog"]
-  posthog["posthog"] -->|exportación| duckdb["DuckDB"]
-  duckdb["DuckDB"] -->|esquema| wrenai["WrenAI"]
-  Pregunta["Pregunta"] -->|lenguaje natural| wrenai["WrenAI"]
-  wrenai["WrenAI"] -->|SQL| superset["Apache Superset"]
-  duckdb["DuckDB"] -->|datasets| superset["Apache Superset"]
-```
+Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.
+
+**Piezas iniciales:** [posthog](../fichas/posthog.md)
+
+**Prepara:** Un sitio de prueba y un evento que puedas provocar
+
+**Primera prueba propuesta:** Registra un evento y compara el resultado con tu acción
+
+**Qué comprobar:** El evento aparece con el nombre y propiedades que esperabas
+
+Empieza por medición; SQL, dashboards y preguntas con IA son ampliaciones con configuración y costes propios
+
+**Otras rutas, no piezas que debas sumar:** [Umami](../fichas/umami.md)
 
 ## 🧩 Piezas
 

@@ -4,16 +4,27 @@
 
 > **Objetivo:** Pasar informes, PDFs o notas a presentaciones editables o slides web.
 
-## 🗺️ Cómo fluye
+## Empieza con una versión pequeña
+
+Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.
+
+**Piezas iniciales:** [markitdown](../fichas/markitdown.md), [ppt-master](../fichas/ppt-master.md)
+
+**Prepara:** Un documento breve y el formato de entrega
+
+**Primera prueba propuesta:** Extrae el texto, prepara tres diapositivas y abre la exportación
+
+**Qué comprobar:** El contenido coincide con la fuente y el formato sirve para la entrega
+
+Elige el generador según PowerPoint, PDF o web; la conversión no garantiza que todos los elementos sean editables
+
+**Otras rutas, no piezas que debas sumar:** [Slidev](../fichas/slidev.md), [Marp](../fichas/marp.md)
+
+## Orden propuesto para preparar las piezas
 
 ```mermaid
 flowchart LR
-  Documentos["Documentos"] -->|simples| markitdown["markitdown"]
-  Documentos["Documentos"] -->|complejos| docling["Docling"]
-  markitdown["markitdown"] -->|Markdown| ppt_master["ppt-master"]
-  docling["Docling"] -->|Markdown| ppt_master["ppt-master"]
-  markitdown["markitdown"] -->|Markdown| slidev["Slidev"]
-  markitdown["markitdown"] -->|Markdown| marp["Marp"]
+  markitdown["markitdown"] --> ppt_master["ppt-master"]
 ```
 
 ## 🧩 Piezas

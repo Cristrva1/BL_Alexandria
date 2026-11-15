@@ -4,18 +4,25 @@
 
 > **Objetivo:** Preguntarle a tus PDFs, manuales y bases de conocimiento con respuestas citadas.
 
-## 🗺️ Cómo fluye
+## Empieza con una versión pequeña
+
+Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.
+
+**Piezas iniciales:** [Docling](../fichas/docling.md), [LlamaIndex](../fichas/llama-index.md)
+
+**Prepara:** Un PDF de dos páginas y tres preguntas con respuesta conocida
+
+**Primera prueba propuesta:** Extrae el texto y crea una consulta mínima con un proveedor elegido
+
+**Qué comprobar:** Las respuestas pueden contrastarse con fragmentos del documento
+
+El modelo y los embeddings necesitan configuración propia; almacenamiento vectorial, evaluación y trazas se añaden después
+
+## Orden propuesto para preparar las piezas
 
 ```mermaid
 flowchart LR
-  Documentos["Documentos"] -->|PDF · DOCX| docling["Docling"]
-  docling["Docling"] -->|Markdown| llama_index["LlamaIndex"]
-  llama_index["LlamaIndex"] -->|embeddings| qdrant["Qdrant"]
-  Pregunta["Pregunta"] -->|consulta| llama_index["LlamaIndex"]
-  qdrant["Qdrant"] -->|fragmentos| llama_index["LlamaIndex"]
-  llama_index["LlamaIndex"] -->|prompt + contexto| litellm["litellm"]
-  llama_index["LlamaIndex"] -->|evaluación| ragas["Ragas"]
-  llama_index["LlamaIndex"] -->|trazas| langfuse["langfuse"]
+  docling["Docling"] --> llama_index["LlamaIndex"]
 ```
 
 ## 🧩 Piezas

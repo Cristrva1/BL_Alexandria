@@ -4,16 +4,28 @@
 
 > **Objetivo:** Un asistente que escucha y responde por voz con baja latencia, en web o por teléfono.
 
-## 🗺️ Cómo fluye
+## Empieza con una versión pequeña
+
+Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.
+
+**Piezas iniciales:** [Pipecat](../fichas/pipecat.md), [faster-whisper](../fichas/faster-whisper.md), [Kokoro](../fichas/kokoro.md)
+
+**Prepara:** Micrófono, auriculares y un modelo de conversación configurado
+
+**Primera prueba propuesta:** Prueba una frase corta de entrada, respuesta y reproducción
+
+**Qué comprobar:** La transcripción y la voz de salida corresponden a la conversación
+
+Configura también el LLM; transcripción y voz locales no hacen local todo el flujo ni incluyen telefonía
+
+**Otras rutas, no piezas que debas sumar:** [LiveKit Agents](../fichas/livekit-agents.md)
+
+## Orden propuesto para preparar las piezas
 
 ```mermaid
 flowchart LR
-  Usuario["Usuario"] -->|audio| pipecat["Pipecat"]
-  pipecat["Pipecat"] -->|STT| faster_whisper["faster-whisper"]
-  faster_whisper["faster-whisper"] -->|texto| litellm["litellm"]
-  litellm["litellm"] -->|respuesta| kokoro["Kokoro"]
-  kokoro["Kokoro"] -->|TTS| pipecat["Pipecat"]
-  pipecat["Pipecat"] -->|voz| Usuario["Usuario"]
+  pipecat["Pipecat"] --> faster_whisper["faster-whisper"]
+  faster_whisper["faster-whisper"] --> kokoro["Kokoro"]
 ```
 
 ## 🧩 Piezas

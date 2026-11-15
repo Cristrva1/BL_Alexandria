@@ -2,18 +2,27 @@
 
 # 🏠 Workspace privado local soberano
 
-> **Objetivo:** Tener chat, documentos y memoria de IA en tu propia máquina, sin enviar datos a terceros.
+> **Objetivo:** Preparar chat, documentos y memoria con rutas locales, comprobando por separado modelos, herramientas y conexiones externas.
 
-## 🗺️ Cómo fluye
+## Empieza con una versión pequeña
+
+Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.
+
+**Piezas iniciales:** [Ollama](../fichas/ollama.md), [odysseus](../fichas/odysseus.md)
+
+**Prepara:** Un modelo que quepa en tu equipo y un archivo de prueba
+
+**Primera prueba propuesta:** Conecta el motor local al espacio de trabajo y prueba una conversación
+
+**Qué comprobar:** Identificas el endpoint del modelo y puedes revisar qué conexiones externas siguen activas
+
+Configura y comprueba también embeddings, herramientas, memoria y búsqueda; local no garantiza ausencia de comunicaciones externas
+
+## Orden propuesto para preparar las piezas
 
 ```mermaid
 flowchart LR
-  Usuario["Usuario"] -->|chat| odysseus["odysseus"]
-  odysseus["odysseus"] -->|inferencia| ollama["Ollama"]
-  Usuario["Usuario"] -->|fuentes| open_notebook["open-notebook"]
-  open_notebook["open-notebook"] -->|embeddings + chat| ollama["Ollama"]
-  odysseus["odysseus"] -->|memoria| mem0["mem0"]
-  odysseus["odysseus"] -->|búsqueda| searxng["SearXNG"]
+  ollama["Ollama"] --> odysseus["odysseus"]
 ```
 
 ## 🧩 Piezas
@@ -28,7 +37,7 @@ flowchart LR
 
 ## 🔌 Cómo se conecta
 
-Ollama sirve los modelos en tu equipo con una API local. Odysseus centraliza chat, documentos y tareas; Open Notebook indexa tus fuentes para preguntarles como en NotebookLM; mem0 recuerda preferencias y hechos entre sesiones; SearXNG añade búsqueda web sin rastreo.
+Ollama sirve modelos en tu equipo. Conecta una interfaz compatible y prueba primero el chat. Después evalúa documentos, memoria y búsqueda; cada componente requiere su propia configuración y puede abrir conexiones externas.
 
 ## 🚫 Cuándo NO usar esta receta
 

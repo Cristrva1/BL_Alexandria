@@ -4,15 +4,25 @@
 
 > **Objetivo:** Tener un chat tipo ChatGPT para ti o tu equipo con modelos que corren en tu máquina o servidor.
 
-## 🗺️ Cómo fluye
+## Empieza con una versión pequeña
+
+Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.
+
+**Piezas iniciales:** [Ollama](../fichas/ollama.md), [Open WebUI](../fichas/open-webui.md)
+
+**Prepara:** Un modelo compatible y recursos de equipo suficientes
+
+**Primera prueba propuesta:** Conecta el chat al endpoint local y envía una pregunta
+
+**Qué comprobar:** Puedes identificar el modelo y comprobar dónde se procesa la conversación
+
+Buscadores, herramientas y proveedores opcionales pueden salir a internet; verifica la configuración de cada uno
+
+## Orden propuesto para preparar las piezas
 
 ```mermaid
 flowchart LR
-  Usuario["Usuario"] -->|chat| open_webui["Open WebUI"]
-  open_webui["Open WebUI"] -->|modelos locales| ollama["Ollama"]
-  open_webui["Open WebUI"] -->|búsqueda web| searxng["SearXNG"]
-  open_webui["Open WebUI"] -->|APIs externas| litellm["litellm"]
-  litellm["litellm"] -->|OpenAI · Anthropic · Gemini| Proveedores["Proveedores"]
+  ollama["Ollama"] --> open_webui["Open WebUI"]
 ```
 
 ## 🧩 Piezas

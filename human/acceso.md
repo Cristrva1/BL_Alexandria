@@ -4,9 +4,9 @@
 
 Primero identifica quién ejecuta el modelo. Después comprueba cómo se autentica, qué límites tiene y qué servicios externos utiliza.
 
-## Ya tengo Claude Code,Codex o Antigravity
+## Ya tengo Claude Code, Codex o Antigravity
 
-Una skill aporta instrucciones al agente y una herramienta MCP le aporta acciones o datos. Consumen el acceso del agente anfitrión cuando se usan dentro de él. Eso no incluye automáticamente las tarifas de servicios conectados,por ejemplo una API de video o de datos sociales. Las fichas distinguen cliente oficial,integración del proyecto,recurso de referencia y compatibilidad pendiente.
+Una skill aporta instrucciones al agente y una herramienta MCP le aporta acciones o datos. Consumen el acceso del agente anfitrión cuando se usan dentro de él. Eso no incluye automáticamente las tarifas de servicios conectados, por ejemplo una API de video o de datos sociales. Las fichas distinguen cliente oficial, integración del proyecto, recurso de referencia y compatibilidad pendiente.
 
 ## La aplicación usa mi sesión del agente
 
@@ -26,7 +26,7 @@ Necesitas un backend local documentado, pesos compatibles y suficiente memoria y
 
 ## Sin clave no significa offline ni gratis
 
-El filtro Sin clave de API de IA indica que existe una ruta básica sin esa credencial propia. Puede usar tu suscripción de agente o un servicio online. Los datos,el alojamiento,la telefonía,los medios y las licencias pueden cobrar aparte. Modelos locales documentados puede referirse a una etapa,como transcribir o crear embeddings,y no a todo el flujo.
+El filtro Sin clave de API de IA indica que existe una ruta básica sin esa credencial propia. Puede usar tu suscripción de agente o un servicio online. Los datos, el alojamiento, la telefonía, los medios y las licencias pueden cobrar aparte. Modelos locales documentados puede referirse a una etapa, como transcribir o crear embeddings, y no a todo el flujo.
 
 ## Software abierto y servicio gratuito
 

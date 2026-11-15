@@ -619,12 +619,23 @@ def _playbook(cat: Catalog, recipe: dict[str, Any]) -> str:
         f"> **Objetivo:** {recipe.get('goal', '')}",
         "",
     ]
+    plan=recipe.get('plan') or {}
+    if plan:
+        lines += ['## Empieza con una versión pequeña','', 'Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.','',
+                  '**Piezas iniciales:** '+', '.join(repo_link(cat,rid,'playbooks') for rid in plan['minimum']), '',
+                  '**Prepara:** '+plan['inputs'], '', '**Primera prueba propuesta:** '+plan['first_try']['action'], '',
+                  '**Qué comprobar:** '+plan['first_try']['success'], '', plan['note'], '']
+        if plan.get('instead'):
+            lines += ['**Otras rutas, no piezas que debas sumar:** '+', '.join(repo_link(cat,rid,'playbooks') for rid in plan['instead']), '']
     flow = recipe.get("flow") or []
-    if not flow and len(recipe.get("repos", [])) > 1:
+    if plan:
+        initial=plan['minimum']
+        flow=[[initial[i],initial[i+1]] for i in range(len(initial)-1)]
+    elif not flow and len(recipe.get("repos", [])) > 1:
         ids = recipe["repos"]
         flow = [[ids[i], ids[i + 1]] for i in range(len(ids) - 1)]
     if flow:
-        lines += ["## 🗺️ Cómo fluye", "", "```mermaid", "flowchart LR"]
+        lines += ["## Orden propuesto para preparar las piezas" if plan else "## 🗺️ Cómo fluye", "", "```mermaid", "flowchart LR"]
         for edge in flow:
             src, dst = _mermaid_node(cat, edge[0]), _mermaid_node(cat, edge[1])
             label = f"|{edge[2]}|" if len(edge) > 2 and edge[2] else ""

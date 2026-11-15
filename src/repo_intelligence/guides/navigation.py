@@ -39,10 +39,12 @@ def render_navigation(root: Path, catalog: Catalog) -> None:
     lines=['[Inicio](README.md) · [Cómo elegir](elegir.md) · [Acceso y costes](acceso.md)', '', '# ¿Qué quieres conseguir?', '', 'Empieza por un resultado. Los repos de entrada son opciones para comparar, no una lista que debas instalar completa.', '']
     for goal in catalog.compact.get('discovery',{}).get('goals',[]):
         lines+=['## '+goal['title'],'',goal['description'],'', '| Punto de partida | Qué hace | Acceso básico |','|---|---|---|']
+        if goal.get('outcome'):
+            lines[-2:-2]=['**Resultado buscado:** '+goal['outcome'],'','**Prepara:** '+goal['bring'],'','**Decide primero:** '+goal['decision'],'']
         for rid in goal['starters']:
             r=catalog.get(rid)
             if r:lines.append(f'| [{md_cell(r["name"])}](fichas/{slug(rid)}.md) | {md_cell(r["one"])} | {API_LABELS[access_facts(r)["api"]]} |')
-        lines+=['',f'[Ver la ruta en el explorador](../docs/index.html#/explorar?goal={goal["id"]})','']
+        lines+=['',f'[Ver la ruta en el explorador](../docs/index.html#/rutas?goal={goal["id"]})','']
     (human/'rutas.md').write_text('\n'.join(lines).rstrip()+'\n',encoding='utf8')
     counts=Counter(route for repo in public for route in access_routes(repo))
     lines=['[Inicio](README.md) · [Acceso y costes](acceso.md)', '', '# Buscar por forma de uso', '', 'Estas rutas se pueden combinar con un objetivo o categoría. Revisa la ficha: cada etiqueta describe una ruta concreta y no incluye automáticamente los costes de servicios externos.', '', '| Ruta | Repos | Abrir |','|---|---:|---|']

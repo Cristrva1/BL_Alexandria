@@ -4,18 +4,27 @@
 
 > **Objetivo:** Construir un frontend pulido con chat o funciones de IA integradas.
 
-## 🗺️ Cómo fluye
+## Empieza con una versión pequeña
+
+Propuesta editorial; no es una integración ejecutada ni una lista completa de dependencias.
+
+**Piezas iniciales:** [ui](../fichas/ui.md), [tailwindcss](../fichas/tailwindcss.md), [AI SDK (Vercel)](../fichas/vercel-ai.md), [assistant-ui](../fichas/assistant-ui.md)
+
+**Prepara:** Una aplicación de prueba y una ruta de modelo elegida
+
+**Primera prueba propuesta:** Construye una pantalla de chat y envía una pregunta de prueba
+
+**Qué comprobar:** Puedes revisar respuesta, estado de carga y un error de conexión
+
+Motion, gráficos y caché se añaden cuando la función los necesita; revisa API, alojamiento y autenticación por separado
+
+## Orden propuesto para preparar las piezas
 
 ```mermaid
 flowchart LR
-  tailwindcss["tailwindcss"] -->|estilos| ui["ui"]
-  ui["ui"] -->|componentes| App["App"]
-  assistant_ui["assistant-ui"] -->|chat| App["App"]
-  App["App"] -->|streaming| vercel_ai["AI SDK (Vercel)"]
-  vercel_ai["AI SDK (Vercel)"] -->|tools| LLM["LLM"]
-  motion["motion"] -->|animación| App["App"]
-  recharts["Recharts"] -->|gráficos| App["App"]
-  swr["swr"] -->|datos| App["App"]
+  ui["ui"] --> tailwindcss["tailwindcss"]
+  tailwindcss["tailwindcss"] --> vercel_ai["AI SDK (Vercel)"]
+  vercel_ai["AI SDK (Vercel)"] --> assistant_ui["assistant-ui"]
 ```
 
 ## 🧩 Piezas
