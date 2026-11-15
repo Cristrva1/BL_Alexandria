@@ -640,6 +640,44 @@ input[type="checkbox"]:focus-visible, .comparison-table-wrap:focus-visible, summ
 .guided-caution { color: var(--ink-soft); }
 .guided-recommendations textarea { width: 100%; min-height: 12rem; padding: .7rem; font: inherit; resize: vertical; background: var(--paper-2); color: var(--ink); border: 1px solid #88796a; border-radius: 8px; margin-block: .5rem; }
 #guided-result-title { scroll-margin-top: 1rem; }
+/* The handbook follows the library's reading layout, with short directory rows. */
+.handbook-jump { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; margin-block: 1.5rem; border-block: 1px solid var(--rule); padding-block: .6rem; }
+.handbook-jump a { display: inline-flex; align-items: center; min-height: 48px; }
+.handbook-jump a[aria-current] { color: var(--ink); font-weight: 700; text-decoration-thickness: 2px; }
+.handbook-filter input, .handbook-filter select, .handbook-filter .btn { min-height: 48px; width: 100%; }
+.handbook-filter select { max-width: 100%; }
+.handbook-filter .btn { width: auto; }
+.handbook-filter input { border: 1px solid #88796a; background: var(--paper-2); padding: .65rem .75rem; border-radius: 8px; }
+.handbook-group { margin-block: 3rem; }
+.handbook-directory, .handbook-prompts { list-style: none; padding: 0; }
+.handbook-row { display: grid; grid-template-columns: minmax(10rem,1fr) minmax(0,2fr); gap: 2rem; padding-block: 1.4rem; border-top: 1px solid var(--rule); }
+.handbook-row h3 { font-size: 1.5rem; margin-block: .2rem; overflow-wrap: anywhere; }
+.handbook-row p { margin-block: .2rem .7rem; max-width: 65ch; }
+.handbook-row a { overflow-wrap: anywhere; }
+.handbook-paths { margin-block: 2.5rem; }
+.handbook-paths ul { padding-left: 1.25rem; }
+.handbook-paths li { margin-block: 1rem; }
+.handbook-paths span { display: block; color: var(--ink-soft); margin-top: .25rem; }
+.handbook-facts { border-block: 1px solid var(--rule); padding-block: .75rem; }
+.handbook-facts > div { display: grid; grid-template-columns: 11rem minmax(0,1fr); gap: 1.5rem; padding-block: .7rem; }
+.handbook-facts dt { font-weight: 600; }
+.handbook-facts dd { margin: 0; }
+.handbook-command { margin-block: 1.5rem 2rem; border-top: 1px solid var(--rule); padding-top: 1rem; min-width: 0; }
+.handbook-command h3 { font-family: var(--sans); font-size: 1.05rem; font-weight: 600; }
+.handbook-command pre { max-width: 100%; overflow-x: auto; background: var(--paper-2); padding: 1rem; border: 1px solid var(--rule); border-radius: 6px; }
+.handbook-command code { padding: 0; background: none; }
+.handbook-prompts > li { padding-block: 1.75rem; border-top: 1px solid var(--rule); }
+.handbook-prompts h2 { font-size: 1.7rem; margin-block: .3rem .8rem; }
+.handbook-prompts textarea { display: block; width: 100%; min-height: 15rem; margin-block: .6rem 1rem; resize: vertical; font: inherit; color: inherit; border: 1px solid #88796a; background: var(--paper-2); border-radius: 8px; padding: .75rem; }
+.handbook-prompts label { display: block; font-weight: 600; }
+.handbook-path-steps { padding-left: 1.4rem; }
+.handbook-path-steps > li { padding-block: 1rem; border-top: 1px solid var(--rule); }
+.handbook-path-steps h2 { font-size: 1.65rem; margin-block: .3rem .8rem; }
+@media (min-width: 901px) { .nav { overflow-y: auto; } }
+@media (max-width: 760px) {
+  .handbook-row, .handbook-facts > div { grid-template-columns: 1fr; gap: .4rem; }
+  .handbook-filter .btn { width: 100%; }
+}
 @media (max-width: 760px) {
   .guided-project-fields, .guided-equipment { grid-template-columns: 1fr; }
   .guided-summary > div { grid-template-columns: 1fr; gap: .2rem; }

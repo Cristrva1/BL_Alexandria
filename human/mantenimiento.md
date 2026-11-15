@@ -30,3 +30,11 @@ El script de auditoría guarda material para revisar; no convierte coincidencias
 - Actividad del proyecto: fecha comunicada por su fuente, cuando se haya verificado.
 
 No confundir una fecha de revisión editorial con actividad reciente del autor. No marcar todos los repos no descargados como novedades.
+
+## Mantener las guías de configuración y servicios
+
+El contenido de Configurar IA, Servicios y despliegue, Prompts y comandos vive en `data/handbook.json`. Complementa el inventario de repos: no se añade un servicio o concepto al recuento de proyectos por aparecer en este manual.
+
+Revisa la fuente del proyecto, la fecha, la ruta de acceso y el contexto de cada comando. Conserva los límites cuando falte evidencia y distingue la prueba propuesta de una instalación ejecutada. Las plantillas originales indican los datos que necesita aportar la persona.
+
+`guide build` genera también `human/MANUAL_IA.md` y el sitio de Pages. `web build` actualiza la copia web. El cargador comprueba fuentes, comandos y referencias antes de publicar.

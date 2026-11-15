@@ -263,6 +263,2783 @@
       ]
     }
   ],
+  "handbook": {
+    "schema_version": 1,
+    "updated_at": "2026-11-15",
+    "groups": [
+      {
+        "id": "agentes",
+        "title": "Agentes para programar",
+        "section": "configurar",
+        "description": "El entorno que lee, modifica y prueba tu proyecto."
+      },
+      {
+        "id": "modelos",
+        "title": "Modelos y proveedores",
+        "section": "configurar",
+        "description": "La IA que responde y la cuenta que factura su uso."
+      },
+      {
+        "id": "personales",
+        "title": "Agentes personales y trabajo delegado",
+        "section": "configurar",
+        "description": "Tareas de varios pasos, conexiones y seguimiento."
+      },
+      {
+        "id": "local",
+        "title": "IA local y servidores de modelos",
+        "section": "configurar",
+        "description": "Elegir pesos, interfaz, motor y equipo por separado."
+      },
+      {
+        "id": "movil",
+        "title": "Android, iPhone y automatizaciones",
+        "section": "configurar",
+        "description": "Distinguir usar un agente desde el teléfono de controlar el teléfono."
+      },
+      {
+        "id": "publicar",
+        "title": "Código, publicación y despliegue",
+        "section": "servicios",
+        "description": "Del repositorio a un enlace accesible para otras personas."
+      },
+      {
+        "id": "datos",
+        "title": "Datos, usuarios e integraciones",
+        "section": "servicios",
+        "description": "Persistencia, cuentas y flujos entre aplicaciones."
+      },
+      {
+        "id": "infra",
+        "title": "Servidores y contenedores",
+        "section": "servicios",
+        "description": "Preparar el lugar donde se ejecutan tus aplicaciones."
+      },
+      {
+        "id": "operacion",
+        "title": "Acceso remoto, copias y operación",
+        "section": "servicios",
+        "description": "Conectar, observar y recuperar un sistema ya instalado."
+      }
+    ],
+    "resources": [
+      {
+        "id": "codex",
+        "name": "Codex",
+        "group": "agentes",
+        "kind": "Agente de código",
+        "summary": "Trabaja sobre un proyecto desde CLI, editor o escritorio; las superficies y permisos pueden variar.",
+        "prepare": [
+          "Una carpeta de proyecto con Git",
+          "El cliente oficial para tu sistema y una cuenta o API admitida"
+        ],
+        "steps": [
+          "Instala la superficie que vas a usar siguiendo la guía oficial; evita configurar varias a la vez.",
+          "Abre una copia de prueba del proyecto. Autentica con ChatGPT o API y comprueba cuál está activa.",
+          "Pide explicar un archivo y proponer un cambio pequeño. Revisa el diff y una prueba antes de integrarlo."
+        ],
+        "verify": "El cambio queda identificado en Git y la prueba indicada termina con el resultado esperado.",
+        "access": "ChatGPT y API son métodos de acceso distintos. Para instrucciones duraderas usa AGENTS.md; las opciones del cliente se configuran según su superficie.",
+        "cost": "El plan, cuotas y método de autenticación determinan el consumo. Una API de tu aplicación conserva su propia facturación.",
+        "improve": [
+          "Escribe en AGENTS.md cómo arrancar y verificar el proyecto.",
+          "Usa una skill para procedimientos repetidos y un conector o MCP para datos vivos; añade solo lo que necesites.",
+          "Aplica ajustes del proyecto en .codex/config.toml cuando esa superficie los admita y conserva una copia anterior."
+        ],
+        "limits": [
+          "Una configuración local no habilita por sí misma funciones cloud, conectores o permisos de una organización."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://learn.chatgpt.com/docs/config-file/config-basic",
+            "checked_at": "2026-11-15"
+          },
+          {
+            "title": "Autenticación y sesiones",
+            "url": "https://learn.chatgpt.com/docs/auth",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "codex"
+        ],
+        "aliases": [
+          "OpenAI Codex",
+          "ChatGPT Codex"
+        ],
+        "commands": [
+          {
+            "title": "Consultar opciones del cliente",
+            "text": "codex --help",
+            "where": "Terminal, con Codex CLI ya instalado",
+            "effect": "Muestra ayuda; no inicia una tarea.",
+            "source": "https://learn.chatgpt.com/docs/cli/reference"
+          }
+        ]
+      },
+      {
+        "id": "claude-code",
+        "name": "Claude Code",
+        "group": "agentes",
+        "kind": "Agente de código",
+        "summary": "Lee un repositorio, modifica archivos y ejecuta herramientas desde un entorno de desarrollo.",
+        "prepare": [
+          "Cliente oficial de Claude Code",
+          "Una carpeta de prueba y una ruta de autenticación admitida"
+        ],
+        "steps": [
+          "Sigue el instalador oficial para tu sistema y abre el agente en la carpeta del proyecto.",
+          "Comprueba cuenta y proveedor. Pide un mapa breve del proyecto antes de editar.",
+          "Haz un cambio de texto o una corrección pequeña, revisa el diff y ejecuta la comprobación del proyecto."
+        ],
+        "verify": "Puedes explicar qué archivo cambió y reproducir la comprobación.",
+        "access": "Separa el inicio de sesión de Claude de una configuración con API o proveedor externo. Las instrucciones del proyecto van en CLAUDE.md.",
+        "cost": "Planes y APIs tienen límites propios. Cambiar el proveedor puede cambiar quién factura y qué datos recibe.",
+        "improve": [
+          "Mantén CLAUDE.md breve, con comandos y decisiones del proyecto.",
+          "Añade una skill o plugin por necesidad y verifica que se carga.",
+          "Usa hooks para comprobaciones concretas después de probarlos en una copia."
+        ],
+        "limits": [
+          "Un catálogo de skills no se instala como si fuera una sola aplicación; revisa cada paquete y su cliente."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://code.claude.com/docs/en/overview",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "claude-code",
+          "claude-plugins-official",
+          "awesome-claude-code"
+        ],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "antigravity",
+        "name": "Antigravity",
+        "group": "agentes",
+        "kind": "Entorno de desarrollo con agentes",
+        "summary": "Organiza trabajo con agentes en las superficies App, CLI o IDE de Google Antigravity.",
+        "prepare": [
+          "Una cuenta y sistema admitidos por la versión actual",
+          "Proyecto de prueba con instrucciones de arranque"
+        ],
+        "steps": [
+          "Elige App, CLI o IDE en la guía oficial e instala esa superficie.",
+          "Abre un proyecto pequeño y revisa sus permisos, cuenta y modelo disponibles.",
+          "Pide una mejora acotada y comprueba el archivo y el resultado desde la propia aplicación."
+        ],
+        "verify": "Puedes localizar el cambio y repetir su verificación sin depender de la conversación.",
+        "access": "El acceso se gestiona en Antigravity. Una API de Gemini u otro proveedor para tu aplicación es otra configuración.",
+        "cost": "Revisa el plan y las cuotas actuales de la cuenta. Los servicios externos del proyecto se pagan aparte.",
+        "improve": [
+          "Añade reglas del espacio de trabajo con contexto breve.",
+          "Convierte una rutina útil en una skill antes de instalar colecciones completas.",
+          "Define qué evidencia debe entregar un agente al finalizar."
+        ],
+        "limits": [
+          "No intercambies configuraciones entre App, CLI e IDE sin comprobar que la documentación las comparte."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://antigravity.google/docs/getting-started",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "antigravity-awesome-skills"
+        ],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "deepseek-harness",
+        "name": "DeepSeek Harness (DSH)",
+        "group": "agentes",
+        "kind": "Harness de agentes",
+        "summary": "Un entorno extensible por plugins para construir y ejecutar agentes; es distinto de los modelos DeepSeek.",
+        "prepare": [
+          "Node.js y requisitos de la versión actual",
+          "Cuenta o proveedor de modelo elegido"
+        ],
+        "steps": [
+          "Lee el inicio rápido oficial y elige Web UI o desarrollo desde código.",
+          "Inicia el perfil de prueba y configura un proveedor por la ruta documentada.",
+          "Pide una tarea sobre un archivo de ejemplo; después añade un solo plugin si hace falta."
+        ],
+        "verify": "La interfaz abre y una tarea mínima devuelve un resultado que puedes inspeccionar.",
+        "access": "DSH es el harness; el proveedor, su clave y los plugins son capas separadas. Los plugins ZSeven-W son de terceros.",
+        "cost": "Código, llamadas al modelo, servidor y servicios de los plugins tienen costes independientes.",
+        "improve": [
+          "Mantén perfiles separados para pruebas y uso habitual.",
+          "Revisa herramientas y permisos después de instalar un plugin.",
+          "Guarda versiones y una forma de volver al perfil anterior."
+        ],
+        "limits": [
+          "Instalar un plugin no implica que sus dependencias o dispositivos ya estén preparados."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://github.com/deepseek-ai/deepseek-harness",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "DSH",
+          "Deepseek Harness"
+        ],
+        "commands": [
+          {
+            "title": "Probar la interfaz web",
+            "text": "npx @deepseek-ai/dsh web",
+            "where": "Terminal con Node y requisitos de DSH",
+            "effect": "Descarga o ejecuta el paquete e inicia un servidor local. Revisa versión y origen antes de ejecutarlo.",
+            "source": "https://github.com/deepseek-ai/deepseek-harness"
+          }
+        ]
+      },
+      {
+        "id": "qwen-code",
+        "name": "Qwen Code",
+        "group": "agentes",
+        "kind": "Agente de código",
+        "summary": "Usa un agente de terminal o superficies compatibles para trabajar en código con un proveedor configurado.",
+        "prepare": [
+          "Instalador oficial o requisitos de Node del inicio rápido",
+          "Una cuenta o clave de la plataforma que vayas a seleccionar"
+        ],
+        "steps": [
+          "Instala Qwen Code por una de las rutas oficiales para tu sistema.",
+          "Abre qwen y usa /auth para elegir cuenta, plan o proveedor; selecciona la región correcta.",
+          "Pide explicar y corregir un ejemplo pequeño; revisa el diff y el consumo."
+        ],
+        "verify": "El diagnóstico identifica el proveedor esperado y el cambio pasa su prueba.",
+        "access": "Qwen Code es el cliente; Qwen también nombra una familia de modelos. El menú actual ofrece métodos de cuenta, planes y proveedores externos.",
+        "cost": "No asumas que conserva antiguas cuotas OAuth gratuitas. Consulta las condiciones del método seleccionado.",
+        "improve": [
+          "Guarda instrucciones y comandos propios en el ámbito .qwen que corresponda.",
+          "Usa /doctor para revisar la configuración.",
+          "Compara modelos con la misma tarea y criterio de aceptación."
+        ],
+        "limits": [
+          "Los endpoints de China e internacional y los planes no son intercambiables por cambiar el idioma."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://github.com/QwenLM/qwen-code/blob/main/docs/users/quickstart.md",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "Qwen CLI"
+        ],
+        "commands": [
+          {
+            "title": "Elegir autenticación",
+            "text": "/auth",
+            "where": "Dentro de una sesión interactiva de Qwen Code",
+            "effect": "Abre el menú de autenticación. No es un comando de PowerShell.",
+            "source": "https://github.com/QwenLM/qwen-code/blob/main/docs/users/quickstart.md"
+          },
+          {
+            "title": "Revisar configuración",
+            "text": "/doctor",
+            "where": "Dentro de Qwen Code",
+            "effect": "Revisa la configuración actual del cliente.",
+            "source": "https://github.com/QwenLM/qwen-code/blob/main/docs/users/quickstart.md"
+          }
+        ]
+      },
+      {
+        "id": "kimi-code",
+        "name": "Kimi Code",
+        "group": "agentes",
+        "kind": "Agente de código",
+        "summary": "El cliente de programación de Moonshot; conviene distinguirlo del chat Kimi y de su API.",
+        "prepare": [
+          "La versión vigente de Kimi Code",
+          "Cuenta o credencial admitida por esa versión"
+        ],
+        "steps": [
+          "Empieza en la documentación actual de Kimi Code y comprueba la migración si vienes de kimi-cli.",
+          "Instala el cliente indicado y completa su login para la plataforma correcta.",
+          "Pide un cambio mínimo con un test; consulta el uso antes de una tarea larga."
+        ],
+        "verify": "La versión y la cuenta están identificadas y puedes revisar el cambio en Git.",
+        "access": "El plan del chat, Kimi Code y las APIs Moonshot pueden tener accesos y cuotas diferentes.",
+        "cost": "Confirma membresía, cuota y proveedor en el panel; no deduzcas el precio del cliente a partir de un modelo anunciado.",
+        "improve": [
+          "Consulta /usage cuando esté disponible en tu versión.",
+          "Separa configuración del proyecto y credenciales.",
+          "Usa el mismo ejemplo para comparar antes y después de cambiar modelo."
+        ],
+        "limits": [
+          "La documentación de kimi-cli incluye avisos de migración: evita mezclar comandos de generaciones distintas."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://github.com/MoonshotAI/kimi-cli/blob/main/docs/en/reference/kimi-command.md",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "Kimi",
+          "Moonshot Kimi"
+        ],
+        "commands": [
+          {
+            "title": "Consultar versión",
+            "text": "kimi --version",
+            "where": "Terminal, con la CLI correspondiente instalada",
+            "effect": "Muestra la versión; comprueba primero si tu instalación migró a Kimi Code.",
+            "source": "https://github.com/MoonshotAI/kimi-cli/blob/main/docs/en/faq.md"
+          }
+        ]
+      },
+      {
+        "id": "command-code",
+        "name": "Command Code",
+        "group": "agentes",
+        "kind": "Agente de código y proveedor",
+        "summary": "Un agente orientado a modelos abiertos, con servicio y planes propios.",
+        "prepare": [
+          "Node/npm si eliges esa instalación",
+          "Cuenta y acceso al modelo o plan elegidos"
+        ],
+        "steps": [
+          "Entra en commandcode.ai y sigue su instalación oficial.",
+          "Configura una cuenta y comprueba el modelo seleccionado y su consumo.",
+          "Prueba una corrección de un solo archivo y revisa cambios y pruebas antes de ampliar la tarea."
+        ],
+        "verify": "La tarea usa el modelo previsto y deja un diff comprensible.",
+        "access": "Su cuenta y créditos no equivalen a tu plan de Claude o ChatGPT. Comprueba por separado el agente y su API de proveedor.",
+        "cost": "Consulta créditos incluidos, vencimiento y uso adicional en el plan actual; no uses cifras de publicaciones antiguas.",
+        "improve": [
+          "Define convenciones del proyecto y revisa las reglas aprendidas.",
+          "Mide las correcciones que necesitas con una tarea repetible.",
+          "Revisa consumo antes de permitir sesiones largas."
+        ],
+        "limits": [
+          "Los modelos disponibles y los créditos incluidos dependen del plan; confirma la ruta antes de migrar un proyecto."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://commandcode.ai/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "commancode",
+          "commandcode"
+        ],
+        "commands": [
+          {
+            "title": "Instalación mediante npm",
+            "text": "npm i -g command-code",
+            "where": "Terminal con Node/npm",
+            "effect": "Descarga e instala globalmente el cliente. Consulta antes requisitos y versión.",
+            "source": "https://commandcode.ai/"
+          }
+        ]
+      },
+      {
+        "id": "opencode",
+        "name": "OpenCode",
+        "group": "agentes",
+        "kind": "Agente de código",
+        "summary": "Agente abierto con interfaz de terminal, escritorio o web y selección de proveedores.",
+        "prepare": [
+          "La versión actual de OpenCode",
+          "Proyecto Git y proveedor de modelo"
+        ],
+        "steps": [
+          "Usa la documentación de anomalyco y elige una única superficie de instalación.",
+          "Conecta el proveedor y revisa modelo y permisos antes de ejecutar herramientas.",
+          "Haz una tarea corta, inspecciona el diff y ejecuta su comprobación."
+        ],
+        "verify": "Puedes identificar el proveedor y repetir la tarea sin cambiar de entorno.",
+        "access": "La autenticación depende del proveedor. El código del agente abierto no incluye todas las inferencias.",
+        "cost": "Servicios del proveedor y planes de modelos se revisan aparte del coste del cliente.",
+        "improve": [
+          "Añade instrucciones, skills o comandos según la documentación de tu versión.",
+          "Instala MCP solo cuando necesites una herramienta concreta.",
+          "Guarda la configuración anterior antes de cambiar de proveedor."
+        ],
+        "limits": [
+          "Existe un repositorio antiguo con el mismo nombre. Las guías actuales enlazan anomalyco/opencode."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://opencode.ai/docs/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "opencode"
+        ],
+        "aliases": [],
+        "commands": [
+          {
+            "title": "Instalación npm de la versión actual",
+            "text": "npm install -g @opencode/cli",
+            "where": "Terminal con Node/npm",
+            "effect": "Instala globalmente la CLI indicada por la documentación actual; no es el paquete histórico.",
+            "source": "https://opencode.ai/docs/"
+          }
+        ]
+      },
+      {
+        "id": "t3code",
+        "name": "T3 Code",
+        "group": "agentes",
+        "kind": "Interfaz para agentes",
+        "summary": "Una interfaz para manejar agentes y proyectos desde ordenador o teléfono; no sustituye su autenticación.",
+        "prepare": [
+          "Un agente compatible ya instalado y autenticado",
+          "Git y un proyecto de prueba"
+        ],
+        "steps": [
+          "Descarga T3 Code desde su enlace oficial para tu sistema.",
+          "Conecta un agente instalado, por ejemplo Codex o Claude Code, siguiendo Provider setup.",
+          "Abre una tarea pequeña y revisa diff y prueba antes de commit o push."
+        ],
+        "verify": "El agente conectado completa una tarea y puedes ver los archivos afectados.",
+        "access": "T3 Code organiza agentes existentes; cada agente y proveedor conserva su sesión y condiciones.",
+        "cost": "Revisa por separado el cliente, la suscripción del agente y APIs externas.",
+        "improve": [
+          "Usa un worktree por cambio cuando ese flujo esté configurado.",
+          "Configura acceso remoto siguiendo su guía y prueba primero en tu red.",
+          "Identifica qué equipo debe permanecer encendido."
+        ],
+        "limits": [
+          "Controlar una sesión desde el móvil no equivale a automatizar las aplicaciones del teléfono."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://github.com/pingdotgg/t3code",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "t3code"
+        ],
+        "aliases": [
+          "t3 code"
+        ],
+        "commands": [
+          {
+            "title": "Instalación en Windows",
+            "text": "winget install T3Tools.T3Code",
+            "where": "PowerShell en Windows con WinGet disponible",
+            "effect": "Instala T3 Code; el agente se instala y autentica por separado.",
+            "source": "https://github.com/pingdotgg/t3code"
+          }
+        ]
+      },
+      {
+        "id": "aider",
+        "name": "Aider",
+        "group": "agentes",
+        "kind": "Agente de código en terminal",
+        "summary": "Trabaja con cambios de código y Git desde una conversación de terminal.",
+        "prepare": [
+          "Python y requisitos del instalador actual",
+          "Repositorio de prueba y un proveedor compatible"
+        ],
+        "steps": [
+          "Sigue la instalación aislada oficial de Aider.",
+          "Configura el proveedor sin publicar la clave y añade solo los archivos necesarios.",
+          "Solicita una corrección pequeña y revisa commit, diff y pruebas."
+        ],
+        "verify": "Puedes revisar y revertir el cambio con Git.",
+        "access": "Admite proveedores y rutas locales documentadas; tener un chat de pago no acredita una API para Aider.",
+        "cost": "El consumo depende del modelo o del equipo local; comprueba el soporte del modelo antes de descargarlo.",
+        "improve": [
+          "Usa convenciones de código del proyecto.",
+          "Configura lint y pruebas útiles.",
+          "Reduce el conjunto de archivos cuando la tarea sea pequeña."
+        ],
+        "limits": [
+          "Una librería o modelo compatible con API puede no ofrecer la misma calidad de edición."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://aider.chat/docs/install.html",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "aider"
+        ],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "cline",
+        "name": "Cline",
+        "group": "agentes",
+        "kind": "Agente en editor, CLI o escritorio",
+        "summary": "Ayuda a leer y editar archivos y utilizar herramientas desde una superficie de desarrollo.",
+        "prepare": [
+          "La aplicación o extensión oficial elegida",
+          "Cuenta o proveedor configurado"
+        ],
+        "steps": [
+          "Elige escritorio, CLI o extensión desde la documentación oficial.",
+          "Abre una carpeta de prueba y revisa proveedor, permisos y herramientas disponibles.",
+          "Pide explicar un archivo y corregir un caso pequeño; inspecciona las acciones y el resultado."
+        ],
+        "verify": "El cambio queda visible y la comprobación puede repetirse.",
+        "access": "La superficie de Cline y la inferencia son capas distintas. Revisa qué proveedor usará cada tarea.",
+        "cost": "Cliente abierto no significa llamadas de IA ilimitadas. Modelos locales consumen tus recursos.",
+        "improve": [
+          "Añade reglas del proyecto en el formato de la versión elegida.",
+          "Prueba un MCP antes de conectar muchos servicios.",
+          "Revisa los permisos de ejecución que habilitas."
+        ],
+        "limits": [
+          "No des por hecho que una extensión y la aplicación de escritorio comparten toda su configuración."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.cline.bot/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "cline"
+        ],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "cursor",
+        "name": "Cursor",
+        "group": "agentes",
+        "kind": "Editor con agentes",
+        "summary": "Un editor con asistencia y agentes para desarrollar sobre tu repositorio.",
+        "prepare": [
+          "Cliente oficial y cuenta",
+          "Proyecto pequeño con un comando de comprobación"
+        ],
+        "steps": [
+          "Descarga el editor oficial e inicia sesión.",
+          "Abre el proyecto y revisa modelos, reglas y permisos disponibles en tu cuenta.",
+          "Completa una tarea corta y revisa el diff y la prueba."
+        ],
+        "verify": "Puedes explicar qué cambió y cuánto uso consumió la tarea.",
+        "access": "Comprueba qué superficie y plan utilizas. Una cuenta Cursor, un Bot y una API externa tienen condiciones específicas.",
+        "cost": "Los modelos, límites y uso adicional dependen del plan actual.",
+        "improve": [
+          "Escribe reglas por proyecto y evita reglas globales que no aplican.",
+          "Usa ejemplos concretos y criterios de aceptación.",
+          "Revisa el consumo antes de trabajos persistentes."
+        ],
+        "limits": [
+          "El acceso a una función en un tutorial no prueba que esté habilitada en tu cuenta."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://cursor.com/docs",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "deepseek-api",
+        "name": "DeepSeek: modelos y API",
+        "group": "modelos",
+        "kind": "Proveedor de modelos",
+        "summary": "Ofrece modelos a través de una API; el harness DSH es otra pieza.",
+        "prepare": [
+          "Una aplicación o agente compatible",
+          "Cuenta de API y presupuesto de prueba"
+        ],
+        "steps": [
+          "Lee Your First API Call y elige el modelo disponible para tu cuenta.",
+          "Configura base URL y autenticación según el formato documentado, fuera del repositorio.",
+          "Prueba una solicitud pequeña y comprueba respuesta, uso y errores."
+        ],
+        "verify": "Tu aplicación muestra el proveedor esperado y registra el consumo de la prueba.",
+        "access": "Las rutas OpenAI-compatible y Anthropic-compatible tienen configuración propia. Consulta las integraciones oficiales con cada agente.",
+        "cost": "Consulta el tarifario del modelo y las funciones adicionales. Una suscripción de otro agente no paga automáticamente esta API.",
+        "improve": [
+          "Fija el modelo de una evaluación antes de comparar.",
+          "Añade límites de salida y reintentos acotados.",
+          "Separa credenciales de prueba y producción."
+        ],
+        "limits": [
+          "Pesos descargables, chat web y API no tienen necesariamente la misma licencia, límites o modelo."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://api-docs.deepseek.com/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "deepseek-coder"
+        ],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "qwen-modelos",
+        "name": "Qwen: modelos locales o API",
+        "group": "modelos",
+        "kind": "Familia de modelos",
+        "summary": "Modelos de lenguaje y multimodales; elige una variante y un motor compatibles con tu tarea.",
+        "prepare": [
+          "La ficha exacta del modelo",
+          "Un motor local compatible o una cuenta de proveedor"
+        ],
+        "steps": [
+          "Define si necesitas texto, visión u otra capacidad.",
+          "Elige una variante según memoria, formato y licencia; sigue la ruta oficial de inferencia.",
+          "Evalúa el mismo ejemplo pequeño y guarda modelo, cuantización y resultado."
+        ],
+        "verify": "Puedes identificar exactamente qué variante ejecutaste y repetir la prueba.",
+        "access": "Qwen Code es un cliente diferente. Los modelos pueden ejecutarse en motores documentados como Ollama, llama.cpp o vLLM.",
+        "cost": "Local implica equipo y energía; una API aplica su tarifa. La licencia se consulta en la ficha de cada variante.",
+        "improve": [
+          "Mide memoria y latencia con tu propio ejemplo.",
+          "Compara cuantizaciones sin cambiar a la vez el prompt.",
+          "Verifica soporte de herramientas si lo vas a usar como agente."
+        ],
+        "limits": [
+          "No existe una cantidad de RAM universal válida para toda la familia Qwen."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://qwen.readthedocs.io/en/latest/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "Qwen",
+          "Qwen modelos"
+        ],
+        "commands": []
+      },
+      {
+        "id": "minimax",
+        "name": "MiniMax",
+        "group": "modelos",
+        "kind": "Proveedor y agente",
+        "summary": "Modelos y servicios de IA con planes y rutas para agentes de programación.",
+        "prepare": [
+          "Cuenta MiniMax y un producto elegido",
+          "Identificar si usarás API estándar, plan o MiniMax Code"
+        ],
+        "steps": [
+          "Lee las opciones actuales de su plataforma y escoge una sola ruta.",
+          "Para otro agente, sigue su integración oficial sin mezclar claves ni endpoints de planes distintos.",
+          "Haz una tarea corta y confirma proveedor y consumo en ambos lados."
+        ],
+        "verify": "El agente usa MiniMax y el panel identifica la ruta de facturación prevista.",
+        "access": "La plataforma documenta integraciones con herramientas externas. Esa configuración no utiliza automáticamente la suscripción de Anthropic o ChatGPT.",
+        "cost": "API y planes pueden tener claves, cuotas y productos incluidos distintos. Consulta las condiciones actuales.",
+        "improve": [
+          "Guarda una copia de la configuración previa al cambiar de proveedor.",
+          "Revisa variables que puedan sobrescribir el ajuste.",
+          "Compara una tarea corta antes de adoptarlo para todo."
+        ],
+        "limits": [
+          "No copies ajustes de Claude Code directamente a Codex u otro cliente: sus formatos y APIs pueden diferir."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://platform.minimax.io/docs/m-plan/claude-code",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "MiniMax Code",
+          "minimax coding plan"
+        ],
+        "commands": []
+      },
+      {
+        "id": "glm",
+        "name": "GLM / Z.AI",
+        "group": "modelos",
+        "kind": "Proveedor y familia de modelos",
+        "summary": "GLM es una familia de modelos; Z.AI ofrece acceso y planes para utilizarlos desde aplicaciones y agentes.",
+        "prepare": [
+          "Cuenta y clave del producto correcto",
+          "Cliente compatible con la integración que vas a seguir"
+        ],
+        "steps": [
+          "Abre el inicio rápido y distingue la API estándar del Coding Plan.",
+          "Configura el modelo y endpoint de esa ruta en el cliente elegido.",
+          "Ejecuta una prueba mínima y comprueba la cuota o el cobro en la plataforma."
+        ],
+        "verify": "La respuesta y el panel corresponden al modelo y producto que elegiste.",
+        "access": "Una clave o plan para programación no equivale necesariamente a acceso general para cualquier aplicación.",
+        "cost": "Consulta modelo, cuota, región y restricciones del plan; no se fija un precio en esta guía.",
+        "improve": [
+          "Usa la integración oficial específica de tu agente.",
+          "Guarda la configuración anterior para revertir.",
+          "Comprueba herramientas y salida estructurada si tu flujo las necesita."
+        ],
+        "limits": [
+          "El nombre GLM no demuestra que una herramienta tenga una integración nativa con tu sesión."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.z.ai/guides/overview/quick-start",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "ZAI",
+          "Z.AI",
+          "GLM Coding Plan"
+        ],
+        "commands": []
+      },
+      {
+        "id": "grok-api",
+        "name": "Grok: API de modelos",
+        "group": "modelos",
+        "kind": "Proveedor de modelos",
+        "summary": "Acceso programático a modelos de xAI; se diferencia de Grok Bot y de las interfaces de chat.",
+        "prepare": [
+          "Aplicación compatible y cuenta de API",
+          "Modelo y presupuesto de prueba"
+        ],
+        "steps": [
+          "Abre la guía API actual y elige un modelo y capacidades admitidos.",
+          "Configura la credencial por la ruta del cliente y conserva el secreto fuera del código.",
+          "Haz una solicitud pequeña y comprueba uso y resultado."
+        ],
+        "verify": "La aplicación usa la API prevista y puedes consultar su consumo.",
+        "access": "Planes, créditos y métodos de acceso pueden vincularse bajo condiciones concretas; verifica tu cuenta y no los presupongas.",
+        "cost": "Consulta la tarifa de la API y las condiciones del plan que la habilita.",
+        "improve": [
+          "Separa generación, búsqueda y otras capacidades al medir costes.",
+          "Prueba el soporte de herramientas antes de tareas autónomas.",
+          "Mantén un límite de trabajo por ejecución."
+        ],
+        "limits": [
+          "Una conversación en Grok o una sesión de Bot no prueba que tu aplicación tenga acceso de API."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.x.ai/docs/overview",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "xAI",
+          "Grok"
+        ],
+        "commands": []
+      },
+      {
+        "id": "hermes",
+        "name": "Hermes Agent",
+        "group": "personales",
+        "kind": "Agente personal extensible",
+        "summary": "Un agente de NousResearch con herramientas, skills y formas de acceso a proveedores.",
+        "prepare": [
+          "Requisitos del instalador oficial y entorno persistente si lo necesitas",
+          "Proveedor de IA elegido"
+        ],
+        "steps": [
+          "Sigue el inicio rápido del repositorio NousResearch/hermes-agent.",
+          "Configura proveedor y prueba una conversación sin conectar todavía canales personales.",
+          "Dale una tarea con entrada, salida y condición de parada; revisa el resultado y el uso."
+        ],
+        "verify": "Puedes repetir una tarea pequeña y localizar su salida y configuración.",
+        "access": "Las herramientas y canales son conexiones adicionales. Que un proveedor aparezca en el menú no acredita que tu plan lo cubra.",
+        "cost": "Revisa inferencia, servidor y servicios conectados por separado.",
+        "improve": [
+          "Convierte una rutina probada en una skill pequeña.",
+          "Añade un canal cada vez y verifica su destinatario.",
+          "Conserva copias de configuración y estado antes de actualizar."
+        ],
+        "limits": [
+          "Una interfaz comunitaria llamada Hermes Desktop no es el mismo producto ni demuestra afiliación oficial."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://github.com/NousResearch/hermes-agent",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "hermes-agent"
+        ],
+        "aliases": [
+          "hermes agent"
+        ],
+        "commands": []
+      },
+      {
+        "id": "devin",
+        "name": "Devin",
+        "group": "personales",
+        "kind": "Agente de desarrollo alojado",
+        "summary": "Delega tareas de ingeniería con un entorno de trabajo y revisión de resultados.",
+        "prepare": [
+          "Cuenta Devin y acceso autorizado al repositorio",
+          "Una tarea pequeña con criterios de aceptación"
+        ],
+        "steps": [
+          "Configura un repositorio y su entorno según el onboarding oficial.",
+          "Pide una corrección con instrucciones de instalación y pruebas del proyecto.",
+          "Revisa la sesión, evidencia y propuesta de cambio antes de integrarla."
+        ],
+        "verify": "La propuesta puede revisarse en código y reproduce los criterios solicitados.",
+        "access": "Devin es un servicio propio; una suscripción a otro agente no establece acceso.",
+        "cost": "Consulta unidades, límites y plan vigentes; el alcance y duración afectan al trabajo consumido.",
+        "improve": [
+          "Añade conocimiento útil del repositorio.",
+          "Divide tareas por resultados verificables.",
+          "Define qué debe entregar cuando encuentre un bloqueo."
+        ],
+        "limits": [
+          "Un resultado redactado no sustituye las pruebas del proyecto ni una revisión del cambio."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.devin.ai/get-started/devin-intro",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "muse",
+        "name": "Muse de Meta",
+        "group": "personales",
+        "kind": "Agente personal alojado",
+        "summary": "El agente personal de Meta para tareas y servicios conectados, accesible mediante sus interfaces oficiales.",
+        "prepare": [
+          "Cuenta y disponibilidad del servicio en tu región",
+          "Una tarea de prueba sin datos sensibles"
+        ],
+        "steps": [
+          "Accede a muse.ai y revisa el producto, disponibilidad y cuenta.",
+          "Define una tarea pequeña y el momento en que quieres revisar el resultado.",
+          "Conecta solo el servicio necesario y comprueba el registro de acciones antes de ampliar el uso."
+        ],
+        "verify": "Puedes ver qué hizo el agente, qué queda pendiente y qué acción solicita tu aprobación.",
+        "access": "Muse utiliza su propio servicio y computadora cloud. Revisa disponibilidad, cuenta y conexiones en sus interfaces oficiales.",
+        "cost": "Comprueba el plan y sus límites actuales. No se presupone incluido en otra suscripción de IA.",
+        "improve": [
+          "Especifica entrada, resultado y regla de parada.",
+          "Revisa las cuentas conectadas y los accesos que ya no uses.",
+          "Empieza con borradores y amplía el alcance tras comprobar el resultado."
+        ],
+        "limits": [
+          "No confundir con repositorios de terceros llamados Muse Spark, ni asumir que controla todas las apps del teléfono."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://muse.ai/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "Muse AI",
+          "Muse bot",
+          "Muse Meta"
+        ],
+        "commands": []
+      },
+      {
+        "id": "grok-bot",
+        "name": "Grok Bot",
+        "group": "personales",
+        "kind": "Agente personal alojado",
+        "summary": "Agentes con una computadora cloud para realizar tareas en servicios y aplicaciones.",
+        "prepare": [
+          "Cuenta y plan elegibles según la documentación actual",
+          "Una tarea breve y un servicio de prueba"
+        ],
+        "steps": [
+          "Accede desde la página oficial de Grok Bot y comprueba tu plan.",
+          "Crea un Bot con un objetivo acotado y configura una conexión necesaria.",
+          "Revisa su trabajo, el registro y el uso antes de programar una rutina."
+        ],
+        "verify": "La tarea deja una salida comprobable y el consumo aparece en la cuenta correcta.",
+        "access": "La elegibilidad y facturación pueden depender de The X Subscription o cuentas Cursor heredadas; sigue la FAQ actual.",
+        "cost": "Hay límites semanales y posibles consumos adicionales según cuenta. No se conserva el precio de publicaciones sociales.",
+        "improve": [
+          "Sustituye sondeos innecesarios por eventos cuando el servicio lo permita.",
+          "Da una condición de parada y un formato de entrega.",
+          "Revisa consumo por Bot antes de ampliar tareas recurrentes."
+        ],
+        "limits": [
+          "Los Bots de una cuenta pueden compartir su computadora cloud; revisa esa frontera al conectar cuentas."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.x.ai/grok-bot/faq",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "GrokBot"
+        ],
+        "commands": []
+      },
+      {
+        "id": "openclaw",
+        "name": "OpenClaw",
+        "group": "personales",
+        "kind": "Agente personal autoalojable",
+        "summary": "Un agente configurable con canales, herramientas y proveedores para trabajo personal.",
+        "prepare": [
+          "Entorno admitido por la versión actual",
+          "Proveedor y espacio de prueba"
+        ],
+        "steps": [
+          "Sigue el onboarding oficial con una instalación de prueba.",
+          "Elige proveedor y revisa configuración y permisos antes de conectar canales.",
+          "Ejecuta una tarea acotada y verifica el destinatario y la salida."
+        ],
+        "verify": "Puedes rastrear una tarea y detenerla sin depender de una sesión de chat.",
+        "access": "Autoalojar el agente no implica inferencia local. Cuenta del proveedor y canales se configuran por separado.",
+        "cost": "Modelo, servidor, mensajería y otros servicios pueden cobrar por separado.",
+        "improve": [
+          "Conecta un canal cada vez.",
+          "Versiona configuración sin secretos.",
+          "Prueba actualizaciones con copia de estado y ruta de reversión."
+        ],
+        "limits": [
+          "Un agente persistente necesita un equipo o servicio operativo; cerrar tu PC puede detener un despliegue local."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.openclaw.ai/start/getting-started",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "openclaw"
+        ],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "ollama",
+        "name": "Ollama",
+        "group": "local",
+        "kind": "Motor y acceso a modelos",
+        "summary": "Descarga y ejecuta modelos locales y ofrece conexiones con aplicaciones; también puede ofrecer modelos cloud.",
+        "prepare": [
+          "Sistema admitido, disco y memoria para la variante elegida",
+          "Un modelo pequeño compatible con tu tarea"
+        ],
+        "steps": [
+          "Descarga Ollama desde su fuente oficial.",
+          "Elige explícitamente local o cloud y consulta el tamaño del modelo antes de descargar.",
+          "Prueba una pregunta corta y comprueba qué modelo y servidor está utilizando tu aplicación."
+        ],
+        "verify": "Identificas el modelo cargado y puedes distinguir una ejecución local de una cloud.",
+        "access": "Las integraciones con agentes dependen de la superficie y versión. No todas las funciones de una app cambian de proveedor al conectarla.",
+        "cost": "Los modelos locales consumen equipo y energía; la ruta cloud tiene sus propias condiciones.",
+        "improve": [
+          "Empieza con una variante pequeña y mide memoria.",
+          "Conecta una sola aplicación antes de abrir acceso remoto.",
+          "Revisa contexto y concurrencia al aumentar la carga."
+        ],
+        "limits": [
+          "Instalar Ollama no garantiza que cualquier modelo quepa ni que todo tu flujo sea offline."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.ollama.com/quickstart",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "ollama"
+        ],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "vllm",
+        "name": "vLLM",
+        "group": "local",
+        "kind": "Servidor de inferencia",
+        "summary": "Sirve modelos para aplicaciones y varios usuarios; requiere más preparación que un chat de escritorio.",
+        "prepare": [
+          "Hardware y sistema compatibles con el backend elegido",
+          "Pesos, licencia y memoria del modelo"
+        ],
+        "steps": [
+          "Consulta la matriz de instalación para tu CPU, GPU u otro acelerador.",
+          "Prepara un entorno aislado y sigue el quickstart con un modelo admitido.",
+          "Prueba una solicitud y después mide memoria y latencia con una pequeña concurrencia."
+        ],
+        "verify": "El servidor responde y conoces el modelo, uso de memoria y límite probado.",
+        "access": "Es un motor, no una suscripción de Claude o Codex. Un cliente compatible debe apuntar a su servidor.",
+        "cost": "Sin tarifa de un proveedor por token en tu motor propio; sí hay equipo, energía, almacenamiento o alquiler de GPU.",
+        "improve": [
+          "Mide lotes y concurrencia antes de escalar.",
+          "Controla acceso y límites del servidor.",
+          "Conserva la versión del motor y de los pesos de cada evaluación."
+        ],
+        "limits": [
+          "Una API compatible no garantiza todas las funciones o esquemas que necesita un agente."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.vllm.ai/en/latest/getting_started/quickstart/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "vllm"
+        ],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "llamacpp",
+        "name": "llama.cpp",
+        "group": "local",
+        "kind": "Motor de inferencia",
+        "summary": "Ejecuta modelos en distintos equipos, incluidos formatos cuantizados como GGUF.",
+        "prepare": [
+          "Binario o compilación para tu sistema",
+          "Modelo y cuantización compatibles con la memoria disponible"
+        ],
+        "steps": [
+          "Elige el paquete o compilación oficial para tu plataforma.",
+          "Selecciona un modelo pequeño y lee su licencia y requisitos.",
+          "Prueba la CLI o servidor documentado y registra la variante y memoria utilizada."
+        ],
+        "verify": "La respuesta se produce con el archivo de modelo elegido y puedes repetir la ejecución.",
+        "access": "No incluye una cuenta de IA comercial. Puede ofrecer un servidor para clientes compatibles.",
+        "cost": "Equipo, disco y energía; el modelo tiene su propia licencia y posibles condiciones comerciales.",
+        "improve": [
+          "Compara cuantizaciones con la misma tarea.",
+          "Mide contexto y distribución CPU/GPU.",
+          "Usa las instrucciones de tu versión: los nombres de binarios y comandos han cambiado."
+        ],
+        "limits": [
+          "No todos los GGUF incluyen las mismas capacidades ni caben con el mismo contexto."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://github.com/ggml-org/llama.cpp",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "llama-cpp"
+        ],
+        "aliases": [
+          "llama.cpp",
+          "llama cpp"
+        ],
+        "commands": [
+          {
+            "title": "Ejemplo oficial con descarga de modelo",
+            "text": "llama cli -hf ggml-org/Qwen3.5-0.8B-GGUF",
+            "where": "Terminal tras preparar la versión que ofrece el comando llama",
+            "effect": "Descarga pesos y ejecuta un modelo. Comprueba disco, memoria y licencia antes de comenzar.",
+            "source": "https://github.com/ggml-org/llama.cpp"
+          }
+        ]
+      },
+      {
+        "id": "lmstudio",
+        "name": "LM Studio",
+        "group": "local",
+        "kind": "Aplicación para modelos locales",
+        "summary": "Una interfaz para probar modelos y, según configuración, servirlos a otras aplicaciones.",
+        "prepare": [
+          "Sistema y hardware admitidos",
+          "Espacio para un modelo pequeño"
+        ],
+        "steps": [
+          "Instala la aplicación desde lmstudio.ai.",
+          "Elige una variante adecuada a tu memoria y abre un chat de prueba.",
+          "Si necesitas integrar una app, activa la función de servidor siguiendo su documentación y prueba una petición."
+        ],
+        "verify": "Puedes identificar el modelo cargado y obtener una respuesta desde la interfaz elegida.",
+        "access": "La aplicación, los pesos y cualquier integración con un agente se revisan por separado.",
+        "cost": "Consulta las condiciones actuales del producto y las licencias de los pesos; local mantiene costes de equipo.",
+        "improve": [
+          "Guarda la configuración usada en cada evaluación.",
+          "Mide memoria antes de ampliar contexto.",
+          "Activa el servidor solo cuando una aplicación lo necesite."
+        ],
+        "limits": [
+          "Descargar un modelo no prueba compatibilidad con todas las herramientas de un agente."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://lmstudio.ai/docs/app/basics",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "LMStudio"
+        ],
+        "commands": []
+      },
+      {
+        "id": "openwebui",
+        "name": "Open WebUI",
+        "group": "local",
+        "kind": "Interfaz de chat autoalojable",
+        "summary": "Una interfaz que conecta con motores como Ollama o proveedores compatibles; no es por sí misma el modelo.",
+        "prepare": [
+          "Entorno de instalación admitido",
+          "Un motor local o proveedor ya funcional"
+        ],
+        "steps": [
+          "Elige una ruta oficial de instalación y una carpeta de datos persistentes.",
+          "Conecta un solo proveedor y crea un usuario de prueba.",
+          "Haz un chat corto y verifica qué servidor recibe la solicitud."
+        ],
+        "verify": "La interfaz muestra respuestas del proveedor esperado y conserva el estado que necesitas.",
+        "access": "La conexión puede ser local o remota. Una interfaz en tu PC no acredita que el modelo también sea local.",
+        "cost": "Servidor, inferencia y condiciones de licencia se consultan por separado.",
+        "improve": [
+          "Prueba usuarios y permisos antes de compartir.",
+          "Guarda copias de datos antes de actualizar.",
+          "Añade documentos o herramientas solo después de verificar el chat básico."
+        ],
+        "limits": [
+          "Revisa la licencia actual y las condiciones de uso de marca si vas a redistribuir el producto."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.openwebui.com/getting-started/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "OpenWebUI"
+        ],
+        "commands": []
+      },
+      {
+        "id": "atajos",
+        "name": "Atajos de Apple",
+        "group": "movil",
+        "kind": "Automatización iOS",
+        "summary": "Crea acciones y automatizaciones con las capacidades que iOS y cada aplicación exponen a Atajos.",
+        "prepare": [
+          "iPhone o iPad con Atajos",
+          "Una acción permitida por la app que quieres utilizar"
+        ],
+        "steps": [
+          "Crea un atajo manual con una entrada sencilla, como un texto.",
+          "Añade una acción para mostrar o guardar ese texto y ejecútalo tú mismo.",
+          "Solo después añade un disparador de automatización y revisa si exige confirmación."
+        ],
+        "verify": "La acción produce el resultado y sabes cuándo requiere intervención.",
+        "access": "La automatización básica no necesita un modelo. Añadir una API de IA requiere una ruta y cuenta propias.",
+        "cost": "Los servicios o apps llamados pueden tener suscripciones; consulta sus condiciones.",
+        "improve": [
+          "Explica entrada, acción y salida antes de pedir a una IA que lo diseñe.",
+          "Prueba con datos ficticios.",
+          "Separa las acciones que preparan contenido de las que lo envían."
+        ],
+        "limits": [
+          "No equivale a permitir clics ilimitados en cualquier app de iOS ni ejecución permanente en segundo plano."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://support.apple.com/en-gb/guide/shortcuts/apdfbdbd7123/ios",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "iOS",
+          "iPhone",
+          "Shortcuts",
+          "Apple Shortcuts"
+        ],
+        "commands": []
+      },
+      {
+        "id": "tasker",
+        "name": "Tasker",
+        "group": "movil",
+        "kind": "Automatización Android",
+        "summary": "Construye perfiles y tareas con disparadores, condiciones y acciones en Android.",
+        "prepare": [
+          "Teléfono Android y aplicación oficial",
+          "Permisos necesarios para una acción concreta"
+        ],
+        "steps": [
+          "Instala desde la distribución oficial y crea una tarea manual de prueba.",
+          "Usa un evento sencillo para mostrar un aviso, con una condición que evite repeticiones.",
+          "Prueba con pantalla apagada y revisa el ahorro de batería antes de confiar en el disparador."
+        ],
+        "verify": "La tarea se ejecuta una vez bajo la condición elegida y puedes detenerla.",
+        "access": "No requiere IA para las reglas básicas. Plugins y llamadas a IA son piezas adicionales.",
+        "cost": "Revisa licencia de la app, plugins y APIs opcionales.",
+        "improve": [
+          "Pon nombre a perfiles y documenta cómo desactivarlos.",
+          "Evita disparadores que generen bucles.",
+          "Exporta una copia antes de cambiar un flujo importante."
+        ],
+        "limits": [
+          "Ciertas acciones dependen de la versión de Android, permisos especiales o del fabricante."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://tasker.joaoapps.com/userguide/en/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "Android Tasker"
+        ],
+        "commands": []
+      },
+      {
+        "id": "macrodroid",
+        "name": "MacroDroid",
+        "group": "movil",
+        "kind": "Automatización Android",
+        "summary": "Crea macros visuales mediante disparadores, acciones y restricciones, sin escribir código.",
+        "prepare": [
+          "Android y aplicación oficial",
+          "Un comportamiento que puedas observar y desactivar"
+        ],
+        "steps": [
+          "Crea una macro con un disparador manual.",
+          "Añade un aviso y una restricción sencilla antes de controlar otras apps.",
+          "Prueba el evento real y revisa el registro para detectar repeticiones o fallos."
+        ],
+        "verify": "La macro produce un aviso bajo la condición prevista y no vuelve a dispararse en bucle.",
+        "access": "Las macros básicas son reglas; integrar un modelo es otra configuración.",
+        "cost": "Comprueba diferencias entre versión gratuita, planes y servicios opcionales.",
+        "improve": [
+          "Empieza con una plantilla entendida, no con un paquete completo.",
+          "Nombra las restricciones y la forma de detener la macro.",
+          "Revisa permisos y batería cuando no se ejecute en segundo plano."
+        ],
+        "limits": [
+          "Android y las apps deciden qué acciones están disponibles; no todas las plantillas funcionan igual en cada teléfono."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://macrodroid.com/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "Macro Droid"
+        ],
+        "commands": []
+      },
+      {
+        "id": "termux",
+        "name": "Termux",
+        "group": "movil",
+        "kind": "Terminal Android",
+        "summary": "Un entorno de terminal y paquetes en Android para tareas de desarrollo y automatización.",
+        "prepare": [
+          "Android compatible",
+          "La distribución y repositorios indicados por el proyecto"
+        ],
+        "steps": [
+          "Lee las fuentes de instalación y evita mezclar builds y complementos incompatibles.",
+          "Instala desde una fuente admitida y prueba un comando sencillo sobre una carpeta de prueba.",
+          "Para conectarte a un equipo, configura un cliente SSH y prueba una sesión controlada."
+        ],
+        "verify": "Puedes trabajar en la carpeta prevista y cerrar la conexión sin alterar otros datos.",
+        "access": "No incluye un modelo de IA ni control universal de otras apps. Un agente remoto se ejecuta en el equipo al que conectas.",
+        "cost": "Aplicación y paquetes según sus licencias; servidor, datos móviles e inferencia son independientes.",
+        "improve": [
+          "Conserva scripts pequeños con instrucciones de uso.",
+          "Usa almacenamiento de prueba antes de automatizar archivos.",
+          "Documenta qué proceso necesita seguir activo."
+        ],
+        "limits": [
+          "Las restricciones de Android en segundo plano pueden detener procesos; no es equivalente a una VPS."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://github.com/termux/termux-app",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "Android terminal"
+        ],
+        "commands": []
+      },
+      {
+        "id": "adb",
+        "name": "Android Debug Bridge (ADB)",
+        "group": "movil",
+        "kind": "Conexión y depuración Android",
+        "summary": "Comunica un ordenador con un emulador o dispositivo Android para depuración y herramientas autorizadas.",
+        "prepare": [
+          "Android SDK Platform-Tools",
+          "Dispositivo de prueba y depuración USB autorizada"
+        ],
+        "steps": [
+          "Instala Platform-Tools de Android y conecta el dispositivo.",
+          "Acepta la autorización en tu propio teléfono y lista los dispositivos conectados.",
+          "Comprueba el identificador antes de usar una herramienta que controle o instale aplicaciones."
+        ],
+        "verify": "Tu dispositivo aparece como autorizado y puedes distinguirlo de otros conectados.",
+        "access": "ADB no necesita modelo ni una suscripción de IA. Un agente que lo use necesita sus propios permisos y proveedor.",
+        "cost": "La herramienta no introduce una tarifa por llamada de IA; equipo y servicios externos siguen siendo aparte.",
+        "improve": [
+          "Selecciona el dispositivo explícitamente cuando haya varios.",
+          "Empieza por consultas antes de cambiar estado.",
+          "Revoca la depuración de equipos que ya no utilices."
+        ],
+        "limits": [
+          "Depuración USB da capacidades amplias; no habilites control de un teléfono ajeno ni publiques el puerto de depuración."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://developer.android.com/tools/adb",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "Android Debug Bridge",
+          "platform-tools"
+        ],
+        "commands": [
+          {
+            "title": "Listar dispositivos",
+            "text": "adb devices -l",
+            "where": "Terminal con Android Platform-Tools en PATH",
+            "effect": "Lista identificadores y estado de autorización de los dispositivos conectados.",
+            "source": "https://developer.android.com/tools/adb"
+          }
+        ]
+      },
+      {
+        "id": "scrcpy",
+        "name": "scrcpy",
+        "group": "movil",
+        "kind": "Pantalla y control Android",
+        "summary": "Muestra y controla la pantalla de Android desde un ordenador; es una herramienta de control, no un agente de IA.",
+        "prepare": [
+          "Ordenador y Android compatibles",
+          "Conexión y autorización descritas en su README"
+        ],
+        "steps": [
+          "Descarga scrcpy desde Genymobile y prepara la conexión oficial.",
+          "Abre una sesión con tu teléfono de prueba.",
+          "Mueve una pantalla y cierra la sesión para comprobar que el control termina."
+        ],
+        "verify": "Puedes ver y manejar el dispositivo autorizado y detener la sesión.",
+        "access": "Puede complementar pruebas guiadas por una persona o agente, pero no añade razonamiento ni proveedor de IA.",
+        "cost": "Software abierto; no necesita una API de modelo para compartir la pantalla.",
+        "improve": [
+          "Usa una conexión local antes de configurar acceso remoto.",
+          "Identifica el dispositivo si conectas varios.",
+          "Comprueba restricciones del fabricante antes de atribuir un fallo a la IA."
+        ],
+        "limits": [
+          "Es para Android; no se presenta como una solución de control de iPhone."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://github.com/Genymobile/scrcpy",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "dsh-android",
+        "name": "DSH Android",
+        "group": "movil",
+        "kind": "Plugin de terceros para Android",
+        "summary": "Conecta DeepSeek Harness con emuladores o Android por USB mediante ADB.",
+        "prepare": [
+          "DSH y Node compatibles con la versión del plugin",
+          "ADB y un emulador o teléfono con depuración autorizada"
+        ],
+        "steps": [
+          "Completa primero la conexión del dispositivo con ADB.",
+          "Instala el plugin ZSeven-W/dsh-android por su ruta documentada en un perfil de prueba.",
+          "Pide identificar la pantalla y recorrer una acción inocua; revisa la evidencia."
+        ],
+        "verify": "El plugin identifica el dispositivo correcto y la acción coincide con lo que ves.",
+        "access": "Requiere DSH y su proveedor de IA. Es un plugin comunitario, no una función nativa de todos los agentes.",
+        "cost": "Inferencia y posibles servicios externos aparte del código del plugin.",
+        "improve": [
+          "Prueba primero en emulador.",
+          "Define una regla de parada ante un estado inesperado.",
+          "Convierte recorridos probados en casos de QA."
+        ],
+        "limits": [
+          "Que se registren herramientas no demuestra que ADB o el dispositivo estén listos."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://github.com/ZSeven-W/dsh-android",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "dsh-android"
+        ],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "dsh-ios",
+        "name": "DSH iOS",
+        "group": "movil",
+        "kind": "Plugin de terceros para iOS",
+        "summary": "Permite trabajar con simulador de iOS y rutas documentadas para iPhone conectado por USB desde DSH.",
+        "prepare": [
+          "macOS con Xcode completo y runtime de simulador",
+          "DSH compatible; para teléfono real, preparación adicional del runner"
+        ],
+        "steps": [
+          "Prepara primero un simulador con Xcode.",
+          "Instala el plugin en un perfil DSH de prueba siguiendo su README.",
+          "Recorre una app de ejemplo y revisa capturas o estado; aborda el dispositivo real después."
+        ],
+        "verify": "Una acción en el simulador cambia el estado esperado y puedes repetirla.",
+        "access": "El plugin usa DSH y su proveedor de IA; el camino al iPhone real no elimina requisitos de Apple y del runner.",
+        "cost": "Equipo macOS, inferencia y posibles servicios aparte. Revisa requisitos de firma si la ruta elegida los pide.",
+        "improve": [
+          "Mantén un caso de prueba corto y repetible.",
+          "Distingue claramente simulador y teléfono real.",
+          "Guarda el resultado antes de añadir nuevas herramientas."
+        ],
+        "limits": [
+          "No se presenta como una instalación desde Windows ni como control libre de cualquier iPhone."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://github.com/ZSeven-W/dsh-ios",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "dsh-ios"
+        ],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "appium",
+        "name": "Appium",
+        "group": "movil",
+        "kind": "Automatización de pruebas",
+        "summary": "Automatiza pruebas de interfaces con drivers por plataforma; requiere preparación técnica.",
+        "prepare": [
+          "Servidor y cliente Appium",
+          "Driver de Android o iOS y sus dependencias"
+        ],
+        "steps": [
+          "Sigue el quickstart y elige una sola plataforma.",
+          "Instala el driver correspondiente y conecta un dispositivo o emulador de prueba.",
+          "Escribe un caso corto que abra una app, encuentre un elemento y compruebe su estado."
+        ],
+        "verify": "El mismo test puede ejecutarse otra vez con un resultado claro.",
+        "access": "La automatización básica no requiere un modelo. Una IA puede ayudarte a escribir el test, con su propia cuenta.",
+        "cost": "Código y drivers según licencia; granjas de dispositivos y proveedores cloud pueden cobrar.",
+        "improve": [
+          "Prefiere identificadores de accesibilidad estables.",
+          "Separa datos de prueba de cuentas personales.",
+          "Conserva logs para diagnosticar fallos intermitentes."
+        ],
+        "limits": [
+          "iOS tiene requisitos específicos de macOS, Xcode y firma según el driver y dispositivo."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://appium.io/docs/en/latest/intro/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "maestro",
+        "name": "Maestro",
+        "group": "movil",
+        "kind": "Automatización de pruebas",
+        "summary": "Describe recorridos de interfaz en flujos YAML para probar aplicaciones móviles y web.",
+        "prepare": [
+          "CLI y plataforma admitidas por el quickstart",
+          "App y emulador o dispositivo de prueba"
+        ],
+        "steps": [
+          "Sigue el quickstart oficial para tu plataforma.",
+          "Crea un flujo mínimo con apertura de la app y una comprobación visible.",
+          "Ejecútalo dos veces y revisa el punto exacto de cualquier fallo."
+        ],
+        "verify": "El flujo verifica el estado deseado de forma repetible.",
+        "access": "El runner de pruebas y la IA que redacta el YAML son piezas distintas.",
+        "cost": "Distingue ejecución local de servicios cloud y sus condiciones.",
+        "improve": [
+          "Usa textos o IDs estables para localizar elementos.",
+          "Evita depender de esperas arbitrarias.",
+          "Añade casos de error después del recorrido básico."
+        ],
+        "limits": [
+          "Una prueba de tu app no demuestra control general de todo el teléfono o de todas las apps instaladas."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.maestro.dev/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "github",
+        "name": "GitHub",
+        "group": "publicar",
+        "kind": "Código y colaboración",
+        "summary": "Guarda el historial y coordina cambios, revisiones e incidencias de un proyecto.",
+        "prepare": [
+          "Cuenta y repositorio",
+          "Git instalado si trabajas en tu equipo"
+        ],
+        "steps": [
+          "Crea o abre un repositorio de prueba y revisa su visibilidad.",
+          "Guarda un cambio pequeño en una rama.",
+          "Abre un pull request y revisa diff y comprobaciones antes de integrar."
+        ],
+        "verify": "El historial contiene el cambio y otra persona puede entender la propuesta.",
+        "access": "Un agente puede usar una integración o CLI autorizada. Esa conexión no incluye automáticamente alojamiento o inferencia.",
+        "cost": "Consulta límites de repositorios, almacenamiento y productos usados; Actions, Codespaces y otros servicios tienen condiciones propias.",
+        "improve": [
+          "Documenta arranque y pruebas en el README.",
+          "Mantén secretos fuera del historial.",
+          "Usa revisiones y ramas para cambios que necesiten evaluación."
+        ],
+        "limits": [
+          "Subir código no publica por sí solo una aplicación funcionando."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.github.com/en/get-started",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": [
+          {
+            "title": "Revisar cambios locales",
+            "text": "git status --short",
+            "where": "Terminal dentro de un repositorio Git",
+            "effect": "Muestra archivos cambiados; no crea commits ni hace push.",
+            "source": "https://git-scm.com/docs/git-status"
+          }
+        ]
+      },
+      {
+        "id": "github-pages",
+        "name": "GitHub Pages",
+        "group": "publicar",
+        "kind": "Alojamiento estático",
+        "summary": "Publica HTML, CSS y JavaScript desde un repositorio para consultarlos con un enlace.",
+        "prepare": [
+          "Un sitio estático construido",
+          "Repositorio y permisos de publicación"
+        ],
+        "steps": [
+          "Genera el sitio y verifica sus enlaces y rutas locales.",
+          "Configura Pages con la rama o workflow que corresponda.",
+          "Espera el despliegue y abre la URL pública sin sesión."
+        ],
+        "verify": "El enlace público carga la versión nueva y sus archivos sin descargar el repositorio.",
+        "access": "Se puede usar con código preparado por cualquier agente; el navegador ejecuta el frontend.",
+        "cost": "Disponibilidad y límites dependen de visibilidad y plan; dominio propio se gestiona aparte.",
+        "improve": [
+          "Versiona assets para evitar caché obsoleta.",
+          "Prueba enlaces bajo el prefijo del repositorio.",
+          "Mantén las claves y llamadas privadas en un backend separado."
+        ],
+        "limits": [
+          "Pages es estático: no ejecuta un servidor Python, Node persistente ni guarda secretos del backend."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "github-actions",
+        "name": "GitHub Actions",
+        "group": "publicar",
+        "kind": "Automatización CI/CD",
+        "summary": "Ejecuta pruebas, construcciones y despliegues a partir de eventos o calendarios del repositorio.",
+        "prepare": [
+          "Repositorio con un comando reproducible",
+          "Permisos y secretos de entorno necesarios"
+        ],
+        "steps": [
+          "Crea un workflow pequeño que ejecute una comprobación.",
+          "Pruébalo manualmente y revisa logs y artefactos.",
+          "Añade el evento o calendario cuando el resultado sea fiable."
+        ],
+        "verify": "Una ejecución queda vinculada a un commit y termina con un resultado comprobable.",
+        "access": "El runner ejecuta comandos; un paso con un modelo requiere su propio acceso de IA.",
+        "cost": "Revisa minutos, runners, almacenamiento y servicios llamados; un calendario no garantiza gratuidad.",
+        "improve": [
+          "Usa permisos mínimos del token del workflow.",
+          "Evita que dos ejecuciones modifiquen a la vez la misma salida.",
+          "Guarda evidencia y controla reintentos de acciones externas."
+        ],
+        "limits": [
+          "Un cron de repositorio no equivale a un servicio que permanece encendido todo el día."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.github.com/en/actions/get-started/understand-github-actions",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "vercel",
+        "name": "Vercel",
+        "group": "publicar",
+        "kind": "Despliegue de aplicaciones",
+        "summary": "Publica frontends y aplicaciones compatibles con servicios de despliegue y ejecución.",
+        "prepare": [
+          "Proyecto que construya correctamente",
+          "Cuenta, repositorio y variables del entorno"
+        ],
+        "steps": [
+          "Importa un proyecto de prueba y confirma framework y comando de build.",
+          "Configura variables en el entorno correcto y crea un preview.",
+          "Prueba una ruta real y sus llamadas al backend antes de promover a producción."
+        ],
+        "verify": "El preview realiza la tarea prevista y sus logs no muestran errores del recorrido.",
+        "access": "Un agente ayuda a construir o desplegar; Vercel y los proveedores de IA conservan sus cuentas.",
+        "cost": "Consulta plan, ejecución, tráfico y servicios de datos o IA; un preview no demuestra coste cero.",
+        "improve": [
+          "Separa preview y producción.",
+          "Prueba variables y conexiones reales, no solo el build.",
+          "Conserva una versión a la que puedas volver."
+        ],
+        "limits": [
+          "Comprueba las capacidades del runtime antes de mover procesos persistentes o tareas pesadas."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://vercel.com/docs",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "railway",
+        "name": "Railway",
+        "group": "publicar",
+        "kind": "Plataforma de despliegue",
+        "summary": "Despliega servicios de aplicación y conecta recursos como bases de datos.",
+        "prepare": [
+          "Proyecto o imagen con un arranque documentado",
+          "Cuenta y estimación de recursos"
+        ],
+        "steps": [
+          "Crea un proyecto de prueba desde la ruta oficial.",
+          "Configura variables, puerto y persistencia si la app guarda datos.",
+          "Revisa logs y prueba una petición real desde la URL publicada."
+        ],
+        "verify": "El servicio responde y los datos de prueba sobreviven al reinicio cuando deben persistir.",
+        "access": "La cuenta de despliegue y la de IA son independientes. Revisa quién puede acceder a cada entorno.",
+        "cost": "Recursos y planes se cobran según sus condiciones; revisa uso y límites antes de dejarlo activo.",
+        "improve": [
+          "Configura healthcheck y límites de recursos.",
+          "Separa entornos y servicios.",
+          "Incluye copias de datos y una ruta de recuperación."
+        ],
+        "limits": [
+          "Un despliegue correcto no configura por sí solo backups, permisos o límites de gasto."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.railway.com/quick-start",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "supabase",
+        "name": "Supabase",
+        "group": "datos",
+        "kind": "Backend y PostgreSQL",
+        "summary": "Reúne base de datos, autenticación, almacenamiento y otras capacidades para aplicaciones.",
+        "prepare": [
+          "Proyecto de prueba y esquema de datos pequeño",
+          "Decidir servicio alojado o entorno local"
+        ],
+        "steps": [
+          "Sigue un inicio rápido para tu framework y crea un entorno de prueba.",
+          "Configura acceso de usuarios y políticas por propietario; usa claves publicables en clientes y secretos solo en servidor.",
+          "Comprueba con dos usuarios que cada uno accede únicamente a sus datos."
+        ],
+        "verify": "El usuario A no puede leer o modificar los datos privados del usuario B.",
+        "access": "Una conexión MCP o agente ayuda a configurar, pero no sustituye permisos de base de datos y aplicación.",
+        "cost": "Revisa base, almacenamiento, tráfico y otras funciones del plan; autoalojar requiere operación propia.",
+        "improve": [
+          "Versiona los cambios de esquema.",
+          "Prueba políticas de acceso y restauración.",
+          "Distingue claves publicables de claves secretas o service_role."
+        ],
+        "limits": [
+          "No publiques claves secretas en el frontend ni habilites acceso general para resolver un error de permisos."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://supabase.com/docs/guides/getting-started",
+            "checked_at": "2026-11-15"
+          },
+          {
+            "title": "Claves y seguridad",
+            "url": "https://supabase.com/docs/guides/api/api-keys",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "supabase"
+        ],
+        "aliases": [],
+        "commands": [
+          {
+            "title": "Consultar comandos disponibles",
+            "text": "supabase --help",
+            "where": "Terminal con Supabase CLI instalado",
+            "effect": "Muestra ayuda de tu versión; no crea ni modifica una base de datos.",
+            "source": "https://supabase.com/docs/reference/cli/introduction"
+          }
+        ]
+      },
+      {
+        "id": "vps",
+        "name": "VPS: servidor virtual",
+        "group": "infra",
+        "kind": "Tipo de infraestructura",
+        "summary": "Un ordenador virtual remoto donde administras sistema, aplicaciones y datos.",
+        "prepare": [
+          "Tamaño, región y sistema necesarios",
+          "Presupuesto y una forma de recuperación del acceso"
+        ],
+        "steps": [
+          "Dimensiona una prueba y compara qué incluye el proveedor.",
+          "Prepara un usuario de administración y acceso SSH antes de instalar aplicaciones.",
+          "Despliega un servicio pequeño y verifica acceso, reinicio y copia de datos."
+        ],
+        "verify": "Puedes conectar, reiniciar el servicio y restaurar una copia de prueba.",
+        "access": "Una VPS ejecuta el software; no trae un modelo de IA ni permisos de tus servicios por defecto.",
+        "cost": "Alquiler, disco, tráfico, copias y posibles IP o GPU según proveedor.",
+        "improve": [
+          "Documenta actualizaciones y recuperación.",
+          "Usa contenedores cuando simplifiquen la operación.",
+          "Mide carga antes de aumentar el tamaño."
+        ],
+        "limits": [
+          "Una VPS barata puede ser insuficiente para un modelo grande; alojar n8n y servir un LLM tienen requisitos distintos."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.digitalocean.com/products/droplets/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "VPS",
+          "hosting",
+          "host"
+        ],
+        "commands": []
+      },
+      {
+        "id": "hostinger",
+        "name": "Hostinger y tipos de hosting",
+        "group": "infra",
+        "kind": "Proveedor de alojamiento",
+        "summary": "Ofrece productos de alojamiento; elige según la aplicación y el control que necesitas.",
+        "prepare": [
+          "Conocer si el sitio es estático, WordPress, Node u otro servicio",
+          "Plan y dominio adecuados al producto"
+        ],
+        "steps": [
+          "Compara el tipo de hosting con los requisitos de tu aplicación.",
+          "Publica primero en una URL de prueba y configura sus variables y rutas.",
+          "Verifica un recorrido completo y SSL antes de conectar el dominio definitivo."
+        ],
+        "verify": "La URL responde y la función principal funciona fuera de tu equipo.",
+        "access": "Hosting compartido, servicios administrados y VPS tienen capacidades diferentes. Tu agente no sustituye el plan.",
+        "cost": "Revisa renovación, dominio, recursos, copias y extras; no uses solo la promoción inicial para comparar.",
+        "improve": [
+          "Guarda una copia antes de publicar.",
+          "Documenta DNS y correo antes de mover un dominio.",
+          "Conserva una ruta para revertir el despliegue."
+        ],
+        "limits": [
+          "No todos los planes ejecutan Docker, procesos persistentes o cualquier backend."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://www.hostinger.com/tutorials/what-is-web-hosting",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "Host",
+          "Hosting Hostinger"
+        ],
+        "commands": []
+      },
+      {
+        "id": "docker",
+        "name": "Docker",
+        "group": "infra",
+        "kind": "Contenedores",
+        "summary": "Empaqueta aplicaciones y dependencias en contenedores para ejecutar un entorno reproducible.",
+        "prepare": [
+          "Docker Desktop o Engine compatible",
+          "Imagen o proyecto y espacio de datos de prueba"
+        ],
+        "steps": [
+          "Instala el producto que corresponda a tu sistema y comprueba que el motor responde.",
+          "Ejecuta el tutorial oficial en un entorno de prueba.",
+          "Identifica puertos, volúmenes y variables antes de usar una imagen de aplicación."
+        ],
+        "verify": "Sabes qué proceso está activo y dónde persisten sus datos.",
+        "access": "No requiere IA para contenedores básicos. Modelos, APIs y permisos de un agente siguen siendo independientes.",
+        "cost": "Consulta condiciones de Docker Desktop y servicios de registro; el hardware o servidor se paga aparte.",
+        "improve": [
+          "Fija versiones de imágenes y revisa actualizaciones.",
+          "Guarda datos en volúmenes y prueba copias.",
+          "Revisa puertos expuestos y límites de recursos."
+        ],
+        "limits": [
+          "Un contenedor no es una copia de seguridad ni demuestra aislamiento adecuado para cualquier código."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.docker.com/get-started/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "compose",
+        "name": "Docker Compose",
+        "group": "infra",
+        "kind": "Configuración de varios servicios",
+        "summary": "Describe servicios, redes y volúmenes de una aplicación en un archivo de configuración.",
+        "prepare": [
+          "Docker con Compose disponible",
+          "Archivo del proyecto y variables necesarias"
+        ],
+        "steps": [
+          "Lee cada servicio y distingue sus datos persistentes de su imagen.",
+          "Valida la configuración sin imprimir secretos.",
+          "Arranca un stack de prueba y verifica cada servicio y su persistencia."
+        ],
+        "verify": "El servicio responde y conserva los datos que deben sobrevivir a recreaciones.",
+        "access": "Compose coordina procesos; no incluye las cuentas de sus aplicaciones.",
+        "cost": "Software, imágenes, licencias y servidor tienen condiciones separadas.",
+        "improve": [
+          "Mantén un ejemplo de variables sin credenciales.",
+          "Documenta cómo detener y recuperar el stack.",
+          "Prueba copias antes de recrear servicios con datos."
+        ],
+        "limits": [
+          "Cambiar una etiqueta o recrear un contenedor puede requerir una migración de datos."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.docker.com/compose/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": [
+          {
+            "title": "Validar sin imprimir la configuración",
+            "text": "docker compose config --quiet",
+            "where": "Terminal, dentro de la carpeta que contiene el archivo Compose",
+            "effect": "Valida la configuración sin arrancar el stack ni volcar variables.",
+            "source": "https://docs.docker.com/reference/cli/docker/compose/config/"
+          }
+        ]
+      },
+      {
+        "id": "tailscale",
+        "name": "Tailscale",
+        "group": "operacion",
+        "kind": "Red privada y acceso remoto",
+        "summary": "Conecta dispositivos autorizados para acceder a servicios sin tratarlos como una web pública.",
+        "prepare": [
+          "Cuenta y clientes compatibles en ambos extremos",
+          "Un servicio de prueba y reglas de acceso"
+        ],
+        "steps": [
+          "Sigue el quickstart para unir dos dispositivos propios.",
+          "Comprueba identidad y conectividad entre ellos.",
+          "Permite acceso al servicio necesario y prueba desde el segundo dispositivo."
+        ],
+        "verify": "El dispositivo autorizado llega al servicio previsto con las reglas elegidas.",
+        "access": "La red privada no autentica por sí sola todas las aplicaciones. Puede complementar SSH o una interfaz de agente.",
+        "cost": "Consulta límites de dispositivos, usuarios y uso del plan actual.",
+        "improve": [
+          "Define quién puede acceder a qué servicio.",
+          "Retira equipos que ya no uses.",
+          "Documenta qué equipo debe seguir encendido."
+        ],
+        "limits": [
+          "Usar el móvil como cliente remoto no significa que la IA esté controlando el propio teléfono."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://tailscale.com/docs/how-to/quickstart",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "VPN privada"
+        ],
+        "commands": []
+      },
+      {
+        "id": "openssh",
+        "name": "OpenSSH",
+        "group": "operacion",
+        "kind": "Terminal y transferencia remotas",
+        "summary": "Permite acceder a una terminal remota y transferir archivos mediante protocolos SSH.",
+        "prepare": [
+          "Cliente y servidor SSH",
+          "Usuario autorizado e identidad del equipo remoto"
+        ],
+        "steps": [
+          "Comprueba cliente y servidor según tu sistema.",
+          "Conecta con un usuario de prueba y verifica la identidad del host.",
+          "Ejecuta una consulta de lectura, cierra la sesión y comprueba que puedes volver a entrar."
+        ],
+        "verify": "La sesión está en el equipo esperado y puedes abrir y cerrar el acceso de forma controlada.",
+        "access": "SSH no incluye un agente de IA. Puedes entrar desde un cliente móvil a un equipo donde ya funcione un agente.",
+        "cost": "Software según licencia; servidor y conectividad son costes independientes.",
+        "improve": [
+          "Usa claves con protección y conserva una recuperación de acceso.",
+          "Separa usuarios y permisos.",
+          "No confundas un túnel a un puerto con publicar todo el servidor."
+        ],
+        "limits": [
+          "Cambiar la huella de un host requiere comprobar su causa antes de aceptar una nueva identidad."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://www.openssh.org/manual.html",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [
+          "Open SSH",
+          "SSH",
+          "sshd"
+        ],
+        "commands": [
+          {
+            "title": "Consultar versión del cliente",
+            "text": "ssh -V",
+            "where": "Terminal con OpenSSH instalado",
+            "effect": "Muestra la versión del cliente; no abre una conexión.",
+            "source": "https://man.openbsd.org/ssh"
+          }
+        ]
+      },
+      {
+        "id": "cloudflare",
+        "name": "Cloudflare",
+        "group": "publicar",
+        "kind": "DNS, red y plataforma de aplicaciones",
+        "summary": "Ofrece DNS y productos de publicación, ejecución y conectividad; elige el producto antes de configurarlo.",
+        "prepare": [
+          "Dominio o proyecto de prueba",
+          "Identificar DNS, Workers, Pages o Tunnel según el caso"
+        ],
+        "steps": [
+          "Define qué problema quieres resolver sin activar productos innecesarios.",
+          "Configura una prueba y conserva los registros de DNS y correo existentes.",
+          "Verifica resolución y recorrido de usuario antes de mover tráfico real."
+        ],
+        "verify": "El servicio responde en el dominio correcto y el correo sigue funcionando si lo había.",
+        "access": "Un agente puede ayudar a gestionar la cuenta con permisos; cada producto mantiene su configuración.",
+        "cost": "Consulta límites y facturación del producto concreto, no de Cloudflare como un único plan.",
+        "improve": [
+          "Versiona configuración de aplicaciones cuando sea posible.",
+          "Comprueba variables y rutas en preview.",
+          "Documenta rollback de DNS y despliegue."
+        ],
+        "limits": [
+          "Tunnel, proxy DNS y runtime de Workers resuelven problemas distintos y no son sustitutos automáticos."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://developers.cloudflare.com/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "caddy",
+        "name": "Caddy",
+        "group": "infra",
+        "kind": "Servidor web y proxy inverso",
+        "summary": "Sirve contenido o dirige peticiones a aplicaciones con configuración de HTTPS según el despliegue.",
+        "prepare": [
+          "Un servidor y una aplicación local funcionando",
+          "Dominio y conectividad adecuados para la ruta HTTPS elegida"
+        ],
+        "steps": [
+          "Sigue el quickstart y configura un sitio de prueba.",
+          "Apunta el proxy al puerto interno correcto.",
+          "Verifica la URL externa, certificado y cabeceras del recorrido real."
+        ],
+        "verify": "La petición llega a la aplicación prevista por la URL que vas a compartir.",
+        "access": "No incluye IA ni sustituye la autenticación de la aplicación.",
+        "cost": "Software y licencias según distribución; servidor y dominio se gestionan aparte.",
+        "improve": [
+          "Mantén una configuración pequeña y versionada.",
+          "Prueba recargas sin cortar el servicio.",
+          "Distingue fallos del proxy de fallos de la aplicación."
+        ],
+        "limits": [
+          "HTTPS protege el transporte; no decide quién puede acceder a una herramienta privada."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://caddyserver.com/docs/quick-starts",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "coolify",
+        "name": "Coolify",
+        "group": "infra",
+        "kind": "Plataforma de despliegue autoalojable",
+        "summary": "Una interfaz para administrar despliegues en servidores que siguen necesitando operación.",
+        "prepare": [
+          "Servidor compatible y acceso administrativo",
+          "Repositorio o imagen de prueba"
+        ],
+        "steps": [
+          "Sigue la instalación oficial en un servidor de prueba.",
+          "Conecta un proyecto y configura variables y almacenamiento.",
+          "Publica una app pequeña y verifica despliegue y recuperación."
+        ],
+        "verify": "Puedes desplegar una versión y volver a una anterior sin perder datos.",
+        "access": "Autoalojar el panel no elimina las cuentas de Git, servidor o proveedores.",
+        "cost": "Servidor, almacenamiento, copias y posibles servicios de pago aparte.",
+        "improve": [
+          "Separa proyectos y entornos.",
+          "Documenta dónde están los datos.",
+          "Prueba restauración y actualizaciones antes de producción."
+        ],
+        "limits": [
+          "Tener un panel no convierte una VPS en un servicio totalmente administrado."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://coolify.io/docs/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "n8n-servicio",
+        "name": "n8n: flujos e integraciones",
+        "group": "datos",
+        "kind": "Automatización entre servicios",
+        "summary": "Conecta eventos y aplicaciones con flujos visuales; puede incorporar IA como una etapa.",
+        "prepare": [
+          "Cuenta cloud o instalación propia",
+          "Credenciales de un servicio de prueba"
+        ],
+        "steps": [
+          "Elige cloud o autoalojamiento según la documentación.",
+          "Crea un flujo manual que transforme un dato ficticio.",
+          "Añade un disparador real cuando hayas comprobado salida, errores y reintentos."
+        ],
+        "verify": "El evento produce una sola salida y un fallo queda visible sin duplicar la acción.",
+        "access": "IA opcional según el flujo; las conexiones con modelos y servicios tienen accesos propios.",
+        "cost": "Plan cloud o recursos del servidor, más APIs de modelos y servicios conectados.",
+        "improve": [
+          "Usa credenciales del sistema y entornos separados.",
+          "Limita reintentos e identifica acciones ya realizadas.",
+          "Documenta cómo desactivar el flujo."
+        ],
+        "limits": [
+          "Un flujo que envía mensajes o crea registros puede duplicarlos si se repite sin control."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://docs.n8n.io/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [
+          "n8n",
+          "n8n-mcp",
+          "n8n-skills"
+        ],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "uptime-kuma",
+        "name": "Uptime Kuma",
+        "group": "operacion",
+        "kind": "Monitorización de disponibilidad",
+        "summary": "Comprueba disponibilidad de servicios y puede avisar cuando una comprobación cambia de estado.",
+        "prepare": [
+          "Un lugar donde ejecutarlo",
+          "URL o servicio de prueba y canal de aviso"
+        ],
+        "steps": [
+          "Instala por la ruta del repositorio oficial.",
+          "Añade una comprobación sobre una URL de prueba.",
+          "Provoca una interrupción controlada y verifica recuperación y aviso."
+        ],
+        "verify": "El monitor distingue caída y recuperación con sus tiempos reales.",
+        "access": "No necesita un modelo para una comprobación básica. Los canales de aviso se configuran aparte.",
+        "cost": "Servidor y servicios de notificación según sus condiciones.",
+        "improve": [
+          "Comprueba una ruta que refleje el estado útil del servicio.",
+          "Ajusta intervalos y tolerancia a fallos.",
+          "Ejecuta el monitor fuera del mismo fallo que quieres detectar."
+        ],
+        "limits": [
+          "Un HTTP 200 no demuestra que un pago, una consulta o todo el recorrido de usuario funcione."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://github.com/louislam/uptime-kuma",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "restic",
+        "name": "Restic",
+        "group": "operacion",
+        "kind": "Copias de seguridad",
+        "summary": "Crea copias cifradas y snapshots en destinos compatibles para recuperar archivos.",
+        "prepare": [
+          "Origen, destino y espacio suficientes",
+          "Contraseña conservada de forma recuperable"
+        ],
+        "steps": [
+          "Sigue la guía con una carpeta ficticia.",
+          "Crea una copia y restaura a una carpeta distinta.",
+          "Compara el contenido antes de incluir datos importantes."
+        ],
+        "verify": "La restauración reproduce los archivos esperados y conoces cómo recuperar la contraseña.",
+        "access": "No requiere IA; un agente puede ayudar a preparar el procedimiento sin conocer tu secreto.",
+        "cost": "Software según licencia y almacenamiento o transferencia del destino.",
+        "improve": [
+          "Define retención después de medir crecimiento.",
+          "Prueba restauraciones periódicas.",
+          "Conserva copias independientes del equipo de origen."
+        ],
+        "limits": [
+          "Un log de copia completada no demuestra que hayas probado una restauración útil."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://restic.readthedocs.io/en/stable/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "neon",
+        "name": "Neon",
+        "group": "datos",
+        "kind": "PostgreSQL administrado",
+        "summary": "Servicio PostgreSQL para una aplicación que necesita datos persistentes y entornos de trabajo.",
+        "prepare": [
+          "Cuenta y proyecto de prueba",
+          "Aplicación con un cliente PostgreSQL"
+        ],
+        "steps": [
+          "Crea una base de prueba siguiendo el inicio rápido.",
+          "Guarda la conexión en las variables del backend.",
+          "Inserta y consulta datos ficticios desde la aplicación y verifica el entorno correcto."
+        ],
+        "verify": "La aplicación lee sus datos sin publicar la cadena de conexión.",
+        "access": "No es el modelo de IA ni un reemplazo automático de la autenticación de tu app.",
+        "cost": "Consulta almacenamiento, cómputo y condiciones de actividad y transferencia del plan.",
+        "improve": [
+          "Separa desarrollo y producción.",
+          "Versiona migraciones.",
+          "Comprueba pooling y copias para tu uso real."
+        ],
+        "limits": [
+          "Una cadena de conexión de servidor no se coloca en JavaScript público del navegador."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://neon.com/docs/introduction",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      },
+      {
+        "id": "redis",
+        "name": "Redis",
+        "group": "datos",
+        "kind": "Memoria de datos, caché y colas",
+        "summary": "Puede apoyar caché, colas y estados temporales de una aplicación; define primero el uso.",
+        "prepare": [
+          "Instancia local o servicio administrado",
+          "Cliente y datos ficticios"
+        ],
+        "steps": [
+          "Elige un caso pequeño, como caché con expiración.",
+          "Configura la conexión en el backend y verifica una escritura y lectura.",
+          "Comprueba qué ocurre al expirar la clave o reiniciar el servicio."
+        ],
+        "verify": "La aplicación se comporta como esperas sin depender de que una caché conserve datos para siempre.",
+        "access": "No incluye IA ni sustituye automáticamente una base de datos principal.",
+        "cost": "Consulta licencia y distribución, memoria, persistencia y plan del proveedor.",
+        "improve": [
+          "Define expiraciones y límites.",
+          "Mide memoria y política de expulsión.",
+          "Separa caché y datos que no puedes perder."
+        ],
+        "limits": [
+          "La durabilidad depende de la configuración; no asumas que todos los datos sobrevivirán a un fallo."
+        ],
+        "sources": [
+          {
+            "title": "Documentación oficial del proyecto o servicio",
+            "url": "https://redis.io/docs/latest/",
+            "checked_at": "2026-11-15"
+          }
+        ],
+        "repo_ids": [],
+        "aliases": [],
+        "commands": []
+      }
+    ],
+    "prompts": [
+      {
+        "id": "elegir-ruta",
+        "title": "Elegir una herramienta sin instalar de más",
+        "topic": "empezar",
+        "when": "Antes de elegir un repo o pagar un plan.",
+        "inputs": [
+          "Resultado que necesitas",
+          "Equipo y herramientas disponibles"
+        ],
+        "body": "Quiero conseguir [resultado concreto] a partir de [entrada]. Mi experiencia es [nivel], uso [sistema, RAM y GPU si los conozco] y ya tengo acceso a [agentes o planes].\nPropón hasta tres puntos de partida. Distingue cliente, modelo, API, servicios y ejecución local. Para cada opción explica una función que me ayude, un requisito que pueda bloquearme, posibles costes y una primera prueba observable.\nConsulta las fuentes oficiales actuales. No supongas que una suscripción incluye otra API. Si falta un dato decisivo, indícalo. Recomienda una opción para probar primero con razones y explica qué haría cambiar la elección.",
+        "expect": "Una lista corta con diferencias y una primera prueba, sin una pila de instalaciones.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "instalar-guiado",
+        "title": "Instalar con acompañamiento",
+        "topic": "empezar",
+        "when": "Cuando ya elegiste una herramienta.",
+        "inputs": [
+          "Herramienta y enlace oficial",
+          "Sistema y resultado de prueba"
+        ],
+        "body": "Ayúdame a empezar con [herramienta y URL oficial] en [sistema]. Quiero lograr [resultado pequeño]. Mi experiencia es [nivel].\nLee la instalación de la versión actual. Antes de dar un comando, confirma su origen, requisitos, carpeta y tipo de terminal. Separa descargar, instalar dependencias, autenticar, configurar modelos y arrancar.\nGuíame una acción cada vez. Explica qué modifica, si descarga archivos y cómo comprobarla. No pidas que pegue claves en la conversación. Si falla, usa el error sin secretos para diagnosticar ese paso; no repitas toda la instalación. Termina cuando la prueba produzca el resultado acordado.",
+        "expect": "Pasos adaptados al sistema con una comprobación por etapa.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "diagnosticar",
+        "title": "Resolver un error con evidencia",
+        "topic": "programar",
+        "when": "Cuando una instalación o función falla.",
+        "inputs": [
+          "Error sin claves ni datos personales",
+          "Último paso que funcionó"
+        ],
+        "body": "Estoy usando [herramienta y versión] en [sistema]. Quiero [resultado]. El último paso que funcionó fue [paso]. El error, sin secretos, es [mensaje].\nPrimero localiza la capa que falla: instalación, cuenta, proveedor, red, aplicación o datos. Propón las comprobaciones de lectura mínimas para distinguir dos o tres causas probables. Usa la documentación de esta versión.\nAplica un cambio cada vez y conserva cómo revertirlo. Verifica el recorrido original después de corregirlo. No borres datos ni reinstales todo para ocultar una causa sin demostrarla.",
+        "expect": "Una causa comprobada o incertidumbre concreta y el siguiente diagnóstico útil.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "instrucciones",
+        "title": "Crear instrucciones útiles del proyecto",
+        "topic": "programar",
+        "when": "Cuando el agente repite errores del mismo repositorio.",
+        "inputs": [
+          "Cliente utilizado",
+          "Comandos reales del proyecto"
+        ],
+        "body": "Revisa este proyecto y prepara instrucciones breves para [AGENTS.md / CLAUDE.md / formato documentado de mi agente]. Incluye propósito, carpetas relevantes, cómo arrancar, pruebas útiles y decisiones que deben conservarse.\nUsa comandos existentes y comprueba sus requisitos. No dupliques todo el README ni escribas preferencias genéricas que no aplican. Separa hechos comprobados de preguntas abiertas. Propón el texto y muestra dónde debe ir según el ámbito del cliente.\nVerifica el archivo resultante y señala cualquier instrucción que no pudiste comprobar. Convierte un procedimiento largo reutilizable en una propuesta de skill separada.",
+        "expect": "Un archivo breve y específico que otro colaborador pueda revisar.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "cambiar-proveedor",
+        "title": "Cambiar de modelo con una prueba y reversión",
+        "topic": "mejorar",
+        "when": "Antes de modificar la configuración de un cliente.",
+        "inputs": [
+          "Cliente, proveedor actual y destino",
+          "Una tarea pequeña repetible"
+        ],
+        "body": "Quiero probar [proveedor/modelo] en [cliente y versión], conservando una forma de volver a [configuración anterior]. Mi tarea de evaluación será [ejemplo y resultado esperado].\nConsulta la integración oficial de ambas partes. Distingue API estándar, coding plan, inicio de sesión y endpoint local. Comprueba qué formato de API, herramientas y permisos necesita mi cliente. No reutilices una clave o endpoint de otro plan sin documentación.\nPrepara el cambio en el ámbito más pequeño admitido, con copia de la configuración sin secretos. Haz la misma prueba antes y después y registra resultado, errores, consumo y latencia observados. No declares un ganador por un benchmark ajeno.",
+        "expect": "Un cambio acotado, una comparación repetible y una vuelta atrás clara.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "revisar-cambio",
+        "title": "Revisar un cambio antes de integrarlo",
+        "topic": "programar",
+        "when": "Antes de commit, merge o publicación.",
+        "inputs": [
+          "Cambio o diff",
+          "Comportamiento esperado"
+        ],
+        "body": "Revisa [cambio o diff] para comprobar [comportamiento esperado]. Lee el contexto necesario. Busca errores con un caso concreto que los reproduzca y explica su impacto.\nComprueba entradas vacías o extremas, permisos, errores de red y persistencia cuando apliquen. No conviertas preferencias de estilo en fallos funcionales. Ejecuta las comprobaciones relevantes y distingue lo probado de lo inferido.\nEntrega primero los problemas que impiden usar el cambio, con ubicación y propuesta de corrección. Si no encuentras problemas, indica el alcance de la revisión y qué sigue sin estar verificado.",
+        "expect": "Hallazgos concretos o una revisión con límites explícitos.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "ui-principiantes",
+        "title": "Revisar una interfaz para principiantes",
+        "topic": "programar",
+        "when": "Cuando una pantalla funciona pero cuesta entenderla.",
+        "inputs": [
+          "Pantalla y tarea principal",
+          "Perfil de la persona que la usará"
+        ],
+        "body": "Revisa [pantalla] para una persona [experiencia] que quiere [tarea]. Completa el recorrido con datos de prueba y observa dónde necesita adivinar.\nComprueba etiquetas, orden de lectura, teclado, móvil, texto largo, errores y estado sin resultados. Mantén la identidad del producto. Propón las mejoras que reduzcan dudas y pasos, con el motivo de cada una.\nImplementa los cambios necesarios y verifica el mismo recorrido en escritorio y móvil. Guarda una captura del resultado. No añadas animaciones o pantallas que no ayuden a completar la tarea.",
+        "expect": "Un recorrido claro con estados comprobados y evidencia visual.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "presupuesto",
+        "title": "Entender acceso y coste antes de ejecutar",
+        "topic": "empezar",
+        "when": "Antes de conectar una API o dejar una tarea larga.",
+        "inputs": [
+          "Herramienta y ruta de acceso",
+          "Duración y volumen aproximados"
+        ],
+        "body": "Quiero usar [herramienta] mediante [suscripción / API / modelo local] para [volumen y duración aproximados].\nIdentifica por separado cliente, modelo, alojamiento, almacenamiento y servicios externos. Consulta las condiciones oficiales de mi ruta; no uses una publicación social como tarifa actual. Indica unidades de cobro, límites y datos que faltan para estimar.\nPropón una prueba pequeña y un límite de trabajo. Después usa el consumo observado para estimar un rango con sus supuestos. Distingue estimación de factura y no compres créditos ni actives recargas por mí.",
+        "expect": "Un mapa de costes y una prueba medible, sin promesas de gratuidad.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "contexto",
+        "title": "Reducir contexto sin perder decisiones",
+        "topic": "mejorar",
+        "when": "Cuando las sesiones se alargan o repiten lecturas.",
+        "inputs": [
+          "Objetivo activo",
+          "Decisiones y pruebas que deben conservarse"
+        ],
+        "body": "Analiza el contexto de esta tarea y prepara un relevo breve que incluya objetivo, decisiones vigentes, archivos modificados, pruebas realizadas y próximo paso concreto.\nConserva incertidumbres y trabajo pendiente. Elimina repeticiones y material que no afecta a la decisión siguiente. Propón qué instrucciones estables deben ir en el proyecto y qué procedimiento merece una skill.\nNo prometas un porcentaje de ahorro. Si medimos consumo, compara tareas equivalentes. No confundas resumir la conversación con borrar datos del proyecto o detener servicios.",
+        "expect": "Un relevo que permita continuar sin reconstruir todo el historial.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "skills-mcp",
+        "title": "Añadir una skill o conexión con un propósito",
+        "topic": "mejorar",
+        "when": "Antes de instalar una colección de extensiones.",
+        "inputs": [
+          "Cliente y versión",
+          "Tarea que no puedes completar todavía"
+        ],
+        "body": "En [cliente y versión] necesito [capacidad]. Determina si basta una instrucción, una skill, un plugin, un MCP o un servicio externo. Explica la diferencia aplicada a esta tarea.\nComprueba repositorio oficial, compatibilidad y método de instalación. Instala o propón una sola pieza con el ámbito y permisos necesarios. No asumas que copiar un repositorio registra todas sus skills.\nVerifica que la capacidad aparece y resuelve una prueba pequeña. Documenta qué cuenta utiliza, qué datos recibe, costes y cómo retirar la conexión.",
+        "expect": "Una extensión justificada y una prueba de que aporta la capacidad necesaria.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "publicar",
+        "title": "Publicar una aplicación con verificación",
+        "topic": "operar",
+        "when": "Cuando el proyecto funciona localmente.",
+        "inputs": [
+          "Tipo de aplicación",
+          "Servicio y entorno de destino"
+        ],
+        "body": "Quiero publicar [proyecto] en [servicio]. Determina si es sitio estático, frontend con backend, API, proceso persistente o servicio con datos.\nComprueba build, variables, secretos, persistencia y límites del runtime. Prepara primero una URL de prueba y una vuelta atrás. Conserva dominio, DNS y datos existentes.\nVerifica desde el navegador el recorrido [tarea concreta], incluyendo backend y lectura de datos. Un build aprobado no basta. Publica según el alcance autorizado y comprueba la URL final y la versión desplegada.",
+        "expect": "Un enlace útil con el recorrido principal verificado y recuperación documentada.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "backup",
+        "title": "Probar que una copia se puede restaurar",
+        "topic": "operar",
+        "when": "Antes de una actualización o cambio con datos.",
+        "inputs": [
+          "Datos y servicio",
+          "Destino de una restauración aislada"
+        ],
+        "body": "Prepara un procedimiento de copia para [datos y servicio]. Identifica archivos, volúmenes, base de datos y configuración que deben recuperarse juntos.\nHaz la prueba con datos ficticios o una copia autorizada. Restaura en [entorno separado] y comprueba contenido y funcionamiento. No sobrescribas la única copia ni elimines el origen para demostrar la restauración.\nEntrega ubicación de copias sin secretos, retención propuesta, requisitos de acceso y pasos de recuperación. Distingue copia creada de restauración comprobada.",
+        "expect": "Una restauración observada y un procedimiento que otra persona pueda repetir.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "android",
+        "title": "Diseñar una automatización Android",
+        "topic": "movil",
+        "when": "Para elegir entre macros, ADB o un agente.",
+        "inputs": [
+          "Modelo y versión de Android",
+          "Disparador, acción y condición de parada"
+        ],
+        "body": "Quiero que mi Android [acción] cuando [disparador], salvo [restricciones]. Mi dispositivo y versión son [datos]. Quiero detenerlo mediante [método].\nDistingue reglas de MacroDroid/Tasker, control desde un ordenador con ADB/scrcpy y un agente que interpreta la pantalla. Elige la solución más simple que cubra la tarea y consulta sus límites en mi versión.\nEmpieza con una notificación de prueba y datos ficticios. Verifica permisos, segundo plano y batería con el evento real. Añade IA solo si hace falta interpretar contenido. Antes de enviar mensajes, pagar o borrar, deja una revisión explícita.",
+        "expect": "Un flujo con disparador, restricciones, prueba real y forma de detenerlo.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "iphone",
+        "title": "Diseñar un atajo de iPhone",
+        "topic": "movil",
+        "when": "Para automatizar una acción que iOS exponga.",
+        "inputs": [
+          "Versión de iOS y app",
+          "Entrada y resultado esperados"
+        ],
+        "body": "Quiero automatizar [tarea] en iPhone con [iOS y app]. La entrada es [dato] y el resultado será [salida].\nComprueba si Atajos o la app exponen las acciones necesarias y si el disparador requiere confirmación. No prometas control libre de toda la interfaz ni ejecución permanente en segundo plano.\nDiseña primero un atajo manual que muestre o guarde un dato ficticio. Verifica su resultado antes de añadir la automatización. Si requiere un ordenador, simulador o API externa, explica esos requisitos y costes por separado.",
+        "expect": "Un atajo viable o el límite concreto que impide esa automatización.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "agente-remoto",
+        "title": "Trabajar desde el teléfono en un agente remoto",
+        "topic": "movil",
+        "when": "Para continuar una tarea que corre en otro equipo.",
+        "inputs": [
+          "Teléfono y equipo donde corre el agente",
+          "Ruta de acceso remoto elegida"
+        ],
+        "body": "Quiero usar [agente] desde [Android o iPhone], pero el proyecto se ejecuta en [equipo o servidor]. Comprueba la ruta remota oficial del cliente o una sesión SSH mediante una red autorizada.\nExplica qué equipo debe permanecer encendido, dónde están los archivos, qué cuenta paga la IA y cómo se autentica cada extremo. No lo presentes como control de las apps del teléfono.\nPrueba una consulta de lectura en un proyecto ficticio, cierra y recupera la sesión y verifica la identidad del equipo. Documenta cómo desconectar y revocar el acceso.",
+        "expect": "Una sesión remota comprobada con sus dependencias y límites claros.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      },
+      {
+        "id": "comparar-modelos",
+        "title": "Evaluar modelos con tu trabajo real",
+        "topic": "mejorar",
+        "when": "Antes de cambiar por una promesa de rendimiento.",
+        "inputs": [
+          "Dos o tres candidatos",
+          "Una tarea y criterio de aceptación"
+        ],
+        "body": "Compara [candidatos] para [tarea concreta]. Usa la misma entrada, herramientas, restricciones y criterio de aceptación en todos. Registra modelo, versión, cliente y fecha.\nMide éxito de la tarea, errores, intervenciones, latencia y consumo observado. Separa el rendimiento del modelo del harness y del entorno. Si un candidato no puede usar una herramienta necesaria, indícalo.\nEntrega diferencias útiles para elegir, con límites de la prueba y fuentes. No extrapoles un caso a todos los proyectos ni conviertas precios promocionales o benchmarks ajenos en resultados propios.",
+        "expect": "Una comparación pequeña, reproducible y relevante para tu decisión.",
+        "authorship": "Plantilla original de Alexandría",
+        "checked_at": "2026-11-15"
+      }
+    ],
+    "paths": [
+      {
+        "id": "ruta-primer-agente",
+        "title": "Mi primer proyecto con un agente",
+        "section": "configurar",
+        "goal": "Pasar de una carpeta de prueba a un cambio que puedas revisar.",
+        "steps": [
+          {
+            "resource": "codex",
+            "text": "Si ya tienes acceso a Codex, comienza aquí; Claude Code o Antigravity son alternativas, no instalaciones obligatorias."
+          },
+          {
+            "resource": "github",
+            "text": "Guarda el cambio en una rama y revisa su diff antes de integrarlo."
+          }
+        ],
+        "verify": "Un cambio pequeño pasa su comprobación y sabes cómo volver atrás.",
+        "limit": "Elige un agente primero y añade extensiones cuando una tarea las justifique."
+      },
+      {
+        "id": "ruta-ia-local",
+        "title": "Probar IA local sin montar todo un servidor",
+        "section": "configurar",
+        "goal": "Identificar modelo, memoria y salida antes de añadir más piezas.",
+        "steps": [
+          {
+            "resource": "ollama",
+            "text": "Prueba primero un modelo pequeño en la herramienta; LM Studio es otra ruta de interfaz."
+          },
+          {
+            "resource": "openwebui",
+            "text": "Añade esta interfaz solo si necesitas sus funciones después de que el motor ya responda."
+          }
+        ],
+        "verify": "Conoces el modelo utilizado y distingues dónde se ejecuta cada etapa.",
+        "limit": "No se garantiza que toda la tarea sea offline; herramientas, documentos o búsquedas pueden usar servicios."
+      },
+      {
+        "id": "ruta-android",
+        "title": "Mi primera automatización Android",
+        "section": "configurar",
+        "goal": "Automatizar un evento sencillo con una regla fácil de detener.",
+        "steps": [
+          {
+            "resource": "macrodroid",
+            "text": "Crea una macro de aviso; Tasker es una alternativa cuando necesitas otra lógica."
+          },
+          {
+            "resource": "adb",
+            "text": "Consulta esta ruta solo si tu tarea necesita control desde un ordenador; no es requisito de toda macro."
+          }
+        ],
+        "verify": "El evento real produce una sola acción y puedes desactivar el flujo.",
+        "limit": "No añadas control por pantalla o IA cuando un disparador y una regla bastan."
+      },
+      {
+        "id": "ruta-iphone",
+        "title": "Mi primer atajo de iPhone",
+        "section": "configurar",
+        "goal": "Construir primero la acción manual y después el disparador.",
+        "steps": [
+          {
+            "resource": "atajos",
+            "text": "Comprueba que la app expone la acción y prueba con una entrada ficticia."
+          }
+        ],
+        "verify": "Puedes ejecutar el atajo y sabes cuándo pide confirmación.",
+        "limit": "DSH iOS y Appium son rutas técnicas distintas para pruebas, con requisitos de ordenador."
+      },
+      {
+        "id": "ruta-movil-remoto",
+        "title": "Programar desde Android o iPhone",
+        "section": "configurar",
+        "goal": "Manejar una sesión en el equipo donde ya funciona tu proyecto.",
+        "steps": [
+          {
+            "resource": "t3code",
+            "text": "Usa el cliente móvil y acceso remoto oficial después de autenticar un agente en el ordenador."
+          },
+          {
+            "resource": "openssh",
+            "text": "SSH es otra ruta de terminal; puede apoyarse en Tailscale si necesitas una red privada."
+          }
+        ],
+        "verify": "Recuperas la sesión y puedes identificar el equipo y la carpeta remotos.",
+        "limit": "Son rutas alternativas. Esto no automatiza la interfaz del propio teléfono."
+      },
+      {
+        "id": "ruta-web-estatica",
+        "title": "Publicar una web estática",
+        "section": "servicios",
+        "goal": "Compartir HTML, CSS y JavaScript con un enlace.",
+        "steps": [
+          {
+            "resource": "github",
+            "text": "Guarda los archivos construidos y comprueba enlaces bajo el prefijo del repositorio."
+          },
+          {
+            "resource": "github-pages",
+            "text": "Publica y espera el despliegue; prueba el enlace sin sesión."
+          }
+        ],
+        "verify": "El enlace público carga la nueva versión y sus assets.",
+        "limit": "Si necesitas secretos, datos privados o un servidor persistente, añade un backend adecuado."
+      },
+      {
+        "id": "ruta-web-datos",
+        "title": "Una aplicación web con usuarios y datos",
+        "section": "servicios",
+        "goal": "Separar la interfaz del almacenamiento y sus permisos.",
+        "steps": [
+          {
+            "resource": "supabase",
+            "text": "Prepara datos y acceso de dos usuarios ficticios en un entorno de prueba."
+          },
+          {
+            "resource": "vercel",
+            "text": "Publica un preview con las variables del entorno y prueba un recorrido que lea y escriba datos."
+          }
+        ],
+        "verify": "Cada usuario ve solo sus datos y el preview completa la tarea.",
+        "limit": "Estos servicios no se sustituyen: cumplen capas diferentes y tienen cuentas y límites propios."
+      },
+      {
+        "id": "ruta-servicio-propio",
+        "title": "Operar un servicio en tu servidor",
+        "section": "servicios",
+        "goal": "Poder desplegar, observar y recuperar una aplicación con datos.",
+        "steps": [
+          {
+            "resource": "vps",
+            "text": "Dimensiona una prueba y documenta acceso y recuperación."
+          },
+          {
+            "resource": "compose",
+            "text": "Revisa puertos, variables y volúmenes antes de arrancar el stack."
+          },
+          {
+            "resource": "restic",
+            "text": "Restaura una copia en una carpeta o entorno separado."
+          },
+          {
+            "resource": "uptime-kuma",
+            "text": "Prueba caída y recuperación desde un punto que siga operativo."
+          }
+        ],
+        "verify": "El servicio responde y una restauración reproduce sus datos de prueba.",
+        "limit": "Una VPS requiere mantenimiento continuo; si no quieres operarlo, compara una plataforma administrada."
+      }
+    ]
+  },
   "discovery": {
     "goals": [
       {

@@ -13,7 +13,8 @@
 
   const NAV = [
     ["inicio", "Inicio"], ["empezar", "Guíame"], ["explorar", "Buscar"], ["rutas", "Por objetivo"],
-    ["acceso", "Acceso y costes"], ["guias", "Guías"], ["salas", "Categorías"],
+    ["acceso", "Acceso y costes"], ["guias", "Guías"], ["configurar", "Configurar IA"],
+    ["prompts", "Prompts y comandos"], ["servicios", "Servicios y despliegue"], ["salas", "Categorías"],
     ["recetas", "Recetas"], ["comparar", "Comparar"], ["novedades", "Novedades"],
   ];
 
@@ -215,7 +216,7 @@
       ${catalog.discovery.editorial_review?`<p class="meta">${catalog.discovery.editorial_review.reviewed} fichas revisadas individualmente en fuentes de sus autores · ${esc(catalog.discovery.editorial_review.date)}. Ejemplos propuestos; instalaciones no ejecutadas.</p>`:""}
     </header>
     ${areas.length ? `<section class="section"><div class="command-row"><h2>Explora un área de trabajo</h2><a href="#/salas">Ver categorías y subcategorías</a></div>${quickAreas(areas.filter(area=>area.kind==="work"))}</section>
-    <section class="section"><h2>Configura tu asistente</h2><p>Primeros pasos, skills y conexiones para el cliente que utilizas.</p>${quickAreas(areas.filter(area=>area.kind==="tool"))}</section>` : ""}
+    <section class="section"><h2>Configura tu asistente</h2><p><a href="#/configurar">Guías de agentes, modelos, IA local y teléfonos</a> · <a href="#/prompts">Prompts y comandos</a> · <a href="#/servicios">Servicios y despliegue</a></p><p>Después, explora las colecciones de repos para ampliar el cliente que utilizas.</p>${quickAreas(areas.filter(area=>area.kind==="tool"))}</section>` : ""}
     <section class="section"><div class="command-row"><h2>Empieza por un resultado</h2><a href="#/rutas">Ver las ${catalog.discovery.goals.length} rutas</a></div>
       ${goalLinks(catalog.discovery.goals.slice(0, 8))}</section>
     <section class="section"><h2>O parte de lo que ya tienes</h2><p>Elige cómo quieres usar la IA y después filtra por tu objetivo.</p>
@@ -726,6 +727,7 @@
 
   function activeOf(parts) {
     const head = parts[0] || "inicio";
+    if (head === 'manual') return AlexandriaHandbook.sectionOf(catalog,parts[1]);
     if (head === "repo") return "explorar";
     if (["curso","guia","laboratorio"].includes(head)) return "guias";
     if (head === "receta") return "recetas";
@@ -735,6 +737,7 @@
 
   function titleOf(parts, params) {
     const head = parts[0] || "inicio";
+    if (head === 'manual') return AlexandriaHandbook.lookup(catalog,parts[1])?.name || AlexandriaHandbook.lookup(catalog,parts[1])?.title || 'Guía';
     if (head === "area") return areaById[parts[1]]?.title || "Categoría";
     if (head === "explorar") return topicById[params.get("topic")]?.title || areaById[params.get("area")]?.title || "Buscar";
     if (head === "repo" && repo(decodeURIComponent(parts[1] || ""))) return repo(decodeURIComponent(parts[1])).name;
@@ -756,6 +759,9 @@
     if (head === "curso") return second ? renderLesson(second) : renderCourse();
     if (head === "rutas") return renderGoals(route.params);
     if (head === "empezar") return renderGuided(route.params);
+    if (head === 'configurar' || head === 'servicios') return AlexandriaHandbook.index(catalog,head,route.params);
+    if (head === 'manual') return AlexandriaHandbook.detail(catalog,second);
+    if (head === 'prompts') return AlexandriaHandbook.prompts(catalog,route.params);
     if (head === "guias") return renderReading();
     if (head === "guia") return renderReading(second);
     if (head === "acceso") return renderAccess(route.params);
@@ -805,7 +811,7 @@
     }
     lastPath=path;
     const section=route.params.get("section");
-    if(section!==null){const target=document.getElementById(route.parts[0]==="repo"?`repo-${section}`:route.parts[0]==="area"?`area-${section}`:`reading-section-${section}`);if(target){target.tabIndex=-1;target.focus({preventScroll:true});target.scrollIntoView();}}
+    if(section!==null){const target=document.getElementById(route.parts[0]==="repo"?`repo-${section}`:route.parts[0]==="area"?`area-${section}`:route.parts[0]==='manual'?`manual-${section}`:`reading-section-${section}`);if(target){target.tabIndex=-1;target.focus({preventScroll:true});target.scrollIntoView();}}
     const q = document.getElementById("q");
     if (q && route.parts[0] === "explorar" && window.__focusSearch) {
       q.focus();
@@ -850,6 +856,12 @@
   });
 
   document.getElementById("app").addEventListener("submit", (event) => {
+    if(event.target.id==='handbook-filter'){
+      event.preventDefault();const params=new URLSearchParams();
+      new FormData(event.target).forEach((value,key)=>{if(String(value).trim())params.set(key,String(value).trim());});
+      const section=parseHash().parts[0];history.pushState(null,'',`#/${section}${params.size?`?${params}`:''}`);draw();
+      document.getElementById('handbook-count')?.focus();return;
+    }
     const destination={"goal-context":"rutas","access-plan":"acceso","recipe-filter":"recetas","compare-search":"comparar"}[event.target.id];
     if(destination){
       event.preventDefault();const params=new URLSearchParams();
