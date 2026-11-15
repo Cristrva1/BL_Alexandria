@@ -12,6 +12,8 @@ Personas sin experiencia técnica que necesitan pasos guiados. La entrada debe e
 
 En Comparar, las funciones y diferencias técnicas tienen prioridad. La preparación, los costes, la compatibilidad y las fuentes se consultan después, sin convertir coincidencias de categoría en afirmaciones de equivalencia ni elegir un ganador automático.
 
+Guíame reúne todas las preguntas en una pantalla: proyecto, experiencia, equipo y herramientas de IA disponibles. Recomienda hasta tres puntos de partida documentados con motivos, requisitos, costes y pasos para una primera prueba. Permite corregir el objetivo interpretado y dejar los datos de equipo por confirmar. Las respuestas permanecen en memoria de la pestaña y se borran al recargar.
+
 ## Product Purpose
 
 La Biblioteca de Alexandría ayuda a encontrar una herramienta entre cientos de repositorios, entender qué hace, cómo empezar y qué cuenta, API, suscripción o modelo local necesita. El resultado útil es una selección corta y un primer paso comprensible.
