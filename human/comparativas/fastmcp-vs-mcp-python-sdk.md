@@ -9,6 +9,9 @@
 | Elígelo si… | quieres crear un servidor MCP en Python rápido | quieres el SDK oficial con mínima dependencia |
 | Evítalo si… | trabajas en TypeScript; mira `mcp-typescript-sdk` | quieres funciones extra como auth y composición; mira `fastmcp` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | Apache-2.0 | MIT |
 | Instalación | `pip install fastmcp` | `pip install "mcp[cli]"` |

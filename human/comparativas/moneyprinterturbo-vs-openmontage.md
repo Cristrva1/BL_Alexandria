@@ -9,6 +9,9 @@
 | Elígelo si… | quieres producir videos cortos narrados a partir de un tema sin editar a mano | quieres producir videos completos con un agente |
 | Evítalo si… | necesitas control creativo plano a plano o una identidad visual propia; mira `remotion` u `openmontage` | solo necesitas editar clips; mira `video-use` |
 | Ejecución | 🔀 híbrido | 🏠 local |
+| API de IA | Depende de la ruta elegida | Sin API de IA en la ruta básica |
+| Coste | El coste depende del proveedor o la ruta | Consumo del agente que ya utilizas |
+| Modelos locales | Modelo local no documentado | La función básica no necesita un modelo |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | MIT | AGPL-3.0 |
 | Instalación | `pip install mpt` | Sigue el README (el repo original ya no está disponible en GitHub; usa tu clon local). |

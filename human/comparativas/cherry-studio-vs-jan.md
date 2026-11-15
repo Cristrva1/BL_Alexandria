@@ -4,11 +4,14 @@
 
 | | [Cherry Studio](../fichas/cherry-studio.md) | [Jan](../fichas/jan.md) |
 |---|---|---|
-| Qué hace | App de escritorio que reúne muchos proveedores de IA, agentes y herramientas de productividad. | App de escritorio open source, alternativa a ChatGPT que corre 100 % sin conexión. |
+| Qué hace | App de escritorio que reúne muchos proveedores de IA, agentes y herramientas de productividad. | Aplicación de escritorio para conversar con modelos locales y configurar proveedores remotos desde una misma interfaz. |
 | ⭐ Estrellas | 53.5k | 45.7k |
 | Elígelo si… | quieres una app de escritorio multi-proveedor completa | quieres un ChatGPT local en tu escritorio |
 | Evítalo si… | solo quieres modelos locales simples; mira `jan` | necesitas multiusuario; mira `open-webui` |
 | Ejecución | 🔀 híbrido | 🏠 local |
+| API de IA | API de IA opcional | API de IA opcional |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | AGPL-3.0 | NOASSERTION |
 | Instalación | Descarga el instalador desde los releases. | Descarga el instalador desde jan.ai o los releases. |

@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧑‍💻 Inteligencia de Código, Datos & Entrenamiento](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Entender y empaquetar código para agentes
+[🏠 Inicio](../README.md) › [🧑‍💻 Entender código, trabajar con datos y entrenar modelos](../categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md) › Entender y empaquetar código para agentes
 
 # 🧬 DeepWiki Open
 
 > Generador de wikis con IA para repos de GitHub, GitLab o Bitbucket, versión abierta de DeepWiki.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 18.4k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 18.4k | MIT | Python | 2026-11-10 |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
+| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Analiza un repositorio y crea documentación navegable con diagramas y un chat para preguntar sobre el código.
 
@@ -22,9 +37,19 @@ Documentación automática con diagramas Mermaid y opción de modelos locales.
 
 Clona el repo, crea embeddings del código y genera páginas y diagramas con el LLM; un chat usa RAG sobre el código.
 
-## Instalación rápida
+## Cómo empezar
 
-`docker compose up` con tus claves de API en `.env`.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/AsyncFuncAI/deepwiki-open/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar DeepWiki Open para mi objetivo y necesito pasos guiados. Lee https://github.com/AsyncFuncAI/deepwiki-open/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Clona el repo, crea embeddings del código y genera páginas y diagramas con el 
 ## Stack y modelos
 
 - **Stack:** Python, Next.js
-- **Modelos / API:** OpenAI, Gemini, Ollama y otros.
 - **Etiquetas:** `code` `docs` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -62,6 +86,12 @@ Clona el repo, crea embeddings del código y genera páginas y diagramas con el 
 - 🐙 GitHub: [AsyncFuncAI/deepwiki-open](https://github.com/AsyncFuncAI/deepwiki-open)
 - 🌐 Web: <https://grok-wiki.com/>
 - 🧪 Receta: [Análisis de repos grandes](../playbooks/analisis-de-repos-grandes.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/AsyncFuncAI/deepwiki-open/blob/main/README.md)
 
 ---
 

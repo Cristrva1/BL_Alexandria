@@ -4,11 +4,14 @@
 
 | | [HyperFrames](../fichas/hyperframes.md) | [remotion](../fichas/remotion.md) |
 |---|---|---|
-| Qué hace | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
+| Qué hace | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. |
 | ⭐ Estrellas | 84.4k | 73.2k |
 | Elígelo si… | quieres que un agente de código genere videos con motion graphics a partir de HTML, con licencia permisiva | generas video a escala con React y quieres variantes parametrizadas |
 | Evítalo si… | tu equipo ya trabaja con componentes React y el ecosistema de `remotion`, o prefieres editar en una línea de tiempo visual | trabajas en Python (moviepy) o buscas un editor visual |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟡 medio |
 | Licencia | Apache-2.0 | NOASSERTION |
 | Instalación | `npx hyperframes init my-video` | `npm create video` |

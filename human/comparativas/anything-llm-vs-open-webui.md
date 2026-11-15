@@ -9,6 +9,9 @@
 | Elígelo si… | quieres RAG privado sin programar | necesitas un ChatGPT privado para tu equipo |
 | Evítalo si… | necesitas un pipeline de RAG a medida; mira `llama-index` | solo quieres una app de escritorio individual; mira `jan` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | API de IA opcional | API de IA opcional |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | NOASSERTION |
 | Instalación | `docker pull mintplexlabs/anythingllm` | `docker run -d -p 3000:8080 -v open-webui:/app/backend/data ghcr.io/open-webui/open-webui:main` |

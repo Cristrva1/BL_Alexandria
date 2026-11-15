@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Catálogos y marketplaces de skills
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Catálogos y marketplaces de skills
 
 # 🗂️ Awesome GitHub Copilot
 
 > Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y plugins para personalizar GitHub Copilot.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 41.2k | MIT | JavaScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 41.2k | MIT | JavaScript | 2026-11-10 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
+| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+
+## Qué puedes hacer con él
 
 Repositorio de la organización GitHub que reúne personalizaciones de Copilot aportadas por la comunidad: agentes especializados (algunos conectados a servidores MCP), instrucciones que se aplican por tipo de archivo, skills, plugins y un cookbook de recetas para las APIs de Copilot. Tiene web con búsqueda, un Learning Hub y un llms.txt para agentes.
 
@@ -22,9 +37,23 @@ Es el marketplace que Copilot CLI y VS Code traen registrado por defecto, así q
 
 Cada recurso es un archivo Markdown con frontmatter (agentes, instrucciones con patrones de archivo, skills con sus assets) y los plugins agrupan varios para un flujo. Copilot los carga desde el marketplace `awesome-copilot` o copiándolos a tu repo.
 
-## Instalación rápida
+## Cómo empezar
 
-`copilot plugin install <plugin>@awesome-copilot`; si tu versión no conoce el marketplace, ejecuta antes `copilot plugin marketplace add github/awesome-copilot`.
+Se configura en tu agente. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un agente compatible y acceso activo a su modelo.
+
+1. Elige el agente indicado en Acceso y costes.
+2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
+3. Prueba una tarea pequeña y revisa si activa conectores externos.
+
+[Instrucciones originales de instalación](https://github.com/github/awesome-copilot/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Awesome GitHub Copilot para mi objetivo y necesito pasos guiados. Lee https://github.com/github/awesome-copilot/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +72,6 @@ Cada recurso es un archivo Markdown con frontmatter (agentes, instrucciones con 
 ## Stack y modelos
 
 - **Stack:** Markdown, YAML, JavaScript (web del catálogo)
-- **Modelos / API:** Los recursos los ejecuta GitHub Copilot con el modelo que tengas seleccionado (OpenAI, Anthropic, Google, etc.).
 - **Etiquetas:** `skills` `coding-agent` `prompts` `mcp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -59,6 +87,12 @@ Cada recurso es un archivo Markdown con frontmatter (agentes, instrucciones con 
 
 - 🐙 GitHub: [github/awesome-copilot](https://github.com/github/awesome-copilot)
 - 🌐 Web: <https://awesome-copilot.github.com/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/github/awesome-copilot/blob/main/README.md)
 
 ---
 

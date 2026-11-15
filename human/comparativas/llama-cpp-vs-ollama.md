@@ -9,6 +9,9 @@
 | Elígelo si… | quieres el máximo control y rendimiento local | quieres modelos locales funcionando en minutos |
 | Evítalo si… | prefieres simplicidad; mira `ollama` | necesitas servir a muchos usuarios con GPU; mira `vllm` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | MIT | MIT |
 | Instalación | `brew install llama.cpp` | `curl -fsSL https://ollama.com/install.sh \| sh` |

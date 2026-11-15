@@ -9,6 +9,9 @@
 | Elígelo si… | quieres la WebUI clásica pero más rápida | quieres extensiones y comunidad amplia |
 | Evítalo si… | prefieres flujos por nodos; mira `comfyui` | prefieres un flujo moderno y limpio (InvokeAI) |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🔴 pesado |
 | Licencia | AGPL-3.0 | AGPL-3.0 |
 | Instalación | Descarga el paquete de un clic desde los releases o clona y ejecuta `webui-user`. | `git clone` |

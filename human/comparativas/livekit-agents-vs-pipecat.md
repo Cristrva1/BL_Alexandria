@@ -9,6 +9,9 @@
 | Elígelo si… | necesitas agentes de voz escalables con WebRTC | construyes un agente de voz en Python |
 | Evítalo si… | quieres algo ligero sin servidor de medios; mira `pipecat` | quieres infraestructura WebRTC gestionada; mira `livekit-agents` |
 | Ejecución | 🔀 híbrido | 🔀 híbrido |
+| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | Modelo local no documentado |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | Apache-2.0 | BSD-2-Clause |
 | Instalación | `pip install "livekit-agents[openai,silero,deepgram]"` | `pip install "pipecat-ai[daily,openai,cartesia]"` |

@@ -4,11 +4,14 @@
 
 | | [Chart.js](../fichas/chart-js.md) | [Recharts](../fichas/recharts.md) |
 |---|---|---|
-| Qué hace | Librería JavaScript sencilla para gráficos HTML5 en canvas. | Librería de gráficos para React construida con D3, declarativa y componible. |
+| Qué hace | Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web. | Librería de gráficos para React construida con D3, declarativa y componible. |
 | ⭐ Estrellas | 67.8k | 27.7k |
 | Elígelo si… | quieres gráficos simples sin aprender una librería compleja | tu app es React y quieres gráficos declarativos |
 | Evítalo si… | necesitas visualizaciones a medida; mira `d3` | no usas React; mira `chart-js` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | MIT |
 | Instalación | `npm i chart.js` | `npm i recharts` |

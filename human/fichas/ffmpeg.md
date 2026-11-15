@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Edición, grabación y subtítulos
+[🏠 Inicio](../README.md) › [🎬 Crear audio, voz y video](../categorias/12-audio-voz-video.md) › Edición, grabación y subtítulos
 
 # ✂️ FFmpeg
 
 > Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 67.3k | NOASSERTION | C | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 67.3k | NOASSERTION | C | 2026-06-24 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 FFmpeg es la base multimedia sobre la que se apoyan casi todos los editores, reproductores y pipelines de video. Incluye el CLI `ffmpeg` para convertir, recortar, concatenar, mezclar, quemar subtítulos y transmitir, `ffprobe` para inspeccionar archivos y las librerías libav* para integrarlo en tu propio software.
 
@@ -22,9 +37,19 @@ Es el estándar de facto: soporta prácticamente todos los códecs, contenedores
 
 Las librerías libavcodec, libavformat y libavfilter decodifican, procesan con un grafo de filtros y vuelven a codificar; el CLI encadena entradas, filtros y salidas en un solo comando. Admite aceleración por hardware (NVENC, QSV, VideoToolbox).
 
-## Instalación rápida
+## Cómo empezar
 
-`brew install ffmpeg` (macOS) o `sudo apt install ffmpeg` (Linux); en Windows, descarga un binario desde ffmpeg.org.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/FFmpeg/FFmpeg/blob/master/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar FFmpeg para mi objetivo y necesito pasos guiados. Lee https://github.com/FFmpeg/FFmpeg/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Las librerías libavcodec, libavformat y libavfilter decodifican, procesan con u
 ## Stack y modelos
 
 - **Stack:** C, ensamblador (x86/ARM), libavcodec, libavformat, libavfilter
-- **Modelos / API:** No usa LLM.
 - **Etiquetas:** `video` `audio` `automation` `cpp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -51,7 +75,7 @@ Las librerías libavcodec, libavformat y libavfilter decodifican, procesan con u
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [whisper](whisper.md) | 113k | Modelo de reconocimiento de voz y traducción de audio multilingüe de OpenAI, estándar de la industria que transcribe casi cualquier idioma con un solo modelo. |
+| [whisper](whisper.md) | 113k | Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. |
 | [yt-dlp](yt-dlp.md) | 208k | Descargador de audio y video por línea de comandos compatible con miles de sitios. |
 | [MoviePy](moviepy.md) | 15.2k | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. |
 
@@ -60,6 +84,12 @@ Las librerías libavcodec, libavformat y libavfilter decodifican, procesan con u
 - 🐙 GitHub: [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg)
 - 🌐 Web: <https://ffmpeg.org/>
 - 🧪 Receta: [Pipeline de Reels / video corto](../playbooks/pipeline-de-reels-video-corto.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/FFmpeg/FFmpeg/blob/master/README.md)
 
 ---
 

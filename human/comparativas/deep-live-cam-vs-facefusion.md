@@ -9,6 +9,9 @@
 | Elígelo si… | necesitas swap en vivo legítimo con consentimiento | necesitas manipulación facial de calidad con consentimiento |
 | Evítalo si… | no puedes garantizar uso ético/consentimiento o no tienes GPU | no tienes consentimiento de las personas |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🔴 pesado | 🟡 medio |
 | Licencia | AGPL-3.0 | NOASSERTION |
 | Instalación | `git clone` | Sigue el instalador del README (requiere Python, ffmpeg y opcionalmente GPU). |

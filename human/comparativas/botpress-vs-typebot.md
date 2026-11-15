@@ -9,6 +9,9 @@
 | Elígelo si… | quieres un agente conversacional multicanal con poco código | quieres un chatbot guiado sin programar, con buena UX |
 | Evítalo si… | necesitas todo self-host y sin nube; mira `rasa` o `typebot` | necesitas un agente abierto con razonamiento libre; mira `botpress` |
 | Ejecución | 🔀 híbrido | 🏠 local |
+| API de IA | Depende de la ruta elegida | API de IA opcional |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | La función básica no necesita un modelo |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | MIT | NOASSERTION |
 | Instalación | `npm i -g @botpress/cli` | Self-host con Docker Compose siguiendo la guía del repo (requiere PostgreSQL y SMTP), o… |

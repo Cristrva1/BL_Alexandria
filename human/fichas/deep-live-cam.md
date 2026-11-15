@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🖼️ Generación de Imagen & Visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Rostros y retratos animados
+[🏠 Inicio](../README.md) › [🖼️ Generar imágenes y trabajar con visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Rostros y retratos animados
 
 # 🎭 Deep-Live-Cam
 
 > Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 98.1k | AGPL-3.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 98.1k | AGPL-3.0 | Python | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
+| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
+| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Convierte un cambio de rostro, que normalmente requiere pipeline complejo, en un flujo de "un clic".
 
@@ -22,9 +37,19 @@ Es de los proyectos de swap en vivo más conocidos por su facilidad de uso (una 
 
 Combina detección facial (insightface/face_swapper) y reenactment sobre PyTorch+GPU (con backend ONNX Runtime o CUDA) para reemplazar el rostro fotograma a fotograma en un flujo en directo desde la webcam o un archivo.
 
-## Instalación rápida
+## Cómo empezar
 
-`git clone`, instalar dependencias y proveedores de GPU (p. ej. ONNX Runtime con CUDA Execution Provider); descargar los modelos de swap indicados. Requiere GPU NVIDIA para tiempo real fluido.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/hacksider/Deep-Live-Cam/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Deep-Live-Cam para mi objetivo y necesito pasos guiados. Lee https://github.com/hacksider/Deep-Live-Cam/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Combina detección facial (insightface/face_swapper) y reenactment sobre PyTorch
 ## Stack y modelos
 
 - **Stack:** Python, PyTorch, ONNX Runtime, GPU
-- **Modelos / API:** Modelos locales.
 - **Etiquetas:** `vision` `image` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -63,6 +87,12 @@ Combina detección facial (insightface/face_swapper) y reenactment sobre PyTorch
 
 - 🐙 GitHub: [hacksider/Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam)
 - 🌐 Web: <https://deeplivecam.net/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/hacksider/Deep-Live-Cam/blob/main/README.md)
 
 ---
 

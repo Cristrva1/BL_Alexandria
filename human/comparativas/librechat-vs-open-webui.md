@@ -9,6 +9,9 @@
 | Elígelo si… | quieres todos los proveedores en un chat con SSO | necesitas un ChatGPT privado para tu equipo |
 | Evítalo si… | usas sobre todo modelos locales; mira `open-webui` | solo quieres una app de escritorio individual; mira `jan` |
 | Ejecución | 🔀 híbrido | 🏠 local |
+| API de IA | API de IA opcional | API de IA opcional |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | MIT | NOASSERTION |
 | Instalación | `git clone https://github.com/danny-avila/LibreChat && cd LibreChat && docker compose up -d` | `docker run -d -p 3000:8080 -v open-webui:/app/backend/data ghcr.io/open-webui/open-webui:main` |

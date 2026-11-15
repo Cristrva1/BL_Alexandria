@@ -9,6 +9,9 @@
 | Elígelo si… | quieres muchas técnicas de fine-tuning con UI | quieres afinar un LLM con pocos recursos |
 | Evítalo si… | buscas la opción más eficiente en memoria; mira `unsloth` | necesitas muchas técnicas y una UI de entrenamiento; mira `llama-factory` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | Apache-2.0 | Apache-2.0 |
 | Instalación | `git clone https://github.com/hiyouga/LlamaFactory && pip install -e ".[torch,metrics]"` | `pip install unsloth` |

@@ -9,6 +9,9 @@
 | Elígelo si… | publicas textos redactados con IA y quieres que se lean como escritos por una persona | quieres reglas de estilo compactas y portables que puedas usar como skill o dentro de un system prompt |
 | Evítalo si… | quieres reglas de estilo cortas para pegar en un system prompt, con rúbrica propia; mira `stop-slop` | prefieres una skill que reescriba mostrando su proceso y pueda imitar tu voz; mira `humanizer` |
 | Ejecución | 🔀 híbrido | 🔀 híbrido |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Consumo del agente que ya utilizas | Consumo del agente que ya utilizas |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | MIT |
 | Instalación | `/plugin marketplace add blader/humanizer` | `git clone https://github.com/hardikpandya/stop-slop ~/.claude/skills/stop-slop` |

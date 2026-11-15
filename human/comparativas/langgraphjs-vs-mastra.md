@@ -9,6 +9,9 @@
 | Elígelo si… | quieres el modelo de LangGraph en TypeScript | tu equipo trabaja en TypeScript y quiere agentes completos |
 | Evítalo si… | buscas una experiencia TS más integrada; mira `mastra` | trabajas en Python; mira `langgraph` o `pydantic-ai` |
 | Ejecución | 🔀 híbrido | 🔀 híbrido |
+| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | Modelo local no documentado |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | MIT | NOASSERTION |
 | Instalación | `npm install @langchain/langgraph @langchain/core` | `npm create mastra@latest` |

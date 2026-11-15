@@ -42,6 +42,9 @@ from repo_intelligence.core.catalog import (
 )
 from repo_intelligence.core.io import read_yaml, write_json
 from repo_intelligence.guides.explorer import render_explorer
+from repo_intelligence.guides.navigation import render_navigation
+from repo_intelligence.core.access import API_LABELS, COST_LABELS, LOCAL_LABELS, access_facts, access_rows
+from repo_intelligence.core.access import AUDIENCE_LABELS
 
 INSTALL_MODE_LABELS = {
     "global": ("🌍", "Global", "instálalo una vez en tu máquina"),
@@ -64,6 +67,7 @@ def render_all(project_root: Path) -> dict[str, int]:
     registry = read_yaml(project_root / "registry" / "repos.yaml", {"repos": []})
     local_ids = _local_ids(registry.get("repos", []))
 
+    render_navigation(project_root, cat)
     _render_detail_index(project_root, cat, local_ids)
     _render_fichas(project_root, cat, local_ids)
     _render_categories(project_root, cat)
@@ -182,6 +186,8 @@ def _footer(cat: Catalog) -> str:
 
 def _write(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
+    if path.suffix == ".md":
+        text = re.sub(r" {2,}\n", "<br>\n", text)
     if path.exists() and path.read_text(encoding="utf-8") == text:
         return
     path.write_text(text, encoding="utf-8")
@@ -239,6 +245,9 @@ def _render_detail_index(project_root: Path, cat: Catalog, local_ids: set[str]) 
                 "local": (repo["id"].lower() in local_ids) if local_ids else bool(repo.get("lib")),
                 "repo_url": repo.get("repo_url"),
                 "doc": repo.get("doc"),
+                "access": repo.get("access"),
+                "routes": repo.get("routes", []),
+                "getting_started": repo.get("getting_started", {}),
             }
         )
     write_json(project_root / "ai_index" / "REPOS.detail.json", {"generated_from": "INDICE_IA.json + INDICE_IA.detalle.json", "repos": rows})
@@ -272,9 +281,9 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
     local = _local_flag(repo, local_ids)
     local_text = {"📦": "📦 Sí", "🆕": "🆕 Aún no (sugerido)", "🧰": "🧰 Interna"}[local]
     lines += [
-        "| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |",
-        "|---|---|---|---|---|",
-        f"| {fmt_stars(repo.get('stars'))} | {md_cell(repo.get('license') or '—')} | {md_cell(repo.get('lang') or '—')} | {md_cell(repo.get('updated') or '—')} | {local_text} |",
+        "| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |",
+        "|---|---|---|---|",
+        f"| {fmt_stars(repo.get('stars'))} | {md_cell(repo.get('license') or '—')} | {md_cell(repo.get('lang') or '—')} | {repo.get('added_at') or 'Por confirmar'} |",
         "",
         " · ".join(
             part
@@ -296,10 +305,29 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
         if body:
             lines.extend([f"## {title}", "", body.strip(), ""])
 
-    section("Qué es", repo.get("desc"))
+    lines += ["## Acceso, coste y equipo", "", "[Cómo interpretar estas rutas](../acceso.md)", "", "| Pregunta | Respuesta |", "|---|---|"]
+    lines += [f"| {title} | {md_cell(body)} |" for title, body in access_rows(repo)]
+    access = access_facts(repo)
+    lines += ["", access["subscription_note"], ""]
+    section("Qué puedes hacer con él", repo.get("desc"))
     section("Por qué destaca", repo.get("why"))
     section("Cómo funciona", repo.get("how"))
-    section("Instalación rápida", repo.get("install"))
+    getting = repo.get("getting_started") or {}
+    if getting:
+        lines += ["## Cómo empezar", ""]
+        lines += [AUDIENCE_LABELS.get(getting.get("audience"), "Consulta los requisitos") + ". [Entender los términos](../vocabulario.md).", ""]
+        if getting.get("prerequisites"):
+            lines += ["**Antes de empezar:**", ""] + [f"- {item}" for item in getting["prerequisites"]] + [""]
+        lines += [f"{index}. {step}" for index, step in enumerate(getting.get("steps", []), 1)] + [""]
+        if getting.get("command"):
+            lines += ["**Comando de entrada documentado:**", "", "```shell", getting["command"], "```", "", getting.get("note", ""), ""]
+        if getting.get("source"):
+            lines += [f"[Instrucciones originales de instalación]({getting['source']})", ""]
+        if getting.get("entry_url"):
+            lines += [f"[Abrir la web o descarga indicada por el autor]({getting['entry_url']})", ""]
+        lines += ["**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:", "", f"> Quiero usar {repo.get('name') or repo['id']} para mi objetivo y necesito pasos guiados. Lee {getting.get('source') or repo.get('repo_url')}. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.", ""]
+    else:
+        section("Cómo empezar", repo.get("install"))
     if repo.get("cases"):
         lines += ["## Casos de uso", ""] + [f"- {case}" for case in repo["cases"]] + [""]
     if repo.get("choose_if") or repo.get("avoid_if"):
@@ -317,8 +345,6 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
     facts = []
     if repo.get("stack"):
         facts.append(f"- **Stack:** {repo['stack']}")
-    if repo.get("models"):
-        facts.append(f"- **Modelos / API:** {repo['models']}")
     if repo.get("tags"):
         facts.append("- **Etiquetas:** " + " ".join(f"`{tag}`" for tag in repo["tags"]))
     facts.append(f"- **Modo de instalación sugerido:** {_install_mode_text(repo.get('install_mode', 'reference_only'))}")
@@ -337,6 +363,9 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
         links.append(f"- 🧪 Receta: [{recipe.get('title')}]({playbook_path(recipe['id'], 'fichas')})")
     if links:
         lines += ["## Enlaces", ""] + links + [""]
+    if access.get("sources"):
+        lines += ["## Fuentes y alcance de revisión", "", f"Acceso revisado el {access.get('checked_at') or 'fecha por confirmar'}. Lectura de documentación; no prueba de instalación o ejecución.", ""]
+        lines += [f"- [Fuente {index}]({url})" for index, url in enumerate(access["sources"], 1)] + [""]
     lines.append(_footer(cat))
     return "\n".join(lines)
 
@@ -374,82 +403,29 @@ def _render_categories(project_root: Path, cat: Catalog) -> None:
 def _category_page(cat: Catalog, c: dict[str, Any], prev_c: dict[str, Any] | None, next_c: dict[str, Any] | None) -> str:
     num = int(c["num"])
     repos = cat.in_category(num, include_aliases=False)
-    nav = ["[🏠 Inicio](../README.md)", "[📚 Catálogo](../../Catalogo.md)"]
-    if prev_c:
-        nav.append(f"[⬅️ {prev_c['num']}. {prev_c['title']}]({cat.category_file(int(prev_c['num']))})")
-    if next_c:
-        nav.append(f"[{next_c['num']}. {next_c['title']} ➡️]({cat.category_file(int(next_c['num']))})")
-    new_count = sum(1 for r in repos if not r.get("lib") and r.get("status") not in {"local"})
     groups = cat.grouped(num, include_aliases=False)
-    lines = [
-        " · ".join(nav),
-        "",
-        f"# {c.get('emoji', '')} {num}. {c['title']}".replace("  ", " "),
-        "",
-        f"> {c.get('desc', '')}",
-        "",
-        f"**{len(repos)} repos** · {len(groups)} subcategorías · ⭐ {fmt_stars(sum(r.get('stars') or 0 for r in repos))} estrellas en total"
-        + (f" · 🆕 {new_count} sugeridos nuevos" if new_count else ""),
-        "",
-    ]
+    lines = ["[Inicio](../README.md) · [Rutas por objetivo](../rutas.md) · [Acceso y costes](../acceso.md)", "", f"# {c['title']}", "", c.get("desc", ""), "", f"{len(repos)} repos · {len(groups)} secciones", ""]
     picks = cat.picks(num)
     if picks:
-        lines += [
-            "## ⭐ Imprescindibles",
-            "",
-            "Si solo vas a mirar unos pocos, empieza por estos:",
-            "",
-            "| Repo | ⭐ | Qué hace | Instalación |",
-            "|---|---:|---|---|",
-        ]
+        lines += ["## Puntos de partida", "", "Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no por las estrellas.", "", "| Repo | Qué hace | Acceso básico |", "|---|---|---|"]
         for repo in picks:
-            lines.append(
-                f"| {repo_link(cat, repo['id'], 'categorias')} | {fmt_stars(repo.get('stars'))} | {md_cell(repo.get('one'))} | {md_cell(_short_install(repo.get('install')))} |"
-            )
+            lines.append(f"| {repo_link(cat, repo['id'], 'categorias')} | {md_cell(repo.get('one'))} | {API_LABELS[access_facts(repo)['api']]} |")
         lines.append("")
-
-    lines += ["## 🧭 Subcategorías", ""]
+    lines += ["## Secciones", ""]
     for key, members in groups:
         title = cat.sub_title(num, key)
         lines.append(f"- [{title}](#{gh_anchor(title)}) — {len(members)} repos")
     lines.append("")
-
     for key, members in groups:
         title = cat.sub_title(num, key)
-        lines += [f"## {title}", "", "| Repo | ⭐ | Qué hace | Ideal si… | Setup |", "|---|---:|---|---|:---:|"]
+        lines += [f"## {title}", "", "| Repo | Para qué sirve | Elígelo si… | API de IA |", "|---|---|---|---|"]
         for repo in members:
-            name = _name_with_pick(repo, repo_link(cat, repo["id"], "categorias"))
-            if not repo.get("lib") and repo.get("status") != "local":
-                name += " 🆕"
-            lines.append(
-                f"| {name} | {fmt_stars(repo.get('stars'))} | {md_cell(repo.get('one'))} | {md_cell(_strip_period(repo.get('choose_if')))} | {_icon(SETUP_LABELS, repo.get('setup'))} |"
-            )
+            lines.append(f"| {repo_link(cat, repo['id'], 'categorias')} | {md_cell(repo.get('one'))} | {md_cell(repo.get('choose_if'))} | {API_LABELS[access_facts(repo)['api']]} |")
         lines.append("")
-
-    choices = _choice_groups(cat, num)
-    if choices:
-        lines += ["## ⚖️ ¿Cuál elegir?", "", "Repos que cumplen la misma función: elige uno por grupo.", ""]
-        for members in choices:
-            names = ", ".join(m.get("name") or m["id"] for m in members)
-            lines += [f"### {names}", "", "| Repo | ⭐ | Elígelo si… | Evítalo si… |", "|---|---:|---|---|"]
-            for repo in members:
-                lines.append(
-                    f"| {repo_link(cat, repo['id'], 'categorias')} | {fmt_stars(repo.get('stars'))} | {md_cell(_strip_period(repo.get('choose_if')))} | {md_cell(_strip_period(repo.get('avoid_if')))} |"
-                )
-            lines.append("")
-
-    related = [rc for rc in cat.recipes if any((cat.get(r) or {}).get("cat") == num for r in rc.get("repos", []))]
+    related = [rc for rc in cat.recipes if any((cat.get(r) or {}).get('cat') == num for r in rc.get('repos', []))]
     if related:
-        lines += ["## 🧪 Recetas que usan esta categoría", ""]
-        lines += [f"- [{rc.get('emoji', '')} {rc['title']}]({playbook_path(rc['id'], 'categorias')}) — {rc.get('goal', '')}".replace("[ ", "[") for rc in related]
-        lines.append("")
-    lines += [
-        "## 🏷️ Leyenda",
-        "",
-        "⭐ imprescindible · 🆕 sugerido nuevo (aún no clonado en tu biblioteca) · Setup: 🟢 fácil · 🟡 medio · 🔴 pesado (GPU o varios servicios).",
-        "",
-        _footer(cat),
-    ]
+        lines += ["## Recetas relacionadas", ""] + [f"- [{rc['title']}]({playbook_path(rc['id'], 'categorias')}) — {rc.get('goal', '')}" for rc in related] + [""]
+    lines += ["[Comparar alternativas](../comparativas/README.md) · [Cómo empezar](../instalar.md)", "", _footer(cat)]
     return "\n".join(lines)
 
 
@@ -571,6 +547,9 @@ def _comparison(cat: Catalog, left: dict[str, Any], right: dict[str, Any]) -> st
         row("Elígelo si…", "choose_if"),
         row("Evítalo si…", "avoid_if"),
         row("Ejecución", "exec", lambda v: _label(EXEC_LABELS, v)),
+        row("API de IA", "access", lambda v: API_LABELS.get((v or {}).get("api"), "Por confirmar")),
+        row("Coste", "access", lambda v: COST_LABELS.get((v or {}).get("cost"), "Por confirmar")),
+        row("Modelos locales", "access", lambda v: LOCAL_LABELS.get((v or {}).get("local_model"), "Por confirmar")),
         row("Setup", "setup", lambda v: _label(SETUP_LABELS, v)),
         row("Licencia", "license"),
         row("Instalación", "install", _short_install),
@@ -725,38 +704,13 @@ def _install_view(cat: Catalog, title: str, intro: str, repos: list[dict[str, An
 # ---------------------------------------------------------------------------
 
 def _render_novedades(project_root: Path, cat: Catalog) -> None:
-    new = [r for r in cat.repos if not r.get("lib") and r.get("status") not in {"local", "alias"}]
-    lines = [
-        "[🏠 Inicio](../README.md)",
-        "",
-        "# 🆕 Repos sugeridos (aún no clonados)",
-        "",
-        f"**{len(new)} repos** curados con ficha completa que todavía no están en tu biblioteca local (`../Repositorios_Prueba`). "
-        "Se eligieron por popularidad (estrellas) y porque cubren huecos de cada sección.",
-        "",
-        "## Cómo traerlos a tu biblioteca",
-        "",
-        "Previsualiza qué se clonaría (por categoría o por id) y luego ejecútalo con `--run`:",
-        "",
-        "```bash",
-        "uv run repo-intelligence clone --cat 8",
-        "uv run repo-intelligence clone --id ollama --id open-webui --run",
-        "```",
-        "",
-        "Después: `uv run repo-intelligence discover` y `uv run repo-intelligence guide build`. Sus fichas ya están curadas, así que no hace falta `enrich`.",
-        "",
-    ]
-    by_cat: dict[int, list[dict[str, Any]]] = defaultdict(list)
-    for repo in new:
-        by_cat[int(repo.get("cat") or 0)].append(repo)
-    for num in sorted(by_cat):
-        members = sorted(by_cat[num], key=lambda r: -(r.get("stars") or 0))
-        lines += [f"## {category_label(cat, num)} ({len(members)})", "", "| Repo | ⭐ | Qué hace |", "|---|---:|---|"]
-        for repo in members:
-            lines.append(f"| {repo_link(cat, repo['id'], 'human')} | {fmt_stars(repo.get('stars'))} | {md_cell(repo.get('one'))} |")
-        lines.append("")
-    lines.append(_footer(cat))
-    _write(project_root / "human" / "novedades.md", "\n".join(lines))
+    repos = [r for r in cat.repos if r.get('gh') and not r.get('alias_of')]
+    repos.sort(key=lambda r: (r.get('added_at') or '', r['id']), reverse=True)
+    lines = ['[Inicio](README.md) · [Explorador](../docs/index.html#/novedades)', '', '# Incorporaciones a Alexandria', '', 'La fecha es la primera aparición del repo en el historial de esta biblioteca. No indica la fecha de lanzamiento del proyecto ni depende de que lo hayas descargado.', '', '| Añadido | Repo | Qué hace | Acceso básico |', '|---|---|---|---|']
+    for repo in repos:
+        lines.append(f"| {repo.get('added_at') or 'Por confirmar'} | {repo_link(cat, repo['id'], 'human')} | {md_cell(repo.get('one'))} | {API_LABELS[access_facts(repo)['api']]} |")
+    lines += ['', '[Cómo incorporar y revisar nuevos repos](mantenimiento.md)', '', _footer(cat)]
+    _write(project_root/'human'/'novedades.md', '\n'.join(lines))
 
 
 # ---------------------------------------------------------------------------
@@ -773,7 +727,7 @@ def _render_catalog(project_root: Path, cat: Catalog, local_ids: set[str]) -> No
         "",
         "[🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)",
         "",
-        "> **Leyenda:** ⭐ imprescindible de su sección · 📦 ya está en tu biblioteca local · 🆕 sugerido (aún no clonado) · Rol: ⚙️ plataforma · 🧩 motor · 📚 librería · 🎨 skill · 📂 catálogo · 🖥️ app · Setup: 🟢 fácil · 🟡 medio · 🔴 pesado",
+        "> Empieza por una tarea y revisa acceso y costes antes de instalar. Las estrellas indican popularidad; no certifican la calidad o adecuación.",
         "",
         "## Índice",
         "",
@@ -782,21 +736,14 @@ def _render_catalog(project_root: Path, cat: Catalog, local_ids: set[str]) -> No
         title = f"{c.get('emoji', '')} {c['num']}. {c['title']}"
         count = len(cat.in_category(int(c["num"]), include_aliases=False))
         lines.append(f"{c['num']}. [{c.get('emoji', '')} {c['title']}](#{gh_anchor(title)}) — {count}")
-    lines += ["", "## 🔥 Top 30 por estrellas", "", "| # | Repo | ⭐ | Categoría | Qué hace |", "|---:|---|---:|---|---|"]
-    top = sorted((r for r in repos if isinstance(r.get("stars"), int) and int(r.get("cat") or 0) > 0), key=lambda r: -r["stars"])[:30]
-    for index, repo in enumerate(top, start=1):
-        lines.append(
-            f"| {index} | {repo_link(cat, repo['id'], 'root')} | {fmt_stars(repo['stars'])} | {category_label(cat, int(repo['cat']))} | {md_cell(repo.get('one'))} |"
-        )
-    lines.append("")
     for c in cat.public_categories():
         num = int(c["num"])
         lines += [f"## {c.get('emoji', '')} {num}. {c['title']}", "", f"_{c.get('desc', '')}_ → [página de la categoría]({category_path(cat, num, 'root')})", ""]
         for key, members in cat.grouped(num, include_aliases=False):
-            lines += [f"### {cat.sub_title(num, key)}", "", "| Repo | ⭐ | Qué hace | Rol | Setup | |", "|---|---:|---|:---:|:---:|:---:|"]
+            lines += [f"### {cat.sub_title(num, key)}", "", "| Repo | Qué hace | API de IA | Tipo | Preparación |", "|---|---|---|---|---|"]
             for repo in members:
                 lines.append(
-                    f"| {_name_with_pick(repo, repo_link(cat, repo['id'], 'root'))} | {fmt_stars(repo.get('stars'))} | {md_cell(repo.get('one'))} | {_icon(ROLE_LABELS, repo.get('role'))} | {_icon(SETUP_LABELS, repo.get('setup'))} | {_local_flag(repo, local_ids)} |"
+                    f"| {_name_with_pick(repo, repo_link(cat, repo['id'], 'root'))} | {md_cell(repo.get('one'))} | {API_LABELS[access_facts(repo)['api']]} | {_label(ROLE_LABELS, repo.get('role'))} | {_label(SETUP_LABELS, repo.get('setup'))} |"
                 )
             lines.append("")
     internal = [r for r in cat.repos if int(r.get("cat") or 0) == 0]
@@ -828,7 +775,7 @@ def _render_guide(project_root: Path, cat: Catalog) -> None:
         "## 🧭 Cómo leer cada ficha",
         "",
         "- **Etiquetas:** Ejecución 🏠 local · ☁️ cloud/API · 🔀 híbrido — Rol ⚙️ plataforma · 🧩 motor · 📚 librería · 🎨 skill · 📂 catálogo · 🖥️ app — Setup 🟢 fácil · 🟡 medio · 🔴 pesado — 🔌 MCP.",
-        "- **⭐** junto al nombre: imprescindible de su subcategoría. El número de estrellas viene de GitHub.",
+        "- **⭐** junto al nombre: punto de partida editorial. El número de estrellas viene de GitHub.",
         "- **Elige si / Evita si** te dicen en una línea si encaja; **Combina con** lleva a sus complementos.",
         "",
         "## 📂 Mapa de categorías",
@@ -876,8 +823,13 @@ def _guide_card(cat: Catalog, repo: dict[str, Any]) -> list[str]:
         lines.append(f"**Aviso:** {status}  ")
     if repo.get("desc"):
         lines.append(f"**Qué es:** {repo['desc']}  ")
-    if repo.get("install"):
-        lines.append(f"**Instalación:** {repo['install']}  ")
+    access = access_facts(repo)
+    lines.append(f"**Acceso:** {API_LABELS[access['api']]} · {COST_LABELS[access['cost']]}  ")
+    getting = repo.get('getting_started') or {}
+    if getting.get('command'):
+        lines.append(f"**Comando documentado:** `{getting['command']}` (comprobar los pasos completos en la ficha).  ")
+    elif getting.get('source'):
+        lines.append(f"**Arranque:** [Instrucciones originales]({getting['source']}); no se deduce un paquete por el nombre.  ")
     if repo.get("choose_if") or repo.get("avoid_if"):
         lines.append(f"**Elige si:** {_strip_period(repo.get('choose_if')) or '—'} — **Evita si:** {_strip_period(repo.get('avoid_if')) or '—'}  ")
     combos = [repo_link(cat, c, "root") for c in repo.get("combines_with", []) if cat.get(c)]
@@ -895,46 +847,9 @@ def _guide_card(cat: Catalog, repo: dict[str, Any]) -> list[str]:
 # ---------------------------------------------------------------------------
 
 def _render_human_home(project_root: Path, cat: Catalog) -> None:
-    repos = [r for r in cat.repos if not r.get("alias_of") and int(r.get("cat") or 0) > 0]
-    new_count = sum(1 for r in repos if not r.get("lib") and r.get("status") != "local")
-    lines = [
-        "# 🗺️ Guía humana de BL_Alexandria",
-        "",
-        f"> {len(repos)} repos de IA y automatización explicados en español: qué hace cada uno, cuándo usarlo, cómo instalarlo y con qué combinarlo.",
-        "",
-        "[📚 Catálogo](../Catalogo.md) · [🔎 Explorador interactivo](../docs/index.html) · [🧪 Recetas](playbooks/README.md) · [⚖️ Comparativas](comparativas/README.md) · "
-        f"[🆕 Novedades ({new_count})](novedades.md) · [📖 Guía completa](../Guia.md)",
-        "",
-        "## 🚀 ¿Qué quieres construir?",
-        "",
-        _start_here_table(cat, "human"),
-        "",
-        "## 📂 Categorías",
-        "",
-        _categories_table(cat, "human"),
-        "",
-        "## 🔥 Los 20 más populares",
-        "",
-        _top_table(cat, "human", 20),
-        "",
-        "## 🏷️ Cómo leer una ficha",
-        "",
-        "Cada [ficha](fichas/) responde, en este orden: **qué es**, **por qué destaca**, **cómo funciona**, **cómo se instala**, **casos de uso**, **¿es para ti?** (elígelo si / evítalo si), **con qué se combina** y **qué alternativas tiene**.",
-        "",
-        "- Ejecución: 🏠 local · ☁️ cloud/API · 🔀 híbrido",
-        "- Rol: ⚙️ plataforma · 🧩 motor/runtime · 📚 librería/SDK · 🎨 skill/prompt · 📂 catálogo/recurso · 🖥️ app",
-        "- Setup: 🟢 fácil (un comando) · 🟡 medio (servicios o credenciales) · 🔴 pesado (GPU o varios servicios)",
-        "- ⭐ imprescindible de su sección · 📦 ya clonado en tu biblioteca · 🆕 sugerido nuevo",
-        "",
-        "## 📦 Decisiones de instalación",
-        "",
-        "- [✅ Usar ahora](usar-ahora.md): lo que la política del hub instala de entrada.",
-        "- [⏳ Diferir](diferir.md): potente pero pesado; solo si es finalista.",
-        "- [🔀 Alternativas y descartes](descartar.md): parejas que cumplen la misma función.",
-        "",
-        _footer(cat),
-    ]
-    _write(project_root / "human" / "README.md", "\n".join(lines))
+    repos = [r for r in cat.repos if r.get('gh') and not r.get('alias_of')]
+    lines = ['# Biblioteca de Alexandría', '', f'{len(repos)} repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.', '', '## Empieza por tu pregunta', '', '| Si estás pensando… | Abre |', '|---|---|', '| Quiero conseguir un resultado, pero no sé qué repo buscar | [Rutas por objetivo](rutas.md) |', '| Ya tengo Claude Code o Codex; quiero aprovecharlo | [Formas de uso](formas-de-uso.md) |', '| Quiero entender si necesita API, suscripción o modelo local | [Acceso y costes](acceso.md) |', '| Ya elegí una herramienta y quiero probarla | [Cómo empezar](instalar.md) |', '| Quiero buscar, filtrar o comparar nombres concretos | [Explorador](../docs/index.html) |', '| Quiero ver qué se incorporó a la biblioteca | [Novedades](novedades.md) |', '', '## Explora por tema', '', _categories_table(cat, 'human'), '', '## Construye un flujo completo', '', 'Las [recetas](playbooks/README.md) explican qué papel cumple cada pieza. No necesitas instalar todos los repos de una categoría.', '', '## Cómo leer una ficha', '', 'Cada ficha empieza por el resultado y el acceso: API de IA, Claude Code, Codex, modelos locales, coste y equipo. Después incluye pasos de arranque, criterios de elección, alternativas y fuentes.', '', 'Un punto de partida es una selección editorial. Las estrellas indican popularidad. Un comando documentado no es una prueba de instalación. Una compatibilidad no documentada sigue siendo una pregunta abierta.', '', '[Leer esta guía desde el principio](elegir.md) · [Mantener y ampliar la biblioteca](mantenimiento.md)', '', _footer(cat)]
+    _write(project_root/'human'/'README.md', '\n'.join(lines))
 
 
 def _start_here_table(cat: Catalog, base: str) -> str:
@@ -958,7 +873,7 @@ def _start_here_table(cat: Catalog, base: str) -> str:
 
 
 def _categories_table(cat: Catalog, base: str) -> str:
-    rows = ["| # | Categoría | Repos | Imprescindibles |", "|---:|---|---:|---|"]
+    rows = ["| # | Categoría | Repos | Puntos de partida |", "|---:|---|---:|---|"]
     for c in cat.public_categories():
         num = int(c["num"])
         picks = ", ".join(repo_link(cat, r["id"], base) for r in cat.picks(num)[:5])
@@ -987,8 +902,8 @@ def _update_root_docs(project_root: Path, cat: Catalog) -> None:
     new = sum(1 for r in repos if not r.get("lib") and r.get("status") != "local")
     stats = (
         f"**{len(repos)} repos curados** · **{len(cat.public_categories())} categorías** · **{len(cat.recipes)} recetas** · "
-        f"{local} ya en tu biblioteca local + {new} sugeridos nuevos"
-        + (f" · estrellas de GitHub al {cat.checked_at}" if cat.checked_at else "")
+        f"{len(cat.compact.get('discovery', {}).get('goals', []))} rutas por objetivo"
+        + (f" · acceso revisado el {cat.meta.get('access_checked')}" if cat.meta.get('access_checked') else "")
     )
     recipes = "\n".join(
         f"- [{rc.get('emoji', '')} {rc['title']}]({playbook_path(rc['id'], 'root')}) — " + ", ".join(f"`{rid}`" for rid in rc.get("repos", []))
@@ -1024,7 +939,7 @@ def _agent_categories_table(cat: Catalog) -> str:
     for c in cat.public_categories():
         num = int(c["num"])
         subs = ", ".join(sub["title"] for sub in c.get("subs", []))
-        rows.append(f"| {num} | {c.get('emoji', '')} {c['title']} | {len(cat.in_category(num, include_aliases=False))} | {md_cell(subs)} | `human/categorias/{category_filename(num, c['title'])}` |")
+        rows.append(f"| {num} | {c.get('emoji', '')} {c['title']} | {len(cat.in_category(num, include_aliases=False))} | {md_cell(subs)} | `human/categorias/{cat.category_file(num)}` |")
     return "\n".join(rows)
 
 

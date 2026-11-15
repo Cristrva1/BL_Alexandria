@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🔌 MCP & Conectividad](../categorias/05-mcp-conectividad.md) › SDKs y frameworks para crear MCP
+[🏠 Inicio](../README.md) › [🔌 Conectar herramientas con MCP](../categorias/05-mcp-conectividad.md) › SDKs y frameworks para crear MCP
 
 # 🛠️ mcp-use
 
 > Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 11k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 11k | MIT | TypeScript | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Resuelve el salto del SDK base (verboso) a algo productivo: registro de tools, inspector y despliegue incluidos.
 
@@ -22,9 +37,19 @@ Abstrae el protocolo en una capa de alto nivel con SDK, inspector y documentaci�
 
 Envuelve el protocolo MCP exponiendo APIs de alto nivel para registrar tools/resources y conectar con clientes (Claude, ChatGPT), gestionando el ciclo de vida del servidor y el despliegue sin que toques JSON-RPC a mano.
 
-## Instalación rápida
+## Cómo empezar
 
-`npm install mcp-use` o `pip install mcp-use` según el stack; requiere un cliente MCP para probar el resultado.
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/mcp-use/mcp-use/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar mcp-use para mi objetivo y necesito pasos guiados. Lee https://github.com/mcp-use/mcp-use/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Envuelve el protocolo MCP exponiendo APIs de alto nivel para registrar tools/res
 ## Stack y modelos
 
 - **Stack:** TypeScript o Python, React (apps)
-- **Modelos / API:** ChatGPT, Claude y agentes MCP; agnóstico vía variables de entorno.
 - **Etiquetas:** `automation` `mcp` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -64,6 +88,12 @@ Envuelve el protocolo MCP exponiendo APIs de alto nivel para registrar tools/res
 - 🐙 GitHub: [mcp-use/mcp-use](https://github.com/mcp-use/mcp-use)
 - 🌐 Web: <https://manufact.com>
 - 🧪 Receta: [Construir una app o servidor MCP](../playbooks/construir-una-appservidor-mcp.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/mcp-use/mcp-use/blob/main/README.md)
 
 ---
 

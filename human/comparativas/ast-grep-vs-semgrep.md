@@ -9,6 +9,9 @@
 | Elígelo si… | necesitas buscar o reescribir código por estructura | quieres análisis de seguridad en CI |
 | Evítalo si… | buscas análisis de seguridad con reglas existentes; mira `semgrep` | solo quieres refactors estructurales; mira `ast-grep` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | LGPL-2.1 |
 | Instalación | `npm i -g @ast-grep/cli` | `pip install semgrep` |

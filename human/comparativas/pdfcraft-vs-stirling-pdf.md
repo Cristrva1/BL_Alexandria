@@ -9,6 +9,9 @@
 | Elígelo si… | manipulas PDFs con privacidad y sin instalar nada | quieres un iLovePDF privado |
 | Evítalo si… | necesitas conversión a Markdown para IA (markitdown) o edición de contenido (no solo manipulación de páginas) | solo necesitas OCR; mira `ocrmypdf` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | AGPL-3.0 | NOASSERTION |
 | Instalación | `npm install` | `docker run -d -p 8080:8080 stirlingtools/stirling-pdf` |

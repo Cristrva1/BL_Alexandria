@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Guías, cursos y cookbooks
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Guías, cursos y cookbooks
 
 # 🎓 Claude Cookbooks
 
 > Recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 54.7k | MIT | Jupyter Notebook | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 54.7k | MIT | Jupyter Notebook | 2026-11-10 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
+| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Notebooks y guías de Anthropic con código copiable para construir con Claude: clasificación, resumen, RAG (con Pinecone o embeddings de Voyage AI), tool use y un agente de atención al cliente, visión y extracción de formularios, subagentes, PDFs, salida JSON consistente, moderación, prompt caching y checklists de coste y latencia.
 
@@ -22,9 +37,19 @@ Es la referencia oficial y sigue la evolución de la API, así que los patrones 
 
 Son notebooks de Jupyter agrupados por tema (capacidades, herramientas, integraciones, multimodal, técnicas avanzadas) que llaman a la API con el SDK `anthropic` de Python; el `pyproject.toml` incluye también el Claude Agent SDK.
 
-## Instalación rápida
+## Cómo empezar
 
-`git clone https://github.com/anthropics/claude-cookbooks && cd claude-cookbooks && uv sync` y abre los notebooks en Jupyter con tu `ANTHROPIC_API_KEY`.
+Material para leer. [Entender los términos](../vocabulario.md).
+
+1. Abre el material original y elige un capítulo o ejemplo.
+2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
+3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+
+[Instrucciones originales de instalación](https://github.com/anthropics/claude-cookbooks/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Claude Cookbooks para mi objetivo y necesito pasos guiados. Lee https://github.com/anthropics/claude-cookbooks/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Son notebooks de Jupyter agrupados por tema (capacidades, herramientas, integrac
 ## Stack y modelos
 
 - **Stack:** Python, Jupyter, Anthropic SDK, Claude Agent SDK
-- **Modelos / API:** API de Claude (Anthropic); algunas recetas usan servicios externos como Voyage AI o Pinecone.
 - **Etiquetas:** `learning` `notebooks` `rag` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -65,6 +89,12 @@ Son notebooks de Jupyter agrupados por tema (capacidades, herramientas, integrac
 ## Enlaces
 
 - 🐙 GitHub: [anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/anthropics/claude-cookbooks/blob/main/README.md)
 
 ---
 

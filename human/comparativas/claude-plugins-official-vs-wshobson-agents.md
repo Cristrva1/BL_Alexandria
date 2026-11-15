@@ -4,11 +4,14 @@
 
 | | [Claude Code Plugins Directory](../fichas/claude-plugins-official.md) | [wshobson/agents](../fichas/wshobson-agents.md) |
 |---|---|---|
-| Qué hace | Marketplace oficial de Anthropic con plugins para Claude Code, propios y de socios: comandos, agentes, skills y servidores MCP. | Marketplace de 94 plugins con más de 200 subagentes, 185 skills y 105 comandos para Claude Code, Codex, Cursor, OpenCode y Copilot. |
+| Qué hace | Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. | Marketplace de 94 plugins con más de 200 subagentes, 185 skills y 105 comandos para Claude Code, Codex, Cursor, OpenCode y Copilot. |
 | ⭐ Estrellas | 47.3k | 42.5k |
 | Elígelo si… | usas Claude Code y quieres plugins oficiales o de socios que se instalan con un comando | quieres subagentes y comandos especializados por lenguaje o área, instalables plugin a plugin |
 | Evítalo si… | buscas recursos comunitarios o trabajas con otro agente; mira `awesome-claude-code` o `wshobson-agents` | solo quieres plugins oficiales de Anthropic y socios; mira `claude-plugins-official` |
 | Ejecución | ☁️ cloud/API | 🔀 híbrido |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Consumo del agente que ya utilizas | Consumo del agente que ya utilizas |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | Apache-2.0 | MIT |
 | Instalación | `/plugin install <plugin>@claude-plugins-official` | `/plugin marketplace add wshobson/agents` |

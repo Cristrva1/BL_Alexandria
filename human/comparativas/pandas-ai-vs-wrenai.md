@@ -9,6 +9,9 @@
 | Elígelo si… | quieres preguntar a tus tablas en lenguaje natural | quieres text-to-SQL confiable para el negocio |
 | Evítalo si… | necesitas text-to-SQL gobernado para la empresa; mira `wrenai` | solo analizas un CSV; mira `pandas-ai` |
 | Ejecución | 🔀 híbrido | 🔀 híbrido |
+| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | Modelo local no documentado |
 | Setup | 🟢 fácil | 🟡 medio |
 | Licencia | NOASSERTION | NOASSERTION |
 | Instalación | `pip install pandasai` | Descarga el lanzador de releases o usa Docker Compose del repo. |

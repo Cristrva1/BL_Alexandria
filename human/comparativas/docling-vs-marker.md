@@ -9,6 +9,9 @@
 | Elígelo si… | quieres convertir documentos a Markdown con buena estructura | conviertes PDFs largos con fórmulas |
 | Evítalo si… | solo tienes PDFs de texto simples; mira `markitdown` | necesitas uso comercial sin licencia; revisa su licencia |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | API de IA opcional | API de IA opcional |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | Apache-2.0 |
 | Instalación | `pip install docling` | `pip install marker-pdf` |

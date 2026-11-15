@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🤖 Automatización, Mensajería & CRM](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Motores de workflow y automatización
+[🏠 Inicio](../README.md) › [🤖 Automatizar negocios y comunicación](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Motores de workflow y automatización
 
 # 🔁 Trigger.dev
 
 > Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 16.8k | Apache-2.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 16.8k | Apache-2.0 | TypeScript | 2026-11-10 |
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | El coste depende del proveedor o la ruta. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Escribe tareas largas o con reintentos en TypeScript dentro de tu app y Trigger.dev las ejecuta, reintenta y monitorea. Ideal para equipos de producto con Next.js o Node que no quieren operar colas.
 
@@ -22,9 +37,19 @@ Experiencia de desarrollo muy cuidada: código normal, sin timeouts y con observ
 
 Despliegas tus tareas a su runtime (cloud o self-host), que las ejecuta con checkpoints, colas, concurrencia y reintentos.
 
-## Instalación rápida
+## Cómo empezar
 
-`npx trigger.dev@latest init` dentro de tu proyecto; se usa con su cloud o en self-host con Docker.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/triggerdotdev/trigger.dev/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Trigger.dev para mi objetivo y necesito pasos guiados. Lee https://github.com/triggerdotdev/trigger.dev/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Despliegas tus tareas a su runtime (cloud o self-host), que las ejecuta con chec
 ## Stack y modelos
 
 - **Stack:** TypeScript, Node.js, PostgreSQL, Docker
-- **Modelos / API:** Agnóstico: se integra con el AI SDK de Vercel y cualquier API.
 - **Etiquetas:** `automation` `agents` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -63,6 +87,12 @@ Despliegas tus tareas a su runtime (cloud o self-host), que las ejecuta con chec
 
 - 🐙 GitHub: [triggerdotdev/trigger.dev](https://github.com/triggerdotdev/trigger.dev)
 - 🌐 Web: <https://trigger.dev/changelog>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/triggerdotdev/trigger.dev/blob/main/README.md)
 
 ---
 

@@ -9,6 +9,9 @@
 | Elígelo si… | quieres BI accesible para perfiles no técnicos | quieres BI empresarial abierto |
 | Evítalo si… | necesitas analítica de eventos por usuario (posthog) | buscas algo muy fácil para no técnicos; mira `metabase` |
 | Ejecución | 🔀 híbrido | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | NOASSERTION | Apache-2.0 |
 | Instalación | `docker run metabase/metabase` | `git clone https://github.com/apache/superset && cd superset && docker compose -f docker-compose-image-tag.yml up` |

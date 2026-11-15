@@ -9,6 +9,9 @@
 | Elígelo si… | quieres prompts reutilizables desde la terminal | buscas prompts listos para copiar |
 | Evítalo si… | buscas solo una lista de prompts para copiar; mira `prompts-chat` | quieres ejecutarlos como comandos encadenables; mira `fabric` |
 | Ejecución | 🔀 híbrido | 🏠 local |
+| API de IA | API de IA opcional | Sin API de IA en la ruta básica |
+| Coste | El coste depende del proveedor o la ruta | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelo local no documentado | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | NOASSERTION |
 | Instalación | `go install github.com/danielmiessler/fabric/cmd/fabric@latest` | No se instala para usarlo: abre prompts.chat; para self-host clona el repo y sigue su g… |

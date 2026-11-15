@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Prompts y prompt engineering
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Prompts y prompt engineering
 
 # 🧠 ChatGPT_DAN
 
 > Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones antiguas de ChatGPT.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 13.2k | — | — | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 13.2k | — | — | 2026-11-14 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
+| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones antiguas de ChatGPT. Recopila variantes de instrucciones para estudiar intentos de alterar el comportamiento de asistentes.
 
@@ -22,9 +37,19 @@ Quieres investigar prompts históricos y sus limitaciones.
 
 Recopila variantes de instrucciones para estudiar intentos de alterar el comportamiento de asistentes.
 
-## Instalación rápida
+## Cómo empezar
 
-Consulta el [README y sus recursos](https://github.com/0xk1h0/ChatGPT_DAN/blob/main/README.md); el catálogo no se instala como un servicio único.
+Material para leer. [Entender los términos](../vocabulario.md).
+
+1. Abre el material original y elige un capítulo o ejemplo.
+2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
+3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+
+[Instrucciones originales de instalación](https://github.com/0xk1h0/ChatGPT_DAN/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar ChatGPT_DAN para mi objetivo y necesito pasos guiados. Lee https://github.com/0xk1h0/ChatGPT_DAN/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,13 +66,18 @@ Consulta el [README y sus recursos](https://github.com/0xk1h0/ChatGPT_DAN/blob/m
 ## Stack y modelos
 
 - **Stack:** Recursos y documentación
-- **Modelos / API:** Configurar el proveedor o entorno indicado en el README; esta revisión no ejecutó el proyecto.
 - **Etiquetas:** `prompts` `chatgpt` `gpt-3-5` `gpt-4` `jailbreak` `openai` `prompt`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
 ## Enlaces
 
 - 🐙 GitHub: [0xk1h0/ChatGPT_DAN](https://github.com/0xk1h0/ChatGPT_DAN)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/0xk1h0/ChatGPT_DAN/blob/main/README.md)
 
 ---
 

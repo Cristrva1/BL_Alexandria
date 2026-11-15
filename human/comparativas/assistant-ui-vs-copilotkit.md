@@ -9,6 +9,9 @@
 | Elígelo si… | necesitas una UI de chat pulida en React | quieres agentes que interactúen con la UI de tu app |
 | Evítalo si… | quieres agentes que manipulen tu app; mira `copilotkit` | solo necesitas una ventana de chat; mira `assistant-ui` |
 | Ejecución | 🏠 local | 🔀 híbrido |
+| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | Modelo local no documentado |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | MIT |
 | Instalación | `npx assistant-ui@latest init` | `npx copilotkit@latest init` |

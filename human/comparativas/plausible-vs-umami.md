@@ -9,6 +9,9 @@
 | Elígelo si… | quieres analítica minimalista y privada | quieres analítica web simple y privada |
 | Evítalo si… | necesitas embudos y eventos complejos; mira `posthog` | necesitas analítica de producto avanzada; mira `posthog` |
 | Ejecución | 🔀 híbrido | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | AGPL-3.0 | MIT |
 | Instalación | Self-host con `plausible/community-edition` y Docker Compose. | `docker compose up -d` |

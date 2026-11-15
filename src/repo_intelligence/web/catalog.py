@@ -4,6 +4,9 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
+from repo_intelligence.core.access import access_facts, access_routes, API_LABELS, CLIENT_LABELS, LOCAL_LABELS, COST_LABELS, HARDWARE_LABELS, ROUTE_LABELS
+from repo_intelligence.core.reading import GUIDES
+from repo_intelligence.core.access import AUDIENCE_LABELS
 
 from repo_intelligence.menu.export import derive_install
 from repo_intelligence.web.lessons import (
@@ -175,7 +178,7 @@ def build_catalog(project_root: Path) -> dict:
     draft: list[dict] = []
     for source in compact.get("repos") or []:
         repo_id = source.get("id")
-        if not repo_id:
+        if not repo_id or source.get("alias_of") or int(source.get("cat") or 0) == 0:
             continue
         detail = details.get(repo_id) or {}
         alt = source.get("alt") or detail.get("alternatives") or []
@@ -199,17 +202,23 @@ def build_catalog(project_root: Path) -> dict:
             "repo_url": detail.get("repo") or "",
             "doc": source.get("doc") or detail.get("doc") or "",
             "agent_tools": list(source.get("agent_tools") or []),
+            "sub": source.get("sub") or "",
+            "how": detail.get("how") or "",
+            "why": detail.get("why") or "",
+            "cases": detail.get("cases") or [],
+            "limits": detail.get("limits") or "",
+            "getting_started": detail.get("getting_started") or {},
+            "access": access_facts(detail),
+            "routes": access_routes(detail),
+            "goals": source.get("goals") or [],
+            "added_at": source.get("added_at") or "",
+            "status": source.get("status") or "",
+            "pick": bool(source.get("pick")),
+            "stars": source.get("stars"),
+            "license": detail.get("license") or "",
+            "homepage": detail.get("homepage") or "",
         }
-        command, confidence, note = derive_install(
-            {
-                "id": merged["id"],
-                "name": merged["name"],
-                "role": merged["role"],
-                "exec": merged["exec"],
-                "stack": merged["stack"],
-                "repo": merged["repo_url"],
-            }
-        )
+        command, confidence, note = derive_install({**merged, "repo": merged["repo_url"]})
         lead, body = _lead(merged)
         merged["lead"] = lead
         merged["body"] = body
@@ -245,6 +254,8 @@ def build_catalog(project_root: Path) -> dict:
                 "title": source.get("title") or f"Sala {number}",
                 "question": lesson.get("question", ""),
                 "blurb": lesson.get("blurb", ""),
+                "description": source.get("desc") or lesson.get("blurb", ""),
+                "subs": source.get("subs") or [],
                 "count": len(members),
                 "starters": _starters(members),
             }
@@ -363,7 +374,10 @@ def build_catalog(project_root: Path) -> dict:
             "mcp": sum(1 for repo in repos if repo["mcp"]),
             "labs": len(labs),
         },
-        "labels": LABELS,
+        "labels": {**LABELS, "api": API_LABELS, "client": CLIENT_LABELS, "local_model": LOCAL_LABELS, "cost": COST_LABELS, "hardware": HARDWARE_LABELS, "route": ROUTE_LABELS, "audience": AUDIENCE_LABELS},
+        "reading": GUIDES,
+        "discovery": compact.get("discovery") or {"goals": []},
+        "access_checked": (compact.get("meta") or {}).get("access_checked") or "",
         "copy": COPY,
         "glossary": GLOSSARY,
         "lessons": LESSONS,

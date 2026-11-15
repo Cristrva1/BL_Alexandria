@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [📊 Analítica & Visualización](../categorias/10-anal-tica-visualizaci-n.md) › Apps de datos en Python
+[🏠 Inicio](../README.md) › [📊 Analizar datos, crear dashboards y mapas](../categorias/10-anal-tica-visualizaci-n.md) › Apps de datos en Python
 
 # 🧮 dash
 
 > Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con componentes de UI reactivos.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 24.5k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 24.5k | MIT | Python | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Cubre el caso de dashboards productivos en Python sin salir del lenguaje.
 
@@ -22,9 +37,19 @@ Estándar de facto para dashboards productivos en Python, respaldado por Plotly 
 
 Declaras el layout y callbacks en Python sobre un servidor Flask, y renderiza gráficos interactivos con Plotly.js en el navegador, respondiendo a los inputs del usuario.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install dash`. Requiere Python y, para producción, un servidor WSGI (gunicorn/uwsgi).
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/plotly/dash/blob/dev/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar dash para mi objetivo y necesito pasos guiados. Lee https://github.com/plotly/dash/blob/dev/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Declaras el layout y callbacks en Python sobre un servidor Flask, y renderiza gr
 ## Stack y modelos
 
 - **Stack:** Python, Plotly, Flask, web
-- **Modelos / API:** Consume resultados de pipelines IA.
 - **Etiquetas:** `automation` `ui` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -56,6 +80,12 @@ Declaras el layout y callbacks en Python sobre un servidor Flask, y renderiza gr
 
 - 🐙 GitHub: [plotly/dash](https://github.com/plotly/dash)
 - 🌐 Web: <https://plotly.com/dash>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/plotly/dash/blob/dev/README.md)
 
 ---
 

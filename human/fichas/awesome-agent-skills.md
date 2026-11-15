@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Catálogos y marketplaces de skills
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Catálogos y marketplaces de skills
 
 # 🏅 Awesome Agent Skills
 
 > Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 37.2k | MIT | — | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 37.2k | MIT | — | 2026-06-23 |
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
+| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Índice mantenido por VoltAgent que enlaza skills publicadas por los equipos de cada producto (Anthropic, Google, Vercel, Stripe, Cloudflare, Supabase, Hugging Face, Trail of Bits...) y una sección de comunidad revisada a mano. Incluye la tabla de carpetas de skills por agente (Claude Code, Codex, Cursor, Gemini CLI, Copilot, OpenCode, Windsurf) y normas de calidad para escribir skills.
 
@@ -22,9 +37,19 @@ Prioriza la procedencia: la mayoría de entradas vienen del equipo que mantiene 
 
 Es un README organizado por proveedor y temática, con enlaces a cada skill en su repo de origen. Instalas la que elijas desde allí, copiando la carpeta o con el comando que indique cada fuente.
 
-## Instalación rápida
+## Cómo empezar
 
-No se instala: abre el repo, elige la skill y cópiala a la carpeta de skills de tu agente (por ejemplo `~/.claude/skills/`) o usa el comando que indique su fuente.
+Material para leer. [Entender los términos](../vocabulario.md).
+
+1. Abre el material original y elige un capítulo o ejemplo.
+2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
+3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+
+[Instrucciones originales de instalación](https://github.com/VoltAgent/awesome-agent-skills/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Awesome Agent Skills para mi objetivo y necesito pasos guiados. Lee https://github.com/VoltAgent/awesome-agent-skills/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ No se instala: abre el repo, elige la skill y cópiala a la carpeta de skills de
 ## Stack y modelos
 
 - **Stack:** Markdown, formato SKILL.md, enlaces a repos de GitHub
-- **Modelos / API:** No usa LLM: es una lista; las skills las ejecuta tu agente (Claude Code, Codex, Cursor, Gemini CLI, Copilot, etc.).
 - **Etiquetas:** `skills` `coding-agent` `agents`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -66,6 +90,12 @@ No se instala: abre el repo, elige la skill y cópiala a la carpeta de skills de
 
 - 🐙 GitHub: [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)
 - 🌐 Web: <https://mobile-starterkit.getdesign.md/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/VoltAgent/awesome-agent-skills/blob/main/README.md)
 
 ---
 

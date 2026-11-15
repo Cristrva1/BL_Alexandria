@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Prompts y prompt engineering
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Prompts y prompt engineering
 
 # 🎯 prompt-master
 
 > Skill que ayuda a redactar prompts precisos para cualquier herramienta de IA, buscando el mejor resultado sin desperdiciar tokens.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 16k | MIT | — | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 16k | MIT | — | 2026-06-23 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
+| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+
+## Qué puedes hacer con él
 
 Te ayuda a escribir mejores prompts con meta-prompting reutilizable, como una capa por encima de cualquier IA.
 
@@ -22,9 +37,23 @@ Es transversal a casi cualquier IA (texto, imagen, video, código), lo que la ha
 
 La skill guía al asistente para clarificar la intención y construir el prompt óptimo, conservando contexto y memoria entre iteraciones. Aplica plantillas y criterios según el tipo de salida buscada (texto, imagen, código).
 
-## Instalación rápida
+## Cómo empezar
 
-Clona el repo y copia el `SKILL.md` a tu directorio de skills, o pega su contenido como instrucción en la IA que uses; sin dependencias.
+Se configura en tu agente. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un agente compatible y acceso activo a su modelo.
+
+1. Elige el agente indicado en Acceso y costes.
+2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
+3. Prueba una tarea pequeña y revisa si activa conectores externos.
+
+[Instrucciones originales de instalación](https://github.com/nidhinjs/prompt-master/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar prompt-master para mi objetivo y necesito pasos guiados. Lee https://github.com/nidhinjs/prompt-master/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +70,6 @@ Clona el repo y copia el `SKILL.md` a tu directorio de skills, o pega su conteni
 ## Stack y modelos
 
 - **Stack:** Markdown/skill
-- **Modelos / API:** Claude, ChatGPT, Gemini, Cursor, Midjourney, etc. (agnóstico).
 - **Etiquetas:** `skills` `prompts`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -54,6 +82,12 @@ Clona el repo y copia el `SKILL.md` a tu directorio de skills, o pega su conteni
 ## Enlaces
 
 - 🐙 GitHub: [nidhinjs/prompt-master](https://github.com/nidhinjs/prompt-master)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/nidhinjs/prompt-master/blob/main/README.md)
 
 ---
 

@@ -4,11 +4,14 @@
 
 | | [Chatterbox](../fichas/chatterbox.md) | [Kokoro](../fichas/kokoro.md) |
 |---|---|---|
-| Qué hace | Modelo de texto a voz open source de Resemble AI con clonación de voz y control de emoción. | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. |
+| Qué hace | Modelo de texto a voz open source de Resemble AI con clonación de voz y control de emoción. | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. |
 | ⭐ Estrellas | 27.8k | 10.1k |
 | Elígelo si… | quieres clonar voces con calidad alta y licencia libre | quieres TTS ligero, rápido y con licencia permisiva |
 | Evítalo si… | necesitas algo muy ligero en CPU; mira `kokoro` | necesitas clonar voces; mira `chatterbox` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | Apache-2.0 |
 | Instalación | `pip install chatterbox-tts` | `pip install kokoro soundfile` |

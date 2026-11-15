@@ -9,6 +9,9 @@
 | Elígelo si… | quieres extraer datos web sin programar | quieres estructura semántica "by prompt" en Python |
 | Evítalo si… | programas y prefieres librerías; mira `crawl4ai` o `scrapy` | te basta un esquema simple (llm-scraper) o el coste de LLM por página es alto |
 | Ejecución | 🏠 local | 🔀 híbrido |
+| API de IA | Depende de la ruta elegida | Sin API de IA en la ruta básica |
+| Coste | El coste depende del proveedor o la ruta | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelo local no documentado | Modelos locales documentados |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | AGPL-3.0 | MIT |
 | Instalación | `docker compose up -d` | `pip install scrapegraphai` |

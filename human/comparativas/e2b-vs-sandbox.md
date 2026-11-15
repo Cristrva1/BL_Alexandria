@@ -9,6 +9,9 @@
 | Elígelo si… | tu agente ejecuta código y necesitas aislarlo | quieres aislar la ejecución de agentes y reproducibilidad |
 | Evítalo si… | solo necesitas ejecutar código localmente de confianza | te basta correr local sin sandbox o no puedes asumir el overhead de Docker |
 | Ejecución | ☁️ cloud/API | 🔀 híbrido |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Consumo de APIs o servicios | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelo local no documentado | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟡 medio |
 | Licencia | Apache-2.0 | Apache-2.0 |
 | Instalación | `pip install e2b-code-interpreter` | `docker run` |

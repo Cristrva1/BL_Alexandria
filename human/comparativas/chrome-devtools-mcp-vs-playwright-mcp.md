@@ -9,6 +9,9 @@
 | Elígelo si… | tu agente necesita depurar una web como lo harías en DevTools | quieres que tu agente use un navegador real |
 | Evítalo si… | solo quieres automatizar navegación; mira `playwright-mcp` | necesitas depurar rendimiento y consola; mira `chrome-devtools-mcp` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Consumo del agente que ya utilizas | Consumo del agente que ya utilizas |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | Apache-2.0 | Apache-2.0 |
 | Instalación | `npx chrome-devtools-mcp@latest` | `npx @playwright/mcp@latest` |

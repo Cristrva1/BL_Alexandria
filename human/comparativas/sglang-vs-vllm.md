@@ -9,6 +9,9 @@
 | Elígelo si… | buscas el máximo rendimiento en servicio de LLM | necesitas servir LLM abiertos a muchos usuarios en GPU |
 | Evítalo si… | quieres la opción más documentada; mira `vllm` | solo los usas tú en un portátil; mira `ollama` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🔴 pesado | 🔴 pesado |
 | Licencia | Apache-2.0 | Apache-2.0 |
 | Instalación | `pip install "sglang[all]"` | `pip install vllm` |

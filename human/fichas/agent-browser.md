@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Navegadores y automatización web
+[🏠 Inicio](../README.md) › [🕷️ Buscar y extraer información web](../categorias/04-scraping-b-squeda-research-web.md) › Navegadores y automatización web
 
 # 🕷️ agent-browser
 
 > CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 51.2k | Apache-2.0 | Rust | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 51.2k | Apache-2.0 | Rust | 2026-11-14 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
+| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes. Mantiene una sesión de navegador y permite abrir páginas, inspeccionarlas y actuar por referencias desde la terminal.
 
@@ -22,9 +37,31 @@ Necesitas navegación programable con salidas compactas para un agente.
 
 Mantiene una sesión de navegador y permite abrir páginas, inspeccionarlas y actuar por referencias desde la terminal.
 
-## Instalación rápida
+## Cómo empezar
 
-Clona `git clone https://github.com/vercel-labs/agent-browser.git` y sigue la instalación del [README original](https://github.com/vercel-labs/agent-browser/blob/main/README.md). Las dependencias se configuran por proyecto.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Una distribución compatible de la CLI y su navegador.
+
+1. Instala la CLI siguiendo la ruta del README.
+2. Prepara el navegador que utiliza la distribución instalada.
+3. Abre una página de prueba, toma un snapshot y comprueba una acción sobre una referencia de elemento.
+
+**Comando de entrada documentado:**
+
+```shell
+npm install -g agent-browser
+```
+
+Comando presente en el README revisado; no es una prueba de instalación.
+
+[Instrucciones originales de instalación](https://github.com/vercel-labs/agent-browser/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar agent-browser para mi objetivo y necesito pasos guiados. Lee https://github.com/vercel-labs/agent-browser/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +78,6 @@ Clona `git clone https://github.com/vercel-labs/agent-browser.git` y sigue la in
 ## Stack y modelos
 
 - **Stack:** Rust, Node.js
-- **Modelos / API:** Configurar el proveedor o entorno indicado en el README; esta revisión no ejecutó el proyecto.
 - **Etiquetas:** `navegador` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -61,6 +97,12 @@ Clona `git clone https://github.com/vercel-labs/agent-browser.git` y sigue la in
 
 - 🐙 GitHub: [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)
 - 🌐 Web: <https://agent-browser.dev>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/vercel-labs/agent-browser/blob/main/README.md)
 
 ---
 

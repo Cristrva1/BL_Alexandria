@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Guías, cursos y cookbooks
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Guías, cursos y cookbooks
 
 # 🎓 Awesome LLM Apps
 
 > Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 145k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 145k | Apache-2.0 | Python | 2026-11-10 |
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
+| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Repositorio de Shubham Saboo con plantillas de código abierto ordenadas por tipo: agentes simples de un solo archivo, agentes avanzados con herramientas y memoria, equipos multiagente, agentes de voz, agentes con MCP, RAG, chat con documentos y webs, fine-tuning y cursos rápidos de Google ADK y OpenAI Agents SDK. Según la app usa OpenAI, Anthropic, Google, xAI, DeepSeek o modelos abiertos.
 
@@ -22,9 +37,19 @@ Cada ejemplo es un proyecto pequeño y completo que puedes ejecutar en minutos y
 
 Cada app vive en su carpeta con `requirements.txt` y un script principal, casi siempre en Python con Streamlit, y se ejecuta con tu API key. Las skills de `agent_skills/` se instalan en tu agente de código con el Skills CLI.
 
-## Instalación rápida
+## Cómo empezar
 
-`git clone https://github.com/Shubhamsaboo/awesome-llm-apps`, entra en la carpeta de la app, `pip install -r requirements.txt` y ejecuta su script (p. ej. `streamlit run travel_agent.py`) con la API key del modelo que use.
+Material para leer. [Entender los términos](../vocabulario.md).
+
+1. Abre el material original y elige un capítulo o ejemplo.
+2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
+3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+
+[Instrucciones originales de instalación](https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Awesome LLM Apps para mi objetivo y necesito pasos guiados. Lee https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Cada app vive en su carpeta con `requirements.txt` y un script principal, casi s
 ## Stack y modelos
 
 - **Stack:** Python, Streamlit, OpenAI Agents SDK, Google ADK, Agno
-- **Modelos / API:** Varía por app: OpenAI, Anthropic, Google Gemini, xAI, DeepSeek y modelos abiertos como Llama o Qwen.
 - **Etiquetas:** `agents` `rag` `learning` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -67,6 +91,12 @@ Cada app vive en su carpeta con `requirements.txt` y un script principal, casi s
 
 - 🐙 GitHub: [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps)
 - 🌐 Web: <https://www.theunwindai.com>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md)
 
 ---
 

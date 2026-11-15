@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🎨 Diseño, UI & Frontend](../categorias/09-dise-o-ui-frontend.md) › Skills de diseño para agentes
+[🏠 Inicio](../README.md) › [🎨 Diseñar y construir interfaces](../categorias/09-dise-o-ui-frontend.md) › Skills de diseño para agentes
 
 # 🎯 Stitch Skills
 
 > Colección de skills de agente para trabajar con el servidor MCP de Google Stitch.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 8.9k | Apache-2.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 8.9k | Apache-2.0 | TypeScript | 2026-06-24 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
+| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+
+## Qué puedes hacer con él
 
 Skills en el estándar abierto Agent Skills que enseñan a Claude Code, Codex o Gemini CLI a diseñar con Stitch.
 
@@ -22,9 +37,23 @@ Oficial de Google Labs y compatible con varios agentes.
 
 Carpetas SKILL.md que el agente carga para usar las herramientas MCP de Stitch.
 
-## Instalación rápida
+## Cómo empezar
 
-Copia las skills a la carpeta de skills de tu agente y configura el MCP de Stitch.
+Se configura en tu agente. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un agente compatible y acceso activo a su modelo.
+
+1. Elige el agente indicado en Acceso y costes.
+2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
+3. Prueba una tarea pequeña y revisa si activa conectores externos.
+
+[Instrucciones originales de instalación](https://github.com/google-labs-code/stitch-skills/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Stitch Skills para mi objetivo y necesito pasos guiados. Lee https://github.com/google-labs-code/stitch-skills/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +70,6 @@ Copia las skills a la carpeta de skills de tu agente y configura el MCP de Stitc
 ## Stack y modelos
 
 - **Stack:** TypeScript, Markdown
-- **Modelos / API:** Usa el modelo de tu agente.
 - **Etiquetas:** `skills` `design` `ui`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -56,6 +84,12 @@ Copia las skills a la carpeta de skills de tu agente y configura el MCP de Stitc
 
 - 🐙 GitHub: [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills)
 - 🌐 Web: <https://stitch.withgoogle.com/docs/mcp/setup>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/google-labs-code/stitch-skills/blob/main/README.md)
 
 ---
 

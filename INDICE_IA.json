@@ -26,12 +26,16 @@
    "stars": "estrellas de GitHub en meta.stars_checked",
    "gh": "owner/repo en GitHub",
    "lib": "clon confirmado en la ruta configurada; false cuando la ruta no está disponible",
-   "pick": "imprescindible de su subcategoría",
+   "pick": "punto de partida editorial de su subcategoría",
    "status": "archived/missing/local/alias (solo si aplica)",
    "alt": "sustitutos (elige uno)",
    "one": "qué es, en una frase",
    "starred_by": "cuenta cuyo star se verificó en meta.starred_sync.checked_at",
-   "github_id": "identidad estable de GitHub para conciliar cambios de nombre o propietario"
+   "github_id": "identidad estable de GitHub para conciliar cambios de nombre o propietario",
+   "access": "Acceso por ruta en INDICE_IA.detalle.json: API de IA, modelos locales, clientes, coste, equipo y fuentes.",
+   "added_at": "primera aparición del id en el historial de Git de Alexandria (fecha de Ciudad de México)",
+   "goals": "rutas por resultado, definidas en discovery.goals",
+   "updated": "fecha de revisión editorial; no equivale a actividad del proyecto original"
   },
   "stars_checked": "2026-11-14",
   "repo_url": "https://github.com/Cristrva1/BL_Alexandria",
@@ -180,7 +184,8 @@
    "count": 284,
    "added": 87,
    "snapshot": "reports/github-stars-2026-11-14.json"
-  }
+  },
+  "access_checked": "2026-11-14"
  },
  "legend": {
   "exec": {
@@ -203,8 +208,8 @@
   }
  },
  "model_guidance": {
-  "key_distinction": "Separa el AGENTE/IDE con el que CONSTRUYES (Claude Code, Codex, Antigravity, Gemini CLI, OpenCode) del LLM que tu APP llama EN EJECUCIÓN (campo prov). La mayoría de repos runtime son agnósticos al agente de código.",
-  "rule_of_thumb": "Filtra por herramienta solo en repos role=skill/directory; el resto se elige por función.",
+  "key_distinction": "Separa el agente con el que construyes, la integración que usa tu sesión y el modelo que ejecuta la aplicación. Usa access y routes para verificar cada ruta.",
+  "rule_of_thumb": "agent_tools indica contexto del agente; access documenta cómo se autentica y ejecuta la IA de cada repo.",
   "tools": {
    "claude-code": {
     "label": "Claude Code",
@@ -297,8 +302,8 @@
   {
    "num": 1,
    "emoji": "🤖",
-   "title": "Automatización, Mensajería & CRM",
-   "desc": "Motores de workflow, ecosistema n8n, WhatsApp y chat, chatbots, CRM/ERP, email y apps internas.",
+   "title": "Automatizar negocios y comunicación",
+   "desc": "Conecta aplicaciones, organiza clientes, atiende mensajes o programa procesos. Empieza por un motor de flujos; añade canales y CRM según tu objetivo.",
    "file": "human/categorias/01-automatizaci-n-mensajer-a-crm.md",
    "count": 36,
    "subs": [
@@ -335,8 +340,8 @@
   {
    "num": 2,
    "emoji": "🧠",
-   "title": "Skills, Prompts & Guías de Agente",
-   "desc": "Catálogos de skills, metodologías para agentes de código, escritura sin 'slop', prompts, cursos y cookbooks.",
+   "title": "Mejorar tu agente: skills y prompts",
+   "desc": "Instrucciones, plugins y métodos que añades a un agente que ya utilizas. Distingue una skill concreta de un directorio que solo enlaza a otras.",
    "file": "human/categorias/02-skills-prompts-gu-as-de-agente.md",
    "count": 54,
    "subs": [
@@ -369,8 +374,8 @@
   {
    "num": 3,
    "emoji": "🕸️",
-   "title": "Frameworks & Orquestación de Agentes",
-   "desc": "Agentes de código, frameworks multiagente en Python y TypeScript, builders visuales, asistentes autónomos, research e infraestructura.",
+   "title": "Crear y usar agentes de IA",
+   "desc": "Agentes listos para trabajar y frameworks para construir los tuyos. Un agente de código se utiliza; un framework se integra dentro de una aplicación.",
    "file": "human/categorias/03-frameworks-orquestaci-n-de-agentes.md",
    "count": 73,
    "subs": [
@@ -411,8 +416,8 @@
   {
    "num": 4,
    "emoji": "🕷️",
-   "title": "Scraping, Búsqueda & Research Web",
-   "desc": "Crawlers que entregan Markdown para IA, scraping guiado por LLM, navegadores automatizados, buscadores y redes sociales.",
+   "title": "Buscar y extraer información web",
+   "desc": "Buscadores, crawlers y navegadores. Usa un crawler para extraer páginas, un navegador para interactuar y un agente para investigar con un modelo.",
    "file": "human/categorias/04-scraping-b-squeda-research-web.md",
    "count": 34,
    "subs": [
@@ -441,8 +446,8 @@
   {
    "num": 5,
    "emoji": "🔌",
-   "title": "MCP & Conectividad",
-   "desc": "SDKs para crear servidores MCP, servidores destacados (navegador, GitHub, diseño, 3D), directorios y APIs públicas.",
+   "title": "Conectar herramientas con MCP",
+   "desc": "SDKs, servidores y conectores que dejan a un agente usar herramientas. El servidor MCP aporta acciones o datos; el modelo pertenece al cliente.",
    "file": "human/categorias/05-mcp-conectividad.md",
    "count": 24,
    "subs": [
@@ -471,8 +476,8 @@
   {
    "num": 6,
    "emoji": "🧬",
-   "title": "Memoria, RAG & LLM Ops",
-   "desc": "Memoria persistente para agentes, RAG, bases vectoriales, serving y gateways de LLM, ahorro de tokens y observabilidad.",
+   "title": "Memoria, conocimiento y operación de IA",
+   "desc": "Guarda memoria, consulta documentos con RAG, sirve modelos y evalúa resultados. Una base vectorial y un sistema RAG completo resuelven capas distintas.",
    "file": "human/categorias/06-memoria-rag-llm-ops.md",
    "count": 35,
    "subs": [
@@ -505,8 +510,8 @@
   {
    "num": 7,
    "emoji": "🧑‍💻",
-   "title": "Inteligencia de Código, Datos & Entrenamiento",
-   "desc": "Entender y empaquetar codebases para agentes, calidad de código, entrenar y afinar modelos, modelos abiertos y herramientas de datos.",
+   "title": "Entender código, trabajar con datos y entrenar modelos",
+   "desc": "Herramientas para analizar código, procesar datos, aprender machine learning y entrenar modelos. Separa los ejemplos de aprendizaje de las librerías que integras.",
    "file": "human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md",
    "count": 44,
    "subs": [
@@ -543,8 +548,8 @@
   {
    "num": 8,
    "emoji": "🏠",
-   "title": "IA Local: Modelos, Chats & Workspaces",
-   "desc": "Correr LLMs en tu máquina, interfaces tipo ChatGPT auto-hospedadas, workspaces privados y alternativas a NotebookLM.",
+   "title": "Usar modelos y asistentes locales",
+   "desc": "Motores de modelos, clientes de chat y espacios de trabajo. Instalar una interfaz local no garantiza que el modelo sea local: comprueba su backend.",
    "file": "human/categorias/08-ia-local-modelos-chats-workspaces.md",
    "count": 25,
    "subs": [
@@ -569,8 +574,8 @@
   {
    "num": 9,
    "emoji": "🎨",
-   "title": "Diseño, UI & Frontend",
-   "desc": "Componentes y sistemas de diseño, CSS, animación y 3D, canvas y builders, UI generada con IA y skills de diseño para agentes.",
+   "title": "Diseñar y construir interfaces",
+   "desc": "Componentes, estilos, animación, diseño visual y herramientas para crear pantallas. Las librerías de UI no necesitan por sí solas una API de IA.",
    "file": "human/categorias/09-dise-o-ui-frontend.md",
    "count": 35,
    "subs": [
@@ -603,10 +608,10 @@
   {
    "num": 10,
    "emoji": "📊",
-   "title": "Analítica & Visualización",
-   "desc": "Analítica web y de producto, BI y dashboards, chat con tus datos, librerías de gráficos y apps de datos en Python.",
+   "title": "Analizar datos, crear dashboards y mapas",
+   "desc": "Herramientas para explorar datos, crear gráficos, medir productos y visualizar fuentes abiertas. El chat con datos sí puede añadir un modelo; un gráfico convencional no lo necesita.",
    "file": "human/categorias/10-anal-tica-visualizaci-n.md",
-   "count": 37,
+   "count": 23,
    "subs": [
     {
      "key": "producto",
@@ -629,10 +634,6 @@
      "title": "Recursos y casos de uso"
     },
     {
-     "key": "finanzas",
-     "title": "Investigación financiera y trading experimental"
-    },
-    {
      "key": "osint",
      "title": "Inteligencia de fuentes abiertas y mapas"
     }
@@ -641,8 +642,8 @@
   {
    "num": 11,
    "emoji": "🖼️",
-   "title": "Generación de Imagen & Visión",
-   "desc": "Interfaces de difusión, modelos y control, restauración y upscaling, rostros y visión por computador.",
+   "title": "Generar imágenes y trabajar con visión",
+   "desc": "Generación, restauración, detección, segmentación y etiquetado de imágenes. Revisa por separado la licencia de los pesos y el hardware del modelo.",
    "file": "human/categorias/11-generaci-n-de-imagen-visi-n.md",
    "count": 28,
    "subs": [
@@ -679,8 +680,8 @@
   {
    "num": 12,
    "emoji": "🎬",
-   "title": "Audio, Voz & Video",
-   "desc": "Transcripción, síntesis y clonación de voz, agentes de voz, edición y subtítulos, video programático, video generativo y música.",
+   "title": "Crear audio, voz y video",
+   "desc": "Transcribe, sintetiza voz, edita o genera video. El montaje local y la generación mediante un proveedor son rutas con requisitos diferentes.",
    "file": "human/categorias/12-audio-voz-video.md",
    "count": 50,
    "subs": [
@@ -717,8 +718,8 @@
   {
    "num": 13,
    "emoji": "📄",
-   "title": "Documentos & Presentaciones",
-   "desc": "Convertir documentos a Markdown/JSON para IA, OCR, herramientas PDF, presentaciones y diagramas.",
+   "title": "Trabajar con documentos y presentaciones",
+   "desc": "Extrae texto, aplica OCR, transforma PDFs o crea diapositivas. Empieza por el formato de entrada y el resultado que necesitas.",
    "file": "human/categorias/13-documentos-presentaciones.md",
    "count": 24,
    "subs": [
@@ -743,6 +744,32 @@
      "title": "Diagramas y documentación"
     }
    ]
+  },
+  {
+   "num": 14,
+   "title": "Investigar finanzas y mercados",
+   "emoji": "📈",
+   "desc": "Agentes de investigación, análisis cuantitativo, backtesting y bots de ejemplo. Distingue una explicación o simulación de una operación con fondos reales.",
+   "file": "human/categorias/14-investigar-finanzas-y-mercados.md",
+   "subs": [
+    {
+     "key": "agentes",
+     "title": "Agentes de investigación financiera"
+    },
+    {
+     "key": "cuant",
+     "title": "Modelos y backtesting cuantitativo"
+    },
+    {
+     "key": "bots",
+     "title": "Bots y conexiones a exchanges"
+    },
+    {
+     "key": "aprender",
+     "title": "Ejemplos y aprendizaje"
+    }
+   ],
+   "count": 14
   }
  ],
  "recipes": [
@@ -1834,7 +1861,16 @@
    ],
    "doc": "human/fichas/n8n.md",
    "github_id": 193215554,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "automatizar",
+    "whatsapp"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "huginn",
@@ -1863,7 +1899,14 @@
    ],
    "doc": "human/fichas/huginn.md",
    "github_id": 8681349,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "automatizar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "kestra",
@@ -1892,7 +1935,15 @@
     "trigger-dev"
    ],
    "doc": "human/fichas/kestra.md",
-   "github_id": 204164353
+   "github_id": 204164353,
+   "added_at": "2026-11-10",
+   "goals": [
+    "automatizar"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "activepieces",
@@ -1920,7 +1971,16 @@
    ],
    "doc": "human/fichas/activepieces.md",
    "github_id": 573661753,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "automatizar",
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "node-red",
@@ -1948,7 +2008,14 @@
     "huginn"
    ],
    "doc": "human/fichas/node-red.md",
-   "github_id": 12618379
+   "github_id": 12618379,
+   "added_at": "2026-11-10",
+   "goals": [
+    "automatizar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "windmill",
@@ -1978,7 +2045,15 @@
     "trigger-dev"
    ],
    "doc": "human/fichas/windmill.md",
-   "github_id": 488804911
+   "github_id": 488804911,
+   "added_at": "2026-11-10",
+   "goals": [
+    "automatizar"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "trigger-dev",
@@ -2006,7 +2081,15 @@
     "kestra"
    ],
    "doc": "human/fichas/trigger-dev.md",
-   "github_id": 572570113
+   "github_id": 572570113,
+   "added_at": "2026-11-10",
+   "goals": [
+    "automatizar"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "self-hosted-ai-starter-kit",
@@ -2032,7 +2115,15 @@
    "one": "Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos.",
    "alt": [],
    "doc": "human/fichas/self-hosted-ai-starter-kit.md",
-   "github_id": 762303728
+   "github_id": 762303728,
+   "added_at": "2026-11-10",
+   "goals": [
+    "automatizar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "n8n-io",
@@ -2060,7 +2151,8 @@
    "alt": [],
    "doc": "human/fichas/n8n-io.md",
    "starred_by": "Cristrva1",
-   "github_id": 193215554
+   "github_id": 193215554,
+   "added_at": "2026-06-23"
   },
   {
    "id": "awesome-n8n-templates",
@@ -2081,10 +2173,19 @@
    "gh": "enescingoz/awesome-n8n-templates",
    "lib": false,
    "pick": false,
-   "one": "Colección de más de 280 plantillas gratuitas de n8n listas para importar, con IA y apps populares.",
+   "one": "Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales.",
    "alt": [],
    "doc": "human/fichas/awesome-n8n-templates.md",
-   "github_id": 980205160
+   "github_id": 980205160,
+   "added_at": "2026-11-10",
+   "goals": [
+    "automatizar",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "n8n-mcp",
@@ -2106,11 +2207,20 @@
    "gh": "czlonkowski/n8n-mcp",
    "lib": false,
    "pick": false,
-   "one": "Servidor MCP que expone a la IA la documentación y los esquemas de los más de 1.845 nodos de n8n (816 core + 1.029 comunitarios) para ayudar a construir y depurar flujos.",
+   "one": "Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows.",
    "alt": [],
    "doc": "human/fichas/n8n-mcp.md",
    "github_id": 997890921,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "automatizar",
+    "mcp"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "n8n-skills",
@@ -2131,11 +2241,19 @@
    "gh": "czlonkowski/n8n-skills",
    "lib": false,
    "pick": false,
-   "one": "Conjunto de 14 skills estructuradas para Claude Code orientadas a construir flujos de n8n correctos, evitando errores al generar su JSON.",
+   "one": "Skills para ayudar a un agente a construir, revisar y depurar workflows de n8n con sus nodos y herramientas.",
    "alt": [],
    "doc": "human/fichas/n8n-skills.md",
    "github_id": 1079619168,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "automatizar"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "whatsapp-web-js",
@@ -2164,7 +2282,14 @@
     "evolution-api"
    ],
    "doc": "human/fichas/whatsapp-web-js.md",
-   "github_id": 171072967
+   "github_id": 171072967,
+   "added_at": "2026-11-10",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "openwa",
@@ -2190,7 +2315,14 @@
    "alt": [],
    "doc": "human/fichas/openwa.md",
    "github_id": 1147961398,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "baileys",
@@ -2218,7 +2350,14 @@
     "waha"
    ],
    "doc": "human/fichas/baileys.md",
-   "github_id": 447363864
+   "github_id": 447363864,
+   "added_at": "2026-11-10",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "fluxer",
@@ -2240,11 +2379,18 @@
    "gh": "fluxerapp/fluxer",
    "lib": false,
    "pick": false,
-   "one": "Plataforma generativa emergente con foco en audio y video mejorados, ofrecida como cliente Canary web/desktop; su API y self-host aún están en finalización.",
+   "one": "Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio.",
    "alt": [],
    "doc": "human/fichas/fluxer.md",
    "github_id": 1126407668,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "evolution-api",
@@ -2274,7 +2420,14 @@
    ],
    "doc": "human/fichas/evolution-api.md",
    "github_id": 651487266,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "waha",
@@ -2303,7 +2456,14 @@
     "baileys"
    ],
    "doc": "human/fichas/waha.md",
-   "github_id": 305646330
+   "github_id": 305646330,
+   "added_at": "2026-11-10",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "whatsapp-agentkit",
@@ -2329,7 +2489,15 @@
    "alt": [],
    "doc": "human/fichas/whatsapp-agentkit.md",
    "github_id": 1184935822,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "claude",
+    "api"
+   ]
   },
   {
    "id": "typebot",
@@ -2356,7 +2524,15 @@
     "botpress"
    ],
    "doc": "human/fichas/typebot.md",
-   "github_id": 429736266
+   "github_id": 429736266,
+   "added_at": "2026-11-10",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "rasa",
@@ -2383,7 +2559,14 @@
     "botpress"
    ],
    "doc": "human/fichas/rasa.md",
-   "github_id": 70908208
+   "github_id": 70908208,
+   "added_at": "2026-11-10",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "botpress",
@@ -2411,7 +2594,14 @@
     "rasa"
    ],
    "doc": "human/fichas/botpress.md",
-   "github_id": 73964895
+   "github_id": 73964895,
+   "added_at": "2026-11-10",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "odoo",
@@ -2438,7 +2628,14 @@
     "erpnext"
    ],
    "doc": "human/fichas/odoo.md",
-   "github_id": 19745004
+   "github_id": 19745004,
+   "added_at": "2026-11-10",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "twenty-main",
@@ -2465,7 +2662,15 @@
    "alt": [],
    "doc": "human/fichas/twenty-main.md",
    "github_id": 572984571,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "erpnext",
@@ -2491,7 +2696,14 @@
     "odoo"
    ],
    "doc": "human/fichas/erpnext.md",
-   "github_id": 1864233
+   "github_id": 1864233,
+   "added_at": "2026-11-10",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "chatwoot",
@@ -2518,7 +2730,15 @@
    "alt": [],
    "doc": "human/fichas/chatwoot.md",
    "github_id": 202291859,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "novu",
@@ -2543,7 +2763,12 @@
    "one": "Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend.",
    "alt": [],
    "doc": "human/fichas/novu.md",
-   "github_id": 400215964
+   "github_id": 400215964,
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "listmonk",
@@ -2569,7 +2794,12 @@
    "one": "Gestor self-hosted de newsletters y listas de correo de alto rendimiento, pensado para envíos masivos sin depender de un SaaS.",
    "alt": [],
    "doc": "human/fichas/listmonk.md",
-   "github_id": 193833307
+   "github_id": 193833307,
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "mautic",
@@ -2595,7 +2825,12 @@
    "alt": [],
    "doc": "human/fichas/mautic.md",
    "github_id": 12204147,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "nocodb",
@@ -2623,7 +2858,14 @@
     "budibase"
    ],
    "doc": "human/fichas/nocodb.md",
-   "github_id": 108761645
+   "github_id": 108761645,
+   "added_at": "2026-11-10",
+   "goals": [
+    "automatizar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "tooljet",
@@ -2652,7 +2894,15 @@
    ],
    "doc": "human/fichas/tooljet.md",
    "github_id": 352933140,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "automatizar"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "appsmith",
@@ -2683,7 +2933,15 @@
    ],
    "doc": "human/fichas/appsmith.md",
    "github_id": 275993885,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "automatizar"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "budibase",
@@ -2713,7 +2971,15 @@
    ],
    "doc": "human/fichas/budibase.md",
    "github_id": 190729906,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "automatizar"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "anthropic-skills",
@@ -2743,7 +3009,14 @@
    "alt": [],
    "doc": "human/fichas/anthropic-skills.md",
    "github_id": 1061953414,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude"
+   ]
   },
   {
    "id": "claude-plugins-official",
@@ -2767,13 +3040,21 @@
    "gh": "anthropics/claude-plugins-official",
    "lib": false,
    "pick": true,
-   "one": "Marketplace oficial de Anthropic con plugins para Claude Code, propios y de socios: comandos, agentes, skills y servidores MCP.",
+   "one": "Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code.",
    "alt": [
     "wshobson-agents"
    ],
    "doc": "human/fichas/claude-plugins-official.md",
    "github_id": 1100776768,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "mcp",
+    "skills"
+   ],
+   "routes": [
+    "claude"
+   ]
   },
   {
    "id": "awesome-claude-skills",
@@ -2804,7 +3085,16 @@
     "awesome-claude-code"
    ],
    "doc": "human/fichas/awesome-claude-skills.md",
-   "github_id": 1078079172
+   "github_id": 1078079172,
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "awesome-claude-code",
@@ -2834,7 +3124,16 @@
    ],
    "doc": "human/fichas/awesome-claude-code.md",
    "github_id": 969302809,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "antigravity-awesome-skills",
@@ -2865,7 +3164,16 @@
    ],
    "doc": "human/fichas/antigravity-awesome-skills.md",
    "github_id": 1134426800,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "mcp",
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "wshobson-agents",
@@ -2895,7 +3203,15 @@
     "agency-agents"
    ],
    "doc": "human/fichas/wshobson-agents.md",
-   "github_id": 1025856648
+   "github_id": 1025856648,
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "awesome-copilot",
@@ -2921,7 +3237,13 @@
    "one": "Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y plugins para personalizar GitHub Copilot.",
    "alt": [],
    "doc": "human/fichas/awesome-copilot.md",
-   "github_id": 1000362065
+   "github_id": 1000362065,
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp",
+    "skills"
+   ],
+   "routes": []
   },
   {
    "id": "awesome-agent-skills",
@@ -2950,7 +3272,16 @@
    ],
    "doc": "human/fichas/awesome-agent-skills.md",
    "github_id": 1084853233,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "agent-skills",
@@ -2971,12 +3302,20 @@
    "gh": "addyosmani/agent-skills",
    "lib": false,
    "pick": true,
-   "one": "Colección de skills de ingeniería de producción para agentes de código, de Addy Osmani.",
+   "one": "Colección de Addy Osmani con skills de ingeniería para especificar, planificar, construir, verificar y revisar software con agentes.",
    "alt": [
     "superpowers"
    ],
    "doc": "human/fichas/agent-skills.md",
-   "github_id": 1158722119
+   "github_id": 1158722119,
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "skills",
@@ -3001,7 +3340,16 @@
    "alt": [],
    "doc": "human/fichas/skills.md",
    "github_id": 1148788086,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "superpowers",
@@ -3028,7 +3376,15 @@
    ],
    "doc": "human/fichas/superpowers.md",
    "github_id": 1073224795,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "ecc",
@@ -3050,11 +3406,18 @@
    "gh": "affaan-m/ECC",
    "lib": false,
    "pick": false,
-   "one": "Sistema operativo/arnés unificado para desarrollar, ejecutar y desplegar en local agentes de IA de alto rendimiento de forma segura.",
+   "one": "Colección de plugins, skills, hooks y convenciones para organizar el trabajo de agentes de código en un proyecto.",
    "alt": [],
    "doc": "human/fichas/ecc.md",
    "github_id": 1136590548,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "andrej-karpathy-skills",
@@ -3079,7 +3442,14 @@
    "alt": [],
    "doc": "human/fichas/andrej-karpathy-skills.md",
    "github_id": 1142983825,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude"
+   ]
   },
   {
    "id": "ponytail",
@@ -3104,7 +3474,15 @@
    "alt": [],
    "doc": "human/fichas/ponytail.md",
    "github_id": 1266797999,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "spec-kit",
@@ -3132,7 +3510,12 @@
    ],
    "doc": "human/fichas/spec-kit.md",
    "github_id": 1042367133,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills"
+   ],
+   "routes": []
   },
   {
    "id": "bmad-method",
@@ -3159,7 +3542,12 @@
     "spec-kit"
    ],
    "doc": "human/fichas/bmad-method.md",
-   "github_id": 965615190
+   "github_id": 965615190,
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills"
+   ],
+   "routes": []
   },
   {
    "id": "skillspector",
@@ -3167,7 +3555,7 @@
    "emoji": "🛡️",
    "cat": 2,
    "sub": "metodologia",
-   "role": "skill",
+   "role": "app",
    "exec": "cloud",
    "setup": "easy",
    "mcp": false,
@@ -3185,7 +3573,14 @@
    "alt": [],
    "doc": "human/fichas/skillspector.md",
    "github_id": 1187630119,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "agent-toolkit",
@@ -3211,7 +3606,15 @@
    "alt": [],
    "doc": "human/fichas/agent-toolkit.md",
    "github_id": 1137485434,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "humanizer",
@@ -3239,7 +3642,15 @@
    ],
    "doc": "human/fichas/humanizer.md",
    "github_id": 1136666433,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "stop-slop",
@@ -3267,7 +3678,14 @@
    ],
    "doc": "human/fichas/stop-slop.md",
    "github_id": 1132137660,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude"
+   ]
   },
   {
    "id": "marketingskills",
@@ -3294,7 +3712,15 @@
    "alt": [],
    "doc": "human/fichas/marketingskills.md",
    "github_id": 1135212071,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "agency-agents",
@@ -3323,7 +3749,15 @@
    ],
    "doc": "human/fichas/agency-agents.md",
    "github_id": 1075372545,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "geo-seo-claude",
@@ -3352,7 +3786,14 @@
    "alt": [],
    "doc": "human/fichas/geo-seo-claude.md",
    "github_id": 1160693255,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude"
+   ]
   },
   {
    "id": "arcads-claude-code",
@@ -3379,7 +3820,15 @@
    "alt": [],
    "doc": "human/fichas/arcads-claude-code.md",
    "github_id": 1198651456,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "api"
+   ]
   },
   {
    "id": "prompt-engineering-guide",
@@ -3406,7 +3855,16 @@
     "prompt-eng-tutorial"
    ],
    "doc": "human/fichas/prompt-engineering-guide.md",
-   "github_id": 579082810
+   "github_id": 579082810,
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "fabric",
@@ -3437,7 +3895,16 @@
     "prompts-chat"
    ],
    "doc": "human/fichas/fabric.md",
-   "github_id": 738733003
+   "github_id": 738733003,
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "no_api",
+    "codex",
+    "api"
+   ]
   },
   {
    "id": "prompts-chat",
@@ -3463,7 +3930,16 @@
     "fabric"
    ],
    "doc": "human/fichas/prompts-chat.md",
-   "github_id": 574523116
+   "github_id": 574523116,
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "prompt-eng-tutorial",
@@ -3493,7 +3969,16 @@
    ],
    "doc": "human/fichas/prompt-eng-tutorial.md",
    "github_id": 781022269,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "prompt-master",
@@ -3518,7 +4003,15 @@
    "alt": [],
    "doc": "human/fichas/prompt-master.md",
    "github_id": 1179046874,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "generative-ai-for-beginners",
@@ -3540,12 +4033,21 @@
    "gh": "microsoft/generative-ai-for-beginners",
    "lib": false,
    "pick": true,
-   "one": "Curso gratuito de Microsoft con 21 lecciones para empezar a construir aplicaciones con IA generativa.",
+   "one": "Curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa.",
    "alt": [
     "llm-course"
    ],
    "doc": "human/fichas/generative-ai-for-beginners.md",
-   "github_id": 655806940
+   "github_id": 655806940,
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "ai-agents-for-beginners",
@@ -3575,7 +4077,16 @@
    "alt": [],
    "doc": "human/fichas/ai-agents-for-beginners.md",
    "github_id": 895508656,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "awesome-llm-apps",
@@ -3610,7 +4121,16 @@
    ],
    "doc": "human/fichas/awesome-llm-apps.md",
    "github_id": 793375104,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "openai-cookbook",
@@ -3639,7 +4159,16 @@
    ],
    "doc": "human/fichas/openai-cookbook.md",
    "github_id": 468576060,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "claude-cookbooks",
@@ -3671,7 +4200,16 @@
    ],
    "doc": "human/fichas/claude-cookbooks.md",
    "github_id": 678973052,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "12-factor-agents",
@@ -3697,7 +4235,16 @@
    "one": "Guía de 12 principios de ingeniería para construir agentes con LLM fiables en producción, inspirada en las 12 Factor Apps.",
    "alt": [],
    "doc": "human/fichas/12-factor-agents.md",
-   "github_id": 957658915
+   "github_id": 957658915,
+   "added_at": "2026-11-10",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "agents-towards-production",
@@ -3727,7 +4274,17 @@
    "alt": [],
    "doc": "human/fichas/agents-towards-production.md",
    "github_id": 1003143578,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "mcp",
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "loop-engineering",
@@ -3753,7 +4310,15 @@
    "alt": [],
    "doc": "human/fichas/loop-engineering.md",
    "github_id": 1263648864,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "context-engineering",
@@ -3778,7 +4343,16 @@
    "alt": [],
    "doc": "human/fichas/context-engineering.md",
    "github_id": 1010380782,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "opencode",
@@ -3815,7 +4389,15 @@
    ],
    "doc": "human/fichas/opencode.md",
    "github_id": 975734319,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "programar",
+    "mcp"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "claude-code",
@@ -3850,7 +4432,17 @@
    ],
    "doc": "human/fichas/claude-code.md",
    "github_id": 937253475,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "programar",
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "api"
+   ]
   },
   {
    "id": "codex",
@@ -3882,7 +4474,17 @@
     "opencode"
    ],
    "doc": "human/fichas/codex.md",
-   "github_id": 965415649
+   "github_id": 965415649,
+   "added_at": "2026-11-10",
+   "goals": [
+    "programar",
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "codex",
+    "api"
+   ]
   },
   {
    "id": "gemini-cli",
@@ -3914,7 +4516,15 @@
     "opencode"
    ],
    "doc": "human/fichas/gemini-cli.md",
-   "github_id": 968197216
+   "github_id": 968197216,
+   "added_at": "2026-11-10",
+   "goals": [
+    "programar",
+    "mcp"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "openhands",
@@ -3944,7 +4554,14 @@
    ],
    "doc": "human/fichas/openhands.md",
    "github_id": 771302083,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "cline",
@@ -3977,7 +4594,17 @@
     "aider"
    ],
    "doc": "human/fichas/cline.md",
-   "github_id": 824874689
+   "github_id": 824874689,
+   "added_at": "2026-11-10",
+   "goals": [
+    "programar",
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "open-interpreter",
@@ -4007,7 +4634,14 @@
     "goose"
    ],
    "doc": "human/fichas/open-interpreter.md",
-   "github_id": 666299222
+   "github_id": 666299222,
+   "added_at": "2026-11-10",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "goose",
@@ -4042,7 +4676,19 @@
     "open-interpreter"
    ],
    "doc": "human/fichas/goose.md",
-   "github_id": 846698999
+   "github_id": 846698999,
+   "added_at": "2026-11-10",
+   "goals": [
+    "programar",
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "t3code",
@@ -4067,7 +4713,17 @@
    "one": "Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina.",
    "alt": [],
    "doc": "human/fichas/t3code.md",
-   "github_id": 1153130349
+   "github_id": 1153130349,
+   "added_at": "2026-08-23",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "api"
+   ]
   },
   {
    "id": "aider",
@@ -4099,7 +4755,14 @@
     "continue"
    ],
    "doc": "human/fichas/aider.md",
-   "github_id": 638629097
+   "github_id": 638629097,
+   "added_at": "2026-11-10",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "continue",
@@ -4130,7 +4793,14 @@
     "aider"
    ],
    "doc": "human/fichas/continue.md",
-   "github_id": 644686905
+   "github_id": 644686905,
+   "added_at": "2026-11-10",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "swe-agent",
@@ -4161,7 +4831,14 @@
     "open-swe"
    ],
    "doc": "human/fichas/swe-agent.md",
-   "github_id": 780737106
+   "github_id": 780737106,
+   "added_at": "2026-11-10",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "open-swe",
@@ -4193,7 +4870,14 @@
    ],
    "doc": "human/fichas/open-swe.md",
    "github_id": 987975584,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "langgraph",
@@ -4229,7 +4913,12 @@
    ],
    "doc": "human/fichas/langgraph.md",
    "github_id": 676672661,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "langchain",
@@ -4259,7 +4948,12 @@
    ],
    "doc": "human/fichas/langchain.md",
    "github_id": 552661142,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "autogen",
@@ -4292,7 +4986,12 @@
    ],
    "doc": "human/fichas/autogen.md",
    "github_id": 680120071,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "crewai",
@@ -4323,7 +5022,12 @@
    ],
    "doc": "human/fichas/crewai.md",
    "github_id": 710601088,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "llama-index",
@@ -4355,7 +5059,14 @@
     "langchain"
    ],
    "doc": "human/fichas/llama-index.md",
-   "github_id": 560704231
+   "github_id": 560704231,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "agno",
@@ -4387,7 +5098,12 @@
     "crewai"
    ],
    "doc": "human/fichas/agno.md",
-   "github_id": 488641606
+   "github_id": 488641606,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "dspy",
@@ -4418,7 +5134,12 @@
     "promptfoo"
    ],
    "doc": "human/fichas/dspy.md",
-   "github_id": 587050620
+   "github_id": 587050620,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "deepagents",
@@ -4448,7 +5169,14 @@
    ],
    "doc": "human/fichas/deepagents.md",
    "github_id": 1027384981,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "openai-agents-python",
@@ -4481,7 +5209,14 @@
    ],
    "doc": "human/fichas/openai-agents-python.md",
    "github_id": 946380199,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "smolagents",
@@ -4511,7 +5246,14 @@
     "openai-agents-python"
    ],
    "doc": "human/fichas/smolagents.md",
-   "github_id": 898968194
+   "github_id": 898968194,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "haystack",
@@ -4543,7 +5285,12 @@
     "langchain"
    ],
    "doc": "human/fichas/haystack.md",
-   "github_id": 221654678
+   "github_id": 221654678,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "adk-python",
@@ -4574,7 +5321,12 @@
     "openai-agents-python"
    ],
    "doc": "human/fichas/adk-python.md",
-   "github_id": 958830659
+   "github_id": 958830659,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "pydantic-ai",
@@ -4607,7 +5359,14 @@
     "langgraph"
    ],
    "doc": "human/fichas/pydantic-ai.md",
-   "github_id": 818331198
+   "github_id": 818331198,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "ag2",
@@ -4634,7 +5393,14 @@
     "autogen"
    ],
    "doc": "human/fichas/ag2.md",
-   "github_id": 886912514
+   "github_id": 886912514,
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "awesome-langgraph",
@@ -4660,7 +5426,15 @@
    "alt": [],
    "doc": "human/fichas/awesome-langgraph.md",
    "github_id": 882354535,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "langgraph-supervisor-py",
@@ -4688,7 +5462,12 @@
    ],
    "doc": "human/fichas/langgraph-supervisor-py.md",
    "github_id": 927970248,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "mastra",
@@ -4721,7 +5500,14 @@
     "vercel-ai"
    ],
    "doc": "human/fichas/mastra.md",
-   "github_id": 839037098
+   "github_id": 839037098,
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "semantic-kernel",
@@ -4750,7 +5536,14 @@
     "langchain"
    ],
    "doc": "human/fichas/semantic-kernel.md",
-   "github_id": 607289185
+   "github_id": 607289185,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "vercel-ai",
@@ -4784,7 +5577,12 @@
     "mastra"
    ],
    "doc": "human/fichas/vercel-ai.md",
-   "github_id": 644461337
+   "github_id": 644461337,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "agent-framework",
@@ -4814,7 +5612,12 @@
     "semantic-kernel"
    ],
    "doc": "human/fichas/agent-framework.md",
-   "github_id": 974445592
+   "github_id": 974445592,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "langgraphjs",
@@ -4842,7 +5645,12 @@
    ],
    "doc": "human/fichas/langgraphjs.md",
    "github_id": 741100585,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "sim",
@@ -4876,7 +5684,12 @@
     "autogpt"
    ],
    "doc": "human/fichas/sim.md",
-   "github_id": 912559512
+   "github_id": 912559512,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "autogpt",
@@ -4908,7 +5721,12 @@
     "flowise"
    ],
    "doc": "human/fichas/autogpt.md",
-   "github_id": 614765452
+   "github_id": 614765452,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "dify",
@@ -4938,7 +5756,12 @@
    ],
    "doc": "human/fichas/dify.md",
    "github_id": 626805178,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "langflow",
@@ -4968,7 +5791,12 @@
    ],
    "doc": "human/fichas/langflow.md",
    "github_id": 599320067,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "flowise",
@@ -4992,14 +5820,19 @@
    "lib": false,
    "pick": false,
    "status": "archived",
-   "one": "Builder visual drag-and-drop para pipelines LLM.",
+   "one": "Constructor visual para diseñar aplicaciones de IA conectando modelos, herramientas, memoria y fuentes de datos.",
    "alt": [
     "sim",
     "autogpt"
    ],
    "doc": "human/fichas/flowise.md",
    "github_id": 621803253,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "openclaw",
@@ -5032,7 +5865,14 @@
    ],
    "doc": "human/fichas/openclaw.md",
    "github_id": 1103012935,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "hermes-agent",
@@ -5060,7 +5900,12 @@
    ],
    "doc": "human/fichas/hermes-agent.md",
    "github_id": 1024554267,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "ruflo",
@@ -5086,7 +5931,15 @@
    "alt": [],
    "doc": "human/fichas/ruflo.md",
    "github_id": 995029641,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "api"
+   ]
   },
   {
    "id": "deeptutor",
@@ -5118,7 +5971,12 @@
    ],
    "doc": "human/fichas/deeptutor.md",
    "github_id": 1124219907,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "multica",
@@ -5143,7 +6001,15 @@
    "alt": [],
    "doc": "human/fichas/multica.md",
    "github_id": 1133707766,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "api"
+   ]
   },
   {
    "id": "mercury-agent",
@@ -5172,7 +6038,14 @@
    ],
    "doc": "human/fichas/mercury-agent.md",
    "github_id": 1215974868,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "autoresearch",
@@ -5198,7 +6071,15 @@
    "alt": [],
    "doc": "human/fichas/autoresearch.md",
    "github_id": 1174820787,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "deer-flow",
@@ -5225,7 +6106,14 @@
    "alt": [],
    "doc": "human/fichas/deer-flow.md",
    "github_id": 979115477,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "storm",
@@ -5254,7 +6142,14 @@
     "gpt-researcher"
    ],
    "doc": "human/fichas/storm.md",
-   "github_id": 776854298
+   "github_id": 776854298,
+   "added_at": "2026-11-10",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "gpt-researcher",
@@ -5285,7 +6180,14 @@
    ],
    "doc": "human/fichas/gpt-researcher.md",
    "github_id": 639835356,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "composio",
@@ -5315,7 +6217,14 @@
    "one": "Plataforma con más de 1000 integraciones con autenticación gestionada para que tus agentes actúen en apps reales.",
    "alt": [],
    "doc": "human/fichas/composio.md",
-   "github_id": 762304524
+   "github_id": 762304524,
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "e2b",
@@ -5342,7 +6251,12 @@
     "sandbox"
    ],
    "doc": "human/fichas/e2b.md",
-   "github_id": 609539715
+   "github_id": 609539715,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "nemoclaw",
@@ -5370,7 +6284,12 @@
    ],
    "doc": "human/fichas/nemoclaw.md",
    "github_id": 1182547092,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "sandbox",
@@ -5400,7 +6319,14 @@
    ],
    "doc": "human/fichas/sandbox.md",
    "github_id": 1033268244,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "computer-use-preview",
@@ -5431,7 +6357,12 @@
    ],
    "doc": "human/fichas/computer-use-preview.md",
    "github_id": 978411532,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "nemo-agent-toolkit",
@@ -5457,7 +6388,12 @@
    "alt": [],
    "doc": "human/fichas/nemo-agent-toolkit.md",
    "github_id": 944039567,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "agent-protocol",
@@ -5482,7 +6418,15 @@
    "alt": [],
    "doc": "human/fichas/agent-protocol.md",
    "github_id": 887568442,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "mirofish",
@@ -5507,7 +6451,12 @@
    "alt": [],
    "doc": "human/fichas/mirofish.md",
    "github_id": 1104332987,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "llm-council",
@@ -5532,7 +6481,12 @@
    "alt": [],
    "doc": "human/fichas/llm-council.md",
    "github_id": 1102157650,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "openevolve",
@@ -5558,7 +6512,12 @@
    "alt": [],
    "doc": "human/fichas/openevolve.md",
    "github_id": 984096689,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "firecrawl",
@@ -5586,7 +6545,15 @@
    ],
    "doc": "human/fichas/firecrawl.md",
    "github_id": 787076358,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "investigar",
+    "mcp"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "scrapling",
@@ -5612,7 +6579,14 @@
    "alt": [],
    "doc": "human/fichas/scrapling.md",
    "github_id": 872119017,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "crawl4ai",
@@ -5639,7 +6613,16 @@
    ],
    "doc": "human/fichas/crawl4ai.md",
    "github_id": 798201435,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "scrapy",
@@ -5664,7 +6647,14 @@
    "alt": [],
    "doc": "human/fichas/scrapy.md",
    "github_id": 529502,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "crawlee",
@@ -5688,7 +6678,14 @@
    "one": "Framework moderno de crawling para Node.js con antibloqueo integrado, que unifica scraping de HTTP y de navegador bajo una misma API con colas y reintentos.",
    "alt": [],
    "doc": "human/fichas/crawlee.md",
-   "github_id": 66670819
+   "github_id": 66670819,
+   "added_at": "2026-06-23",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "jina-reader",
@@ -5716,7 +6713,14 @@
     "crawl4ai"
    ],
    "doc": "human/fichas/jina-reader.md",
-   "github_id": 784546140
+   "github_id": 784546140,
+   "added_at": "2026-11-10",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "crawlee-python",
@@ -5741,7 +6745,14 @@
    "alt": [],
    "doc": "human/fichas/crawlee-python.md",
    "github_id": 741365632,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "scrapely",
@@ -5765,7 +6776,14 @@
    "alt": [],
    "doc": "human/fichas/scrapely.md",
    "github_id": 1632998,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "scrapegraph-ai",
@@ -5792,7 +6810,15 @@
    ],
    "doc": "human/fichas/scrapegraph-ai.md",
    "github_id": 749126547,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "maxun",
@@ -5820,7 +6846,14 @@
     "llm-scraper"
    ],
    "doc": "human/fichas/maxun.md",
-   "github_id": 709027512
+   "github_id": 709027512,
+   "added_at": "2026-11-10",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "llm-scraper",
@@ -5847,7 +6880,15 @@
    ],
    "doc": "human/fichas/llm-scraper.md",
    "github_id": 789480255,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "stagehand",
@@ -5878,7 +6919,12 @@
     "skyvern"
    ],
    "doc": "human/fichas/stagehand.md",
-   "github_id": 776908852
+   "github_id": 776908852,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "browser-use",
@@ -5909,7 +6955,12 @@
    ],
    "doc": "human/fichas/browser-use.md",
    "github_id": 881458615,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "playwright",
@@ -5937,7 +6988,14 @@
     "selenium"
    ],
    "doc": "human/fichas/playwright.md",
-   "github_id": 221981891
+   "github_id": 221981891,
+   "added_at": "2026-06-23",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "puppeteer",
@@ -5965,7 +7023,12 @@
     "selenium"
    ],
    "doc": "human/fichas/puppeteer.md",
-   "github_id": 90796663
+   "github_id": 90796663,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "lightpanda",
@@ -5989,7 +7052,12 @@
    "one": "Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome.",
    "alt": [],
    "doc": "human/fichas/lightpanda.md",
-   "github_id": 598667202
+   "github_id": 598667202,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "selenium",
@@ -6017,7 +7085,12 @@
     "puppeteer"
    ],
    "doc": "human/fichas/selenium.md",
-   "github_id": 7613257
+   "github_id": 7613257,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "skyvern",
@@ -6049,7 +7122,13 @@
     "computer-use-preview"
    ],
    "doc": "human/fichas/skyvern.md",
-   "github_id": 764723738
+   "github_id": 764723738,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "browser-harness",
@@ -6078,7 +7157,13 @@
    ],
    "doc": "human/fichas/browser-harness.md",
    "github_id": 1213049020,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "playwright-cli",
@@ -6105,7 +7190,12 @@
    ],
    "doc": "human/fichas/playwright-cli.md",
    "github_id": 273562379,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "claude"
+   ]
   },
   {
    "id": "searxng",
@@ -6131,7 +7221,14 @@
    "one": "Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal como buscador para agentes.",
    "alt": [],
    "doc": "human/fichas/searxng.md",
-   "github_id": 357241735
+   "github_id": 357241735,
+   "added_at": "2026-11-10",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "agent-reach",
@@ -6158,7 +7255,14 @@
     "snscrape"
    ],
    "doc": "human/fichas/agent-reach.md",
-   "github_id": 1165277268
+   "github_id": 1165277268,
+   "added_at": "2026-08-23",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "last30days-skill",
@@ -6186,7 +7290,15 @@
    ],
    "doc": "human/fichas/last30days-skill.md",
    "github_id": 1140843380,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "vane",
@@ -6217,7 +7329,15 @@
     "gpt-researcher"
    ],
    "doc": "human/fichas/vane.md",
-   "github_id": 784181462
+   "github_id": 784181462,
+   "added_at": "2026-11-10",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "changedetection",
@@ -6244,7 +7364,15 @@
    "alt": [],
    "doc": "human/fichas/changedetection.md",
    "github_id": 333483116,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "archivebox",
@@ -6271,7 +7399,15 @@
    "alt": [],
    "doc": "human/fichas/archivebox.md",
    "github_id": 90356372,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "yt-dlp",
@@ -6297,7 +7433,12 @@
    "one": "Descargador de audio y video por línea de comandos compatible con miles de sitios.",
    "alt": [],
    "doc": "human/fichas/yt-dlp.md",
-   "github_id": 307260205
+   "github_id": 307260205,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "instaloader",
@@ -6322,7 +7463,12 @@
    "one": "Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de Instagram.",
    "alt": [],
    "doc": "human/fichas/instaloader.md",
-   "github_id": 61200117
+   "github_id": 61200117,
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "snscrape",
@@ -6348,7 +7494,12 @@
     "agent-reach"
    ],
    "doc": "human/fichas/snscrape.md",
-   "github_id": 148062266
+   "github_id": 148062266,
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "fastmcp",
@@ -6376,7 +7527,14 @@
     "mcp-python-sdk"
    ],
    "doc": "human/fichas/fastmcp.md",
-   "github_id": 896296825
+   "github_id": 896296825,
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "mcp-typescript-sdk",
@@ -6404,7 +7562,14 @@
     "mcp-use"
    ],
    "doc": "human/fichas/mcp-typescript-sdk.md",
-   "github_id": 862578138
+   "github_id": 862578138,
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "mcp-python-sdk",
@@ -6432,7 +7597,14 @@
     "fastmcp"
    ],
    "doc": "human/fichas/mcp-python-sdk.md",
-   "github_id": 862584018
+   "github_id": 862584018,
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "mcp-inspector",
@@ -6457,7 +7629,14 @@
    "one": "Herramienta oficial para probar y depurar servidores MCP desde una interfaz web.",
    "alt": [],
    "doc": "human/fichas/mcp-inspector.md",
-   "github_id": 867337374
+   "github_id": 867337374,
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "mcp-use",
@@ -6485,7 +7664,14 @@
     "mcp-typescript-sdk"
    ],
    "doc": "human/fichas/mcp-use.md",
-   "github_id": 956472076
+   "github_id": 956472076,
+   "added_at": "2026-06-23",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "langchain-mcp-adapters",
@@ -6516,7 +7702,14 @@
    ],
    "doc": "human/fichas/langchain-mcp-adapters.md",
    "github_id": 929158279,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "context7",
@@ -6546,7 +7739,16 @@
    ],
    "doc": "human/fichas/context7.md",
    "github_id": 955620917,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "playwright-mcp",
@@ -6577,7 +7779,15 @@
     "browser-harness"
    ],
    "doc": "human/fichas/playwright-mcp.md",
-   "github_id": 952688112
+   "github_id": 952688112,
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "servers",
@@ -6602,7 +7812,16 @@
    "alt": [],
    "doc": "human/fichas/servers.md",
    "github_id": 890668799,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "mcp",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "chrome-devtools-mcp",
@@ -6633,7 +7852,15 @@
    ],
    "doc": "human/fichas/chrome-devtools-mcp.md",
    "github_id": 1054793726,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "github-mcp-server",
@@ -6661,7 +7888,16 @@
    "alt": [],
    "doc": "human/fichas/github-mcp-server.md",
    "github_id": 942771284,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "blender-mcp",
@@ -6688,7 +7924,16 @@
    "one": "Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP.",
    "alt": [],
    "doc": "human/fichas/blender-mcp.md",
-   "github_id": 944414751
+   "github_id": 944414751,
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "serena",
@@ -6719,7 +7964,15 @@
     "gitnexus"
    ],
    "doc": "human/fichas/serena.md",
-   "github_id": 953683578
+   "github_id": 953683578,
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "figma-context-mcp",
@@ -6747,7 +8000,16 @@
    "one": "Servidor MCP que entrega a los agentes de código el layout de tus diseños de Figma para implementarlos.",
    "alt": [],
    "doc": "human/fichas/figma-context-mcp.md",
-   "github_id": 931892749
+   "github_id": 931892749,
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "mcp-neo4j",
@@ -6772,7 +8034,15 @@
    "alt": [],
    "doc": "human/fichas/mcp-neo4j.md",
    "github_id": 897992568,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "mcp-for-beginners",
@@ -6796,7 +8066,16 @@
    "one": "Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python.",
    "alt": [],
    "doc": "human/fichas/mcp-for-beginners.md",
-   "github_id": 960665821
+   "github_id": 960665821,
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "public-apis",
@@ -6821,7 +8100,16 @@
    "alt": [],
    "doc": "human/fichas/public-apis.md",
    "github_id": 54346799,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "mcp",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "awesome-mcp-servers",
@@ -6846,7 +8134,16 @@
    "alt": [],
    "doc": "human/fichas/awesome-mcp-servers.md",
    "github_id": 896335270,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "mcp",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "awesome-mcp-clients",
@@ -6870,7 +8167,16 @@
    "alt": [],
    "doc": "human/fichas/awesome-mcp-clients.md",
    "github_id": 915233417,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "mcp",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "mcp",
@@ -6894,7 +8200,14 @@
    "alt": [],
    "doc": "human/fichas/mcp.md",
    "github_id": 1110817322,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "claude-mem",
@@ -6927,7 +8240,17 @@
    ],
    "doc": "human/fichas/claude-mem.md",
    "github_id": 1048065319,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "api"
+   ]
   },
   {
    "id": "mem0",
@@ -6956,7 +8279,12 @@
    ],
    "doc": "human/fichas/mem0.md",
    "github_id": 656099147,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "mempalace",
@@ -6981,7 +8309,12 @@
    "alt": [],
    "doc": "human/fichas/mempalace.md",
    "github_id": 1201656210,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "claude"
+   ]
   },
   {
    "id": "cognee",
@@ -7014,7 +8347,14 @@
     "letta"
    ],
    "doc": "human/fichas/cognee.md",
-   "github_id": 679343504
+   "github_id": 679343504,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "graphiti",
@@ -7045,7 +8385,14 @@
     "graphrag"
    ],
    "doc": "human/fichas/graphiti.md",
-   "github_id": 840056306
+   "github_id": 840056306,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "supermemory",
@@ -7073,7 +8420,14 @@
     "agentmemory"
    ],
    "doc": "human/fichas/supermemory.md",
-   "github_id": 764287615
+   "github_id": 764287615,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "agentmemory",
@@ -7103,7 +8457,16 @@
    ],
    "doc": "human/fichas/agentmemory.md",
    "github_id": 1166408297,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "letta",
@@ -7135,7 +8498,12 @@
     "cognee"
    ],
    "doc": "human/fichas/letta.md",
-   "github_id": 703411624
+   "github_id": 703411624,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "engram",
@@ -7167,7 +8535,15 @@
    ],
    "doc": "human/fichas/engram.md",
    "github_id": 1159234860,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "ragflow",
@@ -7199,7 +8575,16 @@
     "lightrag"
    ],
    "doc": "human/fichas/ragflow.md",
-   "github_id": 730534580
+   "github_id": 730534580,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "lightrag",
@@ -7230,7 +8615,14 @@
     "pageindex"
    ],
    "doc": "human/fichas/lightrag.md",
-   "github_id": 866513204
+   "github_id": 866513204,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "pageindex",
@@ -7259,7 +8651,16 @@
     "lightrag"
    ],
    "doc": "human/fichas/pageindex.md",
-   "github_id": 958531089
+   "github_id": 958531089,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "api"
+   ]
   },
   {
    "id": "graphrag",
@@ -7288,7 +8689,14 @@
    ],
    "doc": "human/fichas/graphrag.md",
    "github_id": 778431525,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "qdrant",
@@ -7319,7 +8727,14 @@
     "faiss"
    ],
    "doc": "human/fichas/qdrant.md",
-   "github_id": 268163609
+   "github_id": 268163609,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "milvus",
@@ -7348,7 +8763,14 @@
     "chroma"
    ],
    "doc": "human/fichas/milvus.md",
-   "github_id": 208728772
+   "github_id": 208728772,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "faiss",
@@ -7376,7 +8798,14 @@
     "chroma"
    ],
    "doc": "human/fichas/faiss.md",
-   "github_id": 81227005
+   "github_id": 81227005,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "chroma",
@@ -7406,7 +8835,14 @@
     "faiss"
    ],
    "doc": "human/fichas/chroma.md",
-   "github_id": 546206616
+   "github_id": 546206616,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "pgvector",
@@ -7435,7 +8871,14 @@
    ],
    "doc": "human/fichas/pgvector.md",
    "github_id": 359952601,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "turbovec",
@@ -7461,7 +8904,14 @@
    "alt": [],
    "doc": "human/fichas/turbovec.md",
    "github_id": 1192555574,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "vllm",
@@ -7490,7 +8940,13 @@
    ],
    "doc": "human/fichas/vllm.md",
    "github_id": 599547518,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "litellm",
@@ -7517,7 +8973,14 @@
    "alt": [],
    "doc": "human/fichas/litellm.md",
    "github_id": 671269505,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "sglang",
@@ -7545,7 +9008,13 @@
     "vllm"
    ],
    "doc": "human/fichas/sglang.md",
-   "github_id": 740303686
+   "github_id": 740303686,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "headroom",
@@ -7573,7 +9042,15 @@
    ],
    "doc": "human/fichas/headroom.md",
    "github_id": 1129940957,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "api"
+   ]
   },
   {
    "id": "promptfoo",
@@ -7607,7 +9084,12 @@
     "dspy"
    ],
    "doc": "human/fichas/promptfoo.md",
-   "github_id": 633927609
+   "github_id": 633927609,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "langfuse",
@@ -7638,7 +9120,13 @@
    ],
    "doc": "human/fichas/langfuse.md",
    "github_id": 642497346,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "mlflow",
@@ -7666,7 +9154,13 @@
     "langfuse"
    ],
    "doc": "human/fichas/mlflow.md",
-   "github_id": 136202695
+   "github_id": 136202695,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "loguru",
@@ -7692,7 +9186,12 @@
    "alt": [],
    "doc": "human/fichas/loguru.md",
    "github_id": 100401612,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "opik",
@@ -7720,7 +9219,13 @@
     "phoenix"
    ],
    "doc": "human/fichas/opik.md",
-   "github_id": 638951438
+   "github_id": 638951438,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "deepeval",
@@ -7749,7 +9254,12 @@
     "promptfoo"
    ],
    "doc": "human/fichas/deepeval.md",
-   "github_id": 676829188
+   "github_id": 676829188,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "ragas",
@@ -7779,7 +9289,12 @@
     "promptfoo"
    ],
    "doc": "human/fichas/ragas.md",
-   "github_id": 637924634
+   "github_id": 637924634,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "phoenix",
@@ -7807,7 +9322,13 @@
     "opik"
    ],
    "doc": "human/fichas/phoenix.md",
-   "github_id": 564072810
+   "github_id": 564072810,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "guardrails",
@@ -7833,7 +9354,12 @@
    "alt": [],
    "doc": "human/fichas/guardrails.md",
    "github_id": 629494390,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "repomix",
@@ -7861,7 +9387,15 @@
    ],
    "doc": "human/fichas/repomix.md",
    "github_id": 828119367,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "programar",
+    "mcp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "graphify",
@@ -7886,7 +9420,17 @@
    "alt": [],
    "doc": "human/fichas/graphify.md",
    "github_id": 1200597263,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "api"
+   ]
   },
   {
    "id": "codegraph",
@@ -7914,7 +9458,16 @@
    ],
    "doc": "human/fichas/codegraph.md",
    "github_id": 1137078255,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "codebase-memory-mcp",
@@ -7945,7 +9498,16 @@
    ],
    "doc": "human/fichas/codebase-memory-mcp.md",
    "github_id": 1166102148,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "programar",
+    "mcp"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "gitnexus",
@@ -7974,7 +9536,16 @@
    ],
    "doc": "human/fichas/gitnexus.md",
    "github_id": 1031059905,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "tree-sitter",
@@ -7998,7 +9569,14 @@
    "one": "Sistema de parsing incremental para herramientas de programación, base de editores y agentes de código.",
    "alt": [],
    "doc": "human/fichas/tree-sitter.md",
-   "github_id": 14164618
+   "github_id": 14164618,
+   "added_at": "2026-11-10",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "deepwiki-open",
@@ -8029,7 +9607,14 @@
     "context7"
    ],
    "doc": "human/fichas/deepwiki-open.md",
-   "github_id": 975318071
+   "github_id": 975318071,
+   "added_at": "2026-11-10",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "semgrep",
@@ -8055,7 +9640,14 @@
     "ast-grep"
    ],
    "doc": "human/fichas/semgrep.md",
-   "github_id": 227803815
+   "github_id": 227803815,
+   "added_at": "2026-11-10",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "ast-grep",
@@ -8082,7 +9674,14 @@
     "semgrep"
    ],
    "doc": "human/fichas/ast-grep.md",
-   "github_id": 509566212
+   "github_id": 509566212,
+   "added_at": "2026-11-10",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "defending-code-reference-harness",
@@ -8110,7 +9709,14 @@
    "alt": [],
    "doc": "human/fichas/defending-code-reference-harness.md",
    "github_id": 1246839757,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "claude"
+   ]
   },
   {
    "id": "swe-bench",
@@ -8136,7 +9742,16 @@
    "alt": [],
    "doc": "human/fichas/swe-bench.md",
    "github_id": 700117650,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "programar",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "unsloth",
@@ -8166,7 +9781,13 @@
    ],
    "doc": "human/fichas/unsloth.md",
    "github_id": 725205304,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "transformers",
@@ -8191,7 +9812,13 @@
    "one": "Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación.",
    "alt": [],
    "doc": "human/fichas/transformers.md",
-   "github_id": 155220641
+   "github_id": 155220641,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "pytorch",
@@ -8215,7 +9842,13 @@
    "one": "Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU.",
    "alt": [],
    "doc": "human/fichas/pytorch.md",
-   "github_id": 65600975
+   "github_id": 65600975,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "llama-factory",
@@ -8243,7 +9876,13 @@
     "unsloth"
    ],
    "doc": "human/fichas/llama-factory.md",
-   "github_id": 646410686
+   "github_id": 646410686,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "peft",
@@ -8267,7 +9906,13 @@
    "one": "Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA.",
    "alt": [],
    "doc": "human/fichas/peft.md",
-   "github_id": 570384908
+   "github_id": 570384908,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "trl",
@@ -8291,7 +9936,13 @@
    "one": "Librería de Hugging Face para entrenar LLM con aprendizaje por refuerzo: SFT, DPO, GRPO y más.",
    "alt": [],
    "doc": "human/fichas/trl.md",
-   "github_id": 250510075
+   "github_id": 250510075,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "llm-course",
@@ -8319,7 +9970,15 @@
     "generative-ai-for-beginners"
    ],
    "doc": "human/fichas/llm-course.md",
-   "github_id": 655099582
+   "github_id": 655099582,
+   "added_at": "2026-11-10",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "llms-from-scratch",
@@ -8347,7 +10006,16 @@
     "nanogpt"
    ],
    "doc": "human/fichas/llms-from-scratch.md",
-   "github_id": 669879380
+   "github_id": 669879380,
+   "added_at": "2026-11-10",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "reference"
+   ]
   },
   {
    "id": "nanogpt",
@@ -8374,7 +10042,15 @@
    ],
    "doc": "human/fichas/nanogpt.md",
    "github_id": 582822129,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "nanochat",
@@ -8399,7 +10075,15 @@
    "alt": [],
    "doc": "human/fichas/nanochat.md",
    "github_id": 1075431749,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "llm.c",
@@ -8423,7 +10107,15 @@
    "alt": [],
    "doc": "human/fichas/llm-c.md",
    "github_id": 783833344,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "how-to-train-your-gpt",
@@ -8447,7 +10139,16 @@
    "alt": [],
    "doc": "human/fichas/how-to-train-your-gpt.md",
    "github_id": 1228312499,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "reference"
+   ]
   },
   {
    "id": "timesfm",
@@ -8473,7 +10174,13 @@
    "alt": [],
    "doc": "human/fichas/timesfm.md",
    "github_id": 793784055,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "deepseek-coder",
@@ -8498,7 +10205,13 @@
    "alt": [],
    "doc": "human/fichas/deepseek-coder.md",
    "github_id": 707551301,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "cosmos",
@@ -8522,7 +10235,13 @@
    "alt": [],
    "doc": "human/fichas/cosmos.md",
    "github_id": 910176789,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "nemotron",
@@ -8548,7 +10267,16 @@
    "one": "Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos.",
    "alt": [],
    "doc": "human/fichas/nemotron.md",
-   "github_id": 1069235905
+   "github_id": 1069235905,
+   "added_at": "2026-06-24",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "reference"
+   ]
   },
   {
    "id": "cli",
@@ -8572,7 +10300,12 @@
    "one": "CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la terminal.",
    "alt": [],
    "doc": "human/fichas/cli.md",
-   "github_id": 212613049
+   "github_id": 212613049,
+   "added_at": "2026-08-23",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "openai-python",
@@ -8597,7 +10330,12 @@
    "alt": [],
    "doc": "human/fichas/openai-python.md",
    "github_id": 307213173,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "duckdb",
@@ -8624,7 +10362,14 @@
     "polars"
    ],
    "doc": "human/fichas/duckdb.md",
-   "github_id": 138754790
+   "github_id": 138754790,
+   "added_at": "2026-11-10",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "marimo",
@@ -8649,7 +10394,14 @@
    "one": "Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app.",
    "alt": [],
    "doc": "human/fichas/marimo.md",
-   "github_id": 678526156
+   "github_id": 678526156,
+   "added_at": "2026-11-10",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "polars",
@@ -8676,7 +10428,14 @@
     "duckdb"
    ],
    "doc": "human/fichas/polars.md",
-   "github_id": 263727855
+   "github_id": 263727855,
+   "added_at": "2026-11-10",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "data-science-ipython-notebooks",
@@ -8701,7 +10460,16 @@
    "alt": [],
    "doc": "human/fichas/data-science-ipython-notebooks.md",
    "github_id": 29749635,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "datos",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "awesome-bigdata",
@@ -8725,7 +10493,16 @@
    "alt": [],
    "doc": "human/fichas/awesome-bigdata.md",
    "github_id": 21500692,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "datos",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "ollama",
@@ -8756,7 +10533,15 @@
     "llamafile"
    ],
    "doc": "human/fichas/ollama.md",
-   "github_id": 658928958
+   "github_id": 658928958,
+   "added_at": "2026-11-10",
+   "goals": [
+    "local"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "llama-cpp",
@@ -8787,7 +10572,15 @@
     "localai"
    ],
    "doc": "human/fichas/llama-cpp.md",
-   "github_id": 612354784
+   "github_id": 612354784,
+   "added_at": "2026-11-10",
+   "goals": [
+    "local"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "localai",
@@ -8818,7 +10611,15 @@
     "llama-cpp"
    ],
    "doc": "human/fichas/localai.md",
-   "github_id": 615869301
+   "github_id": 615869301,
+   "added_at": "2026-11-10",
+   "goals": [
+    "local"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "exo",
@@ -8845,7 +10646,15 @@
    "one": "Ejecuta modelos grandes repartiéndolos entre varios equipos de tu casa u oficina.",
    "alt": [],
    "doc": "human/fichas/exo.md",
-   "github_id": 819554665
+   "github_id": 819554665,
+   "added_at": "2026-11-10",
+   "goals": [
+    "local"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "llmfit",
@@ -8871,7 +10680,14 @@
    "alt": [],
    "doc": "human/fichas/llmfit.md",
    "github_id": 1158588224,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "local"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "llamafile",
@@ -8901,7 +10717,15 @@
     "llama-cpp"
    ],
    "doc": "human/fichas/llamafile.md",
-   "github_id": 689773665
+   "github_id": 689773665,
+   "added_at": "2026-11-10",
+   "goals": [
+    "local"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "open-webui",
@@ -8935,7 +10759,18 @@
     "textgen"
    ],
    "doc": "human/fichas/open-webui.md",
-   "github_id": 701547123
+   "github_id": 701547123,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos",
+    "local",
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "jan",
@@ -8960,14 +10795,23 @@
    "gh": "janhq/jan",
    "lib": false,
    "pick": true,
-   "one": "App de escritorio open source, alternativa a ChatGPT que corre 100 % sin conexión.",
+   "one": "Aplicación de escritorio para conversar con modelos locales y configurar proveedores remotos desde una misma interfaz.",
    "alt": [
     "cherry-studio",
     "textgen",
     "chatbox"
    ],
    "doc": "human/fichas/jan.md",
-   "github_id": 679506386
+   "github_id": 679506386,
+   "added_at": "2026-11-10",
+   "goals": [
+    "local"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "lobehub",
@@ -9001,7 +10845,15 @@
     "cherry-studio"
    ],
    "doc": "human/fichas/lobehub.md",
-   "github_id": 643445235
+   "github_id": 643445235,
+   "added_at": "2026-11-10",
+   "goals": [
+    "local",
+    "mcp"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "cherry-studio",
@@ -9034,7 +10886,17 @@
     "lobehub"
    ],
    "doc": "human/fichas/cherry-studio.md",
-   "github_id": 805155266
+   "github_id": 805155266,
+   "added_at": "2026-11-10",
+   "goals": [
+    "local",
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "textgen",
@@ -9065,7 +10927,15 @@
     "open-webui"
    ],
    "doc": "human/fichas/textgen.md",
-   "github_id": 580642043
+   "github_id": 580642043,
+   "added_at": "2026-11-10",
+   "goals": [
+    "local"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "librechat",
@@ -9099,7 +10969,17 @@
     "lobehub"
    ],
    "doc": "human/fichas/librechat.md",
-   "github_id": 600596928
+   "github_id": 600596928,
+   "added_at": "2026-11-10",
+   "goals": [
+    "local",
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "anything-llm",
@@ -9133,7 +11013,18 @@
     "private-gpt"
    ],
    "doc": "human/fichas/anything-llm.md",
-   "github_id": 649170660
+   "github_id": 649170660,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos",
+    "local",
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "odysseus",
@@ -9160,7 +11051,15 @@
    "alt": [],
    "doc": "human/fichas/odysseus.md",
    "github_id": 1255180606,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "documentos",
+    "local"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "private-gpt",
@@ -9190,7 +11089,17 @@
     "anything-llm"
    ],
    "doc": "human/fichas/private-gpt.md",
-   "github_id": 635240594
+   "github_id": 635240594,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos",
+    "local"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "khoj",
@@ -9223,7 +11132,15 @@
     "surfsense"
    ],
    "doc": "human/fichas/khoj.md",
-   "github_id": 396569538
+   "github_id": 396569538,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos",
+    "local"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "hermes-desktop",
@@ -9248,7 +11165,15 @@
    "one": "App de escritorio que envuelve al agente Hermes en una interfaz nativa.",
    "alt": [],
    "doc": "human/fichas/hermes-desktop.md",
-   "github_id": 1199668171
+   "github_id": 1199668171,
+   "added_at": "2026-08-23",
+   "goals": [
+    "documentos",
+    "local"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "surfsense",
@@ -9280,7 +11205,15 @@
     "khoj"
    ],
    "doc": "human/fichas/surfsense.md",
-   "github_id": 835975784
+   "github_id": 835975784,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos",
+    "local"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "open-notebook",
@@ -9310,7 +11243,17 @@
    ],
    "doc": "human/fichas/open-notebook.md",
    "github_id": 876286167,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "documentos",
+    "local"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "notebooklm-py",
@@ -9336,7 +11279,15 @@
    "alt": [],
    "doc": "human/fichas/notebooklm-py.md",
    "github_id": 1129786550,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "documentos",
+    "local"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "notebooklm-mcp-cli",
@@ -9362,7 +11313,16 @@
    "alt": [],
    "doc": "human/fichas/notebooklm-mcp-cli.md",
    "github_id": 1121438740,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "documentos",
+    "local",
+    "mcp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "ui",
@@ -9391,7 +11351,14 @@
    ],
    "doc": "human/fichas/ui.md",
    "github_id": 585146387,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "ant-design",
@@ -9419,7 +11386,14 @@
     "ui"
    ],
    "doc": "human/fichas/ant-design.md",
-   "github_id": 34526884
+   "github_id": 34526884,
+   "added_at": "2026-11-10",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "mui",
@@ -9448,7 +11422,14 @@
     "heroui"
    ],
    "doc": "human/fichas/mui.md",
-   "github_id": 23083156
+   "github_id": 23083156,
+   "added_at": "2026-11-10",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "react-bits",
@@ -9475,7 +11456,14 @@
     "magicui"
    ],
    "doc": "human/fichas/react-bits.md",
-   "github_id": 838695230
+   "github_id": 838695230,
+   "added_at": "2026-11-10",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "swr",
@@ -9500,7 +11488,14 @@
    "alt": [],
    "doc": "human/fichas/swr.md",
    "github_id": 218115303,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "heroui",
@@ -9526,7 +11521,15 @@
     "mui"
    ],
    "doc": "human/fichas/heroui.md",
-   "github_id": 360522116
+   "github_id": 360522116,
+   "added_at": "2026-06-23",
+   "goals": [
+    "web",
+    "mcp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "lucide",
@@ -9551,7 +11554,14 @@
    "one": "Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más.",
    "alt": [],
    "doc": "human/fichas/lucide.md",
-   "github_id": 270722949
+   "github_id": 270722949,
+   "added_at": "2026-11-10",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "magicui",
@@ -9576,7 +11586,14 @@
     "react-bits"
    ],
    "doc": "human/fichas/magicui.md",
-   "github_id": 658921780
+   "github_id": 658921780,
+   "added_at": "2026-06-23",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "radix-primitives",
@@ -9601,7 +11618,14 @@
    "one": "Componentes React sin estilos y accesibles para construir sistemas de diseño propios.",
    "alt": [],
    "doc": "human/fichas/radix-primitives.md",
-   "github_id": 273499522
+   "github_id": 273499522,
+   "added_at": "2026-11-10",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "daisyui",
@@ -9628,7 +11652,14 @@
     "ui"
    ],
    "doc": "human/fichas/daisyui.md",
-   "github_id": 316836816
+   "github_id": 316836816,
+   "added_at": "2026-11-10",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "tailwindcss",
@@ -9654,7 +11685,14 @@
    "alt": [],
    "doc": "human/fichas/tailwindcss.md",
    "github_id": 106017343,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "normalize.css",
@@ -9679,7 +11717,14 @@
    "alt": [],
    "doc": "human/fichas/normalize-css.md",
    "github_id": 1700621,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "three.js",
@@ -9705,7 +11750,14 @@
    "alt": [],
    "doc": "human/fichas/three-js.md",
    "github_id": 576201,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "animejs",
@@ -9733,7 +11785,14 @@
     "motion"
    ],
    "doc": "human/fichas/animejs.md",
-   "github_id": 53809090
+   "github_id": 53809090,
+   "added_at": "2026-11-10",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "motion",
@@ -9760,7 +11819,14 @@
     "animejs"
    ],
    "doc": "human/fichas/motion.md",
-   "github_id": 157846876
+   "github_id": 157846876,
+   "added_at": "2026-06-23",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "react-three-fiber",
@@ -9785,7 +11851,14 @@
    "one": "Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos.",
    "alt": [],
    "doc": "human/fichas/react-three-fiber.md",
-   "github_id": 172521926
+   "github_id": 172521926,
+   "added_at": "2026-06-23",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "gsap",
@@ -9813,7 +11886,14 @@
    ],
    "doc": "human/fichas/gsap.md",
    "github_id": 5905330,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "excalidraw",
@@ -9841,7 +11921,15 @@
     "mermaid"
    ],
    "doc": "human/fichas/excalidraw.md",
-   "github_id": 231283452
+   "github_id": 231283452,
+   "added_at": "2026-11-10",
+   "goals": [
+    "web",
+    "diagramas"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "open-design",
@@ -9869,7 +11957,15 @@
    ],
    "doc": "human/fichas/open-design.md",
    "github_id": 1223170290,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "penpot",
@@ -9893,7 +11989,14 @@
    "one": "Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos.",
    "alt": [],
    "doc": "human/fichas/penpot.md",
-   "github_id": 48769241
+   "github_id": 48769241,
+   "added_at": "2026-06-23",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "tldraw",
@@ -9921,7 +12024,15 @@
     "excalidraw"
    ],
    "doc": "human/fichas/tldraw.md",
-   "github_id": 365739812
+   "github_id": 365739812,
+   "added_at": "2026-11-10",
+   "goals": [
+    "web",
+    "diagramas"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "onlook",
@@ -9951,7 +12062,14 @@
     "open-design"
    ],
    "doc": "human/fichas/onlook.md",
-   "github_id": 820087727
+   "github_id": 820087727,
+   "added_at": "2026-11-10",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "plasmic",
@@ -9975,7 +12093,14 @@
    "one": "Builder visual para apps y sitios conectado a tu propia base de código, que permite diseñar y publicar sin perder el control del código real.",
    "alt": [],
    "doc": "human/fichas/plasmic.md",
-   "github_id": 335402819
+   "github_id": 335402819,
+   "added_at": "2026-06-23",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "copilotkit",
@@ -10006,7 +12131,14 @@
     "assistant-ui"
    ],
    "doc": "human/fichas/copilotkit.md",
-   "github_id": 655515393
+   "github_id": 655515393,
+   "added_at": "2026-11-10",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "screenshot-to-code",
@@ -10038,7 +12170,14 @@
     "stitch-sdk"
    ],
    "doc": "human/fichas/screenshot-to-code.md",
-   "github_id": 718741813
+   "github_id": 718741813,
+   "added_at": "2026-11-10",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "openui",
@@ -10063,7 +12202,14 @@
    "one": "Estándar abierto de Thesys para UI generativa: el LLM responde con interfaces, no solo texto.",
    "alt": [],
    "doc": "human/fichas/openui.md",
-   "github_id": 897268988
+   "github_id": 897268988,
+   "added_at": "2026-11-10",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "assistant-ui",
@@ -10091,7 +12237,14 @@
     "copilotkit"
    ],
    "doc": "human/fichas/assistant-ui.md",
-   "github_id": 722184017
+   "github_id": 722184017,
+   "added_at": "2026-11-10",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "stitch-sdk",
@@ -10121,7 +12274,14 @@
    ],
    "doc": "human/fichas/stitch-sdk.md",
    "github_id": 1108848699,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "web"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "stitch-skills",
@@ -10147,7 +12307,16 @@
    "alt": [],
    "doc": "human/fichas/stitch-skills.md",
    "github_id": 1135847870,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "web",
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "ui-ux-pro-max-skill",
@@ -10173,7 +12342,16 @@
    "alt": [],
    "doc": "human/fichas/ui-ux-pro-max-skill.md",
    "github_id": 1106996539,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "web",
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "taste-skill",
@@ -10199,7 +12377,16 @@
    "alt": [],
    "doc": "human/fichas/taste-skill.md",
    "github_id": 1162099055,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "web",
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "impeccable",
@@ -10225,7 +12412,16 @@
    "alt": [],
    "doc": "human/fichas/impeccable.md",
    "github_id": 1097346685,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "web",
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "skills-emil",
@@ -10250,7 +12446,13 @@
    "alt": [],
    "doc": "human/fichas/skills-emil.md",
    "github_id": 1183325896,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "web",
+    "skills"
+   ],
+   "routes": []
   },
   {
    "id": "design.md",
@@ -10276,7 +12478,13 @@
    "alt": [],
    "doc": "human/fichas/design-md.md",
    "github_id": 1207222725,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "web",
+    "skills"
+   ],
+   "routes": []
   },
   {
    "id": "umami",
@@ -10304,7 +12512,14 @@
     "matomo"
    ],
    "doc": "human/fichas/umami.md",
-   "github_id": 280363952
+   "github_id": 280363952,
+   "added_at": "2026-11-10",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "posthog",
@@ -10330,7 +12545,14 @@
    "alt": [],
    "doc": "human/fichas/posthog.md",
    "github_id": 235901813,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "plausible",
@@ -10357,7 +12579,14 @@
     "matomo"
    ],
    "doc": "human/fichas/plausible.md",
-   "github_id": 160427405
+   "github_id": 160427405,
+   "added_at": "2026-11-10",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "matomo",
@@ -10385,7 +12614,14 @@
    ],
    "doc": "human/fichas/matomo.md",
    "github_id": 1548202,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-10",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "superset",
@@ -10414,7 +12650,14 @@
     "redash"
    ],
    "doc": "human/fichas/superset.md",
-   "github_id": 39464018
+   "github_id": 39464018,
+   "added_at": "2026-11-10",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "wrenai",
@@ -10445,7 +12688,14 @@
     "pandas-ai"
    ],
    "doc": "human/fichas/wrenai.md",
-   "github_id": 771350543
+   "github_id": 771350543,
+   "added_at": "2026-11-10",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "grafana",
@@ -10471,7 +12721,14 @@
    "one": "Plataforma de visualización y observabilidad para métricas, logs y trazas de múltiples fuentes.",
    "alt": [],
    "doc": "human/fichas/grafana.md",
-   "github_id": 15111821
+   "github_id": 15111821,
+   "added_at": "2026-11-10",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "metabase",
@@ -10500,7 +12757,14 @@
    ],
    "doc": "human/fichas/metabase.md",
    "github_id": 30203935,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "redash",
@@ -10528,7 +12792,14 @@
     "superset"
    ],
    "doc": "human/fichas/redash.md",
-   "github_id": 13926404
+   "github_id": 13926404,
+   "added_at": "2026-11-10",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "pandas-ai",
@@ -10558,7 +12829,14 @@
     "wrenai"
    ],
    "doc": "human/fichas/pandas-ai.md",
-   "github_id": 631258918
+   "github_id": 631258918,
+   "added_at": "2026-11-10",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "recharts",
@@ -10586,7 +12864,14 @@
     "echarts"
    ],
    "doc": "human/fichas/recharts.md",
-   "github_id": 40345658
+   "github_id": 40345658,
+   "added_at": "2026-11-10",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "d3",
@@ -10612,7 +12897,14 @@
     "echarts"
    ],
    "doc": "human/fichas/d3.md",
-   "github_id": 943149
+   "github_id": 943149,
+   "added_at": "2026-11-10",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "chart-js",
@@ -10633,13 +12925,20 @@
    "gh": "chartjs/Chart.js",
    "lib": false,
    "pick": false,
-   "one": "Librería JavaScript sencilla para gráficos HTML5 en canvas.",
+   "one": "Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web.",
    "alt": [
     "echarts",
     "recharts"
    ],
    "doc": "human/fichas/chart-js.md",
-   "github_id": 8843683
+   "github_id": 8843683,
+   "added_at": "2026-11-10",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "echarts",
@@ -10667,7 +12966,14 @@
     "recharts"
    ],
    "doc": "human/fichas/echarts.md",
-   "github_id": 9185792
+   "github_id": 9185792,
+   "added_at": "2026-06-23",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "uplot",
@@ -10692,7 +12998,14 @@
    "alt": [],
    "doc": "human/fichas/uplot.md",
    "github_id": 211381955,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "gradio",
@@ -10719,7 +13032,14 @@
    ],
    "doc": "human/fichas/gradio.md",
    "github_id": 162405963,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "streamlit",
@@ -10746,7 +13066,14 @@
     "gradio"
    ],
    "doc": "human/fichas/streamlit.md",
-   "github_id": 204086862
+   "github_id": 204086862,
+   "added_at": "2026-06-23",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "dash",
@@ -10771,14 +13098,21 @@
    "one": "Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con componentes de UI reactivos.",
    "alt": [],
    "doc": "human/fichas/dash.md",
-   "github_id": 33702544
+   "github_id": 33702544,
+   "added_at": "2026-06-23",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "daily-stock-analysis",
    "name": "daily_stock_analysis",
    "emoji": "📚",
-   "cat": 10,
-   "sub": "recursos",
+   "cat": 14,
+   "sub": "agentes",
    "role": "app",
    "exec": "cloud",
    "setup": "medium",
@@ -10800,7 +13134,14 @@
    "alt": [],
    "doc": "human/fichas/daily-stock-analysis.md",
    "github_id": 1131513930,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "finanzas"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "awesome-dataviz",
@@ -10826,7 +13167,16 @@
    "alt": [],
    "doc": "human/fichas/awesome-dataviz.md",
    "github_id": 39454666,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "datos",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "stable-diffusion-webui",
@@ -10855,7 +13205,15 @@
    ],
    "doc": "human/fichas/stable-diffusion-webui.md",
    "github_id": 527591471,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "comfyui",
@@ -10883,7 +13241,15 @@
    ],
    "doc": "human/fichas/comfyui.md",
    "github_id": 589831718,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "fooocus",
@@ -10908,7 +13274,15 @@
    "alt": [],
    "doc": "human/fichas/fooocus.md",
    "github_id": 676676006,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "invokeai",
@@ -10935,7 +13309,15 @@
    ],
    "doc": "human/fichas/invokeai.md",
    "github_id": 525592995,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "sd-webui-forge",
@@ -10965,7 +13347,15 @@
     "comfyui"
    ],
    "doc": "human/fichas/sd-webui-forge.md",
-   "github_id": 743116659
+   "github_id": 743116659,
+   "added_at": "2026-11-10",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "krita-ai-diffusion",
@@ -10994,7 +13384,15 @@
     "invokeai"
    ],
    "doc": "human/fichas/krita-ai-diffusion.md",
-   "github_id": 686161611
+   "github_id": 686161611,
+   "added_at": "2026-11-10",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "flux",
@@ -11022,7 +13420,15 @@
     "stable-diffusion-webui"
    ],
    "doc": "human/fichas/flux.md",
-   "github_id": 836642963
+   "github_id": 836642963,
+   "added_at": "2026-11-10",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "diffusers",
@@ -11047,7 +13453,15 @@
    "alt": [],
    "doc": "human/fichas/diffusers.md",
    "github_id": 498011141,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "controlnet",
@@ -11072,7 +13486,15 @@
    "alt": [],
    "doc": "human/fichas/controlnet.md",
    "github_id": 595893961,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "sd-webui-controlnet",
@@ -11098,7 +13520,15 @@
    "alt": [],
    "doc": "human/fichas/sd-webui-controlnet.md",
    "github_id": 600798098,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "comfyui-ipadapter-plus",
@@ -11123,7 +13553,15 @@
    "alt": [],
    "doc": "human/fichas/comfyui-ipadapter-plus.md",
    "github_id": 685001175,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "rembg",
@@ -11147,7 +13585,15 @@
    "one": "Herramienta para quitar el fondo de imágenes en local, por CLI, librería o servidor.",
    "alt": [],
    "doc": "human/fichas/rembg.md",
-   "github_id": 286500101
+   "github_id": 286500101,
+   "added_at": "2026-11-10",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "gfpgan",
@@ -11174,7 +13620,15 @@
    ],
    "doc": "human/fichas/gfpgan.md",
    "github_id": 349321229,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "real-esrgan",
@@ -11198,7 +13652,15 @@
    "one": "Herramienta de superresolución y restauración para imágenes reales que reescala (2×/4×) y limpia material de baja calidad sin rehacerlo desde cero.",
    "alt": [],
    "doc": "human/fichas/real-esrgan.md",
-   "github_id": 387326890
+   "github_id": 387326890,
+   "added_at": "2026-06-23",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "codeformer",
@@ -11225,7 +13687,15 @@
     "gfpgan"
    ],
    "doc": "human/fichas/codeformer.md",
-   "github_id": 505667511
+   "github_id": 505667511,
+   "added_at": "2026-11-10",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "deep-live-cam",
@@ -11253,7 +13723,15 @@
    ],
    "doc": "human/fichas/deep-live-cam.md",
    "github_id": 695864515,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "face-recognition",
@@ -11281,7 +13759,14 @@
    ],
    "doc": "human/fichas/face-recognition.md",
    "github_id": 83844720,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "facefusion",
@@ -11309,7 +13794,15 @@
     "deep-live-cam"
    ],
    "doc": "human/fichas/facefusion.md",
-   "github_id": 679869950
+   "github_id": 679869950,
+   "added_at": "2026-11-10",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "insightface",
@@ -11336,7 +13829,15 @@
     "face-recognition"
    ],
    "doc": "human/fichas/insightface.md",
-   "github_id": 102057483
+   "github_id": 102057483,
+   "added_at": "2026-11-10",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "liveportrait",
@@ -11362,7 +13863,15 @@
    "alt": [],
    "doc": "human/fichas/liveportrait.md",
    "github_id": 823745702,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "ultralytics",
@@ -11387,7 +13896,15 @@
    "one": "Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar.",
    "alt": [],
    "doc": "human/fichas/ultralytics.md",
-   "github_id": 535360445
+   "github_id": 535360445,
+   "added_at": "2026-11-10",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "sam2",
@@ -11414,7 +13931,15 @@
     "segment-anything"
    ],
    "doc": "human/fichas/sam2.md",
-   "github_id": 835452752
+   "github_id": 835452752,
+   "added_at": "2026-11-10",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "opencv",
@@ -11440,7 +13965,14 @@
    "one": "La librería de visión por computadora de referencia, con miles de algoritmos.",
    "alt": [],
    "doc": "human/fichas/opencv.md",
-   "github_id": 5108051
+   "github_id": 5108051,
+   "added_at": "2026-11-10",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "segment-anything",
@@ -11467,7 +13999,15 @@
     "sam2"
    ],
    "doc": "human/fichas/segment-anything.md",
-   "github_id": 618058471
+   "github_id": 618058471,
+   "added_at": "2026-11-10",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "supervision",
@@ -11491,7 +14031,14 @@
    "one": "Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir.",
    "alt": [],
    "doc": "human/fichas/supervision.md",
-   "github_id": 571613891
+   "github_id": 571613891,
+   "added_at": "2026-11-10",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "label-studio",
@@ -11517,7 +14064,14 @@
    "one": "Herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video.",
    "alt": [],
    "doc": "human/fichas/label-studio.md",
-   "github_id": 192640529
+   "github_id": 192640529,
+   "added_at": "2026-11-10",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "open-generative-ai",
@@ -11539,11 +14093,18 @@
    "gh": "Anil-matcha/Open-Generative-AI",
    "lib": false,
    "pick": true,
-   "one": "Plataforma alternativa libre a servicios premium de video/imagen que agrupa más de 200 modelos generativos accesibles desde terminal o integrados con agentes.",
+   "one": "Estudio abierto de generación de imagen y video que utiliza modelos ofrecidos mediante servicios de MuAPI.",
    "alt": [],
    "doc": "human/fichas/open-generative-ai.md",
    "github_id": 638513786,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "whisper-cpp",
@@ -11574,7 +14135,15 @@
     "whisper"
    ],
    "doc": "human/fichas/whisper-cpp.md",
-   "github_id": 541269386
+   "github_id": 541269386,
+   "added_at": "2026-11-10",
+   "goals": [
+    "voz"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "whisper",
@@ -11596,13 +14165,21 @@
    "gh": "openai/whisper",
    "lib": false,
    "pick": false,
-   "one": "Modelo de reconocimiento de voz y traducción de audio multilingüe de OpenAI, estándar de la industria que transcribe casi cualquier idioma con un solo modelo.",
+   "one": "Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo.",
    "alt": [
     "whisper-cpp"
    ],
    "doc": "human/fichas/whisper.md",
    "github_id": 537603333,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "voz"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "faster-whisper",
@@ -11624,12 +14201,20 @@
    "gh": "SYSTRAN/faster-whisper",
    "lib": false,
    "pick": false,
-   "one": "Reimplementación de Whisper sobre CTranslate2 que transcribe mucho más rápido y con menor consumo de memoria, manteniendo la misma precisión.",
+   "one": "Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización.",
    "alt": [
     "whisper-cpp"
    ],
    "doc": "human/fichas/faster-whisper.md",
-   "github_id": 600368121
+   "github_id": 600368121,
+   "added_at": "2026-06-23",
+   "goals": [
+    "voz"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "whisperx",
@@ -11651,13 +14236,21 @@
    "gh": "m-bain/whisperX",
    "lib": false,
    "pick": false,
-   "one": "Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional.",
+   "one": "Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes.",
    "alt": [
     "nemo"
    ],
    "doc": "human/fichas/whisperx.md",
    "github_id": 576103395,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "voz"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "nemo",
@@ -11685,7 +14278,15 @@
     "whisperx"
    ],
    "doc": "human/fichas/nemo.md",
-   "github_id": 200722670
+   "github_id": 200722670,
+   "added_at": "2026-06-24",
+   "goals": [
+    "voz"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "kokoro",
@@ -11709,7 +14310,7 @@
    "gh": "hexgrad/kokoro",
    "lib": false,
    "pick": true,
-   "one": "Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache.",
+   "one": "Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles.",
    "alt": [
     "chatterbox",
     "tts",
@@ -11717,7 +14318,15 @@
     "edge-tts"
    ],
    "doc": "human/fichas/kokoro.md",
-   "github_id": 915054134
+   "github_id": 915054134,
+   "added_at": "2026-11-10",
+   "goals": [
+    "narrar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "omnivoice-studio",
@@ -11745,7 +14354,15 @@
    ],
    "doc": "human/fichas/omnivoice-studio.md",
    "github_id": 1206390571,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "narrar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "gpt-sovits",
@@ -11775,7 +14392,15 @@
     "fish-speech"
    ],
    "doc": "human/fichas/gpt-sovits.md",
-   "github_id": 743230067
+   "github_id": 743230067,
+   "added_at": "2026-11-10",
+   "goals": [
+    "narrar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "vibevoice",
@@ -11799,11 +14424,19 @@
    "gh": "microsoft/VibeVoice",
    "lib": false,
    "pick": false,
-   "one": "Modelos de voz de frontera de Microsoft para podcasts largos con varios hablantes y tiempo real.",
+   "one": "Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio.",
    "alt": [],
    "doc": "human/fichas/vibevoice.md",
    "github_id": 1044296738,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "narrar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "tts",
@@ -11831,7 +14464,15 @@
    ],
    "doc": "human/fichas/tts.md",
    "github_id": 265612440,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "narrar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "voxcpm",
@@ -11857,7 +14498,15 @@
    "alt": [],
    "doc": "human/fichas/voxcpm.md",
    "github_id": 1057664813,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "narrar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "rvc",
@@ -11884,7 +14533,15 @@
    "one": "Conversión de voz: entrena un modelo con menos de 10 minutos de audio y transforma una voz en otra.",
    "alt": [],
    "doc": "human/fichas/rvc.md",
-   "github_id": 619521008
+   "github_id": 619521008,
+   "added_at": "2026-11-10",
+   "goals": [
+    "narrar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "fish-speech",
@@ -11915,7 +14572,15 @@
     "gpt-sovits"
    ],
    "doc": "human/fichas/fish-speech.md",
-   "github_id": 702796244
+   "github_id": 702796244,
+   "added_at": "2026-11-10",
+   "goals": [
+    "narrar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "chatterbox",
@@ -11947,7 +14612,15 @@
     "luxtts"
    ],
    "doc": "human/fichas/chatterbox.md",
-   "github_id": 971241545
+   "github_id": 971241545,
+   "added_at": "2026-11-10",
+   "goals": [
+    "narrar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "index-tts",
@@ -11976,7 +14649,15 @@
     "cosyvoice"
    ],
    "doc": "human/fichas/index-tts.md",
-   "github_id": 928102730
+   "github_id": 928102730,
+   "added_at": "2026-11-10",
+   "goals": [
+    "narrar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "cosyvoice",
@@ -12006,7 +14687,15 @@
     "index-tts"
    ],
    "doc": "human/fichas/cosyvoice.md",
-   "github_id": 823430322
+   "github_id": 823430322,
+   "added_at": "2026-11-10",
+   "goals": [
+    "narrar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "supertonic",
@@ -12028,11 +14717,19 @@
    "lib": false,
    "pick": false,
    "status": "archived",
-   "one": "Motor TTS multilingüe ultrarrápido de Supertone que sintetiza voz directamente en el dispositivo, incluso en el navegador vía WebGPU.",
+   "one": "Motor de texto a voz que ofrece modelos y ejemplos para sintetizar audio en dispositivos y navegadores compatibles.",
    "alt": [],
    "doc": "human/fichas/supertonic.md",
    "github_id": 1098852899,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "narrar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "luxtts",
@@ -12056,14 +14753,22 @@
    "gh": "ysharma3501/LuxTTS",
    "lib": false,
    "pick": false,
-   "one": "Modelo de TTS ligero con clonación de voz que genera audio hasta 150 veces más rápido que tiempo real.",
+   "one": "Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local.",
    "alt": [
     "kokoro",
     "chatterbox"
    ],
    "doc": "human/fichas/luxtts.md",
    "github_id": 1140828984,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "narrar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "pipecat",
@@ -12096,7 +14801,12 @@
     "livekit-agents"
    ],
    "doc": "human/fichas/pipecat.md",
-   "github_id": 736272311
+   "github_id": 736272311,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "livekit-agents",
@@ -12128,7 +14838,12 @@
     "pipecat"
    ],
    "doc": "human/fichas/livekit-agents.md",
-   "github_id": 707441527
+   "github_id": 707441527,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "ffmpeg",
@@ -12155,7 +14870,14 @@
    "alt": [],
    "doc": "human/fichas/ffmpeg.md",
    "github_id": 1614410,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "moviepy",
@@ -12184,7 +14906,14 @@
     "hyperframes"
    ],
    "doc": "human/fichas/moviepy.md",
-   "github_id": 12052630
+   "github_id": 12052630,
+   "added_at": "2026-06-23",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "opencut",
@@ -12207,11 +14936,18 @@
    "gh": "OpenCut-app/OpenCut",
    "lib": false,
    "pick": false,
-   "one": "Editor de video libre con línea de tiempo, alternativa a CapCut, que funciona en el navegador y procesa en tu equipo.",
+   "one": "Editor de video abierto cuya versión clásica puede probarse en la web mientras el proyecto principal se reescribe.",
    "alt": [],
    "doc": "human/fichas/opencut.md",
    "github_id": 1006414368,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "obs-studio",
@@ -12239,7 +14975,14 @@
     "openscreen"
    ],
    "doc": "human/fichas/obs-studio.md",
-   "github_id": 13233158
+   "github_id": 13233158,
+   "added_at": "2026-11-10",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "lossless-cut",
@@ -12265,7 +15008,14 @@
    "one": "App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad.",
    "alt": [],
    "doc": "human/fichas/lossless-cut.md",
-   "github_id": 72343657
+   "github_id": 72343657,
+   "added_at": "2026-06-23",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "openscreen",
@@ -12294,7 +15044,14 @@
    ],
    "doc": "human/fichas/openscreen.md",
    "github_id": 1073433866,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "videolingo",
@@ -12324,7 +15081,14 @@
     "omnivoice-studio"
    ],
    "doc": "human/fichas/videolingo.md",
-   "github_id": 840286946
+   "github_id": 840286946,
+   "added_at": "2026-11-10",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "davinci-resolve-mcp",
@@ -12353,7 +15117,16 @@
    "alt": [],
    "doc": "human/fichas/davinci-resolve-mcp.md",
    "github_id": 950355259,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "video",
+    "mcp"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "hyperframes",
@@ -12385,7 +15158,15 @@
    ],
    "doc": "human/fichas/hyperframes.md",
    "github_id": 1177402105,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "video",
+    "mcp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "skills-remotion",
@@ -12410,7 +15191,16 @@
    "alt": [],
    "doc": "human/fichas/skills-remotion.md",
    "github_id": 1137388347,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "video",
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "manim",
@@ -12438,7 +15228,14 @@
     "manim-community"
    ],
    "doc": "human/fichas/manim.md",
-   "github_id": 32689863
+   "github_id": 32689863,
+   "added_at": "2026-11-10",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "remotion",
@@ -12459,14 +15256,21 @@
    "gh": "remotion-dev/remotion",
    "lib": false,
    "pick": false,
-   "one": "Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4.",
+   "one": "Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos.",
    "alt": [
     "moviepy",
     "hyperframes"
    ],
    "doc": "human/fichas/remotion.md",
    "github_id": 274495425,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "video-use",
@@ -12495,7 +15299,16 @@
    ],
    "doc": "human/fichas/video-use.md",
    "github_id": 1208221543,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "video",
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "videofy-minimal",
@@ -12516,12 +15329,19 @@
    "gh": "schibsted/videofy_minimal",
    "lib": false,
    "pick": false,
-   "one": "Herramienta minimalista (de Schibsted) que convierte contenido textual en videos cortos de forma local, sin pipeline complejo.",
+   "one": "Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión.",
    "alt": [
     "moneyprinterturbo"
    ],
    "doc": "human/fichas/videofy-minimal.md",
-   "github_id": 1176800308
+   "github_id": 1176800308,
+   "added_at": "2026-06-23",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "remotion-superpowers",
@@ -12550,7 +15370,16 @@
    ],
    "doc": "human/fichas/remotion-superpowers.md",
    "github_id": 1153213024,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "video",
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "openmontage",
@@ -12579,7 +15408,16 @@
    ],
    "doc": "human/fichas/openmontage.md",
    "github_id": 1195360525,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-24",
+   "goals": [
+    "video",
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "moneyprinterturbo",
@@ -12613,7 +15451,14 @@
     "videofy-minimal"
    ],
    "doc": "human/fichas/moneyprinterturbo.md",
-   "github_id": 770153867
+   "github_id": 770153867,
+   "added_at": "2026-11-10",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "wan2-2",
@@ -12644,7 +15489,15 @@
     "ltx-video"
    ],
    "doc": "human/fichas/wan2-2.md",
-   "github_id": 1027579552
+   "github_id": 1027579552,
+   "added_at": "2026-11-10",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "hunyuanvideo",
@@ -12675,7 +15528,15 @@
     "ltx-video"
    ],
    "doc": "human/fichas/hunyuanvideo.md",
-   "github_id": 895453957
+   "github_id": 895453957,
+   "added_at": "2026-11-10",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "ltx-video",
@@ -12706,7 +15567,15 @@
     "hunyuanvideo"
    ],
    "doc": "human/fichas/ltx-video.md",
-   "github_id": 891705470
+   "github_id": 891705470,
+   "added_at": "2026-11-10",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "wan2gp",
@@ -12739,7 +15608,16 @@
    ],
    "doc": "human/fichas/wan2gp.md",
    "github_id": 940296815,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "video",
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "audiocraft",
@@ -12767,7 +15645,13 @@
    "one": "Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec.",
    "alt": [],
    "doc": "human/fichas/audiocraft.md",
-   "github_id": 650945129
+   "github_id": 650945129,
+   "added_at": "2026-11-10",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "docling",
@@ -12798,7 +15682,17 @@
     "olmocr"
    ],
    "doc": "human/fichas/docling.md",
-   "github_id": 826168160
+   "github_id": 826168160,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos",
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "markitdown",
@@ -12823,7 +15717,15 @@
    "alt": [],
    "doc": "human/fichas/markitdown.md",
    "github_id": 888092115,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "mineru",
@@ -12852,7 +15754,15 @@
     "marker"
    ],
    "doc": "human/fichas/mineru.md",
-   "github_id": 765083837
+   "github_id": 765083837,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "pandoc",
@@ -12875,7 +15785,14 @@
    "one": "Conversor universal de documentos entre Markdown, Word, HTML, LaTeX, EPUB y decenas de formatos.",
    "alt": [],
    "doc": "human/fichas/pandoc.md",
-   "github_id": 571770
+   "github_id": 571770,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "marker",
@@ -12903,7 +15820,16 @@
     "mineru"
    ],
    "doc": "human/fichas/marker.md",
-   "github_id": 712111618
+   "github_id": 712111618,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "pdf-inspector",
@@ -12929,7 +15855,14 @@
    "alt": [],
    "doc": "human/fichas/pdf-inspector.md",
    "github_id": 1151702019,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "unstructured",
@@ -12956,7 +15889,14 @@
     "docling"
    ],
    "doc": "human/fichas/unstructured.md",
-   "github_id": 541798154
+   "github_id": 541798154,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "youtube2webpage",
@@ -12981,7 +15921,14 @@
    "alt": [],
    "doc": "human/fichas/youtube2webpage.md",
    "github_id": 611549512,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "paddleocr",
@@ -13010,7 +15957,15 @@
     "unlimited-ocr"
    ],
    "doc": "human/fichas/paddleocr.md",
-   "github_id": 262296122
+   "github_id": 262296122,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "ocrmypdf",
@@ -13035,7 +15990,14 @@
    "one": "Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos.",
    "alt": [],
    "doc": "human/fichas/ocrmypdf.md",
-   "github_id": 15333471
+   "github_id": 15333471,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "tesseract",
@@ -13056,12 +16018,19 @@
    "gh": "tesseract-ocr/tesseract",
    "lib": false,
    "pick": false,
-   "one": "Motor de OCR open source clásico, con más de 100 idiomas.",
+   "one": "Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idioma.",
    "alt": [
     "paddleocr"
    ],
    "doc": "human/fichas/tesseract.md",
-   "github_id": 22887094
+   "github_id": 22887094,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "unlimited-ocr",
@@ -13090,7 +16059,15 @@
    ],
    "doc": "human/fichas/unlimited-ocr.md",
    "github_id": 1273138090,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "olmocr",
@@ -13121,7 +16098,15 @@
     "unlimited-ocr"
    ],
    "doc": "human/fichas/olmocr.md",
-   "github_id": 858798469
+   "github_id": 858798469,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "stirling-pdf",
@@ -13147,7 +16132,14 @@
     "pdfcraft"
    ],
    "doc": "human/fichas/stirling-pdf.md",
-   "github_id": 594155488
+   "github_id": 594155488,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "pdfmathtranslate",
@@ -13176,7 +16168,14 @@
    "one": "Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe.",
    "alt": [],
    "doc": "human/fichas/pdfmathtranslate.md",
-   "github_id": 853189791
+   "github_id": 853189791,
+   "added_at": "2026-11-10",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "pdfcraft",
@@ -13203,7 +16202,14 @@
    ],
    "doc": "human/fichas/pdfcraft.md",
    "github_id": 1127001921,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "pdfding",
@@ -13229,7 +16235,14 @@
    "alt": [],
    "doc": "human/fichas/pdfding.md",
    "github_id": 894891699,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-08-23",
+   "goals": [
+    "documentos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "slidev",
@@ -13256,7 +16269,14 @@
     "reveal.js"
    ],
    "doc": "human/fichas/slidev.md",
-   "github_id": 361044034
+   "github_id": 361044034,
+   "added_at": "2026-11-10",
+   "goals": [
+    "presentaciones"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "ppt-master",
@@ -13264,7 +16284,7 @@
    "emoji": "📊",
    "cat": 13,
    "sub": "slides",
-   "role": "runtime",
+   "role": "skill",
    "exec": "hybrid",
    "setup": "easy",
    "mcp": false,
@@ -13277,13 +16297,21 @@
    "gh": "hugohe3/ppt-master",
    "lib": false,
    "pick": false,
-   "one": "Generador que transforma documentos de texto en presentaciones PowerPoint (.pptx) editables nativas, listas para abrir y ajustar en Office.",
+   "one": "Herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documentos.",
    "alt": [
     "presenton"
    ],
    "doc": "human/fichas/ppt-master.md",
    "github_id": 1113573066,
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-06-23",
+   "goals": [
+    "presentaciones"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "reveal.js",
@@ -13310,7 +16338,14 @@
     "marp"
    ],
    "doc": "human/fichas/reveal-js.md",
-   "github_id": 1861458
+   "github_id": 1861458,
+   "added_at": "2026-06-24",
+   "goals": [
+    "presentaciones"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "marp",
@@ -13337,7 +16372,14 @@
     "reveal.js"
    ],
    "doc": "human/fichas/marp.md",
-   "github_id": 126696700
+   "github_id": 126696700,
+   "added_at": "2026-11-10",
+   "goals": [
+    "presentaciones"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "presenton",
@@ -13368,7 +16410,14 @@
     "ppt-master"
    ],
    "doc": "human/fichas/presenton.md",
-   "github_id": 981177285
+   "github_id": 981177285,
+   "added_at": "2026-11-10",
+   "goals": [
+    "presentaciones"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "mermaid",
@@ -13395,7 +16444,14 @@
     "excalidraw"
    ],
    "doc": "human/fichas/mermaid.md",
-   "github_id": 26066727
+   "github_id": 26066727,
+   "added_at": "2026-11-10",
+   "goals": [
+    "diagramas"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "guia",
@@ -13418,7 +16474,8 @@
    "status": "local",
    "one": "Guía editorial original de la biblioteca, hoy integrada en las fichas de cada repo.",
    "alt": [],
-   "doc": "human/fichas/guia.md"
+   "doc": "human/fichas/guia.md",
+   "added_at": "2026-06-24"
   },
   {
    "id": "tools",
@@ -13441,7 +16498,8 @@
    "status": "local",
    "one": "Carpeta interna de herramientas auxiliares del hub; no es un producto para instalar.",
    "alt": [],
-   "doc": "human/fichas/tools.md"
+   "doc": "human/fichas/tools.md",
+   "added_at": "2026-06-24"
   },
   {
    "id": "cal.diy",
@@ -13472,7 +16530,14 @@
    "one": "Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia.",
    "alt": [],
    "doc": "human/fichas/cal-diy.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "automatizar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "compai-crm",
@@ -13497,7 +16562,15 @@
    "one": "CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia.",
    "alt": [],
    "doc": "human/fichas/compai-crm.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "no_api",
+    "api"
+   ]
   },
   {
    "id": "whatsmeow",
@@ -13524,7 +16597,14 @@
    "one": "Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web.",
    "alt": [],
    "doc": "human/fichas/whatsmeow.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "whatsapp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "500-ai-agents-projects",
@@ -13551,7 +16631,16 @@
    "one": "Colección de ideas, casos de uso y ejemplos de agentes de IA para distintos sectores y tareas.",
    "alt": [],
    "doc": "human/fichas/500-ai-agents-projects.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "ai-engineering-hub",
@@ -13582,7 +16671,16 @@
    "one": "Colección de tutoriales y proyectos prácticos sobre LLM, RAG, agentes y aplicaciones de inteligencia artificial.",
    "alt": [],
    "doc": "human/fichas/ai-engineering-hub.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "autoskills",
@@ -13607,7 +16705,14 @@
    "one": "CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia.",
    "alt": [],
    "doc": "human/fichas/autoskills.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "awesome-agents",
@@ -13631,7 +16736,16 @@
    "one": "Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial.",
    "alt": [],
    "doc": "human/fichas/awesome-agents.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "chatgpt-dan",
@@ -13661,7 +16775,16 @@
    "one": "Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones antiguas de ChatGPT.",
    "alt": [],
    "doc": "human/fichas/chatgpt-dan.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "chatgpt-system-prompt",
@@ -13689,7 +16812,16 @@
    "one": "Colección de prompts de GPT y recursos sobre instrucciones de sistema y extracción de prompts.",
    "alt": [],
    "doc": "human/fichas/chatgpt-system-prompt.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "claude-quickstarts",
@@ -13716,7 +16848,16 @@
    "one": "Ejemplos oficiales de Anthropic para construir aplicaciones con Claude, herramientas y uso de computadora.",
    "alt": [],
    "doc": "human/fichas/claude-quickstarts.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "claude-token-efficient",
@@ -13744,7 +16885,14 @@
    "agent_tools": [
     "claude-code"
    ],
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude"
+   ]
   },
   {
    "id": "codex-plugin-cc",
@@ -13774,7 +16922,15 @@
    "agent_tools": [
     "claude-code"
    ],
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "financial-services",
@@ -13801,7 +16957,14 @@
    "one": "Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros.",
    "alt": [],
    "doc": "human/fichas/financial-services.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude"
+   ]
   },
   {
    "id": "gemini-skills",
@@ -13831,7 +16994,15 @@
    "one": "Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini.",
    "alt": [],
    "doc": "human/fichas/gemini-skills.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "grok-plugin-claude-code",
@@ -13867,7 +17038,15 @@
    "agent_tools": [
     "claude-code"
    ],
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "security-audit-skill",
@@ -13892,7 +17071,12 @@
    "one": "Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estructurados.",
    "alt": [],
    "doc": "human/fichas/security-audit-skill.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills"
+   ],
+   "routes": []
   },
   {
    "id": "social-media-research-skills",
@@ -13929,7 +17113,16 @@
     "claude-code",
     "codex"
    ],
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "superclaude-framework",
@@ -13957,7 +17150,14 @@
    "agent_tools": [
     "claude-code"
    ],
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills"
+   ],
+   "routes": [
+    "claude"
+   ]
   },
   {
    "id": "system-prompts-and-models-of-ai-tools",
@@ -13988,7 +17188,16 @@
    "one": "Colección de prompts y configuraciones atribuidos a herramientas de IA para estudiar sus patrones de diseño.",
    "alt": [],
    "doc": "human/fichas/system-prompts-and-models-of-ai-tools.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "skills",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "agent-desktop",
@@ -14019,7 +17228,12 @@
    "one": "CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio.",
    "alt": [],
    "doc": "human/fichas/agent-desktop.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "codex-chatgpt-web",
@@ -14050,7 +17264,14 @@
    "one": "Integración de terceros que conecta una sesión de ChatGPT Web con el selector de modelos y herramientas de Codex.",
    "alt": [],
    "doc": "human/fichas/codex-chatgpt-web.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "review"
+   ]
   },
   {
    "id": "hermes-agent-self-evolution",
@@ -14075,7 +17296,12 @@
    "one": "Herramientas para optimizar skills, prompts y código de Hermes Agent mediante búsqueda evolutiva con DSPy y GEPA.",
    "alt": [],
    "doc": "human/fichas/hermes-agent-self-evolution.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "langchain4j",
@@ -14106,7 +17332,14 @@
    "one": "Biblioteca de Java para integrar LLM, herramientas, agentes, RAG y almacenes vectoriales en aplicaciones de la JVM.",
    "alt": [],
    "doc": "human/fichas/langchain4j.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "local-deep-research",
@@ -14139,7 +17372,16 @@
     "open-deep-research"
    ],
    "doc": "human/fichas/local-deep-research.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "metagpt",
@@ -14171,7 +17413,14 @@
     "crewai"
    ],
    "doc": "human/fichas/metagpt.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "mimo-code",
@@ -14201,7 +17450,14 @@
    "one": "Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente.",
    "alt": [],
    "doc": "human/fichas/mimo-code.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "nodeterm",
@@ -14232,7 +17488,12 @@
    "one": "Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto.",
    "alt": [],
    "doc": "human/fichas/nodeterm.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "open-deep-research",
@@ -14261,7 +17522,17 @@
    ],
    "doc": "human/fichas/open-deep-research.md",
    "status": "archived",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "investigar",
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "openclaude",
@@ -14290,7 +17561,18 @@
    "one": "Agente de código abierto para terminal que conecta proveedores remotos y modelos locales con herramientas y MCP.",
    "alt": [],
    "doc": "human/fichas/openclaude.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "programar",
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "codex",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "opencode-legacy",
@@ -14321,7 +17603,14 @@
    "alt": [],
    "doc": "human/fichas/opencode-legacy.md",
    "status": "archived",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "programar"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "opencursor",
@@ -14352,7 +17641,18 @@
    "one": "Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos.",
    "alt": [],
    "doc": "human/fichas/opencursor.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "programar",
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "api"
+   ]
   },
   {
    "id": "paperclip",
@@ -14383,7 +17683,15 @@
    "one": "Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo.",
    "alt": [],
    "doc": "human/fichas/paperclip.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex",
+    "api"
+   ]
   },
   {
    "id": "social-media-agent",
@@ -14408,7 +17716,12 @@
    "one": "Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de publicarlas.",
    "alt": [],
    "doc": "human/fichas/social-media-agent.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "agent-browser",
@@ -14435,7 +17748,12 @@
     "playwright-cli"
    ],
    "doc": "human/fichas/agent-browser.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "awesome-chrome-devtools",
@@ -14461,7 +17779,15 @@
    "one": "Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol.",
    "alt": [],
    "doc": "human/fichas/awesome-chrome-devtools.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "awesome-web-scraping",
@@ -14492,7 +17818,16 @@
    "one": "Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos.",
    "alt": [],
    "doc": "human/fichas/awesome-web-scraping.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "investigar",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "camofox-browser",
@@ -14523,7 +17858,12 @@
    "one": "Servidor de automatización de navegador basado en Camoufox para ofrecer navegación a agentes.",
    "alt": [],
    "doc": "human/fichas/camofox-browser.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "scrapydweb",
@@ -14554,7 +17894,14 @@
    "one": "Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy.",
    "alt": [],
    "doc": "human/fichas/scrapydweb.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "investigar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "annas-mcp",
@@ -14582,7 +17929,16 @@
    "one": "Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos.",
    "alt": [],
    "doc": "human/fichas/annas-mcp.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api",
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "free-for-dev",
@@ -14609,7 +17965,16 @@
    "one": "Directorio de servicios de infraestructura y desarrollo que ofrecen planes o niveles gratuitos.",
    "alt": [],
    "doc": "human/fichas/free-for-dev.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "mcp",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "freedomain",
@@ -14640,7 +18005,16 @@
    "one": "Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat.",
    "alt": [],
    "doc": "human/fichas/freedomain.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "mcp",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "masterdnsvpn",
@@ -14671,7 +18045,14 @@
    "one": "Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS.",
    "alt": [],
    "doc": "human/fichas/masterdnsvpn.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "mcp"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "backdoor",
@@ -14702,7 +18083,14 @@
    "one": "Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code.",
    "alt": [],
    "doc": "human/fichas/backdoor.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "rtk",
@@ -14735,7 +18123,14 @@
     "headroom"
    ],
    "doc": "human/fichas/rtk.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "claude",
+    "api"
+   ]
   },
   {
    "id": "tensorrt-llm",
@@ -14765,7 +18160,13 @@
    "one": "Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados.",
    "alt": [],
    "doc": "human/fichas/tensorrt-llm.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "awesome-machine-learning",
@@ -14790,7 +18191,15 @@
    "one": "Directorio de frameworks, bibliotecas y recursos de machine learning organizado por lenguaje y tema.",
    "alt": [],
    "doc": "human/fichas/awesome-machine-learning.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "bigdata",
@@ -14815,7 +18224,16 @@
    "one": "Colección educativa de proyectos de datos con ejercicios de Hive, HDFS, Spark, HBase y sistemas de recomendación.",
    "alt": [],
    "doc": "human/fichas/bigdata.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "datos",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "bionemo-recipes",
@@ -14844,7 +18262,16 @@
    "one": "Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala.",
    "alt": [],
    "doc": "human/fichas/bionemo-recipes.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "reference"
+   ]
   },
   {
    "id": "globalbuildingatlas",
@@ -14869,7 +18296,16 @@
    "one": "Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1.",
    "alt": [],
    "doc": "human/fichas/globalbuildingatlas.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "datos",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "hudi",
@@ -14900,7 +18336,14 @@
    "one": "Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos.",
    "alt": [],
    "doc": "human/fichas/hudi.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "machinelearning",
@@ -14925,7 +18368,15 @@
    "one": "Ejemplos educativos de algoritmos de machine learning y redes neuronales con Python.",
    "alt": [],
    "doc": "human/fichas/machinelearning.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "python-machine-learning-book",
@@ -14956,7 +18407,15 @@
    "one": "Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación.",
    "alt": [],
    "doc": "human/fichas/python-machine-learning-book.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "tensorflow",
@@ -14987,7 +18446,13 @@
    "one": "Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos.",
    "alt": [],
    "doc": "human/fichas/tensorflow.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "train-llm-from-scratch",
@@ -15018,7 +18483,16 @@
    "one": "Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generación.",
    "alt": [],
    "doc": "human/fichas/train-llm-from-scratch.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "reference"
+   ]
   },
   {
    "id": "warp",
@@ -15049,7 +18523,13 @@
    "one": "Framework de NVIDIA que compila funciones de Python en kernels para simulación física y cálculo en CPU o GPU.",
    "alt": [],
    "doc": "human/fichas/warp.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "chatbox",
@@ -15082,7 +18562,16 @@
     "jan"
    ],
    "doc": "human/fichas/chatbox.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "local"
+   ],
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   },
   {
    "id": "muse-spark",
@@ -15114,7 +18603,15 @@
    "alt": [],
    "doc": "human/fichas/muse-spark.md",
    "status": "unverified",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "documentos",
+    "local"
+   ],
+   "routes": [
+    "review"
+   ]
   },
   {
    "id": "nextcloud-server",
@@ -15145,7 +18642,15 @@
    "one": "Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia.",
    "alt": [],
    "doc": "human/fichas/nextcloud-server.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "documentos",
+    "local"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "transformers.js",
@@ -15173,7 +18678,15 @@
    "one": "Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript.",
    "alt": [],
    "doc": "human/fichas/transformers-js.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "local"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "front-end-checklist",
@@ -15204,14 +18717,23 @@
    "one": "Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo.",
    "alt": [],
    "doc": "human/fichas/front-end-checklist.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "web",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "autohedge",
    "name": "AutoHedge",
    "emoji": "📊",
-   "cat": 10,
-   "sub": "finanzas",
+   "cat": 14,
+   "sub": "agentes",
    "role": "runtime",
    "exec": "cloud",
    "setup": "heavy",
@@ -15235,14 +18757,21 @@
    "one": "Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado.",
    "alt": [],
    "doc": "human/fichas/autohedge.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "finanzas"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "binance-trader",
    "name": "binance-trader",
    "emoji": "📊",
-   "cat": 10,
-   "sub": "finanzas",
+   "cat": 14,
+   "sub": "bots",
    "role": "app",
    "exec": "cloud",
    "setup": "medium",
@@ -15266,14 +18795,21 @@
    "one": "Bot experimental de Python para estudiar estrategias y automatización con la API de Binance.",
    "alt": [],
    "doc": "human/fichas/binance-trader.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "finanzas"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "chartanalyst",
    "name": "chartAnalyst",
    "emoji": "📊",
-   "cat": 10,
-   "sub": "finanzas",
+   "cat": 14,
+   "sub": "cuant",
    "role": "library",
    "exec": "local",
    "setup": "medium",
@@ -15291,14 +18827,21 @@
    "one": "Experimento de aprendizaje profundo que usa redes convolucionales para reconocer patrones en gráficos bursátiles.",
    "alt": [],
    "doc": "human/fichas/chartanalyst.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "finanzas"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "crypto-trader",
    "name": "crypto-trader",
    "emoji": "📊",
-   "cat": 10,
-   "sub": "finanzas",
+   "cat": 14,
+   "sub": "bots",
    "role": "library",
    "exec": "cloud",
    "setup": "medium",
@@ -15323,7 +18866,14 @@
    "alt": [],
    "doc": "human/fichas/crypto-trader.md",
    "status": "archived",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "finanzas"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "data-analyst-roadmap",
@@ -15354,7 +18904,16 @@
    "one": "Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera.",
    "alt": [],
    "doc": "human/fichas/data-analyst-roadmap.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "datos",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "dataanalystportfolioprojects",
@@ -15385,14 +18944,23 @@
    "one": "Portafolio de ejemplos de análisis de datos con SQL, Python, Tableau, Excel y Hive.",
    "alt": [],
    "doc": "human/fichas/dataanalystportfolioprojects.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "datos",
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "dexter",
    "name": "dexter",
    "emoji": "📊",
-   "cat": 10,
-   "sub": "finanzas",
+   "cat": 14,
+   "sub": "agentes",
    "role": "app",
    "exec": "cloud",
    "setup": "medium",
@@ -15406,18 +18974,25 @@
    "gh": "virattt/dexter",
    "github_id": 1076426995,
    "lib": false,
-   "pick": false,
+   "pick": true,
    "one": "Agente de investigación financiera que planifica consultas, obtiene datos de mercado y revisa sus análisis.",
    "alt": [],
    "doc": "human/fichas/dexter.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "finanzas"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "finceptterminal",
    "name": "FinceptTerminal",
    "emoji": "📊",
-   "cat": 10,
-   "sub": "finanzas",
+   "cat": 14,
+   "sub": "agentes",
    "role": "app",
    "exec": "hybrid",
    "setup": "heavy",
@@ -15441,14 +19016,21 @@
    "one": "Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes.",
    "alt": [],
    "doc": "human/fichas/finceptterminal.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "finanzas"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "intellitrader",
    "name": "IntelliTrader",
    "emoji": "📊",
-   "cat": 10,
-   "sub": "finanzas",
+   "cat": 14,
+   "sub": "bots",
    "role": "app",
    "exec": "hybrid",
    "setup": "medium",
@@ -15472,14 +19054,21 @@
    "one": "Bot configurable de criptomonedas con componentes de simulación, señales y conexión a exchanges.",
    "alt": [],
    "doc": "human/fichas/intellitrader.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "finanzas"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "machine-learning-for-trading",
    "name": "machine-learning-for-trading",
    "emoji": "📊",
-   "cat": 10,
-   "sub": "finanzas",
+   "cat": 14,
+   "sub": "aprender",
    "role": "directory",
    "exec": "hybrid",
    "setup": "heavy",
@@ -15503,14 +19092,23 @@
    "one": "Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias.",
    "alt": [],
    "doc": "human/fichas/machine-learning-for-trading.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "aprender",
+    "finanzas"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "open-sol-bot",
    "name": "open-sol-bot",
    "emoji": "📊",
-   "cat": 10,
-   "sub": "finanzas",
+   "cat": 14,
+   "sub": "bots",
    "role": "platform",
    "exec": "hybrid",
    "setup": "heavy",
@@ -15533,7 +19131,14 @@
    "one": "Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado.",
    "alt": [],
    "doc": "human/fichas/open-sol-bot.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "finanzas"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "osiris",
@@ -15558,7 +19163,14 @@
    "one": "Panel OSINT que combina mapas, noticias, vuelos, sismos y otras fuentes públicas de eventos globales.",
    "alt": [],
    "doc": "human/fichas/osiris.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "pythia",
@@ -15583,14 +19195,22 @@
    "one": "Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción.",
    "alt": [],
    "doc": "human/fichas/pythia.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "datos"
+   ],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "qlib",
    "name": "qlib",
    "emoji": "📊",
-   "cat": 10,
-   "sub": "finanzas",
+   "cat": 14,
+   "sub": "cuant",
    "role": "platform",
    "exec": "local",
    "setup": "heavy",
@@ -15610,18 +19230,25 @@
    "gh": "microsoft/qlib",
    "github_id": 287463830,
    "lib": false,
-   "pick": false,
+   "pick": true,
    "one": "Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias.",
    "alt": [],
    "doc": "human/fichas/qlib.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "finanzas"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "quantharness",
    "name": "QuantHarness",
    "emoji": "📊",
-   "cat": 10,
-   "sub": "finanzas",
+   "cat": 14,
+   "sub": "agentes",
    "role": "runtime",
    "exec": "cloud",
    "setup": "medium",
@@ -15641,14 +19268,21 @@
    "one": "Sistema experimental de agentes LLM que combina indicadores técnicos, patrones y tendencias para análisis de trading.",
    "alt": [],
    "doc": "human/fichas/quantharness.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "finanzas"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "stocks-analyst",
    "name": "stocks",
    "emoji": "📊",
-   "cat": 10,
-   "sub": "finanzas",
+   "cat": 14,
+   "sub": "aprender",
    "role": "directory",
    "exec": "hybrid",
    "setup": "medium",
@@ -15666,14 +19300,23 @@
    "one": "Scripts para recopilar recomendaciones de analistas bursátiles y preparar datos para su evaluación histórica.",
    "alt": [],
    "doc": "human/fichas/stocks-analyst.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "aprender",
+    "finanzas"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "tradingagents",
    "name": "TradingAgents",
    "emoji": "📊",
-   "cat": 10,
-   "sub": "finanzas",
+   "cat": 14,
+   "sub": "agentes",
    "role": "runtime",
    "exec": "cloud",
    "setup": "medium",
@@ -15696,7 +19339,14 @@
    "one": "Framework experimental que organiza agentes de análisis financiero, debate y evaluación de decisiones de trading.",
    "alt": [],
    "doc": "human/fichas/tradingagents.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "finanzas"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "ruview",
@@ -15727,7 +19377,14 @@
    "one": "Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento.",
    "alt": [],
    "doc": "human/fichas/ruview.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "imagenes"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "ace-step-1.5",
@@ -15753,7 +19410,13 @@
    "one": "Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño.",
    "alt": [],
    "doc": "human/fichas/ace-step-1-5.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [],
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   },
   {
    "id": "ai-youtube-shorts-generator",
@@ -15784,7 +19447,14 @@
    "one": "Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM.",
    "alt": [],
    "doc": "human/fichas/ai-youtube-shorts-generator.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "edge-tts",
@@ -15813,7 +19483,14 @@
     "kokoro"
    ],
    "doc": "human/fichas/edge-tts.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "narrar"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "manim-community",
@@ -15844,7 +19521,14 @@
     "manim"
    ],
    "doc": "human/fichas/manim-community.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "no_api"
+   ]
   },
   {
    "id": "music-megathread",
@@ -15868,7 +19552,15 @@
    "one": "Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música.",
    "alt": [],
    "doc": "human/fichas/music-megathread.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "aprender"
+   ],
+   "routes": [
+    "no_api",
+    "reference"
+   ]
   },
   {
    "id": "palmier-pro",
@@ -15899,7 +19591,15 @@
    "one": "Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales.",
    "alt": [],
    "doc": "human/fichas/palmier-pro.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "video",
+    "mcp"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "rea-video",
@@ -15930,7 +19630,16 @@
    "one": "Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md.",
    "alt": [],
    "doc": "human/fichas/rea-video.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "video",
+    "skills"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   },
   {
    "id": "short-video-factory",
@@ -15961,7 +19670,14 @@
    "one": "Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos.",
    "alt": [],
    "doc": "human/fichas/short-video-factory.md",
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "video"
+   ],
+   "routes": [
+    "api"
+   ]
   },
   {
    "id": "archify",
@@ -15996,7 +19712,539 @@
     "claude-code",
     "codex"
    ],
-   "starred_by": "Cristrva1"
+   "starred_by": "Cristrva1",
+   "added_at": "2026-11-14",
+   "goals": [
+    "diagramas"
+   ],
+   "routes": [
+    "claude",
+    "codex"
+   ]
   }
- ]
+ ],
+ "discovery": {
+  "goals": [
+   {
+    "id": "programar",
+    "title": "Programar con un agente",
+    "description": "Elegir una herramienta de desarrollo y mejorar su flujo sin construir un agente desde cero.",
+    "starters": [
+     "codex",
+     "claude-code",
+     "opencode"
+    ],
+    "guided": [
+     "codex",
+     "claude-code",
+     "opencode",
+     "goose"
+    ],
+    "categories": [
+     2,
+     3,
+     7
+    ],
+    "keywords": [
+     "programar",
+     "codigo",
+     "coding",
+     "desarrollo",
+     "vibe coding",
+     "asistente de codigo"
+    ]
+   },
+   {
+    "id": "automatizar",
+    "title": "Automatizar tareas y conectar apps",
+    "description": "Diseñar flujos con disparadores, acciones y seguimiento.",
+    "starters": [
+     "n8n",
+     "activepieces",
+     "node-red"
+    ],
+    "guided": [
+     "n8n",
+     "activepieces",
+     "node-red",
+     "windmill"
+    ],
+    "categories": [
+     1,
+     5
+    ],
+    "keywords": [
+     "automatizar",
+     "automatizacion",
+     "workflow",
+     "flujo",
+     "zapier",
+     "integraciones"
+    ]
+   },
+   {
+    "id": "whatsapp",
+    "title": "Atender clientes por WhatsApp",
+    "description": "Conectar el canal, decidir el flujo y pasar a una persona cuando haga falta.",
+    "starters": [
+     "evolution-api",
+     "waha",
+     "chatwoot"
+    ],
+    "guided": [
+     "chatwoot",
+     "waha",
+     "evolution-api",
+     "n8n"
+    ],
+    "categories": [
+     1
+    ],
+    "keywords": [
+     "whatsapp",
+     "clientes",
+     "ventas",
+     "mensajes",
+     "bot de whatsapp"
+    ]
+   },
+   {
+    "id": "documentos",
+    "title": "Preguntar a documentos",
+    "description": "Extraer el contenido y elegir una solución de búsqueda o RAG.",
+    "starters": [
+     "docling",
+     "anything-llm",
+     "ragflow"
+    ],
+    "guided": [
+     "anything-llm",
+     "open-webui",
+     "ragflow",
+     "open-notebook",
+     "surfsense",
+     "private-gpt",
+     "pageindex"
+    ],
+    "categories": [
+     6,
+     8,
+     13
+    ],
+    "keywords": [
+     "documentos",
+     "pdf",
+     "rag",
+     "manuales",
+     "preguntar a mis archivos",
+     "conocimiento"
+    ]
+   },
+   {
+    "id": "investigar",
+    "title": "Investigar un tema con fuentes",
+    "description": "Combinar búsqueda y síntesis con trazabilidad de las fuentes.",
+    "starters": [
+     "local-deep-research",
+     "gpt-researcher",
+     "deer-flow"
+    ],
+    "guided": [
+     "local-deep-research",
+     "gpt-researcher",
+     "deer-flow",
+     "storm",
+     "open-deep-research"
+    ],
+    "categories": [
+     3,
+     4
+    ],
+    "keywords": [
+     "investigar",
+     "research",
+     "investigacion",
+     "buscar informacion",
+     "fuentes",
+     "informe"
+    ]
+   },
+   {
+    "id": "local",
+    "title": "Usar IA con modelos locales",
+    "description": "Elegir un motor, un modelo y una interfaz que funcionen con tu equipo.",
+    "starters": [
+     "ollama",
+     "jan",
+     "open-webui"
+    ],
+    "guided": [
+     "jan",
+     "ollama",
+     "open-webui",
+     "cherry-studio",
+     "chatbox",
+     "librechat"
+    ],
+    "categories": [
+     8,
+     6
+    ],
+    "keywords": [
+     "local",
+     "offline",
+     "sin conexion",
+     "ollama",
+     "privacidad",
+     "sin api"
+    ]
+   },
+   {
+    "id": "web",
+    "title": "Crear una web o aplicación",
+    "description": "Elegir componentes y añadir IA solo si el producto la necesita.",
+    "starters": [
+     "ui",
+     "tailwindcss",
+     "assistant-ui"
+    ],
+    "guided": [
+     "onlook",
+     "plasmic",
+     "penpot",
+     "openui",
+     "ui",
+     "assistant-ui"
+    ],
+    "categories": [
+     9
+    ],
+    "keywords": [
+     "web",
+     "interfaz",
+     "ui",
+     "frontend",
+     "pagina",
+     "aplicacion",
+     "landing"
+    ]
+   },
+   {
+    "id": "video",
+    "title": "Crear o editar videos",
+    "description": "Elegir entre editar material, programar escenas o generar clips.",
+    "starters": [
+     "remotion",
+     "moviepy",
+     "ffmpeg"
+    ],
+    "guided": [
+     "lossless-cut",
+     "openscreen",
+     "opencut",
+     "obs-studio",
+     "remotion",
+     "hyperframes",
+     "ffmpeg",
+     "moviepy"
+    ],
+    "categories": [
+     12
+    ],
+    "keywords": [
+     "video",
+     "videos",
+     "reels",
+     "shorts",
+     "montaje",
+     "editar video",
+     "animacion"
+    ]
+   },
+   {
+    "id": "voz",
+    "title": "Transcribir audio a texto",
+    "description": "Obtener texto o subtítulos a partir de una grabación.",
+    "starters": [
+     "whisper-cpp",
+     "faster-whisper",
+     "whisperx"
+    ],
+    "guided": [
+     "whisper-cpp",
+     "faster-whisper",
+     "whisperx",
+     "whisper"
+    ],
+    "categories": [
+     12
+    ],
+    "keywords": [
+     "audio",
+     "transcribir",
+     "transcripcion",
+     "stt",
+     "subtitulos"
+    ]
+   },
+   {
+    "id": "narrar",
+    "title": "Crear voz a partir de texto",
+    "description": "Convertir un guion en narración con una ruta local o un servicio.",
+    "starters": [
+     "kokoro",
+     "supertonic",
+     "edge-tts"
+    ],
+    "guided": [
+     "kokoro",
+     "supertonic",
+     "edge-tts",
+     "chatterbox",
+     "omnivoice-studio"
+    ],
+    "categories": [
+     12
+    ],
+    "keywords": [
+     "voz",
+     "tts",
+     "narracion",
+     "narrar",
+     "sintesis",
+     "texto a voz"
+    ]
+   },
+   {
+    "id": "imagenes",
+    "title": "Generar o mejorar imágenes",
+    "description": "Elegir una interfaz y revisar modelos, pesos y requisitos de GPU.",
+    "starters": [
+     "comfyui",
+     "fooocus",
+     "rembg"
+    ],
+    "guided": [
+     "comfyui",
+     "fooocus",
+     "invokeai",
+     "stable-diffusion-webui",
+     "rembg"
+    ],
+    "categories": [
+     11
+    ],
+    "keywords": [
+     "imagenes",
+     "imagen",
+     "image",
+     "fotos",
+     "vision",
+     "generar imagen",
+     "upscale"
+    ]
+   },
+   {
+    "id": "presentaciones",
+    "title": "Crear una presentación",
+    "description": "Decidir si necesitas PowerPoint editable o diapositivas web.",
+    "starters": [
+     "ppt-master",
+     "presenton",
+     "slidev"
+    ],
+    "guided": [
+     "ppt-master",
+     "presenton",
+     "slidev",
+     "marp",
+     "reveal.js"
+    ],
+    "categories": [
+     13
+    ],
+    "keywords": [
+     "presentaciones",
+     "presentacion",
+     "ppt",
+     "powerpoint",
+     "slides",
+     "diapositivas"
+    ]
+   },
+   {
+    "id": "diagramas",
+    "title": "Dibujar un diagrama",
+    "description": "Explicar una idea con un dibujo, un esquema o un diagrama por código.",
+    "starters": [
+     "excalidraw",
+     "mermaid",
+     "tldraw"
+    ],
+    "guided": [
+     "excalidraw",
+     "mermaid",
+     "tldraw"
+    ],
+    "categories": [
+     9,
+     13
+    ],
+    "keywords": [
+     "diagrama",
+     "diagramas",
+     "dibujar",
+     "esquema",
+     "mapa mental"
+    ]
+   },
+   {
+    "id": "datos",
+    "title": "Explorar datos y crear dashboards",
+    "description": "Elegir una herramienta de BI o una librería de gráficos.",
+    "starters": [
+     "metabase",
+     "superset",
+     "streamlit"
+    ],
+    "guided": [
+     "metabase",
+     "superset",
+     "streamlit",
+     "redash",
+     "gradio"
+    ],
+    "categories": [
+     10,
+     7
+    ],
+    "keywords": [
+     "datos",
+     "dashboard",
+     "tablero",
+     "bi",
+     "analytics",
+     "analitica",
+     "graficos"
+    ]
+   },
+   {
+    "id": "mcp",
+    "title": "Dar herramientas a mi agente",
+    "description": "Buscar un servidor existente antes de programar un conector.",
+    "starters": [
+     "context7",
+     "playwright-mcp",
+     "github-mcp-server"
+    ],
+    "guided": [
+     "context7",
+     "playwright-mcp",
+     "github-mcp-server",
+     "n8n-mcp"
+    ],
+    "categories": [
+     5
+    ],
+    "keywords": [
+     "mcp",
+     "conector",
+     "herramientas",
+     "servidor mcp",
+     "conectar agente"
+    ]
+   },
+   {
+    "id": "skills",
+    "title": "Mejorar Claude Code o Codex",
+    "description": "Añadir instrucciones concretas al agente y conservar un conjunto pequeño.",
+    "starters": [
+     "superpowers",
+     "agent-skills",
+     "impeccable"
+    ],
+    "guided": [
+     "superpowers",
+     "agent-skills",
+     "impeccable",
+     "marketingskills"
+    ],
+    "categories": [
+     2,
+     9
+    ],
+    "keywords": [
+     "skills",
+     "plugins",
+     "prompts",
+     "mejorar agente",
+     "claude code",
+     "codex"
+    ]
+   },
+   {
+    "id": "aprender",
+    "title": "Aprender a construir con IA",
+    "description": "Empezar por un curso o ejemplo antes de desplegar una plataforma.",
+    "starters": [
+     "generative-ai-for-beginners",
+     "ai-engineering-hub",
+     "llms-from-scratch"
+    ],
+    "guided": [
+     "generative-ai-for-beginners",
+     "ai-engineering-hub",
+     "llms-from-scratch",
+     "ai-agents-for-beginners"
+    ],
+    "categories": [
+     2,
+     7
+    ],
+    "keywords": [
+     "aprender",
+     "curso",
+     "tutorial",
+     "principiante",
+     "ejemplos",
+     "desde cero"
+    ]
+   },
+   {
+    "id": "finanzas",
+    "title": "Investigar mercados y estrategias",
+    "description": "Consultar herramientas y ejemplos financieros distinguiendo análisis, backtesting y ejecución.",
+    "starters": [
+     "qlib",
+     "dexter",
+     "tradingagents"
+    ],
+    "guided": [
+     "qlib",
+     "dexter",
+     "tradingagents"
+    ],
+    "categories": [
+     14
+    ],
+    "keywords": [
+     "finanzas",
+     "financiero",
+     "trading",
+     "bolsa",
+     "acciones",
+     "cripto",
+     "mercados",
+     "inversion"
+    ]
+   }
+  ],
+  "principles": [
+   "Empieza por un resultado concreto y compara pocas opciones.",
+   "Revisa acceso, coste y equipo antes de instalar.",
+   "Las estrellas miden popularidad; no acreditan adecuación ni calidad."
+  ],
+  "default_goal": "programar",
+  "reviewed_at": "2026-11-14"
+ }
 }

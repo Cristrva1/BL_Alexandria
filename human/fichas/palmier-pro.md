@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Edición, grabación y subtítulos
+[🏠 Inicio](../README.md) › [🎬 Crear audio, voz y video](../categorias/12-audio-voz-video.md) › Edición, grabación y subtítulos
 
 # 🎬 palmier-pro
 
 > Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 14.8k | GPL-3.0 | Swift | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 14.8k | GPL-3.0 | Swift | 2026-11-14 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
+| Coste | El coste depende del proveedor o la ruta. Las versiones actuales distribuyen binarios propietarios; el código abierto conservado es histórico. Las funciones de IA pueden tener servicios adicionales. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales. Permite trabajar con una línea de tiempo y enlazar agentes mediante MCP en las versiones que lo incorporan.
 
@@ -22,9 +37,19 @@ Usas macOS y quieres explorar edición de video asistida por agentes.
 
 Permite trabajar con una línea de tiempo y enlazar agentes mediante MCP en las versiones que lo incorporan.
 
-## Instalación rápida
+## Cómo empezar
 
-Clona `git clone https://github.com/palmier-io/palmier-pro.git` y sigue la instalación del [README original](https://github.com/palmier-io/palmier-pro/blob/main/README.md). Las dependencias se configuran por proyecto.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/palmier-io/palmier-pro/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar palmier-pro para mi objetivo y necesito pasos guiados. Lee https://github.com/palmier-io/palmier-pro/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Clona `git clone https://github.com/palmier-io/palmier-pro.git` y sigue la insta
 ## Stack y modelos
 
 - **Stack:** Swift
-- **Modelos / API:** Configurar el proveedor o entorno indicado en el README; esta revisión no ejecutó el proyecto.
 - **Etiquetas:** `edicion` `ai-video` `claude` `macos` `mcp` `seedance2` `swift` `video-editor`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -49,6 +73,12 @@ Clona `git clone https://github.com/palmier-io/palmier-pro.git` y sigue la insta
 
 - 🐙 GitHub: [palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro)
 - 🌐 Web: <https://palmier.io>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/palmier-io/palmier-pro/blob/main/README.md)
 
 ---
 

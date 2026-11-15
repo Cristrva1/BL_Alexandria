@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [📄 Documentos & Presentaciones](../categorias/13-documentos-presentaciones.md) › Conversión de documentos para IA
+[🏠 Inicio](../README.md) › [📄 Trabajar con documentos y presentaciones](../categorias/13-documentos-presentaciones.md) › Conversión de documentos para IA
 
 # 🔄 Docling
 
 > Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 70.6k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 70.6k | MIT | Python | 2026-11-10 |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
+| Coste | El coste depende del proveedor o la ruta. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
+| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Entiende la estructura del documento (tablas, layout, fórmulas, orden de lectura) y la exporta para RAG y agentes.
 
@@ -22,9 +37,31 @@ Excelente con tablas y layouts complejos, y totalmente local.
 
 Modelos de layout y de tablas analizan cada página y construyen un documento estructurado exportable.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install docling` y `docling archivo.pdf`.
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un entorno Python con las dependencias indicadas por el proyecto.
+
+1. Instala la biblioteca en el entorno de tu proyecto.
+2. Ejecuta la conversión de un PDF o documento pequeño siguiendo el ejemplo del README.
+3. Revisa el texto, tablas y orden de lectura del resultado antes de procesar un lote.
+
+**Comando de entrada documentado:**
+
+```shell
+pip install docling
+```
+
+Comando presente en el README revisado; no es una prueba de instalación.
+
+[Instrucciones originales de instalación](https://github.com/docling-project/docling/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Docling para mi objetivo y necesito pasos guiados. Lee https://github.com/docling-project/docling/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +78,6 @@ Modelos de layout y de tablas analizan cada página y construyen un documento es
 ## Stack y modelos
 
 - **Stack:** Python, PyTorch
-- **Modelos / API:** Modelos propios de layout; VLM opcionales.
 - **Etiquetas:** `docs` `pdf` `ocr` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -68,6 +104,12 @@ Modelos de layout y de tablas analizan cada página y construyen un documento es
 - 🌐 Web: <https://docling-project.github.io/docling>
 - 🧪 Receta: [Documentos → presentaciones](../playbooks/documentos-presentaciones.md)
 - 🧪 Receta: [RAG sobre tus documentos](../playbooks/rag-sobre-documentos.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/docling-project/docling/blob/main/README.md)
 
 ---
 

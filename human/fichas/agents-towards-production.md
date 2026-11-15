@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, Prompts & Guías de Agente](../categorias/02-skills-prompts-gu-as-de-agente.md) › Guías, cursos y cookbooks
+[🏠 Inicio](../README.md) › [🧠 Mejorar tu agente: skills y prompts](../categorias/02-skills-prompts-gu-as-de-agente.md) › Guías, cursos y cookbooks
 
 # 🎓 Agents Towards Production
 
 > Colección de 28 tutoriales con código para llevar agentes de IA a producción: memoria, despliegue, seguridad, trazas y evaluación.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 21.9k | NOASSERTION | Jupyter Notebook | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 21.9k | NOASSERTION | Jupyter Notebook | 2026-06-23 |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio · **MCP** 🔌 sí
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
+| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
+| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Playbook de Nir Diamant (DiamantAI) con un tutorial por carpeta, en notebooks o scripts listos para ejecutar, sobre cada pieza del stack de un agente: tool calling seguro, datos web, RAG, memoria (Redis, Mem0, Cognee), Docker, FastAPI, GPU, MCP, A2A, LangGraph, seguridad, fine-tuning, trazas y evaluación. Muchos tutoriales los aportan empresas patrocinadoras.
 
@@ -22,9 +37,19 @@ Cubre lo que suele faltar después de la demo (estado, memoria, despliegue, guar
 
 Cada carpeta de `tutorials/` trae su README, su `requirements.txt` y un notebook o una app; la mayoría usa Python con LangChain o LangGraph y la API del proveedor o servicio que explica.
 
-## Instalación rápida
+## Cómo empezar
 
-`git clone https://github.com/NirDiamant/agents-towards-production` y, dentro del tutorial elegido, `pip install -r requirements.txt` y `jupyter notebook`; cada uno indica las API keys que necesita.
+Material para leer. [Entender los términos](../vocabulario.md).
+
+1. Abre el material original y elige un capítulo o ejemplo.
+2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
+3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+
+[Instrucciones originales de instalación](https://github.com/NirDiamant/agents-towards-production/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Agents Towards Production para mi objetivo y necesito pasos guiados. Lee https://github.com/NirDiamant/agents-towards-production/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Cada carpeta de `tutorials/` trae su README, su `requirements.txt` y un notebook
 ## Stack y modelos
 
 - **Stack:** Python, Jupyter, LangGraph, FastAPI, Docker
-- **Modelos / API:** Depende del tutorial: muchos usan la API de OpenAI y servicios de los patrocinadores; uno enseña a usar modelos locales con Ollama.
 - **Etiquetas:** `agents` `learning` `notebooks` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -59,6 +83,12 @@ Cada carpeta de `tutorials/` trae su README, su `requirements.txt` y un notebook
 
 - 🐙 GitHub: [NirDiamant/agents-towards-production](https://github.com/NirDiamant/agents-towards-production)
 - 🌐 Web: <https://diamant-ai.com>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/NirDiamant/agents-towards-production/blob/main/README.md)
 
 ---
 

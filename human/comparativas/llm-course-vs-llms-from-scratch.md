@@ -9,6 +9,9 @@
 | Elígelo si… | quieres una ruta completa para aprender LLM | quieres entender los LLM implementándolos |
 | Evítalo si… | buscas un curso introductorio de apps; mira `generative-ai-for-beginners` | solo quieres usar modelos existentes |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | Modelos locales documentados |
 | Setup | 🟢 fácil | 🟡 medio |
 | Licencia | Apache-2.0 | NOASSERTION |
 | Instalación | No se instala: abre el repo y sigue la ruta que te interese. | `git clone https://github.com/rasbt/LLMs-from-scratch` |

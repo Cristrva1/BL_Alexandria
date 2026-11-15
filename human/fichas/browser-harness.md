@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🕷️ Scraping, Búsqueda & Research Web](../categorias/04-scraping-b-squeda-research-web.md) › Navegadores y automatización web
+[🏠 Inicio](../README.md) › [🕷️ Buscar y extraer información web](../categorias/04-scraping-b-squeda-research-web.md) › Navegadores y automatización web
 
 # 🌐 Browser Harness
 
 > Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 19.1k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 19.1k | MIT | Python | 2026-06-24 |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios. |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta. |
+| Coste | Consumo del agente que ya utilizas. El modelo se consume en el cliente. Los servicios que la herramienta consulta pueden tener cuentas o tarifas propias. |
+| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+
+Puede conectarse a un cliente con soporte MCP, incluido Claude Code o Codex. Debes configurar el servidor y sus permisos.
+
+## Qué puedes hacer con él
 
 Conecta el agente a tu navegador por CDP con un arnés pequeño y editable. Útil cuando necesitas libertad total y tus cuentas ya abiertas.
 
@@ -22,9 +37,24 @@ De los creadores de browser-use; se configura con un solo prompt.
 
 Habla con Chrome por el protocolo DevTools y expone comandos simples que el agente invoca.
 
-## Instalación rápida
+## Cómo empezar
 
-Sigue el README: pide a tu agente que lo instale con el prompt indicado.
+Se configura en tu agente. [Entender los términos](../vocabulario.md).
+
+**Antes de empezar:**
+
+- Un cliente MCP compatible.
+- Las credenciales del servicio conectado, si las pide el servidor.
+
+1. Instala o configura el servidor según su README.
+2. Añade su comando o URL en la configuración MCP de tu cliente.
+3. Comprueba que aparecen las herramientas antes de asignar una tarea.
+
+[Instrucciones originales de instalación](https://github.com/browser-use/browser-harness/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar Browser Harness para mi objetivo y necesito pasos guiados. Lee https://github.com/browser-use/browser-harness/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +73,6 @@ Sigue el README: pide a tu agente que lo instale con el prompt indicado.
 ## Stack y modelos
 
 - **Stack:** Python, CDP
-- **Modelos / API:** Usa el modelo de tu agente.
 - **Etiquetas:** `browser` `coding-agent` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -65,6 +94,12 @@ Sigue el README: pide a tu agente que lo instale con el prompt indicado.
 
 - 🐙 GitHub: [browser-use/browser-harness](https://github.com/browser-use/browser-harness)
 - 🌐 Web: <https://browser-harness.com>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/browser-use/browser-harness/blob/main/README.md)
 
 ---
 

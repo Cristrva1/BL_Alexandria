@@ -9,6 +9,9 @@
 | Elígelo si… | necesitas segmentar objetos en video | necesitas segmentar objetos en imágenes |
 | Evítalo si… | solo trabajas con imágenes sueltas; `segment-anything` basta | trabajas con video; mira `sam2` |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | Apache-2.0 | Apache-2.0 |
 | Instalación | `pip install -e .` | `pip install git+https://github.com/facebookresearch/segment-anything.git` |

@@ -9,6 +9,9 @@
 | Elígelo si… | quieres una demo web de tu modelo rápido | quieres una UI de datos al vuelo y prototipos rápidos |
 | Evítalo si… | construyes una app de datos con varias páginas; mira `streamlit` | necesitas una app productiva con control fino del frontend (dash) |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | Apache-2.0 | Apache-2.0 |
 | Instalación | `pip install gradio` | `pip install streamlit` |

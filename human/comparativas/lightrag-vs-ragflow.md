@@ -9,6 +9,9 @@
 | Elígelo si… | quieres RAG con grafo sin el coste de GraphRAG | tus documentos son complejos y necesitas citas fiables |
 | Evítalo si… | no necesitas relaciones entre entidades; usa RAG vectorial con `llama-index` | quieres algo ligero en un portátil; mira `anything-llm` |
 | Ejecución | 🔀 híbrido | 🏠 local |
+| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | Modelos locales documentados |
 | Setup | 🟡 medio | 🔴 pesado |
 | Licencia | MIT | Apache-2.0 |
 | Instalación | `pip install lightrag-hku` | `git clone https://github.com/infiniflow/ragflow && cd ragflow/docker && docker compose up -d` |

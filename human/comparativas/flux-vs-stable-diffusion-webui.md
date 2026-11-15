@@ -9,6 +9,9 @@
 | Elígelo si… | quieres generar imágenes de alta calidad con modelos abiertos | quieres extensiones y comunidad amplia |
 | Evítalo si… | no tienes GPU potente; usa una API en la nube | prefieres un flujo moderno y limpio (InvokeAI) |
 | Ejecución | 🏠 local | 🏠 local |
+| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🔴 pesado | 🔴 pesado |
 | Licencia | Apache-2.0 | AGPL-3.0 |
 | Instalación | `pip install -e ".[all]"` | `git clone` |

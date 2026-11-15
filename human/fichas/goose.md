@@ -1,16 +1,32 @@
-[🏠 Inicio](../README.md) › [🕸️ Frameworks & Orquestación de Agentes](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Agentes de código (terminal e IDE)
+[🏠 Inicio](../README.md) › [🕸️ Crear y usar agentes de IA](../categorias/03-frameworks-orquestaci-n-de-agentes.md) › Agentes de código (terminal e IDE)
 
 # 👨‍💻 goose
 
 > Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 56.6k | Apache-2.0 | Rust | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 56.6k | Apache-2.0 | Rust | 2026-11-10 |
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | API de IA opcional. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Integración documentada por el proyecto |
+| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
+| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
+| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Otras rutas | El README también documenta proveedores ACP para utilizar acceso de Gemini, además de APIs y modelos locales. |
+
+El README documenta una integración con las sesiones de los agentes indicados. Configurar esa ruta y comprobar sus límites; otras rutas pueden facturar por API.
+
+## Qué puedes hacer con él
 
 Funciona como app de escritorio o CLI y va más allá del código: automatiza tareas de desarrollo y de sistema con extensiones MCP. Nacido en Block.
 
@@ -22,9 +38,19 @@ Diseñado alrededor de MCP desde el inicio, con app de escritorio y recetas comp
 
 Un núcleo en Rust ejecuta el bucle del agente y carga extensiones MCP como herramientas.
 
-## Instalación rápida
+## Cómo empezar
 
-Descarga la app desde los releases o `curl -fsSL https://github.com/block/goose/releases/download/stable/download_cli.sh | bash`.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/aaif-goose/goose/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar goose para mi objetivo y necesito pasos guiados. Lee https://github.com/aaif-goose/goose/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +67,6 @@ Descarga la app desde los releases o `curl -fsSL https://github.com/block/goose/
 ## Stack y modelos
 
 - **Stack:** Rust, TypeScript, Electron
-- **Modelos / API:** Agnóstico: cualquier proveedor o modelo local.
 - **Etiquetas:** `coding-agent` `agents` `mcp` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -64,6 +89,12 @@ Descarga la app desde los releases o `curl -fsSL https://github.com/block/goose/
 
 - 🐙 GitHub: [aaif-goose/goose](https://github.com/aaif-goose/goose)
 - 🌐 Web: <https://goose-docs.ai/>
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/aaif-goose/goose/blob/main/README.md)
 
 ---
 

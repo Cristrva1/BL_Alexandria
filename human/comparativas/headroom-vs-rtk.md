@@ -9,6 +9,9 @@
 | Elígelo si… | te quedas sin contexto en sesiones largas | tu agente consume demasiado contexto leyendo salidas extensas de terminal |
 | Evítalo si… | tus prompts ya caben holgados o la pérdida de detalle por resumen es inaceptable | el coste operativo supera el volumen de uso del proyecto |
 | Ejecución | 🔀 híbrido | 🏠 local |
+| API de IA | API de IA opcional | API de IA opcional |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | Apache-2.0 | Apache-2.0 |
 | Instalación | Instalación según el repo (`pip`/`npm`); requiere un LLM para la condensación (o modo l… | `git clone https://github.com/rtk-ai/rtk.git` |

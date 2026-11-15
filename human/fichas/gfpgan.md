@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🖼️ Generación de Imagen & Visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Restauración, upscaling y edición
+[🏠 Inicio](../README.md) › [🖼️ Generar imágenes y trabajar con visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Restauración, upscaling y edición
 
 # 🙂 GFPGAN
 
 > Algoritmo de restauración facial de Tencent ARC que reconstruye rostros degradados o de baja calidad usando priors generativos (GAN) preentrenados.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 37.7k | NOASSERTION | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 37.7k | NOASSERTION | Python | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
+| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
+| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Resuelve el problema concreto de las caras "fundidas" que aparecen al reescalar o comprimir fotos.
 
@@ -22,9 +37,19 @@ Resuelve muy bien un problema acotado y es una utilidad ampliamente reutilizada 
 
 Detecta el rostro, lo alinea y aplica una red GAN (GFPGANv1) sobre PyTorch (GPU opcional) que regenera detalle realista preservando la identidad; combina la salida con la imagen original para no alterar el resto.
 
-## Instalación rápida
+## Cómo empezar
 
-`pip install gfpgan` o `git clone` con sus dependencias; los pesos del modelo se descargan en el primer uso. En Windows puede necesitar compilación de extensiones de CUDA.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/TencentARC/GFPGAN/blob/master/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar GFPGAN para mi objetivo y necesito pasos guiados. Lee https://github.com/TencentARC/GFPGAN/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Detecta el rostro, lo alinea y aplica una red GAN (GFPGANv1) sobre PyTorch (GPU 
 ## Stack y modelos
 
 - **Stack:** Python, PyTorch, GPU opcional
-- **Modelos / API:** Modelos locales.
 - **Etiquetas:** `image` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -60,6 +84,12 @@ Detecta el rostro, lo alinea y aplica una red GAN (GFPGANv1) sobre PyTorch (GPU 
 ## Enlaces
 
 - 🐙 GitHub: [TencentARC/GFPGAN](https://github.com/TencentARC/GFPGAN)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/TencentARC/GFPGAN/blob/master/README.md)
 
 ---
 

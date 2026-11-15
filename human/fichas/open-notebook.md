@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🏠 IA Local: Modelos, Chats & Workspaces](../categorias/08-ia-local-modelos-chats-workspaces.md) › NotebookLM: alternativas y clientes
+[🏠 Inicio](../README.md) › [🏠 Usar modelos y asistentes locales](../categorias/08-ia-local-modelos-chats-workspaces.md) › NotebookLM: alternativas y clientes
 
 # 📓 open-notebook
 
 > Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 42k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 42k | MIT | TypeScript | 2026-06-23 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | API de IA opcional. Puedes elegir la ruta local documentada o configurar un proveedor remoto; la ruta remota puede requerir API key o acceso propio. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
+| Coste | El coste depende del proveedor o la ruta. La inferencia local consume recursos de tu equipo. Los proveedores remotos y servicios del cliente tienen sus propios planes y tarifas. |
+| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 Resuelve el envío de documentos sensibles a la nube que implica el NotebookLM oficial.
 
@@ -22,9 +37,19 @@ Cubre la demanda de un NotebookLM sin envío de datos a la nube y es uno de los 
 
 Un backend FastAPI indexa las fuentes y las consulta vía RAG contra modelos servidos por Ollama, con una UI React/Next.js para notebooks y generación de audio.
 
-## Instalación rápida
+## Cómo empezar
 
-`docker` (imagen oficial) o `pip` más Ollama para los modelos locales. Requiere Ollama instalado y al menos un modelo descargado (p. ej. Llama 3) para el modo 100% local.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/lfnovo/open-notebook/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar open-notebook para mi objetivo y necesito pasos guiados. Lee https://github.com/lfnovo/open-notebook/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -41,7 +66,6 @@ Un backend FastAPI indexa las fuentes y las consulta vía RAG contra modelos ser
 ## Stack y modelos
 
 - **Stack:** Python (FastAPI), React/Next.js
-- **Modelos / API:** Llama 3/Gemma 2 vía Ollama o APIs comerciales.
 - **Etiquetas:** `notebooks` `research` `typescript` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -64,6 +88,12 @@ Un backend FastAPI indexa las fuentes y las consulta vía RAG contra modelos ser
 - 🐙 GitHub: [lfnovo/open-notebook](https://github.com/lfnovo/open-notebook)
 - 🌐 Web: <https://www.open-notebook.ai>
 - 🧪 Receta: [Workspace privado local soberano](../playbooks/workspace-privado-local-soberano.md)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/lfnovo/open-notebook/blob/main/README.md)
 
 ---
 

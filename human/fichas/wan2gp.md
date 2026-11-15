@@ -1,16 +1,31 @@
-[🏠 Inicio](../README.md) › [🎬 Audio, Voz & Video](../categorias/12-audio-voz-video.md) › Video generativo y pipelines automáticos
+[🏠 Inicio](../README.md) › [🎬 Crear audio, voz y video](../categorias/12-audio-voz-video.md) › Video generativo y pipelines automáticos
 
 # 🎬 WanGP
 
 > App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas.
 
-| ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
-|---|---|---|---|---|
-| 11.8k | NOASSERTION | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
+| Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
+|---|---|---|---|
+| 11.8k | NOASSERTION | Python | 2026-08-23 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
-## Qué es
+## Acceso, coste y equipo
+
+[Cómo interpretar estas rutas](../acceso.md)
+
+| Pregunta | Respuesta |
+|---|---|
+| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| Claude Code | Integración no documentada |
+| Codex | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
+| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
+| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+
+El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+
+## Qué puedes hacer con él
 
 WanGP, antes Wan2GP, es una interfaz web para ejecutar en tu GPU decenas de modelos generativos abiertos: video (Wan 2.1/2.2, LTX-2, Hunyuan Video), imagen (Flux, Qwen Image), voz y música (Chatterbox, Index TTS, Ace Step) y 3D. Añade cola de trabajos, LoRAs, galerías y un asistente local, Deepy, que planifica y lanza las generaciones por ti.
 
@@ -22,9 +37,19 @@ Está pensado para quien no tiene una GPU de 80 GB: gestiona memoria y cuantizac
 
 App Python con interfaz Gradio que descarga los pesos adecuados a tu hardware y aplica offloading con su librería mmgp. Ofrece modo headless por línea de comandos, API propia e interfaz MCP para agentes externos.
 
-## Instalación rápida
+## Cómo empezar
 
-Ejecuta `scripts/install.sh` (o `scripts\install.bat` en Windows), o bien `git clone https://github.com/deepbeepmeep/Wan2GP.git`, entorno conda con Python 3.11, PyTorch con CUDA y `pip install -r requirements.txt`; arranca con `python wgp.py`.
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+
+1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
+2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
+3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+
+[Instrucciones originales de instalación](https://github.com/deepbeepmeep/WanGP/blob/main/README.md)
+
+**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
+
+> Quiero usar WanGP para mi objetivo y necesito pasos guiados. Lee https://github.com/deepbeepmeep/WanGP/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Casos de uso
 
@@ -43,7 +68,6 @@ Ejecuta `scripts/install.sh` (o `scripts\install.bat` en Windows), o bien `git c
 ## Stack y modelos
 
 - **Stack:** Python, PyTorch, Gradio, Diffusers, mmgp
-- **Modelos / API:** Modelos abiertos en local (Wan, LTX, Hunyuan, Flux, Qwen Image, Chatterbox, Index TTS, entre otros); no necesita API externa.
 - **Etiquetas:** `video` `image` `tts` `local` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -64,6 +88,12 @@ Ejecuta `scripts/install.sh` (o `scripts\install.bat` en Windows), o bien `git c
 ## Enlaces
 
 - 🐙 GitHub: [deepbeepmeep/WanGP](https://github.com/deepbeepmeep/WanGP)
+
+## Fuentes y alcance de revisión
+
+Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+
+- [Fuente 1](https://github.com/deepbeepmeep/WanGP/blob/main/README.md)
 
 ---
 
