@@ -439,6 +439,53 @@ textarea:focus-visible { outline: 3px solid var(--terra-deep); outline-offset: 3
 :where(a,button,input,select,summary):focus-visible { outline: 3px solid var(--terra-deep); outline-offset: 3px; }
 .kicker { display: none; }
 
+/* Practical categories: a browsable directory, followed by focused topic pages. */
+.area-quick-list, .area-directory, .topic-preview, .topic-directory, .starter-list, .technical-index { list-style: none; margin: 0; padding: 0; }
+.area-quick-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); column-gap: 2rem; }
+.area-quick-list li { border-bottom: 1px solid var(--rule); min-width: 0; }
+.area-quick-list a { display: block; padding-block: .95rem; text-decoration: none; }
+.area-quick-list strong, .area-quick-list span { display: block; }
+.area-quick-list span { color: var(--ink-soft); font-size: .85rem; margin-top: .25rem; }
+.area-directory { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 2rem 2.5rem; }
+.area-entry { border-top: 1px solid var(--rule); padding-top: 1.2rem; min-width: 0; }
+.area-entry h3 { font-size: 1.55rem; line-height: 1.2; }
+.area-entry > p { color: var(--ink-soft); font-size: .95rem; max-width: 60ch; }
+.topic-preview { margin-block: .8rem 1rem; }
+.topic-preview li { margin-block: .2rem; }
+.topic-preview a { display: inline-block; padding-block: .3rem; text-underline-offset: .2em; }
+.area-more { font-weight: 600; display: inline-block; min-height: 32px; padding-block: .2rem; }
+.technical-map { border-top: 1px solid var(--rule); padding-top: 1.2rem; margin-top: 2.5rem; }
+.technical-map summary { cursor: pointer; padding-block: .6rem; }
+.technical-index { columns: 2; column-gap: 2rem; margin-top: 1rem; }
+.technical-index li { break-inside: avoid; padding-block: .45rem; }
+.breadcrumbs { color: var(--ink-soft); font-size: .9rem; line-height: 1.6; margin-bottom: 1.1rem; }
+.area-jump { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; padding-block: .8rem; }
+.area-jump a { padding-block: .25rem; }
+.topic-directory li { border-bottom: 1px solid var(--rule); }
+.topic-directory .topic-row { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 1.2rem; align-items: start; padding-block: 1.1rem; color: inherit; text-decoration: none; }
+.topic-directory h3 { font-size: 1.45rem; color: var(--terra-deep); text-decoration: underline; text-underline-offset: .15em; }
+.topic-directory p { margin-block: .4rem 0; color: var(--ink-soft); max-width: 65ch; }
+.topic-count { color: var(--ink-soft); white-space: nowrap; padding-block: .25rem; min-height: 32px; font-size: .9rem; }
+.setup-guide { max-width: 73ch; }
+.setup-guide ol { padding-left: 1.4rem; }
+.setup-guide li { padding-block: .65rem; padding-left: .25rem; }
+.setup-guide h3 { font-size: 1.3rem; }
+.setup-guide p { margin-block: .4rem 0; }
+.starter-list { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.5rem; }
+.starter-list li { border-top: 1px solid var(--rule); padding-top: 1rem; min-width: 0; }
+.starter-list p { font-size: .95rem; }
+.starter-list .meta { font-size: .8rem; }
+#area-topics, #area-setup { scroll-margin-top: 1rem; }
+@media (max-width: 900px) {
+  .area-directory, .starter-list { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .area-quick-list { grid-template-columns: 1fr; }
+  .technical-index { columns: 1; }
+  .topic-directory .topic-row { grid-template-columns: 1fr; gap: .35rem; }
+  .topic-count { justify-self: start; }
+}
+
 @media (max-width: 900px) {
   .mobile-hint { display: block; }
   .shell { display: block; }

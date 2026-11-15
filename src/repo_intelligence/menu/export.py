@@ -22,6 +22,7 @@ from __future__ import annotations
 import json
 import re
 from repo_intelligence.core.access import access_facts, access_routes, access_rows
+from repo_intelligence.core.taxonomy import build_areas
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -197,12 +198,22 @@ def export_menu(project_root: Path, output_dir: Path | None = None) -> dict:
     _write_entry(out, scan, merged, by_cat, cat_meta, recipes, model_guidance)
     _write_category_files(cats_dir, by_cat, cat_meta)
     _write_json_mirror(out, scan, merged, by_cat, cat_meta, recipes, model_guidance)
+    areas=build_areas(scan,[r for r in merged.values() if int(r.get("cat") or 0)>0 and not r.get("alias_of")])
+    if areas:
+        lines=["# Categorías y subcategorías prácticas", "", "Mapa portable por tareas. Cada id conserva su ficha en REPO_MENU_DATA.json y su sección técnica en REPO_MENU_cats/.", "", "Los recuentos por área pueden solaparse: no equivalen a proyectos distintos.", ""]
+        for area in areas:
+            lines += ["## "+area["title"], "", area["description"], ""]
+            for topic in area["topics"]:
+                lines += ["### "+topic["title"], "", topic["description"], "", ", ".join("`"+rid+"`" for rid in topic["repo_ids"]), ""]
+        (out/"REPO_AREAS.md").write_text("\n".join(lines),encoding="utf8")
+        entry=out/"REPO_MENU.md"
+        entry.write_text(entry.read_text(encoding="utf8").replace("\n", "\n\n[Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).\n",1),encoding="utf8")
 
     return {
         "output_dir": str(out),
         "repos": len(merged),
         "categories": len([c for c in by_cat if c != 0]),
-        "files": 1 + len([c for c in by_cat if c != 0]) + 1,
+        "files": 1 + len([c for c in by_cat if c != 0]) + 1 + bool(areas),
     }
 
 
@@ -491,6 +502,7 @@ def _write_json_mirror(out: Path, scan: dict, merged: dict, by_cat: dict,
             for c in scan.get("categories", [])
         ],
         "recipes": recipes,
+        "areas": build_areas(scan,[r for r in merged.values() if int(r.get("cat") or 0)>0 and not r.get("alias_of")]),
         "model_guidance": model_guidance,
         "repos": [
             _json_repo(r)

@@ -33,7 +33,7 @@ Nombre: Biblioteca de Alexandría. Contenido en español claro, orientado a pers
 
 ## Evidence on Hand
 
-El catálogo contiene 679 proyectos y tres entradas auxiliares, organizados en 32 categorías y 22 objetivos. Las categorías separan herramientas por tarea; los objetivos reúnen piezas de varias salas para conseguir un resultado. Hay fuentes primarias de README o fichas de modelo, snapshots de identidades de GitHub y pruebas de los generadores. Kimi K2.7 Code tiene su repositorio oficial de pesos en Hugging Face. La revisión documental no equivale a pruebas de instalación, rendimiento o funcionamiento de todos los proyectos.
+El catálogo contiene 679 proyectos y tres entradas auxiliares. La entrada principal muestra 13 áreas de trabajo y tres colecciones de configuración (Claude Code, Codex y Antigravity), con 92 subcategorías prácticas. El usuario pidió priorizar las áreas de trabajo en la portada. Se conservan las 32 secciones técnicas, sus enlaces y las 22 rutas por objetivo. Los proyectos pueden aparecer en varios temas sin duplicar sus fichas; las cifras por área no se suman para obtener el total. Las fuentes primarias y los perfiles de acceso se conservan. La revisión documental no equivale a pruebas de instalación, rendimiento o funcionamiento de todos los proyectos.
 
 ## Product Principles
 

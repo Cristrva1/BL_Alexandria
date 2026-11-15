@@ -43,6 +43,8 @@ from repo_intelligence.core.catalog import (
 from repo_intelligence.core.io import read_yaml, write_json
 from repo_intelligence.guides.explorer import render_explorer
 from repo_intelligence.guides.navigation import render_navigation
+from repo_intelligence.guides.areas import practical_table
+from repo_intelligence.core.taxonomy import build_areas
 from repo_intelligence.core.access import API_LABELS, COST_LABELS, LOCAL_LABELS, access_facts, access_rows
 from repo_intelligence.core.access import AUDIENCE_LABELS
 
@@ -706,7 +708,7 @@ def _install_view(cat: Catalog, title: str, intro: str, repos: list[dict[str, An
 # ---------------------------------------------------------------------------
 
 def _render_novedades(project_root: Path, cat: Catalog) -> None:
-    repos = [r for r in cat.repos if r.get('gh') and not r.get('alias_of')]
+    repos = [r for r in cat.repos if r['cat'] > 0 and not r.get('alias_of')]
     repos.sort(key=lambda r: (r.get('added_at') or '', r['id']), reverse=True)
     lines = ['[Inicio](README.md) · [Explorador](../docs/index.html#/novedades)', '', '# Incorporaciones a Alexandria', '', 'La fecha es la primera aparición del repo en el historial de esta biblioteca. No indica la fecha de lanzamiento del proyecto ni depende de que lo hayas descargado.', '', '| Añadido | Repo | Qué hace | Acceso básico |', '|---|---|---|---|']
     for repo in repos:
@@ -850,8 +852,12 @@ def _guide_card(cat: Catalog, repo: dict[str, Any]) -> list[str]:
 # ---------------------------------------------------------------------------
 
 def _render_human_home(project_root: Path, cat: Catalog) -> None:
-    repos = [r for r in cat.repos if r.get('gh') and not r.get('alias_of')]
+    repos = [r for r in cat.repos if r['cat'] > 0 and not r.get('alias_of')]
     lines = ['# Biblioteca de Alexandría', '', f'{len(repos)} repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.', '', '## Empieza por tu pregunta', '', '| Si estás pensando… | Abre |', '|---|---|', '| Quiero conseguir un resultado, pero no sé qué repo buscar | [Rutas por objetivo](rutas.md) |', '| Ya tengo Claude Code o Codex; quiero aprovecharlo | [Formas de uso](formas-de-uso.md) |', '| Quiero entender si necesita API, suscripción o modelo local | [Acceso y costes](acceso.md) |', '| Ya elegí una herramienta y quiero probarla | [Cómo empezar](instalar.md) |', '| Quiero buscar, filtrar o comparar nombres concretos | [Explorador](../docs/index.html) |', '| Quiero ver qué se incorporó a la biblioteca | [Novedades](novedades.md) |', '', '## Explora por tema', '', _categories_table(cat, 'human'), '', '## Construye un flujo completo', '', 'Las [recetas](playbooks/README.md) explican qué papel cumple cada pieza. No necesitas instalar todos los repos de una categoría.', '', '## Cómo leer una ficha', '', 'Cada ficha empieza por el resultado y el acceso: API de IA, Claude Code, Codex, modelos locales, coste y equipo. Después incluye pasos de arranque, criterios de elección, alternativas y fuentes.', '', 'Un punto de partida es una selección editorial. Las estrellas indican popularidad. Un comando documentado no es una prueba de instalación. Una compatibilidad no documentada sigue siendo una pregunta abierta.', '', '[Leer esta guía desde el principio](elegir.md) · [Mantener y ampliar la biblioteca](mantenimiento.md)', '', _footer(cat)]
+    areas=build_areas(cat.compact,repos)
+    if areas:
+        i=lines.index('## Explora por tema')
+        lines[i+2:i+3]=['[Abrir categorías y subcategorías](areas.md). Cada proyecto conserva una ficha y puede aparecer en varias áreas.', '', practical_table(areas), '', '## Índice técnico por tipo de herramienta', '', _categories_table(cat,'human')]
     _write(project_root/'human'/'README.md', '\n'.join(lines))
 
 
@@ -908,6 +914,11 @@ def _update_root_docs(project_root: Path, cat: Catalog) -> None:
         f"{len(cat.compact.get('discovery', {}).get('goals', []))} rutas por objetivo"
         + (f" · acceso revisado el {cat.meta.get('access_checked')}" if cat.meta.get('access_checked') else "")
     )
+    areas=build_areas(cat.compact,repos)
+    if areas:
+        stats=(f"**{len(repos)} repos curados** · **{sum(a['kind']=='work' for a in areas)} áreas de trabajo** · "
+               f"**{sum(a['kind']=='tool' for a in areas)} colecciones de configuración** · "
+               f"**{sum(len(a['topics']) for a in areas)} subcategorías**")
     recipes = "\n".join(
         f"- [{rc.get('emoji', '')} {rc['title']}]({playbook_path(rc['id'], 'root')}) — " + ", ".join(f"`{rid}`" for rid in rc.get("repos", []))
         for rc in cat.recipes

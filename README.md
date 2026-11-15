@@ -5,7 +5,7 @@ Encuentra qué usar entre cientos de repositorios de IA y automatización. Entie
 **[Abrir Alexandría en línea](https://cristrva1.github.io/BL_Alexandria/)** — consulta la biblioteca sin descargar ni instalar nada.
 
 <!-- BL:STATS -->
-**679 repos curados** · **32 categorías** · **14 recetas** · 22 rutas por objetivo · acceso revisado el 2026-11-14
+**679 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **92 subcategorías**
 <!-- /BL:STATS -->
 
 [Primera vez: lee cómo elegir](human/elegir.md) · [Diccionario breve](human/vocabulario.md)
@@ -17,8 +17,14 @@ Encuentra qué usar entre cientos de repositorios de IA y automatización. Entie
 | Aprovechar mi acceso a Claude Code o Codex | [Formas de uso](human/formas-de-uso.md) |
 | Saber si necesito pagar una API o puedo usar un modelo local | [Acceso y costes](human/acceso.md) |
 | Comparar e instalar una herramienta concreta | [Guía de arranque](human/instalar.md) |
-| Explorar todo por tema | [Mapa de categorías](human/README.md#explora-por-tema) |
+| Explorar todo por tema | [Categorías y subcategorías](human/areas.md) |
 | Ver las incorporaciones recientes | [Novedades de la biblioteca](human/novedades.md) |
+
+## Explora por área de trabajo
+
+Empieza por [Frontend y páginas web](human/areas/frontend.md), [Ciberseguridad](human/areas/ciberseguridad.md), [Producción audiovisual](human/areas/audiovisual.md) o [Trading y finanzas](human/areas/trading.md). Consulta las demás áreas y sus subcategorías en [el mapa práctico](human/areas.md).
+
+Para preparar tu agente: [Configuración de Claude Code](human/areas/configurar-claude-code.md) · [Configuración de Codex](human/areas/configurar-codex.md) · [Configuración de Antigravity](human/areas/configurar-antigravity.md).
 
 ## Usa el explorador
 
