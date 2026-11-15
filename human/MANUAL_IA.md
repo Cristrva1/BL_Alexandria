@@ -2801,3 +2801,540 @@ Entrega diferencias útiles para elegir, con límites de la prueba y fuentes. No
 ```
 
 **Resultado esperado:** Una comparación pequeña, reproducible y relevante para tu decisión.
+
+### Simplificar una pantalla hasta lo esencial
+
+Cuando una pantalla funciona pero se siente recargada de textos, etiquetas y adornos.
+
+```text
+Revisa [pantalla o ruta] pensando en una sola tarea: [tarea principal]. Antes de cambiar nada, dime qué supones sobre quién la usa y qué necesita ver primero.
+Haz un inventario de cada texto, etiqueta, icono y adorno, e indica si ayuda a completar la tarea o solo decora.
+Si un elemento existe únicamente para aclarar algo confuso, propón reordenar la pantalla en lugar de sumar más explicaciones.
+Elige cambios que beneficien a la vez a quien usa la pantalla, a quien mantiene el código y a un agente que la lea después.
+Muéstrame la lista de recortes y cambios de estructura y espera mi visto bueno. No elimines funciones ni textos legales.
+Al terminar, entrega capturas antes y después en escritorio y móvil, y confirma que [tarea principal] se sigue completando.
+```
+
+**Resultado esperado:** Una pantalla con menos ruido, la lista de lo que se quitó y capturas que demuestran que la tarea sigue funcionando.
+
+Idea de partida: [Pase de diseño limpio y esencial](https://x.com/Voxyz_ai/status/2118720058872701273). Texto reescrito por Alexandría.
+
+### Revisión antes de lanzar con revisores en paralelo
+
+Cuando tu sitio o app está casi listo y quieres encontrar fallos de diseño, móvil, estados y textos antes de mostrarlo.
+
+```text
+Quiero revisar [sitio o app] antes de lanzarlo. Reparte el trabajo entre [4 o 5] subagentes, uno por área, y que ninguno edite archivos.
+Áreas: coherencia visual (colores, tamaños, espaciados, bordes), uso en móvil, estados de carga, vacío y error, recorrido completo de [recorridos clave] con teclado y ratón, y detalles de publicación (título, descripción, icono, textos de relleno).
+Cada hallazgo indica página, archivo probable, cómo reproducirlo y gravedad. Antes de empezar, dime qué supones sobre el público y los navegadores.
+Une todo en una sola lista sin duplicados, ordenada por gravedad, y detente hasta que yo elija qué se corrige.
+Con mi confirmación, corrige en una pasada solo lo aprobado. No toques textos legales, precios ni datos reales sin preguntarme.
+Entrega capturas antes y después de cada corrección y marca lo que no pudiste verificar.
+```
+
+**Resultado esperado:** Una lista priorizada de problemas, las correcciones aprobadas aplicadas y capturas que muestran cada cambio.
+
+Idea de partida: [Revisión previa al lanzamiento con subagentes](https://x.com/Voxyz_ai/status/2118720058872701273). Texto reescrito por Alexandría.
+
+### Encontrar por qué una web carga lenta
+
+Cuando tu web tarda en abrir, sobre todo en móvil, y no sabes si la causa son imágenes, código, datos o servidor.
+
+```text
+Ayúdame a acelerar [sitio] sin quitar funciones. Empieza midiendo: sobre una compilación de producción o una vista previa, pasa Lighthouse en modo móvil tres veces por [páginas] y anota la mediana.
+Luego busca causas por capas, todavía sin editar: imágenes y fuentes, peso del código que se descarga, consultas y respuestas de datos, y ubicación o caché del servidor.
+Para cada causa indica archivo, página afectada, mejora esperada y riesgo. Explica en palabras sencillas cada término técnico y dime qué supones cuando no puedas comprobar algo.
+Propón un orden de arreglos del menos al más arriesgado y espera mi aprobación.
+Pregúntame antes de quitar dependencias, mover la región del servidor o tocar la base de datos. No guardes en caché respuestas ligadas a una persona con sesión iniciada.
+Al final, mide igual que al principio y entrégame una tabla con los números de antes y después.
+```
+
+**Resultado esperado:** Una tabla de métricas antes y después, con los cambios aplicados y su efecto medido.
+
+Idea de partida: [Auditoría de lentitud de un sitio](https://x.com/Voxyz_ai/status/2118720058872701273). Texto reescrito por Alexandría.
+
+### Recuperar espacio que dejó el trabajo de desarrollo
+
+Cuando el disco se llena y sospechas de dependencias, cachés, contenedores o modelos descargados.
+
+```text
+Mi disco en [sistema] está casi lleno. Recorre mi carpeta de usuario mirando solo tamaños: no abras el contenido de ningún archivo y salta [carpetas excluidas], unidades externas y todo lo que pida permisos.
+Busca lo que suele acumular el desarrollo: dependencias, cachés de compilación, imágenes de contenedores, entornos virtuales y modelos locales.
+Genera una página HTML local con un mapa por tamaño y dos grupos: "se puede limpiar" y "revisar antes". Historiales de agentes, modelos y contenedores siempre van en "revisar antes".
+Para cada elemento muestra ruta, tamaño y consecuencia de borrarlo. Indica qué supones cuando no tengas claro su origen.
+No borres nada. Cuando yo marque elementos, prepara un script que use el comando de limpieza propio de cada herramienta y déjalo para que yo lo revise y lo ejecute.
+Guarda los tamaños con fecha en [archivo de registro] y, la próxima vez, léelo primero para señalar qué creció.
+```
+
+**Resultado esperado:** Un mapa de espacio con dos grupos, un script de limpieza revisable y un registro para comparar más adelante.
+
+Idea de partida: [Limpieza de restos de desarrollo](https://x.com/Voxyz_ai/status/2118720058872701273). Texto reescrito por Alexandría.
+
+### Evitar cuelgues y cobros dobles en llamadas externas
+
+Cuando tu app llama a pagos, bases de datos, colas o modelos de IA y quieres que no se quede colgada ni repita operaciones.
+
+```text
+Haz un inventario de todas las llamadas que [proyecto] hace hacia fuera: HTTP, base de datos, colas y proveedores de IA, con archivo y línea.
+Marca las que no tienen tiempo límite y propón uno razonable, explicando qué valor supones y por qué.
+Donde ya haya reintentos, cámbialos a espera exponencial con tope y una variación aleatoria. No añadas reintentos nuevos.
+Revisa cada escritura que pueda repetirse: si se ejecuta dos veces, ¿duplica registros o cobra de nuevo? Haz una lista aparte con esos riesgos y cómo volverlas idempotentes.
+Comprueba si los grupos de conexiones aguantan [usuarios simultáneos] en el pico; solo informa, no los cambies.
+Enséñame el plan antes de editar y no toques nada relacionado con pagos sin mi aprobación. Termina cuando [comando de pruebas] pase y me des la lista de cambios por archivo.
+```
+
+**Resultado esperado:** Llamadas con tiempos límite y reintentos seguros, una lista de escrituras con riesgo de duplicarse y pruebas en verde.
+
+Idea de partida: [Llamadas colgadas y cobros dobles](https://x.com/Voxyz_ai/status/2118720058872701273). Texto reescrito por Alexandría.
+
+### Convertir tus correcciones de diseño en reglas
+
+Cuando corriges una y otra vez lo mismo en las interfaces que genera el agente.
+
+```text
+Repasa las correcciones de diseño que te pedí en [esta sesión y las N anteriores]. Agrupa las que se repiten: espaciados, tamaños, colores, animaciones, textos.
+Para cada grupo redacta una regla corta y comprobable, con su motivo y un ejemplo de antes y después. Nada de reglas vagas como "que se vea mejor".
+Dime qué supones cuando una corrección pudo ser un gusto puntual y no una norma.
+Propón dónde guardarlas ([DESIGN.md, AGENTS.md o una skill]) y muéstrame el texto exacto antes de escribirlo. No borres reglas existentes; si dos se contradicen, pregúntame.
+Para verificar, aplica las reglas a [pantalla de prueba] e indica cuáles se cumplen y cuáles no.
+```
+
+**Resultado esperado:** Un conjunto breve de reglas de diseño con motivo y ejemplo, guardado donde el agente lo lea en cada sesión.
+
+Idea de partida: [Skill learn-taste](https://github.com/emilkowalski/skills). Texto reescrito por Alexandría.
+
+### Convertir una idea vaga en requisitos verificables
+
+Antes de pedir una función nueva, cuando solo tienes una idea general de lo que quieres.
+
+```text
+Quiero añadir esto a [proyecto]: [idea]. Todavía no escribas código.
+Lee las partes del proyecto relacionadas y redacta una especificación breve: a quién sirve, qué problema resuelve, el recorrido principal, los casos límite y qué pasa cuando algo falla.
+Cierra con criterios de aceptación que yo pueda comprobar uno a uno sin conocimientos técnicos.
+Separa lo que comprobaste en el proyecto de lo que supones. Hazme como máximo cinco preguntas numeradas, cada una con tu respuesta recomendada, sobre decisiones que cambien la función de forma importante.
+No crees archivos ni ramas hasta que apruebe la especificación.
+```
+
+**Resultado esperado:** Una especificación de una página con criterios de aceptación comprobables y las dudas importantes resueltas.
+
+Idea de partida: [Prompts prácticos para Codex](https://x.com/LDT0545/status/2118441074683445641). Texto reescrito por Alexandría.
+
+### Revisar la accesibilidad con una tabla de antes y después
+
+Cuando quieres que una página se pueda usar con teclado, lector de pantalla y buena legibilidad.
+
+```text
+Revisa [página o componente] tomando como guía WCAG 2.2 nivel AA. Si no te indico el público, dime qué supones.
+Comprueba contraste del texto (al menos 4.5:1 en texto normal), foco visible, navegación completa con teclado, nombre accesible en botones que solo tienen icono, errores comprensibles y respeto a la preferencia de reducir movimiento.
+Primero lista solo los problemas que puedas verificar, a quién afectan y dónde están. Aparta lo que necesite prueba manual con lector de pantalla.
+Propón arreglos que respeten el diseño actual y pregúntame antes de cambiar colores de marca o la estructura.
+Tras aplicar los aprobados, entrega una tabla con problema, estado previo, estado nuevo y cómo lo comprobaste.
+```
+
+**Resultado esperado:** Una tabla de problemas de accesibilidad con su corrección y la forma de verificar cada uno.
+
+Idea de partida: [Prompts concretos de UI/UX](https://x.com/AIExplorerTim/status/2121031543229677574). Texto reescrito por Alexandría.
+
+### Planificar con un modelo potente y delegar la ejecución
+
+En tareas largas, cuando quieres usar el modelo más caro solo para pensar y dejar la implementación a uno más económico.
+
+```text
+Vamos a repartir el trabajo de [tarea]. En esta sesión usa el modelo más capaz solo para entender el problema, decidir el enfoque y escribir la especificación.
+La especificación incluye objetivo, archivos afectados, pasos, qué no se debe tocar y cómo comprobar el resultado con [comandos de verificación].
+Después pasa cada parte a [subagente o agente más económico] con esa especificación. Puedes quedarte las partes más difíciles si explicas por qué.
+Antes de delegar, dime qué supones sobre el proyecto y qué partes ves arriesgadas.
+Revisa lo que vuelva contra la especificación; si algo no cumple, devuélvelo con la corrección concreta.
+Ningún agente puede borrar datos, cambiar dependencias o publicar sin mi aprobación. Al final, resume qué hizo cada uno y el resultado de las comprobaciones.
+```
+
+**Resultado esperado:** Una especificación clara, trabajo delegado revisado contra ella y un resumen de quién hizo qué con las comprobaciones superadas.
+
+Idea de partida: [Planificar caro y ejecutar barato](https://x.com/Voxyz_ai/status/2120260216046727370). Texto reescrito por Alexandría.
+
+### Atacar tu plan antes de ejecutarlo (pre-mortem)
+
+Antes de empezar un proyecto o una función grande, para encontrar los puntos débiles del plan.
+
+```text
+Haz de adversario de este plan: [plan]. Busco [objetivo] en [plazo].
+Primero resúmelo con tus palabras y espera a que confirme que lo entendiste.
+Después da por hecho que dentro de [seis meses] salió mal y razona hacia atrás. Revisa en especial: suposiciones sin comprobar, escenarios de fallo olvidados, atajos optimistas y alternativas más simples.
+Para las tres causas más probables, indica la señal que la delataría, cuánto costaría y un experimento pequeño y barato para confirmarla o descartarla pronto.
+Distingue lo que sabes de lo que supones. No modifiques archivos ni empieces a ejecutar nada.
+Termina con un veredicto: seguir, correr antes un experimento concreto o replantear.
+```
+
+**Resultado esperado:** Tres riesgos concretos con su señal, coste y experimento, y un veredicto claro sobre el plan.
+
+Idea de partida: [Red team del plan antes de empezar](https://x.com/Voxyz_ai/status/2120260216046727370). Texto reescrito por Alexandría.
+
+### Auditar instrucciones obsoletas de tus agentes
+
+Cuando tus archivos AGENTS.md, CLAUDE.md o reglas crecieron con el tiempo y ya no sabes si el código los respeta.
+
+```text
+Trabaja solo leyendo hasta que yo apruebe. Localiza todos los archivos de instrucciones para agentes en [repositorio] y en mi configuración de usuario: AGENTS.md, CLAUDE.md, reglas de editores y similares.
+Contrasta cada regla con el código: se cumple (dos ejemplos), se contradice (archivo, línea y número de casos) o no se puede comprobar. Ignora detalles de estilo y céntrate en errores, datos, APIs, registros y pruebas.
+Pide a un subagente nuevo, que no haya visto tu análisis, que reabra cada cita y descarte lo que no pueda confirmar.
+Aparta las reglas críticas ([secretos, comandos destructivos, rutas protegidas, pruebas antes de terminar]) y propón cómo hacerlas obligatorias con permisos o hooks, mostrando cada cambio como diff.
+Si mi archivo de usuario no aclara qué manda cuando instrucción y código chocan, propón una frase breve de prioridad.
+Entrega una tabla (regla, qué encontraste, prueba, edición sugerida), indica qué supusiste y espera mi sí antes de editar.
+```
+
+**Resultado esperado:** Una tabla de reglas contrastadas con el código, diffs de permisos o hooks y una frase de prioridad lista para aprobar.
+
+Idea de partida: [Instrucciones obsoletas y frase de precedencia](https://x.com/LimestoneHQ/status/2119808229236699466). Texto reescrito por Alexandría.
+
+### Compartir la memoria del proyecto entre agentes
+
+Cuando usas Claude Code y Codex en el mismo repositorio y cada uno olvida lo que aprendió el otro.
+
+```text
+Quiero que [Claude Code y Codex] compartan lo aprendido en [repositorio]. Localiza dónde guarda cada uno sus notas de memoria de este proyecto y muéstrame la lista sin moverla.
+Antes de copiar nada al repositorio, busca tokens, claves, correos u otros datos personales y enséñamelos para dejarlos fuera.
+Propón una carpeta común dentro del repo, por ejemplo [.agents/memory/], con un índice breve, y una línea para AGENTS.md (y CLAUDE.md si existe) que pida leer ese índice al empezar y anotar ahí lo nuevo.
+Indica qué supones sobre cómo carga la memoria cada herramienta y cita la documentación cuando la uses.
+No borres la memoria original hasta que yo confirme que la nueva funciona.
+Para verificar, abre una sesión nueva en cada agente y comprueba que ambos citan una nota del índice. Sugiere además una revisión periódica que una duplicados y marque notas viejas.
+```
+
+**Resultado esperado:** Una carpeta de memoria común sin secretos, enlazada desde las instrucciones y comprobada en sesiones nuevas de ambos agentes.
+
+Idea de partida: [Memoria compartida entre Claude Code y Codex](https://x.com/Voxyz_ai/status/2118448272742486490). Texto reescrito por Alexandría.
+
+### Crear un repositorio central para skills y guías
+
+Cuando tienes varios proyectos con skills, AGENTS.md y documentos repetidos y quieres una sola fuente.
+
+```text
+Ayúdame a montar un repositorio central que reúna mis skills, instrucciones y documentos compartidos y que apunte a mis demás proyectos.
+Reunir datos es tarea tuya: inventaría los repositorios bajo [carpeta], saltando dependencias, con ruta, remoto, visibilidad y fecha del último commit. No abras .env ni archivos con secretos.
+Clasifica cada skill, instrucción y documento para agentes en un grupo: compartido, duplicado (señala la copia más reciente), propio de un repo o instalado desde un catálogo.
+Plantéame las decisiones en rondas de preguntas numeradas, con tu recomendación y de forma que me baste responder sí para aceptarla. Indica qué supones.
+Hasta que apruebe la tabla de destinos, solo lees. Al aplicar, usa ramas nuevas, conserva enteras las carpetas de skills y no hagas push: eso lo decido yo.
+Termina con un informe por fila: qué se movió, qué ramas creaste y qué dejaste sin hacer y por qué.
+```
+
+**Resultado esperado:** Un repositorio central con una sola copia de cada recurso compartido, enlaces a los demás proyectos y un informe de lo aplicado.
+
+Idea de partida: [Patrón Home Repo](https://www.aihero.dev/the-home-repo-pattern). Texto reescrito por Alexandría.
+
+### Averiguar por qué tu computadora va lenta
+
+Cuando la computadora tarda en arrancar o se traba y no sabes qué la frena.
+
+```text
+Mi computadora con [sistema] va lenta sobre todo cuando [situación]. Quiero entender la causa antes de tocar nada.
+Revisa qué consume más procesador, memoria y disco ahora, qué se abre al encender el equipo y qué ocupa más espacio. Explica cada cosa con palabras sencillas y señala lo que no reconozcas.
+Dime qué supones cuando no puedas comprobar algo y separa lo seguro de lo probable.
+No cierres programas, no desactives nada y no borres archivos. Dame una lista de cambios propuestos con su efecto esperado y cómo deshacerlos, y aplica únicamente los que yo apruebe.
+Antes de cambios grandes, comprueba si hay una copia de seguridad reciente y avísame si falta.
+Al final, repite la misma medición y muéstrame la diferencia.
+```
+
+**Resultado esperado:** Una explicación clara de qué frena el equipo, cambios aplicados solo con tu permiso y una medición antes y después.
+
+Idea de partida: [Diagnóstico de una computadora lenta](https://x.com/0xKento_/status/2120596502540382661). Texto reescrito por Alexandría.
+
+### Diagnosticar una conexión WiFi lenta o que se corta
+
+Cuando internet va más lento de lo contratado o se desconecta y no sabes si es el equipo, el WiFi o el proveedor.
+
+```text
+Tengo contratados [velocidad] y la conexión [va lenta / se corta], sobre todo [cuándo]. Ayúdame a ubicar el problema: este equipo, la red WiFi o el proveedor.
+Mide bajada, subida y latencia y compáralas con lo contratado. Revisa qué programas usan la red ahora, el historial de desconexiones de los últimos días y la calidad de la señal y del canal.
+Explica cada resultado con palabras sencillas y dime qué supones cuando un dato no esté disponible.
+Si hay que entrar al router, abre su página y la contraseña la escribo yo. No cambies ajustes de red, controladores ni el router sin mi permiso; propón cada cambio con la forma de revertirlo.
+Entrega un resumen: dónde está la causa más probable, qué pruebas la respaldan y qué medición repetir para confirmar la mejora.
+```
+
+**Resultado esperado:** La causa más probable con pruebas medidas y una forma de comprobar si el cambio mejoró la conexión.
+
+Idea de partida: [Diagnóstico del WiFi con un asistente](https://x.com/HeyAirahAi/status/2119046142189269333). Texto reescrito por Alexandría.
+
+### Aprender un tema a fondo con un tutor exigente
+
+Cuando quieres entender de verdad un tema y no solo leer un resumen.
+
+```text
+Quiero entender [tema] para [objetivo]. Hoy sé esto: [nivel actual]. Antes de explicar, dime qué supones sobre mi punto de partida y ajústalo con una o dos preguntas.
+Construye la explicación desde las ideas básicas, con una analogía cotidiana por concepto y señalando dónde deja de servir cada analogía.
+Incluye cómo evolucionó la idea, los errores típicos de principiante y tres preguntas que se haría alguien experto.
+Cada pocos pasos, hazme una pregunta para comprobar si lo entendí y no sigas hasta que responda.
+Marca qué es consenso, qué está en debate y qué no sabes con seguridad; sugiere dos o tres lecturas de referencia que yo pueda verificar. Si quieres crear archivos o tarjetas de estudio, pregúntame antes.
+Al final, pídeme que explique el tema con mis palabras y señala qué me falta.
+```
+
+**Resultado esperado:** Una explicación por capas con preguntas de control y una comprobación final de lo que realmente entendiste.
+
+Idea de partida: [Prompts para aprender en profundidad](https://www.instagram.com/p/DeSdMhBicI8/). Texto reescrito por Alexandría.
+
+### Probar tu app con cinco usuarios simulados
+
+Antes de lanzar una app, para descubrir dónde se confundirían o abandonarían tus primeras personas usuarias.
+
+```text
+Lanza [5] subagentes que usen [app] en un navegador real como si fueran mis primeros usuarios, con [cuentas de prueba] y en un entorno de prueba.
+Perfiles: alguien con prisa que abandona al primer error, alguien desconfiado que lee privacidad y condiciones, alguien en un celular con conexión lenta, alguien que no domina el idioma de la interfaz y alguien que pega texto raro y hace doble clic en todo.
+Cada uno intenta [tarea principal] y guarda una captura en cada momento de duda o bloqueo. Indica qué supones sobre cada perfil.
+No deben enviar correos, hacer pagos reales, escribir a terceros ni borrar datos; si un paso lo exige, se detienen y lo anotan.
+Reúne los hallazgos en una sola lista priorizada, sin duplicados, con perfil, paso, captura y arreglo sugerido. Espera mi aprobación antes de corregir.
+Tras corregir, repite la prueba: termina cuando los cinco perfiles completen la tarea.
+```
+
+**Resultado esperado:** Una lista priorizada de fricciones con capturas y una segunda ronda en la que los cinco perfiles completan la tarea.
+
+Idea de partida: [Simular a los primeros usuarios con subagentes](https://www.instagram.com/reel/DeuoJOdOdU7/). Texto reescrito por Alexandría.
+
+### Rediseñar un panel con un sistema visual limitado
+
+Cuando un panel o pantalla se ve desordenado y pedir "hazlo más moderno" no da resultados.
+
+```text
+Analiza esta captura de [pantalla]. Primero nombra los cinco problemas más graves de jerarquía y densidad de información y cómo afectan a quien la usa.
+Define un sistema mínimo: una escala de espaciado, una escala tipográfica y como máximo cinco variables de color. Rehaz la pantalla usando solo eso, sin degradados.
+No cambies [lo que no se puede tocar: datos, llamadas a la API, orden de campos]. Dime qué supones sobre la marca y el contenido.
+Revisa los anchos [390, 768 y 1440 px]: zonas táctiles de al menos 44 px, sin desplazamiento horizontal y tablas que pasen a tarjetas en pantallas pequeñas.
+Antes de reemplazar componentes que comparten otras pantallas, pregúntame.
+Entrega capturas en cada ancho y una lista de lo que se rompió y cómo lo arreglaste.
+```
+
+**Resultado esperado:** Una pantalla rehecha con un sistema visual corto y capturas en cada ancho que lo demuestran.
+
+Idea de partida: [Prompts concretos de UI/UX](https://x.com/AIExplorerTim/status/2121031543229677574). Texto reescrito por Alexandría.
+
+### Mejorar un formulario para que más gente lo termine
+
+Cuando la gente empieza tu formulario pero lo abandona o comete errores.
+
+```text
+Mejora [formulario] con un único objetivo: que más personas lo completen sin errores.
+Propón una sola columna, etiquetas visibles encima de cada campo y validación al salir del campo, no con cada tecla. Cada error debe explicar cómo corregirlo.
+Añade los estados de foco, deshabilitado, cargando y error, y comprueba que se pueda completar solo con teclado.
+No cambies el orden de los campos, los nombres que recibe el servidor ni las llamadas a la API. Dime qué supones sobre quién lo rellena y desde qué dispositivo.
+Muéstrame el plan y espera mi aprobación antes de editar; no envíes datos reales al probar.
+Verifica con datos de prueba un envío correcto y tres con errores, y entrega capturas de cada estado.
+```
+
+**Resultado esperado:** Un formulario más claro con todos sus estados visibles y pruebas de envío correcto y con errores.
+
+Idea de partida: [Formulario orientado a la tasa de finalización](https://x.com/AIExplorerTim/status/2121031543229677574). Texto reescrito por Alexandría.
+
+### Dibujar un mapa sencillo de cómo funciona tu app
+
+Cuando no entiendes bien cómo se conectan las pantallas, archivos y datos de un proyecto propio o heredado.
+
+```text
+Lee [proyecto] sin modificar nada y dibuja un mapa de su organización: pantallas, componentes, rutas del servidor, datos y servicios externos.
+Pon a cada pieza un nombre descriptivo en lenguaje sencillo junto a su nombre técnico, y muestra qué se conecta con qué.
+Elige [una pantalla clave] y sigue su recorrido desde el clic hasta la base de datos. Indica qué supones donde el código no sea claro.
+Entrega el mapa como un único archivo HTML local que pueda abrir sin instalar nada. Pregúntame antes de instalar dependencias o crear archivos fuera de [carpeta de salida].
+Para comprobarlo, usa el mapa para responder: ¿qué se rompería si cambio [tabla o archivo]? Cita los archivos que lo demuestran.
+```
+
+**Resultado esperado:** Un mapa HTML navegable del proyecto y una respuesta de impacto respaldada por archivos concretos.
+
+Idea de partida: [Floorplan: mapa interactivo de una app](https://github.com/haydenschmitty/floorplan). Texto reescrito por Alexandría.
+
+### Encontrar estados ocultos en tu aplicación
+
+Cuando aparecen errores raros porque varias banderas o variables combinan estados que no deberían existir.
+
+```text
+Busca en [proyecto] las máquinas de estado implícitas: grupos de banderas, estados de carga, pasos de un asistente o estados de pedido que cambian sin un modelo explícito.
+Para cada una, lista los estados posibles, las transiciones, las combinaciones imposibles que hoy el código permite y dónde vive cada pieza.
+Prioriza por riesgo para quien usa la app, claridad para quien mantiene el código y facilidad para que un agente lo entienda. Dime qué supones donde el comportamiento no esté claro.
+Propón un modelo explícito para las dos o tres más importantes, con un diagrama de estados, y espera mi aprobación antes de refactorizar.
+No cambies comportamiento visible sin avisar. Añade pruebas que fallen con las combinaciones imposibles y pasen con el nuevo modelo, y ejecuta [comando de pruebas].
+```
+
+**Resultado esperado:** Un inventario de estados ocultos, diagramas de los principales y pruebas que demuestran que ya no se dan estados imposibles.
+
+Idea de partida: [Máquinas de estado implícitas](https://x.com/Voxyz_ai/status/2119444845890617507). Texto reescrito por Alexandría.
+
+### Crear un video demo con las pantallas reales
+
+Cuando terminaste un proyecto y quieres un video corto para presentarlo sin editar a mano.
+
+```text
+Crea un video de presentación de [proyecto] de [duración] en formato [horizontal / vertical / cuadrado] con tono [tono].
+Primero recorre la app y elige las tres o cuatro funciones que mejor explican su valor. Usa solo pantallas reales: ni capturas inventadas ni cifras que no existan.
+Propón un guion por escenas con poco texto en pantalla y dime qué supones sobre el público. Espera a que apruebe el guion.
+Usa datos de prueba; no muestres datos personales, claves ni correos reales. Pregúntame antes de instalar herramientas o usar música de licencia dudosa.
+Renderiza primero fotogramas de muestra, revísalos en busca de textos cortados o elementos desbordados y solo después el video completo.
+No lo des por terminado sin revisar el archivo final; entrega su ruta y la lista de escenas con su segundo de inicio.
+```
+
+**Resultado esperado:** Un video corto con pantallas reales, revisado antes de entregarse, y su guion por escenas.
+
+Idea de partida: [Skill brag para videos demo](https://github.com/latent-spaces/brag). Texto reescrito por Alexandría.
+
+### Montar un sistema de videos de producto con código
+
+Cuando necesitas muchas variantes de video de producto con la misma calidad y quieres plantillas reutilizables.
+
+```text
+Quiero un sistema reutilizable que genere videos de producto con [herramienta, por ejemplo Remotion] a partir de una ficha de marca.
+Mantén los datos de marca y los textos fuera del código de animación. Antes de renderizar, valida que los archivos existen, que los textos caben y que solo se usan afirmaciones de [lista aprobada].
+Crea piezas para título, interfaz del producto, presentación de funciones, gráficos y llamada a la acción, con animaciones que dependan solo del número de fotograma.
+Admite [9:16, 1:1 y 16:9] y varias versiones de gancho y cierre. Estilo sobrio: tipografía cuidada, pocos colores, sin brillos genéricos ni capturas falsas.
+Empieza revisando el proyecto, propón la arquitectura y el formato de la ficha y espera mi visto bueno. Dime qué supones.
+Construye primero la demo completa más pequeña, revisa fotogramas por desbordes y solo después renderiza en lote. Pregúntame antes de sobrescribir videos existentes.
+Entrega los MP4 y un manifiesto con cada archivo, su formato y la variante usada.
+```
+
+**Resultado esperado:** Plantillas de video reutilizables, una demo revisada y un manifiesto con cada archivo entregado.
+
+Idea de partida: [Sistema automatizado de motion design](https://x.com/e1genqq/status/2118440874883391727). Texto reescrito por Alexandría.
+
+### Convertir un pedido creativo en un brief completo
+
+Cuando quieres imágenes o videos de tu producto pero solo tienes una idea general como "fotos premium".
+
+```text
+Quiero [piezas: fotos, video corto, animación] de [producto] para [canal]. Antes de generar nada, hazme hasta seis preguntas, de una en una, para convertir esto en un brief.
+Cubre público, sensación buscada, escenario, iluminación, encuadre, colores de marca y lo que hay que evitar.
+Con mis respuestas, escribe un brief de una página y dime qué supusiste donde no respondí.
+Propón tres variantes que cambien una sola cosa cada una (luz, fondo o encuadre) para poder compararlas.
+El producto debe ser fiel al real: sin cambiar logotipo, etiqueta, forma ni colores, y sin afirmaciones que no te di. Pregúntame antes de usar caras de personas reales o marcas de terceros.
+Entrega el brief y los prompts listos para [herramienta de imagen o video], con una lista para comprobar cada pieza contra el producto real.
+```
+
+**Resultado esperado:** Un brief claro, tres variantes comparables y una lista para comprobar que cada pieza respeta el producto.
+
+Idea de partida: [Agente creativo con preguntas aclaratorias](https://www.instagram.com/reel/DfLoqUWOuvy/). Texto reescrito por Alexandría.
+
+### Analizar videos que funcionan sin copiarlos
+
+Cuando quieres entender por qué ciertos videos de tu nicho funcionan antes de planear los tuyos.
+
+```text
+Analiza estos videos de [nicho]: [enlaces o transcripciones]. Para cada uno describe el gancho de los primeros segundos, tema, formato, duración, llamada a la acción y métricas visibles.
+Si te paso comentarios, resume qué valora o critica la audiencia, sin citar nombres de usuarios.
+Busca patrones que se repiten y separa lo que muestran los datos de lo que supones.
+Con esos patrones, propón [5] ideas para [mi marca] que aprovechen la estructura con tema, ejemplos y guion originales. No copies frases, imágenes ni música de los videos analizados.
+Pregúntame antes de publicar, programar o descargar contenido.
+Entrega una tabla de análisis y, para cada idea, qué patrón usa y qué métrica revisaré para saber si funcionó.
+```
+
+**Resultado esperado:** Una tabla de patrones de videos exitosos y varias ideas originales con la métrica para evaluarlas.
+
+Idea de partida: [Matriz para analizar videos virales](https://www.instagram.com/reel/Deo5tVWxA3X/). Texto reescrito por Alexandría.
+
+### Convertir la foto de un producto en piezas de anuncio
+
+Cuando cuentas con una imagen auténtica de lo que vendes y quieres varias versiones para redes sin diseñar desde cero.
+
+```text
+Tengo esta foto de [producto] y quiero piezas para [red social] en formato [proporción]. Mi mensaje es [oferta o mensaje].
+Arma un pequeño menú de estilos con nombre corto que pueda reutilizar: póster minimalista, oferta destacada, escena de uso cotidiano, primer plano de detalle y foto natural estilo cliente.
+Para cada estilo escribe un prompt para [herramienta de imagen] que describa fondo, luz, encuadre y espacio para el texto.
+El producto debe quedar idéntico: misma forma, etiqueta, logotipo y colores. Dime qué supones sobre la marca y no inventes precios, descuentos ni beneficios.
+Pregúntame antes de incluir personas, marcas ajenas o textos legales.
+Entrega los prompts y una lista para comparar cada imagen generada con la foto original antes de publicarla.
+```
+
+**Resultado esperado:** Un menú de estilos reutilizables con sus prompts y una lista de control para validar cada imagen.
+
+Idea de partida: [Comandos para diseños de producto](https://www.instagram.com/reel/De45-O4Nelr/). Texto reescrito por Alexandría.
+
+### Convertir un plano 2D en un recorrido 3D en el navegador
+
+Cuando tienes el plano de una vivienda o local y quieres un recorrido navegable fiel a sus medidas.
+
+```text
+Convierte el plano [archivo] en un recorrido 3D que se abra en el navegador y funcione en móvil.
+Pasa primero el plano a datos (muros, aberturas y estancias), dibújalos sobre la imagen original y calcula cuánto coinciden antes de empezar el 3D. Dime qué supones donde el plano no se lea bien.
+Construye solo [estancias prioritarias] y deja cerradas las demás. Genera geometría y materiales por código, sin modelos descargados de origen dudoso.
+Separa construir de juzgar: tras cada estancia, envía renders y referencias a un subagente revisor recién creado, que conteste sí o no y nombre hasta cinco fallos por gravedad, cada uno con un ajuste medible.
+En decisiones de gusto, enséñale dos opciones marcadas A y B para que escoja. Repite hasta obtener un sí.
+Pregúntame antes de publicar el recorrido o usar fotos de terceros. Entrega el enlace local, una captura por estancia y el registro del revisor con lo que una persona aún debería comprobar.
+```
+
+**Resultado esperado:** Un recorrido 3D fiel al plano, revisado por un crítico independiente, con capturas y notas de revisión.
+
+Idea de partida: [Planos 2D a recorridos 3D](https://x.com/VisualconAI/status/2121591290790052030). Texto reescrito por Alexandría.
+
+### Estudiar decisiones de mercado sin arriesgar dinero
+
+Cuando quieres entender cómo razona un sistema de análisis de mercados con agentes, solo con fines educativos.
+
+```text
+Esto es solo para aprender, no para invertir. No conectes cuentas de bróker ni ejecutes órdenes, y no me des recomendaciones personales de inversión.
+Configura [herramienta, por ejemplo TradingAgents] en modo de investigación para [activos] y explícame qué papel cumple cada agente y cómo debaten.
+Haz una prueba histórica de [periodo] con una decisión por semana y compara cada una con un índice de referencia, teniendo en cuenta costes y el riesgo de sobreajuste.
+Dime qué supones en cada paso y qué datos no pudiste verificar. Pregúntame antes de instalar dependencias, programar tareas o configurar accesos a proveedores.
+Después, hazme preguntas de tutor sobre por qué el sistema tomó cada decisión y corrige mis respuestas.
+Entrega una tabla con decisión, razonamiento resumido y resultado frente al índice, más una advertencia clara de que el rendimiento pasado no predice el futuro.
+```
+
+**Resultado esperado:** Una prueba histórica explicada y comparada con un índice, y un cuestionario que muestra si entendiste el razonamiento.
+
+Idea de partida: [TradingAgents: análisis de mercado con varios agentes](https://github.com/TauricResearch/TradingAgents). Texto reescrito por Alexandría.
+
+### Evaluar una idea de negocio con mirada escéptica
+
+Antes de invertir tiempo o dinero en una idea, para conocer sus riesgos y probarla barato.
+
+```text
+Evalúa esta idea de negocio con honestidad: [idea]. Dispongo de [tiempo] y [presupuesto] y sé hacer [habilidades].
+No prometas ingresos ni uses cifras sin fuente. Cuando estimes algo, da un rango, explica de dónde sale y márcalo como supuesto.
+Dime cuánto trabajo exigirá al principio, quién pagaría y por qué, qué usa hoy esa persona en su lugar y los cinco riesgos principales, incluidos los legales y fiscales que debo consultar con un profesional. Señala qué estoy subestimando.
+Propón un experimento de [14] días con gasto mínimo para comprobar si alguien pagaría, con la métrica y el umbral que decidirán seguir o parar.
+No crees cuentas, páginas ni anuncios por mí; si el experimento lo requiere, pregúntame antes.
+Cierra con una recomendación: probar, ajustar la idea o descartarla, y por qué.
+```
+
+**Resultado esperado:** Una evaluación sin promesas de ingresos, con riesgos claros y un experimento corto con criterio de decisión.
+
+### Incorporar fuentes nuevas a tu segundo cerebro
+
+Cuando guardas artículos y notas en una carpeta o bóveda y quieres que se conecten con lo que ya sabes.
+
+```text
+Quiero que mis notas crezcan conectadas. La fuente nueva es [archivo], en [carpeta de entrada] de mi bóveda.
+Antes de escribir, dime qué temas de mi bóveda crees que toca y qué supones sobre su fiabilidad (autoría, fecha, tipo de fuente).
+Propón qué notas crear y cuáles ampliar, con los enlaces a notas existentes que añadirías. Si la fuente choca con algo que ya tengo, muéstrame ambas versiones lado a lado.
+No borres ni reescribas notas mías sin preguntarme; las ampliaciones van marcadas con fecha y fuente.
+Cuando apruebe, aplica los cambios y entrega la lista de archivos tocados, con un enlace a la fuente en cada nota.
+Para verificar, elige una nota antigua y demuestra que ahora lleva a la información nueva en dos clics o menos.
+```
+
+**Resultado esperado:** Notas nuevas o ampliadas, enlazadas con las existentes, con contradicciones señaladas y una lista de archivos para revisar.
+
+Idea de partida: [Segundo cerebro compilado con un agente](https://x.com/rvaniaaaa/status/2119056971298980112). Texto reescrito por Alexandría.
+
+### Preparar una presentación breve de tu idea
+
+Cuando tienes que explicar un proyecto o negocio en pocos minutos ante clientes, socios o un jurado.
+
+```text
+Ayúdame a presentar [idea] ante [público] en [minutos]. Antes de diseñar, dime qué supones que ese público necesita oír para decir que sí.
+Propón un esquema de ocho a doce diapositivas que cubra el problema, la solución, para quién es, cómo se sostiene económicamente, avances, equipo, lo que pido y un cierre.
+Cada diapositiva lleva una sola idea, como mucho 25 palabras y una nota con lo que diré en voz alta.
+Usa solo estos datos: [datos]. Si falta uno, deja un hueco marcado en lugar de inventarlo. No pongas mis datos de contacto salvo que te los indique.
+Muéstrame el esquema y espera mi aprobación antes de crear el archivo.
+Entrega el archivo y una lista de comprobación: una idea por diapositiva, cada cifra con su fuente y la pregunta que quiero provocar al final.
+```
+
+**Resultado esperado:** Un esquema aprobado y una presentación breve sin datos inventados, con notas para quien presenta.
+
+Idea de partida: [Prompts prácticos con herramientas de un asistente](https://x.com/free_ai_guides/status/2118991880914645303). Texto reescrito por Alexandría.
+
+### Investigar a fondo antes de tomar una decisión
+
+Cuando debes elegir entre proveedores, herramientas, mercados o competidores y quieres un informe con fuentes.
+
+```text
+Tengo que decidir [decisión]. Mis criterios son [criterios] y ya conozco estas opciones: [opciones].
+Primero dime qué información necesitarías para decidir bien y qué supones sobre mi situación.
+Busca fuentes públicas y recientes; cada afirmación lleva enlace y fecha. Si dos fuentes discrepan, muéstralas juntas.
+Compara las opciones en una tabla con mis criterios y marca cada celda como comprobada o estimada. Describe los riesgos de cada opción y lo que no pudiste averiguar.
+No contactes a empresas, no te registres en servicios ni compartas mis datos; si algo lo requiere, pregúntame.
+Cierra con una recomendación de una línea y el dato concreto que la haría cambiar.
+```
+
+**Resultado esperado:** Un informe con afirmaciones enlazadas, una tabla con datos marcados y una recomendación que dice qué la cambiaría.
+
+Idea de partida: [Prompts prácticos con herramientas de un asistente](https://x.com/free_ai_guides/status/2118991880914645303). Texto reescrito por Alexandría.

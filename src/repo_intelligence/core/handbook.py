@@ -7,6 +7,9 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 
+PROMPT_TOPICS = {'empezar', 'programar', 'mejorar', 'disenar', 'lanzar', 'contenido', 'negocio', 'aprender', 'diagnosticar', 'movil', 'operar'}
+
+
 def _https(value: str) -> bool:
     parsed = urlparse(value)
     return parsed.scheme == 'https' and bool(parsed.netloc)
@@ -43,6 +46,11 @@ def load_handbook(root: Path, repo_ids: set[str] | None = None) -> dict:
     for prompt in data['prompts']:
         if not all(prompt.get(k) for k in ('title', 'topic', 'when', 'inputs', 'body', 'expect', 'authorship')):
             raise ValueError(f"Incomplete prompt: {prompt['id']}")
+        if prompt['topic'] not in PROMPT_TOPICS or prompt.get('level', 'inicial') not in {'inicial', 'intermedio', 'avanzado'}:
+            raise ValueError(f"Invalid prompt topic or level: {prompt['id']}")
+        inspired = prompt.get('inspired_by')
+        if inspired and (not _https(inspired.get('url', '')) or 'docs.google.com' in inspired['url']):
+            raise ValueError(f"Invalid prompt inspiration source: {prompt['id']}")
     for route in data['paths']:
         if route['section'] not in {'configurar', 'servicios'} or not route['steps']:
             raise ValueError(f"Invalid learning path: {route['id']}")
@@ -92,6 +100,8 @@ def render_handbook(root: Path) -> Path:
     for prompt in data['prompts']:
         lines += [f"### {prompt['title']}", '', prompt['when'], '', '```text', prompt['body'], '```', '',
                   f"**Resultado esperado:** {prompt['expect']}", '']
+        if prompt.get('inspired_by'):
+            lines += [f"Idea de partida: [{prompt['inspired_by']['title']}]({prompt['inspired_by']['url']}). Texto reescrito por Alexandría.", '']
     output = Path(root) / 'human' / 'MANUAL_IA.md'
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text('\n'.join(lines), encoding='utf-8')

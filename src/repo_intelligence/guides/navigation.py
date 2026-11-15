@@ -21,6 +21,9 @@ def render_navigation(root: Path, catalog: Catalog) -> None:
             '| Copiar una plantilla o saber dónde ejecutar un comando | [Prompts y comandos](https://cristrva1.github.io/BL_Alexandria/#/prompts) |',
             '| Elegir alojamiento, datos, contenedores o acceso remoto | [Servicios y despliegue](https://cristrva1.github.io/BL_Alexandria/#/servicios) |',
         ]
+    if (root/'data'/'techniques.json').exists():
+        i=next(i for i,line in enumerate(readme) if line.startswith('| Explorar todo por tema'))
+        readme[i:i]=['| Trabajar mejor con agentes: técnicas, ideas y recomendaciones | [Técnicas e ideas](https://cristrva1.github.io/BL_Alexandria/#/tecnicas) · [versión Markdown](human/TECNICAS.md) |']
     review=catalog.compact.get('discovery',{}).get('editorial_review',{})
     if review.get('reviewed')==len(public):
         report=review.get('report','reports/review-679-2026-11-14.json')
@@ -67,4 +70,8 @@ def render_navigation(root: Path, catalog: Catalog) -> None:
                   'El contenido de Configurar IA, Servicios y despliegue, Prompts y comandos vive en `data/handbook.json`. Complementa el inventario de repos: no se añade un servicio o concepto al recuento de proyectos por aparecer en este manual.', '',
                   'Revisa la fuente del proyecto, la fecha, la ruta de acceso y el contexto de cada comando. Conserva los límites cuando falte evidencia y distingue la prueba propuesta de una instalación ejecutada. Las plantillas originales indican los datos que necesita aportar la persona.', '',
                   '`guide build` genera también `human/MANUAL_IA.md` y el sitio de Pages. `web build` actualiza la copia web. El cargador comprueba fuentes, comandos y referencias antes de publicar.']
+    if (root/'data'/'techniques.json').exists():
+        lines += ['', '## Mantener técnicas e ideas', '',
+                  'Las técnicas, reglas y sitios útiles viven en `data/techniques.json`. Escribe resúmenes y pasos propios, enlaza fuentes públicas (repositorio o documentación oficial antes que una publicación social) y copia los comandos tal como aparecen en la fuente, con lugar de ejecución y efecto. Marca como no verificadas las cifras de terceros.', '',
+                  '`guide build` genera `human/TECNICAS.md`. El cargador rechaza enlaces privados o de Google Docs, áreas inexistentes, identificadores repetidos y comandos sin fuente.']
     (human/'mantenimiento.md').write_text('\n'.join(lines)+'\n',encoding='utf8')

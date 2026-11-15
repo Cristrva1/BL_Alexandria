@@ -13,7 +13,7 @@ from repo_intelligence.web.catalog import build_catalog
 
 _ASSETS = Path(__file__).resolve().parent / "assets"
 _TOKEN = "__CATALOG_JSON__"
-_ASSET_NAMES = ("app.js", "styles.css", "search.js", "decisions.js", "guided.js", "handbook.js")
+_ASSET_NAMES = ("app.js", "styles.css", "search.js", "decisions.js", "guided.js", "handbook.js", "techniques.js")
 
 
 class QuietHandler(SimpleHTTPRequestHandler):
