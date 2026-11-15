@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. | Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. |
 | ⭐ Estrellas | 26.8k | 55.2k |
-| Elígelo si… | el rendimiento, la memoria o el coste de GPU importan | quieres transcribir en local sin GPU |
-| Evítalo si… | necesitas alineación/diarización (whisperX) o te basta el CLI oficial | necesitas marcas de tiempo por palabra y diarización; mira `whisperx` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Transcribir lotes pequeños; Comparar CPU con GPU | Tu objetivo encaja con estos ejemplos: Transcribir una nota offline; Preparar texto base para subtítulos |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
 | Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | MIT | MIT |
-| Instalación | `pip install faster-whisper` | `brew install whisper-cpp` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **faster-whisper** si el rendimiento, la memoria o el coste de GPU importan.
-- Elige **whisper.cpp** si quieres transcribir en local sin GPU.
+- Elige **faster-whisper** si Tu objetivo encaja con estos ejemplos: Transcribir lotes pequeños; Comparar CPU con GPU.
+- Elige **whisper.cpp** si Tu objetivo encaja con estos ejemplos: Transcribir una nota offline; Preparar texto base para subtítulos.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

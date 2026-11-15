@@ -1,0 +1,6 @@
+{
+ "opencode":["https://opencode.ai/docs/providers/"],
+ "claude-code":["https://code.claude.com/docs/en/overview","https://docs.ollama.com/integrations/claude-code"],
+ "codex":["https://docs.ollama.com/integrations/codex"],
+ "continue":["https://docs.continue.dev/customize/model-providers/top-level/ollama"]
+}

@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La skill usa el agente y recursos de render; Remotion y assets mantienen condiciones propias |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Código y documentos MIT; los frames de referencia son solo para estudio de estilo y no se entregan como assets comerciales reutilizables; viral no es garantía |
+| Coste | Consumo del agente que ya utilizas. La skill usa el agente y recursos de render; Remotion y assets mantienen condiciones propias |
+| Equipo | Preparación según la ruta elegida. Claude Code; Three.js y Remotion; dependencias de render; historia propia |
 
-Consume el acceso y los límites del agente donde lo configures. No incluye servicios externos de generación, datos o alojamiento.
+Código y documentos MIT; los frames de referencia son solo para estudio de estilo y no se entregan como assets comerciales reutilizables; viral no es garantía
 
 ## Qué puedes hacer con él
 
 Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion.
 
+## Por qué destaca
+
+Usos propuestos: Crear un corto animado de prueba; Estudiar personajes 2D en escena 3D.
+
 ## Cómo funciona
 
-El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.
+Código y documentos MIT; los frames de referencia son solo para estudio de estilo y no se entregan como assets comerciales reutilizables; viral no es garantía
 
 ## Cómo empezar
 
@@ -39,11 +44,16 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- El agente compatible indicado por el proyecto y acceso activo al modelo de ese agente.
+- Claude Code
+- Three.js y Remotion
+- dependencias de render
+- historia propia
 
-1. Abre la instalación del README y elige la ruta para el agente que utilizas.
-2. Añade la skill o el plugin concreto; prepara los programas y servicios que indique su documentación.
-3. Pide una primera tarea pequeña sobre archivos de prueba y comprueba qué herramientas y cuentas activa.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/mromidev/claude-animated-shorts/blob/main/README.md)
 
@@ -51,21 +61,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar claude-animated-shorts para mi objetivo y necesito pasos guiados. Lee https://github.com/mromidev/claude-animated-shorts/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Prepara un plano de pocos segundos y revisa personajes, cámara y tiempos antes de un corto completo.
+
+**Qué comprobar:** Puedes reproducir la escena y contrastarla con el guion.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion.
+- Crear un corto animado de prueba
+- Estudiar personajes 2D en escena 3D
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion. | necesitas un producto autónomo y esta pieza requiere un anfitrión compatible |
+| Tu objetivo encaja con estos ejemplos: Crear un corto animado de prueba; Estudiar personajes 2D en escena 3D | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Código y documentos MIT; los frames de referencia son solo para estudio de estilo y no se entregan como assets comerciales reutilizables; viral no es garantía
 
 ## Stack y modelos
 
-- **Stack:** TypeScript
+- **Stack:** Claude Code; Three.js y Remotion; dependencias de render; historia propia
 - **Etiquetas:** `programatico` `skill` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +94,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/mromidev/claude-animated-shorts/blob/main/README.md)
 

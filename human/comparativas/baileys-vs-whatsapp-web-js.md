@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Librería TypeScript que habla el protocolo de WhatsApp Web por WebSocket, sin navegador. | Librería Node.js que automatiza WhatsApp controlando WhatsApp Web en un navegador headless. |
 | ⭐ Estrellas | 11.6k | 22.9k |
-| Elígelo si… | necesitas WhatsApp en código con bajo consumo de recursos | quieres programar un bot de WhatsApp en Node rápido |
-| Evítalo si… | prefieres una API REST lista; mira `evolution-api` | necesitas una API REST multi-sesión lista; mira `evolution-api` o `waha` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Aprender el flujo multidispositivo; Conectar eventos de una cuenta propia a una app | Tu objetivo encaja con estos ejemplos: Estudiar un bot de atención en laboratorio; Conectar eventos WhatsApp Web a una app propia |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
 | Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | Apache-2.0 |
-| Instalación | `npm i baileys` | `npm i whatsapp-web.js` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **Baileys** si necesitas WhatsApp en código con bajo consumo de recursos.
-- Elige **whatsapp-web.js** si quieres programar un bot de WhatsApp en Node rápido.
+- Elige **Baileys** si Tu objetivo encaja con estos ejemplos: Aprender el flujo multidispositivo; Conectar eventos de una cuenta propia a una app.
+- Elige **whatsapp-web.js** si Tu objetivo encaja con estos ejemplos: Estudiar un bot de atención en laboratorio; Conectar eventos WhatsApp Web a una app propia.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

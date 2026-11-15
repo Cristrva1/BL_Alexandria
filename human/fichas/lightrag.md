@@ -16,34 +16,53 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | Depende de la ruta elegida. Indexar y responder pueden llamar varios modelos; admite configuración Ollama; el coste depende de roles, corpus y proveedor |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Configura HOST o autenticación antes de arrancar en red; conserva el mismo modelo de embeddings entre indexación y consulta |
+| Coste | El coste depende del proveedor o la ruta. Indexar y responder pueden llamar varios modelos; admite configuración Ollama; el coste depende de roles, corpus y proveedor |
+| Equipo | Preparación según la ruta elegida. Python y uv; LLM; embeddings; almacenamiento; configuración .env |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Configura HOST o autenticación antes de arrancar en red; conserva el mismo modelo de embeddings entre indexación y consulta
 
 ## Qué puedes hacer con él
 
-Construye un grafo de entidades a partir de tus documentos y consulta en modo local, global o híbrido. Más barato que GraphRAG.
+RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong.
 
 ## Por qué destaca
 
-Calidad de RAG con grafo a menor coste y con actualizaciones incrementales.
+Usos propuestos: Consultar relaciones entre conceptos; Combinar búsqueda de grafos y vectores.
 
 ## Cómo funciona
 
-Extrae entidades y relaciones con un LLM, las indexa en grafo y vectores, y recupera por ambos caminos.
+Configura HOST o autenticación antes de arrancar en red; conserva el mismo modelo de embeddings entre indexación y consulta
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python y uv
+- LLM
+- embeddings
+- almacenamiento
+- configuración .env
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+# Install LightRAG Server as a tool using uv (recommended)
+uv tool install "lightrag-hku[api]"
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/HKUDS/LightRAG/blob/main/README.md)
 
@@ -51,21 +70,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar LightRAG para mi objetivo y necesito pasos guiados. Lee https://github.com/HKUDS/LightRAG/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Indexa un documento ficticio y compara una consulta sobre una entidad con otra sobre sus relaciones.
+
+**Qué comprobar:** Puedes inspeccionar los resultados y las relaciones recuperadas.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- RAG sobre documentación técnica
-- Preguntas que cruzan varios documentos
-- Alternativa barata a GraphRAG
+- Consultar relaciones entre conceptos
+- Combinar búsqueda de grafos y vectores
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres RAG con grafo sin el coste de GraphRAG | no necesitas relaciones entre entidades; usa RAG vectorial con `llama-index` |
+| Tu objetivo encaja con estos ejemplos: Consultar relaciones entre conceptos; Combinar búsqueda de grafos y vectores | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Configura HOST o autenticación antes de arrancar en red; conserva el mismo modelo de embeddings entre indexación y consulta
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python y uv; LLM; embeddings; almacenamiento; configuración .env
 - **Etiquetas:** `rag` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -91,7 +119,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/HKUDS/LightRAG/blob/main/README.md)
 

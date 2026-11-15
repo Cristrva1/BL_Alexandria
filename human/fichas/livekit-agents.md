@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 15.2k | Apache-2.0 | Python | 2026-11-10 |
 
-**Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
+**Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,51 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| API de IA | API de IA opcional. Modelos, STT, TTS, transporte y Cloud se costean por separado; Ollama es una ruta LLM local documentada |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. El MCP del README consulta documentación para desarrollar y no controla automáticamente tus agentes; usar Ollama no vuelve locales todos los componentes de audio o transporte |
+| Coste | El coste depende del proveedor o la ruta. Modelos, STT, TTS, transporte y Cloud se costean por separado; Ollama es una ruta LLM local documentada |
+| Equipo | Preparación según la ruta elegida. Python; LiveKit; proveedores o modelos locales; micrófono de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El MCP del README consulta documentación para desarrollar y no controla automáticamente tus agentes; usar Ollama no vuelve locales todos los componentes de audio o transporte
 
 ## Qué puedes hacer con él
 
-Construye agentes que hablan, escuchan y ven, con detección de turnos y telefonía, desplegables a escala.
+Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit.
 
 ## Por qué destaca
 
-Infraestructura de tiempo real probada en producción.
+Usos propuestos: Construir un asistente de voz; Evaluar conversación en tiempo real.
 
 ## Cómo funciona
 
-Workers de agentes se conectan a salas LiveKit y procesan audio y video con plugins de STT, LLM y TTS.
+El MCP del README consulta documentación para desarrollar y no controla automáticamente tus agentes; usar Ollama no vuelve locales todos los componentes de audio o transporte
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python
+- LiveKit
+- proveedores o modelos locales
+- micrófono de prueba
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+pip install "livekit-agents[openai,deepgram,cartesia]"
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/livekit/agents/blob/main/README.md)
 
@@ -51,21 +68,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar LiveKit Agents para mi objetivo y necesito pasos guiados. Lee https://github.com/livekit/agents/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Usa terminal mode para una conversación breve y revisa cada etapa antes de añadir telefonía.
+
+**Qué comprobar:** Puedes comprobar audio de entrada, modelo y respuesta.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Agente de voz para call center
-- Asistente en videollamadas
-- Voz en apps móviles
+- Construir un asistente de voz
+- Evaluar conversación en tiempo real
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas agentes de voz escalables con WebRTC | quieres algo ligero sin servidor de medios; mira `pipecat` |
+| Tu objetivo encaja con estos ejemplos: Construir un asistente de voz; Evaluar conversación en tiempo real | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El MCP del README consulta documentación para desarrollar y no controla automáticamente tus agentes; usar Ollama no vuelve locales todos los componentes de audio o transporte
 
 ## Stack y modelos
 
-- **Stack:** Python, Node.js, WebRTC
+- **Stack:** Python; LiveKit; proveedores o modelos locales; micrófono de prueba
 - **Etiquetas:** `audio` `agents` `video` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,9 +115,12 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/livekit/agents/blob/main/README.md)
+- [Fuente 2](https://docs.livekit.io/agents/models/llm/plugins/ollama/)
 
 ---
 

@@ -16,34 +16,52 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA necesaria. La ruta documentada necesita credenciales de un proveedor de IA o servicio externo. |
+| API de IA | API de IA necesaria. APIs del modelo, servicios de ejecución y redes tienen sus costes y límites |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | Consumo de APIs o servicios. Revisar el plan, créditos, cuotas y facturación del proveedor antes de ejecutar. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. El flujo incluye revisión humana; configurar el servidor local no evita las claves y permisos que requieren las integraciones |
+| Coste | Consumo de APIs o servicios. APIs del modelo, servicios de ejecución y redes tienen sus costes y límites |
+| Equipo | Preparación según la ruta elegida. Node y Yarn; claves de modelo y servicios; cuentas sociales solo al conectar publicación |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El flujo incluye revisión humana; configurar el servidor local no evita las claves y permisos que requieren las integraciones
 
 ## Qué puedes hacer con él
 
-Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de publicarlas. Usa un flujo de LangGraph para investigar el enlace, redactar y solicitar aprobación de la publicación.
+Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de publicarlas.
 
 ## Por qué destaca
 
-Quieres preparar publicaciones para X o LinkedIn con una etapa de aprobación.
+Usos propuestos: Preparar una propuesta para LinkedIn; Convertir un artículo en un borrador corto.
 
 ## Cómo funciona
 
-Usa un flujo de LangGraph para investigar el enlace, redactar y solicitar aprobación de la publicación.
+El flujo incluye revisión humana; configurar el servidor local no evita las claves y permisos que requieren las integraciones
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Node y Yarn
+- claves de modelo y servicios
+- cuentas sociales solo al conectar publicación
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+git clone https://github.com/langchain-ai/social-media-agent.git
+
+yarn install
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/langchain-ai/social-media-agent/blob/main/README.md)
 
@@ -51,21 +69,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar social-media-agent para mi objetivo y necesito pasos guiados. Lee https://github.com/langchain-ai/social-media-agent/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Genera un borrador desde un enlace propio y recházalo o edítalo sin publicarlo.
+
+**Qué comprobar:** Puedes revisar texto y aprobación antes de cualquier publicación.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres preparar publicaciones para X o LinkedIn con una etapa de aprobación
+- Preparar una propuesta para LinkedIn
+- Convertir un artículo en un borrador corto
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres preparar publicaciones para X o LinkedIn con una etapa de aprobación | un flujo determinista resuelve el problema sin un agente |
+| Tu objetivo encaja con estos ejemplos: Preparar una propuesta para LinkedIn; Convertir un artículo en un borrador corto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Necesita credenciales y servicios externos; la ficha no autoriza publicar ni conectar cuentas.
+**Limitaciones:** El flujo incluye revisión humana; configurar el servidor local no evita las claves y permisos que requieren las integraciones
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, pyproject.toml, Node.js
+- **Stack:** Node y Yarn; claves de modelo y servicios; cuentas sociales solo al conectar publicación
 - **Etiquetas:** `asistentes` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -81,7 +108,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/langchain-ai/social-media-agent/blob/main/README.md)
 

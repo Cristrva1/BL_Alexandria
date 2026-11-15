@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No requiere modelo ni API; la distribución usa licencia MIT |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es un descompilador; el resultado reconstruido puede diferir de la fuente original |
+| Coste | Sin pago a un modelo en la ruta básica. No requiere modelo ni API; la distribución usa licencia MIT |
+| Equipo | Preparación según la ruta elegida. App o ilspycmd del sistema; ensamblado .NET de práctica |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Es un descompilador; el resultado reconstruido puede diferir de la fuente original
 
 ## Qué puedes hacer con él
 
 Descompilador de .NET para explorar ensamblados y estudiar el código y metadatos de aplicaciones compatibles.
 
+## Por qué destaca
+
+Usos propuestos: Comprender una dependencia .NET; Estudiar cómo se representa código compilado.
+
 ## Cómo funciona
 
-La aplicación ofrece las herramientas de su interfaz o CLI después de preparar la distribución y sus dependencias.
+Es un descompilador; el resultado reconstruido puede diferir de la fuente original
 
 ## Cómo empezar
 
@@ -39,36 +44,44 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un sistema compatible y una copia de datos o archivos para la primera prueba.
-- Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real.
+- App o ilspycmd del sistema
+- ensamblado .NET de práctica
 
-1. Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.
-2. Sigue su guía de inicio y configura únicamente la función que necesitas probar.
-3. Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/icsharpcode/ILSpy/blob/master/README.md)
-
-[Abrir la web o descarga indicada por el autor](https://github.com/icsharpcode/ILSpy/releases)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
 > Quiero usar ILSpy para mi objetivo y necesito pasos guiados. Lee https://github.com/icsharpcode/ILSpy/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Abre una biblioteca propia y navega por un método y sus referencias.
+
+**Qué comprobar:** Puedes distinguir metadatos y C# descompilado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Descompilador de .NET para explorar ensamblados y estudiar el código y metadatos de aplicaciones compatibles.
+- Comprender una dependencia .NET
+- Estudiar cómo se representa código compilado
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Descompilador de .NET para explorar ensamblados y estudiar el código y metadatos de aplicaciones compatibles. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Comprender una dependencia .NET; Estudiar cómo se representa código compilado | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Las pruebas activas y modificaciones requieren un alcance autorizado y un entorno adecuado.
+**Limitaciones:** Es un descompilador; el resultado reconstruido puede diferir de la fuente original
 
 ## Stack y modelos
 
-- **Stack:** C#
+- **Stack:** App o ilspycmd del sistema; ensamblado .NET de práctica
 - **Etiquetas:** `reversing` `app` `c`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -78,7 +91,9 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/icsharpcode/ILSpy/blob/master/README.md)
 

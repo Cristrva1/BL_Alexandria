@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La biblioteca MIT no requiere modelo ni API; recursos externos se evalúan aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Los comandos npm i del apartado de desarrollo preparan el repositorio y no deben confundirse con instalar la biblioteca en tu propia app |
+| Coste | Sin pago a un modelo en la ruta básica. La biblioteca MIT no requiere modelo ni API; recursos externos se evalúan aparte |
+| Equipo | Preparación según la ruta elegida. Proyecto JavaScript; DOM o SVG de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Los comandos npm i del apartado de desarrollo preparan el repositorio y no deben confundirse con instalar la biblioteca en tu propia app
 
 ## Qué puedes hacer con él
 
-API simple y potente para líneas de tiempo, scroll y animaciones complejas.
+Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos.
 
 ## Por qué destaca
 
-Ligero, rápido y con una API muy agradable.
+Usos propuestos: Mostrar una transición de estado; Animar un SVG sencillo.
 
 ## Cómo funciona
 
-Interpola propiedades con un motor de tiempo propio y líneas de tiempo encadenables.
+Los comandos npm i del apartado de desarrollo preparan el repositorio y no deben confundirse con instalar la biblioteca en tu propia app
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Proyecto JavaScript
+- DOM o SVG de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/juliangarnier/anime/blob/master/README.md)
 
@@ -51,21 +58,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Anime.js para mi objetivo y necesito pasos guiados. Lee https://github.com/juliangarnier/anime/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Anima un cuadrado y cambia duración y easing para observar la diferencia.
+
+**Qué comprobar:** Puedes identificar qué propiedad cambia y cuándo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Animaciones de SVG
-- Efectos en landing pages
-- Animaciones ligadas al scroll
+- Mostrar una transición de estado
+- Animar un SVG sencillo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres animaciones potentes sin framework | usas React y quieres animaciones declarativas; mira `motion` |
+| Tu objetivo encaja con estos ejemplos: Mostrar una transición de estado; Animar un SVG sencillo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Los comandos npm i del apartado de desarrollo preparan el repositorio y no deben confundirse con instalar la biblioteca en tu propia app
 
 ## Stack y modelos
 
-- **Stack:** JavaScript
+- **Stack:** Proyecto JavaScript; DOM o SVG de prueba
 - **Etiquetas:** `ui` `design` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,7 +99,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/juliangarnier/anime/blob/master/README.md)
 

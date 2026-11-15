@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 38.4k | AGPL-3.0 | Python | 2026-11-10 |
 
-**Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
+**Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,42 +16,51 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| API de IA | Depende de la ruta elegida. El coste depende del traductor; puede usar servicios remotos o modelo Ollama; el procesamiento y modelos locales requieren recursos |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. MCP stdio está documentado; conservar fórmulas y formato es un objetivo, no garantía de traducción técnica correcta |
+| Coste | El coste depende del proveedor o la ruta. El coste depende del traductor; puede usar servicios remotos o modelo Ollama; el procesamiento y modelos locales requieren recursos |
+| Equipo | Preparación según la ruta elegida. Python 3.11–3.12; proveedor de traducción u Ollama; PDF de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+MCP stdio está documentado; conservar fórmulas y formato es un objetivo, no garantía de traducción técnica correcta
 
 ## Qué puedes hacer con él
 
-Ideal para leer artículos científicos en tu idioma sin perder el layout. Admite Google, DeepL, OpenAI, Ollama y más.
+Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe.
 
 ## Por qué destaca
 
-Conserva fórmulas y diseño, algo que fallan otros traductores.
+Usos propuestos: Leer un artículo en otro idioma; Crear una versión bilingüe de documentación propia.
 
 ## Cómo funciona
 
-Analiza el layout, traduce solo los bloques de texto y vuelve a componer el PDF.
+MCP stdio está documentado; conservar fórmulas y formato es un objetivo, no garantía de traducción técnica correcta
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python 3.11–3.12
+- proveedor de traducción u Ollama
+- PDF de prueba
 
-```shell
-pip install pdf2zh
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+pip install uv
+   uv tool install --python 3.12 pdf2zh
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/PDFMathTranslate/PDFMathTranslate/blob/main/README.md)
 
@@ -59,23 +68,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar PDFMathTranslate para mi objetivo y necesito pasos guiados. Lee https://github.com/PDFMathTranslate/PDFMathTranslate/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Traduce dos páginas con fórmulas y compara texto, nombres y disposición con el original.
+
+**Qué comprobar:** Puedes detectar traducciones incorrectas sin confundirlas con cambios de formato.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Leer papers en español
-- Traducir manuales técnicos
-- PDF bilingües para estudiar
+- Leer un artículo en otro idioma
+- Crear una versión bilingüe de documentación propia
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| traduces PDFs técnicos y quieres conservar el formato | necesitas editar el PDF; mira `stirling-pdf` |
+| Tu objetivo encaja con estos ejemplos: Leer un artículo en otro idioma; Crear una versión bilingüe de documentación propia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Licencia AGPL-3.0.
+**Limitaciones:** MCP stdio está documentado; conservar fórmulas y formato es un objetivo, no garantía de traducción técnica correcta
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python 3.11–3.12; proveedor de traducción u Ollama; PDF de prueba
 - **Etiquetas:** `pdf` `docs` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -92,7 +108,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/PDFMathTranslate/PDFMathTranslate/blob/main/README.md)
 

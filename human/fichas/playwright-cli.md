@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El CLI no necesita API de IA propia; el agente usa su modelo o plan |
 | Claude Code | Dentro del agente: skills o instrucciones |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Codex | Dentro del agente: skills o instrucciones |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. Los hosts compatibles pueden leer las skills instaladas; control por CLI y MCP son superficies distintas y las sesiones deben separarse al trabajar en paralelo |
+| Coste | El coste depende del proveedor o la ruta. El CLI no necesita API de IA propia; el agente usa su modelo o plan |
+| Equipo | Preparación según la ruta elegida. Node; navegador; agente con shell; aplicación de prueba |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+Los hosts compatibles pueden leer las skills instaladas; control por CLI y MCP son superficies distintas y las sesiones deben separarse al trabajar en paralelo
 
 ## Qué puedes hacer con él
 
-Resuelve el problema de los árboles de accesibilidad y los JSON de herramientas que inflan el prompt en cada turno.
+Interfaz CLI de Playwright expuesta como SKILLs para agentes de código, que les deja automatizar el navegador con comandos en lugar de cargar esquemas masivos en el contexto.
 
 ## Por qué destaca
 
-Alternativa token-eficiente a Playwright MCP, pensada para agentes de código (Claude Code, Cursor, Codex) que necesitan tocar la web sin quemar contexto. Procede del propio ecosistema Playwright de Microsoft, lo que garantiza compatibilidad con su API de automatización.
+Usos propuestos: Probar un flujo con un agente; Registrar una secuencia de navegación.
 
 ## Cómo funciona
 
-Envuelve los comandos de Playwright en un CLI que el agente invoca paso a paso (navegar, clickar, leer), devolviendo salidas compactas en lugar de volcar el DOM o el accessibility tree enteros en cada turno.
+Los hosts compatibles pueden leer las skills instaladas; control por CLI y MCP son superficies distintas y las sesiones deben separarse al trabajar en paralelo
 
 ## Cómo empezar
 
@@ -43,11 +44,24 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Node
+- navegador
+- agente con shell
+- aplicación de prueba
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+npm install -g @playwright/cli@latest
+playwright-cli --help
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/microsoft/playwright-cli/blob/main/README.md)
 
@@ -55,21 +69,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar playwright-cli para mi objetivo y necesito pasos guiados. Lee https://github.com/microsoft/playwright-cli/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Instala sus skills y abre una página de prueba para obtener snapshot antes de pulsar un control.
+
+**Qué comprobar:** Puedes usar referencias del snapshot y comprobar el resultado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Que un agente automatice el browser de forma token-eficiente
-- Alternativa a Playwright MCP cuando el contexto aprieta
-- Flujos de login/scraping guiados por un agente de código
+- Probar un flujo con un agente
+- Registrar una secuencia de navegación
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tu agente vive en CLI y el contexto es un recurso caro | necesitas estado persistente entre sesiones o un servidor MCP con recursos expuestos (usa Playwright MCP) |
+| Tu objetivo encaja con estos ejemplos: Probar un flujo con un agente; Registrar una secuencia de navegación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Los hosts compatibles pueden leer las skills instaladas; control por CLI y MCP son superficies distintas y las sesiones deben separarse al trabajar en paralelo
 
 ## Stack y modelos
 
-- **Stack:** TypeScript/Node.js, CLI
+- **Stack:** Node; navegador; agente con shell; aplicación de prueba
 - **Etiquetas:** `browser` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -93,7 +116,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/microsoft/playwright-cli/blob/main/README.md)
 

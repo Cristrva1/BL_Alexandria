@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | API: por confirmar. Necesitas acceso a Grok CLI además de Claude Code; confirmar las condiciones de esa cuenta en el portal del proveedor |
 | Claude Code | Dentro del agente: skills o instrucciones |
-| Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Codex | Integración no documentada |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Se elimina la falsa compatibilidad con Codex: se menciona como inspiración. La forma de cobro y API de Grok no queda resuelta por el README |
+| Coste | El coste depende del proveedor o la ruta. Necesitas acceso a Grok CLI además de Claude Code; confirmar las condiciones de esa cuenta en el portal del proveedor |
+| Equipo | Preparación según la ruta elegida. Claude Code;  Grok CLI instalado y autenticado;  Node.js |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+Se elimina la falsa compatibilidad con Codex: se menciona como inspiración. La forma de cobro y API de Grok no queda resuelta por el README
 
 ## Qué puedes hacer con él
 
-Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar. Envuelve el modo no interactivo de Grok CLI para ejecutar encargos y recuperar sus resultados.
+Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar.
 
 ## Por qué destaca
 
-Usas Claude Code y quieres consultar Grok dentro de ese flujo.
+Usos propuestos: Solicitar una segunda opinión sobre un cambio pequeño usando Grok; Delegar una tarea acotada desde una sesión de Claude Code.
 
 ## Cómo funciona
 
-Envuelve el modo no interactivo de Grok CLI para ejecutar encargos y recuperar sus resultados.
+Se elimina la falsa compatibilidad con Codex: se menciona como inspiración. La forma de cobro y API de Grok no queda resuelta por el README
 
 ## Cómo empezar
 
@@ -43,11 +44,23 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Claude Code
+-  Grok CLI instalado y autenticado
+-  Node.js
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (text):**
+
+```
+/plugin marketplace add zachdunn/grok-plugin-claude-code
+/plugin install grok-cc@grok-plugin-claude-code
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/zachdunn/grok-plugin-claude-code/blob/main/README.md)
 
@@ -55,21 +68,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar grok-plugin-claude-code para mi objetivo y necesito pasos guiados. Lee https://github.com/zachdunn/grok-plugin-claude-code/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Ejecuta la comprobación setup del plugin antes de delegar una tarea de prueba.
+
+**Qué comprobar:** El diagnóstico confirma que puede localizar y utilizar el CLI de Grok.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Usas Claude Code y quieres consultar Grok dentro de ese flujo
+- Solicitar una segunda opinión sobre un cambio pequeño usando Grok
+- Delegar una tarea acotada desde una sesión de Claude Code
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| usas Claude Code y quieres consultar Grok dentro de ese flujo | no utilizas un agente o flujo compatible con estas instrucciones |
+| Tu objetivo encaja con estos ejemplos: Solicitar una segunda opinión sobre un cambio pequeño usando Grok; Delegar una tarea acotada desde una sesión de Claude Code | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Requiere Grok CLI y su autenticación; no es el plugin oficial de Codex.
+**Limitaciones:** Se elimina la falsa compatibilidad con Codex: se menciona como inspiración. La forma de cobro y API de Grok no queda resuelta por el README
 
 ## Stack y modelos
 
-- **Stack:** JavaScript
+- **Stack:** Claude Code;  Grok CLI instalado y autenticado;  Node.js
 - **Etiquetas:** `metodologia` `ai-agents` `claude-code` `grok` `grok-cli` `plugin` `xai` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -79,7 +101,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/zachdunn/grok-plugin-claude-code/blob/main/README.md)
 

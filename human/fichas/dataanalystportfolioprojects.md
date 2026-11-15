@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Leer ejemplos no requiere IA; Tableau u otras herramientas tienen sus condiciones y licencias |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Son proyectos de portafolio: revisa dependencias y datos de cada carpeta antes de intentar ejecutar el conjunto |
+| Coste | Sin pago a un modelo en la ruta básica. Leer ejemplos no requiere IA; Tableau u otras herramientas tienen sus condiciones y licencias |
+| Equipo | Preparación según la ruta elegida. Navegador; herramienta del proyecto elegido; datos públicos del ejemplo |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Son proyectos de portafolio: revisa dependencias y datos de cada carpeta antes de intentar ejecutar el conjunto
 
 ## Qué puedes hacer con él
 
-Portafolio de ejemplos de análisis de datos con SQL, Python, Tableau, Excel y Hive. Presenta ejercicios de limpieza, exploración y construcción de dashboards sobre conjuntos de datos.
+Portafolio de ejemplos de análisis de datos con SQL, Python, Tableau, Excel y Hive.
 
 ## Por qué destaca
 
-Quieres consultar ejemplos para construir tu propio portafolio de análisis.
+Usos propuestos: Estudiar un portafolio de análisis; Diseñar un primer proyecto con datos públicos.
 
 ## Cómo funciona
 
-Presenta ejercicios de limpieza, exploración y construcción de dashboards sobre conjuntos de datos.
+Son proyectos de portafolio: revisa dependencias y datos de cada carpeta antes de intentar ejecutar el conjunto
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- herramienta del proyecto elegido
+- datos públicos del ejemplo
+
+1. Selecciona un proyecto y reproduce una consulta o visualización pequeña.
+2. Comprueba: Puedes explicar el cálculo y qué datos lo sostienen.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/PriyankaJhaTheDeveloper/DataAnalystPortfolioProjects/blob/main/README.md)
 
@@ -51,21 +59,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar DataAnalystPortfolioProjects para mi objetivo y necesito pasos guiados. Lee https://github.com/PriyankaJhaTheDeveloper/DataAnalystPortfolioProjects/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Selecciona un proyecto y reproduce una consulta o visualización pequeña.
+
+**Qué comprobar:** Puedes explicar el cálculo y qué datos lo sostienen.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres consultar ejemplos para construir tu propio portafolio de análisis
+- Estudiar un portafolio de análisis
+- Diseñar un primer proyecto con datos públicos
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres consultar ejemplos para construir tu propio portafolio de análisis | necesitas resultados operativos validados en vez de material de investigación |
+| Tu objetivo encaja con estos ejemplos: Estudiar un portafolio de análisis; Diseñar un primer proyecto con datos públicos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Son proyectos de demostración; revisar datos y dependencias antes de reutilizarlos.
+**Limitaciones:** Son proyectos de portafolio: revisa dependencias y datos de cada carpeta antes de intentar ejecutar el conjunto
 
 ## Stack y modelos
 
-- **Stack:** Jupyter Notebook
+- **Stack:** Navegador; herramienta del proyecto elegido; datos públicos del ejemplo
 - **Etiquetas:** `recursos` `analytics` `dashboard` `data-visualization` `excel` `hadoop` `hiveq` `portfolio`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +92,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/PriyankaJhaTheDeveloper/DataAnalystPortfolioProjects/blob/main/README.md)
 

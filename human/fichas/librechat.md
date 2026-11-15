@@ -16,56 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Puedes elegir la ruta local documentada o configurar un proveedor remoto; la ruta remota puede requerir API key o acceso propio. |
+| API de IA | API de IA opcional. La interfaz abierta no incluye crédito de modelos; almacenamiento, herramientas y proveedores tienen costes propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | El coste depende del proveedor o la ruta. La inferencia local consume recursos de tu equipo. Los proveedores remotos y servicios del cliente tienen sus propios planes y tarifas. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Sus agentes y MCP funcionan dentro de LibreChat; no acreditan usar una suscripción de otro editor para ejecutarlo |
+| Coste | El coste depende del proveedor o la ruta. La interfaz abierta no incluye crédito de modelos; almacenamiento, herramientas y proveedores tienen costes propios |
+| Equipo | Preparación según la ruta elegida. Ruta de despliegue elegida; base de datos; proveedor u Ollama |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Sus agentes y MCP funcionan dentro de LibreChat; no acreditan usar una suscripción de otro editor para ejecutarlo
 
 ## Qué puedes hacer con él
 
-Une OpenAI, Anthropic, Google, Azure, OpenRouter y modelos locales con agentes, artifacts, búsqueda y control de usuarios.
+Clon mejorado de ChatGPT con agentes, MCP y todos los proveedores en una sola interfaz auto-hospedada.
 
 ## Por qué destaca
 
-La mejor opción multi-proveedor con autenticación empresarial y agentes.
+Usos propuestos: Unificar proveedores en una interfaz; Crear asistentes con herramientas y archivos.
 
 ## Cómo funciona
 
-App MERN (MongoDB, Express, React, Node) con conectores a cada proveedor y un constructor de agentes.
+Sus agentes y MCP funcionan dentro de LibreChat; no acreditan usar una suscripción de otro editor para ejecutarlo
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/LibreChat-AI/LibreChat/blob/main/README.md)
+- Ruta de despliegue elegida
+- base de datos
+- proveedor u Ollama
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://www.librechat.ai/docs)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar LibreChat para mi objetivo y necesito pasos guiados. Lee https://github.com/LibreChat-AI/LibreChat/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar LibreChat para mi objetivo y necesito pasos guiados. Lee https://www.librechat.ai/docs. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Conecta un proveedor y prueba un agente sin herramientas antes de añadir archivos.
+
+**Qué comprobar:** Puedes identificar el modelo y revisar la conversación.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Un chat con todos los modelos para la empresa
-- Agentes con MCP para el equipo
-- Controlar costos por usuario
+- Unificar proveedores en una interfaz
+- Crear asistentes con herramientas y archivos
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres todos los proveedores en un chat con SSO | usas sobre todo modelos locales; mira `open-webui` |
+| Tu objetivo encaja con estos ejemplos: Unificar proveedores en una interfaz; Crear asistentes con herramientas y archivos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Sus agentes y MCP funcionan dentro de LibreChat; no acreditan usar una suscripción de otro editor para ejecutarlo
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, React, Node.js, MongoDB
+- **Stack:** Ruta de despliegue elegida; base de datos; proveedor u Ollama
 - **Etiquetas:** `chatbot` `agents` `typescript` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,7 +108,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/LibreChat-AI/LibreChat/blob/main/README.md)
 

@@ -4,147 +4,217 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `agent-desktop`
-role=app · exec=local · setup=medium · mcp=False · prov=— · tags=infra,accessibility,accessibility-api,ai-agents,automation,cli,computer-use,computer-use-agent
+role=app · exec=local · setup=medium · mcp=True · prov=— · tags=infra,accessibility,accessibility-api,ai-agents,automation,cli,computer-use,computer-use-agent
 
-**Qué es:** CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio. Expone elementos de la interfaz como referencias sobre las que el agente puede actuar y comprobar resultados.
-**Stack:** Rust, Cargo
+**Qué es:** CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio.
+**Stack:** Node; permisos de accesibilidad del sistema; cliente de agente opcional
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El CLI y MCP no necesitan un LLM propio; el agente que los controle usa su modelo o plan
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. Ofrece skills portables y MCP stdio; algunas órdenes de teclas o botones mantenidos se rechazan hasta disponer de daemon de liberación
+- Coste: Sin pago a un modelo en la ruta básica. El CLI y MCP no necesitan un LLM propio; el agente que los controle usa su modelo o plan
+- Equipo: Preparación según la ruta elegida. Node; permisos de accesibilidad del sistema; cliente de agente opcional
 **Repo:** https://github.com/vercel-labs/agent-desktop
 
-**Instalación** [+]: `npm install -g agent-desktop`
+**Instalación** [+]:
+
+```
+npm install -g agent-desktop
+agent-desktop status                # platform, permissions, supported surfaces
+agent-desktop permissions --guide   # macOS: walks you through the Accessibility grant
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** necesitas automatizar aplicaciones nativas desde un agente
-**Evita si:** un flujo determinista resuelve el problema sin un agente
+**Elige si:** Tu objetivo encaja con estos ejemplos: Inspeccionar una app de escritorio propia; Preparar una prueba de interfaz
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Ejecuta status y permissions --guide y obtén una captura de una ventana de prueba sin pulsar controles
+**Qué comprobar:** Puedes comprobar plataforma, permisos y referencias de accesibilidad
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `codex`
 
 ## `agent-protocol`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=agents,python
 
-**Qué es:** Define cómo se ejecuta un agente, cómo recibe entradas y cómo guarda su estado, sin atarse a un framework. Es una especificación, no un runtime.
-**Stack:** OpenAPI, Python
+**Qué es:** Especificación de LangChain para exponer cualquier agente con una API estándar de ejecuciones, hilos y estado.
+**Stack:** Navegador; nociones de HTTP
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Leer la especificación no consume API de IA; una implementación y su alojamiento tienen costes propios
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Es una especificación de API y no MCP ni un servidor instalable; los bloques Hurl ilustran peticiones y no son comandos de terminal normales
+- Coste: Sin pago a un modelo en la ruta básica. Leer la especificación no consume API de IA; una implementación y su alojamiento tienen costes propios
+- Equipo: Preparación según la ruta elegida. Navegador; nociones de HTTP
 **Repo:** https://github.com/langchain-ai/agent-protocol
 
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** diseñas una plataforma que sirve agentes de distintos frameworks
-**Evita si:** solo necesitas construir un agente
+**Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una API de agentes; Comparar protocolos antes de implementar
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Lee las rutas threads y runs y dibuja cómo una aplicación inicia y consulta una ejecución
+**Qué comprobar:** Puedes distinguir estado del hilo y ejecución del agente
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langgraph`
 
 ## `casaos`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=infraestructura,server,go
 
 **Qué es:** Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos.
-**Stack:** Go, go.mod, package.json
+**Stack:** Servidor Linux compatible; disco y red; respaldo del equipo antes de instalar
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita API de IA; equipo, discos y energía se pagan aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La instalación modifica el servidor y debe seguir requisitos del autor; las apps de su catálogo tienen condiciones independientes
+- Coste: Sin pago a un modelo en la ruta básica. No necesita API de IA; equipo, discos y energía se pagan aparte
+- Equipo: Preparación según la ruta elegida. Servidor Linux compatible; disco y red; respaldo del equipo antes de instalar
 **Repo:** https://github.com/IceWhaleTech/CasaOS
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/IceWhaleTech/CasaOS/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/IceWhaleTech/CasaOS/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+**Elige si:** Tu objetivo encaja con estos ejemplos: Organizar servicios domésticos; Explorar un servidor personal
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Consulta compatibilidad y prueba el panel en un equipo de laboratorio antes de instalar apps
+**Qué comprobar:** Puedes identificar almacenamiento y una app de prueba
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `claude-task-master`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=infra,agent,javascript
 
 **Qué es:** Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP.
-**Stack:** JavaScript, package.json
+**Stack:** Node; cliente MCP; proveedor o CLI Claude Code/Codex configurado; PRD ficticio
 **Acceso y costes:**
-- API de IA: API de IA necesaria. La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Consumo de APIs o servicios. Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- API de IA: API de IA opcional. Admite proveedores API y rutas por CLI Claude Code o Codex con sus cuentas; investigación y fallback pueden usar otros proveedores
+- Claude Code: Integración documentada por el proyecto
+- Codex: Integración documentada por el proyecto
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: Modelo local no documentado. Ofrece MCP estándar para el cliente y backends específicos para el modelo; un campo OLLAMA_API_KEY no basta para asegurar inferencia local sin comprobar la configuración
+- Coste: El coste depende del proveedor o la ruta. Admite proveedores API y rutas por CLI Claude Code o Codex con sus cuentas; investigación y fallback pueden usar otros proveedores
+- Equipo: Preparación según la ruta elegida. Node; cliente MCP; proveedor o CLI Claude Code/Codex configurado; PRD ficticio
 **Repo:** https://github.com/eyaltoledano/claude-task-master
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/eyaltoledano/claude-task-master/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** buscas esta función: Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+```
+claude mcp add taskmaster-ai -- npx -y task-master-ai
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Descomponer un proyecto web; Revisar orden y dependencias de tareas
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Convierte una especificación corta de prueba en tareas y revisa dependencias antes de ejecutarlas
+**Qué comprobar:** Puedes rastrear cada tarea a un requisito
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `codex-chatgpt-web`
 role=app · exec=cloud · setup=medium · mcp=True · prov=— · tags=infra,chatgpt,chatgpt-pro,codex,free-ai,mcp,openai,playwright
 
-**Qué es:** Integración de terceros que conecta una sesión de ChatGPT Web con el selector de modelos y herramientas de Codex. Un launcher usa la sesión de la cuenta y enlaza herramientas mediante MCP para conservar el contexto de la tarea.
-**Stack:** TypeScript, Node.js
+**Qué es:** Integración de terceros que conecta una sesión de ChatGPT Web con el selector de modelos y herramientas de Codex.
+**Stack:** Cuenta propia ChatGPT; Codex; aplicación para tu sistema; equipo de confianza
 **Acceso y costes:**
-- API de IA: API: por confirmar. No se da por verificada la autenticación o el coste real de esta integración de terceros.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Usa la sesión y los límites de ChatGPT; el proyecto no garantiza consumo ilimitado ni exención de las condiciones del servicio
 - Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Ejecución con modelos locales por confirmar. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: Coste por confirmar. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Codex: Integración documentada por el proyecto
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Es automatización de navegador no oficial y sin respaldo de OpenAI; las versiones publicadas no están firmadas y los cambios de UI pueden romper la integración
+- Coste: Consumo del agente que ya utilizas. Usa la sesión y los límites de ChatGPT; el proyecto no garantiza consumo ilimitado ni exención de las condiciones del servicio
+- Equipo: Preparación según la ruta elegida. Cuenta propia ChatGPT; Codex; aplicación para tu sistema; equipo de confianza
 **Repo:** https://github.com/miuuyy/codex-chatgpt-web
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/miuuyy/codex-chatgpt-web/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/miuuyy/codex-chatgpt-web/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres estudiar una integración entre ChatGPT Web y Codex
-**Evita si:** un flujo determinista resuelve el problema sin un agente
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un adaptador de navegador para Codex; Comparar transporte web con acceso oficial
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Lee el modelo de seguridad y usa una tarea sin datos sensibles antes de activar full harness
+**Qué comprobar:** Puedes identificar sesión web, modelo elegido y permisos expuestos
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `composio`
 role=platform · exec=cloud · setup=easy · mcp=True · prov=openai,anthropic,mcp · tags=agents,mcp,automation,typescript
 
-**Qué es:** Da a cualquier agente herramientas listas para Gmail, Slack, GitHub, Notion y cientos más, gestionando OAuth por ti. Funciona con los principales frameworks y por MCP.
-**Stack:** TypeScript, Python
+**Qué es:** Plataforma con más de 1000 integraciones con autenticación gestionada para que tus agentes actúen en apps reales.
+**Stack:** Cuenta Composio; CLI o SDK; cuenta externa de prueba
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA.
-- Claude Code: Integración no documentada
+- API de IA: Sin clave propia de API de IA en la ruta básica. La conexión no necesita un LLM propio en su ruta básica; Composio requiere autenticación y su servicio y apps externas tienen condiciones de uso
+- Claude Code: Integración documentada por el proyecto
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. El CLI ofrece una superficie local para Claude Code; el SDK de Claude Agent no equivale a incluir créditos o plan de Claude Code
+- Coste: Consumo de APIs o servicios. La conexión no necesita un LLM propio en su ruta básica; Composio requiere autenticación y su servicio y apps externas tienen condiciones de uso
+- Equipo: Preparación según la ruta elegida. Cuenta Composio; CLI o SDK; cuenta externa de prueba
 **Repo:** https://github.com/ComposioHQ/composio
 
-**Instalación** [+]: `pip install composio`
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+**Instalación** [?]:
 
-**Elige si:** tu agente necesita actuar en muchas apps SaaS
-**Evita si:** quieres todo auto-hospedado sin servicio externo
+```
+Seguir la instalación original: https://github.com/ComposioHQ/composio/blob/next/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Conectar un agente a un CRM; Explorar herramientas de consulta de un servicio
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Busca una herramienta de consulta y revisa sus permisos antes de enlazar una cuenta
+**Qué comprobar:** Puedes identificar acción, aplicación y alcance de autorización
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langgraph`, `openai-agents-python`, `mastra`
 
 ## `computer-use-preview`
 role=runtime · exec=cloud · setup=medium · mcp=False · prov=google · tags=browser,agents,python
 
-**Qué es:** Muestra cómo un modelo Gemini con computer use controla un navegador para completar tareas. Es una vista previa, no un agente de propósito general.
-**Stack:** Python, Playwright
+**Qué es:** Implementación de referencia de Google para que Gemini vea la pantalla y opere interfaces web.
+**Stack:** Python; navegador y dependencias; Gemini Developer API o Vertex AI; entorno de prueba
 **Acceso y costes:**
-- API de IA: API de IA necesaria. La ruta documentada necesita credenciales de un proveedor de IA o servicio externo.
+- API de IA: API de IA necesaria. Requiere Gemini API o Vertex con sus credenciales y consumo; no lo cubre por defecto una suscripción de un agente de código
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: Consumo de APIs o servicios. Este repositorio demuestra computer use con Gemini y requiere su API key; el nombre no implica una integración de OpenAI.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Es una implementación de referencia y no un servidor genérico que se instala automáticamente en Claude Code, Codex o Antigravity
+- Coste: Consumo de APIs o servicios. Requiere Gemini API o Vertex con sus credenciales y consumo; no lo cubre por defecto una suscripción de un agente de código
+- Equipo: Preparación según la ruta elegida. Python; navegador y dependencias; Gemini Developer API o Vertex AI; entorno de prueba
 **Repo:** https://github.com/google-gemini/computer-use-preview
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/google-gemini/computer-use-preview/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres probar computer use con Gemini
-**Evita si:** buscas automatización web robusta; mira `browser-use` o `stagehand`
+```
+git clone https://github.com/google-gemini/computer-use-preview.git
+cd computer-use-preview
+
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar automatización visual de navegador; Evaluar tareas de formularios ficticios
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Usa una página de prueba y solicita localizar un elemento sin cuentas personales ni acciones reales
+**Qué comprobar:** Puedes comparar la captura y la acción propuesta
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `playwright`
 **Alternativas (elige una):** `browser-use`, `skyvern`
 
@@ -152,186 +222,272 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=infraestructura,server,php
 
 **Qué es:** Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.
-**Stack:** PHP, docker-compose.yml, package.json
+**Stack:** Servidor compatible; Docker; dominio opcional; aplicación de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Self-host abierto requiere servidores y mantenimiento; Cloud es un servicio de pago separado
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Un patrocinador que menciona Claude Code no acredita una integración del producto con ese agente
+- Coste: El coste depende del proveedor o la ruta. Self-host abierto requiere servidores y mantenimiento; Cloud es un servicio de pago separado
+- Equipo: Preparación según la ruta elegida. Servidor compatible; Docker; dominio opcional; aplicación de prueba
 **Repo:** https://github.com/coollabsio/coolify
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/coollabsio/coolify/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://coolify.io/docs/installation
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+**Elige si:** Tu objetivo encaja con estos ejemplos: Alojar una demo web; Administrar despliegues en servidor propio
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Despliega una página estática de prueba y revisa logs antes de añadir bases de datos reales
+**Qué comprobar:** Puedes abrir el sitio y reconocer su servicio y registros
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `e2b`
 role=platform · exec=cloud · setup=easy · mcp=False · prov=— · tags=agents,security,python
 
-**Qué es:** Arranca microVMs aisladas en milisegundos donde el agente puede ejecutar código, instalar paquetes o usar un escritorio. Muy usado para intérpretes de código y agentes de datos.
-**Stack:** Python, TypeScript, Firecracker
+**Qué es:** Sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas.
+**Stack:** Node o Python; cuenta E2B y clave; presupuesto de sandbox
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La clave exigida es de un servicio externo. No es una API de un modelo de lenguaje; el agente o aplicación que use sus datos tiene su propio acceso a IA.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita API de IA para crear el entorno pero sí clave del servicio E2B; cómputo y tiempo del sandbox se facturan según plan
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: Consumo de APIs o servicios. La clave E2B_API_KEY da acceso al servicio de sandboxes, con sus propios límites y tarifas; el modelo se configura aparte.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Instalar el SDK no aloja todo E2B en tu equipo ni incluye un modelo de IA
+- Coste: Consumo de APIs o servicios. No necesita API de IA para crear el entorno pero sí clave del servicio E2B; cómputo y tiempo del sandbox se facturan según plan
+- Equipo: Preparación según la ruta elegida. Node o Python; cuenta E2B y clave; presupuesto de sandbox
 **Repo:** https://github.com/e2b-dev/E2B
 
-**Instalación** [+]: `pip install e2b-code-interpreter`
+**Instalación** [+]:
+
+```
+npm i e2b
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** tu agente ejecuta código y necesitas aislarlo
-**Evita si:** solo necesitas ejecutar código localmente de confianza
+**Elige si:** Tu objetivo encaja con estos ejemplos: Ejecutar código aislado de una app; Preparar un entorno temporal para un agente
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea un sandbox de prueba, ejecuta una operación de texto inocua y ciérralo
+**Qué comprobar:** Puedes revisar resultado y ciclo de vida del sandbox
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `smolagents`, `open-swe`
 **Alternativas (elige una):** `sandbox`
 
 ## `free-for-dev`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=recursos,awesome-list,free-for-developers,html
 
-**Qué es:** Directorio de servicios de infraestructura y desarrollo que ofrecen planes o niveles gratuitos. Agrupa servicios por capacidad para comparar opciones antes de configurar un proyecto.
-**Stack:** HTML
+**Qué es:** Directorio de servicios de infraestructura y desarrollo que ofrecen planes o niveles gratuitos.
+**Stack:** Navegador; necesidad y presupuesto
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La lista no cobra API; los proveedores cambian sus cuotas y pueden pedir tarjeta o cobrar excesos
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo.
-- Coste: Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Es un directorio de servicios as-a-Service, no software autoalojado ni una garantía permanente de gratuidad
+- Coste: Sin pago a un modelo en la ruta básica. La lista no cobra API; los proveedores cambian sus cuotas y pueden pedir tarjeta o cobrar excesos
+- Equipo: Preparación según la ruta elegida. Navegador; necesidad y presupuesto
 **Repo:** https://github.com/ripienaar/free-for-dev
 
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** buscas servicios de desarrollo con un nivel gratuito disponible
-**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
+**Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar infraestructura para una demo; Comparar niveles gratuitos
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Elige un servicio de alojamiento y comprueba sus límites y condiciones en la web del proveedor antes de crear una cuenta
+**Qué comprobar:** Puedes distinguir plan gratuito, cuotas y extras de pago
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `freedomain`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=recursos,digitalplat,dns,dns-tutorial,documentation,domain,domain-platform,domain-registration
 
-**Qué es:** Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat. Reúne instrucciones para registrar un dominio, configurar nameservers y conectar un proyecto.
-**Stack:** Markdown
+**Qué es:** Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat.
+**Stack:** Navegador; nombre de dominio de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El recurso describe opciones gratuitas sujetas a políticas, disponibilidad y elegibilidad; alojamiento no está incluido
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo.
-- Coste: Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. No se instala un dominio con este README ni se promete disponibilidad o renovación perpetua de cualquier nombre
+- Coste: Sin pago a un modelo en la ruta básica. El recurso describe opciones gratuitas sujetas a políticas, disponibilidad y elegibilidad; alojamiento no está incluido
+- Equipo: Preparación según la ruta elegida. Navegador; nombre de dominio de prueba
 **Repo:** https://github.com/DigitalPlatDev/FreeDomain
 
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** quieres aprender el flujo de dominios y DNS con sus recursos de referencia
-**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
+**Elige si:** Tu objetivo encaja con estos ejemplos: Aprender DNS; Evaluar un dominio para un proyecto personal
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Lee las condiciones de registro y dibuja registros DNS para un sitio ficticio sin cambiar dominios activos
+**Qué comprobar:** Puedes distinguir registro, DNS y alojamiento
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `masterdnsvpn`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=redes,dns,dns-client,dns-proxy,dns-server,dns-tunnel,dns-tunneling,dnstt
 
-**Qué es:** Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. Coordina cliente y servidor con retransmisión y selección de resolvers para enlaces con restricciones.
-**Stack:** Go, Go modules
+**Qué es:** Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS.
+**Stack:** Servidor y dominio propios; control DNS; cliente compatible; red de laboratorio
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No usa IA; servidor, dominio y ancho de banda tienen costes propios
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Es un túnel DNS con requisitos de red y no una app de IA; velocidad y resistencia a pérdida dependen de la red y de los resolvers
+- Coste: Sin pago a un modelo en la ruta básica. No usa IA; servidor, dominio y ancho de banda tienen costes propios
+- Equipo: Preparación según la ruta elegida. Servidor y dominio propios; control DNS; cliente compatible; red de laboratorio
 **Repo:** https://github.com/masterking32/MasterDnsVPN
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/masterking32/MasterDnsVPN/blob/main/README.MD`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/masterking32/MasterDnsVPN/blob/main/README.MD
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres estudiar transporte de red sobre DNS en un entorno de pruebas
-**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar transporte sobre DNS; Probar conectividad en un laboratorio
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Revisa la delegación DNS y prepara una prueba entre equipos propios antes de sustituir una conexión habitual
+**Qué comprobar:** Puedes identificar servidor, resolver y túnel y comprobar conectividad básica
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `nemo-agent-toolkit`
-role=library · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=automation,agents,python
+role=library · exec=hybrid · setup=heavy · mcp=True · prov=— · tags=automation,agents,python
 
-**Qué es:** Aporta componentes para conectar, evaluar y desplegar agentes en infraestructura empresarial.
-**Stack:** Python, FastAPI (Apache-2.0)
+**Qué es:** Toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo).
+**Stack:** Python; dependencias del workflow; proveedor; cliente MCP si publicas herramientas
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- API de IA: Depende de la ruta elegida. Código Apache; inferencia, servicios y hardware dependen del workflow y no están incluidos
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: Modelo local no documentado. Documenta publicar workflows con FastMCP; requiere configurar el servidor y no proporciona una integración de suscripción ni un servidor único listo para todos los casos
+- Coste: El coste depende del proveedor o la ruta. Código Apache; inferencia, servicios y hardware dependen del workflow y no están incluidos
+- Equipo: Preparación según la ruta elegida. Python; dependencias del workflow; proveedor; cliente MCP si publicas herramientas
 **Repo:** https://github.com/NVIDIA/NeMo-Agent-Toolkit
 
-**Instalación** [+]: `pip install nvidia-nat`
+**Instalación** [+]:
+
+```
+pip install nvidia-nat
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** trabajas con infra NVIDIA o necesitas guardrails/eval empresarial
-**Evita si:** quieres algo ligero y agnóstico
+**Elige si:** Tu objetivo encaja con estos ejemplos: Perfilar un workflow de agentes; Exponer una herramienta propia por MCP
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Ejecuta un workflow de ejemplo y revisa sus pasos antes de publicarlo como MCP
+**Qué comprobar:** Puedes relacionar configuración, funciones y resultado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langchain`
 
 ## `nemoclaw`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=agents,security,typescript
 
-**Qué es:** Ejecuta agentes populares dentro de los sandboxes de NVIDIA OpenShell con inferencia gestionada y políticas de seguridad. Pensado para empresas.
-**Stack:** TypeScript, contenedores
+**Qué es:** Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes.
+**Stack:** Plataforma compatible según prerequisites; OpenShell; agente y proveedor
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: Depende de la ruta elegida. Infraestructura e inferencia gestionada tienen requisitos y costes propios; no incluye acceso universal gratuito
+- Claude Code: Referencia para la herramienta; no es una integración
+- Codex: Referencia para la herramienta; no es una integración
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. El prompt para que Claude Code o Codex ayude a instalar es una guía de instalación asistida y no una integración runtime de sus planes
+- Coste: El coste depende del proveedor o la ruta. Infraestructura e inferencia gestionada tienen requisitos y costes propios; no incluye acceso universal gratuito
+- Equipo: Preparación según la ruta elegida. Plataforma compatible según prerequisites; OpenShell; agente y proveedor
 **Repo:** https://github.com/NVIDIA/NemoClaw
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/NVIDIA/NemoClaw/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://docs.nvidia.com/nemoclaw/latest/user-guide/openclaw/get-started/quickstart
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres correr agentes potentes con aislamiento corporativo
-**Evita si:** solo necesitas un sandbox para ejecutar código; mira `e2b`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar aislamiento para OpenClaw; Comparar políticas de ejecución de agentes
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Lee los requisitos y prueba la política con una tarea de consulta en un entorno descartable
+**Qué comprobar:** Puedes identificar los permisos de archivos, red e inferencia configurados
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `openclaw`, `hermes-agent`, `nemotron`
 **Alternativas (elige una):** `sandbox`
 
 ## `nodeterm`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=infra,adhd,agent-orchestration,ai-agents,canvas,claude-code,codex,coding-agents
 
-**Qué es:** Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto. Mantiene terminales reales en nodos movibles y muestra sesiones de trabajo en un tablero.
-**Stack:** TypeScript, Docker, Node.js
+**Qué es:** Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto.
+**Stack:** macOS o Linux; tmux según ruta; CLI de agente autenticado
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: API de IA opcional. El gestor usa cuentas de los agentes; dictado local Whisper y funciones AI opcionales tienen requisitos separados
+- Claude Code: Integración documentada por el proyecto
+- Codex: Integración documentada por el proyecto
+- Antigravity: Integración documentada por el proyecto
+- Modelos locales: Modelos locales documentados. Documenta Claude Code, Codex y Antigravity; la licencia BUSL-1.1 y sus límites no deben presentarse como MIT sin restricciones; local aquí incluye dictado, no todo agente
+- Coste: El coste depende del proveedor o la ruta. El gestor usa cuentas de los agentes; dictado local Whisper y funciones AI opcionales tienen requisitos separados
+- Equipo: Preparación según la ruta elegida. macOS o Linux; tmux según ruta; CLI de agente autenticado
 **Repo:** https://github.com/eneskirca/nodeterm
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/eneskirca/nodeterm/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/eneskirca/nodeterm/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** gestionas muchas terminales o sesiones de agentes y prefieres una organización visual
-**Evita si:** un flujo determinista resuelve el problema sin un agente
+**Elige si:** Tu objetivo encaja con estos ejemplos: Organizar varias sesiones de código; Asociar sesiones con worktrees
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea un terminal y un nodo de agente para explicar una carpeta de prueba
+**Qué comprobar:** Puedes ver sesión, terminal y contexto de proyecto
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `sandbox`
 role=platform · exec=hybrid · setup=medium · mcp=True · prov=— · tags=agents,automation,python,docker
 
-**Qué es:** Resuelve el riesgo de dejar que un agente toque tu host: todo corre contenido en un contenedor reproducible.
-**Stack:** Docker, web, MCP
+**Qué es:** Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado.
+**Stack:** Docker; recursos para navegador; clave de acceso propia; cliente MCP opcional
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El contenedor básico no necesita LLM; equipo, hosting y modelos del agente se pagan o configuran aparte
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. Expone MCP en /mcp; sin SANDBOX_API_KEY los servicios quedan abiertos y el ejemplo usa seccomp unconfined, por lo que no es una garantía absoluta de aislamiento
+- Coste: Sin pago a un modelo en la ruta básica. El contenedor básico no necesita LLM; equipo, hosting y modelos del agente se pagan o configuran aparte
+- Equipo: Preparación según la ruta elegida. Docker; recursos para navegador; clave de acceso propia; cliente MCP opcional
 **Repo:** https://github.com/agent-infra/sandbox
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/agent-infra/sandbox/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres aislar la ejecución de agentes y reproducibilidad
-**Evita si:** te basta correr local sin sandbox o no puedes asumir el overhead de Docker
+```
+# Recommended: Enable API Key authentication (protects all services: API, JupyterLab, VNC)
+# - Supports three methods: X-AIO-API-Key header, Authorization: Bearer header, ?api_key= query parameter
+# - Without SANDBOX_API_KEY, services remain open (backward compatible)
+docker run --security-opt seccomp=unconfined --rm -it \
+  -e SANDBOX_API_KEY=your-secret-key \
+  -p 127.0.0.1:8080:8080 ghcr.io/agent-infra/sandbox:latest
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Probar herramientas de un agente en un contenedor; Consultar una interfaz de navegador aislada
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Arranca el contenedor limitado a loopback y consulta el contexto o una captura antes de ejecutar comandos
+**Qué comprobar:** Puedes acceder al entorno autenticado y reconocer navegador, terminal y archivos
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `openhands`, `ecc`
 **Alternativas (elige una):** `nemoclaw`, `e2b`
 
@@ -339,38 +495,56 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=infra,framework,python
 
 **Qué es:** Capa de ejecución que registra acciones y estado de un agente para permitir reproducir, bifurcar y revisar sus recorridos.
-**Stack:** Python, pyproject.toml
+**Stack:** Python 3.11+; entorno compatible; Claude CLI solo para ejemplo con modelo
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
-- Claude Code: Integración no documentada
+- API de IA: API de IA opcional. El ejemplo offline no necesita API; el ejemplo Claude usa suscripción o clave API y el entorno consume recursos
+- Claude Code: Integración documentada por el proyecto
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La reversibilidad afecta al estado capturado por el runtime y no promete deshacer cualquier efecto externo; la demo offline no es un LLM local
+- Coste: El coste depende del proveedor o la ruta. El ejemplo offline no necesita API; el ejemplo Claude usa suscripción o clave API y el entorno consume recursos
+- Equipo: Preparación según la ruta elegida. Python 3.11+; entorno compatible; Claude CLI solo para ejemplo con modelo
 **Repo:** https://github.com/shepherd-agents/shepherd
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/shepherd-agents/shepherd/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** buscas esta función: Capa de ejecución que registra acciones y estado de un agente para permitir reproducir, bifurcar y revisar sus recorridos.
-**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+```
+pip install shepherd-ai
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar reproducción de ejecuciones; Comparar una traza con un resultado final
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Empieza por Offline Quickstart para observar una traza reversible sin llamar un modelo
+**Qué comprobar:** Puedes inspeccionar estados y bifurcaciones de la demostración
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `supabase`
-role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=infraestructura,server,typescript
+role=platform · exec=local · setup=heavy · mcp=True · prov=— · tags=infraestructura,server,typescript
 
 **Qué es:** Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones.
-**Stack:** TypeScript, package.json
+**Stack:** Proyecto de prueba o entorno local; cuenta para Cloud; cliente MCP opcional
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La base no exige LLM; Cloud, almacenamiento, cómputo y extras tienen planes y cuotas; self-host requiere infraestructura
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. El MCP oficial sirve a clientes compatibles; funciones alojadas, locales y confirmaciones interactivas varían y no deben asumirse idénticas
+- Coste: El coste depende del proveedor o la ruta. La base no exige LLM; Cloud, almacenamiento, cómputo y extras tienen planes y cuotas; self-host requiere infraestructura
+- Equipo: Preparación según la ruta elegida. Proyecto de prueba o entorno local; cuenta para Cloud; cliente MCP opcional
 **Repo:** https://github.com/supabase/supabase
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/supabase/supabase/blob/master/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://supabase.com/docs/guides/getting-started
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un backend para una web; Conectar un agente a un esquema de prueba
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea datos ficticios en un proyecto de desarrollo y consulta su estructura con permisos de solo lectura
+**Qué comprobar:** Puedes comprobar tablas y acceso sin tocar datos de producción
+Revisión documental individual; instalación no ejecutada por Alexandría.

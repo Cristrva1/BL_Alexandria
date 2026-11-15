@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web. | Librería de gráficos para React construida con D3, declarativa y componible. |
 | ⭐ Estrellas | 67.8k | 27.7k |
-| Elígelo si… | quieres gráficos simples sin aprender una librería compleja | tu app es React y quieres gráficos declarativos |
-| Evítalo si… | necesitas visualizaciones a medida; mira `d3` | no usas React; mira `chart-js` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Añadir gráficos a una página sencilla; Comparar resultados por periodo | Tu objetivo encaja con estos ejemplos: Visualizar una serie de ventas; Comparar categorías en un dashboard React |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
 | Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | MIT |
-| Instalación | `npm i chart.js` | `npm i recharts` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **Chart.js** si quieres gráficos simples sin aprender una librería compleja.
-- Elige **Recharts** si tu app es React y quieres gráficos declarativos.
+- Elige **Chart.js** si Tu objetivo encaja con estos ejemplos: Añadir gráficos a una página sencilla; Comparar resultados por periodo.
+- Elige **Recharts** si Tu objetivo encaja con estos ejemplos: Visualizar una serie de ventas; Comparar categorías en un dashboard React.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

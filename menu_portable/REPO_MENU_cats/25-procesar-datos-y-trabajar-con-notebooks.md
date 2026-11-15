@@ -6,232 +6,331 @@
 ## `awesome-bigdata`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=data
 
-**Qué es:** Resuelve el "qué uso para X a escala": un panorama del stack de datos grandes en un solo vistazo.
-**Stack:** Markdown
+**Qué es:** Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.
+**Stack:** Navegador; problema de datos definido
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El directorio no usa API; cada proyecto o servicio tiene coste, licencia y requisitos propios
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo.
-- Coste: Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. No se instala la colección entera ni se hereda la compatibilidad de sus enlaces
+- Coste: Sin pago a un modelo en la ruta básica. El directorio no usa API; cada proyecto o servicio tiene coste, licencia y requisitos propios
+- Equipo: Preparación según la ruta elegida. Navegador; problema de datos definido
 **Repo:** https://github.com/oxnr/awesome-bigdata
 
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** diseñas pipelines de datos grandes y necesitas descubrir el ecosistema
-**Evita si:** tu proyecto es pequeño y no justifica herramientas de big data
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Busca una herramienta de streaming y otra de almacenamiento y compara qué función resuelve cada una
+**Qué comprobar:** Puedes elegir candidatos complementarios
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `awesome-dataviz`
 
 ## `bigdata`
 role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=datos,java
 
-**Qué es:** Colección educativa de proyectos de datos con ejercicios de Hive, HDFS, Spark, HBase y sistemas de recomendación. Las carpetas desarrollan problemas de ingestión, análisis y procesamiento distribuido de datos.
-**Stack:** Java
+**Qué es:** Colección educativa de proyectos de datos con ejercicios de Hive, HDFS, Spark, HBase y sistemas de recomendación.
+**Stack:** Navegador; Java y ecosistema de datos según subproyecto; datos de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No requiere API de IA por su función básica; clústeres, servidores y almacenamiento tienen costes propios
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo.
-- Coste: Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. El README raíz es mínimo; la estructura confirma proyectos separados y no una instalación integral guiada o compatibilidad con agentes de código
+- Coste: Sin pago a un modelo en la ruta básica. No requiere API de IA por su función básica; clústeres, servidores y almacenamiento tienen costes propios
+- Equipo: Preparación según la ruta elegida. Navegador; Java y ecosistema de datos según subproyecto; datos de prueba
 **Repo:** https://github.com/monsonlee/BigData
 
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** quieres estudiar ejemplos prácticos del ecosistema de big data
-**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar migración a Hive; Explorar ejemplos de Spark y HBase
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Elige Project3 y dibuja el traslado de datos de MySQL a Hive antes de preparar los servicios
+**Qué comprobar:** Puedes identificar origen, destino y transformación
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `dash`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=automation,ui,python
 
-**Qué es:** Cubre el caso de dashboards productivos en Python sin salir del lenguaje.
-**Stack:** Python, Plotly, Flask, web
+**Qué es:** Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con componentes de UI reactivos.
+**Stack:** Python; entorno de desarrollo; datos de muestra
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Dash OSS no exige API de IA; Dash Enterprise, hosting y fuentes de datos son independientes
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Es un framework Python; el README mezcla ejemplos OSS y funciones Enterprise que no vienen todas con el paquete básico
+- Coste: El coste depende del proveedor o la ruta. Dash OSS no exige API de IA; Dash Enterprise, hosting y fuentes de datos son independientes
+- Equipo: Preparación según la ruta elegida. Python; entorno de desarrollo; datos de muestra
 **Repo:** https://github.com/plotly/dash
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/plotly/dash/blob/dev/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://dash.plotly.com/getting-started
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres dashboards productivos en Python con control del frontend
-**Evita si:** prefieres prototipos ultrarrápidos (streamlit)
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear un tablero interactivo; Comparar escenarios con controles
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Sigue la app inicial y conecta un selector a un gráfico pequeño
+**Qué comprobar:** Puedes comprobar qué callback cambia la figura
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `streamlit`, `echarts`
 
 ## `data-science-ipython-notebooks`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=data,python
 
-**Qué es:** Resuelve el "aprender DS con ejemplos reales" sin tener que montarlos tú desde cero.
-**Stack:** Python, Jupyter
+**Qué es:** Colección educativa histórica de notebooks de datos y machine learning; las dependencias pueden requerir adaptación.
+**Stack:** Navegador para lectura; Python y dependencias históricas para ejecutar
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Lectura libre; nube y cómputo opcionales tienen sus costes
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo.
-- Coste: Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Colección histórica con tecnologías y versiones antiguas; listo para leer no equivale a ejecutable sin adaptación en un entorno actual
+- Coste: Sin pago a un modelo en la ruta básica. Lectura libre; nube y cómputo opcionales tienen sus costes
+- Equipo: Preparación según la ruta elegida. Navegador para lectura; Python y dependencias históricas para ejecutar
 **Repo:** https://github.com/donnemartin/data-science-ipython-notebooks
 
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** estudias/consultas DS con ejemplos ejecutables
-**Evita si:** buscas una librería, no ejemplos, o necesitas material actualizado a las versiones más recientes
+**Elige si:** Tu objetivo encaja con estos ejemplos: Aprender análisis exploratorio; Estudiar ejemplos de redes neuronales
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Abre un notebook introductorio de pandas y revisa entrada, transformación y tabla resultante
+**Qué comprobar:** Puedes seguir una operación antes de preparar un entorno
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `dash`, `streamlit`
 
 ## `duckdb`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=data,analytics,cpp
 
-**Qué es:** El "SQLite de la analítica": sin servidor, embebida en Python, R o Node, y capaz de procesar millones de filas en segundos.
-**Stack:** C++
+**Qué es:** Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL.
+**Stack:** CLI o biblioteca para tu sistema; CSV pequeño
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No usa LLM ni API de IA; servicios Cloud o almacenamiento remoto tienen sus condiciones
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Para usar DuckDB instala su CLI o paquete; CMake y compilador del README son para desarrollar el motor
+- Coste: Sin pago a un modelo en la ruta básica. No usa LLM ni API de IA; servicios Cloud o almacenamiento remoto tienen sus condiciones
+- Equipo: Preparación según la ruta elegida. CLI o biblioteca para tu sistema; CSV pequeño
 **Repo:** https://github.com/duckdb/duckdb
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/duckdb/duckdb/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://duckdb.org/docs/installation/
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres SQL analítico rápido sin montar servidores
-**Evita si:** necesitas una base transaccional multiusuario; usa PostgreSQL
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar ventas de muestra; Consultar Parquet sin desplegar un servidor
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Abre un CSV ficticio y consulta el total de registros y una suma por categoría
+**Qué comprobar:** Puedes comparar el resultado con las filas originales
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `marimo`, `superset`
 **Alternativas (elige una):** `polars`
 
 ## `globalbuildingatlas`
 role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=datos,python
 
-**Qué es:** Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. Publica distintas capas geoespaciales y herramientas para estimar alturas y construir representaciones de edificios.
-**Stack:** Python
+**Qué es:** Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1.
+**Stack:** Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No usa API de IA para consultar datos; descarga, almacenamiento y procesamiento tienen costes
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo.
-- Coste: Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial
+- Coste: Sin pago a un modelo en la ruta básica. No usa API de IA para consultar datos; descarga, almacenamiento y procesamiento tienen costes
+- Equipo: Preparación según la ruta elegida. Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa
 **Repo:** https://github.com/zhu-xlab/GlobalBuildingAtlas
 
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** necesitas geometría de edificios para análisis territorial o visualización urbana
-**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar edificios en un GIS; Preparar una escena urbana de prueba
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Selecciona una zona y distingue polígonos, alturas y LoD1 antes de descargar una capa
+**Qué comprobar:** Puedes identificar formato, licencia y escala del dato
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `three.js`
 
 ## `gradio`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,python
 
-**Qué es:** Envuelve una función Python en una interfaz web con entradas y salidas de texto, imagen, audio o chat. Base de Hugging Face Spaces.
-**Stack:** Python, Svelte
+**Qué es:** Librería Python para crear y compartir apps web de modelos de ML en minutos.
+**Stack:** Python 3.10+; función o modelo de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: API de IA opcional. La interfaz básica no necesita API; modelo, servicio y alojamiento elegidos pueden cobrar
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Antigravity: Dentro del agente: skills o instrucciones
+- Modelos locales: Modelo local no documentado. Incluye skills para agentes compatibles con .agents y ruta Claude; una URL de compartir expone la app y no sustituye autenticación o alojamiento de producción
+- Coste: El coste depende del proveedor o la ruta. La interfaz básica no necesita API; modelo, servicio y alojamiento elegidos pueden cobrar
+- Equipo: Preparación según la ruta elegida. Python 3.10+; función o modelo de prueba
 **Repo:** https://github.com/gradio-app/gradio
 
-**Instalación** [+]: `pip install --upgrade gradio`
+**Instalación** [+]:
+
+```
+pip install --upgrade gradio
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres una demo web de tu modelo rápido
-**Evita si:** construyes una app de datos con varias páginas; mira `streamlit`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear una demo de un modelo; Preparar una herramienta interna de texto
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea una interfaz para una función simple de texto y pruébala localmente antes de compartir un enlace
+**Qué comprobar:** Puedes ver la relación entre entrada, función y salida
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `transformers`
 **Alternativas (elige una):** `streamlit`
 
 ## `hudi`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=datos,apacheflink,apachehudi,apachespark,bigdata,data-integration,datalake,hudi
 
-**Qué es:** Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. Añade índices, actualizaciones y procesamiento incremental a tablas de un lago de datos.
-**Stack:** Java, Docker
+**Qué es:** Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos.
+**Stack:** Java y Spark o Flink compatibles; almacenamiento de prueba; datos pequeños
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita API de IA; motores, almacenamiento y nube se presupuestan aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Los comandos para compilar snapshots son para desarrollo; el quickstart de la versión elegida debe coincidir con Spark o Flink instalados
+- Coste: Sin pago a un modelo en la ruta básica. No necesita API de IA; motores, almacenamiento y nube se presupuestan aparte
+- Equipo: Preparación según la ruta elegida. Java y Spark o Flink compatibles; almacenamiento de prueba; datos pequeños
 **Repo:** https://github.com/apache/hudi
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/apache/hudi/blob/master/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://hudi.apache.org/docs/quick-start-guide.html
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** necesitas gestionar cambios y cargas incrementales en un data lake
-**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un lakehouse; Preparar ingestión incremental
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Inserta registros ficticios y actualiza uno para comparar estado y consulta incremental
+**Qué comprobar:** Puedes comprobar la actualización sin reconstruir manualmente toda la tabla
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `marimo`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notebooks,data,python
 
-**Qué es:** Al cambiar una celda se recalculan las dependientes, evitando estados ocultos. Incluye SQL, gráficos interactivos y asistente de IA.
-**Stack:** Python, TypeScript
+**Qué es:** Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app.
+**Stack:** Python; entorno de notebook; CSV pequeño; modelo solo para funciones AI
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: API de IA opcional. Notebook básico sin API; AI opcional con claves o modelos locales y marimo pair con su agente
+- Claude Code: Integración documentada por el proyecto
+- Codex: Integración documentada por el proyecto
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Documenta pair con Claude Code y Codex; usar un notebook local no implica que el asistente AI también sea local
+- Coste: El coste depende del proveedor o la ruta. Notebook básico sin API; AI opcional con claves o modelos locales y marimo pair con su agente
+- Equipo: Preparación según la ruta elegida. Python; entorno de notebook; CSV pequeño; modelo solo para funciones AI
 **Repo:** https://github.com/marimo-team/marimo
 
-**Instalación** [+]: `pip install marimo`
+**Instalación** [+]:
+
+```
+pip install marimo && marimo tutorial intro
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres notebooks reproducibles y versionables
-**Evita si:** dependes de extensiones de Jupyter
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar datos en un notebook; Convertir un análisis en una app
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Completa el tutorial intro y modifica una variable para ver qué celdas se recalculan
+**Qué comprobar:** Puedes reconocer dependencias reactivas y el archivo Python guardado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `duckdb`, `polars`
 
 ## `polars`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=data,python,rust
 
-**Qué es:** API expresiva con ejecución perezosa y paralela para procesar datos grandes en un solo equipo.
-**Stack:** Rust, Python
+**Qué es:** Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares.
+**Stack:** Python; CSV pequeño; memoria para los datos
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Sin API de IA; cómputo y alojamiento propios
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Es un motor de consultas y DataFrames, no una app de BI; mayor velocidad que otra biblioteca depende del trabajo y configuración
+- Coste: Sin pago a un modelo en la ruta básica. Sin API de IA; cómputo y alojamiento propios
+- Equipo: Preparación según la ruta elegida. Python; CSV pequeño; memoria para los datos
 **Repo:** https://github.com/pola-rs/polars
 
-**Instalación** [+]: `pip install polars`
+**Instalación** [+]:
+
+```
+pip install polars
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** tu análisis con pandas es lento
-**Evita si:** prefieres SQL; mira `duckdb`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Transformar tablas; Preparar datos antes de un dashboard
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Lee un archivo y agrupa por una columna para sumar otra
+**Qué comprobar:** Puedes contrastar el resultado con una muestra calculada a mano
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `marimo`
 **Alternativas (elige una):** `duckdb`
 
 ## `streamlit`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,dataviz,python
 
-**Qué es:** Convierte un script de datos en una app web interactiva casi al instante.
-**Stack:** Python
+**Qué es:** Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS.
+**Stack:** Python; script pequeño; datos ficticios
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: API de IA opcional. La app básica no necesita LLM; AI, hosting y fuentes de datos tienen costes separados
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Antigravity: Dentro del agente: skills o instrucciones
+- Modelos locales: Modelo local no documentado. streamlit skills instala instrucciones para Claude Code y agentes que leen .agents; no convierte la suscripción del agente en backend de cualquier app creada
+- Coste: El coste depende del proveedor o la ruta. La app básica no necesita LLM; AI, hosting y fuentes de datos tienen costes separados
+- Equipo: Preparación según la ruta elegida. Python; script pequeño; datos ficticios
 **Repo:** https://github.com/streamlit/streamlit
 
-**Instalación** [+]: `pip install streamlit`
+**Instalación** [+]:
+
+```
+pip install streamlit
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres una UI de datos al vuelo y prototipos rápidos
-**Evita si:** necesitas una app productiva con control fino del frontend (dash)
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un dashboard de ventas ficticias; Explorar un simulador de demanda
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea una app con un control y una tabla de ejemplo y comprueba que la interacción actualiza la vista
+**Qué comprobar:** Puedes identificar script, estado y resultado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `dash`, `data-science-ipython-notebooks`
 **Alternativas (elige una):** `gradio`

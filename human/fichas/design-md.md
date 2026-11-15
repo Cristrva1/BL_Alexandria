@@ -2,13 +2,13 @@
 
 # 📐 design.md
 
-> Formato para describir una identidad visual a agentes de código con tokens YAML y prosa.
+> Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 28.9k | Apache-2.0 | TypeScript | 2026-06-24 |
 
-**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
+**Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
 ## Acceso, coste y equipo
 
@@ -16,38 +16,48 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La especificación y CLI básicos no requieren modelo ni API; usar un agente consume su plan |
+| Claude Code | Referencia para la herramienta; no es una integración |
+| Codex | Referencia para la herramienta; no es una integración |
+| Antigravity | Referencia para la herramienta; no es una integración |
+| Modelos locales | La función básica no necesita un modelo. Es un formato y conjunto de utilidades, no un skill específico de Claude Code, Codex o Antigravity; debe cargarse como contexto según el agente |
+| Coste | Sin pago a un modelo en la ruta básica. La especificación y CLI básicos no requieren modelo ni API; usar un agente consume su plan |
+| Equipo | Preparación según la ruta elegida. Node para CLI; archivo DESIGN.md de prueba |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+Es un formato y conjunto de utilidades, no un skill específico de Claude Code, Codex o Antigravity; debe cargarse como contexto según el agente
 
 ## Qué puedes hacer con él
 
-Resuelve la inconsistencia de marca cuando varias personas o agentes tocan la UI.
+Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones.
 
 ## Por qué destaca
 
-Propuesta de Google Labs que aporta no solo los valores sino el "por qué" y cómo aplicarlos, algo que un simple archivo de tokens no transmite. Al ser un formato declarativo, funciona con cualquier agente que lea Markdown.
+Usos propuestos: Documentar una identidad visual; Comparar dos versiones de tokens.
 
 ## Cómo funciona
 
-Archivo Markdown/YAML que el agente lee como contexto persistente, combinando tokens de diseño (color, tipografía, espaciado) con guías en prosa sobre cuándo usarlos.
+Es un formato y conjunto de utilidades, no un skill específico de Claude Code, Codex o Antigravity; debe cargarse como contexto según el agente
 
 ## Cómo empezar
 
-Se configura en tu agente. [Entender los términos](../vocabulario.md).
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Node para CLI
+- archivo DESIGN.md de prueba
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+npx @google/design.md lint DESIGN.md
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/google-labs-code/design.md/blob/main/README.md)
 
@@ -55,21 +65,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar design.md para mi objetivo y necesito pasos guiados. Lee https://github.com/google-labs-code/design.md/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Valida un archivo de identidad y corrige una referencia de token rota.
+
+**Qué comprobar:** Puedes revisar el JSON de hallazgos y repetir la validación.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Dar al agente un sistema de diseño persistente
-- Mantener coherencia de marca entre varios contribuyentes
-- Onboarding rápido de estilo para nuevos agentes
+- Documentar una identidad visual
+- Comparar dos versiones de tokens
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres consistencia de marca con IA y usas agentes para UI | no usas agentes para generar código de UI |
+| Tu objetivo encaja con estos ejemplos: Documentar una identidad visual; Comparar dos versiones de tokens | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Es un formato y conjunto de utilidades, no un skill específico de Claude Code, Codex o Antigravity; debe cargarse como contexto según el agente
 
 ## Stack y modelos
 
-- **Stack:** Markdown/YAML
+- **Stack:** Node para CLI; archivo DESIGN.md de prueba
 - **Etiquetas:** `skills` `design` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -77,7 +96,7 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [impeccable](impeccable.md) | 110k | Guía de diseño para agentes de código (1 skill, 23 comandos, iteración en browser y 44 detectores de "tells" de UI por IA) que empuja al agente hacia frontends con criterio. |
+| [impeccable](impeccable.md) | 110k | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. |
 
 ## Enlaces
 
@@ -86,7 +105,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/google-labs-code/design.md/blob/main/README.md)
 

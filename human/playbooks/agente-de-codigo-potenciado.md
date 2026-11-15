@@ -20,12 +20,12 @@ flowchart LR
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [Claude Code](../fichas/claude-code.md) | Agente de código en la terminal (o Codex / opencode) | 156k | `curl -fsSL https://claude.ai/install.sh \| bash` |
-| 2 | [superpowers](../fichas/superpowers.md) | Metodología: planificar, probar y revisar antes de dar por hecho | 318k | Clona el repo y copia las skills e instrucciones a tu directorio de skills del asistent… |
-| 3 | [Context7](../fichas/context7.md) | Documentación actualizada de librerías vía MCP | 64.8k | `npx -y @upstash/context7-mcp` |
-| 4 | [Serena](../fichas/serena.md) | Búsqueda y edición semántica del código vía MCP | 31.4k | `uvx --from git+https://github.com/oraios/serena serena start-mcp-server` |
-| 5 | [claude-mem](../fichas/claude-mem.md) | Memoria persistente entre sesiones | 117k | `/plugin marketplace add thedotmack/claude-mem` |
-| 6 | [SkillSpector](../fichas/skillspector.md) | Audita skills de terceros antes de instalarlas | 26.1k | Clona el repo e instala sus dependencias (Python/Node) según el README; ejecútalo apunt… |
+| 1 | [Claude Code](../fichas/claude-code.md) | Agente de código en la terminal (o Codex / opencode) | 156k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 2 | [superpowers](../fichas/superpowers.md) | Metodología: planificar, probar y revisar antes de dar por hecho | 318k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 3 | [Context7](../fichas/context7.md) | Documentación actualizada de librerías vía MCP | 64.8k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 4 | [Serena](../fichas/serena.md) | Búsqueda y edición semántica del código vía MCP | 31.4k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 5 | [claude-mem](../fichas/claude-mem.md) | Memoria persistente entre sesiones | 117k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 6 | [SkillSpector](../fichas/skillspector.md) | Audita skills de terceros antes de instalarlas | 26.1k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## 🔌 Cómo se conecta
 

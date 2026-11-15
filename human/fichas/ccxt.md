@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 44.9k | MIT | Python | 2026-11-14 |
 
-**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. Datos de mercado, brokers y exchanges pueden exigir cuentas, cuotas, comisiones o fondos. Una simulación o backtest no acredita rentabilidad ni una conexión real lista. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No necesita modelo; comisiones, datos y planes del exchange o servicios tienen costes propios |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. El MCP stdio deja capacidades sensibles como opt-in; instalar la biblioteca no exige habilitar órdenes ni retiros |
+| Coste | El coste depende del proveedor o la ruta. No necesita modelo; comisiones, datos y planes del exchange o servicios tienen costes propios |
+| Equipo | Preparación según la ruta elegida. Node o paquete de tu lenguaje; exchange elegido; credenciales solo para funciones privadas |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+El MCP stdio deja capacidades sensibles como opt-in; instalar la biblioteca no exige habilitar órdenes ni retiros
 
 ## Qué puedes hacer con él
 
 Biblioteca que unifica APIs de exchanges para consultar mercados y desarrollar integraciones de trading.
 
+## Por qué destaca
+
+Usos propuestos: Unificar consultas de varios mercados; Construir una integración de datos de exchange.
+
 ## Cómo funciona
 
-Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.
+El MCP stdio deja capacidades sensibles como opt-in; instalar la biblioteca no exige habilitar órdenes ni retiros
 
 ## Cómo empezar
 
@@ -39,19 +44,21 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
+- Node o paquete de tu lenguaje
+- exchange elegido
+- credenciales solo para funciones privadas
 
-1. Elige un ejemplo de consulta de datos, backtesting o simulación que no envíe órdenes reales.
-2. Prepara datos de prueba y, si el proveedor lo requiere, una cuenta y credenciales de solo lectura; revisa sus cuotas por separado.
-3. Comprueba los resultados y el coste observado. La ejecución con fondos es otra configuración y no se activa como parte de esta primera prueba.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
 
-**Comando de entrada documentado:**
+**Entrada documentada (shell):**
 
-```shell
-pip install ccxt
+```
+npm install ccxt
 ```
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/ccxt/ccxt/blob/master/README.md)
 
@@ -59,21 +66,30 @@ Comando de entrada seleccionado y presente en la fuente revisada; consulta la in
 
 > Quiero usar ccxt para mi objetivo y necesito pasos guiados. Lee https://github.com/ccxt/ccxt/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Consulta mercados públicos y verifica símbolo, precisión y límites sin habilitar trading.
+
+**Qué comprobar:** Puedes contrastar metadatos con la documentación del exchange.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Biblioteca que unifica APIs de exchanges para consultar mercados y desarrollar integraciones de trading.
+- Unificar consultas de varios mercados
+- Construir una integración de datos de exchange
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Biblioteca que unifica APIs de exchanges para consultar mercados y desarrollar integraciones de trading. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| Tu objetivo encaja con estos ejemplos: Unificar consultas de varios mercados; Construir una integración de datos de exchange | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. No se verificó rentabilidad ni operación con fondos. Distingue demostración, backtesting, simulación y conexión real.
+**Limitaciones:** El MCP stdio deja capacidades sensibles como opt-in; instalar la biblioteca no exige habilitar órdenes ni retiros
 
 ## Stack y modelos
 
-- **Stack:** Python, Dockerfile, docker-compose.yml, package.json, pyproject.toml
+- **Stack:** Node o paquete de tu lenguaje; exchange elegido; credenciales solo para funciones privadas
 - **Etiquetas:** `bots` `library` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -84,7 +100,9 @@ Comando de entrada seleccionado y presente en la fuente revisada; consulta la in
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ccxt/ccxt/blob/master/README.md)
 

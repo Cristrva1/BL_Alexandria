@@ -16,56 +16,73 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Los componentes del repositorio son MIT; productos o plantillas comerciales asociados tienen términos propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Copiar un componente puede añadir dependencias; verifica qué se incorpora antes de instalar varios efectos |
+| Coste | Sin pago a un modelo en la ruta básica. Los componentes del repositorio son MIT; productos o plantillas comerciales asociados tienen términos propios |
+| Equipo | Preparación según la ruta elegida. React; dependencias del componente elegido; proyecto de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Copiar un componente puede añadir dependencias; verifica qué se incorpora antes de instalar varios efectos
 
 ## Qué puedes hacer con él
 
-Apunta al impacto visual más que a la accesibilidad estricta.
+Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio.
 
 ## Por qué destaca
 
-Prioriza el impacto visual con piezas vistosas listas para usar, popular en landings y portfolios que buscan diferenciarse rápido. Es compatible con el registro de shadcn, así que se integra en el mismo flujo.
+Usos propuestos: Prototipar una sección de landing; Añadir una interacción de presentación.
 
 ## Cómo funciona
 
-Componentes React/Next.js sobre Tailwind y motion que se copian o instalan vía CLI compatible con shadcn (`npx shadcn add`).
+Copiar un componente puede añadir dependencias; verifica qué se incorpora antes de instalar varios efectos
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/magicuidesign/magicui/blob/main/README.md)
+- React
+- dependencias del componente elegido
+- proyecto de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://magicui.design/docs)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar magicui para mi objetivo y necesito pasos guiados. Lee https://github.com/magicuidesign/magicui/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar magicui para mi objetivo y necesito pasos guiados. Lee https://magicui.design/docs. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Añade un componente visual pequeño y comprueba el diseño en móvil y con movimiento reducido.
+
+**Qué comprobar:** El contenido sigue siendo legible y el componente no desborda.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Landing o dashboard con buen acabado desde el inicio
-- Prototipado vistoso para demos
-- Secciones hero con animaciones de impacto
+- Prototipar una sección de landing
+- Añadir una interacción de presentación
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| priorizas estética y velocidad | necesitas accesibilidad estricta (heroui) |
+| Tu objetivo encaja con estos ejemplos: Prototipar una sección de landing; Añadir una interacción de presentación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Copiar un componente puede añadir dependencias; verifica qué se incorpora antes de instalar varios efectos
 
 ## Stack y modelos
 
-- **Stack:** Node.js, React/Next.js
+- **Stack:** React; dependencias del componente elegido; proyecto de prueba
 - **Etiquetas:** `ui`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,7 +106,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/magicuidesign/magicui/blob/main/README.md)
 

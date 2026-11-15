@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo. | Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. |
 | ⭐ Estrellas | 42k | 16.9k |
-| Elígelo si… | quieres NotebookLM privado y sin cuotas | quieres un NotebookLM propio y con más fuentes |
-| Evítalo si… | prefieres el NotebookLM real automatizado (notebooklm-py) | solo quieres el NotebookLM de Google por código; mira `notebooklm-py` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Estudiar documentos en una libreta; Generar un resumen o audio sobre material propio | Tu objetivo encaja con estos ejemplos: Revisar un contrato de prueba con comentarios; Extraer datos de un archivo Excel ficticio |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🔀 híbrido |
-| API de IA | API de IA opcional | Depende de la ruta elegida |
+| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
-| Modelos locales | Modelos locales documentados | Modelo local no documentado |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | MIT | Apache-2.0 |
-| Instalación | `docker` (imagen oficial) o `pip` más Ollama para los modelos locales. Requiere Ollama… | Self-host con Docker Compose siguiendo la guía del repo. |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## Regla práctica
 
-- Elige **open-notebook** si quieres NotebookLM privado y sin cuotas.
-- Elige **SurfSense** si quieres un NotebookLM propio y con más fuentes.
+- Elige **open-notebook** si Tu objetivo encaja con estos ejemplos: Estudiar documentos en una libreta; Generar un resumen o audio sobre material propio.
+- Elige **SurfSense** si Tu objetivo encaja con estos ejemplos: Revisar un contrato de prueba con comentarios; Extraer datos de un archivo Excel ficticio.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

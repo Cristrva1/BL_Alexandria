@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El directorio no usa API; cada proyecto o servicio tiene coste, licencia y requisitos propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. No se instala la colección entera ni se hereda la compatibilidad de sus enlaces |
+| Coste | Sin pago a un modelo en la ruta básica. El directorio no usa API; cada proyecto o servicio tiene coste, licencia y requisitos propios |
+| Equipo | Preparación según la ruta elegida. Navegador; problema de datos definido |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+No se instala la colección entera ni se hereda la compatibilidad de sus enlaces
 
 ## Qué puedes hacer con él
 
-Resuelve el "qué uso para X a escala": un panorama del stack de datos grandes en un solo vistazo.
+Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.
 
 ## Por qué destaca
 
-Lista "awesome" ampliamente referenciada que ofrece un panorama completo del stack de datos grandes en un solo vistazo. Su organización por categorías (ingesta, almacenamiento, procesamiento, streaming) facilita comparar alternativas sin navegar decenas de sitios.
+Usos propuestos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura.
 
 ## Cómo funciona
 
-Es un documento Markdown con enlaces clasificados por categoría; se consulta directamente en GitHub sin instalar nada, y cada enlace lleva al repo/docs de la herramienta.
+No se instala la colección entera ni se hereda la compatibilidad de sus enlaces
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- problema de datos definido
+
+1. Busca una herramienta de streaming y otra de almacenamiento y compara qué función resuelve cada una.
+2. Comprueba: Puedes elegir candidatos complementarios.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/oxnr/awesome-bigdata/blob/master/README.md)
 
@@ -51,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar awesome-bigdata para mi objetivo y necesito pasos guiados. Lee https://github.com/oxnr/awesome-bigdata/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Busca una herramienta de streaming y otra de almacenamiento y compara qué función resuelve cada una.
+
+**Qué comprobar:** Puedes elegir candidatos complementarios.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Elegir stack de datos a escala
-- Descubrir herramientas por categoría
-- Comparar alternativas de ingesta/almacenamiento/procesamiento
+- Explorar el ecosistema de datos
+- Comparar motores antes de montar infraestructura
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| diseñas pipelines de datos grandes y necesitas descubrir el ecosistema | tu proyecto es pequeño y no justifica herramientas de big data |
+| Tu objetivo encaja con estos ejemplos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** No se instala la colección entera ni se hereda la compatibilidad de sus enlaces
 
 ## Stack y modelos
 
-- **Stack:** Markdown
+- **Stack:** Navegador; problema de datos definido
 - **Etiquetas:** `data`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -82,7 +98,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/oxnr/awesome-bigdata/blob/master/README.md)
 

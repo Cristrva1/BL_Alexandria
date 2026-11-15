@@ -16,56 +16,72 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No usa LLM ni API de IA; servicios Cloud o almacenamiento remoto tienen sus condiciones |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Para usar DuckDB instala su CLI o paquete; CMake y compilador del README son para desarrollar el motor |
+| Coste | Sin pago a un modelo en la ruta básica. No usa LLM ni API de IA; servicios Cloud o almacenamiento remoto tienen sus condiciones |
+| Equipo | Preparación según la ruta elegida. CLI o biblioteca para tu sistema; CSV pequeño |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Para usar DuckDB instala su CLI o paquete; CMake y compilador del README son para desarrollar el motor
 
 ## Qué puedes hacer con él
 
-El "SQLite de la analítica": sin servidor, embebida en Python, R o Node, y capaz de procesar millones de filas en segundos.
+Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL.
 
 ## Por qué destaca
 
-Rendimiento excelente sin infraestructura y SQL directo sobre archivos.
+Usos propuestos: Explorar ventas de muestra; Consultar Parquet sin desplegar un servidor.
 
 ## Cómo funciona
 
-Motor columnar vectorizado que lee formatos de archivo directamente y ejecuta SQL en paralelo.
+Para usar DuckDB instala su CLI o paquete; CMake y compilador del README son para desarrollar el motor
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/duckdb/duckdb/blob/main/README.md)
+- CLI o biblioteca para tu sistema
+- CSV pequeño
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://duckdb.org/docs/installation/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar DuckDB para mi objetivo y necesito pasos guiados. Lee https://github.com/duckdb/duckdb/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar DuckDB para mi objetivo y necesito pasos guiados. Lee https://duckdb.org/docs/installation/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Abre un CSV ficticio y consulta el total de registros y una suma por categoría.
+
+**Qué comprobar:** Puedes comparar el resultado con las filas originales.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Analizar CSV grandes con SQL
-- Pipelines de datos locales
-- Backend analítico de dashboards
+- Explorar ventas de muestra
+- Consultar Parquet sin desplegar un servidor
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres SQL analítico rápido sin montar servidores | necesitas una base transaccional multiusuario; usa PostgreSQL |
+| Tu objetivo encaja con estos ejemplos: Explorar ventas de muestra; Consultar Parquet sin desplegar un servidor | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Para usar DuckDB instala su CLI o paquete; CMake y compilador del README son para desarrollar el motor
 
 ## Stack y modelos
 
-- **Stack:** C++
+- **Stack:** CLI o biblioteca para tu sistema; CSV pequeño
 - **Etiquetas:** `data` `analytics` `cpp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -80,7 +96,7 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Polars](polars.md) | 40.3k | Librería de DataFrames escrita en Rust, mucho más rápida que pandas. |
+| [Polars](polars.md) | 40.3k | Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares. |
 
 ## Enlaces
 
@@ -90,7 +106,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/duckdb/duckdb/blob/main/README.md)
 

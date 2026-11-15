@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | API de IA opcional. Los recursos son públicos; Colab, GPU, nube y APIs pueden tener límites o coste |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Es un mapa de aprendizaje con recursos externos y prácticas locales; no existe una instalación única para toda la ruta |
+| Coste | El coste depende del proveedor o la ruta. Los recursos son públicos; Colab, GPU, nube y APIs pueden tener límites o coste |
+| Equipo | Preparación según la ruta elegida. Navegador; Python y cómputo al practicar |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es un mapa de aprendizaje con recursos externos y prácticas locales; no existe una instalación única para toda la ruta
 
 ## Qué puedes hacer con él
 
-Tres rutas: fundamentos, científico de LLM (entrenar y afinar) e ingeniero de LLM (apps y despliegue), con recursos y notebooks ejecutables.
+Curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción.
 
 ## Por qué destaca
 
-Ruta de aprendizaje muy clara y notebooks prácticos de fine-tuning y fusión de modelos.
+Usos propuestos: Crear un plan de aprendizaje de LLM; Estudiar cuantización GGUF.
 
 ## Cómo funciona
 
-Guías en Markdown con enlaces a recursos y notebooks de Colab listos para ejecutar.
+Es un mapa de aprendizaje con recursos externos y prácticas locales; no existe una instalación única para toda la ruta
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- Python y cómputo al practicar
+
+1. Recorre la ruta de fundamentos y elige el notebook de cuantización solo después de revisar sus requisitos.
+2. Comprueba: Puedes ubicar la diferencia entre entrenar, cuantizar y servir un modelo.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/mlabonne/llm-course/blob/main/README.md)
 
@@ -51,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar LLM Course para mi objetivo y necesito pasos guiados. Lee https://github.com/mlabonne/llm-course/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Recorre la ruta de fundamentos y elige el notebook de cuantización solo después de revisar sus requisitos.
+
+**Qué comprobar:** Puedes ubicar la diferencia entre entrenar, cuantizar y servir un modelo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Aprender a afinar modelos
-- Planear la formación de un equipo
-- Notebooks de cuantización
+- Crear un plan de aprendizaje de LLM
+- Estudiar cuantización GGUF
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres una ruta completa para aprender LLM | buscas un curso introductorio de apps; mira `generative-ai-for-beginners` |
+| Tu objetivo encaja con estos ejemplos: Crear un plan de aprendizaje de LLM; Estudiar cuantización GGUF | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Es un mapa de aprendizaje con recursos externos y prácticas locales; no existe una instalación única para toda la ruta
 
 ## Stack y modelos
 
-- **Stack:** Markdown, Jupyter, Python
+- **Stack:** Navegador; Python y cómputo al practicar
 - **Etiquetas:** `learning` `training` `notebooks`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -73,7 +89,7 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Unsloth](unsloth.md) | 79.5k | Fine-tuning y ejecución local de LLM hasta 2 veces más rápido y con mucha menos memoria, ahora con UI. |
+| [Unsloth](unsloth.md) | 79.5k | App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcionales. |
 | [LLaMA-Factory](llama-factory.md) | 76k | Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código. |
 
 ## Alternativas (elige una)
@@ -90,7 +106,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/mlabonne/llm-course/blob/main/README.md)
 

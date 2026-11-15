@@ -2,7 +2,7 @@
 
 # 🔬 nanoGPT
 
-> Implementación mínima y limpia de Andrej Karpathy para entrenar y afinar GPTs, pensada para que el código quepa en la cabeza y se entienda de extremo a extremo.
+> Implementación educativa histórica de GPT en PyTorch, declarada obsoleta por su autor; remite a nanochat.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,34 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No exige API; el entrenamiento consume equipo, tiempo y posiblemente GPU de alquiler |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. El autor declara nanoGPT antiguo y obsoleto y remite a nanochat; consérvalo como referencia educativa y no como recomendación actual por defecto |
+| Coste | Sin pago a un modelo en la ruta básica. No exige API; el entrenamiento consume equipo, tiempo y posiblemente GPU de alquiler |
+| Equipo | Preparación según la ruta elegida. Python y PyTorch; texto de entrenamiento; CPU o GPU con configuración adecuada |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El autor declara nanoGPT antiguo y obsoleto y remite a nanochat; consérvalo como referencia educativa y no como recomendación actual por defecto
 
 ## Qué puedes hacer con él
 
-Resuelve la opacidad de los frameworks: ves exactamente cómo se entrena un GPT sin capas de abstracción.
+Implementación educativa histórica de GPT en PyTorch, declarada obsoleta por su autor; remite a nanochat.
 
 ## Por qué destaca
 
-Referencia didáctica de Karpathy ampliamente usada para aprender cómo funciona realmente el entrenamiento de un GPT, sin capas de abstracción. Su minimalismo (unos pocos cientos de líneas) lo hace el punto de partida habitual para entender y experimentar.
+Usos propuestos: Comprender un GPT pequeño; Comparar el código histórico con nanochat.
 
 ## Cómo funciona
 
-Define el modelo GPT y su bucle de entrenamiento en PyTorch sobre GPU, reproduciendo resultados tipo GPT-2 con unos pocos cientos de líneas y dependencias mínimas.
+El autor declara nanoGPT antiguo y obsoleto y remite a nanochat; consérvalo como referencia educativa y no como recomendación actual por defecto
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python y PyTorch
+- texto de entrenamiento
+- CPU o GPU con configuración adecuada
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (consulta la sintaxis original):**
+
+```
+pip install torch numpy transformers datasets tiktoken wandb tqdm
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/karpathy/nanoGPT/blob/master/README.md)
 
@@ -51,23 +67,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar nanoGPT para mi objetivo y necesito pasos guiados. Lee https://github.com/karpathy/nanoGPT/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Estudia el ejemplo Shakespeare y revisa cómo cambia la pérdida sin lanzar un entrenamiento grande.
+
+**Qué comprobar:** Puedes localizar preparación de datos, entrenamiento y muestreo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Aprender cómo se entrena un GPT
-- Experimentos pequeños reproducibles
-- Base para afinar modelos propios sobre datos propios
+- Comprender un GPT pequeño
+- Comparar el código histórico con nanochat
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres entender el entrenamiento de un GPT desde cero | solo consumes modelos vía API o necesitas un pipeline de chat completo (nanochat) |
+| Tu objetivo encaja con estos ejemplos: Comprender un GPT pequeño; Comparar el código histórico con nanochat | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Entrenar a escala real exige GPU y tiempo; no es una librería de producción, sino un recurso educativo minimalista.
+**Limitaciones:** El autor declara nanoGPT antiguo y obsoleto y remite a nanochat; consérvalo como referencia educativa y no como recomendación actual por defecto
 
 ## Stack y modelos
 
-- **Stack:** Python, PyTorch, GPU
+- **Stack:** Python y PyTorch; texto de entrenamiento; CPU o GPU con configuración adecuada
 - **Etiquetas:** `learning` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,7 +112,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/karpathy/nanoGPT/blob/master/README.md)
 

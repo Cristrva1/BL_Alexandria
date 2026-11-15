@@ -16,34 +16,49 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El SDK no llama modelos por sí solo; servicios y despliegue se presupuestan aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La rama revisada es v2 con paquetes server y client separados; no mezcles imports de tutoriales v1 |
+| Coste | Sin pago a un modelo en la ruta básica. El SDK no llama modelos por sí solo; servicios y despliegue se presupuestan aparte |
+| Equipo | Preparación según la ruta elegida. Node.js; TypeScript; gestor de paquetes |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La rama revisada es v2 con paquetes server y client separados; no mezcles imports de tutoriales v1
 
 ## Qué puedes hacer con él
 
-Base de la mayoría de servidores MCP en Node.js, con transportes stdio y HTTP.
+SDK oficial de TypeScript para crear servidores y clientes del Model Context Protocol.
 
 ## Por qué destaca
 
-SDK oficial y el más usado para servidores MCP en JavaScript.
+Usos propuestos: Construir un servidor MCP en TypeScript; Crear un cliente que enumere herramientas.
 
 ## Cómo funciona
 
-Clases McpServer y Client gestionan el protocolo; registras herramientas con esquemas Zod.
+La rama revisada es v2 con paquetes server y client separados; no mezcles imports de tutoriales v1
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Node.js
+- TypeScript
+- gestor de paquetes
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+npm install @modelcontextprotocol/server
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/modelcontextprotocol/typescript-sdk/blob/main/README.md)
 
@@ -51,21 +66,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar MCP TypeScript SDK para mi objetivo y necesito pasos guiados. Lee https://github.com/modelcontextprotocol/typescript-sdk/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Sigue el ejemplo v2 para exponer una herramienta y llámala desde Inspector.
+
+**Qué comprobar:** Ves el esquema y una respuesta válida de la herramienta.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Servidor MCP para tu API en Node
-- Clientes MCP en apps web
-- Herramientas para agentes de código
+- Construir un servidor MCP en TypeScript
+- Crear un cliente que enumere herramientas
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| creas servidores MCP en TypeScript | trabajas en Python; mira `fastmcp` |
+| Tu objetivo encaja con estos ejemplos: Construir un servidor MCP en TypeScript; Crear un cliente que enumere herramientas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** La rama revisada es v2 con paquetes server y client separados; no mezcles imports de tutoriales v1
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Node.js, Zod
+- **Stack:** Node.js; TypeScript; gestor de paquetes
 - **Etiquetas:** `mcp` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,7 +113,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/modelcontextprotocol/typescript-sdk/blob/main/README.md)
 

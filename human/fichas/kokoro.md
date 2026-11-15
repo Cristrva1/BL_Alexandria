@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Modelo local Apache sin API de pago; equipo y recursos de voz independientes |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Los ejemplos con !pip y !apt son de notebook y no se pegan sin cambios en PowerShell; selecciona el idioma y sus dependencias |
+| Coste | Sin pago a un modelo en la ruta básica. Modelo local Apache sin API de pago; equipo y recursos de voz independientes |
+| Equipo | Preparación según la ruta elegida. Python; Kokoro y soundfile; espeak-ng según idioma; pesos |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Los ejemplos con !pip y !apt son de notebook y no se pegan sin cambios en PowerShell; selecciona el idioma y sus dependencias
 
 ## Qué puedes hacer con él
 
-Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. Comprueba los idiomas, dependencias de audio y condiciones de la variante que utilices.
+Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles.
 
 ## Por qué destaca
 
-Excelente relación calidad, tamaño y licencia.
+Usos propuestos: Narrar una nota propia; Probar una voz para una demo.
 
 ## Cómo funciona
 
-Un pipeline de síntesis transforma texto en audio usando los pesos y voces seleccionados.
+Los ejemplos con !pip y !apt son de notebook y no se pegan sin cambios en PowerShell; selecciona el idioma y sus dependencias
 
 ## Cómo empezar
 
@@ -43,19 +44,16 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Python, los pesos y las dependencias de audio e idioma de la variante elegida.
+- Python
+- Kokoro y soundfile
+- espeak-ng según idioma
+- pesos
 
-1. Instala la biblioteca y prepara las dependencias que indica su README.
-2. Elige idioma y voz de los ejemplos disponibles.
-3. Sintetiza un texto breve y escucha el resultado antes de generar una narración completa.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-**Comando de entrada documentado:**
-
-```shell
-pip install kokoro
-```
-
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/hexgrad/kokoro/blob/main/README.md)
 
@@ -63,21 +61,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar Kokoro para mi objetivo y necesito pasos guiados. Lee https://github.com/hexgrad/kokoro/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Genera dos frases en español y revisa pronunciación y pausas.
+
+**Qué comprobar:** Puedes localizar el archivo de audio y reconocer voz e idioma seleccionados.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Voz para agentes locales
-- Narración de videos
-- Audiolibros sencillos
+- Narrar una nota propia
+- Probar una voz para una demo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres TTS ligero, rápido y con licencia permisiva | necesitas clonar voces; mira `chatterbox` |
+| Tu objetivo encaja con estos ejemplos: Narrar una nota propia; Probar una voz para una demo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Los ejemplos con !pip y !apt son de notebook y no se pegan sin cambios en PowerShell; selecciona el idioma y sus dependencias
 
 ## Stack y modelos
 
-- **Stack:** Python, PyTorch, JavaScript
+- **Stack:** Python; Kokoro y soundfile; espeak-ng según idioma; pesos
 - **Etiquetas:** `tts` `audio` `local`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -92,7 +99,7 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Chatterbox](chatterbox.md) | 27.8k | Modelo de texto a voz open source de Resemble AI con clonación de voz y control de emoción. |
+| [Chatterbox](chatterbox.md) | 27.8k | Archivo de investigación TTS retirado y sin mantenimiento según su README desde agosto de 2026. |
 | [TTS](tts.md) | 46.2k | Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz. |
 | [LuxTTS](luxtts.md) | 5.6k | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. |
 | [edge-tts](edge-tts.md) | 12.5k | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. |
@@ -100,11 +107,14 @@ Comando presente en el README revisado; no es una prueba de instalación.
 ## Enlaces
 
 - 🐙 GitHub: [hexgrad/kokoro](https://github.com/hexgrad/kokoro)
+- 🧪 Receta: [Pipeline de Reels / video corto](../playbooks/pipeline-de-reels-video-corto.md)
 - 🧪 Receta: [Agente de voz en tiempo real](../playbooks/agente-de-voz.md)
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/hexgrad/kokoro/blob/main/README.md)
 

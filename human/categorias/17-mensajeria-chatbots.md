@@ -4,7 +4,7 @@
 
 Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación.
 
-11 repos · 2 secciones
+11 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -12,34 +12,40 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 | Repo | Qué hace | Acceso básico |
 |---|---|---|
-| [whatsapp-web.js](../fichas/whatsapp-web-js.md) | Librería Node.js que automatiza WhatsApp controlando WhatsApp Web en un navegador headless. | Sin API de IA en la ruta básica |
+| [whatsapp-web.js](../fichas/whatsapp-web-js.md) | Librería Node.js que automatiza WhatsApp controlando WhatsApp Web en un navegador headless. | Sin clave propia de API de IA en la ruta básica |
 | [Typebot](../fichas/typebot.md) | Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más. | API de IA opcional |
 
 ## Secciones
 
-- [WhatsApp y mensajería](#whatsapp-y-mensajería) — 8 repos
+- [WhatsApp y mensajería](#whatsapp-y-mensajería) — 7 repos
 - [Chatbots y asistentes conversacionales](#chatbots-y-asistentes-conversacionales) — 3 repos
+- [Comunidades,chat y llamadas](#comunidadeschat-y-llamadas) — 1 repos
 
 ## WhatsApp y mensajería
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [whatsapp-web.js](../fichas/whatsapp-web-js.md) | Librería Node.js que automatiza WhatsApp controlando WhatsApp Web en un navegador headless. | quieres programar un bot de WhatsApp en Node rápido | Sin API de IA en la ruta básica |
-| [OpenWA](../fichas/openwa.md) | Gateway/SDK abierto para conectar y automatizar cuentas de WhatsApp de forma directa desde código, sin infraestructura pesada. | desarrollas scripts o bots individuales y quieres arrancar rápido | Sin API de IA en la ruta básica |
-| [Baileys](../fichas/baileys.md) | Librería TypeScript que habla el protocolo de WhatsApp Web por WebSocket, sin navegador. | necesitas WhatsApp en código con bajo consumo de recursos | Sin API de IA en la ruta básica |
-| [fluxer](../fichas/fluxer.md) | Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio. | quieres probar algo nuevo y seguir su evolución | Sin API de IA en la ruta básica |
-| [evolution-api](../fichas/evolution-api.md) | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. | operas WhatsApp en producción con varias instancias | Sin API de IA en la ruta básica |
-| [whatsmeow](../fichas/whatsmeow.md) | Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web. | necesitas integrar WhatsApp Web en un servicio escrito en Go | Sin API de IA en la ruta básica |
-| [WAHA](../fichas/waha.md) | API REST de WhatsApp en un contenedor Docker, con varios motores y panel web. | quieres una API REST de WhatsApp lista en minutos | Sin API de IA en la ruta básica |
-| [whatsapp-agentkit](../fichas/whatsapp-agentkit.md) | Plantilla guiada que construye un agente conversacional de WhatsApp en menos de 30 minutos sin necesidad de programar, partiendo de preguntas sobre tu negocio. | quieres arrancar sin partir de cero y te vale con lo que Claude Code genere | API de IA necesaria |
+| [whatsapp-web.js](../fichas/whatsapp-web-js.md) | Librería Node.js que automatiza WhatsApp controlando WhatsApp Web en un navegador headless. | Tu objetivo encaja con estos ejemplos: Estudiar un bot de atención en laboratorio; Conectar eventos WhatsApp Web a una app propia | Sin clave propia de API de IA en la ruta básica |
+| [OpenWA](../fichas/openwa.md) | Gateway autoalojado de WhatsApp con API, panel de sesiones y servidor MCP HTTP opcional, del proyecto rmyndharis/OpenWA. | Tu objetivo encaja con estos ejemplos: Prototipar una integración de mensajería; Consultar estados desde un agente MCP | Sin clave propia de API de IA en la ruta básica |
+| [Baileys](../fichas/baileys.md) | Librería TypeScript que habla el protocolo de WhatsApp Web por WebSocket, sin navegador. | Tu objetivo encaja con estos ejemplos: Aprender el flujo multidispositivo; Conectar eventos de una cuenta propia a una app | Sin clave propia de API de IA en la ruta básica |
+| [evolution-api](../fichas/evolution-api.md) | API REST para automatizar WhatsApp y otros canales desde tus aplicaciones, con multi-instancia y webhooks. | Tu objetivo encaja con estos ejemplos: Conectar atención de WhatsApp a una app; Recibir eventos en una automatización de prueba | API de IA opcional |
+| [whatsmeow](../fichas/whatsmeow.md) | Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web. | Tu objetivo encaja con estos ejemplos: Construir una integración de eventos en Go; Estudiar almacenamiento de sesiones WhatsApp Web | Sin clave propia de API de IA en la ruta básica |
+| [WAHA](../fichas/waha.md) | API REST de WhatsApp en un contenedor Docker, con varios motores y panel web. | Tu objetivo encaja con estos ejemplos: Prototipar un webhook de mensajería; Evaluar un gateway HTTP para una app propia | Sin clave propia de API de IA en la ruta básica |
+| [whatsapp-agentkit](../fichas/whatsapp-agentkit.md) | Instrucciones y scripts que guían a Claude Code para construir un bot de WhatsApp; el bot resultante necesita sus propios proveedores y credenciales. | Tu objetivo encaja con estos ejemplos: Preparar un asistente de preguntas frecuentes; Diseñar una consulta de horarios en un número de prueba | API de IA necesaria |
 
 ## Chatbots y asistentes conversacionales
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [Typebot](../fichas/typebot.md) | Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más. | quieres un chatbot guiado sin programar, con buena UX | API de IA opcional |
-| [Rasa](../fichas/rasa.md) | Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local. | necesitas un asistente on-premise con diálogo muy controlado | Depende de la ruta elegida |
-| [Botpress](../fichas/botpress.md) | Plataforma para construir y desplegar agentes conversacionales con LLM en web, WhatsApp y más. | quieres un agente conversacional multicanal con poco código | Depende de la ruta elegida |
+| [Typebot](../fichas/typebot.md) | Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más. | Tu objetivo encaja con estos ejemplos: Crear un formulario conversacional; Probar un flujo de preguntas frecuentes | API de IA opcional |
+| [Rasa](../fichas/rasa.md) | Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local. | Tu objetivo encaja con estos ejemplos: Estudiar NLU de atención al cliente; Construir un diálogo de reglas para una demo | API de IA opcional |
+| [Botpress](../fichas/botpress.md) | Hub de SDKs, CLI e integraciones para desarrollar y desplegar conexiones en el ecosistema Botpress. | Tu objetivo encaja con estos ejemplos: Aprender el SDK de integraciones Botpress; Prototipar una conexión para un chatbot alojado | Depende de la ruta elegida |
+
+## Comunidades,chat y llamadas
+
+| Repo | Para qué sirve | Elígelo si… | API de IA |
+|---|---|---|---|
+| [fluxer](../fichas/fluxer.md) | Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio. | Tu objetivo encaja con estos ejemplos: Organizar conversación de una comunidad; Probar una interfaz de mensajería y VoIP propia | Sin clave propia de API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

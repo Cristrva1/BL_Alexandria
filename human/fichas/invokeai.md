@@ -16,34 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La edición local no necesita API de modelo; productos comerciales y modelos tienen condiciones propias |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La interfaz y sus modelos se preparan por separado; comienza con la instalación recomendada y un único modelo |
+| Coste | El coste depende del proveedor o la ruta. La edición local no necesita API de modelo; productos comerciales y modelos tienen condiciones propias |
+| Equipo | Preparación según la ruta elegida. Launcher o instalación oficial; modelo admitido; hardware según checkpoint |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La interfaz y sus modelos se preparan por separado; comienza con la instalación recomendada y un único modelo
 
 ## Qué puedes hacer con él
 
-Resuelve la fragmentación de herramientas SD reuniendo generación, edición y control en una sola app self-hosted.
+Suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpainting, gestión de modelos y workflows encadenables.
 
 ## Por qué destaca
 
-Ofrece la experiencia creativa más estable del ecosistema SD, con un canvas tipo Photoshop (capas, máscaras, regiones) y respaldo de una empresa dedicada (InvokeAI Inc.) que mantiene releases regulares.
+Usos propuestos: Retocar una ilustración por regiones; Organizar variantes de una producción visual.
 
 ## Cómo funciona
 
-Un backend Python/PyTorch ejecuta los modelos de difusión sobre GPU y sirve una SPA (React/TypeScript) con lienzo editable; los workflows se guardan como grafos reproducibles y los modelos se gestionan desde la propia app.
+La interfaz y sus modelos se preparan por separado; comienza con la instalación recomendada y un único modelo
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Launcher o instalación oficial
+- modelo admitido
+- hardware según checkpoint
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/invoke-ai/InvokeAI/blob/main/README.md)
 
@@ -51,23 +60,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar InvokeAI para mi objetivo y necesito pasos guiados. Lee https://github.com/invoke-ai/InvokeAI/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Abre un canvas, genera una zona pequeña y conserva la imagen original en otra capa.
+
+**Qué comprobar:** Puedes comparar la zona editada y sus parámetros.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Trabajo creativo serio con SD
-- Canvas e inpainting profesional con regiones
-- Iteración de campaña visual con workflows reutilizables
+- Retocar una ilustración por regiones
+- Organizar variantes de una producción visual
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| trabajas creatividad profesional y quieres una app estable con canvas | solo haces una prueba puntual (Fooocus) o prefieres grafos nodales (ComfyUI) |
+| Tu objetivo encaja con estos ejemplos: Retocar una ilustración por regiones; Organizar variantes de una producción visual | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Setup pesado y exigente en VRAM; la curva de aprendizaje del canvas y los workflows es mayor que en alternativas más simples.
+**Limitaciones:** La interfaz y sus modelos se preparan por separado; comienza con la instalación recomendada y un único modelo
 
 ## Stack y modelos
 
-- **Stack:** Python, PyTorch, React, TypeScript, Docker
+- **Stack:** Launcher o instalación oficial; modelo admitido; hardware según checkpoint
 - **Etiquetas:** `image` `typescript`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -91,7 +107,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/invoke-ai/InvokeAI/blob/main/README.md)
 

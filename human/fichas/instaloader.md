@@ -16,34 +16,49 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No usa un modelo ni requiere API de IA; la cuenta y la plataforma imponen límites |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Contenido privado exige acceso autorizado; que el código no cobre no garantiza que Instagram permita todas las operaciones |
+| Coste | Sin pago a un modelo en la ruta básica. No usa un modelo ni requiere API de IA; la cuenta y la plataforma imponen límites |
+| Equipo | Preparación según la ruta elegida. Python; espacio en disco; sesión propia para contenido que la requiera |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Contenido privado exige acceso autorizado; que el código no cobre no garantiza que Instagram permita todas las operaciones
 
 ## Qué puedes hacer con él
 
-Resuelve el archivado masivo de Instagram sin recurrir a APIs oficiales de pago ni herramientas manuales.
+Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de Instagram.
 
 ## Por qué destaca
 
-Utilidad veterana y muy usada para archivar Instagram, con CLI lista para usar y soporte de descargas incrementales y sesiones logueadas. Su madurez y mantenimiento continuo la convierten en la opción de facto para este caso concreto.
+Usos propuestos: Respaldar publicaciones propias; Actualizar una colección autorizada sin repetir todo.
 
 ## Cómo funciona
 
-Consulta los endpoints públicos de Instagram (o autenticados con sesión) y guarda los medios con su metadata en JSON, respetando la estructura del perfil y permitiendo reanudar descargas sin duplicar.
+Contenido privado exige acceso autorizado; que el código no cobre no garantiza que Instagram permita todas las operaciones
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python
+- espacio en disco
+- sesión propia para contenido que la requiera
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (shell):**
+
+```
+pip3 install instaloader
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/instaloader/instaloader/blob/master/README.rst)
 
@@ -51,23 +66,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar instaloader para mi objetivo y necesito pasos guiados. Lee https://github.com/instaloader/instaloader/blob/master/README.rst. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Descarga una publicación propia y compara archivo, descripción y metadatos.
+
+**Qué comprobar:** La carpeta contiene los medios y datos esperados.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Archivar contenido de perfiles
-- Datasets de medios sociales
-- Backups incrementales de stories y posts de un creador
+- Respaldar publicaciones propias
+- Actualizar una colección autorizada sin repetir todo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas datos de Instagram de forma fiable | quieres varias redes a la vez (snscrape) o el contenido requiere API oficial por ToS |
+| Tu objetivo encaja con estos ejemplos: Respaldar publicaciones propias; Actualizar una colección autorizada sin repetir todo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Depende del frontend no oficial de Instagram, así que cambios en la app o el endurecimiento de sus ToS pueden romperlo; el uso masoso puede derivar en bloqueos de cuenta.
+**Limitaciones:** Contenido privado exige acceso autorizado; que el código no cobre no garantiza que Instagram permita todas las operaciones
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python; espacio en disco; sesión propia para contenido que la requiera
 - **Etiquetas:** `vision` `scraping` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -84,7 +106,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/instaloader/instaloader/blob/master/README.rst)
 

@@ -1,0 +1,6 @@
+{
+ "ollama":["https://docs.ollama.com/integrations/claude-code","https://docs.ollama.com/integrations/codex"],
+ "lobehub":["https://lobehub.com/docs/usage/agent/connect-external-agents"],
+ "muse-spark":["https://ai.meta.com/muse/","https://dev.meta.ai/docs/overview"],
+ "notebooklm-py":["https://antigravity.google/docs/ide-mcp"]
+}

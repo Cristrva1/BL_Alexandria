@@ -1,0 +1,5 @@
+{
+ "mcp":{"name":"Google MCP","role":"directory","one":"Directorio de servidores MCP oficiales de Google, ejemplos y orientación para desplegarlos en Google Cloud.","desc":"Reúne servidores MCP de servicios Google y ejemplos de despliegue. Sirve para elegir una conexión y revisar sus credenciales y costes. No es el repositorio de la especificación general de MCP."},
+ "mcp-neo4j":{"one":"Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP.","desc":"Colección del programa Neo4j Labs, mantenida por el equipo Field GenAI, con servidores para Cypher, memoria, modelado y Aura. Los autores advierten que no tiene SLA ni garantías de compatibilidad del equipo de producto y enlazan un repositorio distinto para el servidor oficial de producto."},
+ "ag2":{"one":"Framework AG2 actual para agentes y redes de colaboración en Python; AG2 Classic conserva por separado la API heredada autogen.","desc":"AG2 v1 utiliza import ag2 y su propia arquitectura de agentes y redes. Los proyectos con ConversableAgent, GroupChat e import autogen deben seguir la distribución ag2-classic y su documentación de migración."}
+}

@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. El README documenta usar una cuenta o sesión del agente, además de las otras rutas que admita el producto. |
+| API de IA | API de IA opcional. Admite cuentas Claude o ChatGPT y proveedores API; sus cuotas son externas |
 | Claude Code | Integración documentada por el proyecto |
 | Codex | Integración documentada por el proyecto |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | El coste depende del proveedor o la ruta. El razonamiento consume el plan o proveedor configurado. Alojamiento, conectores y otros servicios se evalúan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Integra motores Claude Code y Codex; que Halo SDK esté orientado a modelos abiertos no confirma por sí solo inferencia local configurada |
+| Coste | El coste depende del proveedor o la ruta. Admite cuentas Claude o ChatGPT y proveedores API; sus cuotas son externas |
+| Equipo | Preparación según la ruta elegida. Aplicación para tu sistema; cuenta o proveedor compatible; carpeta de prueba |
 
-Es una integración descrita por este proyecto. Configura la ruta concreta y comprueba sus límites; no se presenta como acceso universal a todas las APIs.
+Integra motores Claude Code y Codex; que Halo SDK esté orientado a modelos abiertos no confirma por sí solo inferencia local configurada
 
 ## Qué puedes hacer con él
 
 Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores API.
 
+## Por qué destaca
+
+Usos propuestos: Explorar un asistente de escritorio; Revisar tareas de código visualmente.
+
 ## Cómo funciona
 
-La aplicación coordina modelos y herramientas; el acceso de cada componente se configura antes de ejecutar sus tareas.
+Integra motores Claude Code y Codex; que Halo SDK esté orientado a modelos abiertos no confirma por sí solo inferencia local configurada
 
 ## Cómo empezar
 
@@ -39,35 +44,46 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un sistema compatible y una copia de datos o archivos para la primera prueba.
+- Aplicación para tu sistema
+- cuenta o proveedor compatible
+- carpeta de prueba
 
-1. Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.
-2. Sigue su guía de inicio y configura únicamente la función que necesitas probar.
-3. Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/openkursar/hello-halo/blob/main/README.md)
-
-[Abrir la web o descarga indicada por el autor](https://github.com/openkursar/hello-halo/releases)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
 > Quiero usar hello-halo para mi objetivo y necesito pasos guiados. Lee https://github.com/openkursar/hello-halo/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Crea un espacio con un archivo de ejemplo y solicita una explicación antes de activar control del navegador.
+
+**Qué comprobar:** Puedes revisar el motor y los cambios propuestos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores API.
+- Explorar un asistente de escritorio
+- Revisar tareas de código visualmente
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores API. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Explorar un asistente de escritorio; Revisar tareas de código visualmente | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Integra motores Claude Code y Codex; que Halo SDK esté orientado a modelos abiertos no confirma por sí solo inferencia local configurada
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, package.json
+- **Stack:** Aplicación para tu sistema; cuenta o proveedor compatible; carpeta de prueba
 - **Etiquetas:** `asistentes` `agent` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -78,7 +94,9 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/openkursar/hello-halo/blob/main/README.md)
 

@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos. |
+| API de IA | Depende de la ruta elegida. Ofrece servicio remoto y extra local; proveedores, hardware y pesos tienen condiciones separadas |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos. |
-| Coste | El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan. |
-| Equipo | Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. PDF-craft con guion es este conversor Python; no es PDFCraftTool/pdfcraft, la aplicación de herramientas PDF del navegador |
+| Coste | El coste depende del proveedor o la ruta. Ofrece servicio remoto y extra local; proveedores, hardware y pesos tienen condiciones separadas |
+| Equipo | Preparación según la ruta elegida. Python; extra local y modelos para ruta local; proveedor OCR o servicio para ruta remota |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+PDF-craft con guion es este conversor Python; no es PDFCraftTool/pdfcraft, la aplicación de herramientas PDF del navegador
 
 ## Qué puedes hacer con él
 
 Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento.
 
+## Por qué destaca
+
+Usos propuestos: Crear una versión editable de un escaneo propio; Preparar un EPUB desde material autorizado.
+
 ## Cómo funciona
 
-Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.
+PDF-craft con guion es este conversor Python; no es PDFCraftTool/pdfcraft, la aplicación de herramientas PDF del navegador
 
 ## Cómo empezar
 
@@ -39,43 +44,53 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
+- Python
+- extra local y modelos para ruta local
+- proveedor OCR o servicio para ruta remota
 
-1. Elige entre la web del autor, OCR remoto con credenciales propias o inferencia local con GPU.
-2. Prueba un PDF corto; OCR, traducción y extracción de metadatos tienen configuraciones de modelo independientes.
-3. Abre el Markdown o EPUB generado y revisa el orden, texto y tablas antes de convertir un libro completo.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-**Comando de entrada documentado:**
+**Entrada documentada (bash):**
 
-```shell
-python -m pip install pdf-craft
+```
+python -m pip install "pdf-craft[local]"
 ```
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/oomol-lab/pdf-craft/blob/main/README.md)
-
-[Abrir la web o descarga indicada por el autor](https://pdfcraft.ai/pdf-craft/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
 > Quiero usar pdf-craft para mi objetivo y necesito pasos guiados. Lee https://github.com/oomol-lab/pdf-craft/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Convierte dos páginas escaneadas propias y compara texto y estructura antes de generar un libro completo.
+
+**Qué comprobar:** Puedes identificar errores y corregir el orden de lectura.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento.
+- Crear una versión editable de un escaneo propio
+- Preparar un EPUB desde material autorizado
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| Tu objetivo encaja con estos ejemplos: Crear una versión editable de un escaneo propio; Preparar un EPUB desde material autorizado | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** PDF-craft con guion es este conversor Python; no es PDFCraftTool/pdfcraft, la aplicación de herramientas PDF del navegador
 
 ## Stack y modelos
 
-- **Stack:** Python, pyproject.toml
+- **Stack:** Python; extra local y modelos para ruta local; proveedor OCR o servicio para ruta remota
 - **Etiquetas:** `ocr` `library` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -98,7 +113,9 @@ Comando de entrada seleccionado y presente en la fuente revisada; consulta la in
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/oomol-lab/pdf-craft/blob/main/README.md)
 

@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Puedes elegir la ruta local documentada o configurar un proveedor remoto; la ruta remota puede requerir API key o acceso propio. |
+| API de IA | API de IA opcional. El modo local usa tu equipo; los proveedores remotos tienen sus tarifas; modelos tienen licencias propias |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | El coste depende del proveedor o la ruta. La inferencia local consume recursos de tu equipo. Los proveedores remotos y servicios del cliente tienen sus propios planes y tarifas. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Para comenzar usa la distribución de escritorio; make dev y yarn son rutas para desarrollar el código de Jan |
+| Coste | El coste depende del proveedor o la ruta. El modo local usa tu equipo; los proveedores remotos tienen sus tarifas; modelos tienen licencias propias |
+| Equipo | Preparación según la ruta elegida. Instalador de escritorio oficial; RAM y disco; modelo compatible |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Para comenzar usa la distribución de escritorio; make dev y yarn son rutas para desarrollar el código de Jan
 
 ## Qué puedes hacer con él
 
-Aplicación de escritorio para conversar con modelos locales y configurar proveedores remotos desde una misma interfaz. Comprueba el modelo y backend activo: el modo local necesita recursos de tu equipo y la ruta remota conserva sus propios requisitos de acceso.
+Aplicación de escritorio para conversar con modelos locales y configurar proveedores remotos desde una misma interfaz.
 
 ## Por qué destaca
 
-La app de escritorio más sencilla para IA local en Windows, macOS y Linux.
+Usos propuestos: Conversar con un modelo privado; Comparar un modelo local con una API.
 
 ## Cómo funciona
 
-Permite descargar modelos para inferencia local o utilizar conexiones remotas documentadas.
+Para comenzar usa la distribución de escritorio; make dev y yarn son rutas para desarrollar el código de Jan
 
 ## Cómo empezar
 
@@ -43,35 +44,46 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Sistema operativo y memoria compatibles con la distribución y el modelo.
+- Instalador de escritorio oficial
+- RAM y disco
+- modelo compatible
 
-1. Descarga la aplicación para tu sistema desde su fuente oficial.
-2. Configura un modelo local compatible o una conexión remota, según la ruta que quieras usar.
-3. Prueba una conversación pequeña y revisa dónde se guardan los datos y qué backend está activo.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-[Instrucciones originales de instalación](https://github.com/janhq/jan/blob/main/README.md)
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
-[Abrir la web o descarga indicada por el autor](https://jan.ai/)
+[Instrucciones originales de instalación](https://jan.ai/docs)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Jan para mi objetivo y necesito pasos guiados. Lee https://github.com/janhq/jan/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Jan para mi objetivo y necesito pasos guiados. Lee https://jan.ai/docs. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Desde la app descarga un modelo pequeño y prueba una conversación local.
+
+**Qué comprobar:** Ves el modelo cargado y puedes repetir la consulta sin proveedor remoto.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Chat privado sin internet
-- Probar modelos locales fácilmente
-- Servidor local para otras apps
+- Conversar con un modelo privado
+- Comparar un modelo local con una API
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres un ChatGPT local en tu escritorio | necesitas multiusuario; mira `open-webui` |
+| Tu objetivo encaja con estos ejemplos: Conversar con un modelo privado; Comparar un modelo local con una API | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Para comenzar usa la distribución de escritorio; make dev y yarn son rutas para desarrollar el código de Jan
 
 ## Stack y modelos
 
-- **Stack:** Rust, TypeScript, Tauri
+- **Stack:** Instalador de escritorio oficial; RAM y disco; modelo compatible
 - **Etiquetas:** `chatbot` `local` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -96,7 +108,9 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/janhq/jan/blob/main/README.md)
 

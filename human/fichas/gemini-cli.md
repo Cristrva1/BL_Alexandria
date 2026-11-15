@@ -2,7 +2,7 @@
 
 # 👨‍💻 Gemini CLI
 
-> Agente de IA open source de Google que lleva Gemini a tu terminal, con cuota gratuita generosa.
+> CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,43 +16,51 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
+| API de IA | API de IA opcional. El README actual lo destina a Code Assist Standard o Enterprise y rutas API o Vertex heredadas; no promete cuota individual gratuita |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
-| Otras rutas | El README documenta acceso con una cuenta de Google mediante OAuth y rutas con API key. Consultar las cuotas del método elegido. |
+| Antigravity | Referencia para la herramienta; no es una integración |
+| Modelos locales | Modelo local no documentado. El acceso individual y Google AI Pro o Ultra se remiten a Antigravity CLI, un producto separado; sustituye la descripción antigua de cuota gratuita |
+| Coste | El coste depende del proveedor o la ruta. El README actual lo destina a Code Assist Standard o Enterprise y rutas API o Vertex heredadas; no promete cuota individual gratuita |
+| Equipo | Preparación según la ruta elegida. Node; acceso empresarial Code Assist o credenciales admitidas; proyecto de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El acceso individual y Google AI Pro o Ultra se remiten a Antigravity CLI, un producto separado; sustituye la descripción antigua de cuota gratuita
 
 ## Qué puedes hacer con él
 
-Programa, investiga y automatiza tareas desde la terminal con contexto de millones de tokens y búsqueda de Google integrada. Admite MCP y extensiones.
+Agente de terminal de Google. Su aviso actual diferencia el acceso empresarial de Gemini Code Assist, Antigravity CLI para usuarios individuales y Gemini API CLI para llamadas sin estado. Revisa esa distinción antes de instalar o asumir una cuota gratuita.
 
 ## Por qué destaca
 
-Cuota gratuita amplia con cuenta de Google y ventana de contexto enorme.
+Usos propuestos: Estudiar un agente empresarial de Google; Planificar una migración de CLI.
 
 ## Cómo funciona
 
-Un CLI en Node.js orquesta herramientas (archivos, shell, búsqueda web, MCP) con modelos Gemini.
+El acceso individual y Google AI Pro o Ultra se remiten a Antigravity CLI, un producto separado; sustituye la descripción antigua de cuota gratuita
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Node
+- acceso empresarial Code Assist o credenciales admitidas
+- proyecto de prueba
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+# Using npx (no installation required)
 npx @google/gemini-cli
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/google-gemini/gemini-cli/blob/main/README.md)
 
@@ -60,21 +68,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar Gemini CLI para mi objetivo y necesito pasos guiados. Lee https://github.com/google-gemini/gemini-cli/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Lee primero el aviso de acceso y comprueba si corresponde este CLI empresarial o Antigravity CLI.
+
+**Qué comprobar:** Puedes elegir el producto de Google apropiado antes de instalar.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Entender repos muy grandes
-- Investigar con búsqueda web integrada
-- Automatizar tareas sin pagar API
+- Estudiar un agente empresarial de Google
+- Planificar una migración de CLI
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres un agente de terminal potente con cuota gratuita | buscas el agente con mejor desempeño en tareas largas; mira `claude-code` |
+| Tu objetivo encaja con estos ejemplos: Estudiar un agente empresarial de Google; Planificar una migración de CLI | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El acceso individual y Google AI Pro o Ultra se remiten a Antigravity CLI, un producto separado; sustituye la descripción antigua de cuota gratuita
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Node.js
+- **Stack:** Node; acceso empresarial Code Assist o credenciales admitidas; proyecto de prueba
 - **Etiquetas:** `coding-agent` `agents` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -100,7 +117,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/google-gemini/gemini-cli/blob/main/README.md)
 

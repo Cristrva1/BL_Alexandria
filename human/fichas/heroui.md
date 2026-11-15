@@ -16,42 +16,49 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La biblioteca no exige modelo; servicios y contenidos comerciales relacionados tienen condiciones aparte |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Antes NextUI; el README actual usa paquetes styles y react; MCP y llms.txt son rutas auxiliares para agentes |
+| Coste | Sin pago a un modelo en la ruta básica. La biblioteca no exige modelo; servicios y contenidos comerciales relacionados tienen condiciones aparte |
+| Equipo | Preparación según la ruta elegida. React; Tailwind CSS v4 y configuración según guía; Node |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Antes NextUI; el README actual usa paquetes styles y react; MCP y llms.txt son rutas auxiliares para agentes
 
 ## Qué puedes hacer con él
 
-Resuelve la accesibilidad seria sin renunciar a un estilado moderno.
+Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes.
 
 ## Por qué destaca
 
-Combina accesibilidad seria (React Aria de Adobe), integración MCP para asistentes y soporte de Next.js/React 19, una mezcla poco habitual en kits de UI. Su instalación por módulos evita inflar el bundle.
+Usos propuestos: Construir formularios accesibles; Crear una interfaz con temas compartidos.
 
 ## Cómo funciona
 
-Componentes React construidos sobre React Aria (comportamiento/accesibilidad) y estilados con Tailwind, instalables por módulos y con un plugin de Tailwind para los tokens del tema.
+Antes NextUI; el README actual usa paquetes styles y react; MCP y llms.txt son rutas auxiliares para agentes
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- React
+- Tailwind CSS v4 y configuración según guía
+- Node
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
 npm install @heroui/styles @heroui/react
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/heroui-inc/heroui/blob/v3/README.md)
 
@@ -59,21 +66,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar heroui para mi objetivo y necesito pasos guiados. Lee https://github.com/heroui-inc/heroui/blob/v3/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Añade un botón y un campo con un tema sencillo y prueba el foco por teclado.
+
+**Qué comprobar:** Los componentes muestran el tema y estados interactivos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Dashboards, SaaS o landings accesibles y consistentes
-- Base de UI con accesibilidad out-of-the-box
-- Integración con asistentes vía MCP
+- Construir formularios accesibles
+- Crear una interfaz con temas compartidos
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres calidad + accesibilidad listas | quieres control copy-paste del código (ui) |
+| Tu objetivo encaja con estos ejemplos: Construir formularios accesibles; Crear una interfaz con temas compartidos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Antes NextUI; el README actual usa paquetes styles y react; MCP y llms.txt son rutas auxiliares para agentes
 
 ## Stack y modelos
 
-- **Stack:** Node.js, React, Tailwind
+- **Stack:** React; Tailwind CSS v4 y configuración según guía; Node
 - **Etiquetas:** `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -97,7 +113,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/heroui-inc/heroui/blob/v3/README.md)
 

@@ -16,34 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No usa API remota; compilar dependencias y ejecutar modelos consume equipo |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Windows no está oficialmente soportado por esta guía; una similitud no verifica identidad ni sustituye un sistema de autenticación |
+| Coste | Sin pago a un modelo en la ruta básica. No usa API remota; compilar dependencias y ejecutar modelos consume equipo |
+| Equipo | Preparación según la ruta elegida. Python; dlib y CMake según sistema; fotos propias autorizadas |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Windows no está oficialmente soportado por esta guía; una similitud no verifica identidad ni sustituye un sistema de autenticación
 
 ## Qué puedes hacer con él
 
-Envuelve dlib para que el reconocimiento facial sea trivial desde un script.
+Librería de Python con API de alto nivel para detección y reconocimiento facial: localizar caras, compararlas e identificarlas por similitud.
 
 ## Por qué destaca
 
-Es de las librerías de reconocimiento facial más populares y accesibles, ideal para prototipos por su API mínima (`face_locations`, `face_encodings`, `compare_faces`); muy usada como referencia didáctica.
+Usos propuestos: Estudiar detección facial; Comparar dos fotos propias en un laboratorio.
 
 ## Cómo funciona
 
-Envuelve los modelos de dlib (detector HOG/CNN y embeddings faciales de 128 dimensiones) para comparar rostros por distancia entre vectores; el umbral de distancia decide si dos caras son la misma persona.
+Windows no está oficialmente soportado por esta guía; una similitud no verifica identidad ni sustituye un sistema de autenticación
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python
+- dlib y CMake según sistema
+- fotos propias autorizadas
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (shell):**
+
+```
+pip3 install face_recognition
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/ageitgey/face_recognition/blob/master/README.md)
 
@@ -51,23 +67,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar face_recognition para mi objetivo y necesito pasos guiados. Lee https://github.com/ageitgey/face_recognition/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Localiza rostros en una imagen de prueba y revisa las cajas antes de comparar identidades.
+
+**Qué comprobar:** Puedes comprobar qué región detectó el modelo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Detectar/identificar rostros en imágenes
-- Etiquetado automático de álbumes
-- Comparar identidad entre dos fotos
+- Estudiar detección facial
+- Comparar dos fotos propias en un laboratorio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas reconocimiento facial básico y rápido de implementar | buscas restauración/animación (GFPGAN/LivePortrait) o precisión de producción (mejor DeepFace/InsightFace) |
+| Tu objetivo encaja con estos ejemplos: Estudiar detección facial; Comparar dos fotos propias en un laboratorio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La instalación de dlib es frágil en Windows; el modelo por defecto (HOG) es menos preciso que alternativas modernas; el repo recibe mantenimiento esporádico.
+**Limitaciones:** Windows no está oficialmente soportado por esta guía; una similitud no verifica identidad ni sustituye un sistema de autenticación
 
 ## Stack y modelos
 
-- **Stack:** Python, dlib
+- **Stack:** Python; dlib y CMake según sistema; fotos propias autorizadas
 - **Etiquetas:** `image` `vision` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,7 +112,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ageitgey/face_recognition/blob/master/README.md)
 

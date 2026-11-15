@@ -22,6 +22,7 @@ data/reports/
 data/snapshots/
 data/*.bak
 data/readmes_backup.zip
+data/reviews/
 tmp_*.py
 registry/repos.yaml
 ai_index/REPOS.scan.json

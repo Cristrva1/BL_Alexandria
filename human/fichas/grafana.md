@@ -16,58 +16,73 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El dashboard básico no usa LLM; Cloud, Enterprise, almacenamiento y fuentes tienen planes y consumo propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Grafana visualiza fuentes existentes; no recopila automáticamente todos los datos de tus sistemas |
+| Coste | El coste depende del proveedor o la ruta. El dashboard básico no usa LLM; Cloud, Enterprise, almacenamiento y fuentes tienen planes y consumo propios |
+| Equipo | Preparación según la ruta elegida. Servidor o cuenta Cloud; fuente de métricas; permisos de consulta |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Grafana visualiza fuentes existentes; no recopila automáticamente todos los datos de tus sistemas
 
 ## Qué puedes hacer con él
 
-Crea dashboards y alertas sobre Prometheus, Loki, bases SQL y decenas de fuentes. Estándar en monitoreo.
+Plataforma de visualización y observabilidad para métricas, logs y trazas de múltiples fuentes.
 
 ## Por qué destaca
 
-El estándar de facto para dashboards de monitoreo.
+Usos propuestos: Observar consumo de un servicio; Compartir métricas de una operación.
 
 ## Cómo funciona
 
-Un servidor Go consulta las fuentes por plugins y un frontend React dibuja paneles y alertas.
+Grafana visualiza fuentes existentes; no recopila automáticamente todos los datos de tus sistemas
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/grafana/grafana/blob/main/README.md)
+- Servidor o cuenta Cloud
+- fuente de métricas
+- permisos de consulta
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://grafana.com/docs/grafana/latest/setup-grafana/installation/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Grafana para mi objetivo y necesito pasos guiados. Lee https://github.com/grafana/grafana/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Grafana para mi objetivo y necesito pasos guiados. Lee https://grafana.com/docs/grafana/latest/setup-grafana/installation/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Conecta una fuente de prueba y grafica una métrica con un rango temporal explícito.
+
+**Qué comprobar:** El panel coincide con la consulta y cambia al ajustar el periodo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Monitorear servidores y APIs
-- Alertas de métricas
-- Dashboards de costos de LLM
+- Observar consumo de un servicio
+- Compartir métricas de una operación
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas monitoreo y alertas en tiempo real | buscas BI de negocio; mira `superset` o `metabase` |
+| Tu objetivo encaja con estos ejemplos: Observar consumo de un servicio; Compartir métricas de una operación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Licencia AGPL-3.0.
+**Limitaciones:** Grafana visualiza fuentes existentes; no recopila automáticamente todos los datos de tus sistemas
 
 ## Stack y modelos
 
-- **Stack:** Go, TypeScript, Docker
+- **Stack:** Servidor o cuenta Cloud; fuente de métricas; permisos de consulta
 - **Etiquetas:** `observability` `dataviz` `typescript` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -84,7 +99,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/grafana/grafana/blob/main/README.md)
 

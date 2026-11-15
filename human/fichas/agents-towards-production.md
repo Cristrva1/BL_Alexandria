@@ -16,34 +16,51 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | API de IA opcional. Consultar no requiere API; los laboratorios pueden consumir nube, modelos y cómputo |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La colección declara licencia personalizada no comercial; cada tutorial tiene entorno propio y no acredita un despliegue productivo por seguirlo |
+| Coste | El coste depende del proveedor o la ruta. Consultar no requiere API; los laboratorios pueden consumir nube, modelos y cómputo |
+| Equipo | Preparación según la ruta elegida. Python; dependencias por tutorial; servicios o GPU según ejercicio |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La colección declara licencia personalizada no comercial; cada tutorial tiene entorno propio y no acredita un despliegue productivo por seguirlo
 
 ## Qué puedes hacer con él
 
-Playbook de Nir Diamant (DiamantAI) con un tutorial por carpeta, en notebooks o scripts listos para ejecutar, sobre cada pieza del stack de un agente: tool calling seguro, datos web, RAG, memoria (Redis, Mem0, Cognee), Docker, FastAPI, GPU, MCP, A2A, LangGraph, seguridad, fine-tuning, trazas y evaluación. Muchos tutoriales los aportan empresas patrocinadoras.
+Colección de 28 tutoriales con código para llevar agentes de IA a producción: memoria, despliegue, seguridad, trazas y evaluación.
 
 ## Por qué destaca
 
-Cubre lo que suele faltar después de la demo (estado, memoria, despliegue, guardrails, evaluación) con código que puedes ejecutar y adaptar. Cada tutorial es independiente, así que vas directo a la pieza que necesitas.
+Usos propuestos: Aprender a desplegar un agente; Comparar un servicio LLM con Ollama on-prem.
 
 ## Cómo funciona
 
-Cada carpeta de `tutorials/` trae su README, su `requirements.txt` y un notebook o una app; la mayoría usa Python con LangChain o LangGraph y la API del proveedor o servicio que explica.
+La colección declara licencia personalizada no comercial; cada tutorial tiene entorno propio y no acredita un despliegue productivo por seguirlo
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Python
+- dependencias por tutorial
+- servicios o GPU según ejercicio
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+git clone https://github.com/NirDiamant/agents-towards-production.git
+cd agents-towards-production
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/NirDiamant/agents-towards-production/blob/main/README.md)
 
@@ -51,23 +68,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Agents Towards Production para mi objetivo y necesito pasos guiados. Lee https://github.com/NirDiamant/agents-towards-production/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Elige un tutorial de observabilidad y enumera sus entradas, trazas y criterios de evaluación.
+
+**Qué comprobar:** Puedes reconocer qué evidencia permitiría diagnosticar un fallo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Añadir memoria persistente a un agente con Redis o Mem0
-- Desplegar un agente como API con FastAPI y Docker
-- Probar ataques de prompt injection y sus defensas
+- Aprender a desplegar un agente
+- Comparar un servicio LLM con Ollama on-prem
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| ya tienes un prototipo de agente y necesitas resolver memoria, despliegue, seguridad u observabilidad | estás empezando con agentes desde cero; mira `ai-agents-for-beginners` |
+| Tu objetivo encaja con estos ejemplos: Aprender a desplegar un agente; Comparar un servicio LLM con Ollama on-prem | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Licencia propia no comercial, y varios tutoriales dependen de servicios de patrocinadores (alguno ya retirado, como hushvert).
+**Limitaciones:** La colección declara licencia personalizada no comercial; cada tutorial tiene entorno propio y no acredita un despliegue productivo por seguirlo
 
 ## Stack y modelos
 
-- **Stack:** Python, Jupyter, LangGraph, FastAPI, Docker
+- **Stack:** Python; dependencias por tutorial; servicios o GPU según ejercicio
 - **Etiquetas:** `agents` `learning` `notebooks` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -86,7 +110,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/NirDiamant/agents-towards-production/blob/main/README.md)
 

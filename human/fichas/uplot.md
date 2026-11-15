@@ -2,7 +2,7 @@
 
 # 📈 uPlot
 
-> Librería ultraligera para gráficos de series temporales capaz de pintar cientos de miles de puntos sin penalizar el rendimiento.
+> Biblioteca compacta de gráficos de series temporales en JavaScript, orientada a renderizar datos con Canvas y controles programables.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No usa modelo ni servicios por defecto; los datos y el alojamiento son aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Las cifras de rapidez del autor dependen de datos, navegador y equipo; no se garantiza rendimiento sin penalización |
+| Coste | Sin pago a un modelo en la ruta básica. No usa modelo ni servicios por defecto; los datos y el alojamiento son aparte |
+| Equipo | Preparación según la ruta elegida. JavaScript; datos temporales ordenados; estilos y build distribuidos |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Las cifras de rapidez del autor dependen de datos, navegador y equipo; no se garantiza rendimiento sin penalización
 
 ## Qué puedes hacer con él
 
-Apuesta por hacer una sola cosa (líneas/áreas temporales) mejor que ninguna.
+Permite visualizar series temporales, líneas, áreas y otros formatos en una página. Su rendimiento depende del volumen, configuración, navegador y equipo; conviene medirlo con una muestra representativa.
 
 ## Por qué destaca
 
-Célebre por su tamaño minúsculo (pocos KB) y velocidad de renderizado, ideal cuando el peso del bundle y los FPS importan. Su autor (leeoniya) la mantiene con foco obsesivo en rendimiento.
+Usos propuestos: Mostrar métricas temporales de un sensor; Comparar rendimiento de gráficas con tus propios datos.
 
 ## Cómo funciona
 
-Dibuja líneas y áreas directamente sobre Canvas con una API minimalista en JavaScript optimizada para datasets enormes, sin dependencias y sin virtual DOM.
+Las cifras de rapidez del autor dependen de datos, navegador y equipo; no se garantiza rendimiento sin penalización
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- JavaScript
+- datos temporales ordenados
+- estilos y build distribuidos
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/leeoniya/uPlot/blob/master/README.md)
 
@@ -51,21 +59,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar uPlot para mi objetivo y necesito pasos guiados. Lee https://github.com/leeoniya/uPlot/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Grafica una serie de cien puntos y comprueba tiempos y escala.
+
+**Qué comprobar:** El cursor y los valores corresponden a los datos originales.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Dashboards con muchísimos puntos
-- Charts rápidos en frontend embebido
-- Monitorización en tiempo real donde el peso importa
+- Mostrar métricas temporales de un sensor
+- Comparar rendimiento de gráficas con tus propios datos
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| priorizas velocidad y peso del bundle | necesitas tipos de gráfico variados (echarts) |
+| Tu objetivo encaja con estos ejemplos: Mostrar métricas temporales de un sensor; Comparar rendimiento de gráficas con tus propios datos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Las cifras de rapidez del autor dependen de datos, navegador y equipo; no se garantiza rendimiento sin penalización
 
 ## Stack y modelos
 
-- **Stack:** JavaScript
+- **Stack:** JavaScript; datos temporales ordenados; estilos y build distribuidos
 - **Etiquetas:** `dataviz` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -81,7 +98,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/leeoniya/uPlot/blob/master/README.md)
 

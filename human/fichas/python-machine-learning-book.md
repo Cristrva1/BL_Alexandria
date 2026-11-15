@@ -16,34 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El código se consulta libremente; el libro y cómputo tienen condiciones separadas |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Este repositorio corresponde a la primera edición de 2015; el autor enlaza ediciones más nuevas y no se debe presentar como entorno actual |
+| Coste | Sin pago a un modelo en la ruta básica. El código se consulta libremente; el libro y cómputo tienen condiciones separadas |
+| Equipo | Preparación según la ruta elegida. Python; dependencias correspondientes a la primera edición; datos educativos |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Este repositorio corresponde a la primera edición de 2015; el autor enlaza ediciones más nuevas y no se debe presentar como entorno actual
 
 ## Qué puedes hacer con él
 
-Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación. Presenta notebooks y scripts que acompañan los capítulos y conceptos del libro.
+Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación.
 
 ## Por qué destaca
 
-Quieres estudiar los ejemplos de la primera edición del libro.
+Usos propuestos: Aprender regresión y clasificación; Entender validación de modelos.
 
 ## Cómo funciona
 
-Presenta notebooks y scripts que acompañan los capítulos y conceptos del libro.
+Este repositorio corresponde a la primera edición de 2015; el autor enlaza ediciones más nuevas y no se debe presentar como entorno actual
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Python
+- dependencias correspondientes a la primera edición
+- datos educativos
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/rasbt/python-machine-learning-book/blob/master/README.md)
 
@@ -51,21 +60,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar python-machine-learning-book para mi objetivo y necesito pasos guiados. Lee https://github.com/rasbt/python-machine-learning-book/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Abre el capítulo de clasificación y compara una predicción con su etiqueta de prueba.
+
+**Qué comprobar:** Puedes reconocer el objetivo y la métrica del ejemplo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres estudiar los ejemplos de la primera edición del libro
+- Aprender regresión y clasificación
+- Entender validación de modelos
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres estudiar los ejemplos de la primera edición del libro | necesitas una aplicación lista para usuarios sin trabajo técnico |
+| Tu objetivo encaja con estos ejemplos: Aprender regresión y clasificación; Entender validación de modelos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Es material histórico; el README enlaza otras ediciones y las dependencias pueden requerir adaptación.
+**Limitaciones:** Este repositorio corresponde a la primera edición de 2015; el autor enlaza ediciones más nuevas y no se debe presentar como entorno actual
 
 ## Stack y modelos
 
-- **Stack:** Jupyter Notebook
+- **Stack:** Python; dependencias correspondientes a la primera edición; datos educativos
 - **Etiquetas:** `aprender` `data-mining` `data-science` `logistic-regression` `machine-learning` `machine-learning-algorithms` `neural-network` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +93,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/rasbt/python-machine-learning-book/blob/master/README.md)
 

@@ -1,8 +1,8 @@
 [🏠 Inicio](../README.md) › [🎬 Audio, transcripción, voz y música](../categorias/29-audio-voz-musica.md) › Síntesis y clonación de voz
 
-# 🎚️ OmniVoice-Studio
+# 🎚️ VoiceStudio
 
-> Alternativa local y open source a ElevenLabs: clonación, diseño y conversión de voz en una app.
+> App local de voz con modelos descargables,edición AGPL y una oferta comercial separada.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,58 +16,75 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La app AGPL puede usarse incluso comercialmente bajo sus términos; existe una edición cerrada comercial y pesos o voces con licencias separadas |
+| Claude Code | Referencia para la herramienta; no es una integración |
+| Codex | Referencia para la herramienta; no es una integración |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. El nombre actual es VoiceStudio; pedir a Claude o Codex ayuda para instalar no es una integración de sus planes ni garantiza igual calidad en todos los idiomas anunciados |
+| Coste | El coste depende del proveedor o la ruta. La app AGPL puede usarse incluso comercialmente bajo sus términos; existe una edición cerrada comercial y pesos o voces con licencias separadas |
+| Equipo | Preparación según la ruta elegida. Instalador VoiceStudio para tu sistema; modelos; almacenamiento; voces autorizadas |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El nombre actual es VoiceStudio; pedir a Claude o Codex ayuda para instalar no es una integración de sus planes ni garantiza igual calidad en todos los idiomas anunciados
 
 ## Qué puedes hacer con él
 
-Reúne STT, TTS y dubbing en una sola app sin claves de API.
+App local de voz con modelos descargables,edición AGPL y una oferta comercial separada.
 
 ## Por qué destaca
 
-Combina dictado, clonación y dubbing en una sola app de escritorio sin nube ni API keys, algo poco común; está en beta activa y es un proyecto pequeño y poco conocido, conviene validarlo antes de depender de él.
+Usos propuestos: Preparar una narración local; Probar transcripción o doblaje de material propio.
 
 ## Cómo funciona
 
-Envuelve modelos locales de STT y TTS en una interfaz de escritorio Python que orquesta transcripción, síntesis y reemplazo de audio en el video, manteniendo todo on-device.
+El nombre actual es VoiceStudio; pedir a Claude o Codex ayuda para instalar no es una integración de sus planes ni garantiza igual calidad en todos los idiomas anunciados
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Instalador VoiceStudio para tu sistema
+- modelos
+- almacenamiento
+- voces autorizadas
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/debpalash/VoiceStudio/blob/main/README.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar OmniVoice-Studio para mi objetivo y necesito pasos guiados. Lee https://github.com/debpalash/VoiceStudio/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar VoiceStudio para mi objetivo y necesito pasos guiados. Lee https://github.com/debpalash/VoiceStudio/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Descarga un modelo compatible y sintetiza un párrafo propio antes de probar clonación.
+
+**Qué comprobar:** Puedes comprobar modelo, licencia y salida de audio.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Dictado de escritorio sin nube
-- Doblar videos a otros idiomas
-- Clonar voz sin API keys
+- Preparar una narración local
+- Probar transcripción o doblaje de material propio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres suite de voz completa local (dictado + clonación + dubbing) | solo necesitas TTS simple por CLI/librería (TTS) o estabilidad de producción |
+| Tu objetivo encaja con estos ejemplos: Preparar una narración local; Probar transcripción o doblaje de material propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Beta activa: cosas pueden romperse entre releases; proyecto pequeño, valida mantenimiento antes de adoptarlo.
+**Limitaciones:** El nombre actual es VoiceStudio; pedir a Claude o Codex ayuda para instalar no es una integración de sus planes ni garantiza igual calidad en todos los idiomas anunciados
 
 ## Stack y modelos
 
-- **Stack:** desktop/Python
+- **Stack:** Instalador VoiceStudio para tu sistema; modelos; almacenamiento; voces autorizadas
 - **Etiquetas:** `tts` `audio` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -81,7 +98,7 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [VideoLingo](videolingo.md) | 19.3k | App que subtitula, traduce y dobla videos de forma automática: ASR con timestamps por palabra, traducción con LLM y TTS. |
+| [VideoLingo](videolingo.md) | 19.3k | App para reconocer voz, traducir subtítulos y preparar doblaje, con ASR local por defecto y proveedores configurables por etapa. |
 
 ## Enlaces
 
@@ -90,7 +107,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/debpalash/VoiceStudio/blob/main/README.md)
 

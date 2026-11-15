@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La guía no necesita API; implementar sus ideas sí puede usar modelos de pago o locales |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El bloque de pseudocódigo es ilustrativo y no un instalador ejecutable; la licencia de contenido es CC BY-SA |
+| Coste | Sin pago a un modelo en la ruta básica. La guía no necesita API; implementar sus ideas sí puede usar modelos de pago o locales |
+| Equipo | Preparación según la ruta elegida. Navegador; flujo de agente dibujado |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El bloque de pseudocódigo es ilustrativo y no un instalador ejecutable; la licencia de contenido es CC BY-SA
 
 ## Qué puedes hacer con él
 
-Ensayo de Dex Horthy (HumanLayer) que resume lo aprendido construyendo agentes para clientes reales: los productos que funcionan son sobre todo software determinista con pasos de LLM bien colocados. Cada factor (controlar tus prompts, tu ventana de contexto y tu flujo de control, pausar y reanudar, contactar a humanos con tool calls, agentes pequeños) tiene su capítulo con diagramas y ejemplos.
+Guía de 12 principios de ingeniería para construir agentes con LLM fiables en producción, inspirada en las 12 Factor Apps.
 
 ## Por qué destaca
 
-Es agnóstico al framework y se ha vuelto una referencia habitual sobre context engineering y diseño de agentes. Ayuda a decidir qué partes conviene programar a mano en vez de dejarlas al bucle del agente.
+Usos propuestos: Revisar un diseño antes de programar; Estudiar recuperación de errores en agentes.
 
 ## Cómo funciona
 
-Es un README con un capítulo en Markdown por factor, diagramas y fragmentos de código, sobre todo en TypeScript; también enlaza la charla del AI Engineer World's Fair.
+El bloque de pseudocódigo es ilustrativo y no un instalador ejecutable; la licencia de contenido es CC BY-SA
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- flujo de agente dibujado
+
+1. Aplica el principio de controlar el flujo a un agente imaginario de soporte y señala dónde pedir intervención humana.
+2. Comprueba: Obtienes un diagrama con pasos deterministas y decisiones del modelo.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/humanlayer/12-factor-agents/blob/main/README.md)
 
@@ -51,23 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar 12-Factor Agents para mi objetivo y necesito pasos guiados. Lee https://github.com/humanlayer/12-factor-agents/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Aplica el principio de controlar el flujo a un agente imaginario de soporte y señala dónde pedir intervención humana.
+
+**Qué comprobar:** Obtienes un diagrama con pasos deterministas y decisiones del modelo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Revisar la arquitectura de un agente antes de llevarlo a producción
-- Decidir cuándo usar un framework y cuándo código propio
-- Diseñar pasos con aprobación humana mediante tool calls
+- Revisar un diseño antes de programar
+- Estudiar recuperación de errores en agentes
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| vas a construir un agente para clientes reales y quieres principios de diseño antes de elegir framework | buscas tutoriales con código ejecutable paso a paso; mira `agents-towards-production` o `ai-agents-for-beginners` |
+| Tu objetivo encaja con estos ejemplos: Revisar un diseño antes de programar; Estudiar recuperación de errores en agentes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Sin cambios desde septiembre de 2025; el contenido es CC BY-SA 4.0 y el código Apache 2.0.
+**Limitaciones:** El bloque de pseudocódigo es ilustrativo y no un instalador ejecutable; la licencia de contenido es CC BY-SA
 
 ## Stack y modelos
 
-- **Stack:** Markdown, TypeScript (ejemplos)
+- **Stack:** Navegador; flujo de agente dibujado
 - **Etiquetas:** `agents` `learning` `prompts` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -85,7 +99,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/humanlayer/12-factor-agents/blob/main/README.md)
 

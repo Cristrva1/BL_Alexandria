@@ -20,12 +20,12 @@ flowchart LR
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [evolution-api](../fichas/evolution-api.md) | Canal de WhatsApp: recibe y envía mensajes por webhook | 10.1k | `docker compose` |
-| 2 | [n8n](../fichas/n8n.md) | Orquesta el flujo: llama al LLM, guarda el lead y decide el traspaso | 211k | `docker compose` |
-| 3 | [n8n-mcp](../fichas/n8n-mcp.md) | Le da a tu agente de código el contexto de los nodos de n8n | 23.3k | `npx n8n-mcp` |
-| 4 | [n8n-skills](../fichas/n8n-skills.md) | Skills para que Claude Code diseñe los workflows sin errores | 6.6k | Clona el repo y copia las skills (`SKILL.md`) a tu directorio de skills de Claude Code… |
-| 5 | [chatwoot](../fichas/chatwoot.md) | Bandeja omnicanal para el traspaso a un agente humano | 39.9k | `docker compose` |
-| 6 | [novu](../fichas/novu.md) | Notificaciones internas (email, push) cuando entra un lead | 40.3k | `docker compose` |
+| 1 | [evolution-api](../fichas/evolution-api.md) | Canal de WhatsApp: recibe y envía mensajes por webhook | 10.1k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 2 | [n8n](../fichas/n8n.md) | Orquesta el flujo: llama al LLM, guarda el lead y decide el traspaso | 211k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 3 | [n8n-mcp](../fichas/n8n-mcp.md) | Le da a tu agente de código el contexto de los nodos de n8n | 23.3k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 4 | [n8n-skills](../fichas/n8n-skills.md) | Skills para que Claude Code diseñe los workflows sin errores | 6.6k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 5 | [chatwoot](../fichas/chatwoot.md) | Bandeja omnicanal para el traspaso a un agente humano | 39.9k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 6 | [novu](../fichas/novu.md) | Notificaciones internas (email, push) cuando entra un lead | 40.3k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## 🔌 Cómo se conecta
 

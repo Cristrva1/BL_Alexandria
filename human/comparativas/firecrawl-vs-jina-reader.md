@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. | Servicio que convierte cualquier URL en Markdown listo para LLM con solo anteponer r.jina.ai. |
 | ⭐ Estrellas | 202k | 12.3k |
-| Elígelo si… | alimentas agentes/RAG con web y quieres salida limpia | necesitas leer páginas como Markdown al instante |
-| Evítalo si… | solo quieres HTML crudo o el presupuesto de API no encaja | vas a rastrear sitios completos; mira `crawl4ai` o `firecrawl` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Preparar páginas para un buscador documental; Crear un mapa de URLs de una web propia | Tu objetivo encaja con estos ejemplos: Convertir un artículo a texto para consulta; Preparar una página para un índice documental |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | ☁️ cloud/API | ☁️ cloud/API |
-| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
+| API de IA | API de IA opcional | Sin clave propia de API de IA en la ruta básica |
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
-| Modelos locales | Modelo local no documentado | Modelo local no documentado |
+| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | AGPL-3.0 | Apache-2.0 |
-| Instalación | `npm i @mendable/firecrawl-js` | `curl https://r.jina.ai/https://ejemplo.com` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **firecrawl** si alimentas agentes/RAG con web y quieres salida limpia.
-- Elige **Jina Reader** si necesitas leer páginas como Markdown al instante.
+- Elige **firecrawl** si Tu objetivo encaja con estos ejemplos: Preparar páginas para un buscador documental; Crear un mapa de URLs de una web propia.
+- Elige **Jina Reader** si Tu objetivo encaja con estos ejemplos: Convertir un artículo a texto para consulta; Preparar una página para un índice documental.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

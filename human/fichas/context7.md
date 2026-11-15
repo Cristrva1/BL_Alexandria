@@ -16,38 +16,49 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La documentación tiene cupos y modalidades de acceso; el modelo del agente se paga o limita aparte |
 | Claude Code | Herramienta MCP para el agente |
 | Codex | Herramienta MCP para el agente |
-| Modelos locales | La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta. |
-| Coste | El coste depende del proveedor o la ruta. El cliente MCP usa su propio modelo. Context7 recomienda una API key y aplica límites o planes al servicio de documentación. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Conectar documentación actual no acredita que todo ejemplo sea válido para la versión instalada en tu proyecto |
+| Coste | El coste depende del proveedor o la ruta. La documentación tiene cupos y modalidades de acceso; el modelo del agente se paga o limita aparte |
+| Equipo | Preparación según la ruta elegida. Node.js >=22.13; cliente MCP; clave Context7 recomendada |
 
-Puede conectarse a un cliente con soporte MCP, incluido Claude Code o Codex. Debes configurar el servidor y sus permisos.
+Conectar documentación actual no acredita que todo ejemplo sea válido para la versión instalada en tu proyecto
 
 ## Qué puedes hacer con él
 
-Evita que el modelo invente APIs viejas: busca la documentación vigente de la librería que estás usando y la inyecta en el prompt.
+Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente.
 
 ## Por qué destaca
 
-Muy adoptado en agentes de código; reduce errores por APIs obsoletas.
+Usos propuestos: Consultar APIs recientes durante programación; Evitar mezclar instrucciones de versiones distintas.
 
 ## Cómo funciona
 
-Indexa documentación de miles de proyectos y la sirve por MCP filtrada por librería y versión.
+Conectar documentación actual no acredita que todo ejemplo sea válido para la versión instalada en tu proyecto
 
 ## Cómo empezar
 
-Se configura en tu agente. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un cliente MCP y el acceso a Context7 que requiera la ruta elegida.
+- Node.js >=22.13
+- cliente MCP
+- clave Context7 recomendada
 
-1. Elige el servidor remoto o la configuración documentada para tu cliente.
-2. Configura la API key recomendada y comprueba los límites de tu plan si la necesitas.
-3. Consulta la documentación de una librería concreta y verifica que la respuesta corresponde a su versión.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+npx ctx7 setup
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/upstash/context7/blob/master/README.md)
 
@@ -55,23 +66,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Context7 para mi objetivo y necesito pasos guiados. Lee https://github.com/upstash/context7/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Pide documentación de una versión concreta y contrasta el ejemplo devuelto con la fuente.
+
+**Qué comprobar:** El agente identifica la biblioteca y la versión consultada.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Programar con librerías que cambian rápido
-- Evitar APIs alucinadas
-- Consultar docs sin salir del agente
+- Consultar APIs recientes durante programación
+- Evitar mezclar instrucciones de versiones distintas
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tu agente de código usa librerías que cambian a menudo | trabajas sin conexión a internet |
+| Tu objetivo encaja con estos ejemplos: Consultar APIs recientes durante programación; Evitar mezclar instrucciones de versiones distintas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Depende del servicio en la nube de Upstash.
+**Limitaciones:** Conectar documentación actual no acredita que todo ejemplo sea válido para la versión instalada en tu proyecto
 
 ## Stack y modelos
 
-- **Stack:** TypeScript
+- **Stack:** Node.js >=22.13; cliente MCP; clave Context7 recomendada
 - **Etiquetas:** `mcp` `docs` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -97,7 +115,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/upstash/context7/blob/master/README.md)
 

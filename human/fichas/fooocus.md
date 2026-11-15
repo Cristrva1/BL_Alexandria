@@ -16,34 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No requiere API para generación local; hardware y licencias de modelos son independientes |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Descarga desde este repositorio y sus enlaces; sus notas de drivers y memoria son específicas y pueden ser antiguas, no instrucciones universales |
+| Coste | Sin pago a un modelo en la ruta básica. No requiere API para generación local; hardware y licencias de modelos son independientes |
+| Equipo | Preparación según la ruta elegida. Distribución oficial; para mínimo Windows documentado NVIDIA 4 GB VRAM y 8 GB RAM; disco para modelos |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Descarga desde este repositorio y sus enlaces; sus notas de drivers y memoria son específicas y pueden ser antiguas, no instrucciones universales
 
 ## Qué puedes hacer con él
 
-Es la opción más sencilla para empezar con difusión local.
+Herramienta de generación de imagen sobre SDXL pensada para dar buenos resultados con mínima configuración, ocultando parámetros técnicos tras presets inteligentes.
 
 ## Por qué destaca
 
-Es la opción más sencilla para empezar con difusión local, muy valorada por quienes quieren calidad sin aprender ajustes finos. Su autor (lllyasviel, el mismo de ControlNet) le da credibilidad técnica.
+Usos propuestos: Bocetar una imagen para una idea visual; Probar inpainting sin un grafo complejo.
 
 ## Cómo funciona
 
-Corre modelos de difusión SDXL sobre PyTorch+GPU optimizando prompts y sampling de forma automática, con una UI web ligera que expone solo lo esencial (estilo, número de imágenes, prompt).
+Descarga desde este repositorio y sus enlaces; sus notas de drivers y memoria son específicas y pueden ser antiguas, no instrucciones universales
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Distribución oficial
+- para mínimo Windows documentado NVIDIA 4 GB VRAM y 8 GB RAM
+- disco para modelos
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/lllyasviel/Fooocus/blob/main/readme.md)
 
@@ -51,23 +60,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Fooocus para mi objetivo y necesito pasos guiados. Lee https://github.com/lllyasviel/Fooocus/blob/main/readme.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Usa un preset y un prompt sencillo y guarda imagen y ajustes.
+
+**Qué comprobar:** Puedes comparar dos variantes cambiando un solo ajuste.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Artes de campaña sin montar pipeline
-- Iteración rápida diaria con calidad SDXL
-- Generación para perfiles no técnicos
+- Bocetar una imagen para una idea visual
+- Probar inpainting sin un grafo complejo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres resultados ya, sin curva | necesitas control fino del pipeline (ComfyUI) |
+| Tu objetivo encaja con estos ejemplos: Bocetar una imagen para una idea visual; Probar inpainting sin un grafo complejo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Requiere GPU; ofrece poco control fino frente a ComfyUI y su ecosistema de extensiones es reducido.
+**Limitaciones:** Descarga desde este repositorio y sus enlaces; sus notas de drivers y memoria son específicas y pueden ser antiguas, no instrucciones universales
 
 ## Stack y modelos
 
-- **Stack:** Python, GPU, PyTorch, modelos SDXL locales
+- **Stack:** Distribución oficial; para mínimo Windows documentado NVIDIA 4 GB VRAM y 8 GB RAM; disco para modelos
 - **Etiquetas:** `image` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +91,7 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Real-ESRGAN](real-esrgan.md) | 37.5k | Herramienta de superresolución y restauración para imágenes reales que reescala (2×/4×) y limpia material de baja calidad sin rehacerlo desde cero. |
+| [Real-ESRGAN](real-esrgan.md) | 37.5k | Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos. |
 
 ## Enlaces
 
@@ -83,7 +99,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/lllyasviel/Fooocus/blob/main/readme.md)
 

@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No necesita IA; herramientas y equipo son propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Retirar paquetes puede afectar funciones; la lista recomendada no sustituye comprobar la versión y el dispositivo concreto |
+| Coste | Sin pago a un modelo en la ruta básica. No necesita IA; herramientas y equipo son propios |
+| Equipo | Preparación según la ruta elegida. Dispositivo Android propio; ADB; depuración autorizada; respaldo y lista de paquetes |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Retirar paquetes puede afectar funciones; la lista recomendada no sustituye comprobar la versión y el dispositivo concreto
 
 ## Qué puedes hacer con él
 
 Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplicaciones.
 
+## Por qué destaca
+
+Usos propuestos: Estudiar software preinstalado de un dispositivo; Preparar una selección revisada por modelo.
+
 ## Cómo funciona
 
-La aplicación ofrece las herramientas de su interfaz o CLI después de preparar la distribución y sus dependencias.
+Retirar paquetes puede afectar funciones; la lista recomendada no sustituye comprobar la versión y el dispositivo concreto
 
 ## Cómo empezar
 
@@ -39,33 +44,46 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de instalación o servidor y las dependencias indicadas por el README.
+- Dispositivo Android propio
+- ADB
+- depuración autorizada
+- respaldo y lista de paquetes
 
-1. Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.
-2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
-3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
 
-[Instrucciones originales de instalación](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/blob/main/README.md)
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/wiki/Getting-started)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar universal-android-debloater-next-generation para mi objetivo y necesito pasos guiados. Lee https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar universal-android-debloater-next-generation para mi objetivo y necesito pasos guiados. Lee https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/wiki/Getting-started. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Conecta un dispositivo de prueba y revisa una entrada y su explicación sin aplicar una selección masiva.
+
+**Qué comprobar:** Puedes identificar paquete, función y posibilidad de restauración documentada.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplicaciones.
+- Estudiar software preinstalado de un dispositivo
+- Preparar una selección revisada por modelo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplicaciones. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Estudiar software preinstalado de un dispositivo; Preparar una selección revisada por modelo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Retirar paquetes puede afectar funciones; la lista recomendada no sustituye comprobar la versión y el dispositivo concreto
 
 ## Stack y modelos
 
-- **Stack:** Rust, Cargo.toml
+- **Stack:** Dispositivo Android propio; ADB; depuración autorizada; respaldo y lista de paquetes
 - **Etiquetas:** `personal` `app` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +93,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/blob/main/README.md)
 

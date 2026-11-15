@@ -16,34 +16,52 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
+| API de IA | Depende de la ruta elegida. Los modelos, herramientas y sandbox tienen costes por configuración; la integración Claude Code no incluye inferencia del servidor |
+| Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Documenta el skill claude-to-deerflow para controlar una instancia activa; pedir a Codex que instale el proyecto no demuestra una integración runtime con Codex |
+| Coste | El coste depende del proveedor o la ruta. Los modelos, herramientas y sandbox tienen costes por configuración; la integración Claude Code no incluye inferencia del servidor |
+| Equipo | Preparación según la ruta elegida. Docker o entorno de desarrollo; modelo configurado; carpeta de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Documenta el skill claude-to-deerflow para controlar una instancia activa; pedir a Codex que instale el proyecto no demuestra una integración runtime con Codex
 
 ## Qué puedes hacer con él
 
-Coordina tareas complejas delegando en agentes especializados.
+Super-agente open-source que orquesta sub-agentes, memoria y sandboxes con skills extensibles.
 
 ## Por qué destaca
 
-Orquestación potente y extensible; alcanzó gran visibilidad (#1 en GitHub Trending en su lanzamiento v2) y cuenta con el respaldo de ByteDance. Su diseño por skills lo hace ampliable sin tocar el núcleo.
+Usos propuestos: Investigar un tema con fuentes; Coordinar una generación de informe.
 
 ## Cómo funciona
 
-Un orquestador reparte sub-tareas a agentes con herramientas y sandbox, integrando memoria entre pasos; implementado en Python/TS sobre LangChain.
+Documenta el skill claude-to-deerflow para controlar una instancia activa; pedir a Codex que instale el proyecto no demuestra una integración runtime con Codex
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Docker o entorno de desarrollo
+- modelo configurado
+- carpeta de prueba
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+git clone https://github.com/bytedance/deer-flow.git
+cd deer-flow
+make setup          # interactive wizard: writes config.yaml and .env (about 2 minutes)
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/bytedance/deer-flow/blob/main/README.md)
 
@@ -51,21 +69,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar deer-flow para mi objetivo y necesito pasos guiados. Lee https://github.com/bytedance/deer-flow/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Completa setup y solicita un informe corto con fuentes antes de habilitar herramientas de escritura.
+
+**Qué comprobar:** Puedes contrastar las referencias y revisar las acciones del agente.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Research profundo
-- Tareas complejas multi-paso con herramientas
-- Flujos extensibles vía skills propias
+- Investigar un tema con fuentes
+- Coordinar una generación de informe
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres un orquestador completo y extensible | buscas algo minimalista o sin Docker |
+| Tu objetivo encaja con estos ejemplos: Investigar un tema con fuentes; Coordinar una generación de informe | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Documenta el skill claude-to-deerflow para controlar una instancia activa; pedir a Codex que instale el proyecto no demuestra una integración runtime con Codex
 
 ## Stack y modelos
 
-- **Stack:** Python/TS, LangChain, Docker
+- **Stack:** Docker o entorno de desarrollo; modelo configurado; carpeta de prueba
 - **Etiquetas:** `automation` `research` `python` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,9 +110,12 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/bytedance/deer-flow/blob/main/README.md)
+- [Fuente 2](https://github.com/bytedance/deer-flow/blob/main/docs/guide/skills-and-tools.md)
 
 ---
 

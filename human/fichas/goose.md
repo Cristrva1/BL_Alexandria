@@ -16,57 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | API de IA opcional. Documenta API, modelos locales Ollama y agentes ACP con cuentas Claude, ChatGPT o Gemini; aplican límites del servicio elegido |
 | Claude Code | Integración documentada por el proyecto |
 | Codex | Integración documentada por el proyecto |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
-| Otras rutas | El README también documenta proveedores ACP para utilizar acceso de Gemini, además de APIs y modelos locales. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Los proveedores y extensiones tienen requisitos diferentes; la integración ACP no incluye créditos ni garantiza todas las funciones de cada agente |
+| Coste | El coste depende del proveedor o la ruta. Documenta API, modelos locales Ollama y agentes ACP con cuentas Claude, ChatGPT o Gemini; aplican límites del servicio elegido |
+| Equipo | Preparación según la ruta elegida. CLI o app; proveedor o agente ACP autenticado; proyecto de prueba |
 
-El README documenta una integración con las sesiones de los agentes indicados. Configurar esa ruta y comprobar sus límites; otras rutas pueden facturar por API.
+Los proveedores y extensiones tienen requisitos diferentes; la integración ACP no incluye créditos ni garantiza todas las funciones de cada agente
 
 ## Qué puedes hacer con él
 
-Funciona como app de escritorio o CLI y va más allá del código: automatiza tareas de desarrollo y de sistema con extensiones MCP. Nacido en Block.
+Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM.
 
 ## Por qué destaca
 
-Diseñado alrededor de MCP desde el inicio, con app de escritorio y recetas compartibles.
+Usos propuestos: Automatizar una tarea de desarrollo; Comparar agentes conectados por ACP.
 
 ## Cómo funciona
 
-Un núcleo en Rust ejecuta el bucle del agente y carga extensiones MCP como herramientas.
+Los proveedores y extensiones tienen requisitos diferentes; la integración ACP no incluye créditos ni garantiza todas las funciones de cada agente
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/aaif-goose/goose/blob/main/README.md)
+- CLI o app
+- proveedor o agente ACP autenticado
+- proyecto de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://goose-docs.ai/docs/getting-started/installation)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar goose para mi objetivo y necesito pasos guiados. Lee https://github.com/aaif-goose/goose/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar goose para mi objetivo y necesito pasos guiados. Lee https://goose-docs.ai/docs/getting-started/installation. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Configura un proveedor y solicita resumir una carpeta pequeña antes de añadir extensiones.
+
+**Qué comprobar:** Puedes reconocer herramientas y contexto usados en la respuesta.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Automatizar tareas de desarrollo con MCP
-- Agente de escritorio para no programadores
-- Recetas reutilizables para el equipo
+- Automatizar una tarea de desarrollo
+- Comparar agentes conectados por ACP
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres un agente abierto con app de escritorio y MCP | solo programas en terminal y quieres el más usado; mira `opencode` |
+| Tu objetivo encaja con estos ejemplos: Automatizar una tarea de desarrollo; Comparar agentes conectados por ACP | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Los proveedores y extensiones tienen requisitos diferentes; la integración ACP no incluye créditos ni garantiza todas las funciones de cada agente
 
 ## Stack y modelos
 
-- **Stack:** Rust, TypeScript, Electron
+- **Stack:** CLI o app; proveedor o agente ACP autenticado; proyecto de prueba
 - **Etiquetas:** `coding-agent` `agents` `mcp` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -92,7 +109,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/aaif-goose/goose/blob/main/README.md)
 

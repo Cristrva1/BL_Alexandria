@@ -16,56 +16,73 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La biblioteca Apache-2.0 no requiere IA; datos y mapas externos conservan sus condiciones |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. npm install del README prepara el desarrollo del repositorio; sigue el handbook para integrar ECharts en tu app |
+| Coste | Sin pago a un modelo en la ruta básica. La biblioteca Apache-2.0 no requiere IA; datos y mapas externos conservan sus condiciones |
+| Equipo | Preparación según la ruta elegida. JavaScript; contenedor con tamaño; datos |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+npm install del README prepara el desarrollo del repositorio; sigue el handbook para integrar ECharts en tu app
 
 ## Qué puedes hacer con él
 
-Cubre casi cualquier tipo de chart en el navegador.
+Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos.
 
 ## Por qué destaca
 
-Una de las librerías de charts más completas y populares del ecosistema web, con renderizado de alto rendimiento sobre Canvas/SVG y comunidad muy activa. Su origen en Baidu y su paso a la ASF le dan madurez.
+Usos propuestos: Construir un dashboard interactivo; Combinar mapa y estadísticas en una web.
 
 ## Cómo funciona
 
-Configuras un objeto de opciones en JavaScript que la librería pinta sobre Canvas o SVG, con soporte de mapas, series complejas, animaciones y renderizado incremental para datasets grandes.
+npm install del README prepara el desarrollo del repositorio; sigue el handbook para integrar ECharts en tu app
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/apache/echarts/blob/master/README.md)
+- JavaScript
+- contenedor con tamaño
+- datos
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://echarts.apache.org/handbook/en/get-started/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar echarts para mi objetivo y necesito pasos guiados. Lee https://github.com/apache/echarts/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar echarts para mi objetivo y necesito pasos guiados. Lee https://echarts.apache.org/handbook/en/get-started/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Crea una serie de ventas y añade una segunda para comparar.
+
+**Qué comprobar:** La leyenda distingue ambas series y el tooltip muestra valores correctos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Gráficos interactivos, mapas y series complejas
-- Reporting embebido en apps web
-- Visualizaciones de alto volumen de datos
+- Construir un dashboard interactivo
+- Combinar mapa y estadísticas en una web
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas gráficos ricos y variados embebidos | solo series temporales simples y priorizas peso (uPlot) |
+| Tu objetivo encaja con estos ejemplos: Construir un dashboard interactivo; Combinar mapa y estadísticas en una web | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** npm install del README prepara el desarrollo del repositorio; sigue el handbook para integrar ECharts en tu app
 
 ## Stack y modelos
 
-- **Stack:** JavaScript/TypeScript
+- **Stack:** JavaScript; contenedor con tamaño; datos
 - **Etiquetas:** `dataviz` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -91,7 +108,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/apache/echarts/blob/master/README.md)
 

@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Las instrucciones usan el plan del agente; herramientas externas que el perfil recomiende tienen costes separados |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. Documenta instaladores para Claude Code, Codex y Antigravity; un perfil experto es una plantilla y no demuestra experiencia profesional ni una entrega validada |
+| Coste | Consumo del agente que ya utilizas. Las instrucciones usan el plan del agente; herramientas externas que el perfil recomiende tienen costes separados |
+| Equipo | Preparación según la ruta elegida. Agente compatible o app del catálogo; encargo concreto |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+Documenta instaladores para Claude Code, Codex y Antigravity; un perfil experto es una plantilla y no demuestra experiencia profesional ni una entrega validada
 
 ## Qué puedes hacer con él
 
-Plantillas de subagente en Markdown agrupadas por divisiones, como una agencia completa: ingeniería, diseño, paid media, ventas, marketing, producto, testing, seguridad, soporte, finanzas, videojuegos y más. Cada agente define identidad, misión, flujo de trabajo, entregables con ejemplos y métricas de éxito, y hay runbooks que arman equipos para escenarios como un MVP o una campaña.
+Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Code y otros agentes.
 
 ## Por qué destaca
 
-Cada agente es un rol concreto con proceso y entregables, no un prompt genérico, y los scripts lo adaptan a más de una docena de herramientas. Puedes instalar solo las divisiones que vayas a usar.
+Usos propuestos: Seleccionar un perfil de frontend; Revisar un brief de marketing.
 
 ## Cómo funciona
 
-Los agentes son archivos `.md` por división; `convert.sh` genera el formato de cada herramienta e `install.sh` los copia a su carpeta (por ejemplo `~/.claude/agents/`). También hay una app de escritorio que instala y actualiza el roster.
+Documenta instaladores para Claude Code, Codex y Antigravity; un perfil experto es una plantilla y no demuestra experiencia profesional ni una entrega validada
 
 ## Cómo empezar
 
@@ -43,11 +44,14 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Agente compatible o app del catálogo
+- encargo concreto
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/msitarzewski/agency-agents/blob/main/README.md)
 
@@ -55,23 +59,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar The Agency (agency-agents) para mi objetivo y necesito pasos guiados. Lee https://github.com/msitarzewski/agency-agents/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Instala solo un especialista y pide revisar un componente de prueba con criterios claros.
+
+**Qué comprobar:** Puedes reconocer su función y valorar sus recomendaciones.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Activar un agente de marketing o paid media en Claude Code
-- Montar un equipo de agentes para un MVP con un runbook
-- Usar los mismos roles en Cursor, Codex o Gemini CLI
+- Seleccionar un perfil de frontend
+- Revisar un brief de marketing
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres roles de negocio y técnicos ya definidos (marketing, ventas, producto, ingeniería) para tu agente de código | solo necesitas skills de marketing y growth; mira `marketingskills` |
+| Tu objetivo encaja con estos ejemplos: Seleccionar un perfil de frontend; Revisar un brief de marketing | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Son definiciones de rol en Markdown que no ejecutan nada por sí solas; además OpenCode solo registra unos 119 agentes, así que conviene instalar por divisiones.
+**Limitaciones:** Documenta instaladores para Claude Code, Codex y Antigravity; un perfil experto es una plantilla y no demuestra experiencia profesional ni una entrega validada
 
 ## Stack y modelos
 
-- **Stack:** Markdown, Bash, Python
+- **Stack:** Agente compatible o app del catálogo; encargo concreto
 - **Etiquetas:** `agents` `prompts` `skills` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -87,7 +98,7 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [wshobson/agents](wshobson-agents.md) | 42.5k | Marketplace de 94 plugins con más de 200 subagentes, 185 skills y 105 comandos para Claude Code, Codex, Cursor, OpenCode y Copilot. |
+| [wshobson/agents](wshobson-agents.md) | 42.5k | Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes. |
 
 ## Enlaces
 
@@ -96,7 +107,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/msitarzewski/agency-agents/blob/main/README.md)
 

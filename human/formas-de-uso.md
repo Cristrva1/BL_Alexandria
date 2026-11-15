@@ -6,13 +6,14 @@ Estas rutas se pueden combinar con un objetivo o categoría. Revisa la ficha: ca
 
 | Ruta | Repos | Abrir |
 |---|---:|---|
-| Sin API de IA | 466 | [Explorar](../docs/index.html#/explorar?route=no_api) |
-| Con Claude Code | 124 | [Explorar](../docs/index.html#/explorar?route=claude) |
-| Con Codex | 102 | [Explorar](../docs/index.html#/explorar?route=codex) |
-| Con modelos locales | 145 | [Explorar](../docs/index.html#/explorar?route=local_model) |
-| Con API de IA | 194 | [Explorar](../docs/index.html#/explorar?route=api) |
-| Leer y aprender | 66 | [Explorar](../docs/index.html#/explorar?route=reference) |
-| Requisitos por confirmar | 3 | [Explorar](../docs/index.html#/explorar?route=review) |
+| Sin clave de API de IA | 573 | [Explorar](../docs/index.html#/explorar?route=no_api) |
+| Con Claude Code | 251 | [Explorar](../docs/index.html#/explorar?route=claude) |
+| Con Codex | 220 | [Explorar](../docs/index.html#/explorar?route=codex) |
+| Con Antigravity | 166 | [Explorar](../docs/index.html#/explorar?route=antigravity) |
+| Con modelos locales | 243 | [Explorar](../docs/index.html#/explorar?route=local_model) |
+| Con API de IA | 278 | [Explorar](../docs/index.html#/explorar?route=api) |
+| Leer y aprender | 43 | [Explorar](../docs/index.html#/explorar?route=reference) |
+| Requisitos por confirmar | 4 | [Explorar](../docs/index.html#/explorar?route=review) |
 
 ## Requisitos por confirmar
 
@@ -20,6 +21,3 @@ Una fuente revisada no equivale a una prueba de ejecución. Los perfiles disting
 
 | Repo | Pregunta pendiente |
 |---|---|
-| [codex-chatgpt-web](fichas/codex-chatgpt-web.md) | No se da por verificada la autenticación o el coste real de esta integración de terceros. |
-| [muse-spark](fichas/muse-spark.md) | No se da por verificada la autenticación o el coste real de esta integración de terceros. |
-| [PixelFund-AI](fichas/pixelfund-ai.md) | El README describe agentes y simulación, pero no resuelve qué acceso a modelos exige cada proveedor. Revisa la guía SETUP y su configuración antes de asumir coste cero. |

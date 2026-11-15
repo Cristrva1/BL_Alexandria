@@ -1,0 +1,20 @@
+{
+  "antigravity-awesome-skills": {
+    "name": "Agentic Awesome Skills (AAS)",
+    "one": "Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills."
+  },
+  "wshobson-agents": {
+    "one": "Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes."
+  },
+  "andrej-karpathy-skills": {
+    "one": "Instrucciones para declarar supuestos, simplificar cambios y comprobar objetivos al programar, inspiradas en observaciones de Karpathy."
+  },
+  "skills": {
+    "role": "skill",
+    "one": "Skills de ingeniería de Matt Pocock para trabajar sobre requisitos, diseño, implementación y revisión, con plugins para Claude Code y Codex."
+  },
+  "ecc": {
+    "role": "skill",
+    "one": "Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente."
+  }
+}

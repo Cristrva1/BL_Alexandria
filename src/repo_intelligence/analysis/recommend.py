@@ -427,6 +427,9 @@ def _task_goals(project: str, goals: list[dict]) -> set[str]:
         for word in goal.get("keywords", [])
     )}
     broad = {"skills", "programar", "aprender", "local", "mcp", "web"}
+    # Documents can be an input to a presentation rather than the desired product.
+    if 'presentaciones' in matched and re.search(r'\b(?:desde|from|a partir de)\s+(?:los\s+|mis\s+)?document',text):
+        matched.discard('documentos')
     return matched - broad if matched - broad else matched
 
 

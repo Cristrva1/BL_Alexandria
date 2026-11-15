@@ -16,34 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| API de IA | API de IA opcional. Captura y búsqueda por palabras funcionan sin clave; embeddings locales son opcionales; compresión LLM puede hacer una llamada por observación |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Integración documentada por el proyecto |
+| Modelos locales | Modelos locales documentados. Las funciones y hooks dependen del runtime del cliente; la instalación de MCP no prueba que la captura automática esté activa |
+| Coste | El coste depende del proveedor o la ruta. Captura y búsqueda por palabras funcionan sin clave; embeddings locales son opcionales; compresión LLM puede hacer una llamada por observación |
+| Equipo | Preparación según la ruta elegida. Node.js >=20; servidor local; hooks revisados en el cliente |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Las funciones y hooks dependen del runtime del cliente; la instalación de MCP no prueba que la captura automática esté activa
 
 ## Qué puedes hacer con él
 
-Resuelve el "re-explica todo" al cambiar de asistente: la memoria vive fuera del cliente.
+Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes.
 
 ## Por qué destaca
 
-Evita re-explicar el contexto al cambiar de asistente, ofreciendo una memoria compartida poco común entre herramientas de coding. Su exposición vía MCP la hace compatible con cualquier cliente que hable el protocolo, no solo uno concreto.
+Usos propuestos: Compartir contexto entre Claude Code y Codex; Consultar decisiones por proyecto.
 
 ## Cómo funciona
 
-Se conecta vía MCP para que distintos clientes lean y escriban en el mismo almacén persistente del motor iii, manteniendo el contexto de proyecto/sesión al margen del IDE que uses en cada momento.
+Las funciones y hooks dependen del runtime del cliente; la instalación de MCP no prueba que la captura automática esté activa
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Node.js >=20
+- servidor local
+- hooks revisados en el cliente
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+npx -y @agentmemory/agentmemory@latest
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/rohitg00/agentmemory/blob/main/README.md)
 
@@ -51,21 +67,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar agentmemory para mi objetivo y necesito pasos guiados. Lee https://github.com/rohitg00/agentmemory/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Registra una decisión ficticia y búscala desde otro cliente conectado al mismo servidor.
+
+**Qué comprobar:** Puedes inspeccionar el recuerdo y confirmar que ambos clientes usan la misma instancia.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Que el agente "recuerde todo" y no re-expliques el contexto
-- Memoria multi-cliente vía MCP
-- Continuidad de proyecto entre Claude Code y Cursor
+- Compartir contexto entre Claude Code y Codex
+- Consultar decisiones por proyecto
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| cambias de asistente y quieres una memoria común entre ellos | te basta la memoria nativa de un único cliente o no usas MCP |
+| Tu objetivo encaja con estos ejemplos: Compartir contexto entre Claude Code y Codex; Consultar decisiones por proyecto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Las funciones y hooks dependen del runtime del cliente; la instalación de MCP no prueba que la captura automática esté activa
 
 ## Stack y modelos
 
-- **Stack:** motor iii, MCP
+- **Stack:** Node.js >=20; servidor local; hooks revisados en el cliente
 - **Etiquetas:** `agents` `memory` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -91,7 +116,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/rohitg00/agentmemory/blob/main/README.md)
 

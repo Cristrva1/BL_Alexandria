@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. GPL con alternativa comercial para determinados usos; no necesita API de IA y hardware separado |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es procesamiento de señal, no clonación de voz; los parámetros de ejemplo son marcadores y deben sustituirse con valores reales |
+| Coste | El coste depende del proveedor o la ruta. GPL con alternativa comercial para determinados usos; no necesita API de IA y hardware separado |
+| Equipo | Preparación según la ruta elegida. Biblioteca o utilidad compilada; libsndfile; audio de prueba |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Es procesamiento de señal, no clonación de voz; los parámetros de ejemplo son marcadores y deben sustituirse con valores reales
 
 ## Qué puedes hacer con él
 
 Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas.
 
+## Por qué destaca
+
+Usos propuestos: Ajustar duración de una narración; Explorar cambio de tono.
+
 ## Cómo funciona
 
-Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.
+Es procesamiento de señal, no clonación de voz; los parámetros de ejemplo son marcadores y deben sustituirse con valores reales
 
 ## Cómo empezar
 
@@ -39,11 +44,14 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
+- Biblioteca o utilidad compilada
+- libsndfile
+- audio de prueba
 
-1. Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.
-2. Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.
-3. Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/breakfastquay/rubberband/blob/default/README.md)
 
@@ -51,21 +59,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar rubberband para mi objetivo y necesito pasos guiados. Lee https://github.com/breakfastquay/rubberband/blob/default/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Cambia ligeramente el tempo de una copia de audio y compara duración y artefactos.
+
+**Qué comprobar:** Puedes reconocer qué cambió en tiempo y tono.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas.
+- Ajustar duración de una narración
+- Explorar cambio de tono
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| Tu objetivo encaja con estos ejemplos: Ajustar duración de una narración; Explorar cambio de tono | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Es procesamiento de señal, no clonación de voz; los parámetros de ejemplo son marcadores y deben sustituirse con valores reales
 
 ## Stack y modelos
 
-- **Stack:** C++
+- **Stack:** Biblioteca o utilidad compilada; libsndfile; audio de prueba
 - **Etiquetas:** `edicion` `library` `c`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +93,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/breakfastquay/rubberband/blob/default/README.md)
 

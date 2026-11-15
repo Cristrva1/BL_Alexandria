@@ -16,30 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
-| Claude Code | Integración no documentada |
+| API de IA | API de IA opcional. Los hooks deterministas no necesitan un modelo adicional; los ejemplos de voz o mensajes inteligentes pueden usar APIs u Ollama |
+| Claude Code | Integración documentada por el proyecto |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Se distingue el material de aprendizaje de un plugin automático; no hace falta activar todos los ejemplos ni sus servicios opcionales |
+| Coste | El coste depende del proveedor o la ruta. Los hooks deterministas no necesitan un modelo adicional; los ejemplos de voz o mensajes inteligentes pueden usar APIs u Ollama |
+| Equipo | Preparación según la ruta elegida. Claude Code y uv;  revisar solo un ejemplo de hook y sus dependencias |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Se distingue el material de aprendizaje de un plugin automático; no hace falta activar todos los ejemplos ni sus servicios opcionales
 
 ## Qué puedes hacer con él
 
 Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo.
 
+## Por qué destaca
+
+Usos propuestos: Registrar cuándo empieza y termina una sesión de trabajo; Comprender un control que revisa una acción antes de ejecutarla.
+
 ## Cómo funciona
 
-Se consulta como documentación o referencia; cada ejemplo o proyecto enlazado se evalúa por separado.
+Se distingue el material de aprendizaje de un plugin automático; no hace falta activar todos los ejemplos ni sus servicios opcionales
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y localiza la sección relacionada con tu tarea.
-2. Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.
-3. Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado.
+**Antes de empezar:**
+
+- Claude Code y uv
+-  revisar solo un ejemplo de hook y sus dependencias
+
+1. Estudia un hook sencillo de sesión y adapta una comprobación en una carpeta de prueba.
+2. Comprueba: El hook produce el evento o registro esperado al activar esa fase de la sesión.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/disler/claude-code-hooks-mastery/blob/main/README.md)
 
@@ -47,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar claude-code-hooks-mastery para mi objetivo y necesito pasos guiados. Lee https://github.com/disler/claude-code-hooks-mastery/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Estudia un hook sencillo de sesión y adapta una comprobación en una carpeta de prueba.
+
+**Qué comprobar:** El hook produce el evento o registro esperado al activar esa fase de la sesión.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo.
+- Registrar cuándo empieza y termina una sesión de trabajo
+- Comprender un control que revisa una acción antes de ejecutarla
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo. | necesitas una aplicación lista para ejecutar en lugar de material de consulta |
+| Tu objetivo encaja con estos ejemplos: Registrar cuándo empieza y termina una sesión de trabajo; Comprender un control que revisa una acción antes de ejecutarla | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Se distingue el material de aprendizaje de un plugin automático; no hace falta activar todos los ejemplos ni sus servicios opcionales
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Claude Code y uv;  revisar solo un ejemplo de hook y sus dependencias
 - **Etiquetas:** `metodologia` `reference` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -71,7 +91,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/disler/claude-code-hooks-mastery/blob/main/README.md)
 

@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 42k | AGPL-3.0 | Zig | 2026-11-10 |
 
-**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. El navegador y scripts deterministas no usan tokens; el agente integrado admite API, modelos locales y Codex con su cuenta |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. Ofrece MCP stdio y HTTP; su compatibilidad con páginas no es idéntica a un navegador completo y menor consumo no garantiza funcionar en toda web |
+| Coste | El coste depende del proveedor o la ruta. El navegador y scripts deterministas no usan tokens; el agente integrado admite API, modelos locales y Codex con su cuenta |
+| Equipo | Preparación según la ruta elegida. Binario compatible o Docker; agente o proveedor opcional; sitio de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Ofrece MCP stdio y HTTP; su compatibilidad con páginas no es idéntica a un navegador completo y menor consumo no garantiza funcionar en toda web
 
 ## Qué puedes hacer con él
 
-Ejecuta JavaScript y es compatible con Puppeteer y Playwright por CDP, usando una fracción de memoria. Ideal para scraping masivo.
+Navegador headless escrito en Zig para IA y automatización, mucho más ligero que Chrome.
 
 ## Por qué destaca
 
-Arranque instantáneo y bajo consumo frente a Chrome headless.
+Usos propuestos: Preparar navegación headless; Explorar un agente con modelo local.
 
 ## Cómo funciona
 
-Motor de navegador propio en Zig con V8 para JavaScript y un servidor CDP.
+Ofrece MCP stdio y HTTP; su compatibilidad con páginas no es idéntica a un navegador completo y menor consumo no garantiza funcionar en toda web
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Binario compatible o Docker
+- agente o proveedor opcional
+- sitio de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/lightpanda-io/browser/blob/main/README.md)
 
@@ -51,23 +60,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Lightpanda para mi objetivo y necesito pasos guiados. Lee https://github.com/lightpanda-io/browser/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Ejecuta una consulta simple sin LLM y compara el DOM con la página esperada.
+
+**Qué comprobar:** Puedes identificar la sesión y el resultado antes de probar autonomía.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Scraping a gran escala barato
-- Agentes web en servidores pequeños
-- Pruebas rápidas por CDP
+- Preparar navegación headless
+- Explorar un agente con modelo local
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas muchos navegadores headless con poca memoria | necesitas compatibilidad total con sitios complejos; usa Chrome con `playwright` |
+| Tu objetivo encaja con estos ejemplos: Preparar navegación headless; Explorar un agente con modelo local | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Aún en beta: algunas APIs web no están implementadas.
+**Limitaciones:** Ofrece MCP stdio y HTTP; su compatibilidad con páginas no es idéntica a un navegador completo y menor consumo no garantiza funcionar en toda web
 
 ## Stack y modelos
 
-- **Stack:** Zig, V8
+- **Stack:** Binario compatible o Docker; agente o proveedor opcional; sitio de prueba
 - **Etiquetas:** `browser` `scraping`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -85,7 +101,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/lightpanda-io/browser/blob/main/README.md)
 

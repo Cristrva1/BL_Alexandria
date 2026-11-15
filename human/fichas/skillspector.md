@@ -1,4 +1,4 @@
-[🏠 Inicio](../README.md) › [🧠 Skills, plugins y métodos para agentes](../categorias/02-skills-prompts-gu-as-de-agente.md) › Metodologías y harness para agentes de código
+[🏠 Inicio](../README.md) › [🔍 Analizar software y comprobar su seguridad](../categorias/16-analisis-de-software-y-seguridad.md) › Skills de análisis y seguridad
 
 # 🛡️ SkillSpector
 
@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 26.1k | Apache-2.0 | Python | 2026-06-23 |
 
-**Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟢 fácil
+**Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,58 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA necesaria. La ruta documentada necesita credenciales de un proveedor de IA o servicio externo. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | Consumo de APIs o servicios. El escaneo con LLM documenta proveedores con API key. Una propuesta de añadir Ollama no demuestra soporte local implementado. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. La ruta estática no requiere LLM; el análisis semántico puede usar Ollama, un CLI admitido o APIs con consumo |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. Se corrige API obligatoria y se mueve a seguridad. codex_cli está deshabilitado como proveedor; Codex como cliente MCP es otra ruta. El README señala una incidencia de stdio |
+| Coste | El coste depende del proveedor o la ruta. La ruta estática no requiere LLM; el análisis semántico puede usar Ollama, un CLI admitido o APIs con consumo |
+| Equipo | Preparación según la ruta elegida. Python, Git, uv y Make;  entorno Bash compatible para la ruta seleccionada |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Se corrige API obligatoria y se mueve a seguridad. codex_cli está deshabilitado como proveedor; Codex como cliente MCP es otra ruta. El README señala una incidencia de stdio
 
 ## Qué puedes hacer con él
 
-Resuelve el riesgo de ejecutar skills de terceros sin revisión.
+Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos.
 
 ## Por qué destaca
 
-Aporta una capa de seguridad muy necesaria sobre catálogos enormes de skills de terceros, y proviene de NVIDIA, lo que le da respaldo institucional. Es agnóstica al asistente, así que sirve para skills de Claude Code, Codex, Cursor, etc.
+Usos propuestos: Examinar una skill antes de incorporarla al agente; Añadir un escaneo de skills a una revisión de cambios.
 
 ## Cómo funciona
 
-Analiza los archivos de la skill en busca de comandos shell peligrosos, llamadas de red sospechosas o instrucciones ocultas, y reporta los hallazgos en un resumen accionable sin ejecutar nada.
+Se corrige API obligatoria y se mueve a seguridad. codex_cli está deshabilitado como proveedor; Codex como cliente MCP es otra ruta. El README señala una incidencia de stdio
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python, Git, uv y Make
+-  entorno Bash compatible para la ruta seleccionada
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+# Clone the repository
+git clone https://github.com/NVIDIA/skillspector.git
+cd skillspector
+
+# Create and activate virtual environment
+uv venv .venv && source .venv/bin/activate
+# or: python3 -m venv .venv && source .venv/bin/activate
+
+# Install for production use
+make install
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/NVIDIA/SkillSpector/blob/main/README.md)
 
@@ -51,21 +75,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar SkillSpector para mi objetivo y necesito pasos guiados. Lee https://github.com/NVIDIA/SkillSpector/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Escanea una carpeta de skill de prueba con la opción no-llm.
+
+**Qué comprobar:** Se genera un informe que enumera comprobaciones, hallazgos y cobertura.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Auditar skills de terceros antes de instalarlas
-- Detectar comandos peligrosos o exfiltración
-- Revisar catálogos descargados en lote
+- Examinar una skill antes de incorporarla al agente
+- Añadir un escaneo de skills a una revisión de cambios
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| instalas skills externas o curas catálogos | solo usas skills propias de confianza |
+| Tu objetivo encaja con estos ejemplos: Examinar una skill antes de incorporarla al agente; Añadir un escaneo de skills a una revisión de cambios | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Se corrige API obligatoria y se mueve a seguridad. codex_cli está deshabilitado como proveedor; Codex como cliente MCP es otra ruta. El README señala una incidencia de stdio
 
 ## Stack y modelos
 
-- **Stack:** Python/Node, Docker
+- **Stack:** Python, Git, uv y Make;  entorno Bash compatible para la ruta seleccionada
 - **Etiquetas:** `skills` `coding-agent` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -73,7 +106,7 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Agentic Awesome Skills](antigravity-awesome-skills.md) | 49.7k | Biblioteca comunitaria de más de 2.800 skills SKILL.md para Claude Code, Codex, Cursor y Gemini CLI, con instalador npx y MCP local. |
+| [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) | 49.7k | Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills. |
 
 ## Enlaces
 
@@ -83,9 +116,12 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría corregida en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/NVIDIA/SkillSpector/blob/main/README.md)
+- [Fuente 2](https://antigravity.google/docs/ide-mcp)
 
 ---
 

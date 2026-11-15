@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. La colección se consulta gratis; hay apps con API, modelos locales y skills que usan el plan del anfitrión |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Antigravity | Depende del recurso o la configuración |
+| Modelos locales | Modelos locales documentados. Documenta skills para Claude Code y Codex; no todas las apps son skills ni tienen idéntica compatibilidad o instalación |
+| Coste | El coste depende del proveedor o la ruta. La colección se consulta gratis; hay apps con API, modelos locales y skills que usan el plan del anfitrión |
+| Equipo | Preparación según la ruta elegida. Navegador; entorno y proveedor específicos del ejemplo elegido |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Documenta skills para Claude Code y Codex; no todas las apps son skills ni tienen idéntica compatibilidad o instalación
 
 ## Qué puedes hacer con él
 
-Repositorio de Shubham Saboo con plantillas de código abierto ordenadas por tipo: agentes simples de un solo archivo, agentes avanzados con herramientas y memoria, equipos multiagente, agentes de voz, agentes con MCP, RAG, chat con documentos y webs, fine-tuning y cursos rápidos de Google ADK y OpenAI Agents SDK. Según la app usa OpenAI, Anthropic, Google, xAI, DeepSeek o modelos abiertos.
+Colección de más de 100 apps de ejemplo listas para ejecutar: agentes, equipos multiagente, RAG, voz, MCP y skills, con varios LLM.
 
 ## Por qué destaca
 
-Cada ejemplo es un proyecto pequeño y completo que puedes ejecutar en minutos y adaptar a tu caso. Es Apache 2.0 y se añaden plantillas nuevas con frecuencia.
+Usos propuestos: Aprender con un asistente de viajes; Estudiar un RAG con Llama local.
 
 ## Cómo funciona
 
-Cada app vive en su carpeta con `requirements.txt` y un script principal, casi siempre en Python con Streamlit, y se ejecuta con tu API key. Las skills de `agent_skills/` se instalan en tu agente de código con el Skills CLI.
+Documenta skills para Claude Code y Codex; no todas las apps son skills ni tienen idéntica compatibilidad o instalación
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- entorno y proveedor específicos del ejemplo elegido
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md)
 
@@ -51,23 +59,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Awesome LLM Apps para mi objetivo y necesito pasos guiados. Lee https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Escoge una app de RAG local y revisa su README y requisitos antes de descargar modelos.
+
+**Qué comprobar:** Sabes qué archivos, modelo y servicio necesita esa app concreta.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Partir de una plantilla de agente de research o de RAG
-- Comparar frameworks de agentes con apps parecidas
-- Probar un agente conectado a GitHub o Notion por MCP
+- Aprender con un asistente de viajes
+- Estudiar un RAG con Llama local
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres una plantilla de app con LLM que funcione desde el primer día para adaptarla a tu proyecto | buscas un curso estructurado con lecciones en orden; mira `ai-agents-for-beginners` o `generative-ai-for-beginners` |
+| Tu objetivo encaja con estos ejemplos: Aprender con un asistente de viajes; Estudiar un RAG con Llama local | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Son demos: la calidad y el mantenimiento varían entre apps y casi ninguna está preparada para producción tal cual.
+**Limitaciones:** Documenta skills para Claude Code y Codex; no todas las apps son skills ni tienen idéntica compatibilidad o instalación
 
 ## Stack y modelos
 
-- **Stack:** Python, Streamlit, OpenAI Agents SDK, Google ADK, Agno
+- **Stack:** Navegador; entorno y proveedor específicos del ejemplo elegido
 - **Etiquetas:** `agents` `rag` `learning` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -94,7 +109,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Shubhamsaboo/awesome-llm-apps/blob/main/README.md)
 

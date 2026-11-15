@@ -16,34 +16,44 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
-| Claude Code | Integración no documentada |
+| API de IA | API de IA opcional. Consultar es gratuito; modelos locales requieren hardware y proveedores remotos tienen sus condiciones; plugin usa el plan del agente |
+| Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Es un centro de recursos con modelos y recetas distintas; el plugin nemotron-customize es para Claude Code y no implica compatibilidad automática de toda receta |
+| Coste | El coste depende del proveedor o la ruta. Consultar es gratuito; modelos locales requieren hardware y proveedores remotos tienen sus condiciones; plugin usa el plan del agente |
+| Equipo | Preparación según la ruta elegida. Navegador; modelo o receta elegida; GPU según tarea; Claude Code solo para plugin |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es un centro de recursos con modelos y recetas distintas; el plugin nemotron-customize es para Claude Code y no implica compatibilidad automática de toda receta
 
 ## Qué puedes hacer con él
 
-Reúne guías de entrenamiento, despliegue y casos de uso de los modelos Nemotron, pensados para IA agéntica eficiente.
+Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos.
 
 ## Por qué destaca
 
-Modelos abiertos con datos y recetas publicados, optimizados para GPUs NVIDIA.
+Usos propuestos: Explorar modelos abiertos de NVIDIA; Preparar un pipeline guiado de adaptación.
 
 ## Cómo funciona
 
-Notebooks y documentación que usan NeMo, vLLM o TensorRT-LLM.
+Es un centro de recursos con modelos y recetas distintas; el plugin nemotron-customize es para Claude Code y no implica compatibilidad automática de toda receta
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- modelo o receta elegida
+- GPU según tarea
+- Claude Code solo para plugin
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/NVIDIA-NeMo/Nemotron/blob/main/README.md)
 
@@ -51,21 +61,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Nemotron (NVIDIA) para mi objetivo y necesito pasos guiados. Lee https://github.com/NVIDIA-NeMo/Nemotron/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Elige una receta y usa su guía para identificar datos, checkpoint y recursos antes de ejecutarla.
+
+**Qué comprobar:** Puedes diferenciar entrenamiento, adaptación e inferencia.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Desplegar modelos abiertos de NVIDIA
-- Afinar Nemotron
-- Agentes con modelos eficientes
+- Explorar modelos abiertos de NVIDIA
+- Preparar un pipeline guiado de adaptación
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| usas GPUs NVIDIA y quieres modelos abiertos optimizados | buscas la forma más simple de correr modelos; mira `ollama` |
+| Tu objetivo encaja con estos ejemplos: Explorar modelos abiertos de NVIDIA; Preparar un pipeline guiado de adaptación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Es un centro de recursos con modelos y recetas distintas; el plugin nemotron-customize es para Claude Code y no implica compatibilidad automática de toda receta
 
 ## Stack y modelos
 
-- **Stack:** Python, Jupyter
+- **Stack:** Navegador; modelo o receta elegida; GPU según tarea; Claude Code solo para plugin
 - **Etiquetas:** `training` `inference`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,7 +102,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/NVIDIA-NeMo/Nemotron/blob/main/README.md)
 

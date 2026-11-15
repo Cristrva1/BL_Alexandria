@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. |
 | ⭐ Estrellas | 12.8k | 18.7k |
-| Elígelo si… | tienes una GPU de 60-80 GB o varias GPU y quieres un modelo de texto a video abierto de alta calidad | quieres el modelo de video abierto de referencia, con licencia permisiva, y tienes una GPU de 24 GB o más |
-| Evítalo si… | trabajas con GPU de consumo; prueba `ltx-video`, `wan2-2` o `wan2gp`, o la versión 1.5, más eficiente | tu GPU tiene menos de 24 GB o prefieres no trabajar con scripts; usa `wan2gp` o `comfyui` con modelos cuantizados |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Estudiar generación local de video; Probar un prompt visual con pesos abiertos | Tu objetivo encaja con estos ejemplos: Prototipar una escena desde texto; Animar una imagen propia con un modelo local |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
-| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | API de IA opcional |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🔴 pesado | 🔴 pesado |
 | Licencia | NOASSERTION | Apache-2.0 |
-| Instalación | `git clone https://github.com/Tencent-Hunyuan/HunyuanVideo` | `git clone https://github.com/Wan-Video/Wan2.2.git && cd Wan2.2 && pip install -r requirements.txt` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **HunyuanVideo** si tienes una GPU de 60-80 GB o varias GPU y quieres un modelo de texto a video abierto de alta calidad.
-- Elige **Wan2.2** si quieres el modelo de video abierto de referencia, con licencia permisiva, y tienes una GPU de 24 GB o más.
+- Elige **HunyuanVideo** si Tu objetivo encaja con estos ejemplos: Estudiar generación local de video; Probar un prompt visual con pesos abiertos.
+- Elige **Wan2.2** si Tu objetivo encaja con estos ejemplos: Prototipar una escena desde texto; Animar una imagen propia con un modelo local.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

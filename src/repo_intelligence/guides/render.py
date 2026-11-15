@@ -250,6 +250,9 @@ def _render_detail_index(project_root: Path, cat: Catalog, local_ids: set[str]) 
                 "access": repo.get("access"),
                 "routes": repo.get("routes", []),
                 "getting_started": repo.get("getting_started", {}),
+                "first_try": repo.get("first_try", {}),
+                "practical_examples": repo.get("practical_examples", []),
+                "editorial_review": repo.get("editorial_review", {}),
             }
         )
     write_json(project_root / "ai_index" / "REPOS.detail.json", {"generated_from": "INDICE_IA.json + INDICE_IA.detalle.json", "repos": rows})
@@ -322,7 +325,8 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
             lines += ["**Antes de empezar:**", ""] + [f"- {item}" for item in getting["prerequisites"]] + [""]
         lines += [f"{index}. {step}" for index, step in enumerate(getting.get("steps", []), 1)] + [""]
         if getting.get("command"):
-            lines += ["**Comando de entrada documentado:**", "", "```shell", getting["command"], "```", "", getting.get("note", ""), ""]
+            lines += ["**Entrada documentada ("+(getting.get('command_language') or 'consulta la sintaxis original')+"):**", "", "```", getting["command"], "```", ""]
+        lines += [getting.get("note", ""), ""]
         if getting.get("source"):
             lines += [f"[Instrucciones originales de instalación]({getting['source']})", ""]
         if getting.get("entry_url"):
@@ -330,6 +334,9 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
         lines += ["**Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:", "", f"> Quiero usar {repo.get('name') or repo['id']} para mi objetivo y necesito pasos guiados. Lee {getting.get('source') or repo.get('repo_url')}. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.", ""]
     else:
         section("Cómo empezar", repo.get("install"))
+    first_try=repo.get('first_try') or {}
+    if first_try:
+        section('Tu primera prueba',first_try['action']+'.\n\n**Qué comprobar:** '+first_try['success']+'.\n\nPrueba propuesta para ti; Alexandría no la ejecutó en este proyecto.')
     if repo.get("cases"):
         lines += ["## Casos de uso", ""] + [f"- {case}" for case in repo["cases"]] + [""]
     if repo.get("choose_if") or repo.get("avoid_if"):
@@ -369,6 +376,9 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
         lines += ["## Enlaces", ""] + links + [""]
     if access.get("sources"):
         lines += ["## Fuentes y alcance de revisión", "", f"Acceso revisado el {access.get('checked_at') or 'fecha por confirmar'}. Lectura de documentación; no prueba de instalación o ejecución.", ""]
+        review=repo.get('editorial_review') or {}
+        if review:
+            lines += ['Categoría '+('corregida' if review.get('category_verdict')=='corrected' else 'confirmada')+' en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.','']
         lines += [f"- [Fuente {index}]({url})" for index, url in enumerate(access["sources"], 1)] + [""]
     lines.append(_footer(cat))
     return "\n".join(lines)

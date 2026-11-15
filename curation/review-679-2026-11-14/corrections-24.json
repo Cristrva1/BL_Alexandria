@@ -1,0 +1,5 @@
+{
+ "unsloth":{"one":"App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcionales."},
+ "timesfm":{"one":"Modelos preentrenados de Google para pronóstico de series temporales; las licencias de los pesos cambian por versión."},
+ "warp":{"one":"Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal."}
+}

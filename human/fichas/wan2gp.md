@@ -16,58 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| API de IA | API de IA opcional. La app se ofrece sin cuota local; proveedores remotos de Deepy, modelos y recursos de búsqueda pueden costar |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Documenta Claude Code y Codex como proveedores remotos auxiliares; que algunos modelos quepan en 4 GB no garantiza que todos lo hagan |
+| Coste | El coste depende del proveedor o la ruta. La app se ofrece sin cuota local; proveedores remotos de Deepy, modelos y recursos de búsqueda pueden costar |
+| Equipo | Preparación según la ruta elegida. GPU compatible; Python y PyTorch según guía; pesos del modelo elegido |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Documenta Claude Code y Codex como proveedores remotos auxiliares; que algunos modelos quepan en 4 GB no garantiza que todos lo hagan
 
 ## Qué puedes hacer con él
 
-WanGP, antes Wan2GP, es una interfaz web para ejecutar en tu GPU decenas de modelos generativos abiertos: video (Wan 2.1/2.2, LTX-2, Hunyuan Video), imagen (Flux, Qwen Image), voz y música (Chatterbox, Index TTS, Ace Step) y 3D. Añade cola de trabajos, LoRAs, galerías y un asistente local, Deepy, que planifica y lanza las generaciones por ti.
+App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas.
 
 ## Por qué destaca
 
-Está pensado para quien no tiene una GPU de 80 GB: gestiona memoria y cuantización (int8, fp8, GGUF, NV FP4) para correr modelos con 4-8 GB de VRAM, también en GTX 10XX y AMD, y añade los modelos nuevos casi en cuanto salen.
+Usos propuestos: Probar varios modelos desde una interfaz; Preparar clips locales con una GPU limitada.
 
 ## Cómo funciona
 
-App Python con interfaz Gradio que descarga los pesos adecuados a tu hardware y aplica offloading con su librería mmgp. Ofrece modo headless por línea de comandos, API propia e interfaz MCP para agentes externos.
+Documenta Claude Code y Codex como proveedores remotos auxiliares; que algunos modelos quepan en 4 GB no garantiza que todos lo hagan
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/deepbeepmeep/WanGP/blob/main/README.md)
+- GPU compatible
+- Python y PyTorch según guía
+- pesos del modelo elegido
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://github.com/deepbeepmeep/Wan2GP/blob/main/docs/INSTALLATION.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar WanGP para mi objetivo y necesito pasos guiados. Lee https://github.com/deepbeepmeep/WanGP/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar WanGP para mi objetivo y necesito pasos guiados. Lee https://github.com/deepbeepmeep/Wan2GP/blob/main/docs/INSTALLATION.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Elige un modelo pequeño admitido y genera un clip corto antes de activar Deepy o Showrunner.
+
+**Qué comprobar:** Puedes comprobar memoria, duración y motor de cada tarea.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Generar video con Wan o LTX en una GPU de 8-12 GB
-- Probar modelos nuevos de imagen, voz o música en una sola interfaz
-- Lanzar lotes de generación sin supervisión en modo headless
+- Probar varios modelos desde una interfaz
+- Preparar clips locales con una GPU limitada
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres generar video e imagen con modelos abiertos en una GPU de consumo sin montar flujos a mano | prefieres construir flujos por nodos con control fino (`comfyui`) o tienes una GPU grande y quieres el código oficial (`wan2-2`) |
+| Tu objetivo encaja con estos ejemplos: Probar varios modelos desde una interfaz; Preparar clips locales con una GPU limitada | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Su licencia propia (WanGP Community License) permite el uso gratuito, también en empresas, pero prohíbe venderlo, integrarlo en productos de pago u ofrecerlo como SaaS sin licencia comercial.
+**Limitaciones:** Documenta Claude Code y Codex como proveedores remotos auxiliares; que algunos modelos quepan en 4 GB no garantiza que todos lo hagan
 
 ## Stack y modelos
 
-- **Stack:** Python, PyTorch, Gradio, Diffusers, mmgp
+- **Stack:** GPU compatible; Python y PyTorch según guía; pesos del modelo elegido
 - **Etiquetas:** `video` `image` `tts` `local` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -91,7 +107,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/deepbeepmeep/WanGP/blob/main/README.md)
 

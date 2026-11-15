@@ -1,0 +1,9 @@
+{
+ "ui":["https://ui.shadcn.com/docs/mcp","https://antigravity.google/docs/ide-mcp"],
+ "mui":["https://mui.com/material-ui/getting-started/installation/","https://mui.com/material-ui/getting-started/mcp/","https://antigravity.google/docs/ide-mcp"],
+ "penpot":["https://penpot.app/ai/mcp-server"],
+ "radix-primitives":["https://www.radix-ui.com/primitives/docs/overview/getting-started"],
+ "tailwindcss":["https://tailwindcss.com/docs/installation/using-vite"],
+ "openui":["https://github.com/vercel-labs/skills/blob/main/docs/agents.md"],
+ "ui-sdk":["https://github.com/vercel-labs/skills/blob/main/docs/agents.md"]
+}

@@ -16,34 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
+| API de IA | Depende de la ruta elegida. La generación usa modelos y embeddings según configuración; Kubernetes y otros despliegues añaden costes |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Implementación independiente inspirada en DeepWiki, no versión oficial de ese servicio; el ejemplo Helm necesita una infraestructura previa |
+| Coste | El coste depende del proveedor o la ruta. La generación usa modelos y embeddings según configuración; Kubernetes y otros despliegues añaden costes |
+| Equipo | Preparación según la ruta elegida. Dependencias de la ruta elegida; repositorio de prueba; credenciales de modelos |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Implementación independiente inspirada en DeepWiki, no versión oficial de ese servicio; el ejemplo Helm necesita una infraestructura previa
 
 ## Qué puedes hacer con él
 
-Analiza un repositorio y crea documentación navegable con diagramas y un chat para preguntar sobre el código.
+Generador de wikis con IA para repos de GitHub, GitLab o Bitbucket, versión abierta de DeepWiki.
 
 ## Por qué destaca
 
-Documentación automática con diagramas Mermaid y opción de modelos locales.
+Usos propuestos: Preparar documentación inicial de una app; Crear una guía para incorporarse a un proyecto.
 
 ## Cómo funciona
 
-Clona el repo, crea embeddings del código y genera páginas y diagramas con el LLM; un chat usa RAG sobre el código.
+Implementación independiente inspirada en DeepWiki, no versión oficial de ese servicio; el ejemplo Helm necesita una infraestructura previa
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Dependencias de la ruta elegida
+- repositorio de prueba
+- credenciales de modelos
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/AsyncFuncAI/deepwiki-open/blob/main/README.md)
 
@@ -51,21 +60,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar DeepWiki Open para mi objetivo y necesito pasos guiados. Lee https://github.com/AsyncFuncAI/deepwiki-open/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Genera una wiki de un repositorio pequeño y contrasta una página con sus archivos.
+
+**Qué comprobar:** La explicación enlaza partes del código que puedes abrir.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Documentar un repo heredado
-- Onboarding de nuevos desarrolladores
-- Preguntar sobre código ajeno
+- Preparar documentación inicial de una app
+- Crear una guía para incorporarse a un proyecto
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres documentación automática de un repositorio | necesitas contexto de librerías externas; mira `context7` |
+| Tu objetivo encaja con estos ejemplos: Preparar documentación inicial de una app; Crear una guía para incorporarse a un proyecto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Implementación independiente inspirada en DeepWiki, no versión oficial de ese servicio; el ejemplo Helm necesita una infraestructura previa
 
 ## Stack y modelos
 
-- **Stack:** Python, Next.js
+- **Stack:** Dependencias de la ruta elegida; repositorio de prueba; credenciales de modelos
 - **Etiquetas:** `code` `docs` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,7 +107,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/AsyncFuncAI/deepwiki-open/blob/main/README.md)
 

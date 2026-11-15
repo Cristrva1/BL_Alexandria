@@ -16,42 +16,52 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El análisis no exige modelo; la licencia PolyForm Noncommercial limita uso comercial y ofrece licencia aparte |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. El setup detecta los tres clientes; no confundas poder instalarlo con tener permiso de uso comercial |
+| Coste | El coste depende del proveedor o la ruta. El análisis no exige modelo; la licencia PolyForm Noncommercial limita uso comercial y ofrece licencia aparte |
+| Equipo | Preparación según la ruta elegida. Node 22.18+ en 22.x o 24.11+; repositorio de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El setup detecta los tres clientes; no confundas poder instalarlo con tener permiso de uso comercial
 
 ## Qué puedes hacer con él
 
-Resuelve el "llegar a un proyecto ajeno y no saber por dónde empezar": lo navegas y lo discutes en vez de leer ficheros sueltos.
+Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva.
 
 ## Por qué destaca
 
-Facilita comprender un repo concreto de forma interactiva en vez de leer ficheros sueltos, útil cuando llegas a un proyecto ajeno. Su interfaz web con LLM integrado permite hacer preguntas y sugerir ideas sobre el código.
+Usos propuestos: Entender una base de código nueva; Inspeccionar el alcance de una refactorización.
 
 ## Cómo funciona
 
-Una interfaz web (TypeScript) recorre el repositorio y lo presenta como vistas navegables, apoyándose en LLMs para responder preguntas y sugerir ideas sobre la estructura y el flujo del proyecto.
+El setup detecta los tres clientes; no confundas poder instalarlo con tener permiso de uso comercial
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Node 22.18+ en 22.x o 24.11+
+- repositorio de prueba
 
-```shell
-npm install -g gitnexus
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+# Run from your repository root
+npx gitnexus analyze
+
+# Connect your editors once
+npx gitnexus setup
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md)
 
@@ -59,21 +69,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar GitNexus para mi objetivo y necesito pasos guiados. Lee https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Analiza una app pequeña y consulta el recorrido entre un endpoint y su función.
+
+**Qué comprobar:** El mapa permite localizar los archivos reales y sus conexiones.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Onboarding en un repo nuevo
-- Navegar relaciones y discutir ideas
-- Entender la arquitectura de un proyecto heredado
+- Entender una base de código nueva
+- Inspeccionar el alcance de una refactorización
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres entender un repo puntual de forma visual | necesitas indexar muchos repos a escala (codegraph) o no quieres front web |
+| Tu objetivo encaja con estos ejemplos: Entender una base de código nueva; Inspeccionar el alcance de una refactorización | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El setup detecta los tres clientes; no confundas poder instalarlo con tener permiso de uso comercial
 
 ## Stack y modelos
 
-- **Stack:** web/TypeScript
+- **Stack:** Node 22.18+ en 22.x o 24.11+; repositorio de prueba
 - **Etiquetas:** `code` `typescript`
 - **Modo de instalación sugerido:** 🌍 **Global** — instálalo una vez en tu máquina
 
@@ -99,7 +118,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/abhigyanpatwari/GitNexus/blob/main/README.md)
 

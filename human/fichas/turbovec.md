@@ -16,34 +16,49 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La biblioteca no exige API; obtener embeddings y disponer de RAM sigue siendo necesario |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Sus cifras de rendimiento son benchmarks del autor; no predicen el comportamiento de tu máquina o corpus |
+| Coste | Sin pago a un modelo en la ruta básica. La biblioteca no exige API; obtener embeddings y disponer de RAM sigue siendo necesario |
+| Equipo | Preparación según la ruta elegida. Python; wheel compatible o Rust y maturin para compilar; embeddings de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Sus cifras de rendimiento son benchmarks del autor; no predicen el comportamiento de tu máquina o corpus
 
 ## Qué puedes hacer con él
 
-Resuelve el coste de memoria y cómputo de la búsqueda vectorial cuando una vector DB completa es demasiado para tu escala.
+Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida.
 
 ## Por qué destaca
 
-Apuesta por la eficiencia, aplicando una técnica de cuantización moderna para acelerar la búsqueda con bajo coste de memoria. Sus bindings en Python y Rust la hacen usable desde ambos ecosistemas sin cambiar de stack.
+Usos propuestos: Explorar índices vectoriales embebidos; Reducir memoria de una búsqueda local.
 
 ## Cómo funciona
 
-Comprime los vectores con TurboQuant y resuelve las consultas por similitud directamente sobre la representación cuantizada, con bindings disponibles en Python y Rust para integrarse en pipelines existentes.
+Sus cifras de rendimiento son benchmarks del autor; no predicen el comportamiento de tu máquina o corpus
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python
+- wheel compatible o Rust y maturin para compilar
+- embeddings de prueba
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+pip install turbovec
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/RyanCodrai/turbovec/blob/main/README.md)
 
@@ -51,21 +66,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar turbovec para mi objetivo y necesito pasos guiados. Lee https://github.com/RyanCodrai/turbovec/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Indexa un conjunto pequeño y compara vecinos antes y después de cuantizar.
+
+**Qué comprobar:** Puedes medir memoria, tiempo y coincidencia en tus propios datos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Capa de recuperación para RAG
-- Vector search eficiente embebido
-- Sustituto ligero de una vector DB cuando no necesitas persistencia distribuida
+- Explorar índices vectoriales embebidos
+- Reducir memoria de una búsqueda local
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas vector search veloz y embebido sin desplegar una DB | ya usas una vector DB completa con persistencia y escalado horizontal |
+| Tu objetivo encaja con estos ejemplos: Explorar índices vectoriales embebidos; Reducir memoria de una búsqueda local | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Sus cifras de rendimiento son benchmarks del autor; no predicen el comportamiento de tu máquina o corpus
 
 ## Stack y modelos
 
-- **Stack:** Python / Rust
+- **Stack:** Python; wheel compatible o Rust y maturin para compilar; embeddings de prueba
 - **Etiquetas:** `automation` `vector-db` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,7 +107,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/RyanCodrai/turbovec/blob/main/README.md)
 

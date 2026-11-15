@@ -16,34 +16,57 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La ejecución local no necesita API de pago; hardware y modelos tienen sus costes y condiciones; el servicio web tiene términos independientes |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. CUDA es recomendado y existen rutas MPS, ROCm, XPU o CPU; disponibilidad de una ruta no garantiza igual velocidad o memoria en todas |
+| Coste | Sin pago a un modelo en la ruta básica. La ejecución local no necesita API de pago; hardware y modelos tienen sus costes y condiciones; el servicio web tiene términos independientes |
+| Equipo | Preparación según la ruta elegida. Python 3.11–3.12; uv; modelo y equipo compatibles; espacio para descarga |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+CUDA es recomendado y existen rutas MPS, ROCm, XPU o CPU; disponibilidad de una ruta no garantiza igual velocidad o memoria en todas
 
 ## Qué puedes hacer con él
 
-Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. Combina modelos de generación musical y una interfaz de inferencia para producir audio y personalizar estilos.
+Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño.
 
 ## Por qué destaca
 
-Necesitas experimentar con generación musical en tu propio equipo.
+Usos propuestos: Explorar una base musical de prueba; Comparar variantes de generación local.
 
 ## Cómo funciona
 
-Combina modelos de generación musical y una interfaz de inferencia para producir audio y personalizar estilos.
+CUDA es recomendado y existen rutas MPS, ROCm, XPU o CPU; disponibilidad de una ruta no garantiza igual velocidad o memoria en todas
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python 3.11–3.12
+- uv
+- modelo y equipo compatibles
+- espacio para descarga
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+# 2. Clone & install
+git clone https://github.com/ACE-Step/ACE-Step-1.5.git
+cd ACE-Step-1.5
+uv sync
+
+# 3. Launch Gradio UI (models auto-download on first run)
+uv run acestep
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/ace-step/ACE-Step-1.5/blob/main/README.md)
 
@@ -51,21 +74,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar ACE-Step-1.5 para mi objetivo y necesito pasos guiados. Lee https://github.com/ace-step/ACE-Step-1.5/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Genera una pieza muy corta y revisa duración, coherencia y recursos consumidos.
+
+**Qué comprobar:** Puedes relacionar parámetros y salida.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Necesitas experimentar con generación musical en tu propio equipo
+- Explorar una base musical de prueba
+- Comparar variantes de generación local
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas experimentar con generación musical en tu propio equipo | tu flujo audiovisual actual ya cubre esa etapa |
+| Tu objetivo encaja con estos ejemplos: Explorar una base musical de prueba; Comparar variantes de generación local | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Los requisitos de memoria dependen de la variante; descargar pesos y ejecutar inferencia puede ser costoso.
+**Limitaciones:** CUDA es recomendado y existen rutas MPS, ROCm, XPU o CPU; disponibilidad de una ruta no garantiza igual velocidad o memoria en todas
 
 ## Stack y modelos
 
-- **Stack:** Python, Docker, pyproject.toml, Node.js
+- **Stack:** Python 3.11–3.12; uv; modelo y equipo compatibles; espacio para descarga
 - **Etiquetas:** `musica` `text2music` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -76,7 +108,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ace-step/ACE-Step-1.5/blob/main/README.md)
 

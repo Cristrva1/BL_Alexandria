@@ -16,42 +16,49 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La clave exigida es de un servicio externo. No es una API de un modelo de lenguaje; el agente o aplicación que use sus datos tiene su propio acceso a IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No necesita API de IA para crear el entorno pero sí clave del servicio E2B; cómputo y tiempo del sandbox se facturan según plan |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | Consumo de APIs o servicios. La clave E2B_API_KEY da acceso al servicio de sandboxes, con sus propios límites y tarifas; el modelo se configura aparte. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Instalar el SDK no aloja todo E2B en tu equipo ni incluye un modelo de IA |
+| Coste | Consumo de APIs o servicios. No necesita API de IA para crear el entorno pero sí clave del servicio E2B; cómputo y tiempo del sandbox se facturan según plan |
+| Equipo | Preparación según la ruta elegida. Node o Python; cuenta E2B y clave; presupuesto de sandbox |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Instalar el SDK no aloja todo E2B en tu equipo ni incluye un modelo de IA
 
 ## Qué puedes hacer con él
 
-Arranca microVMs aisladas en milisegundos donde el agente puede ejecutar código, instalar paquetes o usar un escritorio. Muy usado para intérpretes de código y agentes de datos.
+Sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas.
 
 ## Por qué destaca
 
-Aislamiento real con Firecracker y SDKs simples; estándar en agentes que ejecutan código.
+Usos propuestos: Ejecutar código aislado de una app; Preparar un entorno temporal para un agente.
 
 ## Cómo funciona
 
-Cada sandbox es una microVM Firecracker controlada por SDK; el agente envía código y recibe la salida.
+Instalar el SDK no aloja todo E2B en tu equipo ni incluye un modelo de IA
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Node o Python
+- cuenta E2B y clave
+- presupuesto de sandbox
 
-```shell
-pip install e2b-code-interpreter
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (consulta la sintaxis original):**
+
+```
+npm i e2b
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/e2b-dev/E2B/blob/main/README.md)
 
@@ -59,23 +66,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar E2B para mi objetivo y necesito pasos guiados. Lee https://github.com/e2b-dev/E2B/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Crea un sandbox de prueba, ejecuta una operación de texto inocua y ciérralo.
+
+**Qué comprobar:** Puedes revisar resultado y ciclo de vida del sandbox.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Intérprete de código para un chatbot
-- Agentes de análisis de datos
-- Ejecutar código generado sin riesgo
+- Ejecutar código aislado de una app
+- Preparar un entorno temporal para un agente
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tu agente ejecuta código y necesitas aislarlo | solo necesitas ejecutar código localmente de confianza |
+| Tu objetivo encaja con estos ejemplos: Ejecutar código aislado de una app; Preparar un entorno temporal para un agente | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** El servicio gestionado es de pago por uso; el self-host es más complejo.
+**Limitaciones:** Instalar el SDK no aloja todo E2B en tu equipo ni incluye un modelo de IA
 
 ## Stack y modelos
 
-- **Stack:** Python, TypeScript, Firecracker
+- **Stack:** Node o Python; cuenta E2B y clave; presupuesto de sandbox
 - **Etiquetas:** `agents` `security` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -84,7 +98,7 @@ Comando presente en el README revisado; no es una prueba de instalación.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [smolagents](smolagents.md) | 30.4k | Librería mínima de Hugging Face para agentes que razonan escribiendo y ejecutando código Python. |
-| [Open SWE](open-swe.md) | 11.2k | Agente de código asíncrono de LangChain para montar tu propio agente interno de ingeniería. |
+| [Open SWE](open-swe.md) | 11.2k | Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables. |
 
 ## Alternativas (elige una)
 
@@ -99,7 +113,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/e2b-dev/E2B/blob/main/README.md)
 

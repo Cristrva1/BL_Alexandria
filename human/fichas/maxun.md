@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 18.4k | AGPL-3.0 | TypeScript | 2026-11-10 |
 
-**Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
+**Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,58 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. La extracción grabada no exige LLM; Cloud, proxies y modelos se pagan según ruta; Ollama sirve para funciones AI locales |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. MCP admite HTTP y stdio; la clave de Maxun autoriza el servicio y no sustituye credenciales de modelos |
+| Coste | El coste depende del proveedor o la ruta. La extracción grabada no exige LLM; Cloud, proxies y modelos se pagan según ruta; Ollama sirve para funciones AI locales |
+| Equipo | Preparación según la ruta elegida. Docker; cuenta local; modelo solo para funciones AI |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+MCP admite HTTP y stdio; la clave de Maxun autoriza el servicio y no sustituye credenciales de modelos
 
 ## Qué puedes hacer con él
 
-Grabas lo que quieres extraer haciendo clic en la página y Maxun crea un robot que lo repite, con paginación y programación. Ideal para equipos sin programadores.
+Plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción.
 
 ## Por qué destaca
 
-Alternativa abierta a herramientas como Browse AI, auto-hospedable.
+Usos propuestos: Convertir un listado en datos consultables; Monitorear cambios de un catálogo.
 
 ## Cómo funciona
 
-Un grabador en el navegador captura acciones y selectores; un ejecutor con Playwright las repite y guarda los datos.
+MCP admite HTTP y stdio; la clave de Maxun autoriza el servicio y no sustituye credenciales de modelos
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/getmaxun/maxun/blob/develop/README.md)
+- Docker
+- cuenta local
+- modelo solo para funciones AI
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://docs.maxun.dev/installation/docker)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Maxun para mi objetivo y necesito pasos guiados. Lee https://github.com/getmaxun/maxun/blob/develop/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Maxun para mi objetivo y necesito pasos guiados. Lee https://docs.maxun.dev/installation/docker. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Graba un robot que recoge nombres y precios de una página de prueba.
+
+**Qué comprobar:** El robot devuelve filas que puedes repetir y comparar.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Monitorear precios de la competencia
-- Extraer listados a Google Sheets
-- APIs de sitios sin API
+- Convertir un listado en datos consultables
+- Monitorear cambios de un catálogo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres extraer datos web sin programar | programas y prefieres librerías; mira `crawl4ai` o `scrapy` |
+| Tu objetivo encaja con estos ejemplos: Convertir un listado en datos consultables; Monitorear cambios de un catálogo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Licencia AGPL-3.0.
+**Limitaciones:** MCP admite HTTP y stdio; la clave de Maxun autoriza el servicio y no sustituye credenciales de modelos
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Playwright, PostgreSQL, Docker
+- **Stack:** Docker; cuenta local; modelo solo para funciones AI
 - **Etiquetas:** `scraping` `automation` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -91,9 +107,13 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/getmaxun/maxun/blob/develop/README.md)
+- [Fuente 2](https://docs.maxun.dev/mcp/setup)
+- [Fuente 3](https://antigravity.google/docs/ide-mcp)
 
 ---
 

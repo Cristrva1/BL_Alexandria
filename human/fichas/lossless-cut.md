@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Los ejecutables manuales se ofrecen gratis; tiendas pueden cobrar para apoyar el proyecto; no usa modelo |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Los cortes sin recodificar dependen de fotogramas clave y del contenedor; no prometas precisión idéntica a un render completo |
+| Coste | El coste depende del proveedor o la ruta. Los ejecutables manuales se ofrecen gratis; tiendas pueden cobrar para apoyar el proyecto; no usa modelo |
+| Equipo | Preparación según la ruta elegida. Distribución para tu sistema; archivo compatible; espacio de salida |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Los cortes sin recodificar dependen de fotogramas clave y del contenedor; no prometas precisión idéntica a un render completo
 
 ## Qué puedes hacer con él
 
-LosslessCut es una interfaz gráfica sobre FFmpeg para recortar y fusionar archivos de video y audio sin recompresión. Sirve para descartar gigas de material de cámara, GoPro o dron, extraer o reemplazar pistas, cambiar de contenedor (MKV a MP4) y editar metadatos o capítulos, en Windows, macOS y Linux.
+App de escritorio para cortar, unir y remuxar video y audio sin recodificar, en segundos y sin perder calidad.
 
 ## Por qué destaca
 
-Al copiar los streams en vez de recodificar, los cortes son casi instantáneos y sin pérdida incluso en archivos enormes. Detecta escenas, silencios y fotogramas negros, y ofrece CLI y API HTTP para automatizarlo.
+Usos propuestos: Quitar una parte de una grabación; Separar o unir medios compatibles.
 
 ## Cómo funciona
 
-App Electron con React que reproduce con el motor HTML5 de Chromium (o con FFmpeg para formatos no soportados) y exporta desde el archivo original con FFmpeg en modo copia de stream, sin tocar los fotogramas.
+Los cortes sin recodificar dependen de fotogramas clave y del contenedor; no prometas precisión idéntica a un render completo
 
 ## Cómo empezar
 
@@ -43,37 +44,45 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un archivo de video de prueba y una distribución compatible con tu sistema.
+- Distribución para tu sistema
+- archivo compatible
+- espacio de salida
 
-1. Elige la descarga oficial para tu sistema; el README distingue las tiendas de pago y los ejecutables gratuitos de GitHub.
-2. Abre una copia de un video y marca el comienzo y final del fragmento que quieres conservar.
-3. Exporta un fragmento y comprueba imagen, sonido y puntos de corte antes de trabajar con el original.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
 
-[Instrucciones originales de instalación](https://github.com/mifi/lossless-cut/blob/master/README.md)
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
-[Abrir la web o descarga indicada por el autor](https://github.com/mifi/lossless-cut/releases)
+[Instrucciones originales de instalación](https://losslesscut.app/docs/getting-started)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar LosslessCut para mi objetivo y necesito pasos guiados. Lee https://github.com/mifi/lossless-cut/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar LosslessCut para mi objetivo y necesito pasos guiados. Lee https://losslesscut.app/docs/getting-started. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Marca dos puntos de un video propio y exporta el segmento sin recodificar.
+
+**Qué comprobar:** Compruebas duración, comienzo, final y pistas del clip.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Recortar horas de grabación de cámara o dron en segundos
-- Extraer o reemplazar pistas de audio y subtítulos
-- Dividir por escenas o silencios antes de editar un reel
+- Quitar una parte de una grabación
+- Separar o unir medios compatibles
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas recortar o unir material rápido y sin recomprimir, con interfaz gráfica | necesitas efectos, transiciones o un montaje con capas; mira `opencut` o, por código, `moviepy` |
+| Tu objetivo encaja con estos ejemplos: Quitar una parte de una grabación; Separar o unir medios compatibles | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Sin recodificar, los cortes solo caen exactos en fotogramas clave, así que el punto de corte puede desplazarse unos fotogramas.
+**Limitaciones:** Los cortes sin recodificar dependen de fotogramas clave y del contenedor; no prometas precisión idéntica a un render completo
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Electron, React, FFmpeg
+- **Stack:** Distribución para tu sistema; archivo compatible; espacio de salida
 - **Etiquetas:** `video` `audio` `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -92,7 +101,9 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/mifi/lossless-cut/blob/master/README.md)
 

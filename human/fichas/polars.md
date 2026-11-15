@@ -2,7 +2,7 @@
 
 # 🗃️ Polars
 
-> Librería de DataFrames escrita en Rust, mucho más rápida que pandas.
+> Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,42 +16,49 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Sin API de IA; cómputo y alojamiento propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es un motor de consultas y DataFrames, no una app de BI; mayor velocidad que otra biblioteca depende del trabajo y configuración |
+| Coste | Sin pago a un modelo en la ruta básica. Sin API de IA; cómputo y alojamiento propios |
+| Equipo | Preparación según la ruta elegida. Python; CSV pequeño; memoria para los datos |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es un motor de consultas y DataFrames, no una app de BI; mayor velocidad que otra biblioteca depende del trabajo y configuración
 
 ## Qué puedes hacer con él
 
-API expresiva con ejecución perezosa y paralela para procesar datos grandes en un solo equipo.
+Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares.
 
 ## Por qué destaca
 
-Velocidad y bajo consumo de memoria frente a pandas.
+Usos propuestos: Transformar tablas; Preparar datos antes de un dashboard.
 
 ## Cómo funciona
 
-Motor de consultas en Rust con formato Arrow, optimizador y ejecución en streaming.
+Es un motor de consultas y DataFrames, no una app de BI; mayor velocidad que otra biblioteca depende del trabajo y configuración
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python
+- CSV pequeño
+- memoria para los datos
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (sh):**
+
+```
 pip install polars
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/pola-rs/polars/blob/main/README.md)
 
@@ -59,21 +66,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar Polars para mi objetivo y necesito pasos guiados. Lee https://github.com/pola-rs/polars/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Lee un archivo y agrupa por una columna para sumar otra.
+
+**Qué comprobar:** Puedes contrastar el resultado con una muestra calculada a mano.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Limpiar datasets grandes
-- Pipelines ETL rápidos
-- Sustituir pandas en cuellos de botella
+- Transformar tablas
+- Preparar datos antes de un dashboard
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tu análisis con pandas es lento | prefieres SQL; mira `duckdb` |
+| Tu objetivo encaja con estos ejemplos: Transformar tablas; Preparar datos antes de un dashboard | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Es un motor de consultas y DataFrames, no una app de BI; mayor velocidad que otra biblioteca depende del trabajo y configuración
 
 ## Stack y modelos
 
-- **Stack:** Rust, Python
+- **Stack:** Python; CSV pequeño; memoria para los datos
 - **Etiquetas:** `data` `python` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -96,7 +112,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/pola-rs/polars/blob/main/README.md)
 

@@ -1,0 +1,6 @@
+{
+ "openclaw":["https://docs.openclaw.ai/gateway/cli-backends","https://docs.openclaw.ai/concepts/model-providers"],
+ "hermes-agent":["https://hermes-agent.nousresearch.com/docs/user-guide/configuration"],
+ "deer-flow":["https://github.com/bytedance/deer-flow/blob/main/docs/guide/skills-and-tools.md"],
+ "gpt-researcher":["https://github.com/assafelovic/gptr-mcp/blob/master/README.md"]
+}

@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos. |
+| API de IA | Depende de la ruta elegida. Admite APIs, servidores locales y ruta Codex con Plus/Pro según guía; cada opción mantiene límites; ediciones comerciales se cobran aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración documentada por el proyecto |
-| Modelos locales | Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos. |
-| Coste | El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan. |
-| Equipo | Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La versión actual no soporta suscripciones Claude Code; esa ruta corresponde a 1.9.0 anterior y no se anuncia como soporte actual |
+| Coste | El coste depende del proveedor o la ruta. Admite APIs, servidores locales y ruta Codex con Plus/Pro según guía; cada opción mantiene límites; ediciones comerciales se cobran aparte |
+| Equipo | Preparación según la ruta elegida. Node; dependencias de la guía; objetivo autorizado de laboratorio; código; proveedor o modelo local |
 
-El README documenta una ruta de autenticación de Codex. Comprueba la configuración y las limitaciones de esa ruta; otras funciones y proveedores se configuran aparte. La versión actual declara que no usa suscripciones de Claude Code; la documentación remite a 1.9.0 para la ruta antigua.
+La versión actual no soporta suscripciones Claude Code; esa ruta corresponde a 1.9.0 anterior y no se anuncia como soporte actual
 
 ## Qué puedes hacer con él
 
 Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado.
 
+## Por qué destaca
+
+Usos propuestos: Evaluar una app propia en un laboratorio; Comparar evidencias y veredictos de una prueba autorizada.
+
 ## Cómo funciona
 
-La aplicación coordina modelos y herramientas; el acceso de cada componente se configura antes de ejecutar sus tareas.
+La versión actual no soporta suscripciones Claude Code; esa ruta corresponde a 1.9.0 anterior y no se anuncia como soporte actual
 
 ## Cómo empezar
 
@@ -39,12 +44,24 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de instalación o servidor y las dependencias indicadas por el README.
-- Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real.
+- Node
+- dependencias de la guía
+- objetivo autorizado de laboratorio
+- código
+- proveedor o modelo local
 
-1. Prepara una aplicación propia de laboratorio y el alcance de prueba antes de configurar el agente.
-2. Elige el proveedor: la versión actual documenta Codex, APIs y modelos locales; la ruta de suscripción de Claude Code corresponde a una versión antigua.
-3. Ejecuta una comprobación pequeña en el laboratorio y revisa la evidencia y el consumo antes de ampliar el alcance.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+npx @keygraph/shannon@latest
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/KeygraphHQ/shannon/blob/main/README.md)
 
@@ -52,21 +69,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar shannon para mi objetivo y necesito pasos guiados. Lee https://github.com/KeygraphHQ/shannon/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Configura primero un objetivo desechable propio y revisa alcance, credenciales y límites antes de iniciar un análisis.
+
+**Qué comprobar:** Puedes identificar exactamente qué se analizaría y dónde se guardarían hallazgos y costes.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado.
+- Evaluar una app propia en un laboratorio
+- Comparar evidencias y veredictos de una prueba autorizada
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Agente para analizar código y comprobar vulnerabilidades de aplicaciones web y APIs dentro de un alcance autorizado. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Evaluar una app propia en un laboratorio; Comparar evidencias y veredictos de una prueba autorizada | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Las pruebas activas y modificaciones requieren un alcance autorizado y un entorno adecuado.
+**Limitaciones:** La versión actual no soporta suscripciones Claude Code; esa ruta corresponde a 1.9.0 anterior y no se anuncia como soporte actual
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+- **Stack:** Node; dependencias de la guía; objetivo autorizado de laboratorio; código; proveedor o modelo local
 - **Etiquetas:** `agentes` `agent` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -77,7 +103,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/KeygraphHQ/shannon/blob/main/README.md)
 

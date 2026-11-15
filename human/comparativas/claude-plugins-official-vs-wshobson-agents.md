@@ -4,22 +4,22 @@
 
 | | [Claude Code Plugins Directory](../fichas/claude-plugins-official.md) | [wshobson/agents](../fichas/wshobson-agents.md) |
 |---|---|---|
-| Qué hace | Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. | Marketplace de 94 plugins con más de 200 subagentes, 185 skills y 105 comandos para Claude Code, Codex, Cursor, OpenCode y Copilot. |
+| Qué hace | Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. | Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes. |
 | ⭐ Estrellas | 47.3k | 42.5k |
-| Elígelo si… | usas Claude Code y quieres plugins oficiales o de socios que se instalan con un comando | quieres subagentes y comandos especializados por lenguaje o área, instalables plugin a plugin |
-| Evítalo si… | buscas recursos comunitarios o trabajas con otro agente; mira `awesome-claude-code` o `wshobson-agents` | solo quieres plugins oficiales de Anthropic y socios; mira `claude-plugins-official` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Añadir una herramienta de revisión al flujo de desarrollo; Conectar un servicio mediante un plugin publicado en el marketplace oficial | Tu objetivo encaja con estos ejemplos: Aplicar patrones de pruebas a un módulo Python; Adaptar el mismo conjunto de agentes a otra herramienta mediante sus generadores |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | ☁️ cloud/API | 🔀 híbrido |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
 | Coste | Consumo del agente que ya utilizas | Consumo del agente que ya utilizas |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | Apache-2.0 | MIT |
-| Instalación | `/plugin install <plugin>@claude-plugins-official` | `/plugin marketplace add wshobson/agents` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **Claude Code Plugins Directory** si usas Claude Code y quieres plugins oficiales o de socios que se instalan con un comando.
-- Elige **wshobson/agents** si quieres subagentes y comandos especializados por lenguaje o área, instalables plugin a plugin.
+- Elige **Claude Code Plugins Directory** si Tu objetivo encaja con estos ejemplos: Añadir una herramienta de revisión al flujo de desarrollo; Conectar un servicio mediante un plugin publicado en el marketplace oficial.
+- Elige **wshobson/agents** si Tu objetivo encaja con estos ejemplos: Aplicar patrones de pruebas a un módulo Python; Adaptar el mismo conjunto de agentes a otra herramienta mediante sus generadores.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

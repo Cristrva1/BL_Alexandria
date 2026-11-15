@@ -16,34 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Puedes elegir la ruta local documentada o configurar un proveedor remoto; la ruta remota puede requerir API key o acceso propio. |
+| API de IA | API de IA opcional. Puede usar motor local y proveedores remotos; los modelos, servicios y alojamiento tienen costes separados |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | El coste depende del proveedor o la ruta. La inferencia local consume recursos de tu equipo. Los proveedores remotos y servicios del cliente tienen sus propios planes y tarifas. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Desktop, Docker y móvil tienen capacidades y licencias que debes comprobar; elige también embeddings locales para una ruta privada completa |
+| Coste | El coste depende del proveedor o la ruta. Puede usar motor local y proveedores remotos; los modelos, servicios y alojamiento tienen costes separados |
+| Equipo | Preparación según la ruta elegida. App de escritorio o Docker; LLM y embeddings; documento de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Desktop, Docker y móvil tienen capacidades y licencias que debes comprobar; elige también embeddings locales para una ruta privada completa
 
 ## Qué puedes hacer con él
 
-Organiza documentos en espacios de trabajo, crea RAG sin configurar nada y añade agentes con herramientas. Escritorio o Docker multiusuario.
+App todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube.
 
 ## Por qué destaca
 
-La forma más fácil de tener RAG privado con agentes.
+Usos propuestos: Consultar documentación propia; Separar bases de conocimiento por proyecto.
 
 ## Cómo funciona
 
-Incluye base vectorial, embeddings y conectores a LLM; cada workspace tiene su contexto y agentes.
+Desktop, Docker y móvil tienen capacidades y licencias que debes comprobar; elige también embeddings locales para una ruta privada completa
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- App de escritorio o Docker
+- LLM y embeddings
+- documento de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Mintplex-Labs/anything-llm/blob/master/README.md)
 
@@ -51,21 +60,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar AnythingLLM para mi objetivo y necesito pasos guiados. Lee https://github.com/Mintplex-Labs/anything-llm/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Crea un workspace con un PDF corto y consulta un dato presente en él.
+
+**Qué comprobar:** Puedes abrir el fragmento que apoya la respuesta.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Chat con los documentos de la empresa
-- Agentes con búsqueda web
-- IA privada en un portátil
+- Consultar documentación propia
+- Separar bases de conocimiento por proyecto
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres RAG privado sin programar | necesitas un pipeline de RAG a medida; mira `llama-index` |
+| Tu objetivo encaja con estos ejemplos: Consultar documentación propia; Separar bases de conocimiento por proyecto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Desktop, Docker y móvil tienen capacidades y licencias que debes comprobar; elige también embeddings locales para una ruta privada completa
 
 ## Stack y modelos
 
-- **Stack:** JavaScript, Node.js, React
+- **Stack:** App de escritorio o Docker; LLM y embeddings; documento de prueba
 - **Etiquetas:** `rag` `agents` `local` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -91,7 +109,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Mintplex-Labs/anything-llm/blob/master/README.md)
 

@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. El agente o la pasarela necesita un proveedor. Comprueba en su configuración la ruta de sesión, API o modelo elegida. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | El coste depende del proveedor o la ruta. El código de la aplicación no incluye el consumo de su proveedor. Comprueba plan, cuotas, infraestructura y servicios conectados. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| API de IA | Depende de la ruta elegida. El gateway usa las cuentas y claves elegidas; una interfaz local no elimina los costes remotos |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Documenta perfiles para Claude Code y Codex; llamar local al gateway no confirma que el modelo se ejecute localmente ni garantiza todas las capacidades de cada agente |
+| Coste | El coste depende del proveedor o la ruta. El gateway usa las cuentas y claves elegidas; una interfaz local no elimina los costes remotos |
+| Equipo | Preparación según la ruta elegida. Node 22+ o app; proveedor y credenciales; agente de prueba |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Documenta perfiles para Claude Code y Codex; llamar local al gateway no confirma que el modelo se ejecute localmente ni garantiza todas las capacidades de cada agente
 
 ## Qué puedes hacer con él
 
 Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local.
 
+## Por qué destaca
+
+Usos propuestos: Comparar proveedores desde Claude Code; Organizar perfiles para Codex.
+
 ## Cómo funciona
 
-Un servicio y su interfaz gestionan los datos y conexiones configurados en tu despliegue.
+Documenta perfiles para Claude Code y Codex; llamar local al gateway no confirma que el modelo se ejecute localmente ni garantiza todas las capacidades de cada agente
 
 ## Cómo empezar
 
@@ -39,11 +44,23 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de instalación o servidor y las dependencias indicadas por el README.
+- Node 22+ o app
+- proveedor y credenciales
+- agente de prueba
 
-1. Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.
-2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
-3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (sh):**
+
+```
+npm install -g @musistudio/claude-code-router
+ccr ui
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/musistudio/claude-code-router/blob/main/README.md)
 
@@ -51,21 +68,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar claude-code-router para mi objetivo y necesito pasos guiados. Lee https://github.com/musistudio/claude-code-router/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Añade un proveedor, inicia el servidor local y aplica un perfil a una sesión de prueba.
+
+**Qué comprobar:** Puedes identificar endpoint, modelo y ruta efectiva.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local.
+- Comparar proveedores desde Claude Code
+- Organizar perfiles para Codex
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Comparar proveedores desde Claude Code; Organizar perfiles para Codex | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Documenta perfiles para Claude Code y Codex; llamar local al gateway no confirma que el modelo se ejecute localmente ni garantiza todas las capacidades de cada agente
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+- **Stack:** Node 22+ o app; proveedor y credenciales; agente de prueba
 - **Etiquetas:** `serving` `server` `typescript`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -76,7 +102,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/musistudio/claude-code-router/blob/main/README.md)
 

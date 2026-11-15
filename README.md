@@ -4,8 +4,10 @@ Encuentra qué usar entre cientos de repositorios de IA y automatización. Entie
 
 **[Abrir Alexandría en línea](https://cristrva1.github.io/BL_Alexandria/)** — consulta la biblioteca sin descargar ni instalar nada.
 
+Las **679 fichas tienen revisión documental individual**: categoría, ejemplos prácticos, primeros pasos, costes y compatibilidad con Claude Code, Codex, Antigravity y modelos locales. Consulta el [registro de revisión](reports/review-679-2026-11-14.json) y el [método editorial](curation/review-679-2026-11-14/README.md). Los ejemplos son propuestas; las instalaciones no se ejecutaron.
+
 <!-- BL:STATS -->
-**679 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **92 subcategorías**
+**679 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **100 subcategorías**
 <!-- /BL:STATS -->
 
 [Primera vez: lee cómo elegir](human/elegir.md) · [Diccionario breve](human/vocabulario.md)
@@ -14,7 +16,7 @@ Encuentra qué usar entre cientos de repositorios de IA y automatización. Entie
 | Necesito… | Empieza aquí |
 |---|---|
 | Resolver una tarea sin conocer los nombres de los repos | [Rutas por objetivo](human/rutas.md) |
-| Aprovechar mi acceso a Claude Code o Codex | [Formas de uso](human/formas-de-uso.md) |
+| Aprovechar mi acceso a Claude Code, Codex o Antigravity | [Formas de uso](human/formas-de-uso.md) |
 | Saber si necesito pagar una API o puedo usar un modelo local | [Acceso y costes](human/acceso.md) |
 | Comparar e instalar una herramienta concreta | [Guía de arranque](human/instalar.md) |
 | Explorar todo por tema | [Categorías y subcategorías](human/areas.md) |
@@ -46,10 +48,10 @@ uv run repo-intelligence web serve
 ## Lee una ficha antes de instalar
 
 1. Qué resultado produce y cuándo conviene elegirlo.
-2. API de IA, acceso desde Claude Code o Codex y modelos locales documentados.
+2. API de IA, acceso desde Claude Code, Codex o Antigravity y modelos locales documentados.
 3. Coste por ruta, servicios externos y requisitos de equipo.
 4. Pasos de arranque y comandos respaldados por la documentación.
-5. Alternativas, complementos y fecha y fuentes de revisión.
+5. Primera prueba propuesta, resultado observable, alternativas y fuentes fechadas.
 
 Las estrellas miden popularidad. El código abierto no incluye automáticamente servicios, modelos o licencias sin coste. Una interfaz local no demuestra que el modelo también lo sea.
 

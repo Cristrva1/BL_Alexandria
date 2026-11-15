@@ -2,7 +2,7 @@
 
 # 🍷 taste-skill
 
-> Skills "anti-slop" para producir frontends premium (layout, tipografía, motion y espaciado) más skills de generación de imagen para crear mood boards de referencia.
+> Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Los scripts no piden API; el agente usa su plan y los recursos conservan sus licencias |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. Actualmente contiene design-taste-frontend y otros skills se movieron a repos propios; no se debe presentar el pack antiguo completo como contenido actual |
+| Coste | Consumo del agente que ya utilizas. Los scripts no piden API; el agente usa su plan y los recursos conservan sus licencias |
+| Equipo | Preparación según la ruta elegida. Node 22+; Chrome, Edge o Chromium; agente; brief de sitio |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+Actualmente contiene design-taste-frontend y otros skills se movieron a repos propios; no se debe presentar el pack antiguo completo como contenido actual
 
 ## Qué puedes hacer con él
 
-Ataca el acabado "de plantilla" que delata a las UIs generadas por IA.
+Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios.
 
 ## Por qué destaca
 
-Aporta criterio de diseño además de código, y opcionalmente genera boards visuales (web, mobile, brand) para anclar el estilo antes de programar. Es portable entre asistentes (Codex, Cursor, Claude Code) y de foco estético.
+Usos propuestos: Preparar una web de empresa; Revisar dirección visual de una landing.
 
 ## Cómo funciona
 
-Las skills inyectan guías de gusto visual en el contexto del asistente y, cuando se activan las de imagen, llaman a un generador (ChatGPT Images u otro) para producir boards de referencia que el modelo usa como guía.
+Actualmente contiene design-taste-frontend y otros skills se movieron a repos propios; no se debe presentar el pack antiguo completo como contenido actual
 
 ## Cómo empezar
 
@@ -43,19 +44,23 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Node 22+
+- Chrome, Edge o Chromium
+- agente
+- brief de sitio
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-**Comando de entrada documentado:**
+**Entrada documentada (bash):**
 
-```shell
+```
 npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend"
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Leonxlnx/taste-skill/blob/main/README.md)
 
@@ -63,21 +68,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar taste-skill para mi objetivo y necesito pasos guiados. Lee https://github.com/Leonxlnx/taste-skill/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Diseña una página de prueba con referencias acreditadas y ejecuta su comprobación visual.
+
+**Qué comprobar:** Puedes revisar composición, texto y créditos de recursos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Subir el gusto de UIs construidas por IA
-- Boards de referencia (web/mobile/brand) antes de codificar
-- Alinear estética entre diseñador y agente
+- Preparar una web de empresa
+- Revisar dirección visual de una landing
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres frontends con gusto y no te basta con UI funcional | ya tienes un design system cerrado o no usas generadores de imagen |
+| Tu objetivo encaja con estos ejemplos: Preparar una web de empresa; Revisar dirección visual de una landing | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Actualmente contiene design-taste-frontend y otros skills se movieron a repos propios; no se debe presentar el pack antiguo completo como contenido actual
 
 ## Stack y modelos
 
-- **Stack:** Markdown/skills
+- **Stack:** Node 22+; Chrome, Edge o Chromium; agente; brief de sitio
 - **Etiquetas:** `skills` `design` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -86,7 +100,7 @@ Comando presente en el README revisado; no es una prueba de instalación.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [ui-ux-pro-max-skill](ui-ux-pro-max-skill.md) | 150k | Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla". |
-| [impeccable](impeccable.md) | 110k | Guía de diseño para agentes de código (1 skill, 23 comandos, iteración en browser y 44 detectores de "tells" de UI por IA) que empuja al agente hacia frontends con criterio. |
+| [impeccable](impeccable.md) | 110k | Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta. |
 
 ## Enlaces
 
@@ -95,7 +109,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Leonxlnx/taste-skill/blob/main/README.md)
 

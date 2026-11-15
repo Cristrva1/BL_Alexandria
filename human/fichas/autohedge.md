@@ -16,34 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | API de IA necesaria. El ejemplo pide claves OpenAI o Anthropic y Jupiter; operaciones y proveedores pueden tener comisiones y consumo |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. El README incluye WALLET_PRIVATE_KEY; no es una simple app de lectura y no se ha verificado aquí una simulación aislada |
+| Coste | El coste depende del proveedor o la ruta. El ejemplo pide claves OpenAI o Anthropic y Jupiter; operaciones y proveedores pueden tener comisiones y consumo |
+| Equipo | Preparación según la ruta elegida. Python; credenciales de modelo y herramientas; entorno de investigación sin fondos |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El README incluye WALLET_PRIVATE_KEY; no es una simple app de lectura y no se ha verificado aquí una simulación aislada
 
 ## Qué puedes hacer con él
 
-Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado. Distribuye análisis y decisiones entre agentes con funciones especializadas y herramientas de mercado.
+Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado.
 
 ## Por qué destaca
 
-Quieres estudiar una arquitectura de agentes para investigación de trading.
+Usos propuestos: Estudiar coordinación de analistas y riesgo; Revisar el diseño de un pipeline de trading.
 
 ## Cómo funciona
 
-Distribuye análisis y decisiones entre agentes con funciones especializadas y herramientas de mercado.
+El README incluye WALLET_PRIVATE_KEY; no es una simple app de lectura y no se ha verificado aquí una simulación aislada
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python
+- credenciales de modelo y herramientas
+- entorno de investigación sin fondos
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+pip install -U autohedge
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/The-Swarm-Corporation/AutoHedge/blob/main/README.md)
 
@@ -51,21 +67,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar AutoHedge para mi objetivo y necesito pasos guiados. Lee https://github.com/The-Swarm-Corporation/AutoHedge/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Revisa la configuración de agentes y sus herramientas antes de ejecutar un flujo de análisis de prueba.
+
+**Qué comprobar:** Puedes distinguir consulta, decisión y funciones que enviarían operaciones.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres estudiar una arquitectura de agentes para investigación de trading
+- Estudiar coordinación de analistas y riesgo
+- Revisar el diseño de un pipeline de trading
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres estudiar una arquitectura de agentes para investigación de trading | necesitas resultados operativos validados en vez de material de investigación |
+| Tu objetivo encaja con estos ejemplos: Estudiar coordinación de analistas y riesgo; Revisar el diseño de un pipeline de trading | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** No se verificaron sus resultados ni rentabilidad; evaluar primero con datos y ejecución simulados.
+**Limitaciones:** El README incluye WALLET_PRIVATE_KEY; no es una simple app de lectura y no se ha verificado aquí una simulación aislada
 
 ## Stack y modelos
 
-- **Stack:** Python, pyproject.toml
+- **Stack:** Python; credenciales de modelo y herramientas; entorno de investigación sin fondos
 - **Etiquetas:** `finanzas` `ai` `blackrock` `finance` `goldmansachs` `hedgefund` `jpmorgan` `ml`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -76,7 +101,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/The-Swarm-Corporation/AutoHedge/blob/main/README.md)
 

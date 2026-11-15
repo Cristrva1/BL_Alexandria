@@ -16,39 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios. |
-| Claude Code | Herramienta MCP para el agente |
-| Codex | Herramienta MCP para el agente |
-| Modelos locales | La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta. |
-| Coste | Consumo del agente que ya utilizas. El modelo se consume en el cliente. Los servicios que la herramienta consulta pueden tener cuentas o tarifas propias. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. La extracción y embeddings locales no requieren API; consultar un modelo u otros proveedores puede añadir consumo |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Integración documentada por el proyecto |
+| Modelos locales | Modelos locales documentados. Las funciones de hooks y actividad varían por cliente; los binarios ya compilados no necesitan Node para ejecutar Lens |
+| Coste | El coste depende del proveedor o la ruta. La extracción y embeddings locales no requieren API; consultar un modelo u otros proveedores puede añadir consumo |
+| Equipo | Preparación según la ruta elegida. Binario para tu sistema; repositorio de prueba; Node 22+ solo para compilar CBM Lens |
 
-Puede conectarse a un cliente con soporte MCP, incluido Claude Code o Codex. Debes configurar el servidor y sus permisos.
+Las funciones de hooks y actividad varían por cliente; los binarios ya compilados no necesitan Node para ejecutar Lens
 
 ## Qué puedes hacer con él
 
-Indexa repos en milisegundos y da al agente herramientas MCP para entender arquitectura, dependencias y cambios sin leer archivo por archivo.
+Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes.
 
 ## Por qué destaca
 
-Indexación muy rápida incluso en repos enormes.
+Usos propuestos: Navegar dependencias de código; Seleccionar pruebas afectadas por un cambio.
 
 ## Cómo funciona
 
-Parsea el código a un grafo persistente local y lo expone por MCP e interfaces propias.
+Las funciones de hooks y actividad varían por cliente; los binarios ya compilados no necesitan Node para ejecutar Lens
 
 ## Cómo empezar
 
-Se configura en tu agente. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un cliente MCP compatible.
-- Las credenciales del servicio conectado, si las pide el servidor.
+- Binario para tu sistema
+- repositorio de prueba
+- Node 22+ solo para compilar CBM Lens
 
-1. Instala o configura el servidor según su README.
-2. Añade su comando o URL en la configuración MCP de tu cliente.
-3. Comprueba que aparecen las herramientas antes de asignar una tarea.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md)
 
@@ -56,21 +60,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar codebase-memory-mcp para mi objetivo y necesito pasos guiados. Lee https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Indexa un proyecto pequeño y consulta el impacto de cambiar una función.
+
+**Qué comprobar:** Puedes abrir las referencias y relaciones del grafo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Entender un repo grande con un agente
-- Analizar impacto de cambios
-- Memoria de arquitectura
+- Navegar dependencias de código
+- Seleccionar pruebas afectadas por un cambio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tu agente trabaja en repos grandes | tu repo es pequeño; usa `repomix` |
+| Tu objetivo encaja con estos ejemplos: Navegar dependencias de código; Seleccionar pruebas afectadas por un cambio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Las funciones de hooks y actividad varían por cliente; los binarios ya compilados no necesitan Node para ejecutar Lens
 
 ## Stack y modelos
 
-- **Stack:** C
+- **Stack:** Binario para tu sistema; repositorio de prueba; Node 22+ solo para compilar CBM Lens
 - **Etiquetas:** `code` `mcp` `memory`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -95,7 +108,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/DeusData/codebase-memory-mcp/blob/main/README.md)
 

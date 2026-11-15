@@ -6,22 +6,31 @@
 ## `docling`
 role=library · exec=local · setup=easy · mcp=True · prov=— · tags=docs,pdf,ocr,python
 
-**Qué es:** Entiende la estructura del documento (tablas, layout, fórmulas, orden de lectura) y la exporta para RAG y agentes.
-**Stack:** Python, PyTorch
+**Qué es:** Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA.
+**Stack:** Python >=3.10; modelos y dependencias del formato; documento de prueba
 **Acceso y costes:**
-- API de IA: API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: El coste depende del proveedor o la ruta. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- API de IA: API de IA opcional. La ruta local no requiere modelo remoto; VLM, servicios y despliegues gestionados pueden tener costes y licencias propias
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: Modelos locales documentados. MCP es un paquete complementario y convierte localmente por defecto; configura explícitamente cualquier delegación a un servicio remoto
+- Coste: El coste depende del proveedor o la ruta. La ruta local no requiere modelo remoto; VLM, servicios y despliegues gestionados pueden tener costes y licencias propias
+- Equipo: Preparación según la ruta elegida. Python >=3.10; modelos y dependencias del formato; documento de prueba
 **Repo:** https://github.com/docling-project/docling
 
-**Instalación** [+]: `pip install docling`
+**Instalación** [+]:
+
+```
+pip install docling
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres convertir documentos a Markdown con buena estructura
-**Evita si:** solo tienes PDFs de texto simples; mira `markitdown`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentos para RAG; Extraer tablas antes de un análisis
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Convierte un PDF breve con tabla y compara el Markdown y JSON con el original
+**Qué comprobar:** Puedes identificar texto, estructura y campos que necesitan corrección
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `llama-index`, `ragflow`, `qdrant`
 **Alternativas (elige una):** `marker`, `mineru`, `unstructured`, `olmocr`
 
@@ -29,405 +38,578 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=pdf,server,ruby
 
 **Qué es:** Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio.
-**Stack:** Ruby, Dockerfile, docker-compose.yml, package.json
+**Stack:** Docker; dominio y correo solo para despliegue real; documento y destinatario ficticios
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El núcleo AGPL añade términos; Pro, Cloud y servicios de correo tienen condiciones propias; no exige LLM
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. El ejemplo es para revisar la herramienta con datos de prueba; configura dominio, persistencia y permisos antes de un uso real
+- Coste: El coste depende del proveedor o la ruta. El núcleo AGPL añade términos; Pro, Cloud y servicios de correo tienen condiciones propias; no exige LLM
+- Equipo: Preparación según la ruta elegida. Docker; dominio y correo solo para despliegue real; documento y destinatario ficticios
 **Repo:** https://github.com/docusealco/docuseal
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/docusealco/docuseal/blob/master/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** buscas esta función: Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+```
+docker run --name docuseal -p 3000:3000 -v.:/data docuseal/docuseal
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar formularios internos de prueba; Evaluar un flujo de firma documental
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea una plantilla de prueba con campos de texto y firma y completa una vista de ensayo
+**Qué comprobar:** Puedes revisar el documento resultante y la ubicación de los campos
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `marker`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,pdf,python
 
-**Qué es:** Pensado para libros y papers, con opción de mejorar el resultado usando un LLM.
-**Stack:** Python, PyTorch
+**Qué es:** Convierte PDF a Markdown y JSON de forma rápida y precisa, con tablas, fórmulas y código.
+**Stack:** Python; backend Surya con vLLM o llama.cpp según sistema; pesos; PDF de prueba
 **Acceso y costes:**
-- API de IA: API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos.
+- API de IA: API de IA opcional. Código Apache-2.0; pesos con licencia modificada y condiciones comerciales según organización; LLM opcional puede usar proveedores de pago
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: El coste depende del proveedor o la ruta. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Instalar marker-pdf no completa por sí solo el backend de inferencia; verifica requisitos del modelo y su licencia antes de ampliar volumen
+- Coste: El coste depende del proveedor o la ruta. Código Apache-2.0; pesos con licencia modificada y condiciones comerciales según organización; LLM opcional puede usar proveedores de pago
+- Equipo: Preparación según la ruta elegida. Python; backend Surya con vLLM o llama.cpp según sistema; pesos; PDF de prueba
 **Repo:** https://github.com/datalab-to/marker
 
-**Instalación** [+]: `pip install marker-pdf`
+**Instalación** [+]:
+
+```
+pip install marker-pdf
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** conviertes PDFs largos con fórmulas
-**Evita si:** necesitas uso comercial sin licencia; revisa su licencia
+**Elige si:** Tu objetivo encaja con estos ejemplos: Extraer contenido de informes; Preparar documentos escaneados para búsqueda
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Convierte un PDF de dos páginas con una tabla y compara texto y columnas
+**Qué comprobar:** Puedes localizar errores y decidir si activar la mejora LLM
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `llama-index`
 **Alternativas (elige una):** `docling`, `mineru`, `pdf-craft`
 
 ## `markitdown`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,python
 
-**Qué es:** Es la puerta de entrada habitual para ingesta de documentos en pipelines RAG.
-**Stack:** Python 3.8+
+**Qué es:** Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman.
+**Stack:** Python 3.10–3.14; entorno virtual; extras del formato elegido
 **Acceso y costes:**
-- API de IA: API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos.
+- API de IA: API de IA opcional. La extracción básica es offline; Azure, descripciones LLM y otras extensiones pueden enviar datos y consumir servicios
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Instala los extras necesarios; convertir a Markdown no conserva toda la maquetación del original
+- Coste: El coste depende del proveedor o la ruta. La extracción básica es offline; Azure, descripciones LLM y otras extensiones pueden enviar datos y consumir servicios
+- Equipo: Preparación según la ruta elegida. Python 3.10–3.14; entorno virtual; extras del formato elegido
 **Repo:** https://github.com/microsoft/markitdown
 
-**Instalación** [+]: `pip install markitdown`
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+**Instalación** [?]:
 
-**Elige si:** alimentas LLMs con documentos de formatos variados
-**Evita si:** ya tienes el texto limpio o necesitas fidelidad de layout total (no es un reconstructor de PDF)
+```
+Seguir la instalación original: https://github.com/microsoft/markitdown/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentos Office para consulta; Crear una copia textual de un informe
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Convierte un DOCX ficticio a Markdown y revisa títulos, listas y tablas
+**Qué comprobar:** El texto y el orden se pueden contrastar con el documento
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ppt-master`, `open-notebook`
 
 ## `mineru`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=docs,pdf,ocr,python
 
-**Qué es:** Muy bueno con papers científicos, tablas y fórmulas; ofrece CLI, API y app de escritorio.
-**Stack:** Python, PyTorch
+**Qué es:** Convierte PDFs y documentos de Office complejos en Markdown o JSON para flujos con agentes.
+**Stack:** Python 3.11–3.14; entorno virtual; modelos y backend del nivel elegido
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- API de IA: API de IA opcional. Los niveles locales usan CPU o GPU según backend; remoto requiere autorización explícita y puede costar; licencia MinerU añade condiciones
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Antigravity: Dentro del agente: skills o instrucciones
+- Modelos locales: Modelos locales documentados. La skill ayuda al agente a operar la herramienta; no es un modelo incluido en la suscripción del cliente; la telemetría tiene configuración propia
+- Coste: El coste depende del proveedor o la ruta. Los niveles locales usan CPU o GPU según backend; remoto requiere autorización explícita y puede costar; licencia MinerU añade condiciones
+- Equipo: Preparación según la ruta elegida. Python 3.11–3.14; entorno virtual; modelos y backend del nivel elegido
 **Repo:** https://github.com/opendatalab/MinerU
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/opendatalab/MinerU/blob/master/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** procesas documentos científicos o técnicos complejos
-**Evita si:** quieres algo ligero; mira `markitdown`
+```
+uv pip install -U "mineru>=4.0,<5"
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar PDFs complejos para un índice; Extraer tablas y fórmulas de un documento propio
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Procesa un PDF corto con Flash o Basic y compara estructura y tablas antes de usar niveles superiores
+**Qué comprobar:** Puedes identificar nivel, backend y origen de la conversión
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ragflow`
 **Alternativas (elige una):** `docling`, `marker`
 
 ## `ocrmypdf`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=ocr,pdf,python
 
-**Qué es:** Convierte escaneos en PDF/A buscables manteniendo la imagen original.
-**Stack:** Python, Tesseract
+**Qué es:** Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos.
+**Stack:** Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita LLM ni API; procesamiento y paquetes locales consumen recursos
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La capa OCR puede contener errores; instala el idioma correcto y conserva el PDF original
+- Coste: Sin pago a un modelo en la ruta básica. No necesita LLM ni API; procesamiento y paquetes locales consumen recursos
+- Equipo: Preparación según la ruta elegida. Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba
 **Repo:** https://github.com/ocrmypdf/OCRmyPDF
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/ocrmypdf/OCRmyPDF/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://ocrmypdf.readthedocs.io/en/latest/installation.html
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** tienes PDFs escaneados que quieres buscar
-**Evita si:** necesitas extraer estructura; mira `docling`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Hacer buscables documentos escaneados; Preparar un archivo histórico propio para indexación
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Añade OCR a una copia escaneada y busca una palabra que conoces
+**Qué comprobar:** Puedes seleccionar y buscar texto manteniendo la imagen de la página
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `tesseract`, `docling`
 
 ## `olmocr`
 role=app · exec=local · setup=heavy · mcp=False · prov=local · tags=ocr,pdf,python
 
-**Qué es:** Pensado para crear datasets de entrenamiento a partir de millones de PDFs, con orden de lectura correcto.
-**Stack:** Python, vLLM
+**Qué es:** Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión, a gran escala.
+**Stack:** Python y dependencias del sistema; GPU para inferencia local o proveedor remoto; PDF
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada.
+- API de IA: API de IA opcional. La ruta local necesita GPU; endpoints alojados cobran según proveedor; guardar resultados también consume espacio
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Instalar el paquete cliente no proporciona por sí solo GPU ni créditos remotos; comienza con pocas páginas
+- Coste: El coste depende del proveedor o la ruta. La ruta local necesita GPU; endpoints alojados cobran según proveedor; guardar resultados también consume espacio
+- Equipo: Preparación según la ruta elegida. Python y dependencias del sistema; GPU para inferencia local o proveedor remoto; PDF
 **Repo:** https://github.com/allenai/olmocr
 
-**Instalación** [+]: `pip install olmocr`
+**Instalación** [+]:
+
+```
+pip install olmocr
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** procesas grandes volúmenes de PDFs con GPU
-**Evita si:** no tienes GPU; mira `ocrmypdf` o `tesseract`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar PDFs para entrenamiento documental; Procesar escaneos con un VLM
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Convierte unas páginas con texto conocido y revisa orden de lectura y símbolos
+**Qué comprobar:** Puedes comparar la salida con la página original y detectar omisiones
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `vllm`
 **Alternativas (elige una):** `paddleocr`, `docling`, `unlimited-ocr`
 
 ## `paddleocr`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ocr,docs,python
 
-**Qué es:** Reconoce texto en más de 80 idiomas y analiza documentos con tablas y layout. Incluye modelos pequeños para dispositivos.
-**Stack:** Python, PaddlePaddle
+**Qué es:** Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos estructurados para IA.
+**Stack:** Python y PaddlePaddle compatibles; modelo y paquete de idioma; imagen de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La ruta local no exige API; GPU, modelos y servicios opcionales tienen requisitos y condiciones propios
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Elige OCR clásico, estructura o VLM según la tarea; no todos los pipelines tienen la misma instalación y memoria
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no exige API; GPU, modelos y servicios opcionales tienen requisitos y condiciones propios
+- Equipo: Preparación según la ruta elegida. Python y PaddlePaddle compatibles; modelo y paquete de idioma; imagen de prueba
 **Repo:** https://github.com/PaddlePaddle/PaddleOCR
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/PaddlePaddle/PaddleOCR/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version3.x/installation.en.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** necesitas OCR preciso y multilingüe
-**Evita si:** solo quieres hacer buscables PDFs escaneados; mira `ocrmypdf`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Digitalizar un formulario propio; Extraer texto y estructura de una página escaneada
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Reconoce una página con texto y tabla y compara palabras y coordenadas con la imagen
+**Qué comprobar:** Puedes medir errores sobre un fragmento conocido
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `docling`
 **Alternativas (elige una):** `tesseract`, `olmocr`, `unlimited-ocr`
 
 ## `pandoc`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=docs
 
-**Qué es:** La navaja suiza de la conversión de textos: genera Word o PDF desde Markdown y al revés.
-**Stack:** Haskell
+**Qué es:** Conversor universal de documentos entre Markdown, Word, HTML, LaTeX, EPUB y decenas de formatos.
+**Stack:** Binario de tu sistema; motor PDF solo si generas PDF; archivo de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No requiere IA; motores PDF, fuentes y herramientas complementarias tienen sus condiciones
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Cambiar formato no garantiza conservar cada detalle de diseño; elige plantilla y motor según la salida
+- Coste: Sin pago a un modelo en la ruta básica. No requiere IA; motores PDF, fuentes y herramientas complementarias tienen sus condiciones
+- Equipo: Preparación según la ruta elegida. Binario de tu sistema; motor PDF solo si generas PDF; archivo de prueba
 **Repo:** https://github.com/jgm/pandoc
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/jgm/pandoc/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://pandoc.org/installing.html
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** necesitas convertir entre formatos de texto
-**Evita si:** necesitas extraer estructura de PDFs escaneados; mira `docling`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Generar documentos desde Markdown; Convertir un libro propio a EPUB
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Convierte un Markdown con títulos y tabla a DOCX y revisa el resultado
+**Qué comprobar:** Puedes abrir el documento y comprobar estructura y contenido
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `markitdown`
 
 ## `paperless-ngx`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=gestion,server,python
 
 **Qué es:** Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados.
-**Stack:** Python, Dockerfile, pyproject.toml
+**Stack:** Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La ruta básica usa OCR local sin API de IA; servidor, almacenamiento y copias requieren recursos
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. No es solo un conversor PDF: administra un archivo documental persistente; configura retención y copias antes de importar una colección real
+- Coste: Sin pago a un modelo en la ruta básica. La ruta básica usa OCR local sin API de IA; servidor, almacenamiento y copias requieren recursos
+- Equipo: Preparación según la ruta elegida. Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios
 **Repo:** https://github.com/paperless-ngx/paperless-ngx
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/paperless-ngx/paperless-ngx/blob/dev/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://docs.paperless-ngx.com/setup/#installation
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+**Elige si:** Tu objetivo encaja con estos ejemplos: Organizar recibos de prueba; Construir un archivo documental buscable
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Importa un documento de prueba y búscalo por una palabra reconocida y una etiqueta
+**Qué comprobar:** Puedes abrir el original y localizarlo con su texto OCR
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `pdf-craft`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=local · tags=ocr,library,python
 
 **Qué es:** Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento.
-**Stack:** Python, pyproject.toml
+**Stack:** Python; extra local y modelos para ruta local; proveedor OCR o servicio para ruta remota
 **Acceso y costes:**
-- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- API de IA: Depende de la ruta elegida. Ofrece servicio remoto y extra local; proveedores, hardware y pesos tienen condiciones separadas
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
-- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
-- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. PDF-craft con guion es este conversor Python; no es PDFCraftTool/pdfcraft, la aplicación de herramientas PDF del navegador
+- Coste: El coste depende del proveedor o la ruta. Ofrece servicio remoto y extra local; proveedores, hardware y pesos tienen condiciones separadas
+- Equipo: Preparación según la ruta elegida. Python; extra local y modelos para ruta local; proveedor OCR o servicio para ruta remota
 **Repo:** https://github.com/oomol-lab/pdf-craft
 
-**Instalación** [+]: `python -m pip install pdf-craft`
+**Instalación** [+]:
+
+```
+python -m pip install "pdf-craft[local]"
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** buscas esta función: Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento.
-**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear una versión editable de un escaneo propio; Preparar un EPUB desde material autorizado
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Convierte dos páginas escaneadas propias y compara texto y estructura antes de generar un libro completo
+**Qué comprobar:** Puedes identificar errores y corregir el orden de lectura
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `unlimited-ocr`
 **Alternativas (elige una):** `marker`
 
 ## `pdf-inspector`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,docs,rust
 
-**Qué es:** Detecta si un PDF necesita OCR para enrutarlo al proceso correcto, y extrae texto rápido cuando no hace falta. De Firecrawl.
-**Stack:** Rust
+**Qué es:** Librería en Rust que clasifica PDFs (texto o escaneado) y extrae su texto con coordenadas.
+**Stack:** Python para esta ruta; runtime OCR y pesos solo si activas OCR; PDFs de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La extracción básica no exige API; OCR selectivo usa modelo local y requiere dependencias adicionales
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La instalación base y las funciones OCR no tienen los mismos recursos; la clasificación no verifica exactitud de todo el texto
+- Coste: Sin pago a un modelo en la ruta básica. La extracción básica no exige API; OCR selectivo usa modelo local y requiere dependencias adicionales
+- Equipo: Preparación según la ruta elegida. Python para esta ruta; runtime OCR y pesos solo si activas OCR; PDFs de prueba
 **Repo:** https://github.com/firecrawl/pdf-inspector
 
-**Instalación** [+]: `pip install pdf-inspector`
+**Instalación** [+]:
+
+```
+pip install pdf-inspector
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** procesas muchos PDFs y quieres ahorrar OCR
-**Evita si:** necesitas la conversión completa a Markdown; mira `docling`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Decidir cuándo hace falta OCR; Extraer texto con posiciones de un PDF
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Clasifica un PDF con texto y otro escaneado y compara el resultado
+**Qué comprobar:** Puedes enrutar el escaneado a OCR y extraer el otro sin ese procesamiento
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ocrmypdf`, `docling`
 
 ## `pdfcraft`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,typescript
 
-**Qué es:** Apunta a ser la alternativa local y sin nube a los servicios online de PDF.
-**Stack:** web/TS
+**Qué es:** Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada.
+**Stack:** Navegador moderno; PDFs de prueba; Node solo para self-hosting
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Las herramientas del navegador no requieren modelo; hosting propio y productos enlazados tienen condiciones aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La referencia a Ollama corresponde al proyecto relacionado LibrePDF, no demuestra esa función en PDFCraft web
+- Coste: Sin pago a un modelo en la ruta básica. Las herramientas del navegador no requieren modelo; hosting propio y productos enlazados tienen condiciones aparte
+- Equipo: Preparación según la ruta elegida. Navegador moderno; PDFs de prueba; Node solo para self-hosting
 **Repo:** https://github.com/PDFCraftTool/pdfcraft
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** manipulas PDFs con privacidad y sin instalar nada
-**Evita si:** necesitas conversión a Markdown para IA (markitdown) o edición de contenido (no solo manipulación de páginas)
+**Elige si:** Tu objetivo encaja con estos ejemplos: Editar PDFs desde un navegador; Convertir o dividir un documento de prueba
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Abre dos PDFs en la app y combínalos sin usar un servicio externo de conversión
+**Qué comprobar:** Puedes descargar el resultado y comprobar páginas y orden
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `markitdown`
 **Alternativas (elige una):** `stirling-pdf`
 
 ## `pdfding`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,docker
 
-**Qué es:** Organiza y lee tus PDFs desde cualquier dispositivo. El desarrollo se trasladó a Codeberg.
-**Stack:** Python, Django, Docker
+**Qué es:** Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.
+**Stack:** Docker o entorno de la guía; volumen para documentos; cuenta de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El gestor básico no requiere IA; servidor y almacenamiento son recursos propios
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. El desarrollo se ha trasladado a Codeberg; sigue el enlace canónico y la documentación antes de usar instrucciones GitHub antiguas
+- Coste: Sin pago a un modelo en la ruta básica. El gestor básico no requiere IA; servidor y almacenamiento son recursos propios
+- Equipo: Preparación según la ruta elegida. Docker o entorno de la guía; volumen para documentos; cuenta de prueba
 **Repo:** https://github.com/mrmn2/PdfDing
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/mrmn2/PdfDing/blob/master/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://docs.pdfding.com/getting_started/docker/
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres organizar y leer PDFs en tu servidor
-**Evita si:** necesitas editar PDFs; mira `stirling-pdf`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Sube un PDF ficticio, añade una etiqueta y continúa su lectura en otra sesión
+**Qué comprobar:** Puedes encontrar el documento y su progreso guardado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `markitdown`, `ppt-master`, `reveal.js`
 
 ## `pdfmathtranslate`
-role=app · exec=hybrid · setup=easy · mcp=False · prov=openai,google,local · tags=pdf,docs,python
+role=app · exec=hybrid · setup=easy · mcp=True · prov=openai,google,local · tags=pdf,docs,python
 
-**Qué es:** Ideal para leer artículos científicos en tu idioma sin perder el layout. Admite Google, DeepL, OpenAI, Ollama y más.
-**Stack:** Python
+**Qué es:** Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe.
+**Stack:** Python 3.11–3.12; proveedor de traducción u Ollama; PDF de prueba
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- API de IA: Depende de la ruta elegida. El coste depende del traductor; puede usar servicios remotos o modelo Ollama; el procesamiento y modelos locales requieren recursos
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: Modelos locales documentados. MCP stdio está documentado; conservar fórmulas y formato es un objetivo, no garantía de traducción técnica correcta
+- Coste: El coste depende del proveedor o la ruta. El coste depende del traductor; puede usar servicios remotos o modelo Ollama; el procesamiento y modelos locales requieren recursos
+- Equipo: Preparación según la ruta elegida. Python 3.11–3.12; proveedor de traducción u Ollama; PDF de prueba
 **Repo:** https://github.com/PDFMathTranslate/PDFMathTranslate
 
-**Instalación** [+]: `pip install pdf2zh`
+**Instalación** [+]:
+
+```
+pip install uv
+   uv tool install --python 3.12 pdf2zh
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** traduces PDFs técnicos y quieres conservar el formato
-**Evita si:** necesitas editar el PDF; mira `stirling-pdf`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Leer un artículo en otro idioma; Crear una versión bilingüe de documentación propia
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Traduce dos páginas con fórmulas y compara texto, nombres y disposición con el original
+**Qué comprobar:** Puedes detectar traducciones incorrectas sin confundirlas con cambios de formato
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`
 
 ## `stirling-pdf`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,docker
 
-**Qué es:** Más de 50 herramientas de PDF en el navegador sin enviar archivos a terceros.
-**Stack:** Java, TypeScript, Docker
+**Qué es:** Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs.
+**Stack:** Docker o app oficial; PDFs ficticios; almacenamiento persistente si usas servidor
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El proyecto es open-core; Server y Enterprise tienen planes; la operación PDF básica no exige modelo
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La edición de PDF, firma y redacción tienen efectos distintos: comprueba la salida de la operación elegida antes de sustituir un archivo
+- Coste: El coste depende del proveedor o la ruta. El proyecto es open-core; Server y Enterprise tienen planes; la operación PDF básica no exige modelo
+- Equipo: Preparación según la ruta elegida. Docker o app oficial; PDFs ficticios; almacenamiento persistente si usas servidor
 **Repo:** https://github.com/Stirling-Tools/Stirling-PDF
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/Stirling-Tools/Stirling-PDF/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres un iLovePDF privado
-**Evita si:** solo necesitas OCR; mira `ocrmypdf`
+```
+docker run -p 8080:8080 docker.stirlingpdf.com/stirlingtools/stirling-pdf
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un expediente de prueba; Separar y convertir documentos desde una interfaz
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Une dos PDFs de prueba y verifica orden, páginas y metadatos del resultado
+**Qué comprobar:** El archivo final se abre y contiene las páginas esperadas
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ocrmypdf`
 **Alternativas (elige una):** `pdfcraft`
 
 ## `tesseract`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=ocr,cpp
 
-**Qué es:** Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idioma. La precisión depende del idioma, el escaneo y la preparación de la imagen.
-**Stack:** C++
+**Qué es:** Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idioma.
+**Stack:** Binario o paquete; datos entrenados del idioma; imagen legible
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No requiere API; modelos de idioma y procesamiento son locales
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Es un motor OCR con modelos locales, no un LLM conversacional; la calidad depende de la imagen y el idioma configurado
+- Coste: Sin pago a un modelo en la ruta básica. No requiere API; modelos de idioma y procesamiento son locales
+- Equipo: Preparación según la ruta elegida. Binario o paquete; datos entrenados del idioma; imagen legible
 **Repo:** https://github.com/tesseract-ocr/tesseract
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/tesseract-ocr/tesseract/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://tesseract-ocr.github.io/tessdoc/Installation.html
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres OCR clásico sin GPU
-**Evita si:** tus documentos tienen layouts complejos; mira `paddleocr`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Digitalizar texto de una fotografía propia; Incorporar OCR local a un script
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Reconoce una imagen con una frase conocida y cuenta errores del resultado
+**Qué comprobar:** Puedes comprobar si idioma, orientación y resolución son adecuados
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ocrmypdf`
 **Alternativas (elige una):** `paddleocr`
 
 ## `unlimited-ocr`
 role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=ocr,docs,python
 
-**Qué es:** Extrae texto y estructura de documentos de muchas páginas sin dividirlos, pensado para contexto largo.
-**Stack:** Python, PyTorch
+**Qué es:** Modelo de Baidu para parsear documentos largos de una sola pasada con visión.
+**Stack:** Python 3.10 y versiones fijadas; GPU grande; pesos y runtime del ejemplo
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No exige API remota; el entorno y pesos usan recursos propios
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La prueba del autor usa una NVIDIA A800 de 80 GB; la promesa unlimited describe el método y no recursos ilimitados en cualquier equipo
+- Coste: Sin pago a un modelo en la ruta básica. No exige API remota; el entorno y pesos usan recursos propios
+- Equipo: Preparación según la ruta elegida. Python 3.10 y versiones fijadas; GPU grande; pesos y runtime del ejemplo
 **Repo:** https://github.com/baidu/Unlimited-OCR
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/baidu/Unlimited-OCR/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** procesas documentos muy largos con GPU
-**Evita si:** necesitas algo probado y ligero; mira `docling`
+```
+pip install torch==2.13.0 torchvision pillow transformers==4.52.1 huggingface-hub==0.36.0 \
+  tokenizers==0.21.4 addict==2.4.0 einops==0.8.2 easydict==1.13
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar parsing de documentos largos; Comparar un VLM OCR con otro motor
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Prueba un documento corto antes de procesar uno largo y compara texto y tablas
+**Qué comprobar:** Puedes identificar errores y consumo de memoria en tu muestra
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `litellm`, `cosmos`, `comfyui`
 **Alternativas (elige una):** `olmocr`, `paddleocr`
 
 ## `unstructured`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=docs,data,python
 
-**Qué es:** Particiona más de 25 tipos de archivo en elementos (títulos, tablas, texto) y los prepara para bases vectoriales.
-**Stack:** Python
+**Qué es:** ETL open source que transforma documentos complejos en datos estructurados para LLM.
+**Stack:** Python; extras por formato; herramientas del sistema para PDF o imágenes
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: API de IA opcional. La biblioteca local y la plataforma gestionada son rutas distintas; partición, enriquecimiento y modelos externos pueden consumir servicios
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Instala dependencias del formato; el contenedor y la biblioteca no garantizan por sí solos todas las funciones de la plataforma
+- Coste: El coste depende del proveedor o la ruta. La biblioteca local y la plataforma gestionada son rutas distintas; partición, enriquecimiento y modelos externos pueden consumir servicios
+- Equipo: Preparación según la ruta elegida. Python; extras por formato; herramientas del sistema para PDF o imágenes
 **Repo:** https://github.com/Unstructured-IO/unstructured
 
-**Instalación** [+]: `pip install "unstructured[all-docs]"`
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+**Instalación** [?]:
 
-**Elige si:** tienes muchos formatos de documentos distintos
-**Evita si:** solo procesas PDFs; mira `docling`
+```
+Seguir la instalación original: https://github.com/Unstructured-IO/unstructured/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar documentos para una base de conocimiento; Crear un pipeline ETL de archivos
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Divide un documento ficticio en elementos y comprueba título, párrafos y tabla
+**Qué comprobar:** Los elementos conservan el orden y tipos que necesitas
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `llama-index`
 **Alternativas (elige una):** `docling`
 
 ## `youtube2webpage`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,javascript
 
-**Qué es:** Convierte una charla en un artículo navegable con contexto visual.
-**Stack:** Perl, yt-dlp, ffmpeg
+**Qué es:** Script en Perl que genera una página web legible a partir de un video de YouTube, intercalando la transcripción de subtítulos con capturas de pantalla del momento citado.
+**Stack:** Perl; yt-dlp; FFmpeg; video propio con subtítulos disponibles
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El script no necesita modelo; depende de subtítulos y descarga permitida del medio
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Usa subtítulos existentes; no asumas que transcribe automáticamente cualquier video sin subtítulos
+- Coste: Sin pago a un modelo en la ruta básica. El script no necesita modelo; depende de subtítulos y descarga permitida del medio
+- Equipo: Preparación según la ruta elegida. Perl; yt-dlp; FFmpeg; video propio con subtítulos disponibles
 **Repo:** https://github.com/obra/Youtube2Webpage
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/obra/Youtube2Webpage/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/obra/Youtube2Webpage/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres video → artículo con transcripción y capturas
-**Evita si:** necesitas edición de video o el contenido no tiene subtítulos
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear una versión legible de un tutorial; Estudiar una clase propia con capturas y texto
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Genera una página de un video corto autorizado y compara un subtítulo con su captura
+**Qué comprobar:** Puedes leer la transcripción y relacionarla con el momento del video
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `whisper`

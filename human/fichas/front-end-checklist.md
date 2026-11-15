@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 74.7k | MIT | MDX | 2026-11-14 |
 
-**Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
+**Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. Consultar el checklist no consume modelos; ejecutarlo con un agente usa su plan y servicios opcionales tienen condiciones propias |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Incluye skills y un servidor MCP de referencia; pasar un checklist no equivale a certificar toda la accesibilidad o seguridad de un sitio |
+| Coste | El coste depende del proveedor o la ruta. Consultar el checklist no consume modelos; ejecutarlo con un agente usa su plan y servicios opcionales tienen condiciones propias |
+| Equipo | Preparación según la ruta elegida. Navegador para lectura; web de prueba; agente o cliente MCP opcional |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Incluye skills y un servidor MCP de referencia; pasar un checklist no equivale a certificar toda la accesibilidad o seguridad de un sitio
 
 ## Qué puedes hacer con él
 
-Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo. Organiza comprobaciones de implementación y publica material para revisión humana y agentes.
+Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo.
 
 ## Por qué destaca
 
-Quieres una lista de revisión de interfaz y entrega web.
+Usos propuestos: Preparar una revisión de frontend; Crear criterios de entrega de una web.
 
 ## Cómo funciona
 
-Organiza comprobaciones de implementación y publica material para revisión humana y agentes.
+Incluye skills y un servidor MCP de referencia; pasar un checklist no equivale a certificar toda la accesibilidad o seguridad de un sitio
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador para lectura
+- web de prueba
+- agente o cliente MCP opcional
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/thedaviddias/Front-End-Checklist/blob/main/README.md)
 
@@ -51,21 +60,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Front-End-Checklist para mi objetivo y necesito pasos guiados. Lee https://github.com/thedaviddias/Front-End-Checklist/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Revisa cinco reglas aplicables a un formulario y anota evidencia y pendientes.
+
+**Qué comprobar:** Puedes separar regla cumplida, hallazgo y elemento no aplicable.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres una lista de revisión de interfaz y entrega web
+- Preparar una revisión de frontend
+- Crear criterios de entrega de una web
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres una lista de revisión de interfaz y entrega web | tu interfaz ya cubre el mismo propósito con una herramienta equivalente |
+| Tu objetivo encaja con estos ejemplos: Preparar una revisión de frontend; Crear criterios de entrega de una web | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Es una guía; no reemplaza las pruebas de la aplicación ni una revisión de accesibilidad.
+**Limitaciones:** Incluye skills y un servidor MCP de referencia; pasar un checklist no equivale a certificar toda la accesibilidad o seguridad de un sitio
 
 ## Stack y modelos
 
-- **Stack:** MDX, Node.js
+- **Stack:** Navegador para lectura; web de prueba; agente o cliente MCP opcional
 - **Etiquetas:** `skills` `ai-agent` `ai-agents` `checklist` `css` `front-end-developer-tool` `front-end-development` `frontend`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +94,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/thedaviddias/Front-End-Checklist/blob/main/README.md)
 

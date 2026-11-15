@@ -16,34 +16,49 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El editor básico no exige LLM; plataforma alojada y planes tienen costes; loader y plataforma tienen licencias diferentes |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El loader-nextjs no instala todo Studio; el código fuera de platform es MIT y platform usa AGPL |
+| Coste | El coste depende del proveedor o la ruta. El editor básico no exige LLM; plataforma alojada y planes tienen costes; loader y plataforma tienen licencias diferentes |
+| Equipo | Preparación según la ruta elegida. Cuenta o despliegue Studio; proyecto Next.js para este loader; Node |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El loader-nextjs no instala todo Studio; el código fuera de platform es MIT y platform usa AGPL
 
 ## Qué puedes hacer con él
 
-Cubre el hueco entre no-code y desarrollo a medida.
+Builder visual para apps y sitios conectado a tu propia base de código, que permite diseñar y publicar sin perder el control del código real.
 
 ## Por qué destaca
 
-Une edición visual tipo no-code con tus componentes y datos existentes, reduciendo el salto entre diseñador y desarrollador. Soporta Next.js, Gatsby y otros frameworks React con un SDK que carga los diseños en runtime.
+Usos propuestos: Permitir editar contenido visual de una web; Prototipar una página conectada a React.
 
 ## Cómo funciona
 
-Editor visual web que genera/consume componentes React/Next.js de tu repo y los sirve vía SDK (`@plasmicapp/loader-*`) o código generado, manteniendo sincronía con tu codebase.
+El loader-nextjs no instala todo Studio; el código fuera de platform es MIT y platform usa AGPL
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Cuenta o despliegue Studio
+- proyecto Next.js para este loader
+- Node
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (consulta la sintaxis original):**
+
+```
+npm install @plasmicapp/loader-nextjs
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/plasmicapp/plasmic/blob/master/README.md)
 
@@ -51,21 +66,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar plasmic para mi objetivo y necesito pasos guiados. Lee https://github.com/plasmicapp/plasmic/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Diseña una sección de prueba y cárgala desde la aplicación conectada.
+
+**Qué comprobar:** Ves el contenido visual y puedes inspeccionar la integración en el código.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Construir landings/experiencias sobre un stack existente
-- Edición visual de componentes propios por perfiles no técnicos
-- Headless CMS visual
+- Permitir editar contenido visual de una web
+- Prototipar una página conectada a React
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres editar visual sobre tu código React | generas desde texto sin codebase previo (open-design) |
+| Tu objetivo encaja con estos ejemplos: Permitir editar contenido visual de una web; Prototipar una página conectada a React | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El loader-nextjs no instala todo Studio; el código fuera de platform es MIT y platform usa AGPL
 
 ## Stack y modelos
 
-- **Stack:** Node.js, React/Next.js
+- **Stack:** Cuenta o despliegue Studio; proyecto Next.js para este loader; Node
 - **Etiquetas:** `design` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -82,7 +106,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/plasmicapp/plasmic/blob/master/README.md)
 

@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. El README documenta usar una cuenta o sesión del agente, además de las otras rutas que admita el producto. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Usa tu plan Claude o ChatGPT mediante CLI según el proyecto; fuentes pagadas, verificación y correo cuestan por separado |
 | Claude Code | Integración documentada por el proyecto |
 | Codex | Integración documentada por el proyecto |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | El coste depende del proveedor o la ruta. El razonamiento usa tu plan de Claude Code o Codex; correo, búsqueda de contactos, verificación de direcciones y otros servicios tienen requisitos y posibles tarifas propios. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La sesión del agente no hace gratuitos los datos ni la entrega; evita confundir un borrador aprobado con un mensaje ya enviado |
+| Coste | El coste depende del proveedor o la ruta. Usa tu plan Claude o ChatGPT mediante CLI según el proyecto; fuentes pagadas, verificación y correo cuestan por separado |
+| Equipo | Preparación según la ruta elegida. Python 3.13; Claude Code o Codex CLI autenticado; SMTP y fuentes solo según la prueba |
 
-Es una integración descrita por este proyecto. Configura la ruta concreta y comprueba sus límites; no se presenta como acceso universal a todas las APIs.
+La sesión del agente no hace gratuitos los datos ni la entrega; evita confundir un borrador aprobado con un mensaje ya enviado
 
 ## Qué puedes hacer con él
 
 Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes.
 
+## Por qué destaca
+
+Usos propuestos: Preparar un borrador de prospección; Evaluar criterios de selección de empresas.
+
 ## Cómo funciona
 
-La aplicación coordina modelos y herramientas; el acceso de cada componente se configura antes de ejecutar sus tareas.
+La sesión del agente no hace gratuitos los datos ni la entrega; evita confundir un borrador aprobado con un mensaje ya enviado
 
 ## Cómo empezar
 
@@ -39,11 +44,22 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de instalación o servidor y las dependencias indicadas por el README.
+- Python 3.13
+- Claude Code o Codex CLI autenticado
+- SMTP y fuentes solo según la prueba
 
-1. Elige Claude Code o Codex, comprueba su sesión activa y revisa la guía de configuración de Sellbird.
-2. Configura un producto y datos de prueba; verifica por separado las cuentas de correo y servicios de contactos.
-3. Genera y revisa un borrador antes de configurar envío real o tareas de seguimiento.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+# 1. Install. Use python3.13, not python3: on macOS bare python3 is 3.9.
+python3.13 -m venv .venv && source .venv/bin/activate && pip install -e .
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/ethanplusai/sellbird/blob/main/README.md)
 
@@ -51,21 +67,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar sellbird para mi objetivo y necesito pasos guiados. Lee https://github.com/ethanplusai/sellbird/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Estudia un prospecto ficticio y genera un borrador sin habilitar envíos automáticos.
+
+**Qué comprobar:** Puedes revisar evidencias, redacción y costes de la fuente antes de aprobar cualquier envío.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes.
+- Preparar un borrador de prospección
+- Evaluar criterios de selección de empresas
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Preparar un borrador de prospección; Evaluar criterios de selección de empresas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** La sesión del agente no hace gratuitos los datos ni la entrega; evita confundir un borrador aprobado con un mensaje ya enviado
 
 ## Stack y modelos
 
-- **Stack:** Python, Dockerfile, docker-compose.yml, pyproject.toml
+- **Stack:** Python 3.13; Claude Code o Codex CLI autenticado; SMTP y fuentes solo según la prueba
 - **Etiquetas:** `marketing` `agent` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +101,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ethanplusai/sellbird/blob/main/README.md)
 

@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | Depende de la ruta elegida. La interfaz no incluye créditos; el backend, modelo y servicios externos se presupuestan según ruta |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Proyecto en desarrollo activo; no hace falta aplicar el ejemplo de sudoers del README para explicar o elegir la ruta de instalación |
+| Coste | El coste depende del proveedor o la ruta. La interfaz no incluye créditos; el backend, modelo y servicios externos se presupuestan según ruta |
+| Equipo | Preparación según la ruta elegida. Instalador oficial del proyecto; backend Hermes local o remoto; proveedor o endpoint local |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Proyecto en desarrollo activo; no hace falta aplicar el ejemplo de sudoers del README para explicar o elegir la ruta de instalación
 
 ## Qué puedes hacer con él
 
-Para quien quiere usar Hermes Agent como aplicación y no solo desde la terminal.
+App de escritorio que envuelve al agente Hermes en una interfaz nativa.
 
 ## Por qué destaca
 
-Hace accesible Hermes a usuarios no técnicos.
+Usos propuestos: Usar Hermes desde una interfaz de escritorio; Consultar una instancia remota de Hermes.
 
 ## Cómo funciona
 
-Una app de escritorio que lanza y controla el agente Hermes local.
+Proyecto en desarrollo activo; no hace falta aplicar el ejemplo de sudoers del README para explicar o elegir la ruta de instalación
 
 ## Cómo empezar
 
@@ -43,35 +44,46 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un sistema compatible y el proveedor que usará Hermes Agent.
+- Instalador oficial del proyecto
+- backend Hermes local o remoto
+- proveedor o endpoint local
 
-1. Abre las descargas de Hermes One indicadas por el proyecto y revisa compatibilidad y procedencia de la distribución.
-2. Sigue el asistente para instalar o conectar Hermes y elegir el proveedor; la interfaz no incluye automáticamente acceso a los modelos.
-3. Prueba una conversación y una herramienta sencilla antes de habilitar conectores, tareas periódicas o datos reales.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/fathah/hermes-desktop/blob/main/README.md)
-
-[Abrir la web o descarga indicada por el autor](https://hermesone.org)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
 > Quiero usar Hermes Desktop para mi objetivo y necesito pasos guiados. Lee https://github.com/fathah/hermes-desktop/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Configura un backend de prueba y confirma la dirección antes de iniciar un chat.
+
+**Qué comprobar:** La interfaz muestra el backend y devuelve una respuesta del proveedor elegido.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Usar Hermes sin terminal
-- Gestionar sesiones del agente
-- Asistente de escritorio
+- Usar Hermes desde una interfaz de escritorio
+- Consultar una instancia remota de Hermes
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| usas Hermes Agent y prefieres una app de escritorio | no usas Hermes |
+| Tu objetivo encaja con estos ejemplos: Usar Hermes desde una interfaz de escritorio; Consultar una instancia remota de Hermes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Proyecto en desarrollo activo; no hace falta aplicar el ejemplo de sudoers del README para explicar o elegir la ruta de instalación
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Electron
+- **Stack:** Instalador oficial del proyecto; backend Hermes local o remoto; proveedor o endpoint local
 - **Etiquetas:** `agents` `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -79,7 +91,7 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [hermes-agent](hermes-agent.md) | 263k | Entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. |
+| [hermes-agent](hermes-agent.md) | 263k | Asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados. |
 
 ## Enlaces
 
@@ -88,7 +100,9 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/fathah/hermes-desktop/blob/main/README.md)
 

@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | API de IA opcional. El observador puede usar el plan Anthropic o claves propias según el proyecto; la prueba del observador alojado pide método de pago; revisa la opción seleccionada |
 | Claude Code | Integración documentada por el proyecto |
 | Codex | Integración documentada por el proyecto |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | El coste depende del proveedor o la ruta. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración documentada por el proyecto |
+| Modelos locales | Modelo local no documentado. Antigravity documentado es la variante CLI; algunos agentes solo buscan memoria y no capturan sesiones; no todos tienen las mismas funciones |
+| Coste | El coste depende del proveedor o la ruta. El observador puede usar el plan Anthropic o claves propias según el proyecto; la prueba del observador alojado pide método de pago; revisa la opción seleccionada |
+| Equipo | Preparación según la ruta elegida. Node 20.19+ o 22.12+; Bun y uv; agente admitido; proveedor del observador |
 
-El README documenta una integración con las sesiones de los agentes indicados. Configurar esa ruta y comprobar sus límites; otras rutas pueden facturar por API.
+Antigravity documentado es la variante CLI; algunos agentes solo buscan memoria y no capturan sesiones; no todos tienen las mismas funciones
 
 ## Qué puedes hacer con él
 
-Registra lo que hace el agente en cada sesión, lo resume y vuelve a inyectar lo relevante al empezar la siguiente. Evita repetir contexto en proyectos largos.
+Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA.
 
 ## Por qué destaca
 
-Uno de los plugins más populares de Claude Code; funciona sin configurar nada.
+Usos propuestos: Conservar decisiones entre sesiones; Recuperar el motivo de un cambio de código.
 
 ## Cómo funciona
 
-Hooks capturan las acciones de la sesión, un modelo las comprime y una base local con búsqueda las recupera por MCP.
+Antigravity documentado es la variante CLI; algunos agentes solo buscan memoria y no capturan sesiones; no todos tienen las mismas funciones
 
 ## Cómo empezar
 
@@ -43,11 +44,23 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Node 20.19+ o 22.12+
+- Bun y uv
+- agente admitido
+- proveedor del observador
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+npx claude-mem install
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/thedotmack/claude-mem/blob/main/README.md)
 
@@ -55,21 +68,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar claude-mem para mi objetivo y necesito pasos guiados. Lee https://github.com/thedotmack/claude-mem/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Guarda una decisión ficticia en una sesión y consulta si se recupera en una nueva.
+
+**Qué comprobar:** Puedes distinguir captura, resumen y recuperación y ver qué proveedor los produjo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Recordar decisiones de un proyecto
-- Retomar trabajo sin re-explicar
-- Buscar qué hizo el agente antes
+- Conservar decisiones entre sesiones
+- Recuperar el motivo de un cambio de código
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| usas Claude Code a diario y repites contexto entre sesiones | necesitas memoria para una app propia; mira `mem0` |
+| Tu objetivo encaja con estos ejemplos: Conservar decisiones entre sesiones; Recuperar el motivo de un cambio de código | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Antigravity documentado es la variante CLI; algunos agentes solo buscan memoria y no capturan sesiones; no todos tienen las mismas funciones
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, SQLite, Chroma
+- **Stack:** Node 20.19+ o 22.12+; Bun y uv; agente admitido; proveedor del observador
 - **Etiquetas:** `memory` `coding-agent` `mcp` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -95,7 +117,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/thedotmack/claude-mem/blob/main/README.md)
 

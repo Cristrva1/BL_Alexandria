@@ -1,0 +1,6 @@
+{
+ "hermes-agent":{"one":"Asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados."},
+ "multica":{"one":"Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias."},
+ "autoresearch":{"one":"Experimento para iterar sobre entrenamiento de nanochat con un agente de código y una GPU NVIDIA."},
+ "opendots":{"one":"Interfaz abierta de asistentes persistentes que requiere CopilotKit Intelligence, alojado, evaluado localmente o con licencia."}
+}

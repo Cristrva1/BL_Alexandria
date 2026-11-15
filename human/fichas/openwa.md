@@ -2,13 +2,13 @@
 
 # 🌐 OpenWA
 
-> Gateway/SDK abierto para conectar y automatizar cuentas de WhatsApp de forma directa desde código, sin infraestructura pesada.
+> Gateway autoalojado de WhatsApp con API, panel de sesiones y servidor MCP HTTP opcional, del proyecto rmyndharis/OpenWA.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 16.9k | MIT | TypeScript | 2026-06-23 |
 
-**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
+**Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,57 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El gateway no requiere modelo; hosting y servicios conectados tienen costes propios |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Este proyecto es rmyndharis/OpenWA; MCP HTTP añade herramientas de lectura por defecto y capacidades de escritura se habilitan aparte |
+| Coste | El coste depende del proveedor o la ruta. El gateway no requiere modelo; hosting y servicios conectados tienen costes propios |
+| Equipo | Preparación según la ruta elegida. Docker; cuenta y número propios; configuración de autenticación y persistencia |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Este proyecto es rmyndharis/OpenWA; MCP HTTP añade herramientas de lectura por defecto y capacidades de escritura se habilitan aparte
 
 ## Qué puedes hacer con él
 
-Envía y recibe mensajes de WhatsApp desde tu propio script con una API sencilla y expresiva.
+Gateway autoalojado de WhatsApp con API, panel de sesiones y servidor MCP HTTP opcional, del proyecto rmyndharis/OpenWA.
 
 ## Por qué destaca
 
-Muy adoptado para prototipos y bots individuales por su simplicidad y su API expresiva, con una comunidad consolidada alrededor de wa-automate. Es la opción ligera cuando evolution-api es excesivo.
+Usos propuestos: Prototipar una integración de mensajería; Consultar estados desde un agente MCP.
 
 ## Cómo funciona
 
-Controla una sesión de WhatsApp Web mediante automatización del navegador (Puppeteer) y expone eventos y métodos a tus scripts en Node.js, con bindings para Python. Cada sesión vive en un proceso, sin Redis ni orquestador.
+Este proyecto es rmyndharis/OpenWA; MCP HTTP añade herramientas de lectura por defecto y capacidades de escritura se habilitan aparte
 
 ## Cómo empezar
 
-Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Docker
+- cuenta y número propios
+- configuración de autenticación y persistencia
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+# Clone and start
+git clone https://github.com/rmyndharis/OpenWA.git
+cd OpenWA
+docker compose -f docker-compose.dev.yml up -d
+
+# Access (the dashboard is bundled into the API image and served on the same port)
+# Dashboard: http://localhost:2785
+# API: http://localhost:2785/api
+# Swagger: http://localhost:2785/api/docs
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/rmyndharis/OpenWA/blob/main/README.md)
 
@@ -51,23 +74,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar OpenWA para mi objetivo y necesito pasos guiados. Lee https://github.com/rmyndharis/OpenWA/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Abre el dashboard y consulta el estado de una sesión de prueba antes de automatizar mensajes.
+
+**Qué comprobar:** Puedes ver sesión, API y permisos del usuario configurado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Bot que escucha eventos y ejecuta scripts locales
-- Respuestas rápidas con panel local
-- Prototipo de agente conversacional en una sola máquina
+- Prototipar una integración de mensajería
+- Consultar estados desde un agente MCP
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| desarrollas scripts o bots individuales y quieres arrancar rápido | necesitas infra multi-instancia o alta disponibilidad (evolution-api) |
+| Tu objetivo encaja con estos ejemplos: Prototipar una integración de mensajería; Consultar estados desde un agente MCP | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Depende de automatizar el navegador, lo que es frágil ante cambios de WhatsApp Web; no está pensado para producción a escala.
+**Limitaciones:** Este proyecto es rmyndharis/OpenWA; MCP HTTP añade herramientas de lectura por defecto y capacidades de escritura se habilitan aparte
 
 ## Stack y modelos
 
-- **Stack:** Node.js, Puppeteer, bindings Python
+- **Stack:** Docker; cuenta y número propios; configuración de autenticación y persistencia
 - **Etiquetas:** `whatsapp` `chatbot` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -85,7 +115,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/rmyndharis/OpenWA/blob/main/README.md)
 

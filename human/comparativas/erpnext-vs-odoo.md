@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura. | Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. |
 | ⭐ Estrellas | 41.3k | 55.8k |
-| Elígelo si… | quieres un ERP completo y totalmente libre | necesitas un ERP completo con CRM integrado |
-| Evítalo si… | buscas el mayor ecosistema de módulos; mira `odoo` | solo quieres un CRM ligero; mira `twenty-main` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Evaluar inventario y ventas; Estudiar un ERP con datos de muestra | Tu objetivo encaja con estos ejemplos: Evaluar un CRM para un negocio; Estudiar cómo se conectan ventas e inventario |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
-| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
-| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
+| API de IA | Sin clave propia de API de IA en la ruta básica | API de IA opcional |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | La función básica no necesita un modelo | Modelo local no documentado |
 | Setup | 🔴 pesado | 🔴 pesado |
 | Licencia | GPL-3.0 | NOASSERTION |
-| Instalación | `git clone https://github.com/frappe/frappe_docker` | `docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres --name db postgres:16` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## Regla práctica
 
-- Elige **ERPNext** si quieres un ERP completo y totalmente libre.
-- Elige **Odoo** si necesitas un ERP completo con CRM integrado.
+- Elige **ERPNext** si Tu objetivo encaja con estos ejemplos: Evaluar inventario y ventas; Estudiar un ERP con datos de muestra.
+- Elige **Odoo** si Tu objetivo encaja con estos ejemplos: Evaluar un CRM para un negocio; Estudiar cómo se conectan ventas e inventario.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

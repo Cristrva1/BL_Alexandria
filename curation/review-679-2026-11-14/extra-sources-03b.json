@@ -1,0 +1,10 @@
+{
+ "agent-framework": ["https://learn.microsoft.com/en-us/agent-framework/integrations/by-component/model-providers/?pivots=programming-language-python", "https://github.com/vercel-labs/skills/blob/main/docs/agents.md"],
+ "langgraphjs": ["https://docs.langchain.com/oss/javascript/integrations/chat/ollama"],
+ "dify": ["https://marketplace.dify.ai/plugin/langgenius/ollama"],
+ "langflow": ["https://docs.langflow.org/bundles-ollama", "https://docs.langflow.org/langflow-assistant", "https://antigravity.google/docs/ide-mcp"],
+ "flowise": ["https://docs.flowiseai.com/integrations/langchain/chat-models/chatollama"],
+ "sim": ["https://antigravity.google/docs/ide-mcp"],
+ "langchain4j": ["https://docs.langchain4j.dev/integrations/language-models/ollama/"],
+ "claude-agent-sdk-python": ["https://code.claude.com/docs/en/agent-sdk/quickstart"]
+}

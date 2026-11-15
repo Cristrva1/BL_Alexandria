@@ -1,0 +1,5 @@
+{
+ "openwa":{"role":"platform","one":"Gateway autoalojado de WhatsApp con API, panel de sesiones y servidor MCP HTTP opcional, del proyecto rmyndharis/OpenWA."},
+ "whatsapp-agentkit":{"one":"Instrucciones y scripts que guían a Claude Code para construir un bot de WhatsApp; el bot resultante necesita sus propios proveedores y credenciales."},
+ "botpress":{"role":"library","one":"Hub de SDKs, CLI e integraciones para desarrollar y desplegar conexiones en el ecosistema Botpress.","desc":"El repositorio actual reúne paquetes e integraciones abiertas y un CLI para crear y desplegar extensiones. Botpress Cloud y sus modelos tienen condiciones de servicio separadas. Clonar este código no instala toda la plataforma alojada."}
+}

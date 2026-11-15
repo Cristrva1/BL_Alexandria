@@ -16,34 +16,59 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
+| API de IA | API de IA opcional. Fuentes de enriquecimiento son opcionales; el modelo del agente usa Vercel AI Gateway con OIDC en Vercel o clave fuera; sin clave escrita no significa sin consumo |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | El coste depende del proveedor o la ruta. El README permite prescindir de fuentes externas de investigación. Confirmar por separado el agente y proveedor que ejecutará las tareas. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. El agente es un despliegue propio; OAuth de correo no sustituye autenticación y presupuesto del modelo; la configuración incluye telemetría desactivable |
+| Coste | El coste depende del proveedor o la ruta. Fuentes de enriquecimiento son opcionales; el modelo del agente usa Vercel AI Gateway con OIDC en Vercel o clave fuera; sin clave escrita no significa sin consumo |
+| Equipo | Preparación según la ruta elegida. Bun; PostgreSQL; OAuth Google o Microsoft para login; AI Gateway para agentes fuera de Vercel |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El agente es un despliegue propio; OAuth de correo no sustituye autenticación y presupuesto del modelo; la configuración incluye telemetría desactivable
 
 ## Qué puedes hacer con él
 
-CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. Un agente trabaja sobre una cola y un presupuesto de investigación y mantiene la información del CRM.
+CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia.
 
 ## Por qué destaca
 
-Quieres estudiar un CRM donde el agente organiza el seguimiento.
+Usos propuestos: Estudiar un CRM con investigación de contactos; Organizar tareas con evidencia de su origen.
 
 ## Cómo funciona
 
-Un agente trabaja sobre una cola y un presupuesto de investigación y mantiene la información del CRM.
+El agente es un despliegue propio; OAuth de correo no sustituye autenticación y presupuesto del modelo; la configuración incluye telemetría desactivable
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Bun
+- PostgreSQL
+- OAuth Google o Microsoft para login
+- AI Gateway para agentes fuera de Vercel
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (sh):**
+
+```
+git clone https://github.com/trycompai/crm.git && cd crm
+cp .env.example .env          # then fill in the values below
+bun install
+
+docker compose up -d          # Postgres on :5432
+
+bun run db:deploy             # apply migrations
+bun run db:seed               # optional: a believable pipeline to look at
+bun run dev
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/trycompai/crm/blob/release/README.md)
 
@@ -51,21 +76,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar crm para mi objetivo y necesito pasos guiados. Lee https://github.com/trycompai/crm/blob/release/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Carga datos ficticios y revisa qué fuentes de enriquecimiento y modelo están configurados antes de conectar correo.
+
+**Qué comprobar:** Puedes distinguir funciones CRM, lectura de historial y llamadas a proveedores externos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres estudiar un CRM donde el agente organiza el seguimiento
+- Estudiar un CRM con investigación de contactos
+- Organizar tareas con evidencia de su origen
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres estudiar un CRM donde el agente organiza el seguimiento | solo necesitas una integración sencilla sin operar una plataforma |
+| Tu objetivo encaja con estos ejemplos: Estudiar un CRM con investigación de contactos; Organizar tareas con evidencia de su origen | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** El despliegue y las conexiones requieren configuración; no verifica automáticamente toda la información de contactos.
+**Limitaciones:** El agente es un despliegue propio; OAuth de correo no sustituye autenticación y presupuesto del modelo; la configuración incluye telemetría desactivable
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Docker, Node.js
+- **Stack:** Bun; PostgreSQL; OAuth Google o Microsoft para login; AI Gateway para agentes fuera de Vercel
 - **Etiquetas:** `crm` `typescript`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -76,9 +110,12 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/trycompai/crm/blob/release/README.md)
+- [Fuente 2](https://github.com/trycompai/crm/blob/release/.env.example)
 
 ---
 

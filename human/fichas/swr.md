@@ -16,56 +16,73 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No requiere IA; el endpoint consultado y su alojamiento pueden cobrar por uso |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es una herramienta de obtención y caché de datos, no una librería de botones ni un backend |
+| Coste | Sin pago a un modelo en la ruta básica. No requiere IA; el endpoint consultado y su alojamiento pueden cobrar por uso |
+| Equipo | Preparación según la ruta elegida. React; endpoint de datos de prueba; función fetcher |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es una herramienta de obtención y caché de datos, no una librería de botones ni un backend
 
 ## Qué puedes hacer con él
 
-Cubre el caso de consumir APIs en frontend sin manejar caché a mano.
+Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano.
 
 ## Por qué destaca
 
-Creada por Vercel, ofrece una DX muy pulida para consumir APIs y es referencia junto a React Query. Su peso mínimo y la revalidación en foco/intervalo cubren la mayoría de apps sin configuración.
+Usos propuestos: Actualizar un panel sin recargar; Revalidar datos al volver a una pestaña.
 
 ## Cómo funciona
 
-Hook `useSWR(key, fetcher)` que cachea por clave, revalida al recuperar foco o en intervalo, y deduplica peticiones simultáneas al mismo key.
+Es una herramienta de obtención y caché de datos, no una librería de botones ni un backend
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/vercel/swr/blob/main/README.md)
+- React
+- endpoint de datos de prueba
+- función fetcher
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://swr.vercel.app/docs/getting-started)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar swr para mi objetivo y necesito pasos guiados. Lee https://github.com/vercel/swr/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar swr para mi objetivo y necesito pasos guiados. Lee https://swr.vercel.app/docs/getting-started. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Muestra un perfil ficticio y cambia el dato del servidor para observar la revalidación.
+
+**Qué comprobar:** Se distinguen carga, error, datos cacheados y datos nuevos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Consumir APIs en frontend con caché y revalidación
-- Datos en tiempo casi real sin WebSocket
-- Mutaciones optimistas con `useSWRMutation`
+- Actualizar un panel sin recargar
+- Revalidar datos al volver a una pestaña
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| manejas datos remotos en React y quieres caché simple | prefieres React Query con su modelo de caché global más rico |
+| Tu objetivo encaja con estos ejemplos: Actualizar un panel sin recargar; Revalidar datos al volver a una pestaña | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Es una herramienta de obtención y caché de datos, no una librería de botones ni un backend
 
 ## Stack y modelos
 
-- **Stack:** JavaScript/React
+- **Stack:** React; endpoint de datos de prueba; función fetcher
 - **Etiquetas:** `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,7 +100,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/vercel/swr/blob/main/README.md)
 

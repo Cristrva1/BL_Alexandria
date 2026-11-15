@@ -16,56 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | Depende de la ruta elegida. El editor y las funciones AI tienen requisitos distintos; los proveedores y servicios alojados pueden cobrar |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Un elemento pendiente de MCP en la hoja de ruta no acredita soporte ya implementado |
+| Coste | El coste depende del proveedor o la ruta. El editor y las funciones AI tienen requisitos distintos; los proveedores y servicios alojados pueden cobrar |
+| Equipo | Preparación según la ruta elegida. Proyecto React/Tailwind compatible; dependencias de desarrollo; modelo para AI |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Un elemento pendiente de MCP en la hoja de ruta no acredita soporte ya implementado
 
 ## Qué puedes hacer con él
 
-Edita tu app en un lienzo visual o pide cambios a la IA, y Onlook escribe el código en tu proyecto.
+Editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma.
 
 ## Por qué destaca
 
-Une diseño visual y código real, alternativa abierta a Lovable o v0.
+Usos propuestos: Ajustar una interfaz React de forma visual; Prototipar un rediseño sobre código.
 
 ## Cómo funciona
 
-Ejecuta tu app y mapea los elementos del DOM a su código fuente para editarlos visualmente o con IA.
+Un elemento pendiente de MCP en la hoja de ruta no acredita soporte ya implementado
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/onlook-dev/onlook/blob/main/README.md)
+- Proyecto React/Tailwind compatible
+- dependencias de desarrollo
+- modelo para AI
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://docs.onlook.com/developers/running-locally)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Onlook para mi objetivo y necesito pasos guiados. Lee https://github.com/onlook-dev/onlook/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Onlook para mi objetivo y necesito pasos guiados. Lee https://docs.onlook.com/developers/running-locally. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Abre una app de prueba, cambia un espaciado visualmente y revisa el diff de código.
+
+**Qué comprobar:** El cambio visible corresponde a un cambio identificable en los archivos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Ajustar estilos sin tocar código
-- Prototipos con IA
-- Colaboración entre diseño y desarrollo
+- Ajustar una interfaz React de forma visual
+- Prototipar un rediseño sobre código
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres editar tu app React visualmente con ayuda de IA | necesitas diseño desde cero en vectores; mira `penpot` |
+| Tu objetivo encaja con estos ejemplos: Ajustar una interfaz React de forma visual; Prototipar un rediseño sobre código | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Un elemento pendiente de MCP en la hoja de ruta no acredita soporte ya implementado
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Next.js, Tailwind
+- **Stack:** Proyecto React/Tailwind compatible; dependencias de desarrollo; modelo para AI
 - **Etiquetas:** `design` `ui` `coding-agent` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,7 +107,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/onlook-dev/onlook/blob/main/README.md)
 

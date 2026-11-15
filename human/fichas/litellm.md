@@ -16,34 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| API de IA | API de IA opcional. Las llamadas siguen usando claves, cuotas y precios de cada proveedor; Ollama y LM Studio permiten rutas locales |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Documenta harnesses de Claude Code y Codex en el SDK; pasar por el gateway no incorpora suscripciones ni elimina diferencias entre protocolos |
+| Coste | El coste depende del proveedor o la ruta. Las llamadas siguen usando claves, cuotas y precios de cada proveedor; Ollama y LM Studio permiten rutas locales |
+| Equipo | Preparación según la ruta elegida. Python y uv; proveedor o endpoint local; presupuesto de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Documenta harnesses de Claude Code y Codex en el SDK; pasar por el gateway no incorpora suscripciones ni elimina diferencias entre protocolos
 
 ## Qué puedes hacer con él
 
-Resuelve el lock-in: cambias de proveedor o añades fallback sin reescribir el código de tu app.
+Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI.
 
 ## Por qué destaca
 
-Es un estándar de facto para abstraer proveedores, muy adoptado por su routing, control de costos, reintentos y fallback entre modelos. Su amplia cobertura (OpenAI, Anthropic, Google, Bedrock, locales vía Ollama/vLLM) lo hace casi ubicuo en stacks multi-modelo.
+Usos propuestos: Unificar llamadas a varios modelos; Enrutar un agente por un gateway propio.
 
 ## Cómo funciona
 
-Traduce cada petición al formato del proveedor destino y puede correr como proxy/gateway (modo servidor) con balanceo, reintentos, budget tracking y registro de uso, además de como librería embebida.
+Documenta harnesses de Claude Code y Codex en el SDK; pasar por el gateway no incorpora suscripciones ni elimina diferencias entre protocolos
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python y uv
+- proveedor o endpoint local
+- presupuesto de prueba
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (shell):**
+
+```
+uv add litellm
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/BerriAI/litellm/blob/main/README.md)
 
@@ -51,21 +67,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar litellm para mi objetivo y necesito pasos guiados. Lee https://github.com/BerriAI/litellm/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Configura un único proveedor y envía una petición breve antes de activar fallback y balanceo.
+
+**Qué comprobar:** Puedes identificar el proveedor real y su consumo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Probar varios modelos sin reescribir código
-- Balancear costo/fallback entre proveedores
-- Centralizar control de costos y rate limits
+- Unificar llamadas a varios modelos
+- Enrutar un agente por un gateway propio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| trabajas con múltiples modelos o quieres fallback/control de costos | usas un único proveedor fijo y no necesitas abstracción |
+| Tu objetivo encaja con estos ejemplos: Unificar llamadas a varios modelos; Enrutar un agente por un gateway propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Documenta harnesses de Claude Code y Codex en el SDK; pasar por el gateway no incorpora suscripciones ni elimina diferencias entre protocolos
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python y uv; proveedor o endpoint local; presupuesto de prueba
 - **Etiquetas:** `inference` `llmops` `python` `docker`
 - **Modo de instalación sugerido:** 📦 **Dependencia del proyecto** — instálalo dentro de cada proyecto que lo use
 
@@ -87,7 +112,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/BerriAI/litellm/blob/main/README.md)
 

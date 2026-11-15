@@ -1,0 +1,7 @@
+{
+  "langgraph": ["https://docs.langchain.com/oss/python/integrations/chat/ollama"],
+  "langchain": ["https://docs.langchain.com/oss/python/integrations/chat/ollama"],
+  "autogen": ["https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/components/model-clients.html"],
+  "agno": ["https://docs.agno.com/coding-agents", "https://docs.agno.com/agent-platform/coding-agents", "https://antigravity.google/docs/ide-mcp"],
+  "dspy": ["https://dspy.ai/getting-started/installation/"]
+}

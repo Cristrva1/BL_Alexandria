@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Usa el agente de código y sus límites; publicar, dominios y servicios del proyecto cuestan aparte |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Antigravity | Compatibilidad por confirmar |
+| Modelos locales | La función básica no necesita un modelo. La plantilla documenta Claude Code y Codex; la skill portable no prueba por sí sola toda la experiencia en Antigravity |
+| Coste | Consumo del agente que ya utilizas. Usa el agente de código y sus límites; publicar, dominios y servicios del proyecto cuestan aparte |
+| Equipo | Preparación según la ruta elegida. Node; agente con acceso de navegador; web propia o referencia autorizada |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+La plantilla documenta Claude Code y Codex; la skill portable no prueba por sí sola toda la experiencia en Antigravity
 
 ## Qué puedes hacer con él
 
 Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz.
 
+## Por qué destaca
+
+Usos propuestos: Estudiar cómo traducir un diseño a componentes; Prototipar una variante de una página propia.
+
 ## Cómo funciona
 
-Se utiliza como punto de partida: se prepara el entorno del ejemplo y se adapta su código a la tarea.
+La plantilla documenta Claude Code y Codex; la skill portable no prueba por sí sola toda la experiencia en Antigravity
 
 ## Cómo empezar
 
@@ -39,11 +44,14 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
+- Node
+- agente con acceso de navegador
+- web propia o referencia autorizada
 
-1. Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.
-2. Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.
-3. Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/JCodesMore/ai-website-cloner-template/blob/master/README.md)
 
@@ -51,21 +59,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar ai-website-cloner-template para mi objetivo y necesito pasos guiados. Lee https://github.com/JCodesMore/ai-website-cloner-template/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Usa una página de referencia propia y pide recrear una única sección en el proyecto de prueba.
+
+**Qué comprobar:** Puedes comparar referencia y resultado a la misma anchura y revisar el código.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz.
+- Estudiar cómo traducir un diseño a componentes
+- Prototipar una variante de una página propia
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| Tu objetivo encaja con estos ejemplos: Estudiar cómo traducir un diseño a componentes; Prototipar una variante de una página propia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** La plantilla documenta Claude Code y Codex; la skill portable no prueba por sí sola toda la experiencia en Antigravity
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+- **Stack:** Node; agente con acceso de navegador; web propia o referencia autorizada
 - **Etiquetas:** `ia-ui` `template` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +93,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/JCodesMore/ai-website-cloner-template/blob/master/README.md)
 

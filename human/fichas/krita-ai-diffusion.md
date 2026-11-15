@@ -16,56 +16,75 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | API de IA opcional. El servidor local consume tu equipo; Cloud tiene condiciones propias; modelos y descargas se presupuestan según ruta |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. El autor recomienda al menos 6 GB VRAM NVIDIA para local; CPU es posible pero muy lenta; revisa soporte del backend de tu GPU |
+| Coste | El coste depende del proveedor o la ruta. El servidor local consume tu equipo; Cloud tiene condiciones propias; modelos y descargas se presupuestan según ruta |
+| Equipo | Preparación según la ruta elegida. Krita compatible; plugin; servidor local o Cloud; GPU recomendada para local |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El autor recomienda al menos 6 GB VRAM NVIDIA para local; CPU es posible pero muy lenta; revisa soporte del backend de tu GPU
 
 ## Qué puedes hacer con él
 
-Pinta, selecciona y genera dentro de tu editor de imágenes favorito; usa ComfyUI por debajo.
+Plugin para generar y editar imágenes con IA dentro de Krita, con inpainting y outpainting.
 
 ## Por qué destaca
 
-Integra la IA en un flujo de ilustración real, sin cambiar de herramienta.
+Usos propuestos: Completar un fondo en una ilustración; Usar un boceto para guiar una imagen.
 
 ## Cómo funciona
 
-El plugin envía capas y selecciones a un servidor ComfyUI local o remoto.
+El autor recomienda al menos 6 GB VRAM NVIDIA para local; CPU es posible pero muy lenta; revisa soporte del backend de tu GPU
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/Acly/krita-ai-diffusion/blob/main/README.md)
+- Krita compatible
+- plugin
+- servidor local o Cloud
+- GPU recomendada para local
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://docs.interstice.cloud/installation)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Krita AI Diffusion para mi objetivo y necesito pasos guiados. Lee https://github.com/Acly/krita-ai-diffusion/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Krita AI Diffusion para mi objetivo y necesito pasos guiados. Lee https://docs.interstice.cloud/installation. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Selecciona una región de una imagen propia y genera una modificación en otra capa.
+
+**Qué comprobar:** Puedes aceptar o descartar la capa manteniendo el original.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Ilustración con apoyo de IA
-- Rellenar o extender imágenes
-- Bocetos a arte final
+- Completar un fondo en una ilustración
+- Usar un boceto para guiar una imagen
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| ilustras en Krita y quieres IA integrada | quieres automatizar generación en lote; mira `comfyui` |
+| Tu objetivo encaja con estos ejemplos: Completar un fondo en una ilustración; Usar un boceto para guiar una imagen | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El autor recomienda al menos 6 GB VRAM NVIDIA para local; CPU es posible pero muy lenta; revisa soporte del backend de tu GPU
 
 ## Stack y modelos
 
-- **Stack:** Python, Krita, ComfyUI
+- **Stack:** Krita compatible; plugin; servidor local o Cloud; GPU recomendada para local
 - **Etiquetas:** `image` `design` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -88,7 +107,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Acly/krita-ai-diffusion/blob/main/README.md)
 

@@ -18,58 +18,73 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El gestor básico no requiere IA; servidor y almacenamiento son recursos propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El desarrollo se ha trasladado a Codeberg; sigue el enlace canónico y la documentación antes de usar instrucciones GitHub antiguas |
+| Coste | Sin pago a un modelo en la ruta básica. El gestor básico no requiere IA; servidor y almacenamiento son recursos propios |
+| Equipo | Preparación según la ruta elegida. Docker o entorno de la guía; volumen para documentos; cuenta de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El desarrollo se ha trasladado a Codeberg; sigue el enlace canónico y la documentación antes de usar instrucciones GitHub antiguas
 
 ## Qué puedes hacer con él
 
-Organiza y lee tus PDFs desde cualquier dispositivo. El desarrollo se trasladó a Codeberg.
+Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura.
 
 ## Por qué destaca
 
-Alternativa ligera a suites documentales pesadas.
+Usos propuestos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos.
 
 ## Cómo funciona
 
-App web Django que guarda PDFs, metadatos y anotaciones.
+El desarrollo se ha trasladado a Codeberg; sigue el enlace canónico y la documentación antes de usar instrucciones GitHub antiguas
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/mrmn2/PdfDing/blob/master/README.md)
+- Docker o entorno de la guía
+- volumen para documentos
+- cuenta de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://docs.pdfding.com/getting_started/docker/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar PdfDing para mi objetivo y necesito pasos guiados. Lee https://github.com/mrmn2/PdfDing/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar PdfDing para mi objetivo y necesito pasos guiados. Lee https://docs.pdfding.com/getting_started/docker/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Sube un PDF ficticio, añade una etiqueta y continúa su lectura en otra sesión.
+
+**Qué comprobar:** Puedes encontrar el documento y su progreso guardado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Biblioteca personal de PDFs
-- Leer y anotar desde el móvil
-- Compartir PDFs internos
+- Organizar una colección de PDFs
+- Consultar documentos desde varios dispositivos
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres organizar y leer PDFs en tu servidor | necesitas editar PDFs; mira `stirling-pdf` |
+| Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** El repo de GitHub está archivado: el proyecto sigue en Codeberg.
+**Limitaciones:** El desarrollo se ha trasladado a Codeberg; sigue el enlace canónico y la documentación antes de usar instrucciones GitHub antiguas
 
 ## Stack y modelos
 
-- **Stack:** Python, Django, Docker
+- **Stack:** Docker o entorno de la guía; volumen para documentos; cuenta de prueba
 - **Etiquetas:** `pdf` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -88,9 +103,12 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/mrmn2/PdfDing/blob/master/README.md)
+- [Fuente 2](https://codeberg.org/mrmn/PdfDing)
 
 ---
 

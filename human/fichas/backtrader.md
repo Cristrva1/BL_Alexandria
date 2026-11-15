@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No requiere modelo; fuentes de datos y cómputo pueden costar aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. Datos de mercado, brokers y exchanges pueden exigir cuentas, cuotas, comisiones o fondos. Una simulación o backtest no acredita rentabilidad ni una conexión real lista. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es una biblioteca de simulación e integración; los resultados dependen de comisiones, datos y supuestos, no solo de la regla |
+| Coste | Sin pago a un modelo en la ruta básica. No requiere modelo; fuentes de datos y cómputo pueden costar aparte |
+| Equipo | Preparación según la ruta elegida. Python y dependencias compatibles; CSV histórico; matplotlib solo para gráficos |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Es una biblioteca de simulación e integración; los resultados dependen de comisiones, datos y supuestos, no solo de la regla
 
 ## Qué puedes hacer con él
 
 Biblioteca de Python para definir estrategias y estudiar su comportamiento mediante backtesting de datos de mercado.
 
+## Por qué destaca
+
+Usos propuestos: Aprender backtesting por eventos; Comparar supuestos de ejecución de una estrategia.
+
 ## Cómo funciona
 
-El desarrollador adapta sus ejemplos y componentes dentro de un proyecto con sus propios datos y servicios.
+Es una biblioteca de simulación e integración; los resultados dependen de comisiones, datos y supuestos, no solo de la regla
 
 ## Cómo empezar
 
@@ -39,19 +44,14 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
+- Python y dependencias compatibles
+- CSV histórico
+- matplotlib solo para gráficos
 
-1. Elige un ejemplo de consulta de datos, backtesting o simulación que no envíe órdenes reales.
-2. Prepara datos de prueba y, si el proveedor lo requiere, una cuenta y credenciales de solo lectura; revisa sus cuotas por separado.
-3. Comprueba los resultados y el coste observado. La ejecución con fondos es otra configuración y no se activa como parte de esta primera prueba.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
 
-**Comando de entrada documentado:**
-
-```shell
-pip install backtrader
-```
-
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/mementum/backtrader/blob/master/README.rst)
 
@@ -59,21 +59,30 @@ Comando de entrada seleccionado y presente en la fuente revisada; consulta la in
 
 > Quiero usar backtrader para mi objetivo y necesito pasos guiados. Lee https://github.com/mementum/backtrader/blob/master/README.rst. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Prueba una regla sencilla sobre un CSV y añade una comisión explícita.
+
+**Qué comprobar:** Puedes revisar cada operación y su efecto en el balance simulado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Biblioteca de Python para definir estrategias y estudiar su comportamiento mediante backtesting de datos de mercado.
+- Aprender backtesting por eventos
+- Comparar supuestos de ejecución de una estrategia
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Biblioteca de Python para definir estrategias y estudiar su comportamiento mediante backtesting de datos de mercado. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| Tu objetivo encaja con estos ejemplos: Aprender backtesting por eventos; Comparar supuestos de ejecución de una estrategia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. No se verificó rentabilidad ni operación con fondos. Distingue demostración, backtesting, simulación y conexión real.
+**Limitaciones:** Es una biblioteca de simulación e integración; los resultados dependen de comisiones, datos y supuestos, no solo de la regla
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python y dependencias compatibles; CSV histórico; matplotlib solo para gráficos
 - **Etiquetas:** `cuant` `framework` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,7 +99,9 @@ Comando de entrada seleccionado y presente en la fuente revisada; consulta la in
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/mementum/backtrader/blob/master/README.rst)
 

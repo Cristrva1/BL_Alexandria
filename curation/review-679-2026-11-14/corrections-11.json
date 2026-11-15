@@ -1,0 +1,5 @@
+{
+ "open-generative-ai":{"one":"Estudio de imagen y video con servicios remotos MuAPI y rutas locales de escritorio mediante sd.cpp o Wan2GP.","desc":"Reúne herramientas de generación de imagen y video. Los modelos alojados consumen servicios externos; la app de escritorio permite configurar motores locales independientes. Las rutas difieren en hardware, instalación, licencia de pesos y costes."},
+ "real-esrgan":{"one":"Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos."},
+ "sd-webui-forge":{"one":"Variante de Stable Diffusion WebUI que experimenta con gestión de recursos y optimización de inferencia; el rendimiento depende de la configuración."}
+}

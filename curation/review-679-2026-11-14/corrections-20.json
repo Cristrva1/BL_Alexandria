@@ -1,0 +1,6 @@
+{
+ "gemini-cli":{"one":"CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI.","desc":"Agente de terminal de Google. Su aviso actual diferencia el acceso empresarial de Gemini Code Assist, Antigravity CLI para usuarios individuales y Gemini API CLI para llamadas sin estado. Revisa esa distinción antes de instalar o asumir una cuota gratuita."},
+ "openhands":{"one":"Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP."},
+ "continue":{"one":"Agente para CLI y editores con versión final 2.0.0; el repositorio declara fin de mantenimiento activo."},
+ "open-swe":{"one":"Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables."}
+}

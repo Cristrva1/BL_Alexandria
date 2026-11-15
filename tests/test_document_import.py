@@ -54,7 +54,7 @@ def test_import_snapshot_resolves_to_sourced_distinct_catalog_entries():
         repo=catalog.get(item["id"])
         assert repo["github_id"] == item["github_id"]
         assert repo["gh"] == item["full_name"]
-        assert repo["access"]["source_blob_sha"] == item["readme_blob_sha"]
+        assert item["readme_blob_sha"] in {repo["access"]["source_blob_sha"],repo.get('editorial_review',{}).get('previous_source_blob_sha')}
         assert repo["sources"]["root_tree_sha"]
         assert repo["added_at"] == snapshot["checked_at"]
     assert catalog.get("google-skills")["github_id"] != catalog.get("skills")["github_id"]

@@ -6,511 +6,729 @@
 ## `annas-mcp`
 role=runtime · exec=hybrid · setup=medium · mcp=True · prov=— · tags=servidores,annas-archive,cli,mcp-server,go
 
-**Qué es:** Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos. Expone búsquedas y descargas como herramientas MCP y permite seleccionar espejos disponibles.
-**Stack:** Go, Go modules
+**Qué es:** Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos.
+**Stack:** Binario oficial para tu sistema; cliente MCP; clave solo para descargas
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Buscar no necesita variables; descargar por su API requiere la donación y clave descritas por el autor
 - Claude Code: Herramienta MCP para el agente
 - Codex: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta.
-- Coste: El coste depende del proveedor o la ruta. El proyecto documenta requisitos de acceso a la API de Anna's Archive; no asumir acceso ilimitado por conectar un cliente MCP.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. Configura la ruta absoluta del binario y del directorio de descargas; la herramienta no concede derechos sobre los documentos
+- Coste: El coste depende del proveedor o la ruta. Buscar no necesita variables; descargar por su API requiere la donación y clave descritas por el autor
+- Equipo: Preparación según la ruta elegida. Binario oficial para tu sistema; cliente MCP; clave solo para descargas
 **Repo:** https://github.com/iosifache/annas-mcp
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/iosifache/annas-mcp/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/iosifache/annas-mcp/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** necesitas integrar búsquedas de documentos en un cliente MCP
-**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
+**Elige si:** Tu objetivo encaja con estos ejemplos: Localizar un documento de dominio público; Estudiar una interfaz de búsqueda documental MCP
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Busca un documento que puedas utilizar legalmente y revisa los metadatos antes de descargar
+**Qué comprobar:** La búsqueda muestra título y origen sin necesitar clave de descarga
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `markitdown`
 
 ## `awesome-mcp-clients`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=mcp
 
-**Qué es:** Ayuda a elegir dónde usar tus servidores MCP: chats de escritorio, editores, CLIs y plataformas.
-**Stack:** Markdown
+**Qué es:** Lista curada de clientes que soportan Model Context Protocol: apps, IDEs y agentes.
+**Stack:** Navegador; preferencias de sistema y modelo
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El directorio no cobra modelos; cada cliente puede tener suscripción, API o requisitos locales
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo.
-- Coste: Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Un cliente descrito como basado en Claude Code no es necesariamente el producto oficial ni comparte sus condiciones
+- Coste: Sin pago a un modelo en la ruta básica. El directorio no cobra modelos; cada cliente puede tener suscripción, API o requisitos locales
+- Equipo: Preparación según la ruta elegida. Navegador; preferencias de sistema y modelo
 **Repo:** https://github.com/punkpeye/awesome-mcp-clients
 
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** buscas un cliente para tus servidores MCP
-**Evita si:** buscas servidores; mira `awesome-mcp-servers`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar una interfaz para herramientas MCP; Comparar clientes con modelos locales
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Compara dos clientes por transportes MCP, autenticación y modelos admitidos
+**Qué comprobar:** Puedes elegir un cliente cuyo sistema y conexiones encajen con tu caso
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `awesome-mcp-servers`
 
 ## `awesome-mcp-servers`
 role=directory · exec=hybrid · setup=easy · mcp=True · prov=— · tags=automation,mcp
 
-**Qué es:** Resuelve el "¿ya existe un servidor para X?" antes de que construyas el tuyo desde cero.
-**Stack:** Markdown
+**Qué es:** Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar.
+**Stack:** Navegador; cliente y tarea elegidos
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo.
-- Coste: Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Leer no requiere API; cada servidor, servicio y modelo tiene condiciones propias
+- Claude Code: Depende del recurso o la configuración
+- Codex: Depende del recurso o la configuración
+- Antigravity: Depende del recurso o la configuración
+- Modelos locales: La función básica no necesita un modelo. Es un directorio comunitario; sus enlaces y etiquetas no equivalen a una auditoría ni a compatibilidad uniforme
+- Coste: Sin pago a un modelo en la ruta básica. Leer no requiere API; cada servidor, servicio y modelo tiene condiciones propias
+- Equipo: Preparación según la ruta elegida. Navegador; cliente y tarea elegidos
 **Repo:** https://github.com/punkpeye/awesome-mcp-servers
 
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** buscas antes de construir
-**Evita si:** ya sabes que necesitas uno a medida y no te vale ninguno listado
+**Elige si:** Tu objetivo encaja con estos ejemplos: Buscar una conexión a archivos propios; Encontrar un servidor para una base de datos
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Filtra por función y sistema operativo y contrasta el README de dos servidores
+**Qué comprobar:** Tienes dos candidatos con transporte, permisos y credenciales identificados
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `mcp-use`, `servers`
 
 ## `blender-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,design,python
 
-**Qué es:** Crea y modifica escenas, objetos y materiales hablando con tu asistente. Útil para prototipos 3D rápidos.
-**Stack:** Python, Blender
+**Qué es:** Plugin comunitario para controlar Blender 3D con cualquier LLM a través de MCP.
+**Stack:** Blender >=3; uv; cliente MCP; escena de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios.
+- API de IA: API de IA opcional. El control básico no requiere API extra; generación premium y proveedores de modelos 3D tienen condiciones propias
 - Claude Code: Herramienta MCP para el agente
 - Codex: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta.
-- Coste: El coste depende del proveedor o la ruta. Controlar Blender y generar modelos en servicios externos son rutas distintas: los proveedores de generación pueden cobrar.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: Modelo local no documentado. El paquete actual es mcp-for-blender; plugin comunitario sin afiliación con Blender Foundation
+- Coste: El coste depende del proveedor o la ruta. El control básico no requiere API extra; generación premium y proveedores de modelos 3D tienen condiciones propias
+- Equipo: Preparación según la ruta elegida. Blender >=3; uv; cliente MCP; escena de prueba
 **Repo:** https://github.com/ahujasid/mcp-for-blender
 
-**Instalación** [+]: `uvx blender-mcp`
+**Instalación** [+]:
+
+```
+winget install --id=astral-sh.uv -e
+uvx mcp-for-blender setup
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres manejar Blender con tu agente
-**Evita si:** no trabajas en 3D
+**Elige si:** Tu objetivo encaja con estos ejemplos: Bocetar una escena 3D; Automatizar ajustes de objetos y materiales
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea un cubo y cambia su material en una escena vacía
+**Qué comprobar:** Puedes ver el objeto y el material en Blender
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`
 
 ## `chrome-devtools-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,browser,typescript
 
-**Qué es:** Tu agente de código puede abrir páginas, leer errores de consola, inspeccionar peticiones y medir rendimiento para depurar de verdad.
-**Stack:** TypeScript, Puppeteer
+**Qué es:** Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento.
+**Stack:** Node.js LTS; npm; Chrome estable; cliente MCP
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La herramienta no incluye un modelo; consume el agente y el equipo; estadísticas de uso se habilitan por defecto
 - Claude Code: Herramienta MCP para el agente
 - Codex: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta.
-- Coste: Consumo del agente que ya utilizas. El modelo se consume en el cliente. Los servicios que la herramienta consulta pueden tener cuentas o tarifas propias.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. MCP y CLI con skill son rutas diferentes; la recogida de métricas tiene una opción de exclusión documentada
+- Coste: Consumo del agente que ya utilizas. La herramienta no incluye un modelo; consume el agente y el equipo; estadísticas de uso se habilitan por defecto
+- Equipo: Preparación según la ruta elegida. Node.js LTS; npm; Chrome estable; cliente MCP
 **Repo:** https://github.com/ChromeDevTools/chrome-devtools-mcp
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** tu agente necesita depurar una web como lo harías en DevTools
-**Evita si:** solo quieres automatizar navegación; mira `playwright-mcp`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Diagnosticar una pantalla que falla; Inspeccionar rendimiento de una página propia
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Abre tu app local y pide revisar errores de consola y una petición de red
+**Qué comprobar:** El informe identifica el error y la petición que puedes reproducir
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`
 **Alternativas (elige una):** `playwright-mcp`, `browser-harness`
 
 ## `context7`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=mcp · tags=mcp,docs,typescript
 
-**Qué es:** Evita que el modelo invente APIs viejas: busca la documentación vigente de la librería que estás usando y la inyecta en el prompt.
-**Stack:** TypeScript
+**Qué es:** Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente.
+**Stack:** Node.js >=22.13; cliente MCP; clave Context7 recomendada
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La documentación tiene cupos y modalidades de acceso; el modelo del agente se paga o limita aparte
 - Claude Code: Herramienta MCP para el agente
 - Codex: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta.
-- Coste: El coste depende del proveedor o la ruta. El cliente MCP usa su propio modelo. Context7 recomienda una API key y aplica límites o planes al servicio de documentación.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. Conectar documentación actual no acredita que todo ejemplo sea válido para la versión instalada en tu proyecto
+- Coste: El coste depende del proveedor o la ruta. La documentación tiene cupos y modalidades de acceso; el modelo del agente se paga o limita aparte
+- Equipo: Preparación según la ruta elegida. Node.js >=22.13; cliente MCP; clave Context7 recomendada
 **Repo:** https://github.com/upstash/context7
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/upstash/context7/blob/master/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** tu agente de código usa librerías que cambian a menudo
-**Evita si:** trabajas sin conexión a internet
+```
+npx ctx7 setup
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Consultar APIs recientes durante programación; Evitar mezclar instrucciones de versiones distintas
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Pide documentación de una versión concreta y contrasta el ejemplo devuelto con la fuente
+**Qué comprobar:** El agente identifica la biblioteca y la versión consultada
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `cline`, `opencode`
 **Alternativas (elige una):** `deepwiki-open`
 
 ## `fastmcp`
 role=library · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,python
 
-**Qué es:** Convierte funciones Python en herramientas MCP con un decorador y añade autenticación, composición de servidores y cliente de pruebas. Su versión 1 se integró en el SDK oficial.
-**Stack:** Python
+**Qué es:** La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas.
+**Stack:** Python y uv; proyecto de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La biblioteca no necesita modelo; el cliente, alojamiento y servicios conectados pueden costar
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Es un framework para construir servidores y clientes, no un servidor de negocio ya configurado
+- Coste: Sin pago a un modelo en la ruta básica. La biblioteca no necesita modelo; el cliente, alojamiento y servicios conectados pueden costar
+- Equipo: Preparación según la ruta elegida. Python y uv; proyecto de prueba
 **Repo:** https://github.com/PrefectHQ/fastmcp
 
-**Instalación** [+]: `uv add fastmcp`
+**Instalación** [+]:
+
+```
+uv add fastmcp
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres crear un servidor MCP en Python rápido
-**Evita si:** trabajas en TypeScript; mira `mcp-typescript-sdk`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Exponer una función de inventario como herramienta; Probar autenticación de un servidor propio
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Copia la herramienta add del ejemplo y solicita sumar dos números con un cliente MCP
+**Qué comprobar:** La herramienta devuelve la suma esperada
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `mcp-inspector`, `claude-code`
 **Alternativas (elige una):** `mcp-python-sdk`
 
 ## `figma-context-mcp`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=mcp · tags=mcp,design,ui,typescript
 
-**Qué es:** Simplifica la respuesta de la API de Figma y da al agente solo lo relevante (estructura, estilos, medidas) para convertir un diseño en código.
-**Stack:** TypeScript
+**Qué es:** Servidor MCP que entrega a los agentes de código el layout de tus diseños de Figma para implementarlos.
+**Stack:** Node.js; token Figma; archivo de diseño accesible; cliente MCP
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No exige modelo propio; Figma, límites de API y el agente tienen condiciones separadas
 - Claude Code: Herramienta MCP para el agente
 - Codex: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta.
-- Coste: El coste depende del proveedor o la ruta. Requiere credenciales y acceso al archivo de Figma. La clave de Figma no es una clave de un LLM.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. La configuración Windows utiliza un lanzador distinto; el token Figma no es una clave de IA
+- Coste: El coste depende del proveedor o la ruta. No exige modelo propio; Figma, límites de API y el agente tienen condiciones separadas
+- Equipo: Preparación según la ruta elegida. Node.js; token Figma; archivo de diseño accesible; cliente MCP
 **Repo:** https://github.com/GLips/Figma-Context-MCP
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/GLips/Figma-Context-MCP/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/GLips/Figma-Context-MCP/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** implementas diseños de Figma con un agente de código
-**Evita si:** no usas Figma
+**Elige si:** Tu objetivo encaja con estos ejemplos: Implementar una tarjeta a partir de un diseño; Consultar tipografía y espaciado de una pantalla
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Solicita los datos de un frame pequeño y compara dimensiones y textos con Figma
+**Qué comprobar:** El agente obtiene información del frame correcto
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `ui`, `tailwindcss`
 
 ## `ghidramcp`
 role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=servidores,mcp,java
 
 **Qué es:** Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios.
-**Stack:** Java, pyproject.toml
+**Stack:** Ghidra y su plugin; uv; binario propio de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. El servidor aporta herramientas a un cliente MCP; el cliente aporta el modelo. Revisar los servicios que usa cada herramienta.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No exige API propia de IA; usa el cliente y los recursos de Ghidra
 - Claude Code: Herramienta MCP para el agente
 - Codex: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Consumo del agente que ya utilizas. El modelo se consume en el cliente MCP. Programas, licencias y servicios conectados pueden tener requisitos y tarifas independientes.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. La integración de los clientes se basa en stdio o HTTP documentados; esta revisión no prueba su instalación ni el análisis de binarios
+- Coste: Consumo del agente que ya utilizas. No exige API propia de IA; usa el cliente y los recursos de Ghidra
+- Equipo: Preparación según la ruta elegida. Ghidra y su plugin; uv; binario propio de prueba
 **Repo:** https://github.com/LaurieWired/GhidraMCP
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/LaurieWired/GhidraMCP/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** buscas esta función: Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios.
-**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+```
+claude mcp add ghidra -- uvx --from git+https://github.com/LaurieWired/GhidraMCP ghidra-mcp --ghidra-server http://127.0.0.1:8080/
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Documentar funciones de un binario propio; Estudiar llamadas en un ejecutable de laboratorio
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Carga un programa de prueba y pide enumerar funciones sin modificar el análisis
+**Qué comprobar:** Obtienes nombres y ubicaciones verificables en Ghidra
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ghidra`
 
 ## `github-mcp-server`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=mcp · tags=mcp,code,go
 
-**Qué es:** Conecta asistentes y agentes con la plataforma GitHub: repositorios, issues, pull requests, Actions y seguridad.
-**Stack:** Go, Docker
+**Qué es:** Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código.
+**Stack:** Cuenta GitHub; cliente MCP; token con permisos adecuados o autenticación remota
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La herramienta no exige modelo propio; el cliente, planes GitHub y acciones del servicio tienen límites y posibles costes
 - Claude Code: Herramienta MCP para el agente
 - Codex: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta.
-- Coste: El coste depende del proveedor o la ruta. Requiere autenticación y permisos de GitHub. La IA que decide las acciones pertenece al cliente MCP.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. Empieza con el conjunto de herramientas y permisos de lectura necesario; no copies tokens de ejemplo como credenciales reales
+- Coste: El coste depende del proveedor o la ruta. La herramienta no exige modelo propio; el cliente, planes GitHub y acciones del servicio tienen límites y posibles costes
+- Equipo: Preparación según la ruta elegida. Cuenta GitHub; cliente MCP; token con permisos adecuados o autenticación remota
 **Repo:** https://github.com/github/github-mcp-server
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/github/github-mcp-server/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/github/github-mcp-server/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** tu agente trabaja con GitHub
-**Evita si:** usas otra forja como GitLab
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar una base de código; Revisar el estado de una pull request
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Lista archivos y lee un README de un repositorio público antes de habilitar herramientas de escritura
+**Qué comprobar:** El agente devuelve contenidos y enlaces del repositorio elegido
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`
 
 ## `langchain-mcp-adapters`
 role=library · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,agents,python
 
-**Qué es:** Permite que tus agentes de LangGraph usen cualquier servidor MCP sin escribir adaptadores. El repo está archivado y su función se integró en LangChain.
-**Stack:** Python, LangChain
+**Qué es:** Puente que convierte herramientas de servidores MCP en herramientas de LangChain y LangGraph.
+**Stack:** Python; servidor MCP; modelo solo para un agente LLM
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: API de IA opcional. El adaptador no requiere modelo; los ejemplos con agentes usan el proveedor configurado y pueden consumir API
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. El autor ha trasladado el desarrollo a langchain[mcp] bajo langchain.mcp; revisa la migración antes de iniciar algo nuevo
+- Coste: El coste depende del proveedor o la ruta. El adaptador no requiere modelo; los ejemplos con agentes usan el proveedor configurado y pueden consumir API
+- Equipo: Preparación según la ruta elegida. Python; servidor MCP; modelo solo para un agente LLM
 **Repo:** https://github.com/langchain-ai/langchain-mcp-adapters
 
-**Instalación** [+]: `pip install langchain-mcp-adapters`
+**Instalación** [+]:
+
+```
+pip install langchain-mcp-adapters
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** usas LangGraph y quieres herramientas MCP
-**Evita si:** no usas LangChain
+**Elige si:** Tu objetivo encaja con estos ejemplos: Reutilizar herramientas MCP en LangGraph; Conectar dos servidores a un agente propio
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Carga una herramienta add de un servidor MCP y llámala como herramienta LangChain
+**Qué comprobar:** Los argumentos y el resultado se conservan al cruzar el adaptador
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langgraph`, `langchain`
 **Alternativas (elige una):** `mcp-use`
 
 ## `mcp`
-role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=mcp
+role=directory · exec=hybrid · setup=medium · mcp=True · prov=— · tags=mcp
 
-**Qué es:** Resuelve la fragmentación: cada integración de IA dejaba de ser ad-hoc y pasa a hablar un protocolo común.
-**Stack:** TypeScript/Python
+**Qué es:** Reúne servidores MCP de servicios Google y ejemplos de despliegue. Sirve para elegir una conexión y revisar sus credenciales y costes. No es el repositorio de la especificación general de MCP.
+**Stack:** Navegador; servicio Google objetivo
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Leer es gratuito; servidores, APIs Google y recursos de nube pueden generar gasto
+- Claude Code: Depende del recurso o la configuración
+- Codex: Depende del recurso o la configuración
+- Antigravity: Depende del recurso o la configuración
+- Modelos locales: La función básica no necesita un modelo. Este repositorio es google/mcp: catálogo y ejemplos Google, no el núcleo de la especificación Model Context Protocol
+- Coste: Sin pago a un modelo en la ruta básica. Leer es gratuito; servidores, APIs Google y recursos de nube pueden generar gasto
+- Equipo: Preparación según la ruta elegida. Navegador; servicio Google objetivo
 **Repo:** https://github.com/google/mcp
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/google/mcp/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [?]:
 
-**Elige si:** programas MCP a bajo nivel o necesitas conformidad estricta con la spec
-**Evita si:** prefieres un framework de alto nivel que abstraiga el protocolo (mcp-use)
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Conectar un servicio Google a un agente; Aprender a alojar un servidor MCP en Cloud Run
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Elige un servidor oficial Google y consulta su autenticación antes de desplegar
+**Qué comprobar:** Distingues servicio gestionado, ejemplo y despliegue en Cloud Run
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `mcp-use`, `servers`
 
 ## `mcp-for-beginners`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=mcp,learning
 
-**Qué es:** Explica los fundamentos del Model Context Protocol, seguridad y despliegue con ejercicios por lenguaje. Disponible en varios idiomas.
-**Stack:** Markdown, Python, TypeScript, C#, Java
+**Qué es:** Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python.
+**Stack:** Navegador; lenguaje elegido para los ejercicios
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El curso se lee sin API; los ejercicios concretos pueden usar modelos, nube o servicios de pago
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo.
-- Coste: Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. No necesitas ejecutar todos los lenguajes ni desplegar todos los ejemplos para empezar
+- Coste: Sin pago a un modelo en la ruta básica. El curso se lee sin API; los ejercicios concretos pueden usar modelos, nube o servicios de pago
+- Equipo: Preparación según la ruta elegida. Navegador; lenguaje elegido para los ejercicios
 **Repo:** https://github.com/microsoft/mcp-for-beginners
 
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** quieres aprender MCP de forma estructurada
-**Evita si:** ya construyes servidores MCP; ve directo a `fastmcp`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Aprender conceptos MCP desde cero; Comparar un servidor Python con otro TypeScript
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Lee la introducción y completa un ejercicio de herramienta con entrada y salida pequeñas
+**Qué comprobar:** Puedes explicar el papel del host, cliente y servidor
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `fastmcp`, `mcp-inspector`
 
 ## `mcp-inspector`
 role=app · exec=local · setup=easy · mcp=True · prov=— · tags=mcp,evaluation,typescript
 
-**Qué es:** Conéctate a cualquier servidor MCP, lista sus herramientas y recursos y lánzalos a mano para ver respuestas y errores.
-**Stack:** TypeScript, React
+**Qué es:** Herramienta oficial para probar y depurar servidores MCP desde una interfaz web.
+**Stack:** Node ^22.23.4 o ^24.22.1 o >=26.12.1; servidor MCP de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inspección no requiere modelo; una herramienta conectada puede llamar servicios de pago
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Las instrucciones CLAUDE.md del repositorio sirven para contribuir al código; no hacen del Inspector un plugin de Claude Code
+- Coste: Sin pago a un modelo en la ruta básica. La inspección no requiere modelo; una herramienta conectada puede llamar servicios de pago
+- Equipo: Preparación según la ruta elegida. Node ^22.23.4 o ^24.22.1 o >=26.12.1; servidor MCP de prueba
 **Repo:** https://github.com/modelcontextprotocol/inspector
 
-**Instalación** [+]: `npx @modelcontextprotocol/inspector`
+**Instalación** [+]:
+
+```
+npx @modelcontextprotocol/inspector                   # web UI (default)
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** desarrollas un servidor MCP
-**Evita si:** solo usas servidores ya hechos
+**Elige si:** Tu objetivo encaja con estos ejemplos: Depurar un esquema MCP; Reproducir un fallo de una herramienta
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Conecta un servidor local, lista herramientas y llama una con datos ficticios
+**Qué comprobar:** Puedes inspeccionar argumentos, respuesta y errores sin un agente de IA
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `fastmcp`, `mcp-typescript-sdk`
 
 ## `mcp-neo4j`
 role=runtime · exec=hybrid · setup=medium · mcp=True · prov=— · tags=mcp,python
 
-**Qué es:** Resuelve el acceso natural a grafos desde un LLM: el asistente consulta y escribe Cypher sin que tú escribas el glue a mano.
-**Stack:** Python, Docker
+**Qué es:** Colección del programa Neo4j Labs, mantenida por el equipo Field GenAI, con servidores para Cypher, memoria, modelado y Aura. Los autores advierten que no tiene SLA ni garantías de compatibilidad del equipo de producto y enlazan un repositorio distinto para el servidor oficial de producto.
+**Stack:** Neo4j; credenciales; APOC para inspección de esquema; servidor elegido
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El conector no necesita modelo propio; Neo4j Aura, base local y agente tienen costes distintos
 - Claude Code: Herramienta MCP para el agente
 - Codex: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta.
-- Coste: Consumo del agente que ya utilizas. El modelo se consume en el cliente. Los servicios que la herramienta consulta pueden tener cuentas o tarifas propias.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. Son servidores Neo4j Labs experimentales sin SLA del equipo de producto; el producto oficial Neo4j MCP es otro repositorio
+- Coste: El coste depende del proveedor o la ruta. El conector no necesita modelo propio; Neo4j Aura, base local y agente tienen costes distintos
+- Equipo: Preparación según la ruta elegida. Neo4j; credenciales; APOC para inspección de esquema; servidor elegido
 **Repo:** https://github.com/neo4j-contrib/mcp-neo4j
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** usas Neo4j con IA y quieres que el asistente hable Cypher
-**Evita si:** no trabajas con grafos o tu base es relacional pura
+**Elige si:** Tu objetivo encaja con estos ejemplos: Consultar relaciones en un grafo; Estudiar memoria de entidades entre sesiones
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Consulta el esquema de un grafo ficticio y revisa una consulta Cypher de lectura
+**Qué comprobar:** Obtienes etiquetas y relaciones que coinciden con la base de prueba
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `graphrag`, `awesome-mcp-servers`
 
 ## `mcp-python-sdk`
 role=library · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,python
 
-**Qué es:** Implementación de referencia del protocolo en Python, con la API FastMCP integrada para servidores sencillos.
-**Stack:** Python
+**Qué es:** SDK oficial de Python para crear servidores y clientes del Model Context Protocol.
+**Stack:** Python 3.11+; uv; directorio de proyecto
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El SDK no necesita API de IA; el agente cliente y las herramientas externas mantienen sus costes
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La documentación revisada usa MCPServer y ofrece migración v2; no confundas este SDK con FastMCP independiente
+- Coste: Sin pago a un modelo en la ruta básica. El SDK no necesita API de IA; el agente cliente y las herramientas externas mantienen sus costes
+- Equipo: Preparación según la ruta elegida. Python 3.11+; uv; directorio de proyecto
 **Repo:** https://github.com/modelcontextprotocol/python-sdk
 
-**Instalación** [+]: `pip install "mcp[cli]"`
+**Instalación** [+]:
+
+```
+uv add "mcp[cli]"      # or: pip install "mcp[cli]"
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres el SDK oficial con mínima dependencia
-**Evita si:** quieres funciones extra como auth y composición; mira `fastmcp`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Conectar una función Python a MCP; Servir un recurso de texto desde una aplicación
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Implementa el servidor add del ejemplo y comprueba su esquema con Inspector
+**Qué comprobar:** Una llamada con dos enteros devuelve su suma
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `mcp-inspector`
 **Alternativas (elige una):** `fastmcp`
 
 ## `mcp-typescript-sdk`
 role=library · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,typescript
 
-**Qué es:** Base de la mayoría de servidores MCP en Node.js, con transportes stdio y HTTP.
-**Stack:** TypeScript, Node.js, Zod
+**Qué es:** SDK oficial de TypeScript para crear servidores y clientes del Model Context Protocol.
+**Stack:** Node.js; TypeScript; gestor de paquetes
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El SDK no llama modelos por sí solo; servicios y despliegue se presupuestan aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La rama revisada es v2 con paquetes server y client separados; no mezcles imports de tutoriales v1
+- Coste: Sin pago a un modelo en la ruta básica. El SDK no llama modelos por sí solo; servicios y despliegue se presupuestan aparte
+- Equipo: Preparación según la ruta elegida. Node.js; TypeScript; gestor de paquetes
 **Repo:** https://github.com/modelcontextprotocol/typescript-sdk
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/modelcontextprotocol/typescript-sdk/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** creas servidores MCP en TypeScript
-**Evita si:** trabajas en Python; mira `fastmcp`
+```
+npm install @modelcontextprotocol/server
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Construir un servidor MCP en TypeScript; Crear un cliente que enumere herramientas
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Sigue el ejemplo v2 para exponer una herramienta y llámala desde Inspector
+**Qué comprobar:** Ves el esquema y una respuesta válida de la herramienta
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `mcp-inspector`
 **Alternativas (elige una):** `mcp-use`
 
 ## `mcp-use`
 role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,mcp,typescript
 
-**Qué es:** Resuelve el salto del SDK base (verboso) a algo productivo: registro de tools, inspector y despliegue incluidos.
-**Stack:** TypeScript o Python, React (apps)
+**Qué es:** Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable.
+**Stack:** Node.js; plantilla elegida; Python solo para su ruta correspondiente
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: API de IA opcional. El servidor básico no exige LLM; agentes, proveedores y alojamiento tienen costes según ruta
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. MCP Apps con widgets requiere capacidades del cliente adicionales a las de un servidor MCP de texto
+- Coste: El coste depende del proveedor o la ruta. El servidor básico no exige LLM; agentes, proveedores y alojamiento tienen costes según ruta
+- Equipo: Preparación según la ruta elegida. Node.js; plantilla elegida; Python solo para su ruta correspondiente
 **Repo:** https://github.com/mcp-use/mcp-use
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/mcp-use/mcp-use/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** construyes un servidor MCP propio y quieres productividad
-**Evita si:** solo buscas usar uno ya hecho (awesome-mcp-servers) o necesitas control a nivel spec
+```
+npx -y create-mcp-use-app@latest
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Construir una herramienta con interfaz embebida; Desplegar un servidor MCP para una app propia
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Genera una app MCP de ejemplo y prueba su herramienta desde el inspector incluido
+**Qué comprobar:** Puedes ver una respuesta y la interfaz asociada si el cliente admite MCP Apps
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `mcp`, `awesome-mcp-servers`
 **Alternativas (elige una):** `langchain-mcp-adapters`, `mcp-typescript-sdk`
 
 ## `playwright-mcp`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,browser,typescript
 
-**Qué es:** Da a tu agente un navegador real controlado por el árbol de accesibilidad, sin depender de capturas. Ideal para pruebas y automatización web.
-**Stack:** TypeScript, Playwright
+**Qué es:** Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright.
+**Stack:** Node.js; npm; cliente MCP; navegador de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita API adicional de modelo; usa el agente anfitrión y recursos del navegador
 - Claude Code: Herramienta MCP para el agente
 - Codex: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta.
-- Coste: Consumo del agente que ya utilizas. El modelo se consume en el cliente. Los servicios que la herramienta consulta pueden tener cuentas o tarifas propias.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. El README documenta los tres clientes; revisa el perfil elegido porque puede conservar sesiones y cookies
+- Coste: Consumo del agente que ya utilizas. No necesita API adicional de modelo; usa el agente anfitrión y recursos del navegador
+- Equipo: Preparación según la ruta elegida. Node.js; npm; cliente MCP; navegador de prueba
 **Repo:** https://github.com/microsoft/playwright-mcp
 
-**Instalación** [+]: `npx @playwright/mcp@latest`
+**Instalación** [+]:
+
+```
+claude mcp add playwright npx @playwright/mcp@latest
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres que tu agente use un navegador real
-**Evita si:** necesitas depurar rendimiento y consola; mira `chrome-devtools-mcp`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Probar una navegación de tu app; Inspeccionar un formulario de desarrollo
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Abre una página local con un formulario ficticio y comprueba sus campos antes de rellenarla
+**Qué comprobar:** La instantánea accesible identifica campos y el resultado de la acción
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `playwright`
 **Alternativas (elige una):** `chrome-devtools-mcp`, `browser-use`, `browser-harness`
 
 ## `public-apis`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=mcp,python
 
-**Qué es:** Resuelve el descubrimiento: en un solo lugar tienes URLs, autenticación y HTTPS de cada API en lugar de buscarlas una a una.
-**Stack:** Markdown
+**Qué es:** Directorio masivo y muy popular que lista por categorías miles de APIs públicas gratuitas para usar en proyectos.
+**Stack:** Navegador; necesidad concreta de datos
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Consultar el directorio es gratuito; algunas APIs solo tienen un cupo gratuito o requieren una cuenta comercial
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo.
-- Coste: Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. El nombre CodeX de un compilador enlazado no es OpenAI Codex; no hereda compatibilidad con agentes
+- Coste: Sin pago a un modelo en la ruta básica. Consultar el directorio es gratuito; algunas APIs solo tienen un cupo gratuito o requieren una cuenta comercial
+- Equipo: Preparación según la ruta elegida. Navegador; necesidad concreta de datos
 **Repo:** https://github.com/public-apis/public-apis
 
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** buscas datos externos y no sabes qué API usar
-**Evita si:** ya tienes tus fuentes definidas o necesitas SLA empresarial (son APIs públicas, sin garantías)
+**Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar datos de clima para una demo; Comparar APIs públicas de geocodificación
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Elige una API y verifica autenticación, HTTPS, límites y licencia en su sitio oficial
+**Qué comprobar:** Sabes qué datos devuelve y si podrás usarlos en tu proyecto
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `n8n`, `firecrawl`
 
 ## `serena`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,coding-agent,code,python
 
-**Qué es:** En vez de leer archivos enteros, el agente busca símbolos, referencias y edita a nivel de función usando servidores de lenguaje. Ahorra tokens en repos grandes.
-**Stack:** Python, LSP
+**Qué es:** Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE.
+**Stack:** uv; servidor de lenguaje del proyecto; repositorio de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El backend LSP usa recursos locales; el plugin JetBrains tiene pago separado; el modelo del agente conserva sus límites
 - Claude Code: Herramienta MCP para el agente
 - Codex: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta.
-- Coste: Consumo del agente que ya utilizas. El modelo se consume en el cliente. Los servicios que la herramienta consulta pueden tener cuentas o tarifas propias.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. El autor desaconseja marketplaces con instalaciones antiguas; configura el comando de lanzamiento oficial y el backend adecuado
+- Coste: El coste depende del proveedor o la ruta. El backend LSP usa recursos locales; el plugin JetBrains tiene pago separado; el modelo del agente conserva sus límites
+- Equipo: Preparación según la ruta elegida. uv; servidor de lenguaje del proyecto; repositorio de prueba
 **Repo:** https://github.com/oraios/serena
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/oraios/serena/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** tu agente trabaja en un repo grande y gasta muchos tokens leyendo
-**Evita si:** tu proyecto es pequeño
+```
+uv tool install -p 3.13 serena-agent
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Navegar una base de código grande; Refactorizar un símbolo con contexto semántico
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Pide localizar una función por símbolo y enumera sus referencias antes de editar
+**Qué comprobar:** El agente identifica la definición y usos reales
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`
 **Alternativas (elige una):** `codegraph`, `gitnexus`
 
 ## `servers`
 role=directory · exec=hybrid · setup=medium · mcp=False · prov=— · tags=mcp,typescript
 
-**Qué es:** Resuelve la falta de ejemplos canónicos: muestra cómo se construye un servidor MCP correcto, paso a paso.
-**Stack:** TypeScript/Python
+**Qué es:** Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad.
+**Stack:** Navegador; Node o Python según el servidor elegido
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo.
-- Coste: Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Leer no requiere API; el cliente y cada implementación elegida tienen sus requisitos
+- Claude Code: Depende del recurso o la configuración
+- Codex: Depende del recurso o la configuración
+- Antigravity: Depende del recurso o la configuración
+- Modelos locales: La función básica no necesita un modelo. Los autores los presentan como implementaciones educativas de referencia, no servicios listos para producción
+- Coste: Sin pago a un modelo en la ruta básica. Leer no requiere API; el cliente y cada implementación elegida tienen sus requisitos
+- Equipo: Preparación según la ruta elegida. Navegador; Node o Python según el servidor elegido
 **Repo:** https://github.com/modelcontextprotocol/servers
 
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** quieres ejemplos canónicos y plantillas fiables
-**Evita si:** buscas soluciones listas para producción (son demos educativas, no hardening)
+**Elige si:** Tu objetivo encaja con estos ejemplos: Aprender cómo se implementa memoria MCP; Estudiar acceso a un repositorio Git de prueba
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Elige un servidor de referencia y comprueba sus permisos sobre datos ficticios
+**Qué comprobar:** Entiendes qué herramientas expone y qué datos puede modificar
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `mcp-use`, `awesome-mcp-servers`
 
 ## `treg`
 role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=servidores,mcp,python
 
 **Qué es:** Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores.
-**Stack:** Python, package.json, pyproject.toml
+**Stack:** Cliente MCP; cuenta o token para funciones que lo requieran
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función principal conecta servicios externos; sus claves no equivalen necesariamente a una API de un modelo de lenguaje.
+- API de IA: Depende de la ruta elegida. Las llamadas del catálogo pueden consumir saldo prepago; tus propias claves no se miden por Treg pero el proveedor sí puede cobrar; IA generativa según herramienta
 - Claude Code: Herramienta MCP para el agente
 - Codex: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: El coste depende del proveedor o la ruta. Las herramientas del registro pueden consumir saldo o cuentas de servicios. El modelo se usa en el cliente MCP; verifica ambos costes por separado.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. La instalación del plugin no hace gratuitos sus servicios; una ruta anónima gratuita no representa todo el catálogo
+- Coste: El coste depende del proveedor o la ruta. Las llamadas del catálogo pueden consumir saldo prepago; tus propias claves no se miden por Treg pero el proveedor sí puede cobrar; IA generativa según herramienta
+- Equipo: Preparación según la ruta elegida. Cliente MCP; cuenta o token para funciones que lo requieran
 **Repo:** https://github.com/superdesigndev/treg
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/superdesigndev/treg/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** buscas esta función: Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores.
-**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+```
+/plugin marketplace add superdesigndev/treg
+/plugin install treg@treg
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar datos para una investigación comercial; Compartir herramientas de un equipo sin pegar sus claves en el chat
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Busca una herramienta del catálogo y consulta precio y esquema antes de ejecutarla
+**Qué comprobar:** Sabes qué parámetros requiere y qué saldo o credencial utilizaría
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `unity-mcp`
 role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=servidores,mcp,c
 
 **Qué es:** Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity.
-**Stack:** C#, docker-compose.yml
+**Stack:** Unity 2021.3 LTS a 6.x; Python 3.10+ mediante uv; cliente MCP
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. El servidor aporta herramientas a un cliente MCP; el cliente aporta el modelo. Revisar los servicios que usa cada herramienta.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El conector es MIT; el agente o LLM local y la licencia Unity mantienen sus condiciones
 - Claude Code: Herramienta MCP para el agente
 - Codex: Herramienta MCP para el agente
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Consumo del agente que ya utilizas. El modelo se consume en el cliente MCP. Programas, licencias y servicios conectados pueden tener requisitos y tarifas independientes.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: Modelos locales documentados. Instala el paquete desde Package Manager y configura el cliente; guarda una copia del proyecto antes de automatizar ediciones
+- Coste: Consumo del agente que ya utilizas. El conector es MIT; el agente o LLM local y la licencia Unity mantienen sus condiciones
+- Equipo: Preparación según la ruta elegida. Unity 2021.3 LTS a 6.x; Python 3.10+ mediante uv; cliente MCP
 **Repo:** https://github.com/CoplayDev/unity-mcp
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/CoplayDev/unity-mcp/blob/beta/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/CoplayDev/unity-mcp/blob/beta/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Servidor MCP que permite a un asistente operar escenas, scripts y recursos dentro de un proyecto del editor Unity.
-**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+**Elige si:** Tu objetivo encaja con estos ejemplos: Bocetar escenas de una demo; Ejecutar pruebas del proyecto desde un agente
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** En un proyecto vacío pide crear un cubo en el origen con un Rigidbody
+**Qué comprobar:** El cubo aparece y puedes inspeccionar el componente en Unity
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `blender`

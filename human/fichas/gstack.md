@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Se consumen los agentes que intervienen; algunas rutas piden otro CLI autenticado para la revisión cruzada |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. Los hosts Codex y Antigravity aparecen como experimentales y con comprobaciones advisory; no se equiparan a la ruta completa de Claude Code |
+| Coste | El coste depende del proveedor o la ruta. Se consumen los agentes que intervienen; algunas rutas piden otro CLI autenticado para la revisión cruzada |
+| Equipo | Preparación según la ruta elegida. Git, Bun y cliente autenticado;  en Windows revisar Git Bash o WSL y Node.js |
 
-Consume el acceso y los límites del agente donde lo configures. No incluye servicios externos de generación, datos o alojamiento.
+Los hosts Codex y Antigravity aparecen como experimentales y con comprobaciones advisory; no se equiparan a la ruta completa de Claude Code
 
 ## Qué puedes hacer con él
 
 Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code.
 
+## Por qué destaca
+
+Usos propuestos: Preparar una revisión de producto antes de implementar; Abrir un navegador de prueba para revisar una interfaz propia.
+
 ## Cómo funciona
 
-El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.
+Los hosts Codex y Antigravity aparecen como experimentales y con comprobaciones advisory; no se equiparan a la ruta completa de Claude Code
 
 ## Cómo empezar
 
@@ -39,11 +44,23 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- El agente compatible indicado por el proyecto y acceso activo al modelo de ese agente.
+- Git, Bun y cliente autenticado
+-  en Windows revisar Git Bash o WSL y Node.js
 
-1. Abre la instalación del README y elige la ruta para el agente que utilizas.
-2. Añade la skill o el plugin concreto; prepara los programas y servicios que indique su documentación.
-3. Pide una primera tarea pequeña sobre archivos de prueba y comprueba qué herramientas y cuentas activa.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/gstack
+cd ~/gstack && ./setup --host auto      # or: ./setup --host codex
+./setup --status                         # one row per install: host, tier, scope, version, path
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/garrytan/gstack/blob/main/README.md)
 
@@ -51,21 +68,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar gstack para mi objetivo y necesito pasos guiados. Lee https://github.com/garrytan/gstack/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Consulta el estado de instalación y prueba una revisión o planificación sobre un cambio pequeño.
+
+**Qué comprobar:** El estado indica el host y puedes revisar el resultado de la skill elegida.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code.
+- Preparar una revisión de producto antes de implementar
+- Abrir un navegador de prueba para revisar una interfaz propia
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code. | necesitas un producto autónomo y esta pieza requiere un anfitrión compatible |
+| Tu objetivo encaja con estos ejemplos: Preparar una revisión de producto antes de implementar; Abrir un navegador de prueba para revisar una interfaz propia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Los hosts Codex y Antigravity aparecen como experimentales y con comprobaciones advisory; no se equiparan a la ruta completa de Claude Code
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, package.json
+- **Stack:** Git, Bun y cliente autenticado;  en Windows revisar Git Bash o WSL y Node.js
 - **Etiquetas:** `metodologia` `skill` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +101,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/garrytan/gstack/blob/main/README.md)
 

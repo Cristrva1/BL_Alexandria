@@ -48,7 +48,7 @@ def build_areas(compact: dict, repos: list[dict]) -> list[dict]:
         area["repo_ids"] = sorted(members)
         area["count"] = len(members)
         references = {rid for t in area["topics"] for rid in t.get("reference_repos", [])}
-        if area.get("client") in {"claude_code", "codex"}:
+        if area.get("client") in {"claude_code", "codex", "antigravity"}:
             for rid in members - references:
                 if by_id[rid].get("access", {}).get(area["client"]) not in SUPPORTED_CLIENT:
                     raise ValueError(f"{aid}: no documented client support for {rid}")

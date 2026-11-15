@@ -16,56 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Puedes elegir la ruta local documentada o configurar un proveedor remoto; la ruta remota puede requerir API key o acceso propio. |
+| API de IA | Depende de la ruta elegida. Admite Ollama y otros servidores locales, además de APIs de pago; audio y embeddings se configuran aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | El coste depende del proveedor o la ruta. La inferencia local consume recursos de tu equipo. Los proveedores remotos y servicios del cliente tienen sus propios planes y tarifas. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La app auto-hospedada no garantiza que todos los datos se procesen localmente: depende de cada proveedor que selecciones |
+| Coste | El coste depende del proveedor o la ruta. Admite Ollama y otros servidores locales, además de APIs de pago; audio y embeddings se configuran aparte |
+| Equipo | Preparación según la ruta elegida. Docker; proveedores de chat, embeddings y audio según función; fuentes de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La app auto-hospedada no garantiza que todos los datos se procesen localmente: depende de cada proveedor que selecciones
 
 ## Qué puedes hacer con él
 
-Resuelve el envío de documentos sensibles a la nube que implica el NotebookLM oficial.
+Aplicación auto-hospedada para reunir fuentes, consultar documentos y producir resúmenes o audio. Permite elegir proveedores de chat, embeddings y audio locales o remotos; la privacidad del procesamiento depende de esa configuración.
 
 ## Por qué destaca
 
-Cubre la demanda de un NotebookLM sin envío de datos a la nube y es uno de los proyectos de referencia en la comunidad open-source para este caso. Su autor (lfnovo) lo mantiene activo con soporte para modelos locales y comerciales.
+Usos propuestos: Estudiar documentos en una libreta; Generar un resumen o audio sobre material propio.
 
 ## Cómo funciona
 
-Un backend FastAPI indexa las fuentes y las consulta vía RAG contra modelos servidos por Ollama, con una UI React/Next.js para notebooks y generación de audio.
+La app auto-hospedada no garantiza que todos los datos se procesen localmente: depende de cada proveedor que selecciones
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/lfnovo/open-notebook/blob/main/README.md)
+- Docker
+- proveedores de chat, embeddings y audio según función
+- fuentes de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://github.com/lfnovo/open-notebook/blob/main/docs/0-START-HERE/quick-start-local.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar open-notebook para mi objetivo y necesito pasos guiados. Lee https://github.com/lfnovo/open-notebook/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar open-notebook para mi objetivo y necesito pasos guiados. Lee https://github.com/lfnovo/open-notebook/blob/main/docs/0-START-HERE/quick-start-local.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Crea un notebook con dos fuentes y pregunta por un dato con referencia.
+
+**Qué comprobar:** Puedes identificar la fuente y corregir un resumen.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Subir un manual y generar un audio explicativo
-- Chats de consulta sobre tus PDFs privados
-- Síntesis temática de varias fuentes sin cuotas
+- Estudiar documentos en una libreta
+- Generar un resumen o audio sobre material propio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres NotebookLM privado y sin cuotas | prefieres el NotebookLM real automatizado (notebooklm-py) |
+| Tu objetivo encaja con estos ejemplos: Estudiar documentos en una libreta; Generar un resumen o audio sobre material propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** La app auto-hospedada no garantiza que todos los datos se procesen localmente: depende de cada proveedor que selecciones
 
 ## Stack y modelos
 
-- **Stack:** Python (FastAPI), React/Next.js
+- **Stack:** Docker; proveedores de chat, embeddings y audio según función; fuentes de prueba
 - **Etiquetas:** `notebooks` `research` `typescript` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -91,7 +109,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/lfnovo/open-notebook/blob/main/README.md)
 

@@ -16,58 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | API de IA opcional. La ruta tradicional local no necesita LLM remoto; CALM, Hello Rasa y servicios comerciales tienen requisitos propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. No confundas el framework open-source con productos y licencias posteriores; usa documentación de la misma versión |
+| Coste | El coste depende del proveedor o la ruta. La ruta tradicional local no necesita LLM remoto; CALM, Hello Rasa y servicios comerciales tienen requisitos propios |
+| Equipo | Preparación según la ruta elegida. Python y versión de Rasa compatibles; datos NLU; entorno local |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+No confundas el framework open-source con productos y licencias posteriores; usa documentación de la misma versión
 
 ## Qué puedes hacer con él
 
-Permite crear asistentes de texto y voz con control total del diálogo y de los datos. Muy usado en empresas que necesitan bots on-premise y predecibles.
+Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local.
 
 ## Por qué destaca
 
-Referencia histórica en bots empresariales; su enfoque CALM combina LLM con flujos controlados.
+Usos propuestos: Estudiar NLU de atención al cliente; Construir un diálogo de reglas para una demo.
 
 ## Cómo funciona
 
-Un modelo de NLU interpreta mensajes y un gestor de diálogo decide la siguiente acción siguiendo flujos e historias que entrenas.
+No confundas el framework open-source con productos y licencias posteriores; usa documentación de la misma versión
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/RasaHQ/rasa/blob/3.6.x/README.md)
+- Python y versión de Rasa compatibles
+- datos NLU
+- entorno local
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://rasa.com/docs/rasa/installation/environment-set-up)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Rasa para mi objetivo y necesito pasos guiados. Lee https://github.com/RasaHQ/rasa/blob/3.6.x/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Rasa para mi objetivo y necesito pasos guiados. Lee https://rasa.com/docs/rasa/installation/environment-set-up. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Entrena un ejemplo pequeño con dos intenciones y prueba frases nuevas distintas a las de entrenamiento.
+
+**Qué comprobar:** Puedes inspeccionar intención, confianza y respuesta del diálogo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Bot bancario on-premise
-- Asistente de soporte con flujos estrictos
-- Bots multilingües con datos privados
+- Estudiar NLU de atención al cliente
+- Construir un diálogo de reglas para una demo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas un asistente on-premise con diálogo muy controlado | quieres algo rápido con LLM y sin entrenar; mira `botpress` o `typebot` |
+| Tu objetivo encaja con estos ejemplos: Estudiar NLU de atención al cliente; Construir un diálogo de reglas para una demo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** El desarrollo activo pasó a Rasa Pro (licencia comercial); la versión abierta avanza poco.
+**Limitaciones:** No confundas el framework open-source con productos y licencias posteriores; usa documentación de la misma versión
 
 ## Stack y modelos
 
-- **Stack:** Python, TensorFlow, Docker
+- **Stack:** Python y versión de Rasa compatibles; datos NLU; entorno local
 - **Etiquetas:** `chatbot` `agents` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -77,12 +93,6 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 |---|---:|---|
 | [chatwoot](chatwoot.md) | 39.9k | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. |
 
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Botpress](botpress.md) | 15k | Plataforma para construir y desplegar agentes conversacionales con LLM en web, WhatsApp y más. |
-
 ## Enlaces
 
 - 🐙 GitHub: [RasaHQ/rasa](https://github.com/RasaHQ/rasa)
@@ -90,7 +100,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/RasaHQ/rasa/blob/3.6.x/README.md)
 

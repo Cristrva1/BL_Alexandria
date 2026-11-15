@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Motor de inferencia en C/C++ que corre LLM cuantizados en CPU y GPU de casi cualquier equipo. | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
 | ⭐ Estrellas | 135k | 187k |
-| Elígelo si… | quieres el máximo control y rendimiento local | quieres modelos locales funcionando en minutos |
-| Evítalo si… | prefieres simplicidad; mira `ollama` | necesitas servir a muchos usuarios con GPU; mira `vllm` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Servir un modelo en CPU; Comparar cuantizaciones de un mismo modelo | Tu objetivo encaja con estos ejemplos: Probar un LLM local; Conectar un modelo local a Codex CLI |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
-| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | API de IA opcional |
+| Coste | Sin pago a un modelo en la ruta básica | El coste depende del proveedor o la ruta |
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | MIT | MIT |
-| Instalación | `brew install llama.cpp` | `curl -fsSL https://ollama.com/install.sh \| sh` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## Regla práctica
 
-- Elige **llama.cpp** si quieres el máximo control y rendimiento local.
-- Elige **Ollama** si quieres modelos locales funcionando en minutos.
+- Elige **llama.cpp** si Tu objetivo encaja con estos ejemplos: Servir un modelo en CPU; Comparar cuantizaciones de un mismo modelo.
+- Elige **Ollama** si Tu objetivo encaja con estos ejemplos: Probar un LLM local; Conectar un modelo local a Codex CLI.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

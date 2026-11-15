@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El directorio no cobra modelos; cada cliente puede tener suscripción, API o requisitos locales |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Un cliente descrito como basado en Claude Code no es necesariamente el producto oficial ni comparte sus condiciones |
+| Coste | Sin pago a un modelo en la ruta básica. El directorio no cobra modelos; cada cliente puede tener suscripción, API o requisitos locales |
+| Equipo | Preparación según la ruta elegida. Navegador; preferencias de sistema y modelo |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Un cliente descrito como basado en Claude Code no es necesariamente el producto oficial ni comparte sus condiciones
 
 ## Qué puedes hacer con él
 
-Ayuda a elegir dónde usar tus servidores MCP: chats de escritorio, editores, CLIs y plataformas.
+Lista curada de clientes que soportan Model Context Protocol: apps, IDEs y agentes.
 
 ## Por qué destaca
 
-Complementa a las listas de servidores con el otro lado del protocolo.
+Usos propuestos: Encontrar una interfaz para herramientas MCP; Comparar clientes con modelos locales.
 
 ## Cómo funciona
 
-Lista en Markdown organizada por tipo de cliente.
+Un cliente descrito como basado en Claude Code no es necesariamente el producto oficial ni comparte sus condiciones
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- preferencias de sistema y modelo
+
+1. Compara dos clientes por transportes MCP, autenticación y modelos admitidos.
+2. Comprueba: Puedes elegir un cliente cuyo sistema y conexiones encajen con tu caso.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/punkpeye/awesome-mcp-clients/blob/main/README.md)
 
@@ -51,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Awesome MCP Clients para mi objetivo y necesito pasos guiados. Lee https://github.com/punkpeye/awesome-mcp-clients/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Compara dos clientes por transportes MCP, autenticación y modelos admitidos.
+
+**Qué comprobar:** Puedes elegir un cliente cuyo sistema y conexiones encajen con tu caso.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Elegir un cliente MCP
-- Comparar soporte de funciones
-- Descubrir apps nuevas
+- Encontrar una interfaz para herramientas MCP
+- Comparar clientes con modelos locales
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas un cliente para tus servidores MCP | buscas servidores; mira `awesome-mcp-servers` |
+| Tu objetivo encaja con estos ejemplos: Encontrar una interfaz para herramientas MCP; Comparar clientes con modelos locales | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Un cliente descrito como basado en Claude Code no es necesariamente el producto oficial ni comparte sus condiciones
 
 ## Stack y modelos
 
-- **Stack:** Markdown
+- **Stack:** Navegador; preferencias de sistema y modelo
 - **Etiquetas:** `mcp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -82,7 +98,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/punkpeye/awesome-mcp-clients/blob/main/README.md)
 

@@ -16,42 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| API de IA | API de IA opcional. Muchas métricas usan un juez LLM por consumo o uno local Ollama; Confident AI y embeddings tienen configuración propia |
+| Claude Code | Depende del recurso o la configuración |
+| Codex | Depende del recurso o la configuración |
+| Antigravity | Depende del recurso o la configuración |
+| Modelos locales | Modelos locales documentados. El MCP mencionado pertenece al servicio compañero Confident AI; no todas las métricas necesitan LLM y un juez pequeño puede fallar al seguir el esquema |
+| Coste | El coste depende del proveedor o la ruta. Muchas métricas usan un juez LLM por consumo o uno local Ollama; Confident AI y embeddings tienen configuración propia |
+| Equipo | Preparación según la ruta elegida. Python; casos con respuestas conocidas; modelo evaluador y embeddings si se usan |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El MCP mencionado pertenece al servicio compañero Confident AI; no todas las métricas necesitan LLM y un juez pequeño puede fallar al seguir el esquema
 
 ## Qué puedes hacer con él
 
-Escribe pruebas para tus apps de LLM con métricas como fidelidad, relevancia o alucinación, e intégralas en tu CI.
+Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas.
 
 ## Por qué destaca
 
-Experiencia tipo pytest muy familiar y muchas métricas de investigación.
+Usos propuestos: Detectar regresiones de un chatbot; Probar relevancia de respuestas RAG.
 
 ## Cómo funciona
 
-Cada métrica usa un LLM juez o reglas para puntuar casos de prueba que defines en Python.
+El MCP mencionado pertenece al servicio compañero Confident AI; no todas las métricas necesitan LLM y un juez pequeño puede fallar al seguir el esquema
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python
+- casos con respuestas conocidas
+- modelo evaluador y embeddings si se usan
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (consulta la sintaxis original):**
+
+```
 pip install -U deepeval
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/confident-ai/deepeval/blob/main/README.md)
 
@@ -59,21 +67,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar DeepEval para mi objetivo y necesito pasos guiados. Lee https://github.com/confident-ai/deepeval/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Evalúa tres respuestas ficticias con un criterio explícito y revisa una puntuación manualmente.
+
+**Qué comprobar:** Puedes relacionar el resultado con el caso y el juez seleccionado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Pruebas unitarias de un RAG
-- Detectar alucinaciones
-- Evaluar agentes en CI
+- Detectar regresiones de un chatbot
+- Probar relevancia de respuestas RAG
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres tests de LLM en Python como pytest | prefieres configurar en YAML y comparar modelos; mira `promptfoo` |
+| Tu objetivo encaja con estos ejemplos: Detectar regresiones de un chatbot; Probar relevancia de respuestas RAG | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El MCP mencionado pertenece al servicio compañero Confident AI; no todas las métricas necesitan LLM y un juez pequeño puede fallar al seguir el esquema
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python; casos con respuestas conocidas; modelo evaluador y embeddings si se usan
 - **Etiquetas:** `evaluation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -97,9 +114,12 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/confident-ai/deepeval/blob/main/README.md)
+- [Fuente 2](https://deepeval.com/docs/metrics-introduction)
 
 ---
 

@@ -2,13 +2,13 @@
 
 # 🤖 Botpress
 
-> Plataforma para construir y desplegar agentes conversacionales con LLM en web, WhatsApp y más.
+> Hub de SDKs, CLI e integraciones para desarrollar y desplegar conexiones en el ecosistema Botpress.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 15k | MIT | TypeScript | 2026-11-10 |
 
-**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
+| API de IA | Depende de la ruta elegida. Los paquetes del repositorio son MIT; Botpress Cloud, modelos y canales tienen sus precios y límites |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. El repositorio actual es un hub de SDKs e integraciones; clonarlo no instala una plataforma completa auto-hospedada equivalente a Cloud |
+| Coste | El coste depende del proveedor o la ruta. Los paquetes del repositorio son MIT; Botpress Cloud, modelos y canales tienen sus precios y límites |
+| Equipo | Preparación según la ruta elegida. Node y gestor de paquetes; cuenta Botpress para desplegar una integración; TypeScript |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El repositorio actual es un hub de SDKs e integraciones; clonarlo no instala una plataforma completa auto-hospedada equivalente a Cloud
 
 ## Qué puedes hacer con él
 
-Combina un estudio visual con código para crear agentes que usan bases de conocimiento, herramientas y canales. Su producto principal hoy es cloud; el repo contiene SDK, integraciones y CLI.
+El repositorio actual reúne paquetes e integraciones abiertas y un CLI para crear y desplegar extensiones. Botpress Cloud y sus modelos tienen condiciones de servicio separadas. Clonar este código no instala toda la plataforma alojada.
 
 ## Por qué destaca
 
-Ecosistema maduro de integraciones y canales, con enfoque en agentes con LLM.
+Usos propuestos: Aprender el SDK de integraciones Botpress; Prototipar una conexión para un chatbot alojado.
 
 ## Cómo funciona
 
-Los bots se definen en su Studio y se ejecutan en su cloud; el SDK abierto permite crear integraciones y bots por código.
+El repositorio actual es un hub de SDKs e integraciones; clonarlo no instala una plataforma completa auto-hospedada equivalente a Cloud
 
 ## Cómo empezar
 
-Requiere preparación técnica. [Entender los términos](../vocabulario.md).
+Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Node y gestor de paquetes
+- cuenta Botpress para desplegar una integración
+- TypeScript
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (sh):**
+
+```
+npm install -g @botpress/cli # for npm
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/botpress/botpress/blob/master/readme.md)
 
@@ -51,23 +67,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Botpress para mi objetivo y necesito pasos guiados. Lee https://github.com/botpress/botpress/blob/master/readme.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Genera una integración con bp init y revisa su definición antes de desplegarla.
+
+**Qué comprobar:** Puedes identificar eventos, acciones y configuración de la integración.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Agente de atención al cliente
-- Bot multicanal con base de conocimiento
-- Integraciones a medida
+- Aprender el SDK de integraciones Botpress
+- Prototipar una conexión para un chatbot alojado
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres un agente conversacional multicanal con poco código | necesitas todo self-host y sin nube; mira `rasa` o `typebot` |
+| Tu objetivo encaja con estos ejemplos: Aprender el SDK de integraciones Botpress; Prototipar una conexión para un chatbot alojado | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La experiencia completa depende de su cloud de pago por uso.
+**Limitaciones:** El repositorio actual es un hub de SDKs e integraciones; clonarlo no instala una plataforma completa auto-hospedada equivalente a Cloud
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Node.js
+- **Stack:** Node y gestor de paquetes; cuenta Botpress para desplegar una integración; TypeScript
 - **Etiquetas:** `chatbot` `agents` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -78,13 +101,6 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 | [chatwoot](chatwoot.md) | 39.9k | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. |
 | [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Typebot](typebot.md) | 10.6k | Constructor visual de chatbots conversacionales, auto-hospedable, para web, WhatsApp y más. |
-| [Rasa](rasa.md) | 21.4k | Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local. |
-
 ## Enlaces
 
 - 🐙 GitHub: [botpress/botpress](https://github.com/botpress/botpress)
@@ -92,7 +108,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/botpress/botpress/blob/master/readme.md)
 

@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 2.7k | Apache-2.0 | Python | 2026-06-23 |
 
-**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,42 +16,51 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| API de IA | Depende de la ruta elegida. Código Apache; inferencia, servicios y hardware dependen del workflow y no están incluidos |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelo local no documentado. Documenta publicar workflows con FastMCP; requiere configurar el servidor y no proporciona una integración de suscripción ni un servidor único listo para todos los casos |
+| Coste | El coste depende del proveedor o la ruta. Código Apache; inferencia, servicios y hardware dependen del workflow y no están incluidos |
+| Equipo | Preparación según la ruta elegida. Python; dependencias del workflow; proveedor; cliente MCP si publicas herramientas |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Documenta publicar workflows con FastMCP; requiere configurar el servidor y no proporciona una integración de suscripción ni un servidor único listo para todos los casos
 
 ## Qué puedes hacer con él
 
-Aporta componentes para conectar, evaluar y desplegar agentes en infraestructura empresarial.
+Toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo).
 
 ## Por qué destaca
 
-Respaldo y rendimiento de NVIDIA, orientado a despliegues empresariales sobre su stack de modelos NIM e infra GPU. Incluye evaluación y guardrails, no solo orquestación.
+Usos propuestos: Perfilar un workflow de agentes; Exponer una herramienta propia por MCP.
 
 ## Cómo funciona
 
-Compone agentes y herramientas mediante perfiles configurables y los conecta a modelos NVIDIA NIM u otros compatibles (OpenAI-style); librería Python (Apache-2.0) con servidor FastAPI.
+Documenta publicar workflows con FastMCP; requiere configurar el servidor y no proporciona una integración de suscripción ni un servidor único listo para todos los casos
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python
+- dependencias del workflow
+- proveedor
+- cliente MCP si publicas herramientas
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
 pip install nvidia-nat
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/NVIDIA/NeMo-Agent-Toolkit/blob/develop/README.md)
 
@@ -59,21 +68,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar NeMo-Agent-Toolkit para mi objetivo y necesito pasos guiados. Lee https://github.com/NVIDIA/NeMo-Agent-Toolkit/blob/develop/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Ejecuta un workflow de ejemplo y revisa sus pasos antes de publicarlo como MCP.
+
+**Qué comprobar:** Puedes relacionar configuración, funciones y resultado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Agentes empresariales en stack NVIDIA
-- Pipelines con modelos propios tras un firewall
-- RAG con guardrails y evaluación
+- Perfilar un workflow de agentes
+- Exponer una herramienta propia por MCP
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| trabajas con infra NVIDIA o necesitas guardrails/eval empresarial | quieres algo ligero y agnóstico |
+| Tu objetivo encaja con estos ejemplos: Perfilar un workflow de agentes; Exponer una herramienta propia por MCP | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Documenta publicar workflows con FastMCP; requiere configurar el servidor y no proporciona una integración de suscripción ni un servidor único listo para todos los casos
 
 ## Stack y modelos
 
-- **Stack:** Python, FastAPI (Apache-2.0)
+- **Stack:** Python; dependencias del workflow; proveedor; cliente MCP si publicas herramientas
 - **Etiquetas:** `automation` `agents` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -90,7 +108,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/NVIDIA/NeMo-Agent-Toolkit/blob/develop/README.md)
 

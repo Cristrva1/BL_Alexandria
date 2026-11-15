@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | API de IA opcional. Leer es gratuito; los ejercicios en notebooks o Claude for Sheets pueden requerir API y consumo |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar |
+| Coste | El coste depende del proveedor o la ruta. Leer es gratuito; los ejercicios en notebooks o Claude for Sheets pueden requerir API y consumo |
+| Equipo | Preparación según la ruta elegida. Navegador; cuenta y acceso al modelo para ejecutar ejercicios |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar
 
 ## Qué puedes hacer con él
 
-Nueve capítulos con ejercicios sobre claridad, roles, ejemplos, razonamiento paso a paso y cómo evitar alucinaciones. Cada lección se practica contra la API de Claude.
+Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios.
 
 ## Por qué destaca
 
-Material oficial y muy didáctico, con ejercicios que se corrigen solos.
+Usos propuestos: Practicar instrucciones claras; Aprender a separar datos y órdenes.
 
 ## Cómo funciona
 
-Notebooks de Jupyter que envían tus prompts a Claude y comprueban la respuesta.
+Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- cuenta y acceso al modelo para ejecutar ejercicios
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/anthropics/prompt-eng-interactive-tutorial/blob/master/README.md)
 
@@ -51,21 +59,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Anthropic's Prompt Engineering Tutorial para mi objetivo y necesito pasos guiados. Lee https://github.com/anthropics/prompt-eng-interactive-tutorial/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Completa Basic Prompt Structure y compara una respuesta ambigua con otra que pide un formato concreto.
+
+**Qué comprobar:** Puedes reconocer la diferencia entre instrucción y contenido.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Formar a un equipo en prompts
-- Mejorar prompts de producción
-- Entender técnicas como few-shot
+- Practicar instrucciones claras
+- Aprender a separar datos y órdenes
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres aprender prompts con práctica guiada | buscas una guía amplia multi-modelo; mira `prompt-engineering-guide` |
+| Tu objetivo encaja con estos ejemplos: Practicar instrucciones claras; Aprender a separar datos y órdenes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Las referencias a Claude 3 Haiku y modelos superiores son históricas del tutorial; consulta disponibilidad actual antes de ejecutar
 
 ## Stack y modelos
 
-- **Stack:** Python, Jupyter
+- **Stack:** Navegador; cuenta y acceso al modelo para ejecutar ejercicios
 - **Etiquetas:** `learning` `prompts` `notebooks`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -87,7 +104,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/anthropics/prompt-eng-interactive-tutorial/blob/master/README.md)
 

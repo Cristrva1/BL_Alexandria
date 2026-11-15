@@ -1,4 +1,4 @@
-[🏠 Inicio](../README.md) › [🤖 Automatizar procesos y crear herramientas internas](../categorias/01-automatizaci-n-mensajer-a-crm.md) › Motores de workflow y automatización
+[🏠 Inicio](../README.md) › [🤖 CRM, ventas y marketing](../categorias/18-crm-ventas-marketing.md) › Reservas y programación de citas
 
 # 🤖 cal.diy
 
@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No requiere licencia Cal.com ni un LLM en la ruta comunitaria; servidor y correo siguen siendo gastos propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El autor la recomienda para uso personal y no productivo. Se mueve de motores de workflows a agendas y reservas |
+| Coste | Sin pago a un modelo en la ruta básica. No requiere licencia Cal.com ni un LLM en la ruta comunitaria; servidor y correo siguen siendo gastos propios |
+| Equipo | Preparación según la ruta elegida. Node.js y Yarn según el proyecto;  PostgreSQL;  Docker para el entorno de desarrollo |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El autor la recomienda para uso personal y no productivo. Se mueve de motores de workflows a agendas y reservas
 
 ## Qué puedes hacer con él
 
-Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. Despliega la aplicación de calendario y configura base de datos, disponibilidad e integraciones.
+Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia.
 
 ## Por qué destaca
 
-Quieres estudiar una agenda autoalojada para uso personal.
+Usos propuestos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita.
 
 ## Cómo funciona
 
-Despliega la aplicación de calendario y configura base de datos, disponibilidad e integraciones.
+El autor la recomienda para uso personal y no productivo. Se mueve de motores de workflows a agendas y reservas
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Node.js y Yarn según el proyecto
+-  PostgreSQL
+-  Docker para el entorno de desarrollo
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/calcom/cal.diy/blob/main/README.md)
 
@@ -51,21 +59,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar cal.diy para mi objetivo y necesito pasos guiados. Lee https://github.com/calcom/cal.diy/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Configura un evento personal de prueba y abre su página de reserva.
+
+**Qué comprobar:** Puedes elegir una franja disponible y revisar la reserva creada.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres estudiar una agenda autoalojada para uso personal
+- Experimentar con una agenda personal autoalojada
+- Probar la duración y disponibilidad de distintos tipos de cita
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres estudiar una agenda autoalojada para uso personal | solo necesitas una integración sencilla sin operar una plataforma |
+| Tu objetivo encaja con estos ejemplos: Experimentar con una agenda personal autoalojada; Probar la duración y disponibilidad de distintos tipos de cita | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Su README recomienda uso personal y no productivo; para uso comercial remite a las opciones de Cal.com.
+**Limitaciones:** El autor la recomienda para uso personal y no productivo. Se mueve de motores de workflows a agendas y reservas
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Docker, Node.js
+- **Stack:** Node.js y Yarn según el proyecto;  PostgreSQL;  Docker para el entorno de desarrollo
 - **Etiquetas:** `motores` `next-auth` `nextjs` `open-source` `postgresql` `prisma` `t3-stack` `tailwindcss`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -76,7 +93,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría corregida en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/calcom/cal.diy/blob/main/README.md)
 

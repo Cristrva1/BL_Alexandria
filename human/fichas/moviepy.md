@@ -1,4 +1,4 @@
-[🏠 Inicio](../README.md) › [🎬 Editar, grabar y generar video](../categorias/12-audio-voz-video.md) › Edición, grabación y subtítulos
+[🏠 Inicio](../README.md) › [🎬 Video con código y agentes creativos](../categorias/30-video-codigo-agentes.md) › Motores de video y escenas por código
 
 # 🎬 MoviePy
 
@@ -16,66 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El montaje no requiere modelo; renderizar consume CPU, memoria y disco; medios y fuentes tienen licencias propias |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. v2 cambia APIs como subclipped y with_volume_scaled; los ejemplos v1 no son intercambiables |
+| Coste | Sin pago a un modelo en la ruta básica. El montaje no requiere modelo; renderizar consume CPU, memoria y disco; medios y fuentes tienen licencias propias |
+| Equipo | Preparación según la ruta elegida. Python; FFmpeg según instalación; fuente tipográfica para títulos; video de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+v2 cambia APIs como subclipped y with_volume_scaled; los ejemplos v1 no son intercambiables
 
 ## Qué puedes hacer con él
 
-MoviePy convierte la edición de video en código Python: abres clips, los recortas, superpones texto o imágenes, mezclas audio y exportas a MP4, WebM o GIF. Es la pieza de ensamblaje habitual en pipelines que generan videos cortos a partir de imágenes, voz sintética y subtítulos.
+Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos.
 
 ## Por qué destaca
 
-Es la librería de edición de video más usada en Python, con una API legible y efectos incluidos. La versión 2.0 modernizó la API, aunque rompe la compatibilidad con el código escrito para v1.
+Usos propuestos: Automatizar variantes de un video; Componer clips y rótulos desde Python.
 
 ## Cómo funciona
 
-Importa fotogramas y audio como arrays de NumPy, aplica efectos y composiciones sobre clips (`VideoFileClip`, `TextClip`, `CompositeVideoClip`) y vuelve a codificar con FFmpeg, que obtiene mediante imageio-ffmpeg.
+v2 cambia APIs como subclipped y with_volume_scaled; los ejemplos v1 no son intercambiables
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python
+- FFmpeg según instalación
+- fuente tipográfica para títulos
+- video de prueba
 
-```shell
-pip install moviepy
-```
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
-[Instrucciones originales de instalación](https://github.com/Zulko/moviepy/blob/master/README.md)
+[Instrucciones originales de instalación](https://zulko.github.io/moviepy/getting_started/install.html)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar MoviePy para mi objetivo y necesito pasos guiados. Lee https://github.com/Zulko/moviepy/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar MoviePy para mi objetivo y necesito pasos guiados. Lee https://zulko.github.io/moviepy/getting_started/install.html. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Recorta diez segundos y superpone un título usando el ejemplo v2.
+
+**Qué comprobar:** El render conserva duración y audio y muestra el título.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Montar reels con imágenes, voz TTS y subtítulos por script
-- Recortar clips y superponer títulos o marcas de agua en lote
-- Generar GIFs y videos de demo de forma reproducible
+- Automatizar variantes de un video
+- Componer clips y rótulos desde Python
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| ensamblas video desde Python y quieres controlar cada clip por código | prefieres plantillas en React (`remotion`) o en HTML (`hyperframes`), o solo necesitas cortar sin recodificar (`lossless-cut`) |
+| Tu objetivo encaja con estos ejemplos: Automatizar variantes de un video; Componer clips y rótulos desde Python | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Es más lento que llamar a FFmpeg directamente porque pasa cada fotograma por NumPy, y el código escrito para v1 hay que adaptarlo a v2.
+**Limitaciones:** v2 cambia APIs como subclipped y with_volume_scaled; los ejemplos v1 no son intercambiables
 
 ## Stack y modelos
 
-- **Stack:** Python, NumPy, Pillow, FFmpeg
+- **Stack:** Python; FFmpeg según instalación; fuente tipográfica para títulos; video de prueba
 - **Etiquetas:** `video` `audio` `automation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -101,7 +109,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría corregida en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Zulko/moviepy/blob/master/README.md)
 

@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 30.2k | Apache-2.0 | Java | 2026-11-10 |
 
-**Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
+**Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,56 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | El coste depende del proveedor o la ruta. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. El motor autoalojado requiere infraestructura; funciones comerciales y proveedores de IA pueden añadir consumo |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. Expone flows por MCP HTTP con autenticación y permisos; el ejemplo Docker usa root y monta su socket, por lo que requiere un entorno de prueba |
+| Coste | El coste depende del proveedor o la ruta. El motor autoalojado requiere infraestructura; funciones comerciales y proveedores de IA pueden añadir consumo |
+| Equipo | Preparación según la ruta elegida. Docker;  directorio temporal y volúmenes de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Expone flows por MCP HTTP con autenticación y permisos; el ejemplo Docker usa root y monta su socket, por lo que requiere un entorno de prueba
 
 ## Qué puedes hacer con él
 
-Define flujos en YAML con un editor web, cientos de plugins y disparadores por calendario o eventos. Pensado para equipos de datos y plataforma que quieren orquestación como código.
+Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio.
 
 ## Por qué destaca
 
-Une el enfoque declarativo de infraestructura con una UI completa; escala bien y tiene muchos plugins.
+Usos propuestos: Programar una importación diaria de archivos con reintentos; Combinar tareas de datos con una consulta a un modelo Ollama.
 
 ## Cómo funciona
 
-Un servidor Java guarda los flujos YAML y reparte tareas a workers; cada tarea es un plugin (scripts, SQL, APIs, contenedores).
+Expone flows por MCP HTTP con autenticación y permisos; el ejemplo Docker usa root y monta su socket, por lo que requiere un entorno de prueba
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Docker
+-  directorio temporal y volúmenes de prueba
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (powershell):**
+
+```
+docker run --pull=always --rm -it -p 8080:8080 --user=root `
+  --name kestra `
+  -v "kestra_data:/app/storage" `
+  -v "kestra_db:/app/data" `
+  -v "/var/run/docker.sock:/var/run/docker.sock" `
+  -v "C:/Temp:/tmp" `
+  -e KESTRA_PLUGINS_AUTO_INSTALL_ENABLED=true `
+  kestra/kestra:latest-slim server local
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/kestra-io/kestra/blob/develop/README.md)
 
@@ -51,23 +73,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Kestra para mi objetivo y necesito pasos guiados. Lee https://github.com/kestra-io/kestra/blob/develop/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Ejecuta un flujo de ejemplo y abre sus logs en la interfaz de Kestra.
+
+**Qué comprobar:** La ejecución muestra su estado final y los mensajes de las tareas.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Pipelines ETL programados
-- Orquestar dbt, Airbyte y scripts
-- Procesos de negocio con aprobaciones
+- Programar una importación diaria de archivos con reintentos
+- Combinar tareas de datos con una consulta a un modelo Ollama
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres workflows declarativos en YAML con UI y control de versiones | buscas automatizaciones de negocio con nodos visuales; mira `n8n` |
+| Tu objetivo encaja con estos ejemplos: Programar una importación diaria de archivos con reintentos; Combinar tareas de datos con una consulta a un modelo Ollama | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Funciones de equipo como RBAC y SSO son de la edición Enterprise.
+**Limitaciones:** Expone flows por MCP HTTP con autenticación y permisos; el ejemplo Docker usa root y monta su socket, por lo que requiere un entorno de prueba
 
 ## Stack y modelos
 
-- **Stack:** Java, Vue, YAML, Docker
+- **Stack:** Docker;  directorio temporal y volúmenes de prueba
 - **Etiquetas:** `automation` `data` `java` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -92,9 +121,12 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/kestra-io/kestra/blob/develop/README.md)
+- [Fuente 2](https://kestra.io/docs/ai-orchestration/mcp-server)
 
 ---
 

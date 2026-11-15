@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL. | Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. |
 | ⭐ Estrellas | 50.3k | 75.5k |
-| Elígelo si… | quieres BI accesible para perfiles no técnicos | quieres BI empresarial abierto |
-| Evítalo si… | necesitas analítica de eventos por usuario (posthog) | buscas algo muy fácil para no técnicos; mira `metabase` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Explorar ventas sin escribir cada consulta SQL; Compartir un informe operativo | Tu objetivo encaja con estos ejemplos: Explorar métricas de una base SQL; Compartir un dashboard interno |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🔀 híbrido | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
-| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
+| Coste | El coste depende del proveedor o la ruta | Sin pago a un modelo en la ruta básica |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | NOASSERTION | Apache-2.0 |
-| Instalación | `docker run metabase/metabase` | `git clone https://github.com/apache/superset && cd superset && docker compose -f docker-compose-image-tag.yml up` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## Regla práctica
 
-- Elige **metabase** si quieres BI accesible para perfiles no técnicos.
-- Elige **Apache Superset** si quieres BI empresarial abierto.
+- Elige **metabase** si Tu objetivo encaja con estos ejemplos: Explorar ventas sin escribir cada consulta SQL; Compartir un informe operativo.
+- Elige **Apache Superset** si Tu objetivo encaja con estos ejemplos: Explorar métricas de una base SQL; Compartir un dashboard interno.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

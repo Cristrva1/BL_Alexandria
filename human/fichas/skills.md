@@ -2,13 +2,13 @@
 
 # 📦 skills
 
-> Colección de skills de referencia mantenida por el proyecto aihero.dev / Total TypeScript, pensada como ejemplos limpios y bien construidos.
+> Skills de ingeniería de Matt Pocock para trabajar sobre requisitos, diseño, implementación y revisión, con plugins para Claude Code y Codex.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 325k | MIT | Shell | 2026-06-23 |
 
-**Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
+**Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,49 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Las skills consumen el agente; no suministran un modelo ni créditos de API |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El README actual ya documenta plugins para Claude Code y Codex; se corrige la ficha que los dejaba sin documentar |
+| Coste | Consumo del agente que ya utilizas. Las skills consumen el agente; no suministran un modelo ni créditos de API |
+| Equipo | Preparación según la ruta elegida. Claude Code o Codex;  carpeta de prueba para la primera skill |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El README actual ya documenta plugins para Claude Code y Codex; se corrige la ficha que los dejaba sin documentar
 
 ## Qué puedes hacer con él
 
-Muestra cómo se escribe una buena skill para agentes, con pocos ejemplos pero de alta calidad para usarlos como plantilla.
+Skills de ingeniería de Matt Pocock para trabajar sobre requisitos, diseño, implementación y revisión, con plugins para Claude Code y Codex.
 
 ## Por qué destaca
 
-Su valor está en la claridad y el mantenimiento, sirviendo de plantilla para aprender a escribir tus propias skills. Al venir de un proyecto educativo de TypeScript, el código asociado suele ser didáctico.
+Usos propuestos: Revisar requisitos de una función antes de implementarla; Organizar una refactorización pequeña con un plan revisable.
 
 ## Cómo funciona
 
-Cada skill es un `SKILL.md` (a veces con scripts TS asociados) que copias al directorio de skills del asistente. Algunas incluyen scripts auxiliares en TypeScript que la skill invoca.
+El README actual ya documenta plugins para Claude Code y Codex; se corrige la ficha que los dejaba sin documentar
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Claude Code o Codex
+-  carpeta de prueba para la primera skill
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+claude plugin install mattpocock-skills@claude-plugins-official
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/mattpocock/skills/blob/main/README.md)
 
@@ -51,21 +66,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar skills para mi objetivo y necesito pasos guiados. Lee https://github.com/mattpocock/skills/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Elige una skill de ingeniería e invócala sobre una tarea acotada.
+
+**Qué comprobar:** El agente aplica la skill y produce el artefacto que esa tarea pide.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Explorar ejemplos de skills bien construidas
-- Base para crear las propias
-- Aprender el formato `SKILL.md`
+- Revisar requisitos de una función antes de implementarla
+- Organizar una refactorización pequeña con un plan revisable
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas referencias limpias y didácticas | quieres un catálogo masivo (antigravity-awesome-skills) |
+| Tu objetivo encaja con estos ejemplos: Revisar requisitos de una función antes de implementarla; Organizar una refactorización pequeña con un plan revisable | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El README actual ya documenta plugins para Claude Code y Codex; se corrige la ficha que los dejaba sin documentar
 
 ## Stack y modelos
 
-- **Stack:** Markdown/TypeScript
+- **Stack:** Claude Code o Codex;  carpeta de prueba para la primera skill
 - **Etiquetas:** `skills` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -82,7 +106,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/mattpocock/skills/blob/main/README.md)
 

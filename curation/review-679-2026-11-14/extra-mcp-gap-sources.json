@@ -1,0 +1,20 @@
+{
+  "haystack": [
+    "https://github.com/deepset-ai/hayhooks/blob/main/README.md"
+  ],
+  "autogpt": [
+    "https://agpt.co/docs/platform/api-and-integrations/api-guide/mcp-server.md"
+  ],
+  "scrapegraph-ai": [
+    "https://github.com/ScrapeGraphAI/scrapegraph-mcp/blob/main/README.md"
+  ],
+  "kestra": [
+    "https://kestra.io/docs/ai-orchestration/mcp-server"
+  ],
+  "activepieces": [
+    "https://www.activepieces.com/docs/mcp/overview"
+  ],
+  "windmill": [
+    "https://www.windmill.dev/docs/core_concepts/mcp"
+  ]
+}

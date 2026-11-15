@@ -16,56 +16,72 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El framework no usa modelos ni API; productos de pago del ecosistema tienen condiciones propias |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Elige la integración de tu framework; la configuración actual no debe copiarse sin más de tutoriales de Tailwind v3 |
+| Coste | Sin pago a un modelo en la ruta básica. El framework no usa modelos ni API; productos de pago del ecosistema tienen condiciones propias |
+| Equipo | Preparación según la ruta elegida. Proyecto Vite u otra integración elegida; Node |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Elige la integración de tu framework; la configuración actual no debe copiarse sin más de tutoriales de Tailwind v3
 
 ## Qué puedes hacer con él
 
-Elimina el contexto de estilos disperso entre hojas y componentes.
+Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado.
 
 ## Por qué destaca
 
-Se ha vuelto el estándar de facto del estilado web moderno y la base sobre la que se montan casi todas las librerías de componentes actuales (shadcn, heroui, magicui). Su motor v4 con engine nativo en Rust aceleró el build.
+Usos propuestos: Diseñar un formulario responsive; Definir colores y espaciado consistentes.
 
 ## Cómo funciona
 
-Motor que escanea tus archivos de plantilla y genera solo el CSS de las utilidades usadas (purge automático), optimizando el bundle final a lo mínimo.
+Elige la integración de tu framework; la configuración actual no debe copiarse sin más de tutoriales de Tailwind v3
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/tailwindlabs/tailwindcss/blob/main/README.md)
+- Proyecto Vite u otra integración elegida
+- Node
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://tailwindcss.com/docs/installation/using-vite)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar tailwindcss para mi objetivo y necesito pasos guiados. Lee https://github.com/tailwindlabs/tailwindcss/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar tailwindcss para mi objetivo y necesito pasos guiados. Lee https://tailwindcss.com/docs/installation/using-vite. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Crea una tarjeta adaptable y cambia el espaciado con utilidades.
+
+**Qué comprobar:** Puedes comprobar diferencias entre móvil y escritorio.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Estilar landings y apps sin escribir CSS a mano
-- Base de estilos de casi cualquier lib de componentes actual
-- Design system consistente por composición
+- Diseñar un formulario responsive
+- Definir colores y espaciado consistentes
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres estilar rápido y consistente | prefieres CSS-in-JS o estilos scoped por componente |
+| Tu objetivo encaja con estos ejemplos: Diseñar un formulario responsive; Definir colores y espaciado consistentes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Elige la integración de tu framework; la configuración actual no debe copiarse sin más de tutoriales de Tailwind v3
 
 ## Stack y modelos
 
-- **Stack:** Node.js, CSS
+- **Stack:** Proyecto Vite u otra integración elegida; Node
 - **Etiquetas:** `ui` `design` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -84,9 +100,12 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/tailwindlabs/tailwindcss/blob/main/README.md)
+- [Fuente 2](https://tailwindcss.com/docs/installation/using-vite)
 
 ---
 

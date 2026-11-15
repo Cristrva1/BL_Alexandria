@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos. |
+| API de IA | Depende de la ruta elegida. La app es Ollama-first; Colab alojado no trae Ollama y requiere cambiar de modelo o conectar una instancia; las APIs alternativas consumen |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos. |
-| Coste | El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan. |
-| Equipo | Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. No confundas instalar langchain-openai con completar todo el proyecto; revisa requisitos y la guía de ejecución de la app o notebook |
+| Coste | El coste depende del proveedor o la ruta. La app es Ollama-first; Colab alojado no trae Ollama y requiere cambiar de modelo o conectar una instancia; las APIs alternativas consumen |
+| Equipo | Preparación según la ruta elegida. Python; checkout; Ollama local; PDFs propios; Jupyter para notebook |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+No confundas instalar langchain-openai con completar todo el proyecto; revisa requisitos y la guía de ejecución de la app o notebook
 
 ## Qué puedes hacer con él
 
 Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama.
 
+## Por qué destaca
+
+Usos propuestos: Aprender RAG por pasos; Comparar un pipeline local con otro proveedor.
+
 ## Cómo funciona
 
-Se utiliza como punto de partida: se prepara el entorno del ejemplo y se adapta su código a la tarea.
+No confundas instalar langchain-openai con completar todo el proyecto; revisa requisitos y la guía de ejecución de la app o notebook
 
 ## Cómo empezar
 
@@ -39,11 +44,24 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
+- Python
+- checkout
+- Ollama local
+- PDFs propios
+- Jupyter para notebook
 
-1. Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.
-2. Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.
-3. Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (shell):**
+
+```
+pip install -r requirements.txt
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/GiovanniPasq/agentic-rag-for-dummies/blob/main/README.md)
 
@@ -51,21 +69,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar agentic-rag-for-dummies para mi objetivo y necesito pasos guiados. Lee https://github.com/GiovanniPasq/agentic-rag-for-dummies/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Coloca un PDF breve en docs y pregunta por un dato de una página concreta.
+
+**Qué comprobar:** Puedes ver documentos recuperados y aclarar una consulta ambigua.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama.
+- Aprender RAG por pasos
+- Comparar un pipeline local con otro proveedor
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| Tu objetivo encaja con estos ejemplos: Aprender RAG por pasos; Comparar un pipeline local con otro proveedor | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** No confundas instalar langchain-openai con completar todo el proyecto; revisa requisitos y la guía de ejecución de la app o notebook
 
 ## Stack y modelos
 
-- **Stack:** Jupyter Notebook, pyproject.toml
+- **Stack:** Python; checkout; Ollama local; PDFs propios; Jupyter para notebook
 - **Etiquetas:** `rag` `template` `jupyter-notebook`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +102,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/GiovanniPasq/agentic-rag-for-dummies/blob/main/README.md)
 

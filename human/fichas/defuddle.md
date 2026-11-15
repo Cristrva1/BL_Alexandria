@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La extracción básica no necesita API ni modelo; el contenido y alojamiento son costes externos |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Puede perder información en diseños poco habituales; compara una muestra antes de procesar muchas páginas |
+| Coste | Sin pago a un modelo en la ruta básica. La extracción básica no necesita API ni modelo; el contenido y alojamiento son costes externos |
+| Equipo | Preparación según la ruta elegida. Node.js; archivo HTML de prueba o página pública |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Puede perder información en diseños poco habituales; compara una muestra antes de procesar muchas páginas
 
 ## Qué puedes hacer con él
 
 Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable.
 
+## Por qué destaca
+
+Usos propuestos: Preparar artículos para lectura; Limpiar HTML antes de indexarlo.
+
 ## Cómo funciona
 
-Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.
+Puede perder información en diseños poco habituales; compara una muestra antes de procesar muchas páginas
 
 ## Cómo empezar
 
@@ -39,19 +44,20 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
+- Node.js
+- archivo HTML de prueba o página pública
 
-1. Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.
-2. Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.
-3. Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
 
-**Comando de entrada documentado:**
+**Entrada documentada (bash):**
 
-```shell
+```
 npm install defuddle
 ```
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/kepano/defuddle/blob/main/README.md)
 
@@ -59,21 +65,30 @@ Comando de entrada seleccionado y presente en la fuente revisada; consulta la in
 
 > Quiero usar defuddle para mi objetivo y necesito pasos guiados. Lee https://github.com/kepano/defuddle/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Extrae Markdown de un artículo con menú y comprueba qué texto conserva.
+
+**Qué comprobar:** El resultado prioriza el artículo y elimina navegación irrelevante.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable.
+- Preparar artículos para lectura
+- Limpiar HTML antes de indexarlo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| Tu objetivo encaja con estos ejemplos: Preparar artículos para lectura; Limpiar HTML antes de indexarlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Puede perder información en diseños poco habituales; compara una muestra antes de procesar muchas páginas
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, package.json
+- **Stack:** Node.js; archivo HTML de prueba o página pública
 - **Etiquetas:** `crawlers` `library` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -84,7 +99,9 @@ Comando de entrada seleccionado y presente en la fuente revisada; consulta la in
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/kepano/defuddle/blob/main/README.md)
 

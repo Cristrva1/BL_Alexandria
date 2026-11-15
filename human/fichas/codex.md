@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Puede utilizarse con sesión del plan compatible o con API key; no son la misma facturación. |
+| API de IA | API de IA opcional. Acceso oficial con plan de ChatGPT elegible o API con facturación separada; Ollama documenta la ruta --oss local |
 | Claude Code | Integración no documentada |
 | Codex | Acceso oficial con sesión del plan |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. El CLI corre en tu equipo pero el modelo puede ser remoto; --oss distingue la inferencia local y los servicios de búsqueda pueden seguir siendo externos |
+| Coste | El coste depende del proveedor o la ruta. Acceso oficial con plan de ChatGPT elegible o API con facturación separada; Ollama documenta la ruta --oss local |
+| Equipo | Preparación según la ruta elegida. Node o binario adecuado; terminal; proyecto de prueba; cuenta o backend local |
 
-La sesión oficial del plan y una API key son rutas de autenticación distintas. Elegir una y consultar los límites del plan.
+El CLI corre en tu equipo pero el modelo puede ser remoto; --oss distingue la inferencia local y los servicios de búsqueda pueden seguir siendo externos
 
 ## Qué puedes hacer con él
 
-Lee tu repositorio, propone y aplica cambios y ejecuta comandos dentro de un sandbox. Usa AGENTS.md para el contexto del proyecto y admite MCP.
+Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source.
 
 ## Por qué destaca
 
-Open source, rápido y con sandbox del sistema operativo por defecto; se integra con ChatGPT y la nube de Codex.
+Usos propuestos: Explorar un proyecto; Preparar un cambio y revisar su diff.
 
 ## Cómo funciona
 
-Un CLI en Rust conversa con modelos de OpenAI y ejecuta las herramientas en un sandbox con niveles de aprobación.
+El CLI corre en tu equipo pero el modelo puede ser remoto; --oss distingue la inferencia local y los servicios de búsqueda pueden seguir siendo externos
 
 ## Cómo empezar
 
@@ -43,19 +44,24 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Una cuenta con acceso a Codex o una API key; Node.js y npm si utilizas el comando mostrado.
+- Node o binario adecuado
+- terminal
+- proyecto de prueba
+- cuenta o backend local
 
-1. Instala Codex CLI o elige una distribución oficial para tu sistema.
-2. Abre Codex y elige sesión de ChatGPT o autenticación con API key; comprueba cuál está activa.
-3. Abre una carpeta de prueba y pide una tarea pequeña antes de ampliar los permisos o la automatización.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-**Comando de entrada documentado:**
+**Entrada documentada (shell):**
 
-```shell
+```
+# Install using npm
 npm install -g @openai/codex
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/openai/codex/blob/main/README.md)
 
@@ -63,21 +69,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar Codex CLI para mi objetivo y necesito pasos guiados. Lee https://github.com/openai/codex/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Instala el CLI, inicia sesión por la ruta elegida y solicita una explicación sin cambios.
+
+**Qué comprobar:** Puedes comprobar los archivos usados y el alcance de la propuesta.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Corregir bugs desde la terminal
-- Generar tests y refactors
-- Tareas en paralelo con la nube de Codex
+- Explorar un proyecto
+- Preparar un cambio y revisar su diff
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| usas ChatGPT u OpenAI y quieres un agente abierto en terminal | trabajas con Claude como modelo principal; mira `claude-code` |
+| Tu objetivo encaja con estos ejemplos: Explorar un proyecto; Preparar un cambio y revisar su diff | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El CLI corre en tu equipo pero el modelo puede ser remoto; --oss distingue la inferencia local y los servicios de búsqueda pueden seguir siendo externos
 
 ## Stack y modelos
 
-- **Stack:** Rust, TypeScript
+- **Stack:** Node o binario adecuado; terminal; proyecto de prueba; cuenta o backend local
 - **Etiquetas:** `coding-agent` `agents` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -94,7 +109,7 @@ Comando presente en el README revisado; no es una prueba de instalación.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Gemini CLI](gemini-cli.md) | 109k | Agente de IA open source de Google que lleva Gemini a tu terminal, con cuota gratuita generosa. |
+| [Gemini CLI](gemini-cli.md) | 109k | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. |
 | [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 
 ## Enlaces
@@ -103,10 +118,12 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/openai/codex/blob/main/README.md)
-- [Fuente 2](https://learn.chatgpt.com/docs/auth)
+- [Fuente 2](https://docs.ollama.com/integrations/codex)
 
 ---
 

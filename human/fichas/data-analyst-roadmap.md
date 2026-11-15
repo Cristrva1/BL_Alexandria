@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Leer la hoja de ruta no necesita API; cursos y herramientas enlazados pueden ser de pago |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es una ruta basada en experiencia del autor, no una garantía de empleo ni un programa que debas completar entero |
+| Coste | Sin pago a un modelo en la ruta básica. Leer la hoja de ruta no necesita API; cursos y herramientas enlazados pueden ser de pago |
+| Equipo | Preparación según la ruta elegida. Navegador; tiempo de estudio; una tabla pequeña de práctica |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es una ruta basada en experiencia del autor, no una garantía de empleo ni un programa que debas completar entero
 
 ## Qué puedes hacer con él
 
-Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera. Organiza conocimientos y recursos desde bases de datos y programación hasta visualización y comunicación.
+Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera.
 
 ## Por qué destaca
 
-Quieres ordenar un plan de aprendizaje para análisis de datos.
+Usos propuestos: Organizar un plan inicial de estudio; Identificar conocimientos para un primer proyecto.
 
 ## Cómo funciona
 
-Organiza conocimientos y recursos desde bases de datos y programación hasta visualización y comunicación.
+Es una ruta basada en experiencia del autor, no una garantía de empleo ni un programa que debas completar entero
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- tiempo de estudio
+- una tabla pequeña de práctica
+
+1. Elige SQL o una hoja de cálculo y resuelve una pregunta con una tabla ficticia.
+2. Comprueba: Puedes explicar dato de entrada, cálculo y resultado.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/mtahiraslan/data-analyst-roadmap/blob/main/README.md)
 
@@ -51,21 +59,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar data-analyst-roadmap para mi objetivo y necesito pasos guiados. Lee https://github.com/mtahiraslan/data-analyst-roadmap/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Elige SQL o una hoja de cálculo y resuelve una pregunta con una tabla ficticia.
+
+**Qué comprobar:** Puedes explicar dato de entrada, cálculo y resultado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres ordenar un plan de aprendizaje para análisis de datos
+- Organizar un plan inicial de estudio
+- Identificar conocimientos para un primer proyecto
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres ordenar un plan de aprendizaje para análisis de datos | necesitas resultados operativos validados en vez de material de investigación |
+| Tu objetivo encaja con estos ejemplos: Organizar un plan inicial de estudio; Identificar conocimientos para un primer proyecto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Es una guía de aprendizaje; no garantiza empleo ni certificación.
+**Limitaciones:** Es una ruta basada en experiencia del autor, no una garantía de empleo ni un programa que debas completar entero
 
 ## Stack y modelos
 
-- **Stack:** Recursos y documentación
+- **Stack:** Navegador; tiempo de estudio; una tabla pequeña de práctica
 - **Etiquetas:** `recursos` `blogs` `businessintelligence` `courses` `data` `dataanalysis` `dataanalyst` `excel`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +92,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/mtahiraslan/data-analyst-roadmap/blob/main/README.md)
 

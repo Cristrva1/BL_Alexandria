@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | API de IA opcional. Lectura libre; los ejemplos API requieren cuenta, clave y consumo separado de ChatGPT o Codex |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Es un recetario oficial de API; no es un paquete de plugins ni una promesa de acceso mediante suscripción |
+| Coste | Consumo de APIs o servicios. Lectura libre; los ejemplos API requieren cuenta, clave y consumo separado de ChatGPT o Codex |
+| Equipo | Preparación según la ruta elegida. Navegador; Python y API key de OpenAI si ejecutas notebooks |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es un recetario oficial de API; no es un paquete de plugins ni una promesa de acceso mediante suscripción
 
 ## Qué puedes hacer con él
 
-Reúne recetas sobre embeddings, function calling, RAG, evaluación, agentes y voz. Sirve como referencia práctica al construir con la API de OpenAI.
+Ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales.
 
 ## Por qué destaca
 
-Es la referencia oficial, actualizada con cada nueva función de la API.
+Usos propuestos: Extraer campos de un texto; Aprender a evaluar respuestas de una aplicación.
 
 ## Cómo funciona
 
-Notebooks de Jupyter y artículos que llaman a la API con el SDK de Python.
+Es un recetario oficial de API; no es un paquete de plugins ni una promesa de acceso mediante suscripción
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- Python y API key de OpenAI si ejecutas notebooks
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/openai/openai-cookbook/blob/main/README.md)
 
@@ -51,21 +59,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar OpenAI Cookbook para mi objetivo y necesito pasos guiados. Lee https://github.com/openai/openai-cookbook/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Elige una receta de salida estructurada y revisa su esquema antes de ejecutar una entrada breve.
+
+**Qué comprobar:** Puedes identificar la petición, respuesta esperada y consumo de la receta.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Aprender function calling con ejemplos
-- Montar un RAG con embeddings
-- Evaluar salidas de modelos
+- Extraer campos de un texto
+- Aprender a evaluar respuestas de una aplicación
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| construyes sobre la API de OpenAI y quieres ejemplos oficiales | usas Claude como modelo principal; mira `claude-cookbooks` |
+| Tu objetivo encaja con estos ejemplos: Extraer campos de un texto; Aprender a evaluar respuestas de una aplicación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Es un recetario oficial de API; no es un paquete de plugins ni una promesa de acceso mediante suscripción
 
 ## Stack y modelos
 
-- **Stack:** Python, Jupyter
+- **Stack:** Navegador; Python y API key de OpenAI si ejecutas notebooks
 - **Etiquetas:** `learning` `notebooks` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,7 +107,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/openai/openai-cookbook/blob/main/README.md)
 

@@ -16,42 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| API de IA | API de IA opcional. Modelos locales, API y harnesses con cuentas tienen costes distintos; los canales también pueden cobrar |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La interfaz y memoria locales no mantienen locales los prompts enviados a proveedores; el backend Claude CLI usa el ejecutable autenticado y Codex tiene su propio harness |
+| Coste | El coste depende del proveedor o la ruta. Modelos locales, API y harnesses con cuentas tienen costes distintos; los canales también pueden cobrar |
+| Equipo | Preparación según la ruta elegida. Node compatible o instalador; proveedor o harness; canal de prueba opcional |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La interfaz y memoria locales no mantienen locales los prompts enviados a proveedores; el backend Claude CLI usa el ejecutable autenticado y Codex tiene su propio harness
 
 ## Qué puedes hacer con él
 
-Un solo operador, muchas superficies: el asistente vive en tu equipo, tiene memoria, ejecuta tareas reales y responde por los canales que ya usas. Es uno de los proyectos de IA más populares de GitHub.
+Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más.
 
 ## Por qué destaca
 
-Enorme adopción y un ecosistema de skills y canales que lo convierten en un asistente realmente útil a diario.
+Usos propuestos: Probar un asistente personal; Conectar un agente a un canal propio.
 
 ## Cómo funciona
 
-Un gateway local conecta canales de mensajería con un agente que usa herramientas, skills y el modelo configurado.
+La interfaz y memoria locales no mantienen locales los prompts enviados a proveedores; el backend Claude CLI usa el ejecutable autenticado y Codex tiene su propio harness
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Node compatible o instalador
+- proveedor o harness
+- canal de prueba opcional
 
-```shell
-npm install -g openclaw@latest
-```
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/openclaw/openclaw/blob/main/README.md)
 
@@ -59,23 +60,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar OpenClaw para mi objetivo y necesito pasos guiados. Lee https://github.com/openclaw/openclaw/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Completa onboarding y consulta gateway status y dashboard antes de conectar mensajería.
+
+**Qué comprobar:** Puedes identificar estado, proveedor y permisos del Gateway.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Asistente personal por WhatsApp
-- Automatizar tareas del equipo desde Telegram
-- Agente con memoria que trabaja 24/7
+- Probar un asistente personal
+- Conectar un agente a un canal propio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres un asistente personal que actúe por tus canales de chat | necesitas un agente para tu empresa con varios usuarios; mira `hermes-agent` |
+| Tu objetivo encaja con estos ejemplos: Probar un asistente personal; Conectar un agente a un canal propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Da mucho acceso a tu equipo y cuentas: revisa permisos y aíslalo con cuidado.
+**Limitaciones:** La interfaz y memoria locales no mantienen locales los prompts enviados a proveedores; el backend Claude CLI usa el ejecutable autenticado y Codex tiene su propio harness
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Node.js
+- **Stack:** Node compatible o instalador; proveedor o harness; canal de prueba opcional
 - **Etiquetas:** `agents` `chatbot` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,7 +98,7 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [hermes-agent](hermes-agent.md) | 263k | Entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. |
+| [hermes-agent](hermes-agent.md) | 263k | Asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados. |
 | [Mercury Agent](mercury-agent.md) | 3.9k | Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web. |
 
 ## Enlaces
@@ -100,9 +108,13 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/openclaw/openclaw/blob/main/README.md)
+- [Fuente 2](https://docs.openclaw.ai/gateway/cli-backends)
+- [Fuente 3](https://docs.openclaw.ai/concepts/model-providers)
 
 ---
 

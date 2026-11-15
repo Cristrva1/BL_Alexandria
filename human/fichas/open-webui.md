@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Puedes elegir la ruta local documentada o configurar un proveedor remoto; la ruta remota puede requerir API key o acceso propio. |
+| API de IA | API de IA opcional. Los modelos remotos consumen API; Ollama local necesita hardware; la licencia exige conservar branding salvo las excepciones aplicables |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | El coste depende del proveedor o la ruta. La inferencia local consume recursos de tu equipo. Los proveedores remotos y servicios del cliente tienen sus propios planes y tarifas. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Instalar la interfaz no instala todos los modelos; confirma que Docker puede alcanzar el servidor de inferencia |
+| Coste | El coste depende del proveedor o la ruta. Los modelos remotos consumen API; Ollama local necesita hardware; la licencia exige conservar branding salvo las excepciones aplicables |
+| Equipo | Preparación según la ruta elegida. Docker; Ollama accesible o proveedor remoto; volumen persistente |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Instalar la interfaz no instala todos los modelos; confirma que Docker puede alcanzar el servidor de inferencia
 
 ## Qué puedes hacer con él
 
-Da a tu equipo un chat privado con usuarios, documentos, búsqueda web, herramientas y modelos locales o en la nube.
+Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas.
 
 ## Por qué destaca
 
-La UI de chat auto-hospedada más popular, muy completa y activa.
+Usos propuestos: Unificar chats de modelos locales; Crear una interfaz compartida para un equipo.
 
 ## Cómo funciona
 
-Backend Python y frontend Svelte que se conectan a Ollama o a cualquier API OpenAI, con RAG integrado.
+Instalar la interfaz no instala todos los modelos; confirma que Docker puede alcanzar el servidor de inferencia
 
 ## Cómo empezar
 
@@ -43,19 +44,22 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Python o Docker según la instalación elegida, y un proveedor o motor de modelos.
+- Docker
+- Ollama accesible o proveedor remoto
+- volumen persistente
 
-1. Elige la instalación con paquete o contenedor que documenta el README.
-2. Configura un backend, por ejemplo un motor local compatible o un proveedor remoto.
-3. Prueba una conversación y confirma dónde se ejecuta el modelo antes de cargar documentos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-**Comando de entrada documentado:**
+**Entrada documentada (bash):**
 
-```shell
-pip install open-webui
+```
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/open-webui/open-webui/blob/main/README.md)
 
@@ -63,23 +67,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar Open WebUI para mi objetivo y necesito pasos guiados. Lee https://github.com/open-webui/open-webui/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Conecta un modelo y conversa sobre un texto ficticio antes de cargar documentos privados.
+
+**Qué comprobar:** Puedes ver el modelo seleccionado y conservar una conversación.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- ChatGPT privado para tu empresa
-- Chat con documentos internos
-- Probar modelos locales
+- Unificar chats de modelos locales
+- Crear una interfaz compartida para un equipo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas un ChatGPT privado para tu equipo | solo quieres una app de escritorio individual; mira `jan` |
+| Tu objetivo encaja con estos ejemplos: Unificar chats de modelos locales; Crear una interfaz compartida para un equipo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La licencia exige mantener la marca Open WebUI en despliegues grandes.
+**Limitaciones:** Instalar la interfaz no instala todos los modelos; confirma que Docker puede alcanzar el servidor de inferencia
 
 ## Stack y modelos
 
-- **Stack:** Python, Svelte, Docker
+- **Stack:** Docker; Ollama accesible o proveedor remoto; volumen persistente
 - **Etiquetas:** `chatbot` `local` `rag` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -108,7 +119,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/open-webui/open-webui/blob/main/README.md)
 

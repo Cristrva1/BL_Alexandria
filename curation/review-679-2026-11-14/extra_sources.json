@@ -1,0 +1,9 @@
+{
+  "n8n": ["https://docs.n8n.io/integrations/builtin/credentials/ollama"],
+  "spec-kit": ["https://github.github.io/spec-kit/integrations/index.html"],
+  "bmad-method": ["https://github.com/vercel-labs/skills/blob/main/docs/agents.md"],
+  "agent-toolkit": ["https://github.com/vercel-labs/skills/blob/main/docs/agents.md"],
+  "book-to-skill": ["https://github.com/vercel-labs/skills/blob/main/docs/agents.md"],
+  "tooljet": ["https://antigravity.google/docs/ide-mcp"],
+  "skillspector": ["https://antigravity.google/docs/ide-mcp"]
+}

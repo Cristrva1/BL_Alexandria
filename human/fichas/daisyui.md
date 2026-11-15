@@ -16,56 +16,72 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La biblioteca no requiere IA; plantillas o servicios comerciales relacionados son opcionales |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es un plugin de estilos y clases de Tailwind; sigue la guía de la versión instalada para configurar el CSS |
+| Coste | Sin pago a un modelo en la ruta básica. La biblioteca no requiere IA; plantillas o servicios comerciales relacionados son opcionales |
+| Equipo | Preparación según la ruta elegida. Proyecto con Tailwind compatible; Node y gestor de paquetes |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es un plugin de estilos y clases de Tailwind; sigue la guía de la versión instalada para configurar el CSS
 
 ## Qué puedes hacer con él
 
-Añade clases como `btn` o `card` sobre Tailwind para escribir menos HTML, sin JavaScript.
+La librería de componentes más popular para Tailwind CSS, con clases semánticas y temas.
 
 ## Por qué destaca
 
-Rápida de adoptar y compatible con cualquier framework.
+Usos propuestos: Diseñar una web con clases semánticas; Añadir temas a un panel sencillo.
 
 ## Cómo funciona
 
-Plugin de Tailwind que genera clases de componentes y temas con variables CSS.
+Es un plugin de estilos y clases de Tailwind; sigue la guía de la versión instalada para configurar el CSS
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/saadeghi/daisyui/blob/master/README.md)
+- Proyecto con Tailwind compatible
+- Node y gestor de paquetes
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://daisyui.com/docs/install/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar daisyUI para mi objetivo y necesito pasos guiados. Lee https://github.com/saadeghi/daisyui/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar daisyUI para mi objetivo y necesito pasos guiados. Lee https://daisyui.com/docs/install/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Añade un botón y una tarjeta con un tema y cambia al segundo tema.
+
+**Qué comprobar:** Se actualizan colores sin reescribir cada componente.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Prototipos rápidos con Tailwind
-- Temas claro y oscuro
-- Proyectos sin React
+- Diseñar una web con clases semánticas
+- Añadir temas a un panel sencillo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| usas Tailwind y quieres componentes sin JavaScript | usas React y quieres control total; mira `ui` |
+| Tu objetivo encaja con estos ejemplos: Diseñar una web con clases semánticas; Añadir temas a un panel sencillo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Es un plugin de estilos y clases de Tailwind; sigue la guía de la versión instalada para configurar el CSS
 
 ## Stack y modelos
 
-- **Stack:** JavaScript, CSS, Tailwind
+- **Stack:** Proyecto con Tailwind compatible; Node y gestor de paquetes
 - **Etiquetas:** `ui` `design` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -88,7 +104,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/saadeghi/daisyui/blob/master/README.md)
 

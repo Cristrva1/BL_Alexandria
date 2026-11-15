@@ -16,34 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No necesita LLM; RPC, red y operaciones pueden cobrar; las claves de wallet son distintas de una API de IA |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. La ruta básica no exige un LLM. Exchanges, brokers, datos de mercado y ejecución real pueden requerir cuentas, tarifas o fondos; los ejemplos no acreditan rentabilidad. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es un bot con capacidad de ejecución; no se confirma una ruta de paper trading en las fuentes revisadas |
+| Coste | El coste depende del proveedor o la ruta. No necesita LLM; RPC, red y operaciones pueden cobrar; las claves de wallet son distintas de una API de IA |
+| Equipo | Preparación según la ruta elegida. Dependencias y Docker según guía; RPC Solana; configuración Telegram; wallet solo para operaciones |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es un bot con capacidad de ejecución; no se confirma una ruta de paper trading en las fuentes revisadas
 
 ## Qué puedes hacer con él
 
-Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado. Conecta servicios de la cadena y componentes de aplicación para seguir eventos y procesar operaciones.
+Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado.
 
 ## Por qué destaca
 
-Quieres estudiar automatización y seguimiento de transacciones en Solana.
+Usos propuestos: Estudiar un bot de seguimiento on-chain; Revisar una integración de Telegram con blockchain.
 
 ## Cómo funciona
 
-Conecta servicios de la cadena y componentes de aplicación para seguir eventos y procesar operaciones.
+Es un bot con capacidad de ejecución; no se confirma una ruta de paper trading en las fuentes revisadas
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Dependencias y Docker según guía
+- RPC Solana
+- configuración Telegram
+- wallet solo para operaciones
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/ChainBuff/open-sol-bot/blob/main/README.md)
 
@@ -51,21 +60,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar open-sol-bot para mi objetivo y necesito pasos guiados. Lee https://github.com/ChainBuff/open-sol-bot/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Examina configuración y rutas de órdenes antes de conectar una wallet o habilitar seguimiento.
+
+**Qué comprobar:** Puedes identificar las acciones que consultarían datos y las que moverían fondos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres estudiar automatización y seguimiento de transacciones en Solana
+- Estudiar un bot de seguimiento on-chain
+- Revisar una integración de Telegram con blockchain
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres estudiar automatización y seguimiento de transacciones en Solana | necesitas resultados operativos validados en vez de material de investigación |
+| Tu objetivo encaja con estos ejemplos: Estudiar un bot de seguimiento on-chain; Revisar una integración de Telegram con blockchain | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Las claves y transacciones reales implican fondos; esta revisión no ejecutó operaciones ni verificó resultados.
+**Limitaciones:** Es un bot con capacidad de ejecución; no se confirma una ruta de paper trading en las fuentes revisadas
 
 ## Stack y modelos
 
-- **Stack:** Python, Docker, pyproject.toml
+- **Stack:** Dependencias y Docker según guía; RPC Solana; configuración Telegram; wallet solo para operaciones
 - **Etiquetas:** `finanzas` `blockchain` `solana` `telegram-bot` `trader` `transaction` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -75,7 +93,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ChainBuff/open-sol-bot/blob/main/README.md)
 

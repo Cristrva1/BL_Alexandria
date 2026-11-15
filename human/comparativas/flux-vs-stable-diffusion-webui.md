@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Repositorio oficial de inferencia de los modelos FLUX.1 de Black Forest Labs para generar imágenes. | Interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de extensiones desde el navegador. |
 | ⭐ Estrellas | 26.1k | 165k |
-| Elígelo si… | quieres generar imágenes de alta calidad con modelos abiertos | quieres extensiones y comunidad amplia |
-| Evítalo si… | no tienes GPU potente; usa una API en la nube | prefieres un flujo moderno y limpio (InvokeAI) |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Prototipar imagen con FLUX.1 schnell; Comparar un modelo de edición con otro de generación | Tu objetivo encaja con estos ejemplos: Bocetar una ilustración propia; Editar una región de una imagen de prueba |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
-| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| API de IA | API de IA opcional | Sin clave propia de API de IA en la ruta básica |
+| Coste | El coste depende del proveedor o la ruta | Sin pago a un modelo en la ruta básica |
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🔴 pesado | 🔴 pesado |
 | Licencia | Apache-2.0 | AGPL-3.0 |
-| Instalación | `pip install -e ".[all]"` | `git clone` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## Regla práctica
 
-- Elige **FLUX** si quieres generar imágenes de alta calidad con modelos abiertos.
-- Elige **stable-diffusion-webui** si quieres extensiones y comunidad amplia.
+- Elige **FLUX** si Tu objetivo encaja con estos ejemplos: Prototipar imagen con FLUX.1 schnell; Comparar un modelo de edición con otro de generación.
+- Elige **stable-diffusion-webui** si Tu objetivo encaja con estos ejemplos: Bocetar una ilustración propia; Editar una región de una imagen de prueba.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

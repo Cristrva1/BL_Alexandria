@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No requiere modelo ni API; compilación, almacenamiento y componentes de terceros tienen requisitos propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es una herramienta de revisión y reproducción, no un generador de escenas ni un editor de montaje completo |
+| Coste | Sin pago a un modelo en la ruta básica. No requiere modelo ni API; compilación, almacenamiento y componentes de terceros tienen requisitos propios |
+| Equipo | Preparación según la ruta elegida. Build compatible o herramientas de compilación; secuencia o video de prueba |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Es una herramienta de revisión y reproducción, no un generador de escenas ni un editor de montaje completo
 
 ## Qué puedes hacer con él
 
 Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual.
 
+## Por qué destaca
+
+Usos propuestos: Revisar una entrega de animación; Comparar versiones de un efecto visual.
+
 ## Cómo funciona
 
-La aplicación ofrece las herramientas de su interfaz o CLI después de preparar la distribución y sus dependencias.
+Es una herramienta de revisión y reproducción, no un generador de escenas ni un editor de montaje completo
 
 ## Cómo empezar
 
@@ -39,33 +44,44 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un sistema compatible y una copia de datos o archivos para la primera prueba.
+- Build compatible o herramientas de compilación
+- secuencia o video de prueba
 
-1. Abre las descargas o la web de la aplicación enlazadas por el autor; elige la versión para tu sistema.
-2. Sigue su guía de inicio y configura únicamente la función que necesitas probar.
-3. Abre un archivo o caso pequeño, guarda un resultado y comprueba que puedes recuperarlo antes de importar material real.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
 
-[Instrucciones originales de instalación](https://github.com/AcademySoftwareFoundation/OpenRV/blob/main/README.md)
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://aswf-openrv.readthedocs.io/en/latest/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar OpenRV para mi objetivo y necesito pasos guiados. Lee https://github.com/AcademySoftwareFoundation/OpenRV/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar OpenRV para mi objetivo y necesito pasos guiados. Lee https://aswf-openrv.readthedocs.io/en/latest/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Abre dos versiones de una toma y compara fotogramas en el mismo punto.
+
+**Qué comprobar:** Puedes observar diferencias de imagen sin desalinear el tiempo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual.
+- Revisar una entrega de animación
+- Comparar versiones de un efecto visual
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Reproductor de revisión de video y secuencias de imágenes para comparar tomas y revisar trabajo audiovisual. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Revisar una entrega de animación; Comparar versiones de un efecto visual | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Es una herramienta de revisión y reproducción, no un generador de escenas ni un editor de montaje completo
 
 ## Stack y modelos
 
-- **Stack:** C++, CMakeLists.txt
+- **Stack:** Build compatible o herramientas de compilación; secuencia o video de prueba
 - **Etiquetas:** `edicion` `app` `c`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +91,9 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/AcademySoftwareFoundation/OpenRV/blob/main/README.md)
 

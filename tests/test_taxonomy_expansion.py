@@ -51,11 +51,11 @@ def test_resolved_names_keep_official_hosts_and_independent_access_requirements(
     assert creative["access"]["codex"] == "not_documented"
     assert security["gh"] == "mukul975/Anthropic-Cybersecurity-Skills"
     assert security["access"]["codex"] == "host"
-    assert "independiente" in security["getting_started"]["note"]
+    assert "no un producto oficial de Anthropic" in security["limits"]
     assert not kimi.get("gh") and not kimi.get("github_id")
     assert kimi["repo_url"] == "https://huggingface.co/moonshotai/Kimi-K2.7-Code"
     assert kimi["sources"]["model_revision"] in kimi["getting_started"]["source"]
     assert kimi["access"]["local_model"] == "supported"
-    assert kimi["access"]["hardware"] == "gpu"
+    assert kimi["setup"] == "heavy" and 'infraestructura' in kimi['access']['hardware_note']
     for repo in [creative,security,kimi]:
         assert repo["access"]["source_blob_sha"] == repo["sources"]["readme_blob_sha"]

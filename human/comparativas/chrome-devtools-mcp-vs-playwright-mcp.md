@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Servidor MCP oficial de Chrome que da a los agentes las DevTools: consola, red y rendimiento. | Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright. |
 | ⭐ Estrellas | 56.3k | 39.7k |
-| Elígelo si… | tu agente necesita depurar una web como lo harías en DevTools | quieres que tu agente use un navegador real |
-| Evítalo si… | solo quieres automatizar navegación; mira `playwright-mcp` | necesitas depurar rendimiento y consola; mira `chrome-devtools-mcp` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Diagnosticar una pantalla que falla; Inspeccionar rendimiento de una página propia | Tu objetivo encaja con estos ejemplos: Probar una navegación de tu app; Inspeccionar un formulario de desarrollo |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
 | Coste | Consumo del agente que ya utilizas | Consumo del agente que ya utilizas |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | Apache-2.0 | Apache-2.0 |
-| Instalación | `npx chrome-devtools-mcp@latest` | `npx @playwright/mcp@latest` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **Chrome DevTools MCP** si tu agente necesita depurar una web como lo harías en DevTools.
-- Elige **Playwright MCP** si quieres que tu agente use un navegador real.
+- Elige **Chrome DevTools MCP** si Tu objetivo encaja con estos ejemplos: Diagnosticar una pantalla que falla; Inspeccionar rendimiento de una página propia.
+- Elige **Playwright MCP** si Tu objetivo encaja con estos ejemplos: Probar una navegación de tu app; Inspeccionar un formulario de desarrollo.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

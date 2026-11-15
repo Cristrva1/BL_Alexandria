@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. | Plataforma para intercambio y mejora de rostros en imágenes y video. |
 | ⭐ Estrellas | 98.1k | 30.7k |
-| Elígelo si… | necesitas swap en vivo legítimo con consentimiento | necesitas manipulación facial de calidad con consentimiento |
-| Evítalo si… | no puedes garantizar uso ético/consentimiento o no tienes GPU | no tienes consentimiento de las personas |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Estudiar un efecto facial consentido; Probar un pipeline local de video | Tu objetivo encaja con estos ejemplos: Preparar un efecto facial consentido; Evaluar un flujo local de imagen |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
-| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | El coste depende del proveedor o la ruta |
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🔴 pesado | 🟡 medio |
 | Licencia | AGPL-3.0 | NOASSERTION |
-| Instalación | `git clone` | Sigue el instalador del README (requiere Python, ffmpeg y opcionalmente GPU). |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## Regla práctica
 
-- Elige **Deep-Live-Cam** si necesitas swap en vivo legítimo con consentimiento.
-- Elige **FaceFusion** si necesitas manipulación facial de calidad con consentimiento.
+- Elige **Deep-Live-Cam** si Tu objetivo encaja con estos ejemplos: Estudiar un efecto facial consentido; Probar un pipeline local de video.
+- Elige **FaceFusion** si Tu objetivo encaja con estos ejemplos: Preparar un efecto facial consentido; Evaluar un flujo local de imagen.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

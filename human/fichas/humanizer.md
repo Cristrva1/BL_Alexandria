@@ -2,7 +2,7 @@
 
 # 🧑 Humanizer
 
-> Skill que reescribe texto generado por IA para que suene humano, basada en la guía de Wikipedia sobre señales de escritura IA.
+> Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Usa el modelo o plan del anfitrión; no necesita una API adicional por sí solo |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. Documenta Claude Code, Codex y otros hosts de skills; mejorar estilo no demuestra autoría humana ni garantiza pasar detectores |
+| Coste | Consumo del agente que ya utilizas. Usa el modelo o plan del anfitrión; no necesita una API adicional por sí solo |
+| Equipo | Preparación según la ruta elegida. Agente con skills; texto propio breve |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+Documenta Claude Code, Codex y otros hosts de skills; mejorar estilo no demuestra autoría humana ni garantiza pasar detectores
 
 ## Qué puedes hacer con él
 
-Detecta 26 patrones típicos de la prosa de LLM (contrastes tipo 'no es X, es Y', cierres dramáticos, tríadas forzadas, frases de falsa profundidad, importancia inflada) y reescribe el texto sin cambiar lo que dice. Puede imitar tu estilo si le das una muestra y, sobre un archivo, solo toca la prosa: no el código, los datos ni el frontmatter.
+Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana.
 
 ## Por qué destaca
 
-Parte de una fuente pública (la guía 'Signs of AI writing' de los editores de Wikipedia) y muestra su trabajo: primera reescritura, crítica de lo que aún suena artificial y versión final. No añade datos que no estuvieran en el original.
+Usos propuestos: Mejorar claridad de un correo; Revisar prosa repetitiva.
 
 ## Cómo funciona
 
-El SKILL.md ordena los patrones por fuerza: los cinco primeros justifican un cambio con una sola aparición y los débiles solo cuentan si se acumulan. El agente marca las señales, redacta, contrasta el borrador con los patrones y las afirmaciones originales y entrega.
+Documenta Claude Code, Codex y otros hosts de skills; mejorar estilo no demuestra autoría humana ni garantiza pasar detectores
 
 ## Cómo empezar
 
@@ -43,11 +44,21 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Agente con skills
+- texto propio breve
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+npx skills add blader/humanizer --global --agent codex
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/blader/humanizer/blob/main/README.md)
 
@@ -55,23 +66,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Humanizer para mi objetivo y necesito pasos guiados. Lee https://github.com/blader/humanizer/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Revisa un párrafo y compara la versión propuesta con los hechos y tono del original.
+
+**Qué comprobar:** Puedes aceptar cambios de estilo sin alterar el contenido.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quitar el tono IA de un post o un anuncio de producto
-- Reescribir documentación generada sin perder los datos
-- Ajustar un borrador a tu propia voz con una muestra
+- Mejorar claridad de un correo
+- Revisar prosa repetitiva
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| publicas textos redactados con IA y quieres que se lean como escritos por una persona | quieres reglas de estilo cortas para pegar en un system prompt, con rúbrica propia; mira `stop-slop` |
+| Tu objetivo encaja con estos ejemplos: Mejorar claridad de un correo; Revisar prosa repetitiva | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Sus patrones y ejemplos están pensados para prosa en inglés, y no busca engañar a los detectores de IA, que siguen marcando la mayoría de sus salidas.
+**Limitaciones:** Documenta Claude Code, Codex y otros hosts de skills; mejorar estilo no demuestra autoría humana ni garantiza pasar detectores
 
 ## Stack y modelos
 
-- **Stack:** Markdown, SKILL.md
+- **Stack:** Agente con skills; texto propio breve
 - **Etiquetas:** `skills` `prompts` `docs`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -96,7 +114,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/blader/humanizer/blob/main/README.md)
 

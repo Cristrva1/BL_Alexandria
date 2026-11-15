@@ -3,7 +3,7 @@
 Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
 
 <!-- BL:STATS -->
-**679 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **92 subcategorías**
+**679 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **100 subcategorías**
 <!-- /BL:STATS -->
 
 ---
@@ -17,7 +17,7 @@ Esta biblioteca es un menú curado de repos de IA y automatización, con datos c
 2. **Empieza por `discovery.areas`** si el usuario nombra un campo (frontend, ciberseguridad, audiovisual, trading) o quiere configurar Claude Code, Codex o Antigravity. Cada área tiene subcategorías con `selectors` (`cat`/`subs`), `repos` explícitos y, cuando aplica, `reference_repos` de consulta. La unión por id evita duplicados. Después filtra por `goals`, `routes`, `cat`/`sub`, `tags`, `role`, `setup` y `one`. `pick: true` es una selección editorial, no una garantía de adecuación.
 3. **Desempata** con `alt`: si ya elegiste un repo, **descarta sus `alt`**, porque cumplen la misma función.
 4. **Parte de una receta** (`recipes`) si el usuario quiere un producto completo y no una pieza suelta.
-5. **Solo para finalistas (menos de 8)**, abre su entrada en `INDICE_IA.detalle.json`: `access` separa API, Claude Code, Codex, modelos locales, coste y equipo; `getting_started` trae preparación, pasos y comandos con fuente. Después consulta `desc`, `how`, `choose_if`, `avoid_if`, `limits` y `combines_with`.
+5. **Solo para finalistas (menos de 8)**, abre su entrada en `INDICE_IA.detalle.json`: `access` separa API,Claude Code,Codex,Antigravity,modelos locales,coste y equipo; `getting_started` trae preparación,pasos y entrada con fuente. `first_try` indica acción y resultado observable, `practical_examples` escenarios ilustrativos y `editorial_review` el alcance documental. No confundas revisión de fuentes con instalación o ejecución probada.
 
 **Prioridad de audiencia:** personas sin experiencia técnica que necesitan pasos guiados. Explica términos, ofrece dos o tres opciones y una primera prueba pequeña. En el explorador, empieza por **Guíame**. Para CLI, añade `--route codex`, `--route claude`, `--route local_model` o `--route no_api` cuando la persona especifique acceso. No confundas `--tool` (ayuda para construir) con `--route` (acceso de la herramienta elegida).
 
@@ -73,36 +73,36 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 <!-- BL:AGENT_CATEGORIES -->
 | # | Categoría | Repos | Subcategorías | Archivo |
 |---:|---|---:|---|---|
-| 1 | 🤖 Automatizar procesos y crear herramientas internas | 16 | Motores de workflow y automatización, Ecosistema n8n, Apps internas y bases de datos no-code | `human/categorias/01-automatizaci-n-mensajer-a-crm.md` |
-| 2 | 🧠 Skills, plugins y métodos para agentes | 31 | Catálogos y marketplaces de skills, Metodologías y harness para agentes de código | `human/categorias/02-skills-prompts-gu-as-de-agente.md` |
+| 1 | 🤖 Automatizar procesos y crear herramientas internas | 15 | Motores de workflow y automatización, Ecosistema n8n, Apps internas y bases de datos no-code | `human/categorias/01-automatizaci-n-mensajer-a-crm.md` |
+| 2 | 🧠 Skills, plugins y métodos para agentes | 30 | Catálogos y marketplaces de skills, Metodologías y harness para agentes de código | `human/categorias/02-skills-prompts-gu-as-de-agente.md` |
 | 3 | 🕸️ Construir agentes y coordinar equipos de IA | 34 | Frameworks de agentes en Python, Frameworks en TypeScript y multi-lenguaje, Builders visuales y plataformas de agentes, Simulación, evolución y debate entre modelos | `human/categorias/03-frameworks-orquestaci-n-de-agentes.md` |
 | 4 | 🕷️ Buscar, extraer y monitorear información web | 23 | Crawlers y extracción para IA, Scraping guiado por LLM, Búsqueda, monitoreo y research web, Redes sociales y descarga de medios | `human/categorias/04-scraping-b-squeda-research-web.md` |
 | 5 | 🔌 Conectar herramientas con MCP | 24 | SDKs y frameworks para crear MCP, Servidores MCP destacados, Directorios, clientes y aprendizaje | `human/categorias/05-mcp-conectividad.md` |
 | 6 | 🧬 Memoria, RAG y búsqueda de conocimiento | 23 | Memoria persistente para agentes, RAG y motores de conocimiento, Bases vectoriales y búsqueda semántica | `human/categorias/06-memoria-rag-llm-ops.md` |
-| 7 | 🧑‍💻 Entender código y comprobar su calidad | 15 | Entender y empaquetar código para agentes, Calidad, seguridad y benchmarks de código, CLIs y SDKs de desarrollo | `human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md` |
-| 8 | 🏠 Chats, modelos locales y espacios privados | 28 | Motores para correr modelos en local, Interfaces de chat auto-hospedadas, Workspaces privados y segundos cerebros, NotebookLM: alternativas y clientes | `human/categorias/08-ia-local-modelos-chats-workspaces.md` |
+| 7 | 🧑‍💻 Entender código y comprobar su calidad | 13 | Entender y empaquetar código para agentes, Calidad, seguridad y benchmarks de código, CLIs y SDKs de desarrollo | `human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md` |
+| 8 | 🏠 Chats, modelos locales y espacios privados | 27 | Motores para correr modelos en local, Interfaces de chat auto-hospedadas, Workspaces privados y segundos cerebros, NotebookLM: alternativas y clientes | `human/categorias/08-ia-local-modelos-chats-workspaces.md` |
 | 9 | 🎨 Diseñar y construir interfaces web | 28 | Componentes, iconos y sistemas de diseño, CSS y estilos, Diseño visual, canvas y builders, UI generada con IA y frontends para agentes | `human/categorias/09-dise-o-ui-frontend.md` |
 | 10 | 📊 Dashboards, analítica y mapas | 23 | Analítica web y de producto, BI, dashboards y chat con datos, Librerías de gráficos, Recursos y casos de uso, Inteligencia de fuentes abiertas y mapas, Fotogrametría y mapas desde imágenes | `human/categorias/10-anal-tica-visualizaci-n.md` |
 | 11 | 🖼️ Generar y editar imágenes con IA | 16 | Interfaces para generar imágenes, Modelos, librerías y control, Restauración, upscaling y edición, Suites generativas todo-en-uno | `human/categorias/11-generaci-n-de-imagen-visi-n.md` |
-| 12 | 🎬 Editar, grabar y generar video | 21 | Edición, grabación y subtítulos, Video generativo y pipelines automáticos | `human/categorias/12-audio-voz-video.md` |
+| 12 | 🎬 Editar, grabar y generar video | 17 | Edición, grabación y subtítulos, Video generativo y pipelines automáticos | `human/categorias/12-audio-voz-video.md` |
 | 13 | 📄 PDF, OCR y procesamiento de documentos | 20 | Conversión de documentos para IA, OCR, Herramientas PDF, Gestión y archivo de documentos | `human/categorias/13-documentos-presentaciones.md` |
 | 14 | 📈 Investigar finanzas y mercados | 28 | Agentes de investigación financiera, Modelos y backtesting cuantitativo, Bots y conexiones a exchanges, Ejemplos y aprendizaje | `human/categorias/14-investigar-finanzas-y-mercados.md` |
-| 15 | 🗂️ Organizar notas, archivos y servicios personales | 26 | Notas, bóvedas y conocimiento personal, Sincronización y gestión de archivos, Credenciales y privacidad, Libros, podcasts y bibliotecas personales, Automatización del hogar, Herramientas y organización personal, Aprendizaje asistido | `human/categorias/15-notas-archivos-y-servicios-personales.md` |
-| 16 | 🔍 Analizar software y comprobar su seguridad | 23 | Ingeniería inversa y formatos binarios, Depuración e inspección de procesos, Tráfico, rendimiento y pruebas, Análisis y pruebas con agentes, Protección y verificación de software, Directorios y aprendizaje, Skills de análisis y seguridad | `human/categorias/16-analisis-de-software-y-seguridad.md` |
-| 17 | 🤖 WhatsApp, mensajería y chatbots | 11 | WhatsApp y mensajería, Chatbots y asistentes conversacionales | `human/categorias/17-mensajeria-chatbots.md` |
-| 18 | 🤖 CRM, ventas y marketing | 12 | CRM, ERP y soporte al cliente, Email, marketing y notificaciones | `human/categorias/18-crm-ventas-marketing.md` |
+| 15 | 🗂️ Organizar notas, archivos y servicios personales | 27 | Notas, bóvedas y conocimiento personal, Sincronización y gestión de archivos, Credenciales y privacidad, Libros, podcasts y bibliotecas personales, Automatización del hogar, Herramientas y organización personal, Aprendizaje asistido | `human/categorias/15-notas-archivos-y-servicios-personales.md` |
+| 16 | 🔍 Analizar software y comprobar su seguridad | 26 | Ingeniería inversa y formatos binarios, Depuración e inspección de procesos, Tráfico, rendimiento y pruebas, Análisis y pruebas con agentes, Protección y verificación de software, Directorios y aprendizaje, Skills de análisis y seguridad | `human/categorias/16-analisis-de-software-y-seguridad.md` |
+| 17 | 🤖 WhatsApp, mensajería y chatbots | 11 | WhatsApp y mensajería, Chatbots y asistentes conversacionales, Comunidades,chat y llamadas | `human/categorias/17-mensajeria-chatbots.md` |
+| 18 | 🤖 CRM, ventas y marketing | 13 | CRM, ERP y soporte al cliente, Email, marketing y notificaciones, Reservas y programación de citas | `human/categorias/18-crm-ventas-marketing.md` |
 | 19 | 🧠 Aprender IA y escribir mejores prompts | 32 | Prompts y prompt engineering, Guías, cursos y cookbooks, Aprender LLMs desde cero | `human/categorias/19-aprender-ia-prompts.md` |
 | 20 | 🕸️ Programar con agentes de código | 22 | Agentes de terminal, Editores y extensiones de código, Agentes para issues y tareas de ingeniería, Interfaces para gestionar sesiones, Desarrollo móvil y de juegos | `human/categorias/20-agentes-de-codigo.md` |
 | 21 | 🕸️ Asistentes e investigación con agentes | 18 | Asistentes autónomos y equipos de agentes, Agentes de research autónomo | `human/categorias/21-asistentes-investigacion.md` |
 | 22 | 🕸️ Infraestructura, despliegue y herramientas para agentes | 18 | Infraestructura: sandboxes, herramientas y protocolos, Dominios y recursos de infraestructura, Redes y transporte, Alojamiento y backend | `human/categorias/22-infraestructura-despliegue.md` |
 | 23 | 🧬 Operar, evaluar y medir modelos de IA | 19 | Serving y gateways de LLM, Ahorro de contexto y tokens, Observabilidad, evaluación y guardrails | `human/categorias/23-operacion-evaluacion-modelos.md` |
-| 24 | 🧑‍💻 Modelos abiertos y entrenamiento | 15 | Entrenar y afinar modelos, Modelos abiertos y fundacionales | `human/categorias/24-modelos-entrenamiento.md` |
+| 24 | 🧑‍💻 Modelos abiertos y entrenamiento | 14 | Entrenar y afinar modelos, Modelos abiertos y fundacionales | `human/categorias/24-modelos-entrenamiento.md` |
 | 25 | 🧑‍💻 Procesar datos y trabajar con notebooks | 11 | Datos y notebooks, Apps de datos en Python | `human/categorias/25-datos-notebooks.md` |
-| 26 | 🎨 Animación, gráficos y creación 3D | 17 | Animación y 3D, Creación, renderizado y animación 3D | `human/categorias/26-animacion-graficos-3d.md` |
+| 26 | 🎨 Animación, gráficos y creación 3D | 19 | Animación y 3D, Creación, renderizado y animación 3D, Física y simulación | `human/categorias/26-animacion-graficos-3d.md` |
 | 27 | 🎨 Skills de diseño, contenido y especialidades | 36 | Skills de diseño para agentes, Escritura y calidad de texto, Skills de dominio: marketing, SEO y negocio | `human/categorias/27-skills-especializadas.md` |
 | 28 | 🖼️ Visión artificial, rostros y percepción | 21 | Rostros y retratos animados, Visión por computador, Sensores y percepción espacial | `human/categorias/28-vision-percepcion.md` |
 | 29 | 🎬 Audio, transcripción, voz y música | 29 | Transcripción (voz a texto), Síntesis y clonación de voz, Agentes de voz en tiempo real, Música y audio generativo, Procesamiento y limpieza de audio | `human/categorias/29-audio-voz-musica.md` |
-| 30 | 🎬 Video con código y agentes creativos | 19 | Motores de video y escenas por código, Skills y métodos de producción audiovisual, Aplicaciones y flujos de producción | `human/categorias/30-video-codigo-agentes.md` |
+| 30 | 🎬 Video con código y agentes creativos | 22 | Motores de video y escenas por código, Skills y métodos de producción audiovisual, Aplicaciones y flujos de producción | `human/categorias/30-video-codigo-agentes.md` |
 | 31 | 📄 Presentaciones, diagramas y explicación visual | 8 | Presentaciones, Diagramas y documentación | `human/categorias/31-presentaciones-diagramas.md` |
 | 32 | 🕷️ Navegadores y automatización web | 12 | Automatización y pruebas por código, Herramientas de navegación para agentes, Navegadores y servidores de ejecución, Directorios y recursos de navegador | `human/categorias/32-navegadores-automatizacion-web.md` |
 <!-- /BL:AGENT_CATEGORIES -->
@@ -111,7 +111,7 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 
 <!-- BL:RECIPES -->
 - [💬 Bot de WhatsApp con IA](human/playbooks/bot-de-whatsapp-con-ia.md) — `evolution-api`, `n8n`, `n8n-mcp`, `n8n-skills`, `chatwoot`, `novu`
-- [🎬 Pipeline de Reels / video corto](human/playbooks/pipeline-de-reels-video-corto.md) — `whisperx`, `chatterbox`, `comfyui`, `real-esrgan`, `remotion`, `ffmpeg`, `moneyprinterturbo`
+- [🎬 Pipeline de Reels / video corto](human/playbooks/pipeline-de-reels-video-corto.md) — `whisperx`, `kokoro`, `comfyui`, `real-esrgan`, `remotion`, `ffmpeg`, `moneyprinterturbo`
 - [🔎 Agente de research profundo](human/playbooks/agente-de-research-profundo.md) — `gpt-researcher`, `searxng`, `crawl4ai`, `browser-use`, `markitdown`, `langfuse`
 - [🏠 Workspace privado local soberano](human/playbooks/workspace-privado-local-soberano.md) — `ollama`, `odysseus`, `open-notebook`, `mem0`, `searxng`
 - [🧠 Análisis de repos grandes](human/playbooks/analisis-de-repos-grandes.md) — `repomix`, `codegraph`, `gitnexus`, `graphify`, `deepwiki-open`, `claude-code`
@@ -135,7 +135,7 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 - **`setup`**: `easy` 🟢 · `medium` 🟡 · `heavy` 🔴 (GPU o varios servicios)
 - **`mcp`**: `true` si expone o consume Model Context Protocol
 - **`lib`**: estado del clon local, no novedad. La carpeta histórica de clones fue eliminada por el usuario; no recrearla para consultar la biblioteca.
-- **`goals` / `routes`**: tareas y accesos documentados. `no_api` puede incluir una ruta local u opcional sin API de IA; no promete ausencia de tarifas de otros servicios.
+- **`goals` / `routes`**: tareas y accesos documentados. `no_api` indica una ruta sin clave propia de API de IA; puede usar el agente anfitrión o un servicio online y no promete funcionamiento offline ni ausencia de otras tarifas.
 - **`added_at`**: primera incorporación al índice según Git; no fecha de lanzamiento.
 - **`getting_started.audience`**: `ready_app`, `agent`, `reading`, `developer` o `setup`; indica la preparación que cabe esperar, sin prometer instalación probada.
 - **`alt`**: sustitutos (elige uno) · **`combines_with`** (en detalle): complementarios (úsalos juntos)
@@ -158,5 +158,7 @@ La web pública es [Alexandría](https://cristrva1.github.io/BL_Alexandria/). Gi
 Para agregar repos con datos completos: `discover` → `analyze --new` → `enrich --new --auto-merge` (borradores revisables en `data/drafts/`) → `guide build`. La lógica de inferencia está en `src/repo_intelligence/analysis/curation.py`.
 
 Ese flujo sirve cuando existe un clon. Para nuevas stars sin clones, usa fuentes de GitHub y el proceso de [mantenimiento editorial](human/mantenimiento.md). `scripts/audit_sources.py` guarda README y evidencias para revisar; no confirma requisitos a partir de keywords. Los scripts `curate_access.py` y `curate_discovery.py` son migraciones editoriales fechadas y requieren revisar sus decisiones antes de reutilizarlas. Un perfil nuevo conserva incertidumbre hasta disponer de evidencia.
+
+La revisión individual de los 679 proyectos está en `curation/review-679-2026-11-14/` y `reports/review-679-2026-11-14.json`. `scripts/apply_review_679.py --apply` exige cobertura total y las instantáneas locales de esa revisión; es una migración fechada,no un auditor automático de proyectos nuevos. Conserva la incertidumbre y el SHA anterior al actualizar una fuente. No publiques el documento privado de importación ni las instantáneas completas de README.
 
 Al editar a mano una entrada, mantén: `one` de 60 a 175 caracteres en español claro; `alt` simétrico (si A lista a B, B lista a A) y como máximo 5; ids de `alt` y `combines_with` que existan en el índice. Las pruebas lo comprueban.

@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. El SDK utiliza Claude Code. Comprueba su autenticación: una sesión del plan y una API key son rutas distintas. |
-| Claude Code | Acceso oficial con sesión del plan |
+| API de IA | API de IA necesaria. La guía oficial del SDK prescribe autenticación API; no asumas que una suscripción personal incluye tu producto o agentes de terceros |
+| Claude Code | Integración documentada por el proyecto |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | El coste depende del proveedor o la ruta. El uso consume el acceso de Claude configurado: límites del plan o créditos y facturación de API. El paquete del SDK no incluye una cuenta ni uso ilimitado. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Integra el motor Claude Code; la guía limita ofrecer login o límites claude.ai a terceros sin autorización previa |
+| Coste | Consumo de APIs o servicios. La guía oficial del SDK prescribe autenticación API; no asumas que una suscripción personal incluye tu producto o agentes de terceros |
+| Equipo | Preparación según la ruta elegida. Python; credenciales API de Anthropic o proveedor admitido; directorio de prueba |
 
-La documentación oficial distingue el uso del SDK con un plan compatible del acceso por API y sus límites.
+Integra el motor Claude Code; la guía limita ofrecer login o límites claude.ai a terceros sin autorización previa
 
 ## Qué puedes hacer con él
 
 SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia.
 
+## Por qué destaca
+
+Usos propuestos: Integrar revisión de archivos en una aplicación; Conservar sesiones de un agente propio.
+
 ## Cómo funciona
 
-El desarrollador adapta sus ejemplos y componentes dentro de un proyecto con sus propios datos y servicios.
+Integra el motor Claude Code; la guía limita ofrecer login o límites claude.ai a terceros sin autorización previa
 
 ## Cómo empezar
 
@@ -39,19 +44,22 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
+- Python
+- credenciales API de Anthropic o proveedor admitido
+- directorio de prueba
 
-1. Prepara un entorno de Python compatible e instala el SDK; el README indica que incluye la CLI de Claude Code.
-2. Elige la autenticación admitida y verifica si utilizarás sesión del plan o acceso de API.
-3. Ejecuta una consulta mínima del ejemplo y revisa la salida antes de habilitar más herramientas.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-**Comando de entrada documentado:**
+**Entrada documentada (bash):**
 
-```shell
+```
 pip install claude-agent-sdk
 ```
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/anthropics/claude-agent-sdk-python/blob/main/README.md)
 
@@ -59,21 +67,30 @@ Comando de entrada seleccionado y presente en la fuente revisada; consulta la in
 
 > Quiero usar claude-agent-sdk-python para mi objetivo y necesito pasos guiados. Lee https://github.com/anthropics/claude-agent-sdk-python/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Configura un agente con permiso de lectura y pídele localizar un fallo en un archivo ficticio.
+
+**Qué comprobar:** Puedes ver herramientas llamadas y contrastar el fallo antes de permitir ediciones.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia.
+- Integrar revisión de archivos en una aplicación
+- Conservar sesiones de un agente propio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| Tu objetivo encaja con estos ejemplos: Integrar revisión de archivos en una aplicación; Conservar sesiones de un agente propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Integra el motor Claude Code; la guía limita ofrecer login o límites claude.ai a terceros sin autorización previa
 
 ## Stack y modelos
 
-- **Stack:** Python, pyproject.toml
+- **Stack:** Python; credenciales API de Anthropic o proveedor admitido; directorio de prueba
 - **Etiquetas:** `py` `framework` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,10 +100,12 @@ Comando de entrada seleccionado y presente en la fuente revisada; consulta la in
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/anthropics/claude-agent-sdk-python/blob/main/README.md)
-- [Fuente 2](https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan)
+- [Fuente 2](https://code.claude.com/docs/en/agent-sdk/quickstart)
 
 ---
 

@@ -16,42 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| API de IA | Depende de la ruta elegida. El SDK no incluye modelos ni créditos; proveedores, AI Gateway y alojamiento tienen costes separados |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Compatibilidad por confirmar |
+| Antigravity | Compatibilidad por confirmar |
+| Modelos locales | Modelo local no documentado. El README ofrece una skill para Claude Code; instalarla no paga la inferencia de la aplicación |
+| Coste | El coste depende del proveedor o la ruta. El SDK no incluye modelos ni créditos; proveedores, AI Gateway y alojamiento tienen costes separados |
+| Equipo | Preparación según la ruta elegida. Node.js; proyecto TypeScript; paquete del proveedor |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El README ofrece una skill para Claude Code; instalarla no paga la inferencia de la aplicación
 
 ## Qué puedes hacer con él
 
-Unifica la llamada a decenas de proveedores con una API común y trae hooks de React para chat con streaming. Es la base de muchos frameworks de agentes en TS.
+Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat.
 
 ## Por qué destaca
 
-API de proveedores unificada y hooks de UI muy usados; mantenida por Vercel.
+Usos propuestos: Construir una interfaz de chat; Extraer datos tipados de un mensaje.
 
 ## Cómo funciona
 
-Funciones como generateText y streamText llaman al proveedor elegido; los hooks useChat conectan el streaming con la UI.
+El README ofrece una skill para Claude Code; instalarla no paga la inferencia de la aplicación
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Node.js
+- proyecto TypeScript
+- paquete del proveedor
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (shell):**
+
+```
 npm install ai
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/vercel/ai/blob/main/README.md)
 
@@ -59,21 +67,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar AI SDK (Vercel) para mi objetivo y necesito pasos guiados. Lee https://github.com/vercel/ai/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Añade una respuesta de chat en streaming y una herramienta de consulta de estado.
+
+**Qué comprobar:** El texto llega por partes y la llamada devuelve el estado ficticio.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Chat con streaming en Next.js
-- Llamadas a herramientas tipadas
-- Cambiar de proveedor sin reescribir
+- Construir una interfaz de chat
+- Extraer datos tipados de un mensaje
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| construyes una app web con IA en TypeScript | necesitas agentes complejos con memoria y workflows; mira `mastra` |
+| Tu objetivo encaja con estos ejemplos: Construir una interfaz de chat; Extraer datos tipados de un mensaje | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El README ofrece una skill para Claude Code; instalarla no paga la inferencia de la aplicación
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, React, Next.js
+- **Stack:** Node.js; proyecto TypeScript; paquete del proveedor
 - **Etiquetas:** `agents` `ui` `typescript` `react`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -99,7 +116,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/vercel/ai/blob/main/README.md)
 

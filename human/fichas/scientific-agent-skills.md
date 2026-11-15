@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias. |
+| API de IA | API de IA opcional. El agente, las bases de datos, servicios y cómputo de cada workflow tienen condiciones propias |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | Modelo local no documentado. Ahora se llama Scientific Agent Skills y admite Claude Code, Codex y Antigravity; la biblioteca no valida por sí sola conclusiones científicas ni autoriza operar equipos físicos |
+| Coste | El coste depende del proveedor o la ruta. El agente, las bases de datos, servicios y cómputo de cada workflow tienen condiciones propias |
+| Equipo | Preparación según la ruta elegida. Agente compatible; herramienta y skill elegidas; datos no sensibles de muestra |
 
-Consume el acceso y los límites del agente donde lo configures. No incluye servicios externos de generación, datos o alojamiento.
+Ahora se llama Scientific Agent Skills y admite Claude Code, Codex y Antigravity; la biblioteca no valida por sí sola conclusiones científicas ni autoriza operar equipos físicos
 
 ## Qué puedes hacer con él
 
 Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio.
 
+## Por qué destaca
+
+Usos propuestos: Explorar un dataset científico; Preparar una revisión bibliográfica.
+
 ## Cómo funciona
 
-El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.
+Ahora se llama Scientific Agent Skills y admite Claude Code, Codex y Antigravity; la biblioteca no valida por sí sola conclusiones científicas ni autoriza operar equipos físicos
 
 ## Cómo empezar
 
@@ -39,11 +44,22 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- El agente compatible indicado por el proyecto y acceso activo al modelo de ese agente.
+- Agente compatible
+- herramienta y skill elegidas
+- datos no sensibles de muestra
 
-1. Abre la instalación del README y elige la ruta para el agente que utilizas.
-2. Añade la skill o el plugin concreto; prepara los programas y servicios que indique su documentación.
-3. Pide una primera tarea pequeña sobre archivos de prueba y comprueba qué herramientas y cuentas activa.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+npx skills add K-Dense-AI/scientific-agent-skills
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/README.md)
 
@@ -51,21 +67,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar scientific-agent-skills para mi objetivo y necesito pasos guiados. Lee https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Elige una skill de análisis y verifica dependencias y fuentes con un dataset educativo.
+
+**Qué comprobar:** Puedes reproducir un resultado pequeño y revisar las referencias.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio.
+- Explorar un dataset científico
+- Preparar una revisión bibliográfica
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio. | necesitas un producto autónomo y esta pieza requiere un anfitrión compatible |
+| Tu objetivo encaja con estos ejemplos: Explorar un dataset científico; Preparar una revisión bibliográfica | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Ahora se llama Scientific Agent Skills y admite Claude Code, Codex y Antigravity; la biblioteca no valida por sí sola conclusiones científicas ni autoriza operar equipos físicos
 
 ## Stack y modelos
 
-- **Stack:** Python, pyproject.toml
+- **Stack:** Agente compatible; herramienta y skill elegidas; datos no sensibles de muestra
 - **Etiquetas:** `dominio` `skill` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +101,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/README.md)
 

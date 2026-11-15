@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La guía pública es consultable sin API; los cursos de Academy y el modelo donde pruebes prompts tienen sus propias condiciones |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es una referencia y no un programa que se instala; los resultados de un modelo no garantizan el mismo resultado en otro |
+| Coste | Sin pago a un modelo en la ruta básica. La guía pública es consultable sin API; los cursos de Academy y el modelo donde pruebes prompts tienen sus propias condiciones |
+| Equipo | Preparación según la ruta elegida. Navegador; pregunta de ejemplo |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es una referencia y no un programa que se instala; los resultados de un modelo no garantizan el mismo resultado en otro
 
 ## Qué puedes hacer con él
 
-Explica técnicas de prompting, riesgos y aplicaciones con ejemplos y referencias a papers. Disponible en varios idiomas, incluido el español.
+Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes.
 
 ## Por qué destaca
 
-Una de las guías más citadas del tema, mantenida y actualizada con las técnicas nuevas.
+Usos propuestos: Aprender a pedir un resumen estructurado; Comparar técnicas de prompting antes de elegir una.
 
 ## Cómo funciona
 
-Sitio de documentación con lecciones, notebooks y lista de papers.
+Es una referencia y no un programa que se instala; los resultados de un modelo no garantizan el mismo resultado en otro
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- pregunta de ejemplo
+
+1. Lee la sección de ejemplos y reformula una petición de resumen indicando formato y audiencia.
+2. Comprueba: Puedes explicar qué información añadiste y por qué.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/README.md)
 
@@ -51,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Prompt Engineering Guide para mi objetivo y necesito pasos guiados. Lee https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Lee la sección de ejemplos y reformula una petición de resumen indicando formato y audiencia.
+
+**Qué comprobar:** Puedes explicar qué información añadiste y por qué.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Consultar una técnica concreta
-- Preparar formación interna
-- Encontrar papers de referencia
+- Aprender a pedir un resumen estructurado
+- Comparar técnicas de prompting antes de elegir una
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres una referencia amplia de técnicas de prompting | prefieres ejercicios prácticos con corrección; mira `prompt-eng-tutorial` |
+| Tu objetivo encaja con estos ejemplos: Aprender a pedir un resumen estructurado; Comparar técnicas de prompting antes de elegir una | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Es una referencia y no un programa que se instala; los resultados de un modelo no garantizan el mismo resultado en otro
 
 ## Stack y modelos
 
-- **Stack:** MDX, Next.js, Jupyter
+- **Stack:** Navegador; pregunta de ejemplo
 - **Etiquetas:** `learning` `prompts` `rag`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -88,7 +104,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/README.md)
 

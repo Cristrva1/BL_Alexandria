@@ -4,22 +4,22 @@
 
 | | [LLaMA-Factory](../fichas/llama-factory.md) | [Unsloth](../fichas/unsloth.md) |
 |---|---|---|
-| Qué hace | Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código. | Fine-tuning y ejecución local de LLM hasta 2 veces más rápido y con mucha menos memoria, ahora con UI. |
+| Qué hace | Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código. | App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcionales. |
 | ⭐ Estrellas | 76k | 79.5k |
-| Elígelo si… | quieres muchas técnicas de fine-tuning con UI | quieres afinar un LLM con pocos recursos |
-| Evítalo si… | buscas la opción más eficiente en memoria; mira `unsloth` | necesitas muchas técnicas y una UI de entrenamiento; mira `llama-factory` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Ajustar un modelo con ejemplos propios; Comparar un adaptador antes de exportarlo | Tu objetivo encaja con estos ejemplos: Probar inferencia local; Preparar un ajuste fino pequeño |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
-| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | API de IA opcional |
+| Coste | Sin pago a un modelo en la ruta básica | El coste depende del proveedor o la ruta |
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | Apache-2.0 | Apache-2.0 |
-| Instalación | `git clone https://github.com/hiyouga/LlamaFactory && pip install -e ".[torch,metrics]"` | `pip install unsloth` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **LLaMA-Factory** si quieres muchas técnicas de fine-tuning con UI.
-- Elige **Unsloth** si quieres afinar un LLM con pocos recursos.
+- Elige **LLaMA-Factory** si Tu objetivo encaja con estos ejemplos: Ajustar un modelo con ejemplos propios; Comparar un adaptador antes de exportarlo.
+- Elige **Unsloth** si Tu objetivo encaja con estos ejemplos: Probar inferencia local; Preparar un ajuste fino pequeño.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

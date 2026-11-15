@@ -12,10 +12,10 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 | Repo | Qué hace | Acceso básico |
 |---|---|---|
-| [whisper.cpp](../fichas/whisper-cpp.md) | Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. | Sin API de IA en la ruta básica |
-| [Kokoro](../fichas/kokoro.md) | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. | Sin API de IA en la ruta básica |
-| [Pipecat](../fichas/pipecat.md) | Framework open source para agentes de voz y apps multimodales en tiempo real. | Depende de la ruta elegida |
-| [AudioCraft](../fichas/audiocraft.md) | Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. | Sin API de IA en la ruta básica |
+| [whisper.cpp](../fichas/whisper-cpp.md) | Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. | Sin clave propia de API de IA en la ruta básica |
+| [Kokoro](../fichas/kokoro.md) | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. | Sin clave propia de API de IA en la ruta básica |
+| [Pipecat](../fichas/pipecat.md) | Framework open source para agentes de voz y apps multimodales en tiempo real. | API de IA opcional |
+| [AudioCraft](../fichas/audiocraft.md) | Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. | Sin clave propia de API de IA en la ruta básica |
 
 ## Secciones
 
@@ -29,55 +29,55 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [whisper.cpp](../fichas/whisper-cpp.md) | Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. | quieres transcribir en local sin GPU | Sin API de IA en la ruta básica |
-| [whisper](../fichas/whisper.md) | Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. | quieres la referencia robusta y no te obsesiona la latencia | Sin API de IA en la ruta básica |
-| [faster-whisper](../fichas/faster-whisper.md) | Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. | el rendimiento, la memoria o el coste de GPU importan | Sin API de IA en la ruta básica |
-| [whisperX](../fichas/whisperx.md) | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. | necesitas subtítulos precisos o diarización | Sin API de IA en la ruta básica |
-| [NVIDIA NeMo Speech](../fichas/nemo.md) | Framework de NVIDIA para entrenar y usar modelos de voz: reconocimiento, síntesis y más. | necesitas ASR de máxima precisión y tienes GPU | Sin API de IA en la ruta básica |
+| [whisper.cpp](../fichas/whisper-cpp.md) | Port de Whisper de OpenAI en C/C++ para transcribir audio rápido en CPU, Mac y móviles. | Tu objetivo encaja con estos ejemplos: Transcribir una nota offline; Preparar texto base para subtítulos | Sin clave propia de API de IA en la ruta básica |
+| [whisper](../fichas/whisper.md) | Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. | Tu objetivo encaja con estos ejemplos: Preparar una transcripción local; Traducir habla al inglés como borrador | Sin clave propia de API de IA en la ruta básica |
+| [faster-whisper](../fichas/faster-whisper.md) | Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. | Tu objetivo encaja con estos ejemplos: Transcribir lotes pequeños; Comparar CPU con GPU | Sin clave propia de API de IA en la ruta básica |
+| [whisperX](../fichas/whisperx.md) | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. | Tu objetivo encaja con estos ejemplos: Preparar subtítulos por palabra; Separar intervenciones de una entrevista | Sin clave propia de API de IA en la ruta básica |
+| [NeMo Speech](../fichas/nemo.md) | Framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento. | Tu objetivo encaja con estos ejemplos: Estudiar modelos de voz de NVIDIA; Preparar un experimento ASR | Sin clave propia de API de IA en la ruta básica |
 
 ## Síntesis y clonación de voz
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [Kokoro](../fichas/kokoro.md) | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. | quieres TTS ligero, rápido y con licencia permisiva | Sin API de IA en la ruta básica |
-| [OmniVoice-Studio](../fichas/omnivoice-studio.md) | Alternativa local y open source a ElevenLabs: clonación, diseño y conversión de voz en una app. | quieres suite de voz completa local (dictado + clonación + dubbing) | Sin API de IA en la ruta básica |
-| [GPT-SoVITS](../fichas/gpt-sovits.md) | Clonación de voz y TTS con solo un minuto de audio, con interfaz web para entrenar. | quieres entrenar una voz con pocos datos | Sin API de IA en la ruta básica |
-| [VibeVoice](../fichas/vibevoice.md) | Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio. | quieres generar podcasts o diálogos largos | Sin API de IA en la ruta básica |
-| [TTS](../fichas/tts.md) | Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz. | quieres flexibilidad y varios modelos en una librería | Sin API de IA en la ruta básica |
-| [VoxCPM](../fichas/voxcpm.md) | Modelo de texto a voz sin tokenizador que clona voces con naturalidad y expresividad alta. | quieres voz muy natural o clonada y tienes GPU | Sin API de IA en la ruta básica |
-| [RVC WebUI](../fichas/rvc.md) | Conversión de voz: entrena un modelo con menos de 10 minutos de audio y transforma una voz en otra. | quieres convertir una voz grabada en otra | Sin API de IA en la ruta básica |
-| [Fish Speech](../fichas/fish-speech.md) | Sistema de texto a voz open source de alta calidad con clonación de voz multilingüe. | buscas TTS de alta calidad con clonación | Sin API de IA en la ruta básica |
-| [Chatterbox](../fichas/chatterbox.md) | Modelo de texto a voz open source de Resemble AI con clonación de voz y control de emoción. | quieres clonar voces con calidad alta y licencia libre | Sin API de IA en la ruta básica |
-| [IndexTTS](../fichas/index-tts.md) | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. | necesitas controlar duración y emoción de la voz | Sin API de IA en la ruta básica |
-| [CosyVoice](../fichas/cosyvoice.md) | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. | necesitas TTS multilingüe en streaming | Sin API de IA en la ruta básica |
-| [supertonic](../fichas/supertonic.md) | Motor de texto a voz que ofrece modelos y ejemplos para sintetizar audio en dispositivos y navegadores compatibles. | quieres voz local en tiempo real y sin nube | Sin API de IA en la ruta básica |
-| [edge-tts](../fichas/edge-tts.md) | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | quieres generar narración sin instalar un modelo de voz local | Sin API de IA en la ruta básica |
-| [MeloTTS](../fichas/melotts.md) | Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles. | buscas esta función: Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles. | Sin API de IA en la ruta básica |
-| [LuxTTS](../fichas/luxtts.md) | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. | necesitas TTS con clonación muy rápido | Sin API de IA en la ruta básica |
+| [Kokoro](../fichas/kokoro.md) | Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. | Tu objetivo encaja con estos ejemplos: Narrar una nota propia; Probar una voz para una demo | Sin clave propia de API de IA en la ruta básica |
+| [VoiceStudio](../fichas/omnivoice-studio.md) | App local de voz con modelos descargables,edición AGPL y una oferta comercial separada. | Tu objetivo encaja con estos ejemplos: Preparar una narración local; Probar transcripción o doblaje de material propio | Sin clave propia de API de IA en la ruta básica |
+| [GPT-SoVITS](../fichas/gpt-sovits.md) | Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos. | Tu objetivo encaja con estos ejemplos: Prototipar una voz para contenido propio; Estudiar adaptación con pocos ejemplos | Sin clave propia de API de IA en la ruta básica |
+| [VibeVoice](../fichas/vibevoice.md) | Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio. | Tu objetivo encaja con estos ejemplos: Estudiar transcripción por hablantes; Probar generación de voz | Sin clave propia de API de IA en la ruta básica |
+| [TTS](../fichas/tts.md) | Toolkit open-source de Coqui para síntesis de voz local y multilingüe, con decenas de modelos preentrenados y clonación de voz. | Tu objetivo encaja con estos ejemplos: Estudiar síntesis de voz local; Comparar modelos multilingües | Sin clave propia de API de IA en la ruta básica |
+| [VoxCPM](../fichas/voxcpm.md) | VoxCPM2: modelos y herramientas locales de TTS multilingüe,diseño y adaptación de voz. | Tu objetivo encaja con estos ejemplos: Preparar narración local; Explorar diseño de voz consentido | Sin clave propia de API de IA en la ruta básica |
+| [RVC WebUI](../fichas/rvc.md) | Interfaz y herramientas para convertir una grabación a otra voz mediante modelos locales. | Tu objetivo encaja con estos ejemplos: Probar un efecto de voz consentido; Estudiar conversión frente a TTS | Sin clave propia de API de IA en la ruta básica |
+| [Fish Speech](../fichas/fish-speech.md) | Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante. | Tu objetivo encaja con estos ejemplos: Estudiar generación expresiva; Preparar una prueba de voz multilingüe | Sin clave propia de API de IA en la ruta básica |
+| [Chatterbox](../fichas/chatterbox.md) | Archivo de investigación TTS retirado y sin mantenimiento según su README desde agosto de 2026. | Tu objetivo encaja con estos ejemplos: Estudiar un modelo TTS histórico; Comparar generación expresiva en investigación | Sin clave propia de API de IA en la ruta básica |
+| [IndexTTS](../fichas/index-tts.md) | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. | Tu objetivo encaja con estos ejemplos: Prototipar narración con duración controlada; Estudiar expresión de voz | Sin clave propia de API de IA en la ruta básica |
+| [CosyVoice](../fichas/cosyvoice.md) | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. | Tu objetivo encaja con estos ejemplos: Explorar síntesis multilingüe; Estudiar streaming de voz | Sin clave propia de API de IA en la ruta básica |
+| [supertonic](../fichas/supertonic.md) | Archivo de TTS local ONNX; desarrollo y soporte terminados,con licencias separadas de código y pesos. | Tu objetivo encaja con estos ejemplos: Reproducir una narración local; Estudiar TTS ONNX en dispositivo | Sin clave propia de API de IA en la ruta básica |
+| [edge-tts](../fichas/edge-tts.md) | Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. | Tu objetivo encaja con estos ejemplos: Preparar una voz de prueba online; Explorar voces disponibles | Sin clave propia de API de IA en la ruta básica |
+| [MeloTTS](../fichas/melotts.md) | Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles. | Tu objetivo encaja con estos ejemplos: Preparar una narración local; Comparar idiomas de una demo | Sin clave propia de API de IA en la ruta básica |
+| [LuxTTS](../fichas/luxtts.md) | Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. | Tu objetivo encaja con estos ejemplos: Preparar una narración local; Explorar adaptación de voz consentida | Sin clave propia de API de IA en la ruta básica |
 
 ## Agentes de voz en tiempo real
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [Pipecat](../fichas/pipecat.md) | Framework open source para agentes de voz y apps multimodales en tiempo real. | construyes un agente de voz en Python | Depende de la ruta elegida |
-| [LiveKit Agents](../fichas/livekit-agents.md) | Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit. | necesitas agentes de voz escalables con WebRTC | Depende de la ruta elegida |
-| [dograh](../fichas/dograh.md) | Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables. | buscas esta función: Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables. | API de IA opcional |
+| [Pipecat](../fichas/pipecat.md) | Framework open source para agentes de voz y apps multimodales en tiempo real. | Tu objetivo encaja con estos ejemplos: Prototipar un agente de voz; Comparar combinaciones STT/LLM/TTS | API de IA opcional |
+| [LiveKit Agents](../fichas/livekit-agents.md) | Framework para agentes de voz y video en tiempo real sobre la infraestructura WebRTC de LiveKit. | Tu objetivo encaja con estos ejemplos: Construir un asistente de voz; Evaluar conversación en tiempo real | API de IA opcional |
+| [dograh](../fichas/dograh.md) | Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables. | Tu objetivo encaja con estos ejemplos: Diseñar un agente de voz; Editar un workflow mediante MCP | Depende de la ruta elegida |
 
 ## Música y audio generativo
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [AudioCraft](../fichas/audiocraft.md) | Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. | necesitas generar música o efectos de sonido por texto en local, o investigar modelos de audio | Sin API de IA en la ruta básica |
-| [ACE-Step-1.5](../fichas/ace-step-1-5.md) | Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. | necesitas experimentar con generación musical en tu propio equipo | Sin API de IA en la ruta básica |
-| [Music-Megathread](../fichas/music-megathread.md) | Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música. | buscas recursos musicales y quieres comparar opciones desde una lista | Sin API de IA en la ruta básica |
+| [AudioCraft](../fichas/audiocraft.md) | Librería PyTorch de Meta para generar música y efectos de sonido desde texto, con MusicGen, AudioGen y el códec EnCodec. | Tu objetivo encaja con estos ejemplos: Explorar generación de música; Estudiar sonidos a partir de texto | Sin clave propia de API de IA en la ruta básica |
+| [ACE-Step-1.5](../fichas/ace-step-1-5.md) | Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. | Tu objetivo encaja con estos ejemplos: Explorar una base musical de prueba; Comparar variantes de generación local | Sin clave propia de API de IA en la ruta básica |
+| [Music-Megathread](../fichas/music-megathread.md) | Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música. | Tu objetivo encaja con estos ejemplos: Encontrar un reproductor; Explorar herramientas de audio | Sin clave propia de API de IA en la ruta básica |
 
 ## Procesamiento y limpieza de audio
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [rnnoise](../fichas/rnnoise.md) | Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente. | buscas esta función: Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente. | Sin API de IA en la ruta básica |
-| [earshot](../fichas/earshot.md) | Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP. | buscas esta función: Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP. | API de IA opcional |
-| [rubberband](../fichas/rubberband.md) | Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas. | buscas esta función: Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas. | Sin API de IA en la ruta básica |
+| [rnnoise](../fichas/rnnoise.md) | Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente. | Tu objetivo encaja con estos ejemplos: Reducir ruido de una grabación; Estudiar una red de supresión de ruido | Sin clave propia de API de IA en la ruta básica |
+| [earshot](../fichas/earshot.md) | Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP. | Tu objetivo encaja con estos ejemplos: Revisar una mezcla con un agente; Analizar un efecto sonoro | API de IA opcional |
+| [rubberband](../fichas/rubberband.md) | Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas. | Tu objetivo encaja con estos ejemplos: Ajustar duración de una narración; Explorar cambio de tono | Sin clave propia de API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

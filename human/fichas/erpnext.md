@@ -16,34 +16,53 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El ERP abierto no necesita LLM; hosting, soporte, implementación y servicios externos se presupuestan aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. pwd.yml es un entorno de evaluación; no equivale a configurar una instalación de producción con respaldos y credenciales propias |
+| Coste | El coste depende del proveedor o la ruta. El ERP abierto no necesita LLM; hosting, soporte, implementación y servicios externos se presupuestan aparte |
+| Equipo | Preparación según la ruta elegida. Docker; servicios Frappe; datos de negocio ficticios; permisos de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+pwd.yml es un entorno de evaluación; no equivale a configurar una instalación de producción con respaldos y credenciales propias
 
 ## Qué puedes hacer con él
 
-Cubre la operación completa de una empresa sin licencias de pago. Muy usado por pymes y en manufactura y distribución.
+ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura.
 
 ## Por qué destaca
 
-Todo el código es GPL, incluidas funciones que otros ERP cobran.
+Usos propuestos: Evaluar inventario y ventas; Estudiar un ERP con datos de muestra.
 
 ## Cómo funciona
 
-Corre sobre Frappe, un framework Python con metadatos que genera formularios, permisos y API REST a partir de DocTypes.
+pwd.yml es un entorno de evaluación; no equivale a configurar una instalación de producción con respaldos y credenciales propias
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Docker
+- servicios Frappe
+- datos de negocio ficticios
+- permisos de prueba
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (sh):**
+
+```
+git clone https://github.com/frappe/frappe_docker
+cd frappe_docker
+
+docker compose -f pwd.yml up -d
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/frappe/erpnext/blob/develop/README.md)
 
@@ -51,23 +70,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar ERPNext para mi objetivo y necesito pasos guiados. Lee https://github.com/frappe/erpnext/blob/develop/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Usa la demo Docker y crea un artículo y una oportunidad ficticios antes de configurar una empresa real.
+
+**Qué comprobar:** Puedes inspeccionar módulos y flujo de documentos de la demo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- ERP de una distribuidora
-- Manufactura con listas de materiales
-- Contabilidad y nómina
+- Evaluar inventario y ventas
+- Estudiar un ERP con datos de muestra
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres un ERP completo y totalmente libre | buscas el mayor ecosistema de módulos; mira `odoo` |
+| Tu objetivo encaja con estos ejemplos: Evaluar inventario y ventas; Estudiar un ERP con datos de muestra | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Desplegarlo y mantenerlo en producción requiere experiencia con Frappe.
+**Limitaciones:** pwd.yml es un entorno de evaluación; no equivale a configurar una instalación de producción con respaldos y credenciales propias
 
 ## Stack y modelos
 
-- **Stack:** Python, Frappe, MariaDB, JavaScript
+- **Stack:** Docker; servicios Frappe; datos de negocio ficticios; permisos de prueba
 - **Etiquetas:** `crm` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -91,7 +117,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/frappe/erpnext/blob/develop/README.md)
 

@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. | SDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas. |
 | ⭐ Estrellas | 136k | 51.4k |
-| Elígelo si… | quieres diagramas rápidos con estilo boceto | construyes una app con lienzo infinito |
-| Evítalo si… | prefieres diagramas como texto; mira `mermaid` | solo necesitas una pizarra lista; usa `excalidraw` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Explicar un flujo a un equipo; Bocetar una interfaz antes de construirla | Tu objetivo encaja con estos ejemplos: Construir una pizarra de colaboración; Crear un editor de diagramas propio |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
-| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | El coste depende del proveedor o la ruta |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | NOASSERTION |
-| Instalación | `npm i @excalidraw/excalidraw` | `npm i tldraw` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **Excalidraw** si quieres diagramas rápidos con estilo boceto.
-- Elige **tldraw** si construyes una app con lienzo infinito.
+- Elige **Excalidraw** si Tu objetivo encaja con estos ejemplos: Explicar un flujo a un equipo; Bocetar una interfaz antes de construirla.
+- Elige **tldraw** si Tu objetivo encaja con estos ejemplos: Construir una pizarra de colaboración; Crear un editor de diagramas propio.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

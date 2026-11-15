@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Librería Python para crear y compartir apps web de modelos de ML en minutos. | Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS. |
 | ⭐ Estrellas | 44.1k | 46.4k |
-| Elígelo si… | quieres una demo web de tu modelo rápido | quieres una UI de datos al vuelo y prototipos rápidos |
-| Evítalo si… | construyes una app de datos con varias páginas; mira `streamlit` | necesitas una app productiva con control fino del frontend (dash) |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Crear una demo de un modelo; Preparar una herramienta interna de texto | Tu objetivo encaja con estos ejemplos: Preparar un dashboard de ventas ficticias; Explorar un simulador de demanda |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
-| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
-| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
+| API de IA | API de IA opcional | API de IA opcional |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelo local no documentado | Modelo local no documentado |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | Apache-2.0 | Apache-2.0 |
-| Instalación | `pip install gradio` | `pip install streamlit` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **Gradio** si quieres una demo web de tu modelo rápido.
-- Elige **streamlit** si quieres una UI de datos al vuelo y prototipos rápidos.
+- Elige **Gradio** si Tu objetivo encaja con estos ejemplos: Crear una demo de un modelo; Preparar una herramienta interna de texto.
+- Elige **streamlit** si Tu objetivo encaja con estos ejemplos: Preparar un dashboard de ventas ficticias; Explorar un simulador de demanda.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

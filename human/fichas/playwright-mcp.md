@@ -16,47 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No necesita API adicional de modelo; usa el agente anfitrión y recursos del navegador |
 | Claude Code | Herramienta MCP para el agente |
 | Codex | Herramienta MCP para el agente |
-| Modelos locales | La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta. |
-| Coste | Consumo del agente que ya utilizas. El modelo se consume en el cliente. Los servicios que la herramienta consulta pueden tener cuentas o tarifas propias. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. El README documenta los tres clientes; revisa el perfil elegido porque puede conservar sesiones y cookies |
+| Coste | Consumo del agente que ya utilizas. No necesita API adicional de modelo; usa el agente anfitrión y recursos del navegador |
+| Equipo | Preparación según la ruta elegida. Node.js; npm; cliente MCP; navegador de prueba |
 
-Puede conectarse a un cliente con soporte MCP, incluido Claude Code o Codex. Debes configurar el servidor y sus permisos.
+El README documenta los tres clientes; revisa el perfil elegido porque puede conservar sesiones y cookies
 
 ## Qué puedes hacer con él
 
-Da a tu agente un navegador real controlado por el árbol de accesibilidad, sin depender de capturas. Ideal para pruebas y automatización web.
+Servidor MCP oficial de Microsoft que permite a los agentes navegar y operar páginas con Playwright.
 
 ## Por qué destaca
 
-Oficial, rápido y determinista gracias a usar el árbol de accesibilidad.
+Usos propuestos: Probar una navegación de tu app; Inspeccionar un formulario de desarrollo.
 
 ## Cómo funciona
 
-Lanza un navegador con Playwright y expone herramientas MCP para navegar, hacer clic, escribir y leer la página.
+El README documenta los tres clientes; revisa el perfil elegido porque puede conservar sesiones y cookies
 
 ## Cómo empezar
 
-Se configura en tu agente. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un cliente MCP compatible.
-- Las credenciales del servicio conectado, si las pide el servidor.
+- Node.js
+- npm
+- cliente MCP
+- navegador de prueba
 
-1. Instala o configura el servidor según su README.
-2. Añade su comando o URL en la configuración MCP de tu cliente.
-3. Comprueba que aparecen las herramientas antes de asignar una tarea.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
 
-**Comando de entrada documentado:**
+**Entrada documentada (bash):**
 
-```shell
-npx @playwright/mcp@latest
+```
+claude mcp add playwright npx @playwright/mcp@latest
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/microsoft/playwright-mcp/blob/main/README.md)
 
@@ -64,21 +67,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar Playwright MCP para mi objetivo y necesito pasos guiados. Lee https://github.com/microsoft/playwright-mcp/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Abre una página local con un formulario ficticio y comprueba sus campos antes de rellenarla.
+
+**Qué comprobar:** La instantánea accesible identifica campos y el resultado de la acción.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Agente que prueba tu web
-- Rellenar formularios automáticamente
-- Extraer datos de páginas dinámicas
+- Probar una navegación de tu app
+- Inspeccionar un formulario de desarrollo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres que tu agente use un navegador real | necesitas depurar rendimiento y consola; mira `chrome-devtools-mcp` |
+| Tu objetivo encaja con estos ejemplos: Probar una navegación de tu app; Inspeccionar un formulario de desarrollo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El README documenta los tres clientes; revisa el perfil elegido porque puede conservar sesiones y cookies
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Playwright
+- **Stack:** Node.js; npm; cliente MCP; navegador de prueba
 - **Etiquetas:** `mcp` `browser` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -104,7 +116,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/microsoft/playwright-mcp/blob/main/README.md)
 

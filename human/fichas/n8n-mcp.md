@@ -16,60 +16,72 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El cliente consume su acceso habitual; el servicio alojado tiene cuotas y planes; el autoalojado requiere infraestructura |
 | Claude Code | Herramienta MCP para el agente |
 | Codex | Herramienta MCP para el agente |
-| Modelos locales | La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta. |
-| Coste | Consumo del agente que ya utilizas. El modelo se consume en el cliente. Los servicios que la herramienta consulta pueden tener cuentas o tarifas propias. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. El README enlaza guías para los tres clientes. Empieza en lectura y evita editar el mismo flujo simultáneamente desde la UI |
+| Coste | El coste depende del proveedor o la ruta. El cliente consume su acceso habitual; el servicio alojado tiene cuotas y planes; el autoalojado requiere infraestructura |
+| Equipo | Preparación según la ruta elegida. Cliente MCP;  n8n y sus credenciales solo para operar una instancia |
 
-Puede conectarse a un cliente con soporte MCP, incluido Claude Code o Codex. Debes configurar el servidor y sus permisos.
+El README enlaza guías para los tres clientes. Empieza en lectura y evita editar el mismo flujo simultáneamente desde la UI
 
 ## Qué puedes hacer con él
 
-Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows. El cliente MCP y la instancia de n8n conservan sus propios requisitos de acceso.
+Servidor MCP que permite a un agente consultar nodos, esquemas y ejemplos de n8n para preparar workflows.
 
 ## Por qué destaca
 
-Reduce drásticamente los errores cuando se pide a una IA que arme un workflow de n8n, al darle acceso fiable a los parámetros reales de cada nodo. Su enfoque de "documentación como herramienta MCP" es un patrón replicable para otras plataformas.
+Usos propuestos: Investigar por qué falló una ejecución de un flujo propio; Preparar y validar un flujo de prueba con ayuda del agente.
 
 ## Cómo funciona
 
-Expone herramientas de documentación y, con la configuración correspondiente, de gestión de workflows.
+El README enlaza guías para los tres clientes. Empieza en lectura y evita editar el mismo flujo simultáneamente desde la UI
 
 ## Cómo empezar
 
-Se configura en tu agente. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un cliente MCP; una instancia de n8n y sus permisos solo si quieres administrarla.
+- Cliente MCP
+-  n8n y sus credenciales solo para operar una instancia
 
-1. Elige el servidor gestionado o la instalación local según el README.
-2. Añade su URL o comando a la configuración MCP del cliente.
-3. Comprueba una consulta de documentación. Configura por separado la instancia y credenciales de n8n para operaciones sobre workflows.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
 
-[Instrucciones originales de instalación](https://github.com/czlonkowski/n8n-mcp/blob/main/README.md)
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://github.com/czlonkowski/n8n-mcp/blob/main/docs/SELF_HOSTING.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar n8n-mcp para mi objetivo y necesito pasos guiados. Lee https://github.com/czlonkowski/n8n-mcp/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar n8n-mcp para mi objetivo y necesito pasos guiados. Lee https://github.com/czlonkowski/n8n-mcp/blob/main/docs/SELF_HOSTING.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Pide al cliente buscar un nodo de n8n y consultar su esquema antes de editar un flujo.
+
+**Qué comprobar:** La respuesta contiene las propiedades del nodo y una validación comprensible.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Que Claude investigue parámetros del nodo de Gmail para armar un flujo
-- Reducir errores al construir workflows
-- Onboarding de IA al catálogo de nodos de n8n
+- Investigar por qué falló una ejecución de un flujo propio
+- Preparar y validar un flujo de prueba con ayuda del agente
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| generas flujos n8n con IA y quieres menos alucinaciones de parámetros | no usas n8n o construyes los flujos a mano |
+| Tu objetivo encaja con estos ejemplos: Investigar por qué falló una ejecución de un flujo propio; Preparar y validar un flujo de prueba con ayuda del agente | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El README enlaza guías para los tres clientes. Empieza en lectura y evita editar el mismo flujo simultáneamente desde la UI
 
 ## Stack y modelos
 
-- **Stack:** Node.js/TypeScript, MCP
+- **Stack:** Cliente MCP;  n8n y sus credenciales solo para operar una instancia
 - **Etiquetas:** `automation` `mcp` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -88,7 +100,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/czlonkowski/n8n-mcp/blob/main/README.md)
 

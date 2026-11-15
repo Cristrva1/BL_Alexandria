@@ -16,56 +16,73 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La infraestructura no necesita un modelo para notificar; proveedores de canal, Cloud y módulos Enterprise tienen costes propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Novu conecta agentes y productos a canales; no es el agente ni incluye el modelo que toma decisiones |
+| Coste | El coste depende del proveedor o la ruta. La infraestructura no necesita un modelo para notificar; proveedores de canal, Cloud y módulos Enterprise tienen costes propios |
+| Equipo | Preparación según la ruta elegida. Proyecto de notificaciones; credenciales del canal; destino propio de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Novu conecta agentes y productos a canales; no es el agente ni incluye el modelo que toma decisiones
 
 ## Qué puedes hacer con él
 
-Envía notificaciones por email, SMS, push y chat desde una sola API, sin integrar y mantener cada proveedor por separado.
+Infraestructura open-source de notificaciones que centraliza la comunicación multicanal (email, SMS, push y chat) desde un único backend.
 
 ## Por qué destaca
 
-Es el estándar open-source de referencia para notificaciones, muy adoptado por su API unificada y su inbox unificado. Su modelo de "notification workflows" abstrae el enrutamiento por canal sin acoplarte a un proveedor concreto.
+Usos propuestos: Añadir una bandeja de notificaciones a una app; Coordinar avisos de email y chat.
 
 ## Cómo funciona
 
-Define workflows de notificación que enrutan mensajes a distintos proveedores por canal (SendGrid, Twilio, FCM…), con un inbox unificado y plantillas, sobre un stack Node.js/TypeScript. Los proveedores se configuran por canal y se pueden intercambiar sin tocar el código de envío.
+Novu conecta agentes y productos a canales; no es el agente ni incluye el modelo que toma decisiones
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/novuhq/novu/blob/next/README.md)
+- Proyecto de notificaciones
+- credenciales del canal
+- destino propio de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://docs.novu.co/platform/quickstart)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar novu para mi objetivo y necesito pasos guiados. Lee https://github.com/novuhq/novu/blob/next/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar novu para mi objetivo y necesito pasos guiados. Lee https://docs.novu.co/platform/quickstart. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Define un evento ficticio y comprueba su preview y entrega en un canal de ensayo.
+
+**Qué comprobar:** Puedes rastrear evento, plantilla y estado de entrega.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Mensajes transaccionales y de producto desde un backend
-- Inbox unificado
-- Notificaciones multicanal con fallback de proveedor
+- Añadir una bandeja de notificaciones a una app
+- Coordinar avisos de email y chat
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| envías notificaciones por varios canales y quieres un único backend | solo necesitas email (listmonk) |
+| Tu objetivo encaja con estos ejemplos: Añadir una bandeja de notificaciones a una app; Coordinar avisos de email y chat | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Novu conecta agentes y productos a canales; no es el agente ni incluye el modelo que toma decisiones
 
 ## Stack y modelos
 
-- **Stack:** Node.js, TypeScript, Docker
+- **Stack:** Proyecto de notificaciones; credenciales del canal; destino propio de prueba
 - **Etiquetas:** `automation` `email` `typescript`
 - **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
@@ -84,7 +101,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/novuhq/novu/blob/next/README.md)
 

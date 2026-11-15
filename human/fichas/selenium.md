@@ -16,56 +16,73 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No necesita modelos ni API de IA; infraestructura o servicios de pruebas Cloud se costean aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El README raíz está dirigido a contribuidores; para utilizar Selenium sigue el manual de usuario y no cambies políticas de Windows para compilar todo el proyecto |
+| Coste | Sin pago a un modelo en la ruta básica. No necesita modelos ni API de IA; infraestructura o servicios de pruebas Cloud se costean aparte |
+| Equipo | Preparación según la ruta elegida. Lenguaje y bindings elegidos; navegador compatible; app de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El README raíz está dirigido a contribuidores; para utilizar Selenium sigue el manual de usuario y no cambies políticas de Windows para compilar todo el proyecto
 
 ## Qué puedes hacer con él
 
-Estándar W3C WebDriver, muy usado en pruebas empresariales con Selenium Grid para paralelizar.
+Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes.
 
 ## Por qué destaca
 
-El ecosistema más amplio de lenguajes y navegadores.
+Usos propuestos: Automatizar pruebas funcionales; Comparar comportamiento entre navegadores.
 
 ## Cómo funciona
 
-Envía comandos WebDriver a un driver de cada navegador.
+El README raíz está dirigido a contribuidores; para utilizar Selenium sigue el manual de usuario y no cambies políticas de Windows para compilar todo el proyecto
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/SeleniumHQ/selenium/blob/trunk/README.md)
+- Lenguaje y bindings elegidos
+- navegador compatible
+- app de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://selenium.dev/documentation/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Selenium para mi objetivo y necesito pasos guiados. Lee https://github.com/SeleniumHQ/selenium/blob/trunk/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Selenium para mi objetivo y necesito pasos guiados. Lee https://selenium.dev/documentation/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Abre una página de prueba y verifica un elemento mediante WebDriver.
+
+**Qué comprobar:** Puedes comprobar que la sesión controla el navegador correcto.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Pruebas E2E en grandes empresas
-- Automatizar navegadores antiguos
-- Grid de pruebas en paralelo
+- Automatizar pruebas funcionales
+- Comparar comportamiento entre navegadores
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tu equipo ya usa Selenium o necesitas muchos lenguajes | empiezas de cero; mira `playwright` |
+| Tu objetivo encaja con estos ejemplos: Automatizar pruebas funcionales; Comparar comportamiento entre navegadores | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El README raíz está dirigido a contribuidores; para utilizar Selenium sigue el manual de usuario y no cambies políticas de Windows para compilar todo el proyecto
 
 ## Stack y modelos
 
-- **Stack:** Java, Python, C#, JavaScript
+- **Stack:** Lenguaje y bindings elegidos; navegador compatible; app de prueba
 - **Etiquetas:** `browser` `java` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,7 +100,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/SeleniumHQ/selenium/blob/trunk/README.md)
 

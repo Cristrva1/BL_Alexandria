@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Usa el modelo elegido; las reglas no aportan créditos ni acceso a servicios |
 | Claude Code | Dentro del agente: skills o instrucciones |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Codex | Referencia para la herramienta; no es una integración |
+| Antigravity | Referencia para la herramienta; no es una integración |
+| Modelos locales | La función básica no necesita un modelo. Documenta instalación en Claude Code y uso de instrucciones en otros LLM; no acredita plugins específicos para Codex o Antigravity |
+| Coste | Consumo del agente que ya utilizas. Usa el modelo elegido; las reglas no aportan créditos ni acceso a servicios |
+| Equipo | Preparación según la ruta elegida. Claude con skills o instrucciones pegadas en otro modelo; texto propio |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+Documenta instalación en Claude Code y uso de instrucciones en otros LLM; no acredita plugins específicos para Codex o Antigravity
 
 ## Qué puedes hacer con él
 
-Un SKILL.md con tres archivos de referencia (frases a eliminar, estructuras a evitar y ejemplos antes/después) que enseña a Claude o a cualquier LLM a quitar muletillas, contrastes binarios, fragmentos dramáticos, voz pasiva y otros patrones predecibles. Cierra con una rúbrica de cinco dimensiones para decidir si el texto necesita otra vuelta.
+Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad.
 
 ## Por qué destaca
 
-Es corto, sin dependencias y portable: funciona como skill de Claude Code, como conocimiento de un proyecto de Claude o pegado en un system prompt. La rúbrica sobre 50 puntos da un criterio concreto para revisar.
+Usos propuestos: Reducir frases vagas; Revisar un borrador antes de publicarlo.
 
 ## Cómo funciona
 
-El SKILL.md fija reglas de frase (sin aperturas de relleno, sin rayas, sin extremos vagos, voz activa) y remite a los archivos de referencia, que se cargan cuando hacen falta. Cada texto se puntúa en franqueza, ritmo, confianza, autenticidad y densidad.
+Documenta instalación en Claude Code y uso de instrucciones en otros LLM; no acredita plugins específicos para Codex o Antigravity
 
 ## Cómo empezar
 
@@ -43,11 +44,14 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Claude con skills o instrucciones pegadas en otro modelo
+- texto propio
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/hardikpandya/stop-slop/blob/main/README.md)
 
@@ -55,23 +59,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Stop Slop para mi objetivo y necesito pasos guiados. Lee https://github.com/hardikpandya/stop-slop/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Aplica la lista de frases a un párrafo y conserva cualquier término técnico necesario.
+
+**Qué comprobar:** Puedes justificar cada cambio de redacción.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Limpiar muletillas y estructuras cliché de un borrador
-- Fijar reglas de estilo en el system prompt de una app
-- Puntuar un texto antes de publicarlo
+- Reducir frases vagas
+- Revisar un borrador antes de publicarlo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres reglas de estilo compactas y portables que puedas usar como skill o dentro de un system prompt | prefieres una skill que reescriba mostrando su proceso y pueda imitar tu voz; mira `humanizer` |
+| Tu objetivo encaja con estos ejemplos: Reducir frases vagas; Revisar un borrador antes de publicarlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Reglas pensadas para prosa en inglés y algunas muy estrictas (prohíbe todos los adverbios y las rayas); el repo casi no recibe cambios desde marzo de 2026.
+**Limitaciones:** Documenta instalación en Claude Code y uso de instrucciones en otros LLM; no acredita plugins específicos para Codex o Antigravity
 
 ## Stack y modelos
 
-- **Stack:** Markdown, SKILL.md
+- **Stack:** Claude con skills o instrucciones pegadas en otro modelo; texto propio
 - **Etiquetas:** `skills` `prompts` `docs`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -86,7 +97,7 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Humanizer](humanizer.md) | 69.1k | Skill que reescribe texto generado por IA para que suene humano, basada en la guía de Wikipedia sobre señales de escritura IA. |
+| [Humanizer](humanizer.md) | 69.1k | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. |
 
 ## Enlaces
 
@@ -94,7 +105,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/hardikpandya/stop-slop/blob/main/README.md)
 

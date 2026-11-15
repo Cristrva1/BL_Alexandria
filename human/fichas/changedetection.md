@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 35.8k | Apache-2.0 | Python | 2026-11-10 |
 
-**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | El coste depende del proveedor o la ruta. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. Las comparaciones clásicas no necesitan LLM; filtros semánticos usan API o modelo local; SaaS y proxies tienen condiciones propias |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. MCP requiere versión que lo incluya; su acceso al historial no acredita que el agente haya observado cambios futuros |
+| Coste | El coste depende del proveedor o la ruta. Las comparaciones clásicas no necesitan LLM; filtros semánticos usan API o modelo local; SaaS y proxies tienen condiciones propias |
+| Equipo | Preparación según la ruta elegida. Docker; URL a vigilar; canal de aviso opcional |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+MCP requiere versión que lo incluya; su acceso al historial no acredita que el agente haya observado cambios futuros
 
 ## Qué puedes hacer con él
 
-Vigila precios, stock, documentación o cualquier texto de una página y te avisa cuando cambia. Admite navegador real para sitios con JavaScript.
+Monitor de cambios en páginas web con alertas por email, Slack, Telegram y más.
 
 ## Por qué destaca
 
-Sencillo, auto-hospedable y con decenas de canales de notificación.
+Usos propuestos: Detectar cambios de precio permitidos; Monitorear avisos de una página.
 
 ## Cómo funciona
 
-Revisa las URLs con la frecuencia que indiques, compara versiones y dispara notificaciones vía Apprise.
+MCP requiere versión que lo incluya; su acceso al historial no acredita que el agente haya observado cambios futuros
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Docker
+- URL a vigilar
+- canal de aviso opcional
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+docker run -d --restart always -p "127.0.0.1:5000:5000" -v datastore-volume:/datastore --name changedetection.io docker.io/dgtlmoon/changedetection.io
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/dgtlmoon/changedetection.io/blob/master/README.md)
 
@@ -51,21 +67,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar changedetection.io para mi objetivo y necesito pasos guiados. Lee https://github.com/dgtlmoon/changedetection.io/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Vigila un texto en una página propia y modifícalo una vez para revisar la diferencia.
+
+**Qué comprobar:** El historial identifica el cambio concreto.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Alertas de bajada de precio
-- Vigilar cambios en términos legales
-- Detectar stock disponible
+- Detectar cambios de precio permitidos
+- Monitorear avisos de una página
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres alertas cuando cambia una página | necesitas extraer datos estructurados; mira `maxun` |
+| Tu objetivo encaja con estos ejemplos: Detectar cambios de precio permitidos; Monitorear avisos de una página | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** MCP requiere versión que lo incluya; su acceso al historial no acredita que el agente haya observado cambios futuros
 
 ## Stack y modelos
 
-- **Stack:** Python, Playwright, Docker
+- **Stack:** Docker; URL a vigilar; canal de aviso opcional
 - **Etiquetas:** `scraping` `notifications` `python` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -82,9 +107,13 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/dgtlmoon/changedetection.io/blob/master/README.md)
+- [Fuente 2](https://changedetection.io/MCP)
+- [Fuente 3](https://antigravity.google/docs/ide-mcp)
 
 ---
 

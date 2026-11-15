@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 41.6k | AGPL-3.0 | TypeScript | 2026-11-14 |
 
-**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | El coste depende del proveedor o la ruta. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| API de IA | API de IA opcional. Cloud incluye cuotas de AI por plan; self-hosting usa claves propias y recursos; redes pueden exigir aprobaciones y permisos adicionales |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelo local no documentado. MCP y CLI están incluidos por ambas rutas; clonar el código no obtiene automáticamente credenciales aprobadas de cada red |
+| Coste | El coste depende del proveedor o la ruta. Cloud incluye cuotas de AI por plan; self-hosting usa claves propias y recursos; redes pueden exigir aprobaciones y permisos adicionales |
+| Equipo | Preparación según la ruta elegida. Cuenta Cloud o self-host con PostgreSQL y Redis; apps de plataforma; modelos solo para AI |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+MCP y CLI están incluidos por ambas rutas; clonar el código no obtiene automáticamente credenciales aprobadas de cada red
 
 ## Qué puedes hacer con él
 
 Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA.
 
+## Por qué destaca
+
+Usos propuestos: Organizar un calendario de contenido; Evaluar generación asistida de borradores.
+
 ## Cómo funciona
 
-Un servicio y su interfaz gestionan los datos y conexiones configurados en tu despliegue.
+MCP y CLI están incluidos por ambas rutas; clonar el código no obtiene automáticamente credenciales aprobadas de cada red
 
 ## Cómo empezar
 
@@ -39,33 +44,46 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de instalación o servidor y las dependencias indicadas por el README.
+- Cuenta Cloud o self-host con PostgreSQL y Redis
+- apps de plataforma
+- modelos solo para AI
 
-1. Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.
-2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
-3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-[Instrucciones originales de instalación](https://github.com/gitroomhq/postiz-app/blob/main/README.md)
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://docs.postiz.com/quickstart)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar postiz-app para mi objetivo y necesito pasos guiados. Lee https://github.com/gitroomhq/postiz-app/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar postiz-app para mi objetivo y necesito pasos guiados. Lee https://docs.postiz.com/quickstart. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Prepara una publicación ficticia en borrador y revisa preview, canal y horario sin programarla.
+
+**Qué comprobar:** Puedes comprobar contenido y cuenta de destino antes de publicar.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA.
+- Organizar un calendario de contenido
+- Evaluar generación asistida de borradores
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Organizar un calendario de contenido; Evaluar generación asistida de borradores | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** MCP y CLI están incluidos por ambas rutas; clonar el código no obtiene automáticamente credenciales aprobadas de cada red
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, package.json
+- **Stack:** Cuenta Cloud o self-host con PostgreSQL y Redis; apps de plataforma; modelos solo para AI
 - **Etiquetas:** `marketing` `server` `typescript`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -76,7 +94,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/gitroomhq/postiz-app/blob/main/README.md)
 

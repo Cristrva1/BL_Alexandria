@@ -2,7 +2,7 @@
 
 # 🧑‍🤝‍🧑 multica
 
-> Plataforma para que humanos y agentes trabajen lado a lado ("tus próximas 10 contrataciones no serán humanas").
+> Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | API de IA opcional. Usa las cuentas de los agentes y alojamiento propio o servicio; no incluye créditos |
 | Claude Code | Integración documentada por el proyecto |
 | Codex | Integración documentada por el proyecto |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Se declara source-available con licencia Multica que añade condiciones a Apache; no debe resumirse como Apache puro ni como una garantía de sustituir empleados |
+| Coste | El coste depende del proveedor o la ruta. Usa las cuentas de los agentes y alojamiento propio o servicio; no incluye créditos |
+| Equipo | Preparación según la ruta elegida. Un CLI de agente instalado y autenticado; Docker si autoalojas servidor |
 
-El README documenta una integración con las sesiones de los agentes indicados. Configurar esa ruta y comprobar sus límites; otras rutas pueden facturar por API.
+Se declara source-available con licencia Multica que añade condiciones a Apache; no debe resumirse como Apache puro ni como una garantía de sustituir empleados
 
 ## Qué puedes hacer con él
 
-Integra colaboradores humanos y agentes en un mismo espacio de trabajo. Proyecto de nicho.
+Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias.
 
 ## Por qué destaca
 
-Propone equipos mixtos humano+agente en un flujo común, en lugar de automatización totalmente headless. El ángulo es operativo: agentes como "compañeros de equipo" con contexto compartido.
+Usos propuestos: Organizar trabajo entre agentes; Revisar entregas en un espacio compartido.
 
 ## Cómo funciona
 
-Según lo descrito, ofrece un entorno web donde humanos y agentes comparten tareas y contexto; pila web/TypeScript con backend persistente.
+Se declara source-available con licencia Multica que añade condiciones a Apache; no debe resumirse como Apache puro ni como una garantía de sustituir empleados
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Un CLI de agente instalado y autenticado
+- Docker si autoalojas servidor
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/multica-ai/multica/blob/main/README.md)
 
@@ -51,23 +59,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar multica para mi objetivo y necesito pasos guiados. Lee https://github.com/multica-ai/multica/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Asigna una tarea de explicación a un agente en un proyecto de prueba antes de crear automatizaciones.
+
+**Qué comprobar:** Puedes ver tarea, sesión y resultado atribuibles al agente.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Equipos mixtos humano+agente
-- Operación con agentes como colaboradores
-- Delegar tareas repetitivas a agentes dentro de un flujo humano
+- Organizar trabajo entre agentes
+- Revisar entregas en un espacio compartido
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| mezclas trabajo humano y agentes en un mismo flujo | quieres automatización 100% headless o un producto maduro |
+| Tu objetivo encaja con estos ejemplos: Organizar trabajo entre agentes; Revisar entregas en un espacio compartido | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Proyecto de nicho y madurez limitada; conviene validar estado antes de apostar por él.
+**Limitaciones:** Se declara source-available con licencia Multica que añade condiciones a Apache; no debe resumirse como Apache puro ni como una garantía de sustituir empleados
 
 ## Stack y modelos
 
-- **Stack:** web/TS, Docker, PostgreSQL
+- **Stack:** Un CLI de agente instalado y autenticado; Docker si autoalojas servidor
 - **Etiquetas:** `agents` `go`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -85,7 +100,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/multica-ai/multica/blob/main/README.md)
 

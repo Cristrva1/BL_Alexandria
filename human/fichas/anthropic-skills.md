@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El agente consume su acceso habitual; cada skill puede necesitar programas adicionales y recursos de cómputo |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La implementación es para Claude; el estándar abierto no demuestra que todos sus scripts funcionen en otros clientes |
+| Coste | Consumo del agente que ya utilizas. El agente consume su acceso habitual; cada skill puede necesitar programas adicionales y recursos de cómputo |
+| Equipo | Preparación según la ruta elegida. Claude Code activo;  dependencias de la skill de documentos elegida |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+La implementación es para Claude; el estándar abierto no demuestra que todos sus scripts funcionen en otros clientes
 
 ## Qué puedes hacer con él
 
-Repositorio de Anthropic con skills listas para Claude Code, Claude.ai y la API: creativas, técnicas (pruebas de apps web, creación de servidores MCP) y empresariales, más las skills de docx, pptx, xlsx y PDF que Claude usa para generar archivos. Incluye la especificación del estándar Agent Skills y una plantilla para crear las tuyas.
+Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills.
 
 ## Por qué destaca
 
-Es la implementación de referencia del formato SKILL.md, publicada por quien definió el estándar. Las skills de documentos son las que Claude usa en producción, así que sirven de modelo para skills complejas.
+Usos propuestos: Extraer campos de un formulario PDF propio; Crear una presentación usando las instrucciones de la skill de diapositivas.
 
 ## Cómo funciona
 
-Cada skill es una carpeta con un SKILL.md (frontmatter YAML con nombre y descripción, más instrucciones) y a veces scripts. Claude ve la descripción y carga el contenido completo solo cuando la tarea lo pide.
+La implementación es para Claude; el estándar abierto no demuestra que todos sus scripts funcionen en otros clientes
 
 ## Cómo empezar
 
@@ -43,11 +44,24 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Claude Code activo
+-  dependencias de la skill de documentos elegida
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (consulta la sintaxis original):**
+
+```
+/plugin marketplace add anthropics/skills
+
+/plugin install document-skills@anthropic-agent-skills
+/plugin install example-skills@anthropic-agent-skills
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/anthropics/skills/blob/main/README.md)
 
@@ -55,23 +69,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Anthropic Skills para mi objetivo y necesito pasos guiados. Lee https://github.com/anthropics/skills/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Pide a la skill PDF identificar campos de un formulario de prueba.
+
+**Qué comprobar:** El agente identifica la skill y entrega la lista de campos del PDF.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Crear y editar docx, pptx, xlsx y PDF desde Claude Code
-- Generar un servidor MCP con la skill mcp-builder
-- Escribir tus propias skills partiendo de skill-creator o la plantilla
+- Extraer campos de un formulario PDF propio
+- Crear una presentación usando las instrucciones de la skill de diapositivas
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres skills oficiales de Anthropic o un ejemplo de referencia para escribir las tuyas | buscas volumen o skills de comunidad para varios agentes; mira `awesome-agent-skills` o `antigravity-awesome-skills` |
+| Tu objetivo encaja con estos ejemplos: Extraer campos de un formulario PDF propio; Crear una presentación usando las instrucciones de la skill de diapositivas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Son skills de demostración y las de documentos (docx, pdf, pptx, xlsx) son source-available, no open source.
+**Limitaciones:** La implementación es para Claude; el estándar abierto no demuestra que todos sus scripts funcionen en otros clientes
 
 ## Stack y modelos
 
-- **Stack:** Markdown, YAML, Python, JavaScript
+- **Stack:** Claude Code activo;  dependencias de la skill de documentos elegida
 - **Etiquetas:** `skills` `docs` `pdf` `coding-agent` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,7 +110,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/anthropics/skills/blob/main/README.md)
 

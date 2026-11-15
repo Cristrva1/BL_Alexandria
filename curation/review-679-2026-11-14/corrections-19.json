@@ -1,0 +1,5 @@
+{
+ "prompt-master": {"one":"Skill de Claude que ayuda a formular encargos para distintas herramientas de IA; no garantiza ahorro de tokens.","desc":"Skill que recopila contexto y restricciones para redactar prompts destinados a herramientas de código, imagen y otros servicios. La instalación documentada corresponde a Claude; los nombres de otros productos describen destinos de los prompts generados."},
+ "nanogpt": {"one":"Implementación educativa histórica de GPT en PyTorch, declarada obsoleta por su autor; remite a nanochat."},
+ "500-ai-agents-projects": {"one":"Colección de casos de uso y agentes autocontenidos, junto con enlaces a implementaciones externas."}
+}

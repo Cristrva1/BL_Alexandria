@@ -2,7 +2,7 @@
 
 # 🕸️ mcp-neo4j
 
-> Conjunto de servidores MCP oficiales para conectar bases de datos de grafos Neo4j a asistentes de IA, con soporte de despliegue en cloud.
+> Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,39 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El conector no necesita modelo propio; Neo4j Aura, base local y agente tienen costes distintos |
 | Claude Code | Herramienta MCP para el agente |
 | Codex | Herramienta MCP para el agente |
-| Modelos locales | La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta. |
-| Coste | Consumo del agente que ya utilizas. El modelo se consume en el cliente. Los servicios que la herramienta consulta pueden tener cuentas o tarifas propias. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Son servidores Neo4j Labs experimentales sin SLA del equipo de producto; el producto oficial Neo4j MCP es otro repositorio |
+| Coste | El coste depende del proveedor o la ruta. El conector no necesita modelo propio; Neo4j Aura, base local y agente tienen costes distintos |
+| Equipo | Preparación según la ruta elegida. Neo4j; credenciales; APOC para inspección de esquema; servidor elegido |
 
-Puede conectarse a un cliente con soporte MCP, incluido Claude Code o Codex. Debes configurar el servidor y sus permisos.
+Son servidores Neo4j Labs experimentales sin SLA del equipo de producto; el producto oficial Neo4j MCP es otro repositorio
 
 ## Qué puedes hacer con él
 
-Resuelve el acceso natural a grafos desde un LLM: el asistente consulta y escribe Cypher sin que tú escribas el glue a mano.
+Colección del programa Neo4j Labs, mantenida por el equipo Field GenAI, con servidores para Cypher, memoria, modelado y Aura. Los autores advierten que no tiene SLA ni garantías de compatibilidad del equipo de producto y enlazan un repositorio distinto para el servidor oficial de producto.
 
 ## Por qué destaca
 
-Lo mantiene el equipo Field GenAI de Neo4j Labs y viene contenedorizado y listo para HTTP, lo que facilita llevar grafos a producción con IA. Al ser oficial, sigue el ritmo de las versiones de Neo4j y del propio protocolo MCP.
+Usos propuestos: Consultar relaciones en un grafo; Estudiar memoria de entidades entre sesiones.
 
 ## Cómo funciona
 
-Expone consultas Cypher y operaciones sobre el grafo (lectura/escritura, esquema) como tools MCP que el cliente invoca mediante el protocolo, devolviendo resultados estructurados al LLM.
+Son servidores Neo4j Labs experimentales sin SLA del equipo de producto; el producto oficial Neo4j MCP es otro repositorio
 
 ## Cómo empezar
 
-Se configura en tu agente. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un cliente MCP compatible.
-- Las credenciales del servicio conectado, si las pide el servidor.
+- Neo4j
+- credenciales
+- APOC para inspección de esquema
+- servidor elegido
 
-1. Instala o configura el servidor según su README.
-2. Añade su comando o URL en la configuración MCP de tu cliente.
-3. Comprueba que aparecen las herramientas antes de asignar una tarea.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md)
 
@@ -56,21 +60,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar mcp-neo4j para mi objetivo y necesito pasos guiados. Lee https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Consulta el esquema de un grafo ficticio y revisa una consulta Cypher de lectura.
+
+**Qué comprobar:** Obtienes etiquetas y relaciones que coinciden con la base de prueba.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Consultar/escribir grafos Neo4j desde un asistente
-- Backends de conocimiento basados en grafo
-- Exploración de datos relacionales por lenguaje natural
+- Consultar relaciones en un grafo
+- Estudiar memoria de entidades entre sesiones
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| usas Neo4j con IA y quieres que el asistente hable Cypher | no trabajas con grafos o tu base es relacional pura |
+| Tu objetivo encaja con estos ejemplos: Consultar relaciones en un grafo; Estudiar memoria de entidades entre sesiones | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Son servidores Neo4j Labs experimentales sin SLA del equipo de producto; el producto oficial Neo4j MCP es otro repositorio
 
 ## Stack y modelos
 
-- **Stack:** Python, Docker
+- **Stack:** Neo4j; credenciales; APOC para inspección de esquema; servidor elegido
 - **Etiquetas:** `mcp` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -88,7 +101,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/neo4j-contrib/mcp-neo4j/blob/main/README.md)
 

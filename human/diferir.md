@@ -12,20 +12,18 @@ _Pesado: solo si llega a finalista._
 
 | Repo | Categoría | Qué hace |
 |---|---|---|
-| [cal.diy](fichas/cal-diy.md) | 🤖 Automatizar procesos y crear herramientas internas | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. |
-| [ECC](fichas/ecc.md) | 🧠 Skills, plugins y métodos para agentes | Colección de plugins, skills, hooks y convenciones para organizar el trabajo de agentes de código en un proyecto. |
 | [AutoGPT](fichas/autogpt.md) | 🕸️ Construir agentes y coordinar equipos de IA | Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un constructor visual de bloques. |
 | [MiroFish](fichas/mirofish.md) | 🕸️ Construir agentes y coordinar equipos de IA | Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios. |
 | [openevolve](fichas/openevolve.md) | 🕸️ Construir agentes y coordinar equipos de IA | Agente de codificación evolutivo que optimiza algoritmos por simulación genética. |
 | [RAGFlow](fichas/ragflow.md) | 🧬 Memoria, RAG y búsqueda de conocimiento | Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. |
 | [Milvus](fichas/milvus.md) | 🧬 Memoria, RAG y búsqueda de conocimiento | Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. |
 | [OpenViking](fichas/openviking.md) | 🧬 Memoria, RAG y búsqueda de conocimiento | Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información. |
+| [SWE-bench](fichas/swe-bench.md) | 🧑‍💻 Entender código y comprobar su calidad | Benchmark para evaluar si los modelos resuelven issues reales de GitHub. |
 | [odysseus](fichas/odysseus.md) | 🏠 Chats, modelos locales y espacios privados | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. |
 | [airllm](fichas/airllm.md) | 🏠 Chats, modelos locales y espacios privados | Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes. |
-| [server](fichas/nextcloud-server.md) | 🏠 Chats, modelos locales y espacios privados | Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. |
 | [FreeToken](fichas/freetoken.md) | 🏠 Chats, modelos locales y espacios privados | Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto. |
 | [magnitude](fichas/magnitude.md) | 🏠 Chats, modelos locales y espacios privados | Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. |
-| [muse-spark](fichas/muse-spark.md) | 🏠 Chats, modelos locales y espacios privados | Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas. |
+| [Muse Spark — afiliación por verificar](fichas/muse-spark.md) | 🏠 Chats, modelos locales y espacios privados | Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas. |
 | [penpot](fichas/penpot.md) | 🎨 Diseñar y construir interfaces web | Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos. |
 | [WebODM](fichas/webodm.md) | 📊 Dashboards, analítica y mapas | Interfaz para procesar fotografías aéreas y obtener mapas y modelos con el ecosistema de OpenDroneMap. |
 | [Pythia](fichas/pythia.md) | 📊 Dashboards, analítica y mapas | Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. |
@@ -53,11 +51,13 @@ _Pesado: solo si llega a finalista._
 | [Home Assistant](fichas/home-assistant.md) | 🗂️ Organizar notas, archivos y servicios personales | Motor de Home Assistant para conectar dispositivos y automatizar acciones del hogar con control local. |
 | [vaultwarden](fichas/vaultwarden.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. |
 | [AdGuardHome](fichas/adguardhome.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. |
+| [server](fichas/nextcloud-server.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. |
 | [karakeep](fichas/karakeep.md) | 🗂️ Organizar notas, archivos y servicios personales | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación mediante IA. |
 | [audiobookshelf](fichas/audiobookshelf.md) | 🗂️ Organizar notas, archivos y servicios personales | Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reproducción. |
 | [Rasa](fichas/rasa.md) | 🤖 WhatsApp, mensajería y chatbots | Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local. |
 | [twenty-main](fichas/twenty-main.md) | 🤖 CRM, ventas y marketing | CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones. |
 | [Odoo](fichas/odoo.md) | 🤖 CRM, ventas y marketing | Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. |
+| [cal.diy](fichas/cal-diy.md) | 🤖 CRM, ventas y marketing | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. |
 | [postiz-app](fichas/postiz-app.md) | 🤖 CRM, ventas y marketing | Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA. |
 | [ERPNext](fichas/erpnext.md) | 🤖 CRM, ventas y marketing | ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura. |
 | [open-seo](fichas/open-seo.md) | 🤖 CRM, ventas y marketing | Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio. |
@@ -80,9 +80,9 @@ _Pesado: solo si llega a finalista._
 | [laya](fichas/laya.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. |
 | [DeepSeek-Coder](fichas/deepseek-coder.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software. |
 | [cosmos](fichas/cosmos.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. |
-| [warp](fichas/warp.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Framework de NVIDIA que compila funciones de Python en kernels para simulación física y cálculo en CPU o GPU. |
 | [Kimi K2.7 Code](fichas/kimi-k2-7-code.md) | 🧑‍💻 Modelos abiertos y entrenamiento | Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face. |
 | [hudi](fichas/hudi.md) | 🧑‍💻 Procesar datos y trabajar con notebooks | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. |
+| [warp](fichas/warp.md) | 🎨 Animación, gráficos y creación 3D | Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal. |
 | [RuView](fichas/ruview.md) | 🖼️ Visión artificial, rostros y percepción | Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento. |
 | [Deep-Live-Cam](fichas/deep-live-cam.md) | 🖼️ Visión artificial, rostros y percepción | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. |
 | [openpose](fichas/openpose.md) | 🖼️ Visión artificial, rostros y percepción | Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video. |
@@ -94,8 +94,8 @@ _Pesado: solo si llega a finalista._
 | [4D-Humans](fichas/4d-humans.md) | 🖼️ Visión artificial, rostros y percepción | Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de video. |
 | [WHAM](fichas/wham.md) | 🖼️ Visión artificial, rostros y percepción | Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video. |
 | [VibeVoice](fichas/vibevoice.md) | 🎬 Audio, transcripción, voz y música | Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio. |
-| [VoxCPM](fichas/voxcpm.md) | 🎬 Audio, transcripción, voz y música | Modelo de texto a voz sin tokenizador que clona voces con naturalidad y expresividad alta. |
-| [NVIDIA NeMo Speech](fichas/nemo.md) | 🎬 Audio, transcripción, voz y música | Framework de NVIDIA para entrenar y usar modelos de voz: reconocimiento, síntesis y más. |
+| [VoxCPM](fichas/voxcpm.md) | 🎬 Audio, transcripción, voz y música | VoxCPM2: modelos y herramientas locales de TTS multilingüe,diseño y adaptación de voz. |
+| [NeMo Speech](fichas/nemo.md) | 🎬 Audio, transcripción, voz y música | Framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento. |
 | [ACE-Step-1.5](fichas/ace-step-1-5.md) | 🎬 Audio, transcripción, voz y música | Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. |
 | [MeloTTS](fichas/melotts.md) | 🎬 Audio, transcripción, voz y música | Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles. |
 

@@ -16,34 +16,52 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La ejecución local no exige API; hardware y licencias de modelos como InsightFace se revisan aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. El autor advierte instalación técnica; los pesos de reconocimiento o intercambio pueden tener restricciones no comerciales aunque el código sea accesible |
+| Coste | Sin pago a un modelo en la ruta básica. La ejecución local no exige API; hardware y licencias de modelos como InsightFace se revisan aparte |
+| Equipo | Preparación según la ruta elegida. Python compatible; FFmpeg; modelos ONNX; CPU o GPU según backend; imágenes autorizadas |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El autor advierte instalación técnica; los pesos de reconocimiento o intercambio pueden tener restricciones no comerciales aunque el código sea accesible
 
 ## Qué puedes hacer con él
 
-Convierte un cambio de rostro, que normalmente requiere pipeline complejo, en un flujo de "un clic".
+Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video.
 
 ## Por qué destaca
 
-Es de los proyectos de swap en vivo más conocidos por su facilidad de uso (una sola imagen de origen y arrancar); incluye chequeos contra contenido inapropiado (NSFW/real) para desincentivar usos problemáticos.
+Usos propuestos: Estudiar un efecto facial consentido; Probar un pipeline local de video.
 
 ## Cómo funciona
 
-Combina detección facial (insightface/face_swapper) y reenactment sobre PyTorch+GPU (con backend ONNX Runtime o CUDA) para reemplazar el rostro fotograma a fotograma en un flujo en directo desde la webcam o un archivo.
+El autor advierte instalación técnica; los pesos de reconocimiento o intercambio pueden tener restricciones no comerciales aunque el código sea accesible
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python compatible
+- FFmpeg
+- modelos ONNX
+- CPU o GPU según backend
+- imágenes autorizadas
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (shell):**
+
+```
+git clone --depth 1 https://github.com/hacksider/Deep-Live-Cam.git
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/hacksider/Deep-Live-Cam/blob/main/README.md)
 
@@ -51,23 +69,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Deep-Live-Cam para mi objetivo y necesito pasos guiados. Lee https://github.com/hacksider/Deep-Live-Cam/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Prueba con imágenes propias o autorizadas y revisa artefactos en una salida corta etiquetada como sintética.
+
+**Qué comprobar:** Puedes comparar original y resultado y reconocer errores visibles.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Animar personajes
-- Contenido creativo con rostro (uso responsable y consentido)
-- Prototipos de presentadores virtuales en vivo
+- Estudiar un efecto facial consentido
+- Probar un pipeline local de video
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas swap en vivo legítimo con consentimiento | no puedes garantizar uso ético/consentimiento o no tienes GPU |
+| Tu objetivo encaja con estos ejemplos: Estudiar un efecto facial consentido; Probar un pipeline local de video | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Uso responsable obligatorio: deepfakes de personas sin consentimiento pueden ser ilegales y violar ToS; GPU requerida para tiempo real; revisar licencia antes de uso comercial.
+**Limitaciones:** El autor advierte instalación técnica; los pesos de reconocimiento o intercambio pueden tener restricciones no comerciales aunque el código sea accesible
 
 ## Stack y modelos
 
-- **Stack:** Python, PyTorch, ONNX Runtime, GPU
+- **Stack:** Python compatible; FFmpeg; modelos ONNX; CPU o GPU según backend; imágenes autorizadas
 - **Etiquetas:** `vision` `image` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -90,7 +115,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/hacksider/Deep-Live-Cam/blob/main/README.md)
 

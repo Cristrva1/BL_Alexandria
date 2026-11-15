@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas. | SDK oficial de Python para crear servidores y clientes del Model Context Protocol. |
 | ⭐ Estrellas | 28.5k | 24.9k |
-| Elígelo si… | quieres crear un servidor MCP en Python rápido | quieres el SDK oficial con mínima dependencia |
-| Evítalo si… | trabajas en TypeScript; mira `mcp-typescript-sdk` | quieres funciones extra como auth y composición; mira `fastmcp` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Exponer una función de inventario como herramienta; Probar autenticación de un servidor propio | Tu objetivo encaja con estos ejemplos: Conectar una función Python a MCP; Servir un recurso de texto desde una aplicación |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
 | Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | Apache-2.0 | MIT |
-| Instalación | `pip install fastmcp` | `pip install "mcp[cli]"` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **FastMCP** si quieres crear un servidor MCP en Python rápido.
-- Elige **MCP Python SDK** si quieres el SDK oficial con mínima dependencia.
+- Elige **FastMCP** si Tu objetivo encaja con estos ejemplos: Exponer una función de inventario como herramienta; Probar autenticación de un servidor propio.
+- Elige **MCP Python SDK** si Tu objetivo encaja con estos ejemplos: Conectar una función Python a MCP; Servir un recurso de texto desde una aplicación.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

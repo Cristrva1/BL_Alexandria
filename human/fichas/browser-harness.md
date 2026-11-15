@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 19.1k | MIT | Python | 2026-06-24 |
 
-**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
+**Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,39 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El acceso al navegador propio no necesita API de modelo adicional; el agente y Cloud opcional se pagan aparte |
 | Claude Code | Herramienta MCP para el agente |
 | Codex | Herramienta MCP para el agente |
-| Modelos locales | La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta. |
-| Coste | Consumo del agente que ya utilizas. El modelo se consume en el cliente. Los servicios que la herramienta consulta pueden tener cuentas o tarifas propias. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Ahora es el motor de Browser Use y el README recomienda su CLI; conectar una sesión autenticada concede acceso a lo que esa sesión puede hacer |
+| Coste | El coste depende del proveedor o la ruta. El acceso al navegador propio no necesita API de modelo adicional; el agente y Cloud opcional se pagan aparte |
+| Equipo | Preparación según la ruta elegida. Browser Use CLI actual; Chrome y perfil de prueba; cliente agente |
 
-Puede conectarse a un cliente con soporte MCP, incluido Claude Code o Codex. Debes configurar el servidor y sus permisos.
+Ahora es el motor de Browser Use y el README recomienda su CLI; conectar una sesión autenticada concede acceso a lo que esa sesión puede hacer
 
 ## Qué puedes hacer con él
 
-Conecta el agente a tu navegador por CDP con un arnés pequeño y editable. Útil cuando necesitas libertad total y tus cuentas ya abiertas.
+Arnés mínimo para que Claude Code, Codex o Cursor usen tu Chrome real con tu sesión iniciada.
 
 ## Por qué destaca
 
-De los creadores de browser-use; se configura con un solo prompt.
+Usos propuestos: Probar un agente con un browser propio; Inspeccionar una página autenticada de laboratorio.
 
 ## Cómo funciona
 
-Habla con Chrome por el protocolo DevTools y expone comandos simples que el agente invoca.
+Ahora es el motor de Browser Use y el README recomienda su CLI; conectar una sesión autenticada concede acceso a lo que esa sesión puede hacer
 
 ## Cómo empezar
 
-Se configura en tu agente. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un cliente MCP compatible.
-- Las credenciales del servicio conectado, si las pide el servidor.
+- Browser Use CLI actual
+- Chrome y perfil de prueba
+- cliente agente
 
-1. Instala o configura el servidor según su README.
-2. Añade su comando o URL en la configuración MCP de tu cliente.
-3. Comprueba que aparecen las herramientas antes de asignar una tarea.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/browser-use/browser-harness/blob/main/README.md)
 
@@ -56,23 +59,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Browser Harness para mi objetivo y necesito pasos guiados. Lee https://github.com/browser-use/browser-harness/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Conecta un perfil de prueba y solicita solo leer el título de una página.
+
+**Qué comprobar:** Puedes identificar qué navegador y sesión expone al agente.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Automatizar tareas en webs donde ya estás logueado
-- Pruebas manuales asistidas
-- Investigación con tu sesión
+- Probar un agente con un browser propio
+- Inspeccionar una página autenticada de laboratorio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tu agente debe usar tu navegador real con sesión | necesitas aislamiento; mira `playwright-mcp` |
+| Tu objetivo encaja con estos ejemplos: Probar un agente con un browser propio; Inspeccionar una página autenticada de laboratorio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** El agente actúa con tus cuentas reales: supervisa lo que hace.
+**Limitaciones:** Ahora es el motor de Browser Use y el README recomienda su CLI; conectar una sesión autenticada concede acceso a lo que esa sesión puede hacer
 
 ## Stack y modelos
 
-- **Stack:** Python, CDP
+- **Stack:** Browser Use CLI actual; Chrome y perfil de prueba; cliente agente
 - **Etiquetas:** `browser` `coding-agent` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -97,7 +107,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/browser-use/browser-harness/blob/main/README.md)
 

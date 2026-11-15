@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Las instrucciones usan el agente; las peticiones reales a Gemini o servicios multimedia tienen sus propios límites y tarifas |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. Se distingue instalar una skill de disponer de acceso a la API Gemini; Antigravity tiene una ruta documentada |
+| Coste | El coste depende del proveedor o la ruta. Las instrucciones usan el agente; las peticiones reales a Gemini o servicios multimedia tienen sus propios límites y tarifas |
+| Equipo | Preparación según la ruta elegida. Agente compatible;  cuenta Gemini solo si el proyecto generado llama su API |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+Se distingue instalar una skill de disponer de acceso a la API Gemini; Antigravity tiene una ruta documentada
 
 ## Qué puedes hacer con él
 
-Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini. Añaden instrucciones y referencias sobre las interacciones y patrones de desarrollo de Gemini.
+Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini.
 
 ## Por qué destaca
 
-Construyes aplicaciones que llaman a Gemini y necesitas contexto actualizado para el agente.
+Usos propuestos: Revisar cómo integrar el SDK de Gemini en una aplicación; Preparar una llamada multimodal con datos de prueba.
 
 ## Cómo funciona
 
-Añaden instrucciones y referencias sobre las interacciones y patrones de desarrollo de Gemini.
+Se distingue instalar una skill de disponer de acceso a la API Gemini; Antigravity tiene una ruta documentada
 
 ## Cómo empezar
 
@@ -43,11 +44,25 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Agente compatible
+-  cuenta Gemini solo si el proyecto generado llama su API
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (sh):**
+
+```
+# Interactively browse and install skills.
+npx skills add google-gemini/gemini-skills --list
+
+# Install a specific skill (e.g., gemini-api-dev).
+npx skills add google-gemini/gemini-skills --skill gemini-api-dev
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/google-gemini/gemini-skills/blob/main/README.md)
 
@@ -55,21 +70,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar gemini-skills para mi objetivo y necesito pasos guiados. Lee https://github.com/google-gemini/gemini-skills/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Elige una skill de desarrollo Gemini y pídele preparar un ejemplo sin enviar todavía una petición.
+
+**Qué comprobar:** El ejemplo identifica el SDK, la credencial y el punto donde comenzaría el consumo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Construyes aplicaciones que llaman a Gemini y necesitas contexto actualizado para el agente
+- Revisar cómo integrar el SDK de Gemini en una aplicación
+- Preparar una llamada multimodal con datos de prueba
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| construyes aplicaciones que llaman a Gemini y necesitas contexto actualizado para el agente | no utilizas un agente o flujo compatible con estas instrucciones |
+| Tu objetivo encaja con estos ejemplos: Revisar cómo integrar el SDK de Gemini en una aplicación; Preparar una llamada multimodal con datos de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Las skills no sustituyen la configuración de acceso a la API de Gemini.
+**Limitaciones:** Se distingue instalar una skill de disponer de acceso a la API Gemini; Antigravity tiene una ruta documentada
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Agente compatible;  cuenta Gemini solo si el proyecto generado llama su API
 - **Etiquetas:** `catalogos` `gemini` `gemini-api` `skills` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -80,7 +104,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/google-gemini/gemini-skills/blob/main/README.md)
 

@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La plantilla no usa LLM; publicar y mantener un plugin requiere trabajo y dependencias propias |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es una plantilla para desarrolladores; no ofrece una función de usuario final con solo instalarla como plugin |
+| Coste | Sin pago a un modelo en la ruta básica. La plantilla no usa LLM; publicar y mantener un plugin requiere trabajo y dependencias propias |
+| Equipo | Preparación según la ruta elegida. Node; TypeScript; Git; Obsidian con bóveda de desarrollo |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Es una plantilla para desarrolladores; no ofrece una función de usuario final con solo instalarla como plugin
 
 ## Qué puedes hacer con él
 
 Plantilla oficial para programar un plugin de Obsidian con una estructura inicial y configuración de desarrollo.
 
+## Por qué destaca
+
+Usos propuestos: Aprender a programar un plugin; Prototipar una función para notas.
+
 ## Cómo funciona
 
-Se utiliza como punto de partida: se prepara el entorno del ejemplo y se adapta su código a la tarea.
+Es una plantilla para desarrolladores; no ofrece una función de usuario final con solo instalarla como plugin
 
 ## Cómo empezar
 
@@ -39,12 +44,15 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
-- Obsidian y una bóveda de prueba; instalar una extensión no equivale a instalar la aplicación principal.
+- Node
+- TypeScript
+- Git
+- Obsidian con bóveda de desarrollo
 
-1. Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.
-2. Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.
-3. Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/obsidianmd/obsidian-sample-plugin/blob/master/README.md)
 
@@ -52,21 +60,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar obsidian-sample-plugin para mi objetivo y necesito pasos guiados. Lee https://github.com/obsidianmd/obsidian-sample-plugin/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Copia la plantilla a un proyecto propio y añade un comando que muestre un mensaje ficticio.
+
+**Qué comprobar:** El comando aparece y funciona en la bóveda de desarrollo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Plantilla oficial para programar un plugin de Obsidian con una estructura inicial y configuración de desarrollo.
+- Aprender a programar un plugin
+- Prototipar una función para notas
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Plantilla oficial para programar un plugin de Obsidian con una estructura inicial y configuración de desarrollo. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| Tu objetivo encaja con estos ejemplos: Aprender a programar un plugin; Prototipar una función para notas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Es una plantilla para desarrolladores; no ofrece una función de usuario final con solo instalarla como plugin
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, package.json
+- **Stack:** Node; TypeScript; Git; Obsidian con bóveda de desarrollo
 - **Etiquetas:** `notas` `template` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -77,7 +94,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/obsidianmd/obsidian-sample-plugin/blob/master/README.md)
 

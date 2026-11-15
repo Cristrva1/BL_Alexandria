@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El material es abierto; ejecutar comandos o experimentos usa recursos del agente o proveedor |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. El curso está en construcción y declara comandos para Claude Code y Codex; los resultados de artículos citados no validan por sí solos todas sus propuestas |
+| Coste | Consumo del agente que ya utilizas. El material es abierto; ejecutar comandos o experimentos usa recursos del agente o proveedor |
+| Equipo | Preparación según la ruta elegida. Navegador; agente si utilizas los comandos |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El curso está en construcción y declara comandos para Claude Code y Codex; los resultados de artículos citados no validan por sí solos todas sus propuestas
 
 ## Qué puedes hacer con él
 
-Enseña de forma sistemática qué meter en el prompt y qué dejar fuera para que el modelo responda mejor.
+Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso.
 
 ## Por qué destaca
 
-Aporta un marco conceptual sólido y didáctico en un tema cada vez más decisivo para el rendimiento de los agentes. Combina teoría y notebooks ejecutables, lo que lo hace útil tanto para aprender como para aplicar.
+Usos propuestos: Preparar contexto para una tarea larga; Estudiar memoria y recuperación.
 
 ## Cómo funciona
 
-Combina lecciones en Markdown y notebooks que enseñan técnicas de selección, compresión y estructuración de contexto, de forma agnóstica al modelo. Los notebooks muestran técnicas concretas (RAG, resumen, ventanas deslizantes) reproducibles.
+El curso está en construcción y declara comandos para Claude Code y Codex; los resultados de artículos citados no validan por sí solos todas sus propuestas
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- agente si utilizas los comandos
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/jasontang-ai/Context-Engineering/blob/main/README.md)
 
@@ -51,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Context-Engineering para mi objetivo y necesito pasos guiados. Lee https://github.com/jasontang-ai/Context-Engineering/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Lee el mapa de contexto y reduce un encargo a objetivo, datos pertinentes y límites.
+
+**Qué comprobar:** Puedes justificar qué datos incluyes y cuáles omites.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Diseñar prompts y contexto eficientes
-- Entender límites de ventana
-- Aplicar RAG y compresión de contexto
+- Preparar contexto para una tarea larga
+- Estudiar memoria y recuperación
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres profundizar en contexto y RAG | buscas skills ejecutables listas para copiar |
+| Tu objetivo encaja con estos ejemplos: Preparar contexto para una tarea larga; Estudiar memoria y recuperación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El curso está en construcción y declara comandos para Claude Code y Codex; los resultados de artículos citados no validan por sí solos todas sus propuestas
 
 ## Stack y modelos
 
-- **Stack:** Markdown/notebooks (Python)
+- **Stack:** Navegador; agente si utilizas los comandos
 - **Etiquetas:** `learning` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -73,7 +89,7 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [andrej-karpathy-skills](andrej-karpathy-skills.md) | 233k | Guía de 4 principios inspirada en Andrej Karpathy para que tu agente de código responda útil y sin relleno. |
+| [andrej-karpathy-skills](andrej-karpathy-skills.md) | 233k | Instrucciones para declarar supuestos, simplificar cambios y comprobar objetivos al programar, inspiradas en observaciones de Karpathy. |
 | [headroom](headroom.md) | 79.7k | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. |
 
 ## Enlaces
@@ -83,7 +99,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/jasontang-ai/Context-Engineering/blob/main/README.md)
 

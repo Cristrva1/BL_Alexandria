@@ -16,42 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
+| API de IA | API de IA opcional. La extracción básica es offline; Azure, descripciones LLM y otras extensiones pueden enviar datos y consumir servicios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Instala los extras necesarios; convertir a Markdown no conserva toda la maquetación del original |
+| Coste | El coste depende del proveedor o la ruta. La extracción básica es offline; Azure, descripciones LLM y otras extensiones pueden enviar datos y consumir servicios |
+| Equipo | Preparación según la ruta elegida. Python 3.10–3.14; entorno virtual; extras del formato elegido |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Instala los extras necesarios; convertir a Markdown no conserva toda la maquetación del original
 
 ## Qué puedes hacer con él
 
-Es la puerta de entrada habitual para ingesta de documentos en pipelines RAG.
+Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman.
 
 ## Por qué destaca
 
-Proyecto oficial de Microsoft muy adoptado como paso previo a LLMs, por su salida ordenada y su catálogo de convertidores y plugins; se integra fácil en flujos de ingesta por su CLI y API Python.
+Usos propuestos: Preparar documentos Office para consulta; Crear una copia textual de un informe.
 
 ## Cómo funciona
 
-Detecta el tipo de archivo y aplica el extractor adecuado (parsers de Office, OCR por modelos de visión, Whisper para audio), normalizando todo a Markdown estructurado con encabezados y tablas.
+Instala los extras necesarios; convertir a Markdown no conserva toda la maquetación del original
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python 3.10–3.14
+- entorno virtual
+- extras del formato elegido
 
-```shell
-pip install markitdown
-```
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/microsoft/markitdown/blob/main/README.md)
 
@@ -59,21 +60,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar markitdown para mi objetivo y necesito pasos guiados. Lee https://github.com/microsoft/markitdown/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Convierte un DOCX ficticio a Markdown y revisa títulos, listas y tablas.
+
+**Qué comprobar:** El texto y el orden se pueden contrastar con el documento.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Convertir carpetas de informes (XLSX/PDF) a `.md`
-- Ingesta de datos para IA
-- Preprocesar documentos antes de indexarlos en un vector store
+- Preparar documentos Office para consulta
+- Crear una copia textual de un informe
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| alimentas LLMs con documentos de formatos variados | ya tienes el texto limpio o necesitas fidelidad de layout total (no es un reconstructor de PDF) |
+| Tu objetivo encaja con estos ejemplos: Preparar documentos Office para consulta; Crear una copia textual de un informe | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Instala los extras necesarios; convertir a Markdown no conserva toda la maquetación del original
 
 ## Stack y modelos
 
-- **Stack:** Python 3.8+
+- **Stack:** Python 3.10–3.14; entorno virtual; extras del formato elegido
 - **Etiquetas:** `docs` `python`
 - **Modo de instalación sugerido:** 📦 **Dependencia del proyecto** — instálalo dentro de cada proyecto que lo use
 
@@ -92,7 +102,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/microsoft/markitdown/blob/main/README.md)
 
