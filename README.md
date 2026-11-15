@@ -5,7 +5,7 @@ Encuentra qué usar entre cientos de repositorios de IA y automatización. Entie
 **[Abrir Alexandría en línea](https://cristrva1.github.io/BL_Alexandria/)** — consulta la biblioteca sin descargar ni instalar nada.
 
 <!-- BL:STATS -->
-**676 repos curados** · **16 categorías** · **14 recetas** · 22 rutas por objetivo · acceso revisado el 2026-11-14
+**679 repos curados** · **32 categorías** · **14 recetas** · 22 rutas por objetivo · acceso revisado el 2026-11-14
 <!-- /BL:STATS -->
 
 [Primera vez: lee cómo elegir](human/elegir.md) · [Diccionario breve](human/vocabulario.md)

@@ -1,4 +1,4 @@
-# 10. Analizar datos, crear dashboards y mapas — detalle de repos
+# 10. Dashboards, analítica y mapas — detalle de repos
 
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
@@ -65,27 +65,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** necesitas visualizaciones totalmente personalizadas
 **Evita si:** quieres gráficos estándar rápido; mira `chart-js` o `recharts`
 **Alternativas (elige una):** `echarts`
-
-## `dash`
-role=library · exec=local · setup=medium · mcp=False · prov=— · tags=automation,ui,python
-
-**Qué es:** Cubre el caso de dashboards productivos en Python sin salir del lenguaje.
-**Stack:** Python, Plotly, Flask, web
-**Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
-**Repo:** https://github.com/plotly/dash
-
-**Instalación** [?]: `Seguir la instalación original: https://github.com/plotly/dash/blob/dev/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** quieres dashboards productivos en Python con control del frontend
-**Evita si:** prefieres prototipos ultrarrápidos (streamlit)
-**Combina con:** `streamlit`, `echarts`
 
 ## `data-analyst-roadmap`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=recursos,blogs,businessintelligence,courses,data,dataanalysis,dataanalyst,excel
@@ -168,28 +147,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
 **Elige si:** buscas esta función: Visualizador geoespacial en un globo 3D que reúne fuentes abiertas para explorar información espacial en el navegador.
 **Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
-
-## `gradio`
-role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,python
-
-**Qué es:** Envuelve una función Python en una interfaz web con entradas y salidas de texto, imagen, audio o chat. Base de Hugging Face Spaces.
-**Stack:** Python, Svelte
-**Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
-**Repo:** https://github.com/gradio-app/gradio
-
-**Instalación** [+]: `pip install --upgrade gradio`
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** quieres una demo web de tu modelo rápido
-**Evita si:** construyes una app de datos con varias páginas; mira `streamlit`
-**Combina con:** `transformers`
-**Alternativas (elige una):** `streamlit`
 
 ## `grafana`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=observability,dataviz,typescript,docker
@@ -421,28 +378,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** tu equipo trabaja con SQL y quiere compartir rápido
 **Evita si:** necesitas BI con permisos finos; mira `superset`
 **Alternativas (elige una):** `metabase`, `superset`
-
-## `streamlit`
-role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,dataviz,python
-
-**Qué es:** Convierte un script de datos en una app web interactiva casi al instante.
-**Stack:** Python
-**Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
-**Repo:** https://github.com/streamlit/streamlit
-
-**Instalación** [+]: `pip install streamlit`
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
-
-**Elige si:** quieres una UI de datos al vuelo y prototipos rápidos
-**Evita si:** necesitas una app productiva con control fino del frontend (dash)
-**Combina con:** `dash`, `data-science-ipython-notebooks`
-**Alternativas (elige una):** `gradio`
 
 ## `superset`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=analytics,dataviz,python,docker

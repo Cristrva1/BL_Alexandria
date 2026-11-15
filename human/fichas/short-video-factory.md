@@ -1,4 +1,4 @@
-[🏠 Inicio](../README.md) › [🎬 Crear audio, voz y video](../categorias/12-audio-voz-video.md) › Video generativo y pipelines automáticos
+[🏠 Inicio](../README.md) › [🎬 Editar, grabar y generar video](../categorias/12-audio-voz-video.md) › Video generativo y pipelines automáticos
 
 # 🎬 short-video-factory
 

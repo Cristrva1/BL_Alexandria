@@ -1,4 +1,4 @@
-[🏠 Inicio](../README.md) › [🖼️ Generar imágenes y trabajar con visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Suites generativas todo-en-uno
+[🏠 Inicio](../README.md) › [🖼️ Generar y editar imágenes con IA](../categorias/11-generaci-n-de-imagen-visi-n.md) › Suites generativas todo-en-uno
 
 # 🎬 Open-Generative-AI
 

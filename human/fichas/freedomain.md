@@ -1,4 +1,4 @@
-[🏠 Inicio](../README.md) › [🔌 Conectar herramientas con MCP](../categorias/05-mcp-conectividad.md) › Dominios y recursos de infraestructura
+[🏠 Inicio](../README.md) › [🕸️ Infraestructura, despliegue y herramientas para agentes](../categorias/22-infraestructura-despliegue.md) › Dominios y recursos de infraestructura
 
 # 🔌 FreeDomain
 

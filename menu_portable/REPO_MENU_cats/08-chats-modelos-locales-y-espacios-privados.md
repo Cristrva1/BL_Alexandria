@@ -1,4 +1,4 @@
-# 8. Usar modelos y asistentes locales — detalle de repos
+# 8. Chats, modelos locales y espacios privados — detalle de repos
 
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.

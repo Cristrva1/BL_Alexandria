@@ -4,7 +4,7 @@
 
 Depuradores, descompiladores, análisis de binarios y agentes de pruebas. Trabaja sobre software propio o con autorización y separa análisis, modificación y pruebas activas.
 
-21 repos · 6 secciones
+23 repos · 7 secciones
 
 ## Puntos de partida
 
@@ -22,6 +22,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 - [Análisis y pruebas con agentes](#análisis-y-pruebas-con-agentes) — 4 repos
 - [Protección y verificación de software](#protección-y-verificación-de-software) — 1 repos
 - [Directorios y aprendizaje](#directorios-y-aprendizaje) — 2 repos
+- [Skills de análisis y seguridad](#skills-de-análisis-y-seguridad) — 2 repos
 
 ## Ingeniería inversa y formatos binarios
 
@@ -73,6 +74,13 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [awesome-reverse-engineering](../fichas/awesome-reverse-engineering.md) | Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos. | buscas esta función: Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos. | Sin API de IA en la ruta básica |
 | [awesome-ai-reverse-engineering](../fichas/awesome-ai-reverse-engineering.md) | Directorio de herramientas de ingeniería inversa y análisis de software que pueden trabajar con agentes de IA. | buscas esta función: Directorio de herramientas de ingeniería inversa y análisis de software que pueden trabajar con agentes de IA. | Sin API de IA en la ruta básica |
+
+## Skills de análisis y seguridad
+
+| Repo | Para qué sirve | Elígelo si… | API de IA |
+|---|---|---|---|
+| [security-audit-skill](../fichas/security-audit-skill.md) | Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estructurados. | quieres un proceso reproducible de revisión de seguridad con agentes | Sin API de IA en la ruta básica |
+| [Cybersecurity Skills (comunidad)](../fichas/cybersecurity-skills.md) | Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas autorizadas con Claude Code, Codex y otros agentes. | buscas procedimientos de seguridad para un agente compatible y puedes revisar su alcance y dependencias | Sin API de IA en la ruta básica |
 
 [Comparar alternativas](../comparativas/README.md) · [Cómo empezar](../instalar.md)
 

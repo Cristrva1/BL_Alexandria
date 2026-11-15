@@ -21,7 +21,7 @@ uv run repo-intelligence web build
 uv run pytest
 ```
 
-El script de auditoría guarda material para revisar; no convierte coincidencias de palabras en compatibilidad o precios verificados. `curate_access.py` y `curate_discovery.py` son migraciones editoriales fechadas: revisar sus decisiones antes de reutilizarlas para nuevas incorporaciones.
+El script de auditoría guarda material para revisar; no convierte coincidencias de palabras en compatibilidad o precios verificados. Los scripts de curaduría e importación fechados son migraciones históricas: no repetirlos sin adaptar sus categorías y decisiones. El enriquecedor propone borradores heurísticos; revisar categoría y subcategoría contra el mapa actual antes de incorporarlos.
 
 ## Fechas diferentes
 

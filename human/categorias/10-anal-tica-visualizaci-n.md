@@ -1,10 +1,10 @@
 [Inicio](../README.md) · [Rutas por objetivo](../rutas.md) · [Acceso y costes](../acceso.md)
 
-# Analizar datos, crear dashboards y mapas
+# Dashboards, analítica y mapas
 
-Herramientas para explorar datos, crear gráficos, medir productos y visualizar fuentes abiertas. El chat con datos sí puede añadir un modelo; un gráfico convencional no lo necesita.
+Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes.
 
-26 repos · 7 secciones
+23 repos · 6 secciones
 
 ## Puntos de partida
 
@@ -16,14 +16,12 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Apache Superset](../fichas/superset.md) | Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. | Sin API de IA en la ruta básica |
 | [WrenAI](../fichas/wrenai.md) | BI generativo: convierte preguntas en SQL fiable a través de una capa semántica gobernada. | Depende de la ruta elegida |
 | [Recharts](../fichas/recharts.md) | Librería de gráficos para React construida con D3, declarativa y componible. | Sin API de IA en la ruta básica |
-| [Gradio](../fichas/gradio.md) | Librería Python para crear y compartir apps web de modelos de ML en minutos. | Sin API de IA en la ruta básica |
 
 ## Secciones
 
 - [Analítica web y de producto](#analítica-web-y-de-producto) — 4 repos
 - [BI, dashboards y chat con datos](#bi-dashboards-y-chat-con-datos) — 6 repos
 - [Librerías de gráficos](#librerías-de-gráficos) — 5 repos
-- [Apps de datos en Python](#apps-de-datos-en-python) — 3 repos
 - [Recursos y casos de uso](#recursos-y-casos-de-uso) — 3 repos
 - [Inteligencia de fuentes abiertas y mapas](#inteligencia-de-fuentes-abiertas-y-mapas) — 3 repos
 - [Fotogrametría y mapas desde imágenes](#fotogrametría-y-mapas-desde-imágenes) — 2 repos
@@ -57,14 +55,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Chart.js](../fichas/chart-js.md) | Librería JavaScript para dibujar gráficos en canvas dentro de una página o aplicación web. | quieres gráficos simples sin aprender una librería compleja | Sin API de IA en la ruta básica |
 | [echarts](../fichas/echarts.md) | Librería de visualización potente para gráficos y dashboards web (proyecto Apache), con decenas de tipos de gráfico y soporte de grandes volúmenes de datos. | necesitas gráficos ricos y variados embebidos | Sin API de IA en la ruta básica |
 | [uPlot](../fichas/uplot.md) | Librería ultraligera para gráficos de series temporales capaz de pintar cientos de miles de puntos sin penalizar el rendimiento. | priorizas velocidad y peso del bundle | Sin API de IA en la ruta básica |
-
-## Apps de datos en Python
-
-| Repo | Para qué sirve | Elígelo si… | API de IA |
-|---|---|---|---|
-| [Gradio](../fichas/gradio.md) | Librería Python para crear y compartir apps web de modelos de ML en minutos. | quieres una demo web de tu modelo rápido | Sin API de IA en la ruta básica |
-| [streamlit](../fichas/streamlit.md) | Framework para levantar apps internas y prototipos de datos desde Python con solo unas líneas de script, sin tocar HTML ni JS. | quieres una UI de datos al vuelo y prototipos rápidos | Sin API de IA en la ruta básica |
-| [dash](../fichas/dash.md) | Framework para construir aplicaciones analíticas interactivas en Python combinando gráficos Plotly con componentes de UI reactivos. | quieres dashboards productivos en Python con control del frontend | Sin API de IA en la ruta básica |
 
 ## Recursos y casos de uso
 

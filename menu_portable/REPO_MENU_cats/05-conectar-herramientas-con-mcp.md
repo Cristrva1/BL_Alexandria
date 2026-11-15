@@ -174,46 +174,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** no usas Figma
 **Combina con:** `claude-code`, `ui`, `tailwindcss`
 
-## `free-for-dev`
-role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=recursos,awesome-list,free-for-developers,html
-
-**Qué es:** Directorio de servicios de infraestructura y desarrollo que ofrecen planes o niveles gratuitos. Agrupa servicios por capacidad para comparar opciones antes de configurar un proyecto.
-**Stack:** HTML
-**Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo.
-- Coste: Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
-**Repo:** https://github.com/ripienaar/free-for-dev
-
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** buscas servicios de desarrollo con un nivel gratuito disponible
-**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
-
-## `freedomain`
-role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=recursos,digitalplat,dns,dns-tutorial,documentation,domain,domain-platform,domain-registration
-
-**Qué es:** Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat. Reúne instrucciones para registrar un dominio, configurar nameservers y conectar un proyecto.
-**Stack:** Markdown
-**Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo.
-- Coste: Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
-**Repo:** https://github.com/DigitalPlatDev/FreeDomain
-
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
-_Una referencia no se instala como un servicio único._
-
-**Elige si:** quieres aprender el flujo de dominios y DNS con sus recursos de referencia
-**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
-
 ## `ghidramcp`
 role=runtime · exec=local · setup=medium · mcp=True · prov=— · tags=servidores,mcp,java
 
@@ -277,26 +237,6 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Evita si:** no usas LangChain
 **Combina con:** `langgraph`, `langchain`
 **Alternativas (elige una):** `mcp-use`
-
-## `masterdnsvpn`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=redes,dns,dns-client,dns-proxy,dns-server,dns-tunnel,dns-tunneling,dnstt
-
-**Qué es:** Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. Coordina cliente y servidor con retransmisión y selección de resolvers para enlaces con restricciones.
-**Stack:** Go, Go modules
-**Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
-**Repo:** https://github.com/masterking32/MasterDnsVPN
-
-**Instalación** [?]: `Seguir la instalación original: https://github.com/masterking32/MasterDnsVPN/blob/main/README.MD`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** quieres estudiar transporte de red sobre DNS en un entorno de pruebas
-**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
 
 ## `mcp`
 role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=mcp

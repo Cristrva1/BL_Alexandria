@@ -120,37 +120,37 @@ JOURNEYS: list[dict] = [
         "id": "canal",
         "title": "Hablar con personas",
         "text": "Canal, flujo que decide y rastro de lo que el modelo hizo.",
-        "rooms": [1, 3, 6],
+        "rooms": [17, 18, 1],
     },
     {
         "id": "saber",
         "title": "Enterarte y conectar",
         "text": "Traer información, enchufarla al asistente y entender código grande.",
-        "rooms": [4, 5, 7],
+        "rooms": [4, 32, 21, 5, 6, 7],
     },
     {
         "id": "medio",
         "title": "Producir un medio",
         "text": "Imagen, voz, video y el archivo que los alimenta.",
-        "rooms": [11, 12, 13],
+        "rooms": [11, 29, 12, 30, 13, 31],
     },
     {
         "id": "pantalla",
         "title": "La pantalla y los números",
         "text": "Cómo se ve la app y cómo te enteras de si alguien la usa.",
-        "rooms": [9, 10],
+        "rooms": [9, 26, 10, 25],
     },
     {
         "id": "agente",
         "title": "El agente con el que programas",
         "text": "Skills y guías. Dependen de tu IDE, no del modelo de la app.",
-        "rooms": [2],
+        "rooms": [20, 2, 27, 19],
     },
     {
         "id": "local",
         "title": "Quedarte en tu máquina",
         "text": "Un escritorio privado cuando el material no puede salir.",
-        "rooms": [8],
+        "rooms": [8, 24, 23],
     },
 ]
 

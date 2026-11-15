@@ -2,9 +2,9 @@
 
 # Conectar herramientas con MCP
 
-SDKs, servidores y conectores que dejan a un agente usar herramientas. El servidor MCP aporta acciones o datos; el modelo pertenece al cliente.
+SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza.
 
-27 repos · 5 secciones
+24 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -23,8 +23,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 - [SDKs y frameworks para crear MCP](#sdks-y-frameworks-para-crear-mcp) — 6 repos
 - [Servidores MCP destacados](#servidores-mcp-destacados) — 13 repos
 - [Directorios, clientes y aprendizaje](#directorios-clientes-y-aprendizaje) — 5 repos
-- [Dominios y recursos de infraestructura](#dominios-y-recursos-de-infraestructura) — 2 repos
-- [Redes y transporte](#redes-y-transporte) — 1 repos
 
 ## SDKs y frameworks para crear MCP
 
@@ -64,19 +62,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [awesome-mcp-servers](../fichas/awesome-mcp-servers.md) | Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar. | buscas antes de construir | Sin API de IA en la ruta básica |
 | [Awesome MCP Clients](../fichas/awesome-mcp-clients.md) | Lista curada de clientes que soportan Model Context Protocol: apps, IDEs y agentes. | buscas un cliente para tus servidores MCP | Sin API de IA en la ruta básica |
 | [mcp](../fichas/mcp.md) | Núcleo del Model Context Protocol (spec y SDKs oficiales) para que herramientas, datos y clientes de IA interoperen bajo un mismo estándar abierto. | programas MCP a bajo nivel o necesitas conformidad estricta con la spec | Depende de la ruta elegida |
-
-## Dominios y recursos de infraestructura
-
-| Repo | Para qué sirve | Elígelo si… | API de IA |
-|---|---|---|---|
-| [FreeDomain](../fichas/freedomain.md) | Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat. | quieres aprender el flujo de dominios y DNS con sus recursos de referencia | Sin API de IA en la ruta básica |
-| [free-for-dev](../fichas/free-for-dev.md) | Directorio de servicios de infraestructura y desarrollo que ofrecen planes o niveles gratuitos. | buscas servicios de desarrollo con un nivel gratuito disponible | Sin API de IA en la ruta básica |
-
-## Redes y transporte
-
-| Repo | Para qué sirve | Elígelo si… | API de IA |
-|---|---|---|---|
-| [MasterDnsVPN](../fichas/masterdnsvpn.md) | Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. | quieres estudiar transporte de red sobre DNS en un entorno de pruebas | Sin API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

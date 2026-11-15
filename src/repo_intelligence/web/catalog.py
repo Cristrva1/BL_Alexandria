@@ -252,8 +252,8 @@ def build_catalog(project_root: Path) -> dict:
             {
                 "num": number,
                 "title": source.get("title") or f"Sala {number}",
-                "question": lesson.get("question", ""),
-                "blurb": lesson.get("blurb", ""),
+                "question": source.get("question") or lesson.get("question", ""),
+                "blurb": source.get("desc") or lesson.get("blurb", ""),
                 "description": source.get("desc") or lesson.get("blurb", ""),
                 "subs": source.get("subs") or [],
                 "count": len(members),
