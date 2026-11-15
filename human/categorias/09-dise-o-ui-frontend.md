@@ -1,10 +1,10 @@
 [Inicio](../README.md) · [Rutas por objetivo](../rutas.md) · [Acceso y costes](../acceso.md)
 
-# Diseñar y construir interfaces
+# Diseñar y construir interfaces web
 
-Componentes, estilos, animación, diseño visual y herramientas para crear pantallas. Las librerías de UI no necesitan por sí solas una API de IA.
+Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas.
 
-59 repos · 6 secciones
+28 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -14,19 +14,15 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|
 | [ui](../fichas/ui.md) | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. | Sin API de IA en la ruta básica |
 | [daisyUI](../fichas/daisyui.md) | La librería de componentes más popular para Tailwind CSS, con clases semánticas y temas. | Sin API de IA en la ruta básica |
-| [three.js](../fichas/three-js.md) | Motor 3D (WebGL) para renderizar gráficos y escenas interactivas directamente en el navegador. | Sin API de IA en la ruta básica |
 | [Excalidraw](../fichas/excalidraw.md) | Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa. | Sin API de IA en la ruta básica |
 | [CopilotKit](../fichas/copilotkit.md) | Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. | Depende de la ruta elegida |
-| [Stitch Skills](../fichas/stitch-skills.md) | Colección de skills de agente para trabajar con el servidor MCP de Google Stitch. | Sin API de IA en la ruta básica |
 
 ## Secciones
 
 - [Componentes, iconos y sistemas de diseño](#componentes-iconos-y-sistemas-de-diseño) — 10 repos
 - [CSS y estilos](#css-y-estilos) — 4 repos
-- [Animación y 3D](#animación-y-3d) — 12 repos
 - [Diseño visual, canvas y builders](#diseño-visual-canvas-y-builders) — 6 repos
 - [UI generada con IA y frontends para agentes](#ui-generada-con-ia-y-frontends-para-agentes) — 8 repos
-- [Skills de diseño para agentes](#skills-de-diseño-para-agentes) — 19 repos
 
 ## Componentes, iconos y sistemas de diseño
 
@@ -52,23 +48,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [normalize.css](../fichas/normalize-css.md) | Hoja de estilos que normaliza los defaults entre navegadores para partir de una base de rendering uniforme. | quieres base CSS uniforme y ligera | Sin API de IA en la ruta básica |
 | [flexoki](../fichas/flexoki.md) | Paleta de color para texto, código e interfaces que puede servir de referencia al definir un sistema visual. | buscas esta función: Paleta de color para texto, código e interfaces que puede servir de referencia al definir un sistema visual. | Sin API de IA en la ruta básica |
 
-## Animación y 3D
-
-| Repo | Para qué sirve | Elígelo si… | API de IA |
-|---|---|---|---|
-| [three.js](../fichas/three-js.md) | Motor 3D (WebGL) para renderizar gráficos y escenas interactivas directamente en el navegador. | renderizas 3D en web y quieres control a bajo nivel | Sin API de IA en la ruta básica |
-| [Anime.js](../fichas/animejs.md) | Motor de animación JavaScript ligero para CSS, SVG, DOM y objetos. | quieres animaciones potentes sin framework | Sin API de IA en la ruta básica |
-| [motion](../fichas/motion.md) | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. | animas componentes React con API declarativa | Sin API de IA en la ruta básica |
-| [react-three-fiber](../fichas/react-three-fiber.md) | Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos. | haces 3D en React y quieres reactividad | Sin API de IA en la ruta básica |
-| [GSAP](../fichas/gsap.md) | Librería de animación de alto rendimiento para la web, capaz de orquestar timelines complejos y efectos sincronizados sobre cualquier propiedad del DOM. | necesitas animación avanzada y control fino de timelines | Sin API de IA en la ruta básica |
-| [zdog](../fichas/zdog.md) | Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG. | buscas esta función: Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG. | Sin API de IA en la ruta básica |
-| [pixelfx](../fichas/pixelfx.md) | Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios. | buscas esta función: Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios. | Sin API de IA en la ruta básica |
-| [regl](../fichas/regl.md) | Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar gráficos acelerados en una aplicación web. | buscas esta función: Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar gráficos acelerados en una aplicación web. | Sin API de IA en la ruta básica |
-| [planck.js](../fichas/planck-js.md) | Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript. | buscas esta función: Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript. | Sin API de IA en la ruta básica |
-| [webgl-noise](../fichas/webgl-noise.md) | Rutinas de ruido procedural para shaders de WebGL, útiles para crear texturas y efectos visuales en tiempo real. | buscas esta función: Rutinas de ruido procedural para shaders de WebGL, útiles para crear texturas y efectos visuales en tiempo real. | Sin API de IA en la ruta básica |
-| [scenejs](../fichas/scenejs.md) | Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos. | buscas esta función: Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos. | Sin API de IA en la ruta básica |
-| [react-three-rapier](../fichas/react-three-rapier.md) | Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales. | buscas esta función: Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales. | Sin API de IA en la ruta básica |
-
 ## Diseño visual, canvas y builders
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
@@ -92,30 +71,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [assistant-ui](../fichas/assistant-ui.md) | Librería React y TypeScript para interfaces de chat con IA de calidad producción. | necesitas una UI de chat pulida en React | Depende de la ruta elegida |
 | [UI SDK (Vercel)](../fichas/ui-sdk.md) | Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos. | buscas esta función: Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos. | Sin API de IA en la ruta básica |
 | [Stitch SDK](../fichas/stitch-sdk.md) | SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. | quieres automatizar Stitch | API de IA necesaria |
-
-## Skills de diseño para agentes
-
-| Repo | Para qué sirve | Elígelo si… | API de IA |
-|---|---|---|---|
-| [Stitch Skills](../fichas/stitch-skills.md) | Colección de skills de agente para trabajar con el servidor MCP de Google Stitch. | usas Stitch con un agente de código | Sin API de IA en la ruta básica |
-| [ui-ux-pro-max-skill](../fichas/ui-ux-pro-max-skill.md) | Conjunto de skills que dotan al asistente de código de inteligencia de diseño UI/UX y estilos avanzados, para que las interfaces que genera dejen de verse a "plantilla". | generas UI con IA y el resultado se ve genérico o despulido | Sin API de IA en la ruta básica |
-| [taste-skill](../fichas/taste-skill.md) | Skills "anti-slop" para producir frontends premium (layout, tipografía, motion y espaciado) más skills de generación de imagen para crear mood boards de referencia. | quieres frontends con gusto y no te basta con UI funcional | Sin API de IA en la ruta básica |
-| [impeccable](../fichas/impeccable.md) | Guía de diseño para agentes de código (1 skill, 23 comandos, iteración en browser y 44 detectores de "tells" de UI por IA) que empuja al agente hacia frontends con criterio. | quieres frontends que no parezcan generados por IA | Sin API de IA en la ruta básica |
-| [Front-End-Checklist](../fichas/front-end-checklist.md) | Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo. | quieres una lista de revisión de interfaz y entrega web | Sin API de IA en la ruta básica |
-| [skills_emil](../fichas/skills-emil.md) | Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrollador (design engineering). | trabajas diseño+dev en equipo y sufres el handoff | Sin API de IA en la ruta básica |
-| [hallmark](../fichas/hallmark.md) | Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes. | buscas esta función: Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes. | Sin API de IA en la ruta básica |
-| [design.md](../fichas/design-md.md) | Formato para describir una identidad visual a agentes de código con tokens YAML y prosa. | quieres consistencia de marca con IA y usas agentes para UI | Sin API de IA en la ruta básica |
-| [anatomy](../fichas/anatomy.md) | Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales. | buscas esta función: Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales. | Sin API de IA en la ruta básica |
-| [gsap-skills](../fichas/gsap-skills.md) | Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP. | buscas esta función: Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP. | Sin API de IA en la ruta básica |
-| [modern-web-guidance](../fichas/modern-web-guidance.md) | Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web. | buscas esta función: Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web. | Sin API de IA en la ruta básica |
-| [logo-design-skill](../fichas/logo-design-skill.md) | Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño. | buscas esta función: Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño. | Sin API de IA en la ruta básica |
-| [threejs-skills](../fichas/threejs-skills.md) | Colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js. | buscas esta función: Colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js. | Sin API de IA en la ruta básica |
-| [motion-design-skill](../fichas/motion-design-skill.md) | Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces. | buscas esta función: Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces. | Sin API de IA en la ruta básica |
-| [threejs-game-skills](../fichas/threejs-game-skills.md) | Skills para que un agente construya juegos de navegador con Three.js, interfaz y recursos visuales o sonoros opcionales. | buscas esta función: Skills para que un agente construya juegos de navegador con Three.js, interfaz y recursos visuales o sonoros opcionales. | Sin API de IA en la ruta básica |
-| [dream-loop](../fichas/dream-loop.md) | Skill que combina Blender, generación de imágenes y revisión por un agente para preparar visuales tridimensionales. | buscas esta función: Skill que combina Blender, generación de imágenes y revisión por un agente para preparar visuales tridimensionales. | Sin API de IA en la ruta básica |
-| [design-dna](../fichas/design-dna.md) | Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo coherente. | buscas esta función: Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo coherente. | Sin API de IA en la ruta básica |
-| [3dviz-pro-max](../fichas/3dviz-pro-max.md) | Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código. | buscas esta función: Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código. | Sin API de IA en la ruta básica |
-| [genjutsu](../fichas/genjutsu.md) | Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple. | buscas esta función: Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple. | Sin API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

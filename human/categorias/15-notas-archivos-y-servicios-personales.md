@@ -4,7 +4,7 @@
 
 Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar.
 
-29 repos · 8 secciones
+26 repos · 7 secciones
 
 ## Puntos de partida
 
@@ -19,7 +19,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 - [Notas, bóvedas y conocimiento personal](#notas-bóvedas-y-conocimiento-personal) — 14 repos
 - [Sincronización y gestión de archivos](#sincronización-y-gestión-de-archivos) — 1 repos
 - [Credenciales y privacidad](#credenciales-y-privacidad) — 3 repos
-- [Alojamiento y backend](#alojamiento-y-backend) — 3 repos
 - [Libros, podcasts y bibliotecas personales](#libros-podcasts-y-bibliotecas-personales) — 1 repos
 - [Automatización del hogar](#automatización-del-hogar) — 1 repos
 - [Herramientas y organización personal](#herramientas-y-organización-personal) — 5 repos
@@ -57,14 +56,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [vaultwarden](../fichas/vaultwarden.md) | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. | buscas esta función: Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. | Sin API de IA en la ruta básica |
 | [AdGuardHome](../fichas/adguardhome.md) | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. | buscas esta función: Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. | Sin API de IA en la ruta básica |
 | [Bitwarden Clients](../fichas/bitwarden-clients.md) | Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send. | buscas esta función: Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send. | Sin API de IA en la ruta básica |
-
-## Alojamiento y backend
-
-| Repo | Para qué sirve | Elígelo si… | API de IA |
-|---|---|---|---|
-| [supabase](../fichas/supabase.md) | Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones. | buscas esta función: Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones. | Sin API de IA en la ruta básica |
-| [coolify](../fichas/coolify.md) | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. | buscas esta función: Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. | Sin API de IA en la ruta básica |
-| [CasaOS](../fichas/casaos.md) | Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. | buscas esta función: Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. | Sin API de IA en la ruta básica |
 
 ## Libros, podcasts y bibliotecas personales
 

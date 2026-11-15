@@ -1,10 +1,10 @@
 [Inicio](../README.md) · [Rutas por objetivo](../rutas.md) · [Acceso y costes](../acceso.md)
 
-# Trabajar con documentos y presentaciones
+# PDF, OCR y procesamiento de documentos
 
-Extrae texto, aplica OCR, transforma PDFs o crea diapositivas. Empieza por el formato de entrada y el resultado que necesitas.
+Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas.
 
-28 repos · 6 secciones
+20 repos · 4 secciones
 
 ## Puntos de partida
 
@@ -16,16 +16,12 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [PaddleOCR](../fichas/paddleocr.md) | Toolkit de OCR ligero y potente que convierte imágenes y PDFs en datos estructurados para IA. | Sin API de IA en la ruta básica |
 | [OCRmyPDF](../fichas/ocrmypdf.md) | Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos. | Sin API de IA en la ruta básica |
 | [Stirling-PDF](../fichas/stirling-pdf.md) | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. | Sin API de IA en la ruta básica |
-| [Slidev](../fichas/slidev.md) | Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. | Sin API de IA en la ruta básica |
-| [Mermaid](../fichas/mermaid.md) | Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown. | Sin API de IA en la ruta básica |
 
 ## Secciones
 
 - [Conversión de documentos para IA](#conversión-de-documentos-para-ia) — 8 repos
 - [OCR](#ocr) — 6 repos
 - [Herramientas PDF](#herramientas-pdf) — 5 repos
-- [Presentaciones](#presentaciones) — 5 repos
-- [Diagramas y documentación](#diagramas-y-documentación) — 3 repos
 - [Gestión y archivo de documentos](#gestión-y-archivo-de-documentos) — 1 repos
 
 ## Conversión de documentos para IA
@@ -61,24 +57,6 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [docuseal](../fichas/docuseal.md) | Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. | buscas esta función: Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. | Sin API de IA en la ruta básica |
 | [pdfcraft](../fichas/pdfcraft.md) | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. | manipulas PDFs con privacidad y sin instalar nada | Sin API de IA en la ruta básica |
 | [PdfDing](../fichas/pdfding.md) | Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura. | quieres organizar y leer PDFs en tu servidor | Sin API de IA en la ruta básica |
-
-## Presentaciones
-
-| Repo | Para qué sirve | Elígelo si… | API de IA |
-|---|---|---|---|
-| [Slidev](../fichas/slidev.md) | Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. | haces presentaciones técnicas y quieres control como código | Sin API de IA en la ruta básica |
-| [ppt-master](../fichas/ppt-master.md) | Herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documentos. | quieres PPTX editable de Office rápido | Sin API de IA en la ruta básica |
-| [reveal.js](../fichas/reveal-js.md) | Framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados. | quieres slides web por código, versionables | Sin API de IA en la ruta básica |
-| [Marp](../fichas/marp.md) | Ecosistema para crear presentaciones con Markdown simple y exportarlas a PDF, PPTX o HTML. | quieres slides simples en Markdown | Sin API de IA en la ruta básica |
-| [Presenton](../fichas/presenton.md) | Generador de presentaciones con IA, open source y con API, alternativa a Gamma o Beautiful.ai. | quieres generar presentaciones de negocio con IA | Depende de la ruta elegida |
-
-## Diagramas y documentación
-
-| Repo | Para qué sirve | Elígelo si… | API de IA |
-|---|---|---|---|
-| [Mermaid](../fichas/mermaid.md) | Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown. | quieres diagramas como texto | Sin API de IA en la ruta básica |
-| [archify](../fichas/archify.md) | Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. | quieres explicar una arquitectura o un plan mediante una visualización interactiva | Sin API de IA en la ruta básica |
-| [diagram-design](../fichas/diagram-design.md) | Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad. | buscas esta función: Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad. | Sin API de IA en la ruta básica |
 
 ## Gestión y archivo de documentos
 

@@ -1,4 +1,4 @@
-[🏠 Inicio](../README.md) › [🖼️ Generar imágenes y trabajar con visión](../categorias/11-generaci-n-de-imagen-visi-n.md) › Sensores y percepción espacial
+[🏠 Inicio](../README.md) › [🖼️ Visión artificial, rostros y percepción](../categorias/28-vision-percepcion.md) › Sensores y percepción espacial
 
 # 🖼️ RuView
 

@@ -1,4 +1,4 @@
-[🏠 Inicio](../README.md) › [🎨 Diseñar y construir interfaces](../categorias/09-dise-o-ui-frontend.md) › UI generada con IA y frontends para agentes
+[🏠 Inicio](../README.md) › [🎨 Diseñar y construir interfaces web](../categorias/09-dise-o-ui-frontend.md) › UI generada con IA y frontends para agentes
 
 # 🪄 OpenUI
 

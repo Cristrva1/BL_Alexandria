@@ -356,7 +356,9 @@ def _ficha(cat: Catalog, repo: dict[str, Any], local_ids: set[str]) -> str:
     links = []
     if repo.get("repo_url"):
         label = repo.get("gh") or repo["repo_url"].replace("https://github.com/", "")
-        links.append(f"- 🐙 GitHub: [{label}]({repo['repo_url']})")
+        host = "GitHub" if repo.get("gh") else "Repositorio original"
+        icon = "🐙" if repo.get("gh") else "🔗"
+        links.append(f"- {icon} {host}: [{label}]({repo['repo_url']})")
     if repo.get("homepage"):
         links.append(f"- 🌐 Web: <{repo['homepage']}>")
     for recipe in cat.recipes_using(repo["id"]):
@@ -837,7 +839,8 @@ def _guide_card(cat: Catalog, repo: dict[str, Any]) -> list[str]:
         lines.append(f"**Combina con:** {' · '.join(combos)}  ")
     link_parts = [f"[ficha completa]({ficha_path(repo['id'], 'root')})"]
     if repo.get("repo_url"):
-        link_parts.append(f"[GitHub]({repo['repo_url']})")
+        host = "GitHub" if repo.get("gh") else "Repositorio original"
+        link_parts.append(f"[{host}]({repo['repo_url']})")
     lines += [f"**Más:** {' · '.join(link_parts)}", ""]
     return lines
 

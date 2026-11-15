@@ -1,4 +1,4 @@
-[🏠 Inicio](../README.md) › [📊 Analizar datos, crear dashboards y mapas](../categorias/10-anal-tica-visualizaci-n.md) › Recursos y casos de uso
+[🏠 Inicio](../README.md) › [📊 Dashboards, analítica y mapas](../categorias/10-anal-tica-visualizaci-n.md) › Recursos y casos de uso
 
 # 🗂️ awesome-dataviz
 

@@ -1,0 +1,2138 @@
+{
+  "checked_at": "2026-11-14",
+  "previous_categories": 16,
+  "categories": 32,
+  "total_public_repositories": 679,
+  "moved_count": 299,
+  "moved": [
+    {
+      "id": "whatsapp-web-js",
+      "previous_cat": 1,
+      "previous_sub": "whatsapp",
+      "cat": 17,
+      "sub": "whatsapp"
+    },
+    {
+      "id": "openwa",
+      "previous_cat": 1,
+      "previous_sub": "whatsapp",
+      "cat": 17,
+      "sub": "whatsapp"
+    },
+    {
+      "id": "baileys",
+      "previous_cat": 1,
+      "previous_sub": "whatsapp",
+      "cat": 17,
+      "sub": "whatsapp"
+    },
+    {
+      "id": "fluxer",
+      "previous_cat": 1,
+      "previous_sub": "whatsapp",
+      "cat": 17,
+      "sub": "whatsapp"
+    },
+    {
+      "id": "evolution-api",
+      "previous_cat": 1,
+      "previous_sub": "whatsapp",
+      "cat": 17,
+      "sub": "whatsapp"
+    },
+    {
+      "id": "waha",
+      "previous_cat": 1,
+      "previous_sub": "whatsapp",
+      "cat": 17,
+      "sub": "whatsapp"
+    },
+    {
+      "id": "whatsapp-agentkit",
+      "previous_cat": 1,
+      "previous_sub": "whatsapp",
+      "cat": 17,
+      "sub": "whatsapp"
+    },
+    {
+      "id": "typebot",
+      "previous_cat": 1,
+      "previous_sub": "chatbots",
+      "cat": 17,
+      "sub": "chatbots"
+    },
+    {
+      "id": "rasa",
+      "previous_cat": 1,
+      "previous_sub": "chatbots",
+      "cat": 17,
+      "sub": "chatbots"
+    },
+    {
+      "id": "botpress",
+      "previous_cat": 1,
+      "previous_sub": "chatbots",
+      "cat": 17,
+      "sub": "chatbots"
+    },
+    {
+      "id": "odoo",
+      "previous_cat": 1,
+      "previous_sub": "crm",
+      "cat": 18,
+      "sub": "crm"
+    },
+    {
+      "id": "twenty-main",
+      "previous_cat": 1,
+      "previous_sub": "crm",
+      "cat": 18,
+      "sub": "crm"
+    },
+    {
+      "id": "erpnext",
+      "previous_cat": 1,
+      "previous_sub": "crm",
+      "cat": 18,
+      "sub": "crm"
+    },
+    {
+      "id": "chatwoot",
+      "previous_cat": 1,
+      "previous_sub": "crm",
+      "cat": 18,
+      "sub": "crm"
+    },
+    {
+      "id": "novu",
+      "previous_cat": 1,
+      "previous_sub": "marketing",
+      "cat": 18,
+      "sub": "marketing"
+    },
+    {
+      "id": "listmonk",
+      "previous_cat": 1,
+      "previous_sub": "marketing",
+      "cat": 18,
+      "sub": "marketing"
+    },
+    {
+      "id": "mautic",
+      "previous_cat": 1,
+      "previous_sub": "marketing",
+      "cat": 18,
+      "sub": "marketing"
+    },
+    {
+      "id": "humanizer",
+      "previous_cat": 2,
+      "previous_sub": "escritura",
+      "cat": 27,
+      "sub": "escritura"
+    },
+    {
+      "id": "stop-slop",
+      "previous_cat": 2,
+      "previous_sub": "escritura",
+      "cat": 27,
+      "sub": "escritura"
+    },
+    {
+      "id": "marketingskills",
+      "previous_cat": 2,
+      "previous_sub": "dominio",
+      "cat": 27,
+      "sub": "dominio"
+    },
+    {
+      "id": "agency-agents",
+      "previous_cat": 2,
+      "previous_sub": "dominio",
+      "cat": 27,
+      "sub": "dominio"
+    },
+    {
+      "id": "geo-seo-claude",
+      "previous_cat": 2,
+      "previous_sub": "dominio",
+      "cat": 27,
+      "sub": "dominio"
+    },
+    {
+      "id": "arcads-claude-code",
+      "previous_cat": 2,
+      "previous_sub": "dominio",
+      "cat": 27,
+      "sub": "dominio"
+    },
+    {
+      "id": "prompt-engineering-guide",
+      "previous_cat": 2,
+      "previous_sub": "prompts",
+      "cat": 19,
+      "sub": "prompts"
+    },
+    {
+      "id": "fabric",
+      "previous_cat": 2,
+      "previous_sub": "prompts",
+      "cat": 19,
+      "sub": "prompts"
+    },
+    {
+      "id": "prompts-chat",
+      "previous_cat": 2,
+      "previous_sub": "prompts",
+      "cat": 19,
+      "sub": "prompts"
+    },
+    {
+      "id": "prompt-eng-tutorial",
+      "previous_cat": 2,
+      "previous_sub": "prompts",
+      "cat": 19,
+      "sub": "prompts"
+    },
+    {
+      "id": "prompt-master",
+      "previous_cat": 2,
+      "previous_sub": "prompts",
+      "cat": 19,
+      "sub": "prompts"
+    },
+    {
+      "id": "generative-ai-for-beginners",
+      "previous_cat": 2,
+      "previous_sub": "guias",
+      "cat": 19,
+      "sub": "guias"
+    },
+    {
+      "id": "ai-agents-for-beginners",
+      "previous_cat": 2,
+      "previous_sub": "guias",
+      "cat": 19,
+      "sub": "guias"
+    },
+    {
+      "id": "awesome-llm-apps",
+      "previous_cat": 2,
+      "previous_sub": "guias",
+      "cat": 19,
+      "sub": "guias"
+    },
+    {
+      "id": "openai-cookbook",
+      "previous_cat": 2,
+      "previous_sub": "guias",
+      "cat": 19,
+      "sub": "guias"
+    },
+    {
+      "id": "claude-cookbooks",
+      "previous_cat": 2,
+      "previous_sub": "guias",
+      "cat": 19,
+      "sub": "guias"
+    },
+    {
+      "id": "12-factor-agents",
+      "previous_cat": 2,
+      "previous_sub": "guias",
+      "cat": 19,
+      "sub": "guias"
+    },
+    {
+      "id": "agents-towards-production",
+      "previous_cat": 2,
+      "previous_sub": "guias",
+      "cat": 19,
+      "sub": "guias"
+    },
+    {
+      "id": "loop-engineering",
+      "previous_cat": 2,
+      "previous_sub": "guias",
+      "cat": 19,
+      "sub": "guias"
+    },
+    {
+      "id": "context-engineering",
+      "previous_cat": 2,
+      "previous_sub": "guias",
+      "cat": 19,
+      "sub": "guias"
+    },
+    {
+      "id": "opencode",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "terminal"
+    },
+    {
+      "id": "claude-code",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "terminal"
+    },
+    {
+      "id": "codex",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "terminal"
+    },
+    {
+      "id": "gemini-cli",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "terminal"
+    },
+    {
+      "id": "openhands",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "ingenieria"
+    },
+    {
+      "id": "cline",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "editor"
+    },
+    {
+      "id": "open-interpreter",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "terminal"
+    },
+    {
+      "id": "goose",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "terminal"
+    },
+    {
+      "id": "t3code",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "sesiones"
+    },
+    {
+      "id": "aider",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "terminal"
+    },
+    {
+      "id": "continue",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "editor"
+    },
+    {
+      "id": "swe-agent",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "ingenieria"
+    },
+    {
+      "id": "open-swe",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "ingenieria"
+    },
+    {
+      "id": "openclaw",
+      "previous_cat": 3,
+      "previous_sub": "asistentes",
+      "cat": 21,
+      "sub": "asistentes"
+    },
+    {
+      "id": "hermes-agent",
+      "previous_cat": 3,
+      "previous_sub": "asistentes",
+      "cat": 21,
+      "sub": "asistentes"
+    },
+    {
+      "id": "ruflo",
+      "previous_cat": 3,
+      "previous_sub": "asistentes",
+      "cat": 21,
+      "sub": "asistentes"
+    },
+    {
+      "id": "deeptutor",
+      "previous_cat": 3,
+      "previous_sub": "asistentes",
+      "cat": 21,
+      "sub": "asistentes"
+    },
+    {
+      "id": "multica",
+      "previous_cat": 3,
+      "previous_sub": "asistentes",
+      "cat": 21,
+      "sub": "asistentes"
+    },
+    {
+      "id": "mercury-agent",
+      "previous_cat": 3,
+      "previous_sub": "asistentes",
+      "cat": 21,
+      "sub": "asistentes"
+    },
+    {
+      "id": "autoresearch",
+      "previous_cat": 3,
+      "previous_sub": "research",
+      "cat": 21,
+      "sub": "research"
+    },
+    {
+      "id": "deer-flow",
+      "previous_cat": 3,
+      "previous_sub": "research",
+      "cat": 21,
+      "sub": "research"
+    },
+    {
+      "id": "storm",
+      "previous_cat": 3,
+      "previous_sub": "research",
+      "cat": 21,
+      "sub": "research"
+    },
+    {
+      "id": "gpt-researcher",
+      "previous_cat": 3,
+      "previous_sub": "research",
+      "cat": 21,
+      "sub": "research"
+    },
+    {
+      "id": "composio",
+      "previous_cat": 3,
+      "previous_sub": "infra",
+      "cat": 22,
+      "sub": "infra"
+    },
+    {
+      "id": "e2b",
+      "previous_cat": 3,
+      "previous_sub": "infra",
+      "cat": 22,
+      "sub": "infra"
+    },
+    {
+      "id": "nemoclaw",
+      "previous_cat": 3,
+      "previous_sub": "infra",
+      "cat": 22,
+      "sub": "infra"
+    },
+    {
+      "id": "sandbox",
+      "previous_cat": 3,
+      "previous_sub": "infra",
+      "cat": 22,
+      "sub": "infra"
+    },
+    {
+      "id": "computer-use-preview",
+      "previous_cat": 3,
+      "previous_sub": "infra",
+      "cat": 22,
+      "sub": "infra"
+    },
+    {
+      "id": "nemo-agent-toolkit",
+      "previous_cat": 3,
+      "previous_sub": "infra",
+      "cat": 22,
+      "sub": "infra"
+    },
+    {
+      "id": "agent-protocol",
+      "previous_cat": 3,
+      "previous_sub": "infra",
+      "cat": 22,
+      "sub": "infra"
+    },
+    {
+      "id": "stagehand",
+      "previous_cat": 4,
+      "previous_sub": "navegador",
+      "cat": 32,
+      "sub": "agentes-web"
+    },
+    {
+      "id": "browser-use",
+      "previous_cat": 4,
+      "previous_sub": "navegador",
+      "cat": 32,
+      "sub": "agentes-web"
+    },
+    {
+      "id": "playwright",
+      "previous_cat": 4,
+      "previous_sub": "navegador",
+      "cat": 32,
+      "sub": "bibliotecas"
+    },
+    {
+      "id": "puppeteer",
+      "previous_cat": 4,
+      "previous_sub": "navegador",
+      "cat": 32,
+      "sub": "bibliotecas"
+    },
+    {
+      "id": "lightpanda",
+      "previous_cat": 4,
+      "previous_sub": "navegador",
+      "cat": 32,
+      "sub": "motores-web"
+    },
+    {
+      "id": "selenium",
+      "previous_cat": 4,
+      "previous_sub": "navegador",
+      "cat": 32,
+      "sub": "bibliotecas"
+    },
+    {
+      "id": "skyvern",
+      "previous_cat": 4,
+      "previous_sub": "navegador",
+      "cat": 32,
+      "sub": "agentes-web"
+    },
+    {
+      "id": "browser-harness",
+      "previous_cat": 4,
+      "previous_sub": "navegador",
+      "cat": 32,
+      "sub": "agentes-web"
+    },
+    {
+      "id": "playwright-cli",
+      "previous_cat": 4,
+      "previous_sub": "navegador",
+      "cat": 32,
+      "sub": "agentes-web"
+    },
+    {
+      "id": "vllm",
+      "previous_cat": 6,
+      "previous_sub": "serving",
+      "cat": 23,
+      "sub": "serving"
+    },
+    {
+      "id": "litellm",
+      "previous_cat": 6,
+      "previous_sub": "serving",
+      "cat": 23,
+      "sub": "serving"
+    },
+    {
+      "id": "sglang",
+      "previous_cat": 6,
+      "previous_sub": "serving",
+      "cat": 23,
+      "sub": "serving"
+    },
+    {
+      "id": "headroom",
+      "previous_cat": 6,
+      "previous_sub": "tokens",
+      "cat": 23,
+      "sub": "tokens"
+    },
+    {
+      "id": "promptfoo",
+      "previous_cat": 6,
+      "previous_sub": "observabilidad",
+      "cat": 23,
+      "sub": "observabilidad"
+    },
+    {
+      "id": "langfuse",
+      "previous_cat": 6,
+      "previous_sub": "observabilidad",
+      "cat": 23,
+      "sub": "observabilidad"
+    },
+    {
+      "id": "mlflow",
+      "previous_cat": 6,
+      "previous_sub": "observabilidad",
+      "cat": 23,
+      "sub": "observabilidad"
+    },
+    {
+      "id": "loguru",
+      "previous_cat": 6,
+      "previous_sub": "observabilidad",
+      "cat": 23,
+      "sub": "observabilidad"
+    },
+    {
+      "id": "opik",
+      "previous_cat": 6,
+      "previous_sub": "observabilidad",
+      "cat": 23,
+      "sub": "observabilidad"
+    },
+    {
+      "id": "deepeval",
+      "previous_cat": 6,
+      "previous_sub": "observabilidad",
+      "cat": 23,
+      "sub": "observabilidad"
+    },
+    {
+      "id": "ragas",
+      "previous_cat": 6,
+      "previous_sub": "observabilidad",
+      "cat": 23,
+      "sub": "observabilidad"
+    },
+    {
+      "id": "phoenix",
+      "previous_cat": 6,
+      "previous_sub": "observabilidad",
+      "cat": 23,
+      "sub": "observabilidad"
+    },
+    {
+      "id": "guardrails",
+      "previous_cat": 6,
+      "previous_sub": "observabilidad",
+      "cat": 23,
+      "sub": "observabilidad"
+    },
+    {
+      "id": "unsloth",
+      "previous_cat": 7,
+      "previous_sub": "entrenamiento",
+      "cat": 24,
+      "sub": "entrenamiento"
+    },
+    {
+      "id": "transformers",
+      "previous_cat": 7,
+      "previous_sub": "entrenamiento",
+      "cat": 24,
+      "sub": "entrenamiento"
+    },
+    {
+      "id": "pytorch",
+      "previous_cat": 7,
+      "previous_sub": "entrenamiento",
+      "cat": 24,
+      "sub": "entrenamiento"
+    },
+    {
+      "id": "llama-factory",
+      "previous_cat": 7,
+      "previous_sub": "entrenamiento",
+      "cat": 24,
+      "sub": "entrenamiento"
+    },
+    {
+      "id": "peft",
+      "previous_cat": 7,
+      "previous_sub": "entrenamiento",
+      "cat": 24,
+      "sub": "entrenamiento"
+    },
+    {
+      "id": "trl",
+      "previous_cat": 7,
+      "previous_sub": "entrenamiento",
+      "cat": 24,
+      "sub": "entrenamiento"
+    },
+    {
+      "id": "llm-course",
+      "previous_cat": 7,
+      "previous_sub": "aprender",
+      "cat": 19,
+      "sub": "aprender"
+    },
+    {
+      "id": "llms-from-scratch",
+      "previous_cat": 7,
+      "previous_sub": "aprender",
+      "cat": 19,
+      "sub": "aprender"
+    },
+    {
+      "id": "nanogpt",
+      "previous_cat": 7,
+      "previous_sub": "aprender",
+      "cat": 19,
+      "sub": "aprender"
+    },
+    {
+      "id": "nanochat",
+      "previous_cat": 7,
+      "previous_sub": "aprender",
+      "cat": 19,
+      "sub": "aprender"
+    },
+    {
+      "id": "llm.c",
+      "previous_cat": 7,
+      "previous_sub": "aprender",
+      "cat": 19,
+      "sub": "aprender"
+    },
+    {
+      "id": "how-to-train-your-gpt",
+      "previous_cat": 7,
+      "previous_sub": "aprender",
+      "cat": 19,
+      "sub": "aprender"
+    },
+    {
+      "id": "timesfm",
+      "previous_cat": 7,
+      "previous_sub": "modelos",
+      "cat": 24,
+      "sub": "modelos"
+    },
+    {
+      "id": "deepseek-coder",
+      "previous_cat": 7,
+      "previous_sub": "modelos",
+      "cat": 24,
+      "sub": "modelos"
+    },
+    {
+      "id": "cosmos",
+      "previous_cat": 7,
+      "previous_sub": "modelos",
+      "cat": 24,
+      "sub": "modelos"
+    },
+    {
+      "id": "nemotron",
+      "previous_cat": 7,
+      "previous_sub": "modelos",
+      "cat": 24,
+      "sub": "modelos"
+    },
+    {
+      "id": "duckdb",
+      "previous_cat": 7,
+      "previous_sub": "datos",
+      "cat": 25,
+      "sub": "datos"
+    },
+    {
+      "id": "marimo",
+      "previous_cat": 7,
+      "previous_sub": "datos",
+      "cat": 25,
+      "sub": "datos"
+    },
+    {
+      "id": "polars",
+      "previous_cat": 7,
+      "previous_sub": "datos",
+      "cat": 25,
+      "sub": "datos"
+    },
+    {
+      "id": "data-science-ipython-notebooks",
+      "previous_cat": 7,
+      "previous_sub": "datos",
+      "cat": 25,
+      "sub": "datos"
+    },
+    {
+      "id": "awesome-bigdata",
+      "previous_cat": 7,
+      "previous_sub": "datos",
+      "cat": 25,
+      "sub": "datos"
+    },
+    {
+      "id": "three.js",
+      "previous_cat": 9,
+      "previous_sub": "animacion",
+      "cat": 26,
+      "sub": "animacion"
+    },
+    {
+      "id": "animejs",
+      "previous_cat": 9,
+      "previous_sub": "animacion",
+      "cat": 26,
+      "sub": "animacion"
+    },
+    {
+      "id": "motion",
+      "previous_cat": 9,
+      "previous_sub": "animacion",
+      "cat": 26,
+      "sub": "animacion"
+    },
+    {
+      "id": "react-three-fiber",
+      "previous_cat": 9,
+      "previous_sub": "animacion",
+      "cat": 26,
+      "sub": "animacion"
+    },
+    {
+      "id": "gsap",
+      "previous_cat": 9,
+      "previous_sub": "animacion",
+      "cat": 26,
+      "sub": "animacion"
+    },
+    {
+      "id": "stitch-skills",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "ui-ux-pro-max-skill",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "taste-skill",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "impeccable",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "skills-emil",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "design.md",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "gradio",
+      "previous_cat": 10,
+      "previous_sub": "apps",
+      "cat": 25,
+      "sub": "apps"
+    },
+    {
+      "id": "streamlit",
+      "previous_cat": 10,
+      "previous_sub": "apps",
+      "cat": 25,
+      "sub": "apps"
+    },
+    {
+      "id": "dash",
+      "previous_cat": 10,
+      "previous_sub": "apps",
+      "cat": 25,
+      "sub": "apps"
+    },
+    {
+      "id": "deep-live-cam",
+      "previous_cat": 11,
+      "previous_sub": "rostros",
+      "cat": 28,
+      "sub": "rostros"
+    },
+    {
+      "id": "face-recognition",
+      "previous_cat": 11,
+      "previous_sub": "rostros",
+      "cat": 28,
+      "sub": "rostros"
+    },
+    {
+      "id": "facefusion",
+      "previous_cat": 11,
+      "previous_sub": "rostros",
+      "cat": 28,
+      "sub": "rostros"
+    },
+    {
+      "id": "insightface",
+      "previous_cat": 11,
+      "previous_sub": "rostros",
+      "cat": 28,
+      "sub": "rostros"
+    },
+    {
+      "id": "liveportrait",
+      "previous_cat": 11,
+      "previous_sub": "rostros",
+      "cat": 28,
+      "sub": "rostros"
+    },
+    {
+      "id": "ultralytics",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "sam2",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "opencv",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "segment-anything",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "supervision",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "label-studio",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "whisper-cpp",
+      "previous_cat": 12,
+      "previous_sub": "stt",
+      "cat": 29,
+      "sub": "stt"
+    },
+    {
+      "id": "whisper",
+      "previous_cat": 12,
+      "previous_sub": "stt",
+      "cat": 29,
+      "sub": "stt"
+    },
+    {
+      "id": "faster-whisper",
+      "previous_cat": 12,
+      "previous_sub": "stt",
+      "cat": 29,
+      "sub": "stt"
+    },
+    {
+      "id": "whisperx",
+      "previous_cat": 12,
+      "previous_sub": "stt",
+      "cat": 29,
+      "sub": "stt"
+    },
+    {
+      "id": "nemo",
+      "previous_cat": 12,
+      "previous_sub": "stt",
+      "cat": 29,
+      "sub": "stt"
+    },
+    {
+      "id": "kokoro",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "omnivoice-studio",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "gpt-sovits",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "vibevoice",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "tts",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "voxcpm",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "rvc",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "fish-speech",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "chatterbox",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "index-tts",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "cosyvoice",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "supertonic",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "luxtts",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "pipecat",
+      "previous_cat": 12,
+      "previous_sub": "voz-agentes",
+      "cat": 29,
+      "sub": "voz-agentes"
+    },
+    {
+      "id": "livekit-agents",
+      "previous_cat": 12,
+      "previous_sub": "voz-agentes",
+      "cat": 29,
+      "sub": "voz-agentes"
+    },
+    {
+      "id": "hyperframes",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "motores"
+    },
+    {
+      "id": "skills-remotion",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "skills-video"
+    },
+    {
+      "id": "manim",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "motores"
+    },
+    {
+      "id": "remotion",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "motores"
+    },
+    {
+      "id": "video-use",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "skills-video"
+    },
+    {
+      "id": "videofy-minimal",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "aplicaciones"
+    },
+    {
+      "id": "remotion-superpowers",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "skills-video"
+    },
+    {
+      "id": "openmontage",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "skills-video"
+    },
+    {
+      "id": "audiocraft",
+      "previous_cat": 12,
+      "previous_sub": "musica",
+      "cat": 29,
+      "sub": "musica"
+    },
+    {
+      "id": "slidev",
+      "previous_cat": 13,
+      "previous_sub": "slides",
+      "cat": 31,
+      "sub": "slides"
+    },
+    {
+      "id": "ppt-master",
+      "previous_cat": 13,
+      "previous_sub": "slides",
+      "cat": 31,
+      "sub": "slides"
+    },
+    {
+      "id": "reveal.js",
+      "previous_cat": 13,
+      "previous_sub": "slides",
+      "cat": 31,
+      "sub": "slides"
+    },
+    {
+      "id": "marp",
+      "previous_cat": 13,
+      "previous_sub": "slides",
+      "cat": 31,
+      "sub": "slides"
+    },
+    {
+      "id": "presenton",
+      "previous_cat": 13,
+      "previous_sub": "slides",
+      "cat": 31,
+      "sub": "slides"
+    },
+    {
+      "id": "mermaid",
+      "previous_cat": 13,
+      "previous_sub": "diagramas",
+      "cat": 31,
+      "sub": "diagramas"
+    },
+    {
+      "id": "compai-crm",
+      "previous_cat": 1,
+      "previous_sub": "crm",
+      "cat": 18,
+      "sub": "crm"
+    },
+    {
+      "id": "whatsmeow",
+      "previous_cat": 1,
+      "previous_sub": "whatsapp",
+      "cat": 17,
+      "sub": "whatsapp"
+    },
+    {
+      "id": "500-ai-agents-projects",
+      "previous_cat": 2,
+      "previous_sub": "guias",
+      "cat": 19,
+      "sub": "guias"
+    },
+    {
+      "id": "ai-engineering-hub",
+      "previous_cat": 2,
+      "previous_sub": "guias",
+      "cat": 19,
+      "sub": "guias"
+    },
+    {
+      "id": "chatgpt-dan",
+      "previous_cat": 2,
+      "previous_sub": "prompts",
+      "cat": 19,
+      "sub": "prompts"
+    },
+    {
+      "id": "chatgpt-system-prompt",
+      "previous_cat": 2,
+      "previous_sub": "prompts",
+      "cat": 19,
+      "sub": "prompts"
+    },
+    {
+      "id": "claude-quickstarts",
+      "previous_cat": 2,
+      "previous_sub": "guias",
+      "cat": 19,
+      "sub": "guias"
+    },
+    {
+      "id": "financial-services",
+      "previous_cat": 2,
+      "previous_sub": "dominio",
+      "cat": 27,
+      "sub": "dominio"
+    },
+    {
+      "id": "security-audit-skill",
+      "previous_cat": 2,
+      "previous_sub": "metodologia",
+      "cat": 16,
+      "sub": "skills"
+    },
+    {
+      "id": "social-media-research-skills",
+      "previous_cat": 2,
+      "previous_sub": "dominio",
+      "cat": 27,
+      "sub": "dominio"
+    },
+    {
+      "id": "system-prompts-and-models-of-ai-tools",
+      "previous_cat": 2,
+      "previous_sub": "prompts",
+      "cat": 19,
+      "sub": "prompts"
+    },
+    {
+      "id": "agent-desktop",
+      "previous_cat": 3,
+      "previous_sub": "infra",
+      "cat": 22,
+      "sub": "infra"
+    },
+    {
+      "id": "codex-chatgpt-web",
+      "previous_cat": 3,
+      "previous_sub": "infra",
+      "cat": 22,
+      "sub": "infra"
+    },
+    {
+      "id": "local-deep-research",
+      "previous_cat": 3,
+      "previous_sub": "research",
+      "cat": 21,
+      "sub": "research"
+    },
+    {
+      "id": "mimo-code",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "terminal"
+    },
+    {
+      "id": "nodeterm",
+      "previous_cat": 3,
+      "previous_sub": "infra",
+      "cat": 22,
+      "sub": "infra"
+    },
+    {
+      "id": "open-deep-research",
+      "previous_cat": 3,
+      "previous_sub": "research",
+      "cat": 21,
+      "sub": "research"
+    },
+    {
+      "id": "openclaude",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "terminal"
+    },
+    {
+      "id": "opencode-legacy",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "terminal"
+    },
+    {
+      "id": "opencursor",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "editor"
+    },
+    {
+      "id": "paperclip",
+      "previous_cat": 3,
+      "previous_sub": "asistentes",
+      "cat": 21,
+      "sub": "asistentes"
+    },
+    {
+      "id": "social-media-agent",
+      "previous_cat": 3,
+      "previous_sub": "asistentes",
+      "cat": 21,
+      "sub": "asistentes"
+    },
+    {
+      "id": "agent-browser",
+      "previous_cat": 4,
+      "previous_sub": "navegador",
+      "cat": 32,
+      "sub": "agentes-web"
+    },
+    {
+      "id": "awesome-chrome-devtools",
+      "previous_cat": 4,
+      "previous_sub": "navegador",
+      "cat": 32,
+      "sub": "recursos-web"
+    },
+    {
+      "id": "camofox-browser",
+      "previous_cat": 4,
+      "previous_sub": "navegador",
+      "cat": 32,
+      "sub": "motores-web"
+    },
+    {
+      "id": "free-for-dev",
+      "previous_cat": 5,
+      "previous_sub": "recursos",
+      "cat": 22,
+      "sub": "recursos"
+    },
+    {
+      "id": "freedomain",
+      "previous_cat": 5,
+      "previous_sub": "recursos",
+      "cat": 22,
+      "sub": "recursos"
+    },
+    {
+      "id": "masterdnsvpn",
+      "previous_cat": 5,
+      "previous_sub": "redes",
+      "cat": 22,
+      "sub": "redes"
+    },
+    {
+      "id": "backdoor",
+      "previous_cat": 6,
+      "previous_sub": "serving",
+      "cat": 23,
+      "sub": "serving"
+    },
+    {
+      "id": "rtk",
+      "previous_cat": 6,
+      "previous_sub": "tokens",
+      "cat": 23,
+      "sub": "tokens"
+    },
+    {
+      "id": "tensorrt-llm",
+      "previous_cat": 6,
+      "previous_sub": "serving",
+      "cat": 23,
+      "sub": "serving"
+    },
+    {
+      "id": "awesome-machine-learning",
+      "previous_cat": 7,
+      "previous_sub": "aprender",
+      "cat": 19,
+      "sub": "aprender"
+    },
+    {
+      "id": "bigdata",
+      "previous_cat": 7,
+      "previous_sub": "datos",
+      "cat": 25,
+      "sub": "datos"
+    },
+    {
+      "id": "bionemo-recipes",
+      "previous_cat": 7,
+      "previous_sub": "entrenamiento",
+      "cat": 24,
+      "sub": "entrenamiento"
+    },
+    {
+      "id": "globalbuildingatlas",
+      "previous_cat": 7,
+      "previous_sub": "datos",
+      "cat": 25,
+      "sub": "datos"
+    },
+    {
+      "id": "hudi",
+      "previous_cat": 7,
+      "previous_sub": "datos",
+      "cat": 25,
+      "sub": "datos"
+    },
+    {
+      "id": "machinelearning",
+      "previous_cat": 7,
+      "previous_sub": "aprender",
+      "cat": 19,
+      "sub": "aprender"
+    },
+    {
+      "id": "python-machine-learning-book",
+      "previous_cat": 7,
+      "previous_sub": "aprender",
+      "cat": 19,
+      "sub": "aprender"
+    },
+    {
+      "id": "tensorflow",
+      "previous_cat": 7,
+      "previous_sub": "entrenamiento",
+      "cat": 24,
+      "sub": "entrenamiento"
+    },
+    {
+      "id": "train-llm-from-scratch",
+      "previous_cat": 7,
+      "previous_sub": "aprender",
+      "cat": 19,
+      "sub": "aprender"
+    },
+    {
+      "id": "warp",
+      "previous_cat": 7,
+      "previous_sub": "entrenamiento",
+      "cat": 24,
+      "sub": "entrenamiento"
+    },
+    {
+      "id": "front-end-checklist",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "ruview",
+      "previous_cat": 11,
+      "previous_sub": "sensores",
+      "cat": 28,
+      "sub": "sensores"
+    },
+    {
+      "id": "ace-step-1.5",
+      "previous_cat": 12,
+      "previous_sub": "musica",
+      "cat": 29,
+      "sub": "musica"
+    },
+    {
+      "id": "edge-tts",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "manim-community",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "motores"
+    },
+    {
+      "id": "music-megathread",
+      "previous_cat": 12,
+      "previous_sub": "musica",
+      "cat": 29,
+      "sub": "musica"
+    },
+    {
+      "id": "rea-video",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "skills-video"
+    },
+    {
+      "id": "archify",
+      "previous_cat": 13,
+      "previous_sub": "diagramas",
+      "cat": 31,
+      "sub": "diagramas"
+    },
+    {
+      "id": "dream-loop",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "agentes-chat",
+      "previous_cat": 3,
+      "previous_sub": "asistentes",
+      "cat": 21,
+      "sub": "asistentes"
+    },
+    {
+      "id": "claude-seo",
+      "previous_cat": 2,
+      "previous_sub": "dominio",
+      "cat": 27,
+      "sub": "dominio"
+    },
+    {
+      "id": "awesome-harness-engineering",
+      "previous_cat": 2,
+      "previous_sub": "guias",
+      "cat": 19,
+      "sub": "guias"
+    },
+    {
+      "id": "huashu-motion",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "skills-video"
+    },
+    {
+      "id": "blender-skills",
+      "previous_cat": 11,
+      "previous_sub": "creacion-3d",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "webgl-noise",
+      "previous_cat": 9,
+      "previous_sub": "animacion",
+      "cat": 26,
+      "sub": "animacion"
+    },
+    {
+      "id": "genjutsu",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "i-have-adhd",
+      "previous_cat": 2,
+      "previous_sub": "escritura",
+      "cat": 27,
+      "sub": "escritura"
+    },
+    {
+      "id": "blender",
+      "previous_cat": 11,
+      "previous_sub": "creacion-3d",
+      "cat": 26,
+      "sub": "creacion-3d"
+    },
+    {
+      "id": "rubberband",
+      "previous_cat": 12,
+      "previous_sub": "edicion",
+      "cat": 29,
+      "sub": "audio"
+    },
+    {
+      "id": "diagram-design",
+      "previous_cat": 13,
+      "previous_sub": "diagramas",
+      "cat": 31,
+      "sub": "diagramas"
+    },
+    {
+      "id": "omniroute",
+      "previous_cat": 6,
+      "previous_sub": "serving",
+      "cat": 23,
+      "sub": "serving"
+    },
+    {
+      "id": "opencode-manager",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "sesiones"
+    },
+    {
+      "id": "threejs-skills",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "openpose",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "coolify",
+      "previous_cat": 15,
+      "previous_sub": "infraestructura",
+      "cat": 22,
+      "sub": "infraestructura"
+    },
+    {
+      "id": "opendots",
+      "previous_cat": 3,
+      "previous_sub": "asistentes",
+      "cat": 21,
+      "sub": "asistentes"
+    },
+    {
+      "id": "scenejs",
+      "previous_cat": 9,
+      "previous_sub": "animacion",
+      "cat": 26,
+      "sub": "animacion"
+    },
+    {
+      "id": "dograh",
+      "previous_cat": 12,
+      "previous_sub": "voz-agentes",
+      "cat": 29,
+      "sub": "voz-agentes"
+    },
+    {
+      "id": "papermorph",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "skills-video"
+    },
+    {
+      "id": "sellbird",
+      "previous_cat": 1,
+      "previous_sub": "marketing",
+      "cat": 18,
+      "sub": "marketing"
+    },
+    {
+      "id": "open-seo",
+      "previous_cat": 1,
+      "previous_sub": "marketing",
+      "cat": 18,
+      "sub": "marketing"
+    },
+    {
+      "id": "claude-task-master",
+      "previous_cat": 3,
+      "previous_sub": "infra",
+      "cat": 22,
+      "sub": "infra"
+    },
+    {
+      "id": "videopose3d",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "srt-whiteboard-animation",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "skills-video"
+    },
+    {
+      "id": "postiz-app",
+      "previous_cat": 1,
+      "previous_sub": "marketing",
+      "cat": 18,
+      "sub": "marketing"
+    },
+    {
+      "id": "mediapipe",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "filament",
+      "previous_cat": 11,
+      "previous_sub": "creacion-3d",
+      "cat": 26,
+      "sub": "creacion-3d"
+    },
+    {
+      "id": "modern-web-guidance",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "gsap-skills",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "ozz-animation",
+      "previous_cat": 11,
+      "previous_sub": "creacion-3d",
+      "cat": 26,
+      "sub": "creacion-3d"
+    },
+    {
+      "id": "casaos",
+      "previous_cat": 15,
+      "previous_sub": "infraestructura",
+      "cat": 22,
+      "sub": "infraestructura"
+    },
+    {
+      "id": "instagram-agent-skill",
+      "previous_cat": 2,
+      "previous_sub": "dominio",
+      "cat": 27,
+      "sub": "dominio"
+    },
+    {
+      "id": "linkedin-agent-skill",
+      "previous_cat": 2,
+      "previous_sub": "dominio",
+      "cat": 27,
+      "sub": "dominio"
+    },
+    {
+      "id": "scientific-agent-skills",
+      "previous_cat": 2,
+      "previous_sub": "dominio",
+      "cat": 27,
+      "sub": "dominio"
+    },
+    {
+      "id": "logo-design-skill",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "kornia",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "openidea",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "editor"
+    },
+    {
+      "id": "brag",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "skills-video"
+    },
+    {
+      "id": "lemo-opuscar",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "skills-video"
+    },
+    {
+      "id": "earshot",
+      "previous_cat": 12,
+      "previous_sub": "edicion",
+      "cat": 29,
+      "sub": "audio"
+    },
+    {
+      "id": "motion-design-skill",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "claude-code-usage-monitor",
+      "previous_cat": 6,
+      "previous_sub": "observabilidad",
+      "cat": 23,
+      "sub": "observabilidad"
+    },
+    {
+      "id": "cloud-mail",
+      "previous_cat": 1,
+      "previous_sub": "marketing",
+      "cat": 18,
+      "sub": "marketing"
+    },
+    {
+      "id": "threejs-game-skills",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "zdog",
+      "previous_cat": 9,
+      "previous_sub": "animacion",
+      "cat": 26,
+      "sub": "animacion"
+    },
+    {
+      "id": "awesome-cad",
+      "previous_cat": 11,
+      "previous_sub": "creacion-3d",
+      "cat": 26,
+      "sub": "creacion-3d"
+    },
+    {
+      "id": "claude-animated-shorts",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "skills-video"
+    },
+    {
+      "id": "claude-code-router",
+      "previous_cat": 6,
+      "previous_sub": "serving",
+      "cat": 23,
+      "sub": "serving"
+    },
+    {
+      "id": "mvanhorn",
+      "previous_cat": 2,
+      "previous_sub": "guias",
+      "cat": 19,
+      "sub": "guias"
+    },
+    {
+      "id": "melotts",
+      "previous_cat": 12,
+      "previous_sub": "tts",
+      "cat": 29,
+      "sub": "tts"
+    },
+    {
+      "id": "laya",
+      "previous_cat": 7,
+      "previous_sub": "modelos",
+      "cat": 24,
+      "sub": "modelos"
+    },
+    {
+      "id": "hallmark",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "mmpose",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "openfilm",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "skills-video"
+    },
+    {
+      "id": "hello-halo",
+      "previous_cat": 3,
+      "previous_sub": "asistentes",
+      "cat": 21,
+      "sub": "asistentes"
+    },
+    {
+      "id": "pixelfx",
+      "previous_cat": 9,
+      "previous_sub": "animacion",
+      "cat": 26,
+      "sub": "animacion"
+    },
+    {
+      "id": "no-ai-slop",
+      "previous_cat": 2,
+      "previous_sub": "escritura",
+      "cat": 27,
+      "sub": "escritura"
+    },
+    {
+      "id": "planck-js",
+      "previous_cat": 9,
+      "previous_sub": "animacion",
+      "cat": 26,
+      "sub": "animacion"
+    },
+    {
+      "id": "react-three-rapier",
+      "previous_cat": 9,
+      "previous_sub": "animacion",
+      "cat": 26,
+      "sub": "animacion"
+    },
+    {
+      "id": "regl",
+      "previous_cat": 9,
+      "previous_sub": "animacion",
+      "cat": 26,
+      "sub": "animacion"
+    },
+    {
+      "id": "fugu",
+      "previous_cat": 3,
+      "previous_sub": "asistentes",
+      "cat": 21,
+      "sub": "asistentes"
+    },
+    {
+      "id": "shepherd",
+      "previous_cat": 3,
+      "previous_sub": "infra",
+      "cat": 22,
+      "sub": "infra"
+    },
+    {
+      "id": "4d-humans",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "minimalist-entrepreneur-skills",
+      "previous_cat": 2,
+      "previous_sub": "dominio",
+      "cat": 27,
+      "sub": "dominio"
+    },
+    {
+      "id": "supabase",
+      "previous_cat": 15,
+      "previous_sub": "infraestructura",
+      "cat": 22,
+      "sub": "infraestructura"
+    },
+    {
+      "id": "motionmaxxing",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "skills-video"
+    },
+    {
+      "id": "tfjs-models",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "3dviz-pro-max",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "video-shotcraft",
+      "previous_cat": 12,
+      "previous_sub": "programatico",
+      "cat": 30,
+      "sub": "skills-video"
+    },
+    {
+      "id": "anatomy",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "rnnoise",
+      "previous_cat": 12,
+      "previous_sub": "edicion",
+      "cat": 29,
+      "sub": "audio"
+    },
+    {
+      "id": "wham",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "design-dna",
+      "previous_cat": 9,
+      "previous_sub": "skills",
+      "cat": 27,
+      "sub": "skills"
+    },
+    {
+      "id": "meshoptimizer",
+      "previous_cat": 11,
+      "previous_sub": "creacion-3d",
+      "cat": 26,
+      "sub": "creacion-3d"
+    },
+    {
+      "id": "easymocap",
+      "previous_cat": 11,
+      "previous_sub": "vision",
+      "cat": 28,
+      "sub": "vision"
+    },
+    {
+      "id": "dsh-android",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "plataformas"
+    },
+    {
+      "id": "dsh-game-studio",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "plataformas"
+    },
+    {
+      "id": "dsh-ios",
+      "previous_cat": 3,
+      "previous_sub": "coding",
+      "cat": 20,
+      "sub": "plataformas"
+    }
+  ],
+  "counts": {
+    "1": 16,
+    "2": 31,
+    "3": 34,
+    "4": 23,
+    "5": 24,
+    "6": 23,
+    "7": 15,
+    "8": 28,
+    "9": 28,
+    "10": 23,
+    "11": 16,
+    "12": 21,
+    "13": 20,
+    "14": 28,
+    "15": 26,
+    "16": 23,
+    "17": 11,
+    "18": 12,
+    "19": 32,
+    "20": 22,
+    "21": 18,
+    "22": 18,
+    "23": 19,
+    "24": 15,
+    "25": 11,
+    "26": 17,
+    "27": 36,
+    "28": 21,
+    "29": 29,
+    "30": 19,
+    "31": 8,
+    "32": 12
+  },
+  "preserved": "Identidades, enlaces de fichas, fuentes, perfiles de acceso y objetivos conservados.",
+  "repositories_before_followup": 676
+}

@@ -123,6 +123,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** buscas esta función: Herramientas para estudiar cómo funciona una aplicación y ayudar a construir una implementación propia con agentes.
 **Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
+## `cybersecurity-skills`
+role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=cybersecurity,seguridad,skills,claude-code,codex,comunidad
+
+**Qué es:** Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas autorizadas con Claude Code, Codex y otros agentes.
+**Stack:** agentskills.io; Markdown; ejemplos y herramientas según la skill
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La biblioteca de instrucciones no requiere una clave propia de IA; el modelo pertenece al agente que utilices.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. La biblioteca no sirve un modelo. El cliente y las herramientas de la skill elegida determinan la ejecución.
+- Coste: Consumo del agente que ya utilizas. Código Apache-2.0; el agente, los laboratorios y servicios de cada skill pueden tener costes.
+- Equipo: Equipo normal; revisar dependencias. Consulta las dependencias de una sola skill; algunos análisis necesitan herramientas o un laboratorio adicional.
+**Repo:** https://github.com/mukul975/Anthropic-Cybersecurity-Skills
+
+**Instalación** [+]: `npx skills add mukul975/Anthropic-Cybersecurity-Skills`
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** buscas procedimientos de seguridad para un agente compatible y puedes revisar su alcance y dependencias
+**Evita si:** esperas una auditoría automática garantizada o una herramienta oficial de Anthropic
+
 ## `dnspy`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=depuracion,app,c
 
@@ -365,6 +385,27 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** buscas esta función: Herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola.
 **Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 **Alternativas (elige una):** `radare2`
+
+## `security-audit-skill`
+role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=metodologia,javascript
+
+**Qué es:** Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estructurados. Divide la revisión en reconocimiento, búsqueda por cobertura y verificación de candidatos antes del informe.
+**Stack:** JavaScript
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación.
+- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+**Repo:** https://github.com/cloudflare/security-audit-skill
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/cloudflare/security-audit-skill/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** quieres un proceso reproducible de revisión de seguridad con agentes
+**Evita si:** no utilizas un agente o flujo compatible con estas instrucciones
+**Combina con:** `codex`
 
 ## `shannon`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=local · tags=agentes,agent,typescript

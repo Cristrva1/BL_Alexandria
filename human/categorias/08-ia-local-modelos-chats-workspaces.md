@@ -1,8 +1,8 @@
 [Inicio](../README.md) · [Rutas por objetivo](../rutas.md) · [Acceso y costes](../acceso.md)
 
-# Usar modelos y asistentes locales
+# Chats, modelos locales y espacios privados
 
-Motores de modelos, clientes de chat y espacios de trabajo. Instalar una interfaz local no garantiza que el modelo sea local: comprueba su backend.
+Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha.
 
 28 repos · 4 secciones
 

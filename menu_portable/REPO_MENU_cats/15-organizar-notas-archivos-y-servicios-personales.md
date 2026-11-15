@@ -145,26 +145,6 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** buscas esta función: Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send.
 **Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
-## `casaos`
-role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=infraestructura,server,go
-
-**Qué es:** Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos.
-**Stack:** Go, go.mod, package.json
-**Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
-**Repo:** https://github.com/IceWhaleTech/CasaOS
-
-**Instalación** [?]: `Seguir la instalación original: https://github.com/IceWhaleTech/CasaOS/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** buscas esta función: Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
-
 ## `claude-obsidian`
 role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=notas,skill,python
 
@@ -204,26 +184,6 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=personal
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
 **Elige si:** buscas esta función: Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante ADB.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
-
-## `coolify`
-role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=infraestructura,server,php
-
-**Qué es:** Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.
-**Stack:** PHP, docker-compose.yml, package.json
-**Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
-**Repo:** https://github.com/coollabsio/coolify
-
-**Instalación** [?]: `Seguir la instalación original: https://github.com/coollabsio/coolify/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** buscas esta función: Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.
 **Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `home-assistant`
@@ -506,26 +466,6 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=personal,a
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
 **Elige si:** buscas esta función: Aplicación para revisar y ajustar opciones de rendimiento, privacidad y configuración de un equipo con Windows.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
-
-## `supabase`
-role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=infraestructura,server,typescript
-
-**Qué es:** Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones.
-**Stack:** TypeScript, package.json
-**Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
-**Repo:** https://github.com/supabase/supabase
-
-**Instalación** [?]: `Seguir la instalación original: https://github.com/supabase/supabase/blob/master/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
-
-**Elige si:** buscas esta función: Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones.
 **Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `syncthing`

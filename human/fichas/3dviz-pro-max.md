@@ -1,4 +1,4 @@
-[🏠 Inicio](../README.md) › [🎨 Diseñar y construir interfaces](../categorias/09-dise-o-ui-frontend.md) › Skills de diseño para agentes
+[🏠 Inicio](../README.md) › [🎨 Skills de diseño, contenido y especialidades](../categorias/27-skills-especializadas.md) › Skills de diseño para agentes
 
 # 🎨 3dviz-pro-max
 

@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 676 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 679 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -186,7 +186,8 @@
    "snapshot": "reports/github-stars-2026-11-14.json"
   },
   "access_checked": "2026-11-14",
-  "document_checked": "2026-11-14"
+  "document_checked": "2026-11-14",
+  "taxonomy_revision": "2026-11-14-32"
  },
  "legend": {
   "exec": {
@@ -303,10 +304,10 @@
   {
    "num": 1,
    "emoji": "🤖",
-   "title": "Automatizar negocios y comunicación",
-   "desc": "Conecta aplicaciones, organiza clientes, atiende mensajes o programa procesos. Empieza por un motor de flujos; añade canales y CRM según tu objetivo.",
+   "title": "Automatizar procesos y crear herramientas internas",
+   "desc": "Motores de flujos, ecosistema n8n y aplicaciones internas. Elige el motor del proceso y conecta después sus fuentes de datos, canales y modelos.",
    "file": "human/categorias/01-automatizaci-n-mensajer-a-crm.md",
-   "count": 39,
+   "count": 16,
    "subs": [
     {
      "key": "motores",
@@ -317,34 +318,19 @@
      "title": "Ecosistema n8n"
     },
     {
-     "key": "whatsapp",
-     "title": "WhatsApp y mensajería"
-    },
-    {
-     "key": "chatbots",
-     "title": "Chatbots y asistentes conversacionales"
-    },
-    {
-     "key": "crm",
-     "title": "CRM, ERP y soporte al cliente"
-    },
-    {
-     "key": "marketing",
-     "title": "Email, marketing y notificaciones"
-    },
-    {
      "key": "internas",
      "title": "Apps internas y bases de datos no-code"
     }
-   ]
+   ],
+   "question": "¿Quieres conectar aplicaciones o automatizar tareas repetidas?"
   },
   {
    "num": 2,
    "emoji": "🧠",
-   "title": "Mejorar tu agente: skills y prompts",
-   "desc": "Instrucciones, plugins y métodos que añades a un agente que ya utilizas. Distingue una skill concreta de un directorio que solo enlaza a otras.",
+   "title": "Skills, plugins y métodos para agentes",
+   "desc": "Catálogos de skills, plugins y métodos generales de desarrollo. Elige según tu cliente y consulta las especialidades de diseño o negocio en su sala específica.",
    "file": "human/categorias/02-skills-prompts-gu-as-de-agente.md",
-   "count": 69,
+   "count": 31,
    "subs": [
     {
      "key": "catalogos",
@@ -353,37 +339,18 @@
     {
      "key": "metodologia",
      "title": "Metodologías y harness para agentes de código"
-    },
-    {
-     "key": "escritura",
-     "title": "Escritura y calidad de texto"
-    },
-    {
-     "key": "dominio",
-     "title": "Skills de dominio: marketing, SEO y negocio"
-    },
-    {
-     "key": "prompts",
-     "title": "Prompts y prompt engineering"
-    },
-    {
-     "key": "guias",
-     "title": "Guías, cursos y cookbooks"
     }
-   ]
+   ],
+   "question": "¿Quieres mejorar la forma de trabajar de tu agente?"
   },
   {
    "num": 3,
    "emoji": "🕸️",
-   "title": "Crear y usar agentes de IA",
-   "desc": "Agentes listos para trabajar y frameworks para construir los tuyos. Un agente de código se utiliza; un framework se integra dentro de una aplicación.",
+   "title": "Construir agentes y coordinar equipos de IA",
+   "desc": "Frameworks, builders visuales y experimentos de coordinación. Separa la base técnica que integras del asistente listo que utilizas para una tarea.",
    "file": "human/categorias/03-frameworks-orquestaci-n-de-agentes.md",
-   "count": 86,
+   "count": 34,
    "subs": [
-    {
-     "key": "coding",
-     "title": "Agentes de código (terminal e IDE)"
-    },
     {
      "key": "py",
      "title": "Frameworks de agentes en Python"
@@ -397,30 +364,19 @@
      "title": "Builders visuales y plataformas de agentes"
     },
     {
-     "key": "asistentes",
-     "title": "Asistentes autónomos y equipos de agentes"
-    },
-    {
-     "key": "research",
-     "title": "Agentes de research autónomo"
-    },
-    {
-     "key": "infra",
-     "title": "Infraestructura: sandboxes, herramientas y protocolos"
-    },
-    {
      "key": "experimentos",
      "title": "Simulación, evolución y debate entre modelos"
     }
-   ]
+   ],
+   "question": "¿Necesitas desarrollar el agente dentro de tu aplicación?"
   },
   {
    "num": 4,
    "emoji": "🕷️",
-   "title": "Buscar y extraer información web",
-   "desc": "Buscadores, crawlers y navegadores. Usa un crawler para extraer páginas, un navegador para interactuar y un agente para investigar con un modelo.",
+   "title": "Buscar, extraer y monitorear información web",
+   "desc": "Buscadores, crawlers, extracción y seguimiento de páginas o redes. Para hacer clic y operar interfaces utiliza la sala de navegadores y automatización web.",
    "file": "human/categorias/04-scraping-b-squeda-research-web.md",
-   "count": 35,
+   "count": 23,
    "subs": [
     {
      "key": "crawlers",
@@ -431,10 +387,6 @@
      "title": "Scraping guiado por LLM"
     },
     {
-     "key": "navegador",
-     "title": "Navegadores y automatización web"
-    },
-    {
      "key": "busqueda",
      "title": "Búsqueda, monitoreo y research web"
     },
@@ -442,15 +394,16 @@
      "key": "social",
      "title": "Redes sociales y descarga de medios"
     }
-   ]
+   ],
+   "question": "¿Quieres encontrar información o convertir páginas en datos?"
   },
   {
    "num": 5,
    "emoji": "🔌",
    "title": "Conectar herramientas con MCP",
-   "desc": "SDKs, servidores y conectores que dejan a un agente usar herramientas. El servidor MCP aporta acciones o datos; el modelo pertenece al cliente.",
+   "desc": "SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o datos; el modelo y su acceso pertenecen al cliente que lo utiliza.",
    "file": "human/categorias/05-mcp-conectividad.md",
-   "count": 27,
+   "count": 24,
    "subs": [
     {
      "key": "sdk",
@@ -463,24 +416,17 @@
     {
      "key": "directorios",
      "title": "Directorios, clientes y aprendizaje"
-    },
-    {
-     "key": "recursos",
-     "title": "Dominios y recursos de infraestructura"
-    },
-    {
-     "key": "redes",
-     "title": "Redes y transporte"
     }
-   ]
+   ],
+   "question": "¿Quieres que un asistente use tus archivos o herramientas?"
   },
   {
    "num": 6,
    "emoji": "🧬",
-   "title": "Memoria, conocimiento y operación de IA",
-   "desc": "Guarda memoria, consulta documentos con RAG, sirve modelos y evalúa resultados. Una base vectorial y un sistema RAG completo resuelven capas distintas.",
+   "title": "Memoria, RAG y búsqueda de conocimiento",
+   "desc": "Memoria persistente, sistemas RAG y bases vectoriales. La memoria mantiene contexto; RAG recupera documentos; una base vectorial almacena el índice de búsqueda.",
    "file": "human/categorias/06-memoria-rag-llm-ops.md",
-   "count": 42,
+   "count": 23,
    "subs": [
     {
      "key": "memoria",
@@ -493,28 +439,17 @@
     {
      "key": "vectores",
      "title": "Bases vectoriales y búsqueda semántica"
-    },
-    {
-     "key": "serving",
-     "title": "Serving y gateways de LLM"
-    },
-    {
-     "key": "tokens",
-     "title": "Ahorro de contexto y tokens"
-    },
-    {
-     "key": "observabilidad",
-     "title": "Observabilidad, evaluación y guardrails"
     }
-   ]
+   ],
+   "question": "¿Necesitas recordar información o consultar tus documentos?"
   },
   {
    "num": 7,
    "emoji": "🧑‍💻",
-   "title": "Entender código, trabajar con datos y entrenar modelos",
-   "desc": "Herramientas para analizar código, procesar datos, aprender machine learning y entrenar modelos. Separa los ejemplos de aprendizaje de las librerías que integras.",
+   "title": "Entender código y comprobar su calidad",
+   "desc": "Índices de código, análisis, calidad, benchmarks y herramientas de desarrollo. Empieza por comprender el proyecto y después elige qué comprobaciones necesitas.",
    "file": "human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md",
-   "count": 47,
+   "count": 15,
    "subs": [
     {
      "key": "codigo",
@@ -525,32 +460,17 @@
      "title": "Calidad, seguridad y benchmarks de código"
     },
     {
-     "key": "entrenamiento",
-     "title": "Entrenar y afinar modelos"
-    },
-    {
-     "key": "aprender",
-     "title": "Aprender LLMs desde cero"
-    },
-    {
-     "key": "modelos",
-     "title": "Modelos abiertos y fundacionales"
-    },
-    {
      "key": "herramientas",
      "title": "CLIs y SDKs de desarrollo"
-    },
-    {
-     "key": "datos",
-     "title": "Datos y notebooks"
     }
-   ]
+   ],
+   "question": "¿Quieres que el agente entienda un repositorio o revisar el código?"
   },
   {
    "num": 8,
    "emoji": "🏠",
-   "title": "Usar modelos y asistentes locales",
-   "desc": "Motores de modelos, clientes de chat y espacios de trabajo. Instalar una interfaz local no garantiza que el modelo sea local: comprueba su backend.",
+   "title": "Chats, modelos locales y espacios privados",
+   "desc": "Motores locales, chats y workspaces. Tener la interfaz en tu equipo no garantiza que el modelo sea local: comprueba su backend y los requisitos de cada ficha.",
    "file": "human/categorias/08-ia-local-modelos-chats-workspaces.md",
    "count": 28,
    "subs": [
@@ -570,15 +490,16 @@
      "key": "notebooklm",
      "title": "NotebookLM: alternativas y clientes"
     }
-   ]
+   ],
+   "question": "¿Quieres conversar con un modelo o reunir tus documentos en un espacio propio?"
   },
   {
    "num": 9,
    "emoji": "🎨",
-   "title": "Diseñar y construir interfaces",
-   "desc": "Componentes, estilos, animación, diseño visual y herramientas para crear pantallas. Las librerías de UI no necesitan por sí solas una API de IA.",
+   "title": "Diseñar y construir interfaces web",
+   "desc": "Componentes, estilos, editores visuales y herramientas de UI con IA. Elige la base de tu interfaz y consulta animación o skills especializadas en sus salas.",
    "file": "human/categorias/09-dise-o-ui-frontend.md",
-   "count": 59,
+   "count": 28,
    "subs": [
     {
      "key": "componentes",
@@ -589,30 +510,23 @@
      "title": "CSS y estilos"
     },
     {
-     "key": "animacion",
-     "title": "Animación y 3D"
-    },
-    {
      "key": "diseno",
      "title": "Diseño visual, canvas y builders"
     },
     {
      "key": "ia-ui",
      "title": "UI generada con IA y frontends para agentes"
-    },
-    {
-     "key": "skills",
-     "title": "Skills de diseño para agentes"
     }
-   ]
+   ],
+   "question": "¿Quieres construir las pantallas de una aplicación?"
   },
   {
    "num": 10,
    "emoji": "📊",
-   "title": "Analizar datos, crear dashboards y mapas",
-   "desc": "Herramientas para explorar datos, crear gráficos, medir productos y visualizar fuentes abiertas. El chat con datos sí puede añadir un modelo; un gráfico convencional no lo necesita.",
+   "title": "Dashboards, analítica y mapas",
+   "desc": "Analítica web, BI, gráficos y herramientas geoespaciales. Medir visitas, consultar un negocio y procesar fotografías para crear mapas requieren piezas diferentes.",
    "file": "human/categorias/10-anal-tica-visualizaci-n.md",
-   "count": 26,
+   "count": 23,
    "subs": [
     {
      "key": "producto",
@@ -627,10 +541,6 @@
      "title": "Librerías de gráficos"
     },
     {
-     "key": "apps",
-     "title": "Apps de datos en Python"
-    },
-    {
      "key": "recursos",
      "title": "Recursos y casos de uso"
     },
@@ -642,15 +552,16 @@
      "key": "geoespacial",
      "title": "Fotogrametría y mapas desde imágenes"
     }
-   ]
+   ],
+   "question": "¿Quieres visualizar datos, medir un producto o explorar un mapa?"
   },
   {
    "num": 11,
    "emoji": "🖼️",
-   "title": "Generar imágenes y trabajar con visión",
-   "desc": "Generación, restauración, detección, segmentación y etiquetado de imágenes. Revisa por separado la licencia de los pesos y el hardware del modelo.",
+   "title": "Generar y editar imágenes con IA",
+   "desc": "Interfaces y modelos de generación, recorte, restauración y ampliación. Distingue la aplicación, sus modelos y el coste o equipo para generar cada imagen.",
    "file": "human/categorias/11-generaci-n-de-imagen-visi-n.md",
-   "count": 43,
+   "count": 16,
    "subs": [
     {
      "key": "interfaces",
@@ -665,72 +576,38 @@
      "title": "Restauración, upscaling y edición"
     },
     {
-     "key": "rostros",
-     "title": "Rostros y retratos animados"
-    },
-    {
-     "key": "vision",
-     "title": "Visión por computador"
-    },
-    {
      "key": "suites",
      "title": "Suites generativas todo-en-uno"
-    },
-    {
-     "key": "sensores",
-     "title": "Sensores y percepción espacial"
-    },
-    {
-     "key": "creacion-3d",
-     "title": "Creación, renderizado y animación 3D"
     }
-   ]
+   ],
+   "question": "¿Quieres crear una imagen o mejorar una que ya tienes?"
   },
   {
    "num": 12,
    "emoji": "🎬",
-   "title": "Crear audio, voz y video",
-   "desc": "Transcribe, sintetiza voz, edita o genera video. El montaje local y la generación mediante un proveedor son rutas con requisitos diferentes.",
+   "title": "Editar, grabar y generar video",
+   "desc": "Editores, grabadores, utilidades de medios y modelos de video generativo. La edición de material existente y la generación de nuevas escenas tienen requisitos distintos.",
    "file": "human/categorias/12-audio-voz-video.md",
-   "count": 69,
+   "count": 21,
    "subs": [
-    {
-     "key": "stt",
-     "title": "Transcripción (voz a texto)"
-    },
-    {
-     "key": "tts",
-     "title": "Síntesis y clonación de voz"
-    },
-    {
-     "key": "voz-agentes",
-     "title": "Agentes de voz en tiempo real"
-    },
     {
      "key": "edicion",
      "title": "Edición, grabación y subtítulos"
     },
     {
-     "key": "programatico",
-     "title": "Video programático y con agentes"
-    },
-    {
      "key": "generativo",
      "title": "Video generativo y pipelines automáticos"
-    },
-    {
-     "key": "musica",
-     "title": "Música y audio generativo"
     }
-   ]
+   ],
+   "question": "¿Quieres grabar, montar, subtitular o generar un video?"
   },
   {
    "num": 13,
    "emoji": "📄",
-   "title": "Trabajar con documentos y presentaciones",
-   "desc": "Extrae texto, aplica OCR, transforma PDFs o crea diapositivas. Empieza por el formato de entrada y el resultado que necesitas.",
+   "title": "PDF, OCR y procesamiento de documentos",
+   "desc": "Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato de entrada y comprueba con una muestra si conserva el contenido que necesitas.",
    "file": "human/categorias/13-documentos-presentaciones.md",
-   "count": 28,
+   "count": 20,
    "subs": [
     {
      "key": "conversion",
@@ -745,18 +622,11 @@
      "title": "Herramientas PDF"
     },
     {
-     "key": "slides",
-     "title": "Presentaciones"
-    },
-    {
-     "key": "diagramas",
-     "title": "Diagramas y documentación"
-    },
-    {
      "key": "gestion",
      "title": "Gestión y archivo de documentos"
     }
-   ]
+   ],
+   "question": "¿Necesitas leer, convertir, firmar u organizar documentos?"
   },
   {
    "num": 14,
@@ -782,7 +652,8 @@
      "title": "Ejemplos y aprendizaje"
     }
    ],
-   "count": 28
+   "count": 28,
+   "question": "¿Quieres investigar mercados, probar una estrategia o conectar un exchange?"
   },
   {
    "num": 15,
@@ -804,10 +675,6 @@
      "title": "Credenciales y privacidad"
     },
     {
-     "key": "infraestructura",
-     "title": "Alojamiento y backend"
-    },
-    {
      "key": "lectura",
      "title": "Libros, podcasts y bibliotecas personales"
     },
@@ -824,7 +691,8 @@
      "title": "Aprendizaje asistido"
     }
    ],
-   "count": 29
+   "count": 26,
+   "question": "¿Quieres organizar tus notas, archivos o servicios personales?"
   },
   {
    "num": 16,
@@ -856,9 +724,378 @@
     {
      "key": "referencias",
      "title": "Directorios y aprendizaje"
+    },
+    {
+     "key": "skills",
+     "title": "Skills de análisis y seguridad"
+    }
+   ],
+   "count": 23,
+   "question": "¿Necesitas inspeccionar software o comprobar su seguridad?"
+  },
+  {
+   "num": 17,
+   "emoji": "🤖",
+   "title": "WhatsApp, mensajería y chatbots",
+   "question": "¿Quieres atender conversaciones o conectar un canal?",
+   "desc": "Conecta WhatsApp y otros canales o prepara un chatbot. Distingue el canal de mensajes, el modelo que responde y la bandeja donde una persona retoma la conversación.",
+   "file": "human/categorias/17-mensajeria-chatbots.md",
+   "subs": [
+    {
+     "key": "whatsapp",
+     "title": "WhatsApp y mensajería"
+    },
+    {
+     "key": "chatbots",
+     "title": "Chatbots y asistentes conversacionales"
+    }
+   ],
+   "count": 11
+  },
+  {
+   "num": 18,
+   "emoji": "🤖",
+   "title": "CRM, ventas y marketing",
+   "question": "¿Necesitas organizar clientes o comunicarte con ellos?",
+   "desc": "Gestiona clientes, soporte, campañas, correo y publicaciones. Un CRM guarda la relación con el cliente; una herramienta de campañas distribuye mensajes. Comprueba los servicios externos y sus tarifas.",
+   "file": "human/categorias/18-crm-ventas-marketing.md",
+   "subs": [
+    {
+     "key": "crm",
+     "title": "CRM, ERP y soporte al cliente"
+    },
+    {
+     "key": "marketing",
+     "title": "Email, marketing y notificaciones"
+    }
+   ],
+   "count": 12
+  },
+  {
+   "num": 19,
+   "emoji": "🧠",
+   "title": "Aprender IA y escribir mejores prompts",
+   "question": "¿Quieres aprender antes de instalar o mejorar lo que le pides a la IA?",
+   "desc": "Cursos, ejemplos, guías y colecciones de prompts. Son material de aprendizaje: cada ejemplo puede necesitar sus propias cuentas, dependencias o modelos.",
+   "file": "human/categorias/19-aprender-ia-prompts.md",
+   "subs": [
+    {
+     "key": "prompts",
+     "title": "Prompts y prompt engineering"
+    },
+    {
+     "key": "guias",
+     "title": "Guías, cursos y cookbooks"
+    },
+    {
+     "key": "aprender",
+     "title": "Aprender LLMs desde cero"
+    }
+   ],
+   "count": 32
+  },
+  {
+   "num": 20,
+   "emoji": "🕸️",
+   "title": "Programar con agentes de código",
+   "question": "¿Buscas un asistente que edite y pruebe tu proyecto?",
+   "desc": "Agentes de terminal, extensiones de editor y entornos para programar con IA. Revisa qué cliente utilizas, cómo inicia sesión y si el modelo usa un plan, una API o un servidor local.",
+   "file": "human/categorias/20-agentes-de-codigo.md",
+   "subs": [
+    {
+     "key": "terminal",
+     "title": "Agentes de terminal"
+    },
+    {
+     "key": "editor",
+     "title": "Editores y extensiones de código"
+    },
+    {
+     "key": "ingenieria",
+     "title": "Agentes para issues y tareas de ingeniería"
+    },
+    {
+     "key": "sesiones",
+     "title": "Interfaces para gestionar sesiones"
+    },
+    {
+     "key": "plataformas",
+     "title": "Desarrollo móvil y de juegos"
+    }
+   ],
+   "count": 22
+  },
+  {
+   "num": 21,
+   "emoji": "🕸️",
+   "title": "Asistentes e investigación con agentes",
+   "question": "¿Quieres delegar una tarea o investigar una pregunta?",
+   "desc": "Asistentes personales, equipos de agentes e investigación con fuentes. Compara la tarea que completan, las herramientas que pueden usar y la revisión que necesitas hacer del resultado.",
+   "file": "human/categorias/21-asistentes-investigacion.md",
+   "subs": [
+    {
+     "key": "asistentes",
+     "title": "Asistentes autónomos y equipos de agentes"
+    },
+    {
+     "key": "research",
+     "title": "Agentes de research autónomo"
+    }
+   ],
+   "count": 18
+  },
+  {
+   "num": 22,
+   "emoji": "🕸️",
+   "title": "Infraestructura, despliegue y herramientas para agentes",
+   "question": "¿Te falta dónde ejecutar, alojar o conectar tu aplicación?",
+   "desc": "Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infraestructura: separa el coste del servidor, los servicios conectados y las llamadas al modelo.",
+   "file": "human/categorias/22-infraestructura-despliegue.md",
+   "subs": [
+    {
+     "key": "infra",
+     "title": "Infraestructura: sandboxes, herramientas y protocolos"
+    },
+    {
+     "key": "recursos",
+     "title": "Dominios y recursos de infraestructura"
+    },
+    {
+     "key": "redes",
+     "title": "Redes y transporte"
+    },
+    {
+     "key": "infraestructura",
+     "title": "Alojamiento y backend"
+    }
+   ],
+   "count": 18
+  },
+  {
+   "num": 23,
+   "emoji": "🧬",
+   "title": "Operar, evaluar y medir modelos de IA",
+   "question": "¿Necesitas servir modelos, revisar sus resultados o medir consumo?",
+   "desc": "Servidores de inferencia, gateways, evaluación, trazas y control de contexto. Cada pieza cubre una etapa: ejecutar el modelo, observarlo o comprobar la calidad de sus respuestas.",
+   "file": "human/categorias/23-operacion-evaluacion-modelos.md",
+   "subs": [
+    {
+     "key": "serving",
+     "title": "Serving y gateways de LLM"
+    },
+    {
+     "key": "tokens",
+     "title": "Ahorro de contexto y tokens"
+    },
+    {
+     "key": "observabilidad",
+     "title": "Observabilidad, evaluación y guardrails"
+    }
+   ],
+   "count": 19
+  },
+  {
+   "num": 24,
+   "emoji": "🧑‍💻",
+   "title": "Modelos abiertos y entrenamiento",
+   "question": "¿Quieres usar los pesos de un modelo o adaptarlo con tus datos?",
+   "desc": "Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los pesos, la memoria necesaria y la opción de inferencia antes de descargar o entrenar.",
+   "file": "human/categorias/24-modelos-entrenamiento.md",
+   "subs": [
+    {
+     "key": "entrenamiento",
+     "title": "Entrenar y afinar modelos"
+    },
+    {
+     "key": "modelos",
+     "title": "Modelos abiertos y fundacionales"
+    }
+   ],
+   "count": 15
+  },
+  {
+   "num": 25,
+   "emoji": "🧑‍💻",
+   "title": "Procesar datos y trabajar con notebooks",
+   "question": "¿Necesitas consultar, transformar o explorar un conjunto de datos?",
+   "desc": "Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un archivo pequeño y distingue una herramienta de análisis de un catálogo o conjunto de datos de referencia.",
+   "file": "human/categorias/25-datos-notebooks.md",
+   "subs": [
+    {
+     "key": "datos",
+     "title": "Datos y notebooks"
+    },
+    {
+     "key": "apps",
+     "title": "Apps de datos en Python"
+    }
+   ],
+   "count": 11
+  },
+  {
+   "num": 26,
+   "emoji": "🎨",
+   "title": "Animación, gráficos y creación 3D",
+   "question": "¿Quieres animar una interfaz, construir una escena o crear objetos 3D?",
+   "desc": "Animación web, motores gráficos, modelado y renderizado 3D. Una librería se integra en una aplicación; un editor se utiliza directamente. Consulta el formato de entrada y el equipo necesario.",
+   "file": "human/categorias/26-animacion-graficos-3d.md",
+   "subs": [
+    {
+     "key": "animacion",
+     "title": "Animación y 3D"
+    },
+    {
+     "key": "creacion-3d",
+     "title": "Creación, renderizado y animación 3D"
+    }
+   ],
+   "count": 17
+  },
+  {
+   "num": 27,
+   "emoji": "🎨",
+   "title": "Skills de diseño, contenido y especialidades",
+   "question": "¿Quieres que tu agente aplique un oficio concreto?",
+   "desc": "Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añaden a un agente compatible; generar imágenes, publicar o consultar servicios puede requerir cuentas adicionales.",
+   "file": "human/categorias/27-skills-especializadas.md",
+   "subs": [
+    {
+     "key": "skills",
+     "title": "Skills de diseño para agentes"
+    },
+    {
+     "key": "escritura",
+     "title": "Escritura y calidad de texto"
+    },
+    {
+     "key": "dominio",
+     "title": "Skills de dominio: marketing, SEO y negocio"
+    }
+   ],
+   "count": 36
+  },
+  {
+   "num": 28,
+   "emoji": "🖼️",
+   "title": "Visión artificial, rostros y percepción",
+   "question": "¿Necesitas detectar, segmentar o interpretar imágenes y movimiento?",
+   "desc": "Detección, seguimiento, segmentación, rostros y percepción espacial. Distingue el modelo, sus pesos y las herramientas para preparar datos. Comprueba requisitos y permisos sobre las imágenes.",
+   "file": "human/categorias/28-vision-percepcion.md",
+   "subs": [
+    {
+     "key": "rostros",
+     "title": "Rostros y retratos animados"
+    },
+    {
+     "key": "vision",
+     "title": "Visión por computador"
+    },
+    {
+     "key": "sensores",
+     "title": "Sensores y percepción espacial"
     }
    ],
    "count": 21
+  },
+  {
+   "num": 29,
+   "emoji": "🎬",
+   "title": "Audio, transcripción, voz y música",
+   "question": "¿Quieres convertir voz a texto, crear audio o conversar por voz?",
+   "desc": "Transcripción, síntesis, clonación de voz, agentes de audio y música. Compara idioma, latencia, procesamiento local y servicios externos según la tarea concreta.",
+   "file": "human/categorias/29-audio-voz-musica.md",
+   "subs": [
+    {
+     "key": "stt",
+     "title": "Transcripción (voz a texto)"
+    },
+    {
+     "key": "tts",
+     "title": "Síntesis y clonación de voz"
+    },
+    {
+     "key": "voz-agentes",
+     "title": "Agentes de voz en tiempo real"
+    },
+    {
+     "key": "musica",
+     "title": "Música y audio generativo"
+    },
+    {
+     "key": "audio",
+     "title": "Procesamiento y limpieza de audio"
+    }
+   ],
+   "count": 29
+  },
+  {
+   "num": 30,
+   "emoji": "🎬",
+   "title": "Video con código y agentes creativos",
+   "question": "¿Quieres producir videos o animaciones a partir de instrucciones y código?",
+   "desc": "Herramientas y skills para escenas, motion graphics y montaje programático. Distingue el renderizado del video de la generación de sus imágenes o voces, que puede necesitar otros proveedores.",
+   "file": "human/categorias/30-video-codigo-agentes.md",
+   "subs": [
+    {
+     "key": "motores",
+     "title": "Motores de video y escenas por código"
+    },
+    {
+     "key": "skills-video",
+     "title": "Skills y métodos de producción audiovisual"
+    },
+    {
+     "key": "aplicaciones",
+     "title": "Aplicaciones y flujos de producción"
+    }
+   ],
+   "count": 19
+  },
+  {
+   "num": 31,
+   "emoji": "📄",
+   "title": "Presentaciones, diagramas y explicación visual",
+   "question": "¿Necesitas convertir una idea en diapositivas o un diagrama?",
+   "desc": "Presentaciones, diagramas y documentación visual. Elige entre editar una pieza, escribir su estructura o generarla con un agente; revisa cómo se exporta antes de empezar.",
+   "file": "human/categorias/31-presentaciones-diagramas.md",
+   "subs": [
+    {
+     "key": "slides",
+     "title": "Presentaciones"
+    },
+    {
+     "key": "diagramas",
+     "title": "Diagramas y documentación"
+    }
+   ],
+   "count": 8
+  },
+  {
+   "num": 32,
+   "emoji": "🕷️",
+   "title": "Navegadores y automatización web",
+   "question": "¿La tarea requiere abrir una página, hacer clic o rellenar un formulario?",
+   "desc": "Navegadores, librerías de pruebas y agentes que interactúan con sitios web. Para leer páginas estáticas consulta extracción web; para operar una interfaz empieza por estas herramientas.",
+   "file": "human/categorias/32-navegadores-automatizacion-web.md",
+   "subs": [
+    {
+     "key": "bibliotecas",
+     "title": "Automatización y pruebas por código"
+    },
+    {
+     "key": "agentes-web",
+     "title": "Herramientas de navegación para agentes"
+    },
+    {
+     "key": "motores-web",
+     "title": "Navegadores y servidores de ejecución"
+    },
+    {
+     "key": "recursos-web",
+     "title": "Directorios y recursos de navegador"
+    }
+   ],
+   "count": 12
   }
  ],
  "recipes": [
@@ -2348,7 +2585,7 @@
    "id": "whatsapp-web-js",
    "name": "whatsapp-web.js",
    "emoji": "💬",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "role": "library",
    "exec": "local",
@@ -2384,7 +2621,7 @@
    "id": "openwa",
    "name": "OpenWA",
    "emoji": "🌐",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "role": "library",
    "exec": "local",
@@ -2417,7 +2654,7 @@
    "id": "baileys",
    "name": "Baileys",
    "emoji": "💬",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "role": "library",
    "exec": "local",
@@ -2452,7 +2689,7 @@
    "id": "fluxer",
    "name": "fluxer",
    "emoji": "🌐",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "role": "platform",
    "exec": "hybrid",
@@ -2485,7 +2722,7 @@
    "id": "evolution-api",
    "name": "evolution-api",
    "emoji": "🧬",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "role": "platform",
    "exec": "local",
@@ -2522,7 +2759,7 @@
    "id": "waha",
    "name": "WAHA",
    "emoji": "💬",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "role": "platform",
    "exec": "local",
@@ -2558,7 +2795,7 @@
    "id": "whatsapp-agentkit",
    "name": "whatsapp-agentkit",
    "emoji": "🤖",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "role": "skill",
    "exec": "hybrid",
@@ -2592,7 +2829,7 @@
    "id": "typebot",
    "name": "Typebot",
    "emoji": "🤖",
-   "cat": 1,
+   "cat": 17,
    "sub": "chatbots",
    "role": "platform",
    "exec": "local",
@@ -2627,7 +2864,7 @@
    "id": "rasa",
    "name": "Rasa",
    "emoji": "🤖",
-   "cat": 1,
+   "cat": 17,
    "sub": "chatbots",
    "role": "runtime",
    "exec": "local",
@@ -2661,7 +2898,7 @@
    "id": "botpress",
    "name": "Botpress",
    "emoji": "🤖",
-   "cat": 1,
+   "cat": 17,
    "sub": "chatbots",
    "role": "platform",
    "exec": "hybrid",
@@ -2696,7 +2933,7 @@
    "id": "odoo",
    "name": "Odoo",
    "emoji": "👥",
-   "cat": 1,
+   "cat": 18,
    "sub": "crm",
    "role": "platform",
    "exec": "local",
@@ -2730,7 +2967,7 @@
    "id": "twenty-main",
    "name": "twenty-main",
    "emoji": "👥",
-   "cat": 1,
+   "cat": 18,
    "sub": "crm",
    "role": "platform",
    "exec": "hybrid",
@@ -2765,7 +3002,7 @@
    "id": "erpnext",
    "name": "ERPNext",
    "emoji": "👥",
-   "cat": 1,
+   "cat": 18,
    "sub": "crm",
    "role": "platform",
    "exec": "local",
@@ -2798,7 +3035,7 @@
    "id": "chatwoot",
    "name": "chatwoot",
    "emoji": "💬",
-   "cat": 1,
+   "cat": 18,
    "sub": "crm",
    "role": "platform",
    "exec": "local",
@@ -2833,7 +3070,7 @@
    "id": "novu",
    "name": "novu",
    "emoji": "🔔",
-   "cat": 1,
+   "cat": 18,
    "sub": "marketing",
    "role": "platform",
    "exec": "hybrid",
@@ -2863,7 +3100,7 @@
    "id": "listmonk",
    "name": "listmonk",
    "emoji": "📬",
-   "cat": 1,
+   "cat": 18,
    "sub": "marketing",
    "role": "platform",
    "exec": "local",
@@ -2894,7 +3131,7 @@
    "id": "mautic",
    "name": "mautic",
    "emoji": "📣",
-   "cat": 1,
+   "cat": 18,
    "sub": "marketing",
    "role": "platform",
    "exec": "local",
@@ -3709,7 +3946,7 @@
    "id": "humanizer",
    "name": "Humanizer",
    "emoji": "🧑",
-   "cat": 2,
+   "cat": 27,
    "sub": "escritura",
    "role": "skill",
    "exec": "hybrid",
@@ -3745,7 +3982,7 @@
    "id": "stop-slop",
    "name": "Stop Slop",
    "emoji": "🧹",
-   "cat": 2,
+   "cat": 27,
    "sub": "escritura",
    "role": "skill",
    "exec": "hybrid",
@@ -3780,7 +4017,7 @@
    "id": "marketingskills",
    "name": "Marketing Skills",
    "emoji": "📈",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "role": "skill",
    "exec": "hybrid",
@@ -3815,7 +4052,7 @@
    "id": "agency-agents",
    "name": "The Agency (agency-agents)",
    "emoji": "🏢",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "role": "skill",
    "exec": "hybrid",
@@ -3852,7 +4089,7 @@
    "id": "geo-seo-claude",
    "name": "GEO-SEO Claude",
    "emoji": "🌍",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "role": "skill",
    "exec": "cloud",
@@ -3888,7 +4125,7 @@
    "id": "arcads-claude-code",
    "name": "Arcads AI Video Skill Pack",
    "emoji": "📈",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "role": "skill",
    "exec": "cloud",
@@ -3923,7 +4160,7 @@
    "id": "prompt-engineering-guide",
    "name": "Prompt Engineering Guide",
    "emoji": "💡",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "role": "directory",
    "exec": "cloud",
@@ -3959,7 +4196,7 @@
    "id": "fabric",
    "name": "Fabric",
    "emoji": "💡",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "role": "app",
    "exec": "hybrid",
@@ -3999,7 +4236,7 @@
    "id": "prompts-chat",
    "name": "prompts.chat",
    "emoji": "💡",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "role": "directory",
    "exec": "local",
@@ -4034,7 +4271,7 @@
    "id": "prompt-eng-tutorial",
    "name": "Anthropic's Prompt Engineering Tutorial",
    "emoji": "💡",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "role": "directory",
    "exec": "cloud",
@@ -4073,7 +4310,7 @@
    "id": "prompt-master",
    "name": "prompt-master",
    "emoji": "🎯",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "role": "skill",
    "exec": "cloud",
@@ -4106,7 +4343,7 @@
    "id": "generative-ai-for-beginners",
    "name": "Generative AI for Beginners",
    "emoji": "🎓",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "role": "directory",
    "exec": "cloud",
@@ -4142,7 +4379,7 @@
    "id": "ai-agents-for-beginners",
    "name": "AI Agents for Beginners",
    "emoji": "🎓",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "role": "directory",
    "exec": "cloud",
@@ -4181,7 +4418,7 @@
    "id": "awesome-llm-apps",
    "name": "Awesome LLM Apps",
    "emoji": "🎓",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "role": "directory",
    "exec": "hybrid",
@@ -4225,7 +4462,7 @@
    "id": "openai-cookbook",
    "name": "OpenAI Cookbook",
    "emoji": "🎓",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "role": "directory",
    "exec": "cloud",
@@ -4263,7 +4500,7 @@
    "id": "claude-cookbooks",
    "name": "Claude Cookbooks",
    "emoji": "🎓",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "role": "directory",
    "exec": "cloud",
@@ -4304,7 +4541,7 @@
    "id": "12-factor-agents",
    "name": "12-Factor Agents",
    "emoji": "🎓",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "role": "directory",
    "exec": "hybrid",
@@ -4339,7 +4576,7 @@
    "id": "agents-towards-production",
    "name": "Agents Towards Production",
    "emoji": "🎓",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "role": "directory",
    "exec": "cloud",
@@ -4379,7 +4616,7 @@
    "id": "loop-engineering",
    "name": "Loop Engineering",
    "emoji": "🎓",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "role": "skill",
    "exec": "local",
@@ -4413,7 +4650,7 @@
    "id": "context-engineering",
    "name": "Context-Engineering",
    "emoji": "🧩",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "role": "directory",
    "exec": "cloud",
@@ -4447,8 +4684,8 @@
    "id": "opencode",
    "name": "OpenCode",
    "emoji": "👨‍💻",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "role": "runtime",
    "exec": "hybrid",
    "setup": "easy",
@@ -4492,8 +4729,8 @@
    "id": "claude-code",
    "name": "Claude Code",
    "emoji": "👨‍💻",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "role": "runtime",
    "exec": "cloud",
    "setup": "easy",
@@ -4537,8 +4774,8 @@
    "id": "codex",
    "name": "Codex CLI",
    "emoji": "👨‍💻",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "role": "runtime",
    "exec": "cloud",
    "setup": "easy",
@@ -4579,8 +4816,8 @@
    "id": "gemini-cli",
    "name": "Gemini CLI",
    "emoji": "👨‍💻",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "role": "runtime",
    "exec": "cloud",
    "setup": "easy",
@@ -4619,8 +4856,8 @@
    "id": "openhands",
    "name": "OpenHands",
    "emoji": "🙌",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "ingenieria",
    "role": "platform",
    "exec": "hybrid",
    "setup": "medium",
@@ -4656,8 +4893,8 @@
    "id": "cline",
    "name": "Cline",
    "emoji": "👨‍💻",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "editor",
    "role": "runtime",
    "exec": "hybrid",
    "setup": "easy",
@@ -4699,8 +4936,8 @@
    "id": "open-interpreter",
    "name": "Open Interpreter",
    "emoji": "👨‍💻",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "role": "runtime",
    "exec": "local",
    "setup": "easy",
@@ -4736,8 +4973,8 @@
    "id": "goose",
    "name": "goose",
    "emoji": "👨‍💻",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "role": "runtime",
    "exec": "hybrid",
    "setup": "easy",
@@ -4783,8 +5020,8 @@
    "id": "t3code",
    "name": "T3 Code",
    "emoji": "👨‍💻",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "sesiones",
    "role": "app",
    "exec": "local",
    "setup": "easy",
@@ -4818,8 +5055,8 @@
    "id": "aider",
    "name": "Aider",
    "emoji": "👨‍💻",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "role": "runtime",
    "exec": "hybrid",
    "setup": "easy",
@@ -4857,8 +5094,8 @@
    "id": "continue",
    "name": "Continue",
    "emoji": "👨‍💻",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "editor",
    "role": "runtime",
    "exec": "hybrid",
    "setup": "easy",
@@ -4895,8 +5132,8 @@
    "id": "swe-agent",
    "name": "SWE-agent",
    "emoji": "👨‍💻",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "ingenieria",
    "role": "runtime",
    "exec": "hybrid",
    "setup": "medium",
@@ -4933,8 +5170,8 @@
    "id": "open-swe",
    "name": "Open SWE",
    "emoji": "👨‍💻",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "ingenieria",
    "role": "runtime",
    "exec": "cloud",
    "setup": "medium",
@@ -5927,7 +6164,7 @@
    "id": "openclaw",
    "name": "OpenClaw",
    "emoji": "🦾",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "role": "app",
    "exec": "hybrid",
@@ -5967,7 +6204,7 @@
    "id": "hermes-agent",
    "name": "hermes-agent",
    "emoji": "☤",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "role": "app",
    "exec": "local",
@@ -6000,7 +6237,7 @@
    "id": "ruflo",
    "name": "ruflo",
    "emoji": "🐝",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "role": "platform",
    "exec": "hybrid",
@@ -6034,7 +6271,7 @@
    "id": "deeptutor",
    "name": "DeepTutor",
    "emoji": "🦾",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "role": "app",
    "exec": "hybrid",
@@ -6071,7 +6308,7 @@
    "id": "multica",
    "name": "multica",
    "emoji": "🧑‍🤝‍🧑",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "role": "platform",
    "exec": "hybrid",
@@ -6104,7 +6341,7 @@
    "id": "mercury-agent",
    "name": "Mercury Agent",
    "emoji": "🦾",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "role": "app",
    "exec": "hybrid",
@@ -6140,7 +6377,7 @@
    "id": "autoresearch",
    "name": "autoresearch",
    "emoji": "🔬",
-   "cat": 3,
+   "cat": 21,
    "sub": "research",
    "role": "platform",
    "exec": "hybrid",
@@ -6174,7 +6411,7 @@
    "id": "deer-flow",
    "name": "deer-flow",
    "emoji": "🦌",
-   "cat": 3,
+   "cat": 21,
    "sub": "research",
    "role": "platform",
    "exec": "hybrid",
@@ -6208,7 +6445,7 @@
    "id": "storm",
    "name": "STORM",
    "emoji": "🔎",
-   "cat": 3,
+   "cat": 21,
    "sub": "research",
    "role": "runtime",
    "exec": "hybrid",
@@ -6244,7 +6481,7 @@
    "id": "gpt-researcher",
    "name": "gpt-researcher",
    "emoji": "🔍",
-   "cat": 3,
+   "cat": 21,
    "sub": "research",
    "role": "platform",
    "exec": "hybrid",
@@ -6282,7 +6519,7 @@
    "id": "composio",
    "name": "Composio",
    "emoji": "🛠️",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "role": "platform",
    "exec": "cloud",
@@ -6319,7 +6556,7 @@
    "id": "e2b",
    "name": "E2B",
    "emoji": "🛠️",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "role": "platform",
    "exec": "cloud",
@@ -6351,7 +6588,7 @@
    "id": "nemoclaw",
    "name": "NemoClaw",
    "emoji": "🛠️",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "role": "platform",
    "exec": "hybrid",
@@ -6384,7 +6621,7 @@
    "id": "sandbox",
    "name": "sandbox",
    "emoji": "📦",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "role": "platform",
    "exec": "hybrid",
@@ -6421,7 +6658,7 @@
    "id": "computer-use-preview",
    "name": "Gemini Computer Use (preview)",
    "emoji": "🛠️",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "role": "runtime",
    "exec": "cloud",
@@ -6457,7 +6694,7 @@
    "id": "nemo-agent-toolkit",
    "name": "NeMo-Agent-Toolkit",
    "emoji": "🟩",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "role": "library",
    "exec": "hybrid",
@@ -6488,7 +6725,7 @@
    "id": "agent-protocol",
    "name": "Agent Protocol",
    "emoji": "🛠️",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "role": "directory",
    "exec": "local",
@@ -6983,8 +7220,8 @@
    "id": "stagehand",
    "name": "Stagehand",
    "emoji": "🌐",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "agentes-web",
    "role": "library",
    "exec": "hybrid",
    "setup": "easy",
@@ -7019,8 +7256,8 @@
    "id": "browser-use",
    "name": "browser-use",
    "emoji": "🌐",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "agentes-web",
    "role": "library",
    "exec": "hybrid",
    "setup": "medium",
@@ -7055,8 +7292,8 @@
    "id": "playwright",
    "name": "playwright",
    "emoji": "🎭",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "bibliotecas",
    "role": "library",
    "exec": "hybrid",
    "setup": "medium",
@@ -7090,8 +7327,8 @@
    "id": "puppeteer",
    "name": "Puppeteer",
    "emoji": "🌐",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "bibliotecas",
    "role": "library",
    "exec": "local",
    "setup": "easy",
@@ -7123,8 +7360,8 @@
    "id": "lightpanda",
    "name": "Lightpanda",
    "emoji": "🌐",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "motores-web",
    "role": "runtime",
    "exec": "local",
    "setup": "easy",
@@ -7152,8 +7389,8 @@
    "id": "selenium",
    "name": "Selenium",
    "emoji": "🌐",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "bibliotecas",
    "role": "library",
    "exec": "local",
    "setup": "medium",
@@ -7185,8 +7422,8 @@
    "id": "skyvern",
    "name": "Skyvern",
    "emoji": "🌐",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "agentes-web",
    "role": "platform",
    "exec": "hybrid",
    "setup": "medium",
@@ -7223,8 +7460,8 @@
    "id": "browser-harness",
    "name": "Browser Harness",
    "emoji": "🌐",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "agentes-web",
    "role": "runtime",
    "exec": "local",
    "setup": "easy",
@@ -7258,8 +7495,8 @@
    "id": "playwright-cli",
    "name": "playwright-cli",
    "emoji": "🎭",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "agentes-web",
    "role": "skill",
    "exec": "hybrid",
    "setup": "easy",
@@ -9006,7 +9243,7 @@
    "id": "vllm",
    "name": "vLLM",
    "emoji": "🚀",
-   "cat": 6,
+   "cat": 23,
    "sub": "serving",
    "role": "runtime",
    "exec": "local",
@@ -9041,7 +9278,7 @@
    "id": "litellm",
    "name": "litellm",
    "emoji": "🔀",
-   "cat": 6,
+   "cat": 23,
    "sub": "serving",
    "role": "library",
    "exec": "hybrid",
@@ -9075,7 +9312,7 @@
    "id": "sglang",
    "name": "SGLang",
    "emoji": "🚀",
-   "cat": 6,
+   "cat": 23,
    "sub": "serving",
    "role": "runtime",
    "exec": "local",
@@ -9109,7 +9346,7 @@
    "id": "headroom",
    "name": "headroom",
    "emoji": "🗜️",
-   "cat": 6,
+   "cat": 23,
    "sub": "tokens",
    "role": "library",
    "exec": "hybrid",
@@ -9145,7 +9382,7 @@
    "id": "promptfoo",
    "name": "promptfoo",
    "emoji": "📡",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "role": "app",
    "exec": "local",
@@ -9184,7 +9421,7 @@
    "id": "langfuse",
    "name": "langfuse",
    "emoji": "📡",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "role": "platform",
    "exec": "hybrid",
@@ -9221,7 +9458,7 @@
    "id": "mlflow",
    "name": "MLflow",
    "emoji": "📡",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "role": "platform",
    "exec": "local",
@@ -9255,7 +9492,7 @@
    "id": "loguru",
    "name": "loguru",
    "emoji": "📝",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "role": "library",
    "exec": "local",
@@ -9286,7 +9523,7 @@
    "id": "opik",
    "name": "Opik",
    "emoji": "📡",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "role": "platform",
    "exec": "local",
@@ -9320,7 +9557,7 @@
    "id": "deepeval",
    "name": "DeepEval",
    "emoji": "📡",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "role": "library",
    "exec": "hybrid",
@@ -9354,7 +9591,7 @@
    "id": "ragas",
    "name": "Ragas",
    "emoji": "📡",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "role": "library",
    "exec": "hybrid",
@@ -9389,7 +9626,7 @@
    "id": "phoenix",
    "name": "Phoenix",
    "emoji": "📡",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "role": "platform",
    "exec": "local",
@@ -9423,7 +9660,7 @@
    "id": "guardrails",
    "name": "NeMo Guardrails",
    "emoji": "📡",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "role": "library",
    "exec": "hybrid",
@@ -9846,7 +10083,7 @@
    "id": "unsloth",
    "name": "Unsloth",
    "emoji": "🏋️",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "role": "app",
    "exec": "local",
@@ -9882,7 +10119,7 @@
    "id": "transformers",
    "name": "Transformers",
    "emoji": "🏋️",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "role": "library",
    "exec": "local",
@@ -9913,7 +10150,7 @@
    "id": "pytorch",
    "name": "PyTorch",
    "emoji": "🏋️",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "role": "library",
    "exec": "local",
@@ -9943,7 +10180,7 @@
    "id": "llama-factory",
    "name": "LLaMA-Factory",
    "emoji": "🏋️",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "role": "app",
    "exec": "local",
@@ -9977,7 +10214,7 @@
    "id": "peft",
    "name": "PEFT",
    "emoji": "🏋️",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "role": "library",
    "exec": "local",
@@ -10007,7 +10244,7 @@
    "id": "trl",
    "name": "TRL",
    "emoji": "🏋️",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "role": "library",
    "exec": "local",
@@ -10037,7 +10274,7 @@
    "id": "llm-course",
    "name": "LLM Course",
    "emoji": "📘",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "role": "directory",
    "exec": "local",
@@ -10073,7 +10310,7 @@
    "id": "llms-from-scratch",
    "name": "LLMs from Scratch",
    "emoji": "📘",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "role": "directory",
    "exec": "local",
@@ -10110,7 +10347,7 @@
    "id": "nanogpt",
    "name": "nanoGPT",
    "emoji": "🔬",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "role": "library",
    "exec": "local",
@@ -10145,7 +10382,7 @@
    "id": "nanochat",
    "name": "nanochat",
    "emoji": "💬",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "role": "library",
    "exec": "local",
@@ -10178,7 +10415,7 @@
    "id": "llm.c",
    "name": "llm.c",
    "emoji": "⚙️",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "role": "library",
    "exec": "local",
@@ -10210,7 +10447,7 @@
    "id": "how-to-train-your-gpt",
    "name": "how-to-train-your-gpt",
    "emoji": "📘",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "role": "directory",
    "exec": "local",
@@ -10243,7 +10480,7 @@
    "id": "timesfm",
    "name": "TimesFM",
    "emoji": "🧠",
-   "cat": 7,
+   "cat": 24,
    "sub": "modelos",
    "role": "library",
    "exec": "local",
@@ -10275,7 +10512,7 @@
    "id": "deepseek-coder",
    "name": "DeepSeek-Coder",
    "emoji": "🧩",
-   "cat": 7,
+   "cat": 24,
    "sub": "modelos",
    "role": "runtime",
    "exec": "hybrid",
@@ -10306,7 +10543,7 @@
    "id": "cosmos",
    "name": "cosmos",
    "emoji": "🌌",
-   "cat": 7,
+   "cat": 24,
    "sub": "modelos",
    "role": "runtime",
    "exec": "hybrid",
@@ -10336,7 +10573,7 @@
    "id": "nemotron",
    "name": "Nemotron (NVIDIA)",
    "emoji": "🧠",
-   "cat": 7,
+   "cat": 24,
    "sub": "modelos",
    "role": "directory",
    "exec": "local",
@@ -10430,7 +10667,7 @@
    "id": "duckdb",
    "name": "DuckDB",
    "emoji": "🗃️",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "role": "library",
    "exec": "local",
@@ -10464,7 +10701,7 @@
    "id": "marimo",
    "name": "marimo",
    "emoji": "🗃️",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "role": "app",
    "exec": "local",
@@ -10496,7 +10733,7 @@
    "id": "polars",
    "name": "Polars",
    "emoji": "🗃️",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "role": "library",
    "exec": "local",
@@ -10530,7 +10767,7 @@
    "id": "data-science-ipython-notebooks",
    "name": "data-science-ipython-notebooks",
    "emoji": "📓",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "role": "directory",
    "exec": "local",
@@ -10564,7 +10801,7 @@
    "id": "awesome-bigdata",
    "name": "awesome-bigdata",
    "emoji": "🗄️",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "role": "directory",
    "exec": "cloud",
@@ -11820,7 +12057,7 @@
    "id": "three.js",
    "name": "three.js",
    "emoji": "🔺",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "role": "library",
    "exec": "local",
@@ -11853,7 +12090,7 @@
    "id": "animejs",
    "name": "Anime.js",
    "emoji": "✨",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "role": "library",
    "exec": "local",
@@ -11888,7 +12125,7 @@
    "id": "motion",
    "name": "motion",
    "emoji": "🌀",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "role": "library",
    "exec": "local",
@@ -11922,7 +12159,7 @@
    "id": "react-three-fiber",
    "name": "react-three-fiber",
    "emoji": "🔻",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "role": "library",
    "exec": "local",
@@ -11954,7 +12191,7 @@
    "id": "gsap",
    "name": "GSAP",
    "emoji": "🎞️",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "role": "library",
    "exec": "local",
@@ -12377,7 +12614,7 @@
    "id": "stitch-skills",
    "name": "Stitch Skills",
    "emoji": "🎯",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "cloud",
@@ -12412,7 +12649,7 @@
    "id": "ui-ux-pro-max-skill",
    "name": "ui-ux-pro-max-skill",
    "emoji": "🎨",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "cloud",
@@ -12447,7 +12684,7 @@
    "id": "taste-skill",
    "name": "taste-skill",
    "emoji": "🍷",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "cloud",
@@ -12482,7 +12719,7 @@
    "id": "impeccable",
    "name": "impeccable",
    "emoji": "💎",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "cloud",
@@ -12517,7 +12754,7 @@
    "id": "skills-emil",
    "name": "skills_emil",
    "emoji": "✏️",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "cloud",
@@ -12548,7 +12785,7 @@
    "id": "design.md",
    "name": "design.md",
    "emoji": "📐",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "cloud",
@@ -13101,7 +13338,7 @@
    "id": "gradio",
    "name": "Gradio",
    "emoji": "🧪",
-   "cat": 10,
+   "cat": 25,
    "sub": "apps",
    "role": "library",
    "exec": "local",
@@ -13135,7 +13372,7 @@
    "id": "streamlit",
    "name": "streamlit",
    "emoji": "📊",
-   "cat": 10,
+   "cat": 25,
    "sub": "apps",
    "role": "library",
    "exec": "local",
@@ -13169,7 +13406,7 @@
    "id": "dash",
    "name": "dash",
    "emoji": "🧮",
-   "cat": 10,
+   "cat": 25,
    "sub": "apps",
    "role": "library",
    "exec": "local",
@@ -13791,7 +14028,7 @@
    "id": "deep-live-cam",
    "name": "Deep-Live-Cam",
    "emoji": "🎭",
-   "cat": 11,
+   "cat": 28,
    "sub": "rostros",
    "role": "runtime",
    "exec": "local",
@@ -13827,7 +14064,7 @@
    "id": "face-recognition",
    "name": "face_recognition",
    "emoji": "👤",
-   "cat": 11,
+   "cat": 28,
    "sub": "rostros",
    "role": "library",
    "exec": "local",
@@ -13862,7 +14099,7 @@
    "id": "facefusion",
    "name": "FaceFusion",
    "emoji": "🙂",
-   "cat": 11,
+   "cat": 28,
    "sub": "rostros",
    "role": "app",
    "exec": "local",
@@ -13898,7 +14135,7 @@
    "id": "insightface",
    "name": "InsightFace",
    "emoji": "🙂",
-   "cat": 11,
+   "cat": 28,
    "sub": "rostros",
    "role": "library",
    "exec": "local",
@@ -13933,7 +14170,7 @@
    "id": "liveportrait",
    "name": "LivePortrait",
    "emoji": "🧑",
-   "cat": 11,
+   "cat": 28,
    "sub": "rostros",
    "role": "runtime",
    "exec": "local",
@@ -13967,7 +14204,7 @@
    "id": "ultralytics",
    "name": "Ultralytics YOLO",
    "emoji": "👁️",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "library",
    "exec": "local",
@@ -14000,7 +14237,7 @@
    "id": "sam2",
    "name": "SAM 2",
    "emoji": "👁️",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "library",
    "exec": "local",
@@ -14035,7 +14272,7 @@
    "id": "opencv",
    "name": "OpenCV",
    "emoji": "👁️",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "library",
    "exec": "local",
@@ -14068,7 +14305,7 @@
    "id": "segment-anything",
    "name": "Segment Anything (SAM)",
    "emoji": "👁️",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "library",
    "exec": "local",
@@ -14103,7 +14340,7 @@
    "id": "supervision",
    "name": "supervision",
    "emoji": "👁️",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "library",
    "exec": "local",
@@ -14134,7 +14371,7 @@
    "id": "label-studio",
    "name": "Label Studio",
    "emoji": "👁️",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "platform",
    "exec": "local",
@@ -14200,7 +14437,7 @@
    "id": "whisper-cpp",
    "name": "whisper.cpp",
    "emoji": "🎙️",
-   "cat": 12,
+   "cat": 29,
    "sub": "stt",
    "role": "runtime",
    "exec": "local",
@@ -14239,7 +14476,7 @@
    "id": "whisper",
    "name": "whisper",
    "emoji": "📝",
-   "cat": 12,
+   "cat": 29,
    "sub": "stt",
    "role": "runtime",
    "exec": "local",
@@ -14275,7 +14512,7 @@
    "id": "faster-whisper",
    "name": "faster-whisper",
    "emoji": "⚡",
-   "cat": 12,
+   "cat": 29,
    "sub": "stt",
    "role": "runtime",
    "exec": "local",
@@ -14310,7 +14547,7 @@
    "id": "whisperx",
    "name": "whisperX",
    "emoji": "🎯",
-   "cat": 12,
+   "cat": 29,
    "sub": "stt",
    "role": "runtime",
    "exec": "local",
@@ -14346,7 +14583,7 @@
    "id": "nemo",
    "name": "NVIDIA NeMo Speech",
    "emoji": "🎙️",
-   "cat": 12,
+   "cat": 29,
    "sub": "stt",
    "role": "library",
    "exec": "local",
@@ -14382,7 +14619,7 @@
    "id": "kokoro",
    "name": "Kokoro",
    "emoji": "🗣️",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "library",
    "exec": "local",
@@ -14422,7 +14659,7 @@
    "id": "omnivoice-studio",
    "name": "OmniVoice-Studio",
    "emoji": "🎚️",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "app",
    "exec": "local",
@@ -14458,7 +14695,7 @@
    "id": "gpt-sovits",
    "name": "GPT-SoVITS",
    "emoji": "🗣️",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "app",
    "exec": "local",
@@ -14496,7 +14733,7 @@
    "id": "vibevoice",
    "name": "VibeVoice",
    "emoji": "🗣️",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "library",
    "exec": "local",
@@ -14532,7 +14769,7 @@
    "id": "tts",
    "name": "TTS",
    "emoji": "🎙️",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "library",
    "exec": "local",
@@ -14568,7 +14805,7 @@
    "id": "voxcpm",
    "name": "VoxCPM",
    "emoji": "🗣️",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "runtime",
    "exec": "local",
@@ -14602,7 +14839,7 @@
    "id": "rvc",
    "name": "RVC WebUI",
    "emoji": "🗣️",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "app",
    "exec": "local",
@@ -14637,7 +14874,7 @@
    "id": "fish-speech",
    "name": "Fish Speech",
    "emoji": "🗣️",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "library",
    "exec": "local",
@@ -14676,7 +14913,7 @@
    "id": "chatterbox",
    "name": "Chatterbox",
    "emoji": "🗣️",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "library",
    "exec": "local",
@@ -14716,7 +14953,7 @@
    "id": "index-tts",
    "name": "IndexTTS",
    "emoji": "🗣️",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "library",
    "exec": "local",
@@ -14753,7 +14990,7 @@
    "id": "cosyvoice",
    "name": "CosyVoice",
    "emoji": "🗣️",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "library",
    "exec": "local",
@@ -14791,7 +15028,7 @@
    "id": "supertonic",
    "name": "supertonic",
    "emoji": "🔊",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "runtime",
    "exec": "local",
@@ -14825,7 +15062,7 @@
    "id": "luxtts",
    "name": "LuxTTS",
    "emoji": "🗣️",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "library",
    "exec": "local",
@@ -14864,7 +15101,7 @@
    "id": "pipecat",
    "name": "Pipecat",
    "emoji": "📞",
-   "cat": 12,
+   "cat": 29,
    "sub": "voz-agentes",
    "role": "runtime",
    "exec": "hybrid",
@@ -14902,7 +15139,7 @@
    "id": "livekit-agents",
    "name": "LiveKit Agents",
    "emoji": "📞",
-   "cat": 12,
+   "cat": 29,
    "sub": "voz-agentes",
    "role": "runtime",
    "exec": "hybrid",
@@ -15222,8 +15459,8 @@
    "id": "hyperframes",
    "name": "HyperFrames",
    "emoji": "🎞️",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "motores",
    "role": "runtime",
    "exec": "local",
    "setup": "easy",
@@ -15262,8 +15499,8 @@
    "id": "skills-remotion",
    "name": "Remotion Agent Skills",
    "emoji": "🎞️",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "role": "skill",
    "exec": "local",
    "setup": "easy",
@@ -15296,8 +15533,8 @@
    "id": "manim",
    "name": "Manim (ManimGL)",
    "emoji": "🎞️",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "motores",
    "role": "library",
    "exec": "local",
    "setup": "medium",
@@ -15331,8 +15568,8 @@
    "id": "remotion",
    "name": "remotion",
    "emoji": "⚛️",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "motores",
    "role": "library",
    "exec": "local",
    "setup": "medium",
@@ -15366,8 +15603,8 @@
    "id": "video-use",
    "name": "video-use",
    "emoji": "🎞️",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "role": "skill",
    "exec": "local",
    "setup": "easy",
@@ -15404,8 +15641,8 @@
    "id": "videofy-minimal",
    "name": "videofy_minimal",
    "emoji": "📲",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "aplicaciones",
    "role": "app",
    "exec": "local",
    "setup": "easy",
@@ -15437,8 +15674,8 @@
    "id": "remotion-superpowers",
    "name": "Remotion Superpowers",
    "emoji": "🎞️",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "role": "skill",
    "exec": "local",
    "setup": "easy",
@@ -15475,8 +15712,8 @@
    "id": "openmontage",
    "name": "OpenMontage",
    "emoji": "🎞️",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "role": "skill",
    "exec": "local",
    "setup": "medium",
@@ -15713,7 +15950,7 @@
    "id": "audiocraft",
    "name": "AudioCraft",
    "emoji": "🎵",
-   "cat": 12,
+   "cat": 29,
    "sub": "musica",
    "role": "library",
    "exec": "local",
@@ -16339,7 +16576,7 @@
    "id": "slidev",
    "name": "Slidev",
    "emoji": "🖥️",
-   "cat": 13,
+   "cat": 31,
    "sub": "slides",
    "role": "app",
    "exec": "local",
@@ -16373,7 +16610,7 @@
    "id": "ppt-master",
    "name": "ppt-master",
    "emoji": "📊",
-   "cat": 13,
+   "cat": 31,
    "sub": "slides",
    "role": "skill",
    "exec": "hybrid",
@@ -16408,7 +16645,7 @@
    "id": "reveal.js",
    "name": "reveal.js",
    "emoji": "🖥️",
-   "cat": 13,
+   "cat": 31,
    "sub": "slides",
    "role": "library",
    "exec": "local",
@@ -16442,7 +16679,7 @@
    "id": "marp",
    "name": "Marp",
    "emoji": "🖥️",
-   "cat": 13,
+   "cat": 31,
    "sub": "slides",
    "role": "app",
    "exec": "local",
@@ -16476,7 +16713,7 @@
    "id": "presenton",
    "name": "Presenton",
    "emoji": "🖥️",
-   "cat": 13,
+   "cat": 31,
    "sub": "slides",
    "role": "app",
    "exec": "hybrid",
@@ -16514,7 +16751,7 @@
    "id": "mermaid",
    "name": "Mermaid",
    "emoji": "🗺️",
-   "cat": 13,
+   "cat": 31,
    "sub": "diagramas",
    "role": "library",
    "exec": "local",
@@ -16634,7 +16871,7 @@
    "id": "compai-crm",
    "name": "crm",
    "emoji": "🤖",
-   "cat": 1,
+   "cat": 18,
    "sub": "crm",
    "role": "platform",
    "exec": "cloud",
@@ -16667,7 +16904,7 @@
    "id": "whatsmeow",
    "name": "whatsmeow",
    "emoji": "🤖",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "role": "library",
    "exec": "hybrid",
@@ -16701,7 +16938,7 @@
    "id": "500-ai-agents-projects",
    "name": "500-AI-Agents-Projects",
    "emoji": "🧠",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "role": "directory",
    "exec": "hybrid",
@@ -16737,7 +16974,7 @@
    "id": "ai-engineering-hub",
    "name": "ai-engineering-hub",
    "emoji": "🧠",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "role": "directory",
    "exec": "hybrid",
@@ -16842,7 +17079,7 @@
    "id": "chatgpt-dan",
    "name": "ChatGPT_DAN",
    "emoji": "🧠",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "role": "directory",
    "exec": "cloud",
@@ -16881,7 +17118,7 @@
    "id": "chatgpt-system-prompt",
    "name": "chatgpt_system_prompt",
    "emoji": "🧠",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "role": "directory",
    "exec": "hybrid",
@@ -16918,7 +17155,7 @@
    "id": "claude-quickstarts",
    "name": "claude-quickstarts",
    "emoji": "🧠",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "role": "directory",
    "exec": "cloud",
@@ -17027,7 +17264,7 @@
    "id": "financial-services",
    "name": "financial-services",
    "emoji": "🧠",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "role": "skill",
    "exec": "cloud",
@@ -17143,8 +17380,8 @@
    "id": "security-audit-skill",
    "name": "security-audit-skill",
    "emoji": "🧠",
-   "cat": 2,
-   "sub": "metodologia",
+   "cat": 16,
+   "sub": "skills",
    "role": "skill",
    "exec": "hybrid",
    "setup": "medium",
@@ -17173,7 +17410,7 @@
    "id": "social-media-research-skills",
    "name": "social-media-research-skills",
    "emoji": "🧠",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "role": "skill",
    "exec": "cloud",
@@ -17254,7 +17491,7 @@
    "id": "system-prompts-and-models-of-ai-tools",
    "name": "system-prompts-and-models-of-ai-tools",
    "emoji": "🧠",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "role": "directory",
    "exec": "hybrid",
@@ -17294,7 +17531,7 @@
    "id": "agent-desktop",
    "name": "agent-desktop",
    "emoji": "🕸️",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "role": "app",
    "exec": "local",
@@ -17330,7 +17567,7 @@
    "id": "codex-chatgpt-web",
    "name": "codex-chatgpt-web",
    "emoji": "🕸️",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "role": "app",
    "exec": "cloud",
@@ -17436,7 +17673,7 @@
    "id": "local-deep-research",
    "name": "local-deep-research",
    "emoji": "🕸️",
-   "cat": 3,
+   "cat": 21,
    "sub": "research",
    "role": "platform",
    "exec": "hybrid",
@@ -17517,8 +17754,8 @@
    "id": "mimo-code",
    "name": "MiMo-Code",
    "emoji": "🕸️",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "role": "app",
    "exec": "hybrid",
    "setup": "medium",
@@ -17554,7 +17791,7 @@
    "id": "nodeterm",
    "name": "nodeterm",
    "emoji": "🕸️",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "role": "app",
    "exec": "local",
@@ -17590,7 +17827,7 @@
    "id": "open-deep-research",
    "name": "open_deep_research",
    "emoji": "🕸️",
-   "cat": 3,
+   "cat": 21,
    "sub": "research",
    "role": "runtime",
    "exec": "hybrid",
@@ -17629,8 +17866,8 @@
    "id": "openclaude",
    "name": "openclaude",
    "emoji": "🕸️",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "role": "app",
    "exec": "hybrid",
    "setup": "medium",
@@ -17669,8 +17906,8 @@
    "id": "opencode-legacy",
    "name": "opencode",
    "emoji": "🕸️",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "role": "app",
    "exec": "hybrid",
    "setup": "medium",
@@ -17707,8 +17944,8 @@
    "id": "opencursor",
    "name": "OpenCursor",
    "emoji": "🕸️",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "editor",
    "role": "app",
    "exec": "hybrid",
    "setup": "medium",
@@ -17749,7 +17986,7 @@
    "id": "paperclip",
    "name": "paperclip",
    "emoji": "🕸️",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "role": "platform",
    "exec": "hybrid",
@@ -17788,7 +18025,7 @@
    "id": "social-media-agent",
    "name": "social-media-agent",
    "emoji": "🕸️",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "role": "runtime",
    "exec": "cloud",
@@ -17818,8 +18055,8 @@
    "id": "agent-browser",
    "name": "agent-browser",
    "emoji": "🕷️",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "agentes-web",
    "role": "app",
    "exec": "local",
    "setup": "easy",
@@ -17850,8 +18087,8 @@
    "id": "awesome-chrome-devtools",
    "name": "awesome-chrome-devtools",
    "emoji": "🕷️",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "recursos-web",
    "role": "directory",
    "exec": "local",
    "setup": "easy",
@@ -17924,8 +18161,8 @@
    "id": "camofox-browser",
    "name": "camofox-browser",
    "emoji": "🕷️",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "motores-web",
    "role": "runtime",
    "exec": "hybrid",
    "setup": "medium",
@@ -18035,7 +18272,7 @@
    "id": "free-for-dev",
    "name": "free-for-dev",
    "emoji": "🔌",
-   "cat": 5,
+   "cat": 22,
    "sub": "recursos",
    "role": "directory",
    "exec": "cloud",
@@ -18071,7 +18308,7 @@
    "id": "freedomain",
    "name": "FreeDomain",
    "emoji": "🔌",
-   "cat": 5,
+   "cat": 22,
    "sub": "recursos",
    "role": "directory",
    "exec": "cloud",
@@ -18111,7 +18348,7 @@
    "id": "masterdnsvpn",
    "name": "MasterDnsVPN",
    "emoji": "🔌",
-   "cat": 5,
+   "cat": 22,
    "sub": "redes",
    "role": "app",
    "exec": "hybrid",
@@ -18149,7 +18386,7 @@
    "id": "backdoor",
    "name": "backdoor",
    "emoji": "🧬",
-   "cat": 6,
+   "cat": 23,
    "sub": "serving",
    "role": "runtime",
    "exec": "hybrid",
@@ -18187,7 +18424,7 @@
    "id": "rtk",
    "name": "rtk",
    "emoji": "🧬",
-   "cat": 6,
+   "cat": 23,
    "sub": "tokens",
    "role": "app",
    "exec": "local",
@@ -18227,7 +18464,7 @@
    "id": "tensorrt-llm",
    "name": "TensorRT-LLM",
    "emoji": "🧬",
-   "cat": 6,
+   "cat": 23,
    "sub": "serving",
    "role": "library",
    "exec": "local",
@@ -18263,7 +18500,7 @@
    "id": "awesome-machine-learning",
    "name": "awesome-machine-learning",
    "emoji": "🧑‍💻",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "role": "directory",
    "exec": "hybrid",
@@ -18296,7 +18533,7 @@
    "id": "bigdata",
    "name": "BigData",
    "emoji": "🧑‍💻",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "role": "directory",
    "exec": "local",
@@ -18330,7 +18567,7 @@
    "id": "bionemo-recipes",
    "name": "bionemo-recipes",
    "emoji": "🧑‍💻",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "role": "directory",
    "exec": "local",
@@ -18368,7 +18605,7 @@
    "id": "globalbuildingatlas",
    "name": "GlobalBuildingAtlas",
    "emoji": "🧑‍💻",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "role": "directory",
    "exec": "local",
@@ -18402,7 +18639,7 @@
    "id": "hudi",
    "name": "hudi",
    "emoji": "🧑‍💻",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "role": "platform",
    "exec": "hybrid",
@@ -18440,7 +18677,7 @@
    "id": "machinelearning",
    "name": "MachineLearning",
    "emoji": "🧑‍💻",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "role": "directory",
    "exec": "local",
@@ -18473,7 +18710,7 @@
    "id": "python-machine-learning-book",
    "name": "python-machine-learning-book",
    "emoji": "🧑‍💻",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "role": "directory",
    "exec": "local",
@@ -18512,7 +18749,7 @@
    "id": "tensorflow",
    "name": "tensorflow",
    "emoji": "🧑‍💻",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "role": "library",
    "exec": "local",
@@ -18549,7 +18786,7 @@
    "id": "train-llm-from-scratch",
    "name": "train-llm-from-scratch",
    "emoji": "🧑‍💻",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "role": "directory",
    "exec": "local",
@@ -18589,7 +18826,7 @@
    "id": "warp",
    "name": "warp",
    "emoji": "🧑‍💻",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "role": "library",
    "exec": "local",
@@ -18783,7 +19020,7 @@
    "id": "front-end-checklist",
    "name": "Front-End-Checklist",
    "emoji": "🎨",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "directory",
    "exec": "local",
@@ -19443,7 +19680,7 @@
    "id": "ruview",
    "name": "RuView",
    "emoji": "🖼️",
-   "cat": 11,
+   "cat": 28,
    "sub": "sensores",
    "role": "platform",
    "exec": "local",
@@ -19481,7 +19718,7 @@
    "id": "ace-step-1.5",
    "name": "ACE-Step-1.5",
    "emoji": "🎬",
-   "cat": 12,
+   "cat": 29,
    "sub": "musica",
    "role": "platform",
    "exec": "local",
@@ -19551,7 +19788,7 @@
    "id": "edge-tts",
    "name": "edge-tts",
    "emoji": "🎬",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "library",
    "exec": "cloud",
@@ -19587,8 +19824,8 @@
    "id": "manim-community",
    "name": "manim",
    "emoji": "🎬",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "motores",
    "role": "library",
    "exec": "local",
    "setup": "medium",
@@ -19625,7 +19862,7 @@
    "id": "music-megathread",
    "name": "Music-Megathread",
    "emoji": "🎬",
-   "cat": 12,
+   "cat": 29,
    "sub": "musica",
    "role": "directory",
    "exec": "hybrid",
@@ -19696,8 +19933,8 @@
    "id": "rea-video",
    "name": "rea-video",
    "emoji": "🎬",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "role": "skill",
    "exec": "hybrid",
    "setup": "medium",
@@ -19774,7 +20011,7 @@
    "id": "archify",
    "name": "archify",
    "emoji": "📄",
-   "cat": 13,
+   "cat": 31,
    "sub": "diagramas",
    "role": "skill",
    "exec": "local",
@@ -19849,7 +20086,7 @@
   {
    "id": "dream-loop",
    "name": "dream-loop",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "local",
@@ -19951,7 +20188,7 @@
   {
    "id": "agentes-chat",
    "name": "agentes-chat",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "role": "app",
    "exec": "hybrid",
@@ -20021,7 +20258,7 @@
   {
    "id": "claude-seo",
    "name": "claude-seo",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "role": "skill",
    "exec": "local",
@@ -20054,7 +20291,7 @@
   {
    "id": "awesome-harness-engineering",
    "name": "awesome-harness-engineering",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "role": "directory",
    "exec": "local",
@@ -20157,8 +20394,8 @@
   {
    "id": "huashu-motion",
    "name": "huashu-motion",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "role": "skill",
    "exec": "local",
    "setup": "medium",
@@ -20329,8 +20566,8 @@
   {
    "id": "blender-skills",
    "name": "blender-skills",
-   "cat": 11,
-   "sub": "creacion-3d",
+   "cat": 27,
+   "sub": "skills",
    "role": "skill",
    "exec": "local",
    "setup": "medium",
@@ -20364,7 +20601,7 @@
   {
    "id": "webgl-noise",
    "name": "webgl-noise",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "role": "library",
    "exec": "local",
@@ -20397,7 +20634,7 @@
   {
    "id": "genjutsu",
    "name": "genjutsu",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "local",
@@ -20464,7 +20701,7 @@
   {
    "id": "i-have-adhd",
    "name": "i-have-adhd",
-   "cat": 2,
+   "cat": 27,
    "sub": "escritura",
    "role": "skill",
    "exec": "local",
@@ -20561,7 +20798,7 @@
   {
    "id": "blender",
    "name": "blender",
-   "cat": 11,
+   "cat": 26,
    "sub": "creacion-3d",
    "role": "app",
    "exec": "local",
@@ -20595,8 +20832,8 @@
   {
    "id": "rubberband",
    "name": "rubberband",
-   "cat": 12,
-   "sub": "edicion",
+   "cat": 29,
+   "sub": "audio",
    "role": "library",
    "exec": "local",
    "setup": "medium",
@@ -20628,7 +20865,7 @@
   {
    "id": "diagram-design",
    "name": "diagram-design",
-   "cat": 13,
+   "cat": 31,
    "sub": "diagramas",
    "role": "skill",
    "exec": "local",
@@ -20695,7 +20932,7 @@
   {
    "id": "omniroute",
    "name": "OmniRoute",
-   "cat": 6,
+   "cat": 23,
    "sub": "serving",
    "role": "platform",
    "exec": "hybrid",
@@ -20732,8 +20969,8 @@
   {
    "id": "opencode-manager",
    "name": "opencode-manager",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "sesiones",
    "role": "app",
    "exec": "hybrid",
    "setup": "medium",
@@ -20765,7 +21002,7 @@
   {
    "id": "threejs-skills",
    "name": "threejs-skills",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "local",
@@ -20802,7 +21039,7 @@
   {
    "id": "openpose",
    "name": "openpose",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "runtime",
    "exec": "local",
@@ -20838,7 +21075,7 @@
   {
    "id": "coolify",
    "name": "coolify",
-   "cat": 15,
+   "cat": 22,
    "sub": "infraestructura",
    "role": "platform",
    "exec": "local",
@@ -20871,7 +21108,7 @@
   {
    "id": "opendots",
    "name": "OpenDots",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "role": "app",
    "exec": "hybrid",
@@ -21005,7 +21242,7 @@
   {
    "id": "scenejs",
    "name": "scenejs",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "role": "library",
    "exec": "local",
@@ -21140,7 +21377,7 @@
   {
    "id": "dograh",
    "name": "dograh",
-   "cat": 12,
+   "cat": 29,
    "sub": "voz-agentes",
    "role": "app",
    "exec": "hybrid",
@@ -21176,8 +21413,8 @@
   {
    "id": "papermorph",
    "name": "Papermorph",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "role": "skill",
    "exec": "local",
    "setup": "medium",
@@ -21243,7 +21480,7 @@
   {
    "id": "sellbird",
    "name": "sellbird",
-   "cat": 1,
+   "cat": 18,
    "sub": "marketing",
    "role": "app",
    "exec": "local",
@@ -21312,7 +21549,7 @@
   {
    "id": "open-seo",
    "name": "open-seo",
-   "cat": 1,
+   "cat": 18,
    "sub": "marketing",
    "role": "platform",
    "exec": "local",
@@ -21345,7 +21582,7 @@
   {
    "id": "claude-task-master",
    "name": "claude-task-master",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "role": "app",
    "exec": "hybrid",
@@ -21378,7 +21615,7 @@
   {
    "id": "videopose3d",
    "name": "VideoPose3D",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "runtime",
    "exec": "local",
@@ -21582,8 +21819,8 @@
   {
    "id": "srt-whiteboard-animation",
    "name": "srt-whiteboard-animation",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "role": "skill",
    "exec": "local",
    "setup": "medium",
@@ -21653,7 +21890,7 @@
   {
    "id": "postiz-app",
    "name": "postiz-app",
-   "cat": 1,
+   "cat": 18,
    "sub": "marketing",
    "role": "platform",
    "exec": "hybrid",
@@ -21687,7 +21924,7 @@
   {
    "id": "mediapipe",
    "name": "mediapipe",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "library",
    "exec": "local",
@@ -21757,7 +21994,7 @@
   {
    "id": "filament",
    "name": "filament",
-   "cat": 11,
+   "cat": 26,
    "sub": "creacion-3d",
    "role": "library",
    "exec": "local",
@@ -21825,7 +22062,7 @@
   {
    "id": "modern-web-guidance",
    "name": "modern-web-guidance",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "local",
@@ -21893,7 +22130,7 @@
   {
    "id": "gsap-skills",
    "name": "gsap-skills",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "local",
@@ -21928,7 +22165,7 @@
   {
    "id": "ozz-animation",
    "name": "ozz-animation",
-   "cat": 11,
+   "cat": 26,
    "sub": "creacion-3d",
    "role": "library",
    "exec": "local",
@@ -22172,7 +22409,7 @@
   {
    "id": "casaos",
    "name": "CasaOS",
-   "cat": 15,
+   "cat": 22,
    "sub": "infraestructura",
    "role": "platform",
    "exec": "local",
@@ -22269,7 +22506,7 @@
   {
    "id": "instagram-agent-skill",
    "name": "instagram-agent-skill",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "role": "skill",
    "exec": "local",
@@ -22302,7 +22539,7 @@
   {
    "id": "linkedin-agent-skill",
    "name": "linkedin-agent-skill",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "role": "skill",
    "exec": "local",
@@ -22434,7 +22671,7 @@
   {
    "id": "scientific-agent-skills",
    "name": "scientific-agent-skills",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "role": "skill",
    "exec": "local",
@@ -22468,7 +22705,7 @@
   {
    "id": "logo-design-skill",
    "name": "logo-design-skill",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "local",
@@ -22776,7 +23013,7 @@
   {
    "id": "kornia",
    "name": "kornia",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "library",
    "exec": "local",
@@ -22845,8 +23082,8 @@
   {
    "id": "openidea",
    "name": "openidea",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "editor",
    "role": "app",
    "exec": "local",
    "setup": "easy",
@@ -22878,8 +23115,8 @@
   {
    "id": "brag",
    "name": "brag",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "role": "skill",
    "exec": "local",
    "setup": "medium",
@@ -22947,8 +23184,8 @@
   {
    "id": "lemo-opuscar",
    "name": "lemo-opuscar",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "role": "skill",
    "exec": "local",
    "setup": "medium",
@@ -22982,8 +23219,8 @@
   {
    "id": "earshot",
    "name": "earshot",
-   "cat": 12,
-   "sub": "edicion",
+   "cat": 29,
+   "sub": "audio",
    "role": "runtime",
    "exec": "hybrid",
    "setup": "medium",
@@ -23022,7 +23259,7 @@
   {
    "id": "motion-design-skill",
    "name": "motion-design-skill",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "local",
@@ -23126,7 +23363,7 @@
   {
    "id": "claude-code-usage-monitor",
    "name": "Claude-Code-Usage-Monitor",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "role": "app",
    "exec": "local",
@@ -23193,7 +23430,7 @@
   {
    "id": "cloud-mail",
    "name": "cloud-mail",
-   "cat": 1,
+   "cat": 18,
    "sub": "marketing",
    "role": "platform",
    "exec": "local",
@@ -23226,7 +23463,7 @@
   {
    "id": "threejs-game-skills",
    "name": "threejs-game-skills",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "local",
@@ -23297,7 +23534,7 @@
   {
    "id": "zdog",
    "name": "zdog",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "role": "library",
    "exec": "local",
@@ -23363,7 +23600,7 @@
   {
    "id": "awesome-cad",
    "name": "awesome-cad",
-   "cat": 11,
+   "cat": 26,
    "sub": "creacion-3d",
    "role": "directory",
    "exec": "local",
@@ -23467,8 +23704,8 @@
   {
    "id": "claude-animated-shorts",
    "name": "claude-animated-shorts",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "role": "skill",
    "exec": "local",
    "setup": "medium",
@@ -23501,7 +23738,7 @@
   {
    "id": "claude-code-router",
    "name": "claude-code-router",
-   "cat": 6,
+   "cat": 23,
    "sub": "serving",
    "role": "platform",
    "exec": "hybrid",
@@ -23532,7 +23769,7 @@
   {
    "id": "mvanhorn",
    "name": "mvanhorn",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "role": "directory",
    "exec": "local",
@@ -23566,7 +23803,7 @@
   {
    "id": "melotts",
    "name": "MeloTTS",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "role": "runtime",
    "exec": "local",
@@ -23602,7 +23839,7 @@
   {
    "id": "laya",
    "name": "laya",
-   "cat": 7,
+   "cat": 24,
    "sub": "modelos",
    "role": "runtime",
    "exec": "local",
@@ -23706,7 +23943,7 @@
   {
    "id": "hallmark",
    "name": "hallmark",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "local",
@@ -24089,7 +24326,7 @@
   {
    "id": "mmpose",
    "name": "mmpose",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "runtime",
    "exec": "local",
@@ -24158,8 +24395,8 @@
   {
    "id": "openfilm",
    "name": "openfilm",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "role": "skill",
    "exec": "local",
    "setup": "medium",
@@ -24193,7 +24430,7 @@
   {
    "id": "hello-halo",
    "name": "hello-halo",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "role": "app",
    "exec": "hybrid",
@@ -24260,7 +24497,7 @@
   {
    "id": "pixelfx",
    "name": "pixelfx",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "role": "library",
    "exec": "local",
@@ -24326,7 +24563,7 @@
   {
    "id": "no-ai-slop",
    "name": "no-ai-slop",
-   "cat": 2,
+   "cat": 27,
    "sub": "escritura",
    "role": "skill",
    "exec": "local",
@@ -24360,7 +24597,7 @@
   {
    "id": "planck-js",
    "name": "planck.js",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "role": "library",
    "exec": "local",
@@ -24393,7 +24630,7 @@
   {
    "id": "react-three-rapier",
    "name": "react-three-rapier",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "role": "library",
    "exec": "local",
@@ -24600,7 +24837,7 @@
   {
    "id": "regl",
    "name": "regl",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "role": "library",
    "exec": "local",
@@ -24668,7 +24905,7 @@
   {
    "id": "fugu",
    "name": "fugu",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "role": "app",
    "exec": "hybrid",
@@ -24699,7 +24936,7 @@
   {
    "id": "shepherd",
    "name": "shepherd",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "role": "library",
    "exec": "local",
@@ -24730,7 +24967,7 @@
   {
    "id": "4d-humans",
    "name": "4D-Humans",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "runtime",
    "exec": "local",
@@ -24799,7 +25036,7 @@
   {
    "id": "minimalist-entrepreneur-skills",
    "name": "skills",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "role": "skill",
    "exec": "local",
@@ -24871,7 +25108,7 @@
   {
    "id": "supabase",
    "name": "supabase",
-   "cat": 15,
+   "cat": 22,
    "sub": "infraestructura",
    "role": "platform",
    "exec": "local",
@@ -24970,8 +25207,8 @@
   {
    "id": "motionmaxxing",
    "name": "motionmaxxing",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "role": "skill",
    "exec": "local",
    "setup": "medium",
@@ -25005,7 +25242,7 @@
   {
    "id": "tfjs-models",
    "name": "tfjs-models",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "library",
    "exec": "local",
@@ -25244,7 +25481,7 @@
   {
    "id": "3dviz-pro-max",
    "name": "3dviz-pro-max",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "local",
@@ -25282,8 +25519,8 @@
   {
    "id": "video-shotcraft",
    "name": "video-shotcraft",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "role": "skill",
    "exec": "local",
    "setup": "medium",
@@ -25453,7 +25690,7 @@
   {
    "id": "anatomy",
    "name": "anatomy",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "local",
@@ -25522,8 +25759,8 @@
   {
    "id": "rnnoise",
    "name": "rnnoise",
-   "cat": 12,
-   "sub": "edicion",
+   "cat": 29,
+   "sub": "audio",
    "role": "runtime",
    "exec": "local",
    "setup": "medium",
@@ -25558,7 +25795,7 @@
   {
    "id": "wham",
    "name": "WHAM",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "runtime",
    "exec": "local",
@@ -25594,7 +25831,7 @@
   {
    "id": "design-dna",
    "name": "design-dna",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "role": "skill",
    "exec": "local",
@@ -25629,7 +25866,7 @@
   {
    "id": "meshoptimizer",
    "name": "meshoptimizer",
-   "cat": 11,
+   "cat": 26,
    "sub": "creacion-3d",
    "role": "library",
    "exec": "local",
@@ -25697,7 +25934,7 @@
   {
    "id": "easymocap",
    "name": "EasyMocap",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "role": "runtime",
    "exec": "local",
@@ -25733,8 +25970,8 @@
   {
    "id": "dsh-android",
    "name": "dsh-android",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "plataformas",
    "role": "library",
    "exec": "local",
    "setup": "medium",
@@ -25764,8 +26001,8 @@
   {
    "id": "dsh-game-studio",
    "name": "dsh-game-studio",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "plataformas",
    "role": "library",
    "exec": "local",
    "setup": "medium",
@@ -25795,8 +26032,8 @@
   {
    "id": "dsh-ios",
    "name": "dsh-ios",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "plataformas",
    "role": "library",
    "exec": "local",
    "setup": "medium",
@@ -25882,6 +26119,121 @@
    "goals": [
     "programar"
    ]
+  },
+  {
+   "id": "creative-architect",
+   "name": "Creative Architect",
+   "cat": 27,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [
+    "anthropic",
+    "openai"
+   ],
+   "tags": [
+    "direccion-de-arte",
+    "fotos-producto",
+    "ugc",
+    "claude-code",
+    "creative-architect"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de imagen o video.",
+   "alt": [],
+   "added_at": "2026-11-14",
+   "goals": [
+    "imagenes",
+    "video",
+    "skills"
+   ],
+   "gh": "Hainrixz/creative-architect",
+   "github_id": 1423465103,
+   "stars": 24,
+   "license": "MIT",
+   "lang": "Markdown",
+   "routes": [
+    "no_api",
+    "claude",
+    "api"
+   ]
+  },
+  {
+   "id": "cybersecurity-skills",
+   "name": "Cybersecurity Skills (comunidad)",
+   "cat": 16,
+   "sub": "skills",
+   "role": "skill",
+   "exec": "hybrid",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "cybersecurity",
+    "seguridad",
+    "skills",
+    "claude-code",
+    "codex",
+    "comunidad"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas autorizadas con Claude Code, Codex y otros agentes.",
+   "alt": [],
+   "added_at": "2026-11-14",
+   "goals": [
+    "seguridad"
+   ],
+   "gh": "mukul975/Anthropic-Cybersecurity-Skills",
+   "github_id": 1166506614,
+   "stars": 36161,
+   "license": "Apache-2.0",
+   "lang": "Python",
+   "routes": [
+    "claude",
+    "codex"
+   ]
+  },
+  {
+   "id": "kimi-k2-7-code",
+   "name": "Kimi K2.7 Code",
+   "cat": 24,
+   "sub": "modelos",
+   "role": "runtime",
+   "exec": "hybrid",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [
+    "local"
+   ],
+   "tags": [
+    "kimi",
+    "moonshot",
+    "modelo",
+    "programacion",
+    "pesos-abiertos",
+    "huggingface"
+   ],
+   "lib": false,
+   "pick": false,
+   "one": "Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face.",
+   "alt": [],
+   "added_at": "2026-11-14",
+   "goals": [
+    "local"
+   ],
+   "repository_host": "huggingface",
+   "model_id": "moonshotai/Kimi-K2.7-Code",
+   "license": "Modified MIT; revisar condiciones",
+   "lang": "Pesos de modelo",
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
   }
  ],
  "discovery": {
@@ -25902,9 +26254,8 @@
      "goose"
     ],
     "categories": [
-     2,
-     3,
-     7
+     7,
+     20
     ],
     "keywords": [
      "programar",
@@ -25931,8 +26282,7 @@
      "windmill"
     ],
     "categories": [
-     1,
-     5
+     1
     ],
     "keywords": [
      "automatizar",
@@ -25959,7 +26309,9 @@
      "n8n"
     ],
     "categories": [
-     1
+     1,
+     17,
+     18
     ],
     "keywords": [
      "whatsapp",
@@ -26018,8 +26370,8 @@
      "open-deep-research"
     ],
     "categories": [
-     3,
-     4
+     4,
+     21
     ],
     "keywords": [
      "investigar",
@@ -26049,7 +26401,7 @@
     ],
     "categories": [
      8,
-     6
+     24
     ],
     "keywords": [
      "local",
@@ -26078,7 +26430,9 @@
      "assistant-ui"
     ],
     "categories": [
-     9
+     9,
+     26,
+     27
     ],
     "keywords": [
      "web",
@@ -26110,7 +26464,10 @@
      "moviepy"
     ],
     "categories": [
-     12
+     12,
+     27,
+     29,
+     30
     ],
     "keywords": [
      "video",
@@ -26138,7 +26495,7 @@
      "whisper"
     ],
     "categories": [
-     12
+     29
     ],
     "keywords": [
      "audio",
@@ -26165,7 +26522,7 @@
      "omnivoice-studio"
     ],
     "categories": [
-     12
+     29
     ],
     "keywords": [
      "voz",
@@ -26193,7 +26550,10 @@
      "rembg"
     ],
     "categories": [
-     11
+     11,
+     26,
+     27,
+     28
     ],
     "keywords": [
      "imagenes",
@@ -26222,7 +26582,7 @@
      "reveal.js"
     ],
     "categories": [
-     13
+     31
     ],
     "keywords": [
      "presentaciones",
@@ -26249,7 +26609,7 @@
     ],
     "categories": [
      9,
-     13
+     31
     ],
     "keywords": [
      "diagrama",
@@ -26277,7 +26637,7 @@
     ],
     "categories": [
      10,
-     7
+     25
     ],
     "keywords": [
      "datos",
@@ -26305,7 +26665,25 @@
      "n8n-mcp"
     ],
     "categories": [
-     5
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     12,
+     13,
+     16,
+     19,
+     20,
+     21,
+     22,
+     29,
+     30,
+     32
     ],
     "keywords": [
      "mcp",
@@ -26332,7 +26710,11 @@
     ],
     "categories": [
      2,
-     9
+     12,
+     16,
+     19,
+     27,
+     30
     ],
     "keywords": [
      "skills",
@@ -26359,8 +26741,25 @@
      "ai-agents-for-beginners"
     ],
     "categories": [
+     1,
      2,
-     7
+     3,
+     4,
+     5,
+     7,
+     9,
+     10,
+     14,
+     15,
+     16,
+     19,
+     22,
+     24,
+     25,
+     26,
+     27,
+     29,
+     32
     ],
     "keywords": [
      "aprender",
@@ -26442,7 +26841,10 @@
      "audiobookshelf"
     ],
     "categories": [
-     15
+     13,
+     15,
+     18,
+     22
     ],
     "keywords": [
      "servidor propio",
@@ -26496,8 +26898,9 @@
      "unity-mcp"
     ],
     "categories": [
-     9,
-     11
+     5,
+     26,
+     27
     ],
     "keywords": [
      "3d",

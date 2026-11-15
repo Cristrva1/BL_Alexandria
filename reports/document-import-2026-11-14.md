@@ -41,6 +41,8 @@ Las fichas conservan función, preparación, pasos iniciales, acceso al modelo, 
 
 ## Nombres que siguen pendientes
 
+**Seguimiento posterior:** [investigación de los cinco nombres](pending-names-2026-11-14.md). Se incorporaron Creative Architect, Cybersecurity Skills y la publicación oficial de Kimi K2.7 Code; Conductor AI y AgentOS siguen sin una correspondencia suficientemente acreditada. El listado siguiente conserva el estado del primer importado.
+
 No se asignó arbitrariamente un repositorio a estos nombres sin un propietario o enlace suficientemente identificable:
 
 - Conductor AI.

@@ -1,4 +1,4 @@
-[🏠 Inicio](../README.md) › [🎨 Diseñar y construir interfaces](../categorias/09-dise-o-ui-frontend.md) › CSS y estilos
+[🏠 Inicio](../README.md) › [🎨 Diseñar y construir interfaces web](../categorias/09-dise-o-ui-frontend.md) › CSS y estilos
 
 # 📂 flexoki
 

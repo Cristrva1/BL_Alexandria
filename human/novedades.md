@@ -199,7 +199,9 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [defuddle](fichas/defuddle.md) | Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable. | Sin API de IA en la ruta básica |
 | 2026-11-14 | [DataAnalystPortfolioProjects](fichas/dataanalystportfolioprojects.md) | Portafolio de ejemplos de análisis de datos con SQL, Python, Tableau, Excel y Hive. | Sin API de IA en la ruta básica |
 | 2026-11-14 | [data-analyst-roadmap](fichas/data-analyst-roadmap.md) | Hoja de ruta para aprender análisis de datos, con tecnologías, capacidades y orientación de carrera. | Sin API de IA en la ruta básica |
+| 2026-11-14 | [Cybersecurity Skills (comunidad)](fichas/cybersecurity-skills.md) | Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas autorizadas con Claude Code, Codex y otros agentes. | Sin API de IA en la ruta básica |
 | 2026-11-14 | [crypto-trader](fichas/crypto-trader.md) | Biblioteca de Python con bindings de la API de Gemini y un ejemplo de estrategia de criptomonedas. | Sin API de IA en la ruta básica |
+| 2026-11-14 | [Creative Architect](fichas/creative-architect.md) | Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de imagen o video. | API de IA opcional |
 | 2026-11-14 | [craft-anything](fichas/craft-anything.md) | Herramientas para estudiar cómo funciona una aplicación y ayudar a construir una implementación propia con agentes. | API de IA opcional |
 | 2026-11-14 | [coolify](fichas/coolify.md) | Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios. | Sin API de IA en la ruta básica |
 | 2026-11-14 | [Concat](fichas/concat.md) | Editor de video local con interfaz y mecanismos de automatización mediante JSON-RPC y herramientas MCP. | Sin API de IA en la ruta básica |

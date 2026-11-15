@@ -812,7 +812,7 @@
   },
   "whatsapp-web-js": {
    "name": "whatsapp-web.js",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "desc": "Permite enviar y recibir mensajes, medios y grupos desde código usando una sesión de WhatsApp Web. Muy usada para bots y prototipos.",
    "why": "Muy popular y documentada, con una API sencilla orientada a eventos.",
@@ -884,7 +884,7 @@
   },
   "openwa": {
    "name": "OpenWA",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "desc": "Envía y recibe mensajes de WhatsApp desde tu propio script con una API sencilla y expresiva.",
    "why": "Muy adoptado para prototipos y bots individuales por su simplicidad y su API expresiva, con una comunidad consolidada alrededor de wa-automate. Es la opción ligera cuando evolution-api es excesivo.",
@@ -953,7 +953,7 @@
   },
   "baileys": {
    "name": "Baileys",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "desc": "Implementa el protocolo de WhatsApp Web directamente, así que consume muy pocos recursos. Es la base de muchas APIs de WhatsApp, incluida Evolution API.",
    "why": "Ligera y rápida porque no necesita Chromium; ideal para muchas sesiones.",
@@ -1024,7 +1024,7 @@
   },
   "fluxer": {
    "name": "fluxer",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "desc": "Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio. Organiza canales y comunicación de grupos; no es un generador de audio o video.",
    "why": "Apuesta por audio/video con mejoras continuas y un cliente nativo, aunque es un proyecto poco maduro y con documentación e instalación todavía limitadas (honestamente, oscuro). Útil solo para explorar el rumbo de la plataforma.",
@@ -1091,7 +1091,7 @@
   },
   "evolution-api": {
    "name": "evolution-api",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "desc": "Conecta WhatsApp a tu stack mediante una API REST propia, sin quedar atado a un proveedor cerrado.",
    "why": "Es una de las puertas de enlace de WhatsApp open-source más usadas en LATAM y Brasil para producción, con comunidad activa y soporte de webhooks, multi-instancia y gestión de sesiones. Su adopción la convierte en el puente habitual hacia n8n o chatwoot.",
@@ -1163,7 +1163,7 @@
   },
   "waha": {
    "name": "WAHA",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "desc": "Expone WhatsApp como API HTTP con webhooks, lista para conectar a n8n o a tu backend. Ofrece motores basados en navegador o en WebSocket.",
    "why": "Se levanta con un solo `docker run` y trae Swagger y panel de sesiones.",
@@ -1235,7 +1235,7 @@
   },
   "whatsapp-agentkit": {
    "name": "whatsapp-agentkit",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "desc": "Arranca un bot de WhatsApp con IA sin escribir código, a partir de una plantilla guiada.",
    "why": "Baja drásticamente la barrera de entrada al delegar la generación del código en Claude Code, ideal para arranques rápidos y perfiles no técnicos. El resultado es código real que luego puedes editar, no una caja negra.",
@@ -1306,7 +1306,7 @@
   },
   "typebot": {
    "name": "Typebot",
-   "cat": 1,
+   "cat": 17,
    "sub": "chatbots",
    "desc": "Diseña conversaciones con bloques arrastrables (preguntas, condiciones, integraciones, IA) y publícalas en web o WhatsApp. Pensado para captar leads y formularios conversacionales.",
    "why": "Editor muy pulido, con bloques de OpenAI y webhooks; alternativa abierta a Landbot.",
@@ -1376,7 +1376,7 @@
   },
   "rasa": {
    "name": "Rasa",
-   "cat": 1,
+   "cat": 17,
    "sub": "chatbots",
    "desc": "Permite crear asistentes de texto y voz con control total del diálogo y de los datos. Muy usado en empresas que necesitan bots on-premise y predecibles.",
    "why": "Referencia histórica en bots empresariales; su enfoque CALM combina LLM con flujos controlados.",
@@ -1445,7 +1445,7 @@
   },
   "botpress": {
    "name": "Botpress",
-   "cat": 1,
+   "cat": 17,
    "sub": "chatbots",
    "desc": "Combina un estudio visual con código para crear agentes que usan bases de conocimiento, herramientas y canales. Su producto principal hoy es cloud; el repo contiene SDK, integraciones y CLI.",
    "why": "Ecosistema maduro de integraciones y canales, con enfoque en agentes con LLM.",
@@ -1516,7 +1516,7 @@
   },
   "odoo": {
    "name": "Odoo",
-   "cat": 1,
+   "cat": 18,
    "sub": "crm",
    "desc": "Integra CRM, ventas, facturación, inventario, RR. HH. y sitio web en una sola plataforma modular. La usan pymes y grandes empresas en todo el mundo.",
    "why": "Ecosistema enorme de módulos y partners; cubre casi cualquier proceso de negocio.",
@@ -1586,7 +1586,7 @@
   },
   "twenty-main": {
    "name": "twenty-main",
-   "cat": 1,
+   "cat": 18,
    "sub": "crm",
    "desc": "La premisa es tratar el CRM como una pieza más de tu stack: lo construyes, lo despliegas y lo versionas igual que el código.",
    "why": "Combina una UI cuidada con un modelo de datos totalmente personalizable, lo que evita el \"molde\" rígido de los CRM SaaS. Su enfoque \"construye tu propio CRM\" y su comunidad activa lo han vuelto una de las opciones open-source de referencia para este caso.",
@@ -1655,7 +1655,7 @@
   },
   "erpnext": {
    "name": "ERPNext",
-   "cat": 1,
+   "cat": 18,
    "sub": "crm",
    "desc": "Cubre la operación completa de una empresa sin licencias de pago. Muy usado por pymes y en manufactura y distribución.",
    "why": "Todo el código es GPL, incluidas funciones que otros ERP cobran.",
@@ -1725,7 +1725,7 @@
   },
   "chatwoot": {
    "name": "chatwoot",
-   "cat": 1,
+   "cat": 18,
    "sub": "crm",
    "desc": "Reúne WhatsApp, email, web chat y redes en una sola bandeja, con paso a un humano cuando el bot no basta. Alternativa abierta a Intercom o Zendesk.",
    "why": "Es una de las alternativas open-source más populares a Intercom/Zendesk, valorada por centralizar el soporte multicanal con handoff humano y asignación de tickets. Su comunidad activa y su integración con canales la hacen apta para producción.",
@@ -1794,7 +1794,7 @@
   },
   "novu": {
    "name": "novu",
-   "cat": 1,
+   "cat": 18,
    "sub": "marketing",
    "desc": "Envía notificaciones por email, SMS, push y chat desde una sola API, sin integrar y mantener cada proveedor por separado.",
    "why": "Es el estándar open-source de referencia para notificaciones, muy adoptado por su API unificada y su inbox unificado. Su modelo de \"notification workflows\" abstrae el enrutamiento por canal sin acoplarte a un proveedor concreto.",
@@ -1863,7 +1863,7 @@
   },
   "listmonk": {
    "name": "listmonk",
-   "cat": 1,
+   "cat": 18,
    "sub": "marketing",
    "desc": "Envía newsletters y campañas a miles de suscriptores desde un solo binario ligero que consume muy pocos recursos.",
    "why": "Muy popular por su rapidez y su single-binary en Go, es una opción ligera y soberana muy recomendada para email masivo. Su simplicidad de despliegue contrasta con stacks más pesados como mautic.",
@@ -1932,7 +1932,7 @@
   },
   "mautic": {
    "name": "mautic",
-   "cat": 1,
+   "cat": 18,
    "sub": "marketing",
    "desc": "Nutre leads por email con reglas y segmentos automáticos, sin ceder los datos de tus clientes a un SaaS.",
    "why": "Es la solución de marketing automation open-source más conocida y madura, respaldada por la Fundación Mautic y una comunidad amplia. Su madurez la hace apta para operaciones de marketing reales, no solo prototipos.",
@@ -3580,7 +3580,7 @@
   },
   "humanizer": {
    "name": "Humanizer",
-   "cat": 2,
+   "cat": 27,
    "sub": "escritura",
    "desc": "Detecta 26 patrones típicos de la prosa de LLM (contrastes tipo 'no es X, es Y', cierres dramáticos, tríadas forzadas, frases de falsa profundidad, importancia inflada) y reescribe el texto sin cambiar lo que dice. Puede imitar tu estilo si le das una muestra y, sobre un archivo, solo toca la prosa: no el código, los datos ni el frontmatter.",
    "why": "Parte de una fuente pública (la guía 'Signs of AI writing' de los editores de Wikipedia) y muestra su trabajo: primera reescritura, crítica de lo que aún suena artificial y versión final. No añade datos que no estuvieran en el original.",
@@ -3654,7 +3654,7 @@
   },
   "stop-slop": {
    "name": "Stop Slop",
-   "cat": 2,
+   "cat": 27,
    "sub": "escritura",
    "desc": "Un SKILL.md con tres archivos de referencia (frases a eliminar, estructuras a evitar y ejemplos antes/después) que enseña a Claude o a cualquier LLM a quitar muletillas, contrastes binarios, fragmentos dramáticos, voz pasiva y otros patrones predecibles. Cierra con una rúbrica de cinco dimensiones para decidir si el texto necesita otra vuelta.",
    "why": "Es corto, sin dependencias y portable: funciona como skill de Claude Code, como conocimiento de un proyecto de Claude o pegado en un system prompt. La rúbrica sobre 50 puntos da un criterio concreto para revisar.",
@@ -3727,7 +3727,7 @@
   },
   "marketingskills": {
    "name": "Marketing Skills",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "desc": "Skills de Corey Haines para marketers técnicos y founders que trabajan con agentes de código: conversión, copywriting, SEO y SEO para IA, anuncios, emails, analítica y atribución, pricing, lanzamientos, retención y ventas. La skill product-marketing guarda el contexto de tu producto y las demás la consultan antes de actuar.",
    "why": "Las skills se referencian entre sí y comparten un único documento de contexto, así que el agente aplica marcos coherentes (CRO, copy, A/B testing) en lugar de consejos sueltos. Es MIT y declara aparte las integraciones de partners.",
@@ -3800,7 +3800,7 @@
   },
   "agency-agents": {
    "name": "The Agency (agency-agents)",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "desc": "Plantillas de subagente en Markdown agrupadas por divisiones, como una agencia completa: ingeniería, diseño, paid media, ventas, marketing, producto, testing, seguridad, soporte, finanzas, videojuegos y más. Cada agente define identidad, misión, flujo de trabajo, entregables con ejemplos y métricas de éxito, y hay runbooks que arman equipos para escenarios como un MVP o una campaña.",
    "why": "Cada agente es un rol concreto con proceso y entregables, no un prompt genérico, y los scripts lo adaptan a más de una docena de herramientas. Puedes instalar solo las divisiones que vayas a usar.",
@@ -3874,7 +3874,7 @@
   },
   "geo-seo-claude": {
    "name": "GEO-SEO Claude",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "desc": "Añade a Claude Code comandos `/geo` que auditan un sitio para buscadores con IA (ChatGPT, Claude, Perplexity, Gemini, AI Overviews) sin dejar el SEO técnico: citabilidad del contenido, acceso de crawlers de IA en robots.txt, menciones de marca, datos estructurados y llms.txt. Genera informes para clientes en Markdown o PDF y lleva un pequeño CRM de prospectos.",
    "why": "Está pensado para agencias y consultores: además de auditar, prepara propuestas, compara la evolución mes a mes y produce un PDF listo para entregar. Reparte la auditoría entre cinco subagentes en paralelo.",
@@ -3946,7 +3946,7 @@
   },
   "arcads-claude-code": {
    "name": "Arcads AI Video Skill Pack",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "desc": "Repo de trabajo que convierte Claude Code o Cursor en un estudio de anuncios: genera videos UGC, presentaciones de producto, lookbooks y miniaturas de YouTube con los modelos de Arcads, y anuncios estáticos para Meta con 37 plantillas. Incluye pipelines multipaso (estilo Pixar o plastilina con ffmpeg), subtitulado con Whisper y HyperFrames, y publicación como anuncios pausados en Meta.",
    "why": "Trae fórmulas de prompt probadas para cada modelo, estimación de coste en créditos antes de cada generación y un log por llamada. Cubre del brief al anuncio subido a Meta sin salir del editor.",
@@ -4019,7 +4019,7 @@
   },
   "prompt-engineering-guide": {
    "name": "Prompt Engineering Guide",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "desc": "Explica técnicas de prompting, riesgos y aplicaciones con ejemplos y referencias a papers. Disponible en varios idiomas, incluido el español.",
    "why": "Una de las guías más citadas del tema, mantenida y actualizada con las técnicas nuevas.",
@@ -4088,7 +4088,7 @@
   },
   "fabric": {
    "name": "Fabric",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "desc": "Organiza prompts reutilizables (patterns) para tareas como resumir videos, extraer ideas o analizar textos. Se encadena con pipes en la terminal.",
    "why": "Biblioteca comunitaria de patrones muy cuidada y uso cómodo con pipes de Unix.",
@@ -4158,7 +4158,7 @@
   },
   "prompts-chat": {
    "name": "prompts.chat",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "desc": "Reúne miles de prompts de rol y tarea para ChatGPT, Claude y otros, con buscador web. Puedes desplegar tu propia copia para tu organización.",
    "why": "Es uno de los repos más populares de GitHub; fuente de inspiración para cualquier caso.",
@@ -4225,7 +4225,7 @@
   },
   "prompt-eng-tutorial": {
    "name": "Anthropic's Prompt Engineering Tutorial",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "desc": "Nueve capítulos con ejercicios sobre claridad, roles, ejemplos, razonamiento paso a paso y cómo evitar alucinaciones. Cada lección se practica contra la API de Claude.",
    "why": "Material oficial y muy didáctico, con ejercicios que se corrigen solos.",
@@ -4294,7 +4294,7 @@
   },
   "prompt-master": {
    "name": "prompt-master",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "desc": "Te ayuda a escribir mejores prompts con meta-prompting reutilizable, como una capa por encima de cualquier IA.",
    "why": "Es transversal a casi cualquier IA (texto, imagen, video, código), lo que la hace útil como capa de \"meta-prompting\" reutilizable. Su foco en acertar al primer intento reduce iteraciones y coste.",
@@ -4364,7 +4364,7 @@
   },
   "generative-ai-for-beginners": {
    "name": "Generative AI for Beginners",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "desc": "Curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa. Leer el curso no requiere una API; ejecutar cada práctica puede requerir servicios o modelos específicos.",
    "why": "Curso completo, gratuito y mantenido por Microsoft, con ejercicios prácticos en cada lección.",
@@ -4434,7 +4434,7 @@
   },
   "ai-agents-for-beginners": {
    "name": "AI Agents for Beginners",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "desc": "Recorre desde qué es un agente hasta producción: frameworks, patrones de diseño (uso de herramientas, planificación, multiagente, metacognición), RAG agéntico, protocolos MCP, A2A y NLWeb, context engineering, memoria, agentes que usan el navegador, despliegue, agentes locales y seguridad. Cada lección trae README, video corto y ejemplos en Python.",
    "why": "Es gratuito, está bien estructurado y tiene traducciones a más de 50 idiomas, español incluido. Cada lección es independiente, así que puedes empezar por la que te interese.",
@@ -4503,7 +4503,7 @@
   },
   "awesome-llm-apps": {
    "name": "Awesome LLM Apps",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "desc": "Repositorio de Shubham Saboo con plantillas de código abierto ordenadas por tipo: agentes simples de un solo archivo, agentes avanzados con herramientas y memoria, equipos multiagente, agentes de voz, agentes con MCP, RAG, chat con documentos y webs, fine-tuning y cursos rápidos de Google ADK y OpenAI Agents SDK. Según la app usa OpenAI, Anthropic, Google, xAI, DeepSeek o modelos abiertos.",
    "why": "Cada ejemplo es un proyecto pequeño y completo que puedes ejecutar en minutos y adaptar a tu caso. Es Apache 2.0 y se añaden plantillas nuevas con frecuencia.",
@@ -4576,7 +4576,7 @@
   },
   "openai-cookbook": {
    "name": "OpenAI Cookbook",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "desc": "Reúne recetas sobre embeddings, function calling, RAG, evaluación, agentes y voz. Sirve como referencia práctica al construir con la API de OpenAI.",
    "why": "Es la referencia oficial, actualizada con cada nueva función de la API.",
@@ -4647,7 +4647,7 @@
   },
   "claude-cookbooks": {
    "name": "Claude Cookbooks",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "desc": "Notebooks y guías de Anthropic con código copiable para construir con Claude: clasificación, resumen, RAG (con Pinecone o embeddings de Voyage AI), tool use y un agente de atención al cliente, visión y extracción de formularios, subagentes, PDFs, salida JSON consistente, moderación, prompt caching y checklists de coste y latencia.",
    "why": "Es la referencia oficial y sigue la evolución de la API, así que los patrones reflejan cómo recomienda Anthropic usar Claude. Cada receta es corta y se adapta fácil a otro lenguaje.",
@@ -4719,7 +4719,7 @@
   },
   "12-factor-agents": {
    "name": "12-Factor Agents",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "desc": "Ensayo de Dex Horthy (HumanLayer) que resume lo aprendido construyendo agentes para clientes reales: los productos que funcionan son sobre todo software determinista con pasos de LLM bien colocados. Cada factor (controlar tus prompts, tu ventana de contexto y tu flujo de control, pausar y reanudar, contactar a humanos con tool calls, agentes pequeños) tiene su capítulo con diagramas y ejemplos.",
    "why": "Es agnóstico al framework y se ha vuelto una referencia habitual sobre context engineering y diseño de agentes. Ayuda a decidir qué partes conviene programar a mano en vez de dejarlas al bucle del agente.",
@@ -4788,7 +4788,7 @@
   },
   "agents-towards-production": {
    "name": "Agents Towards Production",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "desc": "Playbook de Nir Diamant (DiamantAI) con un tutorial por carpeta, en notebooks o scripts listos para ejecutar, sobre cada pieza del stack de un agente: tool calling seguro, datos web, RAG, memoria (Redis, Mem0, Cognee), Docker, FastAPI, GPU, MCP, A2A, LangGraph, seguridad, fine-tuning, trazas y evaluación. Muchos tutoriales los aportan empresas patrocinadoras.",
    "why": "Cubre lo que suele faltar después de la demo (estado, memoria, despliegue, guardrails, evaluación) con código que puedes ejecutar y adaptar. Cada tutorial es independiente, así que vas directo a la pieza que necesitas.",
@@ -4858,7 +4858,7 @@
   },
   "loop-engineering": {
    "name": "Loop Engineering",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "desc": "Propone dejar de escribir prompts aislados y diseñar ciclos con objetivo, verificación y puntuación para que el agente itere solo. Incluye starters y herramientas de línea de comandos.",
    "why": "Enfoque práctico y medible: cada bucle termina con una puntuación que guía la siguiente iteración.",
@@ -4930,7 +4930,7 @@
   },
   "context-engineering": {
    "name": "Context-Engineering",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "desc": "Enseña de forma sistemática qué meter en el prompt y qué dejar fuera para que el modelo responda mejor.",
    "why": "Aporta un marco conceptual sólido y didáctico en un tema cada vez más decisivo para el rendimiento de los agentes. Combina teoría y notebooks ejecutables, lo que lo hace útil tanto para aprender como para aplicar.",
@@ -4999,8 +4999,8 @@
   },
   "opencode": {
    "name": "OpenCode",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "desc": "Ofrece una TUI cuidada, modo cliente-servidor, LSP y agentes configurables. Sirve si quieres un agente libre de proveedor.",
    "why": "Es el agente de código abierto más popular; no te ata a ningún modelo.",
    "how": "Un servidor local maneja sesiones y herramientas; la TUI y otros clientes se conectan a él y usan el proveedor configurado.",
@@ -5074,8 +5074,8 @@
   },
   "claude-code": {
    "name": "Claude Code",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "desc": "Lee y edita archivos, ejecuta comandos, hace commits y abre PRs a partir de instrucciones en lenguaje natural. Se extiende con skills, plugins, subagentes, hooks y servidores MCP.",
    "why": "Referencia en agentes de código por su autonomía en tareas largas y su ecosistema de skills y plugins.",
    "how": "Un bucle agéntico con Claude decide qué herramientas usar (leer, editar, bash, MCP) y pide permiso según el modo configurado.",
@@ -5152,8 +5152,8 @@
   },
   "codex": {
    "name": "Codex CLI",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "desc": "Lee tu repositorio, propone y aplica cambios y ejecuta comandos dentro de un sandbox. Usa AGENTS.md para el contexto del proyecto y admite MCP.",
    "why": "Open source, rápido y con sandbox del sistema operativo por defecto; se integra con ChatGPT y la nube de Codex.",
    "how": "Un CLI en Rust conversa con modelos de OpenAI y ejecuta las herramientas en un sandbox con niveles de aprobación.",
@@ -5228,8 +5228,8 @@
   },
   "gemini-cli": {
    "name": "Gemini CLI",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "desc": "Programa, investiga y automatiza tareas desde la terminal con contexto de millones de tokens y búsqueda de Google integrada. Admite MCP y extensiones.",
    "why": "Cuota gratuita amplia con cuenta de Google y ventana de contexto enorme.",
    "how": "Un CLI en Node.js orquesta herramientas (archivos, shell, búsqueda web, MCP) con modelos Gemini.",
@@ -5301,8 +5301,8 @@
   },
   "openhands": {
    "name": "OpenHands",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "ingenieria",
    "desc": "El agente puede leer y editar código, correr comandos y navegar la web dentro de un sandbox.",
    "why": "Uno de los proyectos open-source de agentes de programación más populares, con foco en acciones reales en lugar de solo respuestas. Soporta varios runtimes (local, remoto, cloud) y agentes compatibles con ACP.",
    "how": "Un bucle agente-acción-observación ejecuta tareas dentro de un contenedor Docker aislado; backend en Python con UI web, y el agente opera sobre el filesystem, shell y navegador del sandbox.",
@@ -5373,8 +5373,8 @@
   },
   "cline": {
    "name": "Cline",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "editor",
    "desc": "Planifica, edita archivos, ejecuta comandos y usa el navegador pidiendo aprobación en cada paso. Admite MCP y casi cualquier proveedor.",
    "why": "Muy adoptado en el IDE por su transparencia: ves el plan y aprubas cada acción.",
    "how": "La extensión mantiene un bucle con el modelo elegido y expone herramientas de archivo, terminal, navegador y MCP.",
@@ -5444,8 +5444,8 @@
   },
   "open-interpreter": {
    "name": "Open Interpreter",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "desc": "Ejecuta código y comandos en tu máquina para cumplir tareas descritas en lenguaje natural. Su versión actual se enfoca en modelos abiertos.",
    "why": "Proyecto pionero que popularizó dejar que un LLM ejecute código en tu equipo.",
    "how": "El modelo genera código o comandos que se ejecutan localmente y su salida vuelve al bucle de conversación.",
@@ -5514,8 +5514,8 @@
   },
   "goose": {
    "name": "goose",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "desc": "Funciona como app de escritorio o CLI y va más allá del código: automatiza tareas de desarrollo y de sistema con extensiones MCP. Nacido en Block.",
    "why": "Diseñado alrededor de MCP desde el inicio, con app de escritorio y recetas compartibles.",
    "how": "Un núcleo en Rust ejecuta el bucle del agente y carga extensiones MCP como herramientas.",
@@ -5587,8 +5587,8 @@
   },
   "t3code": {
    "name": "T3 Code",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "sesiones",
    "desc": "No sustituye al agente: orquesta Claude Code, Codex y otros desde una UI cómoda, también en el móvil. Útil para lanzar y revisar sesiones a distancia.",
    "why": "Une varios agentes en una sola superficie de control, con apps para iOS, Android, web y escritorio.",
    "how": "Un servicio en tu equipo habla con los CLIs de agentes instalados y expone sesiones a los clientes de T3 Code.",
@@ -5658,8 +5658,8 @@
   },
   "aider": {
    "name": "Aider",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "desc": "Le pides cambios en lenguaje natural y Aider edita los archivos y confirma cada cambio en Git. Funciona con casi cualquier modelo.",
    "why": "Pionero del género, con un mapa del repo eficiente y benchmarks públicos de modelos.",
    "how": "Construye un mapa del repositorio con tree-sitter, envía al modelo solo el contexto relevante y aplica las ediciones como diffs.",
@@ -5730,8 +5730,8 @@
   },
   "continue": {
    "name": "Continue",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "editor",
    "desc": "Integra chat, edición y autocompletado en el IDE con cualquier modelo, y permite ejecutar comprobaciones de IA en los PRs.",
    "why": "Muy configurable y con buen soporte de modelos locales para autocompletado.",
    "how": "Una extensión de IDE y un CLI leen tu configuración de modelos y reglas y llaman al proveedor elegido.",
@@ -5800,8 +5800,8 @@
   },
   "swe-agent": {
    "name": "SWE-agent",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "ingenieria",
    "desc": "Resuelve issues reales con el modelo que elijas y sirve como base de investigación en agentes de software. También tiene usos en ciberseguridad y retos de programación.",
    "why": "Referencia académica en SWE-bench, con una interfaz agente-computadora bien estudiada.",
    "how": "Da al modelo comandos específicos para navegar, editar y probar código dentro de un contenedor Docker.",
@@ -5871,8 +5871,8 @@
   },
   "open-swe": {
    "name": "Open SWE",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "ingenieria",
    "desc": "Trabaja en segundo plano a partir de issues o mensajes, planifica, programa en un sandbox y abre PRs. Inspirado en los agentes internos de empresas como Stripe o Ramp.",
    "why": "Base abierta y extensible sobre LangGraph para quien quiere su propio agente de ingeniería.",
    "how": "Un grafo de LangGraph coordina planificador y programador; el código se ejecuta en sandboxes remotos y el resultado llega como PR.",
@@ -7795,7 +7795,7 @@
   },
   "openclaw": {
    "name": "OpenClaw",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "desc": "Un solo operador, muchas superficies: el asistente vive en tu equipo, tiene memoria, ejecuta tareas reales y responde por los canales que ya usas. Es uno de los proyectos de IA más populares de GitHub.",
    "why": "Enorme adopción y un ecosistema de skills y canales que lo convierten en un asistente realmente útil a diario.",
@@ -7867,7 +7867,7 @@
   },
   "hermes-agent": {
    "name": "hermes-agent",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "desc": "Ofrece un panel de control de escritorio para delegar tareas a agentes que corren en una sandbox local.",
    "why": "Aprovecha el razonamiento estructurado de los modelos Hermes y prioriza la ejecución local frente a depender de la nube. Su rasgo distintivo es un learning loop: el agente crea skills desde la experiencia y persiste conocimiento entre sesiones.",
@@ -7940,7 +7940,7 @@
   },
   "ruflo": {
    "name": "ruflo",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "desc": "Orquesta swarms de agentes especializados a escala.",
    "why": "Motor en Rust con embeddings, memoria persistente y plugins, orientado a coordinación masiva de agentes con seguridad de nivel enterprise. Es de nicho pero ambicioso y aprovecha el rendimiento de Rust para la orquestación.",
@@ -8009,7 +8009,7 @@
   },
   "deeptutor": {
    "name": "DeepTutor",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "desc": "Resuelve dudas, genera ejercicios y guía el estudio con RAG sobre tu material y memoria del alumno. Es un producto educativo, no un orquestador genérico.",
    "why": "Combina RAG, razonamiento por pasos y seguimiento del progreso en una app lista.",
@@ -8079,7 +8079,7 @@
   },
   "multica": {
    "name": "multica",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "desc": "Integra colaboradores humanos y agentes en un mismo espacio de trabajo. Proyecto de nicho.",
    "why": "Propone equipos mixtos humano+agente en un flujo común, en lugar de automatización totalmente headless. El ángulo es operativo: agentes como \"compañeros de equipo\" con contexto compartido.",
@@ -8148,7 +8148,7 @@
   },
   "mercury-agent": {
    "name": "Mercury Agent",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "desc": "Recuerda lo importante, pide permiso antes de actuar y trae 31 herramientas, tableros kanban y skills extensibles, con datos en SQLite.",
    "why": "Enfoque en seguridad: herramientas con permisos y límites de gasto por diseño.",
@@ -8219,7 +8219,7 @@
   },
   "autoresearch": {
    "name": "autoresearch",
-   "cat": 3,
+   "cat": 21,
    "sub": "research",
    "desc": "Proyecto pequeño y exploratorio de Karpathy, más que una herramienta pulida.",
    "why": "Propuesta sencilla para experimentar con investigación autónoma en varias pasadas; valioso como punto de partida y referencia didáctica más que como producto cerrado.",
@@ -8288,7 +8288,7 @@
   },
   "deer-flow": {
    "name": "deer-flow",
-   "cat": 3,
+   "cat": 21,
    "sub": "research",
    "desc": "Coordina tareas complejas delegando en agentes especializados.",
    "why": "Orquestación potente y extensible; alcanzó gran visibilidad (#1 en GitHub Trending en su lanzamiento v2) y cuenta con el respaldo de ByteDance. Su diseño por skills lo hace ampliable sin tocar el núcleo.",
@@ -8357,7 +8357,7 @@
   },
   "storm": {
    "name": "STORM",
-   "cat": 3,
+   "cat": 21,
    "sub": "research",
    "desc": "Simula conversaciones entre perspectivas para hacer preguntas, busca fuentes y redacta un artículo estructurado y citado. Útil para informes de fondo.",
    "why": "Método publicado y probado para artículos largos y bien citados.",
@@ -8427,7 +8427,7 @@
   },
   "gpt-researcher": {
    "name": "gpt-researcher",
-   "cat": 3,
+   "cat": 21,
    "sub": "research",
    "desc": "Planifica sub-preguntas, busca fuentes y redacta un informe con referencias.",
    "why": "Muy popular para research profundo; automatiza horas de búsqueda recopilando y citando lo más relevante. Su arquitectura planificador-buscador-redactor es un patrón de referencia para research con agentes.",
@@ -8500,7 +8500,7 @@
   },
   "composio": {
    "name": "Composio",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "desc": "Da a cualquier agente herramientas listas para Gmail, Slack, GitHub, Notion y cientos más, gestionando OAuth por ti. Funciona con los principales frameworks y por MCP.",
    "why": "Resuelve la parte más tediosa de los agentes: autenticación y herramientas para muchas apps.",
@@ -8569,7 +8569,7 @@
   },
   "e2b": {
    "name": "E2B",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "desc": "Arranca microVMs aisladas en milisegundos donde el agente puede ejecutar código, instalar paquetes o usar un escritorio. Muy usado para intérpretes de código y agentes de datos.",
    "why": "Aislamiento real con Firecracker y SDKs simples; estándar en agentes que ejecutan código.",
@@ -8639,7 +8639,7 @@
   },
   "nemoclaw": {
    "name": "NemoClaw",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "desc": "Ejecuta agentes populares dentro de los sandboxes de NVIDIA OpenShell con inferencia gestionada y políticas de seguridad. Pensado para empresas.",
    "why": "Añade aislamiento y control a agentes muy capaces que normalmente corren con acceso total.",
@@ -8711,7 +8711,7 @@
   },
   "sandbox": {
    "name": "sandbox",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "desc": "Resuelve el riesgo de dejar que un agente toque tu host: todo corre contenido en un contenedor reproducible.",
    "why": "Concentra en un solo contenedor todas las herramientas que un agente necesita, ofreciendo un entorno reproducible y aislado poco común. Su exposición vía web y MCP lo hace accesible desde cualquier cliente compatible sin configurar cada pieza por separado.",
@@ -8783,7 +8783,7 @@
   },
   "computer-use-preview": {
    "name": "Gemini Computer Use (preview)",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "desc": "Muestra cómo un modelo Gemini con computer use controla un navegador para completar tareas. Es una vista previa, no un agente de propósito general.",
    "why": "Referencia oficial para probar el modelo de uso de computadora de Google.",
@@ -8854,7 +8854,7 @@
   },
   "nemo-agent-toolkit": {
    "name": "NeMo-Agent-Toolkit",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "desc": "Aporta componentes para conectar, evaluar y desplegar agentes en infraestructura empresarial.",
    "why": "Respaldo y rendimiento de NVIDIA, orientado a despliegues empresariales sobre su stack de modelos NIM e infra GPU. Incluye evaluación y guardrails, no solo orquestación.",
@@ -8922,7 +8922,7 @@
   },
   "agent-protocol": {
    "name": "Agent Protocol",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "desc": "Define cómo se ejecuta un agente, cómo recibe entradas y cómo guarda su estado, sin atarse a un framework. Es una especificación, no un runtime.",
    "why": "Facilita que clientes y herramientas hablen con agentes distintos por la misma API.",
@@ -9961,8 +9961,8 @@
   },
   "stagehand": {
    "name": "Stagehand",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "agentes-web",
    "desc": "Usa `act`, `extract` y `observe` para que la IA haga lo difícil y tu código lo predecible. Basado en Playwright.",
    "why": "Equilibrio entre control por código y flexibilidad de IA; muy fiable para producción.",
    "how": "Sobre Playwright, envía el DOM simplificado al LLM para resolver acciones y cachea resultados para repetirlos.",
@@ -10032,8 +10032,8 @@
   },
   "browser-use": {
    "name": "browser-use",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "agentes-web",
    "desc": "Resuelve la fragilidad del scraping basado en CSS: el agente \"ve\" la página como un humano y decide la siguiente acción.",
    "why": "Uno de los proyectos de agentes-web más virales y populares, por permitir automatización robusta guiada por modelos multimodales incluso ante pop-ups y cambios de layout. Su adopción masiva y la opción de cloud gestionado lo consolidan como referencia en navegación agentica.",
    "how": "Controla el navegador con Playwright, extrae el estado de la página (DOM simplificado + capturas) y lo pasa a un LLM con visión que devuelve la siguiente acción de click/escritura/navegación, repitiendo el bucle hasta cumplir el objetivo.",
@@ -10106,8 +10106,8 @@
   },
   "playwright": {
    "name": "playwright",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "bibliotecas",
    "desc": "Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. Se ha convertido en el estándar moderno de automatización de browser, desplazando a Selenium/Puppeteer por su fiabilidad y su auto-espera de elementos.",
    "why": "Se ha convertido en el estándar moderno de automatización de browser, desplazando a Selenium/Puppeteer por su fiabilidad y su auto-espera de elementos. Microsoft lo mantiene y tiene bindings para Node.js, Python, Java y .NET.",
    "how": "Lanza navegadores reales en modo headless o con UI y los controla por protocolo (CDP), con waits automáticos, interceptación de red y captura de DOM/screenshots/traces.",
@@ -10178,8 +10178,8 @@
   },
   "puppeteer": {
    "name": "Puppeteer",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "bibliotecas",
    "desc": "Automatiza navegación, capturas, PDFs y pruebas. Es la base de muchas herramientas de scraping.",
    "why": "Mantenida por el equipo de Chrome, estable y muy documentada.",
    "how": "Controla el navegador por el protocolo DevTools o WebDriver BiDi.",
@@ -10248,8 +10248,8 @@
   },
   "lightpanda": {
    "name": "Lightpanda",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "motores-web",
    "desc": "Ejecuta JavaScript y es compatible con Puppeteer y Playwright por CDP, usando una fracción de memoria. Ideal para scraping masivo.",
    "why": "Arranque instantáneo y bajo consumo frente a Chrome headless.",
    "how": "Motor de navegador propio en Zig con V8 para JavaScript y un servidor CDP.",
@@ -10316,8 +10316,8 @@
   },
   "selenium": {
    "name": "Selenium",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "bibliotecas",
    "desc": "Estándar W3C WebDriver, muy usado en pruebas empresariales con Selenium Grid para paralelizar.",
    "why": "El ecosistema más amplio de lenguajes y navegadores.",
    "how": "Envía comandos WebDriver a un driver de cada navegador.",
@@ -10384,8 +10384,8 @@
   },
   "skyvern": {
    "name": "Skyvern",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "agentes-web",
    "desc": "Completa formularios, compras o descargas en sitios que nunca vio, entendiendo la página con visión. Incluye UI, API y workflows.",
    "why": "Robusto ante cambios de diseño porque no depende de XPaths.",
    "how": "Agentes con visión analizan capturas y el DOM, planifican acciones y las ejecutan con Playwright.",
@@ -10455,8 +10455,8 @@
   },
   "browser-harness": {
    "name": "Browser Harness",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "agentes-web",
    "desc": "Conecta el agente a tu navegador por CDP con un arnés pequeño y editable. Útil cuando necesitas libertad total y tus cuentas ya abiertas.",
    "why": "De los creadores de browser-use; se configura con un solo prompt.",
    "how": "Habla con Chrome por el protocolo DevTools y expone comandos simples que el agente invoca.",
@@ -10530,8 +10530,8 @@
   },
   "playwright-cli": {
    "name": "playwright-cli",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "agentes-web",
    "desc": "Resuelve el problema de los árboles de accesibilidad y los JSON de herramientas que inflan el prompt en cada turno.",
    "why": "Alternativa token-eficiente a Playwright MCP, pensada para agentes de código (Claude Code, Cursor, Codex) que necesitan tocar la web sin quemar contexto. Procede del propio ecosistema Playwright de Microsoft, lo que garantiza compatibilidad con su API de automatización.",
    "how": "Envuelve los comandos de Playwright en un CLI que el agente invoca paso a paso (navegar, clickar, leer), devolviendo salidas compactas en lugar de volcar el DOM o el accessibility tree enteros en cada turno.",
@@ -13998,7 +13998,7 @@
   },
   "vllm": {
    "name": "vLLM",
-   "cat": 6,
+   "cat": 23,
    "sub": "serving",
    "desc": "Sirve modelos abiertos a muchos usuarios con una API compatible con OpenAI, gracias a PagedAttention y batching continuo.",
    "why": "Estándar en producción para servir LLM abiertos en GPU.",
@@ -14069,7 +14069,7 @@
   },
   "litellm": {
    "name": "litellm",
-   "cat": 6,
+   "cat": 23,
    "sub": "serving",
    "desc": "Resuelve el lock-in: cambias de proveedor o añades fallback sin reescribir el código de tu app.",
    "why": "Es un estándar de facto para abstraer proveedores, muy adoptado por su routing, control de costos, reintentos y fallback entre modelos. Su amplia cobertura (OpenAI, Anthropic, Google, Bedrock, locales vía Ollama/vLLM) lo hace casi ubicuo en stacks multi-modelo.",
@@ -14139,7 +14139,7 @@
   },
   "sglang": {
    "name": "SGLang",
-   "cat": 6,
+   "cat": 23,
    "sub": "serving",
    "desc": "Compite con vLLM en velocidad, con caché de prefijos RadixAttention y buen soporte de salidas estructuradas. Muy usado para modelos grandes como DeepSeek.",
    "why": "Muy rápido en cargas con prefijos compartidos y en modelos MoE grandes.",
@@ -14208,7 +14208,7 @@
   },
   "headroom": {
    "name": "headroom",
-   "cat": 6,
+   "cat": 23,
    "sub": "tokens",
    "desc": "Resuelve el dolor habitual de los agentes: quedarse sin ventana de contexto a mitad de una tarea larga.",
    "why": "Proyecto pequeño y específico que ataca un problema real de los agentes de forma directa y agnóstica al proveedor. Su enfoque de \"maximizar señal por token\" encaja en pipelines donde el contexto crece sin control.",
@@ -14279,7 +14279,7 @@
   },
   "promptfoo": {
    "name": "promptfoo",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "desc": "Defines casos de prueba en YAML y comparas salidas de varios modelos con aserciones. También escanea vulnerabilidades como inyección de prompts.",
    "why": "Muy práctico para CI: evaluación y red teaming en una sola herramienta.",
@@ -14351,7 +14351,7 @@
   },
   "langfuse": {
    "name": "langfuse",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "desc": "Resuelve la opacidad: ves qué prompt, qué modelo, qué coste y qué salida tuvo cada paso de tu pipeline.",
    "why": "Es una de las plataformas de LLM observability de referencia, con self-host y cloud e integraciones con los frameworks más usados (LangChain, OpenAI SDK, LiteLLM, CrewAI). Su soporte de OpenTelemetry la hace compatible con instrumentación existente.",
@@ -14425,7 +14425,7 @@
   },
   "mlflow": {
    "name": "MLflow",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "desc": "Registra experimentos, versiona modelos y, para LLM, ofrece trazas, evaluación y gestión de prompts.",
    "why": "Estándar en MLOps, ahora con soporte fuerte para agentes y LLM.",
@@ -14495,7 +14495,7 @@
   },
   "loguru": {
    "name": "loguru",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "desc": "Resuelve la fricción del módulo `logging` stdlib, que exige boilerplate para algo tan básico como imprimir logs legibles.",
    "why": "Es una de las librerías de logging más populares en Python por su API mínima (un único objeto `logger`) y su gran ergonomía frente al módulo estándar. Su salida con colores, rotación y captura de excepciones en una sola línea la hace ubicua en scripts y pipelines.",
@@ -14563,7 +14563,7 @@
   },
   "opik": {
    "name": "Opik",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "desc": "Traza llamadas, ejecuta evaluaciones automáticas y monitorea producción con paneles. Incluye optimizador de prompts.",
    "why": "Completa y open source, con buen rendimiento en volúmenes grandes.",
@@ -14633,7 +14633,7 @@
   },
   "deepeval": {
    "name": "DeepEval",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "desc": "Escribe pruebas para tus apps de LLM con métricas como fidelidad, relevancia o alucinación, e intégralas en tu CI.",
    "why": "Experiencia tipo pytest muy familiar y muchas métricas de investigación.",
@@ -14703,7 +14703,7 @@
   },
   "ragas": {
    "name": "Ragas",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "desc": "Mide fidelidad, relevancia del contexto y calidad de respuestas, y genera conjuntos de prueba a partir de tus documentos.",
    "why": "Referencia en métricas de RAG y generación de tests sintéticos.",
@@ -14774,7 +14774,7 @@
   },
   "phoenix": {
    "name": "Phoenix",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "desc": "Visualiza trazas de agentes y RAG, ejecuta evaluaciones y gestiona datasets y experimentos. Corre en local o en tu servidor.",
    "why": "Basada en estándares abiertos (OpenTelemetry, OpenInference).",
@@ -14845,7 +14845,7 @@
   },
   "guardrails": {
    "name": "NeMo Guardrails",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "desc": "Controla de qué puede hablar tu bot, bloquea jailbreaks y valida entradas y salidas con reglas en el lenguaje Colang.",
    "why": "Respaldado por NVIDIA y muy flexible para políticas de conversación.",
@@ -15686,7 +15686,7 @@
   },
   "unsloth": {
    "name": "Unsloth",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "desc": "Afina modelos como Qwen, Llama o Gemma en una sola GPU y expórtalos a GGUF u Ollama. Ofrece notebooks gratuitos y una interfaz local.",
    "why": "La forma más eficiente de afinar modelos en hardware modesto.",
@@ -15756,7 +15756,7 @@
   },
   "transformers": {
    "name": "Transformers",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "desc": "Da acceso a cientos de miles de modelos con una API común para inferencia y entrenamiento. Es la base del ecosistema de modelos abiertos.",
    "why": "El estándar para trabajar con modelos abiertos.",
@@ -15825,7 +15825,7 @@
   },
   "pytorch": {
    "name": "PyTorch",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "desc": "Base de la mayoría de investigación y modelos abiertos actuales.",
    "why": "El framework de deep learning más usado en investigación e industria.",
@@ -15892,7 +15892,7 @@
   },
   "llama-factory": {
    "name": "LLaMA-Factory",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "desc": "Soporta LoRA, QLoRA, ajuste completo, DPO y más desde una UI o CLI. Muy usado en investigación e industria.",
    "why": "La herramienta más completa para afinar modelos con interfaz.",
@@ -15962,7 +15962,7 @@
   },
   "peft": {
    "name": "PEFT",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "desc": "Adapta modelos grandes entrenando solo una pequeña parte de los parámetros, ahorrando memoria y tiempo.",
    "why": "Implementación de referencia de LoRA y otras técnicas eficientes.",
@@ -16030,7 +16030,7 @@
   },
   "trl": {
    "name": "TRL",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "desc": "Ofrece entrenadores listos para ajuste supervisado y por preferencias, usados para alinear modelos.",
    "why": "Implementaciones de referencia de las técnicas de alineamiento modernas.",
@@ -16099,7 +16099,7 @@
   },
   "llm-course": {
    "name": "LLM Course",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "desc": "Tres rutas: fundamentos, científico de LLM (entrenar y afinar) e ingeniero de LLM (apps y despliegue), con recursos y notebooks ejecutables.",
    "why": "Ruta de aprendizaje muy clara y notebooks prácticos de fine-tuning y fusión de modelos.",
@@ -16170,7 +16170,7 @@
   },
   "llms-from-scratch": {
    "name": "LLMs from Scratch",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "desc": "Construyes atención, GPT, preentrenamiento y fine-tuning desde cero, entendiendo cada pieza. Ideal para aprender cómo funcionan por dentro.",
    "why": "Muy didáctico y riguroso; complementa al libro con notebooks.",
@@ -16240,7 +16240,7 @@
   },
   "nanogpt": {
    "name": "nanoGPT",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "desc": "Resuelve la opacidad de los frameworks: ves exactamente cómo se entrena un GPT sin capas de abstracción.",
    "why": "Referencia didáctica de Karpathy ampliamente usada para aprender cómo funciona realmente el entrenamiento de un GPT, sin capas de abstracción. Su minimalismo (unos pocos cientos de líneas) lo hace el punto de partida habitual para entender y experimentar.",
@@ -16310,7 +16310,7 @@
   },
   "nanochat": {
    "name": "nanochat",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "desc": "Resuelve la pregunta \"¿cómo se monta un asistente entero?\": lo muestra en un solo repo compacto y legible.",
    "why": "Referencia didáctica de Karpathy que muestra el ciclo completo de un asistente conversacional en un solo repo compacto y legible. Su encadenamiento pretrain → SFT → inferencia lo hace el complemento natural de nanoGPT para ver el flujo end-to-end.",
@@ -16378,7 +16378,7 @@
   },
   "llm.c": {
    "name": "llm.c",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "desc": "Resuelve la abstracción total: muestra qué hace realmente la GPU en cada pasada, sin ocultarlo tras un framework.",
    "why": "Referencia didáctica de Karpathy que reproduce GPT-2 con dependencias mínimas, ideal para entender qué hace realmente la GPU bajo el capó. Su valor educativo sobre el cómputo de bajo nivel es difícil de igualar en otros recursos.",
@@ -16446,7 +16446,7 @@
   },
   "how-to-train-your-gpt": {
    "name": "how-to-train-your-gpt",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "desc": "Resuelve el \"quiero entenderlo con explicación narrada\" frente al código desnudo de nanoGPT.",
    "why": "Repo pequeño y poco conocido, útil como complemento explicado al entrenamiento; honestamente, es un material de aprendizaje modesto frente a referencias como nanoGPT. Su valor está en la narración guiada, no en la robustez del código.",
@@ -16515,7 +16515,7 @@
   },
   "timesfm": {
    "name": "TimesFM",
-   "cat": 7,
+   "cat": 24,
    "sub": "modelos",
    "desc": "Predice ventas, demanda o tráfico a partir del histórico sin entrenar un modelo propio (zero-shot).",
    "why": "Calidad de pronóstico competitiva sin trabajo de modelado.",
@@ -16584,7 +16584,7 @@
   },
   "deepseek-coder": {
    "name": "DeepSeek-Coder",
-   "cat": 7,
+   "cat": 24,
    "sub": "modelos",
    "desc": "Resuelve la dependencia de APIs propietarias para tareas de código: puedes desplegar el modelo en tu propia infraestructura.",
    "why": "Una de las alternativas abiertas más fuertes para tareas de código, competitiva con modelos propietarios y desplegable en local. Su publicación de pesos y su buena recepción en benchmarks de código la consolidan como referencia open en este nicho.",
@@ -16653,7 +16653,7 @@
   },
   "cosmos": {
    "name": "cosmos",
-   "cat": 7,
+   "cat": 24,
    "sub": "modelos",
    "desc": "Resuelve la escasez de datos físicos: genera escenas/vídeo sintético en lugar de capturarlos a mano.",
    "why": "Iniciativa de NVIDIA con ecosistema y pesos publicados en Hugging Face, una referencia clave para la generación de datos de simulación física. Su procedencia (NVIDIA) y el respaldo de la comunidad de robótica le dan credibilidad en un nicho emergente.",
@@ -16721,7 +16721,7 @@
   },
   "nemotron": {
    "name": "Nemotron (NVIDIA)",
-   "cat": 7,
+   "cat": 24,
    "sub": "modelos",
    "desc": "Reúne guías de entrenamiento, despliegue y casos de uso de los modelos Nemotron, pensados para IA agéntica eficiente.",
    "why": "Modelos abiertos con datos y recetas publicados, optimizados para GPUs NVIDIA.",
@@ -16928,7 +16928,7 @@
   },
   "duckdb": {
    "name": "DuckDB",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "desc": "El \"SQLite de la analítica\": sin servidor, embebida en Python, R o Node, y capaz de procesar millones de filas en segundos.",
    "why": "Rendimiento excelente sin infraestructura y SQL directo sobre archivos.",
@@ -16998,7 +16998,7 @@
   },
   "marimo": {
    "name": "marimo",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "desc": "Al cambiar una celda se recalculan las dependientes, evitando estados ocultos. Incluye SQL, gráficos interactivos y asistente de IA.",
    "why": "Resuelve los problemas clásicos de Jupyter: reproducibilidad y versionado.",
@@ -17066,7 +17066,7 @@
   },
   "polars": {
    "name": "Polars",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "desc": "API expresiva con ejecución perezosa y paralela para procesar datos grandes en un solo equipo.",
    "why": "Velocidad y bajo consumo de memoria frente a pandas.",
@@ -17135,7 +17135,7 @@
   },
   "data-science-ipython-notebooks": {
    "name": "data-science-ipython-notebooks",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "desc": "Resuelve el \"aprender DS con ejemplos reales\" sin tener que montarlos tú desde cero.",
    "why": "Uno de los repositorios de referencia más populares para aprender DS de forma práctica, con material abundante y bien organizado por temas. Su antigüedad y su volumen de notebooks lo convierten en un clásico para consulta y estudio.",
@@ -17204,7 +17204,7 @@
   },
   "awesome-bigdata": {
    "name": "awesome-bigdata",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "desc": "Resuelve el \"qué uso para X a escala\": un panorama del stack de datos grandes en un solo vistazo.",
    "why": "Lista \"awesome\" ampliamente referenciada que ofrece un panorama completo del stack de datos grandes en un solo vistazo. Su organización por categorías (ingesta, almacenamiento, procesamiento, streaming) facilita comparar alternativas sin navegar decenas de sitios.",
@@ -19589,7 +19589,7 @@
   },
   "three.js": {
    "name": "three.js",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "desc": "Abstrae la complejidad de WebGL en escenas, cámaras, luces y mallas.",
    "why": "Es el estándar del 3D web, con un ecosistema enorme de ejemplos, loaders y helpers alrededor. Su longevidad (desde 2010) y la comunidad activa lo hacen la base de casi todo 3D web.",
@@ -19658,7 +19658,7 @@
   },
   "animejs": {
    "name": "Anime.js",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "desc": "API simple y potente para líneas de tiempo, scroll y animaciones complejas.",
    "why": "Ligero, rápido y con una API muy agradable.",
@@ -19726,7 +19726,7 @@
   },
   "motion": {
    "name": "motion",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "desc": "Hizo accesible la animación en el ecosistema React.",
    "why": "Su API declarativa hizo accesible la animación en React y es de las más adoptadas del ecosistema. La versión actual (`motion`) unifica React y vanilla bajo el mismo paquete.",
@@ -19797,7 +19797,7 @@
   },
   "react-three-fiber": {
    "name": "react-three-fiber",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "desc": "Lleva la mentalidad componible de React al 3D sin abandonar three.js por debajo.",
    "why": "Lleva la mentalidad declarativa y componible de React al 3D, integrándose con el resto del ecosistema (estado, hooks, drei). Su ecosistema (`@react-three/drei`, `@react-three/postprocessing`) cubre la mayoría de necesidades comunes.",
@@ -19865,7 +19865,7 @@
   },
   "gsap": {
    "name": "GSAP",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "desc": "Es la herramienta de referencia del motion web profesional.",
    "why": "Referencia veterana del motion web profesional, con rendimiento y precisión difíciles de igualar para animación detallada. Su ecosistema de plugins (ScrollTrigger, Flip, DrawSVG) cubre casos que otras librerías no alcanzan.",
@@ -20695,7 +20695,7 @@
   },
   "stitch-skills": {
    "name": "Stitch Skills",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Skills en el estándar abierto Agent Skills que enseñan a Claude Code, Codex o Gemini CLI a diseñar con Stitch.",
    "why": "Oficial de Google Labs y compatible con varios agentes.",
@@ -20766,7 +20766,7 @@
   },
   "ui-ux-pro-max-skill": {
    "name": "ui-ux-pro-max-skill",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Resuelve el punto débil habitual del código asistido por IA: la jerarquía visual y el acabado.",
    "why": "Aporta criterio de layout, tipografía y composición además de código, algo que los LLMs por sí solos no manejan bien. Se integra con asistentes populares (Claude Code, Codex, Cursor) vía una CLI propia y skills copiables.",
@@ -20838,7 +20838,7 @@
   },
   "taste-skill": {
    "name": "taste-skill",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Ataca el acabado \"de plantilla\" que delata a las UIs generadas por IA.",
    "why": "Aporta criterio de diseño además de código, y opcionalmente genera boards visuales (web, mobile, brand) para anclar el estilo antes de programar. Es portable entre asistentes (Codex, Cursor, Claude Code) y de foco estético.",
@@ -20909,7 +20909,7 @@
   },
   "impeccable": {
    "name": "impeccable",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Ataca el patrón repetitivo de interfaces que \"huelen\" a IA.",
    "why": "Ataca de forma deliberada el \"AI slop\" visual con reglas deterministas, un enfoque diferenciado frente a prompts genéricos de diseño. Su autor (pbakaus, ex Google) le da peso en la comunidad de diseño para agentes.",
@@ -20980,7 +20980,7 @@
   },
   "skills-emil": {
    "name": "skills_emil",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Resuelve el handoff diseño↔código, no solo la estética final.",
    "why": "Pone el foco en la traducción de diseño a implementación (tokens, consistencia, decisiones compartidas), un ángulo menos cubierto por otras skills de UI que miran solo el resultado visual.",
@@ -21050,7 +21050,7 @@
   },
   "design.md": {
    "name": "design.md",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Resuelve la inconsistencia de marca cuando varias personas o agentes tocan la UI.",
    "why": "Propuesta de Google Labs que aporta no solo los valores sino el \"por qué\" y cómo aplicarlos, algo que un simple archivo de tokens no transmite. Al ser un formato declarativo, funciona con cualquier agente que lea Markdown.",
@@ -22155,7 +22155,7 @@
   },
   "gradio": {
    "name": "Gradio",
-   "cat": 10,
+   "cat": 25,
    "sub": "apps",
    "desc": "Envuelve una función Python en una interfaz web con entradas y salidas de texto, imagen, audio o chat. Base de Hugging Face Spaces.",
    "why": "La forma más rápida de poner una demo de IA en la web.",
@@ -22225,7 +22225,7 @@
   },
   "streamlit": {
    "name": "streamlit",
-   "cat": 10,
+   "cat": 25,
    "sub": "apps",
    "desc": "Convierte un script de datos en una app web interactiva casi al instante.",
    "why": "Muy popular en la comunidad de data science e IA por convertir un script en una app web interactiva casi al instante. Su modelo de rerun top-to-bottom simplifica la iteración frente a callbacks manuales.",
@@ -22296,7 +22296,7 @@
   },
   "dash": {
    "name": "dash",
-   "cat": 10,
+   "cat": 25,
    "sub": "apps",
    "desc": "Cubre el caso de dashboards productivos en Python sin salir del lenguaje.",
    "why": "Estándar de facto para dashboards productivos en Python, respaldado por Plotly y muy usado en entornos científicos y empresariales. Su modelo de callbacks sobre Flask da control fino del frontend sin JS.",
@@ -23543,7 +23543,7 @@
   },
   "deep-live-cam": {
    "name": "Deep-Live-Cam",
-   "cat": 11,
+   "cat": 28,
    "sub": "rostros",
    "desc": "Convierte un cambio de rostro, que normalmente requiere pipeline complejo, en un flujo de \"un clic\".",
    "why": "Es de los proyectos de swap en vivo más conocidos por su facilidad de uso (una sola imagen de origen y arrancar); incluye chequeos contra contenido inapropiado (NSFW/real) para desincentivar usos problemáticos.",
@@ -23613,7 +23613,7 @@
   },
   "face-recognition": {
    "name": "face_recognition",
-   "cat": 11,
+   "cat": 28,
    "sub": "rostros",
    "desc": "Envuelve dlib para que el reconocimiento facial sea trivial desde un script.",
    "why": "Es de las librerías de reconocimiento facial más populares y accesibles, ideal para prototipos por su API mínima (`face_locations`, `face_encodings`, `compare_faces`); muy usada como referencia didáctica.",
@@ -23683,7 +23683,7 @@
   },
   "facefusion": {
    "name": "FaceFusion",
-   "cat": 11,
+   "cat": 28,
    "sub": "rostros",
    "desc": "Herramienta líder para face swap, mejora facial y sincronía labial, con controles de uso responsable.",
    "why": "Calidad alta y muchas opciones de procesamiento.",
@@ -23752,7 +23752,7 @@
   },
   "insightface": {
    "name": "InsightFace",
-   "cat": 11,
+   "cat": 28,
    "sub": "rostros",
    "desc": "Base de muchas herramientas faciales; ofrece modelos de reconocimiento de última generación.",
    "why": "Referencia académica e industrial en reconocimiento facial.",
@@ -23821,7 +23821,7 @@
   },
   "liveportrait": {
    "name": "LivePortrait",
-   "cat": 11,
+   "cat": 28,
    "sub": "rostros",
    "desc": "Convierte una foto en un avatar que sigue las expresiones de un \"conductor\".",
    "why": "Ofrece animación facial rápida y controlable (con retoque de ojos y boca vía \"stitching\" y retargeting), y ha sido adoptado por plataformas grandes (Kuaishou, Douyin, Jianying); es proyecto de KwaiVGI con pesos públicos.",
@@ -23889,7 +23889,7 @@
   },
   "ultralytics": {
    "name": "Ultralytics YOLO",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Entrena un detector con tus datos en pocas líneas y expórtalo a ONNX, TensorRT o móvil.",
    "why": "La forma más popular y sencilla de hacer detección de objetos.",
@@ -23957,7 +23957,7 @@
   },
   "sam2": {
    "name": "SAM 2",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Marca un objeto en un fotograma y SAM 2 lo sigue en todo el video. Más rápido que SAM en imágenes.",
    "why": "Segmentación de video interactiva de alta calidad.",
@@ -24027,7 +24027,7 @@
   },
   "opencv": {
    "name": "OpenCV",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Procesamiento de imagen y video, detección, calibración de cámaras y más, en C++ y Python.",
    "why": "Estándar de la industria desde hace más de 20 años.",
@@ -24095,7 +24095,7 @@
   },
   "segment-anything": {
    "name": "Segment Anything (SAM)",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Genera máscaras precisas sin entrenamiento para el objeto que indiques. Su sucesor SAM 2 añade video.",
    "why": "Cambió la segmentación: funciona con objetos que nunca vio.",
@@ -24164,7 +24164,7 @@
   },
   "supervision": {
    "name": "supervision",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Se conecta a cualquier detector y te da utilidades para dibujar, contar en zonas, seguir objetos y evaluar.",
    "why": "Ahorra mucho código repetitivo en proyectos de visión.",
@@ -24232,7 +24232,7 @@
   },
   "label-studio": {
    "name": "Label Studio",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Crea datasets para entrenar o evaluar modelos con interfaces de anotación configurables y preetiquetado con IA.",
    "why": "Muy flexible y con soporte de casi cualquier tipo de dato.",
@@ -24368,7 +24368,7 @@
   },
   "whisper-cpp": {
    "name": "whisper.cpp",
-   "cat": 12,
+   "cat": 29,
    "sub": "stt",
    "desc": "Transcribe voz a texto en local sin Python ni GPU obligatoria, incluso en tiempo real. Base de muchas apps de dictado.",
    "why": "Rendimiento excelente en hardware común y en Apple Silicon.",
@@ -24440,7 +24440,7 @@
   },
   "whisper": {
    "name": "whisper",
-   "cat": 12,
+   "cat": 29,
    "sub": "stt",
    "desc": "Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. El idioma, el tamaño del modelo y la calidad del audio condicionan el resultado.",
    "why": "Es la referencia de facto del STT abierto, base de innumerables forks y servicios de transcripción; su robustez a ruido y acentos lo convirtió en el punto de partida habitual para cualquier pipeline de voz.",
@@ -24510,7 +24510,7 @@
   },
   "faster-whisper": {
    "name": "faster-whisper",
-   "cat": 12,
+   "cat": 29,
    "sub": "stt",
    "desc": "Runtime de transcripción que ejecuta Whisper con CTranslate2 y opciones de CPU, GPU y cuantización. Puede reducir requisitos frente a otras implementaciones; mide calidad y rendimiento con tu propio audio.",
    "why": "Es la versión preferida en producción por su relación velocidad/calidad y su bajo consumo; muy adoptada en pipelines y servidores de transcripción (WhisperX la usa internamente).",
@@ -24582,7 +24582,7 @@
   },
   "whisperx": {
    "name": "whisperX",
-   "cat": 12,
+   "cat": 29,
    "sub": "stt",
    "desc": "Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. Las etapas, modelos y credenciales requeridos cambian según las funciones que actives.",
    "why": "Es la opción de referencia cuando los timings finos y el \"quién habla\" importan, muy usada para subtítulos de reels y entrevistas; combina tres componentes probados en un solo pipeline.",
@@ -24653,7 +24653,7 @@
   },
   "nemo": {
    "name": "NVIDIA NeMo Speech",
-   "cat": 12,
+   "cat": 29,
    "sub": "stt",
    "desc": "Incluye modelos de ASR como Parakeet y Canary, que lideran rankings de transcripción, y herramientas para afinarlos.",
    "why": "Modelos de reconocimiento de voz de primer nivel y abiertos.",
@@ -24723,7 +24723,7 @@
   },
   "kokoro": {
    "name": "Kokoro",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Modelo y biblioteca de texto a voz para generar narración localmente con distintas voces e idiomas compatibles. Comprueba los idiomas, dependencias de audio y condiciones de la variante que utilices.",
    "why": "Excelente relación calidad, tamaño y licencia.",
@@ -24798,7 +24798,7 @@
   },
   "omnivoice-studio": {
    "name": "OmniVoice-Studio",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Reúne STT, TTS y dubbing en una sola app sin claves de API.",
    "why": "Combina dictado, clonación y dubbing en una sola app de escritorio sin nube ni API keys, algo poco común; está en beta activa y es un proyecto pequeño y poco conocido, conviene validarlo antes de depender de él.",
@@ -24868,7 +24868,7 @@
   },
   "gpt-sovits": {
    "name": "GPT-SoVITS",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Entrena una voz con muy pocos datos y sintetiza en varios idiomas. Muy popular entre creadores.",
    "why": "Resultados notables con pocos datos de entrenamiento.",
@@ -24938,7 +24938,7 @@
   },
   "vibevoice": {
    "name": "VibeVoice",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Familia de modelos de voz de Microsoft con herramientas para generación y procesamiento de audio. Elige una variante concreta antes de asumir idiomas, duración, hardware o soporte de tiempo real.",
    "why": "Audio largo y multi-hablante con mucha naturalidad.",
@@ -25006,7 +25006,7 @@
   },
   "tts": {
    "name": "TTS",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Reúne en una sola librería modelos como Tacotron, VITS y XTTS, con CLI y API Python.",
    "why": "Es uno de los kits TTS abiertos más completos y reutilizados; aunque Coqui cerró, su código y modelos (XTTSv2, 16+ idiomas) siguen siendo referencia comunitaria y se mantienen vía fork `coqui-tts`.",
@@ -25077,7 +25077,7 @@
   },
   "voxcpm": {
    "name": "VoxCPM",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Pertenece a la familia CPM de modelos generativos de OpenBMB.",
    "why": "Ofrece una naturalidad sobresaliente y clonación fiel con muy poco audio de referencia, dentro del ecosistema CPM de OpenBMB; su enfoque sin tokenizador reduce los artefactos típicos del TTS discreto.",
@@ -25145,7 +25145,7 @@
   },
   "rvc": {
    "name": "RVC WebUI",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Cambia la voz de una grabación manteniendo entonación. Muy usado para covers y doblaje.",
    "why": "Fácil de entrenar con pocos datos y con interfaz web.",
@@ -25212,7 +25212,7 @@
   },
   "fish-speech": {
    "name": "Fish Speech",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Clona voces con pocos segundos de audio y genera habla natural en muchos idiomas.",
    "why": "Calidad de las mejores del ecosistema abierto.",
@@ -25281,7 +25281,7 @@
   },
   "chatterbox": {
    "name": "Chatterbox",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Clona una voz con unos segundos de audio y ajusta la expresividad. Multilingüe y con marca de agua.",
    "why": "Calidad comparable a servicios comerciales con licencia MIT.",
@@ -25353,7 +25353,7 @@
   },
   "index-tts": {
    "name": "IndexTTS",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Clona voces sin entrenar y permite controlar la duración exacta, útil para doblaje.",
    "why": "Control de duración que facilita sincronizar voz con video.",
@@ -25420,7 +25420,7 @@
   },
   "cosyvoice": {
    "name": "CosyVoice",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Síntesis de voz natural con clonación y control de estilo, también en streaming.",
    "why": "Muy buena calidad y soporte de streaming de baja latencia.",
@@ -25490,7 +25490,7 @@
   },
   "supertonic": {
    "name": "supertonic",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Motor de texto a voz que ofrece modelos y ejemplos para sintetizar audio en dispositivos y navegadores compatibles. El soporte por idioma, dispositivo y variante debe comprobarse en la documentación actual.",
    "why": "Logra latencia muy baja con privacidad total al no depender de la nube, atractivo para voz en tiempo real y asistentes on-device; sus modelos se publican gratis en Hugging Face.",
@@ -25559,7 +25559,7 @@
   },
   "luxtts": {
    "name": "LuxTTS",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local. La velocidad y el consumo de memoria dependen de la variante y del hardware.",
    "why": "Velocidad muy alta con buena calidad.",
@@ -25632,7 +25632,7 @@
   },
   "pipecat": {
    "name": "Pipecat",
-   "cat": 12,
+   "cat": 29,
    "sub": "voz-agentes",
    "desc": "Encadena STT, LLM y TTS con interrupciones y baja latencia, y conecta con teléfono, WebRTC o WhatsApp.",
    "why": "Muy flexible, con decenas de proveedores de voz y transporte.",
@@ -25702,7 +25702,7 @@
   },
   "livekit-agents": {
    "name": "LiveKit Agents",
-   "cat": 12,
+   "cat": 29,
    "sub": "voz-agentes",
    "desc": "Construye agentes que hablan, escuchan y ven, con detección de turnos y telefonía, desplegables a escala.",
    "why": "Infraestructura de tiempo real probada en producción.",
@@ -26348,8 +26348,8 @@
   },
   "hyperframes": {
    "name": "HyperFrames",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "motores",
    "desc": "HyperFrames define cada video como un archivo HTML con atributos de tiempo y pistas, animado con GSAP, CSS, Lottie, Three.js u otras librerías, y lo renderiza a MP4. Incluye CLI para crear, previsualizar y renderizar, un catálogo de unos 450 bloques (transiciones, subtítulos, gráficos, mapas) y skills para que Claude Code, Codex o Cursor produzcan videos a partir de una petición.",
    "why": "Usa HTML plano en vez de React y licencia Apache 2.0 sin cuotas por render, a diferencia de Remotion. El render es determinista (misma entrada, mismos fotogramas), lo que encaja en CI y pipelines automáticos.",
    "how": "El motor abre la composición en Chrome headless con Puppeteer, avanza fotograma a fotograma mediante adaptadores de animación con búsqueda temporal y codifica con FFmpeg mezclando el audio. Renderiza en local, en Docker o distribuido en AWS Lambda.",
@@ -26422,8 +26422,8 @@
   },
   "skills-remotion": {
    "name": "Remotion Agent Skills",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "desc": "Enseñan al agente las buenas prácticas de Remotion: composiciones, animaciones, audio y render.",
    "why": "Oficiales del equipo de Remotion.",
    "how": "Carpetas SKILL.md que el agente carga al trabajar en proyectos Remotion.",
@@ -26493,8 +26493,8 @@
   },
   "manim": {
    "name": "Manim (ManimGL)",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "motores",
    "desc": "Manim permite describir en código Python escenas con fórmulas LaTeX, gráficas, geometría y transformaciones animadas, y exportarlas a video. Este repo es ManimGL, la versión original que Grant Sanderson usa en 3Blue1Brown; la edición comunitaria (ManimCommunity/manim) es un fork más estable y mejor documentado.",
    "why": "Da una precisión difícil de lograr con un editor: cada objeto y transición se define por código y se puede versionar. Es la herramienta detrás de los videos de 3Blue1Brown y de muchos canales educativos.",
    "how": "Cada escena es una clase Python con objetos matemáticos (Mobjects) y animaciones encadenadas; ManimGL las dibuja con OpenGL en una ventana interactiva y escribe el video con FFmpeg.",
@@ -26564,8 +26564,8 @@
   },
   "remotion": {
    "name": "remotion",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "motores",
    "desc": "Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. El render no requiere por sí solo una API de IA; revisa las condiciones de licencia del proyecto.",
    "why": "Muy popular para generar video a escala y plantillas parametrizadas (uno de los proyectos de video-por-código más activos del ecosistema JS); permite crear miles de variantes cambiando props.",
    "how": "Representa cada fotograma mediante componentes y genera el archivo de video a partir de la composición.",
@@ -26637,8 +26637,8 @@
   },
   "video-use": {
    "name": "video-use",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "desc": "El agente corta, une, subtitula y ajusta videos a partir de instrucciones en lenguaje natural.",
    "why": "Lleva la edición de video al flujo de trabajo de un agente.",
    "how": "Expone operaciones de video (basadas en ffmpeg y transcripción) que el agente usa como herramientas.",
@@ -26710,8 +26710,8 @@
   },
   "videofy-minimal": {
    "name": "videofy_minimal",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "aplicaciones",
    "desc": "Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión. La ruta documentada requiere APIs de OpenAI y ElevenLabs aunque la interfaz y el montaje se ejecuten en tu equipo.",
    "why": "Prioriza la simplicidad para pasar de texto a reel rápido; es un proyecto pequeño y experimental, conviene revisar su estado antes de usarlo en serio.",
    "how": "La interfaz coordina la obtención del artículo, guion, imágenes, narración y render del video.",
@@ -26781,8 +26781,8 @@
   },
   "remotion-superpowers": {
    "name": "Remotion Superpowers",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "desc": "Añade locución con IA, música, footage de stock e imágenes para producir videos en código.",
    "why": "Lleva a Remotion las piezas que faltan para producir de principio a fin.",
    "how": "Skills que integran servicios de voz, música y medios con proyectos Remotion.",
@@ -26855,8 +26855,8 @@
   },
   "openmontage": {
    "name": "OpenMontage",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "desc": "Describes el video y el agente investiga, escribe el guion, genera recursos y monta el resultado.",
    "why": "Cubre todo el proceso de producción desde un agente.",
    "how": "Skills y herramientas que coordinan guion, voz, imágenes y montaje.",
@@ -27289,7 +27289,7 @@
   },
   "audiocraft": {
    "name": "AudioCraft",
-   "cat": 12,
+   "cat": 29,
    "sub": "musica",
    "desc": "AudioCraft reúne el código de inferencia y entrenamiento de los modelos de audio generativo de Meta: MusicGen (música a partir de texto o melodía), AudioGen (efectos de sonido), MAGNeT, JASCO (música condicionada por acordes y batería), el códec neuronal EnCodec y AudioSeal para marcas de agua. Está orientada a investigación, aunque se usa mucho para crear música de fondo.",
    "why": "Es la referencia abierta en generación de música por texto, con modelos de varios tamaños en Hugging Face y código de entrenamiento para crear o ajustar los tuyos.",
@@ -28547,7 +28547,7 @@
   },
   "slidev": {
    "name": "Slidev",
-   "cat": 13,
+   "cat": 31,
    "sub": "slides",
    "desc": "Escribe tus slides en Markdown y obtén resaltado de código, diagramas, animaciones y exportación a PDF. Los agentes de código lo usan bien.",
    "why": "La mejor opción para presentaciones técnicas como código.",
@@ -28617,7 +28617,7 @@
   },
   "ppt-master": {
    "name": "ppt-master",
-   "cat": 13,
+   "cat": 31,
    "sub": "slides",
    "desc": "Herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documentos. Necesita un agente con acceso a un modelo; los servicios opcionales de imágenes o contenido se revisan por separado.",
    "why": "Entrega un PPTX realmente editable (formas y textos nativos) en lugar de un PDF plano, ahorrando el tedio de maquetar slides desde cero; útil para borradores rápidos a partir de un informe.",
@@ -28688,7 +28688,7 @@
   },
   "reveal.js": {
    "name": "reveal.js",
-   "cat": 13,
+   "cat": 31,
    "sub": "slides",
    "desc": "Convierte las diapositivas en una página web versionable y reproducible por código.",
    "why": "Estándar de facto para slides como código, muy popular y respaldado por una comunidad amplia y años de uso en producción; es la base de herramientas como Reveal y de innumerables charlas técnicas.",
@@ -28759,7 +28759,7 @@
   },
   "marp": {
    "name": "Marp",
-   "cat": 13,
+   "cat": 31,
    "sub": "slides",
    "desc": "Escribes Markdown con separadores y obtienes slides limpias; tiene extensión de VS Code.",
    "why": "Mínimo esfuerzo y exportación a PowerPoint.",
@@ -28827,7 +28827,7 @@
   },
   "presenton": {
    "name": "Presenton",
-   "cat": 13,
+   "cat": 31,
    "sub": "slides",
    "desc": "Crea presentaciones editables a partir de un prompt o documento, con tus plantillas, y exporta a PPTX o PDF.",
    "why": "Auto-hospedable, con API y modelos locales.",
@@ -28896,7 +28896,7 @@
   },
   "mermaid": {
    "name": "Mermaid",
-   "cat": 13,
+   "cat": 31,
    "sub": "diagramas",
    "desc": "GitHub, Notion y muchos editores lo renderizan de forma nativa; los LLM lo escriben muy bien.",
    "why": "Diagramas como código, versionables y fáciles de generar con IA.",
@@ -29023,8 +29023,8 @@
   },
   "rea-video": {
    "name": "rea-video",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "desc": "Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md. Clasifica planos y registra capas, ritmo y técnicas de producción en un formato legible por agentes.",
    "why": "Quieres estudiar o recrear la estructura de un video de referencia.",
    "how": "Clasifica planos y registra capas, ritmo y técnicas de producción en un formato legible por agentes.",
@@ -29097,7 +29097,7 @@
   },
   "agent-desktop": {
    "name": "agent-desktop",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "desc": "CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio. Expone elementos de la interfaz como referencias sobre las que el agente puede actuar y comprobar resultados.",
    "why": "Necesitas automatizar aplicaciones nativas desde un agente.",
@@ -29169,7 +29169,7 @@
   },
   "edge-tts": {
    "name": "edge-tts",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. Envía texto al servicio de voz y guarda el audio y los subtítulos desde Python o la terminal.",
    "why": "Quieres generar narración sin instalar un modelo de voz local.",
@@ -29245,8 +29245,8 @@
   },
   "security-audit-skill": {
    "name": "security-audit-skill",
-   "cat": 2,
-   "sub": "metodologia",
+   "cat": 16,
+   "sub": "skills",
    "desc": "Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estructurados. Divide la revisión en reconocimiento, búsqueda por cobertura y verificación de candidatos antes del informe.",
    "why": "Quieres un proceso reproducible de revisión de seguridad con agentes.",
    "how": "Divide la revisión en reconocimiento, búsqueda por cobertura y verificación de candidatos antes del informe.",
@@ -29319,7 +29319,7 @@
   },
   "ai-engineering-hub": {
    "name": "ai-engineering-hub",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "desc": "Colección de tutoriales y proyectos prácticos sobre LLM, RAG, agentes y aplicaciones de inteligencia artificial. Cada carpeta presenta un ejemplo con sus dependencias y configuración propias.",
    "why": "Quieres aprender implementando ejemplos de ingeniería de IA.",
@@ -29461,7 +29461,7 @@
   },
   "ace-step-1.5": {
    "name": "ACE-Step-1.5",
-   "cat": 12,
+   "cat": 29,
    "sub": "musica",
    "desc": "Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. Combina modelos de generación musical y una interfaz de inferencia para producir audio y personalizar estilos.",
    "why": "Necesitas experimentar con generación musical en tu propio equipo.",
@@ -29531,7 +29531,7 @@
   },
   "social-media-agent": {
    "name": "social-media-agent",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "desc": "Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de publicarlas. Usa un flujo de LangGraph para investigar el enlace, redactar y solicitar aprobación de la publicación.",
    "why": "Quieres preparar publicaciones para X o LinkedIn con una etapa de aprobación.",
@@ -29673,7 +29673,7 @@
   },
   "local-deep-research": {
    "name": "local-deep-research",
-   "cat": 3,
+   "cat": 21,
    "sub": "research",
    "desc": "Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes. Itera entre preguntas, búsquedas y síntesis y permite configurar motores de búsqueda y proveedores de modelos.",
    "why": "Quieres investigar con un modelo local y conservar las fuentes consultadas.",
@@ -29745,7 +29745,7 @@
   },
   "social-media-research-skills": {
    "name": "social-media-research-skills",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "desc": "Skills para investigar publicaciones, comentarios, competidores y anuncios en redes mediante ScrapeCreators. Guía al agente por flujos de investigación que consultan datos sociales y producen informes de negocio.",
    "why": "Quieres investigación de contenido social desde un agente compatible con Agent Skills.",
@@ -29819,8 +29819,8 @@
   },
   "awesome-chrome-devtools": {
    "name": "awesome-chrome-devtools",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "recursos-web",
    "desc": "Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol. Agrupa depuradores, visores de trazas y clientes del protocolo para localizar una herramienta adecuada.",
    "why": "Buscas utilidades para depurar o automatizar Chrome.",
    "how": "Agrupa depuradores, visores de trazas y clientes del protocolo para localizar una herramienta adecuada.",
@@ -29889,7 +29889,7 @@
   },
   "archify": {
    "name": "archify",
-   "cat": 13,
+   "cat": 31,
    "sub": "diagramas",
    "desc": "Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. El agente transforma una descripción en una visualización que se puede abrir y explorar en el navegador.",
    "why": "Quieres explicar una arquitectura o un plan mediante una visualización interactiva.",
@@ -29963,7 +29963,7 @@
   },
   "compai-crm": {
    "name": "crm",
-   "cat": 1,
+   "cat": 18,
    "sub": "crm",
    "desc": "CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. Un agente trabaja sobre una cola y un presupuesto de investigación y mantiene la información del CRM.",
    "why": "Quieres estudiar un CRM donde el agente organiza el seguimiento.",
@@ -30103,7 +30103,7 @@
   },
   "rtk": {
    "name": "rtk",
-   "cat": 6,
+   "cat": 23,
    "sub": "tokens",
    "desc": "Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. Resume resultados de pruebas, diffs y logs antes de entregarlos al agente y registra el ahorro observado.",
    "why": "Tu agente consume demasiado contexto leyendo salidas extensas de terminal.",
@@ -30319,7 +30319,7 @@
   },
   "nodeterm": {
    "name": "nodeterm",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "desc": "Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto. Mantiene terminales reales en nodos movibles y muestra sesiones de trabajo en un tablero.",
    "why": "Gestionas muchas terminales o sesiones de agentes y prefieres una organización visual.",
@@ -30389,7 +30389,7 @@
   },
   "codex-chatgpt-web": {
    "name": "codex-chatgpt-web",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "desc": "Integración de terceros que conecta una sesión de ChatGPT Web con el selector de modelos y herramientas de Codex. Un launcher usa la sesión de la cuenta y enlaza herramientas mediante MCP para conservar el contexto de la tarea.",
    "why": "Quieres estudiar una integración entre ChatGPT Web y Codex.",
@@ -30531,7 +30531,7 @@
   },
   "paperclip": {
    "name": "paperclip",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "desc": "Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. Conecta distintos runtimes y coordina sus encargos y costes desde una aplicación central.",
    "why": "Necesitas coordinar varios agentes y seguir su trabajo en un panel.",
@@ -30673,7 +30673,7 @@
   },
   "globalbuildingatlas": {
    "name": "GlobalBuildingAtlas",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "desc": "Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. Publica distintas capas geoespaciales y herramientas para estimar alturas y construir representaciones de edificios.",
    "why": "Necesitas geometría de edificios para análisis territorial o visualización urbana.",
@@ -30745,7 +30745,7 @@
   },
   "whatsmeow": {
    "name": "whatsmeow",
-   "cat": 1,
+   "cat": 17,
    "sub": "whatsapp",
    "desc": "Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web. Gestiona la sesión del cliente y permite enviar mensajes, recibir eventos y mantener el estado de la cuenta.",
    "why": "Necesitas integrar WhatsApp Web en un servicio escrito en Go.",
@@ -31104,8 +31104,8 @@
   },
   "manim-community": {
    "name": "manim",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "motores",
    "desc": "Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. Define objetos geométricos y transformaciones en código y renderiza la escena como video.",
    "why": "Necesitas animaciones matemáticas precisas y reproducibles.",
    "how": "Define objetos geométricos y transformaciones en código y renderiza la escena como video.",
@@ -31178,7 +31178,7 @@
   },
   "warp": {
    "name": "warp",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "desc": "Framework de NVIDIA que compila funciones de Python en kernels para simulación física y cálculo en CPU o GPU. Compila funciones especializadas y aporta primitivas de geometría, física y diferenciación.",
    "why": "Quieres escribir simulaciones o kernels de cálculo acelerado desde Python.",
@@ -31248,7 +31248,7 @@
   },
   "tensorrt-llm": {
    "name": "TensorRT-LLM",
-   "cat": 6,
+   "cat": 23,
    "sub": "serving",
    "desc": "Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. Transforma modelos compatibles y los ejecuta con optimizaciones de memoria, precisión y paralelismo.",
    "why": "Despliegas LLM en GPU NVIDIA y necesitas optimizar la inferencia.",
@@ -31318,7 +31318,7 @@
   },
   "open-deep-research": {
    "name": "open_deep_research",
-   "cat": 3,
+   "cat": 21,
    "sub": "research",
    "desc": "Agente abierto de LangChain para investigación profunda configurable con distintos modelos, buscadores y servidores MCP. Organiza ciclos de planificación, búsqueda y síntesis mediante un grafo de investigación.",
    "why": "Quieres adaptar un agente de investigación construido con LangGraph.",
@@ -31393,7 +31393,7 @@
   },
   "bionemo-recipes": {
    "name": "bionemo-recipes",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "desc": "Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. Presenta configuraciones de entrenamiento con TransformerEngine y frameworks distribuidos para modelos biológicos.",
    "why": "Trabajas en entrenamiento de modelos para datos biológicos.",
@@ -31533,7 +31533,7 @@
   },
   "train-llm-from-scratch": {
    "name": "train-llm-from-scratch",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "desc": "Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generación. Implementa un Transformer y recorre preparación de datos, entrenamiento y ajuste del modelo.",
    "why": "Quieres entender el entrenamiento de un LLM mediante una implementación completa.",
@@ -31603,7 +31603,7 @@
   },
   "freedomain": {
    "name": "FreeDomain",
-   "cat": 5,
+   "cat": 22,
    "sub": "recursos",
    "desc": "Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat. Reúne instrucciones para registrar un dominio, configurar nameservers y conectar un proyecto.",
    "why": "Quieres aprender el flujo de dominios y DNS con sus recursos de referencia.",
@@ -31743,8 +31743,8 @@
   },
   "opencode-legacy": {
    "name": "opencode",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "desc": "Agente de código en Go del antiguo proyecto opencode-ai, archivado y continuado bajo el nombre Crush. Conserva una interfaz de terminal y el historial del agente original para consulta.",
    "why": "Necesitas estudiar la implementación histórica de OpenCode en Go.",
    "how": "Conserva una interfaz de terminal y el historial del agente original para consulta.",
@@ -31813,8 +31813,8 @@
   },
   "mimo-code": {
    "name": "MiMo-Code",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "desc": "Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. Mantiene el contexto del proyecto y usa herramientas para ejecutar tareas de desarrollo desde una conversación.",
    "why": "Quieres evaluar el agente de código del ecosistema Xiaomi MiMo.",
    "how": "Mantiene el contexto del proyecto y usa herramientas para ejecutar tareas de desarrollo desde una conversación.",
@@ -31954,7 +31954,7 @@
   },
   "backdoor": {
    "name": "backdoor",
-   "cat": 6,
+   "cat": 23,
    "sub": "serving",
    "desc": "Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. Traduce solicitudes y gestiona la configuración de proveedores como servicios compatibles u Ollama.",
    "why": "Quieres estudiar cómo conectar otros modelos al harness de Claude Code.",
@@ -32024,7 +32024,7 @@
   },
   "masterdnsvpn": {
    "name": "MasterDnsVPN",
-   "cat": 5,
+   "cat": 22,
    "sub": "redes",
    "desc": "Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. Coordina cliente y servidor con retransmisión y selección de resolvers para enlaces con restricciones.",
    "why": "Quieres estudiar transporte de red sobre DNS en un entorno de pruebas.",
@@ -32094,7 +32094,7 @@
   },
   "music-megathread": {
    "name": "Music-Megathread",
-   "cat": 12,
+   "cat": 29,
    "sub": "musica",
    "desc": "Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música. Agrupa enlaces a proyectos y servicios musicales para explorar alternativas por función.",
    "why": "Buscas recursos musicales y quieres comparar opciones desde una lista.",
@@ -32234,7 +32234,7 @@
   },
   "ruview": {
    "name": "RuView",
-   "cat": 11,
+   "cat": 28,
    "sub": "sensores",
    "desc": "Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento. Procesa señales de radio y conecta componentes de detección con paneles y sistemas de domótica.",
    "why": "Quieres investigar percepción mediante radiofrecuencia y sensores WiFi.",
@@ -32304,7 +32304,7 @@
   },
   "financial-services": {
    "name": "financial-services",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "desc": "Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. Reúne instrucciones y conectores para tareas como análisis de empresas y gestión de documentos financieros.",
    "why": "Quieres estudiar flujos financieros dentro del ecosistema de Claude.",
@@ -32590,7 +32590,7 @@
   },
   "500-ai-agents-projects": {
    "name": "500-AI-Agents-Projects",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "desc": "Colección de ideas, casos de uso y ejemplos de agentes de IA para distintos sectores y tareas. Organiza proyectos y enlaces que sirven como punto de partida para prototipos y aprendizaje.",
    "why": "Buscas ejemplos de aplicaciones de agentes para adaptar a tu propio problema.",
@@ -32730,8 +32730,8 @@
   },
   "camofox-browser": {
    "name": "camofox-browser",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "motores-web",
    "desc": "Servidor de automatización de navegador basado en Camoufox para ofrecer navegación a agentes. Expone un navegador derivado de Firefox mediante herramientas y endpoints de automatización.",
    "why": "Necesitas evaluar una alternativa de navegador automatizado para agentes.",
    "how": "Expone un navegador derivado de Firefox mediante herramientas y endpoints de automatización.",
@@ -32942,7 +32942,7 @@
   },
   "front-end-checklist": {
    "name": "Front-End-Checklist",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo. Organiza comprobaciones de implementación y publica material para revisión humana y agentes.",
    "why": "Quieres una lista de revisión de interfaz y entrega web.",
@@ -33224,8 +33224,8 @@
   },
   "agent-browser": {
    "name": "agent-browser",
-   "cat": 4,
-   "sub": "navegador",
+   "cat": 32,
+   "sub": "agentes-web",
    "desc": "CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes. Mantiene una sesión de navegador y permite abrir páginas, inspeccionarlas y actuar por referencias desde la terminal.",
    "why": "Necesitas navegación programable con salidas compactas para un agente.",
    "how": "Mantiene una sesión de navegador y permite abrir páginas, inspeccionarlas y actuar por referencias desde la terminal.",
@@ -33300,7 +33300,7 @@
   },
   "claude-quickstarts": {
    "name": "claude-quickstarts",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "desc": "Ejemplos oficiales de Anthropic para construir aplicaciones con Claude, herramientas y uso de computadora. Cada quickstart ofrece una aplicación base con código y pasos de configuración específicos.",
    "why": "Quieres partir de un ejemplo oficial al integrar la API de Claude.",
@@ -33370,7 +33370,7 @@
   },
   "free-for-dev": {
    "name": "free-for-dev",
-   "cat": 5,
+   "cat": 22,
    "sub": "recursos",
    "desc": "Directorio de servicios de infraestructura y desarrollo que ofrecen planes o niveles gratuitos. Agrupa servicios por capacidad para comparar opciones antes de configurar un proyecto.",
    "why": "Buscas servicios de desarrollo con un nivel gratuito disponible.",
@@ -33440,7 +33440,7 @@
   },
   "system-prompts-and-models-of-ai-tools": {
    "name": "system-prompts-and-models-of-ai-tools",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "desc": "Colección de prompts y configuraciones atribuidos a herramientas de IA para estudiar sus patrones de diseño. Organiza archivos por herramienta para consultar y comparar instrucciones y formatos.",
    "why": "Quieres investigar patrones de prompts utilizados por asistentes.",
@@ -33582,8 +33582,8 @@
   },
   "openclaude": {
    "name": "openclaude",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "terminal",
    "desc": "Agente de código abierto para terminal que conecta proveedores remotos y modelos locales con herramientas y MCP. Mantiene una conversación de desarrollo con streaming, comandos y herramientas sobre el workspace.",
    "why": "Quieres evaluar un agente de terminal compatible con varios backends.",
    "how": "Mantiene una conversación de desarrollo con streaming, comandos y herramientas sobre el workspace.",
@@ -33792,7 +33792,7 @@
   },
   "tensorflow": {
    "name": "tensorflow",
-   "cat": 7,
+   "cat": 24,
    "sub": "entrenamiento",
    "desc": "Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. Define operaciones y modelos y ofrece herramientas de entrenamiento e inferencia en distintos dispositivos.",
    "why": "Tu proyecto necesita el ecosistema TensorFlow para entrenamiento o despliegue.",
@@ -33862,7 +33862,7 @@
   },
   "python-machine-learning-book": {
    "name": "python-machine-learning-book",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "desc": "Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación. Presenta notebooks y scripts que acompañan los capítulos y conceptos del libro.",
    "why": "Quieres estudiar los ejemplos de la primera edición del libro.",
@@ -34002,7 +34002,7 @@
   },
   "machinelearning": {
    "name": "MachineLearning",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "desc": "Ejemplos educativos de algoritmos de machine learning y redes neuronales con Python. Agrupa implementaciones y ejercicios de clasificación, reducción de dimensiones y aprendizaje profundo.",
    "why": "Quieres explorar implementaciones pequeñas de algoritmos clásicos.",
@@ -34072,7 +34072,7 @@
   },
   "awesome-machine-learning": {
    "name": "awesome-machine-learning",
-   "cat": 7,
+   "cat": 19,
    "sub": "aprender",
    "desc": "Directorio de frameworks, bibliotecas y recursos de machine learning organizado por lenguaje y tema. Reúne enlaces a implementaciones, cursos y material para comparar herramientas.",
    "why": "Buscas alternativas de aprendizaje automático en distintos lenguajes.",
@@ -34142,7 +34142,7 @@
   },
   "bigdata": {
    "name": "BigData",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "desc": "Colección educativa de proyectos de datos con ejercicios de Hive, HDFS, Spark, HBase y sistemas de recomendación. Las carpetas desarrollan problemas de ingestión, análisis y procesamiento distribuido de datos.",
    "why": "Quieres estudiar ejemplos prácticos del ecosistema de big data.",
@@ -34212,7 +34212,7 @@
   },
   "hudi": {
    "name": "hudi",
-   "cat": 7,
+   "cat": 25,
    "sub": "datos",
    "desc": "Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. Añade índices, actualizaciones y procesamiento incremental a tablas de un lago de datos.",
    "why": "Necesitas gestionar cambios y cargas incrementales en un data lake.",
@@ -34772,7 +34772,7 @@
   },
   "chatgpt-system-prompt": {
    "name": "chatgpt_system_prompt",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "desc": "Colección de prompts de GPT y recursos sobre instrucciones de sistema y extracción de prompts. Organiza documentos de referencia para estudiar estructuras de instrucciones y comportamiento de asistentes.",
    "why": "Quieres comparar patrones de prompts como material de investigación.",
@@ -34916,7 +34916,7 @@
   },
   "chatgpt-dan": {
    "name": "ChatGPT_DAN",
-   "cat": 2,
+   "cat": 19,
    "sub": "prompts",
    "desc": "Archivo de prompts históricos de roleplay y jailbreak atribuidos a versiones antiguas de ChatGPT. Recopila variantes de instrucciones para estudiar intentos de alterar el comportamiento de asistentes.",
    "why": "Quieres investigar prompts históricos y sus limitaciones.",
@@ -34986,8 +34986,8 @@
   },
   "opencursor": {
    "name": "OpenCursor",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "editor",
    "desc": "Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos. Integra conversación y acciones sobre el workspace con proveedores remotos o locales y herramientas MCP.",
    "why": "Quieres evaluar un agente de código integrado en VS Code.",
    "how": "Integra conversación y acciones sobre el workspace con proveedores remotos o locales y herramientas MCP.",
@@ -35268,7 +35268,7 @@
   },
   "dream-loop": {
    "name": "dream-loop",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Skill que combina Blender, generación de imágenes y revisión por un agente para preparar visuales tridimensionales.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -35478,7 +35478,7 @@
   },
   "agentes-chat": {
    "name": "agentes-chat",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "desc": "Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que colaboran con personas y herramientas.",
    "how": "La aplicación coordina modelos y herramientas; el acceso de cada componente se configura antes de ejecutar sus tareas.",
@@ -35621,7 +35621,7 @@
   },
   "claude-seo": {
    "name": "claude-seo",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "desc": "Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -35691,7 +35691,7 @@
   },
   "awesome-harness-engineering": {
    "name": "awesome-harness-engineering",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "desc": "Directorio de herramientas y patrones para diseñar el entorno, memoria, evaluación y permisos de agentes de IA.",
    "how": "Se consulta como documentación o referencia; cada ejemplo o proyecto enlazado se evalúa por separado.",
@@ -35899,8 +35899,8 @@
   },
   "huashu-motion": {
    "name": "huashu-motion",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "desc": "Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión visual.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/alchaincyf/huashu-motion/blob/main/README.md",
@@ -36255,8 +36255,8 @@
   },
   "blender-skills": {
    "name": "blender-skills",
-   "cat": 11,
-   "sub": "creacion-3d",
+   "cat": 27,
+   "sub": "skills",
    "desc": "Skills para guiar a un agente por modelado y preparación de escenas en Blender mediante herramientas y conexiones MCP.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/arjun988/blender-skills/blob/main/README.md",
@@ -36327,7 +36327,7 @@
   },
   "webgl-noise": {
    "name": "webgl-noise",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "desc": "Rutinas de ruido procedural para shaders de WebGL, útiles para crear texturas y efectos visuales en tiempo real.",
    "how": "Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.",
@@ -36397,7 +36397,7 @@
   },
   "genjutsu": {
    "name": "genjutsu",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -36537,7 +36537,7 @@
   },
   "i-have-adhd": {
    "name": "i-have-adhd",
-   "cat": 2,
+   "cat": 27,
    "sub": "escritura",
    "desc": "Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -36747,7 +36747,7 @@
   },
   "blender": {
    "name": "blender",
-   "cat": 11,
+   "cat": 26,
    "sub": "creacion-3d",
    "desc": "Código de Blender, la aplicación para modelar, animar, renderizar y editar escenas y contenido tridimensional.",
    "how": "La aplicación ofrece las herramientas de su interfaz o CLI después de preparar la distribución y sus dependencias.",
@@ -36817,8 +36817,8 @@
   },
   "rubberband": {
    "name": "rubberband",
-   "cat": 12,
-   "sub": "edicion",
+   "cat": 29,
+   "sub": "audio",
    "desc": "Biblioteca de audio para modificar duración y tono de una grabación, integrada como código en otras herramientas.",
    "how": "Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/breakfastquay/rubberband/blob/default/README.md",
@@ -36887,7 +36887,7 @@
   },
   "diagram-design": {
    "name": "diagram-design",
-   "cat": 13,
+   "cat": 31,
    "sub": "diagramas",
    "desc": "Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -37027,7 +37027,7 @@
   },
   "omniroute": {
    "name": "OmniRoute",
-   "cat": 6,
+   "cat": 23,
    "sub": "serving",
    "desc": "Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso.",
    "how": "Un servicio y su interfaz gestionan los datos y conexiones configurados en tu despliegue.",
@@ -37097,8 +37097,8 @@
   },
   "opencode-manager": {
    "name": "opencode-manager",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "sesiones",
    "desc": "Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil.",
    "how": "La aplicación coordina modelos y herramientas; el acceso de cada componente se configura antes de ejecutar sus tareas.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/chriswritescode-dev/opencode-manager/blob/main/README.md",
@@ -37167,7 +37167,7 @@
   },
   "threejs-skills": {
    "name": "threejs-skills",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Colección de instrucciones para que agentes programen escenas y experiencias 3D en la web con Three.js.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -37239,7 +37239,7 @@
   },
   "openpose": {
    "name": "openpose",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video.",
    "how": "Carga los modelos y datos del ejemplo para realizar inferencia o investigación con el backend elegido.",
@@ -37309,7 +37309,7 @@
   },
   "coolify": {
    "name": "coolify",
-   "cat": 15,
+   "cat": 22,
    "sub": "infraestructura",
    "desc": "Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.",
    "how": "Un servicio y su interfaz gestionan los datos y conexiones configurados en tu despliegue.",
@@ -37379,7 +37379,7 @@
   },
   "opendots": {
    "name": "OpenDots",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "desc": "Plataforma de asistentes de IA persistentes que coordinan conversaciones, llamadas y servicios conectados.",
    "how": "La aplicación coordina modelos y herramientas; el acceso de cada componente se configura antes de ejecutar sus tareas.",
@@ -37661,7 +37661,7 @@
   },
   "scenejs": {
    "name": "scenejs",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "desc": "Biblioteca JavaScript para crear y controlar animaciones mediante líneas de tiempo y propiedades de elementos.",
    "how": "Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.",
@@ -37940,7 +37940,7 @@
   },
   "dograh": {
    "name": "dograh",
-   "cat": 12,
+   "cat": 29,
    "sub": "voz-agentes",
    "desc": "Plataforma para construir agentes de voz con flujos visuales, telefonía y proveedores de voz o modelos configurables.",
    "how": "La aplicación coordina modelos y herramientas; el acceso de cada componente se configura antes de ejecutar sus tareas.",
@@ -38010,8 +38010,8 @@
   },
   "papermorph": {
    "name": "Papermorph",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "desc": "Skill que convierte libros en experiencias web animadas y narradas, con distintas rutas de voz y recursos visuales.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/DozenTwelve/Papermorph/blob/main/README.md",
@@ -38151,7 +38151,7 @@
   },
   "sellbird": {
    "name": "sellbird",
-   "cat": 1,
+   "cat": 18,
    "sub": "marketing",
    "desc": "Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes.",
    "how": "La aplicación coordina modelos y herramientas; el acceso de cada componente se configura antes de ejecutar sus tareas.",
@@ -38294,7 +38294,7 @@
   },
   "open-seo": {
    "name": "open-seo",
-   "cat": 1,
+   "cat": 18,
    "sub": "marketing",
    "desc": "Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio.",
    "how": "Un servicio y su interfaz gestionan los datos y conexiones configurados en tu despliegue.",
@@ -38364,7 +38364,7 @@
   },
   "claude-task-master": {
    "name": "claude-task-master",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "desc": "Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP.",
    "how": "La aplicación coordina modelos y herramientas; el acceso de cada componente se configura antes de ejecutar sus tareas.",
@@ -38434,7 +38434,7 @@
   },
   "videopose3d": {
    "name": "VideoPose3D",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Implementación de investigación para estimar pose humana 3D desde trayectorias de puntos 2D en secuencias de video.",
    "how": "Carga los modelos y datos del ejemplo para realizar inferencia o investigación con el backend elegido.",
@@ -38855,8 +38855,8 @@
   },
   "srt-whiteboard-animation": {
    "name": "srt-whiteboard-animation",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "desc": "Skill para crear animaciones de pizarra con trazos y contenido organizados a partir de archivos de subtítulos SRT.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/geeklee/srt-whiteboard-animation/blob/main/README.md",
@@ -38995,7 +38995,7 @@
   },
   "postiz-app": {
    "name": "postiz-app",
-   "cat": 1,
+   "cat": 18,
    "sub": "marketing",
    "desc": "Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA.",
    "how": "Un servicio y su interfaz gestionan los datos y conexiones configurados en tu despliegue.",
@@ -39065,7 +39065,7 @@
   },
   "mediapipe": {
    "name": "mediapipe",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Herramientas de aprendizaje automático para tareas de visión y procesamiento de medios en dispositivos y aplicaciones.",
    "how": "Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.",
@@ -39205,7 +39205,7 @@
   },
   "filament": {
    "name": "filament",
-   "cat": 11,
+   "cat": 26,
    "sub": "creacion-3d",
    "desc": "Motor de renderizado físicamente basado para integrar gráficos 3D en aplicaciones móviles, web y de escritorio.",
    "how": "Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.",
@@ -39345,7 +39345,7 @@
   },
   "modern-web-guidance": {
    "name": "modern-web-guidance",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Herramienta y skill para que un agente consulte documentación actual sobre prácticas y APIs de desarrollo web.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -39486,7 +39486,7 @@
   },
   "gsap-skills": {
    "name": "gsap-skills",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Skills oficiales con instrucciones y ejemplos para que agentes creen animaciones y utilicen plugins de GSAP.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -39556,7 +39556,7 @@
   },
   "ozz-animation": {
    "name": "ozz-animation",
-   "cat": 11,
+   "cat": 26,
    "sub": "creacion-3d",
    "desc": "Biblioteca C++ y herramientas para preparar y reproducir animación esquelética dentro de motores y aplicaciones.",
    "how": "Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.",
@@ -40047,7 +40047,7 @@
   },
   "casaos": {
    "name": "CasaOS",
-   "cat": 15,
+   "cat": 22,
    "sub": "infraestructura",
    "desc": "Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos.",
    "how": "Un servicio y su interfaz gestionan los datos y conexiones configurados en tu despliegue.",
@@ -40258,7 +40258,7 @@
   },
   "instagram-agent-skill": {
    "name": "instagram-agent-skill",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "desc": "Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -40328,7 +40328,7 @@
   },
   "linkedin-agent-skill": {
    "name": "linkedin-agent-skill",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "desc": "Skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -40608,7 +40608,7 @@
   },
   "scientific-agent-skills": {
    "name": "scientific-agent-skills",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "desc": "Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -40678,7 +40678,7 @@
   },
   "logo-design-skill": {
    "name": "logo-design-skill",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Skill para diseñar logotipos con un agente, desde la idea y las referencias hasta SVG y comprobaciones de diseño.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -41307,7 +41307,7 @@
   },
   "kornia": {
    "name": "kornia",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Biblioteca de visión por computador para incorporar geometría, transformaciones y procesamiento de imágenes en PyTorch.",
    "how": "Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.",
@@ -41447,8 +41447,8 @@
   },
   "openidea": {
    "name": "openidea",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "editor",
    "desc": "Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguajes.",
    "how": "La aplicación ofrece las herramientas de su interfaz o CLI después de preparar la distribución y sus dependencias.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/l0ng-ai/openidea/blob/main/README.md",
@@ -41517,8 +41517,8 @@
   },
   "brag": {
    "name": "brag",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "desc": "Skills para que un agente convierta un proyecto o sitio en un video breve de lanzamiento con composición y música.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/latent-spaces/brag/blob/main/README.md",
@@ -41659,8 +41659,8 @@
   },
   "lemo-opuscar": {
    "name": "lemo-opuscar",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "desc": "Colección de estilos e instrucciones para crear piezas audiovisuales por código con Claude Code.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/lemomo-ai/lemo-opuscar/blob/main/README.md",
@@ -41729,8 +41729,8 @@
   },
   "earshot": {
    "name": "earshot",
-   "cat": 12,
-   "sub": "edicion",
+   "cat": 29,
+   "sub": "audio",
    "desc": "Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP.",
    "how": "Un cliente MCP invoca las herramientas del servidor para trabajar con el programa o servicio conectado.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/Leonxlnx/earshot/blob/main/README.md",
@@ -41799,7 +41799,7 @@
   },
   "motion-design-skill": {
    "name": "motion-design-skill",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Skill con principios de ritmo, transiciones y composición del movimiento para diseñar animaciones de interfaces.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -42009,7 +42009,7 @@
   },
   "claude-code-usage-monitor": {
    "name": "Claude-Code-Usage-Monitor",
-   "cat": 6,
+   "cat": 23,
    "sub": "observabilidad",
    "desc": "Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible.",
    "how": "La aplicación ofrece las herramientas de su interfaz o CLI después de preparar la distribución y sus dependencias.",
@@ -42149,7 +42149,7 @@
   },
   "cloud-mail": {
    "name": "cloud-mail",
-   "cat": 1,
+   "cat": 18,
    "sub": "marketing",
    "desc": "Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio.",
    "how": "Un servicio y su interfaz gestionan los datos y conexiones configurados en tu despliegue.",
@@ -42219,7 +42219,7 @@
   },
   "threejs-game-skills": {
    "name": "threejs-game-skills",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Skills para que un agente construya juegos de navegador con Three.js, interfaz y recursos visuales o sonoros opcionales.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -42361,7 +42361,7 @@
   },
   "zdog": {
    "name": "zdog",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "desc": "Motor de gráficos pseudo-3D que permite dibujar y animar ilustraciones sencillas mediante canvas o SVG.",
    "how": "Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.",
@@ -42502,7 +42502,7 @@
   },
   "awesome-cad": {
    "name": "awesome-cad",
-   "cat": 11,
+   "cat": 26,
    "sub": "creacion-3d",
    "desc": "Directorio de programas, bibliotecas y recursos de diseño asistido por computadora organizados por especialidad.",
    "how": "Se consulta como documentación o referencia; cada ejemplo o proyecto enlazado se evalúa por separado.",
@@ -42711,8 +42711,8 @@
   },
   "claude-animated-shorts": {
    "name": "claude-animated-shorts",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "desc": "Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/mromidev/claude-animated-shorts/blob/main/README.md",
@@ -42781,7 +42781,7 @@
   },
   "claude-code-router": {
    "name": "claude-code-router",
-   "cat": 6,
+   "cat": 23,
    "sub": "serving",
    "desc": "Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local.",
    "how": "Un servicio y su interfaz gestionan los datos y conexiones configurados en tu despliegue.",
@@ -42851,7 +42851,7 @@
   },
   "mvanhorn": {
    "name": "mvanhorn",
-   "cat": 2,
+   "cat": 19,
    "sub": "guias",
    "desc": "Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo.",
    "how": "Se consulta como documentación o referencia; cada ejemplo o proyecto enlazado se evalúa por separado.",
@@ -42919,7 +42919,7 @@
   },
   "melotts": {
    "name": "MeloTTS",
-   "cat": 12,
+   "cat": 29,
    "sub": "tts",
    "desc": "Biblioteca de texto a voz con modelos y ejemplos para sintetizar narración en varios idiomas compatibles.",
    "how": "Carga los modelos y datos del ejemplo para realizar inferencia o investigación con el backend elegido.",
@@ -42989,7 +42989,7 @@
   },
   "laya": {
    "name": "laya",
-   "cat": 7,
+   "cat": 24,
    "sub": "modelos",
    "desc": "Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados.",
    "how": "Carga los modelos y datos del ejemplo para realizar inferencia o investigación con el backend elegido.",
@@ -43204,7 +43204,7 @@
   },
   "hallmark": {
    "name": "hallmark",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Skill de diseño para agentes que ayuda a construir interfaces con decisiones visuales más específicas y coherentes.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -43985,7 +43985,7 @@
   },
   "mmpose": {
    "name": "mmpose",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Herramientas y modelos de estimación de pose, incluidos RTMPose y otras variantes para analizar movimiento humano.",
    "how": "Carga los modelos y datos del ejemplo para realizar inferencia o investigación con el backend elegido.",
@@ -44125,8 +44125,8 @@
   },
   "openfilm": {
    "name": "openfilm",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "desc": "Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/openfilm/openfilm/blob/main/README.md",
@@ -44195,7 +44195,7 @@
   },
   "hello-halo": {
    "name": "hello-halo",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "desc": "Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores API.",
    "how": "La aplicación coordina modelos y herramientas; el acceso de cada componente se configura antes de ejecutar sus tareas.",
@@ -44335,7 +44335,7 @@
   },
   "pixelfx": {
    "name": "pixelfx",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "desc": "Colección de efectos de pixel art hechos con código y una skill para ayudar a generar efectos propios.",
    "how": "Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.",
@@ -44475,7 +44475,7 @@
   },
   "no-ai-slop": {
    "name": "no-ai-slop",
-   "cat": 2,
+   "cat": 27,
    "sub": "escritura",
    "desc": "Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -44545,7 +44545,7 @@
   },
   "planck-js": {
    "name": "planck.js",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "desc": "Motor de física 2D para simular cuerpos, colisiones y uniones dentro de juegos o aplicaciones JavaScript.",
    "how": "Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.",
@@ -44615,7 +44615,7 @@
   },
   "react-three-rapier": {
    "name": "react-three-rapier",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "desc": "Integración del motor de física Rapier con React Three Fiber para añadir simulación a escenas tridimensionales.",
    "how": "Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.",
@@ -45044,7 +45044,7 @@
   },
   "regl": {
    "name": "regl",
-   "cat": 9,
+   "cat": 26,
    "sub": "animacion",
    "desc": "Biblioteca funcional para organizar comandos de renderizado WebGL y dibujar gráficos acelerados en una aplicación web.",
    "how": "Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.",
@@ -45187,7 +45187,7 @@
   },
   "fugu": {
    "name": "fugu",
-   "cat": 3,
+   "cat": 21,
    "sub": "asistentes",
    "desc": "Ejemplos y acceso a un sistema multiagente de Sakana que se consume como un servicio de modelos mediante API.",
    "how": "La aplicación coordina modelos y herramientas; el acceso de cada componente se configura antes de ejecutar sus tareas.",
@@ -45257,7 +45257,7 @@
   },
   "shepherd": {
    "name": "shepherd",
-   "cat": 3,
+   "cat": 22,
    "sub": "infra",
    "desc": "Capa de ejecución que registra acciones y estado de un agente para permitir reproducir, bifurcar y revisar sus recorridos.",
    "how": "El desarrollador adapta sus ejemplos y componentes dentro de un proyecto con sus propios datos y servicios.",
@@ -45327,7 +45327,7 @@
   },
   "4d-humans": {
    "name": "4D-Humans",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de video.",
    "how": "Carga los modelos y datos del ejemplo para realizar inferencia o investigación con el backend elegido.",
@@ -45468,7 +45468,7 @@
   },
   "minimalist-entrepreneur-skills": {
    "name": "skills",
-   "cat": 2,
+   "cat": 27,
    "sub": "dominio",
    "desc": "Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con un agente.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -45609,7 +45609,7 @@
   },
   "supabase": {
    "name": "supabase",
-   "cat": 15,
+   "cat": 22,
    "sub": "infraestructura",
    "desc": "Plataforma de desarrollo con PostgreSQL, autenticación, almacenamiento y otras funciones de backend para aplicaciones.",
    "how": "Un servicio y su interfaz gestionan los datos y conexiones configurados en tu despliegue.",
@@ -45819,8 +45819,8 @@
   },
   "motionmaxxing": {
    "name": "motionmaxxing",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "desc": "Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/Tejashmakwana/motionmaxxing/blob/main/README.md",
@@ -45889,7 +45889,7 @@
   },
   "tfjs-models": {
    "name": "tfjs-models",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Colección de modelos preparados para TensorFlow.js que permite integrar tareas de aprendizaje automático en aplicaciones.",
    "how": "Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.",
@@ -46381,7 +46381,7 @@
   },
   "3dviz-pro-max": {
    "name": "3dviz-pro-max",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Skill para convertir ideas en escenas y visualizaciones 3D con Three.js o Blender desde un agente de código.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -46453,8 +46453,8 @@
   },
   "video-shotcraft": {
    "name": "video-shotcraft",
-   "cat": 12,
-   "sub": "programatico",
+   "cat": 30,
+   "sub": "skills-video",
    "desc": "Skill para crear videos de producto editables con Remotion, composición de planos, movimiento y trabajo de sonido.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/Vincentwei1021/video-shotcraft/blob/main/README.md",
@@ -46808,7 +46808,7 @@
   },
   "anatomy": {
    "name": "anatomy",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Skill para crear ilustraciones isométricas e interactivas de máquinas y sistemas con SVG y efectos visuales opcionales.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -46949,8 +46949,8 @@
   },
   "rnnoise": {
    "name": "rnnoise",
-   "cat": 12,
-   "sub": "edicion",
+   "cat": 29,
+   "sub": "audio",
    "desc": "Biblioteca de reducción de ruido de audio que utiliza una red neuronal para mejorar señales de voz localmente.",
    "how": "Carga los modelos y datos del ejemplo para realizar inferencia o investigación con el backend elegido.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/xiph/rnnoise/blob/main/README",
@@ -47019,7 +47019,7 @@
   },
   "wham": {
    "name": "WHAM",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video.",
    "how": "Carga los modelos y datos del ejemplo para realizar inferencia o investigación con el backend elegido.",
@@ -47089,7 +47089,7 @@
   },
   "design-dna": {
    "name": "design-dna",
-   "cat": 9,
+   "cat": 27,
    "sub": "skills",
    "desc": "Skill para analizar referencias visuales, extraer decisiones de diseño y generar interfaces con un estilo coherente.",
    "how": "El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.",
@@ -47159,7 +47159,7 @@
   },
   "meshoptimizer": {
    "name": "meshoptimizer",
-   "cat": 11,
+   "cat": 26,
    "sub": "creacion-3d",
    "desc": "Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales.",
    "how": "Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.",
@@ -47299,7 +47299,7 @@
   },
   "easymocap": {
    "name": "EasyMocap",
-   "cat": 11,
+   "cat": 28,
    "sub": "vision",
    "desc": "Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes.",
    "how": "Carga los modelos y datos del ejemplo para realizar inferencia o investigación con el backend elegido.",
@@ -47369,8 +47369,8 @@
   },
   "dsh-android": {
    "name": "dsh-android",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "plataformas",
    "desc": "Plugin de DeepSeek Harness para operar un emulador o dispositivo Android y revisar aplicaciones desde el agente.",
    "how": "Se instala dentro de DeepSeek Harness para añadir herramientas y una interfaz a ese entorno.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/ZSeven-W/dsh-android/blob/main/README.md",
@@ -47442,8 +47442,8 @@
   },
   "dsh-game-studio": {
    "name": "dsh-game-studio",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "plataformas",
    "desc": "Plugin de DeepSeek Harness para preparar y probar juegos pequeños con una interfaz de trabajo dentro del agente.",
    "how": "Se instala dentro de DeepSeek Harness para añadir herramientas y una interfaz a ese entorno.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/ZSeven-W/dsh-game-studio/blob/main/README.md",
@@ -47514,8 +47514,8 @@
   },
   "dsh-ios": {
    "name": "dsh-ios",
-   "cat": 3,
-   "sub": "coding",
+   "cat": 20,
+   "sub": "plataformas",
    "desc": "Plugin de DeepSeek Harness para desarrollar y operar aplicaciones en simuladores iOS o dispositivos compatibles.",
    "how": "Se instala dentro de DeepSeek Harness para añadir herramientas y una interfaz a ese entorno.",
    "install": "Sigue la instalación y el ejemplo mínimo en https://github.com/ZSeven-W/dsh-ios/blob/main/README.md",
@@ -47728,6 +47728,222 @@
     "github_checked": "2026-11-14",
     "collection": "saved-resources-document"
    }
+  },
+  "creative-architect": {
+   "name": "Creative Architect",
+   "cat": 27,
+   "sub": "skills",
+   "desc": "Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de imagen o video.",
+   "repo": "https://github.com/Hainrixz/creative-architect",
+   "homepage": "https://www.tododeia.com/community/creative-architect",
+   "license": "MIT",
+   "lang": "Markdown",
+   "updated": "2026-11-14",
+   "doc": "human/fichas/creative-architect.md",
+   "access": {
+    "api": "optional",
+    "local_model": "not_documented",
+    "claude_code": "host",
+    "codex": "not_documented",
+    "cost": "choice",
+    "hardware": "ordinary",
+    "mode": "agent_extension",
+    "scope": "Plugin para dirigir piezas creativas dentro de Claude Code; también puede entregar solo el prompt.",
+    "api_note": "Para preparar briefs y prompts utiliza tu agente. Para generar conecta Higgsfield, Magnific u OpenAI con la cuenta, conector o API que corresponda.",
+    "subscription_note": "Las instrucciones se ejecutan en Claude Code con tu acceso habitual; los créditos de generación del proveedor se revisan por separado.",
+    "local_note": "El plugin vive en tu equipo; la documentación no ofrece un generador local de imágenes o video.",
+    "cost_note": "Plugin MIT. Consume tu agente y, si generas medios, los créditos o tarifas del proveedor elegido.",
+    "hardware_note": "Git y Claude Code para el plugin; los servicios conectados tienen sus propios requisitos.",
+    "sources": [
+     "https://github.com/Hainrixz/creative-architect/blob/main/README.md",
+     "https://www.tododeia.com/community/creative-architect"
+    ],
+    "checked_at": "2026-11-14",
+    "review": "documented",
+    "source_blob_sha": "e536a447d11b00332b9ec69edc42c39256e1414e"
+   },
+   "getting_started": {
+    "kind": "skill",
+    "audience": "agent",
+    "prerequisites": [
+     "Git y Claude Code funcionando",
+     "Cuenta en un proveedor solo si vas a generar medios"
+    ],
+    "steps": [
+     "Abre una carpeta de trabajo en Claude Code y añade el marketplace del proyecto.",
+     "Instala creative-architect@creative-architect y recarga los plugins.",
+     "Pide primero un brief o prompt; conecta un proveedor y revisa sus créditos antes de generar una pieza."
+    ],
+    "command": "claude plugin marketplace add Hainrixz/creative-architect\nclaude plugin install creative-architect@creative-architect",
+    "note": "El README aún dice privado, pero GitHub lo marca público en la revisión. Revisa los permisos si cambia. La revisión es documental; no se instaló el plugin.",
+    "source": "https://github.com/Hainrixz/creative-architect/blob/main/README.md",
+    "checked_at": "2026-11-14",
+    "entry_url": "https://github.com/Hainrixz/creative-architect",
+    "command_status": "documented"
+   },
+   "first_step": "Abre una carpeta de trabajo en Claude Code y añade el marketplace del proyecto.",
+   "sources": {
+    "readme_blob_sha": "e536a447d11b00332b9ec69edc42c39256e1414e",
+    "root_tree_sha": "b487cd7819e07341101f4dd4fbe3c97739b6654f",
+    "readme_url": "https://github.com/Hainrixz/creative-architect/blob/main/README.md",
+    "github_checked": "2026-11-14",
+    "collection": "pending-document-references"
+   },
+   "alternatives": [],
+   "combines_with": [],
+   "how": "El agente convierte la idea y las referencias de producto en un brief; usa el proveedor conectado para producir y revisar la pieza.",
+   "install": "Añade el marketplace con los comandos documentados; instala el plugin y recarga Claude Code.",
+   "stack": "Plugin Claude Code; Markdown; conectores o API de medios",
+   "cases": [
+    "Preparar fotos de producto",
+    "Escribir un brief de UGC y anuncios"
+   ],
+   "choose_if": "ya usas Claude Code y buscas una guía de dirección de arte con proveedores conectables",
+   "avoid_if": "necesitas generación local documentada o un plugin nativo de Codex",
+   "limits": "No incluye créditos de imagen o video. El README conserva una nota de acceso privado que discrepa de la visibilidad pública verificada en GitHub."
+  },
+  "cybersecurity-skills": {
+   "name": "Cybersecurity Skills (comunidad)",
+   "cat": 16,
+   "sub": "skills",
+   "desc": "Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas autorizadas con Claude Code, Codex y otros agentes.",
+   "repo": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+   "homepage": null,
+   "license": "Apache-2.0",
+   "lang": "Python",
+   "updated": "2026-11-14",
+   "doc": "human/fichas/cybersecurity-skills.md",
+   "access": {
+    "api": "not_required",
+    "local_model": "not_applicable",
+    "claude_code": "host",
+    "codex": "host",
+    "cost": "host_plan",
+    "hardware": "ordinary",
+    "mode": "agent_extension",
+    "scope": "Instrucciones y ejemplos que se cargan en un agente compatible; no es un escáner autónomo ni un proyecto de Anthropic.",
+    "api_note": "La biblioteca de instrucciones no requiere una clave propia de IA; el modelo pertenece al agente que utilices.",
+    "subscription_note": "Claude Code y Codex CLI aparecen expresamente como clientes compatibles; se consume el acceso de tu agente.",
+    "local_note": "La biblioteca no sirve un modelo. El cliente y las herramientas de la skill elegida determinan la ejecución.",
+    "cost_note": "Código Apache-2.0; el agente, los laboratorios y servicios de cada skill pueden tener costes.",
+    "hardware_note": "Consulta las dependencias de una sola skill; algunos análisis necesitan herramientas o un laboratorio adicional.",
+    "checked_at": "2026-11-14",
+    "review": "documented",
+    "source_blob_sha": "4ffd7dae8a99566c23dc259725b280b34bc75d09",
+    "sources": [
+     "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/README.md"
+    ]
+   },
+   "getting_started": {
+    "kind": "skill",
+    "audience": "agent",
+    "prerequisites": [
+     "Agente compatible con skills",
+     "Un sistema propio o un laboratorio con permiso de pruebas"
+    ],
+    "steps": [
+     "Abre el catálogo y elige una skill para una necesidad concreta de defensa o análisis.",
+     "Revisa su SKILL.md, las herramientas y el alcance autorizado antes de instalarla.",
+     "Usa el instalador documentado, selecciona tu agente y realiza una prueba pequeña en un laboratorio."
+    ],
+    "command": "npx skills add mukul975/Anthropic-Cybersecurity-Skills",
+    "note": "Proyecto comunitario independiente, sin afiliación a Anthropic. No se ejecutaron las herramientas de seguridad.",
+    "source": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/README.md",
+    "checked_at": "2026-11-14",
+    "entry_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "command_status": "documented"
+   },
+   "first_step": "Abre el catálogo y elige una skill para una necesidad concreta de defensa o análisis.",
+   "sources": {
+    "readme_blob_sha": "4ffd7dae8a99566c23dc259725b280b34bc75d09",
+    "root_tree_sha": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+    "readme_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/README.md",
+    "github_checked": "2026-11-14",
+    "collection": "pending-document-references"
+   },
+   "alternatives": [],
+   "combines_with": [],
+   "how": "El agente consulta el procedimiento de la skill y utiliza las herramientas de análisis indicadas para el alcance que hayas definido.",
+   "install": "El README documenta npx skills add; selecciona el cliente y las skills que necesitas.",
+   "stack": "agentskills.io; Markdown; ejemplos y herramientas según la skill",
+   "cases": [
+    "Guiar un análisis defensivo",
+    "Organizar procedimientos de revisión en un laboratorio"
+   ],
+   "choose_if": "buscas procedimientos de seguridad para un agente compatible y puedes revisar su alcance y dependencias",
+   "avoid_if": "esperas una auditoría automática garantizada o una herramienta oficial de Anthropic",
+   "limits": "El nombre original incluye Anthropic, pero el autor declara expresamente que es independiente. Las pruebas activas requieren autorización."
+  },
+  "kimi-k2-7-code": {
+   "name": "Kimi K2.7 Code",
+   "cat": 24,
+   "sub": "modelos",
+   "desc": "Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face.",
+   "repo": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+   "homepage": "https://www.kimi.com/code",
+   "license": "Modified MIT; revisar condiciones",
+   "lang": "Pesos de modelo",
+   "updated": "2026-11-14",
+   "doc": "human/fichas/kimi-k2-7-code.md",
+   "access": {
+    "api": "optional",
+    "local_model": "supported",
+    "claude_code": "not_documented",
+    "codex": "not_documented",
+    "cost": "choice",
+    "hardware": "gpu",
+    "mode": "software",
+    "scope": "Pesos y guía de despliegue del modelo exacto K2.7 Code. El repositorio de pesos está en Hugging Face, no en un GitHub con ese nombre.",
+    "api_note": "La ficha oficial ofrece una API de Moonshot y alternativas de inferencia con pesos propios.",
+    "subscription_note": "La ficha no acredita ejecución con tu suscripción de Claude Code o Codex; usar esos agentes para instalarlo es otra decisión.",
+    "local_note": "Se documenta inferencia con vLLM, SGLang o KTransformers. Comprueba la variante y la guía antes de descargar.",
+    "cost_note": "API e infraestructura tienen costes según la ruta; disponer de pesos no equivale a cómputo gratuito.",
+    "hardware_note": "Modelo de gran tamaño: requiere preparación y hardware especializado; no se recomienda descargarlo sin revisar la guía.",
+    "checked_at": "2026-11-14",
+    "review": "documented",
+    "source_blob_sha": "0f67f24ac27696aca1033d9f73a9af6f9aec8d26",
+    "sources": [
+     "https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/README.md"
+    ]
+   },
+   "getting_started": {
+    "kind": "source",
+    "audience": "setup",
+    "prerequisites": [
+     "Elegir API o despliegue propio",
+     "Revisar licencia de pesos y requisitos del motor"
+    ],
+    "steps": [
+     "Abre la ficha oficial y decide si necesitas API o pesos para inferencia propia.",
+     "Si eliges despliegue propio, revisa docs/deploy_guidance.md antes de reservar equipo o descargar pesos.",
+     "Prueba una petición pequeña y comprueba consumo y respuesta antes de integrarlo en tu flujo."
+    ],
+    "command": "",
+    "note": "Es un repositorio oficial de modelo en Hugging Face. No se descargaron los pesos ni se probó su inferencia.",
+    "source": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/README.md",
+    "checked_at": "2026-11-14",
+    "entry_url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+    "command_status": "readme"
+   },
+   "first_step": "Abre la ficha oficial y decide si necesitas API o pesos para inferencia propia.",
+   "sources": {
+    "readme_blob_sha": "0f67f24ac27696aca1033d9f73a9af6f9aec8d26",
+    "model_revision": "74797c9c62378b951a1f6fcf5c4631024e9b8bef",
+    "readme_url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/README.md",
+    "model_checked": "2026-11-14",
+    "collection": "pending-document-references"
+   },
+   "alternatives": [],
+   "combines_with": [],
+   "how": "Un motor de inferencia carga los pesos; tu aplicación le envía solicitudes por su interfaz. Moonshot también ofrece acceso por API.",
+   "install": "Sigue la guía de despliegue enlazada desde la ficha oficial para el motor y el hardware elegidos.",
+   "stack": "Pesos del modelo; vLLM, SGLang o KTransformers",
+   "cases": [
+    "Evaluar un modelo para tareas de programación"
+   ],
+   "choose_if": "puedes evaluar una API o administrar inferencia de un modelo grande",
+   "avoid_if": "buscas un chat local sencillo para un portátil o acceso ya cubierto por tu plan de otro proveedor",
+   "limits": "La licencia de pesos y la infraestructura se revisan por separado. Kimi-K2 en GitHub es un proyecto relacionado de la familia, no la publicación exacta K2.7 Code."
   }
  },
  "meta": {
