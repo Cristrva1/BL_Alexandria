@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 164 | MIT | Shell | 2026-10-29 | 📦 Sí |
+| 168 | MIT | Shell | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
@@ -49,15 +49,15 @@ Instálalo como plugin de Claude Code o copia las skills siguiendo el README.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [remotion](remotion.md) | 72.2k | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
-| [Remotion Agent Skills](skills-remotion.md) | 6.8k | Skills oficiales de Remotion para que tu agente de código cree videos con React. |
+| [remotion](remotion.md) | 73.2k | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
+| [Remotion Agent Skills](skills-remotion.md) | 7.1k | Skills oficiales de Remotion para que tu agente de código cree videos con React. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [OpenMontage](openmontage.md) | — | Convierte tu agente de código en un estudio de producción de video completo. |
-| [video-use](video-use.md) | 30.8k | Herramienta para editar videos con agentes de código como Claude Code, de los creadores de browser-use. |
+| [OpenMontage](openmontage.md) | 80.5k | Convierte tu agente de código en un estudio de producción de video completo. |
+| [video-use](video-use.md) | 31.1k | Herramienta para editar videos con agentes de código como Claude Code, de los creadores de browser-use. |
 
 ## Enlaces
 
@@ -66,4 +66,4 @@ Instálalo como plugin de Claude Code o copia las skills siguiendo el README.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 53.4k | AGPL-3.0 | TypeScript | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 53.5k | AGPL-3.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
@@ -57,8 +57,8 @@ Descarga el instalador desde los releases.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Jan](jan.md) | 45.6k | App de escritorio open source, alternativa a ChatGPT que corre 100 % sin conexión. |
-| [LobeHub](lobehub.md) | 84.7k | Espacio de trabajo con super-agentes y una interfaz de chat moderna, multi-proveedor y extensible. |
+| [Jan](jan.md) | 45.7k | App de escritorio open source, alternativa a ChatGPT que corre 100 % sin conexión. |
+| [LobeHub](lobehub.md) | 85.5k | Espacio de trabajo con super-agentes y una interfaz de chat moderna, multi-proveedor y extensible. |
 
 ## Enlaces
 
@@ -67,4 +67,4 @@ Descarga el instalador desde los releases.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

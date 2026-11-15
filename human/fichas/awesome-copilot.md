@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 41k | MIT | JavaScript | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 41.2k | MIT | JavaScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
@@ -51,9 +51,9 @@ Cada recurso es un archivo Markdown con frontmatter (agentes, instrucciones con 
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [GitHub MCP Server](github-mcp-server.md) | 34.4k | Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código. |
-| [Spec Kit](spec-kit.md) | 149k | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. |
-| [GitHub CLI](cli.md) | 46.9k | CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la terminal. |
+| [GitHub MCP Server](github-mcp-server.md) | 34.5k | Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código. |
+| [Spec Kit](spec-kit.md) | 150k | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. |
+| [GitHub CLI](cli.md) | 47k | CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la terminal. |
 
 ## Enlaces
 
@@ -62,4 +62,4 @@ Cada recurso es un archivo Markdown con frontmatter (agentes, instrucciones con 
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

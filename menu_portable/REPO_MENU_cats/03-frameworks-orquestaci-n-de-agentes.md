@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `adk-python`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=['google', 'openai', 'anthropic']
+role=library · exec=hybrid · setup=easy · mcp=False · prov=google,openai,anthropic · tags=agents,python
 
 **Qué es:** Define agentes y sistemas multiagente con herramientas, memoria y evaluación, con interfaz web de pruebas incluida. Se despliega fácil en Google Cloud.
 **Stack:** Python
@@ -19,7 +19,7 @@ _Nombre PyPI puede diferir de 'Agent Development Kit (ADK)'; verifica en pypi.or
 **Alternativas (elige una):** `langgraph`, `openai-agents-python`
 
 ## `ag2`
-role=library · exec=cloud · setup=medium · mcp=False · prov=—
+role=library · exec=cloud · setup=medium · mcp=False · prov=— · tags=automation,agents,python
 
 **Qué es:** Modela conversaciones entre varios agentes que se delegan tareas hasta resolver un objetivo.
 **Stack:** Python
@@ -33,8 +33,22 @@ _Nombre PyPI puede diferir de 'ag2'; verifica en pypi.org._
 **Combina con:** `langchain`, `langfuse`
 **Alternativas (elige una):** `autogen`
 
+## `agent-desktop`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=infra,accessibility,accessibility-api,ai-agents,automation,cli,computer-use,computer-use-agent
+
+**Qué es:** CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio. Expone elementos de la interfaz como referencias sobre las que el agente puede actuar y comprobar resultados.
+**Stack:** Rust, Cargo
+**Repo:** https://github.com/vercel-labs/agent-desktop
+
+**Instalación** [?]: `git clone https://github.com/vercel-labs/agent-desktop (verificar README para build/run)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** necesitas automatizar aplicaciones nativas desde un agente
+**Evita si:** un flujo determinista resuelve el problema sin un agente
+**Combina con:** `codex`
+
 ## `agent-framework`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic']
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic · tags=agents,python
 
 **Qué es:** Une la simplicidad de AutoGen con las capacidades empresariales de Semantic Kernel: workflows con estado, observabilidad y despliegue en Azure.
 **Stack:** Python, C#, .NET
@@ -48,7 +62,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `autogen`, `semantic-kernel`
 
 ## `agent-protocol`
-role=directory · exec=local · setup=easy · mcp=False · prov=—
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=agents,python
 
 **Qué es:** Define cómo se ejecuta un agente, cómo recibe entradas y cómo guarda su estado, sin atarse a un framework. Es una especificación, no un runtime.
 **Stack:** OpenAPI, Python
@@ -62,7 +76,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `langgraph`
 
 ## `agno`
-role=runtime · exec=hybrid · setup=easy · mcp=False · prov=['openai', 'anthropic', 'google', 'local']
+role=runtime · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,google,local · tags=agents,memory,python
 
 **Qué es:** Construye agentes con memoria, RAG y herramientas, y sírvelos como API con su plataforma. Antes se llamaba Phidata.
 **Stack:** Python, FastAPI
@@ -77,7 +91,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `crewai`
 
 ## `aider`
-role=runtime · exec=hybrid · setup=easy · mcp=False · prov=['openai', 'anthropic', 'local']
+role=runtime · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,local · tags=coding-agent,python
 
 **Qué es:** Le pides cambios en lenguaje natural y Aider edita los archivos y confirma cada cambio en Git. Funciona con casi cualquier modelo.
 **Stack:** Python, tree-sitter, Git
@@ -92,7 +106,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `opencode`, `cline`, `continue`
 
 ## `autogen`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic', 'local']
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=agents,python
 
 **Qué es:** Popularizó los sistemas multiagente que conversan para resolver tareas. Microsoft recomienda usar Agent Framework para proyectos nuevos.
 **Stack:** Python, .NET
@@ -107,7 +121,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `agent-framework`, `ag2`, `crewai`
 
 ## `autogpt`
-role=platform · exec=hybrid · setup=heavy · mcp=False · prov=['openai', 'anthropic']
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=openai,anthropic · tags=agents,automation,python
 
 **Qué es:** El famoso proyecto de agentes autónomos evolucionó a una plataforma con editor de bloques, marketplace y servidor para agentes que corren en segundo plano.
 **Stack:** Python, TypeScript, Next.js, Docker
@@ -122,7 +136,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `sim`, `langflow`, `flowise`
 
 ## `autoresearch`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=research,agents,python
 
 **Qué es:** Proyecto pequeño y exploratorio de Karpathy, más que una herramienta pulida.
 **Stack:** Python
@@ -136,7 +150,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `gpt-researcher`, `crawl4ai`
 
 ## `awesome-langgraph`
-role=directory · exec=cloud · setup=easy · mcp=False · prov=—
+role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=automation,agents,javascript
 
 **Qué es:** Es una lista curada, no una herramienta ejecutable.
 **Stack:** Markdown / Python-JS (LangGraph)
@@ -150,7 +164,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `langchain`
 
 ## `claude-code`
-role=runtime · exec=cloud · setup=easy · mcp=True · prov=['anthropic', 'mcp']
+role=runtime · exec=cloud · setup=easy · mcp=True · prov=anthropic,mcp · tags=coding-agent,agents,mcp,typescript
 
 **Qué es:** Lee y edita archivos, ejecuta comandos, hace commits y abre PRs a partir de instrucciones en lenguaje natural. Se extiende con skills, plugins, subagentes, hooks y servidores MCP.
 **Stack:** TypeScript, Node.js
@@ -165,7 +179,7 @@ _Servicio gestionado; no se clona._
 **Alternativas (elige una):** `codex`, `gemini-cli`, `opencode`, `goose`
 
 ## `cline`
-role=runtime · exec=hybrid · setup=easy · mcp=True · prov=['openai', 'anthropic', 'google', 'local']
+role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=coding-agent,agents,typescript
 
 **Qué es:** Planifica, edita archivos, ejecuta comandos y usa el navegador pidiendo aprobación en cada paso. Admite MCP y casi cualquier proveedor.
 **Stack:** TypeScript, VS Code API
@@ -180,7 +194,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `continue`, `aider`
 
 ## `codex`
-role=runtime · exec=cloud · setup=easy · mcp=True · prov=['openai', 'mcp']
+role=runtime · exec=cloud · setup=easy · mcp=True · prov=openai,mcp · tags=coding-agent,agents,rust
 
 **Qué es:** Lee tu repositorio, propone y aplica cambios y ejecuta comandos dentro de un sandbox. Usa AGENTS.md para el contexto del proyecto y admite MCP.
 **Stack:** Rust, TypeScript
@@ -194,8 +208,21 @@ _Servicio gestionado; no se clona._
 **Combina con:** `agent-skills`, `spec-kit`, `context7`
 **Alternativas (elige una):** `claude-code`, `gemini-cli`, `opencode`
 
+## `codex-chatgpt-web`
+role=app · exec=cloud · setup=medium · mcp=True · prov=— · tags=infra,chatgpt,chatgpt-pro,codex,free-ai,mcp,openai,playwright
+
+**Qué es:** Integración de terceros que conecta una sesión de ChatGPT Web con el selector de modelos y herramientas de Codex. Un launcher usa la sesión de la cuenta y enlaza herramientas mediante MCP para conservar el contexto de la tarea.
+**Stack:** TypeScript, Node.js
+**Repo:** https://github.com/miuuyy/codex-chatgpt-web
+
+**Instalación** [+]: `Crear cuenta / API key en el proveedor (no self-host).`
+_Servicio gestionado; no se clona._
+
+**Elige si:** quieres estudiar una integración entre ChatGPT Web y Codex
+**Evita si:** un flujo determinista resuelve el problema sin un agente
+
 ## `composio`
-role=platform · exec=cloud · setup=easy · mcp=True · prov=['openai', 'anthropic', 'mcp']
+role=platform · exec=cloud · setup=easy · mcp=True · prov=openai,anthropic,mcp · tags=agents,mcp,automation,typescript
 
 **Qué es:** Da a cualquier agente herramientas listas para Gmail, Slack, GitHub, Notion y cientos más, gestionando OAuth por ti. Funciona con los principales frameworks y por MCP.
 **Stack:** TypeScript, Python
@@ -209,7 +236,7 @@ _Servicio gestionado; no se clona._
 **Combina con:** `langgraph`, `openai-agents-python`, `mastra`
 
 ## `computer-use-preview`
-role=runtime · exec=cloud · setup=medium · mcp=False · prov=['google']
+role=runtime · exec=cloud · setup=medium · mcp=False · prov=google · tags=browser,agents,python
 
 **Qué es:** Muestra cómo un modelo Gemini con computer use controla un navegador para completar tareas. Es una vista previa, no un agente de propósito general.
 **Stack:** Python, Playwright
@@ -224,7 +251,7 @@ _Servicio gestionado; no se clona._
 **Alternativas (elige una):** `browser-use`, `skyvern`
 
 ## `continue`
-role=runtime · exec=hybrid · setup=easy · mcp=False · prov=['openai', 'anthropic', 'local']
+role=runtime · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,local · tags=coding-agent,typescript
 
 **Qué es:** Integra chat, edición y autocompletado en el IDE con cualquier modelo, y permite ejecutar comprobaciones de IA en los PRs.
 **Stack:** TypeScript, Kotlin
@@ -239,7 +266,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `cline`, `aider`
 
 ## `crewai`
-role=library · exec=cloud · setup=easy · mcp=False · prov=—
+role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=automation,agents,python
 
 **Qué es:** Cada agente recibe un rol y objetivo, y el equipo coopera o se reparte el trabajo de forma secuencial o jerárquica.
 **Stack:** Python
@@ -251,10 +278,10 @@ _Nombre PyPI puede diferir de 'crewAI'; verifica en pypi.org._
 **Elige si:** quieres velocidad y un modelo mental simple de "equipo"
 **Evita si:** necesitas control de bajo nivel o orquestación muy custom
 **Combina con:** `langchain`, `mem0`
-**Alternativas (elige una):** `autogen`, `langgraph`, `agno`
+**Alternativas (elige una):** `autogen`, `langgraph`, `agno`, `metagpt`
 
 ## `deepagents`
-role=runtime · exec=hybrid · setup=easy · mcp=False · prov=['anthropic', 'openai']
+role=runtime · exec=hybrid · setup=easy · mcp=False · prov=anthropic,openai · tags=agents,python
 
 **Qué es:** Da a cualquier modelo las capacidades de los agentes profundos (planificar, delegar, usar archivos) sin construirlas tú. Cada pieza se puede extender o reemplazar.
 **Stack:** Python, LangGraph
@@ -269,7 +296,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `openai-agents-python`
 
 ## `deeptutor`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'local']
+role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,local · tags=learning,agents,rag,python
 
 **Qué es:** Resuelve dudas, genera ejercicios y guía el estudio con RAG sobre tu material y memoria del alumno. Es un producto educativo, no un orquestador genérico.
 **Stack:** Python, Next.js
@@ -284,7 +311,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `open-notebook`
 
 ## `deer-flow`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,research,python,docker
 
 **Qué es:** Coordina tareas complejas delegando en agentes especializados.
 **Stack:** Python/TS, LangChain, Docker
@@ -298,7 +325,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `gpt-researcher`, `firecrawl`
 
 ## `dify`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,agents,python,docker
 
 **Qué es:** Combina orquestación de prompts, RAG, agentes, workflows y observabilidad en un mismo producto autoalojable.
 **Stack:** Python/TS, React, PostgreSQL, Redis, Docker
@@ -313,7 +340,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `sim`, `ragflow`
 
 ## `dspy`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic', 'local']
+role=library · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=prompts,evaluation,python
 
 **Qué es:** Defines módulos con firmas de entrada y salida y DSPy optimiza automáticamente los prompts y ejemplos con tus métricas. Útil para pipelines que deben mejorar con datos.
 **Stack:** Python
@@ -328,7 +355,7 @@ _Nombre PyPI puede diferir de 'DSPy'; verifica en pypi.org._
 **Alternativas (elige una):** `promptfoo`
 
 ## `e2b`
-role=platform · exec=cloud · setup=easy · mcp=False · prov=—
+role=platform · exec=cloud · setup=easy · mcp=False · prov=— · tags=agents,security,python
 
 **Qué es:** Arranca microVMs aisladas en milisegundos donde el agente puede ejecutar código, instalar paquetes o usar un escritorio. Muy usado para intérpretes de código y agentes de datos.
 **Stack:** Python, TypeScript, Firecracker
@@ -343,7 +370,7 @@ _Servicio gestionado; no se clona._
 **Alternativas (elige una):** `sandbox`
 
 ## `flowise`
-role=app · exec=hybrid · setup=easy · mcp=False · prov=—
+role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=automation,agents,typescript,docker
 
 **Qué es:** Permite montar chatflows y agentes conectando nodos y exponerlos como API o widget embebible.
 **Stack:** Node.js/TypeScript, React
@@ -358,7 +385,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `sim`, `autogpt`
 
 ## `gemini-cli`
-role=runtime · exec=cloud · setup=easy · mcp=True · prov=['google', 'mcp']
+role=runtime · exec=cloud · setup=easy · mcp=True · prov=google,mcp · tags=coding-agent,agents,typescript
 
 **Qué es:** Programa, investiga y automatiza tareas desde la terminal con contexto de millones de tokens y búsqueda de Google integrada. Admite MCP y extensiones.
 **Stack:** TypeScript, Node.js
@@ -373,7 +400,7 @@ _Servicio gestionado; no se clona._
 **Alternativas (elige una):** `claude-code`, `codex`, `opencode`
 
 ## `goose`
-role=runtime · exec=hybrid · setup=easy · mcp=True · prov=['openai', 'anthropic', 'google', 'local']
+role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=coding-agent,agents,mcp,rust
 
 **Qué es:** Funciona como app de escritorio o CLI y va más allá del código: automatiza tareas de desarrollo y de sistema con extensiones MCP. Nacido en Block.
 **Stack:** Rust, TypeScript, Electron
@@ -388,7 +415,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `opencode`, `claude-code`, `open-interpreter`
 
 ## `gpt-researcher`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,research,python,docker
 
 **Qué es:** Planifica sub-preguntas, busca fuentes y redacta un informe con referencias.
 **Stack:** Python, Next.js, FastAPI
@@ -400,10 +427,10 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Elige si:** necesitas research profundo citado
 **Evita si:** solo quieres una respuesta corta o un chat simple
 **Combina con:** `firecrawl`, `browser-use`
-**Alternativas (elige una):** `storm`, `vane`
+**Alternativas (elige una):** `storm`, `vane`, `open-deep-research`
 
 ## `haystack`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic', 'local']
+role=library · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=rag,agents,python
 
 **Qué es:** Compone pipelines modulares de recuperación, generación y agentes con componentes intercambiables. Muy usado en búsqueda empresarial.
 **Stack:** Python
@@ -418,7 +445,7 @@ _Nombre PyPI puede diferir de 'Haystack'; verifica en pypi.org._
 **Alternativas (elige una):** `llama-index`, `langchain`
 
 ## `hermes-agent`
-role=app · exec=local · setup=medium · mcp=False · prov=—
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=agents,python
 
 **Qué es:** Ofrece un panel de control de escritorio para delegar tareas a agentes que corren en una sandbox local.
 **Stack:** Rust (Tauri), TypeScript, Python
@@ -432,8 +459,22 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `ecc`, `odysseus`
 **Alternativas (elige una):** `openclaw`, `mercury-agent`
 
+## `hermes-agent-self-evolution`
+role=library · exec=cloud · setup=medium · mcp=False · prov=— · tags=experimentos,python
+
+**Qué es:** Herramientas para optimizar skills, prompts y código de Hermes Agent mediante búsqueda evolutiva con DSPy y GEPA. Evalúa variantes de texto, analiza trazas y selecciona mejoras sin reentrenar pesos de un modelo.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/NousResearch/hermes-agent-self-evolution
+
+**Instalación** [~]: `pip install hermes-agent-self-evolution   (o: uv add hermes-agent-self-evolution)`
+_Nombre PyPI puede diferir de 'hermes-agent-self-evolution'; verifica en pypi.org._
+
+**Elige si:** quieres experimentar con mejoras de Hermes medidas sobre un conjunto de evaluación
+**Evita si:** un flujo determinista resuelve el problema sin un agente
+**Combina con:** `hermes-agent`
+
 ## `langchain`
-role=library · exec=cloud · setup=medium · mcp=False · prov=—
+role=library · exec=cloud · setup=medium · mcp=False · prov=— · tags=agents,automation,python
 
 **Qué es:** Ofrece abstracciones y conectores para casi cualquier modelo, base de datos vectorial y fuente de datos.
 **Stack:** Python/JS/TS
@@ -447,8 +488,21 @@ _Nombre PyPI puede diferir de 'langchain'; verifica en pypi.org._
 **Combina con:** `langflow`, `langfuse`, `litellm`
 **Alternativas (elige una):** `llama-index`, `haystack`, `semantic-kernel`
 
+## `langchain4j`
+role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=ts,anthropic,chatgpt,chroma,embeddings,gemini,gpt,huggingface
+
+**Qué es:** Biblioteca de Java para integrar LLM, herramientas, agentes, RAG y almacenes vectoriales en aplicaciones de la JVM. Ofrece interfaces comunes para proveedores y conectores y se integra con frameworks de Java.
+**Stack:** Java
+**Repo:** https://github.com/langchain4j/langchain4j
+
+**Instalación** [?]: `git clone https://github.com/langchain4j/langchain4j (verificar README para install)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** tu aplicación usa Java y necesita integrar modelos o recuperación de documentos
+**Evita si:** un flujo determinista resuelve el problema sin un agente
+
 ## `langflow`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=—
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,agents,python,docker
 
 **Qué es:** Permite arrastrar y conectar componentes en un lienzo y exportarlos como API o código Python.
 **Stack:** Python, React, Docker
@@ -463,7 +517,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `sim`, `autogpt`
 
 ## `langgraph`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic', 'google', 'local']
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google,local · tags=agents,python
 
 **Qué es:** Modela agentes y flujos multiagente como grafos de nodos con estado compartido y checkpoints. Pensado para agentes de producción que deben ser controlables y recuperables.
 **Stack:** Python, LangChain
@@ -478,7 +532,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `crewai`, `openai-agents-python`, `pydantic-ai`, `langgraph-supervisor-py`, `adk-python`
 
 ## `langgraph-supervisor-py`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=—
+role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=agents,python
 
 **Qué es:** Facilitaba el patrón supervisor en sistemas multiagente. LangChain ahora recomienda implementar ese patrón directamente con herramientas.
 **Stack:** Python, LangGraph
@@ -492,7 +546,7 @@ _Nombre PyPI puede diferir de 'LangGraph Supervisor'; verifica en pypi.org._
 **Alternativas (elige una):** `langgraph`
 
 ## `langgraphjs`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,typescript
 
 **Qué es:** Lleva el modelo de grafos con estado, checkpoints y human-in-the-loop de LangGraph al ecosistema JavaScript.
 **Stack:** TypeScript, Node.js
@@ -507,7 +561,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `mastra`, `vercel-ai`
 
 ## `llama-index`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=['openai', 'anthropic', 'local']
+role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,local · tags=rag,agents,python
 
 **Qué es:** Ofrece cargadores para cientos de fuentes, índices, motores de consulta y agentes centrados en documentos. Su plataforma LlamaParse procesa PDFs complejos.
 **Stack:** Python, TypeScript
@@ -522,7 +576,7 @@ _Nombre PyPI puede diferir de 'LlamaIndex'; verifica en pypi.org._
 **Alternativas (elige una):** `haystack`, `langchain`
 
 ## `llm-council`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,python
 
 **Qué es:** Cada modelo aporta una respuesta y luego se contrastan para llegar a un consenso.
 **Stack:** Python, React, FastAPI, PostgreSQL
@@ -535,8 +589,22 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Evita si:** te basta un único LLM o el coste multi-modelo no es asumible
 **Combina con:** `litellm`
 
+## `local-deep-research`
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=research,academia,anthropic,arxiv,brave,deep-research,encryption,home-automation
+
+**Qué es:** Agente de investigación que combina buscadores, documentos y modelos locales o remotos para elaborar informes con fuentes. Itera entre preguntas, búsquedas y síntesis y permite configurar motores de búsqueda y proveedores de modelos.
+**Stack:** Python, Docker, pyproject.toml, Node.js
+**Repo:** https://github.com/LearningCircuit/local-deep-research
+
+**Instalación** [~]: `git clone https://github.com/LearningCircuit/local-deep-research && cd local-deep-research && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** quieres investigar con un modelo local y conservar las fuentes consultadas
+**Evita si:** un flujo determinista resuelve el problema sin un agente
+**Alternativas (elige una):** `open-deep-research`
+
 ## `mastra`
-role=library · exec=hybrid · setup=easy · mcp=True · prov=['openai', 'anthropic', 'google', 'local']
+role=library · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=agents,rag,typescript
 
 **Qué es:** Reúne en un solo paquete agentes con memoria, workflows con estado, RAG, evals y un playground local. Pensado para equipos web que trabajan en TypeScript.
 **Stack:** TypeScript, Node.js
@@ -551,7 +619,7 @@ _Nombre npm puede diferir de 'Mastra'; verifica en npmjs.com._
 **Alternativas (elige una):** `langgraphjs`, `vercel-ai`
 
 ## `mercury-agent`
-role=app · exec=hybrid · setup=easy · mcp=False · prov=—
+role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=agents,chatbot,typescript
 
 **Qué es:** Recuerda lo importante, pide permiso antes de actuar y trae 31 herramientas, tableros kanban y skills extensibles, con datos en SQLite.
 **Stack:** TypeScript, SQLite
@@ -565,8 +633,35 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `claude-mem`
 **Alternativas (elige una):** `openclaw`, `hermes-agent`
 
+## `metagpt`
+role=runtime · exec=cloud · setup=medium · mcp=False · prov=— · tags=py,agent,gpt,llm,metagpt,multi-agent,python
+
+**Qué es:** Framework de agentes que representa roles de un equipo de software para coordinar tareas de desarrollo. Asigna responsabilidades y artefactos a agentes que colaboran sobre un encargo.
+**Stack:** Python, Docker
+**Repo:** https://github.com/FoundationAgents/MetaGPT
+
+**Instalación** [+]: `Crear cuenta / API key en el proveedor (no self-host).`
+_Servicio gestionado; no se clona._
+
+**Elige si:** quieres estudiar un flujo multiagente basado en roles de desarrollo
+**Evita si:** un flujo determinista resuelve el problema sin un agente
+**Alternativas (elige una):** `crewai`
+
+## `mimo-code`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=coding,ai,ai-agents,cli,mimo,mimo-code,typescript
+
+**Qué es:** Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. Mantiene el contexto del proyecto y usa herramientas para ejecutar tareas de desarrollo desde una conversación.
+**Stack:** TypeScript, Node.js
+**Repo:** https://github.com/XiaomiMiMo/MiMo-Code
+
+**Instalación** [~]: `git clone https://github.com/XiaomiMiMo/MiMo-Code && cd MiMo-Code && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+
+**Elige si:** quieres evaluar el agente de código del ecosistema Xiaomi MiMo
+**Evita si:** un flujo determinista resuelve el problema sin un agente
+
 ## `mirofish`
-role=platform · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=agents,python
 
 **Qué es:** Permite simular dinámicas sociales en un "sandbox". Proyecto de nicho.
 **Stack:** Python/web, Docker, PostgreSQL
@@ -580,7 +675,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `openevolve`
 
 ## `multica`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,go
 
 **Qué es:** Integra colaboradores humanos y agentes en un mismo espacio de trabajo. Proyecto de nicho.
 **Stack:** web/TS, Docker, PostgreSQL
@@ -594,7 +689,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `ruflo`, `chatwoot`
 
 ## `nemo-agent-toolkit`
-role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=library · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=automation,agents,python
 
 **Qué es:** Aporta componentes para conectar, evaluar y desplegar agentes en infraestructura empresarial.
 **Stack:** Python, FastAPI (Apache-2.0)
@@ -608,7 +703,7 @@ _Nombre PyPI puede diferir de 'NeMo-Agent-Toolkit'; verifica en pypi.org._
 **Combina con:** `langchain`
 
 ## `nemoclaw`
-role=platform · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=agents,security,typescript
 
 **Qué es:** Ejecuta agentes populares dentro de los sandboxes de NVIDIA OpenShell con inferencia gestionada y políticas de seguridad. Pensado para empresas.
 **Stack:** TypeScript, contenedores
@@ -622,8 +717,36 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `openclaw`, `hermes-agent`, `nemotron`
 **Alternativas (elige una):** `sandbox`
 
+## `nodeterm`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=infra,adhd,agent-orchestration,ai-agents,canvas,claude-code,codex,coding-agents
+
+**Qué es:** Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto. Mantiene terminales reales en nodos movibles y muestra sesiones de trabajo en un tablero.
+**Stack:** TypeScript, Docker, Node.js
+**Repo:** https://github.com/eneskirca/nodeterm
+
+**Instalación** [~]: `git clone https://github.com/eneskirca/nodeterm && cd nodeterm && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** gestionas muchas terminales o sesiones de agentes y prefieres una organización visual
+**Evita si:** un flujo determinista resuelve el problema sin un agente
+
+## `open-deep-research`
+role=runtime · exec=hybrid · setup=medium · mcp=True · prov=— · tags=research,python
+
+**Qué es:** Agente abierto de LangChain para investigación profunda configurable con distintos modelos, buscadores y servidores MCP. Organiza ciclos de planificación, búsqueda y síntesis mediante un grafo de investigación.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/langchain-ai/open_deep_research
+
+**Instalación** [~]: `git clone https://github.com/langchain-ai/open_deep_research && cd open_deep_research && (uv sync || pip install -r requirements.txt)`
+_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+
+**Elige si:** quieres adaptar un agente de investigación construido con LangGraph
+**Evita si:** un flujo determinista resuelve el problema sin un agente
+**Combina con:** `langfuse`
+**Alternativas (elige una):** `local-deep-research`, `gpt-researcher`
+
 ## `open-interpreter`
-role=runtime · exec=local · setup=easy · mcp=False · prov=['openai', 'local']
+role=runtime · exec=local · setup=easy · mcp=False · prov=openai,local · tags=coding-agent,local,rust
 
 **Qué es:** Ejecuta código y comandos en tu máquina para cumplir tareas descritas en lenguaje natural. Su versión actual se enfoca en modelos abiertos.
 **Stack:** Rust, Python
@@ -638,7 +761,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `goose`
 
 ## `open-swe`
-role=runtime · exec=cloud · setup=medium · mcp=False · prov=['anthropic', 'openai']
+role=runtime · exec=cloud · setup=medium · mcp=False · prov=anthropic,openai · tags=coding-agent,agents,python
 
 **Qué es:** Trabaja en segundo plano a partir de issues o mensajes, planifica, programa en un sandbox y abre PRs. Inspirado en los agentes internos de empresas como Stripe o Ramp.
 **Stack:** Python, LangGraph, TypeScript
@@ -653,7 +776,7 @@ _Servicio gestionado; no se clona._
 **Alternativas (elige una):** `openhands`, `swe-agent`
 
 ## `openai-agents-python`
-role=library · exec=hybrid · setup=easy · mcp=True · prov=['openai']
+role=library · exec=hybrid · setup=easy · mcp=True · prov=openai · tags=agents,python
 
 **Qué es:** Define agentes con instrucciones y herramientas, pasa el control entre ellos y añade validaciones. Funciona con modelos de OpenAI y otros compatibles.
 **Stack:** Python
@@ -667,8 +790,21 @@ _Nombre PyPI puede diferir de 'OpenAI Agents SDK'; verifica en pypi.org._
 **Combina con:** `openai-python`, `fastmcp`
 **Alternativas (elige una):** `pydantic-ai`, `langgraph`, `smolagents`, `deepagents`, `adk-python`
 
+## `openclaude`
+role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=coding,ai,ai-agent,ai-tools,cli,typescript
+
+**Qué es:** Agente de código abierto para terminal que conecta proveedores remotos y modelos locales con herramientas y MCP. Mantiene una conversación de desarrollo con streaming, comandos y herramientas sobre el workspace.
+**Stack:** TypeScript, Docker, Node.js
+**Repo:** https://github.com/Twigpine/openclaude
+
+**Instalación** [~]: `git clone https://github.com/Twigpine/openclaude && cd openclaude && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** quieres evaluar un agente de terminal compatible con varios backends
+**Evita si:** un flujo determinista resuelve el problema sin un agente
+
 ## `openclaw`
-role=app · exec=hybrid · setup=medium · mcp=True · prov=['anthropic', 'openai', 'local']
+role=app · exec=hybrid · setup=medium · mcp=True · prov=anthropic,openai,local · tags=agents,chatbot,typescript
 
 **Qué es:** Un solo operador, muchas superficies: el asistente vive en tu equipo, tiene memoria, ejecuta tareas reales y responde por los canales que ya usas. Es uno de los proyectos de IA más populares de GitHub.
 **Stack:** TypeScript, Node.js
@@ -683,7 +819,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `hermes-agent`, `mercury-agent`
 
 ## `opencode`
-role=runtime · exec=hybrid · setup=easy · mcp=True · prov=['openai', 'anthropic', 'google', 'local']
+role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=coding-agent,agents,typescript
 
 **Qué es:** Ofrece una TUI cuidada, modo cliente-servidor, LSP y agentes configurables. Sirve si quieres un agente libre de proveedor.
 **Stack:** TypeScript, Go, Bun
@@ -697,8 +833,34 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `ollama`, `litellm`, `awesome-agent-skills`
 **Alternativas (elige una):** `claude-code`, `codex`, `goose`, `gemini-cli`, `aider`
 
+## `opencode-legacy`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=coding,ai,claude,code,llm,openai,go
+
+**Qué es:** Agente de código en Go del antiguo proyecto opencode-ai, archivado y continuado bajo el nombre Crush. Conserva una interfaz de terminal y el historial del agente original para consulta.
+**Stack:** Go, Go modules
+**Repo:** https://github.com/opencode-ai/opencode
+
+**Instalación** [?]: `git clone https://github.com/opencode-ai/opencode (verificar README para build/run)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** necesitas estudiar la implementación histórica de OpenCode en Go
+**Evita si:** un flujo determinista resuelve el problema sin un agente
+
+## `opencursor`
+role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=coding,agent,ai,code,coder,cursor,extension,ide
+
+**Qué es:** Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos. Integra conversación y acciones sobre el workspace con proveedores remotos o locales y herramientas MCP.
+**Stack:** TypeScript, Node.js
+**Repo:** https://github.com/PawanOsman/OpenCursor
+
+**Instalación** [~]: `git clone https://github.com/PawanOsman/OpenCursor && cd OpenCursor && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+
+**Elige si:** quieres evaluar un agente de código integrado en VS Code
+**Evita si:** un flujo determinista resuelve el problema sin un agente
+
 ## `openevolve`
-role=runtime · exec=cloud · setup=heavy · mcp=False · prov=—
+role=runtime · exec=cloud · setup=heavy · mcp=False · prov=— · tags=automation,agents,python
 
 **Qué es:** Genera, evalúa y muta candidatos de código a lo largo de múltiples generaciones.
 **Stack:** Python, PyTorch/numpy, Rust
@@ -712,7 +874,7 @@ _Servicio gestionado; no se clona._
 **Combina con:** `llm-council`
 
 ## `openhands`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,automation,typescript,docker
 
 **Qué es:** El agente puede leer y editar código, correr comandos y navegar la web dentro de un sandbox.
 **Stack:** Python/TS, Docker
@@ -726,8 +888,21 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `ecc`, `sandbox`
 **Alternativas (elige una):** `open-swe`, `swe-agent`
 
+## `paperclip`
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=asistentes,acpx,agent-orchestration,agent-skills,agentic-ai,ai-agents,ai-engineering,ai-governance
+
+**Qué es:** Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. Conecta distintos runtimes y coordina sus encargos y costes desde una aplicación central.
+**Stack:** TypeScript, Docker, Node.js
+**Repo:** https://github.com/paperclipai/paperclip
+
+**Instalación** [~]: `git clone https://github.com/paperclipai/paperclip && cd paperclip && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** necesitas coordinar varios agentes y seguir su trabajo en un panel
+**Evita si:** un flujo determinista resuelve el problema sin un agente
+
 ## `pydantic-ai`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=['openai', 'anthropic', 'google', 'local']
+role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,google,local · tags=agents,python
 
 **Qué es:** Construye agentes con salidas validadas, herramientas tipadas e inyección de dependencias, al estilo FastAPI. Incluye evaluación y observabilidad con Logfire.
 **Stack:** Python, Pydantic
@@ -742,7 +917,7 @@ _Nombre PyPI puede diferir de 'Pydantic AI'; verifica en pypi.org._
 **Alternativas (elige una):** `openai-agents-python`, `smolagents`, `langgraph`
 
 ## `ruflo`
-role=platform · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=automation,agents,typescript
 
 **Qué es:** Orquesta swarms de agentes especializados a escala.
 **Stack:** Rust
@@ -756,7 +931,7 @@ _Stack no claro; revisa el README tras clonar._
 **Combina con:** `mem0`, `ecc`
 
 ## `sandbox`
-role=platform · exec=hybrid · setup=medium · mcp=True · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=True · prov=— · tags=agents,automation,python,docker
 
 **Qué es:** Resuelve el riesgo de dejar que un agente toque tu host: todo corre contenido en un contenedor reproducible.
 **Stack:** Docker, web, MCP
@@ -771,7 +946,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `nemoclaw`, `e2b`
 
 ## `semantic-kernel`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=['openai']
+role=library · exec=hybrid · setup=medium · mcp=False · prov=openai · tags=agents,python
 
 **Qué es:** Pensado para empresas que ya usan .NET o Java y quieren añadir IA con patrones conocidos. Su evolución para agentes es Microsoft Agent Framework.
 **Stack:** C#, Python, Java
@@ -785,7 +960,7 @@ _Nombre PyPI puede diferir de 'Semantic Kernel'; verifica en pypi.org._
 **Alternativas (elige una):** `agent-framework`, `langchain`
 
 ## `sim`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic', 'local']
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=agents,automation,typescript
 
 **Qué es:** Diseña agentes conectando bloques en un canvas, prueba en vivo y despliega como API o chat. Open source y auto-hospedable.
 **Stack:** TypeScript, Next.js, PostgreSQL
@@ -800,7 +975,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `flowise`, `langflow`, `dify`, `autogpt`
 
 ## `smolagents`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=['openai', 'local']
+role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,local · tags=agents,python
 
 **Qué es:** Sus agentes expresan las acciones como código en vez de JSON, lo que reduce pasos y errores. El núcleo cabe en unas mil líneas.
 **Stack:** Python
@@ -814,8 +989,22 @@ _Nombre PyPI puede diferir de 'smolagents'; verifica en pypi.org._
 **Combina con:** `e2b`, `transformers`
 **Alternativas (elige una):** `pydantic-ai`, `openai-agents-python`
 
+## `social-media-agent`
+role=runtime · exec=cloud · setup=medium · mcp=False · prov=— · tags=asistentes,typescript
+
+**Qué es:** Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de publicarlas. Usa un flujo de LangGraph para investigar el enlace, redactar y solicitar aprobación de la publicación.
+**Stack:** TypeScript, pyproject.toml, Node.js
+**Repo:** https://github.com/langchain-ai/social-media-agent
+
+**Instalación** [+]: `Crear cuenta / API key en el proveedor (no self-host).`
+_Servicio gestionado; no se clona._
+
+**Elige si:** quieres preparar publicaciones para X o LinkedIn con una etapa de aprobación
+**Evita si:** un flujo determinista resuelve el problema sin un agente
+**Combina con:** `langgraphjs`
+
 ## `storm`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=['openai']
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai · tags=research,agents,python
 
 **Qué es:** Simula conversaciones entre perspectivas para hacer preguntas, busca fuentes y redacta un artículo estructurado y citado. Útil para informes de fondo.
 **Stack:** Python, DSPy
@@ -830,7 +1019,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `gpt-researcher`
 
 ## `swe-agent`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic']
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic · tags=coding-agent,evaluation,python
 
 **Qué es:** Resuelve issues reales con el modelo que elijas y sirve como base de investigación en agentes de software. También tiene usos en ciberseguridad y retos de programación.
 **Stack:** Python, Docker
@@ -845,7 +1034,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `openhands`, `open-swe`
 
 ## `t3code`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=coding-agent,ui,typescript
 
 **Qué es:** No sustituye al agente: orquesta Claude Code, Codex y otros desde una UI cómoda, también en el móvil. Útil para lanzar y revisar sesiones a distancia.
 **Stack:** TypeScript, Electron, React Native
@@ -859,7 +1048,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `claude-code`, `codex`, `opencode`
 
 ## `vercel-ai`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=['openai', 'anthropic', 'google', 'local']
+role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,google,local · tags=agents,ui,typescript,react
 
 **Qué es:** Unifica la llamada a decenas de proveedores con una API común y trae hooks de React para chat con streaming. Es la base de muchos frameworks de agentes en TS.
 **Stack:** TypeScript, React, Next.js

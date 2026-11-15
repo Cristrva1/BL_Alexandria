@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 123k | MIT | Jupyter Notebook | 2026-11-05 | 🆕 Aún no (sugerido) |
+| 124k | MIT | Jupyter Notebook | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
@@ -49,14 +49,14 @@ No se instala: abre el repo o haz fork y sigue las lecciones en Codespaces.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [AI Agents for Beginners](ai-agents-for-beginners.md) | 79.3k | Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español. |
-| [MCP for Beginners](mcp-for-beginners.md) | 17.6k | Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python. |
+| [AI Agents for Beginners](ai-agents-for-beginners.md) | 79.6k | Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español. |
+| [MCP for Beginners](mcp-for-beginners.md) | 17.7k | Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [LLM Course](llm-course.md) | 85k | Curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción. |
+| [LLM Course](llm-course.md) | 85.1k | Curso gratuito de Maxime Labonne con rutas y notebooks de Colab para aprender LLM de cero a producción. |
 
 ## Enlaces
 
@@ -64,4 +64,4 @@ No se instala: abre el repo o haz fork y sigue las lecciones en Codespaces.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

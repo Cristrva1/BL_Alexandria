@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `agentmemory`
-role=library · exec=hybrid · setup=easy · mcp=True · prov=—
+role=library · exec=hybrid · setup=easy · mcp=True · prov=— · tags=agents,memory,typescript
 
 **Qué es:** Resuelve el "re-explica todo" al cambiar de asistente: la memoria vive fuera del cliente.
 **Stack:** motor iii, MCP
@@ -18,8 +18,21 @@ _Stack no claro; revisa el README tras clonar._
 **Combina con:** `mem0`, `ruflo`
 **Alternativas (elige una):** `engram`, `supermemory`, `claude-mem`
 
+## `backdoor`
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=serving,ai,anthropic,claude,claude-code,deepseek,llm,ollama
+
+**Qué es:** Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. Traduce solicitudes y gestiona la configuración de proveedores como servicios compatibles u Ollama.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/ajsai47/backdoor
+
+**Instalación** [~]: `git clone https://github.com/ajsai47/backdoor && cd backdoor && (uv sync || pip install -r requirements.txt)`
+_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+
+**Elige si:** quieres estudiar cómo conectar otros modelos al harness de Claude Code
+**Evita si:** el coste operativo supera el volumen de uso del proyecto
+
 ## `chroma`
-role=runtime · exec=local · setup=easy · mcp=False · prov=—
+role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=vector-db,rag,rust
 
 **Qué es:** Se usa embebida en tu script Python o como servidor, con embeddings automáticos. Perfecta para prototipos de RAG.
 **Stack:** Rust, Python, TypeScript
@@ -34,7 +47,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `qdrant`, `pgvector`, `milvus`, `faiss`
 
 ## `claude-mem`
-role=skill · exec=local · setup=easy · mcp=True · prov=['anthropic', 'mcp']
+role=skill · exec=local · setup=easy · mcp=True · prov=anthropic,mcp · tags=memory,coding-agent,mcp,typescript
 
 **Qué es:** Registra lo que hace el agente en cada sesión, lo resume y vuelve a inyectar lo relevante al empezar la siguiente. Evita repetir contexto en proyectos largos.
 **Stack:** TypeScript, SQLite, Chroma
@@ -49,7 +62,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Alternativas (elige una):** `engram`, `agentmemory`
 
 ## `cognee`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=['openai', 'local']
+role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,local · tags=memory,rag,python
 
 **Qué es:** Convierte documentos y conversaciones en un grafo de conocimiento consultable para dar memoria de largo plazo a tus agentes.
 **Stack:** Python
@@ -64,7 +77,7 @@ _Nombre PyPI puede diferir de 'cognee'; verifica en pypi.org._
 **Alternativas (elige una):** `graphiti`, `mem0`, `graphrag`, `letta`
 
 ## `deepeval`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=['openai']
+role=library · exec=hybrid · setup=easy · mcp=False · prov=openai · tags=evaluation,python
 
 **Qué es:** Escribe pruebas para tus apps de LLM con métricas como fidelidad, relevancia o alucinación, e intégralas en tu CI.
 **Stack:** Python
@@ -79,7 +92,7 @@ _Nombre PyPI puede diferir de 'DeepEval'; verifica en pypi.org._
 **Alternativas (elige una):** `ragas`, `promptfoo`
 
 ## `engram`
-role=runtime · exec=local · setup=easy · mcp=True · prov=['mcp']
+role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=memory,mcp,coding-agent,go
 
 **Qué es:** Da a cualquier agente compatible con MCP una memoria local de decisiones y aprendizajes, sin dependencias pesadas.
 **Stack:** Go, SQLite
@@ -94,7 +107,7 @@ _Stack no claro; revisa el README tras clonar._
 **Alternativas (elige una):** `claude-mem`, `agentmemory`
 
 ## `faiss`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=vector-db,python,cpp
 
 **Qué es:** Base de muchas bases vectoriales; ideal para investigación o cuando quieres índices en memoria sin servidor.
 **Stack:** C++, Python, CUDA
@@ -109,7 +122,7 @@ _Nombre PyPI puede diferir de 'Faiss'; verifica en pypi.org._
 **Alternativas (elige una):** `qdrant`, `chroma`
 
 ## `graphiti`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic']
+role=library · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic · tags=memory,rag,python
 
 **Qué es:** Actualiza el grafo con cada nuevo dato sin recalcular todo y guarda cuándo era válido cada hecho. Ideal para memoria de agentes que cambia.
 **Stack:** Python, Neo4j
@@ -124,7 +137,7 @@ _Nombre PyPI puede diferir de 'Graphiti'; verifica en pypi.org._
 **Alternativas (elige una):** `cognee`, `graphrag`
 
 ## `graphrag`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=rag,python
 
 **Qué es:** Resuelve las preguntas que requieren conectar entidades dispersas en muchos documentos, donde el RAG clásico falla.
 **Stack:** Python
@@ -139,7 +152,7 @@ _Nombre PyPI puede diferir de 'graphrag'; verifica en pypi.org._
 **Alternativas (elige una):** `graphiti`, `cognee`, `lightrag`
 
 ## `guardrails`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=security,chatbot,python
 
 **Qué es:** Controla de qué puede hablar tu bot, bloquea jailbreaks y valida entradas y salidas con reglas en el lenguaje Colang.
 **Stack:** Python, Colang
@@ -153,7 +166,7 @@ _Nombre PyPI puede diferir de 'NeMo Guardrails'; verifica en pypi.org._
 **Combina con:** `langchain`
 
 ## `headroom`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=—
+role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=automation,llmops,python
 
 **Qué es:** Resuelve el dolor habitual de los agentes: quedarse sin ventana de contexto a mitad de una tarea larga.
 **Stack:** Python/TypeScript
@@ -165,9 +178,10 @@ _Nombre PyPI puede diferir de 'headroom'; verifica en pypi.org._
 **Elige si:** te quedas sin contexto en sesiones largas
 **Evita si:** tus prompts ya caben holgados o la pérdida de detalle por resumen es inaceptable
 **Combina con:** `context-engineering`, `codegraph`
+**Alternativas (elige una):** `rtk`
 
 ## `langfuse`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,observability,typescript,docker
 
 **Qué es:** Resuelve la opacidad: ves qué prompt, qué modelo, qué coste y qué salida tuvo cada paso de tu pipeline.
 **Stack:** TypeScript, Docker, PostgreSQL, self-host/cloud
@@ -182,7 +196,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `phoenix`, `opik`, `mlflow`
 
 ## `letta`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic', 'local']
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=memory,agents,python
 
 **Qué es:** Crea agentes que gestionan su propia memoria en bloques editables y archivos, y persisten entre conversaciones. Incluye servidor, API y entorno de desarrollo.
 **Stack:** Python, PostgreSQL
@@ -197,7 +211,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `mem0`, `cognee`
 
 ## `lightrag`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'local']
+role=library · exec=hybrid · setup=medium · mcp=False · prov=openai,local · tags=rag,python
 
 **Qué es:** Construye un grafo de entidades a partir de tus documentos y consulta en modo local, global o híbrido. Más barato que GraphRAG.
 **Stack:** Python
@@ -212,7 +226,7 @@ _Nombre PyPI puede diferir de 'LightRAG'; verifica en pypi.org._
 **Alternativas (elige una):** `graphrag`, `ragflow`, `pageindex`
 
 ## `litellm`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=—
+role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=inference,llmops,python,docker
 
 **Qué es:** Resuelve el lock-in: cambias de proveedor o añades fallback sin reescribir el código de tu app.
 **Stack:** Python
@@ -226,7 +240,7 @@ _Nombre PyPI puede diferir de 'litellm'; verifica en pypi.org._
 **Combina con:** `langchain`, `langfuse`, `llm-council`
 
 ## `loguru`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=observability,evaluation,python
 
 **Qué es:** Resuelve la fricción del módulo `logging` stdlib, que exige boilerplate para algo tan básico como imprimir logs legibles.
 **Stack:** Python
@@ -240,7 +254,7 @@ _Nombre PyPI puede diferir de 'loguru'; verifica en pypi.org._
 **Combina con:** `litellm`
 
 ## `mem0`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=—
+role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=memory,python
 
 **Qué es:** Resuelve el "amnesia" del LLM: el agente conserva preferencias y hechos entre sesiones sin reenviar todo el historial.
 **Stack:** Python/TypeScript, vector DBs (Qdrant, Chroma, pgvector)
@@ -255,7 +269,7 @@ _Nombre PyPI puede diferir de 'mem0'; verifica en pypi.org._
 **Alternativas (elige una):** `letta`, `cognee`, `supermemory`
 
 ## `mempalace`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=memory,python
 
 **Qué es:** Resuelve la memoria privada: cero llamadas a API, tus textos no salen de tu máquina.
 **Stack:** Python (PyPI)
@@ -269,7 +283,7 @@ _Nombre PyPI puede diferir de 'mempalace'; verifica en pypi.org._
 **Combina con:** `open-notebook`, `odysseus`
 
 ## `milvus`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=—
+role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=vector-db,rag,go,docker
 
 **Qué es:** Pensada para producción con grandes volúmenes, alta disponibilidad y varios tipos de índices. Tiene una versión ligera para empezar.
 **Stack:** Go, C++, Kubernetes
@@ -284,7 +298,7 @@ _Stack no claro; revisa el README tras clonar._
 **Alternativas (elige una):** `qdrant`, `chroma`
 
 ## `mlflow`
-role=platform · exec=local · setup=easy · mcp=False · prov=—
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=observability,training,evaluation,python
 
 **Qué es:** Registra experimentos, versiona modelos y, para LLM, ofrece trazas, evaluación y gestión de prompts.
 **Stack:** Python, React
@@ -299,7 +313,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `langfuse`
 
 ## `opik`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=observability,evaluation,python
 
 **Qué es:** Traza llamadas, ejecuta evaluaciones automáticas y monitorea producción con paneles. Incluye optimizador de prompts.
 **Stack:** Python, Java, TypeScript, ClickHouse
@@ -314,7 +328,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `langfuse`, `phoenix`
 
 ## `pageindex`
-role=library · exec=cloud · setup=easy · mcp=False · prov=['openai']
+role=library · exec=cloud · setup=easy · mcp=False · prov=openai · tags=rag,docs,python
 
 **Qué es:** Genera un árbol tipo índice del documento y deja que el LLM navegue por él como un experto. Funciona bien con informes largos y estructurados.
 **Stack:** Python
@@ -329,7 +343,7 @@ _Nombre PyPI puede diferir de 'PageIndex'; verifica en pypi.org._
 **Alternativas (elige una):** `lightrag`
 
 ## `pgvector`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vector-db,postgres,rag
 
 **Qué es:** Guarda embeddings en una columna y búscalos con SQL, con índices HNSW o IVFFlat. Evita añadir otra base de datos.
 **Stack:** C, PostgreSQL
@@ -344,7 +358,7 @@ _Stack no claro; revisa el README tras clonar._
 **Alternativas (elige una):** `qdrant`, `chroma`
 
 ## `phoenix`
-role=platform · exec=local · setup=easy · mcp=False · prov=—
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=observability,evaluation,python
 
 **Qué es:** Visualiza trazas de agentes y RAG, ejecuta evaluaciones y gestiona datasets y experimentos. Corre en local o en tu servidor.
 **Stack:** Python, TypeScript, OpenTelemetry
@@ -359,7 +373,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `langfuse`, `opik`
 
 ## `promptfoo`
-role=app · exec=local · setup=easy · mcp=False · prov=['openai', 'anthropic', 'google', 'local']
+role=app · exec=local · setup=easy · mcp=False · prov=openai,anthropic,google,local · tags=evaluation,security,typescript
 
 **Qué es:** Defines casos de prueba en YAML y comparas salidas de varios modelos con aserciones. También escanea vulnerabilidades como inyección de prompts.
 **Stack:** TypeScript, Node.js
@@ -374,7 +388,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `deepeval`, `ragas`, `dspy`
 
 ## `qdrant`
-role=runtime · exec=local · setup=easy · mcp=False · prov=—
+role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=vector-db,rag,rust,docker
 
 **Qué es:** Guarda embeddings con metadatos y los busca con filtros rápidos, a escala. Muy usada como memoria de RAG y agentes.
 **Stack:** Rust, Docker
@@ -389,7 +403,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `milvus`, `chroma`, `pgvector`, `faiss`
 
 ## `ragas`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=['openai']
+role=library · exec=hybrid · setup=easy · mcp=False · prov=openai · tags=evaluation,rag,python
 
 **Qué es:** Mide fidelidad, relevancia del contexto y calidad de respuestas, y genera conjuntos de prueba a partir de tus documentos.
 **Stack:** Python
@@ -404,7 +418,7 @@ _Nombre PyPI puede diferir de 'Ragas'; verifica en pypi.org._
 **Alternativas (elige una):** `deepeval`, `promptfoo`
 
 ## `ragflow`
-role=platform · exec=local · setup=heavy · mcp=False · prov=['openai', 'local']
+role=platform · exec=local · setup=heavy · mcp=False · prov=openai,local · tags=rag,docs,agents,docker
 
 **Qué es:** Procesa PDFs, tablas e imágenes con parsing visual, crea bases de conocimiento con citas trazables y añade agentes y workflows.
 **Stack:** Go, Python, React, Elasticsearch, Docker
@@ -418,8 +432,22 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `ollama`, `docling`
 **Alternativas (elige una):** `dify`, `lightrag`
 
+## `rtk`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=tokens,agentic-coding,ai-coding,anthropic,claude-code,cli,command-line-tool,cost-reduction
+
+**Qué es:** Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. Resume resultados de pruebas, diffs y logs antes de entregarlos al agente y registra el ahorro observado.
+**Stack:** Rust, Cargo
+**Repo:** https://github.com/rtk-ai/rtk
+
+**Instalación** [?]: `git clone https://github.com/rtk-ai/rtk (verificar README para build/run)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** tu agente consume demasiado contexto leyendo salidas extensas de terminal
+**Evita si:** el coste operativo supera el volumen de uso del proyecto
+**Alternativas (elige una):** `headroom`
+
 ## `sglang`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=['local']
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=inference,python
 
 **Qué es:** Compite con vLLM en velocidad, con caché de prefijos RadixAttention y buen soporte de salidas estructuradas. Muy usado para modelos grandes como DeepSeek.
 **Stack:** Python, CUDA
@@ -434,7 +462,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `vllm`
 
 ## `supermemory`
-role=platform · exec=hybrid · setup=easy · mcp=False · prov=—
+role=platform · exec=hybrid · setup=easy · mcp=False · prov=— · tags=memory,rag,typescript
 
 **Qué es:** Guarda y recupera lo que importa de documentos, conversaciones y webs para dar contexto a tus modelos. Ofrece API, SDK y una app de usuario.
 **Stack:** TypeScript, Cloudflare
@@ -448,8 +476,21 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `vercel-ai`
 **Alternativas (elige una):** `mem0`, `agentmemory`
 
+## `tensorrt-llm`
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=serving,blackwell,cuda,llm-serving,moe,pytorch,python
+
+**Qué es:** Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. Transforma modelos compatibles y los ejecuta con optimizaciones de memoria, precisión y paralelismo.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/NVIDIA/TensorRT-LLM
+
+**Instalación** [~]: `pip install tensorrt-llm   (o: uv add tensorrt-llm)`
+_Nombre PyPI puede diferir de 'TensorRT-LLM'; verifica en pypi.org._
+
+**Elige si:** despliegas LLM en GPU NVIDIA y necesitas optimizar la inferencia
+**Evita si:** el coste operativo supera el volumen de uso del proyecto
+
 ## `turbovec`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=automation,vector-db,rust
 
 **Qué es:** Resuelve el coste de memoria y cómputo de la búsqueda vectorial cuando una vector DB completa es demasiado para tu escala.
 **Stack:** Python / Rust
@@ -463,7 +504,7 @@ _Nombre PyPI puede diferir de 'turbovec'; verifica en pypi.org._
 **Combina con:** `mem0`, `graphrag`
 
 ## `vllm`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=['local']
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=inference,python
 
 **Qué es:** Sirve modelos abiertos a muchos usuarios con una API compatible con OpenAI, gracias a PagedAttention y batching continuo.
 **Stack:** Python, CUDA, PyTorch

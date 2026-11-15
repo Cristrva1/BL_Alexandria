@@ -21,12 +21,12 @@ flowchart LR
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [awesome-mcp-servers](../fichas/awesome-mcp-servers.md) | Comprueba primero si ya existe un servidor para tu caso | 97.6k | Sin instalación propia; se consulta el README y luego se instala el servidor elegido (n… |
-| 2 | [FastMCP](../fichas/fastmcp.md) | Framework Python para escribir el servidor en pocas líneas | 28.4k | `pip install fastmcp` |
-| 3 | [MCP TypeScript SDK](../fichas/mcp-typescript-sdk.md) | SDK oficial si tu servidor es TypeScript | 13.7k | `npm install @modelcontextprotocol/sdk` |
+| 1 | [awesome-mcp-servers](../fichas/awesome-mcp-servers.md) | Comprueba primero si ya existe un servidor para tu caso | 97.7k | Sin instalación propia; se consulta el README y luego se instala el servidor elegido (n… |
+| 2 | [FastMCP](../fichas/fastmcp.md) | Framework Python para escribir el servidor en pocas líneas | 28.5k | `pip install fastmcp` |
+| 3 | [MCP TypeScript SDK](../fichas/mcp-typescript-sdk.md) | SDK oficial si tu servidor es TypeScript | 13.8k | `npm install @modelcontextprotocol/sdk` |
 | 4 | [MCP Inspector](../fichas/mcp-inspector.md) | Prueba y depura el servidor antes de conectarlo | 11.3k | `npx @modelcontextprotocol/inspector` |
-| 5 | [servers](../fichas/servers.md) | Implementaciones de referencia para copiar patrones | 91.9k | `npx -y @modelcontextprotocol/server-filesystem /ruta` |
-| 6 | [mcp-use](../fichas/mcp-use.md) | Apps MCP y clientes full-stack cuando necesitas UI | 10.9k | `npm install mcp-use` |
+| 5 | [servers](../fichas/servers.md) | Implementaciones de referencia para copiar patrones | 92k | `npx -y @modelcontextprotocol/server-filesystem /ruta` |
+| 6 | [mcp-use](../fichas/mcp-use.md) | Apps MCP y clientes full-stack cuando necesitas UI | 11k | `npm install mcp-use` |
 
 ## 🔌 Cómo se conecta
 
@@ -44,4 +44,4 @@ Si solo vas a consumir un servidor que ya existe, no construyas uno: instálalo 
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

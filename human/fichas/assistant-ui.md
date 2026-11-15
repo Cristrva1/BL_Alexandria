@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 13k | MIT | TypeScript | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 13.2k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,14 +49,14 @@ Primitivos headless y componentes estilados conectados a runtimes de distintos b
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [AI SDK (Vercel)](vercel-ai.md) | 27.9k | Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. |
+| [AI SDK (Vercel)](vercel-ai.md) | 28k | Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat. |
 | [ui](ui.md) | 128k | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [CopilotKit](copilotkit.md) | 38.6k | Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. |
+| [CopilotKit](copilotkit.md) | 38.7k | Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI. |
 
 ## Enlaces
 
@@ -66,4 +66,4 @@ Primitivos headless y componentes estilados conectados a runtimes de distintos b
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

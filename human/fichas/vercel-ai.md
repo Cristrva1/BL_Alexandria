@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 27.9k | Otra (ver repo) | TypeScript | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 28k | NOASSERTION | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -50,14 +50,14 @@ Funciones como generateText y streamText llaman al proveedor elegido; los hooks 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [ui](ui.md) | 128k | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. |
-| [assistant-ui](assistant-ui.md) | 13k | Librería React y TypeScript para interfaces de chat con IA de calidad producción. |
+| [assistant-ui](assistant-ui.md) | 13.2k | Librería React y TypeScript para interfaces de chat con IA de calidad producción. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [LangGraph.js](langgraphjs.md) | 3.4k | Versión TypeScript de LangGraph para agentes con estado como grafos en Node o el navegador. |
-| [Mastra](mastra.md) | 29.4k | Framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby. |
+| [Mastra](mastra.md) | 29.5k | Framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby. |
 
 ## Enlaces
 
@@ -67,4 +67,4 @@ Funciones como generateText y streamText llaman al proveedor elegido; los hooks 
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -20,9 +20,9 @@ flowchart LR
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
 | 1 | [Ollama](../fichas/ollama.md) | Descarga y sirve los modelos con una API local | 187k | `curl -fsSL https://ollama.com/install.sh \| sh` |
-| 2 | [Open WebUI](../fichas/open-webui.md) | Interfaz web con usuarios, RAG, voz y herramientas | 158k | `docker run -d -p 3000:8080 -v open-webui:/app/backend/data ghcr.io/open-webui/open-webui:main` |
-| 3 | [SearXNG](../fichas/searxng.md) | Búsqueda web privada para respuestas actualizadas | 39.4k | `docker run -d -p 8080:8080 searxng/searxng` |
-| 4 | [litellm](../fichas/litellm.md) | Gateway opcional para mezclar modelos locales y APIs comerciales | 63k | `pip install litellm` |
+| 2 | [Open WebUI](../fichas/open-webui.md) | Interfaz web con usuarios, RAG, voz y herramientas | 159k | `docker run -d -p 3000:8080 -v open-webui:/app/backend/data ghcr.io/open-webui/open-webui:main` |
+| 3 | [SearXNG](../fichas/searxng.md) | Búsqueda web privada para respuestas actualizadas | 39.6k | `docker run -d -p 8080:8080 searxng/searxng` |
+| 4 | [litellm](../fichas/litellm.md) | Gateway opcional para mezclar modelos locales y APIs comerciales | 63.3k | `pip install litellm` |
 
 ## 🔌 Cómo se conecta
 
@@ -39,4 +39,4 @@ Si es solo para ti en tu portátil, una app de escritorio como Jan o LM Studio e
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

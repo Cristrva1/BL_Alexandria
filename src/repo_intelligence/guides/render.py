@@ -198,6 +198,9 @@ def _clean_dir(directory: Path, keep: set[str]) -> None:
 def _local_ids(registry_repos: list[dict[str, Any]]) -> set[str]:
     ids: set[str] = set()
     for repo in registry_repos:
+        # A historical registry entry does not prove the clone still exists.
+        if not repo.get("path") or not Path(repo["path"]).is_dir():
+            continue
         for key in ("id", "name"):
             value = (repo.get(key) or "").lower()
             if value:

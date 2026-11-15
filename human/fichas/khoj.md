@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 38.1k | AGPL-3.0 | Python | 2026-08-02 | 🆕 Aún no (sugerido) |
+| 38.1k | AGPL-3.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
@@ -57,8 +57,8 @@ Indexa tus archivos con embeddings y combina esa búsqueda con búsquedas web an
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [AnythingLLM](anything-llm.md) | 68.1k | App todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. |
-| [SurfSense](surfsense.md) | 16.8k | Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. |
+| [AnythingLLM](anything-llm.md) | 68.3k | App todo en uno para chatear con tus documentos y usar agentes con modelos locales o en la nube. |
+| [SurfSense](surfsense.md) | 16.9k | Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. |
 
 ## Enlaces
 
@@ -67,4 +67,4 @@ Indexa tus archivos con embeddings y combina esa búsqueda con búsquedas web an
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 47.7k | AGPL-3.0 | Python | 2026-08-17 | 🆕 Aún no (sugerido) |
+| 47.7k | AGPL-3.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
@@ -51,8 +51,8 @@ Descarga el paquete portable de releases o usa el script `start_*` del repo.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Jan](jan.md) | 45.6k | App de escritorio open source, alternativa a ChatGPT que corre 100 % sin conexión. |
-| [Open WebUI](open-webui.md) | 158k | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. |
+| [Jan](jan.md) | 45.7k | App de escritorio open source, alternativa a ChatGPT que corre 100 % sin conexión. |
+| [Open WebUI](open-webui.md) | 159k | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. |
 
 ## Enlaces
 
@@ -60,4 +60,4 @@ Descarga el paquete portable de releases o usa el script `start_*` del repo.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

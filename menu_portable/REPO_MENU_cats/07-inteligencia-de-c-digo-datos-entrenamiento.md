@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `ast-grep`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=code,security,rust
 
 **Qué es:** Busca y reemplaza código por su estructura (AST), no por texto. Útil para refactors masivos y reglas de lint propias.
 **Stack:** Rust, tree-sitter
@@ -19,7 +19,7 @@ _Stack no claro; revisa el README tras clonar._
 **Alternativas (elige una):** `semgrep`
 
 ## `awesome-bigdata`
-role=directory · exec=cloud · setup=easy · mcp=False · prov=—
+role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=data
 
 **Qué es:** Resuelve el "qué uso para X a escala": un panorama del stack de datos grandes en un solo vistazo.
 **Stack:** Markdown
@@ -32,8 +32,47 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Evita si:** tu proyecto es pequeño y no justifica herramientas de big data
 **Combina con:** `awesome-dataviz`
 
+## `awesome-machine-learning`
+role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=aprender,python
+
+**Qué es:** Directorio de frameworks, bibliotecas y recursos de machine learning organizado por lenguaje y tema. Reúne enlaces a implementaciones, cursos y material para comparar herramientas.
+**Stack:** Python
+**Repo:** https://github.com/josephmisiti/awesome-machine-learning
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-machine-learning/). Si necesitas el código: git clone https://github.com/josephmisiti/awesome-machine-learning`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** buscas alternativas de aprendizaje automático en distintos lenguajes
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+
+## `bigdata`
+role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=datos,java
+
+**Qué es:** Colección educativa de proyectos de datos con ejercicios de Hive, HDFS, Spark, HBase y sistemas de recomendación. Las carpetas desarrollan problemas de ingestión, análisis y procesamiento distribuido de datos.
+**Stack:** Java
+**Repo:** https://github.com/monsonlee/BigData
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/BigData/). Si necesitas el código: git clone https://github.com/monsonlee/BigData`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres estudiar ejemplos prácticos del ecosistema de big data
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+
+## `bionemo-recipes`
+role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=entrenamiento,drug-discovery,gpu,machine-learning,pytorch,python
+
+**Qué es:** Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. Presenta configuraciones de entrenamiento con TransformerEngine y frameworks distribuidos para modelos biológicos.
+**Stack:** Python
+**Repo:** https://github.com/NVIDIA-BioNeMo/bionemo-recipes
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/bionemo-recipes/). Si necesitas el código: git clone https://github.com/NVIDIA-BioNeMo/bionemo-recipes`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** trabajas en entrenamiento de modelos para datos biológicos
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+
 ## `cli`
-role=app · exec=cloud · setup=easy · mcp=False · prov=—
+role=app · exec=cloud · setup=easy · mcp=False · prov=— · tags=code,go
 
 **Qué es:** No es un agente: es la herramienta que los agentes de código usan para abrir PRs, revisar issues o lanzar workflows.
 **Stack:** Go
@@ -47,7 +86,7 @@ _Servicio gestionado; no se clona._
 **Combina con:** `claude-code`, `github-mcp-server`
 
 ## `codebase-memory-mcp`
-role=runtime · exec=local · setup=easy · mcp=True · prov=['mcp']
+role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=code,mcp,memory
 
 **Qué es:** Indexa repos en milisegundos y da al agente herramientas MCP para entender arquitectura, dependencias y cambios sin leer archivo por archivo.
 **Stack:** C
@@ -62,7 +101,7 @@ _Stack no claro; revisa el README tras clonar._
 **Alternativas (elige una):** `codegraph`, `gitnexus`
 
 ## `codegraph`
-role=runtime · exec=local · setup=easy · mcp=False · prov=—
+role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=code,typescript
 
 **Qué es:** Resuelve el coste de contexto de los agentes en repos grandes.
 **Stack:** JavaScript/Node.js (binario autónomo)
@@ -77,7 +116,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `codebase-memory-mcp`, `serena`
 
 ## `cosmos`
-role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=inference
 
 **Qué es:** Resuelve la escasez de datos físicos: genera escenas/vídeo sintético en lugar de capturarlos a mano.
 **Stack:** Python, GPU (NVIDIA/CUDA)
@@ -91,7 +130,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `diffusers`
 
 ## `data-science-ipython-notebooks`
-role=directory · exec=local · setup=easy · mcp=False · prov=—
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=data,python
 
 **Qué es:** Resuelve el "aprender DS con ejemplos reales" sin tener que montarlos tú desde cero.
 **Stack:** Python, Jupyter
@@ -105,7 +144,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `dash`, `streamlit`
 
 ## `deepseek-coder`
-role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=inference,python
 
 **Qué es:** Resuelve la dependencia de APIs propietarias para tareas de código: puedes desplegar el modelo en tu propia infraestructura.
 **Stack:** Python, PyTorch, GPU
@@ -119,7 +158,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `litellm`, `codegraph`
 
 ## `deepwiki-open`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'google', 'local']
+role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,google,local · tags=code,docs,python
 
 **Qué es:** Analiza un repositorio y crea documentación navegable con diagramas y un chat para preguntar sobre el código.
 **Stack:** Python, Next.js
@@ -134,7 +173,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `context7`
 
 ## `defending-code-reference-harness`
-role=skill · exec=cloud · setup=medium · mcp=False · prov=['anthropic']
+role=skill · exec=cloud · setup=medium · mcp=False · prov=anthropic · tags=security,skills,coding-agent
 
 **Qué es:** Implementación de referencia para descubrir y corregir vulnerabilidades de forma autónoma con Claude, basada en experiencia con equipos de seguridad.
 **Stack:** Python, Markdown
@@ -148,7 +187,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `claude-code`, `semgrep`
 
 ## `duckdb`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=data,analytics,cpp
 
 **Qué es:** El "SQLite de la analítica": sin servidor, embebida en Python, R o Node, y capaz de procesar millones de filas en segundos.
 **Stack:** C++
@@ -163,7 +202,7 @@ _Stack no claro; revisa el README tras clonar._
 **Alternativas (elige una):** `polars`
 
 ## `gitnexus`
-role=app · exec=hybrid · setup=easy · mcp=False · prov=—
+role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=code,typescript
 
 **Qué es:** Resuelve el "llegar a un proyecto ajeno y no saber por dónde empezar": lo navegas y lo discutes en vez de leer ficheros sueltos.
 **Stack:** web/TypeScript
@@ -177,8 +216,22 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `codegraph`
 **Alternativas (elige una):** `repomix`, `codebase-memory-mcp`, `serena`
 
+## `globalbuildingatlas`
+role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=datos,python
+
+**Qué es:** Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1. Publica distintas capas geoespaciales y herramientas para estimar alturas y construir representaciones de edificios.
+**Stack:** Python
+**Repo:** https://github.com/zhu-xlab/GlobalBuildingAtlas
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/GlobalBuildingAtlas/). Si necesitas el código: git clone https://github.com/zhu-xlab/GlobalBuildingAtlas`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** necesitas geometría de edificios para análisis territorial o visualización urbana
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+**Combina con:** `three.js`
+
 ## `graphify`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=code,python
 
 **Qué es:** Resuelve el onboarding visual: un índice textual no basta cuando hay relaciones entre archivos.
 **Stack:** Python 3.10+, uv/pipx
@@ -192,7 +245,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `codegraph`, `graphrag`
 
 ## `how-to-train-your-gpt`
-role=directory · exec=local · setup=easy · mcp=False · prov=—
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=learning
 
 **Qué es:** Resuelve el "quiero entenderlo con explicación narrada" frente al código desnudo de nanoGPT.
 **Stack:** Python, PyTorch
@@ -205,8 +258,21 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Evita si:** prefieres solo el código limpio (nanoGPT) o buscas algo productivo
 **Combina con:** `nanogpt`, `nanochat`
 
+## `hudi`
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=datos,apacheflink,apachehudi,apachespark,bigdata,data-integration,datalake,hudi
+
+**Qué es:** Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. Añade índices, actualizaciones y procesamiento incremental a tablas de un lago de datos.
+**Stack:** Java, Docker
+**Repo:** https://github.com/apache/hudi
+
+**Instalación** [~]: `git clone https://github.com/apache/hudi && cd hudi && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** necesitas gestionar cambios y cargas incrementales en un data lake
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+
 ## `llama-factory`
-role=app · exec=local · setup=medium · mcp=False · prov=['local']
+role=app · exec=local · setup=medium · mcp=False · prov=local · tags=training,python
 
 **Qué es:** Soporta LoRA, QLoRA, ajuste completo, DPO y más desde una UI o CLI. Muy usado en investigación e industria.
 **Stack:** Python, PyTorch, Gradio
@@ -221,7 +287,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `unsloth`
 
 ## `llm-course`
-role=directory · exec=local · setup=easy · mcp=False · prov=—
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=learning,training,notebooks
 
 **Qué es:** Tres rutas: fundamentos, científico de LLM (entrenar y afinar) e ingeniero de LLM (apps y despliegue), con recursos y notebooks ejecutables.
 **Stack:** Markdown, Jupyter, Python
@@ -236,7 +302,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Alternativas (elige una):** `llms-from-scratch`, `generative-ai-for-beginners`
 
 ## `llm.c`
-role=library · exec=local · setup=heavy · mcp=False · prov=—
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=learning
 
 **Qué es:** Resuelve la abstracción total: muestra qué hace realmente la GPU en cada pasada, sin ocultarlo tras un framework.
 **Stack:** C, CUDA
@@ -250,7 +316,7 @@ _Stack no claro; revisa el README tras clonar._
 **Combina con:** `nanogpt`
 
 ## `llms-from-scratch`
-role=directory · exec=local · setup=medium · mcp=False · prov=—
+role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=learning,training,python
 
 **Qué es:** Construyes atención, GPT, preentrenamiento y fine-tuning desde cero, entendiendo cada pieza. Ideal para aprender cómo funcionan por dentro.
 **Stack:** Python, PyTorch, Jupyter
@@ -264,8 +330,21 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `pytorch`
 **Alternativas (elige una):** `llm-course`, `nanogpt`
 
+## `machinelearning`
+role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=aprender,python
+
+**Qué es:** Ejemplos educativos de algoritmos de machine learning y redes neuronales con Python. Agrupa implementaciones y ejercicios de clasificación, reducción de dimensiones y aprendizaje profundo.
+**Stack:** Python
+**Repo:** https://github.com/wepe/MachineLearning
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/MachineLearning/). Si necesitas el código: git clone https://github.com/wepe/MachineLearning`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres explorar implementaciones pequeñas de algoritmos clásicos
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+
 ## `marimo`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=notebooks,data,python
 
 **Qué es:** Al cambiar una celda se recalculan las dependientes, evitando estados ocultos. Incluye SQL, gráficos interactivos y asistente de IA.
 **Stack:** Python, TypeScript
@@ -279,7 +358,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `duckdb`, `polars`
 
 ## `nanochat`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=learning,python
 
 **Qué es:** Resuelve la pregunta "¿cómo se monta un asistente entero?": lo muestra en un solo repo compacto y legible.
 **Stack:** Python, PyTorch, GPU
@@ -293,7 +372,7 @@ _Nombre PyPI puede diferir de 'nanochat'; verifica en pypi.org._
 **Combina con:** `nanogpt`
 
 ## `nanogpt`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=learning,python
 
 **Qué es:** Resuelve la opacidad de los frameworks: ves exactamente cómo se entrena un GPT sin capas de abstracción.
 **Stack:** Python, PyTorch, GPU
@@ -308,7 +387,7 @@ _Nombre PyPI puede diferir de 'nanoGPT'; verifica en pypi.org._
 **Alternativas (elige una):** `llms-from-scratch`
 
 ## `nemotron`
-role=directory · exec=local · setup=heavy · mcp=False · prov=['local']
+role=directory · exec=local · setup=heavy · mcp=False · prov=local · tags=training,inference
 
 **Qué es:** Reúne guías de entrenamiento, despliegue y casos de uso de los modelos Nemotron, pensados para IA agéntica eficiente.
 **Stack:** Python, Jupyter
@@ -322,7 +401,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `vllm`, `nemoclaw`
 
 ## `openai-python`
-role=library · exec=cloud · setup=easy · mcp=False · prov=—
+role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=code,python
 
 **Qué es:** Resuelve el glue HTTP: no escribes peticiones a mano, usas clientes tipados con streaming.
 **Stack:** Python
@@ -336,7 +415,7 @@ _Nombre PyPI puede diferir de 'openai-python'; verifica en pypi.org._
 **Combina con:** `litellm`, `langchain`
 
 ## `peft`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=training,python
 
 **Qué es:** Adapta modelos grandes entrenando solo una pequeña parte de los parámetros, ahorrando memoria y tiempo.
 **Stack:** Python, PyTorch
@@ -350,7 +429,7 @@ _Nombre PyPI puede diferir de 'PEFT'; verifica en pypi.org._
 **Combina con:** `transformers`, `trl`
 
 ## `polars`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=data,python,rust
 
 **Qué es:** API expresiva con ejecución perezosa y paralela para procesar datos grandes en un solo equipo.
 **Stack:** Rust, Python
@@ -364,8 +443,21 @@ _Nombre PyPI puede diferir de 'Polars'; verifica en pypi.org._
 **Combina con:** `marimo`
 **Alternativas (elige una):** `duckdb`
 
+## `python-machine-learning-book`
+role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=aprender,data-mining,data-science,logistic-regression,machine-learning,machine-learning-algorithms,neural-network,python
+
+**Qué es:** Código de la primera edición del libro Python Machine Learning, con ejemplos de algoritmos y evaluación. Presenta notebooks y scripts que acompañan los capítulos y conceptos del libro.
+**Stack:** Jupyter Notebook
+**Repo:** https://github.com/rasbt/python-machine-learning-book
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/python-machine-learning-book/). Si necesitas el código: git clone https://github.com/rasbt/python-machine-learning-book`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres estudiar los ejemplos de la primera edición del libro
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+
 ## `pytorch`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=training,python
 
 **Qué es:** Base de la mayoría de investigación y modelos abiertos actuales.
 **Stack:** Python, C++, CUDA
@@ -379,7 +471,7 @@ _Nombre PyPI puede diferir de 'PyTorch'; verifica en pypi.org._
 **Combina con:** `transformers`
 
 ## `repomix`
-role=app · exec=local · setup=easy · mcp=True · prov=—
+role=app · exec=local · setup=easy · mcp=True · prov=— · tags=code,coding-agent,typescript
 
 **Qué es:** Genera un archivo XML, Markdown o texto con la estructura y el código del repo, respetando .gitignore y contando tokens. También funciona como servidor MCP.
 **Stack:** TypeScript, Node.js
@@ -394,7 +486,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `gitnexus`
 
 ## `semgrep`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,code
 
 **Qué es:** Encuentra bugs y vulnerabilidades con miles de reglas comunitarias o propias. Muy usado en CI de seguridad.
 **Stack:** OCaml, Python
@@ -409,7 +501,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `ast-grep`
 
 ## `swe-bench`
-role=directory · exec=local · setup=heavy · mcp=False · prov=—
+role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=evaluation,coding-agent,python
 
 **Qué es:** Da al modelo un repositorio y un issue y comprueba si su parche pasa las pruebas. Es la referencia para medir agentes de código.
 **Stack:** Python, Docker
@@ -422,8 +514,21 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Evita si:** solo quieres usar un agente
 **Combina con:** `swe-agent`
 
+## `tensorflow`
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=entrenamiento,deep-learning,deep-neural-networks,distributed,machine-learning,ml,neural-network,python
+
+**Qué es:** Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. Define operaciones y modelos y ofrece herramientas de entrenamiento e inferencia en distintos dispositivos.
+**Stack:** C++
+**Repo:** https://github.com/tensorflow/tensorflow
+
+**Instalación** [?]: `git clone https://github.com/tensorflow/tensorflow (verificar README para install)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** tu proyecto necesita el ecosistema TensorFlow para entrenamiento o despliegue
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+
 ## `timesfm`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=data,analytics,python
 
 **Qué es:** Predice ventas, demanda o tráfico a partir del histórico sin entrenar un modelo propio (zero-shot).
 **Stack:** Python, PyTorch, JAX
@@ -436,8 +541,21 @@ _Nombre PyPI puede diferir de 'TimesFM'; verifica en pypi.org._
 **Evita si:** necesitas explicabilidad estadística clásica
 **Combina con:** `polars`, `duckdb`
 
+## `train-llm-from-scratch`
+role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=aprender,gemini,large-language-models,llm,openai,training,transformers,python
+
+**Qué es:** Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generación. Implementa un Transformer y recorre preparación de datos, entrenamiento y ajuste del modelo.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/FareedKhan-dev/train-llm-from-scratch
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/train-llm-from-scratch/). Si necesitas el código: git clone https://github.com/FareedKhan-dev/train-llm-from-scratch`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres entender el entrenamiento de un LLM mediante una implementación completa
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico
+
 ## `transformers`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=training,inference,python
 
 **Qué es:** Da acceso a cientos de miles de modelos con una API común para inferencia y entrenamiento. Es la base del ecosistema de modelos abiertos.
 **Stack:** Python, PyTorch
@@ -451,7 +569,7 @@ _Nombre PyPI puede diferir de 'Transformers'; verifica en pypi.org._
 **Combina con:** `peft`, `trl`, `pytorch`
 
 ## `tree-sitter`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=code,rust
 
 **Qué es:** Genera parsers rápidos que actualizan el árbol sintáctico mientras editas. Lo usan editores, Aider, ast-grep y muchas herramientas de código con IA.
 **Stack:** Rust, C
@@ -465,7 +583,7 @@ _Stack no claro; revisa el README tras clonar._
 **Combina con:** `ast-grep`, `aider`
 
 ## `trl`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=training,python
 
 **Qué es:** Ofrece entrenadores listos para ajuste supervisado y por preferencias, usados para alinear modelos.
 **Stack:** Python, PyTorch
@@ -479,7 +597,7 @@ _Nombre PyPI puede diferir de 'TRL'; verifica en pypi.org._
 **Combina con:** `transformers`, `peft`, `unsloth`
 
 ## `unsloth`
-role=app · exec=local · setup=medium · mcp=False · prov=['local']
+role=app · exec=local · setup=medium · mcp=False · prov=local · tags=training,local,python
 
 **Qué es:** Afina modelos como Qwen, Llama o Gemma en una sola GPU y expórtalos a GGUF u Ollama. Ofrece notebooks gratuitos y una interfaz local.
 **Stack:** Python, Triton, PyTorch
@@ -492,3 +610,16 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Evita si:** necesitas muchas técnicas y una UI de entrenamiento; mira `llama-factory`
 **Combina con:** `ollama`, `trl`
 **Alternativas (elige una):** `llama-factory`
+
+## `warp`
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=entrenamiento,cuda,differentiable-programming,gpu,gpu-acceleration,nvidia,nvidia-warp,python
+
+**Qué es:** Framework de NVIDIA que compila funciones de Python en kernels para simulación física y cálculo en CPU o GPU. Compila funciones especializadas y aporta primitivas de geometría, física y diferenciación.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/NVIDIA/warp
+
+**Instalación** [~]: `pip install warp   (o: uv add warp)`
+_Nombre PyPI puede diferir de 'warp'; verifica en pypi.org._
+
+**Elige si:** quieres escribir simulaciones o kernels de cálculo acelerado desde Python
+**Evita si:** necesitas una aplicación lista para usuarios sin trabajo técnico

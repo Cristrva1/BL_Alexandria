@@ -3,8 +3,23 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `agent-browser`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=navegador,rust
+
+**Qué es:** CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes. Mantiene una sesión de navegador y permite abrir páginas, inspeccionarlas y actuar por referencias desde la terminal.
+**Stack:** Rust, Node.js
+**Repo:** https://github.com/vercel-labs/agent-browser
+
+**Instalación** [~]: `git clone https://github.com/vercel-labs/agent-browser && cd agent-browser && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+
+**Elige si:** necesitas navegación programable con salidas compactas para un agente
+**Evita si:** la fuente ya ofrece una API o un archivo de datos suficiente
+**Combina con:** `codex`
+**Alternativas (elige una):** `playwright-cli`
+
 ## `agent-reach`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,research,python
 
 **Qué es:** Un solo comando para que el agente lea y busque en redes y plataformas populares, incluidas chinas como Bilibili y XiaoHongShu.
 **Stack:** Python
@@ -19,7 +34,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `snscrape`
 
 ## `archivebox`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,data,python,docker
 
 **Qué es:** Le das URLs, marcadores o historial y guarda copias completas para siempre. Útil para investigación y preservación de fuentes.
 **Stack:** Python, Django, Docker
@@ -32,8 +47,34 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Evita si:** solo necesitas el texto para un LLM; mira `jina-reader`
 **Combina con:** `yt-dlp`
 
+## `awesome-chrome-devtools`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=navegador,awesome,awesome-list
+
+**Qué es:** Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol. Agrupa depuradores, visores de trazas y clientes del protocolo para localizar una herramienta adecuada.
+**Stack:** Node.js
+**Repo:** https://github.com/ChromeDevTools/awesome-chrome-devtools
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-chrome-devtools/). Si necesitas el código: git clone https://github.com/ChromeDevTools/awesome-chrome-devtools`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** buscas utilidades para depurar o automatizar Chrome
+**Evita si:** la fuente ya ofrece una API o un archivo de datos suficiente
+
+## `awesome-web-scraping`
+role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=crawlers,captcha-bypass,captcha-recaptcha,crawler,crawling,crawling-framework,crawling-python,crawling-tool
+
+**Qué es:** Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos. Organiza opciones por lenguaje y función para investigar alternativas de extracción.
+**Stack:** JavaScript, Node.js
+**Repo:** https://github.com/lorien/awesome-web-scraping
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/awesome-web-scraping/). Si necesitas el código: git clone https://github.com/lorien/awesome-web-scraping`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres comparar librerías de scraping antes de elegir tu stack
+**Evita si:** la fuente ya ofrece una API o un archivo de datos suficiente
+
 ## `browser-harness`
-role=runtime · exec=local · setup=easy · mcp=False · prov=—
+role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=browser,coding-agent,python
 
 **Qué es:** Conecta el agente a tu navegador por CDP con un arnés pequeño y editable. Útil cuando necesitas libertad total y tus cuentas ya abiertas.
 **Stack:** Python, CDP
@@ -48,7 +89,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `playwright-mcp`, `chrome-devtools-mcp`
 
 ## `browser-use`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,browser,python
 
 **Qué es:** Resuelve la fragilidad del scraping basado en CSS: el agente "ve" la página como un humano y decide la siguiente acción.
 **Stack:** Python 3.11+, Rust (core), Playwright
@@ -62,8 +103,21 @@ _Nombre PyPI puede diferir de 'browser-use'; verifica en pypi.org._
 **Combina con:** `playwright`, `gpt-researcher`
 **Alternativas (elige una):** `computer-use-preview`, `stagehand`, `skyvern`, `playwright-mcp`
 
+## `camofox-browser`
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=navegador,ai-agent,anti-bot,antidetect-browser,automation,bot-detection,browser-automation,cloudflare-bypass
+
+**Qué es:** Servidor de automatización de navegador basado en Camoufox para ofrecer navegación a agentes. Expone un navegador derivado de Firefox mediante herramientas y endpoints de automatización.
+**Stack:** JavaScript, Docker, Node.js
+**Repo:** https://github.com/jo-inc/camofox-browser
+
+**Instalación** [~]: `git clone https://github.com/jo-inc/camofox-browser && cd camofox-browser && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** necesitas evaluar una alternativa de navegador automatizado para agentes
+**Evita si:** la fuente ya ofrece una API o un archivo de datos suficiente
+
 ## `changedetection`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,notifications,python,docker
 
 **Qué es:** Vigila precios, stock, documentación o cualquier texto de una página y te avisa cuando cambia. Admite navegador real para sitios con JavaScript.
 **Stack:** Python, Playwright, Docker
@@ -77,7 +131,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `n8n`
 
 ## `crawl4ai`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=scraping,python
 
 **Qué es:** Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. Una de las alternativas open-source más populares a las APIs de pago; gratuita, self-host y muy activa en la comunidad de scraping para LLMs.
 **Stack:** Python, Playwright
@@ -92,7 +146,7 @@ _Nombre PyPI puede diferir de 'crawl4ai'; verifica en pypi.org._
 **Alternativas (elige una):** `jina-reader`
 
 ## `crawlee`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=scraping,typescript
 
 **Qué es:** Framework moderno de crawling para Node.js con antibloqueo integrado, que unifica scraping de HTTP y de navegador bajo una misma API con colas y reintentos. Mantenido por Apify, es la referencia de crawling en el ecosistema JavaScript y trae evasión de bloqueos lista de fábrica.
 **Stack:** Node.js/TypeScript
@@ -106,7 +160,7 @@ _Nombre npm puede diferir de 'crawlee'; verifica en npmjs.com._
 **Combina con:** `playwright`
 
 ## `crawlee-python`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=scraping,python
 
 **Qué es:** Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. Acerca las ventajas del Crawlee de Node a quienes ya viven en Python, con respaldo oficial de Apify y adopción en crecimiento.
 **Stack:** Python
@@ -120,7 +174,7 @@ _Nombre PyPI puede diferir de 'crawlee-python'; verifica en pypi.org._
 **Combina con:** `scrapy`, `playwright`
 
 ## `firecrawl`
-role=platform · exec=cloud · setup=medium · mcp=True · prov=—
+role=platform · exec=cloud · setup=medium · mcp=True · prov=— · tags=scraping,typescript,docker
 
 **Qué es:** Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. Se ha vuelto la opción de referencia para alimentar pipelines RAG y agentes con web limpia; muy adoptada y con integración MCP de primera clase.
 **Stack:** API/SDK (TS/Python), hosted o self-host, Docker
@@ -135,7 +189,7 @@ _Servicio gestionado; no se clona._
 **Alternativas (elige una):** `jina-reader`
 
 ## `instaloader`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vision,scraping,python
 
 **Qué es:** Resuelve el archivado masivo de Instagram sin recurrir a APIs oficiales de pago ni herramientas manuales.
 **Stack:** Python
@@ -149,7 +203,7 @@ _Nombre PyPI puede diferir de 'instaloader'; verifica en pypi.org._
 **Combina con:** `snscrape`
 
 ## `jina-reader`
-role=platform · exec=cloud · setup=easy · mcp=False · prov=—
+role=platform · exec=cloud · setup=easy · mcp=False · prov=— · tags=scraping,rag,typescript
 
 **Qué es:** Pega `https://r.jina.ai/` delante de una URL y obtienes su contenido limpio. También busca en la web con `s.jina.ai`.
 **Stack:** TypeScript, Puppeteer
@@ -164,7 +218,7 @@ _Servicio gestionado; no se clona._
 **Alternativas (elige una):** `firecrawl`, `crawl4ai`
 
 ## `last30days-skill`
-role=skill · exec=cloud · setup=easy · mcp=False · prov=—
+role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=research,skills,python
 
 **Qué es:** Busca lo que la gente está diciendo ahora sobre un tema y lo resume con fuentes. Prioriza señales reales como votos, likes y apuestas.
 **Stack:** Python, Markdown
@@ -176,9 +230,10 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Elige si:** quieres saber qué se dice ahora sobre un tema
 **Evita si:** necesitas un informe académico; mira `storm`
 **Combina con:** `claude-code`, `agent-reach`
+**Alternativas (elige una):** `social-media-research-skills`
 
 ## `lightpanda`
-role=runtime · exec=local · setup=easy · mcp=False · prov=—
+role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=browser,scraping
 
 **Qué es:** Ejecuta JavaScript y es compatible con Puppeteer y Playwright por CDP, usando una fracción de memoria. Ideal para scraping masivo.
 **Stack:** Zig, V8
@@ -192,7 +247,7 @@ _Stack no claro; revisa el README tras clonar._
 **Combina con:** `puppeteer`, `playwright`
 
 ## `llm-scraper`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=—
+role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=scraping,typescript
 
 **Qué es:** Librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído. Popular por su simplicidad: salida tipada y validada sin escribir parsers, integrándose directamente con Playwright y los SDKs de LLM.
 **Stack:** TypeScript, Playwright, Zod
@@ -207,7 +262,7 @@ _Nombre npm puede diferir de 'llm-scraper'; verifica en npmjs.com._
 **Alternativas (elige una):** `maxun`
 
 ## `maxun`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=scraping,automation,typescript
 
 **Qué es:** Grabas lo que quieres extraer haciendo clic en la página y Maxun crea un robot que lo repite, con paginación y programación. Ideal para equipos sin programadores.
 **Stack:** TypeScript, Playwright, PostgreSQL, Docker
@@ -222,7 +277,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `scrapegraph-ai`, `llm-scraper`
 
 ## `playwright`
-role=library · exec=hybrid · setup=medium · mcp=True · prov=—
+role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,browser,typescript
 
 **Qué es:** Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje. Se ha convertido en el estándar moderno de automatización de browser, desplazando a Selenium/Puppeteer por su fiabilidad y su auto-espera de elementos.
 **Stack:** Node.js o Python (también Java/.NET)
@@ -237,7 +292,7 @@ _Nombre PyPI puede diferir de 'playwright'; verifica en pypi.org._
 **Alternativas (elige una):** `puppeteer`, `selenium`
 
 ## `playwright-cli`
-role=skill · exec=hybrid · setup=easy · mcp=False · prov=—
+role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=browser,typescript
 
 **Qué es:** Resuelve el problema de los árboles de accesibilidad y los JSON de herramientas que inflan el prompt en cada turno.
 **Stack:** TypeScript/Node.js, CLI
@@ -249,9 +304,10 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Elige si:** tu agente vive en CLI y el contexto es un recurso caro
 **Evita si:** necesitas estado persistente entre sesiones o un servidor MCP con recursos expuestos (usa Playwright MCP)
 **Combina con:** `playwright`, `browser-use`
+**Alternativas (elige una):** `agent-browser`
 
 ## `puppeteer`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=browser,scraping,typescript
 
 **Qué es:** Automatiza navegación, capturas, PDFs y pruebas. Es la base de muchas herramientas de scraping.
 **Stack:** TypeScript, Node.js
@@ -266,7 +322,7 @@ _Nombre npm puede diferir de 'Puppeteer'; verifica en npmjs.com._
 **Alternativas (elige una):** `playwright`, `selenium`
 
 ## `scrapegraph-ai`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=scraping,python
 
 **Qué es:** Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. Muy popular por permitir scraping "by prompt", combinando extracción con razonamiento del modelo y soporte para múltiples proveedores.
 **Stack:** Python, LangChain/LangGraph, Playwright
@@ -281,7 +337,7 @@ _Nombre PyPI puede diferir de 'Scrapegraph-ai'; verifica en pypi.org._
 **Alternativas (elige una):** `maxun`
 
 ## `scrapely`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=scraping
 
 **Qué es:** Librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales. Pieza histórica del ecosistema Scrapy; nicho y poco activa hoy, pero útil cuando se quiere extraer "por demostración" en lugar de programar selectores.
 **Stack:** Python
@@ -295,7 +351,7 @@ _Nombre PyPI puede diferir de 'scrapely'; verifica en pypi.org._
 **Combina con:** `scrapy`
 
 ## `scrapling`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=automation,scraping,python
 
 **Qué es:** Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica los elementos cuando el HTML cambia. Proyecto en alza por su enfoque "auto-reparable" de selectores, que evita reescribir scrapers cada vez que el sitio se actualiza.
 **Stack:** Python
@@ -309,7 +365,7 @@ _Nombre PyPI puede diferir de 'Scrapling'; verifica en pypi.org._
 **Combina con:** `scrapy`
 
 ## `scrapy`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=scraping,python
 
 **Qué es:** Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. Estándar de facto del scraping en Python desde hace más de una década, con enorme ecosistema de extensiones y base instalada masiva.
 **Stack:** Python (Twisted)
@@ -322,8 +378,22 @@ _Nombre PyPI puede diferir de 'scrapy'; verifica en pypi.org._
 **Evita si:** buscas salida lista para LLM o algo puntual sin curva de framework
 **Combina con:** `scrapely`, `crawlee-python`
 
+## `scrapydweb`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=crawlers,dashboard,log-analysis,log-parsing,scrapy,scrapy-log-analysis,scrapy-visualization,scrapyd
+
+**Qué es:** Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy. Conecta servidores Scrapyd y centraliza despliegues, tareas programadas y seguimiento de crawls.
+**Stack:** Python
+**Repo:** https://github.com/my8100/scrapydweb
+
+**Instalación** [~]: `git clone https://github.com/my8100/scrapydweb && cd scrapydweb && (uv sync || pip install -r requirements.txt)`
+_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+
+**Elige si:** operas varios spiders de Scrapy y necesitas un panel de administración
+**Evita si:** la fuente ya ofrece una API o un archivo de datos suficiente
+**Combina con:** `scrapy`
+
 ## `searxng`
-role=platform · exec=local · setup=easy · mcp=False · prov=—
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=search,research,python,docker
 
 **Qué es:** Combina resultados de más de 70 servicios sin rastrearte. Muchos agentes de investigación lo usan como API de búsqueda gratuita y propia.
 **Stack:** Python, Docker
@@ -337,7 +407,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `gpt-researcher`, `open-webui`, `vane`
 
 ## `selenium`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=browser,java,python
 
 **Qué es:** Estándar W3C WebDriver, muy usado en pruebas empresariales con Selenium Grid para paralelizar.
 **Stack:** Java, Python, C#, JavaScript
@@ -351,7 +421,7 @@ _Nombre PyPI puede diferir de 'Selenium'; verifica en pypi.org._
 **Alternativas (elige una):** `playwright`, `puppeteer`
 
 ## `skyvern`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic']
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic · tags=browser,automation,python
 
 **Qué es:** Completa formularios, compras o descargas en sitios que nunca vio, entendiendo la página con visión. Incluye UI, API y workflows.
 **Stack:** Python, Playwright, React
@@ -366,7 +436,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `browser-use`, `stagehand`, `computer-use-preview`
 
 ## `snscrape`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,python
 
 **Qué es:** Resuelve la recolección histórica de datos sociales cuando las APIs de pago no son viables o no existen.
 **Stack:** Python
@@ -381,7 +451,7 @@ _Nombre PyPI puede diferir de 'snscrape'; verifica en pypi.org._
 **Alternativas (elige una):** `agent-reach`
 
 ## `stagehand`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=['openai', 'anthropic']
+role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic · tags=browser,agents,typescript
 
 **Qué es:** Usa `act`, `extract` y `observe` para que la IA haga lo difícil y tu código lo predecible. Basado en Playwright.
 **Stack:** TypeScript, Playwright
@@ -396,7 +466,7 @@ _Nombre npm puede diferir de 'Stagehand'; verifica en npmjs.com._
 **Alternativas (elige una):** `browser-use`, `skyvern`
 
 ## `vane`
-role=app · exec=local · setup=easy · mcp=False · prov=['openai', 'local']
+role=app · exec=local · setup=easy · mcp=False · prov=openai,local · tags=search,research,local,typescript
 
 **Qué es:** Busca en la web con SearXNG y responde con citas usando modelos locales o en la nube. Incluye modos de enfoque para académico, YouTube o Reddit.
 **Stack:** TypeScript, Next.js, Docker
@@ -411,7 +481,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `gpt-researcher`
 
 ## `yt-dlp`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,scraping,python
 
 **Qué es:** Descarga videos, audios, subtítulos y metadatos de YouTube y miles de plataformas. Base de muchos pipelines de transcripción.
 **Stack:** Python, ffmpeg

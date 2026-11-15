@@ -10,7 +10,7 @@
 | Evítalo si… | necesitas plataforma completa con RAG/observabilidad (dify) | prefieres automatización general con cientos de apps; mira `n8n` |
 | Ejecución | 🔀 híbrido | 🔀 híbrido |
 | Setup | 🟢 fácil | 🟡 medio |
-| Licencia | Otra (ver repo) | Apache-2.0 |
+| Licencia | NOASSERTION | Apache-2.0 |
 | Instalación | `npm install -g flowise && npx flowise start` | `npx simstudio` |
 
 ## Regla práctica
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

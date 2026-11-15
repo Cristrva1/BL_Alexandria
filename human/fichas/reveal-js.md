@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 72.6k | MIT | JavaScript | 2026-09-30 | 📦 Sí |
+| 72.6k | MIT | JavaScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -55,7 +55,7 @@ Defines las diapositivas como elementos HTML anidados (`<section>`) y la librer�
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Slidev](slidev.md) | 49.4k | Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. |
+| [Slidev](slidev.md) | 49.5k | Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. |
 | [Marp](marp.md) | 12.7k | Ecosistema para crear presentaciones con Markdown simple y exportarlas a PDF, PPTX o HTML. |
 
 ## Enlaces
@@ -65,4 +65,4 @@ Defines las diapositivas como elementos HTML anidados (`<section>`) y la librer�
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

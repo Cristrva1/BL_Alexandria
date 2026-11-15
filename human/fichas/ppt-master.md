@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 75.5k | MIT | Python | 2026-11-09 | 📦 Sí |
+| 76.8k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
@@ -54,7 +54,7 @@ Un LLM estructura el contenido en secciones y diapositivas (título, bullets, la
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Presenton](presenton.md) | 11.8k | Generador de presentaciones con IA, open source y con API, alternativa a Gamma o Beautiful.ai. |
+| [Presenton](presenton.md) | 11.9k | Generador de presentaciones con IA, open source y con API, alternativa a Gamma o Beautiful.ai. |
 
 ## Enlaces
 
@@ -64,4 +64,4 @@ Un LLM estructura el contenido en secciones y diapositivas (título, bullets, la
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

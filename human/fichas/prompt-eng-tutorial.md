@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 39.2k | — | Jupyter Notebook | 2026-08-28 | 🆕 Aún no (sugerido) |
+| 39.3k | — | Jupyter Notebook | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
@@ -49,13 +49,13 @@ No se instala: abre los notebooks y configura tu clave de API de Anthropic.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Claude Cookbooks](claude-cookbooks.md) | 54.5k | Recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización. |
+| [Claude Cookbooks](claude-cookbooks.md) | 54.7k | Recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Prompt Engineering Guide](prompt-engineering-guide.md) | 80k | Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes. |
+| [Prompt Engineering Guide](prompt-engineering-guide.md) | 80.1k | Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes. |
 
 ## Enlaces
 
@@ -63,4 +63,4 @@ No se instala: abre los notebooks y configura tu clave de API de Anthropic.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

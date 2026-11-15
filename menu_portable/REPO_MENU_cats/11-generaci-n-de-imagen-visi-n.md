@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `codeformer`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=image,vision,python
 
 **Qué es:** Recupera detalles de caras en fotos de baja calidad con buena fidelidad.
 **Stack:** Python, PyTorch
@@ -19,7 +19,7 @@ _Nombre PyPI puede diferir de 'CodeFormer'; verifica en pypi.org._
 **Alternativas (elige una):** `gfpgan`
 
 ## `comfyui`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=—
+role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=image,python
 
 **Qué es:** Resuelve la composición de flujos de difusión complejos que una UI fija no permite.
 **Stack:** Python, GPU, PyTorch, modelos locales
@@ -34,7 +34,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `wan2gp`, `sd-webui-forge`
 
 ## `comfyui-ipadapter-plus`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=—
+role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=image,python
 
 **Qué es:** Funciona como un "LoRA de una sola imagen": le das un referente y la salida hereda su look.
 **Stack:** Python, ComfyUI, CLIP vision
@@ -48,7 +48,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `comfyui`
 
 ## `controlnet`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=—
+role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=image,python
 
 **Qué es:** Resuelve el problema de que el texto por sí solo no controla la composición de la imagen.
 **Stack:** Python, PyTorch, difusión, GPU
@@ -62,7 +62,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `diffusers`, `comfyui`
 
 ## `deep-live-cam`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=—
+role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=vision,image,python
 
 **Qué es:** Convierte un cambio de rostro, que normalmente requiere pipeline complejo, en un flujo de "un clic".
 **Stack:** Python, PyTorch, ONNX Runtime, GPU
@@ -77,7 +77,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `facefusion`
 
 ## `diffusers`
-role=library · exec=local · setup=heavy · mcp=False · prov=—
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=image,python
 
 **Qué es:** Es la capa de abstracción que unifica el zoo de modelos de difusión bajo una misma interfaz Python.
 **Stack:** Python, PyTorch, Hugging Face Hub
@@ -91,7 +91,7 @@ _Nombre PyPI puede diferir de 'diffusers'; verifica en pypi.org._
 **Combina con:** `controlnet`, `cosmos`
 
 ## `face-recognition`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=image,vision,python
 
 **Qué es:** Envuelve dlib para que el reconocimiento facial sea trivial desde un script.
 **Stack:** Python, dlib
@@ -106,7 +106,7 @@ _Nombre PyPI puede diferir de 'face_recognition'; verifica en pypi.org._
 **Alternativas (elige una):** `insightface`
 
 ## `facefusion`
-role=app · exec=local · setup=medium · mcp=False · prov=—
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=image,video,vision,python
 
 **Qué es:** Herramienta líder para face swap, mejora facial y sincronía labial, con controles de uso responsable.
 **Stack:** Python, ONNX, Gradio
@@ -121,7 +121,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `deep-live-cam`
 
 ## `flux`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=['local']
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=image,python
 
 **Qué es:** Modelos de texto a imagen de alta calidad, con variantes para edición, relleno y control.
 **Stack:** Python, PyTorch
@@ -136,7 +136,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `stable-diffusion-webui`
 
 ## `fooocus`
-role=app · exec=local · setup=medium · mcp=False · prov=—
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=image,python
 
 **Qué es:** Es la opción más sencilla para empezar con difusión local.
 **Stack:** Python, GPU, PyTorch, modelos SDXL locales
@@ -150,7 +150,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `real-esrgan`
 
 ## `gfpgan`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=image,python
 
 **Qué es:** Resuelve el problema concreto de las caras "fundidas" que aparecen al reescalar o comprimir fotos.
 **Stack:** Python, PyTorch, GPU opcional
@@ -165,7 +165,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `codeformer`
 
 ## `insightface`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=vision,image,python
 
 **Qué es:** Base de muchas herramientas faciales; ofrece modelos de reconocimiento de última generación.
 **Stack:** Python, ONNX
@@ -180,7 +180,7 @@ _Nombre PyPI puede diferir de 'InsightFace'; verifica en pypi.org._
 **Alternativas (elige una):** `face-recognition`
 
 ## `invokeai`
-role=app · exec=local · setup=heavy · mcp=False · prov=—
+role=app · exec=local · setup=heavy · mcp=False · prov=— · tags=image,typescript
 
 **Qué es:** Resuelve la fragmentación de herramientas SD reuniendo generación, edición y control en una sola app self-hosted.
 **Stack:** Python, PyTorch, React, TypeScript, Docker
@@ -195,7 +195,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `krita-ai-diffusion`
 
 ## `krita-ai-diffusion`
-role=app · exec=local · setup=medium · mcp=False · prov=['local']
+role=app · exec=local · setup=medium · mcp=False · prov=local · tags=image,design,python
 
 **Qué es:** Pinta, selecciona y genera dentro de tu editor de imágenes favorito; usa ComfyUI por debajo.
 **Stack:** Python, Krita, ComfyUI
@@ -210,7 +210,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `invokeai`
 
 ## `label-studio`
-role=platform · exec=local · setup=easy · mcp=False · prov=—
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=data,vision,training,docker
 
 **Qué es:** Crea datasets para entrenar o evaluar modelos con interfaces de anotación configurables y preetiquetado con IA.
 **Stack:** Python, Django, React
@@ -224,7 +224,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `ultralytics`, `sam2`
 
 ## `liveportrait`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=—
+role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=image,vision,python
 
 **Qué es:** Convierte una foto en un avatar que sigue las expresiones de un "conductor".
 **Stack:** Python, PyTorch, GPU
@@ -238,7 +238,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `moviepy`
 
 ## `open-generative-ai`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=image,video,javascript
 
 **Qué es:** Centraliza la generación visual sin filtros restrictivos ni suscripción.
 **Stack:** Python, Node.js
@@ -252,7 +252,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `remotion`
 
 ## `opencv`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vision,image,cpp,python
 
 **Qué es:** Procesamiento de imagen y video, detección, calibración de cámaras y más, en C++ y Python.
 **Stack:** C++, Python
@@ -266,7 +266,7 @@ _Nombre PyPI puede diferir de 'OpenCV'; verifica en pypi.org._
 **Combina con:** `ultralytics`, `supervision`
 
 ## `real-esrgan`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=image,python
 
 **Qué es:** A diferencia de los upscalers bicúbicos, infiere detalle plausible al ampliar.
 **Stack:** Python, PyTorch, GPU
@@ -280,7 +280,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `gfpgan`
 
 ## `rembg`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=image,python
 
 **Qué es:** Elimina fondos de fotos de producto o retratos con modelos como U2Net o BiRefNet.
 **Stack:** Python, ONNX
@@ -293,8 +293,21 @@ _Nombre PyPI puede diferir de 'rembg'; verifica en pypi.org._
 **Evita si:** necesitas segmentar objetos específicos; mira `sam2`
 **Combina con:** `comfyui`
 
+## `ruview`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=sensores,claude,claude-code,esp32,firmware,home-assistant,home-automation,iot
+
+**Qué es:** Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento. Procesa señales de radio y conecta componentes de detección con paneles y sistemas de domótica.
+**Stack:** Rust, pyproject.toml
+**Repo:** https://github.com/ruvnet/RuView
+
+**Instalación** [?]: `git clone https://github.com/ruvnet/RuView (verificar README para build/run)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** quieres investigar percepción mediante radiofrecuencia y sensores WiFi
+**Evita si:** no dispones de datos o hardware compatibles con el proyecto
+
 ## `sam2`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=vision,video,python
 
 **Qué es:** Marca un objeto en un fotograma y SAM 2 lo sigue en todo el video. Más rápido que SAM en imágenes.
 **Stack:** Python, PyTorch
@@ -309,7 +322,7 @@ _Nombre PyPI puede diferir de 'SAM 2'; verifica en pypi.org._
 **Alternativas (elige una):** `segment-anything`
 
 ## `sd-webui-controlnet`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=—
+role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=vision,image,python
 
 **Qué es:** Lleva el control composicional al flujo de trabajo habitual de la WebUI sin tocar código.
 **Stack:** Python, SD WebUI (AUTOMATIC1111), modelos ControlNet
@@ -323,7 +336,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `stable-diffusion-webui`, `controlnet`
 
 ## `sd-webui-forge`
-role=app · exec=local · setup=medium · mcp=False · prov=['local']
+role=app · exec=local · setup=medium · mcp=False · prov=local · tags=image,local,python
 
 **Qué es:** Mantiene la interfaz de AUTOMATIC1111 con mejoras de rendimiento y soporte de modelos nuevos como FLUX.
 **Stack:** Python, Gradio, PyTorch
@@ -338,7 +351,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `stable-diffusion-webui`, `comfyui`
 
 ## `segment-anything`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=vision,image,python
 
 **Qué es:** Genera máscaras precisas sin entrenamiento para el objeto que indiques. Su sucesor SAM 2 añade video.
 **Stack:** Python, PyTorch
@@ -353,7 +366,7 @@ _Nombre PyPI puede diferir de 'Segment Anything (SAM)'; verifica en pypi.org._
 **Alternativas (elige una):** `sam2`
 
 ## `stable-diffusion-webui`
-role=app · exec=local · setup=heavy · mcp=False · prov=—
+role=app · exec=local · setup=heavy · mcp=False · prov=— · tags=vision,image,python
 
 **Qué es:** Es la UI que popularizó la difusión local.
 **Stack:** Python, GPU, PyTorch, Gradio, modelos locales
@@ -368,7 +381,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `sd-webui-forge`, `flux`
 
 ## `supervision`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vision,python
 
 **Qué es:** Se conecta a cualquier detector y te da utilidades para dibujar, contar en zonas, seguir objetos y evaluar.
 **Stack:** Python
@@ -382,7 +395,7 @@ _Nombre PyPI puede diferir de 'supervision'; verifica en pypi.org._
 **Combina con:** `ultralytics`, `opencv`
 
 ## `ultralytics`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vision,training,python
 
 **Qué es:** Entrena un detector con tus datos en pocas líneas y expórtalo a ONNX, TensorRT o móvil.
 **Stack:** Python, PyTorch

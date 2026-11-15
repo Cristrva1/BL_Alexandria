@@ -5,12 +5,12 @@
 | | [MoviePy](../fichas/moviepy.md) | [remotion](../fichas/remotion.md) |
 |---|---|---|
 | Qué hace | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. | Framework para crear videos por código usando React, definiendo cada frame como un componente y renderizando a MP4. |
-| ⭐ Estrellas | 15.1k | 72.2k |
+| ⭐ Estrellas | 15.2k | 73.2k |
 | Elígelo si… | ensamblas video desde Python y quieres controlar cada clip por código | generas video a escala con React y quieres variantes parametrizadas |
 | Evítalo si… | prefieres plantillas en React (`remotion`) o en HTML (`hyperframes`), o solo necesitas cortar sin recodificar (`lossless-cut`) | trabajas en Python (moviepy) o buscas un editor visual |
 | Ejecución | 🏠 local | 🏠 local |
 | Setup | 🟢 fácil | 🟡 medio |
-| Licencia | MIT | Otra (ver repo) |
+| Licencia | MIT | NOASSERTION |
 | Instalación | `pip install moviepy` | `npm create video` |
 
 ## Regla práctica
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

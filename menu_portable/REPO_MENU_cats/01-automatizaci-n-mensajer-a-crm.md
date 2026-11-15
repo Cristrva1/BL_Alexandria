@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `activepieces`
-role=platform · exec=hybrid · setup=medium · mcp=True · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,typescript,docker
 
 **Qué es:** Orquesta tus apps con flujos visuales sin código y conserva el control al alojarlo en tu servidor.
 **Stack:** Node.js, TypeScript, self-host/web
@@ -19,7 +19,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `n8n`
 
 ## `appsmith`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=ui,automation,typescript,docker
 
 **Qué es:** Arrastra widgets, conéctalos a más de 25 bases de datos o cualquier API y añade lógica en JavaScript. Pensada para equipos que construyen backoffices rápido.
 **Stack:** TypeScript, React, Java, MongoDB, Docker
@@ -34,7 +34,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `tooljet`, `budibase`, `nocodb`
 
 ## `awesome-n8n-templates`
-role=directory · exec=local · setup=easy · mcp=False · prov=—
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=automation,prompts
 
 **Qué es:** Reúne workflows de n8n ordenados por tema (Gmail, Telegram, WhatsApp, Notion, OpenAI y más). Sirve para arrancar rápido y aprender patrones de automatización.
 **Stack:** JSON de n8n
@@ -48,7 +48,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `n8n`, `n8n-mcp`, `n8n-skills`
 
 ## `baileys`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=whatsapp,chatbot,typescript
 
 **Qué es:** Implementa el protocolo de WhatsApp Web directamente, así que consume muy pocos recursos. Es la base de muchas APIs de WhatsApp, incluida Evolution API.
 **Stack:** TypeScript, Node.js, WebSocket
@@ -63,7 +63,7 @@ _Nombre npm puede diferir de 'Baileys'; verifica en npmjs.com._
 **Alternativas (elige una):** `whatsapp-web-js`, `waha`
 
 ## `botpress`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=chatbot,agents,typescript
 
 **Qué es:** Combina un estudio visual con código para crear agentes que usan bases de conocimiento, herramientas y canales. Su producto principal hoy es cloud; el repo contiene SDK, integraciones y CLI.
 **Stack:** TypeScript, Node.js
@@ -78,7 +78,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `typebot`, `rasa`
 
 ## `budibase`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,agents,docker
 
 **Qué es:** Genera apps CRUD, formularios y flujos a partir de bases existentes y ahora añade agentes de IA agnósticos de modelo. Pensada para equipos de operaciones.
 **Stack:** TypeScript, Svelte, Node.js, CouchDB, Docker
@@ -92,8 +92,21 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `n8n`
 **Alternativas (elige una):** `appsmith`, `tooljet`, `nocodb`
 
+## `cal.diy`
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=motores,next-auth,nextjs,open-source,postgresql,prisma,t3-stack,tailwindcss
+
+**Qué es:** Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. Despliega la aplicación de calendario y configura base de datos, disponibilidad e integraciones.
+**Stack:** TypeScript, Docker, Node.js
+**Repo:** https://github.com/calcom/cal.diy
+
+**Instalación** [~]: `git clone https://github.com/calcom/cal.diy && cd cal.diy && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** quieres estudiar una agenda autoalojada para uso personal
+**Evita si:** solo necesitas una integración sencilla sin operar una plataforma
+
 ## `chatwoot`
-role=platform · exec=local · setup=heavy · mcp=False · prov=—
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=automation,crm,ruby,docker
 
 **Qué es:** Reúne WhatsApp, email, web chat y redes en una sola bandeja, con paso a un humano cuando el bot no basta. Alternativa abierta a Intercom o Zendesk.
 **Stack:** Ruby on Rails, Vue.js, PostgreSQL, Redis, Docker
@@ -106,8 +119,21 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Evita si:** solo necesitas enviar mensajes salientes (evolution-api)
 **Combina con:** `evolution-api`, `novu`
 
+## `compai-crm`
+role=platform · exec=cloud · setup=heavy · mcp=False · prov=— · tags=crm,typescript
+
+**Qué es:** CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. Un agente trabaja sobre una cola y un presupuesto de investigación y mantiene la información del CRM.
+**Stack:** TypeScript, Docker, Node.js
+**Repo:** https://github.com/trycompai/crm
+
+**Instalación** [+]: `Crear cuenta / API key en el proveedor (no self-host).`
+_Servicio gestionado; no se clona._
+
+**Elige si:** quieres estudiar un CRM donde el agente organiza el seguimiento
+**Evita si:** solo necesitas una integración sencilla sin operar una plataforma
+
 ## `erpnext`
-role=platform · exec=local · setup=heavy · mcp=False · prov=—
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=crm,python
 
 **Qué es:** Cubre la operación completa de una empresa sin licencias de pago. Muy usado por pymes y en manufactura y distribución.
 **Stack:** Python, Frappe, MariaDB, JavaScript
@@ -122,7 +148,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `odoo`
 
 ## `evolution-api`
-role=platform · exec=local · setup=heavy · mcp=False · prov=—
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=automation,whatsapp,typescript,docker
 
 **Qué es:** Conecta WhatsApp a tu stack mediante una API REST propia, sin quedar atado a un proveedor cerrado.
 **Stack:** Node.js/TypeScript, Fastify, Redis, Docker
@@ -137,7 +163,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `whatsapp-web-js`, `waha`
 
 ## `fluxer`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=whatsapp,chatbot,typescript
 
 **Qué es:** Apunta a unificar varios modelos generativos tras un cliente único.
 **Stack:** web/TS
@@ -151,7 +177,7 @@ _Stack no claro; revisa el README tras clonar._
 **Combina con:** `open-generative-ai`
 
 ## `huginn`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,ruby,docker
 
 **Qué es:** Vigila webs, feeds y APIs y dispara acciones cuando algo cambia, todo alojado por ti y sin depender de terceros.
 **Stack:** Ruby on Rails, MySQL/PostgreSQL, self-host
@@ -166,7 +192,7 @@ _Stack no claro; revisa el README tras clonar._
 **Alternativas (elige una):** `n8n`, `node-red`
 
 ## `kestra`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,data,java,docker
 
 **Qué es:** Define flujos en YAML con un editor web, cientos de plugins y disparadores por calendario o eventos. Pensado para equipos de datos y plataforma que quieren orquestación como código.
 **Stack:** Java, Vue, YAML, Docker
@@ -181,7 +207,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `windmill`, `trigger-dev`
 
 ## `listmonk`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,email,go,docker
 
 **Qué es:** Envía newsletters y campañas a miles de suscriptores desde un solo binario ligero que consume muy pocos recursos.
 **Stack:** Go, PostgreSQL, self-host
@@ -195,7 +221,7 @@ _Stack no claro; revisa el README tras clonar._
 **Combina con:** `mautic`, `n8n`
 
 ## `mautic`
-role=platform · exec=local · setup=heavy · mcp=False · prov=—
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=automation,email,php
 
 **Qué es:** Nutre leads por email con reglas y segmentos automáticos, sin ceder los datos de tus clientes a un SaaS.
 **Stack:** PHP/Symfony, MySQL, self-host
@@ -209,7 +235,7 @@ _Stack no claro; revisa el README tras clonar._
 **Combina con:** `listmonk`, `marketingskills`
 
 ## `n8n`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,typescript,docker
 
 **Qué es:** Conecta cualquier app con cualquier otra en tu propio servidor, sin pagar una suscripción mensual por cada flujo.
 **Stack:** Node.js, TypeScript, Docker
@@ -224,7 +250,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `activepieces`, `huginn`, `windmill`, `node-red`
 
 ## `n8n-io`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,typescript,docker
 
 **Qué es:** No aporta nada distinto a la ficha principal.
 **Stack:** Node.js, TypeScript
@@ -238,7 +264,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `n8n`
 
 ## `n8n-mcp`
-role=runtime · exec=hybrid · setup=medium · mcp=True · prov=—
+role=runtime · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,mcp,typescript
 
 **Qué es:** Resuelve el problema de que un LLM invente parámetros de nodos que no existen y genere workflows rotos.
 **Stack:** Node.js/TypeScript, MCP
@@ -252,7 +278,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `n8n`, `n8n-skills`
 
 ## `n8n-skills`
-role=skill · exec=cloud · setup=easy · mcp=False · prov=—
+role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,automation
 
 **Qué es:** Enseña a tu agente de código a escribir flujos de n8n en JSON que funcionan a la primera, con menos idas y vueltas de errores.
 **Stack:** `SKILL.md`, Markdown
@@ -266,7 +292,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `n8n`, `n8n-mcp`
 
 ## `nocodb`
-role=platform · exec=local · setup=easy · mcp=False · prov=—
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=data,automation,docker
 
 **Qué es:** Ofrece vistas de tabla, kanban, galería y formularios sobre PostgreSQL, MySQL o SQLite, con API REST automática. Útil como backoffice rápido para equipos no técnicos.
 **Stack:** TypeScript, Vue, Node.js, Docker
@@ -281,7 +307,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `appsmith`, `budibase`
 
 ## `node-red`
-role=platform · exec=local · setup=easy · mcp=False · prov=—
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=automation,javascript,docker
 
 **Qué es:** Conecta dispositivos, APIs y servicios arrastrando nodos en el navegador. Es muy usado en IoT, domótica e industria por su ligereza y su enorme biblioteca de nodos de la comunidad.
 **Stack:** JavaScript, Node.js, Docker
@@ -295,7 +321,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `n8n`, `huginn`
 
 ## `novu`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,email,typescript
 
 **Qué es:** Envía notificaciones por email, SMS, push y chat desde una sola API, sin integrar y mantener cada proveedor por separado.
 **Stack:** Node.js, TypeScript, Docker
@@ -309,7 +335,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `chatwoot`, `activepieces`
 
 ## `odoo`
-role=platform · exec=local · setup=heavy · mcp=False · prov=—
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=crm,python,postgres
 
 **Qué es:** Integra CRM, ventas, facturación, inventario, RR. HH. y sitio web en una sola plataforma modular. La usan pymes y grandes empresas en todo el mundo.
 **Stack:** Python, PostgreSQL, JavaScript
@@ -324,7 +350,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `erpnext`
 
 ## `openwa`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=whatsapp,chatbot,typescript
 
 **Qué es:** Envía y recibe mensajes de WhatsApp desde tu propio script con una API sencilla y expresiva.
 **Stack:** Node.js, Puppeteer, bindings Python
@@ -338,7 +364,7 @@ _Nombre PyPI puede diferir de 'OpenWA'; verifica en pypi.org._
 **Combina con:** `n8n`, `evolution-api`
 
 ## `rasa`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=—
+role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=chatbot,agents,python
 
 **Qué es:** Permite crear asistentes de texto y voz con control total del diálogo y de los datos. Muy usado en empresas que necesitan bots on-premise y predecibles.
 **Stack:** Python, TensorFlow, Docker
@@ -353,7 +379,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `botpress`
 
 ## `self-hosted-ai-starter-kit`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,local,rag,docker
 
 **Qué es:** Kit oficial de n8n que levanta un entorno de IA privado: n8n para orquestar, Ollama para modelos, Qdrant como base vectorial y PostgreSQL. Útil para prototipar agentes y RAG sin enviar datos fuera.
 **Stack:** Docker Compose, n8n, Ollama, Qdrant, PostgreSQL
@@ -367,7 +393,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `n8n`, `ollama`, `qdrant`
 
 ## `tooljet`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=ui,automation,docker
 
 **Qué es:** Construye apps internas arrastrando componentes y conectando bases y APIs, o genéralas describiéndolas con IA. Pensada para equipos de operaciones y TI.
 **Stack:** TypeScript, React, Node.js, PostgreSQL
@@ -382,7 +408,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `appsmith`, `budibase`
 
 ## `trigger-dev`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,agents,typescript
 
 **Qué es:** Escribe tareas largas o con reintentos en TypeScript dentro de tu app y Trigger.dev las ejecuta, reintenta y monitorea. Ideal para equipos de producto con Next.js o Node que no quieren operar colas.
 **Stack:** TypeScript, Node.js, PostgreSQL, Docker
@@ -397,7 +423,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `windmill`, `kestra`
 
 ## `twenty-main`
-role=platform · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=automation,crm,typescript,docker
 
 **Qué es:** La premisa es tratar el CRM como una pieza más de tu stack: lo construyes, lo despliegas y lo versionas igual que el código.
 **Stack:** TypeScript, React, NestJS, PostgreSQL, Docker
@@ -411,7 +437,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `evolution-api`, `n8n`
 
 ## `typebot`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=chatbot,automation,typescript
 
 **Qué es:** Diseña conversaciones con bloques arrastrables (preguntas, condiciones, integraciones, IA) y publícalas en web o WhatsApp. Pensado para captar leads y formularios conversacionales.
 **Stack:** TypeScript, Next.js, PostgreSQL, Docker
@@ -426,7 +452,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `botpress`
 
 ## `waha`
-role=platform · exec=local · setup=easy · mcp=False · prov=—
+role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=whatsapp,automation,docker
 
 **Qué es:** Expone WhatsApp como API HTTP con webhooks, lista para conectar a n8n o a tu backend. Ofrece motores basados en navegador o en WebSocket.
 **Stack:** TypeScript, Go, Docker
@@ -441,7 +467,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `evolution-api`, `whatsapp-web-js`, `baileys`
 
 ## `whatsapp-agentkit`
-role=skill · exec=hybrid · setup=easy · mcp=False · prov=—
+role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=agents,automation,python
 
 **Qué es:** Arranca un bot de WhatsApp con IA sin escribir código, a partir de una plantilla guiada.
 **Stack:** Node.js/Python, APIs de WhatsApp
@@ -455,7 +481,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `evolution-api`, `n8n-mcp`
 
 ## `whatsapp-web-js`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=whatsapp,chatbot,javascript
 
 **Qué es:** Permite enviar y recibir mensajes, medios y grupos desde código usando una sesión de WhatsApp Web. Muy usada para bots y prototipos.
 **Stack:** JavaScript, Node.js, Puppeteer
@@ -469,8 +495,22 @@ _Nombre npm puede diferir de 'whatsapp-web.js'; verifica en npmjs.com._
 **Combina con:** `n8n`, `chatwoot`
 **Alternativas (elige una):** `baileys`, `waha`, `evolution-api`
 
+## `whatsmeow`
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=whatsapp,go,golang,whatsapp-web
+
+**Qué es:** Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web. Gestiona la sesión del cliente y permite enviar mensajes, recibir eventos y mantener el estado de la cuenta.
+**Stack:** Go, Go modules
+**Repo:** https://github.com/tulir/whatsmeow
+
+**Instalación** [?]: `git clone https://github.com/tulir/whatsmeow (verificar README para install)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** necesitas integrar WhatsApp Web en un servicio escrito en Go
+**Evita si:** solo necesitas una integración sencilla sin operar una plataforma
+**Combina con:** `n8n`
+
 ## `windmill`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,agents,rust,docker
 
 **Qué es:** Convierte scripts de Python, TypeScript, Go o SQL en workflows, endpoints y apps con UI generada. Sirve a equipos técnicos que quieren la flexibilidad del código con la comodidad de un orquestador visual.
 **Stack:** Rust, TypeScript, Svelte, PostgreSQL, Docker

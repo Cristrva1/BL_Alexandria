@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 135k | Apache-2.0 | Rust | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 135k | Apache-2.0 | Rust | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
@@ -49,17 +49,17 @@ Un CLI en Rust conversa con modelos de OpenAI y ejecuta las herramientas en un s
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Agent Skills (Addy Osmani)](agent-skills.md) | 115k | Colección de skills de ingeniería de producción para agentes de código, de Addy Osmani. |
-| [Spec Kit](spec-kit.md) | 149k | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. |
-| [Context7](context7.md) | 64.5k | Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. |
+| [Agent Skills (Addy Osmani)](agent-skills.md) | 118k | Colección de skills de ingeniería de producción para agentes de código, de Addy Osmani. |
+| [Spec Kit](spec-kit.md) | 150k | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. |
+| [Context7](context7.md) | 64.8k | Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Claude Code](claude-code.md) | 155k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
+| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 | [Gemini CLI](gemini-cli.md) | 109k | Agente de IA open source de Google que lleva Gemini a tu terminal, con cuota gratuita generosa. |
-| [OpenCode](opencode.md) | 226k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
+| [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 
 ## Enlaces
 
@@ -67,4 +67,4 @@ Un CLI en Rust conversa con modelos de OpenAI y ejecuta las herramientas en un s
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

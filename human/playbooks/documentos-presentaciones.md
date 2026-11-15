@@ -21,9 +21,9 @@ flowchart LR
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
 | 1 | [markitdown](../fichas/markitdown.md) | Convierte Office, HTML y PDF simples a Markdown | 195k | `pip install markitdown` |
-| 2 | [Docling](../fichas/docling.md) | Para PDFs complejos: tablas, layout y OCR | 70.4k | `pip install docling` |
-| 3 | [ppt-master](../fichas/ppt-master.md) | Genera PowerPoint nativo y editable con IA | 75.5k | `git clone` |
-| 4 | [Slidev](../fichas/slidev.md) | Slides web desde Markdown para presentaciones técnicas | 49.4k | `npm init slidev@latest` |
+| 2 | [Docling](../fichas/docling.md) | Para PDFs complejos: tablas, layout y OCR | 70.6k | `pip install docling` |
+| 3 | [ppt-master](../fichas/ppt-master.md) | Genera PowerPoint nativo y editable con IA | 76.8k | `git clone` |
+| 4 | [Slidev](../fichas/slidev.md) | Slides web desde Markdown para presentaciones técnicas | 49.5k | `npm init slidev@latest` |
 | 5 | [Marp](../fichas/marp.md) | Markdown → PDF/PPTX con una sintaxis mínima | 12.7k | `npm i -g @marp-team/marp-cli` |
 
 ## 🔌 Cómo se conecta
@@ -43,4 +43,4 @@ Si el contenido ya está en Markdown, salta la conversión. Si necesitas un dise
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

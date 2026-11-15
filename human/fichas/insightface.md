@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 30.2k | — | Python | 2026-10-19 | 🆕 Aún no (sugerido) |
+| 30.2k | — | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
@@ -51,7 +51,7 @@ Modelos de detección y embeddings faciales servidos en ONNX.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [FaceFusion](facefusion.md) | 30.6k | Plataforma para intercambio y mejora de rostros en imágenes y video. |
+| [FaceFusion](facefusion.md) | 30.7k | Plataforma para intercambio y mejora de rostros en imágenes y video. |
 
 ## Alternativas (elige una)
 
@@ -66,4 +66,4 @@ Modelos de detección y embeddings faciales servidos en ONNX.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

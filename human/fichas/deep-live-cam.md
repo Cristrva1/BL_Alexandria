@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 97.9k | AGPL-3.0 | Python | 2026-11-08 | 📦 Sí |
+| 98.1k | AGPL-3.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
@@ -57,7 +57,7 @@ Combina detección facial (insightface/face_swapper) y reenactment sobre PyTorch
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [FaceFusion](facefusion.md) | 30.6k | Plataforma para intercambio y mejora de rostros en imágenes y video. |
+| [FaceFusion](facefusion.md) | 30.7k | Plataforma para intercambio y mejora de rostros en imágenes y video. |
 
 ## Enlaces
 
@@ -66,4 +66,4 @@ Combina detección facial (insightface/face_swapper) y reenactment sobre PyTorch
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

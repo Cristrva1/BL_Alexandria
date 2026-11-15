@@ -5,7 +5,7 @@
 | | [DeepEval](../fichas/deepeval.md) | [promptfoo](../fichas/promptfoo.md) |
 |---|---|---|
 | Qué hace | Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. | CLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad. |
-| ⭐ Estrellas | 19.4k | 27k |
+| ⭐ Estrellas | 19.5k | 27.2k |
 | Elígelo si… | quieres tests de LLM en Python como pytest | quieres pruebas automáticas de prompts y seguridad |
 | Evítalo si… | prefieres configurar en YAML y comparar modelos; mira `promptfoo` | necesitas observabilidad en producción; mira `langfuse` |
 | Ejecución | 🔀 híbrido | 🏠 local |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

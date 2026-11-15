@@ -5,7 +5,7 @@
 | | [Chatterbox](../fichas/chatterbox.md) | [Kokoro](../fichas/kokoro.md) |
 |---|---|---|
 | Qué hace | Modelo de texto a voz open source de Resemble AI con clonación de voz y control de emoción. | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. |
-| ⭐ Estrellas | 27.7k | 10k |
+| ⭐ Estrellas | 27.8k | 10.1k |
 | Elígelo si… | quieres clonar voces con calidad alta y licencia libre | quieres TTS ligero, rápido y con licencia permisiva |
 | Evítalo si… | necesitas algo muy ligero en CPU; mira `kokoro` | necesitas clonar voces; mira `chatterbox` |
 | Ejecución | 🏠 local | 🏠 local |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

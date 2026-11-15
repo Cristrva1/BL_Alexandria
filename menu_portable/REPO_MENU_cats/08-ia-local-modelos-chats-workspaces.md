@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `anything-llm`
-role=app · exec=local · setup=easy · mcp=True · prov=['openai', 'anthropic', 'local']
+role=app · exec=local · setup=easy · mcp=True · prov=openai,anthropic,local · tags=rag,agents,local,javascript
 
 **Qué es:** Organiza documentos en espacios de trabajo, crea RAG sin configurar nada y añade agentes con herramientas. Escritorio o Docker multiusuario.
 **Stack:** JavaScript, Node.js, React
@@ -18,8 +18,22 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `ollama`
 **Alternativas (elige una):** `open-webui`, `khoj`, `private-gpt`
 
+## `chatbox`
+role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=chats,assistant,chatbot,chatgpt,claude,claude-code,copilot,deepseek
+
+**Qué es:** Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz común. Configura conexiones de modelos y conserva conversaciones en una aplicación multiplataforma.
+**Stack:** TypeScript, Node.js
+**Repo:** https://github.com/chatboxai/chatbox
+
+**Instalación** [~]: `git clone https://github.com/chatboxai/chatbox && cd chatbox && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+
+**Elige si:** quieres un cliente de escritorio que conecte varios modelos
+**Evita si:** no quieres mantener modelos o un entorno de ejecución propio
+**Alternativas (elige una):** `jan`
+
 ## `cherry-studio`
-role=app · exec=hybrid · setup=easy · mcp=True · prov=['openai', 'anthropic', 'google', 'local']
+role=app · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=chatbot,agents,typescript
 
 **Qué es:** Chatea con decenas de proveedores y modelos locales, usa asistentes predefinidos, MCP y base de conocimiento desde una sola app.
 **Stack:** TypeScript, Electron, React
@@ -34,7 +48,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `jan`, `lobehub`
 
 ## `exo`
-role=runtime · exec=local · setup=medium · mcp=False · prov=['local']
+role=runtime · exec=local · setup=medium · mcp=False · prov=local · tags=inference,local,python
 
 **Qué es:** Une Macs, PCs o teléfonos en un clúster que comparte la carga de un modelo que no cabría en uno solo.
 **Stack:** Python, MLX
@@ -48,7 +62,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `open-webui`
 
 ## `hermes-desktop`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=agents,ui,typescript
 
 **Qué es:** Para quien quiere usar Hermes Agent como aplicación y no solo desde la terminal.
 **Stack:** TypeScript, Electron
@@ -62,7 +76,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `hermes-agent`
 
 ## `jan`
-role=app · exec=local · setup=easy · mcp=False · prov=['local', 'openai']
+role=app · exec=local · setup=easy · mcp=False · prov=local,openai · tags=chatbot,local,rust
 
 **Qué es:** Descarga modelos y chatea en local con privacidad total, o conecta APIs en la nube si quieres. Incluye servidor local compatible con OpenAI.
 **Stack:** Rust, TypeScript, Tauri
@@ -74,10 +88,10 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Elige si:** quieres un ChatGPT local en tu escritorio
 **Evita si:** necesitas multiusuario; mira `open-webui`
 **Combina con:** `ollama`
-**Alternativas (elige una):** `cherry-studio`, `textgen`
+**Alternativas (elige una):** `cherry-studio`, `textgen`, `chatbox`
 
 ## `khoj`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic', 'local']
+role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=research,rag,agents,python
 
 **Qué es:** Busca en tus documentos y en internet, crea agentes personalizados, programa resúmenes y hace investigación profunda. Accesible desde web, Obsidian, Emacs o WhatsApp.
 **Stack:** Python, Django, Next.js
@@ -92,7 +106,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `anything-llm`, `surfsense`
 
 ## `librechat`
-role=app · exec=hybrid · setup=medium · mcp=True · prov=['openai', 'anthropic', 'google', 'local']
+role=app · exec=hybrid · setup=medium · mcp=True · prov=openai,anthropic,google,local · tags=chatbot,agents,typescript,docker
 
 **Qué es:** Une OpenAI, Anthropic, Google, Azure, OpenRouter y modelos locales con agentes, artifacts, búsqueda y control de usuarios.
 **Stack:** TypeScript, React, Node.js, MongoDB
@@ -107,7 +121,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `open-webui`, `lobehub`
 
 ## `llama-cpp`
-role=runtime · exec=local · setup=medium · mcp=False · prov=['local']
+role=runtime · exec=local · setup=medium · mcp=False · prov=local · tags=inference,local,cpp
 
 **Qué es:** Base de Ollama, LM Studio y muchas apps. Incluye un servidor compatible con OpenAI y herramientas para cuantizar modelos GGUF.
 **Stack:** C++, C, CUDA, Metal
@@ -122,7 +136,7 @@ _Stack no claro; revisa el README tras clonar._
 **Alternativas (elige una):** `ollama`, `llamafile`, `localai`
 
 ## `llamafile`
-role=runtime · exec=local · setup=easy · mcp=False · prov=['local']
+role=runtime · exec=local · setup=easy · mcp=False · prov=local · tags=inference,local,cpp
 
 **Qué es:** Empaqueta modelo y motor en un ejecutable que funciona en Windows, macOS y Linux sin instalar nada. Proyecto de Mozilla.
 **Stack:** C++, Cosmopolitan
@@ -136,7 +150,7 @@ _Stack no claro; revisa el README tras clonar._
 **Alternativas (elige una):** `ollama`, `llama-cpp`
 
 ## `llmfit`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=—
+role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=inference,local,rust
 
 **Qué es:** Resuelve la elección subjetiva de modelo: la conviertes en un flujo objetivo y reproducible con métricas.
 **Stack:** Go/Python
@@ -150,7 +164,7 @@ _Nombre PyPI puede diferir de 'llmfit'; verifica en pypi.org._
 **Combina con:** `litellm`, `langfuse`
 
 ## `lobehub`
-role=app · exec=hybrid · setup=easy · mcp=True · prov=['openai', 'anthropic', 'google', 'local']
+role=app · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=chatbot,agents,typescript
 
 **Qué es:** Antes LobeChat: chat elegante con agentes, plugins, base de conocimiento y despliegue en un clic. Ahora añade agentes que trabajan en tus chats de equipo.
 **Stack:** TypeScript, Next.js
@@ -165,7 +179,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `open-webui`, `librechat`, `cherry-studio`
 
 ## `localai`
-role=runtime · exec=local · setup=medium · mcp=False · prov=['local']
+role=runtime · exec=local · setup=medium · mcp=False · prov=local · tags=inference,local,go,docker
 
 **Qué es:** Sustituye la API de OpenAI por una propia que corre modelos abiertos de muchos tipos. Útil para apps que ya hablan con OpenAI.
 **Stack:** Go, C++, Docker
@@ -179,8 +193,34 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `anything-llm`
 **Alternativas (elige una):** `ollama`, `llama-cpp`
 
+## `muse-spark`
+role=app · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=workspaces,download-muse-ai,download-muse-spark,muse,muse-ai,muse-spark,muse-spark-1-1,muse-spark-1-2
+
+**Qué es:** Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas. El README describe un cliente multimodal y distribuciones binarias; el alcance real no se comprobó ejecutándolo.
+**Stack:** Python
+**Repo:** https://github.com/muse-spark-app/muse-spark
+
+**Instalación** [~]: `git clone https://github.com/muse-spark-app/muse-spark && cd muse-spark && (uv sync || pip install -r requirements.txt)`
+_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+
+**Elige si:** solo deseas revisar su procedencia y código antes de evaluar el proyecto
+**Evita si:** no quieres mantener modelos o un entorno de ejecución propio
+
+## `nextcloud-server`
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=workspaces,cloud,collaboration,decentralized,design,distributed,enterprise,federation
+
+**Qué es:** Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. Opera una nube personal con usuarios, almacenamiento y aplicaciones integrables.
+**Stack:** PHP, Node.js
+**Repo:** https://github.com/nextcloud/server
+
+**Instalación** [~]: `git clone https://github.com/nextcloud/server && cd server && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+
+**Elige si:** necesitas una plataforma autoalojada para documentos y colaboración
+**Evita si:** no quieres mantener modelos o un entorno de ejecución propio
+
 ## `notebooklm-mcp-cli`
-role=runtime · exec=cloud · setup=easy · mcp=True · prov=—
+role=runtime · exec=cloud · setup=easy · mcp=True · prov=— · tags=mcp,notebooks,python
 
 **Qué es:** Convierte NotebookLM en una herramienta invocable por asistentes.
 **Stack:** Python, MCP
@@ -194,7 +234,7 @@ _Servicio gestionado; no se clona._
 **Combina con:** `notebooklm-py`, `awesome-mcp-servers`
 
 ## `notebooklm-py`
-role=library · exec=cloud · setup=easy · mcp=False · prov=—
+role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=notebooks,research,python
 
 **Qué es:** Cubre el vacío de automatización que la interfaz web oficial no ofrece.
 **Stack:** Python
@@ -208,7 +248,7 @@ _Nombre PyPI puede diferir de 'notebooklm-py'; verifica en pypi.org._
 **Combina con:** `notebooklm-mcp-cli`
 
 ## `odysseus`
-role=platform · exec=local · setup=heavy · mcp=False · prov=—
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=agents,local,python,docker
 
 **Qué es:** Sustituye la dispersión entre varios SaaS por un único panel que tú controlas.
 **Stack:** Python, React, PostgreSQL
@@ -222,7 +262,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `open-notebook`, `ecc`, `mem0`
 
 ## `ollama`
-role=runtime · exec=local · setup=easy · mcp=False · prov=['local']
+role=runtime · exec=local · setup=easy · mcp=False · prov=local · tags=inference,local,go
 
 **Qué es:** Un comando para bajar y ejecutar modelos como Qwen, Gemma, DeepSeek o gpt-oss. Casi todas las apps de IA local lo soportan.
 **Stack:** Go, C++
@@ -237,7 +277,7 @@ _Stack no claro; revisa el README tras clonar._
 **Alternativas (elige una):** `llama-cpp`, `localai`, `llamafile`
 
 ## `open-notebook`
-role=app · exec=local · setup=medium · mcp=False · prov=—
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=notebooks,research,typescript,docker
 
 **Qué es:** Resuelve el envío de documentos sensibles a la nube que implica el NotebookLM oficial.
 **Stack:** Python (FastAPI), React/Next.js
@@ -252,7 +292,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `deeptutor`, `surfsense`
 
 ## `open-webui`
-role=app · exec=local · setup=easy · mcp=True · prov=['openai', 'local']
+role=app · exec=local · setup=easy · mcp=True · prov=openai,local · tags=chatbot,local,rag,docker
 
 **Qué es:** Da a tu equipo un chat privado con usuarios, documentos, búsqueda web, herramientas y modelos locales o en la nube.
 **Stack:** Python, Svelte, Docker
@@ -267,7 +307,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `librechat`, `lobehub`, `anything-llm`, `textgen`
 
 ## `private-gpt`
-role=platform · exec=local · setup=medium · mcp=False · prov=['local', 'openai']
+role=platform · exec=local · setup=medium · mcp=False · prov=local,openai · tags=rag,local,python
 
 **Qué es:** Ofrece una API lista para construir apps de IA sin que los datos salgan de tu entorno. Funciona con cualquier motor compatible con OpenAI.
 **Stack:** Python, FastAPI
@@ -282,7 +322,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `anything-llm`
 
 ## `surfsense`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'local']
+role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,local · tags=research,rag,notebooks,python
 
 **Qué es:** Conecta tus fuentes (archivos, Slack, Notion, GitHub, web) y conversa con ellas con citas, genera podcasts y reportes. Puede funcionar sin conexión.
 **Stack:** Python, FastAPI, Next.js, PostgreSQL
@@ -297,7 +337,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `open-notebook`, `khoj`
 
 ## `textgen`
-role=app · exec=local · setup=medium · mcp=False · prov=['local']
+role=app · exec=local · setup=medium · mcp=False · prov=local · tags=chatbot,local,inference,python
 
 **Qué es:** La clásica "oobabooga": carga modelos en muchos formatos y backends, con chat, modo notebook y entrenamiento LoRA.
 **Stack:** Python, Gradio
@@ -309,3 +349,17 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Elige si:** quieres experimentar con muchos backends locales
 **Evita si:** quieres algo sencillo; mira `jan` u `ollama`
 **Alternativas (elige una):** `jan`, `open-webui`
+
+## `transformers.js`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=motores,browser,javascript,transformers,webml
+
+**Qué es:** Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript. Carga modelos compatibles y realiza inferencia en el navegador o en entornos JavaScript sin un servidor de modelos propio.
+**Stack:** JavaScript, Node.js
+**Repo:** https://github.com/huggingface/transformers.js
+
+**Instalación** [~]: `npm install transformers.js   (o: pnpm add transformers.js)`
+_Nombre npm puede diferir de 'transformers.js'; verifica en npmjs.com._
+
+**Elige si:** quieres ejecutar un modelo compatible dentro del navegador
+**Evita si:** no quieres mantener modelos o un entorno de ejecución propio
+**Combina con:** `swr`

@@ -5,7 +5,7 @@
 | | [Claude Code Plugins Directory](../fichas/claude-plugins-official.md) | [wshobson/agents](../fichas/wshobson-agents.md) |
 |---|---|---|
 | Qué hace | Marketplace oficial de Anthropic con plugins para Claude Code, propios y de socios: comandos, agentes, skills y servidores MCP. | Marketplace de 94 plugins con más de 200 subagentes, 185 skills y 105 comandos para Claude Code, Codex, Cursor, OpenCode y Copilot. |
-| ⭐ Estrellas | 46.7k | 42.4k |
+| ⭐ Estrellas | 47.3k | 42.5k |
 | Elígelo si… | usas Claude Code y quieres plugins oficiales o de socios que se instalan con un comando | quieres subagentes y comandos especializados por lenguaje o área, instalables plugin a plugin |
 | Evítalo si… | buscas recursos comunitarios o trabajas con otro agente; mira `awesome-claude-code` o `wshobson-agents` | solo quieres plugins oficiales de Anthropic y socios; mira `claude-plugins-official` |
 | Ejecución | ☁️ cloud/API | 🔀 híbrido |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

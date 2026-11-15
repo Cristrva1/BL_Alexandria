@@ -21,13 +21,13 @@ flowchart LR
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [whisperX](../fichas/whisperx.md) | Transcribe y alinea palabra por palabra para los subtítulos | 25.2k | `pip install whisperx` |
-| 2 | [Chatterbox](../fichas/chatterbox.md) | Genera la voz en off (o clona una voz con consentimiento) | 27.7k | `pip install chatterbox-tts` |
-| 3 | [ComfyUI](../fichas/comfyui.md) | Genera imágenes o b-roll con modelos de difusión | 146k | `git clone` |
-| 4 | [Real-ESRGAN](../fichas/real-esrgan.md) | Escala y limpia las imágenes antes del montaje | 37.4k | `pip install realesrgan` |
-| 5 | [remotion](../fichas/remotion.md) | Ensambla el video con plantillas en React | 72.2k | `npm create video` |
-| 6 | [FFmpeg](../fichas/ffmpeg.md) | Render final, formatos y compresión | 66.9k | `brew install ffmpeg` |
-| 7 | [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md) | Atajo todo-en-uno: tema → video corto automático | 142k | `pip install mpt` |
+| 1 | [whisperX](../fichas/whisperx.md) | Transcribe y alinea palabra por palabra para los subtítulos | 25.3k | `pip install whisperx` |
+| 2 | [Chatterbox](../fichas/chatterbox.md) | Genera la voz en off (o clona una voz con consentimiento) | 27.8k | `pip install chatterbox-tts` |
+| 3 | [ComfyUI](../fichas/comfyui.md) | Genera imágenes o b-roll con modelos de difusión | 147k | `git clone` |
+| 4 | [Real-ESRGAN](../fichas/real-esrgan.md) | Escala y limpia las imágenes antes del montaje | 37.5k | `pip install realesrgan` |
+| 5 | [remotion](../fichas/remotion.md) | Ensambla el video con plantillas en React | 73.2k | `npm create video` |
+| 6 | [FFmpeg](../fichas/ffmpeg.md) | Render final, formatos y compresión | 67.3k | `brew install ffmpeg` |
+| 7 | [MoneyPrinterTurbo](../fichas/moneyprinterturbo.md) | Atajo todo-en-uno: tema → video corto automático | 144k | `pip install mpt` |
 
 ## 🔌 Cómo se conecta
 
@@ -47,4 +47,4 @@ Si no tienes GPU, usa APIs de generación de imagen y voz en la nube en lugar de
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

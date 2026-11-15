@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 19.1k | Apache-2.0 | Python | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 19.3k | Apache-2.0 | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
@@ -51,15 +51,15 @@ Pipeline Python por etapas con caché y reanudación: Qwen3-ASR con ForcedAligne
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [yt-dlp](yt-dlp.md) | 207k | Descargador de audio y video por línea de comandos compatible con miles de sitios. |
-| [GPT-SoVITS](gpt-sovits.md) | 64.7k | Clonación de voz y TTS con solo un minuto de audio, con interfaz web para entrenar. |
-| [whisperX](whisperx.md) | 25.2k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
+| [yt-dlp](yt-dlp.md) | 208k | Descargador de audio y video por línea de comandos compatible con miles de sitios. |
+| [GPT-SoVITS](gpt-sovits.md) | 65.1k | Clonación de voz y TTS con solo un minuto de audio, con interfaz web para entrenar. |
+| [whisperX](whisperx.md) | 25.3k | Extensión de Whisper que añade alineación temporal a nivel de palabra y diarización de hablantes, ideal para subtitulado profesional. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [OmniVoice-Studio](omnivoice-studio.md) | 107k | Alternativa local y open source a ElevenLabs: clonación, diseño y conversión de voz en una app. |
+| [OmniVoice-Studio](omnivoice-studio.md) | 111k | Alternativa local y open source a ElevenLabs: clonación, diseño y conversión de voz en una app. |
 
 ## Enlaces
 
@@ -68,4 +68,4 @@ Pipeline Python por etapas con caché y reanudación: Qwen3-ASR con ForcedAligne
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

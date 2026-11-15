@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 45.6k | Otra (ver repo) | Rust | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 45.7k | NOASSERTION | Rust | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
@@ -55,8 +55,9 @@ Descarga el instalador desde jan.ai o los releases.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Cherry Studio](cherry-studio.md) | 53.4k | App de escritorio que reúne muchos proveedores de IA, agentes y herramientas de productividad. |
+| [Cherry Studio](cherry-studio.md) | 53.5k | App de escritorio que reúne muchos proveedores de IA, agentes y herramientas de productividad. |
 | [Text Generation WebUI](textgen.md) | 47.7k | App open source para LLM locales con texto, visión, herramientas y API compatible con OpenAI y Anthropic. |
+| [chatbox](chatbox.md) | 42.3k | Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz común. |
 
 ## Enlaces
 
@@ -65,4 +66,4 @@ Descarga el instalador desde jan.ai o los releases.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -3,8 +3,22 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `archify`
+role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=diagramas,agent-skills,ai-agents,architecture-diagram,claude-code,claude-skills,codex,coding-agents · tools=claude-code,codex
+
+**Qué es:** Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. El agente transforma una descripción en una visualización que se puede abrir y explorar en el navegador.
+**Stack:** JavaScript, Node.js
+**Repo:** https://github.com/tt-a1i/archify
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/archify/). Si necesitas el código: git clone https://github.com/tt-a1i/archify`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres explicar una arquitectura o un plan mediante una visualización interactiva
+**Evita si:** el formato de salida no encaja con tus documentos
+**Combina con:** `codex`
+
 ## `docling`
-role=library · exec=local · setup=easy · mcp=True · prov=—
+role=library · exec=local · setup=easy · mcp=True · prov=— · tags=docs,pdf,ocr,python
 
 **Qué es:** Entiende la estructura del documento (tablas, layout, fórmulas, orden de lectura) y la exporta para RAG y agentes.
 **Stack:** Python, PyTorch
@@ -19,7 +33,7 @@ _Nombre PyPI puede diferir de 'Docling'; verifica en pypi.org._
 **Alternativas (elige una):** `marker`, `mineru`, `unstructured`, `olmocr`
 
 ## `marker`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,pdf,python
 
 **Qué es:** Pensado para libros y papers, con opción de mejorar el resultado usando un LLM.
 **Stack:** Python, PyTorch
@@ -34,7 +48,7 @@ _Nombre PyPI puede diferir de 'Marker'; verifica en pypi.org._
 **Alternativas (elige una):** `docling`, `mineru`
 
 ## `markitdown`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,python
 
 **Qué es:** Es la puerta de entrada habitual para ingesta de documentos en pipelines RAG.
 **Stack:** Python 3.8+
@@ -48,7 +62,7 @@ _Nombre PyPI puede diferir de 'markitdown'; verifica en pypi.org._
 **Combina con:** `ppt-master`, `open-notebook`
 
 ## `marp`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=slides,typescript
 
 **Qué es:** Escribes Markdown con separadores y obtienes slides limpias; tiene extensión de VS Code.
 **Stack:** TypeScript
@@ -62,7 +76,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `slidev`, `reveal.js`
 
 ## `mermaid`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,dataviz,typescript
 
 **Qué es:** GitHub, Notion y muchos editores lo renderizan de forma nativa; los LLM lo escriben muy bien.
 **Stack:** TypeScript
@@ -77,7 +91,7 @@ _Nombre npm puede diferir de 'Mermaid'; verifica en npmjs.com._
 **Alternativas (elige una):** `excalidraw`
 
 ## `mineru`
-role=app · exec=local · setup=medium · mcp=False · prov=—
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=docs,pdf,ocr,python
 
 **Qué es:** Muy bueno con papers científicos, tablas y fórmulas; ofrece CLI, API y app de escritorio.
 **Stack:** Python, PyTorch
@@ -92,7 +106,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `docling`, `marker`
 
 ## `ocrmypdf`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=ocr,pdf,python
 
 **Qué es:** Convierte escaneos en PDF/A buscables manteniendo la imagen original.
 **Stack:** Python, Tesseract
@@ -106,7 +120,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `tesseract`, `docling`
 
 ## `olmocr`
-role=app · exec=local · setup=heavy · mcp=False · prov=['local']
+role=app · exec=local · setup=heavy · mcp=False · prov=local · tags=ocr,pdf,python
 
 **Qué es:** Pensado para crear datasets de entrenamiento a partir de millones de PDFs, con orden de lectura correcto.
 **Stack:** Python, vLLM
@@ -121,7 +135,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `paddleocr`, `docling`, `unlimited-ocr`
 
 ## `paddleocr`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ocr,docs,python
 
 **Qué es:** Reconoce texto en más de 80 idiomas y analiza documentos con tablas y layout. Incluye modelos pequeños para dispositivos.
 **Stack:** Python, PaddlePaddle
@@ -136,7 +150,7 @@ _Nombre PyPI puede diferir de 'PaddleOCR'; verifica en pypi.org._
 **Alternativas (elige una):** `tesseract`, `olmocr`, `unlimited-ocr`
 
 ## `pandoc`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=docs
 
 **Qué es:** La navaja suiza de la conversión de textos: genera Word o PDF desde Markdown y al revés.
 **Stack:** Haskell
@@ -150,7 +164,7 @@ _Stack no claro; revisa el README tras clonar._
 **Combina con:** `markitdown`
 
 ## `pdf-inspector`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,docs,rust
 
 **Qué es:** Detecta si un PDF necesita OCR para enrutarlo al proceso correcto, y extrae texto rápido cuando no hace falta. De Firecrawl.
 **Stack:** Rust
@@ -164,7 +178,7 @@ _Stack no claro; revisa el README tras clonar._
 **Combina con:** `ocrmypdf`, `docling`
 
 ## `pdfcraft`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,typescript
 
 **Qué es:** Apunta a ser la alternativa local y sin nube a los servicios online de PDF.
 **Stack:** web/TS
@@ -179,7 +193,7 @@ _Stack no claro; revisa el README tras clonar._
 **Alternativas (elige una):** `stirling-pdf`
 
 ## `pdfding`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,docker
 
 **Qué es:** Organiza y lee tus PDFs desde cualquier dispositivo. El desarrollo se trasladó a Codeberg.
 **Stack:** Python, Django, Docker
@@ -193,7 +207,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `markitdown`, `ppt-master`, `reveal.js`
 
 ## `pdfmathtranslate`
-role=app · exec=hybrid · setup=easy · mcp=False · prov=['openai', 'google', 'local']
+role=app · exec=hybrid · setup=easy · mcp=False · prov=openai,google,local · tags=pdf,docs,python
 
 **Qué es:** Ideal para leer artículos científicos en tu idioma sin perder el layout. Admite Google, DeepL, OpenAI, Ollama y más.
 **Stack:** Python
@@ -207,7 +221,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `ollama`
 
 ## `ppt-master`
-role=runtime · exec=hybrid · setup=easy · mcp=False · prov=—
+role=runtime · exec=hybrid · setup=easy · mcp=False · prov=— · tags=slides,python
 
 **Qué es:** Sustituye el maquetado manual de slides por un borrador estructurado por un LLM.
 **Stack:** Python, python-pptx
@@ -222,7 +236,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `presenton`
 
 ## `presenton`
-role=app · exec=hybrid · setup=easy · mcp=False · prov=['openai', 'google', 'local']
+role=app · exec=hybrid · setup=easy · mcp=False · prov=openai,google,local · tags=slides,agents,typescript
 
 **Qué es:** Crea presentaciones editables a partir de un prompt o documento, con tus plantillas, y exporta a PPTX o PDF.
 **Stack:** TypeScript, Python, Docker
@@ -237,7 +251,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `ppt-master`
 
 ## `reveal.js`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=slides,javascript
 
 **Qué es:** Convierte las diapositivas en una página web versionable y reproducible por código.
 **Stack:** JavaScript/HTML
@@ -252,7 +266,7 @@ _Nombre npm puede diferir de 'reveal.js'; verifica en npmjs.com._
 **Alternativas (elige una):** `slidev`, `marp`
 
 ## `slidev`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=slides,typescript
 
 **Qué es:** Escribe tus slides en Markdown y obtén resaltado de código, diagramas, animaciones y exportación a PDF. Los agentes de código lo usan bien.
 **Stack:** TypeScript, Vue, Vite
@@ -267,7 +281,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `marp`, `reveal.js`
 
 ## `stirling-pdf`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,docker
 
 **Qué es:** Más de 50 herramientas de PDF en el navegador sin enviar archivos a terceros.
 **Stack:** Java, TypeScript, Docker
@@ -282,7 +296,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `pdfcraft`
 
 ## `tesseract`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=ocr,cpp
 
 **Qué es:** Base de muchas herramientas de OCR, ligero y sin GPU.
 **Stack:** C++
@@ -297,7 +311,7 @@ _Stack no claro; revisa el README tras clonar._
 **Alternativas (elige una):** `paddleocr`
 
 ## `unlimited-ocr`
-role=library · exec=local · setup=heavy · mcp=False · prov=—
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=ocr,docs,python
 
 **Qué es:** Extrae texto y estructura de documentos de muchas páginas sin dividirlos, pensado para contexto largo.
 **Stack:** Python, PyTorch
@@ -312,7 +326,7 @@ _Nombre PyPI puede diferir de 'Unlimited-OCR'; verifica en pypi.org._
 **Alternativas (elige una):** `olmocr`, `paddleocr`
 
 ## `unstructured`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=docs,data,python
 
 **Qué es:** Particiona más de 25 tipos de archivo en elementos (títulos, tablas, texto) y los prepara para bases vectoriales.
 **Stack:** Python
@@ -327,7 +341,7 @@ _Nombre PyPI puede diferir de 'Unstructured'; verifica en pypi.org._
 **Alternativas (elige una):** `docling`
 
 ## `youtube2webpage`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=docs,javascript
 
 **Qué es:** Convierte una charla en un artículo navegable con contexto visual.
 **Stack:** Perl, yt-dlp, ffmpeg

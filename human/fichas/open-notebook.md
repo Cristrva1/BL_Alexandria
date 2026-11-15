@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 41.8k | MIT | TypeScript | 2026-11-08 | 📦 Sí |
+| 42k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
@@ -49,15 +49,15 @@ Un backend FastAPI indexa las fuentes y las consulta vía RAG contra modelos ser
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [odysseus](odysseus.md) | 95.5k | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. |
+| [odysseus](odysseus.md) | 95.6k | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. |
 | [markitdown](markitdown.md) | 195k | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [DeepTutor](deeptutor.md) | 57.8k | Sistema de tutoría con agentes que personaliza el aprendizaje a partir de tus documentos. |
-| [SurfSense](surfsense.md) | 16.8k | Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. |
+| [DeepTutor](deeptutor.md) | 59.2k | Sistema de tutoría con agentes que personaliza el aprendizaje a partir de tus documentos. |
+| [SurfSense](surfsense.md) | 16.9k | Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos. |
 
 ## Enlaces
 
@@ -67,4 +67,4 @@ Un backend FastAPI indexa las fuentes y las consulta vía RAG contra modelos ser
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 17.6k | LGPL-2.1 | C | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 17.7k | LGPL-2.1 | C | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
@@ -51,13 +51,13 @@ Compara patrones contra el AST de cada archivo y reporta coincidencias con conte
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Defending Code Reference Harness](defending-code-reference-harness.md) | 7.7k | Arnés de referencia de Anthropic con skills para modelar amenazas, escanear, priorizar y parchear vulnerabilidades. |
+| [Defending Code Reference Harness](defending-code-reference-harness.md) | 7.8k | Arnés de referencia de Anthropic con skills para modelar amenazas, escanear, priorizar y parchear vulnerabilidades. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [ast-grep](ast-grep.md) | 16.5k | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. |
+| [ast-grep](ast-grep.md) | 16.6k | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. |
 
 ## Enlaces
 
@@ -66,4 +66,4 @@ Compara patrones contra el AST de cada archivo y reporta coincidencias con conte
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

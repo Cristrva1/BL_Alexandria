@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 27.2k | Apache-2.0 | TypeScript | 2026-10-21 | 🆕 Aún no (sugerido) |
+| 27.2k | Apache-2.0 | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
@@ -49,14 +49,14 @@ Ejecuta tu app y mapea los elementos del DOM a su código fuente para editarlos 
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [tailwindcss](tailwindcss.md) | 98.7k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
+| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
 | [ui](ui.md) | 128k | Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [open-design](open-design.md) | 107k | Espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces desde lenguaje natural. |
+| [open-design](open-design.md) | 108k | Espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces desde lenguaje natural. |
 
 ## Enlaces
 
@@ -65,4 +65,4 @@ Ejecuta tu app y mapea los elementos del DOM a su código fuente para editarlos 
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

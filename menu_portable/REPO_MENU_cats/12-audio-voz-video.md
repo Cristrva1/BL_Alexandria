@@ -3,8 +3,35 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `ace-step-1.5`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=musica,text2music,python
+
+**Qué es:** Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. Combina modelos de generación musical y una interfaz de inferencia para producir audio y personalizar estilos.
+**Stack:** Python, Docker, pyproject.toml, Node.js
+**Repo:** https://github.com/ace-step/ACE-Step-1.5
+
+**Instalación** [~]: `git clone https://github.com/ace-step/ACE-Step-1.5 && cd ACE-Step-1.5 && docker compose up -d`
+_Requiere Docker; el compose puede variar — revisa docker-compose.yml._
+
+**Elige si:** necesitas experimentar con generación musical en tu propio equipo
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+
+## `ai-youtube-shorts-generator`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=generativo,2short-ai-alternative,ai-clip-generator,ai-clipping,auto-clip,auto-crop,highlight-detection,klap-alternative
+
+**Qué es:** Pipeline de Python que extrae clips verticales de videos de YouTube mediante transcripción y selección de momentos con LLM. Transcribe, puntúa segmentos y recorta el video a formato vertical para producir clips cortos.
+**Stack:** Python
+**Repo:** https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator
+
+**Instalación** [~]: `git clone https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator && cd AI-Youtube-Shorts-Generator && (uv sync || pip install -r requirements.txt)`
+_Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
+
+**Elige si:** quieres convertir videos largos en una primera selección de shorts
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+**Combina con:** `ffmpeg`
+
 ## `audiocraft`
-role=library · exec=local · setup=medium · mcp=False · prov=['local']
+role=library · exec=local · setup=medium · mcp=False · prov=local · tags=audio,inference,training,python
 
 **Qué es:** AudioCraft reúne el código de inferencia y entrenamiento de los modelos de audio generativo de Meta: MusicGen (música a partir de texto o melodía), AudioGen (efectos de sonido), MAGNeT, JASCO (música condicionada por acordes y batería), el códec neuronal EnCodec y AudioSeal para marcas de agua. Está orientada a investigación, aunque se usa mucho para crear música de fondo.
 **Stack:** Python, PyTorch, EnCodec, Hugging Face Hub
@@ -18,7 +45,7 @@ _Nombre PyPI puede diferir de 'AudioCraft'; verifica en pypi.org._
 **Combina con:** `moviepy`, `remotion`, `ffmpeg`
 
 ## `chatterbox`
-role=library · exec=local · setup=easy · mcp=False · prov=['local']
+role=library · exec=local · setup=easy · mcp=False · prov=local · tags=tts,audio,python
 
 **Qué es:** Clona una voz con unos segundos de audio y ajusta la expresividad. Multilingüe y con marca de agua.
 **Stack:** Python, PyTorch
@@ -33,7 +60,7 @@ _Nombre PyPI puede diferir de 'Chatterbox'; verifica en pypi.org._
 **Alternativas (elige una):** `fish-speech`, `gpt-sovits`, `kokoro`, `luxtts`
 
 ## `cosyvoice`
-role=library · exec=local · setup=medium · mcp=False · prov=['local']
+role=library · exec=local · setup=medium · mcp=False · prov=local · tags=tts,audio,python
 
 **Qué es:** Síntesis de voz natural con clonación y control de estilo, también en streaming.
 **Stack:** Python, PyTorch
@@ -48,7 +75,7 @@ _Nombre PyPI puede diferir de 'CosyVoice'; verifica en pypi.org._
 **Alternativas (elige una):** `fish-speech`, `index-tts`
 
 ## `davinci-resolve-mcp`
-role=runtime · exec=local · setup=medium · mcp=True · prov=['mcp']
+role=runtime · exec=local · setup=medium · mcp=True · prov=mcp · tags=video,mcp,agents,python
 
 **Qué es:** Expone la API oficial de scripting de DaVinci Resolve como herramientas MCP para Claude, Cursor, Codex y otros clientes. Cubre montaje, organización del media pool, render, marcadores, color, Fusion y Fairlight, y añade análisis de medios que nunca modifica los originales. Incluye un panel de control local en el navegador.
 **Stack:** Python, Node.js, DaVinci Resolve Scripting API, ffmpeg
@@ -61,8 +88,23 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Evita si:** no usas Resolve o prefieres montar video por código sin editor; mira `moviepy` o `ffmpeg`
 **Combina con:** `claude-code`, `ffmpeg`, `whisper`
 
+## `edge-tts`
+role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=tts,speech-synthesis,text-to-speech,python
+
+**Qué es:** Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. Envía texto al servicio de voz y guarda el audio y los subtítulos desde Python o la terminal.
+**Stack:** Python
+**Repo:** https://github.com/rany2/edge-tts
+
+**Instalación** [~]: `pip install edge-tts   (o: uv add edge-tts)`
+_Nombre PyPI puede diferir de 'edge-tts'; verifica en pypi.org._
+
+**Elige si:** quieres generar narración sin instalar un modelo de voz local
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+**Combina con:** `moviepy`
+**Alternativas (elige una):** `kokoro`
+
 ## `faster-whisper`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=stt,audio,python
 
 **Qué es:** Es el mismo modelo de OpenAI, pero con un runtime de inferencia optimizado.
 **Stack:** Python, CTranslate2
@@ -77,7 +119,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `whisper-cpp`
 
 ## `ffmpeg`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,automation,cpp
 
 **Qué es:** FFmpeg es la base multimedia sobre la que se apoyan casi todos los editores, reproductores y pipelines de video. Incluye el CLI `ffmpeg` para convertir, recortar, concatenar, mezclar, quemar subtítulos y transmitir, `ffprobe` para inspeccionar archivos y las librerías libav* para integrarlo en tu propio software.
 **Stack:** C, ensamblador (x86/ARM), libavcodec, libavformat, libavfilter
@@ -91,7 +133,7 @@ _Stack no claro; revisa el README tras clonar._
 **Combina con:** `whisper`, `yt-dlp`, `moviepy`
 
 ## `fish-speech`
-role=library · exec=local · setup=medium · mcp=False · prov=['local']
+role=library · exec=local · setup=medium · mcp=False · prov=local · tags=tts,audio,python
 
 **Qué es:** Clona voces con pocos segundos de audio y genera habla natural en muchos idiomas.
 **Stack:** Python, PyTorch
@@ -105,7 +147,7 @@ _Nombre PyPI puede diferir de 'Fish Speech'; verifica en pypi.org._
 **Alternativas (elige una):** `chatterbox`, `cosyvoice`, `gpt-sovits`
 
 ## `gpt-sovits`
-role=app · exec=local · setup=medium · mcp=False · prov=['local']
+role=app · exec=local · setup=medium · mcp=False · prov=local · tags=tts,audio,python
 
 **Qué es:** Entrena una voz con muy pocos datos y sintetiza en varios idiomas. Muy popular entre creadores.
 **Stack:** Python, PyTorch, Gradio
@@ -120,7 +162,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `chatterbox`, `fish-speech`
 
 ## `hunyuanvideo`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=['local']
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=video,inference,local,python
 
 **Qué es:** HunyuanVideo publica los pesos, la definición en PyTorch y el código de inferencia de un modelo de texto a video de más de 13.000 millones de parámetros, que genera clips de unos 5 segundos (129 fotogramas) en 540p o 720p. Las variantes de imagen a video, avatares guiados por audio y personalización viven en repos aparte.
 **Stack:** Python, PyTorch, Diffusers, FlashAttention, xDiT
@@ -135,7 +177,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `wan2-2`, `ltx-video`
 
 ## `hyperframes`
-role=runtime · exec=local · setup=easy · mcp=True · prov=['mcp']
+role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=video,agents,skills,typescript
 
 **Qué es:** HyperFrames define cada video como un archivo HTML con atributos de tiempo y pistas, animado con GSAP, CSS, Lottie, Three.js u otras librerías, y lo renderiza a MP4. Incluye CLI para crear, previsualizar y renderizar, un catálogo de unos 450 bloques (transiciones, subtítulos, gráficos, mapas) y skills para que Claude Code, Codex o Cursor produzcan videos a partir de una petición.
 **Stack:** TypeScript, Node.js, Puppeteer, FFmpeg, GSAP
@@ -150,7 +192,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `remotion`, `moviepy`
 
 ## `index-tts`
-role=library · exec=local · setup=medium · mcp=False · prov=['local']
+role=library · exec=local · setup=medium · mcp=False · prov=local · tags=tts,audio,python
 
 **Qué es:** Clona voces sin entrenar y permite controlar la duración exacta, útil para doblaje.
 **Stack:** Python, PyTorch
@@ -164,7 +206,7 @@ _Nombre PyPI puede diferir de 'IndexTTS'; verifica en pypi.org._
 **Alternativas (elige una):** `cosyvoice`
 
 ## `kokoro`
-role=library · exec=local · setup=easy · mcp=False · prov=['local']
+role=library · exec=local · setup=easy · mcp=False · prov=local · tags=tts,audio,local
 
 **Qué es:** Voces naturales en varios idiomas, incluido el español, rápido incluso en CPU.
 **Stack:** Python, PyTorch, JavaScript
@@ -176,10 +218,10 @@ _Nombre PyPI puede diferir de 'Kokoro'; verifica en pypi.org._
 **Elige si:** quieres TTS ligero, rápido y con licencia permisiva
 **Evita si:** necesitas clonar voces; mira `chatterbox`
 **Combina con:** `pipecat`, `whisper-cpp`
-**Alternativas (elige una):** `chatterbox`, `tts`, `luxtts`
+**Alternativas (elige una):** `chatterbox`, `tts`, `luxtts`, `edge-tts`
 
 ## `livekit-agents`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic', 'google']
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google · tags=audio,agents,video,python
 
 **Qué es:** Construye agentes que hablan, escuchan y ven, con detección de turnos y telefonía, desplegables a escala.
 **Stack:** Python, Node.js, WebRTC
@@ -194,7 +236,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `pipecat`
 
 ## `lossless-cut`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,ui,typescript
 
 **Qué es:** LosslessCut es una interfaz gráfica sobre FFmpeg para recortar y fusionar archivos de video y audio sin recompresión. Sirve para descartar gigas de material de cámara, GoPro o dron, extraer o reemplazar pistas, cambiar de contenedor (MKV a MP4) y editar metadatos o capítulos, en Windows, macOS y Linux.
 **Stack:** TypeScript, Electron, React, FFmpeg
@@ -208,7 +250,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `yt-dlp`, `whisperx`, `moviepy`
 
 ## `ltx-video`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=['local']
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=video,inference,local,python
 
 **Qué es:** LTX-Video es el repositorio de los modelos v0.9.x de Lightricks, un transformer de difusión (DiT) para texto a video, imagen a video, extensión de clips y video a video con condiciones por fotograma clave. Incluye variantes de 2B y 13B, destiladas y FP8, y LoRAs de control de pose, profundidad y bordes. Ya solo se mantiene como legado: los modelos nuevos están en LTX-2.
 **Stack:** Python, PyTorch, Diffusers, ComfyUI
@@ -223,7 +265,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `wan2-2`, `hunyuanvideo`
 
 ## `luxtts`
-role=library · exec=local · setup=easy · mcp=False · prov=['local']
+role=library · exec=local · setup=easy · mcp=False · prov=local · tags=tts,audio,python
 
 **Qué es:** Basado en ZipVoice, pensado para clonación rápida y realista con pocos recursos.
 **Stack:** Python, PyTorch
@@ -238,7 +280,7 @@ _Nombre PyPI puede diferir de 'LuxTTS'; verifica en pypi.org._
 **Alternativas (elige una):** `kokoro`, `chatterbox`
 
 ## `manim`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=video,dataviz,learning,python
 
 **Qué es:** Manim permite describir en código Python escenas con fórmulas LaTeX, gráficas, geometría y transformaciones animadas, y exportarlas a video. Este repo es ManimGL, la versión original que Grant Sanderson usa en 3Blue1Brown; la edición comunitaria (ManimCommunity/manim) es un fork más estable y mejor documentado.
 **Stack:** Python, OpenGL, FFmpeg, LaTeX
@@ -250,9 +292,25 @@ _Nombre PyPI puede diferir de 'Manim (ManimGL)'; verifica en pypi.org._
 **Elige si:** quieres animaciones matemáticas o técnicas precisas definidas en código Python
 **Evita si:** buscas estabilidad y documentación para empezar (usa la edición comunitaria ManimCommunity/manim) o motion graphics de marketing; mira `remotion` o `hyperframes`
 **Combina con:** `kokoro`, `moviepy`, `ffmpeg`
+**Alternativas (elige una):** `manim-community`
+
+## `manim-community`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=programatico,animations,hacktoberfest,manim,math,python
+
+**Qué es:** Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. Define objetos geométricos y transformaciones en código y renderiza la escena como video.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/ManimCommunity/manim
+
+**Instalación** [~]: `pip install manim   (o: uv add manim)`
+_Nombre PyPI puede diferir de 'manim'; verifica en pypi.org._
+
+**Elige si:** necesitas animaciones matemáticas precisas y reproducibles
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+**Combina con:** `ffmpeg`
+**Alternativas (elige una):** `manim`
 
 ## `moneyprinterturbo`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic', 'google', 'local']
+role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google,local · tags=video,automation,tts,python
 
 **Qué es:** MoneyPrinterTurbo automatiza la producción de shorts: das un tema o palabras clave y escribe el guion con un LLM, busca clips en Pexels o Pixabay (o usa los tuyos o video generado por IA), genera locución, subtítulos y música, y monta el resultado en 9:16, 16:9 o 1:1. Se usa desde WebUI, API, CLI o pidiéndoselo a un agente con su skill.
 **Stack:** Python, Streamlit, FastAPI, MoviePy, faster-whisper
@@ -267,7 +325,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `openmontage`, `videofy-minimal`
 
 ## `moviepy`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,automation,python
 
 **Qué es:** MoviePy convierte la edición de video en código Python: abres clips, los recortas, superpones texto o imágenes, mezclas audio y exportas a MP4, WebM o GIF. Es la pieza de ensamblaje habitual en pipelines que generan videos cortos a partir de imágenes, voz sintética y subtítulos.
 **Stack:** Python, NumPy, Pillow, FFmpeg
@@ -281,8 +339,21 @@ _Nombre PyPI puede diferir de 'MoviePy'; verifica en pypi.org._
 **Combina con:** `whisperx`, `kokoro`, `comfyui`
 **Alternativas (elige una):** `remotion`, `hyperframes`
 
+## `music-megathread`
+role=directory · exec=hybrid · setup=easy · mcp=False · prov=— · tags=musica
+
+**Qué es:** Directorio de reproductores, herramientas, servicios y otros recursos relacionados con música. Agrupa enlaces a proyectos y servicios musicales para explorar alternativas por función.
+**Stack:** Recursos y documentación
+**Repo:** https://github.com/MoonWalker440/Music-Megathread
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/Music-Megathread/). Si necesitas el código: git clone https://github.com/MoonWalker440/Music-Megathread`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** buscas recursos musicales y quieres comparar opciones desde una lista
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+
 ## `nemo`
-role=library · exec=local · setup=heavy · mcp=False · prov=—
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=stt,tts,audio,python
 
 **Qué es:** Incluye modelos de ASR como Parakeet y Canary, que lideran rankings de transcripción, y herramientas para afinarlos.
 **Stack:** Python, PyTorch
@@ -297,7 +368,7 @@ _Nombre PyPI puede diferir de 'NVIDIA NeMo Speech'; verifica en pypi.org._
 **Alternativas (elige una):** `whisperx`
 
 ## `obs-studio`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,audio,ui,cpp
 
 **Qué es:** OBS Studio captura, compone, codifica, graba y transmite video en Windows, macOS y Linux. Combinas en escenas la pantalla, ventanas, webcam, navegador y archivos multimedia, mezclas el audio con filtros y emites a YouTube, Twitch u otro servicio RTMP, o grabas a disco.
 **Stack:** C, C++, Qt, FFmpeg
@@ -312,7 +383,7 @@ _Stack no claro; revisa el README tras clonar._
 **Alternativas (elige una):** `openscreen`
 
 ## `omnivoice-studio`
-role=app · exec=local · setup=medium · mcp=False · prov=—
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=tts,audio,python
 
 **Qué es:** Reúne STT, TTS y dubbing en una sola app sin claves de API.
 **Stack:** desktop/Python
@@ -327,7 +398,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `videolingo`
 
 ## `opencut`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=—
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=video,ui,typescript,rust
 
 **Qué es:** OpenCut es un editor de video pensado como alternativa abierta a CapCut: privado (los videos no salen de tu dispositivo), sin funciones de pago y fácil de usar. Hoy se usa la versión clásica en opencut.app mientras el equipo reescribe el proyecto desde cero, con un núcleo en Rust para web, escritorio y móvil.
 **Stack:** TypeScript, Rust, WebAssembly, Next.js
@@ -341,13 +412,13 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `lossless-cut`, `obs-studio`, `whisperx`
 
 ## `openmontage`
-role=skill · exec=local · setup=medium · mcp=False · prov=—
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=video,coding-agent,skills
 
 **Qué es:** Describes el video y el agente investiga, escribe el guion, genera recursos y monta el resultado.
 **Stack:** Markdown, Python
-**Repo:** https://github.com/calesthio/OpenMontage.git
+**Repo:** https://github.com/OpenMontageInc/OpenMontage
 
-**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/OpenMontage/). Si necesitas el código: git clone https://github.com/calesthio/OpenMontage.git`
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/OpenMontage/). Si necesitas el código: git clone https://github.com/OpenMontageInc/OpenMontage`
 _Material de referencia/playbook; no es una dependencia runtime._
 
 **Elige si:** quieres producir videos completos con un agente
@@ -356,7 +427,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Alternativas (elige una):** `remotion-superpowers`, `moneyprinterturbo`
 
 ## `openscreen`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,ui,typescript
 
 **Qué es:** OpenScreen graba una ventana o la pantalla completa con micrófono y audio del sistema, y después te deja pulir la demo: zooms que siguen al cursor, webcam superpuesta, fondos, anotaciones, recorte y velocidad por tramo. Exporta a MP4 o GIF en varias proporciones. El proyecto original está archivado; su continuación activa es getopenscreen/openscreen.
 **Stack:** TypeScript, Electron, PixiJS
@@ -370,8 +441,21 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `lossless-cut`, `opencut`
 **Alternativas (elige una):** `obs-studio`
 
+## `palmier-pro`
+role=app · exec=local · setup=medium · mcp=True · prov=— · tags=edicion,ai-video,claude,macos,mcp,seedance2,swift,video-editor
+
+**Qué es:** Editor de video para macOS con herramientas de IA y MCP cuyo repositorio conserva código histórico y binarios actuales. Permite trabajar con una línea de tiempo y enlazar agentes mediante MCP en las versiones que lo incorporan.
+**Stack:** Swift
+**Repo:** https://github.com/palmier-io/palmier-pro
+
+**Instalación** [?]: `git clone https://github.com/palmier-io/palmier-pro (verificar README para build/run)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** usas macOS y quieres explorar edición de video asistida por agentes
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+
 ## `pipecat`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=['openai', 'anthropic', 'google']
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google · tags=audio,agents,stt,tts,python
 
 **Qué es:** Encadena STT, LLM y TTS con interrupciones y baja latencia, y conecta con teléfono, WebRTC o WhatsApp.
 **Stack:** Python
@@ -385,8 +469,22 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `kokoro`, `whisper-cpp`
 **Alternativas (elige una):** `livekit-agents`
 
+## `rea-video`
+role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=programatico,agent-skills,ai-video,aigc-detection,claude-code,codex,ffmpeg,prompt-engineering
+
+**Qué es:** Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md. Clasifica planos y registra capas, ritmo y técnicas de producción en un formato legible por agentes.
+**Stack:** Python, pyproject.toml
+**Repo:** https://github.com/JuneYaooo/rea-video
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/rea-video/). Si necesitas el código: git clone https://github.com/JuneYaooo/rea-video`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres estudiar o recrear la estructura de un video de referencia
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+**Combina con:** `remotion`
+
 ## `remotion`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=video,typescript
 
 **Qué es:** Convierte el video en un artefacto versionable y parametrizable desde tu código frontend.
 **Stack:** Node.js, React, Chromium, ffmpeg
@@ -401,7 +499,7 @@ _Nombre npm puede diferir de 'remotion'; verifica en npmjs.com._
 **Alternativas (elige una):** `moviepy`, `hyperframes`
 
 ## `remotion-superpowers`
-role=skill · exec=local · setup=easy · mcp=False · prov=—
+role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=video,skills,coding-agent
 
 **Qué es:** Añade locución con IA, música, footage de stock e imágenes para producir videos en código.
 **Stack:** Shell, Markdown
@@ -416,7 +514,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Alternativas (elige una):** `openmontage`, `video-use`
 
 ## `rvc`
-role=app · exec=local · setup=medium · mcp=False · prov=['local']
+role=app · exec=local · setup=medium · mcp=False · prov=local · tags=audio,tts,python
 
 **Qué es:** Cambia la voz de una grabación manteniendo entonación. Muy usado para covers y doblaje.
 **Stack:** Python, PyTorch, Gradio
@@ -429,8 +527,21 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Evita si:** necesitas generar voz desde texto; mira `chatterbox`
 **Combina con:** `gpt-sovits`
 
+## `short-video-factory`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=generativo,ai,automatic,automation,clipping,cross-platform,desktop,linux
+
+**Qué es:** Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. Encadena generación de texto y voz con montaje automático en una interfaz de escritorio.
+**Stack:** TypeScript, Node.js
+**Repo:** https://github.com/YILS-LIN/short-video-factory
+
+**Instalación** [~]: `git clone https://github.com/YILS-LIN/short-video-factory && cd short-video-factory && (pnpm install || npm install)`
+_Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
+
+**Elige si:** quieres producir variantes de videos promocionales desde materiales existentes
+**Evita si:** tu flujo audiovisual actual ya cubre esa etapa
+
 ## `skills-remotion`
-role=skill · exec=local · setup=easy · mcp=False · prov=—
+role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=video,skills
 
 **Qué es:** Enseñan al agente las buenas prácticas de Remotion: composiciones, animaciones, audio y render.
 **Stack:** TypeScript, Markdown
@@ -444,7 +555,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `remotion`, `remotion-superpowers`
 
 ## `supertonic`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=tts,audio
 
 **Qué es:** Apunta a latencia mínima con privacidad total, sin nube ni llamadas de API.
 **Stack:** Python, Rust (ONNX), Node.js, WebGPU
@@ -458,7 +569,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `whisperx`, `moviepy`
 
 ## `tts`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=tts,audio,python
 
 **Qué es:** Reúne en una sola librería modelos como Tacotron, VITS y XTTS, con CLI y API Python.
 **Stack:** Python, PyTorch, modelos descargables
@@ -473,7 +584,7 @@ _Nombre PyPI puede diferir de 'TTS'; verifica en pypi.org._
 **Alternativas (elige una):** `kokoro`
 
 ## `vibevoice`
-role=library · exec=local · setup=heavy · mcp=False · prov=['local']
+role=library · exec=local · setup=heavy · mcp=False · prov=local · tags=tts,audio,python
 
 **Qué es:** Genera conversaciones de hasta 90 minutos con cuatro voces distintas, y tiene variantes de baja latencia.
 **Stack:** Python, PyTorch
@@ -487,7 +598,7 @@ _Nombre PyPI puede diferir de 'VibeVoice'; verifica en pypi.org._
 **Combina con:** `open-notebook`
 
 ## `video-use`
-role=skill · exec=local · setup=easy · mcp=False · prov=—
+role=skill · exec=local · setup=easy · mcp=False · prov=— · tags=video,coding-agent,skills,python
 
 **Qué es:** El agente corta, une, subtitula y ajusta videos a partir de instrucciones en lenguaje natural.
 **Stack:** Python, ffmpeg
@@ -502,7 +613,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Alternativas (elige una):** `remotion-superpowers`
 
 ## `videofy-minimal`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=video,typescript
 
 **Qué es:** Encadena TTS/STT y montaje en un solo flujo para pasar de texto a reel con lo mínimo.
 **Stack:** Python/Node
@@ -517,7 +628,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `moneyprinterturbo`
 
 ## `videolingo`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=['openai']
+role=app · exec=hybrid · setup=medium · mcp=False · prov=openai · tags=video,stt,tts,python
 
 **Qué es:** VideoLingo reúne en una interfaz Streamlit el trabajo de un equipo de subtitulado: descarga el video con yt-dlp, lo transcribe con alineación por palabra, segmenta y traduce los subtítulos con un LLM y, si quieres, genera el doblaje con voz sintética o clonada. Produce archivos SRT y videos subtitulados o doblados.
 **Stack:** Python, Streamlit, Qwen3-ASR, yt-dlp, FFmpeg
@@ -532,7 +643,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `omnivoice-studio`
 
 ## `voxcpm`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=—
+role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=tts,audio,python
 
 **Qué es:** Pertenece a la familia CPM de modelos generativos de OpenBMB.
 **Stack:** Python, PyTorch, GPU
@@ -546,7 +657,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `tts`
 
 ## `wan2-2`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=['local']
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=video,inference,local,python
 
 **Qué es:** Wan2.2 publica pesos y código de inferencia de varios modelos de video: texto a video e imagen a video de 14B (MoE), un modelo híbrido de 5B que genera 720p a 24 fps en una RTX 4090, video guiado por voz (S2V) y animación o sustitución de personajes (Animate). Es la base de muchos flujos de ComfyUI y Diffusers.
 **Stack:** Python, PyTorch, FlashAttention, Diffusers
@@ -561,13 +672,13 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `hunyuanvideo`, `ltx-video`
 
 ## `wan2gp`
-role=app · exec=local · setup=heavy · mcp=True · prov=['local', 'mcp']
+role=app · exec=local · setup=heavy · mcp=True · prov=local,mcp · tags=video,image,tts,local,python
 
 **Qué es:** WanGP, antes Wan2GP, es una interfaz web para ejecutar en tu GPU decenas de modelos generativos abiertos: video (Wan 2.1/2.2, LTX-2, Hunyuan Video), imagen (Flux, Qwen Image), voz y música (Chatterbox, Index TTS, Ace Step) y 3D. Añade cola de trabajos, LoRAs, galerías y un asistente local, Deepy, que planifica y lanza las generaciones por ti.
 **Stack:** Python, PyTorch, Gradio, Diffusers, mmgp
-**Repo:** https://github.com/deepbeepmeep/Wan2GP
+**Repo:** https://github.com/deepbeepmeep/WanGP
 
-**Instalación** [~]: `git clone https://github.com/deepbeepmeep/Wan2GP && cd Wan2GP && (uv sync || pip install -r requirements.txt)`
+**Instalación** [~]: `git clone https://github.com/deepbeepmeep/WanGP && cd WanGP && (uv sync || pip install -r requirements.txt)`
 _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 
 **Elige si:** quieres generar video e imagen con modelos abiertos en una GPU de consumo sin montar flujos a mano
@@ -576,7 +687,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `comfyui`
 
 ## `whisper`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=stt,audio,python
 
 **Qué es:** Cubre también identificación de idioma y traducción al inglés en la misma red.
 **Stack:** Python 3.9+, PyTorch
@@ -591,7 +702,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `whisper-cpp`
 
 ## `whisper-cpp`
-role=runtime · exec=local · setup=easy · mcp=False · prov=['local']
+role=runtime · exec=local · setup=easy · mcp=False · prov=local · tags=stt,audio,local,cpp
 
 **Qué es:** Transcribe voz a texto en local sin Python ni GPU obligatoria, incluso en tiempo real. Base de muchas apps de dictado.
 **Stack:** C++, C
@@ -606,7 +717,7 @@ _Stack no claro; revisa el README tras clonar._
 **Alternativas (elige una):** `faster-whisper`, `whisper`
 
 ## `whisperx`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=stt,audio,python
 
 **Qué es:** Convierte la salida "por segmento" de Whisper en timings palabra a palabra con etiqueta de speaker.
 **Stack:** Python, faster-whisper, wav2vec2, pyannote

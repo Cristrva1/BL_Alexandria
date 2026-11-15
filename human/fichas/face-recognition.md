@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 56.9k | MIT | Python | 2026-06-25 | 📦 Sí |
+| 56.9k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
@@ -51,7 +51,7 @@ Envuelve los modelos de dlib (detector HOG/CNN y embeddings faciales de 128 dime
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Deep-Live-Cam](deep-live-cam.md) | 97.9k | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. |
+| [Deep-Live-Cam](deep-live-cam.md) | 98.1k | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. |
 
 ## Alternativas (elige una)
 
@@ -65,4 +65,4 @@ Envuelve los modelos de dlib (detector HOG/CNN y embeddings faciales de 128 dime
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

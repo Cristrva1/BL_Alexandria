@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 79.3k | MIT | Jupyter Notebook | 2026-11-07 | 🆕 Aún no (sugerido) |
+| 79.6k | MIT | Jupyter Notebook | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
@@ -51,9 +51,9 @@ Lee las lecciones en GitHub; para ejecutar el código, clona el repo (el README 
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Generative AI for Beginners](generative-ai-for-beginners.md) | 123k | Curso gratuito de Microsoft con 21 lecciones para empezar a construir aplicaciones con IA generativa. |
-| [Microsoft Agent Framework](agent-framework.md) | 14.6k | Framework de Microsoft para agentes y workflows multiagente en Python y .NET, sucesor de AutoGen y Semantic Kernel. |
-| [MCP for Beginners](mcp-for-beginners.md) | 17.6k | Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python. |
+| [Generative AI for Beginners](generative-ai-for-beginners.md) | 124k | Curso gratuito de Microsoft con 21 lecciones para empezar a construir aplicaciones con IA generativa. |
+| [Microsoft Agent Framework](agent-framework.md) | 14.7k | Framework de Microsoft para agentes y workflows multiagente en Python y .NET, sucesor de AutoGen y Semantic Kernel. |
+| [MCP for Beginners](mcp-for-beginners.md) | 17.7k | Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python. |
 
 ## Enlaces
 
@@ -62,4 +62,4 @@ Lee las lecciones en GitHub; para ejecutar el código, clona el repo (el README 
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

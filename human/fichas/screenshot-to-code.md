@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 81.1k | MIT | Python | 2026-11-05 | 🆕 Aún no (sugerido) |
+| 81.2k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
@@ -49,13 +49,13 @@ Clona el repo y ejecuta backend (`poetry run uvicorn`) y frontend (`yarn dev`), 
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [tailwindcss](tailwindcss.md) | 98.7k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
+| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Stitch SDK](stitch-sdk.md) | 1.8k | SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. |
+| [Stitch SDK](stitch-sdk.md) | 1.9k | SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. |
 
 ## Enlaces
 
@@ -64,4 +64,4 @@ Clona el repo y ejecuta backend (`poetry run uvicorn`) y frontend (`yarn dev`), 
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

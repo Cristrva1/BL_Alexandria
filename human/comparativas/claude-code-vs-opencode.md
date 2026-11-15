@@ -5,7 +5,7 @@
 | | [Claude Code](../fichas/claude-code.md) | [OpenCode](../fichas/opencode.md) |
 |---|---|---|
 | Qué hace | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
-| ⭐ Estrellas | 155k | 226k |
+| ⭐ Estrellas | 156k | 227k |
 | Elígelo si… | quieres el agente de código más capaz para tareas largas en tu repo | quieres un agente de código abierto y multi-modelo |
 | Evítalo si… | necesitas un agente totalmente abierto y multi-modelo; mira `opencode` | prefieres la experiencia oficial de un proveedor; mira `claude-code` o `codex` |
 | Ejecución | ☁️ cloud/API | 🔀 híbrido |
@@ -21,4 +21,4 @@
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -3,8 +3,22 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `annas-mcp`
+role=runtime · exec=hybrid · setup=medium · mcp=True · prov=— · tags=servidores,annas-archive,cli,mcp-server,go
+
+**Qué es:** Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos. Expone búsquedas y descargas como herramientas MCP y permite seleccionar espejos disponibles.
+**Stack:** Go, Go modules
+**Repo:** https://github.com/iosifache/annas-mcp
+
+**Instalación** [?]: `git clone https://github.com/iosifache/annas-mcp (verificar README para build/run)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** necesitas integrar búsquedas de documentos en un cliente MCP
+**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
+**Combina con:** `markitdown`
+
 ## `awesome-mcp-clients`
-role=directory · exec=local · setup=easy · mcp=False · prov=—
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=mcp
 
 **Qué es:** Ayuda a elegir dónde usar tus servidores MCP: chats de escritorio, editores, CLIs y plataformas.
 **Stack:** Markdown
@@ -18,7 +32,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `awesome-mcp-servers`
 
 ## `awesome-mcp-servers`
-role=directory · exec=hybrid · setup=easy · mcp=True · prov=—
+role=directory · exec=hybrid · setup=easy · mcp=True · prov=— · tags=automation,mcp
 
 **Qué es:** Resuelve el "¿ya existe un servidor para X?" antes de que construyas el tuyo desde cero.
 **Stack:** Markdown
@@ -32,7 +46,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `mcp-use`, `servers`
 
 ## `blender-mcp`
-role=runtime · exec=local · setup=easy · mcp=True · prov=['mcp']
+role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,design,python
 
 **Qué es:** Crea y modifica escenas, objetos y materiales hablando con tu asistente. Útil para prototipos 3D rápidos.
 **Stack:** Python, Blender
@@ -46,7 +60,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `claude-code`
 
 ## `chrome-devtools-mcp`
-role=runtime · exec=local · setup=easy · mcp=True · prov=['mcp']
+role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,browser,typescript
 
 **Qué es:** Tu agente de código puede abrir páginas, leer errores de consola, inspeccionar peticiones y medir rendimiento para depurar de verdad.
 **Stack:** TypeScript, Puppeteer
@@ -61,7 +75,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `playwright-mcp`, `browser-harness`
 
 ## `context7`
-role=runtime · exec=cloud · setup=easy · mcp=True · prov=['mcp']
+role=runtime · exec=cloud · setup=easy · mcp=True · prov=mcp · tags=mcp,docs,typescript
 
 **Qué es:** Evita que el modelo invente APIs viejas: busca la documentación vigente de la librería que estás usando y la inyecta en el prompt.
 **Stack:** TypeScript
@@ -76,7 +90,7 @@ _Servicio gestionado; no se clona._
 **Alternativas (elige una):** `deepwiki-open`
 
 ## `fastmcp`
-role=library · exec=local · setup=easy · mcp=True · prov=['mcp']
+role=library · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,python
 
 **Qué es:** Convierte funciones Python en herramientas MCP con un decorador y añade autenticación, composición de servidores y cliente de pruebas. Su versión 1 se integró en el SDK oficial.
 **Stack:** Python
@@ -91,7 +105,7 @@ _Nombre PyPI puede diferir de 'FastMCP'; verifica en pypi.org._
 **Alternativas (elige una):** `mcp-python-sdk`
 
 ## `figma-context-mcp`
-role=runtime · exec=hybrid · setup=easy · mcp=True · prov=['mcp']
+role=runtime · exec=hybrid · setup=easy · mcp=True · prov=mcp · tags=mcp,design,ui,typescript
 
 **Qué es:** Simplifica la respuesta de la API de Figma y da al agente solo lo relevante (estructura, estilos, medidas) para convertir un diseño en código.
 **Stack:** TypeScript
@@ -104,8 +118,34 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Evita si:** no usas Figma
 **Combina con:** `claude-code`, `ui`, `tailwindcss`
 
+## `free-for-dev`
+role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=recursos,awesome-list,free-for-developers,html
+
+**Qué es:** Directorio de servicios de infraestructura y desarrollo que ofrecen planes o niveles gratuitos. Agrupa servicios por capacidad para comparar opciones antes de configurar un proyecto.
+**Stack:** HTML
+**Repo:** https://github.com/ripienaar/free-for-dev
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/free-for-dev/). Si necesitas el código: git clone https://github.com/ripienaar/free-for-dev`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** buscas servicios de desarrollo con un nivel gratuito disponible
+**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
+
+## `freedomain`
+role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=recursos,digitalplat,dns,dns-tutorial,documentation,domain,domain-platform,domain-registration
+
+**Qué es:** Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat. Reúne instrucciones para registrar un dominio, configurar nameservers y conectar un proyecto.
+**Stack:** Markdown
+**Repo:** https://github.com/DigitalPlatDev/FreeDomain
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/FreeDomain/). Si necesitas el código: git clone https://github.com/DigitalPlatDev/FreeDomain`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres aprender el flujo de dominios y DNS con sus recursos de referencia
+**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
+
 ## `github-mcp-server`
-role=runtime · exec=hybrid · setup=easy · mcp=True · prov=['mcp']
+role=runtime · exec=hybrid · setup=easy · mcp=True · prov=mcp · tags=mcp,code,go
 
 **Qué es:** Conecta asistentes y agentes con la plataforma GitHub: repositorios, issues, pull requests, Actions y seguridad.
 **Stack:** Go, Docker
@@ -119,7 +159,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `claude-code`, `codex`
 
 ## `langchain-mcp-adapters`
-role=library · exec=local · setup=easy · mcp=True · prov=['mcp']
+role=library · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,agents,python
 
 **Qué es:** Permite que tus agentes de LangGraph usen cualquier servidor MCP sin escribir adaptadores. El repo está archivado y su función se integró en LangChain.
 **Stack:** Python, LangChain
@@ -133,8 +173,21 @@ _Nombre PyPI puede diferir de 'LangChain MCP Adapters'; verifica en pypi.org._
 **Combina con:** `langgraph`, `langchain`
 **Alternativas (elige una):** `mcp-use`
 
+## `masterdnsvpn`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=redes,dns,dns-client,dns-proxy,dns-server,dns-tunnel,dns-tunneling,dnstt
+
+**Qué es:** Implementación en Go de un túnel que transporta tráfico TCP mediante consultas y respuestas DNS. Coordina cliente y servidor con retransmisión y selección de resolvers para enlaces con restricciones.
+**Stack:** Go, Go modules
+**Repo:** https://github.com/masterking32/MasterDnsVPN
+
+**Instalación** [?]: `git clone https://github.com/masterking32/MasterDnsVPN (verificar README para build/run)`
+_Stack no claro; revisa el README tras clonar._
+
+**Elige si:** quieres estudiar transporte de red sobre DNS en un entorno de pruebas
+**Evita si:** una conexión directa cubre el caso sin añadir infraestructura
+
 ## `mcp`
-role=library · exec=hybrid · setup=medium · mcp=True · prov=—
+role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=mcp
 
 **Qué es:** Resuelve la fragmentación: cada integración de IA dejaba de ser ad-hoc y pasa a hablar un protocolo común.
 **Stack:** TypeScript/Python
@@ -148,7 +201,7 @@ _Nombre PyPI puede diferir de 'mcp'; verifica en pypi.org._
 **Combina con:** `mcp-use`, `servers`
 
 ## `mcp-for-beginners`
-role=directory · exec=local · setup=easy · mcp=False · prov=—
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=mcp,learning
 
 **Qué es:** Explica los fundamentos del Model Context Protocol, seguridad y despliegue con ejercicios por lenguaje. Disponible en varios idiomas.
 **Stack:** Markdown, Python, TypeScript, C#, Java
@@ -162,7 +215,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `fastmcp`, `mcp-inspector`
 
 ## `mcp-inspector`
-role=app · exec=local · setup=easy · mcp=True · prov=—
+role=app · exec=local · setup=easy · mcp=True · prov=— · tags=mcp,evaluation,typescript
 
 **Qué es:** Conéctate a cualquier servidor MCP, lista sus herramientas y recursos y lánzalos a mano para ver respuestas y errores.
 **Stack:** TypeScript, React
@@ -176,7 +229,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `fastmcp`, `mcp-typescript-sdk`
 
 ## `mcp-neo4j`
-role=runtime · exec=hybrid · setup=medium · mcp=True · prov=—
+role=runtime · exec=hybrid · setup=medium · mcp=True · prov=— · tags=mcp,python
 
 **Qué es:** Resuelve el acceso natural a grafos desde un LLM: el asistente consulta y escribe Cypher sin que tú escribas el glue a mano.
 **Stack:** Python, Docker
@@ -190,7 +243,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `graphrag`, `awesome-mcp-servers`
 
 ## `mcp-python-sdk`
-role=library · exec=local · setup=easy · mcp=True · prov=['mcp']
+role=library · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,python
 
 **Qué es:** Implementación de referencia del protocolo en Python, con la API FastMCP integrada para servidores sencillos.
 **Stack:** Python
@@ -205,7 +258,7 @@ _Nombre PyPI puede diferir de 'MCP Python SDK'; verifica en pypi.org._
 **Alternativas (elige una):** `fastmcp`
 
 ## `mcp-typescript-sdk`
-role=library · exec=local · setup=easy · mcp=True · prov=['mcp']
+role=library · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,typescript
 
 **Qué es:** Base de la mayoría de servidores MCP en Node.js, con transportes stdio y HTTP.
 **Stack:** TypeScript, Node.js, Zod
@@ -220,7 +273,7 @@ _Nombre npm puede diferir de 'MCP TypeScript SDK'; verifica en npmjs.com._
 **Alternativas (elige una):** `mcp-use`
 
 ## `mcp-use`
-role=library · exec=hybrid · setup=medium · mcp=True · prov=—
+role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,mcp,typescript
 
 **Qué es:** Resuelve el salto del SDK base (verboso) a algo productivo: registro de tools, inspector y despliegue incluidos.
 **Stack:** TypeScript o Python, React (apps)
@@ -235,7 +288,7 @@ _Nombre PyPI puede diferir de 'mcp-use'; verifica en pypi.org._
 **Alternativas (elige una):** `langchain-mcp-adapters`, `mcp-typescript-sdk`
 
 ## `playwright-mcp`
-role=runtime · exec=local · setup=easy · mcp=True · prov=['mcp']
+role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,browser,typescript
 
 **Qué es:** Da a tu agente un navegador real controlado por el árbol de accesibilidad, sin depender de capturas. Ideal para pruebas y automatización web.
 **Stack:** TypeScript, Playwright
@@ -250,7 +303,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `chrome-devtools-mcp`, `browser-use`, `browser-harness`
 
 ## `public-apis`
-role=directory · exec=cloud · setup=easy · mcp=False · prov=—
+role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=mcp,python
 
 **Qué es:** Resuelve el descubrimiento: en un solo lugar tienes URLs, autenticación y HTTPS de cada API en lugar de buscarlas una a una.
 **Stack:** Markdown
@@ -264,7 +317,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `n8n`, `firecrawl`
 
 ## `serena`
-role=runtime · exec=local · setup=easy · mcp=True · prov=['mcp']
+role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=mcp,coding-agent,code,python
 
 **Qué es:** En vez de leer archivos enteros, el agente busca símbolos, referencias y edita a nivel de función usando servidores de lenguaje. Ahorra tokens en repos grandes.
 **Stack:** Python, LSP
@@ -279,7 +332,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Alternativas (elige una):** `codegraph`, `gitnexus`
 
 ## `servers`
-role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
+role=directory · exec=hybrid · setup=medium · mcp=False · prov=— · tags=mcp,typescript
 
 **Qué es:** Resuelve la falta de ejemplos canónicos: muestra cómo se construye un servidor MCP correcto, paso a paso.
 **Stack:** TypeScript/Python

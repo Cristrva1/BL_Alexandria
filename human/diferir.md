@@ -4,7 +4,7 @@
 
 Herramientas valiosas pero pesadas (GPU, varios servicios o mucha configuración): instálalas solo cuando sean finalistas claros.
 
-**39 repos.**
+**55 repos.**
 
 ## ⏳ Diferir
 
@@ -14,10 +14,13 @@ _Pesado: solo si llega a finalista._
 |---|---|---|
 | [twenty-main](fichas/twenty-main.md) | 🤖 Automatización, Mensajería & CRM | CRM open-source orientado a equipos técnicos, pensado como alternativa moderna a Salesforce/HubSpot que modelas con tus propios objetos, campos y relaciones. |
 | [Odoo](fichas/odoo.md) | 🤖 Automatización, Mensajería & CRM | Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web. |
+| [cal.diy](fichas/cal-diy.md) | 🤖 Automatización, Mensajería & CRM | Edición comunitaria de Cal.com para experimentar con agendas y reservas en una instalación propia. |
 | [ERPNext](fichas/erpnext.md) | 🤖 Automatización, Mensajería & CRM | ERP 100 % libre sobre Frappe con contabilidad, inventario, CRM, nómina y manufactura. |
 | [Rasa](fichas/rasa.md) | 🤖 Automatización, Mensajería & CRM | Framework Python para asistentes conversacionales con NLU y gestión de diálogo, desplegables en local. |
+| [crm](fichas/compai-crm.md) | 🤖 Automatización, Mensajería & CRM | CRM de Comp AI diseñado alrededor de agentes que investigan contactos, organizan tareas y registran evidencia. |
 | [ECC](fichas/ecc.md) | 🧠 Skills, Prompts & Guías de Agente | Sistema operativo/arnés unificado para desarrollar, ejecutar y desplegar en local agentes de IA de alto rendimiento de forma segura. |
 | [AutoGPT](fichas/autogpt.md) | 🕸️ Frameworks & Orquestación de Agentes | Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un constructor visual de bloques. |
+| [paperclip](fichas/paperclip.md) | 🕸️ Frameworks & Orquestación de Agentes | Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. |
 | [MiroFish](fichas/mirofish.md) | 🕸️ Frameworks & Orquestación de Agentes | Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios. |
 | [ruflo](fichas/ruflo.md) | 🕸️ Frameworks & Orquestación de Agentes | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). |
 | [NemoClaw](fichas/nemoclaw.md) | 🕸️ Frameworks & Orquestación de Agentes | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. |
@@ -27,13 +30,25 @@ _Pesado: solo si llega a finalista._
 | [RAGFlow](fichas/ragflow.md) | 🧬 Memoria, RAG & LLM Ops | Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. |
 | [Milvus](fichas/milvus.md) | 🧬 Memoria, RAG & LLM Ops | Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. |
 | [SGLang](fichas/sglang.md) | 🧬 Memoria, RAG & LLM Ops | Framework de servicio de alto rendimiento para LLM y modelos multimodales. |
+| [TensorRT-LLM](fichas/tensorrt-llm.md) | 🧬 Memoria, RAG & LLM Ops | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. |
+| [tensorflow](fichas/tensorflow.md) | 🧑‍💻 Inteligencia de Código, Datos & Entrenamiento | Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos. |
 | [llm.c](fichas/llm-c.md) | 🧑‍💻 Inteligencia de Código, Datos & Entrenamiento | Implementación de entrenamiento de LLMs en C/CUDA puro de Andrej Karpathy, sin PyTorch ni frameworks pesados, para ver el cómputo al desnudo. |
 | [DeepSeek-Coder](fichas/deepseek-coder.md) | 🧑‍💻 Inteligencia de Código, Datos & Entrenamiento | Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software. |
 | [cosmos](fichas/cosmos.md) | 🧑‍💻 Inteligencia de Código, Datos & Entrenamiento | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. |
+| [warp](fichas/warp.md) | 🧑‍💻 Inteligencia de Código, Datos & Entrenamiento | Framework de NVIDIA que compila funciones de Python en kernels para simulación física y cálculo en CPU o GPU. |
+| [hudi](fichas/hudi.md) | 🧑‍💻 Inteligencia de Código, Datos & Entrenamiento | Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. |
 | [odysseus](fichas/odysseus.md) | 🏠 IA Local: Modelos, Chats & Workspaces | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. |
+| [server](fichas/nextcloud-server.md) | 🏠 IA Local: Modelos, Chats & Workspaces | Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. |
+| [muse-spark](fichas/muse-spark.md) | 🏠 IA Local: Modelos, Chats & Workspaces | Proyecto de terceros que se presenta como un estudio de IA de escritorio; su afiliación y funciones no están verificadas. |
 | [penpot](fichas/penpot.md) | 🎨 Diseño, UI & Frontend | Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos. |
+| [qlib](fichas/qlib.md) | 📊 Analítica & Visualización | Plataforma de Microsoft para investigación cuantitativa con datos, modelos y evaluación de estrategias. |
+| [FinceptTerminal](fichas/finceptterminal.md) | 📊 Analítica & Visualización | Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes. |
+| [AutoHedge](fichas/autohedge.md) | 📊 Analítica & Visualización | Experimento de agentes coordinados para análisis de mercado, riesgo y flujos de trading automatizado. |
+| [Pythia](fichas/pythia.md) | 📊 Analítica & Visualización | Plataforma local que reúne fuentes de actualidad y genera escenarios con motores de inteligencia y predicción. |
+| [open-sol-bot](fichas/open-sol-bot.md) | 📊 Analítica & Visualización | Bot abierto de Solana que reúne seguimiento de operaciones y funciones de trading automatizado. |
 | [stable-diffusion-webui](fichas/stable-diffusion-webui.md) | 🖼️ Generación de Imagen & Visión | Interfaz web local de referencia para Stable Diffusion (AUTOMATIC1111), que expone txt2img, img2img, inpainting y cientos de extensiones desde el navegador. |
 | [ComfyUI](fichas/comfyui.md) | 🖼️ Generación de Imagen & Visión | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
+| [RuView](fichas/ruview.md) | 🖼️ Generación de Imagen & Visión | Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento. |
 | [Deep-Live-Cam](fichas/deep-live-cam.md) | 🖼️ Generación de Imagen & Visión | Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video. |
 | [diffusers](fichas/diffusers.md) | 🖼️ Generación de Imagen & Visión | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. |
 | [ControlNet](fichas/controlnet.md) | 🖼️ Generación de Imagen & Visión | Modelos que guían la generación de imágenes con poses, bordes, profundidad o segmentación. |
@@ -46,12 +61,13 @@ _Pesado: solo si llega a finalista._
 | [VoxCPM](fichas/voxcpm.md) | 🎬 Audio, Voz & Video | Modelo de texto a voz sin tokenizador que clona voces con naturalidad y expresividad alta. |
 | [NVIDIA NeMo Speech](fichas/nemo.md) | 🎬 Audio, Voz & Video | Framework de NVIDIA para entrenar y usar modelos de voz: reconocimiento, síntesis y más. |
 | [Wan2.2](fichas/wan2-2.md) | 🎬 Audio, Voz & Video | Familia de modelos abiertos de Alibaba para generar video desde texto, imagen o voz, con arquitectura MoE y licencia Apache 2.0. |
+| [ACE-Step-1.5](fichas/ace-step-1-5.md) | 🎬 Audio, Voz & Video | Modelo y herramientas para generar música localmente a partir de instrucciones, con distintas variantes de tamaño. |
 | [HunyuanVideo](fichas/hunyuanvideo.md) | 🎬 Audio, Voz & Video | Modelo abierto de Tencent de 13B parámetros para generar video a partir de texto, con pesos y código de inferencia. |
-| [LTX-Video](fichas/ltx-video.md) | 🎬 Audio, Voz & Video | Modelos abiertos de Lightricks (v0.9.x) para generar video desde texto o imagen, rápidos en GPU de consumo; hoy en modo legado. |
 | [WanGP](fichas/wan2gp.md) | 🎬 Audio, Voz & Video | App web local que reúne modelos abiertos de video, imagen, audio y 3D (Wan, LTX, Hunyuan, Flux) para GPU modestas. |
+| [LTX-Video](fichas/ltx-video.md) | 🎬 Audio, Voz & Video | Modelos abiertos de Lightricks (v0.9.x) para generar video desde texto o imagen, rápidos en GPU de consumo; hoy en modo legado. |
 | [Unlimited-OCR](fichas/unlimited-ocr.md) | 📄 Documentos & Presentaciones | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. |
 | [olmOCR](fichas/olmocr.md) | 📄 Documentos & Presentaciones | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión, a gran escala. |
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 43k | MIT | C++ | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 43.1k | MIT | C++ | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,7 +49,7 @@ Motor columnar vectorizado que lee formatos de archivo directamente y ejecuta SQ
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [marimo](marimo.md) | 23.5k | Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. |
+| [marimo](marimo.md) | 23.6k | Notebook reactivo de Python que se guarda como script, se versiona en Git y se publica como app. |
 | [Apache Superset](superset.md) | 75.5k | Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. |
 
 ## Alternativas (elige una)
@@ -66,4 +66,4 @@ Motor columnar vectorizado que lee formatos de archivo directamente y ejecuta SQ
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

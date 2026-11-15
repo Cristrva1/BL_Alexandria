@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 48.4k | Otra (ver repo) | TypeScript | 2026-11-10 | 📦 Sí |
+| 48.5k | NOASSERTION | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
@@ -49,15 +49,15 @@ Una interfaz web (TypeScript) recorre el repositorio y lo presenta como vistas n
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [codegraph](codegraph.md) | 77.3k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
+| [codegraph](codegraph.md) | 77.6k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Repomix](repomix.md) | 29.2k | Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. |
-| [codebase-memory-mcp](codebase-memory-mcp.md) | 48.4k | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. |
-| [Serena](serena.md) | 31.3k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
+| [Repomix](repomix.md) | 29.3k | Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. |
+| [codebase-memory-mcp](codebase-memory-mcp.md) | 48.6k | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. |
+| [Serena](serena.md) | 31.4k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
 
 ## Enlaces
 
@@ -67,4 +67,4 @@ Una interfaz web (TypeScript) recorre el repositorio y lo presenta como vistas n
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

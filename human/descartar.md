@@ -42,6 +42,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [OpenAI Cookbook](fichas/openai-cookbook.md) | [Claude Cookbooks](fichas/claude-cookbooks.md), [Awesome LLM Apps](fichas/awesome-llm-apps.md) |
 | [Prompt Engineering Guide](fichas/prompt-engineering-guide.md) | [Anthropic's Prompt Engineering Tutorial](fichas/prompt-eng-tutorial.md) |
 | [prompts.chat](fichas/prompts-chat.md) | [Fabric](fichas/fabric.md) |
+| [social-media-research-skills](fichas/social-media-research-skills.md) | [last30days](fichas/last30days-skill.md) |
 | [Spec Kit](fichas/spec-kit.md) | [BMAD Method](fichas/bmad-method.md) |
 | [Stop Slop](fichas/stop-slop.md) | [Humanizer](fichas/humanizer.md) |
 | [superpowers](fichas/superpowers.md) | [Agent Skills (Addy Osmani)](fichas/agent-skills.md) |
@@ -58,7 +59,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Cline](fichas/cline.md) | [Continue](fichas/continue.md), [Aider](fichas/aider.md) |
 | [Codex CLI](fichas/codex.md) | [Claude Code](fichas/claude-code.md), [Gemini CLI](fichas/gemini-cli.md), [OpenCode](fichas/opencode.md) |
 | [Continue](fichas/continue.md) | [Cline](fichas/cline.md), [Aider](fichas/aider.md) |
-| [crewAI](fichas/crewai.md) | [AutoGen](fichas/autogen.md), [LangGraph](fichas/langgraph.md), [Agno](fichas/agno.md) |
+| [crewAI](fichas/crewai.md) | [AutoGen](fichas/autogen.md), [LangGraph](fichas/langgraph.md), [Agno](fichas/agno.md), [MetaGPT](fichas/metagpt.md) |
 | [Deep Agents](fichas/deepagents.md) | [OpenAI Agents SDK](fichas/openai-agents-python.md) |
 | [DeepTutor](fichas/deeptutor.md) | [open-notebook](fichas/open-notebook.md) |
 | [dify](fichas/dify.md) | [Sim](fichas/sim.md), [RAGFlow](fichas/ragflow.md) |
@@ -68,7 +69,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Gemini CLI](fichas/gemini-cli.md) | [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md), [OpenCode](fichas/opencode.md) |
 | [Gemini Computer Use (preview)](fichas/computer-use-preview.md) | [browser-use](fichas/browser-use.md), [Skyvern](fichas/skyvern.md) |
 | [goose](fichas/goose.md) | [OpenCode](fichas/opencode.md), [Claude Code](fichas/claude-code.md), [Open Interpreter](fichas/open-interpreter.md) |
-| [gpt-researcher](fichas/gpt-researcher.md) | [STORM](fichas/storm.md), [Vane](fichas/vane.md) |
+| [gpt-researcher](fichas/gpt-researcher.md) | [STORM](fichas/storm.md), [Vane](fichas/vane.md), [open_deep_research](fichas/open-deep-research.md) |
 | [Haystack](fichas/haystack.md) | [LlamaIndex](fichas/llama-index.md), [langchain](fichas/langchain.md) |
 | [hermes-agent](fichas/hermes-agent.md) | [OpenClaw](fichas/openclaw.md), [Mercury Agent](fichas/mercury-agent.md) |
 | [langchain](fichas/langchain.md) | [LlamaIndex](fichas/llama-index.md), [Haystack](fichas/haystack.md), [Semantic Kernel](fichas/semantic-kernel.md) |
@@ -77,12 +78,15 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [LangGraph Supervisor](fichas/langgraph-supervisor-py.md) | [LangGraph](fichas/langgraph.md) |
 | [LangGraph.js](fichas/langgraphjs.md) | [Mastra](fichas/mastra.md), [AI SDK (Vercel)](fichas/vercel-ai.md) |
 | [LlamaIndex](fichas/llama-index.md) | [Haystack](fichas/haystack.md), [langchain](fichas/langchain.md) |
+| [local-deep-research](fichas/local-deep-research.md) | [open_deep_research](fichas/open-deep-research.md) |
 | [Mastra](fichas/mastra.md) | [LangGraph.js](fichas/langgraphjs.md), [AI SDK (Vercel)](fichas/vercel-ai.md) |
 | [Mercury Agent](fichas/mercury-agent.md) | [OpenClaw](fichas/openclaw.md), [hermes-agent](fichas/hermes-agent.md) |
+| [MetaGPT](fichas/metagpt.md) | [crewAI](fichas/crewai.md) |
 | [Microsoft Agent Framework](fichas/agent-framework.md) | [AutoGen](fichas/autogen.md), [Semantic Kernel](fichas/semantic-kernel.md) |
 | [NemoClaw](fichas/nemoclaw.md) | [sandbox](fichas/sandbox.md) |
 | [Open Interpreter](fichas/open-interpreter.md) | [goose](fichas/goose.md) |
 | [Open SWE](fichas/open-swe.md) | [OpenHands](fichas/openhands.md), [SWE-agent](fichas/swe-agent.md) |
+| [open_deep_research](fichas/open-deep-research.md) | [local-deep-research](fichas/local-deep-research.md), [gpt-researcher](fichas/gpt-researcher.md) |
 | [OpenAI Agents SDK](fichas/openai-agents-python.md) | [Pydantic AI](fichas/pydantic-ai.md), [LangGraph](fichas/langgraph.md), [smolagents](fichas/smolagents.md), [Deep Agents](fichas/deepagents.md), [Agent Development Kit (ADK)](fichas/adk-python.md) |
 | [OpenClaw](fichas/openclaw.md) | [hermes-agent](fichas/hermes-agent.md), [Mercury Agent](fichas/mercury-agent.md) |
 | [OpenCode](fichas/opencode.md) | [Claude Code](fichas/claude-code.md), [Codex CLI](fichas/codex.md), [goose](fichas/goose.md), [Gemini CLI](fichas/gemini-cli.md), [Aider](fichas/aider.md) |
@@ -94,15 +98,18 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [smolagents](fichas/smolagents.md) | [Pydantic AI](fichas/pydantic-ai.md), [OpenAI Agents SDK](fichas/openai-agents-python.md) |
 | [STORM](fichas/storm.md) | [gpt-researcher](fichas/gpt-researcher.md) |
 | [SWE-agent](fichas/swe-agent.md) | [OpenHands](fichas/openhands.md), [Open SWE](fichas/open-swe.md) |
+| [agent-browser](fichas/agent-browser.md) | [playwright-cli](fichas/playwright-cli.md) |
 | [Agent-Reach](fichas/agent-reach.md) | [snscrape](fichas/snscrape.md) |
 | [Browser Harness](fichas/browser-harness.md) | [Playwright MCP](fichas/playwright-mcp.md), [Chrome DevTools MCP](fichas/chrome-devtools-mcp.md) |
 | [browser-use](fichas/browser-use.md) | [Gemini Computer Use (preview)](fichas/computer-use-preview.md), [Stagehand](fichas/stagehand.md), [Skyvern](fichas/skyvern.md), [Playwright MCP](fichas/playwright-mcp.md) |
 | [crawl4ai](fichas/crawl4ai.md) | [Jina Reader](fichas/jina-reader.md) |
 | [firecrawl](fichas/firecrawl.md) | [Jina Reader](fichas/jina-reader.md) |
 | [Jina Reader](fichas/jina-reader.md) | [firecrawl](fichas/firecrawl.md), [crawl4ai](fichas/crawl4ai.md) |
+| [last30days](fichas/last30days-skill.md) | [social-media-research-skills](fichas/social-media-research-skills.md) |
 | [llm-scraper](fichas/llm-scraper.md) | [Maxun](fichas/maxun.md) |
 | [Maxun](fichas/maxun.md) | [Scrapegraph-ai](fichas/scrapegraph-ai.md), [llm-scraper](fichas/llm-scraper.md) |
 | [playwright](fichas/playwright.md) | [Puppeteer](fichas/puppeteer.md), [Selenium](fichas/selenium.md) |
+| [playwright-cli](fichas/playwright-cli.md) | [agent-browser](fichas/agent-browser.md) |
 | [Puppeteer](fichas/puppeteer.md) | [playwright](fichas/playwright.md), [Selenium](fichas/selenium.md) |
 | [Scrapegraph-ai](fichas/scrapegraph-ai.md) | [Maxun](fichas/maxun.md) |
 | [Selenium](fichas/selenium.md) | [playwright](fichas/playwright.md), [Puppeteer](fichas/puppeteer.md) |
@@ -128,6 +135,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Faiss](fichas/faiss.md) | [Qdrant](fichas/qdrant.md), [Chroma](fichas/chroma.md) |
 | [Graphiti](fichas/graphiti.md) | [cognee](fichas/cognee.md), [graphrag](fichas/graphrag.md) |
 | [graphrag](fichas/graphrag.md) | [Graphiti](fichas/graphiti.md), [cognee](fichas/cognee.md), [LightRAG](fichas/lightrag.md) |
+| [headroom](fichas/headroom.md) | [rtk](fichas/rtk.md) |
 | [langfuse](fichas/langfuse.md) | [Phoenix](fichas/phoenix.md), [Opik](fichas/opik.md), [MLflow](fichas/mlflow.md) |
 | [Letta](fichas/letta.md) | [mem0](fichas/mem0.md), [cognee](fichas/cognee.md) |
 | [LightRAG](fichas/lightrag.md) | [graphrag](fichas/graphrag.md), [RAGFlow](fichas/ragflow.md), [PageIndex](fichas/pageindex.md) |
@@ -142,6 +150,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Qdrant](fichas/qdrant.md) | [Milvus](fichas/milvus.md), [Chroma](fichas/chroma.md), [pgvector](fichas/pgvector.md), [Faiss](fichas/faiss.md) |
 | [Ragas](fichas/ragas.md) | [DeepEval](fichas/deepeval.md), [promptfoo](fichas/promptfoo.md) |
 | [RAGFlow](fichas/ragflow.md) | [dify](fichas/dify.md), [LightRAG](fichas/lightrag.md) |
+| [rtk](fichas/rtk.md) | [headroom](fichas/headroom.md) |
 | [SGLang](fichas/sglang.md) | [vLLM](fichas/vllm.md) |
 | [supermemory](fichas/supermemory.md) | [mem0](fichas/mem0.md), [agentmemory](fichas/agentmemory.md) |
 | [vLLM](fichas/vllm.md) | [SGLang](fichas/sglang.md) |
@@ -160,8 +169,9 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Semgrep](fichas/semgrep.md) | [ast-grep](fichas/ast-grep.md) |
 | [Unsloth](fichas/unsloth.md) | [LLaMA-Factory](fichas/llama-factory.md) |
 | [AnythingLLM](fichas/anything-llm.md) | [Open WebUI](fichas/open-webui.md), [Khoj](fichas/khoj.md), [PrivateGPT](fichas/private-gpt.md) |
+| [chatbox](fichas/chatbox.md) | [Jan](fichas/jan.md) |
 | [Cherry Studio](fichas/cherry-studio.md) | [Jan](fichas/jan.md), [LobeHub](fichas/lobehub.md) |
-| [Jan](fichas/jan.md) | [Cherry Studio](fichas/cherry-studio.md), [Text Generation WebUI](fichas/textgen.md) |
+| [Jan](fichas/jan.md) | [Cherry Studio](fichas/cherry-studio.md), [Text Generation WebUI](fichas/textgen.md), [chatbox](fichas/chatbox.md) |
 | [Khoj](fichas/khoj.md) | [AnythingLLM](fichas/anything-llm.md), [SurfSense](fichas/surfsense.md) |
 | [LibreChat](fichas/librechat.md) | [Open WebUI](fichas/open-webui.md), [LobeHub](fichas/lobehub.md) |
 | [llama.cpp](fichas/llama-cpp.md) | [Ollama](fichas/ollama.md), [llamafile](fichas/llamafile.md), [LocalAI](fichas/localai.md) |
@@ -222,16 +232,19 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [stable-diffusion-webui](fichas/stable-diffusion-webui.md) | [Stable Diffusion WebUI Forge](fichas/sd-webui-forge.md), [FLUX](fichas/flux.md) |
 | [Chatterbox](fichas/chatterbox.md) | [Fish Speech](fichas/fish-speech.md), [GPT-SoVITS](fichas/gpt-sovits.md), [Kokoro](fichas/kokoro.md), [LuxTTS](fichas/luxtts.md) |
 | [CosyVoice](fichas/cosyvoice.md) | [Fish Speech](fichas/fish-speech.md), [IndexTTS](fichas/index-tts.md) |
+| [edge-tts](fichas/edge-tts.md) | [Kokoro](fichas/kokoro.md) |
 | [faster-whisper](fichas/faster-whisper.md) | [whisper.cpp](fichas/whisper-cpp.md) |
 | [Fish Speech](fichas/fish-speech.md) | [Chatterbox](fichas/chatterbox.md), [CosyVoice](fichas/cosyvoice.md), [GPT-SoVITS](fichas/gpt-sovits.md) |
 | [GPT-SoVITS](fichas/gpt-sovits.md) | [Chatterbox](fichas/chatterbox.md), [Fish Speech](fichas/fish-speech.md) |
 | [HunyuanVideo](fichas/hunyuanvideo.md) | [Wan2.2](fichas/wan2-2.md), [LTX-Video](fichas/ltx-video.md) |
 | [HyperFrames](fichas/hyperframes.md) | [remotion](fichas/remotion.md), [MoviePy](fichas/moviepy.md) |
 | [IndexTTS](fichas/index-tts.md) | [CosyVoice](fichas/cosyvoice.md) |
-| [Kokoro](fichas/kokoro.md) | [Chatterbox](fichas/chatterbox.md), [TTS](fichas/tts.md), [LuxTTS](fichas/luxtts.md) |
+| [Kokoro](fichas/kokoro.md) | [Chatterbox](fichas/chatterbox.md), [TTS](fichas/tts.md), [LuxTTS](fichas/luxtts.md), [edge-tts](fichas/edge-tts.md) |
 | [LiveKit Agents](fichas/livekit-agents.md) | [Pipecat](fichas/pipecat.md) |
 | [LTX-Video](fichas/ltx-video.md) | [Wan2.2](fichas/wan2-2.md), [HunyuanVideo](fichas/hunyuanvideo.md) |
 | [LuxTTS](fichas/luxtts.md) | [Kokoro](fichas/kokoro.md), [Chatterbox](fichas/chatterbox.md) |
+| [manim](fichas/manim-community.md) | [Manim (ManimGL)](fichas/manim.md) |
+| [Manim (ManimGL)](fichas/manim.md) | [manim](fichas/manim-community.md) |
 | [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) | [OpenMontage](fichas/openmontage.md), [videofy_minimal](fichas/videofy-minimal.md) |
 | [MoviePy](fichas/moviepy.md) | [remotion](fichas/remotion.md), [HyperFrames](fichas/hyperframes.md) |
 | [NVIDIA NeMo Speech](fichas/nemo.md) | [whisperX](fichas/whisperx.md) |
@@ -272,4 +285,4 @@ Ver también [⚖️ Comparativas](comparativas/README.md).
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

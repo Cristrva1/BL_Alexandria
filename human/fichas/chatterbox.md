@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 27.7k | MIT | Python | 2026-11-04 | 🆕 Aún no (sugerido) |
+| 27.8k | MIT | Python | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,16 +49,16 @@ Modelo basado en Llama que genera tokens de voz condicionados por una referencia
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Pipecat](pipecat.md) | 17.2k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
+| [Pipecat](pipecat.md) | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Fish Speech](fish-speech.md) | 33.7k | Sistema de texto a voz open source de alta calidad con clonación de voz multilingüe. |
-| [GPT-SoVITS](gpt-sovits.md) | 64.7k | Clonación de voz y TTS con solo un minuto de audio, con interfaz web para entrenar. |
-| [Kokoro](kokoro.md) | 10k | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. |
-| [LuxTTS](luxtts.md) | 5.5k | Modelo de TTS ligero con clonación de voz que genera audio hasta 150 veces más rápido que tiempo real. |
+| [GPT-SoVITS](gpt-sovits.md) | 65.1k | Clonación de voz y TTS con solo un minuto de audio, con interfaz web para entrenar. |
+| [Kokoro](kokoro.md) | 10.1k | Modelo de texto a voz de solo 82M parámetros con calidad alta y licencia Apache. |
+| [LuxTTS](luxtts.md) | 5.6k | Modelo de TTS ligero con clonación de voz que genera audio hasta 150 veces más rápido que tiempo real. |
 
 ## Enlaces
 
@@ -68,4 +68,4 @@ Modelo basado en Llama que genera tokens de voz condicionados por una referencia
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

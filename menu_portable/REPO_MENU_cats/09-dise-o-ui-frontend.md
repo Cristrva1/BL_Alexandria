@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `animejs`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,javascript
 
 **Qué es:** API simple y potente para líneas de tiempo, scroll y animaciones complejas.
 **Stack:** JavaScript
@@ -18,7 +18,7 @@ _Nombre npm puede diferir de 'Anime.js'; verifica en npmjs.com._
 **Alternativas (elige una):** `gsap`, `motion`
 
 ## `ant-design`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,react,typescript
 
 **Qué es:** Componentes muy completos para apps de negocio: tablas, formularios, fechas y layouts de backoffice.
 **Stack:** TypeScript, React
@@ -33,7 +33,7 @@ _Nombre npm puede diferir de 'Ant Design'; verifica en npmjs.com._
 **Alternativas (elige una):** `mui`, `ui`
 
 ## `assistant-ui`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,chatbot,react,typescript
 
 **Qué es:** Componentes componibles de chat con streaming, adjuntos, markdown y herramientas, compatibles con AI SDK y LangGraph.
 **Stack:** TypeScript, React
@@ -48,7 +48,7 @@ _Nombre npm puede diferir de 'assistant-ui'; verifica en npmjs.com._
 **Alternativas (elige una):** `copilotkit`
 
 ## `copilotkit`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=['openai', 'anthropic']
+role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic · tags=ui,agents,react,typescript
 
 **Qué es:** Añade copilotos, chat y agentes que actúan sobre tu app, con estado compartido entre agente y UI. Se integra con LangGraph, Mastra y más.
 **Stack:** TypeScript, React
@@ -63,7 +63,7 @@ _Nombre npm puede diferir de 'CopilotKit'; verifica en npmjs.com._
 **Alternativas (elige una):** `assistant-ui`
 
 ## `daisyui`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,javascript
 
 **Qué es:** Añade clases como `btn` o `card` sobre Tailwind para escribir menos HTML, sin JavaScript.
 **Stack:** JavaScript, CSS, Tailwind
@@ -78,7 +78,7 @@ _Nombre npm puede diferir de 'daisyUI'; verifica en npmjs.com._
 **Alternativas (elige una):** `ui`
 
 ## `design.md`
-role=skill · exec=cloud · setup=easy · mcp=False · prov=—
+role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design,typescript
 
 **Qué es:** Resuelve la inconsistencia de marca cuando varias personas o agentes tocan la UI.
 **Stack:** Markdown/YAML
@@ -92,7 +92,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `impeccable`
 
 ## `excalidraw`
-role=app · exec=local · setup=easy · mcp=False · prov=—
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=design,docs,typescript
 
 **Qué es:** Dibuja diagramas rápidos que parecen bocetos, colabora en tiempo real y embébela en tus apps como componente React.
 **Stack:** TypeScript, React, Canvas
@@ -105,8 +105,21 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Evita si:** prefieres diagramas como texto; mira `mermaid`
 **Alternativas (elige una):** `tldraw`, `mermaid`
 
+## `front-end-checklist`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=skills,ai-agent,ai-agents,checklist,css,front-end-developer-tool,front-end-development,frontend
+
+**Qué es:** Checklist y recursos para revisar aspectos de calidad de un frontend antes de entregarlo. Organiza comprobaciones de implementación y publica material para revisión humana y agentes.
+**Stack:** MDX, Node.js
+**Repo:** https://github.com/thedaviddias/Front-End-Checklist
+
+**Instalación** [+]: `Copiar la skill a la carpeta de skills de tu agente (p.ej. .claude/skills/Front-End-Checklist/). Si necesitas el código: git clone https://github.com/thedaviddias/Front-End-Checklist`
+_Material de referencia/playbook; no es una dependencia runtime._
+
+**Elige si:** quieres una lista de revisión de interfaz y entrega web
+**Evita si:** tu interfaz ya cubre el mismo propósito con una herramienta equivalente
+
 ## `gsap`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ui,design,javascript
 
 **Qué es:** Es la herramienta de referencia del motion web profesional.
 **Stack:** JavaScript
@@ -121,7 +134,7 @@ _Nombre npm puede diferir de 'GSAP'; verifica en npmjs.com._
 **Alternativas (elige una):** `animejs`
 
 ## `heroui`
-role=library · exec=local · setup=easy · mcp=True · prov=—
+role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,typescript
 
 **Qué es:** Resuelve la accesibilidad seria sin renunciar a un estilado moderno.
 **Stack:** Node.js, React, Tailwind
@@ -136,7 +149,7 @@ _Nombre npm puede diferir de 'heroui'; verifica en npmjs.com._
 **Alternativas (elige una):** `mui`
 
 ## `impeccable`
-role=skill · exec=cloud · setup=easy · mcp=False · prov=—
+role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design,rust
 
 **Qué es:** Ataca el patrón repetitivo de interfaces que "huelen" a IA.
 **Stack:** Node (`npx impeccable`)
@@ -150,7 +163,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `taste-skill`, `ui-ux-pro-max-skill`
 
 ## `lucide`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,typescript
 
 **Qué es:** Iconos limpios y uniformes, usados por shadcn/ui y muchas apps.
 **Stack:** TypeScript, SVG
@@ -164,7 +177,7 @@ _Nombre npm puede diferir de 'Lucide'; verifica en npmjs.com._
 **Combina con:** `ui`
 
 ## `magicui`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui
 
 **Qué es:** Apunta al impacto visual más que a la accesibilidad estricta.
 **Stack:** Node.js, React/Next.js
@@ -179,7 +192,7 @@ _Nombre npm puede diferir de 'magicui'; verifica en npmjs.com._
 **Alternativas (elige una):** `react-bits`
 
 ## `motion`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,typescript
 
 **Qué es:** Hizo accesible la animación en el ecosistema React.
 **Stack:** JavaScript/React
@@ -194,7 +207,7 @@ _Nombre npm puede diferir de 'motion'; verifica en npmjs.com._
 **Alternativas (elige una):** `animejs`
 
 ## `mui`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,react,javascript
 
 **Qué es:** Cientos de componentes accesibles y personalizables para apps React, con temas y sistema de estilos propio.
 **Stack:** JavaScript, TypeScript, React
@@ -209,7 +222,7 @@ _Nombre npm puede diferir de 'Material UI'; verifica en npmjs.com._
 **Alternativas (elige una):** `ant-design`, `ui`, `heroui`
 
 ## `normalize.css`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design
 
 **Qué es:** Resuelve las inconsistencias de margen, tipografía y formularios entre Chrome, Firefox y Safari.
 **Stack:** CSS
@@ -223,7 +236,7 @@ _Stack no claro; revisa el README tras clonar._
 **Combina con:** `tailwindcss`
 
 ## `onlook`
-role=app · exec=local · setup=easy · mcp=False · prov=['anthropic']
+role=app · exec=local · setup=easy · mcp=False · prov=anthropic · tags=design,ui,coding-agent,typescript
 
 **Qué es:** Edita tu app en un lienzo visual o pide cambios a la IA, y Onlook escribe el código en tu proyecto.
 **Stack:** TypeScript, Next.js, Tailwind
@@ -238,7 +251,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `open-design`
 
 ## `open-design`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=—
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,design,typescript
 
 **Qué es:** Resuelve el ir y venir entre prompt, preview y código exportable.
 **Stack:** TypeScript/React, Tauri (Rust)
@@ -253,7 +266,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `onlook`
 
 ## `openui`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=—
+role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=ui,agents,typescript
 
 **Qué es:** Permite que el modelo devuelva componentes interactivos (tablas, formularios, gráficos) que tu app renderiza.
 **Stack:** TypeScript, React
@@ -267,7 +280,7 @@ _Nombre npm puede diferir de 'OpenUI'; verifica en npmjs.com._
 **Combina con:** `copilotkit`
 
 ## `penpot`
-role=app · exec=local · setup=heavy · mcp=False · prov=—
+role=app · exec=local · setup=heavy · mcp=False · prov=— · tags=design,docker
 
 **Qué es:** Es la alternativa abierta a Figma más conocida.
 **Stack:** stack web self-host, Docker (Clojure/ClojureScript)
@@ -281,7 +294,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `plasmic`
 
 ## `plasmic`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=—
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=design,typescript
 
 **Qué es:** Cubre el hueco entre no-code y desarrollo a medida.
 **Stack:** Node.js, React/Next.js
@@ -295,7 +308,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `tailwindcss`
 
 ## `radix-primitives`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,react,typescript
 
 **Qué es:** Resuelven accesibilidad, foco y teclado en diálogos, menús o tooltips, dejándote el estilo. Son la base de shadcn/ui.
 **Stack:** TypeScript, React
@@ -309,7 +322,7 @@ _Nombre npm puede diferir de 'Radix Primitives'; verifica en npmjs.com._
 **Combina con:** `ui`, `tailwindcss`
 
 ## `react-bits`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,react,javascript
 
 **Qué es:** Fondos, textos animados y efectos listos para copiar en proyectos React y Next.js.
 **Stack:** JavaScript, React
@@ -324,7 +337,7 @@ _Nombre npm puede diferir de 'React Bits'; verifica en npmjs.com._
 **Alternativas (elige una):** `magicui`
 
 ## `react-three-fiber`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ui,design,typescript
 
 **Qué es:** Lleva la mentalidad componible de React al 3D sin abandonar three.js por debajo.
 **Stack:** JavaScript/React
@@ -338,7 +351,7 @@ _Nombre npm puede diferir de 'react-three-fiber'; verifica en npmjs.com._
 **Combina con:** `motion`
 
 ## `screenshot-to-code`
-role=app · exec=cloud · setup=easy · mcp=False · prov=['openai', 'anthropic', 'google']
+role=app · exec=cloud · setup=easy · mcp=False · prov=openai,anthropic,google · tags=ui,vision,code,python
 
 **Qué es:** Sube una imagen o graba un video de una web y obtén código funcional que puedes iterar.
 **Stack:** Python, TypeScript, React
@@ -353,7 +366,7 @@ _Servicio gestionado; no se clona._
 **Alternativas (elige una):** `stitch-sdk`
 
 ## `skills-emil`
-role=skill · exec=cloud · setup=easy · mcp=False · prov=—
+role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design
 
 **Qué es:** Resuelve el handoff diseño↔código, no solo la estética final.
 **Stack:** Markdown (skills), TypeScript/React
@@ -367,7 +380,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `ui-ux-pro-max-skill`
 
 ## `stitch-sdk`
-role=library · exec=cloud · setup=easy · mcp=False · prov=['google']
+role=library · exec=cloud · setup=easy · mcp=False · prov=google · tags=ui,design,typescript
 
 **Qué es:** Automatiza Stitch, el generador de interfaces de Google, para integrarlo en tus flujos y agentes.
 **Stack:** TypeScript
@@ -382,7 +395,7 @@ _Nombre npm puede diferir de 'Stitch SDK'; verifica en npmjs.com._
 **Alternativas (elige una):** `screenshot-to-code`
 
 ## `stitch-skills`
-role=skill · exec=cloud · setup=easy · mcp=False · prov=—
+role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design,ui
 
 **Qué es:** Skills en el estándar abierto Agent Skills que enseñan a Claude Code, Codex o Gemini CLI a diseñar con Stitch.
 **Stack:** TypeScript, Markdown
@@ -396,7 +409,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `stitch-sdk`, `gemini-cli`
 
 ## `swr`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typescript
 
 **Qué es:** Cubre el caso de consumir APIs en frontend sin manejar caché a mano.
 **Stack:** JavaScript/React
@@ -410,7 +423,7 @@ _Nombre npm puede diferir de 'swr'; verifica en npmjs.com._
 **Combina con:** `heroui`
 
 ## `tailwindcss`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,typescript
 
 **Qué es:** Elimina el contexto de estilos disperso entre hojas y componentes.
 **Stack:** Node.js, CSS
@@ -424,7 +437,7 @@ _Nombre npm puede diferir de 'tailwindcss'; verifica en npmjs.com._
 **Combina con:** `heroui`, `magicui`
 
 ## `taste-skill`
-role=skill · exec=cloud · setup=easy · mcp=False · prov=—
+role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design,javascript
 
 **Qué es:** Ataca el acabado "de plantilla" que delata a las UIs generadas por IA.
 **Stack:** Markdown/skills
@@ -438,7 +451,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `ui-ux-pro-max-skill`, `impeccable`
 
 ## `three.js`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ui,design,javascript
 
 **Qué es:** Abstrae la complejidad de WebGL en escenas, cámaras, luces y mallas.
 **Stack:** JavaScript/WebGL
@@ -452,7 +465,7 @@ _Nombre npm puede diferir de 'three.js'; verifica en npmjs.com._
 **Combina con:** `react-three-fiber`, `gsap`
 
 ## `tldraw`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=design,ui,react,typescript
 
 **Qué es:** Base de muchas herramientas de pizarra y de UI generativa con IA. Ofrece colaboración y personalización completa.
 **Stack:** TypeScript, React
@@ -466,7 +479,7 @@ _Nombre npm puede diferir de 'tldraw'; verifica en npmjs.com._
 **Alternativas (elige una):** `excalidraw`
 
 ## `ui`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typescript
 
 **Qué es:** El código fuente pasa a ser tuyo y lo editas a voluntad.
 **Stack:** Node.js, React, Tailwind, Radix UI
@@ -481,7 +494,7 @@ _Nombre npm puede diferir de 'ui'; verifica en npmjs.com._
 **Alternativas (elige una):** `mui`, `ant-design`, `daisyui`
 
 ## `ui-ux-pro-max-skill`
-role=skill · exec=cloud · setup=easy · mcp=False · prov=—
+role=skill · exec=cloud · setup=easy · mcp=False · prov=— · tags=skills,design,python
 
 **Qué es:** Resuelve el punto débil habitual del código asistido por IA: la jerarquía visual y el acabado.
 **Stack:** Node.js (uipro-cli), TypeScript/React

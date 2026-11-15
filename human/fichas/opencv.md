@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 91.5k | Apache-2.0 | C++ | 2026-11-10 | 🆕 Aún no (sugerido) |
+| 91.6k | Apache-2.0 | C++ | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
@@ -49,7 +49,7 @@ Algoritmos optimizados en C++ con bindings para Python, Java y más.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Ultralytics YOLO](ultralytics.md) | 63.3k | Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. |
+| [Ultralytics YOLO](ultralytics.md) | 63.4k | Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. |
 | [supervision](supervision.md) | 51.6k | Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir. |
 
 ## Enlaces
@@ -59,4 +59,4 @@ Algoritmos optimizados en C++ con bindings para Python, Java y más.
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

@@ -25,6 +25,7 @@ from repo_intelligence.git.sync import safe_pull
 from repo_intelligence.guides.render import render_all
 from repo_intelligence.indexes.build_scan import build_scan_index
 from repo_intelligence.menu.export import export_menu
+from repo_intelligence.web.build import build_site, make_server
 
 # New integral curation pipeline (submodule)
 import repo_intelligence.analysis.curation as curation_mod
@@ -34,10 +35,12 @@ guide_app = typer.Typer(help="Human guide commands.")
 context_app = typer.Typer(help="Context pack commands.")
 report_app = typer.Typer(help="Report commands.")
 menu_app = typer.Typer(help="Portable AI menu commands.")
+web_app = typer.Typer(help="Educational web catalog commands.")
 app.add_typer(guide_app, name="guide")
 app.add_typer(context_app, name="context")
 app.add_typer(report_app, name="report")
 app.add_typer(menu_app, name="menu")
+app.add_typer(web_app, name="web")
 console = Console()
 
 
@@ -218,6 +221,49 @@ def menu_export(
         f"{stats['files']} files."
     )
     console.print("Copy that folder to your new project root and point your agent at REPO_MENU.md.")
+
+
+@web_app.command("build")
+def web_build(
+    output: Annotated[Path | None, typer.Option("--output", "-o", help="Output directory (default: web/).")] = None,
+) -> None:
+    """Build the educational catalog site from the curated indices."""
+    paths = ProjectPaths.load()
+    out_dir = output or (paths.project_root / "web")
+    stats = build_site(paths.project_root, out_dir)
+    console.print(
+        f"Educational site written to {stats['output_dir']}: "
+        f"{stats['repos']} repos, {stats['categories']} categories, {stats['recipes']} recipes."
+    )
+    console.print("Open web/index.html or run `repo-intelligence web serve`.")
+
+
+@web_app.command("serve")
+def web_serve(
+    output: Annotated[Path | None, typer.Option("--output", "-o", help="Output directory (default: web/).")] = None,
+    port: Annotated[int, typer.Option("--port", help="Port to bind. The next free port is used if it is taken.")] = 8765,
+    no_open: Annotated[bool, typer.Option("--no-open", help="Do not open a browser.")] = False,
+) -> None:
+    """Build the educational site and serve it locally."""
+    import webbrowser
+
+    paths = ProjectPaths.load()
+    out_dir = output or (paths.project_root / "web")
+    stats = build_site(paths.project_root, out_dir)
+    httpd, url = make_server(Path(stats["output_dir"]), port)
+    console.print(
+        f"Alejandría en {url} — {stats['repos']} repos, "
+        f"{stats['categories']} salas, {stats['recipes']} recetas."
+    )
+    console.print("Ctrl+C detiene el servidor.")
+    if not no_open:
+        webbrowser.open(url)
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        httpd.shutdown()
+    finally:
+        httpd.server_close()
 
 
 @context_app.command("build")

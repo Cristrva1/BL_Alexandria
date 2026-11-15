@@ -21,12 +21,12 @@ flowchart LR
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [Repomix](../fichas/repomix.md) | Empaqueta el repo (o una parte) en un archivo para el LLM | 29.2k | `npx repomix` |
-| 2 | [codegraph](../fichas/codegraph.md) | Grafo de código pre-indexado que se sincroniza con los cambios | 77.3k | `npm install -g codegraph` |
-| 3 | [GitNexus](../fichas/gitnexus.md) | Explora dependencias y flujos sin servidor | 48.4k | `git clone https://github.com/abhigyanpatwari/GitNexus` |
-| 4 | [graphify](../fichas/graphify.md) | Grafo de conocimiento con código, docs y esquemas | 145k | `pipx install graphify` |
+| 1 | [Repomix](../fichas/repomix.md) | Empaqueta el repo (o una parte) en un archivo para el LLM | 29.3k | `npx repomix` |
+| 2 | [codegraph](../fichas/codegraph.md) | Grafo de código pre-indexado que se sincroniza con los cambios | 77.6k | `npm install -g codegraph` |
+| 3 | [GitNexus](../fichas/gitnexus.md) | Explora dependencias y flujos sin servidor | 48.5k | `git clone https://github.com/abhigyanpatwari/GitNexus` |
+| 4 | [graphify](../fichas/graphify.md) | Grafo de conocimiento con código, docs y esquemas | 148k | `pipx install graphify` |
 | 5 | [DeepWiki Open](../fichas/deepwiki-open.md) | Genera una wiki navegable del repositorio | 18.4k | `docker compose up` |
-| 6 | [Claude Code](../fichas/claude-code.md) | Agente que consulta los índices y edita el código | 155k | `curl -fsSL https://claude.ai/install.sh \| bash` |
+| 6 | [Claude Code](../fichas/claude-code.md) | Agente que consulta los índices y edita el código | 156k | `curl -fsSL https://claude.ai/install.sh \| bash` |
 
 ## 🔌 Cómo se conecta
 
@@ -46,4 +46,4 @@ Si el repo es pequeño (menos de unas 10.000 líneas), el agente de código con 
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>

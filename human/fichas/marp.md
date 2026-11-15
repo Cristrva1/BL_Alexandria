@@ -6,7 +6,7 @@
 
 | ⭐ Estrellas | Licencia | Lenguaje | Última actividad | En tu biblioteca local |
 |---|---|---|---|---|
-| 12.7k | MIT | TypeScript | 2026-11-07 | 🆕 Aún no (sugerido) |
+| 12.7k | MIT | TypeScript | 2026-11-14 | 🆕 Aún no (sugerido) |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
@@ -49,7 +49,7 @@ Marpit convierte Markdown en slides HTML con temas CSS; el CLI exporta a otros f
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Slidev](slidev.md) | 49.4k | Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. |
+| [Slidev](slidev.md) | 49.5k | Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. |
 | [reveal.js](reveal-js.md) | 72.6k | Framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados. |
 
 ## Enlaces
@@ -60,4 +60,4 @@ Marpit convierte Markdown en slides HTML con temas CSS; el CLI exporta a otros f
 
 ---
 
-<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-05.</sub>
+<sub>Generado por `uv run repo-intelligence guide build` desde `INDICE_IA.json` + `INDICE_IA.detalle.json`. No edites este archivo a mano. Datos de GitHub verificados el 2026-11-14.</sub>
