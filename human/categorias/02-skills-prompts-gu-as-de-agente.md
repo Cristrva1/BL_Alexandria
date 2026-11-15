@@ -4,7 +4,7 @@
 
 Instrucciones, plugins y métodos que añades a un agente que ya utilizas. Distingue una skill concreta de un directorio que solo enlaza a otras.
 
-54 repos · 6 secciones
+69 repos · 6 secciones
 
 ## Puntos de partida
 
@@ -24,12 +24,12 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Catálogos y marketplaces de skills](#catálogos-y-marketplaces-de-skills) — 11 repos
-- [Metodologías y harness para agentes de código](#metodologías-y-harness-para-agentes-de-código) — 15 repos
-- [Escritura y calidad de texto](#escritura-y-calidad-de-texto) — 2 repos
-- [Skills de dominio: marketing, SEO y negocio](#skills-de-dominio-marketing-seo-y-negocio) — 6 repos
+- [Catálogos y marketplaces de skills](#catálogos-y-marketplaces-de-skills) — 13 repos
+- [Metodologías y harness para agentes de código](#metodologías-y-harness-para-agentes-de-código) — 19 repos
+- [Escritura y calidad de texto](#escritura-y-calidad-de-texto) — 4 repos
+- [Skills de dominio: marketing, SEO y negocio](#skills-de-dominio-marketing-seo-y-negocio) — 11 repos
 - [Prompts y prompt engineering](#prompts-y-prompt-engineering) — 8 repos
-- [Guías, cursos y cookbooks](#guías-cursos-y-cookbooks) — 12 repos
+- [Guías, cursos y cookbooks](#guías-cursos-y-cookbooks) — 14 repos
 
 ## Catálogos y marketplaces de skills
 
@@ -43,6 +43,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [wshobson/agents](../fichas/wshobson-agents.md) | Marketplace de 94 plugins con más de 200 subagentes, 185 skills y 105 comandos para Claude Code, Codex, Cursor, OpenCode y Copilot. | quieres subagentes y comandos especializados por lenguaje o área, instalables plugin a plugin | Sin API de IA en la ruta básica |
 | [Awesome GitHub Copilot](../fichas/awesome-copilot.md) | Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y plugins para personalizar GitHub Copilot. | tu equipo trabaja con GitHub Copilot en VS Code o Copilot CLI y quiere personalizarlo | Sin API de IA en la ruta básica |
 | [Awesome Agent Skills](../fichas/awesome-agent-skills.md) | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. | quieres skills con procedencia clara, publicadas por el equipo que mantiene cada herramienta | Sin API de IA en la ruta básica |
+| [skills](../fichas/google-skills.md) | Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatibles. | buscas esta función: Colección de skills para trabajar con productos y tecnologías de Google desde agentes de programación compatibles. | Sin API de IA en la ruta básica |
+| [plugins](../fichas/plugins.md) | Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente. | buscas esta función: Especificación y colección oficial de plugins de Cursor para estudiar e instalar extensiones de ese agente. | Sin API de IA en la ruta básica |
 | [autoskills](../fichas/autoskills.md) | CLI que detecta tecnologías de un proyecto y selecciona skills de IA desde un registro de referencia. | quieres preparar un conjunto de skills adaptado al stack de un proyecto | Depende de la ruta elegida |
 | [gemini-skills](../fichas/gemini-skills.md) | Skills oficiales de Google para ayudar a agentes a trabajar con la API, los SDK y los modelos de Gemini. | construyes aplicaciones que llaman a Gemini y necesitas contexto actualizado para el agente | Sin API de IA en la ruta básica |
 | [awesome-agents](../fichas/awesome-agents.md) | Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial. | quieres explorar alternativas de agentes antes de elegir una implementación | Sin API de IA en la ruta básica |
@@ -58,12 +60,16 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [andrej-karpathy-skills](../fichas/andrej-karpathy-skills.md) | Guía de 4 principios inspirada en Andrej Karpathy para que tu agente de código responda útil y sin relleno. | quieres respuestas más útiles ya, sin curar prompts largos | Sin API de IA en la ruta básica |
 | [Ponytail](../fichas/ponytail.md) | Skill que hace que tu agente de código piense como un senior minimalista: el mejor código es el que no escribes. | tu agente tiende a sobrecomplicar las soluciones | Sin API de IA en la ruta básica |
 | [Spec Kit](../fichas/spec-kit.md) | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. | quieres que el agente siga una especificación antes de programar | Sin API de IA en la ruta básica |
+| [gstack](../fichas/gstack.md) | Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code. | buscas esta función: Conjunto de skills y herramientas para organizar planificación, implementación, revisión y pruebas con Claude Code. | Sin API de IA en la ruta básica |
 | [security-audit-skill](../fichas/security-audit-skill.md) | Skill de Cloudflare que organiza auditorías de código con búsqueda, validación independiente y hallazgos estructurados. | quieres un proceso reproducible de revisión de seguridad con agentes | Sin API de IA en la ruta básica |
 | [BMAD Method](../fichas/bmad-method.md) | Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA. | quieres un proceso completo de producto a código con agentes | Sin API de IA en la ruta básica |
+| [book-to-skill](../fichas/book-to-skill.md) | Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trabajo. | buscas esta función: Herramientas para convertir un libro técnico en PDF en una skill que un agente pueda consultar durante el trabajo. | Sin API de IA en la ruta básica |
 | [codex-plugin-cc](../fichas/codex-plugin-cc.md) | Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas. | quieres revisar código con Codex dentro de tu flujo de Claude Code | Sin API de IA en la ruta básica |
 | [SkillSpector](../fichas/skillspector.md) | Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos. | instalas skills externas o curas catálogos | API de IA necesaria |
 | [SuperClaude_Framework](../fichas/superclaude-framework.md) | Framework de configuración que añade comandos, roles y metodologías de trabajo a Claude Code. | quieres estructurar el trabajo de Claude Code con comandos y convenciones | Sin API de IA en la ruta básica |
+| [elephant-goldfish-model](../fichas/elephant-goldfish-model.md) | Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complementarias. | buscas esta función: Plugin con instrucciones para diseñar y revisar software con agentes mediante contextos y perspectivas complementarias. | Sin API de IA en la ruta básica |
 | [claude-token-efficient](../fichas/claude-token-efficient.md) | Instrucciones para reducir la verbosidad de Claude Code y medir el coste de respuestas y contexto. | quieres probar respuestas más breves en tareas con mucha salida de texto | Sin API de IA en la ruta básica |
+| [claude-code-hooks-mastery](../fichas/claude-code-hooks-mastery.md) | Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo. | buscas esta función: Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo. | Sin API de IA en la ruta básica |
 | [agent-toolkit](../fichas/agent-toolkit.md) | Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code en tareas de desarrollo, documentación y planificación. | quieres productividad inmediata con tareas comunes | Sin API de IA en la ruta básica |
 | [grok-plugin-claude-code](../fichas/grok-plugin-claude-code.md) | Plugin de terceros para delegar tareas de Claude Code a Grok CLI mediante comandos y un agente auxiliar. | usas Claude Code y quieres consultar Grok dentro de ese flujo | Sin API de IA en la ruta básica |
 
@@ -72,7 +78,9 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [Humanizer](../fichas/humanizer.md) | Skill que reescribe texto generado por IA para que suene humano, basada en la guía de Wikipedia sobre señales de escritura IA. | publicas textos redactados con IA y quieres que se lean como escritos por una persona | Sin API de IA en la ruta básica |
+| [i-have-adhd](../fichas/i-have-adhd.md) | Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. | buscas esta función: Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. | Sin API de IA en la ruta básica |
 | [Stop Slop](../fichas/stop-slop.md) | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. | quieres reglas de estilo compactas y portables que puedas usar como skill o dentro de un system prompt | Sin API de IA en la ruta básica |
+| [no-ai-slop](../fichas/no-ai-slop.md) | Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. | buscas esta función: Skill para revisar escritura y eliminar patrones repetitivos o frases poco específicas en textos generados con IA. | Sin API de IA en la ruta básica |
 
 ## Skills de dominio: marketing, SEO y negocio
 
@@ -80,9 +88,14 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [Marketing Skills](../fichas/marketingskills.md) | Colección de más de 50 skills de marketing (CRO, copy, SEO, ads, email, analítica, pricing) para Claude Code, Codex, Cursor y otros. | eres founder o marketer técnico y quieres que tu agente de código haga trabajo de growth con marcos probados | Sin API de IA en la ruta básica |
 | [The Agency (agency-agents)](../fichas/agency-agents.md) | Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Code y otros agentes. | quieres roles de negocio y técnicos ya definidos (marketing, ventas, producto, ingeniería) para tu agente de código | Sin API de IA en la ruta básica |
+| [scientific-agent-skills](../fichas/scientific-agent-skills.md) | Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio. | buscas esta función: Colección de skills y recursos para que agentes realicen tareas de investigación científica con herramientas de dominio. | Sin API de IA en la ruta básica |
 | [financial-services](../fichas/financial-services.md) | Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. | quieres estudiar flujos financieros dentro del ecosistema de Claude | Sin API de IA en la ruta básica |
+| [claude-seo](../fichas/claude-seo.md) | Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web. | buscas esta función: Skills de Claude Code para revisar SEO técnico, contenido, presencia en buscadores de IA y otros aspectos de una web. | Sin API de IA en la ruta básica |
 | [GEO-SEO Claude](../fichas/geo-seo-claude.md) | Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF. | quieres medir y mejorar cómo te citan los buscadores con IA, no solo tu posición en Google | Sin API de IA en la ruta básica |
+| [skills](../fichas/minimalist-entrepreneur-skills.md) | Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con un agente. | buscas esta función: Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con un agente. | Sin API de IA en la ruta básica |
+| [instagram-agent-skill](../fichas/instagram-agent-skill.md) | Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram. | buscas esta función: Skills de Claude para investigar ideas, preparar guiones y revisar contenido y publicaciones de una cuenta de Instagram. | Sin API de IA en la ruta básica |
 | [social-media-research-skills](../fichas/social-media-research-skills.md) | Skills para investigar publicaciones, comentarios, competidores y anuncios en redes mediante ScrapeCreators. | quieres investigación de contenido social desde un agente compatible con Agent Skills | Sin API de IA en la ruta básica |
+| [linkedin-agent-skill](../fichas/linkedin-agent-skill.md) | Skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn. | buscas esta función: Skills de Claude para preparar publicaciones, comentarios y planificación de contenidos de una cuenta de LinkedIn. | Sin API de IA en la ruta básica |
 | [Arcads AI Video Skill Pack](../fichas/arcads-claude-code.md) | Pack de skills para Claude Code y Cursor que crea anuncios en video e imagen con la API de Arcads (Seedance, Sora, Veo, Kling). | ya tienes cuenta de Arcads y quieres producir creatividades publicitarias desde Claude Code o Cursor | API de IA necesaria |
 
 ## Prompts y prompt engineering
@@ -114,6 +127,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [claude-quickstarts](../fichas/claude-quickstarts.md) | Ejemplos oficiales de Anthropic para construir aplicaciones con Claude, herramientas y uso de computadora. | quieres partir de un ejemplo oficial al integrar la API de Claude | Sin API de IA en la ruta básica |
 | [Loop Engineering](../fichas/loop-engineering.md) | Patrones, plantillas y CLI para diseñar bucles de trabajo con agentes de código en vez de prompts sueltos. | quieres que tu agente de código itere solo con criterios medibles | Sin API de IA en la ruta básica |
 | [Context-Engineering](../fichas/context-engineering.md) | Guía y curso práctico sobre "ingeniería de contexto", es decir, llenar la ventana de contexto con la información justa que el modelo necesita para el siguiente paso. | quieres profundizar en contexto y RAG | Sin API de IA en la ruta básica |
+| [awesome-harness-engineering](../fichas/awesome-harness-engineering.md) | Directorio de herramientas y patrones para diseñar el entorno, memoria, evaluación y permisos de agentes de IA. | buscas esta función: Directorio de herramientas y patrones para diseñar el entorno, memoria, evaluación y permisos de agentes de IA. | Sin API de IA en la ruta básica |
+| [mvanhorn](../fichas/mvanhorn.md) | Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo. | buscas esta función: Perfil público de mvanhorn para consultar sus proyectos, herramientas y contribuciones de desarrollo. | Sin API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

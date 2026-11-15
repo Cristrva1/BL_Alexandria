@@ -82,6 +82,7 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 | [Open WebUI](open-webui.md) | 159k | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. |
 | [Khoj](khoj.md) | 38.1k | Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones. |
 | [PrivateGPT](private-gpt.md) | 57.6k | Capa de API completa para apps de IA privadas sobre modelos locales: RAG, herramientas y MCP. |
+| [onyx](onyx.md) | 33.4k | Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. |
 
 ## Enlaces
 

@@ -142,6 +142,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [mem0](fichas/mem0.md) | [Letta](fichas/letta.md), [cognee](fichas/cognee.md), [supermemory](fichas/supermemory.md) |
 | [Milvus](fichas/milvus.md) | [Qdrant](fichas/qdrant.md), [Chroma](fichas/chroma.md) |
 | [MLflow](fichas/mlflow.md) | [langfuse](fichas/langfuse.md) |
+| [onyx](fichas/onyx.md) | [AnythingLLM](fichas/anything-llm.md) |
 | [Opik](fichas/opik.md) | [langfuse](fichas/langfuse.md), [Phoenix](fichas/phoenix.md) |
 | [PageIndex](fichas/pageindex.md) | [LightRAG](fichas/lightrag.md) |
 | [pgvector](fichas/pgvector.md) | [Qdrant](fichas/qdrant.md), [Chroma](fichas/chroma.md) |
@@ -168,7 +169,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Repomix](fichas/repomix.md) | [GitNexus](fichas/gitnexus.md) |
 | [Semgrep](fichas/semgrep.md) | [ast-grep](fichas/ast-grep.md) |
 | [Unsloth](fichas/unsloth.md) | [LLaMA-Factory](fichas/llama-factory.md) |
-| [AnythingLLM](fichas/anything-llm.md) | [Open WebUI](fichas/open-webui.md), [Khoj](fichas/khoj.md), [PrivateGPT](fichas/private-gpt.md) |
+| [AnythingLLM](fichas/anything-llm.md) | [Open WebUI](fichas/open-webui.md), [Khoj](fichas/khoj.md), [PrivateGPT](fichas/private-gpt.md), [onyx](fichas/onyx.md) |
 | [chatbox](fichas/chatbox.md) | [Jan](fichas/jan.md) |
 | [Cherry Studio](fichas/cherry-studio.md) | [Jan](fichas/jan.md), [LobeHub](fichas/lobehub.md) |
 | [Jan](fichas/jan.md) | [Cherry Studio](fichas/cherry-studio.md), [Text Generation WebUI](fichas/textgen.md), [chatbox](fichas/chatbox.md) |
@@ -184,6 +185,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [PrivateGPT](fichas/private-gpt.md) | [AnythingLLM](fichas/anything-llm.md) |
 | [SurfSense](fichas/surfsense.md) | [open-notebook](fichas/open-notebook.md), [Khoj](fichas/khoj.md) |
 | [Text Generation WebUI](fichas/textgen.md) | [Jan](fichas/jan.md), [Open WebUI](fichas/open-webui.md) |
+| [3dviz-pro-max](fichas/3dviz-pro-max.md) | [threejs-skills](fichas/threejs-skills.md) |
 | [Anime.js](fichas/animejs.md) | [GSAP](fichas/gsap.md), [motion](fichas/motion.md) |
 | [Ant Design](fichas/ant-design.md) | [Material UI](fichas/mui.md), [ui](fichas/ui.md) |
 | [assistant-ui](fichas/assistant-ui.md) | [CopilotKit](fichas/copilotkit.md) |
@@ -200,6 +202,7 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [React Bits](fichas/react-bits.md) | [magicui](fichas/magicui.md) |
 | [screenshot-to-code](fichas/screenshot-to-code.md) | [Stitch SDK](fichas/stitch-sdk.md) |
 | [Stitch SDK](fichas/stitch-sdk.md) | [screenshot-to-code](fichas/screenshot-to-code.md) |
+| [threejs-skills](fichas/threejs-skills.md) | [3dviz-pro-max](fichas/3dviz-pro-max.md) |
 | [tldraw](fichas/tldraw.md) | [Excalidraw](fichas/excalidraw.md) |
 | [ui](fichas/ui.md) | [Material UI](fichas/mui.md), [Ant Design](fichas/ant-design.md), [daisyUI](fichas/daisyui.md) |
 | [Apache Superset](fichas/superset.md) | [metabase](fichas/metabase.md), [Redash](fichas/redash.md) |
@@ -265,12 +268,13 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [whisper.cpp](fichas/whisper-cpp.md) | [faster-whisper](fichas/faster-whisper.md), [whisper](fichas/whisper.md) |
 | [whisperX](fichas/whisperx.md) | [NVIDIA NeMo Speech](fichas/nemo.md) |
 | [Docling](fichas/docling.md) | [Marker](fichas/marker.md), [MinerU](fichas/mineru.md), [Unstructured](fichas/unstructured.md), [olmOCR](fichas/olmocr.md) |
-| [Marker](fichas/marker.md) | [Docling](fichas/docling.md), [MinerU](fichas/mineru.md) |
+| [Marker](fichas/marker.md) | [Docling](fichas/docling.md), [MinerU](fichas/mineru.md), [pdf-craft](fichas/pdf-craft.md) |
 | [Marp](fichas/marp.md) | [Slidev](fichas/slidev.md), [reveal.js](fichas/reveal-js.md) |
 | [Mermaid](fichas/mermaid.md) | [Excalidraw](fichas/excalidraw.md) |
 | [MinerU](fichas/mineru.md) | [Docling](fichas/docling.md), [Marker](fichas/marker.md) |
 | [olmOCR](fichas/olmocr.md) | [PaddleOCR](fichas/paddleocr.md), [Docling](fichas/docling.md), [Unlimited-OCR](fichas/unlimited-ocr.md) |
 | [PaddleOCR](fichas/paddleocr.md) | [Tesseract](fichas/tesseract.md), [olmOCR](fichas/olmocr.md), [Unlimited-OCR](fichas/unlimited-ocr.md) |
+| [pdf-craft](fichas/pdf-craft.md) | [Marker](fichas/marker.md) |
 | [pdfcraft](fichas/pdfcraft.md) | [Stirling-PDF](fichas/stirling-pdf.md) |
 | [ppt-master](fichas/ppt-master.md) | [Presenton](fichas/presenton.md) |
 | [Presenton](fichas/presenton.md) | [ppt-master](fichas/ppt-master.md) |
@@ -280,6 +284,17 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Tesseract](fichas/tesseract.md) | [PaddleOCR](fichas/paddleocr.md) |
 | [Unlimited-OCR](fichas/unlimited-ocr.md) | [olmOCR](fichas/olmocr.md), [PaddleOCR](fichas/paddleocr.md) |
 | [Unstructured](fichas/unstructured.md) | [Docling](fichas/docling.md) |
+| [backtrader](fichas/backtrader.md) | [nautilus_trader](fichas/nautilus-trader.md) |
+| [nautilus_trader](fichas/nautilus-trader.md) | [backtrader](fichas/backtrader.md) |
+| [py-clob-client](fichas/py-clob-client.md) | [py-sdk](fichas/py-sdk.md) |
+| [py-sdk](fichas/py-sdk.md) | [py-clob-client](fichas/py-clob-client.md) |
+| [Anytype Desktop](fichas/anytype-ts.md) | [AppFlowy](fichas/appflowy.md) |
+| [AppFlowy](fichas/appflowy.md) | [Anytype Desktop](fichas/anytype-ts.md) |
+| [claude-obsidian](fichas/claude-obsidian.md) | [obsidian-second-brain](fichas/obsidian-second-brain.md) |
+| [obsidian-second-brain](fichas/obsidian-second-brain.md) | [claude-obsidian](fichas/claude-obsidian.md) |
+| [ghidra](fichas/ghidra.md) | [radare2](fichas/radare2.md) |
+| [radare2](fichas/radare2.md) | [rizin](fichas/rizin.md), [ghidra](fichas/ghidra.md) |
+| [rizin](fichas/rizin.md) | [radare2](fichas/radare2.md) |
 
 Ver también [⚖️ Comparativas](comparativas/README.md).
 

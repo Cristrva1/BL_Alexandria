@@ -110,6 +110,26 @@ _Una referencia no se instala como un servicio único._
 **Evita si:** solo necesitas construir un agente
 **Combina con:** `langgraph`
 
+## `agentes-chat`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=asistentes,agent,typescript
+
+**Qué es:** Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que colaboran con personas y herramientas.
+**Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: API de IA opcional. El README documenta usar una cuenta o sesión del agente, además de las otras rutas que admita el producto.
+- Claude Code: Integración documentada por el proyecto
+- Codex: Integración documentada por el proyecto
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. El razonamiento consume el plan o proveedor configurado. Alojamiento, conectores y otros servicios se evalúan aparte.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/agentes-chat/agentes-chat
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/agentes-chat/agentes-chat/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que colaboran con personas y herramientas.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
 ## `agno`
 role=runtime · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,google,local · tags=agents,memory,python
 
@@ -240,6 +260,26 @@ _Una referencia no se instala como un servicio único._
 **Evita si:** no usas ese ecosistema
 **Combina con:** `langchain`
 
+## `claude-agent-sdk-python`
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=py,framework,python
+
+**Qué es:** SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. El SDK utiliza Claude Code. Comprueba su autenticación: una sesión del plan y una API key son rutas distintas.
+- Claude Code: Acceso oficial con sesión del plan
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. El uso consume el acceso de Claude configurado: límites del plan o créditos y facturación de API. El paquete del SDK no incluye una cuenta ni uso ilimitado.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/anthropics/claude-agent-sdk-python
+
+**Instalación** [+]: `pip install claude-agent-sdk`
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** buscas esta función: SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
 ## `claude-code`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=anthropic,mcp · tags=coding-agent,agents,mcp,typescript
 
@@ -261,6 +301,26 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Evita si:** necesitas un agente totalmente abierto y multi-modelo; mira `opencode`
 **Combina con:** `superpowers`, `anthropic-skills`, `claude-mem`, `context7`
 **Alternativas (elige una):** `codex`, `gemini-cli`, `opencode`, `goose`
+
+## `claude-task-master`
+role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=infra,agent,javascript
+
+**Qué es:** Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP.
+**Stack:** JavaScript, package.json
+**Acceso y costes:**
+- API de IA: API de IA necesaria. La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo de APIs o servicios. Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/eyaltoledano/claude-task-master
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/eyaltoledano/claude-task-master/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `cline`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=coding-agent,agents,typescript
@@ -500,6 +560,69 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Combina con:** `langflow`, `flowise`
 **Alternativas (elige una):** `sim`, `ragflow`
 
+## `dsh-android`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=coding,plugin,typescript
+
+**Qué es:** Plugin de DeepSeek Harness para operar un emulador o dispositivo Android y revisar aplicaciones desde el agente.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Otras rutas: Plugin para DeepSeek Harness (DSH). La cuenta, API o modelo se configura en ese anfitrión; no se declara instalación nativa en Claude Code o Codex.
+**Repo:** https://github.com/ZSeven-W/dsh-android
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/ZSeven-W/dsh-android/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Plugin de DeepSeek Harness para operar un emulador o dispositivo Android y revisar aplicaciones desde el agente.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
+## `dsh-game-studio`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=coding,plugin,typescript
+
+**Qué es:** Plugin de DeepSeek Harness para preparar y probar juegos pequeños con una interfaz de trabajo dentro del agente.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Otras rutas: Plugin para DeepSeek Harness (DSH). La cuenta, API o modelo se configura en ese anfitrión; no se declara instalación nativa en Claude Code o Codex.
+**Repo:** https://github.com/ZSeven-W/dsh-game-studio
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/ZSeven-W/dsh-game-studio/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Plugin de DeepSeek Harness para preparar y probar juegos pequeños con una interfaz de trabajo dentro del agente.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
+## `dsh-ios`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=coding,plugin,typescript
+
+**Qué es:** Plugin de DeepSeek Harness para desarrollar y operar aplicaciones en simuladores iOS o dispositivos compatibles.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Otras rutas: Plugin para DeepSeek Harness (DSH). La cuenta, API o modelo se configura en ese anfitrión; no se declara instalación nativa en Claude Code o Codex.
+**Repo:** https://github.com/ZSeven-W/dsh-ios
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/ZSeven-W/dsh-ios/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Plugin de DeepSeek Harness para desarrollar y operar aplicaciones en simuladores iOS o dispositivos compatibles.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+
 ## `dspy`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=prompts,evaluation,python
 
@@ -565,6 +688,26 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Evita si:** necesitas plataforma completa con RAG/observabilidad (dify)
 **Combina con:** `dify`, `langflow`
 **Alternativas (elige una):** `sim`, `autogpt`
+
+## `fugu`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=asistentes,agent,shell
+
+**Qué es:** Ejemplos y acceso a un sistema multiagente de Sakana que se consume como un servicio de modelos mediante API.
+**Stack:** Shell
+**Acceso y costes:**
+- API de IA: API de IA necesaria. La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo de APIs o servicios. Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/SakanaAI/fugu
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/SakanaAI/fugu/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Ejemplos y acceso a un sistema multiagente de Sakana que se consume como un servicio de modelos mediante API.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `gemini-cli`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=google,mcp · tags=coding-agent,agents,typescript
@@ -656,6 +799,26 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Combina con:** `qdrant`, `docling`
 **Alternativas (elige una):** `llama-index`, `langchain`
 
+## `hello-halo`
+role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=asistentes,agent,typescript
+
+**Qué es:** Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores API.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: API de IA opcional. El README documenta usar una cuenta o sesión del agente, además de las otras rutas que admita el producto.
+- Claude Code: Integración documentada por el proyecto
+- Codex: Integración documentada por el proyecto
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. El razonamiento consume el plan o proveedor configurado. Alojamiento, conectores y otros servicios se evalúan aparte.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/openkursar/hello-halo
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/openkursar/hello-halo/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores API.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
 ## `hermes-agent`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=agents,python
 
@@ -699,6 +862,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** quieres experimentar con mejoras de Hermes medidas sobre un conjunto de evaluación
 **Evita si:** un flujo determinista resuelve el problema sin un agente
 **Combina con:** `hermes-agent`
+
+## `jev-fraud`
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=experimentos,template,typescript
+
+**Qué es:** Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: API de IA necesaria. La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo de APIs o servicios. Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Nutlope/jev-fraud
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/Nutlope/jev-fraud/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
 
 ## `langchain`
 role=library · exec=cloud · setup=medium · mcp=False · prov=— · tags=agents,automation,python
@@ -1256,6 +1439,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** necesitas estudiar la implementación histórica de OpenCode en Go
 **Evita si:** un flujo determinista resuelve el problema sin un agente
 
+## `opencode-manager`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=coding,agent,typescript
+
+**Qué es:** Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil.
+**Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Depende de la ruta elegida. El agente o la pasarela necesita un proveedor. Comprueba en su configuración la ruta de sesión, API o modelo elegida.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. El código de la aplicación no incluye el consumo de su proveedor. Comprueba plan, cuotas, infraestructura y servicios conectados.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/chriswritescode-dev/opencode-manager
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/chriswritescode-dev/opencode-manager/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
 ## `opencursor`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=coding,agent,ai,code,coder,cursor,extension,ide
 
@@ -1275,6 +1478,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
 **Elige si:** quieres evaluar un agente de código integrado en VS Code
 **Evita si:** un flujo determinista resuelve el problema sin un agente
+
+## `opendots`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=asistentes,agent,typescript
+
+**Qué es:** Plataforma de asistentes de IA persistentes que coordinan conversaciones, llamadas y servicios conectados.
+**Stack:** TypeScript, Dockerfile, package.json
+**Acceso y costes:**
+- API de IA: API de IA necesaria. La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo de APIs o servicios. Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/CopilotKit/OpenDots
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/CopilotKit/OpenDots/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Plataforma de asistentes de IA persistentes que coordinan conversaciones, llamadas y servicios conectados.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `openevolve`
 role=runtime · exec=cloud · setup=heavy · mcp=False · prov=— · tags=automation,agents,python
@@ -1318,6 +1541,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** solo necesitas chat/RAG o no puedes correr Docker
 **Combina con:** `ecc`, `sandbox`
 **Alternativas (elige una):** `open-swe`, `swe-agent`
+
+## `openidea`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=coding,app,typescript
+
+**Qué es:** Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguajes.
+**Stack:** TypeScript, Cargo.toml, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/l0ng-ai/openidea
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/l0ng-ai/openidea/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguajes.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `paperclip`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=asistentes,acpx,agent-orchestration,agent-skills,agentic-ai,ai-agents,ai-engineering,ai-governance
@@ -1424,6 +1667,26 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Elige si:** tu app es .NET o Java y quieres IA integrada
 **Evita si:** empiezas un sistema de agentes nuevo; mira `agent-framework`
 **Alternativas (elige una):** `agent-framework`, `langchain`
+
+## `shepherd`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=infra,framework,python
+
+**Qué es:** Capa de ejecución que registra acciones y estado de un agente para permitir reproducir, bifurcar y revisar sus recorridos.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/shepherd-agents/shepherd
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/shepherd-agents/shepherd/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Capa de ejecución que registra acciones y estado de un agente para permitir reproducir, bifurcar y revisar sus recorridos.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
 
 ## `sim`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=agents,automation,typescript

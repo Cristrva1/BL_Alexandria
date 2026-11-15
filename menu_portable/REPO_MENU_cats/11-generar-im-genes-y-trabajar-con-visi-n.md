@@ -3,6 +3,87 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `4d-humans`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python
+
+**Qué es:** Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de video.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/shubham-goel/4D-Humans
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/shubham-goel/4D-Humans/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de video.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
+## `awesome-cad`
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=creacion-3d,reference
+
+**Qué es:** Directorio de programas, bibliotecas y recursos de diseño asistido por computadora organizados por especialidad.
+**Stack:** —
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/mlightcad/awesome-cad
+
+**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** buscas esta función: Directorio de programas, bibliotecas y recursos de diseño asistido por computadora organizados por especialidad.
+**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+
+## `blender`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=creacion-3d,app,c
+
+**Qué es:** Código de Blender, la aplicación para modelar, animar, renderizar y editar escenas y contenido tridimensional.
+**Stack:** C++, CMakeLists.txt, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/blender/blender
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/blender/blender/blob/main/.github/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Código de Blender, la aplicación para modelar, animar, renderizar y editar escenas y contenido tridimensional.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
+## `blender-skills`
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=creacion-3d,skill,typescript
+
+**Qué es:** Skills para guiar a un agente por modelado y preparación de escenas en Blender mediante herramientas y conexiones MCP.
+**Stack:** TypeScript
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/arjun988/blender-skills
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/arjun988/blender-skills/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Skills para guiar a un agente por modelado y preparación de escenas en Blender mediante herramientas y conexiones MCP.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+**Combina con:** `blender`
+
 ## `codeformer`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=image,vision,python
 
@@ -132,6 +213,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** quieres una UI lista (Fooocus) o grafos nodales (ComfyUI)
 **Combina con:** `controlnet`, `cosmos`
 
+## `easymocap`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python
+
+**Qué es:** Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/zju3dv/EasyMocap
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/zju3dv/EasyMocap/blob/master/Readme.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
 ## `face-recognition`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=image,vision,python
 
@@ -175,6 +276,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** no tienes consentimiento de las personas
 **Combina con:** `ffmpeg`
 **Alternativas (elige una):** `deep-live-cam`
+
+## `filament`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=creacion-3d,library,c
+
+**Qué es:** Motor de renderizado físicamente basado para integrar gráficos 3D en aplicaciones móviles, web y de escritorio.
+**Stack:** C++, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/google/filament
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/google/filament/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Motor de renderizado físicamente basado para integrar gráficos 3D en aplicaciones móviles, web y de escritorio.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
 
 ## `flux`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=image,python
@@ -285,6 +406,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Combina con:** `diffusers`, `controlnet`
 **Alternativas (elige una):** `krita-ai-diffusion`
 
+## `kornia`
+role=library · exec=local · setup=medium · mcp=False · prov=local · tags=vision,library,python
+
+**Qué es:** Biblioteca de visión por computador para incorporar geometría, transformaciones y procesamiento de imágenes en PyTorch.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/kornia/kornia
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/kornia/kornia/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Biblioteca de visión por computador para incorporar geometría, transformaciones y procesamiento de imágenes en PyTorch.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
 ## `krita-ai-diffusion`
 role=app · exec=local · setup=medium · mcp=False · prov=local · tags=image,design,python
 
@@ -349,6 +490,66 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** necesitas swap en vivo (Deep-Live-Cam) o no tienes GPU
 **Combina con:** `moviepy`
 
+## `mediapipe`
+role=library · exec=local · setup=medium · mcp=False · prov=local · tags=vision,library,c
+
+**Qué es:** Herramientas de aprendizaje automático para tareas de visión y procesamiento de medios en dispositivos y aplicaciones.
+**Stack:** C++, Dockerfile, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/google-ai-edge/mediapipe
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/google-ai-edge/mediapipe/blob/master/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Herramientas de aprendizaje automático para tareas de visión y procesamiento de medios en dispositivos y aplicaciones.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
+## `meshoptimizer`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=creacion-3d,library,c
+
+**Qué es:** Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales.
+**Stack:** C++, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/zeux/meshoptimizer
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/zeux/meshoptimizer/blob/master/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
+## `mmpose`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python
+
+**Qué es:** Herramientas y modelos de estimación de pose, incluidos RTMPose y otras variantes para analizar movimiento humano.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/open-mmlab/mmpose
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/open-mmlab/mmpose/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Herramientas y modelos de estimación de pose, incluidos RTMPose y otras variantes para analizar movimiento humano.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
 ## `open-generative-ai`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=image,video,javascript
 
@@ -390,6 +591,46 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** necesitas procesamiento de imagen o video
 **Evita si:** necesitas detección de objetos moderna; mira `ultralytics`
 **Combina con:** `ultralytics`, `supervision`
+
+## `openpose`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,c
+
+**Qué es:** Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video.
+**Stack:** C++, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/CMU-Perceptual-Computing-Lab/openpose
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
+## `ozz-animation`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=creacion-3d,library,c
+
+**Qué es:** Biblioteca C++ y herramientas para preparar y reproducir animación esquelética dentro de motores y aplicaciones.
+**Stack:** C++, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/guillaumeblanc/ozz-animation
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/guillaumeblanc/ozz-animation/blob/master/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Biblioteca C++ y herramientas para preparar y reproducir animación esquelética dentro de motores y aplicaciones.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
 
 ## `real-esrgan`
 role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=image,python
@@ -583,6 +824,26 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Evita si:** solo necesitas procesar imágenes; mira `opencv`
 **Combina con:** `ultralytics`, `opencv`
 
+## `tfjs-models`
+role=library · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,library,typescript
+
+**Qué es:** Colección de modelos preparados para TensorFlow.js que permite integrar tareas de aprendizaje automático en aplicaciones.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/tensorflow/tfjs-models
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/tensorflow/tfjs-models/blob/master/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Colección de modelos preparados para TensorFlow.js que permite integrar tareas de aprendizaje automático en aplicaciones.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
 ## `ultralytics`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vision,training,python
 
@@ -603,3 +864,43 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Elige si:** necesitas detección de objetos práctica
 **Evita si:** necesitas licencia permisiva para producto cerrado; revisa su licencia
 **Combina con:** `supervision`, `label-studio`
+
+## `videopose3d`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python
+
+**Qué es:** Implementación de investigación para estimar pose humana 3D desde trayectorias de puntos 2D en secuencias de video.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/facebookresearch/VideoPose3D
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/facebookresearch/VideoPose3D/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Implementación de investigación para estimar pose humana 3D desde trayectorias de puntos 2D en secuencias de video.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
+## `wham`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python
+
+**Qué es:** Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/yohanshin/WHAM
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/yohanshin/WHAM/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución

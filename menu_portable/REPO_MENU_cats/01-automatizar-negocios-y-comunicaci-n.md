@@ -175,6 +175,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** solo necesitas enviar mensajes salientes (evolution-api)
 **Combina con:** `evolution-api`, `novu`
 
+## `cloud-mail`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=marketing,server,javascript
+
+**Qué es:** Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio.
+**Stack:** JavaScript
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/maillab/cloud-mail
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/maillab/cloud-mail/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Plataforma de correo basada en servicios de Cloudflare para gestionar buzones y funciones de mensajería de un dominio.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
 ## `compai-crm`
 role=platform · exec=cloud · setup=heavy · mcp=False · prov=— · tags=crm,typescript
 
@@ -517,6 +537,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Combina con:** `n8n`, `metabase`
 **Alternativas (elige una):** `erpnext`
 
+## `open-seo`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=marketing,server,typescript
+
+**Qué es:** Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio.
+**Stack:** TypeScript, compose.yaml, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función principal conecta servicios externos; sus claves no equivalen necesariamente a una API de un modelo de lenguaje.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. OpenSEO autoalojado necesita una clave de DataForSEO y su consumo se paga al proveedor. La modalidad alojada tiene condiciones propias.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/every-app/open-seo
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/every-app/open-seo/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Aplicación de análisis SEO que consulta datos de buscadores mediante DataForSEO y permite alojamiento propio.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
 ## `openwa`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=whatsapp,chatbot,typescript
 
@@ -537,6 +577,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** desarrollas scripts o bots individuales y quieres arrancar rápido
 **Evita si:** necesitas infra multi-instancia o alta disponibilidad (evolution-api)
 **Combina con:** `n8n`, `evolution-api`
+
+## `postiz-app`
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=marketing,server,typescript
+
+**Qué es:** Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: API de IA opcional. La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/gitroomhq/postiz-app
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/gitroomhq/postiz-app/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Plataforma para preparar, programar y gestionar publicaciones en redes sociales, con integraciones y funciones de IA.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `rasa`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=chatbot,agents,python
@@ -580,6 +640,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** quieres un stack de IA local funcionando hoy con n8n
 **Evita si:** vas a producción con alta carga; arma tu propio despliegue
 **Combina con:** `n8n`, `ollama`, `qdrant`
+
+## `sellbird`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=marketing,agent,python
+
+**Qué es:** Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes.
+**Stack:** Python, Dockerfile, docker-compose.yml, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. El README documenta usar una cuenta o sesión del agente, además de las otras rutas que admita el producto.
+- Claude Code: Integración documentada por el proyecto
+- Codex: Integración documentada por el proyecto
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. El razonamiento usa tu plan de Claude Code o Codex; correo, búsqueda de contactos, verificación de direcciones y otros servicios tienen requisitos y posibles tarifas propios.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/ethanplusai/sellbird
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/ethanplusai/sellbird/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Plataforma de prospección por correo que documenta el uso de sesiones de Claude Code o Codex para sus agentes.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `tooljet`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=ui,automation,docker

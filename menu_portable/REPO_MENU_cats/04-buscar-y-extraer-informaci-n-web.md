@@ -257,6 +257,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** ya usas scrapy y te basta, o no necesitas evasión
 **Combina con:** `scrapy`, `playwright`
 
+## `defuddle`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=crawlers,library,typescript
+
+**Qué es:** Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/kepano/defuddle
+
+**Instalación** [+]: `npm install defuddle`
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** buscas esta función: Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
 ## `firecrawl`
 role=platform · exec=cloud · setup=medium · mcp=True · prov=— · tags=scraping,typescript,docker
 

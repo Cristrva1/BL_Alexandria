@@ -3,6 +3,26 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `airllm`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=motores,engine,jupyter-notebook
+
+**Qué es:** Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes.
+**Stack:** Jupyter Notebook
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/lyogavin/airllm
+
+**Instalación** [+]: `pip install airllm`
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** buscas esta función: Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
 ## `anything-llm`
 role=app · exec=local · setup=easy · mcp=True · prov=openai,anthropic,local · tags=rag,agents,local,javascript
 
@@ -23,7 +43,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** quieres RAG privado sin programar
 **Evita si:** necesitas un pipeline de RAG a medida; mira `llama-index`
 **Combina con:** `ollama`
-**Alternativas (elige una):** `open-webui`, `khoj`, `private-gpt`
+**Alternativas (elige una):** `open-webui`, `khoj`, `private-gpt`, `onyx`
 
 ## `chatbox`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=chats,assistant,chatbot,chatgpt,claude,claude-code,copilot,deepseek
@@ -88,6 +108,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Elige si:** tienes varios equipos y quieres correr un modelo grande
 **Evita si:** un solo equipo te basta; mira `ollama`
 **Combina con:** `open-webui`
+
+## `freetoken`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=motores,engine,python
+
+**Qué es:** Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/FlashML-org/FreeToken
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/FlashML-org/FreeToken/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `hermes-desktop`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=agents,ui,typescript
@@ -283,6 +323,26 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** solo necesitas chat local simple; mira `ollama`
 **Combina con:** `anything-llm`
 **Alternativas (elige una):** `ollama`, `llama-cpp`
+
+## `magnitude`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=motores,engine,rust
+
+**Qué es:** Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones.
+**Stack:** Rust, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/magnitudedev/magnitude
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/magnitudedev/magnitude/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `muse-spark`
 role=app · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=workspaces,download-muse-ai,download-muse-spark,muse,muse-ai,muse-spark,muse-spark-1-1,muse-spark-1-2

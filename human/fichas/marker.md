@@ -91,6 +91,7 @@ Comando presente en el README revisado; no es una prueba de instalación.
 |---|---:|---|
 | [Docling](docling.md) | 70.6k | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. |
 | [MinerU](mineru.md) | 83.7k | Convierte PDFs y documentos de Office complejos en Markdown o JSON para flujos con agentes. |
+| [pdf-craft](pdf-craft.md) | 6.7k | Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento. |
 
 ## Enlaces
 

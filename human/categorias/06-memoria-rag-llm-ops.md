@@ -4,7 +4,7 @@
 
 Guarda memoria, consulta documentos con RAG, sirve modelos y evalúa resultados. Una base vectorial y un sistema RAG completo resuelven capas distintas.
 
-35 repos · 6 secciones
+42 repos · 6 secciones
 
 ## Puntos de partida
 
@@ -21,12 +21,12 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Memoria persistente para agentes](#memoria-persistente-para-agentes) — 9 repos
-- [RAG y motores de conocimiento](#rag-y-motores-de-conocimiento) — 4 repos
+- [Memoria persistente para agentes](#memoria-persistente-para-agentes) — 11 repos
+- [RAG y motores de conocimiento](#rag-y-motores-de-conocimiento) — 6 repos
 - [Bases vectoriales y búsqueda semántica](#bases-vectoriales-y-búsqueda-semántica) — 6 repos
-- [Serving y gateways de LLM](#serving-y-gateways-de-llm) — 5 repos
+- [Serving y gateways de LLM](#serving-y-gateways-de-llm) — 7 repos
 - [Ahorro de contexto y tokens](#ahorro-de-contexto-y-tokens) — 2 repos
-- [Observabilidad, evaluación y guardrails](#observabilidad-evaluación-y-guardrails) — 9 repos
+- [Observabilidad, evaluación y guardrails](#observabilidad-evaluación-y-guardrails) — 10 repos
 
 ## Memoria persistente para agentes
 
@@ -35,12 +35,14 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [claude-mem](../fichas/claude-mem.md) | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. | usas Claude Code a diario y repites contexto entre sesiones | API de IA opcional |
 | [mem0](../fichas/mem0.md) | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental. | quieres memoria estándar lista con integraciones amplias | Depende de la ruta elegida |
 | [mempalace](../fichas/mempalace.md) | Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin enviar datos a servicios externos. | la privacidad es prioridad y no quieres llamadas a API | Sin API de IA en la ruta básica |
+| [OpenViking](../fichas/openviking.md) | Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información. | buscas esta función: Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información. | API de IA opcional |
 | [cognee](../fichas/cognee.md) | Plataforma de memoria para agentes que combina grafos de conocimiento y vectores, usable con modelos pequeños. | quieres memoria basada en grafo con poco esfuerzo | Depende de la ruta elegida |
 | [Graphiti](../fichas/graphiti.md) | Librería de Zep para construir grafos de conocimiento temporales en tiempo real para agentes. | necesitas memoria que cambie con el tiempo y se pueda consultar | Depende de la ruta elegida |
 | [supermemory](../fichas/supermemory.md) | Motor de memoria y contexto muy rápido, con API para apps de IA y app propia, ejecutable en local. | quieres una API de memoria lista para tu app | Depende de la ruta elegida |
 | [agentmemory](../fichas/agentmemory.md) | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes. | cambias de asistente y quieres una memoria común entre ellos | Depende de la ruta elegida |
 | [Letta](../fichas/letta.md) | Plataforma para agentes con estado y memoria avanzada que aprenden con el tiempo (antes MemGPT). | quieres agentes con memoria de largo plazo gestionada | Depende de la ruta elegida |
 | [Engram](../fichas/engram.md) | Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI. | quieres memoria local simple para cualquier agente | Sin API de IA en la ruta básica |
+| [dsh-noema](../fichas/dsh-noema.md) | Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración. | buscas esta función: Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración. | Sin API de IA en la ruta básica |
 
 ## RAG y motores de conocimiento
 
@@ -50,6 +52,8 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [LightRAG](../fichas/lightrag.md) | RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. | quieres RAG con grafo sin el coste de GraphRAG | Depende de la ruta elegida |
 | [PageIndex](../fichas/pageindex.md) | Índice de documentos para RAG sin vectores, basado en razonamiento sobre una tabla de contenidos. | tus documentos son largos y con estructura clara | API de IA opcional |
 | [graphrag](../fichas/graphrag.md) | Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. | tu corpus tiene relaciones ricas y el RAG por fragmentos se queda corto | Depende de la ruta elegida |
+| [onyx](../fichas/onyx.md) | Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. | buscas esta función: Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. | API de IA opcional |
+| [agentic-rag-for-dummies](../fichas/agentic-rag-for-dummies.md) | Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama. | buscas esta función: Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama. | API de IA opcional |
 
 ## Bases vectoriales y búsqueda semántica
 
@@ -67,8 +71,10 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [vLLM](../fichas/vllm.md) | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. | necesitas servir LLM abiertos a muchos usuarios en GPU | Sin API de IA en la ruta básica |
+| [OmniRoute](../fichas/omniroute.md) | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso. | buscas esta función: Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso. | API de IA opcional |
 | [litellm](../fichas/litellm.md) | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. | trabajas con múltiples modelos o quieres fallback/control de costos | Depende de la ruta elegida |
 | [SGLang](../fichas/sglang.md) | Framework de servicio de alto rendimiento para LLM y modelos multimodales. | buscas el máximo rendimiento en servicio de LLM | Sin API de IA en la ruta básica |
+| [claude-code-router](../fichas/claude-code-router.md) | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. | buscas esta función: Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. | Depende de la ruta elegida |
 | [TensorRT-LLM](../fichas/tensorrt-llm.md) | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. | despliegas LLM en GPU NVIDIA y necesitas optimizar la inferencia | Sin API de IA en la ruta básica |
 | [backdoor](../fichas/backdoor.md) | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. | quieres estudiar cómo conectar otros modelos al harness de Claude Code | Depende de la ruta elegida |
 
@@ -91,6 +97,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [DeepEval](../fichas/deepeval.md) | Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. | quieres tests de LLM en Python como pytest | Depende de la ruta elegida |
 | [Ragas](../fichas/ragas.md) | Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. | evalúas un sistema RAG | Depende de la ruta elegida |
 | [Phoenix](../fichas/phoenix.md) | Plataforma open source de Arize para observar, trazar y evaluar apps de LLM, con OpenTelemetry. | quieres observabilidad basada en OpenTelemetry | API de IA opcional |
+| [Claude-Code-Usage-Monitor](../fichas/claude-code-usage-monitor.md) | Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible. | buscas esta función: Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible. | Sin API de IA en la ruta básica |
 | [NeMo Guardrails](../fichas/guardrails.md) | Toolkit de NVIDIA para añadir barreras programables a sistemas conversacionales con LLM. | necesitas políticas de seguridad en un chatbot | Depende de la ruta elegida |
 
 ## Recetas relacionadas

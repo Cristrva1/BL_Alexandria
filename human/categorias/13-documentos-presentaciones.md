@@ -4,7 +4,7 @@
 
 Extrae texto, aplica OCR, transforma PDFs o crea diapositivas. Empieza por el formato de entrada y el resultado que necesitas.
 
-24 repos · 5 secciones
+28 repos · 6 secciones
 
 ## Puntos de partida
 
@@ -22,10 +22,11 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 ## Secciones
 
 - [Conversión de documentos para IA](#conversión-de-documentos-para-ia) — 8 repos
-- [OCR](#ocr) — 5 repos
-- [Herramientas PDF](#herramientas-pdf) — 4 repos
+- [OCR](#ocr) — 6 repos
+- [Herramientas PDF](#herramientas-pdf) — 5 repos
 - [Presentaciones](#presentaciones) — 5 repos
-- [Diagramas y documentación](#diagramas-y-documentación) — 2 repos
+- [Diagramas y documentación](#diagramas-y-documentación) — 3 repos
+- [Gestión y archivo de documentos](#gestión-y-archivo-de-documentos) — 1 repos
 
 ## Conversión de documentos para IA
 
@@ -49,6 +50,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Tesseract](../fichas/tesseract.md) | Motor de OCR de código abierto que reconoce texto en imágenes y documentos escaneados mediante modelos de idioma. | quieres OCR clásico sin GPU | Sin API de IA en la ruta básica |
 | [Unlimited-OCR](../fichas/unlimited-ocr.md) | Modelo de Baidu para parsear documentos largos de una sola pasada con visión. | procesas documentos muy largos con GPU | Sin API de IA en la ruta básica |
 | [olmOCR](../fichas/olmocr.md) | Toolkit de Allen AI que convierte PDFs en texto limpio con un modelo de visión, a gran escala. | procesas grandes volúmenes de PDFs con GPU | Sin API de IA en la ruta básica |
+| [pdf-craft](../fichas/pdf-craft.md) | Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento. | buscas esta función: Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamiento. | API de IA opcional |
 
 ## Herramientas PDF
 
@@ -56,6 +58,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [Stirling-PDF](../fichas/stirling-pdf.md) | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. | quieres un iLovePDF privado | Sin API de IA en la ruta básica |
 | [PDFMathTranslate](../fichas/pdfmathtranslate.md) | Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. | traduces PDFs técnicos y quieres conservar el formato | Depende de la ruta elegida |
+| [docuseal](../fichas/docuseal.md) | Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. | buscas esta función: Aplicación para preparar formularios y gestionar la firma electrónica de documentos, con opciones de despliegue propio. | Sin API de IA en la ruta básica |
 | [pdfcraft](../fichas/pdfcraft.md) | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. | manipulas PDFs con privacidad y sin instalar nada | Sin API de IA en la ruta básica |
 | [PdfDing](../fichas/pdfding.md) | Gestor y visor de PDFs auto-hospedado, ligero, con etiquetas y progreso de lectura. | quieres organizar y leer PDFs en tu servidor | Sin API de IA en la ruta básica |
 
@@ -75,6 +78,13 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [Mermaid](../fichas/mermaid.md) | Genera diagramas de flujo, secuencia, Gantt y más a partir de texto similar a Markdown. | quieres diagramas como texto | Sin API de IA en la ruta básica |
 | [archify](../fichas/archify.md) | Skill para convertir ideas, planes y bases de código en diagramas y visualizaciones HTML interactivas. | quieres explicar una arquitectura o un plan mediante una visualización interactiva | Sin API de IA en la ruta básica |
+| [diagram-design](../fichas/diagram-design.md) | Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad. | buscas esta función: Skill para que un agente cree diagramas explicativos con HTML y SVG, con criterios de composición y legibilidad. | Sin API de IA en la ruta básica |
+
+## Gestión y archivo de documentos
+
+| Repo | Para qué sirve | Elígelo si… | API de IA |
+|---|---|---|---|
+| [paperless-ngx](../fichas/paperless-ngx.md) | Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados. | buscas esta función: Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados. | Sin API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

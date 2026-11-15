@@ -4,7 +4,7 @@
 
 Herramientas para analizar código, procesar datos, aprender machine learning y entrenar modelos. Separa los ejemplos de aprendizaje de las librerías que integras.
 
-44 repos · 7 secciones
+47 repos · 7 secciones
 
 ## Puntos de partida
 
@@ -23,11 +23,11 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Entender y empaquetar código para agentes](#entender-y-empaquetar-código-para-agentes) — 7 repos
-- [Calidad, seguridad y benchmarks de código](#calidad-seguridad-y-benchmarks-de-código) — 4 repos
+- [Entender y empaquetar código para agentes](#entender-y-empaquetar-código-para-agentes) — 8 repos
+- [Calidad, seguridad y benchmarks de código](#calidad-seguridad-y-benchmarks-de-código) — 5 repos
 - [Entrenar y afinar modelos](#entrenar-y-afinar-modelos) — 9 repos
 - [Aprender LLMs desde cero](#aprender-llms-desde-cero) — 10 repos
-- [Modelos abiertos y fundacionales](#modelos-abiertos-y-fundacionales) — 4 repos
+- [Modelos abiertos y fundacionales](#modelos-abiertos-y-fundacionales) — 5 repos
 - [CLIs y SDKs de desarrollo](#clis-y-sdks-de-desarrollo) — 2 repos
 - [Datos y notebooks](#datos-y-notebooks) — 8 repos
 
@@ -42,6 +42,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [GitNexus](../fichas/gitnexus.md) | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. | quieres entender un repo puntual de forma visual | Sin API de IA en la ruta básica |
 | [tree-sitter](../fichas/tree-sitter.md) | Sistema de parsing incremental para herramientas de programación, base de editores y agentes de código. | construyes herramientas que entienden código | Sin API de IA en la ruta básica |
 | [DeepWiki Open](../fichas/deepwiki-open.md) | Generador de wikis con IA para repos de GitHub, GitLab o Bitbucket, versión abierta de DeepWiki. | quieres documentación automática de un repositorio | Depende de la ruta elegida |
+| [floorplan](../fichas/floorplan.md) | Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto. | buscas esta función: Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto. | Sin API de IA en la ruta básica |
 
 ## Calidad, seguridad y benchmarks de código
 
@@ -51,6 +52,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [ast-grep](../fichas/ast-grep.md) | CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código. | necesitas buscar o reescribir código por estructura | Sin API de IA en la ruta básica |
 | [Defending Code Reference Harness](../fichas/defending-code-reference-harness.md) | Arnés de referencia de Anthropic con skills para modelar amenazas, escanear, priorizar y parchear vulnerabilidades. | quieres un flujo de seguridad con agentes probado | Sin API de IA en la ruta básica |
 | [SWE-bench](../fichas/swe-bench.md) | Benchmark para evaluar si los modelos resuelven issues reales de GitHub. | necesitas medir agentes de código con un estándar | Sin API de IA en la ruta básica |
+| [dsh-qa](../fichas/dsh-qa.md) | Plugin de DeepSeek Harness para explorar aplicaciones, guardar evidencia y preparar recorridos de pruebas reproducibles. | buscas esta función: Plugin de DeepSeek Harness para explorar aplicaciones, guardar evidencia y preparar recorridos de pruebas reproducibles. | Sin API de IA en la ruta básica |
 
 ## Entrenar y afinar modelos
 
@@ -86,6 +88,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
 | [TimesFM](../fichas/timesfm.md) | Modelo fundacional de Google Research para pronosticar series de tiempo sin entrenamiento previo. | necesitas pronósticos rápidos sin entrenar modelos | Sin API de IA en la ruta básica |
+| [laya](../fichas/laya.md) | Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. | buscas esta función: Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. | Sin API de IA en la ruta básica |
 | [DeepSeek-Coder](../fichas/deepseek-coder.md) | Familia de modelos open-source especializados en código, entrenados sobre grandes corpus de programación para generar, completar y revisar software. | quieres un modelo de código abierto y desplegable on-prem | Sin API de IA en la ruta básica |
 | [cosmos](../fichas/cosmos.md) | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. | trabajas IA física/robótica y necesitas datos sintéticos | Sin API de IA en la ruta básica |
 | [Nemotron (NVIDIA)](../fichas/nemotron.md) | Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos. | usas GPUs NVIDIA y quieres modelos abiertos optimizados | Sin API de IA en la ruta básica |

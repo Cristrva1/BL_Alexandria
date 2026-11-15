@@ -33,7 +33,7 @@ Nombre: Biblioteca de Alexandría. Contenido en español claro, orientado a pers
 
 ## Evidence on Hand
 
-El catálogo contiene 498 proyectos y tres entradas auxiliares. Hay fuentes primarias de README consultadas para los proyectos públicos, snapshots de identidades de GitHub y pruebas de los generadores. La revisión documental no equivale a pruebas de instalación, rendimiento o funcionamiento de todos los proyectos.
+El catálogo contiene 676 proyectos y tres entradas auxiliares, organizados en 16 categorías y 22 objetivos. Hay fuentes primarias de README consultadas para los proyectos públicos, snapshots de identidades de GitHub y pruebas de los generadores. La revisión documental no equivale a pruebas de instalación, rendimiento o funcionamiento de todos los proyectos.
 
 ## Product Principles
 

@@ -3,6 +3,26 @@
 > Abre este archivo SOLO si tienes finalistas en esta categoría.
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
+## `agentic-rag-for-dummies`
+role=library · exec=hybrid · setup=medium · mcp=False · prov=local · tags=rag,template,jupyter-notebook
+
+**Qué es:** Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama.
+**Stack:** Jupyter Notebook, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/GiovanniPasq/agentic-rag-for-dummies
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/GiovanniPasq/agentic-rag-for-dummies/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama.
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+
 ## `agentmemory`
 role=library · exec=hybrid · setup=easy · mcp=True · prov=— · tags=agents,memory,typescript
 
@@ -66,6 +86,46 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Evita si:** necesitas gran escala y filtros complejos; mira `qdrant` o `milvus`
 **Combina con:** `llama-index`, `langchain`
 **Alternativas (elige una):** `qdrant`, `pgvector`, `milvus`, `faiss`
+
+## `claude-code-router`
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=serving,server,typescript
+
+**Qué es:** Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local.
+**Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: Depende de la ruta elegida. El agente o la pasarela necesita un proveedor. Comprueba en su configuración la ruta de sesión, API o modelo elegida.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. El código de la aplicación no incluye el consumo de su proveedor. Comprueba plan, cuotas, infraestructura y servicios conectados.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/musistudio/claude-code-router
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/musistudio/claude-code-router/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
+## `claude-code-usage-monitor`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=observabilidad,app,python
+
+**Qué es:** Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
 
 ## `claude-mem`
 role=skill · exec=local · setup=easy · mcp=True · prov=anthropic,mcp · tags=memory,coding-agent,mcp,typescript
@@ -132,6 +192,27 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Evita si:** prefieres configurar en YAML y comparar modelos; mira `promptfoo`
 **Combina con:** `langfuse`
 **Alternativas (elige una):** `ragas`, `promptfoo`
+
+## `dsh-noema`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=memoria,plugin,typescript
+
+**Qué es:** Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración.
+**Stack:** TypeScript, package.json
+**Acceso y costes:**
+- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
+- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Otras rutas: Plugin para DeepSeek Harness (DSH). La cuenta, API o modelo se configura en ese anfitrión; no se declara instalación nativa en Claude Code o Codex.
+**Repo:** https://github.com/ZSeven-W/dsh-noema
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/ZSeven-W/dsh-noema/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración.
+**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
 
 ## `engram`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=memory,mcp,coding-agent,go
@@ -458,6 +539,68 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Evita si:** solo trazas LLM y quieres algo más ligero; mira `langfuse`
 **Combina con:** `transformers`, `dspy`
 **Alternativas (elige una):** `langfuse`
+
+## `omniroute`
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=local · tags=serving,server,typescript
+
+**Qué es:** Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso.
+**Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración documentada por el proyecto
+- Codex: Integración documentada por el proyecto
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/cheaper-inference/OmniRoute
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/cheaper-inference/OmniRoute/blob/release/v3.8.54/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+
+## `onyx`
+role=app · exec=hybrid · setup=medium · mcp=True · prov=local · tags=rag,agent,python
+
+**Qué es:** Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso.
+**Stack:** Python, package.json, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/onyx-dot-app/onyx
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/onyx-dot-app/onyx/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+**Alternativas (elige una):** `anything-llm`
+
+## `openviking`
+role=platform · exec=hybrid · setup=heavy · mcp=False · prov=local · tags=memoria,server,python
+
+**Qué es:** Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información.
+**Stack:** Python, Cargo.toml, Dockerfile, docker-compose.yml, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración documentada por el proyecto
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/volcengine/OpenViking
+
+**Instalación** [?]: `Seguir la instalación original: https://github.com/volcengine/OpenViking/blob/main/README.md`
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** buscas esta función: Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información.
+**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+**Combina con:** `claude-code`
 
 ## `opik`
 role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=observability,evaluation,python

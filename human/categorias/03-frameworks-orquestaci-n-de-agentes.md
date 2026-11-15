@@ -4,7 +4,7 @@
 
 Agentes listos para trabajar y frameworks para construir los tuyos. Un agente de código se utiliza; un framework se integra dentro de una aplicación.
 
-73 repos · 8 secciones
+86 repos · 8 secciones
 
 ## Puntos de partida
 
@@ -25,14 +25,14 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 ## Secciones
 
-- [Agentes de código (terminal e IDE)](#agentes-de-código-terminal-e-ide) — 17 repos
-- [Frameworks de agentes en Python](#frameworks-de-agentes-en-python) — 17 repos
+- [Agentes de código (terminal e IDE)](#agentes-de-código-terminal-e-ide) — 22 repos
+- [Frameworks de agentes en Python](#frameworks-de-agentes-en-python) — 18 repos
 - [Frameworks en TypeScript y multi-lenguaje](#frameworks-en-typescript-y-multi-lenguaje) — 6 repos
 - [Builders visuales y plataformas de agentes](#builders-visuales-y-plataformas-de-agentes) — 5 repos
-- [Asistentes autónomos y equipos de agentes](#asistentes-autónomos-y-equipos-de-agentes) — 8 repos
+- [Asistentes autónomos y equipos de agentes](#asistentes-autónomos-y-equipos-de-agentes) — 12 repos
 - [Agentes de research autónomo](#agentes-de-research-autónomo) — 6 repos
-- [Infraestructura: sandboxes, herramientas y protocolos](#infraestructura-sandboxes-herramientas-y-protocolos) — 10 repos
-- [Simulación, evolución y debate entre modelos](#simulación-evolución-y-debate-entre-modelos) — 4 repos
+- [Infraestructura: sandboxes, herramientas y protocolos](#infraestructura-sandboxes-herramientas-y-protocolos) — 12 repos
+- [Simulación, evolución y debate entre modelos](#simulación-evolución-y-debate-entre-modelos) — 5 repos
 
 ## Agentes de código (terminal e IDE)
 
@@ -54,7 +54,12 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [opencode](../fichas/opencode-legacy.md) | Agente de código en Go del antiguo proyecto opencode-ai, archivado y continuado bajo el nombre Crush. | necesitas estudiar la implementación histórica de OpenCode en Go | Depende de la ruta elegida |
 | [MiMo-Code](../fichas/mimo-code.md) | Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. | quieres evaluar el agente de código del ecosistema Xiaomi MiMo | Depende de la ruta elegida |
 | [Open SWE](../fichas/open-swe.md) | Agente de código asíncrono de LangChain para montar tu propio agente interno de ingeniería. | quieres construir el agente de código interno de tu empresa | Depende de la ruta elegida |
+| [openidea](../fichas/openidea.md) | Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguajes. | buscas esta función: Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguajes. | Sin API de IA en la ruta básica |
 | [OpenCursor](../fichas/opencursor.md) | Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos. | quieres evaluar un agente de código integrado en VS Code | API de IA opcional |
+| [opencode-manager](../fichas/opencode-manager.md) | Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil. | buscas esta función: Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil. | Depende de la ruta elegida |
+| [dsh-game-studio](../fichas/dsh-game-studio.md) | Plugin de DeepSeek Harness para preparar y probar juegos pequeños con una interfaz de trabajo dentro del agente. | buscas esta función: Plugin de DeepSeek Harness para preparar y probar juegos pequeños con una interfaz de trabajo dentro del agente. | Sin API de IA en la ruta básica |
+| [dsh-ios](../fichas/dsh-ios.md) | Plugin de DeepSeek Harness para desarrollar y operar aplicaciones en simuladores iOS o dispositivos compatibles. | buscas esta función: Plugin de DeepSeek Harness para desarrollar y operar aplicaciones en simuladores iOS o dispositivos compatibles. | Sin API de IA en la ruta básica |
+| [dsh-android](../fichas/dsh-android.md) | Plugin de DeepSeek Harness para operar un emulador o dispositivo Android y revisar aplicaciones desde el agente. | buscas esta función: Plugin de DeepSeek Harness para operar un emulador o dispositivo Android y revisar aplicaciones desde el agente. | Sin API de IA en la ruta básica |
 
 ## Frameworks de agentes en Python
 
@@ -74,6 +79,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [Haystack](../fichas/haystack.md) | Framework de deepset para pipelines de RAG y agentes listos para producción. | quieres pipelines de RAG explícitos y listos para producción | Depende de la ruta elegida |
 | [Agent Development Kit (ADK)](../fichas/adk-python.md) | Kit de Google para construir, evaluar y desplegar agentes en Python, optimizado para Gemini. | trabajas con Gemini o Google Cloud | Depende de la ruta elegida |
 | [Pydantic AI](../fichas/pydantic-ai.md) | Framework de agentes del equipo de Pydantic, tipado de punta a punta y compatible con cualquier modelo. | quieres agentes tipados y validados en Python | Depende de la ruta elegida |
+| [claude-agent-sdk-python](../fichas/claude-agent-sdk-python.md) | SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia. | buscas esta función: SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia. | API de IA opcional |
 | [ag2](../fichas/ag2.md) | Framework maduro para sistemas multiagente con patrones de colaboración (heredero directo de AutoGen). | construyes multiagente serio en Python | Depende de la ruta elegida |
 | [awesome-LangGraph](../fichas/awesome-langgraph.md) | Repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain. | construyes con LangGraph y quieres patrones de referencia | Sin API de IA en la ruta básica |
 | [LangGraph Supervisor](../fichas/langgraph-supervisor-py.md) | Librería archivada para crear un agente supervisor que coordina a otros agentes en LangGraph. | mantienes código que ya la usa | Depende de la ruta elegida |
@@ -109,8 +115,12 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [ruflo](../fichas/ruflo.md) | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). | orquestas muchos agentes a escala y quieres rendimiento | API de IA opcional |
 | [DeepTutor](../fichas/deeptutor.md) | Sistema de tutoría con agentes que personaliza el aprendizaje a partir de tus documentos. | quieres un tutor con IA sobre tu propio material | Depende de la ruta elegida |
 | [multica](../fichas/multica.md) | Plataforma para que humanos y agentes trabajen lado a lado ("tus próximas 10 contrataciones no serán humanas"). | mezclas trabajo humano y agentes en un mismo flujo | API de IA opcional |
+| [OpenDots](../fichas/opendots.md) | Plataforma de asistentes de IA persistentes que coordinan conversaciones, llamadas y servicios conectados. | buscas esta función: Plataforma de asistentes de IA persistentes que coordinan conversaciones, llamadas y servicios conectados. | API de IA necesaria |
 | [Mercury Agent](../fichas/mercury-agent.md) | Agente personal 24/7 con permisos estrictos, presupuesto de tokens y acceso por CLI, Telegram o web. | quieres un asistente personal ligero con permisos claros | Depende de la ruta elegida |
 | [social-media-agent](../fichas/social-media-agent.md) | Agente de LangChain que convierte enlaces en publicaciones para redes sociales con revisión humana antes de publicarlas. | quieres preparar publicaciones para X o LinkedIn con una etapa de aprobación | API de IA necesaria |
+| [hello-halo](../fichas/hello-halo.md) | Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores API. | buscas esta función: Asistente de escritorio con manejo de archivos, navegador y rutas de acceso con cuentas de IA o proveedores API. | API de IA opcional |
+| [agentes-chat](../fichas/agentes-chat.md) | Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que colaboran con personas y herramientas. | buscas esta función: Espacio de trabajo autoalojado con canales, mensajes y agentes de IA que colaboran con personas y herramientas. | API de IA opcional |
+| [fugu](../fichas/fugu.md) | Ejemplos y acceso a un sistema multiagente de Sakana que se consume como un servicio de modelos mediante API. | buscas esta función: Ejemplos y acceso a un sistema multiagente de Sakana que se consume como un servicio de modelos mediante API. | API de IA necesaria |
 
 ## Agentes de research autónomo
 
@@ -129,12 +139,14 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|---|
 | [Composio](../fichas/composio.md) | Plataforma con más de 1000 integraciones con autenticación gestionada para que tus agentes actúen en apps reales. | tu agente necesita actuar en muchas apps SaaS | Depende de la ruta elegida |
 | [E2B](../fichas/e2b.md) | Sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas. | tu agente ejecuta código y necesitas aislarlo | Sin API de IA en la ruta básica |
+| [claude-task-master](../fichas/claude-task-master.md) | Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP. | buscas esta función: Sistema de gestión de tareas con IA que prepara y organiza trabajo de desarrollo mediante CLI y servidor MCP. | API de IA necesaria |
 | [agent-desktop](../fichas/agent-desktop.md) | CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio. | necesitas automatizar aplicaciones nativas desde un agente | Sin API de IA en la ruta básica |
 | [NemoClaw](../fichas/nemoclaw.md) | Stack de referencia de NVIDIA para ejecutar agentes como OpenClaw o Hermes de forma más segura en sandboxes. | quieres correr agentes potentes con aislamiento corporativo | Depende de la ruta elegida |
 | [codex-chatgpt-web](../fichas/codex-chatgpt-web.md) | Integración de terceros que conecta una sesión de ChatGPT Web con el selector de modelos y herramientas de Codex. | quieres estudiar una integración entre ChatGPT Web y Codex | API: por confirmar |
 | [sandbox](../fichas/sandbox.md) | Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. | quieres aislar la ejecución de agentes y reproducibilidad | Sin API de IA en la ruta básica |
 | [Gemini Computer Use (preview)](../fichas/computer-use-preview.md) | Implementación de referencia de Google para que Gemini vea la pantalla y opere interfaces web. | quieres probar computer use con Gemini | API de IA necesaria |
 | [NeMo-Agent-Toolkit](../fichas/nemo-agent-toolkit.md) | Toolkit de NVIDIA para construir y operar agentes (antes parte de NeMo). | trabajas con infra NVIDIA o necesitas guardrails/eval empresarial | Depende de la ruta elegida |
+| [shepherd](../fichas/shepherd.md) | Capa de ejecución que registra acciones y estado de un agente para permitir reproducir, bifurcar y revisar sus recorridos. | buscas esta función: Capa de ejecución que registra acciones y estado de un agente para permitir reproducir, bifurcar y revisar sus recorridos. | Sin API de IA en la ruta básica |
 | [nodeterm](../fichas/nodeterm.md) | Gestor visual de terminales y sesiones de agentes sobre un lienzo de nodos con organización por proyecto. | gestionas muchas terminales o sesiones de agentes y prefieres una organización visual | Sin API de IA en la ruta básica |
 | [Agent Protocol](../fichas/agent-protocol.md) | Especificación de LangChain para exponer cualquier agente con una API estándar de ejecuciones, hilos y estado. | diseñas una plataforma que sirve agentes de distintos frameworks | Sin API de IA en la ruta básica |
 
@@ -146,6 +158,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 | [llm-council](../fichas/llm-council.md) | "consejo" donde varios LLMs deliberan y se evalúan entre sí para responder. | quieres consenso entre modelos o comparar proveedores | API de IA necesaria |
 | [openevolve](../fichas/openevolve.md) | Agente de codificación evolutivo que optimiza algoritmos por simulación genética. | optimizas problemas algorítmicos donde cabe explorar muchas variantes | Depende de la ruta elegida |
 | [hermes-agent-self-evolution](../fichas/hermes-agent-self-evolution.md) | Herramientas para optimizar skills, prompts y código de Hermes Agent mediante búsqueda evolutiva con DSPy y GEPA. | quieres experimentar con mejoras de Hermes medidas sobre un conjunto de evaluación | Depende de la ruta elegida |
+| [jev-fraud](../fichas/jev-fraud.md) | Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude. | buscas esta función: Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude. | API de IA necesaria |
 
 ## Recetas relacionadas
 
