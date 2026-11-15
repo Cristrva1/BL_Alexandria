@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `hermes-desktop`
-role=app · exec=local · setup=medium · mcp=False · prov=—
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=automation,javascript,javascript-typescript,postgres,python,react,typescript
 
 **Qué es:** Hermes Desktop envuelve el agente Hermes en una UI nativa. Úsalo si quieres Hermes como aplicación, no solo como CLI.
 **Stack:** javascript/typescript, python, typescript, javascript, react, postgres
@@ -18,7 +18,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `open-notebook`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=docker,fastapi,langchain,postgres,python,react,typescript
 
 **Qué es:** An open source, privacy-focused alternative to Google's Notebook LM!.
 **Stack:** python, typescript, react, docker, postgres, fastapi, langchain

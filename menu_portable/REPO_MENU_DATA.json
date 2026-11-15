@@ -1,9 +1,10 @@
 {
   "purpose": "Menú portable de repos para que un agente elija sin visitar la web.",
   "how_to_use": [
-    "Filtra por cat/role/exec/setup/one.",
+    "Filtra por cat/tags/role/exec/setup/prov/one.",
     "Desempata con alt (descarta alternativas del repo elegido).",
     "Combina con recipes si es un flujo end-to-end.",
+    "Considera la herramienta del usuario con model_guidance y agent_tools (solo skill/directory).",
     "Solo finalistas: lee el bloque completo aquí o en REPO_MENU_cats/.",
     "Instalación: campo install + install_conf (ok/verify/clone)."
   ],
@@ -255,7 +256,10 @@
       "setup": "easy",
       "mcp": false,
       "prov": [],
-      "one": "gh es la CLI oficial de GitHub. No es un agente; es la herramienta de git/GitHub que el resto del flujo asume instalada.",
+      "tags": [
+        "typescript"
+      ],
+      "one": "GitHub CLI (gh): pull requests, issues y el resto de GitHub desde la terminal.",
       "desc": "gh es la CLI oficial de GitHub. No es un agente; es la herramienta de git/GitHub que el resto del flujo asume instalada.",
       "stack": "typescript",
       "repo": "https://github.com/cli/cli.git",
@@ -280,7 +284,8 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Carpeta de herramientas auxiliares del hub, no un repositorio de producto. Sirve como referencia interna, no como dependencia de un proyecto.",
+      "tags": [],
+      "one": "Utilidades locales del workspace de Alexandria; no es un producto de IA para instalar.",
       "desc": "Carpeta de herramientas auxiliares del hub, no un repositorio de producto. Sirve como referencia interna, no como dependencia de un proyecto.",
       "stack": "See repo",
       "repo": "",
@@ -301,7 +306,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Activepieces es un reemplazo open source de Zapier: orquestas automatizaciones con piezas auto-hospedables y un editor visual, sin ceder los datos a un SaaS cer",
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
+      "one": "Plataforma open source de automatización tipo Zapier, auto-hospedable, con piezas y flujos visuales.",
       "desc": "Activepieces es un reemplazo open source de Zapier: orquestas automatizaciones con piezas auto-hospedables y un editor visual, sin ceder los datos a un SaaS cerrado.",
       "stack": "javascript/typescript, typescript, javascript, docker",
       "repo": "https://github.com/activepieces/activepieces.git",
@@ -327,6 +339,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "postgres",
+        "typescript"
+      ],
       "one": "Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more e",
       "desc": "Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our website.",
       "stack": "typescript, javascript, docker, postgres",
@@ -352,7 +371,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "🌤️ Want to skip the setup? Use our cloud for faster, scalable, stealth-enabled browser automation!.",
+      "tags": [
+        "automation",
+        "docker",
+        "python",
+        "typescript"
+      ],
+      "one": "1. Direct your favorite coding agent (Cursor, Claude Code, etc) to Agents.md.",
       "desc": "🌤️ Want to skip the setup? Use our cloud for faster, scalable, stealth-enabled browser automation!.",
       "stack": "python, typescript, docker",
       "repo": "https://github.com/browser-use/browser-use.git",
@@ -376,7 +401,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "AI Agents that run your operations Budibase is an open-source operations platform that saves engineers 100s of hours building Agents, Apps and Automations, secu",
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "typescript"
+      ],
+      "one": "Budibase is an open-source operations platform that saves engineers 100s of hours building Agents, Apps and Automations, securely.",
       "desc": "AI Agents that run your operations Budibase is an open-source operations platform that saves engineers 100s of hours building Agents, Apps and Automations, securely.",
       "stack": "javascript/typescript, typescript, javascript, docker, postgres",
       "repo": "https://github.com/Budibase/budibase.git",
@@ -401,7 +434,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "The modern customer support platform, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc.",
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
+      "one": "Chatwoot is the modern, open-source, and self-hosted customer support platform designed to help businesses deliver exceptional customer support experience.",
       "desc": "The modern customer support platform, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc.",
       "stack": "javascript/typescript, typescript, javascript, docker",
       "repo": "https://github.com/chatwoot/chatwoot.git",
@@ -425,6 +465,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "typescript"
+      ],
       "one": "Open-source REST API for WhatsApp and multi-channel messaging — part of the Evolution Foundation ecosystem.",
       "desc": "Open-source REST API for WhatsApp and multi-channel messaging — part of the Evolution Foundation ecosystem.",
       "stack": "javascript/typescript, typescript, javascript, docker, postgres",
@@ -450,7 +498,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Huginn is a system for building agents that perform automated tasks for you online. They can read the web, watch for events, and take actions on your behalf. Hu",
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "typescript"
+      ],
+      "one": "Huginn is a system for building agents that perform automated tasks for you online. They can read the web, watch for events, and take actions on your behalf.",
       "desc": "Huginn is a system for building agents that perform automated tasks for you online. They can read the web, watch for events, and take actions on your behalf. Huginn's Agents create and consume events, propagating them along a directed graph. Think of it as a hackable version of IFTTT or Zapier on your own server. You always know who has your data. You do.",
       "stack": "javascript/typescript, typescript, javascript, docker, postgres",
       "repo": "https://github.com/huginn/huginn.git",
@@ -474,6 +530,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "postgres",
+        "typescript"
+      ],
       "one": "listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL data",
       "desc": "listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL database as its data store.",
       "stack": "typescript, docker, postgres",
@@ -498,7 +560,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Open Source Marketing Automation Software.",
+      "tags": [
+        "automation",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "Request a trial · Self-host/download · Community channels.",
       "desc": "Open Source Marketing Automation Software.",
       "stack": "javascript/typescript, python, typescript, javascript, postgres",
       "repo": "https://github.com/mautic/mautic.git",
@@ -523,7 +593,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabiliti",
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "langchain",
+        "python",
+        "typescript"
+      ],
+      "one": "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code.",
       "desc": "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.",
       "stack": "javascript/typescript, python, typescript, javascript, docker, langchain",
       "repo": "https://github.com/n8n-io/n8n.git",
@@ -551,7 +630,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabiliti",
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "langchain",
+        "python",
+        "typescript"
+      ],
+      "one": "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code.",
       "desc": "n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.",
       "stack": "javascript/typescript, python, typescript, javascript, docker, langchain",
       "repo": "https://github.com/n8n-io/n8n.git",
@@ -574,7 +662,17 @@
       "setup": "medium",
       "mcp": true,
       "prov": [],
-      "one": "A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations. Deploy in min",
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "langchain",
+        "mcp",
+        "python",
+        "typescript"
+      ],
+      "one": "A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations.",
       "desc": "A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations. Deploy in minutes to give Claude and other AI assistants deep knowledge about n8n's 1,845 workflow automation nodes (816 core + 1,029 community).",
       "stack": "javascript/typescript, python, typescript, javascript, docker, langchain",
       "repo": "https://github.com/czlonkowski/n8n-mcp.git",
@@ -599,7 +697,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "The open-source communication infrastructure for agents and products.",
+      "tags": [
+        "automation",
+        "javascript",
+        "javascript-typescript",
+        "react",
+        "typescript"
+      ],
+      "one": "One API and one unified conversation model to connect your products and your agents to every channel your users live on — Inbox, Email, SMS, Push, Chat, Slack, ",
       "desc": "The open-source communication infrastructure for agents and products.",
       "stack": "javascript/typescript, typescript, javascript, react",
       "repo": "https://github.com/novuhq/novu.git",
@@ -623,7 +728,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "🧬 The most advanced open-source evolutionary coding agent.",
+      "tags": [
+        "automation",
+        "docker",
+        "python",
+        "typescript"
+      ],
+      "one": "Turn your LLMs into autonomous code optimizers that discover breakthrough algorithms.",
       "desc": "🧬 The most advanced open-source evolutionary coding agent.",
       "stack": "python, typescript, docker",
       "repo": "https://github.com/algorithmicsuperintelligence/openevolve.git",
@@ -646,6 +757,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "OpenWA is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or h",
       "desc": "OpenWA is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres",
@@ -670,7 +790,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CR",
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "react",
+        "typescript"
+      ],
+      "one": "Website · Documentation · Roadmap · Discord · Figma.",
       "desc": "Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack.",
       "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
       "repo": "https://github.com/twentyhq/twenty",
@@ -694,6 +823,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "agents",
+        "automation",
+        "docker",
+        "fastapi",
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
       "one": "Construye tu propio agente de WhatsApp con inteligencia artificial en menos de 30 minutos. No necesitas saber programar. Claude Code construye todo por ti.",
       "desc": "Construye tu propio agente de WhatsApp con inteligencia artificial en menos de 30 minutos. No necesitas saber programar. Claude Code construye todo por ti.",
       "stack": "python, typescript, javascript, docker, postgres, fastapi",
@@ -718,6 +857,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "agents",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "Opinionated skills shared by @leonardocouy for improving daily work efficiency with Claude Code. Skills are packaged instructions and scripts that extend agent ",
       "desc": "Opinionated skills shared by @leonardocouy for improving daily work efficiency with Claude Code. Skills are packaged instructions and scripts that extend agent capabilities across development, documentation, planning, and professional workflows.",
       "stack": "python, typescript, react",
@@ -730,7 +875,10 @@
       "combines_with": [
         "superpowers"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "andrej-karpathy-skills",
@@ -741,6 +889,10 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "skills",
+        "typescript"
+      ],
       "one": "> Check out my new project Multica — an open-source platform for running and managing coding agents with reusable skills.",
       "desc": "> Check out my new project Multica — an open-source platform for running and managing coding agents with reusable skills.",
       "stack": "typescript",
@@ -765,7 +917,17 @@
       "setup": "easy",
       "mcp": false,
       "prov": [],
-      "one": "🌌 Antigravity Awesome Skills: 1,682+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More.",
+      "tags": [
+        "agents",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "python",
+        "react",
+        "skills",
+        "typescript"
+      ],
+      "one": "> Installable GitHub library of 1,682+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and other AI coding assistants.",
       "desc": "🌌 Antigravity Awesome Skills: 1,682+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More.",
       "stack": "javascript/typescript, python, typescript, javascript, react, postgres",
       "repo": "https://github.com/sickn33/antigravity-awesome-skills.git",
@@ -778,7 +940,11 @@
         "skillspector",
         "awesome-agent-skills"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "antigravity",
+        "codex"
+      ]
     },
     {
       "id": "arcads-claude-code",
@@ -789,7 +955,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Plugin de skills que conecta un coding agent con Arcads para piezas creativas (video e imagen). Requiere cuenta Arcads; no es un renderer local.",
+      "tags": [
+        "skills",
+        "video",
+        "image"
+      ],
+      "one": "Skills de Claude Code/Cursor para generar videos e imágenes de marketing con Arcads.",
       "desc": "Plugin de skills que conecta un coding agent con Arcads para piezas creativas (video e imagen). Requiere cuenta Arcads; no es un renderer local.",
       "stack": "python, typescript, javascript, react, postgres, whisper",
       "repo": "https://github.com/krusemediallc/arcads-claude-code.git",
@@ -803,7 +974,10 @@
         "whisper",
         "faster-whisper"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "autoresearch",
@@ -814,6 +988,10 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "python",
+        "typescript"
+      ],
       "one": "One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synchronizing once in a while using sound wav",
       "desc": "One day, frontier AI research used to be done by meat computers in between eating, sleeping, having other fun, and synchronizing once in a while using sound wave interconnect in the ritual of \"group meeting\". That era is long gone. Research is now entirely the domain of autonomous swarms of AI agents running across compute cluster megastructures in the skies.",
       "stack": "python, typescript",
@@ -838,7 +1016,17 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "Directorio de agent skills revisado a mano. Úsalo para elegir piezas concretas; no instales el catálogo entero.",
+      "tags": [
+        "docker",
+        "fastapi",
+        "javascript",
+        "langchain",
+        "multimedia",
+        "postgres",
+        "python",
+        "react"
+      ],
+      "one": "Lista curada a mano de skills para agentes de código, sin catálogos generados por IA.",
       "desc": "Directorio de agent skills revisado a mano. Úsalo para elegir piezas concretas; no instales el catálogo entero.",
       "stack": "python, typescript, javascript, react, docker, postgres, fastapi, langchain, whisper",
       "repo": "https://github.com/VoltAgent/awesome-agent-skills.git",
@@ -852,7 +1040,11 @@
         "antigravity-awesome-skills",
         "superpowers"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "antigravity",
+        "codex"
+      ]
     },
     {
       "id": "browser-harness",
@@ -863,6 +1055,11 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "postgres",
+        "python",
+        "typescript"
+      ],
       "one": "Connect an LLM directly to your real browser with a thin, editable CDP harness. For browser tasks where you need complete freedom.",
       "desc": "Connect an LLM directly to your real browser with a thin, editable CDP harness. For browser tasks where you need complete freedom.",
       "stack": "python, typescript, postgres",
@@ -888,6 +1085,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "> \"Context engineering is the delicate art and science of filling the context window with just the right information for the next step.\" — Andrej Karpathy.",
       "desc": "> \"Context engineering is the delicate art and science of filling the context window with just the right information for the next step.\" — Andrej Karpathy.",
       "stack": "python, typescript, react, postgres",
@@ -912,6 +1115,10 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "python",
+        "typescript"
+      ],
       "one": "(ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews) while maintaining traditional SEO foundations.",
       "desc": "(ChatGPT, Claude, Perplexity, Gemini, Google AI Overviews) while maintaining traditional SEO foundations.",
       "stack": "python, typescript",
@@ -925,7 +1132,10 @@
         "marketingskills",
         "agency-agents"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "guia",
@@ -936,6 +1146,13 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "comfy",
+        "frontend",
+        "multimedia",
+        "typescript",
+        "whisper"
+      ],
       "one": "Catálogo operativo de los 156 repositorios locales del workspace, diseñado para entender, comparar, elegir y combinar repos rápido.",
       "desc": "Catálogo operativo de los 156 repositorios locales del workspace, diseñado para entender, comparar, elegir y combinar repos rápido.",
       "stack": "typescript, whisper, comfy",
@@ -961,6 +1178,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "agents",
+        "docker",
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
       "one": "The self-improving AI agent built by Nous Research. It's the only agent with a built-in learning loop — it creates skills from experience, improves them during ",
       "desc": "The self-improving AI agent built by Nous Research. It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing w.",
       "stack": "python, typescript, javascript, docker, postgres",
@@ -985,7 +1210,10 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "A skill for Claude Code and OpenCode that removes signs of AI-generated writing from text, making it sound more natural and human.",
+      "tags": [
+        "typescript"
+      ],
+      "one": "Clone directly into Claude Code's skills directory:.",
       "desc": "A skill for Claude Code and OpenCode that removes signs of AI-generated writing from text, making it sound more natural and human.",
       "stack": "typescript",
       "repo": "https://github.com/blader/humanizer.git",
@@ -1008,7 +1236,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "An AI agent-led search engine scored by upvotes, likes, and real money - not editors..",
+      "tags": [
+        "javascript",
+        "python",
+        "react",
+        "skills",
+        "typescript"
+      ],
+      "one": "This README tracks the current v3 pipeline. The runtime skill spec lives in skills/last30days/SKILL.md, which is the source of truth for the latest command and ",
       "desc": "An AI agent-led search engine scored by upvotes, likes, and real money - not editors..",
       "stack": "python, typescript, javascript, react",
       "repo": "https://github.com/mvanhorn/last30days-skill.git",
@@ -1033,6 +1268,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "fastapi",
+        "javascript",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "The idea of this repo is that instead of asking a question to your favorite LLM provider (e.g. OpenAI GPT 5.1, Google Gemini 3.0 Pro, Anthropic Claude Sonnet 4.",
       "desc": "The idea of this repo is that instead of asking a question to your favorite LLM provider (e.g. OpenAI GPT 5.1, Google Gemini 3.0 Pro, Anthropic Claude Sonnet 4.5, xAI Grok 4, eg.c), you can group them into your \"LLM Council\".",
       "stack": "python, typescript, javascript, react, postgres, fastapi",
@@ -1056,6 +1299,12 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "agents",
+        "postgres",
+        "skills",
+        "typescript"
+      ],
       "one": "A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimiz",
       "desc": "A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the Agent Skills spec.",
       "stack": "typescript, postgres",
@@ -1070,7 +1319,10 @@
         "mautic",
         "marketing de agencia"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "codex"
+      ]
     },
     {
       "id": "multica",
@@ -1081,6 +1333,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "react",
+        "typescript"
+      ],
       "one": "The open-source managed agents platform.",
       "desc": "The open-source managed agents platform.",
       "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
@@ -1105,7 +1365,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Paquete de skills para construir flujos n8n con un agente. Combínalo con n8n y n8n-mcp; no sustituye la instancia de n8n.",
+      "tags": [
+        "docker",
+        "javascript",
+        "langchain",
+        "postgres",
+        "python",
+        "skills",
+        "typescript"
+      ],
+      "one": "Skills de Claude Code para diseñar workflows n8n usando el servidor n8n-mcp.",
       "desc": "Paquete de skills para construir flujos n8n con un agente. Combínalo con n8n y n8n-mcp; no sustituye la instancia de n8n.",
       "stack": "python, typescript, javascript, docker, postgres, langchain",
       "repo": "https://github.com/czlonkowski/n8n-skills.git",
@@ -1118,7 +1387,10 @@
         "n8n",
         "n8n-mcp"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "nanogpt",
@@ -1129,6 +1401,12 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
       "one": "Update Nov 2025 nanoGPT has a new and improved cousin called nanochat. It is very likely you meant to use/find nanochat instead. nanoGPT (this repo) is now very",
       "desc": "Update Nov 2025 nanoGPT has a new and improved cousin called nanochat. It is very likely you meant to use/find nanochat instead. nanoGPT (this repo) is now very old and deprecated but I will leave it up for posterity.",
       "stack": "python, typescript, javascript, postgres",
@@ -1153,6 +1431,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "fastapi",
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
       "one": "A Comprehensive NotebookLM Skill & Unofficial Python API. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via",
       "desc": "A Comprehensive NotebookLM Skill & Unofficial Python API. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
       "stack": "python, typescript, javascript, postgres, fastapi",
@@ -1176,7 +1461,17 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "The free, open-source alternative to AI Video Platforms. Generate AI images and videos using 200+ state-of-the-art models — no content filters, no closed ecosys",
+      "tags": [
+        "comfy",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "multimedia",
+        "python",
+        "react",
+        "typescript"
+      ],
+      "one": "> The free, open-source alternative to AI Video Platforms. Generate AI images and videos using 200+ state-of-the-art models — no content filters, no closed ecos",
       "desc": "The free, open-source alternative to AI Video Platforms. Generate AI images and videos using 200+ state-of-the-art models — no content filters, no closed ecosystem, no subscription fees.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, comfy",
       "repo": "https://github.com/Anil-matcha/Open-Generative-AI.git",
@@ -1200,6 +1495,15 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "multimedia",
+        "postgres",
+        "python",
+        "react",
+        "typescript",
+        "whisper"
+      ],
       "one": "Turn your AI coding assistant into a full video production studio. Describe what you want in plain language — your agent handles research, scripting, asset gene",
       "desc": "Turn your AI coding assistant into a full video production studio. Describe what you want in plain language — your agent handles research, scripting, asset generation, editing, and final composition.",
       "stack": "python, typescript, javascript, react, postgres, whisper",
@@ -1225,7 +1529,13 @@
       "setup": "easy",
       "mcp": false,
       "prov": [],
-      "one": "Playwright CLI empaquetado con skills de agente: permite manejar Chromium/Firefox/WebKit en scripts y en flujos de coding agents.",
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "python",
+        "typescript"
+      ],
+      "one": "CLI de Playwright con skills para que un agente controle el navegador desde la terminal.",
       "desc": "Playwright CLI empaquetado con skills de agente: permite manejar Chromium/Firefox/WebKit en scripts y en flujos de coding agents.",
       "stack": "javascript/typescript, python, typescript, javascript",
       "repo": "https://github.com/microsoft/playwright-cli.git",
@@ -1249,6 +1559,15 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "comfy",
+        "javascript",
+        "postgres",
+        "python",
+        "react",
+        "skills",
+        "typescript"
+      ],
       "one": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention. No re-prompting your way to a",
       "desc": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention. No re-prompting your way to an answer you should have gotten on attempt one.",
       "stack": "python, typescript, javascript, react, postgres, comfy",
@@ -1263,7 +1582,10 @@
         "antigravity-awesome-skills",
         "awesome-agent-skills"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "antigravity"
+      ]
     },
     {
       "id": "skills-remotion",
@@ -1274,6 +1596,11 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "skills"
+      ],
       "one": "This is an internal package and has no documentation.",
       "desc": "This is an internal package and has no documentation.",
       "stack": "javascript/typescript, javascript",
@@ -1299,6 +1626,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "javascript",
+        "python",
+        "skills",
+        "typescript"
+      ],
       "one": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks before installing agent skills.",
       "desc": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks before installing agent skills.",
       "stack": "python, typescript, javascript, docker",
@@ -1324,6 +1658,11 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
       "one": "Generate UI screens from text prompts and extract their HTML and screenshots programmatically.",
       "desc": "Generate UI screens from text prompts and extract their HTML and screenshots programmatically.",
       "stack": "javascript/typescript, typescript, javascript",
@@ -1349,7 +1688,10 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "A skill for removing AI tells from prose.",
+      "tags": [
+        "typescript"
+      ],
+      "one": "AI writing has patterns. Predictable phrases, structures, rhythms. This skill teaches Claude (or any LLM) to catch and remove them.",
       "desc": "A skill for removing AI tells from prose.",
       "stack": "typescript",
       "repo": "https://github.com/hardikpandya/stop-slop.git",
@@ -1372,6 +1714,11 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
       "one": "Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that",
       "desc": "Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them.",
       "stack": "javascript/typescript, typescript, javascript",
@@ -1385,7 +1732,10 @@
         "awesome-claude-code",
         "agent-toolkit"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "taste-skill",
@@ -1396,7 +1746,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "taste-skill corrige interfaces generadas por agentes: jerarquía visual, tipo, movimiento y espacio. No es un kit de componentes.",
+      "tags": [
+        "postgres",
+        "react",
+        "skills",
+        "typescript"
+      ],
+      "one": "Skills portables para mejorar layout, tipografía, motion y spacing de UIs hechas con IA.",
       "desc": "taste-skill corrige interfaces generadas por agentes: jerarquía visual, tipo, movimiento y espacio. No es un kit de componentes.",
       "stack": "typescript, react, postgres",
       "repo": "https://github.com/Leonxlnx/taste-skill.git",
@@ -1409,7 +1765,10 @@
         "ui-ux-pro-max-skill",
         "impeccable"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "codex"
+      ]
     },
     {
       "id": "ui-ux-pro-max-skill",
@@ -1420,7 +1779,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms and frameworks.",
+      "tags": [
+        "frontend",
+        "javascript",
+        "python",
+        "react",
+        "skills",
+        "typescript"
+      ],
+      "one": "If you find this useful, consider supporting the project:.",
       "desc": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms and frameworks.",
       "stack": "python, typescript, javascript, react",
       "repo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
@@ -1445,6 +1812,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "AG2 was evolved from AutoGen. Fully open-sourced. We invite collaborators from all organizations to contribute.",
       "desc": "AG2 was evolved from AutoGen. Fully open-sourced. We invite collaborators from all organizations to contribute.",
       "stack": "python, typescript, react, docker",
@@ -1469,7 +1843,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Agent Protocol intenta estandarizar cómo se expone un agente (run, I/O, estado) sin atarse a un framework. Es un spec/directorio, no un runtime completo.",
+      "tags": [
+        "agents",
+        "automation",
+        "fastapi",
+        "langchain",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "Especificación de APIs agnósticas a framework para servir agentes LLM en producción.",
       "desc": "Agent Protocol intenta estandarizar cómo se expone un agente (run, I/O, estado) sin atarse a un framework. Es un spec/directorio, no un runtime completo.",
       "stack": "python, typescript, postgres, fastapi, langchain",
       "repo": "https://github.com/langchain-ai/agent-protocol.git",
@@ -1494,7 +1877,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Agent-Reach estabiliza cómo un agente se conecta a proveedores LLM. La idea es que el canal de acceso pueda cambiar sin que reescribas el resto del stack.",
+      "tags": [
+        "automation",
+        "javascript",
+        "multimedia",
+        "postgres",
+        "python",
+        "typescript",
+        "whisper"
+      ],
+      "one": "Capa de acceso a modelos y APIs para agentes: elige, instala y verifica el proveedor por ti.",
       "desc": "Agent-Reach estabiliza cómo un agente se conecta a proveedores LLM. La idea es que el canal de acceso pueda cambiar sin que reescribas el resto del stack.",
       "stack": "python, typescript, javascript, postgres, whisper",
       "repo": "https://github.com/Panniantong/Agent-Reach.git",
@@ -1519,6 +1911,15 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "agents",
+        "automation",
+        "docker",
+        "fastapi",
+        "langchain",
+        "python",
+        "typescript"
+      ],
       "one": "The open-source playbook for turning AI agents into real-world products.",
       "desc": "The open-source playbook for turning AI agents into real-world products.",
       "stack": "python, typescript, docker, fastapi, langchain",
@@ -1543,7 +1944,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "AutoGen orquesta conversaciones entre agentes LLM. Está en mantenimiento; para trabajo nuevo revisa el sucesor oficial antes de adoptarlo como runtime.",
+      "tags": [
+        "agents",
+        "automation",
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "Framework multiagente de Microsoft (modo mantenimiento; el sucesor vive en agent-framework).",
       "desc": "AutoGen orquesta conversaciones entre agentes LLM. Está en mantenimiento; para trabajo nuevo revisa el sucesor oficial antes de adoptarlo como runtime.",
       "stack": "python, typescript, javascript, postgres",
       "repo": "https://github.com/microsoft/autogen.git",
@@ -1568,7 +1977,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "The old ways have come and gone. It's time to embrace the next phase. The previous Table of Contents was no longer fit for purpose, so a new organizational syst",
+      "tags": [
+        "automation",
+        "python",
+        "typescript"
+      ],
+      "one": "A delightfully curated collection of the finest of resources for the most excellent of agents, Claude Code, by Anthropic PBC.",
       "desc": "The old ways have come and gone. It's time to embrace the next phase. The previous Table of Contents was no longer fit for purpose, so a new organizational system is being prepared. Thanks to everyone who has contributed to and supported this repo, be ye human or machine.",
       "stack": "python, typescript",
       "repo": "https://github.com/hesreallyhim/awesome-claude-code.git",
@@ -1581,7 +1995,10 @@
         "claude-plugins-official",
         "superpowers"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "awesome-dataviz",
@@ -1592,6 +2009,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "javascript",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "A curated list of awesome open-source data visualizations frameworks, libraries and software. Inspired by awesome-python and originally created by fasouto.",
       "desc": "A curated list of awesome open-source data visualizations frameworks, libraries and software. Inspired by awesome-python and originally created by fasouto.",
       "stack": "python, typescript, javascript, react, postgres",
@@ -1616,7 +2041,17 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "🦜🕸️ Awesome LangGraph & LangChain Ecosystem !Awesome !Last Updated.",
+      "tags": [
+        "automation",
+        "docker",
+        "fastapi",
+        "javascript",
+        "javascript-typescript",
+        "langchain",
+        "postgres",
+        "python"
+      ],
+      "one": "> The definitive index of frameworks, templates, and real-world projects for teams that want to build, observe, evaluate, and deploy stateful, tool-using AI age",
       "desc": "🦜🕸️ Awesome LangGraph & LangChain Ecosystem !Awesome !Last Updated.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres, fastapi, langchain",
       "repo": "https://github.com/vonzosten/awesome-LangGraph.git",
@@ -1639,6 +2074,16 @@
       "setup": "heavy",
       "mcp": true,
       "prov": [],
+      "tags": [
+        "automation",
+        "comfy",
+        "docker",
+        "fastapi",
+        "javascript",
+        "langchain",
+        "mcp",
+        "multimedia"
+      ],
       "one": "A curated list of awesome Model Context Protocol (MCP) servers.",
       "desc": "A curated list of awesome Model Context Protocol (MCP) servers.",
       "stack": "python, typescript, javascript, react, docker, postgres, fastapi, langchain, whisper, comfy",
@@ -1663,6 +2108,14 @@
       "setup": "medium",
       "mcp": true,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "mcp",
+        "python",
+        "typescript"
+      ],
       "one": "The fastest and most efficient code intelligence engine for AI coding agents. Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K",
       "desc": "The fastest and most efficient code intelligence engine for AI coding agents. Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for macOS, Linux, and Windows — download, run `install`, done.",
       "stack": "python, typescript, javascript, docker",
@@ -1690,7 +2143,13 @@
       "prov": [
         "google"
       ],
-      "one": "Preview de Gemini Computer Use: el modelo ve la pantalla y opera UI. Requiere API de Google y no es un agente genérico de código.",
+      "tags": [
+        "automation",
+        "python",
+        "react",
+        "typescript"
+      ],
+      "one": "Código y guía de Gemini Computer Use para que un modelo controle el escritorio.",
       "desc": "Preview de Gemini Computer Use: el modelo ve la pantalla y opera UI. Requiere API de Google y no es un agente genérico de código.",
       "stack": "python, typescript, react",
       "repo": "https://github.com/google-gemini/computer-use-preview.git",
@@ -1715,6 +2174,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "langchain",
+        "postgres",
+        "python",
+        "typescript"
+      ],
       "one": "Fast and Flexible Multi-Agent Automation Framework.",
       "desc": "Fast and Flexible Multi-Agent Automation Framework.",
       "stack": "python, typescript, postgres, langchain",
@@ -1739,7 +2205,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Dash is the most downloaded, trusted Python framework for building ML & data science web apps*.",
+      "tags": [
+        "automation",
+        "javascript",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
+      "one": "Built on top of Plotly.js, React and Flask, Dash ties modern UI elements like dropdowns, sliders, and graphs directly to your analytical Python code. Read our t",
       "desc": "Dash is the most downloaded, trusted Python framework for building ML & data science web apps*.",
       "stack": "python, typescript, javascript, react, postgres",
       "repo": "https://github.com/plotly/dash.git",
@@ -1763,6 +2237,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "agents",
+        "automation",
+        "javascript",
+        "langchain",
+        "python",
+        "typescript"
+      ],
       "one": "Deep Agents is an open source agent harness — an opinionated agent that runs out of the box. Extend, override, or replace any piece.",
       "desc": "Deep Agents is an open source agent harness — an opinionated agent that runs out of the box. Extend, override, or replace any piece.",
       "stack": "python, typescript, javascript, langchain",
@@ -1788,7 +2270,17 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "DeepTutor es un sistema de tutoría con agentes para aprendizaje continuo. Encaja como producto educativo, no como orquestador genérico.",
+      "tags": [
+        "automation",
+        "docker",
+        "fastapi",
+        "javascript",
+        "langchain",
+        "postgres",
+        "python",
+        "react"
+      ],
+      "one": "Tutor personalizado de largo plazo: un agente que estudia contigo y recuerda el progreso.",
       "desc": "DeepTutor es un sistema de tutoría con agentes para aprendizaje continuo. Encaja como producto educativo, no como orquestador genérico.",
       "stack": "python, typescript, javascript, react, docker, postgres, fastapi, langchain",
       "repo": "https://github.com/HKUDS/DeepTutor.git",
@@ -1813,6 +2305,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "langchain",
+        "python",
+        "typescript"
+      ],
       "one": "> On February 28th, 2026, DeerFlow claimed the 🏆 #1 spot on GitHub Trending following the launch of version 2. Thanks a million to our incredible community — yo",
       "desc": "> On February 28th, 2026, DeerFlow claimed the 🏆 #1 spot on GitHub Trending following the launch of version 2. Thanks a million to our incredible community — you made this happen! 💪🔥.",
       "stack": "python, typescript, javascript, docker, langchain",
@@ -1837,6 +2337,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "python",
+        "typescript"
+      ],
       "one": "A reference implementation for autonomous vulnerability discovery and remediation with Claude, based on our learnings from partnering with security teams at sev",
       "desc": "A reference implementation for autonomous vulnerability discovery and remediation with Claude, based on our learnings from partnering with security teams at several organizations since launching Claude Mythos Preview. For a write up of these learnings along with best practices, see the accompanying blog post (also avail.",
       "stack": "python, typescript, docker",
@@ -1862,6 +2368,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "Dify is an open-source LLM app development platform. Its intuitive interface combines AI workflow, RAG pipeline, agent capabilities, model management, observabi",
       "desc": "Dify is an open-source LLM app development platform. Its intuitive interface combines AI workflow, RAG pipeline, agent capabilities, model management, observability features (including Opik, Langfuse, and Arize Phoenix) and more, letting you quickly go from prototype to production. Here's a list of the core features:.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres",
@@ -1886,7 +2402,17 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Official sources only. Install ECC only from verified channels: the GitHub repository github.com/affaan-m/ECC, the npm packages `ecc-universal` and `ecc-agentsh",
+      "tags": [
+        "automation",
+        "docker",
+        "fastapi",
+        "javascript",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
+      "one": "> Official sources only. Install ECC only from verified channels: the GitHub repository github.com/affaan-m/ECC, the npm packages ecc-universal and ecc-agentshi",
       "desc": "Official sources only. Install ECC only from verified channels: the GitHub repository github.com/affaan-m/ECC, the npm packages `ecc-universal` and `ecc-agentshield`, the GitHub App, the plugin slug `ecc@ecc`, and the project website ecc.tools.",
       "stack": "python, typescript, javascript, react, docker, postgres, fastapi",
       "repo": "https://github.com/affaan-m/ECC.git",
@@ -1911,7 +2437,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Flowise es un constructor visual de cadenas y agentes LLM. Encaja si quieres prototipar orquestación con nodos, no si necesitas un runtime embebido en tu código",
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "react",
+        "typescript"
+      ],
+      "one": "Builder visual low-code para agentes y flujos LLM, auto-hospedable.",
       "desc": "Flowise es un constructor visual de cadenas y agentes LLM. Encaja si quieres prototipar orquestación con nodos, no si necesitas un runtime embebido en tu código.",
       "stack": "javascript/typescript, typescript, javascript, react, docker",
       "repo": "https://github.com/FlowiseAI/Flowise.git",
@@ -1935,6 +2469,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "fastapi",
+        "javascript",
+        "langchain",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "GPT Researcher the first open deep research agent designed for both web and local research on any given task.",
       "desc": "GPT Researcher the first open deep research agent designed for both web and local research on any given task.",
       "stack": "python, typescript, javascript, react, docker, fastapi, langchain",
@@ -1960,6 +2504,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "langchain",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "> LATEST RELEASE / DEVELOPMENT VERSION: The develop branch tracks the latest top of tree development. The latest released version is 0.21.0.",
       "desc": "> LATEST RELEASE / DEVELOPMENT VERSION: The develop branch tracks the latest top of tree development. The latest released version is 0.21.0.",
       "stack": "python, typescript, javascript, react, docker, langchain",
@@ -1985,6 +2538,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "langchain",
+        "postgres",
+        "python",
+        "typescript"
+      ],
       "one": "60–95% fewer tokens · library · proxy · MCP · 6 algorithms · local-first · reversible.",
       "desc": "60–95% fewer tokens · library · proxy · MCP · 6 algorithms · local-first · reversible.",
       "stack": "python, typescript, javascript, docker, postgres, langchain",
@@ -2009,7 +2571,17 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos. Use it locally with the CLI, from A",
+      "tags": [
+        "agents",
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "multimedia",
+        "python",
+        "react"
+      ],
+      "one": "HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos.",
       "desc": "HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos. Use it locally with the CLI, from AI coding agents with skills, or as the rendering core behind hosted authoring workflows.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker",
       "repo": "https://github.com/heygen-com/hyperframes.git",
@@ -2032,6 +2604,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "agents",
+        "automation",
+        "langchain",
+        "python",
+        "typescript"
+      ],
       "one": "LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to ",
       "desc": "LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves.",
       "stack": "python, typescript, langchain",
@@ -2057,6 +2636,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "python",
+        "typescript"
+      ],
       "one": "Langflow is a powerful platform for building and deploying AI-powered agents and workflows. It provides developers with both a visual authoring experience and b",
       "desc": "Langflow is a powerful platform for building and deploying AI-powered agents and workflows. It provides developers with both a visual authoring experience and built-in API and MCP servers that turn every workflow into a tool that can be integrated into applications built on any framework or stack.",
       "stack": "python, typescript, javascript, docker",
@@ -2081,6 +2667,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "fastapi",
+        "javascript",
+        "javascript-typescript",
+        "langchain",
+        "python",
+        "react"
+      ],
       "one": "Langfuse uses GitHub Discussions for Support and Feature Requests.",
       "desc": "Langfuse uses GitHub Discussions for Support and Feature Requests.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, fastapi, langchain",
@@ -2106,7 +2702,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "> Note: We now recommend using the supervisor pattern directly via tools rather than this library for most use cases. The tool-calling approach gives you more c",
+      "tags": [
+        "automation",
+        "langchain",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
+      "one": "> Note: We now recommend using the supervisor pattern directly via tools rather than this library for most use cases.",
       "desc": "> Note: We now recommend using the supervisor pattern directly via tools rather than this library for most use cases. The tool-calling approach gives you more control over context engineering and is the recommended pattern in the LangChain multi-agent guide. See our supervisor tutorial for a step-by-step guide. We're making this library compatible with LangChain 1.",
       "stack": "python, typescript, react, postgres, langchain",
       "repo": "https://github.com/langchain-ai/langgraph-supervisor-py.git",
@@ -2131,7 +2735,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Implementación TypeScript de LangGraph. Sirve para construir, gestionar y desplegar agentes de larga duración con grafos de estado en Node o el navegador.",
+      "tags": [
+        "automation",
+        "javascript",
+        "javascript-typescript"
+      ],
+      "one": "LangGraph para JavaScript/TypeScript: orquestación de agentes con estado.",
       "desc": "Implementación TypeScript de LangGraph. Sirve para construir, gestionar y desplegar agentes de larga duración con grafos de estado en Node o el navegador.",
       "stack": "javascript/typescript, javascript",
       "repo": "https://github.com/langchain-ai/langgraphjs.git",
@@ -2156,6 +2765,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "frontend",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "skills",
+        "typescript"
+      ],
       "one": "> Stop prompting. Design the loop. Get a score.",
       "desc": "> Stop prompting. Design the loop. Get a score.",
       "stack": "javascript/typescript, typescript, javascript, postgres",
@@ -2181,6 +2799,15 @@
       "setup": "medium",
       "mcp": true,
       "prov": [],
+      "tags": [
+        "automation",
+        "javascript",
+        "langchain",
+        "mcp",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
       "desc": "to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
       "stack": "python, typescript, javascript, react, langchain",
@@ -2206,6 +2833,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "react",
+        "typescript"
+      ],
       "one": "Remembers what matters. Asks before it acts. Runs 24/7 from CLI, Telegram, or Web. 31 built-in tools, Kanban boards, extensible skills, SQLite-backed Second Bra",
       "desc": "Remembers what matters. Asks before it acts. Runs 24/7 from CLI, Telegram, or Web. 31 built-in tools, Kanban boards, extensible skills, SQLite-backed Second Brain memory.",
       "stack": "javascript/typescript, typescript, javascript, react, postgres",
@@ -2231,6 +2866,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "fastapi",
+        "javascript",
+        "langchain",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "NVIDIA NeMo Agent Toolkit adds intelligence to AI agents across any framework—enhancing speed, accuracy, and decision-making through enterprise-grade instrument",
       "desc": "NVIDIA NeMo Agent Toolkit adds intelligence to AI agents across any framework—enhancing speed, accuracy, and decision-making through enterprise-grade instrumentation, observability, and continuous learning.",
       "stack": "python, typescript, javascript, react, fastapi, langchain",
@@ -2254,7 +2898,17 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "NVIDIA NemoClaw is an open source reference stack for running supported AI agents more safely inside NVIDIA OpenShell sandboxes. It provides guided onboarding, ",
+      "tags": [
+        "agents",
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "langchain",
+        "postgres",
+        "python"
+      ],
+      "one": "NVIDIA NemoClaw is an open source reference stack for running supported AI agents more safely inside NVIDIA OpenShell sandboxes.",
       "desc": "NVIDIA NemoClaw is an open source reference stack for running supported AI agents more safely inside NVIDIA OpenShell sandboxes. It provides guided onboarding, managed inference, network policy, managed integrations, snapshots, and lifecycle operations through the NemoClaw CLI and its agent-specific aliases.",
       "stack": "javascript/typescript, python, typescript, javascript, docker, postgres, langchain",
       "repo": "https://github.com/NVIDIA/NemoClaw.git",
@@ -2279,6 +2933,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "agents",
+        "automation",
+        "docker",
+        "javascript",
+        "langchain",
+        "postgres",
+        "python",
+        "react"
+      ],
       "one": "Elite engineering orgs like Stripe, Ramp, and Coinbase are building their own internal coding agents — Slackbots, CLIs, and web apps that meet engineers where t",
       "desc": "Elite engineering orgs like Stripe, Ramp, and Coinbase are building their own internal coding agents — Slackbots, CLIs, and web apps that meet engineers where they already work. These agents are connected to internal systems with the right context, permissioning, and safety boundaries to operate with minimal human oversight.",
       "stack": "python, typescript, javascript, react, docker, postgres, langchain",
@@ -2304,7 +2968,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "OpenClaw is a personal AI assistant that runs on your devices and meets you in the channels you already use. It is designed for a single operator and connects m",
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "typescript"
+      ],
+      "one": "OpenClaw is a personal AI assistant that runs on your devices and meets you in the channels you already use.",
       "desc": "OpenClaw is a personal AI assistant that runs on your devices and meets you in the channels you already use. It is designed for a single operator and connects models, tools, messaging channels, and optional companion apps through one Gateway.",
       "stack": "javascript/typescript, typescript, javascript, docker, postgres",
       "repo": "https://github.com/openclaw/openclaw.git",
@@ -2329,6 +3001,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "agents",
+        "automation",
+        "docker",
+        "javascript",
+        "python",
+        "typescript"
+      ],
       "one": "Run OpenHands, Claude Code, Codex, Gemini, or any ACP-compatible agent across local, remote, and cloud backends.",
       "desc": "Run OpenHands, Claude Code, Codex, Gemini, or any ACP-compatible agent across local, remote, and cloud backends.",
       "stack": "python, typescript, javascript, docker",
@@ -2353,7 +3033,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "This started as a side project that blew up; not production grade and you'll hit bugs, but hopefully it covers what you need. This project will soon be archived",
+      "tags": [
+        "automation",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "typescript"
+      ],
+      "one": "> OpenScreen is now archived and no longer maintained. For continued maintenance and development, a community-driven spin-off led by one of the core contributor",
       "desc": "This started as a side project that blew up; not production grade and you'll hit bugs, but hopefully it covers what you need. This project will soon be archived..",
       "stack": "javascript/typescript, typescript, javascript, postgres",
       "repo": "https://github.com/siddharthvaddem/openscreen.git",
@@ -2376,6 +3063,14 @@
       "setup": "easy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
       "one": "Playwright is a framework for web automation and testing. It drives Chromium, Firefox, and WebKit with a single API — in your tests, in your scripts, and as a t",
       "desc": "Playwright is a framework for web automation and testing. It drives Chromium, Firefox, and WebKit with a single API — in your tests, in your scripts, and as a tool for AI agents.",
       "stack": "javascript/typescript, python, typescript, javascript, postgres",
@@ -2400,7 +3095,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "You know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty lines; he looks at them, says nothing, an",
+      "tags": [
+        "automation",
+        "fastapi",
+        "javascript",
+        "javascript-typescript",
+        "python",
+        "react",
+        "typescript"
+      ],
+      "one": "~54% less code (up to 94%) &middot; ~20% cheaper &middot; ~27% faster &middot; 100% safe.",
       "desc": "You know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty lines; he looks at them, says nothing, and replaces them with one.",
       "stack": "javascript/typescript, python, typescript, javascript, react, fastapi",
       "repo": "https://github.com/DietrichGebert/ponytail.git",
@@ -2425,6 +3129,16 @@
       "setup": "easy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "Warp, built for coding with multiple AI agents Available for MacOS, Linux, & Windows.",
       "desc": "Warp, built for coding with multiple AI agents Available for MacOS, Linux, & Windows.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres",
@@ -2450,7 +3164,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "An agent meta-harness for Claude Code and Codex..",
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "react",
+        "typescript"
+      ],
+      "one": "> Agent = Model + Harness. The model writes; the harness gives it tools, memory, loops, sandboxes, and controls so it can actually work.",
       "desc": "An agent meta-harness for Claude Code and Codex..",
       "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
       "repo": "https://github.com/ruvnet/ruflo.git",
@@ -2474,7 +3197,17 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "AIO Sandbox concentra herramientas de ejecución aislada para agentes: filesystem, red y procesos sin dejarlos sueltos en el host.",
+      "tags": [
+        "agents",
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "langchain",
+        "python",
+        "react"
+      ],
+      "one": "Sandbox all-in-one para ejecutar agentes con aislamiento de sistema y red.",
       "desc": "AIO Sandbox concentra herramientas de ejecución aislada para agentes: filesystem, red y procesos sin dejarlos sueltos en el host.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, langchain",
       "repo": "https://github.com/agent-infra/sandbox.git",
@@ -2498,6 +3231,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "automation",
+        "docker",
+        "javascript",
+        "postgres",
+        "python",
+        "scraping",
+        "typescript"
+      ],
       "one": "Scrapling is an adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl.",
       "desc": "Scrapling is an adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl.",
       "stack": "python, typescript, javascript, docker, postgres",
@@ -2521,7 +3263,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "T3 Code orquesta los agentes que ya corren en el host desde una UI (iOS, Android, web, Electron). No sustituye al modelo ni al runtime del agente.",
+      "tags": [
+        "agents",
+        "javascript",
+        "javascript-typescript",
+        "react",
+        "typescript"
+      ],
+      "one": "Superficie de control para agentes en tu máquina: app móvil, web y escritorio Electron.",
       "desc": "T3 Code orquesta los agentes que ya corren en el host desde una UI (iOS, Android, web, Electron). No sustituye al modelo ni al runtime del agente.",
       "stack": "javascript/typescript, typescript, javascript, react",
       "repo": "https://github.com/pingdotgg/t3code.git",
@@ -2546,7 +3295,17 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": ":star: If you find ToolJet useful, please consider giving us a star on GitHub! Your support helps us continue to innovate and deliver exciting features.",
+      "tags": [
+        "agents",
+        "automation",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "ToolJet is the open-source foundation of ToolJet AI - the AI-native platform for building and deploying internal tools, workflows and AI agents.",
       "desc": ":star: If you find ToolJet useful, please consider giving us a star on GitHub! Your support helps us continue to innovate and deliver exciting features.",
       "stack": "javascript/typescript, python, typescript, javascript, docker, postgres",
       "repo": "https://github.com/ToolJet/ToolJet.git",
@@ -2571,7 +3330,13 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "A 10 million document corpus takes 31 GB of RAM as float32. turbovec fits it in 4 GB - and searches it faster than FAISS..",
+      "tags": [
+        "automation",
+        "langchain",
+        "python",
+        "typescript"
+      ],
+      "one": "turbovec is a Rust vector index with Python bindings, built on Google Research's TurboQuant algorithm — a data-oblivious quantizer with near-optimal distortion ",
       "desc": "A 10 million document corpus takes 31 GB of RAM as float32. turbovec fits it in 4 GB - and searches it faster than FAISS..",
       "stack": "python, typescript, langchain",
       "repo": "https://github.com/RyanCodrai/turbovec.git",
@@ -2595,6 +3360,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
       "one": "ArchiveBox is a self-hosted app that lets you preserve content from websites in a variety of formats.",
       "desc": "ArchiveBox is a self-hosted app that lets you preserve content from websites in a variety of formats.",
       "stack": "python, typescript, javascript, docker, postgres",
@@ -2620,7 +3392,17 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "🚀 Crawl4AI Cloud API — Closed Beta (Launching Soon) Reliable, large-scale web extraction, now built to be _drastically more cost-effective_ than any of the exis",
+      "tags": [
+        "docker",
+        "fastapi",
+        "javascript",
+        "postgres",
+        "python",
+        "react",
+        "scraping",
+        "typescript"
+      ],
+      "one": "🚀 Crawl4AI Cloud API — Closed Beta (Launching Soon) Reliable, large-scale web extraction, now built to be drastically more cost-effective than any of the existi",
       "desc": "🚀 Crawl4AI Cloud API — Closed Beta (Launching Soon) Reliable, large-scale web extraction, now built to be _drastically more cost-effective_ than any of the existing solutions.",
       "stack": "python, typescript, javascript, react, docker, postgres, fastapi",
       "repo": "https://github.com/unclecode/crawl4ai.git",
@@ -2644,7 +3426,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Crawlee covers your crawling and scraping end-to-end and helps you build reliable scrapers. Fast..",
+      "tags": [
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "python",
+        "react",
+        "scraping",
+        "typescript"
+      ],
+      "one": "Crawlee covers your crawling and scraping end-to-end and helps you build reliable scrapers. Fast.",
       "desc": "Crawlee covers your crawling and scraping end-to-end and helps you build reliable scrapers. Fast..",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker",
       "repo": "https://github.com/apify/crawlee.git",
@@ -2667,7 +3458,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Crawlee covers your crawling and scraping end-to-end and helps you build reliable scrapers. Fast..",
+      "tags": [
+        "javascript",
+        "python",
+        "react",
+        "scraping",
+        "typescript"
+      ],
+      "one": "Crawlee covers your crawling and scraping end-to-end and helps you build reliable scrapers. Fast.",
       "desc": "Crawlee covers your crawling and scraping end-to-end and helps you build reliable scrapers. Fast..",
       "stack": "python, typescript, javascript, react",
       "repo": "https://github.com/apify/crawlee-python.git",
@@ -2691,6 +3489,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "javascript",
+        "python",
+        "scraping",
+        "typescript"
+      ],
       "one": "The API to search, scrape, and interact with the web at scale. 🔥 The web context API to find sources, extract content, and turn it into clean Markdown or struct",
       "desc": "The API to search, scrape, and interact with the web at scale. 🔥 The web context API to find sources, extract content, and turn it into clean Markdown or structured data your agents can ship with. Open source and available as a hosted service.",
       "stack": "python, typescript, javascript, docker",
@@ -2716,7 +3521,11 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "A guide to building a world-class language model from absolute scratch. Taught like you're five. Built like you're an engineer.*.",
+      "tags": [
+        "python",
+        "typescript"
+      ],
+      "one": "> A guide to building a world-class language model from absolute scratch. Taught like you're five. Built like you're an engineer.",
       "desc": "A guide to building a world-class language model from absolute scratch. Taught like you're five. Built like you're an engineer.*.",
       "stack": "python, typescript",
       "repo": "https://github.com/raiyanyahya/how-to-train-your-gpt.git",
@@ -2740,7 +3549,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Instaloader es un scraper de Instagram orientado a archivo personal o datasets. No es un navegador agentizado; es una herramienta de extracción puntual.",
+      "tags": [
+        "python",
+        "typescript",
+        "vision"
+      ],
+      "one": "Descarga fotos, videos y metadatos de Instagram desde perfiles, hashtags y stories.",
       "desc": "Instaloader es un scraper de Instagram orientado a archivo personal o datasets. No es un navegador agentizado; es una herramienta de extracción puntual.",
       "stack": "python, typescript",
       "repo": "https://github.com/instaloader/instaloader.git",
@@ -2763,7 +3577,13 @@
       "setup": "easy",
       "mcp": false,
       "prov": [],
-      "one": "LLM Scraper is a TypeScript library that allows you to extract structured data from any webpage using LLMs.",
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "scraping",
+        "typescript"
+      ],
+      "one": "> LLM Scraper was updated to version 2.0.",
       "desc": "LLM Scraper is a TypeScript library that allows you to extract structured data from any webpage using LLMs.",
       "stack": "javascript/typescript, typescript, javascript",
       "repo": "https://github.com/mishushakov/llm-scraper.git",
@@ -2787,7 +3607,15 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "A self-hosted AI workspace for chat, agents, research, documents, email, notes, calendar, and local model workflows.",
+      "tags": [
+        "agents",
+        "docker",
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "> dev is the default branch and gets the newest changes first. Use main if you want the more curated branch.",
       "desc": "A self-hosted AI workspace for chat, agents, research, documents, email, notes, calendar, and local model workflows.",
       "stack": "python, typescript, javascript, docker, postgres",
       "repo": "https://github.com/pewdiepie-archdaemon/odysseus.git",
@@ -2813,7 +3641,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "ScrapeGraphAI convierte una instrucción en un grafo de extracción web. Encaja cuando el HTML es irregular y un scraper clásico se rompe.",
+      "tags": [
+        "docker",
+        "javascript",
+        "langchain",
+        "python",
+        "scraping",
+        "typescript"
+      ],
+      "one": "Scraping con grafos LLM: describes qué extraer y el sistema recorre la página.",
       "desc": "ScrapeGraphAI convierte una instrucción en un grafo de extracción web. Encaja cuando el HTML es irregular y un scraper clásico se rompe.",
       "stack": "python, typescript, javascript, docker, langchain",
       "repo": "https://github.com/ScrapeGraphAI/Scrapegraph-ai.git",
@@ -2837,6 +3673,12 @@
       "setup": "easy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "python",
+        "scraping",
+        "typescript"
+      ],
       "one": "some example web pages and the data to be extracted, scrapely constructs a parser for all similar pages.",
       "desc": "some example web pages and the data to be extracted, scrapely constructs a parser for all similar pages.",
       "stack": "python, typescript, javascript",
@@ -2862,7 +3704,11 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Scrapy es el estándar de crawling en Python: spiders, pipelines y export. Úsalo para extracciones masivas, no para una sola página puntual.",
+      "tags": [
+        "python",
+        "scraping"
+      ],
+      "one": "Framework Python de crawling y scraping a gran escala.",
       "desc": "Scrapy es el estándar de crawling en Python: spiders, pipelines y export. Úsalo para extracciones masivas, no para una sola página puntual.",
       "stack": "python",
       "repo": "https://github.com/scrapy/scrapy.git",
@@ -2886,6 +3732,11 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "python",
+        "scraping",
+        "typescript"
+      ],
       "one": "snscrape is a scraper for social networking services (SNS). It scrapes things like user profiles, hashtags, or searches and returns the discovered items, e.g. t",
       "desc": "snscrape is a scraper for social networking services (SNS). It scrapes things like user profiles, hashtags, or searches and returns the discovered items, e.g. the relevant posts.",
       "stack": "python, typescript",
@@ -2909,6 +3760,16 @@
       "setup": "medium",
       "mcp": true,
       "prov": [],
+      "tags": [
+        "docker",
+        "javascript",
+        "langchain",
+        "mcp",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "A curated list of awesome Model Context Protocol (MCP) clients.",
       "desc": "A curated list of awesome Model Context Protocol (MCP) clients.",
       "stack": "python, typescript, javascript, react, docker, postgres, langchain",
@@ -2934,6 +3795,9 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "typescript"
+      ],
       "one": "A curated directory of high-quality plugins for Claude Code.",
       "desc": "A curated directory of high-quality plugins for Claude Code.",
       "stack": "typescript",
@@ -2946,7 +3810,10 @@
       "combines_with": [
         "awesome-claude-code"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "context7",
@@ -2957,7 +3824,12 @@
       "setup": "easy",
       "mcp": true,
       "prov": [],
-      "one": "Context7 evita que el modelo alucine APIs viejas: trae docs versionadas al contexto. Instálalo como servidor MCP en el agente de código.",
+      "tags": [
+        "mcp",
+        "docs",
+        "agents"
+      ],
+      "one": "MCP que inyecta documentación y ejemplos actualizados de librerías en el prompt del LLM.",
       "desc": "Context7 evita que el modelo alucine APIs viejas: trae docs versionadas al contexto. Instálalo como servidor MCP en el agente de código.",
       "stack": "javascript/typescript, typescript, javascript, react",
       "repo": "https://github.com/upstash/context7.git",
@@ -2982,7 +3854,12 @@
       "setup": "medium",
       "mcp": true,
       "prov": [],
-      "one": "DaVinci Resolve MCP expone edición, media pool, render, color y Fusion a asistentes compatibles con Model Context Protocol. Requiere Resolve abierto y, para scr",
+      "tags": [
+        "mcp",
+        "video",
+        "agents"
+      ],
+      "one": "Servidor MCP que deja a un agente controlar DaVinci Resolve Studio por su API de scripting.",
       "desc": "DaVinci Resolve MCP expone edición, media pool, render, color y Fusion a asistentes compatibles con Model Context Protocol. Requiere Resolve abierto y, para scripting externo, la edición Studio.",
       "stack": "python, typescript, javascript, whisper",
       "repo": "https://github.com/samuelgursky/davinci-resolve-mcp.git",
@@ -3007,6 +3884,14 @@
       "setup": "medium",
       "mcp": true,
       "prov": [],
+      "tags": [
+        "docker",
+        "javascript",
+        "mcp",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "The GitHub MCP Server connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code ",
       "desc": "The GitHub MCP Server connects AI tools directly to GitHub's platform. This gives AI agents, assistants, and chatbots the ability to read repositories and code files, manage issues and PRs, analyze code, and automate workflows. All through natural language interactions.",
       "stack": "python, typescript, javascript, react, docker",
@@ -3032,6 +3917,15 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "javascript",
+        "multimedia",
+        "postgres",
+        "python",
+        "typescript",
+        "whisper"
+      ],
       "one": "Type /graphify in your AI coding assistant and it maps your entire project — code, docs, PDFs, images, videos — into a knowledge graph you can query instead of ",
       "desc": "Type /graphify in your AI coding assistant and it maps your entire project — code, docs, PDFs, images, videos — into a knowledge graph you can query instead of grepping through files.",
       "stack": "python, typescript, javascript, docker, postgres, whisper",
@@ -3056,7 +3950,14 @@
       "setup": "easy",
       "mcp": true,
       "prov": [],
-      "one": "Puente ligero entre servidores MCP y el ecosistema LangChain/LangGraph. Librería, no un servidor MCP en sí.",
+      "tags": [
+        "javascript",
+        "langchain",
+        "mcp",
+        "python",
+        "typescript"
+      ],
+      "one": "Adaptadores que hacen herramientas MCP usables desde LangChain y LangGraph.",
       "desc": "Puente ligero entre servidores MCP y el ecosistema LangChain/LangGraph. Librería, no un servidor MCP en sí.",
       "stack": "python, typescript, javascript, langchain",
       "repo": "https://github.com/langchain-ai/langchain-mcp-adapters.git",
@@ -3081,6 +3982,11 @@
       "setup": "medium",
       "mcp": true,
       "prov": [],
+      "tags": [
+        "mcp",
+        "postgres",
+        "typescript"
+      ],
       "one": "This repository contains a list of Google's official Model Context Protocol (MCP) servers, guidance on how to deploy MCP servers to Google Cloud, and examples t",
       "desc": "This repository contains a list of Google's official Model Context Protocol (MCP) servers, guidance on how to deploy MCP servers to Google Cloud, and examples to get started.",
       "stack": "typescript, postgres",
@@ -3105,6 +4011,10 @@
       "setup": "medium",
       "mcp": true,
       "prov": [],
+      "tags": [
+        "mcp",
+        "typescript"
+      ],
       "one": "These MCP servers are a part of the Neo4j Labs program. They are developed and maintained by the Neo4j Field GenAI team and welcome contributions from the large",
       "desc": "These MCP servers are a part of the Neo4j Labs program. They are developed and maintained by the Neo4j Field GenAI team and welcome contributions from the larger developer community. These servers are frequently updated with new and experimental features, but are not supported by the Neo4j product team.",
       "stack": "typescript",
@@ -3129,6 +4039,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "react",
+        "typescript"
+      ],
       "one": "The easiest way to get started with Metabase is to sign up for a free trial of Metabase Cloud.",
       "desc": "The easiest way to get started with Metabase is to sign up for a free trial of Metabase Cloud.",
       "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
@@ -3153,6 +4071,13 @@
       "setup": "medium",
       "mcp": true,
       "prov": [],
+      "tags": [
+        "mcp",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "Programmatic access to Google NotebookLM — via command-line interface (CLI) or Model Context Protocol (MCP) server.",
       "desc": "Programmatic access to Google NotebookLM — via command-line interface (CLI) or Model Context Protocol (MCP) server.",
       "stack": "python, typescript, react, postgres",
@@ -3177,6 +4102,9 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "typescript"
+      ],
       "one": "OpenCut is being rewritten from the ground up. What's coming:.",
       "desc": "OpenCut is being rewritten from the ground up. What's coming:.",
       "stack": "typescript",
@@ -3200,6 +4128,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "javascript",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "The Public APIs repository is manually curated by community members like you and folks working at APILayer. It includes an extensive list of public APIs from ma",
       "desc": "The Public APIs repository is manually curated by community members like you and folks working at APILayer. It includes an extensive list of public APIs from many domains that you can use for your own products. Consider it a treasure trove of APIs well-managed by the community over the years.",
       "stack": "python, typescript, javascript, react, docker, postgres",
@@ -3224,7 +4160,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "This repository is a collection of *reference implementations* for the Model Context Protocol (MCP), as well as references to community-built servers and additi",
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "This repository is a collection of reference implementations for the Model Context Protocol (MCP), as well as references to community-built servers and addition",
       "desc": "This repository is a collection of *reference implementations* for the Model Context Protocol (MCP), as well as references to community-built servers and additional resources.",
       "stack": "javascript/typescript, python, typescript, javascript, postgres",
       "repo": "https://github.com/modelcontextprotocol/servers.git",
@@ -3248,7 +4191,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Your coding agent remembers everything. No more re-explaining. Built on iii engine Persistent memory for Claude Code, GitHub Copilot CLI, Cursor, Gemini CLI, Co",
+      "tags": [
+        "agents",
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "Persistent memory for Claude Code, GitHub Copilot CLI, Cursor, Gemini CLI, Codex CLI, Hermes, OpenClaw, pi, OpenCode, and any MCP client.",
       "desc": "Your coding agent remembers everything. No more re-explaining. Built on iii engine Persistent memory for Claude Code, GitHub Copilot CLI, Cursor, Gemini CLI, Codex CLI, Hermes, OpenClaw, pi, OpenCode, and any MCP client.",
       "stack": "javascript/typescript, python, typescript, javascript, docker, postgres",
       "repo": "https://github.com/rohitg00/agentmemory.git",
@@ -3272,7 +4224,12 @@
       "setup": "medium",
       "mcp": true,
       "prov": [],
-      "one": "Engram da a cualquier agente compatible con MCP una memoria local (o cloud) en un solo binario, sin dependencias pesadas.",
+      "tags": [
+        "memory",
+        "mcp",
+        "agents"
+      ],
+      "one": "One brain. Local or cloud. Agent-agnostic, single binary, zero dependencies.",
       "desc": "Engram da a cualquier agente compatible con MCP una memoria local (o cloud) en un solo binario, sin dependencias pesadas.",
       "stack": "python, typescript, javascript, docker, postgres",
       "repo": "https://github.com/Gentleman-Programming/engram.git",
@@ -3297,6 +4254,10 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "python",
+        "typescript"
+      ],
       "one": "Did you ever feel lazy about configuring a logger and used print() instead?... I did, yet logging is fundamental to every application and eases the process of d",
       "desc": "Did you ever feel lazy about configuring a logger and used print() instead?... I did, yet logging is fundamental to every application and eases the process of debugging. Using Loguru you have no excuse not to use logging from the start, this is as simple as from loguru import logger.",
       "stack": "python, typescript",
@@ -3320,7 +4281,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "mem0 guarda y recupera hechos de usuario entre sesiones. Úsalo cuando el agente necesita memoria a largo plazo, no como base de datos general.",
+      "tags": [
+        "docker",
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "Capa de memoria persistente para agentes y apps LLM, con API y almacén vectorial.",
       "desc": "mem0 guarda y recupera hechos de usuario entre sesiones. Úsalo cuando el agente necesita memoria a largo plazo, no como base de datos general.",
       "stack": "python, typescript, javascript, docker, postgres",
       "repo": "https://github.com/mem0ai/mem0.git",
@@ -3345,7 +4313,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Local-first AI memory. Verbatim storage, pluggable backend, 96.6% R@5 raw on LongMemEval — zero API calls.",
+      "tags": [
+        "docker",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
+      "one": "> Beware of impostor sites. MemPalace has no other official websites. The only official sources are this GitHub repository, the PyPI package, and the docs at me",
       "desc": "Local-first AI memory. Verbatim storage, pluggable backend, 96.6% R@5 raw on LongMemEval — zero API calls.",
       "stack": "python, typescript, react, docker, postgres",
       "repo": "https://github.com/MemPalace/mempalace.git",
@@ -3369,6 +4344,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "javascript",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "A curated list of awesome big data frameworks, resources and other awesomeness. Inspired by awesome-php, awesome-python, awesome-ruby, hadoopecosystemtable & bi",
       "desc": "A curated list of awesome big data frameworks, resources and other awesomeness. Inspired by awesome-php, awesome-python, awesome-ruby, hadoopecosystemtable & big-data.",
       "stack": "python, typescript, javascript, react, docker, postgres",
@@ -3392,7 +4375,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "CodeGraph construye un grafo del codebase para que un agente navegue símbolos y dependencias sin leer el repo entero.",
+      "tags": [
+        "fastapi",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
+      "one": "Indexa repositorios grandes como grafo de código y responde consultas estructurales.",
       "desc": "CodeGraph construye un grafo del codebase para que un agente navegue símbolos y dependencias sin leer el repo entero.",
       "stack": "javascript/typescript, python, typescript, javascript, react, postgres, fastapi",
       "repo": "https://github.com/colbymchenry/codegraph.git",
@@ -3417,7 +4409,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Directorio de notebooks educativos de data science. Es material de referencia, no una librería para importar en producción.",
+      "tags": [
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "Colección de notebooks IPython de data science, machine learning y estadística.",
       "desc": "Directorio de notebooks educativos de data science. Es material de referencia, no una librería para importar en producción.",
       "stack": "python, typescript, postgres",
       "repo": "https://github.com/donnemartin/data-science-ipython-notebooks.git",
@@ -3441,6 +4438,12 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "javascript",
+        "python",
+        "typescript"
+      ],
       "one": "DeepSeek Coder is composed of a series of code language models, each trained from scratch on 2T tokens, with a composition of 87% code and 13% natural language ",
       "desc": "DeepSeek Coder is composed of a series of code language models, each trained from scratch on 2T tokens, with a composition of 87% code and 13% natural language in both English and Chinese. We provide various sizes of the code model, ranging from 1B to 33B versions.",
       "stack": "python, typescript, javascript, docker",
@@ -3454,7 +4457,10 @@
         "litellm",
         "codegraph"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "deepseek"
+      ]
     },
     {
       "id": "echarts",
@@ -3465,6 +4471,11 @@
       "setup": "easy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
       "one": "Apache ECharts is a free, powerful charting and visualization library offering easy ways to add intuitive, interactive, and highly customizable charts to your c",
       "desc": "Apache ECharts is a free, powerful charting and visualization library offering easy ways to add intuitive, interactive, and highly customizable charts to your commercial products. It is written in pure JavaScript and based on zrender , which is a whole new lightweight canvas library.",
       "stack": "javascript/typescript, typescript, javascript",
@@ -3489,7 +4500,16 @@
       "setup": "easy",
       "mcp": false,
       "prov": [],
-      "one": "⚠️ Important Notice: GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name on Pump.fun or any other platform is not af",
+      "tags": [
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "langchain",
+        "python",
+        "react",
+        "typescript"
+      ],
+      "one": "⚠️ Important Notice: GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name on Pump.",
       "desc": "⚠️ Important Notice: GitNexus has NO official cryptocurrency, token, or coin. Any token/coin using the GitNexus name on Pump.fun or any other platform is not affiliated with, endorsed by, or created by this project or its maintainers. Do not purchase any cryptocurrency claiming association with GitNexus.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, langchain",
       "repo": "https://github.com/abhigyanpatwari/GitNexus.git",
@@ -3513,6 +4533,11 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "python",
+        "typescript"
+      ],
       "one": "LLMs in simple, pure C/CUDA with no need for 245MB of PyTorch or 107MB of cPython. Current focus is on pretraining, in particular reproducing the GPT-2 and GPT-",
       "desc": "LLMs in simple, pure C/CUDA with no need for 245MB of PyTorch or 107MB of cPython. Current focus is on pretraining, in particular reproducing the GPT-2 and GPT-3 miniseries, along with a parallel PyTorch reference implementation in train_gpt2.py. You'll recognize this file as a slightly tweaked nanoGPT.",
       "stack": "python, typescript, javascript",
@@ -3536,7 +4561,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.9+ application. The library includes type definitions for all requ",
+      "tags": [
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.9+ application.",
       "desc": "The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.9+ application. The library includes type definitions for all request params and response fields, and offers both synchronous and asynchronous clients powered by httpx.",
       "stack": "python, typescript, javascript, postgres",
       "repo": "https://github.com/openai/openai-python.git",
@@ -3560,7 +4591,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub. Given a codebase and an issue, a language mod",
+      "tags": [
+        "docker",
+        "python",
+        "typescript"
+      ],
+      "one": "SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub.",
       "desc": "SWE-bench is a benchmark for evaluating large language models on real world software issues collected from GitHub. Given a codebase and an issue, a language model is tasked with generating a patch that resolves the described problem.",
       "stack": "python, typescript, docker",
       "repo": "https://github.com/SWE-bench/SWE-bench.git",
@@ -3585,7 +4621,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "TimesFM predice series temporales con un decoder-only pretrained. Es un modelo de investigación/producción de forecasting, no un dashboard.",
+      "tags": [
+        "docker",
+        "python",
+        "typescript"
+      ],
+      "one": "Modelo fundacional de Google Research para forecasting de series temporales.",
       "desc": "TimesFM predice series temporales con un decoder-only pretrained. Es un modelo de investigación/producción de forecasting, no un dashboard.",
       "stack": "python, typescript, docker",
       "repo": "https://github.com/google-research/timesfm.git",
@@ -3610,7 +4651,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Hermes Desktop envuelve el agente Hermes en una UI nativa. Úsalo si quieres Hermes como aplicación, no solo como CLI.",
+      "tags": [
+        "automation",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
+      "one": "App de escritorio para el agente Hermes: chat, skills y operación local.",
       "desc": "Hermes Desktop envuelve el agente Hermes en una UI nativa. Úsalo si quieres Hermes como aplicación, no solo como CLI.",
       "stack": "javascript/typescript, python, typescript, javascript, react, postgres",
       "repo": "https://github.com/fathah/hermes-desktop.git",
@@ -3635,7 +4685,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "An open source, privacy-focused alternative to Google's Notebook LM!.",
+      "tags": [
+        "docker",
+        "fastapi",
+        "langchain",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
+      "one": "An open source, privacy-focused alternative to Google's Notebook LM!",
       "desc": "An open source, privacy-focused alternative to Google's Notebook LM!.",
       "stack": "python, typescript, react, docker, postgres, fastapi, langchain",
       "repo": "https://github.com/lfnovo/open-notebook.git",
@@ -3659,7 +4718,15 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specializ",
+      "tags": [
+        "multimedia",
+        "postgres",
+        "python",
+        "react",
+        "typescript",
+        "whisper"
+      ],
+      "one": "> A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers.",
       "desc": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "stack": "python, typescript, react, postgres, whisper",
       "repo": "https://github.com/msitarzewski/agency-agents.git",
@@ -3672,7 +4739,10 @@
         "marketingskills",
         "geo-seo-claude"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "daily-stock-analysis",
@@ -3683,7 +4753,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱.",
+      "tags": [
+        "docker",
+        "fastapi",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "产品预览 · 功能特性 · 快速开始 · 推送效果 · 文档中心 · 完整指南.",
       "desc": "🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱.",
       "stack": "python, typescript, docker, postgres, fastapi",
       "repo": "https://github.com/ZhuLinsen/daily_stock_analysis.git",
@@ -3708,7 +4785,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
+      "tags": [
+        "frontend",
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
+      "one": "A DESIGN.md file combines machine-readable design tokens (YAML front matter) with human-readable design rationale (markdown prose). Tokens give agents exact val",
       "desc": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
       "stack": "javascript/typescript, typescript, javascript",
       "repo": "https://github.com/google-labs-code/design.md.git",
@@ -3732,6 +4815,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "fastapi",
+        "javascript",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "Gradio is an open-source Python package that allows you to quickly build a demo or web application for your machine learning model, API, or any arbitrary Python",
       "desc": "Gradio is an open-source Python package that allows you to quickly build a demo or web application for your machine learning model, API, or any arbitrary Python function. You can then share a link to your demo or web application in just a few seconds using Gradio's built-in sharing features. No JavaScript, CSS, or web hosting experience needed!",
       "stack": "python, typescript, javascript, react, postgres, fastapi",
@@ -3757,7 +4848,11 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "👉 Microsoft Research Blog Post 👉 Read the docs 👉 GraphRAG Arxiv.",
+      "tags": [
+        "python",
+        "typescript"
+      ],
+      "one": "The GraphRAG project is a data pipeline and transformation suite that is designed to extract meaningful, structured data from unstructured text using the power ",
       "desc": "👉 Microsoft Research Blog Post 👉 Read the docs 👉 GraphRAG Arxiv.",
       "stack": "python, typescript",
       "repo": "https://github.com/microsoft/graphrag.git",
@@ -3782,8 +4877,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "react",
+        "typescript"
+      ],
       "one": "GSAP is a framework-agnostic JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in every",
-      "desc": "GSAP is a framework-agnostic JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects... anything JavaScript can touch! GSAP's ScrollTrigger plugin delivers jaw-droppin.",
+      "desc": "GSAP is a framework-agnostic JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, motion paths and generic objects.",
       "stack": "javascript/typescript, typescript, javascript, react, postgres",
       "repo": "https://github.com/greensock/GSAP.git",
       "install": "git clone https://github.com/greensock/GSAP.git && cd GSAP && (pnpm install || npm install)",
@@ -3806,7 +4908,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "HeroUI (antes NextUI) entrega componentes React con tema. Elige esto si quieres una lib con actualizaciones; elige `ui` (shadcn) si quieres dueño del código cop",
+      "tags": [
+        "frontend",
+        "javascript",
+        "javascript-typescript",
+        "react"
+      ],
+      "one": "Librería de componentes React lista para usar, alternativa empaquetada a shadcn/ui.",
       "desc": "HeroUI (antes NextUI) entrega componentes React con tema. Elige esto si quieres una lib con actualizaciones; elige `ui` (shadcn) si quieres dueño del código copiado.",
       "stack": "javascript/typescript, javascript, react",
       "repo": "https://github.com/heroui-inc/heroui.git",
@@ -3830,7 +4938,12 @@
       "setup": "easy",
       "mcp": false,
       "prov": [],
-      "one": "Design guidance for AI coding agents. 1 skill, 23 commands, live browser iteration, and 44 deterministic detector rules for AI-generated frontend design.",
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
+      "one": "> Quick start: From your project root, run npx impeccable install, then run /impeccable init inside your AI coding tool. Full docs: impeccable.style.",
       "desc": "Design guidance for AI coding agents. 1 skill, 23 commands, live browser iteration, and 44 deterministic detector rules for AI-generated frontend design.",
       "stack": "javascript/typescript, typescript, javascript",
       "repo": "https://github.com/pbakaus/impeccable.git",
@@ -3855,7 +4968,14 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "New: Community Leaderboard — Browse real-world performance data from actual users. Press `b` to see measured tok/s, TTFT, and VRAM for any GPU — not just yours.",
+      "tags": [
+        "docker",
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "> New: Community Leaderboard — Browse real-world performance data from actual users. Press b to see measured tok/s, TTFT, and VRAM for any GPU — not just yours.",
       "desc": "New: Community Leaderboard — Browse real-world performance data from actual users. Press `b` to see measured tok/s, TTFT, and VRAM for any GPU — not just yours. Pick from 27+ hardware presets (RTX 5090 to Apple M1) with `H` to compare real numbers before you buy or build.",
       "stack": "python, typescript, javascript, docker, postgres",
       "repo": "https://github.com/AlexsJones/llmfit.git",
@@ -3879,6 +4999,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "frontend",
+        "javascript",
+        "javascript-typescript",
+        "react",
+        "typescript"
+      ],
       "one": "Visit https://magicui.design/docs to view the documentation.",
       "desc": "Visit https://magicui.design/docs to view the documentation.",
       "stack": "javascript/typescript, typescript, javascript, react",
@@ -3903,6 +5030,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
       "one": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything.",
       "desc": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything.",
       "stack": "javascript/typescript, python, typescript, javascript, docker, postgres",
@@ -3926,7 +5061,13 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "Motion (antes Framer Motion) anima interfaces web con una API declarativa. Úsala en el frontend, no como motor de video.",
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "react",
+        "typescript"
+      ],
+      "one": "Librería de animación open source para JavaScript, React y Vue.",
       "desc": "Motion (antes Framer Motion) anima interfaces web con una API declarativa. Úsala en el frontend, no como motor de video.",
       "stack": "javascript/typescript, typescript, javascript, react",
       "repo": "https://github.com/motiondivision/motion.git",
@@ -3950,6 +5091,13 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "multimedia",
+        "python",
+        "typescript",
+        "whisper"
+      ],
       "one": "nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all maj",
       "desc": "nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all major LLM stages including tokenization, pretraining, finetuning, evaluation, inference, and a chat UI.",
       "stack": "python, typescript, javascript, whisper",
@@ -3973,6 +5121,11 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "postgres",
+        "python",
+        "typescript"
+      ],
       "one": "Open and efficient models for agentic AI. Training recipes, deployment guides, and use-case examples for the Nemotron family.",
       "desc": "Open and efficient models for agentic AI. Training recipes, deployment guides, and use-case examples for the Nemotron family.",
       "stack": "python, typescript, postgres",
@@ -3998,7 +5151,12 @@
       "setup": "easy",
       "mcp": false,
       "prov": [],
-      "one": "normalize.css alinea el render de elementos HTML entre navegadores. Es una base de CSS, no un sistema de diseño.",
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
+      "one": "CSS que normaliza inconsistencias de estilos por defecto entre navegadores.",
       "desc": "normalize.css alinea el render de elementos HTML entre navegadores. Es una base de CSS, no un sistema de diseño.",
       "stack": "javascript/typescript, typescript, javascript",
       "repo": "https://github.com/necolas/normalize.css.git",
@@ -4021,7 +5179,17 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "🔥 Open Design 0.10.0 is here: the all-in-one Agentic design workspace. The whole craft now lives in one window — go from a vague idea to discovering references,",
+      "tags": [
+        "agents",
+        "docker",
+        "frontend",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "react",
+        "typescript"
+      ],
+      "one": "> 🔥 Open Design 0.10.0 is here: the all-in-one Agentic design workspace. The whole craft now lives in one window — go from a vague idea to discovering reference",
       "desc": "🔥 Open Design 0.10.0 is here: the all-in-one Agentic design workspace. The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing off to an editor or a Code Agent — without leaving the app.",
       "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
       "repo": "https://github.com/nexu-io/open-design.git",
@@ -4046,6 +5214,16 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "frontend",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "Penpot is the open-source design platform for teams that build digital products at scale.",
       "desc": "Penpot is the open-source design platform for teams that build digital products at scale.",
       "stack": "javascript/typescript, python, typescript, javascript, react, docker, postgres",
@@ -4070,7 +5248,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "The open-source visual builder for your codebase. Build beautiful apps and websites incredibly fast. Drag and drop your own components, integrate with your code",
+      "tags": [
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "react",
+        "typescript"
+      ],
+      "one": "Build beautiful apps and websites incredibly fast.",
       "desc": "The open-source visual builder for your codebase. Build beautiful apps and websites incredibly fast. Drag and drop your own components, integrate with your codebase. Break through the low-code ceiling.",
       "stack": "javascript/typescript, typescript, javascript, react, docker",
       "repo": "https://github.com/plasmicapp/plasmic.git",
@@ -4094,6 +5279,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "javascript",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "PostHog is an all-in-one, open source platform for building successful products.",
       "desc": "PostHog is an all-in-one, open source platform for building successful products.",
       "stack": "python, typescript, javascript, react, docker",
@@ -4118,6 +5310,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "react",
+        "typescript"
+      ],
       "one": "react-three-fiber is a React renderer for threejs.",
       "desc": "react-three-fiber is a React renderer for threejs.",
       "stack": "javascript/typescript, typescript, javascript, react, postgres",
@@ -4142,6 +5341,12 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "multimedia",
+        "postgres",
+        "python",
+        "typescript"
+      ],
       "one": "🔥 RealESRGANx4plusanime6B for anime images (动漫插图模型). Please see [animemodel].",
       "desc": "🔥 RealESRGANx4plusanime6B for anime images (动漫插图模型). Please see [animemodel].",
       "stack": "python, typescript, postgres",
@@ -4166,6 +5371,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "skills",
+        "typescript"
+      ],
       "one": "My agent skills that I use every day to do real engineering - not vibe coding.",
       "desc": "My agent skills that I use every day to do real engineering - not vibe coding.",
       "stack": "javascript/typescript, typescript, javascript",
@@ -4178,7 +5389,10 @@
       "combines_with": [
         "awesome-agent-skills"
       ],
-      "alt": []
+      "alt": [],
+      "agent_tools": [
+        "claude-code"
+      ]
     },
     {
       "id": "skills-emil",
@@ -4189,6 +5403,11 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "frontend",
+        "skills",
+        "typescript"
+      ],
       "one": "For designers and engineers to help them build better user interfaces.",
       "desc": "For designers and engineers to help them build better user interfaces.",
       "stack": "typescript",
@@ -4213,6 +5432,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "frontend",
+        "react",
+        "skills",
+        "typescript"
+      ],
       "one": "A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, ",
       "desc": "A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, and Cursor.",
       "stack": "typescript, react",
@@ -4238,6 +5463,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "react",
+        "typescript"
+      ],
       "one": "SWR is a React Hooks library for data fetching.",
       "desc": "SWR is a React Hooks library for data fetching.",
       "stack": "javascript/typescript, typescript, javascript, react",
@@ -4262,7 +5493,11 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "A utility-first CSS framework for rapidly building custom user interfaces.",
+      "tags": [
+        "javascript",
+        "javascript-typescript"
+      ],
+      "one": "For full documentation, visit tailwindcss.com.",
       "desc": "A utility-first CSS framework for rapidly building custom user interfaces.",
       "stack": "javascript/typescript, javascript",
       "repo": "https://github.com/tailwindlabs/tailwindcss.git",
@@ -4287,7 +5522,12 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "The aim of the project is to create an easy-to-use, lightweight, cross-browser, general-purpose 3D library. The current builds only include WebGL and WebGPU ren",
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
+      "one": "The aim of the project is to create an easy-to-use, lightweight, cross-browser, general-purpose 3D library.",
       "desc": "The aim of the project is to create an easy-to-use, lightweight, cross-browser, general-purpose 3D library. The current builds only include WebGL and WebGPU renderers but SVG and CSS3D renderers are also available as addons.",
       "stack": "javascript/typescript, typescript, javascript",
       "repo": "https://github.com/mrdoob/three.js.git",
@@ -4311,7 +5551,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada.",
+      "tags": [
+        "frontend",
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
+      "one": "A set of beautifully designed components that you can customize, extend, and build on. Start here then make it your own. Open Source. Open Code. Use this to bui",
       "desc": "colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada.",
       "stack": "Node.js, React, Tailwind",
       "repo": "https://github.com/shadcn-ui/ui",
@@ -4337,7 +5583,11 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Easy, fast, and cheap LLM serving for everyone.",
+      "tags": [
+        "python",
+        "typescript"
+      ],
+      "one": "🔥 We have built a vLLM website to help you get started with vLLM. Please visit vllm.ai to learn more. For events, please visit vllm.ai/events to join us.",
       "desc": "Easy, fast, and cheap LLM serving for everyone.",
       "stack": "python, typescript",
       "repo": "https://github.com/vllm-project/vllm.git",
@@ -4362,6 +5612,10 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "postgres",
+        "typescript"
+      ],
       "one": "Youtube-to-Webpage is a Perl script to create a webpage from a Youtube video with a transcript generated from the video's closed captions paired with screenshot",
       "desc": "Youtube-to-Webpage is a Perl script to create a webpage from a Youtube video with a transcript generated from the video's closed captions paired with screenshots of the video.",
       "stack": "typescript, postgres",
@@ -4385,6 +5639,10 @@
       "setup": "easy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "python",
+        "typescript"
+      ],
       "one": "A faster way to build and share data apps.",
       "desc": "A faster way to build and share data apps.",
       "stack": "python, typescript",
@@ -4409,7 +5667,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "A small (~50 KB min), fast chart for time series, lines, areas, ohlc & bars _(MIT Licensed)_.",
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "python",
+        "react",
+        "typescript"
+      ],
+      "one": "uPlot is a fast, memory-efficient Canvas 2D-based chart for plotting time series, lines, areas, ohlc & bars.",
       "desc": "A small (~50 KB min), fast chart for time series, lines, areas, ohlc & bars _(MIT Licensed)_.",
       "stack": "javascript/typescript, python, typescript, javascript, react",
       "repo": "https://github.com/leeoniya/uPlot.git",
@@ -4433,7 +5698,16 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "The most powerful and modular AI engine for content creation..",
+      "tags": [
+        "comfy",
+        "docker",
+        "frontend",
+        "javascript",
+        "python",
+        "react",
+        "typescript"
+      ],
+      "one": "ComfyUI is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output.",
       "desc": "The most powerful and modular AI engine for content creation..",
       "stack": "python, typescript, javascript, react, docker, comfy",
       "repo": "https://github.com/Comfy-Org/ComfyUI.git",
@@ -4458,7 +5732,15 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "The IPAdapter are very powerful models for image-to-image conditioning. The subject or even just the style of the reference image(s) can be easily transferred t",
+      "tags": [
+        "comfy",
+        "frontend",
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "ComfyUI reference implementation for IPAdapter models.",
       "desc": "The IPAdapter are very powerful models for image-to-image conditioning. The subject or even just the style of the reference image(s) can be easily transferred to a generation. Think of it as a 1-image lora.",
       "stack": "python, typescript, javascript, postgres, comfy",
       "repo": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
@@ -4483,6 +5765,10 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "python",
+        "typescript"
+      ],
       "one": "ControlNet 1.1 is released. Those new models will be merged to this repo after we make sure that everything is good.",
       "desc": "ControlNet 1.1 is released. Those new models will be merged to this repo after we make sure that everything is good.",
       "stack": "python, typescript",
@@ -4507,7 +5793,13 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "Colección NVIDIA Cosmos para modelos de mundo y video. Setup pesado: GPU y checkpoints. No es un editor de imagen ligero.",
+      "tags": [
+        "docker",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "Modelos NVIDIA Cosmos de world modeling y generación visual/simulación.",
       "desc": "Colección NVIDIA Cosmos para modelos de mundo y video. Setup pesado: GPU y checkpoints. No es un editor de imagen ligero.",
       "stack": "python, typescript, docker, postgres",
       "repo": "https://github.com/NVIDIA/cosmos.git",
@@ -4530,7 +5822,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Real-time face swap and video deepfake with a single click and only a single image.",
+      "tags": [
+        "multimedia",
+        "postgres",
+        "python",
+        "typescript",
+        "vision"
+      ],
+      "one": "This deepfake software is designed to be a productive tool for the AI-generated media industry. It can assist artists in animating custom characters, creating e",
       "desc": "Real-time face swap and video deepfake with a single click and only a single image.",
       "stack": "python, typescript, postgres",
       "repo": "https://github.com/hacksider/Deep-Live-Cam.git",
@@ -4553,7 +5852,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the Li",
+      "tags": [
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "🤗 Diffusers is the go-to library for state-of-the-art pretrained diffusion models for generating images, audio, and even 3D structures of molecules.",
       "desc": "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at.",
       "stack": "python, typescript, postgres",
       "repo": "https://github.com/huggingface/diffusers.git",
@@ -4577,6 +5881,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "postgres",
+        "python",
+        "typescript"
+      ],
       "one": "Recognize and manipulate faces from Python or from the command line with the world's simplest face recognition library.",
       "desc": "Recognize and manipulate faces from Python or from the command line with the world's simplest face recognition library.",
       "stack": "python, typescript, docker, postgres",
@@ -4600,7 +5910,14 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "Fooocus is an image generating software (based on Gradio ).",
+      "tags": [
+        "comfy",
+        "docker",
+        "javascript",
+        "python",
+        "typescript"
+      ],
+      "one": "Fooocus presents a rethinking of image generator designs. The software is offline, open source, and free, while at the same time, similar to many online image g",
       "desc": "Fooocus is an image generating software (based on Gradio ).",
       "stack": "python, typescript, javascript, docker, comfy",
       "repo": "https://github.com/lllyasviel/Fooocus.git",
@@ -4623,7 +5940,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "1. :boom: Updated online demo: . Here is the backup. 1. :boom: Updated online demo: 1. .",
+      "tags": [
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "1. :boom: Updated online demo: 1. Colab Demo for GFPGAN ; (Another Colab Demo for the original paper model).",
       "desc": "1. :boom: Updated online demo: . Here is the backup. 1. :boom: Updated online demo: 1. .",
       "stack": "python, typescript, javascript, postgres",
       "repo": "https://github.com/TencentARC/GFPGAN.git",
@@ -4646,7 +5969,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Invoke - Professional Creative AI Tools for Visual Media.",
+      "tags": [
+        "docker",
+        "javascript",
+        "python",
+        "react",
+        "typescript"
+      ],
+      "one": "Invoke is a leading creative engine built to empower professionals and enthusiasts alike. Generate and create stunning visual media using the latest AI-driven t",
       "desc": "Invoke - Professional Creative AI Tools for Visual Media.",
       "stack": "python, typescript, javascript, react, docker",
       "repo": "https://github.com/invoke-ai/InvokeAI.git",
@@ -4670,7 +6000,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "LiteLLM is an open source AI Gateway that gives you a single, unified interface to call 100+ LLM providers — OpenAI, Anthropic, Gemini, Bedrock, Azure, and more",
+      "tags": [
+        "docker",
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "Open Source AI Gateway for 100+ LLMs. Self-hosted. Enterprise-ready. Call any LLM in OpenAI format.",
       "desc": "LiteLLM is an open source AI Gateway that gives you a single, unified interface to call 100+ LLM providers — OpenAI, Anthropic, Gemini, Bedrock, Azure, and more — using the OpenAI format.",
       "stack": "python, typescript, javascript, docker, postgres",
       "repo": "https://github.com/BerriAI/litellm.git",
@@ -4695,7 +6032,14 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "`2025/06/01`: 🌍 Over the past year, LivePortrait has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—",
+      "tags": [
+        "comfy",
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "Jianzhu Guo 1† &emsp; Dingyun Zhang 1,2 &emsp; Xiaoqiang Liu 1 &emsp;.",
       "desc": "`2025/06/01`: 🌍 Over the past year, LivePortrait has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as numerous startups and creators. 🎉 `2025/01/01`: 🐶 We updated a new version of the Animals model with more data, see here. `2024/10/18`: ❗ We have upda.",
       "stack": "python, typescript, javascript, postgres, comfy",
       "repo": "https://github.com/KlingAIResearch/LivePortrait.git",
@@ -4718,6 +6062,13 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "comfy",
+        "javascript",
+        "multimedia",
+        "python",
+        "typescript"
+      ],
       "one": "LuxTTS is an lightweight zipvoice based text-to-speech model designed for high quality voice cloning and realistic generation at speeds exceeding 150x realtime.",
       "desc": "LuxTTS is an lightweight zipvoice based text-to-speech model designed for high quality voice cloning and realistic generation at speeds exceeding 150x realtime.",
       "stack": "python, typescript, javascript, comfy",
@@ -4743,7 +6094,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Checkout our HuggingFace🤗 collection for the latest open weight checkpoints and demos!.",
+      "tags": [
+        "docker",
+        "python",
+        "typescript"
+      ],
+      "one": "Checkout our HuggingFace🤗 collection for the latest open weight checkpoints and demos!",
       "desc": "Checkout our HuggingFace🤗 collection for the latest open weight checkpoints and demos!.",
       "stack": "python, typescript, docker",
       "repo": "https://github.com/NVIDIA-NeMo/NeMo.git",
@@ -4768,6 +6124,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "frontend",
+        "postgres",
+        "python",
+        "typescript",
+        "vision"
+      ],
       "one": "The WebUI extension for ControlNet and other injection-based SD controls.",
       "desc": "The WebUI extension for ControlNet and other injection-based SD controls.",
       "stack": "python, typescript, postgres",
@@ -4792,6 +6155,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "frontend",
+        "javascript",
+        "postgres",
+        "python",
+        "typescript",
+        "vision"
+      ],
       "one": "A web interface for Stable Diffusion, implemented using Gradio library.",
       "desc": "A web interface for Stable Diffusion, implemented using Gradio library.",
       "stack": "python, typescript, javascript, postgres",
@@ -4815,7 +6186,12 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "📣 ⓍTTSv2 is here with 16 languages and better performance across the board. 📣 ⓍTTS fine-tuning code is out. Check the example recipes. 📣 ⓍTTS can now stream wit",
+      "tags": [
+        "docker",
+        "python",
+        "typescript"
+      ],
+      "one": "📣 ⓍTTS fine-tuning code is out. Check the example recipes. - 📣 ⓍTTS can now stream with.",
       "desc": "📣 ⓍTTSv2 is here with 16 languages and better performance across the board. 📣 ⓍTTS fine-tuning code is out. Check the example recipes. 📣 ⓍTTS can now stream with <200ms latency. 📣 ⓍTTS, our production TTS model that can speak 13 languages, is released Blog Post, Demo, Docs.",
       "stack": "python, typescript, docker",
       "repo": "https://github.com/coqui-ai/TTS.git",
@@ -4839,7 +6215,12 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "Unlimited OCR apunta a extracción de texto y estructura en documentos largos. Setup de visión; no es un editor PDF.",
+      "tags": [
+        "vision",
+        "ocr",
+        "docs"
+      ],
+      "one": "OCR de Baidu para parsear documentos largos en una sola pasada.",
       "desc": "Unlimited OCR apunta a extracción de texto y estructura en documentos largos. Setup de visión; no es un editor PDF.",
       "stack": "python, typescript, docker, postgres",
       "repo": "https://github.com/baidu/Unlimited-OCR.git",
@@ -4864,6 +6245,14 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "fastapi",
+        "multimedia",
+        "python",
+        "typescript",
+        "whisper"
+      ],
       "one": "faster-whisper is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models.",
       "desc": "faster-whisper is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models.",
       "stack": "python, typescript, docker, fastapi, whisper",
@@ -4889,6 +6278,9 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "typescript"
+      ],
       "one": "FFmpeg is a collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata.",
       "desc": "FFmpeg is a collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata.",
       "stack": "typescript",
@@ -4914,7 +6306,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "As of this writing (15 June 2026), we are working to finalise the API and self-hosting documentation over the next few days.",
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
+      "one": "> We apologise for the brief delay in open-source releases. We paused after spam waves created safety concerns while we built out Fluxer's trust and safety infr",
       "desc": "As of this writing (15 June 2026), we are working to finalise the API and self-hosting documentation over the next few days.",
       "stack": "javascript/typescript, typescript, javascript",
       "repo": "https://github.com/fluxerapp/fluxer.git",
@@ -4937,7 +6334,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "The swiss army knife of lossless video/audio editing.",
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "multimedia",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "Thanks to my supporters and everyone who purchased LosslessCut!",
       "desc": "The swiss army knife of lossless video/audio editing.",
       "stack": "javascript/typescript, python, typescript, javascript, postgres",
       "repo": "https://github.com/mifi/lossless-cut.git",
@@ -4961,7 +6366,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "MoviePy recently upgraded to v2.0, introducing major breaking changes. You can consult the last v1 docs here but beware that v1 is no longer maintained. For mor",
+      "tags": [
+        "docker",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "> MoviePy recently upgraded to v2.0, introducing major breaking changes. You can consult the last v1 docs here but beware that v1 is no longer maintained.",
       "desc": "MoviePy recently upgraded to v2.0, introducing major breaking changes. You can consult the last v1 docs here but beware that v1 is no longer maintained. For more info on how to update your code from v1 to v2, see this guide.",
       "stack": "python, typescript, docker, postgres",
       "repo": "https://github.com/Zulko/moviepy.git",
@@ -4986,7 +6397,17 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "OmniVoice Studio concentra clonación y síntesis de voz en un studio local. Está en beta; espera roturas entre versiones.",
+      "tags": [
+        "docker",
+        "fastapi",
+        "javascript",
+        "multimedia",
+        "python",
+        "react",
+        "typescript",
+        "whisper"
+      ],
+      "one": "Studio TTS open source, alternativa a ElevenLabs para clonación y generación de voz.",
       "desc": "OmniVoice Studio concentra clonación y síntesis de voz en un studio local. Está en beta; espera roturas entre versiones.",
       "stack": "python, typescript, javascript, react, docker, fastapi, whisper",
       "repo": "https://github.com/debpalash/OmniVoice-Studio.git",
@@ -5009,7 +6430,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Remotion renderiza video desde componentes React. Úsalo para piezas generadas por código (intros, datos, motion graphics), no como NLE clásico.",
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "multimedia",
+        "react",
+        "typescript"
+      ],
+      "one": "Framework para crear videos de forma programática con React.",
       "desc": "Remotion renderiza video desde componentes React. Úsalo para piezas generadas por código (intros, datos, motion graphics), no como NLE clásico.",
       "stack": "javascript/typescript, typescript, javascript, react",
       "repo": "https://github.com/remotion-dev/remotion.git",
@@ -5033,6 +6461,14 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "multimedia",
+        "python",
+        "react",
+        "typescript",
+        "whisper"
+      ],
       "one": "A free, open-source Claude Code plugin that turns Remotion into a full video production studio — by Dojo Coding.",
       "desc": "A free, open-source Claude Code plugin that turns Remotion into a full video production studio — by Dojo Coding.",
       "stack": "python, typescript, javascript, react, whisper",
@@ -5058,7 +6494,13 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "Supertonic is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it run",
+      "tags": [
+        "javascript",
+        "multimedia",
+        "python",
+        "typescript"
+      ],
+      "one": "Supertonic is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead.",
       "desc": "Supertonic is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns.",
       "stack": "python, typescript, javascript",
       "repo": "https://github.com/supertone-inc/supertonic.git",
@@ -5082,7 +6524,13 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "🎙️ VibeVoice: Open-Source Frontier Voice AI.",
+      "tags": [
+        "multimedia",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "2026-03-06: 🚀 VibeVoice ASR is now part of a Transformers release ! You can now use our speech recognition model directly through the Hugging Face Transformers ",
       "desc": "🎙️ VibeVoice: Open-Source Frontier Voice AI.",
       "stack": "python, typescript, postgres",
       "repo": "https://github.com/microsoft/VibeVoice.git",
@@ -5107,7 +6555,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "Introducing video-use — edit videos with Claude Code. 100% open source.",
+      "tags": [
+        "multimedia",
+        "python",
+        "typescript"
+      ],
+      "one": "Drop raw footage in a folder, chat with Claude Code, get final.mp4 back. Works for any content — talking heads, montages, tutorials, travel, interviews — withou",
       "desc": "Introducing video-use — edit videos with Claude Code. 100% open source.",
       "stack": "python, typescript",
       "repo": "https://github.com/browser-use/video-use.git",
@@ -5132,6 +6585,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "docker",
+        "fastapi",
+        "javascript",
+        "multimedia",
+        "python",
+        "react",
+        "typescript"
+      ],
       "one": "Videofy Minimal is a local tool for turning news articles into short videos for digital signage screens.",
       "desc": "Videofy Minimal is a local tool for turning news articles into short videos for digital signage screens.",
       "stack": "python, typescript, javascript, react, docker, fastapi",
@@ -5156,7 +6618,16 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
-      "one": "👋 Join our community for discussion and support!.",
+      "tags": [
+        "comfy",
+        "docker",
+        "fastapi",
+        "javascript",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "👋 Join our community for discussion and support!",
       "desc": "👋 Join our community for discussion and support!.",
       "stack": "python, typescript, javascript, docker, postgres, fastapi, comfy",
       "repo": "https://github.com/OpenBMB/VoxCPM.git",
@@ -5179,6 +6650,16 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "comfy",
+        "docker",
+        "multimedia",
+        "postgres",
+        "python",
+        "react",
+        "typescript",
+        "vision"
+      ],
       "one": "WanGP is a one-stop super app for the best open source generative models across video, image, audio, and text-to-speech.",
       "desc": "WanGP is a one-stop super app for the best open source generative models across video, image, audio, and text-to-speech.",
       "stack": "python, typescript, react, docker, postgres, comfy",
@@ -5204,6 +6685,13 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "multimedia",
+        "postgres",
+        "python",
+        "typescript",
+        "whisper"
+      ],
       "one": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multi",
       "desc": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification.",
       "stack": "python, typescript, postgres, whisper",
@@ -5228,6 +6716,12 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "multimedia",
+        "python",
+        "typescript",
+        "whisper"
+      ],
       "one": "If you’re looking for a transcription API for meetings, consider checking out Recall.ai's Meeting Transcription API, an API that works with Zoom, Google Meet, M",
       "desc": "If you’re looking for a transcription API for meetings, consider checking out Recall.ai's Meeting Transcription API, an API that works with Zoom, Google Meet, Microsoft Teams, and more. Recall.ai diarizes by pulling the speaker data and separate audio streams from the meeting platforms, which means 100% accurate speaker diarization with actual speaker names.",
       "stack": "python, typescript, whisper",
@@ -5253,7 +6747,13 @@
       "setup": "easy",
       "mcp": false,
       "prov": [],
-      "one": "MarkItDown performs I/O with the privileges of the current process. Like open() or requests.get(), it will access resources that the process itself can access. ",
+      "tags": [
+        "docker",
+        "postgres",
+        "python",
+        "typescript"
+      ],
+      "one": "> MarkItDown performs I/O with the privileges of the current process. Like open() or requests.get(), it will access resources that the process itself can access",
       "desc": "MarkItDown performs I/O with the privileges of the current process. Like open() or requests.get(), it will access resources that the process itself can access. Sanitize your inputs in untrusted environments, and call the narrowest `convert_*` function needed for your use case (e.g., `convert_stream()`, or `convert_local()`). See the Security Considerations section of the documentation for .",
       "stack": "python, typescript, docker, postgres",
       "repo": "https://github.com/microsoft/markitdown.git",
@@ -5278,7 +6778,12 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "PDF Inspector detecta si un PDF es texto o escaneado y extrae contenido con coordenadas. Encaja en pipelines de documentos, no como visor.",
+      "tags": [
+        "javascript",
+        "python",
+        "typescript"
+      ],
+      "one": "Librería Rust para clasificar PDFs (texto vs escaneado) y extraer texto con posiciones.",
       "desc": "PDF Inspector detecta si un PDF es texto o escaneado y extrae contenido con coordenadas. Encaja en pipelines de documentos, no como visor.",
       "stack": "python, typescript, javascript",
       "repo": "https://github.com/firecrawl/pdf-inspector.git",
@@ -5303,7 +6808,15 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "PDFCraft procesa PDFs en el cliente. Encaja para utilidades locales de documentos, no para un pipeline de conversión masiva.",
+      "tags": [
+        "docker",
+        "javascript",
+        "javascript-typescript",
+        "postgres",
+        "react",
+        "typescript"
+      ],
+      "one": "Editor PDF en el navegador: fusionar, partir, comprimir y editar sin subir archivos.",
       "desc": "PDFCraft procesa PDFs en el cliente. Encaja para utilidades locales de documentos, no para un pipeline de conversión masiva.",
       "stack": "javascript/typescript, typescript, javascript, react, docker, postgres",
       "repo": "https://github.com/PDFCraftTool/pdfcraft.git",
@@ -5326,7 +6839,14 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
-      "one": "PdfDing es un manager de PDFs que hosteas tú. Alternativa ligera a suites documentales pesadas.",
+      "tags": [
+        "docker",
+        "frontend",
+        "javascript",
+        "python",
+        "typescript"
+      ],
+      "one": "Gestor, visor y editor de PDFs auto-hospedable, pensado para ser mínimo y rápido.",
       "desc": "PdfDing es un manager de PDFs que hosteas tú. Alternativa ligera a suites documentales pesadas.",
       "stack": "python, typescript, javascript, docker",
       "repo": "https://github.com/mrmn2/PdfDing.git",
@@ -5351,6 +6871,11 @@
       "setup": "heavy",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "postgres",
+        "python",
+        "typescript"
+      ],
       "one": "This project is kept free and open source with the support of PackyCode , APIKEY.FUN , RunAPI , YouYun ZhiSuan and other sponsors.",
       "desc": "This project is kept free and open source with the support of PackyCode , APIKEY.FUN , RunAPI , YouYun ZhiSuan and other sponsors.",
       "stack": "python, typescript, postgres",
@@ -5375,6 +6900,11 @@
       "setup": "medium",
       "mcp": false,
       "prov": [],
+      "tags": [
+        "javascript",
+        "javascript-typescript",
+        "typescript"
+      ],
       "one": "reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live dem",
       "desc": "reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at revealjs.com.",
       "stack": "javascript/typescript, typescript, javascript",

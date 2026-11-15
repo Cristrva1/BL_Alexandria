@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `archivebox`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=docker,javascript,postgres,python,typescript
 
 **Qué es:** ArchiveBox is a self-hosted app that lets you preserve content from websites in a variety of formats.
 **Stack:** python, typescript, javascript, docker, postgres
@@ -18,7 +18,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `firecrawl`, `crawl4ai`, `scrapy`
 
 ## `crawl4ai`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=—
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=docker,fastapi,javascript,postgres,python,react,scraping,typescript
 
 **Qué es:** 🚀 Crawl4AI Cloud API — Closed Beta (Launching Soon) Reliable, large-scale web extraction, now built to be _drastically more cost-effective_ than any of the existing solutions.
 **Stack:** python, typescript, javascript, react, docker, postgres, fastapi
@@ -32,7 +32,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `firecrawl`, `gpt-researcher`
 
 ## `crawlee`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=docker,javascript,javascript-typescript,python,react,scraping,typescript
 
 **Qué es:** Crawlee covers your crawling and scraping end-to-end and helps you build reliable scrapers. Fast..
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker
@@ -46,7 +46,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `playwright`
 
 ## `crawlee-python`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=javascript,python,react,scraping,typescript
 
 **Qué es:** Crawlee covers your crawling and scraping end-to-end and helps you build reliable scrapers. Fast..
 **Stack:** python, typescript, javascript, react
@@ -60,7 +60,7 @@ _Nombre PyPI puede diferir de 'crawlee-python'; verifica en pypi.org._
 **Combina con:** `scrapy`, `playwright`
 
 ## `firecrawl`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=docker,javascript,python,scraping,typescript
 
 **Qué es:** The API to search, scrape, and interact with the web at scale. 🔥 The web context API to find sources, extract content, and turn it into clean Markdown or structured data your agents can ship with. Open source and available as a hosted service.
 **Stack:** python, typescript, javascript, docker
@@ -74,7 +74,7 @@ _Nombre PyPI puede diferir de 'firecrawl'; verifica en pypi.org._
 **Combina con:** `gpt-researcher`, `crawl4ai`, `research profundo`
 
 ## `how-to-train-your-gpt`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=python,typescript
 
 **Qué es:** A guide to building a world-class language model from absolute scratch. Taught like you're five. Built like you're an engineer.*.
 **Stack:** python, typescript
@@ -88,7 +88,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `nanogpt`, `nanochat`
 
 ## `instaloader`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=python,typescript,vision
 
 **Qué es:** Instaloader es un scraper de Instagram orientado a archivo personal o datasets. No es un navegador agentizado; es una herramienta de extracción puntual.
 **Stack:** python, typescript
@@ -102,7 +102,7 @@ _Nombre PyPI puede diferir de 'instaloader'; verifica en pypi.org._
 **Combina con:** `snscrape`
 
 ## `llm-scraper`
-role=platform · exec=cloud · setup=easy · mcp=False · prov=—
+role=platform · exec=cloud · setup=easy · mcp=False · prov=— · tags=javascript,javascript-typescript,scraping,typescript
 
 **Qué es:** LLM Scraper is a TypeScript library that allows you to extract structured data from any webpage using LLMs.
 **Stack:** javascript/typescript, typescript, javascript
@@ -116,7 +116,7 @@ _Servicio gestionado; no se clona._
 **Combina con:** `playwright`, `firecrawl`
 
 ## `odysseus`
-role=skill · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=skill · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=agents,docker,javascript,postgres,python,typescript
 
 **Qué es:** A self-hosted AI workspace for chat, agents, research, documents, email, notes, calendar, and local model workflows.
 **Stack:** python, typescript, javascript, docker, postgres
@@ -130,7 +130,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `open-notebook`, `ecc`, `mem0`, `workspace privado`
 
 ## `scrapegraph-ai`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=docker,javascript,langchain,python,scraping,typescript
 
 **Qué es:** ScrapeGraphAI convierte una instrucción en un grafo de extracción web. Encaja cuando el HTML es irregular y un scraper clásico se rompe.
 **Stack:** python, typescript, javascript, docker, langchain
@@ -144,7 +144,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `crawl4ai`, `graphrag`
 
 ## `scrapely`
-role=library · exec=hybrid · setup=easy · mcp=False · prov=—
+role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=javascript,python,scraping,typescript
 
 **Qué es:** some example web pages and the data to be extracted, scrapely constructs a parser for all similar pages.
 **Stack:** python, typescript, javascript
@@ -158,7 +158,7 @@ _Nombre PyPI puede diferir de 'scrapely'; verifica en pypi.org._
 **Combina con:** `firecrawl`, `crawl4ai`, `scrapy`
 
 ## `scrapy`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=python,scraping
 
 **Qué es:** Scrapy es el estándar de crawling en Python: spiders, pipelines y export. Úsalo para extracciones masivas, no para una sola página puntual.
 **Stack:** python
@@ -172,7 +172,7 @@ _Nombre PyPI puede diferir de 'scrapy'; verifica en pypi.org._
 **Combina con:** `scrapely`, `crawlee-python`
 
 ## `snscrape`
-role=directory · exec=local · setup=medium · mcp=False · prov=—
+role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=python,scraping,typescript
 
 **Qué es:** snscrape is a scraper for social networking services (SNS). It scrapes things like user profiles, hashtags, or searches and returns the discovered items, e.g. the relevant posts.
 **Stack:** python, typescript

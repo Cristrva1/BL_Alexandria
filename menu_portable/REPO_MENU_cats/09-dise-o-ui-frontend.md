@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `agency-agents`
-role=skill · exec=local · setup=heavy · mcp=False · prov=—
+role=skill · exec=local · setup=heavy · mcp=False · prov=— · tags=multimedia,postgres,python,react,typescript,whisper · tools=claude-code
 
 **Qué es:** A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
 **Stack:** python, typescript, react, postgres, whisper
@@ -18,7 +18,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `marketingskills`, `geo-seo-claude`
 
 ## `daily-stock-analysis`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=docker,fastapi,postgres,python,typescript
 
 **Qué es:** 🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱.
 **Stack:** python, typescript, docker, postgres, fastapi
@@ -32,7 +32,7 @@ _Nombre PyPI puede diferir de 'daily_stock_analysis'; verifica en pypi.org._
 **Combina con:** `openwa`, `skills`, `agency-agents`
 
 ## `design.md`
-role=directory · exec=local · setup=medium · mcp=False · prov=—
+role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=frontend,javascript,javascript-typescript,typescript
 
 **Qué es:** A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.
 **Stack:** javascript/typescript, typescript, javascript
@@ -46,7 +46,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `impeccable`, `skills-emil`
 
 ## `gradio`
-role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
+role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=fastapi,javascript,postgres,python,react,typescript
 
 **Qué es:** Gradio is an open-source Python package that allows you to quickly build a demo or web application for your machine learning model, API, or any arbitrary Python function. You can then share a link to your demo or web application in just a few seconds using Gradio's built-in sharing features. No JavaScript, CSS, or web hosting experience needed!
 **Stack:** python, typescript, javascript, react, postgres, fastapi
@@ -60,7 +60,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `openwa`, `skills`, `agency-agents`
 
 ## `graphrag`
-role=library · exec=local · setup=heavy · mcp=False · prov=—
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=python,typescript
 
 **Qué es:** 👉 Microsoft Research Blog Post 👉 Read the docs 👉 GraphRAG Arxiv.
 **Stack:** python, typescript
@@ -74,9 +74,9 @@ _Nombre PyPI puede diferir de 'graphrag'; verifica en pypi.org._
 **Combina con:** `graphify`, `mcp-neo4j`, `turbovec`
 
 ## `gsap`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=javascript,javascript-typescript,postgres,react,typescript
 
-**Qué es:** GSAP is a framework-agnostic JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects... anything JavaScript can touch! GSAP's ScrollTrigger plugin delivers jaw-droppin.
+**Qué es:** GSAP is a framework-agnostic JavaScript animation library that turns developers into animation superheroes. Build high-performance animations that work in every major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, motion paths and generic objects.
 **Stack:** javascript/typescript, typescript, javascript, react, postgres
 **Repo:** https://github.com/greensock/GSAP.git
 
@@ -88,7 +88,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `three.js`, `motion`
 
 ## `heroui`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=frontend,javascript,javascript-typescript,react
 
 **Qué es:** HeroUI (antes NextUI) entrega componentes React con tema. Elige esto si quieres una lib con actualizaciones; elige `ui` (shadcn) si quieres dueño del código copiado.
 **Stack:** javascript/typescript, javascript, react
@@ -102,7 +102,7 @@ _Nombre npm puede diferir de 'heroui'; verifica en npmjs.com._
 **Combina con:** `tailwindcss`, `swr`
 
 ## `impeccable`
-role=skill · exec=hybrid · setup=easy · mcp=False · prov=—
+role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=javascript,javascript-typescript,typescript
 
 **Qué es:** Design guidance for AI coding agents. 1 skill, 23 commands, live browser iteration, and 44 deterministic detector rules for AI-generated frontend design.
 **Stack:** javascript/typescript, typescript, javascript
@@ -116,7 +116,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `taste-skill`, `ui-ux-pro-max-skill`, `design.md`
 
 ## `llmfit`
-role=app · exec=local · setup=heavy · mcp=False · prov=—
+role=app · exec=local · setup=heavy · mcp=False · prov=— · tags=docker,javascript,postgres,python,typescript
 
 **Qué es:** New: Community Leaderboard — Browse real-world performance data from actual users. Press `b` to see measured tok/s, TTFT, and VRAM for any GPU — not just yours. Pick from 27+ hardware presets (RTX 5090 to Apple M1) with `H` to compare real numbers before you buy or build.
 **Stack:** python, typescript, javascript, docker, postgres
@@ -130,7 +130,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `litellm`, `langfuse`
 
 ## `magicui`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=frontend,javascript,javascript-typescript,react,typescript
 
 **Qué es:** Visit https://magicui.design/docs to view the documentation.
 **Stack:** javascript/typescript, typescript, javascript, react
@@ -144,7 +144,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `tailwindcss`, `motion`
 
 ## `mirofish`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=docker,javascript,javascript-typescript,postgres,python,typescript
 
 **Qué es:** A Simple and Universal Swarm Intelligence Engine, Predicting Anything.
 **Stack:** javascript/typescript, python, typescript, javascript, docker, postgres
@@ -158,7 +158,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `openevolve`
 
 ## `motion`
-role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=library · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=javascript,javascript-typescript,react,typescript
 
 **Qué es:** Motion (antes Framer Motion) anima interfaces web con una API declarativa. Úsala en el frontend, no como motor de video.
 **Stack:** javascript/typescript, typescript, javascript, react
@@ -172,7 +172,7 @@ _Nombre npm puede diferir de 'motion'; verifica en npmjs.com._
 **Combina con:** `magicui`, `react-three-fiber`
 
 ## `nanochat`
-role=app · exec=local · setup=heavy · mcp=False · prov=—
+role=app · exec=local · setup=heavy · mcp=False · prov=— · tags=javascript,multimedia,python,typescript,whisper
 
 **Qué es:** nanochat is the simplest experimental harness for training LLMs. It is designed to run on a single GPU node, the code is minimal/hackable, and it covers all major LLM stages including tokenization, pretraining, finetuning, evaluation, inference, and a chat UI.
 **Stack:** python, typescript, javascript, whisper
@@ -186,7 +186,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `nanogpt`
 
 ## `nemotron`
-role=app · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=app · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=postgres,python,typescript
 
 **Qué es:** Open and efficient models for agentic AI. Training recipes, deployment guides, and use-case examples for the Nemotron family.
 **Stack:** python, typescript, postgres
@@ -200,7 +200,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `openwa`, `skills`, `agency-agents`
 
 ## `normalize.css`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=javascript,javascript-typescript,typescript
 
 **Qué es:** normalize.css alinea el render de elementos HTML entre navegadores. Es una base de CSS, no un sistema de diseño.
 **Stack:** javascript/typescript, typescript, javascript
@@ -214,7 +214,7 @@ _Nombre npm puede diferir de 'normalize.css'; verifica en npmjs.com._
 **Combina con:** `tailwindcss`
 
 ## `open-design`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=agents,docker,frontend,javascript,javascript-typescript,postgres,react,typescript
 
 **Qué es:** 🔥 Open Design 0.10.0 is here: the all-in-one Agentic design workspace. The whole craft now lives in one window — go from a vague idea to discovering references, gathering material, editing interactively, queuing comments, polishing motion, and handing off to an editor or a Code Agent — without leaving the app.
 **Stack:** javascript/typescript, typescript, javascript, react, docker, postgres
@@ -228,7 +228,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `tailwindcss`, `heroui`, `web app moderna`
 
 ## `penpot`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=docker,frontend,javascript,javascript-typescript,postgres,python,react,typescript
 
 **Qué es:** Penpot is the open-source design platform for teams that build digital products at scale.
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker, postgres
@@ -242,7 +242,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `design.md`, `plasmic`
 
 ## `plasmic`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=docker,javascript,javascript-typescript,react,typescript
 
 **Qué es:** The open-source visual builder for your codebase. Build beautiful apps and websites incredibly fast. Drag and drop your own components, integrate with your codebase. Break through the low-code ceiling.
 **Stack:** javascript/typescript, typescript, javascript, react, docker
@@ -256,7 +256,7 @@ _Nombre npm puede diferir de 'plasmic'; verifica en npmjs.com._
 **Combina con:** `tailwindcss`, `ui`
 
 ## `posthog`
-role=skill · exec=local · setup=medium · mcp=False · prov=—
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=docker,javascript,python,react,typescript
 
 **Qué es:** PostHog is an all-in-one, open source platform for building successful products.
 **Stack:** python, typescript, javascript, react, docker
@@ -270,7 +270,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `metabase`, `marketing de agencia`
 
 ## `react-three-fiber`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=javascript,javascript-typescript,postgres,react,typescript
 
 **Qué es:** react-three-fiber is a React renderer for threejs.
 **Stack:** javascript/typescript, typescript, javascript, react, postgres
@@ -284,7 +284,7 @@ _Nombre npm puede diferir de 'react-three-fiber'; verifica en npmjs.com._
 **Combina con:** `three.js`, `motion`
 
 ## `real-esrgan`
-role=library · exec=local · setup=heavy · mcp=False · prov=—
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=multimedia,postgres,python,typescript
 
 **Qué es:** 🔥 RealESRGANx4plusanime6B for anime images (动漫插图模型). Please see [animemodel].
 **Stack:** python, typescript, postgres
@@ -298,7 +298,7 @@ _Nombre PyPI puede diferir de 'Real-ESRGAN'; verifica en pypi.org._
 **Combina con:** `gfpgan`, `pipeline de reels`
 
 ## `skills`
-role=skill · exec=local · setup=medium · mcp=False · prov=—
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=javascript,javascript-typescript,skills,typescript · tools=claude-code
 
 **Qué es:** My agent skills that I use every day to do real engineering - not vibe coding.
 **Stack:** javascript/typescript, typescript, javascript
@@ -312,7 +312,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `awesome-agent-skills`
 
 ## `skills-emil`
-role=skill · exec=local · setup=medium · mcp=False · prov=—
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=frontend,skills,typescript
 
 **Qué es:** For designers and engineers to help them build better user interfaces.
 **Stack:** typescript
@@ -326,7 +326,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `design.md`, `ui-ux-pro-max-skill`
 
 ## `stitch-skills`
-role=skill · exec=local · setup=medium · mcp=False · prov=—
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=frontend,react,skills,typescript
 
 **Qué es:** A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, and Cursor.
 **Stack:** typescript, react
@@ -340,7 +340,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `openwa`, `skills`, `agency-agents`
 
 ## `swr`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=javascript,javascript-typescript,react,typescript
 
 **Qué es:** SWR is a React Hooks library for data fetching.
 **Stack:** javascript/typescript, typescript, javascript, react
@@ -354,7 +354,7 @@ _Nombre npm puede diferir de 'swr'; verifica en npmjs.com._
 **Combina con:** `heroui`, `web app moderna`
 
 ## `tailwindcss`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=javascript,javascript-typescript
 
 **Qué es:** A utility-first CSS framework for rapidly building custom user interfaces.
 **Stack:** javascript/typescript, javascript
@@ -368,7 +368,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `heroui`, `ui`, `magicui`
 
 ## `three.js`
-role=library · exec=local · setup=heavy · mcp=False · prov=—
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=javascript,javascript-typescript,typescript
 
 **Qué es:** The aim of the project is to create an easy-to-use, lightweight, cross-browser, general-purpose 3D library. The current builds only include WebGL and WebGPU renderers but SVG and CSS3D renderers are also available as addons.
 **Stack:** javascript/typescript, typescript, javascript
@@ -382,7 +382,7 @@ _Nombre npm puede diferir de 'three.js'; verifica en npmjs.com._
 **Combina con:** `react-three-fiber`, `gsap`
 
 ## `ui`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=frontend,javascript,javascript-typescript,typescript
 
 **Qué es:** colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada.
 **Stack:** Node.js, React, Tailwind
@@ -397,7 +397,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Alternativas (elige una):** `heroui`
 
 ## `vllm`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=python,typescript
 
 **Qué es:** Easy, fast, and cheap LLM serving for everyone.
 **Stack:** python, typescript
@@ -411,7 +411,7 @@ _Nombre PyPI puede diferir de 'vllm'; verifica en pypi.org._
 **Combina con:** `openwa`, `skills`, `agency-agents`
 
 ## `youtube2webpage`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=postgres,typescript
 
 **Qué es:** Youtube-to-Webpage is a Perl script to create a webpage from a Youtube video with a transcript generated from the video's closed captions paired with screenshots of the video.
 **Stack:** typescript, postgres

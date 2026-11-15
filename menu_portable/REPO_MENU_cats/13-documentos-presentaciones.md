@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `markitdown`
-role=directory · exec=local · setup=easy · mcp=False · prov=—
+role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=docker,postgres,python,typescript
 
 **Qué es:** MarkItDown performs I/O with the privileges of the current process. Like open() or requests.get(), it will access resources that the process itself can access. Sanitize your inputs in untrusted environments, and call the narrowest `convert_*` function needed for your use case (e.g., `convert_stream()`, or `convert_local()`). See the Security Considerations section of the documentation for .
 **Stack:** python, typescript, docker, postgres
@@ -18,7 +18,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `ppt-master`, `open-notebook`, `docs → presentaciones`
 
 ## `pdf-inspector`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=javascript,python,typescript
 
 **Qué es:** PDF Inspector detecta si un PDF es texto o escaneado y extrae contenido con coordenadas. Encaja en pipelines de documentos, no como visor.
 **Stack:** python, typescript, javascript
@@ -32,7 +32,7 @@ _Nombre PyPI puede diferir de 'pdf-inspector'; verifica en pypi.org._
 **Combina con:** `firecrawl`, `crawl4ai`, `scrapy`
 
 ## `pdfcraft`
-role=app · exec=local · setup=medium · mcp=False · prov=—
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=docker,javascript,javascript-typescript,postgres,react,typescript
 
 **Qué es:** PDFCraft procesa PDFs en el cliente. Encaja para utilidades locales de documentos, no para un pipeline de conversión masiva.
 **Stack:** javascript/typescript, typescript, javascript, react, docker, postgres
@@ -46,7 +46,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `markitdown`
 
 ## `pdfding`
-role=app · exec=local · setup=medium · mcp=False · prov=—
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=docker,frontend,javascript,python,typescript
 
 **Qué es:** PdfDing es un manager de PDFs que hosteas tú. Alternativa ligera a suites documentales pesadas.
 **Stack:** python, typescript, javascript, docker
@@ -60,7 +60,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `markitdown`, `ppt-master`, `reveal.js`
 
 ## `ppt-master`
-role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=library · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=postgres,python,typescript
 
 **Qué es:** This project is kept free and open source with the support of PackyCode , APIKEY.FUN , RunAPI , YouYun ZhiSuan and other sponsors.
 **Stack:** python, typescript, postgres
@@ -74,7 +74,7 @@ _Nombre PyPI puede diferir de 'ppt-master'; verifica en pypi.org._
 **Combina con:** `markitdown`, `docs → presentaciones`
 
 ## `reveal.js`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=javascript,javascript-typescript,typescript
 
 **Qué es:** reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at revealjs.com.
 **Stack:** javascript/typescript, typescript, javascript

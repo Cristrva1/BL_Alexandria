@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `ag2`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,docker,python,react,typescript
 
 **Qué es:** AG2 was evolved from AutoGen. Fully open-sourced. We invite collaborators from all organizations to contribute.
 **Stack:** python, typescript, react, docker
@@ -18,7 +18,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `langchain`, `langfuse`
 
 ## `agent-protocol`
-role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
+role=directory · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,automation,fastapi,langchain,postgres,python,typescript
 
 **Qué es:** Agent Protocol intenta estandarizar cómo se expone un agente (run, I/O, estado) sin atarse a un framework. Es un spec/directorio, no un runtime completo.
 **Stack:** python, typescript, postgres, fastapi, langchain
@@ -32,7 +32,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `agent-reach`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,javascript,multimedia,postgres,python,typescript,whisper
 
 **Qué es:** Agent-Reach estabiliza cómo un agente se conecta a proveedores LLM. La idea es que el canal de acceso pueda cambiar sin que reescribas el resto del stack.
 **Stack:** python, typescript, javascript, postgres, whisper
@@ -46,7 +46,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `agents-towards-production`
-role=skill · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=skill · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=agents,automation,docker,fastapi,langchain,python,typescript
 
 **Qué es:** The open-source playbook for turning AI agents into real-world products.
 **Stack:** python, typescript, docker, fastapi, langchain
@@ -60,7 +60,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `langfuse`, `ag2`
 
 ## `autogen`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=agents,automation,javascript,postgres,python,typescript
 
 **Qué es:** AutoGen orquesta conversaciones entre agentes LLM. Está en mantenimiento; para trabajo nuevo revisa el sucesor oficial antes de adoptarlo como runtime.
 **Stack:** python, typescript, javascript, postgres
@@ -74,7 +74,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `awesome-claude-code`
-role=skill · exec=cloud · setup=medium · mcp=False · prov=—
+role=skill · exec=cloud · setup=medium · mcp=False · prov=— · tags=automation,python,typescript · tools=claude-code
 
 **Qué es:** The old ways have come and gone. It's time to embrace the next phase. The previous Table of Contents was no longer fit for purpose, so a new organizational system is being prepared. Thanks to everyone who has contributed to and supported this repo, be ye human or machine.
 **Stack:** python, typescript
@@ -88,7 +88,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `claude-plugins-official`, `superpowers`
 
 ## `awesome-dataviz`
-role=directory · exec=local · setup=medium · mcp=False · prov=—
+role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=automation,javascript,postgres,python,react,typescript
 
 **Qué es:** A curated list of awesome open-source data visualizations frameworks, libraries and software. Inspired by awesome-python and originally created by fasouto.
 **Stack:** python, typescript, javascript, react, postgres
@@ -102,7 +102,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `echarts`, `awesome-bigdata`
 
 ## `awesome-langgraph`
-role=directory · exec=local · setup=medium · mcp=False · prov=—
+role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=automation,docker,fastapi,javascript,javascript-typescript,langchain,postgres,python
 
 **Qué es:** 🦜🕸️ Awesome LangGraph & LangChain Ecosystem !Awesome !Last Updated.
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker, postgres, fastapi, langchain
@@ -116,7 +116,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `langchain`
 
 ## `awesome-mcp-servers`
-role=directory · exec=local · setup=heavy · mcp=True · prov=—
+role=directory · exec=local · setup=heavy · mcp=True · prov=— · tags=automation,comfy,docker,fastapi,javascript,langchain,mcp,multimedia
 
 **Qué es:** A curated list of awesome Model Context Protocol (MCP) servers.
 **Stack:** python, typescript, javascript, react, docker, postgres, fastapi, langchain, whisper, comfy
@@ -130,7 +130,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `mcp-use`, `servers`
 
 ## `codebase-memory-mcp`
-role=runtime · exec=hybrid · setup=medium · mcp=True · prov=—
+role=runtime · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,docker,javascript,mcp,python,typescript
 
 **Qué es:** The fastest and most efficient code intelligence engine for AI coding agents. Full-indexes an average repository in milliseconds, the Linux kernel (28M LOC, 75K files) in 3 minutes. Answers structural queries in under 1ms. Ships as a single static binary for macOS, Linux, and Windows — download, run `install`, done.
 **Stack:** python, typescript, javascript, docker
@@ -144,7 +144,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `computer-use-preview`
-role=library · exec=cloud · setup=medium · mcp=False · prov=['google']
+role=library · exec=cloud · setup=medium · mcp=False · prov=google · tags=automation,python,react,typescript
 
 **Qué es:** Preview de Gemini Computer Use: el modelo ve la pantalla y opera UI. Requiere API de Google y no es un agente genérico de código.
 **Stack:** python, typescript, react
@@ -158,7 +158,7 @@ _Nombre PyPI puede diferir de 'computer-use-preview'; verifica en pypi.org._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `crewai`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,langchain,postgres,python,typescript
 
 **Qué es:** Fast and Flexible Multi-Agent Automation Framework.
 **Stack:** python, typescript, postgres, langchain
@@ -172,7 +172,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `langchain`, `mem0`
 
 ## `dash`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,javascript,postgres,python,react,typescript
 
 **Qué es:** Dash is the most downloaded, trusted Python framework for building ML & data science web apps*.
 **Stack:** python, typescript, javascript, react, postgres
@@ -186,7 +186,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `streamlit`, `echarts`
 
 ## `deepagents`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=agents,automation,javascript,langchain,python,typescript
 
 **Qué es:** Deep Agents is an open source agent harness — an opinionated agent that runs out of the box. Extend, override, or replace any piece.
 **Stack:** python, typescript, javascript, langchain
@@ -200,7 +200,7 @@ _Nombre PyPI puede diferir de 'deepagents'; verifica en pypi.org._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `deeptutor`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=—
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,docker,fastapi,javascript,langchain,postgres,python,react
 
 **Qué es:** DeepTutor es un sistema de tutoría con agentes para aprendizaje continuo. Encaja como producto educativo, no como orquestador genérico.
 **Stack:** python, typescript, javascript, react, docker, postgres, fastapi, langchain
@@ -214,7 +214,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `deer-flow`
-role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
+role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,langchain,python,typescript
 
 **Qué es:** > On February 28th, 2026, DeerFlow claimed the 🏆 #1 spot on GitHub Trending following the launch of version 2. Thanks a million to our incredible community — you made this happen! 💪🔥.
 **Stack:** python, typescript, javascript, docker, langchain
@@ -228,7 +228,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `gpt-researcher`, `firecrawl`
 
 ## `defending-code-reference-harness`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,docker,python,typescript
 
 **Qué es:** A reference implementation for autonomous vulnerability discovery and remediation with Claude, based on our learnings from partnering with security teams at several organizations since launching Claude Mythos Preview. For a write up of these learnings along with best practices, see the accompanying blog post (also avail.
 **Stack:** python, typescript, docker
@@ -242,7 +242,7 @@ _Nombre PyPI puede diferir de 'defending-code-reference-harness'; verifica en py
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `dify`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,javascript-typescript,postgres,python,react,typescript
 
 **Qué es:** Dify is an open-source LLM app development platform. Its intuitive interface combines AI workflow, RAG pipeline, agent capabilities, model management, observability features (including Opik, Langfuse, and Arize Phoenix) and more, letting you quickly go from prototype to production. Here's a list of the core features:.
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker, postgres
@@ -256,7 +256,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `langflow`, `flowise`
 
 ## `ecc`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=—
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,docker,fastapi,javascript,postgres,python,react,typescript
 
 **Qué es:** Official sources only. Install ECC only from verified channels: the GitHub repository github.com/affaan-m/ECC, the npm packages `ecc-universal` and `ecc-agentshield`, the GitHub App, the plugin slug `ecc@ecc`, and the project website ecc.tools.
 **Stack:** python, typescript, javascript, react, docker, postgres, fastapi
@@ -270,7 +270,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `openhands`, `sandbox`, `hermes-agent`
 
 ## `flowise`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,javascript-typescript,react,typescript
 
 **Qué es:** Flowise es un constructor visual de cadenas y agentes LLM. Encaja si quieres prototipar orquestación con nodos, no si necesitas un runtime embebido en tu código.
 **Stack:** javascript/typescript, typescript, javascript, react, docker
@@ -284,7 +284,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `dify`, `langflow`
 
 ## `gpt-researcher`
-role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
+role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,docker,fastapi,javascript,langchain,python,react,typescript
 
 **Qué es:** GPT Researcher the first open deep research agent designed for both web and local research on any given task.
 **Stack:** python, typescript, javascript, react, docker, fastapi, langchain
@@ -298,7 +298,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `firecrawl`, `browser-use`, `research profundo`
 
 ## `guardrails`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,langchain,python,react,typescript
 
 **Qué es:** > LATEST RELEASE / DEVELOPMENT VERSION: The develop branch tracks the latest top of tree development. The latest released version is 0.21.0.
 **Stack:** python, typescript, javascript, react, docker, langchain
@@ -312,7 +312,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `headroom`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,langchain,postgres,python,typescript
 
 **Qué es:** 60–95% fewer tokens · library · proxy · MCP · 6 algorithms · local-first · reversible.
 **Stack:** python, typescript, javascript, docker, postgres, langchain
@@ -326,7 +326,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `context-engineering`, `codegraph`
 
 ## `hyperframes`
-role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
+role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,automation,docker,javascript,javascript-typescript,multimedia,python,react
 
 **Qué es:** HyperFrames is an open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos. Use it locally with the CLI, from AI coding agents with skills, or as the rendering core behind hosted authoring workflows.
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker
@@ -340,7 +340,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `remotion`
 
 ## `langchain`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=agents,automation,langchain,python,typescript
 
 **Qué es:** LangChain is a framework for building agents and LLM-powered applications. It helps you chain together interoperable components and third-party integrations to simplify AI application development — all while future-proofing decisions as the underlying technology evolves.
 **Stack:** python, typescript, langchain
@@ -354,7 +354,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `langflow`, `langfuse`, `litellm`
 
 ## `langflow`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,python,typescript
 
 **Qué es:** Langflow is a powerful platform for building and deploying AI-powered agents and workflows. It provides developers with both a visual authoring experience and built-in API and MCP servers that turn every workflow into a tool that can be integrated into applications built on any framework or stack.
 **Stack:** python, typescript, javascript, docker
@@ -368,7 +368,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `langchain`, `dify`
 
 ## `langfuse`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,docker,fastapi,javascript,javascript-typescript,langchain,python,react
 
 **Qué es:** Langfuse uses GitHub Discussions for Support and Feature Requests.
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker, fastapi, langchain
@@ -382,7 +382,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `langchain`, `litellm`, `ag2`
 
 ## `langgraph-supervisor-py`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=automation,langchain,postgres,python,react,typescript
 
 **Qué es:** > Note: We now recommend using the supervisor pattern directly via tools rather than this library for most use cases. The tool-calling approach gives you more control over context engineering and is the recommended pattern in the LangChain multi-agent guide. See our supervisor tutorial for a step-by-step guide. We're making this library compatible with LangChain 1.
 **Stack:** python, typescript, react, postgres, langchain
@@ -396,7 +396,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `langgraphjs`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=automation,javascript,javascript-typescript
 
 **Qué es:** Implementación TypeScript de LangGraph. Sirve para construir, gestionar y desplegar agentes de larga duración con grafos de estado en Node o el navegador.
 **Stack:** javascript/typescript, javascript
@@ -410,7 +410,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `loop-engineering`
-role=skill · exec=local · setup=medium · mcp=False · prov=—
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=automation,frontend,javascript,javascript-typescript,postgres,skills,typescript
 
 **Qué es:** > Stop prompting. Design the loop. Get a score.
 **Stack:** javascript/typescript, typescript, javascript, postgres
@@ -424,7 +424,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `mcp-use`
-role=platform · exec=hybrid · setup=medium · mcp=True · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,javascript,langchain,mcp,python,react,typescript
 
 **Qué es:** to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.
 **Stack:** python, typescript, javascript, react, langchain
@@ -438,7 +438,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `mcp`, `awesome-mcp-servers`, `app mcp`
 
 ## `mercury-agent`
-role=skill · exec=local · setup=medium · mcp=False · prov=—
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=automation,javascript,javascript-typescript,postgres,react,typescript
 
 **Qué es:** Remembers what matters. Asks before it acts. Runs 24/7 from CLI, Telegram, or Web. 31 built-in tools, Kanban boards, extensible skills, SQLite-backed Second Brain memory.
 **Stack:** javascript/typescript, typescript, javascript, react, postgres
@@ -452,7 +452,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `nemo-agent-toolkit`
-role=directory · exec=local · setup=medium · mcp=False · prov=—
+role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=automation,fastapi,javascript,langchain,python,react,typescript
 
 **Qué es:** NVIDIA NeMo Agent Toolkit adds intelligence to AI agents across any framework—enhancing speed, accuracy, and decision-making through enterprise-grade instrumentation, observability, and continuous learning.
 **Stack:** python, typescript, javascript, react, fastapi, langchain
@@ -466,7 +466,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `langchain`
 
 ## `nemoclaw`
-role=skill · exec=local · setup=medium · mcp=False · prov=—
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=agents,automation,docker,javascript,javascript-typescript,langchain,postgres,python
 
 **Qué es:** NVIDIA NemoClaw is an open source reference stack for running supported AI agents more safely inside NVIDIA OpenShell sandboxes. It provides guided onboarding, managed inference, network policy, managed integrations, snapshots, and lifecycle operations through the NemoClaw CLI and its agent-specific aliases.
 **Stack:** javascript/typescript, python, typescript, javascript, docker, postgres, langchain
@@ -480,7 +480,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `open-swe`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=agents,automation,docker,javascript,langchain,postgres,python,react
 
 **Qué es:** Elite engineering orgs like Stripe, Ramp, and Coinbase are building their own internal coding agents — Slackbots, CLIs, and web apps that meet engineers where they already work. These agents are connected to internal systems with the right context, permissioning, and safety boundaries to operate with minimal human oversight.
 **Stack:** python, typescript, javascript, react, docker, postgres, langchain
@@ -494,7 +494,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `openclaw`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,javascript-typescript,postgres,typescript
 
 **Qué es:** OpenClaw is a personal AI assistant that runs on your devices and meets you in the channels you already use. It is designed for a single operator and connects models, tools, messaging channels, and optional companion apps through one Gateway.
 **Stack:** javascript/typescript, typescript, javascript, docker, postgres
@@ -508,7 +508,7 @@ _Nombre npm puede diferir de 'openclaw'; verifica en npmjs.com._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `openhands`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,automation,docker,javascript,python,typescript
 
 **Qué es:** Run OpenHands, Claude Code, Codex, Gemini, or any ACP-compatible agent across local, remote, and cloud backends.
 **Stack:** python, typescript, javascript, docker
@@ -522,7 +522,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `ecc`, `sandbox`
 
 ## `openscreen`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,javascript,javascript-typescript,postgres,typescript
 
 **Qué es:** This started as a side project that blew up; not production grade and you'll hit bugs, but hopefully it covers what you need. This project will soon be archived..
 **Stack:** javascript/typescript, typescript, javascript, postgres
@@ -536,7 +536,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `opencut`
 
 ## `playwright`
-role=runtime · exec=hybrid · setup=easy · mcp=False · prov=—
+role=runtime · exec=hybrid · setup=easy · mcp=False · prov=— · tags=automation,javascript,javascript-typescript,postgres,python,typescript
 
 **Qué es:** Playwright is a framework for web automation and testing. It drives Chromium, Firefox, and WebKit with a single API — in your tests, in your scripts, and as a tool for AI agents.
 **Stack:** javascript/typescript, python, typescript, javascript, postgres
@@ -550,7 +550,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `browser-use`, `crawlee`
 
 ## `ponytail`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,fastapi,javascript,javascript-typescript,python,react,typescript
 
 **Qué es:** You know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty lines; he looks at them, says nothing, and replaces them with one.
 **Stack:** javascript/typescript, python, typescript, javascript, react, fastapi
@@ -564,7 +564,7 @@ _Nombre PyPI puede diferir de 'ponytail'; verifica en pypi.org._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `repomix`
-role=library · exec=local · setup=easy · mcp=False · prov=—
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=automation,docker,javascript,javascript-typescript,postgres,python,react,typescript
 
 **Qué es:** Warp, built for coding with multiple AI agents Available for MacOS, Linux, & Windows.
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker, postgres
@@ -578,7 +578,7 @@ _Nombre PyPI puede diferir de 'repomix'; verifica en pypi.org._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `ruflo`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,javascript-typescript,postgres,react,typescript
 
 **Qué es:** An agent meta-harness for Claude Code and Codex..
 **Stack:** javascript/typescript, typescript, javascript, react, docker, postgres
@@ -592,7 +592,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `mem0`, `ecc`
 
 ## `sandbox`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,automation,docker,javascript,javascript-typescript,langchain,python,react
 
 **Qué es:** AIO Sandbox concentra herramientas de ejecución aislada para agentes: filesystem, red y procesos sin dejarlos sueltos en el host.
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker, langchain
@@ -606,7 +606,7 @@ _Nombre PyPI puede diferir de 'sandbox'; verifica en pypi.org._
 **Combina con:** `openhands`, `ecc`
 
 ## `scrapling`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,postgres,python,scraping,typescript
 
 **Qué es:** Scrapling is an adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl.
 **Stack:** python, typescript, javascript, docker, postgres
@@ -620,7 +620,7 @@ _Nombre PyPI puede diferir de 'Scrapling'; verifica en pypi.org._
 **Combina con:** `scrapy`
 
 ## `t3code`
-role=app · exec=cloud · setup=medium · mcp=False · prov=—
+role=app · exec=cloud · setup=medium · mcp=False · prov=— · tags=agents,javascript,javascript-typescript,react,typescript
 
 **Qué es:** T3 Code orquesta los agentes que ya corren en el host desde una UI (iOS, Android, web, Electron). No sustituye al modelo ni al runtime del agente.
 **Stack:** javascript/typescript, typescript, javascript, react
@@ -634,7 +634,7 @@ _Servicio gestionado; no se clona._
 **Combina con:** `andrej-karpathy-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`
 
 ## `tooljet`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=—
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,automation,docker,javascript,javascript-typescript,postgres,python,typescript
 
 **Qué es:** :star: If you find ToolJet useful, please consider giving us a star on GitHub! Your support helps us continue to innovate and deliver exciting features.
 **Stack:** javascript/typescript, python, typescript, javascript, docker, postgres
@@ -648,7 +648,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `awesome-claude-code`, `agents-towards-production`, `ag2`
 
 ## `turbovec`
-role=directory · exec=local · setup=heavy · mcp=False · prov=—
+role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=automation,langchain,python,typescript
 
 **Qué es:** A 10 million document corpus takes 31 GB of RAM as float32. turbovec fits it in 4 GB - and searches it faster than FAISS..
 **Stack:** python, typescript, langchain

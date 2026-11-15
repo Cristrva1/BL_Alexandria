@@ -23,6 +23,7 @@ Si solo quieres ver que repos contiene la biblioteca, no hace falta leer este RE
 | Playbooks o recetas end-to-end | [human/playbooks/](human/playbooks/) |
 | Indice compacto para IA | [ai_index/REPOS.scan.json](ai_index/REPOS.scan.json) |
 | Menu portable para otro proyecto | [menu_portable/](menu_portable/) |
+| Catálogo web educativo | [web/index.html](web/index.html) |
 
 El README explica como usar el sistema. El catalogo y las guias viven en archivos separados para que GitHub sea navegable sin convertir esta portada en un documento enorme.
 
@@ -66,11 +67,13 @@ menu_portable/
 
 Como lo usa la IA (el protocolo esta dentro del propio `REPO_MENU.md`):
 
-1. Lee `REPO_MENU.md` y filtra candidatos por categoria, `role`, `exec`, `setup` y la descripcion de una linea por repo.
-2. Desempata con `alt`/alternativas: si ya eligio un repo, descarta sus alternativas.
-3. Combina con `recipes` si el proyecto es un flujo end-to-end.
-4. Solo para finalistas (<8): abre el archivo de su categoria en `REPO_MENU_cats/` para ver desc completa, `choose_if`, `avoid_if`, `combines_with` y el comando de instalacion derivado.
-5. Instala con el comando marcado por confianza: `+` seguro, `~` verificar nombre de paquete, `?` solo clone + README.
+1. Si el usuario describio un producto, parte de las `recipes`; no empieces por repos sueltos.
+2. Lee `REPO_MENU.md` y filtra por `cat`, `tags`, `role`, `exec`, `setup`, `prov` y `one`.
+3. Desempata con `alt`: si ya eligio un repo, descarta sus alternativas.
+4. Combina con `recipes` si el proyecto es un flujo end-to-end.
+5. Considera la herramienta del usuario (`model_guidance` / `agent_tools`); solo importa para `skill`/`directory`.
+6. Solo para finalistas (<8): abre el archivo de su categoria en `REPO_MENU_cats/` para ver desc completa, `choose_if`, `avoid_if`, `combines_with` y el comando de instalacion derivado.
+7. Instala con el comando marcado por confianza: `+` seguro, `~` verificar nombre de paquete, `?` solo clone + README.
 
 Para copiarlo directamente a otro proyecto:
 
@@ -85,6 +88,17 @@ Antes de elegir dependencias, lee menu_portable/REPO_MENU.md y sigue su protocol
 ```
 
 Regenera el paquete cada vez que agregues o cure repos nuevos (`discover` + `analyze` + `enrich` + `guide build` + `menu export`).
+
+## Catálogo web
+
+`web build` genera un sitio estático para leer la biblioteca como un curso: salas, fichas, recetas y un laboratorio para elegir entre alternativas. Los datos salen de `INDICE_IA.json` y `INDICE_IA.detalle.json`.
+
+```powershell
+uv run repo-intelligence web build
+uv run repo-intelligence web serve
+```
+
+Salida en `web/`. Puedes abrir `web/index.html` directo, o usar `serve` (puerto 8765, o el siguiente libre). Regenera el sitio después de curar repos nuevos.
 
 ## Las 2 partes del proyecto
 

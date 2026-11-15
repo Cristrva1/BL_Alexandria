@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `comfyui`
-role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=runtime · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=comfy,docker,frontend,javascript,python,react,typescript
 
 **Qué es:** The most powerful and modular AI engine for content creation..
 **Stack:** python, typescript, javascript, react, docker, comfy
@@ -18,7 +18,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `comfyui-ipadapter-plus`, `real-esrgan`, `pipeline de reels`
 
 ## `comfyui-ipadapter-plus`
-role=library · exec=local · setup=heavy · mcp=False · prov=—
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=comfy,frontend,javascript,postgres,python,typescript
 
 **Qué es:** The IPAdapter are very powerful models for image-to-image conditioning. The subject or even just the style of the reference image(s) can be easily transferred to a generation. Think of it as a 1-image lora.
 **Stack:** python, typescript, javascript, postgres, comfy
@@ -32,7 +32,7 @@ _Nombre PyPI puede diferir de 'ComfyUI_IPAdapter_plus'; verifica en pypi.org._
 **Combina con:** `litellm`, `cosmos`, `comfyui`
 
 ## `controlnet`
-role=library · exec=local · setup=heavy · mcp=False · prov=—
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=python,typescript
 
 **Qué es:** ControlNet 1.1 is released. Those new models will be merged to this repo after we make sure that everything is good.
 **Stack:** python, typescript
@@ -46,7 +46,7 @@ _Nombre PyPI puede diferir de 'ControlNet'; verifica en pypi.org._
 **Combina con:** `diffusers`, `comfyui`
 
 ## `cosmos`
-role=runtime · exec=local · setup=heavy · mcp=False · prov=—
+role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=docker,postgres,python,typescript
 
 **Qué es:** Colección NVIDIA Cosmos para modelos de mundo y video. Setup pesado: GPU y checkpoints. No es un editor de imagen ligero.
 **Stack:** python, typescript, docker, postgres
@@ -60,7 +60,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `diffusers`
 
 ## `deep-live-cam`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=—
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=multimedia,postgres,python,typescript,vision
 
 **Qué es:** Real-time face swap and video deepfake with a single click and only a single image.
 **Stack:** python, typescript, postgres
@@ -74,7 +74,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `face-recognition`
 
 ## `diffusers`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=postgres,python,typescript
 
 **Qué es:** Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at.
 **Stack:** python, typescript, postgres
@@ -88,7 +88,7 @@ _Nombre PyPI puede diferir de 'diffusers'; verifica en pypi.org._
 **Combina con:** `controlnet`, `cosmos`
 
 ## `face-recognition`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=docker,postgres,python,typescript
 
 **Qué es:** Recognize and manipulate faces from Python or from the command line with the world's simplest face recognition library.
 **Stack:** python, typescript, docker, postgres
@@ -102,7 +102,7 @@ _Nombre PyPI puede diferir de 'face_recognition'; verifica en pypi.org._
 **Combina con:** `deep-live-cam`
 
 ## `fooocus`
-role=skill · exec=local · setup=heavy · mcp=False · prov=—
+role=skill · exec=local · setup=heavy · mcp=False · prov=— · tags=comfy,docker,javascript,python,typescript
 
 **Qué es:** Fooocus is an image generating software (based on Gradio ).
 **Stack:** python, typescript, javascript, docker, comfy
@@ -116,7 +116,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `real-esrgan`
 
 ## `gfpgan`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=javascript,postgres,python,typescript
 
 **Qué es:** 1. :boom: Updated online demo: . Here is the backup. 1. :boom: Updated online demo: 1. .
 **Stack:** python, typescript, javascript, postgres
@@ -130,7 +130,7 @@ _Nombre PyPI puede diferir de 'GFPGAN'; verifica en pypi.org._
 **Combina con:** `real-esrgan`
 
 ## `invokeai`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=docker,javascript,python,react,typescript
 
 **Qué es:** Invoke - Professional Creative AI Tools for Visual Media.
 **Stack:** python, typescript, javascript, react, docker
@@ -144,7 +144,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `diffusers`, `controlnet`
 
 ## `litellm`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=docker,javascript,postgres,python,typescript
 
 **Qué es:** LiteLLM is an open source AI Gateway that gives you a single, unified interface to call 100+ LLM providers — OpenAI, Anthropic, Gemini, Bedrock, Azure, and more — using the OpenAI format.
 **Stack:** python, typescript, javascript, docker, postgres
@@ -158,7 +158,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `langchain`, `langfuse`, `llm-council`
 
 ## `liveportrait`
-role=library · exec=local · setup=heavy · mcp=False · prov=—
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=comfy,javascript,postgres,python,typescript
 
 **Qué es:** `2025/06/01`: 🌍 Over the past year, LivePortrait has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as numerous startups and creators. 🎉 `2025/01/01`: 🐶 We updated a new version of the Animals model with more data, see here. `2024/10/18`: ❗ We have upda.
 **Stack:** python, typescript, javascript, postgres, comfy
@@ -172,7 +172,7 @@ _Nombre PyPI puede diferir de 'LivePortrait'; verifica en pypi.org._
 **Combina con:** `moviepy`
 
 ## `luxtts`
-role=directory · exec=local · setup=heavy · mcp=False · prov=—
+role=directory · exec=local · setup=heavy · mcp=False · prov=— · tags=comfy,javascript,multimedia,python,typescript
 
 **Qué es:** LuxTTS is an lightweight zipvoice based text-to-speech model designed for high quality voice cloning and realistic generation at speeds exceeding 150x realtime.
 **Stack:** python, typescript, javascript, comfy
@@ -186,7 +186,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `litellm`, `cosmos`, `comfyui`
 
 ## `nemo`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=docker,python,typescript
 
 **Qué es:** Checkout our HuggingFace🤗 collection for the latest open weight checkpoints and demos!.
 **Stack:** python, typescript, docker
@@ -200,7 +200,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `litellm`, `cosmos`, `comfyui`
 
 ## `sd-webui-controlnet`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=frontend,postgres,python,typescript,vision
 
 **Qué es:** The WebUI extension for ControlNet and other injection-based SD controls.
 **Stack:** python, typescript, postgres
@@ -214,7 +214,7 @@ _Nombre PyPI puede diferir de 'sd-webui-controlnet'; verifica en pypi.org._
 **Combina con:** `stable-diffusion-webui`, `controlnet`
 
 ## `stable-diffusion-webui`
-role=skill · exec=local · setup=medium · mcp=False · prov=—
+role=skill · exec=local · setup=medium · mcp=False · prov=— · tags=frontend,javascript,postgres,python,typescript,vision
 
 **Qué es:** A web interface for Stable Diffusion, implemented using Gradio library.
 **Stack:** python, typescript, javascript, postgres
@@ -228,7 +228,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `sd-webui-controlnet`
 
 ## `tts`
-role=library · exec=local · setup=heavy · mcp=False · prov=—
+role=library · exec=local · setup=heavy · mcp=False · prov=— · tags=docker,python,typescript
 
 **Qué es:** 📣 ⓍTTSv2 is here with 16 languages and better performance across the board. 📣 ⓍTTS fine-tuning code is out. Check the example recipes. 📣 ⓍTTS can now stream with <200ms latency. 📣 ⓍTTS, our production TTS model that can speak 13 languages, is released Blog Post, Demo, Docs.
 **Stack:** python, typescript, docker
@@ -242,7 +242,7 @@ _Nombre PyPI puede diferir de 'TTS'; verifica en pypi.org._
 **Combina con:** `whisperx`, `moviepy`
 
 ## `unlimited-ocr`
-role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=library · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=vision,ocr,docs
 
 **Qué es:** Unlimited OCR apunta a extracción de texto y estructura en documentos largos. Setup de visión; no es un editor PDF.
 **Stack:** python, typescript, docker, postgres

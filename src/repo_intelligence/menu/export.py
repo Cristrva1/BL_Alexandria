@@ -122,6 +122,13 @@ _ROLE_ICON = {
 _EXEC_ICON = {"local": "loc", "cloud": "cld", "hybrid": "hyb"}
 _SETUP_ICON = {"easy": "E", "medium": "M", "heavy": "H"}
 _CONF_ICON = {"ok": "+", "verify": "~", "clone": "?"}
+_TOOL_LABEL = {
+    "claude-code": "Claude Code",
+    "antigravity": "Antigravity",
+    "codex": "Codex",
+    "grok": "Grok",
+    "deepseek": "Deepseek",
+}
 
 
 def _icon(map_: dict, value: str | None) -> str:
@@ -134,6 +141,13 @@ def _oneline(text: str, limit: int = 120) -> str:
     return text[:limit]
 
 
+def _is_meaningful(text: str, name: str) -> bool:
+    t = (text or "").strip().strip("-").strip()
+    if len(t) < 25:
+        return False
+    return t.lower() != name.lower()
+
+
 def _best_desc(r: dict) -> str:
     """Pick the most meaningful short description available.
 
@@ -143,23 +157,27 @@ def _best_desc(r: dict) -> str:
     desc = (r.get("desc") or "").strip()
     one = (r.get("one") or "").strip()
     name = (r.get("name") or r.get("id") or "").strip()
-
-    def meaningful(t: str) -> bool:
-        t = t.strip().strip("-").strip()
-        if len(t) < 25:
-            return False
-        if t.lower() == name.lower():
-            return False
-        # README blobs usually start with the project name + "is a"/"is an".
-        return True
-
-    # `desc` is often longer/richer; prefer it when meaningful.
-    if meaningful(desc):
+    if _is_meaningful(desc, name):
         return desc
-    if meaningful(one):
+    if _is_meaningful(one, name):
         return one
-    # Whatever is longer between the two, else a placeholder.
     return desc or one or f"(ver ficha de {name})"
+
+
+def _compact_desc(r: dict) -> str:
+    """One-liner for the compact index: prefer scan `one`, matching AGENTS.md."""
+    one = (r.get("one") or "").strip()
+    name = (r.get("name") or r.get("id") or "").strip()
+    if _is_meaningful(one, name):
+        return one
+    return _best_desc(r)
+
+
+def _csv(values, limit: int | None = None) -> str:
+    items = [str(v) for v in (values or []) if v]
+    if limit is not None:
+        items = items[:limit]
+    return ",".join(items)
 
 
 def _clean_field(text: str | None, name: str) -> str:
@@ -275,28 +293,35 @@ def _write_entry(out: Path, scan: dict, merged: dict, by_cat: dict,
     lines.append("")
     lines.append("PROTOCOLO (en orden):")
     lines.append("")
+    lines.append("0. **Si el usuario ya describió un proyecto concreto**, parte de las")
+    lines.append("   `recipes` que coincidan con el producto; no empieces por repos sueltos.")
     lines.append("1. **No leas todo.** Este archivo basta para preseleccionar.")
-    lines.append("2. **Filtra** candidatos por categoría, `role`, `exec`, `setup` y la")
-    lines.append("   descripción `one` de cada línea del índice de abajo.")
-    lines.append("3. **Desempata** con `alt`/alternativas: si ya elegiste un repo,")
-    lines.append("   DESCARTA sus alternativas (cumplen la misma función, no dos).")
+    lines.append("2. **Filtra** candidatos por `cat`, `tags`, `role`, `exec`, `setup`, `prov`")
+    lines.append("   y palabras de `one` (resumen de una línea).")
+    lines.append("3. **Desempata** con `alt`: si ya elegiste un repo, **descarta sus `alt`**")
+    lines.append("   (cumplen la misma función, no necesitas dos).")
     lines.append("4. **Combina** con `recipes` si el proyecto es un flujo end-to-end.")
-    lines.append("5. **Solo para finalistas (<8):** abre el archivo de su categoría en")
-    lines.append("   `REPO_MENU_cats/NN-*.md` para ver desc completa, `choose_if`,")
-    lines.append("   `avoid_if`, `combines_with` y el **comando de instalación** derivado.")
-    lines.append("6. **Instalación:** cada repo trae un comando derivado marcado con")
-    lines.append("   confianza: `+` seguro · `~` verificar nombre · `?` solo clone + README.")
+    lines.append("5. **Considera la herramienta** del usuario (Claude Code, Antigravity,")
+    lines.append("   Codex, Grok, Deepseek) con la tabla de abajo y el campo opcional")
+    lines.append("   `agent_tools`. Solo importa para repos `role=skill/directory`.")
+    lines.append("6. **Solo para finalistas (<8):** abre `REPO_MENU_cats/NN-*.md` para")
+    lines.append("   desc, `choose_if`, `avoid_if`, `combines_with` y el comando de")
+    lines.append("   instalación derivado.")
+    lines.append("7. **Instalación:** comando marcado `+` seguro · `~` verificar nombre ·")
+    lines.append("   `?` solo clone + README.")
     lines.append("")
     lines.append("REGLA CLAVE — herramienta de código ≠ modelo en ejecución:")
     lines.append("- El AGENTE/IDE con que CONSTRUYES (Claude Code, Antigravity, Codex…)")
     lines.append("  solo importa para repos `role=skill/directory` (catálogos de skills).")
-    lines.append("- El LLM que tu APP llama EN EJECUCIÓN se configura por env vars;")
-    lines.append("  la mayoría de repos runtime son AGNÓSTICOS al agente de código.")
+    lines.append("- El LLM que tu APP llama EN EJECUCIÓN es el campo `prov`; se configura")
+    lines.append("  por env vars. La mayoría de repos runtime son AGNÓSTICOS al agente.")
     lines.append("")
     lines.append("LEYENDA de columnas del índice:")
     lines.append("`role`: P=plataforma R=runtime L=librería S=skill D=catálogo A=app")
     lines.append("`exec`: loc=local cld=cloud hyb=híbrido · `setup`: E=easy M=medium H=heavy")
     lines.append("`inst`: +=comando seguro ~=verificar ?=solo clone")
+    lines.append("`tags` / `prov` / `tools` (`agent_tools`): solo si el repo los declara")
+    lines.append("`alt`: repos sustitutos (elige uno)")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -311,7 +336,8 @@ def _write_entry(out: Path, scan: dict, merged: dict, by_cat: dict,
             repos = info.get("best_fit_repos", [])
             note = info.get("note", "")
             cell = ", ".join(f"`{r}`" for r in repos) if repos else (note or "—")
-            lines.append(f"| {tool} | {cell} |")
+            label = _TOOL_LABEL.get(tool, tool)
+            lines.append(f"| {label} | {cell} |")
         lines.append("")
 
     # Recipes
@@ -336,7 +362,7 @@ def _write_entry(out: Path, scan: dict, merged: dict, by_cat: dict,
     # Compact index grouped by category
     lines.append("## ÍNDICE COMPACTO (1 línea por repo)")
     lines.append("")
-    lines.append("Formato: `id` [role|exec|setup|inst] — descripción — alt:…")
+    lines.append("Formato: `id` [role|exec|setup|inst] — one — tags:… — prov:… — tools:… — alt:…")
     lines.append("")
 
     # Uncategorized first if any
@@ -383,10 +409,22 @@ def _compact_line(r: dict) -> str:
     exec_ = _icon(_EXEC_ICON, r.get("exec"))
     setup = _icon(_SETUP_ICON, r.get("setup"))
     conf = _CONF_ICON.get(r.get("_install_conf", "clone"), "?")
-    one = _oneline(_best_desc(r), 110)
+    one = _oneline(_compact_desc(r), 110)
+    extras: list[str] = []
+    tags = _csv(r.get("tags") or [], 8)
+    if tags:
+        extras.append(f"tags: {tags}")
+    prov = _csv(r.get("prov") or [])
+    if prov:
+        extras.append(f"prov: {prov}")
+    tools = _csv(r.get("agent_tools") or [])
+    if tools:
+        extras.append(f"tools: {tools}")
     alt = r.get("alt") or r.get("alternatives") or []
-    alt_s = f" — alt: {','.join(alt)}" if alt else ""
-    return f"- `{rid}` [{role}|{exec_}|{setup}|{conf}] — {one}{alt_s}"
+    if alt:
+        extras.append("alt: " + ",".join(alt))
+    extra_s = (" — " + " — ".join(extras)) if extras else ""
+    return f"- `{rid}` [{role}|{exec_}|{setup}|{conf}] — {one}{extra_s}"
 
 
 # ---------------------------------------------------------------------------
@@ -429,10 +467,18 @@ def _detail_block(r: dict) -> str:
     alt = r.get("alt") or r.get("alternatives") or []
     mcp = r.get("mcp")
     prov = r.get("prov") or []
+    tags = _csv(r.get("tags") or [])
+    tools = _csv(r.get("agent_tools") or [])
+
+    meta = f"role={role} · exec={exec_} · setup={setup} · mcp={mcp} · prov={_csv(prov) or '—'}"
+    if tags:
+        meta += f" · tags={tags}"
+    if tools:
+        meta += f" · tools={tools}"
 
     b: list[str] = []
     b.append(f"## `{rid}`")
-    b.append(f"role={role} · exec={exec_} · setup={setup} · mcp={mcp} · prov={prov or '—'}")
+    b.append(meta)
     b.append("")
     b.append(f"**Qué es:** {desc}")
     b.append(f"**Stack:** {stack}")
@@ -455,14 +501,44 @@ def _detail_block(r: dict) -> str:
 # JSON mirror (optional, for JSON-preferring agents)
 # ---------------------------------------------------------------------------
 
+def _json_repo(r: dict) -> dict:
+    item = {
+        "id": r.get("id") or r.get("name"),
+        "name": r.get("name"),
+        "cat": r.get("cat"),
+        "role": r.get("role"),
+        "exec": r.get("exec"),
+        "setup": r.get("setup"),
+        "mcp": r.get("mcp"),
+        "prov": r.get("prov") or [],
+        "tags": r.get("tags") or [],
+        "one": _oneline(_compact_desc(r), 160),
+        "desc": _oneline(_best_desc(r), 400),
+        "stack": r.get("stack") or "",
+        "repo": r.get("repo") or "",
+        "install": r.get("_install"),
+        "install_conf": r.get("_install_conf"),
+        "install_note": r.get("_install_note"),
+        "choose_if": _clean_field(r.get("choose_if"), r.get("id") or r.get("name") or ""),
+        "avoid_if": _clean_field(r.get("avoid_if"), r.get("id") or r.get("name") or ""),
+        "combines_with": r.get("combines_with") or [],
+        "alt": r.get("alt") or r.get("alternatives") or [],
+    }
+    tools = r.get("agent_tools") or []
+    if tools:
+        item["agent_tools"] = tools
+    return item
+
+
 def _write_json_mirror(out: Path, scan: dict, merged: dict, by_cat: dict,
                        cat_meta: dict, recipes: list, model_guidance: dict) -> None:
     data = {
         "purpose": "Menú portable de repos para que un agente elija sin visitar la web.",
         "how_to_use": [
-            "Filtra por cat/role/exec/setup/one.",
+            "Filtra por cat/tags/role/exec/setup/prov/one.",
             "Desempata con alt (descarta alternativas del repo elegido).",
             "Combina con recipes si es un flujo end-to-end.",
+            "Considera la herramienta del usuario con model_guidance y agent_tools (solo skill/directory).",
             "Solo finalistas: lee el bloque completo aquí o en REPO_MENU_cats/.",
             "Instalación: campo install + install_conf (ok/verify/clone).",
         ],
@@ -473,27 +549,7 @@ def _write_json_mirror(out: Path, scan: dict, merged: dict, by_cat: dict,
         "recipes": recipes,
         "model_guidance": model_guidance,
         "repos": [
-            {
-                "id": r.get("id") or r.get("name"),
-                "name": r.get("name"),
-                "cat": r.get("cat"),
-                "role": r.get("role"),
-                "exec": r.get("exec"),
-                "setup": r.get("setup"),
-                "mcp": r.get("mcp"),
-                "prov": r.get("prov") or [],
-                "one": _oneline(_best_desc(r), 160),
-                "desc": _oneline(_best_desc(r), 400),
-                "stack": r.get("stack") or "",
-                "repo": r.get("repo") or "",
-                "install": r.get("_install"),
-                "install_conf": r.get("_install_conf"),
-                "install_note": r.get("_install_note"),
-                "choose_if": _clean_field(r.get("choose_if"), r.get("id") or r.get("name") or ""),
-                "avoid_if": _clean_field(r.get("avoid_if"), r.get("id") or r.get("name") or ""),
-                "combines_with": r.get("combines_with") or [],
-                "alt": r.get("alt") or r.get("alternatives") or [],
-            }
+            _json_repo(r)
             for r in sorted(merged.values(), key=lambda x: (x.get("cat") or 0, x.get("id") or ""))
         ],
     }

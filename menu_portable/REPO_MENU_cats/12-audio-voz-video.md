@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `faster-whisper`
-role=runtime · exec=cloud · setup=heavy · mcp=False · prov=—
+role=runtime · exec=cloud · setup=heavy · mcp=False · prov=— · tags=docker,fastapi,multimedia,python,typescript,whisper
 
 **Qué es:** faster-whisper is a reimplementation of OpenAI's Whisper model using CTranslate2, which is a fast inference engine for Transformer models.
 **Stack:** python, typescript, docker, fastapi, whisper
@@ -18,7 +18,7 @@ _Servicio gestionado; no se clona._
 **Combina con:** `fluxer`, `whisper`, `whisperx`
 
 ## `ffmpeg`
-role=directory · exec=local · setup=medium · mcp=False · prov=—
+role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=typescript
 
 **Qué es:** FFmpeg is a collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata.
 **Stack:** typescript
@@ -32,7 +32,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `fluxer`, `whisper`, `faster-whisper`
 
 ## `fluxer`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=javascript,javascript-typescript,typescript
 
 **Qué es:** As of this writing (15 June 2026), we are working to finalise the API and self-hosting documentation over the next few days.
 **Stack:** javascript/typescript, typescript, javascript
@@ -46,7 +46,7 @@ _Proyecto Node; usa pnpm si hay pnpm-lock.yaml._
 **Combina con:** `open-generative-ai`
 
 ## `lossless-cut`
-role=app · exec=local · setup=medium · mcp=False · prov=—
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=javascript,javascript-typescript,multimedia,postgres,python,typescript
 
 **Qué es:** The swiss army knife of lossless video/audio editing.
 **Stack:** javascript/typescript, python, typescript, javascript, postgres
@@ -60,7 +60,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `moviepy`, `pipeline de reels`
 
 ## `moviepy`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=docker,postgres,python,typescript
 
 **Qué es:** MoviePy recently upgraded to v2.0, introducing major breaking changes. You can consult the last v1 docs here but beware that v1 is no longer maintained. For more info on how to update your code from v1 to v2, see this guide.
 **Stack:** python, typescript, docker, postgres
@@ -74,7 +74,7 @@ _Nombre PyPI puede diferir de 'moviepy'; verifica en pypi.org._
 **Combina con:** `whisperx`, `tts`, `pipeline de reels`
 
 ## `omnivoice-studio`
-role=app · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=app · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=docker,fastapi,javascript,multimedia,python,react,typescript,whisper
 
 **Qué es:** OmniVoice Studio concentra clonación y síntesis de voz en un studio local. Está en beta; espera roturas entre versiones.
 **Stack:** python, typescript, javascript, react, docker, fastapi, whisper
@@ -88,7 +88,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `whisperx`
 
 ## `remotion`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=javascript,javascript-typescript,multimedia,react,typescript
 
 **Qué es:** Remotion renderiza video desde componentes React. Úsalo para piezas generadas por código (intros, datos, motion graphics), no como NLE clásico.
 **Stack:** javascript/typescript, typescript, javascript, react
@@ -102,7 +102,7 @@ _Nombre npm puede diferir de 'remotion'; verifica en npmjs.com._
 **Combina con:** `open-generative-ai`, `pipeline de reels`
 
 ## `remotion-superpowers`
-role=platform · exec=cloud · setup=heavy · mcp=False · prov=—
+role=platform · exec=cloud · setup=heavy · mcp=False · prov=— · tags=javascript,multimedia,python,react,typescript,whisper
 
 **Qué es:** A free, open-source Claude Code plugin that turns Remotion into a full video production studio — by Dojo Coding.
 **Stack:** python, typescript, javascript, react, whisper
@@ -116,7 +116,7 @@ _Servicio gestionado; no se clona._
 **Combina con:** `fluxer`, `whisper`, `faster-whisper`
 
 ## `supertonic`
-role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=library · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=javascript,multimedia,python,typescript
 
 **Qué es:** Supertonic is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns.
 **Stack:** python, typescript, javascript
@@ -130,7 +130,7 @@ _Nombre PyPI puede diferir de 'supertonic'; verifica en pypi.org._
 **Combina con:** `whisperx`, `moviepy`
 
 ## `vibevoice`
-role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
+role=directory · exec=hybrid · setup=medium · mcp=False · prov=— · tags=multimedia,postgres,python,typescript
 
 **Qué es:** 🎙️ VibeVoice: Open-Source Frontier Voice AI.
 **Stack:** python, typescript, postgres
@@ -144,7 +144,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `fluxer`, `whisper`, `faster-whisper`
 
 ## `video-use`
-role=skill · exec=hybrid · setup=medium · mcp=False · prov=—
+role=skill · exec=hybrid · setup=medium · mcp=False · prov=— · tags=multimedia,python,typescript
 
 **Qué es:** Introducing video-use — edit videos with Claude Code. 100% open source.
 **Stack:** python, typescript
@@ -158,7 +158,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `fluxer`, `whisper`, `faster-whisper`
 
 ## `videofy-minimal`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=docker,fastapi,javascript,multimedia,python,react,typescript
 
 **Qué es:** Videofy Minimal is a local tool for turning news articles into short videos for digital signage screens.
 **Stack:** python, typescript, javascript, react, docker, fastapi
@@ -172,7 +172,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `whisper`, `supertonic`
 
 ## `voxcpm`
-role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=library · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=comfy,docker,fastapi,javascript,postgres,python,typescript
 
 **Qué es:** 👋 Join our community for discussion and support!.
 **Stack:** python, typescript, javascript, docker, postgres, fastapi, comfy
@@ -186,7 +186,7 @@ _Nombre PyPI puede diferir de 'VoxCPM'; verifica en pypi.org._
 **Combina con:** `tts`
 
 ## `wan2gp`
-role=platform · exec=local · setup=heavy · mcp=False · prov=—
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=comfy,docker,multimedia,postgres,python,react,typescript,vision
 
 **Qué es:** WanGP is a one-stop super app for the best open source generative models across video, image, audio, and text-to-speech.
 **Stack:** python, typescript, react, docker, postgres, comfy
@@ -200,7 +200,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `fluxer`, `whisper`, `faster-whisper`
 
 ## `whisper`
-role=library · exec=cloud · setup=heavy · mcp=False · prov=—
+role=library · exec=cloud · setup=heavy · mcp=False · prov=— · tags=multimedia,postgres,python,typescript,whisper
 
 **Qué es:** Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification.
 **Stack:** python, typescript, postgres, whisper
@@ -214,7 +214,7 @@ _Nombre PyPI puede diferir de 'whisper'; verifica en pypi.org._
 **Combina con:** `whisperx`, `pipeline de reels`
 
 ## `whisperx`
-role=library · exec=hybrid · setup=heavy · mcp=False · prov=—
+role=library · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=multimedia,python,typescript,whisper
 
 **Qué es:** If you’re looking for a transcription API for meetings, consider checking out Recall.ai's Meeting Transcription API, an API that works with Zoom, Google Meet, Microsoft Teams, and more. Recall.ai diarizes by pulling the speaker data and separate audio streams from the meeting platforms, which means 100% accurate speaker diarization with actual speaker names.
 **Stack:** python, typescript, whisper

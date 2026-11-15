@@ -33,6 +33,7 @@ Esta biblioteca contiene **212 repositorios curados** compactos (mismo conjunto 
 | `human/categorias/NN-*.md` | Ficha **humana** completa por categoría (13 archivos) | Lectura humana o detalle máximo |
 | `human/README.md` | Mapa de categorías + leyenda + recetas (versión humana) | Navegación humana |
 | `Catalogo.md` | Tabla plana de los repos curados (instalación + API) | Referencia rápida tabular |
+| **`web/index.html`** | Catálogo web educativo (curso, salas, fichas, recetas) | `uv run repo-intelligence web serve` |
 
 ---
 
@@ -127,16 +128,17 @@ Los `human/*`, `Catalogo.md`, `Guia.md` y `ai_index/REPOS.*` se generan automát
    - Crea `data/drafts/<id>.json` (revisables).
    - Con `--auto-merge` los incorpora a los INDICE_IA* (pasan a ser "curados" con datos completos).
 5. Revisa/edita los drafts o las entradas en los JSON si quieres ajustar la curaduría.
-6. Regenera **todo** (catálogos, fichas completas, Guia, etc.):
+6. Regenera **todo** (catálogos, fichas completas, Guia, menú portable, etc.):
    ```powershell
    uv run repo-intelligence guide build
+   uv run repo-intelligence menu export
    ```
 
 Esto hace que agregar un repo sea **mucho más integral y completo**: obtiene stack técnico real, descripciones teóricas de valor, inferencia de metadatos y propagación automática a todas las salidas.
 
 Comando todo-en-uno aproximado:
 ```powershell
-uv run repo-intelligence discover && uv run repo-intelligence analyze --new && uv run repo-intelligence enrich --new --auto-merge && uv run repo-intelligence guide build
+uv run repo-intelligence discover && uv run repo-intelligence analyze --new && uv run repo-intelligence enrich --new --auto-merge && uv run repo-intelligence guide build && uv run repo-intelligence menu export
 ```
 
 Nota: `human/*.md` y similares se sobrescriben en cada `guide build`.

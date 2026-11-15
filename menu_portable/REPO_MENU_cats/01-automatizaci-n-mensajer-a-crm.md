@@ -4,7 +4,7 @@
 > Cada entrada: desc, stack, instalación, choose/avoid, combina/compite.
 
 ## `activepieces`
-role=runtime · exec=hybrid · setup=medium · mcp=False · prov=—
+role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,javascript-typescript,typescript
 
 **Qué es:** Activepieces es un reemplazo open source de Zapier: orquestas automatizaciones con piezas auto-hospedables y un editor visual, sin ceder los datos a un SaaS cerrado.
 **Stack:** javascript/typescript, typescript, javascript, docker
@@ -19,7 +19,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `n8n`
 
 ## `appsmith`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,postgres,typescript
 
 **Qué es:** Organizations build custom applications like dashboards, admin panels, customer 360, IT automation, and service management tools to help their teams work more efficiently and effectively. Appsmith is an open-source low-code platform that streamlines custom application development, deployment, and maintenance. Learn more on our website.
 **Stack:** typescript, javascript, docker, postgres
@@ -33,7 +33,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `twenty-main`, `evolution-api`, `whatsapp-agentkit`
 
 ## `browser-use`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,docker,python,typescript
 
 **Qué es:** 🌤️ Want to skip the setup? Use our cloud for faster, scalable, stealth-enabled browser automation!.
 **Stack:** python, typescript, docker
@@ -47,7 +47,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `playwright`, `gpt-researcher`
 
 ## `budibase`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,javascript-typescript,postgres,typescript
 
 **Qué es:** AI Agents that run your operations Budibase is an open-source operations platform that saves engineers 100s of hours building Agents, Apps and Automations, securely.
 **Stack:** javascript/typescript, typescript, javascript, docker, postgres
@@ -61,7 +61,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `twenty-main`, `evolution-api`, `whatsapp-agentkit`
 
 ## `chatwoot`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,javascript-typescript,typescript
 
 **Qué es:** The modern customer support platform, an open-source alternative to Intercom, Zendesk, Salesforce Service Cloud etc.
 **Stack:** javascript/typescript, typescript, javascript, docker
@@ -75,7 +75,7 @@ _Nombre npm puede diferir de 'chatwoot'; verifica en npmjs.com._
 **Combina con:** `evolution-api`, `novu`
 
 ## `evolution-api`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=—
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,javascript-typescript,postgres,typescript
 
 **Qué es:** Open-source REST API for WhatsApp and multi-channel messaging — part of the Evolution Foundation ecosystem.
 **Stack:** javascript/typescript, typescript, javascript, docker, postgres
@@ -89,7 +89,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `n8n`, `chatwoot`, `bot whatsapp`
 
 ## `huginn`
-role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
+role=directory · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,javascript-typescript,postgres,typescript
 
 **Qué es:** Huginn is a system for building agents that perform automated tasks for you online. They can read the web, watch for events, and take actions on your behalf. Huginn's Agents create and consume events, propagating them along a directed graph. Think of it as a hackable version of IFTTT or Zapier on your own server. You always know who has your data. You do.
 **Stack:** javascript/typescript, typescript, javascript, docker, postgres
@@ -103,7 +103,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `n8n`, `novu`
 
 ## `listmonk`
-role=directory · exec=hybrid · setup=medium · mcp=False · prov=—
+role=directory · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,docker,postgres,typescript
 
 **Qué es:** listmonk is a standalone, self-hosted, newsletter and mailing list manager. It is fast, feature-rich, and packed into a single binary. It uses a PostgreSQL database as its data store.
 **Stack:** typescript, docker, postgres
@@ -117,7 +117,7 @@ _Material de referencia/playbook; no es una dependencia runtime._
 **Combina con:** `mautic`, `n8n`
 
 ## `mautic`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,javascript,javascript-typescript,postgres,python,typescript
 
 **Qué es:** Open Source Marketing Automation Software.
 **Stack:** javascript/typescript, python, typescript, javascript, postgres
@@ -131,7 +131,7 @@ _Proyecto Python; usa uv si hay pyproject.toml/uv.lock._
 **Combina con:** `listmonk`, `marketingskills`, `marketing de agencia`
 
 ## `n8n`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,javascript-typescript,langchain,python,typescript
 
 **Qué es:** n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.
 **Stack:** javascript/typescript, python, typescript, javascript, docker, langchain
@@ -146,7 +146,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Alternativas (elige una):** `activepieces`, `huginn`
 
 ## `n8n-io`
-role=platform · exec=local · setup=medium · mcp=False · prov=—
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,javascript-typescript,langchain,python,typescript
 
 **Qué es:** n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.
 **Stack:** javascript/typescript, python, typescript, javascript, docker, langchain
@@ -160,7 +160,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `n8n`
 
 ## `n8n-mcp`
-role=platform · exec=local · setup=medium · mcp=True · prov=—
+role=platform · exec=local · setup=medium · mcp=True · prov=— · tags=automation,docker,javascript,javascript-typescript,langchain,mcp,python,typescript
 
 **Qué es:** A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations. Deploy in minutes to give Claude and other AI assistants deep knowledge about n8n's 1,845 workflow automation nodes (816 core + 1,029 community).
 **Stack:** javascript/typescript, python, typescript, javascript, docker, langchain
@@ -174,7 +174,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `n8n`, `n8n-skills`, `bot whatsapp`
 
 ## `novu`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=—
+role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,javascript,javascript-typescript,react,typescript
 
 **Qué es:** The open-source communication infrastructure for agents and products.
 **Stack:** javascript/typescript, typescript, javascript, react
@@ -188,7 +188,7 @@ _Nombre npm puede diferir de 'novu'; verifica en npmjs.com._
 **Combina con:** `chatwoot`, `activepieces`
 
 ## `openevolve`
-role=library · exec=local · setup=medium · mcp=False · prov=—
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=automation,docker,python,typescript
 
 **Qué es:** 🧬 The most advanced open-source evolutionary coding agent.
 **Stack:** python, typescript, docker
@@ -202,7 +202,7 @@ _Nombre PyPI puede diferir de 'openevolve'; verifica en pypi.org._
 **Combina con:** `llm-council`
 
 ## `openwa`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=—
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=docker,javascript,javascript-typescript,postgres,python,react,typescript
 
 **Qué es:** OpenWA is a free, open-source WhatsApp API Gateway designed for developers who need full control over their messaging infrastructure—without vendor lock-in or hidden paywalls.
 **Stack:** javascript/typescript, python, typescript, javascript, react, docker, postgres
@@ -216,7 +216,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `n8n`, `evolution-api`
 
 ## `twenty-main`
-role=runtime · exec=local · setup=medium · mcp=False · prov=—
+role=runtime · exec=local · setup=medium · mcp=False · prov=— · tags=automation,docker,javascript,javascript-typescript,postgres,react,typescript
 
 **Qué es:** Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves. Twenty is the CRM you build, ship, and version like the rest of your stack.
 **Stack:** javascript/typescript, typescript, javascript, react, docker, postgres
@@ -230,7 +230,7 @@ _Requiere Docker; el compose puede variar — revisa docker-compose.yml._
 **Combina con:** `evolution-api`, `n8n`
 
 ## `whatsapp-agentkit`
-role=directory · exec=cloud · setup=medium · mcp=False · prov=—
+role=directory · exec=cloud · setup=medium · mcp=False · prov=— · tags=agents,automation,docker,fastapi,javascript,postgres,python,typescript
 
 **Qué es:** Construye tu propio agente de WhatsApp con inteligencia artificial en menos de 30 minutos. No necesitas saber programar. Claude Code construye todo por ti.
 **Stack:** python, typescript, javascript, docker, postgres, fastapi
