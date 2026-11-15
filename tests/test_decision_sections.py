@@ -77,7 +77,8 @@ def test_generated_assets_are_versioned_together_and_helpers_load_before_app():
         out=Path(temp)
         build_site(ROOT,out)
         html=(out/'index.html').read_text(encoding='utf8')
-        versions=re.findall(r'(?:src|href)="(?:app.js|search.js|decisions.js|styles.css)\?v=([a-f0-9]+)"',html)
-        assert len(versions)==4 and len(set(versions))==1
+        versions=re.findall(r'(?:src|href)="(?:app.js|search.js|decisions.js|guided.js|styles.css)\?v=([a-f0-9]+)"',html)
+        assert len(versions)==5 and len(set(versions))==1
         assert html.index('src="decisions.js')<html.index('src="app.js')
+        assert html.index('src="guided.js')<html.index('src="app.js')
         assert (out/'decisions.js').exists()

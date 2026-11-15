@@ -604,3 +604,44 @@ input[type="checkbox"]:focus-visible, .comparison-table-wrap:focus-visible, summ
   .decision-form > div, .decision-form .btn { flex-basis: 100%; }
   .compare-selection li { flex-basis: 100%; }
 }
+
+/* One-page guided profile: the DOM, reading and keyboard order remain identical. */
+.guided-profile-form { margin-block: 2rem; }
+.guided-profile-form fieldset { min-width: 0; border: 0; border-top: 1px solid var(--rule); padding: 1.25rem 0 1.6rem; margin: 0; }
+.guided-profile-form legend { padding: 0 .8rem 0 0; font-family: var(--serif); font-size: 1.65rem; line-height: 1.2; }
+.guided-profile-form label:not(.guided-radio-options label):not(.guided-client-options label) { display: block; font-weight: 600; margin-bottom: .4rem; }
+.guided-project-fields { display: grid; grid-template-columns: minmax(0,1.4fr) minmax(0,1fr); gap: 1.5rem; }
+.guided-equipment { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
+.guided-profile-form select, .guided-profile-form textarea { width: 100%; min-height: 48px; font: inherit; font-size: max(1rem,1em); background: var(--paper-2); border: 1px solid #88796a; border-radius: 8px; padding: .65rem .75rem; }
+.guided-profile-form textarea { resize: vertical; min-height: 7rem; }
+.guided-profile-form textarea:focus-visible { outline: 2px solid var(--terra-deep); outline-offset: 3px; }
+.guided-profile-form textarea:user-invalid { border-color: var(--terra-deep); }
+.guided-profile-form .meta { margin-block: .5rem 0; max-width: 75ch; }
+.guided-radio-options, .guided-client-options { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; }
+.guided-radio-options label, .guided-client-options label { display: flex; align-items: center; gap: .5rem; min-height: 48px; cursor: pointer; }
+.guided-radio-options input, .guided-client-options input { accent-color: var(--green); flex: 0 0 auto; }
+.guided-mode { max-width: 40rem; margin-top: 1rem; }
+.field-help { margin-top: 0; color: var(--ink-soft); max-width: 70ch; }
+.guided-validation { color: var(--terra-deep); }
+.guided-profile-form .btn { min-height: 48px; }
+.guided-project { white-space: pre-wrap; overflow-wrap: anywhere; max-width: 75ch; }
+.guided-summary { border-block: 1px solid var(--rule); padding-block: .75rem; margin-block: 1.5rem; }
+.guided-summary > div { display: grid; grid-template-columns: 8rem minmax(0,1fr); gap: 1rem; padding-block: .4rem; }
+.guided-summary dt { font-weight: 600; }
+.guided-summary dd { margin: 0; }
+.guided-recommendations { padding-left: 1.4rem; }
+.guided-recommendations > li { padding: 1.5rem 0; border-top: 1px solid var(--rule); }
+.guided-recommendations > li::marker { font-weight: 700; }
+.guided-recommendations h3 { font-size: 1.8rem; overflow-wrap: anywhere; }
+.guided-recommendations h4 { font-family: var(--sans); font-weight: 600; letter-spacing: 0; font-size: 1.05rem; margin-block: 1.5rem .6rem; }
+.guided-recommendations p, .guided-recommendations li { max-width: 78ch; }
+.guided-start-steps { padding-left: 1.4rem; }
+.guided-start-steps li { margin-block: .75rem; }
+.guided-caution { color: var(--ink-soft); }
+.guided-recommendations textarea { width: 100%; min-height: 12rem; padding: .7rem; font: inherit; resize: vertical; background: var(--paper-2); color: var(--ink); border: 1px solid #88796a; border-radius: 8px; margin-block: .5rem; }
+#guided-result-title { scroll-margin-top: 1rem; }
+@media (max-width: 760px) {
+  .guided-project-fields, .guided-equipment { grid-template-columns: 1fr; }
+  .guided-summary > div { grid-template-columns: 1fr; gap: .2rem; }
+  .guided-profile-form .decision-actions .btn { width: 100%; justify-content: center; }
+}

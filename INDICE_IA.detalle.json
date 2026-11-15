@@ -33051,7 +33051,10 @@
     "command_status": "readme",
     "source": "https://github.com/excalidraw/excalidraw/blob/master/README.md",
     "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
+    "checked_at": "2026-11-15",
+    "browser_url": "https://excalidraw.com/",
+    "browser_source": "https://github.com/excalidraw/excalidraw/blob/master/README.md",
+    "browser_checked_at": "2026-11-15"
    },
    "first_step": "Dibuja tres pasos de un proceso y exporta el diagrama como imagen",
    "first_try": {
@@ -33283,7 +33286,10 @@
     "command_status": "readme",
     "source": "https://help.penpot.app/technical-guide/getting-started/",
     "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
+    "checked_at": "2026-11-15",
+    "browser_url": "https://design.penpot.app/",
+    "browser_source": "https://github.com/penpot/penpot/blob/develop/README.md",
+    "browser_checked_at": "2026-11-15"
    },
    "first_step": "Dibuja una tarjeta con texto y botón y comparte un prototipo de prueba",
    "first_try": {
@@ -33398,7 +33404,15 @@
     "command_status": "documented",
     "source": "https://github.com/tldraw/tldraw/blob/main/README.md",
     "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
+    "checked_at": "2026-11-15",
+    "browser_url": "https://www.tldraw.com/",
+    "browser_source": "https://github.com/tldraw/tldraw/blob/main/README.md",
+    "browser_checked_at": "2026-11-15",
+    "browser_first_try": {
+     "action": "Dibuja tres cajas con texto y únelas con flechas en la pizarra web",
+     "success": "Puedes mover las cajas y editar el texto sin crear un proyecto de código",
+     "execution": "proposed_not_executed"
+    }
    },
    "first_step": "Muestra un lienzo y añade una forma personalizada en un proyecto de prueba",
    "first_try": {
@@ -37560,7 +37574,18 @@
     "command_status": "readme",
     "source": "https://github.com/lllyasviel/Fooocus/blob/main/readme.md",
     "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-    "checked_at": "2026-11-15"
+    "checked_at": "2026-11-15",
+    "local_requirements": {
+     "cpu_only_min_ram_gb": 32,
+     "cpu_only_os": [
+      "windows",
+      "linux",
+      "mac_intel"
+     ],
+     "note": "La tabla del autor indica 32 GB de RAM para CPU sin GPU y un rendimiento mucho menor que con GPU. Apple Silicon usa una ruta MPS distinta.",
+     "source": "https://github.com/lllyasviel/Fooocus/blob/main/readme.md#minimal-requirement",
+     "checked_at": "2026-11-15"
+    }
    },
    "first_step": "Usa un preset y un prompt sencillo y guarda imagen y ajustes",
    "first_try": {
