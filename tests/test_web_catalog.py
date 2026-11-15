@@ -143,6 +143,22 @@ def test_site_inlines_catalog_and_escapes_script(tmp_path: Path) -> None:
     assert (out / "styles.css").exists()
 
 
+def test_site_ships_binarias_labs_brand(tmp_path: Path) -> None:
+    _write_indices(tmp_path)
+    out = tmp_path / "web"
+    build_site(tmp_path, out)
+
+    html = (out / "index.html").read_text(encoding="utf-8")
+    app = (out / "app.js").read_text(encoding="utf-8")
+    assert 'href="marca/favicon.png"' in html
+    assert 'href="marca/apple-touch-icon.png"' in html
+    for name in ("binarias-labs.png", "binarias-labs-dark.png", "bl-mark-dark.png", "favicon.png", "apple-touch-icon.png"):
+        path = out / "marca" / name
+        assert path.read_bytes().startswith(b"\x89PNG"), name
+        assert f"marca/{name}" in html + app or name in ("favicon.png", "apple-touch-icon.png")
+    assert 'alt="Binarias Labs"' in app
+
+
 def test_server_serves_the_site(tmp_path: Path) -> None:
     _write_indices(tmp_path)
     out = tmp_path / "web"

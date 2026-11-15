@@ -1,8 +1,12 @@
+<p align="center"><a href="https://cristrva1.github.io/BL_Alexandria/"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/marca/binarias-labs-dark.png"><img src="docs/marca/binarias-labs.png" alt="Binarias Labs" width="246" height="62"></picture></a></p>
+
 # Biblioteca de Alexandría
 
 Encuentra qué usar entre cientos de repositorios de IA y automatización. Entiende qué hace cada uno, cómo empezar y si usa una suscripción, una API o un modelo local.
 
 **[Abrir Alexandría en línea](https://cristrva1.github.io/BL_Alexandria/)** — consulta la biblioteca sin descargar ni instalar nada.
+
+Un proyecto de **Binarias Labs**: tecnología que integra posibilidades.
 
 Las **679 fichas tienen revisión documental individual**: categoría, ejemplos prácticos, primeros pasos, costes y compatibilidad con Claude Code, Codex, Antigravity y modelos locales. Consulta el [registro de revisión](reports/review-679-2026-11-14.json) y el [método editorial](curation/review-679-2026-11-14/README.md). Los ejemplos son propuestas; las instalaciones no se ejecutaron.
 

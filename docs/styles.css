@@ -144,16 +144,8 @@ p { text-wrap: pretty; }
 }
 .brand { display: grid; grid-template-columns: auto 1fr; gap: 0.75rem; align-items: center; color: inherit; text-decoration: none; margin: 0 0.3rem 1.1rem; }
 .brand:hover { color: #fff; }
-.seal {
-  width: 44px; height: 44px; border-radius: 50%;
-  display: grid; place-items: center;
-  background: radial-gradient(circle at 30% 25%, #e88a66, #b23d22 70%);
-  color: #fff6ee; font-family: var(--serif); font-size: 1.4rem;
-  box-shadow: 0 0 0 3px rgba(236, 122, 85, 0.18), inset 0 -3px 8px rgba(0, 0, 0, 0.25);
-  transform: rotate(-8deg);
-  transition: transform 0.4s var(--ease);
-}
-.brand:hover .seal { transform: rotate(4deg) scale(1.04); }
+.brand-mark { display: block; width: auto; height: 44px; transition: transform 0.4s var(--ease); }
+.brand:hover .brand-mark { transform: translateX(2px) scale(1.04); }
 .brand small { display: block; letter-spacing: 0.18em; text-transform: uppercase; font-size: 0.62rem; color: var(--nav-muted); }
 .brand strong { font-family: var(--serif); font-size: 1.38rem; font-weight: 500; }
 .nav-toggle { display: none; }
@@ -178,6 +170,9 @@ p { text-wrap: pretty; }
 .site-foot h2 { font-size: 1.05rem; font-family: var(--sans); font-weight: 600; margin-bottom: 0.4rem; }
 .site-foot ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.3rem; }
 .site-foot p { margin: 0.3rem 0; max-width: 46ch; }
+.foot-brand { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.4rem; padding-top: 1.4rem; border-top: 1px solid var(--rule); }
+.foot-brand img { display: block; width: auto; height: 50px; }
+.foot-brand p { margin: 0; color: var(--ink-soft); }
 
 /* ---------- Buttons, chips, badges ---------- */
 .btn, button.btn {
@@ -771,7 +766,7 @@ input[type="checkbox"], input[type="radio"] { accent-color: var(--green); width:
   .shell { display: block; }
   .nav { width: 100%; height: auto; position: sticky; top: 0; z-index: 10; padding: 0.6rem 1rem; overflow: visible; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 0; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18); }
   .brand { margin: 0; width: fit-content; }
-  .seal { width: 38px; height: 38px; font-size: 1.2rem; }
+  .brand-mark { height: 36px; }
   .nav-toggle { display: inline-flex; align-items: center; gap: 0.45rem; background: rgba(241, 233, 220, 0.08); color: var(--nav-ink); border: 1px solid rgba(241, 233, 220, 0.18); border-radius: 999px; padding: 0.5rem 0.95rem; min-height: 44px; cursor: pointer; font-weight: 600; }
   .nav-toggle .bars { display: inline-grid; gap: 3px; }
   .nav-toggle .bars i { display: block; width: 16px; height: 2px; background: currentColor; border-radius: 2px; }
