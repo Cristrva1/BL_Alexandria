@@ -1,0 +1,608 @@
+{
+  "checked_at": "2026-11-14",
+  "counts": {
+    "repos": 679,
+    "categories": 32,
+    "areas": 16,
+    "work_areas": 13,
+    "tool_collections": 3,
+    "topics": 92,
+    "recipes": 14,
+    "mcp": 67,
+    "labs": 270
+  },
+  "new_projects": 0,
+  "unique_public_projects": 679,
+  "covered_projects": 679,
+  "uncovered_projects": [],
+  "areas": [
+    {
+      "id": "frontend",
+      "title": "Frontend y creación de páginas web",
+      "kind": "work",
+      "unique_repositories": 59,
+      "topics": [
+        {
+          "id": "web-editores",
+          "title": "Crear páginas con editores visuales",
+          "count": 6
+        },
+        {
+          "id": "web-componentes",
+          "title": "Componentes, iconos y estilos",
+          "count": 14
+        },
+        {
+          "id": "web-ia",
+          "title": "Interfaces y páginas con IA",
+          "count": 8
+        },
+        {
+          "id": "web-skills",
+          "title": "Skills de diseño y UX",
+          "count": 10
+        },
+        {
+          "id": "web-movimiento",
+          "title": "Animación e interacción web",
+          "count": 14
+        },
+        {
+          "id": "web-pruebas",
+          "title": "Probar y publicar una web",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": "ciberseguridad",
+      "title": "Ciberseguridad",
+      "kind": "work",
+      "unique_repositories": 29,
+      "topics": [
+        {
+          "id": "seguridad-auditoria",
+          "title": "Auditoría y análisis con IA",
+          "count": 8
+        },
+        {
+          "id": "seguridad-inversa",
+          "title": "Ingeniería inversa y binarios",
+          "count": 9
+        },
+        {
+          "id": "seguridad-depuracion",
+          "title": "Depuración e inspección",
+          "count": 4
+        },
+        {
+          "id": "seguridad-pruebas",
+          "title": "Tráfico, pruebas y protección",
+          "count": 3
+        },
+        {
+          "id": "seguridad-privacidad",
+          "title": "Credenciales y privacidad",
+          "count": 3
+        },
+        {
+          "id": "seguridad-recursos",
+          "title": "Aprender ciberseguridad",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "audiovisual",
+      "title": "Producción audiovisual",
+      "kind": "work",
+      "unique_repositories": 102,
+      "topics": [
+        {
+          "id": "av-video-edicion",
+          "title": "Video: edición, grabación y subtítulos",
+          "count": 15
+        },
+        {
+          "id": "av-video-ia",
+          "title": "Video: generación con IA",
+          "count": 8
+        },
+        {
+          "id": "av-video-codigo",
+          "title": "Video: código y motion graphics",
+          "count": 20
+        },
+        {
+          "id": "av-voz",
+          "title": "Voz: narración, síntesis y clonación",
+          "count": 15
+        },
+        {
+          "id": "av-transcripcion",
+          "title": "Transcripción: audio a texto",
+          "count": 5
+        },
+        {
+          "id": "av-audio",
+          "title": "Audio: limpieza, música y sonido",
+          "count": 6
+        },
+        {
+          "id": "av-conversacion",
+          "title": "Voz: agentes en tiempo real",
+          "count": 3
+        },
+        {
+          "id": "av-imagen",
+          "title": "Imagen: generación y edición",
+          "count": 18
+        },
+        {
+          "id": "av-personajes",
+          "title": "Avatares, rostros y personajes",
+          "count": 7
+        },
+        {
+          "id": "av-3d",
+          "title": "Modelado y animación 3D",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": "trading",
+      "title": "Trading, inversión y finanzas",
+      "kind": "work",
+      "unique_repositories": 30,
+      "topics": [
+        {
+          "id": "trading-investigacion",
+          "title": "Investigar mercados con IA",
+          "count": 8
+        },
+        {
+          "id": "trading-backtesting",
+          "title": "Estrategias y backtesting",
+          "count": 8
+        },
+        {
+          "id": "trading-bots",
+          "title": "Bots, exchanges y conexiones",
+          "count": 9
+        },
+        {
+          "id": "trading-aprender",
+          "title": "Aprendizaje y simulaciones",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "automatizacion",
+      "title": "Automatización, negocios y marketing",
+      "kind": "work",
+      "unique_repositories": 48,
+      "topics": [
+        {
+          "id": "negocio-flujos",
+          "title": "Automatización y flujos",
+          "count": 8
+        },
+        {
+          "id": "negocio-n8n",
+          "title": "n8n: plantillas, skills y conectores",
+          "count": 5
+        },
+        {
+          "id": "negocio-whatsapp",
+          "title": "WhatsApp y chatbots",
+          "count": 11
+        },
+        {
+          "id": "negocio-crm",
+          "title": "CRM, ventas y soporte",
+          "count": 5
+        },
+        {
+          "id": "negocio-campanas",
+          "title": "Email, campañas y redes sociales",
+          "count": 7
+        },
+        {
+          "id": "negocio-marketing",
+          "title": "Skills de marketing, SEO y contenido",
+          "count": 9
+        },
+        {
+          "id": "negocio-apps",
+          "title": "Aplicaciones internas sin código",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "agentes",
+      "title": "Agentes de IA, investigación y navegación",
+      "kind": "work",
+      "unique_repositories": 111,
+      "topics": [
+        {
+          "id": "agentes-frameworks",
+          "title": "Frameworks y equipos de agentes",
+          "count": 29
+        },
+        {
+          "id": "agentes-visuales",
+          "title": "Constructores visuales de agentes",
+          "count": 5
+        },
+        {
+          "id": "agentes-asistentes",
+          "title": "Asistentes personales y autónomos",
+          "count": 12
+        },
+        {
+          "id": "agentes-investigar",
+          "title": "Investigación con fuentes",
+          "count": 12
+        },
+        {
+          "id": "agentes-extraccion",
+          "title": "Scraping y extracción web",
+          "count": 17
+        },
+        {
+          "id": "agentes-navegacion",
+          "title": "Navegadores y automatización web",
+          "count": 12
+        },
+        {
+          "id": "agentes-mcp",
+          "title": "MCP: conectar herramientas",
+          "count": 24
+        }
+      ]
+    },
+    {
+      "id": "ia-local",
+      "title": "IA local, modelos y entrenamiento",
+      "kind": "work",
+      "unique_repositories": 50,
+      "topics": [
+        {
+          "id": "local-chats",
+          "title": "Chats y asistentes privados",
+          "count": 18
+        },
+        {
+          "id": "local-motores",
+          "title": "Motores para modelos locales",
+          "count": 10
+        },
+        {
+          "id": "local-modelos",
+          "title": "Modelos abiertos y pesos",
+          "count": 6
+        },
+        {
+          "id": "local-entrenamiento",
+          "title": "Entrenamiento y ajuste fino",
+          "count": 9
+        },
+        {
+          "id": "local-servidores",
+          "title": "Inferencia, servidores y gateways",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": "documentos",
+      "title": "Documentos, presentaciones y conocimiento",
+      "kind": "work",
+      "unique_repositories": 52,
+      "topics": [
+        {
+          "id": "docs-conversion",
+          "title": "PDF y conversión de documentos",
+          "count": 14
+        },
+        {
+          "id": "docs-ocr",
+          "title": "OCR y documentos escaneados",
+          "count": 6
+        },
+        {
+          "id": "docs-slides",
+          "title": "Presentaciones y diapositivas",
+          "count": 5
+        },
+        {
+          "id": "docs-diagramas",
+          "title": "Diagramas y documentación visual",
+          "count": 4
+        },
+        {
+          "id": "docs-rag",
+          "title": "Preguntar a documentos y buscar conocimiento",
+          "count": 12
+        },
+        {
+          "id": "docs-memoria",
+          "title": "Memoria y contexto para agentes",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "id": "datos",
+      "title": "Datos, dashboards y analítica",
+      "kind": "work",
+      "unique_repositories": 29,
+      "topics": [
+        {
+          "id": "datos-procesar",
+          "title": "Consulta y procesamiento de datos",
+          "count": 8
+        },
+        {
+          "id": "datos-apps",
+          "title": "Notebooks y aplicaciones de datos",
+          "count": 4
+        },
+        {
+          "id": "datos-bi",
+          "title": "Dashboards y BI",
+          "count": 6
+        },
+        {
+          "id": "datos-graficos",
+          "title": "Gráficos y visualización",
+          "count": 5
+        },
+        {
+          "id": "datos-producto",
+          "title": "Analítica web y de producto",
+          "count": 4
+        },
+        {
+          "id": "datos-recursos",
+          "title": "Aprender análisis de datos",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "productividad",
+      "title": "Productividad, notas y servicios personales",
+      "kind": "work",
+      "unique_repositories": 30,
+      "topics": [
+        {
+          "id": "personal-notas",
+          "title": "Notas, Obsidian y segundo cerebro",
+          "count": 14
+        },
+        {
+          "id": "personal-archivos",
+          "title": "Archivos, lectura y bibliotecas",
+          "count": 2
+        },
+        {
+          "id": "personal-privacidad",
+          "title": "Contraseñas y privacidad",
+          "count": 3
+        },
+        {
+          "id": "personal-hogar",
+          "title": "Hogar, dispositivos y utilidades",
+          "count": 6
+        },
+        {
+          "id": "personal-aprender",
+          "title": "Aprendizaje asistido",
+          "count": 1
+        },
+        {
+          "id": "personal-escritura",
+          "title": "Escritura y calidad de texto",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": "desarrollo",
+      "title": "Programación, backend y despliegue",
+      "kind": "work",
+      "unique_repositories": 74,
+      "topics": [
+        {
+          "id": "dev-codigo",
+          "title": "Agentes y editores para programar",
+          "count": 22
+        },
+        {
+          "id": "dev-comprender",
+          "title": "Comprender y revisar código",
+          "count": 15
+        },
+        {
+          "id": "dev-infra",
+          "title": "Backend, alojamiento y despliegue",
+          "count": 18
+        },
+        {
+          "id": "dev-evaluar",
+          "title": "Evaluación, trazas y observabilidad",
+          "count": 10
+        },
+        {
+          "id": "dev-contexto",
+          "title": "Contexto, consumo y enrutamiento",
+          "count": 9
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "title": "Visión artificial, mapas y percepción",
+      "kind": "work",
+      "unique_repositories": 26,
+      "topics": [
+        {
+          "id": "vision-detectar",
+          "title": "Detección, segmentación y seguimiento",
+          "count": 15
+        },
+        {
+          "id": "vision-rostros",
+          "title": "Rostros y análisis visual",
+          "count": 5
+        },
+        {
+          "id": "vision-espacial",
+          "title": "Sensores y percepción espacial",
+          "count": 1
+        },
+        {
+          "id": "vision-mapas",
+          "title": "Mapas, OSINT y fotogrametría",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": "aprender",
+      "title": "Aprender IA, prompts y skills",
+      "kind": "work",
+      "unique_repositories": 99,
+      "topics": [
+        {
+          "id": "aprender-cursos",
+          "title": "Cursos, guías y ejemplos",
+          "count": 14
+        },
+        {
+          "id": "aprender-prompts",
+          "title": "Prompts y contexto",
+          "count": 8
+        },
+        {
+          "id": "aprender-modelos",
+          "title": "Aprender cómo funcionan los modelos",
+          "count": 10
+        },
+        {
+          "id": "aprender-metodos",
+          "title": "Métodos, plugins y catálogos de skills",
+          "count": 31
+        },
+        {
+          "id": "aprender-especialidades",
+          "title": "Skills por oficio y especialidad",
+          "count": 36
+        }
+      ]
+    },
+    {
+      "id": "configurar-claude-code",
+      "title": "Configuración de Claude Code",
+      "kind": "tool",
+      "unique_repositories": 28,
+      "topics": [
+        {
+          "id": "claude-inicio",
+          "title": "Instalación y primeros pasos",
+          "count": 1
+        },
+        {
+          "id": "claude-skills",
+          "title": "Skills, plugins y métodos",
+          "count": 6
+        },
+        {
+          "id": "claude-mcp",
+          "title": "MCP y navegador",
+          "count": 5
+        },
+        {
+          "id": "claude-memoria",
+          "title": "Memoria y uso del contexto",
+          "count": 6
+        },
+        {
+          "id": "claude-hooks",
+          "title": "Hooks y automatización de sesiones",
+          "count": 1
+        },
+        {
+          "id": "claude-consumo",
+          "title": "Consumo y proveedores",
+          "count": 2
+        },
+        {
+          "id": "claude-especialidades",
+          "title": "Diseño, marketing y producción",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": "configurar-codex",
+      "title": "Configuración de Codex",
+      "kind": "tool",
+      "unique_repositories": 23,
+      "topics": [
+        {
+          "id": "codex-inicio",
+          "title": "Instalación y primeros pasos",
+          "count": 1
+        },
+        {
+          "id": "codex-skills",
+          "title": "Skills y método de trabajo",
+          "count": 6
+        },
+        {
+          "id": "codex-mcp",
+          "title": "MCP y herramientas de navegador",
+          "count": 5
+        },
+        {
+          "id": "codex-contexto",
+          "title": "Memoria, contexto y sesiones",
+          "count": 5
+        },
+        {
+          "id": "codex-especialidades",
+          "title": "Diseño, documentos y seguridad",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "id": "configurar-antigravity",
+      "title": "Configuración de Antigravity",
+      "kind": "tool",
+      "unique_repositories": 3,
+      "topics": [
+        {
+          "id": "antigravity-skills",
+          "title": "Instalar y seleccionar skills",
+          "count": 1
+        },
+        {
+          "id": "antigravity-diseno",
+          "title": "Diseño y creación de interfaces",
+          "count": 1
+        },
+        {
+          "id": "antigravity-prompts",
+          "title": "Prompts y organización del trabajo",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

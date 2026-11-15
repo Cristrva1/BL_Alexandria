@@ -2,7 +2,19 @@
 
 # Encuentra lo que necesitas
 
-No necesitas conocer el nombre del repo. Empieza por el resultado que buscas y compara unas pocas opciones.
+No necesitas conocer el nombre del repo. Elige un área de trabajo o una tarea y compara unas pocas opciones.
+
+## Elige un área y una subcategoría
+
+En Categorías encontrarás Frontend, Ciberseguridad, Producción audiovisual, Trading y otros campos. Entra en uno y elige una tarea concreta: por ejemplo Producción audiovisual → Voz: narración, síntesis y clonación. Verás sus repositorios y podrás filtrar por acceso y preparación.
+
+## Prepara el asistente que ya utilizas
+
+Las colecciones Configuración de Claude Code, Configuración de Codex y Configuración de Antigravity reúnen primeros pasos, skills y recursos compatibles. Empieza por el cliente oficial y añade una mejora cada vez. Consultar estas colecciones no significa que tu suscripción incluya las APIs de todas las aplicaciones que construyas.
+
+## Un proyecto puede servir para varios temas
+
+Un mismo repo puede ayudarte en desarrollo web y en la configuración de tu agente. Conserva una sola ficha, identidad y perfil de acceso. Por eso las cifras de las áreas pueden solaparse: no se suman para contar proyectos distintos.
 
 ## Describe el resultado
 

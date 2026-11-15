@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
+from repo_intelligence.core.taxonomy import attach_areas, build_areas
 from repo_intelligence.core.access import access_facts, access_routes, API_LABELS, CLIENT_LABELS, LOCAL_LABELS, COST_LABELS, HARDWARE_LABELS, ROUTE_LABELS
 from repo_intelligence.core.reading import GUIDES
 from repo_intelligence.core.access import AUDIENCE_LABELS
@@ -237,6 +238,9 @@ def build_catalog(project_root: Path) -> dict:
         repos.append(repo)
     repos.sort(key=lambda repo: (repo["cat"], (repo["name"] or "").lower(), repo["id"]))
 
+    areas = build_areas(compact, repos)
+    attach_areas(repos, areas)
+
     by_cat: dict[int, list[dict]] = {}
     for repo in repos:
         by_cat.setdefault(int(repo["cat"]), []).append(repo)
@@ -370,13 +374,17 @@ def build_catalog(project_root: Path) -> dict:
         "counts": {
             "repos": len(repos),
             "categories": len([cat for cat in categories if cat["num"] >= 1]),
+            "areas": len(areas),
+            "work_areas": sum(area.get("kind") == "work" for area in areas),
+            "tool_collections": sum(area.get("kind") == "tool" for area in areas),
+            "topics": sum(len(area["topics"]) for area in areas),
             "recipes": len(recipes),
             "mcp": sum(1 for repo in repos if repo["mcp"]),
             "labs": len(labs),
         },
         "labels": {**LABELS, "api": API_LABELS, "client": CLIENT_LABELS, "local_model": LOCAL_LABELS, "cost": COST_LABELS, "hardware": HARDWARE_LABELS, "route": ROUTE_LABELS, "audience": AUDIENCE_LABELS},
         "reading": GUIDES,
-        "discovery": compact.get("discovery") or {"goals": []},
+        "discovery": {**(compact.get("discovery") or {"goals": []}), "areas": areas},
         "access_checked": (compact.get("meta") or {}).get("access_checked") or "",
         "copy": COPY,
         "glossary": GLOSSARY,

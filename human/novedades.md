@@ -137,6 +137,7 @@ La fecha es la primera aparición del repo en el historial de esta biblioteca. N
 | 2026-11-14 | [langchain4j](fichas/langchain4j.md) | Biblioteca de Java para integrar LLM, herramientas, agentes, RAG y almacenes vectoriales en aplicaciones de la JVM. | Depende de la ruta elegida |
 | 2026-11-14 | [kornia](fichas/kornia.md) | Biblioteca de visión por computador para incorporar geometría, transformaciones y procesamiento de imágenes en PyTorch. | Sin API de IA en la ruta básica |
 | 2026-11-14 | [konva](fichas/konva.md) | Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivos. | Sin API de IA en la ruta básica |
+| 2026-11-14 | [Kimi K2.7 Code](fichas/kimi-k2-7-code.md) | Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face. | API de IA opcional |
 | 2026-11-14 | [kepano-obsidian](fichas/kepano-obsidian.md) | Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas e información personal. | Sin API de IA en la ruta básica |
 | 2026-11-14 | [karakeep](fichas/karakeep.md) | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación mediante IA. | API de IA opcional |
 | 2026-11-14 | [k6](fichas/k6.md) | Herramienta de pruebas de carga para medir cómo responden aplicaciones y servicios bajo distintos niveles de tráfico. | Sin API de IA en la ruta básica |

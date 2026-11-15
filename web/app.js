@@ -3,6 +3,9 @@
   const catalog = JSON.parse(raw);
   const byId = Object.fromEntries(catalog.repos.map((repo) => [repo.id, repo]));
   const catByNum = Object.fromEntries(catalog.categories.map((cat) => [String(cat.num), cat]));
+  const areas = catalog.discovery.areas || [];
+  const areaById = Object.fromEntries(areas.map(area => [area.id, area]));
+  const topicById = Object.fromEntries(areas.flatMap(area => area.topics.map(topic => [topic.id, {...topic,area:area.id}])));
   const folded = new Map();
   for (const repo of catalog.repos) {
     folded.set(norm(repo.id), repo.id);
@@ -188,7 +191,7 @@
             <span><small>Biblioteca</small><strong>Alexandría</strong></span>
           </a>
           <div class="nav-items">${items}</div>
-          <p class="nav-foot">${catalog.counts.repos} repos · ${catalog.counts.categories} salas · ${catalog.counts.recipes} recetas</p>
+          <p class="nav-foot">${catalog.counts.repos} repos · ${areas.length || catalog.counts.categories} áreas${areas.length ? ` · ${catalog.counts.topics} subtemas` : ""}</p>
         </nav>
         <main id="contenido" class="main" tabindex="-1"><div class="wrap">${main}</div></main>
       </div>`;
@@ -206,6 +209,8 @@
       <div class="search-line"><input id="home-query" name="q" type="search" aria-describedby="search-help" placeholder="Describe lo que buscas" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="search"><button class="btn" type="submit">Buscar</button></div></form></search>
       <p class="guided-entry"><a class="btn ghost" href="#/empezar">No sé por dónde empezar: guíame</a><span>Elige una tarea y recibe hasta tres opciones, con su primer paso.</span></p>
     </header>
+    ${areas.length ? `<section class="section"><div class="command-row"><h2>Explora un área de trabajo</h2><a href="#/salas">Ver categorías y subcategorías</a></div>${quickAreas(areas.filter(area=>area.kind==="work"))}</section>
+    <section class="section"><h2>Configura tu asistente</h2><p>Primeros pasos, skills y conexiones para el cliente que utilizas.</p>${quickAreas(areas.filter(area=>area.kind==="tool"))}</section>` : ""}
     <section class="section"><div class="command-row"><h2>Empieza por un resultado</h2><a href="#/rutas">Ver las ${catalog.discovery.goals.length} rutas</a></div>
       ${goalLinks(catalog.discovery.goals.slice(0, 8))}</section>
     <section class="section"><h2>O parte de lo que ya tienes</h2><p>Elige cómo quieres usar la IA y después filtra por tu objetivo.</p>
@@ -309,13 +314,65 @@
     </section>`;
   }
 
-  function renderRooms() {
-    const rooms = catalog.categories.filter(cat => cat.num > 0).map(cat => `<li><h2><a href="#/explorar?cat=${cat.num}">${esc(cat.title)}</a></h2><p>${esc(cat.description || cat.blurb)}</p><p class="meta">${cat.count} repos · ${(cat.subs || []).length} secciones</p></li>`).join("");
-    return `<h1>Explora por tema</h1><p class="lede">Cada repo tiene una categoría principal. Puedes encontrarlo también desde sus objetivos, sus etiquetas o su forma de acceso.</p><ul class="shelf-list">${rooms}</ul>`;
+  function quickAreas(items) {
+    return `<ul class="area-quick-list" role="list">${items.map(area=>`<li><a href="#/area/${esc(area.id)}"><strong>${esc(area.title)}</strong><span>${area.topics.length} subcategorías · ${area.count} repos</span></a></li>`).join("")}</ul>`;
   }
 
-  function selectField(name, title, choices, current) {
-    return `<div class="filter-field"><label for="filter-${name}">${esc(title)}</label><select id="filter-${name}" name="${name}">${choices.map(([value,text]) => `<option value="${esc(value)}"${value===current?" selected":""}>${esc(text)}</option>`).join("")}</select></div>`;
+  function repoCount(count) {
+    return `${count} ${count===1?"repo":"repos"}`;
+  }
+
+  function topicHref(area, topic) {
+    return exploreHref(new URLSearchParams({area:area.id,topic:topic.id}));
+  }
+
+  function areaDirectory(items, query) {
+    return `<ul class="area-directory" role="list">${items.map(area=>{
+      const areaMatch=fold([area.title,...area.keywords].join(" ")).includes(query);
+      const matches=area.topics.filter(topic=>areaMatch||fold([topic.title,topic.description,...topic.keywords].join(" ")).includes(query));
+      const preview = !query && area.id==="audiovisual" ? ["av-video-edicion","av-voz","av-audio","av-imagen"].map(id=>topicById[id]) : matches.slice(0,4);
+      return `<li class="area-entry"><h3><a href="#/area/${esc(area.id)}">${esc(area.title)}</a></h3><p>${esc(area.description)}</p>
+        <ul class="topic-preview" role="list">${preview.map(topic=>`<li><a href="${topicHref(area,topic)}">${esc(topic.title)}</a></li>`).join("")}</ul>
+        <a class="area-more" href="#/area/${esc(area.id)}">Explorar ${area.topics.length} subcategorías<span class="sr-only"> de ${esc(area.title)}</span></a><span class="meta"> · ${area.count} repos</span></li>`;
+    }).join("")}</ul>`;
+  }
+
+  function technicalRooms() {
+    return `<ul class="technical-index" role="list">${catalog.categories.filter(cat=>cat.num>0).map(cat=>`<li><a href="#/explorar?cat=${cat.num}">${esc(cat.title)}</a><span class="meta"> · ${cat.count}</span></li>`).join("")}</ul>`;
+  }
+
+  function renderRooms(params) {
+    if (!areas.length) return `<h1>Explora por tema</h1>${technicalRooms()}`;
+    const query=fold(params.get("q")||"").trim();
+    const matches=areas.filter(area=>fold([area.title,...area.keywords,...area.topics.flatMap(topic=>[topic.title,topic.description,...topic.keywords])].join(" ")).includes(query));
+    return `<h1>Explora por áreas</h1><p class="lede">Elige tu campo de trabajo y después una tarea concreta. También puedes preparar Claude Code, Codex o Antigravity en sus colecciones de configuración.</p>
+      <search><form id="areas-search" class="home-search" action="#/salas" method="get"><label for="area-query">Buscar una categoría o subcategoría</label><p class="meta" id="area-help">Por ejemplo: frontend, ciberseguridad, voz, trading o configurar Codex.</p><div class="search-line"><input id="area-query" name="q" type="search" value="${esc(params.get("q")||"")}" aria-describedby="area-help" placeholder="¿Qué tema quieres explorar?"><button class="btn" type="submit">Buscar tema</button></div></form></search>
+      <p id="area-results-count" role="status">${matches.length} ${matches.length===1?"área":"áreas"}${query?(matches.length===1?" coincide con tu búsqueda":" coinciden con tu búsqueda"):` · ${catalog.counts.topics} subcategorías`}. Un repo puede aparecer en varios temas; su ficha es la misma.</p>
+      ${matches.some(a=>a.kind==="work")?`<section class="section"><h2>Áreas de trabajo</h2>${areaDirectory(matches.filter(a=>a.kind==="work"),query)}</section>`:""}
+      ${matches.some(a=>a.kind==="tool")?`<section class="section"><h2>Configuración de asistentes</h2>${areaDirectory(matches.filter(a=>a.kind==="tool"),query)}</section>`:""}
+      ${!matches.length?`<div class="empty"><h2>No encontramos ese tema</h2><p>Prueba un nombre más general o <a href="${exploreHref(new URLSearchParams({q:params.get("q")||""}))}">busca ese término en los repositorios</a>.</p><a href="#/salas">Ver todas las áreas</a></div>`:""}
+      <details class="technical-map"><summary>Ver el índice técnico de ${catalog.counts.categories} secciones</summary><p class="meta">Clasificación original por tipo de herramienta. Los enlaces anteriores siguen funcionando.</p>${technicalRooms()}</details>`;
+  }
+
+  function renderArea(id) {
+    const area=areaById[id];
+    if(!area)return missing("No encontramos esa categoría.","#/salas");
+    const topics=area.topics.map(topic=>`<li><a class="topic-row" href="${topicHref(area,topic)}" aria-labelledby="topic-name-${esc(topic.id)} topic-count-${esc(topic.id)}" aria-describedby="topic-desc-${esc(topic.id)}"><div><h3 id="topic-name-${esc(topic.id)}">${esc(topic.title)}</h3><p id="topic-desc-${esc(topic.id)}">${esc(topic.description)}</p></div><span class="topic-count" id="topic-count-${esc(topic.id)}">${repoCount(topic.count)}</span></a></li>`).join("");
+    const guide=area.guide?`<section class="section setup-guide"><h2>Primera configuración, paso a paso</h2><ol>${area.guide.map(step=>`<li><h3>${esc(step.title)}</h3><p>${esc(step.text)}</p></li>`).join("")}</ol><p><a href="${esc(safeUrl(area.official_url))}" target="_blank" rel="noreferrer">Abrir la fuente oficial de ${esc(area.title.replace("Configuración de ",""))}</a></p><p class="meta">${esc(area.scope)}</p></section>`:"";
+    return `<nav class="breadcrumbs" aria-label="Ubicación"><a href="#/salas">Categorías</a><span aria-hidden="true"> / </span><span aria-current="page">${esc(area.title)}</span></nav><h1>${esc(area.title)}</h1><p class="lede">${esc(area.description)}</p><p class="meta">${area.count} repos únicos · ${area.topics.length} subcategorías</p>
+      <nav class="area-jump" aria-label="En esta categoría"><a href="#/area/${esc(id)}?section=topics">Elegir subcategoría</a>${area.guide?`<a href="#/area/${esc(id)}?section=setup">Primeros pasos</a>`:""}<a href="${exploreHref(new URLSearchParams({area:id}))}">Ver todos los repos de esta área</a></nav>
+      <section class="section" id="area-topics"><h2>¿Qué necesitas hacer?</h2><ul class="topic-directory" role="list">${topics}</ul></section>
+      ${guide.replace('class="section setup-guide"','class="section setup-guide" id="area-setup"')}
+      <section class="section"><h2>Opciones para empezar</h2><p>Compara estas fichas antes de instalar. No necesitas usar todas.</p>${quickRepos(area.starters)}</section>
+      ${area.evidence?.length?`<details class="technical-map"><summary>Fuentes de compatibilidad de esta colección</summary><ul>${area.evidence.map(e=>`<li><a href="${esc(safeUrl(e.source))}" target="_blank" rel="noreferrer">${esc(repo(e.repo_id)?.name||e.repo_id)}</a> · revisado el ${esc(e.checked_at)}</li>`).join("")}</ul></details>`:""}`;
+  }
+
+  function quickRepos(ids) {
+    return `<ul class="starter-list" role="list">${ids.map(id=>repo(id)).filter(Boolean).map(item=>`<li><a href="#/repo/${esc(item.id)}"><strong>${esc(item.name)}</strong></a><p>${esc(item.lead)}</p><p class="meta">${esc(label("api",item.access.api))} · ${esc(preparation(item))}</p></li>`).join("")}</ul>`;
+  }
+
+  function selectField(name, title, choices, current, disabled=false) {
+    return `<div class="filter-field"><label for="filter-${name}">${esc(title)}</label><select id="filter-${name}" name="${name}"${disabled?" disabled":""}>${choices.map(([value,text]) => `<option value="${esc(value)}"${value===current?" selected":""}>${esc(text)}</option>`).join("")}</select></div>`;
   }
 
   function resultsMarkup(items, params) {
@@ -331,20 +388,23 @@
     const items=filtered(params);
     const goal=catalog.discovery.goals.find(item=>item.id===params.get("goal"));
     const category=catByNum[params.get("cat")];
+    const area=areaById[params.get("area")],topic=topicById[params.get("topic")];
     const chips=[];
-    const addChip=(key,text)=>{const next=new URLSearchParams(params);next.delete(key);next.delete("page");if(key==="cat")next.delete("sub");chips.push(`<a class="chip" href="${exploreHref(next)}">${esc(text)} <span aria-hidden="true">×</span><span class="sr-only">: quitar filtro</span></a>`);};
-    for(const [key,value] of params){if(key==="q"||key==="page"||key==="sort"||!value)continue;const text=key==="cat"?catName(value):key==="goal"?(goal?.title||value):key==="route"?label("route",value):value;addChip(key,text);}
+    const addChip=(key,text)=>{const next=new URLSearchParams(params);next.delete(key);next.delete("page");if(key==="cat")next.delete("sub");if(key==="area")next.delete("topic");chips.push(`<a class="chip" href="${exploreHref(next)}">${esc(text)} <span aria-hidden="true">×</span><span class="sr-only">: quitar filtro</span></a>`);};
+    for(const [key,value] of params){if(key==="q"||key==="page"||key==="sort"||!value)continue;const text=key==="area"?(area?.title||value):key==="topic"?(topic?.title||value):key==="cat"?catName(value):key==="sub"?(category?.subs.find(s=>s.key===value)?.title||value):key==="goal"?(goal?.title||value):key==="route"?label("route",value):value;addChip(key,text);}
     const groups=catalog.labels;
-    return `<h1>${goal?esc(goal.title):"Busca una herramienta"}</h1><p class="lede">${goal?esc(goal.description):"Busca una tarea, un nombre o una tecnología. Después filtra por acceso y requisitos."}</p>
+    return `${area?`<nav class="breadcrumbs" aria-label="Ubicación"><a href="#/salas">Categorías</a> / <a href="#/area/${esc(area.id)}">${esc(area.title)}</a>${topic?` / <span aria-current="page">${esc(topic.title)}</span>`:""}</nav>`:""}<h1>${esc(topic?.title||area?.title||goal?.title||"Busca una herramienta")}</h1><p class="lede">${esc(topic?.description||area?.description||goal?.description||"Busca una tarea, un nombre o una tecnología. Después filtra por área, acceso y requisitos.")}</p>
       <search><form class="library-filters" id="filters" action="#/explorar" method="get">
         <div class="query-field"><label for="q">Buscar en la biblioteca</label><input id="q" type="search" name="q" placeholder="Por ejemplo: transcribir audio" value="${esc(params.get("q")||"")}" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="search"></div>
         <div class="filter-grid">
+        ${areas.length?selectField("area","Área de trabajo o asistente",[["","Todas las áreas"],...areas.map(item=>[item.id,item.title])],params.get("area")||""):""}
+        ${areas.length?selectField("topic","Subcategoría",[["",area?"Todas las subcategorías":"Elige primero un área"],...(area?.topics||[]).map(t=>[t.id,t.title])],params.get("topic")||"",!area):""}
         ${selectField("goal","Objetivo",[["","Cualquier objetivo"],...catalog.discovery.goals.map(item=>[item.id,item.title])],params.get("goal")||"")}
         ${selectField("route","Forma de uso",[["","Cualquier acceso"],...Object.entries(groups.route)],params.get("route")||"")}
-        ${selectField("cat","Categoría",[["","Todas las categorías"],...catalog.categories.filter(cat=>cat.num>0).map(cat=>[String(cat.num),cat.title])],params.get("cat")||"")}
-        ${selectField("sub","Sección",[["","Todas las secciones"],...(category?.subs||[]).map(sub=>[sub.key,sub.title])],params.get("sub")||"")}
         </div>
-        <details class="advanced-filters"${["role","setup","status"].some(key=>params.has(key))?" open":""}><summary>Más filtros: tipo, dificultad y estado</summary><div class="filter-grid">
+        <details class="advanced-filters"${["role","setup","status","cat","sub"].some(key=>params.has(key))?" open":""}><summary>Más filtros: sección técnica, tipo y preparación</summary><div class="filter-grid">
+        ${selectField("cat","Sección técnica",[["","Todas las secciones técnicas"],...catalog.categories.filter(cat=>cat.num>0).map(cat=>[String(cat.num),cat.title])],params.get("cat")||"")}
+        ${selectField("sub","Especialidad técnica",[["","Todas las especialidades"],...(category?.subs||[]).map(sub=>[sub.key,sub.title])],params.get("sub")||"")}
         ${selectField("role","Tipo de herramienta",[["","Cualquier tipo"],...Object.entries(groups.role)],params.get("role")||"")}
         ${selectField("setup","Preparación",[["","Cualquier dificultad"],...Object.entries(groups.setup)],params.get("setup")||"")}
         ${selectField("status","Estado",[["","Todos los estados"],["active","Sin alerta de archivo"],["archived","Archivados"],["unverified","Referencias sin verificar"]],params.get("status")||"")}
@@ -408,6 +468,7 @@
         <article class="callout no"><h3>Evítalo si</h3><p>${item.avoid_if ? rich(item.avoid_if) : "La ficha todavía no declara este límite."}</p></article>
       </section>
       ${startSection(item)}
+      ${item.areas?.length?`<section class="section"><h2>Encuéntralo por tema</h2><ul class="access-links" role="list">${item.areas.map(id=>areaById[id]).filter(Boolean).map(area=>`<li><a href="#/area/${esc(area.id)}">${esc(area.title)}</a></li>`).join("")}</ul></section>`:""}
       <section class="section grid-2">
         <div>
           <h2>Combina con</h2>
@@ -579,12 +640,14 @@
     if (head === "repo") return "explorar";
     if (["curso","guia","laboratorio"].includes(head)) return "guias";
     if (head === "receta") return "recetas";
-    if (head === "sala") return "salas";
+    if (head === "sala" || head === "area") return "salas";
     return NAV.some(([id]) => id === head) ? head : "inicio";
   }
 
-  function titleOf(parts) {
+  function titleOf(parts, params) {
     const head = parts[0] || "inicio";
+    if (head === "area") return areaById[parts[1]]?.title || "Categoría";
+    if (head === "explorar") return topicById[params.get("topic")]?.title || areaById[params.get("area")]?.title || "Buscar";
     if (head === "repo" && repo(decodeURIComponent(parts[1] || ""))) return repo(decodeURIComponent(parts[1])).name;
     if (head === "receta") {
       const recipe = catalog.recipes.find((item) => item.id === parts[1]);
@@ -608,7 +671,8 @@
     if (head === "guia") return renderReading(second);
     if (head === "acceso") return renderReading("acceso");
     if (head === "novedades") return renderNew();
-    if (head === "salas" || head === "sala") return renderRooms();
+    if (head === "salas" || head === "sala") return renderRooms(route.params);
+    if (head === "area") return renderArea(second || "");
     if (head === "explorar") return renderExplore(route.params);
     if (head === "repo") return renderRepo(decodeURIComponent(second || ""));
     if (head === "recetas") return renderRecipes();
@@ -640,7 +704,7 @@
     clearTimeout(searchTimer);
     const route = parseHash();
     document.getElementById("app").innerHTML = layout(activeOf(route.parts), view(route));
-    document.title = `${titleOf(route.parts)} — Alexandría`;
+    document.title = `${titleOf(route.parts,route.params)} — Alexandría`;
     const path=route.parts.join("/");
     if(path!==lastPath){
       const heading=document.querySelector("main h1");
@@ -649,7 +713,7 @@
     }
     lastPath=path;
     const section=route.params.get("section");
-    if(section!==null){const target=document.getElementById(route.parts[0]==="repo"?`repo-${section}`:`reading-section-${section}`);if(target){target.tabIndex=-1;target.focus({preventScroll:true});target.scrollIntoView();}}
+    if(section!==null){const target=document.getElementById(route.parts[0]==="repo"?`repo-${section}`:route.parts[0]==="area"?`area-${section}`:`reading-section-${section}`);if(target){target.tabIndex=-1;target.focus({preventScroll:true});target.scrollIntoView();}}
     const q = document.getElementById("q");
     if (q && route.parts[0] === "explorar" && window.__focusSearch) {
       q.focus();
@@ -668,6 +732,12 @@
   });
 
   document.getElementById("app").addEventListener("submit", (event) => {
+    if(event.target.id === "areas-search") {
+      event.preventDefault();const params=new URLSearchParams(new FormData(event.target));
+      if(!params.get("q"))params.delete("q");
+      history.pushState(null,"",`#/salas${params.size?`?${params}`:""}`);draw();
+      const count=document.getElementById("area-results-count");if(count){count.tabIndex=-1;count.focus();}
+    }
     if(event.target.id === "guided-start") {
       event.preventDefault();const params=new URLSearchParams(new FormData(event.target));
       if(!params.get("route"))params.delete("route");
@@ -691,6 +761,7 @@
     if (event.target.id === "filters") {
       event.preventDefault();const params=currentParamsFromForm();params.delete("page");
       const cat=catByNum[params.get("cat")];if(!cat?.subs.some(sub=>sub.key===params.get("sub")))params.delete("sub");
+      const area=areaById[params.get("area")];if(!area?.topics.some(topic=>topic.id===params.get("topic")))params.delete("topic");
       history.pushState(null,"",exploreHref(params));
       document.activeElement?.blur();draw();
       const count=document.getElementById("count");if(count){count.tabIndex=-1;count.focus();}
@@ -730,6 +801,10 @@
   });
 
   document.getElementById("app").addEventListener("change", (event) => {
+    if(event.target.name === "area") {
+      const select=document.getElementById("filter-topic"),area=areaById[event.target.value];
+      if(select){select.disabled=!area;select.innerHTML=`<option value="">${area?"Todas las subcategorías":"Elige primero un área"}</option>`+(area?.topics||[]).map(topic=>`<option value="${esc(topic.id)}">${esc(topic.title)}</option>`).join("");}
+    }
     if(event.target.name === "cat") {
       const sub=document.getElementById("filter-sub"),cat=catByNum[event.target.value];
       if(sub)sub.innerHTML='<option value="">Todas las secciones</option>'+(cat?.subs||[]).map(item=>`<option value="${esc(item.key)}">${esc(item.title)}</option>`).join("");

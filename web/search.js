@@ -25,6 +25,8 @@
   }
   function search(repos, categories, goals, params) {
     const q = fold(params.get("q") || "").trim();
+    const setup=q.match(/\b(?:configurar|configuracion|configura|preparar|setup|optimizar)\s+(?:de\s+)?(claude code|codex|antigravity)\b/);
+    const setupArea=setup ? `configurar-${setup[1].replace(/\s+/g,"-")}` : "";
     const implicitRoutes=[];
     let task=q;
     if(/\bsin\s+(?:una?\s+)?(?:api|clave)/.test(task)) { implicitRoutes.push("no_api");task=task.replace(/\bsin\s+(?:una?\s+)?(?:api|clave)(?:\s+de\s+ia)?/g,""); }
@@ -35,6 +37,9 @@
     const goal = goals.find(item => item.id === params.get("goal"));
     const cats = Object.fromEntries(categories.map(cat => [cat.num, cat]));
     const selected = repos.filter(item => {
+      if (setupArea && !(item.areas || []).includes(setupArea)) return false;
+      if (params.get("area") && !(item.areas || []).includes(params.get("area"))) return false;
+      if (params.get("topic") && !(item.topics || []).includes(params.get("topic"))) return false;
       if (params.get("cat") && String(item.cat) !== params.get("cat")) return false;
       if (params.get("sub") && item.sub !== params.get("sub")) return false;
       if (params.get("route") && !(item.routes || []).includes(params.get("route"))) return false;
@@ -47,7 +52,7 @@
       if (params.get("prov") && !item.prov.includes(params.get("prov"))) return false;
       const clientSupport = ["native","host","connector","project_integration"];
       const supported = [clientSupport.includes(item.access?.claude_code) ? "claude code" : "", clientSupport.includes(item.access?.codex) ? "codex" : ""];
-      const hay = fold([item.name, item.id, item.one, item.lead, item.desc, item.choose_if, item.stack, cats[item.cat]?.title, ...(item.tags || []), ...supported].join(" "));
+      const hay = fold([item.name, item.id, item.one, item.lead, item.desc, item.choose_if, item.stack, item.discovery_text, cats[item.cat]?.title, ...(item.tags || []), ...supported].join(" "));
       return tokens.every(term => alternatives(term).some(alias => hay.includes(alias)));
     });
     const score = item => (fold(item.id) === q || fold(item.name) === q ? 1000 : 0)

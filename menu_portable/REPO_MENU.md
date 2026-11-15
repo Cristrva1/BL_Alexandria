@@ -1,5 +1,7 @@
 # REPO_MENU — Menú portable de la biblioteca de repositorios
 
+[Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
+
 > Generado: 2026-11-15 · 682 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.

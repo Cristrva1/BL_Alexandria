@@ -3,7 +3,7 @@
 Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
 
 <!-- BL:STATS -->
-**679 repos curados** · **32 categorías** · **14 recetas** · 22 rutas por objetivo · acceso revisado el 2026-11-14
+**679 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **92 subcategorías**
 <!-- /BL:STATS -->
 
 ---
@@ -14,7 +14,7 @@ Esta biblioteca es un menú curado de repos de IA y automatización, con datos c
    `uv run repo-intelligence recommend --project "<descripción, con la herramienta si la nombra>" --max-repos 7`
    (o `--project-file proyecto.md` para briefs largos). Después lee `ai_index/CONTEXT_PACKS/latest.md`: ya trae finalistas, orden e instalación.
 1. **Lee `INDICE_IA.json`**, el índice compacto con una entrada por repo. Es la única lectura obligatoria.
-2. **Filtra** por `goals` (objetivos), `routes` (formas de acceso), `cat`/`sub`, `tags`, `role`, `setup` y `one`. `pick: true` es una selección editorial para empezar a comparar, no una garantía de adecuación.
+2. **Empieza por `discovery.areas`** si el usuario nombra un campo (frontend, ciberseguridad, audiovisual, trading) o quiere configurar Claude Code, Codex o Antigravity. Cada área tiene subcategorías con `selectors` (`cat`/`subs`), `repos` explícitos y, cuando aplica, `reference_repos` de consulta. La unión por id evita duplicados. Después filtra por `goals`, `routes`, `cat`/`sub`, `tags`, `role`, `setup` y `one`. `pick: true` es una selección editorial, no una garantía de adecuación.
 3. **Desempata** con `alt`: si ya elegiste un repo, **descarta sus `alt`**, porque cumplen la misma función.
 4. **Parte de una receta** (`recipes`) si el usuario quiere un producto completo y no una pieza suelta.
 5. **Solo para finalistas (menos de 8)**, abre su entrada en `INDICE_IA.detalle.json`: `access` separa API, Claude Code, Codex, modelos locales, coste y equipo; `getting_started` trae preparación, pasos y comandos con fuente. Después consulta `desc`, `how`, `choose_if`, `avoid_if`, `limits` y `combines_with`.
@@ -40,6 +40,7 @@ Esta biblioteca es un menú curado de repos de IA y automatización, con datos c
 | `human/rutas.md`, `human/formas-de-uso.md` | Entradas por tarea y acceso | Orientación inicial |
 | `human/acceso.md`, `human/instalar.md`, `human/vocabulario.md` | Cuentas, primer uso y términos | Personas que empiezan |
 | `PRODUCT.md` | Público y propósito confirmados | Al cambiar navegación o interfaz |
+| `human/areas.md`, `human/areas/*.md` | Áreas prácticas, subcategorías y configuración de asistentes | Para orientarse por campo o herramienta |
 
 ---
 
@@ -63,7 +64,11 @@ Esta biblioteca es un menú curado de repos de IA y automatización, con datos c
 
 ---
 
-## 📂 Categorías
+## 📂 Áreas prácticas e índice técnico
+
+La entrada humana es [Categorías y subcategorías](human/areas.md): áreas de trabajo y colecciones de configuración, con una sola ficha por proyecto. Un recurso puede aparecer en varios temas. Las colecciones de asistentes son para configurar el cliente; no equivalen al filtro de acceso por suscripción.
+
+Las secciones técnicas siguientes conservan sus números y rutas. La lógica compartida `core/taxonomy.py` comprueba selectores, referencias y cobertura completa al generar guías, web y menú portable. Una incorporación nueva debe quedar cubierta por al menos un área de trabajo.
 
 <!-- BL:AGENT_CATEGORIES -->
 | # | Categoría | Repos | Subcategorías | Archivo |

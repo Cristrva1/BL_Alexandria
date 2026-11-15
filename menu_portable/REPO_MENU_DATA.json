@@ -1233,6 +1233,3820 @@
       "when_not": "Si tu producto aún tiene poco tráfico, empieza solo con PostHog o Umami: el resto añade operación sin aportar todavía."
     }
   ],
+  "areas": [
+    {
+      "id": "frontend",
+      "title": "Frontend y creación de páginas web",
+      "description": "Diseña una página, construye su interfaz y prepara su publicación. Empieza por el tipo de herramienta que necesitas.",
+      "kind": "work",
+      "keywords": [
+        "frontend",
+        "paginas web",
+        "crear una pagina web",
+        "landing pages",
+        "sitios web"
+      ],
+      "starters": [
+        "penpot",
+        "ui",
+        "tailwindcss"
+      ],
+      "topics": [
+        {
+          "id": "web-editores",
+          "title": "Crear páginas con editores visuales",
+          "description": "Diseñar y construir pantallas desde una interfaz visual.",
+          "selectors": [
+            {
+              "cat": 9,
+              "subs": [
+                "diseno"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "excalidraw",
+            "onlook",
+            "open-design",
+            "penpot",
+            "plasmic",
+            "tldraw"
+          ],
+          "count": 6
+        },
+        {
+          "id": "web-componentes",
+          "title": "Componentes, iconos y estilos",
+          "description": "Piezas de interfaz y CSS para construir una web.",
+          "selectors": [
+            {
+              "cat": 9,
+              "subs": [
+                "componentes",
+                "estilos"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "ant-design",
+            "daisyui",
+            "flexoki",
+            "heroui",
+            "konva",
+            "lucide",
+            "magicui",
+            "mui",
+            "normalize.css",
+            "radix-primitives",
+            "react-bits",
+            "swr",
+            "tailwindcss",
+            "ui"
+          ],
+          "count": 14
+        },
+        {
+          "id": "web-ia",
+          "title": "Interfaces y páginas con IA",
+          "description": "Generar pantallas o añadir una experiencia de IA a tu aplicación.",
+          "selectors": [
+            {
+              "cat": 9,
+              "subs": [
+                "ia-ui"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "ai-website-cloner-template",
+            "assistant-ui",
+            "copilotkit",
+            "json-render",
+            "openui",
+            "screenshot-to-code",
+            "stitch-sdk",
+            "ui-sdk"
+          ],
+          "count": 8
+        },
+        {
+          "id": "web-skills",
+          "title": "Skills de diseño y UX",
+          "description": "Instrucciones de diseño, accesibilidad y calidad para tu agente.",
+          "selectors": [],
+          "repos": [
+            "taste-skill",
+            "impeccable",
+            "ui-ux-pro-max-skill",
+            "stitch-skills",
+            "modern-web-guidance",
+            "front-end-checklist",
+            "design-dna",
+            "hallmark",
+            "skills-emil",
+            "design.md"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "design-dna",
+            "design.md",
+            "front-end-checklist",
+            "hallmark",
+            "impeccable",
+            "modern-web-guidance",
+            "skills-emil",
+            "stitch-skills",
+            "taste-skill",
+            "ui-ux-pro-max-skill"
+          ],
+          "count": 10
+        },
+        {
+          "id": "web-movimiento",
+          "title": "Animación e interacción web",
+          "description": "Movimiento, gráficos y escenas interactivas en el navegador.",
+          "selectors": [
+            {
+              "cat": 26,
+              "subs": [
+                "animacion"
+              ]
+            }
+          ],
+          "repos": [
+            "gsap-skills",
+            "threejs-skills"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "animejs",
+            "gsap",
+            "gsap-skills",
+            "motion",
+            "pixelfx",
+            "planck-js",
+            "react-three-fiber",
+            "react-three-rapier",
+            "regl",
+            "scenejs",
+            "three.js",
+            "threejs-skills",
+            "webgl-noise",
+            "zdog"
+          ],
+          "count": 14
+        },
+        {
+          "id": "web-pruebas",
+          "title": "Probar y publicar una web",
+          "description": "Pruebas de navegador y herramientas para alojar la aplicación.",
+          "selectors": [
+            {
+              "cat": 32,
+              "subs": [
+                "bibliotecas"
+              ]
+            },
+            {
+              "cat": 22,
+              "subs": [
+                "infraestructura"
+              ]
+            }
+          ],
+          "repos": [
+            "playwright-mcp"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "casaos",
+            "coolify",
+            "playwright",
+            "playwright-mcp",
+            "puppeteer",
+            "selenium",
+            "supabase"
+          ],
+          "count": 7
+        }
+      ],
+      "repo_ids": [
+        "ai-website-cloner-template",
+        "animejs",
+        "ant-design",
+        "assistant-ui",
+        "casaos",
+        "coolify",
+        "copilotkit",
+        "daisyui",
+        "design-dna",
+        "design.md",
+        "excalidraw",
+        "flexoki",
+        "front-end-checklist",
+        "gsap",
+        "gsap-skills",
+        "hallmark",
+        "heroui",
+        "impeccable",
+        "json-render",
+        "konva",
+        "lucide",
+        "magicui",
+        "modern-web-guidance",
+        "motion",
+        "mui",
+        "normalize.css",
+        "onlook",
+        "open-design",
+        "openui",
+        "penpot",
+        "pixelfx",
+        "planck-js",
+        "plasmic",
+        "playwright",
+        "playwright-mcp",
+        "puppeteer",
+        "radix-primitives",
+        "react-bits",
+        "react-three-fiber",
+        "react-three-rapier",
+        "regl",
+        "scenejs",
+        "screenshot-to-code",
+        "selenium",
+        "skills-emil",
+        "stitch-sdk",
+        "stitch-skills",
+        "supabase",
+        "swr",
+        "tailwindcss",
+        "taste-skill",
+        "three.js",
+        "threejs-skills",
+        "tldraw",
+        "ui",
+        "ui-sdk",
+        "ui-ux-pro-max-skill",
+        "webgl-noise",
+        "zdog"
+      ],
+      "count": 59
+    },
+    {
+      "id": "ciberseguridad",
+      "title": "Ciberseguridad",
+      "description": "Revisa código, investiga software y prepara pruebas con un alcance definido. Elige entre defensa, auditoría y análisis.",
+      "kind": "work",
+      "keywords": [
+        "ciberseguridad",
+        "cybersecurity",
+        "seguridad informatica",
+        "pentesting"
+      ],
+      "starters": [
+        "cybersecurity-skills",
+        "semgrep",
+        "ghidra"
+      ],
+      "topics": [
+        {
+          "id": "seguridad-auditoria",
+          "title": "Auditoría y análisis con IA",
+          "description": "Agentes y skills que guían revisiones de seguridad.",
+          "selectors": [
+            {
+              "cat": 16,
+              "subs": [
+                "agentes",
+                "skills"
+              ]
+            }
+          ],
+          "repos": [
+            "semgrep",
+            "defending-code-reference-harness"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "craft-anything",
+            "cybersecurity-skills",
+            "defending-code-reference-harness",
+            "rea",
+            "security-audit-skill",
+            "semgrep",
+            "shannon",
+            "strix"
+          ],
+          "count": 8
+        },
+        {
+          "id": "seguridad-inversa",
+          "title": "Ingeniería inversa y binarios",
+          "description": "Inspeccionar programas, ejecutables y formatos compilados.",
+          "selectors": [
+            {
+              "cat": 16,
+              "subs": [
+                "reversing"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "angr",
+            "apktool",
+            "frida",
+            "ghidra",
+            "ilspy",
+            "imhex",
+            "jadx",
+            "radare2",
+            "rizin"
+          ],
+          "count": 9
+        },
+        {
+          "id": "seguridad-depuracion",
+          "title": "Depuración e inspección",
+          "description": "Comprender procesos y examinar cómo se comporta el software.",
+          "selectors": [
+            {
+              "cat": 16,
+              "subs": [
+                "depuracion"
+              ]
+            }
+          ],
+          "repos": [
+            "ghidramcp"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "dnspy",
+            "ghidramcp",
+            "raddebugger",
+            "x64dbg"
+          ],
+          "count": 4
+        },
+        {
+          "id": "seguridad-pruebas",
+          "title": "Tráfico, pruebas y protección",
+          "description": "Revisar tráfico, rendimiento y mecanismos de protección.",
+          "selectors": [
+            {
+              "cat": 16,
+              "subs": [
+                "pruebas",
+                "defensa"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "bla",
+            "k6",
+            "mitmproxy"
+          ],
+          "count": 3
+        },
+        {
+          "id": "seguridad-privacidad",
+          "title": "Credenciales y privacidad",
+          "description": "Gestionar contraseñas y proteger servicios personales.",
+          "selectors": [
+            {
+              "cat": 15,
+              "subs": [
+                "privacidad"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "adguardhome",
+            "bitwarden-clients",
+            "vaultwarden"
+          ],
+          "count": 3
+        },
+        {
+          "id": "seguridad-recursos",
+          "title": "Aprender ciberseguridad",
+          "description": "Directorios y material de referencia para orientar el análisis.",
+          "selectors": [
+            {
+              "cat": 16,
+              "subs": [
+                "referencias"
+              ]
+            }
+          ],
+          "repos": [
+            "cybersecurity-skills"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "awesome-ai-reverse-engineering",
+            "awesome-reverse-engineering",
+            "cybersecurity-skills"
+          ],
+          "count": 3
+        }
+      ],
+      "repo_ids": [
+        "adguardhome",
+        "angr",
+        "apktool",
+        "awesome-ai-reverse-engineering",
+        "awesome-reverse-engineering",
+        "bitwarden-clients",
+        "bla",
+        "craft-anything",
+        "cybersecurity-skills",
+        "defending-code-reference-harness",
+        "dnspy",
+        "frida",
+        "ghidra",
+        "ghidramcp",
+        "ilspy",
+        "imhex",
+        "jadx",
+        "k6",
+        "mitmproxy",
+        "radare2",
+        "raddebugger",
+        "rea",
+        "rizin",
+        "security-audit-skill",
+        "semgrep",
+        "shannon",
+        "strix",
+        "vaultwarden",
+        "x64dbg"
+      ],
+      "count": 29
+    },
+    {
+      "id": "audiovisual",
+      "title": "Producción audiovisual",
+      "description": "Encuentra las piezas para producir imágenes, audio y video: desde una voz o un subtítulo hasta un anuncio completo.",
+      "kind": "work",
+      "keywords": [
+        "produccion audiovisual",
+        "multimedia",
+        "contenido audiovisual"
+      ],
+      "starters": [
+        "ffmpeg",
+        "whisper",
+        "remotion"
+      ],
+      "topics": [
+        {
+          "id": "av-video-edicion",
+          "title": "Video: edición, grabación y subtítulos",
+          "description": "Montar material existente, capturar pantalla y preparar subtítulos.",
+          "selectors": [
+            {
+              "cat": 12,
+              "subs": [
+                "edicion"
+              ]
+            }
+          ],
+          "repos": [
+            "video-use",
+            "rea-video"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "concat",
+            "davinci-resolve-mcp",
+            "ffmpeg",
+            "lossless-cut",
+            "mediabunny",
+            "moviepy",
+            "obs-studio",
+            "opencut",
+            "openrv",
+            "openscreen",
+            "palmier-pro",
+            "pencil",
+            "rea-video",
+            "video-use",
+            "videolingo"
+          ],
+          "count": 15
+        },
+        {
+          "id": "av-video-ia",
+          "title": "Video: generación con IA",
+          "description": "Crear clips y organizar flujos de video generativo.",
+          "selectors": [
+            {
+              "cat": 12,
+              "subs": [
+                "generativo"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "ai-youtube-shorts-generator",
+            "hunyuanvideo",
+            "hypit",
+            "ltx-video",
+            "moneyprinterturbo",
+            "short-video-factory",
+            "wan2-2",
+            "wan2gp"
+          ],
+          "count": 8
+        },
+        {
+          "id": "av-video-codigo",
+          "title": "Video: código y motion graphics",
+          "description": "Crear escenas, animaciones y piezas audiovisuales mediante código o agentes.",
+          "selectors": [
+            {
+              "cat": 30
+            }
+          ],
+          "repos": [
+            "motion-design-skill"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "brag",
+            "claude-animated-shorts",
+            "huashu-motion",
+            "hyperframes",
+            "lemo-opuscar",
+            "manim",
+            "manim-community",
+            "motion-design-skill",
+            "motionmaxxing",
+            "openfilm",
+            "openmontage",
+            "papermorph",
+            "rea-video",
+            "remotion",
+            "remotion-superpowers",
+            "skills-remotion",
+            "srt-whiteboard-animation",
+            "video-shotcraft",
+            "video-use",
+            "videofy-minimal"
+          ],
+          "count": 20
+        },
+        {
+          "id": "av-voz",
+          "title": "Voz: narración, síntesis y clonación",
+          "description": "Convertir texto en voz y preparar locuciones en los idiomas compatibles.",
+          "selectors": [
+            {
+              "cat": 29,
+              "subs": [
+                "tts"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "chatterbox",
+            "cosyvoice",
+            "edge-tts",
+            "fish-speech",
+            "gpt-sovits",
+            "index-tts",
+            "kokoro",
+            "luxtts",
+            "melotts",
+            "omnivoice-studio",
+            "rvc",
+            "supertonic",
+            "tts",
+            "vibevoice",
+            "voxcpm"
+          ],
+          "count": 15
+        },
+        {
+          "id": "av-transcripcion",
+          "title": "Transcripción: audio a texto",
+          "description": "Transcribir, alinear y aprovechar grabaciones de voz.",
+          "selectors": [
+            {
+              "cat": 29,
+              "subs": [
+                "stt"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "faster-whisper",
+            "nemo",
+            "whisper",
+            "whisper-cpp",
+            "whisperx"
+          ],
+          "count": 5
+        },
+        {
+          "id": "av-audio",
+          "title": "Audio: limpieza, música y sonido",
+          "description": "Limpiar grabaciones, ajustar sonido y trabajar con música.",
+          "selectors": [
+            {
+              "cat": 29,
+              "subs": [
+                "audio",
+                "musica"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "ace-step-1.5",
+            "audiocraft",
+            "earshot",
+            "music-megathread",
+            "rnnoise",
+            "rubberband"
+          ],
+          "count": 6
+        },
+        {
+          "id": "av-conversacion",
+          "title": "Voz: agentes en tiempo real",
+          "description": "Construir conversaciones por audio con procesamiento y respuesta en directo.",
+          "selectors": [
+            {
+              "cat": 29,
+              "subs": [
+                "voz-agentes"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "dograh",
+            "livekit-agents",
+            "pipecat"
+          ],
+          "count": 3
+        },
+        {
+          "id": "av-imagen",
+          "title": "Imagen: generación y edición",
+          "description": "Generar imágenes, ampliar, recortar o restaurar fotografías.",
+          "selectors": [
+            {
+              "cat": 11
+            }
+          ],
+          "repos": [
+            "creative-architect",
+            "logo-design-skill"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "codeformer",
+            "comfyui",
+            "comfyui-ipadapter-plus",
+            "controlnet",
+            "creative-architect",
+            "diffusers",
+            "flux",
+            "fooocus",
+            "gfpgan",
+            "invokeai",
+            "krita-ai-diffusion",
+            "logo-design-skill",
+            "open-generative-ai",
+            "real-esrgan",
+            "rembg",
+            "sd-webui-controlnet",
+            "sd-webui-forge",
+            "stable-diffusion-webui"
+          ],
+          "count": 18
+        },
+        {
+          "id": "av-personajes",
+          "title": "Avatares, rostros y personajes",
+          "description": "Animación de retratos y herramientas para personajes.",
+          "selectors": [
+            {
+              "cat": 28,
+              "subs": [
+                "rostros"
+              ]
+            }
+          ],
+          "repos": [
+            "genjutsu",
+            "claude-animated-shorts"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "claude-animated-shorts",
+            "deep-live-cam",
+            "face-recognition",
+            "facefusion",
+            "genjutsu",
+            "insightface",
+            "liveportrait"
+          ],
+          "count": 7
+        },
+        {
+          "id": "av-3d",
+          "title": "Modelado y animación 3D",
+          "description": "Crear objetos, escenas y recursos tridimensionales.",
+          "selectors": [
+            {
+              "cat": 26,
+              "subs": [
+                "creacion-3d"
+              ]
+            }
+          ],
+          "repos": [
+            "blender-skills",
+            "blender-mcp",
+            "3dviz-pro-max"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "3dviz-pro-max",
+            "awesome-cad",
+            "blender",
+            "blender-mcp",
+            "blender-skills",
+            "filament",
+            "meshoptimizer",
+            "ozz-animation"
+          ],
+          "count": 8
+        }
+      ],
+      "repo_ids": [
+        "3dviz-pro-max",
+        "ace-step-1.5",
+        "ai-youtube-shorts-generator",
+        "audiocraft",
+        "awesome-cad",
+        "blender",
+        "blender-mcp",
+        "blender-skills",
+        "brag",
+        "chatterbox",
+        "claude-animated-shorts",
+        "codeformer",
+        "comfyui",
+        "comfyui-ipadapter-plus",
+        "concat",
+        "controlnet",
+        "cosyvoice",
+        "creative-architect",
+        "davinci-resolve-mcp",
+        "deep-live-cam",
+        "diffusers",
+        "dograh",
+        "earshot",
+        "edge-tts",
+        "face-recognition",
+        "facefusion",
+        "faster-whisper",
+        "ffmpeg",
+        "filament",
+        "fish-speech",
+        "flux",
+        "fooocus",
+        "genjutsu",
+        "gfpgan",
+        "gpt-sovits",
+        "huashu-motion",
+        "hunyuanvideo",
+        "hyperframes",
+        "hypit",
+        "index-tts",
+        "insightface",
+        "invokeai",
+        "kokoro",
+        "krita-ai-diffusion",
+        "lemo-opuscar",
+        "livekit-agents",
+        "liveportrait",
+        "logo-design-skill",
+        "lossless-cut",
+        "ltx-video",
+        "luxtts",
+        "manim",
+        "manim-community",
+        "mediabunny",
+        "melotts",
+        "meshoptimizer",
+        "moneyprinterturbo",
+        "motion-design-skill",
+        "motionmaxxing",
+        "moviepy",
+        "music-megathread",
+        "nemo",
+        "obs-studio",
+        "omnivoice-studio",
+        "open-generative-ai",
+        "opencut",
+        "openfilm",
+        "openmontage",
+        "openrv",
+        "openscreen",
+        "ozz-animation",
+        "palmier-pro",
+        "papermorph",
+        "pencil",
+        "pipecat",
+        "rea-video",
+        "real-esrgan",
+        "rembg",
+        "remotion",
+        "remotion-superpowers",
+        "rnnoise",
+        "rubberband",
+        "rvc",
+        "sd-webui-controlnet",
+        "sd-webui-forge",
+        "short-video-factory",
+        "skills-remotion",
+        "srt-whiteboard-animation",
+        "stable-diffusion-webui",
+        "supertonic",
+        "tts",
+        "vibevoice",
+        "video-shotcraft",
+        "video-use",
+        "videofy-minimal",
+        "videolingo",
+        "voxcpm",
+        "wan2-2",
+        "wan2gp",
+        "whisper",
+        "whisper-cpp",
+        "whisperx"
+      ],
+      "count": 102
+    },
+    {
+      "id": "trading",
+      "title": "Trading, inversión y finanzas",
+      "description": "Investiga mercados, compara estrategias y conecta herramientas financieras. Las demos y el backtesting se distinguen de la operación real.",
+      "kind": "work",
+      "keywords": [
+        "trading",
+        "bolsa",
+        "inversion",
+        "finanzas",
+        "mercados"
+      ],
+      "starters": [
+        "daily-stock-analysis",
+        "qlib",
+        "backtrader"
+      ],
+      "topics": [
+        {
+          "id": "trading-investigacion",
+          "title": "Investigar mercados con IA",
+          "description": "Agentes que reúnen y analizan información financiera.",
+          "selectors": [
+            {
+              "cat": 14,
+              "subs": [
+                "agentes"
+              ]
+            }
+          ],
+          "repos": [
+            "financial-services"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "autohedge",
+            "daily-stock-analysis",
+            "dexter",
+            "financial-services",
+            "finceptterminal",
+            "quantharness",
+            "tradingagents",
+            "vibe-trading"
+          ],
+          "count": 8
+        },
+        {
+          "id": "trading-backtesting",
+          "title": "Estrategias y backtesting",
+          "description": "Analizar datos históricos y evaluar estrategias cuantitativas.",
+          "selectors": [
+            {
+              "cat": 14,
+              "subs": [
+                "cuant"
+              ]
+            }
+          ],
+          "repos": [
+            "timesfm"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "backtrader",
+            "chartanalyst",
+            "finrl",
+            "lumibot",
+            "nautilus-trader",
+            "qlib",
+            "timesfm",
+            "vectorbt"
+          ],
+          "count": 8
+        },
+        {
+          "id": "trading-bots",
+          "title": "Bots, exchanges y conexiones",
+          "description": "Código y SDKs para conectar plataformas y automatizar operaciones.",
+          "selectors": [
+            {
+              "cat": 14,
+              "subs": [
+                "bots"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "binance-trader",
+            "ccxt",
+            "crypto-trader",
+            "freqtrade",
+            "hummingbot",
+            "intellitrader",
+            "open-sol-bot",
+            "py-clob-client",
+            "py-sdk"
+          ],
+          "count": 9
+        },
+        {
+          "id": "trading-aprender",
+          "title": "Aprendizaje y simulaciones",
+          "description": "Referencias y demostraciones para entender los sistemas de inversión.",
+          "selectors": [
+            {
+              "cat": 14,
+              "subs": [
+                "aprender"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "company-pixel-office",
+            "machine-learning-for-trading",
+            "pixel-hedge-fund",
+            "pixelfund-ai",
+            "stocks-analyst"
+          ],
+          "count": 5
+        }
+      ],
+      "repo_ids": [
+        "autohedge",
+        "backtrader",
+        "binance-trader",
+        "ccxt",
+        "chartanalyst",
+        "company-pixel-office",
+        "crypto-trader",
+        "daily-stock-analysis",
+        "dexter",
+        "financial-services",
+        "finceptterminal",
+        "finrl",
+        "freqtrade",
+        "hummingbot",
+        "intellitrader",
+        "lumibot",
+        "machine-learning-for-trading",
+        "nautilus-trader",
+        "open-sol-bot",
+        "pixel-hedge-fund",
+        "pixelfund-ai",
+        "py-clob-client",
+        "py-sdk",
+        "qlib",
+        "quantharness",
+        "stocks-analyst",
+        "timesfm",
+        "tradingagents",
+        "vectorbt",
+        "vibe-trading"
+      ],
+      "count": 30
+    },
+    {
+      "id": "automatizacion",
+      "title": "Automatización, negocios y marketing",
+      "description": "Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas y comunicación.",
+      "kind": "work",
+      "keywords": [
+        "automatizacion",
+        "negocios",
+        "marketing",
+        "crm",
+        "whatsapp"
+      ],
+      "starters": [
+        "n8n",
+        "chatwoot",
+        "twenty-main"
+      ],
+      "topics": [
+        {
+          "id": "negocio-flujos",
+          "title": "Automatización y flujos",
+          "description": "Elegir el motor que coordina tareas entre aplicaciones.",
+          "selectors": [
+            {
+              "cat": 1,
+              "subs": [
+                "motores"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "activepieces",
+            "cal.diy",
+            "huginn",
+            "kestra",
+            "n8n",
+            "node-red",
+            "trigger-dev",
+            "windmill"
+          ],
+          "count": 8
+        },
+        {
+          "id": "negocio-n8n",
+          "title": "n8n: plantillas, skills y conectores",
+          "description": "Recursos específicos para construir y mantener flujos de n8n.",
+          "selectors": [
+            {
+              "cat": 1,
+              "subs": [
+                "n8n"
+              ]
+            }
+          ],
+          "repos": [
+            "n8n"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "awesome-n8n-templates",
+            "n8n",
+            "n8n-mcp",
+            "n8n-skills",
+            "self-hosted-ai-starter-kit"
+          ],
+          "count": 5
+        },
+        {
+          "id": "negocio-whatsapp",
+          "title": "WhatsApp y chatbots",
+          "description": "Canales y constructores de conversaciones para atención.",
+          "selectors": [
+            {
+              "cat": 17
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "baileys",
+            "botpress",
+            "evolution-api",
+            "fluxer",
+            "openwa",
+            "rasa",
+            "typebot",
+            "waha",
+            "whatsapp-agentkit",
+            "whatsapp-web-js",
+            "whatsmeow"
+          ],
+          "count": 11
+        },
+        {
+          "id": "negocio-crm",
+          "title": "CRM, ventas y soporte",
+          "description": "Gestionar clientes, oportunidades y conversaciones con personas.",
+          "selectors": [
+            {
+              "cat": 18,
+              "subs": [
+                "crm"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "chatwoot",
+            "compai-crm",
+            "erpnext",
+            "odoo",
+            "twenty-main"
+          ],
+          "count": 5
+        },
+        {
+          "id": "negocio-campanas",
+          "title": "Email, campañas y redes sociales",
+          "description": "Correo, notificaciones y programación de publicaciones.",
+          "selectors": [
+            {
+              "cat": 18,
+              "subs": [
+                "marketing"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "cloud-mail",
+            "listmonk",
+            "mautic",
+            "novu",
+            "open-seo",
+            "postiz-app",
+            "sellbird"
+          ],
+          "count": 7
+        },
+        {
+          "id": "negocio-marketing",
+          "title": "Skills de marketing, SEO y contenido",
+          "description": "Guías para que tu agente prepare análisis, mensajes y contenido.",
+          "selectors": [],
+          "repos": [
+            "marketingskills",
+            "agency-agents",
+            "geo-seo-claude",
+            "arcads-claude-code",
+            "social-media-research-skills",
+            "claude-seo",
+            "instagram-agent-skill",
+            "linkedin-agent-skill",
+            "minimalist-entrepreneur-skills"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "agency-agents",
+            "arcads-claude-code",
+            "claude-seo",
+            "geo-seo-claude",
+            "instagram-agent-skill",
+            "linkedin-agent-skill",
+            "marketingskills",
+            "minimalist-entrepreneur-skills",
+            "social-media-research-skills"
+          ],
+          "count": 9
+        },
+        {
+          "id": "negocio-apps",
+          "title": "Aplicaciones internas sin código",
+          "description": "Crear herramientas de operación y formularios sobre tus datos.",
+          "selectors": [
+            {
+              "cat": 1,
+              "subs": [
+                "internas"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "appsmith",
+            "budibase",
+            "nocodb",
+            "tooljet"
+          ],
+          "count": 4
+        }
+      ],
+      "repo_ids": [
+        "activepieces",
+        "agency-agents",
+        "appsmith",
+        "arcads-claude-code",
+        "awesome-n8n-templates",
+        "baileys",
+        "botpress",
+        "budibase",
+        "cal.diy",
+        "chatwoot",
+        "claude-seo",
+        "cloud-mail",
+        "compai-crm",
+        "erpnext",
+        "evolution-api",
+        "fluxer",
+        "geo-seo-claude",
+        "huginn",
+        "instagram-agent-skill",
+        "kestra",
+        "linkedin-agent-skill",
+        "listmonk",
+        "marketingskills",
+        "mautic",
+        "minimalist-entrepreneur-skills",
+        "n8n",
+        "n8n-mcp",
+        "n8n-skills",
+        "nocodb",
+        "node-red",
+        "novu",
+        "odoo",
+        "open-seo",
+        "openwa",
+        "postiz-app",
+        "rasa",
+        "self-hosted-ai-starter-kit",
+        "sellbird",
+        "social-media-research-skills",
+        "tooljet",
+        "trigger-dev",
+        "twenty-main",
+        "typebot",
+        "waha",
+        "whatsapp-agentkit",
+        "whatsapp-web-js",
+        "whatsmeow",
+        "windmill"
+      ],
+      "count": 48
+    },
+    {
+      "id": "agentes",
+      "title": "Agentes de IA, investigación y navegación",
+      "description": "Construye un agente, delega investigación o dale acceso a páginas y herramientas. Distingue el asistente listo del framework que debes integrar.",
+      "kind": "work",
+      "keywords": [
+        "agentes ia",
+        "research",
+        "investigacion",
+        "scraping",
+        "mcp"
+      ],
+      "starters": [
+        "gpt-researcher",
+        "dify",
+        "langgraph"
+      ],
+      "topics": [
+        {
+          "id": "agentes-frameworks",
+          "title": "Frameworks y equipos de agentes",
+          "description": "Bases para construir agentes y coordinar sus tareas.",
+          "selectors": [
+            {
+              "cat": 3,
+              "subs": [
+                "py",
+                "ts",
+                "experimentos"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "adk-python",
+            "ag2",
+            "agent-framework",
+            "agno",
+            "autogen",
+            "awesome-langgraph",
+            "claude-agent-sdk-python",
+            "crewai",
+            "deepagents",
+            "dspy",
+            "haystack",
+            "hermes-agent-self-evolution",
+            "jev-fraud",
+            "langchain",
+            "langchain4j",
+            "langgraph",
+            "langgraph-supervisor-py",
+            "langgraphjs",
+            "llama-index",
+            "llm-council",
+            "mastra",
+            "metagpt",
+            "mirofish",
+            "openai-agents-python",
+            "openevolve",
+            "pydantic-ai",
+            "semantic-kernel",
+            "smolagents",
+            "vercel-ai"
+          ],
+          "count": 29
+        },
+        {
+          "id": "agentes-visuales",
+          "title": "Constructores visuales de agentes",
+          "description": "Plataformas que permiten diseñar flujos de IA con una interfaz.",
+          "selectors": [
+            {
+              "cat": 3,
+              "subs": [
+                "visual"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "autogpt",
+            "dify",
+            "flowise",
+            "langflow",
+            "sim"
+          ],
+          "count": 5
+        },
+        {
+          "id": "agentes-asistentes",
+          "title": "Asistentes personales y autónomos",
+          "description": "Asistentes listos o adaptables para tareas de varias etapas.",
+          "selectors": [
+            {
+              "cat": 21,
+              "subs": [
+                "asistentes"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "agentes-chat",
+            "deeptutor",
+            "fugu",
+            "hello-halo",
+            "hermes-agent",
+            "mercury-agent",
+            "multica",
+            "openclaw",
+            "opendots",
+            "paperclip",
+            "ruflo",
+            "social-media-agent"
+          ],
+          "count": 12
+        },
+        {
+          "id": "agentes-investigar",
+          "title": "Investigación con fuentes",
+          "description": "Agentes y herramientas de búsqueda para investigar una pregunta.",
+          "selectors": [
+            {
+              "cat": 21,
+              "subs": [
+                "research"
+              ]
+            },
+            {
+              "cat": 4,
+              "subs": [
+                "busqueda"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "agent-reach",
+            "archivebox",
+            "autoresearch",
+            "changedetection",
+            "deer-flow",
+            "gpt-researcher",
+            "last30days-skill",
+            "local-deep-research",
+            "open-deep-research",
+            "searxng",
+            "storm",
+            "vane"
+          ],
+          "count": 12
+        },
+        {
+          "id": "agentes-extraccion",
+          "title": "Scraping y extracción web",
+          "description": "Convertir páginas y redes sociales en contenido o datos.",
+          "selectors": [
+            {
+              "cat": 4,
+              "subs": [
+                "crawlers",
+                "llm",
+                "social"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "awesome-web-scraping",
+            "crawl4ai",
+            "crawlee",
+            "crawlee-python",
+            "defuddle",
+            "firecrawl",
+            "instaloader",
+            "jina-reader",
+            "llm-scraper",
+            "maxun",
+            "scrapegraph-ai",
+            "scrapely",
+            "scrapling",
+            "scrapy",
+            "scrapydweb",
+            "snscrape",
+            "yt-dlp"
+          ],
+          "count": 17
+        },
+        {
+          "id": "agentes-navegacion",
+          "title": "Navegadores y automatización web",
+          "description": "Abrir páginas e interactuar con interfaces reales.",
+          "selectors": [
+            {
+              "cat": 32
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "agent-browser",
+            "awesome-chrome-devtools",
+            "browser-harness",
+            "browser-use",
+            "camofox-browser",
+            "lightpanda",
+            "playwright",
+            "playwright-cli",
+            "puppeteer",
+            "selenium",
+            "skyvern",
+            "stagehand"
+          ],
+          "count": 12
+        },
+        {
+          "id": "agentes-mcp",
+          "title": "MCP: conectar herramientas",
+          "description": "Servidores, clientes y SDKs para dar herramientas a un agente.",
+          "selectors": [
+            {
+              "cat": 5
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "annas-mcp",
+            "awesome-mcp-clients",
+            "awesome-mcp-servers",
+            "blender-mcp",
+            "chrome-devtools-mcp",
+            "context7",
+            "fastmcp",
+            "figma-context-mcp",
+            "ghidramcp",
+            "github-mcp-server",
+            "langchain-mcp-adapters",
+            "mcp",
+            "mcp-for-beginners",
+            "mcp-inspector",
+            "mcp-neo4j",
+            "mcp-python-sdk",
+            "mcp-typescript-sdk",
+            "mcp-use",
+            "playwright-mcp",
+            "public-apis",
+            "serena",
+            "servers",
+            "treg",
+            "unity-mcp"
+          ],
+          "count": 24
+        }
+      ],
+      "repo_ids": [
+        "adk-python",
+        "ag2",
+        "agent-browser",
+        "agent-framework",
+        "agent-reach",
+        "agentes-chat",
+        "agno",
+        "annas-mcp",
+        "archivebox",
+        "autogen",
+        "autogpt",
+        "autoresearch",
+        "awesome-chrome-devtools",
+        "awesome-langgraph",
+        "awesome-mcp-clients",
+        "awesome-mcp-servers",
+        "awesome-web-scraping",
+        "blender-mcp",
+        "browser-harness",
+        "browser-use",
+        "camofox-browser",
+        "changedetection",
+        "chrome-devtools-mcp",
+        "claude-agent-sdk-python",
+        "context7",
+        "crawl4ai",
+        "crawlee",
+        "crawlee-python",
+        "crewai",
+        "deepagents",
+        "deeptutor",
+        "deer-flow",
+        "defuddle",
+        "dify",
+        "dspy",
+        "fastmcp",
+        "figma-context-mcp",
+        "firecrawl",
+        "flowise",
+        "fugu",
+        "ghidramcp",
+        "github-mcp-server",
+        "gpt-researcher",
+        "haystack",
+        "hello-halo",
+        "hermes-agent",
+        "hermes-agent-self-evolution",
+        "instaloader",
+        "jev-fraud",
+        "jina-reader",
+        "langchain",
+        "langchain-mcp-adapters",
+        "langchain4j",
+        "langflow",
+        "langgraph",
+        "langgraph-supervisor-py",
+        "langgraphjs",
+        "last30days-skill",
+        "lightpanda",
+        "llama-index",
+        "llm-council",
+        "llm-scraper",
+        "local-deep-research",
+        "mastra",
+        "maxun",
+        "mcp",
+        "mcp-for-beginners",
+        "mcp-inspector",
+        "mcp-neo4j",
+        "mcp-python-sdk",
+        "mcp-typescript-sdk",
+        "mcp-use",
+        "mercury-agent",
+        "metagpt",
+        "mirofish",
+        "multica",
+        "open-deep-research",
+        "openai-agents-python",
+        "openclaw",
+        "opendots",
+        "openevolve",
+        "paperclip",
+        "playwright",
+        "playwright-cli",
+        "playwright-mcp",
+        "public-apis",
+        "puppeteer",
+        "pydantic-ai",
+        "ruflo",
+        "scrapegraph-ai",
+        "scrapely",
+        "scrapling",
+        "scrapy",
+        "scrapydweb",
+        "searxng",
+        "selenium",
+        "semantic-kernel",
+        "serena",
+        "servers",
+        "sim",
+        "skyvern",
+        "smolagents",
+        "snscrape",
+        "social-media-agent",
+        "stagehand",
+        "storm",
+        "treg",
+        "unity-mcp",
+        "vane",
+        "vercel-ai",
+        "yt-dlp"
+      ],
+      "count": 111
+    },
+    {
+      "id": "ia-local",
+      "title": "IA local, modelos y entrenamiento",
+      "description": "Elige un chat o motor local, explora modelos abiertos y revisa lo necesario para servirlos o entrenarlos.",
+      "kind": "work",
+      "keywords": [
+        "ia local",
+        "modelos locales",
+        "offline",
+        "modelos abiertos"
+      ],
+      "starters": [
+        "jan",
+        "ollama",
+        "open-webui"
+      ],
+      "topics": [
+        {
+          "id": "local-chats",
+          "title": "Chats y asistentes privados",
+          "description": "Interfaces de conversación y espacios de trabajo con tus fuentes.",
+          "selectors": [
+            {
+              "cat": 8,
+              "subs": [
+                "chats",
+                "workspaces",
+                "notebooklm"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "anything-llm",
+            "chatbox",
+            "cherry-studio",
+            "hermes-desktop",
+            "jan",
+            "khoj",
+            "librechat",
+            "lobehub",
+            "muse-spark",
+            "nextcloud-server",
+            "notebooklm-mcp-cli",
+            "notebooklm-py",
+            "odysseus",
+            "open-notebook",
+            "open-webui",
+            "private-gpt",
+            "surfsense",
+            "textgen"
+          ],
+          "count": 18
+        },
+        {
+          "id": "local-motores",
+          "title": "Motores para modelos locales",
+          "description": "Ejecutar modelos en tu equipo o en una máquina administrada por ti.",
+          "selectors": [
+            {
+              "cat": 8,
+              "subs": [
+                "motores"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "airllm",
+            "exo",
+            "freetoken",
+            "llama-cpp",
+            "llamafile",
+            "llmfit",
+            "localai",
+            "magnitude",
+            "ollama",
+            "transformers.js"
+          ],
+          "count": 10
+        },
+        {
+          "id": "local-modelos",
+          "title": "Modelos abiertos y pesos",
+          "description": "Modelos publicados por sus autores para evaluar e integrar.",
+          "selectors": [
+            {
+              "cat": 24,
+              "subs": [
+                "modelos"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "cosmos",
+            "deepseek-coder",
+            "kimi-k2-7-code",
+            "laya",
+            "nemotron",
+            "timesfm"
+          ],
+          "count": 6
+        },
+        {
+          "id": "local-entrenamiento",
+          "title": "Entrenamiento y ajuste fino",
+          "description": "Bibliotecas para entrenar o adaptar modelos a tus datos.",
+          "selectors": [
+            {
+              "cat": 24,
+              "subs": [
+                "entrenamiento"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "bionemo-recipes",
+            "llama-factory",
+            "peft",
+            "pytorch",
+            "tensorflow",
+            "transformers",
+            "trl",
+            "unsloth",
+            "warp"
+          ],
+          "count": 9
+        },
+        {
+          "id": "local-servidores",
+          "title": "Inferencia, servidores y gateways",
+          "description": "Servir modelos y organizar el acceso de tus aplicaciones.",
+          "selectors": [
+            {
+              "cat": 23,
+              "subs": [
+                "serving"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "backdoor",
+            "claude-code-router",
+            "litellm",
+            "omniroute",
+            "sglang",
+            "tensorrt-llm",
+            "vllm"
+          ],
+          "count": 7
+        }
+      ],
+      "repo_ids": [
+        "airllm",
+        "anything-llm",
+        "backdoor",
+        "bionemo-recipes",
+        "chatbox",
+        "cherry-studio",
+        "claude-code-router",
+        "cosmos",
+        "deepseek-coder",
+        "exo",
+        "freetoken",
+        "hermes-desktop",
+        "jan",
+        "khoj",
+        "kimi-k2-7-code",
+        "laya",
+        "librechat",
+        "litellm",
+        "llama-cpp",
+        "llama-factory",
+        "llamafile",
+        "llmfit",
+        "lobehub",
+        "localai",
+        "magnitude",
+        "muse-spark",
+        "nemotron",
+        "nextcloud-server",
+        "notebooklm-mcp-cli",
+        "notebooklm-py",
+        "odysseus",
+        "ollama",
+        "omniroute",
+        "open-notebook",
+        "open-webui",
+        "peft",
+        "private-gpt",
+        "pytorch",
+        "sglang",
+        "surfsense",
+        "tensorflow",
+        "tensorrt-llm",
+        "textgen",
+        "timesfm",
+        "transformers",
+        "transformers.js",
+        "trl",
+        "unsloth",
+        "vllm",
+        "warp"
+      ],
+      "count": 50
+    },
+    {
+      "id": "documentos",
+      "title": "Documentos, presentaciones y conocimiento",
+      "description": "Lee y transforma archivos, crea explicaciones visuales y construye búsquedas sobre tus documentos.",
+      "kind": "work",
+      "keywords": [
+        "documentos",
+        "pdf",
+        "presentaciones",
+        "rag",
+        "conocimiento"
+      ],
+      "starters": [
+        "stirling-pdf",
+        "ppt-master",
+        "ragflow"
+      ],
+      "topics": [
+        {
+          "id": "docs-conversion",
+          "title": "PDF y conversión de documentos",
+          "description": "Leer, convertir, firmar y organizar archivos.",
+          "selectors": [
+            {
+              "cat": 13,
+              "subs": [
+                "conversion",
+                "pdf",
+                "gestion"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "docling",
+            "docuseal",
+            "marker",
+            "markitdown",
+            "mineru",
+            "pandoc",
+            "paperless-ngx",
+            "pdf-inspector",
+            "pdfcraft",
+            "pdfding",
+            "pdfmathtranslate",
+            "stirling-pdf",
+            "unstructured",
+            "youtube2webpage"
+          ],
+          "count": 14
+        },
+        {
+          "id": "docs-ocr",
+          "title": "OCR y documentos escaneados",
+          "description": "Extraer texto de imágenes, libros y páginas escaneadas.",
+          "selectors": [
+            {
+              "cat": 13,
+              "subs": [
+                "ocr"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "ocrmypdf",
+            "olmocr",
+            "paddleocr",
+            "pdf-craft",
+            "tesseract",
+            "unlimited-ocr"
+          ],
+          "count": 6
+        },
+        {
+          "id": "docs-slides",
+          "title": "Presentaciones y diapositivas",
+          "description": "Preparar y exportar una presentación.",
+          "selectors": [
+            {
+              "cat": 31,
+              "subs": [
+                "slides"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "marp",
+            "ppt-master",
+            "presenton",
+            "reveal.js",
+            "slidev"
+          ],
+          "count": 5
+        },
+        {
+          "id": "docs-diagramas",
+          "title": "Diagramas y documentación visual",
+          "description": "Explicar sistemas e ideas mediante diagramas.",
+          "selectors": [
+            {
+              "cat": 31,
+              "subs": [
+                "diagramas"
+              ]
+            }
+          ],
+          "repos": [
+            "excalidraw"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "archify",
+            "diagram-design",
+            "excalidraw",
+            "mermaid"
+          ],
+          "count": 4
+        },
+        {
+          "id": "docs-rag",
+          "title": "Preguntar a documentos y buscar conocimiento",
+          "description": "Recuperar fuentes con RAG y búsqueda semántica.",
+          "selectors": [
+            {
+              "cat": 6,
+              "subs": [
+                "rag",
+                "vectores"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "agentic-rag-for-dummies",
+            "chroma",
+            "faiss",
+            "graphrag",
+            "lightrag",
+            "milvus",
+            "onyx",
+            "pageindex",
+            "pgvector",
+            "qdrant",
+            "ragflow",
+            "turbovec"
+          ],
+          "count": 12
+        },
+        {
+          "id": "docs-memoria",
+          "title": "Memoria y contexto para agentes",
+          "description": "Conservar hechos y decisiones entre sesiones.",
+          "selectors": [
+            {
+              "cat": 6,
+              "subs": [
+                "memoria"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "agentmemory",
+            "claude-mem",
+            "cognee",
+            "dsh-noema",
+            "engram",
+            "graphiti",
+            "letta",
+            "mem0",
+            "mempalace",
+            "openviking",
+            "supermemory"
+          ],
+          "count": 11
+        }
+      ],
+      "repo_ids": [
+        "agentic-rag-for-dummies",
+        "agentmemory",
+        "archify",
+        "chroma",
+        "claude-mem",
+        "cognee",
+        "diagram-design",
+        "docling",
+        "docuseal",
+        "dsh-noema",
+        "engram",
+        "excalidraw",
+        "faiss",
+        "graphiti",
+        "graphrag",
+        "letta",
+        "lightrag",
+        "marker",
+        "markitdown",
+        "marp",
+        "mem0",
+        "mempalace",
+        "mermaid",
+        "milvus",
+        "mineru",
+        "ocrmypdf",
+        "olmocr",
+        "onyx",
+        "openviking",
+        "paddleocr",
+        "pageindex",
+        "pandoc",
+        "paperless-ngx",
+        "pdf-craft",
+        "pdf-inspector",
+        "pdfcraft",
+        "pdfding",
+        "pdfmathtranslate",
+        "pgvector",
+        "ppt-master",
+        "presenton",
+        "qdrant",
+        "ragflow",
+        "reveal.js",
+        "slidev",
+        "stirling-pdf",
+        "supermemory",
+        "tesseract",
+        "turbovec",
+        "unlimited-ocr",
+        "unstructured",
+        "youtube2webpage"
+      ],
+      "count": 52
+    },
+    {
+      "id": "datos",
+      "title": "Datos, dashboards y analítica",
+      "description": "Consulta y transforma datos, crea gráficos y mide lo que ocurre en una aplicación o negocio.",
+      "kind": "work",
+      "keywords": [
+        "datos",
+        "analitica",
+        "dashboards",
+        "business intelligence"
+      ],
+      "starters": [
+        "duckdb",
+        "metabase",
+        "umami"
+      ],
+      "topics": [
+        {
+          "id": "datos-procesar",
+          "title": "Consulta y procesamiento de datos",
+          "description": "Motores de consulta, tablas y conjuntos de datos.",
+          "selectors": [
+            {
+              "cat": 25,
+              "subs": [
+                "datos"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "awesome-bigdata",
+            "bigdata",
+            "data-science-ipython-notebooks",
+            "duckdb",
+            "globalbuildingatlas",
+            "hudi",
+            "marimo",
+            "polars"
+          ],
+          "count": 8
+        },
+        {
+          "id": "datos-apps",
+          "title": "Notebooks y aplicaciones de datos",
+          "description": "Explorar datos y compartir una interfaz de análisis.",
+          "selectors": [
+            {
+              "cat": 25,
+              "subs": [
+                "apps"
+              ]
+            }
+          ],
+          "repos": [
+            "marimo"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "dash",
+            "gradio",
+            "marimo",
+            "streamlit"
+          ],
+          "count": 4
+        },
+        {
+          "id": "datos-bi",
+          "title": "Dashboards y BI",
+          "description": "Consultar indicadores y explorar información de negocio.",
+          "selectors": [
+            {
+              "cat": 10,
+              "subs": [
+                "bi"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "grafana",
+            "metabase",
+            "pandas-ai",
+            "redash",
+            "superset",
+            "wrenai"
+          ],
+          "count": 6
+        },
+        {
+          "id": "datos-graficos",
+          "title": "Gráficos y visualización",
+          "description": "Bibliotecas para construir gráficos dentro de una aplicación.",
+          "selectors": [
+            {
+              "cat": 10,
+              "subs": [
+                "graficos"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "chart-js",
+            "d3",
+            "echarts",
+            "recharts",
+            "uplot"
+          ],
+          "count": 5
+        },
+        {
+          "id": "datos-producto",
+          "title": "Analítica web y de producto",
+          "description": "Medir visitas, uso y comportamiento de usuarios.",
+          "selectors": [
+            {
+              "cat": 10,
+              "subs": [
+                "producto"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "matomo",
+            "plausible",
+            "posthog",
+            "umami"
+          ],
+          "count": 4
+        },
+        {
+          "id": "datos-recursos",
+          "title": "Aprender análisis de datos",
+          "description": "Directorios, proyectos de práctica y hojas de ruta.",
+          "selectors": [
+            {
+              "cat": 10,
+              "subs": [
+                "recursos"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "awesome-dataviz",
+            "data-analyst-roadmap",
+            "dataanalystportfolioprojects"
+          ],
+          "count": 3
+        }
+      ],
+      "repo_ids": [
+        "awesome-bigdata",
+        "awesome-dataviz",
+        "bigdata",
+        "chart-js",
+        "d3",
+        "dash",
+        "data-analyst-roadmap",
+        "data-science-ipython-notebooks",
+        "dataanalystportfolioprojects",
+        "duckdb",
+        "echarts",
+        "globalbuildingatlas",
+        "gradio",
+        "grafana",
+        "hudi",
+        "marimo",
+        "matomo",
+        "metabase",
+        "pandas-ai",
+        "plausible",
+        "polars",
+        "posthog",
+        "recharts",
+        "redash",
+        "streamlit",
+        "superset",
+        "umami",
+        "uplot",
+        "wrenai"
+      ],
+      "count": 29
+    },
+    {
+      "id": "productividad",
+      "title": "Productividad, notas y servicios personales",
+      "description": "Organiza información, sincroniza archivos y prepara herramientas para tu trabajo cotidiano y tu hogar.",
+      "kind": "work",
+      "keywords": [
+        "productividad",
+        "notas",
+        "obsidian",
+        "segundo cerebro",
+        "servicios personales"
+      ],
+      "starters": [
+        "anytype-ts",
+        "syncthing",
+        "home-assistant"
+      ],
+      "topics": [
+        {
+          "id": "personal-notas",
+          "title": "Notas, Obsidian y segundo cerebro",
+          "description": "Organizar notas y ampliar una bóveda de conocimiento.",
+          "selectors": [
+            {
+              "cat": 15,
+              "subs": [
+                "notas"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "anytype-ts",
+            "appflowy",
+            "claude-obsidian",
+            "jsoncanvas",
+            "karakeep",
+            "kepano-obsidian",
+            "obsidian-clipper",
+            "obsidian-help",
+            "obsidian-importer",
+            "obsidian-minimal",
+            "obsidian-releases",
+            "obsidian-sample-plugin",
+            "obsidian-second-brain",
+            "obsidian-skills"
+          ],
+          "count": 14
+        },
+        {
+          "id": "personal-archivos",
+          "title": "Archivos, lectura y bibliotecas",
+          "description": "Sincronizar archivos y organizar libros o contenido personal.",
+          "selectors": [
+            {
+              "cat": 15,
+              "subs": [
+                "archivos",
+                "lectura"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "audiobookshelf",
+            "syncthing"
+          ],
+          "count": 2
+        },
+        {
+          "id": "personal-privacidad",
+          "title": "Contraseñas y privacidad",
+          "description": "Herramientas personales para gestionar credenciales y proteger datos.",
+          "selectors": [
+            {
+              "cat": 15,
+              "subs": [
+                "privacidad"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "adguardhome",
+            "bitwarden-clients",
+            "vaultwarden"
+          ],
+          "count": 3
+        },
+        {
+          "id": "personal-hogar",
+          "title": "Hogar, dispositivos y utilidades",
+          "description": "Automatización doméstica y herramientas para tus equipos.",
+          "selectors": [
+            {
+              "cat": 15,
+              "subs": [
+                "domotica",
+                "personal"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "40-questions",
+            "ai-job-search",
+            "cleanyourtv",
+            "home-assistant",
+            "optimizerduck",
+            "universal-android-debloater-next-generation"
+          ],
+          "count": 6
+        },
+        {
+          "id": "personal-aprender",
+          "title": "Aprendizaje asistido",
+          "description": "Organizar experiencias de estudio con ayuda de IA.",
+          "selectors": [
+            {
+              "cat": 15,
+              "subs": [
+                "aprendizaje"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "openmaic"
+          ],
+          "count": 1
+        },
+        {
+          "id": "personal-escritura",
+          "title": "Escritura y calidad de texto",
+          "description": "Revisar y mejorar el contenido escrito con ayuda de un agente.",
+          "selectors": [
+            {
+              "cat": 27,
+              "subs": [
+                "escritura"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "humanizer",
+            "i-have-adhd",
+            "no-ai-slop",
+            "stop-slop"
+          ],
+          "count": 4
+        }
+      ],
+      "repo_ids": [
+        "40-questions",
+        "adguardhome",
+        "ai-job-search",
+        "anytype-ts",
+        "appflowy",
+        "audiobookshelf",
+        "bitwarden-clients",
+        "claude-obsidian",
+        "cleanyourtv",
+        "home-assistant",
+        "humanizer",
+        "i-have-adhd",
+        "jsoncanvas",
+        "karakeep",
+        "kepano-obsidian",
+        "no-ai-slop",
+        "obsidian-clipper",
+        "obsidian-help",
+        "obsidian-importer",
+        "obsidian-minimal",
+        "obsidian-releases",
+        "obsidian-sample-plugin",
+        "obsidian-second-brain",
+        "obsidian-skills",
+        "openmaic",
+        "optimizerduck",
+        "stop-slop",
+        "syncthing",
+        "universal-android-debloater-next-generation",
+        "vaultwarden"
+      ],
+      "count": 30
+    },
+    {
+      "id": "desarrollo",
+      "title": "Programación, backend y despliegue",
+      "description": "Elige un agente de código, comprende un proyecto y prepara su infraestructura, pruebas y seguimiento.",
+      "kind": "work",
+      "keywords": [
+        "programacion",
+        "backend",
+        "devops",
+        "despliegue",
+        "desarrollo de software"
+      ],
+      "starters": [
+        "codex",
+        "repomix",
+        "coolify"
+      ],
+      "topics": [
+        {
+          "id": "dev-codigo",
+          "title": "Agentes y editores para programar",
+          "description": "Herramientas de terminal, IDE y sesiones de desarrollo.",
+          "selectors": [
+            {
+              "cat": 20
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "aider",
+            "claude-code",
+            "cline",
+            "codex",
+            "continue",
+            "dsh-android",
+            "dsh-game-studio",
+            "dsh-ios",
+            "gemini-cli",
+            "goose",
+            "mimo-code",
+            "open-interpreter",
+            "open-swe",
+            "openclaude",
+            "opencode",
+            "opencode-legacy",
+            "opencode-manager",
+            "opencursor",
+            "openhands",
+            "openidea",
+            "swe-agent",
+            "t3code"
+          ],
+          "count": 22
+        },
+        {
+          "id": "dev-comprender",
+          "title": "Comprender y revisar código",
+          "description": "Índices y análisis para orientarte dentro de repositorios.",
+          "selectors": [
+            {
+              "cat": 7
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "ast-grep",
+            "cli",
+            "codebase-memory-mcp",
+            "codegraph",
+            "deepwiki-open",
+            "defending-code-reference-harness",
+            "dsh-qa",
+            "floorplan",
+            "gitnexus",
+            "graphify",
+            "openai-python",
+            "repomix",
+            "semgrep",
+            "swe-bench",
+            "tree-sitter"
+          ],
+          "count": 15
+        },
+        {
+          "id": "dev-infra",
+          "title": "Backend, alojamiento y despliegue",
+          "description": "Infraestructura, servicios y herramientas de operación.",
+          "selectors": [
+            {
+              "cat": 22
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "agent-desktop",
+            "agent-protocol",
+            "casaos",
+            "claude-task-master",
+            "codex-chatgpt-web",
+            "composio",
+            "computer-use-preview",
+            "coolify",
+            "e2b",
+            "free-for-dev",
+            "freedomain",
+            "masterdnsvpn",
+            "nemo-agent-toolkit",
+            "nemoclaw",
+            "nodeterm",
+            "sandbox",
+            "shepherd",
+            "supabase"
+          ],
+          "count": 18
+        },
+        {
+          "id": "dev-evaluar",
+          "title": "Evaluación, trazas y observabilidad",
+          "description": "Medir resultados y revisar lo que hace una aplicación de IA.",
+          "selectors": [
+            {
+              "cat": 23,
+              "subs": [
+                "observabilidad"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "claude-code-usage-monitor",
+            "deepeval",
+            "guardrails",
+            "langfuse",
+            "loguru",
+            "mlflow",
+            "opik",
+            "phoenix",
+            "promptfoo",
+            "ragas"
+          ],
+          "count": 10
+        },
+        {
+          "id": "dev-contexto",
+          "title": "Contexto, consumo y enrutamiento",
+          "description": "Reducir contexto innecesario y organizar el acceso a modelos.",
+          "selectors": [
+            {
+              "cat": 23,
+              "subs": [
+                "tokens",
+                "serving"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "backdoor",
+            "claude-code-router",
+            "headroom",
+            "litellm",
+            "omniroute",
+            "rtk",
+            "sglang",
+            "tensorrt-llm",
+            "vllm"
+          ],
+          "count": 9
+        }
+      ],
+      "repo_ids": [
+        "agent-desktop",
+        "agent-protocol",
+        "aider",
+        "ast-grep",
+        "backdoor",
+        "casaos",
+        "claude-code",
+        "claude-code-router",
+        "claude-code-usage-monitor",
+        "claude-task-master",
+        "cli",
+        "cline",
+        "codebase-memory-mcp",
+        "codegraph",
+        "codex",
+        "codex-chatgpt-web",
+        "composio",
+        "computer-use-preview",
+        "continue",
+        "coolify",
+        "deepeval",
+        "deepwiki-open",
+        "defending-code-reference-harness",
+        "dsh-android",
+        "dsh-game-studio",
+        "dsh-ios",
+        "dsh-qa",
+        "e2b",
+        "floorplan",
+        "free-for-dev",
+        "freedomain",
+        "gemini-cli",
+        "gitnexus",
+        "goose",
+        "graphify",
+        "guardrails",
+        "headroom",
+        "langfuse",
+        "litellm",
+        "loguru",
+        "masterdnsvpn",
+        "mimo-code",
+        "mlflow",
+        "nemo-agent-toolkit",
+        "nemoclaw",
+        "nodeterm",
+        "omniroute",
+        "open-interpreter",
+        "open-swe",
+        "openai-python",
+        "openclaude",
+        "opencode",
+        "opencode-legacy",
+        "opencode-manager",
+        "opencursor",
+        "openhands",
+        "openidea",
+        "opik",
+        "phoenix",
+        "promptfoo",
+        "ragas",
+        "repomix",
+        "rtk",
+        "sandbox",
+        "semgrep",
+        "sglang",
+        "shepherd",
+        "supabase",
+        "swe-agent",
+        "swe-bench",
+        "t3code",
+        "tensorrt-llm",
+        "tree-sitter",
+        "vllm"
+      ],
+      "count": 74
+    },
+    {
+      "id": "vision",
+      "title": "Visión artificial, mapas y percepción",
+      "description": "Detecta objetos o movimiento, interpreta imágenes y trabaja con información espacial y geográfica.",
+      "kind": "work",
+      "keywords": [
+        "vision artificial",
+        "computer vision",
+        "mapas",
+        "geoespacial",
+        "percepcion"
+      ],
+      "starters": [
+        "ultralytics",
+        "opencv",
+        "webodm"
+      ],
+      "topics": [
+        {
+          "id": "vision-detectar",
+          "title": "Detección, segmentación y seguimiento",
+          "description": "Modelos y herramientas de visión por computador.",
+          "selectors": [
+            {
+              "cat": 28,
+              "subs": [
+                "vision"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "4d-humans",
+            "easymocap",
+            "kornia",
+            "label-studio",
+            "mediapipe",
+            "mmpose",
+            "opencv",
+            "openpose",
+            "sam2",
+            "segment-anything",
+            "supervision",
+            "tfjs-models",
+            "ultralytics",
+            "videopose3d",
+            "wham"
+          ],
+          "count": 15
+        },
+        {
+          "id": "vision-rostros",
+          "title": "Rostros y análisis visual",
+          "description": "Herramientas especializadas en caras y retratos.",
+          "selectors": [
+            {
+              "cat": 28,
+              "subs": [
+                "rostros"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "deep-live-cam",
+            "face-recognition",
+            "facefusion",
+            "insightface",
+            "liveportrait"
+          ],
+          "count": 5
+        },
+        {
+          "id": "vision-espacial",
+          "title": "Sensores y percepción espacial",
+          "description": "Observar y analizar información del entorno.",
+          "selectors": [
+            {
+              "cat": 28,
+              "subs": [
+                "sensores"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "ruview"
+          ],
+          "count": 1
+        },
+        {
+          "id": "vision-mapas",
+          "title": "Mapas, OSINT y fotogrametría",
+          "description": "Crear y explorar mapas con imágenes o fuentes abiertas.",
+          "selectors": [
+            {
+              "cat": 10,
+              "subs": [
+                "osint",
+                "geoespacial"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "gods-eye-view",
+            "odm",
+            "osiris",
+            "pythia",
+            "webodm"
+          ],
+          "count": 5
+        }
+      ],
+      "repo_ids": [
+        "4d-humans",
+        "deep-live-cam",
+        "easymocap",
+        "face-recognition",
+        "facefusion",
+        "gods-eye-view",
+        "insightface",
+        "kornia",
+        "label-studio",
+        "liveportrait",
+        "mediapipe",
+        "mmpose",
+        "odm",
+        "opencv",
+        "openpose",
+        "osiris",
+        "pythia",
+        "ruview",
+        "sam2",
+        "segment-anything",
+        "supervision",
+        "tfjs-models",
+        "ultralytics",
+        "videopose3d",
+        "webodm",
+        "wham"
+      ],
+      "count": 26
+    },
+    {
+      "id": "aprender",
+      "title": "Aprender IA, prompts y skills",
+      "description": "Comprende conceptos, practica con ejemplos y elige instrucciones que mejoren el trabajo de tus agentes.",
+      "kind": "work",
+      "keywords": [
+        "aprender",
+        "formacion",
+        "cursos",
+        "skills",
+        "prompts"
+      ],
+      "starters": [
+        "generative-ai-for-beginners",
+        "prompt-engineering-guide",
+        "superpowers"
+      ],
+      "topics": [
+        {
+          "id": "aprender-cursos",
+          "title": "Cursos, guías y ejemplos",
+          "description": "Material para empezar a construir y entender aplicaciones de IA.",
+          "selectors": [
+            {
+              "cat": 19,
+              "subs": [
+                "guias"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "12-factor-agents",
+            "500-ai-agents-projects",
+            "agents-towards-production",
+            "ai-agents-for-beginners",
+            "ai-engineering-hub",
+            "awesome-harness-engineering",
+            "awesome-llm-apps",
+            "claude-cookbooks",
+            "claude-quickstarts",
+            "context-engineering",
+            "generative-ai-for-beginners",
+            "loop-engineering",
+            "mvanhorn",
+            "openai-cookbook"
+          ],
+          "count": 14
+        },
+        {
+          "id": "aprender-prompts",
+          "title": "Prompts y contexto",
+          "description": "Escribir mejores encargos y comprender instrucciones de agentes.",
+          "selectors": [
+            {
+              "cat": 19,
+              "subs": [
+                "prompts"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "chatgpt-dan",
+            "chatgpt-system-prompt",
+            "fabric",
+            "prompt-eng-tutorial",
+            "prompt-engineering-guide",
+            "prompt-master",
+            "prompts-chat",
+            "system-prompts-and-models-of-ai-tools"
+          ],
+          "count": 8
+        },
+        {
+          "id": "aprender-modelos",
+          "title": "Aprender cómo funcionan los modelos",
+          "description": "Ejemplos de machine learning y entrenamiento desde cero.",
+          "selectors": [
+            {
+              "cat": 19,
+              "subs": [
+                "aprender"
+              ]
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "awesome-machine-learning",
+            "how-to-train-your-gpt",
+            "llm-course",
+            "llm.c",
+            "llms-from-scratch",
+            "machinelearning",
+            "nanochat",
+            "nanogpt",
+            "python-machine-learning-book",
+            "train-llm-from-scratch"
+          ],
+          "count": 10
+        },
+        {
+          "id": "aprender-metodos",
+          "title": "Métodos, plugins y catálogos de skills",
+          "description": "Explorar instrucciones generales y formas de trabajar con agentes.",
+          "selectors": [
+            {
+              "cat": 2
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "agent-skills",
+            "agent-toolkit",
+            "andrej-karpathy-skills",
+            "anthropic-skills",
+            "antigravity-awesome-skills",
+            "autoskills",
+            "awesome-agent-skills",
+            "awesome-agents",
+            "awesome-claude-code",
+            "awesome-claude-skills",
+            "awesome-copilot",
+            "bmad-method",
+            "book-to-skill",
+            "claude-code-hooks-mastery",
+            "claude-plugins-official",
+            "claude-token-efficient",
+            "codex-plugin-cc",
+            "ecc",
+            "elephant-goldfish-model",
+            "gemini-skills",
+            "google-skills",
+            "grok-plugin-claude-code",
+            "gstack",
+            "plugins",
+            "ponytail",
+            "skills",
+            "skillspector",
+            "spec-kit",
+            "superclaude-framework",
+            "superpowers",
+            "wshobson-agents"
+          ],
+          "count": 31
+        },
+        {
+          "id": "aprender-especialidades",
+          "title": "Skills por oficio y especialidad",
+          "description": "Explorar instrucciones de diseño, escritura, ciencia, marketing y negocio.",
+          "selectors": [
+            {
+              "cat": 27
+            }
+          ],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "3dviz-pro-max",
+            "agency-agents",
+            "anatomy",
+            "arcads-claude-code",
+            "blender-skills",
+            "claude-seo",
+            "creative-architect",
+            "design-dna",
+            "design.md",
+            "dream-loop",
+            "financial-services",
+            "front-end-checklist",
+            "genjutsu",
+            "geo-seo-claude",
+            "gsap-skills",
+            "hallmark",
+            "humanizer",
+            "i-have-adhd",
+            "impeccable",
+            "instagram-agent-skill",
+            "linkedin-agent-skill",
+            "logo-design-skill",
+            "marketingskills",
+            "minimalist-entrepreneur-skills",
+            "modern-web-guidance",
+            "motion-design-skill",
+            "no-ai-slop",
+            "scientific-agent-skills",
+            "skills-emil",
+            "social-media-research-skills",
+            "stitch-skills",
+            "stop-slop",
+            "taste-skill",
+            "threejs-game-skills",
+            "threejs-skills",
+            "ui-ux-pro-max-skill"
+          ],
+          "count": 36
+        }
+      ],
+      "repo_ids": [
+        "12-factor-agents",
+        "3dviz-pro-max",
+        "500-ai-agents-projects",
+        "agency-agents",
+        "agent-skills",
+        "agent-toolkit",
+        "agents-towards-production",
+        "ai-agents-for-beginners",
+        "ai-engineering-hub",
+        "anatomy",
+        "andrej-karpathy-skills",
+        "anthropic-skills",
+        "antigravity-awesome-skills",
+        "arcads-claude-code",
+        "autoskills",
+        "awesome-agent-skills",
+        "awesome-agents",
+        "awesome-claude-code",
+        "awesome-claude-skills",
+        "awesome-copilot",
+        "awesome-harness-engineering",
+        "awesome-llm-apps",
+        "awesome-machine-learning",
+        "blender-skills",
+        "bmad-method",
+        "book-to-skill",
+        "chatgpt-dan",
+        "chatgpt-system-prompt",
+        "claude-code-hooks-mastery",
+        "claude-cookbooks",
+        "claude-plugins-official",
+        "claude-quickstarts",
+        "claude-seo",
+        "claude-token-efficient",
+        "codex-plugin-cc",
+        "context-engineering",
+        "creative-architect",
+        "design-dna",
+        "design.md",
+        "dream-loop",
+        "ecc",
+        "elephant-goldfish-model",
+        "fabric",
+        "financial-services",
+        "front-end-checklist",
+        "gemini-skills",
+        "generative-ai-for-beginners",
+        "genjutsu",
+        "geo-seo-claude",
+        "google-skills",
+        "grok-plugin-claude-code",
+        "gsap-skills",
+        "gstack",
+        "hallmark",
+        "how-to-train-your-gpt",
+        "humanizer",
+        "i-have-adhd",
+        "impeccable",
+        "instagram-agent-skill",
+        "linkedin-agent-skill",
+        "llm-course",
+        "llm.c",
+        "llms-from-scratch",
+        "logo-design-skill",
+        "loop-engineering",
+        "machinelearning",
+        "marketingskills",
+        "minimalist-entrepreneur-skills",
+        "modern-web-guidance",
+        "motion-design-skill",
+        "mvanhorn",
+        "nanochat",
+        "nanogpt",
+        "no-ai-slop",
+        "openai-cookbook",
+        "plugins",
+        "ponytail",
+        "prompt-eng-tutorial",
+        "prompt-engineering-guide",
+        "prompt-master",
+        "prompts-chat",
+        "python-machine-learning-book",
+        "scientific-agent-skills",
+        "skills",
+        "skills-emil",
+        "skillspector",
+        "social-media-research-skills",
+        "spec-kit",
+        "stitch-skills",
+        "stop-slop",
+        "superclaude-framework",
+        "superpowers",
+        "system-prompts-and-models-of-ai-tools",
+        "taste-skill",
+        "threejs-game-skills",
+        "threejs-skills",
+        "train-llm-from-scratch",
+        "ui-ux-pro-max-skill",
+        "wshobson-agents"
+      ],
+      "count": 99
+    },
+    {
+      "id": "configurar-claude-code",
+      "title": "Configuración de Claude Code",
+      "description": "Prepara Claude Code, elige plugins y conecta herramientas para trabajar con un proyecto real.",
+      "kind": "tool",
+      "keywords": [
+        "configurar claude code",
+        "configuracion claude code",
+        "setup claude code"
+      ],
+      "starters": [
+        "claude-code",
+        "claude-plugins-official",
+        "superpowers"
+      ],
+      "topics": [
+        {
+          "id": "claude-inicio",
+          "title": "Instalación y primeros pasos",
+          "description": "Cliente oficial y selección inicial de herramientas.",
+          "selectors": [],
+          "repos": [
+            "claude-code"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "claude-code"
+          ],
+          "count": 1
+        },
+        {
+          "id": "claude-skills",
+          "title": "Skills, plugins y métodos",
+          "description": "Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.",
+          "selectors": [],
+          "repos": [
+            "anthropic-skills",
+            "claude-plugins-official",
+            "superpowers",
+            "agent-toolkit",
+            "antigravity-awesome-skills",
+            "superclaude-framework"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "agent-toolkit",
+            "anthropic-skills",
+            "antigravity-awesome-skills",
+            "claude-plugins-official",
+            "superclaude-framework",
+            "superpowers"
+          ],
+          "count": 6
+        },
+        {
+          "id": "claude-mcp",
+          "title": "MCP y navegador",
+          "description": "Conectar documentación, repositorios y herramientas de navegador.",
+          "selectors": [],
+          "repos": [
+            "context7",
+            "github-mcp-server",
+            "playwright-mcp",
+            "chrome-devtools-mcp",
+            "serena"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "chrome-devtools-mcp",
+            "context7",
+            "github-mcp-server",
+            "playwright-mcp",
+            "serena"
+          ],
+          "count": 5
+        },
+        {
+          "id": "claude-memoria",
+          "title": "Memoria y uso del contexto",
+          "description": "Conservar decisiones y revisar el contexto de las sesiones.",
+          "selectors": [],
+          "repos": [
+            "claude-mem",
+            "mempalace",
+            "engram",
+            "headroom",
+            "claude-token-efficient",
+            "rtk"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "claude-mem",
+            "claude-token-efficient",
+            "engram",
+            "headroom",
+            "mempalace",
+            "rtk"
+          ],
+          "count": 6
+        },
+        {
+          "id": "claude-hooks",
+          "title": "Hooks y automatización de sesiones",
+          "description": "Material de consulta con ejemplos de hooks y controles de Claude Code. Revisa cada ejemplo antes de adaptarlo.",
+          "selectors": [],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [
+            "claude-code-hooks-mastery"
+          ],
+          "repo_ids": [
+            "claude-code-hooks-mastery"
+          ],
+          "count": 1
+        },
+        {
+          "id": "claude-consumo",
+          "title": "Consumo y proveedores",
+          "description": "Herramientas auxiliares para observar uso y estudiar el enrutamiento. No son una ampliación de tu plan.",
+          "selectors": [],
+          "repos": [],
+          "keywords": [],
+          "reference_repos": [
+            "claude-code-usage-monitor",
+            "claude-code-router"
+          ],
+          "repo_ids": [
+            "claude-code-router",
+            "claude-code-usage-monitor"
+          ],
+          "count": 2
+        },
+        {
+          "id": "claude-especialidades",
+          "title": "Diseño, marketing y producción",
+          "description": "Skills de oficio documentadas para Claude Code.",
+          "selectors": [],
+          "repos": [
+            "taste-skill",
+            "impeccable",
+            "marketingskills",
+            "creative-architect",
+            "skills-remotion",
+            "scientific-agent-skills",
+            "cybersecurity-skills"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "creative-architect",
+            "cybersecurity-skills",
+            "impeccable",
+            "marketingskills",
+            "scientific-agent-skills",
+            "skills-remotion",
+            "taste-skill"
+          ],
+          "count": 7
+        }
+      ],
+      "client": "claude_code",
+      "official_url": "https://github.com/anthropics/claude-code#readme",
+      "guide": [
+        {
+          "title": "Prepara el cliente",
+          "text": "Abre la fuente oficial de Claude Code, elige la instalación para tu sistema y comprueba el acceso de tu cuenta antes de añadir extensiones."
+        },
+        {
+          "title": "Prueba un proyecto pequeño",
+          "text": "Abre una carpeta de prueba y pide al agente que explique un archivo. Confirma qué permisos solicita y que puedes revisar los cambios."
+        },
+        {
+          "title": "Añade una mejora concreta",
+          "text": "Elige una sola skill o conexión de las subcategorías. Abre su ficha, lee la fuente y sigue la instalación indicada para este cliente."
+        },
+        {
+          "title": "Comprueba el resultado y el consumo",
+          "text": "Repite la tarea pequeña, revisa si la mejora ayuda y consulta el uso de tu cuenta. Los servicios externos tienen sus propios accesos y costes."
+        }
+      ],
+      "scope": "Esta colección reúne clientes, extensiones y material para configurar el agente. Cada ficha distingue su forma de uso. La compatibilidad con skills o MCP no implica que tu plan pague todas las APIs de las aplicaciones que construyas.",
+      "evidence": [
+        {
+          "repo_id": "claude-code-hooks-mastery",
+          "source": "https://github.com/disler/claude-code-hooks-mastery/blob/main/README.md",
+          "readme_blob_sha": "0adccd1a273c80cfb634048f47fa308fc3120c66",
+          "checked_at": "2026-11-14",
+          "usage": "reference"
+        },
+        {
+          "repo_id": "claude-code-usage-monitor",
+          "source": "https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor/blob/main/README.md",
+          "readme_blob_sha": "270b9dc93445e38aca76b9443e91b1a29a8ecdb4",
+          "checked_at": "2026-11-14",
+          "usage": "reference"
+        },
+        {
+          "repo_id": "claude-code-router",
+          "source": "https://github.com/musistudio/claude-code-router/blob/main/README.md",
+          "readme_blob_sha": "c8b6cdc4f3e34665bb99cee513b232c71f722cb1",
+          "checked_at": "2026-11-14",
+          "usage": "reference"
+        }
+      ],
+      "repo_ids": [
+        "agent-toolkit",
+        "anthropic-skills",
+        "antigravity-awesome-skills",
+        "chrome-devtools-mcp",
+        "claude-code",
+        "claude-code-hooks-mastery",
+        "claude-code-router",
+        "claude-code-usage-monitor",
+        "claude-mem",
+        "claude-plugins-official",
+        "claude-token-efficient",
+        "context7",
+        "creative-architect",
+        "cybersecurity-skills",
+        "engram",
+        "github-mcp-server",
+        "headroom",
+        "impeccable",
+        "marketingskills",
+        "mempalace",
+        "playwright-mcp",
+        "rtk",
+        "scientific-agent-skills",
+        "serena",
+        "skills-remotion",
+        "superclaude-framework",
+        "superpowers",
+        "taste-skill"
+      ],
+      "count": 28
+    },
+    {
+      "id": "configurar-codex",
+      "title": "Configuración de Codex",
+      "description": "Prepara el cliente de Codex y reúne skills, contexto y conexiones que tienen compatibilidad documentada.",
+      "kind": "tool",
+      "keywords": [
+        "configurar codex",
+        "configuracion codex",
+        "setup codex",
+        "optimizar codex"
+      ],
+      "starters": [
+        "codex",
+        "agent-skills",
+        "superpowers"
+      ],
+      "topics": [
+        {
+          "id": "codex-inicio",
+          "title": "Instalación y primeros pasos",
+          "description": "Cliente oficial y formas de empezar con un proyecto.",
+          "selectors": [],
+          "repos": [
+            "codex"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "codex"
+          ],
+          "count": 1
+        },
+        {
+          "id": "codex-skills",
+          "title": "Skills y método de trabajo",
+          "description": "Instrucciones y plugins documentados para Codex.",
+          "selectors": [],
+          "repos": [
+            "agent-skills",
+            "superpowers",
+            "antigravity-awesome-skills",
+            "agent-toolkit",
+            "google-skills",
+            "stitch-skills"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "agent-skills",
+            "agent-toolkit",
+            "antigravity-awesome-skills",
+            "google-skills",
+            "stitch-skills",
+            "superpowers"
+          ],
+          "count": 6
+        },
+        {
+          "id": "codex-mcp",
+          "title": "MCP y herramientas de navegador",
+          "description": "Conectar documentación, GitHub y navegación al agente.",
+          "selectors": [],
+          "repos": [
+            "context7",
+            "github-mcp-server",
+            "playwright-mcp",
+            "chrome-devtools-mcp",
+            "serena"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "chrome-devtools-mcp",
+            "context7",
+            "github-mcp-server",
+            "playwright-mcp",
+            "serena"
+          ],
+          "count": 5
+        },
+        {
+          "id": "codex-contexto",
+          "title": "Memoria, contexto y sesiones",
+          "description": "Mantener decisiones y organizar el contexto de trabajo.",
+          "selectors": [],
+          "repos": [
+            "claude-mem",
+            "engram",
+            "headroom",
+            "t3code",
+            "elephant-goldfish-model"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "claude-mem",
+            "elephant-goldfish-model",
+            "engram",
+            "headroom",
+            "t3code"
+          ],
+          "count": 5
+        },
+        {
+          "id": "codex-especialidades",
+          "title": "Diseño, documentos y seguridad",
+          "description": "Skills y herramientas de oficio con acceso documentado desde Codex.",
+          "selectors": [],
+          "repos": [
+            "taste-skill",
+            "impeccable",
+            "marketingskills",
+            "ppt-master",
+            "skills-remotion",
+            "cybersecurity-skills"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "cybersecurity-skills",
+            "impeccable",
+            "marketingskills",
+            "ppt-master",
+            "skills-remotion",
+            "taste-skill"
+          ],
+          "count": 6
+        }
+      ],
+      "client": "codex",
+      "official_url": "https://github.com/openai/codex#readme",
+      "guide": [
+        {
+          "title": "Prepara el cliente",
+          "text": "Abre la fuente oficial de Codex, elige la instalación para tu sistema y comprueba el acceso de tu cuenta antes de añadir extensiones."
+        },
+        {
+          "title": "Prueba un proyecto pequeño",
+          "text": "Abre una carpeta de prueba y pide al agente que explique un archivo. Confirma qué permisos solicita y que puedes revisar los cambios."
+        },
+        {
+          "title": "Añade una mejora concreta",
+          "text": "Elige una sola skill o conexión de las subcategorías. Abre su ficha, lee la fuente y sigue la instalación indicada para este cliente."
+        },
+        {
+          "title": "Comprueba el resultado y el consumo",
+          "text": "Repite la tarea pequeña, revisa si la mejora ayuda y consulta el uso de tu cuenta. Los servicios externos tienen sus propios accesos y costes."
+        }
+      ],
+      "scope": "Esta colección reúne clientes, extensiones y material para configurar el agente. Cada ficha distingue su forma de uso. La compatibilidad con skills o MCP no implica que tu plan pague todas las APIs de las aplicaciones que construyas.",
+      "evidence": [],
+      "repo_ids": [
+        "agent-skills",
+        "agent-toolkit",
+        "antigravity-awesome-skills",
+        "chrome-devtools-mcp",
+        "claude-mem",
+        "codex",
+        "context7",
+        "cybersecurity-skills",
+        "elephant-goldfish-model",
+        "engram",
+        "github-mcp-server",
+        "google-skills",
+        "headroom",
+        "impeccable",
+        "marketingskills",
+        "playwright-mcp",
+        "ppt-master",
+        "serena",
+        "skills-remotion",
+        "stitch-skills",
+        "superpowers",
+        "t3code",
+        "taste-skill"
+      ],
+      "count": 23
+    },
+    {
+      "id": "configurar-antigravity",
+      "title": "Configuración de Antigravity",
+      "description": "Distingue el cliente de Google, las skills compatibles y los recursos para diseño y prompting.",
+      "kind": "tool",
+      "keywords": [
+        "configurar antigravity",
+        "configuracion antigravity",
+        "setup antigravity"
+      ],
+      "starters": [
+        "antigravity-awesome-skills",
+        "stitch-skills",
+        "prompt-master"
+      ],
+      "topics": [
+        {
+          "id": "antigravity-skills",
+          "title": "Instalar y seleccionar skills",
+          "description": "El catálogo Agentic Awesome Skills documenta destinos Antigravity 2.0 y CLI.",
+          "selectors": [],
+          "repos": [
+            "antigravity-awesome-skills"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "antigravity-awesome-skills"
+          ],
+          "count": 1
+        },
+        {
+          "id": "antigravity-diseno",
+          "title": "Diseño y creación de interfaces",
+          "description": "Stitch Skills declara compatibilidad con Antigravity; revisa su ruta de instalación.",
+          "selectors": [],
+          "repos": [
+            "stitch-skills"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "stitch-skills"
+          ],
+          "count": 1
+        },
+        {
+          "id": "antigravity-prompts",
+          "title": "Prompts y organización del trabajo",
+          "description": "Prompt Master incluye orientación para Antigravity; es un recurso de prompting, no el cliente oficial.",
+          "selectors": [],
+          "repos": [
+            "prompt-master"
+          ],
+          "keywords": [],
+          "reference_repos": [],
+          "repo_ids": [
+            "prompt-master"
+          ],
+          "count": 1
+        }
+      ],
+      "client": "antigravity",
+      "official_url": "https://antigravity.google/",
+      "guide": [
+        {
+          "title": "Prepara el cliente",
+          "text": "Abre la fuente oficial de Antigravity, elige la instalación para tu sistema y comprueba el acceso de tu cuenta antes de añadir extensiones."
+        },
+        {
+          "title": "Prueba un proyecto pequeño",
+          "text": "Abre una carpeta de prueba y pide al agente que explique un archivo. Confirma qué permisos solicita y que puedes revisar los cambios."
+        },
+        {
+          "title": "Añade una mejora concreta",
+          "text": "Elige una sola skill o conexión de las subcategorías. Abre su ficha, lee la fuente y sigue la instalación indicada para este cliente."
+        },
+        {
+          "title": "Comprueba el resultado y el consumo",
+          "text": "Repite la tarea pequeña, revisa si la mejora ayuda y consulta el uso de tu cuenta. Los servicios externos tienen sus propios accesos y costes."
+        }
+      ],
+      "scope": "Esta colección reúne clientes, extensiones y material para configurar el agente. Cada ficha distingue su forma de uso. La compatibilidad con skills o MCP no implica que tu plan pague todas las APIs de las aplicaciones que construyas.",
+      "evidence": [
+        {
+          "repo_id": "antigravity-awesome-skills",
+          "source": "https://github.com/sickn33/agentic-awesome-skills/blob/main/README.md",
+          "readme_blob_sha": "41f1473911f1e73d72d24d0631ae33e7fe9ea000",
+          "checked_at": "2026-11-14"
+        },
+        {
+          "repo_id": "stitch-skills",
+          "source": "https://github.com/google-labs-code/stitch-skills/blob/main/README.md",
+          "readme_blob_sha": "baecaabfa0fc08d596e3d5921479321eaacac02a",
+          "checked_at": "2026-11-14"
+        },
+        {
+          "repo_id": "prompt-master",
+          "source": "https://github.com/nidhinjs/prompt-master/blob/main/README.md",
+          "readme_blob_sha": "5a7e09fba285a6ca2065f412fce7340d6798e17e",
+          "checked_at": "2026-11-14"
+        }
+      ],
+      "repo_ids": [
+        "antigravity-awesome-skills",
+        "prompt-master",
+        "stitch-skills"
+      ],
+      "count": 3
+    }
+  ],
   "model_guidance": {
     "key_distinction": "Separa el agente con el que construyes, la integración que usa tu sesión y el modelo que ejecuta la aplicación. Usa access y routes para verificar cada ruta.",
     "rule_of_thumb": "agent_tools indica contexto del agente; access documenta cómo se autentica y ejecuta la IA de cada repo.",

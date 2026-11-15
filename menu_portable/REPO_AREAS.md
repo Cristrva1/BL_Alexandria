@@ -1,0 +1,621 @@
+# Categorías y subcategorías prácticas
+
+Mapa portable por tareas. Cada id conserva su ficha en REPO_MENU_DATA.json y su sección técnica en REPO_MENU_cats/.
+
+Los recuentos por área pueden solaparse: no equivalen a proyectos distintos.
+
+## Frontend y creación de páginas web
+
+Diseña una página, construye su interfaz y prepara su publicación. Empieza por el tipo de herramienta que necesitas.
+
+### Crear páginas con editores visuales
+
+Diseñar y construir pantallas desde una interfaz visual.
+
+`excalidraw`, `onlook`, `open-design`, `penpot`, `plasmic`, `tldraw`
+
+### Componentes, iconos y estilos
+
+Piezas de interfaz y CSS para construir una web.
+
+`ant-design`, `daisyui`, `flexoki`, `heroui`, `konva`, `lucide`, `magicui`, `mui`, `normalize.css`, `radix-primitives`, `react-bits`, `swr`, `tailwindcss`, `ui`
+
+### Interfaces y páginas con IA
+
+Generar pantallas o añadir una experiencia de IA a tu aplicación.
+
+`ai-website-cloner-template`, `assistant-ui`, `copilotkit`, `json-render`, `openui`, `screenshot-to-code`, `stitch-sdk`, `ui-sdk`
+
+### Skills de diseño y UX
+
+Instrucciones de diseño, accesibilidad y calidad para tu agente.
+
+`design-dna`, `design.md`, `front-end-checklist`, `hallmark`, `impeccable`, `modern-web-guidance`, `skills-emil`, `stitch-skills`, `taste-skill`, `ui-ux-pro-max-skill`
+
+### Animación e interacción web
+
+Movimiento, gráficos y escenas interactivas en el navegador.
+
+`animejs`, `gsap`, `gsap-skills`, `motion`, `pixelfx`, `planck-js`, `react-three-fiber`, `react-three-rapier`, `regl`, `scenejs`, `three.js`, `threejs-skills`, `webgl-noise`, `zdog`
+
+### Probar y publicar una web
+
+Pruebas de navegador y herramientas para alojar la aplicación.
+
+`casaos`, `coolify`, `playwright`, `playwright-mcp`, `puppeteer`, `selenium`, `supabase`
+
+## Ciberseguridad
+
+Revisa código, investiga software y prepara pruebas con un alcance definido. Elige entre defensa, auditoría y análisis.
+
+### Auditoría y análisis con IA
+
+Agentes y skills que guían revisiones de seguridad.
+
+`craft-anything`, `cybersecurity-skills`, `defending-code-reference-harness`, `rea`, `security-audit-skill`, `semgrep`, `shannon`, `strix`
+
+### Ingeniería inversa y binarios
+
+Inspeccionar programas, ejecutables y formatos compilados.
+
+`angr`, `apktool`, `frida`, `ghidra`, `ilspy`, `imhex`, `jadx`, `radare2`, `rizin`
+
+### Depuración e inspección
+
+Comprender procesos y examinar cómo se comporta el software.
+
+`dnspy`, `ghidramcp`, `raddebugger`, `x64dbg`
+
+### Tráfico, pruebas y protección
+
+Revisar tráfico, rendimiento y mecanismos de protección.
+
+`bla`, `k6`, `mitmproxy`
+
+### Credenciales y privacidad
+
+Gestionar contraseñas y proteger servicios personales.
+
+`adguardhome`, `bitwarden-clients`, `vaultwarden`
+
+### Aprender ciberseguridad
+
+Directorios y material de referencia para orientar el análisis.
+
+`awesome-ai-reverse-engineering`, `awesome-reverse-engineering`, `cybersecurity-skills`
+
+## Producción audiovisual
+
+Encuentra las piezas para producir imágenes, audio y video: desde una voz o un subtítulo hasta un anuncio completo.
+
+### Video: edición, grabación y subtítulos
+
+Montar material existente, capturar pantalla y preparar subtítulos.
+
+`concat`, `davinci-resolve-mcp`, `ffmpeg`, `lossless-cut`, `mediabunny`, `moviepy`, `obs-studio`, `opencut`, `openrv`, `openscreen`, `palmier-pro`, `pencil`, `rea-video`, `video-use`, `videolingo`
+
+### Video: generación con IA
+
+Crear clips y organizar flujos de video generativo.
+
+`ai-youtube-shorts-generator`, `hunyuanvideo`, `hypit`, `ltx-video`, `moneyprinterturbo`, `short-video-factory`, `wan2-2`, `wan2gp`
+
+### Video: código y motion graphics
+
+Crear escenas, animaciones y piezas audiovisuales mediante código o agentes.
+
+`brag`, `claude-animated-shorts`, `huashu-motion`, `hyperframes`, `lemo-opuscar`, `manim`, `manim-community`, `motion-design-skill`, `motionmaxxing`, `openfilm`, `openmontage`, `papermorph`, `rea-video`, `remotion`, `remotion-superpowers`, `skills-remotion`, `srt-whiteboard-animation`, `video-shotcraft`, `video-use`, `videofy-minimal`
+
+### Voz: narración, síntesis y clonación
+
+Convertir texto en voz y preparar locuciones en los idiomas compatibles.
+
+`chatterbox`, `cosyvoice`, `edge-tts`, `fish-speech`, `gpt-sovits`, `index-tts`, `kokoro`, `luxtts`, `melotts`, `omnivoice-studio`, `rvc`, `supertonic`, `tts`, `vibevoice`, `voxcpm`
+
+### Transcripción: audio a texto
+
+Transcribir, alinear y aprovechar grabaciones de voz.
+
+`faster-whisper`, `nemo`, `whisper`, `whisper-cpp`, `whisperx`
+
+### Audio: limpieza, música y sonido
+
+Limpiar grabaciones, ajustar sonido y trabajar con música.
+
+`ace-step-1.5`, `audiocraft`, `earshot`, `music-megathread`, `rnnoise`, `rubberband`
+
+### Voz: agentes en tiempo real
+
+Construir conversaciones por audio con procesamiento y respuesta en directo.
+
+`dograh`, `livekit-agents`, `pipecat`
+
+### Imagen: generación y edición
+
+Generar imágenes, ampliar, recortar o restaurar fotografías.
+
+`codeformer`, `comfyui`, `comfyui-ipadapter-plus`, `controlnet`, `creative-architect`, `diffusers`, `flux`, `fooocus`, `gfpgan`, `invokeai`, `krita-ai-diffusion`, `logo-design-skill`, `open-generative-ai`, `real-esrgan`, `rembg`, `sd-webui-controlnet`, `sd-webui-forge`, `stable-diffusion-webui`
+
+### Avatares, rostros y personajes
+
+Animación de retratos y herramientas para personajes.
+
+`claude-animated-shorts`, `deep-live-cam`, `face-recognition`, `facefusion`, `genjutsu`, `insightface`, `liveportrait`
+
+### Modelado y animación 3D
+
+Crear objetos, escenas y recursos tridimensionales.
+
+`3dviz-pro-max`, `awesome-cad`, `blender`, `blender-mcp`, `blender-skills`, `filament`, `meshoptimizer`, `ozz-animation`
+
+## Trading, inversión y finanzas
+
+Investiga mercados, compara estrategias y conecta herramientas financieras. Las demos y el backtesting se distinguen de la operación real.
+
+### Investigar mercados con IA
+
+Agentes que reúnen y analizan información financiera.
+
+`autohedge`, `daily-stock-analysis`, `dexter`, `financial-services`, `finceptterminal`, `quantharness`, `tradingagents`, `vibe-trading`
+
+### Estrategias y backtesting
+
+Analizar datos históricos y evaluar estrategias cuantitativas.
+
+`backtrader`, `chartanalyst`, `finrl`, `lumibot`, `nautilus-trader`, `qlib`, `timesfm`, `vectorbt`
+
+### Bots, exchanges y conexiones
+
+Código y SDKs para conectar plataformas y automatizar operaciones.
+
+`binance-trader`, `ccxt`, `crypto-trader`, `freqtrade`, `hummingbot`, `intellitrader`, `open-sol-bot`, `py-clob-client`, `py-sdk`
+
+### Aprendizaje y simulaciones
+
+Referencias y demostraciones para entender los sistemas de inversión.
+
+`company-pixel-office`, `machine-learning-for-trading`, `pixel-hedge-fund`, `pixelfund-ai`, `stocks-analyst`
+
+## Automatización, negocios y marketing
+
+Conecta aplicaciones, organiza clientes y prepara procesos de atención, ventas y comunicación.
+
+### Automatización y flujos
+
+Elegir el motor que coordina tareas entre aplicaciones.
+
+`activepieces`, `cal.diy`, `huginn`, `kestra`, `n8n`, `node-red`, `trigger-dev`, `windmill`
+
+### n8n: plantillas, skills y conectores
+
+Recursos específicos para construir y mantener flujos de n8n.
+
+`awesome-n8n-templates`, `n8n`, `n8n-mcp`, `n8n-skills`, `self-hosted-ai-starter-kit`
+
+### WhatsApp y chatbots
+
+Canales y constructores de conversaciones para atención.
+
+`baileys`, `botpress`, `evolution-api`, `fluxer`, `openwa`, `rasa`, `typebot`, `waha`, `whatsapp-agentkit`, `whatsapp-web-js`, `whatsmeow`
+
+### CRM, ventas y soporte
+
+Gestionar clientes, oportunidades y conversaciones con personas.
+
+`chatwoot`, `compai-crm`, `erpnext`, `odoo`, `twenty-main`
+
+### Email, campañas y redes sociales
+
+Correo, notificaciones y programación de publicaciones.
+
+`cloud-mail`, `listmonk`, `mautic`, `novu`, `open-seo`, `postiz-app`, `sellbird`
+
+### Skills de marketing, SEO y contenido
+
+Guías para que tu agente prepare análisis, mensajes y contenido.
+
+`agency-agents`, `arcads-claude-code`, `claude-seo`, `geo-seo-claude`, `instagram-agent-skill`, `linkedin-agent-skill`, `marketingskills`, `minimalist-entrepreneur-skills`, `social-media-research-skills`
+
+### Aplicaciones internas sin código
+
+Crear herramientas de operación y formularios sobre tus datos.
+
+`appsmith`, `budibase`, `nocodb`, `tooljet`
+
+## Agentes de IA, investigación y navegación
+
+Construye un agente, delega investigación o dale acceso a páginas y herramientas. Distingue el asistente listo del framework que debes integrar.
+
+### Frameworks y equipos de agentes
+
+Bases para construir agentes y coordinar sus tareas.
+
+`adk-python`, `ag2`, `agent-framework`, `agno`, `autogen`, `awesome-langgraph`, `claude-agent-sdk-python`, `crewai`, `deepagents`, `dspy`, `haystack`, `hermes-agent-self-evolution`, `jev-fraud`, `langchain`, `langchain4j`, `langgraph`, `langgraph-supervisor-py`, `langgraphjs`, `llama-index`, `llm-council`, `mastra`, `metagpt`, `mirofish`, `openai-agents-python`, `openevolve`, `pydantic-ai`, `semantic-kernel`, `smolagents`, `vercel-ai`
+
+### Constructores visuales de agentes
+
+Plataformas que permiten diseñar flujos de IA con una interfaz.
+
+`autogpt`, `dify`, `flowise`, `langflow`, `sim`
+
+### Asistentes personales y autónomos
+
+Asistentes listos o adaptables para tareas de varias etapas.
+
+`agentes-chat`, `deeptutor`, `fugu`, `hello-halo`, `hermes-agent`, `mercury-agent`, `multica`, `openclaw`, `opendots`, `paperclip`, `ruflo`, `social-media-agent`
+
+### Investigación con fuentes
+
+Agentes y herramientas de búsqueda para investigar una pregunta.
+
+`agent-reach`, `archivebox`, `autoresearch`, `changedetection`, `deer-flow`, `gpt-researcher`, `last30days-skill`, `local-deep-research`, `open-deep-research`, `searxng`, `storm`, `vane`
+
+### Scraping y extracción web
+
+Convertir páginas y redes sociales en contenido o datos.
+
+`awesome-web-scraping`, `crawl4ai`, `crawlee`, `crawlee-python`, `defuddle`, `firecrawl`, `instaloader`, `jina-reader`, `llm-scraper`, `maxun`, `scrapegraph-ai`, `scrapely`, `scrapling`, `scrapy`, `scrapydweb`, `snscrape`, `yt-dlp`
+
+### Navegadores y automatización web
+
+Abrir páginas e interactuar con interfaces reales.
+
+`agent-browser`, `awesome-chrome-devtools`, `browser-harness`, `browser-use`, `camofox-browser`, `lightpanda`, `playwright`, `playwright-cli`, `puppeteer`, `selenium`, `skyvern`, `stagehand`
+
+### MCP: conectar herramientas
+
+Servidores, clientes y SDKs para dar herramientas a un agente.
+
+`annas-mcp`, `awesome-mcp-clients`, `awesome-mcp-servers`, `blender-mcp`, `chrome-devtools-mcp`, `context7`, `fastmcp`, `figma-context-mcp`, `ghidramcp`, `github-mcp-server`, `langchain-mcp-adapters`, `mcp`, `mcp-for-beginners`, `mcp-inspector`, `mcp-neo4j`, `mcp-python-sdk`, `mcp-typescript-sdk`, `mcp-use`, `playwright-mcp`, `public-apis`, `serena`, `servers`, `treg`, `unity-mcp`
+
+## IA local, modelos y entrenamiento
+
+Elige un chat o motor local, explora modelos abiertos y revisa lo necesario para servirlos o entrenarlos.
+
+### Chats y asistentes privados
+
+Interfaces de conversación y espacios de trabajo con tus fuentes.
+
+`anything-llm`, `chatbox`, `cherry-studio`, `hermes-desktop`, `jan`, `khoj`, `librechat`, `lobehub`, `muse-spark`, `nextcloud-server`, `notebooklm-mcp-cli`, `notebooklm-py`, `odysseus`, `open-notebook`, `open-webui`, `private-gpt`, `surfsense`, `textgen`
+
+### Motores para modelos locales
+
+Ejecutar modelos en tu equipo o en una máquina administrada por ti.
+
+`airllm`, `exo`, `freetoken`, `llama-cpp`, `llamafile`, `llmfit`, `localai`, `magnitude`, `ollama`, `transformers.js`
+
+### Modelos abiertos y pesos
+
+Modelos publicados por sus autores para evaluar e integrar.
+
+`cosmos`, `deepseek-coder`, `kimi-k2-7-code`, `laya`, `nemotron`, `timesfm`
+
+### Entrenamiento y ajuste fino
+
+Bibliotecas para entrenar o adaptar modelos a tus datos.
+
+`bionemo-recipes`, `llama-factory`, `peft`, `pytorch`, `tensorflow`, `transformers`, `trl`, `unsloth`, `warp`
+
+### Inferencia, servidores y gateways
+
+Servir modelos y organizar el acceso de tus aplicaciones.
+
+`backdoor`, `claude-code-router`, `litellm`, `omniroute`, `sglang`, `tensorrt-llm`, `vllm`
+
+## Documentos, presentaciones y conocimiento
+
+Lee y transforma archivos, crea explicaciones visuales y construye búsquedas sobre tus documentos.
+
+### PDF y conversión de documentos
+
+Leer, convertir, firmar y organizar archivos.
+
+`docling`, `docuseal`, `marker`, `markitdown`, `mineru`, `pandoc`, `paperless-ngx`, `pdf-inspector`, `pdfcraft`, `pdfding`, `pdfmathtranslate`, `stirling-pdf`, `unstructured`, `youtube2webpage`
+
+### OCR y documentos escaneados
+
+Extraer texto de imágenes, libros y páginas escaneadas.
+
+`ocrmypdf`, `olmocr`, `paddleocr`, `pdf-craft`, `tesseract`, `unlimited-ocr`
+
+### Presentaciones y diapositivas
+
+Preparar y exportar una presentación.
+
+`marp`, `ppt-master`, `presenton`, `reveal.js`, `slidev`
+
+### Diagramas y documentación visual
+
+Explicar sistemas e ideas mediante diagramas.
+
+`archify`, `diagram-design`, `excalidraw`, `mermaid`
+
+### Preguntar a documentos y buscar conocimiento
+
+Recuperar fuentes con RAG y búsqueda semántica.
+
+`agentic-rag-for-dummies`, `chroma`, `faiss`, `graphrag`, `lightrag`, `milvus`, `onyx`, `pageindex`, `pgvector`, `qdrant`, `ragflow`, `turbovec`
+
+### Memoria y contexto para agentes
+
+Conservar hechos y decisiones entre sesiones.
+
+`agentmemory`, `claude-mem`, `cognee`, `dsh-noema`, `engram`, `graphiti`, `letta`, `mem0`, `mempalace`, `openviking`, `supermemory`
+
+## Datos, dashboards y analítica
+
+Consulta y transforma datos, crea gráficos y mide lo que ocurre en una aplicación o negocio.
+
+### Consulta y procesamiento de datos
+
+Motores de consulta, tablas y conjuntos de datos.
+
+`awesome-bigdata`, `bigdata`, `data-science-ipython-notebooks`, `duckdb`, `globalbuildingatlas`, `hudi`, `marimo`, `polars`
+
+### Notebooks y aplicaciones de datos
+
+Explorar datos y compartir una interfaz de análisis.
+
+`dash`, `gradio`, `marimo`, `streamlit`
+
+### Dashboards y BI
+
+Consultar indicadores y explorar información de negocio.
+
+`grafana`, `metabase`, `pandas-ai`, `redash`, `superset`, `wrenai`
+
+### Gráficos y visualización
+
+Bibliotecas para construir gráficos dentro de una aplicación.
+
+`chart-js`, `d3`, `echarts`, `recharts`, `uplot`
+
+### Analítica web y de producto
+
+Medir visitas, uso y comportamiento de usuarios.
+
+`matomo`, `plausible`, `posthog`, `umami`
+
+### Aprender análisis de datos
+
+Directorios, proyectos de práctica y hojas de ruta.
+
+`awesome-dataviz`, `data-analyst-roadmap`, `dataanalystportfolioprojects`
+
+## Productividad, notas y servicios personales
+
+Organiza información, sincroniza archivos y prepara herramientas para tu trabajo cotidiano y tu hogar.
+
+### Notas, Obsidian y segundo cerebro
+
+Organizar notas y ampliar una bóveda de conocimiento.
+
+`anytype-ts`, `appflowy`, `claude-obsidian`, `jsoncanvas`, `karakeep`, `kepano-obsidian`, `obsidian-clipper`, `obsidian-help`, `obsidian-importer`, `obsidian-minimal`, `obsidian-releases`, `obsidian-sample-plugin`, `obsidian-second-brain`, `obsidian-skills`
+
+### Archivos, lectura y bibliotecas
+
+Sincronizar archivos y organizar libros o contenido personal.
+
+`audiobookshelf`, `syncthing`
+
+### Contraseñas y privacidad
+
+Herramientas personales para gestionar credenciales y proteger datos.
+
+`adguardhome`, `bitwarden-clients`, `vaultwarden`
+
+### Hogar, dispositivos y utilidades
+
+Automatización doméstica y herramientas para tus equipos.
+
+`40-questions`, `ai-job-search`, `cleanyourtv`, `home-assistant`, `optimizerduck`, `universal-android-debloater-next-generation`
+
+### Aprendizaje asistido
+
+Organizar experiencias de estudio con ayuda de IA.
+
+`openmaic`
+
+### Escritura y calidad de texto
+
+Revisar y mejorar el contenido escrito con ayuda de un agente.
+
+`humanizer`, `i-have-adhd`, `no-ai-slop`, `stop-slop`
+
+## Programación, backend y despliegue
+
+Elige un agente de código, comprende un proyecto y prepara su infraestructura, pruebas y seguimiento.
+
+### Agentes y editores para programar
+
+Herramientas de terminal, IDE y sesiones de desarrollo.
+
+`aider`, `claude-code`, `cline`, `codex`, `continue`, `dsh-android`, `dsh-game-studio`, `dsh-ios`, `gemini-cli`, `goose`, `mimo-code`, `open-interpreter`, `open-swe`, `openclaude`, `opencode`, `opencode-legacy`, `opencode-manager`, `opencursor`, `openhands`, `openidea`, `swe-agent`, `t3code`
+
+### Comprender y revisar código
+
+Índices y análisis para orientarte dentro de repositorios.
+
+`ast-grep`, `cli`, `codebase-memory-mcp`, `codegraph`, `deepwiki-open`, `defending-code-reference-harness`, `dsh-qa`, `floorplan`, `gitnexus`, `graphify`, `openai-python`, `repomix`, `semgrep`, `swe-bench`, `tree-sitter`
+
+### Backend, alojamiento y despliegue
+
+Infraestructura, servicios y herramientas de operación.
+
+`agent-desktop`, `agent-protocol`, `casaos`, `claude-task-master`, `codex-chatgpt-web`, `composio`, `computer-use-preview`, `coolify`, `e2b`, `free-for-dev`, `freedomain`, `masterdnsvpn`, `nemo-agent-toolkit`, `nemoclaw`, `nodeterm`, `sandbox`, `shepherd`, `supabase`
+
+### Evaluación, trazas y observabilidad
+
+Medir resultados y revisar lo que hace una aplicación de IA.
+
+`claude-code-usage-monitor`, `deepeval`, `guardrails`, `langfuse`, `loguru`, `mlflow`, `opik`, `phoenix`, `promptfoo`, `ragas`
+
+### Contexto, consumo y enrutamiento
+
+Reducir contexto innecesario y organizar el acceso a modelos.
+
+`backdoor`, `claude-code-router`, `headroom`, `litellm`, `omniroute`, `rtk`, `sglang`, `tensorrt-llm`, `vllm`
+
+## Visión artificial, mapas y percepción
+
+Detecta objetos o movimiento, interpreta imágenes y trabaja con información espacial y geográfica.
+
+### Detección, segmentación y seguimiento
+
+Modelos y herramientas de visión por computador.
+
+`4d-humans`, `easymocap`, `kornia`, `label-studio`, `mediapipe`, `mmpose`, `opencv`, `openpose`, `sam2`, `segment-anything`, `supervision`, `tfjs-models`, `ultralytics`, `videopose3d`, `wham`
+
+### Rostros y análisis visual
+
+Herramientas especializadas en caras y retratos.
+
+`deep-live-cam`, `face-recognition`, `facefusion`, `insightface`, `liveportrait`
+
+### Sensores y percepción espacial
+
+Observar y analizar información del entorno.
+
+`ruview`
+
+### Mapas, OSINT y fotogrametría
+
+Crear y explorar mapas con imágenes o fuentes abiertas.
+
+`gods-eye-view`, `odm`, `osiris`, `pythia`, `webodm`
+
+## Aprender IA, prompts y skills
+
+Comprende conceptos, practica con ejemplos y elige instrucciones que mejoren el trabajo de tus agentes.
+
+### Cursos, guías y ejemplos
+
+Material para empezar a construir y entender aplicaciones de IA.
+
+`12-factor-agents`, `500-ai-agents-projects`, `agents-towards-production`, `ai-agents-for-beginners`, `ai-engineering-hub`, `awesome-harness-engineering`, `awesome-llm-apps`, `claude-cookbooks`, `claude-quickstarts`, `context-engineering`, `generative-ai-for-beginners`, `loop-engineering`, `mvanhorn`, `openai-cookbook`
+
+### Prompts y contexto
+
+Escribir mejores encargos y comprender instrucciones de agentes.
+
+`chatgpt-dan`, `chatgpt-system-prompt`, `fabric`, `prompt-eng-tutorial`, `prompt-engineering-guide`, `prompt-master`, `prompts-chat`, `system-prompts-and-models-of-ai-tools`
+
+### Aprender cómo funcionan los modelos
+
+Ejemplos de machine learning y entrenamiento desde cero.
+
+`awesome-machine-learning`, `how-to-train-your-gpt`, `llm-course`, `llm.c`, `llms-from-scratch`, `machinelearning`, `nanochat`, `nanogpt`, `python-machine-learning-book`, `train-llm-from-scratch`
+
+### Métodos, plugins y catálogos de skills
+
+Explorar instrucciones generales y formas de trabajar con agentes.
+
+`agent-skills`, `agent-toolkit`, `andrej-karpathy-skills`, `anthropic-skills`, `antigravity-awesome-skills`, `autoskills`, `awesome-agent-skills`, `awesome-agents`, `awesome-claude-code`, `awesome-claude-skills`, `awesome-copilot`, `bmad-method`, `book-to-skill`, `claude-code-hooks-mastery`, `claude-plugins-official`, `claude-token-efficient`, `codex-plugin-cc`, `ecc`, `elephant-goldfish-model`, `gemini-skills`, `google-skills`, `grok-plugin-claude-code`, `gstack`, `plugins`, `ponytail`, `skills`, `skillspector`, `spec-kit`, `superclaude-framework`, `superpowers`, `wshobson-agents`
+
+### Skills por oficio y especialidad
+
+Explorar instrucciones de diseño, escritura, ciencia, marketing y negocio.
+
+`3dviz-pro-max`, `agency-agents`, `anatomy`, `arcads-claude-code`, `blender-skills`, `claude-seo`, `creative-architect`, `design-dna`, `design.md`, `dream-loop`, `financial-services`, `front-end-checklist`, `genjutsu`, `geo-seo-claude`, `gsap-skills`, `hallmark`, `humanizer`, `i-have-adhd`, `impeccable`, `instagram-agent-skill`, `linkedin-agent-skill`, `logo-design-skill`, `marketingskills`, `minimalist-entrepreneur-skills`, `modern-web-guidance`, `motion-design-skill`, `no-ai-slop`, `scientific-agent-skills`, `skills-emil`, `social-media-research-skills`, `stitch-skills`, `stop-slop`, `taste-skill`, `threejs-game-skills`, `threejs-skills`, `ui-ux-pro-max-skill`
+
+## Configuración de Claude Code
+
+Prepara Claude Code, elige plugins y conecta herramientas para trabajar con un proyecto real.
+
+### Instalación y primeros pasos
+
+Cliente oficial y selección inicial de herramientas.
+
+`claude-code`
+
+### Skills, plugins y métodos
+
+Añadir instrucciones y un método de trabajo sin cargar todo el catálogo.
+
+`agent-toolkit`, `anthropic-skills`, `antigravity-awesome-skills`, `claude-plugins-official`, `superclaude-framework`, `superpowers`
+
+### MCP y navegador
+
+Conectar documentación, repositorios y herramientas de navegador.
+
+`chrome-devtools-mcp`, `context7`, `github-mcp-server`, `playwright-mcp`, `serena`
+
+### Memoria y uso del contexto
+
+Conservar decisiones y revisar el contexto de las sesiones.
+
+`claude-mem`, `claude-token-efficient`, `engram`, `headroom`, `mempalace`, `rtk`
+
+### Hooks y automatización de sesiones
+
+Material de consulta con ejemplos de hooks y controles de Claude Code. Revisa cada ejemplo antes de adaptarlo.
+
+`claude-code-hooks-mastery`
+
+### Consumo y proveedores
+
+Herramientas auxiliares para observar uso y estudiar el enrutamiento. No son una ampliación de tu plan.
+
+`claude-code-router`, `claude-code-usage-monitor`
+
+### Diseño, marketing y producción
+
+Skills de oficio documentadas para Claude Code.
+
+`creative-architect`, `cybersecurity-skills`, `impeccable`, `marketingskills`, `scientific-agent-skills`, `skills-remotion`, `taste-skill`
+
+## Configuración de Codex
+
+Prepara el cliente de Codex y reúne skills, contexto y conexiones que tienen compatibilidad documentada.
+
+### Instalación y primeros pasos
+
+Cliente oficial y formas de empezar con un proyecto.
+
+`codex`
+
+### Skills y método de trabajo
+
+Instrucciones y plugins documentados para Codex.
+
+`agent-skills`, `agent-toolkit`, `antigravity-awesome-skills`, `google-skills`, `stitch-skills`, `superpowers`
+
+### MCP y herramientas de navegador
+
+Conectar documentación, GitHub y navegación al agente.
+
+`chrome-devtools-mcp`, `context7`, `github-mcp-server`, `playwright-mcp`, `serena`
+
+### Memoria, contexto y sesiones
+
+Mantener decisiones y organizar el contexto de trabajo.
+
+`claude-mem`, `elephant-goldfish-model`, `engram`, `headroom`, `t3code`
+
+### Diseño, documentos y seguridad
+
+Skills y herramientas de oficio con acceso documentado desde Codex.
+
+`cybersecurity-skills`, `impeccable`, `marketingskills`, `ppt-master`, `skills-remotion`, `taste-skill`
+
+## Configuración de Antigravity
+
+Distingue el cliente de Google, las skills compatibles y los recursos para diseño y prompting.
+
+### Instalar y seleccionar skills
+
+El catálogo Agentic Awesome Skills documenta destinos Antigravity 2.0 y CLI.
+
+`antigravity-awesome-skills`
+
+### Diseño y creación de interfaces
+
+Stitch Skills declara compatibilidad con Antigravity; revisa su ruta de instalación.
+
+`stitch-skills`
+
+### Prompts y organización del trabajo
+
+Prompt Master incluye orientación para Antigravity; es un recurso de prompting, no el cliente oficial.
+
+`prompt-master`

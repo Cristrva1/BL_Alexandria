@@ -1,7 +1,10 @@
 """Short reading guides shared by the website and generated Markdown."""
 
 GUIDES = [
-    {"id":"elegir","title":"Encuentra lo que necesitas","intro":"No necesitas conocer el nombre del repo. Empieza por el resultado que buscas y compara unas pocas opciones.","sections":[
+    {"id":"elegir","title":"Encuentra lo que necesitas","intro":"No necesitas conocer el nombre del repo. Elige un área de trabajo o una tarea y compara unas pocas opciones.","sections":[
+        {"title":"Elige un área y una subcategoría","text":"En Categorías encontrarás Frontend, Ciberseguridad, Producción audiovisual, Trading y otros campos. Entra en uno y elige una tarea concreta: por ejemplo Producción audiovisual → Voz: narración, síntesis y clonación. Verás sus repositorios y podrás filtrar por acceso y preparación."},
+        {"title":"Prepara el asistente que ya utilizas","text":"Las colecciones Configuración de Claude Code, Configuración de Codex y Configuración de Antigravity reúnen primeros pasos, skills y recursos compatibles. Empieza por el cliente oficial y añade una mejora cada vez. Consultar estas colecciones no significa que tu suscripción incluya las APIs de todas las aplicaciones que construyas."},
+        {"title":"Un proyecto puede servir para varios temas","text":"Un mismo repo puede ayudarte en desarrollo web y en la configuración de tu agente. Conserva una sola ficha, identidad y perfil de acceso. Por eso las cifras de las áreas pueden solaparse: no se suman para contar proyectos distintos."},
         {"title":"Describe el resultado","text":"Piensa en una tarea concreta: transcribir un audio, preguntar a PDFs, atender WhatsApp o crear una presentación. Las rutas por objetivo te llevan a un conjunto pequeño y explican qué pieza cumple cada función."},
         {"title":"Elige tu forma de acceso","text":"Puedes buscar software que no necesita un modelo, herramientas para tu agente actual, aplicaciones con una API o modelos locales. Son filtros diferentes: una aplicación instalada en tu PC puede seguir llamando a un proveedor remoto."},
         {"title":"Abre dos o tres fichas","text":"Lee qué hace, cuándo elegirlo, qué acceso requiere y cómo empezar. Compara alternativas para el mismo trabajo. Combina herramientas cuando cubran etapas diferentes de una receta."},
