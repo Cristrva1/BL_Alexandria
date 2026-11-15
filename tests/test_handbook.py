@@ -15,7 +15,10 @@ def test_handbook_is_separate_from_repository_inventory_and_keeps_verified_ident
     catalog = build_catalog(ROOT)
     h = catalog['handbook']
     assert len(h['resources']) == 57
-    assert len(h['prompts']) == 16
+    assert len(h['prompts']) == 48
+    topics = {p['topic'] for p in h['prompts']}
+    assert {'disenar', 'lanzar', 'contenido', 'negocio', 'aprender', 'diagnosticar'} <= topics
+    assert all('docs.google.com' not in p.get('inspired_by', {}).get('url', '') for p in h['prompts'])
     assert len(h['paths']) == 8
     assert catalog['counts']['repos'] == len(catalog['repos'])
     by_id = {r['id']: r for r in h['resources']}

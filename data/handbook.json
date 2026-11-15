@@ -2622,6 +2622,827 @@
       "expect": "Una comparación pequeña, reproducible y relevante para tu decisión.",
       "authorship": "Plantilla original de Alexandría",
       "checked_at": "2026-11-15"
+    },
+    {
+      "id": "pulido-minimalista",
+      "title": "Simplificar una pantalla hasta lo esencial",
+      "topic": "disenar",
+      "level": "intermedio",
+      "technique": "Pase de reducción visual",
+      "when": "Cuando una pantalla funciona pero se siente recargada de textos, etiquetas y adornos.",
+      "inputs": [
+        "Pantalla o ruta a revisar",
+        "Tarea principal de quien la usa",
+        "Captura actual"
+      ],
+      "body": "Revisa [pantalla o ruta] pensando en una sola tarea: [tarea principal]. Antes de cambiar nada, dime qué supones sobre quién la usa y qué necesita ver primero.\nHaz un inventario de cada texto, etiqueta, icono y adorno, e indica si ayuda a completar la tarea o solo decora.\nSi un elemento existe únicamente para aclarar algo confuso, propón reordenar la pantalla en lugar de sumar más explicaciones.\nElige cambios que beneficien a la vez a quien usa la pantalla, a quien mantiene el código y a un agente que la lea después.\nMuéstrame la lista de recortes y cambios de estructura y espera mi visto bueno. No elimines funciones ni textos legales.\nAl terminar, entrega capturas antes y después en escritorio y móvil, y confirma que [tarea principal] se sigue completando.",
+      "expect": "Una pantalla con menos ruido, la lista de lo que se quitó y capturas que demuestran que la tarea sigue funcionando.",
+      "works_with": [
+        "Claude Code",
+        "Codex",
+        "Antigravity"
+      ],
+      "inspired_by": {
+        "title": "Pase de diseño limpio y esencial",
+        "url": "https://x.com/Voxyz_ai/status/2118720058872701273"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "revision-prelanzamiento-paralela",
+      "title": "Revisión antes de lanzar con revisores en paralelo",
+      "topic": "lanzar",
+      "level": "intermedio",
+      "technique": "Revisión en paralelo con subagentes",
+      "when": "Cuando tu sitio o app está casi listo y quieres encontrar fallos de diseño, móvil, estados y textos antes de mostrarlo.",
+      "inputs": [
+        "Enlace de vista previa o proyecto local",
+        "Recorridos clave (registro, compra, contacto)",
+        "Datos de prueba"
+      ],
+      "body": "Quiero revisar [sitio o app] antes de lanzarlo. Reparte el trabajo entre [4 o 5] subagentes, uno por área, y que ninguno edite archivos.\nÁreas: coherencia visual (colores, tamaños, espaciados, bordes), uso en móvil, estados de carga, vacío y error, recorrido completo de [recorridos clave] con teclado y ratón, y detalles de publicación (título, descripción, icono, textos de relleno).\nCada hallazgo indica página, archivo probable, cómo reproducirlo y gravedad. Antes de empezar, dime qué supones sobre el público y los navegadores.\nUne todo en una sola lista sin duplicados, ordenada por gravedad, y detente hasta que yo elija qué se corrige.\nCon mi confirmación, corrige en una pasada solo lo aprobado. No toques textos legales, precios ni datos reales sin preguntarme.\nEntrega capturas antes y después de cada corrección y marca lo que no pudiste verificar.",
+      "expect": "Una lista priorizada de problemas, las correcciones aprobadas aplicadas y capturas que muestran cada cambio.",
+      "works_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "Revisión previa al lanzamiento con subagentes",
+        "url": "https://x.com/Voxyz_ai/status/2118720058872701273"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15",
+      "featured": true
+    },
+    {
+      "id": "velocidad-web",
+      "title": "Encontrar por qué una web carga lenta",
+      "topic": "mejorar",
+      "level": "intermedio",
+      "technique": "Medir antes y después con la mediana",
+      "when": "Cuando tu web tarda en abrir, sobre todo en móvil, y no sabes si la causa son imágenes, código, datos o servidor.",
+      "inputs": [
+        "Enlace de producción o de vista previa",
+        "Las dos o tres páginas más lentas",
+        "Acceso al proyecto"
+      ],
+      "body": "Ayúdame a acelerar [sitio] sin quitar funciones. Empieza midiendo: sobre una compilación de producción o una vista previa, pasa Lighthouse en modo móvil tres veces por [páginas] y anota la mediana.\nLuego busca causas por capas, todavía sin editar: imágenes y fuentes, peso del código que se descarga, consultas y respuestas de datos, y ubicación o caché del servidor.\nPara cada causa indica archivo, página afectada, mejora esperada y riesgo. Explica en palabras sencillas cada término técnico y dime qué supones cuando no puedas comprobar algo.\nPropón un orden de arreglos del menos al más arriesgado y espera mi aprobación.\nPregúntame antes de quitar dependencias, mover la región del servidor o tocar la base de datos. No guardes en caché respuestas ligadas a una persona con sesión iniciada.\nAl final, mide igual que al principio y entrégame una tabla con los números de antes y después.",
+      "expect": "Una tabla de métricas antes y después, con los cambios aplicados y su efecto medido.",
+      "works_with": [
+        "Claude Code",
+        "Codex",
+        "Antigravity"
+      ],
+      "inspired_by": {
+        "title": "Auditoría de lentitud de un sitio",
+        "url": "https://x.com/Voxyz_ai/status/2118720058872701273"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "limpiar-disco-dev",
+      "title": "Recuperar espacio que dejó el trabajo de desarrollo",
+      "topic": "diagnosticar",
+      "level": "intermedio",
+      "technique": "Inventario de solo lectura con script revisable",
+      "when": "Cuando el disco se llena y sospechas de dependencias, cachés, contenedores o modelos descargados.",
+      "inputs": [
+        "Sistema operativo",
+        "Carpetas que no deben tocarse",
+        "Espacio libre actual"
+      ],
+      "body": "Mi disco en [sistema] está casi lleno. Recorre mi carpeta de usuario mirando solo tamaños: no abras el contenido de ningún archivo y salta [carpetas excluidas], unidades externas y todo lo que pida permisos.\nBusca lo que suele acumular el desarrollo: dependencias, cachés de compilación, imágenes de contenedores, entornos virtuales y modelos locales.\nGenera una página HTML local con un mapa por tamaño y dos grupos: \"se puede limpiar\" y \"revisar antes\". Historiales de agentes, modelos y contenedores siempre van en \"revisar antes\".\nPara cada elemento muestra ruta, tamaño y consecuencia de borrarlo. Indica qué supones cuando no tengas claro su origen.\nNo borres nada. Cuando yo marque elementos, prepara un script que use el comando de limpieza propio de cada herramienta y déjalo para que yo lo revise y lo ejecute.\nGuarda los tamaños con fecha en [archivo de registro] y, la próxima vez, léelo primero para señalar qué creció.",
+      "expect": "Un mapa de espacio con dos grupos, un script de limpieza revisable y un registro para comparar más adelante.",
+      "works_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "Limpieza de restos de desarrollo",
+        "url": "https://x.com/Voxyz_ai/status/2118720058872701273"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "llamadas-externas-robustas",
+      "title": "Evitar cuelgues y cobros dobles en llamadas externas",
+      "topic": "programar",
+      "level": "avanzado",
+      "technique": "Auditoría de tiempos límite e idempotencia",
+      "when": "Cuando tu app llama a pagos, bases de datos, colas o modelos de IA y quieres que no se quede colgada ni repita operaciones.",
+      "inputs": [
+        "Repositorio",
+        "Servicios externos que usa",
+        "Comando de pruebas"
+      ],
+      "body": "Haz un inventario de todas las llamadas que [proyecto] hace hacia fuera: HTTP, base de datos, colas y proveedores de IA, con archivo y línea.\nMarca las que no tienen tiempo límite y propón uno razonable, explicando qué valor supones y por qué.\nDonde ya haya reintentos, cámbialos a espera exponencial con tope y una variación aleatoria. No añadas reintentos nuevos.\nRevisa cada escritura que pueda repetirse: si se ejecuta dos veces, ¿duplica registros o cobra de nuevo? Haz una lista aparte con esos riesgos y cómo volverlas idempotentes.\nComprueba si los grupos de conexiones aguantan [usuarios simultáneos] en el pico; solo informa, no los cambies.\nEnséñame el plan antes de editar y no toques nada relacionado con pagos sin mi aprobación. Termina cuando [comando de pruebas] pase y me des la lista de cambios por archivo.",
+      "expect": "Llamadas con tiempos límite y reintentos seguros, una lista de escrituras con riesgo de duplicarse y pruebas en verde.",
+      "works_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "Llamadas colgadas y cobros dobles",
+        "url": "https://x.com/Voxyz_ai/status/2118720058872701273"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "reglas-de-gusto",
+      "title": "Convertir tus correcciones de diseño en reglas",
+      "topic": "disenar",
+      "level": "intermedio",
+      "technique": "Aprender el gusto a partir de correcciones",
+      "when": "Cuando corriges una y otra vez lo mismo en las interfaces que genera el agente.",
+      "inputs": [
+        "Sesiones o cambios recientes con correcciones",
+        "Archivo de instrucciones o skill de diseño"
+      ],
+      "body": "Repasa las correcciones de diseño que te pedí en [esta sesión y las N anteriores]. Agrupa las que se repiten: espaciados, tamaños, colores, animaciones, textos.\nPara cada grupo redacta una regla corta y comprobable, con su motivo y un ejemplo de antes y después. Nada de reglas vagas como \"que se vea mejor\".\nDime qué supones cuando una corrección pudo ser un gusto puntual y no una norma.\nPropón dónde guardarlas ([DESIGN.md, AGENTS.md o una skill]) y muéstrame el texto exacto antes de escribirlo. No borres reglas existentes; si dos se contradicen, pregúntame.\nPara verificar, aplica las reglas a [pantalla de prueba] e indica cuáles se cumplen y cuáles no.",
+      "expect": "Un conjunto breve de reglas de diseño con motivo y ejemplo, guardado donde el agente lo lea en cada sesión.",
+      "works_with": [
+        "Claude Code",
+        "Codex",
+        "Antigravity"
+      ],
+      "inspired_by": {
+        "title": "Skill learn-taste",
+        "url": "https://github.com/emilkowalski/skills"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "idea-a-especificacion",
+      "title": "Convertir una idea vaga en requisitos verificables",
+      "topic": "programar",
+      "level": "inicial",
+      "technique": "Especificación antes del código",
+      "when": "Antes de pedir una función nueva, cuando solo tienes una idea general de lo que quieres.",
+      "inputs": [
+        "Descripción breve de la idea",
+        "Proyecto donde irá",
+        "Quién la va a usar"
+      ],
+      "body": "Quiero añadir esto a [proyecto]: [idea]. Todavía no escribas código.\nLee las partes del proyecto relacionadas y redacta una especificación breve: a quién sirve, qué problema resuelve, el recorrido principal, los casos límite y qué pasa cuando algo falla.\nCierra con criterios de aceptación que yo pueda comprobar uno a uno sin conocimientos técnicos.\nSepara lo que comprobaste en el proyecto de lo que supones. Hazme como máximo cinco preguntas numeradas, cada una con tu respuesta recomendada, sobre decisiones que cambien la función de forma importante.\nNo crees archivos ni ramas hasta que apruebe la especificación.",
+      "expect": "Una especificación de una página con criterios de aceptación comprobables y las dudas importantes resueltas.",
+      "works_with": [
+        "Claude Code",
+        "Codex",
+        "ChatGPT",
+        "Claude",
+        "Gemini"
+      ],
+      "inspired_by": {
+        "title": "Prompts prácticos para Codex",
+        "url": "https://x.com/LDT0545/status/2118441074683445641"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "accesibilidad-wcag",
+      "title": "Revisar la accesibilidad con una tabla de antes y después",
+      "topic": "disenar",
+      "level": "intermedio",
+      "technique": "Auditoría con criterios medibles",
+      "when": "Cuando quieres que una página se pueda usar con teclado, lector de pantalla y buena legibilidad.",
+      "inputs": [
+        "Página o componente",
+        "Navegadores y dispositivos objetivo"
+      ],
+      "body": "Revisa [página o componente] tomando como guía WCAG 2.2 nivel AA. Si no te indico el público, dime qué supones.\nComprueba contraste del texto (al menos 4.5:1 en texto normal), foco visible, navegación completa con teclado, nombre accesible en botones que solo tienen icono, errores comprensibles y respeto a la preferencia de reducir movimiento.\nPrimero lista solo los problemas que puedas verificar, a quién afectan y dónde están. Aparta lo que necesite prueba manual con lector de pantalla.\nPropón arreglos que respeten el diseño actual y pregúntame antes de cambiar colores de marca o la estructura.\nTras aplicar los aprobados, entrega una tabla con problema, estado previo, estado nuevo y cómo lo comprobaste.",
+      "expect": "Una tabla de problemas de accesibilidad con su corrección y la forma de verificar cada uno.",
+      "works_with": [
+        "Claude Code",
+        "Codex",
+        "Antigravity"
+      ],
+      "inspired_by": {
+        "title": "Prompts concretos de UI/UX",
+        "url": "https://x.com/AIExplorerTim/status/2121031543229677574"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "planificar-caro-ejecutar-barato",
+      "title": "Planificar con un modelo potente y delegar la ejecución",
+      "topic": "programar",
+      "level": "avanzado",
+      "technique": "Planificar caro, ejecutar barato",
+      "when": "En tareas largas, cuando quieres usar el modelo más caro solo para pensar y dejar la implementación a uno más económico.",
+      "inputs": [
+        "Tarea y objetivo",
+        "Modelos o agentes disponibles",
+        "Comandos de verificación"
+      ],
+      "body": "Vamos a repartir el trabajo de [tarea]. En esta sesión usa el modelo más capaz solo para entender el problema, decidir el enfoque y escribir la especificación.\nLa especificación incluye objetivo, archivos afectados, pasos, qué no se debe tocar y cómo comprobar el resultado con [comandos de verificación].\nDespués pasa cada parte a [subagente o agente más económico] con esa especificación. Puedes quedarte las partes más difíciles si explicas por qué.\nAntes de delegar, dime qué supones sobre el proyecto y qué partes ves arriesgadas.\nRevisa lo que vuelva contra la especificación; si algo no cumple, devuélvelo con la corrección concreta.\nNingún agente puede borrar datos, cambiar dependencias o publicar sin mi aprobación. Al final, resume qué hizo cada uno y el resultado de las comprobaciones.",
+      "expect": "Una especificación clara, trabajo delegado revisado contra ella y un resumen de quién hizo qué con las comprobaciones superadas.",
+      "works_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "Planificar caro y ejecutar barato",
+        "url": "https://x.com/Voxyz_ai/status/2120260216046727370"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15",
+      "featured": true
+    },
+    {
+      "id": "premortem-plan",
+      "title": "Atacar tu plan antes de ejecutarlo (pre-mortem)",
+      "topic": "mejorar",
+      "level": "intermedio",
+      "technique": "Pre-mortem y equipo contrario",
+      "when": "Antes de empezar un proyecto o una función grande, para encontrar los puntos débiles del plan.",
+      "inputs": [
+        "El plan escrito",
+        "Objetivo y plazo",
+        "Recursos disponibles"
+      ],
+      "body": "Haz de adversario de este plan: [plan]. Busco [objetivo] en [plazo].\nPrimero resúmelo con tus palabras y espera a que confirme que lo entendiste.\nDespués da por hecho que dentro de [seis meses] salió mal y razona hacia atrás. Revisa en especial: suposiciones sin comprobar, escenarios de fallo olvidados, atajos optimistas y alternativas más simples.\nPara las tres causas más probables, indica la señal que la delataría, cuánto costaría y un experimento pequeño y barato para confirmarla o descartarla pronto.\nDistingue lo que sabes de lo que supones. No modifiques archivos ni empieces a ejecutar nada.\nTermina con un veredicto: seguir, correr antes un experimento concreto o replantear.",
+      "expect": "Tres riesgos concretos con su señal, coste y experimento, y un veredicto claro sobre el plan.",
+      "works_with": [
+        "Claude",
+        "ChatGPT",
+        "Gemini",
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "Red team del plan antes de empezar",
+        "url": "https://x.com/Voxyz_ai/status/2120260216046727370"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "auditar-instrucciones",
+      "title": "Auditar instrucciones obsoletas de tus agentes",
+      "topic": "mejorar",
+      "level": "avanzado",
+      "technique": "Auditoría de precedencia con juez independiente",
+      "when": "Cuando tus archivos AGENTS.md, CLAUDE.md o reglas crecieron con el tiempo y ya no sabes si el código los respeta.",
+      "inputs": [
+        "Repositorio",
+        "Archivos de instrucciones conocidos",
+        "Reglas que nunca deben romperse"
+      ],
+      "body": "Trabaja solo leyendo hasta que yo apruebe. Localiza todos los archivos de instrucciones para agentes en [repositorio] y en mi configuración de usuario: AGENTS.md, CLAUDE.md, reglas de editores y similares.\nContrasta cada regla con el código: se cumple (dos ejemplos), se contradice (archivo, línea y número de casos) o no se puede comprobar. Ignora detalles de estilo y céntrate en errores, datos, APIs, registros y pruebas.\nPide a un subagente nuevo, que no haya visto tu análisis, que reabra cada cita y descarte lo que no pueda confirmar.\nAparta las reglas críticas ([secretos, comandos destructivos, rutas protegidas, pruebas antes de terminar]) y propón cómo hacerlas obligatorias con permisos o hooks, mostrando cada cambio como diff.\nSi mi archivo de usuario no aclara qué manda cuando instrucción y código chocan, propón una frase breve de prioridad.\nEntrega una tabla (regla, qué encontraste, prueba, edición sugerida), indica qué supusiste y espera mi sí antes de editar.",
+      "expect": "Una tabla de reglas contrastadas con el código, diffs de permisos o hooks y una frase de prioridad lista para aprobar.",
+      "works_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "Instrucciones obsoletas y frase de precedencia",
+        "url": "https://x.com/LimestoneHQ/status/2119808229236699466"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "memoria-compartida-agentes",
+      "title": "Compartir la memoria del proyecto entre agentes",
+      "topic": "mejorar",
+      "level": "avanzado",
+      "technique": "Memoria versionada en el repositorio",
+      "when": "Cuando usas Claude Code y Codex en el mismo repositorio y cada uno olvida lo que aprendió el otro.",
+      "inputs": [
+        "Repositorio con Git",
+        "Ubicación actual de la memoria de cada agente"
+      ],
+      "body": "Quiero que [Claude Code y Codex] compartan lo aprendido en [repositorio]. Localiza dónde guarda cada uno sus notas de memoria de este proyecto y muéstrame la lista sin moverla.\nAntes de copiar nada al repositorio, busca tokens, claves, correos u otros datos personales y enséñamelos para dejarlos fuera.\nPropón una carpeta común dentro del repo, por ejemplo [.agents/memory/], con un índice breve, y una línea para AGENTS.md (y CLAUDE.md si existe) que pida leer ese índice al empezar y anotar ahí lo nuevo.\nIndica qué supones sobre cómo carga la memoria cada herramienta y cita la documentación cuando la uses.\nNo borres la memoria original hasta que yo confirme que la nueva funciona.\nPara verificar, abre una sesión nueva en cada agente y comprueba que ambos citan una nota del índice. Sugiere además una revisión periódica que una duplicados y marque notas viejas.",
+      "expect": "Una carpeta de memoria común sin secretos, enlazada desde las instrucciones y comprobada en sesiones nuevas de ambos agentes.",
+      "works_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "Memoria compartida entre Claude Code y Codex",
+        "url": "https://x.com/Voxyz_ai/status/2118448272742486490"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "repo-central",
+      "title": "Crear un repositorio central para skills y guías",
+      "topic": "programar",
+      "level": "avanzado",
+      "technique": "Patrón de repositorio central",
+      "when": "Cuando tienes varios proyectos con skills, AGENTS.md y documentos repetidos y quieres una sola fuente.",
+      "inputs": [
+        "Carpeta donde están tus repositorios",
+        "Agente que usas",
+        "Si es personal o de equipo"
+      ],
+      "body": "Ayúdame a montar un repositorio central que reúna mis skills, instrucciones y documentos compartidos y que apunte a mis demás proyectos.\nReunir datos es tarea tuya: inventaría los repositorios bajo [carpeta], saltando dependencias, con ruta, remoto, visibilidad y fecha del último commit. No abras .env ni archivos con secretos.\nClasifica cada skill, instrucción y documento para agentes en un grupo: compartido, duplicado (señala la copia más reciente), propio de un repo o instalado desde un catálogo.\nPlantéame las decisiones en rondas de preguntas numeradas, con tu recomendación y de forma que me baste responder sí para aceptarla. Indica qué supones.\nHasta que apruebe la tabla de destinos, solo lees. Al aplicar, usa ramas nuevas, conserva enteras las carpetas de skills y no hagas push: eso lo decido yo.\nTermina con un informe por fila: qué se movió, qué ramas creaste y qué dejaste sin hacer y por qué.",
+      "expect": "Un repositorio central con una sola copia de cada recurso compartido, enlaces a los demás proyectos y un informe de lo aplicado.",
+      "works_with": [
+        "Claude Code",
+        "Codex",
+        "OpenCode"
+      ],
+      "inspired_by": {
+        "title": "Patrón Home Repo",
+        "url": "https://www.aihero.dev/the-home-repo-pattern"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "pc-lenta",
+      "title": "Averiguar por qué tu computadora va lenta",
+      "topic": "diagnosticar",
+      "level": "inicial",
+      "technique": "Diagnóstico de solo lectura con cambios aprobados",
+      "when": "Cuando la computadora tarda en arrancar o se traba y no sabes qué la frena.",
+      "inputs": [
+        "Sistema operativo",
+        "Cuándo notas la lentitud",
+        "Asistente con acceso al equipo"
+      ],
+      "body": "Mi computadora con [sistema] va lenta sobre todo cuando [situación]. Quiero entender la causa antes de tocar nada.\nRevisa qué consume más procesador, memoria y disco ahora, qué se abre al encender el equipo y qué ocupa más espacio. Explica cada cosa con palabras sencillas y señala lo que no reconozcas.\nDime qué supones cuando no puedas comprobar algo y separa lo seguro de lo probable.\nNo cierres programas, no desactives nada y no borres archivos. Dame una lista de cambios propuestos con su efecto esperado y cómo deshacerlos, y aplica únicamente los que yo apruebe.\nAntes de cambios grandes, comprueba si hay una copia de seguridad reciente y avísame si falta.\nAl final, repite la misma medición y muéstrame la diferencia.",
+      "expect": "Una explicación clara de qué frena el equipo, cambios aplicados solo con tu permiso y una medición antes y después.",
+      "works_with": [
+        "Claude",
+        "Claude Code",
+        "Codex",
+        "ChatGPT"
+      ],
+      "inspired_by": {
+        "title": "Diagnóstico de una computadora lenta",
+        "url": "https://x.com/0xKento_/status/2120596502540382661"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "wifi-diagnostico",
+      "title": "Diagnosticar una conexión WiFi lenta o que se corta",
+      "topic": "diagnosticar",
+      "level": "inicial",
+      "technique": "Diagnóstico por capas con medición",
+      "when": "Cuando internet va más lento de lo contratado o se desconecta y no sabes si es el equipo, el WiFi o el proveedor.",
+      "inputs": [
+        "Velocidad contratada",
+        "Momentos en que falla",
+        "Modelo de router si lo sabes"
+      ],
+      "body": "Tengo contratados [velocidad] y la conexión [va lenta / se corta], sobre todo [cuándo]. Ayúdame a ubicar el problema: este equipo, la red WiFi o el proveedor.\nMide bajada, subida y latencia y compáralas con lo contratado. Revisa qué programas usan la red ahora, el historial de desconexiones de los últimos días y la calidad de la señal y del canal.\nExplica cada resultado con palabras sencillas y dime qué supones cuando un dato no esté disponible.\nSi hay que entrar al router, abre su página y la contraseña la escribo yo. No cambies ajustes de red, controladores ni el router sin mi permiso; propón cada cambio con la forma de revertirlo.\nEntrega un resumen: dónde está la causa más probable, qué pruebas la respaldan y qué medición repetir para confirmar la mejora.",
+      "expect": "La causa más probable con pruebas medidas y una forma de comprobar si el cambio mejoró la conexión.",
+      "works_with": [
+        "Claude",
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "Diagnóstico del WiFi con un asistente",
+        "url": "https://x.com/HeyAirahAi/status/2119046142189269333"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "aprender-a-fondo",
+      "title": "Aprender un tema a fondo con un tutor exigente",
+      "topic": "aprender",
+      "level": "inicial",
+      "technique": "Primeros principios con preguntas de control",
+      "when": "Cuando quieres entender de verdad un tema y no solo leer un resumen.",
+      "inputs": [
+        "Tema",
+        "Lo que ya sabes",
+        "Para qué lo necesitas"
+      ],
+      "body": "Quiero entender [tema] para [objetivo]. Hoy sé esto: [nivel actual]. Antes de explicar, dime qué supones sobre mi punto de partida y ajústalo con una o dos preguntas.\nConstruye la explicación desde las ideas básicas, con una analogía cotidiana por concepto y señalando dónde deja de servir cada analogía.\nIncluye cómo evolucionó la idea, los errores típicos de principiante y tres preguntas que se haría alguien experto.\nCada pocos pasos, hazme una pregunta para comprobar si lo entendí y no sigas hasta que responda.\nMarca qué es consenso, qué está en debate y qué no sabes con seguridad; sugiere dos o tres lecturas de referencia que yo pueda verificar. Si quieres crear archivos o tarjetas de estudio, pregúntame antes.\nAl final, pídeme que explique el tema con mis palabras y señala qué me falta.",
+      "expect": "Una explicación por capas con preguntas de control y una comprobación final de lo que realmente entendiste.",
+      "works_with": [
+        "Claude",
+        "ChatGPT",
+        "Gemini"
+      ],
+      "inspired_by": {
+        "title": "Prompts para aprender en profundidad",
+        "url": "https://www.instagram.com/p/DeSdMhBicI8/"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15",
+      "featured": true
+    },
+    {
+      "id": "simular-usuarios",
+      "title": "Probar tu app con cinco usuarios simulados",
+      "topic": "lanzar",
+      "level": "intermedio",
+      "technique": "Usuarios sintéticos con subagentes",
+      "when": "Antes de lanzar una app, para descubrir dónde se confundirían o abandonarían tus primeras personas usuarias.",
+      "inputs": [
+        "Enlace de prueba o app local",
+        "Tarea principal que deben completar",
+        "Cuentas y datos de prueba"
+      ],
+      "body": "Lanza [5] subagentes que usen [app] en un navegador real como si fueran mis primeros usuarios, con [cuentas de prueba] y en un entorno de prueba.\nPerfiles: alguien con prisa que abandona al primer error, alguien desconfiado que lee privacidad y condiciones, alguien en un celular con conexión lenta, alguien que no domina el idioma de la interfaz y alguien que pega texto raro y hace doble clic en todo.\nCada uno intenta [tarea principal] y guarda una captura en cada momento de duda o bloqueo. Indica qué supones sobre cada perfil.\nNo deben enviar correos, hacer pagos reales, escribir a terceros ni borrar datos; si un paso lo exige, se detienen y lo anotan.\nReúne los hallazgos en una sola lista priorizada, sin duplicados, con perfil, paso, captura y arreglo sugerido. Espera mi aprobación antes de corregir.\nTras corregir, repite la prueba: termina cuando los cinco perfiles completen la tarea.",
+      "expect": "Una lista priorizada de fricciones con capturas y una segunda ronda en la que los cinco perfiles completan la tarea.",
+      "works_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "Simular a los primeros usuarios con subagentes",
+        "url": "https://www.instagram.com/reel/DeuoJOdOdU7/"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "ui-concreta",
+      "title": "Rediseñar un panel con un sistema visual limitado",
+      "topic": "disenar",
+      "level": "intermedio",
+      "technique": "Restricciones de diseño explícitas",
+      "when": "Cuando un panel o pantalla se ve desordenado y pedir \"hazlo más moderno\" no da resultados.",
+      "inputs": [
+        "Captura de la pantalla",
+        "Anchos de pantalla importantes",
+        "Lo que no se puede tocar"
+      ],
+      "body": "Analiza esta captura de [pantalla]. Primero nombra los cinco problemas más graves de jerarquía y densidad de información y cómo afectan a quien la usa.\nDefine un sistema mínimo: una escala de espaciado, una escala tipográfica y como máximo cinco variables de color. Rehaz la pantalla usando solo eso, sin degradados.\nNo cambies [lo que no se puede tocar: datos, llamadas a la API, orden de campos]. Dime qué supones sobre la marca y el contenido.\nRevisa los anchos [390, 768 y 1440 px]: zonas táctiles de al menos 44 px, sin desplazamiento horizontal y tablas que pasen a tarjetas en pantallas pequeñas.\nAntes de reemplazar componentes que comparten otras pantallas, pregúntame.\nEntrega capturas en cada ancho y una lista de lo que se rompió y cómo lo arreglaste.",
+      "expect": "Una pantalla rehecha con un sistema visual corto y capturas en cada ancho que lo demuestran.",
+      "works_with": [
+        "Claude Code",
+        "Codex",
+        "Antigravity",
+        "Claude"
+      ],
+      "inspired_by": {
+        "title": "Prompts concretos de UI/UX",
+        "url": "https://x.com/AIExplorerTim/status/2121031543229677574"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "formulario-completable",
+      "title": "Mejorar un formulario para que más gente lo termine",
+      "topic": "disenar",
+      "level": "intermedio",
+      "technique": "Diseño orientado a la tasa de finalización",
+      "when": "Cuando la gente empieza tu formulario pero lo abandona o comete errores.",
+      "inputs": [
+        "Formulario o archivo",
+        "Campos obligatorios",
+        "Lo que no puede cambiar"
+      ],
+      "body": "Mejora [formulario] con un único objetivo: que más personas lo completen sin errores.\nPropón una sola columna, etiquetas visibles encima de cada campo y validación al salir del campo, no con cada tecla. Cada error debe explicar cómo corregirlo.\nAñade los estados de foco, deshabilitado, cargando y error, y comprueba que se pueda completar solo con teclado.\nNo cambies el orden de los campos, los nombres que recibe el servidor ni las llamadas a la API. Dime qué supones sobre quién lo rellena y desde qué dispositivo.\nMuéstrame el plan y espera mi aprobación antes de editar; no envíes datos reales al probar.\nVerifica con datos de prueba un envío correcto y tres con errores, y entrega capturas de cada estado.",
+      "expect": "Un formulario más claro con todos sus estados visibles y pruebas de envío correcto y con errores.",
+      "works_with": [
+        "Claude Code",
+        "Codex",
+        "Antigravity"
+      ],
+      "inspired_by": {
+        "title": "Formulario orientado a la tasa de finalización",
+        "url": "https://x.com/AIExplorerTim/status/2121031543229677574"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "mapa-de-la-app",
+      "title": "Dibujar un mapa sencillo de cómo funciona tu app",
+      "topic": "programar",
+      "level": "inicial",
+      "technique": "Mapa del sistema en lenguaje sencillo",
+      "when": "Cuando no entiendes bien cómo se conectan las pantallas, archivos y datos de un proyecto propio o heredado.",
+      "inputs": [
+        "Repositorio o documento de requisitos",
+        "Partes que más te interesan"
+      ],
+      "body": "Lee [proyecto] sin modificar nada y dibuja un mapa de su organización: pantallas, componentes, rutas del servidor, datos y servicios externos.\nPon a cada pieza un nombre descriptivo en lenguaje sencillo junto a su nombre técnico, y muestra qué se conecta con qué.\nElige [una pantalla clave] y sigue su recorrido desde el clic hasta la base de datos. Indica qué supones donde el código no sea claro.\nEntrega el mapa como un único archivo HTML local que pueda abrir sin instalar nada. Pregúntame antes de instalar dependencias o crear archivos fuera de [carpeta de salida].\nPara comprobarlo, usa el mapa para responder: ¿qué se rompería si cambio [tabla o archivo]? Cita los archivos que lo demuestran.",
+      "expect": "Un mapa HTML navegable del proyecto y una respuesta de impacto respaldada por archivos concretos.",
+      "works_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "Floorplan: mapa interactivo de una app",
+        "url": "https://github.com/haydenschmitty/floorplan"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "maquinas-de-estado",
+      "title": "Encontrar estados ocultos en tu aplicación",
+      "topic": "programar",
+      "level": "avanzado",
+      "technique": "Hacer explícitas las máquinas de estado",
+      "when": "Cuando aparecen errores raros porque varias banderas o variables combinan estados que no deberían existir.",
+      "inputs": [
+        "Repositorio",
+        "Flujos más importantes",
+        "Comando de pruebas"
+      ],
+      "body": "Busca en [proyecto] las máquinas de estado implícitas: grupos de banderas, estados de carga, pasos de un asistente o estados de pedido que cambian sin un modelo explícito.\nPara cada una, lista los estados posibles, las transiciones, las combinaciones imposibles que hoy el código permite y dónde vive cada pieza.\nPrioriza por riesgo para quien usa la app, claridad para quien mantiene el código y facilidad para que un agente lo entienda. Dime qué supones donde el comportamiento no esté claro.\nPropón un modelo explícito para las dos o tres más importantes, con un diagrama de estados, y espera mi aprobación antes de refactorizar.\nNo cambies comportamiento visible sin avisar. Añade pruebas que fallen con las combinaciones imposibles y pasen con el nuevo modelo, y ejecuta [comando de pruebas].",
+      "expect": "Un inventario de estados ocultos, diagramas de los principales y pruebas que demuestran que ya no se dan estados imposibles.",
+      "works_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "Máquinas de estado implícitas",
+        "url": "https://x.com/Voxyz_ai/status/2119444845890617507"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "video-demo-proyecto",
+      "title": "Crear un video demo con las pantallas reales",
+      "topic": "contenido",
+      "level": "intermedio",
+      "technique": "Guion aprobado antes del render",
+      "when": "Cuando terminaste un proyecto y quieres un video corto para presentarlo sin editar a mano.",
+      "inputs": [
+        "Proyecto funcionando",
+        "Duración y formato",
+        "Tono deseado"
+      ],
+      "body": "Crea un video de presentación de [proyecto] de [duración] en formato [horizontal / vertical / cuadrado] con tono [tono].\nPrimero recorre la app y elige las tres o cuatro funciones que mejor explican su valor. Usa solo pantallas reales: ni capturas inventadas ni cifras que no existan.\nPropón un guion por escenas con poco texto en pantalla y dime qué supones sobre el público. Espera a que apruebe el guion.\nUsa datos de prueba; no muestres datos personales, claves ni correos reales. Pregúntame antes de instalar herramientas o usar música de licencia dudosa.\nRenderiza primero fotogramas de muestra, revísalos en busca de textos cortados o elementos desbordados y solo después el video completo.\nNo lo des por terminado sin revisar el archivo final; entrega su ruta y la lista de escenas con su segundo de inicio.",
+      "expect": "Un video corto con pantallas reales, revisado antes de entregarse, y su guion por escenas.",
+      "works_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "Skill brag para videos demo",
+        "url": "https://github.com/latent-spaces/brag"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "sistema-motion",
+      "title": "Montar un sistema de videos de producto con código",
+      "topic": "contenido",
+      "level": "avanzado",
+      "technique": "Datos de marca separados de la animación",
+      "when": "Cuando necesitas muchas variantes de video de producto con la misma calidad y quieres plantillas reutilizables.",
+      "inputs": [
+        "Ficha de marca (colores, tipografía, logo)",
+        "Mensajes aprobados",
+        "Formatos de salida"
+      ],
+      "body": "Quiero un sistema reutilizable que genere videos de producto con [herramienta, por ejemplo Remotion] a partir de una ficha de marca.\nMantén los datos de marca y los textos fuera del código de animación. Antes de renderizar, valida que los archivos existen, que los textos caben y que solo se usan afirmaciones de [lista aprobada].\nCrea piezas para título, interfaz del producto, presentación de funciones, gráficos y llamada a la acción, con animaciones que dependan solo del número de fotograma.\nAdmite [9:16, 1:1 y 16:9] y varias versiones de gancho y cierre. Estilo sobrio: tipografía cuidada, pocos colores, sin brillos genéricos ni capturas falsas.\nEmpieza revisando el proyecto, propón la arquitectura y el formato de la ficha y espera mi visto bueno. Dime qué supones.\nConstruye primero la demo completa más pequeña, revisa fotogramas por desbordes y solo después renderiza en lote. Pregúntame antes de sobrescribir videos existentes.\nEntrega los MP4 y un manifiesto con cada archivo, su formato y la variante usada.",
+      "expect": "Plantillas de video reutilizables, una demo revisada y un manifiesto con cada archivo entregado.",
+      "works_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "Sistema automatizado de motion design",
+        "url": "https://x.com/e1genqq/status/2118440874883391727"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "brief-creativo-preguntas",
+      "title": "Convertir un pedido creativo en un brief completo",
+      "topic": "contenido",
+      "level": "inicial",
+      "technique": "Preguntas aclaratorias antes de generar",
+      "when": "Cuando quieres imágenes o videos de tu producto pero solo tienes una idea general como \"fotos premium\".",
+      "inputs": [
+        "Foto o descripción del producto",
+        "Dónde se publicará",
+        "Público al que va dirigido"
+      ],
+      "body": "Quiero [piezas: fotos, video corto, animación] de [producto] para [canal]. Antes de generar nada, hazme hasta seis preguntas, de una en una, para convertir esto en un brief.\nCubre público, sensación buscada, escenario, iluminación, encuadre, colores de marca y lo que hay que evitar.\nCon mis respuestas, escribe un brief de una página y dime qué supusiste donde no respondí.\nPropón tres variantes que cambien una sola cosa cada una (luz, fondo o encuadre) para poder compararlas.\nEl producto debe ser fiel al real: sin cambiar logotipo, etiqueta, forma ni colores, y sin afirmaciones que no te di. Pregúntame antes de usar caras de personas reales o marcas de terceros.\nEntrega el brief y los prompts listos para [herramienta de imagen o video], con una lista para comprobar cada pieza contra el producto real.",
+      "expect": "Un brief claro, tres variantes comparables y una lista para comprobar que cada pieza respeta el producto.",
+      "works_with": [
+        "Claude",
+        "ChatGPT",
+        "Gemini"
+      ],
+      "inspired_by": {
+        "title": "Agente creativo con preguntas aclaratorias",
+        "url": "https://www.instagram.com/reel/DfLoqUWOuvy/"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "analizar-videos-exitosos",
+      "title": "Analizar videos que funcionan sin copiarlos",
+      "topic": "contenido",
+      "level": "inicial",
+      "technique": "Analizar la estructura, no copiar el contenido",
+      "when": "Cuando quieres entender por qué ciertos videos de tu nicho funcionan antes de planear los tuyos.",
+      "inputs": [
+        "Enlaces o transcripciones de 5 a 10 videos",
+        "Tu nicho y público",
+        "Métricas visibles"
+      ],
+      "body": "Analiza estos videos de [nicho]: [enlaces o transcripciones]. Para cada uno describe el gancho de los primeros segundos, tema, formato, duración, llamada a la acción y métricas visibles.\nSi te paso comentarios, resume qué valora o critica la audiencia, sin citar nombres de usuarios.\nBusca patrones que se repiten y separa lo que muestran los datos de lo que supones.\nCon esos patrones, propón [5] ideas para [mi marca] que aprovechen la estructura con tema, ejemplos y guion originales. No copies frases, imágenes ni música de los videos analizados.\nPregúntame antes de publicar, programar o descargar contenido.\nEntrega una tabla de análisis y, para cada idea, qué patrón usa y qué métrica revisaré para saber si funcionó.",
+      "expect": "Una tabla de patrones de videos exitosos y varias ideas originales con la métrica para evaluarlas.",
+      "works_with": [
+        "Claude",
+        "ChatGPT",
+        "Gemini",
+        "Claude Code"
+      ],
+      "inspired_by": {
+        "title": "Matriz para analizar videos virales",
+        "url": "https://www.instagram.com/reel/Deo5tVWxA3X/"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "foto-producto-anuncio",
+      "title": "Convertir la foto de un producto en piezas de anuncio",
+      "topic": "contenido",
+      "level": "inicial",
+      "technique": "Comandos de estilo reutilizables",
+      "when": "Cuando cuentas con una imagen auténtica de lo que vendes y quieres varias versiones para redes sin diseñar desde cero.",
+      "inputs": [
+        "Foto real del producto",
+        "Oferta o mensaje",
+        "Formato y red social"
+      ],
+      "body": "Tengo esta foto de [producto] y quiero piezas para [red social] en formato [proporción]. Mi mensaje es [oferta o mensaje].\nArma un pequeño menú de estilos con nombre corto que pueda reutilizar: póster minimalista, oferta destacada, escena de uso cotidiano, primer plano de detalle y foto natural estilo cliente.\nPara cada estilo escribe un prompt para [herramienta de imagen] que describa fondo, luz, encuadre y espacio para el texto.\nEl producto debe quedar idéntico: misma forma, etiqueta, logotipo y colores. Dime qué supones sobre la marca y no inventes precios, descuentos ni beneficios.\nPregúntame antes de incluir personas, marcas ajenas o textos legales.\nEntrega los prompts y una lista para comparar cada imagen generada con la foto original antes de publicarla.",
+      "expect": "Un menú de estilos reutilizables con sus prompts y una lista de control para validar cada imagen.",
+      "works_with": [
+        "ChatGPT",
+        "Gemini",
+        "Claude"
+      ],
+      "inspired_by": {
+        "title": "Comandos para diseños de producto",
+        "url": "https://www.instagram.com/reel/De45-O4Nelr/"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "plano-a-recorrido-3d",
+      "title": "Convertir un plano 2D en un recorrido 3D en el navegador",
+      "topic": "disenar",
+      "level": "avanzado",
+      "technique": "Bucle con crítico independiente",
+      "when": "Cuando tienes el plano de una vivienda o local y quieres un recorrido navegable fiel a sus medidas.",
+      "inputs": [
+        "Plano 2D con medidas",
+        "Fotos o referencias de acabados",
+        "Estancias prioritarias"
+      ],
+      "body": "Convierte el plano [archivo] en un recorrido 3D que se abra en el navegador y funcione en móvil.\nPasa primero el plano a datos (muros, aberturas y estancias), dibújalos sobre la imagen original y calcula cuánto coinciden antes de empezar el 3D. Dime qué supones donde el plano no se lea bien.\nConstruye solo [estancias prioritarias] y deja cerradas las demás. Genera geometría y materiales por código, sin modelos descargados de origen dudoso.\nSepara construir de juzgar: tras cada estancia, envía renders y referencias a un subagente revisor recién creado, que conteste sí o no y nombre hasta cinco fallos por gravedad, cada uno con un ajuste medible.\nEn decisiones de gusto, enséñale dos opciones marcadas A y B para que escoja. Repite hasta obtener un sí.\nPregúntame antes de publicar el recorrido o usar fotos de terceros. Entrega el enlace local, una captura por estancia y el registro del revisor con lo que una persona aún debería comprobar.",
+      "expect": "Un recorrido 3D fiel al plano, revisado por un crítico independiente, con capturas y notas de revisión.",
+      "works_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "Planos 2D a recorridos 3D",
+        "url": "https://x.com/VisualconAI/status/2121591290790052030"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "estudiar-trading-sin-riesgo",
+      "title": "Estudiar decisiones de mercado sin arriesgar dinero",
+      "topic": "aprender",
+      "level": "avanzado",
+      "technique": "Debate de agentes con tutoría socrática",
+      "when": "Cuando quieres entender cómo razona un sistema de análisis de mercados con agentes, solo con fines educativos.",
+      "inputs": [
+        "Herramienta de análisis con agentes en local",
+        "Activos para estudiar",
+        "Periodo histórico"
+      ],
+      "body": "Esto es solo para aprender, no para invertir. No conectes cuentas de bróker ni ejecutes órdenes, y no me des recomendaciones personales de inversión.\nConfigura [herramienta, por ejemplo TradingAgents] en modo de investigación para [activos] y explícame qué papel cumple cada agente y cómo debaten.\nHaz una prueba histórica de [periodo] con una decisión por semana y compara cada una con un índice de referencia, teniendo en cuenta costes y el riesgo de sobreajuste.\nDime qué supones en cada paso y qué datos no pudiste verificar. Pregúntame antes de instalar dependencias, programar tareas o configurar accesos a proveedores.\nDespués, hazme preguntas de tutor sobre por qué el sistema tomó cada decisión y corrige mis respuestas.\nEntrega una tabla con decisión, razonamiento resumido y resultado frente al índice, más una advertencia clara de que el rendimiento pasado no predice el futuro.",
+      "expect": "Una prueba histórica explicada y comparada con un índice, y un cuestionario que muestra si entendiste el razonamiento.",
+      "works_with": [
+        "Claude Code",
+        "Codex"
+      ],
+      "inspired_by": {
+        "title": "TradingAgents: análisis de mercado con varios agentes",
+        "url": "https://github.com/TauricResearch/TradingAgents"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "evaluar-idea-negocio",
+      "title": "Evaluar una idea de negocio con mirada escéptica",
+      "topic": "negocio",
+      "level": "inicial",
+      "technique": "Validación barata antes de construir",
+      "when": "Antes de invertir tiempo o dinero en una idea, para conocer sus riesgos y probarla barato.",
+      "inputs": [
+        "Descripción de la idea",
+        "Tiempo y presupuesto disponibles",
+        "Habilidades propias"
+      ],
+      "body": "Evalúa esta idea de negocio con honestidad: [idea]. Dispongo de [tiempo] y [presupuesto] y sé hacer [habilidades].\nNo prometas ingresos ni uses cifras sin fuente. Cuando estimes algo, da un rango, explica de dónde sale y márcalo como supuesto.\nDime cuánto trabajo exigirá al principio, quién pagaría y por qué, qué usa hoy esa persona en su lugar y los cinco riesgos principales, incluidos los legales y fiscales que debo consultar con un profesional. Señala qué estoy subestimando.\nPropón un experimento de [14] días con gasto mínimo para comprobar si alguien pagaría, con la métrica y el umbral que decidirán seguir o parar.\nNo crees cuentas, páginas ni anuncios por mí; si el experimento lo requiere, pregúntame antes.\nCierra con una recomendación: probar, ajustar la idea o descartarla, y por qué.",
+      "expect": "Una evaluación sin promesas de ingresos, con riesgos claros y un experimento corto con criterio de decisión.",
+      "works_with": [
+        "Claude",
+        "ChatGPT",
+        "Gemini"
+      ],
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "segundo-cerebro",
+      "title": "Incorporar fuentes nuevas a tu segundo cerebro",
+      "topic": "aprender",
+      "level": "intermedio",
+      "technique": "Compilar conocimiento con enlaces",
+      "when": "Cuando guardas artículos y notas en una carpeta o bóveda y quieres que se conecten con lo que ya sabes.",
+      "inputs": [
+        "Carpeta o bóveda de notas",
+        "Archivo nuevo a incorporar",
+        "Cómo enlazas tus notas"
+      ],
+      "body": "Quiero que mis notas crezcan conectadas. La fuente nueva es [archivo], en [carpeta de entrada] de mi bóveda.\nAntes de escribir, dime qué temas de mi bóveda crees que toca y qué supones sobre su fiabilidad (autoría, fecha, tipo de fuente).\nPropón qué notas crear y cuáles ampliar, con los enlaces a notas existentes que añadirías. Si la fuente choca con algo que ya tengo, muéstrame ambas versiones lado a lado.\nNo borres ni reescribas notas mías sin preguntarme; las ampliaciones van marcadas con fecha y fuente.\nCuando apruebe, aplica los cambios y entrega la lista de archivos tocados, con un enlace a la fuente en cada nota.\nPara verificar, elige una nota antigua y demuestra que ahora lleva a la información nueva en dos clics o menos.",
+      "expect": "Notas nuevas o ampliadas, enlazadas con las existentes, con contradicciones señaladas y una lista de archivos para revisar.",
+      "works_with": [
+        "Claude Code",
+        "Codex",
+        "Claude"
+      ],
+      "inspired_by": {
+        "title": "Segundo cerebro compilado con un agente",
+        "url": "https://x.com/rvaniaaaa/status/2119056971298980112"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "presentacion-idea",
+      "title": "Preparar una presentación breve de tu idea",
+      "topic": "negocio",
+      "level": "inicial",
+      "technique": "Estructura fija con huecos marcados",
+      "when": "Cuando tienes que explicar un proyecto o negocio en pocos minutos ante clientes, socios o un jurado.",
+      "inputs": [
+        "Descripción de la idea",
+        "Público y duración",
+        "Datos reales disponibles"
+      ],
+      "body": "Ayúdame a presentar [idea] ante [público] en [minutos]. Antes de diseñar, dime qué supones que ese público necesita oír para decir que sí.\nPropón un esquema de ocho a doce diapositivas que cubra el problema, la solución, para quién es, cómo se sostiene económicamente, avances, equipo, lo que pido y un cierre.\nCada diapositiva lleva una sola idea, como mucho 25 palabras y una nota con lo que diré en voz alta.\nUsa solo estos datos: [datos]. Si falta uno, deja un hueco marcado en lugar de inventarlo. No pongas mis datos de contacto salvo que te los indique.\nMuéstrame el esquema y espera mi aprobación antes de crear el archivo.\nEntrega el archivo y una lista de comprobación: una idea por diapositiva, cada cifra con su fuente y la pregunta que quiero provocar al final.",
+      "expect": "Un esquema aprobado y una presentación breve sin datos inventados, con notas para quien presenta.",
+      "works_with": [
+        "Claude",
+        "ChatGPT",
+        "Gemini"
+      ],
+      "inspired_by": {
+        "title": "Prompts prácticos con herramientas de un asistente",
+        "url": "https://x.com/free_ai_guides/status/2118991880914645303"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "investigar-decision",
+      "title": "Investigar a fondo antes de tomar una decisión",
+      "topic": "negocio",
+      "level": "intermedio",
+      "technique": "Investigación con fuentes y datos marcados",
+      "when": "Cuando debes elegir entre proveedores, herramientas, mercados o competidores y quieres un informe con fuentes.",
+      "inputs": [
+        "Decisión a tomar",
+        "Criterios importantes",
+        "Opciones que ya conoces"
+      ],
+      "body": "Tengo que decidir [decisión]. Mis criterios son [criterios] y ya conozco estas opciones: [opciones].\nPrimero dime qué información necesitarías para decidir bien y qué supones sobre mi situación.\nBusca fuentes públicas y recientes; cada afirmación lleva enlace y fecha. Si dos fuentes discrepan, muéstralas juntas.\nCompara las opciones en una tabla con mis criterios y marca cada celda como comprobada o estimada. Describe los riesgos de cada opción y lo que no pudiste averiguar.\nNo contactes a empresas, no te registres en servicios ni compartas mis datos; si algo lo requiere, pregúntame.\nCierra con una recomendación de una línea y el dato concreto que la haría cambiar.",
+      "expect": "Un informe con afirmaciones enlazadas, una tabla con datos marcados y una recomendación que dice qué la cambiaría.",
+      "works_with": [
+        "Claude",
+        "ChatGPT",
+        "Gemini"
+      ],
+      "inspired_by": {
+        "title": "Prompts prácticos con herramientas de un asistente",
+        "url": "https://x.com/free_ai_guides/status/2118991880914645303"
+      },
+      "authorship": "Plantilla original de Alexandría",
+      "checked_at": "2026-11-15"
     }
   ],
   "paths": [

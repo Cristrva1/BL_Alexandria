@@ -22,6 +22,7 @@ Las **679 fichas tienen revisión documental individual**: categoría, ejemplos 
 | Configurar o mejorar un agente, modelo local o automatización del teléfono | [Configurar IA](https://cristrva1.github.io/BL_Alexandria/#/configurar) |
 | Copiar una plantilla o saber dónde ejecutar un comando | [Prompts y comandos](https://cristrva1.github.io/BL_Alexandria/#/prompts) |
 | Elegir alojamiento, datos, contenedores o acceso remoto | [Servicios y despliegue](https://cristrva1.github.io/BL_Alexandria/#/servicios) |
+| Trabajar mejor con agentes: técnicas, ideas y recomendaciones | [Técnicas e ideas](https://cristrva1.github.io/BL_Alexandria/#/tecnicas) · [versión Markdown](human/TECNICAS.md) |
 | Explorar todo por tema | [Categorías y subcategorías](human/areas.md) |
 | Ver las incorporaciones recientes | [Novedades de la biblioteca](human/novedades.md) |
 

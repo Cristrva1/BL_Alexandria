@@ -40,6 +40,7 @@ Esta biblioteca es un menú curado de repos de IA y automatización, con datos c
 | `human/rutas.md`, `human/formas-de-uso.md` | Entradas por tarea y acceso | Orientación inicial |
 | `human/acceso.md`, `human/instalar.md`, `human/vocabulario.md` | Cuentas, primer uso y términos | Personas que empiezan |
 | `PRODUCT.md` | Público y propósito confirmados | Al cambiar navegación o interfaz |
+| `data/techniques.json` → `human/TECNICAS.md` | Técnicas, ideas, reglas y sitios útiles con fuente pública | Al pedir buenas prácticas de trabajo con agentes |
 | `human/areas.md`, `human/areas/*.md` | Áreas prácticas, subcategorías y configuración de asistentes | Para orientarse por campo o herramienta |
 
 ---

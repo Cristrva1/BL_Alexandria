@@ -8,6 +8,7 @@ from repo_intelligence.core.taxonomy import attach_areas, build_areas
 from repo_intelligence.core.access import access_facts, access_routes, API_LABELS, CLIENT_LABELS, LOCAL_LABELS, COST_LABELS, HARDWARE_LABELS, ROUTE_LABELS
 from repo_intelligence.core.reading import GUIDES
 from repo_intelligence.core.handbook import load_handbook
+from repo_intelligence.core.techniques import load_techniques
 from repo_intelligence.core.access import AUDIENCE_LABELS
 
 from repo_intelligence.menu.export import derive_install
@@ -392,6 +393,7 @@ def build_catalog(project_root: Path) -> dict:
         "labels": {**LABELS, "api": API_LABELS, "client": CLIENT_LABELS, "local_model": LOCAL_LABELS, "cost": COST_LABELS, "hardware": HARDWARE_LABELS, "route": ROUTE_LABELS, "audience": AUDIENCE_LABELS},
         "reading": GUIDES,
         "handbook": load_handbook(project_root, {repo['id'] for repo in repos}),
+        "techniques": load_techniques(project_root, {repo["gh"]: repo["id"] for repo in repos if repo.get("gh")}),
         "discovery": {**(compact.get("discovery") or {"goals": []}), "areas": areas},
         "access_checked": (compact.get("meta") or {}).get("access_checked") or "",
         "copy": COPY,

@@ -30,6 +30,8 @@ El catálogo se consulta desde Markdown en GitHub o mediante un sitio estático 
 - Ofrecer instrucciones y comandos con fuente y fecha; señalar explícitamente lo que sigue por confirmar.
 - Mantener fichas, recetas, comparaciones y material de orientación coherentes desde los mismos índices.
 - Mantener un manual independiente del inventario de repos: configuración de agentes y modelos, IA local, automatización Android/iOS, prompts, comandos y servicios de despliegue. Cada guía muestra requisitos, cuenta y coste, primera prueba, mejoras, límites y fuentes. Control remoto de un agente y automatización del teléfono se explican como rutas distintas.
+- Reunir técnicas, ideas y recomendaciones por área (agentes, contexto y costes, diseño, lanzamiento, modelos locales, contenido, marketing, negocio y automatización). Cada técnica explica pasos, por qué ayuda, límites, comandos literales con su fuente y enlaces públicos; los textos son propios y las cifras de terceros no se verifican.
+- La portada segmenta por experiencia (empiezo de cero, quiero crear algo, ya uso un agente), muestra áreas con color e icono propios, ideas de proyecto, recetas y plantillas destacadas. El tema sigue la preferencia clara u oscura del sistema y las animaciones respetan el movimiento reducido.
 - No confundir popularidad en GitHub con adecuación ni repos no descargados con incorporaciones recientes.
 
 ## Brand Commitments

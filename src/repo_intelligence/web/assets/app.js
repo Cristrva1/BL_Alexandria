@@ -14,11 +14,36 @@
   const NAV = [
     ["inicio", "Inicio"], ["empezar", "Guíame"], ["explorar", "Buscar"], ["rutas", "Por objetivo"],
     ["acceso", "Acceso y costes"], ["guias", "Guías"], ["configurar", "Configurar IA"],
-    ["prompts", "Prompts y comandos"], ["servicios", "Servicios y despliegue"], ["salas", "Categorías"],
+    ["prompts", "Prompts y comandos"], ["tecnicas", "Técnicas e ideas"], ["servicios", "Servicios y despliegue"], ["salas", "Categorías"],
     ["recetas", "Recetas"], ["comparar", "Comparar"], ["novedades", "Novedades"],
   ];
-
-  const ROLE_COLORS = ["#c24d2c", "#1e5c52", "#8d6a2f", "#3f382f", "#8e341c", "#6d6458"];
+  const NAV_GROUPS = [
+    ["Empieza", ["inicio", "empezar", "rutas", "acceso"]],
+    ["Explora", ["explorar", "salas", "recetas", "comparar", "novedades"]],
+    ["Aprende y trabaja", ["guias", "tecnicas", "prompts"]],
+    ["Configura", ["configurar", "servicios"]],
+  ];
+  const NAV_ICONS = {inicio:"🏛️",empezar:"🧭",explorar:"🔎",rutas:"🎯",acceso:"🔑",guias:"📖",configurar:"🛠️",prompts:"💬",tecnicas:"💡",servicios:"🚀",salas:"🗂️",recetas:"🧪",comparar:"⚖️",novedades:"✨"};
+  // Visual identity per practical area: an icon and an OKLCH hue (lightness comes from the theme).
+  const AREA_STYLE = {
+    frontend:["🎨",295], ciberseguridad:["🛡️",25], audiovisual:["🎬",345], trading:["📈",150], automatizacion:["⚙️",65],
+    agentes:["🤖",255], "ia-local":["🏠",190], documentos:["📄",48], datos:["📊",225], productividad:["🗂️",115],
+    desarrollo:["🧑‍💻",275], vision:["👁️",30], aprender:["🧠",85],
+    "configurar-claude-code":["✳️",38], "configurar-codex":["◎",205], "configurar-antigravity":["🪐",310],
+  };
+  const GOAL_ICONS = {programar:"💻",automatizar:"⚙️",whatsapp:"💬",documentos:"📎",investigar:"🔎",local:"🦙",web:"🌐",video:"🎬",voz:"🎙️",narrar:"🗣️",imagenes:"🖼️",presentaciones:"📽️",diagramas:"🧭",datos:"📈",mcp:"🔌",skills:"🧩",aprender:"📚",finanzas:"💹",notas:"🗒️",servicios:"🖥️",seguridad:"🛡️","3d":"🧊"};
+  const RECIPE_STYLE = {"bot-de-whatsapp-con-ia":["💬",150],"pipeline-de-reels-video-corto":["🎬",345],"agente-de-research-profundo":["🔎",255],"workspace-privado-local-soberano":["🏠",190],"analisis-de-repos-grandes":["🧠",275],"marketing-de-agencia":["📣",25],"web-app-moderna-con-ia":["🌐",295],"construir-una-appservidor-mcp":["🔌",205],"documentos-presentaciones":["📽️",48],"chatgpt-privado-local":["🦙",170],"rag-sobre-documentos":["📎",85],"agente-de-codigo-potenciado":["🛠️",38],"agente-de-voz":["📞",320],"analitica-con-ia":["📊",225]};
+  const EXAMPLES = [
+    {icon:"💬",h:150,title:"Atender clientes por WhatsApp",text:"Un asistente responde preguntas frecuentes, guarda los datos de contacto y pasa la conversación a una persona cuando hace falta.",goal:"whatsapp",recipe:"bot-de-whatsapp-con-ia"},
+    {icon:"📽️",h:48,title:"Convertir un PDF en presentación",text:"Extrae el texto de un informe largo y genera diapositivas editables que puedes revisar antes de presentarlas.",goal:"presentaciones",recipe:"documentos-presentaciones"},
+    {icon:"🎬",h:345,title:"Subtitular y recortar videos cortos",text:"Transcribe el audio, añade subtítulos y prepara versiones verticales para Reels o TikTok.",goal:"video",recipe:"pipeline-de-reels-video-corto"},
+    {icon:"🦙",h:170,title:"Un ChatGPT privado en tu computadora",text:"Conversa con modelos que se ejecutan en tu equipo, sin enviar tus documentos a un servicio externo.",goal:"local",recipe:"chatgpt-privado-local"},
+    {icon:"📎",h:85,title:"Preguntar a tus manuales y contratos",text:"Carga documentos propios y obtén respuestas que citan el fragmento de donde salen.",goal:"documentos",recipe:"rag-sobre-documentos"},
+    {icon:"🔎",h:255,title:"Investigar un tema con fuentes",text:"Un agente busca en la web, lee varias páginas y redacta un informe con enlaces para comprobarlo.",goal:"investigar",recipe:"agente-de-research-profundo"},
+  ];
+  function toneStyle(h) { return h===undefined?"":` style="--h:${Number(h)}"`; }
+  function areaIcon(id) { return (AREA_STYLE[id]||["📚"])[0]; }
+  function areaTone(id) { return toneStyle((AREA_STYLE[id]||[])[1]); }
 
   function norm(value) {
     return (value || "").toLowerCase().replace(/[^a-z0-9]/g, "");
@@ -103,8 +128,9 @@
 
   function repoCard(item) {
     const status = item.status === "archived" ? "Archivado" : item.status === "unverified" ? "Referencia sin verificar" : "";
-    return `<article class="repo-row">
-      <div class="repo-summary"><p class="meta">${esc(catName(item.cat))}${status ? ` · <strong>${esc(status)}</strong>` : ""}</p>
+    const area = (item.areas || []).find(id => areaById[id]?.kind === "work") || (item.areas || [])[0];
+    return `<article class="repo-row"${areaTone(area)}>
+      <div class="repo-summary"><p class="meta">${area && areaById[area] ? `${areaIcon(area)} ${esc(areaById[area].title)}` : esc(catName(item.cat))}${status ? ` · <strong>${esc(status)}</strong>` : ""}</p>
       <h2><a href="#/repo/${encodeURIComponent(item.id)}">${esc(item.name)}</a></h2>
       <p>${esc(item.lead)}</p></div>
       <div class="repo-access"><span class="badge">${esc(label("api", item.access.api))}</span>
@@ -184,45 +210,113 @@
   }
 
   function layout(active, main) {
-    const items = NAV.map(([id, text]) => {
-      const cls = id === active ? "item active" : "item";
-      return `<a class="${cls}" href="#/${id}"${id===active?' aria-current="page"':""}>${esc(text)}</a>`;
-    }).join("");
+    const navText = Object.fromEntries(NAV);
+    const item = (id) => `<li><a class="${id === active ? "item active" : "item"}" href="#/${id}"${id===active?' aria-current="page"':""}><span class="ico" aria-hidden="true">${NAV_ICONS[id]||"•"}</span>${esc(navText[id])}</a></li>`;
+    const groups = NAV_GROUPS.map(([title, ids]) => `<section class="nav-group"><h2>${esc(title)}</h2><ul>${ids.map(item).join("")}</ul></section>`).join("");
+    const extras = (catalog.handbook?.prompts?.length || 0);
+    const techniques = (catalog.techniques?.items?.length || 0);
     return `<a class="skip" href="#contenido">Saltar al contenido</a>
       <div class="shell">
         <nav class="nav" aria-label="Secciones">
           <a class="brand" href="#/inicio">
             <span class="seal" aria-hidden="true">A</span>
-            <span><small>Biblioteca</small><strong>Alexandría</strong></span>
+            <span><small>Biblioteca de</small><strong>Alexandría</strong></span>
           </a>
-          <div class="nav-items">${items}</div>
-          <p class="nav-foot">${catalog.counts.repos} repos · ${areas.length || catalog.counts.categories} áreas${areas.length ? ` · ${catalog.counts.topics} subtemas` : ""}</p>
+          <button class="nav-toggle" type="button" data-action="nav-toggle" aria-expanded="false" aria-controls="nav-items"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>Menú</button>
+          <div class="nav-items" id="nav-items">${groups}</div>
+          <p class="nav-foot">${catalog.counts.repos} repos · ${areas.length || catalog.counts.categories} áreas${areas.length ? ` · ${catalog.counts.topics} subcategorías` : ""}<br>${extras} prompts · ${techniques} técnicas</p>
         </nav>
-        <main id="contenido" class="main" tabindex="-1"><div class="wrap">${main}<p id="app-feedback" class="meta" role="status"></p></div></main>
+        <main id="contenido" class="main" tabindex="-1"><div class="wrap">${main}<p id="app-feedback" class="meta" role="status"></p>${siteFooter()}</div></main>
       </div>`;
+  }
+
+  function siteFooter() {
+    return `<footer class="site-foot"><div><h2>Biblioteca de Alexandría</h2><p>Un menú curado de ${catalog.counts.repos} repositorios de IA y automatización, explicado para personas que empiezan. Cada ficha separa qué hace, qué acceso necesita y cómo hacer una primera prueba.</p><p class="meta">Revisión documental: las instalaciones y los rendimientos no se ejecutaron en Alexandría. Comprueba siempre la fuente original.</p></div>
+      <div><h2>Empieza</h2><ul><li><a href="#/empezar">Guíame paso a paso</a></li><li><a href="#/guia/vocabulario">Vocabulario básico</a></li><li><a href="#/acceso">Acceso y costes</a></li><li><a href="#/recetas">Recetas completas</a></li></ul></div>
+      <div><h2>Trabaja mejor</h2><ul><li><a href="#/tecnicas">Técnicas e ideas</a></li><li><a href="#/prompts">Plantillas de prompts</a></li><li><a href="#/prompts?type=commands">Comandos documentados</a></li><li><a href="https://github.com/Cristrva1/BL_Alexandria" target="_blank" rel="noreferrer">Código en GitHub</a></li></ul></div></footer>`;
   }
 
   function goalLinks(goals) {
     return `<ul class="goal-list">${goals.map(goal => `<li><a href="#/rutas?goal=${esc(goal.id)}"><strong>${esc(goal.title)}</strong><span>${esc(goal.description)}</span></a></li>`).join("")}</ul>`;
   }
 
+  function areaCard(area, index=0) {
+    const topics = area.topics.slice(0, 3).map(topic => `<span>${esc(topic.title)}</span>`).join("");
+    return `<li class="rise" style="--i:${index}"><a class="area-card"${areaTone(area.id)} href="#/area/${esc(area.id)}"><span class="head"><span class="icon-tile" aria-hidden="true">${areaIcon(area.id)}</span><h3>${esc(area.title)}</h3></span><p>${esc(area.description)}</p><span class="topics">${topics}</span><span class="foot"><span>${area.topics.length} subcategorías</span><b>${area.count} repos →</b></span></a></li>`;
+  }
+
+  function recipeTile(recipe, index=0) {
+    const [icon, hue] = RECIPE_STYLE[recipe.id] || ["🧪", 40];
+    const pieces = (recipe.plan?.minimum?.length ? recipe.plan.minimum : recipe.steps.filter(s => s.id).map(s => s.id)).slice(0, 4);
+    return `<li class="rise" style="--i:${index}"><a class="recipe-card"${toneStyle(hue)} href="#/receta/${esc(recipe.id)}"><span class="head"><span class="icon-tile" aria-hidden="true">${icon}</span><h3>${esc(recipe.title)}</h3></span><p>${esc(recipe.goal)}</p><span class="pieces">${pieces.map(id => `<span>${esc(repo(id)?.name || id)}</span>`).join("")}</span><span class="foot">${pieces.length} piezas para empezar · ${recipe.steps.length} en el recorrido completo</span></a></li>`;
+  }
+
+  function promptPreview(prompt) {
+    return `<li><a href="#/prompts?topic=${esc(prompt.topic)}">${esc(prompt.title)}</a><p>${esc(prompt.when)}</p><div class="decision-actions" style="margin-block:.5rem 0"><button class="btn small ghost" type="button" data-action="copy" data-text="${esc(prompt.body)}">Copiar plantilla</button><span class="copy-status meta" role="status"></span></div></li>`;
+  }
+
   function renderHome() {
-    return `<header class="library-intro"><h1>Encuentra lo que necesitas.<br>Entiende cómo usarlo.</h1>
-      <p class="lede">${catalog.counts.repos} repositorios de IA y automatización, explicados por su función, su acceso y sus requisitos.</p>
-      <search><form id="home-search" class="home-search" action="#/explorar" method="get">
-      <label for="home-query">¿Qué quieres hacer?</label><p id="search-help" class="meta">Puedes escribir una tarea o un nombre: transcribir audio, crear presentaciones, n8n…</p>
-      <div class="search-line"><input id="home-query" name="q" type="search" aria-describedby="search-help" placeholder="Describe lo que buscas" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="search"><button class="btn" type="submit">Buscar</button></div></form></search>
-      <p class="guided-entry"><a class="btn ghost" href="#/empezar">No sé por dónde empezar: guíame</a><span>Describe tu proyecto y recibe hasta tres opciones según tu experiencia, equipo y acceso a IA.</span></p>
-      ${catalog.discovery.editorial_review?`<p class="meta">${catalog.discovery.editorial_review.reviewed} fichas revisadas individualmente en fuentes de sus autores · ${esc(catalog.discovery.editorial_review.date)}. Ejemplos propuestos; instalaciones no ejecutadas.</p>`:""}
+    const work = areas.filter(area => area.kind === "work");
+    const tools = areas.filter(area => area.kind === "tool");
+    const techniques = catalog.techniques?.items || [];
+    const featuredTech = (techniques.filter(t => t.featured).length ? techniques.filter(t => t.featured) : techniques).slice(0, 4);
+    const prompts = catalog.handbook?.prompts || [];
+    const featuredPrompts = (prompts.filter(p => p.featured).length ? prompts.filter(p => p.featured) : prompts).slice(0, 3);
+    const groups = catalog.discovery.goal_groups || [];
+    const goalById = Object.fromEntries(catalog.discovery.goals.map(g => [g.id, g]));
+    const queries = ["transcribir audio", "bot de WhatsApp", "presentación desde PDF", "modelo local", "n8n", "subtítulos"];
+    const stats = [
+      [catalog.counts.repos, "repos curados", "#/explorar"], [catalog.counts.work_areas || areas.length, "áreas de trabajo", "#/salas"],
+      [catalog.counts.topics, "subcategorías", "#/salas"], [catalog.counts.recipes, "recetas completas", "#/recetas"],
+      [prompts.length, "plantillas de prompts", "#/prompts"], [techniques.length, "técnicas e ideas", "#/tecnicas"],
+    ];
+    const paths = [
+      {h:150,icon:"🌱",title:"Nunca he usado estas herramientas",text:"Te explicamos los términos, qué cuesta cada pieza y te proponemos una primera prueba pequeña.",links:[["#/empezar","Guíame con mi proyecto"],["#/guia/vocabulario","Entender el vocabulario"],["#/acceso","Qué es una API, una suscripción o un modelo local"]]},
+      {h:40,icon:"🛠️",title:"Quiero crear algo concreto",text:"Parte del resultado que buscas y combina pocas piezas con un propósito claro.",links:[["#/rutas","Elegir por objetivo"],["#/recetas","Seguir una receta completa"],["#/comparar","Comparar alternativas"]]},
+      {h:255,icon:"🤖",title:"Ya trabajo con un agente",text:"Mejora Claude Code, Codex o Antigravity con técnicas, plantillas y comandos documentados.",links:[["#/tecnicas","Técnicas e ideas"],["#/prompts","Plantillas de prompts"],["#/configurar","Configurar agentes y modelos"]]},
+    ];
+    return `<header class="hero">
+      <div class="library-intro rise">
+        <p class="eyebrow">Biblioteca de Alexandría · catálogo educativo de IA</p>
+        <h1>Encuentra lo que necesitas.<br><span class="ink-gradient">Entiende cómo usarlo.</span></h1>
+        <p class="lede">${catalog.counts.repos} repositorios de IA y automatización, explicados por su función, su acceso y sus requisitos. Con recetas, técnicas y plantillas para pasar de la idea a una primera prueba.</p>
+        <search><form id="home-search" class="home-search" action="#/explorar" method="get">
+          <label for="home-query">¿Qué quieres hacer?</label><p id="search-help" class="meta">Escribe una tarea o un nombre. Pulsa <kbd>/</kbd> en cualquier página para buscar.</p>
+          <div class="search-line"><input id="home-query" name="q" type="search" aria-describedby="search-help" placeholder="Por ejemplo: transcribir una reunión" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="search"><button class="btn" type="submit">Buscar <span class="arrow" aria-hidden="true">→</span></button></div></form></search>
+        <p class="quick-queries"><span>Prueba:</span>${queries.map(q => `<a class="chip" href="#/explorar?q=${encodeURIComponent(q)}">${esc(q)}</a>`).join("")}</p>
+        <div class="hero-ctas"><a class="btn" href="#/empezar">No sé por dónde empezar: guíame <span class="arrow" aria-hidden="true">→</span></a><a class="btn ghost" href="#/recetas">Ver recetas completas</a></div>
+      </div>
+      <aside class="hero-panel rise" style="--i:3" aria-labelledby="stats-title"><h2 id="stats-title">La biblioteca en cifras</h2><ul class="stats">${stats.map(([n, text, href]) => `<li><a href="${href}"><strong>${esc(n)}</strong><span>${esc(text)}</span></a></li>`).join("")}</ul>
+        ${catalog.discovery.editorial_review?`<p class="meta">${catalog.discovery.editorial_review.reviewed} fichas revisadas una a una en fuentes de sus autores · ${esc(catalog.discovery.editorial_review.date)}. Instalaciones no ejecutadas.</p>`:""}</aside>
     </header>
-    ${areas.length ? `<section class="section"><div class="command-row"><h2>Explora un área de trabajo</h2><a href="#/salas">Ver categorías y subcategorías</a></div>${quickAreas(areas.filter(area=>area.kind==="work"))}</section>
-    <section class="section"><h2>Configura tu asistente</h2><p><a href="#/configurar">Guías de agentes, modelos, IA local y teléfonos</a> · <a href="#/prompts">Prompts y comandos</a> · <a href="#/servicios">Servicios y despliegue</a></p><p>Después, explora las colecciones de repos para ampliar el cliente que utilizas.</p>${quickAreas(areas.filter(area=>area.kind==="tool"))}</section>` : ""}
-    <section class="section"><div class="command-row"><h2>Empieza por un resultado</h2><a href="#/rutas">Ver las ${catalog.discovery.goals.length} rutas</a></div>
-      ${goalLinks(catalog.discovery.goals.slice(0, 8))}</section>
-    <section class="section"><h2>O parte de lo que ya tienes</h2><p>Elige cómo quieres usar la IA y después filtra por tu objetivo.</p>
-      <ul class="access-links">${["claude","codex","antigravity","local_model","no_api"].map(route => `<li><a href="#/explorar?route=${route}">${esc(label("route", route))}</a></li>`).join("")}</ul>
-      <p class="meta">Una interfaz local puede usar un modelo remoto. Una suscripción puede admitir unas rutas y no otras. <a href="#/acceso">Entiende acceso y costes</a>.</p></section>
-    <section class="section reading-start"><h2>Una biblioteca que te orienta</h2><p>Abre una ficha para entender qué hace, con qué acceso funciona y cómo empezar. Compara hasta tres alternativas; utiliza una receta cuando necesites varias piezas.</p><p><a href="#/guias">Leer las guías</a> · <a href="#/salas">Explorar categorías</a> · <a href="#/novedades">Ver incorporaciones</a></p></section>`;
+
+    <section class="section reveal" aria-labelledby="paths-title"><div class="section-head"><div><h2 id="paths-title">Elige cómo empezar</h2><p>Tres entradas según tu experiencia. Puedes cambiar de camino cuando quieras.</p></div></div>
+      <div class="path-grid">${paths.map((path, i) => `<article class="path-card rise" style="--h:${path.h};--i:${i}"><span class="icon-tile big" aria-hidden="true">${path.icon}</span><h3>${esc(path.title)}</h3><p>${esc(path.text)}</p><ul>${path.links.map(([href, text]) => `<li><a href="${href}">${esc(text)}</a></li>`).join("")}</ul></article>`).join("")}</div></section>
+
+    ${work.length ? `<section class="section reveal" aria-labelledby="areas-title"><div class="section-head"><div><h2 id="areas-title">Explora un área de trabajo</h2><p>Cada área se divide en subcategorías con tareas concretas. Un repo puede aparecer en varias.</p></div><a class="more" href="#/salas">Ver categorías y subcategorías →</a></div>
+      <ul class="area-grid" role="list">${work.map(areaCard).join("")}</ul></section>` : ""}
+
+    <section class="section reveal" aria-labelledby="examples-title"><div class="section-head"><div><h2 id="examples-title">Ideas para tu primer proyecto</h2><p>Ejemplos reales de lo que puedes construir. Cada uno enlaza su receta y una recomendación guiada.</p></div></div>
+      <ul class="example-grid" role="list">${EXAMPLES.filter(e => catalog.recipes.some(r => r.id === e.recipe)).map((e, i) => `<li class="rise" style="--i:${i}"><article class="example-card"${toneStyle(e.h)}><span class="head"><span class="icon-tile" aria-hidden="true">${e.icon}</span><h3>${esc(e.title)}</h3></span><p>${esc(e.text)}</p><span class="links"><a href="#/receta/${esc(e.recipe)}">Ver la receta</a>${goalById[e.goal] ? `<a href="#/empezar?goal=${esc(e.goal)}">Pedir recomendación</a>` : ""}</span></article></li>`).join("")}</ul></section>
+
+    <section class="section reveal" aria-labelledby="recipes-title"><div class="section-head"><div><h2 id="recipes-title">Recetas: varias piezas, un propósito</h2><p>Qué hace cada herramienta, con cuáles empezar y qué comprobar en la primera prueba.</p></div><a class="more" href="#/recetas">Ver las ${catalog.recipes.length} recetas →</a></div>
+      <ul class="recipe-grid" role="list">${catalog.recipes.slice(0, 6).map(recipeTile).join("")}</ul></section>
+
+    <section class="section reveal" aria-labelledby="craft-title"><div class="section-head"><div><h2 id="craft-title">Técnicas, prompts y comandos</h2><p>Formas de trabajar con agentes que ahorran tiempo y tokens, reescritas con fuente y advertencias.</p></div></div>
+      <div class="duo">
+        <article class="panel"><h3><span class="icon-tile" style="--h:85" aria-hidden="true">💡</span>Técnicas e ideas</h3><ul class="mini-list">${featuredTech.map(t => `<li><a href="#/tecnica/${esc(t.id)}">${esc(t.title)}</a><p>${esc(t.summary)}</p></li>`).join("") || "<li><p>Próximamente.</p></li>"}</ul><a class="btn small" href="#/tecnicas">Ver todas las técnicas <span class="arrow" aria-hidden="true">→</span></a></article>
+        <article class="panel"><h3><span class="icon-tile" style="--h:255" aria-hidden="true">💬</span>Plantillas listas para copiar</h3><ul class="mini-list">${featuredPrompts.map(promptPreview).join("")}</ul><a class="btn small" href="#/prompts">Ver las ${prompts.length} plantillas <span class="arrow" aria-hidden="true">→</span></a> <a href="#/prompts?type=commands" style="margin-left:.6rem">Comandos documentados</a></article>
+      </div></section>
+
+    ${tools.length ? `<section class="section reveal" aria-labelledby="tools-title"><div class="section-head"><div><h2 id="tools-title">Configura tu asistente</h2><p>Colecciones para ampliar Claude Code, Codex o Antigravity, y guías para elegir agentes, modelos, IA local y teléfonos.</p></div><a class="more" href="#/configurar">Abrir Configurar IA →</a></div>
+      <ul class="area-grid" role="list">${tools.map(areaCard).join("")}</ul></section>` : ""}
+
+    ${groups.length ? `<section class="section reveal" aria-labelledby="goals-title"><div class="section-head"><div><h2 id="goals-title">Empieza por un resultado</h2><p>${catalog.discovery.goals.length} objetivos agrupados por lo que quieres conseguir.</p></div><a class="more" href="#/rutas">Ver todas las rutas →</a></div>
+      <div class="goal-columns">${groups.map(group => `<div><h3>${esc(group.title)}</h3><ul>${group.goals.map(id => goalById[id]).filter(Boolean).map(g => `<li><a href="#/rutas?goal=${esc(g.id)}"><span class="ico" aria-hidden="true">${GOAL_ICONS[g.id] || "•"}</span>${esc(g.title)}</a></li>`).join("")}</ul></div>`).join("")}</div></section>` : `<section class="section"><h2>Empieza por un resultado</h2>${goalLinks(catalog.discovery.goals.slice(0, 8))}</section>`}
+
+    <section class="section reveal" aria-labelledby="access-title"><div class="section-head"><div><h2 id="access-title">O parte de lo que ya tienes</h2><p>Elige cómo quieres usar la IA y después filtra por tu objetivo.</p></div><a class="more" href="#/acceso">Entender acceso y costes →</a></div>
+      <ul class="access-links">${[["claude","✳️"],["codex","◎"],["antigravity","🪐"],["local_model","🏠"],["no_api","🔓"]].map(([route, icon]) => `<li><a href="#/explorar?route=${route}"><span aria-hidden="true">${icon}</span>${esc(label("route", route))}</a></li>`).join("")}</ul>
+      <p class="meta">Una interfaz local puede usar un modelo remoto. Una suscripción puede admitir unas rutas y no otras.</p></section>`;
   }
 
   const accessChoices = [["","Sin preferencia de acceso"],["claude","Con Claude Code"],["codex","Con Codex"],["antigravity","Con Antigravity"],["local_model","Con modelos locales"],["no_api","Sin clave propia de API de IA"],["api","Con API de IA"]];
@@ -241,7 +335,7 @@
       context.set("goal",goal.id);
       const picks=AlexandriaSearch.guided(catalog.repos,catalog.categories,catalog.discovery.goals,context);
       const related=catalog.recipes.filter(r=>(goal.recipe_ids||[]).includes(r.id));
-      return `<p class="breadcrumbs"><a href="#/rutas${route?`?route=${esc(route)}`:""}">Todos los objetivos</a></p><h1>${esc(goal.title)}</h1><p class="lede">${esc(goal.description)}</p>${filters}
+      return `<p class="breadcrumbs"><a href="#/rutas${route?`?route=${esc(route)}`:""}">Todos los objetivos</a></p><h1><span aria-hidden="true">${GOAL_ICONS[goal.id]||""}</span> ${esc(goal.title)}</h1><p class="lede">${esc(goal.description)}</p>${filters}
         <section class="decision-brief"><h2>Antes de elegir una herramienta</h2><dl><div><dt>Resultado buscado</dt><dd>${esc(goal.outcome||goal.description)}</dd></div><div><dt>Qué preparar</dt><dd>${esc(goal.bring||"Una tarea y datos de prueba")}</dd></div><div><dt>La decisión importante</dt><dd>${esc(goal.decision||"¿Qué parte de tu tarea necesita resolver esta herramienta?")}</dd></div></dl></section>
         <section class="section"><h2>${picks.length?"Pocos puntos de partida, con funciones distintas":"No hay un punto de partida documentado con este acceso"}</h2><p class="meta">Selección editorial de hasta tres opciones. Revisa sus funciones: no todas son sustitutas ni tienen la misma preparación.</p>${picks.length?pickList(picks):`<p>Cambia la forma de acceso para explorar otras rutas. La ausencia de una coincidencia no demuestra incompatibilidad.</p>`}<div class="decision-actions">${picks.length>1?`<a class="btn" href="${comparisonHref(picks.map(p=>p.id))}">Comparar funciones de estas opciones</a>`:""}<a href="${exploreHref(context)}">Ver todas las herramientas para este objetivo</a></div></section>
         ${related.length?`<section class="section"><h2>Si necesitas un flujo completo</h2><ul class="related-recipes">${related.map(r=>`<li><a href="#/receta/${esc(r.id)}">${esc(r.title)}</a><p>${esc(r.goal)}</p></li>`).join("")}</ul></section>`:""}`;
@@ -250,7 +344,7 @@
     const grouped=new Set(groups.flatMap(g=>g.goals)),other=catalog.discovery.goals.filter(g=>!grouped.has(g.id)).map(g=>g.id);
     if(other.length)groups.push({id:"otros",title:"Otros objetivos",goals:other});
     return `<h1>Empieza por el resultado</h1><p class="lede">Elige qué quieres conseguir. Te ayudaremos a preparar una primera prueba y a comparar unas pocas herramientas.</p>${filters}<nav class="area-jump" aria-label="Grupos de objetivos">${groups.map(g=>`<a href="#/rutas?group=${esc(g.id)}${route?`&route=${esc(route)}`:""}">${esc(g.title)}</a>`).join("")}${params.get("group")?`<a href="#/rutas${route?`?route=${esc(route)}`:""}">Ver todos</a>`:""}</nav>
-      ${groups.filter(g=>!params.get("group")||g.id===params.get("group")||!groups.some(x=>x.id===params.get("group"))).map(group=>`<section class="section"><h2>${esc(group.title)}</h2><ul class="objective-directory">${group.goals.map(id=>catalog.discovery.goals.find(g=>g.id===id)).filter(Boolean).map(g=>`<li><a href="#/rutas?goal=${esc(g.id)}${route?`&route=${esc(route)}`:""}"><h3>${esc(g.title)}</h3><p>${esc(g.outcome||g.description)}</p><span>Ver opciones y primera prueba</span></a></li>`).join("")}</ul></section>`).join("")}`;
+      ${groups.filter(g=>!params.get("group")||g.id===params.get("group")||!groups.some(x=>x.id===params.get("group"))).map(group=>`<section class="section"><h2>${esc(group.title)}</h2><ul class="objective-directory">${group.goals.map(id=>catalog.discovery.goals.find(g=>g.id===id)).filter(Boolean).map(g=>`<li><a href="#/rutas?goal=${esc(g.id)}${route?`&route=${esc(route)}`:""}"><h3><span aria-hidden="true">${GOAL_ICONS[g.id]||"•"}</span>${esc(g.title)}</h3><p>${esc(g.outcome||g.description)}</p><span>Ver opciones y primera prueba</span></a></li>`).join("")}</ul></section>`).join("")}`;
   }
 
   const accessAdvice={
@@ -281,11 +375,12 @@
 
   let guidedSession=null;
   function guidedState(params) {
-    if(guidedSession)return guidedSession;
     const goal=catalog.discovery.goals.find(g=>g.id===params.get("goal")),route=params.get("route");
+    // A new goal link (for example from the home page ideas) starts a fresh draft.
+    if(guidedSession&&!(goal&&goal.id!==guidedSession.fromGoal))return guidedSession;
     const modes={claude:'existing',codex:'existing',antigravity:'existing',local_model:'local',no_api:'no_api',api:'api'};
     const draft=AlexandriaGuide.normalize({project:goal?.title||'',goal:goal?.id||'',mode:modes[route]||'any',clients:['claude','codex','antigravity'].includes(route)?[route]:[]});
-    return guidedSession={draft,submitted:goal?draft:null};
+    return guidedSession={draft,submitted:goal?draft:null,fromGoal:goal?.id||""};
   }
   function profileSelect(group,id,name,value) {
     return `<select id="${id}" name="${name}">${Object.entries(AlexandriaGuide.labels[group]).map(([key,title])=>`<option value="${key}"${value===key?' selected':''}>${esc(title)}</option>`).join('')}</select>`;
@@ -416,7 +511,7 @@
       const areaMatch=fold([area.title,...area.keywords].join(" ")).includes(query);
       const matches=area.topics.filter(topic=>areaMatch||fold([topic.title,topic.description,...topic.keywords].join(" ")).includes(query));
       const preview = !query && area.id==="audiovisual" ? ["av-video-edicion","av-voz","av-audio","av-imagen"].map(id=>topicById[id]) : matches.slice(0,4);
-      return `<li class="area-entry"><h3><a href="#/area/${esc(area.id)}">${esc(area.title)}</a></h3><p>${esc(area.description)}</p>
+      return `<li class="area-entry"${areaTone(area.id)}><div class="head"><span class="icon-tile" aria-hidden="true">${areaIcon(area.id)}</span><h3><a href="#/area/${esc(area.id)}">${esc(area.title)}</a></h3></div><p>${esc(area.description)}</p>
         <ul class="topic-preview" role="list">${preview.map(topic=>`<li><a href="${topicHref(area,topic)}">${esc(topic.title)}</a></li>`).join("")}</ul>
         <a class="area-more" href="#/area/${esc(area.id)}">Explorar ${area.topics.length} subcategorías<span class="sr-only"> de ${esc(area.title)}</span></a><span class="meta"> · ${area.count} repos</span></li>`;
     }).join("")}</ul>`;
@@ -444,12 +539,12 @@
     if(!area)return missing("No encontramos esa categoría.","#/salas");
     const topics=area.topics.map(topic=>`<li><a class="topic-row" href="${topicHref(area,topic)}" aria-labelledby="topic-name-${esc(topic.id)} topic-count-${esc(topic.id)}" aria-describedby="topic-desc-${esc(topic.id)}"><div><h3 id="topic-name-${esc(topic.id)}">${esc(topic.title)}</h3><p id="topic-desc-${esc(topic.id)}">${esc(topic.description)}</p></div><span class="topic-count" id="topic-count-${esc(topic.id)}">${repoCount(topic.count)}</span></a></li>`).join("");
     const guide=area.guide?`<section class="section setup-guide"><h2>Primera configuración, paso a paso</h2><ol>${area.guide.map(step=>`<li><h3>${esc(step.title)}</h3><p>${esc(step.text)}</p></li>`).join("")}</ol><p><a href="${esc(safeUrl(area.official_url))}" target="_blank" rel="noreferrer">Abrir la fuente oficial de ${esc(area.title.replace("Configuración de ",""))}</a></p><p class="meta">${esc(area.scope)}</p></section>`:"";
-    return `<nav class="breadcrumbs" aria-label="Ubicación"><a href="#/salas">Categorías</a><span aria-hidden="true"> / </span><span aria-current="page">${esc(area.title)}</span></nav><h1>${esc(area.title)}</h1><p class="lede">${esc(area.description)}</p><p class="meta">${area.count} repos únicos · ${area.topics.length} subcategorías</p>
+    return `<div${areaTone(id)}><nav class="breadcrumbs" aria-label="Ubicación"><a href="#/salas">Categorías</a><span aria-hidden="true"> / </span><span aria-current="page">${esc(area.title)}</span></nav><header class="page-head tone"><div class="title-row"><span class="icon-tile big" aria-hidden="true">${areaIcon(id)}</span><h1>${esc(area.title)}</h1></div><p class="lede">${esc(area.description)}</p><div class="badges"><span class="badge tone">${area.count} repos únicos</span><span class="badge tone">${area.topics.length} subcategorías</span>${area.kind==="tool"?'<span class="badge tone">Colección de configuración</span>':'<span class="badge tone">Área de trabajo</span>'}</div></header>
       <nav class="area-jump" aria-label="En esta categoría"><a href="#/area/${esc(id)}?section=topics">Elegir subcategoría</a>${area.guide?`<a href="#/area/${esc(id)}?section=setup">Primeros pasos</a>`:""}<a href="${exploreHref(new URLSearchParams({area:id}))}">Ver todos los repos de esta área</a></nav>
       <section class="section" id="area-topics"><h2>¿Qué necesitas hacer?</h2><ul class="topic-directory" role="list">${topics}</ul></section>
       ${guide.replace('class="section setup-guide"','class="section setup-guide" id="area-setup"')}
       <section class="section"><h2>Opciones para empezar</h2><p>Compara estas fichas antes de instalar. No necesitas usar todas.</p>${quickRepos(area.starters)}</section>
-      ${area.evidence?.length?`<details class="technical-map"><summary>Fuentes de compatibilidad de esta colección</summary><ul>${area.evidence.map(e=>`<li><a href="${esc(safeUrl(e.source))}" target="_blank" rel="noreferrer">${esc(repo(e.repo_id)?.name||e.repo_id)}</a> · revisado el ${esc(e.checked_at)}</li>`).join("")}</ul></details>`:""}`;
+      ${area.evidence?.length?`<details class="technical-map"><summary>Fuentes de compatibilidad de esta colección</summary><ul>${area.evidence.map(e=>`<li><a href="${esc(safeUrl(e.source))}" target="_blank" rel="noreferrer">${esc(repo(e.repo_id)?.name||e.repo_id)}</a> · revisado el ${esc(e.checked_at)}</li>`).join("")}</ul></details>`:""}</div>`;
   }
 
   function quickRepos(ids) {
@@ -478,7 +573,7 @@
     const addChip=(key,text)=>{const next=new URLSearchParams(params);next.delete(key);next.delete("page");if(key==="cat")next.delete("sub");if(key==="area")next.delete("topic");chips.push(`<a class="chip" href="${exploreHref(next)}">${esc(text)} <span aria-hidden="true">×</span><span class="sr-only">: quitar filtro</span></a>`);};
     for(const [key,value] of params){if(key==="q"||key==="page"||key==="sort"||!value)continue;const text=key==="area"?(area?.title||value):key==="topic"?(topic?.title||value):key==="cat"?catName(value):key==="sub"?(category?.subs.find(s=>s.key===value)?.title||value):key==="goal"?(goal?.title||value):key==="route"?label("route",value):value;addChip(key,text);}
     const groups=catalog.labels;
-    return `${area?`<nav class="breadcrumbs" aria-label="Ubicación"><a href="#/salas">Categorías</a> / <a href="#/area/${esc(area.id)}">${esc(area.title)}</a>${topic?` / <span aria-current="page">${esc(topic.title)}</span>`:""}</nav>`:""}<h1>${esc(topic?.title||area?.title||goal?.title||"Busca una herramienta")}</h1><p class="lede">${esc(topic?.description||area?.description||goal?.description||"Busca una tarea, un nombre o una tecnología. Después filtra por área, acceso y requisitos.")}</p>
+    return `${area?`<nav class="breadcrumbs" aria-label="Ubicación"><a href="#/salas">Categorías</a> / <a href="#/area/${esc(area.id)}">${esc(area.title)}</a>${topic?` / <span aria-current="page">${esc(topic.title)}</span>`:""}</nav>`:""}<header class="page-head${area?" tone":""}"${area?areaTone(area.id):""}><div class="title-row">${area?`<span class="icon-tile big" aria-hidden="true">${areaIcon(area.id)}</span>`:""}<h1>${esc(topic?.title||area?.title||goal?.title||"Busca una herramienta")}</h1></div><p class="lede">${esc(topic?.description||area?.description||goal?.description||"Busca una tarea, un nombre o una tecnología. Después filtra por área, acceso y requisitos.")}</p>${area&&!topic?`<div class="chip-row">${area.topics.map(t=>`<a class="chip" href="${topicHref(area,t)}">${esc(t.title)} <span class="meta">${t.count}</span></a>`).join("")}</div>`:""}</header>
       <search><form class="library-filters" id="filters" action="#/explorar" method="get">
         <div class="query-field"><label for="q">Buscar en la biblioteca</label><input id="q" type="search" name="q" placeholder="Por ejemplo: transcribir audio" value="${esc(params.get("q")||"")}" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="search"></div>
         <div class="filter-grid">
@@ -580,7 +675,8 @@
 
   function recipeCard(recipe) {
     const parts=AlexandriaDecisions.recipeParts(recipe);
-    return `<article class="recipe-overview"><div><h2><a href="#/receta/${esc(recipe.id)}">${esc(recipe.title)}</a></h2><p>${esc(recipe.goal)}</p><p class="meta">${parts.minimum.length?`Propuesta inicial: ${parts.minimum.length} ${parts.minimum.length===1?"pieza":"piezas"}`:"Recorrido por revisar"} · ${recipe.steps.length} recursos en el recorrido completo</p></div><div><p><strong>Prepara:</strong> ${esc(recipe.plan?.inputs||"Una tarea acotada y datos de prueba")}</p><a href="#/receta/${esc(recipe.id)}">Ver cómo empezar y qué comprobar</a></div></article>`;
+    const [icon,hue]=RECIPE_STYLE[recipe.id]||["🧪",40];
+    return `<article class="recipe-overview"${toneStyle(hue)}><span class="icon-tile big" aria-hidden="true">${icon}</span><div><h2><a href="#/receta/${esc(recipe.id)}">${esc(recipe.title)}</a></h2><p>${esc(recipe.goal)}</p><p class="meta">${parts.minimum.length?`Propuesta inicial: ${parts.minimum.length} ${parts.minimum.length===1?"pieza":"piezas"}`:"Recorrido por revisar"} · ${recipe.steps.length} recursos en el recorrido completo</p></div><div><p><strong>Prepara:</strong> ${esc(recipe.plan?.inputs||"Una tarea acotada y datos de prueba")}</p><a href="#/receta/${esc(recipe.id)}">Ver cómo empezar y qué comprobar</a></div></article>`;
   }
 
   function renderRecipes(params) {
@@ -626,8 +722,8 @@
       </li>`;
     }).join("");
     return `
-      <p class="breadcrumbs"><a href="#/recetas">Todas las recetas</a></p><h1>${esc(recipe.title)}</h1>
-      <p class="lede">${esc(recipe.goal)}</p>
+      <p class="breadcrumbs"><a href="#/recetas">Todas las recetas</a></p><header class="page-head tone"${toneStyle((RECIPE_STYLE[recipe.id]||[])[1])}><div class="title-row"><span class="icon-tile big" aria-hidden="true">${(RECIPE_STYLE[recipe.id]||["🧪"])[0]}</span><h1>${esc(recipe.title)}</h1></div>
+      <p class="lede">${esc(recipe.goal)}</p></header>
       ${recipe.lesson ? `<p>${esc(recipe.lesson)}</p>` : ""}
       <p class="meta">Ruta propuesta por Alexandría; integración del conjunto no ejecutada. Una lista de piezas no sustituye sus dependencias, modelos ni cuentas.</p>
       ${plan.inputs?`<section class="decision-brief"><h2>Tu primera versión</h2><dl><div><dt>Qué preparar</dt><dd>${esc(plan.inputs)}</dd></div><div><dt>Primera prueba propuesta</dt><dd>${esc(plan.first_try.action)}</dd></div><div><dt>Qué comprobar</dt><dd>${esc(plan.first_try.success)}</dd></div></dl><p>${esc(plan.note)}</p></section>`:""}
@@ -731,6 +827,7 @@
     if (head === "repo") return "explorar";
     if (["curso","guia","laboratorio"].includes(head)) return "guias";
     if (head === "receta") return "recetas";
+    if (head === "tecnica") return "tecnicas";
     if (head === "sala" || head === "area") return "salas";
     return NAV.some(([id]) => id === head) ? head : "inicio";
   }
@@ -739,6 +836,7 @@
     const head = parts[0] || "inicio";
     if (head === 'manual') return AlexandriaHandbook.lookup(catalog,parts[1])?.name || AlexandriaHandbook.lookup(catalog,parts[1])?.title || 'Guía';
     if (head === "area") return areaById[parts[1]]?.title || "Categoría";
+    if (head === "tecnica") return AlexandriaTechniques.lookup(catalog,decodeURIComponent(parts[1]||''))?.title || "Técnica";
     if (head === "explorar") return topicById[params.get("topic")]?.title || areaById[params.get("area")]?.title || "Buscar";
     if (head === "repo" && repo(decodeURIComponent(parts[1] || ""))) return repo(decodeURIComponent(parts[1])).name;
     if (head === "receta") {
@@ -762,6 +860,8 @@
     if (head === 'configurar' || head === 'servicios') return AlexandriaHandbook.index(catalog,head,route.params);
     if (head === 'manual') return AlexandriaHandbook.detail(catalog,second);
     if (head === 'prompts') return AlexandriaHandbook.prompts(catalog,route.params);
+    if (head === 'tecnicas') return AlexandriaTechniques.index(catalog,route.params);
+    if (head === 'tecnica') return AlexandriaTechniques.detail(catalog,decodeURIComponent(second||''));
     if (head === "guias") return renderReading();
     if (head === "guia") return renderReading(second);
     if (head === "acceso") return renderAccess(route.params);
@@ -811,7 +911,7 @@
     }
     lastPath=path;
     const section=route.params.get("section");
-    if(section!==null){const target=document.getElementById(route.parts[0]==="repo"?`repo-${section}`:route.parts[0]==="area"?`area-${section}`:route.parts[0]==='manual'?`manual-${section}`:`reading-section-${section}`);if(target){target.tabIndex=-1;target.focus({preventScroll:true});target.scrollIntoView();}}
+    if(section!==null){const target=document.getElementById(route.parts[0]==="repo"?`repo-${section}`:route.parts[0]==="area"?`area-${section}`:route.parts[0]==='manual'?`manual-${section}`:route.parts[0]==='tecnica'?`tech-${section}`:`reading-section-${section}`);if(target){target.tabIndex=-1;target.focus({preventScroll:true});target.scrollIntoView();}}
     const q = document.getElementById("q");
     if (q && route.parts[0] === "explorar" && window.__focusSearch) {
       q.focus();
@@ -856,6 +956,12 @@
   });
 
   document.getElementById("app").addEventListener("submit", (event) => {
+    if(event.target.id==='techniques-filter'){
+      event.preventDefault();const params=new URLSearchParams();
+      new FormData(event.target).forEach((value,key)=>{if(String(value).trim())params.set(key,String(value).trim());});
+      history.pushState(null,'',`#/tecnicas${params.size?`?${params}`:''}`);draw();
+      document.getElementById('tech-count')?.focus();return;
+    }
     if(event.target.id==='handbook-filter'){
       event.preventDefault();const params=new URLSearchParams();
       new FormData(event.target).forEach((value,key)=>{if(String(value).trim())params.set(key,String(value).trim());});
@@ -911,6 +1017,10 @@
     const button = event.target.closest("[data-action]");
     if (!button) return;
     const action = button.dataset.action;
+    if(action==='nav-toggle'){
+      const nav=button.closest('.nav'),open=!nav.classList.contains('open');
+      nav.classList.toggle('open',open);button.setAttribute('aria-expanded',String(open));button.lastChild.textContent=open?'Cerrar':'Menú';return;
+    }
     if(action==='guided-clear'){
       guidedSession={draft:AlexandriaGuide.normalize(),submitted:null};
       history.replaceState(null,'','#/empezar');draw();document.getElementById('guided-project').focus();return;
@@ -996,7 +1106,15 @@
     }
   });
 
-  window.addEventListener("hashchange", draw);
+  // Link navigation animates between views; programmatic redraws stay synchronous.
+  function navigate() {
+    if (!document.startViewTransition || matchMedia("(prefers-reduced-motion: reduce)").matches) { draw(); return; }
+    const transition = document.startViewTransition(draw);
+    // A quick second navigation skips the running animation; that is expected, not an error.
+    transition.ready.catch(() => {});
+    transition.finished.then(() => { const heading=document.querySelector("main h1"); if(heading && document.activeElement===document.body) heading.focus({preventScroll:true}); }).catch(() => {});
+  }
+  window.addEventListener("hashchange", navigate);
   if (!location.hash) history.replaceState(null, "", "#/inicio");
   draw();
 })();
