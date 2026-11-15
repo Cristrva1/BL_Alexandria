@@ -16,34 +16,52 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | Depende de la ruta elegida. Guion, voz, stock e imagen pueden consumir servicios distintos; ofrece imagen SDXL local y una ruta Codex/ChatGPT sujeta a elegibilidad y límites de cuenta |
 | Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. El adaptador Codex es del proyecto y no instala el CLI ni promete cobertura de cualquier modelo o cuenta; la imagen local no vuelve local todo el flujo |
+| Coste | El coste depende del proveedor o la ruta. Guion, voz, stock e imagen pueden consumir servicios distintos; ofrece imagen SDXL local y una ruta Codex/ChatGPT sujeta a elegibilidad y límites de cuenta |
+| Equipo | Preparación según la ruta elegida. Python; FFmpeg; proveedores de guion, voz e imágenes; material propio o autorizado |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El adaptador Codex es del proyecto y no instala el CLI ni promete cobertura de cualquier modelo o cuenta; la imagen local no vuelve local todo el flujo
 
 ## Qué puedes hacer con él
 
-MoneyPrinterTurbo automatiza la producción de shorts: das un tema o palabras clave y escribe el guion con un LLM, busca clips en Pexels o Pixabay (o usa los tuyos o video generado por IA), genera locución, subtítulos y música, y monta el resultado en 9:16, 16:9 o 1:1. Se usa desde WebUI, API, CLI o pidiéndoselo a un agente con su skill.
+App que genera videos cortos a partir de un tema: guion con LLM, material de stock, voz, subtítulos y música en un solo paso.
 
 ## Por qué destaca
 
-Cubre todo el flujo de un canal de videos cortos sin editar a mano y es muy configurable: decenas de proveedores de LLM y TTS (incluida Edge TTS, gratuita), generación en lote y publicación directa en TikTok, Instagram y YouTube Shorts.
+Usos propuestos: Preparar un borrador de video de producto; Generar variantes de un tutorial propio.
 
 ## Cómo funciona
 
-Python con Streamlit para la WebUI y FastAPI para la API. El LLM genera el guion y los términos de búsqueda, se descargan clips de stock, se sintetiza la voz, los subtítulos salen del TTS o de faster-whisper y MoviePy compone el video.
+El adaptador Codex es del proyecto y no instala el CLI ni promete cobertura de cualquier modelo o cuenta; la imagen local no vuelve local todo el flujo
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python
+- FFmpeg
+- proveedores de guion, voz e imágenes
+- material propio o autorizado
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (shell):**
+
+```
+python -m pip install mpt
+mpt webui
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README.md)
 
@@ -51,23 +69,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar MoneyPrinterTurbo para mi objetivo y necesito pasos guiados. Lee https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Crea un video corto de prueba con un guion revisado y comprueba voz, clips y subtítulos.
+
+**Qué comprobar:** Puedes rastrear el origen de cada recurso y corregir el resultado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Producir shorts en lote para TikTok o YouTube Shorts
-- Convertir un tema o artículo en un video narrado con subtítulos
-- Prototipar formatos de video antes de invertir en edición
+- Preparar un borrador de video de producto
+- Generar variantes de un tutorial propio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres producir videos cortos narrados a partir de un tema sin editar a mano | necesitas control creativo plano a plano o una identidad visual propia; mira `remotion` u `openmontage` |
+| Tu objetivo encaja con estos ejemplos: Preparar un borrador de video de producto; Generar variantes de un tutorial propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** El resultado depende del material de stock y del LLM, así que los videos tienden a ser genéricos; revisa derechos y normas de cada plataforma antes de publicar en masa.
+**Limitaciones:** El adaptador Codex es del proyecto y no instala el CLI ni promete cobertura de cualquier modelo o cuenta; la imagen local no vuelve local todo el flujo
 
 ## Stack y modelos
 
-- **Stack:** Python, Streamlit, FastAPI, MoviePy, faster-whisper
+- **Stack:** Python; FFmpeg; proveedores de guion, voz e imágenes; material propio o autorizado
 - **Etiquetas:** `video` `automation` `tts` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,7 +108,7 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [OpenMontage](openmontage.md) | 80.5k | Convierte tu agente de código en un estudio de producción de video completo. |
+| [OpenMontage](openmontage.md) | 80.5k | Pipelines y herramientas para producir video con un agente,recursos propios,modelos locales o servicios opcionales. |
 | [videofy_minimal](videofy-minimal.md) | 656 | Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión. |
 
 ## Enlaces
@@ -93,9 +118,12 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README.md)
+- [Fuente 2](https://github.com/harry0703/MoneyPrinterTurbo/blob/main/docs/codex-provider.md)
 
 ---
 

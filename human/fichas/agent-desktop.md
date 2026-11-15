@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 23.8k | Apache-2.0 | Rust | 2026-11-14 |
 
-**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,42 +16,51 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El CLI y MCP no necesitan un LLM propio; el agente que los controle usa su modelo o plan |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Ofrece skills portables y MCP stdio; algunas órdenes de teclas o botones mantenidos se rechazan hasta disponer de daemon de liberación |
+| Coste | Sin pago a un modelo en la ruta básica. El CLI y MCP no necesitan un LLM propio; el agente que los controle usa su modelo o plan |
+| Equipo | Preparación según la ruta elegida. Node; permisos de accesibilidad del sistema; cliente de agente opcional |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Ofrece skills portables y MCP stdio; algunas órdenes de teclas o botones mantenidos se rechazan hasta disponer de daemon de liberación
 
 ## Qué puedes hacer con él
 
-CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio. Expone elementos de la interfaz como referencias sobre las que el agente puede actuar y comprobar resultados.
+CLI y biblioteca que permiten a un agente leer el árbol de accesibilidad y operar aplicaciones de escritorio.
 
 ## Por qué destaca
 
-Necesitas automatizar aplicaciones nativas desde un agente.
+Usos propuestos: Inspeccionar una app de escritorio propia; Preparar una prueba de interfaz.
 
 ## Cómo funciona
 
-Expone elementos de la interfaz como referencias sobre las que el agente puede actuar y comprobar resultados.
+Ofrece skills portables y MCP stdio; algunas órdenes de teclas o botones mantenidos se rechazan hasta disponer de daemon de liberación
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Node
+- permisos de accesibilidad del sistema
+- cliente de agente opcional
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
 npm install -g agent-desktop
+agent-desktop status                # platform, permissions, supported surfaces
+agent-desktop permissions --guide   # macOS: walks you through the Accessibility grant
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/vercel-labs/agent-desktop/blob/main/README.md)
 
@@ -59,21 +68,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar agent-desktop para mi objetivo y necesito pasos guiados. Lee https://github.com/vercel-labs/agent-desktop/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Ejecuta status y permissions --guide y obtén una captura de una ventana de prueba sin pulsar controles.
+
+**Qué comprobar:** Puedes comprobar plataforma, permisos y referencias de accesibilidad.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Necesitas automatizar aplicaciones nativas desde un agente
+- Inspeccionar una app de escritorio propia
+- Preparar una prueba de interfaz
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas automatizar aplicaciones nativas desde un agente | un flujo determinista resuelve el problema sin un agente |
+| Tu objetivo encaja con estos ejemplos: Inspeccionar una app de escritorio propia; Preparar una prueba de interfaz | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Requiere permisos del sistema y compatibilidad del árbol de accesibilidad de cada aplicación.
+**Limitaciones:** Ofrece skills portables y MCP stdio; algunas órdenes de teclas o botones mantenidos se rechazan hasta disponer de daemon de liberación
 
 ## Stack y modelos
 
-- **Stack:** Rust, Cargo
+- **Stack:** Node; permisos de accesibilidad del sistema; cliente de agente opcional
 - **Etiquetas:** `infra` `accessibility` `accessibility-api` `ai-agents` `automation` `cli` `computer-use` `computer-use-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,7 +108,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/vercel-labs/agent-desktop/blob/main/README.md)
 

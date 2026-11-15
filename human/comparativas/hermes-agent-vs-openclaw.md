@@ -4,22 +4,22 @@
 
 | | [hermes-agent](../fichas/hermes-agent.md) | [OpenClaw](../fichas/openclaw.md) |
 |---|---|---|
-| Qué hace | Entorno desktop/CLI de Nous Research para ejecutar agentes locales eficientes. | Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. |
+| Qué hace | Asistente de Nous Research con memoria, skills y herramientas; usa proveedores remotos o endpoints locales configurados. | Asistente personal de IA que corre en tus dispositivos y te atiende por WhatsApp, Telegram, Slack y más. |
 | ⭐ Estrellas | 263k | 394k |
-| Elígelo si… | quieres agentes locales con UI y memoria persistente | quieres un asistente personal que actúe por tus canales de chat |
-| Evítalo si… | prefieres orquestación en nube o no quieres compilar Tauri | necesitas un agente para tu empresa con varios usuarios; mira `hermes-agent` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Evaluar memoria de un asistente; Comparar un modelo local con Nous Portal | Tu objetivo encaja con estos ejemplos: Probar un asistente personal; Conectar un agente a un canal propio |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🔀 híbrido |
-| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
+| API de IA | API de IA opcional | API de IA opcional |
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
-| Modelos locales | Modelo local no documentado | Modelo local no documentado |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | MIT | MIT |
-| Instalación | `git clone` | `npm install -g openclaw@latest` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## Regla práctica
 
-- Elige **hermes-agent** si quieres agentes locales con UI y memoria persistente.
-- Elige **OpenClaw** si quieres un asistente personal que actúe por tus canales de chat.
+- Elige **hermes-agent** si Tu objetivo encaja con estos ejemplos: Evaluar memoria de un asistente; Comparar un modelo local con Nous Portal.
+- Elige **OpenClaw** si Tu objetivo encaja con estos ejemplos: Probar un asistente personal; Conectar un agente a un canal propio.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. | Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios. |
 | ⭐ Estrellas | 100k | 25.4k |
-| Elígelo si… | buscas esta función: Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria. | buscas esta función: Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios. |
-| Evítalo si… | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Estudiar código nativo compilado; Documentar una biblioteca propia sin símbolos | Tu objetivo encaja con estos ejemplos: Inspeccionar un archivo ELF propio; Estudiar instrucciones de un programa de laboratorio |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
 | Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | Apache-2.0 | NOASSERTION |
-| Instalación | Sigue la instalación y el ejemplo mínimo en https://github.com/NationalSecurityAgency/g… | Sigue la instalación y el ejemplo mínimo en https://github.com/radareorg/radare2/blob/m… |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## Regla práctica
 
-- Elige **ghidra** si buscas esta función: Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria.
-- Elige **radare2** si buscas esta función: Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios.
+- Elige **ghidra** si Tu objetivo encaja con estos ejemplos: Estudiar código nativo compilado; Documentar una biblioteca propia sin símbolos.
+- Elige **radare2** si Tu objetivo encaja con estos ejemplos: Inspeccionar un archivo ELF propio; Estudiar instrucciones de un programa de laboratorio.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

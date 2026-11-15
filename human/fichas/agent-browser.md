@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 51.2k | Apache-2.0 | Rust | 2026-11-14 |
 
-**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El CLI y MCP no requieren modelo propio; el agente y proveedores remotos tienen costes independientes |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Incluye skill portable y MCP stdio; descargar el browser es un paso separado y el perfil de pruebas evita mezclar sesiones personales |
+| Coste | Sin pago a un modelo en la ruta básica. El CLI y MCP no requieren modelo propio; el agente y proveedores remotos tienen costes independientes |
+| Equipo | Preparación según la ruta elegida. Node; Chrome for Testing o navegador configurado; agente opcional |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Incluye skill portable y MCP stdio; descargar el browser es un paso separado y el perfil de pruebas evita mezclar sesiones personales
 
 ## Qué puedes hacer con él
 
-CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes. Mantiene una sesión de navegador y permite abrir páginas, inspeccionarlas y actuar por referencias desde la terminal.
+CLI de navegador de Vercel que entrega árboles de accesibilidad y referencias de elementos para agentes.
 
 ## Por qué destaca
 
-Necesitas navegación programable con salidas compactas para un agente.
+Usos propuestos: Verificar una interfaz; Preparar capturas y consultas de una página.
 
 ## Cómo funciona
 
-Mantiene una sesión de navegador y permite abrir páginas, inspeccionarlas y actuar por referencias desde la terminal.
+Incluye skill portable y MCP stdio; descargar el browser es un paso separado y el perfil de pruebas evita mezclar sesiones personales
 
 ## Cómo empezar
 
@@ -43,19 +44,22 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Una distribución compatible de la CLI y su navegador.
+- Node
+- Chrome for Testing o navegador configurado
+- agente opcional
 
-1. Instala la CLI siguiendo la ruta del README.
-2. Prepara el navegador que utiliza la distribución instalada.
-3. Abre una página de prueba, toma un snapshot y comprueba una acción sobre una referencia de elemento.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
 
-**Comando de entrada documentado:**
+**Entrada documentada (bash):**
 
-```shell
+```
 npm install -g agent-browser
+agent-browser install           # download Chrome for Testing (first time only)
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/vercel-labs/agent-browser/blob/main/README.md)
 
@@ -63,21 +67,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar agent-browser para mi objetivo y necesito pasos guiados. Lee https://github.com/vercel-labs/agent-browser/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Abre una página propia y consulta el árbol de accesibilidad antes de actuar.
+
+**Qué comprobar:** Puedes identificar referencias de elementos y cambios tras una acción.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Necesitas navegación programable con salidas compactas para un agente
+- Verificar una interfaz
+- Preparar capturas y consultas de una página
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas navegación programable con salidas compactas para un agente | la fuente ya ofrece una API o un archivo de datos suficiente |
+| Tu objetivo encaja con estos ejemplos: Verificar una interfaz; Preparar capturas y consultas de una página | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Requiere instalar un navegador compatible y comprobar los resultados de cada acción.
+**Limitaciones:** Incluye skill portable y MCP stdio; descargar el browser es un paso separado y el perfil de pruebas evita mezclar sesiones personales
 
 ## Stack y modelos
 
-- **Stack:** Rust, Node.js
+- **Stack:** Node; Chrome for Testing o navegador configurado; agente opcional
 - **Etiquetas:** `navegador` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -100,7 +113,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/vercel-labs/agent-browser/blob/main/README.md)
 

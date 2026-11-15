@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
+| API de IA | API de IA opcional. Autoalojar consume equipo o servidor; n8n Cloud y las APIs conectadas tienen tarifas separadas |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | El coste depende del proveedor o la ruta. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Ollama está documentado por n8n; el agente que diseña el flujo no paga automáticamente sus llamadas de IA |
+| Coste | El coste depende del proveedor o la ruta. Autoalojar consume equipo o servidor; n8n Cloud y las APIs conectadas tienen tarifas separadas |
+| Equipo | Preparación según la ruta elegida. Docker activo;  una carpeta para datos de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Ollama está documentado por n8n; el agente que diseña el flujo no paga automáticamente sus llamadas de IA
 
 ## Qué puedes hacer con él
 
-Conecta cualquier app con cualquier otra en tu propio servidor, sin pagar una suscripción mensual por cada flujo.
+Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos.
 
 ## Por qué destaca
 
-Se ha convertido en un estándar de facto para automatización self-hosted, muy adoptado por su enorme catálogo de nodos y su fuerte integración de IA (LangChain, MCP). Su comunidad y su documentación lo hacen el punto de partida habitual.
+Usos propuestos: Un formulario de contacto genera un registro para seguimiento comercial; Un flujo resume documentos con Ollama en lugar de una API remota.
 
 ## Cómo funciona
 
-Encadena nodos (triggers, transformaciones, integraciones) en un grafo de workflow ejecutado por un runtime Node.js, con nodos de IA basados en LangChain y soporte MCP. Los workflows se exportan como JSON, lo que permite versionarlos.
+Ollama está documentado por n8n; el agente que diseña el flujo no paga automáticamente sus llamadas de IA
 
 ## Cómo empezar
 
@@ -43,11 +44,22 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- n8n Cloud o un entorno para el despliegue propio indicado en su documentación.
+- Docker activo
+-  una carpeta para datos de prueba
 
-1. Elige servicio gestionado o despliegue propio; son instalaciones y costes diferentes.
-2. Crea un primer workflow con un disparador y una acción sin IA.
-3. Añade un nodo de modelo solo si lo necesitas y configura su proveedor o el backend local correspondiente.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (consulta la sintaxis original):**
+
+```
+docker volume create n8n_data
+docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/n8n-io/n8n/blob/master/README.md)
 
@@ -55,23 +67,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar n8n para mi objetivo y necesito pasos guiados. Lee https://github.com/n8n-io/n8n/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Crea un flujo manual que devuelva un texto y ejecútalo en el editor.
+
+**Qué comprobar:** La ejecución termina y su salida contiene el texto que escribiste.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Extraer leads → enriquecer con IA → notificar
-- Pipelines de negocio sin SaaS cerrado
-- Workflows versionados como JSON junto al código
+- Un formulario de contacto genera un registro para seguimiento comercial
+- Un flujo resume documentos con Ollama en lugar de una API remota
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres el motor central de automatización con máximo catálogo | buscas algo minimalista o sin self-host |
+| Tu objetivo encaja con estos ejemplos: Un formulario de contacto genera un registro para seguimiento comercial; Un flujo resume documentos con Ollama en lugar de una API remota | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La versión self-host comunitaria tiene límites en ejecuciones y usuarios; algunas funciones avanzadas requieren licencia.
+**Limitaciones:** Ollama está documentado por n8n; el agente que diseña el flujo no paga automáticamente sus llamadas de IA
 
 ## Stack y modelos
 
-- **Stack:** Node.js, TypeScript, Docker
+- **Stack:** Docker activo;  una carpeta para datos de prueba
 - **Etiquetas:** `automation` `typescript` `docker`
 - **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
@@ -100,9 +119,12 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/n8n-io/n8n/blob/master/README.md)
+- [Fuente 2](https://docs.n8n.io/integrations/builtin/credentials/ollama)
 
 ---
 

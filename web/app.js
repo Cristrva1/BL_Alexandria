@@ -208,13 +208,14 @@
       <label for="home-query">¿Qué quieres hacer?</label><p id="search-help" class="meta">Puedes escribir una tarea o un nombre: transcribir audio, crear presentaciones, n8n…</p>
       <div class="search-line"><input id="home-query" name="q" type="search" aria-describedby="search-help" placeholder="Describe lo que buscas" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="search"><button class="btn" type="submit">Buscar</button></div></form></search>
       <p class="guided-entry"><a class="btn ghost" href="#/empezar">No sé por dónde empezar: guíame</a><span>Elige una tarea y recibe hasta tres opciones, con su primer paso.</span></p>
+      ${catalog.discovery.editorial_review?`<p class="meta">${catalog.discovery.editorial_review.reviewed} fichas revisadas individualmente en fuentes de sus autores · ${esc(catalog.discovery.editorial_review.date)}. Ejemplos propuestos; instalaciones no ejecutadas.</p>`:""}
     </header>
     ${areas.length ? `<section class="section"><div class="command-row"><h2>Explora un área de trabajo</h2><a href="#/salas">Ver categorías y subcategorías</a></div>${quickAreas(areas.filter(area=>area.kind==="work"))}</section>
     <section class="section"><h2>Configura tu asistente</h2><p>Primeros pasos, skills y conexiones para el cliente que utilizas.</p>${quickAreas(areas.filter(area=>area.kind==="tool"))}</section>` : ""}
     <section class="section"><div class="command-row"><h2>Empieza por un resultado</h2><a href="#/rutas">Ver las ${catalog.discovery.goals.length} rutas</a></div>
       ${goalLinks(catalog.discovery.goals.slice(0, 8))}</section>
     <section class="section"><h2>O parte de lo que ya tienes</h2><p>Elige cómo quieres usar la IA y después filtra por tu objetivo.</p>
-      <ul class="access-links">${["claude","codex","local_model","no_api"].map(route => `<li><a href="#/explorar?route=${route}">${esc(label("route", route))}</a></li>`).join("")}</ul>
+      <ul class="access-links">${["claude","codex","antigravity","local_model","no_api"].map(route => `<li><a href="#/explorar?route=${route}">${esc(label("route", route))}</a></li>`).join("")}</ul>
       <p class="meta">Una interfaz local puede usar un modelo remoto. Una suscripción puede admitir unas rutas y no otras. <a href="#/acceso">Entiende acceso y costes</a>.</p></section>
     <section class="section reading-start"><h2>Una biblioteca que te orienta</h2><p>Abre una ficha para entender qué hace, con qué acceso funciona y cómo empezar. Compara hasta tres alternativas; utiliza una receta cuando necesites varias piezas.</p><p><a href="#/guias">Leer las guías</a> · <a href="#/salas">Explorar categorías</a> · <a href="#/novedades">Ver incorporaciones</a></p></section>`;
   }
@@ -232,7 +233,7 @@
     const route=params.get("route")||"";
     const picks=AlexandriaSearch.guided(catalog.repos,catalog.categories,catalog.discovery.goals,params);
     const selection=new URLSearchParams();if(goal)selection.set("goal",goal.id);if(route)selection.set("route",route);
-    const choices=[["","Todavía no sé: enséñame opciones"],["claude","Ya uso Claude Code"],["codex","Ya uso Codex"],["local_model","Quiero un modelo en mi equipo"],["no_api","Quiero una ruta sin API de IA"],["api","Puedo configurar una API de IA"]];
+    const choices=[["","Todavía no sé: enséñame opciones"],["claude","Ya uso Claude Code"],["codex","Ya uso Codex"],["antigravity","Ya uso Antigravity"],["local_model","Quiero un modelo en mi equipo"],["no_api","Quiero una ruta sin clave de API de IA"],["api","Puedo configurar una API de IA"]];
     return `<h1>Encuentra tu punto de partida</h1><p class="lede">No necesitas saber programar para elegir. Responde dos preguntas y revisa unas pocas opciones antes de instalar.</p>
       <form id="guided-start" class="guided-form" action="#/empezar" method="get">
       <div class="filter-field"><label for="guided-goal">1. ¿Qué quieres conseguir?</label><select id="guided-goal" name="goal" required><option value="">Elige una tarea</option>${catalog.discovery.goals.map(item=>`<option value="${esc(item.id)}"${goal?.id===item.id?" selected":""}>${esc(item.title)}</option>`).join("")}</select></div>
@@ -418,19 +419,22 @@
 
   function accessSection(item) {
     const a=item.access;
-    const rows=[["API de IA",label("api",a.api),a.api_note],["Claude Code",label("client",a.claude_code),""],["Codex",label("client",a.codex),""],["Modelos locales",label("local_model",a.local_model),a.local_note],["Coste",label("cost",a.cost),a.cost_note],["Equipo",label("hardware",a.hardware),a.hardware_note]];
+    const rows=[["API de IA",label("api",a.api),a.api_note===a.cost_note?"":a.api_note],["Claude Code",label("client",a.claude_code),""],["Codex",label("client",a.codex),""],["Antigravity",label("client",a.antigravity),""],["Modelos locales",label("local_model",a.local_model),a.local_note===item.how?"":a.local_note],["Coste",label("cost",a.cost),a.cost_note],["Equipo",label("hardware",a.hardware),a.hardware_note]];
     if(a.other_access)rows.push(["Otras rutas",a.other_access,""]);
-    return `<section id="repo-access" class="section" aria-labelledby="access-heading"><h2 id="access-heading">Acceso, coste y equipo</h2><p>${esc(a.scope)}</p><dl class="access-facts">${rows.map(([title,value,note])=>`<div><dt>${esc(title)}</dt><dd><strong>${esc(value)}</strong>${note?`<p>${esc(note)}</p>`:""}</dd></div>`).join("")}</dl><p class="access-explanation">${esc(a.subscription_note)} <a href="#/acceso">Cómo interpretar estas rutas</a>.</p></section>`;
+    const subscription=a.subscription_note===item.how?"Conectar un agente no incluye automáticamente su suscripción ni los servicios externos. Revisa la ruta documentada.":a.subscription_note;
+    return `<section id="repo-access" class="section" aria-labelledby="access-heading"><h2 id="access-heading">Acceso, coste y equipo</h2><p>${esc(a.scope)}</p><dl class="access-facts">${rows.map(([title,value,note])=>`<div><dt>${esc(title)}</dt><dd><strong>${esc(value)}</strong>${note?`<p>${esc(note)}</p>`:""}</dd></div>`).join("")}</dl><p class="access-explanation">${esc(subscription)} <a href="#/acceso">Cómo interpretar estas rutas</a>.</p></section>`;
   }
 
   function startSection(item) {
     const g=item.getting_started||{};
     const source=safeUrl(g.source||item.repo_url);
-    const prompt=[`Quiero usar ${item.name} y necesito pasos guiados para una persona sin experiencia técnica.`, `Fuente original: ${source}.`, `La ficha de Alexandría indica: ${preparation(item)}; API de IA: ${label("api",item.access.api)}; Claude Code: ${label("client",item.access.claude_code)}; Codex: ${label("client",item.access.codex)}; modelo local: ${label("local_model",item.access.local_model)}.`, "Lee la documentación actual antes de dar comandos. Pregunta mi sistema operativo y qué resultado busco. Explica si conviene una aplicación lista, una skill o configurar un proyecto. Distingue tu ayuda para instalar de la cuenta o el modelo que usará la herramienta. Comprueba dependencias, costes y límites de la ruta elegida. Guíame una acción a la vez hasta una primera prueba pequeña y verifica el resultado. No inventes paquetes o comandos ni pidas que pegue contraseñas en el chat."].join("\n\n");
+    const prompt=[`Quiero usar ${item.name} y necesito pasos guiados para una persona sin experiencia técnica.`, `Fuente original: ${source}.`, `La ficha de Alexandría indica: ${preparation(item)}; API de IA: ${label("api",item.access.api)}; Claude Code: ${label("client",item.access.claude_code)}; Codex: ${label("client",item.access.codex)}; Antigravity: ${label("client",item.access.antigravity)}; modelo local: ${label("local_model",item.access.local_model)}.`,item.first_try?.action?`Primera prueba propuesta: ${item.first_try.action}. Resultado que comprobar: ${item.first_try.success}.`:"", "Lee la documentación actual antes de dar comandos. Pregunta mi sistema operativo y qué resultado busco. Explica si conviene una aplicación lista, una skill o configurar un proyecto. Distingue tu ayuda para instalar de la cuenta o el modelo que usará la herramienta. Comprueba dependencias, costes y límites de la ruta elegida. Guíame una acción a la vez hasta una primera prueba pequeña y verifica el resultado. No inventes paquetes o comandos ni pidas que pegue contraseñas en el chat."].filter(Boolean).join("\n\n");
     return `<section id="repo-start" class="section"><h2>Cómo empezar</h2><p class="meta">${esc(preparation(item))}. <a href="#/guia/vocabulario">Entender los términos</a>.</p>${g.prerequisites?.length?`<p><strong>Antes de empezar</strong></p><ul>${g.prerequisites.map(text=>`<li>${esc(text)}</li>`).join("")}</ul>`:""}
       ${safeUrl(g.entry_url)?`<p><a class="btn" href="${esc(safeUrl(g.entry_url))}" target="_blank" rel="noreferrer">Abrir la web o descarga indicada por el autor</a></p>`:""}
       ${g.steps?.length?`<ol class="start-steps">${g.steps.map(text=>`<li>${esc(text)}</li>`).join("")}</ol>`:"<p>Consulta la ruta de instalación en la documentación original.</p>"}
-      ${g.command&&g.command_status==="documented"?`<p id="command-title"><strong>Comando de entrada documentado</strong></p><pre class="command" role="region" aria-labelledby="command-title" tabindex="0"><code>${esc(g.command)}</code></pre><button class="btn small" type="button" data-action="copy" data-text="${esc(g.command)}">Copiar comando</button><p class="meta">${esc(g.note)}</p>`:""}
+      ${g.command&&g.command_status==="documented"?`<p id="command-title"><strong>Entrada documentada · ${esc(g.command_language||"consulta la sintaxis original")}</strong></p><pre class="command" role="region" aria-labelledby="command-title" tabindex="0"><code>${esc(g.command)}</code></pre><button class="btn small" type="button" data-action="copy" data-text="${esc(g.command)}">Copiar comando</button>`:""}
+      ${g.note?`<p class="meta">${esc(g.note)}</p>`:""}
+      ${item.first_try?.action?`<div class="callout"><h3>Tu primera prueba</h3><p>${esc(item.first_try.action)}.</p><p><strong>Qué comprobar:</strong> ${esc(item.first_try.success)}.</p><p class="meta">Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.</p></div>`:""}
       ${source?`<p><a href="${esc(source)}" target="_blank" rel="noreferrer">Abrir instrucciones originales</a></p>`:""}
       <details class="guided-help"><summary>Necesito ayuda paso a paso con esta herramienta</summary><p>Copia este encargo en Claude Code, Codex o tu asistente. Que te ayude a instalar no significa que la aplicación use su suscripción.</p><label for="help-prompt">Encargo para tu asistente</label><textarea id="help-prompt" rows="9" readonly>${esc(prompt)}</textarea><button class="btn small" type="button" data-action="copy" data-text="${esc(prompt)}">Copiar encargo</button><p class="copy-status" role="status"></p></details></section>`;
   }
@@ -458,15 +462,12 @@
       <h1>${esc(item.name)}</h1>
       ${dek}
       ${badges(item)}
-      <nav class="repo-toc" aria-label="En esta ficha"><a href="#/repo/${encodeURIComponent(item.id)}?section=access">Ver acceso y costes</a><a href="#/repo/${encodeURIComponent(item.id)}?section=start">Ir a los primeros pasos</a></nav>
+      <nav class="repo-toc" aria-label="En esta ficha"><a href="#/repo/${encodeURIComponent(item.id)}?section=examples">Ver ejemplos</a><a href="#/repo/${encodeURIComponent(item.id)}?section=access">Ver acceso y costes</a><a href="#/repo/${encodeURIComponent(item.id)}?section=start">Ir a los primeros pasos</a></nav>
+      ${item.practical_examples?.length?`<section id="repo-examples" class="section"><h2>Para qué puedes usarlo</h2><ul>${item.practical_examples.map(example=>`<li>${esc(example.scenario)}</li>`).join("")}</ul><p class="meta">Ejemplos de uso propuestos para orientar tu elección.</p></section>`:""}
       ${accessSection(item)}
       ${body?`<div class="section">${body}</div>`:""}
-      ${item.how ? `<section class="section"><h2>Cómo funciona</h2><p>${esc(item.how)}</p></section>` : ""}
+      ${item.how ? `<section class="section"><h2>Qué conviene saber</h2><p>${esc(item.how)}</p></section>` : ""}
       ${skill}
-      <section class="split">
-        <article class="callout yes"><h3>Elige si</h3><p>${item.choose_if ? rich(item.choose_if) : "La ficha todavía no declara este criterio."}</p></article>
-        <article class="callout no"><h3>Evítalo si</h3><p>${item.avoid_if ? rich(item.avoid_if) : "La ficha todavía no declara este límite."}</p></article>
-      </section>
       ${startSection(item)}
       ${item.areas?.length?`<section class="section"><h2>Encuéntralo por tema</h2><ul class="access-links" role="list">${item.areas.map(id=>areaById[id]).filter(Boolean).map(area=>`<li><a href="#/area/${esc(area.id)}">${esc(area.title)}</a></li>`).join("")}</ul></section>`:""}
       <section class="section grid-2">
@@ -481,7 +482,7 @@
           ${refLinks(item.alt_refs)}
         </div>
       </section>
-      <section class="section"><h2>Fuentes y límites</h2><p>${esc(item.limits || "Revisa los límites de la variante y del proveedor que elijas.")}</p><p class="meta">Acceso revisado el ${esc(item.access.checked_at || "fecha por confirmar")}. Lectura de documentación; no prueba de ejecución.</p><ul>${(item.access.sources||[]).map((url,index)=>`<li><a href="${esc(safeUrl(url))}" target="_blank" rel="noreferrer">Fuente ${index+1}</a></li>`).join("")}</ul></section>
+      <section class="section"><h2>Fuentes y límites</h2>${item.limits&&item.limits!==item.how?`<p>${esc(item.limits)}</p>`:""}<p class="meta">Acceso revisado el ${esc(item.access.checked_at || "fecha por confirmar")}. Lectura de documentación; no prueba de ejecución.</p><ul>${(item.access.sources||[]).map((url,index)=>`<li><a href="${esc(safeUrl(url))}" target="_blank" rel="noreferrer">Fuente ${index+1}</a></li>`).join("")}</ul></section>
       <details class="section technical-details"><summary>Ampliar ficha técnica y etiquetas</summary>
         <p><strong>Papel.</strong> ${esc(label("role", item.role))}. ${esc(catalog.role_why[item.role] || "")}</p>
         <p><strong>Ejecución.</strong> ${esc(label("exec", item.exec))}.</p>
@@ -615,6 +616,7 @@
       ["API de IA", item => esc(label("api", item.access.api))],
       ["Claude Code", item => esc(label("client", item.access.claude_code))],
       ["Codex", item => esc(label("client", item.access.codex))],
+      ["Antigravity", item => esc(label("client", item.access.antigravity))],
       ["Modelo local", item => esc(label("local_model", item.access.local_model))],
       ["Coste", item => esc(item.access.cost_note)],
       ["Equipo", item => esc(item.access.hardware_note)],

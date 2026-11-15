@@ -2,7 +2,7 @@
 
 # 🔊 supertonic
 
-> Motor de texto a voz que ofrece modelos y ejemplos para sintetizar audio en dispositivos y navegadores compatibles.
+> Archivo de TTS local ONNX; desarrollo y soporte terminados,con licencias separadas de código y pesos.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -18,42 +18,44 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Código de muestra MIT y pesos OpenRAIL-M; hardware y servicios hospedados tienen condiciones distintas |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Repositorio archivado sin actualizaciones ni soporte; la ruta fija de voces locales no incluye automáticamente el pipeline de clonación del servicio |
+| Coste | El coste depende del proveedor o la ruta. Código de muestra MIT y pesos OpenRAIL-M; hardware y servicios hospedados tienen condiciones distintas |
+| Equipo | Preparación según la ruta elegida. Python o runtime ONNX; pesos del archivo; voz compatible; texto de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Repositorio archivado sin actualizaciones ni soporte; la ruta fija de voces locales no incluye automáticamente el pipeline de clonación del servicio
 
 ## Qué puedes hacer con él
 
-Motor de texto a voz que ofrece modelos y ejemplos para sintetizar audio en dispositivos y navegadores compatibles. El soporte por idioma, dispositivo y variante debe comprobarse en la documentación actual.
+Archivo de TTS local ONNX; desarrollo y soporte terminados,con licencias separadas de código y pesos.
 
 ## Por qué destaca
 
-Logra latencia muy baja con privacidad total al no depender de la nube, atractivo para voz en tiempo real y asistentes on-device; sus modelos se publican gratis en Hugging Face.
+Usos propuestos: Reproducir una narración local; Estudiar TTS ONNX en dispositivo.
 
 ## Cómo funciona
 
-Procesa texto con un modelo de voz local mediante los runtimes y ejemplos que distribuye el proyecto.
+Repositorio archivado sin actualizaciones ni soporte; la ruta fija de voces locales no incluye automáticamente el pipeline de clonación del servicio
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python o runtime ONNX
+- pesos del archivo
+- voz compatible
+- texto de prueba
 
-```shell
-pip install supertonic
-```
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/supertone-oss-archive/supertonic/blob/main/README.md)
 
@@ -61,21 +63,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar supertonic para mi objetivo y necesito pasos guiados. Lee https://github.com/supertone-oss-archive/supertonic/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Lee el aviso de archivo y genera una frase con pesos locales descargados desde el archivo.
+
+**Qué comprobar:** Puedes comprobar que no dependes del servicio anterior para la inferencia.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Respuesta por voz en tiempo real
-- Locuciones de anuncios local
-- Asistentes on-device sin enviar audio a la nube
+- Reproducir una narración local
+- Estudiar TTS ONNX en dispositivo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres voz local en tiempo real y sin nube | priorizas clonación de máxima fidelidad (VoxCPM) o flexibilidad multi-modelo (TTS) |
+| Tu objetivo encaja con estos ejemplos: Reproducir una narración local; Estudiar TTS ONNX en dispositivo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Repositorio archivado sin actualizaciones ni soporte; la ruta fija de voces locales no incluye automáticamente el pipeline de clonación del servicio
 
 ## Stack y modelos
 
-- **Stack:** Python, Rust (ONNX), Node.js, WebGPU
+- **Stack:** Python o runtime ONNX; pesos del archivo; voz compatible; texto de prueba
 - **Etiquetas:** `tts` `audio`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -93,7 +104,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/supertone-oss-archive/supertonic/blob/main/README.md)
 

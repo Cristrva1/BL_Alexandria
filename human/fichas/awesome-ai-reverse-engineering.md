@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Leer no requiere API; cada herramienta y modelo puede tener costes propios |
+| Claude Code | Depende del recurso o la configuración |
+| Codex | Depende del recurso o la configuración |
+| Antigravity | Depende del recurso o la configuración |
+| Modelos locales | La función básica no necesita un modelo. Las etiquetas SAFE son valoraciones de un tercero y no una auditoría ni garantía de seguridad de Alexandría |
+| Coste | Sin pago a un modelo en la ruta básica. Leer no requiere API; cada herramienta y modelo puede tener costes propios |
+| Equipo | Preparación según la ruta elegida. Navegador; formato y cliente objetivo |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Las etiquetas SAFE son valoraciones de un tercero y no una auditoría ni garantía de seguridad de Alexandría
 
 ## Qué puedes hacer con él
 
 Directorio de herramientas de ingeniería inversa y análisis de software que pueden trabajar con agentes de IA.
 
+## Por qué destaca
+
+Usos propuestos: Encontrar una integración MCP para análisis; Comparar herramientas con backends locales.
+
 ## Cómo funciona
 
-Se consulta como documentación o referencia; cada ejemplo o proyecto enlazado se evalúa por separado.
+Las etiquetas SAFE son valoraciones de un tercero y no una auditoría ni garantía de seguridad de Alexandría
 
 ## Cómo empezar
 
@@ -39,11 +44,13 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real.
+- Navegador
+- formato y cliente objetivo
 
-1. Abre el material original y localiza la sección relacionada con tu tarea.
-2. Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.
-3. Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado.
+1. Elige una herramienta y contrasta su README, licencia y configuración antes de aceptar la etiqueta del directorio.
+2. Comprueba: Puedes distinguir la evaluación del recopilador de la evidencia del autor.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/zhuyansen/awesome-ai-reverse-engineering/blob/main/README.md)
 
@@ -51,20 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar awesome-ai-reverse-engineering para mi objetivo y necesito pasos guiados. Lee https://github.com/zhuyansen/awesome-ai-reverse-engineering/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Elige una herramienta y contrasta su README, licencia y configuración antes de aceptar la etiqueta del directorio.
+
+**Qué comprobar:** Puedes distinguir la evaluación del recopilador de la evidencia del autor.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Directorio de herramientas de ingeniería inversa y análisis de software que pueden trabajar con agentes de IA.
+- Encontrar una integración MCP para análisis
+- Comparar herramientas con backends locales
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Directorio de herramientas de ingeniería inversa y análisis de software que pueden trabajar con agentes de IA. | necesitas una aplicación lista para ejecutar en lugar de material de consulta |
+| Tu objetivo encaja con estos ejemplos: Encontrar una integración MCP para análisis; Comparar herramientas con backends locales | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Las pruebas activas y modificaciones requieren un alcance autorizado y un entorno adecuado.
+**Limitaciones:** Las etiquetas SAFE son valoraciones de un tercero y no una auditoría ni garantía de seguridad de Alexandría
 
 ## Stack y modelos
 
+- **Stack:** Navegador; formato y cliente objetivo
 - **Etiquetas:** `referencias` `reference`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +92,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/zhuyansen/awesome-ai-reverse-engineering/blob/main/README.md)
 

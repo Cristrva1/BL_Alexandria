@@ -21,12 +21,12 @@ flowchart LR
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [Repomix](../fichas/repomix.md) | Empaqueta el repo (o una parte) en un archivo para el LLM | 29.3k | `npx repomix` |
-| 2 | [codegraph](../fichas/codegraph.md) | Grafo de código pre-indexado que se sincroniza con los cambios | 77.6k | `npm install -g codegraph` |
-| 3 | [GitNexus](../fichas/gitnexus.md) | Explora dependencias y flujos sin servidor | 48.5k | `git clone https://github.com/abhigyanpatwari/GitNexus` |
-| 4 | [graphify](../fichas/graphify.md) | Grafo de conocimiento con código, docs y esquemas | 148k | `pipx install graphify` |
-| 5 | [DeepWiki Open](../fichas/deepwiki-open.md) | Genera una wiki navegable del repositorio | 18.4k | `docker compose up` |
-| 6 | [Claude Code](../fichas/claude-code.md) | Agente que consulta los índices y edita el código | 156k | `curl -fsSL https://claude.ai/install.sh \| bash` |
+| 1 | [Repomix](../fichas/repomix.md) | Empaqueta el repo (o una parte) en un archivo para el LLM | 29.3k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 2 | [codegraph](../fichas/codegraph.md) | Grafo de código pre-indexado que se sincroniza con los cambios | 77.6k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 3 | [GitNexus](../fichas/gitnexus.md) | Explora dependencias y flujos sin servidor | 48.5k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 4 | [graphify](../fichas/graphify.md) | Grafo de conocimiento con código, docs y esquemas | 148k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 5 | [DeepWiki Open](../fichas/deepwiki-open.md) | Genera una wiki navegable del repositorio | 18.4k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 6 | [Claude Code](../fichas/claude-code.md) | Agente que consulta los índices y edita el código | 156k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## 🔌 Cómo se conecta
 

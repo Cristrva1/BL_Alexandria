@@ -16,34 +16,51 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | API de IA necesaria. La ruta documentada pide API LLM con visión; datos, agentes múltiples y evaluación acumulan consumo |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. El resultado de investigación no acredita ejecución HFT ni rendimiento futuro; no se confirma aquí un backend local compatible con todo el flujo |
+| Coste | El coste depende del proveedor o la ruta. La ruta documentada pide API LLM con visión; datos, agentes múltiples y evaluación acumulan consumo |
+| Equipo | Preparación según la ruta elegida. Python; checkout; datos; modelo con entrada de imagen y credenciales |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El resultado de investigación no acredita ejecución HFT ni rendimiento futuro; no se confirma aquí un backend local compatible con todo el flujo
 
 ## Qué puedes hacer con él
 
-Sistema experimental de agentes LLM que combina indicadores técnicos, patrones y tendencias para análisis de trading. Coordina agentes con LangChain y LangGraph y presenta sus análisis mediante una interfaz web.
+Sistema experimental de agentes LLM que combina indicadores técnicos, patrones y tendencias para análisis de trading.
 
 ## Por qué destaca
 
-Quieres estudiar la coordinación de agentes sobre señales de precio.
+Usos propuestos: Estudiar agentes que interpretan gráficos; Comparar componentes de un análisis experimental.
 
 ## Cómo funciona
 
-Coordina agentes con LangChain y LangGraph y presenta sus análisis mediante una interfaz web.
+El resultado de investigación no acredita ejecución HFT ni rendimiento futuro; no se confirma aquí un backend local compatible con todo el flujo
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python
+- checkout
+- datos
+- modelo con entrada de imagen y credenciales
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+pip install -r requirements.txt
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Y-Research-SBU/QuantHarness/blob/main/README.md)
 
@@ -51,21 +68,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar QuantHarness para mi objetivo y necesito pasos guiados. Lee https://github.com/Y-Research-SBU/QuantHarness/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Reproduce una evaluación histórica pequeña y revisa los gráficos que recibe cada agente.
+
+**Qué comprobar:** Puedes separar datos del periodo, análisis visual y decisión generada.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres estudiar la coordinación de agentes sobre señales de precio
+- Estudiar agentes que interpretan gráficos
+- Comparar componentes de un análisis experimental
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres estudiar la coordinación de agentes sobre señales de precio | necesitas resultados operativos validados en vez de material de investigación |
+| Tu objetivo encaja con estos ejemplos: Estudiar agentes que interpretan gráficos; Comparar componentes de un análisis experimental | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Las afirmaciones de trading de alta frecuencia no fueron verificadas; no se evaluó ejecución real.
+**Limitaciones:** El resultado de investigación no acredita ejecución HFT ni rendimiento futuro; no se confirma aquí un backend local compatible con todo el flujo
 
 ## Stack y modelos
 
-- **Stack:** HTML
+- **Stack:** Python; checkout; datos; modelo con entrada de imagen y credenciales
 - **Etiquetas:** `finanzas` `agentic-ai` `large-language-models` `html`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +101,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Y-Research-SBU/QuantHarness/blob/main/README.md)
 

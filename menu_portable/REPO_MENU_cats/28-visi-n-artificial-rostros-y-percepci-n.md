@@ -7,41 +7,62 @@
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python
 
 **Qué es:** Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de video.
-**Stack:** Python
+**Stack:** Conda; checkpoint; modelo SMPL neutral con acceso y licencia; equipo adecuado
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Sin API de IA obligatoria; SMPL, datos y pesos tienen condiciones de acceso y cómputo propios
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
-- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
-- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Requiere registrar y descargar SMPL aparte; las cifras de entrenamiento con varias A100 no son requisitos idénticos de una demo ni garantizan precisión métrica
+- Coste: El coste depende del proveedor o la ruta. Sin API de IA obligatoria; SMPL, datos y pesos tienen condiciones de acceso y cómputo propios
+- Equipo: Preparación según la ruta elegida. Conda; checkpoint; modelo SMPL neutral con acceso y licencia; equipo adecuado
 **Repo:** https://github.com/shubham-goel/4D-Humans
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/shubham-goel/4D-Humans/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** buscas esta función: Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de video.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+```
+git clone https://github.com/shubham-goel/4D-Humans.git
+cd 4D-Humans
+conda env create -f environment.yml
+conda activate 4D-humans
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar reconstrucción humana 3D; Explorar seguimiento en un clip corto
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Ejecuta la demo con material autorizado y compara reconstrucción con la imagen
+**Qué comprobar:** Puedes identificar malla, pose y posibles errores de profundidad
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `deep-live-cam`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=vision,image,python
 
-**Qué es:** Convierte un cambio de rostro, que normalmente requiere pipeline complejo, en un flujo de "un clic".
-**Stack:** Python, PyTorch, ONNX Runtime, GPU
+**Qué es:** Herramienta de face swap y deepfake en tiempo real a partir de una sola imagen, aplicable a webcam o video.
+**Stack:** Python compatible; FFmpeg; modelos ONNX; CPU o GPU según backend; imágenes autorizadas
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La ejecución local no exige API; hardware y licencias de modelos como InsightFace se revisan aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El autor advierte instalación técnica; los pesos de reconocimiento o intercambio pueden tener restricciones no comerciales aunque el código sea accesible
+- Coste: Sin pago a un modelo en la ruta básica. La ejecución local no exige API; hardware y licencias de modelos como InsightFace se revisan aparte
+- Equipo: Preparación según la ruta elegida. Python compatible; FFmpeg; modelos ONNX; CPU o GPU según backend; imágenes autorizadas
 **Repo:** https://github.com/hacksider/Deep-Live-Cam
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/hacksider/Deep-Live-Cam/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** necesitas swap en vivo legítimo con consentimiento
-**Evita si:** no puedes garantizar uso ético/consentimiento o no tienes GPU
+```
+git clone --depth 1 https://github.com/hacksider/Deep-Live-Cam.git
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un efecto facial consentido; Probar un pipeline local de video
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Prueba con imágenes propias o autorizadas y revisa artefactos en una salida corta etiquetada como sintética
+**Qué comprobar:** Puedes comparar original y resultado y reconocer errores visibles
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `face-recognition`
 **Alternativas (elige una):** `facefusion`
 
@@ -49,85 +70,121 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python
 
 **Qué es:** Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes.
-**Stack:** Python
+**Stack:** Entorno de la demo; cámaras y calibración según método; modelos corporales autorizados
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La ejecución propia usa cómputo y modelos o datasets con condiciones separadas; no incluye equipos
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
-- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
-- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La calibración y el número de vistas cambian por pipeline; una demo no prueba precisión de captura con cualquier cámara o escena
+- Coste: El coste depende del proveedor o la ruta. La ejecución propia usa cómputo y modelos o datasets con condiciones separadas; no incluye equipos
+- Equipo: Preparación según la ruta elegida. Entorno de la demo; cámaras y calibración según método; modelos corporales autorizados
 **Repo:** https://github.com/zju3dv/EasyMocap
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/zju3dv/EasyMocap/blob/master/Readme.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://chingswy.github.io/easymocap-public-doc/quickstart/quickstart.html
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar captura multicámara; Explorar reconstrucción de movimiento
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Empieza por los datos de una demo y revisa correspondencia de cámaras y reconstrucción
+**Qué comprobar:** Puedes reconocer qué observaciones sustentan la pose
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `face-recognition`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=image,vision,python
 
-**Qué es:** Envuelve dlib para que el reconocimiento facial sea trivial desde un script.
-**Stack:** Python, dlib
+**Qué es:** Librería de Python con API de alto nivel para detección y reconocimiento facial: localizar caras, compararlas e identificarlas por similitud.
+**Stack:** Python; dlib y CMake según sistema; fotos propias autorizadas
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No usa API remota; compilar dependencias y ejecutar modelos consume equipo
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Windows no está oficialmente soportado por esta guía; una similitud no verifica identidad ni sustituye un sistema de autenticación
+- Coste: Sin pago a un modelo en la ruta básica. No usa API remota; compilar dependencias y ejecutar modelos consume equipo
+- Equipo: Preparación según la ruta elegida. Python; dlib y CMake según sistema; fotos propias autorizadas
 **Repo:** https://github.com/ageitgey/face_recognition
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/ageitgey/face_recognition/blob/master/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** necesitas reconocimiento facial básico y rápido de implementar
-**Evita si:** buscas restauración/animación (GFPGAN/LivePortrait) o precisión de producción (mejor DeepFace/InsightFace)
+```
+pip3 install face_recognition
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar detección facial; Comparar dos fotos propias en un laboratorio
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Localiza rostros en una imagen de prueba y revisa las cajas antes de comparar identidades
+**Qué comprobar:** Puedes comprobar qué región detectó el modelo
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `deep-live-cam`
 **Alternativas (elige una):** `insightface`
 
 ## `facefusion`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=image,video,vision,python
 
-**Qué es:** Herramienta líder para face swap, mejora facial y sincronía labial, con controles de uso responsable.
-**Stack:** Python, ONNX, Gradio
+**Qué es:** Plataforma para intercambio y mejora de rostros en imágenes y video.
+**Stack:** Sistema compatible; modelos; CPU o GPU; material autorizado
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia propia no exige API; instaladores, hardware y modelos tienen condiciones independientes
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La instalación desde fuente requiere conocimientos técnicos; no debe presentarse la disponibilidad del código como permiso comercial de todos los pesos
+- Coste: El coste depende del proveedor o la ruta. La inferencia propia no exige API; instaladores, hardware y modelos tienen condiciones independientes
+- Equipo: Preparación según la ruta elegida. Sistema compatible; modelos; CPU o GPU; material autorizado
 **Repo:** https://github.com/facefusion/facefusion
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/facefusion/facefusion/blob/master/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://docs.facefusion.io/installation
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** necesitas manipulación facial de calidad con consentimiento
-**Evita si:** no tienes consentimiento de las personas
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un efecto facial consentido; Evaluar un flujo local de imagen
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Procesa una imagen de prueba y revisa bordes, color y artefactos antes de pasar a video
+**Qué comprobar:** Puedes identificar modelo y limitaciones de la salida
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ffmpeg`
 **Alternativas (elige una):** `deep-live-cam`
 
 ## `insightface`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=vision,image,python
 
-**Qué es:** Base de muchas herramientas faciales; ofrece modelos de reconocimiento de última generación.
-**Stack:** Python, ONNX
+**Qué es:** Proyecto de análisis facial 2D y 3D: detección, reconocimiento y alineación.
+**Stack:** Python; runtime ONNX; modelos con licencia adecuada; datos autorizados
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Código MIT, pero modelos preentrenados proporcionados para investigación no comercial; uso comercial requiere revisar la licencia correspondiente
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La licencia de código y modelos es distinta incluso en descargas automáticas; el paquete actual ofrece base y GUI con dependencias diferentes
+- Coste: El coste depende del proveedor o la ruta. Código MIT, pero modelos preentrenados proporcionados para investigación no comercial; uso comercial requiere revisar la licencia correspondiente
+- Equipo: Preparación según la ruta elegida. Python; runtime ONNX; modelos con licencia adecuada; datos autorizados
 **Repo:** https://github.com/deepinsight/insightface
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/deepinsight/insightface/blob/master/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/deepinsight/insightface/blob/master/python-package/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** necesitas reconocimiento facial preciso
-**Evita si:** solo quieres detectar caras simples; mira `opencv`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar alineación facial; Evaluar detección en un dataset de prueba
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Ejecuta detección sobre una imagen propia y revisa resultados antes de usar comparaciones
+**Qué comprobar:** Puedes identificar modelo, backend y caras detectadas
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `facefusion`
 **Alternativas (elige una):** `face-recognition`
 
@@ -135,307 +192,452 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=vision,library,python
 
 **Qué es:** Biblioteca de visión por computador para incorporar geometría, transformaciones y procesamiento de imágenes en PyTorch.
-**Stack:** Python, pyproject.toml
+**Stack:** Python; PyTorch; tensor o imagen de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Sin API remota para operaciones o modelos locales; pesos y cómputo se revisan aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
-- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
-- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Es una biblioteca para desarrolladores y sus convenciones geométricas deben comprobarse al combinarla con otros motores
+- Coste: Sin pago a un modelo en la ruta básica. Sin API remota para operaciones o modelos locales; pesos y cómputo se revisan aparte
+- Equipo: Preparación según la ruta elegida. Python; PyTorch; tensor o imagen de prueba
 **Repo:** https://github.com/kornia/kornia
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/kornia/kornia/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** buscas esta función: Biblioteca de visión por computador para incorporar geometría, transformaciones y procesamiento de imágenes en PyTorch.
-**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+```
+pip install kornia
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar datos visuales; Estudiar geometría diferenciable
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Aplica una transformación geométrica y compara coordenadas de entrada y salida
+**Qué comprobar:** Puedes comprobar convención de ejes y forma del tensor
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `label-studio`
 role=platform · exec=local · setup=easy · mcp=False · prov=— · tags=data,vision,training,docker
 
-**Qué es:** Crea datasets para entrenar o evaluar modelos con interfaces de anotación configurables y preetiquetado con IA.
-**Stack:** Python, Django, React
+**Qué es:** Herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video.
+**Stack:** Docker o Python compatible; datos de muestra; almacenamiento persistente
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: API de IA opcional. Etiquetado manual sin API de IA; backend de modelos, hosting y ediciones comerciales pueden añadir costes
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica es anotación humana; no necesita un modelo para empezar y los backends de ML se configuran por separado
+- Coste: El coste depende del proveedor o la ruta. Etiquetado manual sin API de IA; backend de modelos, hosting y ediciones comerciales pueden añadir costes
+- Equipo: Preparación según la ruta elegida. Docker o Python compatible; datos de muestra; almacenamiento persistente
 **Repo:** https://github.com/HumanSignal/label-studio
 
-**Instalación** [+]: `pip install label-studio`
+**Instalación** [+]:
+
+```
+docker pull heartexlabs/label-studio:latest
+docker run -it -p 8080:8080 -v $(pwd)/mydata:/label-studio/data heartexlabs/label-studio:latest
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** necesitas crear datasets etiquetados
-**Evita si:** solo evalúas prompts; mira `promptfoo`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar un dataset de imágenes; Revisar etiquetas de texto o audio
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea un proyecto con cinco imágenes y etiqueta una clase antes de añadir preanotación AI
+**Qué comprobar:** Puedes exportar anotaciones y comprobar el formato
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ultralytics`, `sam2`
 
 ## `liveportrait`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=image,vision,python
 
-**Qué es:** Convierte una foto en un avatar que sigue las expresiones de un "conductor".
-**Stack:** Python, PyTorch, GPU
+**Qué es:** Sistema eficiente para animar retratos estáticos, transfiriendo el movimiento facial de un video de referencia a una sola imagen de origen (humanos, pero también mascotas).
+**Stack:** Conda; Python 3.10; PyTorch para tu sistema; FFmpeg; pesos; retrato y movimiento autorizados
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La ruta propia no necesita API; hardware, pesos y servicios de demo son independientes
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Las alternativas CUDA del README no se instalan todas juntas; Animals mode tiene restricciones en macOS por X-Pose y los modelos externos conservan sus licencias
+- Coste: Sin pago a un modelo en la ruta básica. La ruta propia no necesita API; hardware, pesos y servicios de demo son independientes
+- Equipo: Preparación según la ruta elegida. Conda; Python 3.10; PyTorch para tu sistema; FFmpeg; pesos; retrato y movimiento autorizados
 **Repo:** https://github.com/KlingAIResearch/LivePortrait
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/KlingAIResearch/LivePortrait/blob/main/readme.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** animas retratos a partir de una foto
-**Evita si:** necesitas swap en vivo (Deep-Live-Cam) o no tienes GPU
+```
+git clone https://github.com/KlingTeam/LivePortrait
+cd LivePortrait
+
+# create env using conda
+conda create -n LivePortrait python=3.10
+conda activate LivePortrait
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear una animación consentida de un retrato; Estudiar retargeting facial
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Anima un retrato propio con un clip corto y compara expresión y bordes
+**Qué comprobar:** Puedes reconocer movimiento transferido y defectos
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `moviepy`
 
 ## `mediapipe`
 role=library · exec=local · setup=medium · mcp=False · prov=local · tags=vision,library,c
 
 **Qué es:** Herramientas de aprendizaje automático para tareas de visión y procesamiento de medios en dispositivos y aplicaciones.
-**Stack:** C++, Dockerfile, package.json
+**Stack:** Plataforma y SDK elegidos; modelo de tarea; imagen o clip de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La ejecución en dispositivo no exige API de modelo alojado; distribución, modelos y hardware tienen condiciones propias
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
-- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
-- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. MediaPipe Solutions y compilar el Framework son rutas diferentes; elige la tarea antes de preparar todo el entorno
+- Coste: Sin pago a un modelo en la ruta básica. La ejecución en dispositivo no exige API de modelo alojado; distribución, modelos y hardware tienen condiciones propias
+- Equipo: Preparación según la ruta elegida. Plataforma y SDK elegidos; modelo de tarea; imagen o clip de prueba
 **Repo:** https://github.com/google-ai-edge/mediapipe
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/google-ai-edge/mediapipe/blob/master/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://developers.google.com/edge/mediapipe/solutions/
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Herramientas de aprendizaje automático para tareas de visión y procesamiento de medios en dispositivos y aplicaciones.
-**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear una interacción con manos; Prototipar visión en dispositivo
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Elige una tarea como landmarks de manos y revisa sus puntos en una muestra
+**Qué comprobar:** Puedes distinguir tarea, modelo y SDK
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `mmpose`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python
 
 **Qué es:** Herramientas y modelos de estimación de pose, incluidos RTMPose y otras variantes para analizar movimiento humano.
-**Stack:** Python
+**Stack:** Python; PyTorch y dependencias OpenMMLab compatibles; checkpoint
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Inferencia propia sin API de pago; datasets, modelos y GPU tienen condiciones independientes
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
-- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
-- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La documentación distingue versiones actuales y 0.x; no mezcles configuraciones y dependencias de líneas diferentes
+- Coste: Sin pago a un modelo en la ruta básica. Inferencia propia sin API de pago; datasets, modelos y GPU tienen condiciones independientes
+- Equipo: Preparación según la ruta elegida. Python; PyTorch y dependencias OpenMMLab compatibles; checkpoint
 **Repo:** https://github.com/open-mmlab/mmpose
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/open-mmlab/mmpose/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://mmpose.readthedocs.io/en/latest/installation.html
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Herramientas y modelos de estimación de pose, incluidos RTMPose y otras variantes para analizar movimiento humano.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+**Elige si:** Tu objetivo encaja con estos ejemplos: Comparar modelos de pose; Preparar una demo de análisis de movimiento
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Ejecuta una demo de pose y revisa articulaciones y confianza en una imagen conocida
+**Qué comprobar:** Puedes identificar configuración y resultado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `opencv`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vision,image,cpp,python
 
-**Qué es:** Procesamiento de imagen y video, detección, calibración de cámaras y más, en C++ y Python.
-**Stack:** C++, Python
+**Qué es:** La librería de visión por computadora de referencia, con miles de algoritmos.
+**Stack:** Paquete OpenCV para el lenguaje elegido; imagen pequeña
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Las operaciones básicas no necesitan modelos ni API; hardware y servicios de una app son independientes
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Es una biblioteca de visión por computador; no es un único modelo entrenado ni una aplicación de agentes
+- Coste: Sin pago a un modelo en la ruta básica. Las operaciones básicas no necesitan modelos ni API; hardware y servicios de una app son independientes
+- Equipo: Preparación según la ruta elegida. Paquete OpenCV para el lenguaje elegido; imagen pequeña
 **Repo:** https://github.com/opencv/opencv
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/opencv/opencv/blob/5.x/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/opencv/opencv/blob/5.x/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** necesitas procesamiento de imagen o video
-**Evita si:** necesitas detección de objetos moderna; mira `ultralytics`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar imágenes antes de OCR; Estudiar procesamiento visual básico
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Carga una imagen, cambia su tamaño y guarda una copia para comparar dimensiones
+**Qué comprobar:** Puedes comprobar entrada, transformación y salida
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ultralytics`, `supervision`
 
 ## `openpose`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,c
 
 **Qué es:** Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video.
-**Stack:** C++, CMakeLists.txt
+**Stack:** Plataforma compatible; dependencias de compilación; modelos; imagen autorizada
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Uso no comercial bajo su licencia; uso comercial requiere licencia propia; hardware separado
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
-- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
-- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Detecta keypoints y no mide clínicamente una postura ni garantiza seguimiento sin errores u oclusiones
+- Coste: El coste depende del proveedor o la ruta. Uso no comercial bajo su licencia; uso comercial requiere licencia propia; hardware separado
+- Equipo: Preparación según la ruta elegida. Plataforma compatible; dependencias de compilación; modelos; imagen autorizada
 **Repo:** https://github.com/CMU-Perceptual-Computing-Lab/openpose
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation/0_index.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Sistema de estimación de pose para detectar puntos del cuerpo, manos, rostro y pies en imágenes o video.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar estimación de postura; Preparar puntos de movimiento para una demo
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Procesa una imagen de muestra y revisa puntos de articulación visibles y ocultos
+**Qué comprobar:** Puedes identificar fallos de pose
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `ruview`
-role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=sensores,claude,claude-code,esp32,firmware,home-assistant,home-automation,iot
+role=platform · exec=local · setup=heavy · mcp=True · prov=— · tags=sensores,claude,claude-code,esp32,firmware,home-assistant,home-automation,iot
 
-**Qué es:** Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento. Procesa señales de radio y conecta componentes de detección con paneles y sistemas de domótica.
-**Stack:** Rust, pyproject.toml
+**Qué es:** Proyecto de detección espacial que experimenta con señales WiFi para estimar presencia y movimiento.
+**Stack:** Node para CLI; datos simulados para empezar; hardware CSI compatible para medir; calibración
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: API de IA opcional. La demo básica no exige API LLM; sensores, cómputo y agentes opcionales tienen costes propios
+- Claude Code: Integración documentada por el proyecto
+- Codex: Integración documentada por el proyecto
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: Modelos locales documentados. Documenta MCP y agentes Claude/Codex; el propio README distingue modelos preliminares, stubs y benchmarks separados; no es un dispositivo médico ni garantiza pose con cualquier router
+- Coste: El coste depende del proveedor o la ruta. La demo básica no exige API LLM; sensores, cómputo y agentes opcionales tienen costes propios
+- Equipo: Preparación según la ruta elegida. Node para CLI; datos simulados para empezar; hardware CSI compatible para medir; calibración
 **Repo:** https://github.com/ruvnet/RuView
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/ruvnet/RuView/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres investigar percepción mediante radiofrecuencia y sensores WiFi
-**Evita si:** no dispones de datos o hardware compatibles con el proyecto
+```
+# Check the local setup and get source-cited guidance
+npx @ruvnet/ruview@0.9.1 doctor
+npx @ruvnet/ruview@0.9.1 guidance --topic sensing --query "model loading"
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar sensado WiFi en laboratorio; Explorar una visualización espacial simulada
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Ejecuta doctor y examina una demo simulada antes de conectar sensores reales
+**Qué comprobar:** Puedes distinguir datos sintéticos, presencia medida y resultados experimentales
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `sam2`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=vision,video,python
 
-**Qué es:** Marca un objeto en un fotograma y SAM 2 lo sigue en todo el video. Más rápido que SAM en imágenes.
-**Stack:** Python, PyTorch
+**Qué es:** Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video.
+**Stack:** Python >=3.10; PyTorch >=2.5.1; checkpoint; GPU y compilación según ruta
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita API remota; cómputo, datos y componentes externos tienen condiciones propias
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La instalación puede compilar un kernel CUDA; sigue INSTALL.md para tu sistema y no confundas segmentación con reconocimiento semántico de cualquier objeto
+- Coste: Sin pago a un modelo en la ruta básica. No necesita API remota; cómputo, datos y componentes externos tienen condiciones propias
+- Equipo: Preparación según la ruta elegida. Python >=3.10; PyTorch >=2.5.1; checkpoint; GPU y compilación según ruta
 **Repo:** https://github.com/facebookresearch/sam2
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/facebookresearch/sam2/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** necesitas segmentar objetos en video
-**Evita si:** solo trabajas con imágenes sueltas; `segment-anything` basta
+```
+git clone https://github.com/facebookresearch/sam2.git && cd sam2
+
+pip install -e .
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Separar un objeto de un video; Preparar máscaras para edición
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Marca un objeto en un clip corto y revisa la máscara a lo largo de varios frames
+**Qué comprobar:** Puedes detectar pérdida de seguimiento o zonas mal segmentadas
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `label-studio`, `supervision`
 **Alternativas (elige una):** `segment-anything`
 
 ## `segment-anything`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=vision,image,python
 
-**Qué es:** Genera máscaras precisas sin entrenamiento para el objeto que indiques. Su sucesor SAM 2 añade video.
-**Stack:** Python, PyTorch
+**Qué es:** Modelo de Meta que segmenta cualquier objeto en una imagen a partir de un clic o una caja.
+**Stack:** Python; PyTorch; checkpoint; imagen de prueba; memoria suficiente
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Inferencia propia sin API de pago; hardware y datos separados
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El README remite a SAM 2 como versión nueva; segmentar a partir de un punto no garantiza reconocer correctamente cualquier objeto
+- Coste: Sin pago a un modelo en la ruta básica. Inferencia propia sin API de pago; hardware y datos separados
+- Equipo: Preparación según la ruta elegida. Python; PyTorch; checkpoint; imagen de prueba; memoria suficiente
 **Repo:** https://github.com/facebookresearch/segment-anything
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/facebookresearch/segment-anything/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** necesitas segmentar objetos en imágenes
-**Evita si:** trabajas con video; mira `sam2`
+```
+pip install git+https://github.com/facebookresearch/segment-anything.git
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar máscaras de una imagen; Estudiar segmentación asistida
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Indica un punto sobre un objeto y revisa la máscara propuesta
+**Qué comprobar:** Puedes comparar el contorno con la imagen
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `label-studio`
 **Alternativas (elige una):** `sam2`
 
 ## `supervision`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vision,python
 
-**Qué es:** Se conecta a cualquier detector y te da utilidades para dibujar, contar en zonas, seguir objetos y evaluar.
-**Stack:** Python
+**Qué es:** Herramientas reutilizables de Roboflow para visión: anotar, contar, rastrear y medir.
+**Stack:** Python; imagen y detecciones de prueba; modelo aparte si lo ejecutas
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: API de IA opcional. Las utilidades básicas no exigen API; el ejemplo con Roboflow Inference necesita clave y condiciones del servicio
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Supervision procesa resultados de modelos y no los reemplaza; la compatibilidad depende del adaptador y formato de detecciones
+- Coste: El coste depende del proveedor o la ruta. Las utilidades básicas no exigen API; el ejemplo con Roboflow Inference necesita clave y condiciones del servicio
+- Equipo: Preparación según la ruta elegida. Python; imagen y detecciones de prueba; modelo aparte si lo ejecutas
 **Repo:** https://github.com/roboflow/supervision
 
-**Instalación** [+]: `pip install supervision`
+**Instalación** [+]:
+
+```
+pip install supervision
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** construyes un proyecto de visión con detectores
-**Evita si:** solo necesitas procesar imágenes; mira `opencv`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Visualizar detecciones; Contar cruces en un video de prueba
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Dibuja cajas de detección de muestra y verifica coordenadas y etiquetas
+**Qué comprobar:** Puedes comprobar el resultado anotado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ultralytics`, `opencv`
 
 ## `tfjs-models`
 role=library · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,library,typescript
 
 **Qué es:** Colección de modelos preparados para TensorFlow.js que permite integrar tareas de aprendizaje automático en aplicaciones.
-**Stack:** TypeScript, package.json
+**Stack:** Proyecto JavaScript; modelo específico; navegador o runtime compatible
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita API de IA para modelos descargados; descarga, hosting y equipo tienen costes propios
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
-- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
-- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Cada modelo tiene su paquete, guía y licencia; no existe una instalación única que haga funcionar automáticamente toda la colección
+- Coste: Sin pago a un modelo en la ruta básica. No necesita API de IA para modelos descargados; descarga, hosting y equipo tienen costes propios
+- Equipo: Preparación según la ruta elegida. Proyecto JavaScript; modelo específico; navegador o runtime compatible
 **Repo:** https://github.com/tensorflow/tfjs-models
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/tensorflow/tfjs-models/blob/master/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/tensorflow/tfjs-models/blob/master/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Colección de modelos preparados para TensorFlow.js que permite integrar tareas de aprendizaje automático en aplicaciones.
-**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Elige si:** Tu objetivo encaja con estos ejemplos: Probar ML en el navegador; Preparar una demo de landmarks
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Elige un modelo de clasificación y revisa una predicción sobre una imagen conocida
+**Qué comprobar:** Puedes identificar paquete, pesos y formato de salida
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `ultralytics`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vision,training,python
 
-**Qué es:** Entrena un detector con tus datos en pocas líneas y expórtalo a ONNX, TensorRT o móvil.
-**Stack:** Python, PyTorch
+**Qué es:** Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar.
+**Stack:** Python; PyTorch; modelo y memoria compatibles; imagen de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Inferencia local sin API obligatoria; AGPL y licencia Enterprise tienen condiciones distintas y hardware aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La licencia se debe revisar para el uso previsto; un modelo rápido o preciso en benchmarks no garantiza igual resultado en tus imágenes
+- Coste: El coste depende del proveedor o la ruta. Inferencia local sin API obligatoria; AGPL y licencia Enterprise tienen condiciones distintas y hardware aparte
+- Equipo: Preparación según la ruta elegida. Python; PyTorch; modelo y memoria compatibles; imagen de prueba
 **Repo:** https://github.com/ultralytics/ultralytics
 
-**Instalación** [+]: `pip install ultralytics`
+**Instalación** [+]:
+
+```
+pip install ultralytics
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** necesitas detección de objetos práctica
-**Evita si:** necesitas licencia permisiva para producto cerrado; revisa su licencia
+**Elige si:** Tu objetivo encaja con estos ejemplos: Contar objetos de muestra; Probar segmentación en un prototipo
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Detecta objetos en una imagen y revisa dos cajas y sus etiquetas
+**Qué comprobar:** Puedes contrastar la detección con el contenido real
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `supervision`, `label-studio`
 
 ## `videopose3d`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python
 
 **Qué es:** Implementación de investigación para estimar pose humana 3D desde trayectorias de puntos 2D en secuencias de video.
-**Stack:** Python
+**Stack:** Python; PyTorch; keypoints 2D; checkpoint; datos compatibles
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Licencia CC BY-NC y datasets con condiciones propias; cómputo independiente
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
-- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
-- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Es investigación basada en trayectorias 2D y no una captura 3D métrica garantizada de cualquier video
+- Coste: El coste depende del proveedor o la ruta. Licencia CC BY-NC y datasets con condiciones propias; cómputo independiente
+- Equipo: Preparación según la ruta elegida. Python; PyTorch; keypoints 2D; checkpoint; datos compatibles
 **Repo:** https://github.com/facebookresearch/VideoPose3D
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/facebookresearch/VideoPose3D/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/facebookresearch/VideoPose3D/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Implementación de investigación para estimar pose humana 3D desde trayectorias de puntos 2D en secuencias de video.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar reconstrucción de pose; Explorar movimiento a partir de keypoints
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Reconstruye la secuencia de ejemplo y compara la pose 3D con sus puntos 2D
+**Qué comprobar:** Puedes reconocer la entrada requerida y ambigüedades de profundidad
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `wham`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=vision,model,python
 
 **Qué es:** Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video.
-**Stack:** Python
+**Stack:** Entorno de investigación; modelos SMPL y SMPLify con acceso; pesos; video autorizado
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Código MIT, con modelos corporales y datasets bajo condiciones independientes; GPU y almacenamiento aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
-- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
-- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El script de descarga necesita acceso a los modelos externos; MIT del código no concede automáticamente licencia de SMPL o de los datos
+- Coste: El coste depende del proveedor o la ruta. Código MIT, con modelos corporales y datasets bajo condiciones independientes; GPU y almacenamiento aparte
+- Equipo: Preparación según la ruta elegida. Entorno de investigación; modelos SMPL y SMPLify con acceso; pesos; video autorizado
 **Repo:** https://github.com/yohanshin/WHAM
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/yohanshin/WHAM/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/yohanshin/WHAM/blob/main/docs/INSTALL.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar movimiento humano 3D; Comparar reconstrucción antes y después de refinamiento
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Prepara la demo de un clip corto y revisa trayectoria y articulaciones reconstruidas
+**Qué comprobar:** Puedes distinguir estimación visual de una medición real
+Revisión documental individual; instalación no ejecutada por Alexandría.

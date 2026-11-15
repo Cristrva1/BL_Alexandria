@@ -16,58 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | API de IA opcional. Community, Enterprise y alojamiento tienen condiciones distintas; apps y servicios AI pueden añadir costes |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. La edición determina módulos y licencia; instalar el repositorio Community no incluye todas las funciones comerciales |
+| Coste | El coste depende del proveedor o la ruta. Community, Enterprise y alojamiento tienen condiciones distintas; apps y servicios AI pueden añadir costes |
+| Equipo | Preparación según la ruta elegida. Edición y versión elegidas; servidor y PostgreSQL; negocio ficticio |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La edición determina módulos y licencia; instalar el repositorio Community no incluye todas las funciones comerciales
 
 ## Qué puedes hacer con él
 
-Integra CRM, ventas, facturación, inventario, RR. HH. y sitio web en una sola plataforma modular. La usan pymes y grandes empresas en todo el mundo.
+Suite ERP y CRM de código abierto con módulos de ventas, inventario, contabilidad y web.
 
 ## Por qué destaca
 
-Ecosistema enorme de módulos y partners; cubre casi cualquier proceso de negocio.
+Usos propuestos: Evaluar un CRM para un negocio; Estudiar cómo se conectan ventas e inventario.
 
 ## Cómo funciona
 
-Un servidor Python con ORM propio sobre PostgreSQL carga módulos que añaden modelos, vistas y lógica.
+La edición determina módulos y licencia; instalar el repositorio Community no incluye todas las funciones comerciales
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/odoo/odoo/blob/20.0/README.md)
+- Edición y versión elegidas
+- servidor y PostgreSQL
+- negocio ficticio
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://www.odoo.com/documentation/master/administration/install/install.html)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Odoo para mi objetivo y necesito pasos guiados. Lee https://github.com/odoo/odoo/blob/20.0/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Odoo para mi objetivo y necesito pasos guiados. Lee https://www.odoo.com/documentation/master/administration/install/install.html. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Crea un contacto y una oportunidad ficticios y recorre sus etapas sin emitir documentos reales.
+
+**Qué comprobar:** Puedes comprobar campos, etapas y permisos del flujo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- CRM y ventas de una pyme
-- Inventario y facturación integrados
-- Portal de clientes
+- Evaluar un CRM para un negocio
+- Estudiar cómo se conectan ventas e inventario
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas un ERP completo con CRM integrado | solo quieres un CRM ligero; mira `twenty-main` |
+| Tu objetivo encaja con estos ejemplos: Evaluar un CRM para un negocio; Estudiar cómo se conectan ventas e inventario | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La edición Community no incluye varios módulos de la Enterprise (p. ej. contabilidad completa).
+**Limitaciones:** La edición determina módulos y licencia; instalar el repositorio Community no incluye todas las funciones comerciales
 
 ## Stack y modelos
 
-- **Stack:** Python, PostgreSQL, JavaScript
+- **Stack:** Edición y versión elegidas; servidor y PostgreSQL; negocio ficticio
 - **Etiquetas:** `crm` `python` `postgres`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -91,7 +107,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/odoo/odoo/blob/20.0/README.md)
 

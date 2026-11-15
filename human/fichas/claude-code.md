@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Puede utilizarse con sesión del plan compatible o con API key; no son la misma facturación. |
+| API de IA | API de IA opcional. El cliente oficial admite suscripción o cuenta Console según ruta; Ollama documenta modelos locales y nube separada |
 | Claude Code | Acceso oficial con sesión del plan |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La ruta local procede de la integración de Ollama y necesita modelos compatibles con herramientas; las funciones y el acceso no son idénticos a Claude alojado |
+| Coste | El coste depende del proveedor o la ruta. El cliente oficial admite suscripción o cuenta Console según ruta; Ollama documenta modelos locales y nube separada |
+| Equipo | Preparación según la ruta elegida. Equipo compatible; terminal; cuenta de Claude o proveedor elegido; carpeta de prueba |
 
-La sesión oficial del plan y una API key son rutas de autenticación distintas. Elegir una y consultar los límites del plan.
+La ruta local procede de la integración de Ollama y necesita modelos compatibles con herramientas; las funciones y el acceso no son idénticos a Claude alojado
 
 ## Qué puedes hacer con él
 
-Lee y edita archivos, ejecuta comandos, hace commits y abre PRs a partir de instrucciones en lenguaje natural. Se extiende con skills, plugins, subagentes, hooks y servidores MCP.
+Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio.
 
 ## Por qué destaca
 
-Referencia en agentes de código por su autonomía en tareas largas y su ecosistema de skills y plugins.
+Usos propuestos: Entender código sin editar; Preparar una propuesta de corrección.
 
 ## Cómo funciona
 
-Un bucle agéntico con Claude decide qué herramientas usar (leer, editar, bash, MCP) y pide permiso según el modo configurado.
+La ruta local procede de la integración de Ollama y necesita modelos compatibles con herramientas; las funciones y el acceso no son idénticos a Claude alojado
 
 ## Cómo empezar
 
@@ -43,19 +44,23 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un sistema compatible y acceso a Claude Code mediante plan o API, según la ruta elegida.
+- Equipo compatible
+- terminal
+- cuenta de Claude o proveedor elegido
+- carpeta de prueba
 
-1. Sigue el instalador oficial para tu sistema; el comando mostrado corresponde a Windows.
-2. Ejecuta Claude Code y autentícate con el plan o con la cuenta de API que quieras consumir.
-3. Abre un proyecto de prueba y comprueba el método de acceso antes de trabajar con tareas largas.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-**Comando de entrada documentado:**
+**Entrada documentada (powershell):**
 
-```shell
+```
 winget install Anthropic.ClaudeCode
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/anthropics/claude-code/blob/main/README.md)
 
@@ -63,23 +68,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar Claude Code para mi objetivo y necesito pasos guiados. Lee https://github.com/anthropics/claude-code/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Instala el CLI para tu sistema, comprueba la versión y pide explicar un archivo sin modificarlo.
+
+**Qué comprobar:** Puedes revisar el archivo citado y la configuración de acceso.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Implementar funciones completas con tests
-- Migrar o refactorizar código grande
-- Automatizar tareas con skills y hooks
+- Entender código sin editar
+- Preparar una propuesta de corrección
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres el agente de código más capaz para tareas largas en tu repo | necesitas un agente totalmente abierto y multi-modelo; mira `opencode` |
+| Tu objetivo encaja con estos ejemplos: Entender código sin editar; Preparar una propuesta de corrección | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Requiere suscripción o clave de API de Anthropic; el código no es open source.
+**Limitaciones:** La ruta local procede de la integración de Ollama y necesita modelos compatibles con herramientas; las funciones y el acceso no son idénticos a Claude alojado
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Node.js
+- **Stack:** Equipo compatible; terminal; cuenta de Claude o proveedor elegido; carpeta de prueba
 - **Etiquetas:** `coding-agent` `agents` `mcp` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -97,7 +109,7 @@ Comando presente en el README revisado; no es una prueba de instalación.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
-| [Gemini CLI](gemini-cli.md) | 109k | Agente de IA open source de Google que lleva Gemini a tu terminal, con cuota gratuita generosa. |
+| [Gemini CLI](gemini-cli.md) | 109k | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. |
 | [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 | [goose](goose.md) | 56.6k | Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM. |
 
@@ -110,10 +122,13 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/anthropics/claude-code/blob/main/README.md)
-- [Fuente 2](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-max-or-ultra-plan)
+- [Fuente 2](https://code.claude.com/docs/en/overview)
+- [Fuente 3](https://docs.ollama.com/integrations/claude-code)
 
 ---
 

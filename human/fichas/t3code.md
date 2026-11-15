@@ -16,65 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
+| API de IA | API de IA opcional. El proyecto dice no revender tokens; usa las cuentas y cuotas de los agentes ya configurados |
 | Claude Code | Integración documentada por el proyecto |
 | Codex | Integración documentada por el proyecto |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
-| Otras rutas | El README lista otros agentes y adaptadores ACP. T3 Code coordina esos agentes; cada uno conserva su autenticación y sus límites. |
+| Antigravity | Integración documentada por el proyecto |
+| Modelos locales | Modelo local no documentado. Documenta Claude Code, Codex y Antigravity entre sus proveedores; acceso remoto requiere configuración propia y no ejecuta los agentes en el teléfono |
+| Coste | El coste depende del proveedor o la ruta. El proyecto dice no revender tokens; usa las cuentas y cuotas de los agentes ya configurados |
+| Equipo | Preparación según la ruta elegida. Un agente instalado y autenticado; equipo que permanezca disponible; proyecto de prueba |
 
-El README documenta una integración con las sesiones de los agentes indicados. Configurar esa ruta y comprobar sus límites; otras rutas pueden facturar por API.
+Documenta Claude Code, Codex y Antigravity entre sus proveedores; acceso remoto requiere configuración propia y no ejecuta los agentes en el teléfono
 
 ## Qué puedes hacer con él
 
-No sustituye al agente: orquesta Claude Code, Codex y otros desde una UI cómoda, también en el móvil. Útil para lanzar y revisar sesiones a distancia.
+Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina.
 
 ## Por qué destaca
 
-Une varios agentes en una sola superficie de control, con apps para iOS, Android, web y escritorio.
+Usos propuestos: Controlar una sesión desde otro dispositivo; Comparar trabajo de Claude Code y Codex.
 
 ## Cómo funciona
 
-Un servicio en tu equipo habla con los CLIs de agentes instalados y expone sesiones a los clientes de T3 Code.
+Documenta Claude Code, Codex y Antigravity entre sus proveedores; acceso remoto requiere configuración propia y no ejecuta los agentes en el teléfono
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Un agente instalado y autenticado
+- equipo que permanezca disponible
+- proyecto de prueba
 
-```shell
-npx t3@latest
-```
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
-[Instrucciones originales de instalación](https://github.com/pingdotgg/t3code/blob/main/README.md)
+[Instrucciones originales de instalación](https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar T3 Code para mi objetivo y necesito pasos guiados. Lee https://github.com/pingdotgg/t3code/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar T3 Code para mi objetivo y necesito pasos guiados. Lee https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Conecta un agente local y pide explicar un archivo; revisa sus permisos desde la interfaz.
+
+**Qué comprobar:** La sesión refleja el agente y puedes comprobar el archivo consultado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Revisar agentes desde el móvil
-- Lanzar varias sesiones en paralelo
-- Una UI para Claude Code y Codex
+- Controlar una sesión desde otro dispositivo
+- Comparar trabajo de Claude Code y Codex
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| usas varios agentes de código y quieres controlarlos desde una UI | solo usas un agente en la terminal |
+| Tu objetivo encaja con estos ejemplos: Controlar una sesión desde otro dispositivo; Comparar trabajo de Claude Code y Codex | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Documenta Claude Code, Codex y Antigravity entre sus proveedores; acceso remoto requiere configuración propia y no ejecuta los agentes en el teléfono
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Electron, React Native
+- **Stack:** Un agente instalado y autenticado; equipo que permanezca disponible; proyecto de prueba
 - **Etiquetas:** `coding-agent` `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -93,7 +102,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/pingdotgg/t3code/blob/main/README.md)
 

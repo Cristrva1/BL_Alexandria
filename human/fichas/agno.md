@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 43.2k | Apache-2.0 | Python | 2026-11-10 |
 
-**Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
+**Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,56 +16,75 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| API de IA | Depende de la ruta elegida. El MCP de documentación no requiere autenticación; plataforma, nube y modelos pueden costar; los ingenieros Claude/Codex usan claves API |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelo local no documentado. MCP HTTP accesible desde los tres clientes; no significa que sus planes paguen los agentes desplegados |
+| Coste | El coste depende del proveedor o la ruta. El MCP de documentación no requiere autenticación; plataforma, nube y modelos pueden costar; los ingenieros Claude/Codex usan claves API |
+| Equipo | Preparación según la ruta elegida. Python; plantilla; PostgreSQL; proveedor de modelos |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+MCP HTTP accesible desde los tres clientes; no significa que sus planes paguen los agentes desplegados
 
 ## Qué puedes hacer con él
 
-Construye agentes con memoria, RAG y herramientas, y sírvelos como API con su plataforma. Antes se llamaba Phidata.
+Framework y runtime de agentes en Python con memoria, conocimiento y equipos multiagente.
 
 ## Por qué destaca
 
-Muy rápido al instanciar agentes y con muchas integraciones listas.
+Usos propuestos: Servir un agente mediante una API; Investigar fallos mediante trazas.
 
 ## Cómo funciona
 
-Agentes y equipos se declaran en Python; un servidor FastAPI los expone con almacenamiento de sesiones y memoria.
+MCP HTTP accesible desde los tres clientes; no significa que sus planes paguen los agentes desplegados
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/agno-agi/agno/blob/main/README.md)
+- Python
+- plantilla
+- PostgreSQL
+- proveedor de modelos
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://docs.agno.com/agent-platform/overview)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Agno para mi objetivo y necesito pasos guiados. Lee https://github.com/agno-agi/agno/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Agno para mi objetivo y necesito pasos guiados. Lee https://docs.agno.com/agent-platform/overview. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Conecta el MCP de documentación y pide que explique el montaje de la plataforma local.
+
+**Qué comprobar:** El agente consulta la guía y enumera servicios y credenciales necesarios.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Agentes con memoria persistente
-- Equipos de agentes que colaboran
-- APIs de agentes para producción
+- Servir un agente mediante una API
+- Investigar fallos mediante trazas
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres un framework de agentes con memoria y API lista | necesitas grafos explícitos y controlables; mira `langgraph` |
+| Tu objetivo encaja con estos ejemplos: Servir un agente mediante una API; Investigar fallos mediante trazas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** MCP HTTP accesible desde los tres clientes; no significa que sus planes paguen los agentes desplegados
 
 ## Stack y modelos
 
-- **Stack:** Python, FastAPI
+- **Stack:** Python; plantilla; PostgreSQL; proveedor de modelos
 - **Etiquetas:** `agents` `memory` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,9 +108,14 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/agno-agi/agno/blob/main/README.md)
+- [Fuente 2](https://docs.agno.com/coding-agents)
+- [Fuente 3](https://docs.agno.com/agent-platform/coding-agents)
+- [Fuente 4](https://antigravity.google/docs/ide-mcp)
 
 ---
 

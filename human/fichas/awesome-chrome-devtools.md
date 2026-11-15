@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Consultar la lista no usa IA; cada proyecto enlazado tiene sus condiciones |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Un directorio que enlaza servidores MCP no es por sí mismo un servidor ni una integración con un agente |
+| Coste | Sin pago a un modelo en la ruta básica. Consultar la lista no usa IA; cada proyecto enlazado tiene sus condiciones |
+| Equipo | Preparación según la ruta elegida. Navegador; necesidad de depuración o automatización |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Un directorio que enlaza servidores MCP no es por sí mismo un servidor ni una integración con un agente
 
 ## Qué puedes hacer con él
 
-Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol. Agrupa depuradores, visores de trazas y clientes del protocolo para localizar una herramienta adecuada.
+Directorio de herramientas, clientes y recursos del ecosistema de Chrome DevTools y Chrome DevTools Protocol.
 
 ## Por qué destaca
 
-Buscas utilidades para depurar o automatizar Chrome.
+Usos propuestos: Encontrar una herramienta de depuración; Explorar clientes de DevTools Protocol.
 
 ## Cómo funciona
 
-Agrupa depuradores, visores de trazas y clientes del protocolo para localizar una herramienta adecuada.
+Un directorio que enlaza servidores MCP no es por sí mismo un servidor ni una integración con un agente
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- necesidad de depuración o automatización
+
+1. Escoge una herramienta de CDP y revisa su repositorio y función antes de instalar.
+2. Comprueba: Puedes distinguir protocolo, cliente y extensión.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/ChromeDevTools/awesome-chrome-devtools/blob/master/readme.md)
 
@@ -51,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar awesome-chrome-devtools para mi objetivo y necesito pasos guiados. Lee https://github.com/ChromeDevTools/awesome-chrome-devtools/blob/master/readme.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Escoge una herramienta de CDP y revisa su repositorio y función antes de instalar.
+
+**Qué comprobar:** Puedes distinguir protocolo, cliente y extensión.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Buscas utilidades para depurar o automatizar Chrome
+- Encontrar una herramienta de depuración
+- Explorar clientes de DevTools Protocol
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas utilidades para depurar o automatizar Chrome | la fuente ya ofrece una API o un archivo de datos suficiente |
+| Tu objetivo encaja con estos ejemplos: Encontrar una herramienta de depuración; Explorar clientes de DevTools Protocol | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Es un catálogo; cada herramienta tiene mantenimiento y requisitos propios.
+**Limitaciones:** Un directorio que enlaza servidores MCP no es por sí mismo un servidor ni una integración con un agente
 
 ## Stack y modelos
 
-- **Stack:** Node.js
+- **Stack:** Navegador; necesidad de depuración o automatización
 - **Etiquetas:** `navegador` `awesome` `awesome-list`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +92,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ChromeDevTools/awesome-chrome-devtools/blob/master/readme.md)
 

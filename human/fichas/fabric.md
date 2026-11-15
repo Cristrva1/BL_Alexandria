@@ -16,34 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
+| API de IA | API de IA opcional. Ollama y LM Studio permiten modelos locales; API por consumo o backends de Claude Code y Codex con sus cuentas y límites |
+| Claude Code | Integración documentada por el proyecto |
 | Codex | Integración documentada por el proyecto |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. El proyecto documenta un backend de OAuth de Codex; es una integración del proyecto, no una garantía general para otras apps. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Las rutas de suscripción son adaptadores del proyecto; Codex usa un backend privado y no garantiza continuidad ni cobertura de todo plan |
+| Coste | El coste depende del proveedor o la ruta. Ollama y LM Studio permiten modelos locales; API por consumo o backends de Claude Code y Codex con sus cuentas y límites |
+| Equipo | Preparación según la ruta elegida. Go o instalador para tu sistema; proveedor o CLI autenticado; texto breve propio |
 
-El README documenta una integración con las sesiones de los agentes indicados. Configurar esa ruta y comprobar sus límites; otras rutas pueden facturar por API.
+Las rutas de suscripción son adaptadores del proyecto; Codex usa un backend privado y no garantiza continuidad ni cobertura de todo plan
 
 ## Qué puedes hacer con él
 
-Organiza prompts reutilizables (patterns) para tareas como resumir videos, extraer ideas o analizar textos. Se encadena con pipes en la terminal.
+CLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal.
 
 ## Por qué destaca
 
-Biblioteca comunitaria de patrones muy cuidada y uso cómodo con pipes de Unix.
+Usos propuestos: Extraer acciones de una reunión; Convertir notas en un esquema de artículo.
 
 ## Cómo funciona
 
-Un binario Go envía el texto de entrada junto con el pattern elegido al proveedor LLM configurado.
+Las rutas de suscripción son adaptadores del proyecto; Codex usa un backend privado y no garantiza continuidad ni cobertura de todo plan
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Go o instalador para tu sistema
+- proveedor o CLI autenticado
+- texto breve propio
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (shell):**
+
+```
+go install github.com/danielmiessler/fabric/cmd/fabric@latest
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/danielmiessler/Fabric/blob/main/README.md)
 
@@ -51,21 +67,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Fabric para mi objetivo y necesito pasos guiados. Lee https://github.com/danielmiessler/Fabric/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Configura un proveedor y aplica un patrón de resumen a una nota breve que ya conozcas.
+
+**Qué comprobar:** Obtienes un resumen que puedes contrastar con la nota original.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Resumir transcripciones de YouTube
-- Extraer ideas clave de artículos
-- Prompts reutilizables en scripts
+- Extraer acciones de una reunión
+- Convertir notas en un esquema de artículo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres prompts reutilizables desde la terminal | buscas solo una lista de prompts para copiar; mira `prompts-chat` |
+| Tu objetivo encaja con estos ejemplos: Extraer acciones de una reunión; Convertir notas en un esquema de artículo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Las rutas de suscripción son adaptadores del proyecto; Codex usa un backend privado y no garantiza continuidad ni cobertura de todo plan
 
 ## Stack y modelos
 
-- **Stack:** Go, Markdown
+- **Stack:** Go o instalador para tu sistema; proveedor o CLI autenticado; texto breve propio
 - **Etiquetas:** `prompts` `automation` `go`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,7 +114,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/danielmiessler/Fabric/blob/main/README.md)
 

@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción. | Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. |
 | ⭐ Estrellas | 18.4k | 32.8k |
-| Elígelo si… | quieres extraer datos web sin programar | quieres estructura semántica "by prompt" en Python |
-| Evítalo si… | programas y prefieres librerías; mira `crawl4ai` o `scrapy` | te basta un esquema simple (llm-scraper) o el coste de LLM por página es alto |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Convertir un listado en datos consultables; Monitorear cambios de un catálogo | Tu objetivo encaja con estos ejemplos: Extraer fichas de productos; Transformar artículos en registros estructurados |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🔀 híbrido |
-| API de IA | Depende de la ruta elegida | Sin API de IA en la ruta básica |
-| Coste | El coste depende del proveedor o la ruta | Sin pago a un modelo en la ruta básica |
-| Modelos locales | Modelo local no documentado | Modelos locales documentados |
+| API de IA | API de IA opcional | Depende de la ruta elegida |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | AGPL-3.0 | MIT |
-| Instalación | `docker compose up -d` | `pip install scrapegraphai` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **Maxun** si quieres extraer datos web sin programar.
-- Elige **Scrapegraph-ai** si quieres estructura semántica "by prompt" en Python.
+- Elige **Maxun** si Tu objetivo encaja con estos ejemplos: Convertir un listado en datos consultables; Monitorear cambios de un catálogo.
+- Elige **Scrapegraph-ai** si Tu objetivo encaja con estos ejemplos: Extraer fichas de productos; Transformar artículos en registros estructurados.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

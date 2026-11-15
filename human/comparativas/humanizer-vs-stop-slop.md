@@ -4,22 +4,22 @@
 
 | | [Humanizer](../fichas/humanizer.md) | [Stop Slop](../fichas/stop-slop.md) |
 |---|---|---|
-| Qué hace | Skill que reescribe texto generado por IA para que suene humano, basada en la guía de Wikipedia sobre señales de escritura IA. | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. |
+| Qué hace | Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana. | Skill con reglas para eliminar las señales de escritura IA: frases prohibidas, estructuras cliché y una rúbrica de calidad. |
 | ⭐ Estrellas | 69.1k | 18.9k |
-| Elígelo si… | publicas textos redactados con IA y quieres que se lean como escritos por una persona | quieres reglas de estilo compactas y portables que puedas usar como skill o dentro de un system prompt |
-| Evítalo si… | quieres reglas de estilo cortas para pegar en un system prompt, con rúbrica propia; mira `stop-slop` | prefieres una skill que reescriba mostrando su proceso y pueda imitar tu voz; mira `humanizer` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Mejorar claridad de un correo; Revisar prosa repetitiva | Tu objetivo encaja con estos ejemplos: Reducir frases vagas; Revisar un borrador antes de publicarlo |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🔀 híbrido | 🔀 híbrido |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
 | Coste | Consumo del agente que ya utilizas | Consumo del agente que ya utilizas |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | MIT |
-| Instalación | `/plugin marketplace add blader/humanizer` | `git clone https://github.com/hardikpandya/stop-slop ~/.claude/skills/stop-slop` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## Regla práctica
 
-- Elige **Humanizer** si publicas textos redactados con IA y quieres que se lean como escritos por una persona.
-- Elige **Stop Slop** si quieres reglas de estilo compactas y portables que puedas usar como skill o dentro de un system prompt.
+- Elige **Humanizer** si Tu objetivo encaja con estos ejemplos: Mejorar claridad de un correo; Revisar prosa repetitiva.
+- Elige **Stop Slop** si Tu objetivo encaja con estos ejemplos: Reducir frases vagas; Revisar un borrador antes de publicarlo.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

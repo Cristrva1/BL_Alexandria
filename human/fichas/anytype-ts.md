@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No necesita modelo; sincronización y planes tienen condiciones propias; el código usa ASAL-1.0 |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es source-available con licencia específica; construir el cliente desde fuente requiere también middleware y motor, no solo bun install |
+| Coste | El coste depende del proveedor o la ruta. No necesita modelo; sincronización y planes tienen condiciones propias; el código usa ASAL-1.0 |
+| Equipo | Preparación según la ruta elegida. Instalador de escritorio para tu sistema; espacio local; cuenta según ruta |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Es source-available con licencia específica; construir el cliente desde fuente requiere también middleware y motor, no solo bun install
 
 ## Qué puedes hacer con él
 
 Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal.
 
+## Por qué destaca
+
+Usos propuestos: Organizar notas y proyectos personales; Diseñar una colección con campos propios.
+
 ## Cómo funciona
 
-La aplicación ofrece las herramientas de su interfaz o CLI después de preparar la distribución y sus dependencias.
+Es source-available con licencia específica; construir el cliente desde fuente requiere también middleware y motor, no solo bun install
 
 ## Cómo empezar
 
@@ -39,35 +44,45 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un sistema compatible y una copia de datos o archivos para la primera prueba.
+- Instalador de escritorio para tu sistema
+- espacio local
+- cuenta según ruta
 
-1. Elige el instalador de Anytype para tu sistema en las descargas del proyecto.
-2. Crea un espacio de prueba y añade unas notas y relaciones para entender su modelo de objetos.
-3. Revisa exportación, sincronización y opciones de cuenta antes de trasladar tu información.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/anyproto/anytype-ts/blob/develop/README.md)
-
-[Abrir la web o descarga indicada por el autor](https://github.com/anyproto/anytype-ts/releases)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
 > Quiero usar Anytype Desktop para mi objetivo y necesito pasos guiados. Lee https://github.com/anyproto/anytype-ts/blob/develop/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Crea dos objetos de prueba y relaciónalos en una vista sin añadir datos privados.
+
+**Qué comprobar:** Puedes navegar de un objeto al otro y revisar dónde se guardan.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal.
+- Organizar notas y proyectos personales
+- Diseñar una colección con campos propios
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Organizar notas y proyectos personales; Diseñar una colección con campos propios | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Es source-available con licencia específica; construir el cliente desde fuente requiere también middleware y motor, no solo bun install
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, go.mod, package.json
+- **Stack:** Instalador de escritorio para tu sistema; espacio local; cuenta según ruta
 - **Etiquetas:** `notas` `app` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -84,7 +99,9 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/anyproto/anytype-ts/blob/develop/README.md)
 

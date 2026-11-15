@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 60.6k | MIT | Python | 2026-06-23 |
 
-**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,51 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
-| Claude Code | Dentro del agente: skills o instrucciones |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | Consumo del agente que ya utilizas. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. La ruta básica usa embeddings locales sin API; proveedores opcionales de embeddings pueden costar; no necesita LLM generativo para buscar |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. El primer uso descarga el modelo; montar archivos en Docker es necesario para que pueda leerlos; los porcentajes de benchmark son del autor |
+| Coste | El coste depende del proveedor o la ruta. La ruta básica usa embeddings locales sin API; proveedores opcionales de embeddings pueden costar; no necesita LLM generativo para buscar |
+| Equipo | Preparación según la ruta elegida. Python o Docker; modelo de embeddings descargado; directorio de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El primer uso descarga el modelo; montar archivos en Docker es necesario para que pueda leerlos; los porcentajes de benchmark son del autor
 
 ## Qué puedes hacer con él
 
-Resuelve la memoria privada: cero llamadas a API, tus textos no salen de tu máquina.
+Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin enviar datos a servicios externos.
 
 ## Por qué destaca
 
-Prioriza la privacidad total (cero llamadas a API) reportando recall competitivo en benchmarks de memoria de largo plazo. Su diseño verbatim evita la pérdida de detalle que sufren los enfoques que resumen con un LLM remoto.
+Usos propuestos: Recuperar decisiones antiguas; Consultar archivos de contexto sin resúmenes destructivos.
 
 ## Cómo funciona
 
-Guarda los textos verbatim y los recupera mediante un backend de búsqueda conectable, sin depender de un LLM remoto para almacenar ni para indexar; el backend se puede cambiar según tus necesidades.
+El primer uso descarga el modelo; montar archivos en Docker es necesario para que pueda leerlos; los porcentajes de benchmark son del autor
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python o Docker
+- modelo de embeddings descargado
+- directorio de prueba
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+python -m venv .venv && source .venv/bin/activate
+pip install mempalace
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/MemPalace/mempalace/blob/develop/README.md)
 
@@ -51,21 +68,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar mempalace para mi objetivo y necesito pasos guiados. Lee https://github.com/MemPalace/mempalace/blob/develop/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Indexa dos notas propias y busca una decisión con palabras distintas a las originales.
+
+**Qué comprobar:** Puedes abrir el fragmento literal y comprobar su origen.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Memoria privada para agentes
-- Recuerdo de largo plazo sin enviar datos a la nube
-- Casos con requisitos de confidencialidad (sanidad, legal)
+- Recuperar decisiones antiguas
+- Consultar archivos de contexto sin resúmenes destructivos
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| la privacidad es prioridad y no quieres llamadas a API | quieres un SaaS gestionado con escalado automático o integraciones de framework ya hechas (mem0) |
+| Tu objetivo encaja con estos ejemplos: Recuperar decisiones antiguas; Consultar archivos de contexto sin resúmenes destructivos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El primer uso descarga el modelo; montar archivos en Docker es necesario para que pueda leerlos; los porcentajes de benchmark son del autor
 
 ## Stack y modelos
 
-- **Stack:** Python (PyPI)
+- **Stack:** Python o Docker; modelo de embeddings descargado; directorio de prueba
 - **Etiquetas:** `memory` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,9 +109,12 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/MemPalace/mempalace/blob/develop/README.md)
+- [Fuente 2](https://antigravity.google/docs/ide-mcp)
 
 ---
 

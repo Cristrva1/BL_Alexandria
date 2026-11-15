@@ -22,13 +22,13 @@ flowchart LR
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [ui](../fichas/ui.md) | Componentes accesibles que copias a tu código (shadcn/ui) | 128k | `npx shadcn@latest init` |
-| 2 | [tailwindcss](../fichas/tailwindcss.md) | Estilos utilitarios | 98.6k | `npm i tailwindcss` |
-| 3 | [AI SDK (Vercel)](../fichas/vercel-ai.md) | AI SDK: streaming, tools y llamadas a cualquier LLM | 28k | `npm i ai` |
-| 4 | [assistant-ui](../fichas/assistant-ui.md) | Componentes de chat listos para conectar al AI SDK | 13.2k | `npx assistant-ui@latest init` |
-| 5 | [motion](../fichas/motion.md) | Animaciones e interacciones | 35.2k | `npm i motion` |
-| 6 | [Recharts](../fichas/recharts.md) | Gráficos para dashboards | 27.7k | `npm i recharts` |
-| 7 | [swr](../fichas/swr.md) | Fetching y caché de datos en React | 32.5k | `npm i swr` |
+| 1 | [ui](../fichas/ui.md) | Componentes accesibles que copias a tu código (shadcn/ui) | 128k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 2 | [tailwindcss](../fichas/tailwindcss.md) | Estilos utilitarios | 98.6k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 3 | [AI SDK (Vercel)](../fichas/vercel-ai.md) | AI SDK: streaming, tools y llamadas a cualquier LLM | 28k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 4 | [assistant-ui](../fichas/assistant-ui.md) | Componentes de chat listos para conectar al AI SDK | 13.2k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 5 | [motion](../fichas/motion.md) | Animaciones e interacciones | 35.2k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 6 | [Recharts](../fichas/recharts.md) | Gráficos para dashboards | 27.7k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 7 | [swr](../fichas/swr.md) | Fetching y caché de datos en React | 32.5k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## 🔌 Cómo se conecta
 

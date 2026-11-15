@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El método es abierto; cada agente y sus modelos conservan su forma de pago |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. El README distingue la versión estable del preview V7. Los comandos seleccionados son del preview: pueden cambiar y no deben mezclarse con la guía estable |
+| Coste | Consumo del agente que ya utilizas. El método es abierto; cada agente y sus modelos conservan su forma de pago |
+| Equipo | Preparación según la ruta elegida. Node.js, Git y uv;  cliente compatible con Agent Skills |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+El README distingue la versión estable del preview V7. Los comandos seleccionados son del preview: pueden cambiar y no deben mezclarse con la guía estable
 
 ## Qué puedes hacer con él
 
-Organiza el trabajo con IA en roles y documentos (brief, PRD, arquitectura, historias) que el agente de código sigue paso a paso. Útil para proyectos medianos donde los prompts sueltos se pierden.
+Metodología ágil con agentes especializados (analista, PM, arquitecto, dev) para desarrollar con IA.
 
 ## Por qué destaca
 
-Muy adoptado en la comunidad; da estructura de equipo ágil a un agente de código.
+Usos propuestos: Convertir una idea de producto en un primer cambio acotado; Revisar requisitos y decisiones antes de implementar una función.
 
 ## Cómo funciona
 
-Instala agentes y flujos en tu proyecto; cada rol produce artefactos que alimentan al siguiente.
+El README distingue la versión estable del preview V7. Los comandos seleccionados son del preview: pueden cambiar y no deben mezclarse con la guía estable
 
 ## Cómo empezar
 
@@ -43,11 +44,22 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Node.js, Git y uv
+-  cliente compatible con Agent Skills
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+npx skills add bmad-code-org/BMAD-METHOD/skills/core-tools --skill '*'
+npx skills add bmad-code-org/BMAD-METHOD/skills/method --skill '*'
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/README.md)
 
@@ -55,21 +67,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar BMAD Method para mi objetivo y necesito pasos guiados. Lee https://github.com/bmad-code-org/BMAD-METHOD/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Instala los módulos de la ruta elegida y pide configurar una primera mejora pequeña.
+
+**Qué comprobar:** El agente identifica el método y deja un plan o artefacto de trabajo revisable.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Pasar de idea a PRD y arquitectura
-- Dividir un proyecto en historias
-- Mantener contexto en proyectos largos
+- Convertir una idea de producto en un primer cambio acotado
+- Revisar requisitos y decisiones antes de implementar una función
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres un proceso completo de producto a código con agentes | prefieres algo ligero centrado en especificaciones; mira `spec-kit` |
+| Tu objetivo encaja con estos ejemplos: Convertir una idea de producto en un primer cambio acotado; Revisar requisitos y decisiones antes de implementar una función | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El README distingue la versión estable del preview V7. Los comandos seleccionados son del preview: pueden cambiar y no deben mezclarse con la guía estable
 
 ## Stack y modelos
 
-- **Stack:** Markdown, Node.js
+- **Stack:** Node.js, Git y uv;  cliente compatible con Agent Skills
 - **Etiquetas:** `coding-agent` `skills` `agents`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -92,9 +113,12 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/README.md)
+- [Fuente 2](https://github.com/vercel-labs/skills/blob/main/docs/agents.md)
 
 ---
 

@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El CLI no incluye el modelo; los encargos consumen el acceso del agente elegido |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. La guía actual usa integration y claves claude, codex y agy; no reutilizar comandos de versiones antiguas sin comprobarlos |
+| Coste | Consumo del agente que ya utilizas. El CLI no incluye el modelo; los encargos consumen el acceso del agente elegido |
+| Equipo | Preparación según la ruta elegida. Python y uv según la guía;  un agente con integración soportada |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+La guía actual usa integration y claves claude, codex y agy; no reutilizar comandos de versiones antiguas sin comprobarlos
 
 ## Qué puedes hacer con él
 
-Te guía para escribir especificación, plan y tareas antes de que el agente programe. Funciona con Copilot, Claude Code, Gemini CLI y otros.
+Kit de GitHub para desarrollo guiado por especificaciones con agentes de código.
 
 ## Por qué destaca
 
-Respaldo oficial de GitHub y un flujo simple que mejora mucho la calidad del código generado.
+Usos propuestos: Especificar una función con requisitos y criterios de aceptación; Mantener un flujo común en un equipo que usa agentes diferentes.
 
 ## Cómo funciona
 
-El CLI `specify` crea plantillas y comandos (/specify, /plan, /tasks) que tu agente ejecuta por fases.
+La guía actual usa integration y claves claude, codex y agy; no reutilizar comandos de versiones antiguas sin comprobarlos
 
 ## Cómo empezar
 
@@ -43,33 +44,45 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Python y uv según la guía
+-  un agente con integración soportada
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-[Instrucciones originales de instalación](https://github.com/github/spec-kit/blob/main/README.md)
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://github.github.io/spec-kit/installation.html)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Spec Kit para mi objetivo y necesito pasos guiados. Lee https://github.com/github/spec-kit/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Spec Kit para mi objetivo y necesito pasos guiados. Lee https://github.github.io/spec-kit/installation.html. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Inicializa un proyecto de prueba y selecciona su integración antes de crear una especificación.
+
+**Qué comprobar:** El proyecto contiene el scaffolding y los comandos o skills de ese agente.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Arrancar un proyecto nuevo con especificación
-- Dividir una función grande en tareas
-- Alinear a varios agentes
+- Especificar una función con requisitos y criterios de aceptación
+- Mantener un flujo común en un equipo que usa agentes diferentes
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres que el agente siga una especificación antes de programar | buscas roles completos de equipo ágil; mira `bmad-method` |
+| Tu objetivo encaja con estos ejemplos: Especificar una función con requisitos y criterios de aceptación; Mantener un flujo común en un equipo que usa agentes diferentes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** La guía actual usa integration y claves claude, codex y agy; no reutilizar comandos de versiones antiguas sin comprobarlos
 
 ## Stack y modelos
 
-- **Stack:** Python, Markdown
+- **Stack:** Python y uv según la guía;  un agente con integración soportada
 - **Etiquetas:** `coding-agent` `skills` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -79,7 +92,7 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 |---|---:|---|
 | [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 | [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
-| [Gemini CLI](gemini-cli.md) | 109k | Agente de IA open source de Google que lleva Gemini a tu terminal, con cuota gratuita generosa. |
+| [Gemini CLI](gemini-cli.md) | 109k | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. |
 
 ## Alternativas (elige una)
 
@@ -94,9 +107,12 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/github/spec-kit/blob/main/README.md)
+- [Fuente 2](https://github.github.io/spec-kit/integrations/index.html)
 
 ---
 

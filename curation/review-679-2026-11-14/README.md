@@ -1,0 +1,17 @@
+# Revisión editorial individual
+
+Cada fila de `reviews*.psv` representa una decisión individual después de leer su paquete de fuentes primarias. Se completaron **679 decisiones para 679 identidades públicas**,sin pendientes. La fecha del directorio corresponde al inicio del trabajo; el registro usa el 15 de noviembre de 2026. Los archivos no son una inferencia automática de compatibilidad. La instantánea de README,metadatos y SHA se guarda en `data/reviews/679-20261114/`,fuera de Git. El aplicador exige identidad,cobertura total,fuentes disponibles y selección literal de comandos antes de modificar los índices.
+
+Columnas: id; categoría confirmada (`=`) o `número:subcategoría`; perfil de acceso; instalación; preparación; primera acción; resultado observable; dos ejemplos de uso; coste explicado; observaciones; temas adicionales.
+
+El perfil de acceso contiene seis decisiones separadas: API de IA (`N` no necesaria, `O` opcional, `R` necesaria, `D` depende, `?` sin confirmar), coste (`F` sin factura de modelo en ruta básica, `H` agente anfitrión, `U` consumo de servicios, `C` según ruta, `?` sin confirmar), Claude Code, Codex, Antigravity (cada cliente: `-` no documentado, `H` instrucciones/skill, `M` conector MCP, `P` integración del proyecto, `N` cliente oficial, `R` material de referencia, `D` depende del recurso elegido, `?` sin confirmar), modelo local (`-` la función básica no necesita modelo, `L` documentado, `D` no documentado, `?` sin confirmar).
+
+`bN` selecciona un bloque del README; `bN:a-b` selecciona sus líneas inclusivas y `+` combina selecciones. `c:` exige una línea literal de la fuente. Se quitan únicamente los indicadores de terminal `$ ` o `> ` al mostrar comandos. No se deducen nombres de paquetes. `read` es consulta; `readme` remite al recorrido del autor sin seleccionar un comando; `docs:URL` remite a una guía primaria. `corrections*.json` guarda cambios de propósito o rol y `extra*source*.json` las fuentes adicionales consultadas. `installation-profiles.json` identifica aplicaciones con una ruta de uso directo.
+
+La API del perfil se refiere a una clave propia de IA. La ausencia de esa clave no prueba gratuidad ni funcionamiento offline. MCP estándar y Agent Skills permiten conectar hosts compatibles,pero esa compatibilidad es documental y no una prueba ejecutada de cada combinación. La ficha indica cuando solo una etapa admite modelos locales. Referencia o compatibilidad pendiente no se promueven a rutas de integración soportada.
+
+No se ejecutaron los proyectos ni se presentan como probadas sus instalaciones. Los ejemplos y primeras pruebas son escenarios propuestos por Alexandría basados en la función documentada,no resultados medidos. Las guías de precios usan condiciones de acceso y componentes de coste; no son cotizaciones ni garantías de precio. Las licencias del código,pesos y recursos se revisan por separado cuando la fuente lo exige.
+
+El [registro público](../../reports/review-679-2026-11-14.json) conserva fecha,identidad,veredicto de categoría,perfil de acceso,URL,SHA de README y límites. El SHA de GitHub identifica un blob,no un commit. Las fuentes históricas de importación se conservan y la ficha registra el SHA anterior cuando cambia. No se publica el documento privado de importación.
+
+En la interfaz se aplicó Modern Web Guidance,guía `html`: listas y definiciones semánticas,jerarquía de títulos y bloques de código navegables con teclado. Regla aplicada: “DO ensure that code blocks are accessible by adding tabindex=\"0\" to the pre element if it becomes scrollable”.

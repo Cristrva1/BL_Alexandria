@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Puedes elegir la ruta local documentada o configurar un proveedor remoto; la ruta remota puede requerir API key o acceso propio. |
+| API de IA | API de IA opcional. Community usa GPLv3; planes comerciales y proveedores tienen condiciones propias; Ollama local requiere recursos |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | El coste depende del proveedor o la ruta. La inferencia local consume recursos de tu equipo. Los proveedores remotos y servicios del cliente tienen sus propios planes y tarifas. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. No confundas la edición comunitaria con los servicios comerciales ni un proveedor Claude con Claude Code |
+| Coste | El coste depende del proveedor o la ruta. Community usa GPLv3; planes comerciales y proveedores tienen condiciones propias; Ollama local requiere recursos |
+| Equipo | Preparación según la ruta elegida. Instalador Community para tu sistema; proveedor o instancia Ollama |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+No confundas la edición comunitaria con los servicios comerciales ni un proveedor Claude con Claude Code
 
 ## Qué puedes hacer con él
 
-Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz común. Configura conexiones de modelos y conserva conversaciones en una aplicación multiplataforma.
+Cliente de chat de escritorio para usar distintos proveedores de LLM y modelos locales desde una interfaz común.
 
 ## Por qué destaca
 
-Quieres un cliente de escritorio que conecte varios modelos.
+Usos propuestos: Conversar con varios proveedores; Probar un modelo local desde escritorio.
 
 ## Cómo funciona
 
-Configura conexiones de modelos y conserva conversaciones en una aplicación multiplataforma.
+No confundas la edición comunitaria con los servicios comerciales ni un proveedor Claude con Claude Code
 
 ## Cómo empezar
 
@@ -43,35 +44,45 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un sistema compatible y una ruta de acceso a un modelo.
+- Instalador Community para tu sistema
+- proveedor o instancia Ollama
 
-1. Abre las descargas oficiales y elige el instalador para tu sistema.
-2. Inicia la aplicación y elige el servicio de Chatbox, una API propia o la conexión local que documente la configuración.
-3. Envía un mensaje breve y confirma qué proveedor y cuenta se están consumiendo.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/chatboxai/chatbox/blob/main/README.md)
-
-[Abrir la web o descarga indicada por el autor](https://chatboxai.app/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
 > Quiero usar chatbox para mi objetivo y necesito pasos guiados. Lee https://github.com/chatboxai/chatbox/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Conecta un proveedor y guarda una conversación con una nota ficticia.
+
+**Qué comprobar:** Puedes identificar el modelo y recuperar el chat.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres un cliente de escritorio que conecte varios modelos
+- Conversar con varios proveedores
+- Probar un modelo local desde escritorio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres un cliente de escritorio que conecte varios modelos | no quieres mantener modelos o un entorno de ejecución propio |
+| Tu objetivo encaja con estos ejemplos: Conversar con varios proveedores; Probar un modelo local desde escritorio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La edición comunitaria y los servicios comerciales pueden tener funciones diferentes.
+**Limitaciones:** No confundas la edición comunitaria con los servicios comerciales ni un proveedor Claude con Claude Code
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Node.js
+- **Stack:** Instalador Community para tu sistema; proveedor o instancia Ollama
 - **Etiquetas:** `chats` `assistant` `chatbot` `chatgpt` `claude` `claude-code` `copilot` `deepseek`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -88,7 +99,9 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/chatboxai/chatbox/blob/main/README.md)
 

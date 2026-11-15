@@ -16,39 +16,49 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El backend LSP usa recursos locales; el plugin JetBrains tiene pago separado; el modelo del agente conserva sus límites |
 | Claude Code | Herramienta MCP para el agente |
 | Codex | Herramienta MCP para el agente |
-| Modelos locales | La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta. |
-| Coste | Consumo del agente que ya utilizas. El modelo se consume en el cliente. Los servicios que la herramienta consulta pueden tener cuentas o tarifas propias. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. El autor desaconseja marketplaces con instalaciones antiguas; configura el comando de lanzamiento oficial y el backend adecuado |
+| Coste | El coste depende del proveedor o la ruta. El backend LSP usa recursos locales; el plugin JetBrains tiene pago separado; el modelo del agente conserva sus límites |
+| Equipo | Preparación según la ruta elegida. uv; servidor de lenguaje del proyecto; repositorio de prueba |
 
-Puede conectarse a un cliente con soporte MCP, incluido Claude Code o Codex. Debes configurar el servidor y sus permisos.
+El autor desaconseja marketplaces con instalaciones antiguas; configura el comando de lanzamiento oficial y el backend adecuado
 
 ## Qué puedes hacer con él
 
-En vez de leer archivos enteros, el agente busca símbolos, referencias y edita a nivel de función usando servidores de lenguaje. Ahorra tokens en repos grandes.
+Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE.
 
 ## Por qué destaca
 
-Mejora la precisión y el gasto de tokens de cualquier agente en bases de código grandes.
+Usos propuestos: Navegar una base de código grande; Refactorizar un símbolo con contexto semántico.
 
 ## Cómo funciona
 
-Usa servidores LSP para entender el código y expone herramientas MCP de búsqueda y edición por símbolos.
+El autor desaconseja marketplaces con instalaciones antiguas; configura el comando de lanzamiento oficial y el backend adecuado
 
 ## Cómo empezar
 
-Se configura en tu agente. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un cliente MCP compatible.
-- Las credenciales del servicio conectado, si las pide el servidor.
+- uv
+- servidor de lenguaje del proyecto
+- repositorio de prueba
 
-1. Instala o configura el servidor según su README.
-2. Añade su comando o URL en la configuración MCP de tu cliente.
-3. Comprueba que aparecen las herramientas antes de asignar una tarea.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+uv tool install -p 3.13 serena-agent
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/oraios/serena/blob/main/README.md)
 
@@ -56,21 +66,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Serena para mi objetivo y necesito pasos guiados. Lee https://github.com/oraios/serena/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Pide localizar una función por símbolo y enumera sus referencias antes de editar.
+
+**Qué comprobar:** El agente identifica la definición y usos reales.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Navegar repos grandes con menos tokens
-- Refactors por símbolo
-- Dar herramientas de IDE a Claude Code
+- Navegar una base de código grande
+- Refactorizar un símbolo con contexto semántico
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tu agente trabaja en un repo grande y gasta muchos tokens leyendo | tu proyecto es pequeño |
+| Tu objetivo encaja con estos ejemplos: Navegar una base de código grande; Refactorizar un símbolo con contexto semántico | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El autor desaconseja marketplaces con instalaciones antiguas; configura el comando de lanzamiento oficial y el backend adecuado
 
 ## Stack y modelos
 
-- **Stack:** Python, LSP
+- **Stack:** uv; servidor de lenguaje del proyecto; repositorio de prueba
 - **Etiquetas:** `mcp` `coding-agent` `code` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -96,7 +115,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/oraios/serena/blob/main/README.md)
 

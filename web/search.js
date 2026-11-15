@@ -33,6 +33,7 @@
     if(/\b(?:modelo[s]?\s+local(?:es)?|offline|sin conexion)\b/.test(task)) { implicitRoutes.push("local_model");task=task.replace(/\b(?:modelo[s]?\s+local(?:es)?|offline|sin conexion)\b/g,""); }
     if(/\b(?:con|suscripcion(?: de)?)\s+(?:mi\s+)?codex\b/.test(task)) { implicitRoutes.push("codex");task=task.replace(/\b(?:con|suscripcion(?: de)?)\s+(?:mi\s+)?codex\b/g,""); }
     if(/\b(?:con|suscripcion(?: de)?)\s+(?:mi\s+)?claude(?: code)?\b/.test(task)) { implicitRoutes.push("claude");task=task.replace(/\b(?:con|suscripcion(?: de)?)\s+(?:mi\s+)?claude(?: code)?\b/g,""); }
+    if(/\b(?:con|suscripcion(?: de)?)\s+(?:mi\s+)?antigravity\b/.test(task)) { implicitRoutes.push("antigravity");task=task.replace(/\b(?:con|suscripcion(?: de)?)\s+(?:mi\s+)?antigravity\b/g,""); }
     const tokens = terms(task);
     const goal = goals.find(item => item.id === params.get("goal"));
     const cats = Object.fromEntries(categories.map(cat => [cat.num, cat]));
@@ -51,8 +52,8 @@
       if (params.get("status") && params.get("status") !== "active" && item.status !== params.get("status")) return false;
       if (params.get("prov") && !item.prov.includes(params.get("prov"))) return false;
       const clientSupport = ["native","host","connector","project_integration"];
-      const supported = [clientSupport.includes(item.access?.claude_code) ? "claude code" : "", clientSupport.includes(item.access?.codex) ? "codex" : ""];
-      const hay = fold([item.name, item.id, item.one, item.lead, item.desc, item.choose_if, item.stack, item.discovery_text, cats[item.cat]?.title, ...(item.tags || []), ...supported].join(" "));
+      const supported = [clientSupport.includes(item.access?.claude_code) ? "claude code" : "", clientSupport.includes(item.access?.codex) ? "codex" : "",clientSupport.includes(item.access?.antigravity) ? "antigravity" : ""];
+      const hay = fold([item.name, item.id, item.one, item.lead, item.desc, item.choose_if, item.stack, item.first_try?.action, ...(item.practical_examples||[]).map(example=>example.scenario),item.discovery_text, cats[item.cat]?.title, ...(item.tags || []), ...supported].join(" "));
       return tokens.every(term => alternatives(term).some(alias => hay.includes(alias)));
     });
     const score = item => (fold(item.id) === q || fold(item.name) === q ? 1000 : 0)

@@ -2,7 +2,7 @@
 
 # 🗂️ wshobson/agents
 
-> Marketplace de 94 plugins con más de 200 subagentes, 185 skills y 105 comandos para Claude Code, Codex, Cursor, OpenCode y Copilot.
+> Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La colección consume el agente anfitrión; algunos plugins o servidores pueden añadir servicios y credenciales |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. El README documenta generadores distintos por cliente; no basta copiar un formato de configuración a todos |
+| Coste | Consumo del agente que ya utilizas. La colección consume el agente anfitrión; algunos plugins o servidores pueden añadir servicios y credenciales |
+| Equipo | Preparación según la ruta elegida. Agente destino;  dependencias del plugin seleccionado |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+El README documenta generadores distintos por cliente; no basta copiar un formato de configuración a todos
 
 ## Qué puedes hacer con él
 
-Colección de Seth Hobson que agrupa subagentes especialistas, skills y comandos en plugins por área: desarrollo Python y JavaScript, revisión de código, testing, infraestructura, seguridad y más. Se escribe una sola vez en formato de plugin de Claude Code y unos adaptadores generan las versiones para Codex, Cursor, OpenCode, Antigravity CLI, GitHub Copilot y Pi.
+Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes.
 
 ## Por qué destaca
 
-Instalas solo el plugin que necesitas en lugar de cientos de archivos sueltos y mantienes el mismo set en varios agentes. Incluye `plugin-eval` para puntuar skills con chequeos estáticos.
+Usos propuestos: Aplicar patrones de pruebas a un módulo Python; Adaptar el mismo conjunto de agentes a otra herramienta mediante sus generadores.
 
 ## Cómo funciona
 
-Cada plugin de `plugins/` agrupa agentes (con alias de modelo como opus o sonnet), skills y comandos en Markdown. Los marketplaces nativos apuntan a esa fuente y adaptadores en Python generan el formato de cada herramienta.
+El README documenta generadores distintos por cliente; no basta copiar un formato de configuración a todos
 
 ## Cómo empezar
 
@@ -43,11 +44,22 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Agente destino
+-  dependencias del plugin seleccionado
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (text):**
+
+```
+/plugin marketplace add wshobson/agents
+/plugin install python-development@claude-code-workflows
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/wshobson/agents/blob/main/README.md)
 
@@ -55,23 +67,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar wshobson/agents para mi objetivo y necesito pasos guiados. Lee https://github.com/wshobson/agents/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Instala el plugin de desarrollo Python y pide revisar un caso de pruebas pequeño.
+
+**Qué comprobar:** El agente encuentra las instrucciones del plugin y propone una revisión sobre ese caso.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Añadir subagentes de Python o TypeScript a Claude Code
-- Lanzar un escaneo de seguridad con un comando del plugin
-- Compartir el mismo set de agentes entre Claude Code y Codex
+- Aplicar patrones de pruebas a un módulo Python
+- Adaptar el mismo conjunto de agentes a otra herramienta mediante sus generadores
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres subagentes y comandos especializados por lenguaje o área, instalables plugin a plugin | solo quieres plugins oficiales de Anthropic y socios; mira `claude-plugins-official` |
+| Tu objetivo encaja con estos ejemplos: Aplicar patrones de pruebas a un módulo Python; Adaptar el mismo conjunto de agentes a otra herramienta mediante sus generadores | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Las funciones dependen de la herramienta: Codex, Copilot u OpenCode reciben versiones generadas con menos capacidades que Claude Code.
+**Limitaciones:** El README documenta generadores distintos por cliente; no basta copiar un formato de configuración a todos
 
 ## Stack y modelos
 
-- **Stack:** Markdown, Python (uv), Make
+- **Stack:** Agente destino;  dependencias del plugin seleccionado
 - **Etiquetas:** `skills` `coding-agent` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -88,7 +107,7 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Claude Code Plugins Directory](claude-plugins-official.md) | 47.3k | Marketplace oficial de Anthropic con plugins para ampliar las herramientas y flujos de trabajo de Claude Code. |
-| [Agentic Awesome Skills](antigravity-awesome-skills.md) | 49.7k | Biblioteca comunitaria de más de 2.800 skills SKILL.md para Claude Code, Codex, Cursor y Gemini CLI, con instalador npx y MCP local. |
+| [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) | 49.7k | Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills. |
 | [The Agency (agency-agents)](agency-agents.md) | 168k | Colección de más de 230 agentes especialistas (ingeniería, diseño, marketing, ventas, producto) para Claude Code y otros agentes. |
 
 ## Enlaces
@@ -98,7 +117,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/wshobson/agents/blob/main/README.md)
 

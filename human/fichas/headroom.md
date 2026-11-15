@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 79.7k | Apache-2.0 | Python | 2026-06-23 |
 
-**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
-| Claude Code | Dentro del agente: skills o instrucciones |
-| Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | El coste depende del proveedor o la ruta. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. La compresión básica no pide clave ni descargar modelo; el agente y funciones opcionales pueden usar otros recursos |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Documenta wrap para Claude y Codex y MCP para cualquier cliente compatible; los ahorros de benchmarks no garantizan iguales respuestas en toda tarea |
+| Coste | El coste depende del proveedor o la ruta. La compresión básica no pide clave ni descargar modelo; el agente y funciones opcionales pueden usar otros recursos |
+| Equipo | Preparación según la ruta elegida. Python compatible; contenido de prueba; agente o cliente MCP si lo conectas |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Documenta wrap para Claude y Codex y MCP para cualquier cliente compatible; los ahorros de benchmarks no garantizan iguales respuestas en toda tarea
 
 ## Qué puedes hacer con él
 
-Resuelve el dolor habitual de los agentes: quedarse sin ventana de contexto a mitad de una tarea larga.
+Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial.
 
 ## Por qué destaca
 
-Proyecto pequeño y específico que ataca un problema real de los agentes de forma directa y agnóstica al proveedor. Su enfoque de "maximizar señal por token" encaja en pipelines donde el contexto crece sin control.
+Usos propuestos: Reducir salidas extensas de herramientas; Comparar una sesión con y sin compresión.
 
 ## Cómo funciona
 
-Resume y condensa el contexto entrante para maximizar la señal por token antes de pasarlo al modelo, de forma agnóstica al proveedor, preservando las partes relevantes y descartando ruido.
+Documenta wrap para Claude y Codex y MCP para cualquier cliente compatible; los ahorros de benchmarks no garantizan iguales respuestas en toda tarea
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python compatible
+- contenido de prueba
+- agente o cliente MCP si lo conectas
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+pip install headroom-ai
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/headroomlabs-ai/headroom/blob/main/README.md)
 
@@ -51,21 +67,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar headroom para mi objetivo y necesito pasos guiados. Lee https://github.com/headroomlabs-ai/headroom/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Comprime una salida JSON pequeña y compara el resultado con el original antes de envolver un agente.
+
+**Qué comprobar:** Puedes identificar qué se conservó y recuperar el original cuando corresponda.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Resumir/condensar contexto largo
-- Ganar espacio en la ventana
-- Mantener conversaciones largas dentro del límite de tokens
+- Reducir salidas extensas de herramientas
+- Comparar una sesión con y sin compresión
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| te quedas sin contexto en sesiones largas | tus prompts ya caben holgados o la pérdida de detalle por resumen es inaceptable |
+| Tu objetivo encaja con estos ejemplos: Reducir salidas extensas de herramientas; Comparar una sesión con y sin compresión | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Documenta wrap para Claude y Codex y MCP para cualquier cliente compatible; los ahorros de benchmarks no garantizan iguales respuestas en toda tarea
 
 ## Stack y modelos
 
-- **Stack:** Python/TypeScript
+- **Stack:** Python compatible; contenido de prueba; agente o cliente MCP si lo conectas
 - **Etiquetas:** `automation` `llmops` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,7 +114,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/headroomlabs-ai/headroom/blob/main/README.md)
 

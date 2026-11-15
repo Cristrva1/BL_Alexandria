@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La generación usa el agente anfitrión; el HTML resultante se consulta sin un modelo en ejecución |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El mapa offline no implica generación con IA local; el README cambió y esta ficha conserva la nueva versión de fuente |
+| Coste | Consumo del agente que ya utilizas. La generación usa el agente anfitrión; el HTML resultante se consulta sin un modelo en ejecución |
+| Equipo | Preparación según la ruta elegida. Claude Code o Codex con plugins; proyecto pequeño de prueba |
 
-Consume el acceso y los límites del agente donde lo configures. No incluye servicios externos de generación, datos o alojamiento.
+El mapa offline no implica generación con IA local; el README cambió y esta ficha conserva la nueva versión de fuente
 
 ## Qué puedes hacer con él
 
 Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto.
 
+## Por qué destaca
+
+Usos propuestos: Explicar la arquitectura a alguien nuevo; Encontrar dónde se inicia una petición de la interfaz.
+
 ## Cómo funciona
 
-El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.
+El mapa offline no implica generación con IA local; el README cambió y esta ficha conserva la nueva versión de fuente
 
 ## Cómo empezar
 
@@ -39,11 +44,22 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- El agente compatible indicado por el proyecto y acceso activo al modelo de ese agente.
+- Claude Code o Codex con plugins
+- proyecto pequeño de prueba
 
-1. Abre la instalación del README y elige la ruta para el agente que utilizas.
-2. Añade la skill o el plugin concreto; prepara los programas y servicios que indique su documentación.
-3. Pide una primera tarea pequeña sobre archivos de prueba y comprueba qué herramientas y cuentas activa.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+claude plugin marketplace add haydenschmitty/floorplan
+claude plugin install floorplan@floorplan
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/haydenschmitty/floorplan/blob/main/README.md)
 
@@ -51,21 +67,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar floorplan para mi objetivo y necesito pasos guiados. Lee https://github.com/haydenschmitty/floorplan/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Pide un mapa de una app mínima y abre un enlace entre una pantalla y su endpoint.
+
+**Qué comprobar:** Puedes contrastar nombres legibles, archivos y conexiones del mapa.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto.
+- Explicar la arquitectura a alguien nuevo
+- Encontrar dónde se inicia una petición de la interfaz
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto. | necesitas un producto autónomo y esta pieza requiere un anfitrión compatible |
+| Tu objetivo encaja con estos ejemplos: Explicar la arquitectura a alguien nuevo; Encontrar dónde se inicia una petición de la interfaz | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** El mapa offline no implica generación con IA local; el README cambió y esta ficha conserva la nueva versión de fuente
 
 ## Stack y modelos
 
-- **Stack:** JavaScript, package.json
+- **Stack:** Claude Code o Codex con plugins; proyecto pequeño de prueba
 - **Etiquetas:** `codigo` `skill` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +101,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/haydenschmitty/floorplan/blob/main/README.md)
 

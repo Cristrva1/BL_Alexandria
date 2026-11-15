@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. |
 | ⭐ Estrellas | 84.4k | 73.2k |
-| Elígelo si… | quieres que un agente de código genere videos con motion graphics a partir de HTML, con licencia permisiva | generas video a escala con React y quieres variantes parametrizadas |
-| Evítalo si… | tu equipo ya trabaja con componentes React y el ecosistema de `remotion`, o prefieres editar en una línea de tiempo visual | trabajas en Python (moviepy) o buscas un editor visual |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Preparar un video explicativo por código; Crear una pieza de presentación con HTML | Tu objetivo encaja con estos ejemplos: Crear una plantilla de video con datos; Preparar títulos animados |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
-| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| API de IA | API de IA opcional | API de IA opcional |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟡 medio |
 | Licencia | Apache-2.0 | NOASSERTION |
-| Instalación | `npx hyperframes init my-video` | `npm create video` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **HyperFrames** si quieres que un agente de código genere videos con motion graphics a partir de HTML, con licencia permisiva.
-- Elige **remotion** si generas video a escala con React y quieres variantes parametrizadas.
+- Elige **HyperFrames** si Tu objetivo encaja con estos ejemplos: Preparar un video explicativo por código; Crear una pieza de presentación con HTML.
+- Elige **remotion** si Tu objetivo encaja con estos ejemplos: Crear una plantilla de video con datos; Preparar títulos animados.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

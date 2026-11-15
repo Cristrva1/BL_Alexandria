@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. | Guía de referencia de DAIR.AI sobre prompts, ingeniería de contexto, RAG y agentes. |
 | ⭐ Estrellas | 39.3k | 80.1k |
-| Elígelo si… | quieres aprender prompts con práctica guiada | quieres una referencia amplia de técnicas de prompting |
-| Evítalo si… | buscas una guía amplia multi-modelo; mira `prompt-engineering-guide` | prefieres ejercicios prácticos con corrección; mira `prompt-eng-tutorial` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Practicar instrucciones claras; Aprender a separar datos y órdenes | Tu objetivo encaja con estos ejemplos: Aprender a pedir un resumen estructurado; Comparar técnicas de prompting antes de elegir una |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | ☁️ cloud/API | ☁️ cloud/API |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
-| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
-| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
+| API de IA | API de IA opcional | Sin clave propia de API de IA en la ruta básica |
+| Coste | El coste depende del proveedor o la ruta | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelo local no documentado | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | — | MIT |
-| Instalación | No se instala: abre los notebooks y configura tu clave de API de Anthropic. | No se instala: léela en promptingguide.ai o en el repo. |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Lee la sección de ejemplos y reformula una petición de resumen indicando formato y audi… |
 
 ## Regla práctica
 
-- Elige **Anthropic's Prompt Engineering Tutorial** si quieres aprender prompts con práctica guiada.
-- Elige **Prompt Engineering Guide** si quieres una referencia amplia de técnicas de prompting.
+- Elige **Anthropic's Prompt Engineering Tutorial** si Tu objetivo encaja con estos ejemplos: Practicar instrucciones claras; Aprender a separar datos y órdenes.
+- Elige **Prompt Engineering Guide** si Tu objetivo encaja con estos ejemplos: Aprender a pedir un resumen estructurado; Comparar técnicas de prompting antes de elegir una.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

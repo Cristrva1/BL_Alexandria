@@ -1,6 +1,6 @@
 [🏠 Inicio](../README.md) › [📈 Investigar finanzas y mercados](../categorias/14-investigar-finanzas-y-mercados.md) › Ejemplos y aprendizaje
 
-# 📚 PixelFund-AI
+# 🖥️ PixelFund-AI
 
 > Aplicación de simulación bursátil con agentes e interfaz en pixel art para explorar carteras y operaciones virtuales.
 
@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 6 | MIT | TypeScript | 2026-11-14 |
 
-**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
+**Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,53 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API: por confirmar. El README describe agentes y simulación, pero no resuelve qué acceso a modelos exige cada proveedor. Revisa la guía SETUP y su configuración antes de asumir coste cero. |
+| API de IA | API de IA opcional. La interfaz no obliga a modelo; análisis necesita proveedor AI y datos Finnhub para ciertas funciones; consumo y cupos son externos |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Ejecución con modelos locales por confirmar. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Coste por confirmar. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. Datos de mercado, brokers y exchanges pueden exigir cuentas, cuotas, comisiones o fondos. Una simulación o backtest no acredita rentabilidad ni una conexión real lista. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. La guía y env.example distinguen proveedor AI y claves; no se confirma modelo local; autenticación de producción sigue entre tareas de endurecimiento |
+| Coste | El coste depende del proveedor o la ruta. La interfaz no obliga a modelo; análisis necesita proveedor AI y datos Finnhub para ciertas funciones; consumo y cupos son externos |
+| Equipo | Preparación según la ruta elegida. Node >=20; npm >=10; Docker o PostgreSQL y Redis; claves opcionales según función |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+La guía y env.example distinguen proveedor AI y claves; no se confirma modelo local; autenticación de producción sigue entre tareas de endurecimiento
 
 ## Qué puedes hacer con él
 
 Aplicación de simulación bursátil con agentes e interfaz en pixel art para explorar carteras y operaciones virtuales.
 
+## Por qué destaca
+
+Usos propuestos: Estudiar una cartera virtual con ciclo de órdenes; Prototipar una interfaz de comité de inversión.
+
 ## Cómo funciona
 
-Se utiliza como punto de partida: se prepara el entorno del ejemplo y se adapta su código a la tarea.
+La guía y env.example distinguen proveedor AI y claves; no se confirma modelo local; autenticación de producción sigue entre tareas de endurecimiento
 
 ## Cómo empezar
 
-Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
+- Node >=20
+- npm >=10
+- Docker o PostgreSQL y Redis
+- claves opcionales según función
 
-1. Elige un ejemplo de consulta de datos, backtesting o simulación que no envíe órdenes reales.
-2. Prepara datos de prueba y, si el proveedor lo requiere, una cuenta y credenciales de solo lectura; revisa sus cuotas por separado.
-3. Comprueba los resultados y el coste observado. La ejecución con fondos es otra configuración y no se activa como parte de esta primera prueba.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+cp .env.example .env
+npm install
+npm run dev:all
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/kyjwang/PixelFund-AI/blob/main/README.md)
 
@@ -51,21 +70,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar PixelFund-AI para mi objetivo y necesito pasos guiados. Lee https://github.com/kyjwang/PixelFund-AI/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Abre System Console tras iniciar la app y revisa disponibilidad de base, Redis, datos y AI.
+
+**Qué comprobar:** Puedes ver qué componentes están listos y cuáles impiden análisis u operaciones virtuales.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Aplicación de simulación bursátil con agentes e interfaz en pixel art para explorar carteras y operaciones virtuales.
+- Estudiar una cartera virtual con ciclo de órdenes
+- Prototipar una interfaz de comité de inversión
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Aplicación de simulación bursátil con agentes e interfaz en pixel art para explorar carteras y operaciones virtuales. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| Tu objetivo encaja con estos ejemplos: Estudiar una cartera virtual con ciclo de órdenes; Prototipar una interfaz de comité de inversión | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. No se verificó rentabilidad ni operación con fondos. Distingue demostración, backtesting, simulación y conexión real.
+**Limitaciones:** La guía y env.example distinguen proveedor AI y claves; no se confirma modelo local; autenticación de producción sigue entre tareas de endurecimiento
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, docker-compose.yml, package.json
+- **Stack:** Node >=20; npm >=10; Docker o PostgreSQL y Redis; claves opcionales según función
 - **Etiquetas:** `aprender` `template` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,9 +104,13 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/kyjwang/PixelFund-AI/blob/main/README.md)
+- [Fuente 2](https://github.com/kyjwang/PixelFund-AI/blob/main/docs/SETUP.md)
+- [Fuente 3](https://github.com/kyjwang/PixelFund-AI/blob/main/.env.example)
 
 ---
 

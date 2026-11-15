@@ -4,7 +4,7 @@
 
 Notas, sincronización, privacidad, aprendizaje y servidores personales. Distingue una aplicación lista, un plugin y la infraestructura que debes administrar.
 
-26 repos · 7 secciones
+27 repos · 7 secciones
 
 ## Puntos de partida
 
@@ -12,12 +12,12 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 | Repo | Qué hace | Acceso básico |
 |---|---|---|
-| [Anytype Desktop](../fichas/anytype-ts.md) | Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal. | Sin API de IA en la ruta básica |
+| [Anytype Desktop](../fichas/anytype-ts.md) | Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal. | Sin clave propia de API de IA en la ruta básica |
 
 ## Secciones
 
 - [Notas, bóvedas y conocimiento personal](#notas-bóvedas-y-conocimiento-personal) — 14 repos
-- [Sincronización y gestión de archivos](#sincronización-y-gestión-de-archivos) — 1 repos
+- [Sincronización y gestión de archivos](#sincronización-y-gestión-de-archivos) — 2 repos
 - [Credenciales y privacidad](#credenciales-y-privacidad) — 3 repos
 - [Libros, podcasts y bibliotecas personales](#libros-podcasts-y-bibliotecas-personales) — 1 repos
 - [Automatización del hogar](#automatización-del-hogar) — 1 repos
@@ -28,62 +28,63 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [Anytype Desktop](../fichas/anytype-ts.md) | Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal. | buscas esta función: Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal. | Sin API de IA en la ruta básica |
-| [AppFlowy](../fichas/appflowy.md) | Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento propio. | buscas esta función: Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento propio. | API de IA opcional |
-| [obsidian-skills](../fichas/obsidian-skills.md) | Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases de datos y lienzos. | buscas esta función: Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases de datos y lienzos. | Sin API de IA en la ruta básica |
-| [karakeep](../fichas/karakeep.md) | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación mediante IA. | buscas esta función: Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación mediante IA. | API de IA opcional |
-| [Obsidian: distribución y extensiones](../fichas/obsidian-releases.md) | Repositorio de distribución de Obsidian y sus listados de plugins y temas; no contiene el código completo de la aplicación. | buscas esta función: Repositorio de distribución de Obsidian y sus listados de plugins y temas; no contiene el código completo de la aplicación. | Sin API de IA en la ruta básica |
-| [claude-obsidian](../fichas/claude-obsidian.md) | Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsidian. | buscas esta función: Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsidian. | Sin API de IA en la ruta básica |
-| [kepano-obsidian](../fichas/kepano-obsidian.md) | Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas e información personal. | buscas esta función: Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas e información personal. | Sin API de IA en la ruta básica |
-| [obsidian-minimal](../fichas/obsidian-minimal.md) | Tema configurable de Obsidian para ajustar la apariencia y reducir distracciones al trabajar con notas. | buscas esta función: Tema configurable de Obsidian para ajustar la apariencia y reducir distracciones al trabajar con notas. | Sin API de IA en la ruta básica |
-| [obsidian-clipper](../fichas/obsidian-clipper.md) | Extensión oficial para capturar páginas y fragmentos de la web y guardarlos como notas en Obsidian. | buscas esta función: Extensión oficial para capturar páginas y fragmentos de la web y guardarlos como notas en Obsidian. | Sin API de IA en la ruta básica |
-| [obsidian-second-brain](../fichas/obsidian-second-brain.md) | Sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian. | buscas esta función: Sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian. | Sin API de IA en la ruta básica |
-| [obsidian-sample-plugin](../fichas/obsidian-sample-plugin.md) | Plantilla oficial para programar un plugin de Obsidian con una estructura inicial y configuración de desarrollo. | buscas esta función: Plantilla oficial para programar un plugin de Obsidian con una estructura inicial y configuración de desarrollo. | Sin API de IA en la ruta básica |
-| [jsoncanvas](../fichas/jsoncanvas.md) | Especificación abierta de JSON Canvas para describir nodos y conexiones de un lienzo visual en un archivo. | buscas esta función: Especificación abierta de JSON Canvas para describir nodos y conexiones de un lienzo visual en un archivo. | Sin API de IA en la ruta básica |
-| [obsidian-help](../fichas/obsidian-help.md) | Documentación oficial de Obsidian para aprender sus funciones, configuración y formas de organizar una bóveda. | buscas esta función: Documentación oficial de Obsidian para aprender sus funciones, configuración y formas de organizar una bóveda. | Sin API de IA en la ruta básica |
-| [obsidian-importer](../fichas/obsidian-importer.md) | Plugin oficial para convertir datos de otras aplicaciones en archivos Markdown que puedes abrir en Obsidian. | buscas esta función: Plugin oficial para convertir datos de otras aplicaciones en archivos Markdown que puedes abrir en Obsidian. | Sin API de IA en la ruta básica |
+| [Anytype Desktop](../fichas/anytype-ts.md) | Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal. | Tu objetivo encaja con estos ejemplos: Organizar notas y proyectos personales; Diseñar una colección con campos propios | Sin clave propia de API de IA en la ruta básica |
+| [AppFlowy](../fichas/appflowy.md) | Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento propio. | Tu objetivo encaja con estos ejemplos: Organizar un proyecto colaborativo; Construir una wiki de equipo | API de IA opcional |
+| [obsidian-skills](../fichas/obsidian-skills.md) | Skills para que un agente trabaje con Obsidian y sus formatos de notas, bases de datos y lienzos. | Tu objetivo encaja con estos ejemplos: Guiar un agente para trabajar con notas; Crear bases y lienzos en formatos Obsidian | Sin clave propia de API de IA en la ruta básica |
+| [karakeep](../fichas/karakeep.md) | Gestor autoalojado de marcadores, notas e imágenes con búsqueda y funciones opcionales de clasificación mediante IA. | Tu objetivo encaja con estos ejemplos: Organizar una biblioteca de enlaces; Clasificar artículos con un modelo local | API de IA opcional |
+| [Obsidian: distribución y extensiones](../fichas/obsidian-releases.md) | Repositorio de distribución de Obsidian y sus listados de plugins y temas; no contiene el código completo de la aplicación. | Tu objetivo encaja con estos ejemplos: Encontrar una distribución oficial; Estudiar el catálogo de temas y plugins | Sin clave propia de API de IA en la ruta básica |
+| [claude-obsidian](../fichas/claude-obsidian.md) | Instrucciones para que Claude Code clasifique, enlace y consulte fuentes dentro de una bóveda de notas de Obsidian. | Tu objetivo encaja con estos ejemplos: Organizar apuntes por conceptos; Consultar decisiones desde una bóveda | Sin clave propia de API de IA en la ruta básica |
+| [kepano-obsidian](../fichas/kepano-obsidian.md) | Plantilla de una bóveda de Obsidian para estudiar una forma de organizar notas e información personal. | Tu objetivo encaja con estos ejemplos: Estudiar una organización de notas; Adaptar una plantilla personal de conocimiento | Sin clave propia de API de IA en la ruta básica |
+| [obsidian-minimal](../fichas/obsidian-minimal.md) | Tema configurable de Obsidian para ajustar la apariencia y reducir distracciones al trabajar con notas. | Tu objetivo encaja con estos ejemplos: Ajustar tipografía de una bóveda; Crear una interfaz de notas con menos distracciones | Sin clave propia de API de IA en la ruta básica |
+| [obsidian-clipper](../fichas/obsidian-clipper.md) | Extensión oficial para capturar páginas y fragmentos de la web y guardarlos como notas en Obsidian. | Tu objetivo encaja con estos ejemplos: Capturar lecturas con una plantilla; Extraer un resumen opcional con Interpreter | API de IA opcional |
+| [obsidian-second-brain](../fichas/obsidian-second-brain.md) | Sistema de memoria y notas en Markdown para compartir contexto de trabajo entre agentes y una bóveda de Obsidian. | Tu objetivo encaja con estos ejemplos: Compartir un diario de decisiones entre agentes; Consultar apuntes con búsqueda y fuentes | API de IA opcional |
+| [obsidian-sample-plugin](../fichas/obsidian-sample-plugin.md) | Plantilla oficial para programar un plugin de Obsidian con una estructura inicial y configuración de desarrollo. | Tu objetivo encaja con estos ejemplos: Aprender a programar un plugin; Prototipar una función para notas | Sin clave propia de API de IA en la ruta básica |
+| [jsoncanvas](../fichas/jsoncanvas.md) | Especificación abierta de JSON Canvas para describir nodos y conexiones de un lienzo visual en un archivo. | Tu objetivo encaja con estos ejemplos: Intercambiar un mapa de ideas; Estudiar un formato abierto de lienzo | Sin clave propia de API de IA en la ruta básica |
+| [obsidian-help](../fichas/obsidian-help.md) | Documentación oficial de Obsidian para aprender sus funciones, configuración y formas de organizar una bóveda. | Tu objetivo encaja con estos ejemplos: Aprender funciones básicas de Obsidian; Consultar cómo configurar una bóveda | Sin clave propia de API de IA en la ruta básica |
+| [obsidian-importer](../fichas/obsidian-importer.md) | Plugin oficial para convertir datos de otras aplicaciones en archivos Markdown que puedes abrir en Obsidian. | Tu objetivo encaja con estos ejemplos: Migrar una muestra desde otra app; Verificar un formato de exportación antes de migrar | Sin clave propia de API de IA en la ruta básica |
 
 ## Sincronización y gestión de archivos
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [syncthing](../fichas/syncthing.md) | Aplicación para sincronizar archivos entre dispositivos directamente y controlar qué carpetas se comparten. | buscas esta función: Aplicación para sincronizar archivos entre dispositivos directamente y controlar qué carpetas se comparten. | Sin API de IA en la ruta básica |
+| [syncthing](../fichas/syncthing.md) | Aplicación para sincronizar archivos entre dispositivos directamente y controlar qué carpetas se comparten. | Tu objetivo encaja con estos ejemplos: Compartir una carpeta personal entre equipos; Mantener una colección de notas sincronizada | Sin clave propia de API de IA en la ruta básica |
+| [server](../fichas/nextcloud-server.md) | Servidor de Nextcloud para almacenar y compartir archivos, contactos y calendarios en infraestructura propia. | Tu objetivo encaja con estos ejemplos: Alojar documentos de un equipo; Sincronizar archivos y calendarios propios | Sin clave propia de API de IA en la ruta básica |
 
 ## Credenciales y privacidad
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [vaultwarden](../fichas/vaultwarden.md) | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. | buscas esta función: Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. | Sin API de IA en la ruta básica |
-| [AdGuardHome](../fichas/adguardhome.md) | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. | buscas esta función: Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. | Sin API de IA en la ruta básica |
-| [Bitwarden Clients](../fichas/bitwarden-clients.md) | Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send. | buscas esta función: Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send. | Sin API de IA en la ruta básica |
+| [vaultwarden](../fichas/vaultwarden.md) | Servidor no oficial compatible con clientes Bitwarden para alojar una bóveda de credenciales en infraestructura propia. | Tu objetivo encaja con estos ejemplos: Estudiar alojamiento propio de una bóveda; Evaluar compatibilidad con clientes Bitwarden | Sin clave propia de API de IA en la ruta básica |
+| [AdGuardHome](../fichas/adguardhome.md) | Servidor DNS para filtrar anuncios y rastreadores de los dispositivos de una red desde una configuración central. | Tu objetivo encaja con estos ejemplos: Filtrar dominios en una red propia; Estudiar consultas y reglas DNS | Sin clave propia de API de IA en la ruta básica |
+| [Bitwarden Clients](../fichas/bitwarden-clients.md) | Clientes oficiales de Bitwarden para gestionar credenciales y utilizar funciones como compartir información con Send. | Tu objetivo encaja con estos ejemplos: Gestionar credenciales desde extensión y escritorio; Estudiar un flujo Send con contenido ficticio | Sin clave propia de API de IA en la ruta básica |
 
 ## Libros, podcasts y bibliotecas personales
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [audiobookshelf](../fichas/audiobookshelf.md) | Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reproducción. | buscas esta función: Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reproducción. | Sin API de IA en la ruta básica |
+| [audiobookshelf](../fichas/audiobookshelf.md) | Servidor personal para organizar audiolibros y podcasts, escuchar contenido y conservar el progreso de reproducción. | Tu objetivo encaja con estos ejemplos: Organizar audiolibros propios o autorizados; Gestionar una colección de podcasts | Sin clave propia de API de IA en la ruta básica |
 
 ## Automatización del hogar
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [Home Assistant](../fichas/home-assistant.md) | Motor de Home Assistant para conectar dispositivos y automatizar acciones del hogar con control local. | buscas esta función: Motor de Home Assistant para conectar dispositivos y automatizar acciones del hogar con control local. | Sin API de IA en la ruta básica |
+| [Home Assistant](../fichas/home-assistant.md) | Motor de Home Assistant para conectar dispositivos y automatizar acciones del hogar con control local. | Tu objetivo encaja con estos ejemplos: Controlar una luz de práctica por horario; Visualizar sensores de una vivienda | API de IA opcional |
 
 ## Herramientas y organización personal
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [ai-job-search](../fichas/ai-job-search.md) | Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y preparar cartas e entrevistas de empleo. | buscas esta función: Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y preparar cartas e entrevistas de empleo. | Sin API de IA en la ruta básica |
-| [cleanyourtv](../fichas/cleanyourtv.md) | Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante ADB. | buscas esta función: Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante ADB. | Sin API de IA en la ruta básica |
-| [optimizerDuck](../fichas/optimizerduck.md) | Aplicación para revisar y ajustar opciones de rendimiento, privacidad y configuración de un equipo con Windows. | buscas esta función: Aplicación para revisar y ajustar opciones de rendimiento, privacidad y configuración de un equipo con Windows. | Sin API de IA en la ruta básica |
-| [universal-android-debloater-next-generation](../fichas/universal-android-debloater-next-generation.md) | Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplicaciones. | buscas esta función: Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplicaciones. | Sin API de IA en la ruta básica |
-| [40-questions](../fichas/40-questions.md) | Colección de preguntas para revisar un año o una década y reflexionar sobre objetivos, hábitos y decisiones personales. | buscas esta función: Colección de preguntas para revisar un año o una década y reflexionar sobre objetivos, hábitos y decisiones personales. | Sin API de IA en la ruta básica |
+| [ai-job-search](../fichas/ai-job-search.md) | Proyecto basado en Claude Code para evaluar vacantes, adaptar currículums y preparar cartas e entrevistas de empleo. | Tu objetivo encaja con estos ejemplos: Adaptar un CV a una oferta; Preparar preguntas para una entrevista | Sin clave propia de API de IA en la ruta básica |
+| [cleanyourtv](../fichas/cleanyourtv.md) | Herramienta para revisar y retirar aplicaciones preinstaladas de dispositivos Android TV o Google TV mediante ADB. | Tu objetivo encaja con estos ejemplos: Revisar apps preinstaladas de una TV propia; Planificar un launcher sin perder funciones necesarias | Sin clave propia de API de IA en la ruta básica |
+| [optimizerDuck](../fichas/optimizerduck.md) | Aplicación para revisar y ajustar opciones de rendimiento, privacidad y configuración de un equipo con Windows. | Tu objetivo encaja con estos ejemplos: Estudiar opciones de privacidad de Windows; Revisar un ajuste concreto de rendimiento | Sin clave propia de API de IA en la ruta básica |
+| [universal-android-debloater-next-generation](../fichas/universal-android-debloater-next-generation.md) | Interfaz para revisar y retirar paquetes preinstalados de dispositivos Android mediante ADB y listas de aplicaciones. | Tu objetivo encaja con estos ejemplos: Estudiar software preinstalado de un dispositivo; Preparar una selección revisada por modelo | Sin clave propia de API de IA en la ruta básica |
+| [40-questions](../fichas/40-questions.md) | Colección de preguntas para revisar un año o una década y reflexionar sobre objetivos, hábitos y decisiones personales. | Tu objetivo encaja con estos ejemplos: Preparar una revisión anual; Explorar prioridades y hábitos personales | Sin clave propia de API de IA en la ruta básica |
 
 ## Aprendizaje asistido
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [OpenMAIC](../fichas/openmaic.md) | Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configurables. | buscas esta función: Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configurables. | API de IA opcional |
+| [OpenMAIC](../fichas/openmaic.md) | Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configurables. | Tu objetivo encaja con estos ejemplos: Preparar una actividad de estudio; Crear un borrador de clase con materiales propios | Depende de la ruta elegida |
 
 [Comparar alternativas](../comparativas/README.md) · [Cómo empezar](../instalar.md)
 

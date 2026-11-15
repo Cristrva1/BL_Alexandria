@@ -16,34 +16,44 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La licencia NTU S-Lab restringe el uso y distingue uso no comercial; revisa autorización antes de una producción comercial |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. No copies como comando la anotación entre paréntesis de dlib en el README; los rasgos generados no prueban el aspecto original |
+| Coste | El coste depende del proveedor o la ruta. La licencia NTU S-Lab restringe el uso y distingue uso no comercial; revisa autorización antes de una producción comercial |
+| Equipo | Preparación según la ruta elegida. Python y entorno indicado; PyTorch; pesos; imagen propia de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+No copies como comando la anotación entre paréntesis de dlib en el README; los rasgos generados no prueban el aspecto original
 
 ## Qué puedes hacer con él
 
-Recupera detalles de caras en fotos de baja calidad con buena fidelidad.
+Modelo para restaurar rostros en fotos antiguas, borrosas o dañadas.
 
 ## Por qué destaca
 
-Equilibrio configurable entre calidad y fidelidad al original.
+Usos propuestos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio.
 
 ## Cómo funciona
 
-Transformer que busca en un diccionario aprendido de rasgos faciales para reconstruir la cara.
+No copies como comando la anotación entre paréntesis de dlib en el README; los rasgos generados no prueban el aspecto original
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python y entorno indicado
+- PyTorch
+- pesos
+- imagen propia de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/sczhou/CodeFormer/blob/master/README.md)
 
@@ -51,23 +61,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar CodeFormer para mi objetivo y necesito pasos guiados. Lee https://github.com/sczhou/CodeFormer/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Restaura una copia y compara dos ajustes de fidelidad con la foto original.
+
+**Qué comprobar:** Puedes observar el equilibrio entre parecido, limpieza y artefactos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Restaurar fotos familiares
-- Mejorar rostros en imágenes generadas
-- Limpiar fotos de baja calidad
+- Experimentar con restauración de una fotografía
+- Comparar restauradores sobre material propio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres restaurar rostros | quieres escalar la imagen completa; mira `real-esrgan` |
+| Tu objetivo encaja con estos ejemplos: Experimentar con restauración de una fotografía; Comparar restauradores sobre material propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Licencia no comercial (S-Lab).
+**Limitaciones:** No copies como comando la anotación entre paréntesis de dlib en el README; los rasgos generados no prueban el aspecto original
 
 ## Stack y modelos
 
-- **Stack:** Python, PyTorch
+- **Stack:** Python y entorno indicado; PyTorch; pesos; imagen propia de prueba
 - **Etiquetas:** `image` `vision` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +92,7 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Real-ESRGAN](real-esrgan.md) | 37.5k | Herramienta de superresolución y restauración para imágenes reales que reescala (2×/4×) y limpia material de baja calidad sin rehacerlo desde cero. |
+| [Real-ESRGAN](real-esrgan.md) | 37.5k | Modelo y herramientas de superresolución para ampliar y mejorar visualmente imágenes o video, con posible generación de detalles nuevos. |
 
 ## Alternativas (elige una)
 
@@ -89,9 +106,12 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/sczhou/CodeFormer/blob/master/README.md)
+- [Fuente 2](https://github.com/sczhou/CodeFormer/blob/master/LICENSE)
 
 ---
 

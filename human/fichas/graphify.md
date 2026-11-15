@@ -2,7 +2,7 @@
 
 # 🕸️ graphify
 
-> Generador de grafos de conocimiento que mapea código, PDFs, imágenes y video en diagramas interactivos.
+> CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,42 +16,51 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
+| API de IA | API de IA opcional. El código se analiza con AST sin LLM; documentos y medios usan el agente, API o backend local configurado |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | Modelos locales documentados. El paquete es graphifyy; el soporte Antigravity es explícito; la extracción semántica y la de código no tienen los mismos costes |
+| Coste | El coste depende del proveedor o la ruta. El código se analiza con AST sin LLM; documentos y medios usan el agente, API o backend local configurado |
+| Equipo | Preparación según la ruta elegida. Python 3.10+; uv o pipx; carpeta de código |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El paquete es graphifyy; el soporte Antigravity es explícito; la extracción semántica y la de código no tienen los mismos costes
 
 ## Qué puedes hacer con él
 
-Resuelve el onboarding visual: un índice textual no basta cuando hay relaciones entre archivos.
+Permite consultar símbolos y relaciones de una base de código desde distintos agentes. El análisis de código es determinista y local; documentos, PDFs, imágenes y video requieren la ruta semántica y sus dependencias. Ofrece adaptadores documentados para Claude Code, Codex y Antigravity.
 
 ## Por qué destaca
 
-Combina visualización navegable, reporte legible y datos exportables en un solo paso, ideal para auditorías y onboarding cuando un índice de texto no basta. Su soporte multi-fuente (código + documentos + multimedia) lo diferencia de los indexadores puramente de código.
+Usos propuestos: Explorar impacto de un cambio; Relacionar documentación y estructura de código.
 
 ## Cómo funciona
 
-Analiza las fuentes del proyecto y produce un grafo con nodos y relaciones; opcionalmente usa un LLM (cloud o local) para enriquecer el análisis semántico y generar descripciones de cada nodo.
+El paquete es graphifyy; el soporte Antigravity es explícito; la extracción semántica y la de código no tienen los mismos costes
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python 3.10+
+- uv o pipx
+- carpeta de código
 
-```shell
-pipx install graphify
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+uv tool install graphifyy      # install the CLI (or: pipx install graphifyy)
+graphify install               # detects your assistant and registers the skill
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Graphify-Labs/graphify/blob/v8/README.md)
 
@@ -59,21 +68,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar graphify para mi objetivo y necesito pasos guiados. Lee https://github.com/Graphify-Labs/graphify/blob/v8/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Indexa primero solo código y consulta qué funciones dependen de un módulo.
+
+**Qué comprobar:** Cada relación se puede contrastar con un archivo o símbolo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- `/graphify .` para mapear llamadas de funciones
-- Auditoría rápida de un sistema
-- Onboarding visual de un proyecto heredado
+- Explorar impacto de un cambio
+- Relacionar documentación y estructura de código
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres ver conexiones visualmente o auditar un sistema | solo necesitas índice textual barato (codegraph) o tu proyecto es trivial |
+| Tu objetivo encaja con estos ejemplos: Explorar impacto de un cambio; Relacionar documentación y estructura de código | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El paquete es graphifyy; el soporte Antigravity es explícito; la extracción semántica y la de código no tienen los mismos costes
 
 ## Stack y modelos
 
-- **Stack:** Python 3.10+, uv/pipx
+- **Stack:** Python 3.10+; uv o pipx; carpeta de código
 - **Etiquetas:** `code` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -92,7 +110,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Graphify-Labs/graphify/blob/v8/README.md)
 

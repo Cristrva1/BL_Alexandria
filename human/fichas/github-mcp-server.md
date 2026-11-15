@@ -16,39 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La herramienta no exige modelo propio; el cliente, planes GitHub y acciones del servicio tienen límites y posibles costes |
 | Claude Code | Herramienta MCP para el agente |
 | Codex | Herramienta MCP para el agente |
-| Modelos locales | La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta. |
-| Coste | El coste depende del proveedor o la ruta. Requiere autenticación y permisos de GitHub. La IA que decide las acciones pertenece al cliente MCP. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Empieza con el conjunto de herramientas y permisos de lectura necesario; no copies tokens de ejemplo como credenciales reales |
+| Coste | El coste depende del proveedor o la ruta. La herramienta no exige modelo propio; el cliente, planes GitHub y acciones del servicio tienen límites y posibles costes |
+| Equipo | Preparación según la ruta elegida. Cuenta GitHub; cliente MCP; token con permisos adecuados o autenticación remota |
 
-Puede conectarse a un cliente con soporte MCP, incluido Claude Code o Codex. Debes configurar el servidor y sus permisos.
+Empieza con el conjunto de herramientas y permisos de lectura necesario; no copies tokens de ejemplo como credenciales reales
 
 ## Qué puedes hacer con él
 
-Conecta asistentes y agentes con la plataforma GitHub: repositorios, issues, pull requests, Actions y seguridad.
+Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código.
 
 ## Por qué destaca
 
-Oficial y mantenido por GitHub, con un servidor remoto listo para usar.
+Usos propuestos: Explorar una base de código; Revisar el estado de una pull request.
 
 ## Cómo funciona
 
-Un servidor Go expone herramientas MCP que llaman a la API de GitHub con tu token u OAuth.
+Empieza con el conjunto de herramientas y permisos de lectura necesario; no copies tokens de ejemplo como credenciales reales
 
 ## Cómo empezar
 
-Se configura en tu agente. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un cliente MCP compatible.
-- Las credenciales del servicio conectado, si las pide el servidor.
+- Cuenta GitHub
+- cliente MCP
+- token con permisos adecuados o autenticación remota
 
-1. Instala o configura el servidor según su README.
-2. Añade su comando o URL en la configuración MCP de tu cliente.
-3. Comprueba que aparecen las herramientas antes de asignar una tarea.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/github/github-mcp-server/blob/main/README.md)
 
@@ -56,21 +59,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar GitHub MCP Server para mi objetivo y necesito pasos guiados. Lee https://github.com/github/github-mcp-server/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Lista archivos y lee un README de un repositorio público antes de habilitar herramientas de escritura.
+
+**Qué comprobar:** El agente devuelve contenidos y enlaces del repositorio elegido.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Triage de issues con un agente
-- Revisar PRs automáticamente
-- Consultar el estado de Actions
+- Explorar una base de código
+- Revisar el estado de una pull request
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tu agente trabaja con GitHub | usas otra forja como GitLab |
+| Tu objetivo encaja con estos ejemplos: Explorar una base de código; Revisar el estado de una pull request | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Empieza con el conjunto de herramientas y permisos de lectura necesario; no copies tokens de ejemplo como credenciales reales
 
 ## Stack y modelos
 
-- **Stack:** Go, Docker
+- **Stack:** Cuenta GitHub; cliente MCP; token con permisos adecuados o autenticación remota
 - **Etiquetas:** `mcp` `code` `go`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -87,7 +99,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/github/github-mcp-server/blob/main/README.md)
 

@@ -1,14 +1,14 @@
 [🏠 Inicio](../README.md) › [🔌 Conectar herramientas con MCP](../categorias/05-mcp-conectividad.md) › Directorios, clientes y aprendizaje
 
-# 🧩 mcp
+# 🧩 Google MCP
 
-> Núcleo del Model Context Protocol (spec y SDKs oficiales) para que herramientas, datos y clientes de IA interoperen bajo un mismo estándar abierto.
+> Directorio de servidores MCP oficiales de Google, ejemplos y orientación para desplegarlos en Google Cloud.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
 | 4.7k | Apache-2.0 | — | 2026-06-23 |
 
-**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
+**Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,56 +16,72 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Leer es gratuito; servidores, APIs Google y recursos de nube pueden generar gasto |
+| Claude Code | Depende del recurso o la configuración |
+| Codex | Depende del recurso o la configuración |
+| Antigravity | Depende del recurso o la configuración |
+| Modelos locales | La función básica no necesita un modelo. Este repositorio es google/mcp: catálogo y ejemplos Google, no el núcleo de la especificación Model Context Protocol |
+| Coste | Sin pago a un modelo en la ruta básica. Leer es gratuito; servidores, APIs Google y recursos de nube pueden generar gasto |
+| Equipo | Preparación según la ruta elegida. Navegador; servicio Google objetivo |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Este repositorio es google/mcp: catálogo y ejemplos Google, no el núcleo de la especificación Model Context Protocol
 
 ## Qué puedes hacer con él
 
-Resuelve la fragmentación: cada integración de IA dejaba de ser ad-hoc y pasa a hablar un protocolo común.
+Reúne servidores MCP de servicios Google y ejemplos de despliegue. Sirve para elegir una conexión y revisar sus credenciales y costes. No es el repositorio de la especificación general de MCP.
 
 ## Por qué destaca
 
-Es el protocolo de referencia del ecosistema, adoptado por Claude, Cursor, ChatGPT y muchos otros clientes, lo que lo convierte en la base sobre la que se construye todo lo demás. Su respaldo por Anthropic y la gobernanza abierta le dan tracción real frente a alternativas propietarias.
+Usos propuestos: Conectar un servicio Google a un agente; Aprender a alojar un servidor MCP en Cloud Run.
 
 ## Cómo funciona
 
-Define el protocolo MCP (mensajes JSON-RPC 2.0 entre cliente y servidor sobre stdio o HTTP/SSE) y ofrece SDKs en TypeScript y Python para implementar servidores que exponen tools, resources y prompts conformes.
+Este repositorio es google/mcp: catálogo y ejemplos Google, no el núcleo de la especificación Model Context Protocol
 
 ## Cómo empezar
 
-Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
+Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Navegador
+- servicio Google objetivo
+
+1. Elige un servidor oficial Google y consulta su autenticación antes de desplegar.
+2. Comprueba: Distingues servicio gestionado, ejemplo y despliegue en Cloud Run.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/google/mcp/blob/main/README.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar mcp para mi objetivo y necesito pasos guiados. Lee https://github.com/google/mcp/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Google MCP para mi objetivo y necesito pasos guiados. Lee https://github.com/google/mcp/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Elige un servidor oficial Google y consulta su autenticación antes de desplegar.
+
+**Qué comprobar:** Distingues servicio gestionado, ejemplo y despliegue en Cloud Run.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Base de interoperabilidad para tu app de IA
-- Construir servidores/clientes conforme al estándar
-- Exponer herramientas internas a cualquier asistente compatible
+- Conectar un servicio Google a un agente
+- Aprender a alojar un servidor MCP en Cloud Run
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| programas MCP a bajo nivel o necesitas conformidad estricta con la spec | prefieres un framework de alto nivel que abstraiga el protocolo (mcp-use) |
+| Tu objetivo encaja con estos ejemplos: Conectar un servicio Google a un agente; Aprender a alojar un servidor MCP en Cloud Run | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Este repositorio es google/mcp: catálogo y ejemplos Google, no el núcleo de la especificación Model Context Protocol
 
 ## Stack y modelos
 
-- **Stack:** TypeScript/Python
+- **Stack:** Navegador; servicio Google objetivo
 - **Etiquetas:** `mcp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -82,7 +98,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/google/mcp/blob/main/README.md)
 

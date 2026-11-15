@@ -16,34 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | API de IA opcional. Curso abierto; nube y APIs pueden cobrar por uso; Foundry Local ofrece una ruta offline con requisitos de equipo |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. No todas las lecciones comparten dependencias ni admiten el mismo proveedor; la ruta local documentada no convierte todos los ejemplos a local |
+| Coste | El coste depende del proveedor o la ruta. Curso abierto; nube y APIs pueden cobrar por uso; Foundry Local ofrece una ruta offline con requisitos de equipo |
+| Equipo | Preparación según la ruta elegida. Navegador; Python para los laboratorios; proveedor o Foundry Local según lección |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+No todas las lecciones comparten dependencias ni admiten el mismo proveedor; la ruta local documentada no convierte todos los ejemplos a local
 
 ## Qué puedes hacer con él
 
-Curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa. Leer el curso no requiere una API; ejecutar cada práctica puede requerir servicios o modelos específicos.
+Curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa.
 
 ## Por qué destaca
 
-Curso completo, gratuito y mantenido por Microsoft, con ejercicios prácticos en cada lección.
+Usos propuestos: Empezar a construir una app generativa; Comparar nube con Foundry Local.
 
 ## Cómo funciona
 
-Organiza lecciones y ejercicios que introducen modelos, prompts y aplicaciones.
+No todas las lecciones comparten dependencias ni admiten el mismo proveedor; la ruta local documentada no convierte todos los ejemplos a local
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- Python para los laboratorios
+- proveedor o Foundry Local según lección
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md)
 
@@ -51,21 +60,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Generative AI for Beginners para mi objetivo y necesito pasos guiados. Lee https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Lee la introducción y elige un ejemplo de generación de texto antes de preparar su entorno específico.
+
+**Qué comprobar:** Puedes distinguir modelo, aplicación y proveedor y localizar las dependencias de ese ejemplo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Formar a un equipo desde cero
-- Repasar RAG y agentes con ejemplos
-- Material para talleres
+- Empezar a construir una app generativa
+- Comparar nube con Foundry Local
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres un curso estructurado y gratuito para empezar | ya construyes con LLM y buscas recetas concretas; mira `openai-cookbook` |
+| Tu objetivo encaja con estos ejemplos: Empezar a construir una app generativa; Comparar nube con Foundry Local | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** No todas las lecciones comparten dependencias ni admiten el mismo proveedor; la ruta local documentada no convierte todos los ejemplos a local
 
 ## Stack y modelos
 
-- **Stack:** Python, TypeScript, Jupyter
+- **Stack:** Navegador; Python para los laboratorios; proveedor o Foundry Local según lección
 - **Etiquetas:** `learning` `prompts` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -88,7 +106,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/microsoft/generative-ai-for-beginners/blob/main/README.md)
 

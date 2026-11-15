@@ -2,7 +2,7 @@
 
 # 🙌 OpenHands
 
-> Plataforma de agentes que ejecutan acciones reales en entornos de desarrollo (ex-OpenDevin).
+> Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,34 +16,53 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| API de IA | API de IA opcional. Canvas usa el proveedor o plan del agente y la infraestructura elegida; ejecutar localmente la interfaz no elimina la facturación del modelo |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. El README actual presenta Agent Canvas con OpenHands, Claude Code, Codex y agentes ACP; la receta de Docker limita el puerto al equipo local |
+| Coste | El coste depende del proveedor o la ruta. Canvas usa el proveedor o plan del agente y la infraestructura elegida; ejecutar localmente la interfaz no elimina la facturación del modelo |
+| Equipo | Preparación según la ruta elegida. Node 24 o posterior; uv; repositorio de prueba; agente autenticado; Docker según backend |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El README actual presenta Agent Canvas con OpenHands, Claude Code, Codex y agentes ACP; la receta de Docker limita el puerto al equipo local
 
 ## Qué puedes hacer con él
 
-El agente puede leer y editar código, correr comandos y navegar la web dentro de un sandbox.
+Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP.
 
 ## Por qué destaca
 
-Uno de los proyectos open-source de agentes de programación más populares, con foco en acciones reales en lugar de solo respuestas. Soporta varios runtimes (local, remoto, cloud) y agentes compatibles con ACP.
+Usos propuestos: Centralizar sesiones de agentes; Preparar una automatización de ingeniería.
 
 ## Cómo funciona
 
-Un bucle agente-acción-observación ejecuta tareas dentro de un contenedor Docker aislado; backend en Python con UI web, y el agente opera sobre el filesystem, shell y navegador del sandbox.
+El README actual presenta Agent Canvas con OpenHands, Claude Code, Codex y agentes ACP; la receta de Docker limita el puerto al equipo local
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Node 24 o posterior
+- uv
+- repositorio de prueba
+- agente autenticado
+- Docker según backend
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (sh):**
+
+```
+npm install -g @openhands/agent-canvas
+agent-canvas
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/OpenHands/OpenHands/blob/main/README.md)
 
@@ -51,23 +70,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar OpenHands para mi objetivo y necesito pasos guiados. Lee https://github.com/OpenHands/OpenHands/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Arranca Agent Canvas y crea una sesión que solo examine un proyecto de ejemplo.
+
+**Qué comprobar:** Puedes reconocer agente, backend y permisos de la sesión.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Agente que edita código, corre comandos y navega
-- Automatizar tareas dev
-- Resolver issues end-to-end en un repo
+- Centralizar sesiones de agentes
+- Preparar una automatización de ingeniería
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres un agente que "haga", no solo hable | solo necesitas chat/RAG o no puedes correr Docker |
+| Tu objetivo encaja con estos ejemplos: Centralizar sesiones de agentes; Preparar una automatización de ingeniería | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** El sandbox Docker consume recursos y la ejecución de código arbitrario exige cuidar el aislamiento.
+**Limitaciones:** El README actual presenta Agent Canvas con OpenHands, Claude Code, Codex y agentes ACP; la receta de Docker limita el puerto al equipo local
 
 ## Stack y modelos
 
-- **Stack:** Python/TS, Docker
+- **Stack:** Node 24 o posterior; uv; repositorio de prueba; agente autenticado; Docker según backend
 - **Etiquetas:** `agents` `automation` `typescript` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,14 +101,14 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [ECC](ecc.md) | 303k | Colección de plugins, skills, hooks y convenciones para organizar el trabajo de agentes de código en un proyecto. |
+| [ECC](ecc.md) | 303k | Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente. |
 | [sandbox](sandbox.md) | 6.3k | Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Open SWE](open-swe.md) | 11.2k | Agente de código asíncrono de LangChain para montar tu propio agente interno de ingeniería. |
+| [Open SWE](open-swe.md) | 11.2k | Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables. |
 | [SWE-agent](swe-agent.md) | 20.8k | Agente de Princeton y Stanford que toma un issue de GitHub e intenta resolverlo solo. |
 
 ## Enlaces
@@ -92,7 +118,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/OpenHands/OpenHands/blob/main/README.md)
 

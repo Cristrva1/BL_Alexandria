@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Leer no requiere API; cada servidor, servicio y modelo tiene condiciones propias |
+| Claude Code | Depende del recurso o la configuración |
+| Codex | Depende del recurso o la configuración |
+| Antigravity | Depende del recurso o la configuración |
+| Modelos locales | La función básica no necesita un modelo. Es un directorio comunitario; sus enlaces y etiquetas no equivalen a una auditoría ni a compatibilidad uniforme |
+| Coste | Sin pago a un modelo en la ruta básica. Leer no requiere API; cada servidor, servicio y modelo tiene condiciones propias |
+| Equipo | Preparación según la ruta elegida. Navegador; cliente y tarea elegidos |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es un directorio comunitario; sus enlaces y etiquetas no equivalen a una auditoría ni a compatibilidad uniforme
 
 ## Qué puedes hacer con él
 
-Resuelve el "¿ya existe un servidor para X?" antes de que construyas el tuyo desde cero.
+Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar.
 
 ## Por qué destaca
 
-Es uno de los listados de referencia más consultados del ecosistema MCP y ayuda a no reinventar servidores que ya existen. Su organización por categorías y su actualización continua lo hacen el punto de partida habitual para descubrir integraciones.
+Usos propuestos: Buscar una conexión a archivos propios; Encontrar un servidor para una base de datos.
 
 ## Cómo funciona
 
-Lista en Markdown con enlaces a cada servidor; eliges uno, sigues su README y lo añades a la config de tu cliente MCP (normalmente vía `npx` o `pip`).
+Es un directorio comunitario; sus enlaces y etiquetas no equivalen a una auditoría ni a compatibilidad uniforme
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- cliente y tarea elegidos
+
+1. Filtra por función y sistema operativo y contrasta el README de dos servidores.
+2. Comprueba: Tienes dos candidatos con transporte, permisos y credenciales identificados.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md)
 
@@ -51,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar awesome-mcp-servers para mi objetivo y necesito pasos guiados. Lee https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Filtra por función y sistema operativo y contrasta el README de dos servidores.
+
+**Qué comprobar:** Tienes dos candidatos con transporte, permisos y credenciales identificados.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Descubrir un servidor ya hecho antes de implementar uno
-- Referencia rápida de integraciones por categoría
-- Comparar alternativas para un mismo servicio
+- Buscar una conexión a archivos propios
+- Encontrar un servidor para una base de datos
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas antes de construir | ya sabes que necesitas uno a medida y no te vale ninguno listado |
+| Tu objetivo encaja con estos ejemplos: Buscar una conexión a archivos propios; Encontrar un servidor para una base de datos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Es un directorio comunitario; sus enlaces y etiquetas no equivalen a una auditoría ni a compatibilidad uniforme
 
 ## Stack y modelos
 
-- **Stack:** Markdown
+- **Stack:** Navegador; cliente y tarea elegidos
 - **Etiquetas:** `automation` `mcp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -84,7 +100,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md)
 

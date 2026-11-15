@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos. |
-| Coste | El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan. |
-| Equipo | Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| API de IA | Depende de la ruta elegida. Admite Ollama y proveedores remotos; chat, voz, imagen y exportación pueden tener requisitos y costes distintos |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | Modelos locales documentados. La skill conecta workbenches y no incluye el coste de la clase generada; la exportación offline no demuestra generación totalmente local |
+| Coste | El coste depende del proveedor o la ruta. Admite Ollama y proveedores remotos; chat, voz, imagen y exportación pueden tener requisitos y costes distintos |
+| Equipo | Preparación según la ruta elegida. Node y pnpm; modelo; servicios de audio o imágenes según clase; material propio |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+La skill conecta workbenches y no incluye el coste de la clase generada; la exportación offline no demuestra generación totalmente local
 
 ## Qué puedes hacer con él
 
 Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configurables.
 
+## Por qué destaca
+
+Usos propuestos: Preparar una actividad de estudio; Crear un borrador de clase con materiales propios.
+
 ## Cómo funciona
 
-La aplicación coordina modelos y herramientas; el acceso de cada componente se configura antes de ejecutar sus tareas.
+La skill conecta workbenches y no incluye el coste de la clase generada; la exportación offline no demuestra generación totalmente local
 
 ## Cómo empezar
 
@@ -39,11 +44,25 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de instalación o servidor y las dependencias indicadas por el README.
+- Node y pnpm
+- modelo
+- servicios de audio o imágenes según clase
+- material propio
 
-1. Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.
-2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
-3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+git clone https://github.com/THU-MAIC/OpenMAIC.git
+cd OpenMAIC
+pnpm install
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/THU-MAIC/OpenMAIC/blob/main/README.md)
 
@@ -51,21 +70,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar OpenMAIC para mi objetivo y necesito pasos guiados. Lee https://github.com/THU-MAIC/OpenMAIC/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Genera una lección pequeña a partir de un texto ficticio y revisa objetivos, preguntas y fuentes.
+
+**Qué comprobar:** Puedes corregir la clase antes de usarla y distinguir contenido generado de fuente.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configurables.
+- Preparar una actividad de estudio
+- Crear un borrador de clase con materiales propios
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Aplicación educativa con varios agentes que prepara clases y actividades mediante modelos y recursos configurables. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Preparar una actividad de estudio; Crear un borrador de clase con materiales propios | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** La skill conecta workbenches y no incluye el coste de la clase generada; la exportación offline no demuestra generación totalmente local
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+- **Stack:** Node y pnpm; modelo; servicios de audio o imágenes según clase; material propio
 - **Etiquetas:** `aprendizaje` `agent` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,9 +103,12 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/THU-MAIC/OpenMAIC/blob/main/README.md)
+- [Fuente 2](https://github.com/vercel-labs/skills/blob/main/docs/agents.md)
 
 ---
 

@@ -256,7 +256,7 @@ def _write_entry(out: Path, scan: dict, merged: dict, by_cat: dict,
     lines.append("   `agent_tools`. Solo importa para repos `role=skill/directory`.")
     lines.append("6. **Solo para finalistas (<8):** abre `REPO_MENU_cats/NN-*.md` para")
     lines.append("   desc, `choose_if`, `avoid_if`, `combines_with` y el comando de")
-    lines.append("   instalación derivado.")
+    lines.append("   entrada documentada y la primera prueba propuesta.")
     lines.append("7. **Instalación:** comando marcado `+` documentado en la fuente · `~` por revisar ·")
     lines.append("   `?` solo clone + README.")
     lines.append("")
@@ -337,17 +337,15 @@ def _write_entry(out: Path, scan: dict, merged: dict, by_cat: dict,
 
     lines.append("---")
     lines.append("")
-    lines.append("## Cómo instalar (resumen de la lógica de derivación)")
+    lines.append("## Cómo interpretar la instalación")
     lines.append("")
-    lines.append("- `role=skill/directory` → copiar a la carpeta de skills de tu agente.")
-    lines.append("- `role=platform/runtime/app` + Docker → `git clone && docker compose up`.")
-    lines.append("- `role=library` Python → `pip install <pkg>` / `uv add <pkg>` (verifica nombre).")
-    lines.append("- `role=library` Node → `npm install <pkg>` (verifica nombre).")
-    lines.append("- `exec=cloud` → servicio gestionado: API key, no se clona.")
+    lines.append("- Usa la entrada seleccionada del README o la guía original de cada ficha; no deduzcas paquetes por el nombre del repo.")
+    lines.append("- Un bloque puede ser un comando de terminal, configuración, código o una instrucción dentro del agente: conserva su contexto.")
+    lines.append("- Para skills y MCP sigue el método documentado para tu cliente; no copies la misma configuración a todos los agentes.")
+    lines.append("- Revisa cuenta, API, servicios, licencia y modelos locales como decisiones separadas.")
     lines.append("- Marca `?` → revisa la instalación original; clonar no equivale a instalar.")
     lines.append("")
-    lines.append("> Si un comando marcado `~` falla, busca el nombre real del paquete en")
-    lines.append("> pypi.org / npmjs.com o clona el repo y lee su manifest.")
+    lines.append("> La revisión es documental. Ni el comando ni la primera prueba se ejecutaron en los proyectos de terceros.")
     lines.append("")
 
     (out / "REPO_MENU.md").write_text("\n".join(lines), encoding="utf-8")
@@ -436,12 +434,19 @@ def _detail_block(r: dict) -> str:
     b.extend(f"- {title}: {body}" for title, body in access_rows(r))
     b.append(f"**Repo:** {repo_url}")
     b.append("")
-    b.append(f"**Instalación** [{conf_icon}]: `{install}`")
+    b.append(f"**Instalación** [{conf_icon}]:")
+    if install:
+        fence='`' * max(3,max((len(run) for run in re.findall(r'`+',install)),default=0)+1)
+        b.extend(['',fence,'\n'.join(line if line.strip() else '' for line in install.splitlines()),fence,''])
     if note:
         b.append(f"_{note}_")
     b.append("")
     b.append(f"**Elige si:** {choose}")
     b.append(f"**Evita si:** {avoid}")
+    if r.get('first_try'):
+        b.append('**Primera prueba propuesta:** '+r['first_try']['action'])
+        b.append('**Qué comprobar:** '+r['first_try']['success'])
+        b.append('Revisión documental individual; instalación no ejecutada por Alexandría.')
     if combines:
         b.append("**Combina con:** " + ", ".join(f"`{c}`" for c in combines))
     if alt:
@@ -467,6 +472,9 @@ def _json_repo(r: dict) -> dict:
         "routes": access_routes(r),
         "access": access_facts(r),
         "getting_started": r.get("getting_started") or {},
+        "first_try": r.get("first_try") or {},
+        "practical_examples": r.get("practical_examples") or [],
+        "editorial_review": r.get("editorial_review") or {},
         "one": _oneline(_compact_desc(r), 160),
         "desc": _oneline(_best_desc(r), 400),
         "stack": r.get("stack") or "",

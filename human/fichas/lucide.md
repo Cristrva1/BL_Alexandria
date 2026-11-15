@@ -16,56 +16,72 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No necesita modelo ni API; licencia ISC del proyecto para usos personales y comerciales |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Elige el paquete del framework y no dependas de un número fijo de iconos que cambia con las versiones |
+| Coste | Sin pago a un modelo en la ruta básica. No necesita modelo ni API; licencia ISC del proyecto para usos personales y comerciales |
+| Equipo | Preparación según la ruta elegida. Paquete para tu framework o archivos SVG; proyecto web |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Elige el paquete del framework y no dependas de un número fijo de iconos que cambia con las versiones
 
 ## Qué puedes hacer con él
 
-Iconos limpios y uniformes, usados por shadcn/ui y muchas apps.
+Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más.
 
 ## Por qué destaca
 
-Estilo coherente y paquetes para todos los frameworks.
+Usos propuestos: Unificar iconos de navegación; Ilustrar acciones en una interfaz.
 
 ## Cómo funciona
 
-SVG optimizados exportados como componentes por framework.
+Elige el paquete del framework y no dependas de un número fijo de iconos que cambia con las versiones
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/lucide-icons/lucide/blob/main/README.md)
+- Paquete para tu framework o archivos SVG
+- proyecto web
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://lucide.dev/guide/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Lucide para mi objetivo y necesito pasos guiados. Lee https://github.com/lucide-icons/lucide/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Lucide para mi objetivo y necesito pasos guiados. Lee https://lucide.dev/guide/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Añade un icono de búsqueda junto a una etiqueta y cambia tamaño y grosor.
+
+**Qué comprobar:** El icono se ve consistente y el control conserva nombre accesible.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Iconos en una app React
-- Sistema de diseño coherente
-- Prototipos rápidos
+- Unificar iconos de navegación
+- Ilustrar acciones en una interfaz
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas iconos consistentes | buscas ilustraciones, no iconos |
+| Tu objetivo encaja con estos ejemplos: Unificar iconos de navegación; Ilustrar acciones en una interfaz | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Elige el paquete del framework y no dependas de un número fijo de iconos que cambia con las versiones
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, SVG
+- **Stack:** Paquete para tu framework o archivos SVG; proyecto web
 - **Etiquetas:** `ui` `design` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -82,7 +98,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/lucide-icons/lucide/blob/main/README.md)
 

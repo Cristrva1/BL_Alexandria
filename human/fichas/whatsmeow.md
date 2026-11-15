@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No requiere IA; infraestructura y funciones añadidas tienen costes separados |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Biblioteca de protocolo Web multidispositivo; no es una app final ni la API oficial Meta |
+| Coste | Sin pago a un modelo en la ruta básica. No requiere IA; infraestructura y funciones añadidas tienen costes separados |
+| Equipo | Preparación según la ruta elegida. Go; almacenamiento de sesión; cuenta propia de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Biblioteca de protocolo Web multidispositivo; no es una app final ni la API oficial Meta
 
 ## Qué puedes hacer con él
 
-Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web. Gestiona la sesión del cliente y permite enviar mensajes, recibir eventos y mantener el estado de la cuenta.
+Biblioteca de Go para interactuar con el protocolo multidispositivo de WhatsApp Web.
 
 ## Por qué destaca
 
-Necesitas integrar WhatsApp Web en un servicio escrito en Go.
+Usos propuestos: Construir una integración de eventos en Go; Estudiar almacenamiento de sesiones WhatsApp Web.
 
 ## Cómo funciona
 
-Gestiona la sesión del cliente y permite enviar mensajes, recibir eventos y mantener el estado de la cuenta.
+Biblioteca de protocolo Web multidispositivo; no es una app final ni la API oficial Meta
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Go
+- almacenamiento de sesión
+- cuenta propia de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/tulir/whatsmeow/blob/main/README.md)
 
@@ -51,21 +59,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar whatsmeow para mi objetivo y necesito pasos guiados. Lee https://github.com/tulir/whatsmeow/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Sigue el ejemplo de conexión y comprueba los eventos y la sesión guardada.
+
+**Qué comprobar:** Puedes reconocer el estado del cliente multidispositivo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Necesitas integrar WhatsApp Web en un servicio escrito en Go
+- Construir una integración de eventos en Go
+- Estudiar almacenamiento de sesiones WhatsApp Web
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas integrar WhatsApp Web en un servicio escrito en Go | solo necesitas una integración sencilla sin operar una plataforma |
+| Tu objetivo encaja con estos ejemplos: Construir una integración de eventos en Go; Estudiar almacenamiento de sesiones WhatsApp Web | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Usa un protocolo no oficial; no equivale a la API empresarial de Meta.
+**Limitaciones:** Biblioteca de protocolo Web multidispositivo; no es una app final ni la API oficial Meta
 
 ## Stack y modelos
 
-- **Stack:** Go, Go modules
+- **Stack:** Go; almacenamiento de sesión; cuenta propia de prueba
 - **Etiquetas:** `whatsapp` `go` `golang` `whatsapp-web`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -82,7 +99,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/tulir/whatsmeow/blob/main/README.md)
 

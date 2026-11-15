@@ -16,58 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. Varias rutas no usan claves; transcripción puede requerir Groq u OpenAI y otros canales usan servicios, sesiones o proxies |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Compatibilidad por confirmar |
+| Modelos locales | La función básica no necesita un modelo. El paquete homónimo de PyPI no es este proyecto; usa la dirección GitHub del instalador oficial |
+| Coste | El coste depende del proveedor o la ruta. Varias rutas no usan claves; transcripción puede requerir Groq u OpenAI y otros canales usan servicios, sesiones o proxies |
+| Equipo | Preparación según la ruta elegida. Agente con terminal; uv; sesiones de sitios solo cuando corresponda |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El paquete homónimo de PyPI no es este proyecto; usa la dirección GitHub del instalador oficial
 
 ## Qué puedes hacer con él
 
-Un solo comando para que el agente lea y busque en redes y plataformas populares, incluidas chinas como Bilibili y XiaoHongShu.
+CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs.
 
 ## Por qué destaca
 
-Evita pagar APIs caras para que tu agente consulte redes sociales.
+Usos propuestos: Leer una discusión pública para investigación; Obtener transcripciones de un video permitido.
 
 ## Cómo funciona
 
-Combina scrapers y clientes de cada plataforma detrás de una interfaz de línea de comandos que el agente invoca.
+El paquete homónimo de PyPI no es este proyecto; usa la dirección GitHub del instalador oficial
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/Panniantong/Agent-Reach/blob/main/README.md)
+- Agente con terminal
+- uv
+- sesiones de sitios solo cuando corresponda
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://github.com/Panniantong/Agent-Reach/blob/main/docs/install.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Agent-Reach para mi objetivo y necesito pasos guiados. Lee https://github.com/Panniantong/Agent-Reach/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Agent-Reach para mi objetivo y necesito pasos guiados. Lee https://github.com/Panniantong/Agent-Reach/blob/main/docs/install.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Lista los canales y lee un README público de GitHub antes de añadir canales opcionales.
+
+**Qué comprobar:** Puedes distinguir canales disponibles, autenticados y experimentales.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Agente que lee hilos de Reddit
-- Resumir comentarios de YouTube
-- Investigar repos de GitHub
+- Leer una discusión pública para investigación
+- Obtener transcripciones de un video permitido
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tu agente necesita leer redes sociales sin APIs de pago | necesitas datos con garantías de términos de servicio |
+| Tu objetivo encaja con estos ejemplos: Leer una discusión pública para investigación; Obtener transcripciones de un video permitido | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Puede violar términos de servicio de algunas plataformas; úsalo con cuidado.
+**Limitaciones:** El paquete homónimo de PyPI no es este proyecto; usa la dirección GitHub del instalador oficial
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Agente con terminal; uv; sesiones de sitios solo cuando corresponda
 - **Etiquetas:** `scraping` `research` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,7 +106,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Panniantong/Agent-Reach/blob/main/README.md)
 

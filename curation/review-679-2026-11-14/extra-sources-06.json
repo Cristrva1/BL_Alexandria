@@ -1,0 +1,6 @@
+{
+ "mem0":["https://docs.mem0.ai/components/llms/models/ollama", "https://github.com/vercel-labs/skills/blob/main/docs/agents.md"],
+ "mempalace":["https://antigravity.google/docs/ide-mcp"],
+ "cognee":["https://github.com/topoteretes/cognee/blob/main/cognee-mcp/README.md", "https://antigravity.google/docs/ide-mcp"],
+ "graphiti":["https://github.com/getzep/graphiti/blob/main/mcp_server/README.md", "https://antigravity.google/docs/ide-mcp"]
+}

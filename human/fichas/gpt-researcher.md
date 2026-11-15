@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 30.7k | Apache-2.0 | Python | 2026-06-23 |
 
-**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,42 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| API de IA | API de IA opcional. Admite endpoints locales compatibles o API; búsqueda y otras herramientas pueden cobrar aparte |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. El MCP está ahora en gptr-mcp, proyecto compañero con stdio y transportes de red; el skill y el servidor de investigación requieren configuración propia |
+| Coste | El coste depende del proveedor o la ruta. Admite endpoints locales compatibles o API; búsqueda y otras herramientas pueden cobrar aparte |
+| Equipo | Preparación según la ruta elegida. Python 3.11+; proveedor y buscador; cliente MCP solo si eliges esa ruta |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El MCP está ahora en gptr-mcp, proyecto compañero con stdio y transportes de red; el skill y el servidor de investigación requieren configuración propia
 
 ## Qué puedes hacer con él
 
-Planifica sub-preguntas, busca fuentes y redacta un informe con referencias.
+Agente autónomo que investiga en línea y consolida reportes citados y estructurados.
 
 ## Por qué destaca
 
-Muy popular para research profundo; automatiza horas de búsqueda recopilando y citando lo más relevante. Su arquitectura planificador-buscador-redactor es un patrón de referencia para research con agentes.
+Usos propuestos: Preparar un informe de mercado con fuentes; Investigar documentación técnica.
 
 ## Cómo funciona
 
-Un agente planificador genera consultas, agentes de búsqueda recopilan fuentes web (vía Tavily y otros) y un redactor sintetiza el reporte; backend Python (FastAPI) con frontend Next.js.
+El MCP está ahora en gptr-mcp, proyecto compañero con stdio y transportes de red; el skill y el servidor de investigación requieren configuración propia
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python 3.11+
+- proveedor y buscador
+- cliente MCP solo si eliges esa ruta
 
-```shell
-pip install gpt-researcher
-```
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/assafelovic/gpt-researcher/blob/main/README.md)
 
@@ -59,21 +60,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar gpt-researcher para mi objetivo y necesito pasos guiados. Lee https://github.com/assafelovic/gpt-researcher/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Haz una pregunta acotada y verifica dos fuentes antes de reutilizar el informe.
+
+**Qué comprobar:** Puedes recuperar contexto y enlaces que respaldan conclusiones.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Análisis de un tema con fuentes
-- Reportes en PDF/Markdown
-- Briefing automático antes de una decisión
+- Preparar un informe de mercado con fuentes
+- Investigar documentación técnica
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas research profundo citado | solo quieres una respuesta corta o un chat simple |
+| Tu objetivo encaja con estos ejemplos: Preparar un informe de mercado con fuentes; Investigar documentación técnica | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El MCP está ahora en gptr-mcp, proyecto compañero con stdio y transportes de red; el skill y el servidor de investigación requieren configuración propia
 
 ## Stack y modelos
 
-- **Stack:** Python, Next.js, FastAPI
+- **Stack:** Python 3.11+; proveedor y buscador; cliente MCP solo si eliges esa ruta
 - **Etiquetas:** `automation` `research` `python` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -100,9 +110,12 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/assafelovic/gpt-researcher/blob/main/README.md)
+- [Fuente 2](https://github.com/assafelovic/gptr-mcp/blob/master/README.md)
 
 ---
 

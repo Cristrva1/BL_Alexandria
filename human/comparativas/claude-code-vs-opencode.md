@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 | ⭐ Estrellas | 156k | 227k |
-| Elígelo si… | quieres el agente de código más capaz para tareas largas en tu repo | quieres un agente de código abierto y multi-modelo |
-| Evítalo si… | necesitas un agente totalmente abierto y multi-modelo; mira `opencode` | prefieres la experiencia oficial de un proveedor; mira `claude-code` o `codex` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Entender código sin editar; Preparar una propuesta de corrección | Tu objetivo encaja con estos ejemplos: Comprender un repositorio nuevo; Planificar una corrección pequeña |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | ☁️ cloud/API | 🔀 híbrido |
-| API de IA | API de IA opcional | Depende de la ruta elegida |
+| API de IA | API de IA opcional | API de IA opcional |
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
-| Modelos locales | Modelo local no documentado | Modelo local no documentado |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | — | MIT |
-| Instalación | `curl -fsSL https://claude.ai/install.sh \| bash` | `curl -fsSL https://opencode.ai/install \| bash` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **Claude Code** si quieres el agente de código más capaz para tareas largas en tu repo.
-- Elige **OpenCode** si quieres un agente de código abierto y multi-modelo.
+- Elige **Claude Code** si Tu objetivo encaja con estos ejemplos: Entender código sin editar; Preparar una propuesta de corrección.
+- Elige **OpenCode** si Tu objetivo encaja con estos ejemplos: Comprender un repositorio nuevo; Planificar una corrección pequeña.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

@@ -2,7 +2,7 @@
 
 # 📓 data-science-ipython-notebooks
 
-> Gran colección de notebooks de ciencia de datos y machine learning que cubre desde pandas y NumPy hasta deep learning y big data, con ejemplos listos para ejecutar.
+> Colección educativa histórica de notebooks de datos y machine learning; las dependencias pueden requerir adaptación.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Lectura libre; nube y cómputo opcionales tienen sus costes |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Colección histórica con tecnologías y versiones antiguas; listo para leer no equivale a ejecutable sin adaptación en un entorno actual |
+| Coste | Sin pago a un modelo en la ruta básica. Lectura libre; nube y cómputo opcionales tienen sus costes |
+| Equipo | Preparación según la ruta elegida. Navegador para lectura; Python y dependencias históricas para ejecutar |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Colección histórica con tecnologías y versiones antiguas; listo para leer no equivale a ejecutable sin adaptación en un entorno actual
 
 ## Qué puedes hacer con él
 
-Resuelve el "aprender DS con ejemplos reales" sin tener que montarlos tú desde cero.
+Colección educativa histórica de notebooks de datos y machine learning; las dependencias pueden requerir adaptación.
 
 ## Por qué destaca
 
-Uno de los repositorios de referencia más populares para aprender DS de forma práctica, con material abundante y bien organizado por temas. Su antigüedad y su volumen de notebooks lo convierten en un clásico para consulta y estudio.
+Usos propuestos: Aprender análisis exploratorio; Estudiar ejemplos de redes neuronales.
 
 ## Cómo funciona
 
-Son notebooks Jupyter autocontenidos que se abren y ejecutan localmente, mostrando explicaciones y código sobre las librerías clásicas del ecosistema Python (pandas, NumPy, scikit-learn, etc.).
+Colección histórica con tecnologías y versiones antiguas; listo para leer no equivale a ejecutable sin adaptación en un entorno actual
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador para lectura
+- Python y dependencias históricas para ejecutar
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/donnemartin/data-science-ipython-notebooks/blob/master/README.md)
 
@@ -51,21 +59,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar data-science-ipython-notebooks para mi objetivo y necesito pasos guiados. Lee https://github.com/donnemartin/data-science-ipython-notebooks/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Abre un notebook introductorio de pandas y revisa entrada, transformación y tabla resultante.
+
+**Qué comprobar:** Puedes seguir una operación antes de preparar un entorno.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Aprender pandas/NumPy/ML
-- Consultar ejemplos prácticos
-- Material de referencia para clases o autoestudio
+- Aprender análisis exploratorio
+- Estudiar ejemplos de redes neuronales
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| estudias/consultas DS con ejemplos ejecutables | buscas una librería, no ejemplos, o necesitas material actualizado a las versiones más recientes |
+| Tu objetivo encaja con estos ejemplos: Aprender análisis exploratorio; Estudiar ejemplos de redes neuronales | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Colección histórica con tecnologías y versiones antiguas; listo para leer no equivale a ejecutable sin adaptación en un entorno actual
 
 ## Stack y modelos
 
-- **Stack:** Python, Jupyter
+- **Stack:** Navegador para lectura; Python y dependencias históricas para ejecutar
 - **Etiquetas:** `data` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -82,7 +99,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/donnemartin/data-science-ipython-notebooks/blob/master/README.md)
 

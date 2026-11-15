@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
 | ⭐ Estrellas | 156k | 135k |
-| Elígelo si… | quieres el agente de código más capaz para tareas largas en tu repo | usas ChatGPT u OpenAI y quieres un agente abierto en terminal |
-| Evítalo si… | necesitas un agente totalmente abierto y multi-modelo; mira `opencode` | trabajas con Claude como modelo principal; mira `claude-code` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Entender código sin editar; Preparar una propuesta de corrección | Tu objetivo encaja con estos ejemplos: Explorar un proyecto; Preparar un cambio y revisar su diff |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | ☁️ cloud/API | ☁️ cloud/API |
 | API de IA | API de IA opcional | API de IA opcional |
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
-| Modelos locales | Modelo local no documentado | Modelo local no documentado |
+| Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | — | Apache-2.0 |
-| Instalación | `curl -fsSL https://claude.ai/install.sh \| bash` | `npm i -g @openai/codex` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **Claude Code** si quieres el agente de código más capaz para tareas largas en tu repo.
-- Elige **Codex CLI** si usas ChatGPT u OpenAI y quieres un agente abierto en terminal.
+- Elige **Claude Code** si Tu objetivo encaja con estos ejemplos: Entender código sin editar; Preparar una propuesta de corrección.
+- Elige **Codex CLI** si Tu objetivo encaja con estos ejemplos: Explorar un proyecto; Preparar un cambio y revisar su diff.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

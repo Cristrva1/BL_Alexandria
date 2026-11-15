@@ -1,8 +1,8 @@
 [🏠 Inicio](../README.md) › [🧠 Skills, plugins y métodos para agentes](../categorias/02-skills-prompts-gu-as-de-agente.md) › Catálogos y marketplaces de skills
 
-# 🗂️ Agentic Awesome Skills
+# 🗂️ Agentic Awesome Skills (AAS)
 
-> Biblioteca comunitaria de más de 2.800 skills SKILL.md para Claude Code, Codex, Cursor y Gemini CLI, con instalador npx y MCP local.
+> Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Las instrucciones consumen el agente; código, contenido original e imports tienen licencias distintas |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. Ahora se llama Agentic Awesome Skills. La publicación npm está pausada: usar GitHub y la guía vigente, no el antiguo instalador npx |
+| Coste | Consumo del agente que ya utilizas. Las instrucciones consumen el agente; código, contenido original e imports tienen licencias distintas |
+| Equipo | Preparación según la ruta elegida. GitHub CLI con gh skill, o la ruta ZIP indicada por la guía;  agente destino |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+Ahora se llama Agentic Awesome Skills. La publicación npm está pausada: usar GitHub y la guía vigente, no el antiguo instalador npx
 
 ## Qué puedes hacer con él
 
-Antes llamada Antigravity Awesome Skills, reúne miles de skills por dominio (desarrollo, seguridad, DevOps, datos, marketing) instalables en Claude Code, Codex, Cursor, Gemini CLI, Kiro, OpenCode y otros agentes. Incluye bundles por rol, plugins temáticos y AAS Core, un MCP local para que el agente busque en el catálogo y elija skills antes de instalarlas.
+Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills.
 
 ## Por qué destaca
 
-Destaca por volumen y por su instalador, que filtra por categoría, nivel de riesgo o lista exacta de ids. Con AAS Core el agente consulta el catálogo bajo demanda en lugar de cargar miles de skills en su contexto.
+Usos propuestos: Añadir una skill de brainstorming a un proyecto; Seleccionar un pequeño conjunto de instrucciones de diseño y seguridad.
 
 ## Cómo funciona
 
-Cada skill vive en `skills/<nombre>/SKILL.md` y un índice JSON describe el catálogo. El CLI de npm copia la selección a la carpeta de skills de cada agente y AAS Core expone el catálogo como servidor MCP local con vista previa del plan.
+Ahora se llama Agentic Awesome Skills. La publicación npm está pausada: usar GitHub y la guía vigente, no el antiguo instalador npx
 
 ## Cómo empezar
 
@@ -43,35 +44,53 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- GitHub CLI con gh skill, o la ruta ZIP indicada por la guía
+-  agente destino
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (sh):**
+
+```
+gh skill preview sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md@v20.8.0
+gh skill install sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md --agent codex --scope user --pin v20.8.0
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/sickn33/agentic-awesome-skills/blob/main/README.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Agentic Awesome Skills para mi objetivo y necesito pasos guiados. Lee https://github.com/sickn33/agentic-awesome-skills/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Agentic Awesome Skills (AAS) para mi objetivo y necesito pasos guiados. Lee https://github.com/sickn33/agentic-awesome-skills/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Previsualiza una skill concreta y revisa el plan antes de instalarla en un agente.
+
+**Qué comprobar:** El destino contiene la skill seleccionada y puedes revisar los archivos añadidos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Instalar solo las skills de un dominio con filtros de categoría
-- Dejar que Codex o Claude elijan skills a través del MCP AAS Core
-- Dar el mismo set de skills a varios agentes de código
+- Añadir una skill de brainstorming a un proyecto
+- Seleccionar un pequeño conjunto de instrucciones de diseño y seguridad
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres cubrir muchos dominios con skills ya escritas y trabajas con uno o varios agentes de código | prefieres pocas skills oficiales y revisadas; mira `anthropic-skills` o `awesome-agent-skills` |
+| Tu objetivo encaja con estos ejemplos: Añadir una skill de brainstorming a un proyecto; Seleccionar un pequeño conjunto de instrucciones de diseño y seguridad | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La calidad varía entre skills de terceros y algunas dependen de servicios externos de pago; revísalas antes de instalarlas (por ejemplo con `skillspector`).
+**Limitaciones:** Ahora se llama Agentic Awesome Skills. La publicación npm está pausada: usar GitHub y la guía vigente, no el antiguo instalador npx
 
 ## Stack y modelos
 
-- **Stack:** Markdown, JavaScript (Node.js 22+), Python, MCP
+- **Stack:** GitHub CLI con gh skill, o la ruta ZIP indicada por la guía;  agente destino
 - **Etiquetas:** `skills` `coding-agent` `mcp` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,7 +108,7 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 |---|---:|---|
 | [Awesome Agent Skills](awesome-agent-skills.md) | 37.2k | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. |
 | [Awesome Claude Skills](awesome-claude-skills.md) | 79.5k | Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps. |
-| [wshobson/agents](wshobson-agents.md) | 42.5k | Marketplace de 94 plugins con más de 200 subagentes, 185 skills y 105 comandos para Claude Code, Codex, Cursor, OpenCode y Copilot. |
+| [wshobson/agents](wshobson-agents.md) | 42.5k | Colección de plugins, agentes y skills con adaptadores documentados para Claude Code, Codex, Antigravity y otros clientes. |
 
 ## Enlaces
 
@@ -98,7 +117,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/sickn33/agentic-awesome-skills/blob/main/README.md)
 

@@ -22,12 +22,12 @@ flowchart LR
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [gpt-researcher](../fichas/gpt-researcher.md) | Orquestador: planifica preguntas, delega y redacta el informe | 30.7k | `pip install gpt-researcher` |
-| 2 | [SearXNG](../fichas/searxng.md) | Buscador privado y sin claves de API | 39.6k | `docker run -d -p 8080:8080 searxng/searxng` |
-| 3 | [crawl4ai](../fichas/crawl4ai.md) | Convierte cada página en Markdown limpio para el LLM | 87.4k | `pip install crawl4ai` |
-| 4 | [browser-use](../fichas/browser-use.md) | Navega sitios dinámicos o con login | 121k | `pip install browser-use` |
-| 5 | [markitdown](../fichas/markitdown.md) | Ingiere PDFs y documentos locales | 195k | `pip install markitdown` |
-| 6 | [langfuse](../fichas/langfuse.md) | Trazas, costos y depuración de cada paso | 37.4k | Docker Compose para self-host (Postgres + backend + frontend) o cuenta cloud; SDKs vía… |
+| 1 | [gpt-researcher](../fichas/gpt-researcher.md) | Orquestador: planifica preguntas, delega y redacta el informe | 30.7k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 2 | [SearXNG](../fichas/searxng.md) | Buscador privado y sin claves de API | 39.6k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 3 | [crawl4ai](../fichas/crawl4ai.md) | Convierte cada página en Markdown limpio para el LLM | 87.4k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 4 | [browser-use](../fichas/browser-use.md) | Navega sitios dinámicos o con login | 121k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 5 | [markitdown](../fichas/markitdown.md) | Ingiere PDFs y documentos locales | 195k | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| 6 | [langfuse](../fichas/langfuse.md) | Trazas, costos y depuración de cada paso | 37.4k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## 🔌 Cómo se conecta
 

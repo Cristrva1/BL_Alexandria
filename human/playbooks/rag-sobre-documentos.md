@@ -22,12 +22,12 @@ flowchart LR
 
 | # | Repo | Papel en la receta | ⭐ | Instalación |
 |---:|---|---|---:|---|
-| 1 | [Docling](../fichas/docling.md) | Extrae texto, tablas y estructura de los documentos | 70.6k | `pip install docling` |
-| 2 | [LlamaIndex](../fichas/llama-index.md) | Fragmenta, indexa y recupera; orquesta las consultas | 52.9k | `pip install llama-index` |
-| 3 | [Qdrant](../fichas/qdrant.md) | Base vectorial para los embeddings | 35.6k | `docker run -p 6333:6333 qdrant/qdrant` |
-| 4 | [litellm](../fichas/litellm.md) | Acceso unificado al LLM (local o en la nube) | 63.3k | `pip install litellm` |
-| 5 | [Ragas](../fichas/ragas.md) | Evalúa la calidad de recuperación y respuesta | 16.3k | `pip install ragas` |
-| 6 | [langfuse](../fichas/langfuse.md) | Trazas y costos en producción | 37.4k | Docker Compose para self-host (Postgres + backend + frontend) o cuenta cloud; SDKs vía… |
+| 1 | [Docling](../fichas/docling.md) | Extrae texto, tablas y estructura de los documentos | 70.6k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 2 | [LlamaIndex](../fichas/llama-index.md) | Fragmenta, indexa y recupera; orquesta las consultas | 52.9k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 3 | [Qdrant](../fichas/qdrant.md) | Base vectorial para los embeddings | 35.6k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 4 | [litellm](../fichas/litellm.md) | Acceso unificado al LLM (local o en la nube) | 63.3k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 5 | [Ragas](../fichas/ragas.md) | Evalúa la calidad de recuperación y respuesta | 16.3k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
+| 6 | [langfuse](../fichas/langfuse.md) | Trazas y costos en producción | 37.4k | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## 🔌 Cómo se conecta
 

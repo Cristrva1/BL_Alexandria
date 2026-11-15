@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | API de IA opcional. Usa el agente y posibles proveedores de imagen o voz; no incluye créditos ni acceso a patrocinadores |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Depende del recurso o la configuración |
+| Modelos locales | Modelo local no documentado. Claude Code es la ruta más probada por el autor y Codex figura como CLI compatible; logos de patrocinadores no prueban integración ni precio de sus servicios |
+| Coste | El coste depende del proveedor o la ruta. Usa el agente y posibles proveedores de imagen o voz; no incluye créditos ni acceso a patrocinadores |
+| Equipo | Preparación según la ruta elegida. Python 3.10–3.14; agente con archivos; dependencias; documento y plantilla autorizados |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+Claude Code es la ruta más probada por el autor y Codex figura como CLI compatible; logos de patrocinadores no prueban integración ni precio de sus servicios
 
 ## Qué puedes hacer con él
 
-Herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documentos. Necesita un agente con acceso a un modelo; los servicios opcionales de imágenes o contenido se revisan por separado.
+Herramientas e instrucciones para que un agente cree presentaciones PowerPoint editables a partir de documentos.
 
 ## Por qué destaca
 
-Entrega un PPTX realmente editable (formas y textos nativos) en lugar de un PDF plano, ahorrando el tedio de maquetar slides desde cero; útil para borradores rápidos a partir de un informe.
+Usos propuestos: Preparar una presentación de un informe; Adaptar una plantilla corporativa.
 
 ## Cómo funciona
 
-El agente prepara y genera las diapositivas con las herramientas del proyecto.
+Claude Code es la ruta más probada por el autor y Codex figura como CLI compatible; logos de patrocinadores no prueban integración ni precio de sus servicios
 
 ## Cómo empezar
 
@@ -43,40 +44,47 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y el entorno Python de la ruta documentada.
+- Python 3.10–3.14
+- agente con archivos
+- dependencias
+- documento y plantilla autorizados
 
-1. Añade la skill o abre las instrucciones del proyecto en tu agente.
-2. Entrega un documento fuente y especifica audiencia, contenido y formato de la presentación.
-3. Genera un PPTX editable y ábrelo para revisar contenido y diseño. Las generaciones externas de imágenes se configuran por separado.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-**Comando de entrada documentado:**
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
-```shell
-npx skills add hugohe3/ppt-master
-```
-
-Comando presente en el README revisado; no es una prueba de instalación.
-
-[Instrucciones originales de instalación](https://github.com/hugohe3/ppt-master/blob/main/README.md)
+[Instrucciones originales de instalación](https://github.com/hugohe3/ppt-master/blob/main/docs/getting-started.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar ppt-master para mi objetivo y necesito pasos guiados. Lee https://github.com/hugohe3/ppt-master/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar ppt-master para mi objetivo y necesito pasos guiados. Lee https://github.com/hugohe3/ppt-master/blob/main/docs/getting-started.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Genera tres diapositivas de un texto breve y revisa cifras, editabilidad y fuentes en PowerPoint.
+
+**Qué comprobar:** Puedes editar formas y comprobar que el contenido coincide con el documento.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Pasar un informe Markdown a un borrador de slides corporativos en segundos
-- Generar una primera versión editable de una presentación a partir de notas
+- Preparar una presentación de un informe
+- Adaptar una plantilla corporativa
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres PPTX editable de Office rápido | prefieres slides web por código (reveal.js) o control de diseño pixel-perfect |
+| Tu objetivo encaja con estos ejemplos: Preparar una presentación de un informe; Adaptar una plantilla corporativa | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Claude Code es la ruta más probada por el autor y Codex figura como CLI compatible; logos de patrocinadores no prueban integración ni precio de sus servicios
 
 ## Stack y modelos
 
-- **Stack:** Python, python-pptx
+- **Stack:** Python 3.10–3.14; agente con archivos; dependencias; documento y plantilla autorizados
 - **Etiquetas:** `slides` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -100,7 +108,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/hugohe3/ppt-master/blob/main/README.md)
 

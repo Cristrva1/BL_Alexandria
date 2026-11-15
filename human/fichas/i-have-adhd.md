@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Usa el modelo o plan del anfitrión sin API adicional |
 | Claude Code | Dentro del agente: skills o instrucciones |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Codex | Dentro del agente: skills o instrucciones |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. INSTALL.md documenta Claude Code, Codex y Antigravity CLI; la activación y always-on difieren entre hosts; es formato de comunicación, no intervención médica |
+| Coste | Consumo del agente que ya utilizas. Usa el modelo o plan del anfitrión sin API adicional |
+| Equipo | Preparación según la ruta elegida. Agente soportado; preferencia personal de presentación |
 
-Consume el acceso y los límites del agente donde lo configures. No incluye servicios externos de generación, datos o alojamiento.
+INSTALL.md documenta Claude Code, Codex y Antigravity CLI; la activación y always-on difieren entre hosts; es formato de comunicación, no intervención médica
 
 ## Qué puedes hacer con él
 
 Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos.
 
+## Por qué destaca
+
+Usos propuestos: Reducir distracciones en instrucciones; Organizar una explicación de trabajo.
+
 ## Cómo funciona
 
-El agente lee instrucciones del proyecto y utiliza las herramientas y dependencias que declares para la tarea.
+INSTALL.md documenta Claude Code, Codex y Antigravity CLI; la activación y always-on difieren entre hosts; es formato de comunicación, no intervención médica
 
 ## Cómo empezar
 
@@ -39,33 +44,45 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- El agente compatible indicado por el proyecto y acceso activo al modelo de ese agente.
+- Agente soportado
+- preferencia personal de presentación
 
-1. Abre la instalación del README y elige la ruta para el agente que utilizas.
-2. Añade la skill o el plugin concreto; prepara los programas y servicios que indique su documentación.
-3. Pide una primera tarea pequeña sobre archivos de prueba y comprueba qué herramientas y cuentas activa.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-[Instrucciones originales de instalación](https://github.com/ayghri/i-have-adhd/blob/main/README.md)
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://github.com/ayghri/i-have-adhd/blob/main/INSTALL.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar i-have-adhd para mi objetivo y necesito pasos guiados. Lee https://github.com/ayghri/i-have-adhd/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar i-have-adhd para mi objetivo y necesito pasos guiados. Lee https://github.com/ayghri/i-have-adhd/blob/main/INSTALL.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Activa el skill y pide explicar cómo crear una carpeta vacía para comparar la estructura de respuesta.
+
+**Qué comprobar:** Puedes reconocer una respuesta directa y pasos delimitados.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos.
+- Reducir distracciones en instrucciones
+- Organizar una explicación de trabajo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Skill para que un agente presente primero la respuesta y organice su salida con menos distracciones y rodeos. | necesitas un producto autónomo y esta pieza requiere un anfitrión compatible |
+| Tu objetivo encaja con estos ejemplos: Reducir distracciones en instrucciones; Organizar una explicación de trabajo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** INSTALL.md documenta Claude Code, Codex y Antigravity CLI; la activación y always-on difieren entre hosts; es formato de comunicación, no intervención médica
 
 ## Stack y modelos
 
-- **Stack:** Python, package.json
+- **Stack:** Agente soportado; preferencia personal de presentación
 - **Etiquetas:** `escritura` `skill` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,9 +92,12 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ayghri/i-have-adhd/blob/main/README.md)
+- [Fuente 2](https://github.com/ayghri/i-have-adhd/blob/main/INSTALL.md)
 
 ---
 

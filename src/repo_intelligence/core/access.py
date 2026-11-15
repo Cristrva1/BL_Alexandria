@@ -8,7 +8,7 @@ from __future__ import annotations
 from typing import Any
 
 API_LABELS = {
-    "not_required": "Sin API de IA en la ruta básica",
+    "not_required": "Sin clave propia de API de IA en la ruta básica",
     "optional": "API de IA opcional",
     "required": "API de IA necesaria",
     "depends": "Depende de la ruta elegida",
@@ -19,6 +19,8 @@ CLIENT_LABELS = {
     "host": "Dentro del agente: skills o instrucciones",
     "connector": "Herramienta MCP para el agente",
     "project_integration": "Integración documentada por el proyecto",
+    "reference": "Referencia para la herramienta; no es una integración",
+    "depends": "Depende del recurso o la configuración",
     "not_documented": "Integración no documentada",
     "unconfirmed": "Compatibilidad por confirmar",
 }
@@ -36,15 +38,17 @@ COST_LABELS = {
     "unconfirmed": "Coste por confirmar",
 }
 HARDWARE_LABELS = {
+    "prerequisites": "Preparación según la ruta elegida",
     "ordinary": "Equipo normal; revisar dependencias",
     "model_dependent": "Memoria y GPU según el modelo",
     "gpu": "GPU o infraestructura especializada",
     "unknown": "Requisitos por confirmar",
 }
 ROUTE_LABELS = {
-    "no_api": "Sin API de IA",
+    "no_api": "Sin clave de API de IA",
     "claude": "Con Claude Code",
     "codex": "Con Codex",
+    "antigravity": "Con Antigravity",
     "local_model": "Con modelos locales",
     "api": "Con API de IA",
     "reference": "Leer y aprender",
@@ -59,7 +63,7 @@ def access_facts(repo: dict[str, Any]) -> dict[str, Any]:
     access = dict(raw) if isinstance(raw, dict) else {}
     for key, default in {
         "api": "unconfirmed", "local_model": "unconfirmed", "claude_code": "not_documented",
-        "codex": "not_documented", "cost": "unconfirmed", "hardware": "unknown",
+        "codex": "not_documented", "antigravity": "not_documented", "cost": "unconfirmed", "hardware": "unknown",
         "scope": "Revisar la documentación original antes de elegir cómo ejecutarlo.",
         "api_note": "No se ha verificado si la ruta elegida necesita una API de IA.",
         "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
@@ -75,19 +79,22 @@ def access_facts(repo: dict[str, Any]) -> dict[str, Any]:
 def access_routes(repo: dict[str, Any]) -> list[str]:
     access = access_facts(repo)
     routes = []
-    if (access["api"] in {"not_required", "optional"} or access["local_model"] == "supported") and access["cost"] != "host_plan":
+    # A local component does not remove required APIs elsewhere in the pipeline.
+    if access["api"] in {"not_required", "optional"}:
         routes.append("no_api")
     if access["claude_code"] in SUPPORTED_CLIENT:
         routes.append("claude")
     if access["codex"] in SUPPORTED_CLIENT:
         routes.append("codex")
+    if access["antigravity"] in SUPPORTED_CLIENT:
+        routes.append("antigravity")
     if access["local_model"] == "supported":
         routes.append("local_model")
     if access["api"] in {"optional", "required", "depends"}:
         routes.append("api")
     if access.get("mode") == "reference":
         routes.append("reference")
-    if access["review"] == "pending" or access["api"] == "unconfirmed":
+    if access["review"] == "pending" or access["api"] == "unconfirmed" or access["cost"] == "unconfirmed":
         routes.append("review")
     return routes
 
@@ -103,6 +110,7 @@ def access_rows(repo: dict[str, Any]) -> list[tuple[str, str]]:
         ("API de IA", API_LABELS.get(access["api"], API_LABELS["unconfirmed"]) + ". " + access["api_note"]),
         ("Claude Code", CLIENT_LABELS.get(access["claude_code"], CLIENT_LABELS["unconfirmed"])),
         ("Codex", CLIENT_LABELS.get(access["codex"], CLIENT_LABELS["unconfirmed"])),
+        ("Antigravity", CLIENT_LABELS.get(access["antigravity"], CLIENT_LABELS["unconfirmed"])),
         ("Modelos locales", LOCAL_LABELS.get(access["local_model"], LOCAL_LABELS["unconfirmed"]) + ". " + access["local_note"]),
         ("Coste", COST_LABELS.get(access["cost"], COST_LABELS["unconfirmed"]) + ". " + access["cost_note"]),
         ("Equipo", HARDWARE_LABELS.get(access["hardware"], HARDWARE_LABELS["unknown"]) + ". " + access["hardware_note"]),

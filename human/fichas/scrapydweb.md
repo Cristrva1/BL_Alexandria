@@ -16,42 +16,48 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No necesita IA; cada servidor y el almacenamiento de logs tienen recursos propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El panel administra Scrapyd y no lo sustituye; configura acceso antes de exponer hosts remotos |
+| Coste | Sin pago a un modelo en la ruta básica. No necesita IA; cada servidor y el almacenamiento de logs tienen recursos propios |
+| Equipo | Preparación según la ruta elegida. Python; Scrapyd iniciado en los hosts que administrarás |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El panel administra Scrapyd y no lo sustituye; configura acceso antes de exponer hosts remotos
 
 ## Qué puedes hacer con él
 
-Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy. Conecta servidores Scrapyd y centraliza despliegues, tareas programadas y seguimiento de crawls.
+Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy.
 
 ## Por qué destaca
 
-Operas varios spiders de Scrapy y necesitas un panel de administración.
+Usos propuestos: Supervisar tareas Scrapy; Consultar fallos y tiempos de una ejecución.
 
 ## Cómo funciona
 
-Conecta servidores Scrapyd y centraliza despliegues, tareas programadas y seguimiento de crawls.
+El panel administra Scrapyd y no lo sustituye; configura acceso antes de exponer hosts remotos
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python
+- Scrapyd iniciado en los hosts que administrarás
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
 pip install scrapydweb
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/my8100/scrapydweb/blob/master/README.md)
 
@@ -59,21 +65,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar scrapydweb para mi objetivo y necesito pasos guiados. Lee https://github.com/my8100/scrapydweb/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Conecta una instancia local Scrapyd y ejecuta un spider de prueba desde el panel.
+
+**Qué comprobar:** Ves el trabajo, sus logs y el resultado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Operas varios spiders de Scrapy y necesitas un panel de administración
+- Supervisar tareas Scrapy
+- Consultar fallos y tiempos de una ejecución
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| operas varios spiders de Scrapy y necesitas un panel de administración | la fuente ya ofrece una API o un archivo de datos suficiente |
+| Tu objetivo encaja con estos ejemplos: Supervisar tareas Scrapy; Consultar fallos y tiempos de una ejecución | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Necesita servidores Scrapyd configurados y comprobar compatibilidad entre versiones.
+**Limitaciones:** El panel administra Scrapyd y no lo sustituye; configura acceso antes de exponer hosts remotos
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python; Scrapyd iniciado en los hosts que administrarás
 - **Etiquetas:** `crawlers` `dashboard` `log-analysis` `log-parsing` `scrapy` `scrapy-log-analysis` `scrapy-visualization` `scrapyd`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,7 +105,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/my8100/scrapydweb/blob/master/README.md)
 

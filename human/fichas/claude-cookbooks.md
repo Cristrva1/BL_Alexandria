@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | API de IA opcional. Lectura libre; la ejecución de notebooks requiere API de Claude con facturación propia |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. La suscripción de Claude Code no sustituye automáticamente la clave API pedida por estos notebooks |
+| Coste | Consumo de APIs o servicios. Lectura libre; la ejecución de notebooks requiere API de Claude con facturación propia |
+| Equipo | Preparación según la ruta elegida. Navegador; Python y clave Anthropic para ejecutar ejemplos |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La suscripción de Claude Code no sustituye automáticamente la clave API pedida por estos notebooks
 
 ## Qué puedes hacer con él
 
-Notebooks y guías de Anthropic con código copiable para construir con Claude: clasificación, resumen, RAG (con Pinecone o embeddings de Voyage AI), tool use y un agente de atención al cliente, visión y extracción de formularios, subagentes, PDFs, salida JSON consistente, moderación, prompt caching y checklists de coste y latencia.
+Recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización.
 
 ## Por qué destaca
 
-Es la referencia oficial y sigue la evolución de la API, así que los patrones reflejan cómo recomienda Anthropic usar Claude. Cada receta es corta y se adapta fácil a otro lenguaje.
+Usos propuestos: Clasificar tickets ficticios; Estudiar llamadas a herramientas.
 
 ## Cómo funciona
 
-Son notebooks de Jupyter agrupados por tema (capacidades, herramientas, integraciones, multimodal, técnicas avanzadas) que llaman a la API con el SDK `anthropic` de Python; el `pyproject.toml` incluye también el Claude Agent SDK.
+La suscripción de Claude Code no sustituye automáticamente la clave API pedida por estos notebooks
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- Python y clave Anthropic para ejecutar ejemplos
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/anthropics/claude-cookbooks/blob/main/README.md)
 
@@ -51,23 +59,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Claude Cookbooks para mi objetivo y necesito pasos guiados. Lee https://github.com/anthropics/claude-cookbooks/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Lee una receta de extracción y adapta sus datos a un párrafo ficticio.
+
+**Qué comprobar:** Entiendes qué se envía al modelo y qué respuesta se valida.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Aprender tool use con un agente de atención al cliente
-- Aplicar prompt caching para bajar el coste de una app
-- Montar un RAG con Claude y una base vectorial
+- Clasificar tickets ficticios
+- Estudiar llamadas a herramientas
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| construyes sobre la API de Claude y quieres ejemplos oficiales que puedas copiar | tu app usa la API de OpenAI; mira `openai-cookbook` |
+| Tu objetivo encaja con estos ejemplos: Clasificar tickets ficticios; Estudiar llamadas a herramientas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Casi todo el código es Python y necesitas una API key de Anthropic de pago para ejecutarlo.
+**Limitaciones:** La suscripción de Claude Code no sustituye automáticamente la clave API pedida por estos notebooks
 
 ## Stack y modelos
 
-- **Stack:** Python, Jupyter, Anthropic SDK, Claude Agent SDK
+- **Stack:** Navegador; Python y clave Anthropic para ejecutar ejemplos
 - **Etiquetas:** `learning` `notebooks` `rag` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -92,7 +107,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/anthropics/claude-cookbooks/blob/main/README.md)
 

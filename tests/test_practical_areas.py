@@ -37,7 +37,10 @@ def test_setup_collections_distinguish_documented_clients_from_reference_materia
     assert {'codex','superpowers','context7'} <= set(codex['repo_ids'])
     assert 'openai-python' not in codex['repo_ids']  # model provider is not client setup
     antigravity=areas['configurar-antigravity']
-    assert set(antigravity['repo_ids']) == {'antigravity-awesome-skills','stitch-skills','prompt-master'}
+    assert {'antigravity-awesome-skills','stitch-skills','prompt-master','context7','impeccable'} <= set(antigravity['repo_ids'])
+    references={rid for t in antigravity['topics'] for rid in t.get('reference_repos',[])}
+    assert 'prompt-master' in references
+    assert all(r['access']['antigravity'] in {'native','host','connector','project_integration'} for r in c['repos'] if r['id'] in set(antigravity['repo_ids'])-references)
     for a in areas.values():
         for source in a.get('evidence',[]):
             r=next(r for r in c['repos'] if r['id']==source['repo_id'])
@@ -82,7 +85,7 @@ if(!web.includes('tailwindcss')||!web.includes('ui')||web.includes('ffmpeg'))thr
 const trading=ids('area=trading&topic=trading-backtesting');
 if(!trading.includes('qlib')||!trading.includes('backtrader')||trading.includes('openwa'))throw Error('Trading topic');
 const setup=ids('q='+encodeURIComponent('configuración Antigravity'));
-if(setup.length!==3||!setup.includes('stitch-skills'))throw Error('Natural setup search');
+if(!setup.includes('stitch-skills')||JSON.stringify(setup.sort())!==JSON.stringify(ids('area=configurar-antigravity').sort()))throw Error('Natural setup search');
 const codexSetup=ids('q='+encodeURIComponent('configuración de Codex')).sort();
 if(JSON.stringify(codexSetup)!==JSON.stringify(ids('area=configurar-codex').sort()))throw Error('Codex setup confused with model providers');
 if(!ids('q=frontend').includes('penpot'))throw Error('Practical domain vocabulary missing');

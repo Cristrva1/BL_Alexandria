@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | API de IA opcional. Claude Code y Codex tienen accesos y límites propios; Codex admite sesión del plan o API según su configuración |
 | Claude Code | Dentro del agente: skills o instrucciones |
-| Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. Claude Code aloja el plugin y Codex utiliza su propia cuenta o API key. Cada sesión conserva los límites de su proveedor. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. No es una skill que se instala dentro de Codex: es un puente desde Claude Code hacia el CLI de Codex |
+| Coste | El coste depende del proveedor o la ruta. Claude Code y Codex tienen accesos y límites propios; Codex admite sesión del plan o API según su configuración |
+| Equipo | Preparación según la ruta elegida. Claude Code;  Codex CLI autenticado y acceso a su cuenta |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+No es una skill que se instala dentro de Codex: es un puente desde Claude Code hacia el CLI de Codex
 
 ## Qué puedes hacer con él
 
-Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas. Añade comandos de revisión y delegación y conecta Claude Code con el runtime de Codex.
+Plugin oficial de OpenAI para usar Codex desde Claude Code en revisiones y tareas delegadas.
 
 ## Por qué destaca
 
-Quieres revisar código con Codex dentro de tu flujo de Claude Code.
+Usos propuestos: Pedir una segunda revisión de un cambio desde Claude Code; Delegar una tarea acotada a Codex manteniendo el contexto principal.
 
 ## Cómo funciona
 
-Añade comandos de revisión y delegación y conecta Claude Code con el runtime de Codex.
+No es una skill que se instala dentro de Codex: es un puente desde Claude Code hacia el CLI de Codex
 
 ## Cómo empezar
 
@@ -43,11 +44,23 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Claude Code
+-  Codex CLI autenticado y acceso a su cuenta
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+/plugin marketplace add openai/codex-plugin-cc
+
+/plugin install codex@openai-codex
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/openai/codex-plugin-cc/blob/main/README.md)
 
@@ -55,21 +68,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar codex-plugin-cc para mi objetivo y necesito pasos guiados. Lee https://github.com/openai/codex-plugin-cc/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Pide revisar un diff pequeño mediante el comando del plugin y examina su informe.
+
+**Qué comprobar:** La delegación devuelve una revisión atribuible al proceso de Codex.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres revisar código con Codex dentro de tu flujo de Claude Code
+- Pedir una segunda revisión de un cambio desde Claude Code
+- Delegar una tarea acotada a Codex manteniendo el contexto principal
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres revisar código con Codex dentro de tu flujo de Claude Code | no utilizas un agente o flujo compatible con estas instrucciones |
+| Tu objetivo encaja con estos ejemplos: Pedir una segunda revisión de un cambio desde Claude Code; Delegar una tarea acotada a Codex manteniendo el contexto principal | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Requiere acceso a Codex y consume los límites o la facturación de la cuenta configurada.
+**Limitaciones:** No es una skill que se instala dentro de Codex: es un puente desde Claude Code hacia el CLI de Codex
 
 ## Stack y modelos
 
-- **Stack:** JavaScript, Node.js
+- **Stack:** Claude Code;  Codex CLI autenticado y acceso a su cuenta
 - **Etiquetas:** `metodologia` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -79,7 +101,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/openai/codex-plugin-cc/blob/main/README.md)
 

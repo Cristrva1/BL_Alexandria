@@ -16,42 +16,51 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA necesaria. La ruta documentada necesita credenciales de un proveedor de IA o servicio externo. |
+| API de IA | API de IA necesaria. La ruta OpenAI usa API y facturación de plataforma; la suscripción de Codex o ChatGPT no debe suponerse crédito para este SDK |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | Consumo de APIs o servicios. Revisar el plan, créditos, cuotas y facturación del proveedor antes de ejecutar. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Es un cliente oficial de API, no un plugin de Codex; base_url configurable no confirma todas las funciones de servidores locales |
+| Coste | Consumo de APIs o servicios. La ruta OpenAI usa API y facturación de plataforma; la suscripción de Codex o ChatGPT no debe suponerse crédito para este SDK |
+| Equipo | Preparación según la ruta elegida. Python 3.10+; entorno virtual; clave de proyecto API |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es un cliente oficial de API, no un plugin de Codex; base_url configurable no confirma todas las funciones de servidores locales
 
 ## Qué puedes hacer con él
 
-Resuelve el glue HTTP: no escribes peticiones a mano, usas clientes tipados con streaming.
+SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API.
 
 ## Por qué destaca
 
-Cliente oficial y al día mantenido por OpenAI, con amplia adopción y soporte inmediato de las novedades de la API. Su tipado, streaming y soporte síncrono/async lo hacen la base de facto para integrar GPT en Python.
+Usos propuestos: Integrar respuestas de IA en una app Python; Procesar audio o imágenes desde código.
 
 ## Cómo funciona
 
-Envuelve las peticiones HTTP a la API en clientes Python síncronos y asíncronos, con tipado, streaming de respuestas, reintentos y manejo de errores integrados.
+Es un cliente oficial de API, no un plugin de Codex; base_url configurable no confirma todas las funciones de servidores locales
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python 3.10+
+- entorno virtual
+- clave de proyecto API
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (sh):**
+
+```
+# install from PyPI
 pip install openai
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/openai/openai-python/blob/main/README.md)
 
@@ -59,21 +68,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar openai-python para mi objetivo y necesito pasos guiados. Lee https://github.com/openai/openai-python/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Envía una petición breve de ejemplo y revisa respuesta y uso informado.
+
+**Qué comprobar:** Obtienes la salida del endpoint y puedes localizar el consumo del proyecto.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Llamar a la API de OpenAI
-- Base para apps que usan GPT
-- Consumir embeddings, imágenes y audio desde Python
+- Integrar respuestas de IA en una app Python
+- Procesar audio o imágenes desde código
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| usas modelos de OpenAI desde Python y quieres el cliente oficial | quieres abstracción multi-proveedor (litellm) o no usas OpenAI |
+| Tu objetivo encaja con estos ejemplos: Integrar respuestas de IA en una app Python; Procesar audio o imágenes desde código | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Es un cliente oficial de API, no un plugin de Codex; base_url configurable no confirma todas las funciones de servidores locales
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python 3.10+; entorno virtual; clave de proyecto API
 - **Etiquetas:** `code` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -91,7 +109,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/openai/openai-python/blob/main/README.md)
 

@@ -16,34 +16,49 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
-| Claude Code | Dentro del agente: skills o instrucciones |
-| Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. El índice básico es local sin API; embeddings opcionales y el agente pueden consumir recursos o servicios según configuración |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Integración documentada por el proyecto |
+| Modelos locales | Modelos locales documentados. La compatibilidad con los tres clientes está documentada; comprueba indexación y sincronización antes de confiar en el mapa |
+| Coste | El coste depende del proveedor o la ruta. El índice básico es local sin API; embeddings opcionales y el agente pueden consumir recursos o servicios según configuración |
+| Equipo | Preparación según la ruta elegida. Instalador oficial o Node y npm; repositorio de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La compatibilidad con los tres clientes está documentada; comprueba indexación y sincronización antes de confiar en el mapa
 
 ## Qué puedes hacer con él
 
-Resuelve el coste de contexto de los agentes en repos grandes.
+CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo.
 
 ## Por qué destaca
 
-Convierte repos enormes en algo navegable para la IA con coste casi nulo; muy valorado en flujos de agentes de código por su ahorro real de tokens y tool calls. Su acoplamiento con Claude Code, Gemini y Cursor sin modelo propio lo hace fácil de adoptar.
+Usos propuestos: Preparar una refactorización; Encontrar rutas de ejecución de un proyecto.
 
 ## Cómo funciona
 
-Construye un índice semántico local del repositorio (símbolos, referencias, flujo) que el asistente consulta vía comandos; se acopla a Claude Code, Gemini y Cursor sin necesidad de un modelo propio ni de enviar código a la nube.
+La compatibilidad con los tres clientes está documentada; comprueba indexación y sincronización antes de confiar en el mapa
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Instalador oficial o Node y npm
+- repositorio de prueba
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+npm i -g @colbymchenry/codegraph
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/colbymchenry/codegraph/blob/main/README.md)
 
@@ -51,21 +66,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar codegraph para mi objetivo y necesito pasos guiados. Lee https://github.com/colbymchenry/codegraph/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Indexa una carpeta y consulta quién llama a una función conocida.
+
+**Qué comprobar:** Los resultados identifican definiciones y relaciones comprobables.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- `codegraph index .` para que el asistente entienda el flujo sin leer archivo por archivo
-- Onboarding de IA en monorepos grandes
-- Reducir tool calls en revisiones de código
+- Preparar una refactorización
+- Encontrar rutas de ejecución de un proyecto
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| trabajas repos grandes y el contexto del agente es caro | tu base de código es pequeña y no justifica mantener un índice |
+| Tu objetivo encaja con estos ejemplos: Preparar una refactorización; Encontrar rutas de ejecución de un proyecto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** La compatibilidad con los tres clientes está documentada; comprueba indexación y sincronización antes de confiar en el mapa
 
 ## Stack y modelos
 
-- **Stack:** JavaScript/Node.js (binario autónomo)
+- **Stack:** Instalador oficial o Node y npm; repositorio de prueba
 - **Etiquetas:** `code` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -73,7 +97,7 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [graphify](graphify.md) | 148k | Generador de grafos de conocimiento que mapea código, PDFs, imágenes y video en diagramas interactivos. |
+| [graphify](graphify.md) | 148k | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. |
 | [headroom](headroom.md) | 79.7k | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. |
 
 ## Alternativas (elige una)
@@ -91,7 +115,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/colbymchenry/codegraph/blob/main/README.md)
 

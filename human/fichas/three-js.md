@@ -2,7 +2,7 @@
 
 # 🔺 three.js
 
-> Motor 3D (WebGL) para renderizar gráficos y escenas interactivas directamente en el navegador.
+> Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,56 +16,73 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La biblioteca no necesita API de IA; modelos 3D, texturas y hosting tienen licencias y costes propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es una biblioteca y no un editor de escenas listo para usar; clonar todo el historial no es necesario para integrarla en una app |
+| Coste | Sin pago a un modelo en la ruta básica. La biblioteca no necesita API de IA; modelos 3D, texturas y hosting tienen licencias y costes propios |
+| Equipo | Preparación según la ruta elegida. Proyecto JavaScript; servidor de desarrollo; navegador con GPU compatible |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es una biblioteca y no un editor de escenas listo para usar; clonar todo el historial no es necesario para integrarla en una app
 
 ## Qué puedes hacer con él
 
-Abstrae la complejidad de WebGL en escenas, cámaras, luces y mallas.
+Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU.
 
 ## Por qué destaca
 
-Es el estándar del 3D web, con un ecosistema enorme de ejemplos, loaders y helpers alrededor. Su longevidad (desde 2010) y la comunidad activa lo hacen la base de casi todo 3D web.
+Usos propuestos: Crear un visor 3D web; Prototipar una escena interactiva.
 
 ## Cómo funciona
 
-Abstrae WebGL en un grafo de escena (escenas, cámaras, luces, mallas) y gestiona el bucle de render por ti, con materiales y geometrías listas para usar.
+Es una biblioteca y no un editor de escenas listo para usar; clonar todo el historial no es necesario para integrarla en una app
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/mrdoob/three.js/blob/dev/README.md)
+- Proyecto JavaScript
+- servidor de desarrollo
+- navegador con GPU compatible
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://threejs.org/manual/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar three.js para mi objetivo y necesito pasos guiados. Lee https://github.com/mrdoob/three.js/blob/dev/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar three.js para mi objetivo y necesito pasos guiados. Lee https://threejs.org/manual/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Sigue el ejemplo del cubo y cambia su color o rotación.
+
+**Qué comprobar:** Puedes ver la escena, cámara y objeto y reconocer su relación.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Escenas 3D y visualizaciones inmersivas
-- Experiencias web interactivas
-- Base para frameworks como react-three-fiber
+- Crear un visor 3D web
+- Prototipar una escena interactiva
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| renderizas 3D en web y quieres control a bajo nivel | trabajas solo 2D o prefieres la ergonomía de React (react-three-fiber) |
+| Tu objetivo encaja con estos ejemplos: Crear un visor 3D web; Prototipar una escena interactiva | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Es una biblioteca y no un editor de escenas listo para usar; clonar todo el historial no es necesario para integrarla en una app
 
 ## Stack y modelos
 
-- **Stack:** JavaScript/WebGL
+- **Stack:** Proyecto JavaScript; servidor de desarrollo; navegador con GPU compatible
 - **Etiquetas:** `ui` `design` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,7 +100,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/mrdoob/three.js/blob/dev/README.md)
 

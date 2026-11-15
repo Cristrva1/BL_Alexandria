@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La ruta con pesos locales evita una API de modelo; siguen existiendo costes de equipo y energía |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. La receta incluye Ollama y servicios locales. Las integraciones añadidas a n8n pueden introducir cuentas o APIs externas. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. El README distingue perfiles CPU, NVIDIA y alternativas de Mac; elige el de tu equipo antes de descargar pesos |
+| Coste | Sin pago a un modelo en la ruta básica. La ruta con pesos locales evita una API de modelo; siguen existiendo costes de equipo y energía |
+| Equipo | Preparación según la ruta elegida. Docker Compose;  memoria y almacenamiento para el modelo;  archivo .env preparado |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El README distingue perfiles CPU, NVIDIA y alternativas de Mac; elige el de tu equipo antes de descargar pesos
 
 ## Qué puedes hacer con él
 
-Kit oficial de n8n que levanta un entorno de IA privado: n8n para orquestar, Ollama para modelos, Qdrant como base vectorial y PostgreSQL. Útil para prototipar agentes y RAG sin enviar datos fuera.
+Plantilla Docker Compose de n8n con Ollama, Qdrant y PostgreSQL para IA local en minutos.
 
 ## Por qué destaca
 
-Mantenido por el equipo de n8n; resuelve en un comando el cableado entre las piezas.
+Usos propuestos: Probar un asistente local que responde preguntas sobre material de ejemplo; Explorar cómo se conectan n8n, Ollama y una base vectorial.
 
 ## Cómo funciona
 
-Un `docker-compose.yml` con perfiles para CPU y GPU arranca los servicios ya conectados entre sí.
+El README distingue perfiles CPU, NVIDIA y alternativas de Mac; elige el de tu equipo antes de descargar pesos
 
 ## Cómo empezar
 
@@ -43,11 +44,25 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Docker y recursos para los contenedores y el modelo que elijas.
+- Docker Compose
+-  memoria y almacenamiento para el modelo
+-  archivo .env preparado
 
-1. Abre la configuración de Docker Compose y el perfil de CPU o GPU del README.
-2. Prepara las variables del ejemplo y descarga un modelo compatible en Ollama.
-3. Comprueba un flujo mínimo de n8n y sus conexiones antes de añadir servicios externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+git clone https://github.com/n8n-io/self-hosted-ai-starter-kit.git
+cd self-hosted-ai-starter-kit
+cp .env.example .env # you should update secrets and passwords inside
+docker compose --profile cpu up
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/n8n-io/self-hosted-ai-starter-kit/blob/main/README.md)
 
@@ -55,23 +70,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Self-hosted AI Starter Kit para mi objetivo y necesito pasos guiados. Lee https://github.com/n8n-io/self-hosted-ai-starter-kit/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Abre n8n y ejecuta el flujo local incluido con una pregunta sencilla.
+
+**Qué comprobar:** El flujo devuelve una respuesta usando el servicio Ollama del stack.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Chat con tus documentos en local
-- Agentes de n8n con modelos privados
-- Demo de IA sin nube
+- Probar un asistente local que responde preguntas sobre material de ejemplo
+- Explorar cómo se conectan n8n, Ollama y una base vectorial
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres un stack de IA local funcionando hoy con n8n | vas a producción con alta carga; arma tu propio despliegue |
+| Tu objetivo encaja con estos ejemplos: Probar un asistente local que responde preguntas sobre material de ejemplo; Explorar cómo se conectan n8n, Ollama y una base vectorial | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Es un punto de partida, no un despliegue endurecido para producción.
+**Limitaciones:** El README distingue perfiles CPU, NVIDIA y alternativas de Mac; elige el de tu equipo antes de descargar pesos
 
 ## Stack y modelos
 
-- **Stack:** Docker Compose, n8n, Ollama, Qdrant, PostgreSQL
+- **Stack:** Docker Compose;  memoria y almacenamiento para el modelo;  archivo .env preparado
 - **Etiquetas:** `automation` `local` `rag` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,7 +112,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/n8n-io/self-hosted-ai-starter-kit/blob/main/README.md)
 

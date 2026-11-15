@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 128k | MIT | TypeScript | 2026-06-24 |
 
-**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,56 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Los componentes abiertos no necesitan IA; registros privados, servicios y el agente pueden tener costes |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. El MCP oficial permite consultar e instalar componentes desde los clientes; el componente sigue siendo código de tu aplicación |
+| Coste | Sin pago a un modelo en la ruta básica. Los componentes abiertos no necesitan IA; registros privados, servicios y el agente pueden tener costes |
+| Equipo | Preparación según la ruta elegida. Proyecto React compatible; Node; gestor de paquetes; configuración del framework |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El MCP oficial permite consultar e instalar componentes desde los clientes; el componente sigue siendo código de tu aplicación
 
 ## Qué puedes hacer con él
 
-El código fuente pasa a ser tuyo y lo editas a voluntad.
+Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada.
 
 ## Por qué destaca
 
-Popularizó el modelo "el código es tuyo": sin capa pesada ni lock-in, se ha vuelto la base de incontables design systems. Su combinación de Radix UI (accesibilidad) + Tailwind (estilos) es el patrón de facto en React moderno.
+Usos propuestos: Construir un formulario con componentes propios; Crear un sistema de interfaz con código modificable.
 
 ## Cómo funciona
 
-CLI que copia el código fuente de cada componente (Radix + Tailwind) directamente a tu proyecto, para que lo edites y versiones como parte de tu codebase.
+El MCP oficial permite consultar e instalar componentes desde los clientes; el componente sigue siendo código de tu aplicación
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/shadcn-ui/ui/blob/main/README.md)
+- Proyecto React compatible
+- Node
+- gestor de paquetes
+- configuración del framework
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://ui.shadcn.com/docs/installation)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar ui para mi objetivo y necesito pasos guiados. Lee https://github.com/shadcn-ui/ui/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar ui para mi objetivo y necesito pasos guiados. Lee https://ui.shadcn.com/docs/installation. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Añade una tarjeta con botón y modifica sus estilos desde el código copiado al proyecto.
+
+**Qué comprobar:** Ves el componente y puedes localizar su archivo editable.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Pantallas administrativas o landings sobre tu stack
-- Base de un design system propio versionado
-- Punto de partida que personalizas sin límites
+- Construir un formulario con componentes propios
+- Crear un sistema de interfaz con código modificable
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres ser dueño del código de UI | prefieres una lib "llave en mano" con updates automáticos (heroui) |
+| Tu objetivo encaja con estos ejemplos: Construir un formulario con componentes propios; Crear un sistema de interfaz con código modificable | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El MCP oficial permite consultar e instalar componentes desde los clientes; el componente sigue siendo código de tu aplicación
 
 ## Stack y modelos
 
-- **Stack:** Node.js, React, Tailwind, Radix UI
+- **Stack:** Proyecto React compatible; Node; gestor de paquetes; configuración del framework
 - **Etiquetas:** `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -92,9 +110,13 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/shadcn-ui/ui/blob/main/README.md)
+- [Fuente 2](https://ui.shadcn.com/docs/mcp)
+- [Fuente 3](https://antigravity.google/docs/ide-mcp)
 
 ---
 

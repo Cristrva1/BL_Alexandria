@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. | Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI. |
 | ⭐ Estrellas | 117k | 8.2k |
-| Elígelo si… | usas Claude Code a diario y repites contexto entre sesiones | quieres memoria local simple para cualquier agente |
-| Evítalo si… | necesitas memoria para una app propia; mira `mem0` | solo usas Claude Code y quieres algo automático; mira `claude-mem` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Conservar decisiones entre sesiones; Recuperar el motivo de un cambio de código | Tu objetivo encaja con estos ejemplos: Recordar decisiones técnicas; Hacer una entrega de contexto entre sesiones |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | API de IA opcional | Sin API de IA en la ruta básica |
-| Coste | El coste depende del proveedor o la ruta | Consumo del agente que ya utilizas |
-| Modelos locales | La función básica no necesita un modelo | Modelo local no documentado |
+| API de IA | API de IA opcional | Sin clave propia de API de IA en la ruta básica |
+| Coste | El coste depende del proveedor o la ruta | Sin pago a un modelo en la ruta básica |
+| Modelos locales | Modelo local no documentado | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | Apache-2.0 | MIT |
-| Instalación | `/plugin marketplace add thedotmack/claude-mem` | `brew install gentleman-programming/tap/engram` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## Regla práctica
 
-- Elige **claude-mem** si usas Claude Code a diario y repites contexto entre sesiones.
-- Elige **Engram** si quieres memoria local simple para cualquier agente.
+- Elige **claude-mem** si Tu objetivo encaja con estos ejemplos: Conservar decisiones entre sesiones; Recuperar el motivo de un cambio de código.
+- Elige **Engram** si Tu objetivo encaja con estos ejemplos: Recordar decisiones técnicas; Hacer una entrega de contexto entre sesiones.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

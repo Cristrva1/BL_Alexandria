@@ -1,0 +1,10 @@
+{
+ "nemo":{"name":"NeMo Speech","one":"Framework actual de NVIDIA para reconocimiento,síntesis y modelos de voz con recetas de inferencia y entrenamiento."},
+ "omnivoice-studio":{"name":"VoiceStudio","one":"App local de voz con modelos descargables,edición AGPL y una oferta comercial separada."},
+ "gpt-sovits":{"one":"Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos."},
+ "voxcpm":{"one":"VoxCPM2: modelos y herramientas locales de TTS multilingüe,diseño y adaptación de voz."},
+ "chatterbox":{"one":"Archivo de investigación TTS retirado y sin mantenimiento según su README desde agosto de 2026."},
+ "supertonic":{"one":"Archivo de TTS local ONNX; desarrollo y soporte terminados,con licencias separadas de código y pesos."},
+ "fish-speech":{"one":"Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante."},
+ "rvc":{"one":"Interfaz y herramientas para convertir una grabación a otra voz mediante modelos locales."}
+}

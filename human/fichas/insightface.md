@@ -16,58 +16,75 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Código MIT, pero modelos preentrenados proporcionados para investigación no comercial; uso comercial requiere revisar la licencia correspondiente |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La licencia de código y modelos es distinta incluso en descargas automáticas; el paquete actual ofrece base y GUI con dependencias diferentes |
+| Coste | El coste depende del proveedor o la ruta. Código MIT, pero modelos preentrenados proporcionados para investigación no comercial; uso comercial requiere revisar la licencia correspondiente |
+| Equipo | Preparación según la ruta elegida. Python; runtime ONNX; modelos con licencia adecuada; datos autorizados |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La licencia de código y modelos es distinta incluso en descargas automáticas; el paquete actual ofrece base y GUI con dependencias diferentes
 
 ## Qué puedes hacer con él
 
-Base de muchas herramientas faciales; ofrece modelos de reconocimiento de última generación.
+Proyecto de análisis facial 2D y 3D: detección, reconocimiento y alineación.
 
 ## Por qué destaca
 
-Referencia académica e industrial en reconocimiento facial.
+Usos propuestos: Estudiar alineación facial; Evaluar detección en un dataset de prueba.
 
 ## Cómo funciona
 
-Modelos de detección y embeddings faciales servidos en ONNX.
+La licencia de código y modelos es distinta incluso en descargas automáticas; el paquete actual ofrece base y GUI con dependencias diferentes
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/deepinsight/insightface/blob/master/README.md)
+- Python
+- runtime ONNX
+- modelos con licencia adecuada
+- datos autorizados
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://github.com/deepinsight/insightface/blob/master/python-package/README.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar InsightFace para mi objetivo y necesito pasos guiados. Lee https://github.com/deepinsight/insightface/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar InsightFace para mi objetivo y necesito pasos guiados. Lee https://github.com/deepinsight/insightface/blob/master/python-package/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Ejecuta detección sobre una imagen propia y revisa resultados antes de usar comparaciones.
+
+**Qué comprobar:** Puedes identificar modelo, backend y caras detectadas.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Verificación de identidad
-- Agrupar fotos por persona
-- Base de herramientas faciales
+- Estudiar alineación facial
+- Evaluar detección en un dataset de prueba
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas reconocimiento facial preciso | solo quieres detectar caras simples; mira `opencv` |
+| Tu objetivo encaja con estos ejemplos: Estudiar alineación facial; Evaluar detección en un dataset de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Los modelos preentrenados son solo para investigación no comercial.
+**Limitaciones:** La licencia de código y modelos es distinta incluso en descargas automáticas; el paquete actual ofrece base y GUI con dependencias diferentes
 
 ## Stack y modelos
 
-- **Stack:** Python, ONNX
+- **Stack:** Python; runtime ONNX; modelos con licencia adecuada; datos autorizados
 - **Etiquetas:** `vision` `image` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,9 +107,12 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/deepinsight/insightface/blob/master/README.md)
+- [Fuente 2](https://github.com/deepinsight/insightface/blob/master/python-package/README.md)
 
 ---
 

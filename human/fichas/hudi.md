@@ -16,56 +16,73 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No necesita API de IA; motores, almacenamiento y nube se presupuestan aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Los comandos para compilar snapshots son para desarrollo; el quickstart de la versión elegida debe coincidir con Spark o Flink instalados |
+| Coste | Sin pago a un modelo en la ruta básica. No necesita API de IA; motores, almacenamiento y nube se presupuestan aparte |
+| Equipo | Preparación según la ruta elegida. Java y Spark o Flink compatibles; almacenamiento de prueba; datos pequeños |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Los comandos para compilar snapshots son para desarrollo; el quickstart de la versión elegida debe coincidir con Spark o Flink instalados
 
 ## Qué puedes hacer con él
 
-Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos. Añade índices, actualizaciones y procesamiento incremental a tablas de un lago de datos.
+Plataforma lakehouse de Apache para ingestión incremental y gestión de tablas sobre almacenamiento de datos.
 
 ## Por qué destaca
 
-Necesitas gestionar cambios y cargas incrementales en un data lake.
+Usos propuestos: Estudiar un lakehouse; Preparar ingestión incremental.
 
 ## Cómo funciona
 
-Añade índices, actualizaciones y procesamiento incremental a tablas de un lago de datos.
+Los comandos para compilar snapshots son para desarrollo; el quickstart de la versión elegida debe coincidir con Spark o Flink instalados
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/apache/hudi/blob/master/README.md)
+- Java y Spark o Flink compatibles
+- almacenamiento de prueba
+- datos pequeños
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://hudi.apache.org/docs/quick-start-guide.html)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar hudi para mi objetivo y necesito pasos guiados. Lee https://github.com/apache/hudi/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar hudi para mi objetivo y necesito pasos guiados. Lee https://hudi.apache.org/docs/quick-start-guide.html. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Inserta registros ficticios y actualiza uno para comparar estado y consulta incremental.
+
+**Qué comprobar:** Puedes comprobar la actualización sin reconstruir manualmente toda la tabla.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Necesitas gestionar cambios y cargas incrementales en un data lake
+- Estudiar un lakehouse
+- Preparar ingestión incremental
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas gestionar cambios y cargas incrementales en un data lake | necesitas una aplicación lista para usuarios sin trabajo técnico |
+| Tu objetivo encaja con estos ejemplos: Estudiar un lakehouse; Preparar ingestión incremental | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Requiere infraestructura y experiencia con motores de datos y formatos de tablas.
+**Limitaciones:** Los comandos para compilar snapshots son para desarrollo; el quickstart de la versión elegida debe coincidir con Spark o Flink instalados
 
 ## Stack y modelos
 
-- **Stack:** Java, Docker
+- **Stack:** Java y Spark o Flink compatibles; almacenamiento de prueba; datos pequeños
 - **Etiquetas:** `datos` `apacheflink` `apachehudi` `apachespark` `bigdata` `data-integration` `datalake` `hudi`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -76,7 +93,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/apache/hudi/blob/master/README.md)
 

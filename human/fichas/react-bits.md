@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 52k | NOASSERTION | JavaScript | 2026-11-10 |
 
-**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
+**Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,49 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El repositorio usa MIT más Commons Clause; Pro y productos externos se revisan por separado; no requiere modelo |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. MCP funciona mediante el registro shadcn; no todas las variantes JS, TS, CSS y Tailwind tienen las mismas dependencias |
+| Coste | El coste depende del proveedor o la ruta. El repositorio usa MIT más Commons Clause; Pro y productos externos se revisan por separado; no requiere modelo |
+| Equipo | Preparación según la ruta elegida. React o Next.js; Node; dependencias de la variante del componente |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+MCP funciona mediante el registro shadcn; no todas las variantes JS, TS, CSS y Tailwind tienen las mismas dependencias
 
 ## Qué puedes hacer con él
 
-Fondos, textos animados y efectos listos para copiar en proyectos React y Next.js.
+La mayor colección open source de componentes React animados e interactivos para webs llamativas.
 
 ## Por qué destaca
 
-Efectos visuales de calidad que se instalan con un comando.
+Usos propuestos: Crear un encabezado animado; Prototipar una interacción visual.
 
 ## Cómo funciona
 
-Componentes copiables en variantes CSS o Tailwind, también vía CLI de shadcn.
+MCP funciona mediante el registro shadcn; no todas las variantes JS, TS, CSS y Tailwind tienen las mismas dependencias
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- React o Next.js
+- Node
+- dependencias de la variante del componente
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+npx shadcn@latest add @react-bits/SplitText-TS-TW
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/DavidHDev/react-bits/blob/main/README.md)
 
@@ -51,21 +66,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar React Bits para mi objetivo y necesito pasos guiados. Lee https://github.com/DavidHDev/react-bits/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Instala un único componente SplitText en una página de prueba y comprueba su lectura sin animación.
+
+**Qué comprobar:** El texto sigue siendo legible y puedes ajustar duración y estilos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Landing pages con efectos
-- Portafolios creativos
-- Microinteracciones
+- Crear un encabezado animado
+- Prototipar una interacción visual
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres efectos visuales llamativos en React | necesitas componentes de formulario y datos; mira `ui` |
+| Tu objetivo encaja con estos ejemplos: Crear un encabezado animado; Prototipar una interacción visual | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** MCP funciona mediante el registro shadcn; no todas las variantes JS, TS, CSS y Tailwind tienen las mismas dependencias
 
 ## Stack y modelos
 
-- **Stack:** JavaScript, React
+- **Stack:** React o Next.js; Node; dependencias de la variante del componente
 - **Etiquetas:** `ui` `react` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,7 +113,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/DavidHDev/react-bits/blob/main/README.md)
 

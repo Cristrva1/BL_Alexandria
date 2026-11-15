@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Leer no requiere API; el cliente y cada implementación elegida tienen sus requisitos |
+| Claude Code | Depende del recurso o la configuración |
+| Codex | Depende del recurso o la configuración |
+| Antigravity | Depende del recurso o la configuración |
+| Modelos locales | La función básica no necesita un modelo. Los autores los presentan como implementaciones educativas de referencia, no servicios listos para producción |
+| Coste | Sin pago a un modelo en la ruta básica. Leer no requiere API; el cliente y cada implementación elegida tienen sus requisitos |
+| Equipo | Preparación según la ruta elegida. Navegador; Node o Python según el servidor elegido |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Los autores los presentan como implementaciones educativas de referencia, no servicios listos para producción
 
 ## Qué puedes hacer con él
 
-Resuelve la falta de ejemplos canónicos: muestra cómo se construye un servidor MCP correcto, paso a paso.
+Colección oficial de implementaciones de referencia de servidores MCP mantenida por el steering group, con enlaces a servidores de la comunidad.
 
 ## Por qué destaca
 
-Es la fuente canónica y didáctica para entender cómo se construye un servidor MCP, respaldada por los mantenedores del propio protocolo. Incluye ejemplos prácticos (filesystem, fetch, git, etc.) que sirven de plantilla para los tuyos.
+Usos propuestos: Aprender cómo se implementa memoria MCP; Estudiar acceso a un repositorio Git de prueba.
 
 ## Cómo funciona
 
-Cada subdirectorio es un servidor MCP de ejemplo (filesystem, fetch, git…) que se ejecuta con `npx` y se conecta a un cliente compatible mediante el protocolo MCP sobre stdio o HTTP.
+Los autores los presentan como implementaciones educativas de referencia, no servicios listos para producción
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- Node o Python según el servidor elegido
+
+1. Elige un servidor de referencia y comprueba sus permisos sobre datos ficticios.
+2. Comprueba: Entiendes qué herramientas expone y qué datos puede modificar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/modelcontextprotocol/servers/blob/main/README.md)
 
@@ -51,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar servers para mi objetivo y necesito pasos guiados. Lee https://github.com/modelcontextprotocol/servers/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Elige un servidor de referencia y comprueba sus permisos sobre datos ficticios.
+
+**Qué comprobar:** Entiendes qué herramientas expone y qué datos puede modificar.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Aprender a construir un servidor MCP
-- Plantillas para arrancar el tuyo
-- Ejemplos educativos de features (tools, resources, prompts)
+- Aprender cómo se implementa memoria MCP
+- Estudiar acceso a un repositorio Git de prueba
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres ejemplos canónicos y plantillas fiables | buscas soluciones listas para producción (son demos educativas, no hardening) |
+| Tu objetivo encaja con estos ejemplos: Aprender cómo se implementa memoria MCP; Estudiar acceso a un repositorio Git de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Los autores los presentan como implementaciones educativas de referencia, no servicios listos para producción
 
 ## Stack y modelos
 
-- **Stack:** TypeScript/Python
+- **Stack:** Navegador; Node o Python según el servidor elegido
 - **Etiquetas:** `mcp` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -84,7 +100,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/modelcontextprotocol/servers/blob/main/README.md)
 

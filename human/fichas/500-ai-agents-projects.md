@@ -2,7 +2,7 @@
 
 # 🧠 500-AI-Agents-Projects
 
-> Colección de ideas, casos de uso y ejemplos de agentes de IA para distintos sectores y tareas.
+> Colección de casos de uso y agentes autocontenidos, junto con enlaces a implementaciones externas.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. La lista es libre; ejecutar cada implementación tiene costes y requisitos propios |
+| Claude Code | Depende del recurso o la configuración |
+| Codex | Depende del recurso o la configuración |
+| Antigravity | Depende del recurso o la configuración |
+| Modelos locales | Modelos locales documentados. Actualmente incluye agentes autocontenidos además de enlaces externos; mencionar un proyecto de Claude Code no hace compatible todo el directorio |
+| Coste | El coste depende del proveedor o la ruta. La lista es libre; ejecutar cada implementación tiene costes y requisitos propios |
+| Equipo | Preparación según la ruta elegida. Navegador; dependencias y proveedor de un agente elegido |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Actualmente incluye agentes autocontenidos además de enlaces externos; mencionar un proyecto de Claude Code no hace compatible todo el directorio
 
 ## Qué puedes hacer con él
 
-Colección de ideas, casos de uso y ejemplos de agentes de IA para distintos sectores y tareas. Organiza proyectos y enlaces que sirven como punto de partida para prototipos y aprendizaje.
+Colección de casos de uso y agentes autocontenidos, junto con enlaces a implementaciones externas.
 
 ## Por qué destaca
 
-Buscas ejemplos de aplicaciones de agentes para adaptar a tu propio problema.
+Usos propuestos: Encontrar una idea de agente para un sector; Comparar un ejemplo local con uno por API.
 
 ## Cómo funciona
 
-Organiza proyectos y enlaces que sirven como punto de partida para prototipos y aprendizaje.
+Actualmente incluye agentes autocontenidos además de enlaces externos; mencionar un proyecto de Claude Code no hace compatible todo el directorio
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- dependencias y proveedor de un agente elegido
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/ashishpatel26/500-AI-Agents-Projects/blob/main/README.md)
 
@@ -51,21 +59,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar 500-AI-Agents-Projects para mi objetivo y necesito pasos guiados. Lee https://github.com/ashishpatel26/500-AI-Agents-Projects/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Selecciona el agente de investigación web y revisa su .env.example sin añadir credenciales todavía.
+
+**Qué comprobar:** Puedes enumerar fuentes de datos, modelo y permisos necesarios.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Buscas ejemplos de aplicaciones de agentes para adaptar a tu propio problema
+- Encontrar una idea de agente para un sector
+- Comparar un ejemplo local con uno por API
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas ejemplos de aplicaciones de agentes para adaptar a tu propio problema | no utilizas un agente o flujo compatible con estas instrucciones |
+| Tu objetivo encaja con estos ejemplos: Encontrar una idea de agente para un sector; Comparar un ejemplo local con uno por API | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La inclusión de un proyecto no demuestra madurez ni resultados en producción.
+**Limitaciones:** Actualmente incluye agentes autocontenidos además de enlaces externos; mencionar un proyecto de Claude Code no hace compatible todo el directorio
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Navegador; dependencias y proveedor de un agente elegido
 - **Etiquetas:** `guias` `ai-agents` `genai` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +93,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ashishpatel26/500-AI-Agents-Projects/blob/main/README.md)
 

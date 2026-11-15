@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 41.2k | AGPL-3.0 | HTML | 2026-06-24 |
 
-**Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
+**Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,58 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | El coste depende del proveedor o la ruta. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. La edición y alojamiento de ToolJet tienen sus planes; el agente y los proveedores de IA se contabilizan por separado |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelo local no documentado. Claude Code y Codex tienen plugins documentados; Antigravity puede conectarse por MCP, sin que esto incluya el alojamiento de la plataforma |
+| Coste | El coste depende del proveedor o la ruta. La edición y alojamiento de ToolJet tienen sus planes; el agente y los proveedores de IA se contabilizan por separado |
+| Equipo | Preparación según la ruta elegida. Instancia ToolJet de prueba;  conexión de datos ficticios;  cliente MCP si eliges esa ruta |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Claude Code y Codex tienen plugins documentados; Antigravity puede conectarse por MCP, sin que esto incluya el alojamiento de la plataforma
 
 ## Qué puedes hacer con él
 
-Construye apps internas arrastrando componentes y conectando bases y APIs, o genéralas describiéndolas con IA. Pensada para equipos de operaciones y TI.
+Plataforma low-code para herramientas internas, dashboards y flujos, con generación de apps por IA.
 
 ## Por qué destaca
 
-Incluye base de datos propia, workflows y generación de apps con IA en la misma herramienta.
+Usos propuestos: Crear un panel interno para consultar pedidos y su estado; Pedir a un agente construir una interfaz ToolJet mediante el servidor MCP.
 
 ## Cómo funciona
 
-Un editor React define apps que consultan fuentes a través de un servidor Node; los workflows corren en el backend.
+Claude Code y Codex tienen plugins documentados; Antigravity puede conectarse por MCP, sin que esto incluya el alojamiento de la plataforma
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/ToolJet/ToolJet/blob/main/README.md)
+- Instancia ToolJet de prueba
+-  conexión de datos ficticios
+-  cliente MCP si eliges esa ruta
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://docs.tooljet.com/docs/setup/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar ToolJet para mi objetivo y necesito pasos guiados. Lee https://github.com/ToolJet/ToolJet/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar ToolJet para mi objetivo y necesito pasos guiados. Lee https://docs.tooljet.com/docs/setup/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Crea una página con una tabla y enlázala a un pequeño conjunto de datos.
+
+**Qué comprobar:** La tabla muestra los datos y puedes revisar la consulta que los obtiene.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Paneles de administración
-- Dashboards con datos de varias fuentes
-- Apps generadas desde un prompt
+- Crear un panel interno para consultar pedidos y su estado
+- Pedir a un agente construir una interfaz ToolJet mediante el servidor MCP
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres herramientas internas con IA para generarlas | prefieres un proyecto con licencia más permisiva; mira `appsmith` |
+| Tu objetivo encaja con estos ejemplos: Crear un panel interno para consultar pedidos y su estado; Pedir a un agente construir una interfaz ToolJet mediante el servidor MCP | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Licencia AGPL-3.0; varias funciones de IA son de la edición de pago.
+**Limitaciones:** Claude Code y Codex tienen plugins documentados; Antigravity puede conectarse por MCP, sin que esto incluya el alojamiento de la plataforma
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, React, Node.js, PostgreSQL
+- **Stack:** Instancia ToolJet de prueba;  conexión de datos ficticios;  cliente MCP si eliges esa ruta
 - **Etiquetas:** `ui` `automation` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -91,9 +107,12 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ToolJet/ToolJet/blob/main/README.md)
+- [Fuente 2](https://antigravity.google/docs/ide-mcp)
 
 ---
 

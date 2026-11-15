@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
-| Claude Code | Integración no documentada |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El monitor no necesita API de IA para leer datos; no amplía límites ni incluye el plan de Claude |
+| Claude Code | Integración documentada por el proyecto |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Las previsiones son estimaciones y las fuentes tienen distinta cobertura; es una integración de lectura de Claude Code y no un modelo alternativo |
+| Coste | Sin pago a un modelo en la ruta básica. El monitor no necesita API de IA para leer datos; no amplía límites ni incluye el plan de Claude |
+| Equipo | Preparación según la ruta elegida. uv o Python compatible; datos de uso de Claude Code |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Las previsiones son estimaciones y las fuentes tienen distinta cobertura; es una integración de lectura de Claude Code y no un modelo alternativo
 
 ## Qué puedes hacer con él
 
 Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible.
 
+## Por qué destaca
+
+Usos propuestos: Revisar el uso de una sesión; Estudiar alertas y proyecciones de cuota.
+
 ## Cómo funciona
 
-La aplicación ofrece las herramientas de su interfaz o CLI después de preparar la distribución y sus dependencias.
+Las previsiones son estimaciones y las fuentes tienen distinta cobertura; es una integración de lectura de Claude Code y no un modelo alternativo
 
 ## Cómo empezar
 
@@ -39,11 +44,24 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de instalación o servidor y las dependencias indicadas por el README.
+- uv o Python compatible
+- datos de uso de Claude Code
 
-1. Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.
-2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
-3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+# Install directly from PyPI with uv (easiest)
+uv tool install claude-monitor
+
+# Run from anywhere
+claude-monitor  # or cmonitor, ccmonitor for short
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor/blob/main/README.md)
 
@@ -51,21 +69,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Claude-Code-Usage-Monitor para mi objetivo y necesito pasos guiados. Lee https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Abre el monitor y compara una cifra con su etiqueta de procedencia y fecha.
+
+**Qué comprobar:** Puedes distinguir consumo observado, estado oficial y previsión.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible.
+- Revisar el uso de una sesión
+- Estudiar alertas y proyecciones de cuota
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Revisar el uso de una sesión; Estudiar alertas y proyecciones de cuota | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Las previsiones son estimaciones y las fuentes tienen distinta cobertura; es una integración de lectura de Claude Code y no un modelo alternativo
 
 ## Stack y modelos
 
-- **Stack:** Python, pyproject.toml
+- **Stack:** uv o Python compatible; datos de uso de Claude Code
 - **Etiquetas:** `observabilidad` `app` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +102,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor/blob/main/README.md)
 

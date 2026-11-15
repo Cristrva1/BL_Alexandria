@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| API de IA | API de IA opcional. Los modelos locales usan tu hardware; modelos Cloud y búsqueda web tienen autenticación y condiciones propias |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Las guías del autor documentan Claude Code y Codex CLI con backend Ollama; esto cambia el modelo y no aporta modelos Anthropic/OpenAI mediante su suscripción |
+| Coste | El coste depende del proveedor o la ruta. Los modelos locales usan tu hardware; modelos Cloud y búsqueda web tienen autenticación y condiciones propias |
+| Equipo | Preparación según la ruta elegida. Instalador oficial para tu sistema; RAM y disco adecuados al modelo |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Las guías del autor documentan Claude Code y Codex CLI con backend Ollama; esto cambia el modelo y no aporta modelos Anthropic/OpenAI mediante su suscripción
 
 ## Qué puedes hacer con él
 
-Un comando para bajar y ejecutar modelos como Qwen, Gemma, DeepSeek o gpt-oss. Casi todas las apps de IA local lo soportan.
+La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI.
 
 ## Por qué destaca
 
-Experiencia muy simple y el ecosistema de integraciones más amplio en IA local.
+Usos propuestos: Probar un LLM local; Conectar un modelo local a Codex CLI.
 
 ## Cómo funciona
 
-Usa llama.cpp por debajo, gestiona modelos cuantizados y sirve una API REST local.
+Las guías del autor documentan Claude Code y Codex CLI con backend Ollama; esto cambia el modelo y no aporta modelos Anthropic/OpenAI mediante su suscripción
 
 ## Cómo empezar
 
@@ -43,33 +44,45 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Equipo compatible con el modelo elegido y espacio para sus pesos.
+- Instalador oficial para tu sistema
+- RAM y disco adecuados al modelo
 
-1. Instala el motor de Ollama para tu sistema desde la fuente oficial.
-2. Elige un modelo que quepa en la memoria del equipo y sigue su descarga y primer chat.
-3. Conecta una interfaz como Open WebUI solo cuando hayas comprobado la inferencia local del motor.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-[Instrucciones originales de instalación](https://github.com/ollama/ollama/blob/main/README.md)
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://docs.ollama.com/quickstart)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Ollama para mi objetivo y necesito pasos guiados. Lee https://github.com/ollama/ollama/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Ollama para mi objetivo y necesito pasos guiados. Lee https://docs.ollama.com/quickstart. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Descarga un modelo pequeño y formula una pregunta antes de conectarlo a un agente.
+
+**Qué comprobar:** Puedes identificar el modelo ejecutado y ver la respuesta en tu equipo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Usar modelos locales en n8n
-- Backend local para Open WebUI
-- Programar con modelos privados
+- Probar un LLM local
+- Conectar un modelo local a Codex CLI
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres modelos locales funcionando en minutos | necesitas servir a muchos usuarios con GPU; mira `vllm` |
+| Tu objetivo encaja con estos ejemplos: Probar un LLM local; Conectar un modelo local a Codex CLI | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Las guías del autor documentan Claude Code y Codex CLI con backend Ollama; esto cambia el modelo y no aporta modelos Anthropic/OpenAI mediante su suscripción
 
 ## Stack y modelos
 
-- **Stack:** Go, C++
+- **Stack:** Instalador oficial para tu sistema; RAM y disco adecuados al modelo
 - **Etiquetas:** `inference` `local` `go`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -98,9 +111,13 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ollama/ollama/blob/main/README.md)
+- [Fuente 2](https://docs.ollama.com/integrations/claude-code)
+- [Fuente 3](https://docs.ollama.com/integrations/codex)
 
 ---
 

@@ -16,56 +16,75 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | Depende de la ruta elegida. La indexación usa LLM y puede ser costosa antes de la primera consulta; calcula un lote pequeño |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Proyecto de investigación en mantenimiento: el autor no prevé nuevas funciones ni nuevas PRs, aunque mantiene correcciones y dependencias |
+| Coste | El coste depende del proveedor o la ruta. La indexación usa LLM y puede ser costosa antes de la primera consulta; calcula un lote pequeño |
+| Equipo | Preparación según la ruta elegida. Python según guía; modelo y embeddings; corpus pequeño; presupuesto de indexación |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Proyecto de investigación en mantenimiento: el autor no prevé nuevas funciones ni nuevas PRs, aunque mantiene correcciones y dependencias
 
 ## Qué puedes hacer con él
 
-Resuelve las preguntas que requieren conectar entidades dispersas en muchos documentos, donde el RAG clásico falla.
+Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud.
 
 ## Por qué destaca
 
-Proyecto de Microsoft Research muy difundido que mejora las respuestas en preguntas que requieren conectar entidades dispersas en muchos documentos. Su enfoque de resumen por comunidades y recuperación local+global es un patrón de referencia en RAG avanzado.
+Usos propuestos: Estudiar relaciones de un corpus; Comparar búsqueda local y resumen global.
 
 ## Cómo funciona
 
-Un LLM extrae entidades y relaciones para construir el grafo, lo resume por comunidades con un LLM y luego responde combinando recuperación local (entidades concretas) y global (temas del corpus) con embeddings.
+Proyecto de investigación en mantenimiento: el autor no prevé nuevas funciones ni nuevas PRs, aunque mantiene correcciones y dependencias
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/microsoft/graphrag/blob/main/README.md)
+- Python según guía
+- modelo y embeddings
+- corpus pequeño
+- presupuesto de indexación
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://microsoft.github.io/graphrag/get_started/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar graphrag para mi objetivo y necesito pasos guiados. Lee https://github.com/microsoft/graphrag/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar graphrag para mi objetivo y necesito pasos guiados. Lee https://microsoft.github.io/graphrag/get_started/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Indexa unos textos ficticios y pregunta por un tema que conecte varios de ellos.
+
+**Qué comprobar:** Puedes revisar entidades, comunidades y fuentes de la respuesta.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Preguntas complejas sobre un corpus
-- Recuperación que entiende relaciones
-- Análisis temático de colecciones grandes de documentos
+- Estudiar relaciones de un corpus
+- Comparar búsqueda local y resumen global
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tu corpus tiene relaciones ricas y el RAG por fragmentos se queda corto | un RAG simple basta o el coste de indexado con LLM es prohibitivo |
+| Tu objetivo encaja con estos ejemplos: Estudiar relaciones de un corpus; Comparar búsqueda local y resumen global | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Proyecto de investigación en mantenimiento: el autor no prevé nuevas funciones ni nuevas PRs, aunque mantiene correcciones y dependencias
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python según guía; modelo y embeddings; corpus pequeño; presupuesto de indexación
 - **Etiquetas:** `rag` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -73,8 +92,8 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [graphify](graphify.md) | 148k | Generador de grafos de conocimiento que mapea código, PDFs, imágenes y video en diagramas interactivos. |
-| [mcp-neo4j](mcp-neo4j.md) | 989 | Conjunto de servidores MCP oficiales para conectar bases de datos de grafos Neo4j a asistentes de IA, con soporte de despliegue en cloud. |
+| [graphify](graphify.md) | 148k | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. |
+| [mcp-neo4j](mcp-neo4j.md) | 989 | Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. |
 | [turbovec](turbovec.md) | 17.5k | Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida. |
 
 ## Alternativas (elige una)
@@ -92,7 +111,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/microsoft/graphrag/blob/main/README.md)
 

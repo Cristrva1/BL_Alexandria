@@ -2,7 +2,7 @@
 
 # 🗣️ Fish Speech
 
-> Sistema de texto a voz open source de alta calidad con clonación de voz multilingüe.
+> Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,58 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Código y pesos actuales usan Fish Audio Community License; S2-Pro conserva Research License y no se presume uso comercial idéntico |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La disponibilidad del código no equivale a Apache o MIT ni a un servicio API gratuito; sigue la guía de la variante elegida |
+| Coste | El coste depende del proveedor o la ruta. Código y pesos actuales usan Fish Audio Community License; S2-Pro conserva Research License y no se presume uso comercial idéntico |
+| Equipo | Preparación según la ruta elegida. Entorno y GPU compatibles; modelo con licencia aplicable; texto y voz autorizados |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La disponibilidad del código no equivale a Apache o MIT ni a un servicio API gratuito; sigue la guía de la variante elegida
 
 ## Qué puedes hacer con él
 
-Clona voces con pocos segundos de audio y genera habla natural en muchos idiomas.
+Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante.
 
 ## Por qué destaca
 
-Calidad de las mejores del ecosistema abierto.
+Usos propuestos: Estudiar generación expresiva; Preparar una prueba de voz multilingüe.
 
 ## Cómo funciona
 
-Modelo de lenguaje sobre tokens de audio con un vocoder propio.
+La disponibilidad del código no equivale a Apache o MIT ni a un servicio API gratuito; sigue la guía de la variante elegida
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/fishaudio/fish-speech/blob/main/README.md)
+- Entorno y GPU compatibles
+- modelo con licencia aplicable
+- texto y voz autorizados
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://speech.fish.audio/install/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Fish Speech para mi objetivo y necesito pasos guiados. Lee https://github.com/fishaudio/fish-speech/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Fish Speech para mi objetivo y necesito pasos guiados. Lee https://speech.fish.audio/install/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Elige Drama 3 o S2-Pro y prueba una frase corta después de revisar sus condiciones.
+
+**Qué comprobar:** Puedes distinguir la variante y su licencia.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Locuciones para contenido
-- Clonación de voz
-- Voz en varios idiomas
+- Estudiar generación expresiva
+- Preparar una prueba de voz multilingüe
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas TTS de alta calidad con clonación | necesitas licencia comercial sin restricciones; mira `chatterbox` |
+| Tu objetivo encaja con estos ejemplos: Estudiar generación expresiva; Preparar una prueba de voz multilingüe | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Pesos con licencia no comercial (CC BY-NC-SA).
+**Limitaciones:** La disponibilidad del código no equivale a Apache o MIT ni a un servicio API gratuito; sigue la guía de la variante elegida
 
 ## Stack y modelos
 
-- **Stack:** Python, PyTorch
+- **Stack:** Entorno y GPU compatibles; modelo con licencia aplicable; texto y voz autorizados
 - **Etiquetas:** `tts` `audio` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,9 +91,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Chatterbox](chatterbox.md) | 27.8k | Modelo de texto a voz open source de Resemble AI con clonación de voz y control de emoción. |
+| [Chatterbox](chatterbox.md) | 27.8k | Archivo de investigación TTS retirado y sin mantenimiento según su README desde agosto de 2026. |
 | [CosyVoice](cosyvoice.md) | 24.4k | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. |
-| [GPT-SoVITS](gpt-sovits.md) | 65.1k | Clonación de voz y TTS con solo un minuto de audio, con interfaz web para entrenar. |
+| [GPT-SoVITS](gpt-sovits.md) | 65.1k | Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos. |
 
 ## Enlaces
 
@@ -86,7 +102,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/fishaudio/fish-speech/blob/main/README.md)
 

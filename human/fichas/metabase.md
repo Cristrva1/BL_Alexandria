@@ -16,56 +16,73 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La edición abierta usa AGPL; ediciones comerciales y Cloud tienen precios; el BI básico no exige LLM |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El repositorio contiene varias ediciones; revisa qué funciones de permisos y embedding incluye tu ruta |
+| Coste | El coste depende del proveedor o la ruta. La edición abierta usa AGPL; ediciones comerciales y Cloud tienen precios; el BI básico no exige LLM |
+| Equipo | Preparación según la ruta elegida. Ruta Docker o Java según guía; base de prueba; usuario de lectura |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El repositorio contiene varias ediciones; revisa qué funciones de permisos y embedding incluye tu ruta
 
 ## Qué puedes hacer con él
 
-Apunta a perfiles no técnicos que necesitan reporting propio.
+Herramienta de dashboards y BI para explorar métricas de negocio conectando directamente a tus bases de datos sin escribir SQL.
 
 ## Por qué destaca
 
-De las plataformas BI open source más populares por su facilidad de uso y su editor visual de consultas accesible para perfiles no técnicos. Su despliegue como JAR o contenedor lo hace muy portable.
+Usos propuestos: Explorar ventas sin escribir cada consulta SQL; Compartir un informe operativo.
 
 ## Cómo funciona
 
-Se conecta a tu BD (Postgres, MySQL, BigQuery, etc.), define preguntas mediante un constructor visual o SQL nativo, y las agrupa en dashboards interactivos servidos por web.
+El repositorio contiene varias ediciones; revisa qué funciones de permisos y embedding incluye tu ruta
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/metabase/metabase/blob/master/README.md)
+- Ruta Docker o Java según guía
+- base de prueba
+- usuario de lectura
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://www.metabase.com/docs/latest/installation-and-operation/installing-metabase)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar metabase para mi objetivo y necesito pasos guiados. Lee https://github.com/metabase/metabase/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar metabase para mi objetivo y necesito pasos guiados. Lee https://www.metabase.com/docs/latest/installation-and-operation/installing-metabase. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Crea una pregunta de suma por categoría usando los datos de ejemplo.
+
+**Qué comprobar:** El resultado coincide con las filas y puedes guardarlo en un dashboard.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Tableros de marketing/ventas sin escribir SQL
-- Reporting de negocio sobre tu BD existente
-- Exploración ad-hoc por perfiles no técnicos
+- Explorar ventas sin escribir cada consulta SQL
+- Compartir un informe operativo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres BI accesible para perfiles no técnicos | necesitas analítica de eventos por usuario (posthog) |
+| Tu objetivo encaja con estos ejemplos: Explorar ventas sin escribir cada consulta SQL; Compartir un informe operativo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El repositorio contiene varias ediciones; revisa qué funciones de permisos y embedding incluye tu ruta
 
 ## Stack y modelos
 
-- **Stack:** Java/Clojure, BD, web
+- **Stack:** Ruta Docker o Java según guía; base de prueba; usuario de lectura
 - **Etiquetas:** `analytics` `dataviz` `docker`
 - **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
@@ -90,7 +107,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/metabase/metabase/blob/master/README.md)
 

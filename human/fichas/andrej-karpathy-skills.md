@@ -2,7 +2,7 @@
 
 # 🧠 andrej-karpathy-skills
 
-> Guía de 4 principios inspirada en Andrej Karpathy para que tu agente de código responda útil y sin relleno.
+> Instrucciones para declarar supuestos, simplificar cambios y comprobar objetivos al programar, inspiradas en observaciones de Karpathy.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El archivo de instrucciones consume el agente; no añade un proveedor de modelos |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Son principios inspirados en observaciones de Karpathy, no un proyecto publicado por él ni una garantía de calidad |
+| Coste | Consumo del agente que ya utilizas. El archivo de instrucciones consume el agente; no añade un proveedor de modelos |
+| Equipo | Preparación según la ruta elegida. Claude Code;  revisar las instrucciones que ya existen en el proyecto |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+Son principios inspirados en observaciones de Karpathy, no un proyecto publicado por él ni una garantía de calidad
 
 ## Qué puedes hacer con él
 
-Ajusta el comportamiento de tu asistente con principios claros, sin atarte a una herramienta concreta.
+Instrucciones para declarar supuestos, simplificar cambios y comprobar objetivos al programar, inspiradas en observaciones de Karpathy.
 
 ## Por qué destaca
 
-Condensa una filosofía conocida en reglas cortas y portables entre herramientas, lo que la hace fácil de adoptar sin atarse a un asistente concreto. Su origen en ideas de Karpathy le da peso frente a listas genéricas de "buenas prácticas".
+Usos propuestos: Evitar una refactorización amplia para corregir un fallo pequeño; Hacer explícitas dudas y criterios de éxito antes de programar.
 
 ## Cómo funciona
 
-Se carga como `CLAUDE.md`/instrucciones de sistema que el asistente lee al inicio de la sesión y aplica a cada respuesta. No ejecuta código: es pura directriz de estilo y foco.
+Son principios inspirados en observaciones de Karpathy, no un proyecto publicado por él ni una garantía de calidad
 
 ## Cómo empezar
 
@@ -43,11 +44,23 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Claude Code
+-  revisar las instrucciones que ya existen en el proyecto
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (consulta la sintaxis original):**
+
+```
+/plugin marketplace add forrestchang/andrej-karpathy-skills
+
+/plugin install andrej-karpathy-skills@karpathy-skills
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/multica-ai/andrej-karpathy-skills/blob/main/README.md)
 
@@ -55,21 +68,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar andrej-karpathy-skills para mi objetivo y necesito pasos guiados. Lee https://github.com/multica-ai/andrej-karpathy-skills/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Pide un cambio pequeño y observa si declara supuestos y limita el alcance.
+
+**Qué comprobar:** La propuesta identifica lo que cambiará y cómo comprobar el resultado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Mejorar señal/ruido del asistente
-- Base de buenas prácticas diarias
-- Punto de partida para tu propio `CLAUDE.md`
+- Evitar una refactorización amplia para corregir un fallo pequeño
+- Hacer explícitas dudas y criterios de éxito antes de programar
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres respuestas más útiles ya, sin curar prompts largos | buscas skills ejecutables con scripts concretos |
+| Tu objetivo encaja con estos ejemplos: Evitar una refactorización amplia para corregir un fallo pequeño; Hacer explícitas dudas y criterios de éxito antes de programar | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Son principios inspirados en observaciones de Karpathy, no un proyecto publicado por él ni una garantía de calidad
 
 ## Stack y modelos
 
-- **Stack:** Markdown (`CLAUDE.md`)
+- **Stack:** Claude Code;  revisar las instrucciones que ya existen en el proyecto
 - **Etiquetas:** `skills` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -86,7 +108,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/multica-ai/andrej-karpathy-skills/blob/main/README.md)
 

@@ -16,34 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | API de IA opcional. Tiene planes, créditos y edición Enterprise; BYOK y Ollama son rutas distintas; el instalador no incluye todos los datos y modelos |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Verifica los módulos y límites de tu edición; la marca y ciertos derechos comerciales tienen condiciones adicionales |
+| Coste | El coste depende del proveedor o la ruta. Tiene planes, créditos y edición Enterprise; BYOK y Ollama son rutas distintas; el instalador no incluye todos los datos y modelos |
+| Equipo | Preparación según la ruta elegida. Instalador oficial para tu sistema; cuenta o claves según módulo; datos de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Verifica los módulos y límites de tu edición; la marca y ciertos derechos comerciales tienen condiciones adicionales
 
 ## Qué puedes hacer con él
 
-Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes. Combina módulos de mercado y análisis en una aplicación de escritorio con integraciones de datos.
+Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes.
 
 ## Por qué destaca
 
-Quieres explorar una terminal abierta de investigación y datos financieros.
+Usos propuestos: Explorar indicadores de varios mercados; Comparar información económica de fuentes distintas.
 
 ## Cómo funciona
 
-Combina módulos de mercado y análisis en una aplicación de escritorio con integraciones de datos.
+Verifica los módulos y límites de tu edición; la marca y ciertos derechos comerciales tienen condiciones adicionales
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Instalador oficial para tu sistema
+- cuenta o claves según módulo
+- datos de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Fincept-Corporation/FinceptTerminal/blob/main/README.md)
 
@@ -51,21 +60,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar FinceptTerminal para mi objetivo y necesito pasos guiados. Lee https://github.com/Fincept-Corporation/FinceptTerminal/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Abre un panel de investigación y comprueba proveedor y hora de sus datos antes de activar AI.
+
+**Qué comprobar:** Puedes distinguir datos observados y análisis generado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres explorar una terminal abierta de investigación y datos financieros
+- Explorar indicadores de varios mercados
+- Comparar información económica de fuentes distintas
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres explorar una terminal abierta de investigación y datos financieros | necesitas resultados operativos validados en vez de material de investigación |
+| Tu objetivo encaja con estos ejemplos: Explorar indicadores de varios mercados; Comparar información económica de fuentes distintas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Algunas funciones y fuentes dependen de servicios o ediciones comerciales; validar cada conexión antes de operar.
+**Limitaciones:** Verifica los módulos y límites de tu edición; la marca y ciertos derechos comerciales tienen condiciones adicionales
 
 ## Stack y modelos
 
-- **Stack:** C++, Docker
+- **Stack:** Instalador oficial para tu sistema; cuenta o claves según módulo; datos de prueba
 - **Etiquetas:** `finanzas` `ai-agents` `algorithmic-trading` `bloomberg-terminal` `cpp` `finance` `financial-markets` `fintech`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -76,7 +94,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Fincept-Corporation/FinceptTerminal/blob/main/README.md)
 

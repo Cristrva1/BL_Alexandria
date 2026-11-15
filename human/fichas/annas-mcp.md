@@ -16,39 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Buscar no necesita variables; descargar por su API requiere la donación y clave descritas por el autor |
 | Claude Code | Herramienta MCP para el agente |
 | Codex | Herramienta MCP para el agente |
-| Modelos locales | La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta. |
-| Coste | El coste depende del proveedor o la ruta. El proyecto documenta requisitos de acceso a la API de Anna's Archive; no asumir acceso ilimitado por conectar un cliente MCP. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Configura la ruta absoluta del binario y del directorio de descargas; la herramienta no concede derechos sobre los documentos |
+| Coste | El coste depende del proveedor o la ruta. Buscar no necesita variables; descargar por su API requiere la donación y clave descritas por el autor |
+| Equipo | Preparación según la ruta elegida. Binario oficial para tu sistema; cliente MCP; clave solo para descargas |
 
-Puede conectarse a un cliente con soporte MCP, incluido Claude Code o Codex. Debes configurar el servidor y sus permisos.
+Configura la ruta absoluta del binario y del directorio de descargas; la herramienta no concede derechos sobre los documentos
 
 ## Qué puedes hacer con él
 
-Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos. Expone búsquedas y descargas como herramientas MCP y permite seleccionar espejos disponibles.
+Servidor MCP y CLI de Go para buscar y recuperar documentos desde Anna's Archive y sus espejos.
 
 ## Por qué destaca
 
-Necesitas integrar búsquedas de documentos en un cliente MCP.
+Usos propuestos: Localizar un documento de dominio público; Estudiar una interfaz de búsqueda documental MCP.
 
 ## Cómo funciona
 
-Expone búsquedas y descargas como herramientas MCP y permite seleccionar espejos disponibles.
+Configura la ruta absoluta del binario y del directorio de descargas; la herramienta no concede derechos sobre los documentos
 
 ## Cómo empezar
 
-Se configura en tu agente. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un cliente MCP compatible.
-- Las credenciales del servicio conectado, si las pide el servidor.
+- Binario oficial para tu sistema
+- cliente MCP
+- clave solo para descargas
 
-1. Instala o configura el servidor según su README.
-2. Añade su comando o URL en la configuración MCP de tu cliente.
-3. Comprueba que aparecen las herramientas antes de asignar una tarea.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/iosifache/annas-mcp/blob/main/README.md)
 
@@ -56,21 +59,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar annas-mcp para mi objetivo y necesito pasos guiados. Lee https://github.com/iosifache/annas-mcp/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Busca un documento que puedas utilizar legalmente y revisa los metadatos antes de descargar.
+
+**Qué comprobar:** La búsqueda muestra título y origen sin necesitar clave de descarga.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Necesitas integrar búsquedas de documentos en un cliente MCP
+- Localizar un documento de dominio público
+- Estudiar una interfaz de búsqueda documental MCP
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas integrar búsquedas de documentos en un cliente MCP | una conexión directa cubre el caso sin añadir infraestructura |
+| Tu objetivo encaja con estos ejemplos: Localizar un documento de dominio público; Estudiar una interfaz de búsqueda documental MCP | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La disponibilidad depende de los espejos y los derechos de acceso de cada documento.
+**Limitaciones:** Configura la ruta absoluta del binario y del directorio de descargas; la herramienta no concede derechos sobre los documentos
 
 ## Stack y modelos
 
-- **Stack:** Go, Go modules
+- **Stack:** Binario oficial para tu sistema; cliente MCP; clave solo para descargas
 - **Etiquetas:** `servidores` `annas-archive` `cli` `mcp-server` `go`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -87,7 +99,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/iosifache/annas-mcp/blob/main/README.md)
 

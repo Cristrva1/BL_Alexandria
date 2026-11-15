@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La ejecución propia usa cómputo y modelos o datasets con condiciones separadas; no incluye equipos |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso. |
-| Coste | Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos. |
-| Equipo | Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La calibración y el número de vistas cambian por pipeline; una demo no prueba precisión de captura con cualquier cámara o escena |
+| Coste | El coste depende del proveedor o la ruta. La ejecución propia usa cómputo y modelos o datasets con condiciones separadas; no incluye equipos |
+| Equipo | Preparación según la ruta elegida. Entorno de la demo; cámaras y calibración según método; modelos corporales autorizados |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+La calibración y el número de vistas cambian por pipeline; una demo no prueba precisión de captura con cualquier cámara o escena
 
 ## Qué puedes hacer con él
 
 Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes.
 
+## Por qué destaca
+
+Usos propuestos: Estudiar captura multicámara; Explorar reconstrucción de movimiento.
+
 ## Cómo funciona
 
-Carga los modelos y datos del ejemplo para realizar inferencia o investigación con el backend elegido.
+La calibración y el número de vistas cambian por pipeline; una demo no prueba precisión de captura con cualquier cámara o escena
 
 ## Cómo empezar
 
@@ -39,33 +44,46 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida.
+- Entorno de la demo
+- cámaras y calibración según método
+- modelos corporales autorizados
 
-1. Elige el modelo y el backend que documenta el proyecto para tu sistema.
-2. Prepara las dependencias y los pesos; no uses una cifra promocional como garantía para tu hardware.
-3. Procesa una muestra pequeña y revisa calidad, tiempo y memoria antes de aumentar el tamaño de la tarea.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-[Instrucciones originales de instalación](https://github.com/zju3dv/EasyMocap/blob/master/Readme.md)
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://chingswy.github.io/easymocap-public-doc/quickstart/quickstart.html)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar EasyMocap para mi objetivo y necesito pasos guiados. Lee https://github.com/zju3dv/EasyMocap/blob/master/Readme.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar EasyMocap para mi objetivo y necesito pasos guiados. Lee https://chingswy.github.io/easymocap-public-doc/quickstart/quickstart.html. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Empieza por los datos de una demo y revisa correspondencia de cámaras y reconstrucción.
+
+**Qué comprobar:** Puedes reconocer qué observaciones sustentan la pose.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes.
+- Estudiar captura multicámara
+- Explorar reconstrucción de movimiento
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Herramientas y ejemplos para capturar y reconstruir movimiento humano a partir de cámaras y secuencias de imágenes. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Estudiar captura multicámara; Explorar reconstrucción de movimiento | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** La calibración y el número de vistas cambian por pipeline; una demo no prueba precisión de captura con cualquier cámara o escena
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Entorno de la demo; cámaras y calibración según método; modelos corporales autorizados
 - **Etiquetas:** `vision` `model` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -75,7 +93,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/zju3dv/EasyMocap/blob/master/Readme.md)
 

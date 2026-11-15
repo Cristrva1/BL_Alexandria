@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Segunda versión de Segment Anything de Meta, que segmenta y sigue objetos en imágenes y video. | Modelo de Meta que segmenta cualquier objeto en una imagen a partir de un clic o una caja. |
 | ⭐ Estrellas | 20.1k | 55.1k |
-| Elígelo si… | necesitas segmentar objetos en video | necesitas segmentar objetos en imágenes |
-| Evítalo si… | solo trabajas con imágenes sueltas; `segment-anything` basta | trabajas con video; mira `sam2` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Separar un objeto de un video; Preparar máscaras para edición | Tu objetivo encaja con estos ejemplos: Preparar máscaras de una imagen; Estudiar segmentación asistida |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
 | Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | Apache-2.0 | Apache-2.0 |
-| Instalación | `pip install -e .` | `pip install git+https://github.com/facebookresearch/segment-anything.git` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **SAM 2** si necesitas segmentar objetos en video.
-- Elige **Segment Anything (SAM)** si necesitas segmentar objetos en imágenes.
+- Elige **SAM 2** si Tu objetivo encaja con estos ejemplos: Separar un objeto de un video; Preparar máscaras para edición.
+- Elige **Segment Anything (SAM)** si Tu objetivo encaja con estos ejemplos: Preparar máscaras de una imagen; Estudiar segmentación asistida.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso. |
-| Coste | Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos. |
-| Equipo | Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No exige proveedor API para el modo local; entrenamiento de kernels, pesos y hardware consumen recursos |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. El README documenta conexión a Claude Code y Codex; su cifra de velocidad es un benchmark del autor, no una garantía universal |
+| Coste | Sin pago a un modelo en la ruta básica. No exige proveedor API para el modo local; entrenamiento de kernels, pesos y hardware consumen recursos |
+| Equipo | Preparación según la ruta elegida. Sistema y acelerador compatibles; pesos; espacio de caché para optimización |
 
-El motor local puede conectarse a agentes como Codex o Claude Code como backend. Eso no convierte la suscripción del agente en el acceso de Magnitude: la inferencia se realiza con tus modelos y recursos locales.
+El README documenta conexión a Claude Code y Codex; su cifra de velocidad es un benchmark del autor, no una garantía universal
 
 ## Qué puedes hacer con él
 
 Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones.
 
+## Por qué destaca
+
+Usos propuestos: Servir un modelo local a Codex; Comparar backends de inferencia en tu equipo.
+
 ## Cómo funciona
 
-Carga y sirve modelos mediante el backend local y las opciones de hardware que documenta el proyecto.
+El README documenta conexión a Claude Code y Codex; su cifra de velocidad es un benchmark del autor, no una garantía universal
 
 ## Cómo empezar
 
@@ -39,11 +44,22 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida.
+- Sistema y acelerador compatibles
+- pesos
+- espacio de caché para optimización
 
-1. Elige el modelo y el backend que documenta el proyecto para tu sistema.
-2. Prepara las dependencias y los pesos; no uses una cifra promocional como garantía para tu hardware.
-3. Procesa una muestra pequeña y revisa calidad, tiempo y memoria antes de aumentar el tamaño de la tarea.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (sh):**
+
+```
+curl -fsSL https://magnitude.dev/install.sh | sh
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/magnitudedev/magnitude/blob/main/README.md)
 
@@ -51,21 +67,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar magnitude para mi objetivo y necesito pasos guiados. Lee https://github.com/magnitudedev/magnitude/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Prueba un modelo pequeño y registra la latencia antes y después del ajuste de kernels.
+
+**Qué comprobar:** Puedes comparar rendimiento en la misma máquina y con el mismo modelo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones.
+- Servir un modelo local a Codex
+- Comparar backends de inferencia en tu equipo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Servir un modelo local a Codex; Comparar backends de inferencia en tu equipo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** El README documenta conexión a Claude Code y Codex; su cifra de velocidad es un benchmark del autor, no una garantía universal
 
 ## Stack y modelos
 
-- **Stack:** Rust, package.json
+- **Stack:** Sistema y acelerador compatibles; pesos; espacio de caché para optimización
 - **Etiquetas:** `motores` `engine` `rust`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -76,7 +101,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/magnitudedev/magnitude/blob/main/README.md)
 

@@ -2,7 +2,7 @@
 
 # 👨‍💻 Open SWE
 
-> Agente de código asíncrono de LangChain para montar tu propio agente interno de ingeniería.
+> Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,56 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | API de IA necesaria. El despliegue tal como está requiere Managed Deep Agents y servicios asociados; adaptar a otro runtime requiere trabajo adicional |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. El proyecto se presenta actualmente como Robin construido sobre Deep Agents; MIT cubre su código y no concede acceso a todos los servicios |
+| Coste | Consumo de APIs o servicios. El despliegue tal como está requiere Managed Deep Agents y servicios asociados; adaptar a otro runtime requiere trabajo adicional |
+| Equipo | Preparación según la ruta elegida. Managed Deep Agents para despliegue actual; repositorio y permisos de prueba; servicios integrados |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El proyecto se presenta actualmente como Robin construido sobre Deep Agents; MIT cubre su código y no concede acceso a todos los servicios
 
 ## Qué puedes hacer con él
 
-Trabaja en segundo plano a partir de issues o mensajes, planifica, programa en un sandbox y abre PRs. Inspirado en los agentes internos de empresas como Stripe o Ramp.
+Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables.
 
 ## Por qué destaca
 
-Base abierta y extensible sobre LangGraph para quien quiere su propio agente de ingeniería.
+Usos propuestos: Diseñar una fábrica interna de cambios; Estudiar un agente asíncrono con revisión.
 
 ## Cómo funciona
 
-Un grafo de LangGraph coordina planificador y programador; el código se ejecuta en sandboxes remotos y el resultado llega como PR.
+El proyecto se presenta actualmente como Robin construido sobre Deep Agents; MIT cubre su código y no concede acceso a todos los servicios
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/langchain-ai/open-swe/blob/main/README.md)
+- Managed Deep Agents para despliegue actual
+- repositorio y permisos de prueba
+- servicios integrados
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://github.com/langchain-ai/open-swe/blob/main/docs/INSTALLATION.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Open SWE para mi objetivo y necesito pasos guiados. Lee https://github.com/langchain-ai/open-swe/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Open SWE para mi objetivo y necesito pasos guiados. Lee https://github.com/langchain-ai/open-swe/blob/main/docs/INSTALLATION.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Lee el flujo de issue a PR y prueba un issue ficticio sin habilitar entregas automáticas.
+
+**Qué comprobar:** Puedes inspeccionar planificación, sandbox y validación por separado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Agente que resuelve issues y abre PRs
-- Bot interno de ingeniería en Slack
-- Tareas largas en segundo plano
+- Diseñar una fábrica interna de cambios
+- Estudiar un agente asíncrono con revisión
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres construir el agente de código interno de tu empresa | solo quieres un agente para tu terminal; mira `claude-code` |
+| Tu objetivo encaja con estos ejemplos: Diseñar una fábrica interna de cambios; Estudiar un agente asíncrono con revisión | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El proyecto se presenta actualmente como Robin construido sobre Deep Agents; MIT cubre su código y no concede acceso a todos los servicios
 
 ## Stack y modelos
 
-- **Stack:** Python, LangGraph, TypeScript
+- **Stack:** Managed Deep Agents para despliegue actual; repositorio y permisos de prueba; servicios integrados
 - **Etiquetas:** `coding-agent` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -80,7 +98,7 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [OpenHands](openhands.md) | 93.5k | Plataforma de agentes que ejecutan acciones reales en entornos de desarrollo (ex-OpenDevin). |
+| [OpenHands](openhands.md) | 93.5k | Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP. |
 | [SWE-agent](swe-agent.md) | 20.8k | Agente de Princeton y Stanford que toma un issue de GitHub e intenta resolverlo solo. |
 
 ## Enlaces
@@ -90,7 +108,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/langchain-ai/open-swe/blob/main/README.md)
 

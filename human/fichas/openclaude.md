@@ -16,42 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | API de IA opcional. Admite modelos locales y proveedores remotos con API u OAuth; las cuotas dependen de la ruta elegida |
 | Claude Code | Integración no documentada |
 | Codex | Integración documentada por el proyecto |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. El paquete actual es @twigpine/openclaude; no es Claude Code y el autor indica no copiar indiscriminadamente sus credenciales ni .claude |
+| Coste | El coste depende del proveedor o la ruta. Admite modelos locales y proveedores remotos con API u OAuth; las cuotas dependen de la ruta elegida |
+| Equipo | Preparación según la ruta elegida. Node >=24.22.1; proveedor o Ollama; carpeta de prueba |
 
-El README documenta una integración con las sesiones de los agentes indicados. Configurar esa ruta y comprobar sus límites; otras rutas pueden facturar por API.
+El paquete actual es @twigpine/openclaude; no es Claude Code y el autor indica no copiar indiscriminadamente sus credenciales ni .claude
 
 ## Qué puedes hacer con él
 
-Agente de código abierto para terminal que conecta proveedores remotos y modelos locales con herramientas y MCP. Mantiene una conversación de desarrollo con streaming, comandos y herramientas sobre el workspace.
+Agente de código abierto para terminal que conecta proveedores remotos y modelos locales con herramientas y MCP.
 
 ## Por qué destaca
 
-Quieres evaluar un agente de terminal compatible con varios backends.
+Usos propuestos: Usar un agente con Ollama; Comparar un backend API con Codex OAuth.
 
 ## Cómo funciona
 
-Mantiene una conversación de desarrollo con streaming, comandos y herramientas sobre el workspace.
+El paquete actual es @twigpine/openclaude; no es Claude Code y el autor indica no copiar indiscriminadamente sus credenciales ni .claude
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Node >=24.22.1
+- proveedor o Ollama
+- carpeta de prueba
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
 npm install -g @twigpine/openclaude@latest
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Twigpine/openclaude/blob/main/README.md)
 
@@ -59,21 +67,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar openclaude para mi objetivo y necesito pasos guiados. Lee https://github.com/Twigpine/openclaude/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Instala el paquete actual y configura un modelo antes de solicitar una explicación sin edición.
+
+**Qué comprobar:** Puedes revisar proveedor, contexto y permisos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres evaluar un agente de terminal compatible con varios backends
+- Usar un agente con Ollama
+- Comparar un backend API con Codex OAuth
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres evaluar un agente de terminal compatible con varios backends | un flujo determinista resuelve el problema sin un agente |
+| Tu objetivo encaja con estos ejemplos: Usar un agente con Ollama; Comparar un backend API con Codex OAuth | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La compatibilidad y autenticación dependen del backend; es un proyecto independiente.
+**Limitaciones:** El paquete actual es @twigpine/openclaude; no es Claude Code y el autor indica no copiar indiscriminadamente sus credenciales ni .claude
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Docker, Node.js
+- **Stack:** Node >=24.22.1; proveedor o Ollama; carpeta de prueba
 - **Etiquetas:** `coding` `ai` `ai-agent` `ai-tools` `cli` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -84,7 +101,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Twigpine/openclaude/blob/main/README.md)
 

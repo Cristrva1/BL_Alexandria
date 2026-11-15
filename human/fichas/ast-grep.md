@@ -16,34 +16,48 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No necesita modelo ni API; solo recursos locales |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Empieza por búsqueda; revisa el diff de una reescritura antes de aplicarla al proyecto entero |
+| Coste | Sin pago a un modelo en la ruta básica. No necesita modelo ni API; solo recursos locales |
+| Equipo | Preparación según la ruta elegida. Node y npm para esta ruta; archivos de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Empieza por búsqueda; revisa el diff de una reescritura antes de aplicarla al proyecto entero
 
 ## Qué puedes hacer con él
 
-Busca y reemplaza código por su estructura (AST), no por texto. Útil para refactors masivos y reglas de lint propias.
+CLI en Rust para búsqueda estructural, lint y reescritura de código usando patrones que parecen código.
 
 ## Por qué destaca
 
-Muy rápido y con patrones fáciles de escribir; los agentes de código lo usan bien.
+Usos propuestos: Migrar llamadas de una API; Aplicar reglas de lint personalizadas.
 
 ## Cómo funciona
 
-Parsea con tree-sitter y compara patrones contra el árbol sintáctico.
+Empieza por búsqueda; revisa el diff de una reescritura antes de aplicarla al proyecto entero
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Node y npm para esta ruta
+- archivos de prueba
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+npm install --global @ast-grep/cli
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/ast-grep/ast-grep/blob/main/README.md)
 
@@ -51,21 +65,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar ast-grep para mi objetivo y necesito pasos guiados. Lee https://github.com/ast-grep/ast-grep/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Busca una llamada por su estructura y revisa los resultados antes de reescribir.
+
+**Qué comprobar:** Encuentras la expresión aunque varíe el espaciado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Refactors masivos seguros
-- Reglas de lint del equipo
-- Buscar patrones de bugs
+- Migrar llamadas de una API
+- Aplicar reglas de lint personalizadas
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas buscar o reescribir código por estructura | buscas análisis de seguridad con reglas existentes; mira `semgrep` |
+| Tu objetivo encaja con estos ejemplos: Migrar llamadas de una API; Aplicar reglas de lint personalizadas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Empieza por búsqueda; revisa el diff de una reescritura antes de aplicarla al proyecto entero
 
 ## Stack y modelos
 
-- **Stack:** Rust, tree-sitter
+- **Stack:** Node y npm para esta ruta; archivos de prueba
 - **Etiquetas:** `code` `security` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,7 +112,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ast-grep/ast-grep/blob/main/README.md)
 

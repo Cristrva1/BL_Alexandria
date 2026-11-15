@@ -1,4 +1,4 @@
-[🏠 Inicio](../README.md) › [🤖 WhatsApp, mensajería y chatbots](../categorias/17-mensajeria-chatbots.md) › WhatsApp y mensajería
+[🏠 Inicio](../README.md) › [🤖 WhatsApp, mensajería y chatbots](../categorias/17-mensajeria-chatbots.md) › Comunidades,chat y llamadas
 
 # 🌐 fluxer
 
@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La mensajería básica no usa IA; alojamiento y servicios tienen condiciones propias; assets usan licencias distintas del código |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es una plataforma comunitaria independiente, no una integración WhatsApp; por eso cambia de subcategoría |
+| Coste | El coste depende del proveedor o la ruta. La mensajería básica no usa IA; alojamiento y servicios tienen condiciones propias; assets usan licencias distintas del código |
+| Equipo | Preparación según la ruta elegida. Cliente o servidor elegido; micrófono para voz; cuenta de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es una plataforma comunitaria independiente, no una integración WhatsApp; por eso cambia de subcategoría
 
 ## Qué puedes hacer con él
 
-Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio. Organiza canales y comunicación de grupos; no es un generador de audio o video.
+Aplicación de mensajería instantánea y llamadas de voz para comunidades, con código abierto y opciones de alojamiento propio.
 
 ## Por qué destaca
 
-Apuesta por audio/video con mejoras continuas y un cliente nativo, aunque es un proyecto poco maduro y con documentación e instalación todavía limitadas (honestamente, oscuro). Útil solo para explorar el rumbo de la plataforma.
+Usos propuestos: Organizar conversación de una comunidad; Probar una interfaz de mensajería y VoIP propia.
 
 ## Cómo funciona
 
-Reúne conversaciones de texto, voz y funciones comunitarias en clientes web y de escritorio.
+Es una plataforma comunitaria independiente, no una integración WhatsApp; por eso cambia de subcategoría
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Cliente o servidor elegido
+- micrófono para voz
+- cuenta de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/fluxerapp/fluxer/blob/main/README.md)
 
@@ -51,22 +59,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar fluxer para mi objetivo y necesito pasos guiados. Lee https://github.com/fluxerapp/fluxer/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Crea una comunidad de ensayo y comprueba permisos de un canal y una llamada de prueba.
+
+**Qué comprobar:** Puedes distinguir miembros, canales y permisos configurados.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Explorar una plataforma generativa emergente
-- Cliente Canary web/desktop para probar audio/video mejorado
+- Organizar conversación de una comunidad
+- Probar una interfaz de mensajería y VoIP propia
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres probar algo nuevo y seguir su evolución | necesitas estabilidad de producción (API aún en finalización) |
+| Tu objetivo encaja con estos ejemplos: Organizar conversación de una comunidad; Probar una interfaz de mensajería y VoIP propia | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Proyecto en finalización: API, docs y self-host inestables; no apto para producción ni para depender de él hoy.
+**Limitaciones:** Es una plataforma comunitaria independiente, no una integración WhatsApp; por eso cambia de subcategoría
 
 ## Stack y modelos
 
-- **Stack:** web/TS
+- **Stack:** Cliente o servidor elegido; micrófono para voz; cuenta de prueba
 - **Etiquetas:** `whatsapp` `chatbot` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -74,7 +90,7 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Open-Generative-AI](open-generative-ai.md) | 34.7k | Estudio abierto de generación de imagen y video que utiliza modelos ofrecidos mediante servicios de MuAPI. |
+| [Open-Generative-AI](open-generative-ai.md) | 34.7k | Estudio de imagen y video con servicios remotos MuAPI y rutas locales de escritorio mediante sd.cpp o Wan2GP. |
 
 ## Enlaces
 
@@ -83,7 +99,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría corregida en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/fluxerapp/fluxer/blob/main/README.md)
 

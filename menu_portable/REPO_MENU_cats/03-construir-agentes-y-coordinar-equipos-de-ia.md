@@ -6,732 +6,1081 @@
 ## `adk-python`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=google,openai,anthropic · tags=agents,python
 
-**Qué es:** Define agentes y sistemas multiagente con herramientas, memoria y evaluación, con interfaz web de pruebas incluida. Se despliega fácil en Google Cloud.
-**Stack:** Python
+**Qué es:** Kit de Google para construir, evaluar y desplegar agentes en Python, optimizado para Gemini.
+**Stack:** Python 3.11+; entorno virtual; modelo configurado
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. Los modelos y servicios se facturan según el proveedor; el SDK no incluye crédito de Antigravity
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Que Google publique ADK no lo convierte en configuración de Antigravity
+- Coste: El coste depende del proveedor o la ruta. Los modelos y servicios se facturan según el proveedor; el SDK no incluye crédito de Antigravity
+- Equipo: Preparación según la ruta elegida. Python 3.11+; entorno virtual; modelo configurado
 **Repo:** https://github.com/google/adk-python
 
-**Instalación** [+]: `pip install google-adk`
+**Instalación** [+]:
+
+```
+pip install google-adk
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** trabajas con Gemini o Google Cloud
-**Evita si:** tu stack es OpenAI; mira `openai-agents-python`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Consultar información de negocio; Evaluar la selección de herramientas
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Consulta el horario de una tienda ficticia mediante una herramienta del agente
+**Qué comprobar:** El agente devuelve el dato de la herramienta
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `gemini-cli`, `fastmcp`
 **Alternativas (elige una):** `langgraph`, `openai-agents-python`
 
 ## `ag2`
 role=library · exec=cloud · setup=medium · mcp=False · prov=— · tags=automation,agents,python
 
-**Qué es:** Modela conversaciones entre varios agentes que se delegan tareas hasta resolver un objetivo.
-**Stack:** Python
+**Qué es:** AG2 v1 utiliza import ag2 y su propia arquitectura de agentes y redes. Los proyectos con ConversableAgent, GroupChat e import autogen deben seguir la distribución ag2-classic y su documentación de migración.
+**Stack:** Python 3.11+; extra del proveedor elegido
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. Ofrece extras para OpenAI, Anthropic, Gemini y Ollama; cada proveedor conserva sus costes
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. AG2 v1 no sustituye directamente Classic: ConversableAgent y GroupChat siguen en ag2-classic con import autogen
+- Coste: El coste depende del proveedor o la ruta. Ofrece extras para OpenAI, Anthropic, Gemini y Ollama; cada proveedor conserva sus costes
+- Equipo: Preparación según la ruta elegida. Python 3.11+; extra del proveedor elegido
 **Repo:** https://github.com/ag2ai/ag2
 
-**Instalación** [+]: `pip install ag2`
+**Instalación** [+]:
+
+```
+pip install ag2[openai]
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** construyes multiagente serio en Python
-**Evita si:** te basta un agente único o quieres orquestación visual
+**Elige si:** Tu objetivo encaja con estos ejemplos: Coordinar redactor y verificador; Incluir intervención humana en un equipo
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Haz que un agente resuma una conversación y otro revise las omisiones
+**Qué comprobar:** Se registran los intercambios usando import ag2
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langchain`, `langfuse`
 **Alternativas (elige una):** `autogen`
 
 ## `agent-framework`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic · tags=agents,python
 
-**Qué es:** Une la simplicidad de AutoGen con las capacidades empresariales de Semantic Kernel: workflows con estado, observabilidad y despliegue en Azure.
-**Stack:** Python, C#, .NET
+**Qué es:** Framework de Microsoft para agentes y workflows multiagente en Python y .NET, sucesor de AutoGen y Semantic Kernel.
+**Stack:** Python o .NET; proveedor configurado
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- API de IA: Depende de la ruta elegida. Admite Ollama y otros proveedores; Foundry y despliegues gestionados pueden generar gasto
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Antigravity: Dentro del agente: skills o instrucciones
+- Modelos locales: Modelos locales documentados. La skill de construcción usa el agente; el runtime tiene autenticación y costes propios; módulos Lab son experimentales
+- Coste: El coste depende del proveedor o la ruta. Admite Ollama y otros proveedores; Foundry y despliegues gestionados pueden generar gasto
+- Equipo: Preparación según la ruta elegida. Python o .NET; proveedor configurado
 **Repo:** https://github.com/microsoft/agent-framework
 
-**Instalación** [+]: `pip install agent-framework`
+**Instalación** [+]:
+
+```
+pip install agent-framework
+# This installs the standard package set; install `agent-framework-lab` separately for experimental modules.
+# It may take a minute on first install on Windows.
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** trabajas en el ecosistema Microsoft o .NET
-**Evita si:** quieres el ecosistema open source más grande; mira `langgraph`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Migrar una prueba de Semantic Kernel; Coordinar especialistas con un flujo explícito
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Prueba un agente y después un workflow con dos pasos y un punto de control
+**Qué comprobar:** Puedes seguir las transiciones y recuperar el estado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Alternativas (elige una):** `autogen`, `semantic-kernel`
 
 ## `agno`
-role=runtime · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,google,local · tags=agents,memory,python
+role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=agents,memory,python
 
-**Qué es:** Construye agentes con memoria, RAG y herramientas, y sírvelos como API con su plataforma. Antes se llamaba Phidata.
-**Stack:** Python, FastAPI
+**Qué es:** Framework y runtime de agentes en Python con memoria, conocimiento y equipos multiagente.
+**Stack:** Python; plantilla; PostgreSQL; proveedor de modelos
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- API de IA: Depende de la ruta elegida. El MCP de documentación no requiere autenticación; plataforma, nube y modelos pueden costar; los ingenieros Claude/Codex usan claves API
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: Modelo local no documentado. MCP HTTP accesible desde los tres clientes; no significa que sus planes paguen los agentes desplegados
+- Coste: El coste depende del proveedor o la ruta. El MCP de documentación no requiere autenticación; plataforma, nube y modelos pueden costar; los ingenieros Claude/Codex usan claves API
+- Equipo: Preparación según la ruta elegida. Python; plantilla; PostgreSQL; proveedor de modelos
 **Repo:** https://github.com/agno-agi/agno
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/agno-agi/agno/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://docs.agno.com/agent-platform/overview
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres un framework de agentes con memoria y API lista
-**Evita si:** necesitas grafos explícitos y controlables; mira `langgraph`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Servir un agente mediante una API; Investigar fallos mediante trazas
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Conecta el MCP de documentación y pide que explique el montaje de la plataforma local
+**Qué comprobar:** El agente consulta la guía y enumera servicios y credenciales necesarios
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `qdrant`, `mem0`
 **Alternativas (elige una):** `crewai`
 
 ## `autogen`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=agents,python
 
-**Qué es:** Popularizó los sistemas multiagente que conversan para resolver tareas. Microsoft recomienda usar Agent Framework para proyectos nuevos.
-**Stack:** Python, .NET
+**Qué es:** Framework de Microsoft para conversaciones entre agentes, hoy en modo mantenimiento.
+**Stack:** Python 3.10+; entorno virtual; cliente de modelo
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. El ejemplo usa OpenAI API; Ollama ofrece una ruta local experimental; Studio no incluye modelos
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Está en mantenimiento; no mezcles autogen-agentchat con los paquetes de AG2 Classic
+- Coste: El coste depende del proveedor o la ruta. El ejemplo usa OpenAI API; Ollama ofrece una ruta local experimental; Studio no incluye modelos
+- Equipo: Preparación según la ruta elegida. Python 3.10+; entorno virtual; cliente de modelo
 **Repo:** https://github.com/microsoft/autogen
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/microsoft/autogen/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** mantienes un proyecto que ya usa AutoGen
-**Evita si:** empiezas algo nuevo; mira `agent-framework`
+```
+# Install AgentChat and OpenAI client from Extensions
+pip install -U "autogen-agentchat" "autogen-ext[openai]"
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Revisar un resumen entre dos agentes; Comparar dos soluciones de programación
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Prueba un redactor y un revisor sobre un párrafo breve
+**Qué comprobar:** Distingues ambos mensajes y puedes detener la conversación
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `litellm`
 **Alternativas (elige una):** `agent-framework`, `ag2`, `crewai`
 
 ## `autogpt`
-role=platform · exec=hybrid · setup=heavy · mcp=False · prov=openai,anthropic · tags=agents,automation,python
+role=platform · exec=hybrid · setup=heavy · mcp=True · prov=openai,anthropic · tags=agents,automation,python
 
-**Qué es:** El famoso proyecto de agentes autónomos evolucionó a una plataforma con editor de bloques, marketplace y servidor para agentes que corren en segundo plano.
-**Stack:** Python, TypeScript, Next.js, Docker
+**Qué es:** Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un constructor visual de bloques.
+**Stack:** Docker para self-hosting; credenciales o modelo local
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: Depende de la ruta elegida. La plataforma alojada es de pago y ofrece acceso a modelos; self-hosting usa tus credenciales o modelo local y recursos propios
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: Modelos locales documentados. La plataforma actual expone MCP Streamable HTTP con clave y permisos; no confundirla con tutoriales del agente Classic ni con acceso incluido al modelo
+- Coste: El coste depende del proveedor o la ruta. La plataforma alojada es de pago y ofrece acceso a modelos; self-hosting usa tus credenciales o modelo local y recursos propios
+- Equipo: Preparación según la ruta elegida. Docker para self-hosting; credenciales o modelo local
 **Repo:** https://github.com/Significant-Gravitas/AutoGPT
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/Significant-Gravitas/AutoGPT/blob/master/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres agentes continuos con un editor visual propio
-**Evita si:** buscas algo ligero y fácil de operar; mira `sim` o `flowise`
+```
+docker run -d \
+  --name autogpt \
+  --restart unless-stopped \
+  --shm-size 2g \
+  --ulimit nofile=65536:65536 \
+  --log-driver json-file \
+  --log-opt max-size=50m \
+  --log-opt max-file=5 \
+  -p 127.0.0.1:3000:3000 \
+  -e AUTOGPT_PUBLIC_URL=http://localhost:3000 \
+  -v autogpt-data:/data \
+  significantgravitas/autogpt:latest
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Procesar solicitudes recurrentes; Componer una investigación con revisión humana
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea una automatización breve que transforma una entrada de texto y revisa cada bloque
+**Qué comprobar:** Ves la salida y el historial de una ejecución acotada
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `n8n`
 **Alternativas (elige una):** `sim`, `langflow`, `flowise`
 
 ## `awesome-langgraph`
 role=directory · exec=cloud · setup=easy · mcp=False · prov=— · tags=automation,agents,javascript
 
-**Qué es:** Es una lista curada, no una herramienta ejecutable.
-**Stack:** Markdown / Python-JS (LangGraph)
+**Qué es:** Repositorio de recursos, librerías y arquitecturas del ecosistema LangGraph/LangChain.
+**Stack:** Navegador; necesidad concreta
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Leer el índice no requiere API; los proyectos enlazados tienen sus propios costes
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo.
-- Coste: Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Las integraciones de los enlaces no acreditan compatibilidad del directorio completo
+- Coste: Sin pago a un modelo en la ruta básica. Leer el índice no requiere API; los proyectos enlazados tienen sus propios costes
+- Equipo: Preparación según la ruta elegida. Navegador; necesidad concreta
 **Repo:** https://github.com/vonzosten/awesome-LangGraph
 
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** construyes con LangGraph y quieres patrones de referencia
-**Evita si:** no usas ese ecosistema
+**Elige si:** Tu objetivo encaja con estos ejemplos: Encontrar un flujo con memoria; Localizar evaluadores de agentes
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Busca una plantilla de aprobación humana y contrasta su versión con las guías oficiales
+**Qué comprobar:** Tienes un candidato y sabes qué aporta al flujo
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langchain`
 
 ## `claude-agent-sdk-python`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=py,framework,python
 
 **Qué es:** SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia.
-**Stack:** Python, pyproject.toml
+**Stack:** Python; credenciales API de Anthropic o proveedor admitido; directorio de prueba
 **Acceso y costes:**
-- API de IA: API de IA opcional. El SDK utiliza Claude Code. Comprueba su autenticación: una sesión del plan y una API key son rutas distintas.
-- Claude Code: Acceso oficial con sesión del plan
+- API de IA: API de IA necesaria. La guía oficial del SDK prescribe autenticación API; no asumas que una suscripción personal incluye tu producto o agentes de terceros
+- Claude Code: Integración documentada por el proyecto
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: El coste depende del proveedor o la ruta. El uso consume el acceso de Claude configurado: límites del plan o créditos y facturación de API. El paquete del SDK no incluye una cuenta ni uso ilimitado.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Integra el motor Claude Code; la guía limita ofrecer login o límites claude.ai a terceros sin autorización previa
+- Coste: Consumo de APIs o servicios. La guía oficial del SDK prescribe autenticación API; no asumas que una suscripción personal incluye tu producto o agentes de terceros
+- Equipo: Preparación según la ruta elegida. Python; credenciales API de Anthropic o proveedor admitido; directorio de prueba
 **Repo:** https://github.com/anthropics/claude-agent-sdk-python
 
-**Instalación** [+]: `pip install claude-agent-sdk`
+**Instalación** [+]:
+
+```
+pip install claude-agent-sdk
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** buscas esta función: SDK oficial de Python para integrar el bucle de Claude Code, herramientas, sesiones y hooks en una aplicación propia.
-**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Elige si:** Tu objetivo encaja con estos ejemplos: Integrar revisión de archivos en una aplicación; Conservar sesiones de un agente propio
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Configura un agente con permiso de lectura y pídele localizar un fallo en un archivo ficticio
+**Qué comprobar:** Puedes ver herramientas llamadas y contrastar el fallo antes de permitir ediciones
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `crewai`
 role=library · exec=cloud · setup=easy · mcp=False · prov=— · tags=automation,agents,python
 
-**Qué es:** Cada agente recibe un rol y objetivo, y el equipo coopera o se reparte el trabajo de forma secuencial o jerárquica.
-**Stack:** Python
+**Qué es:** Framework para orquestar "crews" de agentes con roles y tareas.
+**Stack:** Python >=3.10 y <3.14; uv; proveedor o Ollama/LM Studio
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- API de IA: Depende de la ruta elegida. Las skills consumen tu agente; la crew utiliza su propio proveedor; AMP y servicios externos pueden costar aparte
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Antigravity: Compatibilidad por confirmar
+- Modelos locales: Modelos locales documentados. Claude Code y Codex tienen skills documentadas; Antigravity sigue sin confirmar para esta integración
+- Coste: El coste depende del proveedor o la ruta. Las skills consumen tu agente; la crew utiliza su propio proveedor; AMP y servicios externos pueden costar aparte
+- Equipo: Preparación según la ruta elegida. Python >=3.10 y <3.14; uv; proveedor o Ollama/LM Studio
 **Repo:** https://github.com/crewAIInc/crewAI
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/crewAIInc/crewAI/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres velocidad y un modelo mental simple de "equipo"
-**Evita si:** necesitas control de bajo nivel o orquestación muy custom
+```
+uv tool install crewai
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Preparar investigación de mercado; Separar investigación y redacción de producto
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea una crew que investiga y luego redacta una comparación de dos productos
+**Qué comprobar:** Puedes revisar la salida y las fuentes de cada tarea
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langchain`, `mem0`
 **Alternativas (elige una):** `autogen`, `langgraph`, `agno`, `metagpt`
 
 ## `deepagents`
 role=runtime · exec=hybrid · setup=easy · mcp=False · prov=anthropic,openai · tags=agents,python
 
-**Qué es:** Da a cualquier modelo las capacidades de los agentes profundos (planificar, delegar, usar archivos) sin construirlas tú. Cada pieza se puede extender o reemplazar.
-**Stack:** Python, LangGraph
+**Qué es:** Arnés de agentes de LangChain listo para usar, con planificación, subagentes y sistema de archivos.
+**Stack:** Python y uv; modelo con herramientas; directorio de prueba
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. Usa el modelo configurado y sus costes; Ollama, vLLM y llama.cpp requieren hardware suficiente
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Su parecido con Claude Code no acredita el uso de la suscripción de Claude Code
+- Coste: El coste depende del proveedor o la ruta. Usa el modelo configurado y sus costes; Ollama, vLLM y llama.cpp requieren hardware suficiente
+- Equipo: Preparación según la ruta elegida. Python y uv; modelo con herramientas; directorio de prueba
 **Repo:** https://github.com/langchain-ai/deepagents
 
-**Instalación** [+]: `uv add deepagents`
+**Instalación** [+]:
+
+```
+uv add deepagents
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres un agente potente sin diseñar el bucle desde cero
-**Evita si:** necesitas control total del grafo; usa `langgraph` directamente
+**Elige si:** Tu objetivo encaja con estos ejemplos: Resumir documentos de proyecto; Dividir una revisión de archivos en tareas
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Pide un plan y un informe sobre tres archivos de ejemplo
+**Qué comprobar:** Puedes revisar el plan, las lecturas y el informe guardado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langgraph`, `langfuse`
 **Alternativas (elige una):** `openai-agents-python`
 
 ## `dify`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,agents,python,docker
 
-**Qué es:** Combina orquestación de prompts, RAG, agentes, workflows y observabilidad en un mismo producto autoalojable.
-**Stack:** Python/TS, React, PostgreSQL, Redis, Docker
+**Qué es:** Plataforma integral para construir apps de IA con backend y UI listos.
+**Stack:** Docker y Compose >=2.35; OpenSSL; 2 CPU y 4 GiB mínimos del servidor
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. Dify Cloud tiene planes y cupos; self-hosting paga infraestructura y modelos; su licencia añade condiciones a Apache-2.0
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Genera y guarda el token de sandbox antes de arrancar; un modelo Ollama local necesita una dirección accesible desde Docker
+- Coste: El coste depende del proveedor o la ruta. Dify Cloud tiene planes y cupos; self-hosting paga infraestructura y modelos; su licencia añade condiciones a Apache-2.0
+- Equipo: Preparación según la ruta elegida. Docker y Compose >=2.35; OpenSSL; 2 CPU y 4 GiB mínimos del servidor
 **Repo:** https://github.com/langgenius/dify
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/langgenius/dify/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/langgenius/dify/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres una app IA completa autoalojada
-**Evita si:** solo necesitas una librería o un prototipo puntual
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear un asistente sobre políticas; Diseñar un workflow visual de clasificación
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea una app de preguntas sobre un documento ficticio tras configurar el proveedor y los embeddings
+**Qué comprobar:** La respuesta recupera un fragmento comprobable del documento
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langflow`, `flowise`
 **Alternativas (elige una):** `sim`, `ragflow`
 
 ## `dspy`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=prompts,evaluation,python
 
-**Qué es:** Defines módulos con firmas de entrada y salida y DSPy optimiza automáticamente los prompts y ejemplos con tus métricas. Útil para pipelines que deben mejorar con datos.
-**Stack:** Python
+**Qué es:** Framework de Stanford para programar modelos de lenguaje en vez de escribir prompts a mano.
+**Stack:** Python; modelo elegido; casos etiquetados
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. La optimización repite llamadas y puede acumular consumo; la guía también ofrece Ollama local
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Reserva ejemplos distintos para medir el resultado de la optimización
+- Coste: El coste depende del proveedor o la ruta. La optimización repite llamadas y puede acumular consumo; la guía también ofrece Ollama local
+- Equipo: Preparación según la ruta elegida. Python; modelo elegido; casos etiquetados
 **Repo:** https://github.com/stanfordnlp/dspy
 
-**Instalación** [+]: `pip install dspy`
+**Instalación** [+]:
+
+```
+pip install dspy
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres optimizar prompts de forma sistemática con datos
-**Evita si:** solo necesitas una llamada simple al modelo
+**Elige si:** Tu objetivo encaja con estos ejemplos: Clasificar solicitudes de soporte; Optimizar un extractor de datos
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Clasifica tema y urgencia de cinco mensajes ficticios antes de optimizar
+**Qué comprobar:** Obtienes campos estructurados y una medida de aciertos
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ragas`, `mlflow`
 **Alternativas (elige una):** `promptfoo`
 
 ## `flowise`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=automation,agents,typescript,docker
 
-**Qué es:** Constructor visual para diseñar aplicaciones de IA conectando modelos, herramientas, memoria y fuentes de datos. La instalación de Flowise y el acceso al modelo son decisiones separadas.
-**Stack:** Node.js/TypeScript, React
+**Qué es:** Constructor visual para diseñar aplicaciones de IA conectando modelos, herramientas, memoria y fuentes de datos.
+**Stack:** Node.js >=20; proveedor o instancia Ollama
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. Ollama local usa tu equipo; Ollama Cloud y otros proveedores usan credenciales y tarifas propias
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Comprueba el puerto real de Ollama y la red de Docker; la guía conserva ejemplos con puertos distintos
+- Coste: El coste depende del proveedor o la ruta. Ollama local usa tu equipo; Ollama Cloud y otros proveedores usan credenciales y tarifas propias
+- Equipo: Preparación según la ruta elegida. Node.js >=20; proveedor o instancia Ollama
 **Repo:** https://github.com/FlowiseAI/Flowise
 
-**Instalación** [+]: `npm install -g flowise`
+**Instalación** [+]:
+
+```
+npm install -g flowise
+
+npx flowise start
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres un prototipo visual ya, en stack JS
-**Evita si:** necesitas plataforma completa con RAG/observabilidad (dify)
+**Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar un chatbot sobre documentos; Comparar modelos en un flujo visual
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Conecta un nodo ChatOllama a un flujo de conversación y formula dos preguntas relacionadas
+**Qué comprobar:** El flujo devuelve respuestas usando el modelo configurado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `dify`, `langflow`
 **Alternativas (elige una):** `sim`, `autogpt`
 
 ## `haystack`
-role=library · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=rag,agents,python
+role=library · exec=hybrid · setup=medium · mcp=True · prov=openai,anthropic,local · tags=rag,agents,python
 
-**Qué es:** Compone pipelines modulares de recuperación, generación y agentes con componentes intercambiables. Muy usado en búsqueda empresarial.
-**Stack:** Python
+**Qué es:** Framework de deepset para pipelines de RAG y agentes listos para producción.
+**Stack:** Python; documentos; componentes de recuperación y generación
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- API de IA: Depende de la ruta elegida. La biblioteca admite modelos locales y remotos; deepset gestionado, almacenamiento y modelos son costes separados
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: Modelos locales documentados. El MCP se publica mediante el proyecto compañero Hayhooks y requiere configurar y servir pipelines; sus modelos y claves se eligen aparte
+- Coste: El coste depende del proveedor o la ruta. La biblioteca admite modelos locales y remotos; deepset gestionado, almacenamiento y modelos son costes separados
+- Equipo: Preparación según la ruta elegida. Python; documentos; componentes de recuperación y generación
 **Repo:** https://github.com/deepset-ai/haystack
 
-**Instalación** [+]: `pip install haystack-ai`
+**Instalación** [+]:
+
+```
+pip install haystack-ai
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres pipelines de RAG explícitos y listos para producción
-**Evita si:** buscas el ecosistema más grande de integraciones; mira `llama-index`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Responder sobre manuales propios; Comparar recuperación de dos consultas
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Recupera un párrafo de un manual antes de generar la respuesta
+**Qué comprobar:** Puedes inspeccionar el párrafo y contrastar la salida
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `qdrant`, `docling`
 **Alternativas (elige una):** `llama-index`, `langchain`
 
 ## `hermes-agent-self-evolution`
 role=library · exec=cloud · setup=medium · mcp=False · prov=— · tags=experimentos,python
 
-**Qué es:** Herramientas para optimizar skills, prompts y código de Hermes Agent mediante búsqueda evolutiva con DSPy y GEPA. Evalúa variantes de texto, analiza trazas y selecciona mejoras sin reentrenar pesos de un modelo.
-**Stack:** Python, pyproject.toml
+**Qué es:** Herramientas para optimizar skills, prompts y código de Hermes Agent mediante búsqueda evolutiva con DSPy y GEPA.
+**Stack:** Python; checkout de Hermes Agent; credenciales del optimizador; casos de evaluación
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
+- API de IA: API de IA necesaria. La ruta documentada opera mediante APIs y no requiere entrenamiento GPU; el presupuesto depende de iteraciones y evaluaciones
+- Claude Code: Integración documentada por el proyecto
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Solo la evolución de skills figura implementada; herramientas, prompts del sistema, código y bucle continuo son fases previstas; lee sesiones Claude Code como datos
+- Coste: Consumo de APIs o servicios. La ruta documentada opera mediante APIs y no requiere entrenamiento GPU; el presupuesto depende de iteraciones y evaluaciones
+- Equipo: Preparación según la ruta elegida. Python; checkout de Hermes Agent; credenciales del optimizador; casos de evaluación
 **Repo:** https://github.com/NousResearch/hermes-agent-self-evolution
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/NousResearch/hermes-agent-self-evolution/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres experimentar con mejoras de Hermes medidas sobre un conjunto de evaluación
-**Evita si:** un flujo determinista resuelve el problema sin un agente
+```
+# Install
+git clone https://github.com/NousResearch/hermes-agent-self-evolution.git
+cd hermes-agent-self-evolution
+pip install -e ".[dev]"
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Refinar una skill de revisión de código; Comparar instrucciones con fallos observados
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Optimiza una skill pequeña con datos sintéticos y compara el candidato antes de aceptarlo
+**Qué comprobar:** Puedes revisar diferencias y puntuaciones manteniendo la versión inicial
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `hermes-agent`
 
 ## `jev-fraud`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=experimentos,template,typescript
 
 **Qué es:** Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude.
-**Stack:** TypeScript, package.json
+**Stack:** Node.js y npm; claves Together y AI Gateway solo para ejecución nueva
 **Acceso y costes:**
-- API de IA: API de IA necesaria. La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.
+- API de IA: API de IA opcional. La reproducción no hace llamadas; una ejecución nueva o npm run benchmark consume APIs; la cifra de la grabación no es una tarifa garantizada
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Consumo de APIs o servicios. Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Es una demo sobre una muestra pequeña; sus resultados no validan un detector de fraude en producción
+- Coste: El coste depende del proveedor o la ruta. La reproducción no hace llamadas; una ejecución nueva o npm run benchmark consume APIs; la cifra de la grabación no es una tarifa garantizada
+- Equipo: Preparación según la ruta elegida. Node.js y npm; claves Together y AI Gateway solo para ejecución nueva
 **Repo:** https://github.com/Nutlope/jev-fraud
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/Nutlope/jev-fraud/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** buscas esta función: Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude.
-**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+```
+git clone https://github.com/Nutlope/jev-fraud.git
+   cd jev-fraud
+   npm install
+   cp .env.example .env.local
+
+npm run dev -- --port 3017
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar clasificación con escalado de casos inciertos; Comparar confianza y aciertos sobre un conjunto ficticio
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Abre la aplicación y usa primero 10s replay sobre la grabación incluida
+**Qué comprobar:** Ves la demostración grabada sin lanzar una clasificación nueva
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `langchain`
 role=library · exec=cloud · setup=medium · mcp=False · prov=— · tags=agents,automation,python
 
-**Qué es:** Ofrece abstracciones y conectores para casi cualquier modelo, base de datos vectorial y fuente de datos.
-**Stack:** Python/JS/TS
+**Qué es:** Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas).
+**Stack:** Python y uv; proveedor o modelo local
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. Pagas el proveedor o el hardware local; LangSmith es opcional y tiene condiciones propias
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Instala la integración del modelo además del paquete base; compatibilidad con Anthropic API no equivale a Claude Code
+- Coste: El coste depende del proveedor o la ruta. Pagas el proveedor o el hardware local; LangSmith es opcional y tiene condiciones propias
+- Equipo: Preparación según la ruta elegida. Python y uv; proveedor o modelo local
 **Repo:** https://github.com/langchain-ai/langchain
 
-**Instalación** [+]: `uv add langchain`
+**Instalación** [+]:
+
+```
+uv add langchain
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres la base estándar con máximas integraciones
-**Evita si:** prefieres mínima abstracción o un solo proveedor sin cambiar
+**Elige si:** Tu objetivo encaja con estos ejemplos: Consultar un catálogo de prueba; Responder sobre documentos propios
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Pregunta por existencias a una herramienta con tres productos ficticios
+**Qué comprobar:** La respuesta coincide con los datos y muestra la llamada a la herramienta
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langflow`, `langfuse`, `litellm`
 **Alternativas (elige una):** `llama-index`, `haystack`, `semantic-kernel`
 
 ## `langchain4j`
 role=library · exec=hybrid · setup=medium · mcp=True · prov=— · tags=ts,anthropic,chatgpt,chroma,embeddings,gemini,gpt,huggingface
 
-**Qué es:** Biblioteca de Java para integrar LLM, herramientas, agentes, RAG y almacenes vectoriales en aplicaciones de la JVM. Ofrece interfaces comunes para proveedores y conectores y se integra con frameworks de Java.
-**Stack:** Java
+**Qué es:** Biblioteca de Java para integrar LLM, herramientas, agentes, RAG y almacenes vectoriales en aplicaciones de la JVM.
+**Stack:** JDK y Maven o Gradle según la integración; modelo
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. Ofrece Ollama local y proveedores remotos; recursos, almacenamiento y APIs se pagan según la ruta
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Es una biblioteca Java independiente; no es un port con las mismas versiones o API que LangChain Python
+- Coste: El coste depende del proveedor o la ruta. Ofrece Ollama local y proveedores remotos; recursos, almacenamiento y APIs se pagan según la ruta
+- Equipo: Preparación según la ruta elegida. JDK y Maven o Gradle según la integración; modelo
 **Repo:** https://github.com/langchain4j/langchain4j
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/langchain4j/langchain4j/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://docs.langchain4j.dev/get-started
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** tu aplicación usa Java y necesita integrar modelos o recuperación de documentos
-**Evita si:** un flujo determinista resuelve el problema sin un agente
+**Elige si:** Tu objetivo encaja con estos ejemplos: Añadir IA a Spring Boot; Recuperar documentos desde una aplicación JVM
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Integra un chat que consulta un objeto de inventario de prueba en Java
+**Qué comprobar:** El resultado devuelve el dato del objeto y puede validarse con un test
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `langflow`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=automation,agents,python,docker
+role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=automation,agents,python,docker
 
-**Qué es:** Permite arrastrar y conectar componentes en un lienzo y exportarlos como API o código Python.
-**Stack:** Python, React, Docker
+**Qué es:** Constructor visual de flujos LLM/agentes construido sobre LangChain.
+**Stack:** Python 3.10–3.14; uv; entorno virtual; contraseña de administrador
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- API de IA: Depende de la ruta elegida. Los modelos del flujo y del Assistant son configuraciones distintas y pueden consumir por separado; Ollama ofrece una ruta local
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: Modelos locales documentados. Configura la contraseña antes de iniciar; las herramientas de autoría MCP pueden crear componentes que ejecutan código en el servidor
+- Coste: El coste depende del proveedor o la ruta. Los modelos del flujo y del Assistant son configuraciones distintas y pueden consumir por separado; Ollama ofrece una ruta local
+- Equipo: Preparación según la ruta elegida. Python 3.10–3.14; uv; entorno virtual; contraseña de administrador
 **Repo:** https://github.com/langflow-ai/langflow
 
-**Instalación** [+]: `pip install langflow`
+**Instalación** [+]:
+
+```
+uv pip install langflow -U
+
+uv run langflow run
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** prefieres construir en visual sobre LangChain
-**Evita si:** quieres todo en código o no usas LangChain
+**Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar un agente visual; Exponer un flujo como herramienta MCP
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Abre Simple Agent y conecta un modelo y una herramienta de cálculo
+**Qué comprobar:** Puedes ejecutar una pregunta y revisar el recorrido por los componentes
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langchain`, `dify`
 **Alternativas (elige una):** `sim`, `autogpt`
 
 ## `langgraph`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,google,local · tags=agents,python
 
-**Qué es:** Modela agentes y flujos multiagente como grafos de nodos con estado compartido y checkpoints. Pensado para agentes de producción que deben ser controlables y recuperables.
-**Stack:** Python, LangChain
+**Qué es:** Framework de LangChain para agentes con estado como grafos, con persistencia, human-in-the-loop y streaming.
+**Stack:** Python y entorno virtual; modelo solo para nodos LLM
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: API de IA opcional. El grafo admite funciones sin LLM; los modelos, LangSmith y el alojamiento pueden costar aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Ollama se configura mediante la integración LangChain; no es un plugin del editor
+- Coste: El coste depende del proveedor o la ruta. El grafo admite funciones sin LLM; los modelos, LangSmith y el alojamiento pueden costar aparte
+- Equipo: Preparación según la ruta elegida. Python y entorno virtual; modelo solo para nodos LLM
 **Repo:** https://github.com/langchain-ai/langgraph
 
-**Instalación** [+]: `pip install -U langgraph`
+**Instalación** [+]:
+
+```
+pip install -U langgraph
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** necesitas agentes con estado, control fino y persistencia
-**Evita si:** quieres algo mínimo para un agente simple; mira `smolagents`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Pausar una devolución hasta su revisión; Retomar una investigación interrumpida
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea un grafo que guarda un pedido y se detiene para revisión humana
+**Qué comprobar:** Puedes inspeccionar el estado y reanudar el pedido
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langchain`, `langfuse`
 **Alternativas (elige una):** `crewai`, `openai-agents-python`, `pydantic-ai`, `langgraph-supervisor-py`, `adk-python`
 
 ## `langgraph-supervisor-py`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=agents,python
 
-**Qué es:** Facilitaba el patrón supervisor en sistemas multiagente. LangChain ahora recomienda implementar ese patrón directamente con herramientas.
-**Stack:** Python, LangGraph
+**Qué es:** Librería archivada para crear un agente supervisor que coordina a otros agentes en LangGraph.
+**Stack:** Python 3.10+; LangGraph; modelo con herramientas
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. El ejemplo añade langchain-openai y consume API; modelo y observabilidad se pagan aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Archivado: útil para estudiar o mantener; revisa alternativas actuales de LangGraph para un proyecto nuevo
+- Coste: El coste depende del proveedor o la ruta. El ejemplo añade langchain-openai y consume API; modelo y observabilidad se pagan aparte
+- Equipo: Preparación según la ruta elegida. Python 3.10+; LangGraph; modelo con herramientas
 **Repo:** https://github.com/langchain-ai/langgraph-supervisor-py
 
-**Instalación** [+]: `pip install langgraph-supervisor`
+**Instalación** [+]:
+
+```
+pip install langgraph-supervisor
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** mantienes código que ya la usa
-**Evita si:** empiezas un proyecto nuevo; usa el patrón con herramientas en `langgraph`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Separar búsqueda y cálculo; Estudiar enrutamiento multiagente
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Observa a qué especialista delega el supervisor una pregunta aritmética
+**Qué comprobar:** Se ve la delegación y el regreso de la respuesta
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Alternativas (elige una):** `langgraph`
 
 ## `langgraphjs`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,typescript
 
-**Qué es:** Lleva el modelo de grafos con estado, checkpoints y human-in-the-loop de LangGraph al ecosistema JavaScript.
-**Stack:** TypeScript, Node.js
+**Qué es:** Versión TypeScript de LangGraph para agentes con estado como grafos en Node o el navegador.
+**Stack:** Node.js; TypeScript; modelo solo para nodos LLM
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: API de IA opcional. El grafo no necesita necesariamente un modelo; los nodos LLM, alojamiento y observabilidad pueden costar
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Ollama está documentado mediante @langchain/ollama; revisa que el modelo soporte las herramientas necesarias
+- Coste: El coste depende del proveedor o la ruta. El grafo no necesita necesariamente un modelo; los nodos LLM, alojamiento y observabilidad pueden costar
+- Equipo: Preparación según la ruta elegida. Node.js; TypeScript; modelo solo para nodos LLM
 **Repo:** https://github.com/langchain-ai/langgraphjs
 
-**Instalación** [+]: `npm install @langchain/langgraph @langchain/core`
+**Instalación** [+]:
+
+```
+npm install @langchain/langgraph @langchain/core
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres el modelo de LangGraph en TypeScript
-**Evita si:** buscas una experiencia TS más integrada; mira `mastra`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Controlar aprobación de una solicitud; Reanudar un agente en una app JavaScript
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Monta un grafo que clasifica una solicitud y espera revisión antes de continuar
+**Qué comprobar:** Se conserva el estado y se ve el siguiente paso
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langfuse`
 **Alternativas (elige una):** `mastra`, `vercel-ai`
 
 ## `llama-index`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,local · tags=rag,agents,python
 
-**Qué es:** Ofrece cargadores para cientos de fuentes, índices, motores de consulta y agentes centrados en documentos. Su plataforma LlamaParse procesa PDFs complejos.
-**Stack:** Python, TypeScript
+**Qué es:** Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos.
+**Stack:** Python; dos documentos; modelo generativo y embeddings
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. OpenAI consume API; Ollama y embeddings locales evitan esa API; LlamaParse se presupuesta aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Configura también embeddings locales si quieres que todo el procesamiento sea local
+- Coste: El coste depende del proveedor o la ruta. OpenAI consume API; Ollama y embeddings locales evitan esa API; LlamaParse se presupuesta aparte
+- Equipo: Preparación según la ruta elegida. Python; dos documentos; modelo generativo y embeddings
 **Repo:** https://github.com/run-llama/llama_index
 
-**Instalación** [+]: `pip install llama-index`
+**Instalación** [+]:
+
+```
+# custom selection of integrations to work with core
+pip install llama-index-core
+pip install llama-index-llms-openai
+pip install llama-index-llms-ollama
+pip install llama-index-embeddings-huggingface
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** tu proyecto gira alrededor de RAG sobre tus documentos
-**Evita si:** necesitas orquestación general de agentes; mira `langgraph`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Consultar políticas internas; Encontrar cláusulas en contratos ficticios
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Pregunta por una cifra que solo aparece en uno de tus dos documentos
+**Qué comprobar:** Se recupera el documento correcto y puedes contrastar el fragmento
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `qdrant`, `docling`, `ragas`
 **Alternativas (elige una):** `haystack`, `langchain`
 
 ## `llm-council`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,python
 
-**Qué es:** Cada modelo aporta una respuesta y luego se contrastan para llegar a un consenso.
-**Stack:** Python, React, FastAPI, PostgreSQL
+**Qué es:** "consejo" donde varios LLMs deliberan y se evalúan entre sí para responder.
+**Stack:** Python y uv; Node.js; clave OpenRouter
 **Acceso y costes:**
-- API de IA: API de IA necesaria. La ruta documentada necesita credenciales de un proveedor de IA o servicio externo.
+- API de IA: API de IA necesaria. Cada pregunta puede producir varias llamadas mediante OpenRouter; el coste crece con los miembros y sus revisiones
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: Consumo de APIs o servicios. Revisar el plan, créditos, cuotas y facturación del proveedor antes de ejecutar.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Una mayoría de modelos puede compartir el mismo error; comprueba las afirmaciones con fuentes
+- Coste: Consumo de APIs o servicios. Cada pregunta puede producir varias llamadas mediante OpenRouter; el coste crece con los miembros y sus revisiones
+- Equipo: Preparación según la ruta elegida. Python y uv; Node.js; clave OpenRouter
 **Repo:** https://github.com/karpathy/llm-council
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/karpathy/llm-council/blob/master/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres consenso entre modelos o comparar proveedores
-**Evita si:** te basta un único LLM o el coste multi-modelo no es asumible
+```
+uv sync
+
+cd frontend
+npm install
+cd ..
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Comparar explicaciones de un concepto; Revisar opciones para una decisión técnica
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Envía una pregunta acotada y compara las respuestas y las revisiones entre modelos
+**Qué comprobar:** Se distinguen propuestas iniciales, evaluaciones y síntesis final
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `litellm`
 
 ## `mastra`
 role=library · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=agents,rag,typescript
 
-**Qué es:** Reúne en un solo paquete agentes con memoria, workflows con estado, RAG, evals y un playground local. Pensado para equipos web que trabajan en TypeScript.
-**Stack:** TypeScript, Node.js
+**Qué es:** Framework TypeScript para agentes, workflows, RAG y evaluaciones, de los creadores de Gatsby.
+**Stack:** Node.js y npm; proveedor elegido
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. El framework base es Apache-2.0; nube, modelos y partes con otra licencia tienen condiciones separadas
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. No copies el bloque de prompt del README como comando de terminal; el instalador es npm create mastra
+- Coste: El coste depende del proveedor o la ruta. El framework base es Apache-2.0; nube, modelos y partes con otra licencia tienen condiciones separadas
+- Equipo: Preparación según la ruta elegida. Node.js y npm; proveedor elegido
 **Repo:** https://github.com/mastra-ai/mastra
 
-**Instalación** [+]: `npm create mastra@latest`
+**Instalación** [+]:
+
+```
+npm create mastra@latest
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** tu equipo trabaja en TypeScript y quiere agentes completos
-**Evita si:** trabajas en Python; mira `langgraph` o `pydantic-ai`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Añadir un agente a una app TypeScript; Pausar y reanudar un flujo de aprobación
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea un proyecto y añade una herramienta que devuelva el precio de un producto ficticio
+**Qué comprobar:** Puedes probar el agente y ver la herramienta usada en sus trazas
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `copilotkit`, `langfuse`
 **Alternativas (elige una):** `langgraphjs`, `vercel-ai`
 
 ## `metagpt`
 role=runtime · exec=cloud · setup=medium · mcp=False · prov=— · tags=py,agent,gpt,llm,metagpt,multi-agent,python
 
-**Qué es:** Framework de agentes que representa roles de un equipo de software para coordinar tareas de desarrollo. Asigna responsabilidades y artefactos a agentes que colaboran sobre un encargo.
-**Stack:** Python, Docker
+**Qué es:** Framework de agentes que representa roles de un equipo de software para coordinar tareas de desarrollo.
+**Stack:** Python según guía estable; proveedor o Ollama; directorio de salida de prueba
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. Cada rol puede llamar varias veces al modelo; Ollama está en la configuración; APIs y herramientas externas cuestan según uso
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Los artefactos generados no acreditan una aplicación lista ni sustituyen pruebas y revisión
+- Coste: El coste depende del proveedor o la ruta. Cada rol puede llamar varias veces al modelo; Ollama está en la configuración; APIs y herramientas externas cuestan según uso
+- Equipo: Preparación según la ruta elegida. Python según guía estable; proveedor o Ollama; directorio de salida de prueba
 **Repo:** https://github.com/FoundationAgents/MetaGPT
 
-**Instalación** [+]: `pip install --upgrade metagpt`
+**Instalación** [+]:
+
+```
+pip install --upgrade metagpt
+# or `pip install --upgrade git+https://github.com/geekan/MetaGPT.git`
+# or `git clone https://github.com/geekan/MetaGPT && cd MetaGPT && pip install --upgrade -e .`
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres estudiar un flujo multiagente basado en roles de desarrollo
-**Evita si:** un flujo determinista resuelve el problema sin un agente
+**Elige si:** Tu objetivo encaja con estos ejemplos: Bocetar requisitos de una app; Simular roles de un equipo de software
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Pide el diseño de una lista de tareas mínima y revisa requisitos y estructura antes del código
+**Qué comprobar:** Obtienes artefactos separados que puedes revisar y corregir
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Alternativas (elige una):** `crewai`
 
 ## `mirofish`
 role=platform · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=agents,python
 
-**Qué es:** Permite simular dinámicas sociales en un "sandbox". Proyecto de nicho.
-**Stack:** Python/web, Docker, PostgreSQL
+**Qué es:** Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios.
+**Stack:** Docker o Node 18+ y Python 3.11–3.12; clave LLM; Zep Cloud
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: API de IA necesaria. La ruta documentada usa API compatible OpenAI y Zep; muchas rondas multiplican consumo; los cupos gratuitos pueden cambiar
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Son simulaciones generadas, no predicciones validadas del mercado ni evidencia de cómo actuarán personas reales
+- Coste: Consumo de APIs o servicios. La ruta documentada usa API compatible OpenAI y Zep; muchas rondas multiplican consumo; los cupos gratuitos pueden cambiar
+- Equipo: Preparación según la ruta elegida. Docker o Node 18+ y Python 3.11–3.12; clave LLM; Zep Cloud
 **Repo:** https://github.com/666ghj/MiroFish
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/666ghj/MiroFish/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** simulas futuros/escenarios con muchos actores
-**Evita si:** necesitas tareas deterministas o resultados reproducibles
+```
+# 1. Configure environment variables (same as source deployment)
+cp .env.example .env
+
+# 2. Pull image and start
+docker compose up -d
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar reacciones hipotéticas a un anuncio; Comparar escenarios narrativos antes de investigar datos reales
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Carga un escenario ficticio y realiza una simulación corta con menos de 40 rondas
+**Qué comprobar:** Puedes inspeccionar los agentes simulados y el informe del escenario
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `openevolve`
 
 ## `openai-agents-python`
 role=library · exec=hybrid · setup=easy · mcp=True · prov=openai · tags=agents,python
 
-**Qué es:** Define agentes con instrucciones y herramientas, pasa el control entre ellos y añade validaciones. Funciona con modelos de OpenAI y otros compatibles.
-**Stack:** Python
+**Qué es:** SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas integradas.
+**Stack:** Python y uv; modelo y credenciales
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. El ejemplo usa OPENAI_API_KEY; otros proveedores tienen condiciones propias; Codex no aporta créditos a este SDK
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Es una biblioteca de aplicaciones; la disponibilidad de adaptadores no confirma por sí sola una ruta local completa
+- Coste: El coste depende del proveedor o la ruta. El ejemplo usa OPENAI_API_KEY; otros proveedores tienen condiciones propias; Codex no aporta créditos a este SDK
+- Equipo: Preparación según la ruta elegida. Python y uv; modelo y credenciales
 **Repo:** https://github.com/openai/openai-agents-python
 
-**Instalación** [+]: `pip install openai-agents`
+**Instalación** [+]:
+
+```
+uv init
+uv add openai-agents
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** usas OpenAI y quieres agentes multiagente con poco código
-**Evita si:** necesitas control de estado avanzado; mira `langgraph`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Enrutar consultas por departamento; Validar una respuesta antes de aceptarla
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Deriva una consulta a un especialista de facturación ficticio
+**Qué comprobar:** La traza muestra el traspaso y su respuesta
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `openai-python`, `fastmcp`
 **Alternativas (elige una):** `pydantic-ai`, `langgraph`, `smolagents`, `deepagents`, `adk-python`
 
 ## `openevolve`
 role=runtime · exec=cloud · setup=heavy · mcp=False · prov=— · tags=automation,agents,python
 
-**Qué es:** Genera, evalúa y muta candidatos de código a lo largo de múltiples generaciones.
-**Stack:** Python, PyTorch/numpy, Rust
+**Qué es:** Agente de codificación evolutivo que optimiza algoritmos por simulación genética.
+**Stack:** Python 3.10+; evaluador de calidad; API o CLI compatible autenticado
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- API de IA: Depende de la ruta elegida. Admite APIs y los CLI de Claude Code o Codex; cada ruta mantiene sus límites; la búsqueda repetida puede acumular consumo
+- Claude Code: Integración documentada por el proyecto
+- Codex: Integración documentada por el proyecto
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Es una implementación independiente de AlphaEvolve; una puntuación mejor solo vale para el evaluador definido
+- Coste: El coste depende del proveedor o la ruta. Admite APIs y los CLI de Claude Code o Codex; cada ruta mantiene sus límites; la búsqueda repetida puede acumular consumo
+- Equipo: Preparación según la ruta elegida. Python 3.10+; evaluador de calidad; API o CLI compatible autenticado
 **Repo:** https://github.com/algorithmicsuperintelligence/openevolve
 
-**Instalación** [+]: `pip install openevolve`
+**Instalación** [+]:
+
+```
+git clone https://github.com/algorithmicsuperintelligence/openevolve.git
+cd openevolve
+pip install -e .
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** optimizas problemas algorítmicos donde cabe explorar muchas variantes
-**Evita si:** haces tareas de texto comunes o buscas respuesta inmediata
+**Elige si:** Tu objetivo encaja con estos ejemplos: Optimizar una función medible; Buscar mejores reglas de ordenación
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Prueba la minimización de una función con pocas iteraciones y revisa cada candidato
+**Qué comprobar:** El evaluador permite comparar la puntuación inicial y la final
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `llm-council`
 
 ## `pydantic-ai`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,google,local · tags=agents,python
 
-**Qué es:** Construye agentes con salidas validadas, herramientas tipadas e inyección de dependencias, al estilo FastAPI. Incluye evaluación y observabilidad con Logfire.
-**Stack:** Python, Pydantic
+**Qué es:** Framework de agentes del equipo de Pydantic, tipado de punta a punta y compatible con cualquier modelo.
+**Stack:** Python y uv; esquema de salida; modelo
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. Admite Ollama y APIs; Logfire opcional y servicios asociados se presupuestan aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Empieza con el paquete base; el harness de programación es un componente adicional
+- Coste: El coste depende del proveedor o la ruta. Admite Ollama y APIs; Logfire opcional y servicios asociados se presupuestan aparte
+- Equipo: Preparación según la ruta elegida. Python y uv; esquema de salida; modelo
 **Repo:** https://github.com/pydantic/pydantic-ai
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/pydantic/pydantic-ai/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres agentes tipados y validados en Python
-**Evita si:** necesitas grafos complejos con persistencia; mira `langgraph`
+```
+uv add pydantic-ai
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Extraer campos de mensajes; Validar datos generados antes de guardarlos
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Extrae nombre, importe y moneda de una factura ficticia
+**Qué comprobar:** El resultado respeta los tipos o informa del fallo de validación
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langfuse`, `fastmcp`
 **Alternativas (elige una):** `openai-agents-python`, `smolagents`, `langgraph`
 
 ## `semantic-kernel`
 role=library · exec=hybrid · setup=medium · mcp=False · prov=openai · tags=agents,python
 
-**Qué es:** Pensado para empresas que ya usan .NET o Java y quieren añadir IA con patrones conocidos. Su evolución para agentes es Microsoft Agent Framework.
-**Stack:** C#, Python, Java
+**Qué es:** SDK de Microsoft para integrar LLM en apps de C#, Python y Java con plugins y planificación.
+**Stack:** Python 3.11–3.14 para esta ruta; alternativas .NET 10+ o JDK 17+
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. Admite Ollama, LM Studio y ONNX; nubes y proveedores remotos tienen sus propias facturas
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El autor dirige los proyectos nuevos hacia Microsoft Agent Framework y ofrece una guía de migración
+- Coste: El coste depende del proveedor o la ruta. Admite Ollama, LM Studio y ONNX; nubes y proveedores remotos tienen sus propias facturas
+- Equipo: Preparación según la ruta elegida. Python 3.11–3.14 para esta ruta; alternativas .NET 10+ o JDK 17+
 **Repo:** https://github.com/microsoft/semantic-kernel
 
-**Instalación** [+]: `pip install semantic-kernel`
+**Instalación** [+]:
+
+```
+pip install semantic-kernel
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** tu app es .NET o Java y quieres IA integrada
-**Evita si:** empiezas un sistema de agentes nuevo; mira `agent-framework`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Integrar IA en una aplicación .NET; Recuperar información propia desde Java
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Añade una función de consulta de inventario y deja que el agente la invoque
+**Qué comprobar:** La respuesta coincide con el inventario ficticio
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Alternativas (elige una):** `agent-framework`, `langchain`
 
 ## `sim`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=agents,automation,typescript
+role=platform · exec=hybrid · setup=medium · mcp=True · prov=openai,anthropic,local · tags=agents,automation,typescript
 
-**Qué es:** Diseña agentes conectando bloques en un canvas, prueba en vivo y despliega como API o chat. Open source y auto-hospedable.
-**Stack:** TypeScript, Next.js, PostgreSQL
+**Qué es:** Espacio colaborativo para construir, desplegar y monitorear agentes y workflows de IA con un lienzo visual.
+**Stack:** Node.js 20+; Docker; proveedor o modelo local
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- API de IA: Depende de la ruta elegida. Cloud y servicios adicionales tienen planes; self-hosting añade infraestructura; las llamadas a modelos se presupuestan según ruta
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: Modelos locales documentados. MCP HTTP permite operar workflows desde clientes; inicia sesión y distingue ese acceso de las credenciales del modelo
+- Coste: El coste depende del proveedor o la ruta. Cloud y servicios adicionales tienen planes; self-hosting añade infraestructura; las llamadas a modelos se presupuestan según ruta
+- Equipo: Preparación según la ruta elegida. Node.js 20+; Docker; proveedor o modelo local
 **Repo:** https://github.com/simstudioai/sim
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/simstudioai/sim/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres un constructor visual de agentes moderno y abierto
-**Evita si:** prefieres automatización general con cientos de apps; mira `n8n`
+```
+npx sim-setup
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Automatizar una clasificación de mensajes; Probar un flujo con Ollama antes de usar una API
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Construye un flujo visual que recibe texto, lo resume y registra la salida
+**Qué comprobar:** La ejecución muestra cada bloque y el resumen final
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `langfuse`
 **Alternativas (elige una):** `flowise`, `langflow`, `dify`, `autogpt`
 
 ## `smolagents`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,local · tags=agents,python
 
-**Qué es:** Sus agentes expresan las acciones como código en vez de JSON, lo que reduce pasos y errores. El núcleo cabe en unas mil líneas.
-**Stack:** Python
+**Qué es:** Librería mínima de Hugging Face para agentes que razonan escribiendo y ejecutando código Python.
+**Stack:** Python; modelo; ejecutor aislado
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. Admite Transformers u Ollama locales y APIs; aislamiento y búsqueda externa pueden costar aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El agente ejecuta código: usa el aislamiento documentado y archivos de prueba
+- Coste: El coste depende del proveedor o la ruta. Admite Transformers u Ollama locales y APIs; aislamiento y búsqueda externa pueden costar aparte
+- Equipo: Preparación según la ruta elegida. Python; modelo; ejecutor aislado
 **Repo:** https://github.com/huggingface/smolagents
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/huggingface/smolagents/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres un agente simple y transparente en Python
-**Evita si:** necesitas flujos con estado y aprobación humana; mira `langgraph`
+```
+pip install "smolagents[toolkit]"
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Calcular indicadores de un CSV; Transformar datos consultados en un resumen
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Calcula el total y promedio de cinco importes ficticios y revisa el código generado
+**Qué comprobar:** Los resultados coinciden con los números de entrada
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `e2b`, `transformers`
 **Alternativas (elige una):** `pydantic-ai`, `openai-agents-python`
 
 ## `vercel-ai`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,google,local · tags=agents,ui,typescript,react
 
-**Qué es:** Unifica la llamada a decenas de proveedores con una API común y trae hooks de React para chat con streaming. Es la base de muchos frameworks de agentes en TS.
-**Stack:** TypeScript, React, Next.js
+**Qué es:** Toolkit TypeScript de Vercel para apps con IA: streaming, herramientas, agentes y UI de chat.
+**Stack:** Node.js; proyecto TypeScript; paquete del proveedor
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- API de IA: Depende de la ruta elegida. El SDK no incluye modelos ni créditos; proveedores, AI Gateway y alojamiento tienen costes separados
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Compatibilidad por confirmar
+- Antigravity: Compatibilidad por confirmar
+- Modelos locales: Modelo local no documentado. El README ofrece una skill para Claude Code; instalarla no paga la inferencia de la aplicación
+- Coste: El coste depende del proveedor o la ruta. El SDK no incluye modelos ni créditos; proveedores, AI Gateway y alojamiento tienen costes separados
+- Equipo: Preparación según la ruta elegida. Node.js; proyecto TypeScript; paquete del proveedor
 **Repo:** https://github.com/vercel/ai
 
-**Instalación** [+]: `npm install ai`
+**Instalación** [+]:
+
+```
+npm install ai
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** construyes una app web con IA en TypeScript
-**Evita si:** necesitas agentes complejos con memoria y workflows; mira `mastra`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Construir una interfaz de chat; Extraer datos tipados de un mensaje
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Añade una respuesta de chat en streaming y una herramienta de consulta de estado
+**Qué comprobar:** El texto llega por partes y la llamada devuelve el estado ficticio
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ui`, `assistant-ui`
 **Alternativas (elige una):** `langgraphjs`, `mastra`

@@ -16,58 +16,72 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No requiere IA; acceso al contenido y servicios externos pueden tener sus propios costes |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El comando nightly del README instala versiones preliminares; empieza con la ruta estable y respeta permisos de uso |
+| Coste | Sin pago a un modelo en la ruta básica. No requiere IA; acceso al contenido y servicios externos pueden tener sus propios costes |
+| Equipo | Preparación según la ruta elegida. Binario oficial o Python compatible; FFmpeg para unir y convertir medios |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El comando nightly del README instala versiones preliminares; empieza con la ruta estable y respeta permisos de uso
 
 ## Qué puedes hacer con él
 
-Descarga videos, audios, subtítulos y metadatos de YouTube y miles de plataformas. Base de muchos pipelines de transcripción.
+Descargador de audio y video por línea de comandos compatible con miles de sitios.
 
 ## Por qué destaca
 
-El descargador más completo y actualizado; corrige rápido los cambios de los sitios.
+Usos propuestos: Respaldar videos propios; Obtener medios permitidos para edición.
 
 ## Cómo funciona
 
-Extractores por sitio obtienen los formatos disponibles y usan ffmpeg para unir audio y video.
+El comando nightly del README instala versiones preliminares; empieza con la ruta estable y respeta permisos de uso
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/yt-dlp/yt-dlp/blob/master/README.md)
+- Binario oficial o Python compatible
+- FFmpeg para unir y convertir medios
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://github.com/yt-dlp/yt-dlp/wiki/Installation)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar yt-dlp para mi objetivo y necesito pasos guiados. Lee https://github.com/yt-dlp/yt-dlp/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar yt-dlp para mi objetivo y necesito pasos guiados. Lee https://github.com/yt-dlp/yt-dlp/wiki/Installation. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Consulta formatos de un video propio y descarga una versión que puedas reproducir.
+
+**Qué comprobar:** El archivo conserva audio y video y se abre en un reproductor.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Bajar audio para transcribir
-- Descargar subtítulos para resumir
-- Archivar videos
+- Respaldar videos propios
+- Obtener medios permitidos para edición
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas bajar audio o video de la web | solo necesitas metadatos sociales; mira `instaloader` |
+| Tu objetivo encaja con estos ejemplos: Respaldar videos propios; Obtener medios permitidos para edición | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Respeta los términos de servicio y derechos de autor de cada sitio.
+**Limitaciones:** El comando nightly del README instala versiones preliminares; empieza con la ruta estable y respeta permisos de uso
 
 ## Stack y modelos
 
-- **Stack:** Python, ffmpeg
+- **Stack:** Binario oficial o Python compatible; FFmpeg para unir y convertir medios
 - **Etiquetas:** `video` `audio` `scraping` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -86,7 +100,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/yt-dlp/yt-dlp/blob/master/README.md)
 

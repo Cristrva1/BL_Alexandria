@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El recurso describe opciones gratuitas sujetas a políticas, disponibilidad y elegibilidad; alojamiento no está incluido |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. No se instala un dominio con este README ni se promete disponibilidad o renovación perpetua de cualquier nombre |
+| Coste | Sin pago a un modelo en la ruta básica. El recurso describe opciones gratuitas sujetas a políticas, disponibilidad y elegibilidad; alojamiento no está incluido |
+| Equipo | Preparación según la ruta elegida. Navegador; nombre de dominio de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+No se instala un dominio con este README ni se promete disponibilidad o renovación perpetua de cualquier nombre
 
 ## Qué puedes hacer con él
 
-Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat. Reúne instrucciones para registrar un dominio, configurar nameservers y conectar un proyecto.
+Recursos de registro de dominios y aprendizaje práctico de DNS publicados por DigitalPlat.
 
 ## Por qué destaca
 
-Quieres aprender el flujo de dominios y DNS con sus recursos de referencia.
+Usos propuestos: Aprender DNS; Evaluar un dominio para un proyecto personal.
 
 ## Cómo funciona
 
-Reúne instrucciones para registrar un dominio, configurar nameservers y conectar un proyecto.
+No se instala un dominio con este README ni se promete disponibilidad o renovación perpetua de cualquier nombre
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- nombre de dominio de prueba
+
+1. Lee las condiciones de registro y dibuja registros DNS para un sitio ficticio sin cambiar dominios activos.
+2. Comprueba: Puedes distinguir registro, DNS y alojamiento.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/DigitalPlatDev/FreeDomain/blob/main/README.md)
 
@@ -51,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar FreeDomain para mi objetivo y necesito pasos guiados. Lee https://github.com/DigitalPlatDev/FreeDomain/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Lee las condiciones de registro y dibuja registros DNS para un sitio ficticio sin cambiar dominios activos.
+
+**Qué comprobar:** Puedes distinguir registro, DNS y alojamiento.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres aprender el flujo de dominios y DNS con sus recursos de referencia
+- Aprender DNS
+- Evaluar un dominio para un proyecto personal
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres aprender el flujo de dominios y DNS con sus recursos de referencia | una conexión directa cubre el caso sin añadir infraestructura |
+| Tu objetivo encaja con estos ejemplos: Aprender DNS; Evaluar un dominio para un proyecto personal | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La elegibilidad y las condiciones del servicio deben comprobarse antes de registrar un dominio.
+**Limitaciones:** No se instala un dominio con este README ni se promete disponibilidad o renovación perpetua de cualquier nombre
 
 ## Stack y modelos
 
-- **Stack:** Markdown
+- **Stack:** Navegador; nombre de dominio de prueba
 - **Etiquetas:** `recursos` `digitalplat` `dns` `dns-tutorial` `documentation` `domain` `domain-platform` `domain-registration`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +92,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/DigitalPlatDev/FreeDomain/blob/main/README.md)
 

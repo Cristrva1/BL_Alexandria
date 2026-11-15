@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. La ficha oficial ofrece una API de Moonshot y alternativas de inferencia con pesos propios. |
+| API de IA | API de IA opcional. API por consumo o infraestructura propia considerable; pesos y código usan Modified MIT con condiciones propias |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. Se documenta inferencia con vLLM, SGLang o KTransformers. Comprueba la variante y la guía antes de descargar. |
-| Coste | El coste depende del proveedor o la ruta. API e infraestructura tienen costes según la ruta; disponer de pesos no equivale a cómputo gratuito. |
-| Equipo | GPU o infraestructura especializada. Modelo de gran tamaño: requiere preparación y hardware especializado; no se recomienda descargarlo sin revisar la guía. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Es una ficha de pesos en Hugging Face, no un repositorio Git ni el CLI Kimi; mencionar Codex o Claude en benchmarks no prueba integración con esos planes |
+| Coste | El coste depende del proveedor o la ruta. API por consumo o infraestructura propia considerable; pesos y código usan Modified MIT con condiciones propias |
+| Equipo | Preparación según la ruta elegida. Servicio Moonshot o infraestructura de inferencia adecuada; licencia Modified MIT; proyecto de prueba |
 
-La ficha no acredita ejecución con tu suscripción de Claude Code o Codex; usar esos agentes para instalarlo es otra decisión.
+Es una ficha de pesos en Hugging Face, no un repositorio Git ni el CLI Kimi; mencionar Codex o Claude en benchmarks no prueba integración con esos planes
 
 ## Qué puedes hacer con él
 
 Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face.
 
+## Por qué destaca
+
+Usos propuestos: Comparar generación de código; Estudiar uso de herramientas con un modelo abierto.
+
 ## Cómo funciona
 
-Un motor de inferencia carga los pesos; tu aplicación le envía solicitudes por su interfaz. Moonshot también ofrece acceso por API.
+Es una ficha de pesos en Hugging Face, no un repositorio Git ni el CLI Kimi; mencionar Codex o Claude en benchmarks no prueba integración con esos planes
 
 ## Cómo empezar
 
@@ -39,36 +44,46 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Elegir API o despliegue propio
-- Revisar licencia de pesos y requisitos del motor
+- Servicio Moonshot o infraestructura de inferencia adecuada
+- licencia Modified MIT
+- proyecto de prueba
 
-1. Abre la ficha oficial y decide si necesitas API o pesos para inferencia propia.
-2. Si eliges despliegue propio, revisa docs/deploy_guidance.md antes de reservar equipo o descargar pesos.
-3. Prueba una petición pequeña y comprueba consumo y respuesta antes de integrarlo en tu flujo.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/README.md)
-
-[Abrir la web o descarga indicada por el autor](https://huggingface.co/moonshotai/Kimi-K2.7-Code)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
 > Quiero usar Kimi K2.7 Code para mi objetivo y necesito pasos guiados. Lee https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Revisa la guía de despliegue o API y evalúa una función pequeña con tests conocidos.
+
+**Qué comprobar:** Puedes identificar modelo, proveedor y resultado comprobado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Evaluar un modelo para tareas de programación
+- Comparar generación de código
+- Estudiar uso de herramientas con un modelo abierto
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| puedes evaluar una API o administrar inferencia de un modelo grande | buscas un chat local sencillo para un portátil o acceso ya cubierto por tu plan de otro proveedor |
+| Tu objetivo encaja con estos ejemplos: Comparar generación de código; Estudiar uso de herramientas con un modelo abierto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La licencia de pesos y la infraestructura se revisan por separado. Kimi-K2 en GitHub es un proyecto relacionado de la familia, no la publicación exacta K2.7 Code.
+**Limitaciones:** Es una ficha de pesos en Hugging Face, no un repositorio Git ni el CLI Kimi; mencionar Codex o Claude en benchmarks no prueba integración con esos planes
 
 ## Stack y modelos
 
-- **Stack:** Pesos del modelo; vLLM, SGLang o KTransformers
+- **Stack:** Servicio Moonshot o infraestructura de inferencia adecuada; licencia Modified MIT; proyecto de prueba
 - **Etiquetas:** `kimi` `moonshot` `modelo` `programacion` `pesos-abiertos` `huggingface`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -79,7 +94,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/README.md)
 

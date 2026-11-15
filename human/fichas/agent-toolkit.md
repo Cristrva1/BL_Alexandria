@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Las instrucciones usan el agente; herramientas y servicios de cada skill se revisan por separado |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. La ruta skills CLI es portable; el marketplace y sus comandos propios pertenecen a Claude Code |
+| Coste | Consumo del agente que ya utilizas. Las instrucciones usan el agente; herramientas y servicios de cada skill se revisan por separado |
+| Equipo | Preparación según la ruta elegida. Node.js;  agente compatible y una skill escogida |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+La ruta skills CLI es portable; el marketplace y sus comandos propios pertenecen a Claude Code
 
 ## Qué puedes hacer con él
 
-Te da skills listas para tareas comunes, para que tu agente sea productivo desde el primer día.
+Conjunto de skills opinadas para mejorar la eficiencia diaria con Claude Code en tareas de desarrollo, documentación y planificación.
 
 ## Por qué destaca
 
-Vienen listas para usar en formato Agent Skills, reduciendo el tiempo de configuración para flujos profesionales comunes. Su enfoque opinado evita que tengas que decidir cómo estructurar cada tarea.
+Usos propuestos: Aclarar una petición ambigua antes de programar; Documentar el contrato entre frontend y backend.
 
 ## Cómo funciona
 
-Cada skill es un `SKILL.md` con scripts auxiliares que el asistente carga desde su directorio de skills. Las skills cubren tareas concretas (docs, planificación, refactor) con instrucciones paso a paso.
+La ruta skills CLI es portable; el marketplace y sus comandos propios pertenecen a Claude Code
 
 ## Cómo empezar
 
@@ -43,11 +44,21 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Node.js
+-  agente compatible y una skill escogida
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+npx skills add softaworks/agent-toolkit
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/softaworks/agent-toolkit/blob/main/README.md)
 
@@ -55,21 +66,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar agent-toolkit para mi objetivo y necesito pasos guiados. Lee https://github.com/softaworks/agent-toolkit/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Selecciona una skill de requisitos y úsala con una descripción breve de una función.
+
+**Qué comprobar:** Recibes preguntas o un documento de requisitos que puedes corregir.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Acelerar tareas repetitivas
-- Estandarizar flujos profesionales
-- Arrancar tu setup de Claude Code con skills opinadas
+- Aclarar una petición ambigua antes de programar
+- Documentar el contrato entre frontend y backend
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres productividad inmediata con tareas comunes | buscas un método integral (superpowers) |
+| Tu objetivo encaja con estos ejemplos: Aclarar una petición ambigua antes de programar; Documentar el contrato entre frontend y backend | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** La ruta skills CLI es portable; el marketplace y sus comandos propios pertenecen a Claude Code
 
 ## Stack y modelos
 
-- **Stack:** Markdown/scripts
+- **Stack:** Node.js;  agente compatible y una skill escogida
 - **Etiquetas:** `agents` `skills` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -85,9 +105,12 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/softaworks/agent-toolkit/blob/main/README.md)
+- [Fuente 2](https://github.com/vercel-labs/skills/blob/main/docs/agents.md)
 
 ---
 

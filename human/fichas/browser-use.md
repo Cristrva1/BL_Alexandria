@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 121k | MIT | Python | 2026-06-23 |
 
-**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,44 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. La biblioteca MIT permite navegador y modelo locales; los defaults del ejemplo usan gateway y browser Cloud facturados |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. La versión actual integra browser-harness y registra skills para Claude/Codex y MCP; una sesión con cookies puede actuar con los permisos de esa cuenta |
+| Coste | El coste depende del proveedor o la ruta. La biblioteca MIT permite navegador y modelo locales; los defaults del ejemplo usan gateway y browser Cloud facturados |
+| Equipo | Preparación según la ruta elegida. Python y uv; Chrome o browser Cloud; agente o proveedor; perfil de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La versión actual integra browser-harness y registra skills para Claude/Codex y MCP; una sesión con cookies puede actuar con los permisos de esa cuenta
 
 ## Qué puedes hacer con él
 
-Resuelve la fragilidad del scraping basado en CSS: el agente "ve" la página como un humano y decide la siguiente acción.
+Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos.
 
 ## Por qué destaca
 
-Uno de los proyectos de agentes-web más virales y populares, por permitir automatización robusta guiada por modelos multimodales incluso ante pop-ups y cambios de layout. Su adopción masiva y la opción de cloud gestionado lo consolidan como referencia en navegación agentica.
+Usos propuestos: Extraer información de una web propia; Probar navegación con un agente.
 
 ## Cómo funciona
 
-Controla el navegador con Playwright, extrae el estado de la página (DOM simplificado + capturas) y lo pasa a un LLM con visión que devuelve la siguiente acción de click/escritura/navegación, repitiendo el bucle hasta cumplir el objetivo.
+La versión actual integra browser-harness y registra skills para Claude/Codex y MCP; una sesión con cookies puede actuar con los permisos de esa cuenta
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python y uv
+- Chrome o browser Cloud
+- agente o proveedor
+- perfil de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/browser-use/browser-use/blob/main/README.md)
 
@@ -51,21 +61,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar browser-use para mi objetivo y necesito pasos guiados. Lee https://github.com/browser-use/browser-use/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Conecta un navegador de prueba y solicita leer una página sin enviar formularios ni usar cuentas personales.
+
+**Qué comprobar:** Puedes revisar pestaña, contexto y resultado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Agente que entra a un e-commerce, filtra y compra
-- Recuperación ante pop-ups/errores y CAPTCHAs suaves
-- Flujos multi-paso donde los selectores cambian entre visitas
+- Extraer información de una web propia
+- Probar navegación con un agente
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres navegación como humano y tolerancia a cambios de UI | necesitas scripts deterministas y baratos (playwright) o no quieres depender de un LLM por paso |
+| Tu objetivo encaja con estos ejemplos: Extraer información de una web propia; Probar navegación con un agente | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** La versión actual integra browser-harness y registra skills para Claude/Codex y MCP; una sesión con cookies puede actuar con los permisos de esa cuenta
 
 ## Stack y modelos
 
-- **Stack:** Python 3.11+, Rust (core), Playwright
+- **Stack:** Python y uv; Chrome o browser Cloud; agente o proveedor; perfil de prueba
 - **Etiquetas:** `automation` `browser` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -93,7 +112,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/browser-use/browser-use/blob/main/README.md)
 

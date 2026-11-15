@@ -21,6 +21,7 @@
 | API de IA | API: por confirmar. No se ha verificado si la ruta elegida necesita una API de IA. |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
+| Antigravity | Integración no documentada |
 | Modelos locales | Ejecución con modelos locales por confirmar. Ejecutar el programa en tu equipo no demuestra que el modelo también sea local. |
 | Coste | Coste por confirmar. Código disponible no significa servicios, modelos, infraestructura o licencias sin coste. |
 | Equipo | Requisitos por confirmar. Consultar los requisitos originales de la variante que vayas a usar. |

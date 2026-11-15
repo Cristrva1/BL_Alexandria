@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. MIT sin API de IA; assets y herramientas de procesamiento tienen sus licencias |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Simplificar geometría implica un compromiso de detalle; conserva el original y evalúa la salida antes de reemplazar assets |
+| Coste | Sin pago a un modelo en la ruta básica. MIT sin API de IA; assets y herramientas de procesamiento tienen sus licencias |
+| Equipo | Preparación según la ruta elegida. Entorno de desarrollo compatible; malla pequeña; copia del original |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Simplificar geometría implica un compromiso de detalle; conserva el original y evalúa la salida antes de reemplazar assets
 
 ## Qué puedes hacer con él
 
 Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales.
 
+## Por qué destaca
+
+Usos propuestos: Reducir peso de un asset 3D; Preparar mallas para render en tiempo real.
+
 ## Cómo funciona
 
-Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.
+Simplificar geometría implica un compromiso de detalle; conserva el original y evalúa la salida antes de reemplazar assets
 
 ## Cómo empezar
 
@@ -39,11 +44,21 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
+- Entorno de desarrollo compatible
+- malla pequeña
+- copia del original
 
-1. Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.
-2. Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.
-3. Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (consulta la sintaxis original):**
+
+```
+git clone -b v1.3 https://github.com/zeux/meshoptimizer.git
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/zeux/meshoptimizer/blob/master/README.md)
 
@@ -51,21 +66,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar meshoptimizer para mi objetivo y necesito pasos guiados. Lee https://github.com/zeux/meshoptimizer/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Optimiza una malla de prueba y compara número de vértices, tamaño y apariencia.
+
+**Qué comprobar:** Puedes medir una reducción y detectar si cambia demasiado el detalle.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales.
+- Reducir peso de un asset 3D
+- Preparar mallas para render en tiempo real
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Biblioteca para optimizar geometría y reducir el coste de almacenar y renderizar mallas tridimensionales. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| Tu objetivo encaja con estos ejemplos: Reducir peso de un asset 3D; Preparar mallas para render en tiempo real | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Simplificar geometría implica un compromiso de detalle; conserva el original y evalúa la salida antes de reemplazar assets
 
 ## Stack y modelos
 
-- **Stack:** C++, CMakeLists.txt
+- **Stack:** Entorno de desarrollo compatible; malla pequeña; copia del original
 - **Etiquetas:** `creacion-3d` `library` `c`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +100,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/zeux/meshoptimizer/blob/master/README.md)
 

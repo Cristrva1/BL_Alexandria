@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 177k | NOASSERTION | MDX | 2026-11-10 |
 
-**Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
+**Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Consultar la biblioteca no consume una API de modelos; ejecutar prompts depende del asistente y alojar tu copia tiene costes propios |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Documenta plugin para Claude Code y MCP remoto o local estándar para clientes compatibles; las herramientas de escritura necesitan permisos propios |
+| Coste | Sin pago a un modelo en la ruta básica. Consultar la biblioteca no consume una API de modelos; ejecutar prompts depende del asistente y alojar tu copia tiene costes propios |
+| Equipo | Preparación según la ruta elegida. Navegador para explorar; Node y cliente MCP si conectas la biblioteca |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Documenta plugin para Claude Code y MCP remoto o local estándar para clientes compatibles; las herramientas de escritura necesitan permisos propios
 
 ## Qué puedes hacer con él
 
-Reúne miles de prompts de rol y tarea para ChatGPT, Claude y otros, con buscador web. Puedes desplegar tu propia copia para tu organización.
+La colección comunitaria de prompts más grande (antes Awesome ChatGPT Prompts), auto-hospedable.
 
 ## Por qué destaca
 
-Es uno de los repos más populares de GitHub; fuente de inspiración para cualquier caso.
+Usos propuestos: Encontrar una plantilla para estudiar; Compartir una biblioteca interna de prompts.
 
 ## Cómo funciona
 
-Los prompts viven en un CSV y una app Next.js permite explorarlos, compartirlos y auto-hospedarlos.
+Documenta plugin para Claude Code y MCP remoto o local estándar para clientes compatibles; las herramientas de escritura necesitan permisos propios
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador para explorar
+- Node y cliente MCP si conectas la biblioteca
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/f/prompts.chat/blob/main/README.md)
 
@@ -51,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar prompts.chat para mi objetivo y necesito pasos guiados. Lee https://github.com/f/prompts.chat/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Busca un prompt de resumen y adapta sus variables a una nota propia antes de probarlo en tu asistente.
+
+**Qué comprobar:** Puedes identificar tarea, datos de entrada y formato esperado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Encontrar un prompt de rol rápido
-- Biblioteca interna de prompts
-- Inspiración para asistentes
+- Encontrar una plantilla para estudiar
+- Compartir una biblioteca interna de prompts
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas prompts listos para copiar | quieres ejecutarlos como comandos encadenables; mira `fabric` |
+| Tu objetivo encaja con estos ejemplos: Encontrar una plantilla para estudiar; Compartir una biblioteca interna de prompts | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Documenta plugin para Claude Code y MCP remoto o local estándar para clientes compatibles; las herramientas de escritura necesitan permisos propios
 
 ## Stack y modelos
 
-- **Stack:** Next.js, TypeScript, CSV
+- **Stack:** Navegador para explorar; Node y cliente MCP si conectas la biblioteca
 - **Etiquetas:** `prompts` `chatbot`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -82,7 +98,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/f/prompts.chat/blob/main/README.md)
 

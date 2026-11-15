@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La biblioteca no necesita modelo en ejecución; el agente que utilice su skill mantiene sus costes |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. Está en beta; instala el adaptador correcto para React, Vue, Svelte, Solid o web y revisa cambios de API |
+| Coste | Sin pago a un modelo en la ruta básica. La biblioteca no necesita modelo en ejecución; el agente que utilice su skill mantiene sus costes |
+| Equipo | Preparación según la ruta elegida. Framework compatible; Node; skill opcional para el agente |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Está en beta; instala el adaptador correcto para React, Vue, Svelte, Solid o web y revisa cambios de API
 
 ## Qué puedes hacer con él
 
 Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos.
 
+## Por qué destaca
+
+Usos propuestos: Crear componentes con comportamientos reutilizables; Guiar a un agente con patrones de interfaz.
+
 ## Cómo funciona
 
-Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.
+Está en beta; instala el adaptador correcto para React, Vue, Svelte, Solid o web y revisa cambios de API
 
 ## Cómo empezar
 
@@ -39,19 +44,21 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
+- Framework compatible
+- Node
+- skill opcional para el agente
 
-1. Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.
-2. Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.
-3. Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
 
-**Comando de entrada documentado:**
+**Entrada documentada (bash):**
 
-```shell
+```
 npm install @ui-sdk/react @ui-sdk/core
 ```
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/vercel-labs/ui/blob/main/README.md)
 
@@ -59,21 +66,30 @@ Comando de entrada seleccionado y presente en la fuente revisada; consulta la in
 
 > Quiero usar UI SDK (Vercel) para mi objetivo y necesito pasos guiados. Lee https://github.com/vercel-labs/ui/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Construye una primitiva con comportamiento de foco y prueba abrir y cerrar su contenido.
+
+**Qué comprobar:** Puedes verificar recuperación de foco y estados interactivos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos.
+- Crear componentes con comportamientos reutilizables
+- Guiar a un agente con patrones de interfaz
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| Tu objetivo encaja con estos ejemplos: Crear componentes con comportamientos reutilizables; Guiar a un agente con patrones de interfaz | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Está en beta; instala el adaptador correcto para React, Vue, Svelte, Solid o web y revisa cambios de API
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, package.json
+- **Stack:** Framework compatible; Node; skill opcional para el agente
 - **Etiquetas:** `ia-ui` `library` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -84,9 +100,12 @@ Comando de entrada seleccionado y presente en la fuente revisada; consulta la in
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/vercel-labs/ui/blob/main/README.md)
+- [Fuente 2](https://github.com/vercel-labs/skills/blob/main/docs/agents.md)
 
 ---
 

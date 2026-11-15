@@ -12,10 +12,10 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 | Repo | Qué hace | Acceso básico |
 |---|---|---|
-| [firecrawl](../fichas/firecrawl.md) | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. | Depende de la ruta elegida |
-| [Scrapegraph-ai](../fichas/scrapegraph-ai.md) | Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. | Sin API de IA en la ruta básica |
-| [SearXNG](../fichas/searxng.md) | Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal como buscador para agentes. | Sin API de IA en la ruta básica |
-| [yt-dlp](../fichas/yt-dlp.md) | Descargador de audio y video por línea de comandos compatible con miles de sitios. | Sin API de IA en la ruta básica |
+| [firecrawl](../fichas/firecrawl.md) | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. | API de IA opcional |
+| [Scrapegraph-ai](../fichas/scrapegraph-ai.md) | Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. | Depende de la ruta elegida |
+| [SearXNG](../fichas/searxng.md) | Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal como buscador para agentes. | Sin clave propia de API de IA en la ruta básica |
+| [yt-dlp](../fichas/yt-dlp.md) | Descargador de audio y video por línea de comandos compatible con miles de sitios. | Sin clave propia de API de IA en la ruta básica |
 
 ## Secciones
 
@@ -28,44 +28,44 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [firecrawl](../fichas/firecrawl.md) | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. | alimentas agentes/RAG con web y quieres salida limpia | Depende de la ruta elegida |
-| [Scrapling](../fichas/scrapling.md) | Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica los elementos cuando el HTML cambia. | los sitios cambian o te bloquean a menudo | Sin API de IA en la ruta básica |
-| [crawl4ai](../fichas/crawl4ai.md) | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. | necesitas volumen barato y self-host | API de IA opcional |
-| [scrapy](../fichas/scrapy.md) | Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. | quieres un crawler sólido y configurable a escala | Sin API de IA en la ruta básica |
-| [crawlee](../fichas/crawlee.md) | Framework moderno de crawling para Node.js con antibloqueo integrado, que unifica scraping de HTTP y de navegador bajo una misma API con colas y reintentos. | scrapeas con Node y necesitas antibloqueo | Sin API de IA en la ruta básica |
-| [Jina Reader](../fichas/jina-reader.md) | Servicio que convierte cualquier URL en Markdown listo para LLM con solo anteponer r.jina.ai. | necesitas leer páginas como Markdown al instante | Depende de la ruta elegida |
-| [defuddle](../fichas/defuddle.md) | Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable. | buscas esta función: Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable. | Sin API de IA en la ruta básica |
-| [crawlee-python](../fichas/crawlee-python.md) | Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. | quieres Crawlee en Python con antibloqueo | Sin API de IA en la ruta básica |
-| [awesome-web-scraping](../fichas/awesome-web-scraping.md) | Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos. | quieres comparar librerías de scraping antes de elegir tu stack | Sin API de IA en la ruta básica |
-| [scrapydweb](../fichas/scrapydweb.md) | Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy. | operas varios spiders de Scrapy y necesitas un panel de administración | Sin API de IA en la ruta básica |
-| [scrapely](../fichas/scrapely.md) | Librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales. | prefieres enseñar por ejemplos y el sitio es homogéneo | Sin API de IA en la ruta básica |
+| [firecrawl](../fichas/firecrawl.md) | Plataforma y API para buscar, scrapear, mapear e interactuar con la web a escala, devolviendo contenido limpio y apto para agentes desde sitios complejos con JavaScript. | Tu objetivo encaja con estos ejemplos: Preparar páginas para un buscador documental; Crear un mapa de URLs de una web propia | API de IA opcional |
+| [Scrapling](../fichas/scrapling.md) | Librería de scraping adaptativo y anti-bloqueo en Python que tolera cambios de estructura del sitio y reubica los elementos cuando el HTML cambia. | Tu objetivo encaja con estos ejemplos: Recopilar un catálogo público permitido; Extraer texto para un índice de búsqueda | Sin clave propia de API de IA en la ruta básica |
+| [crawl4ai](../fichas/crawl4ai.md) | Librería open-source de crawling y extracción web a gran escala con foco en fiabilidad, velocidad y costo, pensada explícitamente para generar datos listos para IA. | Tu objetivo encaja con estos ejemplos: Preparar artículos para RAG; Extraer datos estructurados con un modelo local | API de IA opcional |
+| [scrapy](../fichas/scrapy.md) | Framework clásico y maduro de scraping y crawling en Python, con arquitectura asíncrona, pipelines de procesamiento y soporte para spiders complejos a gran escala. | Tu objetivo encaja con estos ejemplos: Recopilar listados públicos permitidos; Programar extracción repetible con pipelines | Sin clave propia de API de IA en la ruta básica |
+| [crawlee](../fichas/crawlee.md) | Framework moderno de crawling para Node.js con antibloqueo integrado, que unifica scraping de HTTP y de navegador bajo una misma API con colas y reintentos. | Tu objetivo encaja con estos ejemplos: Rastrear una documentación propia; Extraer datos de páginas con JavaScript | Sin clave propia de API de IA en la ruta básica |
+| [Jina Reader](../fichas/jina-reader.md) | Servicio que convierte cualquier URL en Markdown listo para LLM con solo anteponer r.jina.ai. | Tu objetivo encaja con estos ejemplos: Convertir un artículo a texto para consulta; Preparar una página para un índice documental | Sin clave propia de API de IA en la ruta básica |
+| [defuddle](../fichas/defuddle.md) | Biblioteca para extraer el contenido principal de una página y convertirlo en texto o Markdown utilizable. | Tu objetivo encaja con estos ejemplos: Preparar artículos para lectura; Limpiar HTML antes de indexarlo | Sin clave propia de API de IA en la ruta básica |
+| [crawlee-python](../fichas/crawlee-python.md) | Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. | Tu objetivo encaja con estos ejemplos: Recopilar documentos públicos; Crear un crawler con reintentos y exportación | API de IA opcional |
+| [awesome-web-scraping](../fichas/awesome-web-scraping.md) | Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos. | Tu objetivo encaja con estos ejemplos: Buscar un parser para Python; Encontrar herramientas de extracción para JavaScript | Sin clave propia de API de IA en la ruta básica |
+| [scrapydweb](../fichas/scrapydweb.md) | Panel web para administrar clústeres de Scrapyd y consultar trabajos, logs y estadísticas de Scrapy. | Tu objetivo encaja con estos ejemplos: Supervisar tareas Scrapy; Consultar fallos y tiempos de una ejecución | Sin clave propia de API de IA en la ruta básica |
+| [scrapely](../fichas/scrapely.md) | Librería de extracción por ejemplos que aprende plantillas a partir de páginas anotadas y luego extrae los mismos campos de páginas similares sin reglas manuales. | Tu objetivo encaja con estos ejemplos: Aprender extracción a partir de ejemplos; Estudiar plantillas de scraping sin LLM | Sin clave propia de API de IA en la ruta básica |
 
 ## Scraping guiado por LLM
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [Scrapegraph-ai](../fichas/scrapegraph-ai.md) | Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. | quieres estructura semántica "by prompt" en Python | Sin API de IA en la ruta básica |
-| [Maxun](../fichas/maxun.md) | Plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción. | quieres extraer datos web sin programar | Depende de la ruta elegida |
-| [llm-scraper](../fichas/llm-scraper.md) | Librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído. | quieres salida tipada y validada en stack TS | Sin API de IA en la ruta básica |
+| [Scrapegraph-ai](../fichas/scrapegraph-ai.md) | Framework de scraping en Python basado en grafos potenciado por LLM, donde describes en lenguaje natural qué extraer y el pipeline arma el flujo de scraping. | Tu objetivo encaja con estos ejemplos: Extraer fichas de productos; Transformar artículos en registros estructurados | Depende de la ruta elegida |
+| [Maxun](../fichas/maxun.md) | Plataforma sin código para convertir sitios web en APIs y hojas de datos entrenando robots de extracción. | Tu objetivo encaja con estos ejemplos: Convertir un listado en datos consultables; Monitorear cambios de un catálogo | API de IA opcional |
+| [llm-scraper](../fichas/llm-scraper.md) | Librería TypeScript que convierte cualquier página web en datos estructurados definiendo un esquema Zod que el LLM rellena a partir del contenido extraído. | Tu objetivo encaja con estos ejemplos: Extraer campos sin escribir selectores específicos; Normalizar información de páginas similares | Depende de la ruta elegida |
 
 ## Búsqueda, monitoreo y research web
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [SearXNG](../fichas/searxng.md) | Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal como buscador para agentes. | tus agentes necesitan buscar en la web sin coste por consulta | Sin API de IA en la ruta básica |
-| [Agent-Reach](../fichas/agent-reach.md) | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs. | tu agente necesita leer redes sociales sin APIs de pago | Depende de la ruta elegida |
-| [last30days](../fichas/last30days-skill.md) | Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket y la web de los últimos 30 días. | quieres saber qué se dice ahora sobre un tema | Sin API de IA en la ruta básica |
-| [Vane](../fichas/vane.md) | Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity (antes Perplexica). | quieres un buscador con respuestas citadas auto-hospedado | Sin API de IA en la ruta básica |
-| [changedetection.io](../fichas/changedetection.md) | Monitor de cambios en páginas web con alertas por email, Slack, Telegram y más. | quieres alertas cuando cambia una página | API de IA opcional |
-| [ArchiveBox](../fichas/archivebox.md) | Archivador web auto-hospedado que guarda páginas en HTML, PDF, capturas y medios. | quieres conservar copias fieles de páginas web | API de IA opcional |
+| [SearXNG](../fichas/searxng.md) | Metabuscador libre y privado que agrega resultados de muchos buscadores, ideal como buscador para agentes. | Tu objetivo encaja con estos ejemplos: Añadir búsqueda a una herramienta de investigación; Disponer de un metabuscador propio | Sin clave propia de API de IA en la ruta básica |
+| [Agent-Reach](../fichas/agent-reach.md) | CLI que da a tu agente acceso de lectura y búsqueda a Twitter, Reddit, YouTube, GitHub y más sin pagar APIs. | Tu objetivo encaja con estos ejemplos: Leer una discusión pública para investigación; Obtener transcripciones de un video permitido | API de IA opcional |
+| [last30days](../fichas/last30days-skill.md) | Skill para agentes que investiga un tema en Reddit, X, YouTube, HN, Polymarket y la web de los últimos 30 días. | Tu objetivo encaja con estos ejemplos: Preparar una reunión sobre una empresa; Revisar novedades de una herramienta | API de IA opcional |
+| [Vane](../fichas/vane.md) | Motor de respuestas con IA auto-hospedado, alternativa abierta a Perplexity (antes Perplexica). | Tu objetivo encaja con estos ejemplos: Investigar un tema con citas; Consultar la web usando Ollama | Depende de la ruta elegida |
+| [changedetection.io](../fichas/changedetection.md) | Monitor de cambios en páginas web con alertas por email, Slack, Telegram y más. | Tu objetivo encaja con estos ejemplos: Detectar cambios de precio permitidos; Monitorear avisos de una página | API de IA opcional |
+| [ArchiveBox](../fichas/archivebox.md) | Archivador web auto-hospedado que guarda páginas en HTML, PDF, capturas y medios. | Tu objetivo encaja con estos ejemplos: Preservar documentación que cambia; Crear una biblioteca de fuentes de una investigación | Sin clave propia de API de IA en la ruta básica |
 
 ## Redes sociales y descarga de medios
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [yt-dlp](../fichas/yt-dlp.md) | Descargador de audio y video por línea de comandos compatible con miles de sitios. | necesitas bajar audio o video de la web | Sin API de IA en la ruta básica |
-| [instaloader](../fichas/instaloader.md) | Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de Instagram. | necesitas datos de Instagram de forma fiable | Sin API de IA en la ruta básica |
-| [snscrape](../fichas/snscrape.md) | Scraper de redes sociales (Twitter/X, Reddit, Telegram, Instagram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves. | recolectas varias redes y no te sirve una API oficial | Sin API de IA en la ruta básica |
+| [yt-dlp](../fichas/yt-dlp.md) | Descargador de audio y video por línea de comandos compatible con miles de sitios. | Tu objetivo encaja con estos ejemplos: Respaldar videos propios; Obtener medios permitidos para edición | Sin clave propia de API de IA en la ruta básica |
+| [instaloader](../fichas/instaloader.md) | Herramienta y librería Python para descargar fotos, videos, stories, leyendas y metadata pública de perfiles, hashtags y feeds de Instagram. | Tu objetivo encaja con estos ejemplos: Respaldar publicaciones propias; Actualizar una colección autorizada sin repetir todo | Sin clave propia de API de IA en la ruta básica |
+| [snscrape](../fichas/snscrape.md) | Scraper de redes sociales (Twitter/X, Reddit, Telegram, Instagram, etc.) que recolecta posts y perfiles sin necesidad de APIs oficiales ni claves. | Tu objetivo encaja con estos ejemplos: Estudiar extracción de metadatos sociales; Evaluar disponibilidad de un conector antes de una investigación | Sin clave propia de API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

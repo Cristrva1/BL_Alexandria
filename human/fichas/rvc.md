@@ -2,7 +2,7 @@
 
 # 🗣️ RVC WebUI
 
-> Conversión de voz: entrena un modelo con menos de 10 minutos de audio y transforma una voz en otra.
+> Interfaz y herramientas para convertir una grabación a otra voz mediante modelos locales.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,34 +16,54 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No requiere API en la ruta propia; entrenamiento, hardware y modelos externos se costean aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. RVC convierte audio existente y no es por sí solo texto a voz; menos de diez minutos es un reclamo de entrenamiento y no una garantía universal |
+| Coste | Sin pago a un modelo en la ruta básica. No requiere API en la ruta propia; entrenamiento, hardware y modelos externos se costean aparte |
+| Equipo | Preparación según la ruta elegida. Python 3.12 según guía; FFmpeg; modelo de conversión; voz autorizada; equipo |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+RVC convierte audio existente y no es por sí solo texto a voz; menos de diez minutos es un reclamo de entrenamiento y no una garantía universal
 
 ## Qué puedes hacer con él
 
-Cambia la voz de una grabación manteniendo entonación. Muy usado para covers y doblaje.
+Interfaz y herramientas para convertir una grabación a otra voz mediante modelos locales.
 
 ## Por qué destaca
 
-Fácil de entrenar con pocos datos y con interfaz web.
+Usos propuestos: Probar un efecto de voz consentido; Estudiar conversión frente a TTS.
 
 ## Cómo funciona
 
-Recupera rasgos de la voz objetivo de un índice y los aplica con un modelo VITS.
+RVC convierte audio existente y no es por sí solo texto a voz; menos de diez minutos es un reclamo de entrenamiento y no una garantía universal
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python 3.12 según guía
+- FFmpeg
+- modelo de conversión
+- voz autorizada
+- equipo
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (powershell):**
+
+```
+py -3.12 -m venv .venv
+.venv\Scripts\activate
+python -m pip install --upgrade pip setuptools wheel
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/README.md)
 
@@ -51,23 +71,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar RVC WebUI para mi objetivo y necesito pasos guiados. Lee https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Convierte un clip propio corto y compara claridad, tono y artefactos.
+
+**Qué comprobar:** Puedes reconocer entrada y voz objetivo del modelo.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Cambiar la voz de una grabación
-- Covers musicales
-- Doblaje de personajes
+- Probar un efecto de voz consentido
+- Estudiar conversión frente a TTS
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres convertir una voz grabada en otra | necesitas generar voz desde texto; mira `chatterbox` |
+| Tu objetivo encaja con estos ejemplos: Probar un efecto de voz consentido; Estudiar conversión frente a TTS | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Usa voces solo con consentimiento.
+**Limitaciones:** RVC convierte audio existente y no es por sí solo texto a voz; menos de diez minutos es un reclamo de entrenamiento y no una garantía universal
 
 ## Stack y modelos
 
-- **Stack:** Python, PyTorch, Gradio
+- **Stack:** Python 3.12 según guía; FFmpeg; modelo de conversión; voz autorizada; equipo
 - **Etiquetas:** `audio` `tts` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +102,7 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [GPT-SoVITS](gpt-sovits.md) | 65.1k | Clonación de voz y TTS con solo un minuto de audio, con interfaz web para entrenar. |
+| [GPT-SoVITS](gpt-sovits.md) | 65.1k | Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos. |
 
 ## Enlaces
 
@@ -83,7 +110,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/README.md)
 

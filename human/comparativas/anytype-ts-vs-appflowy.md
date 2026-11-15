@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal. | Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento propio. |
 | ⭐ Estrellas | 9.1k | 78.9k |
-| Elígelo si… | buscas esta función: Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal. | buscas esta función: Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento propio. |
-| Evítalo si… | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Organizar notas y proyectos personales; Diseñar una colección con campos propios | Tu objetivo encaja con estos ejemplos: Organizar un proyecto colaborativo; Construir una wiki de equipo |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🔀 híbrido |
-| API de IA | Sin API de IA en la ruta básica | API de IA opcional |
-| Coste | Sin pago a un modelo en la ruta básica | El coste depende del proveedor o la ruta |
-| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
+| API de IA | Sin clave propia de API de IA en la ruta básica | API de IA opcional |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
+| Modelos locales | La función básica no necesita un modelo | Modelo local no documentado |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | NOASSERTION | AGPL-3.0 |
-| Instalación | Sigue la instalación y el ejemplo mínimo en https://github.com/anyproto/anytype-ts/blob… | Sigue la instalación y el ejemplo mínimo en https://github.com/AppFlowy-IO/AppFlowy/blo… |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
 
 ## Regla práctica
 
-- Elige **Anytype Desktop** si buscas esta función: Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal.
-- Elige **AppFlowy** si buscas esta función: Espacio de trabajo para notas, wikis y proyectos colaborativos, con funciones de IA y opciones de alojamiento propio.
+- Elige **Anytype Desktop** si Tu objetivo encaja con estos ejemplos: Organizar notas y proyectos personales; Diseñar una colección con campos propios.
+- Elige **AppFlowy** si Tu objetivo encaja con estos ejemplos: Organizar un proyecto colaborativo; Construir una wiki de equipo.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

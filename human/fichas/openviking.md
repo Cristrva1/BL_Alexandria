@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos. |
-| Claude Code | Integración no documentada |
+| API de IA | Depende de la ruta elegida. La edición abierta AGPL no exige activación; Enterprise y proveedores tienen condiciones propias; el autor documenta Ollama y Codex OAuth |
+| Claude Code | Integración documentada por el proyecto |
 | Codex | Integración documentada por el proyecto |
-| Modelos locales | Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos. |
-| Coste | El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan. |
-| Equipo | Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Compatibilidad por confirmar |
+| Modelos locales | Modelos locales documentados. El instalador de plugins tiene restricciones de sistema; en Windows el autor orienta hacia la app de escritorio; no extrapoles soporte de hooks |
+| Coste | El coste depende del proveedor o la ruta. La edición abierta AGPL no exige activación; Enterprise y proveedores tienen condiciones propias; el autor documenta Ollama y Codex OAuth |
+| Equipo | Preparación según la ruta elegida. uv; proveedor o Ollama; servidor; Node 18+ y macOS/Linux para instalador de plugins |
 
-El README documenta una ruta de autenticación de Codex. Comprueba la configuración y las limitaciones de esa ruta; otras funciones y proveedores se configuran aparte.
+El instalador de plugins tiene restricciones de sistema; en Windows el autor orienta hacia la app de escritorio; no extrapoles soporte de hooks
 
 ## Qué puedes hacer con él
 
 Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información.
 
+## Por qué destaca
+
+Usos propuestos: Conservar contexto de un proyecto; Consultar conocimientos y skills desde un almacén común.
+
 ## Cómo funciona
 
-Un servicio y su interfaz gestionan los datos y conexiones configurados en tu despliegue.
+El instalador de plugins tiene restricciones de sistema; en Windows el autor orienta hacia la app de escritorio; no extrapoles soporte de hooks
 
 ## Cómo empezar
 
@@ -39,11 +44,23 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de instalación o servidor y las dependencias indicadas por el README.
+- uv
+- proveedor o Ollama
+- servidor
+- Node 18+ y macOS/Linux para instalador de plugins
 
-1. Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.
-2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
-3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (shell):**
+
+```
+uv tool install openviking --upgrade && openviking-server init
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/volcengine/OpenViking/blob/main/README.md)
 
@@ -51,21 +68,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar OpenViking para mi objetivo y necesito pasos guiados. Lee https://github.com/volcengine/OpenViking/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Guarda una nota de contexto ficticia y consulta cómo se recupera en otra sesión.
+
+**Qué comprobar:** Puedes inspeccionar el documento y la memoria que usa el agente.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información.
+- Conservar contexto de un proyecto
+- Consultar conocimientos y skills desde un almacén común
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Conservar contexto de un proyecto; Consultar conocimientos y skills desde un almacén común | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** El instalador de plugins tiene restricciones de sistema; en Windows el autor orienta hacia la app de escritorio; no extrapoles soporte de hooks
 
 ## Stack y modelos
 
-- **Stack:** Python, Cargo.toml, Dockerfile, docker-compose.yml, pyproject.toml
+- **Stack:** uv; proveedor o Ollama; servidor; Node 18+ y macOS/Linux para instalador de plugins
 - **Etiquetas:** `memoria` `server` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -82,7 +108,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/volcengine/OpenViking/blob/main/README.md)
 

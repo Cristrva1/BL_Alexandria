@@ -16,34 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API: por confirmar. No se da por verificada la autenticación o el coste real de esta integración de terceros. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Usa la sesión y los límites de ChatGPT; el proyecto no garantiza consumo ilimitado ni exención de las condiciones del servicio |
 | Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Ejecución con modelos locales por confirmar. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | Coste por confirmar. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Es automatización de navegador no oficial y sin respaldo de OpenAI; las versiones publicadas no están firmadas y los cambios de UI pueden romper la integración |
+| Coste | Consumo del agente que ya utilizas. Usa la sesión y los límites de ChatGPT; el proyecto no garantiza consumo ilimitado ni exención de las condiciones del servicio |
+| Equipo | Preparación según la ruta elegida. Cuenta propia ChatGPT; Codex; aplicación para tu sistema; equipo de confianza |
 
-Consultar la procedencia, el método de sesión y la documentación actual antes de introducir credenciales.
+Es automatización de navegador no oficial y sin respaldo de OpenAI; las versiones publicadas no están firmadas y los cambios de UI pueden romper la integración
 
 ## Qué puedes hacer con él
 
-Integración de terceros que conecta una sesión de ChatGPT Web con el selector de modelos y herramientas de Codex. Un launcher usa la sesión de la cuenta y enlaza herramientas mediante MCP para conservar el contexto de la tarea.
+Integración de terceros que conecta una sesión de ChatGPT Web con el selector de modelos y herramientas de Codex.
 
 ## Por qué destaca
 
-Quieres estudiar una integración entre ChatGPT Web y Codex.
+Usos propuestos: Estudiar un adaptador de navegador para Codex; Comparar transporte web con acceso oficial.
 
 ## Cómo funciona
 
-Un launcher usa la sesión de la cuenta y enlaza herramientas mediante MCP para conservar el contexto de la tarea.
+Es automatización de navegador no oficial y sin respaldo de OpenAI; las versiones publicadas no están firmadas y los cambios de UI pueden romper la integración
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Cuenta propia ChatGPT
+- Codex
+- aplicación para tu sistema
+- equipo de confianza
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/miuuyy/codex-chatgpt-web/blob/main/README.md)
 
@@ -51,21 +60,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar codex-chatgpt-web para mi objetivo y necesito pasos guiados. Lee https://github.com/miuuyy/codex-chatgpt-web/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Lee el modelo de seguridad y usa una tarea sin datos sensibles antes de activar full harness.
+
+**Qué comprobar:** Puedes identificar sesión web, modelo elegido y permisos expuestos.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres estudiar una integración entre ChatGPT Web y Codex
+- Estudiar un adaptador de navegador para Codex
+- Comparar transporte web con acceso oficial
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres estudiar una integración entre ChatGPT Web y Codex | un flujo determinista resuelve el problema sin un agente |
+| Tu objetivo encaja con estos ejemplos: Estudiar un adaptador de navegador para Codex; Comparar transporte web con acceso oficial | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** No es una integración oficial; depende de la sesión, disponibilidad y límites de la cuenta.
+**Limitaciones:** Es automatización de navegador no oficial y sin respaldo de OpenAI; las versiones publicadas no están firmadas y los cambios de UI pueden romper la integración
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Node.js
+- **Stack:** Cuenta propia ChatGPT; Codex; aplicación para tu sistema; equipo de confianza
 - **Etiquetas:** `infra` `chatgpt` `chatgpt-pro` `codex` `free-ai` `mcp` `openai` `playwright`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +93,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/miuuyy/codex-chatgpt-web/blob/main/README.md)
 

@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | API de IA opcional. Usa el plan de Claude y dependencias locales; servicios o extensiones de datos pueden añadir costes |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell |
+| Coste | El coste depende del proveedor o la ruta. Usa el plan de Claude y dependencias locales; servicios o extensiones de datos pueden añadir costes |
+| Equipo | Preparación según la ruta elegida. Claude Code; Python; Git Bash en Windows; web propia de prueba |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell
 
 ## Qué puedes hacer con él
 
-Añade a Claude Code comandos `/geo` que auditan un sitio para buscadores con IA (ChatGPT, Claude, Perplexity, Gemini, AI Overviews) sin dejar el SEO técnico: citabilidad del contenido, acceso de crawlers de IA en robots.txt, menciones de marca, datos estructurados y llms.txt. Genera informes para clientes en Markdown o PDF y lleva un pequeño CRM de prospectos.
+Skill de Claude Code que audita webs para buscadores con IA (GEO) y SEO clásico, con citabilidad, schema, llms.txt e informes PDF.
 
 ## Por qué destaca
 
-Está pensado para agencias y consultores: además de auditar, prepara propuestas, compara la evolución mes a mes y produce un PDF listo para entregar. Reparte la auditoría entre cinco subagentes en paralelo.
+Usos propuestos: Revisar schema de una web; Preparar un informe GEO inicial.
 
 ## Cómo funciona
 
-Una skill principal enruta 13 sub-skills y 5 subagentes; scripts de Python descargan y analizan las páginas, puntúan la citabilidad y generan el PDF con ReportLab. Las dependencias van en un entorno virtual propio dentro de `~/.claude/skills/geo/`.
+Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell
 
 ## Cómo empezar
 
@@ -43,11 +44,25 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Claude Code
+- Python
+- Git Bash en Windows
+- web propia de prueba
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+git clone https://github.com/zubair-trabzada/geo-seo-claude.git
+cd geo-seo-claude
+./install.sh
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md)
 
@@ -55,23 +70,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar GEO-SEO Claude para mi objetivo y necesito pasos guiados. Lee https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Ejecuta una revisión de una página propia y contrasta dos hallazgos con el HTML.
+
+**Qué comprobar:** Puedes separar observación, heurística y propuesta.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Auditar la visibilidad de una web en ChatGPT y Perplexity
-- Revisar robots.txt para crawlers de IA y generar un llms.txt
-- Entregar a un cliente un informe GEO en PDF
+- Revisar schema de una web
+- Preparar un informe GEO inicial
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres medir y mejorar cómo te citan los buscadores con IA, no solo tu posición en Google | solo haces SEO clásico o no usas Claude Code; mira `marketingskills` |
+| Tu objetivo encaja con estos ejemplos: Revisar schema de una web; Preparar un informe GEO inicial | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Depende de Claude Code y el README promociona una comunidad de pago (Skool); revisa los datos de mercado que cita antes de usarlos con clientes.
+**Limitaciones:** Optimizar citabilidad no garantiza aparecer en resultados AI; la instalación Windows documentada usa Git Bash y no PowerShell
 
 ## Stack y modelos
 
-- **Stack:** Python, Markdown, ReportLab, JSON-LD, Playwright (opcional)
+- **Stack:** Claude Code; Python; Git Bash en Windows; web propia de prueba
 - **Etiquetas:** `skills` `search` `pdf` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,7 +112,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/zubair-trabzada/geo-seo-claude/blob/main/README.md)
 

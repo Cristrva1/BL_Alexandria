@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos. |
+| API de IA | Depende de la ruta elegida. Community y Enterprise tienen condiciones distintas; modelos locales o APIs, almacenamiento y conectores añaden costes según ruta |
 | Claude Code | Herramienta MCP para el agente |
 | Codex | Herramienta MCP para el agente |
-| Modelos locales | Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos. |
-| Coste | El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan. |
-| Equipo | Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. Lite es un chat ligero y no indexa documentos; para la prueba documental necesitas el despliegue completo |
+| Coste | El coste depende del proveedor o la ruta. Community y Enterprise tienen condiciones distintas; modelos locales o APIs, almacenamiento y conectores añaden costes según ruta |
+| Equipo | Preparación según la ruta elegida. Docker o ruta elegida; proveedor; fuente documental de prueba |
 
-Los agentes pueden consultar Onyx mediante MCP. El modelo y el procesamiento de Onyx conservan su configuración y sus costes; la sesión del cliente no los sustituye.
+Lite es un chat ligero y no indexa documentos; para la prueba documental necesitas el despliegue completo
 
 ## Qué puedes hacer con él
 
 Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso.
 
+## Por qué destaca
+
+Usos propuestos: Buscar conocimiento de equipo; Dar contexto organizacional a un agente de código.
+
 ## Cómo funciona
 
-La aplicación coordina modelos y herramientas; el acceso de cada componente se configura antes de ejecutar sus tareas.
+Lite es un chat ligero y no indexa documentos; para la prueba documental necesitas el despliegue completo
 
 ## Cómo empezar
 
@@ -39,11 +44,15 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de instalación o servidor y las dependencias indicadas por el README.
+- Docker o ruta elegida
+- proveedor
+- fuente documental de prueba
 
-1. Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.
-2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
-3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/onyx-dot-app/onyx/blob/main/README.md)
 
@@ -51,21 +60,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar onyx para mi objetivo y necesito pasos guiados. Lee https://github.com/onyx-dot-app/onyx/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Conecta dos documentos de prueba y formula una consulta que exija una cita.
+
+**Qué comprobar:** La respuesta muestra fuentes accesibles para el usuario que consulta.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso.
+- Buscar conocimiento de equipo
+- Dar contexto organizacional a un agente de código
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Buscar conocimiento de equipo; Dar contexto organizacional a un agente de código | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Lite es un chat ligero y no indexa documentos; para la prueba documental necesitas el despliegue completo
 
 ## Stack y modelos
 
-- **Stack:** Python, package.json, pyproject.toml
+- **Stack:** Docker o ruta elegida; proveedor; fuente documental de prueba
 - **Etiquetas:** `rag` `agent` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -82,7 +100,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/onyx-dot-app/onyx/blob/main/README.md)
 

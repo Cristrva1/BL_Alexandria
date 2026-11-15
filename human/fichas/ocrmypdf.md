@@ -16,56 +16,76 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No necesita LLM ni API; procesamiento y paquetes locales consumen recursos |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. La capa OCR puede contener errores; instala el idioma correcto y conserva el PDF original |
+| Coste | Sin pago a un modelo en la ruta básica. No necesita LLM ni API; procesamiento y paquetes locales consumen recursos |
+| Equipo | Preparación según la ruta elegida. Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La capa OCR puede contener errores; instala el idioma correcto y conserva el PDF original
 
 ## Qué puedes hacer con él
 
-Convierte escaneos en PDF/A buscables manteniendo la imagen original.
+Añade una capa de texto OCR a PDFs escaneados para poder buscarlos y copiarlos.
 
 ## Por qué destaca
 
-Simple, fiable y muy usado en archivos y despachos.
+Usos propuestos: Hacer buscables documentos escaneados; Preparar un archivo histórico propio para indexación.
 
 ## Cómo funciona
 
-Usa Tesseract para reconocer texto y lo coloca como capa invisible sobre cada página.
+La capa OCR puede contener errores; instala el idioma correcto y conserva el PDF original
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/ocrmypdf/OCRmyPDF/blob/main/README.md)
+- Python
+- Ghostscript
+- Tesseract
+- paquete del idioma
+- PDF de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://ocrmypdf.readthedocs.io/en/latest/installation.html)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar OCRmyPDF para mi objetivo y necesito pasos guiados. Lee https://github.com/ocrmypdf/OCRmyPDF/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar OCRmyPDF para mi objetivo y necesito pasos guiados. Lee https://ocrmypdf.readthedocs.io/en/latest/installation.html. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Añade OCR a una copia escaneada y busca una palabra que conoces.
+
+**Qué comprobar:** Puedes seleccionar y buscar texto manteniendo la imagen de la página.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
 - Hacer buscables documentos escaneados
-- Archivo digital en PDF/A
-- Preparar escaneos para RAG
+- Preparar un archivo histórico propio para indexación
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tienes PDFs escaneados que quieres buscar | necesitas extraer estructura; mira `docling` |
+| Tu objetivo encaja con estos ejemplos: Hacer buscables documentos escaneados; Preparar un archivo histórico propio para indexación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** La capa OCR puede contener errores; instala el idioma correcto y conserva el PDF original
 
 ## Stack y modelos
 
-- **Stack:** Python, Tesseract
+- **Stack:** Python; Ghostscript; Tesseract; paquete del idioma; PDF de prueba
 - **Etiquetas:** `ocr` `pdf` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,7 +103,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ocrmypdf/OCRmyPDF/blob/main/README.md)
 

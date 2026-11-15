@@ -1,0 +1,5 @@
+{
+ "llmfit":{"role":"app","one":"Inspector de hardware que estima qué modelos de lenguaje y cuantizaciones caben en tu CPU, RAM y GPU.","desc":"Inspecciona el hardware y recomienda modelos según memoria, aceleradores y estimaciones de velocidad. Ayuda a elegir antes de descargar; no evalúa la calidad del modelo en una tarea de negocio."},
+ "open-notebook":{"desc":"Aplicación auto-hospedada para reunir fuentes, consultar documentos y producir resúmenes o audio. Permite elegir proveedores de chat, embeddings y audio locales o remotos; la privacidad del procesamiento depende de esa configuración."},
+ "muse-spark":{"status":"unverified","name":"Muse Spark — afiliación por verificar"}
+}

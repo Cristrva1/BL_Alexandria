@@ -1,8 +1,8 @@
-[🏠 Inicio](../README.md) › [🧑‍💻 Modelos abiertos y entrenamiento](../categorias/24-modelos-entrenamiento.md) › Entrenar y afinar modelos
+[🏠 Inicio](../README.md) › [🎨 Animación, gráficos y creación 3D](../categorias/26-animacion-graficos-3d.md) › Física y simulación
 
 # 🧑‍💻 warp
 
-> Framework de NVIDIA que compila funciones de Python en kernels para simulación física y cálculo en CPU o GPU.
+> Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,42 +16,49 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Sin API de IA; GPU, energía y servicios de cómputo son costes separados |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. NVIDIA Warp es un framework de kernels y simulación, no el terminal Warp ni un modelo conversacional; corresponde mejor a simulación y gráficos que a fine-tuning de LLM |
+| Coste | Sin pago a un modelo en la ruta básica. Sin API de IA; GPU, energía y servicios de cómputo son costes separados |
+| Equipo | Preparación según la ruta elegida. Python 3.11+; CPU o GPU soportada; ejemplo pequeño |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+NVIDIA Warp es un framework de kernels y simulación, no el terminal Warp ni un modelo conversacional; corresponde mejor a simulación y gráficos que a fine-tuning de LLM
 
 ## Qué puedes hacer con él
 
-Framework de NVIDIA que compila funciones de Python en kernels para simulación física y cálculo en CPU o GPU. Compila funciones especializadas y aporta primitivas de geometría, física y diferenciación.
+Framework de NVIDIA para kernels y simulación física en CPU o GPU; no es un modelo ni un terminal.
 
 ## Por qué destaca
 
-Quieres escribir simulaciones o kernels de cálculo acelerado desde Python.
+Usos propuestos: Estudiar simulación física; Prototipar cómputo para robótica.
 
 ## Cómo funciona
 
-Compila funciones especializadas y aporta primitivas de geometría, física y diferenciación.
+NVIDIA Warp es un framework de kernels y simulación, no el terminal Warp ni un modelo conversacional; corresponde mejor a simulación y gráficos que a fine-tuning de LLM
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python 3.11+
+- CPU o GPU soportada
+- ejemplo pequeño
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (text):**
+
+```
 pip install warp-lang
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/NVIDIA/warp/blob/main/README.md)
 
@@ -59,21 +66,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar warp para mi objetivo y necesito pasos guiados. Lee https://github.com/NVIDIA/warp/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Ejecuta una simulación de ejemplo con pocas partículas y revisa su evolución.
+
+**Qué comprobar:** Puedes identificar kernel, dispositivo y estado simulado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres escribir simulaciones o kernels de cálculo acelerado desde Python
+- Estudiar simulación física
+- Prototipar cómputo para robótica
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres escribir simulaciones o kernels de cálculo acelerado desde Python | necesitas una aplicación lista para usuarios sin trabajo técnico |
+| Tu objetivo encaja con estos ejemplos: Estudiar simulación física; Prototipar cómputo para robótica | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La aceleración depende del hardware y de las operaciones compatibles.
+**Limitaciones:** NVIDIA Warp es un framework de kernels y simulación, no el terminal Warp ni un modelo conversacional; corresponde mejor a simulación y gráficos que a fine-tuning de LLM
 
 ## Stack y modelos
 
-- **Stack:** Python, pyproject.toml
+- **Stack:** Python 3.11+; CPU o GPU soportada; ejemplo pequeño
 - **Etiquetas:** `entrenamiento` `cuda` `differentiable-programming` `gpu` `gpu-acceleration` `nvidia` `nvidia-warp` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -84,7 +100,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría corregida en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/NVIDIA/warp/blob/main/README.md)
 

@@ -16,34 +16,53 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA necesaria. La ruta documentada necesita credenciales de un proveedor de IA o servicio externo. |
+| API de IA | API de IA necesaria. Necesita modelos y voz por API; Reuters o AP requieren además acceso a sus fuentes si los eliges |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | Consumo de APIs o servicios. El flujo documentado usa OPENAI_API_KEY y ELEVENLABS_API_KEY. La interfaz local no elimina esas llamadas remotas. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. La aplicación local usa servicios remotos y no incluye derechos de noticias o medios; las fuentes y afirmaciones requieren revisión |
+| Coste | Consumo de APIs o servicios. Necesita modelos y voz por API; Reuters o AP requieren además acceso a sus fuentes si los eliges |
+| Equipo | Preparación según la ruta elegida. uv; Node; FFmpeg; claves OpenAI y ElevenLabs; artículo autorizado |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La aplicación local usa servicios remotos y no incluye derechos de noticias o medios; las fuentes y afirmaciones requieren revisión
 
 ## Qué puedes hacer con él
 
-Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión. La ruta documentada requiere APIs de OpenAI y ElevenLabs aunque la interfaz y el montaje se ejecuten en tu equipo.
+Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión.
 
 ## Por qué destaca
 
-Prioriza la simplicidad para pasar de texto a reel rápido; es un proyecto pequeño y experimental, conviene revisar su estado antes de usarlo en serio.
+Usos propuestos: Preparar una noticia para señalización; Probar una pieza informativa breve.
 
 ## Cómo funciona
 
-La interfaz coordina la obtención del artículo, guion, imágenes, narración y render del video.
+La aplicación local usa servicios remotos y no incluye derechos de noticias o medios; las fuentes y afirmaciones requieren revisión
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- uv
+- Node
+- FFmpeg
+- claves OpenAI y ElevenLabs
+- artículo autorizado
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+uv sync
+npm install
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/schibsted/videofy_minimal/blob/main/README.md)
 
@@ -51,23 +70,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar videofy_minimal para mi objetivo y necesito pasos guiados. Lee https://github.com/schibsted/videofy_minimal/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Crea un borrador desde un artículo de prueba y revisa guion, voz y fuentes antes de exportar.
+
+**Qué comprobar:** Puedes identificar qué contenido se usó y verificar el video.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Transformar noticias/contenido en reels
-- Video corto rápido sin pipeline complejo
-- Prototipos de texto-a-video local
+- Preparar una noticia para señalización
+- Probar una pieza informativa breve
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres reels simples ya, sin montar un pipeline entero | necesitas variantes programáticas a escala (remotion) o control fino por código (moviepy) |
+| Tu objetivo encaja con estos ejemplos: Preparar una noticia para señalización; Probar una pieza informativa breve | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Proyecto pequeño y experimental; valida mantenimiento y calidad antes de depender de él.
+**Limitaciones:** La aplicación local usa servicios remotos y no incluye derechos de noticias o medios; las fuentes y afirmaciones requieren revisión
 
 ## Stack y modelos
 
-- **Stack:** Python/Node
+- **Stack:** uv; Node; FFmpeg; claves OpenAI y ElevenLabs; artículo autorizado
 - **Etiquetas:** `video` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +102,7 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [whisper](whisper.md) | 113k | Modelo de OpenAI para convertir habla en texto y traducir audio, con ejecución en tu equipo. |
-| [supertonic](supertonic.md) | 13.8k | Motor de texto a voz que ofrece modelos y ejemplos para sintetizar audio en dispositivos y navegadores compatibles. |
+| [supertonic](supertonic.md) | 13.8k | Archivo de TTS local ONNX; desarrollo y soporte terminados,con licencias separadas de código y pesos. |
 
 ## Alternativas (elige una)
 
@@ -90,7 +116,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/schibsted/videofy_minimal/blob/main/README.md)
 

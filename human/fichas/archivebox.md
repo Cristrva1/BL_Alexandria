@@ -16,64 +16,73 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | El coste depende del proveedor o la ruta. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No requiere modelo; almacenamiento, navegador y servidor son recursos propios |
+| Claude Code | Compatibilidad por confirmar |
+| Codex | Compatibilidad por confirmar |
+| Antigravity | Compatibilidad por confirmar |
+| Modelos locales | La función básica no necesita un modelo. El README menciona herramientas MCP pero falta confirmar aquí su configuración por cliente; los archivos no garantizan capturar toda web dinámica |
+| Coste | Sin pago a un modelo en la ruta básica. No requiere modelo; almacenamiento, navegador y servidor son recursos propios |
+| Equipo | Preparación según la ruta elegida. Docker o dependencias nativas; directorio persistente; espacio en disco |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El README menciona herramientas MCP pero falta confirmar aquí su configuración por cliente; los archivos no garantizan capturar toda web dinámica
 
 ## Qué puedes hacer con él
 
-Le das URLs, marcadores o historial y guarda copias completas para siempre. Útil para investigación y preservación de fuentes.
+Archivador web auto-hospedado que guarda páginas en HTML, PDF, capturas y medios.
 
 ## Por qué destaca
 
-Guarda cada página en varios formatos abiertos que siguen legibles sin la app.
+Usos propuestos: Preservar documentación que cambia; Crear una biblioteca de fuentes de una investigación.
 
 ## Cómo funciona
 
-Usa Chrome headless, wget, yt-dlp y otras herramientas para capturar cada URL en carpetas con índice.
+El README menciona herramientas MCP pero falta confirmar aquí su configuración por cliente; los archivos no garantizan capturar toda web dinámica
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Docker o dependencias nativas
+- directorio persistente
+- espacio en disco
 
-```shell
-pip install archivebox
-```
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
-[Instrucciones originales de instalación](https://github.com/ArchiveBox/ArchiveBox/blob/dev/README.md)
+[Instrucciones originales de instalación](https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar ArchiveBox para mi objetivo y necesito pasos guiados. Lee https://github.com/ArchiveBox/ArchiveBox/blob/dev/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar ArchiveBox para mi objetivo y necesito pasos guiados. Lee https://github.com/ArchiveBox/ArchiveBox/wiki/Quickstart. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Archiva una página propia y abre las copias HTML y captura desde el panel.
+
+**Qué comprobar:** La captura conserva la URL y se puede consultar después.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Archivar fuentes de una investigación
-- Respaldar marcadores
-- Guardar evidencia de páginas
+- Preservar documentación que cambia
+- Crear una biblioteca de fuentes de una investigación
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres conservar copias fieles de páginas web | solo necesitas el texto para un LLM; mira `jina-reader` |
+| Tu objetivo encaja con estos ejemplos: Preservar documentación que cambia; Crear una biblioteca de fuentes de una investigación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El README menciona herramientas MCP pero falta confirmar aquí su configuración por cliente; los archivos no garantizan capturar toda web dinámica
 
 ## Stack y modelos
 
-- **Stack:** Python, Django, Docker
+- **Stack:** Docker o dependencias nativas; directorio persistente; espacio en disco
 - **Etiquetas:** `scraping` `data` `python` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,7 +99,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ArchiveBox/ArchiveBox/blob/dev/README.md)
 

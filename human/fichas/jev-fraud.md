@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA necesaria. La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla. |
+| API de IA | API de IA opcional. La reproducción no hace llamadas; una ejecución nueva o npm run benchmark consume APIs; la cifra de la grabación no es una tarifa garantizada |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Consumo de APIs o servicios. Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es una demo sobre una muestra pequeña; sus resultados no validan un detector de fraude en producción |
+| Coste | El coste depende del proveedor o la ruta. La reproducción no hace llamadas; una ejecución nueva o npm run benchmark consume APIs; la cifra de la grabación no es una tarifa garantizada |
+| Equipo | Preparación según la ruta elegida. Node.js y npm; claves Together y AI Gateway solo para ejecución nueva |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Es una demo sobre una muestra pequeña; sus resultados no validan un detector de fraude en producción
 
 ## Qué puedes hacer con él
 
 Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude.
 
+## Por qué destaca
+
+Usos propuestos: Estudiar clasificación con escalado de casos inciertos; Comparar confianza y aciertos sobre un conjunto ficticio.
+
 ## Cómo funciona
 
-Se utiliza como punto de partida: se prepara el entorno del ejemplo y se adapta su código a la tarea.
+Es una demo sobre una muestra pequeña; sus resultados no validan un detector de fraude en producción
 
 ## Cómo empezar
 
@@ -39,11 +44,26 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
+- Node.js y npm
+- claves Together y AI Gateway solo para ejecución nueva
 
-1. Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.
-2. Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.
-3. Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (sh):**
+
+```
+git clone https://github.com/Nutlope/jev-fraud.git
+   cd jev-fraud
+   npm install
+   cp .env.example .env.local
+
+npm run dev -- --port 3017
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Nutlope/jev-fraud/blob/main/README.md)
 
@@ -51,21 +71,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar jev-fraud para mi objetivo y necesito pasos guiados. Lee https://github.com/Nutlope/jev-fraud/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Abre la aplicación y usa primero 10s replay sobre la grabación incluida.
+
+**Qué comprobar:** Ves la demostración grabada sin lanzar una clasificación nueva.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude.
+- Estudiar clasificación con escalado de casos inciertos
+- Comparar confianza y aciertos sobre un conjunto ficticio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Demostración de clasificación con modelos y servicios de IA para estudiar un flujo de detección de fraude. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| Tu objetivo encaja con estos ejemplos: Estudiar clasificación con escalado de casos inciertos; Comparar confianza y aciertos sobre un conjunto ficticio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Es una demo sobre una muestra pequeña; sus resultados no validan un detector de fraude en producción
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, package.json
+- **Stack:** Node.js y npm; claves Together y AI Gateway solo para ejecución nueva
 - **Etiquetas:** `experimentos` `template` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +104,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Nutlope/jev-fraud/blob/main/README.md)
 

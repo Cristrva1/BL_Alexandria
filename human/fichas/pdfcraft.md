@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Las herramientas del navegador no requieren modelo; hosting propio y productos enlazados tienen condiciones aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La referencia a Ollama corresponde al proyecto relacionado LibrePDF, no demuestra esa función en PDFCraft web |
+| Coste | Sin pago a un modelo en la ruta básica. Las herramientas del navegador no requieren modelo; hosting propio y productos enlazados tienen condiciones aparte |
+| Equipo | Preparación según la ruta elegida. Navegador moderno; PDFs de prueba; Node solo para self-hosting |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La referencia a Ollama corresponde al proyecto relacionado LibrePDF, no demuestra esa función en PDFCraft web
 
 ## Qué puedes hacer con él
 
-Apunta a ser la alternativa local y sin nube a los servicios online de PDF.
+Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada.
 
 ## Por qué destaca
 
-Todo el procesamiento ocurre en tu navegador, así que los documentos nunca salen de tu equipo ni dependen de un servicio de pago; útil para manipular PDFs sensibles sin subirlos a terceros.
+Usos propuestos: Editar PDFs desde un navegador; Convertir o dividir un documento de prueba.
 
 ## Cómo funciona
 
-Carga el PDF en el cliente y manipula sus páginas con librerías JS de PDF (p. ej. pdf-lib) en el propio navegador, sin subir nada a la nube; las operaciones son por página o por documento completo.
+La referencia a Ollama corresponde al proyecto relacionado LibrePDF, no demuestra esa función en PDFCraft web
 
 ## Cómo empezar
 
@@ -43,35 +44,45 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un navegador compatible y un PDF de prueba.
+- Navegador moderno
+- PDFs de prueba
+- Node solo para self-hosting
 
-1. Abre la web enlazada por el README para probar la interfaz sin desplegar el código.
-2. Elige una operación sencilla, por ejemplo combinar o dividir archivos, y utiliza documentos de prueba.
-3. Descarga y abre el resultado. El despliegue propio con Node o Docker es una ruta distinta que requiere preparación técnica.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md)
-
-[Abrir la web o descarga indicada por el autor](https://pdfcraft.devtoolcafe.com/en/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
 > Quiero usar pdfcraft para mi objetivo y necesito pasos guiados. Lee https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Abre dos PDFs en la app y combínalos sin usar un servicio externo de conversión.
+
+**Qué comprobar:** Puedes descargar el resultado y comprobar páginas y orden.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Combinar/dividir/convertir PDF sin subirlos a la nube
-- Manipulación local de documentos sensibles
-- Comprimir PDF antes de enviarlos
+- Editar PDFs desde un navegador
+- Convertir o dividir un documento de prueba
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| manipulas PDFs con privacidad y sin instalar nada | necesitas conversión a Markdown para IA (markitdown) o edición de contenido (no solo manipulación de páginas) |
+| Tu objetivo encaja con estos ejemplos: Editar PDFs desde un navegador; Convertir o dividir un documento de prueba | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** La referencia a Ollama corresponde al proyecto relacionado LibrePDF, no demuestra esa función en PDFCraft web
 
 ## Stack y modelos
 
-- **Stack:** web/TS
+- **Stack:** Navegador moderno; PDFs de prueba; Node solo para self-hosting
 - **Etiquetas:** `pdf` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -94,7 +105,9 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/PDFCraftTool/pdfcraft/blob/main/README.md)
 

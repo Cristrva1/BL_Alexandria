@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 188k | NOASSERTION | Python | 2026-11-10 |
 
-**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
+**Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,60 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Depende de la ruta elegida. La plataforma alojada es de pago y ofrece acceso a modelos; self-hosting usa tus credenciales o modelo local y recursos propios |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. La plataforma actual expone MCP Streamable HTTP con clave y permisos; no confundirla con tutoriales del agente Classic ni con acceso incluido al modelo |
+| Coste | El coste depende del proveedor o la ruta. La plataforma alojada es de pago y ofrece acceso a modelos; self-hosting usa tus credenciales o modelo local y recursos propios |
+| Equipo | Preparación según la ruta elegida. Docker para self-hosting; credenciales o modelo local |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La plataforma actual expone MCP Streamable HTTP con clave y permisos; no confundirla con tutoriales del agente Classic ni con acceso incluido al modelo
 
 ## Qué puedes hacer con él
 
-El famoso proyecto de agentes autónomos evolucionó a una plataforma con editor de bloques, marketplace y servidor para agentes que corren en segundo plano.
+Plataforma para crear, desplegar y ejecutar agentes de IA continuos con un constructor visual de bloques.
 
 ## Por qué destaca
 
-Proyecto pionero con enorme comunidad; hoy ofrece una plataforma completa y auto-hospedable.
+Usos propuestos: Procesar solicitudes recurrentes; Componer una investigación con revisión humana.
 
 ## Cómo funciona
 
-Un frontend de bloques define agentes como grafos; un backend Python los ejecuta con colas y base de datos.
+La plataforma actual expone MCP Streamable HTTP con clave y permisos; no confundirla con tutoriales del agente Classic ni con acceso incluido al modelo
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Docker para self-hosting
+- credenciales o modelo local
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+docker run -d \
+  --name autogpt \
+  --restart unless-stopped \
+  --shm-size 2g \
+  --ulimit nofile=65536:65536 \
+  --log-driver json-file \
+  --log-opt max-size=50m \
+  --log-opt max-file=5 \
+  -p 127.0.0.1:3000:3000 \
+  -e AUTOGPT_PUBLIC_URL=http://localhost:3000 \
+  -v autogpt-data:/data \
+  significantgravitas/autogpt:latest
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Significant-Gravitas/AutoGPT/blob/master/README.md)
 
@@ -51,23 +77,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar AutoGPT para mi objetivo y necesito pasos guiados. Lee https://github.com/Significant-Gravitas/AutoGPT/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Crea una automatización breve que transforma una entrada de texto y revisa cada bloque.
+
+**Qué comprobar:** Ves la salida y el historial de una ejecución acotada.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Agentes que generan contenido de forma continua
-- Automatizaciones con bloques de IA
-- Experimentar con agentes autónomos
+- Procesar solicitudes recurrentes
+- Componer una investigación con revisión humana
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres agentes continuos con un editor visual propio | buscas algo ligero y fácil de operar; mira `sim` o `flowise` |
+| Tu objetivo encaja con estos ejemplos: Procesar solicitudes recurrentes; Componer una investigación con revisión humana | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La plataforma usa licencia Polyform Shield y su self-host tiene muchas piezas.
+**Limitaciones:** La plataforma actual expone MCP Streamable HTTP con clave y permisos; no confundirla con tutoriales del agente Classic ni con acceso incluido al modelo
 
 ## Stack y modelos
 
-- **Stack:** Python, TypeScript, Next.js, Docker
+- **Stack:** Docker para self-hosting; credenciales o modelo local
 - **Etiquetas:** `agents` `automation` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -92,9 +125,12 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Significant-Gravitas/AutoGPT/blob/master/README.md)
+- [Fuente 2](https://agpt.co/docs/platform/api-and-integrations/api-guide/mcp-server.md)
 
 ---
 

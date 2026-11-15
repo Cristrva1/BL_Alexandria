@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Librería de IBM que convierte PDF, DOCX, PPTX e imágenes en Markdown o JSON listos para IA. | Convierte PDF a Markdown y JSON de forma rápida y precisa, con tablas, fórmulas y código. |
 | ⭐ Estrellas | 70.6k | 40.9k |
-| Elígelo si… | quieres convertir documentos a Markdown con buena estructura | conviertes PDFs largos con fórmulas |
-| Evítalo si… | solo tienes PDFs de texto simples; mira `markitdown` | necesitas uso comercial sin licencia; revisa su licencia |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Preparar documentos para RAG; Extraer tablas antes de un análisis | Tu objetivo encaja con estos ejemplos: Extraer contenido de informes; Preparar documentos escaneados para búsqueda |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
 | API de IA | API de IA opcional | API de IA opcional |
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | Apache-2.0 |
-| Instalación | `pip install docling` | `pip install marker-pdf` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **Docling** si quieres convertir documentos a Markdown con buena estructura.
-- Elige **Marker** si conviertes PDFs largos con fórmulas.
+- Elige **Docling** si Tu objetivo encaja con estos ejemplos: Preparar documentos para RAG; Extraer tablas antes de un análisis.
+- Elige **Marker** si Tu objetivo encaja con estos ejemplos: Extraer contenido de informes; Preparar documentos escaneados para búsqueda.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

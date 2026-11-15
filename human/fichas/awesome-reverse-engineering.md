@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Leer la lista no requiere API; herramientas y hardware enlazados pueden tener costes |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La lista no prueba por sí sola seguridad, compatibilidad ni mantenimiento de todos sus enlaces |
+| Coste | Sin pago a un modelo en la ruta básica. Leer la lista no requiere API; herramientas y hardware enlazados pueden tener costes |
+| Equipo | Preparación según la ruta elegida. Navegador; plataforma y formato de interés |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+La lista no prueba por sí sola seguridad, compatibilidad ni mantenimiento de todos sus enlaces
 
 ## Qué puedes hacer con él
 
 Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos.
 
+## Por qué destaca
+
+Usos propuestos: Buscar un analizador de ELF; Encontrar material introductorio de ensamblador.
+
 ## Cómo funciona
 
-Se consulta como documentación o referencia; cada ejemplo o proyecto enlazado se evalúa por separado.
+La lista no prueba por sí sola seguridad, compatibilidad ni mantenimiento de todos sus enlaces
 
 ## Cómo empezar
 
@@ -39,11 +44,13 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real.
+- Navegador
+- plataforma y formato de interés
 
-1. Abre el material original y localiza la sección relacionada con tu tarea.
-2. Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.
-3. Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado.
+1. Compara dos herramientas de análisis de tu formato por licencia y modo estático o dinámico.
+2. Comprueba: Tienes candidatos con documentación y requisitos identificados.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/morluto/awesome-reverse-engineering/blob/main/README.md)
 
@@ -51,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar awesome-reverse-engineering para mi objetivo y necesito pasos guiados. Lee https://github.com/morluto/awesome-reverse-engineering/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Compara dos herramientas de análisis de tu formato por licencia y modo estático o dinámico.
+
+**Qué comprobar:** Tienes candidatos con documentación y requisitos identificados.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos.
+- Buscar un analizador de ELF
+- Encontrar material introductorio de ensamblador
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Directorio de herramientas y recursos para aprender análisis de binarios, aplicaciones, firmware y protocolos. | necesitas una aplicación lista para ejecutar en lugar de material de consulta |
+| Tu objetivo encaja con estos ejemplos: Buscar un analizador de ELF; Encontrar material introductorio de ensamblador | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Las pruebas activas y modificaciones requieren un alcance autorizado y un entorno adecuado.
+**Limitaciones:** La lista no prueba por sí sola seguridad, compatibilidad ni mantenimiento de todos sus enlaces
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Navegador; plataforma y formato de interés
 - **Etiquetas:** `referencias` `reference` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +91,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/morluto/awesome-reverse-engineering/blob/main/README.md)
 

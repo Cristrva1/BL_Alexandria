@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No usa un modelo ni necesita API de IA; streaming, almacenamiento y equipos son costes externos |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Prueba el archivo antes de una sesión larga; seleccionar una fuente no acredita que capture el audio deseado |
+| Coste | Sin pago a un modelo en la ruta básica. No usa un modelo ni necesita API de IA; streaming, almacenamiento y equipos son costes externos |
+| Equipo | Preparación según la ruta elegida. Instalador oficial; permisos de captura; micrófono opcional; disco |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Prueba el archivo antes de una sesión larga; seleccionar una fuente no acredita que capture el audio deseado
 
 ## Qué puedes hacer con él
 
-OBS Studio captura, compone, codifica, graba y transmite video en Windows, macOS y Linux. Combinas en escenas la pantalla, ventanas, webcam, navegador y archivos multimedia, mezclas el audio con filtros y emites a YouTube, Twitch u otro servicio RTMP, o grabas a disco.
+App de escritorio libre para grabar pantalla y transmitir en directo, con escenas, fuentes y mezcla de audio en tiempo real.
 
 ## Por qué destaca
 
-Es el estándar libre para streaming y grabación de pantalla, con codificación por hardware (NVENC, AMF, QuickSync, Apple VT), cámara virtual, plugins y control remoto por WebSocket incluido.
+Usos propuestos: Grabar una explicación de pantalla; Preparar escenas para una transmisión.
 
 ## Cómo funciona
 
-Su núcleo en C/C++ (libobs) compone en GPU las fuentes de cada escena y codifica con x264, FFmpeg o encoders de hardware. Se automatiza con scripts Lua o Python y con el protocolo obs-websocket.
+Prueba el archivo antes de una sesión larga; seleccionar una fuente no acredita que capture el audio deseado
 
 ## Cómo empezar
 
@@ -43,37 +44,46 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un sistema compatible y una fuente de imagen o sonido que quieras grabar.
+- Instalador oficial
+- permisos de captura
+- micrófono opcional
+- disco
 
-1. Abre la web oficial de OBS y elige la descarga para tu sistema.
-2. Sigue la guía del proyecto para añadir una fuente de captura y revisar la entrada de audio.
-3. Graba unos segundos sin transmitir y reproduce el archivo para comprobar imagen y sonido.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
 
-[Instrucciones originales de instalación](https://github.com/obsproject/obs-studio/blob/master/README.rst)
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
-[Abrir la web o descarga indicada por el autor](https://obsproject.com)
+[Instrucciones originales de instalación](https://obsproject.com/download)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar OBS Studio para mi objetivo y necesito pasos guiados. Lee https://github.com/obsproject/obs-studio/blob/master/README.rst. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar OBS Studio para mi objetivo y necesito pasos guiados. Lee https://obsproject.com/download. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Crea una escena con pantalla y micrófono y graba veinte segundos.
+
+**Qué comprobar:** El archivo tiene imagen, audio y niveles aceptables.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Grabar tutoriales y demos de producto con la webcam superpuesta
-- Transmitir en directo a YouTube o Twitch con varias escenas
-- Grabar clases o reuniones para transcribirlas después
+- Grabar una explicación de pantalla
+- Preparar escenas para una transmisión
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas grabar pantalla o transmitir en directo combinando varias fuentes en escenas | lo que necesitas es montar o recortar el video ya grabado; usa `opencut` o `lossless-cut` |
+| Tu objetivo encaja con estos ejemplos: Grabar una explicación de pantalla; Preparar escenas para una transmisión | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** No es un editor: graba y emite, pero el montaje posterior requiere otra herramienta.
+**Limitaciones:** Prueba el archivo antes de una sesión larga; seleccionar una fuente no acredita que capture el audio deseado
 
 ## Stack y modelos
 
-- **Stack:** C, C++, Qt, FFmpeg
+- **Stack:** Instalador oficial; permisos de captura; micrófono opcional; disco
 - **Etiquetas:** `video` `audio` `ui` `cpp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -98,7 +108,9 @@ Aplicación con interfaz. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/obsproject/obs-studio/blob/master/README.rst)
 

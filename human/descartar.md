@@ -18,15 +18,15 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Trigger.dev](fichas/trigger-dev.md) | [Windmill](fichas/windmill.md), [Kestra](fichas/kestra.md) |
 | [Windmill](fichas/windmill.md) | [n8n](fichas/n8n.md), [Kestra](fichas/kestra.md), [Trigger.dev](fichas/trigger-dev.md) |
 | [Agent Skills (Addy Osmani)](fichas/agent-skills.md) | [superpowers](fichas/superpowers.md) |
-| [Agentic Awesome Skills](fichas/antigravity-awesome-skills.md) | [Awesome Agent Skills](fichas/awesome-agent-skills.md), [Awesome Claude Skills](fichas/awesome-claude-skills.md), [wshobson/agents](fichas/wshobson-agents.md) |
-| [Awesome Agent Skills](fichas/awesome-agent-skills.md) | [Agentic Awesome Skills](fichas/antigravity-awesome-skills.md), [Awesome Claude Skills](fichas/awesome-claude-skills.md) |
+| [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md) | [Awesome Agent Skills](fichas/awesome-agent-skills.md), [Awesome Claude Skills](fichas/awesome-claude-skills.md), [wshobson/agents](fichas/wshobson-agents.md) |
+| [Awesome Agent Skills](fichas/awesome-agent-skills.md) | [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md), [Awesome Claude Skills](fichas/awesome-claude-skills.md) |
 | [Awesome Claude Code](fichas/awesome-claude-code.md) | [Awesome Claude Skills](fichas/awesome-claude-skills.md) |
-| [Awesome Claude Skills](fichas/awesome-claude-skills.md) | [Awesome Agent Skills](fichas/awesome-agent-skills.md), [Agentic Awesome Skills](fichas/antigravity-awesome-skills.md), [Awesome Claude Code](fichas/awesome-claude-code.md) |
+| [Awesome Claude Skills](fichas/awesome-claude-skills.md) | [Awesome Agent Skills](fichas/awesome-agent-skills.md), [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md), [Awesome Claude Code](fichas/awesome-claude-code.md) |
 | [BMAD Method](fichas/bmad-method.md) | [Spec Kit](fichas/spec-kit.md) |
 | [Claude Code Plugins Directory](fichas/claude-plugins-official.md) | [wshobson/agents](fichas/wshobson-agents.md) |
 | [Spec Kit](fichas/spec-kit.md) | [BMAD Method](fichas/bmad-method.md) |
 | [superpowers](fichas/superpowers.md) | [Agent Skills (Addy Osmani)](fichas/agent-skills.md) |
-| [wshobson/agents](fichas/wshobson-agents.md) | [Claude Code Plugins Directory](fichas/claude-plugins-official.md), [Agentic Awesome Skills](fichas/antigravity-awesome-skills.md), [The Agency (agency-agents)](fichas/agency-agents.md) |
+| [wshobson/agents](fichas/wshobson-agents.md) | [Claude Code Plugins Directory](fichas/claude-plugins-official.md), [Agentic Awesome Skills (AAS)](fichas/antigravity-awesome-skills.md), [The Agency (agency-agents)](fichas/agency-agents.md) |
 | [ag2](fichas/ag2.md) | [AutoGen](fichas/autogen.md) |
 | [Agent Development Kit (ADK)](fichas/adk-python.md) | [LangGraph](fichas/langgraph.md), [OpenAI Agents SDK](fichas/openai-agents-python.md) |
 | [Agno](fichas/agno.md) | [crewAI](fichas/crewai.md) |
@@ -96,7 +96,6 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [DeepWiki Open](fichas/deepwiki-open.md) | [Context7](fichas/context7.md) |
 | [GitNexus](fichas/gitnexus.md) | [Repomix](fichas/repomix.md), [codebase-memory-mcp](fichas/codebase-memory-mcp.md), [Serena](fichas/serena.md) |
 | [Repomix](fichas/repomix.md) | [GitNexus](fichas/gitnexus.md) |
-| [Semgrep](fichas/semgrep.md) | [ast-grep](fichas/ast-grep.md) |
 | [AnythingLLM](fichas/anything-llm.md) | [Open WebUI](fichas/open-webui.md), [Khoj](fichas/khoj.md), [PrivateGPT](fichas/private-gpt.md), [onyx](fichas/onyx.md) |
 | [chatbox](fichas/chatbox.md) | [Jan](fichas/jan.md) |
 | [Cherry Studio](fichas/cherry-studio.md) | [Jan](fichas/jan.md), [LobeHub](fichas/lobehub.md) |
@@ -151,10 +150,9 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [HunyuanVideo](fichas/hunyuanvideo.md) | [Wan2.2](fichas/wan2-2.md), [LTX-Video](fichas/ltx-video.md) |
 | [LTX-Video](fichas/ltx-video.md) | [Wan2.2](fichas/wan2-2.md), [HunyuanVideo](fichas/hunyuanvideo.md) |
 | [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) | [OpenMontage](fichas/openmontage.md), [videofy_minimal](fichas/videofy-minimal.md) |
-| [MoviePy](fichas/moviepy.md) | [remotion](fichas/remotion.md), [HyperFrames](fichas/hyperframes.md) |
 | [OBS Studio](fichas/obs-studio.md) | [OpenScreen](fichas/openscreen.md) |
 | [OpenScreen](fichas/openscreen.md) | [OBS Studio](fichas/obs-studio.md) |
-| [VideoLingo](fichas/videolingo.md) | [OmniVoice-Studio](fichas/omnivoice-studio.md) |
+| [VideoLingo](fichas/videolingo.md) | [VoiceStudio](fichas/omnivoice-studio.md) |
 | [Wan2.2](fichas/wan2-2.md) | [HunyuanVideo](fichas/hunyuanvideo.md), [LTX-Video](fichas/ltx-video.md) |
 | [WanGP](fichas/wan2gp.md) | [ComfyUI](fichas/comfyui.md) |
 | [Docling](fichas/docling.md) | [Marker](fichas/marker.md), [MinerU](fichas/mineru.md), [Unstructured](fichas/unstructured.md), [olmOCR](fichas/olmocr.md) |
@@ -179,11 +177,9 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [ghidra](fichas/ghidra.md) | [radare2](fichas/radare2.md) |
 | [radare2](fichas/radare2.md) | [rizin](fichas/rizin.md), [ghidra](fichas/ghidra.md) |
 | [rizin](fichas/rizin.md) | [radare2](fichas/radare2.md) |
+| [Semgrep](fichas/semgrep.md) | [ast-grep](fichas/ast-grep.md) |
 | [Baileys](fichas/baileys.md) | [whatsapp-web.js](fichas/whatsapp-web-js.md), [WAHA](fichas/waha.md) |
-| [Botpress](fichas/botpress.md) | [Typebot](fichas/typebot.md), [Rasa](fichas/rasa.md) |
 | [evolution-api](fichas/evolution-api.md) | [whatsapp-web.js](fichas/whatsapp-web-js.md), [WAHA](fichas/waha.md) |
-| [Rasa](fichas/rasa.md) | [Botpress](fichas/botpress.md) |
-| [Typebot](fichas/typebot.md) | [Botpress](fichas/botpress.md) |
 | [WAHA](fichas/waha.md) | [evolution-api](fichas/evolution-api.md), [whatsapp-web.js](fichas/whatsapp-web-js.md), [Baileys](fichas/baileys.md) |
 | [whatsapp-web.js](fichas/whatsapp-web-js.md) | [Baileys](fichas/baileys.md), [WAHA](fichas/waha.md), [evolution-api](fichas/evolution-api.md) |
 | [ERPNext](fichas/erpnext.md) | [Odoo](fichas/odoo.md) |
@@ -265,16 +261,17 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [Kokoro](fichas/kokoro.md) | [Chatterbox](fichas/chatterbox.md), [TTS](fichas/tts.md), [LuxTTS](fichas/luxtts.md), [edge-tts](fichas/edge-tts.md) |
 | [LiveKit Agents](fichas/livekit-agents.md) | [Pipecat](fichas/pipecat.md) |
 | [LuxTTS](fichas/luxtts.md) | [Kokoro](fichas/kokoro.md), [Chatterbox](fichas/chatterbox.md) |
-| [NVIDIA NeMo Speech](fichas/nemo.md) | [whisperX](fichas/whisperx.md) |
-| [OmniVoice-Studio](fichas/omnivoice-studio.md) | [VideoLingo](fichas/videolingo.md) |
+| [NeMo Speech](fichas/nemo.md) | [whisperX](fichas/whisperx.md) |
 | [Pipecat](fichas/pipecat.md) | [LiveKit Agents](fichas/livekit-agents.md) |
 | [TTS](fichas/tts.md) | [Kokoro](fichas/kokoro.md) |
+| [VoiceStudio](fichas/omnivoice-studio.md) | [VideoLingo](fichas/videolingo.md) |
 | [whisper](fichas/whisper.md) | [whisper.cpp](fichas/whisper-cpp.md) |
 | [whisper.cpp](fichas/whisper-cpp.md) | [faster-whisper](fichas/faster-whisper.md), [whisper](fichas/whisper.md) |
-| [whisperX](fichas/whisperx.md) | [NVIDIA NeMo Speech](fichas/nemo.md) |
+| [whisperX](fichas/whisperx.md) | [NeMo Speech](fichas/nemo.md) |
 | [HyperFrames](fichas/hyperframes.md) | [remotion](fichas/remotion.md), [MoviePy](fichas/moviepy.md) |
 | [manim](fichas/manim-community.md) | [Manim (ManimGL)](fichas/manim.md) |
 | [Manim (ManimGL)](fichas/manim.md) | [manim](fichas/manim-community.md) |
+| [MoviePy](fichas/moviepy.md) | [remotion](fichas/remotion.md), [HyperFrames](fichas/hyperframes.md) |
 | [OpenMontage](fichas/openmontage.md) | [Remotion Superpowers](fichas/remotion-superpowers.md), [MoneyPrinterTurbo](fichas/moneyprinterturbo.md) |
 | [remotion](fichas/remotion.md) | [MoviePy](fichas/moviepy.md), [HyperFrames](fichas/hyperframes.md) |
 | [Remotion Superpowers](fichas/remotion-superpowers.md) | [OpenMontage](fichas/openmontage.md), [video-use](fichas/video-use.md) |

@@ -2,7 +2,7 @@
 
 # ✂️ VideoLingo
 
-> App que subtitula, traduce y dobla videos de forma automática: ASR con timestamps por palabra, traducción con LLM y TTS.
+> App para reconocer voz, traducir subtítulos y preparar doblaje, con ASR local por defecto y proveedores configurables por etapa.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,34 +16,52 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | Depende de la ruta elegida. ASR local y algunos TTS no requieren API; traducción y servicios de voz dependen del proveedor; cada etapa puede consumir por separado |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. El reconocimiento local actual usa Qwen3-ASR y ForcedAligner por defecto; no se debe seguir describiendo todo el pipeline como WhisperX |
+| Coste | El coste depende del proveedor o la ruta. ASR local y algunos TTS no requieren API; traducción y servicios de voz dependen del proveedor; cada etapa puede consumir por separado |
+| Equipo | Preparación según la ruta elegida. Python y uv; FFmpeg y modelos según ruta; LLM con salida JSON; video propio |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El reconocimiento local actual usa Qwen3-ASR y ForcedAligner por defecto; no se debe seguir describiendo todo el pipeline como WhisperX
 
 ## Qué puedes hacer con él
 
-VideoLingo reúne en una interfaz Streamlit el trabajo de un equipo de subtitulado: descarga el video con yt-dlp, lo transcribe con alineación por palabra, segmenta y traduce los subtítulos con un LLM y, si quieres, genera el doblaje con voz sintética o clonada. Produce archivos SRT y videos subtitulados o doblados.
+Combina reconocimiento de voz, alineación, traducción, segmentación y doblaje. La ruta revisada utiliza Qwen3-ASR y ForcedAligner localmente por defecto; traducción y TTS tienen requisitos y costes distintos según proveedor.
 
 ## Por qué destaca
 
-Cuida el subtítulo, no solo la transcripción: corta frases con NLP y LLM, mantiene un glosario para traducir con coherencia y revisa la traducción. Incluye una API HTTP local para usarlo desde agentes o scripts.
+Usos propuestos: Subtitular un tutorial propio; Preparar una traducción de una demostración.
 
 ## Cómo funciona
 
-Pipeline Python por etapas con caché y reanudación: Qwen3-ASR con ForcedAligner en local (MLX en Apple Silicon), un LLM compatible con OpenAI para segmentar y traducir, y TTS intercambiable (GPT-SoVITS, Edge TTS, OpenAI, Fish Audio, F5-TTS).
+El reconocimiento local actual usa Qwen3-ASR y ForcedAligner por defecto; no se debe seguir describiendo todo el pipeline como WhisperX
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python y uv
+- FFmpeg y modelos según ruta
+- LLM con salida JSON
+- video propio
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+git clone https://github.com/Huanshere/VideoLingo.git && cd VideoLingo
+uv run start.py
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Huanshere/VideoLingo/blob/main/README.md)
 
@@ -51,23 +69,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar VideoLingo para mi objetivo y necesito pasos guiados. Lee https://github.com/Huanshere/VideoLingo/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Procesa un clip corto con voz clara y revisa transcripción, traducción y tiempos antes de doblar.
+
+**Qué comprobar:** Los subtítulos coinciden con las palabras y puedes corregir errores antes de exportar.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Subtitular en español videos de YouTube en inglés
-- Doblar tutoriales a otro idioma con voz clonada
-- Generar subtítulos bilingües para cursos o entrevistas
+- Subtitular un tutorial propio
+- Preparar una traducción de una demostración
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres subtitular, traducir o doblar videos de punta a punta con una interfaz y sin programar | solo necesitas transcribir o subtitular en el idioma original; te basta `whisperx` o `faster-whisper` |
+| Tu objetivo encaja con estos ejemplos: Subtitular un tutorial propio; Preparar una traducción de una demostración | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** El doblaje no asigna voces distintas por hablante, la traducción consume tokens de una API de LLM y, si clonas una voz, necesitas el consentimiento de su dueño.
+**Limitaciones:** El reconocimiento local actual usa Qwen3-ASR y ForcedAligner por defecto; no se debe seguir describiendo todo el pipeline como WhisperX
 
 ## Stack y modelos
 
-- **Stack:** Python, Streamlit, Qwen3-ASR, yt-dlp, FFmpeg
+- **Stack:** Python y uv; FFmpeg y modelos según ruta; LLM con salida JSON; video propio
 - **Etiquetas:** `video` `stt` `tts` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,14 +101,14 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [yt-dlp](yt-dlp.md) | 208k | Descargador de audio y video por línea de comandos compatible con miles de sitios. |
-| [GPT-SoVITS](gpt-sovits.md) | 65.1k | Clonación de voz y TTS con solo un minuto de audio, con interfaz web para entrenar. |
+| [GPT-SoVITS](gpt-sovits.md) | 65.1k | Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos. |
 | [whisperX](whisperx.md) | 25.3k | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
 
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [OmniVoice-Studio](omnivoice-studio.md) | 111k | Alternativa local y open source a ElevenLabs: clonación, diseño y conversión de voz en una app. |
+| [VoiceStudio](omnivoice-studio.md) | 111k | App local de voz con modelos descargables,edición AGPL y una oferta comercial separada. |
 
 ## Enlaces
 
@@ -92,7 +117,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Huanshere/VideoLingo/blob/main/README.md)
 

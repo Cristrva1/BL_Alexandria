@@ -42,10 +42,10 @@ def test_every_public_card_has_separate_sourced_access_facts():
         assert a["local_model"] in LOCAL_LABELS
         assert a["cost"] in COST_LABELS
         assert a["hardware"] in HARDWARE_LABELS
-        assert a["claude_code"] in CLIENT_LABELS and a["codex"] in CLIENT_LABELS
+        assert all(a[client] in CLIENT_LABELS for client in ['claude_code','codex','antigravity'])
         assert a["sources"] and a["checked_at"] and a["source_blob_sha"]
         assert repo["getting_started"]["steps"]
-        assert repo["getting_started"]["source"].startswith("https://github.com/")
+        assert repo["getting_started"]["source"].startswith("https://")
         assert repo["getting_started"]["audience"] in {"ready_app","agent","reading","developer","setup"}
 
 

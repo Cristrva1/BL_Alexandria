@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
-| Claude Code | Dentro del agente: skills o instrucciones |
-| Codex | Dentro del agente: skills o instrucciones |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | Consumo del agente que ya utilizas. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. SQLite y FTS5 no requieren LLM ni API; el agente que interpreta los recuerdos mantiene sus costes |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. MCP no equivale por sí solo a captura automática; Codex añade requisitos de capacidad y sesión que debes revisar en la guía |
+| Coste | Sin pago a un modelo en la ruta básica. SQLite y FTS5 no requieren LLM ni API; el agente que interpreta los recuerdos mantiene sus costes |
+| Equipo | Preparación según la ruta elegida. Binario oficial o Go; cliente MCP; directorio de memoria de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+MCP no equivale por sí solo a captura automática; Codex añade requisitos de capacidad y sesión que debes revisar en la guía
 
 ## Qué puedes hacer con él
 
-Da a cualquier agente compatible con MCP una memoria local de decisiones y aprendizajes, sin dependencias pesadas.
+Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI.
 
 ## Por qué destaca
 
-Agnóstico de agente, muy ligero y fácil de inspeccionar.
+Usos propuestos: Recordar decisiones técnicas; Hacer una entrega de contexto entre sesiones.
 
 ## Cómo funciona
 
-Guarda observaciones en SQLite con búsqueda de texto completo (FTS5) y las expone por MCP, HTTP y CLI.
+MCP no equivale por sí solo a captura automática; Codex añade requisitos de capacidad y sesión que debes revisar en la guía
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Binario oficial o Go
+- cliente MCP
+- directorio de memoria de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Gentleman-Programming/engram/blob/main/README.md)
 
@@ -51,21 +59,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Engram para mi objetivo y necesito pasos guiados. Lee https://github.com/Gentleman-Programming/engram/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Guarda una decisión con su razón y recupérala por palabras clave.
+
+**Qué comprobar:** El registro aparece con contenido y contexto que puedes inspeccionar.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Memoria compartida entre Claude Code y Codex
-- Registrar decisiones del proyecto
-- Buscar soluciones pasadas
+- Recordar decisiones técnicas
+- Hacer una entrega de contexto entre sesiones
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres memoria local simple para cualquier agente | solo usas Claude Code y quieres algo automático; mira `claude-mem` |
+| Tu objetivo encaja con estos ejemplos: Recordar decisiones técnicas; Hacer una entrega de contexto entre sesiones | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** MCP no equivale por sí solo a captura automática; Codex añade requisitos de capacidad y sesión que debes revisar en la guía
 
 ## Stack y modelos
 
-- **Stack:** Go, SQLite
+- **Stack:** Binario oficial o Go; cliente MCP; directorio de memoria de prueba
 - **Etiquetas:** `memory` `mcp` `coding-agent` `go`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,7 +107,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Gentleman-Programming/engram/blob/main/README.md)
 

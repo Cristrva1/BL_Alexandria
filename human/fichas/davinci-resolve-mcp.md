@@ -16,39 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. El servidor expone herramientas; el modelo lo aporta el cliente MCP. La herramienta puede necesitar credenciales de otros servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El conector no incluye un modelo; Studio tiene licencia propia y la edición gratuita necesita otra ruta; el agente mantiene sus límites |
 | Claude Code | Herramienta MCP para el agente |
 | Codex | Herramienta MCP para el agente |
-| Modelos locales | La función básica no necesita un modelo. Un servidor MCP no incluye un LLM; puede ser invocado por un agente con un modelo local si ese cliente lo soporta. |
-| Coste | Consumo del agente que ya utilizas. Necesita DaVinci Resolve instalado y su API de scripting; algunas funciones dependen de la edición de Resolve. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Studio permite scripting externo Local; la edición gratuita usa un puente interno documentado; instalar MCP no activa por sí solo Resolve |
+| Coste | El coste depende del proveedor o la ruta. El conector no incluye un modelo; Studio tiene licencia propia y la edición gratuita necesita otra ruta; el agente mantiene sus límites |
+| Equipo | Preparación según la ruta elegida. Resolve >=18.5; Python 64 bits; FFmpeg; Studio o puente interno para edición gratuita |
 
-Puede conectarse a un cliente con soporte MCP, incluido Claude Code o Codex. Debes configurar el servidor y sus permisos.
+Studio permite scripting externo Local; la edición gratuita usa un puente interno documentado; instalar MCP no activa por sí solo Resolve
 
 ## Qué puedes hacer con él
 
-Expone la API oficial de scripting de DaVinci Resolve como herramientas MCP para Claude, Cursor, Codex y otros clientes. Cubre montaje, organización del media pool, render, marcadores, color, Fusion y Fairlight, y añade análisis de medios que nunca modifica los originales. Incluye un panel de control local en el navegador.
+Servidor MCP que deja a un agente de IA controlar DaVinci Resolve: montaje, media pool, color, Fusion y render.
 
 ## Por qué destaca
 
-Cubre casi toda la API de Resolve, en un modo compacto de 37 herramientas o uno granular de 390, con operaciones protegidas. El instalador configura automáticamente una docena de clientes MCP.
+Usos propuestos: Organizar material desde un agente; Preparar ajustes de render con revisión.
 
 ## Cómo funciona
 
-Servidor Python que se conecta a un Resolve abierto por su API de scripting externo y agrupa operaciones por acción para ahorrar contexto. Un servidor Node opcional edita archivos .drp/.drt sin Resolve abierto; ffmpeg y Whisper amplían el análisis.
+Studio permite scripting externo Local; la edición gratuita usa un puente interno documentado; instalar MCP no activa por sí solo Resolve
 
 ## Cómo empezar
 
-Se configura en tu agente. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un cliente MCP compatible.
-- Las credenciales del servicio conectado, si las pide el servidor.
+- Resolve >=18.5
+- Python 64 bits
+- FFmpeg
+- Studio o puente interno para edición gratuita
 
-1. Instala o configura el servidor según su README.
-2. Añade su comando o URL en la configuración MCP de tu cliente.
-3. Comprueba que aparecen las herramientas antes de asignar una tarea.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+npx davinci-resolve-mcp setup
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/samuelgursky/davinci-resolve-mcp/blob/main/README.md)
 
@@ -56,23 +67,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar DaVinci Resolve MCP para mi objetivo y necesito pasos guiados. Lee https://github.com/samuelgursky/davinci-resolve-mcp/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+En un proyecto de prueba consulta el media pool y añade un marcador antes de automatizar montaje.
+
+**Qué comprobar:** El marcador aparece en el clip o timeline esperado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Pedir a Claude que arme un timeline con clips del media pool
-- Automatizar ajustes de render y colas de exportación
-- Transcribir clips y escribir marcadores y metadatos en el proyecto
+- Organizar material desde un agente
+- Preparar ajustes de render con revisión
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| editas en DaVinci Resolve y quieres que un agente MCP automatice montaje, render o metadatos | no usas Resolve o prefieres montar video por código sin editor; mira `moviepy` o `ffmpeg` |
+| Tu objetivo encaja con estos ejemplos: Organizar material desde un agente; Preparar ajustes de render con revisión | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** El scripting externo solo funciona en Resolve Studio (de pago); en la edición gratuita depende de un puente interno que solo está verificado hasta Resolve 21.0.x.
+**Limitaciones:** Studio permite scripting externo Local; la edición gratuita usa un puente interno documentado; instalar MCP no activa por sí solo Resolve
 
 ## Stack y modelos
 
-- **Stack:** Python, Node.js, DaVinci Resolve Scripting API, ffmpeg
+- **Stack:** Resolve >=18.5; Python 64 bits; FFmpeg; Studio o puente interno para edición gratuita
 - **Etiquetas:** `video` `mcp` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,9 +108,12 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/samuelgursky/davinci-resolve-mcp/blob/main/README.md)
+- [Fuente 2](https://github.com/samuelgursky/davinci-resolve-mcp/blob/main/docs/install.md)
 
 ---
 

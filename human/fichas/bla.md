@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Las transformaciones locales no requieren LLM; el agente y herramientas externas mantienen sus costes |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. Sus tablas de eficacia son pruebas del autor y no demuestran que el software sea imposible de analizar ni que una transformación preserve todo caso |
+| Coste | Sin pago a un modelo en la ruta básica. Las transformaciones locales no requieren LLM; el agente y herramientas externas mantienen sus costes |
+| Equipo | Preparación según la ruta elegida. Node ^22.23.4 o >=24 recomendado; cliente; copias de artefactos de prueba |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Sus tablas de eficacia son pruebas del autor y no demuestran que el software sea imposible de analizar ni que una transformación preserve todo caso
 
 ## Qué puedes hacer con él
 
 Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por agentes.
 
+## Por qué destaca
+
+Usos propuestos: Estudiar protección de artefactos propios; Evaluar compatibilidad de un endurecimiento con tus pruebas.
+
 ## Cómo funciona
 
-La aplicación ofrece las herramientas de su interfaz o CLI después de preparar la distribución y sus dependencias.
+Sus tablas de eficacia son pruebas del autor y no demuestran que el software sea imposible de analizar ni que una transformación preserve todo caso
 
 ## Cómo empezar
 
@@ -39,12 +44,21 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de instalación o servidor y las dependencias indicadas por el README.
-- Software o sistemas propios o con autorización, y un entorno de prueba separado del uso real.
+- Node ^22.23.4 o >=24 recomendado
+- cliente
+- copias de artefactos de prueba
 
-1. Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.
-2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
-3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+npx bla-agents setup
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/qybaihe/bla/blob/main/README.md)
 
@@ -52,21 +66,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar bla para mi objetivo y necesito pasos guiados. Lee https://github.com/qybaihe/bla/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Inspecciona una protección en una copia pequeña y compara comportamiento y diferencias antes de adoptarla.
+
+**Qué comprobar:** Puedes identificar qué transforma y qué pruebas conservarían la función original.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por agentes.
+- Estudiar protección de artefactos propios
+- Evaluar compatibilidad de un endurecimiento con tus pruebas
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Herramientas para aplicar protecciones y comprobar superficies de software frente a análisis automatizado por agentes. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Estudiar protección de artefactos propios; Evaluar compatibilidad de un endurecimiento con tus pruebas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. Las pruebas activas y modificaciones requieren un alcance autorizado y un entorno adecuado.
+**Limitaciones:** Sus tablas de eficacia son pruebas del autor y no demuestran que el software sea imposible de analizar ni que una transformación preserve todo caso
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, package.json
+- **Stack:** Node ^22.23.4 o >=24 recomendado; cliente; copias de artefactos de prueba
 - **Etiquetas:** `defensa` `app` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -77,7 +100,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/qybaihe/bla/blob/main/README.md)
 

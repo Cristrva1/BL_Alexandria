@@ -16,34 +16,49 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. El servidor aporta herramientas a un cliente MCP; el cliente aporta el modelo. Revisar los servicios que usa cada herramienta. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No exige API propia de IA; usa el cliente y los recursos de Ghidra |
 | Claude Code | Herramienta MCP para el agente |
 | Codex | Herramienta MCP para el agente |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Consumo del agente que ya utilizas. El modelo se consume en el cliente MCP. Programas, licencias y servicios conectados pueden tener requisitos y tarifas independientes. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. La integración de los clientes se basa en stdio o HTTP documentados; esta revisión no prueba su instalación ni el análisis de binarios |
+| Coste | Consumo del agente que ya utilizas. No exige API propia de IA; usa el cliente y los recursos de Ghidra |
+| Equipo | Preparación según la ruta elegida. Ghidra y su plugin; uv; binario propio de prueba |
 
-Configura este servidor en un cliente MCP compatible, incluido Claude Code o Codex. Sus servicios y permisos se preparan aparte.
+La integración de los clientes se basa en stdio o HTTP documentados; esta revisión no prueba su instalación ni el análisis de binarios
 
 ## Qué puedes hacer con él
 
 Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios.
 
+## Por qué destaca
+
+Usos propuestos: Documentar funciones de un binario propio; Estudiar llamadas en un ejecutable de laboratorio.
+
 ## Cómo funciona
 
-Un cliente MCP invoca las herramientas del servidor para trabajar con el programa o servicio conectado.
+La integración de los clientes se basa en stdio o HTTP documentados; esta revisión no prueba su instalación ni el análisis de binarios
 
 ## Cómo empezar
 
-Se configura en tu agente. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un cliente MCP compatible y el programa o servicio que va a controlar la herramienta.
+- Ghidra y su plugin
+- uv
+- binario propio de prueba
 
-1. Prepara el servidor y sus dependencias siguiendo la configuración del README.
-2. Añade el comando o la URL en el cliente MCP y configura los permisos y credenciales de los servicios conectados.
-3. Comprueba que aparecen sus herramientas y prueba una consulta pequeña antes de permitir modificaciones.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (consulta la sintaxis original):**
+
+```
+claude mcp add ghidra -- uvx --from git+https://github.com/LaurieWired/GhidraMCP ghidra-mcp --ghidra-server http://127.0.0.1:8080/
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/LaurieWired/GhidraMCP/blob/main/README.md)
 
@@ -51,21 +66,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar GhidraMCP para mi objetivo y necesito pasos guiados. Lee https://github.com/LaurieWired/GhidraMCP/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Carga un programa de prueba y pide enumerar funciones sin modificar el análisis.
+
+**Qué comprobar:** Obtienes nombres y ubicaciones verificables en Ghidra.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios.
+- Documentar funciones de un binario propio
+- Estudiar llamadas en un ejecutable de laboratorio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Servidor MCP que conecta asistentes con funciones de Ghidra para consultar y analizar programas binarios. | necesitas un producto autónomo y esta pieza requiere un anfitrión compatible |
+| Tu objetivo encaja con estos ejemplos: Documentar funciones de un binario propio; Estudiar llamadas en un ejecutable de laboratorio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** La integración de los clientes se basa en stdio o HTTP documentados; esta revisión no prueba su instalación ni el análisis de binarios
 
 ## Stack y modelos
 
-- **Stack:** Java, pyproject.toml
+- **Stack:** Ghidra y su plugin; uv; binario propio de prueba
 - **Etiquetas:** `servidores` `mcp` `java`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -81,7 +105,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/LaurieWired/GhidraMCP/blob/main/README.md)
 

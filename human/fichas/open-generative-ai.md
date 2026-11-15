@@ -2,7 +2,7 @@
 
 # 🎬 Open-Generative-AI
 
-> Estudio abierto de generación de imagen y video que utiliza modelos ofrecidos mediante servicios de MuAPI.
+> Estudio de imagen y video con servicios remotos MuAPI y rutas locales de escritorio mediante sd.cpp o Wan2GP.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,34 +16,44 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA necesaria. La ruta documentada necesita credenciales de un proveedor de IA o servicio externo. |
+| API de IA | API de IA opcional. Las rutas MuAPI consumen servicios; escritorio añade sd.cpp y Wan2GP propios; que la interfaz sea abierta no vuelve gratuitos todos sus modelos |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | Consumo de APIs o servicios. La aplicación utiliza MuAPI para generar medios. El código abierto no incluye el consumo de ese servicio. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Los modelos locales son función de escritorio; Wan2GP se instala aparte y exige GPU compatible, a diferencia del motor de imagen sd.cpp |
+| Coste | El coste depende del proveedor o la ruta. Las rutas MuAPI consumen servicios; escritorio añade sd.cpp y Wan2GP propios; que la interfaz sea abierta no vuelve gratuitos todos sus modelos |
+| Equipo | Preparación según la ruta elegida. App de escritorio para modelos locales; sd.cpp o Wan2GP; GPU según modelo; clave MuAPI para servicios remotos |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Los modelos locales son función de escritorio; Wan2GP se instala aparte y exige GPU compatible, a diferencia del motor de imagen sd.cpp
 
 ## Qué puedes hacer con él
 
-Estudio abierto de generación de imagen y video que utiliza modelos ofrecidos mediante servicios de MuAPI. El código de la interfaz está disponible; las generaciones y otras modalidades del servicio tienen requisitos y tarifas propios.
+Reúne herramientas de generación de imagen y video. Los modelos alojados consumen servicios externos; la app de escritorio permite configurar motores locales independientes. Las rutas difieren en hardware, instalación, licencia de pesos y costes.
 
 ## Por qué destaca
 
-Ofrece un hub unificado pensado para conectar la generación visual a flujos de agentes (CLI + integraciones), frente a servicios cerrados como Runway o Pika; su catálogo amplio cubre imagen, video y audio en un solo punto.
+Usos propuestos: Probar imagen local desde una interfaz; Comparar una ruta local con un servicio de video remoto.
 
 ## Cómo funciona
 
-Reúne interfaces y flujos de generación en una aplicación que llama a proveedores externos.
+Los modelos locales son función de escritorio; Wan2GP se instala aparte y exige GPU compatible, a diferencia del motor de imagen sd.cpp
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- App de escritorio para modelos locales
+- sd.cpp o Wan2GP
+- GPU según modelo
+- clave MuAPI para servicios remotos
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Anil-matcha/Open-Generative-AI/blob/main/README.md)
 
@@ -51,21 +61,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Open-Generative-AI para mi objetivo y necesito pasos guiados. Lee https://github.com/Anil-matcha/Open-Generative-AI/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+En escritorio configura un modelo local pequeño y genera una imagen con el selector Local.
+
+**Qué comprobar:** Puedes identificar el motor local y comprobar que no se usó el proveedor remoto.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Generar un clip promocional desde terminal
-- Activos visuales rápidos para agentes
-- Sustituir varias APIs de pago por un único hub
+- Probar imagen local desde una interfaz
+- Comparar una ruta local con un servicio de video remoto
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres un hub de generación multi-modal sin atarte a un SaaS | ya tienes tu pipeline local (ComfyUI) o necesitas control fino por nodo |
+| Tu objetivo encaja con estos ejemplos: Probar imagen local desde una interfaz; Comparar una ruta local con un servicio de video remoto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Los modelos locales son función de escritorio; Wan2GP se instala aparte y exige GPU compatible, a diferencia del motor de imagen sd.cpp
 
 ## Stack y modelos
 
-- **Stack:** Python, Node.js
+- **Stack:** App de escritorio para modelos locales; sd.cpp o Wan2GP; GPU según modelo; clave MuAPI para servicios remotos
 - **Etiquetas:** `image` `video` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,7 +102,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Anil-matcha/Open-Generative-AI/blob/main/README.md)
 

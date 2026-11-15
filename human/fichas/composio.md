@@ -16,42 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA. |
-| Claude Code | Integración no documentada |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La conexión no necesita un LLM propio en su ruta básica; Composio requiere autenticación y su servicio y apps externas tienen condiciones de uso |
+| Claude Code | Integración documentada por el proyecto |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El CLI ofrece una superficie local para Claude Code; el SDK de Claude Agent no equivale a incluir créditos o plan de Claude Code |
+| Coste | Consumo de APIs o servicios. La conexión no necesita un LLM propio en su ruta básica; Composio requiere autenticación y su servicio y apps externas tienen condiciones de uso |
+| Equipo | Preparación según la ruta elegida. Cuenta Composio; CLI o SDK; cuenta externa de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El CLI ofrece una superficie local para Claude Code; el SDK de Claude Agent no equivale a incluir créditos o plan de Claude Code
 
 ## Qué puedes hacer con él
 
-Da a cualquier agente herramientas listas para Gmail, Slack, GitHub, Notion y cientos más, gestionando OAuth por ti. Funciona con los principales frameworks y por MCP.
+Plataforma con más de 1000 integraciones con autenticación gestionada para que tus agentes actúen en apps reales.
 
 ## Por qué destaca
 
-Resuelve la parte más tediosa de los agentes: autenticación y herramientas para muchas apps.
+Usos propuestos: Conectar un agente a un CRM; Explorar herramientas de consulta de un servicio.
 
 ## Cómo funciona
 
-Su API expone toolkits con auth gestionada; los SDK los convierten en herramientas para tu framework o en servidores MCP.
+El CLI ofrece una superficie local para Claude Code; el SDK de Claude Agent no equivale a incluir créditos o plan de Claude Code
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Cuenta Composio
+- CLI o SDK
+- cuenta externa de prueba
 
-```shell
-pip install composio
-```
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/ComposioHQ/composio/blob/next/README.md)
 
@@ -59,23 +59,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar Composio para mi objetivo y necesito pasos guiados. Lee https://github.com/ComposioHQ/composio/blob/next/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Busca una herramienta de consulta y revisa sus permisos antes de enlazar una cuenta.
+
+**Qué comprobar:** Puedes identificar acción, aplicación y alcance de autorización.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Agente que lee y responde correos
-- Automatizar tareas en Slack y GitHub
-- Herramientas MCP con OAuth
+- Conectar un agente a un CRM
+- Explorar herramientas de consulta de un servicio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tu agente necesita actuar en muchas apps SaaS | quieres todo auto-hospedado sin servicio externo |
+| Tu objetivo encaja con estos ejemplos: Conectar un agente a un CRM; Explorar herramientas de consulta de un servicio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Depende de su servicio en la nube y tiene planes de pago por uso.
+**Limitaciones:** El CLI ofrece una superficie local para Claude Code; el SDK de Claude Agent no equivale a incluir créditos o plan de Claude Code
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Python
+- **Stack:** Cuenta Composio; CLI o SDK; cuenta externa de prueba
 - **Etiquetas:** `agents` `mcp` `automation` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -94,7 +101,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ComposioHQ/composio/blob/next/README.md)
 

@@ -2,7 +2,7 @@
 
 # 👨‍💻 Continue
 
-> Agente de código open source para VS Code, JetBrains y CI, con chat, autocompletado y revisiones.
+> Agente para CLI y editores con versión final 2.0.0; el repositorio declara fin de mantenimiento activo.
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
@@ -16,34 +16,42 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | API de IA opcional. Código Apache; costes del proveedor o cómputo local separados |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. El README declara repositorio de solo lectura sin mantenimiento activo y una versión final 2.0.0; la documentación todavía describe Ollama pero no prueba soporte futuro |
+| Coste | El coste depende del proveedor o la ruta. Código Apache; costes del proveedor o cómputo local separados |
+| Equipo | Preparación según la ruta elegida. Editor o CLI correspondiente a la versión final; proveedor configurado |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El README declara repositorio de solo lectura sin mantenimiento activo y una versión final 2.0.0; la documentación todavía describe Ollama pero no prueba soporte futuro
 
 ## Qué puedes hacer con él
 
-Integra chat, edición y autocompletado en el IDE con cualquier modelo, y permite ejecutar comprobaciones de IA en los PRs.
+Agente para CLI y editores con versión final 2.0.0; el repositorio declara fin de mantenimiento activo.
 
 ## Por qué destaca
 
-Muy configurable y con buen soporte de modelos locales para autocompletado.
+Usos propuestos: Estudiar una extensión de código abierta; Revisar integración con Ollama.
 
 ## Cómo funciona
 
-Una extensión de IDE y un CLI leen tu configuración de modelos y reglas y llaman al proveedor elegido.
+El README declara repositorio de solo lectura sin mantenimiento activo y una versión final 2.0.0; la documentación todavía describe Ollama pero no prueba soporte futuro
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Editor o CLI correspondiente a la versión final
+- proveedor configurado
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/continuedev/continue/blob/main/README.md)
 
@@ -51,21 +59,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Continue para mi objetivo y necesito pasos guiados. Lee https://github.com/continuedev/continue/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Lee el aviso de fin de mantenimiento y revisa si la versión final cubre tu caso antes de usarla.
+
+**Qué comprobar:** Puedes distinguir código histórico y documentación de configuración.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Autocompletado con modelos locales
-- Chat sobre tu código en el IDE
-- Revisiones automáticas en PRs
+- Estudiar una extensión de código abierta
+- Revisar integración con Ollama
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres autocompletado y chat en el IDE con modelos a elección | buscas un agente autónomo para tareas largas; mira `cline` |
+| Tu objetivo encaja con estos ejemplos: Estudiar una extensión de código abierta; Revisar integración con Ollama | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El README declara repositorio de solo lectura sin mantenimiento activo y una versión final 2.0.0; la documentación todavía describe Ollama pero no prueba soporte futuro
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Kotlin
+- **Stack:** Editor o CLI correspondiente a la versión final; proveedor configurado
 - **Etiquetas:** `coding-agent` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,9 +106,12 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/continuedev/continue/blob/main/README.md)
+- [Fuente 2](https://docs.continue.dev/customize/model-providers/top-level/ollama)
 
 ---
 

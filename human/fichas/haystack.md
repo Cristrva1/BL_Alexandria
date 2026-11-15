@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 27k | Apache-2.0 | Python | 2026-11-10 |
 
-**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,42 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| API de IA | Depende de la ruta elegida. La biblioteca admite modelos locales y remotos; deepset gestionado, almacenamiento y modelos son costes separados |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. El MCP se publica mediante el proyecto compañero Hayhooks y requiere configurar y servir pipelines; sus modelos y claves se eligen aparte |
+| Coste | El coste depende del proveedor o la ruta. La biblioteca admite modelos locales y remotos; deepset gestionado, almacenamiento y modelos son costes separados |
+| Equipo | Preparación según la ruta elegida. Python; documentos; componentes de recuperación y generación |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El MCP se publica mediante el proyecto compañero Hayhooks y requiere configurar y servir pipelines; sus modelos y claves se eligen aparte
 
 ## Qué puedes hacer con él
 
-Compone pipelines modulares de recuperación, generación y agentes con componentes intercambiables. Muy usado en búsqueda empresarial.
+Framework de deepset para pipelines de RAG y agentes listos para producción.
 
 ## Por qué destaca
 
-Arquitectura de pipelines clara y madura, con foco en producción y despliegue.
+Usos propuestos: Responder sobre manuales propios; Comparar recuperación de dos consultas.
 
 ## Cómo funciona
 
-Un grafo de componentes (recuperadores, generadores, rankers) pasa datos tipados entre ellos y se serializa en YAML.
+El MCP se publica mediante el proyecto compañero Hayhooks y requiere configurar y servir pipelines; sus modelos y claves se eligen aparte
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python
+- documentos
+- componentes de recuperación y generación
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (sh):**
+
+```
 pip install haystack-ai
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/deepset-ai/haystack/blob/main/README.md)
 
@@ -59,21 +67,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar Haystack para mi objetivo y necesito pasos guiados. Lee https://github.com/deepset-ai/haystack/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Recupera un párrafo de un manual antes de generar la respuesta.
+
+**Qué comprobar:** Puedes inspeccionar el párrafo y contrastar la salida.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Búsqueda semántica empresarial
-- RAG con varias fuentes
-- Pipelines serializables y desplegables
+- Responder sobre manuales propios
+- Comparar recuperación de dos consultas
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres pipelines de RAG explícitos y listos para producción | buscas el ecosistema más grande de integraciones; mira `llama-index` |
+| Tu objetivo encaja con estos ejemplos: Responder sobre manuales propios; Comparar recuperación de dos consultas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El MCP se publica mediante el proyecto compañero Hayhooks y requiere configurar y servir pipelines; sus modelos y claves se eligen aparte
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python; documentos; componentes de recuperación y generación
 - **Etiquetas:** `rag` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -98,9 +115,12 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/deepset-ai/haystack/blob/main/README.md)
+- [Fuente 2](https://github.com/deepset-ai/hayhooks/blob/main/README.md)
 
 ---
 

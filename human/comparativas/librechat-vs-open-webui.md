@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Clon mejorado de ChatGPT con agentes, MCP y todos los proveedores en una sola interfaz auto-hospedada. | Interfaz tipo ChatGPT auto-hospedada para Ollama y APIs compatibles con OpenAI, con RAG, voz y herramientas. |
 | ⭐ Estrellas | 47.1k | 159k |
-| Elígelo si… | quieres todos los proveedores en un chat con SSO | necesitas un ChatGPT privado para tu equipo |
-| Evítalo si… | usas sobre todo modelos locales; mira `open-webui` | solo quieres una app de escritorio individual; mira `jan` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Unificar proveedores en una interfaz; Crear asistentes con herramientas y archivos | Tu objetivo encaja con estos ejemplos: Unificar chats de modelos locales; Crear una interfaz compartida para un equipo |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🔀 híbrido | 🏠 local |
 | API de IA | API de IA opcional | API de IA opcional |
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | MIT | NOASSERTION |
-| Instalación | `git clone https://github.com/danny-avila/LibreChat && cd LibreChat && docker compose up -d` | `docker run -d -p 3000:8080 -v open-webui:/app/backend/data ghcr.io/open-webui/open-webui:main` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **LibreChat** si quieres todos los proveedores en un chat con SSO.
-- Elige **Open WebUI** si necesitas un ChatGPT privado para tu equipo.
+- Elige **LibreChat** si Tu objetivo encaja con estos ejemplos: Unificar proveedores en una interfaz; Crear asistentes con herramientas y archivos.
+- Elige **Open WebUI** si Tu objetivo encaja con estos ejemplos: Unificar chats de modelos locales; Crear una interfaz compartida para un equipo.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

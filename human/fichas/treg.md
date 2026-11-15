@@ -16,34 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función principal conecta servicios externos; sus claves no equivalen necesariamente a una API de un modelo de lenguaje. |
+| API de IA | Depende de la ruta elegida. Las llamadas del catálogo pueden consumir saldo prepago; tus propias claves no se miden por Treg pero el proveedor sí puede cobrar; IA generativa según herramienta |
 | Claude Code | Herramienta MCP para el agente |
 | Codex | Herramienta MCP para el agente |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | El coste depende del proveedor o la ruta. Las herramientas del registro pueden consumir saldo o cuentas de servicios. El modelo se usa en el cliente MCP; verifica ambos costes por separado. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | La función básica no necesita un modelo. La instalación del plugin no hace gratuitos sus servicios; una ruta anónima gratuita no representa todo el catálogo |
+| Coste | El coste depende del proveedor o la ruta. Las llamadas del catálogo pueden consumir saldo prepago; tus propias claves no se miden por Treg pero el proveedor sí puede cobrar; IA generativa según herramienta |
+| Equipo | Preparación según la ruta elegida. Cliente MCP; cuenta o token para funciones que lo requieran |
 
-Configura este servidor en un cliente MCP compatible, incluido Claude Code o Codex. Sus servicios y permisos se preparan aparte.
+La instalación del plugin no hace gratuitos sus servicios; una ruta anónima gratuita no representa todo el catálogo
 
 ## Qué puedes hacer con él
 
 Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores.
 
+## Por qué destaca
+
+Usos propuestos: Encontrar datos para una investigación comercial; Compartir herramientas de un equipo sin pegar sus claves en el chat.
+
 ## Cómo funciona
 
-Un cliente MCP invoca las herramientas del servidor para trabajar con el programa o servicio conectado.
+La instalación del plugin no hace gratuitos sus servicios; una ruta anónima gratuita no representa todo el catálogo
 
 ## Cómo empezar
 
-Se configura en tu agente. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un cliente MCP compatible y el programa o servicio que va a controlar la herramienta.
+- Cliente MCP
+- cuenta o token para funciones que lo requieran
 
-1. Prepara el servidor y sus dependencias siguiendo la configuración del README.
-2. Añade el comando o la URL en el cliente MCP y configura los permisos y credenciales de los servicios conectados.
-3. Comprueba que aparecen sus herramientas y prueba una consulta pequeña antes de permitir modificaciones.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (consulta la sintaxis original):**
+
+```
+/plugin marketplace add superdesigndev/treg
+/plugin install treg@treg
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/superdesigndev/treg/blob/main/README.md)
 
@@ -51,21 +67,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar treg para mi objetivo y necesito pasos guiados. Lee https://github.com/superdesigndev/treg/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Busca una herramienta del catálogo y consulta precio y esquema antes de ejecutarla.
+
+**Qué comprobar:** Sabes qué parámetros requiere y qué saldo o credencial utilizaría.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores.
+- Encontrar datos para una investigación comercial
+- Compartir herramientas de un equipo sin pegar sus claves en el chat
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Registro y conexión de herramientas para agentes que organiza acceso a servicios, cuentas y credenciales de proveedores. | necesitas un producto autónomo y esta pieza requiere un anfitrión compatible |
+| Tu objetivo encaja con estos ejemplos: Encontrar datos para una investigación comercial; Compartir herramientas de un equipo sin pegar sus claves en el chat | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** La instalación del plugin no hace gratuitos sus servicios; una ruta anónima gratuita no representa todo el catálogo
 
 ## Stack y modelos
 
-- **Stack:** Python, package.json, pyproject.toml
+- **Stack:** Cliente MCP; cuenta o token para funciones que lo requieran
 - **Etiquetas:** `servidores` `mcp` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +101,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/superdesigndev/treg/blob/main/README.md)
 

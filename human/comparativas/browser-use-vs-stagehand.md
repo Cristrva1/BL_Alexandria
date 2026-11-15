@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. | SDK de Browserbase para automatizar el navegador mezclando código con acciones en lenguaje natural. |
 | ⭐ Estrellas | 121k | 26.1k |
-| Elígelo si… | quieres navegación como humano y tolerancia a cambios de UI | quieres automatización web robusta con un toque de IA en TS |
-| Evítalo si… | necesitas scripts deterministas y baratos (playwright) o no quieres depender de un LLM por paso | quieres que un agente navegue solo; mira `browser-use` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Extraer información de una web propia; Probar navegación con un agente | Tu objetivo encaja con estos ejemplos: Prototipar extracción estructurada; Automatizar un formulario de prueba |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🔀 híbrido | 🔀 híbrido |
-| API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
+| API de IA | API de IA opcional | API de IA necesaria |
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
-| Modelos locales | Modelo local no documentado | Modelo local no documentado |
+| Modelos locales | Modelos locales documentados | Modelo local no documentado |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | MIT | MIT |
-| Instalación | `pip install browser-use` | `npx create-browser-app` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **browser-use** si quieres navegación como humano y tolerancia a cambios de UI.
-- Elige **Stagehand** si quieres automatización web robusta con un toque de IA en TS.
+- Elige **browser-use** si Tu objetivo encaja con estos ejemplos: Extraer información de una web propia; Probar navegación con un agente.
+- Elige **Stagehand** si Tu objetivo encaja con estos ejemplos: Prototipar extracción estructurada; Automatizar un formulario de prueba.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

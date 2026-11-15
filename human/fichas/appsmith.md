@@ -16,56 +16,73 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
+| API de IA | API de IA opcional. El autoalojamiento, los planes y las funciones de IA tienen condiciones distintas; consulta la edición que vas a usar |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | El coste depende del proveedor o la ruta. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. La función principal son interfaces internas sobre datos; una API de negocio no equivale a una API de modelo |
+| Coste | El coste depende del proveedor o la ruta. El autoalojamiento, los planes y las funciones de IA tienen condiciones distintas; consulta la edición que vas a usar |
+| Equipo | Preparación según la ruta elegida. Cuenta o instancia de prueba;  una fuente de datos de demostración |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La función principal son interfaces internas sobre datos; una API de negocio no equivale a una API de modelo
 
 ## Qué puedes hacer con él
 
-Arrastra widgets, conéctalos a más de 25 bases de datos o cualquier API y añade lógica en JavaScript. Pensada para equipos que construyen backoffices rápido.
+Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases.
 
 ## Por qué destaca
 
-Proyecto maduro y muy adoptado, con control de versiones en Git y self-host sencillo.
+Usos propuestos: Preparar un panel para que soporte consulte expedientes; Construir un formulario interno que actualiza datos mediante una API.
 
 ## Cómo funciona
 
-Un editor web genera apps cuyos widgets se enlazan a consultas; un backend Java ejecuta las consultas contra tus fuentes.
+La función principal son interfaces internas sobre datos; una API de negocio no equivale a una API de modelo
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/appsmithorg/appsmith/blob/release/README.md)
+- Cuenta o instancia de prueba
+-  una fuente de datos de demostración
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://docs.appsmith.com/getting-started/setup/installation-guides)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Appsmith para mi objetivo y necesito pasos guiados. Lee https://github.com/appsmithorg/appsmith/blob/release/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Appsmith para mi objetivo y necesito pasos guiados. Lee https://docs.appsmith.com/getting-started/setup/installation-guides. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Añade una tabla a una página y asóciala a una consulta de datos ficticios.
+
+**Qué comprobar:** La tabla se actualiza al ejecutar la consulta y muestra los registros esperados.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Panel de soporte sobre tu base
-- Aprobaciones internas
-- Dashboards operativos
+- Preparar un panel para que soporte consulte expedientes
+- Construir un formulario interno que actualiza datos mediante una API
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas herramientas internas con lógica y muchas fuentes de datos | solo quieres hojas colaborativas; mira `nocodb` |
+| Tu objetivo encaja con estos ejemplos: Preparar un panel para que soporte consulte expedientes; Construir un formulario interno que actualiza datos mediante una API | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** La función principal son interfaces internas sobre datos; una API de negocio no equivale a una API de modelo
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, React, Java, MongoDB, Docker
+- **Stack:** Cuenta o instancia de prueba;  una fuente de datos de demostración
 - **Etiquetas:** `ui` `automation` `typescript` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,7 +107,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/appsmithorg/appsmith/blob/release/README.md)
 

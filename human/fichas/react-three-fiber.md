@@ -16,34 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Sin API de IA; modelos, texturas y alojamiento son independientes |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es un renderer React sobre Three.js; hay que alinear la versión de React y Fiber y no es un editor 3D para uso directo |
+| Coste | Sin pago a un modelo en la ruta básica. Sin API de IA; modelos, texturas y alojamiento son independientes |
+| Equipo | Preparación según la ruta elegida. React; Three.js; versiones compatibles; navegador |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es un renderer React sobre Three.js; hay que alinear la versión de React y Fiber y no es un editor 3D para uso directo
 
 ## Qué puedes hacer con él
 
-Lleva la mentalidad componible de React al 3D sin abandonar three.js por debajo.
+Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos.
 
 ## Por qué destaca
 
-Lleva la mentalidad declarativa y componible de React al 3D, integrándose con el resto del ecosistema (estado, hooks, drei). Su ecosistema (`@react-three/drei`, `@react-three/postprocessing`) cubre la mayoría de necesidades comunes.
+Usos propuestos: Crear un configurador 3D; Construir una escena React interactiva.
 
 ## Cómo funciona
 
-Reconciliador custom que traduce el árbol JSX a objetos de three.js y los actualiza con los cambios de estado de React, gestionando el bucle de render automáticamente.
+Es un renderer React sobre Three.js; hay que alinear la versión de React y Fiber y no es un editor 3D para uso directo
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- React
+- Three.js
+- versiones compatibles
+- navegador
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+npm install three @types/three @react-three/fiber
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/pmndrs/react-three-fiber/blob/master/readme.md)
 
@@ -51,21 +67,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar react-three-fiber para mi objetivo y necesito pasos guiados. Lee https://github.com/pmndrs/react-three-fiber/blob/master/readme.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Monta una escena con un cubo y cambia una propiedad mediante estado de React.
+
+**Qué comprobar:** Puedes observar la actualización declarativa del objeto.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Escenas 3D dentro de apps React
-- Integrar 3D con estado y hooks del ecosistema React
-- Visualizaciones reactivas a datos
+- Crear un configurador 3D
+- Construir una escena React interactiva
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| haces 3D en React y quieres reactividad | no usas React o necesitas control a bajo nivel (three.js directo) |
+| Tu objetivo encaja con estos ejemplos: Crear un configurador 3D; Construir una escena React interactiva | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Es un renderer React sobre Three.js; hay que alinear la versión de React y Fiber y no es un editor 3D para uso directo
 
 ## Stack y modelos
 
-- **Stack:** JavaScript/React
+- **Stack:** React; Three.js; versiones compatibles; navegador
 - **Etiquetas:** `ui` `design` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -82,7 +107,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/pmndrs/react-three-fiber/blob/master/readme.md)
 

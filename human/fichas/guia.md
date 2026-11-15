@@ -21,6 +21,7 @@
 | API de IA | API: por confirmar. No se ha verificado si la ruta elegida necesita una API de IA. |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
+| Antigravity | Integración no documentada |
 | Modelos locales | Ejecución con modelos locales por confirmar. Ejecutar el programa en tu equipo no demuestra que el modelo también sea local. |
 | Coste | Coste por confirmar. Código disponible no significa servicios, modelos, infraestructura o licencias sin coste. |
 | Equipo | Requisitos por confirmar. Consultar los requisitos originales de la variante que vayas a usar. |
@@ -65,8 +66,8 @@ No se instala: es parte de este repositorio.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [andrej-karpathy-skills](andrej-karpathy-skills.md) | 233k | Guía de 4 principios inspirada en Andrej Karpathy para que tu agente de código responda útil y sin relleno. |
-| [Agentic Awesome Skills](antigravity-awesome-skills.md) | 49.7k | Biblioteca comunitaria de más de 2.800 skills SKILL.md para Claude Code, Codex, Cursor y Gemini CLI, con instalador npx y MCP local. |
+| [andrej-karpathy-skills](andrej-karpathy-skills.md) | 233k | Instrucciones para declarar supuestos, simplificar cambios y comprobar objetivos al programar, inspiradas en observaciones de Karpathy. |
+| [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) | 49.7k | Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills. |
 | [Awesome Agent Skills](awesome-agent-skills.md) | 37.2k | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. |
 
 ---

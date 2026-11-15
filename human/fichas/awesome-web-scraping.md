@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Leer la lista no cuesta API; servicios enlazados pueden ser comerciales |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. No se instala el directorio entero ni hereda compatibilidad de las herramientas que enumera |
+| Coste | Sin pago a un modelo en la ruta básica. Leer la lista no cuesta API; servicios enlazados pueden ser comerciales |
+| Equipo | Preparación según la ruta elegida. Navegador; lenguaje o formato objetivo |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+No se instala el directorio entero ni hereda compatibilidad de las herramientas que enumera
 
 ## Qué puedes hacer con él
 
-Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos. Organiza opciones por lenguaje y función para investigar alternativas de extracción.
+Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos.
 
 ## Por qué destaca
 
-Quieres comparar librerías de scraping antes de elegir tu stack.
+Usos propuestos: Buscar un parser para Python; Encontrar herramientas de extracción para JavaScript.
 
 ## Cómo funciona
 
-Organiza opciones por lenguaje y función para investigar alternativas de extracción.
+No se instala el directorio entero ni hereda compatibilidad de las herramientas que enumera
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- lenguaje o formato objetivo
+
+1. Elige la lista de tu lenguaje y compara dos bibliotecas por mantenimiento y salida.
+2. Comprueba: Obtienes dos candidatos con sus repositorios originales.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/lorien/awesome-web-scraping/blob/master/README.md)
 
@@ -51,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar awesome-web-scraping para mi objetivo y necesito pasos guiados. Lee https://github.com/lorien/awesome-web-scraping/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Elige la lista de tu lenguaje y compara dos bibliotecas por mantenimiento y salida.
+
+**Qué comprobar:** Obtienes dos candidatos con sus repositorios originales.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres comparar librerías de scraping antes de elegir tu stack
+- Buscar un parser para Python
+- Encontrar herramientas de extracción para JavaScript
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres comparar librerías de scraping antes de elegir tu stack | la fuente ya ofrece una API o un archivo de datos suficiente |
+| Tu objetivo encaja con estos ejemplos: Buscar un parser para Python; Encontrar herramientas de extracción para JavaScript | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Los proyectos enlazados tienen mantenimiento, licencias y requisitos diferentes.
+**Limitaciones:** No se instala el directorio entero ni hereda compatibilidad de las herramientas que enumera
 
 ## Stack y modelos
 
-- **Stack:** JavaScript, Node.js
+- **Stack:** Navegador; lenguaje o formato objetivo
 - **Etiquetas:** `crawlers` `captcha-bypass` `captcha-recaptcha` `crawler` `crawling` `crawling-framework` `crawling-python` `crawling-tool`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +91,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/lorien/awesome-web-scraping/blob/master/README.md)
 

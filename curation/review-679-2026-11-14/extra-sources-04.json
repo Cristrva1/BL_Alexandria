@@ -1,0 +1,7 @@
+{
+ "scrapling": ["https://scrapling.readthedocs.io/en/latest/ai/mcp-server.html", "https://antigravity.google/docs/ide-mcp"],
+ "maxun": ["https://docs.maxun.dev/mcp/setup", "https://antigravity.google/docs/ide-mcp"],
+ "changedetection": ["https://changedetection.io/MCP", "https://antigravity.google/docs/ide-mcp"],
+ "crawl4ai": ["https://antigravity.google/docs/ide-mcp"],
+ "last30days-skill": ["https://github.com/vercel-labs/skills/blob/main/docs/agents.md"]
+}

@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 33.3k | Apache-2.0 | Python | 2026-11-10 |
 
-**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
+**Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,42 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| API de IA | API de IA opcional. GLiNER y embeddings locales cubren la ruta básica; generación, visión, transcripción o Cloud pueden añadir costes |
+| Claude Code | Integración documentada por el proyecto |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. Los plugins de los dos agentes están documentados; MCP usa stdio o HTTP; no asumas que sampling permite usar cualquier plan del cliente |
+| Coste | El coste depende del proveedor o la ruta. GLiNER y embeddings locales cubren la ruta básica; generación, visión, transcripción o Cloud pueden añadir costes |
+| Equipo | Preparación según la ruta elegida. Python 3.10–3.14; modelos locales iniciales; plugins opcionales |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Los plugins de los dos agentes están documentados; MCP usa stdio o HTTP; no asumas que sampling permite usar cualquier plan del cliente
 
 ## Qué puedes hacer con él
 
-Convierte documentos y conversaciones en un grafo de conocimiento consultable para dar memoria de largo plazo a tus agentes.
+Plataforma de memoria para agentes que combina grafos de conocimiento y vectores, usable con modelos pequeños.
 
 ## Por qué destaca
 
-Une búsqueda semántica y relaciones del grafo con pocas líneas de código.
+Usos propuestos: Construir memoria de documentos; Recuperar contexto desde Claude Code o Codex.
 
 ## Cómo funciona
 
-Su pipeline cognify extrae entidades y relaciones con un LLM y las guarda en un grafo y una base vectorial.
+Los plugins de los dos agentes están documentados; MCP usa stdio o HTTP; no asumas que sampling permite usar cualquier plan del cliente
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python 3.10–3.14
+- modelos locales iniciales
+- plugins opcionales
 
-```shell
-pip install cognee
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+uv pip install "cognee[gliner]"
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/topoteretes/cognee/blob/main/README.md)
 
@@ -59,21 +67,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar cognee para mi objetivo y necesito pasos guiados. Lee https://github.com/topoteretes/cognee/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Guarda un hecho ficticio con remember y recupéralo con recall sin configurar una clave LLM.
+
+**Qué comprobar:** Se devuelve el texto de origen y no una respuesta inventada.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Memoria de clientes para un agente
-- Grafo de conocimiento de documentos
-- RAG con relaciones
+- Construir memoria de documentos
+- Recuperar contexto desde Claude Code o Codex
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres memoria basada en grafo con poco esfuerzo | necesitas un grafo temporal en tiempo real; mira `graphiti` |
+| Tu objetivo encaja con estos ejemplos: Construir memoria de documentos; Recuperar contexto desde Claude Code o Codex | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Los plugins de los dos agentes están documentados; MCP usa stdio o HTTP; no asumas que sampling permite usar cualquier plan del cliente
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python 3.10–3.14; modelos locales iniciales; plugins opcionales
 - **Etiquetas:** `memory` `rag` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -82,7 +99,7 @@ Comando presente en el README revisado; no es una prueba de instalación.
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
-| [mcp-neo4j](mcp-neo4j.md) | 989 | Conjunto de servidores MCP oficiales para conectar bases de datos de grafos Neo4j a asistentes de IA, con soporte de despliegue en cloud. |
+| [mcp-neo4j](mcp-neo4j.md) | 989 | Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. |
 
 ## Alternativas (elige una)
 
@@ -100,9 +117,13 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/topoteretes/cognee/blob/main/README.md)
+- [Fuente 2](https://github.com/topoteretes/cognee/blob/main/cognee-mcp/README.md)
+- [Fuente 3](https://antigravity.google/docs/ide-mcp)
 
 ---
 

@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 11.9k | Apache-2.0 | TypeScript | 2026-11-10 |
 
-**Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil
+**Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,34 +16,56 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| API de IA | API de IA opcional. Admite API, Ollama, LM Studio y ruta Codex con OAuth; imágenes y otros servicios pueden tener costes separados |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Integración documentada por el proyecto |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. El servidor ofrece MCP Streamable HTTP autenticado; MCP está desactivado en la app Electron y Codex como proveedor es distinto de Codex como cliente MCP |
+| Coste | El coste depende del proveedor o la ruta. Admite API, Ollama, LM Studio y ruta Codex con OAuth; imágenes y otros servicios pueden tener costes separados |
+| Equipo | Preparación según la ruta elegida. Docker o app compatible; proveedor de texto e imagen; contraseña propia; datos ficticios |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El servidor ofrece MCP Streamable HTTP autenticado; MCP está desactivado en la app Electron y Codex como proveedor es distinto de Codex como cliente MCP
 
 ## Qué puedes hacer con él
 
-Crea presentaciones editables a partir de un prompt o documento, con tus plantillas, y exporta a PPTX o PDF.
+Generador de presentaciones con IA, open source y con API, alternativa a Gamma o Beautiful.ai.
 
 ## Por qué destaca
 
-Auto-hospedable, con API y modelos locales.
+Usos propuestos: Preparar una presentación desde un documento; Comparar una plantilla con generación libre.
 
 ## Cómo funciona
 
-Un LLM genera estructura y contenido, que se aplica sobre plantillas HTML y se exporta.
+El servidor ofrece MCP Streamable HTTP autenticado; MCP está desactivado en la app Electron y Codex como proveedor es distinto de Codex como cliente MCP
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Docker o app compatible
+- proveedor de texto e imagen
+- contraseña propia
+- datos ficticios
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+docker run -it --name presenton \
+  -p 5001:80 \
+  -e AUTH_USERNAME=admin \
+  -e AUTH_PASSWORD=change-this-password \
+  -v "./app_data:/app_data" \
+  ghcr.io/presenton/presenton:latest
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/presenton/presenton/blob/main/README.md)
 
@@ -51,21 +73,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Presenton para mi objetivo y necesito pasos guiados. Lee https://github.com/presenton/presenton/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Genera tres slides y revisa afirmaciones, diseño y exportación antes de compartir.
+
+**Qué comprobar:** Puedes identificar proveedores y editar el contenido generado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Propuestas comerciales rápidas
-- Slides desde un documento
-- Presentaciones por API
+- Preparar una presentación desde un documento
+- Comparar una plantilla con generación libre
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres generar presentaciones de negocio con IA | prefieres control total como código; mira `slidev` |
+| Tu objetivo encaja con estos ejemplos: Preparar una presentación desde un documento; Comparar una plantilla con generación libre | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El servidor ofrece MCP Streamable HTTP autenticado; MCP está desactivado en la app Electron y Codex como proveedor es distinto de Codex como cliente MCP
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Python, Docker
+- **Stack:** Docker o app compatible; proveedor de texto e imagen; contraseña propia; datos ficticios
 - **Etiquetas:** `slides` `agents` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -88,7 +119,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/presenton/presenton/blob/main/README.md)
 

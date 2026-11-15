@@ -4,7 +4,7 @@
 
 Herramientas y skills para escenas, motion graphics y montaje programático. Distingue el renderizado del video de la generación de sus imágenes o voces, que puede necesitar otros proveedores.
 
-19 repos · 3 secciones
+22 repos · 3 secciones
 
 ## Puntos de partida
 
@@ -12,48 +12,52 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 | Repo | Qué hace | Acceso básico |
 |---|---|---|
-| [HyperFrames](../fichas/hyperframes.md) | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | Sin API de IA en la ruta básica |
-| [Remotion Agent Skills](../fichas/skills-remotion.md) | Skills oficiales de Remotion para que tu agente de código cree videos con React. | Sin API de IA en la ruta básica |
+| [HyperFrames](../fichas/hyperframes.md) | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | API de IA opcional |
+| [MoviePy](../fichas/moviepy.md) | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. | Sin clave propia de API de IA en la ruta básica |
+| [Remotion Agent Skills](../fichas/skills-remotion.md) | Skills oficiales de Remotion para que tu agente de código cree videos con React. | API de IA opcional |
 
 ## Secciones
 
-- [Motores de video y escenas por código](#motores-de-video-y-escenas-por-código) — 4 repos
-- [Skills y métodos de producción audiovisual](#skills-y-métodos-de-producción-audiovisual) — 14 repos
+- [Motores de video y escenas por código](#motores-de-video-y-escenas-por-código) — 6 repos
+- [Skills y métodos de producción audiovisual](#skills-y-métodos-de-producción-audiovisual) — 15 repos
 - [Aplicaciones y flujos de producción](#aplicaciones-y-flujos-de-producción) — 1 repos
 
 ## Motores de video y escenas por código
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [HyperFrames](../fichas/hyperframes.md) | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | quieres que un agente de código genere videos con motion graphics a partir de HTML, con licencia permisiva | Sin API de IA en la ruta básica |
-| [Manim (ManimGL)](../fichas/manim.md) | Motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL. | quieres animaciones matemáticas o técnicas precisas definidas en código Python | Sin API de IA en la ruta básica |
-| [remotion](../fichas/remotion.md) | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. | generas video a escala con React y quieres variantes parametrizadas | Sin API de IA en la ruta básica |
-| [manim](../fichas/manim-community.md) | Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. | necesitas animaciones matemáticas precisas y reproducibles | Sin API de IA en la ruta básica |
+| [HyperFrames](../fichas/hyperframes.md) | Framework de HeyGen que convierte HTML, CSS y animaciones en videos MP4 deterministas, pensado para que lo usen agentes. | Tu objetivo encaja con estos ejemplos: Preparar un video explicativo por código; Crear una pieza de presentación con HTML | API de IA opcional |
+| [MoviePy](../fichas/moviepy.md) | Librería Python para editar video por código: cortes, concatenaciones, títulos, composición por capas y efectos. | Tu objetivo encaja con estos ejemplos: Automatizar variantes de un video; Componer clips y rótulos desde Python | Sin clave propia de API de IA en la ruta básica |
+| [Manim (ManimGL)](../fichas/manim.md) | Motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL. | Tu objetivo encaja con estos ejemplos: Explicar una transformación matemática; Preparar una animación geométrica | Sin clave propia de API de IA en la ruta básica |
+| [remotion](../fichas/remotion.md) | Framework de React para crear videos por código y renderizar composiciones con contenido y tiempos definidos. | Tu objetivo encaja con estos ejemplos: Crear una plantilla de video con datos; Preparar títulos animados | API de IA opcional |
+| [manim](../fichas/manim-community.md) | Motor de animación de Python para producir videos explicativos de matemáticas mediante escenas programadas. | Tu objetivo encaja con estos ejemplos: Preparar una explicación matemática; Crear una animación de geometría | Sin clave propia de API de IA en la ruta básica |
+| [mediabunny](../fichas/mediabunny.md) | Biblioteca TypeScript para leer, escribir y convertir archivos de audio y video directamente en aplicaciones web. | Tu objetivo encaja con estos ejemplos: Procesar video dentro de una aplicación web; Construir una herramienta de conversión en navegador | Sin clave propia de API de IA en la ruta básica |
 
 ## Skills y métodos de producción audiovisual
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [Remotion Agent Skills](../fichas/skills-remotion.md) | Skills oficiales de Remotion para que tu agente de código cree videos con React. | haces videos con Remotion y un agente | Sin API de IA en la ruta básica |
-| [OpenMontage](../fichas/openmontage.md) | Convierte tu agente de código en un estudio de producción de video completo. | quieres producir videos completos con un agente | Sin API de IA en la ruta básica |
-| [video-use](../fichas/video-use.md) | Herramienta para editar videos con agentes de código como Claude Code, de los creadores de browser-use. | quieres editar videos pidiéndoselo a tu agente | Sin API de IA en la ruta básica |
-| [brag](../fichas/brag.md) | Skills para que un agente convierta un proyecto o sitio en un video breve de lanzamiento con composición y música. | buscas esta función: Skills para que un agente convierta un proyecto o sitio en un video breve de lanzamiento con composición y música. | Sin API de IA en la ruta básica |
-| [video-shotcraft](../fichas/video-shotcraft.md) | Skill para crear videos de producto editables con Remotion, composición de planos, movimiento y trabajo de sonido. | buscas esta función: Skill para crear videos de producto editables con Remotion, composición de planos, movimiento y trabajo de sonido. | Sin API de IA en la ruta básica |
-| [lemo-opuscar](../fichas/lemo-opuscar.md) | Colección de estilos e instrucciones para crear piezas audiovisuales por código con Claude Code. | buscas esta función: Colección de estilos e instrucciones para crear piezas audiovisuales por código con Claude Code. | Sin API de IA en la ruta básica |
-| [rea-video](../fichas/rea-video.md) | Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md. | quieres estudiar o recrear la estructura de un video de referencia | Sin API de IA en la ruta básica |
-| [openfilm](../fichas/openfilm.md) | Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos. | buscas esta función: Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos. | Sin API de IA en la ruta básica |
-| [srt-whiteboard-animation](../fichas/srt-whiteboard-animation.md) | Skill para crear animaciones de pizarra con trazos y contenido organizados a partir de archivos de subtítulos SRT. | buscas esta función: Skill para crear animaciones de pizarra con trazos y contenido organizados a partir de archivos de subtítulos SRT. | Sin API de IA en la ruta básica |
-| [claude-animated-shorts](../fichas/claude-animated-shorts.md) | Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion. | buscas esta función: Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion. | Sin API de IA en la ruta básica |
-| [huashu-motion](../fichas/huashu-motion.md) | Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión visual. | buscas esta función: Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión visual. | Sin API de IA en la ruta básica |
-| [Papermorph](../fichas/papermorph.md) | Skill que convierte libros en experiencias web animadas y narradas, con distintas rutas de voz y recursos visuales. | buscas esta función: Skill que convierte libros en experiencias web animadas y narradas, con distintas rutas de voz y recursos visuales. | Sin API de IA en la ruta básica |
-| [motionmaxxing](../fichas/motionmaxxing.md) | Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código. | buscas esta función: Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código. | Sin API de IA en la ruta básica |
-| [Remotion Superpowers](../fichas/remotion-superpowers.md) | Plugin que convierte Remotion en un estudio de video para Claude Code, Codex o Gemini CLI. | usas Remotion con un agente y quieres producción completa | Sin API de IA en la ruta básica |
+| [Remotion Agent Skills](../fichas/skills-remotion.md) | Skills oficiales de Remotion para que tu agente de código cree videos con React. | Tu objetivo encaja con estos ejemplos: Aprender Remotion con un agente; Preparar una plantilla de video | API de IA opcional |
+| [OpenMontage](../fichas/openmontage.md) | Pipelines y herramientas para producir video con un agente,recursos propios,modelos locales o servicios opcionales. | Tu objetivo encaja con estos ejemplos: Preparar un video con recursos locales; Comparar un pipeline con servicios opcionales | API de IA opcional |
+| [video-use](../fichas/video-use.md) | Edición con agentes y FFmpeg,con transcripción documentada mediante ElevenLabs Scribe. | Tu objetivo encaja con estos ejemplos: Editar una entrevista propia; Seleccionar tomas de un tutorial | API de IA necesaria |
+| [hypit](../fichas/hypit.md) | Skills para agentes que organizan generación y edición de videos mediante modelos, servicios y recursos configurables. | Tu objetivo encaja con estos ejemplos: Crear versiones de un video propio; Coordinar subtítulos y B-roll de un tutorial | API de IA opcional |
+| [brag](../fichas/brag.md) | Skills para que un agente convierta un proyecto o sitio en un video breve de lanzamiento con composición y música. | Tu objetivo encaja con estos ejemplos: Presentar una demo de producto; Preparar una pieza de lanzamiento | API de IA opcional |
+| [video-shotcraft](../fichas/video-shotcraft.md) | Skill para crear videos de producto editables con Remotion, composición de planos, movimiento y trabajo de sonido. | Tu objetivo encaja con estos ejemplos: Preparar una promo de producto; Organizar planos sincronizados con sonido | API de IA opcional |
+| [lemo-opuscar](../fichas/lemo-opuscar.md) | Biblioteca de estilos para video por código orientada a Claude,con licencias diferentes para código,guías y medios. | Tu objetivo encaja con estos ejemplos: Explorar una dirección visual para un video; Preparar una pieza por código | API de IA opcional |
+| [rea-video](../fichas/rea-video.md) | Herramienta y skills para descomponer un video plano por plano y documentar cómo recrearlo en un archivo VIDEO.md. | Tu objetivo encaja con estos ejemplos: Estudiar ritmo de una pieza; Preparar un plan de recreación con material propio | API de IA opcional |
+| [openfilm](../fichas/openfilm.md) | Herramientas y skill para que un agente cree proyectos de video y permita editar después sus elementos. | Tu objetivo encaja con estos ejemplos: Preparar un video editable; Revisar el resultado de un agente en un editor | API de IA opcional |
+| [srt-whiteboard-animation](../fichas/srt-whiteboard-animation.md) | Skill para crear animaciones de pizarra con trazos y contenido organizados a partir de archivos de subtítulos SRT. | Tu objetivo encaja con estos ejemplos: Crear una explicación de pizarra; Prototipar una secuencia narrada | Sin clave propia de API de IA en la ruta básica |
+| [claude-animated-shorts](../fichas/claude-animated-shorts.md) | Skill de Claude para crear cortos animados por código combinando personajes y escenas con Three.js y Remotion. | Tu objetivo encaja con estos ejemplos: Crear un corto animado de prueba; Estudiar personajes 2D en escena 3D | Sin clave propia de API de IA en la ruta básica |
+| [huashu-motion](../fichas/huashu-motion.md) | Skill para crear videos de presentación de productos con un agente de código, composición, música y revisión visual. | Tu objetivo encaja con estos ejemplos: Prototipar una presentación de producto; Explorar estilos de motion graphics | Sin clave propia de API de IA en la ruta básica |
+| [Papermorph](../fichas/papermorph.md) | Skill que convierte libros en experiencias web animadas y narradas, con distintas rutas de voz y recursos visuales. | Tu objetivo encaja con estos ejemplos: Preparar una lección animada; Explorar una historia interactiva | API de IA opcional |
+| [motionmaxxing](../fichas/motionmaxxing.md) | Skill para mejorar composición, ritmo y movimiento de videos creados con agentes y herramientas de código. | Tu objetivo encaja con estos ejemplos: Mejorar una pieza de lanzamiento; Preparar una animación tipográfica | API de IA opcional |
+| [Remotion Superpowers](../fichas/remotion-superpowers.md) | Orquestación de video con Remotion y servicios audiovisuales externos; requiere claves y revisar costes por etapa. | Tu objetivo encaja con estos ejemplos: Preparar un video narrado; Combinar clips y subtítulos | API de IA necesaria |
 
 ## Aplicaciones y flujos de producción
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [videofy_minimal](../fichas/videofy-minimal.md) | Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión. | quieres reels simples ya, sin montar un pipeline entero | API de IA necesaria |
+| [videofy_minimal](../fichas/videofy-minimal.md) | Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión. | Tu objetivo encaja con estos ejemplos: Preparar una noticia para señalización; Probar una pieza informativa breve | API de IA necesaria |
 
 ## Recetas relacionadas
 

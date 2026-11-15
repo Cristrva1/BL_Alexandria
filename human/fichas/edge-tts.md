@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta documentada usa un servicio en línea mediante sesión o acceso propio; no implica ejecución local del modelo. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Usa el servicio online de Microsoft Edge sin pedir una clave propia en el ejemplo; no se confirma garantía de coste, cuota o SLA |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Usa un servicio de voz de Microsoft en línea. No pide una API key en su uso documentado, pero no funciona sin conexión ni garantiza disponibilidad futura. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No es inferencia local aunque el script se ejecute en tu PC; la biblioteca es independiente y el servicio puede cambiar sus condiciones o interfaz |
+| Coste | Coste por confirmar. Usa el servicio online de Microsoft Edge sin pedir una clave propia en el ejemplo; no se confirma garantía de coste, cuota o SLA |
+| Equipo | Preparación según la ruta elegida. Python y pipx; internet; texto no sensible |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+No es inferencia local aunque el script se ejecute en tu PC; la biblioteca es independiente y el servicio puede cambiar sus condiciones o interfaz
 
 ## Qué puedes hacer con él
 
-Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge. Envía texto al servicio de voz y guarda el audio y los subtítulos desde Python o la terminal.
+Biblioteca y CLI de Python para sintetizar voz con el servicio en línea usado por Microsoft Edge.
 
 ## Por qué destaca
 
-Quieres generar narración sin instalar un modelo de voz local.
+Usos propuestos: Preparar una voz de prueba online; Explorar voces disponibles.
 
 ## Cómo funciona
 
-Envía texto al servicio de voz y guarda el audio y los subtítulos desde Python o la terminal.
+No es inferencia local aunque el script se ejecute en tu PC; la biblioteca es independiente y el servicio puede cambiar sus condiciones o interfaz
 
 ## Cómo empezar
 
@@ -43,19 +44,21 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Python y conexión a internet.
+- Python y pipx
+- internet
+- texto no sensible
 
-1. Instala edge-tts en un entorno Python o mediante la ruta de CLI del README.
-2. Elige una voz disponible en el servicio.
-3. Sintetiza un texto de prueba y guarda el audio; recuerda que esta ruta llama a un servicio en línea.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
 
-**Comando de entrada documentado:**
+**Entrada documentada (shell):**
 
-```shell
-pip install edge-tts
+```
+pipx install edge-tts
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/rany2/edge-tts/blob/master/README.md)
 
@@ -63,21 +66,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar edge-tts para mi objetivo y necesito pasos guiados. Lee https://github.com/rany2/edge-tts/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Genera un audio y subtítulos de una frase y escucha pronunciación y pausas.
+
+**Qué comprobar:** Puedes localizar MP3 y SRT y comprobar su contenido.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres generar narración sin instalar un modelo de voz local
+- Preparar una voz de prueba online
+- Explorar voces disponibles
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres generar narración sin instalar un modelo de voz local | tu flujo audiovisual actual ya cubre esa etapa |
+| Tu objetivo encaja con estos ejemplos: Preparar una voz de prueba online; Explorar voces disponibles | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Depende de un servicio en línea; no proporciona síntesis sin conexión.
+**Limitaciones:** No es inferencia local aunque el script se ejecute en tu PC; la biblioteca es independiente y el servicio puede cambiar sus condiciones o interfaz
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python y pipx; internet; texto no sensible
 - **Etiquetas:** `tts` `speech-synthesis` `text-to-speech` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -100,7 +112,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/rany2/edge-tts/blob/master/README.md)
 

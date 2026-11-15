@@ -16,34 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | API de IA opcional. El crawling básico no necesita LLM; la extracción con Pydantic AI o Stagehand y proveedores externos puede costar |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No atribuyas las necesidades de los módulos de IA a la ruta básica de scraping |
+| Coste | El coste depende del proveedor o la ruta. El crawling básico no necesita LLM; la extracción con Pydantic AI o Stagehand y proveedores externos puede costar |
+| Equipo | Preparación según la ruta elegida. Python; entorno virtual; navegador si eliges Playwright |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+No atribuyas las necesidades de los módulos de IA a la ruta básica de scraping
 
 ## Qué puedes hacer con él
 
-Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python. Acerca las ventajas del Crawlee de Node a quienes ya viven en Python, con respaldo oficial de Apify y adopción en crecimiento.
+Versión Python de Crawlee que lleva el mismo modelo de colas, antibloqueo y crawlers HTTP/navegador al ecosistema de datos de Python.
 
 ## Por qué destaca
 
-Acerca las ventajas del Crawlee de Node a quienes ya viven en Python, con respaldo oficial de Apify y adopción en crecimiento. Encaja naturalmente con pandas, notebooks y pipelines de datos.
+Usos propuestos: Recopilar documentos públicos; Crear un crawler con reintentos y exportación.
 
 ## Cómo funciona
 
-Ofrece crawlers basados en BeautifulSoup/HTTPX o en Playwright, con una cola de requests unificada, autoescalado y gestión de sesiones y proxies.
+No atribuyas las necesidades de los módulos de IA a la ruta básica de scraping
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python
+- entorno virtual
+- navegador si eliges Playwright
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (sh):**
+
+```
+python -m pip install 'crawlee[all]'
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/apify/crawlee-python/blob/master/README.md)
 
@@ -51,21 +67,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar crawlee-python para mi objetivo y necesito pasos guiados. Lee https://github.com/apify/crawlee-python/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Recoge enlaces de tres páginas con una cola acotada y guarda sus títulos.
+
+**Qué comprobar:** Se controlan duplicados y obtienes los tres registros esperados.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Crawling moderno con antibloqueo en Python
-- Integrar con stack de datos Python
-- Alternativa a scrapy con evasión integrada
+- Recopilar documentos públicos
+- Crear un crawler con reintentos y exportación
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres Crawlee en Python con antibloqueo | ya usas scrapy y te basta, o no necesitas evasión |
+| Tu objetivo encaja con estos ejemplos: Recopilar documentos públicos; Crear un crawler con reintentos y exportación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** No atribuyas las necesidades de los módulos de IA a la ruta básica de scraping
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python; entorno virtual; navegador si eliges Playwright
 - **Etiquetas:** `scraping` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,7 +108,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/apify/crawlee-python/blob/master/README.md)
 

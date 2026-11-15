@@ -16,56 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | Depende de la ruta elegida. El modelo y los entornos de ejecución pueden generar cargos; licencia MIT no incluye inferencia |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. El equipo concentra ahora desarrollo en mini-swe-agent; este proyecto sigue siendo material de investigación y no garantiza resolver un issue |
+| Coste | El coste depende del proveedor o la ruta. El modelo y los entornos de ejecución pueden generar cargos; licencia MIT no incluye inferencia |
+| Equipo | Preparación según la ruta elegida. Python; entorno aislado; modelo y repositorio de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El equipo concentra ahora desarrollo en mini-swe-agent; este proyecto sigue siendo material de investigación y no garantiza resolver un issue
 
 ## Qué puedes hacer con él
 
-Resuelve issues reales con el modelo que elijas y sirve como base de investigación en agentes de software. También tiene usos en ciberseguridad y retos de programación.
+Agente de Princeton y Stanford que toma un issue de GitHub e intenta resolverlo solo.
 
 ## Por qué destaca
 
-Referencia académica en SWE-bench, con una interfaz agente-computadora bien estudiada.
+Usos propuestos: Estudiar resolución de issues; Comparar trayectorias de agentes.
 
 ## Cómo funciona
 
-Da al modelo comandos específicos para navegar, editar y probar código dentro de un contenedor Docker.
+El equipo concentra ahora desarrollo en mini-swe-agent; este proyecto sigue siendo material de investigación y no garantiza resolver un issue
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/SWE-agent/SWE-agent/blob/main/README.md)
+- Python
+- entorno aislado
+- modelo y repositorio de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://swe-agent.com/latest/installation/source/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar SWE-agent para mi objetivo y necesito pasos guiados. Lee https://github.com/SWE-agent/SWE-agent/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar SWE-agent para mi objetivo y necesito pasos guiados. Lee https://swe-agent.com/latest/installation/source/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Lee una trayectoria de ejemplo y define un issue pequeño con una prueba de aceptación.
+
+**Qué comprobar:** Puedes separar la propuesta del agente de una corrección validada.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Resolver issues automáticamente
-- Experimentar con agentes de software
-- Evaluar modelos en SWE-bench
+- Estudiar resolución de issues
+- Comparar trayectorias de agentes
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| investigas o automatizas la resolución de issues | quieres un asistente diario en tu terminal; mira `claude-code` |
+| Tu objetivo encaja con estos ejemplos: Estudiar resolución de issues; Comparar trayectorias de agentes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El equipo concentra ahora desarrollo en mini-swe-agent; este proyecto sigue siendo material de investigación y no garantiza resolver un issue
 
 ## Stack y modelos
 
-- **Stack:** Python, Docker
+- **Stack:** Python; entorno aislado; modelo y repositorio de prueba
 - **Etiquetas:** `coding-agent` `evaluation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -80,8 +98,8 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [OpenHands](openhands.md) | 93.5k | Plataforma de agentes que ejecutan acciones reales en entornos de desarrollo (ex-OpenDevin). |
-| [Open SWE](open-swe.md) | 11.2k | Agente de código asíncrono de LangChain para montar tu propio agente interno de ingeniería. |
+| [OpenHands](openhands.md) | 93.5k | Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP. |
+| [Open SWE](open-swe.md) | 11.2k | Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables. |
 
 ## Enlaces
 
@@ -90,7 +108,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/SWE-agent/SWE-agent/blob/main/README.md)
 

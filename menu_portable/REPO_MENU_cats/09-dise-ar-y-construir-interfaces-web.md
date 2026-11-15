@@ -7,170 +7,242 @@
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ia-ui,template,typescript
 
 **Qué es:** Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz.
-**Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+**Stack:** Node; agente con acceso de navegador; web propia o referencia autorizada
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Usa el agente de código y sus límites; publicar, dominios y servicios del proyecto cuestan aparte
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Antigravity: Compatibilidad por confirmar
+- Modelos locales: La función básica no necesita un modelo. La plantilla documenta Claude Code y Codex; la skill portable no prueba por sí sola toda la experiencia en Antigravity
+- Coste: Consumo del agente que ya utilizas. Usa el agente de código y sus límites; publicar, dominios y servicios del proyecto cuestan aparte
+- Equipo: Preparación según la ruta elegida. Node; agente con acceso de navegador; web propia o referencia autorizada
 **Repo:** https://github.com/JCodesMore/ai-website-cloner-template
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/JCodesMore/ai-website-cloner-template/blob/master/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/JCodesMore/ai-website-cloner-template/blob/master/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Plantilla para que un agente de código estudie una web de referencia y prepare una implementación de su interfaz.
-**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar cómo traducir un diseño a componentes; Prototipar una variante de una página propia
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Usa una página de referencia propia y pide recrear una única sección en el proyecto de prueba
+**Qué comprobar:** Puedes comparar referencia y resultado a la misma anchura y revisar el código
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `ant-design`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,react,typescript
 
-**Qué es:** Componentes muy completos para apps de negocio: tablas, formularios, fechas y layouts de backoffice.
-**Stack:** TypeScript, React
+**Qué es:** Lenguaje de diseño empresarial y librería de componentes React de Ant Group.
+**Stack:** React; Node; gestor de paquetes
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La biblioteca no necesita modelo; alojamiento y servicios del producto se pagan aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Es una biblioteca React con su sistema visual; no se instala como una app final ni como agente de IA
+- Coste: Sin pago a un modelo en la ruta básica. La biblioteca no necesita modelo; alojamiento y servicios del producto se pagan aparte
+- Equipo: Preparación según la ruta elegida. React; Node; gestor de paquetes
 **Repo:** https://github.com/ant-design/ant-design
 
-**Instalación** [+]: `npm install antd`
+**Instalación** [+]:
+
+```
+npm install antd
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** construyes apps empresariales con muchos datos
-**Evita si:** quieres un estilo más personalizado; mira `ui`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear un panel administrativo; Montar formularios de gestión
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Muestra una tabla con tres filas ficticias y añade un filtro
+**Qué comprobar:** El filtro cambia las filas y puedes revisar el estado seleccionado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `echarts`
 **Alternativas (elige una):** `mui`, `ui`
 
 ## `assistant-ui`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,chatbot,react,typescript
 
-**Qué es:** Componentes componibles de chat con streaming, adjuntos, markdown y herramientas, compatibles con AI SDK y LangGraph.
-**Stack:** TypeScript, React
+**Qué es:** Librería React y TypeScript para interfaces de chat con IA de calidad producción.
+**Stack:** React y TypeScript; Node; runtime y proveedor
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. Los componentes no incluyen modelo; admite proveedores como Ollama además de APIs y servicios de pago
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Es la interfaz del chat; necesitas configurar el backend y no basta con instalar el paquete React
+- Coste: El coste depende del proveedor o la ruta. Los componentes no incluyen modelo; admite proveedores como Ollama además de APIs y servicios de pago
+- Equipo: Preparación según la ruta elegida. React y TypeScript; Node; runtime y proveedor
 **Repo:** https://github.com/assistant-ui/assistant-ui
 
-**Instalación** [+]: `npx assistant-ui@latest init`
+**Instalación** [+]:
+
+```
+npx assistant-ui@latest create   # new project
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** necesitas una UI de chat pulida en React
-**Evita si:** quieres agentes que manipulen tu app; mira `copilotkit`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Construir un chat para una app; Añadir herramientas y adjuntos a una conversación
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Arranca un chat mínimo y prueba estados de envío, streaming y error con un backend de prueba
+**Qué comprobar:** Los mensajes y estados de la interfaz corresponden a la respuesta del backend
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `vercel-ai`, `ui`
 **Alternativas (elige una):** `copilotkit`
 
 ## `copilotkit`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic · tags=ui,agents,react,typescript
 
-**Qué es:** Añade copilotos, chat y agentes que actúan sobre tu app, con estado compartido entre agente y UI. Se integra con LangGraph, Mastra y más.
-**Stack:** TypeScript, React
+**Qué es:** Stack frontend para agentes y UI generativa en React, creadores del protocolo AG-UI.
+**Stack:** Node; framework compatible; backend de agente; proveedor del modelo
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. La interfaz y el protocolo no incluyen inferencia; backend, modelos y servicios gestionados se presupuestan aparte
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. El prompt de onboarding ayuda a un agente a instalar; no demuestra que el plan de Claude Code o Codex ejecute el backend del producto
+- Coste: El coste depende del proveedor o la ruta. La interfaz y el protocolo no incluyen inferencia; backend, modelos y servicios gestionados se presupuestan aparte
+- Equipo: Preparación según la ruta elegida. Node; framework compatible; backend de agente; proveedor del modelo
 **Repo:** https://github.com/CopilotKit/CopilotKit
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/CopilotKit/CopilotKit/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres agentes que interactúen con la UI de tu app
-**Evita si:** solo necesitas una ventana de chat; mira `assistant-ui`
+```
+npx copilotkit@latest create
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Añadir asistencia contextual a una app; Mostrar componentes generados a partir de respuestas
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea una app de ejemplo y una acción que lea un dato ficticio de la interfaz
+**Qué comprobar:** El agente recibe el contexto y devuelve una acción que puedes revisar
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langgraph`, `mastra`
 **Alternativas (elige una):** `assistant-ui`
 
 ## `daisyui`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,javascript
 
-**Qué es:** Añade clases como `btn` o `card` sobre Tailwind para escribir menos HTML, sin JavaScript.
-**Stack:** JavaScript, CSS, Tailwind
+**Qué es:** La librería de componentes más popular para Tailwind CSS, con clases semánticas y temas.
+**Stack:** Proyecto con Tailwind compatible; Node y gestor de paquetes
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La biblioteca no requiere IA; plantillas o servicios comerciales relacionados son opcionales
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Es un plugin de estilos y clases de Tailwind; sigue la guía de la versión instalada para configurar el CSS
+- Coste: Sin pago a un modelo en la ruta básica. La biblioteca no requiere IA; plantillas o servicios comerciales relacionados son opcionales
+- Equipo: Preparación según la ruta elegida. Proyecto con Tailwind compatible; Node y gestor de paquetes
 **Repo:** https://github.com/saadeghi/daisyui
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/saadeghi/daisyui/blob/master/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://daisyui.com/docs/install/
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** usas Tailwind y quieres componentes sin JavaScript
-**Evita si:** usas React y quieres control total; mira `ui`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una web con clases semánticas; Añadir temas a un panel sencillo
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Añade un botón y una tarjeta con un tema y cambia al segundo tema
+**Qué comprobar:** Se actualizan colores sin reescribir cada componente
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `tailwindcss`
 **Alternativas (elige una):** `ui`
 
 ## `excalidraw`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=design,docs,typescript
 
-**Qué es:** Dibuja diagramas rápidos que parecen bocetos, colabora en tiempo real y embébela en tus apps como componente React.
-**Stack:** TypeScript, React, Canvas
+**Qué es:** Pizarra virtual open source para diagramas con estilo dibujado a mano, colaborativa.
+**Stack:** Navegador para la app; React solo si integras el componente
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La pizarra básica no requiere IA; productos alojados adicionales pueden tener planes
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Para dibujar puedes usar la app web; npm instala el componente para integrarlo en otra aplicación
+- Coste: Sin pago a un modelo en la ruta básica. La pizarra básica no requiere IA; productos alojados adicionales pueden tener planes
+- Equipo: Preparación según la ruta elegida. Navegador para la app; React solo si integras el componente
 **Repo:** https://github.com/excalidraw/excalidraw
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/excalidraw/excalidraw/blob/master/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/excalidraw/excalidraw/blob/master/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres diagramas rápidos con estilo boceto
-**Evita si:** prefieres diagramas como texto; mira `mermaid`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explicar un flujo a un equipo; Bocetar una interfaz antes de construirla
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Dibuja tres pasos de un proceso y exporta el diagrama como imagen
+**Qué comprobar:** Puedes abrir la imagen y conservar el archivo editable
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Alternativas (elige una):** `tldraw`, `mermaid`
 
 ## `flexoki`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=estilos,reference,css
 
 **Qué es:** Paleta de color para texto, código e interfaces que puede servir de referencia al definir un sistema visual.
-**Stack:** CSS
+**Stack:** Navegador o editor con un tema compatible
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita modelo ni API; el proyecto pide atribución al portar la paleta
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Es una referencia de color y sus ports; no instala una aplicación ni garantiza contraste en cualquier combinación
+- Coste: Sin pago a un modelo en la ruta básica. No necesita modelo ni API; el proyecto pide atribución al portar la paleta
+- Equipo: Preparación según la ruta elegida. Navegador o editor con un tema compatible
 **Repo:** https://github.com/kepano/flexoki
 
-**Instalación** [?]: `Consultar el material original; elegir un ejemplo antes de instalar.`
+**Instalación** [?]:
+
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
 _Una referencia no se instala como un servicio único._
 
-**Elige si:** buscas esta función: Paleta de color para texto, código e interfaces que puede servir de referencia al definir un sistema visual.
-**Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
+**Elige si:** Tu objetivo encaja con estos ejemplos: Definir una paleta para una app de notas; Crear un tema de editor
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Aplica la paleta a una página de prueba y comprueba contraste de texto y controles
+**Qué comprobar:** Puedes identificar colores semánticos legibles en claro y oscuro
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `heroui`
 role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,typescript
 
-**Qué es:** Resuelve la accesibilidad seria sin renunciar a un estilado moderno.
-**Stack:** Node.js, React, Tailwind
+**Qué es:** Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes.
+**Stack:** React; Tailwind CSS v4 y configuración según guía; Node
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La biblioteca no exige modelo; servicios y contenidos comerciales relacionados tienen condiciones aparte
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. Antes NextUI; el README actual usa paquetes styles y react; MCP y llms.txt son rutas auxiliares para agentes
+- Coste: Sin pago a un modelo en la ruta básica. La biblioteca no exige modelo; servicios y contenidos comerciales relacionados tienen condiciones aparte
+- Equipo: Preparación según la ruta elegida. React; Tailwind CSS v4 y configuración según guía; Node
 **Repo:** https://github.com/heroui-inc/heroui
 
-**Instalación** [+]: `npm install @heroui/styles @heroui/react`
+**Instalación** [+]:
+
+```
+npm install @heroui/styles @heroui/react
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres calidad + accesibilidad listas
-**Evita si:** quieres control copy-paste del código (ui)
+**Elige si:** Tu objetivo encaja con estos ejemplos: Construir formularios accesibles; Crear una interfaz con temas compartidos
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Añade un botón y un campo con un tema sencillo y prueba el foco por teclado
+**Qué comprobar:** Los componentes muestran el tema y estados interactivos
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `tailwindcss`, `swr`
 **Alternativas (elige una):** `mui`
 
@@ -178,405 +250,581 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 role=library · exec=hybrid · setup=medium · mcp=False · prov=— · tags=ia-ui,library,typescript
 
 **Qué es:** Framework para generar interfaces desde una representación JSON y un catálogo de componentes definido por el desarrollador.
-**Stack:** TypeScript, package.json
+**Stack:** Node; renderer del framework; catálogo y esquema; modelo solo para generación
 **Acceso y costes:**
-- API de IA: API de IA opcional. La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.
+- API de IA: API de IA opcional. Renderizar JSON no exige modelo; generar el JSON con IA sí usa el proveedor elegido; otros renderers añaden dependencias
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: El coste depende del proveedor o la ruta. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. La integración MCP Apps necesita soporte de UI en el cliente; no equivale a soporte universal de todos los agentes MCP
+- Coste: El coste depende del proveedor o la ruta. Renderizar JSON no exige modelo; generar el JSON con IA sí usa el proveedor elegido; otros renderers añaden dependencias
+- Equipo: Preparación según la ruta elegida. Node; renderer del framework; catálogo y esquema; modelo solo para generación
 **Repo:** https://github.com/vercel-labs/json-render
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/vercel-labs/json-render/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** buscas esta función: Framework para generar interfaces desde una representación JSON y un catálogo de componentes definido por el desarrollador.
-**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+```
+# for React
+npm install @json-render/core @json-render/react
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear interfaces dinámicas desde datos; Acotar la UI que puede proponer un modelo
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Renderiza primero un JSON escrito a mano con una tarjeta y un botón permitido
+**Qué comprobar:** La interfaz refleja el JSON y rechaza componentes fuera de catálogo
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `konva`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=componentes,library,typescript
 
 **Qué es:** Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivos.
-**Stack:** TypeScript, package.json
+**Stack:** Node; proyecto web; wrapper si usas React u otro framework
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La biblioteca MIT no exige licencia de pago ni modelo; backend y assets son independientes
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. El renderizado de servidor necesita un backend canvas adicional; no instales esas dependencias si solo lo usas en el navegador
+- Coste: Sin pago a un modelo en la ruta básica. La biblioteca MIT no exige licencia de pago ni modelo; backend y assets son independientes
+- Equipo: Preparación según la ruta elegida. Node; proyecto web; wrapper si usas React u otro framework
 **Repo:** https://github.com/konvajs/konva
 
-**Instalación** [+]: `npm install konva`
+**Instalación** [+]:
+
+```
+npm install konva
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** buscas esta función: Biblioteca de canvas para construir editores gráficos, diagramas e interfaces con formas y objetos interactivos.
-**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Elige si:** Tu objetivo encaja con estos ejemplos: Construir un editor de anotaciones; Crear un pequeño diagrama interactivo
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Dibuja un rectángulo arrastrable y exporta el canvas a imagen
+**Qué comprobar:** Puedes mover la forma y abrir la exportación
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `lucide`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,typescript
 
-**Qué es:** Iconos limpios y uniformes, usados por shadcn/ui y muchas apps.
-**Stack:** TypeScript, SVG
+**Qué es:** Librería de más de 1500 iconos SVG consistentes, con paquetes para React, Vue y más.
+**Stack:** Paquete para tu framework o archivos SVG; proyecto web
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No necesita modelo ni API; licencia ISC del proyecto para usos personales y comerciales
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Elige el paquete del framework y no dependas de un número fijo de iconos que cambia con las versiones
+- Coste: Sin pago a un modelo en la ruta básica. No necesita modelo ni API; licencia ISC del proyecto para usos personales y comerciales
+- Equipo: Preparación según la ruta elegida. Paquete para tu framework o archivos SVG; proyecto web
 **Repo:** https://github.com/lucide-icons/lucide
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/lucide-icons/lucide/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://lucide.dev/guide/
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** necesitas iconos consistentes
-**Evita si:** buscas ilustraciones, no iconos
+**Elige si:** Tu objetivo encaja con estos ejemplos: Unificar iconos de navegación; Ilustrar acciones en una interfaz
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Añade un icono de búsqueda junto a una etiqueta y cambia tamaño y grosor
+**Qué comprobar:** El icono se ve consistente y el control conserva nombre accesible
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ui`
 
 ## `magicui`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui
 
-**Qué es:** Apunta al impacto visual más que a la accesibilidad estricta.
-**Stack:** Node.js, React/Next.js
+**Qué es:** Librería de componentes UI visualmente atractivos (animaciones, efectos, secciones) para montar interfaces modernas con buen acabado desde el inicio.
+**Stack:** React; dependencias del componente elegido; proyecto de prueba
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Los componentes del repositorio son MIT; productos o plantillas comerciales asociados tienen términos propios
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Copiar un componente puede añadir dependencias; verifica qué se incorpora antes de instalar varios efectos
+- Coste: Sin pago a un modelo en la ruta básica. Los componentes del repositorio son MIT; productos o plantillas comerciales asociados tienen términos propios
+- Equipo: Preparación según la ruta elegida. React; dependencias del componente elegido; proyecto de prueba
 **Repo:** https://github.com/magicuidesign/magicui
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/magicuidesign/magicui/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://magicui.design/docs
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** priorizas estética y velocidad
-**Evita si:** necesitas accesibilidad estricta (heroui)
+**Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar una sección de landing; Añadir una interacción de presentación
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Añade un componente visual pequeño y comprueba el diseño en móvil y con movimiento reducido
+**Qué comprobar:** El contenido sigue siendo legible y el componente no desborda
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `tailwindcss`, `motion`
 **Alternativas (elige una):** `react-bits`
 
 ## `mui`
-role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,react,javascript
+role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,react,javascript
 
-**Qué es:** Cientos de componentes accesibles y personalizables para apps React, con temas y sistema de estilos propio.
-**Stack:** JavaScript, TypeScript, React
+**Qué es:** Librería de componentes React completa que implementa Material Design de Google.
+**Stack:** React y React DOM compatibles; Node; Emotion en ruta por defecto
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Material UI base es MIT; algunos productos MUI X, plantillas y soporte tienen condiciones comerciales
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. El MCP de documentación es un paquete separado stdio; no convierte las funciones de pago en gratuitas
+- Coste: El coste depende del proveedor o la ruta. Material UI base es MIT; algunos productos MUI X, plantillas y soporte tienen condiciones comerciales
+- Equipo: Preparación según la ruta elegida. React y React DOM compatibles; Node; Emotion en ruta por defecto
 **Repo:** https://github.com/mui/material-ui
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/mui/material-ui/blob/master/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://mui.com/material-ui/getting-started/installation/
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres una librería React completa y probada
-**Evita si:** prefieres copiar componentes y estilarlos con Tailwind; mira `ui`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear un dashboard Material Design; Construir una pantalla de ajustes
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Construye un formulario pequeño y verifica estados de error y foco
+**Qué comprobar:** Los campos muestran validación y se recorren con teclado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `recharts`
 **Alternativas (elige una):** `ant-design`, `ui`, `heroui`
 
 ## `normalize.css`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design
 
-**Qué es:** Resuelve las inconsistencias de margen, tipografía y formularios entre Chrome, Firefox y Safari.
-**Stack:** CSS
+**Qué es:** Hoja de estilos que normaliza los defaults entre navegadores para partir de una base de rendering uniforme.
+**Stack:** Proyecto HTML/CSS; gestor npm o archivo de estilos
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No usa modelo ni API; es una hoja de estilos
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Normalizar no hace idéntico todo el diseño ni sustituye probar la página en sus navegadores objetivo
+- Coste: Sin pago a un modelo en la ruta básica. No usa modelo ni API; es una hoja de estilos
+- Equipo: Preparación según la ruta elegida. Proyecto HTML/CSS; gestor npm o archivo de estilos
 **Repo:** https://github.com/necolas/normalize.css
 
-**Instalación** [+]: `npm install --save normalize.css`
+**Instalación** [+]:
+
+```
+npm install --save normalize.css
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres base CSS uniforme y ligera
-**Evita si:** ya usas el preflight de Tailwind, que cubre lo mismo
+**Elige si:** Tu objetivo encaja con estos ejemplos: Unificar una base de estilos; Reducir diferencias iniciales de formularios
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Incluye la hoja en una página con formulario y compara dos navegadores
+**Qué comprobar:** Puedes observar qué estilos base se normalizan y cuáles siguen siendo tuyos
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `tailwindcss`
 
 ## `onlook`
 role=app · exec=local · setup=easy · mcp=False · prov=anthropic · tags=design,ui,coding-agent,typescript
 
-**Qué es:** Edita tu app en un lienzo visual o pide cambios a la IA, y Onlook escribe el código en tu proyecto.
-**Stack:** TypeScript, Next.js, Tailwind
+**Qué es:** Editor visual con IA para construir, estilar y editar apps React y Tailwind como en Figma.
+**Stack:** Proyecto React/Tailwind compatible; dependencias de desarrollo; modelo para AI
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. El editor y las funciones AI tienen requisitos distintos; los proveedores y servicios alojados pueden cobrar
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Un elemento pendiente de MCP en la hoja de ruta no acredita soporte ya implementado
+- Coste: El coste depende del proveedor o la ruta. El editor y las funciones AI tienen requisitos distintos; los proveedores y servicios alojados pueden cobrar
+- Equipo: Preparación según la ruta elegida. Proyecto React/Tailwind compatible; dependencias de desarrollo; modelo para AI
 **Repo:** https://github.com/onlook-dev/onlook
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/onlook-dev/onlook/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://docs.onlook.com/developers/running-locally
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres editar tu app React visualmente con ayuda de IA
-**Evita si:** necesitas diseño desde cero en vectores; mira `penpot`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Ajustar una interfaz React de forma visual; Prototipar un rediseño sobre código
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Abre una app de prueba, cambia un espaciado visualmente y revisa el diff de código
+**Qué comprobar:** El cambio visible corresponde a un cambio identificable en los archivos
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `tailwindcss`, `ui`
 **Alternativas (elige una):** `open-design`
 
 ## `open-design`
-role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,design,typescript
+role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=agents,design,typescript
 
-**Qué es:** Resuelve el ir y venir entre prompt, preview y código exportable.
-**Stack:** TypeScript/React, Tauri (Rust)
+**Qué es:** Espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces desde lenguaje natural.
+**Stack:** Docker o distribución elegida; agente o proveedor; WSL2 según ruta Windows
 **Acceso y costes:**
-- API de IA: API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
-- Otras rutas: El servicio ofrece sus propios planes y rutas de API. Consultar las condiciones de OpenDesign por separado del plan del agente que lo conecte.
+- API de IA: API de IA opcional. Admite agentes, BYOK y modelos locales; planes Go, proveedores y generación de medios tienen límites y gastos propios
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: Modelos locales documentados. Las conexiones MCP de los tres clientes están documentadas; los endpoints internos de modelos requieren configuración explícita por su protección SSRF
+- Coste: El coste depende del proveedor o la ruta. Admite agentes, BYOK y modelos locales; planes Go, proveedores y generación de medios tienen límites y gastos propios
+- Equipo: Preparación según la ruta elegida. Docker o distribución elegida; agente o proveedor; WSL2 según ruta Windows
 **Repo:** https://github.com/nexu-io/open-design
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/nexu-io/open-design/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** generas UI desde texto y quieres edición visual
-**Evita si:** prefieres editar visualmente sobre tu código existente (plasmic)
+```
+git clone https://github.com/nexu-io/open-design.git
+cd open-design/deploy
+cp .env.example .env
+echo "OD_API_TOKEN=$(openssl rand -hex 32)" >> .env
+docker compose up -d
+# open http://127.0.0.1:7456
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Prototipar un dashboard; Iterar una interfaz con feedback de equipo
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Abre un proyecto de prueba y pide una pantalla pequeña antes de activar generación de medios
+**Qué comprobar:** Puedes revisar el artefacto y el agente o proveedor que lo generó
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `tailwindcss`, `heroui`
 **Alternativas (elige una):** `onlook`
 
 ## `openui`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=ui,agents,typescript
 
-**Qué es:** Permite que el modelo devuelva componentes interactivos (tablas, formularios, gráficos) que tu app renderiza.
-**Stack:** TypeScript, React
+**Qué es:** Estándar abierto de Thesys para UI generativa: el LLM responde con interfaces, no solo texto.
+**Stack:** Node; framework elegido; backend y modelo; catálogo de componentes
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- API de IA: Depende de la ruta elegida. El framework y la skill no incluyen llamadas de modelo; proveedor y backend tienen costes separados
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Antigravity: Dentro del agente: skills o instrucciones
+- Modelos locales: Modelo local no documentado. La skill sirve para construir y depurar; su portabilidad no implica que la app use la suscripción del agente para inferencia
+- Coste: El coste depende del proveedor o la ruta. El framework y la skill no incluyen llamadas de modelo; proveedor y backend tienen costes separados
+- Equipo: Preparación según la ruta elegida. Node; framework elegido; backend y modelo; catálogo de componentes
 **Repo:** https://github.com/thesysdev/openui
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/thesysdev/openui/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres que tu agente responda con interfaces
-**Evita si:** solo necesitas chat de texto; mira `assistant-ui`
+```
+npx @openuidev/cli@latest create --name genui-chat-app
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear respuestas de chat con interfaz; Construir formularios generados y acotados
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Define una tarjeta permitida y pide al modelo una respuesta que la utilice
+**Qué comprobar:** El renderer muestra solo componentes del catálogo esperado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `copilotkit`
 
 ## `penpot`
-role=app · exec=local · setup=heavy · mcp=False · prov=— · tags=design,docker
+role=app · exec=local · setup=heavy · mcp=True · prov=— · tags=design,docker
 
-**Qué es:** Es la alternativa abierta a Figma más conocida.
-**Stack:** stack web self-host, Docker (Clojure/ClojureScript)
+**Qué es:** Plataforma open-source de diseño y prototipado colaborativo, pensada para equipos de producto y diseño que quieren soberanía sobre sus archivos.
+**Stack:** Navegador y cuenta o despliegue propio; MCP y plugin solo para agentes
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El diseño básico no necesita modelo; hosting, planes y el agente MCP mantienen costes separados
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. MCP puede leer y modificar el workspace mediante su plugin; es opcional para diseñar manualmente
+- Coste: El coste depende del proveedor o la ruta. El diseño básico no necesita modelo; hosting, planes y el agente MCP mantienen costes separados
+- Equipo: Preparación según la ruta elegida. Navegador y cuenta o despliegue propio; MCP y plugin solo para agentes
 **Repo:** https://github.com/penpot/penpot
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/penpot/penpot/blob/develop/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://help.penpot.app/technical-guide/getting-started/
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres diseño abierto y soberano, self-host
-**Evita si:** necesitas generación por IA (open-design) o no quieres operar Docker
+**Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una interfaz antes de programarla; Colaborar en un sistema de diseño
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Dibuja una tarjeta con texto y botón y comparte un prototipo de prueba
+**Qué comprobar:** Se pueden inspeccionar componentes y recorrer la interacción
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `plasmic`
 
 ## `plasmic`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=design,typescript
 
-**Qué es:** Cubre el hueco entre no-code y desarrollo a medida.
-**Stack:** Node.js, React/Next.js
+**Qué es:** Builder visual para apps y sitios conectado a tu propia base de código, que permite diseñar y publicar sin perder el control del código real.
+**Stack:** Cuenta o despliegue Studio; proyecto Next.js para este loader; Node
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El editor básico no exige LLM; plataforma alojada y planes tienen costes; loader y plataforma tienen licencias diferentes
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. El loader-nextjs no instala todo Studio; el código fuera de platform es MIT y platform usa AGPL
+- Coste: El coste depende del proveedor o la ruta. El editor básico no exige LLM; plataforma alojada y planes tienen costes; loader y plataforma tienen licencias diferentes
+- Equipo: Preparación según la ruta elegida. Cuenta o despliegue Studio; proyecto Next.js para este loader; Node
 **Repo:** https://github.com/plasmicapp/plasmic
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/plasmicapp/plasmic/blob/master/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres editar visual sobre tu código React
-**Evita si:** generas desde texto sin codebase previo (open-design)
+```
+npm install @plasmicapp/loader-nextjs
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Permitir editar contenido visual de una web; Prototipar una página conectada a React
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Diseña una sección de prueba y cárgala desde la aplicación conectada
+**Qué comprobar:** Ves el contenido visual y puedes inspeccionar la integración en el código
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `tailwindcss`
 
 ## `radix-primitives`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,react,typescript
 
-**Qué es:** Resuelven accesibilidad, foco y teclado en diálogos, menús o tooltips, dejándote el estilo. Son la base de shadcn/ui.
-**Stack:** TypeScript, React
+**Qué es:** Componentes React sin estilos y accesibles para construir sistemas de diseño propios.
+**Stack:** React; Node; estilos propios
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No usa modelos ni API; alojamiento es independiente
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Los comandos pnpm del README preparan el repositorio de contribución; para usarlo sigue la instalación de la primitiva en la guía
+- Coste: Sin pago a un modelo en la ruta básica. No usa modelos ni API; alojamiento es independiente
+- Equipo: Preparación según la ruta elegida. React; Node; estilos propios
 **Repo:** https://github.com/radix-ui/primitives
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/radix-ui/primitives/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://www.radix-ui.com/primitives/docs/overview/getting-started
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** construyes tu propio sistema de diseño
-**Evita si:** quieres componentes ya estilados; mira `ui`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Construir un menú accesible; Crear un sistema de diseño sin estilos impuestos
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Construye el popover de inicio y prueba abrir, cerrar y devolver foco con teclado
+**Qué comprobar:** El foco y el estado del popover se comportan como esperas
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ui`, `tailwindcss`
 
 ## `react-bits`
-role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,react,javascript
+role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,react,javascript
 
-**Qué es:** Fondos, textos animados y efectos listos para copiar en proyectos React y Next.js.
-**Stack:** JavaScript, React
+**Qué es:** La mayor colección open source de componentes React animados e interactivos para webs llamativas.
+**Stack:** React o Next.js; Node; dependencias de la variante del componente
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El repositorio usa MIT más Commons Clause; Pro y productos externos se revisan por separado; no requiere modelo
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. MCP funciona mediante el registro shadcn; no todas las variantes JS, TS, CSS y Tailwind tienen las mismas dependencias
+- Coste: El coste depende del proveedor o la ruta. El repositorio usa MIT más Commons Clause; Pro y productos externos se revisan por separado; no requiere modelo
+- Equipo: Preparación según la ruta elegida. React o Next.js; Node; dependencias de la variante del componente
 **Repo:** https://github.com/DavidHDev/react-bits
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/DavidHDev/react-bits/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres efectos visuales llamativos en React
-**Evita si:** necesitas componentes de formulario y datos; mira `ui`
+```
+npx shadcn@latest add @react-bits/SplitText-TS-TW
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear un encabezado animado; Prototipar una interacción visual
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Instala un único componente SplitText en una página de prueba y comprueba su lectura sin animación
+**Qué comprobar:** El texto sigue siendo legible y puedes ajustar duración y estilos
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ui`, `motion`
 **Alternativas (elige una):** `magicui`
 
 ## `screenshot-to-code`
 role=app · exec=cloud · setup=easy · mcp=False · prov=openai,anthropic,google · tags=ui,vision,code,python
 
-**Qué es:** Sube una imagen o graba un video de una web y obtén código funcional que puedes iterar.
-**Stack:** Python, TypeScript, React
+**Qué es:** Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue.
+**Stack:** Python y Poetry; Node y pnpm; clave de proveedor en ruta principal; Chromium para preview
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. La ruta principal pide al menos una clave; extracción y edición de imágenes pueden usar servicios adicionales; Ollama se remite a una adaptación que no se verifica aquí
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Separa backend y frontend; la mención Claude code-gen significa modelo de generación y no Claude Code como agente anfitrión
+- Coste: El coste depende del proveedor o la ruta. La ruta principal pide al menos una clave; extracción y edición de imágenes pueden usar servicios adicionales; Ollama se remite a una adaptación que no se verifica aquí
+- Equipo: Preparación según la ruta elegida. Python y Poetry; Node y pnpm; clave de proveedor en ruta principal; Chromium para preview
 **Repo:** https://github.com/abi/screenshot-to-code
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/abi/screenshot-to-code/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/abi/screenshot-to-code/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres pasar imágenes de diseño a código
-**Evita si:** trabajas desde Figma; mira `figma-context-mcp`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Convertir un mockup propio en prototipo; Explorar una estructura HTML a partir de una captura
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Carga una captura de una interfaz propia mínima y compara el HTML generado con ella
+**Qué comprobar:** Puedes revisar código y vista previa y señalar diferencias
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `tailwindcss`
 **Alternativas (elige una):** `stitch-sdk`
 
 ## `stitch-sdk`
-role=library · exec=cloud · setup=easy · mcp=False · prov=google · tags=ui,design,typescript
+role=library · exec=cloud · setup=easy · mcp=True · prov=google · tags=ui,design,typescript
 
-**Qué es:** Automatiza Stitch, el generador de interfaces de Google, para integrarlo en tus flujos y agentes.
-**Stack:** TypeScript
+**Qué es:** SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código.
+**Stack:** Node.js; clave Stitch u OAuth con proyecto; servicio Stitch
 **Acceso y costes:**
-- API de IA: API de IA necesaria. La ruta documentada necesita credenciales de un proveedor de IA o servicio externo.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: Consumo de APIs o servicios. La ruta documentada necesita STITCH_API_KEY del servicio de Google. Verificar sus cuotas y condiciones; la sesión de Claude Code o Codex no sustituye esa credencial.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: API de IA necesaria. Requiere autenticación del servicio; el README no confirma aquí su tarifa o cupo, por lo que no se promete ni gratuidad ni cobro por llamada
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: Modelo local no documentado. El proxy stdio permite exponer herramientas a clientes MCP; su acceso no acredita que el plan de Antigravity pague las llamadas
+- Coste: Coste por confirmar. Requiere autenticación del servicio; el README no confirma aquí su tarifa o cupo, por lo que no se promete ni gratuidad ni cobro por llamada
+- Equipo: Preparación según la ruta elegida. Node.js; clave Stitch u OAuth con proyecto; servicio Stitch
 **Repo:** https://github.com/google-labs-code/stitch-sdk
 
-**Instalación** [+]: `npm install @google/stitch-sdk`
+**Instalación** [+]:
+
+```
+npm install @google/stitch-sdk
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres automatizar Stitch
-**Evita si:** prefieres herramientas locales; mira `screenshot-to-code`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Automatizar borradores de UI; Conectar herramientas Stitch a un agente mediante proxy MCP
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Genera una pantalla sencilla con texto ficticio y guarda HTML y captura
+**Qué comprobar:** Puedes abrir ambos archivos y revisar el resultado generado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `stitch-skills`
 **Alternativas (elige una):** `screenshot-to-code`
 
 ## `swr`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typescript
 
-**Qué es:** Cubre el caso de consumir APIs en frontend sin manejar caché a mano.
-**Stack:** JavaScript/React
+**Qué es:** Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano.
+**Stack:** React; endpoint de datos de prueba; función fetcher
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. No requiere IA; el endpoint consultado y su alojamiento pueden cobrar por uso
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Es una herramienta de obtención y caché de datos, no una librería de botones ni un backend
+- Coste: Sin pago a un modelo en la ruta básica. No requiere IA; el endpoint consultado y su alojamiento pueden cobrar por uso
+- Equipo: Preparación según la ruta elegida. React; endpoint de datos de prueba; función fetcher
 **Repo:** https://github.com/vercel/swr
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/vercel/swr/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://swr.vercel.app/docs/getting-started
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** manejas datos remotos en React y quieres caché simple
-**Evita si:** prefieres React Query con su modelo de caché global más rico
+**Elige si:** Tu objetivo encaja con estos ejemplos: Actualizar un panel sin recargar; Revalidar datos al volver a una pestaña
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Muestra un perfil ficticio y cambia el dato del servidor para observar la revalidación
+**Qué comprobar:** Se distinguen carga, error, datos cacheados y datos nuevos
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `heroui`
 
 ## `tailwindcss`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,design,typescript
 
-**Qué es:** Elimina el contexto de estilos disperso entre hojas y componentes.
-**Stack:** Node.js, CSS
+**Qué es:** Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado.
+**Stack:** Proyecto Vite u otra integración elegida; Node
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El framework no usa modelos ni API; productos de pago del ecosistema tienen condiciones propias
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Elige la integración de tu framework; la configuración actual no debe copiarse sin más de tutoriales de Tailwind v3
+- Coste: Sin pago a un modelo en la ruta básica. El framework no usa modelos ni API; productos de pago del ecosistema tienen condiciones propias
+- Equipo: Preparación según la ruta elegida. Proyecto Vite u otra integración elegida; Node
 **Repo:** https://github.com/tailwindlabs/tailwindcss
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/tailwindlabs/tailwindcss/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://tailwindcss.com/docs/installation/using-vite
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres estilar rápido y consistente
-**Evita si:** prefieres CSS-in-JS o estilos scoped por componente
+**Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar un formulario responsive; Definir colores y espaciado consistentes
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea una tarjeta adaptable y cambia el espaciado con utilidades
+**Qué comprobar:** Puedes comprobar diferencias entre móvil y escritorio
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `heroui`, `magicui`
 
 ## `tldraw`
 role=library · exec=local · setup=easy · mcp=False · prov=— · tags=design,ui,react,typescript
 
-**Qué es:** Base de muchas herramientas de pizarra y de UI generativa con IA. Ofrece colaboración y personalización completa.
-**Stack:** TypeScript, React
+**Qué es:** SDK para construir apps de lienzo infinito en React, como pizarras y herramientas de diagramas.
+**Stack:** React; Node; estilos del SDK; licencia para producción según condiciones
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El SDK permite desarrollo gratuito y exige clave de licencia para producción; starter kits MIT no cambian la licencia del SDK
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. No requiere modelo; no confundas el ejemplo de pizarra con una aplicación terminada con permisos y persistencia
+- Coste: El coste depende del proveedor o la ruta. El SDK permite desarrollo gratuito y exige clave de licencia para producción; starter kits MIT no cambian la licencia del SDK
+- Equipo: Preparación según la ruta elegida. React; Node; estilos del SDK; licencia para producción según condiciones
 **Repo:** https://github.com/tldraw/tldraw
 
-**Instalación** [+]: `npm i tldraw`
+**Instalación** [+]:
+
+```
+npm i tldraw
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** construyes una app con lienzo infinito
-**Evita si:** solo necesitas una pizarra lista; usa `excalidraw`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Construir una pizarra de colaboración; Crear un editor de diagramas propio
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Muestra un lienzo y añade una forma personalizada en un proyecto de prueba
+**Qué comprobar:** Puedes mover, editar y guardar el estado de la forma
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Alternativas (elige una):** `excalidraw`
 
 ## `ui`
-role=library · exec=local · setup=easy · mcp=False · prov=— · tags=ui,typescript
+role=library · exec=local · setup=easy · mcp=True · prov=— · tags=ui,typescript
 
-**Qué es:** El código fuente pasa a ser tuyo y lo editas a voluntad.
-**Stack:** Node.js, React, Tailwind, Radix UI
+**Qué es:** Colección de componentes copy-paste para React/Tailwind (shadcn/ui) que vives dentro de tu repo en lugar de instalar como dependencia cerrada.
+**Stack:** Proyecto React compatible; Node; gestor de paquetes; configuración del framework
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica.
-- Coste: Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- API de IA: Sin clave propia de API de IA en la ruta básica. Los componentes abiertos no necesitan IA; registros privados, servicios y el agente pueden tener costes
+- Claude Code: Herramienta MCP para el agente
+- Codex: Herramienta MCP para el agente
+- Antigravity: Herramienta MCP para el agente
+- Modelos locales: La función básica no necesita un modelo. El MCP oficial permite consultar e instalar componentes desde los clientes; el componente sigue siendo código de tu aplicación
+- Coste: Sin pago a un modelo en la ruta básica. Los componentes abiertos no necesitan IA; registros privados, servicios y el agente pueden tener costes
+- Equipo: Preparación según la ruta elegida. Proyecto React compatible; Node; gestor de paquetes; configuración del framework
 **Repo:** https://github.com/shadcn-ui/ui
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/shadcn-ui/ui/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://ui.shadcn.com/docs/installation
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres ser dueño del código de UI
-**Evita si:** prefieres una lib "llave en mano" con updates automáticos (heroui)
+**Elige si:** Tu objetivo encaja con estos ejemplos: Construir un formulario con componentes propios; Crear un sistema de interfaz con código modificable
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Añade una tarjeta con botón y modifica sus estilos desde el código copiado al proyecto
+**Qué comprobar:** Ves el componente y puedes localizar su archivo editable
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `tailwindcss`, `plasmic`
 **Alternativas (elige una):** `mui`, `ant-design`, `daisyui`
 
@@ -584,18 +832,27 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=ia-ui,library,typescript
 
 **Qué es:** Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos.
-**Stack:** TypeScript, package.json
+**Stack:** Framework compatible; Node; skill opcional para el agente
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- API de IA: Sin clave propia de API de IA en la ruta básica. La biblioteca no necesita modelo en ejecución; el agente que utilice su skill mantiene sus costes
+- Claude Code: Dentro del agente: skills o instrucciones
+- Codex: Dentro del agente: skills o instrucciones
+- Antigravity: Dentro del agente: skills o instrucciones
+- Modelos locales: La función básica no necesita un modelo. Está en beta; instala el adaptador correcto para React, Vue, Svelte, Solid o web y revisa cambios de API
+- Coste: Sin pago a un modelo en la ruta básica. La biblioteca no necesita modelo en ejecución; el agente que utilice su skill mantiene sus costes
+- Equipo: Preparación según la ruta elegida. Framework compatible; Node; skill opcional para el agente
 **Repo:** https://github.com/vercel-labs/ui
 
-**Instalación** [+]: `npm install @ui-sdk/react @ui-sdk/core`
+**Instalación** [+]:
+
+```
+npm install @ui-sdk/react @ui-sdk/core
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** buscas esta función: Colección de comportamientos y recursos para que agentes construyan interfaces con patrones de interacción definidos.
-**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear componentes con comportamientos reutilizables; Guiar a un agente con patrones de interfaz
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Construye una primitiva con comportamiento de foco y prueba abrir y cerrar su contenido
+**Qué comprobar:** Puedes verificar recuperación de foco y estados interactivos
+Revisión documental individual; instalación no ejecutada por Alexandría.

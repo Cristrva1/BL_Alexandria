@@ -16,34 +16,54 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA necesaria. La ruta documentada necesita credenciales de un proveedor de IA o servicio externo. |
+| API de IA | API de IA necesaria. Cada pregunta puede producir varias llamadas mediante OpenRouter; el coste crece con los miembros y sus revisiones |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | Consumo de APIs o servicios. Revisar el plan, créditos, cuotas y facturación del proveedor antes de ejecutar. |
-| Equipo | Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Una mayoría de modelos puede compartir el mismo error; comprueba las afirmaciones con fuentes |
+| Coste | Consumo de APIs o servicios. Cada pregunta puede producir varias llamadas mediante OpenRouter; el coste crece con los miembros y sus revisiones |
+| Equipo | Preparación según la ruta elegida. Python y uv; Node.js; clave OpenRouter |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Una mayoría de modelos puede compartir el mismo error; comprueba las afirmaciones con fuentes
 
 ## Qué puedes hacer con él
 
-Cada modelo aporta una respuesta y luego se contrastan para llegar a un consenso.
+"consejo" donde varios LLMs deliberan y se evalúan entre sí para responder.
 
 ## Por qué destaca
 
-Combina perspectivas de varios modelos para reducir el sesgo de uno solo; propuesta sencilla y didáctica popularizada por Karpathy. Sirve tanto para obtener mejores respuestas como para comparar modelos.
+Usos propuestos: Comparar explicaciones de un concepto; Revisar opciones para una decisión técnica.
 
 ## Cómo funciona
 
-Envía la consulta a varios LLMs, los hace revisar las respuestas de los demás y agrega un resultado de consenso; app ligera en Python/web con backend FastAPI.
+Una mayoría de modelos puede compartir el mismo error; comprueba las afirmaciones con fuentes
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python y uv
+- Node.js
+- clave OpenRouter
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+uv sync
+
+cd frontend
+npm install
+cd ..
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/karpathy/llm-council/blob/master/README.md)
 
@@ -51,23 +71,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar llm-council para mi objetivo y necesito pasos guiados. Lee https://github.com/karpathy/llm-council/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Envía una pregunta acotada y compara las respuestas y las revisiones entre modelos.
+
+**Qué comprobar:** Se distinguen propuestas iniciales, evaluaciones y síntesis final.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Respuestas por consenso multi-modelo
-- Reducir sesgo de un solo modelo
-- Comparar modelos en preguntas reales
+- Comparar explicaciones de un concepto
+- Revisar opciones para una decisión técnica
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres consenso entre modelos o comparar proveedores | te basta un único LLM o el coste multi-modelo no es asumible |
+| Tu objetivo encaja con estos ejemplos: Comparar explicaciones de un concepto; Revisar opciones para una decisión técnica | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Cada consulta se multiplica por el nº de modelos del consejo, elevando coste y latencia.
+**Limitaciones:** Una mayoría de modelos puede compartir el mismo error; comprueba las afirmaciones con fuentes
 
 ## Stack y modelos
 
-- **Stack:** Python, React, FastAPI, PostgreSQL
+- **Stack:** Python y uv; Node.js; clave OpenRouter
 - **Etiquetas:** `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,7 +110,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/karpathy/llm-council/blob/master/README.md)
 

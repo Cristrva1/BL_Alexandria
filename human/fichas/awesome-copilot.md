@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Las personalizaciones se usan con el acceso de Copilot; no acreditan consumo incluido en Claude Code o Codex |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El destino principal es GitHub Copilot; el comando contiene un marcador que debes sustituir, no ejecutar literalmente |
+| Coste | Consumo del agente que ya utilizas. Las personalizaciones se usan con el acceso de Copilot; no acreditan consumo incluido en Claude Code o Codex |
+| Equipo | Preparación según la ruta elegida. GitHub Copilot y un plugin elegido del catálogo |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+El destino principal es GitHub Copilot; el comando contiene un marcador que debes sustituir, no ejecutar literalmente
 
 ## Qué puedes hacer con él
 
-Repositorio de la organización GitHub que reúne personalizaciones de Copilot aportadas por la comunidad: agentes especializados (algunos conectados a servidores MCP), instrucciones que se aplican por tipo de archivo, skills, plugins y un cookbook de recetas para las APIs de Copilot. Tiene web con búsqueda, un Learning Hub y un llms.txt para agentes.
+Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y plugins para personalizar GitHub Copilot.
 
 ## Por qué destaca
 
-Es el marketplace que Copilot CLI y VS Code traen registrado por defecto, así que instalar un plugin es un solo comando. También sirve de referencia para escribir instrucciones y agentes de Copilot.
+Usos propuestos: Añadir instrucciones de equipo al asistente de programación; Estudiar un agente especializado antes de adaptarlo a un proyecto.
 
 ## Cómo funciona
 
-Cada recurso es un archivo Markdown con frontmatter (agentes, instrucciones con patrones de archivo, skills con sus assets) y los plugins agrupan varios para un flujo. Copilot los carga desde el marketplace `awesome-copilot` o copiándolos a tu repo.
+El destino principal es GitHub Copilot; el comando contiene un marcador que debes sustituir, no ejecutar literalmente
 
 ## Cómo empezar
 
@@ -43,11 +44,20 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- GitHub Copilot y un plugin elegido del catálogo
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+copilot plugin install <plugin-name>@awesome-copilot
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/github/awesome-copilot/blob/main/README.md)
 
@@ -55,23 +65,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Awesome GitHub Copilot para mi objetivo y necesito pasos guiados. Lee https://github.com/github/awesome-copilot/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Sustituye el marcador plugin-name por un plugin listado y consulta sus instrucciones.
+
+**Qué comprobar:** Copilot reconoce la personalización seleccionada y puedes ver sus capacidades.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Aplicar estándares de código por tipo de archivo en Copilot
-- Instalar un plugin de agentes para un flujo de trabajo concreto
-- Pasar a un agente el índice llms.txt de recursos de Copilot
+- Añadir instrucciones de equipo al asistente de programación
+- Estudiar un agente especializado antes de adaptarlo a un proyecto
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tu equipo trabaja con GitHub Copilot en VS Code o Copilot CLI y quiere personalizarlo | usas Claude Code u otro agente; mira `claude-plugins-official` o `antigravity-awesome-skills` |
+| Tu objetivo encaja con estos ejemplos: Añadir instrucciones de equipo al asistente de programación; Estudiar un agente especializado antes de adaptarlo a un proyecto | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Los recursos son de terceros: revisa cada agente o plugin antes de instalarlo, como advierte el propio repo.
+**Limitaciones:** El destino principal es GitHub Copilot; el comando contiene un marcador que debes sustituir, no ejecutar literalmente
 
 ## Stack y modelos
 
-- **Stack:** Markdown, YAML, JavaScript (web del catálogo)
+- **Stack:** GitHub Copilot y un plugin elegido del catálogo
 - **Etiquetas:** `skills` `coding-agent` `prompts` `mcp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,7 +107,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/github/awesome-copilot/blob/main/README.md)
 

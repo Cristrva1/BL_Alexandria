@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Librería para conversar con tus datos (SQL, CSV, Parquet) usando LLM. | BI generativo: convierte preguntas en SQL fiable a través de una capa semántica gobernada. |
 | ⭐ Estrellas | 23.9k | 18.2k |
-| Elígelo si… | quieres preguntar a tus tablas en lenguaje natural | quieres text-to-SQL confiable para el negocio |
-| Evítalo si… | necesitas text-to-SQL gobernado para la empresa; mira `wrenai` | solo analizas un CSV; mira `pandas-ai` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Explorar una tabla con lenguaje natural; Generar un gráfico desde una pregunta | Tu objetivo encaja con estos ejemplos: Definir ingresos de forma consistente; Crear dashboards desde preguntas de negocio |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🔀 híbrido | 🔀 híbrido |
 | API de IA | Depende de la ruta elegida | Depende de la ruta elegida |
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
 | Modelos locales | Modelo local no documentado | Modelo local no documentado |
 | Setup | 🟢 fácil | 🟡 medio |
 | Licencia | NOASSERTION | NOASSERTION |
-| Instalación | `pip install pandasai` | Descarga el lanzador de releases o usa Docker Compose del repo. |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **PandasAI** si quieres preguntar a tus tablas en lenguaje natural.
-- Elige **WrenAI** si quieres text-to-SQL confiable para el negocio.
+- Elige **PandasAI** si Tu objetivo encaja con estos ejemplos: Explorar una tabla con lenguaje natural; Generar un gráfico desde una pregunta.
+- Elige **WrenAI** si Tu objetivo encaja con estos ejemplos: Definir ingresos de forma consistente; Crear dashboards desde preguntas de negocio.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

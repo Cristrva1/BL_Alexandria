@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 38.2k | MIT | Python | 2026-11-14 |
 
-**Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
+**Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
 ## Acceso, coste y equipo
 
@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos. |
-| Coste | El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan. Datos de mercado, brokers y exchanges pueden exigir cuentas, cuotas, comisiones o fondos. Una simulación o backtest no acredita rentabilidad ni una conexión real lista. |
-| Equipo | Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| API de IA | Depende de la ruta elegida. Modelos, fuentes y herramientas tienen costes por ruta; el paquete incluye MCP stdio; una ruta local requiere configuración adicional |
+| Claude Code | Herramienta MCP para el agente |
+| Codex | Herramienta MCP para el agente |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. Las referencias Codex OAuth no garantizan todas las funciones de cada cuenta; usa la guía de proveedores y límites de la versión |
+| Coste | El coste depende del proveedor o la ruta. Modelos, fuentes y herramientas tienen costes por ruta; el paquete incluye MCP stdio; una ruta local requiere configuración adicional |
+| Equipo | Preparación según la ruta elegida. Python; proveedor o modelo local; fuente de datos; entorno de investigación |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Las referencias Codex OAuth no garantizan todas las funciones de cada cuenta; usa la guía de proveedores y límites de la versión
 
 ## Qué puedes hacer con él
 
 Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables.
 
+## Por qué destaca
+
+Usos propuestos: Probar sensibilidad de una estrategia; Organizar artefactos de investigación reproducibles.
+
 ## Cómo funciona
 
-La aplicación coordina modelos y herramientas; el acceso de cada componente se configura antes de ejecutar sus tareas.
+Las referencias Codex OAuth no garantizan todas las funciones de cada cuenta; usa la guía de proveedores y límites de la versión
 
 ## Cómo empezar
 
@@ -39,11 +44,25 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de instalación o servidor y las dependencias indicadas por el README.
+- Python
+- proveedor o modelo local
+- fuente de datos
+- entorno de investigación
 
-1. Elige un ejemplo de consulta de datos, backtesting o simulación que no envíe órdenes reales.
-2. Prepara datos de prueba y, si el proveedor lo requiere, una cuenta y credenciales de solo lectura; revisa sus cuotas por separado.
-3. Comprueba los resultados y el coste observado. La ejecución con fondos es otra configuración y no se activa como parte de esta primera prueba.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+pip install vibe-trading-ai
+vibe-trading init
+vibe-trading
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/HKUDS/Vibe-Trading/blob/main/README.md)
 
@@ -51,21 +70,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Vibe-Trading para mi objetivo y necesito pasos guiados. Lee https://github.com/HKUDS/Vibe-Trading/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Guarda una investigación histórica y repítela variando solo comisiones y deslizamiento.
+
+**Qué comprobar:** Puedes comparar supuestos y resultados sin cambiar los datos de entrada.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables.
+- Probar sensibilidad de una estrategia
+- Organizar artefactos de investigación reproducibles
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Agente de investigación y trabajo con estrategias de trading que utiliza modelos y componentes configurables. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Probar sensibilidad de una estrategia; Organizar artefactos de investigación reproducibles | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. No se verificó rentabilidad ni operación con fondos. Distingue demostración, backtesting, simulación y conexión real.
+**Limitaciones:** Las referencias Codex OAuth no garantizan todas las funciones de cada cuenta; usa la guía de proveedores y límites de la versión
 
 ## Stack y modelos
 
-- **Stack:** Python, Dockerfile, docker-compose.yml, pyproject.toml
+- **Stack:** Python; proveedor o modelo local; fuente de datos; entorno de investigación
 - **Etiquetas:** `agentes` `agent` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +104,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/HKUDS/Vibe-Trading/blob/main/README.md)
 

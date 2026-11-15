@@ -16,34 +16,54 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | API de IA necesaria. La ruta documentada usa API compatible OpenAI y Zep; muchas rondas multiplican consumo; los cupos gratuitos pueden cambiar |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Son simulaciones generadas, no predicciones validadas del mercado ni evidencia de cómo actuarán personas reales |
+| Coste | Consumo de APIs o servicios. La ruta documentada usa API compatible OpenAI y Zep; muchas rondas multiplican consumo; los cupos gratuitos pueden cambiar |
+| Equipo | Preparación según la ruta elegida. Docker o Node 18+ y Python 3.11–3.12; clave LLM; Zep Cloud |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Son simulaciones generadas, no predicciones validadas del mercado ni evidencia de cómo actuarán personas reales
 
 ## Qué puedes hacer con él
 
-Permite simular dinámicas sociales en un "sandbox". Proyecto de nicho.
+Motor de inteligencia colectiva/predicción que construye mundos digitales con miles de agentes para anticipar escenarios.
 
 ## Por qué destaca
 
-Simula futuros con agentes que tienen personalidad, memoria y lógica que evolucionan, ofreciendo una "vista de dios" del escenario. El enfoque de simulación multiagente lo distingue de los frameworks orientados a tareas.
+Usos propuestos: Explorar reacciones hipotéticas a un anuncio; Comparar escenarios narrativos antes de investigar datos reales.
 
 ## Cómo funciona
 
-Según lo descrito, instancia muchos agentes con perfiles y memoria que interactúan en un mundo simulado para estimar resultados; pila Python/web con persistencia.
+Son simulaciones generadas, no predicciones validadas del mercado ni evidencia de cómo actuarán personas reales
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Docker o Node 18+ y Python 3.11–3.12
+- clave LLM
+- Zep Cloud
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+# 1. Configure environment variables (same as source deployment)
+cp .env.example .env
+
+# 2. Pull image and start
+docker compose up -d
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/666ghj/MiroFish/blob/main/README.md)
 
@@ -51,23 +71,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar MiroFish para mi objetivo y necesito pasos guiados. Lee https://github.com/666ghj/MiroFish/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Carga un escenario ficticio y realiza una simulación corta con menos de 40 rondas.
+
+**Qué comprobar:** Puedes inspeccionar los agentes simulados y el informe del escenario.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Simular impacto de una noticia/política
-- Predecir tendencias en un "sandbox" social
-- What-if sobre escenarios con muchos actores
+- Explorar reacciones hipotéticas a un anuncio
+- Comparar escenarios narrativos antes de investigar datos reales
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| simulas futuros/escenarios con muchos actores | necesitas tareas deterministas o resultados reproducibles |
+| Tu objetivo encaja con estos ejemplos: Explorar reacciones hipotéticas a un anuncio; Comparar escenarios narrativos antes de investigar datos reales | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Proyecto de nicho, coste de LLM alto por la cantidad de agentes y resultados no deterministas.
+**Limitaciones:** Son simulaciones generadas, no predicciones validadas del mercado ni evidencia de cómo actuarán personas reales
 
 ## Stack y modelos
 
-- **Stack:** Python/web, Docker, PostgreSQL
+- **Stack:** Docker o Node 18+ y Python 3.11–3.12; clave LLM; Zep Cloud
 - **Etiquetas:** `agents` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -84,7 +111,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/666ghj/MiroFish/blob/main/README.md)
 

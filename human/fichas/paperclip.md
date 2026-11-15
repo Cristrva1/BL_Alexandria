@@ -16,56 +16,75 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | API de IA opcional. Usa modelos y agentes propios; servidor, proveedores y servicios conectados tienen costes independientes |
 | Claude Code | Integración documentada por el proyecto |
 | Codex | Integración documentada por el proyecto |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. El panel organiza trabajo y no constituye por sí solo una empresa autónoma; las integraciones Claude y Codex dependen de sus adaptadores y cuentas |
+| Coste | El coste depende del proveedor o la ruta. Usa modelos y agentes propios; servidor, proveedores y servicios conectados tienen costes independientes |
+| Equipo | Preparación según la ruta elegida. Node 24.11+; pnpm 9.15+ para desarrollo; agentes configurados; proyecto de prueba |
 
-El README documenta una integración con las sesiones de los agentes indicados. Configurar esa ruta y comprobar sus límites; otras rutas pueden facturar por API.
+El panel organiza trabajo y no constituye por sí solo una empresa autónoma; las integraciones Claude y Codex dependen de sus adaptadores y cuentas
 
 ## Qué puedes hacer con él
 
-Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. Conecta distintos runtimes y coordina sus encargos y costes desde una aplicación central.
+Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo.
 
 ## Por qué destaca
 
-Necesitas coordinar varios agentes y seguir su trabajo en un panel.
+Usos propuestos: Organizar tareas de varios agentes; Auditar una propuesta antes de aprobarla.
 
 ## Cómo funciona
 
-Conecta distintos runtimes y coordina sus encargos y costes desde una aplicación central.
+El panel organiza trabajo y no constituye por sí solo una empresa autónoma; las integraciones Claude y Codex dependen de sus adaptadores y cuentas
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/paperclipai/paperclip/blob/master/README.md)
+- Node 24.11+
+- pnpm 9.15+ para desarrollo
+- agentes configurados
+- proyecto de prueba
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://docs.paperclip.ing/reference/cli/installation/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar paperclip para mi objetivo y necesito pasos guiados. Lee https://github.com/paperclipai/paperclip/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar paperclip para mi objetivo y necesito pasos guiados. Lee https://docs.paperclip.ing/reference/cli/installation/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Crea una tarea de explicación para un agente y revisa historial y presupuesto antes de activar heartbeats.
+
+**Qué comprobar:** Puedes atribuir una ejecución a su tarea, agente y coste registrado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Necesitas coordinar varios agentes y seguir su trabajo en un panel
+- Organizar tareas de varios agentes
+- Auditar una propuesta antes de aprobarla
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas coordinar varios agentes y seguir su trabajo en un panel | un flujo determinista resuelve el problema sin un agente |
+| Tu objetivo encaja con estos ejemplos: Organizar tareas de varios agentes; Auditar una propuesta antes de aprobarla | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Exige operar un servidor y configurar los agentes y sus proveedores.
+**Limitaciones:** El panel organiza trabajo y no constituye por sí solo una empresa autónoma; las integraciones Claude y Codex dependen de sus adaptadores y cuentas
 
 ## Stack y modelos
 
-- **Stack:** TypeScript, Docker, Node.js
+- **Stack:** Node 24.11+; pnpm 9.15+ para desarrollo; agentes configurados; proyecto de prueba
 - **Etiquetas:** `asistentes` `acpx` `agent-orchestration` `agent-skills` `agentic-ai` `ai-agents` `ai-engineering` `ai-governance`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -76,7 +95,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/paperclipai/paperclip/blob/master/README.md)
 

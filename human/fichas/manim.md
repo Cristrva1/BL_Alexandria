@@ -16,42 +16,55 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Código MIT sin API de IA; cómputo y recursos externos aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Este es ManimGL de 3Blue1Brown y usa manimgl; no mezcles sus imports o comandos con Manim Community |
+| Coste | Sin pago a un modelo en la ruta básica. Código MIT sin API de IA; cómputo y recursos externos aparte |
+| Equipo | Preparación según la ruta elegida. Python; FFmpeg; OpenGL; LaTeX si escribes fórmulas; escena pequeña |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Este es ManimGL de 3Blue1Brown y usa manimgl; no mezcles sus imports o comandos con Manim Community
 
 ## Qué puedes hacer con él
 
-Manim permite describir en código Python escenas con fórmulas LaTeX, gráficas, geometría y transformaciones animadas, y exportarlas a video. Este repo es ManimGL, la versión original que Grant Sanderson usa en 3Blue1Brown; la edición comunitaria (ManimCommunity/manim) es un fork más estable y mejor documentado.
+Motor de animación en Python para videos matemáticos explicativos, creado por 3Blue1Brown, con render en OpenGL.
 
 ## Por qué destaca
 
-Da una precisión difícil de lograr con un editor: cada objeto y transición se define por código y se puede versionar. Es la herramienta detrás de los videos de 3Blue1Brown y de muchos canales educativos.
+Usos propuestos: Explicar una transformación matemática; Preparar una animación geométrica.
 
 ## Cómo funciona
 
-Cada escena es una clase Python con objetos matemáticos (Mobjects) y animaciones encadenadas; ManimGL las dibuja con OpenGL en una ventana interactiva y escribe el video con FFmpeg.
+Este es ManimGL de 3Blue1Brown y usa manimgl; no mezcles sus imports o comandos con Manim Community
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python
+- FFmpeg
+- OpenGL
+- LaTeX si escribes fórmulas
+- escena pequeña
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (sh):**
+
+```
+# Install manimgl
 pip install manimgl
+
+# Try it out
+manimgl
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/3b1b/manim/blob/master/README.md)
 
@@ -59,23 +72,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar Manim (ManimGL) para mi objetivo y necesito pasos guiados. Lee https://github.com/3b1b/manim/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Ejecuta una escena de ejemplo y cambia una forma o texto.
+
+**Qué comprobar:** Puedes abrir la animación y localizar su código.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Animar demostraciones y fórmulas para clases o YouTube
-- Visualizar algoritmos o conceptos de machine learning
-- Generar videos explicativos a partir de código escrito por un LLM
+- Explicar una transformación matemática
+- Preparar una animación geométrica
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres animaciones matemáticas o técnicas precisas definidas en código Python | buscas estabilidad y documentación para empezar (usa la edición comunitaria ManimCommunity/manim) o motion graphics de marketing; mira `remotion` o `hyperframes` |
+| Tu objetivo encaja con estos ejemplos: Explicar una transformación matemática; Preparar una animación geométrica | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La API cambia entre versiones y no es compatible con la edición comunitaria, así que el código y los tutoriales de una no sirven para la otra.
+**Limitaciones:** Este es ManimGL de 3Blue1Brown y usa manimgl; no mezcles sus imports o comandos con Manim Community
 
 ## Stack y modelos
 
-- **Stack:** Python, OpenGL, FFmpeg, LaTeX
+- **Stack:** Python; FFmpeg; OpenGL; LaTeX si escribes fórmulas; escena pequeña
 - **Etiquetas:** `video` `dataviz` `learning` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -99,7 +119,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/3b1b/manim/blob/master/README.md)
 

@@ -16,34 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. La ruta básica no exige un LLM. Exchanges, brokers, datos de mercado y ejecución real pueden requerir cuentas, tarifas o fondos; los ejemplos no acreditan rentabilidad. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | API de IA opcional. Material abierto no significa libro, datasets, cómputo o proveedores gratis; comienza con conjuntos gratuitos |
+| Claude Code | Depende del recurso o la configuración |
+| Codex | Depende del recurso o la configuración |
+| Antigravity | Depende del recurso o la configuración |
+| Modelos locales | Modelos locales documentados. Es material de aprendizaje con ejemplos y skills; cada capítulo o recurso define su entorno y cliente compatible |
+| Coste | El coste depende del proveedor o la ruta. Material abierto no significa libro, datasets, cómputo o proveedores gratis; comienza con conjuntos gratuitos |
+| Equipo | Preparación según la ruta elegida. Docker o entorno del capítulo; datasets; cuaderno elegido |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es material de aprendizaje con ejemplos y skills; cada capítulo o recurso define su entorno y cliente compatible
 
 ## Qué puedes hacer con él
 
-Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias. Recorre un flujo de investigación desde la obtención de datos hasta pruebas y despliegue de modelos.
+Material y código de Machine Learning for Trading para estudiar datos, modelos y evaluación de estrategias.
 
 ## Por qué destaca
 
-Quieres aprender un proceso de investigación de trading basado en datos.
+Usos propuestos: Aprender investigación cuantitativa; Estudiar costes y sesgos de un backtest.
 
 ## Cómo funciona
 
-Recorre un flujo de investigación desde la obtención de datos hasta pruebas y despliegue de modelos.
+Es material de aprendizaje con ejemplos y skills; cada capítulo o recurso define su entorno y cliente compatible
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Docker o entorno del capítulo
+- datasets
+- cuaderno elegido
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/stefan-jansen/machine-learning-for-trading/blob/main/README.md)
 
@@ -51,21 +60,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar machine-learning-for-trading para mi objetivo y necesito pasos guiados. Lee https://github.com/stefan-jansen/machine-learning-for-trading/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Reproduce un notebook introductorio con datos gratuitos y separa entrenamiento y prueba temporal.
+
+**Qué comprobar:** Puedes explicar los supuestos y reproducir una métrica fuera de muestra.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres aprender un proceso de investigación de trading basado en datos
+- Aprender investigación cuantitativa
+- Estudiar costes y sesgos de un backtest
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres aprender un proceso de investigación de trading basado en datos | necesitas resultados operativos validados en vez de material de investigación |
+| Tu objetivo encaja con estos ejemplos: Aprender investigación cuantitativa; Estudiar costes y sesgos de un backtest | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Las fuentes de datos y APIs pueden requerir acceso; los ejemplos no acreditan rentabilidad futura.
+**Limitaciones:** Es material de aprendizaje con ejemplos y skills; cada capítulo o recurso define su entorno y cliente compatible
 
 ## Stack y modelos
 
-- **Stack:** Jupyter Notebook, Docker, pyproject.toml
+- **Stack:** Docker o entorno del capítulo; datasets; cuaderno elegido
 - **Etiquetas:** `finanzas` `algorithmic-trading` `artificial-intelligence` `backtesting` `data-science` `deep-learning` `finance` `investment`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +94,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/stefan-jansen/machine-learning-for-trading/blob/main/README.md)
 

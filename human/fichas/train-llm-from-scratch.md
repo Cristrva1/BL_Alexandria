@@ -16,34 +16,52 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No exige API; GPU, almacenamiento y seguimiento externo opcional tienen sus costes |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Los extras train, ui, docs y all son alternativas; empezar por un corpus pequeño evita confundir la demostración con entrenar un modelo grande |
+| Coste | El coste depende del proveedor o la ruta. No exige API; GPU, almacenamiento y seguimiento externo opcional tienen sus costes |
+| Equipo | Preparación según la ruta elegida. Python y PyTorch; datos pequeños; CPU o GPU según escala |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Los extras train, ui, docs y all son alternativas; empezar por un corpus pequeño evita confundir la demostración con entrenar un modelo grande
 
 ## Qué puedes hacer con él
 
-Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generación. Implementa un Transformer y recorre preparación de datos, entrenamiento y ajuste del modelo.
+Tutorial y código de PyTorch para construir y entrenar un modelo de lenguaje desde los datos hasta la generación.
 
 ## Por qué destaca
 
-Quieres entender el entrenamiento de un LLM mediante una implementación completa.
+Usos propuestos: Comprender la preparación de un corpus; Explorar un entrenamiento pequeño controlado.
 
 ## Cómo funciona
 
-Implementa un Transformer y recorre preparación de datos, entrenamiento y ajuste del modelo.
+Los extras train, ui, docs y all son alternativas; empezar por un corpus pequeño evita confundir la demostración con entrenar un modelo grande
 
 ## Cómo empezar
 
-Material para leer. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Python y PyTorch
+- datos pequeños
+- CPU o GPU según escala
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+git clone https://github.com/FareedKhan-dev/train-llm-from-scratch.git
+cd train-llm-from-scratch
+pip install -e .
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/FareedKhan-dev/train-llm-from-scratch/blob/main/README.md)
 
@@ -51,21 +69,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar train-llm-from-scratch para mi objetivo y necesito pasos guiados. Lee https://github.com/FareedKhan-dev/train-llm-from-scratch/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Instala el paquete en un entorno de prueba y estudia la configuración de un entrenamiento mínimo.
+
+**Qué comprobar:** Puedes identificar tamaño del modelo, datos y salida de checkpoints.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres entender el entrenamiento de un LLM mediante una implementación completa
+- Comprender la preparación de un corpus
+- Explorar un entrenamiento pequeño controlado
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres entender el entrenamiento de un LLM mediante una implementación completa | necesitas una aplicación lista para usuarios sin trabajo técnico |
+| Tu objetivo encaja con estos ejemplos: Comprender la preparación de un corpus; Explorar un entrenamiento pequeño controlado | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Los ejemplos pequeños pueden usar CPU; los entrenamientos mayores requieren recursos considerables.
+**Limitaciones:** Los extras train, ui, docs y all son alternativas; empezar por un corpus pequeño evita confundir la demostración con entrenar un modelo grande
 
 ## Stack y modelos
 
-- **Stack:** Python, pyproject.toml
+- **Stack:** Python y PyTorch; datos pequeños; CPU o GPU según escala
 - **Etiquetas:** `aprender` `gemini` `large-language-models` `llm` `openai` `training` `transformers` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -76,7 +103,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/FareedKhan-dev/train-llm-from-scratch/blob/main/README.md)
 

@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No necesita LLM; cuentas, red y operaciones de la plataforma tienen condiciones y posibles costes propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. Datos de mercado, brokers y exchanges pueden exigir cuentas, cuotas, comisiones o fondos. Una simulación o backtest no acredita rentabilidad ni una conexión real lista. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El paquete se llama polymarket-client; datos públicos y funciones autenticadas de cuenta o wallet tienen requisitos separados |
+| Coste | El coste depende del proveedor o la ruta. No necesita LLM; cuentas, red y operaciones de la plataforma tienen condiciones y posibles costes propios |
+| Equipo | Preparación según la ruta elegida. Python y uv o pip; API y permisos según función; consulta de datos públicos |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+El paquete se llama polymarket-client; datos públicos y funciones autenticadas de cuenta o wallet tienen requisitos separados
 
 ## Qué puedes hacer con él
 
 SDK Python de Polymarket para integrar funciones de su plataforma mediante las APIs y credenciales correspondientes.
 
+## Por qué destaca
+
+Usos propuestos: Estudiar la API pública de Polymarket; Preparar una migración desde el cliente antiguo.
+
 ## Cómo funciona
 
-Tu aplicación incorpora la biblioteca y llama sus funciones; no es un programa independiente con una interfaz lista.
+El paquete se llama polymarket-client; datos públicos y funciones autenticadas de cuenta o wallet tienen requisitos separados
 
 ## Cómo empezar
 
@@ -39,11 +44,21 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de desarrollo compatible con el lenguaje y los requisitos del README.
+- Python y uv o pip
+- API y permisos según función
+- consulta de datos públicos
 
-1. Elige un ejemplo de consulta de datos, backtesting o simulación que no envíe órdenes reales.
-2. Prepara datos de prueba y, si el proveedor lo requiere, una cuenta y credenciales de solo lectura; revisa sus cuotas por separado.
-3. Comprueba los resultados y el coste observado. La ejecución con fondos es otra configuración y no se activa como parte de esta primera prueba.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+uv add polymarket-client
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Polymarket/py-sdk/blob/main/README.md)
 
@@ -51,21 +66,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar py-sdk para mi objetivo y necesito pasos guiados. Lee https://github.com/Polymarket/py-sdk/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Enumera datos públicos de un mercado y revisa su esquema sin autenticar una wallet.
+
+**Qué comprobar:** Puedes contrastar identificadores y datos con la fuente.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- SDK Python de Polymarket para integrar funciones de su plataforma mediante las APIs y credenciales correspondientes.
+- Estudiar la API pública de Polymarket
+- Preparar una migración desde el cliente antiguo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: SDK Python de Polymarket para integrar funciones de su plataforma mediante las APIs y credenciales correspondientes. | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| Tu objetivo encaja con estos ejemplos: Estudiar la API pública de Polymarket; Preparar una migración desde el cliente antiguo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada. No se verificó rentabilidad ni operación con fondos. Distingue demostración, backtesting, simulación y conexión real.
+**Limitaciones:** El paquete se llama polymarket-client; datos públicos y funciones autenticadas de cuenta o wallet tienen requisitos separados
 
 ## Stack y modelos
 
-- **Stack:** Python, pyproject.toml
+- **Stack:** Python y uv o pip; API y permisos según función; consulta de datos públicos
 - **Etiquetas:** `bots` `library` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -81,7 +105,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Polymarket/py-sdk/blob/main/README.md)
 

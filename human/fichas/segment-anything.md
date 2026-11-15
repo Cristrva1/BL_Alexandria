@@ -16,34 +16,52 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La ruta de inferencia o entrenamiento local no necesita una API de IA alojada. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Inferencia propia sin API de pago; hardware y datos separados |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible. |
-| Coste | Sin pago a un modelo en la ruta básica. No hay factura por llamada a un proveedor en la ruta local; sí hay hardware, energía y posibles condiciones de los pesos. |
-| Equipo | Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. El README remite a SAM 2 como versión nueva; segmentar a partir de un punto no garantiza reconocer correctamente cualquier objeto |
+| Coste | Sin pago a un modelo en la ruta básica. Inferencia propia sin API de pago; hardware y datos separados |
+| Equipo | Preparación según la ruta elegida. Python; PyTorch; checkpoint; imagen de prueba; memoria suficiente |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El README remite a SAM 2 como versión nueva; segmentar a partir de un punto no garantiza reconocer correctamente cualquier objeto
 
 ## Qué puedes hacer con él
 
-Genera máscaras precisas sin entrenamiento para el objeto que indiques. Su sucesor SAM 2 añade video.
+Modelo de Meta que segmenta cualquier objeto en una imagen a partir de un clic o una caja.
 
 ## Por qué destaca
 
-Cambió la segmentación: funciona con objetos que nunca vio.
+Usos propuestos: Preparar máscaras de una imagen; Estudiar segmentación asistida.
 
 ## Cómo funciona
 
-Un codificador de imagen y un decodificador de máscaras guiado por puntos o cajas.
+El README remite a SAM 2 como versión nueva; segmentar a partir de un punto no garantiza reconocer correctamente cualquier objeto
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python
+- PyTorch
+- checkpoint
+- imagen de prueba
+- memoria suficiente
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (consulta la sintaxis original):**
+
+```
+pip install git+https://github.com/facebookresearch/segment-anything.git
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/facebookresearch/segment-anything/blob/main/README.md)
 
@@ -51,21 +69,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Segment Anything (SAM) para mi objetivo y necesito pasos guiados. Lee https://github.com/facebookresearch/segment-anything/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Indica un punto sobre un objeto y revisa la máscara propuesta.
+
+**Qué comprobar:** Puedes comparar el contorno con la imagen.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Recortar objetos con un clic
-- Acelerar anotación de datos
-- Edición de imágenes
+- Preparar máscaras de una imagen
+- Estudiar segmentación asistida
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas segmentar objetos en imágenes | trabajas con video; mira `sam2` |
+| Tu objetivo encaja con estos ejemplos: Preparar máscaras de una imagen; Estudiar segmentación asistida | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El README remite a SAM 2 como versión nueva; segmentar a partir de un punto no garantiza reconocer correctamente cualquier objeto
 
 ## Stack y modelos
 
-- **Stack:** Python, PyTorch
+- **Stack:** Python; PyTorch; checkpoint; imagen de prueba; memoria suficiente
 - **Etiquetas:** `vision` `image` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -87,7 +114,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/facebookresearch/segment-anything/blob/main/README.md)
 

@@ -16,56 +16,74 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El framework MIT es gratuito; curso, hosting y servicios externos son independientes |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El curso de pago no es necesario para la biblioteca y no se requiere modelo de IA para renderizar slides |
+| Coste | Sin pago a un modelo en la ruta básica. El framework MIT es gratuito; curso, hosting y servicios externos son independientes |
+| Equipo | Preparación según la ruta elegida. Node según ruta; HTML; contenido propio; navegador |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El curso de pago no es necesario para la biblioteca y no se requiere modelo de IA para renderizar slides
 
 ## Qué puedes hacer con él
 
-Convierte las diapositivas en una página web versionable y reproducible por código.
+Framework veterano para crear presentaciones (slides) en HTML, con transiciones, temas, fragmentos y modo orador integrados.
 
 ## Por qué destaca
 
-Estándar de facto para slides como código, muy popular y respaldado por una comunidad amplia y años de uso en producción; es la base de herramientas como Reveal y de innumerables charlas técnicas.
+Usos propuestos: Preparar una presentación web; Mostrar un ejemplo interactivo.
 
 ## Cómo funciona
 
-Defines las diapositivas como elementos HTML anidados (`<section>`) y la librería JS las renderiza en el navegador con navegación por teclado, animaciones, modo orador y exportación a PDF.
+El curso de pago no es necesario para la biblioteca y no se requiere modelo de IA para renderizar slides
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/hakimel/reveal.js/blob/master/README.md)
+- Node según ruta
+- HTML
+- contenido propio
+- navegador
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://revealjs.com/installation)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar reveal.js para mi objetivo y necesito pasos guiados. Lee https://github.com/hakimel/reveal.js/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar reveal.js para mi objetivo y necesito pasos guiados. Lee https://revealjs.com/installation. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Crea dos slides y una nota del orador y prueba navegación y presentación.
+
+**Qué comprobar:** Puedes abrir la presentación y ver las notas.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Slides web versionables como código
-- Presentaciones interactivas en el navegador
-- Decks técnicos con demos en vivo embebidas
+- Preparar una presentación web
+- Mostrar un ejemplo interactivo
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres slides web por código, versionables | necesitas PPTX editable en Office (ppt-master) o un editor visual de slides |
+| Tu objetivo encaja con estos ejemplos: Preparar una presentación web; Mostrar un ejemplo interactivo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** El curso de pago no es necesario para la biblioteca y no se requiere modelo de IA para renderizar slides
 
 ## Stack y modelos
 
-- **Stack:** JavaScript/HTML
+- **Stack:** Node según ruta; HTML; contenido propio; navegador
 - **Etiquetas:** `slides` `javascript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -80,7 +98,7 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Slidev](slidev.md) | 49.5k | Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. |
-| [Marp](marp.md) | 12.7k | Ecosistema para crear presentaciones con Markdown simple y exportarlas a PDF, PPTX o HTML. |
+| [Marp](marp.md) | 12.7k | Entrada al ecosistema Marp de presentaciones Markdown; el CLI y extensión de editor se distribuyen por separado. |
 
 ## Enlaces
 
@@ -89,7 +107,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/hakimel/reveal.js/blob/master/README.md)
 

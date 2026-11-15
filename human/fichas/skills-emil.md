@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Las instrucciones usan el modelo del anfitrión; bibliotecas externas tienen sus condiciones |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Dentro del agente: skills o instrucciones |
+| Antigravity | Dentro del agente: skills o instrucciones |
+| Modelos locales | La función básica no necesita un modelo. Se distribuye mediante Skills CLI; compatibilidad de formato no garantiza que todas las herramientas sugeridas existan en cada host |
+| Coste | Consumo del agente que ya utilizas. Las instrucciones usan el modelo del anfitrión; bibliotecas externas tienen sus condiciones |
+| Equipo | Preparación según la ruta elegida. Agente compatible con skills; componente o captura de prueba |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+Se distribuye mediante Skills CLI; compatibilidad de formato no garantiza que todas las herramientas sugeridas existan en cada host
 
 ## Qué puedes hacer con él
 
-Resuelve el handoff diseño↔código, no solo la estética final.
+Colección de skills enfocada en diseño de interfaces y en mejorar la colaboración entre diseñador y desarrollador (design engineering).
 
 ## Por qué destaca
 
-Pone el foco en la traducción de diseño a implementación (tokens, consistencia, decisiones compartidas), un ángulo menos cubierto por otras skills de UI que miran solo el resultado visual.
+Usos propuestos: Revisar estados de un componente; Preparar decisiones de movimiento.
 
 ## Cómo funciona
 
-Se entrega como un `SKILL.md` (skill `emil-design-eng`) que el asistente carga para guiar decisiones de diseño-implementación: estructura de componentes, naming, tokens y patrones coherentes entre Figma y código.
+Se distribuye mediante Skills CLI; compatibilidad de formato no garantiza que todas las herramientas sugeridas existan en cada host
 
 ## Cómo empezar
 
@@ -43,11 +44,21 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Agente compatible con skills
+- componente o captura de prueba
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+npx skills@latest add emilkowalski/skills
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/emilkowalski/skills/blob/main/README.md)
 
@@ -55,21 +66,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar skills_emil para mi objetivo y necesito pasos guiados. Lee https://github.com/emilkowalski/skills/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Elige una skill de diseño y pide una revisión acotada antes de implementar sugerencias.
+
+**Qué comprobar:** Puedes convertir cada recomendación en un cambio verificable.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Mejorar el handoff diseño↔ingeniería
-- Resultados UI más consistentes entre Figma y código
-- Alinear naming y tokens en un equipo
+- Revisar estados de un componente
+- Preparar decisiones de movimiento
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| trabajas diseño+dev en equipo y sufres el handoff | buscas componentes listos o trabajas solo |
+| Tu objetivo encaja con estos ejemplos: Revisar estados de un componente; Preparar decisiones de movimiento | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Se distribuye mediante Skills CLI; compatibilidad de formato no garantiza que todas las herramientas sugeridas existan en cada host
 
 ## Stack y modelos
 
-- **Stack:** Markdown (skills), TypeScript/React
+- **Stack:** Agente compatible con skills; componente o captura de prueba
 - **Etiquetas:** `skills` `design`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -86,7 +106,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/emilkowalski/skills/blob/main/README.md)
 

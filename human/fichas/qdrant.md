@@ -16,34 +16,48 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El servidor no requiere modelo; generar embeddings y Qdrant Cloud pueden costar aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La base vectorial almacena y busca; no genera por sí sola respuestas de un chatbot |
+| Coste | Sin pago a un modelo en la ruta básica. El servidor no requiere modelo; generar embeddings y Qdrant Cloud pueden costar aparte |
+| Equipo | Preparación según la ruta elegida. Docker; vectores y metadatos de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La base vectorial almacena y busca; no genera por sí sola respuestas de un chatbot
 
 ## Qué puedes hacer con él
 
-Guarda embeddings con metadatos y los busca con filtros rápidos, a escala. Muy usada como memoria de RAG y agentes.
+Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida.
 
 ## Por qué destaca
 
-Rápida, fácil de desplegar y con buena API; opción por defecto en muchos stacks.
+Usos propuestos: Guardar embeddings de documentos; Combinar similitud y filtros de metadatos.
 
 ## Cómo funciona
 
-Índices HNSW con filtrado sobre payloads, cuantización y almacenamiento en disco.
+La base vectorial almacena y busca; no genera por sí sola respuestas de un chatbot
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Docker
+- vectores y metadatos de prueba
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (bash):**
+
+```
+docker run -p 6333:6333 qdrant/qdrant
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/qdrant/qdrant/blob/master/README.md)
 
@@ -51,21 +65,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Qdrant para mi objetivo y necesito pasos guiados. Lee https://github.com/qdrant/qdrant/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Inserta tres vectores pequeños con etiquetas y consulta el más parecido con un filtro.
+
+**Qué comprobar:** La búsqueda devuelve el registro esperado y respeta el filtro.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Memoria vectorial para RAG
-- Búsqueda semántica de productos
-- Deduplicación por similitud
+- Guardar embeddings de documentos
+- Combinar similitud y filtros de metadatos
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres una base vectorial dedicada y rápida | ya tienes PostgreSQL y poco volumen; mira `pgvector` |
+| Tu objetivo encaja con estos ejemplos: Guardar embeddings de documentos; Combinar similitud y filtros de metadatos | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** La base vectorial almacena y busca; no genera por sí sola respuestas de un chatbot
 
 ## Stack y modelos
 
-- **Stack:** Rust, Docker
+- **Stack:** Docker; vectores y metadatos de prueba
 - **Etiquetas:** `vector-db` `rag` `rust` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -94,7 +117,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/qdrant/qdrant/blob/master/README.md)
 

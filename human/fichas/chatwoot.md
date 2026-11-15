@@ -16,34 +16,43 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. La función básica puede usarse sin un LLM remoto; activar funciones de IA cambia los requisitos. |
+| API de IA | API de IA opcional. Community, Cloud y Enterprise tienen condiciones distintas; canales y funciones AI pueden consumir servicios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | El coste depende del proveedor o la ruta. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. El helpdesk no incluye por sí solo la facturación de WhatsApp ni modelos; configura cada integración por separado |
+| Coste | El coste depende del proveedor o la ruta. Community, Cloud y Enterprise tienen condiciones distintas; canales y funciones AI pueden consumir servicios |
+| Equipo | Preparación según la ruta elegida. Cuenta o servidor; canal de prueba; proveedor solo para funciones AI |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El helpdesk no incluye por sí solo la facturación de WhatsApp ni modelos; configura cada integración por separado
 
 ## Qué puedes hacer con él
 
-Reúne WhatsApp, email, web chat y redes en una sola bandeja, con paso a un humano cuando el bot no basta. Alternativa abierta a Intercom o Zendesk.
+Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada.
 
 ## Por qué destaca
 
-Es una de las alternativas open-source más populares a Intercom/Zendesk, valorada por centralizar el soporte multicanal con handoff humano y asignación de tickets. Su comunidad activa y su integración con canales la hacen apta para producción.
+Usos propuestos: Organizar una mesa de soporte; Comparar atención humana y asistencia AI.
 
 ## Cómo funciona
 
-Centraliza conversaciones por canal en una bandeja con tickets y agentes, sobre un stack Ruby on Rails con PostgreSQL y Redis para tiempo real. Los agentes responden desde un panel unificado y los bots pueden intervenir antes del handoff.
+El helpdesk no incluye por sí solo la facturación de WhatsApp ni modelos; configura cada integración por separado
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Cuenta o servidor
+- canal de prueba
+- proveedor solo para funciones AI
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/chatwoot/chatwoot/blob/develop/README.md)
 
@@ -51,23 +60,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar chatwoot para mi objetivo y necesito pasos guiados. Lee https://github.com/chatwoot/chatwoot/blob/develop/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Crea una bandeja de ensayo y recorre una conversación ficticia con etiquetas y asignación.
+
+**Qué comprobar:** Puedes seguir estado, agente asignado e historial de la conversación.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Centralizar WhatsApp/web/correo en un panel
-- Tickets y agentes con handoff bot→humano
-- Soporte multicanal para una agencia
+- Organizar una mesa de soporte
+- Comparar atención humana y asistencia AI
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| das soporte por varios canales y necesitas handoff humano | solo necesitas enviar mensajes salientes (evolution-api) |
+| Tu objetivo encaja con estos ejemplos: Organizar una mesa de soporte; Comparar atención humana y asistencia AI | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Self-host con varios componentes (app, worker, Redis, Postgres); el setup y las actualizaciones corren por tu cuenta.
+**Limitaciones:** El helpdesk no incluye por sí solo la facturación de WhatsApp ni modelos; configura cada integración por separado
 
 ## Stack y modelos
 
-- **Stack:** Ruby on Rails, Vue.js, PostgreSQL, Redis, Docker
+- **Stack:** Cuenta o servidor; canal de prueba; proveedor solo para funciones AI
 - **Etiquetas:** `automation` `crm` `ruby` `docker`
 - **Modo de instalación sugerido:** 🐳 **Servicio Docker** — levántalo con Docker cuando el proyecto lo necesite
 
@@ -86,7 +102,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/chatwoot/chatwoot/blob/develop/README.md)
 

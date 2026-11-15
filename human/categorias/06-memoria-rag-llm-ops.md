@@ -14,7 +14,7 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 |---|---|---|
 | [claude-mem](../fichas/claude-mem.md) | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. | API de IA opcional |
 | [RAGFlow](../fichas/ragflow.md) | Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. | Depende de la ruta elegida |
-| [Qdrant](../fichas/qdrant.md) | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. | Sin API de IA en la ruta básica |
+| [Qdrant](../fichas/qdrant.md) | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. | Sin clave propia de API de IA en la ruta básica |
 
 ## Secciones
 
@@ -26,39 +26,39 @@ Opciones editoriales para empezar a comparar. Elige por tu objetivo y acceso; no
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [claude-mem](../fichas/claude-mem.md) | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. | usas Claude Code a diario y repites contexto entre sesiones | API de IA opcional |
-| [mem0](../fichas/mem0.md) | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental. | quieres memoria estándar lista con integraciones amplias | Depende de la ruta elegida |
-| [mempalace](../fichas/mempalace.md) | Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin enviar datos a servicios externos. | la privacidad es prioridad y no quieres llamadas a API | Sin API de IA en la ruta básica |
-| [OpenViking](../fichas/openviking.md) | Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información. | buscas esta función: Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información. | API de IA opcional |
-| [cognee](../fichas/cognee.md) | Plataforma de memoria para agentes que combina grafos de conocimiento y vectores, usable con modelos pequeños. | quieres memoria basada en grafo con poco esfuerzo | Depende de la ruta elegida |
-| [Graphiti](../fichas/graphiti.md) | Librería de Zep para construir grafos de conocimiento temporales en tiempo real para agentes. | necesitas memoria que cambie con el tiempo y se pueda consultar | Depende de la ruta elegida |
-| [supermemory](../fichas/supermemory.md) | Motor de memoria y contexto muy rápido, con API para apps de IA y app propia, ejecutable en local. | quieres una API de memoria lista para tu app | Depende de la ruta elegida |
-| [agentmemory](../fichas/agentmemory.md) | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes. | cambias de asistente y quieres una memoria común entre ellos | Depende de la ruta elegida |
-| [Letta](../fichas/letta.md) | Plataforma para agentes con estado y memoria avanzada que aprenden con el tiempo (antes MemGPT). | quieres agentes con memoria de largo plazo gestionada | Depende de la ruta elegida |
-| [Engram](../fichas/engram.md) | Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI. | quieres memoria local simple para cualquier agente | Sin API de IA en la ruta básica |
-| [dsh-noema](../fichas/dsh-noema.md) | Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración. | buscas esta función: Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración. | Sin API de IA en la ruta básica |
+| [claude-mem](../fichas/claude-mem.md) | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. | Tu objetivo encaja con estos ejemplos: Conservar decisiones entre sesiones; Recuperar el motivo de un cambio de código | API de IA opcional |
+| [mem0](../fichas/mem0.md) | Capa de memoria persistente para agentes y apps de IA que guarda, recupera y actualiza recuerdos del usuario y de la sesión de forma incremental. | Tu objetivo encaja con estos ejemplos: Recordar preferencias de atención; Mantener contexto de una app entre conversaciones | Depende de la ruta elegida |
+| [mempalace](../fichas/mempalace.md) | Memoria de IA local-first con almacenamiento verbatim y backend conectable, pensada para alto recall sin enviar datos a servicios externos. | Tu objetivo encaja con estos ejemplos: Recuperar decisiones antiguas; Consultar archivos de contexto sin resúmenes destructivos | API de IA opcional |
+| [OpenViking](../fichas/openviking.md) | Base de contexto para agentes que organiza memoria, documentos y skills y permite consultar esa información. | Tu objetivo encaja con estos ejemplos: Conservar contexto de un proyecto; Consultar conocimientos y skills desde un almacén común | Depende de la ruta elegida |
+| [cognee](../fichas/cognee.md) | Plataforma de memoria para agentes que combina grafos de conocimiento y vectores, usable con modelos pequeños. | Tu objetivo encaja con estos ejemplos: Construir memoria de documentos; Recuperar contexto desde Claude Code o Codex | API de IA opcional |
+| [Graphiti](../fichas/graphiti.md) | Librería de Zep para construir grafos de conocimiento temporales en tiempo real para agentes. | Tu objetivo encaja con estos ejemplos: Representar cambios de una relación comercial; Conservar hechos de conversaciones con fechas | Depende de la ruta elegida |
+| [supermemory](../fichas/supermemory.md) | Motor de memoria y contexto muy rápido, con API para apps de IA y app propia, ejecutable en local. | Tu objetivo encaja con estos ejemplos: Conservar contexto entre agentes; Buscar documentos y recuerdos de un proyecto | Depende de la ruta elegida |
+| [agentmemory](../fichas/agentmemory.md) | Memoria persistente para agentes de código (Claude Code, Copilot CLI, Cursor, Gemini CLI, Codex…), construida sobre el motor iii y expuesta como capa común entre clientes. | Tu objetivo encaja con estos ejemplos: Compartir contexto entre Claude Code y Codex; Consultar decisiones por proyecto | API de IA opcional |
+| [Letta](../fichas/letta.md) | Plataforma para agentes con estado y memoria avanzada que aprenden con el tiempo (antes MemGPT). | Tu objetivo encaja con estos ejemplos: Estudiar un agente con memoria persistente; Crear un asistente que conserve preferencias | Depende de la ruta elegida |
+| [Engram](../fichas/engram.md) | Memoria persistente para agentes de código en un solo binario Go con SQLite, MCP, API y TUI. | Tu objetivo encaja con estos ejemplos: Recordar decisiones técnicas; Hacer una entrega de contexto entre sesiones | Sin clave propia de API de IA en la ruta básica |
+| [dsh-noema](../fichas/dsh-noema.md) | Plugin de memoria persistente para DeepSeek Harness con herramientas de consulta y opciones de configuración. | Tu objetivo encaja con estos ejemplos: Dar memoria a DeepSeek Harness; Importar una nota propia de otro agente | Sin clave propia de API de IA en la ruta básica |
 
 ## RAG y motores de conocimiento
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [RAGFlow](../fichas/ragflow.md) | Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. | tus documentos son complejos y necesitas citas fiables | Depende de la ruta elegida |
-| [LightRAG](../fichas/lightrag.md) | RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. | quieres RAG con grafo sin el coste de GraphRAG | Depende de la ruta elegida |
-| [PageIndex](../fichas/pageindex.md) | Índice de documentos para RAG sin vectores, basado en razonamiento sobre una tabla de contenidos. | tus documentos son largos y con estructura clara | API de IA opcional |
-| [graphrag](../fichas/graphrag.md) | Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. | tu corpus tiene relaciones ricas y el RAG por fragmentos se queda corto | Depende de la ruta elegida |
-| [onyx](../fichas/onyx.md) | Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. | buscas esta función: Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. | API de IA opcional |
-| [agentic-rag-for-dummies](../fichas/agentic-rag-for-dummies.md) | Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama. | buscas esta función: Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama. | API de IA opcional |
+| [RAGFlow](../fichas/ragflow.md) | Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. | Tu objetivo encaja con estos ejemplos: Consultar manuales de una organización; Combinar documentos en una base de conocimiento | Depende de la ruta elegida |
+| [LightRAG](../fichas/lightrag.md) | RAG simple y rápido que combina grafo de conocimiento y vectores, de la Universidad de Hong Kong. | Tu objetivo encaja con estos ejemplos: Consultar relaciones entre conceptos; Combinar búsqueda de grafos y vectores | Depende de la ruta elegida |
+| [PageIndex](../fichas/pageindex.md) | Índice de documentos para RAG sin vectores, basado en razonamiento sobre una tabla de contenidos. | Tu objetivo encaja con estos ejemplos: Consultar informes largos por su estructura; Encontrar una sección de un contrato | Depende de la ruta elegida |
+| [graphrag](../fichas/graphrag.md) | Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. | Tu objetivo encaja con estos ejemplos: Estudiar relaciones de un corpus; Comparar búsqueda local y resumen global | Depende de la ruta elegida |
+| [onyx](../fichas/onyx.md) | Plataforma de chat y búsqueda con IA sobre fuentes de una organización, con conectores y control de acceso. | Tu objetivo encaja con estos ejemplos: Buscar conocimiento de equipo; Dar contexto organizacional a un agente de código | Depende de la ruta elegida |
+| [agentic-rag-for-dummies](../fichas/agentic-rag-for-dummies.md) | Ejemplo de RAG con agentes y LangGraph para consultar documentos, con una ruta local basada en Ollama. | Tu objetivo encaja con estos ejemplos: Aprender RAG por pasos; Comparar un pipeline local con otro proveedor | Depende de la ruta elegida |
 
 ## Bases vectoriales y búsqueda semántica
 
 | Repo | Para qué sirve | Elígelo si… | API de IA |
 |---|---|---|---|
-| [Qdrant](../fichas/qdrant.md) | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. | quieres una base vectorial dedicada y rápida | Sin API de IA en la ruta básica |
-| [Milvus](../fichas/milvus.md) | Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. | esperas volúmenes muy grandes de vectores | Sin API de IA en la ruta básica |
-| [Faiss](../fichas/faiss.md) | Librería de Meta para búsqueda de similitud y clustering de vectores densos, en CPU y GPU. | necesitas índices vectoriales en memoria y máximo control | Sin API de IA en la ruta básica |
-| [Chroma](../fichas/chroma.md) | Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local. | empiezas con RAG y quieres lo más simple | Sin API de IA en la ruta básica |
-| [pgvector](../fichas/pgvector.md) | Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales. | ya usas PostgreSQL y quieres vectores | Sin API de IA en la ruta básica |
-| [turbovec](../fichas/turbovec.md) | Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida. | necesitas vector search veloz y embebido sin desplegar una DB | Sin API de IA en la ruta básica |
+| [Qdrant](../fichas/qdrant.md) | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. | Tu objetivo encaja con estos ejemplos: Guardar embeddings de documentos; Combinar similitud y filtros de metadatos | Sin clave propia de API de IA en la ruta básica |
+| [Milvus](../fichas/milvus.md) | Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. | Tu objetivo encaja con estos ejemplos: Buscar productos por similitud; Indexar embeddings a gran escala | Sin clave propia de API de IA en la ruta básica |
+| [Faiss](../fichas/faiss.md) | Librería de Meta para búsqueda de similitud y clustering de vectores densos, en CPU y GPU. | Tu objetivo encaja con estos ejemplos: Comparar embeddings de imágenes; Experimentar con índices y compresión | Sin clave propia de API de IA en la ruta básica |
+| [Chroma](../fichas/chroma.md) | Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local. | Tu objetivo encaja con estos ejemplos: Prototipar búsqueda semántica local; Filtrar fragmentos por metadatos | Sin clave propia de API de IA en la ruta básica |
+| [pgvector](../fichas/pgvector.md) | Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales. | Tu objetivo encaja con estos ejemplos: Buscar similitud junto a datos SQL; Filtrar resultados vectoriales por columnas del negocio | Sin clave propia de API de IA en la ruta básica |
+| [turbovec](../fichas/turbovec.md) | Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida. | Tu objetivo encaja con estos ejemplos: Explorar índices vectoriales embebidos; Reducir memoria de una búsqueda local | Sin clave propia de API de IA en la ruta básica |
 
 ## Recetas relacionadas
 

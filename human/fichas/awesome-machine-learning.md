@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Directorio gratuito; cada recurso externo define licencia, coste y hardware |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. No se instala la lista ni se hereda la compatibilidad de todos los proyectos enlazados |
+| Coste | Sin pago a un modelo en la ruta básica. Directorio gratuito; cada recurso externo define licencia, coste y hardware |
+| Equipo | Preparación según la ruta elegida. Navegador; lenguaje y problema de interés |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+No se instala la lista ni se hereda la compatibilidad de todos los proyectos enlazados
 
 ## Qué puedes hacer con él
 
-Directorio de frameworks, bibliotecas y recursos de machine learning organizado por lenguaje y tema. Reúne enlaces a implementaciones, cursos y material para comparar herramientas.
+Directorio de frameworks, bibliotecas y recursos de machine learning organizado por lenguaje y tema.
 
 ## Por qué destaca
 
-Buscas alternativas de aprendizaje automático en distintos lenguajes.
+Usos propuestos: Descubrir bibliotecas de clasificación; Encontrar herramientas de visión por lenguaje.
 
 ## Cómo funciona
 
-Reúne enlaces a implementaciones, cursos y material para comparar herramientas.
+No se instala la lista ni se hereda la compatibilidad de todos los proyectos enlazados
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+- lenguaje y problema de interés
+
+1. Busca dos bibliotecas del lenguaje que conoces y abre sus fuentes para comparar mantenimiento y requisitos.
+2. Comprueba: Obtienes una pequeña lista de candidatos con función diferenciada.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/josephmisiti/awesome-machine-learning/blob/master/README.md)
 
@@ -51,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar awesome-machine-learning para mi objetivo y necesito pasos guiados. Lee https://github.com/josephmisiti/awesome-machine-learning/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Busca dos bibliotecas del lenguaje que conoces y abre sus fuentes para comparar mantenimiento y requisitos.
+
+**Qué comprobar:** Obtienes una pequeña lista de candidatos con función diferenciada.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Buscas alternativas de aprendizaje automático en distintos lenguajes
+- Descubrir bibliotecas de clasificación
+- Encontrar herramientas de visión por lenguaje
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas alternativas de aprendizaje automático en distintos lenguajes | necesitas una aplicación lista para usuarios sin trabajo técnico |
+| Tu objetivo encaja con estos ejemplos: Descubrir bibliotecas de clasificación; Encontrar herramientas de visión por lenguaje | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La lista no garantiza mantenimiento ni compatibilidad de los proyectos enlazados.
+**Limitaciones:** No se instala la lista ni se hereda la compatibilidad de todos los proyectos enlazados
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Navegador; lenguaje y problema de interés
 - **Etiquetas:** `aprender` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +91,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/josephmisiti/awesome-machine-learning/blob/master/README.md)
 

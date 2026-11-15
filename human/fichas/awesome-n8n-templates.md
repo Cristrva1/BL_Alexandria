@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | Depende de la ruta elegida. Consultar la colección es gratuito; cada flujo puede requerir n8n alojado, servicios o APIs con coste |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Hay ejemplos locales con Ollama y otros con proveedores remotos; no se promete que todas las plantillas funcionen sin API |
+| Coste | El coste depende del proveedor o la ruta. Consultar la colección es gratuito; cada flujo puede requerir n8n alojado, servicios o APIs con coste |
+| Equipo | Preparación según la ruta elegida. n8n;  credenciales y dependencias de la plantilla elegida |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Hay ejemplos locales con Ollama y otros con proveedores remotos; no se promete que todas las plantillas funcionen sin API
 
 ## Qué puedes hacer con él
 
-Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales. Cada workflow tiene dependencias y posibles consumos externos que debes revisar antes de activarlo.
+Colección de plantillas de n8n para estudiar o importar automatizaciones de servicios y tareas habituales.
 
 ## Por qué destaca
 
-Es el catálogo comunitario de plantillas de n8n más grande y activo.
+Usos propuestos: Estudiar una plantilla que clasifica correo con Ollama; Adaptar una alerta de precio que avisa por Telegram.
 
 ## Cómo funciona
 
-Agrupa ejemplos que se adaptan a una instancia de n8n y a sus credenciales.
+Hay ejemplos locales con Ollama y otros con proveedores remotos; no se promete que todas las plantillas funcionen sin API
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- n8n
+-  credenciales y dependencias de la plantilla elegida
+
+1. Importa una plantilla JSON en un flujo desactivado y revisa sus nodos.
+2. Comprueba: El lienzo muestra los pasos y puedes identificar qué credenciales faltan.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/enescingoz/awesome-n8n-templates/blob/main/README.md)
 
@@ -51,23 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Awesome n8n Templates para mi objetivo y necesito pasos guiados. Lee https://github.com/enescingoz/awesome-n8n-templates/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Importa una plantilla JSON en un flujo desactivado y revisa sus nodos.
+
+**Qué comprobar:** El lienzo muestra los pasos y puedes identificar qué credenciales faltan.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Arrancar un bot de Telegram con IA
-- Resumir correos y guardarlos en Notion
-- Aprender patrones de workflows
+- Estudiar una plantilla que clasifica correo con Ollama
+- Adaptar una alerta de precio que avisa por Telegram
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| usas n8n y quieres partir de flujos hechos | no usas n8n |
+| Tu objetivo encaja con estos ejemplos: Estudiar una plantilla que clasifica correo con Ollama; Adaptar una alerta de precio que avisa por Telegram | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** La calidad varía entre plantillas; revisa credenciales y nodos antes de usarlas en producción.
+**Limitaciones:** Hay ejemplos locales con Ollama y otros con proveedores remotos; no se promete que todas las plantillas funcionen sin API
 
 ## Stack y modelos
 
-- **Stack:** JSON de n8n
+- **Stack:** n8n;  credenciales y dependencias de la plantilla elegida
 - **Etiquetas:** `automation` `prompts`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -86,7 +100,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/enescingoz/awesome-n8n-templates/blob/main/README.md)
 

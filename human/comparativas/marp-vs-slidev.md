@@ -4,22 +4,22 @@
 
 | | [Marp](../fichas/marp.md) | [Slidev](../fichas/slidev.md) |
 |---|---|---|
-| Qué hace | Ecosistema para crear presentaciones con Markdown simple y exportarlas a PDF, PPTX o HTML. | Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. |
+| Qué hace | Entrada al ecosistema Marp de presentaciones Markdown; el CLI y extensión de editor se distribuyen por separado. | Presentaciones para desarrolladores escritas en Markdown, con código en vivo y componentes Vue. |
 | ⭐ Estrellas | 12.7k | 49.5k |
-| Elígelo si… | quieres slides simples en Markdown | haces presentaciones técnicas y quieres control como código |
-| Evítalo si… | necesitas interactividad y componentes; mira `slidev` | necesitas slides para negocio generadas con IA; mira `presenton` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Preparar slides sencillas; Versionar una presentación en Git | Tu objetivo encaja con estos ejemplos: Preparar una charla técnica; Explicar un ejemplo de código |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
 | Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | MIT | MIT |
-| Instalación | `npm i -g @marp-team/marp-cli` | `npm init slidev@latest` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **Marp** si quieres slides simples en Markdown.
-- Elige **Slidev** si haces presentaciones técnicas y quieres control como código.
+- Elige **Marp** si Tu objetivo encaja con estos ejemplos: Preparar slides sencillas; Versionar una presentación en Git.
+- Elige **Slidev** si Tu objetivo encaja con estos ejemplos: Preparar una charla técnica; Explicar un ejemplo de código.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

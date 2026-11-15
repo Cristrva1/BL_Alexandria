@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y convertir archivos sin instalar nada. | Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. |
 | ⭐ Estrellas | 9.8k | 96.6k |
-| Elígelo si… | manipulas PDFs con privacidad y sin instalar nada | quieres un iLovePDF privado |
-| Evítalo si… | necesitas conversión a Markdown para IA (markitdown) o edición de contenido (no solo manipulación de páginas) | solo necesitas OCR; mira `ocrmypdf` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Editar PDFs desde un navegador; Convertir o dividir un documento de prueba | Tu objetivo encaja con estos ejemplos: Preparar un expediente de prueba; Separar y convertir documentos desde una interfaz |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
-| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
+| Coste | Sin pago a un modelo en la ruta básica | El coste depende del proveedor o la ruta |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟢 fácil | 🟢 fácil |
 | Licencia | AGPL-3.0 | NOASSERTION |
-| Instalación | `npm install` | `docker run -d -p 8080:8080 stirlingtools/stirling-pdf` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **pdfcraft** si manipulas PDFs con privacidad y sin instalar nada.
-- Elige **Stirling-PDF** si quieres un iLovePDF privado.
+- Elige **pdfcraft** si Tu objetivo encaja con estos ejemplos: Editar PDFs desde un navegador; Convertir o dividir un documento de prueba.
+- Elige **Stirling-PDF** si Tu objetivo encaja con estos ejemplos: Preparar un expediente de prueba; Separar y convertir documentos desde una interfaz.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Código MIT, con modelos corporales y datasets bajo condiciones independientes; GPU y almacenamiento aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso. |
-| Coste | Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos. |
-| Equipo | Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. El script de descarga necesita acceso a los modelos externos; MIT del código no concede automáticamente licencia de SMPL o de los datos |
+| Coste | El coste depende del proveedor o la ruta. Código MIT, con modelos corporales y datasets bajo condiciones independientes; GPU y almacenamiento aparte |
+| Equipo | Preparación según la ruta elegida. Entorno de investigación; modelos SMPL y SMPLify con acceso; pesos; video autorizado |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+El script de descarga necesita acceso a los modelos externos; MIT del código no concede automáticamente licencia de SMPL o de los datos
 
 ## Qué puedes hacer con él
 
 Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video.
 
+## Por qué destaca
+
+Usos propuestos: Estudiar movimiento humano 3D; Comparar reconstrucción antes y después de refinamiento.
+
 ## Cómo funciona
 
-Carga los modelos y datos del ejemplo para realizar inferencia o investigación con el backend elegido.
+El script de descarga necesita acceso a los modelos externos; MIT del código no concede automáticamente licencia de SMPL o de los datos
 
 ## Cómo empezar
 
@@ -39,33 +44,47 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Entorno compatible, pesos y licencias del modelo, y recursos de CPU, RAM o GPU suficientes para la variante elegida.
+- Entorno de investigación
+- modelos SMPL y SMPLify con acceso
+- pesos
+- video autorizado
 
-1. Elige el modelo y el backend que documenta el proyecto para tu sistema.
-2. Prepara las dependencias y los pesos; no uses una cifra promocional como garantía para tu hardware.
-3. Procesa una muestra pequeña y revisa calidad, tiempo y memoria antes de aumentar el tamaño de la tarea.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-[Instrucciones originales de instalación](https://github.com/yohanshin/WHAM/blob/main/README.md)
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://github.com/yohanshin/WHAM/blob/main/docs/INSTALL.md)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar WHAM para mi objetivo y necesito pasos guiados. Lee https://github.com/yohanshin/WHAM/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar WHAM para mi objetivo y necesito pasos guiados. Lee https://github.com/yohanshin/WHAM/blob/main/docs/INSTALL.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Prepara la demo de un clip corto y revisa trayectoria y articulaciones reconstruidas.
+
+**Qué comprobar:** Puedes distinguir estimación visual de una medición real.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video.
+- Estudiar movimiento humano 3D
+- Comparar reconstrucción antes y después de refinamiento
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Estudiar movimiento humano 3D; Comparar reconstrucción antes y después de refinamiento | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** El script de descarga necesita acceso a los modelos externos; MIT del código no concede automáticamente licencia de SMPL o de los datos
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Entorno de investigación; modelos SMPL y SMPLify con acceso; pesos; video autorizado
 - **Etiquetas:** `vision` `model` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -75,9 +94,12 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/yohanshin/WHAM/blob/main/README.md)
+- [Fuente 2](https://github.com/yohanshin/WHAM/blob/main/LICENSE)
 
 ---
 

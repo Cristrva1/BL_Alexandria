@@ -1,0 +1,4 @@
+{
+ "polars":{"one":"Motor de consultas y DataFrames en Rust con API Python para procesar datos tabulares."},
+ "data-science-ipython-notebooks":{"one":"Colección educativa histórica de notebooks de datos y machine learning; las dependencias pueden requerir adaptación."}
+}

@@ -1,0 +1,6 @@
+{
+ "openmontage":{"one":"Pipelines y herramientas para producir video con un agente,recursos propios,modelos locales o servicios opcionales."},
+ "video-use":{"one":"Edición con agentes y FFmpeg,con transcripción documentada mediante ElevenLabs Scribe."},
+ "lemo-opuscar":{"one":"Biblioteca de estilos para video por código orientada a Claude,con licencias diferentes para código,guías y medios."},
+ "remotion-superpowers":{"one":"Orquestación de video con Remotion y servicios audiovisuales externos; requiere claves y revisar costes por etapa."}
+}

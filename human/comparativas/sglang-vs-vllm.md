@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Framework de servicio de alto rendimiento para LLM y modelos multimodales. | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. |
 | ⭐ Estrellas | 38.9k | 96.9k |
-| Elígelo si… | buscas el máximo rendimiento en servicio de LLM | necesitas servir LLM abiertos a muchos usuarios en GPU |
-| Evítalo si… | quieres la opción más documentada; mira `vllm` | solo los usas tú en un portátil; mira `ollama` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Servir un modelo para una aplicación; Estudiar inferencia multimodal | Tu objetivo encaja con estos ejemplos: Servir un modelo propio; Estudiar rendimiento de inferencia |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🏠 local | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
 | Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
 | Modelos locales | Modelos locales documentados | Modelos locales documentados |
 | Setup | 🔴 pesado | 🔴 pesado |
 | Licencia | Apache-2.0 | Apache-2.0 |
-| Instalación | `pip install "sglang[all]"` | `pip install vllm` |
+| Instalación | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **SGLang** si buscas el máximo rendimiento en servicio de LLM.
-- Elige **vLLM** si necesitas servir LLM abiertos a muchos usuarios en GPU.
+- Elige **SGLang** si Tu objetivo encaja con estos ejemplos: Servir un modelo para una aplicación; Estudiar inferencia multimodal.
+- Elige **vLLM** si Tu objetivo encaja con estos ejemplos: Servir un modelo propio; Estudiar rendimiento de inferencia.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

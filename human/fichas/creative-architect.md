@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Para preparar briefs y prompts utiliza tu agente. Para generar conecta Higgsfield, Magnific u OpenAI con la cuenta, conector o API que corresponda. |
+| API de IA | API de IA opcional. El trabajo de brief usa Claude; generar usa Higgsfield, Magnific, OpenAI u otro proveedor con sus propios planes o APIs |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. El plugin vive en tu equipo; la documentación no ofrece un generador local de imágenes o video. |
-| Coste | El coste depende del proveedor o la ruta. Plugin MIT. Consume tu agente y, si generas medios, los créditos o tarifas del proveedor elegido. |
-| Equipo | Equipo normal; revisar dependencias. Git y Claude Code para el plugin; los servicios conectados tienen sus propios requisitos. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. No incluye créditos audiovisuales ni acceso idéntico por MCP, CLI y REST; generar una pieza y publicarla son acciones diferentes |
+| Coste | El coste depende del proveedor o la ruta. El trabajo de brief usa Claude; generar usa Higgsfield, Magnific, OpenAI u otro proveedor con sus propios planes o APIs |
+| Equipo | Preparación según la ruta elegida. Claude Code; brief; proveedor de imagen o video solo al generar; presupuesto |
 
-Las instrucciones se ejecutan en Claude Code con tu acceso habitual; los créditos de generación del proveedor se revisan por separado.
+No incluye créditos audiovisuales ni acceso idéntico por MCP, CLI y REST; generar una pieza y publicarla son acciones diferentes
 
 ## Qué puedes hacer con él
 
 Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de imagen o video.
 
+## Por qué destaca
+
+Usos propuestos: Preparar una foto de producto; Planificar un anuncio UGC.
+
 ## Cómo funciona
 
-El agente convierte la idea y las referencias de producto en un brief; usa el proveedor conectado para producir y revisar la pieza.
+No incluye créditos audiovisuales ni acceso idéntico por MCP, CLI y REST; generar una pieza y publicarla son acciones diferentes
 
 ## Cómo empezar
 
@@ -39,46 +44,55 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Git y Claude Code funcionando
-- Cuenta en un proveedor solo si vas a generar medios
+- Claude Code
+- brief
+- proveedor de imagen o video solo al generar
+- presupuesto
 
-1. Abre una carpeta de trabajo en Claude Code y añade el marketplace del proyecto.
-2. Instala creative-architect@creative-architect y recarga los plugins.
-3. Pide primero un brief o prompt; conecta un proveedor y revisa sus créditos antes de generar una pieza.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-**Comando de entrada documentado:**
+**Entrada documentada (text):**
 
-```shell
-claude plugin marketplace add Hainrixz/creative-architect
-claude plugin install creative-architect@creative-architect
+```
+/plugin marketplace add Hainrixz/creative-architect
+/plugin install creative-architect@creative-architect
 ```
 
-El README aún dice privado, pero GitHub lo marca público en la revisión. Revisa los permisos si cambia. La revisión es documental; no se instaló el plugin.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Hainrixz/creative-architect/blob/main/README.md)
-
-[Abrir la web o descarga indicada por el autor](https://github.com/Hainrixz/creative-architect)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
 > Quiero usar Creative Architect para mi objetivo y necesito pasos guiados. Lee https://github.com/Hainrixz/creative-architect/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Prepara la dirección de arte y revisa modelo, coste y referencia antes de generar una pieza.
+
+**Qué comprobar:** Puedes identificar proveedor y resultado y decidir una iteración concreta.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Preparar fotos de producto
-- Escribir un brief de UGC y anuncios
+- Preparar una foto de producto
+- Planificar un anuncio UGC
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| ya usas Claude Code y buscas una guía de dirección de arte con proveedores conectables | necesitas generación local documentada o un plugin nativo de Codex |
+| Tu objetivo encaja con estos ejemplos: Preparar una foto de producto; Planificar un anuncio UGC | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** No incluye créditos de imagen o video. El README conserva una nota de acceso privado que discrepa de la visibilidad pública verificada en GitHub.
+**Limitaciones:** No incluye créditos audiovisuales ni acceso idéntico por MCP, CLI y REST; generar una pieza y publicarla son acciones diferentes
 
 ## Stack y modelos
 
-- **Stack:** Plugin Claude Code; Markdown; conectores o API de medios
+- **Stack:** Claude Code; brief; proveedor de imagen o video solo al generar; presupuesto
 - **Etiquetas:** `direccion-de-arte` `fotos-producto` `ugc` `claude-code` `creative-architect`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -89,10 +103,11 @@ El README aún dice privado, pero GitHub lo marca público en la revisión. Revi
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Hainrixz/creative-architect/blob/main/README.md)
-- [Fuente 2](https://www.tododeia.com/community/creative-architect)
 
 ---
 

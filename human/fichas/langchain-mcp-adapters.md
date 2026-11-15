@@ -18,42 +18,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | API de IA opcional. El adaptador no requiere modelo; los ejemplos con agentes usan el proveedor configurado y pueden consumir API |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. El autor ha trasladado el desarrollo a langchain[mcp] bajo langchain.mcp; revisa la migración antes de iniciar algo nuevo |
+| Coste | El coste depende del proveedor o la ruta. El adaptador no requiere modelo; los ejemplos con agentes usan el proveedor configurado y pueden consumir API |
+| Equipo | Preparación según la ruta elegida. Python; servidor MCP; modelo solo para un agente LLM |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El autor ha trasladado el desarrollo a langchain[mcp] bajo langchain.mcp; revisa la migración antes de iniciar algo nuevo
 
 ## Qué puedes hacer con él
 
-Permite que tus agentes de LangGraph usen cualquier servidor MCP sin escribir adaptadores. El repo está archivado y su función se integró en LangChain.
+Puente que convierte herramientas de servidores MCP en herramientas de LangChain y LangGraph.
 
 ## Por qué destaca
 
-Fue la vía estándar para usar MCP en LangGraph.
+Usos propuestos: Reutilizar herramientas MCP en LangGraph; Conectar dos servidores a un agente propio.
 
 ## Cómo funciona
 
-Un cliente multi-servidor carga las herramientas MCP y las envuelve como herramientas de LangChain.
+El autor ha trasladado el desarrollo a langchain[mcp] bajo langchain.mcp; revisa la migración antes de iniciar algo nuevo
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python
+- servidor MCP
+- modelo solo para un agente LLM
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
 pip install langchain-mcp-adapters
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/langchain-ai/langchain-mcp-adapters/blob/main/README.md)
 
@@ -61,23 +69,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar LangChain MCP Adapters para mi objetivo y necesito pasos guiados. Lee https://github.com/langchain-ai/langchain-mcp-adapters/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Carga una herramienta add de un servidor MCP y llámala como herramienta LangChain.
+
+**Qué comprobar:** Los argumentos y el resultado se conservan al cruzar el adaptador.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Agentes de LangGraph con servidores MCP
-- Reutilizar herramientas MCP existentes
-- Prototipos rápidos
+- Reutilizar herramientas MCP en LangGraph
+- Conectar dos servidores a un agente propio
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| usas LangGraph y quieres herramientas MCP | no usas LangChain |
+| Tu objetivo encaja con estos ejemplos: Reutilizar herramientas MCP en LangGraph; Conectar dos servidores a un agente propio | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Repositorio archivado: revisa la integración actual en la documentación de LangChain.
+**Limitaciones:** El autor ha trasladado el desarrollo a langchain[mcp] bajo langchain.mcp; revisa la migración antes de iniciar algo nuevo
 
 ## Stack y modelos
 
-- **Stack:** Python, LangChain
+- **Stack:** Python; servidor MCP; modelo solo para un agente LLM
 - **Etiquetas:** `mcp` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -101,7 +116,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/langchain-ai/langchain-mcp-adapters/blob/main/README.md)
 

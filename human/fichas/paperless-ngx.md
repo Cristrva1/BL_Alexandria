@@ -16,22 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. La ruta básica usa OCR local sin API de IA; servidor, almacenamiento y copias requieren recursos |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. No es solo un conversor PDF: administra un archivo documental persistente; configura retención y copias antes de importar una colección real |
+| Coste | Sin pago a un modelo en la ruta básica. La ruta básica usa OCR local sin API de IA; servidor, almacenamiento y copias requieren recursos |
+| Equipo | Preparación según la ruta elegida. Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+No es solo un conversor PDF: administra un archivo documental persistente; configura retención y copias antes de importar una colección real
 
 ## Qué puedes hacer con él
 
 Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados.
 
+## Por qué destaca
+
+Usos propuestos: Organizar recibos de prueba; Construir un archivo documental buscable.
+
 ## Cómo funciona
 
-Un servicio y su interfaz gestionan los datos y conexiones configurados en tu despliegue.
+No es solo un conversor PDF: administra un archivo documental persistente; configura retención y copias antes de importar una colección real
 
 ## Cómo empezar
 
@@ -39,33 +44,47 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un entorno de instalación o servidor y las dependencias indicadas por el README.
+- Docker o entorno de la guía
+- directorio persistente
+- idiomas OCR
+- documentos ficticios
 
-1. Prepara la instalación documentada, normalmente con Docker Compose, y revisa sus volúmenes y requisitos.
-2. Importa un documento de prueba y comprueba el reconocimiento de texto y la búsqueda.
-3. Verifica descarga, organización y copias de los documentos antes de migrar tu archivo.
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+3. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
 
-[Instrucciones originales de instalación](https://github.com/paperless-ngx/paperless-ngx/blob/dev/README.md)
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://docs.paperless-ngx.com/setup/#installation)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar paperless-ngx para mi objetivo y necesito pasos guiados. Lee https://github.com/paperless-ngx/paperless-ngx/blob/dev/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar paperless-ngx para mi objetivo y necesito pasos guiados. Lee https://docs.paperless-ngx.com/setup/#installation. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Importa un documento de prueba y búscalo por una palabra reconocida y una etiqueta.
+
+**Qué comprobar:** Puedes abrir el original y localizarlo con su texto OCR.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados.
+- Organizar recibos de prueba
+- Construir un archivo documental buscable
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Gestor documental autoalojado para importar, reconocer texto, buscar y archivar documentos escaneados. | necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución |
+| Tu objetivo encaja con estos ejemplos: Organizar recibos de prueba; Construir un archivo documental buscable | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** No es solo un conversor PDF: administra un archivo documental persistente; configura retención y copias antes de importar una colección real
 
 ## Stack y modelos
 
-- **Stack:** Python, Dockerfile, pyproject.toml
+- **Stack:** Docker o entorno de la guía; directorio persistente; idiomas OCR; documentos ficticios
 - **Etiquetas:** `gestion` `server` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
@@ -76,7 +95,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/paperless-ngx/paperless-ngx/blob/dev/README.md)
 

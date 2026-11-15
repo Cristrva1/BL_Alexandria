@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Plataforma open-source de automatización con IA, alternativa extensible a Zapier que conecta apps mediante flujos low-code y "pieces" reutilizables. | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 | ⭐ Estrellas | 25.5k | 211k |
-| Elígelo si… | quieres reemplazar Zapier con piezas propias en TypeScript | quieres el motor central de automatización con máximo catálogo |
-| Evítalo si… | ya dominas n8n y su ecosistema te basta | buscas algo minimalista o sin self-host |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Pasar respuestas de un formulario a una aplicación de negocio; Solicitar aprobación humana antes de continuar una automatización | Tu objetivo encaja con estos ejemplos: Un formulario de contacto genera un registro para seguimiento comercial; Un flujo resume documentos con Ollama en lugar de una API remota |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🔀 híbrido | 🏠 local |
 | API de IA | API de IA opcional | API de IA opcional |
 | Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
-| Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
+| Modelos locales | Modelo local no documentado | Modelos locales documentados |
 | Setup | 🟡 medio | 🟡 medio |
 | Licencia | NOASSERTION | NOASSERTION |
-| Instalación | `docker compose` | `docker compose` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **activepieces** si quieres reemplazar Zapier con piezas propias en TypeScript.
-- Elige **n8n** si quieres el motor central de automatización con máximo catálogo.
+- Elige **activepieces** si Tu objetivo encaja con estos ejemplos: Pasar respuestas de un formulario a una aplicación de negocio; Solicitar aprobación humana antes de continuar una automatización.
+- Elige **n8n** si Tu objetivo encaja con estos ejemplos: Un formulario de contacto genera un registro para seguimiento comercial; Un flujo resume documentos con Ollama en lugar de una API remota.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

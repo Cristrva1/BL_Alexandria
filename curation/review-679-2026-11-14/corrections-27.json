@@ -1,0 +1,6 @@
+{
+ "humanizer":{"one":"Skill para revisar estilo y claridad de texto conservando su sentido; no prueba autoría humana."},
+ "taste-skill":{"one":"Skill design-taste-frontend para dirección visual y revisión de sitios; otros skills del pack antiguo se movieron a repos propios."},
+ "impeccable":{"one":"Vocabulario y playbooks de diseño para agentes, con detector determinista y hooks según herramienta."},
+ "design.md":{"role":"library","one":"Especificación y CLI para documentar identidad visual en DESIGN.md,validar tokens y comparar versiones."}
+}

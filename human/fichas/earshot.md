@@ -16,34 +16,53 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. La herramienta opcional llm_critique utiliza GEMINI_API_KEY; las herramientas locales de audio no implican ese consumo. |
+| API de IA | API de IA opcional. Análisis local en CPU con descarga inicial de modelos; agente, generación opcional y referencias musicales tienen costes o licencias separados |
 | Claude Code | Herramienta MCP para el agente |
 | Codex | Herramienta MCP para el agente |
-| Modelos locales | Modelos locales documentados. El análisis de audio se ejecuta con modelos locales en CPU. La crítica con LLM es una función opcional separada. |
-| Coste | El coste depende del proveedor o la ruta. Los modelos de audio locales consumen CPU, memoria y disco. La crítica opcional mediante Gemini tiene el acceso y las cuotas de ese proveedor. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Herramienta MCP para el agente |
+| Modelos locales | Modelos locales documentados. Expone MCP y conserva rutas offline; el material de referencia de pago no viene incluido y hay que aportar grabaciones autorizadas |
+| Coste | El coste depende del proveedor o la ruta. Análisis local en CPU con descarga inicial de modelos; agente, generación opcional y referencias musicales tienen costes o licencias separados |
+| Equipo | Preparación según la ruta elegida. Python; uv; espacio para modelos CPU; audio propio; cliente MCP opcional |
 
-Configura este servidor en un cliente MCP compatible, incluido Claude Code o Codex. Sus servicios y permisos se preparan aparte.
+Expone MCP y conserva rutas offline; el material de referencia de pago no viene incluido y hay que aportar grabaciones autorizadas
 
 ## Qué puedes hacer con él
 
 Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP.
 
+## Por qué destaca
+
+Usos propuestos: Revisar una mezcla con un agente; Analizar un efecto sonoro.
+
 ## Cómo funciona
 
-Un cliente MCP invoca las herramientas del servidor para trabajar con el programa o servicio conectado.
+Expone MCP y conserva rutas offline; el material de referencia de pago no viene incluido y hay que aportar grabaciones autorizadas
 
 ## Cómo empezar
 
-Se configura en tu agente. [Entender los términos](../vocabulario.md).
+Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un cliente MCP compatible y el programa o servicio que va a controlar la herramienta.
+- Python
+- uv
+- espacio para modelos CPU
+- audio propio
+- cliente MCP opcional
 
-1. Prepara el servidor y sus dependencias siguiendo la configuración del README.
-2. Añade el comando o la URL en el cliente MCP y configura los permisos y credenciales de los servicios conectados.
-3. Comprueba que aparecen sus herramientas y prueba una consulta pequeña antes de permitir modificaciones.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+uv tool install "earshot[mcp] @ git+https://github.com/Leonxlnx/earshot"
+earshot doctor --fetch     # downloads the two models now (~1.1 GB)
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Leonxlnx/earshot/blob/main/README.md)
 
@@ -51,21 +70,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar earshot para mi objetivo y necesito pasos guiados. Lee https://github.com/Leonxlnx/earshot/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Ejecuta doctor y analiza un clip corto antes de solicitar modificaciones o generar sonidos.
+
+**Qué comprobar:** Puedes revisar informe, segmentos y archivo original.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP.
+- Revisar una mezcla con un agente
+- Analizar un efecto sonoro
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Herramientas locales de audio para que un agente escuche, analice y revise sonidos mediante una interfaz MCP. | necesitas un producto autónomo y esta pieza requiere un anfitrión compatible |
+| Tu objetivo encaja con estos ejemplos: Revisar una mezcla con un agente; Analizar un efecto sonoro | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Expone MCP y conserva rutas offline; el material de referencia de pago no viene incluido y hay que aportar grabaciones autorizadas
 
 ## Stack y modelos
 
-- **Stack:** Python, pyproject.toml
+- **Stack:** Python; uv; espacio para modelos CPU; audio propio; cliente MCP opcional
 - **Etiquetas:** `edicion` `mcp` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +103,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Leonxlnx/earshot/blob/main/README.md)
 

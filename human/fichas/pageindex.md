@@ -16,34 +16,50 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | API de IA opcional. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | Depende de la ruta elegida. El autor documenta API propia, Cloud y una ruta Claude Code con plan del usuario; revisa límites y condiciones de autenticación de esa ruta |
 | Claude Code | Integración documentada por el proyecto |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. El proyecto documenta usar Claude Code con una suscripción o una API key. La modalidad cloud de PageIndex tiene requisitos propios. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Sin base vectorial no significa sin modelo ni coste; su adaptador Claude es integración del proyecto y no una aprobación universal de planes |
+| Coste | El coste depende del proveedor o la ruta. El autor documenta API propia, Cloud y una ruta Claude Code con plan del usuario; revisa límites y condiciones de autenticación de esa ruta |
+| Equipo | Preparación según la ruta elegida. Python; documento de prueba; proveedor para modo local o cuenta Cloud |
 
-El README documenta una integración con las sesiones de los agentes indicados. Configurar esa ruta y comprobar sus límites; otras rutas pueden facturar por API.
+Sin base vectorial no significa sin modelo ni coste; su adaptador Claude es integración del proyecto y no una aprobación universal de planes
 
 ## Qué puedes hacer con él
 
-Genera un árbol tipo índice del documento y deja que el LLM navegue por él como un experto. Funciona bien con informes largos y estructurados.
+Índice de documentos para RAG sin vectores, basado en razonamiento sobre una tabla de contenidos.
 
 ## Por qué destaca
 
-Evita los problemas de fragmentación de los embeddings en documentos largos.
+Usos propuestos: Consultar informes largos por su estructura; Encontrar una sección de un contrato.
 
 ## Cómo funciona
 
-Construye una jerarquía de secciones con resúmenes y el modelo decide qué ramas leer para responder.
+Sin base vectorial no significa sin modelo ni coste; su adaptador Claude es integración del proyecto y no una aprobación universal de planes
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python
+- documento de prueba
+- proveedor para modo local o cuenta Cloud
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+pip install -U pageindex
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/VectifyAI/PageIndex/blob/main/README.md)
 
@@ -51,21 +67,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar PageIndex para mi objetivo y necesito pasos guiados. Lee https://github.com/VectifyAI/PageIndex/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Indexa un PDF con secciones y pregunta por un dato de una sección concreta.
+
+**Qué comprobar:** La recuperación señala la parte pertinente del documento.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Preguntas sobre informes financieros
-- Navegar manuales largos
-- RAG sin base vectorial
+- Consultar informes largos por su estructura
+- Encontrar una sección de un contrato
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tus documentos son largos y con estructura clara | tienes miles de documentos cortos; usa búsqueda vectorial |
+| Tu objetivo encaja con estos ejemplos: Consultar informes largos por su estructura; Encontrar una sección de un contrato | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Sin base vectorial no significa sin modelo ni coste; su adaptador Claude es integración del proyecto y no una aprobación universal de planes
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python; documento de prueba; proveedor para modo local o cuenta Cloud
 - **Etiquetas:** `rag` `docs` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -88,7 +113,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/VectifyAI/PageIndex/blob/main/README.md)
 

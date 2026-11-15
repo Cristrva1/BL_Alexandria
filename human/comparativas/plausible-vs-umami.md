@@ -6,20 +6,20 @@
 |---|---|---|
 | Qué hace | Analítica web ligera, sin cookies y centrada en la privacidad, en la nube o auto-hospedada. | Analítica web y de producto respetuosa con la privacidad, sin cookies, alternativa a Google Analytics. |
 | ⭐ Estrellas | 29.8k | 40.2k |
-| Elígelo si… | quieres analítica minimalista y privada | quieres analítica web simple y privada |
-| Evítalo si… | necesitas embudos y eventos complejos; mira `posthog` | necesitas analítica de producto avanzada; mira `posthog` |
+| Elígelo si… | Tu objetivo encaja con estos ejemplos: Medir una web de contenido; Comparar conversiones de una landing | Tu objetivo encaja con estos ejemplos: Medir visitas de una web; Comparar campañas mediante eventos propios |
+| Evítalo si… | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | Ejecución | 🔀 híbrido | 🏠 local |
-| API de IA | Sin API de IA en la ruta básica | Sin API de IA en la ruta básica |
-| Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
+| API de IA | Sin clave propia de API de IA en la ruta básica | Sin clave propia de API de IA en la ruta básica |
+| Coste | El coste depende del proveedor o la ruta | El coste depende del proveedor o la ruta |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟡 medio | 🟢 fácil |
 | Licencia | AGPL-3.0 | MIT |
-| Instalación | Self-host con `plausible/community-edition` y Docker Compose. | `docker compose up -d` |
+| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola rut… |
 
 ## Regla práctica
 
-- Elige **Plausible Analytics** si quieres analítica minimalista y privada.
-- Elige **Umami** si quieres analítica web simple y privada.
+- Elige **Plausible Analytics** si Tu objetivo encaja con estos ejemplos: Medir una web de contenido; Comparar conversiones de una landing.
+- Elige **Umami** si Tu objetivo encaja con estos ejemplos: Medir visitas de una web; Comparar campañas mediante eventos propios.
 - Usa los dos solo si el proyecto necesita explícitamente ambas capacidades.
 
 ---

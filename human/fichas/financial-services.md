@@ -16,26 +16,27 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Las instrucciones usan el modelo del agente anfitrión; los scripts o servicios opcionales pueden tener requisitos adicionales. |
+| API de IA | API de IA opcional. El plugin usa el plan del anfitrión; Managed Agents requiere API y los proveedores de datos pueden exigir suscripción propia |
 | Claude Code | Dentro del agente: skills o instrucciones |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Una skill no trae un modelo. El modelo lo decide y ejecuta el agente anfitrión. |
-| Coste | Consumo del agente que ya utilizas. No incluye una cuenta de IA. Utiliza tu acceso al agente, con sus límites y su autenticación. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelo local no documentado. Los conectores y cookbooks tienen rutas diferentes; no incluye datos financieros premium ni convierte resultados en asesoría validada |
+| Coste | El coste depende del proveedor o la ruta. El plugin usa el plan del anfitrión; Managed Agents requiere API y los proveedores de datos pueden exigir suscripción propia |
+| Equipo | Preparación según la ruta elegida. Claude Code o Cowork; datos financieros ficticios; acceso a conectores si los usas |
 
-Usar la skill consume los límites del agente anfitrión. Servicios de terceros y generaciones externas se pagan por separado cuando apliquen.
+Los conectores y cookbooks tienen rutas diferentes; no incluye datos financieros premium ni convierte resultados en asesoría validada
 
 ## Qué puedes hacer con él
 
-Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros. Reúne instrucciones y conectores para tareas como análisis de empresas y gestión de documentos financieros.
+Plugins, skills y conectores de Anthropic para flujos de investigación y trabajo en servicios financieros.
 
 ## Por qué destaca
 
-Quieres estudiar flujos financieros dentro del ecosistema de Claude.
+Usos propuestos: Preparar un análisis de empresa; Estudiar conciliación de registros ficticios.
 
 ## Cómo funciona
 
-Reúne instrucciones y conectores para tareas como análisis de empresas y gestión de documentos financieros.
+Los conectores y cookbooks tienen rutas diferentes; no incluye datos financieros premium ni convierte resultados en asesoría validada
 
 ## Cómo empezar
 
@@ -43,11 +44,26 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 **Antes de empezar:**
 
-- Un agente compatible y acceso activo a su modelo.
+- Claude Code o Cowork
+- datos financieros ficticios
+- acceso a conectores si los usas
 
-1. Elige el agente indicado en Acceso y costes.
-2. Sigue la instalación para ese agente en el README; un catálogo puede contener varias skills independientes.
-3. Prueba una tarea pequeña y revisa si activa conectores externos.
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+# Add the marketplace
+claude plugin marketplace add anthropics/financial-services
+
+# Core skills + connectors (install first)
+claude plugin install financial-analysis@claude-for-financial-services
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/anthropics/financial-services/blob/main/README.md)
 
@@ -55,21 +71,30 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 > Quiero usar financial-services para mi objetivo y necesito pasos guiados. Lee https://github.com/anthropics/financial-services/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Elige una skill de análisis y trabaja sobre un conjunto de cifras de muestra con fuentes explícitas.
+
+**Qué comprobar:** Puedes contrastar fórmulas, datos y supuestos del borrador.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres estudiar flujos financieros dentro del ecosistema de Claude
+- Preparar un análisis de empresa
+- Estudiar conciliación de registros ficticios
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres estudiar flujos financieros dentro del ecosistema de Claude | no utilizas un agente o flujo compatible con estas instrucciones |
+| Tu objetivo encaja con estos ejemplos: Preparar un análisis de empresa; Estudiar conciliación de registros ficticios | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Los resultados requieren revisión profesional y acceso autorizado a los datos; no constituyen asesoría.
+**Limitaciones:** Los conectores y cookbooks tienen rutas diferentes; no incluye datos financieros premium ni convierte resultados en asesoría validada
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Claude Code o Cowork; datos financieros ficticios; acceso a conectores si los usas
 - **Etiquetas:** `dominio` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -85,7 +110,9 @@ Se configura en tu agente. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/anthropics/financial-services/blob/main/README.md)
 

@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Las operaciones básicas no necesitan modelos ni API; hardware y servicios de una app son independientes |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es una biblioteca de visión por computador; no es un único modelo entrenado ni una aplicación de agentes |
+| Coste | Sin pago a un modelo en la ruta básica. Las operaciones básicas no necesitan modelos ni API; hardware y servicios de una app son independientes |
+| Equipo | Preparación según la ruta elegida. Paquete OpenCV para el lenguaje elegido; imagen pequeña |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es una biblioteca de visión por computador; no es un único modelo entrenado ni una aplicación de agentes
 
 ## Qué puedes hacer con él
 
-Procesamiento de imagen y video, detección, calibración de cámaras y más, en C++ y Python.
+La librería de visión por computadora de referencia, con miles de algoritmos.
 
 ## Por qué destaca
 
-Estándar de la industria desde hace más de 20 años.
+Usos propuestos: Preparar imágenes antes de OCR; Estudiar procesamiento visual básico.
 
 ## Cómo funciona
 
-Algoritmos optimizados en C++ con bindings para Python, Java y más.
+Es una biblioteca de visión por computador; no es un único modelo entrenado ni una aplicación de agentes
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Paquete OpenCV para el lenguaje elegido
+- imagen pequeña
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/opencv/opencv/blob/5.x/README.md)
 
@@ -51,21 +58,30 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 > Quiero usar OpenCV para mi objetivo y necesito pasos guiados. Lee https://github.com/opencv/opencv/blob/5.x/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Carga una imagen, cambia su tamaño y guarda una copia para comparar dimensiones.
+
+**Qué comprobar:** Puedes comprobar entrada, transformación y salida.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Procesar imágenes en lote
-- Leer cámaras y video
-- Preprocesar datos de visión
+- Preparar imágenes antes de OCR
+- Estudiar procesamiento visual básico
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| necesitas procesamiento de imagen o video | necesitas detección de objetos moderna; mira `ultralytics` |
+| Tu objetivo encaja con estos ejemplos: Preparar imágenes antes de OCR; Estudiar procesamiento visual básico | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Es una biblioteca de visión por computador; no es un único modelo entrenado ni una aplicación de agentes
 
 ## Stack y modelos
 
-- **Stack:** C++, Python
+- **Stack:** Paquete OpenCV para el lenguaje elegido; imagen pequeña
 - **Etiquetas:** `vision` `image` `cpp` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -83,7 +99,9 @@ Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/opencv/opencv/blob/5.x/README.md)
 

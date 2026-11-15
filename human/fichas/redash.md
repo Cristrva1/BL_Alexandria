@@ -16,58 +16,73 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No requiere modelo; servidor, fuentes y ejecución de consultas pueden costar |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. La facilidad de consumir un dashboard no elimina la necesidad de preparar consultas y conexiones correctas |
+| Coste | Sin pago a un modelo en la ruta básica. No requiere modelo; servidor, fuentes y ejecución de consultas pueden costar |
+| Equipo | Preparación según la ruta elegida. Servidor según guía; fuente de datos; SQL básico |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+La facilidad de consumir un dashboard no elimina la necesidad de preparar consultas y conexiones correctas
 
 ## Qué puedes hacer con él
 
-Pensada para analistas que escriben SQL y quieren compartir resultados rápido con el equipo.
+Herramienta para consultar cualquier fuente de datos con SQL, visualizar y compartir dashboards.
 
 ## Por qué destaca
 
-Simple y centrada en SQL, con muchos conectores.
+Usos propuestos: Compartir consultas de negocio; Crear dashboards a partir de fuentes SQL.
 
 ## Cómo funciona
 
-Ejecuta consultas en las fuentes conectadas, guarda resultados y los muestra en visualizaciones y dashboards.
+La facilidad de consumir un dashboard no elimina la necesidad de preparar consultas y conexiones correctas
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-[Instrucciones originales de instalación](https://github.com/getredash/redash/blob/master/README.md)
+- Servidor según guía
+- fuente de datos
+- SQL básico
+
+1. Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.
+2. Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
+
+[Instrucciones originales de instalación](https://redash.io/help/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar Redash para mi objetivo y necesito pasos guiados. Lee https://github.com/getredash/redash/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar Redash para mi objetivo y necesito pasos guiados. Lee https://redash.io/help/. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+
+## Tu primera prueba
+
+Ejecuta una consulta sobre una tabla ficticia y conviértela en una gráfica.
+
+**Qué comprobar:** Puedes revisar consulta, filas y visualización del mismo resultado.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 ## Casos de uso
 
-- Consultas SQL compartidas
-- Dashboards rápidos para el equipo
-- Alertas sobre consultas
+- Compartir consultas de negocio
+- Crear dashboards a partir de fuentes SQL
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| tu equipo trabaja con SQL y quiere compartir rápido | necesitas BI con permisos finos; mira `superset` |
+| Tu objetivo encaja con estos ejemplos: Compartir consultas de negocio; Crear dashboards a partir de fuentes SQL | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Desarrollo más lento desde su adquisición por Databricks.
+**Limitaciones:** La facilidad de consumir un dashboard no elimina la necesidad de preparar consultas y conexiones correctas
 
 ## Stack y modelos
 
-- **Stack:** Python, TypeScript, PostgreSQL, Redis
+- **Stack:** Servidor según guía; fuente de datos; SQL básico
 - **Etiquetas:** `analytics` `dataviz` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -85,7 +100,9 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/getredash/redash/blob/master/README.md)
 

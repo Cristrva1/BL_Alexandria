@@ -16,30 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Consultar la lista es libre; cada herramienta tiene requisitos y licencia propios |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo. |
-| Coste | Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos. |
-| Equipo | Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Los recursos MCP y agentes se han movido a una lista dedicada; el directorio no es por sí mismo un conector de CAD |
+| Coste | Sin pago a un modelo en la ruta básica. Consultar la lista es libre; cada herramienta tiene requisitos y licencia propios |
+| Equipo | Preparación según la ruta elegida. Navegador; tipo de diseño que necesitas |
 
-Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.
+Los recursos MCP y agentes se han movido a una lista dedicada; el directorio no es por sí mismo un conector de CAD
 
 ## Qué puedes hacer con él
 
 Directorio de programas, bibliotecas y recursos de diseño asistido por computadora organizados por especialidad.
 
+## Por qué destaca
+
+Usos propuestos: Encontrar software CAD; Comparar bibliotecas de geometría.
+
 ## Cómo funciona
 
-Se consulta como documentación o referencia; cada ejemplo o proyecto enlazado se evalúa por separado.
+Los recursos MCP y agentes se han movido a una lista dedicada; el directorio no es por sí mismo un conector de CAD
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y localiza la sección relacionada con tu tarea.
-2. Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.
-3. Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado.
+**Antes de empezar:**
+
+- Navegador
+- tipo de diseño que necesitas
+
+1. Escoge una herramienta de CAD paramétrico y otra de mallas y compara sus formatos de salida.
+2. Comprueba: Puedes explicar cuál se ajusta al objeto que quieres diseñar.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/mlightcad/awesome-cad/blob/main/README.md)
 
@@ -47,20 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar awesome-cad para mi objetivo y necesito pasos guiados. Lee https://github.com/mlightcad/awesome-cad/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Escoge una herramienta de CAD paramétrico y otra de mallas y compara sus formatos de salida.
+
+**Qué comprobar:** Puedes explicar cuál se ajusta al objeto que quieres diseñar.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Directorio de programas, bibliotecas y recursos de diseño asistido por computadora organizados por especialidad.
+- Encontrar software CAD
+- Comparar bibliotecas de geometría
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| buscas esta función: Directorio de programas, bibliotecas y recursos de diseño asistido por computadora organizados por especialidad. | necesitas una aplicación lista para ejecutar en lugar de material de consulta |
+| Tu objetivo encaja con estos ejemplos: Encontrar software CAD; Comparar bibliotecas de geometría | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Revisar la versión, la licencia y los requisitos del README. La revisión es documental y no acredita una instalación ejecutada.
+**Limitaciones:** Los recursos MCP y agentes se han movido a una lista dedicada; el directorio no es por sí mismo un conector de CAD
 
 ## Stack y modelos
 
+- **Stack:** Navegador; tipo de diseño que necesitas
 - **Etiquetas:** `creacion-3d` `reference`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -70,7 +91,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/mlightcad/awesome-cad/blob/main/README.md)
 

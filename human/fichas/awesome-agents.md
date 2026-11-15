@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. El directorio no ejecuta modelos; cada proyecto enlazado tiene su coste y licencia |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. No se hereda la compatibilidad de todos los proyectos citados a la lista que los reúne |
+| Coste | Sin pago a un modelo en la ruta básica. El directorio no ejecuta modelos; cada proyecto enlazado tiene su coste y licencia |
+| Equipo | Preparación según la ruta elegida. Navegador;  definir qué tarea quieres delegar |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+No se hereda la compatibilidad de todos los proyectos citados a la lista que los reúne
 
 ## Qué puedes hacer con él
 
-Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial. Agrupa frameworks, agentes y entornos de desarrollo mediante enlaces a sus repositorios.
+Directorio de herramientas y proyectos abiertos para construir y operar agentes de inteligencia artificial.
 
 ## Por qué destaca
 
-Quieres explorar alternativas de agentes antes de elegir una implementación.
+Usos propuestos: Descubrir un asistente personal que trabaja con modelos locales; Encontrar frameworks para estudiar equipos de agentes.
 
 ## Cómo funciona
 
-Agrupa frameworks, agentes y entornos de desarrollo mediante enlaces a sus repositorios.
+No se hereda la compatibilidad de todos los proyectos citados a la lista que los reúne
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+-  definir qué tarea quieres delegar
+
+1. Compara dos proyectos del mismo tipo y abre sus repositorios originales.
+2. Comprueba: Puedes explicar su diferencia y qué infraestructura necesita cada uno.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/kyrolabs/awesome-agents/blob/main/README.md)
 
@@ -51,21 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar awesome-agents para mi objetivo y necesito pasos guiados. Lee https://github.com/kyrolabs/awesome-agents/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Compara dos proyectos del mismo tipo y abre sus repositorios originales.
+
+**Qué comprobar:** Puedes explicar su diferencia y qué infraestructura necesita cada uno.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Quieres explorar alternativas de agentes antes de elegir una implementación
+- Descubrir un asistente personal que trabaja con modelos locales
+- Encontrar frameworks para estudiar equipos de agentes
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres explorar alternativas de agentes antes de elegir una implementación | no utilizas un agente o flujo compatible con estas instrucciones |
+| Tu objetivo encaja con estos ejemplos: Descubrir un asistente personal que trabaja con modelos locales; Encontrar frameworks para estudiar equipos de agentes | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Es una lista de referencia; cada proyecto necesita evaluación independiente.
+**Limitaciones:** No se hereda la compatibilidad de todos los proyectos citados a la lista que los reúne
 
 ## Stack y modelos
 
-- **Stack:** Recursos y documentación
+- **Stack:** Navegador;  definir qué tarea quieres delegar
 - **Etiquetas:** `catalogos`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -75,7 +91,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/kyrolabs/awesome-agents/blob/main/README.md)
 

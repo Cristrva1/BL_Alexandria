@@ -2,7 +2,7 @@
 
 # ⚖️ Comparativas
 
-64 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
+63 comparaciones directas: la opción recomendada de cada subcategoría frente a su rival principal.
 
 ## 🤖 Automatizar procesos y crear herramientas internas
 
@@ -39,7 +39,6 @@
 
 ## 🧑‍💻 Entender código y comprobar su calidad
 
-- [ast-grep vs Semgrep](ast-grep-vs-semgrep.md)
 - [GitNexus vs Repomix](gitnexus-vs-repomix.md)
 
 ## 🏠 Chats, modelos locales y espacios privados
@@ -90,7 +89,6 @@
 ## 🤖 WhatsApp, mensajería y chatbots
 
 - [Baileys vs whatsapp-web.js](baileys-vs-whatsapp-web-js.md)
-- [Botpress vs Typebot](botpress-vs-typebot.md)
 
 ## 🤖 CRM, ventas y marketing
 
@@ -149,6 +147,7 @@
 ## 🎬 Video con código y agentes creativos
 
 - [HyperFrames vs remotion](hyperframes-vs-remotion.md)
+- [MoviePy vs remotion](moviepy-vs-remotion.md)
 
 ## 📄 Presentaciones, diagramas y explicación visual
 

@@ -16,34 +16,51 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app. |
+| API de IA | Depende de la ruta elegida. El ejemplo usa OpenAI API; Ollama ofrece una ruta local experimental; Studio no incluye modelos |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo. |
-| Coste | El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente. |
-| Equipo | Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco. |
+| Antigravity | Integración no documentada |
+| Modelos locales | Modelos locales documentados. Está en mantenimiento; no mezcles autogen-agentchat con los paquetes de AG2 Classic |
+| Coste | El coste depende del proveedor o la ruta. El ejemplo usa OpenAI API; Ollama ofrece una ruta local experimental; Studio no incluye modelos |
+| Equipo | Preparación según la ruta elegida. Python 3.10+; entorno virtual; cliente de modelo |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Está en mantenimiento; no mezcles autogen-agentchat con los paquetes de AG2 Classic
 
 ## Qué puedes hacer con él
 
-Popularizó los sistemas multiagente que conversan para resolver tareas. Microsoft recomienda usar Agent Framework para proyectos nuevos.
+Framework de Microsoft para conversaciones entre agentes, hoy en modo mantenimiento.
 
 ## Por qué destaca
 
-Proyecto influyente con mucha documentación y ejemplos de patrones multiagente.
+Usos propuestos: Revisar un resumen entre dos agentes; Comparar dos soluciones de programación.
 
 ## Cómo funciona
 
-Agentes con roles intercambian mensajes en un runtime asíncrono basado en eventos.
+Está en mantenimiento; no mezcles autogen-agentchat con los paquetes de AG2 Classic
 
 ## Cómo empezar
 
 Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
+
+- Python 3.10+
+- entorno virtual
+- cliente de modelo
+
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+4. Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar.
+
+**Entrada documentada (bash):**
+
+```
+# Install AgentChat and OpenAI client from Extensions
+pip install -U "autogen-agentchat" "autogen-ext[openai]"
+```
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/microsoft/autogen/blob/main/README.md)
 
@@ -51,23 +68,30 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 > Quiero usar AutoGen para mi objetivo y necesito pasos guiados. Lee https://github.com/microsoft/autogen/blob/main/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Prueba un redactor y un revisor sobre un párrafo breve.
+
+**Qué comprobar:** Distingues ambos mensajes y puedes detener la conversación.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Estudiar patrones multiagente
-- Mantener proyectos existentes
-- Prototipos de debate entre agentes
+- Revisar un resumen entre dos agentes
+- Comparar dos soluciones de programación
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| mantienes un proyecto que ya usa AutoGen | empiezas algo nuevo; mira `agent-framework` |
+| Tu objetivo encaja con estos ejemplos: Revisar un resumen entre dos agentes; Comparar dos soluciones de programación | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** En modo mantenimiento: solo correcciones; el sucesor es Microsoft Agent Framework.
+**Limitaciones:** Está en mantenimiento; no mezcles autogen-agentchat con los paquetes de AG2 Classic
 
 ## Stack y modelos
 
-- **Stack:** Python, .NET
+- **Stack:** Python 3.10+; entorno virtual; cliente de modelo
 - **Etiquetas:** `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -82,7 +106,7 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Microsoft Agent Framework](agent-framework.md) | 14.7k | Framework de Microsoft para agentes y workflows multiagente en Python y .NET, sucesor de AutoGen y Semantic Kernel. |
-| [ag2](ag2.md) | 5.1k | Framework maduro para sistemas multiagente con patrones de colaboración (heredero directo de AutoGen). |
+| [ag2](ag2.md) | 5.1k | Framework AG2 actual para agentes y redes de colaboración en Python; AG2 Classic conserva por separado la API heredada autogen. |
 | [crewAI](crewai.md) | 60.9k | Framework para orquestar "crews" de agentes con roles y tareas. |
 
 ## Enlaces
@@ -92,9 +116,12 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/microsoft/autogen/blob/main/README.md)
+- [Fuente 2](https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/components/model-clients.html)
 
 ---
 

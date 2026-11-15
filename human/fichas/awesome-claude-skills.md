@@ -16,34 +16,41 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. Consultar el catálogo o material no llama a un modelo. Los ejemplos enlazados tienen requisitos propios. |
-| Claude Code | Integración no documentada |
-| Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. Leer una referencia no ejecuta un modelo. |
-| Coste | Sin pago a un modelo en la ruta básica. La consulta del material no consume una API de IA; no incluye el coste de ejecutar sus ejemplos. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. Consultar el listado no exige LLM; usar skills consume el agente y el plugin Composio añade su cuenta y condiciones |
+| Claude Code | Dentro del agente: skills o instrucciones |
+| Codex | Depende del recurso o la configuración |
+| Antigravity | Depende del recurso o la configuración |
+| Modelos locales | La función básica no necesita un modelo. El README distingue la colección del plugin connect-apps; no se atribuye la misma instalación a todos los recursos |
+| Coste | El coste depende del proveedor o la ruta. Consultar el listado no exige LLM; usar skills consume el agente y el plugin Composio añade su cuenta y condiciones |
+| Equipo | Preparación según la ruta elegida. Navegador;  agente compatible solo al utilizar una skill seleccionada |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+El README distingue la colección del plugin connect-apps; no se atribuye la misma instalación a todos los recursos
 
 ## Qué puedes hacer con él
 
-Recopilación de skills por áreas (documentos, desarrollo, datos, marketing, escritura, multimedia, productividad, seguridad) que enlaza skills oficiales de Anthropic y de la comunidad, y aloja algunas propias. Incluye el plugin connect-apps, que usa Composio para que Claude envíe correos, cree issues o publique en Slack.
+Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps.
 
 ## Por qué destaca
 
-Cubre tareas de negocio y productividad además de programación, y explica bien la diferencia entre una skill y un MCP. Su plugin de Composio añade acciones reales en apps externas, algo que las skills solas no dan.
+Usos propuestos: Encontrar instrucciones para revisar documentos de trabajo; Descubrir un conector para una aplicación que ya usas.
 
 ## Cómo funciona
 
-Es un README por categorías con enlaces a cada skill, más algunas carpetas de skills dentro del propio repo. El plugin connect-apps se carga en Claude Code y delega la autenticación y las llamadas a la plataforma de Composio.
+El README distingue la colección del plugin connect-apps; no se atribuye la misma instalación a todos los recursos
 
 ## Cómo empezar
 
 Material para leer. [Entender los términos](../vocabulario.md).
 
-1. Abre el material original y elige un capítulo o ejemplo.
-2. Revisa los requisitos de ese ejemplo antes de instalar dependencias.
-3. Usa las alternativas y recetas para situarlo dentro de tu proyecto.
+**Antes de empezar:**
+
+- Navegador
+-  agente compatible solo al utilizar una skill seleccionada
+
+1. Elige una skill del listado y abre su archivo o repositorio de origen.
+2. Comprueba: Puedes explicar qué entrada necesita y cómo la instalarías en tu cliente.
+
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md)
 
@@ -51,23 +58,30 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 > Quiero usar Awesome Claude Skills para mi objetivo y necesito pasos guiados. Lee https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Elige una skill del listado y abre su archivo o repositorio de origen.
+
+**Qué comprobar:** Puedes explicar qué entrada necesita y cómo la instalarías en tu cliente.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Encontrar skills de documentos, datos o marketing para Claude
-- Conectar Claude a Gmail, Slack o GitHub mediante Composio
-- Ver ejemplos de skills de comunidad antes de crear la tuya
+- Encontrar instrucciones para revisar documentos de trabajo
+- Descubrir un conector para una aplicación que ya usas
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| usas Claude para tareas de negocio además de código y quieres skills ordenadas por área de trabajo | solo quieres skills de procedencia oficial; mira `anthropic-skills` o `awesome-agent-skills` |
+| Tu objetivo encaja con estos ejemplos: Encontrar instrucciones para revisar documentos de trabajo; Descubrir un conector para una aplicación que ya usas | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**Limitaciones:** Mezcla skills de terceros de calidad desigual y promociona Composio; el plugin de apps requiere cuenta y API key de Composio.
+**Limitaciones:** El README distingue la colección del plugin connect-apps; no se atribuye la misma instalación a todos los recursos
 
 ## Stack y modelos
 
-- **Stack:** Markdown, Python, Composio (plugin connect-apps)
+- **Stack:** Navegador;  agente compatible solo al utilizar una skill seleccionada
 - **Etiquetas:** `skills` `automation` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -84,7 +98,7 @@ Material para leer. [Entender los términos](../vocabulario.md).
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Awesome Agent Skills](awesome-agent-skills.md) | 37.2k | Lista curada de más de 1.000 skills de equipos oficiales (Anthropic, Vercel, Stripe, Supabase...) y de la comunidad, para varios agentes. |
-| [Agentic Awesome Skills](antigravity-awesome-skills.md) | 49.7k | Biblioteca comunitaria de más de 2.800 skills SKILL.md para Claude Code, Codex, Cursor y Gemini CLI, con instalador npx y MCP local. |
+| [Agentic Awesome Skills (AAS)](antigravity-awesome-skills.md) | 49.7k | Biblioteca de skills para varios agentes con selección revisable y distribución desde GitHub; antes llamada Antigravity Awesome Skills. |
 | [Awesome Claude Code](awesome-claude-code.md) | 58k | Lista curada de recursos para Claude Code: skills, plugins, hooks, status lines, orquestadores, clientes alternativos y guías. |
 
 ## Enlaces
@@ -93,7 +107,9 @@ Material para leer. [Entender los términos](../vocabulario.md).
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md)
 

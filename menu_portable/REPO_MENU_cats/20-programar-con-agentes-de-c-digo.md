@@ -6,110 +6,157 @@
 ## `aider`
 role=runtime · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,local · tags=coding-agent,python
 
-**Qué es:** Le pides cambios en lenguaje natural y Aider edita los archivos y confirma cada cambio en Git. Funciona con casi cualquier modelo.
-**Stack:** Python, tree-sitter, Git
+**Qué es:** Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos.
+**Stack:** Python; Git; proveedor o modelo local; repositorio de prueba
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: API de IA opcional. APIs remotas por consumo o modelos locales según configuración; no aporta créditos
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Sus modelos de ejemplo incluyen versiones antiguas; la presencia de Claude en la lista no implica una suscripción Claude Code
+- Coste: El coste depende del proveedor o la ruta. APIs remotas por consumo o modelos locales según configuración; no aporta créditos
+- Equipo: Preparación según la ruta elegida. Python; Git; proveedor o modelo local; repositorio de prueba
 **Repo:** https://github.com/Aider-AI/aider
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/Aider-AI/aider/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres un agente sencillo que trabaje con Git paso a paso
-**Evita si:** necesitas autonomía en tareas largas; mira `claude-code`
+```
+python -m pip install aider-install
+aider-install
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Corregir una función pequeña; Programar en pareja desde terminal
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Abre una copia de un proyecto y pide una explicación antes de aceptar cambios y commits
+**Qué comprobar:** Puedes revisar archivos incluidos y cualquier diff propuesto
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `litellm`
 **Alternativas (elige una):** `opencode`, `cline`, `continue`
 
 ## `claude-code`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=anthropic,mcp · tags=coding-agent,agents,mcp,typescript
 
-**Qué es:** Lee y edita archivos, ejecuta comandos, hace commits y abre PRs a partir de instrucciones en lenguaje natural. Se extiende con skills, plugins, subagentes, hooks y servidores MCP.
-**Stack:** TypeScript, Node.js
+**Qué es:** Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio.
+**Stack:** Equipo compatible; terminal; cuenta de Claude o proveedor elegido; carpeta de prueba
 **Acceso y costes:**
-- API de IA: API de IA opcional. Puede utilizarse con sesión del plan compatible o con API key; no son la misma facturación.
+- API de IA: API de IA opcional. El cliente oficial admite suscripción o cuenta Console según ruta; Ollama documenta modelos locales y nube separada
 - Claude Code: Acceso oficial con sesión del plan
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. La ruta local procede de la integración de Ollama y necesita modelos compatibles con herramientas; las funciones y el acceso no son idénticos a Claude alojado
+- Coste: El coste depende del proveedor o la ruta. El cliente oficial admite suscripción o cuenta Console según ruta; Ollama documenta modelos locales y nube separada
+- Equipo: Preparación según la ruta elegida. Equipo compatible; terminal; cuenta de Claude o proveedor elegido; carpeta de prueba
 **Repo:** https://github.com/anthropics/claude-code
 
-**Instalación** [+]: `winget install Anthropic.ClaudeCode`
+**Instalación** [+]:
+
+```
+winget install Anthropic.ClaudeCode
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres el agente de código más capaz para tareas largas en tu repo
-**Evita si:** necesitas un agente totalmente abierto y multi-modelo; mira `opencode`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Entender código sin editar; Preparar una propuesta de corrección
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Instala el CLI para tu sistema, comprueba la versión y pide explicar un archivo sin modificarlo
+**Qué comprobar:** Puedes revisar el archivo citado y la configuración de acceso
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `superpowers`, `anthropic-skills`, `claude-mem`, `context7`
 **Alternativas (elige una):** `codex`, `gemini-cli`, `opencode`, `goose`
 
 ## `cline`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=coding-agent,agents,typescript
 
-**Qué es:** Planifica, edita archivos, ejecuta comandos y usa el navegador pidiendo aprobación en cada paso. Admite MCP y casi cualquier proveedor.
-**Stack:** TypeScript, VS Code API
+**Qué es:** Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo.
+**Stack:** Node para CLI o editor compatible; proveedor o Ollama; proyecto de prueba
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: API de IA opcional. API o servicios del proveedor según elección; Ollama y LM Studio permiten inferencia local
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Cline es su propio agente; soportar modelos Claude u OpenAI no equivale a usar una suscripción de Claude Code o Codex
+- Coste: El coste depende del proveedor o la ruta. API o servicios del proveedor según elección; Ollama y LM Studio permiten inferencia local
+- Equipo: Preparación según la ruta elegida. Node para CLI o editor compatible; proveedor o Ollama; proyecto de prueba
 **Repo:** https://github.com/cline/cline
 
-**Instalación** [+]: `npm i -g cline`
+**Instalación** [+]:
+
+```
+npm i -g cline
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres un agente dentro de VS Code con control de cada paso
-**Evita si:** trabajas solo en terminal; mira `opencode`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explicar un error de código; Comparar una propuesta antes de editar
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Usa Plan mode para pedir un diagnóstico de un archivo antes de pasar a Act
+**Qué comprobar:** Puedes revisar el plan y los permisos solicitados
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `context7`, `playwright-mcp`
 **Alternativas (elige una):** `continue`, `aider`
 
 ## `codex`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=openai,mcp · tags=coding-agent,agents,rust
 
-**Qué es:** Lee tu repositorio, propone y aplica cambios y ejecuta comandos dentro de un sandbox. Usa AGENTS.md para el contexto del proyecto y admite MCP.
-**Stack:** Rust, TypeScript
+**Qué es:** Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source.
+**Stack:** Node o binario adecuado; terminal; proyecto de prueba; cuenta o backend local
 **Acceso y costes:**
-- API de IA: API de IA opcional. Puede utilizarse con sesión del plan compatible o con API key; no son la misma facturación.
+- API de IA: API de IA opcional. Acceso oficial con plan de ChatGPT elegible o API con facturación separada; Ollama documenta la ruta --oss local
 - Claude Code: Integración no documentada
 - Codex: Acceso oficial con sesión del plan
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El CLI corre en tu equipo pero el modelo puede ser remoto; --oss distingue la inferencia local y los servicios de búsqueda pueden seguir siendo externos
+- Coste: El coste depende del proveedor o la ruta. Acceso oficial con plan de ChatGPT elegible o API con facturación separada; Ollama documenta la ruta --oss local
+- Equipo: Preparación según la ruta elegida. Node o binario adecuado; terminal; proyecto de prueba; cuenta o backend local
 **Repo:** https://github.com/openai/codex
 
-**Instalación** [+]: `npm install -g @openai/codex`
+**Instalación** [+]:
+
+```
+# Install using npm
+npm install -g @openai/codex
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** usas ChatGPT u OpenAI y quieres un agente abierto en terminal
-**Evita si:** trabajas con Claude como modelo principal; mira `claude-code`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar un proyecto; Preparar un cambio y revisar su diff
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Instala el CLI, inicia sesión por la ruta elegida y solicita una explicación sin cambios
+**Qué comprobar:** Puedes comprobar los archivos usados y el alcance de la propuesta
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `agent-skills`, `spec-kit`, `context7`
 **Alternativas (elige una):** `claude-code`, `gemini-cli`, `opencode`
 
 ## `continue`
 role=runtime · exec=hybrid · setup=easy · mcp=False · prov=openai,anthropic,local · tags=coding-agent,typescript
 
-**Qué es:** Integra chat, edición y autocompletado en el IDE con cualquier modelo, y permite ejecutar comprobaciones de IA en los PRs.
-**Stack:** TypeScript, Kotlin
+**Qué es:** Agente para CLI y editores con versión final 2.0.0; el repositorio declara fin de mantenimiento activo.
+**Stack:** Editor o CLI correspondiente a la versión final; proveedor configurado
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: API de IA opcional. Código Apache; costes del proveedor o cómputo local separados
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El README declara repositorio de solo lectura sin mantenimiento activo y una versión final 2.0.0; la documentación todavía describe Ollama pero no prueba soporte futuro
+- Coste: El coste depende del proveedor o la ruta. Código Apache; costes del proveedor o cómputo local separados
+- Equipo: Preparación según la ruta elegida. Editor o CLI correspondiente a la versión final; proveedor configurado
 **Repo:** https://github.com/continuedev/continue
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/continuedev/continue/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/continuedev/continue/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres autocompletado y chat en el IDE con modelos a elección
-**Evita si:** buscas un agente autónomo para tareas largas; mira `cline`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una extensión de código abierta; Revisar integración con Ollama
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Lee el aviso de fin de mantenimiento y revisa si la versión final cubre tu caso antes de usarla
+**Qué comprobar:** Puedes distinguir código histórico y documentación de configuración
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`
 **Alternativas (elige una):** `cline`, `aider`
 
@@ -117,297 +164,422 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=coding,plugin,typescript
 
 **Qué es:** Plugin de DeepSeek Harness para operar un emulador o dispositivo Android y revisar aplicaciones desde el agente.
-**Stack:** TypeScript, package.json
+**Stack:** DeepSeek Harness con web; Android SDK y adb; emulador o dispositivo propio
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El plugin usa el modelo del anfitrión; Android SDK y equipo son requisitos separados y no incluye créditos
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
-- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
-- Otras rutas: Plugin para DeepSeek Harness (DSH). La cuenta, API o modelo se configura en ese anfitrión; no se declara instalación nativa en Claude Code o Codex.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. La integración es con DSH; DSH Crew es otro proyecto y no convierte este plugin en integración directa de Claude Code o Codex
+- Coste: Consumo del agente que ya utilizas. El plugin usa el modelo del anfitrión; Android SDK y equipo son requisitos separados y no incluye créditos
+- Equipo: Preparación según la ruta elegida. DeepSeek Harness con web; Android SDK y adb; emulador o dispositivo propio
 **Repo:** https://github.com/ZSeven-W/dsh-android
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/ZSeven-W/dsh-android/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** buscas esta función: Plugin de DeepSeek Harness para operar un emulador o dispositivo Android y revisar aplicaciones desde el agente.
-**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+```
+dsh plugin --profile web add @zseven-w/dsh-android@latest
+dsh web
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Inspeccionar una app Android de prueba; Recoger logcat de una app propia
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Lista dispositivos con android_devices y consulta el estado antes de pedir acciones
+**Qué comprobar:** Puedes identificar el emulador o dispositivo y su autorización
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `dsh-game-studio`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=coding,plugin,typescript
 
 **Qué es:** Plugin de DeepSeek Harness para preparar y probar juegos pequeños con una interfaz de trabajo dentro del agente.
-**Stack:** TypeScript, package.json
+**Stack:** DSH con web; plantilla de juego; proveedor de arte solo si lo activas
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- API de IA: API de IA opcional. El agente usa su proveedor; el arte opcional admite API OpenAI o CLI Codex con su plan y una confirmación de coste
 - Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
-- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
-- Otras rutas: Plugin para DeepSeek Harness (DSH). La cuenta, API o modelo se configura en ese anfitrión; no se declara instalación nativa en Claude Code o Codex.
+- Codex: Integración documentada por el proyecto
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. La integración Codex corresponde a generar imágenes y no a instalar todo el plugin como skill de Codex; exportar no equivale a publicar
+- Coste: El coste depende del proveedor o la ruta. El agente usa su proveedor; el arte opcional admite API OpenAI o CLI Codex con su plan y una confirmación de coste
+- Equipo: Preparación según la ruta elegida. DSH con web; plantilla de juego; proveedor de arte solo si lo activas
 **Repo:** https://github.com/ZSeven-W/dsh-game-studio
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/ZSeven-W/dsh-game-studio/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** buscas esta función: Plugin de DeepSeek Harness para preparar y probar juegos pequeños con una interfaz de trabajo dentro del agente.
-**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+```
+dsh plugin --profile web add @zseven-w/dsh-game-studio@latest
+dsh web
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Crear un minijuego educativo; Prototipar mecánicas con plantillas 2D
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Genera un juego pequeño con recursos de plantilla y pruébalo antes de solicitar arte o publicar
+**Qué comprobar:** Puedes jugar la demo e inspeccionar su HTML exportado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `dsh-ios`
 role=library · exec=local · setup=medium · mcp=False · prov=— · tags=coding,plugin,typescript
 
 **Qué es:** Plugin de DeepSeek Harness para desarrollar y operar aplicaciones en simuladores iOS o dispositivos compatibles.
-**Stack:** TypeScript, package.json
+**Stack:** macOS; Xcode completo; runtime iOS Simulator; DSH con web
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. Las instrucciones o el plugin utilizan el acceso del agente anfitrión; las herramientas conectadas pueden requerir credenciales propias.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El plugin usa el modelo del anfitrión; dispositivos, firma y servicios Apple tienen condiciones separadas
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. Estas instrucciones no incluyen un modelo. El modelo y su ubicación dependen del agente anfitrión.
-- Coste: Consumo del agente que ya utilizas. Necesitas acceso al agente compatible. Comprueba además los recursos, APIs y servicios que active cada función.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
-- Otras rutas: Plugin para DeepSeek Harness (DSH). La cuenta, API o modelo se configura en ese anfitrión; no se declara instalación nativa en Claude Code o Codex.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Fuera de macOS las herramientas devuelven error explicativo; inspirarse en un plugin de Codex no significa ser compatible directamente con él
+- Coste: Consumo del agente que ya utilizas. El plugin usa el modelo del anfitrión; dispositivos, firma y servicios Apple tienen condiciones separadas
+- Equipo: Preparación según la ruta elegida. macOS; Xcode completo; runtime iOS Simulator; DSH con web
 **Repo:** https://github.com/ZSeven-W/dsh-ios
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/ZSeven-W/dsh-ios/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** buscas esta función: Plugin de DeepSeek Harness para desarrollar y operar aplicaciones en simuladores iOS o dispositivos compatibles.
-**Evita si:** necesitas un producto autónomo y esta pieza requiere un anfitrión compatible
+```
+dsh plugin --profile web add @zseven-w/dsh-ios@latest
+dsh web
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Inspeccionar una interfaz iOS propia; Revisar logs de una app de prueba
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Lista simuladores con ios_sim_devices y comprueba el runtime antes de iniciar una app de ejemplo
+**Qué comprobar:** Puedes identificar simulador y herramientas disponibles
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `gemini-cli`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=google,mcp · tags=coding-agent,agents,typescript
 
-**Qué es:** Programa, investiga y automatiza tareas desde la terminal con contexto de millones de tokens y búsqueda de Google integrada. Admite MCP y extensiones.
-**Stack:** TypeScript, Node.js
+**Qué es:** Agente de terminal de Google. Su aviso actual diferencia el acceso empresarial de Gemini Code Assist, Antigravity CLI para usuarios individuales y Gemini API CLI para llamadas sin estado. Revisa esa distinción antes de instalar o asumir una cuota gratuita.
+**Stack:** Node; acceso empresarial Code Assist o credenciales admitidas; proyecto de prueba
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. El proveedor y la función elegidos determinan si hacen falta credenciales de IA.
+- API de IA: API de IA opcional. El README actual lo destina a Code Assist Standard o Enterprise y rutas API o Vertex heredadas; no promete cuota individual gratuita
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
-- Otras rutas: El README documenta acceso con una cuenta de Google mediante OAuth y rutas con API key. Consultar las cuotas del método elegido.
+- Antigravity: Referencia para la herramienta; no es una integración
+- Modelos locales: Modelo local no documentado. El acceso individual y Google AI Pro o Ultra se remiten a Antigravity CLI, un producto separado; sustituye la descripción antigua de cuota gratuita
+- Coste: El coste depende del proveedor o la ruta. El README actual lo destina a Code Assist Standard o Enterprise y rutas API o Vertex heredadas; no promete cuota individual gratuita
+- Equipo: Preparación según la ruta elegida. Node; acceso empresarial Code Assist o credenciales admitidas; proyecto de prueba
 **Repo:** https://github.com/google-gemini/gemini-cli
 
-**Instalación** [+]: `npx @google/gemini-cli`
+**Instalación** [+]:
+
+```
+# Using npx (no installation required)
+npx @google/gemini-cli
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres un agente de terminal potente con cuota gratuita
-**Evita si:** buscas el agente con mejor desempeño en tareas largas; mira `claude-code`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un agente empresarial de Google; Planificar una migración de CLI
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Lee primero el aviso de acceso y comprueba si corresponde este CLI empresarial o Antigravity CLI
+**Qué comprobar:** Puedes elegir el producto de Google apropiado antes de instalar
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `stitch-skills`, `context7`
 **Alternativas (elige una):** `claude-code`, `codex`, `opencode`
 
 ## `goose`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=coding-agent,agents,mcp,rust
 
-**Qué es:** Funciona como app de escritorio o CLI y va más allá del código: automatiza tareas de desarrollo y de sistema con extensiones MCP. Nacido en Block.
-**Stack:** Rust, TypeScript, Electron
+**Qué es:** Agente de IA open source, extensible por MCP, que instala, ejecuta, edita y prueba con cualquier LLM.
+**Stack:** CLI o app; proveedor o agente ACP autenticado; proyecto de prueba
 **Acceso y costes:**
-- API de IA: API de IA opcional. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: API de IA opcional. Documenta API, modelos locales Ollama y agentes ACP con cuentas Claude, ChatGPT o Gemini; aplican límites del servicio elegido
 - Claude Code: Integración documentada por el proyecto
 - Codex: Integración documentada por el proyecto
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
-- Otras rutas: El README también documenta proveedores ACP para utilizar acceso de Gemini, además de APIs y modelos locales.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Los proveedores y extensiones tienen requisitos diferentes; la integración ACP no incluye créditos ni garantiza todas las funciones de cada agente
+- Coste: El coste depende del proveedor o la ruta. Documenta API, modelos locales Ollama y agentes ACP con cuentas Claude, ChatGPT o Gemini; aplican límites del servicio elegido
+- Equipo: Preparación según la ruta elegida. CLI o app; proveedor o agente ACP autenticado; proyecto de prueba
 **Repo:** https://github.com/aaif-goose/goose
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/aaif-goose/goose/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://goose-docs.ai/docs/getting-started/installation
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres un agente abierto con app de escritorio y MCP
-**Evita si:** solo programas en terminal y quieres el más usado; mira `opencode`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Automatizar una tarea de desarrollo; Comparar agentes conectados por ACP
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Configura un proveedor y solicita resumir una carpeta pequeña antes de añadir extensiones
+**Qué comprobar:** Puedes reconocer herramientas y contexto usados en la respuesta
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `playwright-mcp`, `github-mcp-server`
 **Alternativas (elige una):** `opencode`, `claude-code`, `open-interpreter`
 
 ## `mimo-code`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=coding,ai,ai-agents,cli,mimo,mimo-code,typescript
 
-**Qué es:** Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente. Mantiene el contexto del proyecto y usa herramientas para ejecutar tareas de desarrollo desde una conversación.
-**Stack:** TypeScript, Node.js
+**Qué es:** Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente.
+**Stack:** Terminal; cuenta o proveedor admitido; carpeta de prueba
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
-- Otras rutas: El README documenta acceso al proveedor Xiaomi MiMo con OAuth o configuración del proveedor. No equivale a usar un plan de Claude o Codex.
+- API de IA: API de IA opcional. Documenta MiMo OAuth, Codex Plus o Pro e importación de autenticación Claude Code además de API; los términos y límites dependen de cada servicio
+- Claude Code: Integración documentada por el proyecto
+- Codex: Integración documentada por el proyecto
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Son adaptadores de terceros y la importación de credenciales no demuestra autorización universal del proveedor; no se confirma una ruta local en este README
+- Coste: El coste depende del proveedor o la ruta. Documenta MiMo OAuth, Codex Plus o Pro e importación de autenticación Claude Code además de API; los términos y límites dependen de cada servicio
+- Equipo: Preparación según la ruta elegida. Terminal; cuenta o proveedor admitido; carpeta de prueba
 **Repo:** https://github.com/XiaomiMiMo/MiMo-Code
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/XiaomiMiMo/MiMo-Code/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/XiaomiMiMo/MiMo-Code/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres evaluar el agente de código del ecosistema Xiaomi MiMo
-**Evita si:** un flujo determinista resuelve el problema sin un agente
+**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un asistente de terminal; Estudiar memoria y herramientas del proyecto
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Sigue el primer inicio y comprueba proveedor y modelo antes de pedir explicar un archivo
+**Qué comprobar:** Puedes identificar la ruta de autenticación y revisar la respuesta
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `open-interpreter`
 role=runtime · exec=local · setup=easy · mcp=False · prov=openai,local · tags=coding-agent,local,rust
 
-**Qué es:** Ejecuta código y comandos en tu máquina para cumplir tareas descritas en lenguaje natural. Su versión actual se enfoca en modelos abiertos.
-**Stack:** Rust, Python
+**Qué es:** Agente de código para modelos abiertos como Kimi y GLM, pensado para correr con modelos locales o baratos.
+**Stack:** Terminal; instalador del sistema; proveedor configurado; carpeta de prueba
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- API de IA: Depende de la ruta elegida. El proveedor elegido define autenticación y coste; llamar abierto a un modelo no acredita que la inferencia se haga localmente
+- Claude Code: Referencia para la herramienta; no es una integración
+- Codex: Integración documentada por el proyecto
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. La versión actual está escrita en Rust y deriva de Codex; su compatibilidad con el SDK mediante override no implica acceso al plan de Codex; la versión Python tiene otra continuación
+- Coste: El coste depende del proveedor o la ruta. El proveedor elegido define autenticación y coste; llamar abierto a un modelo no acredita que la inferencia se haga localmente
+- Equipo: Preparación según la ruta elegida. Terminal; instalador del sistema; proveedor configurado; carpeta de prueba
 **Repo:** https://github.com/openinterpreter/openinterpreter
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/openinterpreter/openinterpreter/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://www.openinterpreter.com/docs/terminal/install
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres un agente que ejecute código usando modelos abiertos
-**Evita si:** buscas un agente maduro para repos grandes; mira `opencode`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Probar un agente con distintos harnesses; Reutilizar un cliente del SDK de Codex
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Arranca interpreter y revisa modelo y harness antes de pedir una explicación de código
+**Qué comprobar:** Puedes identificar proveedor y permisos sin ejecutar cambios
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `e2b`
 **Alternativas (elige una):** `goose`
 
 ## `open-swe`
 role=runtime · exec=cloud · setup=medium · mcp=False · prov=anthropic,openai · tags=coding-agent,agents,python
 
-**Qué es:** Trabaja en segundo plano a partir de issues o mensajes, planifica, programa en un sandbox y abre PRs. Inspirado en los agentes internos de empresas como Stripe o Ramp.
-**Stack:** Python, LangGraph, TypeScript
+**Qué es:** Robin, fábrica de cambios sobre Deep Agents que despliega con Managed Deep Agents y entrega propuestas revisables.
+**Stack:** Managed Deep Agents para despliegue actual; repositorio y permisos de prueba; servicios integrados
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: API de IA necesaria. El despliegue tal como está requiere Managed Deep Agents y servicios asociados; adaptar a otro runtime requiere trabajo adicional
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. El proyecto se presenta actualmente como Robin construido sobre Deep Agents; MIT cubre su código y no concede acceso a todos los servicios
+- Coste: Consumo de APIs o servicios. El despliegue tal como está requiere Managed Deep Agents y servicios asociados; adaptar a otro runtime requiere trabajo adicional
+- Equipo: Preparación según la ruta elegida. Managed Deep Agents para despliegue actual; repositorio y permisos de prueba; servicios integrados
 **Repo:** https://github.com/langchain-ai/open-swe
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/langchain-ai/open-swe/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/langchain-ai/open-swe/blob/main/docs/INSTALLATION.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres construir el agente de código interno de tu empresa
-**Evita si:** solo quieres un agente para tu terminal; mira `claude-code`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Diseñar una fábrica interna de cambios; Estudiar un agente asíncrono con revisión
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Lee el flujo de issue a PR y prueba un issue ficticio sin habilitar entregas automáticas
+**Qué comprobar:** Puedes inspeccionar planificación, sandbox y validación por separado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `langgraph`, `e2b`
 **Alternativas (elige una):** `openhands`, `swe-agent`
 
 ## `openclaude`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=coding,ai,ai-agent,ai-tools,cli,typescript
 
-**Qué es:** Agente de código abierto para terminal que conecta proveedores remotos y modelos locales con herramientas y MCP. Mantiene una conversación de desarrollo con streaming, comandos y herramientas sobre el workspace.
-**Stack:** TypeScript, Docker, Node.js
+**Qué es:** Agente de código abierto para terminal que conecta proveedores remotos y modelos locales con herramientas y MCP.
+**Stack:** Node >=24.22.1; proveedor o Ollama; carpeta de prueba
 **Acceso y costes:**
-- API de IA: API de IA opcional. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: API de IA opcional. Admite modelos locales y proveedores remotos con API u OAuth; las cuotas dependen de la ruta elegida
 - Claude Code: Integración no documentada
 - Codex: Integración documentada por el proyecto
-- Modelos locales: Modelos locales documentados. La ruta local está documentada; hay que instalar o descargar un modelo compatible.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. El tamaño y cuantización del modelo determinan RAM, VRAM y disco. No se promete rendimiento sin una prueba.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El paquete actual es @twigpine/openclaude; no es Claude Code y el autor indica no copiar indiscriminadamente sus credenciales ni .claude
+- Coste: El coste depende del proveedor o la ruta. Admite modelos locales y proveedores remotos con API u OAuth; las cuotas dependen de la ruta elegida
+- Equipo: Preparación según la ruta elegida. Node >=24.22.1; proveedor o Ollama; carpeta de prueba
 **Repo:** https://github.com/Twigpine/openclaude
 
-**Instalación** [+]: `npm install -g @twigpine/openclaude@latest`
+**Instalación** [+]:
+
+```
+npm install -g @twigpine/openclaude@latest
+```
+
 _Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
-**Elige si:** quieres evaluar un agente de terminal compatible con varios backends
-**Evita si:** un flujo determinista resuelve el problema sin un agente
+**Elige si:** Tu objetivo encaja con estos ejemplos: Usar un agente con Ollama; Comparar un backend API con Codex OAuth
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Instala el paquete actual y configura un modelo antes de solicitar una explicación sin edición
+**Qué comprobar:** Puedes revisar proveedor, contexto y permisos
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `opencode`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=coding-agent,agents,typescript
 
-**Qué es:** Ofrece una TUI cuidada, modo cliente-servidor, LSP y agentes configurables. Sirve si quieres un agente libre de proveedor.
-**Stack:** TypeScript, Go, Bun
+**Qué es:** Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales.
+**Stack:** Node para npm; repositorio de prueba; cuenta de proveedor o Ollama
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: API de IA opcional. Admite proveedores por API, ChatGPT Plus o Pro mediante su adaptador y modelos locales con Ollama, LM Studio o vLLM
 - Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Codex: Integración documentada por el proyecto
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El paquete actual es @opencode/cli; no confundir con el antiguo opencode-ai archivado; la integración ChatGPT no convierte el proyecto en un cliente oficial de Codex
+- Coste: El coste depende del proveedor o la ruta. Admite proveedores por API, ChatGPT Plus o Pro mediante su adaptador y modelos locales con Ollama, LM Studio o vLLM
+- Equipo: Preparación según la ruta elegida. Node para npm; repositorio de prueba; cuenta de proveedor o Ollama
 **Repo:** https://github.com/anomalyco/opencode
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/anomalyco/opencode/blob/dev/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres un agente de código abierto y multi-modelo
-**Evita si:** prefieres la experiencia oficial de un proveedor; mira `claude-code` o `codex`
+```
+npm i -g @opencode/cli@latest      # or bun/pnpm/yarn
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Comprender un repositorio nuevo; Planificar una corrección pequeña
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Abre una copia de un proyecto en modo plan y pide que explique su estructura
+**Qué comprobar:** Obtienes una explicación contrastable antes de permitir ediciones
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `litellm`, `awesome-agent-skills`
 **Alternativas (elige una):** `claude-code`, `codex`, `goose`, `gemini-cli`, `aider`
 
 ## `opencode-legacy`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=coding,ai,claude,code,llm,openai,go
 
-**Qué es:** Agente de código en Go del antiguo proyecto opencode-ai, archivado y continuado bajo el nombre Crush. Conserva una interfaz de terminal y el historial del agente original para consulta.
-**Stack:** Go, Go modules
+**Qué es:** Agente de código en Go del antiguo proyecto opencode-ai, archivado y continuado bajo el nombre Crush.
+**Stack:** Navegador; interés en la versión histórica
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. Consultar el código no cuesta API; ejecutarlo necesitaría proveedor y recursos propios
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Archivado por procedencia y sin mantenimiento; no se recomienda su instalador antiguo como ruta inicial actual
+- Coste: El coste depende del proveedor o la ruta. Consultar el código no cuesta API; ejecutarlo necesitaría proveedor y recursos propios
+- Equipo: Preparación según la ruta elegida. Navegador; interés en la versión histórica
 **Repo:** https://github.com/opencode-ai/opencode
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/opencode-ai/opencode/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [?]:
 
-**Elige si:** necesitas estudiar la implementación histórica de OpenCode en Go
-**Evita si:** un flujo determinista resuelve el problema sin un agente
+```
+Consultar el material original; elegir un ejemplo antes de instalar.
+```
+
+_Una referencia no se instala como un servicio único._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un agente terminal en Go; Comprender la evolución hacia Crush
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Lee el aviso de archivo y sigue el enlace a Crush si buscas la continuación mantenida
+**Qué comprobar:** Puedes distinguir este proyecto del OpenCode de anomalyco
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `opencode-manager`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=coding,agent,typescript
 
 **Qué es:** Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil.
-**Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+**Stack:** Docker Compose v2 o entorno de desarrollo; OpenCode; proveedor configurado
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. El agente o la pasarela necesita un proveedor. Comprueba en su configuración la ruta de sesión, API o modelo elegida.
+- API de IA: Depende de la ruta elegida. Alojamiento y modelo de OpenCode se pagan o ejecutan según configuración; el panel no incorpora créditos
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: El coste depende del proveedor o la ruta. El código de la aplicación no incluye el consumo de su proveedor. Comprueba plan, cuotas, infraestructura y servicios conectados.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. Este panel es para OpenCode; no se deduce compatibilidad directa con Claude Code o Codex por usar tecnologías similares
+- Coste: El coste depende del proveedor o la ruta. Alojamiento y modelo de OpenCode se pagan o ejecutan según configuración; el panel no incorpora créditos
+- Equipo: Preparación según la ruta elegida. Docker Compose v2 o entorno de desarrollo; OpenCode; proveedor configurado
 **Repo:** https://github.com/chriswritescode-dev/opencode-manager
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/chriswritescode-dev/opencode-manager/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://opencodemanager.app/docs/getting-started/installation
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+**Elige si:** Tu objetivo encaja con estos ejemplos: Gestionar sesiones desde el navegador; Consultar un proyecto desde el móvil
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Crea una sesión en un repositorio de ejemplo y revisa cambios sin programar tareas todavía
+**Qué comprobar:** Puedes reconocer la sesión, terminal y estado Git
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `opencursor`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=— · tags=coding,agent,ai,code,coder,cursor,extension,ide
 
-**Qué es:** Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos. Integra conversación y acciones sobre el workspace con proveedores remotos o locales y herramientas MCP.
-**Stack:** TypeScript, Node.js
+**Qué es:** Extensión abierta de VS Code con chat de agente, búsqueda semántica, herramientas y conexión a varios modelos.
+**Stack:** VS Code; extensión o VSIX; cuenta, API u Ollama/llama.cpp; proyecto de prueba
 **Acceso y costes:**
-- API de IA: API de IA opcional. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: API de IA opcional. Admite cuentas de Claude Code, Codex y Antigravity por flujos del proyecto, API y modelos locales; costes y cuotas son externos
 - Claude Code: Integración documentada por el proyecto
 - Codex: Integración documentada por el proyecto
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración documentada por el proyecto
+- Modelos locales: Modelos locales documentados. Es una extensión independiente; las rutas de cuenta no la convierten en producto oficial de esos proveedores y los servicios de embeddings pueden ser distintos del modelo
+- Coste: El coste depende del proveedor o la ruta. Admite cuentas de Claude Code, Codex y Antigravity por flujos del proyecto, API y modelos locales; costes y cuotas son externos
+- Equipo: Preparación según la ruta elegida. VS Code; extensión o VSIX; cuenta, API u Ollama/llama.cpp; proyecto de prueba
 **Repo:** https://github.com/PawanOsman/OpenCursor
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/PawanOsman/OpenCursor/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/PawanOsman/OpenCursor/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** quieres evaluar un agente de código integrado en VS Code
-**Evita si:** un flujo determinista resuelve el problema sin un agente
+**Elige si:** Tu objetivo encaja con estos ejemplos: Trabajar con un agente dentro de VS Code; Comparar inferencia local con cuenta remota
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Instala la extensión y usa un modelo local o cuenta para explicar un archivo antes de permitir comandos
+**Qué comprobar:** Puedes revisar contexto enviado, modelo y diff propuesto
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `openhands`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,automation,typescript,docker
 
-**Qué es:** El agente puede leer y editar código, correr comandos y navegar la web dentro de un sandbox.
-**Stack:** Python/TS, Docker
+**Qué es:** Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP.
+**Stack:** Node 24 o posterior; uv; repositorio de prueba; agente autenticado; Docker según backend
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
-- Claude Code: Integración no documentada
-- Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- API de IA: API de IA opcional. Canvas usa el proveedor o plan del agente y la infraestructura elegida; ejecutar localmente la interfaz no elimina la facturación del modelo
+- Claude Code: Integración documentada por el proyecto
+- Codex: Integración documentada por el proyecto
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. El README actual presenta Agent Canvas con OpenHands, Claude Code, Codex y agentes ACP; la receta de Docker limita el puerto al equipo local
+- Coste: El coste depende del proveedor o la ruta. Canvas usa el proveedor o plan del agente y la infraestructura elegida; ejecutar localmente la interfaz no elimina la facturación del modelo
+- Equipo: Preparación según la ruta elegida. Node 24 o posterior; uv; repositorio de prueba; agente autenticado; Docker según backend
 **Repo:** https://github.com/OpenHands/OpenHands
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/OpenHands/OpenHands/blob/main/README.md`
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+**Instalación** [+]:
 
-**Elige si:** quieres un agente que "haga", no solo hable
-**Evita si:** solo necesitas chat/RAG o no puedes correr Docker
+```
+npm install -g @openhands/agent-canvas
+agent-canvas
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Centralizar sesiones de agentes; Preparar una automatización de ingeniería
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Arranca Agent Canvas y crea una sesión que solo examine un proyecto de ejemplo
+**Qué comprobar:** Puedes reconocer agente, backend y permisos de la sesión
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ecc`, `sandbox`
 **Alternativas (elige una):** `open-swe`, `swe-agent`
 
@@ -415,62 +587,88 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=coding,app,typescript
 
 **Qué es:** Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguajes.
-**Stack:** TypeScript, Cargo.toml, package.json
+**Stack:** Instalador para tu sistema; proyecto pequeño
 **Acceso y costes:**
-- API de IA: Sin API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- API de IA: Sin clave propia de API de IA en la ruta básica. El editor básico no necesita API de IA; servicios o plugins externos pueden tener condiciones propias
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
-- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
-- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. Es un IDE independiente en Rust y la API de plugins está en preview; los benchmarks del autor no son una garantía de igual rendimiento en tu equipo
+- Coste: Sin pago a un modelo en la ruta básica. El editor básico no necesita API de IA; servicios o plugins externos pueden tener condiciones propias
+- Equipo: Preparación según la ruta elegida. Instalador para tu sistema; proyecto pequeño
 **Repo:** https://github.com/l0ng-ai/openidea
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/l0ng-ai/openidea/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/l0ng-ai/openidea/blob/main/README.md
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** buscas esta función: Entorno de desarrollo con editor, depurador, Git y herramientas para trabajar con código en distintos lenguajes.
-**Evita si:** necesitas una instalación inmediata sin revisar las dependencias y condiciones de la distribución
+**Elige si:** Tu objetivo encaja con estos ejemplos: Explorar código con atajos tipo IntelliJ; Probar un editor nativo con plugins
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Abre un proyecto de ejemplo y usa buscar en todo para localizar una función
+**Qué comprobar:** Puedes navegar al archivo y reconocer sus referencias
+Revisión documental individual; instalación no ejecutada por Alexandría.
 
 ## `swe-agent`
 role=runtime · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic · tags=coding-agent,evaluation,python
 
-**Qué es:** Resuelve issues reales con el modelo que elijas y sirve como base de investigación en agentes de software. También tiene usos en ciberseguridad y retos de programación.
-**Stack:** Python, Docker
+**Qué es:** Agente de Princeton y Stanford que toma un issue de GitHub e intenta resolverlo solo.
+**Stack:** Python; entorno aislado; modelo y repositorio de prueba
 **Acceso y costes:**
-- API de IA: Depende de la ruta elegida. Configura el modelo o proveedor antes de ejecutar. No asumir que la suscripción del agente cubre las llamadas de esta app.
+- API de IA: Depende de la ruta elegida. El modelo y los entornos de ejecución pueden generar cargos; licencia MIT no incluye inferencia
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Memoria y GPU según el modelo. Con un proveedor remoto importa el servidor de la app; con un modelo local, su RAM, GPU y disco.
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. El equipo concentra ahora desarrollo en mini-swe-agent; este proyecto sigue siendo material de investigación y no garantiza resolver un issue
+- Coste: El coste depende del proveedor o la ruta. El modelo y los entornos de ejecución pueden generar cargos; licencia MIT no incluye inferencia
+- Equipo: Preparación según la ruta elegida. Python; entorno aislado; modelo y repositorio de prueba
 **Repo:** https://github.com/SWE-agent/SWE-agent
 
-**Instalación** [?]: `Seguir la instalación original: https://github.com/SWE-agent/SWE-agent/blob/main/README.md`
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://swe-agent.com/latest/installation/source/
+```
+
 _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 
-**Elige si:** investigas o automatizas la resolución de issues
-**Evita si:** quieres un asistente diario en tu terminal; mira `claude-code`
+**Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar resolución de issues; Comparar trayectorias de agentes
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Lee una trayectoria de ejemplo y define un issue pequeño con una prueba de aceptación
+**Qué comprobar:** Puedes separar la propuesta del agente de una corrección validada
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `swe-bench`, `litellm`
 **Alternativas (elige una):** `openhands`, `open-swe`
 
 ## `t3code`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=coding-agent,ui,typescript
 
-**Qué es:** No sustituye al agente: orquesta Claude Code, Codex y otros desde una UI cómoda, también en el móvil. Útil para lanzar y revisar sesiones a distancia.
-**Stack:** TypeScript, Electron, React Native
+**Qué es:** Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina.
+**Stack:** Un agente instalado y autenticado; equipo que permanezca disponible; proyecto de prueba
 **Acceso y costes:**
-- API de IA: API de IA opcional. El proveedor y la función elegidos determinan si hacen falta credenciales de IA.
+- API de IA: API de IA opcional. El proyecto dice no revender tokens; usa las cuentas y cuotas de los agentes ya configurados
 - Claude Code: Integración documentada por el proyecto
 - Codex: Integración documentada por el proyecto
-- Modelos locales: Modelo local no documentado. No se confirma un backend local solo porque la aplicación se instale en tu equipo.
-- Coste: El coste depende del proveedor o la ruta. Revisar modelo, conectores, alojamiento y licencia; no se publican importes estimados sin fuente.
-- Equipo: Requisitos por confirmar. Consultar los requisitos del README y de los componentes que actives.
-- Otras rutas: El README lista otros agentes y adaptadores ACP. T3 Code coordina esos agentes; cada uno conserva su autenticación y sus límites.
+- Antigravity: Integración documentada por el proyecto
+- Modelos locales: Modelo local no documentado. Documenta Claude Code, Codex y Antigravity entre sus proveedores; acceso remoto requiere configuración propia y no ejecuta los agentes en el teléfono
+- Coste: El coste depende del proveedor o la ruta. El proyecto dice no revender tokens; usa las cuentas y cuotas de los agentes ya configurados
+- Equipo: Preparación según la ruta elegida. Un agente instalado y autenticado; equipo que permanezca disponible; proyecto de prueba
 **Repo:** https://github.com/pingdotgg/t3code
 
-**Instalación** [+]: `npx t3@latest`
-_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+**Instalación** [?]:
 
-**Elige si:** usas varios agentes de código y quieres controlarlos desde una UI
-**Evita si:** solo usas un agente en la terminal
+```
+Seguir la instalación original: https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: Controlar una sesión desde otro dispositivo; Comparar trabajo de Claude Code y Codex
+**Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
+**Primera prueba propuesta:** Conecta un agente local y pide explicar un archivo; revisa sus permisos desde la interfaz
+**Qué comprobar:** La sesión refleja el agente y puedes comprobar el archivo consultado
+Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `claude-code`, `codex`, `opencode`

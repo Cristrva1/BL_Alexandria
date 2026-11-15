@@ -16,42 +16,48 @@
 
 | Pregunta | Respuesta |
 |---|---|
-| API de IA | Sin API de IA en la ruta básica. La función básica es software convencional; no necesita un LLM. Las integraciones añadidas pueden requerir servicios. |
+| API de IA | Sin clave propia de API de IA en la ruta básica. No usa modelos ni API; almacenamiento y plataforma de logs externa se presupuestan aparte |
 | Claude Code | Integración no documentada |
 | Codex | Integración no documentada |
-| Modelos locales | La función básica no necesita un modelo. La herramienta procesa o gestiona datos sin un modelo de lenguaje en su función básica. |
-| Coste | Sin pago a un modelo en la ruta básica. Sin consumo de un modelo para la función básica. El alojamiento, servicios conectados y licencia se revisan aparte. |
-| Equipo | Equipo normal; revisar dependencias. Consultar los requisitos del README y de los componentes que actives. |
+| Antigravity | Integración no documentada |
+| Modelos locales | La función básica no necesita un modelo. Es una biblioteca de logging general y no un sistema de observabilidad LLM completo; evita registrar secretos o datos que no necesites |
+| Coste | Sin pago a un modelo en la ruta básica. No usa modelos ni API; almacenamiento y plataforma de logs externa se presupuestan aparte |
+| Equipo | Preparación según la ruta elegida. Python; script de prueba |
 
-El agente puede ayudarte a instalarlo. Una sesión del agente solo ejecuta esta aplicación si existe una integración documentada.
+Es una biblioteca de logging general y no un sistema de observabilidad LLM completo; evita registrar secretos o datos que no necesites
 
 ## Qué puedes hacer con él
 
-Resuelve la fricción del módulo `logging` stdlib, que exige boilerplate para algo tan básico como imprimir logs legibles.
+Librería de logging para Python centrada en la simplicidad ("logging that doesn't suck"), lista para usar sin configuración previa.
 
 ## Por qué destaca
 
-Es una de las librerías de logging más populares en Python por su API mínima (un único objeto `logger`) y su gran ergonomía frente al módulo estándar. Su salida con colores, rotación y captura de excepciones en una sola línea la hace ubicua en scripts y pipelines.
+Usos propuestos: Depurar una automatización; Añadir logs legibles a una app.
 
 ## Cómo funciona
 
-Expone un único objeto `logger` preconfigurado con rotación, retención, formato enriquecido (colores, timestamps) y captura de excepciones con traceback en una sola llamada, sin necesidad de handlers ni formatters.
+Es una biblioteca de logging general y no un sistema de observabilidad LLM completo; evita registrar secretos o datos que no necesites
 
 ## Cómo empezar
 
 Pieza para un proyecto de código. [Entender los términos](../vocabulario.md).
 
-1. Elige la ruta del README: paquete, aplicación o despliegue desde fuente.
-2. Prepara sus dependencias y configura el modelo o las credenciales indicadas en Acceso y costes.
-3. Ejecuta el ejemplo mínimo documentado y verifica el resultado antes de ampliar el proyecto.
+**Antes de empezar:**
 
-**Comando de entrada documentado:**
+- Python
+- script de prueba
 
-```shell
+1. Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.
+2. Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.
+3. Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente,úsalo dentro de ese agente.
+
+**Entrada documentada (consulta la sintaxis original):**
+
+```
 pip install loguru
 ```
 
-Comando presente en el README revisado; no es una prueba de instalación.
+Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.
 
 [Instrucciones originales de instalación](https://github.com/Delgan/loguru/blob/master/README.md)
 
@@ -59,21 +65,30 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 > Quiero usar loguru para mi objetivo y necesito pasos guiados. Lee https://github.com/Delgan/loguru/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
+## Tu primera prueba
+
+Registra un mensaje y una excepción ficticia en un script pequeño.
+
+**Qué comprobar:** Puedes distinguir nivel, fecha y detalle del error.
+
+Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
+
 ## Casos de uso
 
-- Logs legibles sin configuración
-- Instrumentar pipelines y scripts
-- Captura de excepciones con contexto sin boilerplate
+- Depurar una automatización
+- Añadir logs legibles a una app
 
 ## ¿Es para ti?
 
 | ✅ Elígelo si… | ⛔ Evítalo si… |
 |---|---|
-| quieres logging fácil y legible en Python sin pelear con stdlib | ya usas el stdlib `logging` configurado o tienes un stack de observabilidad corporativo |
+| Tu objetivo encaja con estos ejemplos: Depurar una automatización; Añadir logs legibles a una app | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+
+**Limitaciones:** Es una biblioteca de logging general y no un sistema de observabilidad LLM completo; evita registrar secretos o datos que no necesites
 
 ## Stack y modelos
 
-- **Stack:** Python
+- **Stack:** Python; script de prueba
 - **Etiquetas:** `observability` `evaluation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
@@ -90,7 +105,9 @@ Comando presente en el README revisado; no es una prueba de instalación.
 
 ## Fuentes y alcance de revisión
 
-Acceso revisado el 2026-11-14. Lectura de documentación; no prueba de instalación o ejecución.
+Acceso revisado el 2026-11-15. Lectura de documentación; no prueba de instalación o ejecución.
+
+Categoría confirmada en la revisión individual. Ejemplos ilustrativos; compatibilidad documental.
 
 - [Fuente 1](https://github.com/Delgan/loguru/blob/master/README.md)
 
