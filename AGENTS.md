@@ -130,6 +130,8 @@ uv run repo-intelligence web build
 uv run pytest
 ```
 
+La web pública es [Alexandría](https://cristrva1.github.io/BL_Alexandria/). GitHub Pages publica el contenido generado de `main/docs`: al actualizar el catálogo, ejecuta `guide build` y sube sus resultados para que se desplieguen. El generador conserva `.nojekyll` para servir los archivos estáticos directamente.
+
 Para agregar repos con datos completos: `discover` → `analyze --new` → `enrich --new --auto-merge` (borradores revisables en `data/drafts/`) → `guide build`. La lógica de inferencia está en `src/repo_intelligence/analysis/curation.py`.
 
 Ese flujo sirve cuando existe un clon. Para nuevas stars sin clones, usa fuentes de GitHub y el proceso de [mantenimiento editorial](human/mantenimiento.md). `scripts/audit_sources.py` guarda README y evidencias para revisar; no confirma requisitos a partir de keywords. Los scripts `curate_access.py` y `curate_discovery.py` son migraciones editoriales fechadas y requieren revisar sus decisiones antes de reutilizarlas. Un perfil nuevo conserva incertidumbre hasta disponer de evidencia.

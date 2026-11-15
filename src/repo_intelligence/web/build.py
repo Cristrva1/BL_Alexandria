@@ -26,6 +26,8 @@ def build_site(project_root: Path, output_dir: Path) -> dict:
     catalog = build_catalog(project_root)
     output = Path(output_dir)
     output.mkdir(parents=True, exist_ok=True)
+    # Pages serves these prebuilt files directly, without a Jekyll transform.
+    (output / ".nojekyll").write_text("", encoding="utf-8")
     payload = json.dumps(catalog, ensure_ascii=False, separators=(",", ":"))
     payload = (
         payload.replace("<", "\\u003c")
