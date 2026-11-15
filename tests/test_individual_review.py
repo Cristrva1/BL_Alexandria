@@ -19,26 +19,33 @@ def test_every_public_identity_has_one_individual_decision_and_current_evidence(
     catalog=build_catalog(ROOT)
     report=json.loads((ROOT/'reports/review-679-2026-11-14.json').read_text(encoding='utf8'))
     assert len(rows)==len({r['id'] for r in rows})==679
-    assert {r['id'] for r in rows}=={r['id'] for r in catalog['repos']}==set(report['repositories'])
+    baseline={r['id'] for r in rows}
+    assert baseline==set(report['repositories'])
+    assert baseline <= {r['id'] for r in catalog['repos']}
     assert report['individually_reviewed']==report['total']==679 and not report['pending']
     ledger={r['id']:r for r in rows}
     for repo in catalog['repos']:
-        record=report['repositories'][repo['id']]
         review=repo['editorial_review']
         assert review['status']=='source_reviewed' and review['installation_tested'] is False
-        assert repo['access']['source_blob_sha']==review['source_blob_sha']==record['source_blob_sha']
-        assert record['source'] in repo['access']['sources']
+        assert repo['access']['source_blob_sha']==review['source_blob_sha']
+        assert review['source'] in repo['access']['sources']
         assert len(review['checks'])==9
         assert len(repo['practical_examples'])==2
-        assert repo['first_try']['action']==ledger[repo['id']]['first_action']
+        assert repo['first_try']['action'] and repo['first_try']['success']
         assert repo['first_try']['execution']=='proposed_not_executed'
+        assert all(example['status']=='illustrative' for example in repo['practical_examples'])
+        # The dated ledger remains immutable; later reviews have their own evidence.
+        if repo['id'] not in baseline or review['checked_at'] != report['date']:
+            continue
+        record=report['repositories'][repo['id']]
+        assert review['source_blob_sha']==record['source_blob_sha']
+        assert repo['first_try']['action']==ledger[repo['id']]['first_action']
         assert repo['first_try']['success']==ledger[repo['id']]['success']
         selected=ledger[repo['id']]['install']
         if selected.startswith('docs:'):
             assert repo['getting_started']['source']==selected[5:]
         if selected in {'read','readme'} or selected.startswith('docs:'):
             assert not repo['getting_started']['command']
-        assert all(example['status']=='illustrative' for example in repo['practical_examples'])
 
 
 def test_meaningful_classification_and_identity_corrections():

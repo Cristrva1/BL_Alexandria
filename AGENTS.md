@@ -161,4 +161,6 @@ Ese flujo sirve cuando existe un clon. Para nuevas stars sin clones, usa fuentes
 
 La revisión individual de los 679 proyectos está en `curation/review-679-2026-11-14/` y `reports/review-679-2026-11-14.json`. `scripts/apply_review_679.py --apply` exige cobertura total y las instantáneas locales de esa revisión; es una migración fechada,no un auditor automático de proyectos nuevos. Conserva la incertidumbre y el SHA anterior al actualizar una fuente. No publiques el documento privado de importación ni las instantáneas completas de README.
 
+Para la actualización diaria desde stars, sigue [DAILY_STARS.md](DAILY_STARS.md). `uv run python scripts/daily_stars.py` detecta ids públicos faltantes y guarda fuentes en la carpeta ignorada `data/reviews/daily-stars/`; no clasifica ni incorpora automáticamente. La tarea programada de Codex realiza la revisión editorial y la publicación. No recrees clones, no dupliques renombrados y no borres fichas al retirar una star.
+
 Al editar a mano una entrada, mantén: `one` de 60 a 175 caracteres en español claro; `alt` simétrico (si A lista a B, B lista a A) y como máximo 5; ids de `alt` y `combines_with` que existan en el índice. Las pruebas lo comprueban.
