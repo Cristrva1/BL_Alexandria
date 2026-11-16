@@ -2,7 +2,7 @@
 
 [Explorar por áreas prácticas y configuración de asistentes](REPO_AREAS.md).
 
-> Generado: 2026-11-16 · 750 repos curados · Documento 100% para IA.
+> Generado: 2026-11-16 · 768 repos curados · Documento 100% para IA.
 > COPIA esta carpeta (`menu_portable/`) a la raíz de tu proyecto y
 > referencia este archivo desde tu AGENTS.md / system prompt.
 
@@ -11,7 +11,7 @@
 ## INSTRUCCIONES PARA EL AGENTE (léeme entero, soy corto)
 
 Eres un agente que debe elegir qué repositorios instalar/usar para un
-proyecto concreto. Tienes un menú curado de **750 repos** de IA y
+proyecto concreto. Tienes un menú curado de **768 repos** de IA y
 automatización. Objeto: gastar MÍNIMOS tokens y NO visitar la web.
 
 PROTOCOLO (en orden):
@@ -869,46 +869,64 @@ Detalle: `REPO_MENU_cats/22-infraestructura-despliegue-y-herramientas-para-agent
 - `uptime-kuma` [P|loc|E|?] — Monitor de disponibilidad autoalojado y fácil de usar: comprueba webs y servicios, envía alertas a más de 90 c — tags: monitoring,self-hosted,javascript,docker
 - `wg-easy` [P|loc|E|?] — La forma más sencilla de ejecutar WireGuard VPN con interfaz web para gestionar clientes, códigos QR, estadíst — tags: network,self-hosted,docker,vpn
 
-### 23. Operar, evaluar y medir modelos de IA (19)
+### 23. Operar, evaluar y medir modelos de IA (26)
 Detalle: `REPO_MENU_cats/23-operar-evaluar-y-medir-modelos-de-ia.md`
 
 - `backdoor` [R|hyb|M|+] — Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. — tags: serving,ai,anthropic,claude,claude-code,deepseek,llm,ollama — alt: omniroute,claude-code-router,litellm
+- `bentoml` [L|loc|M|+] — Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes D — tags: serving,python,ml,docker
 - `claude-code-router` [P|hyb|H|+] — Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control lo — tags: serving,server,typescript — alt: omniroute,backdoor,litellm
 - `claude-code-usage-monitor` [A|loc|M|+] — Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible — tags: observabilidad,app,python
 - `deepeval` [L|hyb|E|+] — Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. — tags: evaluation,python — prov: openai — alt: ragas,promptfoo
+- `gpustack` [P|loc|H|?] — Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compa — tags: serving,python,gpu,self-hosted
 - `guardrails` [L|hyb|M|+] — Toolkit de NVIDIA para añadir barreras programables a sistemas conversacionales con LLM. — tags: security,chatbot,python
 - `headroom` [L|hyb|E|+] — Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder  — tags: automation,llmops,python — alt: rtk
-- `langfuse` [P|hyb|M|+] — Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llama — tags: automation,observability,typescript,docker — alt: phoenix,opik,mlflow
+- `helicone` [P|loc|M|?] — Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestion — tags: observability,typescript,llm,self-hosted — alt: langfuse
+- `langfuse` [P|hyb|M|+] — Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llama — tags: automation,observability,typescript,docker — alt: phoenix,opik,mlflow,helicone
 - `litellm` [L|hyb|E|+] — Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato d — tags: inference,llmops,python,docker — alt: omniroute,claude-code-router,backdoor
+- `lm-eval-harness` [L|hyb|M|+] — Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends — tags: evaluation,python,llm,benchmark
 - `loguru` [L|loc|E|+] — Librería de logging para Python centrada en la simplicidad ("logging that doesn't suck"), lista para usar sin  — tags: observability,evaluation,python
 - `mlflow` [P|loc|E|+] — Plataforma open source para el ciclo de vida de modelos de ML y apps de LLM: experimentos, trazas y registro. — tags: observability,training,evaluation,python — alt: langfuse
 - `omniroute` [P|hyb|H|?] — Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acces — tags: serving,server,typescript — prov: local — alt: claude-code-router,backdoor,litellm
+- `openllmetry` [L|loc|E|+] — Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza llamadas a modelos, bases vect — tags: observability,python,llm,opentelemetry
 - `opik` [P|loc|M|+] — Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes. — tags: observability,evaluation,python — alt: langfuse,phoenix
 - `phoenix` [P|loc|E|+] — Plataforma open source de Arize para observar, trazar y evaluar apps de LLM, con OpenTelemetry. — tags: observability,evaluation,python — alt: langfuse,opik
 - `promptfoo` [A|loc|E|+] — CLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad. — tags: evaluation,security,typescript — prov: openai,anthropic,google,local — alt: deepeval,ragas,dspy
 - `ragas` [L|hyb|E|+] — Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. — tags: evaluation,rag,python — prov: openai — alt: deepeval,promptfoo
+- `ray` [L|loc|M|+] — Motor de cómputo distribuido para IA: escala Python de un portátil a un clúster, con bibliotecas para datos, e — tags: distributed,python,serving,ml
 - `rtk` [A|loc|E|+] — Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código — tags: tokens,agentic-coding,ai-coding,anthropic,claude-code,cli,command-line-tool,cost-reduction — alt: headroom
 - `sglang` [R|loc|H|+] — Framework de servicio de alto rendimiento para LLM y modelos multimodales. — tags: inference,python — prov: local — alt: vllm
 - `tensorrt-llm` [L|loc|H|?] — Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes esp — tags: serving,blackwell,cuda,llm-serving,moe,pytorch,python
 - `vllm` [R|loc|H|+] — Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. — tags: inference,python — prov: local — alt: sglang
+- `xinference` [P|loc|M|+] — Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y víde — tags: serving,python,llm,self-hosted
 
-### 24. Modelos abiertos y entrenamiento (14)
+### 24. Modelos abiertos y entrenamiento (25)
 Detalle: `REPO_MENU_cats/24-modelos-abiertos-y-entrenamiento.md`
 
+- `accelerate` [L|loc|E|+] — Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU, varias, TPU o con DeepSpeed y  — tags: training,python,pytorch
+- `axolotl` [L|loc|H|?] — Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimod — tags: training,python,llm,gpu — alt: torchtune,llama-factory,unsloth
 - `bionemo-recipes` [D|loc|H|?] — Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. — tags: entrenamiento,drug-discovery,gpu,machine-learning,pytorch,python
 - `cosmos` [R|hyb|H|?] — Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos — tags: inference
 - `deepseek-v3` [R|hyb|H|?] — Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su  — tags: llm,inference,python
+- `deepspeed` [L|loc|H|+] — Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descar — tags: training,python,gpu,distributed
+- `gemma` [L|loc|H|+] — Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo — tags: model,python,jax,llm
+- `jax` [L|loc|M|+] — Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y — tags: ml,python,library,numerical — alt: pytorch,tensorflow
+- `keras` [L|loc|E|+] — API de deep learning multibackend: el mismo código de modelo se ejecuta sobre JAX, TensorFlow o PyTorch (y Ope — tags: ml,python,library,deep-learning
 - `kimi-k2-7-code` [R|hyb|H|?] — Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Huggi — tags: kimi,moonshot,modelo,programacion,pesos-abiertos,huggingface — prov: local
 - `laya` [R|loc|H|+] — Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. — tags: modelos,model,python — prov: local
-- `llama-factory` [A|loc|M|+] — Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código. — tags: training,python — prov: local — alt: unsloth
+- `llama-factory` [A|loc|M|+] — Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código. — tags: training,python — prov: local — alt: unsloth,axolotl,torchtune
 - `nemotron` [D|loc|H|?] — Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos. — tags: training,inference — prov: local
+- `openrlhf` [L|loc|H|?] — Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entr — tags: training,python,rl,gpu — alt: verl
 - `peft` [L|loc|M|+] — Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA. — tags: training,python
-- `pytorch` [L|loc|M|?] — Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. — tags: training,python — alt: tensorflow
-- `tensorflow` [L|loc|H|+] — Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entor — tags: entrenamiento,deep-learning,deep-neural-networks,distributed,machine-learning,ml,neural-network,python — alt: pytorch
+- `pytorch` [L|loc|M|?] — Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. — tags: training,python — alt: tensorflow,jax
+- `pytorch-lightning` [L|loc|E|+] — Framework que estructura el entrenamiento en PyTorch y lo escala de una GPU a miles sin cambiar el código, con — tags: training,python,pytorch
+- `scikit-learn` [L|loc|E|+] — La biblioteca de machine learning clásico en Python: clasificación, regresión, clustering, reducción de dimens — tags: ml,python,library,data
+- `tensorflow` [L|loc|H|+] — Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entor — tags: entrenamiento,deep-learning,deep-neural-networks,distributed,machine-learning,ml,neural-network,python — alt: pytorch,jax
 - `timesfm` [L|loc|M|+] — Modelos preentrenados de Google para pronóstico de series temporales; las licencias de los pesos cambian por v — tags: data,analytics,python
+- `torchtune` [L|loc|H|+] — Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y  — tags: training,python,pytorch,llm — alt: axolotl,llama-factory,unsloth
 - `transformers` [L|loc|E|+] — Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación. — tags: training,inference,python
 - `trl` [L|loc|M|+] — Librería de Hugging Face para entrenar LLM con aprendizaje por refuerzo: SFT, DPO, GRPO y más. — tags: training,python
-- `unsloth` [A|loc|M|+] — App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcional — tags: training,local,python — prov: local — alt: llama-factory
+- `unsloth` [A|loc|M|+] — App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcional — tags: training,local,python — prov: local — alt: llama-factory,axolotl,torchtune
+- `verl` [L|loc|H|?] — Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros alg — tags: training,python,rl,gpu — alt: openrlhf
 
 ### 25. Procesar datos y trabajar con notebooks (12)
 Detalle: `REPO_MENU_cats/25-procesar-datos-y-trabajar-con-notebooks.md`

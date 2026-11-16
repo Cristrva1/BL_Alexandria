@@ -1,6 +1,6 @@
 # 🌌 Guía completa de BL_Alexandria
 
-Las **748 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
+Las **766 fichas** de la biblioteca en un solo documento, agrupadas por categoría y subcategoría. Úsala para leer de corrido o buscar con Ctrl+F; para navegar por partes usa la [guía humana](human/README.md) o el [explorador interactivo](docs/index.html).
 
 ## 🧭 Cómo leer cada ficha
 
@@ -34,8 +34,8 @@ Las **748 fichas** de la biblioteca en un solo documento, agrupadas por categor�
 | 20 | [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) | 21 | Agentes de terminal, extensiones de editor y entornos para programar con IA. Revisa qué cliente utilizas, cómo inicia sesión y si el modelo usa un plan, una API o un servidor local. |
 | 21 | [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) | 17 | Asistentes personales, equipos de agentes e investigación con fuentes. Compara la tarea que completan, las herramientas que pueden usar y la revisión que necesitas hacer del resultado. |
 | 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) | 26 | Sandboxes, herramientas de ejecución, backend y alojamiento. Son piezas de infraestructura: separa el coste del servidor, los servicios conectados y las llamadas al modelo. |
-| 23 | [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) | 19 | Servidores de inferencia, gateways, evaluación, trazas y control de contexto. Cada pieza cubre una etapa: ejecutar el modelo, observarlo o comprobar la calidad de sus respuestas. |
-| 24 | [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) | 14 | Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los pesos, la memoria necesaria y la opción de inferencia antes de descargar o entrenar. |
+| 23 | [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) | 26 | Servidores de inferencia, gateways, evaluación, trazas y control de contexto. Cada pieza cubre una etapa: ejecutar el modelo, observarlo o comprobar la calidad de sus respuestas. |
+| 24 | [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) | 25 | Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los pesos, la memoria necesaria y la opción de inferencia antes de descargar o entrenar. |
 | 25 | [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) | 12 | Motores de consulta, tablas, notebooks y aplicaciones de datos. Empieza por un archivo pequeño y distingue una herramienta de análisis de un catálogo o conjunto de datos de referencia. |
 | 26 | [🎨 Animación, gráficos y creación 3D](#-26-animación-gráficos-y-creación-3d) | 19 | Animación web, motores gráficos, modelado y renderizado 3D. Una librería se integra en una aplicación; un editor se utiliza directamente. Consulta el formato de entrada y el equipo necesario. |
 | 27 | [🎨 Skills de diseño, contenido y especialidades](#-27-skills-de-diseño-contenido-y-especialidades) | 36 | Skills y plugins para diseño, escritura, marketing, ciencia y negocio. Se añaden a un agente compatible; generar imágenes, publicar o consultar servicios puede requerir cuentas adicionales. |
@@ -5515,7 +5515,7 @@ npx @cobusgreyling/loop doctor .` (comprobar los pasos completos en la ficha).<b
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/microsoft/ML-For-Beginners/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: aprender regresión, clasificación y clustering desde cero; preparar un temario de ML clásico para una clase — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
-**Combina con:** [JupyterLab](human/fichas/jupyterlab.md) · [marimo](human/fichas/marimo.md) · [LLM Course](human/fichas/llm-course.md)<br>
+**Combina con:** [JupyterLab](human/fichas/jupyterlab.md) · [marimo](human/fichas/marimo.md) · [LLM Course](human/fichas/llm-course.md) · [scikit-learn](human/fichas/scikit-learn.md)<br>
 **Más:** [ficha completa](human/fichas/ml-for-beginners.md) · [GitHub](https://github.com/microsoft/ML-For-Beginners)
 
 #### 🧑‍💻 awesome-machine-learning
@@ -6356,7 +6356,7 @@ Servidores de inferencia, gateways, evaluación, trazas y control de contexto. C
 | [DeepEval](human/fichas/deepeval.md) | Tu objetivo encaja con estos ejemplos: Detectar regresiones de un chatbot; Probar relevancia de respuestas RAG | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Ragas](human/fichas/ragas.md) | Tu objetivo encaja con estos ejemplos: Medir un RAG con datos controlados; Comparar versiones de una cadena | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 
-**⚖️ ¿Cuál elegir? — langfuse, MLflow, Opik, Phoenix**
+**⚖️ ¿Cuál elegir? — langfuse, MLflow, Opik, Phoenix, Helicone**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
@@ -6364,6 +6364,7 @@ Servidores de inferencia, gateways, evaluación, trazas y control de contexto. C
 | [MLflow](human/fichas/mlflow.md) | Tu objetivo encaja con estos ejemplos: Registrar experimentos de ML; Añadir trazas a una app de IA | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Opik](human/fichas/opik.md) | Tu objetivo encaja con estos ejemplos: Depurar una cadena RAG; Revisar fallos con un agente de código | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [Phoenix](human/fichas/phoenix.md) | Tu objetivo encaja con estos ejemplos: Depurar una app con OpenTelemetry; Consultar trazas desde un agente | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Helicone](human/fichas/helicone.md) | Tu objetivo encaja con estos ejemplos: ver coste y latencia de todas las llamadas a modelos de tu aplicación; versionar prompts y enrutar entre proveedores con reintentos | no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones |
 
 ### Serving y gateways de LLM
 
@@ -6395,6 +6396,15 @@ vllm download-kernels  # precompiled kernels for faster startup` (comprobar los 
 **Combina con:** [Ollama](human/fichas/ollama.md) · [Open WebUI](human/fichas/open-webui.md) · [langfuse](human/fichas/langfuse.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/litellm.md) · [GitHub](https://github.com/BerriAI/litellm)
 
+#### 📚 Ray
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 44.3k<br>
+**Qué es:** Motor de cómputo distribuido para IA: escala Python de un portátil a un clúster, con bibliotecas para datos, entrenamiento, ajuste, RL y serving.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install ray` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: paralelizar un procesamiento de datos o entrenamiento en varias máquinas; servir modelos con autoescalado mediante Ray Serve — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [vLLM](human/fichas/vllm.md) · [PyTorch](human/fichas/pytorch.md) · [verl](human/fichas/verl.md) · [OpenRLHF](human/fichas/openrlhf.md)<br>
+**Más:** [ficha completa](human/fichas/ray.md) · [GitHub](https://github.com/ray-project/ray)
+
 #### 🚀 SGLang
 **Etiquetas:** Ejecución 🏠 local · Rol 🧩 motor/runtime · Setup 🔴 pesado · ⭐ 38.9k<br>
 **Qué es:** Framework de servicio de alto rendimiento para LLM y modelos multimodales.<br>
@@ -6420,8 +6430,35 @@ ccr ui` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://nvidia.github.io/TensorRT-LLM/installation/index.html); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Optimizar inferencia en GPU propia; Estudiar kernels y runtimes de NVIDIA — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [litellm](human/fichas/litellm.md) · [Open WebUI](human/fichas/open-webui.md) · [Transformers](human/fichas/transformers.md) · [DeepSeek-V3](human/fichas/deepseek-v3.md)<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [Open WebUI](human/fichas/open-webui.md) · [Transformers](human/fichas/transformers.md) · [DeepSeek-V3](human/fichas/deepseek-v3.md) · [GPUStack](human/fichas/gpustack.md)<br>
 **Más:** [ficha completa](human/fichas/tensorrt-llm.md) · [GitHub](https://github.com/NVIDIA/TensorRT-LLM)
+
+#### ⚙️ Xinference
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 9.7k<br>
+**Qué es:** Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install xinference` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: servir un LLM, un modelo de embeddings y uno de voz desde un mismo servidor; conectar Dify, LangChain o LlamaIndex a modelos propios — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [vLLM](human/fichas/vllm.md) · [llama.cpp](human/fichas/llama-cpp.md) · [langchain](human/fichas/langchain.md) · [LlamaIndex](human/fichas/llama-index.md)<br>
+**Más:** [ficha completa](human/fichas/xinference.md) · [GitHub](https://github.com/xorbitsai/inference)
+
+#### 📚 BentoML
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 8.9k<br>
+**Qué es:** Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install -U bentoml` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: publicar un modelo de Transformers como API REST; empaquetar un LLM servido con vLLM en una imagen desplegable — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [vLLM](human/fichas/vllm.md) · [Transformers](human/fichas/transformers.md) · [PyTorch](human/fichas/pytorch.md)<br>
+**Más:** [ficha completa](human/fichas/bentoml.md) · [GitHub](https://github.com/bentoml/BentoML)
+
+#### ⚙️ GPUStack
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🔴 pesado · ⭐ 6k<br>
+**Qué es:** Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/gpustack/gpustack/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: servir varios modelos en las GPU de tu laboratorio con una sola consola; dar a tu equipo claves de API compatibles con OpenAI sobre modelos propios — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [vLLM](human/fichas/vllm.md) · [SGLang](human/fichas/sglang.md) · [TensorRT-LLM](human/fichas/tensorrt-llm.md)<br>
+**Más:** [ficha completa](human/fichas/gpustack.md) · [GitHub](https://github.com/gpustack/gpustack)
 
 #### 🧬 backdoor
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🧩 motor/runtime · Setup 🟡 medio · ⭐ 302<br>
@@ -6526,6 +6563,15 @@ opik configure` (comprobar los pasos completos en la ficha).<br>
 **Combina con:** [LlamaIndex](human/fichas/llama-index.md) · [langfuse](human/fichas/langfuse.md) · [langchain](human/fichas/langchain.md) · [Opik](human/fichas/opik.md)<br>
 **Más:** [ficha completa](human/fichas/ragas.md) · [GitHub](https://github.com/vibrantlabsai/ragas)
 
+#### 📚 LM Evaluation Harness
+**Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 14.5k<br>
+**Qué es:** Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends Hugging Face, vLLM, SGLang o APIs.<br>
+**Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
+**Comando documentado:** `pip install "lm_eval[hf]"` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: comparar un modelo ajustado con su base en MMLU, HellaSwag o GSM8K; reproducir resultados de tablas de clasificación con la misma configuración — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [vLLM](human/fichas/vllm.md) · [SGLang](human/fichas/sglang.md) · [Transformers](human/fichas/transformers.md) · [torchtune](human/fichas/torchtune.md) · [Gemma (biblioteca JAX)](human/fichas/gemma.md)<br>
+**Más:** [ficha completa](human/fichas/lm-eval-harness.md) · [GitHub](https://github.com/EleutherAI/lm-evaluation-harness)
+
 #### 📡 Phoenix
 **Etiquetas:** Ejecución 🏠 local · MCP 🔌 · Rol ⚙️ plataforma · Setup 🟢 fácil · ⭐ 12.3k<br>
 **Qué es:** Plataforma open source de Arize para observar, trazar y evaluar apps de LLM, con OpenTelemetry.<br>
@@ -6549,6 +6595,15 @@ claude-monitor  # or cmonitor, ccmonitor for short` (comprobar los pasos complet
 **Combina con:** [Claude Code](human/fichas/claude-code.md) · [rtk](human/fichas/rtk.md) · [headroom](human/fichas/headroom.md) · [claude-token-efficient](human/fichas/claude-token-efficient.md)<br>
 **Más:** [ficha completa](human/fichas/claude-code-usage-monitor.md) · [GitHub](https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor)
 
+#### 📚 OpenLLMetry
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 7.5k<br>
+**Qué es:** Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza llamadas a modelos, bases vectoriales y frameworks hacia tu backend de observabilidad.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install traceloop-sdk` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: trazar llamadas a OpenAI, LangChain o Ollama en Grafana o Datadog; añadir observabilidad de LLM a una pila OpenTelemetry existente — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [Grafana](human/fichas/grafana.md) · [langchain](human/fichas/langchain.md) · [LlamaIndex](human/fichas/llama-index.md) · [Ollama](human/fichas/ollama.md)<br>
+**Más:** [ficha completa](human/fichas/openllmetry.md) · [GitHub](https://github.com/traceloop/openllmetry)
+
 #### 📡 NeMo Guardrails
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 7.5k<br>
 **Qué es:** Toolkit de NVIDIA para añadir barreras programables a sistemas conversacionales con LLM.<br>
@@ -6558,25 +6613,44 @@ claude-monitor  # or cmonitor, ccmonitor for short` (comprobar los pasos complet
 **Combina con:** [langchain](human/fichas/langchain.md) · [promptfoo](human/fichas/promptfoo.md) · [vLLM](human/fichas/vllm.md)<br>
 **Más:** [ficha completa](human/fichas/guardrails.md) · [GitHub](https://github.com/NVIDIA-NeMo/Guardrails)
 
+#### ⚙️ Helicone
+**Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup 🟡 medio · ⭐ 6.3k<br>
+**Qué es:** Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestiona prompts y enruta a más de 100 modelos.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/Helicone/helicone/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: ver coste y latencia de todas las llamadas a modelos de tu aplicación; versionar prompts y enrutar entre proveedores con reintentos — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
+**Combina con:** [litellm](human/fichas/litellm.md) · [langchain](human/fichas/langchain.md) · [Open WebUI](human/fichas/open-webui.md)<br>
+**Más:** [ficha completa](human/fichas/helicone.md) · [GitHub](https://github.com/Helicone/helicone)
+
 ---
 
 ## 🧑‍💻 24. Modelos abiertos y entrenamiento
 
 Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los pesos, la memoria necesaria y la opción de inferencia antes de descargar o entrenar.
 
-**⚖️ ¿Cuál elegir? — Unsloth, LLaMA-Factory**
+**⚖️ ¿Cuál elegir? — Unsloth, LLaMA-Factory, Axolotl, torchtune**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [Unsloth](human/fichas/unsloth.md) | Tu objetivo encaja con estos ejemplos: Probar inferencia local; Preparar un ajuste fino pequeño | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [LLaMA-Factory](human/fichas/llama-factory.md) | Tu objetivo encaja con estos ejemplos: Ajustar un modelo con ejemplos propios; Comparar un adaptador antes de exportarlo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [Axolotl](human/fichas/axolotl.md) | Tu objetivo encaja con estos ejemplos: ajustar un modelo abierto con QLoRA a partir de un archivo YAML; entrenar con GRPO o DPO en varias GPU | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| [torchtune](human/fichas/torchtune.md) | Tu objetivo encaja con estos ejemplos: estudiar recetas limpias de ajuste fino en PyTorch puro; reproducir un ajuste LoRA con configuraciones existentes | buscas una aplicación lista y no quieres preparar un proyecto de código |
 
-**⚖️ ¿Cuál elegir? — tensorflow, PyTorch**
+**⚖️ ¿Cuál elegir? — tensorflow, PyTorch, JAX**
 
 | Repo | Elígelo si… | Evítalo si… |
 |---|---|---|
 | [tensorflow](human/fichas/tensorflow.md) | Tu objetivo encaja con estos ejemplos: Aprender redes neuronales; Construir un clasificador educativo | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
 | [PyTorch](human/fichas/pytorch.md) | Tu objetivo encaja con estos ejemplos: Aprender tensores; Entrenar una red educativa | Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo |
+| [JAX](human/fichas/jax.md) | Tu objetivo encaja con estos ejemplos: entrenar modelos o simulaciones científicas en GPU o TPU; calcular derivadas de funciones numéricas complejas | buscas una aplicación lista y no quieres preparar un proyecto de código |
+
+**⚖️ ¿Cuál elegir? — verl, OpenRLHF**
+
+| Repo | Elígelo si… | Evítalo si… |
+|---|---|---|
+| [verl](human/fichas/verl.md) | Tu objetivo encaja con estos ejemplos: entrenar un modelo de razonamiento con GRPO sobre problemas verificables; investigar nuevos algoritmos de RL para LLM a escala | buscas una aplicación lista y no quieres preparar un proyecto de código |
+| [OpenRLHF](human/fichas/openrlhf.md) | Tu objetivo encaja con estos ejemplos: entrenar un modelo con PPO o GRPO a partir de un modelo de recompensa; experimentar con RL para agentes con varios turnos | buscas una aplicación lista y no quieres preparar un proyecto de código |
 
 ### Entrenar y afinar modelos
 
@@ -6595,7 +6669,7 @@ Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los p
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip install tensorflow` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender redes neuronales; Construir un clasificador educativo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Transformers](human/fichas/transformers.md) · [mediapipe](human/fichas/mediapipe.md) · [marimo](human/fichas/marimo.md) · [JupyterLab](human/fichas/jupyterlab.md) · [tfjs-models](human/fichas/tfjs-models.md)<br>
+**Combina con:** [Transformers](human/fichas/transformers.md) · [mediapipe](human/fichas/mediapipe.md) · [marimo](human/fichas/marimo.md) · [JupyterLab](human/fichas/jupyterlab.md) · [tfjs-models](human/fichas/tfjs-models.md) · [Keras 3](human/fichas/keras.md)<br>
 **Más:** [ficha completa](human/fichas/tensorflow.md) · [GitHub](https://github.com/tensorflow/tensorflow)
 
 #### 🏋️ Transformers
@@ -6629,6 +6703,60 @@ pip install -r requirements/metrics.txt` (comprobar los pasos completos en la fi
 **Combina con:** [PEFT](human/fichas/peft.md) · [Transformers](human/fichas/transformers.md) · [vLLM](human/fichas/vllm.md) · [SGLang](human/fichas/sglang.md) · [Gradio](human/fichas/gradio.md)<br>
 **Más:** [ficha completa](human/fichas/llama-factory.md) · [GitHub](https://github.com/hiyouga/LlamaFactory)
 
+#### 📚 scikit-learn
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 68.2k<br>
+**Qué es:** La biblioteca de machine learning clásico en Python: clasificación, regresión, clustering, reducción de dimensión, selección de modelos y preprocesado.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install -U scikit-learn` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: entrenar y validar un clasificador sobre datos tabulares; construir un pipeline de preprocesado y modelo reproducible — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [JupyterLab](human/fichas/jupyterlab.md) · [MLflow](human/fichas/mlflow.md) · [ML for Beginners](human/fichas/ml-for-beginners.md)<br>
+**Más:** [ficha completa](human/fichas/scikit-learn.md) · [GitHub](https://github.com/scikit-learn/scikit-learn)
+
+#### 📚 Keras 3
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 64.4k<br>
+**Qué es:** API de deep learning multibackend: el mismo código de modelo se ejecuta sobre JAX, TensorFlow o PyTorch (y OpenVINO para inferencia).<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install keras --upgrade` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: prototipar una red neuronal con una API sencilla; cambiar de backend sin reescribir el modelo para ganar rendimiento — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [JAX](human/fichas/jax.md) · [PyTorch](human/fichas/pytorch.md) · [tensorflow](human/fichas/tensorflow.md)<br>
+**Más:** [ficha completa](human/fichas/keras.md) · [GitHub](https://github.com/keras-team/keras)
+
+#### 📚 DeepSpeed
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🔴 pesado · ⭐ 43.3k<br>
+**Qué es:** Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descarga a CPU/NVMe para modelos enormes.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install deepspeed` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: entrenar un modelo que no cabe en una GPU repartiendo estados con ZeRO-3; acelerar un ajuste fino distribuido con Transformers o Accelerate — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [Transformers](human/fichas/transformers.md) · [Accelerate](human/fichas/accelerate.md) · [PyTorch Lightning](human/fichas/pytorch-lightning.md) · [Axolotl](human/fichas/axolotl.md) · [OpenRLHF](human/fichas/openrlhf.md)<br>
+**Más:** [ficha completa](human/fichas/deepspeed.md) · [GitHub](https://github.com/deepspeedai/DeepSpeed)
+
+#### 📚 JAX
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 36.6k<br>
+**Qué es:** Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install -U jax` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: entrenar modelos o simulaciones científicas en GPU o TPU; calcular derivadas de funciones numéricas complejas — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [Keras 3](human/fichas/keras.md) · [Gemma (biblioteca JAX)](human/fichas/gemma.md) · [JupyterLab](human/fichas/jupyterlab.md)<br>
+**Más:** [ficha completa](human/fichas/jax.md) · [GitHub](https://github.com/jax-ml/jax)
+
+#### 📚 PyTorch Lightning
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 31.4k<br>
+**Qué es:** Framework que estructura el entrenamiento en PyTorch y lo escala de una GPU a miles sin cambiar el código, con Lightning Fabric para control experto.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install lightning` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: organizar un proyecto de entrenamiento en PyTorch sin código repetitivo; pasar de una GPU a varias con DDP, FSDP o DeepSpeed — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [PyTorch](human/fichas/pytorch.md) · [DeepSpeed](human/fichas/deepspeed.md) · [MLflow](human/fichas/mlflow.md)<br>
+**Más:** [ficha completa](human/fichas/pytorch-lightning.md) · [GitHub](https://github.com/Lightning-AI/pytorch-lightning)
+
+#### 📚 verl
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🔴 pesado · ⭐ 24.2k<br>
+**Qué es:** Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/verl-project/verl/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: entrenar un modelo de razonamiento con GRPO sobre problemas verificables; investigar nuevos algoritmos de RL para LLM a escala — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [vLLM](human/fichas/vllm.md) · [SGLang](human/fichas/sglang.md) · [Ray](human/fichas/ray.md) · [Transformers](human/fichas/transformers.md)<br>
+**Más:** [ficha completa](human/fichas/verl.md) · [GitHub](https://github.com/verl-project/verl)
+
 #### 🏋️ PEFT
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 21.9k<br>
 **Qué es:** Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA.<br>
@@ -6646,6 +6774,42 @@ pip install -r requirements/metrics.txt` (comprobar los pasos completos en la fi
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender ajuste supervisado; Estudiar DPO o GRPO — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Transformers](human/fichas/transformers.md) · [PEFT](human/fichas/peft.md) · [Unsloth](human/fichas/unsloth.md) · [vLLM](human/fichas/vllm.md) · [LLM Course](human/fichas/llm-course.md) · [train-llm-from-scratch](human/fichas/train-llm-from-scratch.md)<br>
 **Más:** [ficha completa](human/fichas/trl.md) · [GitHub](https://github.com/huggingface/trl)
+
+#### 📚 Axolotl
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🔴 pesado · ⭐ 12.7k<br>
+**Qué es:** Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/axolotl-ai-cloud/axolotl/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: ajustar un modelo abierto con QLoRA a partir de un archivo YAML; entrenar con GRPO o DPO en varias GPU — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [DeepSpeed](human/fichas/deepspeed.md) · [PEFT](human/fichas/peft.md) · [Transformers](human/fichas/transformers.md) · [vLLM](human/fichas/vllm.md)<br>
+**Más:** [ficha completa](human/fichas/axolotl.md) · [GitHub](https://github.com/axolotl-ai-cloud/axolotl)
+
+#### 📚 OpenRLHF
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🔴 pesado · ⭐ 10.2k<br>
+**Qué es:** Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Arranque:** [Instrucciones originales](https://github.com/OpenRLHF/OpenRLHF/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: entrenar un modelo con PPO o GRPO a partir de un modelo de recompensa; experimentar con RL para agentes con varios turnos — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [Ray](human/fichas/ray.md) · [vLLM](human/fichas/vllm.md) · [DeepSpeed](human/fichas/deepspeed.md)<br>
+**Más:** [ficha completa](human/fichas/openrlhf.md) · [GitHub](https://github.com/OpenRLHF/OpenRLHF)
+
+#### 📚 Accelerate
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟢 fácil · ⭐ 9.9k<br>
+**Qué es:** Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU, varias, TPU o con DeepSpeed y FSDP, con precisión mixta, cambiando pocas líneas.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install accelerate` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: convertir un bucle de entrenamiento de PyTorch a multi-GPU sin reescribirlo; lanzar un entrenamiento con DeepSpeed desde un archivo de configuración — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [DeepSpeed](human/fichas/deepspeed.md) · [Transformers](human/fichas/transformers.md) · [PyTorch](human/fichas/pytorch.md)<br>
+**Más:** [ficha completa](human/fichas/accelerate.md) · [GitHub](https://github.com/huggingface/accelerate)
+
+#### 📚 torchtune
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🔴 pesado · ⭐ 5.8k<br>
+**Qué es:** Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install torchtune` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: estudiar recetas limpias de ajuste fino en PyTorch puro; reproducir un ajuste LoRA con configuraciones existentes — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [PyTorch](human/fichas/pytorch.md) · [LM Evaluation Harness](human/fichas/lm-eval-harness.md) · [Transformers](human/fichas/transformers.md)<br>
+**Más:** [ficha completa](human/fichas/torchtune.md) · [GitHub](https://github.com/meta-pytorch/torchtune)
 
 #### 🧑‍💻 bionemo-recipes
 **Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🔴 pesado · ⭐ 877<br>
@@ -6694,6 +6858,15 @@ pip install timesfm[torch]` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar datos sintéticos para robótica; Estudiar generación de escenas físicas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [diffusers](human/fichas/diffusers.md) · [PyTorch](human/fichas/pytorch.md) · [Nemotron (NVIDIA)](human/fichas/nemotron.md) · [warp](human/fichas/warp.md)<br>
 **Más:** [ficha completa](human/fichas/cosmos.md) · [GitHub](https://github.com/NVIDIA/cosmos)
+
+#### 📚 Gemma (biblioteca JAX)
+**Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🔴 pesado · ⭐ 5.9k<br>
+**Qué es:** Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo, multimodal, LoRA y ajuste fino.<br>
+**Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
+**Comando documentado:** `pip install gemma` (comprobar los pasos completos en la ficha).<br>
+**Elige si:** Tu objetivo encaja con estos ejemplos: chatear con un modelo Gemma en Python con JAX; ajustar Gemma con LoRA en GPU o TPU — **Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código<br>
+**Combina con:** [JAX](human/fichas/jax.md) · [JupyterLab](human/fichas/jupyterlab.md) · [LM Evaluation Harness](human/fichas/lm-eval-harness.md)<br>
+**Más:** [ficha completa](human/fichas/gemma.md) · [GitHub](https://github.com/google-deepmind/gemma)
 
 #### 🧠 Nemotron (NVIDIA)
 **Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🔴 pesado · ⭐ 2.3k<br>

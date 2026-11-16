@@ -127,12 +127,12 @@
     {
       "num": 23,
       "title": "Operar, evaluar y medir modelos de IA",
-      "count": 19
+      "count": 26
     },
     {
       "num": 24,
       "title": "Modelos abiertos y entrenamiento",
-      "count": 14
+      "count": 25
     },
     {
       "num": 25,
@@ -3353,12 +3353,13 @@
           "repo_ids": [
             "cosmos",
             "deepseek-v3",
+            "gemma",
             "kimi-k2-7-code",
             "laya",
             "nemotron",
             "timesfm"
           ],
-          "count": 6
+          "count": 7
         },
         {
           "id": "local-entrenamiento",
@@ -3376,16 +3377,26 @@
           "keywords": [],
           "reference_repos": [],
           "repo_ids": [
+            "accelerate",
+            "axolotl",
             "bionemo-recipes",
+            "deepspeed",
+            "jax",
+            "keras",
             "llama-factory",
+            "openrlhf",
             "peft",
             "pytorch",
+            "pytorch-lightning",
+            "scikit-learn",
             "tensorflow",
+            "torchtune",
             "transformers",
             "trl",
-            "unsloth"
+            "unsloth",
+            "verl"
           ],
-          "count": 8
+          "count": 18
         },
         {
           "id": "local-servidores",
@@ -3404,30 +3415,42 @@
           "reference_repos": [],
           "repo_ids": [
             "backdoor",
+            "bentoml",
             "claude-code-router",
+            "gpustack",
             "litellm",
             "omniroute",
+            "ray",
             "sglang",
             "tensorrt-llm",
-            "vllm"
+            "vllm",
+            "xinference"
           ],
-          "count": 7
+          "count": 11
         }
       ],
       "repo_ids": [
+        "accelerate",
         "airllm",
         "anything-llm",
+        "axolotl",
         "backdoor",
+        "bentoml",
         "bionemo-recipes",
         "chatbox",
         "cherry-studio",
         "claude-code-router",
         "cosmos",
         "deepseek-v3",
+        "deepspeed",
         "exo",
         "freetoken",
+        "gemma",
+        "gpustack",
         "hermes-desktop",
         "jan",
+        "jax",
+        "keras",
         "khoj",
         "kimi-k2-7-code",
         "koboldcpp",
@@ -3452,9 +3475,13 @@
         "omniroute",
         "open-notebook",
         "open-webui",
+        "openrlhf",
         "peft",
         "private-gpt",
         "pytorch",
+        "pytorch-lightning",
+        "ray",
+        "scikit-learn",
         "sglang",
         "sillytavern",
         "surfsense",
@@ -3462,13 +3489,16 @@
         "tensorrt-llm",
         "textgen",
         "timesfm",
+        "torchtune",
         "transformers",
         "transformers.js",
         "trl",
         "unsloth",
-        "vllm"
+        "verl",
+        "vllm",
+        "xinference"
       ],
-      "count": 52
+      "count": 67
     },
     {
       "id": "documentos",
@@ -4314,15 +4344,18 @@
             "claude-code-usage-monitor",
             "deepeval",
             "guardrails",
+            "helicone",
             "langfuse",
+            "lm-eval-harness",
             "loguru",
             "mlflow",
+            "openllmetry",
             "opik",
             "phoenix",
             "promptfoo",
             "ragas"
           ],
-          "count": 10
+          "count": 13
         },
         {
           "id": "dev-contexto",
@@ -4342,16 +4375,20 @@
           "reference_repos": [],
           "repo_ids": [
             "backdoor",
+            "bentoml",
             "claude-code-router",
+            "gpustack",
             "headroom",
             "litellm",
             "omniroute",
+            "ray",
             "rtk",
             "sglang",
             "tensorrt-llm",
-            "vllm"
+            "vllm",
+            "xinference"
           ],
-          "count": 9
+          "count": 13
         }
       ],
       "repo_ids": [
@@ -4362,6 +4399,7 @@
         "appwrite",
         "ast-grep",
         "backdoor",
+        "bentoml",
         "biome",
         "caddy",
         "casaos",
@@ -4390,14 +4428,17 @@
         "gitleaks",
         "gitnexus",
         "goose",
+        "gpustack",
         "graphify",
         "guardrails",
         "headroom",
         "headscale",
+        "helicone",
         "kilocode",
         "langfuse",
         "lazygit",
         "litellm",
+        "lm-eval-harness",
         "loguru",
         "masterdnsvpn",
         "mimo-code",
@@ -4415,6 +4456,7 @@
         "opencursor",
         "openhands",
         "openidea",
+        "openllmetry",
         "opik",
         "phoenix",
         "portainer",
@@ -4422,6 +4464,7 @@
         "promptfoo",
         "qwen-code",
         "ragas",
+        "ray",
         "repomix",
         "ripgrep",
         "rtk",
@@ -4440,9 +4483,10 @@
         "uptime-kuma",
         "vllm",
         "wg-easy",
+        "xinference",
         "zed"
       ],
-      "count": 86
+      "count": 93
     },
     {
       "id": "vision",
@@ -70515,7 +70559,8 @@
       "combines_with": [
         "jupyterlab",
         "marimo",
-        "llm-course"
+        "llm-course",
+        "scikit-learn"
       ],
       "alt": []
     },
@@ -79378,6 +79423,119 @@
       ]
     },
     {
+      "id": "bentoml",
+      "name": "BentoML",
+      "cat": 23,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "serving",
+        "python",
+        "ml",
+        "docker"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/bentoml/BentoML/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "f3fa37f9c4ab176951d40e20f16cbfc07efc798b"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install -U bentoml",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/bentoml/BentoML/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install -U bentoml`, define el servicio de ejemplo del README y arráncalo con `bentoml serve`.",
+        "success": "La API responde en localhost con el resultado del modelo.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "publicar un modelo de Transformers como API REST",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "empaquetar un LLM servido con vLLM en una imagen desplegable",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/bentoml/BentoML/blob/main/README.md",
+        "source_blob_sha": "f3fa37f9c4ab176951d40e20f16cbfc07efc798b",
+        "previous_category": [
+          23,
+          "serving"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible.",
+      "desc": "Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/bentoml/BentoML",
+      "install": "pip install -U bentoml",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: publicar un modelo de Transformers como API REST; empaquetar un LLM servido con vLLM en una imagen desplegable",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "vllm",
+        "transformers",
+        "pytorch"
+      ],
+      "alt": []
+    },
+    {
       "id": "claude-code-router",
       "name": "claude-code-router",
       "cat": 23,
@@ -79744,6 +79902,120 @@
       ]
     },
     {
+      "id": "gpustack",
+      "name": "GPUStack",
+      "cat": 23,
+      "role": "platform",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "serving",
+        "python",
+        "gpu",
+        "self-hosted"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/gpustack/gpustack/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "6987b1354bc278f1b7dea893f5020d79a2f0dd81"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/gpustack/gpustack/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Sigue la guía de instalación con Docker en un nodo con GPU NVIDIA, despliega un modelo pequeño y prueba la API con curl.",
+        "success": "El modelo responde por el endpoint compatible con OpenAI.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "servir varios modelos en las GPU de tu laboratorio con una sola consola",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "dar a tu equipo claves de API compatibles con OpenAI sobre modelos propios",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/gpustack/gpustack/blob/main/README.md",
+        "source_blob_sha": "6987b1354bc278f1b7dea893f5020d79a2f0dd81",
+        "previous_category": [
+          23,
+          "serving"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU.",
+      "desc": "Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/gpustack/gpustack",
+      "install": "Seguir la instalación original: https://github.com/gpustack/gpustack/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: servir varios modelos en las GPU de tu laboratorio con una sola consola; dar a tu equipo claves de API compatibles con OpenAI sobre modelos propios",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "vllm",
+        "sglang",
+        "tensorrt-llm"
+      ],
+      "alt": []
+    },
+    {
       "id": "guardrails",
       "name": "NeMo Guardrails",
       "cat": 23,
@@ -79988,6 +80260,121 @@
       ]
     },
     {
+      "id": "helicone",
+      "name": "Helicone",
+      "cat": 23,
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "observability",
+        "typescript",
+        "llm",
+        "self-hosted"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/Helicone/helicone/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "0bfc46167e1a9056c564bf67173641f3dd96d498"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/Helicone/helicone/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Despliega Helicone con su Docker Compose, cambia la URL base de un cliente OpenAI a la pasarela y haz una petición.",
+        "success": "La petición aparece en el panel con coste, tokens y latencia.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "ver coste y latencia de todas las llamadas a modelos de tu aplicación",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "versionar prompts y enrutar entre proveedores con reintentos",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/Helicone/helicone/blob/main/README.md",
+        "source_blob_sha": "0bfc46167e1a9056c564bf67173641f3dd96d498",
+        "previous_category": [
+          23,
+          "observabilidad"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestiona prompts y enruta a más de 100 modelos.",
+      "desc": "Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestiona prompts y enruta a más de 100 modelos.",
+      "stack": "TypeScript, Dockerfile, package.json",
+      "repo": "https://github.com/Helicone/helicone",
+      "install": "Seguir la instalación original: https://github.com/Helicone/helicone/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: ver coste y latencia de todas las llamadas a modelos de tu aplicación; versionar prompts y enrutar entre proveedores con reintentos",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "litellm",
+        "langchain",
+        "open-webui"
+      ],
+      "alt": [
+        "langfuse"
+      ]
+    },
+    {
       "id": "langfuse",
       "name": "langfuse",
       "cat": 23,
@@ -80112,7 +80499,8 @@
       "alt": [
         "phoenix",
         "opik",
-        "mlflow"
+        "mlflow",
+        "helicone"
       ]
     },
     {
@@ -80241,6 +80629,123 @@
         "claude-code-router",
         "backdoor"
       ]
+    },
+    {
+      "id": "lm-eval-harness",
+      "name": "LM Evaluation Harness",
+      "cat": 23,
+      "role": "library",
+      "exec": "hybrid",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "evaluation",
+        "python",
+        "llm",
+        "benchmark"
+      ],
+      "routes": [
+        "no_api",
+        "local_model",
+        "api"
+      ],
+      "access": {
+        "api": "optional",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "choice",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.",
+        "cost_note": "La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/EleutherAI/lm-evaluation-harness/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "76d494a86f1c41b9583defbbf394958b35b9a636"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install \"lm_eval[hf]\"",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/EleutherAI/lm-evaluation-harness/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install \"lm_eval[hf]\"` y evalúa un modelo pequeño de Hugging Face en una tarea ligera con `lm_eval --model hf --tasks ...`.",
+        "success": "Obtienes una tabla con la métrica de la tarea y su error estándar.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "comparar un modelo ajustado con su base en MMLU, HellaSwag o GSM8K",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "reproducir resultados de tablas de clasificación con la misma configuración",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/EleutherAI/lm-evaluation-harness/blob/main/README.md",
+        "source_blob_sha": "76d494a86f1c41b9583defbbf394958b35b9a636",
+        "previous_category": [
+          23,
+          "observabilidad"
+        ],
+        "category_verdict": "confirmed",
+        "note": "El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends Hugging Face, vLLM, SGLang o APIs.",
+      "desc": "Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends Hugging Face, vLLM, SGLang o APIs.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/EleutherAI/lm-evaluation-harness",
+      "install": "pip install \"lm_eval[hf]\"",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: comparar un modelo ajustado con su base en MMLU, HellaSwag o GSM8K; reproducir resultados de tablas de clasificación con la misma configuración",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "vllm",
+        "sglang",
+        "transformers",
+        "torchtune",
+        "gemma"
+      ],
+      "alt": []
     },
     {
       "id": "loguru",
@@ -80609,6 +81114,120 @@
         "backdoor",
         "litellm"
       ]
+    },
+    {
+      "id": "openllmetry",
+      "name": "OpenLLMetry",
+      "cat": 23,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "observability",
+        "python",
+        "llm",
+        "opentelemetry"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/traceloop/openllmetry/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "65ac1c4c42121f8b2beb99058be4eb3cd3dc2999"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install traceloop-sdk",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/traceloop/openllmetry/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install traceloop-sdk`, inicializa el SDK en un script con una llamada a un modelo y envía las trazas a la consola o a tu backend.",
+        "success": "Ves las trazas con prompts, tokens y latencias.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "trazar llamadas a OpenAI, LangChain o Ollama en Grafana o Datadog",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "añadir observabilidad de LLM a una pila OpenTelemetry existente",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/traceloop/openllmetry/blob/main/README.md",
+        "source_blob_sha": "65ac1c4c42121f8b2beb99058be4eb3cd3dc2999",
+        "previous_category": [
+          23,
+          "observabilidad"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza llamadas a modelos, bases vectoriales y frameworks hacia tu backend de observabi",
+      "desc": "Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza llamadas a modelos, bases vectoriales y frameworks hacia tu backend de observabilidad.",
+      "stack": "Python, package.json",
+      "repo": "https://github.com/traceloop/openllmetry",
+      "install": "pip install traceloop-sdk",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: trazar llamadas a OpenAI, LangChain o Ollama en Grafana o Datadog; añadir observabilidad de LLM a una pila OpenTelemetry existente",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "grafana",
+        "langchain",
+        "llama-index",
+        "ollama"
+      ],
+      "alt": []
     },
     {
       "id": "opik",
@@ -81117,6 +81736,120 @@
       ]
     },
     {
+      "id": "ray",
+      "name": "Ray",
+      "cat": 23,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "distributed",
+        "python",
+        "serving",
+        "ml"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/ray-project/ray/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "a51e52cf34c013e2a7be0663e24b0fd098caf36c"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install ray",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/ray-project/ray/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install ray` y paraleliza una función con `@ray.remote` en tu equipo.",
+        "success": "Las tareas se ejecutan en paralelo y el panel de Ray muestra su progreso.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "paralelizar un procesamiento de datos o entrenamiento en varias máquinas",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "servir modelos con autoescalado mediante Ray Serve",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/ray-project/ray/blob/master/README.md",
+        "source_blob_sha": "a51e52cf34c013e2a7be0663e24b0fd098caf36c",
+        "previous_category": [
+          23,
+          "serving"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Motor de cómputo distribuido para IA: escala Python de un portátil a un clúster, con bibliotecas para datos, entrenamiento, ajuste, RL y serving.",
+      "desc": "Motor de cómputo distribuido para IA: escala Python de un portátil a un clúster, con bibliotecas para datos, entrenamiento, ajuste, RL y serving.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/ray-project/ray",
+      "install": "pip install ray",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: paralelizar un procesamiento de datos o entrenamiento en varias máquinas; servir modelos con autoescalado mediante Ray Serve",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "vllm",
+        "pytorch",
+        "verl",
+        "openrlhf"
+      ],
+      "alt": []
+    },
+    {
       "id": "rtk",
       "name": "rtk",
       "cat": 23,
@@ -81488,7 +82221,8 @@
         "litellm",
         "open-webui",
         "transformers",
-        "deepseek-v3"
+        "deepseek-v3",
+        "gpustack"
       ],
       "alt": []
     },
@@ -81611,6 +82345,352 @@
       ],
       "alt": [
         "sglang"
+      ]
+    },
+    {
+      "id": "xinference",
+      "name": "Xinference",
+      "cat": 23,
+      "role": "platform",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "serving",
+        "python",
+        "llm",
+        "self-hosted"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/xorbitsai/inference/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "9adcf167e643f8b0ff64418763281898fbe323ff"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "setup",
+        "prerequisites": [
+          "Un entorno de instalación o servidor y las dependencias indicadas por el README."
+        ],
+        "steps": [
+          "Elige la instalación documentada: aplicación, paquete, contenedor o despliegue desde código.",
+          "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
+          "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
+        ],
+        "command": "pip install xinference",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/xorbitsai/inference/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install xinference`, arranca `xinference-local` y lanza un modelo pequeño desde la interfaz web.",
+        "success": "El modelo responde por la API compatible con OpenAI.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "servir un LLM, un modelo de embeddings y uno de voz desde un mismo servidor",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "conectar Dify, LangChain o LlamaIndex a modelos propios",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/xorbitsai/inference/blob/main/README.md",
+        "source_blob_sha": "9adcf167e643f8b0ff64418763281898fbe323ff",
+        "previous_category": [
+          23,
+          "serving"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores.",
+      "desc": "Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/xorbitsai/inference",
+      "install": "pip install xinference",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: servir un LLM, un modelo de embeddings y uno de voz desde un mismo servidor; conectar Dify, LangChain o LlamaIndex a modelos propios",
+      "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
+      "combines_with": [
+        "vllm",
+        "llama-cpp",
+        "langchain",
+        "llama-index"
+      ],
+      "alt": []
+    },
+    {
+      "id": "accelerate",
+      "name": "Accelerate",
+      "cat": 24,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "training",
+        "python",
+        "pytorch"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/huggingface/accelerate/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "344d31807fcb44ec034e2606233b7845b7b28942"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install accelerate",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/huggingface/accelerate/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install accelerate`, ejecuta `accelerate config` y lanza un script de ejemplo con `accelerate launch`.",
+        "success": "El script se ejecuta con la configuración elegida.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "convertir un bucle de entrenamiento de PyTorch a multi-GPU sin reescribirlo",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "lanzar un entrenamiento con DeepSpeed desde un archivo de configuración",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/huggingface/accelerate/blob/main/README.md",
+        "source_blob_sha": "344d31807fcb44ec034e2606233b7845b7b28942",
+        "previous_category": [
+          24,
+          "entrenamiento"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU, varias, TPU o con DeepSpeed y FSDP, con precisión mixta, cambiando pocas líneas.",
+      "desc": "Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU, varias, TPU o con DeepSpeed y FSDP, con precisión mixta, cambiando pocas líneas.",
+      "stack": "Python, pyproject.toml, setup.py",
+      "repo": "https://github.com/huggingface/accelerate",
+      "install": "pip install accelerate",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: convertir un bucle de entrenamiento de PyTorch a multi-GPU sin reescribirlo; lanzar un entrenamiento con DeepSpeed desde un archivo de configuración",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "deepspeed",
+        "transformers",
+        "pytorch"
+      ],
+      "alt": []
+    },
+    {
+      "id": "axolotl",
+      "name": "Axolotl",
+      "cat": 24,
+      "role": "library",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "training",
+        "python",
+        "llm",
+        "gpu"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/axolotl-ai-cloud/axolotl/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "4a40d093efb907c0d19dc1f474fea97eb3e887da"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/axolotl-ai-cloud/axolotl/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Sigue la instalación con uv del README en una máquina con GPU y lanza uno de los ejemplos de configuración QLoRA pequeños.",
+        "success": "El entrenamiento arranca y guarda el adaptador al final.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "ajustar un modelo abierto con QLoRA a partir de un archivo YAML",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "entrenar con GRPO o DPO en varias GPU",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/axolotl-ai-cloud/axolotl/blob/main/README.md",
+        "source_blob_sha": "4a40d093efb907c0d19dc1f474fea97eb3e887da",
+        "previous_category": [
+          24,
+          "entrenamiento"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido.",
+      "desc": "Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/axolotl-ai-cloud/axolotl",
+      "install": "Seguir la instalación original: https://github.com/axolotl-ai-cloud/axolotl/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: ajustar un modelo abierto con QLoRA a partir de un archivo YAML; entrenar con GRPO o DPO en varias GPU",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "deepspeed",
+        "peft",
+        "transformers",
+        "vllm"
+      ],
+      "alt": [
+        "torchtune",
+        "llama-factory",
+        "unsloth"
       ]
     },
     {
@@ -81965,6 +83045,464 @@
         "vllm",
         "litellm",
         "tensorrt-llm"
+      ],
+      "alt": []
+    },
+    {
+      "id": "deepspeed",
+      "name": "DeepSpeed",
+      "cat": 24,
+      "role": "library",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "training",
+        "python",
+        "gpu",
+        "distributed"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/deepspeedai/DeepSpeed/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "1e890bd018f58be9bf9491e2dda73d929777c72e"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install deepspeed",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/deepspeedai/DeepSpeed/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install deepspeed` en un entorno con PyTorch y GPU y ejecuta `ds_report` para comprobar la compatibilidad.",
+        "success": "El informe muestra qué operaciones y extensiones están disponibles.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "entrenar un modelo que no cabe en una GPU repartiendo estados con ZeRO-3",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "acelerar un ajuste fino distribuido con Transformers o Accelerate",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/deepspeedai/DeepSpeed/blob/master/README.md",
+        "source_blob_sha": "1e890bd018f58be9bf9491e2dda73d929777c72e",
+        "previous_category": [
+          24,
+          "entrenamiento"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descarga a CPU/NVMe para modelos enormes.",
+      "desc": "Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descarga a CPU/NVMe para modelos enormes.",
+      "stack": "Python, setup.py",
+      "repo": "https://github.com/deepspeedai/DeepSpeed",
+      "install": "pip install deepspeed",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: entrenar un modelo que no cabe en una GPU repartiendo estados con ZeRO-3; acelerar un ajuste fino distribuido con Transformers o Accelerate",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "transformers",
+        "accelerate",
+        "pytorch-lightning",
+        "axolotl",
+        "openrlhf"
+      ],
+      "alt": []
+    },
+    {
+      "id": "gemma",
+      "name": "Gemma (biblioteca JAX)",
+      "cat": 24,
+      "role": "library",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "model",
+        "python",
+        "jax",
+        "llm"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/google-deepmind/gemma/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "21415fad49cd6af0db5e52261ed95caf102d7f7b"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install gemma",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/google-deepmind/gemma/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala JAX para tu hardware y después `pip install gemma`; ejecuta el ejemplo de muestreo con un checkpoint pequeño.",
+        "success": "El modelo responde al prompt de ejemplo.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "chatear con un modelo Gemma en Python con JAX",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "ajustar Gemma con LoRA en GPU o TPU",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/google-deepmind/gemma/blob/main/README.md",
+        "source_blob_sha": "21415fad49cd6af0db5e52261ed95caf102d7f7b",
+        "previous_category": [
+          24,
+          "modelos"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo, multimodal, LoRA y ajuste fino.",
+      "desc": "Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo, multimodal, LoRA y ajuste fino.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/google-deepmind/gemma",
+      "install": "pip install gemma",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: chatear con un modelo Gemma en Python con JAX; ajustar Gemma con LoRA en GPU o TPU",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "jax",
+        "jupyterlab",
+        "lm-eval-harness"
+      ],
+      "alt": []
+    },
+    {
+      "id": "jax",
+      "name": "JAX",
+      "cat": 24,
+      "role": "library",
+      "exec": "local",
+      "setup": "medium",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "ml",
+        "python",
+        "library",
+        "numerical"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/jax-ml/jax/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "6c1da50d9a243065cf6a24245ecc4d757379262c"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install -U jax",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/jax-ml/jax/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install -U jax` y calcula el gradiente de una función simple con `jax.grad`.",
+        "success": "Obtienes el valor del gradiente evaluado en el punto indicado.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "entrenar modelos o simulaciones científicas en GPU o TPU",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "calcular derivadas de funciones numéricas complejas",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/jax-ml/jax/blob/main/README.md",
+        "source_blob_sha": "6c1da50d9a243065cf6a24245ecc4d757379262c",
+        "previous_category": [
+          24,
+          "entrenamiento"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU.",
+      "desc": "Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU.",
+      "stack": "Python, pyproject.toml, setup.py",
+      "repo": "https://github.com/jax-ml/jax",
+      "install": "pip install -U jax",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: entrenar modelos o simulaciones científicas en GPU o TPU; calcular derivadas de funciones numéricas complejas",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "keras",
+        "gemma",
+        "jupyterlab"
+      ],
+      "alt": [
+        "pytorch",
+        "tensorflow"
+      ]
+    },
+    {
+      "id": "keras",
+      "name": "Keras 3",
+      "cat": 24,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "ml",
+        "python",
+        "library",
+        "deep-learning"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/keras-team/keras/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "da60850f49d6bac37ecf108b10c827894e95f49f"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install keras --upgrade",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/keras-team/keras/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install keras --upgrade` y un backend (por ejemplo JAX), y entrena el ejemplo MNIST de la documentación.",
+        "success": "El modelo entrena y muestra la precisión por época.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "prototipar una red neuronal con una API sencilla",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "cambiar de backend sin reescribir el modelo para ganar rendimiento",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/keras-team/keras/blob/master/README.md",
+        "source_blob_sha": "da60850f49d6bac37ecf108b10c827894e95f49f",
+        "previous_category": [
+          24,
+          "entrenamiento"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "API de deep learning multibackend: el mismo código de modelo se ejecuta sobre JAX, TensorFlow o PyTorch (y OpenVINO para inferencia).",
+      "desc": "API de deep learning multibackend: el mismo código de modelo se ejecuta sobre JAX, TensorFlow o PyTorch (y OpenVINO para inferencia).",
+      "stack": "Python, pyproject.toml, requirements.txt",
+      "repo": "https://github.com/keras-team/keras",
+      "install": "pip install keras --upgrade",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: prototipar una red neuronal con una API sencilla; cambiar de backend sin reescribir el modelo para ganar rendimiento",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "jax",
+        "pytorch",
+        "tensorflow"
       ],
       "alt": []
     },
@@ -82334,7 +83872,9 @@
         "gradio"
       ],
       "alt": [
-        "unsloth"
+        "unsloth",
+        "axolotl",
+        "torchtune"
       ]
     },
     {
@@ -82459,6 +83999,122 @@
         "cosmos"
       ],
       "alt": []
+    },
+    {
+      "id": "openrlhf",
+      "name": "OpenRLHF",
+      "cat": 24,
+      "role": "library",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "training",
+        "python",
+        "rl",
+        "gpu"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/OpenRLHF/OpenRLHF/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "f117521d7159c797d5be39062ea22e9516006322"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/OpenRLHF/OpenRLHF/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Sigue la guía rápida de OpenRLHF en un entorno con GPU y ejecuta un script de ejemplo de SFT o RM pequeño.",
+        "success": "El entrenamiento arranca y guarda los checkpoints.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "entrenar un modelo con PPO o GRPO a partir de un modelo de recompensa",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "experimentar con RL para agentes con varios turnos",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/OpenRLHF/OpenRLHF/blob/main/README.md",
+        "source_blob_sha": "f117521d7159c797d5be39062ea22e9516006322",
+        "previous_category": [
+          24,
+          "entrenamiento"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono.",
+      "desc": "Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono.",
+      "stack": "Python, pyproject.toml, requirements.txt, setup.py",
+      "repo": "https://github.com/OpenRLHF/OpenRLHF",
+      "install": "Seguir la instalación original: https://github.com/OpenRLHF/OpenRLHF/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: entrenar un modelo con PPO o GRPO a partir de un modelo de recompensa; experimentar con RL para agentes con varios turnos",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "ray",
+        "vllm",
+        "deepspeed"
+      ],
+      "alt": [
+        "verl"
+      ]
     },
     {
       "id": "peft",
@@ -82696,8 +84352,234 @@
         "vllm"
       ],
       "alt": [
-        "tensorflow"
+        "tensorflow",
+        "jax"
       ]
+    },
+    {
+      "id": "pytorch-lightning",
+      "name": "PyTorch Lightning",
+      "cat": 24,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "training",
+        "python",
+        "pytorch"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/Lightning-AI/pytorch-lightning/blob/master/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "9f91e0eae154ae4ca3785b7c221fbf243cb3c92a"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install lightning",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/Lightning-AI/pytorch-lightning/blob/master/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install lightning` y ejecuta el ejemplo de autoencoder del README.",
+        "success": "El Trainer entrena y muestra métricas por época.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "organizar un proyecto de entrenamiento en PyTorch sin código repetitivo",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "pasar de una GPU a varias con DDP, FSDP o DeepSpeed",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/Lightning-AI/pytorch-lightning/blob/master/README.md",
+        "source_blob_sha": "9f91e0eae154ae4ca3785b7c221fbf243cb3c92a",
+        "previous_category": [
+          24,
+          "entrenamiento"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework que estructura el entrenamiento en PyTorch y lo escala de una GPU a miles sin cambiar el código, con Lightning Fabric para control experto.",
+      "desc": "Framework que estructura el entrenamiento en PyTorch y lo escala de una GPU a miles sin cambiar el código, con Lightning Fabric para control experto.",
+      "stack": "Python, pyproject.toml, requirements.txt, setup.py",
+      "repo": "https://github.com/Lightning-AI/pytorch-lightning",
+      "install": "pip install lightning",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: organizar un proyecto de entrenamiento en PyTorch sin código repetitivo; pasar de una GPU a varias con DDP, FSDP o DeepSpeed",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "pytorch",
+        "deepspeed",
+        "mlflow"
+      ],
+      "alt": []
+    },
+    {
+      "id": "scikit-learn",
+      "name": "scikit-learn",
+      "cat": 24,
+      "role": "library",
+      "exec": "local",
+      "setup": "easy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "ml",
+        "python",
+        "library",
+        "data"
+      ],
+      "routes": [
+        "no_api"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "not_applicable",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "ordinary",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.",
+        "cost_note": "No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.",
+        "hardware_note": "Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/scikit-learn/scikit-learn/blob/main/README.rst"
+        ],
+        "mode": "software",
+        "source_blob_sha": "cf30a4b3289a096a273ca490e1a846cf4c088795"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install -U scikit-learn",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/scikit-learn/scikit-learn/blob/main/README.rst",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install -U scikit-learn` y entrena un clasificador sobre el conjunto iris incluido.",
+        "success": "Obtienes la precisión del modelo en validación cruzada.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "entrenar y validar un clasificador sobre datos tabulares",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "construir un pipeline de preprocesado y modelo reproducible",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/scikit-learn/scikit-learn/blob/main/README.rst",
+        "source_blob_sha": "cf30a4b3289a096a273ca490e1a846cf4c088795",
+        "previous_category": [
+          24,
+          "entrenamiento"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La función básica es software o material que no necesita llamar a un modelo de IA.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "La biblioteca de machine learning clásico en Python: clasificación, regresión, clustering, reducción de dimensión, selección de modelos y preprocesado.",
+      "desc": "La biblioteca de machine learning clásico en Python: clasificación, regresión, clustering, reducción de dimensión, selección de modelos y preprocesado.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/scikit-learn/scikit-learn",
+      "install": "pip install -U scikit-learn",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: entrenar y validar un clasificador sobre datos tabulares; construir un pipeline de preprocesado y modelo reproducible",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "jupyterlab",
+        "mlflow",
+        "ml-for-beginners"
+      ],
+      "alt": []
     },
     {
       "id": "tensorflow",
@@ -82820,10 +84702,12 @@
         "mediapipe",
         "marimo",
         "jupyterlab",
-        "tfjs-models"
+        "tfjs-models",
+        "keras"
       ],
       "alt": [
-        "pytorch"
+        "pytorch",
+        "jax"
       ]
     },
     {
@@ -82945,6 +84829,124 @@
         "pytorch"
       ],
       "alt": []
+    },
+    {
+      "id": "torchtune",
+      "name": "torchtune",
+      "cat": 24,
+      "role": "library",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "training",
+        "python",
+        "pytorch",
+        "llm"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/meta-pytorch/torchtune/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "ad44a8d6006a405940af040ded29ce3c2f21922f"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "pip install torchtune",
+        "command_status": "documented",
+        "entry_url": "",
+        "source": "https://github.com/meta-pytorch/torchtune/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Instala con `pip install torchtune` (junto a torch, torchvision y torchao) y lista las recetas con `tune ls`.",
+        "success": "La CLI muestra las recetas y configuraciones disponibles.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "estudiar recetas limpias de ajuste fino en PyTorch puro",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "reproducir un ajuste LoRA con configuraciones existentes",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/meta-pytorch/torchtune/blob/main/README.md",
+        "source_blob_sha": "ad44a8d6006a405940af040ded29ce3c2f21922f",
+        "previous_category": [
+          24,
+          "entrenamiento"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo.",
+      "desc": "Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo.",
+      "stack": "Python, pyproject.toml",
+      "repo": "https://github.com/meta-pytorch/torchtune",
+      "install": "pip install torchtune",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: estudiar recetas limpias de ajuste fino en PyTorch puro; reproducir un ajuste LoRA con configuraciones existentes",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "pytorch",
+        "lm-eval-harness",
+        "transformers"
+      ],
+      "alt": [
+        "axolotl",
+        "llama-factory",
+        "unsloth"
+      ]
     },
     {
       "id": "transformers",
@@ -83312,7 +85314,126 @@
         "sglang"
       ],
       "alt": [
-        "llama-factory"
+        "llama-factory",
+        "axolotl",
+        "torchtune"
+      ]
+    },
+    {
+      "id": "verl",
+      "name": "verl",
+      "cat": 24,
+      "role": "library",
+      "exec": "local",
+      "setup": "heavy",
+      "mcp": false,
+      "prov": [],
+      "tags": [
+        "training",
+        "python",
+        "rl",
+        "gpu"
+      ],
+      "routes": [
+        "no_api",
+        "local_model"
+      ],
+      "access": {
+        "api": "not_required",
+        "local_model": "supported",
+        "claude_code": "not_documented",
+        "codex": "not_documented",
+        "antigravity": "not_documented",
+        "cost": "no_model_fee",
+        "hardware": "model_dependent",
+        "scope": "Función básica descrita en el README; modelos, servicios opcionales y despliegues se revisan por separado.",
+        "api_note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "subscription_note": "Poder usar un agente para instalar código no acredita que su suscripción ejecute esta aplicación.",
+        "local_note": "El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.",
+        "cost_note": "La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.",
+        "hardware_note": "RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.",
+        "checked_at": "2026-11-16",
+        "review": "documented",
+        "sources": [
+          "https://github.com/verl-project/verl/blob/main/README.md"
+        ],
+        "mode": "software",
+        "source_blob_sha": "2c1a8d037eec7c27e0166e9d5b84116ff37b7bdb"
+      },
+      "getting_started": {
+        "kind": "source",
+        "audience": "developer",
+        "prerequisites": [
+          "Un entorno de desarrollo compatible con el lenguaje y los requisitos del README."
+        ],
+        "steps": [
+          "Prepara un proyecto o una copia de ejemplo siguiendo los requisitos originales.",
+          "Instala las dependencias documentadas y configura los datos, modelos o servicios necesarios para ese ejemplo.",
+          "Ejecuta la prueba mínima y revisa la salida antes de integrar la pieza en tu aplicación."
+        ],
+        "command": "",
+        "command_status": "readme",
+        "entry_url": "",
+        "source": "https://github.com/verl-project/verl/blob/main/README.md",
+        "checked_at": "2026-11-16",
+        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+      },
+      "first_try": {
+        "action": "Sigue la guía de inicio rápido de verl en un nodo con GPU y ejecuta el ejemplo PPO o GRPO pequeño con GSM8K.",
+        "success": "El entrenamiento arranca y registra recompensas por paso.",
+        "execution": "proposed_not_executed"
+      },
+      "practical_examples": [
+        {
+          "scenario": "entrenar un modelo de razonamiento con GRPO sobre problemas verificables",
+          "status": "illustrative"
+        },
+        {
+          "scenario": "investigar nuevos algoritmos de RL para LLM a escala",
+          "status": "illustrative"
+        }
+      ],
+      "editorial_review": {
+        "status": "source_reviewed",
+        "checked_at": "2026-11-16",
+        "source": "https://github.com/verl-project/verl/blob/main/README.md",
+        "source_blob_sha": "2c1a8d037eec7c27e0166e9d5b84116ff37b7bdb",
+        "previous_category": [
+          24,
+          "entrenamiento"
+        ],
+        "category_verdict": "confirmed",
+        "note": "La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.",
+        "checks": [
+          "identity",
+          "category",
+          "examples",
+          "installation_source",
+          "api_costs",
+          "claude_code",
+          "codex",
+          "antigravity",
+          "local_model"
+        ],
+        "installation_tested": false
+      },
+      "one": "Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang.",
+      "desc": "Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang.",
+      "stack": "Python, pyproject.toml, requirements.txt, setup.py",
+      "repo": "https://github.com/verl-project/verl",
+      "install": "Seguir la instalación original: https://github.com/verl-project/verl/blob/main/README.md",
+      "install_conf": "clone",
+      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "choose_if": "Tu objetivo encaja con estos ejemplos: entrenar un modelo de razonamiento con GRPO sobre problemas verificables; investigar nuevos algoritmos de RL para LLM a escala",
+      "avoid_if": "buscas una aplicación lista y no quieres preparar un proyecto de código",
+      "combines_with": [
+        "vllm",
+        "sglang",
+        "ray",
+        "transformers"
+      ],
+      "alt": [
+        "openrlhf"
       ]
     },
     {

@@ -1,6 +1,6 @@
 # Biblioteca de Alexandría
 
-748 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
+766 repositorios para encontrar una herramienta, entender cómo se usa y elegir una ruta de acceso antes de instalar.
 
 ## Empieza por tu pregunta
 
@@ -29,11 +29,11 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | [Trading, inversión y finanzas](areas/trading.md) | Investigar mercados con IA, Estrategias y backtesting, Bots, exchanges y conexiones, Aprendizaje y simulaciones | 25 |
 | [Automatización, negocios y marketing](areas/automatizacion.md) | Automatización y flujos, WhatsApp y pasarelas de mensajería, CRM, ventas y soporte, Email, campañas y redes sociales, Skills de marketing, SEO y contenido, Aplicaciones internas sin código, Reservas y citas, Constructores de conversaciones, Comunidades,chat y llamadas | 59 |
 | [Agentes de IA, investigación y navegación](areas/agentes.md) | Frameworks y equipos de agentes, Constructores visuales de agentes, Asistentes personales y autónomos, Investigación con fuentes, Scraping y extracción web, Navegadores y automatización web, MCP: conectar herramientas | 116 |
-| [IA local, modelos y entrenamiento](areas/ia-local.md) | Chats y asistentes privados, Motores para modelos locales, Modelos abiertos y pesos, Entrenamiento y ajuste fino, Inferencia, servidores y gateways | 52 |
+| [IA local, modelos y entrenamiento](areas/ia-local.md) | Chats y asistentes privados, Motores para modelos locales, Modelos abiertos y pesos, Entrenamiento y ajuste fino, Inferencia, servidores y gateways | 67 |
 | [Documentos, presentaciones y conocimiento](areas/documentos.md) | PDF y conversión de documentos, OCR y documentos escaneados, Presentaciones y diapositivas, Diagramas y documentación visual, Preguntar a documentos y buscar conocimiento, Memoria y contexto para agentes | 59 |
 | [Datos, dashboards y analítica](areas/datos.md) | Consulta y procesamiento de datos, Notebooks y aplicaciones de datos, Dashboards y BI, Gráficos y visualización, Analítica web y de producto, Aprender análisis de datos | 29 |
 | [Productividad, notas y servicios personales](areas/productividad.md) | Notas, Obsidian y segundo cerebro, Archivos, lectura y bibliotecas, Contraseñas y privacidad, Hogar, dispositivos y utilidades, Aprendizaje asistido, Escritura y calidad de texto | 48 |
-| [Programación, backend y despliegue](areas/desarrollo.md) | Agentes y editores para programar, Comprender y revisar código, Backend, alojamiento y despliegue, Evaluación, trazas y observabilidad, Contexto, consumo y enrutamiento | 86 |
+| [Programación, backend y despliegue](areas/desarrollo.md) | Agentes y editores para programar, Comprender y revisar código, Backend, alojamiento y despliegue, Evaluación, trazas y observabilidad, Contexto, consumo y enrutamiento | 93 |
 | [Visión artificial, mapas y percepción](areas/vision.md) | Detección, segmentación y seguimiento, Rostros y análisis visual, Mapas, OSINT y fotogrametría | 31 |
 | [Aprender IA, prompts y skills](areas/aprender.md) | Cursos, guías y ejemplos, Prompts y contexto, Aprender cómo funcionan los modelos, Métodos, plugins y catálogos de skills, Skills por oficio y especialidad | 97 |
 | [Configuración de Claude Code](areas/configurar-claude-code.md) | Instalación y primeros pasos, Skills, plugins y métodos, MCP y navegador, Memoria y uso del contexto, Hooks y automatización de sesiones, Consumo y proveedores, Diseño, marketing y producción, Integraciones,proveedores y paneles | 242 |
@@ -66,8 +66,8 @@ Consulta el [manual de agentes, modelos, teléfonos, prompts, comandos y servici
 | 20 | [🕸️ Programar con agentes de código](categorias/20-agentes-de-codigo.md) | 21 | [OpenCode](fichas/opencode.md), [Claude Code](fichas/claude-code.md) |
 | 21 | [🕸️ Asistentes e investigación con agentes](categorias/21-asistentes-investigacion.md) | 17 | [OpenClaw](fichas/openclaw.md), [autoresearch](fichas/autoresearch.md) |
 | 22 | [🕸️ Infraestructura, despliegue y herramientas para agentes](categorias/22-infraestructura-despliegue.md) | 26 | [Composio](fichas/composio.md), [E2B](fichas/e2b.md) |
-| 23 | [🧬 Operar, evaluar y medir modelos de IA](categorias/23-operacion-evaluacion-modelos.md) | 19 | [vLLM](fichas/vllm.md), [headroom](fichas/headroom.md), [promptfoo](fichas/promptfoo.md) |
-| 24 | [🧑‍💻 Modelos abiertos y entrenamiento](categorias/24-modelos-entrenamiento.md) | 14 | [Unsloth](fichas/unsloth.md), [TimesFM](fichas/timesfm.md) |
+| 23 | [🧬 Operar, evaluar y medir modelos de IA](categorias/23-operacion-evaluacion-modelos.md) | 26 | [vLLM](fichas/vllm.md), [headroom](fichas/headroom.md), [promptfoo](fichas/promptfoo.md) |
+| 24 | [🧑‍💻 Modelos abiertos y entrenamiento](categorias/24-modelos-entrenamiento.md) | 25 | [Unsloth](fichas/unsloth.md), [TimesFM](fichas/timesfm.md) |
 | 25 | [🧑‍💻 Procesar datos y trabajar con notebooks](categorias/25-datos-notebooks.md) | 12 | [DuckDB](fichas/duckdb.md), [marimo](fichas/marimo.md), [Gradio](fichas/gradio.md) |
 | 26 | [🎨 Animación, gráficos y creación 3D](categorias/26-animacion-graficos-3d.md) | 19 | [three.js](fichas/three-js.md) |
 | 27 | [🎨 Skills de diseño, contenido y especialidades](categorias/27-skills-especializadas.md) | 36 | [Stitch Skills](fichas/stitch-skills.md), [Humanizer](fichas/humanizer.md), [Marketing Skills](fichas/marketingskills.md) |

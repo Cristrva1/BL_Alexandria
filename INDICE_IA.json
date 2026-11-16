@@ -1,7 +1,7 @@
 {
  "$schema_version": "1.2",
  "meta": {
-  "title": "Índice IA — 750 repos curados de IA, automatización y herramientas",
+  "title": "Índice IA — 768 repos curados de IA, automatización y herramientas",
   "purpose": "Que una persona o un agente elija repos útiles con bajo gasto de tokens. Empieza por AGENTS.md.",
   "how_to_use": [
    "1. Lee solo este JSON. Filtra por cat/sub/tags/role/exec/setup/prov y la frase one.",
@@ -889,7 +889,7 @@
      "title": "Observabilidad, evaluación y guardrails"
     }
    ],
-   "count": 19
+   "count": 26
   },
   {
    "num": 24,
@@ -908,7 +908,7 @@
      "title": "Modelos abiertos y fundacionales"
     }
    ],
-   "count": 14
+   "count": 25
   },
   {
    "num": 25,
@@ -9481,7 +9481,8 @@
    "alt": [
     "phoenix",
     "opik",
-    "mlflow"
+    "mlflow",
+    "helicone"
    ],
    "doc": "human/fichas/langfuse.md",
    "github_id": 642497346,
@@ -10166,7 +10167,9 @@
    "pick": true,
    "one": "App y herramientas para ejecutar y adaptar modelos localmente, con conexiones a agentes y proveedores opcionales.",
    "alt": [
-    "llama-factory"
+    "llama-factory",
+    "axolotl",
+    "torchtune"
    ],
    "doc": "human/fichas/unsloth.md",
    "github_id": 725205304,
@@ -10235,7 +10238,8 @@
    "pick": false,
    "one": "Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU.",
    "alt": [
-    "tensorflow"
+    "tensorflow",
+    "jax"
    ],
    "doc": "human/fichas/pytorch.md",
    "github_id": 65600975,
@@ -10270,7 +10274,9 @@
    "pick": false,
    "one": "Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código.",
    "alt": [
-    "unsloth"
+    "unsloth",
+    "axolotl",
+    "torchtune"
    ],
    "doc": "human/fichas/llama-factory.md",
    "github_id": 646410686,
@@ -18277,7 +18283,8 @@
    "pick": false,
    "one": "Framework de aprendizaje automático para construir, entrenar y desplegar modelos mediante Python y otros entornos.",
    "alt": [
-    "pytorch"
+    "pytorch",
+    "jax"
    ],
    "doc": "human/fichas/tensorflow.md",
    "starred_by": "Cristrva1",
@@ -30511,6 +30518,684 @@
    "routes": [
     "no_api"
    ]
+  },
+  {
+   "id": "lm-eval-harness",
+   "name": "LM Evaluation Harness",
+   "cat": 23,
+   "sub": "observabilidad",
+   "role": "library",
+   "exec": "hybrid",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "evaluation",
+    "python",
+    "llm",
+    "benchmark"
+   ],
+   "stars": 14481,
+   "gh": "EleutherAI/lm-evaluation-harness",
+   "lib": false,
+   "pick": false,
+   "one": "Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends Hugging Face, vLLM, SGLang o APIs.",
+   "alt": [],
+   "doc": "human/fichas/lm-eval-harness.md",
+   "github_id": 290909192,
+   "lang": "Python",
+   "license": "MIT",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "local"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model",
+    "api"
+   ]
+  },
+  {
+   "id": "scikit-learn",
+   "name": "scikit-learn",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ml",
+    "python",
+    "library",
+    "data"
+   ],
+   "stars": 68191,
+   "gh": "scikit-learn/scikit-learn",
+   "lib": false,
+   "pick": false,
+   "one": "La biblioteca de machine learning clásico en Python: clasificación, regresión, clustering, reducción de dimensión, selección de modelos y preprocesado.",
+   "alt": [],
+   "doc": "human/fichas/scikit-learn.md",
+   "github_id": 843222,
+   "lang": "Python",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "datos",
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "axolotl",
+   "name": "Axolotl",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "training",
+    "python",
+    "llm",
+    "gpu"
+   ],
+   "stars": 12724,
+   "gh": "axolotl-ai-cloud/axolotl",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido.",
+   "alt": [
+    "torchtune",
+    "llama-factory",
+    "unsloth"
+   ],
+   "doc": "human/fichas/axolotl.md",
+   "github_id": 627727693,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "local",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "openllmetry",
+   "name": "OpenLLMetry",
+   "cat": 23,
+   "sub": "observabilidad",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "observability",
+    "python",
+    "llm",
+    "opentelemetry"
+   ],
+   "stars": 7538,
+   "gh": "traceloop/openllmetry",
+   "lib": false,
+   "pick": false,
+   "one": "Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza llamadas a modelos, bases vectoriales y frameworks hacia tu backend de observabilidad.",
+   "alt": [],
+   "doc": "human/fichas/openllmetry.md",
+   "github_id": 686364232,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "helicone",
+   "name": "Helicone",
+   "cat": 23,
+   "sub": "observabilidad",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "observability",
+    "typescript",
+    "llm",
+    "self-hosted"
+   ],
+   "stars": 6282,
+   "gh": "Helicone/helicone",
+   "lib": false,
+   "pick": false,
+   "one": "Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestiona prompts y enruta a más de 100 modelos.",
+   "alt": [
+    "langfuse"
+   ],
+   "doc": "human/fichas/helicone.md",
+   "github_id": 595832198,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "ray",
+   "name": "Ray",
+   "cat": 23,
+   "sub": "serving",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "distributed",
+    "python",
+    "serving",
+    "ml"
+   ],
+   "stars": 44292,
+   "gh": "ray-project/ray",
+   "lib": false,
+   "pick": false,
+   "one": "Motor de cómputo distribuido para IA: escala Python de un portátil a un clúster, con bibliotecas para datos, entrenamiento, ajuste, RL y serving.",
+   "alt": [],
+   "doc": "human/fichas/ray.md",
+   "github_id": 71932349,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "local"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "xinference",
+   "name": "Xinference",
+   "cat": 23,
+   "sub": "serving",
+   "role": "platform",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "serving",
+    "python",
+    "llm",
+    "self-hosted"
+   ],
+   "stars": 9660,
+   "gh": "xorbitsai/inference",
+   "lib": false,
+   "pick": false,
+   "one": "Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores.",
+   "alt": [],
+   "doc": "human/fichas/xinference.md",
+   "github_id": 653496050,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "local"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "bentoml",
+   "name": "BentoML",
+   "cat": 23,
+   "sub": "serving",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "serving",
+    "python",
+    "ml",
+    "docker"
+   ],
+   "stars": 8941,
+   "gh": "bentoml/BentoML",
+   "lib": false,
+   "pick": false,
+   "one": "Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible.",
+   "alt": [],
+   "doc": "human/fichas/bentoml.md",
+   "github_id": 178976529,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "gpustack",
+   "name": "GPUStack",
+   "cat": 23,
+   "sub": "serving",
+   "role": "platform",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "serving",
+    "python",
+    "gpu",
+    "self-hosted"
+   ],
+   "stars": 6049,
+   "gh": "gpustack/gpustack",
+   "lib": false,
+   "pick": false,
+   "one": "Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU.",
+   "alt": [],
+   "doc": "human/fichas/gpustack.md",
+   "github_id": 799049436,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "local"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "keras",
+   "name": "Keras 3",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ml",
+    "python",
+    "library",
+    "deep-learning"
+   ],
+   "stars": 64424,
+   "gh": "keras-team/keras",
+   "lib": false,
+   "pick": false,
+   "one": "API de deep learning multibackend: el mismo código de modelo se ejecuta sobre JAX, TensorFlow o PyTorch (y OpenVINO para inferencia).",
+   "alt": [],
+   "doc": "human/fichas/keras.md",
+   "github_id": 33015583,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar",
+    "aprender"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "deepspeed",
+   "name": "DeepSpeed",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "training",
+    "python",
+    "gpu",
+    "distributed"
+   ],
+   "stars": 43330,
+   "gh": "deepspeedai/DeepSpeed",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descarga a CPU/NVMe para modelos enormes.",
+   "alt": [],
+   "doc": "human/fichas/deepspeed.md",
+   "github_id": 235860204,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "jax",
+   "name": "JAX",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "medium",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "ml",
+    "python",
+    "library",
+    "numerical"
+   ],
+   "stars": 36632,
+   "gh": "jax-ml/jax",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU.",
+   "alt": [
+    "pytorch",
+    "tensorflow"
+   ],
+   "doc": "human/fichas/jax.md",
+   "github_id": 154739597,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "pytorch-lightning",
+   "name": "PyTorch Lightning",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "training",
+    "python",
+    "pytorch"
+   ],
+   "stars": 31450,
+   "gh": "Lightning-AI/pytorch-lightning",
+   "lib": false,
+   "pick": false,
+   "one": "Framework que estructura el entrenamiento en PyTorch y lo escala de una GPU a miles sin cambiar el código, con Lightning Fabric para control experto.",
+   "alt": [],
+   "doc": "human/fichas/pytorch-lightning.md",
+   "github_id": 178626720,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "verl",
+   "name": "verl",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "training",
+    "python",
+    "rl",
+    "gpu"
+   ],
+   "stars": 24239,
+   "gh": "verl-project/verl",
+   "lib": false,
+   "pick": false,
+   "one": "Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang.",
+   "alt": [
+    "openrlhf"
+   ],
+   "doc": "human/fichas/verl.md",
+   "github_id": 881221486,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "openrlhf",
+   "name": "OpenRLHF",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "training",
+    "python",
+    "rl",
+    "gpu"
+   ],
+   "stars": 10157,
+   "gh": "OpenRLHF/OpenRLHF",
+   "lib": false,
+   "pick": false,
+   "one": "Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono.",
+   "alt": [
+    "verl"
+   ],
+   "doc": "human/fichas/openrlhf.md",
+   "github_id": 672415139,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "accelerate",
+   "name": "Accelerate",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "easy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "training",
+    "python",
+    "pytorch"
+   ],
+   "stars": 9949,
+   "gh": "huggingface/accelerate",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU, varias, TPU o con DeepSpeed y FSDP, con precisión mixta, cambiando pocas líneas.",
+   "alt": [],
+   "doc": "human/fichas/accelerate.md",
+   "github_id": 308638334,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api"
+   ]
+  },
+  {
+   "id": "torchtune",
+   "name": "torchtune",
+   "cat": 24,
+   "sub": "entrenamiento",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "training",
+    "python",
+    "pytorch",
+    "llm"
+   ],
+   "stars": 5817,
+   "gh": "meta-pytorch/torchtune",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo.",
+   "alt": [
+    "axolotl",
+    "llama-factory",
+    "unsloth"
+   ],
+   "doc": "human/fichas/torchtune.md",
+   "github_id": 707869465,
+   "lang": "Python",
+   "license": "BSD-3-Clause",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
+  },
+  {
+   "id": "gemma",
+   "name": "Gemma (biblioteca JAX)",
+   "cat": 24,
+   "sub": "modelos",
+   "role": "library",
+   "exec": "local",
+   "setup": "heavy",
+   "mcp": false,
+   "prov": [],
+   "tags": [
+    "model",
+    "python",
+    "jax",
+    "llm"
+   ],
+   "stars": 5853,
+   "gh": "google-deepmind/gemma",
+   "lib": false,
+   "pick": false,
+   "one": "Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo, multimodal, LoRA y ajuste fino.",
+   "alt": [],
+   "doc": "human/fichas/gemma.md",
+   "github_id": 760683276,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "added_at": "2026-11-16",
+   "github_checked": "2026-11-16",
+   "goals": [
+    "local",
+    "programar"
+   ],
+   "source_archived": false,
+   "routes": [
+    "no_api",
+    "local_model"
+   ]
   }
  ],
  "discovery": {
@@ -30536,7 +31221,9 @@
      16,
      17,
      20,
-     22
+     22,
+     23,
+     24
     ],
     "keywords": [
      "programar",
@@ -30718,6 +31405,7 @@
     "categories": [
      8,
      15,
+     23,
      24
     ],
     "keywords": [
@@ -30997,6 +31685,7 @@
     ],
     "categories": [
      10,
+     24,
      25
     ],
     "keywords": [

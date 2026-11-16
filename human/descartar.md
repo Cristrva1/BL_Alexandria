@@ -279,7 +279,8 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [claude-code-router](fichas/claude-code-router.md) | [OmniRoute](fichas/omniroute.md), [backdoor](fichas/backdoor.md), [litellm](fichas/litellm.md) |
 | [DeepEval](fichas/deepeval.md) | [Ragas](fichas/ragas.md), [promptfoo](fichas/promptfoo.md) |
 | [headroom](fichas/headroom.md) | [rtk](fichas/rtk.md) |
-| [langfuse](fichas/langfuse.md) | [Phoenix](fichas/phoenix.md), [Opik](fichas/opik.md), [MLflow](fichas/mlflow.md) |
+| [Helicone](fichas/helicone.md) | [langfuse](fichas/langfuse.md) |
+| [langfuse](fichas/langfuse.md) | [Phoenix](fichas/phoenix.md), [Opik](fichas/opik.md), [MLflow](fichas/mlflow.md), [Helicone](fichas/helicone.md) |
 | [litellm](fichas/litellm.md) | [OmniRoute](fichas/omniroute.md), [claude-code-router](fichas/claude-code-router.md), [backdoor](fichas/backdoor.md) |
 | [MLflow](fichas/mlflow.md) | [langfuse](fichas/langfuse.md) |
 | [OmniRoute](fichas/omniroute.md) | [claude-code-router](fichas/claude-code-router.md), [backdoor](fichas/backdoor.md), [litellm](fichas/litellm.md) |
@@ -290,10 +291,15 @@ Nada se borra: cuando dos repos cumplen la misma función se marcan como alterna
 | [rtk](fichas/rtk.md) | [headroom](fichas/headroom.md) |
 | [SGLang](fichas/sglang.md) | [vLLM](fichas/vllm.md) |
 | [vLLM](fichas/vllm.md) | [SGLang](fichas/sglang.md) |
-| [LLaMA-Factory](fichas/llama-factory.md) | [Unsloth](fichas/unsloth.md) |
-| [PyTorch](fichas/pytorch.md) | [tensorflow](fichas/tensorflow.md) |
-| [tensorflow](fichas/tensorflow.md) | [PyTorch](fichas/pytorch.md) |
-| [Unsloth](fichas/unsloth.md) | [LLaMA-Factory](fichas/llama-factory.md) |
+| [Axolotl](fichas/axolotl.md) | [torchtune](fichas/torchtune.md), [LLaMA-Factory](fichas/llama-factory.md), [Unsloth](fichas/unsloth.md) |
+| [JAX](fichas/jax.md) | [PyTorch](fichas/pytorch.md), [tensorflow](fichas/tensorflow.md) |
+| [LLaMA-Factory](fichas/llama-factory.md) | [Unsloth](fichas/unsloth.md), [Axolotl](fichas/axolotl.md), [torchtune](fichas/torchtune.md) |
+| [OpenRLHF](fichas/openrlhf.md) | [verl](fichas/verl.md) |
+| [PyTorch](fichas/pytorch.md) | [tensorflow](fichas/tensorflow.md), [JAX](fichas/jax.md) |
+| [tensorflow](fichas/tensorflow.md) | [PyTorch](fichas/pytorch.md), [JAX](fichas/jax.md) |
+| [torchtune](fichas/torchtune.md) | [Axolotl](fichas/axolotl.md), [LLaMA-Factory](fichas/llama-factory.md), [Unsloth](fichas/unsloth.md) |
+| [Unsloth](fichas/unsloth.md) | [LLaMA-Factory](fichas/llama-factory.md), [Axolotl](fichas/axolotl.md), [torchtune](fichas/torchtune.md) |
+| [verl](fichas/verl.md) | [OpenRLHF](fichas/openrlhf.md) |
 | [Apache Iceberg](fichas/apache-iceberg.md) | [Delta Lake](fichas/delta-lake.md), [hudi](fichas/hudi.md) |
 | [Delta Lake](fichas/delta-lake.md) | [Apache Iceberg](fichas/apache-iceberg.md), [hudi](fichas/hudi.md) |
 | [DuckDB](fichas/duckdb.md) | [Polars](fichas/polars.md) |

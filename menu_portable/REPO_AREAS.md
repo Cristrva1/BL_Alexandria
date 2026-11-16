@@ -306,19 +306,19 @@ Ejecutar modelos en tu equipo o en una máquina administrada por ti.
 
 Modelos publicados por sus autores para evaluar e integrar.
 
-`cosmos`, `deepseek-v3`, `kimi-k2-7-code`, `laya`, `nemotron`, `timesfm`
+`cosmos`, `deepseek-v3`, `gemma`, `kimi-k2-7-code`, `laya`, `nemotron`, `timesfm`
 
 ### Entrenamiento y ajuste fino
 
 Bibliotecas para entrenar o adaptar modelos a tus datos.
 
-`bionemo-recipes`, `llama-factory`, `peft`, `pytorch`, `tensorflow`, `transformers`, `trl`, `unsloth`
+`accelerate`, `axolotl`, `bionemo-recipes`, `deepspeed`, `jax`, `keras`, `llama-factory`, `openrlhf`, `peft`, `pytorch`, `pytorch-lightning`, `scikit-learn`, `tensorflow`, `torchtune`, `transformers`, `trl`, `unsloth`, `verl`
 
 ### Inferencia, servidores y gateways
 
 Servir modelos y organizar el acceso de tus aplicaciones.
 
-`backdoor`, `claude-code-router`, `litellm`, `omniroute`, `sglang`, `tensorrt-llm`, `vllm`
+`backdoor`, `bentoml`, `claude-code-router`, `gpustack`, `litellm`, `omniroute`, `ray`, `sglang`, `tensorrt-llm`, `vllm`, `xinference`
 
 ## Documentos, presentaciones y conocimiento
 
@@ -466,13 +466,13 @@ Infraestructura, servicios y herramientas de operación.
 
 Medir resultados y revisar lo que hace una aplicación de IA.
 
-`claude-code-usage-monitor`, `deepeval`, `guardrails`, `langfuse`, `loguru`, `mlflow`, `opik`, `phoenix`, `promptfoo`, `ragas`
+`claude-code-usage-monitor`, `deepeval`, `guardrails`, `helicone`, `langfuse`, `lm-eval-harness`, `loguru`, `mlflow`, `openllmetry`, `opik`, `phoenix`, `promptfoo`, `ragas`
 
 ### Contexto, consumo y enrutamiento
 
 Reducir contexto innecesario y organizar el acceso a modelos.
 
-`backdoor`, `claude-code-router`, `headroom`, `litellm`, `omniroute`, `rtk`, `sglang`, `tensorrt-llm`, `vllm`
+`backdoor`, `bentoml`, `claude-code-router`, `gpustack`, `headroom`, `litellm`, `omniroute`, `ray`, `rtk`, `sglang`, `tensorrt-llm`, `vllm`, `xinference`
 
 ## Visión artificial, mapas y percepción
 

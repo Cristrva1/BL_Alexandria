@@ -1156,12 +1156,176 @@
         "license": "AGPL-3.0",
         "pushed_at": "2026-11-09"
       }
+    ],
+    "p07": [
+      {
+        "id": "lm-eval-harness",
+        "full_name": "EleutherAI/lm-evaluation-harness",
+        "github_id": 290909192,
+        "readme_blob_sha": "76d494a86f1c41b9583defbbf394958b35b9a636",
+        "stars": 14481,
+        "license": "MIT",
+        "pushed_at": "2026-11-04"
+      },
+      {
+        "id": "scikit-learn",
+        "full_name": "scikit-learn/scikit-learn",
+        "github_id": 843222,
+        "readme_blob_sha": "cf30a4b3289a096a273ca490e1a846cf4c088795",
+        "stars": 68191,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "axolotl",
+        "full_name": "axolotl-ai-cloud/axolotl",
+        "github_id": 627727693,
+        "readme_blob_sha": "4a40d093efb907c0d19dc1f474fea97eb3e887da",
+        "stars": 12724,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-13"
+      },
+      {
+        "id": "openllmetry",
+        "full_name": "traceloop/openllmetry",
+        "github_id": 686364232,
+        "readme_blob_sha": "65ac1c4c42121f8b2beb99058be4eb3cd3dc2999",
+        "stars": 7538,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-09"
+      },
+      {
+        "id": "helicone",
+        "full_name": "Helicone/helicone",
+        "github_id": 595832198,
+        "readme_blob_sha": "0bfc46167e1a9056c564bf67173641f3dd96d498",
+        "stars": 6282,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-12"
+      },
+      {
+        "id": "ray",
+        "full_name": "ray-project/ray",
+        "github_id": 71932349,
+        "readme_blob_sha": "a51e52cf34c013e2a7be0663e24b0fd098caf36c",
+        "stars": 44292,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "xinference",
+        "full_name": "xorbitsai/inference",
+        "github_id": 653496050,
+        "readme_blob_sha": "9adcf167e643f8b0ff64418763281898fbe323ff",
+        "stars": 9660,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "bentoml",
+        "full_name": "bentoml/BentoML",
+        "github_id": 178976529,
+        "readme_blob_sha": "f3fa37f9c4ab176951d40e20f16cbfc07efc798b",
+        "stars": 8941,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-02"
+      },
+      {
+        "id": "gpustack",
+        "full_name": "gpustack/gpustack",
+        "github_id": 799049436,
+        "readme_blob_sha": "6987b1354bc278f1b7dea893f5020d79a2f0dd81",
+        "stars": 6049,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "keras",
+        "full_name": "keras-team/keras",
+        "github_id": 33015583,
+        "readme_blob_sha": "da60850f49d6bac37ecf108b10c827894e95f49f",
+        "stars": 64424,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "deepspeed",
+        "full_name": "deepspeedai/DeepSpeed",
+        "github_id": 235860204,
+        "readme_blob_sha": "1e890bd018f58be9bf9491e2dda73d929777c72e",
+        "stars": 43330,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "jax",
+        "full_name": "jax-ml/jax",
+        "github_id": 154739597,
+        "readme_blob_sha": "6c1da50d9a243065cf6a24245ecc4d757379262c",
+        "stars": 36632,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "pytorch-lightning",
+        "full_name": "Lightning-AI/pytorch-lightning",
+        "github_id": 178626720,
+        "readme_blob_sha": "9f91e0eae154ae4ca3785b7c221fbf243cb3c92a",
+        "stars": 31450,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "verl",
+        "full_name": "verl-project/verl",
+        "github_id": 881221486,
+        "readme_blob_sha": "2c1a8d037eec7c27e0166e9d5b84116ff37b7bdb",
+        "stars": 24239,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-16"
+      },
+      {
+        "id": "openrlhf",
+        "full_name": "OpenRLHF/OpenRLHF",
+        "github_id": 672415139,
+        "readme_blob_sha": "f117521d7159c797d5be39062ea22e9516006322",
+        "stars": 10157,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-03"
+      },
+      {
+        "id": "accelerate",
+        "full_name": "huggingface/accelerate",
+        "github_id": 308638334,
+        "readme_blob_sha": "344d31807fcb44ec034e2606233b7845b7b28942",
+        "stars": 9949,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-11-14"
+      },
+      {
+        "id": "torchtune",
+        "full_name": "meta-pytorch/torchtune",
+        "github_id": 707869465,
+        "readme_blob_sha": "ad44a8d6006a405940af040ded29ce3c2f21922f",
+        "stars": 5817,
+        "license": "BSD-3-Clause",
+        "pushed_at": "2026-11-09"
+      },
+      {
+        "id": "gemma",
+        "full_name": "google-deepmind/gemma",
+        "github_id": 760683276,
+        "readme_blob_sha": "21415fad49cd6af0db5e52261ed95caf102d7f7b",
+        "stars": 5853,
+        "license": "Apache-2.0",
+        "pushed_at": "2026-10-28"
+      }
     ]
   },
   "notes": [
     "No se instaló ni se ejecutó ningún proyecto del catálogo.",
     "Identidades verificadas con la API de GitHub (id numérico, propietario, licencia, archivado)."
   ],
-  "added_count": 127,
-  "total_repositories": 750
+  "added_count": 145,
+  "total_repositories": 768
 }

@@ -4,7 +4,7 @@
 
 Elige un agente de código, comprende un proyecto y prepara su infraestructura, pruebas y seguimiento.
 
-86 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
+93 repos únicos · 5 subcategorías. [Ver en el explorador](../../docs/index.html#/area/desarrollo).
 
 ## Opciones para empezar
 
@@ -112,16 +112,19 @@ Infraestructura, servicios y herramientas de operación.
 
 Medir resultados y revisar lo que hace una aplicación de IA.
 
-[Explorar 10 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-evaluar)
+[Explorar 13 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-evaluar)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [Claude-Code-Usage-Monitor](../fichas/claude-code-usage-monitor.md) | Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible. | Sin clave propia de API de IA en la ruta básica |
 | [DeepEval](../fichas/deepeval.md) | Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. | API de IA opcional |
+| [Helicone](../fichas/helicone.md) | Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestiona prompts y enruta a más de 100 modelos. | Sin clave propia de API de IA en la ruta básica |
 | [langfuse](../fichas/langfuse.md) | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. | API de IA opcional |
+| [LM Evaluation Harness](../fichas/lm-eval-harness.md) | Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends Hugging Face, vLLM, SGLang o APIs. | API de IA opcional |
 | [loguru](../fichas/loguru.md) | Librería de logging para Python centrada en la simplicidad ("logging that doesn't suck"), lista para usar sin configuración previa. | Sin clave propia de API de IA en la ruta básica |
 | [MLflow](../fichas/mlflow.md) | Plataforma open source para el ciclo de vida de modelos de ML y apps de LLM: experimentos, trazas y registro. | API de IA opcional |
 | [NeMo Guardrails](../fichas/guardrails.md) | Toolkit de NVIDIA para añadir barreras programables a sistemas conversacionales con LLM. | Depende de la ruta elegida |
+| [OpenLLMetry](../fichas/openllmetry.md) | Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza llamadas a modelos, bases vectoriales y frameworks hacia tu backend de observabilidad. | Sin clave propia de API de IA en la ruta básica |
 | [Opik](../fichas/opik.md) | Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes. | API de IA opcional |
 | [Phoenix](../fichas/phoenix.md) | Plataforma open source de Arize para observar, trazar y evaluar apps de LLM, con OpenTelemetry. | API de IA opcional |
 | [promptfoo](../fichas/promptfoo.md) | CLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad. | API de IA opcional |
@@ -131,18 +134,22 @@ Medir resultados y revisar lo que hace una aplicación de IA.
 
 Reducir contexto innecesario y organizar el acceso a modelos.
 
-[Explorar 9 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-contexto)
+[Explorar 13 repos](../../docs/index.html#/explorar?area=desarrollo&topic=dev-contexto)
 
 | Repositorio | Para qué sirve | API de IA |
 |---|---|---|
 | [backdoor](../fichas/backdoor.md) | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. | API de IA opcional |
+| [BentoML](../fichas/bentoml.md) | Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible. | Sin clave propia de API de IA en la ruta básica |
 | [claude-code-router](../fichas/claude-code-router.md) | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. | Depende de la ruta elegida |
+| [GPUStack](../fichas/gpustack.md) | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU. | Sin clave propia de API de IA en la ruta básica |
 | [headroom](../fichas/headroom.md) | Utilidad para compactar contexto y aprovechar mejor la ventana del modelo, condensando texto largo sin perder lo esencial. | API de IA opcional |
 | [litellm](../fichas/litellm.md) | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. | API de IA opcional |
 | [OmniRoute](../fichas/omniroute.md) | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso. | API de IA opcional |
+| [Ray](../fichas/ray.md) | Motor de cómputo distribuido para IA: escala Python de un portátil a un clúster, con bibliotecas para datos, entrenamiento, ajuste, RL y serving. | Sin clave propia de API de IA en la ruta básica |
 | [rtk](../fichas/rtk.md) | Proxy de terminal que compacta salidas de comandos para reducir el contexto que consumen los agentes de código. | API de IA opcional |
 | [SGLang](../fichas/sglang.md) | Framework de servicio de alto rendimiento para LLM y modelos multimodales. | Sin clave propia de API de IA en la ruta básica |
 | [TensorRT-LLM](../fichas/tensorrt-llm.md) | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. | Sin clave propia de API de IA en la ruta básica |
 | [vLLM](../fichas/vllm.md) | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. | Sin clave propia de API de IA en la ruta básica |
+| [Xinference](../fichas/xinference.md) | Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores. | Sin clave propia de API de IA en la ruta básica |
 
 La revisión de documentación no equivale a una instalación probada. Consulta cada ficha para acceso, coste, equipo y pasos de arranque.

@@ -1,6 +1,6 @@
 # 📚 Catálogo de BL_Alexandria
 
-**748 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
+**766 repos** de IA y automatización en **32 categorías**, con una línea por repo. Estrellas de GitHub al 2026-11-14.
 
 [🗺️ Guía humana](human/README.md) · [🔎 Explorador interactivo](docs/index.html) · [🧪 Recetas](human/playbooks/README.md) · [🆕 Novedades](human/novedades.md) · [🤖 Para agentes](AGENTS.md)
 
@@ -30,8 +30,8 @@
 20. [🕸️ Programar con agentes de código](#️-20-programar-con-agentes-de-código) — 21
 21. [🕸️ Asistentes e investigación con agentes](#️-21-asistentes-e-investigación-con-agentes) — 17
 22. [🕸️ Infraestructura, despliegue y herramientas para agentes](#️-22-infraestructura-despliegue-y-herramientas-para-agentes) — 26
-23. [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) — 19
-24. [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) — 14
+23. [🧬 Operar, evaluar y medir modelos de IA](#-23-operar-evaluar-y-medir-modelos-de-ia) — 26
+24. [🧑‍💻 Modelos abiertos y entrenamiento](#-24-modelos-abiertos-y-entrenamiento) — 25
 25. [🧑‍💻 Procesar datos y trabajar con notebooks](#-25-procesar-datos-y-trabajar-con-notebooks) — 12
 26. [🎨 Animación, gráficos y creación 3D](#-26-animación-gráficos-y-creación-3d) — 19
 27. [🎨 Skills de diseño, contenido y especialidades](#-27-skills-de-diseño-contenido-y-especialidades) — 36
@@ -1109,9 +1109,13 @@ _Servidores de inferencia, gateways, evaluación, trazas y control de contexto. 
 | ⭐ [vLLM](human/fichas/vllm.md) | Motor de inferencia y servicio de LLM de alto rendimiento y uso eficiente de memoria en GPU. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [OmniRoute](human/fichas/omniroute.md) | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso. | API de IA opcional | ⚙️ plataforma | 🔴 pesado |
 | [litellm](human/fichas/litellm.md) | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
+| [Ray](human/fichas/ray.md) | Motor de cómputo distribuido para IA: escala Python de un portátil a un clúster, con bibliotecas para datos, entrenamiento, ajuste, RL y serving. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [SGLang](human/fichas/sglang.md) | Framework de servicio de alto rendimiento para LLM y modelos multimodales. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [claude-code-router](human/fichas/claude-code-router.md) | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. | Depende de la ruta elegida | ⚙️ plataforma | 🔴 pesado |
 | [TensorRT-LLM](human/fichas/tensorrt-llm.md) | Herramientas de NVIDIA para optimizar y desplegar inferencia de modelos de lenguaje con kernels y runtimes especializados. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
+| [Xinference](human/fichas/xinference.md) | Plataforma abierta de inferencia para modelos de lenguaje, visión, embeddings, reranking, imagen, audio y vídeo, con API compatible con OpenAI y varios motores. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
+| [BentoML](human/fichas/bentoml.md) | Framework Python para convertir modelos y pipelines de IA en APIs de producción, con empaquetado en imágenes Docker y despliegue reproducible. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [GPUStack](human/fichas/gpustack.md) | Gestor de clústeres de GPU para servir modelos de IA: configura vLLM, SGLang o TensorRT-LLM, expone APIs compatibles con OpenAI y aprovisiona instancias GPU. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🔴 pesado |
 | [backdoor](human/fichas/backdoor.md) | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. | API de IA opcional | 🧩 motor/runtime | 🟡 medio |
 
 ### Ahorro de contexto y tokens
@@ -1132,9 +1136,12 @@ _Servidores de inferencia, gateways, evaluación, trazas y control de contexto. 
 | [Opik](human/fichas/opik.md) | Plataforma de Comet para depurar, evaluar y monitorear apps de LLM, RAG y agentes. | API de IA opcional | ⚙️ plataforma | 🟡 medio |
 | [DeepEval](human/fichas/deepeval.md) | Framework de evaluación de LLM al estilo pytest, con decenas de métricas listas. | API de IA opcional | 📚 librería/SDK | 🟢 fácil |
 | [Ragas](human/fichas/ragas.md) | Librería para evaluar aplicaciones de LLM y RAG con métricas objetivas y datos de prueba sintéticos. | Depende de la ruta elegida | 📚 librería/SDK | 🟢 fácil |
+| [LM Evaluation Harness](human/fichas/lm-eval-harness.md) | Arnés estándar de EleutherAI para evaluar modelos de lenguaje en cientos de benchmarks académicos con backends Hugging Face, vLLM, SGLang o APIs. | API de IA opcional | 📚 librería/SDK | 🟡 medio |
 | [Phoenix](human/fichas/phoenix.md) | Plataforma open source de Arize para observar, trazar y evaluar apps de LLM, con OpenTelemetry. | API de IA opcional | ⚙️ plataforma | 🟢 fácil |
 | [Claude-Code-Usage-Monitor](human/fichas/claude-code-usage-monitor.md) | Monitor de uso de Claude Code que presenta consumo, previsiones y avisos a partir de la información disponible. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [OpenLLMetry](human/fichas/openllmetry.md) | Instrumentación abierta basada en OpenTelemetry para aplicaciones de LLM: traza llamadas a modelos, bases vectoriales y frameworks hacia tu backend de observabilidad. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [NeMo Guardrails](human/fichas/guardrails.md) | Toolkit de NVIDIA para añadir barreras programables a sistemas conversacionales con LLM. | Depende de la ruta elegida | 📚 librería/SDK | 🟡 medio |
+| [Helicone](human/fichas/helicone.md) | Pasarela de IA y plataforma de observabilidad de LLM abierta: registra peticiones, costes y latencias, gestiona prompts y enruta a más de 100 modelos. | Sin clave propia de API de IA en la ruta básica | ⚙️ plataforma | 🟡 medio |
 
 ## 🧑‍💻 24. Modelos abiertos y entrenamiento
 
@@ -1149,8 +1156,18 @@ _Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los 
 | [Transformers](human/fichas/transformers.md) | Librería de Hugging Face para usar y entrenar modelos de texto, visión y audio de última generación. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
 | [PyTorch](human/fichas/pytorch.md) | Framework de deep learning con tensores y redes neuronales dinámicas acelerados en GPU. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [LLaMA-Factory](human/fichas/llama-factory.md) | Fine-tuning unificado de más de 100 LLM y modelos de visión con interfaz web sin código. | Sin clave propia de API de IA en la ruta básica | 🖥️ app | 🟡 medio |
+| [scikit-learn](human/fichas/scikit-learn.md) | La biblioteca de machine learning clásico en Python: clasificación, regresión, clustering, reducción de dimensión, selección de modelos y preprocesado. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [Keras 3](human/fichas/keras.md) | API de deep learning multibackend: el mismo código de modelo se ejecuta sobre JAX, TensorFlow o PyTorch (y OpenVINO para inferencia). | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [DeepSpeed](human/fichas/deepspeed.md) | Biblioteca de optimización de entrenamiento e inferencia distribuidos de Microsoft: ZeRO, paralelismo y descarga a CPU/NVMe para modelos enormes. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
+| [JAX](human/fichas/jax.md) | Biblioteca de Google para cómputo numérico de alto rendimiento: NumPy diferenciable, compilación JIT con XLA y vectorización en CPU, GPU y TPU. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [PyTorch Lightning](human/fichas/pytorch-lightning.md) | Framework que estructura el entrenamiento en PyTorch y lo escala de una GPU a miles sin cambiar el código, con Lightning Fabric para control experto. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [verl](human/fichas/verl.md) | Framework flexible y eficiente de post-entrenamiento por refuerzo para LLM (HybridFlow): PPO, GRPO y otros algoritmos con FSDP/Megatron y vLLM/SGLang. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
 | [PEFT](human/fichas/peft.md) | Librería de Hugging Face para fine-tuning eficiente de parámetros como LoRA. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
 | [TRL](human/fichas/trl.md) | Librería de Hugging Face para entrenar LLM con aprendizaje por refuerzo: SFT, DPO, GRPO y más. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟡 medio |
+| [Axolotl](human/fichas/axolotl.md) | Framework de post-entrenamiento de LLM por configuración YAML: ajuste completo, LoRA/QLoRA, DPO/GRPO, multimodal y entrenamiento distribuido. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
+| [OpenRLHF](human/fichas/openrlhf.md) | Framework de RLHF y RL agéntico escalable basado en Ray, vLLM y DeepSpeed: PPO, REINFORCE++, GRPO, RLOO y entrenamiento asíncrono. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
+| [Accelerate](human/fichas/accelerate.md) | Biblioteca de Hugging Face para ejecutar el mismo código de PyTorch en una GPU, varias, TPU o con DeepSpeed y FSDP, con precisión mixta, cambiando pocas líneas. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🟢 fácil |
+| [torchtune](human/fichas/torchtune.md) | Biblioteca nativa de PyTorch para post-entrenamiento de LLM con recetas de ajuste completo, LoRA/QLoRA, DPO y destilación; ya sin mantenimiento activo. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
 | [bionemo-recipes](human/fichas/bionemo-recipes.md) | Recetas y checkpoints de NVIDIA para entrenar y adaptar modelos fundacionales de biología a escala. | Sin clave propia de API de IA en la ruta básica | 📂 catálogo/recurso | 🔴 pesado |
 
 ### Modelos abiertos y fundacionales
@@ -1161,6 +1178,7 @@ _Modelos, bibliotecas de entrenamiento y ajuste fino. Revisa la licencia de los 
 | [DeepSeek-V3](human/fichas/deepseek-v3.md) | Modelo de lenguaje abierto de DeepSeek (671B parámetros, MoE) para chat, código y razonamiento; se usa por su API compatible con OpenAI o en servidores con varias GPU. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
 | [laya](human/fichas/laya.md) | Motor de decisiones que clasifica texto o selecciona opciones mediante modelos y resultados estructurados. | Sin clave propia de API de IA en la ruta básica | 🧩 motor/runtime | 🔴 pesado |
 | [cosmos](human/fichas/cosmos.md) | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
+| [Gemma (biblioteca JAX)](human/fichas/gemma.md) | Biblioteca oficial de Google DeepMind para usar y ajustar los modelos de pesos abiertos Gemma en JAX: muestreo, multimodal, LoRA y ajuste fino. | Sin clave propia de API de IA en la ruta básica | 📚 librería/SDK | 🔴 pesado |
 | [Nemotron (NVIDIA)](human/fichas/nemotron.md) | Centro de recursos de NVIDIA para la familia de modelos abiertos Nemotron: recetas, datasets y ejemplos. | API de IA opcional | 📂 catálogo/recurso | 🔴 pesado |
 | [Kimi K2.7 Code](human/fichas/kimi-k2-7-code.md) | Modelo de Moonshot AI orientado a programación y uso de herramientas; sus pesos oficiales se publican en Hugging Face. | API de IA opcional | 🧩 motor/runtime | 🔴 pesado |
 

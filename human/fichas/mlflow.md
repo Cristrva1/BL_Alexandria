@@ -35,9 +35,9 @@ Se arranca un servidor con `uvx mlflow server` o `pip install mlflow`, y se inst
 
 ## Usado por
 
-Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+Repos que lo citan en sus combinaciones sin que figuren arriba (4). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
 
-[Dagster](dagster.md) · [Prefect](prefect.md)
+[Dagster](dagster.md) · [Prefect](prefect.md) · [PyTorch Lightning](pytorch-lightning.md) · [scikit-learn](scikit-learn.md)
 
 **Notas:** Alternativas (elige una): langfuse.
 
