@@ -10,6 +10,30 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Colección comunitaria alojada por GitHub (MIT) de agentes personalizados, instrucciones, skills, hooks, flujos de trabajo y plugins para GitHub Copilot. Muy activa; tiene web con búsqueda y un Learning Hub.
+
+## ¿Qué hace?
+
+Ofrece agentes especializados de Copilot que se integran con servidores MCP, instrucciones de estilo que se aplican por patrón de archivo, skills autocontenidas y paquetes de plugins por flujo de trabajo. Publica un `llms.txt` para que los agentes lean el catálogo.
+
+## ¿Cómo lo hace?
+
+Archivos Markdown en el repositorio. Los plugins se instalan con la CLI de Copilot (`copilot plugin marketplace add github/awesome-copilot` y `copilot plugin install <plugin>@awesome-copilot`).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [GitHub MCP Server](github-mcp-server.md) | Servidor MCP que pueden usar los agentes de Copilot de la colección (combinación por arquitectura). | Configura el MCP en Copilot antes de usar agentes que lo requieran. |
+| [Spec Kit](spec-kit.md) | Proceso de desarrollo guiado por especificaciones con integración para Copilot. | `specify init <proyecto> --integration copilot`. |
+| [GitHub CLI](cli.md) | Trabajar con repos, PR e incidencias desde la terminal junto a Copilot (combinación por arquitectura). | Independientes. |
+
+Estado en GitHub: activo · último push 2026-11-16 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/github/awesome-copilot/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. El destino principal es GitHub Copilot; el comando contiene un marcador que debes sustituir, no ejecutar literalmente |
 | Coste | Consumo del agente que ya utilizas. Las personalizaciones se usan con el acceso de Copilot; no acreditan consumo incluido en Claude Code o Codex |
 | Equipo | Preparación según la ruta elegida. GitHub Copilot y un plugin elegido del catálogo |
-
-El destino principal es GitHub Copilot; el comando contiene un marcador que debes sustituir, no ejecutar literalmente
-
-## Qué puedes hacer con él
-
-Colección comunitaria de GitHub con agentes, instrucciones, skills, hooks y plugins para personalizar GitHub Copilot.
-
-## Por qué destaca
-
-Usos propuestos: Añadir instrucciones de equipo al asistente de programación; Estudiar un agente especializado antes de adaptarlo a un proyecto.
-
-## Cómo funciona
 
 El destino principal es GitHub Copilot; el comando contiene un marcador que debes sustituir, no ejecutar literalmente
 
@@ -91,14 +103,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** GitHub Copilot y un plugin elegido del catálogo
 - **Etiquetas:** `skills` `coding-agent` `prompts` `mcp`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [GitHub MCP Server](github-mcp-server.md) | 34.5k | Servidor MCP oficial de GitHub para que los agentes lean repos, gestionen issues y PRs y revisen código. |
-| [Spec Kit](spec-kit.md) | 150k | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. |
-| [GitHub CLI](cli.md) | 47k | CLI oficial de GitHub para trabajar con PRs, issues, Actions y repos desde la terminal. |
 
 ## Enlaces
 

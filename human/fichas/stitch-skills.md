@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Colección oficial de Google Labs (Apache 2.0) de skills y plugins de agente para Google Stitch, la herramienta de diseño de interfaces con IA, que sigue el estándar abierto Agent Skills. Tiene release v1.0; último cambio en agosto de 2026.
+
+## ¿Qué hace?
+
+Agrupa skills en tres plugins: `stitch-design` (diseño), `stitch-build` (construcción y componentes) y `stitch-utilities` (utilidades). Permite que un agente de código genere y lleve a código diseños de Stitch.
+
+## ¿Cómo lo hace?
+
+Se instala como marketplace de plugins en Codex (CLI o interfaz), con `npx plugins add google-labs-code/stitch-skills` para Claude Code y Cursor, o a mano en OpenCode. Todas las skills requieren el servidor MCP de Stitch configurado (con sus credenciales) en el agente.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Codex CLI](codex.md) | Instalación oficial como marketplace de plugins. | Configura primero el MCP de Stitch y después añade el marketplace. |
+| [Claude Code](claude-code.md) | Instalación con `npx plugins add ... --target claude-code`. | Igual que arriba, a nivel de proyecto. |
+| [Gemini CLI](gemini-cli.md) | Agente compatible con el estándar Agent Skills que el README menciona. | Requiere el MCP de Stitch. |
+| [Stitch SDK](stitch-sdk.md) | Acceso programático a la misma plataforma Stitch (combinación por arquitectura). | Úsalo para automatizar lo que las skills hacen de forma interactiva. |
+| [taste-skill](taste-skill.md) | Combinación recíproca: taste-skill lo enlaza como «Trae una variante `stitch-design-taste` para trabajar con Stitch». | Orden indicado desde taste-skill: Configura antes el MCP de Stitch. |
+
+Estado en GitHub: activo · último push 2026-08-17 · última versión publicada v1.0 (2026-05-18) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/google-labs-code/stitch-skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Documenta plugins Codex y Claude e instalación manual para Antigravity; compatibilidad de skills no elimina autenticación ni límites del servicio |
 | Coste | El coste depende del proveedor o la ruta. Las skills usan el agente y el servicio Stitch; no se confirma que todas las operaciones externas carezcan de coste |
 | Equipo | Preparación según la ruta elegida. Agente compatible; Stitch MCP autenticado; proyecto de diseño de prueba |
-
-Documenta plugins Codex y Claude e instalación manual para Antigravity; compatibilidad de skills no elimina autenticación ni límites del servicio
-
-## Qué puedes hacer con él
-
-Colección de skills de agente para trabajar con el servidor MCP de Google Stitch.
-
-## Por qué destaca
-
-Usos propuestos: Explorar una interfaz con Stitch; Convertir una pantalla en componentes.
-
-## Cómo funciona
 
 Documenta plugins Codex y Claude e instalación manual para Antigravity; compatibilidad de skills no elimina autenticación ni límites del servicio
 
@@ -86,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Agente compatible; Stitch MCP autenticado; proyecto de diseño de prueba
 - **Etiquetas:** `skills` `design` `ui`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Stitch SDK](stitch-sdk.md) | 1.9k | SDK de Google Labs para generar pantallas de UI desde texto y extraer su HTML y capturas por código. |
-| [Gemini CLI](gemini-cli.md) | 109k | CLI de Google orientado actualmente a Code Assist empresarial; el README remite el acceso individual a Antigravity CLI. |
 
 ## Enlaces
 

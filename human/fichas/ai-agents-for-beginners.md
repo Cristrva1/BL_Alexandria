@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Curso gratuito de Microsoft (MIT) para empezar a construir agentes de IA. Tiene unas 18 lecciones con texto, vídeo y código Python, y está traducido a más de 50 idiomas. Es activo y muy popular (~80k estrellas).
+
+## ¿Qué hace?
+
+Cubre fundamentos de agentes, patrones de diseño (uso de herramientas, RAG agéntico, planificación, multiagente, metacognición), confianza y seguridad, protocolos agénticos (MCP, A2A, NLWeb), gestión de contexto y memoria, despliegue escalable y una lección sobre Microsoft Agent Framework.
+
+## ¿Cómo lo hace?
+
+Los ejemplos de código usan Microsoft Agent Framework con Microsoft Foundry Agent Service V2, que requiere cuenta de Azure. Por tanto está orientado al ecosistema de Microsoft. El README recomienda un sparse checkout para evitar descargar las traducciones.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Microsoft Agent Framework](agent-framework.md) | Framework usado en todos los ejemplos de código del curso. | Sigue la lección de configuración del curso; instala agent-framework en Python. |
+| [Generative AI for Beginners](generative-ai-for-beginners.md) | Curso previo de la misma serie para fundamentos de IA generativa (enlazado en el README). | Hazlo antes si no tienes base en LLMs. |
+| [MCP for Beginners](mcp-for-beginners.md) | Profundizar en MCP, que el curso trata en la lección de protocolos agénticos (enlazado en el README). | Tómalo después de la lección 11. |
+
+**Notas:** Sin alternativas declaradas. Requiere cuenta de Azure para los ejemplos tal como están.
+
+Estado en GitHub: activo · último push 2026-11-07 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/ai-agents-for-beginners/blob/main/README.md) · [2](https://learn.microsoft.com/agent-framework/overview/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. El README actual usa Agent Framework y Foundry Agent Service V2; algunos ejemplos aceptan otros proveedores compatibles y no se presupone ejecución local |
 | Coste | El coste depende del proveedor o la ruta. Leer no requiere API; el código actual usa Microsoft Foundry y servicios de Azure con costes y límites propios |
 | Equipo | Preparación según la ruta elegida. Navegador; Python y cuenta Azure para los ejercicios principales |
-
-El README actual usa Agent Framework y Foundry Agent Service V2; algunos ejemplos aceptan otros proveedores compatibles y no se presupone ejecución local
-
-## Qué puedes hacer con él
-
-Curso de Microsoft con 18 lecciones (texto, video y código Python) para empezar a construir agentes de IA, traducido al español.
-
-## Por qué destaca
-
-Usos propuestos: Aprender patrones de agentes; Estudiar herramientas y memoria con ejemplos.
-
-## Cómo funciona
 
 El README actual usa Agent Framework y Foundry Agent Service V2; algunos ejemplos aceptan otros proveedores compatibles y no se presupone ejecución local
 
@@ -85,14 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; Python y cuenta Azure para los ejercicios principales
 - **Etiquetas:** `agents` `learning` `notebooks` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Generative AI for Beginners](generative-ai-for-beginners.md) | 124k | Curso de Microsoft para aprender los conceptos y construir ejemplos de aplicaciones con inteligencia artificial generativa. |
-| [Microsoft Agent Framework](agent-framework.md) | 14.7k | Framework de Microsoft para agentes y workflows multiagente en Python y .NET, sucesor de AutoGen y Semantic Kernel. |
-| [MCP for Beginners](mcp-for-beginners.md) | 17.7k | Curso abierto de Microsoft para aprender MCP con ejemplos en .NET, Java, TypeScript, JavaScript y Python. |
 
 ## Enlaces
 

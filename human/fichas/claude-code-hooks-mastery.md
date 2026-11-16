@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Repositorio didáctico de disler (IndyDevDan) para dominar los hooks de Claude Code, con subagentes, estilos de salida y líneas de estado. Sin licencia declarada; último cambio en marzo de 2026.
+
+## ¿Qué hace?
+
+Muestra el ciclo de vida y los payloads de todos los hooks, el control de flujo con códigos de error, un análisis a fondo de `UserPromptSubmit`, subagentes, un sistema de validación por equipos, una colección de estilos de salida y líneas de estado personalizadas, con ejemplos como avisos de voz.
+
+## ¿Cómo lo hace?
+
+Los hooks son scripts Python de un solo archivo ejecutados con uv (dependencias declaradas en el propio script, sin gestionar entornos). Requiere uv y Claude Code; opcionalmente usa ElevenLabs (con su servidor MCP), OpenAI y Anthropic para voz y LLM.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Los hooks se configuran en `.claude/settings.json`. | Copia los hooks que necesites y revísalos: se ejecutan con tus permisos. |
+| [ECC](ecc.md) | Marco que también usa hooks; sirve de ejemplo de producción (combinación por arquitectura). | No mezcles hooks de ambos sin revisar los conflictos. |
+| [claude-code-router](claude-code-router.md) | Enrutar Claude Code a otros modelos mientras experimentas con hooks (combinación por arquitectura). | Independientes. |
+
+**Notas:** Sin licencia: úsalo como referencia didáctica.
+
+Estado en GitHub: activo · último push 2026-03-04 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/disler/claude-code-hooks-mastery/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Se distingue el material de aprendizaje de un plugin automático; no hace falta activar todos los ejemplos ni sus servicios opcionales |
 | Coste | El coste depende del proveedor o la ruta. Los hooks deterministas no necesitan un modelo adicional; los ejemplos de voz o mensajes inteligentes pueden usar APIs u Ollama |
 | Equipo | Preparación según la ruta elegida. Claude Code y uv;  revisar solo un ejemplo de hook y sus dependencias |
-
-Se distingue el material de aprendizaje de un plugin automático; no hace falta activar todos los ejemplos ni sus servicios opcionales
-
-## Qué puedes hacer con él
-
-Ejemplos y material para aprender a configurar hooks de Claude Code y ejecutar comprobaciones en su flujo de trabajo.
-
-## Por qué destaca
-
-Usos propuestos: Registrar cuándo empieza y termina una sesión de trabajo; Comprender un control que revisa una acción antes de ejecutarla.
-
-## Cómo funciona
 
 Se distingue el material de aprendizaje de un plugin automático; no hace falta activar todos los ejemplos ni sus servicios opcionales
 

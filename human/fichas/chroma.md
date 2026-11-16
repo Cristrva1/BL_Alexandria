@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Infraestructura de datos de código abierto para IA (base de datos vectorial) de Chroma, con núcleo en Rust bajo Apache 2.0. Muy activa, publica versiones de PyPI y npm cada lunes; ofrece Chroma Cloud como servicio gestionado.
+
+## ¿Qué hace?
+
+Guarda documentos y embeddings y permite búsqueda vectorial, híbrida y de texto completo con una API mínima de cuatro funciones. Sirve para prototipos de RAG en memoria y para servidores persistentes.
+
+## ¿Cómo lo hace?
+
+Cliente Python (`pip install chromadb`) o JavaScript (`npm install chromadb`); funciona en memoria dentro del proceso, con persistencia local o en modo cliente-servidor con `chroma run --path <ruta>`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [mempalace](mempalace.md) | Backend de recuperación por defecto de MemPalace. | Se usa embebido; un servidor Chroma aparte solo si lo compartes. |
+| [AnythingLLM](anything-llm.md) | Base vectorial soportada (Chroma y ChromaCloud). | Servidor Chroma primero; configura su URL en AnythingLLM. |
+| [langchain](langchain.md) | Integración documentada por Chroma. | Instala el paquete de integración de LangChain para Chroma en el mismo entorno. |
+
+**Notas:** Alternativas (elige una): qdrant, pgvector, milvus, faiss.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada 1.5.9 (2026-05-05) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/chroma-core/chroma/blob/main/README.md) · [2](https://docs.trychroma.com/integrations/frameworks/langchain)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Distingue cliente embebido, servidor y Cloud; para guardar resultados entre reinicios configura persistencia |
 | Coste | Sin pago a un modelo en la ruta básica. La ruta embebida del ejemplo no pide API; funciones de embeddings elegidas y Chroma Cloud pueden tener costes |
 | Equipo | Preparación según la ruta elegida. Python; entorno virtual; dos documentos de prueba |
-
-Distingue cliente embebido, servidor y Cloud; para guardar resultados entre reinicios configura persistencia
-
-## Qué puedes hacer con él
-
-Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar búsqueda semántica local; Filtrar fragmentos por metadatos.
-
-## Cómo funciona
 
 Distingue cliente embebido, servidor y Cloud; para guardar resultados entre reinicios configura persistencia
 
@@ -93,13 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `vector-db` `rag` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LlamaIndex](llama-index.md) | 52.9k | Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. |
-| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
@@ -108,6 +115,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [pgvector](pgvector.md) | 23.7k | Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales. |
 | [Milvus](milvus.md) | 46.7k | Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores. |
 | [Faiss](faiss.md) | 41.7k | Librería de Meta para búsqueda de similitud y clustering de vectores densos, en CPU y GPU. |
+| [LanceDB](lancedb.md) | 11.9k | Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL sin servidor que mantener. |
 
 ## Enlaces
 

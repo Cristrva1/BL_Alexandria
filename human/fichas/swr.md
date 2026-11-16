@@ -10,6 +10,35 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Biblioteca de hooks React para cargar datos (MIT), creada por Vercel. Su nombre viene de la estrategia de caché stale-while-revalidate (RFC 5861). Es madura y estable (v2.5.1); último push en octubre de 2026.
+
+## ¿Qué hace?
+
+Con un solo hook (`useSWR`) devuelve primero los datos en caché, después revalida con una nueva petición y actualiza la vista. Incluye caché y deduplicación de peticiones, revalidación al recuperar el foco o la red, polling, paginación, mutaciones optimistas, soporte de Suspense y SSR/SSG. Es agnóstica del transporte (REST, GraphQL…).
+
+## ¿Cómo lo hace?
+
+Se instala con `npm i swr` y se usa con una función `fetcher` propia. Tiene integración documentada con Next.js. Es ligera y no impone backend ni cliente HTTP.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ui](ui.md) | Alimentar los componentes shadcn/ui (tablas, listas) con datos cacheados. (combinación por arquitectura) | Añade swr y conecta sus hooks a los componentes. |
+| [heroui](heroui.md) | Combinación anterior del catálogo: datos para componentes HeroUI. (combinación por arquitectura) | Instala ambas y usa useSWR en las vistas. |
+| [supabase](supabase.md) | Consultar un backend Supabase desde React con caché y revalidación. (combinación por arquitectura) | Usa el cliente de Supabase dentro del fetcher de SWR. |
+| [Ant Design](ant-design.md) | Combinación recíproca: Ant Design lo enlaza como «Carga de datos con caché para alimentar tablas y formularios. (combinación por arquitectura)». | Orden indicado desde Ant Design: Añade swr y conecta sus hooks a los componentes. |
+| [Material UI](mui.md) | Combinación recíproca: Material UI lo enlaza como «Carga de datos con caché para alimentar los componentes. (combinación por arquitectura)». | Orden indicado desde Material UI: Añade swr y usa sus hooks en las vistas. |
+| [uPlot](uplot.md) | Combinación recíproca: uPlot lo enlaza como «Actualizar series en vivo con la recarga de datos de SWR. (combinación por arquitectura)». | Orden indicado desde uPlot: Obtén los datos con SWR y llama a `setData`. |
+
+**Notas:** Alternativa (elige una): tanstack-query.
+
+Estado en GitHub: activo · último push 2026-10-16 · última versión publicada v2.5.1 (2026-08-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/vercel/swr/blob/main/README.md) · [2](https://swr.vercel.app/docs/with-nextjs)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una herramienta de obtención y caché de datos, no una librería de botones ni un backend |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere IA; el endpoint consultado y su alojamiento pueden cobrar por uso |
 | Equipo | Preparación según la ruta elegida. React; endpoint de datos de prueba; función fetcher |
-
-Es una herramienta de obtención y caché de datos, no una librería de botones ni un backend
-
-## Qué puedes hacer con él
-
-Librería de data fetching para React (stale-while-revalidate) que sirve datos cacheados al instante y los revalida en segundo plano.
-
-## Por qué destaca
-
-Usos propuestos: Actualizar un panel sin recargar; Revalidar datos al volver a una pestaña.
-
-## Cómo funciona
 
 Es una herramienta de obtención y caché de datos, no una librería de botones ni un backend
 
@@ -86,11 +103,11 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
+## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [heroui](heroui.md) | 31.2k | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. |
+| [TanStack Query](tanstack-query.md) | 50.6k | Biblioteca para obtener, cachear, sincronizar y actualizar datos del servidor en React, Vue, Solid, Svelte, Angular y otros frameworks. |
 
 ## Enlaces
 

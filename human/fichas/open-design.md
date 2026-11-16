@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Espacio de trabajo de diseño colaborativo con agentes de IA (Apache-2.0) de nexu-io. Es muy activo (open-design-v0.27.1) y ha crecido muy deprisa (~108k estrellas). Tiene una oferta comercial (OpenDesign Cloud y el plan 'Go' de créditos) que el README promociona en primer plano.
+
+## ¿Qué hace?
+
+A partir de un brief, un agente de programación u OpenDesign Cloud crea prototipos web, de escritorio o móviles que siguen tu sistema de diseño (`DESIGN.md`), y los comparte con el equipo. También genera presentaciones (15 plantillas y 36 temas, exportables a HTML, PDF y PPTX) y gráficos animados con HyperFrames exportables a MP4. Puede refactorizar componentes reales de un repositorio hacia una especificación de marca. Se extiende con plugins, skills, plantillas y sistemas de diseño versionables.
+
+## ¿Cómo lo hace?
+
+Hay apps de escritorio para macOS y Windows; en Linux se ejecuta desde el código fuente. Se conecta a agentes de programación por skills, CLI y MCP (`od mcp install claude|codex|opencode|hermes|...`) o con adaptadores nativos, y trae un proxy BYOK para Anthropic, OpenAI, Azure, Google y Ollama. Funciona en local o en tu propio despliegue; el README menciona analítica de producto, que conviene revisar en la configuración.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente de diseño soportado vía MCP (`od mcp install claude`). | Instala OpenDesign y luego registra el MCP en Claude Code. |
+| [design.md](design-md.md) | Formato `DESIGN.md` para describir el sistema de diseño que el agente sigue. (combinación por arquitectura) (OpenDesign usa archivos DESIGN.md; la compatibilidad exacta con la especificación de Google no está verificada) | Redacta el DESIGN.md antes de generar prototipos. |
+| [HyperFrames](hyperframes.md) | Motor de gráficos animados integrado para exportar vídeo MP4 (citado en el README). | Se usa desde la sección Video & HyperFrames. |
+| [Ollama](ollama.md) | Modelos locales mediante el proxy BYOK. | Arranca Ollama y configúralo como proveedor en el proxy. |
+
+**Notas:** Alternativas (elige una): onlook. Combinaciones anteriores con tailwindcss y heroui eliminadas: sin integración documentada.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada open-design-v0.27.1 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/nexu-io/open-design/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. Las conexiones MCP de los tres clientes están documentadas; los endpoints internos de modelos requieren configuración explícita por su protección SSRF |
 | Coste | El coste depende del proveedor o la ruta. Admite agentes, BYOK y modelos locales; planes Go, proveedores y generación de medios tienen límites y gastos propios |
 | Equipo | Preparación según la ruta elegida. Docker o distribución elegida; agente o proveedor; WSL2 según ruta Windows |
-
-Las conexiones MCP de los tres clientes están documentadas; los endpoints internos de modelos requieren configuración explícita por su protección SSRF
-
-## Qué puedes hacer con él
-
-Espacio de diseño colaborativo con IA que genera, maqueta y anima interfaces desde lenguaje natural.
-
-## Por qué destaca
-
-Usos propuestos: Prototipar un dashboard; Iterar una interfaz con feedback de equipo.
-
-## Cómo funciona
 
 Las conexiones MCP de los tres clientes están documentadas; los endpoints internos de modelos requieren configuración explícita por su protección SSRF
 
@@ -98,13 +113,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker o distribución elegida; agente o proveedor; WSL2 según ruta Windows
 - **Etiquetas:** `agents` `design` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
-| [heroui](heroui.md) | 31.2k | Librería de componentes React accesibles y lista para producción (React Aria + Tailwind), orientada a SaaS, dashboards y landings consistentes. |
 
 ## Alternativas (elige una)
 

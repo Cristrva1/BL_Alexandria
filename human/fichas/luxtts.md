@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+LuxTTS, modelo TTS ligero basado en ZipVoice para clonar voces, de @ysharma3501. Licencia Apache-2.0 para modelo y código. Es reciente (enero de 2026, ~5.6k estrellas) y no cambia desde junio de 2026.
+
+## ¿Qué hace?
+
+Clona voces con calidad alta y genera audio a más de 150× tiempo real en una GPU, y más rápido que tiempo real en CPU, según el autor. Cabe en ~1 GB de VRAM.
+
+## ¿Cómo lo hace?
+
+Se instala desde el repo con `pip install -r requirements.txt` y descarga el modelo de Hugging Face.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [ComfyUI](comfyui.md) | Integrar la síntesis en flujos visuales. (combinación por arquitectura) | Usa un nodo comunitario si existe. |
+| [Pipecat](pipecat.md) | TTS local en agentes de voz. (combinación por arquitectura) | Expón el modelo como servicio. |
+| [MoviePy](moviepy.md) | Narración de vídeos. (combinación por arquitectura) | Monta el audio generado. |
+
+**Notas:** Alternativas (elige una): kokoro. Se quitan litellm y cosmos de las combinaciones (sin relación).
+
+Estado en GitHub: activo · último push 2026-06-05 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ysharma3501/LuxTTS/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La cifra de 150 veces tiempo real es del autor y no una garantía de latencia o calidad en cualquier equipo |
 | Coste | Sin pago a un modelo en la ruta básica. El autor declara modelo y código Apache-2.0; hardware y datos se costean aparte |
 | Equipo | Preparación según la ruta elegida. Python; dependencias; modelo; equipo; voz con permiso |
-
-La cifra de 150 veces tiempo real es del autor y no una garantía de latencia o calidad en cualquier equipo
-
-## Qué puedes hacer con él
-
-Modelo de texto a voz con herramientas para sintetizar y adaptar voces en una instalación local.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una narración local; Explorar adaptación de voz consentida.
-
-## Cómo funciona
 
 La cifra de 150 veces tiempo real es del autor y no una garantía de latencia o calidad en cualquier equipo
 
@@ -97,14 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; dependencias; modelo; equipo; voz con permiso
 - **Etiquetas:** `tts` `audio` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
-| [cosmos](cosmos.md) | 12.4k | Plataforma de "world foundation models" de NVIDIA para IA física y embodiment, capaz de generar mundos y datos sintéticos para entrenar agentes y robots. |
-| [ComfyUI](comfyui.md) | 147k | Motor local para crear pipelines de generación de imagen y video con IA mediante un grafo de nodos. |
 
 ## Alternativas (elige una)
 

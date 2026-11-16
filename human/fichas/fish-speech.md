@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Fish Speech, herramientas y modelos de voz de Fish Audio. El código y los pesos usan la «Fish Audio Community License»; los pesos S2-Pro usan la Fish Audio Research License (GitHub muestra NOASSERTION). Tiene ~34k estrellas.
+
+## ¿Qué hace?
+
+Genera voz expresiva (risas, llanto, susurros), clona voces a partir de referencias y produce varios hablantes en un mismo texto. Fish Audio ofrece además un servicio comercial.
+
+## ¿Cómo lo hace?
+
+Se instala desde el repo con Python y PyTorch (GPU recomendable), y se usa con WebUI, API o CLI. Fish Audio advierte que actuará ante violaciones de la licencia.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Pipecat](pipecat.md) | TTS en agentes de voz. (combinación por arquitectura) | Integra el servicio o el modelo local. |
+| [FFmpeg](ffmpeg.md) | Postproceso de audio. (combinación por arquitectura) | Convierte la salida. |
+| [whisperX](whisperx.md) | Transcribir referencias de voz. (combinación por arquitectura) | Genera el texto de referencia. |
+
+**Notas:** Alternativas (elige una): cosyvoice, gpt-sovits. Licencia no OSI: revisa los términos.
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v1.5.1 (2025-05-31) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/fishaudio/fish-speech/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La disponibilidad del código no equivale a Apache o MIT ni a un servicio API gratuito; sigue la guía de la variante elegida |
 | Coste | El coste depende del proveedor o la ruta. Código y pesos actuales usan Fish Audio Community License; S2-Pro conserva Research License y no se presume uso comercial idéntico |
 | Equipo | Preparación según la ruta elegida. Entorno y GPU compatibles; modelo con licencia aplicable; texto y voz autorizados |
-
-La disponibilidad del código no equivale a Apache o MIT ni a un servicio API gratuito; sigue la guía de la variante elegida
-
-## Qué puedes hacer con él
-
-Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar generación expresiva; Preparar una prueba de voz multilingüe.
-
-## Cómo funciona
 
 La disponibilidad del código no equivale a Apache o MIT ni a un servicio API gratuito; sigue la guía de la variante elegida
 
@@ -93,6 +107,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [CosyVoice](cosyvoice.md) | 24.4k | Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue. |
 | [GPT-SoVITS](gpt-sovits.md) | 65.1k | Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos. |
+| [F5-TTS](f5-tts.md) | 15.6k | Síntesis de voz con clonación a partir de pocos segundos de audio de referencia, basada en flow matching con Diffusion Transformer; incluye app Gradio y CLI. |
 
 ## Enlaces
 

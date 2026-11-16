@@ -1,0 +1,494 @@
+{
+ "batch": "15-aprendizaje-prompts-parte-2",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "llms-from-scratch": {
+   "que_es": "Repositorio oficial del código del libro 'Build a Large Language Model (From Scratch)' de Sebastian Raschka (Manning). El LICENSE es Apache-2.0, aunque GitHub lo marca NOASSERTION. Es material educativo maduro y mantenido (último push en noviembre de 2026, ~108k estrellas).",
+   "que_hace": "Guía paso a paso por la implementación de un LLM tipo GPT: tokenización y BPE, mecanismos de atención, arquitectura GPT, preentrenamiento con datos sin etiquetar, carga de pesos preentrenados, fine-tuning para clasificación y para seguir instrucciones, y LoRA en un apéndice. Incluye abundante material extra, como comparativas de implementaciones de BPE.",
+   "como_lo_hace": "Notebooks Jupyter en PyTorch, sin bibliotecas externas de LLM. El código de los capítulos principales está pensado para ejecutarse en un portátil normal en un tiempo razonable, y usa GPU automáticamente si existe. El libro (de pago) explica el razonamiento; el código del repositorio es libre.",
+   "combina_con": [
+    {
+     "id": "pytorch",
+     "motivo": "Única dependencia de fondo del código del libro.",
+     "orden_instalacion": "Instala PyTorch (CPU basta para los capítulos principales) antes de abrir los notebooks."
+    },
+    {
+     "id": "nanochat",
+     "motivo": "Siguiente paso para ver un pipeline completo de entrenamiento a escala real (8×H100). (combinación por arquitectura)",
+     "orden_instalacion": "Termina el libro antes de intentar un speedrun de nanochat."
+    },
+    {
+     "id": "transformers",
+     "motivo": "Pasar de la implementación didáctica a la biblioteca estándar para cargar y ajustar modelos reales. (combinación por arquitectura)",
+     "orden_instalacion": "Úsalo después de entender cada pieza con el libro."
+    },
+    {
+     "id": "llm.c",
+     "motivo": "Combinación recíproca: llm.c lo enlaza como «Teoría y código PyTorch para entender lo que llm.c implementa a bajo nivel. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde llm.c: Estudia primero la versión en PyTorch.",
+     "reciproca_de": "llm.c"
+    },
+    {
+     "id": "annotated-dl-papers",
+     "motivo": "Combinación recíproca: labml.ai Annotated Paper Implementations lo enlaza como «LLMs from Scratch construye un modelo de lenguaje completo y estas notas profundizan en piezas concretas (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde labml.ai Annotated Paper Implementations: Sigue el libro; consulta la implementación anotada de cada componente.",
+     "reciproca_de": "annotated-dl-papers"
+    }
+   ],
+   "notas": "Alternativas (elige una): llm-course.",
+   "fuentes": [
+    "https://github.com/rasbt/LLMs-from-scratch/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "rasbt/LLMs-from-scratch",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Jupyter Notebook",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "nanochat": {
+   "que_es": "Arnés experimental mínimo (MIT) de Andrej Karpathy para entrenar LLMs de principio a fin en un solo nodo de GPU. Es experimental pero muy seguido (~61k estrellas); último push en septiembre de 2026. Sucede conceptualmente a nanoGPT.",
+   "que_hace": "Cubre todas las etapas: tokenización, preentrenamiento, fine-tuning, evaluación, inferencia y una interfaz de chat. Su métrica principal es el 'time to GPT-2': el tiempo de reloj para superar la puntuación CORE de GPT-2 (1,6B) en un nodo de 8×H100. Según el README, se consigue en unas 2 horas por unos 48 dólares, o unos 15 dólares en instancias spot. Un solo parámetro (`--depth`) escala una serie de modelos compute-óptimos.",
+   "como_lo_hace": "Código Python compacto gestionado con uv (`uv sync --extra gpu` para CUDA o `--extra cpu` para CPU/MPS). El script `runs/speedrun.sh` ejecuta todo el pipeline. Para resultados reales hace falta alquilar un nodo de 8×H100; en CPU solo sirve para aprender.",
+   "combina_con": [
+    {
+     "id": "pytorch",
+     "motivo": "Base del entrenamiento.",
+     "orden_instalacion": "Se instala con `uv sync` según el extra (gpu o cpu)."
+    },
+    {
+     "id": "llms-from-scratch",
+     "motivo": "Entender cada componente antes de ejecutar el pipeline completo. (combinación por arquitectura)",
+     "orden_instalacion": "Estudia el libro y vuelve a nanochat para el entrenamiento a escala."
+    },
+    {
+     "id": "llm.c",
+     "motivo": "Versión en C/CUDA del mismo autor para entender el entrenamiento sin PyTorch. (combinación por arquitectura)",
+     "orden_instalacion": "Opcional, para profundizar en rendimiento de bajo nivel."
+    },
+    {
+     "id": "autoresearch",
+     "motivo": "Combinación recíproca: autoresearch lo enlaza como «Base de entrenamiento sobre la que experimenta».",
+     "orden_instalacion": "Orden indicado desde autoresearch: Viene integrado en forma simplificada.",
+     "reciproca_de": "autoresearch"
+    },
+    {
+     "id": "how-to-train-your-gpt",
+     "motivo": "Combinación recíproca: how-to-train-your-gpt lo enlaza como «Pipeline real para aplicar lo aprendido a escala (era la combinación previa del catálogo). (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde how-to-train-your-gpt: Termina el libro antes de alquilar GPU para nanochat.",
+     "reciproca_de": "how-to-train-your-gpt"
+    },
+    {
+     "id": "train-llm-from-scratch",
+     "motivo": "Combinación recíproca: train-llm-from-scratch lo enlaza como «Pipeline completo optimizado para comparar rendimiento y resultados. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde train-llm-from-scratch: Opcional, como siguiente paso.",
+     "reciproca_de": "train-llm-from-scratch"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Coste real: alquilar 8×H100 durante horas.",
+   "fuentes": [
+    "https://github.com/karpathy/nanochat/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "karpathy/nanochat",
+    "archived": false,
+    "pushed_at": "2026-09-07",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "llm.c": {
+   "que_es": "Implementación de entrenamiento de LLMs en C/CUDA puro (MIT) de Andrej Karpathy, sin PyTorch ni Python. Es un proyecto educativo y de investigación de rendimiento, poco activo: el último push es de junio de 2025.",
+   "que_hace": "Se centra en el preentrenamiento, en particular en reproducir GPT-2 y GPT-3 (miniseries). La mejor introducción, según el README, es reproducir GPT-2 (124M). Incluye una versión fp32 'legacy' sencilla para aprender CUDA y una versión de precisión mixta para multi-GPU y multinodo, además de una ruta para CPU limitada.",
+   "como_lo_hace": "Se compila con `make` (por ejemplo, `make train_gpt2fp32cu`). Requiere toolkit CUDA para GPU; para preparar datos y pesos de referencia se usan scripts Python (`pip install -r requirements.txt`, `dev/download_starter_pack.sh`). En CPU funciona, pero solo para demostraciones pequeñas.",
+   "combina_con": [
+    {
+     "id": "nanochat",
+     "motivo": "Pipeline completo y más reciente del mismo autor en PyTorch. (combinación por arquitectura)",
+     "orden_instalacion": "Úsalo si quieres resultados completos sin escribir CUDA."
+    },
+    {
+     "id": "llms-from-scratch",
+     "motivo": "Teoría y código PyTorch para entender lo que llm.c implementa a bajo nivel. (combinación por arquitectura)",
+     "orden_instalacion": "Estudia primero la versión en PyTorch."
+    },
+    {
+     "id": "pytorch",
+     "motivo": "El repositorio incluye una referencia en PyTorch para comparar resultados. (combinación por arquitectura)",
+     "orden_instalacion": "Instálalo solo si quieres verificar contra la referencia."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Mantenimiento bajo desde 2025.",
+   "fuentes": [
+    "https://github.com/karpathy/llm.c/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "karpathy/llm.c",
+    "archived": false,
+    "pushed_at": "2025-06-26",
+    "license": "MIT",
+    "primary_language": "Cuda",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "how-to-train-your-gpt": {
+   "que_es": "Libro de texto interactivo (MIT) de @raiyanyahya para construir, entrenar y ejecutar un modelo de lenguaje moderno desde cero. El autor declara que lo escribió para aprender y que usó IA para entender y verificar conceptos, así que conviene contrastar los detalles. Activo (último push en octubre de 2026).",
+   "que_hace": "Ofrece 12 capítulos (más de 7.500 líneas) que van del entorno y los tensores a la tokenización, la atención, la arquitectura (RoPE, RMSNorm, SwiGLU), el entrenamiento, el KV cache y la inferencia. Añade 28 explicaciones independientes de técnicas (AdamW, precisión mixta y otras) y dos recorridos narrativos. Explica todo 'como si tuvieras cinco años', sin exigir cálculo ni álgebra lineal.",
+   "como_lo_hace": "Markdown con código Python y PyTorch. Se instalan `torch`, `tiktoken`, `datasets`, `numpy` y `matplotlib` (versión CPU por defecto; GPU opcional) y luego `requirements.txt`. Solo requiere nociones básicas de Python.",
+   "combina_con": [
+    {
+     "id": "nanochat",
+     "motivo": "Pipeline real para aplicar lo aprendido a escala (era la combinación previa del catálogo). (combinación por arquitectura)",
+     "orden_instalacion": "Termina el libro antes de alquilar GPU para nanochat."
+    },
+    {
+     "id": "pytorch",
+     "motivo": "Biblioteca usada en todo el libro.",
+     "orden_instalacion": "Instálala en la versión CPU o GPU según el capítulo de configuración."
+    },
+    {
+     "id": "marimo",
+     "motivo": "Ejecutar paso a paso el código Python y PyTorch de cada capítulo en un notebook reactivo (combinación por arquitectura).",
+     "orden_instalacion": "Instala primero las dependencias del libro (`torch`, `tiktoken`, `datasets`…) en el mismo entorno y después marimo."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Material escrito con ayuda de IA según su autor: verifica las afirmaciones técnicas.",
+   "fuentes": [
+    "https://github.com/raiyanyahya/how-to-train-your-gpt/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "raiyanyahya/how-to-train-your-gpt",
+    "archived": false,
+    "pushed_at": "2026-10-26",
+    "license": "MIT",
+    "primary_language": "Jupyter Notebook",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "500-ai-agents-projects": {
+   "que_es": "Colección (MIT) de @ashishpatel26 con más de 500 casos de uso y proyectos de agentes de IA, organizados por industria y framework. Es activa (último push en noviembre de 2026) y popular (~40k estrellas).",
+   "que_hace": "Recopila casos de uso por sector (salud, finanzas, educación y otros) con enlaces a implementaciones externas. Incluye una carpeta `agents/` con agentes autocontenidos ejecutables. Cubre los frameworks principales: CrewAI, Agno, LangGraph y AutoGen son los más citados. Sirve para explorar ideas y comparar enfoques, no como base de producción.",
+   "como_lo_hace": "Cada agente de `agents/` tiene su propio `requirements.txt` y `.env.example`: se entra en la carpeta, se instala y se ejecuta, sin configuración de monorepo. Los enlaces externos apuntan a repositorios de terceros de calidad y mantenimiento variables.",
+   "combina_con": [
+    {
+     "id": "crewai",
+     "motivo": "Framework más citado en la colección.",
+     "orden_instalacion": "Instálalo en el entorno del agente que lo use."
+    },
+    {
+     "id": "langgraph",
+     "motivo": "Otro framework recurrente en los ejemplos.",
+     "orden_instalacion": "Instálalo en el entorno del agente correspondiente."
+    },
+    {
+     "id": "agno",
+     "motivo": "Framework usado en muchos de los agentes listados.",
+     "orden_instalacion": "Instálalo según el requirements del ejemplo."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. crewai, langgraph y agno son alternativas entre sí: elige uno por proyecto.",
+   "fuentes": [
+    "https://github.com/ashishpatel26/500-AI-Agents-Projects/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "ashishpatel26/500-AI-Agents-Projects",
+    "archived": false,
+    "pushed_at": "2026-11-06",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "ai-engineering-hub": {
+   "que_es": "Colección (MIT) de @patchy631 con tutoriales y más de 93 proyectos de ingeniería de IA: 22 de nivel principiante, 48 intermedios y 23 avanzados. Es activa (último push en noviembre de 2026) y está asociada a una newsletter.",
+   "que_hace": "Ofrece proyectos prácticos sobre LLMs, RAG, agentes, MCP (el tema más presente) y aplicaciones multimodales, a menudo con modelos como DeepSeek y herramientas como CrewAI, LlamaIndex o Firecrawl. Sirve como material de aprendizaje por proyectos. El README los califica de 'production-ready' [DATO NO VERIFICADO].",
+   "como_lo_hace": "Cada proyecto vive en su carpeta con instrucciones y dependencias propias, en su mayoría Python. Requiere las claves de API de los servicios que use cada ejemplo, aunque algunos usan modelos locales con Ollama. Hay que revisar versiones, porque muchos ejemplos fijan bibliotecas que evolucionan rápido.",
+   "combina_con": [
+    {
+     "id": "crewai",
+     "motivo": "Framework de agentes usado en varios proyectos.",
+     "orden_instalacion": "Instálalo en el entorno del proyecto que lo use."
+    },
+    {
+     "id": "llama-index",
+     "motivo": "RAG en varios proyectos del hub.",
+     "orden_instalacion": "Instálalo según el proyecto."
+    },
+    {
+     "id": "firecrawl",
+     "motivo": "Extracción web usada en proyectos de investigación.",
+     "orden_instalacion": "Configura su clave antes de ejecutar esos ejemplos."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales en algunos proyectos.",
+     "orden_instalacion": "Instala Ollama y descarga el modelo indicado."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/patchy631/ai-engineering-hub/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "patchy631/ai-engineering-hub",
+    "archived": false,
+    "pushed_at": "2026-11-01",
+    "license": "MIT",
+    "primary_language": "Jupyter Notebook",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "chatgpt-dan": {
+   "que_es": "Archivo de prompts de 'jailbreak' (DAN y otros) para ChatGPT, mantenido por @0xk1h0. No tiene licencia declarada. Es contenido histórico: la última nota de funcionamiento del README es de julio de 2023 (DAN 12.0 con GPT-3.5), aunque el repositorio recibe pushes.",
+   "que_hace": "Recoge prompts de rol que intentaban que ChatGPT ignorara sus políticas de uso: DAN 13.0, 'Developer Mode' y variantes. Funcionan explotando el entrenamiento de 'role play'. Su valor actual es documental y de investigación en seguridad (red teaming, comprensión de inyecciones), no práctico.",
+   "como_lo_hace": "Texto Markdown, sin código ni instalación. Usar estos prompts contra servicios comerciales puede violar sus términos de uso y provocar la suspensión de la cuenta. Los modelos actuales suelen rechazarlos.",
+   "combina_con": [
+    {
+     "id": "promptfoo",
+     "motivo": "Usar los prompts como casos de prueba de red teaming para comprobar que tu aplicación los resiste. (combinación por arquitectura)",
+     "orden_instalacion": "Añádelos como dataset adversarial en una configuración de red team."
+    },
+    {
+     "id": "system-prompts-and-models-of-ai-tools",
+     "motivo": "Otro corpus de referencia sobre cómo se instruye y se ataca a los asistentes. (combinación por arquitectura)",
+     "orden_instalacion": "Úsalos juntos solo con fines de estudio y defensa."
+    },
+    {
+     "id": "chatgpt-system-prompt",
+     "motivo": "Recursos sobre protección de instrucciones de sistema frente a extracción. (combinación por arquitectura)",
+     "orden_instalacion": "Consulta su guía de seguridad para endurecer tus prompts."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Contenido de jailbreak sin licencia: solo para investigación defensiva.",
+   "fuentes": [
+    "https://github.com/0xk1h0/ChatGPT_DAN/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "0xk1h0/ChatGPT_DAN",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "latest_release": "v1.0.0 (2023-08-22)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "chatgpt-system-prompt": {
+   "que_es": "Colección (MIT) de @LouisShark, llamada 'PromptCraft', con system prompts de ChatGPT, de otros productos de IA y de miles de GPTs personalizados. Es activa (último push en noviembre de 2026). Buena parte del contenido se obtuvo por extracción de prompts ajenos, lo que plantea dudas legales y éticas [DATO NO VERIFICADO: estatus de derechos de cada prompt].",
+   "que_hace": "Ofrece un índice (TOC.md) para buscar GPTs y sus instrucciones, una guía para obtener system prompts y archivos de conocimiento, y una guía de seguridad para proteger las instrucciones de un GPT propio. Su valor educativo está en ver cómo se redactan instrucciones de sistema reales y cómo se defienden.",
+   "como_lo_hace": "Markdown organizado por GPT y producto, sin código ni instalación. Se consulta en GitHub o se clona para buscar localmente.",
+   "combina_con": [
+    {
+     "id": "system-prompts-and-models-of-ai-tools",
+     "motivo": "Corpus paralelo centrado en herramientas de IA de programación. (combinación por arquitectura)",
+     "orden_instalacion": "Consulta ambos para comparar estilos de instrucciones."
+    },
+    {
+     "id": "promptfoo",
+     "motivo": "Probar si tus propios prompts de sistema resisten las técnicas de extracción documentadas. (combinación por arquitectura)",
+     "orden_instalacion": "Configura pruebas de extracción en promptfoo."
+    },
+    {
+     "id": "prompt-engineering-guide",
+     "motivo": "Teoría para interpretar críticamente los prompts recopilados. (combinación por arquitectura)",
+     "orden_instalacion": "Úsalo como marco conceptual."
+    },
+    {
+     "id": "chatgpt-dan",
+     "motivo": "Combinación recíproca: ChatGPT_DAN lo enlaza como «Recursos sobre protección de instrucciones de sistema frente a extracción. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ChatGPT_DAN: Consulta su guía de seguridad para endurecer tus prompts.",
+     "reciproca_de": "chatgpt-dan"
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/LouisShark/chatgpt_system_prompt/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "LouisShark/chatgpt_system_prompt",
+    "archived": false,
+    "pushed_at": "2026-11-09",
+    "license": "MIT",
+    "primary_language": "HTML",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "claude-quickstarts": {
+   "que_es": "Colección oficial de Anthropic (MIT) de proyectos de inicio para construir aplicaciones con la API de Claude. Es activa (último push en noviembre de 2026) y se amplía con las novedades de la plataforma.",
+   "que_hace": "Incluye agentes de atención al cliente y de análisis financiero, demos de computer use (contenedor con VNC y una implementación nativa para macOS), browser use, los nuevos toolsets de navegador y ordenador, un agente de programación autónomo, y varias plantillas de 'Managed Agents' (Chat SDK, CopilotKit con AG-UI, servidor MCP en TypeScript, Slack, Linear, Sentry y otras).",
+   "como_lo_hace": "Proyectos independientes en Python, TypeScript y Next.js, algunos con Docker (la demo de computer use). Todos requieren una clave de API de Claude, y los de Managed Agents dependen de ese servicio de Anthropic. Las demos de computer y browser use controlan un escritorio o navegador, así que conviene ejecutarlas aisladas.",
+   "combina_con": [
+    {
+     "id": "claude-agent-sdk-python",
+     "motivo": "Pasar de los ejemplos a agentes propios con el bucle de Claude Code. (combinación por arquitectura)",
+     "orden_instalacion": "Usa los quickstarts como referencia y construye con el SDK."
+    },
+    {
+     "id": "copilotkit",
+     "motivo": "Frontend de la plantilla 'Managed Agents with CopilotKit and AG-UI' (documentada en el README).",
+     "orden_instalacion": "Sigue la plantilla: backend de Managed Agents y frontend con CopilotKit."
+    },
+    {
+     "id": "e2b",
+     "motivo": "Ejecutar las demos de computer use y del agente autónomo en un sandbox remoto en lugar de la máquina local. (combinación por arquitectura)",
+     "orden_instalacion": "Crea el sandbox y despliega la demo dentro."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/anthropics/claude-quickstarts/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "anthropics/claude-quickstarts",
+    "archived": false,
+    "pushed_at": "2026-11-06",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "system-prompts-and-models-of-ai-tools": {
+   "que_es": "Colección (GPL-3.0) de @x1xhlol con system prompts, definiciones de herramientas y modelos atribuidos a herramientas de IA comerciales como Cursor, Devin, v0, Lovable o Windsurf. Es muy popular (~145k estrellas). Se financia con patrocinios, donaciones en criptomonedas y Patreon, y promociona un servicio comercial de seguridad (ZeroLeaks).",
+   "que_hace": "Permite estudiar cómo instruyen las empresas a sus agentes de programación y asistentes (estructura, reglas, uso de herramientas). Es útil como referencia para diseñar prompts de agentes y para entender riesgos de extracción de prompts. La autenticidad y vigencia de cada prompt no está verificada [DATO NO VERIFICADO]: muchos son extracciones que pueden estar desactualizadas.",
+   "como_lo_hace": "Archivos de texto y JSON organizados por producto, sin código ni instalación. Redistribuir prompts propietarios de terceros puede tener implicaciones legales; la licencia GPL-3.0 del repositorio no garantiza derechos sobre ese contenido.",
+   "combina_con": [
+    {
+     "id": "chatgpt-system-prompt",
+     "motivo": "Corpus complementario centrado en GPTs personalizados. (combinación por arquitectura)",
+     "orden_instalacion": "Consúltalos juntos para comparar."
+    },
+    {
+     "id": "promptfoo",
+     "motivo": "Evaluar la resistencia de tus propios prompts frente a extracción e inyección. (combinación por arquitectura)",
+     "orden_instalacion": "Diseña pruebas de red teaming basadas en los patrones observados."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Comparar los prompts recopilados con las instrucciones de agentes que usas (CLAUDE.md, skills). (combinación por arquitectura)",
+     "orden_instalacion": "Úsalo como referencia al redactar tus propias reglas."
+    },
+    {
+     "id": "chatgpt-dan",
+     "motivo": "Combinación recíproca: ChatGPT_DAN lo enlaza como «Otro corpus de referencia sobre cómo se instruye y se ataca a los asistentes. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ChatGPT_DAN: Úsalos juntos solo con fines de estudio y defensa.",
+     "reciproca_de": "chatgpt-dan"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Contenido de procedencia no verificada.",
+   "fuentes": [
+    "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "x1xhlol/system-prompts-and-models-of-ai-tools",
+    "archived": false,
+    "pushed_at": "2026-10-12",
+    "license": "GPL-3.0",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "awesome-machine-learning": {
+   "que_es": "Lista curada clásica de frameworks, bibliotecas y software de machine learning organizada por lenguaje, mantenida por Joseph Misiti e inspirada en awesome-php. GitHub marca su licencia como NOASSERTION. Es activa (último push en noviembre de 2026). Desde abril de 2026 el mantenedor pide verificar por email que el contribuyente es humano, por el exceso de PRs generados con LLMs.",
+   "que_hace": "Recoge bibliotecas de ML, visión, NLP, deep learning y herramientas para muchos lenguajes (C, C++, Python, Java, JavaScript, Go, Rust y otros). También enlaza listas de libros gratuitos, eventos, cursos y blogs. Marca como obsoletos los proyectos sin mantenimiento durante 2 o 3 años.",
+   "como_lo_hace": "Markdown, sin código ni instalación. La calidad de las entradas varía: algunas son proyectos menores o promocionales, así que conviene verificar actividad y licencia de cada enlace.",
+   "combina_con": [
+    {
+     "id": "pytorch",
+     "motivo": "Framework de referencia que aparece en la lista; punto de partida práctico. (combinación por arquitectura)",
+     "orden_instalacion": "Elige un framework de la lista y profundiza en su documentación."
+    },
+    {
+     "id": "transformers",
+     "motivo": "Biblioteca estándar para modelos preentrenados, puerta de entrada al NLP moderno. (combinación por arquitectura)",
+     "orden_instalacion": "Úsala tras explorar la sección de Python."
+    },
+    {
+     "id": "llm-course",
+     "motivo": "Ruta de estudio guiada para quien llega a la lista buscando aprender LLMs. (combinación por arquitectura)",
+     "orden_instalacion": "Combina la exploración de la lista con un curso estructurado."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/josephmisiti/awesome-machine-learning/blob/master/README.md"
+   ],
+   "github": {
+    "name_with_owner": "josephmisiti/awesome-machine-learning",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "train-llm-from-scratch": {
+   "que_es": "Tutorial y código (MIT) de @FareedKhan-dev para entrenar un modelo de lenguaje desde cero en PyTorch puro. Empezó como tutorial de preentrenamiento y hoy cubre hasta modelos alineados de estilo razonador. Es activo (último push en octubre de 2026) y tiene CI.",
+   "que_hace": "Implementa a mano, sin `trl`, `peft` ni `transformers`, todo el pipeline: modelo base → SFT → modelo de recompensa → PPO/DPO → GRPO → evaluación y chat. Tiene dos arquitecturas: el transformer original de 'Attention is All You Need' y una moderna con RoPE, RMSNorm, SwiGLU, atención agrupada y latente, Mixture of Experts y KV cache. Incluye una ruta para entrenar un modelo pequeño en CPU en minutos y tablas de GPU para modelos de hasta miles de millones de parámetros.",
+   "como_lo_hace": "Paquete Python 3.10+ instalable con `pip install -e .`. La ruta de portátil no requiere GPU; los modelos grandes necesitan GPUs con mucha memoria, según la tabla del README. El código está pensado para leerse y aprender, no para entrenar en producción.",
+   "combina_con": [
+    {
+     "id": "pytorch",
+     "motivo": "Única base del código.",
+     "orden_instalacion": "Instala PyTorch (CPU o CUDA) antes de `pip install -e .`."
+    },
+    {
+     "id": "trl",
+     "motivo": "Contrastar las implementaciones manuales de SFT, DPO, PPO y GRPO con la biblioteca de referencia. (combinación por arquitectura)",
+     "orden_instalacion": "Úsala después para entrenar en serio."
+    },
+    {
+     "id": "nanochat",
+     "motivo": "Pipeline completo optimizado para comparar rendimiento y resultados. (combinación por arquitectura)",
+     "orden_instalacion": "Opcional, como siguiente paso."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/FareedKhan-dev/train-llm-from-scratch/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "FareedKhan-dev/train-llm-from-scratch",
+    "archived": false,
+    "pushed_at": "2026-10-02",
+    "license": "MIT",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "awesome-harness-engineering": {
+   "que_es": "Lista curada (CC0) de recursos, patrones y plantillas para diseñar 'harnesses' de agentes de IA, es decir, el andamiaje alrededor del modelo. La mantiene ai-boost, acepta patrocinios y está traducida a 9 idiomas. Es muy reciente y activa (último push en noviembre de 2026).",
+   "que_hace": "Organiza recursos por temas: fundamentos (artículos de OpenAI, Anthropic y otros), primitivas de diseño (entrega de contexto, interfaces de herramientas, planificación, bucles de verificación, memoria, sandboxes), implementaciones de referencia, seguridad y permisos, evals, plantillas e infraestructura de producción. Enlaza a agentcraft.dev, que ofrece skills de Claude Code por categoría.",
+   "como_lo_hace": "Markdown, sin código ni instalación. Mezcla artículos, papers y repositorios de calidad variable, así que hay que evaluar cada enlace.",
+   "combina_con": [
+    {
+     "id": "12-factor-agents",
+     "motivo": "Principios concretos de diseño de harnesses fiables. (combinación por arquitectura)",
+     "orden_instalacion": "Lee los 12 factores como base y usa la lista para ampliar."
+    },
+    {
+     "id": "loop-engineering",
+     "motivo": "Patrones prácticos de bucles de agentes alrededor de un repositorio. (combinación por arquitectura)",
+     "orden_instalacion": "Úsalo para aplicar los conceptos de verificación y estado."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Harness de referencia citado en la literatura que recoge la lista. (combinación por arquitectura)",
+     "orden_instalacion": "Analiza su diseño con los recursos de la lista."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/ai-boost/awesome-harness-engineering/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "ai-boost/awesome-harness-engineering",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Implementación open source (Apache-2.0) de AlphaEvolve de Google DeepMind, mantenida por algorithmicsuperintelligence. Es activa (v0.4.1) y el README lista artículos científicos que la han usado para obtener nuevos resultados.
+
+## ¿Qué hace?
+
+Usa LLMs para mutar programas y los hace evolucionar con MAP-Elites y poblaciones en islas. Optimiza cualquier problema que se pueda puntuar con un evaluador (algoritmos, rendimiento de sistemas, matemáticas). Parte de un programa inicial y una función de evaluación, e itera para descubrir variantes mejores.
+
+## ¿Cómo lo hace?
+
+Python 3.10+, instalable desde el código fuente (`pip install -e .`) o como biblioteca (`pip install openevolve`). Se ejecuta con `openevolve-run.py` pasando el programa inicial, el evaluador y un `config.yaml`. Usa cualquier API compatible con OpenAI, configurando `api_base` y el modelo: Gemini, Ollama, vLLM u OptiLLM, según su guía de proveedores. Las ejecuciones largas pueden suponer muchas llamadas al LLM.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Modelos locales para iteraciones baratas (documentado en docs/llm-providers.md). | Arranca Ollama y pon su URL /v1 como `api_base` en config.yaml. |
+| [vLLM](vllm.md) | Servir modelos propios con alto rendimiento para ejecuciones largas (documentado en la guía de proveedores). | Despliega vLLM y configúralo como `api_base`. |
+| [litellm](litellm.md) | Enrutar a varios proveedores y controlar el gasto. (combinación por arquitectura: cualquier endpoint compatible con OpenAI funciona) | Proxy LiteLLM primero; apunta `api_base` a él. |
+
+**Notas:** Sin alternativas declaradas. Combinación anterior con llm-council eliminada: sin relación técnica.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.4.1 (2026-11-02) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/algorithmicsuperintelligence/openevolve/blob/main/README.md) · [2](https://github.com/algorithmicsuperintelligence/openevolve/blob/main/docs/llm-providers.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Es una implementación independiente de AlphaEvolve; una puntuación mejor solo vale para el evaluador definido |
 | Coste | El coste depende del proveedor o la ruta. Admite APIs y los CLI de Claude Code o Codex; cada ruta mantiene sus límites; la búsqueda repetida puede acumular consumo |
 | Equipo | Preparación según la ruta elegida. Python 3.10+; evaluador de calidad; API o CLI compatible autenticado |
-
-Es una implementación independiente de AlphaEvolve; una puntuación mejor solo vale para el evaluador definido
-
-## Qué puedes hacer con él
-
-Agente de codificación evolutivo que optimiza algoritmos por simulación genética.
-
-## Por qué destaca
-
-Usos propuestos: Optimizar una función medible; Buscar mejores reglas de ordenación.
-
-## Cómo funciona
 
 Es una implementación independiente de AlphaEvolve; una puntuación mejor solo vale para el evaluador definido
 
@@ -95,12 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.10+; evaluador de calidad; API o CLI compatible autenticado
 - **Etiquetas:** `automation` `agents` `python`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [llm-council](llm-council.md) | 26.5k | "consejo" donde varios LLMs deliberan y se evalúan entre sí para responder. |
 
 ## Enlaces
 

@@ -30,6 +30,14 @@ Se usa como biblioteca (`pip install mem0ai` o `npm install mem0ai`), como servi
 | [crewAI](crewai.md) | Integración documentada para dar memoria a equipos de agentes de CrewAI. | Mem0 configurado primero; activa la memoria en la definición del crew. |
 | [Qdrant](qdrant.md) | Base vectorial documentada como almacén de Mem0 en código abierto. | Qdrant primero; la dimensión de la colección debe coincidir con el modelo de embeddings. |
 | [Hermes Desktop](hermes-desktop.md) | Hermes Desktop lista Mem0 entre sus proveedores de memoria. | Clave o servidor de Mem0 listo antes de activarlo en la app. |
+| [Agents Towards Production](agents-towards-production.md) | Combinación recíproca: Agents Towards Production lo enlaza como «Tutorial de memoria auto-mejorable con Mem0». | Orden indicado desde Agents Towards Production: Configura Mem0 (cloud o local) antes del notebook. |
+| [Agno](agno.md) | Combinación recíproca: Agno lo enlaza como «Memoria externa con integración documentada por Mem0». | Orden indicado desde Agno: Opcional: Agno ya trae memoria propia sobre PostgreSQL. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[AI SDK (Vercel)](vercel-ai.md)
 
 **Notas:** Alternativas (elige una): letta, cognee, supermemory. La migración de la v2 a la v3 de código abierto tiene guía propia.
 
@@ -115,7 +123,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Letta](letta.md) | 25.4k | Plataforma para agentes con estado y memoria avanzada que aprenden con el tiempo (antes MemGPT). |
+| [Letta](letta.md) | 3.8k | Harness de agentes con estado (Letta Code, antes MemGPT): memoria, identidad y skills que el propio agente reescribe con el tiempo. |
 | [cognee](cognee.md) | 33.3k | Plataforma de memoria para agentes que combina grafos de conocimiento y vectores, usable con modelos pequeños. |
 | [supermemory](supermemory.md) | 31.6k | Motor de memoria y contexto muy rápido, con API para apps de IA y app propia, ejecutable en local. |
 

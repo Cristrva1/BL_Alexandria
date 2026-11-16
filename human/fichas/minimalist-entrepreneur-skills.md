@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Diez skills para Claude Code basadas en el libro «The Minimalist Entrepreneur» de Sahil Lavingia (fundador de Gumroad), publicadas en su repositorio `slavingia/skills`. El repositorio no declara licencia y su último cambio es de abril de 2026.
+
+## ¿Qué hace?
+
+Guían cada etapa de un negocio pequeño y rentable: encontrar comunidad, validar ideas, definir un MVP, «procesar» el servicio a mano antes de programar, conseguir los primeros clientes, fijar precios, plan de marketing, crecimiento sostenible y valores de empresa, cada una con su comando (`/validate-idea`, `/mvp`, `/pricing`…).
+
+## ¿Cómo lo hace?
+
+Plugin de Claude Code: `/plugin marketplace add slavingia/skills` y `/plugin install minimalist-entrepreneur`, o desde un clon local.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin nativo. | Instala desde el marketplace. |
+| [Marketing Skills](marketingskills.md) | Ejecutar el plan de marketing con skills más especializadas (combinación por arquitectura). | Independientes. |
+| [posthog](posthog.md) | Medir la validación y el crecimiento con datos reales (combinación por arquitectura). | Define los eventos clave antes de lanzar. |
+
+**Notas:** Sin licencia declarada: técnicamente no hay permiso explícito de redistribución.
+
+Estado en GitHub: activo · último push 2026-04-14 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/slavingia/skills/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El pack está basado en un libro y documenta Claude Code; sus plantillas no demuestran demanda, ingresos o validez de un precio |
 | Coste | Consumo del agente que ya utilizas. Usa el plan de Claude Code; el código no incluye presupuesto ni servicios de negocio |
 | Equipo | Preparación según la ruta elegida. Claude Code; idea de negocio; supuestos escritos |
-
-El pack está basado en un libro y documenta Claude Code; sus plantillas no demuestran demanda, ingresos o validez de un precio
-
-## Qué puedes hacer con él
-
-Skills basadas en ideas de The Minimalist Entrepreneur para orientar trabajo de negocio y emprendimiento con un agente.
-
-## Por qué destaca
-
-Usos propuestos: Explorar un problema de cliente; Preparar preguntas de validación.
-
-## Cómo funciona
 
 El pack está basado en un libro y documenta Claude Code; sus plantillas no demuestran demanda, ingresos o validez de un precio
 

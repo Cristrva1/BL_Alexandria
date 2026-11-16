@@ -10,6 +10,34 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+react-three-fiber (@react-three/fiber), renderer de React para three.js, de pmndrs. Licencia MIT. Es madura (~34k estrellas, v9.8.2).
+
+## ¿Qué hace?
+
+Expresa escenas 3D como componentes declarativos y reutilizables que reaccionan al estado y participan del ecosistema React, sin capa de abstracción extra ni pérdida de rendimiento. Funciona también en React Native.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install three @types/three @react-three/fiber`. El ecosistema de pmndrs añade drei, rapier y postprocesado.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [three.js](three-js.md) | Motor subyacente. | Instala three junto a R3F. |
+| [react-three-rapier](react-three-rapier.md) | Física Rapier para R3F. | Instala `@react-three/rapier`. |
+| [motion](motion.md) | Animación de UI alrededor del canvas. (combinación por arquitectura) | Combina en la misma app. |
+| [threejs-skills](threejs-skills.md) | Combinación recíproca: threejs-skills lo enlaza como «Versión cubierta (9.8, con drei 10.7)». | Orden indicado desde threejs-skills: Fija las versiones indicadas. |
+| [webgl-noise](webgl-noise.md) | Combinación recíproca: webgl-noise lo enlaza como «Shaders personalizados en R3F. (combinación por arquitectura)». | Orden indicado desde webgl-noise: Usa un shaderMaterial con las funciones. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-10-21 · última versión publicada v9.8.2 (2026-10-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pmndrs/react-three-fiber/blob/master/readme.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +51,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un renderer React sobre Three.js; hay que alinear la versión de React y Fiber y no es un editor 3D para uso directo |
 | Coste | Sin pago a un modelo en la ruta básica. Sin API de IA; modelos, texturas y alojamiento son independientes |
 | Equipo | Preparación según la ruta elegida. React; Three.js; versiones compatibles; navegador |
-
-Es un renderer React sobre Three.js; hay que alinear la versión de React y Fiber y no es un editor 3D para uso directo
-
-## Qué puedes hacer con él
-
-Renderer de React para three.js que expresa escenas 3D como componentes declarativos y reactivos.
-
-## Por qué destaca
-
-Usos propuestos: Crear un configurador 3D; Construir una escena React interactiva.
-
-## Cómo funciona
 
 Es un renderer React sobre Three.js; hay que alinear la versión de React y Fiber y no es un editor 3D para uso directo
 
@@ -93,12 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** React; Three.js; versiones compatibles; navegador
 - **Etiquetas:** `ui` `design` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [motion](motion.md) | 35.2k | Librería de animación declarativa para React/JS (antes Framer Motion) que añade transiciones y microinteracciones con muy poco código. |
 
 ## Enlaces
 

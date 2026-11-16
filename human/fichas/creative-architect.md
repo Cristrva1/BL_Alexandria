@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Plugin para Claude Code (MIT) de Hainrixz, documentado en español, que actúa como director de arte y productor de imagen y video con IA. Muy nuevo y con poca adopción (v1.0.1, 24 estrellas).
+
+## ¿Qué hace?
+
+Produce fotos de producto, avatares de marca, UGC, animación y anuncios con estructura probada mediante un flujo en pasos que incluye revisar antipatrones y la fidelidad al producto real. Informa del coste estimado en créditos cuando el proveedor lo permite.
+
+## ¿Cómo lo hace?
+
+Se instala como plugin (`/plugin marketplace add Hainrixz/creative-architect`) y genera con el proveedor conectado: Higgsfield (conector MCP o CLI), Magnific (MCP HTTP), OpenAI u otros.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Es un plugin de Claude Code. | Instala el plugin y conecta al menos un proveedor de generación. |
+| [HyperFrames](hyperframes.md) | Montar los clips generados en piezas de video (combinación por arquitectura). | Genera primero; compón después. |
+| [remotion](remotion.md) | Alternativa programática para componer anuncios (combinación por arquitectura). | Igual que arriba. |
+
+**Notas:** El README dice que el repositorio es privado, pero es público en GitHub: documentación desactualizada. Los proveedores son de pago.
+
+Estado en GitHub: activo · último push 2026-10-25 · última versión publicada v1.0.1 (2026-10-17) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Hainrixz/creative-architect/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. No incluye créditos audiovisuales ni acceso idéntico por MCP, CLI y REST; generar una pieza y publicarla son acciones diferentes |
 | Coste | El coste depende del proveedor o la ruta. El trabajo de brief usa Claude; generar usa Higgsfield, Magnific, OpenAI u otro proveedor con sus propios planes o APIs |
 | Equipo | Preparación según la ruta elegida. Claude Code; brief; proveedor de imagen o video solo al generar; presupuesto |
-
-No incluye créditos audiovisuales ni acceso idéntico por MCP, CLI y REST; generar una pieza y publicarla son acciones diferentes
-
-## Qué puedes hacer con él
-
-Plugin de dirección de arte para Claude Code: prepara fotos de producto, UGC y anuncios con proveedores de imagen o video.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una foto de producto; Planificar un anuncio UGC.
-
-## Cómo funciona
 
 No incluye créditos audiovisuales ni acceso idéntico por MCP, CLI y REST; generar una pieza y publicarla son acciones diferentes
 

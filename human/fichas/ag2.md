@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+AG2 (Apache 2.0), «AgentOS de código abierto» surgido de AutoGen y mantenido por un grupo de voluntarios de varias organizaciones (administradores: Chi Wang y Qingyun Wu). Desde la v1.0 (actual v1.3.2) el paquete `ag2` es un framework nuevo orientado a protocolos; el clásico (`import autogen`, ConversableAgent, GroupChat) se trasladó a ag2ai/ag2-classic.
+
+## ¿Qué hace?
+
+Construye agentes y cooperación entre agentes: herramientas, human-in-the-loop, orquestación multiagente, un harness con conocimiento y compactación de historial (por ejemplo, `SummarizeCompact`) y patrones de diseño agéntico avanzados.
+
+## ¿Cómo lo hace?
+
+Python 3.11+ (`pip install ag2[openai]`; también hay extras `anthropic`, `gemini`, `ollama`…). La v1.0 no es una actualización directa desde Classic: cambian el modelo de agentes, la orquestación y los imports.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Modelos locales mediante el extra `ag2[ollama]`. | Ollama primero; instala el extra. |
+| [langfuse](langfuse.md) | Trazas (Langfuse documenta AutoGen/AG2) [DATO NO VERIFICADO: vigencia con la API de AG2 1.0]. | Comprueba la compatibilidad con la versión instalada. |
+| [Microsoft Agent Framework](agent-framework.md) | Sucesor de AutoGen por parte de Microsoft; conviene compararlo antes de migrar (combinación por arquitectura). | Elige uno de los dos para proyectos nuevos. |
+
+**Notas:** Se quitó langchain porque no hay integración documentada. Si tu código usa `import autogen`, instala ag2-classic.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.3.2 (2026-11-15) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ag2ai/ag2/blob/main/README.md) · [2](https://langfuse.com/integrations/frameworks/autogen) · [3](https://docs.ag2.ai/latest/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. AG2 v1 no sustituye directamente Classic: ConversableAgent y GroupChat siguen en ag2-classic con import autogen |
 | Coste | El coste depende del proveedor o la ruta. Ofrece extras para OpenAI, Anthropic, Gemini y Ollama; cada proveedor conserva sus costes |
 | Equipo | Preparación según la ruta elegida. Python 3.11+; extra del proveedor elegido |
-
-AG2 v1 no sustituye directamente Classic: ConversableAgent y GroupChat siguen en ag2-classic con import autogen
-
-## Qué puedes hacer con él
-
-AG2 v1 utiliza import ag2 y su propia arquitectura de agentes y redes. Los proyectos con ConversableAgent, GroupChat e import autogen deben seguir la distribución ag2-classic y su documentación de migración.
-
-## Por qué destaca
-
-Usos propuestos: Coordinar redactor y verificador; Incluir intervención humana en un equipo.
-
-## Cómo funciona
 
 AG2 v1 no sustituye directamente Classic: ConversableAgent y GroupChat siguen en ag2-classic con import autogen
 
@@ -92,13 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.11+; extra del proveedor elegido
 - **Etiquetas:** `automation` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [langchain](langchain.md) | 150k | Framework base para construir aplicaciones con LLMs (cadenas, agentes, RAG, herramientas). |
-| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
 
 ## Enlaces
 

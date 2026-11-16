@@ -265,7 +265,7 @@
     const featuredPrompts = (prompts.filter(p => p.featured).length ? prompts.filter(p => p.featured) : prompts).slice(0, 3);
     const groups = catalog.discovery.goal_groups || [];
     const goalById = Object.fromEntries(catalog.discovery.goals.map(g => [g.id, g]));
-    const queries = ["transcribir audio", "bot de WhatsApp", "presentación desde PDF", "modelo local", "n8n", "subtítulos"];
+    const queries = ["transcribir audio", "bot de WhatsApp", "presentación desde PDF", "modelo local", "automatizar flujos", "subtítulos"];
     const stats = [
       [catalog.counts.repos, "repos curados", "#/explorar"], [catalog.counts.work_areas || areas.length, "áreas de trabajo", "#/salas"],
       [catalog.counts.topics, "subcategorías", "#/salas"], [catalog.counts.recipes, "recetas completas", "#/recetas"],
@@ -623,20 +623,34 @@
     return Boolean(item.que_es && item.que_hace && item.como_lo_hace && (item.combina_con || []).length);
   }
 
+  function usedBy(item) {
+    const users = (item.used_by || []).filter((id) => repo(id));
+    if (!users.length) return "";
+    const links = users.map((id) => `<a href="#/repo/${encodeURIComponent(id)}">${esc(repo(id).name)}</a>`).join(" · ");
+    const body = `<p class="meta">Repos que lo citan en sus combinaciones sin que figuren arriba. Lista generada automáticamente; el motivo está en la ficha de cada uno.</p><p>${links}</p>`;
+    return users.length > 12
+      ? `<details class="used-by"><summary><h2>Usado por (${users.length})</h2></summary>${body}</details>`
+      : `<h2>Usado por (${users.length})</h2>${body}`;
+  }
+
   function fourSections(item) {
     if (!hasFour(item)) return "";
     const combos = item.combina_con.filter((combo) => repo(combo.id)).map((combo) => `<li><a href="#/repo/${encodeURIComponent(combo.id)}"><strong>${esc(repo(combo.id).name)}</strong></a>: ${esc(combo.motivo || "")}${combo.orden_instalacion ? `<br><span class="meta">Orden y cuidados: ${esc(combo.orden_instalacion)}</span>` : ""}</li>`).join("");
     const sources = (item.descripcion_fuentes || []).map((url, index) => `<a href="${esc(safeUrl(url))}" target="_blank" rel="noreferrer">Fuente ${index + 1}</a>`).join(" · ");
     const checked = (item.descripcion_revision || {}).checked_at || "fecha por confirmar";
     const gh = item.descripcion_github || {};
-    const ghLine = gh.checked_at ? `<p class="meta">Estado en GitHub: ${gh.archived ? "⚠️ archivado (solo lectura)" : "activo"}${gh.renamed_to ? ` · renombrado a ${esc(gh.renamed_to)}` : ""}${gh.pushed_at ? ` · último push ${esc(gh.pushed_at)}` : ""}${gh.latest_release ? ` · última versión ${esc(gh.latest_release)}` : ""}${gh.license ? ` · licencia ${esc(gh.license)}` : ""} (consultado el ${esc(gh.checked_at)}).</p>` : "";
+    const og = item.descripcion_origen || {};
+    const ogHost = ({codeberg:"Codeberg",gitlab:"GitLab",huggingface:"Hugging Face"})[og.host] || og.host || "la forja original";
+    const ogLine = og.checked_at ? `<p class="meta">Estado en ${esc(ogHost)}: ${og.archived ? "⚠️ archivado (solo lectura)" : "activo"}${og.pushed_at ? ` · última actividad ${esc(og.pushed_at)}` : ""}${og.latest_release ? ` · última versión ${esc(og.latest_release)}` : ""}${og.license ? ` · licencia ${esc(og.license)}` : ""} (consultado el ${esc(og.checked_at)}).</p>` : "";
+    const ghLine = gh.checked_at ? `<p class="meta">${og.checked_at ? "Copia antigua en GitHub" : "Estado en GitHub"}: ${gh.archived ? "⚠️ archivado (solo lectura)" : "activo"}${gh.renamed_to ? ` · renombrado a ${esc(gh.renamed_to)}` : ""}${gh.pushed_at ? ` · último push ${esc(gh.pushed_at)}` : ""}${gh.latest_release ? ` · última versión ${esc(gh.latest_release)}` : ""}${gh.license ? ` · licencia ${esc(gh.license)}` : ""} (consultado el ${esc(gh.checked_at)}).</p>` : "";
     return `<section id="repo-four" class="section">
         <h2>¿Qué es?</h2><p>${esc(item.que_es)}</p>
         <h2>¿Qué hace?</h2><p>${esc(item.que_hace)}</p>
         <h2>¿Cómo lo hace?</h2><p>${esc(item.como_lo_hace)}</p>
         <h2>¿Con qué otros repos se combina?</h2><ul>${combos}</ul>
+        ${usedBy(item)}
         ${item.descripcion_notas ? `<p><strong>Notas.</strong> ${esc(item.descripcion_notas)}</p>` : ""}
-        ${ghLine}
+        ${ogLine}${ghLine}
         <p class="meta">Descripción redactada a partir de la documentación del autor (revisada el ${esc(checked)}); no se instaló ni ejecutó.${sources ? ` ${sources}` : ""}</p>
       </section>`;
   }
@@ -813,7 +827,7 @@
     const suggested=[...new Set(ids.flatMap(id=>repo(id).alt_refs.map(ref=>ref.id)).filter(Boolean))];
     const starters=catalog.discovery.goals.find(g=>g.id===goal)?.starters||[];
     const found=AlexandriaDecisions.candidates(catalog.repos,query,ids,goal,[...suggested,...starters]);
-    return `<search><form id="compare-search" class="decision-form"><div><label for="compare-query">Buscar por nombre o tecnología</label><input id="compare-query" name="q" type="search" value="${esc(query)}" placeholder="Por ejemplo: n8n, whisper o react" aria-describedby="compare-search-help"></div><div><label for="compare-goal">Acotar por objetivo</label><select id="compare-goal" name="goal">${goalOptions(goal)}</select></div><button class="btn" type="submit">Buscar herramientas</button></form></search><p id="compare-search-help" class="meta">Selecciona hasta tres. Cada resultado muestra su identidad para distinguir repos con el mismo nombre.</p>
+    return `<search><form id="compare-search" class="decision-form"><div><label for="compare-query">Buscar por nombre o tecnología</label><input id="compare-query" name="q" type="search" value="${esc(query)}" placeholder="Por ejemplo: activepieces, whisper o react" aria-describedby="compare-search-help"></div><div><label for="compare-goal">Acotar por objetivo</label><select id="compare-goal" name="goal">${goalOptions(goal)}</select></div><button class="btn" type="submit">Buscar herramientas</button></form></search><p id="compare-search-help" class="meta">Selecciona hasta tres. Cada resultado muestra su identidad para distinguir repos con el mismo nombre.</p>
       <section aria-labelledby="compare-candidates-title"><h2 id="compare-candidates-title" class="compact-title">${query||goal?"Resultados para añadir":suggested.length?"Alternativas documentadas para seguir comparando":"Busca una herramienta o empieza con una comparación"}</h2><div id="compare-candidates" aria-live="polite">${found.length?`<p class="meta">${found.length} ${found.length===1?"coincidencia":"coincidencias"}${found.length>6?"; se muestran seis. Afina la búsqueda para ver otras.":"."}</p><ul class="compare-candidates">${found.slice(0,6).map(item=>`<li><div><strong>${esc(item.name)}</strong><span class="meta">${esc(item.gh||item.id)}</span><p>${esc(item.lead)}</p></div><button class="btn small ghost" type="button" data-action="compare" data-id="${esc(item.id)}" aria-label="Añadir ${esc(item.name)} (${esc(item.gh||item.id)}) a comparar"${ids.length===3?" disabled":""}>Añadir</button></li>`).join("")}</ul>`:query||goal?`<p>No hay coincidencias para esta búsqueda. Prueba un nombre más corto o cambia el objetivo.</p>`:""}</div></section>`;
   }
   function comparisonTable(group,items,differences) {

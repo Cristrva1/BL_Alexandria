@@ -10,6 +10,33 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Recetario oficial de OpenAI (MIT) con ejemplos de código y guías para tareas comunes con su API. Se navega en cookbook.openai.com. Es activo (último push en noviembre de 2026) y maduro.
+
+## ¿Qué hace?
+
+Ofrece notebooks y guías para tareas comunes: embeddings y búsqueda, RAG, function calling, salidas estructuradas, evaluación, agentes, voz en tiempo real, visión, fine-tuning y patrones de producción. También recoge recursos relacionados de terceros. El contenido está atado a la API y los productos de OpenAI.
+
+## ¿Cómo lo hace?
+
+La mayoría de los ejemplos son notebooks Python que requieren una cuenta y una clave de API de OpenAI (`OPENAI_API_KEY`), con su coste correspondiente. Los conceptos se pueden trasladar a otros lenguajes. No se instala como paquete: se clona o se consulta en la web.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [openai-python](openai-python.md) | SDK oficial usado por casi todos los notebooks. | Instala `openai` en el entorno antes de ejecutar los ejemplos. |
+| [OpenAI Agents SDK](openai-agents-python.md) | Recetas de agentes del cookbook basadas en el Agents SDK de OpenAI. | Instálalo cuando sigas las recetas de agentes. |
+| [promptfoo](promptfoo.md) | Llevar las evaluaciones del cookbook a una suite automatizada y comparable entre modelos. (combinación por arquitectura) | Reutiliza los casos de prueba del notebook en promptfoo. |
+| [Generative AI for Beginners](generative-ai-for-beginners.md) | Combinación recíproca: Generative AI for Beginners lo enlaza como «Recetas más avanzadas para quienes usan la API de OpenAI en los ejercicios. (combinación por arquitectura)». | Orden indicado desde Generative AI for Beginners: Úsalo como siguiente paso práctico tras las lecciones 'Build'. |
+
+**Notas:** Alternativas (elige una): claude-cookbooks, awesome-llm-apps.
+
+Estado en GitHub: activo · último push 2026-11-14 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/openai/openai-cookbook/blob/main/README.md) · [2](https://cookbook.openai.com)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelo local no documentado. Es un recetario oficial de API; no es un paquete de plugins ni una promesa de acceso mediante suscripción |
 | Coste | Consumo de APIs o servicios. Lectura libre; los ejemplos API requieren cuenta, clave y consumo separado de ChatGPT o Codex |
 | Equipo | Preparación según la ruta elegida. Navegador; Python y API key de OpenAI si ejecutas notebooks |
-
-Es un recetario oficial de API; no es un paquete de plugins ni una promesa de acceso mediante suscripción
-
-## Qué puedes hacer con él
-
-Ejemplos y guías oficiales en notebooks para usar la API de OpenAI en casos reales.
-
-## Por qué destaca
-
-Usos propuestos: Extraer campos de un texto; Aprender a evaluar respuestas de una aplicación.
-
-## Cómo funciona
 
 Es un recetario oficial de API; no es un paquete de plugins ni una promesa de acceso mediante suscripción
 
@@ -85,13 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; Python y API key de OpenAI si ejecutas notebooks
 - **Etiquetas:** `learning` `notebooks` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [openai-python](openai-python.md) | 32.2k | SDK oficial de OpenAI para Python, tipado, con chat, embeddings, imágenes, audio y Responses API. |
-| [OpenAI Agents SDK](openai-agents-python.md) | 30.7k | SDK ligero de OpenAI para flujos multiagente con traspasos, guardrails y trazas integradas. |
 
 ## Alternativas (elige una)
 

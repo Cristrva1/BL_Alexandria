@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Graphify, CLI y skill que convierte código y documentos en un grafo de conocimiento consultable, de Graphify Labs. Licencia Apache-2.0. Tiene un recuento de estrellas excepcionalmente alto (~149k), publica muy a menudo (v0.9.111) y ofrece un servicio de pago, Graphify Cloud.
+
+## ¿Qué hace?
+
+Con `/graphify` en el asistente mapea el proyecto (código, docs, PDF, imágenes y vídeos) en un grafo que el agente consulta en lugar de usar grep. El código se analiza en local con Tree-sitter sin LLM; los documentos y medios usan el modelo de tu asistente. Puede funcionar como servidor MCP y usar Ollama para inferencia local.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install graphifyy` o `uv tool install graphifyy` (paquete oficial con doble «y»; otros `graphify*` de PyPI no están afiliados), con extras como `[mcp]` u `[ollama]`. Luego `graphify install` configura los agentes. Requiere Python 3.10+ y declara no tener telemetría.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Skill e instalación con `graphify install` para Claude Code. | Instala graphifyy y ejecuta `graphify install`. |
+| [tree-sitter](tree-sitter.md) | Analiza el código con Tree-sitter. | No requiere instalación aparte: viene en el paquete. |
+| [Ollama](ollama.md) | Extra `[ollama]` para inferencia local. | Instala `graphifyy[ollama]` y arranca Ollama. |
+| [graphrag](graphrag.md) | Llevar el análisis de grafos a corpus documentales grandes. (combinación por arquitectura) | Usa Graphify para el código y GraphRAG para la documentación. |
+
+**Notas:** Alternativas (elige una): codegraph, gitnexus, serena, codebase-memory-mcp. Ojo con paquetes PyPI de nombre parecido.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.9.111 (2026-11-15) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Graphify-Labs/graphify/blob/v8/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. El paquete es graphifyy; el soporte Antigravity es explícito; la extracción semántica y la de código no tienen los mismos costes |
 | Coste | El coste depende del proveedor o la ruta. El código se analiza con AST sin LLM; documentos y medios usan el agente, API o backend local configurado |
 | Equipo | Preparación según la ruta elegida. Python 3.10+; uv o pipx; carpeta de código |
-
-El paquete es graphifyy; el soporte Antigravity es explícito; la extracción semántica y la de código no tienen los mismos costes
-
-## Qué puedes hacer con él
-
-Permite consultar símbolos y relaciones de una base de código desde distintos agentes. El análisis de código es determinista y local; documentos, PDFs, imágenes y video requieren la ruta semántica y sus dependencias. Ofrece adaptadores documentados para Claude Code, Codex y Antigravity.
-
-## Por qué destaca
-
-Usos propuestos: Explorar impacto de un cambio; Relacionar documentación y estructura de código.
-
-## Cómo funciona
 
 El paquete es graphifyy; el soporte Antigravity es explícito; la extracción semántica y la de código no tienen los mismos costes
 
@@ -95,12 +110,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `code` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
+## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [codegraph](codegraph.md) | 77.6k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
-| [graphrag](graphrag.md) | 36.6k | Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud. |
+| [GitNexus](gitnexus.md) | 48.5k | Herramienta visual para explorar y entender repositorios Git, mostrando estructura y relaciones para acelerar el onboarding en una base de código nueva. |
+| [Serena](serena.md) | 31.4k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
+| [codebase-memory-mcp](codebase-memory-mcp.md) | 48.6k | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. |
 
 ## Enlaces
 

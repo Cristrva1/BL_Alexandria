@@ -1,0 +1,468 @@
+{
+ "batch": "06-rag-bases-vectoriales",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación oficial enlazada; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "ragflow": {
+   "que_es": "Motor RAG (generación aumentada por recuperación) de código abierto (Apache 2.0) de InfiniFlow, que fusiona RAG con capacidades de agente. Muy activo: la versión 1.0.0 salió el 6 de noviembre de 2026 y el código principal está ahora en Go; tiene servicio en la nube opcional.",
+   "que_hace": "Extrae conocimiento de documentos no estructurados con formatos complejos mediante comprensión profunda de documentos y troceado por plantillas explicables, con citas para reducir alucinaciones. Desde 2026 añade «compilación de conocimiento» (wikis, grafos, árboles, PageIndex, mapas mentales, líneas de tiempo y skills por documento o conjunto), RAG agéntico con cuatro niveles de razonamiento, ingesta de sitios web por sitemap y de Google BigQuery con sincronización incremental.",
+   "como_lo_hace": "Se despliega con Docker Compose (Docker ≥ 24.0.0, Compose ≥ v2.26.1) y una configuración inicial recomendada de 4 núcleos, 16 GB de RAM y 50 GB de disco; usa MySQL por defecto y un motor de documentos Elasticsearch o Infinity (con Elasticsearch hay que subir `vm.max_map_count` a 262144). La interfaz se sirve en el puerto 80. Desde código requiere Go 1.27, Clang 20, LLD 20 y CMake ≥ 4.0. Admite modelos locales según su guía.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "La guía oficial explica cómo usar modelos locales de Ollama como LLM y embeddings.",
+     "orden_instalacion": "Ollama accesible desde los contenedores (no uses localhost); después añade el proveedor en RAGFlow."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Automatizar la carga de documentos o consultar bases de conocimiento a través de su API HTTP (combinación por arquitectura).",
+     "orden_instalacion": "Crea una clave de API en RAGFlow y úsala desde la pieza HTTP de Activepieces."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Observar las llamadas a LLM de los flujos (combinación por arquitectura; [DATO NO VERIFICADO: integración nativa]).",
+     "orden_instalacion": "Langfuse en marcha con claves de proyecto antes de configurarlo."
+    },
+    {
+     "id": "paddleocr",
+     "motivo": "Combinación recíproca: PaddleOCR lo enlaza como «El README cita RAGFlow entre los proyectos que lo integran».",
+     "orden_instalacion": "Orden indicado desde PaddleOCR: Revisa en RAGFlow qué versión de PaddleOCR usa antes de mezclar instalaciones.",
+     "reciproca_de": "paddleocr"
+    }
+   ],
+   "notas": "Alternativas (elige una): dify, lightrag. El puerto 80 puede chocar con otros servicios web del mismo servidor.",
+   "fuentes": [
+    "https://github.com/infiniflow/ragflow/blob/main/README.md",
+    "https://ragflow.io/docs/dev/deploy_local_llm",
+    "https://ragflow.io/docs/dev/http_api_reference"
+   ],
+   "github": {
+    "name_with_owner": "infiniflow/ragflow",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "latest_release": "v1.0.0 (2026-11-06)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "lightrag": {
+   "que_es": "Sistema RAG «simple y rápido» basado en grafos de conocimiento, del laboratorio HKUDS (Universidad de Hong Kong). MIT y muy activo; la última etiqueta es una release candidate (v1.5.8rc1) y en 2026 absorbió el proyecto multimodal RAG-Anything.",
+   "que_hace": "Extrae entidades y relaciones de los documentos para construir un grafo y combina recuperación por grafo y por vectores, con reranker, citas, borrado de documentos con regeneración del grafo y procesamiento multimodal (tablas, imágenes, ecuaciones) vía MinerU o Docling. Ofrece cuatro estrategias de troceado, LLM distintos por rol (extracción, consulta, palabras clave, visión), una interfaz web para insertar, consultar y visualizar el grafo, evaluación con RAGAS y trazas con Langfuse.",
+   "como_lo_hace": "Biblioteca y servidor Python (`pip install \"lightrag-hku[api]\"`, luego `lightrag-server`) con la WebUI precompilada. Por defecto guarda KV, vectores y grafo en archivos locales, solo apto para pruebas; para producción recomienda PostgreSQL, que cubre los cuatro tipos de almacenamiento, y admite MongoDB, OpenSearch, Neo4j, Milvus y otros. Un asistente despliega embeddings, reranker y almacenamiento con Docker. El modelo de embeddings debe fijarse antes de indexar.",
+   "combina_con": [
+    {
+     "id": "pgvector",
+     "motivo": "PostgreSQL (con pgvector para vectores) es el backend recomendado para producción.",
+     "orden_instalacion": "PostgreSQL con pgvector primero; configúralo en `.env` antes de indexar."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales para extracción, consulta y embeddings.",
+     "orden_instalacion": "Ollama primero; usa un modelo con contexto suficiente para la extracción del grafo."
+    },
+    {
+     "id": "docling",
+     "motivo": "Servicio de análisis multimodal soportado tras la integración de RAG-Anything.",
+     "orden_instalacion": "Arranca el servicio de Docling y apunta LightRAG a él."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Trazas integradas desde 2025.",
+     "orden_instalacion": "Configura las claves de Langfuse en el entorno del servidor."
+    },
+    {
+     "id": "ragas",
+     "motivo": "Evaluación integrada; la API devuelve los contextos recuperados para medir precisión.",
+     "orden_instalacion": "Después de tener datos indexados."
+    },
+    {
+     "id": "deeptutor",
+     "motivo": "Combinación recíproca: DeepTutor lo enlaza como «Integración nativa de modelos de rol LightRAG».",
+     "orden_instalacion": "Orden indicado desde DeepTutor: Configura LightRAG desde ajustes.",
+     "reciproca_de": "deeptutor"
+    }
+   ],
+   "notas": "Alternativas (elige una): graphrag, ragflow, pageindex. `lightrag-server` escucha en 0.0.0.0 sin autenticación por defecto: actívala antes de usarlo en red.",
+   "fuentes": [
+    "https://github.com/HKUDS/LightRAG/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "HKUDS/LightRAG",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v1.5.8rc1 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "pageindex": {
+   "que_es": "Sistema RAG «sin vectores» basado en razonamiento, de VectifyAI. La versión de código abierto es MIT (v0.7.0) y convive con productos en la nube: PageIndex Cloud, una API de búsqueda de páginas y una app de análisis de documentos.",
+   "que_hace": "Sustituye el índice vectorial por un índice jerárquico en árbol de cada documento y deja que un LLM razone recorriéndolo, como haría un experto con un informe largo, sin troceado ni base vectorial. Pensado para documentos profesionales largos (financieros, legales, técnicos) donde la similitud semántica no equivale a relevancia. El SDK indexa, recupera y chatea en local con tu clave o en la nube.",
+   "como_lo_hace": "SDK Python (`pip install -U pageindex`) con modo local y nube; en local usa por defecto «PageIndex Flash» para generar árboles rápido en PDF de texto y llama a un LLM (por ejemplo con `OPENAI_API_KEY`) o a Claude a través de Claude Code usando tu suscripción. Sus herramientas se integran en OpenAI Agents SDK, Claude Agent SDK u otros frameworks. La versión abierta está pensada para PDF con mucho texto.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Puede usar tu suscripción de Claude a través de Claude Code, sin clave de API.",
+     "orden_instalacion": "Claude Code con sesión iniciada antes de configurar PageIndex en ese modo."
+    },
+    {
+     "id": "openai-agents-python",
+     "motivo": "El README documenta añadir las herramientas de PageIndex al OpenAI Agents SDK.",
+     "orden_instalacion": "Instala ambos en el mismo entorno Python."
+    },
+    {
+     "id": "claude-agent-sdk-python",
+     "motivo": "Integración documentada con el Claude Agent SDK.",
+     "orden_instalacion": "Igual que arriba."
+    }
+   ],
+   "notas": "Alternativa (elige una): lightrag. Cada consulta implica razonamiento del LLM: más latencia y coste por pregunta que una búsqueda vectorial.",
+   "fuentes": [
+    "https://github.com/VectifyAI/PageIndex/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "VectifyAI/PageIndex",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.7.0 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "graphrag": {
+   "que_es": "Proyecto de investigación de Microsoft Research (MIT) que usa grafos de conocimiento para construir el contexto de respuesta de un LLM. Publicado en julio de 2024; según su README está mayormente en modo mantenimiento: no acepta PR ni funciones nuevas, solo correcciones y actualizaciones de dependencias. No es un producto con soporte oficial.",
+   "que_hace": "Es una canalización de datos que extrae información estructurada (entidades, relaciones, comunidades y sus resúmenes) de texto no estructurado con LLM y la usa para responder preguntas sobre datos privados, incluidas preguntas globales sobre todo el corpus. Incluye guía de ajuste de prompts, muy recomendada para obtener buenos resultados con datos propios.",
+   "como_lo_hace": "Paquete Python con CLI (`graphrag init`, indexado y consulta) que llama a los modelos a través de LiteLLM, lo que da acceso a más de 100 proveedores siempre que soporten salida estructurada; se ha probado sobre todo con la serie GPT-4 de OpenAI. El indexado puede ser caro: la documentación pide empezar con poco. Entre versiones menores hay que volver a ejecutar `graphrag init --force` y los cuadernos de migración.",
+   "combina_con": [
+    {
+     "id": "litellm",
+     "motivo": "GraphRAG usa LiteLLM como gestor de modelos según su documentación de configuración.",
+     "orden_instalacion": "Define el proveedor y modelo en `settings.yaml`; si usas el proxy de LiteLLM, apunta allí la URL base."
+    },
+    {
+     "id": "mcp-neo4j",
+     "motivo": "Cargar en Neo4j las tablas de entidades y relaciones generadas y explorarlas con un agente (combinación por arquitectura).",
+     "orden_instalacion": "Indexa primero; importa los Parquet resultantes a Neo4j y conecta el MCP con un usuario de solo lectura."
+    },
+    {
+     "id": "docling",
+     "motivo": "Convertir PDF y otros formatos a texto antes del indexado, que espera texto, CSV o JSON (combinación por arquitectura).",
+     "orden_instalacion": "Convierte primero y deja los archivos en la carpeta de entrada."
+    },
+    {
+     "id": "graphify",
+     "motivo": "Combinación recíproca: graphify lo enlaza como «Llevar el análisis de grafos a corpus documentales grandes. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde graphify: Usa Graphify para el código y GraphRAG para la documentación.",
+     "reciproca_de": "graphify"
+    },
+    {
+     "id": "scrapegraph-ai",
+     "motivo": "Combinación recíproca: Scrapegraph-ai lo enlaza como «Construir un grafo de conocimiento con los datos extraídos. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Scrapegraph-ai: Exporta los resultados como documentos para GraphRAG.",
+     "reciproca_de": "scrapegraph-ai"
+    },
+    {
+     "id": "kotaemon",
+     "motivo": "Combinación recíproca: kotaemon lo enlaza como «kotaemon soporta GraphRAG de Microsoft y nano-GraphRAG para preguntas sobre relaciones entre documentos».",
+     "orden_instalacion": "Orden indicado desde kotaemon: Instala graphrag o nano-graphrag según el README; después elige ese índice.",
+     "reciproca_de": "kotaemon"
+    }
+   ],
+   "notas": "Alternativas (elige una): graphiti, cognee, lightrag. Por su estado de mantenimiento, evalúa lightrag para proyectos nuevos.",
+   "fuentes": [
+    "https://github.com/microsoft/graphrag/blob/main/README.md",
+    "https://microsoft.github.io/graphrag/get_started/",
+    "https://microsoft.github.io/graphrag/config/models/"
+   ],
+   "github": {
+    "name_with_owner": "microsoft/graphrag",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v3.3.0 (2026-10-08)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "milvus": {
+   "que_es": "Base de datos vectorial de alto rendimiento y escalable, escrita en Go y C++, proyecto de la LF AI & Data Foundation bajo Apache 2.0. Madura y muy activa (v3.0.6), con versión gestionada en Zilliz Cloud.",
+   "que_hace": "Organiza y busca grandes volúmenes de datos no estructurados (texto, imágenes, multimodal) por similitud vectorial, con soporte de los principales tipos de índice, búsqueda de texto completo con BM25 mediante vectores dispersos y búsqueda híbrida. Sirve desde prototipos hasta despliegues distribuidos de miles de millones de vectores.",
+   "como_lo_hace": "Arquitectura distribuida nativa de Kubernetes que separa cómputo y almacenamiento, con aceleración por CPU y GPU. Se usa con el SDK `pymilvus` (`MilvusClient`); Milvus Lite (`pymilvus[milvus-lite]`) crea una base local en un archivo para empezar, y para servidor se despliega en Docker (standalone) o en Kubernetes.",
+   "combina_con": [
+    {
+     "id": "anything-llm",
+     "motivo": "Base vectorial soportada por AnythingLLM.",
+     "orden_instalacion": "Milvus primero; configura su URL en AnythingLLM antes de ingerir documentos."
+    },
+    {
+     "id": "lightrag",
+     "motivo": "Backend de almacenamiento vectorial soportado.",
+     "orden_instalacion": "Milvus primero; fija el modelo de embeddings antes de indexar."
+    },
+    {
+     "id": "llama-index",
+     "motivo": "Integración documentada en la web de Milvus.",
+     "orden_instalacion": "Instala el paquete de integración de LlamaIndex y apunta a Milvus Lite o al servidor."
+    },
+    {
+     "id": "langchain4j",
+     "motivo": "Combinación recíproca: langchain4j lo enlaza como «Almacén vectorial alternativo para volúmenes grandes (módulo oficial)».",
+     "orden_instalacion": "Orden indicado desde langchain4j: Elige uno de los almacenes vectoriales; despliega Milvus y añade su módulo.",
+     "reciproca_de": "langchain4j"
+    }
+   ],
+   "notas": "Alternativas (elige una): qdrant, chroma, pgvector.",
+   "fuentes": [
+    "https://github.com/milvus-io/milvus/blob/master/README.md",
+    "https://milvus.io/docs/integrate_with_llamaindex.md"
+   ],
+   "github": {
+    "name_with_owner": "milvus-io/milvus",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Go",
+    "latest_release": "v3.0.6 (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "faiss": {
+   "que_es": "Biblioteca de Meta (Facebook Research) para búsqueda de similitud y agrupamiento de vectores densos, escrita en C++ con interfaz Python. MIT, madura y activa (v1.16.0); es una biblioteca, no un servidor de base de datos.",
+   "que_hace": "Busca en conjuntos de vectores de cualquier tamaño, incluso mayores que la RAM, con distancias L2, producto interno o coseno. Ofrece búsqueda exacta y aproximada, índices comprimidos (cuantización, códigos binarios) que no necesitan guardar los vectores originales, y código de evaluación y ajuste de parámetros.",
+   "como_lo_hace": "Implementación en C++ con wrappers de Python/NumPy y una implementación GPU (CUDA) que funciona como reemplazo directo de los índices de CPU (por ejemplo `GpuIndexFlatL2`) y admite varias GPU. Se instala con paquetes precompilados de conda (`faiss-cpu`, `faiss-gpu`) o compilando desde código.",
+   "combina_con": [
+    {
+     "id": "langchain",
+     "motivo": "Almacén vectorial en memoria muy usado en LangChain (combinación por arquitectura; integración ampliamente documentada por LangChain).",
+     "orden_instalacion": "Instala faiss-cpu o faiss-gpu antes del paquete de integración."
+    },
+    {
+     "id": "llama-index",
+     "motivo": "Índice local para prototipos de RAG (combinación por arquitectura).",
+     "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "transformers",
+     "motivo": "Generar embeddings con modelos de Hugging Face e indexarlos en FAISS (combinación por arquitectura).",
+     "orden_instalacion": "Fija el modelo de embeddings: su dimensión define el índice."
+    }
+   ],
+   "notas": "Alternativas (elige una): qdrant, chroma. Al no ser servidor, no trae persistencia, filtros por metadatos ni control de acceso.",
+   "fuentes": [
+    "https://github.com/facebookresearch/faiss/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "facebookresearch/faiss",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MIT",
+    "primary_language": "C++",
+    "latest_release": "v1.16.0 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "chroma": {
+   "que_es": "Infraestructura de datos de código abierto para IA (base de datos vectorial) de Chroma, con núcleo en Rust bajo Apache 2.0. Muy activa, publica versiones de PyPI y npm cada lunes; ofrece Chroma Cloud como servicio gestionado.",
+   "que_hace": "Guarda documentos y embeddings y permite búsqueda vectorial, híbrida y de texto completo con una API mínima de cuatro funciones. Sirve para prototipos de RAG en memoria y para servidores persistentes.",
+   "como_lo_hace": "Cliente Python (`pip install chromadb`) o JavaScript (`npm install chromadb`); funciona en memoria dentro del proceso, con persistencia local o en modo cliente-servidor con `chroma run --path <ruta>`.",
+   "combina_con": [
+    {
+     "id": "mempalace",
+     "motivo": "Backend de recuperación por defecto de MemPalace.",
+     "orden_instalacion": "Se usa embebido; un servidor Chroma aparte solo si lo compartes."
+    },
+    {
+     "id": "anything-llm",
+     "motivo": "Base vectorial soportada (Chroma y ChromaCloud).",
+     "orden_instalacion": "Servidor Chroma primero; configura su URL en AnythingLLM."
+    },
+    {
+     "id": "langchain",
+     "motivo": "Integración documentada por Chroma.",
+     "orden_instalacion": "Instala el paquete de integración de LangChain para Chroma en el mismo entorno."
+    }
+   ],
+   "notas": "Alternativas (elige una): qdrant, pgvector, milvus, faiss.",
+   "fuentes": [
+    "https://github.com/chroma-core/chroma/blob/main/README.md",
+    "https://docs.trychroma.com/integrations/frameworks/langchain"
+   ],
+   "github": {
+    "name_with_owner": "chroma-core/chroma",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "Apache-2.0",
+    "primary_language": "Rust",
+    "latest_release": "1.5.9 (2026-05-05)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "pgvector": {
+   "que_es": "Extensión de código abierto de PostgreSQL para búsqueda de similitud vectorial, de Andrew Kane. Se distribuye con una licencia de estilo PostgreSQL (GitHub la marca como no estándar); madura y activa (v0.8.7), sin releases en GitHub.",
+   "que_hace": "Guarda vectores junto al resto de tus datos y ofrece búsqueda exacta y aproximada, vectores de precisión simple, media, binarios y dispersos, y distancias L2, producto interno, coseno, L1, Hamming y Jaccard. Mantiene ACID, recuperación a un punto en el tiempo y JOIN de Postgres, y permite escalar con cuantización.",
+   "como_lo_hace": "Extensión en C para Postgres 13+ que se compila e instala o se obtiene por Docker, Homebrew, PGXN, APT, Yum, conda-forge y otros (viene preinstalada en Postgres.app). Se activa con `CREATE EXTENSION vector;` en cada base y ofrece índices HNSW (mejor relación velocidad/recuperación, construcción más lenta) e IVFFlat. Funciona con cualquier lenguaje con cliente Postgres.",
+   "combina_con": [
+    {
+     "id": "supabase",
+     "motivo": "Supabase incluye pgvector como extensión documentada.",
+     "orden_instalacion": "Actívala desde el panel o con SQL en el proyecto de Supabase."
+    },
+    {
+     "id": "anything-llm",
+     "motivo": "PGVector es una base vectorial soportada.",
+     "orden_instalacion": "Postgres con la extensión activa antes de configurar AnythingLLM."
+    },
+    {
+     "id": "librechat",
+     "motivo": "El Docker Compose de LibreChat usa una imagen pgvector para su RAG API.",
+     "orden_instalacion": "Ya viene incluido; no instales otro Postgres salvo que quieras externalizarlo."
+    },
+    {
+     "id": "lightrag",
+     "motivo": "PostgreSQL es el backend recomendado para producción en LightRAG.",
+     "orden_instalacion": "Activa la extensión antes de arrancar LightRAG con el backend de Postgres."
+    },
+    {
+     "id": "langchain4j",
+     "motivo": "Combinación recíproca: langchain4j lo enlaza como «Embeddings en PostgreSQL mediante el módulo oficial de pgvector».",
+     "orden_instalacion": "Orden indicado desde langchain4j: Habilita la extensión en Postgres y añade `langchain4j-pgvector`.",
+     "reciproca_de": "langchain4j"
+    }
+   ],
+   "notas": "Alternativas (elige una): qdrant, chroma, milvus.",
+   "fuentes": [
+    "https://github.com/pgvector/pgvector/blob/master/README.md",
+    "https://supabase.com/docs/guides/database/extensions/pgvector"
+   ],
+   "github": {
+    "name_with_owner": "pgvector/pgvector",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "C",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "turbovec": {
+   "que_es": "Índice vectorial en proceso para Python y Rust de Ryan Codrai, MIT, basado en el método TurboQuant de Google Research. Reciente y sin releases formales en GitHub.",
+   "que_hace": "Guarda cada vector con 2 o 4 bits por dimensión y busca directamente sobre la forma comprimida; según el README, 10 millones de embeddings de 768 dimensiones pasan de 31 GB a 4 GB y la búsqueda es 4,4 veces más rápida que FAISS FastScan con la misma recuperación [DATO NO VERIFICADO: benchmark propio]. No necesita entrenamiento ni reconstrucciones, admite altas y bajas inmediatas, filtrado por listas de ids o máscaras y persistencia incremental segura ante fallos.",
+   "como_lo_hace": "Biblioteca nativa (no servicio) instalable con `pip install turbovec` o `cargo add turbovec`; trabaja con matrices `float32` y puntuaciones de producto interno (normaliza para coseno). `IdMapIndex` mantiene ids propios estables. Incluye reemplazos directos de los almacenes en memoria de LangChain, LlamaIndex y Haystack.",
+   "combina_con": [
+    {
+     "id": "langchain",
+     "motivo": "Integración oficial (`turbovec[langchain]`) como almacén en memoria.",
+     "orden_instalacion": "Instala el extra y sustituye el almacén en memoria."
+    },
+    {
+     "id": "llama-index",
+     "motivo": "Integración oficial (`turbovec[llama-index]`).",
+     "orden_instalacion": "Igual que arriba."
+    },
+    {
+     "id": "haystack",
+     "motivo": "Integración oficial (`turbovec[haystack]`).",
+     "orden_instalacion": "Igual que arriba."
+    }
+   ],
+   "fuentes": [
+    "https://github.com/RyanCodrai/turbovec/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "RyanCodrai/turbovec",
+    "archived": false,
+    "pushed_at": "2026-10-07",
+    "license": "MIT",
+    "primary_language": "Rust",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "agentic-rag-for-dummies": {
+   "que_es": "Proyecto educativo de código abierto (MIT) de Giovanni Pasqualino que enseña a construir un sistema de RAG agéntico modular con LangGraph. Activo (v2.3.1), con cuaderno interactivo y proyecto ejecutable.",
+   "que_hace": "Muestra paso a paso indexación jerárquica (busca en trozos pequeños y recupera el trozo padre), memoria de conversación, aclaración de consultas ambiguas con intervención humana, orquestación con agentes, descomposición map-reduce en subconsultas paralelas, autocorrección, compresión de contexto, observabilidad con Langfuse y evaluación con RAGAS.",
+   "como_lo_hace": "Ofrece dos rutas: un cuaderno Jupyter para aprender y un proyecto modular donde se cambian proveedor de LLM, modelo de embeddings, conversor de PDF y flujo del agente. La app ejecutable usa Ollama por defecto (por ejemplo `granite4.1:8b`) y Qdrant como base vectorial, y puede adaptarse a cualquier proveedor de LangChain.",
+   "combina_con": [
+    {
+     "id": "langgraph",
+     "motivo": "Orquesta todo el flujo de recuperación y razonamiento.",
+     "orden_instalacion": "Se instala con las dependencias del proyecto."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Proveedor por defecto de la app ejecutable.",
+     "orden_instalacion": "Ollama con el modelo descargado antes de lanzar la app."
+    },
+    {
+     "id": "qdrant",
+     "motivo": "Base vectorial del proyecto.",
+     "orden_instalacion": "Sigue la configuración del repositorio (local o servidor) antes de indexar."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Observabilidad de llamadas, herramientas y grafo.",
+     "orden_instalacion": "Opcional; configura las claves en el entorno."
+    },
+    {
+     "id": "ragas",
+     "motivo": "Evaluación de recuperación y respuestas.",
+     "orden_instalacion": "Después de tener un corpus indexado."
+    }
+   ],
+   "notas": "Es material de aprendizaje y referencia, no un producto para producción.",
+   "fuentes": [
+    "https://github.com/GiovanniPasq/agentic-rag-for-dummies/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "GiovanniPasq/agentic-rag-for-dummies",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "MIT",
+    "primary_language": "Jupyter Notebook",
+    "latest_release": "v2.3.1 (2026-10-17)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "onyx": {
+   "que_es": "Capa de conocimiento y contexto para equipos y agentes de IA de Onyx (antes Danswer). La Community Edition es MIT y la Enterprise Edition añade funciones para grandes organizaciones (GitHub marca la licencia como no estándar por esa mezcla); muy activa (v5.1.2).",
+   "que_hace": "Conecta más de 50 aplicaciones, indexa su contenido con metadatos y permisos y ofrece RAG agéntico con índice híbrido, investigación profunda, agentes personalizados con acciones externas y MCP, búsqueda web (Serper, Google PSE, Brave, SearXNG; rastreador propio, Firecrawl o Exa), sandbox de código, artefactos y bots de Slack y Discord. Defiende que su índice da contexto más fiable, rápido y barato que encadenar búsquedas MCP.",
+   "como_lo_hace": "Aplicación Python con contenedores de trabajo en segundo plano que sincronizan los conectores. Se instala con un script de una línea o se despliega en Docker, Kubernetes o Helm/Terraform, con guías para las principales nubes. Admite proveedores autoalojados (Ollama, LiteLLM, vLLM) y propietarios (Anthropic, OpenAI, Gemini).",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Proveedor autoalojado soportado.",
+     "orden_instalacion": "Ollama accesible desde los contenedores antes de configurarlo."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Proveedor soportado para centralizar modelos.",
+     "orden_instalacion": "LiteLLM primero; regístralo como proveedor."
+    },
+    {
+     "id": "searxng",
+     "motivo": "Motor de búsqueda web soportado.",
+     "orden_instalacion": "SearXNG con salida JSON activada antes de configurarlo."
+    },
+    {
+     "id": "firecrawl",
+     "motivo": "Rastreador web soportado como alternativa al propio.",
+     "orden_instalacion": "Clave o instancia de Firecrawl antes de activarlo."
+    }
+   ],
+   "notas": "Alternativa (elige una): anything-llm. Respeta los permisos de las fuentes; revisa qué conectores sincronizan datos sensibles.",
+   "fuentes": [
+    "https://github.com/onyx-dot-app/onyx/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "onyx-dot-app/onyx",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "v5.1.2 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

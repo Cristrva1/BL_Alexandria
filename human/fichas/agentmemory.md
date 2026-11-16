@@ -29,6 +29,7 @@ Requiere Node.js 20+; se ejecuta con `npx -y @agentmemory/agentmemory@latest`. S
 | [Claude Code](claude-code.md) | Captura con hooks y plugins nativos. | Arranca agentmemory primero y luego conecta el agente según su guía. |
 | [Gemini CLI](gemini-cli.md) | Agente soportado de forma nativa. | Igual que arriba. |
 | [hermes-agent](hermes-agent.md) | Agente soportado de forma nativa. | Igual que arriba. |
+| [DeepSeek Harness (DSH)](deepseek-harness.md) | agentmemory declara capturar sesiones de DeepSeek Harness para que otro agente retome historial y lecciones. | Conecta agentmemory después de configurar DSH. |
 
 **Notas:** Alternativas (elige una): engram, supermemory, claude-mem. No expongas los puertos 3111/3113 fuera de loopback sin autenticación.
 

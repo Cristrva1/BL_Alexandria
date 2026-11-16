@@ -29,6 +29,9 @@ Ofrece una TUI interactiva (por defecto), un modo CLI clásico, un panel web y u
 | [Ollama](ollama.md) | Proveedor local soportado: elige con llmfit el modelo que cabe y descárgalo en Ollama. | Ollama instalado; ejecuta llmfit para decidir el modelo antes de `ollama pull`. |
 | [llama.cpp](llama-cpp.md) | Proveedor local soportado para descargar y servir el GGUF recomendado. | Igual: primero la recomendación, luego la descarga. |
 | [vLLM](vllm.md) | El README describe comprobar si un modelo cabe en varias máquinas con Ray y vLLM antes de lanzarlo. | Usa llmfit para planificar; despliega vLLM después. |
+| [airllm](airllm.md) | Combinación recíproca: airllm lo enlaza como «Comprobar si un modelo cabe en memoria de forma normal antes de recurrir a la carga por capas, mucho más lenta (combinación por arquitectura)». | Orden indicado desde airllm: Ejecuta llmfit primero; usa AirLLM solo si el modelo no cabe. |
+| [Jan](jan.md) | Combinación recíproca: Jan lo enlaza como «Elegir qué modelo y cuantización caben en tu equipo antes de descargarlos en Jan (combinación por arquitectura)». | Orden indicado desde Jan: Ejecuta llmfit primero; descarga en Jan el modelo recomendado. |
+| [Text Generation WebUI](textgen.md) | Combinación recíproca: Text Generation WebUI lo enlaza como «Saber qué modelo y cuantización caben antes de descargar (combinación por arquitectura)». | Orden indicado desde Text Generation WebUI: Ejecuta llmfit primero. |
 
 **Notas:** Las estimaciones de velocidad son proyecciones; contrástalas con la función de benchmark.
 

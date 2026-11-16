@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+VoiceStudio (antes OmniVoice Studio; repo debpalash/VoiceStudio), estudio de voz con IA que funciona en el dispositivo. La app es AGPL-3.0; los pesos, voces y salidas tienen licencias propias, y hay ediciones Pro y Cloud de pago con licencia comercial. Creado en abril de 2026, tiene ~111k estrellas, una cifra inusual.
+
+## ¿Qué hace?
+
+Clona, diseña, dobla, dicta, transcribe y narra en 646 idiomas, según el proyecto, con modelos descargables desde un gestor de modelos.
+
+## ¿Cómo lo hace?
+
+Se instala con `brew install --cask debpalash/tap/voicestudio`, con los instaladores de escritorio o con Docker. Funciona sin cuenta.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [whisperX](whisperx.md) | Transcripción alineada para doblaje. (combinación por arquitectura) | Prepara transcripciones antes de doblar. |
+| [FFmpeg](ffmpeg.md) | Procesado de audio y vídeo. (combinación por arquitectura) | Convierte y monta los resultados. |
+| [Kokoro](kokoro.md) | Modelo TTS ligero como alternativa local. (combinación por arquitectura) | Compara la calidad de narración. |
+
+**Notas:** Alternativas (elige una): videolingo. Recuento de estrellas inusual para su edad.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.5.8 (2026-11-12) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/debpalash/VoiceStudio/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El nombre actual es VoiceStudio; pedir a Claude o Codex ayuda para instalar no es una integración de sus planes ni garantiza igual calidad en todos los idiomas anunciados |
 | Coste | El coste depende del proveedor o la ruta. La app AGPL puede usarse incluso comercialmente bajo sus términos; existe una edición cerrada comercial y pesos o voces con licencias separadas |
 | Equipo | Preparación según la ruta elegida. Instalador VoiceStudio para tu sistema; modelos; almacenamiento; voces autorizadas |
-
-El nombre actual es VoiceStudio; pedir a Claude o Codex ayuda para instalar no es una integración de sus planes ni garantiza igual calidad en todos los idiomas anunciados
-
-## Qué puedes hacer con él
-
-App local de voz con modelos descargables,edición AGPL y una oferta comercial separada.
-
-## Por qué destaca
-
-Usos propuestos: Preparar una narración local; Probar transcripción o doblaje de material propio.
-
-## Cómo funciona
 
 El nombre actual es VoiceStudio; pedir a Claude o Codex ayuda para instalar no es una integración de sus planes ni garantiza igual calidad en todos los idiomas anunciados
 
@@ -87,12 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Instalador VoiceStudio para tu sistema; modelos; almacenamiento; voces autorizadas
 - **Etiquetas:** `tts` `audio` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [whisperX](whisperx.md) | 25.3k | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
 
 ## Alternativas (elige una)
 

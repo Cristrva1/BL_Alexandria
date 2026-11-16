@@ -10,6 +10,35 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Proyecto de investigación de Microsoft Research (MIT) que usa grafos de conocimiento para construir el contexto de respuesta de un LLM. Publicado en julio de 2024; según su README está mayormente en modo mantenimiento: no acepta PR ni funciones nuevas, solo correcciones y actualizaciones de dependencias. No es un producto con soporte oficial.
+
+## ¿Qué hace?
+
+Es una canalización de datos que extrae información estructurada (entidades, relaciones, comunidades y sus resúmenes) de texto no estructurado con LLM y la usa para responder preguntas sobre datos privados, incluidas preguntas globales sobre todo el corpus. Incluye guía de ajuste de prompts, muy recomendada para obtener buenos resultados con datos propios.
+
+## ¿Cómo lo hace?
+
+Paquete Python con CLI (`graphrag init`, indexado y consulta) que llama a los modelos a través de LiteLLM, lo que da acceso a más de 100 proveedores siempre que soporten salida estructurada; se ha probado sobre todo con la serie GPT-4 de OpenAI. El indexado puede ser caro: la documentación pide empezar con poco. Entre versiones menores hay que volver a ejecutar `graphrag init --force` y los cuadernos de migración.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [litellm](litellm.md) | GraphRAG usa LiteLLM como gestor de modelos según su documentación de configuración. | Define el proveedor y modelo en `settings.yaml`; si usas el proxy de LiteLLM, apunta allí la URL base. |
+| [mcp-neo4j](mcp-neo4j.md) | Cargar en Neo4j las tablas de entidades y relaciones generadas y explorarlas con un agente (combinación por arquitectura). | Indexa primero; importa los Parquet resultantes a Neo4j y conecta el MCP con un usuario de solo lectura. |
+| [Docling](docling.md) | Convertir PDF y otros formatos a texto antes del indexado, que espera texto, CSV o JSON (combinación por arquitectura). | Convierte primero y deja los archivos en la carpeta de entrada. |
+| [graphify](graphify.md) | Combinación recíproca: graphify lo enlaza como «Llevar el análisis de grafos a corpus documentales grandes. (combinación por arquitectura)». | Orden indicado desde graphify: Usa Graphify para el código y GraphRAG para la documentación. |
+| [Scrapegraph-ai](scrapegraph-ai.md) | Combinación recíproca: Scrapegraph-ai lo enlaza como «Construir un grafo de conocimiento con los datos extraídos. (combinación por arquitectura)». | Orden indicado desde Scrapegraph-ai: Exporta los resultados como documentos para GraphRAG. |
+| [kotaemon](kotaemon.md) | Combinación recíproca: kotaemon lo enlaza como «kotaemon soporta GraphRAG de Microsoft y nano-GraphRAG para preguntas sobre relaciones entre documentos». | Orden indicado desde kotaemon: Instala graphrag o nano-graphrag según el README; después elige ese índice. |
+
+**Notas:** Alternativas (elige una): graphiti, cognee, lightrag. Por su estado de mantenimiento, evalúa lightrag para proyectos nuevos.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.3.0 (2026-10-08) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/graphrag/blob/main/README.md) · [2](https://microsoft.github.io/graphrag/get_started/) · [3](https://microsoft.github.io/graphrag/config/models/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | Modelo local no documentado. Proyecto de investigación en mantenimiento: el autor no prevé nuevas funciones ni nuevas PRs, aunque mantiene correcciones y dependencias |
 | Coste | El coste depende del proveedor o la ruta. La indexación usa LLM y puede ser costosa antes de la primera consulta; calcula un lote pequeño |
 | Equipo | Preparación según la ruta elegida. Python según guía; modelo y embeddings; corpus pequeño; presupuesto de indexación |
-
-Proyecto de investigación en mantenimiento: el autor no prevé nuevas funciones ni nuevas PRs, aunque mantiene correcciones y dependencias
-
-## Qué puedes hacer con él
-
-Sistema de RAG de Microsoft que recupera información sobre un grafo de conocimiento extraído del corpus, en lugar de buscar solo fragmentos sueltos por similitud.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar relaciones de un corpus; Comparar búsqueda local y resumen global.
-
-## Cómo funciona
 
 Proyecto de investigación en mantenimiento: el autor no prevé nuevas funciones ni nuevas PRs, aunque mantiene correcciones y dependencias
 
@@ -87,14 +104,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python según guía; modelo y embeddings; corpus pequeño; presupuesto de indexación
 - **Etiquetas:** `rag` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [graphify](graphify.md) | 148k | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. |
-| [mcp-neo4j](mcp-neo4j.md) | 989 | Servidores experimentales de Neo4j Labs para consultar grafos, memoria y recursos Aura desde clientes MCP. |
-| [turbovec](turbovec.md) | 17.5k | Librería de búsqueda vectorial rápida basada en la cuantización TurboQuant, pensada como capa de recuperación embebida. |
 
 ## Alternativas (elige una)
 
