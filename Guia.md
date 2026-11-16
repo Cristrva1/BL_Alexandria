@@ -3677,7 +3677,13 @@ Extracción de texto, OCR, conversión y gestión de PDF. Empieza por el formato
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 1.8k<br>
 **Qué es:** Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://docs.pdfding.com/getting_started/docker/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run --name pdfding \
+    -p 8000:8000 \
+    -v sqlite_data:/home/nonroot/pdfding/db -v media:/home/nonroot/pdfding/media \
+    -e HOST_NAME=127.0.0.1 -e SECRET_KEY=some_secret \
+    -e CSRF_COOKIE_SECURE=FALSE -e SESSION_COOKIE_SECURE=FALSE \
+    -d \
+    mrmn/pdfding:latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [OCRmyPDF](human/fichas/ocrmypdf.md) · [paperless-ngx](human/fichas/paperless-ngx.md) · [coolify](human/fichas/coolify.md)<br>
 **Más:** [ficha completa](human/fichas/pdfding.md) · [GitHub](https://codeberg.org/mrmn/PdfDing)

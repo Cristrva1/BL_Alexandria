@@ -51556,15 +51556,16 @@
           "cuenta de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "docker run --name pdfding \\\n    -p 8000:8000 \\\n    -v sqlite_data:/home/nonroot/pdfding/db -v media:/home/nonroot/pdfding/media \\\n    -e HOST_NAME=127.0.0.1 -e SECRET_KEY=some_secret \\\n    -e CSRF_COOKIE_SECURE=FALSE -e SESSION_COOKIE_SECURE=FALSE \\\n    -d \\\n    mrmn/pdfding:latest",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://docs.pdfding.com/getting_started/docker/",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de la documentación oficial enlazada desde el README (sección «Docker»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Sube un PDF ficticio, añade una etiqueta y continúa su lectura en otra sesión",
@@ -51611,9 +51612,9 @@
       "desc": "Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lectura; se desarrolla en Codeberg.",
       "stack": "Docker o entorno de la guía; volumen para documentos; cuenta de prueba",
       "repo": "https://codeberg.org/mrmn/PdfDing",
-      "install": "Seguir la instalación original: https://docs.pdfding.com/getting_started/docker/",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "docker run --name pdfding \\\n    -p 8000:8000 \\\n    -v sqlite_data:/home/nonroot/pdfding/db -v media:/home/nonroot/pdfding/media \\\n    -e HOST_NAME=127.0.0.1 -e SECRET_KEY=some_secret \\\n    -e CSRF_COOKIE_SECURE=FALSE -e SESSION_COOKIE_SECURE=FALSE \\\n    -d \\\n    mrmn/pdfding:latest",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -95153,16 +95154,16 @@
           "proyecto de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Revisa la guía de despliegue o API y evalúa una función pequeña con tests conocidos",

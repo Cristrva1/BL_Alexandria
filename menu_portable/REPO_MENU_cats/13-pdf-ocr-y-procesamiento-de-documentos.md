@@ -415,13 +415,19 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pdf,docker
 - Equipo: Preparación según la ruta elegida. Docker o entorno de la guía; volumen para documentos; cuenta de prueba
 **Repo:** https://codeberg.org/mrmn/PdfDing
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.pdfding.com/getting_started/docker/
+docker run --name pdfding \
+    -p 8000:8000 \
+    -v sqlite_data:/home/nonroot/pdfding/db -v media:/home/nonroot/pdfding/media \
+    -e HOST_NAME=127.0.0.1 -e SECRET_KEY=some_secret \
+    -e CSRF_COOKIE_SECURE=FALSE -e SESSION_COOKIE_SECURE=FALSE \
+    -d \
+    mrmn/pdfding:latest
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Organizar una colección de PDFs; Consultar documentos desde varios dispositivos
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo

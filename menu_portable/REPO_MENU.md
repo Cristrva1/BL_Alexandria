@@ -586,7 +586,7 @@ Detalle: `REPO_MENU_cats/13-pdf-ocr-y-procesamiento-de-documentos.md`
 - `pdf-craft` [L|hyb|M|+] — Herramienta para convertir libros escaneados en PDF a documentos editables mediante rutas de OCR y procesamien — tags: ocr,library,python — prov: local — alt: marker
 - `pdf-inspector` [L|loc|E|+] — Librería en Rust que clasifica PDFs (texto o escaneado) y extrae su texto con coordenadas. — tags: pdf,docs,rust
 - `pdfcraft` [A|loc|E|+] — Conjunto de herramientas PDF gratuitas, privadas y basadas en navegador para combinar, dividir, comprimir y co — tags: pdf,typescript — alt: stirling-pdf
-- `pdfding` [A|loc|E|?] — Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lec — tags: pdf,docker
+- `pdfding` [A|loc|E|+] — Gestor, visor y editor de PDF autoalojado (AGPL-3.0) con colecciones, etiquetas, anotaciones y progreso de lec — tags: pdf,docker
 - `pdfmathtranslate` [A|hyb|E|+] — Traduce papers en PDF conservando el formato, fórmulas y figuras, con versión bilingüe. — tags: pdf,docs,python — prov: openai,google,local
 - `stirling-pdf` [A|loc|E|+] — Aplicación web auto-hospedada para editar, unir, dividir, convertir y firmar PDFs. — tags: pdf,docker — alt: pdfcraft
 - `surya` [R|loc|M|+] — OCR multilingüe y análisis de layout con un VLM de 689M parámetros: orden de lectura, tablas en HTML y más de  — tags: ocr,python,pdf,model
