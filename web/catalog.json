@@ -48185,7 +48185,11 @@
       "desc": "Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar inferencia por carga de capas; Probar un modelo que supera la VRAM disponible",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "llmfit",
+        "transformers",
+        "peft"
+      ],
       "alt": [],
       "stack": "Python; GPU o backend compatible; disco y memoria para capas y pesos",
       "repo_url": "https://github.com/lyogavin/airllm",
@@ -48297,6 +48301,44 @@
       "stars": 42405,
       "license": "Apache-2.0",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "llmfit",
+          "motivo": "Comprobar si un modelo cabe en memoria de forma normal antes de recurrir a la carga por capas, mucho más lenta (combinación por arquitectura).",
+          "orden_instalacion": "Ejecuta llmfit primero; usa AirLLM solo si el modelo no cabe."
+        },
+        {
+          "id": "transformers",
+          "motivo": "AirLLM se usa de forma similar a un modelo de transformers y algunos modelos requieren versiones recientes de esta biblioteca.",
+          "orden_instalacion": "Instala la versión de transformers que exige el modelo antes de AirLLM."
+        },
+        {
+          "id": "peft",
+          "motivo": "Entrenar adaptadores con pesos congelados por capas (combinación por arquitectura; [DATO NO VERIFICADO: si usa PEFT internamente]).",
+          "orden_instalacion": "Fija las versiones de PEFT y transformers en el mismo entorno."
+        }
+      ],
+      "que_es": "Biblioteca Python de código abierto (Apache 2.0) de lyogavin para reducir la memoria de inferencia de LLM grandes. Existe desde 2023 y publicó la v4.0.0 en 2026; el README incluye enlaces patrocinados ajenos al proyecto.",
+      "que_hace": "Permite ejecutar modelos de 70B en una sola GPU de 4 GB sin cuantización, destilación ni poda, según el README, que también afirma ejecutar modelos mucho mayores (DeepSeek-V3 671B en unos 12 GB, Kimi K3 con muy poca VRAM) [DATO NO VERIFICADO: cifras de memoria y velocidad]. Desde 2026 también entrena adaptadores cargando los pesos congelados capa a capa. Funciona en macOS además de en GPU NVIDIA.",
+      "como_lo_hace": "Divide el modelo en capas guardadas en disco y las carga una a una durante la inferencia (con streaming por experto en modelos MoE), a cambio de mucha más latencia que una carga completa. Se instala con `pip install airllm` y se usa con `AutoModel` pasando el ID de Hugging Face o una ruta local; admite compresión opcional y FP8. Requiere espacio en disco para los fragmentos por capa.",
+      "descripcion_fuentes": [
+        "https://github.com/lyogavin/airllm/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "04-llm-local-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "lyogavin/airllm",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "Apache-2.0",
+        "primary_language": "Jupyter Notebook",
+        "latest_release": "v4.0.0 (2026-09-05)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes.",
       "body": "Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes.",
       "install": {
@@ -48305,7 +48347,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "llmfit",
+          "label": "llmfit"
+        },
+        {
+          "id": "transformers",
+          "label": "transformers"
+        },
+        {
+          "id": "peft",
+          "label": "peft"
+        }
+      ],
       "areas": [
         "ia-local"
       ],
@@ -49215,7 +49270,11 @@
       "desc": "Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Experimentar con inferencia de modelos MoE; Evaluar un backend de aceleración local",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "open-webui",
+        "litellm",
+        "codex"
+      ],
       "alt": [],
       "stack": "Python y uv; acelerador compatible; pesos y espacio según modelo",
       "repo_url": "https://github.com/FlashML-org/FreeToken",
@@ -49327,6 +49386,45 @@
       "stars": 17191,
       "license": "Apache-2.0",
       "homepage": "flashml.ai",
+      "combina_con": [
+        {
+          "id": "open-webui",
+          "motivo": "Interfaz de chat sobre su API compatible con OpenAI (combinación por arquitectura).",
+          "orden_instalacion": "`ft serve` primero; registra http://127.0.0.1:1919/v1 en Open WebUI."
+        },
+        {
+          "id": "litellm",
+          "motivo": "Poner el motor local detrás de un proxy junto a proveedores en la nube (combinación por arquitectura).",
+          "orden_instalacion": "FreeToken primero; añádelo como modelo compatible con OpenAI."
+        },
+        {
+          "id": "codex",
+          "motivo": "Su soporte de la API Responses permite apuntar agentes que la usan a un modelo local (combinación por arquitectura; [DATO NO VERIFICADO: compatibilidad completa con Codex]).",
+          "orden_instalacion": "Configura un proveedor personalizado con la URL base del servidor."
+        }
+      ],
+      "que_es": "Motor de servicio de modelos Mixture-of-Experts (MoE) para hardware de consumo, de FlashML, con artículo académico asociado. Apache 2.0, reciente y activo (v0.2.2).",
+      "que_hace": "Busca ejecutar modelos MoE abiertos de escala frontera (el README cita más de 290B parámetros, como DeepSeek-V4-Flash, Qwen3.6-35B-A3B o GLM-5.2) en PCs de juego y portátiles a velocidad interactiva [DATO NO VERIFICADO: rendimiento]. Incluye app de escritorio para Windows y Linux con interfaz para ejecutar modelos, chatear y ajustar el motor, y una CLI.",
+      "como_lo_hace": "Trata GPU, CPU, memoria del host y almacenamiento como un sistema de memoria jerárquico: ejecución conjunta CPU–GPU adaptada al ancho de banda, prefill en streaming con doble búfer, caché LRU global de expertos, puntos de control semánticos de la caché KV para ediciones de contexto agénticas y reasignación de VRAM en caliente. Admite MXFP4, NVFP4, FP8, BF16 y GGUF en GPU NVIDIA RTX 30/40/50. Se instala con `uv pip install \"freetoken[accel]\"`; `ft serve` expone una API compatible con OpenAI (`/v1/chat/completions`, `/v1/responses`) en 127.0.0.1:1919.",
+      "descripcion_fuentes": [
+        "https://github.com/FlashML-org/FreeToken/blob/main/README.md",
+        "https://github.com/FlashML-org/FreeToken/blob/main/docs/quickstart.md"
+      ],
+      "descripcion_revision": {
+        "batch": "04-llm-local-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "FlashML-org/FreeToken",
+        "archived": false,
+        "pushed_at": "2026-11-16",
+        "license": "Apache-2.0",
+        "primary_language": "Python",
+        "latest_release": "v0.2.2 (2026-11-09)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto.",
       "body": "Herramientas para servir modelos de IA en hardware local mediante las rutas de inferencia y aceleración del proyecto.",
       "install": {
@@ -49335,7 +49433,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "open-webui",
+          "label": "open-webui"
+        },
+        {
+          "id": "litellm",
+          "label": "litellm"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        }
+      ],
       "areas": [
         "ia-local"
       ],
@@ -49363,7 +49474,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Usar Hermes desde una interfaz de escritorio; Consultar una instancia remota de Hermes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "hermes-agent"
+        "hermes-agent",
+        "ollama",
+        "mem0",
+        "vllm"
       ],
       "alt": [],
       "stack": "Instalador oficial del proyecto; backend Hermes local o remoto; proveedor o endpoint local",
@@ -49476,6 +49590,50 @@
       "stars": 14577,
       "license": "MIT",
       "homepage": "https://hermesone.org",
+      "combina_con": [
+        {
+          "id": "hermes-agent",
+          "motivo": "Es su interfaz gráfica: instala y gestiona Hermes Agent.",
+          "orden_instalacion": "Instala la app; ella instala Hermes Agent. No mezcles con una instalación manual distinta en `~/.hermes`."
+        },
+        {
+          "id": "ollama",
+          "motivo": "Endpoint local compatible con OpenAI soportado como proveedor.",
+          "orden_instalacion": "Ollama en marcha; añádelo en la pantalla de proveedores."
+        },
+        {
+          "id": "mem0",
+          "motivo": "Proveedor de memoria listado en la app.",
+          "orden_instalacion": "Configura la clave o el servidor de Mem0 antes de activarlo en la sección de memoria."
+        },
+        {
+          "id": "vllm",
+          "motivo": "Endpoint local compatible con OpenAI soportado.",
+          "orden_instalacion": "vLLM en un equipo con GPU; registra su URL como proveedor."
+        }
+      ],
+      "que_es": "Aplicación de escritorio nativa mantenida por la comunidad (Hermes One, de fathah) para instalar, configurar y usar Hermes Agent de Nous Research. Licencia MIT; en desarrollo activo (v0.7.8), con funciones que pueden cambiar.",
+      "que_hace": "Guía la instalación de Hermes Agent y la configuración de proveedores (OpenRouter, Anthropic, OpenAI, Gemini, xAI, Nous Portal, Qwen, MiniMax, Hugging Face, Groq y endpoints locales compatibles con OpenAI como LM Studio, Ollama o vLLM). Ofrece chat con streaming, 22 comandos de barra, sesiones con búsqueda de texto completo, perfiles aislados, 14 conjuntos de herramientas, memoria con proveedores como Mem0 o Honcho, editor de personalidad (SOUL.md), tareas cron con 15 destinos y 16 pasarelas de mensajería (Telegram, Discord, Slack, WhatsApp, Signal, Matrix, email, SMS y otras).",
+      "como_lo_hace": "App Electron que usa el script oficial de instalación de Hermes y guarda los datos en `~/.hermes`, sustituyendo la gestión manual de la CLI. Se descarga desde hermesone.org o GitHub Releases; el instalador de Windows no está firmado y el .rpm de Fedora no está firmado con GPG ni se actualiza solo. En WSL el instalador puede bloquearse esperando sudo para Playwright.",
+      "descripcion_notas": "El README sugiere conceder temporalmente sudo sin contraseña en WSL para instalar; revierte el cambio al terminar.",
+      "descripcion_fuentes": [
+        "https://github.com/fathah/hermes-desktop/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "04-llm-local-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "fathah/hermes-desktop",
+        "archived": false,
+        "pushed_at": "2026-11-12",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "v0.7.8 (2026-11-12)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "App de escritorio que envuelve al agente Hermes en una interfaz nativa.",
       "body": "App de escritorio que envuelve al agente Hermes en una interfaz nativa.",
       "install": {
@@ -49488,6 +49646,18 @@
         {
           "id": "hermes-agent",
           "label": "hermes-agent"
+        },
+        {
+          "id": "ollama",
+          "label": "ollama"
+        },
+        {
+          "id": "mem0",
+          "label": "mem0"
+        },
+        {
+          "id": "vllm",
+          "label": "vllm"
         }
       ],
       "areas": [
@@ -49745,7 +49915,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Consultar notas desde Obsidian; Crear un asistente de investigación personal",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ollama"
+        "ollama",
+        "litellm",
+        "markitdown"
       ],
       "alt": [
         "anything-llm",
@@ -49861,6 +50033,48 @@
       "stars": 38126,
       "license": "AGPL-3.0",
       "homepage": "https://khoj.dev",
+      "combina_con": [
+        {
+          "id": "ollama",
+          "motivo": "Guía oficial para usar modelos de Ollama en Khoj autoalojado.",
+          "orden_instalacion": "Ollama primero; configura el modelo en el panel de administración de Khoj."
+        },
+        {
+          "id": "litellm",
+          "motivo": "Guía oficial para enrutar Khoj a través de LiteLLM.",
+          "orden_instalacion": "LiteLLM primero; registra su URL como proveedor compatible con OpenAI."
+        },
+        {
+          "id": "markitdown",
+          "motivo": "Convertir documentos de formatos no soportados a Markdown antes de indexarlos (combinación por arquitectura).",
+          "orden_instalacion": "Convierte primero y sincroniza la carpeta resultante con Khoj."
+        }
+      ],
+      "que_es": "Aplicación de IA personal («segundo cerebro») de código abierto (AGPL-3.0) y autoalojable de Khoj, que escala de un uso individual en el dispositivo a IA empresarial. Ofrece app en la nube, autoalojamiento y opciones Enterprise; su última versión es una beta de la 2.0, con actividad menor desde agosto de 2026 mientras el equipo impulsa Pipali.",
+      "que_hace": "Chatea con LLM locales o en línea (llama, qwen, gemma, mistral, gpt, claude, gemini, deepseek), responde desde internet y desde tus documentos (PDF, Markdown, org-mode, Word, Notion, imágenes) y ofrece búsqueda semántica. Permite crear agentes con conocimiento, personalidad, modelo y herramientas propios, automatizar investigaciones con boletines y notificaciones, generar imágenes y usar voz. Se accede desde el navegador, Obsidian, Emacs, escritorio, móvil o WhatsApp.",
+      "como_lo_hace": "Aplicación Python con clientes en TypeScript, Emacs Lisp y Java (Android). El autoalojamiento se hace con Docker y Docker Compose según su documentación; los modelos locales se conectan vía Ollama u otros servidores compatibles con OpenAI y hay guía para usar LiteLLM [DATO NO VERIFICADO: base de datos y puertos, no descritos en el README].",
+      "descripcion_notas": "Alternativas (elige una): anything-llm, surfsense. Tiene plugin oficial para Obsidian.",
+      "descripcion_fuentes": [
+        "https://github.com/khoj-ai/khoj/blob/master/README.md",
+        "https://docs.khoj.dev/advanced/ollama",
+        "https://docs.khoj.dev/advanced/litellm",
+        "https://docs.khoj.dev/clients/obsidian"
+      ],
+      "descripcion_revision": {
+        "batch": "04-llm-local-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "khoj-ai/khoj",
+        "archived": false,
+        "pushed_at": "2026-08-02",
+        "license": "AGPL-3.0",
+        "primary_language": "Python",
+        "latest_release": "2.0.0-beta.28 (2026-03-26)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones.",
       "body": "Segundo cerebro con IA auto-hospedable: responde desde tus notas y la web, con agentes y automatizaciones.",
       "install": {
@@ -49882,6 +50096,14 @@
         {
           "id": "ollama",
           "label": "ollama"
+        },
+        {
+          "id": "litellm",
+          "label": "litellm"
+        },
+        {
+          "id": "markitdown",
+          "label": "markitdown"
         }
       ],
       "areas": [
@@ -51232,7 +51454,11 @@
       "desc": "Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Servir un modelo local a Codex; Comparar backends de inferencia en tu equipo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "hermes-agent",
+        "codex",
+        "opencode"
+      ],
       "alt": [],
       "stack": "Sistema y acelerador compatibles; pesos; espacio de caché para optimización",
       "repo_url": "https://github.com/magnitudedev/magnitude",
@@ -51346,6 +51572,47 @@
       "stars": 7809,
       "license": "Apache-2.0",
       "homepage": "https://magnitude.dev",
+      "combina_con": [
+        {
+          "id": "hermes-agent",
+          "motivo": "Conexión en un clic documentada con Hermes.",
+          "orden_instalacion": "Magnitude con un modelo descargado; luego usa Connect para apuntar Hermes a él."
+        },
+        {
+          "id": "codex",
+          "motivo": "Agente soportado por la función Connect.",
+          "orden_instalacion": "Igual que arriba."
+        },
+        {
+          "id": "opencode",
+          "motivo": "Agente soportado por la función Connect.",
+          "orden_instalacion": "Igual que arriba."
+        }
+      ],
+      "que_es": "Motor de inferencia de código abierto (Apache 2.0) de magnitudedev que ajusta sus núcleos a tu hardware para ejecutar cada modelo lo más rápido posible. Reciente y muy activo (CLI 0.2.17), con app de escritorio y CLI.",
+      "que_hace": "Ejecuta modelos abiertos en Apple Silicon, NVIDIA, AMD, Intel o solo CPU, y según su README es en promedio más de 2 veces más rápido que Ollama en Mac y NVIDIA [DATO NO VERIFICADO: benchmark del propio proyecto]. Incluye decodificación especulativa con un modelo borrador por modelo, caché KV cuantizada, cachés de prefijo compartidas entre sesiones concurrentes y conexión en un clic con agentes como Pi, OpenCode, Hermes y Codex.",
+      "como_lo_hace": "Ajusta los núcleos para cada modelo al descargarlo. Se instala con un script (macOS/Linux o PowerShell) o con instaladores DMG, EXE, deb, rpm o pkg.tar.zst, y puede funcionar como servidor remoto o en Docker. Expone una API compatible con OpenAI (Chat Completions, Responses) y con Anthropic Messages en `http://127.0.0.1:10100/inference/...`; en local no comprueba la clave de API.",
+      "descripcion_notas": "En modo servidor remoto protege el acceso: en local no valida claves.",
+      "descripcion_fuentes": [
+        "https://github.com/magnitudedev/magnitude/blob/main/README.md",
+        "https://github.com/magnitudedev/magnitude/blob/main/docs/api/endpoints.mdx",
+        "https://github.com/magnitudedev/magnitude/blob/main/docs/integrations/other-agents.mdx"
+      ],
+      "descripcion_revision": {
+        "batch": "04-llm-local-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "magnitudedev/magnitude",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "Apache-2.0",
+        "primary_language": "Rust",
+        "latest_release": "@magnitudedev/cli@0.2.17 (2026-11-08)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones.",
       "body": "Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones.",
       "install": {
@@ -51354,7 +51621,20 @@
         "note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación."
       },
       "alt_refs": [],
-      "combine_refs": [],
+      "combine_refs": [
+        {
+          "id": "hermes-agent",
+          "label": "hermes-agent"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "opencode",
+          "label": "opencode"
+        }
+      ],
       "areas": [
         "ia-local",
         "configurar-claude-code",
@@ -51539,8 +51819,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Administrar fuentes desde un agente; Exportar contenido generado por NotebookLM",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "notebooklm-py",
-        "awesome-mcp-servers"
+        "claude-code",
+        "codex",
+        "gemini-cli"
       ],
       "alt": [],
       "stack": "Python; cuenta Google; cliente MCP; sesión del navegador",
@@ -51657,6 +51938,45 @@
       "stars": 6513,
       "license": "MIT",
       "homepage": "",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Cliente MCP soportado por `nlm setup`.",
+          "orden_instalacion": "`nlm login` primero; después `nlm setup` y marca Claude Code."
+        },
+        {
+          "id": "codex",
+          "motivo": "Cliente soportado (`nlm setup add codex`).",
+          "orden_instalacion": "Igual que arriba."
+        },
+        {
+          "id": "gemini-cli",
+          "motivo": "Cliente MCP soportado por el asistente de configuración.",
+          "orden_instalacion": "Igual que arriba."
+        }
+      ],
+      "que_es": "CLI y servidor MCP no oficiales para Gemini Notebook (antes Google NotebookLM), de jacob-bd. MIT y muy activo (v0.16.5); el repositorio se renombró a `gemini-notebook-mcp-cli`. Las cuentas personales se prueban con regularidad; el soporte Enterprise es experimental.",
+      "que_hace": "Permite crear y gestionar cuadernos, fuentes y artefactos (por ejemplo videos y presentaciones) desde la terminal con `nlm` o desde asistentes de IA vía MCP. El asistente `nlm setup` detecta las herramientas instaladas y las conecta: Claude Code, Claude Desktop, Codex CLI/ChatGPT, Gemini CLI, Cursor, Windsurf, Cline, Antigravity, GitHub Copilot y otras.",
+      "como_lo_hace": "Se instala con `uv tool install notebooklm-mcp-cli` y se autentica con `nlm login` usando tu cuenta de Google. Ofrece almacenamiento protegido del inicio de sesión (cifrado con la clave en el llavero del sistema) mediante `nlm auth storage set protected`; servidores, cron o Docker pueden seguir usando el archivo plano. Depende de APIs no oficiales que pueden cambiar.",
+      "descripcion_notas": "Activa el almacenamiento protegido en equipos personales. Se retiraron las combinaciones con notebooklm-py (solapamiento) y awesome-mcp-servers (es una lista, no una integración).",
+      "descripcion_fuentes": [
+        "https://github.com/jacob-bd/gemini-notebook-mcp-cli/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "04-llm-local-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "jacob-bd/gemini-notebook-mcp-cli",
+        "archived": false,
+        "pushed_at": "2026-11-14",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "v0.16.5 (2026-11-14)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde terminal o desde clientes compatibles con MCP.",
       "body": "CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde terminal o desde clientes compatibles con MCP.",
       "install": {
@@ -51667,12 +51987,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "notebooklm-py",
-          "label": "notebooklm-py"
+          "id": "claude-code",
+          "label": "claude-code"
         },
         {
-          "id": "awesome-mcp-servers",
-          "label": "awesome-mcp-servers"
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "gemini-cli",
+          "label": "gemini-cli"
         }
       ],
       "areas": [
@@ -51708,7 +52032,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Automatizar consultas documentales; Exportar mapas o resúmenes propios",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "notebooklm-mcp-cli"
+        "claude-code",
+        "codex",
+        "obsidian-second-brain"
       ],
       "alt": [],
       "stack": "Python y uv o pipx; sesión Google; Chromium para login; notebook de prueba",
@@ -51824,6 +52150,45 @@
       "stars": 20228,
       "license": "MIT",
       "homepage": "https://github.com/teng-lin/notebooklm-py",
+      "combina_con": [
+        {
+          "id": "claude-code",
+          "motivo": "Skill oficial para que el agente orqueste NotebookLM mientras Gemini hace la lectura con citas.",
+          "orden_instalacion": "Instala la biblioteca, inicia sesión con Google y después la skill."
+        },
+        {
+          "id": "codex",
+          "motivo": "También soportado como agente para la skill.",
+          "orden_instalacion": "Igual que con Claude Code; usa un solo agente por flujo."
+        },
+        {
+          "id": "obsidian-second-brain",
+          "motivo": "El README propone ejecutar la CLI desde la raíz de una bóveda de Obsidian para que informes y mapas queden como archivos (combinación por arquitectura con esta plantilla).",
+          "orden_instalacion": "Configura la bóveda primero; ejecuta la CLI desde su carpeta raíz."
+        }
+      ],
+      "que_es": "API de Python no oficial y skill para agentes para Google NotebookLM, rebautizado como Gemini Notebook en julio de 2026, creada por teng-lin. MIT y muy activa (v0.8.6); usa APIs no documentadas de Google que pueden cambiar sin aviso y no tiene afiliación con Google.",
+      "que_hace": "Da acceso programático a NotebookLM, incluidas funciones que la web no expone: importación masiva de fuentes (URL, PDF, YouTube, Google Drive), consultas de investigación con importación automática, y generación de resúmenes en audio (podcasts), videos, presentaciones, cuestionarios, tarjetas, infografías, tablas, mapas mentales y guías de estudio. Descarga los artefactos (MP3, MP4, PDF, PNG, CSV, JSON, Markdown) en lote y exporta a Docs/Sheets.",
+      "como_lo_hace": "Biblioteca Python asíncrona con CLI, un servidor REST local con rutas protegidas y una skill para Claude Code, Codex y otros agentes (instalable con `npx skills add` o `notebooklm skill install`). Se autentica con tu sesión de Google y está sujeta a límites de uso; recomendada para prototipos, investigación y proyectos personales.",
+      "descripcion_notas": "Se retiró la combinación con notebooklm-mcp-cli: ambos son clientes no oficiales de la misma API y se solapan; elige uno.",
+      "descripcion_fuentes": [
+        "https://github.com/teng-lin/notebooklm-py/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "04-llm-local-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "teng-lin/notebooklm-py",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "MIT",
+        "primary_language": "Python",
+        "latest_release": "v0.8.6 (2026-10-29)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código.",
       "body": "API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código.",
       "install": {
@@ -51834,8 +52199,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "notebooklm-mcp-cli",
-          "label": "notebooklm-mcp-cli"
+          "id": "claude-code",
+          "label": "claude-code"
+        },
+        {
+          "id": "codex",
+          "label": "codex"
+        },
+        {
+          "id": "obsidian-second-brain",
+          "label": "obsidian-second-brain"
         }
       ],
       "areas": [
@@ -51872,9 +52245,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar notas y tareas con IA; Comparar respuestas de modelos desde un workspace",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "open-notebook",
-        "ecc",
-        "mem0"
+        "ollama",
+        "vllm",
+        "playwright-mcp"
       ],
       "alt": [],
       "stack": "Docker; configuración .env; proveedor o modelos locales",
@@ -51988,6 +52361,45 @@
       "stars": 95643,
       "license": "AGPL-3.0",
       "homepage": "https://odysseus-dev.github.io/odysseus",
+      "combina_con": [
+        {
+          "id": "ollama",
+          "motivo": "La guía de instalación documenta el uso de un Ollama existente como endpoint de modelos.",
+          "orden_instalacion": "Ollama primero (en Mac, fuera de Docker para usar Metal); después configura su URL en Odysseus."
+        },
+        {
+          "id": "vllm",
+          "motivo": "Endpoint compatible con OpenAI documentado para servir modelos con GPU.",
+          "orden_instalacion": "vLLM en un servidor con GPU; registra su URL en Odysseus y no expongas su puerto públicamente."
+        },
+        {
+          "id": "playwright-mcp",
+          "motivo": "Dar a los agentes un navegador mediante MCP (combinación por arquitectura).",
+          "orden_instalacion": "Después de activar la autenticación; restringe qué agentes pueden usarlo."
+        }
+      ],
+      "que_es": "Espacio de trabajo de IA autoalojado de código abierto (AGPL-3.0) de odysseus-dev que reúne chat, agentes, investigación, documentos, correo, notas, calendario y flujos con modelos locales. Proyecto activo sin releases formales: la rama `dev` recibe los cambios primero y `main` es la más curada.",
+      "que_hace": "Ofrece chat y agentes con modelos locales o por API, herramientas, MCP, archivos, shell, skills y memoria; un «Cookbook» que recomienda, descarga y sirve modelos según tu hardware; investigación web profunda con lectura de fuentes e informes; comparación ciega de modelos; editor de documentos con edición por IA; bandeja IMAP/SMTP con triaje, resúmenes y borradores; y notas, tareas y calendario con sincronización CalDAV y tareas programadas de agentes.",
+      "como_lo_hace": "Aplicación Python (servidor uvicorn) con interfaz web en el puerto 7011 vía Docker Compose, que también arranca ChromaDB y SearXNG; usa la imagen multiarquitectura `ghcr.io/odysseus-dev/odysseus` (en producción recomienda fijar una etiqueta inmutable). La instalación nativa requiere Python 3.11+ y tmux para el Cookbook. En Docker sobre Mac no hay acceso a la GPU Metal, así que el Cookbook sirve modelos solo con CPU; puede usar endpoints existentes de Ollama, vLLM u otros compatibles con OpenAI.",
+      "descripcion_notas": "Mantén `AUTH_ENABLED=true` y `LOCALHOST_BYPASS=false` en cualquier despliegue en red. ChromaDB y SearXNG ya vienen en su Compose. Se retiraron las combinaciones antiguas con open-notebook, ecc y mem0 por falta de relación documentada.",
+      "descripcion_fuentes": [
+        "https://github.com/odysseus-dev/odysseus/blob/dev/README.md",
+        "https://github.com/odysseus-dev/odysseus/blob/dev/website/setup.md"
+      ],
+      "descripcion_revision": {
+        "batch": "04-llm-local-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "odysseus-dev/odysseus",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "AGPL-3.0",
+        "primary_language": "Python",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado.",
       "body": "Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado.",
       "install": {
@@ -51998,16 +52410,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "open-notebook",
-          "label": "open-notebook"
+          "id": "ollama",
+          "label": "ollama"
         },
         {
-          "id": "ecc",
-          "label": "ecc"
+          "id": "vllm",
+          "label": "vllm"
         },
         {
-          "id": "mem0",
-          "label": "mem0"
+          "id": "playwright-mcp",
+          "label": "playwright-mcp"
         }
       ],
       "areas": [
@@ -52497,8 +52909,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar documentos en una libreta; Generar un resumen o audio sobre material propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "odysseus",
-        "markitdown"
+        "ollama",
+        "vllm",
+        "n8n"
       ],
       "alt": [
         "deeptutor",
@@ -52614,6 +53027,45 @@
       "stars": 41968,
       "license": "MIT",
       "homepage": "https://www.open-notebook.ai",
+      "combina_con": [
+        {
+          "id": "ollama",
+          "motivo": "Proveedor documentado para usarlo 100 % en local.",
+          "orden_instalacion": "Ollama primero; configura su URL accesible desde el contenedor."
+        },
+        {
+          "id": "vllm",
+          "motivo": "Servidor compatible con OpenAI citado en el README.",
+          "orden_instalacion": "vLLM en un equipo con GPU; registra su URL como proveedor compatible."
+        },
+        {
+          "id": "n8n",
+          "motivo": "Automatizar la ingesta de fuentes o la generación de podcasts con su API REST (combinación por arquitectura).",
+          "orden_instalacion": "Protege la API (puerto 5055) antes de exponerla a n8n."
+        }
+      ],
+      "que_es": "Alternativa de código abierto (MIT) a NotebookLM de Google, centrada en la privacidad y creada por Luis Novo (lfnovo). Activa (v1.15.1), con interfaz en 14 idiomas.",
+      "que_hace": "Organiza contenido multimodal (PDF, video, audio, páginas web) en cuadernos, con búsqueda de texto completo y vectorial, chat con el contexto de tu investigación, transformaciones de contenido propias y podcasts con 1 a 4 voces configurables. Permite elegir entre más de 20 proveedores (OpenAI, Anthropic, Google, Mistral, Ollama y servidores compatibles con OpenAI como LM Studio o vLLM) y expone una API REST completa.",
+      "como_lo_hace": "Backend en Python con LangChain, frontend Next.js/React y SurrealDB como base de datos. El Docker Compose oficial levanta dos servicios (`surrealdb` y `open_notebook`), con interfaz en el puerto 8502 y API en el 5055; requiere definir `OPEN_NOTEBOOK_ENCRYPTION_KEY`. Por defecto no tiene contraseña y publica los puertos en todas las interfaces.",
+      "descripcion_notas": "Alternativas (elige una): deeptutor, surfsense. En redes compartidas pon una contraseña o un proxy delante. Se retiraron las combinaciones antiguas con odysseus (se solapa como espacio de trabajo) y markitdown (no documentada).",
+      "descripcion_fuentes": [
+        "https://github.com/lfnovo/open-notebook/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "04-llm-local-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "lfnovo/open-notebook",
+        "archived": false,
+        "pushed_at": "2026-11-15",
+        "license": "MIT",
+        "primary_language": "TypeScript",
+        "latest_release": "v1.15.1 (2026-11-04)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Clon open-source y privado de Google NotebookLM para procesar notas y fuentes locales (PDFs, webs, texto) y generar resúmenes, chats y audios sin salir de tu equipo.",
       "body": "Aplicación auto-hospedada para reunir fuentes, consultar documentos y producir resúmenes o audio. Permite elegir proveedores de chat, embeddings y audio locales o remotos; la privacidad del procesamiento depende de esa configuración.",
       "install": {
@@ -52633,12 +53085,16 @@
       ],
       "combine_refs": [
         {
-          "id": "odysseus",
-          "label": "odysseus"
+          "id": "ollama",
+          "label": "ollama"
         },
         {
-          "id": "markitdown",
-          "label": "markitdown"
+          "id": "vllm",
+          "label": "vllm"
+        },
+        {
+          "id": "n8n",
+          "label": "n8n"
         }
       ],
       "areas": [
@@ -52889,7 +53345,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar un contrato de prueba con comentarios; Extraer datos de un archivo Excel ficticio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ollama"
+        "ollama",
+        "vllm",
+        "playwright-mcp"
       ],
       "alt": [
         "open-notebook",
@@ -53005,6 +53463,45 @@
       "stars": 16875,
       "license": "Apache-2.0",
       "homepage": "https://www.surfsense.com",
+      "combina_con": [
+        {
+          "id": "ollama",
+          "motivo": "Modelo local compatible con OpenAI para mantener el uso sin conexión (combinación por arquitectura).",
+          "orden_instalacion": "Ollama primero con el modelo descargado; configúralo como modelo local en la incorporación."
+        },
+        {
+          "id": "vllm",
+          "motivo": "Servidor compatible con OpenAI en la red local para equipos sin GPU (combinación por arquitectura).",
+          "orden_instalacion": "vLLM en un servidor de la LAN; apunta SurfSense a su URL."
+        },
+        {
+          "id": "playwright-mcp",
+          "motivo": "Añadir un servidor MCP de navegador por URL como complemento de terceros (combinación por arquitectura).",
+          "orden_instalacion": "Los complementos MCP quedan desactivados hasta que los permites; actívalo solo si lo necesitas."
+        }
+      ],
+      "que_es": "Aplicación de escritorio de código abierto (Apache 2.0) de MODSetter, alternativa a NotebookLM que puede funcionar sin conexión («air-gapped») para documentos que no puedes subir. Activa (v2.3.1); algunos complementos requieren licencia de SurfSense con prueba gratuita de 14 días.",
+      "que_hace": "Un agente investiga, transforma y edita tus documentos en tu máquina: respuestas con citas sobre PDF (incluido escaneado con OCR), Word, Excel (lee fórmulas), PowerPoint y CSV; crea documentos desde plantillas, edita Word con control de cambios y comentarios, rellena formularios PDF, une o divide páginas y analiza datos con pandas. Los complementos propios leen Google, la web, YouTube, TikTok, Reddit, Instagram, Google Maps, Amazon, Walmart e Indeed; los de terceros son servidores MCP (por ejemplo DeepWiki o Notion).",
+      "como_lo_hace": "Backend en Python con frontend en TypeScript, empaquetado como app para Windows, macOS (Apple Silicon) y Linux, o autoalojado con Docker mediante script de instalación. El índice queda en tu disco; usa cualquier API compatible con OpenAI o un modelo local, y los documentos solo salen de tu equipo si eliges un modelo remoto. La conversión a PDF requiere activar LibreOffice y la generación de imágenes necesita un modelo de imagen.",
+      "descripcion_notas": "Alternativas (elige una): open-notebook, khoj.",
+      "descripcion_fuentes": [
+        "https://github.com/MODSetter/SurfSense/blob/main/README.md"
+      ],
+      "descripcion_revision": {
+        "batch": "04-llm-local-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "MODSetter/SurfSense",
+        "archived": false,
+        "pushed_at": "2026-11-14",
+        "license": "Apache-2.0",
+        "primary_language": "Python",
+        "latest_release": "v2.3.1 (2026-11-03)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos.",
       "body": "Alternativa abierta y privada a NotebookLM que investiga, transforma y edita tus documentos.",
       "install": {
@@ -53026,6 +53523,14 @@
         {
           "id": "ollama",
           "label": "ollama"
+        },
+        {
+          "id": "vllm",
+          "label": "vllm"
+        },
+        {
+          "id": "playwright-mcp",
+          "label": "playwright-mcp"
         }
       ],
       "areas": [
@@ -53273,7 +53778,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Clasificar texto en el navegador; Procesar audio o imágenes sin servidor de modelos externo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "swr"
+        "qdrant",
+        "supabase",
+        "whisper"
       ],
       "alt": [],
       "stack": "Node o navegador compatible; modelo ONNX admitido; RAM y descarga inicial",
@@ -53386,6 +53893,46 @@
       "stars": 16418,
       "license": "Apache-2.0",
       "homepage": "https://huggingface.co/docs/transformers.js",
+      "combina_con": [
+        {
+          "id": "qdrant",
+          "motivo": "Generar embeddings en el cliente o en Node.js y guardarlos en una base vectorial (combinación por arquitectura).",
+          "orden_instalacion": "Elige el modelo de embeddings primero; la dimensión de la colección de Qdrant debe coincidir."
+        },
+        {
+          "id": "supabase",
+          "motivo": "Generar embeddings y guardarlos en Postgres con pgvector en Supabase (combinación por arquitectura).",
+          "orden_instalacion": "Activa pgvector en Supabase y crea la tabla con la dimensión del modelo."
+        },
+        {
+          "id": "whisper",
+          "motivo": "Ejecutar modelos Whisper convertidos a ONNX para transcribir en el navegador (combinación por arquitectura).",
+          "orden_instalacion": "Usa las variantes ONNX publicadas en Hugging Face; las grandes requieren WebGPU."
+        }
+      ],
+      "que_es": "Biblioteca JavaScript oficial de Hugging Face para ejecutar modelos Transformers directamente en el navegador, sin servidor. Apache 2.0, madura y activa (v4.3.2); funcionalmente equivalente a la biblioteca `transformers` de Python.",
+      "que_hace": "Ejecuta modelos preentrenados para NLP (clasificación, entidades, preguntas y respuestas, resumen, traducción, generación de texto), visión (clasificación, detección, segmentación, profundidad), audio (reconocimiento de voz, clasificación, texto a voz) y tareas multimodales (embeddings, clasificación zero-shot). Usa la misma API `pipeline` que la versión de Python.",
+      "como_lo_hace": "Ejecuta los modelos con ONNX Runtime: por defecto en CPU vía WebAssembly y en GPU con WebGPU (`device: 'webgpu'`). Los modelos de PyTorch, TensorFlow o JAX se convierten a ONNX con Optimum. Se instala con `npm i @huggingface/transformers` o se importa desde CDN como módulo ES.",
+      "descripcion_notas": "Se retiró la combinación antigua con swr por no tener relación con la inferencia.",
+      "descripcion_fuentes": [
+        "https://github.com/huggingface/transformers.js/blob/main/README.md",
+        "https://huggingface.co/docs/transformers.js"
+      ],
+      "descripcion_revision": {
+        "batch": "04-llm-local-parte-2",
+        "checked_at": "2026-11-15",
+        "status": "source_reviewed",
+        "installation_tested": false
+      },
+      "descripcion_github": {
+        "name_with_owner": "huggingface/transformers.js",
+        "archived": false,
+        "pushed_at": "2026-11-14",
+        "license": "Apache-2.0",
+        "primary_language": "JavaScript",
+        "latest_release": "4.3.2 (2026-10-28)",
+        "checked_at": "2026-11-15"
+      },
       "lead": "Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript.",
       "body": "Biblioteca de Hugging Face que ejecuta modelos Transformers de texto, visión y audio en JavaScript.",
       "install": {
@@ -53396,8 +53943,16 @@
       "alt_refs": [],
       "combine_refs": [
         {
-          "id": "swr",
-          "label": "swr"
+          "id": "qdrant",
+          "label": "qdrant"
+        },
+        {
+          "id": "supabase",
+          "label": "supabase"
+        },
+        {
+          "id": "whisper",
+          "label": "whisper"
         }
       ],
       "areas": [

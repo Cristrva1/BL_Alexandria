@@ -31,6 +31,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Carga un modelo de prueba admitido y mide el tiempo de generación además de la VRAM
 **Qué comprobar:** Obtienes texto y una medida real de latencia y almacenamiento
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `llmfit`, `transformers`, `peft`
 
 ## `anything-llm`
 role=app · exec=local · setup=easy · mcp=True · prov=openai,anthropic,local · tags=rag,agents,local,javascript
@@ -183,6 +184,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sigue el quickstart con el modelo más pequeño compatible y mide memoria y latencia
 **Qué comprobar:** Puedes generar una salida y registrar el consumo real de tu equipo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `open-webui`, `litellm`, `codex`
 
 ## `hermes-desktop`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=agents,ui,typescript
@@ -212,7 +214,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Configura un backend de prueba y confirma la dirección antes de iniciar un chat
 **Qué comprobar:** La interfaz muestra el backend y devuelve una respuesta del proveedor elegido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `hermes-agent`
+**Combina con:** `hermes-agent`, `ollama`, `mem0`, `vllm`
 
 ## `jan`
 role=app · exec=local · setup=easy · mcp=False · prov=local,openai · tags=chatbot,local,rust
@@ -273,7 +275,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade dos notas y pregunta por un dato que solo aparece en una
 **Qué comprobar:** La respuesta permite revisar la nota utilizada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`
+**Combina con:** `ollama`, `litellm`, `markitdown`
 **Alternativas (elige una):** `anything-llm`, `surfsense`
 
 ## `librechat`
@@ -491,6 +493,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Prueba un modelo pequeño y registra la latencia antes y después del ajuste de kernels
 **Qué comprobar:** Puedes comparar rendimiento en la misma máquina y con el mismo modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `hermes-agent`, `codex`, `opencode`
 
 ## `muse-spark`
 role=app · exec=hybrid · setup=heavy · mcp=False · prov=— · tags=workspaces,download-muse-ai,download-muse-spark,muse,muse-ai,muse-spark,muse-spark-1-1,muse-spark-1-2
@@ -549,7 +552,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta el asistente de setup, conecta un cliente y consulta una fuente ficticia en un notebook de prueba
 **Qué comprobar:** Puedes contrastar la respuesta y comprobar el estado de autenticación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `notebooklm-py`, `awesome-mcp-servers`
+**Combina con:** `claude-code`, `codex`, `gemini-cli`
 
 ## `notebooklm-py`
 role=library · exec=cloud · setup=easy · mcp=True · prov=— · tags=notebooks,research,python
@@ -579,7 +582,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un notebook con una fuente propia breve y pregunta por un dato verificable
 **Qué comprobar:** La consulta y las referencias aparecen en el mismo notebook de Google
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `notebooklm-mcp-cli`
+**Combina con:** `claude-code`, `codex`, `obsidian-second-brain`
 
 ## `odysseus`
 role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=agents,local,python,docker
@@ -612,7 +615,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre un chat con un texto ficticio y prueba el editor de documentos sin conectar correo real
 **Qué comprobar:** Puedes distinguir conversación, documento y herramientas habilitadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `open-notebook`, `ecc`, `mem0`
+**Combina con:** `ollama`, `vllm`, `playwright-mcp`
 
 ## `ollama`
 role=runtime · exec=local · setup=easy · mcp=False · prov=local · tags=inference,local,go
@@ -673,7 +676,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un notebook con dos fuentes y pregunta por un dato con referencia
 **Qué comprobar:** Puedes identificar la fuente y corregir un resumen
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `odysseus`, `markitdown`
+**Combina con:** `ollama`, `vllm`, `n8n`
 **Alternativas (elige una):** `deeptutor`, `surfsense`
 
 ## `open-webui`
@@ -766,7 +769,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Añade un documento ficticio y pide una edición que se guarde como copia
 **Qué comprobar:** Puedes comparar original y archivo nuevo y revisar las citas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`
+**Combina con:** `ollama`, `vllm`, `playwright-mcp`
 **Alternativas (elige una):** `open-notebook`, `khoj`
 
 ## `textgen`
@@ -828,4 +831,4 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta un pipeline de clasificación de texto sobre dos frases de prueba
 **Qué comprobar:** El modelo devuelve etiquetas que puedes comparar con las frases
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `swr`
+**Combina con:** `qdrant`, `supabase`, `whisper`

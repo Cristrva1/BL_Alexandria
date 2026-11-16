@@ -30297,7 +30297,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar inferencia por carga de capas; Probar un modelo que supera la VRAM disponible",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "llmfit",
+        "transformers",
+        "peft"
+      ],
       "alt": []
     },
     {
@@ -30911,7 +30915,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Experimentar con inferencia de modelos MoE; Evaluar un backend de aceleración local",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "open-webui",
+        "litellm",
+        "codex"
+      ],
       "alt": []
     },
     {
@@ -31025,7 +31033,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Usar Hermes desde una interfaz de escritorio; Consultar una instancia remota de Hermes",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "hermes-agent"
+        "hermes-agent",
+        "ollama",
+        "mem0",
+        "vllm"
       ],
       "alt": []
     },
@@ -31270,7 +31281,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Consultar notas desde Obsidian; Crear un asistente de investigación personal",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ollama"
+        "ollama",
+        "litellm",
+        "markitdown"
       ],
       "alt": [
         "anything-llm",
@@ -32133,7 +32146,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Servir un modelo local a Codex; Comparar backends de inferencia en tu equipo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "hermes-agent",
+        "codex",
+        "opencode"
+      ],
       "alt": []
     },
     {
@@ -32367,8 +32384,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Administrar fuentes desde un agente; Exportar contenido generado por NotebookLM",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "notebooklm-py",
-        "awesome-mcp-servers"
+        "claude-code",
+        "codex",
+        "gemini-cli"
       ],
       "alt": []
     },
@@ -32486,7 +32504,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Automatizar consultas documentales; Exportar mapas o resúmenes propios",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "notebooklm-mcp-cli"
+        "claude-code",
+        "codex",
+        "obsidian-second-brain"
       ],
       "alt": []
     },
@@ -32603,9 +32623,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Organizar notas y tareas con IA; Comparar respuestas de modelos desde un workspace",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "open-notebook",
-        "ecc",
-        "mem0"
+        "ollama",
+        "vllm",
+        "playwright-mcp"
       ],
       "alt": []
     },
@@ -32849,8 +32869,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar documentos en una libreta; Generar un resumen o audio sobre material propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "odysseus",
-        "markitdown"
+        "ollama",
+        "vllm",
+        "n8n"
       ],
       "alt": [
         "deeptutor",
@@ -33223,7 +33244,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Revisar un contrato de prueba con comentarios; Extraer datos de un archivo Excel ficticio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ollama"
+        "ollama",
+        "vllm",
+        "playwright-mcp"
       ],
       "alt": [
         "open-notebook",
@@ -33466,7 +33489,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Clasificar texto en el navegador; Procesar audio o imágenes sin servidor de modelos externo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "swr"
+        "qdrant",
+        "supabase",
+        "whisper"
       ],
       "alt": []
     },
