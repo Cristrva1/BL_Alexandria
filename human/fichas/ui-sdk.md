@@ -27,8 +27,8 @@ Se instala el núcleo y el adaptador del framework (`npm install @ui-sdk/react @
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [Claude Code](claude-code.md) | Agente que usa la skill de UI SDK para crear primitivas. (combinación por arquitectura) (la skill se instala con el CLI `skills`, compatible con varios agentes) | Instala la skill en el proyecto y pide al agente los componentes. |
-| [Radix Primitives](radix-primitives.md) | Primitivas accesibles maduras como referencia o alternativa estable mientras UI SDK está en beta. (combinación por arquitectura) | Usa Radix en producción y evalúa UI SDK en paralelo. |
 | [tailwindcss](tailwindcss.md) | Estilar las primitivas sin estilos. (combinación por arquitectura) | Configura Tailwind en el proyecto. |
+| [playwright](playwright.md) | Comprobar con pruebas de navegador la navegación por teclado, el foco y los popups de las primitivas que genere el agente (combinación por arquitectura). | Primero los componentes con UI SDK; después las pruebas de Playwright sobre la página que los usa. |
 
 **Notas:** Sin alternativas declaradas. Beta.
 

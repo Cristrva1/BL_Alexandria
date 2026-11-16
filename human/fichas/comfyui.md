@@ -29,6 +29,13 @@ Se usa con la app de escritorio (recomendada), la versión portable de Windows, 
 | [FLUX.2](flux2.md) | Tutoriales oficiales de Comfy para FLUX.2. | Descarga los pesos de FLUX.2 y carga el flujo de ejemplo. |
 | [Krita AI Diffusion](krita-ai-diffusion.md) | El plugin de Krita usa ComfyUI como backend. | Instala ComfyUI con las extensiones requeridas y conéctalo desde Krita. |
 | [Real-ESRGAN](real-esrgan.md) | Cargar modelos ESRGAN como upscalers. | Copia los pesos en `models/upscale_models`. |
+| [HunyuanVideo 1.5](hunyuanvideo-1-5.md) | ComfyUI soporta HunyuanVideo 1.5 de forma nativa con flujos de video de ejemplo. | Descarga los pesos de HunyuanVideo 1.5 y carga el flujo de ejemplo. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (10). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[CodeFormer](codeformer.md) · [HunyuanVideo](hunyuanvideo.md) · [LivePortrait](liveportrait.md) · [LTX-2](ltx-2.md) · [LuxTTS](luxtts.md) · [openpose](openpose.md) · [OpenRV](openrv.md) · [rembg](rembg.md) · [SillyTavern](sillytavern.md) · [Wan2.2](wan2-2.md)
 
 **Notas:** Alternativas (elige una): wan2gp. Revisa los nodos personalizados antes de instalarlos: ejecutan código arbitrario.
 

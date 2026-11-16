@@ -29,6 +29,7 @@ Se instala con `pip install "rembg[cpu,cli]"` o con extras `[gpu]`/`[rocm]`, y r
 | [ComfyUI](comfyui.md) | Nodos de la comunidad para quitar fondos en flujos. (combinación por arquitectura) | Instala un nodo basado en rembg. |
 | [Real-ESRGAN](real-esrgan.md) | Ampliar la imagen antes o después del recorte. (combinación por arquitectura) | Amplía primero si la imagen es pequeña. |
 | [Gradio](gradio.md) | Interfaz web rápida para uso interno. (combinación por arquitectura) | Envuelve `remove()` en una app Gradio. |
+| [CodeFormer](codeformer.md) | Combinación recíproca: CodeFormer lo enlaza como «Recortar el retrato restaurado. (combinación por arquitectura)». | Orden indicado desde CodeFormer: Restaura con CodeFormer y quita el fondo con rembg. |
 
 **Notas:** Sin alternativas declaradas.
 

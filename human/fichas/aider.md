@@ -29,6 +29,15 @@ Se instala con `python -m pip install aider-install` y `aider-install`. Conecta 
 | [litellm](litellm.md) | Capa de conexión con proveedores de modelos. | Viene incluida; configura las claves del proveedor. |
 | [Ollama](ollama.md) | Modelos locales documentados. | Ejecuta aider con un modelo `ollama/...`. |
 | [tree-sitter](tree-sitter.md) | Mapa del repositorio basado en Tree-sitter. | No requiere instalación aparte. |
+| [ast-grep](ast-grep.md) | Combinación recíproca: ast-grep lo enlaza como «Aplicar refactorizaciones masivas deterministas junto a la edición con IA. (combinación por arquitectura)». | Orden indicado desde ast-grep: Usa ast-grep para el cambio mecánico y Aider para el resto. |
+| [openidea](openidea.md) | Combinación recíproca: openidea lo enlaza como «Pareja de programación con git en la terminal integrada. (combinación por arquitectura)». | Orden indicado desde openidea: Ejecuta aider dentro del proyecto. |
+| [SWE-bench](swe-bench.md) | Combinación recíproca: SWE-bench lo enlaza como «Comparar el rendimiento de distintos modelos en Aider. (combinación por arquitectura)». | Orden indicado desde SWE-bench: Exporta los parches como predicciones. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[lazygit](lazygit.md)
 
 **Notas:** Alternativas (elige una): opencode, cline. Actividad reciente baja.
 

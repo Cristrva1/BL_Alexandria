@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Label Studio, herramienta open source de etiquetado de datos, de HumanSignal. Licencia Apache-2.0. Es madura (~29k estrellas, 1.23.2) y tiene edición Enterprise de pago.
+
+## ¿Qué hace?
+
+Permite etiquetar imágenes, texto, audio, vídeo y series temporales con interfaces configurables, y exporta a varios formatos de modelo. Un backend de ML permite pre-etiquetar y hacer aprendizaje activo.
+
+## ¿Cómo lo hace?
+
+Se ejecuta con Docker (`docker run -p 8080:8080 heartexlabs/label-studio`) o con `pip install label-studio` (Python 3.10+).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ultralytics YOLO](ultralytics.md) | Exportar en formato YOLO para entrenar. (combinación por arquitectura) | Exporta el proyecto y entrena. |
+| [SAM 3](sam3.md) | Pre-etiquetado de máscaras mediante el backend de ML. (combinación por arquitectura) | Configura el backend. |
+| [supervision](supervision.md) | Revisar y convertir anotaciones. (combinación por arquitectura) | Carga el dataset exportado. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 1.23.2 (2026-09-29) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/HumanSignal/label-studio/blob/develop/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. La función básica es anotación humana; no necesita un modelo para empezar y los backends de ML se configuran por separado |
 | Coste | El coste depende del proveedor o la ruta. Etiquetado manual sin API de IA; backend de modelos, hosting y ediciones comerciales pueden añadir costes |
 | Equipo | Preparación según la ruta elegida. Docker o Python compatible; datos de muestra; almacenamiento persistente |
-
-La función básica es anotación humana; no necesita un modelo para empezar y los backends de ML se configuran por separado
-
-## Qué puedes hacer con él
-
-Herramienta de etiquetado de datos multi-tipo: imágenes, texto, audio y video.
-
-## Por qué destaca
-
-Usos propuestos: Preparar un dataset de imágenes; Revisar etiquetas de texto o audio.
-
-## Cómo funciona
 
 La función básica es anotación humana; no necesita un modelo para empezar y los backends de ML se configuran por separado
 
@@ -95,12 +109,11 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `data` `vision` `training` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
+## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [Ultralytics YOLO](ultralytics.md) | 63.4k | Modelos YOLO para detección, segmentación, clasificación y pose, fáciles de entrenar y desplegar. |
-| [SAM 3](sam3.md) | 12.3k | Tercera versión de Segment Anything de Meta: detecta, segmenta y sigue en imágenes y video todos los objetos que describas con una frase corta. |
+| [CVAT Community](cvat.md) | 17.1k | Plataforma autoalojable para anotar imágenes, vídeo, audio y 3D con equipos, preanotación con modelos y exportación a más de 20 formatos de datasets. |
 
 ## Enlaces
 

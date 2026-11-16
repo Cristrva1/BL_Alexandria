@@ -29,6 +29,7 @@ Paquetes npm (paquete unificado `radix-ui` o `@radix-ui/react-*` por componente)
 | [ui](ui.md) | shadcn/ui se construye sobre Radix (o Base UI) y añade estilos Tailwind. | Usa shadcn/ui si quieres estilos listos; Radix directamente si diseñas tu propio sistema. |
 | [tailwindcss](tailwindcss.md) | Estilar las primitivas sin estilos con clases utilitarias. (combinación por arquitectura) | Configura Tailwind y aplica clases a cada parte de la primitiva. |
 | [Lucide](lucide.md) | Iconos para triggers y menús. (combinación por arquitectura) | Instala lucide-react. |
+| [normalize.css](normalize-css.md) | Combinación recíproca: normalize.css lo enlaza como «Base de estilos coherente para primitivas sin estilos en proyectos sin Tailwind. (combinación por arquitectura)». | Orden indicado desde normalize.css: Importa normalize.css antes de tus estilos propios. |
 
 **Notas:** Sin alternativas declaradas.
 

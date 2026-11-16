@@ -30,6 +30,12 @@ Se añade al cliente MCP con `npx @playwright/mcp@latest` (VS Code, Cursor, Wind
 | [playwright](playwright.md) | Motor de automatización sobre el que se construye. | Se instala con el servidor; los navegadores se descargan con Playwright. |
 | [MCP Inspector](mcp-inspector.md) | Inspeccionar las herramientas y respuestas del servidor. (combinación por arquitectura) | Conecta el Inspector al servidor. |
 
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (11). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[agent-desktop](agent-desktop.md) · [Cherry Studio](cherry-studio.md) · [Cline](cline.md) · [goose](goose.md) · [hello-halo](hello-halo.md) · [Jan](jan.md) · [Kilo Code](kilocode.md) · [LobeHub](lobehub.md) · [odysseus](odysseus.md) · [playwright-cli](playwright-cli.md) · [SurfSense](surfsense.md)
+
 **Notas:** Alternativas (elige una): chrome-devtools-mcp, browser-use, browser-harness.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.0.85 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-15).

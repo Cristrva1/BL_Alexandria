@@ -30,7 +30,7 @@ Requiere Python 3.11+ y se instala con pip (paquete oficial), desde el código o
 | [Kokoro](kokoro.md) | Voz Kokoro entre los TTS integrados. | Selecciona Kokoro como servicio de voz. |
 | [Ollama](ollama.md) | Usar un modelo local mediante un endpoint compatible con OpenAI. (combinación por arquitectura) | Apunta el proveedor compatible con OpenAI a Ollama. |
 
-**Notas:** Alternativas (elige una): openmontage, videofy-minimal. Revisa los derechos del material de stock y de las voces antes de publicar.
+**Notas:** Alternativas (elige una): openmontage, videofy-minimal, short-video-factory. Revisa los derechos del material de stock y de las voces antes de publicar.
 
 Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.3.10 (2026-11-07) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -116,6 +116,7 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [OpenMontage](openmontage.md) | 80.5k | Pipelines y herramientas para producir video con un agente,recursos propios,modelos locales o servicios opcionales. |
 | [videofy_minimal](videofy-minimal.md) | 656 | Aplicación local que transforma artículos de noticias en videos breves mediante guion, voz y un flujo de revisión. |
+| [short-video-factory](short-video-factory.md) | 6.1k | Aplicación de escritorio para crear videos cortos de producto combinando guion, narración, clips y subtítulos. |
 
 ## Enlaces
 

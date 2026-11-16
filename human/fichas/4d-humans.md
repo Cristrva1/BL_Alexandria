@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+4DHumans (HMR 2.0), implementación del artículo «Humans in 4D: Reconstructing and Tracking Humans with Transformers» (UC Berkeley). Licencia MIT. Es código de investigación (~1.7k estrellas) sin cambios desde febrero de 2026.
+
+## ¿Qué hace?
+
+Reconstruye mallas humanas 3D (SMPL) a partir de imágenes y las rastrea en vídeo con PHALP.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install torch` y `pip install -e .[all]`, más PHALP desde GitHub. Requiere GPU y descargar el modelo SMPL, con su propia licencia y registro.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [PyTorch](pytorch.md) | Backend. | Instala PyTorch. |
+| [WHAM](wham.md) | Otro enfoque de movimiento 3D en vídeo para comparar. (combinación por arquitectura) | Compara resultados. |
+| [blender](blender.md) | Visualizar y animar las mallas. (combinación por arquitectura) | Importa las mallas exportadas. |
+
+**Notas:** Sin alternativas declaradas. Código de investigación.
+
+Estado en GitHub: activo · último push 2026-02-07 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/shubham-goel/4D-Humans/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Requiere registrar y descargar SMPL aparte; las cifras de entrenamiento con varias A100 no son requisitos idénticos de una demo ni garantizan precisión métrica |
 | Coste | El coste depende del proveedor o la ruta. Sin API de IA obligatoria; SMPL, datos y pesos tienen condiciones de acceso y cómputo propios |
 | Equipo | Preparación según la ruta elegida. Conda; checkpoint; modelo SMPL neutral con acceso y licencia; equipo adecuado |
-
-Requiere registrar y descargar SMPL aparte; las cifras de entrenamiento con varias A100 no son requisitos idénticos de una demo ni garantizan precisión métrica
-
-## Qué puedes hacer con él
-
-Implementación de investigación para reconstruir y seguir personas en 3D a partir de imágenes o secuencias de video.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar reconstrucción humana 3D; Explorar seguimiento en un clip corto.
-
-## Cómo funciona
 
 Requiere registrar y descargar SMPL aparte; las cifras de entrenamiento con varias A100 no son requisitos idénticos de una demo ni garantizan precisión métrica
 
