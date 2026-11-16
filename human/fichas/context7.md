@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Context7, servicio de Upstash que da a los agentes documentación actualizada y ejemplos de código de librerías. Licencia MIT para el repo; el servicio es alojado y requiere clave. Es muy popular (~65k estrellas).
+
+## ¿Qué hace?
+
+Evita APIs inventadas o ejemplos viejos: el agente consulta la documentación vigente y por versión de la librería que usa. Funciona en dos modos: CLI + skill (`ctx7`, sin MCP) o servidor MCP con herramientas de documentación. Tiene paquetes como un toolkit para el AI SDK.
+
+## ¿Cómo lo hace?
+
+Se configura con `npx ctx7 setup` (Node.js 22.13+), que autentica por OAuth, genera una clave e instala la skill o el MCP (`--cursor`, `--claude`, `--opencode`…). También se puede usar el servidor remoto `https://mcp.context7.com/mcp` con cabecera de autorización. La documentación lista la instalación manual para más de 30 clientes.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Configuración automática con `npx ctx7 setup --claude`. | Ejecuta el setup y elige modo CLI + skill o MCP. |
+| [OpenCode](opencode.md) | Configuración automática con `--opencode`. | Ejecuta `npx ctx7 setup --opencode`. |
+| [Cline](cline.md) | Instalación manual como servidor MCP, según la lista de clientes de Context7. | Añade el servidor remoto con tu clave en la configuración MCP de Cline. |
+
+**Notas:** Alternativas (elige una): deepwiki-open. Las consultas salen hacia el servicio de Upstash.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada @upstash/context7-tools-ai-sdk@1.0.4 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/upstash/context7/blob/master/README.md) · [2](https://context7.com/docs/resources/all-clients)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Conectar documentación actual no acredita que todo ejemplo sea válido para la versión instalada en tu proyecto |
 | Coste | El coste depende del proveedor o la ruta. La documentación tiene cupos y modalidades de acceso; el modelo del agente se paga o limita aparte |
 | Equipo | Preparación según la ruta elegida. Node.js >=22.13; cliente MCP; clave Context7 recomendada |
-
-Conectar documentación actual no acredita que todo ejemplo sea válido para la versión instalada en tu proyecto
-
-## Qué puedes hacer con él
-
-Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente.
-
-## Por qué destaca
-
-Usos propuestos: Consultar APIs recientes durante programación; Evitar mezclar instrucciones de versiones distintas.
-
-## Cómo funciona
 
 Conectar documentación actual no acredita que todo ejemplo sea válido para la versión instalada en tu proyecto
 
@@ -92,14 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js >=22.13; cliente MCP; clave Context7 recomendada
 - **Etiquetas:** `mcp` `docs` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Cline](cline.md) | 71.6k | Agente de código autónomo para VS Code y JetBrains, también como CLI y SDK, con cualquier modelo. |
-| [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 
 ## Alternativas (elige una)
 

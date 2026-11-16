@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Monitor autoalojado de cambios en páginas web (changedetection.io), de @dgtlmoon. Licencia Apache-2.0. Es maduro y activo (~36k estrellas, 0.70.3) y tiene versión alojada de pago.
+
+## ¿Qué hace?
+
+Vigila páginas y avisa por Discord, email, Slack, Telegram, webhook y muchos otros canales cuando cambian precios, textos o condiciones. Puede filtrar por selectores, ejecutar pasos de navegador (login, clics) y resumir o filtrar los cambios con un LLM (OpenAI, Gemini, Anthropic u Ollama local). Incluye servidor MCP para conectar asistentes.
+
+## ¿Cómo lo hace?
+
+Se instala con Docker o Docker Compose (`docker compose up -d`). Los pasos de navegador y las páginas con JavaScript requieren activar Playwright con un navegador aparte. Tiene selector visual para elegir qué parte de la página vigilar.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Resúmenes y filtros de cambios con un modelo local, soportado según el README. | Levanta Ollama y configúralo como proveedor de LLM. |
+| [Claude Code](claude-code.md) | Consultar y gestionar vigilancias desde un asistente con el servidor MCP de changedetection.io. | Activa el MCP en tu instancia y regístralo en el cliente. |
+| [n8n](n8n.md) | Recibir los avisos por webhook y encadenar acciones. (combinación por arquitectura) | Configura una notificación webhook hacia un flujo de n8n. |
+
+**Notas:** Sin alternativas declaradas. Respeta los términos de uso de cada plataforma y la privacidad de las personas.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 0.70.3 (2026-11-09) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/dgtlmoon/changedetection.io/blob/master/README.md) · [2](https://changedetection.io/MCP)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. MCP requiere versión que lo incluya; su acceso al historial no acredita que el agente haya observado cambios futuros |
 | Coste | El coste depende del proveedor o la ruta. Las comparaciones clásicas no necesitan LLM; filtros semánticos usan API o modelo local; SaaS y proxies tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Docker; URL a vigilar; canal de aviso opcional |
-
-MCP requiere versión que lo incluya; su acceso al historial no acredita que el agente haya observado cambios futuros
-
-## Qué puedes hacer con él
-
-Monitor de cambios en páginas web con alertas por email, Slack, Telegram y más.
-
-## Por qué destaca
-
-Usos propuestos: Detectar cambios de precio permitidos; Monitorear avisos de una página.
-
-## Cómo funciona
 
 MCP requiere versión que lo incluya; su acceso al historial no acredita que el agente haya observado cambios futuros
 
@@ -93,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker; URL a vigilar; canal de aviso opcional
 - **Etiquetas:** `scraping` `notifications` `python` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 
 ## Enlaces
 

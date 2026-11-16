@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+SDK oficial en Python del Model Context Protocol. Licencia MIT (el proyecto MCP está migrando a Apache-2.0). Es muy usado (~25k estrellas, v2.3.0).
+
+## ¿Qué hace?
+
+Permite crear servidores MCP que exponen herramientas, recursos y prompts a cualquier host, y clientes que se conectan a cualquier servidor. Incluye transportes estándar y la API de alto nivel heredada de FastMCP 1.0. La v2 trae cambios documentados en «What's new in v2».
+
+## ¿Cómo lo hace?
+
+Se instala con `uv add "mcp[cli]"` o `pip install "mcp[cli]"`; el extra `cli` añade los comandos `mcp dev`, `mcp run` y `mcp install`. La documentación está en py.sdk.modelcontextprotocol.io.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [MCP Inspector](mcp-inspector.md) | Probar el servidor durante el desarrollo; `mcp dev` lo usa. | Ejecuta `mcp dev servidor.py`. |
+| [Pydantic AI](pydantic-ai.md) | Usar servidores MCP desde agentes Pydantic AI. (combinación por arquitectura) | Conecta el servidor como toolset MCP. |
+| [Claude Code](claude-code.md) | Probar el servidor en un agente. (combinación por arquitectura) | Regístralo con `claude mcp add`. |
+
+**Notas:** Alternativas (elige una): fastmcp.
+
+Estado en GitHub: activo · último push 2026-11-05 · última versión publicada v2.3.0 (2026-10-02) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/modelcontextprotocol/python-sdk/blob/main/README.md) · [2](https://py.sdk.modelcontextprotocol.io/get-started/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. La documentación revisada usa MCPServer y ofrece migración v2; no confundas este SDK con FastMCP independiente |
 | Coste | Sin pago a un modelo en la ruta básica. El SDK no necesita API de IA; el agente cliente y las herramientas externas mantienen sus costes |
 | Equipo | Preparación según la ruta elegida. Python 3.11+; uv; directorio de proyecto |
-
-La documentación revisada usa MCPServer y ofrece migración v2; no confundas este SDK con FastMCP independiente
-
-## Qué puedes hacer con él
-
-SDK oficial de Python para crear servidores y clientes del Model Context Protocol.
-
-## Por qué destaca
-
-Usos propuestos: Conectar una función Python a MCP; Servir un recurso de texto desde una aplicación.
-
-## Cómo funciona
 
 La documentación revisada usa MCPServer y ofrece migración v2; no confundas este SDK con FastMCP independiente
 
@@ -92,12 +106,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.11+; uv; directorio de proyecto
 - **Etiquetas:** `mcp` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [MCP Inspector](mcp-inspector.md) | 11.3k | Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. |
 
 ## Alternativas (elige una)
 

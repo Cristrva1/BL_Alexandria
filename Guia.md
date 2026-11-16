@@ -1104,7 +1104,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/Panniantong/Agent-Reach/blob/main/docs/install.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Leer una discusión pública para investigación; Obtener transcripciones de un video permitido — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [last30days](human/fichas/last30days-skill.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [OpenClaw](human/fichas/openclaw.md) · [last30days](human/fichas/last30days-skill.md)<br>
 **Más:** [ficha completa](human/fichas/agent-reach.md) · [GitHub](https://github.com/Panniantong/Agent-Reach)
 
 #### 🔍 last30days
@@ -1114,7 +1114,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Comando documentado:** `/plugin marketplace add mvanhorn/last30days-skill
 /plugin install last30days` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Preparar una reunión sobre una empresa; Revisar novedades de una herramienta — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Agent-Reach](human/fichas/agent-reach.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [Agent-Reach](human/fichas/agent-reach.md)<br>
 **Más:** [ficha completa](human/fichas/last30days-skill.md) · [GitHub](https://github.com/mvanhorn/last30days-skill)
 
 #### 🔍 Vane
@@ -1132,7 +1132,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `docker run -d --restart always -p "127.0.0.1:5000:5000" -v datastore-volume:/datastore --name changedetection.io docker.io/dgtlmoon/changedetection.io` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Detectar cambios de precio permitidos; Monitorear avisos de una página — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [n8n](human/fichas/n8n.md)<br>
+**Combina con:** [Ollama](human/fichas/ollama.md) · [Claude Code](human/fichas/claude-code.md) · [n8n](human/fichas/n8n.md)<br>
 **Más:** [ficha completa](human/fichas/changedetection.md) · [GitHub](https://github.com/dgtlmoon/changedetection.io)
 
 #### 🔍 ArchiveBox
@@ -1152,7 +1152,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Arranque:** [Instrucciones originales](https://github.com/yt-dlp/yt-dlp/wiki/Installation); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Respaldar videos propios; Obtener medios permitidos para edición — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [whisperX](human/fichas/whisperx.md) · [FFmpeg](human/fichas/ffmpeg.md) · [Fabric](human/fichas/fabric.md)<br>
+**Combina con:** [FFmpeg](human/fichas/ffmpeg.md) · [whisperX](human/fichas/whisperx.md) · [Fabric](human/fichas/fabric.md)<br>
 **Más:** [ficha completa](human/fichas/yt-dlp.md) · [GitHub](https://github.com/yt-dlp/yt-dlp)
 
 #### 📸 instaloader
@@ -1161,6 +1161,7 @@ playwright install` (comprobar los pasos completos en la ficha).<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `pip3 install instaloader` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Respaldar publicaciones propias; Actualizar una colección autorizada sin repetir todo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
+**Combina con:** [ArchiveBox](human/fichas/archivebox.md) · [whisper](human/fichas/whisper.md) · [yt-dlp](human/fichas/yt-dlp.md)<br>
 **Más:** [ficha completa](human/fichas/instaloader.md) · [GitHub](https://github.com/instaloader/instaloader)
 
 ---
@@ -1198,7 +1199,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `uv add fastmcp` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Exponer una función de inventario como herramienta; Probar autenticación de un servidor propio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [MCP Inspector](human/fichas/mcp-inspector.md) · [Claude Code](human/fichas/claude-code.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [MCP Inspector](human/fichas/mcp-inspector.md) · [Pydantic AI](human/fichas/pydantic-ai.md)<br>
 **Más:** [ficha completa](human/fichas/fastmcp.md) · [GitHub](https://github.com/PrefectHQ/fastmcp)
 
 #### 🧰 MCP TypeScript SDK ⭐
@@ -1207,7 +1208,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npm install @modelcontextprotocol/server` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir un servidor MCP en TypeScript; Crear un cliente que enumere herramientas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [MCP Inspector](human/fichas/mcp-inspector.md)<br>
+**Combina con:** [MCP Inspector](human/fichas/mcp-inspector.md) · [AI SDK (Vercel)](human/fichas/vercel-ai.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/mcp-typescript-sdk.md) · [GitHub](https://github.com/modelcontextprotocol/typescript-sdk)
 
 #### 🧰 MCP Python SDK
@@ -1216,7 +1217,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `uv add "mcp[cli]"      # or: pip install "mcp[cli]"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Conectar una función Python a MCP; Servir un recurso de texto desde una aplicación — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [MCP Inspector](human/fichas/mcp-inspector.md)<br>
+**Combina con:** [MCP Inspector](human/fichas/mcp-inspector.md) · [Pydantic AI](human/fichas/pydantic-ai.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/mcp-python-sdk.md) · [GitHub](https://github.com/modelcontextprotocol/python-sdk)
 
 #### 🧰 MCP Inspector
@@ -1225,7 +1226,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
 **Comando documentado:** `npx @modelcontextprotocol/inspector                   # web UI (default)` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Depurar un esquema MCP; Reproducir un fallo de una herramienta — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [FastMCP](human/fichas/fastmcp.md) · [MCP TypeScript SDK](human/fichas/mcp-typescript-sdk.md)<br>
+**Combina con:** [FastMCP](human/fichas/fastmcp.md) · [MCP TypeScript SDK](human/fichas/mcp-typescript-sdk.md) · [MCP Python SDK](human/fichas/mcp-python-sdk.md)<br>
 **Más:** [ficha completa](human/fichas/mcp-inspector.md) · [GitHub](https://github.com/modelcontextprotocol/inspector)
 
 #### 🛠️ mcp-use
@@ -1234,7 +1235,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Acceso:** API de IA opcional · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx -y create-mcp-use-app@latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Construir una herramienta con interfaz embebida; Desplegar un servidor MCP para una app propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Google MCP](human/fichas/mcp.md) · [awesome-mcp-servers](human/fichas/awesome-mcp-servers.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [awesome-mcp-servers](human/fichas/awesome-mcp-servers.md) · [Google MCP](human/fichas/mcp.md)<br>
 **Más:** [ficha completa](human/fichas/mcp-use.md) · [GitHub](https://github.com/mcp-use/mcp-use)
 
 ### Servidores MCP destacados
@@ -1245,7 +1246,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Comando documentado:** `npx ctx7 setup` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Consultar APIs recientes durante programación; Evitar mezclar instrucciones de versiones distintas — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Cline](human/fichas/cline.md) · [OpenCode](human/fichas/opencode.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [OpenCode](human/fichas/opencode.md) · [Cline](human/fichas/cline.md)<br>
 **Más:** [ficha completa](human/fichas/context7.md) · [GitHub](https://github.com/upstash/context7)
 
 #### 🔌 Playwright MCP ⭐
@@ -1254,7 +1255,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Comando documentado:** `claude mcp add playwright npx @playwright/mcp@latest` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Probar una navegación de tu app; Inspeccionar un formulario de desarrollo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [playwright](human/fichas/playwright.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [playwright](human/fichas/playwright.md) · [MCP Inspector](human/fichas/mcp-inspector.md)<br>
 **Más:** [ficha completa](human/fichas/playwright-mcp.md) · [GitHub](https://github.com/microsoft/playwright-mcp)
 
 #### 📚 servers
@@ -1272,7 +1273,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Consumo del agente que ya utilizas<br>
 **Arranque:** [Instrucciones originales](https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Diagnosticar una pantalla que falla; Inspeccionar rendimiento de una página propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Gemini CLI](human/fichas/gemini-cli.md) · [MCP Inspector](human/fichas/mcp-inspector.md)<br>
 **Más:** [ficha completa](human/fichas/chrome-devtools-mcp.md) · [GitHub](https://github.com/ChromeDevTools/chrome-devtools-mcp)
 
 #### 🔌 GitHub MCP Server
@@ -1281,7 +1282,7 @@ SDKs, servidores, clientes y directorios MCP. Un servidor aporta acciones o dato
 **Acceso:** Sin clave propia de API de IA en la ruta básica · El coste depende del proveedor o la ruta<br>
 **Arranque:** [Instrucciones originales](https://github.com/github/github-mcp-server/blob/main/README.md); no se deduce un paquete por el nombre.<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Explorar una base de código; Revisar el estado de una pull request — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
-**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md)<br>
+**Combina con:** [Claude Code](human/fichas/claude-code.md) · [Codex CLI](human/fichas/codex.md) · [strix](human/fichas/strix.md)<br>
 **Más:** [ficha completa](human/fichas/github-mcp-server.md) · [GitHub](https://github.com/github/github-mcp-server)
 
 #### 🔌 Blender MCP

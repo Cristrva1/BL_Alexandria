@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Framework Python para construir servidores, clientes y aplicaciones interactivas del Model Context Protocol, hecho por Prefect. Licencia Apache-2.0. Es muy popular (~29k estrellas, v4.2.0); su versión 1.0 se incorporó al SDK oficial de Python en 2024.
+
+## ¿Qué hace?
+
+Define herramientas, recursos y prompts con funciones Python decoradas y genera el esquema, la validación y el transporte. Incluye cliente, composición y proxy de servidores, autenticación, pruebas y despliegue. Prefect ofrece aparte FastMCP Gateway (producto comercial) para operar servidores a escala.
+
+## ¿Cómo lo hace?
+
+Se instala con `uv pip install fastmcp` o `pip install fastmcp` y se ejecuta con `fastmcp run`. Tiene comandos para instalar el servidor en clientes como Claude Code y una contraparte TypeScript mantenida por el mismo equipo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Instalar el servidor en Claude Code con la integración documentada de FastMCP. | Ejecuta el comando de instalación para Claude Code de FastMCP. |
+| [MCP Inspector](mcp-inspector.md) | Probar y depurar el servidor antes de usarlo. (combinación por arquitectura) | Lanza el Inspector contra tu servidor. |
+| [Pydantic AI](pydantic-ai.md) | Consumir el servidor desde agentes Python con el cliente MCP de Pydantic AI. (combinación por arquitectura) | Conecta el servidor como toolset MCP en Pydantic AI. |
+
+**Notas:** Alternativas (elige una): mcp-python-sdk.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.2.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/PrefectHQ/fastmcp/blob/main/README.md) · [2](https://gofastmcp.com/getting-started/installation) · [3](https://gofastmcp.com/integrations/claude-code)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es un framework para construir servidores y clientes, no un servidor de negocio ya configurado |
 | Coste | Sin pago a un modelo en la ruta básica. La biblioteca no necesita modelo; el cliente, alojamiento y servicios conectados pueden costar |
 | Equipo | Preparación según la ruta elegida. Python y uv; proyecto de prueba |
-
-Es un framework para construir servidores y clientes, no un servidor de negocio ya configurado
-
-## Qué puedes hacer con él
-
-La forma rápida y pythónica de crear servidores y clientes MCP, con auth, despliegue y pruebas.
-
-## Por qué destaca
-
-Usos propuestos: Exponer una función de inventario como herramienta; Probar autenticación de un servidor propio.
-
-## Cómo funciona
 
 Es un framework para construir servidores y clientes, no un servidor de negocio ya configurado
 
@@ -91,13 +105,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y uv; proyecto de prueba
 - **Etiquetas:** `mcp` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [MCP Inspector](mcp-inspector.md) | 11.3k | Herramienta oficial para probar y depurar servidores MCP desde una interfaz web. |
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
 
 ## Alternativas (elige una)
 

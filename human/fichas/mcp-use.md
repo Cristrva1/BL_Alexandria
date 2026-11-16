@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Framework TypeScript para construir, probar y publicar servidores MCP, plugins de ChatGPT y conectores de Claude, de mcp-use. Licencia MIT. Es activo (~11k estrellas, mcp-use@2.12.4).
+
+## ¿Qué hace?
+
+Ofrece tipado completo, vistas nativas y soporte de MCP Apps, un Inspector integrado y una experiencia pensada para agentes: andamiaje, invocación, inspección, capturas y despliegue desde el propio agente. Incluye ejemplos y opción de despliegue en su plataforma.
+
+## ¿Cómo lo hace?
+
+Se instala con npm (`mcp-use`) y se crea un proyecto con su CLI; la v2 tiene guía de migración que puede ejecutar el agente. La documentación está en docs.mcp-use.com.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Construir y probar conectores desde el agente con el flujo «agent-first» de mcp-use. | Crea el proyecto y deja que el agente use los comandos de mcp-use. |
+| [awesome-mcp-servers](awesome-mcp-servers.md) | Buscar servidores existentes antes de construir uno. (combinación por arquitectura) | Consulta la lista y reutiliza lo que exista. |
+| [Google MCP](mcp.md) | Referencia de servidores MCP de Google para integrarlos o tomarlos como ejemplo. (combinación por arquitectura) | Revisa la lista de Google y conecta los que necesites. |
+
+**Notas:** Alternativas (elige una): mcp-typescript-sdk.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada mcp-use@2.12.4 (2026-11-11) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mcp-use/mcp-use/blob/main/README.md) · [2](https://docs.mcp-use.com/v2/typescript/getting-started/welcome)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. MCP Apps con widgets requiere capacidades del cliente adicionales a las de un servidor MCP de texto |
 | Coste | El coste depende del proveedor o la ruta. El servidor básico no exige LLM; agentes, proveedores y alojamiento tienen costes según ruta |
 | Equipo | Preparación según la ruta elegida. Node.js; plantilla elegida; Python solo para su ruta correspondiente |
-
-MCP Apps con widgets requiere capacidades del cliente adicionales a las de un servidor MCP de texto
-
-## Qué puedes hacer con él
-
-Framework fullstack para construir MCP Apps y MCP Servers en TypeScript o Python, con utilidades para pasar de un prototipo local a una app desplegable.
-
-## Por qué destaca
-
-Usos propuestos: Construir una herramienta con interfaz embebida; Desplegar un servidor MCP para una app propia.
-
-## Cómo funciona
 
 MCP Apps con widgets requiere capacidades del cliente adicionales a las de un servidor MCP de texto
 
@@ -93,13 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node.js; plantilla elegida; Python solo para su ruta correspondiente
 - **Etiquetas:** `automation` `mcp` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Google MCP](mcp.md) | 4.7k | Directorio de servidores MCP oficiales de Google, ejemplos y orientación para desplegarlos en Google Cloud. |
-| [awesome-mcp-servers](awesome-mcp-servers.md) | 97.7k | Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar. |
 
 ## Alternativas (elige una)
 

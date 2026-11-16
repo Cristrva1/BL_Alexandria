@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Descargador de audio y vídeo por línea de comandos con soporte para miles de sitios, fork de youtube-dl. El código del repositorio es Unlicense, pero los ejecutables publicados incluyen código GPLv3+ o ISC. Es muy maduro y activo (~208k estrellas, 2026.10.26).
+
+## ¿Qué hace?
+
+Descarga vídeos, audio, listas, subtítulos y metadatos, con selección avanzada de formatos, posprocesado, integración con SponsorBlock y plantillas de nombres. Se mantiene al día con los cambios de los sitios mediante versiones frecuentes. También se usa como librería Python.
+
+## ¿Cómo lo hace?
+
+Se instala con los binarios oficiales, `pip install -U "yt-dlp[default]"` o gestores de paquetes. Usa FFmpeg para unir formatos y convertir. Algunos sitios necesitan cookies o un runtime de JavaScript.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [FFmpeg](ffmpeg.md) | Dependencia recomendada para fusionar y convertir formatos. | Instala FFmpeg antes de usar yt-dlp. |
+| [whisperX](whisperx.md) | Transcribir el audio descargado. (combinación por arquitectura) | Descarga con `-x` y pasa el audio a WhisperX. |
+| [Fabric](fabric.md) | Extraer transcripciones de YouTube y resumirlas con patrones de Fabric. (combinación por arquitectura) | Instala yt-dlp y usa las utilidades de YouTube de Fabric. |
+
+**Notas:** Sin alternativas declaradas. Descargar contenido protegido puede infringir derechos de autor o términos de uso.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada 2026.10.26 (2026-10-26) · licencia declarada Unlicense (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/yt-dlp/yt-dlp/blob/master/README.md) · [2](https://github.com/yt-dlp/yt-dlp/wiki/Installation)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El comando nightly del README instala versiones preliminares; empieza con la ruta estable y respeta permisos de uso |
 | Coste | Sin pago a un modelo en la ruta básica. No requiere IA; acceso al contenido y servicios externos pueden tener sus propios costes |
 | Equipo | Preparación según la ruta elegida. Binario oficial o Python compatible; FFmpeg para unir y convertir medios |
-
-El comando nightly del README instala versiones preliminares; empieza con la ruta estable y respeta permisos de uso
-
-## Qué puedes hacer con él
-
-Descargador de audio y video por línea de comandos compatible con miles de sitios.
-
-## Por qué destaca
-
-Usos propuestos: Respaldar videos propios; Obtener medios permitidos para edición.
-
-## Cómo funciona
 
 El comando nightly del README instala versiones preliminares; empieza con la ruta estable y respeta permisos de uso
 
@@ -84,14 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Binario oficial o Python compatible; FFmpeg para unir y convertir medios
 - **Etiquetas:** `video` `audio` `scraping` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [whisperX](whisperx.md) | 25.3k | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
-| [FFmpeg](ffmpeg.md) | 67.3k | Conjunto de librerías y CLI para convertir, cortar, filtrar y transmitir audio y video en casi cualquier formato. |
-| [Fabric](fabric.md) | 44.6k | CLI con cientos de patrones de prompts para resumir, extraer y transformar texto desde la terminal. |
 
 ## Enlaces
 

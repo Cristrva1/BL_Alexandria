@@ -31,7 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Lista los canales y lee un README público de GitHub antes de añadir canales opcionales
 **Qué comprobar:** Puedes distinguir canales disponibles, autenticados y experimentales
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `last30days-skill`
+**Combina con:** `claude-code`, `openclaw`, `last30days-skill`
 
 ## `archivebox`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=scraping,data,python,docker
@@ -121,7 +121,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Vigila un texto en una página propia y modifícalo una vez para revisar la diferencia
 **Qué comprobar:** El historial identifica el cambio concreto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`
+**Combina con:** `ollama`, `claude-code`, `n8n`
 
 ## `crawl4ai`
 role=library · exec=local · setup=medium · mcp=True · prov=— · tags=scraping,python
@@ -304,6 +304,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Descarga una publicación propia y compara archivo, descripción y metadatos
 **Qué comprobar:** La carpeta contiene los medios y datos esperados
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `archivebox`, `whisper`, `yt-dlp`
 
 ## `jina-reader`
 role=platform · exec=cloud · setup=easy · mcp=False · prov=— · tags=scraping,rag,typescript
@@ -366,7 +367,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Investiga un tema concreto y exige fechas, enlaces y distinción entre opinión y evidencia
 **Qué comprobar:** Puedes abrir las fuentes y verificar que corresponden al periodo solicitado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `agent-reach`
+**Combina con:** `claude-code`, `codex`, `agent-reach`
 **Alternativas (elige una):** `social-media-research-skills`
 
 ## `llm-scraper`
@@ -616,4 +617,4 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Consulta formatos de un video propio y descarga una versión que puedas reproducir
 **Qué comprobar:** El archivo conserva audio y video y se abre en un reproductor
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `whisperx`, `ffmpeg`, `fabric`
+**Combina con:** `ffmpeg`, `whisperx`, `fabric`

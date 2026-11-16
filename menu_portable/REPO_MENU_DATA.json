@@ -21063,6 +21063,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
+        "openclaw",
         "last30days-skill"
       ],
       "alt": []
@@ -21422,6 +21423,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Detectar cambios de precio permitidos; Monitorear avisos de una página",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "ollama",
+        "claude-code",
         "n8n"
       ],
       "alt": []
@@ -22129,7 +22132,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Respaldar publicaciones propias; Actualizar una colección autorizada sin repetir todo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "archivebox",
+        "whisper",
+        "yt-dlp"
+      ],
       "alt": []
     },
     {
@@ -22367,6 +22374,7 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
+        "codex",
         "agent-reach"
       ],
       "alt": [
@@ -23325,8 +23333,8 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Respaldar videos propios; Obtener medios permitidos para edición",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "whisperx",
         "ffmpeg",
+        "whisperx",
         "fabric"
       ],
       "alt": []
@@ -23910,7 +23918,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Diagnosticar una pantalla que falla; Inspeccionar rendimiento de una página propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "claude-code"
+        "claude-code",
+        "gemini-cli",
+        "mcp-inspector"
       ],
       "alt": [
         "playwright-mcp",
@@ -24033,8 +24043,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "cline",
-        "opencode"
+        "opencode",
+        "cline"
       ],
       "alt": [
         "deepwiki-open"
@@ -24150,8 +24160,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Exponer una función de inventario como herramienta; Probar autenticación de un servidor propio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "claude-code",
         "mcp-inspector",
-        "claude-code"
+        "pydantic-ai"
       ],
       "alt": [
         "mcp-python-sdk"
@@ -24511,7 +24522,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "codex"
+        "codex",
+        "strix"
       ],
       "alt": []
     },
@@ -24850,7 +24862,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "fastmcp",
-        "mcp-typescript-sdk"
+        "mcp-typescript-sdk",
+        "mcp-python-sdk"
       ],
       "alt": []
     },
@@ -25082,7 +25095,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Conectar una función Python a MCP; Servir un recurso de texto desde una aplicación",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mcp-inspector"
+        "mcp-inspector",
+        "pydantic-ai",
+        "claude-code"
       ],
       "alt": [
         "fastmcp"
@@ -25199,7 +25214,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Construir un servidor MCP en TypeScript; Crear un cliente que enumere herramientas",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mcp-inspector"
+        "mcp-inspector",
+        "vercel-ai",
+        "claude-code"
       ],
       "alt": [
         "mcp-use"
@@ -25317,8 +25334,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Construir una herramienta con interfaz embebida; Desplegar un servidor MCP para una app propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "mcp",
-        "awesome-mcp-servers"
+        "claude-code",
+        "awesome-mcp-servers",
+        "mcp"
       ],
       "alt": [
         "mcp-typescript-sdk"
@@ -25441,7 +25459,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "claude-code",
-        "playwright"
+        "playwright",
+        "mcp-inspector"
       ],
       "alt": [
         "chrome-devtools-mcp",

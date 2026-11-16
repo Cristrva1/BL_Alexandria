@@ -152,7 +152,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre tu app local y pide revisar errores de consola y una petición de red
 **Qué comprobar:** El informe identifica el error y la petición que puedes reproducir
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`
+**Combina con:** `claude-code`, `gemini-cli`, `mcp-inspector`
 **Alternativas (elige una):** `playwright-mcp`, `browser-harness`
 
 ## `context7`
@@ -183,7 +183,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Pide documentación de una versión concreta y contrasta el ejemplo devuelto con la fuente
 **Qué comprobar:** El agente identifica la biblioteca y la versión consultada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `cline`, `opencode`
+**Combina con:** `claude-code`, `opencode`, `cline`
 **Alternativas (elige una):** `deepwiki-open`
 
 ## `fastmcp`
@@ -214,7 +214,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Copia la herramienta add del ejemplo y solicita sumar dos números con un cliente MCP
 **Qué comprobar:** La herramienta devuelve la suma esperada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mcp-inspector`, `claude-code`
+**Combina con:** `claude-code`, `mcp-inspector`, `pydantic-ai`
 **Alternativas (elige una):** `mcp-python-sdk`
 
 ## `figma-context-mcp`
@@ -305,7 +305,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Lista archivos y lee un README de un repositorio público antes de habilitar herramientas de escritura
 **Qué comprobar:** El agente devuelve contenidos y enlaces del repositorio elegido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `codex`
+**Combina con:** `claude-code`, `codex`, `strix`
 
 ## `mcp`
 role=directory · exec=hybrid · setup=medium · mcp=True · prov=— · tags=mcp
@@ -395,7 +395,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Conecta un servidor local, lista herramientas y llama una con datos ficticios
 **Qué comprobar:** Puedes inspeccionar argumentos, respuesta y errores sin un agente de IA
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `fastmcp`, `mcp-typescript-sdk`
+**Combina con:** `fastmcp`, `mcp-typescript-sdk`, `mcp-python-sdk`
 
 ## `mcp-neo4j`
 role=runtime · exec=hybrid · setup=medium · mcp=True · prov=— · tags=mcp,python
@@ -455,7 +455,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Implementa el servidor add del ejemplo y comprueba su esquema con Inspector
 **Qué comprobar:** Una llamada con dos enteros devuelve su suma
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mcp-inspector`
+**Combina con:** `mcp-inspector`, `pydantic-ai`, `claude-code`
 **Alternativas (elige una):** `fastmcp`
 
 ## `mcp-typescript-sdk`
@@ -486,7 +486,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sigue el ejemplo v2 para exponer una herramienta y llámala desde Inspector
 **Qué comprobar:** Ves el esquema y una respuesta válida de la herramienta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mcp-inspector`
+**Combina con:** `mcp-inspector`, `vercel-ai`, `claude-code`
 **Alternativas (elige una):** `mcp-use`
 
 ## `mcp-use`
@@ -517,7 +517,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Genera una app MCP de ejemplo y prueba su herramienta desde el inspector incluido
 **Qué comprobar:** Puedes ver una respuesta y la interfaz asociada si el cliente admite MCP Apps
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mcp`, `awesome-mcp-servers`
+**Combina con:** `claude-code`, `awesome-mcp-servers`, `mcp`
 **Alternativas (elige una):** `mcp-typescript-sdk`
 
 ## `playwright-mcp`
@@ -548,7 +548,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre una página local con un formulario ficticio y comprueba sus campos antes de rellenarla
 **Qué comprobar:** La instantánea accesible identifica campos y el resultado de la acción
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `playwright`
+**Combina con:** `claude-code`, `playwright`, `mcp-inspector`
 **Alternativas (elige una):** `chrome-devtools-mcp`, `browser-use`, `browser-harness`
 
 ## `public-apis`
