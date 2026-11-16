@@ -31,6 +31,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Coloca un PDF breve en docs y pregunta por un dato de una página concreta
 **Qué comprobar:** Puedes ver documentos recuperados y aclarar una consulta ambigua
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `langgraph`, `ollama`, `qdrant`, `langfuse`, `ragas`
 
 ## `agentmemory`
 role=library · exec=hybrid · setup=easy · mcp=True · prov=— · tags=agents,memory,typescript
@@ -60,7 +61,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Registra una decisión ficticia y búscala desde otro cliente conectado al mismo servidor
 **Qué comprobar:** Puedes inspeccionar el recuerdo y confirmar que ambos clientes usan la misma instancia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mem0`, `ruflo`
+**Combina con:** `claude-code`, `gemini-cli`, `hermes-agent`, `deepseek-harness`
 **Alternativas (elige una):** `engram`, `supermemory`, `claude-mem`
 
 ## `chroma`
@@ -91,8 +92,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Crea una colección con dos textos y consulta uno de sus temas
 **Qué comprobar:** Se devuelve el documento relacionado y su identificador
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llama-index`, `langchain`
-**Alternativas (elige una):** `qdrant`, `pgvector`, `milvus`, `faiss`
+**Combina con:** `mempalace`, `anything-llm`, `langchain`
+**Alternativas (elige una):** `qdrant`, `pgvector`, `milvus`, `faiss`, `lancedb`
 
 ## `claude-mem`
 role=skill · exec=local · setup=easy · mcp=True · prov=anthropic,mcp · tags=memory,coding-agent,mcp,typescript
@@ -122,7 +123,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda una decisión ficticia en una sesión y consulta si se recupera en una nueva
 **Qué comprobar:** Puedes distinguir captura, resumen y recuperación y ver qué proveedor los produjo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `superpowers`
+**Combina con:** `claude-code`, `codex`, `opencode`, `openclaw`
 **Alternativas (elige una):** `engram`, `agentmemory`
 
 ## `cognee`
@@ -153,7 +154,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda un hecho ficticio con remember y recupéralo con recall sin configurar una clave LLM
 **Qué comprobar:** Se devuelve el texto de origen y no una respuesta inventada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `qdrant`, `mcp-neo4j`
+**Combina con:** `claude-code`, `codex`, `openclaw`, `neo4j-mcp`
 **Alternativas (elige una):** `graphiti`, `mem0`, `graphrag`, `letta`
 
 ## `dsh-noema`
@@ -184,6 +185,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Guarda un recuerdo ficticio desde DSH y comprueba que puedes verlo y eliminarlo desde ajustes
 **Qué comprobar:** El recuerdo persiste y el panel muestra su contenido
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `codex`, `hermes-agent`, `deepseek-harness`
 
 ## `engram`
 role=runtime · exec=local · setup=easy · mcp=True · prov=mcp · tags=memory,mcp,coding-agent,go
@@ -213,7 +215,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Guarda una decisión con su razón y recupérala por palabras clave
 **Qué comprobar:** El registro aparece con contenido y contexto que puedes inspeccionar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `opencode`
+**Combina con:** `claude-code`, `opencode`, `gemini-cli`, `deepseek-harness`, `antigravity-cli`
 **Alternativas (elige una):** `claude-mem`, `agentmemory`
 
 ## `faiss`
@@ -244,7 +246,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Construye un índice con cinco vectores y consulta el más cercano a uno conocido
 **Qué comprobar:** El resultado coincide con el vecino calculado para la muestra
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `transformers`
+**Combina con:** `langchain`, `llama-index`, `transformers`
 **Alternativas (elige una):** `qdrant`, `chroma`
 
 ## `graphiti`
@@ -275,7 +277,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Añade dos hechos con fechas distintas y consulta cuál era válido en cada momento
 **Qué comprobar:** El grafo conserva relaciones temporales y sus fuentes
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mcp-neo4j`
+**Combina con:** `claude-code`, `langgraph`, `mcp-neo4j`, `mirofish`, `neo4j-mcp`
 **Alternativas (elige una):** `cognee`, `graphrag`
 
 ## `graphrag`
@@ -306,23 +308,84 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Indexa unos textos ficticios y pregunta por un tema que conecte varios de ellos
 **Qué comprobar:** Puedes revisar entidades, comunidades y fuentes de la respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `graphify`, `mcp-neo4j`, `turbovec`
+**Combina con:** `litellm`, `mcp-neo4j`, `docling`, `graphify`, `scrapegraph-ai`, `kotaemon`
 **Alternativas (elige una):** `graphiti`, `cognee`, `lightrag`
 
-## `letta`
-role=platform · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=memory,agents,python
+## `kotaemon`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=rag,python,docs,local
 
-**Qué es:** Plataforma para agentes con estado y memoria avanzada que aprenden con el tiempo (antes MemGPT).
-**Stack:** Node.js y npm; credenciales del proveedor según la guía actual
+**Qué es:** Interfaz RAG limpia y personalizable para chatear con documentos, con modelos locales o por API y soporte de GraphRAG y LightRAG.
+**Stack:** Python, Dockerfile, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/Cinnamon/kotaemon
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/Cinnamon/kotaemon/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: hacer preguntas con citas sobre una carpeta de PDF propios; comparar estrategias RAG clásicas y basadas en grafos sobre el mismo corpus
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Arranca la imagen Docker main-lite (u ollama) del README, sube un PDF y haz una pregunta.
+**Qué comprobar:** La respuesta incluye citas enlazadas a las páginas del documento.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `lightrag`, `graphrag`, `docling`
+
+## `lancedb`
+role=library · exec=local · setup=easy · mcp=False · prov=— · tags=vector-db,rag,rust,library
+
+**Qué es:** Base de datos vectorial embebida sobre el formato columnar Lance: búsqueda vectorial, de texto completo y SQL sin servidor que mantener.
+**Stack:** Rust, Cargo.toml, docker-compose.yml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/lancedb/lancedb
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/lancedb/lancedb/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: añadir búsqueda vectorial a una app local sin desplegar un servidor; gestionar datos multimodales y sus embeddings con versiones para entrenamiento
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala el SDK de Python, crea una tabla con vectores de ejemplo y lanza una búsqueda.
+**Qué comprobar:** La búsqueda devuelve los vecinos más cercanos y la tabla queda guardada en una carpeta local.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `langchain`, `llama-index`, `duckdb`, `polars`
+**Alternativas (elige una):** `chroma`
+
+## `letta`
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=openai,anthropic,local · tags=memory,agents,typescript
+
+**Qué es:** Harness de agentes con estado (Letta Code, antes MemGPT): memoria, identidad y skills que el propio agente reescribe con el tiempo.
+**Stack:** Node.js y npm, o Python 3.9+ con uv/pipx; credenciales del proveedor de modelos o cuenta de Letta
 **Acceso y costes:**
 - API de IA: Depende de la ruta elegida. El runtime, Letta Cloud y los modelos tienen condiciones propias; el comando npm no aporta créditos
 - Claude Code: Integración no documentada
 - Codex: Integración no documentada
 - Antigravity: Integración no documentada
-- Modelos locales: Modelo local no documentado. Este repositorio remite ahora el desarrollo a letta-ai/letta-code; la rama archive conserva el servidor V1 retirado
+- Modelos locales: Modelos locales documentados. Con `letta backend local`, los proveedores Ollama o LM Studio mantienen el estado del agente y el modelo en tu equipo (docs.letta.com/letta-code/models).
 - Coste: El coste depende del proveedor o la ruta. El runtime, Letta Cloud y los modelos tienen condiciones propias; el comando npm no aporta créditos
-- Equipo: Preparación según la ruta elegida. Node.js y npm; credenciales del proveedor según la guía actual
-**Repo:** https://github.com/letta-ai/letta
+- Equipo: Preparación según la ruta elegida. Node.js y npm, o Python 3.9+ con uv/pipx; Linux glibc 2.28+, macOS 14+ o Windows x64
+**Repo:** https://github.com/letta-ai/letta-code
 
 **Instalación** [+]:
 
@@ -337,7 +400,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Sigue el enlace al código actual y crea un agente con una nota de memoria ficticia
 **Qué comprobar:** Puedes recuperar esa nota en una conversación posterior
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`
+**Combina con:** `ollama`, `vllm`, `openclaw`, `hermes-agent`
 **Alternativas (elige una):** `mem0`, `cognee`
 
 ## `lightrag`
@@ -369,8 +432,38 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Indexa un documento ficticio y compara una consulta sobre una entidad con otra sobre sus relaciones
 **Qué comprobar:** Puedes inspeccionar los resultados y las relaciones recuperadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `qdrant`
+**Combina con:** `pgvector`, `ollama`, `docling`, `langfuse`, `ragas`, `deeptutor`
 **Alternativas (elige una):** `graphrag`, `ragflow`, `pageindex`
+
+## `meilisearch`
+role=platform · exec=hybrid · setup=easy · mcp=False · prov=— · tags=rag,search,rust,docker
+
+**Qué es:** Motor de búsqueda rápido en Rust con texto completo, búsqueda semántica e híbrida, facetas, tolerancia a erratas y API sencilla.
+**Stack:** Rust, Cargo.toml, Dockerfile
+**Acceso y costes:**
+- API de IA: API de IA opcional. La función básica y las funciones de IA se configuran por separado; activar un proveedor puede añadir credenciales y consumo.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: El coste depende del proveedor o la ruta. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/meilisearch/meilisearch
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/meilisearch/meilisearch/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: añadir búsqueda instantánea con facetas a una web o aplicación; combinar búsqueda por palabras y semántica como capa de recuperación para RAG
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Arranca Meilisearch con Docker o el script de instalación, sube un JSON de ejemplo y busca con una errata.
+**Qué comprobar:** La búsqueda devuelve los documentos correctos en milisegundos pese a la errata.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `langchain`, `firecrawl`
 
 ## `mem0`
 role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=memory,python
@@ -400,7 +493,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda dos preferencias de un usuario ficticio y consulta una de ellas por su identificador
 **Qué comprobar:** La búsqueda devuelve la preferencia del usuario correcto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `crewai`, `langchain`, `agentmemory`
+**Combina con:** `langgraph`, `crewai`, `qdrant`, `hermes-desktop`, `agents-towards-production`, `agno`
 **Alternativas (elige una):** `letta`, `cognee`, `supermemory`
 
 ## `mempalace`
@@ -432,7 +525,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Indexa dos notas propias y busca una decisión con palabras distintas a las originales
 **Qué comprobar:** Puedes abrir el fragmento literal y comprobar su origen
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `open-notebook`, `odysseus`
+**Combina con:** `claude-code`, `chroma`, `codex`
 
 ## `milvus`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=vector-db,rag,go,docker
@@ -462,8 +555,8 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea una colección, inserta tres vectores y busca uno cercano
 **Qué comprobar:** Puedes contrastar el vecino y los metadatos devueltos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `llama-index`
-**Alternativas (elige una):** `qdrant`, `chroma`
+**Combina con:** `anything-llm`, `lightrag`, `llama-index`, `langchain4j`
+**Alternativas (elige una):** `qdrant`, `chroma`, `pgvector`, `weaviate`
 
 ## `onyx`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=local · tags=rag,agent,python
@@ -493,6 +586,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta dos documentos de prueba y formula una consulta que exija una cita
 **Qué comprobar:** La respuesta muestra fuentes accesibles para el usuario que consulta
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `litellm`, `searxng`, `firecrawl`
 **Alternativas (elige una):** `anything-llm`
 
 ## `openviking`
@@ -523,7 +617,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda una nota de contexto ficticia y consulta cómo se recupera en otra sesión
 **Qué comprobar:** Puedes inspeccionar el documento y la memoria que usa el agente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`
+**Combina con:** `claude-code`, `openclaw`, `ollama`
 
 ## `pageindex`
 role=library · exec=cloud · setup=easy · mcp=False · prov=openai · tags=rag,docs,python
@@ -553,7 +647,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Indexa un PDF con secciones y pregunta por un dato de una sección concreta
 **Qué comprobar:** La recuperación señala la parte pertinente del documento
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `docling`
+**Combina con:** `claude-code`, `openai-agents-python`, `claude-agent-sdk-python`
 **Alternativas (elige una):** `lightrag`
 
 ## `pgvector`
@@ -584,8 +678,8 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Habilita la extensión en una base de prueba y compara tres vectores junto a sus filas
 **Qué comprobar:** La consulta devuelve la fila más cercana usando la distancia elegida
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `n8n`, `llama-index`
-**Alternativas (elige una):** `qdrant`, `chroma`
+**Combina con:** `supabase`, `anything-llm`, `librechat`, `lightrag`, `langchain4j`
+**Alternativas (elige una):** `qdrant`, `chroma`, `milvus`
 
 ## `qdrant`
 role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=vector-db,rag,rust,docker
@@ -615,8 +709,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Inserta tres vectores pequeños con etiquetas y consulta el más parecido con un filtro
 **Qué comprobar:** La búsqueda devuelve el registro esperado y respeta el filtro
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `docling`, `n8n`, `llama-index`, `langchain`
-**Alternativas (elige una):** `milvus`, `chroma`, `pgvector`, `faiss`
+**Combina con:** `docling`, `activepieces`, `llama-index`, `langchain`, `crawl4ai`
+**Alternativas (elige una):** `milvus`, `chroma`, `pgvector`, `faiss`, `weaviate`
 
 ## `ragflow`
 role=platform · exec=local · setup=heavy · mcp=False · prov=openai,local · tags=rag,docs,agents,docker
@@ -646,7 +740,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Indexa un PDF propio corto y pregunta por un dato identificable con cita
 **Qué comprobar:** La respuesta permite abrir el fragmento y comprobar su procedencia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `docling`
+**Combina con:** `ollama`, `activepieces`, `langfuse`, `paddleocr`
 **Alternativas (elige una):** `dify`, `lightrag`
 
 ## `supermemory`
@@ -677,7 +771,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Guarda una nota de prueba y consulta su contenido desde una segunda sesión
 **Qué comprobar:** Puedes verificar qué se almacenó y en qué instancia
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `vercel-ai`
+**Combina con:** `claude-code`, `opencode`, `ollama`
 **Alternativas (elige una):** `mem0`, `agentmemory`
 
 ## `turbovec`
@@ -708,4 +802,65 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Indexa un conjunto pequeño y compara vecinos antes y después de cuantizar
 **Qué comprobar:** Puedes medir memoria, tiempo y coincidencia en tus propios datos
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `mem0`, `graphrag`
+**Combina con:** `langchain`, `llama-index`, `haystack`
+
+## `txtai`
+role=library · exec=hybrid · setup=easy · mcp=False · prov=— · tags=rag,python,library,mcp
+
+**Qué es:** Framework de IA todo en uno para búsqueda semántica, RAG, pipelines con LLM, flujos y agentes sobre una base de embeddings propia.
+**Stack:** Python, pyproject.toml, setup.py
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/neuml/txtai
+
+**Instalación** [+]:
+
+```
+pip install txtai
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: indexar documentos y hacer búsqueda semántica con SQL en local; montar un RAG o un grafo de conocimiento sin desplegar varios servicios
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala con `pip install txtai`, indexa unas frases y busca por significado.
+**Qué comprobar:** La búsqueda devuelve las frases más parecidas aunque no compartan palabras.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `transformers`, `litellm`, `llama-cpp`, `claude-code`
+
+## `weaviate`
+role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=vector-db,rag,go,docker
+
+**Qué es:** Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y vectorización integrada.
+**Stack:** Go, Dockerfile, docker-compose.yml, go.mod, pyproject.toml
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/weaviate/weaviate
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/weaviate/weaviate/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: montar la búsqueda semántica con filtros de un catálogo o base documental; servir la recuperación de un sistema RAG con búsqueda híbrida
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Arranca Weaviate con el Docker Compose del quickstart local, crea una colección y busca con el cliente de Python.
+**Qué comprobar:** La consulta híbrida devuelve objetos ordenados por relevancia con sus propiedades.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `langchain`, `llama-index`, `ollama`, `claude-code`
+**Alternativas (elige una):** `qdrant`, `milvus`

@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+API de Python no oficial y skill para agentes para Google NotebookLM, rebautizado como Gemini Notebook en julio de 2026, creada por teng-lin. MIT y muy activa (v0.8.6); usa APIs no documentadas de Google que pueden cambiar sin aviso y no tiene afiliación con Google.
+
+## ¿Qué hace?
+
+Da acceso programático a NotebookLM, incluidas funciones que la web no expone: importación masiva de fuentes (URL, PDF, YouTube, Google Drive), consultas de investigación con importación automática, y generación de resúmenes en audio (podcasts), videos, presentaciones, cuestionarios, tarjetas, infografías, tablas, mapas mentales y guías de estudio. Descarga los artefactos (MP3, MP4, PDF, PNG, CSV, JSON, Markdown) en lote y exporta a Docs/Sheets.
+
+## ¿Cómo lo hace?
+
+Biblioteca Python asíncrona con CLI, un servidor REST local con rutas protegidas y una skill para Claude Code, Codex y otros agentes (instalable con `npx skills add` o `notebooklm skill install`). Se autentica con tu sesión de Google y está sujeta a límites de uso; recomendada para prototipos, investigación y proyectos personales.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Skill oficial para que el agente orqueste NotebookLM mientras Gemini hace la lectura con citas. | Instala la biblioteca, inicia sesión con Google y después la skill. |
+| [Codex CLI](codex.md) | También soportado como agente para la skill. | Igual que con Claude Code; usa un solo agente por flujo. |
+| [obsidian-second-brain](obsidian-second-brain.md) | El README propone ejecutar la CLI desde la raíz de una bóveda de Obsidian para que informes y mapas queden como archivos (combinación por arquitectura con esta plantilla). | Configura la bóveda primero; ejecuta la CLI desde su carpeta raíz. |
+
+**Notas:** Se retiró la combinación con notebooklm-mcp-cli: ambos son clientes no oficiales de la misma API y se solapan; elige uno.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v0.8.6 (2026-10-29) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/teng-lin/notebooklm-py/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. API no oficial con endpoints que pueden cambiar; los archivos descargados quedan locales pero la generación ocurre en Google |
 | Coste | El coste depende del proveedor o la ruta. Usa tu cuenta y cupos de NotebookLM, no una API local de modelo; el agente y los planes Google tienen límites separados |
 | Equipo | Preparación según la ruta elegida. Python y uv o pipx; sesión Google; Chromium para login; notebook de prueba |
-
-API no oficial con endpoints que pueden cambiar; los archivos descargados quedan locales pero la generación ocurre en Google
-
-## Qué puedes hacer con él
-
-API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código.
-
-## Por qué destaca
-
-Usos propuestos: Automatizar consultas documentales; Exportar mapas o resúmenes propios.
-
-## Cómo funciona
 
 API no oficial con endpoints que pueden cambiar; los archivos descargados quedan locales pero la generación ocurre en Google
 
@@ -86,12 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y uv o pipx; sesión Google; Chromium para login; notebook de prueba
 - **Etiquetas:** `notebooks` `research` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [notebooklm-mcp-cli](notebooklm-mcp-cli.md) | 6.5k | CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde terminal o desde clientes compatibles con MCP. |
 
 ## Enlaces
 

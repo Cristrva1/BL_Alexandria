@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Skills para Claude Code de AThevon para animación y diseño de interfaces; el README declara MIT, aunque GitHub no reconoce la licencia como estándar. Activo (v4.2.1).
+
+## ¿Qué hace?
+
+Tres skills: `cast` anima una interfaz, `paint` diseña el aspecto de un producto y `bunshin` construye un sitio completo con un equipo de agentes. Cubre web (React, Vue, Svelte, Astro, CSS, Three.js, Canvas) y otros entornos, y mantiene un catálogo de los «tics» por defecto de los modelos (como tres tarjetas iguales) con un comando que los localiza en un proyecto.
+
+## ¿Cómo lo hace?
+
+Se instala con `npx skills add https://genjutsu.athevon.dev -g` o como plugin de Claude Code (`/plugin marketplace add AThevon/genjutsu`), que añade `/genjutsu:cast`, `/genjutsu:paint` y `/genjutsu:bunshin`. Publica ejemplos con registros de ejecución, incluidos casos que salieron flojos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plataforma objetivo de las skills. | Instala globalmente con `-g` o como plugin. |
+| [GSAP](gsap.md) | Biblioteca de animación web sobre la que pueden apoyarse las animaciones generadas (combinación por arquitectura). | Añádela al proyecto si la skill la propone. |
+| [three.js](three-js.md) | Uno de los entornos cubiertos por sus módulos. | Instala three en el proyecto web. |
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.2.1 (2026-11-16) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/AThevon/genjutsu/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | La función básica no necesita un modelo. El autor desarrolla en Claude Code; las pruebas de Claude.ai son acotadas y no hay evidencia equivalente para todos los hosts anunciados o posibles |
 | Coste | Consumo del agente que ya utilizas. Usa el agente anfitrión y recursos del proyecto; no incluye modelos ni APIs de medios |
 | Equipo | Preparación según la ruta elegida. Claude Code; proyecto o pantalla de prueba; herramientas de navegador según tarea |
-
-El autor desarrolla en Claude Code; las pruebas de Claude.ai son acotadas y no hay evidencia equivalente para todos los hosts anunciados o posibles
-
-## Qué puedes hacer con él
-
-Skills de diseño y animación para agentes que trabajan con interfaces web, Android y plataformas de Apple.
-
-## Por qué destaca
-
-Usos propuestos: Diseñar una microinteracción; Planificar movimiento en una app.
-
-## Cómo funciona
 
 El autor desarrolla en Claude Code; las pruebas de Claude.ai son acotadas y no hay evidencia equivalente para todos los hosts anunciados o posibles
 

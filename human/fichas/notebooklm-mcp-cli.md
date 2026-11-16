@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+CLI y servidor MCP no oficiales para Gemini Notebook (antes Google NotebookLM), de jacob-bd. MIT y muy activo (v0.16.5); el repositorio se renombró a `gemini-notebook-mcp-cli`. Las cuentas personales se prueban con regularidad; el soporte Enterprise es experimental.
+
+## ¿Qué hace?
+
+Permite crear y gestionar cuadernos, fuentes y artefactos (por ejemplo videos y presentaciones) desde la terminal con `nlm` o desde asistentes de IA vía MCP. El asistente `nlm setup` detecta las herramientas instaladas y las conecta: Claude Code, Claude Desktop, Codex CLI/ChatGPT, Gemini CLI, Cursor, Windsurf, Cline, Antigravity, GitHub Copilot y otras.
+
+## ¿Cómo lo hace?
+
+Se instala con `uv tool install notebooklm-mcp-cli` y se autentica con `nlm login` usando tu cuenta de Google. Ofrece almacenamiento protegido del inicio de sesión (cifrado con la clave en el llavero del sistema) mediante `nlm auth storage set protected`; servidores, cron o Docker pueden seguir usando el archivo plano. Depende de APIs no oficiales que pueden cambiar.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Cliente MCP soportado por `nlm setup`. | `nlm login` primero; después `nlm setup` y marca Claude Code. |
+| [Codex CLI](codex.md) | Cliente soportado (`nlm setup add codex`). | Igual que arriba. |
+| [Gemini CLI](gemini-cli.md) | Cliente MCP soportado por el asistente de configuración. | Igual que arriba. |
+
+**Notas:** Activa el almacenamiento protegido en equipos personales. Se retiraron las combinaciones con notebooklm-py (solapamiento) y awesome-mcp-servers (es una lista, no una integración).
+
+Estado en GitHub: activo · último push 2026-11-14 · última versión publicada v0.16.5 (2026-11-14) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/jacob-bd/gemini-notebook-mcp-cli/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Documenta los tres clientes; instalar CLI o MCP no vuelve local la generación ni evita los cupos de NotebookLM |
 | Coste | El coste depende del proveedor o la ruta. No exige clave LLM propia; cuenta y límites de Google, servicios y agente anfitrión tienen condiciones separadas |
 | Equipo | Preparación según la ruta elegida. Python; cuenta Google; cliente MCP; sesión del navegador |
-
-Documenta los tres clientes; instalar CLI o MCP no vuelve local la generación ni evita los cupos de NotebookLM
-
-## Qué puedes hacer con él
-
-CLI interactivo y servidor MCP para NotebookLM de Google, pensado para operar notebooks en la nube desde terminal o desde clientes compatibles con MCP.
-
-## Por qué destaca
-
-Usos propuestos: Administrar fuentes desde un agente; Exportar contenido generado por NotebookLM.
-
-## Cómo funciona
 
 Documenta los tres clientes; instalar CLI o MCP no vuelve local la generación ni evita los cupos de NotebookLM
 
@@ -93,13 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; cuenta Google; cliente MCP; sesión del navegador
 - **Etiquetas:** `mcp` `notebooks` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [notebooklm-py](notebooklm-py.md) | 20.2k | API Python no oficial para interactuar programáticamente con NotebookLM de Google, controlando notebooks, fuentes y generación de notas desde código. |
-| [awesome-mcp-servers](awesome-mcp-servers.md) | 97.7k | Directorio curado de la comunidad que cataloga por categorías cientos de servidores MCP reutilizables, listos para conectar. |
 
 ## Enlaces
 

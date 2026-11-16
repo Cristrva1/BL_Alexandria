@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+WrenAI, motor de BI generativo (GenBI) de Canner. El motor (capa semántica MDL, text-to-SQL, MCP, CLI y conectores) es Apache-2.0 y las funciones de seguridad fina y la UI GenBI son comerciales (GitHub muestra NOASSERTION). Es activo (~18k estrellas, wren-v0.18.0).
+
+## ¿Qué hace?
+
+Da a los agentes que ya usas una capa semántica gobernada y una capa de contexto para generar SQL fiable, desplegar paneles y guardar definiciones de negocio en Git. Conecta con más de 22 fuentes (BigQuery, Snowflake, PostgreSQL, ClickHouse, DuckDB y otras) sobre Apache DataFusion.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install wrenai` (con extras por conector) y se añade como skill con `npx skills add Canner/WrenAI`. Funciona con Claude Code, Cursor, Cline, Codex, clientes MCP y LangChain.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente soportado mediante skill y MCP. | Instala wrenai y añade la skill. |
+| [DuckDB](duckdb.md) | Conector DuckDB soportado. | Instala el extra del conector y define el modelo MDL. |
+| [langchain](langchain.md) | Integración citada en el README. | Usa WrenAI como herramienta en LangChain. |
+| [Apache Superset](superset.md) | Visualizar en Superset las consultas gobernadas. (combinación por arquitectura) | Apunta Superset a la misma base. |
+
+**Notas:** Sin alternativas declaradas. Funciones de seguridad a nivel de fila/columna solo en ediciones de pago.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada wren-v0.18.0 (2026-11-10) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Canner/WrenAI/blob/main/README.md) · [2](https://docs.getwren.ai)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelo local no documentado. La capa semántica no garantiza SQL correcto sin definiciones y revisión; la guía actual usa CLI más skills, no solo una app de chat |
 | Coste | El coste depende del proveedor o la ruta. La skill usa el agente; conectores, bases, modelos opcionales y servicios gestionados pueden costar según ruta |
 | Equipo | Preparación según la ruta elegida. Python; Node para skills; base o muestra jaffle_shop; agente |
-
-La capa semántica no garantiza SQL correcto sin definiciones y revisión; la guía actual usa CLI más skills, no solo una app de chat
-
-## Qué puedes hacer con él
-
-BI generativo: convierte preguntas en SQL fiable a través de una capa semántica gobernada.
-
-## Por qué destaca
-
-Usos propuestos: Definir ingresos de forma consistente; Crear dashboards desde preguntas de negocio.
-
-## Cómo funciona
 
 La capa semántica no garantiza SQL correcto sin definiciones y revisión; la guía actual usa CLI más skills, no solo una app de chat
 
@@ -96,19 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; Node para skills; base o muestra jaffle_shop; agente
 - **Etiquetas:** `analytics` `data` `agents` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Apache Superset](superset.md) | 75.5k | Plataforma de exploración y visualización de datos de Apache, alternativa abierta a Tableau. |
-| [DuckDB](duckdb.md) | 43.1k | Base de datos analítica en proceso, muy rápida, que consulta CSV, Parquet y JSON con SQL. |
-
-## Alternativas (elige una)
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [PandasAI](pandas-ai.md) | 23.9k | Librería para conversar con tus datos (SQL, CSV, Parquet) usando LLM. |
 
 ## Enlaces
 

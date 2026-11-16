@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Floorplan, plugin para Claude Code y Codex que dibuja un mapa interactivo de una aplicación, de @haydenschmitty. Licencia MIT. Es reciente (~5k estrellas, floorplan--v0.10.0).
+
+## ¿Qué hace?
+
+El agente lee el código y genera un mapa donde cada parte, archivo y petición web tiene un nombre en lenguaje llano y se ven sus conexiones, incluso entre varios repos. Muestra qué partes tocó cada cambio del agente y permite hacer preguntas desde el mapa.
+
+## ¿Cómo lo hace?
+
+Se instala como plugin con `claude plugin marketplace add haydenschmitty/floorplan` y `claude plugin install floorplan@floorplan`, o con `codex plugin add floorplan@floorplan`. Requiere Node.js 18+. Declara no usar hooks, servidores MCP ni dependencias y no descargar nada.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Plugin oficial para Claude Code. | Añade el marketplace e instala el plugin. |
+| [Codex CLI](codex.md) | Plugin oficial para Codex. | Añade el marketplace en Codex e instala el plugin. |
+| [codegraph](codegraph.md) | Combinar el mapa visual con un índice semántico para el agente. (combinación por arquitectura) | Usa Floorplan para entender y CodeGraph para navegar. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada floorplan--v0.10.0 (2026-11-15) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/haydenschmitty/floorplan/blob/main/README.md) · [2](https://haydenschmitty.github.io/floorplan-demo/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El mapa offline no implica generación con IA local; el README cambió y esta ficha conserva la nueva versión de fuente |
 | Coste | Consumo del agente que ya utilizas. La generación usa el agente anfitrión; el HTML resultante se consulta sin un modelo en ejecución |
 | Equipo | Preparación según la ruta elegida. Claude Code o Codex con plugins; proyecto pequeño de prueba |
-
-El mapa offline no implica generación con IA local; el README cambió y esta ficha conserva la nueva versión de fuente
-
-## Qué puedes hacer con él
-
-Herramienta para que Claude o Codex genere un mapa interactivo y explicado de las partes y relaciones de un proyecto.
-
-## Por qué destaca
-
-Usos propuestos: Explicar la arquitectura a alguien nuevo; Encontrar dónde se inicia una petición de la interfaz.
-
-## Cómo funciona
 
 El mapa offline no implica generación con IA local; el README cambió y esta ficha conserva la nueva versión de fuente
 

@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Lista curada de ComposioHQ con más de 1.000 skills y plugins para Claude.ai, Claude Code, Codex y otros agentes. GitHub no detecta licencia, aunque el README muestra una insignia Apache 2.0. Es también un escaparate comercial de Composio.
+
+## ¿Qué hace?
+
+Organiza skills por categorías (documentos, desarrollo, datos, negocio y marketing, comunicación, creatividad, productividad, seguridad, automatización vía Composio) y explica qué es una skill frente a un MCP o una herramienta. Destaca su plugin `connect-apps`, que permite a Claude enviar correos, crear incidencias o publicar en Slack a través de más de 1.000 aplicaciones.
+
+## ¿Cómo lo hace?
+
+Es un README con enlaces. El plugin `connect-apps` se carga con `claude --plugin-dir ./connect-apps-plugin`, se configura con `/connect-apps:setup` y pide una clave de API de Composio.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Composio](composio.md) | El plugin `connect-apps` usa Composio para la autenticación y las integraciones. | Crea una clave de Composio antes de ejecutar el setup. |
+| [Claude Code](claude-code.md) | Destino principal del plugin y de muchas skills. | Carga el plugin con `--plugin-dir`. |
+| [SkillSpector](skillspector.md) | Auditar las skills de terceros enlazadas antes de usarlas (combinación por arquitectura). | Audita cada skill antes de instalarla. |
+
+**Notas:** Alternativas (elige una): awesome-agent-skills, antigravity-awesome-skills, awesome-claude-code. Dar acceso a 1.000 apps amplía mucho lo que el agente puede hacer: limita los permisos.
+
+Estado en GitHub: activo · último push 2026-09-18 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/ComposioHQ/awesome-claude-skills/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. El README distingue la colección del plugin connect-apps; no se atribuye la misma instalación a todos los recursos |
 | Coste | El coste depende del proveedor o la ruta. Consultar el listado no exige LLM; usar skills consume el agente y el plugin Composio añade su cuenta y condiciones |
 | Equipo | Preparación según la ruta elegida. Navegador;  agente compatible solo al utilizar una skill seleccionada |
-
-El README distingue la colección del plugin connect-apps; no se atribuye la misma instalación a todos los recursos
-
-## Qué puedes hacer con él
-
-Lista curada de Composio con más de 1.000 skills y plugins para Claude y otros agentes, más un plugin para conectar 1.000+ apps.
-
-## Por qué destaca
-
-Usos propuestos: Encontrar instrucciones para revisar documentos de trabajo; Descubrir un conector para una aplicación que ya usas.
-
-## Cómo funciona
 
 El README distingue la colección del plugin connect-apps; no se atribuye la misma instalación a todos los recursos
 
@@ -84,14 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador;  agente compatible solo al utilizar una skill seleccionada
 - **Etiquetas:** `skills` `automation` `coding-agent`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Composio](composio.md) | 31.1k | Plataforma con más de 1000 integraciones con autenticación gestionada para que tus agentes actúen en apps reales. |
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [SkillSpector](skillspector.md) | 26.1k | Herramienta que audita skills de agentes y detecta comandos peligrosos, exfiltración o prompts ocultos. |
 
 ## Alternativas (elige una)
 

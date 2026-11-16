@@ -10,6 +10,35 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Alternativa de código abierto (MIT) a NotebookLM de Google, centrada en la privacidad y creada por Luis Novo (lfnovo). Activa (v1.15.1), con interfaz en 14 idiomas.
+
+## ¿Qué hace?
+
+Organiza contenido multimodal (PDF, video, audio, páginas web) en cuadernos, con búsqueda de texto completo y vectorial, chat con el contexto de tu investigación, transformaciones de contenido propias y podcasts con 1 a 4 voces configurables. Permite elegir entre más de 20 proveedores (OpenAI, Anthropic, Google, Mistral, Ollama y servidores compatibles con OpenAI como LM Studio o vLLM) y expone una API REST completa.
+
+## ¿Cómo lo hace?
+
+Backend en Python con LangChain, frontend Next.js/React y SurrealDB como base de datos. El Docker Compose oficial levanta dos servicios (`surrealdb` y `open_notebook`), con interfaz en el puerto 8502 y API en el 5055; requiere definir `OPEN_NOTEBOOK_ENCRYPTION_KEY`. Por defecto no tiene contraseña y publica los puertos en todas las interfaces.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Proveedor documentado para usarlo 100 % en local. | Ollama primero; configura su URL accesible desde el contenedor. |
+| [vLLM](vllm.md) | Servidor compatible con OpenAI citado en el README. | vLLM en un equipo con GPU; registra su URL como proveedor compatible. |
+| [activepieces](activepieces.md) | Automatizar la ingesta de fuentes o la generación de podcasts con su API REST (combinación por arquitectura). | Protege la API (puerto 5055) antes de exponerla a Activepieces. |
+| [scientific-agent-skills](scientific-agent-skills.md) | Combinación recíproca: scientific-agent-skills lo enlaza como «Skill de integración explícita con Open Notebook». | Orden indicado desde scientific-agent-skills: Open Notebook en marcha y con API accesible antes de usar la skill. |
+| [olmOCR](olmocr.md) | Combinación recíproca: olmOCR lo enlaza como «Cargar documentos convertidos como fuentes de investigación (combinación por arquitectura)». | Orden indicado desde olmOCR: Convierte primero y súbelos como Markdown. |
+| [VibeVoice](vibevoice.md) | Combinación recíproca: VibeVoice lo enlaza como «Narración de podcasts. (combinación por arquitectura)». | Orden indicado desde VibeVoice: Usa un TTS compatible para los episodios. |
+
+**Notas:** Alternativas (elige una): deeptutor, surfsense. En redes compartidas pon una contraseña o un proxy delante. Se retiraron las combinaciones antiguas con odysseus (se solapa como espacio de trabajo) y markitdown (no documentada).
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.15.1 (2026-11-04) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/lfnovo/open-notebook/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +52,6 @@
 | Modelos locales | Modelos locales documentados. La app auto-hospedada no garantiza que todos los datos se procesen localmente: depende de cada proveedor que selecciones |
 | Coste | El coste depende del proveedor o la ruta. Admite Ollama y otros servidores locales, además de APIs de pago; audio y embeddings se configuran aparte |
 | Equipo | Preparación según la ruta elegida. Docker; proveedores de chat, embeddings y audio según función; fuentes de prueba |
-
-La app auto-hospedada no garantiza que todos los datos se procesen localmente: depende de cada proveedor que selecciones
-
-## Qué puedes hacer con él
-
-Aplicación auto-hospedada para reunir fuentes, consultar documentos y producir resúmenes o audio. Permite elegir proveedores de chat, embeddings y audio locales o remotos; la privacidad del procesamiento depende de esa configuración.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar documentos en una libreta; Generar un resumen o audio sobre material propio.
-
-## Cómo funciona
 
 La app auto-hospedada no garantiza que todos los datos se procesen localmente: depende de cada proveedor que selecciones
 
@@ -86,13 +103,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker; proveedores de chat, embeddings y audio según función; fuentes de prueba
 - **Etiquetas:** `notebooks` `research` `typescript` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [odysseus](odysseus.md) | 95.6k | Workspace auto-hospedado que unifica chats, research, documentos, correo, calendario y tareas operados por agentes locales, a modo de centro administrativo personal privado. |
-| [markitdown](markitdown.md) | 195k | Utilidad Python de Microsoft que convierte archivos complejos (PDF, Word, Excel, PowerPoint, HTML, imágenes, audio) a Markdown limpio optimizado para que los LLMs lo consuman. |
 
 ## Alternativas (elige una)
 

@@ -10,6 +10,30 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Biblioteca Python de código abierto (Apache 2.0) de lyogavin para reducir la memoria de inferencia de LLM grandes. Existe desde 2023 y publicó la v4.0.0 en 2026; el README incluye enlaces patrocinados ajenos al proyecto.
+
+## ¿Qué hace?
+
+Permite ejecutar modelos de 70B en una sola GPU de 4 GB sin cuantización, destilación ni poda, según el README, que también afirma ejecutar modelos mucho mayores (DeepSeek-V3 671B en unos 12 GB, Kimi K3 con muy poca VRAM) [DATO NO VERIFICADO: cifras de memoria y velocidad]. Desde 2026 también entrena adaptadores cargando los pesos congelados capa a capa. Funciona en macOS además de en GPU NVIDIA.
+
+## ¿Cómo lo hace?
+
+Divide el modelo en capas guardadas en disco y las carga una a una durante la inferencia (con streaming por experto en modelos MoE), a cambio de mucha más latencia que una carga completa. Se instala con `pip install airllm` y se usa con `AutoModel` pasando el ID de Hugging Face o una ruta local; admite compresión opcional y FP8. Requiere espacio en disco para los fragmentos por capa.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [llmfit](llmfit.md) | Comprobar si un modelo cabe en memoria de forma normal antes de recurrir a la carga por capas, mucho más lenta (combinación por arquitectura). | Ejecuta llmfit primero; usa AirLLM solo si el modelo no cabe. |
+| [Transformers](transformers.md) | AirLLM se usa de forma similar a un modelo de transformers y algunos modelos requieren versiones recientes de esta biblioteca. | Instala la versión de transformers que exige el modelo antes de AirLLM. |
+| [PEFT](peft.md) | Entrenar adaptadores con pesos congelados por capas (combinación por arquitectura; [DATO NO VERIFICADO: si usa PEFT internamente]). | Fija las versiones de PEFT y transformers en el mismo entorno. |
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v4.0.0 (2026-09-05) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/lyogavin/airllm/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +47,6 @@
 | Modelos locales | Modelos locales documentados. Que quepa en poca VRAM no significa que un modelo grande sea interactivo en tu equipo |
 | Coste | Sin pago a un modelo en la ruta básica. No usa una API de pago; ahorrar VRAM puede exigir mucho disco, RAM y tiempo; los pesos tienen licencia propia |
 | Equipo | Preparación según la ruta elegida. Python; GPU o backend compatible; disco y memoria para capas y pesos |
-
-Que quepa en poca VRAM no significa que un modelo grande sea interactivo en tu equipo
-
-## Qué puedes hacer con él
-
-Biblioteca para ejecutar modelos de lenguaje en hardware limitado mediante carga y procesamiento de sus componentes.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar inferencia por carga de capas; Probar un modelo que supera la VRAM disponible.
-
-## Cómo funciona
 
 Que quepa en poca VRAM no significa que un modelo grande sea interactivo en tu equipo
 

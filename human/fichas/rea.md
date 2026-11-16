@@ -10,6 +10,41 @@
 
 **Ejecución** 🏠 local · **Rol** 🎨 skill/prompt · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+REA, un servidor MCP para hacer ingeniería inversa con agentes, desde el comportamiento de una aplicación hasta binarios nativos, de @morluto. Licencia MIT. Su número de estrellas es anómalo (~462k en siete meses, desde abril de 2026), sin explicación pública [DATO NO VERIFICADO sobre su origen].
+
+## ¿Qué hace?
+
+Registra herramientas MCP e instrucciones de flujo de trabajo para analizar instalaciones de escritorio, binarios nativos (pseudocódigo, ensamblado, cadenas, símbolos), APK Android, WASM, apps Electron y JavaScript, ejecutables PyInstaller, firmware y fallos de Linux. Valida cada resultado del lado del servidor y ofrece esquemas compactos para gastar menos contexto. También permite crear entornos de aprendizaje por refuerzo a partir de los análisis.
+
+## ¿Cómo lo hace?
+
+Requiere Node.js y npm: `npx rea-agents setup` registra el servidor en el agente (Claude Code, Codex, Cursor y otros) con copias de seguridad de la configuración previa. El análisis nativo usa una instalación existente de Hopper, Ghidra, IDA o Kuna; los APK, JADX headless con un JDK completo; otros análisis, pwntools o WABT aportados por el usuario.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Registro automático como servidor MCP y plugin de Claude Code. | Ejecuta `npx rea-agents setup` y elige Claude Code. |
+| [ghidra](ghidra.md) | Motor de análisis nativo compatible, según el README. | Instala Ghidra (JDK incluido) antes de configurar REA. |
+| [jadx](jadx.md) | Análisis de APK mediante JADX headless. | Instala JADX y un JDK completo. |
+| [Codex CLI](codex.md) | Plugin de Codex disponible. | Ejecuta el setup y elige Codex. |
+| [awesome-ai-reverse-engineering](awesome-ai-reverse-engineering.md) | Combinación recíproca: awesome-ai-reverse-engineering lo enlaza como «Listado como herramienta destacada». | Orden indicado desde awesome-ai-reverse-engineering: Consulta su ficha antes de instalarlo. |
+| [awesome-reverse-engineering](awesome-reverse-engineering.md) | Combinación recíproca: awesome-reverse-engineering lo enlaza como «Herramienta destacada por los mismos autores». | Orden indicado desde awesome-reverse-engineering: Lee la sección de REA y su documentación antes de instalarlo. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[bla](bla.md) · [craft-anything](craft-anything.md)
+
+**Notas:** Sin alternativas declaradas. Revisa qué escribe el setup en la configuración de tu agente. Úsalo solo con software propio o con autorización escrita.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada rea-agents-6.9.0 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/morluto/rea/blob/main/README.md) · [2](https://rea.tools/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +58,6 @@
 | Modelos locales | La función básica no necesita un modelo. Los backends tienen requisitos distintos; el setup propone cambios de cliente y conserva copias; no todos los formatos funcionan solo con Node |
 | Coste | El coste depende del proveedor o la ruta. El análisis y MCP no exigen modelo propio; el agente y herramientas como Hopper pueden tener licencia o consumo adicional |
 | Equipo | Preparación según la ruta elegida. Node y npm; agente; herramientas nativas solo según formato; programa propio |
-
-Los backends tienen requisitos distintos; el setup propone cambios de cliente y conserva copias; no todos los formatos funcionan solo con Node
-
-## Qué puedes hacer con él
-
-Herramientas e instrucciones para estudiar el comportamiento y la estructura de software mediante agentes de código.
-
-## Por qué destaca
-
-Usos propuestos: Entender estructura de una app propia; Comparar dos versiones de un formato de laboratorio.
-
-## Cómo funciona
 
 Los backends tienen requisitos distintos; el setup propone cambios de cliente y conserva copias; no todos los formatos funcionan solo con Node
 

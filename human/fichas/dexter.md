@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Dexter, agente autónomo de investigación financiera de @virattt. El README declara MIT, pero GitHub no detecta licencia. Es popular (~28k estrellas, v1.1.0).
+
+## ¿Qué hace?
+
+Planifica tareas, se autoevalúa y consulta datos de mercado en tiempo real para responder preguntas de investigación financiera (estados financieros, métricas, noticias). Se presenta como un «Claude Code para finanzas». Incluye evaluación, depuración y uso por WhatsApp.
+
+## ¿Cómo lo hace?
+
+Requiere el runtime Bun, una clave de OpenAI y una de Financial Datasets API (Exa opcional para búsqueda web); admite Ollama en local. Se ejecuta desde la terminal.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Modelos locales configurables con `OLLAMA_BASE_URL`. | Arranca Ollama y define la variable. |
+| [TradingAgents](tradingagents.md) | Complementar la investigación con un debate multiagente de decisiones. (combinación por arquitectura) | Usa Dexter para investigar y TradingAgents para contrastar. |
+| [langfuse](langfuse.md) | Trazar las llamadas del agente. (combinación por arquitectura) | Instrumenta las llamadas de LLM con Langfuse. |
+
+**Notas:** Sin alternativas declaradas. Depende de APIs de datos de pago. Riesgo financiero: no es asesoramiento de inversión.
+
+Estado en GitHub: activo · último push 2026-09-23 · última versión publicada v1.1.0 (2026-09-23) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/virattt/dexter/blob/main/README.md) · [2](https://financialdatasets.ai)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Su comparación con Claude Code describe una experiencia de agente; no documenta que use el plan de Claude Code |
 | Coste | El coste depende del proveedor o la ruta. Ollama ofrece una ruta local; datos de mercado y modelos remotos pueden exigir claves y cuotas propias |
 | Equipo | Preparación según la ruta elegida. Runtime y gestor de la guía; proveedor u Ollama; acceso a datos financieros |
-
-Su comparación con Claude Code describe una experiencia de agente; no documenta que use el plan de Claude Code
-
-## Qué puedes hacer con él
-
-Agente de investigación financiera que planifica consultas, obtiene datos de mercado y revisa sus análisis.
-
-## Por qué destaca
-
-Usos propuestos: Preparar investigación de una empresa; Comparar explicaciones con documentos fuente.
-
-## Cómo funciona
 
 Su comparación con Claude Code describe una experiencia de agente; no documenta que use el plan de Claude Code
 

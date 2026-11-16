@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Herramienta open source (MIT) de @abi que convierte capturas, mockups, diseños de Figma y grabaciones de pantalla en código con IA. Es muy popular (~81k estrellas) y activa, y tiene versión alojada de pago (screenshottocode.com).
+
+## ¿Qué hace?
+
+Genera código funcional en HTML + Tailwind, HTML + CSS, React + Tailwind, Vue + Tailwind, Bootstrap o Ionic + Tailwind a partir de una imagen o un vídeo de una web en uso. Opcionalmente renderiza su resultado en un navegador sin interfaz para compararlo visualmente y corregirlo. Usa modelos de Gemini, OpenAI y Anthropic, más un modelo de imagen en Replicate para generar recursos.
+
+## ¿Cómo lo hace?
+
+Frontend React/Vite y backend FastAPI, ejecutables en local o con Docker. Requiere al menos una clave de OpenAI, Anthropic o Gemini; el README recomienda Gemini y Replicate para mejor calidad. Cada conversión consume llamadas de pago a los modelos.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [tailwindcss](tailwindcss.md) | Stack de salida por defecto (variantes con Tailwind). | El código generado asume Tailwind; configúralo en el proyecto destino. |
+| [ui](ui.md) | Refactorizar el HTML generado hacia componentes reutilizables. (combinación por arquitectura) | Genera el prototipo y migra sus piezas a componentes shadcn/ui. |
+| [playwright](playwright.md) | Pruebas visuales y funcionales del código generado. (combinación por arquitectura) | Añade pruebas tras integrar el código. |
+
+**Notas:** Alternativas (elige una): stitch-sdk. Respeta derechos de autor al convertir diseños ajenos.
+
+Estado en GitHub: activo · último push 2026-11-15 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/abi/screenshot-to-code/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Separa backend y frontend; la mención Claude code-gen significa modelo de generación y no Claude Code como agente anfitrión |
 | Coste | El coste depende del proveedor o la ruta. La ruta principal pide al menos una clave; extracción y edición de imágenes pueden usar servicios adicionales; Ollama se remite a una adaptación que no se verifica aquí |
 | Equipo | Preparación según la ruta elegida. Python y Poetry; Node y pnpm; clave de proveedor en ruta principal; Chromium para preview |
-
-Separa backend y frontend; la mención Claude code-gen significa modelo de generación y no Claude Code como agente anfitrión
-
-## Qué puedes hacer con él
-
-Convierte capturas, mockups o diseños de Figma en código limpio HTML, Tailwind, React o Vue.
-
-## Por qué destaca
-
-Usos propuestos: Convertir un mockup propio en prototipo; Explorar una estructura HTML a partir de una captura.
-
-## Cómo funciona
 
 Separa backend y frontend; la mención Claude code-gen significa modelo de generación y no Claude Code como agente anfitrión
 
@@ -87,12 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y Poetry; Node y pnpm; clave de proveedor en ruta principal; Chromium para preview
 - **Etiquetas:** `ui` `vision` `code` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [tailwindcss](tailwindcss.md) | 98.6k | Framework CSS utility-first para construir interfaces rápido y consistente aplicando clases atómicas directamente en el marcado. |
 
 ## Alternativas (elige una)
 

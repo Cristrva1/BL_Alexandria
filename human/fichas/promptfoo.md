@@ -10,6 +10,38 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Promptfoo, CLI y librería para evaluar y hacer red teaming de aplicaciones con LLM. Ahora forma parte de OpenAI y sigue siendo open source con licencia MIT. Es muy activo (~27k estrellas, 0.125.1).
+
+## ¿Qué hace?
+
+Ejecuta evaluaciones automáticas de prompts, modelos, agentes y RAG con aserciones, y compara proveedores lado a lado. Hace red teaming y escaneo de vulnerabilidades con informes de seguridad. Revisa pull requests en busca de problemas de seguridad relacionados con LLM y se integra en CI/CD.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install -g promptfoo`, `brew`, `pip` o se usa con `npx promptfoo@latest`; se configura con YAML y se ejecuta con `promptfoo eval` y `promptfoo view`. Las evaluaciones corren en local, aunque requieren las claves de los proveedores que se prueben.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [langfuse](langfuse.md) | Integración documentada para usar prompts y trazas de Langfuse. | Configura las credenciales de Langfuse en promptfoo. |
+| [litellm](litellm.md) | Proveedor nativo de LiteLLM en promptfoo. | Apunta promptfoo al proxy LiteLLM. |
+| [vLLM](vllm.md) | Proveedor nativo para evaluar modelos servidos con vLLM. | Lanza vLLM y configúralo como proveedor. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (13). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Anthropic's Prompt Engineering Tutorial](prompt-eng-tutorial.md) · [ChatGPT_DAN](chatgpt-dan.md) · [chatgpt_system_prompt](chatgpt-system-prompt.md) · [Claude Cookbooks](claude-cookbooks.md) · [Cybersecurity Skills (comunidad)](cybersecurity-skills.md) · [garak](garak.md) · [jev-fraud](jev-fraud.md) · [llm-council](llm-council.md) · [NeMo Guardrails](guardrails.md) · [OpenAI Cookbook](openai-cookbook.md) · [Prompt Engineering Guide](prompt-engineering-guide.md) · [prompts.chat](prompts-chat.md) · [system-prompts-and-models-of-ai-tools](system-prompts-and-models-of-ai-tools.md)
+
+**Notas:** Alternativas (elige una): deepeval, ragas, dspy. Tras la compra por OpenAI conviene vigilar la gobernanza del proyecto.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada 0.125.1 (2026-10-25) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/promptfoo/promptfoo/blob/main/README.md) · [2](https://www.promptfoo.dev/docs/integrations/langfuse/) · [3](https://www.promptfoo.dev/docs/providers/litellm/) · [4](https://www.promptfoo.dev/docs/providers/vllm/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +55,6 @@
 | Modelos locales | Modelos locales documentados. Una puntuación depende del dataset, proveedor y evaluador; los tests de seguridad deben dirigirse a sistemas propios o autorizados |
 | Coste | El coste depende del proveedor o la ruta. CLI MIT; APIs y servicios adicionales tienen costes y Ollama permite modelos locales |
 | Equipo | Preparación según la ruta elegida. Node; dataset de preguntas; proveedor o Ollama; criterio de evaluación |
-
-Una puntuación depende del dataset, proveedor y evaluador; los tests de seguridad deben dirigirse a sistemas propios o autorizados
-
-## Qué puedes hacer con él
-
-CLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad.
-
-## Por qué destaca
-
-Usos propuestos: Evaluar un prompt de soporte; Probar regresiones de un RAG.
-
-## Cómo funciona
 
 Una puntuación depende del dataset, proveedor y evaluador; los tests de seguridad deben dirigirse a sistemas propios o autorizados
 
@@ -95,13 +115,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node; dataset de preguntas; proveedor o Ollama; criterio de evaluación
 - **Etiquetas:** `evaluation` `security` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [langfuse](langfuse.md) | 37.4k | Plataforma open-source de observabilidad, trazas y evaluación para apps LLM, con vista detallada de cada llamada y agente. |
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
 ## Alternativas (elige una)
 

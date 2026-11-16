@@ -1,0 +1,623 @@
+{
+ "batch": "18-personal-notas-parte-1",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "nextcloud-server": {
+   "que_es": "Servidor de Nextcloud: la plataforma autoalojada de archivos, colaboración y productividad mantenida por Nextcloud GmbH y su comunidad. Licencia AGPL-3.0-or-later, sin CLA. Es muy madura y activa (~37k estrellas, v33.0.11).",
+   "que_hace": "Sincroniza y comparte archivos entre escritorio, móvil y web, y es la base sobre la que se instalan apps como calendario, contactos, Talk, ofimática y flujos de trabajo. Las apps oficiales y de terceros se instalan desde su tienda de apps. Ofrece funciones de IA (Nextcloud Assistant) que pueden usar modelos locales o proveedores externos según los backends que configures.",
+   "como_lo_hace": "Es una aplicación PHP con frontend en JavaScript/Vue; necesita servidor web, PHP y una base de datos (MySQL/MariaDB, PostgreSQL o SQLite para pruebas). La vía recomendada para autoalojarlo es Nextcloud All-in-One (contenedores Docker que gestionan Apache, base de datos, copias y actualizaciones); también hay paquetes, appliances y proveedores. Este repositorio es el código del servidor para desarrolladores; para producción conviene usar las releases o AIO, no el árbol `master`.",
+   "combina_con": [
+    {
+     "id": "coolify",
+     "motivo": "Desplegar Nextcloud como servicio de un clic en un servidor propio (Coolify documenta el servicio Nextcloud).",
+     "orden_instalacion": "Instala Coolify y añade el servicio Nextcloud desde su catálogo."
+    },
+    {
+     "id": "home-assistant",
+     "motivo": "Vigilar el estado del servidor Nextcloud desde Home Assistant con su integración oficial de Nextcloud.",
+     "orden_instalacion": "Activa la integración en Home Assistant con un usuario administrador de Nextcloud."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Dar a Nextcloud Assistant un modelo local mediante un backend compatible con la API de OpenAI. (combinación por arquitectura) (la app integration_openai admite endpoints compatibles; la compatibilidad concreta con Ollama es [DATO NO VERIFICADO] en este lote)",
+     "orden_instalacion": "Levanta Ollama, instala la app de integración y apunta su URL al endpoint compatible."
+    },
+    {
+     "id": "casaos",
+     "motivo": "Combinación recíproca: CasaOS lo enlaza como «Nube de archivos como app. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde CasaOS: Instala Nextcloud desde la tienda o como contenedor.",
+     "reciproca_de": "casaos"
+    },
+    {
+     "id": "immich",
+     "motivo": "Combinación recíproca: Immich lo enlaza como «Immich puede indexar carpetas existentes como bibliotecas externas, por ejemplo las que sincroniza Nextcloud (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Immich: Monta la carpeta de Nextcloud en el contenedor de Immich; después añádela como biblioteca externa.",
+     "reciproca_de": "immich"
+    },
+    {
+     "id": "photoprism",
+     "motivo": "Combinación recíproca: PhotoPrism lo enlaza como «PhotoPrism puede indexar carpetas sincronizadas por Nextcloud montadas en su contenedor (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde PhotoPrism: Monta la carpeta de fotos de Nextcloud como originales; después indexa en PhotoPrism.",
+     "reciproca_de": "photoprism"
+    }
+   ],
+   "notas": "Sin alternativas declaradas en el catálogo. Para producción, Nextcloud AIO simplifica mucho el mantenimiento.",
+   "fuentes": [
+    "https://github.com/nextcloud/server/blob/master/README.md",
+    "https://github.com/nextcloud/all-in-one",
+    "https://docs.nextcloud.com/server/latest/admin_manual/ai/index.html",
+    "https://apps.nextcloud.com/apps/integration_openai",
+    "https://coolify.io/docs/services/nextcloud",
+    "https://www.home-assistant.io/integrations/nextcloud/"
+   ],
+   "github": {
+    "name_with_owner": "nextcloud/server",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "AGPL-3.0",
+    "primary_language": "PHP",
+    "latest_release": "v33.0.11 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "adguardhome": {
+   "que_es": "Servidor DNS de bloqueo de anuncios y rastreadores para toda la red, de AdGuard. Licencia GPL-3.0. Es muy maduro (~38k estrellas, v0.107.80) y sigue en la serie 0.107 desde hace años.",
+   "que_hace": "Actúa como servidor DNS de la red y bloquea dominios de anuncios, rastreo y malware para todos los dispositivos sin instalar nada en ellos. Admite listas de bloqueo, reglas propias, control parental, búsqueda segura y estadísticas por cliente. Ofrece DNS cifrado (DNS-over-HTTPS, DNS-over-TLS, DNSCrypt), reescrituras DNS locales y servidor DHCP opcional.",
+   "como_lo_hace": "Es un binario único en Go con interfaz web (TypeScript). Se instala con el script oficial, con Docker (`adguard/adguardhome`), con Snap o descargando el binario; después un asistente web configura los puertos. Requiere que los dispositivos o el router usen su IP como DNS, y expone una API HTTP documentada en OpenAPI.",
+   "combina_con": [
+    {
+     "id": "home-assistant",
+     "motivo": "Ver estadísticas y activar o desactivar filtros desde Home Assistant con la integración oficial de AdGuard Home.",
+     "orden_instalacion": "Instala AdGuard Home y añade la integración con su URL y credenciales."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Automatizar tareas (pausar el filtrado, añadir reglas) llamando a la API HTTP de AdGuard Home. (combinación por arquitectura)",
+     "orden_instalacion": "Crea un usuario de AdGuard Home y usa la pieza HTTP de Activepieces contra su API."
+    },
+    {
+     "id": "vaultwarden",
+     "motivo": "Dar un nombre local (p. ej. `vault.casa`) a los servicios autoalojados con las reescrituras DNS de AdGuard Home. (combinación por arquitectura)",
+     "orden_instalacion": "Configura la reescritura DNS hacia el proxy inverso que publica Vaultwarden con HTTPS."
+    },
+    {
+     "id": "casaos",
+     "motivo": "Combinación recíproca: CasaOS lo enlaza como «DNS con bloqueo de anuncios para la red de casa. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde CasaOS: Instálalo como app.",
+     "reciproca_de": "casaos"
+    },
+    {
+     "id": "cleanyourtv",
+     "motivo": "Combinación recíproca: cleanyourtv lo enlaza como «Bloquear por DNS los dominios de telemetría y anuncios que queden activos. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde cleanyourtv: Pon AdGuard Home como DNS de la red antes o después de limpiar el televisor.",
+     "reciproca_de": "cleanyourtv"
+    },
+    {
+     "id": "optimizerduck",
+     "motivo": "Combinación recíproca: optimizerDuck lo enlaza como «Bloqueo de telemetría a nivel de red que complementa los ajustes locales. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde optimizerDuck: Configura AdGuard Home como DNS y luego aplica los ajustes de privacidad en Windows.",
+     "reciproca_de": "optimizerduck"
+    }
+   ],
+   "notas": "Sin alternativas declaradas en el catálogo (Pi-hole no está catalogado). Bloquear por DNS no sustituye a un bloqueador en el navegador.",
+   "fuentes": [
+    "https://github.com/AdguardTeam/AdGuardHome/blob/master/README.md",
+    "https://adguard-dns.io/kb/adguard-home/getting-started/",
+    "https://github.com/AdguardTeam/AdGuardHome/wiki/Getting-Started",
+    "https://github.com/AdguardTeam/AdGuardHome/tree/master/openapi",
+    "https://www.home-assistant.io/integrations/adguard/"
+   ],
+   "github": {
+    "name_with_owner": "AdguardTeam/AdGuardHome",
+    "archived": false,
+    "pushed_at": "2026-11-13",
+    "license": "GPL-3.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.107.80 (2026-11-03)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "audiobookshelf": {
+   "que_es": "Servidor autoalojado de audiolibros y podcasts, creado por @advplyr. Licencia GPL-3.0. Es maduro y activo (~15k estrellas, v2.37.2), pero el README avisa que no se revisan PR del frontend en Vue porque se está reescribiendo en React.",
+   "que_hace": "Transmite cualquier formato de audio, guarda el progreso por usuario y lo sincroniza entre dispositivos. Busca y descarga podcasts con descarga automática, obtiene metadatos y portadas, y admite subida masiva, varios usuarios con permisos y copias de seguridad diarias. Tiene PWA, soporte de Chromecast y apps para Android e iOS (en beta) en un repositorio aparte.",
+   "como_lo_hace": "Es una aplicación Node.js con frontend en Vue (en migración a React). Se instala sobre todo con Docker o Docker Compose; la documentación oficial describe otros métodos. Si va detrás de un proxy inverso, este debe permitir WebSockets, que el README marca como obligatorios. Tiene una API REST documentada.",
+   "combina_con": [
+    {
+     "id": "coolify",
+     "motivo": "Desplegar Audiobookshelf como servicio de un clic (Coolify documenta el servicio Audiobookshelf).",
+     "orden_instalacion": "Instala Coolify y añade el servicio Audiobookshelf desde su catálogo."
+    },
+    {
+     "id": "syncthing",
+     "motivo": "Llevar audiolibros desde otros equipos a la carpeta de la biblioteca; Audiobookshelf detecta los cambios sin reescanear. (combinación por arquitectura)",
+     "orden_instalacion": "Comparte en Syncthing la carpeta que usa la biblioteca de Audiobookshelf."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Automatizar tareas (avisos de episodios nuevos, informes de escucha) con la API REST de Audiobookshelf. (combinación por arquitectura)",
+     "orden_instalacion": "Crea un token de API en Audiobookshelf y úsalo en la pieza HTTP de Activepieces."
+    },
+    {
+     "id": "jellyfin",
+     "motivo": "Combinación recíproca: Jellyfin lo enlaza como «Audiobookshelf se especializa en audiolibros y pódcasts y complementa a Jellyfin para películas y música (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Jellyfin: Despliega ambos con bibliotecas separadas.",
+     "reciproca_de": "jellyfin"
+    },
+    {
+     "id": "kavita",
+     "motivo": "Combinación recíproca: Kavita lo enlaza como «Audiobookshelf cubre audiolibros y pódcasts mientras Kavita sirve cómics y libros (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Kavita: Despliega ambos con bibliotecas separadas.",
+     "reciproca_de": "kavita"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Antes de contribuir al frontend, revisa el estado de la migración a React.",
+   "fuentes": [
+    "https://github.com/advplyr/audiobookshelf/blob/master/readme.md",
+    "https://www.audiobookshelf.org/docs",
+    "https://api.audiobookshelf.org/",
+    "https://coolify.io/docs/services/audiobookshelf"
+   ],
+   "github": {
+    "name_with_owner": "advplyr/audiobookshelf",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-3.0",
+    "primary_language": "JavaScript",
+    "latest_release": "v2.37.2 (2026-10-23)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "bitwarden-clients": {
+   "que_es": "Monorepo de los clientes oficiales de Bitwarden: web vault, extensión de navegador, escritorio y CLI. Lo mantiene Bitwarden, Inc. Es muy maduro (~14k estrellas, desktop-v2026.10.4). GitHub muestra licencia NOASSERTION porque el repo combina GPL-3.0 (por defecto) con la Bitwarden License v1.0 para el código del directorio `bitwarden_license/`.",
+   "que_hace": "Reúne todas las aplicaciones cliente de Bitwarden salvo las móviles, que viven en `bitwarden/ios` y `bitwarden/android`. Permite guardar, autocompletar y compartir contraseñas, notas, tarjetas, identidades y passkeys con cifrado de extremo a extremo. La CLI (`bw`) da acceso al vault desde scripts.",
+   "como_lo_hace": "Es TypeScript con Angular para la web y la extensión, y Electron para el escritorio. Los usuarios instalan las versiones publicadas (tiendas de extensiones, instaladores, `npm install -g @bitwarden/cli`), no este repo. Para desarrollar se necesita Node.js y npm, y la documentación de contribución de Bitwarden. Los clientes funcionan contra Bitwarden Cloud, contra un servidor Bitwarden autoalojado o contra servidores compatibles como Vaultwarden.",
+   "combina_con": [
+    {
+     "id": "vaultwarden",
+     "motivo": "Usar los clientes oficiales con un servidor autoalojado ligero; Vaultwarden se declara compatible con los clientes oficiales.",
+     "orden_instalacion": "Despliega Vaultwarden con HTTPS y, en el cliente, cambia la URL del servidor a la tuya."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Gestionar colecciones, grupos y miembros de una organización Bitwarden llamando a su API pública de organizaciones con la pieza HTTP (no da acceso a los elementos del vault). (combinación por arquitectura)",
+     "orden_instalacion": "Crea la clave de API de la organización y guárdala como secreto en Activepieces."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Inyectar secretos en scripts con la CLI `bw` en lugar de escribirlos en archivos. (combinación por arquitectura) (no des al agente la sesión desbloqueada del vault completo)",
+     "orden_instalacion": "Instala `@bitwarden/cli` y usa una cuenta o colección limitada para la automatización."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Revisa la licencia antes de reutilizar código de `bitwarden_license/`.",
+   "fuentes": [
+    "https://github.com/bitwarden/clients/blob/main/README.md",
+    "https://github.com/bitwarden/clients/blob/main/LICENSE.txt",
+    "https://bitwarden.com/help/self-host-an-organization/"
+   ],
+   "github": {
+    "name_with_owner": "bitwarden/clients",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "desktop-v2026.10.4 (2026-11-05)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "vaultwarden": {
+   "que_es": "Implementación alternativa no oficial del servidor de Bitwarden escrita en Rust, iniciada por @dani-garcia. Licencia AGPL-3.0. Es muy madura y popular para autoalojar (~71k estrellas, 1.37.5). No está afiliada a Bitwarden: los fallos se reportan a Vaultwarden, no al soporte de Bitwarden.",
+   "que_hace": "Implementa la API de cliente de Bitwarden para que las apps oficiales funcionen contra tu propio servidor con pocos recursos. Incluye vault personal, organizaciones, adjuntos, Send, 2FA, emergency access, panel de administración y la web vault. Algunas funciones empresariales de Bitwarden no existen o se comportan distinto.",
+   "como_lo_hace": "Es un servidor Rust que usa SQLite por defecto y admite MySQL/MariaDB o PostgreSQL. Se despliega normalmente con la imagen Docker `vaultwarden/server` detrás de un proxy inverso. Necesita HTTPS, porque los clientes y la web vault dependen de las API criptográficas del navegador, que solo funcionan en contextos seguros. La configuración se hace con variables de entorno, documentadas en la wiki.",
+   "combina_con": [
+    {
+     "id": "bitwarden-clients",
+     "motivo": "Clientes oficiales (web, extensión, escritorio, CLI) que se conectan a Vaultwarden.",
+     "orden_instalacion": "Despliega Vaultwarden con HTTPS y configura la URL del servidor en cada cliente."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Desplegar Vaultwarden como servicio de un clic con proxy y certificados (Coolify documenta el servicio Vaultwarden).",
+     "orden_instalacion": "Instala Coolify, añade el servicio y asigna un dominio con HTTPS."
+    },
+    {
+     "id": "adguardhome",
+     "motivo": "Resolver un nombre local para el vault en la red de casa con reescrituras DNS. (combinación por arquitectura)",
+     "orden_instalacion": "Crea la reescritura DNS hacia tu proxy inverso y emite el certificado para ese nombre."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Haz copias de seguridad de la base de datos y de la carpeta `data/`; no expongas `/admin` sin token.",
+   "fuentes": [
+    "https://github.com/dani-garcia/vaultwarden/blob/main/README.md",
+    "https://github.com/dani-garcia/vaultwarden/wiki",
+    "https://coolify.io/docs/services/vaultwarden"
+   ],
+   "github": {
+    "name_with_owner": "dani-garcia/vaultwarden",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "Rust",
+    "latest_release": "1.37.5 (2026-11-01)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "home-assistant": {
+   "que_es": "Núcleo de Home Assistant, la plataforma de domótica open source centrada en control local y privacidad. Licencia Apache-2.0. La mantiene la Open Home Foundation con una comunidad enorme (~92k estrellas, 2026.11.1, publica versión mensual).",
+   "que_hace": "Integra miles de dispositivos y servicios (luces, sensores, climatización, cámaras, servicios web) y permite automatizaciones, escenas, paneles y control por voz. Tiene integraciones de IA: puede usar Ollama como agente de conversación local y exponer sus entidades a clientes de IA mediante su servidor MCP. También puede usar servidores MCP externos como herramientas.",
+   "como_lo_hace": "Está escrito en Python (asyncio). La instalación recomendada es Home Assistant OS en un equipo dedicado (Raspberry Pi, mini PC o máquina virtual) o el contenedor Docker; los métodos Core y Supervised son para usuarios avanzados. Las integraciones se añaden desde la interfaz y las automatizaciones se editan en la UI o en YAML. Este repositorio es el núcleo; el frontend y el sistema operativo viven en otros repos.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Agente de conversación local para Assist con la integración oficial de Ollama.",
+     "orden_instalacion": "Instala Ollama en la red local, descarga un modelo con soporte de herramientas y añade la integración."
+    },
+    {
+     "id": "adguardhome",
+     "motivo": "Controlar el filtrado DNS de la red desde paneles y automatizaciones con la integración oficial de AdGuard Home.",
+     "orden_instalacion": "Instala AdGuard Home y añade su integración."
+    },
+    {
+     "id": "syncthing",
+     "motivo": "Supervisar carpetas y dispositivos de Syncthing con la integración oficial.",
+     "orden_instalacion": "Crea una clave de API en Syncthing y añade la integración."
+    },
+    {
+     "id": "nextcloud-server",
+     "motivo": "Combinación recíproca: server lo enlaza como «Vigilar el estado del servidor Nextcloud desde Home Assistant con su integración oficial de Nextcloud».",
+     "orden_instalacion": "Orden indicado desde server: Activa la integración en Home Assistant con un usuario administrador de Nextcloud.",
+     "reciproca_de": "nextcloud-server"
+    },
+    {
+     "id": "node-red",
+     "motivo": "Combinación recíproca: Node-RED lo enlaza como «El nodo comunitario `node-red-contrib-home-assistant-websocket` conecta Node-RED con Home Assistant para escribir automatizaciones complejas del hogar».",
+     "orden_instalacion": "Orden indicado desde Node-RED: Home Assistant primero y un token de acceso de larga duración; después instala el nodo desde la paleta de Node-RED.",
+     "reciproca_de": "node-red"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Exponer entidades por MCP da control físico de la casa a un modelo: limita qué entidades se exponen.",
+   "fuentes": [
+    "https://github.com/home-assistant/core/blob/dev/README.rst",
+    "https://www.home-assistant.io/installation/",
+    "https://www.home-assistant.io/integrations/ollama/",
+    "https://www.home-assistant.io/integrations/mcp_server/",
+    "https://www.home-assistant.io/integrations/mcp/"
+   ],
+   "github": {
+    "name_with_owner": "home-assistant/core",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "2026.11.1 (2026-11-09)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "syncthing": {
+   "que_es": "Programa de sincronización continua de archivos entre dispositivos, sin servidor central. Licencia MPL-2.0. Es un proyecto comunitario muy maduro (~90k estrellas, v2.1.7) que prioriza la seguridad de los datos.",
+   "que_hace": "Sincroniza carpetas entre dos o más equipos directamente, punto a punto, con cifrado TLS y dispositivos autenticados por ID. Sus objetivos declarados, en orden, son: evitar la pérdida de datos, ser seguro frente a atacantes, ser fácil de usar y automático. Ofrece versionado de archivos, carpetas de solo envío o solo recepción y patrones de exclusión.",
+   "como_lo_hace": "Es un binario en Go con interfaz web local. Se instala con paquetes del sistema, binarios oficiales, Docker (según `README-Docker.md`) o envoltorios de la comunidad. Usa servidores públicos de descubrimiento y relés de la comunidad para encontrar dispositivos y atravesar NAT, y puedes autoalojarlos. No es una copia de seguridad: los borrados también se sincronizan.",
+   "combina_con": [
+    {
+     "id": "home-assistant",
+     "motivo": "Supervisar carpetas y dispositivos con la integración oficial de Syncthing en Home Assistant.",
+     "orden_instalacion": "Crea una clave de API en Syncthing y añade la integración."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Desplegar un nodo Syncthing siempre encendido en un servidor (Coolify documenta el servicio Syncthing).",
+     "orden_instalacion": "Instala Coolify y añade el servicio Syncthing; empareja tus dispositivos con él."
+    },
+    {
+     "id": "paperless-ngx",
+     "motivo": "Llevar escaneos desde el móvil o el portátil a la carpeta de consumo de Paperless-ngx. (combinación por arquitectura)",
+     "orden_instalacion": "Comparte en Syncthing la carpeta `consume` de Paperless-ngx en modo solo recepción."
+    },
+    {
+     "id": "audiobookshelf",
+     "motivo": "Alimentar la biblioteca de Audiobookshelf desde otros equipos. (combinación por arquitectura)",
+     "orden_instalacion": "Comparte la carpeta de la biblioteca en Syncthing."
+    },
+    {
+     "id": "spotdl",
+     "motivo": "Combinación recíproca: spotDL lo enlaza como «Syncthing puede sincronizar la carpeta de música descargada entre tus dispositivos (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde spotDL: Descarga con spotDL en una carpeta; después compártela con Syncthing.",
+     "reciproca_de": "spotdl"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Complementa Syncthing con copias de seguridad reales.",
+   "fuentes": [
+    "https://github.com/syncthing/syncthing/blob/main/README.md",
+    "https://docs.syncthing.net/intro/getting-started.html",
+    "https://www.home-assistant.io/integrations/syncthing/",
+    "https://coolify.io/docs/services/syncthing"
+   ],
+   "github": {
+    "name_with_owner": "syncthing/syncthing",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "MPL-2.0",
+    "primary_language": "Go",
+    "latest_release": "v2.1.7 (2026-10-21)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "karakeep": {
+   "que_es": "Gestor de marcadores autoalojado «guárdalo todo» (antes Hoarder) con etiquetado por IA, de Localhost Labs Ltd. Licencia AGPL-3.0. Es activo y popular (~31k estrellas, v0.35.0).",
+   "que_hace": "Guarda enlaces, notas, imágenes y PDF, obtiene título, descripción e imagen de los enlaces y archiva páginas completas. Usa LLM para etiquetar y resumir automáticamente, también con modelos locales vía Ollama, y hace OCR de imágenes. Ofrece búsqueda de texto completo, listas, reglas, importadores (Chrome, Pocket, Linkwarden, Omnivore), sincronización con marcadores del navegador vía floccus, extensiones de Chrome y Firefox y apps de iOS y Android.",
+   "como_lo_hace": "Es una app TypeScript (Next.js) desplegada con Docker Compose, que incluye Meilisearch para la búsqueda y un Chrome sin interfaz para capturar páginas. La IA se configura con variables de entorno (clave de OpenAI o URL de Ollama). Tiene API REST, CLI y skills para agentes de programación documentadas.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Etiquetado y resúmenes con modelos locales, soportado de forma nativa.",
+     "orden_instalacion": "Levanta Ollama, descarga un modelo y define las variables de Ollama en Karakeep."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Desplegar Karakeep con sus servicios auxiliares como servicio de un clic (Coolify documenta el servicio Karakeep).",
+     "orden_instalacion": "Instala Coolify y añade el servicio Karakeep."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Consultar y organizar marcadores desde un agente con las skills y la CLI documentadas de Karakeep.",
+     "orden_instalacion": "Instala la CLI, crea una clave de API e instala la skill en el agente."
+    },
+    {
+     "id": "archivebox",
+     "motivo": "Combinación recíproca: ArchiveBox lo enlaza como «Marcadores del día a día en Karakeep y copias de archivo completas en ArchiveBox. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde ArchiveBox: Exporta los enlaces de Karakeep e impórtalos en ArchiveBox.",
+     "reciproca_de": "archivebox"
+    }
+   ],
+   "notas": "Sin alternativas declaradas en el catálogo. Antes llamado Hoarder; parte de la documentación antigua usa ese nombre.",
+   "fuentes": [
+    "https://github.com/karakeep-app/karakeep/blob/main/README.md",
+    "https://docs.karakeep.com/installation/docker",
+    "https://docs.karakeep.com/configuration",
+    "https://docs.karakeep.com/integrations/agentic-skills",
+    "https://docs.karakeep.com/integrations/command-line",
+    "https://coolify.io/docs/services/karakeep"
+   ],
+   "github": {
+    "name_with_owner": "karakeep-app/karakeep",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.35.0 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "anytype-ts": {
+   "que_es": "Cliente de escritorio de Anytype, una base de conocimiento local-first, P2P y cifrada de extremo a extremo, de Any, una asociación suiza (organización anyproto). Su licencia es la Any Source Available License 1.0, que no es OSI (GitHub muestra NOASSERTION). Sigue en alfa (v0.57.8-alpha), aunque ya tiene ~9k estrellas.",
+   "que_hace": "Permite crear páginas, tareas, wikis, diarios y bases de datos con bloques componibles (texto, bases, kanban, calendario) y tipos de objeto propios. Funciona sin conexión con almacenamiento local, y sincroniza opcionalmente entre dispositivos P2P con cifrado de conocimiento cero (any-sync). Se extiende mediante una API gRPC.",
+   "como_lo_hace": "Es una app Electron con TypeScript para macOS, Windows y Linux; el núcleo (anytype-heart) está en Go y se comunica por gRPC/protobuf. Los usuarios descargan los instaladores; compilarlo requiere Node.js, el middleware y, en ARM, un compilador de C++ para recompilar `keytar`. El repo incluye `AGENTS.md` con instrucciones para agentes de programación que contribuyan.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Leer y crear objetos de Anytype desde un agente con el servidor MCP oficial `anyproto/anytype-mcp` (el servidor MCP no está en el catálogo).",
+     "orden_instalacion": "Activa la API local en Anytype, crea una clave e instala anytype-mcp en el agente."
+    },
+    {
+     "id": "markitdown",
+     "motivo": "Convertir documentos (DOCX, PDF) a Markdown antes de importarlos. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte con MarkItDown e importa los `.md` en Anytype."
+    },
+    {
+     "id": "activepieces",
+     "motivo": "Automatizar altas de objetos mediante la API local de Anytype. (combinación por arquitectura) (la API escucha en el equipo del usuario)",
+     "orden_instalacion": "Expón la API solo en local y llama desde Activepieces en la misma máquina."
+    }
+   ],
+   "notas": "Alternativas (elige una): appflowy. La licencia restringe usos comerciales concretos; léela antes de redistribuir.",
+   "fuentes": [
+    "https://github.com/anyproto/anytype-ts/blob/develop/README.md",
+    "https://github.com/anyproto/anytype-mcp",
+    "https://github.com/anyproto/anytype-ts/blob/main/LICENSE.md"
+   ],
+   "github": {
+    "name_with_owner": "anyproto/anytype-ts",
+    "archived": false,
+    "pushed_at": "2026-11-10",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.57.8-alpha (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "appflowy": {
+   "que_es": "Espacio de trabajo con IA, open source y alternativa a Notion, de AppFlowy. Licencia AGPL-3.0. Es maduro y popular (~79k estrellas, 0.15.1) y sigue versionado como 0.x.",
+   "que_hace": "Ofrece documentos, wikis, bases de datos (tablas, kanban, calendario), proyectos y colaboración en equipo. Incluye funciones de IA (resúmenes, «pregunta a la IA», escritura asistida) con modelos en la nube o, en escritorio, IA local con Ollama. Prioriza el control de los datos: funciona en local y se puede autoalojar el servidor de sincronización.",
+   "como_lo_hace": "El cliente está hecho con Flutter (Dart) y Rust, y tiene apps para escritorio y móvil. El servidor (AppFlowy-Cloud, repo aparte) se autoaloja con Docker siguiendo la guía oficial. La IA local requiere instalar Ollama y descargar los modelos indicados en la guía.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "IA local en el escritorio de AppFlowy, documentada en su guía de IA local con Ollama.",
+     "orden_instalacion": "Instala Ollama, descarga los modelos que pide la guía y actívalo en los ajustes de AppFlowy."
+    },
+    {
+     "id": "coolify",
+     "motivo": "Autoalojar el backend de AppFlowy como servicio de un clic (Coolify documenta el servicio AppFlowy).",
+     "orden_instalacion": "Instala Coolify, añade el servicio y apunta los clientes a tu URL."
+    },
+    {
+     "id": "markitdown",
+     "motivo": "Convertir documentos existentes a Markdown para importarlos. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte con MarkItDown e importa los archivos en AppFlowy."
+    }
+   ],
+   "notas": "Alternativas (elige una): anytype-ts.",
+   "fuentes": [
+    "https://github.com/AppFlowy-IO/AppFlowy/blob/main/README.md",
+    "https://appflowy.com/docs/Step-by-step-Self-Hosting-Guide---From-Zero-to-Production",
+    "https://appflowy.com/guide/appflowy-local-ai-ollama",
+    "https://coolify.io/docs/services/appflowy"
+   ],
+   "github": {
+    "name_with_owner": "AppFlowy-IO/AppFlowy",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "AGPL-3.0",
+    "primary_language": "Dart",
+    "latest_release": "0.15.1 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "cleanyourtv": {
+   "que_es": "Kit para quitar bloatware y anuncios de televisores Android TV y Google TV con ayuda de un agente de programación, creado por @Gathin23. El repo incluye un archivo LICENSE MIT, aunque GitHub muestra NOASSERTION. Ha tenido un crecimiento enorme y rápido (~58k estrellas, v3.5.0); el README enlaza patrocinios (0G Private Computer).",
+   "que_hace": "Desactiva telemetría del fabricante, servicios de anuncios, filas de contenido y apps preinstaladas con `pm disable-user`, sin desinstalar nada ni requerir root. Instala un lanzador nativo ligero como pantalla de inicio y deja un script de restauración de una línea. Dice cubrir 481 modelos de 131 marcas [DATO NO VERIFICADO]; para Samsung, LG, Roku, Vizio o VIDAA ofrece solo guías, porque no puede ejecutarse allí.",
+   "como_lo_hace": "Se activa la depuración (USB o red) en el televisor y un agente (Claude Code, Codex, Gemini CLI, entre otros) sigue las instrucciones del repo, ejecuta ADB y compila el lanzador con build-tools de Android. También existe un procedimiento manual con los mismos comandos y apps comunitarias para móvil y escritorio. Desactivar paquetes del sistema puede romper funciones; revisa la lista antes de aplicarla.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente que ejecuta el procedimiento, citado en el README como compatible.",
+     "orden_instalacion": "Instala el agente y las herramientas de Android (ADB, build-tools) y abre el repo con él."
+    },
+    {
+     "id": "codex",
+     "motivo": "Alternativa de agente citada en el README.",
+     "orden_instalacion": "Instala Codex CLI y sigue el inicio rápido del repo."
+    },
+    {
+     "id": "adguardhome",
+     "motivo": "Bloquear por DNS los dominios de telemetría y anuncios que queden activos. (combinación por arquitectura)",
+     "orden_instalacion": "Pon AdGuard Home como DNS de la red antes o después de limpiar el televisor."
+    },
+    {
+     "id": "optimizerduck",
+     "motivo": "Combinación recíproca: optimizerDuck lo enlaza como «Misma filosofía para el televisor Android. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde optimizerDuck: Úsalos por separado, cada uno en su plataforma.",
+     "reciproca_de": "optimizerduck"
+    },
+    {
+     "id": "universal-android-debloater-next-generation",
+     "motivo": "Combinación recíproca: universal-android-debloater-next-generation lo enlaza como «Misma técnica (ADB, `pm`) para televisores Android. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde universal-android-debloater-next-generation: Úsalos por separado con el mismo ADB instalado.",
+     "reciproca_de": "universal-android-debloater-next-generation"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Discrepancia de licencia entre GitHub (NOASSERTION) y el archivo LICENSE (MIT). Da acceso ADB al agente solo mientras dure la tarea.",
+   "fuentes": [
+    "https://github.com/Gathin23/cleanyourtv/blob/main/README.md",
+    "https://cleanyour.tv"
+   ],
+   "github": {
+    "name_with_owner": "Gathin23/cleanyourtv",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "v3.5.0 (2026-11-14)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "optimizerduck": {
+   "que_es": "Herramienta gratuita y open source para optimizar Windows en rendimiento, privacidad y simplicidad, de @itsfatduck. El archivo LICENSE es GPL-3.0, aunque GitHub muestra NOASSERTION. Es activa (~12k estrellas, v2.29.0).",
+   "que_hace": "Aplica ajustes de rendimiento, energía y privacidad: desactiva telemetría, informes de errores, ID de publicidad, ubicación, Cortana, Copilot y sugerencias de contenido. También desactiva servicios y tareas programadas y quita apps preinstaladas. Cada cambio guarda un archivo de reversión, permite deshacer con un clic y sugiere un punto de restauración antes del primer uso.",
+   "como_lo_hace": "Es una app de escritorio en C# sobre .NET 10 que se descarga desde Releases. Modifica el registro y la configuración del sistema, así que necesita privilegios de administrador. El binario no está firmado, por lo que SmartScreen lo advertirá. Dice no tener telemetría ni conexiones salientes [DATO NO VERIFICADO].",
+   "combina_con": [
+    {
+     "id": "adguardhome",
+     "motivo": "Bloqueo de telemetría a nivel de red que complementa los ajustes locales. (combinación por arquitectura)",
+     "orden_instalacion": "Configura AdGuard Home como DNS y luego aplica los ajustes de privacidad en Windows."
+    },
+    {
+     "id": "universal-android-debloater-next-generation",
+     "motivo": "Misma limpieza de bloatware y telemetría para los móviles Android de casa. (combinación por arquitectura)",
+     "orden_instalacion": "Úsalos por separado, cada uno en su plataforma."
+    },
+    {
+     "id": "cleanyourtv",
+     "motivo": "Misma filosofía para el televisor Android. (combinación por arquitectura)",
+     "orden_instalacion": "Úsalos por separado, cada uno en su plataforma."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Discrepancia de licencia entre GitHub (NOASSERTION) y el archivo LICENSE (GPL-3.0). Binario sin firmar con permisos de administrador: verifica la release y crea un punto de restauración.",
+   "fuentes": [
+    "https://github.com/itsfatduck/optimizerDuck/blob/master/README.md",
+    "https://optimizerduck.vercel.app/docs/guides/how-it-works"
+   ],
+   "github": {
+    "name_with_owner": "itsfatduck/optimizerDuck",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "C#",
+    "latest_release": "v2.29.0 (2026-10-07)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "universal-android-debloater-next-generation": {
+   "que_es": "Fork independiente y mantenido de Universal Android Debloater (UAD), de la Universal-Debloater-Alliance. Licencia GPL-3.0. Es activo (~10k estrellas, v1.3.1).",
+   "que_hace": "Ofrece una interfaz gráfica para quitar apps de sistema innecesarias u opacas en Android sin root, con el objetivo de mejorar privacidad, eficiencia (energía, velocidad, memoria) y seguridad al reducir la superficie de ataque. Usa la Universal Debloat List, una lista comunitaria de paquetes con recomendaciones que también reutilizan otros proyectos como Canta. Según el README, no recoge datos y su única conexión externa son peticiones GET a GitHub para descargar la lista de paquetes.",
+   "como_lo_hace": "Es una app en Rust con GUI que habla con el móvil mediante ADB. Se descargan los binarios de Releases (o se compila desde el código), se instala ADB (platform-tools) y se activa la depuración USB en el teléfono, según la guía de inicio de la wiki. El README avisa que se usa bajo tu propio riesgo: quitar paquetes críticos puede dejar el dispositivo inutilizable, así que sigue las recomendaciones y haz copia de seguridad.",
+   "combina_con": [
+    {
+     "id": "adguardhome",
+     "motivo": "Filtrado DNS de red para los rastreadores que no se pueden quitar del teléfono. (combinación por arquitectura)",
+     "orden_instalacion": "Configura AdGuard Home como DNS (o DNS privado DoT) en el móvil."
+    },
+    {
+     "id": "cleanyourtv",
+     "motivo": "Misma técnica (ADB, `pm`) para televisores Android. (combinación por arquitectura)",
+     "orden_instalacion": "Úsalos por separado con el mismo ADB instalado."
+    },
+    {
+     "id": "optimizerduck",
+     "motivo": "Limpieza equivalente en Windows. (combinación por arquitectura)",
+     "orden_instalacion": "Úsalos por separado, cada uno en su plataforma."
+    }
+   ],
+   "notas": "Sin alternativas declaradas en el catálogo. El README recomienda Canta (Shizuku, desde el propio móvil) como opción complementaria.",
+   "fuentes": [
+    "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/blob/main/README.md",
+    "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/wiki/Usage"
+   ],
+   "github": {
+    "name_with_owner": "Universal-Debloater-Alliance/universal-android-debloater-next-generation",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "GPL-3.0",
+    "primary_language": "Rust",
+    "latest_release": "v1.3.1 (2026-11-02)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "ai-job-search": {
+   "que_es": "Marco de búsqueda de empleo asistida por IA construido sobre Claude Code, creado por un geofísico que lo usó en su propia búsqueda. Licencia MIT. Ha crecido muy rápido (~72k estrellas, v1.7.5). No está afiliado a Anthropic.",
+   "que_hace": "Convierte Claude Code en un asistente de candidaturas con comandos: `/setup` construye tu perfil (desde CV, exportación de LinkedIn u otros documentos), `/scrape` busca ofertas en portales, `/rank` las prioriza, `/apply` redacta CV y carta adaptados con un ciclo redactor-revisor, y hay seguimiento de resultados. Evalúa el encaje con criterios estructurados y ofrece referencias salariales opcionales. El flujo central no depende del país, pero las skills de portales están pensadas para el mercado danés.",
+   "como_lo_hace": "Requiere Claude Code (sin plan gratuito: suscripción o créditos de API), Python 3.10+, Bun para las CLI de portales y una distribución LaTeX con `lualatex` y `xelatex`; `pypdf` es opcional para la comprobación ATS. Se clona el repo y se ejecuta `tools/install_portal_clis.py`. `AGENTS.md` permite usarlo con Codex, Gemini CLI o Antigravity. `/setup` escribe datos personales en el repo, así que no lo publiques.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Requisito: el marco son comandos y skills de Claude Code.",
+     "orden_instalacion": "Instala Claude Code, clona el repo y ejecuta `/setup`."
+    },
+    {
+     "id": "codex",
+     "motivo": "Alternativa de agente soportada vía `AGENTS.md`.",
+     "orden_instalacion": "Abre el repo con Codex y sigue `AGENTS.md`."
+    },
+    {
+     "id": "markitdown",
+     "motivo": "Convertir CV o certificados en DOCX/PDF a Markdown para `/setup`. (combinación por arquitectura)",
+     "orden_instalacion": "Convierte los documentos y colócalos en `documents/`."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Mantén privado tu fork, que contiene datos personales; algunos portales bloquean el acceso automatizado.",
+   "fuentes": [
+    "https://github.com/ai-job-search-dev/ai-job-search/blob/master/README.md",
+    "https://github.com/ai-job-search-dev/ai-job-search/blob/master/AGENTS.md"
+   ],
+   "github": {
+    "name_with_owner": "ai-job-search-dev/ai-job-search",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v1.7.5 (2026-11-09)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

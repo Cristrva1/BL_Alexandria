@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🎨 skill/prompt · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Biblioteca comunitaria de skills de ciberseguridad para agentes, de @mukul975. Licencia Apache-2.0. No está afiliada a Anthropic pese a su nombre. Tiene ~36k estrellas (v1.3.0) y su último cambio es de agosto de 2026.
+
+## ¿Qué hace?
+
+Dice reunir 818 skills en 34 dominios, mapeadas a seis marcos como MITRE ATT&CK v19.1 y ATLAS, para más de 26 plataformas de agentes [DATO NO VERIFICADO sobre la calidad de cada skill]. Cubre defensa, respuesta a incidentes, seguridad de IA (red teaming de LLM, inyección de prompts, seguridad MCP) y técnicas ofensivas y de doble uso (C2, phishing simulado, explotación). El README exige uso autorizado y legal.
+
+## ¿Cómo lo hace?
+
+Son carpetas `SKILL.md` que se instalan con `npx skills add mukul975/Anthropic-Cybersecurity-Skills` o copiándolas al directorio de skills del agente. Algunas skills invocan herramientas externas que hay que instalar aparte.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente compatible con el formato `SKILL.md`. | Instala solo las skills que necesites con `npx skills add`. |
+| [SkillSpector](skillspector.md) | Escanear las skills ofensivas antes de instalarlas. (combinación por arquitectura) | Pasa SkillSpector sobre cada skill elegida. |
+| [promptfoo](promptfoo.md) | Complementar las skills de seguridad de IA con pruebas automatizadas de red teaming de LLM. (combinación por arquitectura) | Usa promptfoo para las pruebas y las skills como guía del agente. |
+
+**Notas:** Sin alternativas declaradas. Contiene técnicas ofensivas: úsalo solo contra sistemas propios o con autorización escrita.
+
+Estado en GitHub: activo · último push 2026-08-31 · última versión publicada v1.3.0 (2026-06-22) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/README.md) · [2](https://attack.mitre.org/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Colección comunitaria, no un producto oficial de Anthropic; los marcos citados orientan la clasificación y no certifican resultados |
 | Coste | Consumo del agente que ya utilizas. Las instrucciones usan el agente anfitrión; herramientas de seguridad y servicios referenciados pueden tener licencias o consumo propios |
 | Equipo | Preparación según la ruta elegida. Agente compatible; herramientas de la skill elegida; entorno propio de práctica |
-
-Colección comunitaria, no un producto oficial de Anthropic; los marcos citados orientan la clasificación y no certifican resultados
-
-## Qué puedes hacer con él
-
-Biblioteca comunitaria de skills para análisis de seguridad, defensa y pruebas autorizadas con Claude Code, Codex y otros agentes.
-
-## Por qué destaca
-
-Usos propuestos: Organizar una revisión de configuración; Preparar un ejercicio de respuesta defensiva.
-
-## Cómo funciona
 
 Colección comunitaria, no un producto oficial de Anthropic; los marcos citados orientan la clasificación y no certifican resultados
 

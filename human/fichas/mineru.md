@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Herramienta de análisis de documentos de OpenDataLab (Shanghai AI Laboratory) que convierte PDF y otros formatos en datos estructurados. Usa la «MinerU Open Source License», basada en Apache 2.0 con condiciones adicionales; muy activa (serie 4.2).
+
+## ¿Qué hace?
+
+Analiza PDF, imágenes escaneadas, Word, PowerPoint y Excel con reconocimiento de fórmulas en línea, diseño complejo y fusión de tablas entre páginas, y aprovecha la estructura de PDF etiquetados. Un mismo modelo de documento se renderiza a nueve destinos (Markdown, HTML, LaTeX, DOCX, EPUB, PDF y otros). Incluye WebUI con navegación entre original y resultado, API de tareas asíncronas `/v1/tasks`, router multiservicio y una skill para agentes.
+
+## ¿Cómo lo hace?
+
+Paquete Python (recomendado en entorno uv con Python 3.12: `uv pip install -U "mineru>=4.0,<5"`) con SDK, API V1, conversión por lotes, router y WebUI Gradio. Funciona en CPU en Windows, Linux y macOS y acelera en GPU Intel, AMD, NVIDIA (ONNX) y Apple Silicon; los modelos pequeños usan ONNX o Torch y el VLM puede servirse con llama.cpp, vLLM o LMDeploy. En Windows con NVIDIA y `mineru[full]` hay que instalar aparte un torch con GPU.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [LightRAG](lightrag.md) | Servicio de análisis multimodal soportado por LightRAG tras integrar RAG-Anything. | Arranca el servicio de MinerU y apunta LightRAG a su API. |
+| [vLLM](vllm.md) | Backend documentado para servir el VLM de MinerU con GPU. | vLLM con el modelo de MinerU; configúralo en MinerU antes de procesar lotes. |
+| [Claude Code](claude-code.md) | Skill oficial `mineru` que instala la herramienta y la usa para leer y citar documentos. | `npx skills add opendatalab/MinerU --skill mineru` y deja que el agente complete la instalación. |
+
+**Notas:** Alternativas (elige una): docling, marker. Revisa las condiciones adicionales de su licencia antes de uso comercial. Se retiró ragflow por no estar documentado.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada mineru-4.2.2-released (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/opendatalab/MinerU/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La skill ayuda al agente a operar la herramienta; no es un modelo incluido en la suscripción del cliente; la telemetría tiene configuración propia |
 | Coste | El coste depende del proveedor o la ruta. Los niveles locales usan CPU o GPU según backend; remoto requiere autorización explícita y puede costar; licencia MinerU añade condiciones |
 | Equipo | Preparación según la ruta elegida. Python 3.11–3.14; entorno virtual; modelos y backend del nivel elegido |
-
-La skill ayuda al agente a operar la herramienta; no es un modelo incluido en la suscripción del cliente; la telemetría tiene configuración propia
-
-## Qué puedes hacer con él
-
-Convierte PDFs y documentos de Office complejos en Markdown o JSON para flujos con agentes.
-
-## Por qué destaca
-
-Usos propuestos: Preparar PDFs complejos para un índice; Extraer tablas y fórmulas de un documento propio.
-
-## Cómo funciona
 
 La skill ayuda al agente a operar la herramienta; no es un modelo incluido en la suscripción del cliente; la telemetría tiene configuración propia
 
@@ -93,12 +107,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python 3.11–3.14; entorno virtual; modelos y backend del nivel elegido
 - **Etiquetas:** `docs` `pdf` `ocr` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [RAGFlow](ragflow.md) | 94.2k | Motor de RAG con comprensión profunda de documentos, citas y agentes, auto-hospedable. |
 
 ## Alternativas (elige una)
 

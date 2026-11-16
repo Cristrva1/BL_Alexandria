@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Recetario oficial de Anthropic (MIT) con notebooks y guías para construir con la API de Claude. Antes se llamaba anthropic-cookbook, nombre que aún aparece en muchos enlaces del README. Es activo (último push en noviembre de 2026).
+
+## ¿Qué hace?
+
+Ofrece recetas organizadas por capacidades (clasificación, RAG, resumen), uso de herramientas e integraciones, integraciones de terceros (bases vectoriales como Pinecone, embeddings de Voyage AI), multimodalidad (visión, PDF) y técnicas avanzadas (subagentes, evaluaciones automáticas, modo JSON). Recomienda empezar por el curso de fundamentos de la API de Anthropic.
+
+## ¿Cómo lo hace?
+
+Notebooks principalmente en Python que requieren una clave de API de Claude, con su coste correspondiente. Los conceptos son adaptables a cualquier lenguaje con cliente de la API. No se instala; se clona y se ejecuta cada notebook.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Anthropic's Prompt Engineering Tutorial](prompt-eng-tutorial.md) | Base de prompting recomendada antes de las recetas. (combinación por arquitectura) | Completa primero el tutorial de prompts. |
+| [claude-agent-sdk-python](claude-agent-sdk-python.md) | Siguiente paso cuando las recetas de herramientas y subagentes se quedan cortas y necesitas el bucle de agente completo. (combinación por arquitectura) | Pasa al SDK cuando quieras agentes con herramientas de sistema. |
+| [promptfoo](promptfoo.md) | Automatizar las evaluaciones que el cookbook enseña a construir. (combinación por arquitectura) | Convierte el notebook de evaluaciones en una configuración de promptfoo. |
+
+**Notas:** Alternativas (elige una): openai-cookbook, awesome-llm-apps. Combinación anterior con anthropic-skills sustituida por claude-agent-sdk-python (más directa).
+
+Estado en GitHub: activo · último push 2026-11-04 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anthropics/claude-cookbooks/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. La suscripción de Claude Code no sustituye automáticamente la clave API pedida por estos notebooks |
 | Coste | Consumo de APIs o servicios. Lectura libre; la ejecución de notebooks requiere API de Claude con facturación propia |
 | Equipo | Preparación según la ruta elegida. Navegador; Python y clave Anthropic para ejecutar ejemplos |
-
-La suscripción de Claude Code no sustituye automáticamente la clave API pedida por estos notebooks
-
-## Qué puedes hacer con él
-
-Recetario oficial de Anthropic con notebooks de Python para la API de Claude: tool use, RAG, visión, evals, caché y optimización.
-
-## Por qué destaca
-
-Usos propuestos: Clasificar tickets ficticios; Estudiar llamadas a herramientas.
-
-## Cómo funciona
 
 La suscripción de Claude Code no sustituye automáticamente la clave API pedida por estos notebooks
 
@@ -85,14 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; Python y clave Anthropic para ejecutar ejemplos
 - **Etiquetas:** `learning` `notebooks` `rag` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Anthropic's Prompt Engineering Tutorial](prompt-eng-tutorial.md) | 39.3k | Tutorial interactivo oficial de Anthropic para aprender ingeniería de prompts con ejercicios. |
-| [Anthropic Skills](anthropic-skills.md) | 195k | Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills. |
-| [promptfoo](promptfoo.md) | 27.2k | CLI para probar prompts, agentes y RAG, comparar modelos y hacer red teaming de seguridad. |
 
 ## Alternativas (elige una)
 

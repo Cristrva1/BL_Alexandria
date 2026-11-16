@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Base de datos vectorial de alto rendimiento y escalable, escrita en Go y C++, proyecto de la LF AI & Data Foundation bajo Apache 2.0. Madura y muy activa (v3.0.6), con versión gestionada en Zilliz Cloud.
+
+## ¿Qué hace?
+
+Organiza y busca grandes volúmenes de datos no estructurados (texto, imágenes, multimodal) por similitud vectorial, con soporte de los principales tipos de índice, búsqueda de texto completo con BM25 mediante vectores dispersos y búsqueda híbrida. Sirve desde prototipos hasta despliegues distribuidos de miles de millones de vectores.
+
+## ¿Cómo lo hace?
+
+Arquitectura distribuida nativa de Kubernetes que separa cómputo y almacenamiento, con aceleración por CPU y GPU. Se usa con el SDK `pymilvus` (`MilvusClient`); Milvus Lite (`pymilvus[milvus-lite]`) crea una base local en un archivo para empezar, y para servidor se despliega en Docker (standalone) o en Kubernetes.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [AnythingLLM](anything-llm.md) | Base vectorial soportada por AnythingLLM. | Milvus primero; configura su URL en AnythingLLM antes de ingerir documentos. |
+| [LightRAG](lightrag.md) | Backend de almacenamiento vectorial soportado. | Milvus primero; fija el modelo de embeddings antes de indexar. |
+| [LlamaIndex](llama-index.md) | Integración documentada en la web de Milvus. | Instala el paquete de integración de LlamaIndex y apunta a Milvus Lite o al servidor. |
+| [langchain4j](langchain4j.md) | Combinación recíproca: langchain4j lo enlaza como «Almacén vectorial alternativo para volúmenes grandes (módulo oficial)». | Orden indicado desde langchain4j: Elige uno de los almacenes vectoriales; despliega Milvus y añade su módulo. |
+
+**Notas:** Alternativas (elige una): qdrant, chroma, pgvector.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v3.0.6 (2026-11-11) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/milvus-io/milvus/blob/master/README.md) · [2](https://milvus.io/docs/integrate_with_llamaindex.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | La función básica no necesita un modelo. pymilvus es el cliente y no toda la infraestructura del servidor; elige explícitamente el modo antes de instalar |
 | Coste | Sin pago a un modelo en la ruta básica. No exige LLM; infraestructura y generación de vectores se presupuestan aparte |
 | Equipo | Preparación según la ruta elegida. Python para cliente; servidor o modo local según guía; vectores de prueba |
-
-pymilvus es el cliente y no toda la infraestructura del servidor; elige explícitamente el modo antes de instalar
-
-## Qué puedes hacer con él
-
-Base de datos vectorial nativa de la nube para búsqueda a escala de miles de millones de vectores.
-
-## Por qué destaca
-
-Usos propuestos: Buscar productos por similitud; Indexar embeddings a gran escala.
-
-## Cómo funciona
 
 pymilvus es el cliente y no toda la infraestructura del servidor; elige explícitamente el modo antes de instalar
 
@@ -86,18 +101,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `vector-db` `rag` `go` `docker`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [LlamaIndex](llama-index.md) | 52.9k | Framework para conectar LLM con tus datos: ingesta, indexación, RAG y agentes sobre documentos. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Qdrant](qdrant.md) | 35.6k | Base de datos vectorial de alto rendimiento escrita en Rust, con filtros y búsqueda híbrida. |
 | [Chroma](chroma.md) | 29.7k | Base de datos de búsqueda para IA, la más sencilla para empezar con embeddings en local. |
+| [pgvector](pgvector.md) | 23.7k | Extensión de PostgreSQL para búsqueda de similitud vectorial junto a tus datos relacionales. |
+| [Weaviate](weaviate.md) | 17k | Base de datos vectorial nativa de la nube que guarda objetos y vectores, con búsqueda híbrida, filtros, RAG y vectorización integrada. |
 
 ## Enlaces
 

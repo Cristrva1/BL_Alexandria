@@ -1,0 +1,634 @@
+{
+ "batch": "25-inferencia-observabilidad-parte-1",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "vllm": {
+   "que_es": "vLLM, motor de inferencia y servicio de LLM nacido en el Sky Computing Lab de UC Berkeley y mantenido por una comunidad amplia. Licencia Apache-2.0. Es uno de los proyectos open source de IA más activos (~97k estrellas; última versión candidata v0.33.0rc3).",
+   "que_hace": "Sirve modelos de lenguaje y multimodales con alto rendimiento gracias a PagedAttention, batching continuo, caché de prefijos, decodificación especulativa y muchos formatos de cuantización (FP8, INT4, GPTQ/AWQ, GGUF…). Ofrece paralelismo tensorial, de pipeline, de datos y de expertos para inferencia distribuida, salidas estructuradas, tool calling y multi-LoRA. Expone una API compatible con OpenAI, además de Anthropic Messages y gRPC.",
+   "como_lo_hace": "Se instala con `uv pip install vllm` (o imagen Docker) y se lanza con `vllm serve <modelo>`. Está escrito en Python con kernels CUDA/HIP y torch.compile. Funciona en GPU NVIDIA y AMD y en otros aceleradores mediante plugins; el rendimiento óptimo exige una GPU con memoria suficiente para el modelo.",
+   "combina_con": [
+    {
+     "id": "litellm",
+     "motivo": "LiteLLM tiene proveedor nativo para vLLM.",
+     "orden_instalacion": "Lanza `vllm serve` y añade el endpoint en LiteLLM."
+    },
+    {
+     "id": "open-webui",
+     "motivo": "La documentación de vLLM explica cómo usarlo con Open WebUI.",
+     "orden_instalacion": "Apunta Open WebUI al endpoint OpenAI de vLLM."
+    },
+    {
+     "id": "langchain",
+     "motivo": "Integración con LangChain documentada por vLLM.",
+     "orden_instalacion": "Usa el cliente compatible con OpenAI de LangChain contra vLLM."
+    }
+   ],
+   "notas": "Alternativas (elige una): sglang.",
+   "fuentes": [
+    "https://github.com/vllm-project/vllm/blob/main/README.md",
+    "https://docs.vllm.ai/en/latest/deployment/frameworks/open-webui.html",
+    "https://docs.litellm.ai/docs/providers/vllm",
+    "https://docs.vllm.ai/en/latest/serving/integrations/langchain.html"
+   ],
+   "github": {
+    "name_with_owner": "vllm-project/vllm",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.33.0rc3 (2026-11-02)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "sglang": {
+   "que_es": "SGLang, framework de inferencia para modelos de lenguaje, visión-lenguaje y difusión, de la comunidad sgl-project (LMSYS). Licencia Apache-2.0. Es muy activo (~39k estrellas, v0.5.23).",
+   "que_hace": "Sirve modelos optimizados para cargas agénticas, servicio a gran escala y rollouts de aprendizaje por refuerzo. Soporta un abanico amplio de hardware: GPU NVIDIA y AMD, TPU de Google, Intel, NPU, CPU y Apple Silicon. Incluye SGLang Diffusion para modelos de imagen y vídeo y expone APIs compatibles con OpenAI.",
+   "como_lo_hace": "Se usa con la imagen Docker `lmsysorg/sglang` o con `uv pip install --prerelease=allow sglang`, y se lanza con los comandos del Cookbook según modelo y hardware. Está escrito en Python con kernels propios. Requiere aceleradores compatibles para rendimiento real.",
+   "combina_con": [
+    {
+     "id": "litellm",
+     "motivo": "Usar SGLang a través del proveedor compatible con OpenAI de LiteLLM. (combinación por arquitectura)",
+     "orden_instalacion": "Lanza SGLang y regístralo como endpoint OpenAI en LiteLLM."
+    },
+    {
+     "id": "open-webui",
+     "motivo": "Interfaz de chat sobre el endpoint OpenAI de SGLang. (combinación por arquitectura)",
+     "orden_instalacion": "Configura la conexión OpenAI de Open WebUI con la URL de SGLang."
+    },
+    {
+     "id": "unsloth",
+     "motivo": "Servir con SGLang modelos afinados con Unsloth. (combinación por arquitectura)",
+     "orden_instalacion": "Afina y exporta con Unsloth y sirve los pesos con SGLang."
+    },
+    {
+     "id": "deepseek-v3",
+     "motivo": "Combinación recíproca: DeepSeek-V3 lo enlaza como «Soporte documentado en BF16 y FP8».",
+     "orden_instalacion": "Orden indicado desde DeepSeek-V3: Sirve el modelo con SGLang.",
+     "reciproca_de": "deepseek-v3"
+    },
+    {
+     "id": "kimi-k2-7-code",
+     "motivo": "Combinación recíproca: Kimi K2.7 Code lo enlaza como «Despliegue documentado».",
+     "orden_instalacion": "Orden indicado desde Kimi K2.7 Code: Sirve el modelo con SGLang.",
+     "reciproca_de": "kimi-k2-7-code"
+    },
+    {
+     "id": "llama-factory",
+     "motivo": "Combinación recíproca: LLaMA-Factory lo enlaza como «Worker de inferencia alternativo».",
+     "orden_instalacion": "Orden indicado desde LLaMA-Factory: Configura el backend SGLang.",
+     "reciproca_de": "llama-factory"
+    }
+   ],
+   "notas": "Alternativas (elige una): vllm.",
+   "fuentes": [
+    "https://github.com/sgl-project/sglang/blob/main/README.md",
+    "https://docs.sglang.io/docs/basic_usage/openai_api"
+   ],
+   "github": {
+    "name_with_owner": "sgl-project/sglang",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.5.23 (2026-11-02)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "tensorrt-llm": {
+   "que_es": "TensorRT LLM, la librería de NVIDIA para optimizar inferencia de LLM y modelos de generación visual en GPU NVIDIA. Licencia Apache-2.0 según el README (GitHub muestra NOASSERTION). Es activa (~15k estrellas, v1.2.1).",
+   "que_hace": "Ofrece kernels especializados, un runtime eficiente y una API de Python (LLM API) construida sobre PyTorch para servir modelos en una o varias GPU. Incluye cuantización, caché KV optimizada, decodificación especulativa y técnicas para MoE a gran escala. Sirve modelos con `trtllm-serve` mediante una API compatible con OpenAI.",
+   "como_lo_hace": "Se instala con pip o con contenedores NGC y solo funciona en GPU NVIDIA con CUDA. Desde la versión 1.0 tiene política formal de deprecaciones. Recoge telemetría anónima por defecto (se desactiva automáticamente en CI; revisa la documentación para desactivarla).",
+   "combina_con": [
+    {
+     "id": "litellm",
+     "motivo": "Enrutar a `trtllm-serve` como endpoint compatible con OpenAI. (combinación por arquitectura)",
+     "orden_instalacion": "Lanza trtllm-serve y regístralo en LiteLLM."
+    },
+    {
+     "id": "open-webui",
+     "motivo": "Chat sobre modelos servidos con TensorRT LLM. (combinación por arquitectura)",
+     "orden_instalacion": "Configura Open WebUI contra el endpoint de trtllm-serve."
+    },
+    {
+     "id": "transformers",
+     "motivo": "Partir de checkpoints de Hugging Face para optimizarlos. (combinación por arquitectura)",
+     "orden_instalacion": "Descarga el modelo con Transformers/Hub y cárgalo en la LLM API."
+    },
+    {
+     "id": "deepseek-v3",
+     "motivo": "Combinación recíproca: DeepSeek-V3 lo enlaza como «Soporte documentado para GPU NVIDIA».",
+     "orden_instalacion": "Orden indicado desde DeepSeek-V3: Construye el motor con TensorRT-LLM.",
+     "reciproca_de": "deepseek-v3"
+    },
+    {
+     "id": "gpustack",
+     "motivo": "Combinación recíproca: GPUStack lo enlaza como «GPUStack configura TensorRT-LLM en GPU NVIDIA».",
+     "orden_instalacion": "Orden indicado desde GPUStack: Elige TensorRT-LLM como motor en el despliegue.",
+     "reciproca_de": "gpustack"
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Recoge telemetría por defecto. Exclusivo de NVIDIA.",
+   "fuentes": [
+    "https://github.com/NVIDIA/TensorRT-LLM/blob/main/README.md",
+    "https://nvidia.github.io/TensorRT-LLM/",
+    "https://nvidia.github.io/TensorRT-LLM/commands/trtllm-serve/index.html"
+   ],
+   "github": {
+    "name_with_owner": "NVIDIA/TensorRT-LLM",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "v1.2.1 (2026-04-20)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "promptfoo": {
+   "que_es": "Promptfoo, CLI y librería para evaluar y hacer red teaming de aplicaciones con LLM. Ahora forma parte de OpenAI y sigue siendo open source con licencia MIT. Es muy activo (~27k estrellas, 0.125.1).",
+   "que_hace": "Ejecuta evaluaciones automáticas de prompts, modelos, agentes y RAG con aserciones, y compara proveedores lado a lado. Hace red teaming y escaneo de vulnerabilidades con informes de seguridad. Revisa pull requests en busca de problemas de seguridad relacionados con LLM y se integra en CI/CD.",
+   "como_lo_hace": "Se instala con `npm install -g promptfoo`, `brew`, `pip` o se usa con `npx promptfoo@latest`; se configura con YAML y se ejecuta con `promptfoo eval` y `promptfoo view`. Las evaluaciones corren en local, aunque requieren las claves de los proveedores que se prueben.",
+   "combina_con": [
+    {
+     "id": "langfuse",
+     "motivo": "Integración documentada para usar prompts y trazas de Langfuse.",
+     "orden_instalacion": "Configura las credenciales de Langfuse en promptfoo."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Proveedor nativo de LiteLLM en promptfoo.",
+     "orden_instalacion": "Apunta promptfoo al proxy LiteLLM."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Proveedor nativo para evaluar modelos servidos con vLLM.",
+     "orden_instalacion": "Lanza vLLM y configúralo como proveedor."
+    }
+   ],
+   "notas": "Alternativas (elige una): deepeval, ragas, dspy. Tras la compra por OpenAI conviene vigilar la gobernanza del proyecto.",
+   "fuentes": [
+    "https://github.com/promptfoo/promptfoo/blob/main/README.md",
+    "https://www.promptfoo.dev/docs/integrations/langfuse/",
+    "https://www.promptfoo.dev/docs/providers/litellm/",
+    "https://www.promptfoo.dev/docs/providers/vllm/"
+   ],
+   "github": {
+    "name_with_owner": "promptfoo/promptfoo",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "0.125.1 (2026-10-25)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "langfuse": {
+   "que_es": "Langfuse, plataforma open source de ingeniería de IA para observabilidad y evaluación de agentes; forma parte de ClickHouse desde enero de 2026. Es MIT salvo las carpetas `ee` (GitHub muestra NOASSERTION). Es muy activa (~37k estrellas, v4.80.0).",
+   "que_hace": "Registra trazas de llamadas a LLM, recuperación, embeddings y herramientas, con uso y costes. Gestiona y versiona prompts, y en beta también skills (`SKILL.md`). Permite evaluaciones con LLM como juez, anotación manual, datasets y experimentos, además de un playground.",
+   "como_lo_hace": "Se usa en Langfuse Cloud o se autoaloja con Docker Compose, Kubernetes o Terraform. Recibe trazas por SDK de Python y JS/TS o por OpenTelemetry, con integraciones para muchos frameworks. El despliegue propio requiere Postgres, ClickHouse, Redis y almacenamiento S3.",
+   "combina_con": [
+    {
+     "id": "litellm",
+     "motivo": "Integración nativa: LiteLLM envía trazas a Langfuse.",
+     "orden_instalacion": "Activa el callback de Langfuse en LiteLLM."
+    },
+    {
+     "id": "langchain",
+     "motivo": "Integración nativa con LangChain y LangGraph mediante callback.",
+     "orden_instalacion": "Pasa el callback handler de Langfuse a tus cadenas."
+    },
+    {
+     "id": "open-webui",
+     "motivo": "Integración documentada con Open WebUI.",
+     "orden_instalacion": "Configura el pipeline de Langfuse en Open WebUI."
+    },
+    {
+     "id": "ragas",
+     "motivo": "Guía oficial para evaluar RAG con Ragas y registrar puntuaciones.",
+     "orden_instalacion": "Calcula métricas con Ragas y súbelas como scores."
+    }
+   ],
+   "notas": "Alternativas (elige una): phoenix, opik, mlflow. Las funciones `ee` tienen otra licencia.",
+   "fuentes": [
+    "https://github.com/langfuse/langfuse/blob/main/README.md",
+    "https://langfuse.com/integrations/gateways/litellm",
+    "https://langfuse.com/integrations/frameworks/langchain",
+    "https://langfuse.com/integrations/no-code/openwebui",
+    "https://langfuse.com/integrations/frameworks/ragas"
+   ],
+   "github": {
+    "name_with_owner": "langfuse/langfuse",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "TypeScript",
+    "latest_release": "v4.80.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "mlflow": {
+   "que_es": "MLflow, plataforma open source de ingeniería de IA para agentes, LLM y modelos de ML. Licencia Apache-2.0. Es muy madura (~29k estrellas, v3.18.0) y el README cita más de 60 millones de descargas mensuales.",
+   "que_hace": "Para apps de LLM ofrece trazas basadas en OpenTelemetry, evaluación, gestión y optimización de prompts y un AI Gateway. Para ML clásico mantiene seguimiento de experimentos, registro de modelos y despliegue. Tiene SDK para Python, TypeScript/JavaScript, Java y R.",
+   "como_lo_hace": "Se arranca un servidor con `uvx mlflow server` o `pip install mlflow`, y se instrumenta el código con autolog o el SDK. Incluye un asistente que configura el proyecto con Claude Code, Codex u OpenCode. Para producción necesita base de datos y almacenamiento de artefactos.",
+   "combina_con": [
+    {
+     "id": "dspy",
+     "motivo": "Trazado nativo de DSPy con autolog.",
+     "orden_instalacion": "Activa `mlflow.dspy.autolog()`."
+    },
+    {
+     "id": "transformers",
+     "motivo": "Flavor nativo para registrar y servir modelos de Transformers.",
+     "orden_instalacion": "Registra el pipeline con `mlflow.transformers`."
+    },
+    {
+     "id": "deepeval",
+     "motivo": "Métricas de DeepEval disponibles como scorers de terceros en MLflow.",
+     "orden_instalacion": "Instala deepeval y úsalo desde la evaluación de MLflow."
+    },
+    {
+     "id": "ragas",
+     "motivo": "Métricas de Ragas disponibles como scorers de terceros.",
+     "orden_instalacion": "Instala ragas y úsalo desde la evaluación de MLflow."
+    },
+    {
+     "id": "qlib",
+     "motivo": "Combinación recíproca: qlib lo enlaza como «El recorder de Qlib se basa en MLflow».",
+     "orden_instalacion": "Orden indicado desde qlib: Configura el URI de MLflow para los experimentos.",
+     "reciproca_de": "qlib"
+    },
+    {
+     "id": "airflow",
+     "motivo": "Combinación recíproca: Apache Airflow lo enlaza como «Airflow programa los pasos de entrenamiento y evaluación y MLflow registra parámetros, métricas y modelos de cada ejecución (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Apache Airflow: Servidor de MLflow primero; después tareas de Airflow que usen su cliente con MLFLOW_TRACKING_URI.",
+     "reciproca_de": "airflow"
+    }
+   ],
+   "notas": "Alternativas (elige una): langfuse.",
+   "fuentes": [
+    "https://github.com/mlflow/mlflow/blob/master/README.md",
+    "https://mlflow.org/docs/latest/genai/tracing/integrations/listing/dspy",
+    "https://mlflow.org/docs/latest/ml/deep-learning/transformers/",
+    "https://mlflow.org/docs/latest/genai/eval-monitor/scorers/third-party/deepeval",
+    "https://mlflow.org/docs/latest/genai/eval-monitor/scorers/third-party/ragas"
+   ],
+   "github": {
+    "name_with_owner": "mlflow/mlflow",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v3.18.0 (2026-11-04)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "loguru": {
+   "que_es": "Loguru, librería de logging para Python de @Delgan. Licencia MIT. Es madura y muy usada (~24k estrellas, 0.8.0).",
+   "que_hace": "Sustituye la configuración de handlers, formatters y filtros del logging estándar por un único objeto `logger` listo para usar. Añade rotación, retención y compresión de archivos, formato con llaves, colores y captura de excepciones con trazas descriptivas. Es segura en hilos, procesos y código asíncrono, y puede convivir con el módulo `logging` estándar.",
+   "como_lo_hace": "Se instala con `pip install loguru` y se importa con `from loguru import logger`. Es Python puro, sin dependencias de servicios. Las trazas descriptivas pueden mostrar valores de variables: desactívalas en producción si hay datos sensibles.",
+   "combina_con": [
+    {
+     "id": "litellm",
+     "motivo": "Registrar en local las llamadas de un servicio que usa LiteLLM. (combinación por arquitectura)",
+     "orden_instalacion": "Añade sinks de Loguru en tu aplicación."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Logs técnicos en Loguru y trazas de LLM en Langfuse. (combinación por arquitectura)",
+     "orden_instalacion": "Mantén ambos con un identificador de petición común."
+    },
+    {
+     "id": "pydantic-ai",
+     "motivo": "Logging sencillo en agentes Python. (combinación por arquitectura)",
+     "orden_instalacion": "Configura Loguru al iniciar el agente."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Ojo con `diagnose=True` en producción.",
+   "fuentes": [
+    "https://github.com/Delgan/loguru/blob/master/README.md",
+    "https://loguru.readthedocs.io/en/stable/overview.html",
+    "https://loguru.readthedocs.io/en/stable/resources/recipes.html"
+   ],
+   "github": {
+    "name_with_owner": "Delgan/loguru",
+    "archived": false,
+    "pushed_at": "2026-11-11",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "0.8.0 (2026-11-11)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "opik": {
+   "que_es": "Opik, plataforma open source de Comet para observabilidad, evaluación y trazado de agentes de IA. Licencia Apache-2.0 en toda la plataforma (servidor incluido). Es muy activa (~23k estrellas, 2.2.143).",
+   "que_hace": "Traza llamadas a LLM, conversaciones y agentes con árboles de pasos y herramientas. Evalúa con datasets, experimentos y métricas de LLM como juez (alucinación, moderación, RAG). Incluye optimizador de prompts y agentes, monitorización en producción y guardrails.",
+   "como_lo_hace": "Se usa en Comet Cloud o se autoaloja (Docker Compose o Kubernetes); el cliente se instala con `pip install opik`. Tiene servidor MCP (`uvx opik mcp configure`) e integraciones con decenas de frameworks.",
+   "combina_con": [
+    {
+     "id": "langgraph",
+     "motivo": "Integración nativa para trazar grafos de LangGraph.",
+     "orden_instalacion": "Envuelve el grafo con el tracer de Opik."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Integración nativa con LiteLLM.",
+     "orden_instalacion": "Activa el callback de Opik en LiteLLM."
+    },
+    {
+     "id": "ragas",
+     "motivo": "Integración documentada para registrar métricas de Ragas.",
+     "orden_instalacion": "Calcula métricas con Ragas y regístralas en Opik."
+    },
+    {
+     "id": "dspy",
+     "motivo": "Integración documentada con DSPy.",
+     "orden_instalacion": "Activa el callback de Opik en DSPy."
+    }
+   ],
+   "notas": "Alternativas (elige una): langfuse, phoenix.",
+   "fuentes": [
+    "https://github.com/comet-ml/opik/blob/main/README.md",
+    "https://www.comet.com/docs/opik/integrations/langgraph",
+    "https://www.comet.com/docs/opik/integrations/litellm",
+    "https://www.comet.com/docs/opik/integrations/ragas",
+    "https://www.comet.com/docs/opik/integrations/dspy"
+   ],
+   "github": {
+    "name_with_owner": "comet-ml/opik",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "2.2.143 (2026-11-06)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "deepeval": {
+   "que_es": "DeepEval, framework open source de evaluación de LLM al estilo pytest, de Confident AI. Licencia Apache-2.0. Es muy activo (~19k estrellas, python-v4.2.4).",
+   "que_hace": "Evalúa aplicaciones de LLM de extremo a extremo, trayectorias completas de agentes y pasos individuales (llamadas, herramientas, recuperación, traspasos). Incluye decenas de métricas, entre ellas G-Eval, alucinación, RAG y métricas específicas de MCP. Sirve para comparar modelos y prompts y detectar regresiones en CI.",
+   "como_lo_hace": "Se instala con `pip install -U deepeval` y se escriben tests con `assert_test` que se ejecutan con `deepeval test run`. Las métricas usan un LLM juez, por lo que requieren clave de API o un modelo local. La plataforma de pago Confident AI añade paneles y trazas.",
+   "combina_con": [
+    {
+     "id": "langchain",
+     "motivo": "Integración documentada con LangChain.",
+     "orden_instalacion": "Instrumenta la cadena con el callback de DeepEval."
+    },
+    {
+     "id": "llama-index",
+     "motivo": "Integración documentada con LlamaIndex.",
+     "orden_instalacion": "Evalúa el motor de consulta con las métricas de DeepEval."
+    },
+    {
+     "id": "mlflow",
+     "motivo": "Métricas de DeepEval como scorers de terceros en MLflow.",
+     "orden_instalacion": "Usa DeepEval desde la evaluación de MLflow."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Calcular métricas con DeepEval y guardarlas como scores en Langfuse. (combinación por arquitectura)",
+     "orden_instalacion": "Ejecuta DeepEval sobre trazas exportadas y sube los scores."
+    }
+   ],
+   "notas": "Alternativas (elige una): ragas, promptfoo. Las métricas con LLM juez cuestan tokens.",
+   "fuentes": [
+    "https://github.com/confident-ai/deepeval/blob/main/README.md",
+    "https://deepeval.com/integrations/frameworks/langchain",
+    "https://deepeval.com/integrations/frameworks/llamaindex"
+   ],
+   "github": {
+    "name_with_owner": "confident-ai/deepeval",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "python-v4.2.4 (2026-09-22)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "ragas": {
+   "que_es": "Ragas, librería para evaluar y optimizar aplicaciones de LLM y RAG, ahora bajo la organización vibrantlabsai. Licencia Apache-2.0. Es activa (~16k estrellas, v0.4.4).",
+   "que_hace": "Calcula métricas objetivas, basadas en LLM y tradicionales, como fidelidad, relevancia y precisión del contexto. Genera datasets de prueba sintéticos alineados con producción y crea bucles de retroalimentación con datos reales. Se integra con frameworks de LLM y herramientas de observabilidad.",
+   "como_lo_hace": "Se instala con `pip install ragas` y ofrece `ragas quickstart` para clonar un proyecto de ejemplo. Las métricas con LLM requieren un modelo evaluador y su clave.",
+   "combina_con": [
+    {
+     "id": "llama-index",
+     "motivo": "Integración documentada con LlamaIndex.",
+     "orden_instalacion": "Evalúa el query engine con Ragas."
+    },
+    {
+     "id": "langfuse",
+     "motivo": "Guía oficial de Langfuse para registrar puntuaciones de Ragas.",
+     "orden_instalacion": "Calcula métricas y súbelas como scores."
+    },
+    {
+     "id": "langchain",
+     "motivo": "Integración documentada con LangChain.",
+     "orden_instalacion": "Envuelve el modelo y los embeddings de LangChain para Ragas."
+    },
+    {
+     "id": "opik",
+     "motivo": "Integración documentada en Opik.",
+     "orden_instalacion": "Registra métricas de Ragas en Opik."
+    }
+   ],
+   "notas": "Alternativas (elige una): deepeval, promptfoo. El repo se movió de explodinggradients/ragas a vibrantlabsai/ragas (GitHub redirige).",
+   "fuentes": [
+    "https://github.com/vibrantlabsai/ragas/blob/main/README.md",
+    "https://docs.ragas.io/en/stable/howtos/integrations/_llamaindex/",
+    "https://docs.ragas.io/en/stable/howtos/integrations/langchain/",
+    "https://langfuse.com/integrations/frameworks/ragas",
+    "https://www.comet.com/docs/opik/integrations/ragas"
+   ],
+   "github": {
+    "name_with_owner": "vibrantlabsai/ragas",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.4.4 (2026-11-14)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "phoenix": {
+   "que_es": "Arize Phoenix, plataforma de observabilidad de IA para experimentación, evaluación y depuración, de Arize. Licencia Elastic License 2.0 (código disponible, no OSI; GitHub muestra NOASSERTION). Es muy activa (~12k estrellas, arize-phoenix-v21.1.0).",
+   "que_hace": "Traza aplicaciones LLM con instrumentación basada en OpenTelemetry (OpenInference). Evalúa con LLM, gestiona datasets, experimentos y versiones de prompts, y ofrece un playground. Tiene un servidor MCP remoto para consultar trazas desde Claude Code, Cursor y otros clientes.",
+   "como_lo_hace": "Se instala con `pip install arize-phoenix` o `npx @arizeai/phoenix-cli setup`, y también se despliega con Docker Compose o Kubernetes/Helm. Es autoalojado; Arize AX es la versión gestionada de pago.",
+   "combina_con": [
+    {
+     "id": "llama-index",
+     "motivo": "Integración documentada para trazar LlamaIndex.",
+     "orden_instalacion": "Instala la instrumentación de OpenInference para LlamaIndex."
+    },
+    {
+     "id": "langgraph",
+     "motivo": "Integración documentada para LangGraph.",
+     "orden_instalacion": "Instrumenta LangGraph y envía trazas a Phoenix."
+    },
+    {
+     "id": "ollama",
+     "motivo": "Integración documentada con Ollama.",
+     "orden_instalacion": "Traza llamadas a modelos locales de Ollama."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Servidor MCP remoto para consultar trazas desde el agente.",
+     "orden_instalacion": "Conecta Claude Code al endpoint MCP de Phoenix."
+    }
+   ],
+   "notas": "Alternativas (elige una): langfuse, opik. La licencia ELv2 prohíbe ofrecerlo como servicio gestionado a terceros.",
+   "fuentes": [
+    "https://github.com/Arize-ai/phoenix/blob/main/README.md",
+    "https://arize.com/docs/phoenix/integrations/python/llamaindex",
+    "https://arize.com/docs/phoenix/integrations/python/langgraph",
+    "https://arize.com/docs/phoenix/integrations/llm-providers/ollama",
+    "https://arize.com/docs/phoenix/integrations/mcp"
+   ],
+   "github": {
+    "name_with_owner": "Arize-ai/phoenix",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "arize-phoenix-v21.1.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "guardrails": {
+   "que_es": "NeMo Guardrails, toolkit open source de NVIDIA para añadir barreras programables a aplicaciones conversacionales con LLM. Licencia Apache-2.0 según el README (GitHub muestra NOASSERTION). Es activo (~7.5k estrellas, v0.24.1).",
+   "que_hace": "Controla la salida del modelo con «rails»: no hablar de ciertos temas, seguir un diálogo, filtrar entradas y salidas, detectar jailbreaks, verificar hechos y moderar contenido. Las reglas se definen con configuración y el lenguaje Colang. Se puede usar como librería de Python o como servidor de guardrails.",
+   "como_lo_hace": "Se instala con `pip install nemoguardrails` y requiere Python 3.11–3.13 (desde 0.25.0 ya no admite 3.10). La integración con LangChain es opcional (`NEMOGUARDRAILS_LLM_FRAMEWORK=langchain`). Recoge telemetría anónima de uso (revisa la sección de privacidad para desactivarla).",
+   "combina_con": [
+    {
+     "id": "langchain",
+     "motivo": "Integración opcional con LangChain documentada en el README.",
+     "orden_instalacion": "Activa el framework LangChain y envuelve tu cadena con los rails."
+    },
+    {
+     "id": "promptfoo",
+     "motivo": "Hacer red teaming de la app protegida para comprobar los rails. (combinación por arquitectura)",
+     "orden_instalacion": "Configura los rails y lanza promptfoo contra el servidor."
+    },
+    {
+     "id": "vllm",
+     "motivo": "Proteger un modelo autoalojado. (combinación por arquitectura)",
+     "orden_instalacion": "Sirve el modelo con vLLM y apúntale la configuración de Guardrails."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. No confundir con Guardrails AI (otro proyecto, no catalogado). Telemetría activa por defecto.",
+   "fuentes": [
+    "https://github.com/NVIDIA-NeMo/Guardrails/blob/develop/README.md",
+    "https://docs.nvidia.com/nemo/guardrails"
+   ],
+   "github": {
+    "name_with_owner": "NVIDIA-NeMo/Guardrails",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "Python",
+    "latest_release": "v0.24.1 (2026-09-16)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "headroom": {
+   "que_es": "Headroom, capa de compresión de contexto para agentes y LLM de Headroom Labs (paquete `headroom-ai` en PyPI y npm). Licencia Apache-2.0. Es muy activo (~80k estrellas, v0.44.0).",
+   "que_hace": "Comprime salidas de herramientas, logs, fragmentos de RAG, archivos e historial antes de que lleguen al modelo. Según su propia medición ahorra entre un 21 y un 57 % de tokens de entrada en escenarios de agentes y más del 90 % en JSON y logs repetitivos, con poco efecto en prosa. Ofrece SDK, proxy, envoltura de agentes de programación, memoria compartida entre agentes y servidor MCP.",
+   "como_lo_hace": "Se instala con `pip install headroom-ai` (o con extras `[proxy]`/`[all]`) y se usa con `compress(...)` en código, con `headroom proxy --port 8787` o con `headroom wrap claude|codex|cursor|…`. La compresión corre en local; `HEADROOM_OFFLINE=1` evita cualquier llamada de red.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Envoltura nativa: `headroom wrap claude`.",
+     "orden_instalacion": "Instala headroom-ai[all] y envuelve el agente."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Integración citada en el README para apps que llaman a LiteLLM.",
+     "orden_instalacion": "Comprime los mensajes antes de enviarlos por LiteLLM."
+    },
+    {
+     "id": "context-engineering",
+     "motivo": "Aplicar técnicas de ingeniería de contexto junto a la compresión. (combinación por arquitectura)",
+     "orden_instalacion": "Diseña el contexto y comprime después lo voluminoso."
+    },
+    {
+     "id": "codegraph",
+     "motivo": "Reducir lecturas de código con un índice semántico. (combinación por arquitectura)",
+     "orden_instalacion": "Usa codegraph para localizar y Headroom para comprimir."
+    },
+    {
+     "id": "claude-code-usage-monitor",
+     "motivo": "Combinación recíproca: Claude-Code-Usage-Monitor lo enlaza como «Medir el ahorro de compresión de contexto. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Claude-Code-Usage-Monitor: Compara el consumo con y sin `headroom wrap claude`.",
+     "reciproca_de": "claude-code-usage-monitor"
+    },
+    {
+     "id": "mimo-code",
+     "motivo": "Combinación recíproca: MiMo-Code lo enlaza como «Comprimir el contexto en sesiones largas. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde MiMo-Code: Envuelve el agente con Headroom si es compatible.",
+     "reciproca_de": "mimo-code"
+    }
+   ],
+   "notas": "Alternativas (elige una): rtk. El número de estrellas crece de forma inusual para un proyecto tan joven; los ahorros son mediciones del propio proyecto.",
+   "fuentes": [
+    "https://github.com/headroomlabs-ai/headroom/blob/main/README.md",
+    "https://docs.headroomlabs.ai/docs"
+   ],
+   "github": {
+    "name_with_owner": "headroomlabs-ai/headroom",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "Python",
+    "latest_release": "v0.44.0 (2026-11-10)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "rtk": {
+   "que_es": "RTK (Rust Token Killer), filtro de salidas de terminal para agentes de programación, de rtk-ai. El binario por defecto combina Apache-2.0 y BUSL-1.1, y la edición `rtk-oss` es solo Apache-2.0. Es muy popular (~87k estrellas, v1.2.0) y tiene una versión comercial (RTK Pro).",
+   "que_hace": "Comprime la salida de más de 100 comandos (tests, diffs, logs, builds) antes de que el agente la lea, con hasta un 90 % menos de texto según el proyecto y menos de 25 ms por comando. `rtk gain` muestra lo ahorrado. Las pipelines (motor bajo BUSL) delegan lecturas pesadas a modelos más baratos y comprimen más fuentes.",
+   "como_lo_hace": "Se instala con `brew install rtk`, `winget` o un script `curl … | sh`, y se registra en el agente con `rtk init -g` (Claude Code) o variantes para Cursor, Gemini CLI y Codex. Es un binario Rust que reescribe comandos mediante hooks. La telemetría está desactivada por defecto.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Hook nativo con `rtk init -g`.",
+     "orden_instalacion": "Instala rtk y ejecuta `rtk init -g`."
+    },
+    {
+     "id": "codex",
+     "motivo": "Hook nativo con `rtk init -g --codex`.",
+     "orden_instalacion": "Registra el hook para Codex."
+    },
+    {
+     "id": "gemini-cli",
+     "motivo": "Hook nativo con `rtk init -g --gemini`.",
+     "orden_instalacion": "Registra el hook para Gemini CLI."
+    },
+    {
+     "id": "claude-code-usage-monitor",
+     "motivo": "Combinación recíproca: Claude-Code-Usage-Monitor lo enlaza como «Medir el efecto de reducir salidas de terminal. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Claude-Code-Usage-Monitor: Compara el consumo antes y después de activar rtk.",
+     "reciproca_de": "claude-code-usage-monitor"
+    },
+    {
+     "id": "mimo-code",
+     "motivo": "Combinación recíproca: MiMo-Code lo enlaza como «Reducir la salida de comandos. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde MiMo-Code: Configura los hooks de rtk si son compatibles.",
+     "reciproca_de": "mimo-code"
+    }
+   ],
+   "notas": "Alternativas (elige una): headroom. Si quieres solo código Apache-2.0, instala `rtk-oss`.",
+   "fuentes": [
+    "https://github.com/rtk-ai/rtk/blob/develop/README.md",
+    "https://www.rtk-ai.app/docs/"
+   ],
+   "github": {
+    "name_with_owner": "rtk-ai/rtk",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "Apache-2.0",
+    "primary_language": "Rust",
+    "latest_release": "v1.2.0 (2026-11-08)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

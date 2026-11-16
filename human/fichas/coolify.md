@@ -10,6 +10,39 @@
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Coolify, plataforma autoalojada para desplegar aplicaciones, bases de datos y servicios en tus propios servidores, de coollabsio. Licencia Apache-2.0. Es muy popular (~66k estrellas), activa y financiada por patrocinios.
+
+## ¿Qué hace?
+
+Es una alternativa autoalojada a Heroku, Netlify y Vercel. Despliega desde GitHub, GitLab, Bitbucket o Gitea con Nixpacks, Railpack, Dockerfile, Compose o imágenes. Gestiona bases de datos, backups, SSL y dominios, con dashboard, API, CLI y MCP. Los recursos siguen funcionando si dejas de usarlo.
+
+## ¿Cómo lo hace?
+
+Se instala con `curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash` en un servidor compatible (VPS, bare metal, Raspberry Pi); solo necesita SSH hacia los servidores gestionados.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [supabase](supabase.md) | Autoalojar Supabase como servicio. (combinación por arquitectura) | Despliega Supabase desde Coolify. |
+| [activepieces](activepieces.md) | Coolify trae plantillas de servicio oficiales para desplegar Activepieces (y también Windmill) con un clic. | Coolify primero; luego despliega la plantilla `activepieces`. |
+| [Windmill](windmill.md) | Plantilla de servicio oficial de Coolify para Windmill. | Coolify primero; luego despliega la plantilla `windmill`. |
+| [FreeDomain](freedomain.md) | Dominio gratuito para las apps. (combinación por arquitectura) | Apunta el DNS al servidor. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (54). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Actual Budget](actual.md) · [AppFlowy](appflowy.md) · [Appwrite](appwrite.md) · [audiobookshelf](audiobookshelf.md) · [Baserow](baserow.md) · [binance-trader](binance-trader.md) · [Caddy](caddy.md) · [Calibre-Web](calibre-web.md) · [CrowdSec](crowdsec.md) · [discord.js](discord-js.md) · [Easy!Appointments](easyappointments.md) · [EspoCRM](espocrm.md) · [Firefly III](firefly-iii.md) · [fluxer](fluxer.md) · [free-for-dev](free-for-dev.md) · [FreeScout](freescout.md) · [FreshRSS](freshrss.md) · [Ghostfolio](ghostfolio.md) · [Grist](grist-core.md) · [huginn](huginn.md) · [Immich](immich.md) · [Jellyfin](jellyfin.md) · [karakeep](karakeep.md) · [Kavita](kavita.md) · [Mattermost](mattermost.md) · [Memos](memos.md) · [Miniflux](miniflux.md) · [NetBird](netbird.md) · [NocoDB](nocodb.md) · [open-seo](open-seo.md) · [open-sol-bot](open-sol-bot.md) · [opencode-manager](opencode-manager.md) · [pdfcraft](pdfcraft.md) · [PdfDing](pdfding.md) · [PhotoPrism](photoprism.md) · [Pi-hole](pi-hole.md) · [postiz-app](postiz-app.md) · [python-telegram-bot](python-telegram-bot.md) · [Reflex](reflex.md) · [Rocket.Chat](rocket-chat.md) · [RSSHub](rsshub.md) · [server](nextcloud-server.md) · [SonarQube Community Build](sonarqube.md) · [Synapse](synapse.md) · [syncthing](syncthing.md) · [Teable](teable.md) · [Traefik Proxy](traefik.md) · [Trilium Notes](trilium.md) · [Trivy](trivy.md) · [Uptime Kuma](uptime-kuma.md) · [vaultwarden](vaultwarden.md) · [wallabag](wallabag.md) · [whatsapp-agentkit](whatsapp-agentkit.md) · [Zammad](zammad.md)
+
+**Notas:** Alternativa (elige una): casaos.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v4.7.5 (2026-11-10) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/coollabsio/coolify/blob/main/README.md) · [2](https://coolify.io/docs/installation) · [3](https://github.com/coollabsio/coolify/tree/main/templates/compose)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +56,6 @@
 | Modelos locales | La función básica no necesita un modelo. Un patrocinador que menciona Claude Code no acredita una integración del producto con ese agente |
 | Coste | El coste depende del proveedor o la ruta. Self-host abierto requiere servidores y mantenimiento; Cloud es un servicio de pago separado |
 | Equipo | Preparación según la ruta elegida. Servidor compatible; Docker; dominio opcional; aplicación de prueba |
-
-Un patrocinador que menciona Claude Code no acredita una integración del producto con ese agente
-
-## Qué puedes hacer con él
-
-Plataforma autoalojada para desplegar aplicaciones, sitios, bases de datos y otros servicios en servidores propios.
-
-## Por qué destaca
-
-Usos propuestos: Alojar una demo web; Administrar despliegues en servidor propio.
-
-## Cómo funciona
 
 Un patrocinador que menciona Claude Code no acredita una integración del producto con ese agente
 
@@ -86,6 +107,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Servidor compatible; Docker; dominio opcional; aplicación de prueba
 - **Etiquetas:** `infraestructura` `server` `php`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [CasaOS](casaos.md) | 37.6k | Entorno para administrar un servidor personal, instalar aplicaciones y organizar servicios y archivos domésticos. |
+| [Dokploy](dokploy.md) | 38.5k | Plataforma como servicio autoalojada, alternativa a Vercel, Netlify y Heroku, para desplegar aplicaciones y bases de datos con Docker y Traefik. |
 
 ## Enlaces
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Cliente de escritorio de Anytype, una base de conocimiento local-first, P2P y cifrada de extremo a extremo, de Any, una asociación suiza (organización anyproto). Su licencia es la Any Source Available License 1.0, que no es OSI (GitHub muestra NOASSERTION). Sigue en alfa (v0.57.8-alpha), aunque ya tiene ~9k estrellas.
+
+## ¿Qué hace?
+
+Permite crear páginas, tareas, wikis, diarios y bases de datos con bloques componibles (texto, bases, kanban, calendario) y tipos de objeto propios. Funciona sin conexión con almacenamiento local, y sincroniza opcionalmente entre dispositivos P2P con cifrado de conocimiento cero (any-sync). Se extiende mediante una API gRPC.
+
+## ¿Cómo lo hace?
+
+Es una app Electron con TypeScript para macOS, Windows y Linux; el núcleo (anytype-heart) está en Go y se comunica por gRPC/protobuf. Los usuarios descargan los instaladores; compilarlo requiere Node.js, el middleware y, en ARM, un compilador de C++ para recompilar `keytar`. El repo incluye `AGENTS.md` con instrucciones para agentes de programación que contribuyan.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Leer y crear objetos de Anytype desde un agente con el servidor MCP oficial `anyproto/anytype-mcp` (el servidor MCP no está en el catálogo). | Activa la API local en Anytype, crea una clave e instala anytype-mcp en el agente. |
+| [markitdown](markitdown.md) | Convertir documentos (DOCX, PDF) a Markdown antes de importarlos. (combinación por arquitectura) | Convierte con MarkItDown e importa los `.md` en Anytype. |
+| [activepieces](activepieces.md) | Automatizar altas de objetos mediante la API local de Anytype. (combinación por arquitectura) (la API escucha en el equipo del usuario) | Expón la API solo en local y llama desde Activepieces en la misma máquina. |
+
+**Notas:** Alternativas (elige una): appflowy. La licencia restringe usos comerciales concretos; léela antes de redistribuir.
+
+Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v0.57.8-alpha (2026-11-10) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anyproto/anytype-ts/blob/develop/README.md) · [2](https://github.com/anyproto/anytype-mcp) · [3](https://github.com/anyproto/anytype-ts/blob/main/LICENSE.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es source-available con licencia específica; construir el cliente desde fuente requiere también middleware y motor, no solo bun install |
 | Coste | El coste depende del proveedor o la ruta. No necesita modelo; sincronización y planes tienen condiciones propias; el código usa ASAL-1.0 |
 | Equipo | Preparación según la ruta elegida. Instalador de escritorio para tu sistema; espacio local; cuenta según ruta |
-
-Es source-available con licencia específica; construir el cliente desde fuente requiere también middleware y motor, no solo bun install
-
-## Qué puedes hacer con él
-
-Cliente de escritorio de Anytype para organizar notas, objetos y relaciones en un espacio de conocimiento personal.
-
-## Por qué destaca
-
-Usos propuestos: Organizar notas y proyectos personales; Diseñar una colección con campos propios.
-
-## Cómo funciona
 
 Es source-available con licencia específica; construir el cliente desde fuente requiere también middleware y motor, no solo bun install
 

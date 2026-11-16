@@ -10,6 +10,40 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Programa de sincronización continua de archivos entre dispositivos, sin servidor central. Licencia MPL-2.0. Es un proyecto comunitario muy maduro (~90k estrellas, v2.1.7) que prioriza la seguridad de los datos.
+
+## ¿Qué hace?
+
+Sincroniza carpetas entre dos o más equipos directamente, punto a punto, con cifrado TLS y dispositivos autenticados por ID. Sus objetivos declarados, en orden, son: evitar la pérdida de datos, ser seguro frente a atacantes, ser fácil de usar y automático. Ofrece versionado de archivos, carpetas de solo envío o solo recepción y patrones de exclusión.
+
+## ¿Cómo lo hace?
+
+Es un binario en Go con interfaz web local. Se instala con paquetes del sistema, binarios oficiales, Docker (según `README-Docker.md`) o envoltorios de la comunidad. Usa servidores públicos de descubrimiento y relés de la comunidad para encontrar dispositivos y atravesar NAT, y puedes autoalojarlos. No es una copia de seguridad: los borrados también se sincronizan.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Home Assistant](home-assistant.md) | Supervisar carpetas y dispositivos con la integración oficial de Syncthing en Home Assistant. | Crea una clave de API en Syncthing y añade la integración. |
+| [coolify](coolify.md) | Desplegar un nodo Syncthing siempre encendido en un servidor (Coolify documenta el servicio Syncthing). | Instala Coolify y añade el servicio Syncthing; empareja tus dispositivos con él. |
+| [paperless-ngx](paperless-ngx.md) | Llevar escaneos desde el móvil o el portátil a la carpeta de consumo de Paperless-ngx. (combinación por arquitectura) | Comparte en Syncthing la carpeta `consume` de Paperless-ngx en modo solo recepción. |
+| [audiobookshelf](audiobookshelf.md) | Alimentar la biblioteca de Audiobookshelf desde otros equipos. (combinación por arquitectura) | Comparte la carpeta de la biblioteca en Syncthing. |
+| [spotDL](spotdl.md) | Combinación recíproca: spotDL lo enlaza como «Syncthing puede sincronizar la carpeta de música descargada entre tus dispositivos (combinación por arquitectura)». | Orden indicado desde spotDL: Descarga con spotDL en una carpeta; después compártela con Syncthing. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (6). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Calibre-Web](calibre-web.md) · [Immich](immich.md) · [Joplin](joplin.md) · [Kavita](kavita.md) · [Logseq](logseq.md) · [PhotoPrism](photoprism.md)
+
+**Notas:** Sin alternativas declaradas. Complementa Syncthing con copias de seguridad reales.
+
+Estado en GitHub: activo · último push 2026-11-10 · última versión publicada v2.1.7 (2026-10-21) · licencia declarada MPL-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/syncthing/syncthing/blob/main/README.md) · [2](https://docs.syncthing.net/intro/getting-started.html) · [3](https://www.home-assistant.io/integrations/syncthing/) · [4](https://coolify.io/docs/services/syncthing)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +57,6 @@
 | Modelos locales | La función básica no necesita un modelo. Sincronización no es copia de seguridad: los cambios y borrados pueden propagarse según configuración |
 | Coste | Sin pago a un modelo en la ruta básica. No necesita modelo ni proveedor Cloud obligatorio; red y almacenamiento son recursos propios |
 | Equipo | Preparación según la ruta elegida. Dos dispositivos compatibles; carpetas de prueba; conexión entre pares |
-
-Sincronización no es copia de seguridad: los cambios y borrados pueden propagarse según configuración
-
-## Qué puedes hacer con él
-
-Aplicación para sincronizar archivos entre dispositivos directamente y controlar qué carpetas se comparten.
-
-## Por qué destaca
-
-Usos propuestos: Compartir una carpeta personal entre equipos; Mantener una colección de notas sincronizada.
-
-## Cómo funciona
 
 Sincronización no es copia de seguridad: los cambios y borrados pueden propagarse según configuración
 

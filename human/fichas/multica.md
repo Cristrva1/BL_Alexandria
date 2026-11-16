@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+Multica, workspace para asignar trabajo a agentes de programación como si fueran compañeros de equipo, de multica-ai, escrito en Go. Es source-available: «Multica License», Apache-2.0 con condiciones adicionales sobre servicios alojados, integración comercial y marca. Tiene ~56k estrellas.
+
+## ¿Qué hace?
+
+Los agentes reciben issues, informan del progreso, señalan bloqueos y devuelven el resultado para revisión. Admite squads mixtos de personas y agentes, skills reutilizables y runtimes propios mediante un daemon.
+
+## ¿Cómo lo hace?
+
+Se autoaloja con Docker Compose o Helm usando imágenes de GHCR, y usa las CLIs de agente que ya tienes (Claude Code, Codex, Cursor, Copilot, Kimi, OpenCode). Tiene telemetría anónima de despliegue que se puede desactivar.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Runtime de agente soportado. | Instala Claude Code en el runtime. |
+| [Codex CLI](codex.md) | Runtime de agente soportado. | Instala Codex en el runtime. |
+| [OpenCode](opencode.md) | Runtime de agente soportado. | Instala OpenCode en el runtime. |
+| [andrej-karpathy-skills](andrej-karpathy-skills.md) | Combinación recíproca: andrej-karpathy-skills lo enlaza como «Plataforma del mismo autor para gestionar agentes con skills reutilizables (combinación por arquitectura)». | Orden indicado desde andrej-karpathy-skills: Independientes. |
+
+**Notas:** Alternativa (elige una): paperclip. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.9.0 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/multica-ai/multica/blob/main/README.md) · [2](https://multica.ai/docs/agents)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelo local no documentado. Se declara source-available con licencia Multica que añade condiciones a Apache; no debe resumirse como Apache puro ni como una garantía de sustituir empleados |
 | Coste | El coste depende del proveedor o la ruta. Usa las cuentas de los agentes y alojamiento propio o servicio; no incluye créditos |
 | Equipo | Preparación según la ruta elegida. Un CLI de agente instalado y autenticado; Docker si autoalojas servidor |
-
-Se declara source-available con licencia Multica que añade condiciones a Apache; no debe resumirse como Apache puro ni como una garantía de sustituir empleados
-
-## Qué puedes hacer con él
-
-Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias.
-
-## Por qué destaca
-
-Usos propuestos: Organizar trabajo entre agentes; Revisar entregas en un espacio compartido.
-
-## Cómo funciona
 
 Se declara source-available con licencia Multica que añade condiciones a Apache; no debe resumirse como Apache puro ni como una garantía de sustituir empleados
 
@@ -86,12 +101,11 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `agents` `go`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
+## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [ruflo](ruflo.md) | 81.7k | Harness multiagente en Rust para Claude Code y Codex que coordina 100+ agentes con memoria federada (ex-Claude Flow). |
-| [chatwoot](chatwoot.md) | 39.9k | Plataforma open-source de soporte al cliente que unifica conversaciones de múltiples canales (WhatsApp, web, email, redes) en una sola bandeja de entrada. |
+| [paperclip](paperclip.md) | 114k | Servidor y panel para organizar equipos de agentes con objetivos, tareas, presupuestos e historial de trabajo. |
 
 ## Enlaces
 

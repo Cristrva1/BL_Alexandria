@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Motor de inferencia de código abierto (Apache 2.0) de magnitudedev que ajusta sus núcleos a tu hardware para ejecutar cada modelo lo más rápido posible. Reciente y muy activo (CLI 0.2.17), con app de escritorio y CLI.
+
+## ¿Qué hace?
+
+Ejecuta modelos abiertos en Apple Silicon, NVIDIA, AMD, Intel o solo CPU, y según su README es en promedio más de 2 veces más rápido que Ollama en Mac y NVIDIA [DATO NO VERIFICADO: benchmark del propio proyecto]. Incluye decodificación especulativa con un modelo borrador por modelo, caché KV cuantizada, cachés de prefijo compartidas entre sesiones concurrentes y conexión en un clic con agentes como Pi, OpenCode, Hermes y Codex.
+
+## ¿Cómo lo hace?
+
+Ajusta los núcleos para cada modelo al descargarlo. Se instala con un script (macOS/Linux o PowerShell) o con instaladores DMG, EXE, deb, rpm o pkg.tar.zst, y puede funcionar como servidor remoto o en Docker. Expone una API compatible con OpenAI (Chat Completions, Responses) y con Anthropic Messages en `http://127.0.0.1:10100/inference/...`; en local no comprueba la clave de API.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [hermes-agent](hermes-agent.md) | Conexión en un clic documentada con Hermes. | Magnitude con un modelo descargado; luego usa Connect para apuntar Hermes a él. |
+| [Codex CLI](codex.md) | Agente soportado por la función Connect. | Igual que arriba. |
+| [OpenCode](opencode.md) | Agente soportado por la función Connect. | Igual que arriba. |
+
+**Notas:** En modo servidor remoto protege el acceso: en local no valida claves.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada @magnitudedev/cli@0.2.17 (2026-11-08) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/magnitudedev/magnitude/blob/main/README.md) · [2](https://github.com/magnitudedev/magnitude/blob/main/docs/api/endpoints.mdx) · [3](https://github.com/magnitudedev/magnitude/blob/main/docs/integrations/other-agents.mdx)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El README documenta conexión a Claude Code y Codex; su cifra de velocidad es un benchmark del autor, no una garantía universal |
 | Coste | Sin pago a un modelo en la ruta básica. No exige proveedor API para el modo local; entrenamiento de kernels, pesos y hardware consumen recursos |
 | Equipo | Preparación según la ruta elegida. Sistema y acelerador compatibles; pesos; espacio de caché para optimización |
-
-El README documenta conexión a Claude Code y Codex; su cifra de velocidad es un benchmark del autor, no una garantía universal
-
-## Qué puedes hacer con él
-
-Motor de inferencia local que adapta su ejecución al hardware y ofrece conexiones para agentes y aplicaciones.
-
-## Por qué destaca
-
-Usos propuestos: Servir un modelo local a Codex; Comparar backends de inferencia en tu equipo.
-
-## Cómo funciona
 
 El README documenta conexión a Claude Code y Codex; su cifra de velocidad es un benchmark del autor, no una garantía universal
 

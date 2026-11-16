@@ -1,0 +1,507 @@
+{
+ "batch": "43-video-por-codigo-parte-2-y-presentaciones",
+ "checked_at": "2026-11-15",
+ "method": "Lectura del README upstream (API de GitHub, formato raw) y de la documentación o archivos oficiales enlazados; estado del repositorio consultado con la API GraphQL de GitHub autenticada. No se instaló ni ejecutó ningún proyecto. Las combinaciones marcadas 'por arquitectura' no tienen integración nativa documentada.",
+ "repos": {
+  "brag": {
+   "que_es": "/brag, skill que convierte el proyecto que has construido en un vídeo de lanzamiento corto y compartible, con música, movimiento y textos para redes, de latent-spaces. Licencia MIT. Creado en junio de 2026, tiene ~22k estrellas (v0.6.0). Tiene versión web alojada (letsbrag.app).",
+   "que_hace": "Analiza tu proyecto o sitio y produce un vídeo promocional con un comando, usando HyperFrames.",
+   "como_lo_hace": "Requiere Node.js 22+. En Windows hay que activar los symlinks de Git (modo desarrollador o administrador).",
+   "combina_con": [
+    {
+     "id": "hyperframes",
+     "motivo": "Motor de render en el que se basa.",
+     "orden_instalacion": "Viene integrado."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Agente anfitrión de la skill. (combinación por arquitectura)",
+     "orden_instalacion": "Instala la skill."
+    },
+    {
+     "id": "gsap",
+     "motivo": "Animaciones en las composiciones HyperFrames. (combinación por arquitectura)",
+     "orden_instalacion": "Las usa el render."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/latent-spaces/brag/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "latent-spaces/brag",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v0.6.0 (2026-11-15)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "lemo-opuscar": {
+   "que_es": "Lemo-Opuscar, colección de 99 estilos cinematográficos para que un agente de código haga películas cortas íntegramente con código, de Lemomo (@lemomo_ai). Licencia mixta (por eso GitHub muestra NOASSERTION): código MIT, documentación (incluidos los STYLE.md de cada estilo) CC BY-NC 4.0 y películas demo CC BY 4.0. Tiene ~17k estrellas (v2.0.0).",
+   "que_hace": "Eliges un estilo, aportas tu historia y el agente produce la película con una demo de referencia para cada estilo.",
+   "como_lo_hace": "Se instala como plugin de Claude Code (`claude plugin marketplace add lemomo-ai/lemo-opuscar`). Requiere Node 20+, FFmpeg 7+ y Python 3.11+ (o uv). Está pensado para modelos Claude con esfuerzo alto.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Plugin oficial.",
+     "orden_instalacion": "Añade el marketplace e instala el plugin."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Render (versión 7+).",
+     "orden_instalacion": "Instala FFmpeg 7 o superior."
+    },
+    {
+     "id": "three.js",
+     "motivo": "Escenas 3D en código. (combinación por arquitectura)",
+     "orden_instalacion": "Según el estilo elegido."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. La documentación de los estilos es no comercial (CC BY-NC).",
+   "fuentes": [
+    "https://github.com/lemomo-ai/lemo-opuscar/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "lemomo-ai/lemo-opuscar",
+    "archived": false,
+    "pushed_at": "2026-11-12",
+    "license": "no estándar (NOASSERTION)",
+    "primary_language": "JavaScript",
+    "latest_release": "v2.0.0 (2026-11-12)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "claude-animated-shorts": {
+   "que_es": "Claude Animated Shorts, skill gratuita de Claude que acompaña a un vídeo tutorial, de @mromidev. Licencia MIT (los fotogramas de referencia solo sirven para estudiar el estilo). Creada en noviembre de 2026, tiene ~3.6k estrellas y sin releases.",
+   "que_hace": "Produce cortos verticales animados de 55–70 s: personajes 2D en un mundo 3D colorido con contornos de tinta, cámaras suaves, música y efectos.",
+   "como_lo_hace": "Requiere Remotion con `@remotion/three`, Node, Python 3 y FFmpeg; el render 3D usa three.js.",
+   "combina_con": [
+    {
+     "id": "remotion",
+     "motivo": "Motor de composición.",
+     "orden_instalacion": "Instala Remotion y `@remotion/three`; revisa su licencia."
+    },
+    {
+     "id": "three.js",
+     "motivo": "Render 3D de las escenas.",
+     "orden_instalacion": "Viene vía @remotion/three."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Anfitrión de la skill. (combinación por arquitectura)",
+     "orden_instalacion": "Instala la skill."
+    }
+   ],
+   "notas": "Sin alternativas declaradas. Proyecto de un solo autor ligado a un vídeo.",
+   "fuentes": [
+    "https://github.com/mromidev/claude-animated-shorts/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "mromidev/claude-animated-shorts",
+    "archived": false,
+    "pushed_at": "2026-11-01",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "openfilm": {
+   "que_es": "OpenFilm, «agente de vídeo con IA open source»: formato, CLI, Studio y app de escritorio, de openfilm. Licencia MIT (el nombre y el logo son marcas). Creado en octubre de 2026, tiene ~7.6k estrellas (v0.3.2).",
+   "que_hace": "Un agente (Codex, Claude Code u otro) escribe la película como páginas web, con three.js, WebGL, canvas, SVG, CSS, GSAP o vídeo, y Studio, un editor local, permite revisarla y exportarla. No depende de un framework como Remotion o HyperFrames: un archivo HTML y una función.",
+   "como_lo_hace": "Requiere Node 22.2+ y FFmpeg (y Git para las versiones guardadas de Studio). Se usa con `npx -y openfilm@latest <comando>` o `npm i -g openfilm`.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente soportado.",
+     "orden_instalacion": "Pide al agente que use la CLI."
+    },
+    {
+     "id": "gsap",
+     "motivo": "Animación en las páginas.",
+     "orden_instalacion": "Úsalo en el HTML."
+    },
+    {
+     "id": "three.js",
+     "motivo": "Escenas 3D.",
+     "orden_instalacion": "Úsalo en el HTML."
+    },
+    {
+     "id": "mediabunny",
+     "motivo": "Combinación recíproca: mediabunny lo enlaza como «Exportación de vídeo desde HTML. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde mediabunny: Evalúalo para codificar en el navegador.",
+     "reciproca_de": "mediabunny"
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/openfilm/openfilm/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "openfilm/openfilm",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v0.3.2 (2026-11-09)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "motionmaxxing": {
+   "que_es": "motionmaxxing, skill para agentes que mejora vídeos de motion graphics genéricos («AI slop») hasta parecer hechos por un diseñador, de @Tejashmakwana. Licencia Apache-2.0; GSAP y las fuentes conservan sus licencias. Es reciente (octubre de 2026, ~1.6k estrellas) y sin cambios desde entonces.",
+   "que_hace": "Aplica criterios de diseño de movimiento (tipografía, composición, ritmo) y mide el resultado frente a la versión por defecto con su propio runtime.",
+   "como_lo_hace": "Requiere Node 22+, Python 3, FFmpeg y Google Chrome. Opcionalmente usa una clave de ElevenLabs para voz, efectos y música, y la CLI de Codex. Se instala en Claude Code y otros agentes.",
+   "combina_con": [
+    {
+     "id": "gsap",
+     "motivo": "Biblioteca de animación incluida.",
+     "orden_instalacion": "Viene incluida; revisa su licencia."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Anfitrión documentado.",
+     "orden_instalacion": "Instala la skill."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "FFmpeg es un requisito declarado en el README para renderizar y comparar los vídeos.",
+     "orden_instalacion": "Instala FFmpeg (junto a Node 22+, Python 3 y Chrome) antes de la skill."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/Tejashmakwana/motionmaxxing/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "Tejashmakwana/motionmaxxing",
+    "archived": false,
+    "pushed_at": "2026-10-06",
+    "license": "Apache-2.0",
+    "primary_language": "JavaScript",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "mediabunny": {
+   "que_es": "Mediabunny, librería JavaScript para leer, escribir y convertir medios (MP4, WebM, MP3, HLS) directamente en el navegador, de @Vanilagy. Licencia MPL-2.0. Es activa (~7.5k estrellas, v1.66.0) y la patrocina, entre otros, Remotion.",
+   "que_hace": "Hace mux y demux, codifica y decodifica más de 25 códecs de vídeo, audio y subtítulos con aceleración por hardware vía WebCodecs, y procesa medios sin servidor.",
+   "como_lo_hace": "Escrita en TypeScript puro sin dependencias, se instala con `npm install mediabunny`. Requiere ECMAScript 2021+ y está pensada para navegadores modernos.",
+   "combina_con": [
+    {
+     "id": "remotion",
+     "motivo": "Patrocinador; procesado de medios en navegador. (combinación por arquitectura)",
+     "orden_instalacion": "Úsalo en pipelines web de vídeo."
+    },
+    {
+     "id": "ffmpeg",
+     "motivo": "Equivalente en servidor para formatos no cubiertos. (combinación por arquitectura)",
+     "orden_instalacion": "Reparte trabajo cliente/servidor."
+    },
+    {
+     "id": "openfilm",
+     "motivo": "Exportación de vídeo desde HTML. (combinación por arquitectura)",
+     "orden_instalacion": "Evalúalo para codificar en el navegador."
+    },
+    {
+     "id": "pixijs",
+     "motivo": "Combinación recíproca: PixiJS lo enlaza como «Mediabunny puede codificar en el navegador vídeo a partir de un canvas, como el que dibuja PixiJS (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde PixiJS: Renderiza la escena con PixiJS; después captura su canvas con la fuente de canvas de Mediabunny.",
+     "reciproca_de": "pixijs"
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/Vanilagy/mediabunny/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "Vanilagy/mediabunny",
+    "archived": false,
+    "pushed_at": "2026-11-14",
+    "license": "MPL-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "v1.66.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "video-shotcraft": {
+   "que_es": "video-shotcraft, skill para que Claude Code o Codex creen vídeos promocionales de producto a partir de capturas de tus páginas reales, de @Vincentwei1021. Código y docs Apache-2.0; el audio de Freesound mantiene sus licencias (créditos CC BY). Tiene ~20k estrellas.",
+   "que_hace": "El agente captura tus páginas, elige planos con «recetas» de storyboard, anima en Remotion, sincroniza con el ritmo, añade sonido y exporta.",
+   "como_lo_hace": "Requiere Node.js y npm para Remotion, la plantilla y el workbench. Remotion tiene su propia licencia (gratis para individuos y empresas pequeñas).",
+   "combina_con": [
+    {
+     "id": "remotion",
+     "motivo": "Motor de animación y render.",
+     "orden_instalacion": "Instala Remotion; revisa su licencia."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Agente documentado.",
+     "orden_instalacion": "Instala la skill."
+    },
+    {
+     "id": "codex",
+     "motivo": "Agente documentado.",
+     "orden_instalacion": "Instala la skill."
+    }
+   ],
+   "notas": "Sin alternativas declaradas.",
+   "fuentes": [
+    "https://github.com/Vincentwei1021/video-shotcraft/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "Vincentwei1021/video-shotcraft",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "showcase-media (2026-09-01)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "slidev": {
+   "que_es": "Slidev, presentaciones para desarrolladores escritas en Markdown, de Anthony Fu y slidevjs. Licencia MIT. Es madura (~49k estrellas, v53.1.0).",
+   "que_hace": "Crea diapositivas con Markdown, componentes Vue, resaltado de código, diagramas Mermaid, LaTeX, grabación, modo presentador y exportación a PDF, PPTX o PNG.",
+   "como_lo_hace": "Requiere Node.js 22.12+ y se inicia con `npm init slidev`. Usa Vite para la recarga instantánea.",
+   "combina_con": [
+    {
+     "id": "mermaid",
+     "motivo": "Diagramas integrados en Markdown.",
+     "orden_instalacion": "Escribe bloques mermaid."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Generar diapositivas en Markdown. (combinación por arquitectura)",
+     "orden_instalacion": "Pide al agente el slides.md."
+    },
+    {
+     "id": "playwright",
+     "motivo": "Exportación a PDF o PNG.",
+     "orden_instalacion": "Instala playwright-chromium cuando lo pida."
+    },
+    {
+     "id": "diagram-design",
+     "motivo": "Combinación recíproca: diagram-design lo enlaza como «Incrustar diagramas en presentaciones. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde diagram-design: Exporta SVG/PNG e insértalos.",
+     "reciproca_de": "diagram-design"
+    }
+   ],
+   "notas": "Alternativas (elige una): marp, reveal.js.",
+   "fuentes": [
+    "https://github.com/slidevjs/slidev/blob/main/README.md",
+    "https://sli.dev/"
+   ],
+   "github": {
+    "name_with_owner": "slidevjs/slidev",
+    "archived": false,
+    "pushed_at": "2026-11-05",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "v53.1.0 (2026-11-05)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "ppt-master": {
+   "que_es": "PPT Master, workflow (skill) que genera presentaciones PowerPoint nativas y editables a partir de cualquier documento, de @hugohe3. Licencia MIT. Creado en diciembre de 2025, tiene ~77k estrellas (v6.9.0); el README incluye patrocinios de servicios de reventa de APIs.",
+   "que_hace": "Dentro de un agente («haz una presentación de este PDF») analiza, diseña y exporta localmente un PPTX con patrones, formas nativas y gráficos y tablas con datos. También extrae plantillas de marca o rellena una existente.",
+   "como_lo_hace": "Requiere Python 3.10–3.14 y `pip install -r requirements.txt` (Pandoc opcional). Funciona con cualquier agente y modelo (Kimi, Gemini, GPT, Claude).",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Agente que ejecuta el workflow. (combinación por arquitectura)",
+     "orden_instalacion": "Clona el repo e invoca la skill."
+    },
+    {
+     "id": "markitdown",
+     "motivo": "Convertir documentos fuente. (combinación por arquitectura)",
+     "orden_instalacion": "Preprocesa a Markdown."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Conversión de documentos.",
+     "orden_instalacion": "Instala Pandoc si se necesita."
+    }
+   ],
+   "notas": "Alternativas (elige una): presenton.",
+   "fuentes": [
+    "https://github.com/hugohe3/ppt-master/blob/main/README.md"
+   ],
+   "github": {
+    "name_with_owner": "hugohe3/ppt-master",
+    "archived": false,
+    "pushed_at": "2026-11-15",
+    "license": "MIT",
+    "primary_language": "Python",
+    "latest_release": "v6.9.0 (2026-11-08)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "reveal.js": {
+   "que_es": "reveal.js, framework HTML de presentaciones de @hakimel. Licencia MIT. Es veterano y estable (creado en 2011, ~73k estrellas, v6.0.2).",
+   "que_hace": "Ofrece diapositivas anidadas, soporte de Markdown, Auto-Animate, exportación a PDF, notas del presentador, API JavaScript y plugins.",
+   "como_lo_hace": "Se usa como paquete npm o clonando el repo; funciona en cualquier navegador. Slides.com es su editor visual comercial, de los mismos autores.",
+   "combina_con": [
+    {
+     "id": "mermaid",
+     "motivo": "Diagramas en las diapositivas. (combinación por arquitectura)",
+     "orden_instalacion": "Añade un plugin de Mermaid."
+    },
+    {
+     "id": "gsap",
+     "motivo": "Animaciones avanzadas. (combinación por arquitectura)",
+     "orden_instalacion": "Úsalo en las diapositivas."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Generar HTML de presentaciones. (combinación por arquitectura)",
+     "orden_instalacion": "Pide al agente el index.html."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Combinación recíproca: Pandoc lo enlaza como «Pandoc genera presentaciones reveal.js desde Markdown».",
+     "orden_instalacion": "Orden indicado desde Pandoc: Usa `-t revealjs`; reveal.js puede cargarse desde CDN o una copia local.",
+     "reciproca_de": "pandoc"
+    }
+   ],
+   "notas": "Alternativas (elige una): slidev, marp.",
+   "fuentes": [
+    "https://github.com/hakimel/reveal.js/blob/master/README.md",
+    "https://revealjs.com/"
+   ],
+   "github": {
+    "name_with_owner": "hakimel/reveal.js",
+    "archived": false,
+    "pushed_at": "2026-09-30",
+    "license": "MIT",
+    "primary_language": "JavaScript",
+    "latest_release": "6.0.2 (2026-09-10)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "marp": {
+   "que_es": "Marp, ecosistema para escribir presentaciones en Markdown plano, de marp-team. Licencia MIT. Es maduro (~13k estrellas); este repo es el punto de entrada (web y documentación) a Marpit, Marp Core, Marp CLI y Marp for VS Code.",
+   "que_hace": "Convierte Markdown en diapositivas con temas y directivas, y exporta a HTML, PDF, PPTX o imágenes.",
+   "como_lo_hace": "Marp CLI se usa vía npm o npx y Marp for VS Code ofrece previsualización. La exportación a PDF usa un navegador.",
+   "combina_con": [
+    {
+     "id": "claude-code",
+     "motivo": "Generar Markdown de diapositivas. (combinación por arquitectura)",
+     "orden_instalacion": "Pide al agente un .md con directivas Marp."
+    },
+    {
+     "id": "mermaid",
+     "motivo": "Diagramas. (combinación por arquitectura)",
+     "orden_instalacion": "Renderiza a imagen e incrústala."
+    },
+    {
+     "id": "pandoc",
+     "motivo": "Conversión de documentos a Markdown. (combinación por arquitectura)",
+     "orden_instalacion": "Preprocesa el contenido."
+    }
+   ],
+   "notas": "Alternativas (elige una): slidev, reveal.js.",
+   "fuentes": [
+    "https://github.com/marp-team/marp/blob/main/README.md",
+    "https://marp.app/"
+   ],
+   "github": {
+    "name_with_owner": "marp-team/marp",
+    "archived": false,
+    "pushed_at": "2026-11-07",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "presenton": {
+   "que_es": "Presenton, generador open source de presentaciones con IA y API, alternativa a Gamma o Beautiful AI. Licencia Apache-2.0. Tiene ~12k estrellas; app web autoalojada con Docker y app de escritorio en beta.",
+   "que_hace": "Genera presentaciones desde un prompt, un documento o tu propio diseño de PowerPoint, con plantillas y exportación. Incluye una API de generación y un servidor MCP.",
+   "como_lo_hace": "Se despliega con `docker run -p 5001:80 ghcr.io/presenton/presenton:latest`, o en desarrollo con Node.js, Python 3.11 y otras dependencias. Funciona con Ollama, OpenAI, Gemini, Anthropic, Bedrock y otros proveedores compatibles.",
+   "combina_con": [
+    {
+     "id": "ollama",
+     "motivo": "Modelos locales soportados.",
+     "orden_instalacion": "Configura Ollama como proveedor."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Cliente MCP para generar presentaciones. (combinación por arquitectura)",
+     "orden_instalacion": "Conecta el MCP de Presenton."
+    },
+    {
+     "id": "litellm",
+     "motivo": "Proveedor compatible con OpenAI. (combinación por arquitectura)",
+     "orden_instalacion": "Apunta Presenton al proxy."
+    }
+   ],
+   "notas": "Alternativas (elige una): ppt-master.",
+   "fuentes": [
+    "https://github.com/presenton/presenton/blob/main/README.md",
+    "https://docs.presenton.ai/"
+   ],
+   "github": {
+    "name_with_owner": "presenton/presenton",
+    "archived": false,
+    "pushed_at": "2026-11-06",
+    "license": "Apache-2.0",
+    "primary_language": "TypeScript",
+    "latest_release": "electron-v0.9.12-beta (2026-10-26)",
+    "checked_at": "2026-11-15"
+   }
+  },
+  "mermaid": {
+   "que_es": "Mermaid, herramienta para generar diagramas a partir de texto tipo Markdown, de mermaid-js. Licencia MIT. Es madura y muy extendida (~91k estrellas), y tiene soporte nativo en GitHub, Slidev y muchas otras herramientas.",
+   "que_hace": "Dibuja diagramas de flujo, de secuencia, de clases, de estados, ER, Gantt, mindmaps y más, con un editor en vivo.",
+   "como_lo_hace": "Se usa con `npm install mermaid` o desde CDN en el navegador; existe mermaid-cli para generar imágenes.",
+   "combina_con": [
+    {
+     "id": "slidev",
+     "motivo": "Diagramas en presentaciones.",
+     "orden_instalacion": "Usa bloques mermaid en Slidev."
+    },
+    {
+     "id": "claude-code",
+     "motivo": "Los agentes generan diagramas en Mermaid. (combinación por arquitectura)",
+     "orden_instalacion": "Pide diagramas en sintaxis Mermaid."
+    },
+    {
+     "id": "archify",
+     "motivo": "Combinación recíproca: archify lo enlaza como «Diagramas textuales para documentación estática. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde archify: Usa Mermaid en docs y Archify para explorar.",
+     "reciproca_de": "archify"
+    },
+    {
+     "id": "marp",
+     "motivo": "Combinación recíproca: Marp lo enlaza como «Diagramas. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde Marp: Renderiza a imagen e incrústala.",
+     "reciproca_de": "marp"
+    },
+    {
+     "id": "reveal.js",
+     "motivo": "Combinación recíproca: reveal.js lo enlaza como «Diagramas en las diapositivas. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde reveal.js: Añade un plugin de Mermaid.",
+     "reciproca_de": "reveal.js"
+    },
+    {
+     "id": "drawio",
+     "motivo": "Combinación recíproca: draw.io lo enlaza como «draw.io importa diagramas Mermaid y los convierte en diagramas editables».",
+     "orden_instalacion": "Orden indicado desde draw.io: Escribe el diagrama en Mermaid; después usa Organizar > Insertar > Avanzado > Mermaid en draw.io.",
+     "reciproca_de": "drawio"
+    }
+   ],
+   "notas": "Alternativas (elige una): excalidraw.",
+   "fuentes": [
+    "https://github.com/mermaid-js/mermaid/blob/develop/README.md",
+    "https://mermaid.js.org/"
+   ],
+   "github": {
+    "name_with_owner": "mermaid-js/mermaid",
+    "archived": false,
+    "pushed_at": "2026-11-16",
+    "license": "MIT",
+    "primary_language": "TypeScript",
+    "latest_release": "@mermaid-js/examples@2.1.0 (2026-11-13)",
+    "checked_at": "2026-11-15"
+   }
+  }
+ }
+}

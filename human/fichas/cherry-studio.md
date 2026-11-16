@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Estación de trabajo de IA de escritorio para Windows, macOS y Linux, de CherryHQ, con app móvil aparte. La edición comunitaria es AGPL-3.0 (el uso comercial se permite cumpliendo la AGPL; hay licencia comercial y una edición Enterprise); muy activa (v2.2.2).
+
+## ¿Qué hace?
+
+Reúne chat con varios modelos (incluida la comparación de respuestas en una misma conversación), agentes con instrucciones, espacios de trabajo, modelos y permisos propios que trabajan con archivos, ejecutan comandos y automatizan el navegador o el equipo. Permite ampliar con skills y servidores MCP, programar tareas, conectar agentes a mensajería («Channels»), crear bases de conocimiento locales desde archivos, carpetas y webs, y generar imágenes.
+
+## ¿Cómo lo hace?
+
+Aplicación de escritorio que conecta proveedores en la nube (OpenAI, Anthropic, Gemini y servicios compatibles) y modelos locales vía Ollama y LM Studio, con gestión centralizada de claves y modelos. Se descarga desde su web; la edición Enterprise añade gestión centralizada de modelos y despliegue privado.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Proveedor local soportado para chatear con modelos sin enviar datos fuera. | Ollama con modelos descargados; selecciónalo en la configuración de proveedores. |
+| [litellm](litellm.md) | Usar un proxy propio como servicio compatible personalizado (combinación por arquitectura). | LiteLLM primero; añade su URL y clave como proveedor compatible con OpenAI. |
+| [Playwright MCP](playwright-mcp.md) | Ampliar los agentes con un servidor MCP de navegador (combinación por arquitectura). | Registra el MCP y revisa los permisos de herramientas del agente. |
+
+**Notas:** Alternativas (elige una): jan, lobehub. Los agentes pueden ejecutar comandos: revisa sus permisos.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2.2.2 (2026-11-13) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/CherryHQ/cherry-studio/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Es una app multiproveedor; escoger Anthropic u OpenAI no la convierte en sesión de Claude Code o Codex |
 | Coste | El coste depende del proveedor o la ruta. Los proveedores y funciones remotas pueden cobrar; el código es AGPL y ofrece alternativa de licencia comercial |
 | Equipo | Preparación según la ruta elegida. Instalador para Windows, macOS o Linux; proveedor o Ollama/LM Studio |
-
-Es una app multiproveedor; escoger Anthropic u OpenAI no la convierte en sesión de Claude Code o Codex
-
-## Qué puedes hacer con él
-
-App de escritorio que reúne muchos proveedores de IA, agentes y herramientas de productividad.
-
-## Por qué destaca
-
-Usos propuestos: Comparar respuestas de varios modelos; Organizar una base documental de prueba.
-
-## Cómo funciona
 
 Es una app multiproveedor; escoger Anthropic u OpenAI no la convierte en sesión de Claude Code o Codex
 
@@ -85,12 +99,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Instalador para Windows, macOS o Linux; proveedor o Ollama/LM Studio
 - **Etiquetas:** `chatbot` `agents` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
 
 ## Alternativas (elige una)
 
