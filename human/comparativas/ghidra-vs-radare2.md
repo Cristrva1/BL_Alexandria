@@ -13,8 +13,8 @@
 | Coste | Sin pago a un modelo en la ruta básica | Sin pago a un modelo en la ruta básica |
 | Modelos locales | La función básica no necesita un modelo | La función básica no necesita un modelo |
 | Setup | 🟡 medio | 🟡 medio |
-| Licencia | Apache-2.0 | NOASSERTION |
-| Instalación | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… | Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o códi… |
+| Licencia | Apache-2.0 | LGPL-3.0 (partes GPL) |
+| Instalación | `git clone https://github.com/NationalSecurityAgency/ghidra.git` | `git clone https://github.com/radareorg/radare2` |
 
 ## Regla práctica
 

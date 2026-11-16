@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 3k | NOASSERTION | Python | 2026-11-16 |
+| 3k | Elastic-2.0 | Python | 2026-11-16 |
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🟡 medio
 
 **Nivel:** 1 Básico — material de consulta: se lee, no se instala
 
 **Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** Elastic-2.0. Source-available (ELv2): no permite ofrecerlo como servicio gestionado. Fuente: [LICENSE](https://github.com/elastic/detection-rules/blob/main/LICENSE.txt). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -65,7 +67,13 @@ Material para leer. [Entender los términos](../vocabulario.md).
 2. Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.
 3. Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
+
+```
+pip3 install ".[dev]"
+```
+
+Comando copiado literalmente de el README (sección «Getting started»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
 
 [Instrucciones originales de instalación](https://github.com/elastic/detection-rules/blob/main/README.md)
 

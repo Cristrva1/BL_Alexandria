@@ -22293,7 +22293,7 @@
    "github_id": 9405122,
    "gh": "frida/frida",
    "lang": "Meson",
-   "license": "NOASSERTION",
+   "license": "wxWindows Library Licence 3.1",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -25485,7 +25485,7 @@
    "github_id": 4869294,
    "gh": "radareorg/radare2",
    "lang": "C",
-   "license": "NOASSERTION",
+   "license": "LGPL-3.0 (partes GPL)",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -26448,7 +26448,7 @@
    "github_id": 33791743,
    "gh": "x64dbg/x64dbg",
    "lang": "C++",
-   "license": "NOASSERTION",
+   "license": "GPL-3.0 (texto modificado)",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -26638,7 +26638,7 @@
    "github_id": 1416831262,
    "gh": "zhuyansen/awesome-ai-reverse-engineering",
    "lang": null,
-   "license": "NOASSERTION",
+   "license": "CC0-1.0",
    "added_at": "2026-11-14",
    "github_checked": "2026-11-14",
    "routes": [
@@ -34986,7 +34986,7 @@
    "doc": "human/fichas/amass.md",
    "github_id": 140457254,
    "lang": "Go",
-   "license": "NOASSERTION",
+   "license": "Apache-2.0",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -35105,7 +35105,7 @@
    "doc": "human/fichas/impacket.md",
    "github_id": 33997353,
    "lang": "Python",
-   "license": "NOASSERTION",
+   "license": "Apache-1.1 modificada",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -35485,7 +35485,7 @@
    "doc": "human/fichas/zeek.md",
    "github_id": 4930716,
    "lang": "C++",
-   "license": "NOASSERTION",
+   "license": "BSD-3-Clause",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -35522,7 +35522,7 @@
    "doc": "human/fichas/velociraptor.md",
    "github_id": 126576769,
    "lang": "Go",
-   "license": "NOASSERTION",
+   "license": "AGPL-3.0",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -35596,7 +35596,7 @@
    "doc": "human/fichas/opencti.md",
    "github_id": 162200234,
    "lang": "TypeScript",
-   "license": "NOASSERTION",
+   "license": "Apache-2.0 (Community) + licencia Enterprise",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -35633,7 +35633,7 @@
    "doc": "human/fichas/sigma.md",
    "github_id": 77276660,
    "lang": "Python",
-   "license": "NOASSERTION",
+   "license": "DRL-1.1 (reglas); especificación de dominio público",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -35671,7 +35671,7 @@
    "doc": "human/fichas/volatility3.md",
    "github_id": 16258388,
    "lang": "Python",
-   "license": "NOASSERTION",
+   "license": "Volatility Software License 1.0 (no OSI)",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -35862,7 +35862,7 @@
    "doc": "human/fichas/peass-ng.md",
    "github_id": 165548191,
    "lang": "C#",
-   "license": "NOASSERTION",
+   "license": "GPL-2.0-or-later (con aclaraciones)",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -35899,7 +35899,7 @@
    "doc": "human/fichas/osquery.md",
    "github_id": 22394357,
    "lang": "C++",
-   "license": "NOASSERTION",
+   "license": "Apache-2.0 OR GPL-2.0-only",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -36200,7 +36200,7 @@
    "doc": "human/fichas/wpscan.md",
    "github_id": 4994614,
    "lang": "Ruby",
-   "license": "NOASSERTION",
+   "license": "WPScan Public Source License (no OSI)",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -36308,7 +36308,7 @@
    "doc": "human/fichas/rubeus.md",
    "github_id": 150035938,
    "lang": "C#",
-   "license": "NOASSERTION",
+   "license": "BSD-3-Clause",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -36455,7 +36455,7 @@
    "doc": "human/fichas/mythic.md",
    "github_id": 139783546,
    "lang": "JavaScript",
-   "license": "NOASSERTION",
+   "license": "BSD-3-Clause",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -36712,7 +36712,7 @@
    "doc": "human/fichas/securityonion.md",
    "github_id": 120338179,
    "lang": "Shell",
-   "license": "NOASSERTION",
+   "license": "Elastic-2.0",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -36934,7 +36934,7 @@
    "doc": "human/fichas/pwntools.md",
    "github_id": 9750233,
    "lang": "Python",
-   "license": "NOASSERTION",
+   "license": "MIT (partes GPL-2.0 y BSD)",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -37114,7 +37114,7 @@
    "doc": "human/fichas/bettercap.md",
    "github_id": 116576783,
    "lang": "Go",
-   "license": "NOASSERTION",
+   "license": "GPL-3.0",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -37188,7 +37188,7 @@
    "doc": "human/fichas/fail2ban.md",
    "github_id": 2476162,
    "lang": "Python",
-   "license": "NOASSERTION",
+   "license": "GPL-2.0",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [
@@ -37484,7 +37484,7 @@
    "doc": "human/fichas/detection-rules.md",
    "github_id": 273084758,
    "lang": "Python",
-   "license": "NOASSERTION",
+   "license": "Elastic-2.0",
    "added_at": "2026-11-16",
    "github_checked": "2026-11-16",
    "goals": [

@@ -66,15 +66,21 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
 3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
 
-[Instrucciones originales de instalación](https://github.com/pwndbg/pwndbg/blob/dev/README.md)
+```
+brew install pwndbg/tap/pwndbg-gdb
+```
+
+Comando copiado literalmente de la documentación del repositorio (sección «Homebrew»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
+
+[Instrucciones originales de instalación](https://github.com/pwndbg/pwndbg/blob/dev/docs/setup.md)
 
 [Abrir la web o descarga indicada por el autor](https://pwndbg.re/)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar pwndbg para mi objetivo y necesito pasos guiados. Lee https://github.com/pwndbg/pwndbg/blob/dev/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar pwndbg para mi objetivo y necesito pasos guiados. Lee https://github.com/pwndbg/pwndbg/blob/dev/docs/setup.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Tu primera prueba
 

@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 8.2k | NOASSERTION | C++ | 2026-11-16 |
+| 8.2k | BSD-3-Clause | C++ | 2026-11-16 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** hard
 
 **Nivel:** 4 Experto — preparación difícil
 
 **Puntuación de calidad** 70/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** BSD-3-Clause. Fuente: [LICENSE](https://github.com/zeek/zeek/blob/master/COPYING). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -73,7 +75,13 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
 3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
+
+```
+git clone --recursive https://github.com/zeek/zeek
+```
+
+Comando copiado literalmente de el README; revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
 
 [Instrucciones originales de instalación](https://github.com/zeek/zeek/blob/master/README.md)
 

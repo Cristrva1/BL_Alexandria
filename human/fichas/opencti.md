@@ -6,7 +6,7 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 10.4k | NOASSERTION | TypeScript | 2026-11-16 |
+| 10.4k | Apache-2.0 (Community) + licencia Enterprise | TypeScript | 2026-11-16 |
 
 **Ejecución** 🏠 local · **Rol** ⚙️ plataforma · **Setup** hard
 
@@ -15,6 +15,8 @@
 **Puntuación de calidad** 71/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
 
 > ⚠️ **Licencia y costes:** Open-core: la Community Edition es Apache-2.0 y gratuita. La Enterprise Edition (mismo repositorio, ficheros con cabecera EE) requiere licencia Filigran: registro de actividad, playbooks, segregación por organización, indexado de texto completo, AI Insights/NLP, PIR, SSO configurado desde la UI, campos personalizados, entre otros. Filigran ofrece licencias de prueba y gratuitas para I+D y ONG.
+
+> **Licencia revisada el 2026-11-16:** Apache-2.0 (Community) + licencia Enterprise. Fuente: [LICENSE](https://github.com/OpenCTI-Platform/opencti/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -69,15 +71,21 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
 3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+**Entrada documentada (bash):**
 
-[Instrucciones originales de instalación](https://github.com/OpenCTI-Platform/opencti/blob/master/README.md)
+```
+sudo docker compose up -d
+```
+
+Comando copiado literalmente de la documentación del repositorio (sección «Using single node Docker»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.
+
+[Instrucciones originales de instalación](https://github.com/OpenCTI-Platform/opencti/blob/master/docs/docs/deployment/installation.md)
 
 [Abrir la web o descarga indicada por el autor](https://opencti.io)
 
 **Si necesitas ayuda paso a paso**, copia este encargo en tu asistente:
 
-> Quiero usar OpenCTI para mi objetivo y necesito pasos guiados. Lee https://github.com/OpenCTI-Platform/opencti/blob/master/README.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
+> Quiero usar OpenCTI para mi objetivo y necesito pasos guiados. Lee https://github.com/OpenCTI-Platform/opencti/blob/master/docs/docs/deployment/installation.md. Pregunta mi sistema operativo, comprueba cuenta, costes y dependencias y guíame una acción a la vez hasta una primera prueba pequeña. Distingue tu ayuda para instalar del acceso al modelo que usará la aplicación.
 
 ## Tu primera prueba
 

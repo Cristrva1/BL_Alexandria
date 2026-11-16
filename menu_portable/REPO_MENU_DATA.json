@@ -61576,12 +61576,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "sudo docker run --rm -it aircrackng/git",
+        "command_status": "documented",
         "entry_url": "https://aircrack-ng.org",
         "source": "https://github.com/aircrack-ng/aircrack-ng/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Docker containers»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Instala el paquete o compila según aircrack-ng.org y captura en un AP de laboratorio.",
@@ -61626,9 +61627,9 @@
       "desc": "Suite de auditoría Wi-Fi (captura, ataque a handshakes, cracking) solo sobre redes propias o autorizadas.",
       "stack": "C, Dockerfile",
       "repo": "https://github.com/aircrack-ng/aircrack-ng",
-      "install": "Seguir la instalación original: https://github.com/aircrack-ng/aircrack-ng/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "sudo docker run --rm -it aircrackng/git",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: auditar la Wi-Fi corporativa de lab; comprobar fortaleza de un PSK de prueba",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
@@ -61697,7 +61698,7 @@
         "entry_url": "https://owasp-amass.github.io/docs",
         "source": "https://github.com/owasp-amass/amass/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala Amass según https://owasp-amass.github.io/docs y ejecuta un enum pasivo sobre un dominio de laboratorio.",
@@ -61807,15 +61808,16 @@
           "binario de laboratorio"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "pip install angr",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://docs.angr.io/introductory-errata/install",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de la documentación oficial enlazada desde el README (sección «Installing from PyPI¶»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Carga un programa propio sencillo y explora sus funciones y estados simbólicos",
@@ -61861,9 +61863,9 @@
       "desc": "Plataforma en Python para analizar programas binarios mediante técnicas como ejecución simbólica y análisis de flujo.",
       "stack": "Python y entorno compatible; binario de laboratorio",
       "repo": "https://github.com/angr/angr",
-      "install": "Seguir la instalación original: https://docs.angr.io/introductory-errata/install",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "pip install angr",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar ejecución simbólica; Analizar rutas de un binario de práctica",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -61926,15 +61928,15 @@
           "APK propio de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://apktool.org/wiki/the-basics/intro",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Decodifica recursos de un APK de laboratorio y localiza su manifiesto",
@@ -62044,12 +62046,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "git clone https://github.com/arkime/arkime",
+        "command_status": "documented",
         "entry_url": "https://arkime.com",
         "source": "https://github.com/arkime/arkime/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Building from Source»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Instala desde https://arkime.com/downloads siguiendo la guía simple.",
@@ -62094,9 +62097,9 @@
       "desc": "Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para NSM/forense de red.",
       "stack": "C, package.json",
       "repo": "https://github.com/arkime/arkime",
-      "install": "Seguir la instalación original: https://github.com/arkime/arkime/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone https://github.com/arkime/arkime",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: guardar tráfico de un ejercicio red team; buscar sesiones por IP/puerto",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
@@ -62164,7 +62167,7 @@
         "entry_url": "https://github.com/redcanaryco/atomic-red-team",
         "source": "https://github.com/redcanaryco/atomic-red-team/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Clona el repo y ejecuta un atomic con Invoke-AtomicRedTeam sobre una VM de laboratorio.",
@@ -62279,7 +62282,7 @@
         "entry_url": "",
         "source": "https://github.com/sleuthkit/autopsy/blob/develop/README.txt",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala el paquete Windows desde el sitio oficial o sigue README.txt y abre un caso de lab.",
@@ -62395,8 +62398,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/zhuyansen/awesome-ai-reverse-engineering/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Elige una herramienta y contrasta su README, licencia y configuración antes de aceptar la etiqueta del directorio",
@@ -62513,8 +62516,8 @@
         "command_language": "",
         "command_status": "reference",
         "source": "https://github.com/morluto/awesome-reverse-engineering/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Compara dos herramientas de análisis de tu formato por licencia y modo estático o dinámico",
@@ -62629,7 +62632,7 @@
         "entry_url": "https://www.bettercap.org/",
         "source": "https://github.com/bettercap/bettercap/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala bettercap (release/Docker) en un lab aislado y lanza un módulo de descubrimiento.",
@@ -62867,7 +62870,7 @@
         "entry_url": "",
         "source": "https://github.com/SpecterOps/BloodHound/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Sigue la guía rápida de BloodHound CE con Docker Compose en un laboratorio y carga los datos de ejemplo o de un dominio de pruebas.",
@@ -62984,7 +62987,7 @@
         "entry_url": "",
         "source": "https://github.com/caido/caido/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Crea cuenta en dashboard.caido.io, descarga el cliente Basic y apunta el proxy al lab.",
@@ -63215,7 +63218,7 @@
         "entry_url": "https://mandiant.github.io/capa/",
         "source": "https://github.com/mandiant/capa/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Descarga el release standalone y ejecuta `capa muestra.exe` en un sandbox.",
@@ -63323,12 +63326,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "pip install certipy-ad",
+        "command_status": "documented",
         "entry_url": "",
-        "source": "https://github.com/ly4k/Certipy/blob/main/README.md",
+        "source": "https://github.com/ly4k/Certipy/wiki/04-%E2%80%90-Installation",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación oficial enlazada desde el README (sección «🐧 Linux Installation»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Sigue la wiki de instalación y ejecuta `certipy find` contra un lab AD.",
@@ -63373,9 +63377,9 @@
       "desc": "Enumeración y abuso de Active Directory Certificate Services (AD CS) en laboratorios autorizados.",
       "stack": "Python, pyproject.toml",
       "repo": "https://github.com/ly4k/Certipy",
-      "install": "Seguir la instalación original: https://github.com/ly4k/Certipy/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "pip install certipy-ad",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: enumerar plantillas ESC1-ESC8 en un lab GOAD; pedir un certificado en un dominio de prueba",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
@@ -63441,7 +63445,7 @@
         "entry_url": "https://cheatsheetseries.owasp.org",
         "source": "https://github.com/OWASP/CheatSheetSeries/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Abre https://cheatsheetseries.owasp.org y abre la cheatsheet relevante.",
@@ -63671,7 +63675,7 @@
         "entry_url": "https://coreruleset.org",
         "source": "https://github.com/coreruleset/coreruleset/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Sigue coreruleset.org para cargar CRS en ModSecurity/Coraza de lab.",
@@ -63779,12 +63783,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "git clone https://github.com/sigstore/cosign",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/sigstore/cosign/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Developer Installation»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Instala Cosign (release o `go install`) y firma una imagen de lab.",
@@ -63829,9 +63834,9 @@
       "desc": "Firma y verificación de contenedores y artefactos (Sigstore): clave o keyless con OIDC.",
       "stack": "Go, Dockerfile, Makefile, go.mod",
       "repo": "https://github.com/sigstore/cosign",
-      "install": "Seguir la instalación original: https://github.com/sigstore/cosign/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone https://github.com/sigstore/cosign",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: firmar una imagen interna; verificar firmas antes del deploy",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
@@ -64025,7 +64030,7 @@
         "entry_url": "",
         "source": "https://github.com/crowdsecurity/crowdsec/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala CrowdSec en un servidor propio, añade la colección de SSH y un bouncer de cortafuegos, y consulta `cscli metrics`.",
@@ -64389,12 +64394,13 @@
           "Elige una referencia o ejemplo; revisa sus requisitos y su procedencia antes de instalar nada.",
           "Conserva solo las piezas que necesitas y consulta la ficha de cada proyecto enlazado."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "pip3 install \".[dev]\"",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/elastic/detection-rules/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Getting started»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Clona el repo y revisa una regla; impórtala en un Elastic de laboratorio si lo tienes.",
@@ -64439,9 +64445,9 @@
       "desc": "Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM Elastic; licencia no OSI.",
       "stack": "Python, Makefile, pyproject.toml",
       "repo": "https://github.com/elastic/detection-rules",
-      "install": "Consultar el material original; elegir un ejemplo antes de instalar.",
-      "install_conf": "clone",
-      "install_note": "Una referencia no se instala como un servicio único.",
+      "install": "pip3 install \".[dev]\"",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: importar reglas ATT&CK en un Elastic de lab; adaptar una regla a otro SIEM vía Sigma si aplica",
       "avoid_if": "necesitas una aplicación lista para ejecutar en lugar de material de consulta",
       "combines_with": [
@@ -64617,15 +64623,16 @@
           "ensamblado .NET propio de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "git clone --recursive https://github.com/dnSpyEx/dnSpy.git",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/dnSpyEx/dnSpy/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Building»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Abre un ensamblado de ejemplo e inspecciona una clase y sus metadatos",
@@ -64671,9 +64678,9 @@
       "desc": "Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma.",
       "stack": "Distribución dnSpyEx compatible; ensamblado .NET propio de prueba",
       "repo": "https://github.com/dnSpyEx/dnSpy",
-      "install": "Seguir la instalación original: https://github.com/dnSpyEx/dnSpy/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone --recursive https://github.com/dnSpyEx/dnSpy.git",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar estructura de una app .NET; Depurar un programa propio sin proyecto fuente completo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -64971,7 +64978,7 @@
         "entry_url": "",
         "source": "https://github.com/kgretzky/evilginx2/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Sigue la documentación oficial de Evilginx para instalar el release en un VPS de laboratorio aislado.",
@@ -65201,7 +65208,7 @@
         "entry_url": "https://falco.org",
         "source": "https://github.com/falcosecurity/falco/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Sigue https://falco.org/docs/getting-started e instala Falco en un nodo o clúster de laboratorio.",
@@ -65550,15 +65557,15 @@
           "permisos del entorno"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://frida.re/docs/home/",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Instrumenta una función de un programa de práctica y observa su argumento",
@@ -65787,15 +65794,16 @@
           "binario de laboratorio"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "git clone https://github.com/NationalSecurityAgency/ghidra.git",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/NationalSecurityAgency/ghidra/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Download and extract the source:»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Importa un ejecutable propio sencillo y revisa funciones y referencias tras el análisis",
@@ -65841,9 +65849,9 @@
       "desc": "Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria.",
       "stack": "JDK 25 de 64 bits para release revisada; ZIP de release; binario de laboratorio",
       "repo": "https://github.com/NationalSecurityAgency/ghidra",
-      "install": "Seguir la instalación original: https://github.com/NationalSecurityAgency/ghidra/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone https://github.com/NationalSecurityAgency/ghidra.git",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar código nativo compilado; Documentar una biblioteca propia sin símbolos",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -65913,7 +65921,7 @@
         "entry_url": "https://orange-cyberdefense.github.io/GOAD/",
         "source": "https://github.com/Orange-Cyberdefense/GOAD/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Sigue https://orange-cyberdefense.github.io/GOAD/ en hardware con suficiente RAM.",
@@ -66378,7 +66386,7 @@
         "entry_url": "",
         "source": "https://github.com/hashcat/hashcat/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Descarga la release oficial y ejecuta el benchmark (`hashcat -b`) en tu equipo.",
@@ -66495,7 +66503,7 @@
         "entry_url": "",
         "source": "https://github.com/Yamato-Security/hayabusa/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Descarga el release firmado y ejecuta Hayabusa sobre un evtx de lab.",
@@ -66721,15 +66729,15 @@
           "ensamblado .NET de práctica"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/icsharpcode/ILSpy/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Abre una biblioteca propia y navega por un método y sus referencias",
@@ -66839,15 +66847,16 @@
           "archivo binario de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://github.com/WerWolv/ImHex/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "choco install imhex",
+        "command_language": "powershell",
+        "command_status": "documented",
+        "source": "https://github.com/WerWolv/ImHex/blob/master/INSTALL.md",
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Windows»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Abre un archivo propio pequeño y aplica un patrón conocido para interpretar su cabecera",
@@ -66893,9 +66902,9 @@
       "desc": "Editor hexadecimal para inspeccionar archivos binarios, identificar estructuras y describir formatos mediante patrones.",
       "stack": "Release compatible; GPU OpenGL 3.0; archivo binario de prueba",
       "repo": "https://github.com/WerWolv/ImHex",
-      "install": "Seguir la instalación original: https://github.com/WerWolv/ImHex/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "choco install imhex",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar un formato de archivo; Comparar dos versiones de una estructura binaria",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -67187,15 +67196,16 @@
           "APK o DEX propio"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "brew install jadx",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/skylot/jadx/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Install»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Abre una app Android de prueba y navega por una clase y sus recursos",
@@ -67241,9 +67251,9 @@
       "desc": "Descompilador de archivos DEX y APK para explorar código Java reconstruido y recursos de aplicaciones Android.",
       "stack": "Java y release apropiada; APK o DEX propio",
       "repo": "https://github.com/skylot/jadx",
-      "install": "Seguir la instalación original: https://github.com/skylot/jadx/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "brew install jadx",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar una app Android propia; Documentar recursos y referencias de un APK",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -67315,7 +67325,7 @@
         "entry_url": "",
         "source": "https://github.com/openwall/john/blob/bleeding-jumbo/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Compila John desde `src/` según doc/INSTALL o usa los paquetes de john-packages y ejecuta `john --test`.",
@@ -67539,15 +67549,15 @@
           "script JavaScript"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://grafana.com/docs/k6/latest/set-up/install-k6/",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Ejecuta una prueba local con un usuario y una petición antes de aumentar carga",
@@ -67659,12 +67669,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "docker run --rm -v `pwd`:/host docker.io/aquasec/kube-bench:latest install",
+        "command_status": "documented",
         "entry_url": "",
-        "source": "https://github.com/aquasecurity/kube-bench/blob/main/README.md",
+        "source": "https://github.com/aquasecurity/kube-bench/blob/main/docs/installation.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Installing from a container»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Aplica el `job.yaml` documentado o el binario release en un clúster de lab.",
@@ -67709,9 +67720,9 @@
       "desc": "Comprueba un clúster Kubernetes contra el CIS Kubernetes Benchmark y reporta fallos de configuración.",
       "stack": "Go, Dockerfile, go.mod",
       "repo": "https://github.com/aquasecurity/kube-bench",
-      "install": "Seguir la instalación original: https://github.com/aquasecurity/kube-bench/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "docker run --rm -v `pwd`:/host docker.io/aquasec/kube-bench:latest install",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: auditar un clúster de lab tras el deploy; integrar CIS check en el pipeline",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
@@ -67777,7 +67788,7 @@
         "entry_url": "https://docs.ligolo.ng",
         "source": "https://github.com/nicocha30/ligolo-ng/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Descarga agent y proxy desde Releases y sigue docs.ligolo.ng en un lab.",
@@ -67887,12 +67898,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "pip install --prefer-binary locust",
+        "command_status": "documented",
         "entry_url": "",
-        "source": "https://github.com/locustio/locust/blob/master/README.md",
+        "source": "https://github.com/locustio/locust/blob/master/docs/installation.rst",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación del repositorio; revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Instala Locust con pip, escribe un `locustfile.py` con una tarea contra tu servicio local y abre la interfaz web.",
@@ -67937,9 +67949,9 @@
       "desc": "Herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real.",
       "stack": "Python, Dockerfile, package.json, pyproject.toml",
       "repo": "https://github.com/locustio/locust",
-      "install": "Seguir la instalación original: https://github.com/locustio/locust/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "pip install --prefer-binary locust",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: medir cuántos usuarios concurrentes aguanta tu API; reproducir un flujo de usuario realista con login y varias peticiones",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
@@ -68008,7 +68020,7 @@
         "entry_url": "",
         "source": "https://github.com/Neo23x0/Loki/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Clona/descarga LOKI y ejecútalo sobre un directorio de lab con reglas de prueba.",
@@ -68123,7 +68135,7 @@
         "entry_url": "",
         "source": "https://github.com/CISOfy/lynis/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Clona el repositorio y ejecuta `./lynis audit system` en una máquina propia.",
@@ -68239,7 +68251,7 @@
         "entry_url": "",
         "source": "https://github.com/robertdavidgraham/masscan/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Compila con `make` tras clonar o usa el paquete, y escanea solo un rango de laboratorio.",
@@ -68355,7 +68367,7 @@
         "entry_url": "",
         "source": "https://github.com/rapid7/metasploit-framework/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala Metasploit con los instaladores oficiales en una VM de laboratorio y arranca `msfconsole` para buscar un módulo auxiliar de escaneo.",
@@ -68470,7 +68482,7 @@
         "entry_url": "",
         "source": "https://github.com/gentilkiwi/mimikatz/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Descarga el release en una VM Windows de laboratorio sin datos reales y ejecuta un comando de prueba.",
@@ -68585,7 +68597,7 @@
         "entry_url": "https://www.misp-project.org/",
         "source": "https://github.com/MISP/MISP/blob/2.5/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Sigue la guía de instalación en misp-project.org y levanta una instancia de laboratorio.",
@@ -68694,15 +68706,16 @@
           "certificado solo en el entorno de ensayo"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://docs.mitmproxy.org/stable/overview-installation/",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "docker run --rm -it -v ~/.mitmproxy:/home/mitmproxy/.mitmproxy -p 8080:8080 mitmproxy/mitmproxy",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/mitmproxy/mitmproxy/blob/main/release/docker/DockerHub-README.md",
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Usage»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Inspecciona una petición de tu app de laboratorio y revisa cabeceras y respuesta",
@@ -68748,9 +68761,9 @@
       "desc": "Proxy interactivo para inspeccionar tráfico HTTP y HTTPS al depurar aplicaciones o realizar pruebas autorizadas.",
       "stack": "Distribución compatible; cliente y servicio propios de prueba; certificado solo en el entorno de ensayo",
       "repo": "https://github.com/mitmproxy/mitmproxy",
-      "install": "Seguir la instalación original: https://docs.mitmproxy.org/stable/overview-installation/",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "docker run --rm -it -v ~/.mitmproxy:/home/mitmproxy/.mitmproxy -p 8080:8080 mitmproxy/mitmproxy",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Depurar llamadas HTTP de una app propia; Comprender un error de integración de desarrollo",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -68820,7 +68833,7 @@
         "entry_url": "",
         "source": "https://github.com/its-a-feature/Mythic/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Clona Mythic, `sudo make` y `sudo ./mythic-cli start` en una VM aislada.",
@@ -69173,7 +69186,7 @@
         "entry_url": "",
         "source": "https://github.com/nmap/nmap/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala Nmap desde nmap.org o tu gestor de paquetes y escanea tu propio equipo con `nmap localhost`.",
@@ -69403,12 +69416,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "sudo docker compose up -d",
+        "command_status": "documented",
         "entry_url": "https://opencti.io",
-        "source": "https://github.com/OpenCTI-Platform/opencti/blob/master/README.md",
+        "source": "https://github.com/OpenCTI-Platform/opencti/blob/master/docs/docs/deployment/installation.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Using single node Docker»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Despliega con Docker según https://docs.opencti.io/latest/deployment/installation/#using-docker.",
@@ -69453,9 +69467,9 @@
       "desc": "Plataforma de threat intel orientada a grafos (Filigran): Community Edition Apache-2.0; Enterprise añade playbooks, SSO, IA y más bajo licencia EE.",
       "stack": "TypeScript, package.json",
       "repo": "https://github.com/OpenCTI-Platform/opencti",
-      "install": "Seguir la instalación original: https://github.com/OpenCTI-Platform/opencti/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "sudo docker compose up -d",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: modelar una campaña APT con relaciones STIX; centralizar feeds y casos de amenaza del SOC",
       "avoid_if": "no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones",
       "combines_with": [
@@ -69524,7 +69538,7 @@
         "entry_url": "https://osquery.io",
         "source": "https://github.com/osquery/osquery/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala el paquete desde https://osquery.io/downloads y abre `osqueryi` con una query de prueba.",
@@ -69866,7 +69880,7 @@
         "entry_url": "https://swisskyrepo.github.io/PayloadsAllTheThings/",
         "source": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Abre https://swisskyrepo.github.io/PayloadsAllTheThings/ o clona el repo y busca la sección de la vulnerabilidad.",
@@ -69983,7 +69997,7 @@
         "entry_url": "",
         "source": "https://github.com/peass-ng/PEASS-ng/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Descarga el release desde GitHub y ejecuta LinPEAS/WinPEAS en el host de laboratorio.",
@@ -70209,12 +70223,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "brew install pwndbg/tap/pwndbg-gdb",
+        "command_status": "documented",
         "entry_url": "https://pwndbg.re/",
-        "source": "https://github.com/pwndbg/pwndbg/blob/dev/README.md",
+        "source": "https://github.com/pwndbg/pwndbg/blob/dev/docs/setup.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Homebrew»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Sigue https://pwndbg.re/stable/setup e inicia GDB con pwndbg sobre un binario de lab.",
@@ -70259,9 +70274,9 @@
       "desc": "Mejoras para GDB/LLDB orientadas a exploit-dev: heap, ROPgadget, contexto de registros y más.",
       "stack": "Python, Dockerfile, docker-compose.yml, pyproject.toml",
       "repo": "https://github.com/pwndbg/pwndbg",
-      "install": "Seguir la instalación original: https://github.com/pwndbg/pwndbg/blob/dev/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "brew install pwndbg/tap/pwndbg-gdb",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: depurar un binario vulnerable de lab; inspeccionar heap tras un overflow",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
@@ -70434,15 +70449,16 @@
           "binario propio de práctica"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "git clone https://github.com/radareorg/radare2",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/radareorg/radare2/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Installation»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Abre el binario en modo de lectura y lista información de formato y funciones",
@@ -70488,9 +70504,9 @@
       "desc": "Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios.",
       "stack": "Release o compilación compatible; binario propio de práctica",
       "repo": "https://github.com/radareorg/radare2",
-      "install": "Seguir la instalación original: https://github.com/radareorg/radare2/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone https://github.com/radareorg/radare2",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Inspeccionar un archivo ELF propio; Estudiar instrucciones de un programa de laboratorio",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -70556,15 +70572,15 @@
           "programa y símbolos de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/EpicGames/raddebugger/blob/master/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Carga un programa propio pequeño y detén una función con un breakpoint",
@@ -70913,15 +70929,16 @@
           "binario propio de prueba"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
-        "source": "https://rizin.re/install/",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "command": "git clone https://github.com/rizinorg/rizin",
+        "command_language": "bash",
+        "command_status": "documented",
+        "source": "https://github.com/rizinorg/rizin/blob/dev/README.md",
+        "note": "Comando copiado literalmente de el README (sección «How to build»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Inspecciona secciones e imports de un ejecutable de laboratorio",
@@ -70967,9 +70984,9 @@
       "desc": "Herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola.",
       "stack": "Distribución del sistema; binario propio de prueba",
       "repo": "https://github.com/rizinorg/rizin",
-      "install": "Seguir la instalación original: https://rizin.re/install/",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone https://github.com/rizinorg/rizin",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Aprender análisis desde consola; Revisar metadatos de una biblioteca propia",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -71038,7 +71055,7 @@
         "entry_url": "",
         "source": "https://github.com/GhostPack/Rubeus/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Compila Rubeus o usa un release y ejecútalo en un Windows de laboratorio.",
@@ -71616,7 +71633,7 @@
         "entry_url": "https://securityonion.net",
         "source": "https://github.com/Security-Onion-Solutions/securityonion/blob/3/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Sigue https://securityonion.net/docs/installation en hardware/VM dedicada.",
@@ -71978,12 +71995,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "docker compose up -d opensearch backend",
+        "command_status": "documented",
         "entry_url": "",
         "source": "https://github.com/Shuffle/Shuffle/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Local development»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Despliega Shuffle según la documentación oficial del repo y crea un workflow de prueba.",
@@ -72028,9 +72046,9 @@
       "desc": "SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de seguridad vía workflows.",
       "stack": "JavaScript, docker-compose.yml",
       "repo": "https://github.com/Shuffle/Shuffle",
-      "install": "Seguir la instalación original: https://github.com/Shuffle/Shuffle/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "docker compose up -d opensearch backend",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: abrir ticket y enriquecer IOC tras alerta Wazuh; orquestar quarantine en lab",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
@@ -72098,7 +72116,7 @@
         "entry_url": "https://sigmahq.io/",
         "source": "https://github.com/SigmaHQ/sigma/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Clona SigmaHQ/sigma y convierte una regla con pySigma hacia tu SIEM de lab.",
@@ -72339,7 +72357,7 @@
         "entry_url": "",
         "source": "https://github.com/sleuthkit/sleuthkit/blob/develop-4.1x/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Compila/instala según INSTALL.txt y ejecuta `fls` sobre una imagen de laboratorio.",
@@ -72689,7 +72707,7 @@
         "entry_url": "",
         "source": "https://github.com/sqlmapproject/sqlmap/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Clona el repositorio y ejecuta `python sqlmap.py -h` para ver las opciones; después pruébalo contra una aplicación vulnerable de laboratorio.",
@@ -72806,16 +72824,17 @@
           "objetivo de laboratorio autorizado"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
-          "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable.",
-          "Configura la cuenta,el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
+          "Abre las instrucciones originales enlazadas y elige tu sistema operativo y una sola ruta de instalación.",
+          "Prepara los requisitos de la lista en una carpeta o entorno de prueba. Descargar código y tener el programa funcionando son pasos diferentes.",
+          "Sigue la entrada documentada de abajo y los pasos restantes de la guía; sustituye rutas y valores de ejemplo por los de tu entorno. Si es un comando del agente, úsalo dentro de ese agente.",
+          "Configura la cuenta, el proveedor o los modelos de la ruta elegida según Acceso y costes. Comprueba qué servicio recibirá tus datos y qué consumo puede generar."
         ],
-        "command": "",
-        "command_language": "",
-        "command_status": "readme",
+        "command": "curl -sSL https://strix.ai/install | bash",
+        "command_language": "bash",
+        "command_status": "documented",
         "source": "https://github.com/usestrix/strix/blob/main/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Comando copiado literalmente de el README (sección «Installation & First Scan»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Delimita una app propia desechable y revisa proveedor y modo antes de una evaluación pequeña",
@@ -72861,9 +72880,9 @@
       "desc": "Agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de ChatGPT.",
       "stack": "Docker activo; modelo con herramientas; objetivo de laboratorio autorizado",
       "repo": "https://github.com/usestrix/strix",
-      "install": "Seguir la instalación original: https://github.com/usestrix/strix/blob/main/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "curl -sSL https://strix.ai/install | bash",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Estudiar una revisión de seguridad en laboratorio; Integrar un escaneo autorizado en CI de prueba",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
@@ -73054,7 +73073,7 @@
         "entry_url": "https://suricata.io",
         "source": "https://github.com/OISF/suricata/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Sigue https://docs.suricata.io/en/latest/install.html e instala Suricata en una VM espejo.",
@@ -73276,12 +73295,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "git clone https://github.com/google/syzkaller",
+        "command_status": "documented",
         "entry_url": "",
-        "source": "https://github.com/google/syzkaller/blob/master/README.md",
+        "source": "https://github.com/google/syzkaller/blob/master/docs/linux/setup.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación del repositorio (sección «Go and syzkaller»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Sigue docs/setup.md en un entorno con VMs dedicadas.",
@@ -73326,9 +73346,9 @@
       "desc": "Fuzzer de kernels (Linux y otros) de Google: encuentra bugs de syscall a gran escala; infraestructura pesada.",
       "stack": "Go, Makefile, go.mod",
       "repo": "https://github.com/google/syzkaller",
-      "install": "Seguir la instalación original: https://github.com/google/syzkaller/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone https://github.com/google/syzkaller",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: fuzzear un driver out-of-tree en lab; reproducir un crash de kernel reportado",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
@@ -73626,12 +73646,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "git clone https://github.com/Velocidex/velociraptor.git",
+        "command_status": "documented",
         "entry_url": "https://docs.velociraptor.app/",
         "source": "https://github.com/Velocidex/velociraptor/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README (sección «Building from source»); revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Descarga el release desde GitHub y sigue docs.velociraptor.app para levantar servidor y cliente de lab.",
@@ -73676,9 +73697,9 @@
       "desc": "EDR/IR open source para recolección forense a escala: consultas VQL sobre endpoints Windows, Linux y macOS.",
       "stack": "Go, Makefile, go.mod",
       "repo": "https://github.com/Velocidex/velociraptor",
-      "install": "Seguir la instalación original: https://github.com/Velocidex/velociraptor/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone https://github.com/Velocidex/velociraptor.git",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: recolectar evidencias de un endpoint comprometido en lab; lanzar un hunt de IOCs en una flota de prueba",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
@@ -73864,7 +73885,7 @@
         "entry_url": "",
         "source": "https://github.com/wazuh/wazuh/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Despliega Wazuh en una VM con el asistente o Docker siguiendo su guía rápida e instala un agente en otro equipo.",
@@ -73981,7 +74002,7 @@
         "entry_url": "",
         "source": "https://github.com/wireshark/wireshark/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Instala Wireshark desde wireshark.org, captura en tu propia interfaz y aplica el filtro `dns`.",
@@ -74206,15 +74227,15 @@
           "ejecutable de práctica propio"
         ],
         "steps": [
-          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación,plugin o código fuente que corresponda.",
+          "Abre la guía original enlazada y elige tu sistema y la ruta de aplicación, plugin o código fuente que corresponda.",
           "Prepara los requisitos de la lista y sigue esa ruta paso a paso en un entorno de prueba. Esta ficha no propone un comando cuando no se seleccionó uno verificable."
         ],
         "command": "",
         "command_language": "",
         "command_status": "readme",
         "source": "https://github.com/x64dbg/x64dbg/blob/development/README.md",
-        "note": "Instalación revisada en documentos; no ejecutada por Alexandría. Los comandos conservan la sintaxis del autor: adapta la activación del entorno y las variables a tu sistema.",
-        "checked_at": "2026-11-15"
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.",
+        "checked_at": "2026-11-16"
       },
       "first_try": {
         "action": "Depura un programa sencillo y detén la ejecución en una función conocida",
@@ -74327,12 +74348,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "brew install yara",
+        "command_status": "documented",
         "entry_url": "https://virustotal.github.io/yara/",
-        "source": "https://github.com/VirusTotal/yara/blob/master/README.md",
+        "source": "https://github.com/VirusTotal/yara/blob/master/docs/gettingstarted.rst",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de la documentación del repositorio; revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Compila YARA siguiendo https://virustotal.github.io/yara/ o usa el paquete del SO, y escanea un fichero de prueba.",
@@ -74377,9 +74399,9 @@
       "desc": "Motor de reglas para identificar malware y artefactos por patrones de bytes, strings y condiciones lógicas.",
       "stack": "C",
       "repo": "https://github.com/VirusTotal/yara",
-      "install": "Seguir la instalación original: https://github.com/VirusTotal/yara/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "brew install yara",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: clasificar muestras de malware de un lab; bloquear indicadores conocidos en un pipeline de análisis",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [
@@ -74450,7 +74472,7 @@
         "entry_url": "",
         "source": "https://github.com/zaproxy/zaproxy/blob/main/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo."
       },
       "first_try": {
         "action": "Descarga ZAP desde zaproxy.org y ejecuta el escaneo automatizado contra una aplicación de laboratorio propia.",
@@ -74564,12 +74586,13 @@
           "Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.",
           "Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas."
         ],
-        "command": "",
-        "command_status": "readme",
+        "command": "git clone --recursive https://github.com/zeek/zeek",
+        "command_status": "documented",
         "entry_url": "https://www.zeek.org",
         "source": "https://github.com/zeek/zeek/blob/master/README.md",
         "checked_at": "2026-11-16",
-        "note": "Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto."
+        "note": "Comando copiado literalmente de el README; revisado el 2026-11-16, no ejecutado por Alexandría. Adapta rutas, puertos y variables a tu entorno y sigue el resto de la guía original.",
+        "command_language": "bash"
       },
       "first_try": {
         "action": "Compila con `./configure && make && sudo make install` (docs.zeek.org) o usa paquetes, y captura en un interfaz de lab.",
@@ -74614,9 +74637,9 @@
       "desc": "Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza de amenazas y forense de red.",
       "stack": "C++, CMakeLists.txt, Makefile",
       "repo": "https://github.com/zeek/zeek",
-      "install": "Seguir la instalación original: https://github.com/zeek/zeek/blob/master/README.md",
-      "install_conf": "clone",
-      "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
+      "install": "git clone --recursive https://github.com/zeek/zeek",
+      "install_conf": "ok",
+      "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: generar logs DNS/HTTP de un segmento de lab; investigar un incidente a partir de logs Zeek",
       "avoid_if": "necesitas una instalación sin cuentas ni dependencias adicionales",
       "combines_with": [

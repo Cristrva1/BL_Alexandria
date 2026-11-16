@@ -48,13 +48,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=security
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/aircrack-ng/aircrack-ng
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/aircrack-ng/aircrack-ng/blob/master/README.md
+sudo docker run --rm -it aircrackng/git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: auditar la Wi-Fi corporativa de lab; comprobar fortaleza de un PSK de prueba
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -108,13 +108,13 @@ role=library · exec=local · setup=medium · mcp=False · prov=— · tags=reve
 - Equipo: Preparación según la ruta elegida. Python y entorno compatible; binario de laboratorio
 **Repo:** https://github.com/angr/angr
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.angr.io/introductory-errata/install
+pip install angr
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar ejecución simbólica; Analizar rutas de un binario de práctica
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -168,13 +168,13 @@ role=app · exec=local · setup=hard · mcp=False · prov=— · tags=security
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/arkime/arkime
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/arkime/arkime/blob/main/README.md
+git clone https://github.com/arkime/arkime
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: guardar tráfico de un ejercicio red team; buscar sesiones por IP/puerto
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -500,13 +500,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=security
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/ly4k/Certipy
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/ly4k/Certipy/blob/main/README.md
+pip install certipy-ad
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: enumerar plantillas ESC1-ESC8 en un lab GOAD; pedir un certificado en un dominio de prueba
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -620,13 +620,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=security
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/sigstore/cosign
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/sigstore/cosign/blob/main/README.md
+git clone https://github.com/sigstore/cosign
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: firmar una imagen interna; verificar firmas antes del deploy
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -777,13 +777,13 @@ role=directory · exec=local · setup=medium · mcp=False · prov=— · tags=se
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/elastic/detection-rules
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Consultar el material original; elegir un ejemplo antes de instalar.
+pip3 install ".[dev]"
 ```
 
-_Una referencia no se instala como un servicio único._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: importar reglas ATT&CK en un Elastic de lab; adaptar una regla a otro SIEM vía Sigma si aplica
 **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta
@@ -838,13 +838,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=depuracion
 - Equipo: Preparación según la ruta elegida. Distribución dnSpyEx compatible; ensamblado .NET propio de prueba
 **Repo:** https://github.com/dnSpyEx/dnSpy
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/dnSpyEx/dnSpy/blob/master/README.md
+git clone --recursive https://github.com/dnSpyEx/dnSpy.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar estructura de una app .NET; Depurar un programa propio sin proyecto fuente completo
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -1142,13 +1142,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversin
 - Equipo: Preparación según la ruta elegida. JDK 25 de 64 bits para release revisada; ZIP de release; binario de laboratorio
 **Repo:** https://github.com/NationalSecurityAgency/ghidra
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/NationalSecurityAgency/ghidra/blob/master/README.md
+git clone https://github.com/NationalSecurityAgency/ghidra.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar código nativo compilado; Documentar una biblioteca propia sin símbolos
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -1417,13 +1417,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=reversing,
 - Equipo: Preparación según la ruta elegida. Release compatible; GPU OpenGL 3.0; archivo binario de prueba
 **Repo:** https://github.com/WerWolv/ImHex
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/WerWolv/ImHex/blob/master/README.md
+choco install imhex
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un formato de archivo; Comparar dos versiones de una estructura binaria
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -1507,13 +1507,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversin
 - Equipo: Preparación según la ruta elegida. Java y release apropiada; APK o DEX propio
 **Repo:** https://github.com/skylot/jadx
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/skylot/jadx/blob/master/README.md
+brew install jadx
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una app Android propia; Documentar recursos y referencias de un APK
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -1629,13 +1629,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=security
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/aquasecurity/kube-bench
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/aquasecurity/kube-bench/blob/main/README.md
+docker run --rm -v `pwd`:/host docker.io/aquasec/kube-bench:latest install
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: auditar un clúster de lab tras el deploy; integrar CIS check en el pipeline
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -1689,13 +1689,13 @@ role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pruebas,py
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/locustio/locust
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/locustio/locust/blob/master/README.md
+pip install --prefer-binary locust
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: medir cuántos usuarios concurrentes aguanta tu API; reproducir un flujo de usuario realista con login y varias peticiones
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -1900,13 +1900,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=pruebas,
 - Equipo: Preparación según la ruta elegida. Distribución compatible; cliente y servicio propios de prueba; certificado solo en el entorno de ensayo
 **Repo:** https://github.com/mitmproxy/mitmproxy
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://docs.mitmproxy.org/stable/overview-installation/
+docker run --rm -it -v ~/.mitmproxy:/home/mitmproxy/.mitmproxy -p 8080:8080 mitmproxy/mitmproxy
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Depurar llamadas HTTP de una app propia; Comprender un error de integración de desarrollo
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -2082,13 +2082,13 @@ role=platform · exec=local · setup=hard · mcp=False · prov=— · tags=secur
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/OpenCTI-Platform/opencti
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/OpenCTI-Platform/opencti/blob/master/README.md
+sudo docker compose up -d
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: modelar una campaña APT con relaciones STIX; centralizar feeds y casos de amenaza del SOC
 **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
@@ -2293,13 +2293,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=security
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/pwndbg/pwndbg
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/pwndbg/pwndbg/blob/dev/README.md
+brew install pwndbg/tap/pwndbg-gdb
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: depurar un binario vulnerable de lab; inspeccionar heap tras un overflow
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -2353,13 +2353,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversin
 - Equipo: Preparación según la ruta elegida. Release o compilación compatible; binario propio de práctica
 **Repo:** https://github.com/radareorg/radare2
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/radareorg/radare2/blob/master/README.md
+git clone https://github.com/radareorg/radare2
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Inspeccionar un archivo ELF propio; Estudiar instrucciones de un programa de laboratorio
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -2474,13 +2474,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversin
 - Equipo: Preparación según la ruta elegida. Distribución del sistema; binario propio de prueba
 **Repo:** https://github.com/rizinorg/rizin
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://rizin.re/install/
+git clone https://github.com/rizinorg/rizin
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender análisis desde consola; Revisar metadatos de una biblioteca propia
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -2749,13 +2749,13 @@ role=app · exec=local · setup=hard · mcp=False · prov=— · tags=security
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/Shuffle/Shuffle
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/Shuffle/Shuffle/blob/main/README.md
+docker compose up -d opensearch backend
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: abrir ticket y enriquecer IOC tras alerta Wazuh; orquestar quarantine en lab
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -2970,13 +2970,13 @@ role=app · exec=hybrid · setup=medium · mcp=False · prov=local · tags=agent
 - Equipo: Preparación según la ruta elegida. Docker activo; modelo con herramientas; objetivo de laboratorio autorizado
 **Repo:** https://github.com/usestrix/strix
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/usestrix/strix/blob/main/README.md
+curl -sSL https://strix.ai/install | bash
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una revisión de seguridad en laboratorio; Integrar un escaneo autorizado en CI de prueba
 **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo
@@ -3091,13 +3091,13 @@ role=app · exec=local · setup=hard · mcp=False · prov=— · tags=security
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/google/syzkaller
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/google/syzkaller/blob/master/README.md
+git clone https://github.com/google/syzkaller
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: fuzzear un driver out-of-tree en lab; reproducir un crash de kernel reportado
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -3182,13 +3182,13 @@ role=app · exec=local · setup=hard · mcp=False · prov=— · tags=security,i
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/Velocidex/velociraptor
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/Velocidex/velociraptor/blob/master/README.md
+git clone https://github.com/Velocidex/velociraptor.git
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: recolectar evidencias de un endpoint comprometido en lab; lanzar un hunt de IOCs en una flota de prueba
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -3362,13 +3362,13 @@ role=app · exec=local · setup=medium · mcp=False · prov=— · tags=security
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/VirusTotal/yara
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/VirusTotal/yara/blob/master/README.md
+brew install yara
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: clasificar muestras de malware de un lab; bloquear indicadores conocidos en un pipeline de análisis
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
@@ -3423,13 +3423,13 @@ role=app · exec=local · setup=hard · mcp=False · prov=— · tags=security,n
 - Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
 **Repo:** https://github.com/zeek/zeek
 
-**Instalación** [?]:
+**Instalación** [+]:
 
 ```
-Seguir la instalación original: https://github.com/zeek/zeek/blob/master/README.md
+git clone --recursive https://github.com/zeek/zeek
 ```
 
-_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
 
 **Elige si:** Tu objetivo encaja con estos ejemplos: generar logs DNS/HTTP de un segmento de lab; investigar un incidente a partir de logs Zeek
 **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales

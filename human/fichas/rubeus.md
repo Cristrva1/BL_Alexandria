@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 5.2k | NOASSERTION | C# | 2026-11-16 |
+| 5.2k | BSD-3-Clause | C# | 2026-11-16 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
 **Nivel:** 3 Avanzado — preparación media; dominio especializado
 
 **Puntuación de calidad** 47/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** BSD-3-Clause. Fuente: [LICENSE](https://github.com/GhostPack/Rubeus/blob/master/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -66,7 +68,7 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
 3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/GhostPack/Rubeus/blob/master/README.md)
 

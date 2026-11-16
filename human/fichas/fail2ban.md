@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 19k | NOASSERTION | Python | 2026-11-16 |
+| 19k | GPL-2.0 | Python | 2026-11-16 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟡 medio
 
 **Nivel:** 2 Intermedio — preparación media
 
 **Puntuación de calidad** 61/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> **Licencia revisada el 2026-11-16:** GPL-2.0. Algunos archivos indican otra licencia en COPYING. Fuente: [LICENSE](https://github.com/fail2ban/fail2ban/blob/master/COPYING). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 

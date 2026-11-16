@@ -6,13 +6,15 @@
 
 | Popularidad en GitHub | Licencia | Lenguaje | Añadido a Alexandria |
 |---|---|---|---|
-| 5k | NOASSERTION | Shell | 2026-11-16 |
+| 5k | Elastic-2.0 | Shell | 2026-11-16 |
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** hard
 
 **Nivel:** 4 Experto — preparación difícil
 
 **Puntuación de calidad** 50/100 · métricas del 2026-11-16 · [cómo se calcula](../calidad.md)
+
+> ⚠️ **Licencia revisada el 2026-11-16:** Elastic-2.0. Source-available (ELv2). Fuente: [LICENSE](https://github.com/Security-Onion-Solutions/securityonion/blob/3/main/LICENSE). GitHub la marca como NOASSERTION.
 
 ## ¿Qué es?
 
@@ -67,7 +69,7 @@ Requiere preparación técnica. [Entender los términos](../vocabulario.md).
 2. Prepara sus dependencias y configura el acceso y los servicios descritos en la ficha.
 3. Arranca un ejemplo pequeño y verifica el resultado antes de importar datos, conectar servicios reales o programar tareas.
 
-Comando de entrada seleccionado y presente en la fuente revisada; consulta la instalación completa y sus requisitos. No se ha ejecutado este proyecto.
+Sin comando de instalación literal en el README ni en la documentación revisada el 2026-11-16: ver README oficial. No se deduce ningún comando por el nombre del repo.
 
 [Instrucciones originales de instalación](https://github.com/Security-Onion-Solutions/securityonion/blob/3/main/README.md)
 

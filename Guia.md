@@ -4582,7 +4582,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 100k<br>
 **Qué es:** Conjunto de herramientas para desensamblar, descompilar y analizar programas y su estructura binaria.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/NationalSecurityAgency/ghidra/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/NationalSecurityAgency/ghidra.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar código nativo compilado; Documentar una biblioteca propia sin símbolos — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [GhidraMCP](human/fichas/ghidramcp.md) · [jadx](human/fichas/jadx.md) · [ImHex](human/fichas/imhex.md) · [x64dbg](human/fichas/x64dbg.md)<br>
 **Más:** [ficha completa](human/fichas/ghidra.md) · [GitHub](https://github.com/NationalSecurityAgency/ghidra)
@@ -4591,7 +4591,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 55.9k<br>
 **Qué es:** Editor hexadecimal para inspeccionar archivos binarios, identificar estructuras y describir formatos mediante patrones.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/WerWolv/ImHex/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `choco install imhex` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar un formato de archivo; Comparar dos versiones de una estructura binaria — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [ghidra](human/fichas/ghidra.md) · [radare2](human/fichas/radare2.md) · [x64dbg](human/fichas/x64dbg.md)<br>
 **Más:** [ficha completa](human/fichas/imhex.md) · [GitHub](https://github.com/WerWolv/ImHex)
@@ -4600,7 +4600,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 51.8k<br>
 **Qué es:** Descompilador de archivos DEX y APK para explorar código Java reconstruido y recursos de aplicaciones Android.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/skylot/jadx/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install jadx` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una app Android propia; Documentar recursos y referencias de un APK — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [frida](human/fichas/frida.md) · [Apktool](human/fichas/apktool.md) · [ghidra](human/fichas/ghidra.md) · [rea](human/fichas/rea.md) · [awesome-ai-reverse-engineering](human/fichas/awesome-ai-reverse-engineering.md)<br>
 **Más:** [ficha completa](human/fichas/jadx.md) · [GitHub](https://github.com/skylot/jadx)
@@ -4627,7 +4627,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 25.4k<br>
 **Qué es:** Conjunto de herramientas de consola para inspeccionar, desensamblar y depurar programas y archivos binarios.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/radareorg/radare2/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/radareorg/radare2` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Inspeccionar un archivo ELF propio; Estudiar instrucciones de un programa de laboratorio — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [frida](human/fichas/frida.md) · [Claude Code](human/fichas/claude-code.md) · [ImHex](human/fichas/imhex.md) · [YARA](human/fichas/yara.md)<br>
 **Más:** [ficha completa](human/fichas/radare2.md) · [GitHub](https://github.com/radareorg/radare2)
@@ -4645,7 +4645,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 10k<br>
 **Qué es:** Motor de reglas para identificar malware y artefactos por patrones de bytes, strings y condiciones lógicas.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/VirusTotal/yara/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install yara` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: clasificar muestras de malware de un lab; bloquear indicadores conocidos en un pipeline de análisis — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [ghidra](human/fichas/ghidra.md) · [radare2](human/fichas/radare2.md) · [MISP](human/fichas/misp.md) · [Volatility 3](human/fichas/volatility3.md)<br>
 **Más:** [ficha completa](human/fichas/yara.md) · [GitHub](https://github.com/VirusTotal/yara)
@@ -4654,7 +4654,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 📚 librería/SDK · Setup 🟡 medio · ⭐ 9.4k<br>
 **Qué es:** Plataforma en Python para analizar programas binarios mediante técnicas como ejecución simbólica y análisis de flujo.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://docs.angr.io/introductory-errata/install); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install angr` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar ejecución simbólica; Analizar rutas de un binario de práctica — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [ghidra](human/fichas/ghidra.md) · [frida](human/fichas/frida.md) · [Claude Code](human/fichas/claude-code.md) · [GhidraMCP](human/fichas/ghidramcp.md) · [rizin](human/fichas/rizin.md)<br>
 **Más:** [ficha completa](human/fichas/angr.md) · [GitHub](https://github.com/angr/angr)
@@ -4672,7 +4672,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 4.2k<br>
 **Qué es:** Herramientas para analizar binarios y estudiar programas mediante desensamblado, depuración y otras funciones de consola.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://rizin.re/install/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/rizinorg/rizin` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Aprender análisis desde consola; Revisar metadatos de una biblioteca propia — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [ghidra](human/fichas/ghidra.md) · [angr](human/fichas/angr.md) · [ImHex](human/fichas/imhex.md)<br>
 **Más:** [ficha completa](human/fichas/rizin.md) · [GitHub](https://github.com/rizinorg/rizin)
@@ -4692,7 +4692,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 11.5k<br>
 **Qué es:** Depurador y editor de ensamblados .NET para inspeccionar y analizar aplicaciones de esa plataforma.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/dnSpyEx/dnSpy/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone --recursive https://github.com/dnSpyEx/dnSpy.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar estructura de una app .NET; Depurar un programa propio sin proyecto fuente completo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [ILSpy](human/fichas/ilspy.md) · [x64dbg](human/fichas/x64dbg.md) · [ImHex](human/fichas/imhex.md)<br>
 **Más:** [ficha completa](human/fichas/dnspy.md) · [GitHub](https://github.com/dnSpyEx/dnSpy)
@@ -4701,7 +4701,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 11.2k<br>
 **Qué es:** Mejoras para GDB/LLDB orientadas a exploit-dev: heap, ROPgadget, contexto de registros y más.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/pwndbg/pwndbg/blob/dev/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `brew install pwndbg/tap/pwndbg-gdb` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: depurar un binario vulnerable de lab; inspeccionar heap tras un overflow — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [pwntools](human/fichas/pwntools.md) · [ghidra](human/fichas/ghidra.md)<br>
 **Más:** [ficha completa](human/fichas/pwndbg.md) · [GitHub](https://github.com/pwndbg/pwndbg)
@@ -4721,7 +4721,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 47k<br>
 **Qué es:** Proxy interactivo para inspeccionar tráfico HTTP y HTTPS al depurar aplicaciones o realizar pruebas autorizadas.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://docs.mitmproxy.org/stable/overview-installation/); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run --rm -it -v ~/.mitmproxy:/home/mitmproxy/.mitmproxy -p 8080:8080 mitmproxy/mitmproxy` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Depurar llamadas HTTP de una app propia; Comprender un error de integración de desarrollo — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [frida](human/fichas/frida.md) · [playwright](human/fichas/playwright.md) · [k6](human/fichas/k6.md) · [Apktool](human/fichas/apktool.md) · [Selenium](human/fichas/selenium.md) · [shannon](human/fichas/shannon.md)<br>
 **Más:** [ficha completa](human/fichas/mitmproxy.md) · [GitHub](https://github.com/mitmproxy/mitmproxy)
@@ -4757,7 +4757,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟢 fácil · ⭐ 28.3k<br>
 **Qué es:** Herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/locustio/locust/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install --prefer-binary locust` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: medir cuántos usuarios concurrentes aguanta tu API; reproducir un flujo de usuario realista con login y varias peticiones — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Grafana](human/fichas/grafana.md) · [playwright](human/fichas/playwright.md) · [Claude Code](human/fichas/claude-code.md)<br>
 **Más:** [ficha completa](human/fichas/locust.md) · [GitHub](https://github.com/locustio/locust)
@@ -4883,7 +4883,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 7.9k<br>
 **Qué es:** Suite de auditoría Wi-Fi (captura, ataque a handshakes, cracking) solo sobre redes propias o autorizadas.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/aircrack-ng/aircrack-ng/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `sudo docker run --rm -it aircrackng/git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: auditar la Wi-Fi corporativa de lab; comprobar fortaleza de un PSK de prueba — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [hashcat](human/fichas/hashcat.md) · [Wireshark](human/fichas/wireshark.md)<br>
 **Más:** [ficha completa](human/fichas/aircrack-ng.md) · [GitHub](https://github.com/aircrack-ng/aircrack-ng)
@@ -4901,7 +4901,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 6.4k<br>
 **Qué es:** Fuzzer de kernels (Linux y otros) de Google: encuentra bugs de syscall a gran escala; infraestructura pesada.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/google/syzkaller/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/google/syzkaller` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: fuzzear un driver out-of-tree en lab; reproducir un crash de kernel reportado — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [AFL++](human/fichas/aflplusplus.md) · [radare2](human/fichas/radare2.md)<br>
 **Más:** [ficha completa](human/fichas/syzkaller.md) · [GitHub](https://github.com/google/syzkaller)
@@ -5150,7 +5150,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 3.7k<br>
 **Qué es:** Enumeración y abuso de Active Directory Certificate Services (AD CS) en laboratorios autorizados.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/ly4k/Certipy/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip install certipy-ad` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: enumerar plantillas ESC1-ESC8 en un lab GOAD; pedir un certificado en un dominio de prueba — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [BloodHound Community Edition](human/fichas/bloodhound.md) · [Impacket](human/fichas/impacket.md)<br>
 **Más:** [ficha completa](human/fichas/certipy.md) · [GitHub](https://github.com/ly4k/Certipy)
@@ -5215,7 +5215,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 8.2k<br>
 **Qué es:** Analizador de tráfico de red (ex Bro): telemetría rica de protocolos para caza de amenazas y forense de red.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/zeek/zeek/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone --recursive https://github.com/zeek/zeek` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: generar logs DNS/HTTP de un segmento de lab; investigar un incidente a partir de logs Zeek — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Suricata](human/fichas/suricata.md) · [Wazuh](human/fichas/wazuh.md) · [Wireshark](human/fichas/wireshark.md)<br>
 **Más:** [ficha completa](human/fichas/zeek.md) · [GitHub](https://github.com/zeek/zeek)
@@ -5224,7 +5224,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 7.6k<br>
 **Qué es:** Captura e indexación de PCAP a escala (ex Moloch) con UI de búsqueda para NSM/forense de red.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/arkime/arkime/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/arkime/arkime` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: guardar tráfico de un ejercicio red team; buscar sesiones por IP/puerto — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Wireshark](human/fichas/wireshark.md) · [Suricata](human/fichas/suricata.md)<br>
 **Más:** [ficha completa](human/fichas/arkime.md) · [GitHub](https://github.com/arkime/arkime)
@@ -5269,7 +5269,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 📂 catálogo/recurso · Setup 🟡 medio · ⭐ 3k<br>
 **Qué es:** Reglas de detección de Elastic Security (ELv2): punto de partida para SIEM Elastic; licencia no OSI.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/elastic/detection-rules/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `pip3 install ".[dev]"` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: importar reglas ATT&CK en un Elastic de lab; adaptar una regla a otro SIEM vía Sigma si aplica — **Evita si:** necesitas una aplicación lista para ejecutar en lugar de material de consulta<br>
 **Combina con:** [Sigma](human/fichas/sigma.md) · [Wazuh](human/fichas/wazuh.md)<br>
 **Más:** [ficha completa](human/fichas/detection-rules.md) · [GitHub](https://github.com/elastic/detection-rules)
@@ -5278,7 +5278,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 2.5k<br>
 **Qué es:** SOAR open source (AGPL): automatiza playbooks de respuesta conectando tools de seguridad vía workflows.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/Shuffle/Shuffle/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker compose up -d opensearch backend` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: abrir ticket y enriquecer IOC tras alerta Wazuh; orquestar quarantine en lab — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Wazuh](human/fichas/wazuh.md) · [MISP](human/fichas/misp.md)<br>
 **Más:** [ficha completa](human/fichas/shuffle.md) · [GitHub](https://github.com/Shuffle/Shuffle)
@@ -5352,7 +5352,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 8.3k<br>
 **Qué es:** Comprueba un clúster Kubernetes contra el CIS Kubernetes Benchmark y reporta fallos de configuración.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/aquasecurity/kube-bench/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `docker run --rm -v `pwd`:/host docker.io/aquasec/kube-bench:latest install` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: auditar un clúster de lab tras el deploy; integrar CIS check en el pipeline — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Trivy](human/fichas/trivy.md) · [Falco](human/fichas/falco.md)<br>
 **Más:** [ficha completa](human/fichas/kube-bench.md) · [GitHub](https://github.com/aquasecurity/kube-bench)
@@ -5361,7 +5361,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup 🟡 medio · ⭐ 6.4k<br>
 **Qué es:** Firma y verificación de contenedores y artefactos (Sigstore): clave o keyless con OIDC.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/sigstore/cosign/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/sigstore/cosign` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: firmar una imagen interna; verificar firmas antes del deploy — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Trivy](human/fichas/trivy.md) · [Syft](human/fichas/syft.md)<br>
 **Más:** [ficha completa](human/fichas/cosign.md) · [GitHub](https://github.com/sigstore/cosign)
@@ -5399,7 +5399,7 @@ Depuradores, descompiladores, análisis de binarios, pruebas de intrusión, dete
 **Etiquetas:** Ejecución 🔀 híbrido · Rol 🖥️ app · Setup 🟡 medio · ⭐ 75.6k<br>
 **Qué es:** Agente de pruebas de seguridad para aplicaciones, con rutas de API, modelos locales y acceso documentado de ChatGPT.<br>
 **Acceso:** Depende de la ruta elegida · El coste depende del proveedor o la ruta<br>
-**Arranque:** [Instrucciones originales](https://github.com/usestrix/strix/blob/main/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `curl -sSL https://strix.ai/install | bash` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: Estudiar una revisión de seguridad en laboratorio; Integrar un escaneo autorizado en CI de prueba — **Evita si:** Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo<br>
 **Combina con:** [Ollama](human/fichas/ollama.md) · [GitHub MCP Server](human/fichas/github-mcp-server.md) · [Semgrep](human/fichas/semgrep.md) · [Defending Code Reference Harness](human/fichas/defending-code-reference-harness.md)<br>
 **Más:** [ficha completa](human/fichas/strix.md) · [GitHub](https://github.com/usestrix/strix)
@@ -5585,7 +5585,7 @@ claude` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol 🖥️ app · Setup hard · ⭐ 4.5k<br>
 **Qué es:** EDR/IR open source para recolección forense a escala: consultas VQL sobre endpoints Windows, Linux y macOS.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/Velocidex/velociraptor/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `git clone https://github.com/Velocidex/velociraptor.git` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: recolectar evidencias de un endpoint comprometido en lab; lanzar un hunt de IOCs en una flota de prueba — **Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales<br>
 **Combina con:** [Wazuh](human/fichas/wazuh.md) · [osquery](human/fichas/osquery.md) · [Volatility 3](human/fichas/volatility3.md)<br>
 **Más:** [ficha completa](human/fichas/velociraptor.md) · [GitHub](https://github.com/Velocidex/velociraptor)
@@ -5623,7 +5623,7 @@ claude` (comprobar los pasos completos en la ficha).<br>
 **Etiquetas:** Ejecución 🏠 local · Rol ⚙️ plataforma · Setup hard · ⭐ 10.4k<br>
 **Qué es:** Plataforma de threat intel orientada a grafos (Filigran): Community Edition Apache-2.0; Enterprise añade playbooks, SSO, IA y más bajo licencia EE.<br>
 **Acceso:** Sin clave propia de API de IA en la ruta básica · Sin pago a un modelo en la ruta básica<br>
-**Arranque:** [Instrucciones originales](https://github.com/OpenCTI-Platform/opencti/blob/master/README.md); no se deduce un paquete por el nombre.<br>
+**Comando documentado:** `sudo docker compose up -d` (comprobar los pasos completos en la ficha).<br>
 **Elige si:** Tu objetivo encaja con estos ejemplos: modelar una campaña APT con relaciones STIX; centralizar feeds y casos de amenaza del SOC — **Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones<br>
 **Combina con:** [MISP](human/fichas/misp.md) · [Wazuh](human/fichas/wazuh.md) · [Sigma](human/fichas/sigma.md)<br>
 **Más:** [ficha completa](human/fichas/opencti.md) · [GitHub](https://github.com/OpenCTI-Platform/opencti)
