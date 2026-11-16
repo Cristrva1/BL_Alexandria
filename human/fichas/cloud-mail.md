@@ -26,7 +26,7 @@ Se despliega en Cloudflare Workers para reducir costes de servidor: backend con 
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Usar la API abierta para crear buzones en lote o procesar correos recibidos en flujos (combinación por arquitectura). | Despliega cloud-mail y crea un token de API; después llama a la API desde n8n. |
+| [activepieces](activepieces.md) | Usar la API abierta para crear buzones en lote o procesar correos recibidos en flujos (combinación por arquitectura). | Despliega cloud-mail y crea un token de API; después llama a la API desde Activepieces. |
 | [open-seo](open-seo.md) | Ambos se despliegan en el plan gratuito de Cloudflare y pueden compartir cuenta y dominio (combinación por arquitectura). | Configura el dominio en Cloudflare primero; separa subdominios por servicio. |
 | [changedetection.io](changedetection.md) | Usar una dirección de cloud-mail como buzón de alertas de cambios web y reenviarlas a Telegram (combinación por arquitectura). | Crea la dirección en cloud-mail y configúrala como destino de notificación en changedetection. |
 

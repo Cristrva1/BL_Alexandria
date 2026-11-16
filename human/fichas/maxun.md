@@ -27,7 +27,7 @@ Se autoaloja con Docker Compose según la documentación oficial (también hay v
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [Claude Code](claude-code.md) | Lanzar robots y obtener datos desde el agente con el MCP de Maxun. | Despliega Maxun y configura su servidor MCP en el agente. |
-| [n8n](n8n.md) | Encadenar los datos extraídos con otros servicios. (combinación por arquitectura) | Llama a la API de Maxun desde un nodo HTTP Request. |
+| [activepieces](activepieces.md) | Encadenar los datos extraídos con otros servicios. (combinación por arquitectura) | Llama a la API de Maxun desde la pieza HTTP de Activepieces. |
 | [changedetection.io](changedetection.md) | Avisar de cambios en páginas antes de volver a extraer. (combinación por arquitectura) | Vigila la página con changedetection y lanza el robot cuando cambie. |
 
 **Notas:** Alternativas (elige una): scrapegraph-ai, llm-scraper. Respeta los términos de uso y robots.txt de cada sitio y la normativa de datos personales.

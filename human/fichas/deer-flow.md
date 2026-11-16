@@ -29,6 +29,7 @@ Requiere Python 3.12+, Node 22+, pnpm, uv y nginx (`make check`), y se configura
 | [LangGraph](langgraph.md) | Runtime sobre el que está construido. | Viene incluido. |
 | [firecrawl](firecrawl.md) | Crawling web alternativo a InfoQuest. (combinación por arquitectura) | Configúralo como herramienta o MCP. |
 | [SearXNG](searxng.md) | Búsqueda autoalojada. (combinación por arquitectura) | Configúralo como herramienta de búsqueda. |
+| [sandbox](sandbox.md) | Combinación recíproca: sandbox lo enlaza como «Sandbox para el harness. (combinación por arquitectura)». | Orden indicado desde sandbox: Configúralo como entorno de ejecución. |
 
 **Notas:** Sin alternativas declaradas; se solapa con gpt-researcher en el modo investigación (solo anotado).
 

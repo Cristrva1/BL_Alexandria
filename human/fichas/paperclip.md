@@ -31,7 +31,7 @@ Se inicia con `npx paperclipai@latest onboard --yes` o se prueba con `npx paperc
 | [Codex CLI](codex.md) | Harness soportado (`--harness codex`). | Instala Codex y asígnalo. |
 | [hermes-agent](hermes-agent.md) | Harness soportado. | Registra Hermes vía su gateway. |
 
-**Notas:** Sin alternativas declaradas; se solapa con multica (solo anotado). Conviene vigilar el gasto con presupuestos.
+**Notas:** Alternativa (elige una): multica. Conviene vigilar el gasto con presupuestos.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v2026.1106.0 (2026-11-06) · licencia declarada MIT (consultado el 2026-11-15).
 
@@ -102,6 +102,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node 24.11+; pnpm 9.15+ para desarrollo; agentes configurados; proyecto de prueba
 - **Etiquetas:** `asistentes` `acpx` `agent-orchestration` `agent-skills` `agentic-ai` `ai-agents` `ai-engineering` `ai-governance`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [multica](multica.md) | 56.1k | Workspace para asignar y revisar trabajo de agentes de código mediante sus CLI y cuentas propias. |
 
 ## Enlaces
 

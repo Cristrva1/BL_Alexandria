@@ -29,6 +29,9 @@ Aplicación en TypeScript con dos vías de autoalojamiento: Docker con imagen pr
 | [Claude Code](claude-code.md) | Servidor MCP y skills oficiales para que el agente investigue palabras clave o audite sitios con tus datos. | OpenSEO desplegado con tu clave de DataForSEO; luego conecta el MCP según su guía. |
 | [coolify](coolify.md) | El README cita Coolify entre las plataformas Compose compatibles con su imagen Docker. | Coolify en el servidor; crea el servicio desde el Compose de OpenSEO y protege el acceso. |
 | [GEO-SEO Claude](geo-seo-claude.md) | Skill de SEO/GEO que puede apoyarse en los datos de OpenSEO para recomendaciones (combinación por arquitectura). | Después de conectar el MCP de OpenSEO al agente. |
+| [claude-seo](claude-seo.md) | Combinación recíproca: claude-seo lo enlaza como «Datos de palabras clave y posiciones vía MCP (combinación por arquitectura)». | Orden indicado desde claude-seo: Conecta el MCP de OpenSEO al mismo agente. |
+| [cloud-mail](cloud-mail.md) | Combinación recíproca: cloud-mail lo enlaza como «Ambos se despliegan en el plan gratuito de Cloudflare y pueden compartir cuenta y dominio (combinación por arquitectura)». | Orden indicado desde cloud-mail: Configura el dominio en Cloudflare primero; separa subdominios por servicio. |
+| [Marketing Skills](marketingskills.md) | Combinación recíproca: Marketing Skills lo enlaza como «Datos SEO vía MCP para las skills de SEO (combinación por arquitectura)». | Orden indicado desde Marketing Skills: Conecta el MCP de OpenSEO antes de usar las skills de SEO. |
 
 **Notas:** Cada consulta a DataForSEO tiene coste; vigila el gasto en su panel.
 

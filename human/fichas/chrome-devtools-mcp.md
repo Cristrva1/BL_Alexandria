@@ -29,6 +29,15 @@ Se añade con `npx -y chrome-devtools-mcp@latest`, como extensión de Gemini CLI
 | [Claude Code](claude-code.md) | Depuración y automatización de Chrome desde el agente. | Registra el servidor MCP con `--no-usage-statistics` si no quieres telemetría. |
 | [Gemini CLI](gemini-cli.md) | Instalación como extensión oficial de Gemini CLI. | Ejecuta `gemini extensions install` con la URL del repo. |
 | [MCP Inspector](mcp-inspector.md) | Explorar las herramientas del servidor. (combinación por arquitectura) | Conecta el Inspector al servidor. |
+| [Puppeteer](puppeteer.md) | Combinación recíproca: Puppeteer lo enlaza como «MCP para agentes basado en DevTools». | Orden indicado desde Puppeteer: Úsalo para depurar desde el agente. |
+| [agent-browser](agent-browser.md) | Combinación recíproca: agent-browser lo enlaza como «Depuración profunda complementaria. (combinación por arquitectura)». | Orden indicado desde agent-browser: Úsalo para rendimiento y red. |
+| [awesome-chrome-devtools](awesome-chrome-devtools.md) | Combinación recíproca: awesome-chrome-devtools lo enlaza como «MCP para agentes del mismo ecosistema. (combinación por arquitectura)». | Orden indicado desde awesome-chrome-devtools: Instálalo si usas agentes. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (1). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[Front-End-Checklist](front-end-checklist.md)
 
 **Notas:** Alternativas (elige una): playwright-mcp, browser-harness. Telemetría activada por defecto.
 

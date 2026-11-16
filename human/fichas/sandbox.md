@@ -29,6 +29,7 @@ Se ejecuta con `docker run … ghcr.io/agent-infra/sandbox:<tag>` (hay espejo en
 | [OpenHands](openhands.md) | Backend aislado para agentes. (combinación por arquitectura) | Apunta el agente a la API del sandbox. |
 | [browser-use](browser-use.md) | Navegador del sandbox para automatización. (combinación por arquitectura) | Conecta browser-use al navegador expuesto. |
 | [deer-flow](deer-flow.md) | Sandbox para el harness. (combinación por arquitectura) | Configúralo como entorno de ejecución. |
+| [Gemini Computer Use (preview)](computer-use-preview.md) | Combinación recíproca: Gemini Computer Use (preview) lo enlaza como «Ejecutar el navegador en un contenedor aislado. (combinación por arquitectura)». | Orden indicado desde Gemini Computer Use (preview): Lanza el agente dentro del sandbox. |
 
 **Notas:** Alternativas (elige una): nemoclaw, e2b. Se quita ecc (sin relación documentada). Riesgo: sin API key, todo queda expuesto.
 

@@ -27,8 +27,8 @@ Es documentación con enlaces; los servidores remotos se habilitan por endpoint 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [Gemini CLI](gemini-cli.md) | Usar los servidores de Google desde el agente de Google. (combinación por arquitectura) | Añade el endpoint del servidor a la configuración MCP de Gemini CLI. |
-| [servers](servers.md) | Comparar con los servidores de referencia del protocolo. (combinación por arquitectura) | Usa las referencias para aprender y los de Google para tus datos en GCP. |
 | [mcp-use](mcp-use.md) | Construir y desplegar un servidor propio siguiendo las guías de Cloud Run. (combinación por arquitectura) | Construye con mcp-use y despliega según la guía. |
+| [MCP Inspector](mcp-inspector.md) | Probar con MCP Inspector las herramientas de un servidor remoto de Google o de uno propio desplegado en Cloud Run antes de conectarlo al agente (combinación por arquitectura). | Habilita el endpoint en Google Cloud (proyecto con facturación e IAM) y conéctalo después al Inspector con sus credenciales. |
 
 **Notas:** Sin alternativas declaradas. Cuidado con los permisos IAM que concedes a agentes.
 

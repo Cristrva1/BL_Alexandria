@@ -26,15 +26,15 @@ Se distribuye como imagen Docker (`devlikeapro/waha`) y se arranca con `docker r
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | WAHA documenta una integración con n8n (nodo comunitario) para enviar mensajes y reaccionar a eventos de WhatsApp. | WAHA primero con una sesión activa y clave de API; después instala el nodo en n8n. |
+| [activepieces](activepieces.md) | WAHA envía eventos de WhatsApp a un webhook y expone una API REST para enviar; Activepieces los recibe con un disparador Webhook y responde con la pieza HTTP. (combinación por arquitectura) | WAHA primero con una sesión activa y clave de API; después el flujo en Activepieces. |
 | [chatwoot](chatwoot.md) | WAHA documenta una app de Chatwoot para atender las conversaciones de WhatsApp desde su bandeja. | Chatwoot primero; luego configura la app de Chatwoot en WAHA con la URL y el token de la cuenta. |
-| [Typebot](typebot.md) | Typebot puede ejecutarse por HTTP: un webhook de WAHA dispara el flujo y la respuesta vuelve por la API (combinación por arquitectura). | Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de n8n. |
+| [Typebot](typebot.md) | Typebot puede ejecutarse por HTTP: un webhook de WAHA dispara el flujo y la respuesta vuelve por la API (combinación por arquitectura). | Typebot publicado primero; conecta ambos con un servicio intermedio o un flujo de Activepieces o Windmill. |
 
 **Notas:** Alternativas (elige una): evolution-api, whatsapp-web-js, baileys. Es una conexión no oficial: evita mensajes masivos o no solicitados. Protege la API con clave antes de exponer el puerto 3000.
 
 Estado en GitHub: activo · último push 2026-11-11 · última versión publicada 2026.10.1 (2026-10-28) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/devlikeapro/waha/blob/core/README.md) · [2](https://waha.devlike.pro/docs/how-to/engines/) · [3](https://waha.devlike.pro/docs/integrations/n8n/) · [4](https://waha.devlike.pro/docs/apps/chatwoot/)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/devlikeapro/waha/blob/core/README.md) · [2](https://waha.devlike.pro/docs/how-to/engines/) · [3](https://waha.devlike.pro/docs/apps/chatwoot/)</sub>
 
 ## Acceso, coste y equipo
 

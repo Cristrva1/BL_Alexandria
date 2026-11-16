@@ -29,8 +29,9 @@ Se ejecuta con `npx gitnexus analyze`, que además instala skills, registra hook
 | [Claude Code](claude-code.md) | Hooks y MCP configurados por `analyze` y `setup`. | Ejecuta `npx gitnexus analyze` y luego `setup`. |
 | [OpenCode](opencode.md) | Editor detectado por `gitnexus setup`. | Ejecuta `gitnexus setup -c opencode`. |
 | [Codex CLI](codex.md) | Editor detectado por `gitnexus setup`. | Ejecuta `gitnexus setup -c codex`. |
+| [tools](tools.md) | Combinación recíproca: tools lo enlaza como «Envoltorio `gitnexus_runner.py`». | Orden indicado desde tools: Instala la CLI gitnexus. |
 
-**Notas:** Alternativas (elige una): repomix, codebase-memory-mcp, serena. La licencia no comercial impide usarlo en empresas sin licencia de pago.
+**Notas:** Alternativas (elige una): repomix, codebase-memory-mcp, serena, codegraph, graphify. La licencia no comercial impide usarlo en empresas sin licencia de pago.
 
 Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.6.12 (2026-09-12) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -117,6 +118,8 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 | [Repomix](repomix.md) | 29.3k | Empaqueta un repositorio entero en un solo archivo listo para pasarlo a un LLM. |
 | [codebase-memory-mcp](codebase-memory-mcp.md) | 48.6k | Motor local de inteligencia de código que conecta código, docs e infraestructura en un grafo persistente para agentes. |
 | [Serena](serena.md) | 31.4k | Toolkit MCP que da a tu agente búsqueda y edición semántica de código, como un IDE. |
+| [codegraph](codegraph.md) | 77.6k | CLI que indexa tu código en local para que los asistentes de IA entiendan estructura y flujo sin leer cada archivo. |
+| [graphify](graphify.md) | 148k | CLI y skill que convierten código y documentos en un grafo consultable; el código se analiza localmente con AST y la extracción semántica tiene rutas separadas. |
 
 ## Enlaces
 

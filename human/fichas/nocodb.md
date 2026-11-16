@@ -26,15 +26,15 @@ Se ejecuta en Docker con SQLite (por defecto) o PostgreSQL (`NC_DB=pg://...`) gu
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | n8n tiene un nodo NocoDB para crear, leer y actualizar registros desde flujos. | NocoDB primero y un token de API; después la credencial en n8n. |
 | [activepieces](activepieces.md) | Pieza oficial de NocoDB en Activepieces para usar la base como origen o destino de flujos. | NocoDB primero; luego la conexión en la pieza. |
 | [metabase](metabase.md) | Si NocoDB guarda los datos en PostgreSQL, Metabase puede conectarse a esa base para dashboards (combinación por arquitectura). | Usa NocoDB con PostgreSQL; conecta Metabase con un usuario de solo lectura. |
+| [coolify](coolify.md) | Coolify trae una plantilla de servicio oficial (`nocodb`) para desplegar NocoDB con un clic. | Coolify primero; luego despliega la plantilla `nocodb` y configura la base de datos. |
 
 **Notas:** Alternativas (elige una): appsmith, budibase.
 
 Estado en GitHub: activo · último push 2026-11-14 · última versión publicada 2026.10.1 (2026-10-29) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/nocodb/nocodb/blob/develop/README.md) · [2](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.nocodb/) · [3](https://www.activepieces.com/pieces/nocodb)</sub>
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/nocodb/nocodb/blob/develop/README.md) · [2](https://www.activepieces.com/pieces/nocodb) · [3](https://github.com/activepieces/activepieces/tree/main/packages/pieces/community/nocodb) · [4](https://github.com/coollabsio/coolify/tree/main/templates/compose)</sub>
 
 ## Acceso, coste y equipo
 
@@ -117,6 +117,9 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 |---|---:|---|
 | [Appsmith](appsmith.md) | 41.3k | Plataforma low-code para crear paneles de administración y herramientas internas sobre tus APIs y bases. |
 | [Budibase](budibase.md) | 28.4k | Plataforma open source para apps internas, automatizaciones y agentes de IA sobre tus datos. |
+| [Grist](grist-core.md) | 12.1k | Hoja de cálculo relacional autoalojable con fórmulas en Python, columnas tipadas y formato portable basado en SQLite. |
+| [Baserow](baserow.md) | 6.3k | Base de datos sin código autoalojable (Django y Vue) con constructor de aplicaciones, automatizaciones, dashboards y API-first. |
+| [Teable](teable.md) | 22k | Base de datos colaborativa sin código sobre PostgreSQL, con vistas tipo hoja, formularios, automatizaciones y funciones de IA. |
 
 ## Enlaces
 

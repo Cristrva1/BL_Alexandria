@@ -24,7 +24,7 @@
      "orden_instalacion": "Despliega con Compose desde Coolify."
     }
    ],
-   "notas": "Sin alternativas declaradas; se solapa con t3code (solo anotado).",
+   "notas": "Alternativa (elige una): t3code.",
    "fuentes": [
     "https://github.com/chriswritescode-dev/opencode-manager/blob/main/README.md",
     "https://opencodemanager.app/docs/getting-started/installation"
@@ -72,108 +72,6 @@
     "license": "Apache-2.0",
     "primary_language": "TypeScript",
     "latest_release": "v0.1.45 (2026-11-14)",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "dsh-android": {
-   "que_es": "DSH Android, plugin de DeepSeek Harness (DSH) que muestra y controla un dispositivo Android real dentro de la conversación, de @ZSeven-W. Licencia MIT. Está en fase de release candidate (0.1.0-rc.13) y tiene ~350 estrellas.",
-   "que_hace": "Le da al agente 20 herramientas para transmitir un emulador o un teléfono USB, compilar e instalar proyectos Gradle, manejar la interfaz y hacer OCR visual. La transmisión se genera dentro del proceso, sin helper externo, mediante rutas firmadas solo de loopback.",
-   "como_lo_hace": "Se instala como paquete npm `@zseven-w/dsh-android` (probado con DSH 0.1.5-rc.1). Requiere adb de las platform-tools del SDK de Android, que no se redistribuye. Su anfitrión, DeepSeek Harness (deepseek-ai/deepseek-harness), no está en el catálogo.",
-   "combina_con": [
-    {
-     "id": "dsh-ios",
-     "motivo": "Plugin hermano para iOS en el mismo anfitrión. (combinación por arquitectura)",
-     "orden_instalacion": "Instala ambos plugins en DSH."
-    },
-    {
-     "id": "dsh-game-studio",
-     "motivo": "Plugin hermano para juegos en el mismo anfitrión. (combinación por arquitectura)",
-     "orden_instalacion": "Instálalo en DSH si haces juegos."
-    },
-    {
-     "id": "jadx",
-     "motivo": "Inspeccionar los APK generados. (combinación por arquitectura)",
-     "orden_instalacion": "Abre el APK en jadx."
-    }
-   ],
-   "notas": "Sin alternativas declaradas. Catalogado aunque su anfitrión no lo está (pregunta de pertenencia ya anotada).",
-   "fuentes": [
-    "https://github.com/ZSeven-W/dsh-android/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "ZSeven-W/dsh-android",
-    "archived": false,
-    "pushed_at": "2026-11-10",
-    "license": "MIT",
-    "primary_language": "TypeScript",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "dsh-game-studio": {
-   "que_es": "DSH Game Studio, plugin de DeepSeek Harness para crear juegos pequeños a partir de una frase, de @ZSeven-W. Licencia MIT. Está en fase de release candidate (0.1.0-rc.5); se creó en noviembre de 2026 y tiene ~560 estrellas.",
-   "que_hace": "Construye el juego a partir de plantillas 2D o vóxel 3D (three.js), lo prueba jugando solo y lo muestra en una barra lateral con historial de versiones. Puede generar arte con OpenAI o Codex tras comprobar el coste y exporta un único HTML.",
-   "como_lo_hace": "Se instala como paquete `@zseven-w/dsh-game-studio` (probado con DSH 0.2.1-rc.5). Opcionalmente usa `cloudflared` para enlaces públicos temporales y `gh` para publicar en GitHub. Su anfitrión, DeepSeek Harness (deepseek-ai/deepseek-harness), no está en el catálogo.",
-   "combina_con": [
-    {
-     "id": "threejs-game-skills",
-     "motivo": "Skills para juegos con Three.js, el mismo motor de sus plantillas. (combinación por arquitectura)",
-     "orden_instalacion": "Añade las skills al agente."
-    },
-    {
-     "id": "threejs-skills",
-     "motivo": "Skills generales de escenas 3D con Three.js. (combinación por arquitectura)",
-     "orden_instalacion": "Añade las skills al agente."
-    },
-    {
-     "id": "planck-js",
-     "motivo": "Física 2D para juegos más complejos. (combinación por arquitectura)",
-     "orden_instalacion": "Añade la librería al juego exportado."
-    }
-   ],
-   "notas": "Sin alternativas declaradas.",
-   "fuentes": [
-    "https://github.com/ZSeven-W/dsh-game-studio/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "ZSeven-W/dsh-game-studio",
-    "archived": false,
-    "pushed_at": "2026-11-09",
-    "license": "MIT",
-    "primary_language": "TypeScript",
-    "checked_at": "2026-11-15"
-   }
-  },
-  "dsh-ios": {
-   "que_es": "DSH iOS Simulator, plugin de DeepSeek Harness con un simulador iOS en vivo y soporte para iPhone físico por USB, de @ZSeven-W. Licencia MIT. Está en fase de release candidate (0.1.0-rc.12) y tiene ~470 estrellas.",
-   "que_hace": "Le da al agente 22 herramientas para arrancar simuladores, compilar y ejecutar proyectos Xcode o paquetes Swift, manejar la interfaz por accesibilidad y recargar previews de SwiftUI. Con WebDriverAgent controla también un iPhone real.",
-   "como_lo_hace": "Se instala como paquete npm `@zseven-w/dsh-ios`. Requiere macOS con Xcode (en otros sistemas las herramientas devuelven error), usa serve-sim y opcionalmente AXe. Su anfitrión, DeepSeek Harness (deepseek-ai/deepseek-harness), no está en el catálogo.",
-   "combina_con": [
-    {
-     "id": "dsh-android",
-     "motivo": "Plugin hermano para Android. (combinación por arquitectura)",
-     "orden_instalacion": "Instala ambos plugins en DSH."
-    },
-    {
-     "id": "dsh-game-studio",
-     "motivo": "Plugin hermano para juegos. (combinación por arquitectura)",
-     "orden_instalacion": "Instálalo en DSH si haces juegos."
-    },
-    {
-     "id": "genjutsu",
-     "motivo": "Skills de diseño para interfaces móviles. (combinación por arquitectura)",
-     "orden_instalacion": "Añade las skills al agente."
-    }
-   ],
-   "notas": "Sin alternativas declaradas.",
-   "fuentes": [
-    "https://github.com/ZSeven-W/dsh-ios/blob/main/README.md"
-   ],
-   "github": {
-    "name_with_owner": "ZSeven-W/dsh-ios",
-    "archived": false,
-    "pushed_at": "2026-11-10",
-    "license": "MIT",
-    "primary_language": "TypeScript",
     "checked_at": "2026-11-15"
    }
   },
@@ -343,9 +241,15 @@
      "id": "opencode",
      "motivo": "Runtime de agente soportado.",
      "orden_instalacion": "Instala OpenCode en el runtime."
+    },
+    {
+     "id": "andrej-karpathy-skills",
+     "motivo": "Combinación recíproca: andrej-karpathy-skills lo enlaza como «Plataforma del mismo autor para gestionar agentes con skills reutilizables (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde andrej-karpathy-skills: Independientes.",
+     "reciproca_de": "andrej-karpathy-skills"
     }
    ],
-   "notas": "Sin alternativas declaradas. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.",
+   "notas": "Alternativa (elige una): paperclip. Se quitan ruflo y chatwoot (sin relación documentada). La licencia no es OSI.",
    "fuentes": [
     "https://github.com/multica-ai/multica/blob/main/README.md",
     "https://multica.ai/docs/agents"
@@ -447,6 +351,12 @@
      "id": "searxng",
      "motivo": "Búsqueda autoalojada. (combinación por arquitectura)",
      "orden_instalacion": "Configúralo como herramienta de búsqueda."
+    },
+    {
+     "id": "sandbox",
+     "motivo": "Combinación recíproca: sandbox lo enlaza como «Sandbox para el harness. (combinación por arquitectura)».",
+     "orden_instalacion": "Orden indicado desde sandbox: Configúralo como entorno de ejecución.",
+     "reciproca_de": "sandbox"
     }
    ],
    "notas": "Sin alternativas declaradas; se solapa con gpt-researcher en el modo investigación (solo anotado).",

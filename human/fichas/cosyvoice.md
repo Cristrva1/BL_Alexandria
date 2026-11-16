@@ -10,6 +10,33 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+CosyVoice, modelo de voz multilingüe del equipo Qwen/FunAudioLLM de Alibaba, con inferencia, entrenamiento y despliegue. Licencia Apache-2.0. Tiene ~24k estrellas, la versión actual es Fun-CosyVoice 3.0 y el repo no cambia desde mayo de 2026.
+
+## ¿Qué hace?
+
+Genera voz y clona voces zero-shot entre idiomas, con streaming de baja latencia y control por instrucciones.
+
+## ¿Cómo lo hace?
+
+Se instala con conda y `pip install -r requirements.txt` (los ejemplos usan espejos de Aliyun); ttsfrd es opcional para normalizar texto. Puede acelerarse con vLLM (0.9 o 0.11 con versiones fijadas de transformers) y desplegarse con Docker, gRPC o FastAPI. Los modelos están en ModelScope y Hugging Face.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Pipecat](pipecat.md) | TTS en agentes de voz. (combinación por arquitectura) | Expón el servidor FastAPI o gRPC. |
+| [vLLM](vllm.md) | Inferencia acelerada documentada. | Instala la versión de vLLM indicada. |
+| [FFmpeg](ffmpeg.md) | Postproceso de audio. (combinación por arquitectura) | Convierte la salida. |
+| [Wan2.2](wan2-2.md) | Combinación recíproca: Wan2.2 lo enlaza como «Síntesis de voz para Speech-to-Video». | Orden indicado desde Wan2.2: Instala `requirements_s2v.txt`. |
+
+**Notas:** Alternativas (elige una): fish-speech, index-tts.
+
+Estado en GitHub: activo · último push 2026-05-25 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/QwenAudio/CosyVoice/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. El proyecto pertenece a FunAudioLLM; variantes de vLLM requieren entornos específicos y no conviene mezclar todas las dependencias en uno |
 | Coste | Sin pago a un modelo en la ruta básica. La ruta propia no necesita API; hardware, datos y modelos externos tienen sus condiciones |
 | Equipo | Preparación según la ruta elegida. Conda y Python 3.10 según guía; submódulos; pesos; FFmpeg o sox según ruta |
-
-El proyecto pertenece a FunAudioLLM; variantes de vLLM requieren entornos específicos y no conviene mezclar todas las dependencias en uno
-
-## Qué puedes hacer con él
-
-Modelo de voz multilingüe del equipo Qwen con inferencia, entrenamiento y despliegue.
-
-## Por qué destaca
-
-Usos propuestos: Explorar síntesis multilingüe; Estudiar streaming de voz.
-
-## Cómo funciona
 
 El proyecto pertenece a FunAudioLLM; variantes de vLLM requieren entornos específicos y no conviene mezclar todas las dependencias en uno
 
@@ -98,18 +113,13 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `tts` `audio` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Pipecat](pipecat.md) | 17.3k | Framework open source para agentes de voz y apps multimodales en tiempo real. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Fish Speech](fish-speech.md) | 33.7k | Herramientas y modelos de voz Fish Audio con licencias Community o Research según variante. |
 | [IndexTTS](index-tts.md) | 25.1k | Sistema de TTS zero-shot de nivel industrial, controlable en duración y emoción. |
+| [F5-TTS](f5-tts.md) | 15.6k | Síntesis de voz con clonación a partir de pocos segundos de audio de referencia, basada en flow matching con Diffusion Transformer; incluye app Gradio y CLI. |
 
 ## Enlaces
 

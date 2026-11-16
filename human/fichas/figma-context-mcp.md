@@ -29,6 +29,7 @@ Se añade al cliente con `npx -y figma-developer-mcp --figma-api-key=TU_CLAVE --
 | [Claude Code](claude-code.md) | Implementar diseños de Figma desde el agente. | Registra el servidor con tu token de Figma. |
 | [ui](ui.md) | Traducir el diseño a componentes de shadcn/ui. (combinación por arquitectura) | Pide al agente que use componentes de ui al implementar el frame. |
 | [tailwindcss](tailwindcss.md) | Mapear estilos de Figma a utilidades de Tailwind. (combinación por arquitectura) | Configura los tokens de diseño en Tailwind antes de implementar. |
+| [design-dna](design-dna.md) | Combinación recíproca: design-dna lo enlaza como «Usar diseños de Figma como referencia (combinación por arquitectura)». | Orden indicado desde design-dna: Conecta el MCP de Figma antes del análisis. |
 
 **Notas:** Sin alternativas declaradas. El token de Figma da acceso a tus archivos: guárdalo como secreto.
 
