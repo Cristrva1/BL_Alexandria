@@ -122,9 +122,9 @@ def scan(
     console.print(f"Wrote {output}{suffix}")
 
 
-@app.command()
-def score() -> None:
-    """Write a scan summary using scoring_rules.yaml weights as declared metadata."""
+@app.command("scan-score")
+def scan_score() -> None:
+    """Resumen del índice de escaneo con los pesos declarados en scoring_rules.yaml (antes `score`)."""
     paths = ProjectPaths.load()
     scan_data = read_json(paths.scan_index, {"repos": []})
     rules = read_yaml(paths.project_root / "config" / "scoring_rules.yaml", {})
@@ -133,6 +133,47 @@ def score() -> None:
     output = paths.project_root / "data" / "reports" / "score.json"
     write_json(output, payload)
     console.print(f"Wrote {output}")
+
+
+@app.command("score")
+def score_command(
+    refrescar: Annotated[bool, typer.Option("--refrescar", help="Vuelve a pedir todas las métricas aunque la caché esté vigente.")] = False,
+    sin_red: Annotated[bool, typer.Option("--sin-red", help="Solo puntúa con la caché de data/metricas/cache (no llama a ninguna API).")] = False,
+    ids: Annotated[list[str] | None, typer.Option("--id", help="Limita la obtención de métricas a estos ids (la puntuación se recalcula para todos).")] = None,
+    mostrar: Annotated[str | None, typer.Option("--mostrar", help="Imprime el desglose de un id.")] = None,
+) -> None:
+    """Métricas públicas + rúbrica de calidad (0-100) para cada repo del catálogo.
+
+    Fuentes: GitHub (GraphQL y REST vía gh), pypistats, npm, Docker Hub y OpenSSF Scorecard.
+    Caché en data/metricas/cache/<id>.json; resultado en data/metricas/puntuaciones.json,
+    `puntuacion` en INDICE_IA.json y `calidad` en INDICE_IA.detalle.json. No instala nada.
+    """
+    import json as _json
+
+    from repo_intelligence.quality import metrics as metrics_mod
+    from repo_intelligence.quality import score as score_mod
+
+    root = ProjectPaths.load().project_root
+    config = score_mod.load_config(root)
+    compact = _json.loads((root / "INDICE_IA.json").read_text(encoding="utf8"))
+    detail = _json.loads((root / "INDICE_IA.detalle.json").read_text(encoding="utf8"))["repos"]
+    targets = metrics_mod.catalog_targets(compact, detail)
+    if sin_red:
+        metrics = {t["id"]: m for t in targets if (m := metrics_mod.load_cache(root, t["id"]))}
+    else:
+        chosen = [t for t in targets if not ids or t["id"] in ids]
+        metrics = {t["id"]: m for t in targets if (m := metrics_mod.load_cache(root, t["id"]))}
+        metrics.update(metrics_mod.collect(root, chosen, config=config, refresh=refrescar or bool(ids), log=console.print))
+    today = _now()[:10]
+    scores = score_mod.score_all(metrics, compact, detail, config, score_mod.load_groups(root), today=today)
+    out = score_mod.write_scores(root, scores, config, today)
+    n = score_mod.sync_indices(root, scores)
+    errors = sorted(i for i, m in metrics.items() if m.get("error"))
+    console.print(f"Puntuados {n} repos. Escrito {out}")
+    if errors:
+        console.print(f"[yellow]Sin métricas ({len(errors)}):[/yellow] {', '.join(errors[:30])}")
+    if mostrar and mostrar in scores:
+        console.print_json(_json.dumps(scores[mostrar], ensure_ascii=False))
 
 
 @app.command()

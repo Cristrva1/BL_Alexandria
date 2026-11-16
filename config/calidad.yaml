@@ -1,0 +1,56 @@
+# Rúbrica de calidad aprobada el 2026-11-16 (plan-duplicidad-y-niveles).
+# Pesos en puntos sobre 100. Los subpesos reparten cada eje.
+pesos:
+  adopcion: 25
+  mantenimiento: 25
+  licencia: 15
+  madurez: 10
+  respaldo: 10
+  encaje: 10
+  seguridad: 5
+subpesos:
+  adopcion: {estrellas_anio: 12, descargas_mes: 8, estrellas: 5}
+  mantenimiento: {commits_90d: 8, releases_365d: 5, primera_respuesta_dias: 5, ratio_cerradas: 4, bus_factor: 3}
+  madurez: {edad: 4, semver: 3, docs: 3}
+# Comparación: media de percentil en la categoría técnica y percentil en el grupo de similares
+# (en su defecto, la subcategoría). Si la categoría tiene menos de `minimo_categoria` repos con dato
+# se usa el catálogo completo.
+normalizacion: {peso_categoria: 0.5, peso_grupo: 0.5, minimo_categoria: 8}
+licencia_puntos: {osi_permisiva: 15, osi_copyleft: 12, open_core: 10, source_available: 5, propietaria: 1, desconocida: 5}
+respaldo_puntos: {fundacion: 10, organizacion: 8, individual: 5}
+cache_dias: 25
+# Organizaciones de GitHub que pertenecen a fundaciones o instituciones sin ánimo de lucro.
+fundaciones: [apache, mozilla, mozilla-ai, linuxfoundation, cncf, owasp, openssf, python, eclipse, eclipse-ee4j, gnome, kde,
+  pallets, psf, jupyter, jupyterlab, numfocus, pandas-dev, numpy, scipy, scikit-learn, matplotlib, pytorch, openbao, nodejs,
+  freecodecamp, wikimedia, mitre, mitre-attack, the-tcpdump-group, wireshark, zeek, suricata, oisf, osgeo, qgis, blender,
+  godotengine, documentfoundation, tor, torproject, signalapp, matrix-org, element-hq, opensearch-project, opentelemetry,
+  open-telemetry, grafana-foundation, prometheus, kubernetes, envoyproxy, falcosecurity, sigstore, in-toto, ossf, w3c, whatwg]
+# Clasificación manual cuando el SPDX de GitHub no basta (NOASSERTION, open-core o licencias propias).
+licencias:
+  windmill: {clase: open_core, nota: "AGPL-3.0/Apache-2.0 con funciones Enterprise propietarias (LICENSE)"}
+  vault: {clase: source_available, nota: "BSL 1.1 desde 1.15.0"}
+  caido: {clase: propietaria, nota: "Producto cerrado; el repo no contiene el código"}
+  wpscan: {clase: source_available, nota: "WPScan Public Source License"}
+  opencti: {clase: open_core, nota: "CE Apache-2.0; funciones EE con licencia Filigran"}
+  prowler: {clase: open_core, nota: "CLI Apache-2.0; Prowler Cloud de pago"}
+  llamafile: {clase: osi_permisiva, nota: "Apache-2.0 (LICENSE; la API devuelve NOASSERTION)"}
+  dirsearch: {clase: osi_copyleft, nota: "GPL-2.0 según el README"}
+  # Revisados a mano el 2026-11-16 (GitHub devuelve NOASSERTION o no hay LICENSE en la raíz).
+  claude-code: {clase: propietaria, nota: "Producto propietario de Anthropic; el repo publica plugins, issues y documentación"}
+  antigravity-cli: {clase: propietaria, nota: "Producto de Google sin licencia publicada en el repo"}
+  joplin: {clase: osi_copyleft, nota: "AGPL-3.0-or-later salvo directorios con LICENSE propio"}
+  radare2: {clase: osi_copyleft, nota: "LGPL-3.0 en su mayor parte"}
+  osquery: {clase: osi_permisiva, nota: "Doble licencia Apache-2.0 / GPL-2.0"}
+  weaviate: {clase: open_core, nota: "BSD-3-Clause con partes bajo la Weaviate License"}
+  novu: {clase: open_core, nota: "MIT con paquetes enterprise bajo licencia comercial"}
+  awesome-machine-learning: {clase: osi_permisiva, nota: "CC0 1.0"}
+  volatility3: {clase: source_available, nota: "Volatility Software License 1.0 (no aprobada por OSI)"}
+  sam3: {clase: source_available, nota: "SAM License de Meta (licencia propia)"}
+  ffmpeg: {clase: osi_copyleft, nota: "LGPL-2.1+ con partes GPL"}
+# Repos cuyo historial incluye el de otro proyecto (fusiones de upstream). Se cuentan solo los
+# commits del propietario y los contribuidores que no están en el upstream.
+derivados:
+  koboldcpp: ggml-org/llama.cpp
+# Paquetes publicados cuando no se pueden deducir del comando de instalación.
+paquetes:
+  open-webui: {pypi: open-webui}  # PyPI no enlaza al repo; nombre verificado a mano
