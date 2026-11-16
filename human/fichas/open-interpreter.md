@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Open Interpreter, ahora reescrito en Rust a partir de Codex como agente de programación optimizado para modelos de bajo coste. Licencia Apache-2.0. Tiene ~69k estrellas (rust-v0.0.61); el proyecto Python original sigue como fork comunitario (endolith/open-interpreter).
+
+## ¿Qué hace?
+
+Ofrece una interfaz parecida a Codex con harness específicos por proveedor, por ejemplo una reimplementación del harness de Kimi Code para Kimi K3. Admite `exec`, MCP, ACP, skills, hooks, permisos y `AGENTS.md`.
+
+## ¿Cómo lo hace?
+
+Se instala con un script (`curl … | sh` o PowerShell). La versión Rust es muy reciente y cambia rápido.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Modelos locales baratos. (combinación por arquitectura) | Configura un proveedor local si está soportado. |
+| [E2B](e2b.md) | Ejecutar código en sandboxes remotos. (combinación por arquitectura) | Usa un sandbox E2B para tareas arriesgadas. |
+| [Context7](context7.md) | Documentación de librerías vía MCP. (combinación por arquitectura) | Añade el MCP de Context7. |
+
+**Notas:** Alternativas (elige una): goose. La descripción antigua (intérprete Python local) ya no corresponde a este repo.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada rust-v0.0.61 (2026-11-11) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/openinterpreter/openinterpreter/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. La versión actual está escrita en Rust y deriva de Codex; su compatibilidad con el SDK mediante override no implica acceso al plan de Codex; la versión Python tiene otra continuación |
 | Coste | El coste depende del proveedor o la ruta. El proveedor elegido define autenticación y coste; llamar abierto a un modelo no acredita que la inferencia se haga localmente |
 | Equipo | Preparación según la ruta elegida. Terminal; instalador del sistema; proveedor configurado; carpeta de prueba |
-
-La versión actual está escrita en Rust y deriva de Codex; su compatibilidad con el SDK mediante override no implica acceso al plan de Codex; la versión Python tiene otra continuación
-
-## Qué puedes hacer con él
-
-Agente de código para modelos abiertos como Kimi y GLM, pensado para correr con modelos locales o baratos.
-
-## Por qué destaca
-
-Usos propuestos: Probar un agente con distintos harnesses; Reutilizar un cliente del SDK de Codex.
-
-## Cómo funciona
 
 La versión actual está escrita en Rust y deriva de Codex; su compatibilidad con el SDK mediante override no implica acceso al plan de Codex; la versión Python tiene otra continuación
 
@@ -87,13 +101,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Terminal; instalador del sistema; proveedor configurado; carpeta de prueba
 - **Etiquetas:** `coding-agent` `local` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [E2B](e2b.md) | 14.9k | Sandboxes en la nube, seguros y rápidos, para que tus agentes ejecuten código y usen herramientas. |
 
 ## Alternativas (elige una)
 

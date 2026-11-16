@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+VideoLingo, app para subtitular, traducir y doblar vídeos, de @Huanshere. Licencia Apache-2.0. Es activa (~19k estrellas, v3.2.0).
+
+## ¿Qué hace?
+
+Descarga vídeos de YouTube con yt-dlp, transcribe con Qwen3-ASR y ForcedAligner en local (o ElevenLabs y MAI-Transcribe-2), segmenta y traduce subtítulos con un LLM, y dobla con GPT-SoVITS, OpenAI, Edge TTS y otros. Produce archivos de subtítulos y vídeos subtitulados o doblados. La calidad depende del modelo de traducción elegido.
+
+## ¿Cómo lo hace?
+
+Tiene una interfaz Streamlit. En Windows, `OneKeyStart.bat` instala uv, Python 3.12 y dependencias; también hay Docker con GPU. El LLM debe ser compatible con OpenAI Chat Completions y devolver el JSON estructurado que exige el flujo.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [yt-dlp](yt-dlp.md) | Descarga integrada de YouTube. | Viene incluido; mantenlo actualizado. |
+| [GPT-SoVITS](gpt-sovits.md) | Doblaje con voz clonada. | Arranca GPT-SoVITS y selecciónalo como TTS. |
+| [FFmpeg](ffmpeg.md) | Procesamiento de audio y vídeo. (combinación por arquitectura) | Instala FFmpeg si tu instalación no lo trae. |
+
+**Notas:** Alternativas (elige una): omnivoice-studio. Se retiró whisperx de las combinaciones: ya no es el ASR por defecto y solo aparece en agradecimientos.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v3.2.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Huanshere/VideoLingo/blob/main/README.md) · [2](https://videolingo.io)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El reconocimiento local actual usa Qwen3-ASR y ForcedAligner por defecto; no se debe seguir describiendo todo el pipeline como WhisperX |
 | Coste | El coste depende del proveedor o la ruta. ASR local y algunos TTS no requieren API; traducción y servicios de voz dependen del proveedor; cada etapa puede consumir por separado |
 | Equipo | Preparación según la ruta elegida. Python y uv; FFmpeg y modelos según ruta; LLM con salida JSON; video propio |
-
-El reconocimiento local actual usa Qwen3-ASR y ForcedAligner por defecto; no se debe seguir describiendo todo el pipeline como WhisperX
-
-## Qué puedes hacer con él
-
-Combina reconocimiento de voz, alineación, traducción, segmentación y doblaje. La ruta revisada utiliza Qwen3-ASR y ForcedAligner localmente por defecto; traducción y TTS tienen requisitos y costes distintos según proveedor.
-
-## Por qué destaca
-
-Usos propuestos: Subtitular un tutorial propio; Preparar una traducción de una demostración.
-
-## Cómo funciona
 
 El reconocimiento local actual usa Qwen3-ASR y ForcedAligner por defecto; no se debe seguir describiendo todo el pipeline como WhisperX
 
@@ -95,14 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y uv; FFmpeg y modelos según ruta; LLM con salida JSON; video propio
 - **Etiquetas:** `video` `stt` `tts` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [yt-dlp](yt-dlp.md) | 208k | Descargador de audio y video por línea de comandos compatible con miles de sitios. |
-| [GPT-SoVITS](gpt-sovits.md) | 65.1k | Herramientas locales de TTS y adaptación de voz con pocos ejemplos; calidad y requisitos dependen del modelo y datos. |
-| [whisperX](whisperx.md) | 25.3k | Pipeline de transcripción que añade alineación temporal de palabras y funciones de separación de hablantes. |
 
 ## Alternativas (elige una)
 

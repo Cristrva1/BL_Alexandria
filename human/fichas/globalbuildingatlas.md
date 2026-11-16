@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📂 catálogo/recurso · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+GlobalBuildingAtlas, dataset global de edificios en nivel de detalle LoD1 (polígonos, alturas y modelos 3D) del grupo zhu-xlab (TUM). Tiene licencias mixtas: polígonos ODbL más polígonos, LoD1 y mapas de altura CC BY-NC 4.0 (GitHub muestra NOASSERTION). Tiene ~2.3k estrellas (v1.0.0) y no cambia desde julio de 2026.
+
+## ¿Qué hace?
+
+Ofrece polígonos y alturas de edificios a escala mundial, con un visor web. El README advierte que combinar las partes del dataset puede tener implicaciones de licencia.
+
+## ¿Cómo lo hace?
+
+Los datos se descargan por partes (`GBA.ODbLPolygon`, `GBA.Polygon`, `GBA.LoD1`, `GBA.Height`) y el código de procesamiento está en el repo. El visor web puede reiniciarse por tráfico alto.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [three.js](three-js.md) | Visualizar los modelos LoD1 en 3D web. (combinación por arquitectura) | Convierte los modelos a glTF y cárgalos. |
+| [DuckDB](duckdb.md) | Consultar los polígonos con la extensión espacial. (combinación por arquitectura) | Carga los archivos con `spatial`. |
+| [3dviz-pro-max](3dviz-pro-max.md) | Escenas 3D asistidas por agente. (combinación por arquitectura) | Usa los datos como entrada. |
+
+**Notas:** Sin alternativas declaradas. Ojo con la parte CC BY-NC para usos comerciales.
+
+Estado en GitHub: activo · último push 2026-07-06 · última versión publicada v1.0.0 (2025-11-06) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/zhu-xlab/GlobalBuildingAtlas/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial |
 | Coste | Sin pago a un modelo en la ruta básica. No usa API de IA para consultar datos; descarga, almacenamiento y procesamiento tienen costes |
 | Equipo | Preparación según la ruta elegida. Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa |
-
-GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial
-
-## Qué puedes hacer con él
-
-Dataset global y código de procesamiento de edificios con polígonos, alturas y modelos tridimensionales LoD1.
-
-## Por qué destaca
-
-Usos propuestos: Explorar edificios en un GIS; Preparar una escena urbana de prueba.
-
-## Cómo funciona
 
 GBA.ODbLPolygon usa ODbL, mientras otras capas de polígonos, LoD1 y alturas usan CC BY-NC 4.0; no toda la colección permite el mismo uso comercial
 
@@ -86,12 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador o GIS; espacio de descarga; zona pequeña; licencia de la capa
 - **Etiquetas:** `datos` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [three.js](three-js.md) | 118k | Biblioteca JavaScript para escenas 3D interactivas con renderizadores WebGL y WebGPU. |
 
 ## Enlaces
 

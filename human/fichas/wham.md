@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🧩 motor/runtime · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+WHAM, implementación de investigación para reconstruir humanos en 3D anclados al mundo con movimiento preciso a partir de vídeo, de @yohanshin. Licencia MIT. Tiene ~1.2k estrellas y no cambia desde abril de 2024.
+
+## ¿Qué hace?
+
+Estima la malla SMPL y la trayectoria global de la persona a partir de vídeo monocular, opcionalmente con SLAM para el movimiento de cámara. El refinado opcional con Temporal SMPLify mejora la alineación 2D.
+
+## ¿Cómo lo hace?
+
+La instalación está en `docs/INSTALL.md` (PyTorch con GPU). Requiere registrarse para descargar los modelos SMPL/SMPLify; algunos pesos están en Google Drive.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [4D-Humans](4d-humans.md) | Otro enfoque de reconstrucción para comparar. (combinación por arquitectura) | Compara resultados en el mismo vídeo. |
+| [blender](blender.md) | Animar un personaje con el movimiento SMPL. (combinación por arquitectura) | Importa el movimiento exportado. |
+| [PyTorch](pytorch.md) | Backend. | Instala PyTorch con CUDA. |
+
+**Notas:** Sin alternativas declaradas. Código de investigación inactivo.
+
+Estado en GitHub: activo · último push 2024-04-18 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/yohanshin/WHAM/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El script de descarga necesita acceso a los modelos externos; MIT del código no concede automáticamente licencia de SMPL o de los datos |
 | Coste | El coste depende del proveedor o la ruta. Código MIT, con modelos corporales y datasets bajo condiciones independientes; GPU y almacenamiento aparte |
 | Equipo | Preparación según la ruta elegida. Entorno de investigación; modelos SMPL y SMPLify con acceso; pesos; video autorizado |
-
-El script de descarga necesita acceso a los modelos externos; MIT del código no concede automáticamente licencia de SMPL o de los datos
-
-## Qué puedes hacer con él
-
-Implementación de investigación para reconstruir movimiento humano tridimensional a partir de secuencias de video.
-
-## Por qué destaca
-
-Usos propuestos: Estudiar movimiento humano 3D; Comparar reconstrucción antes y después de refinamiento.
-
-## Cómo funciona
 
 El script de descarga necesita acceso a los modelos externos; MIT del código no concede automáticamente licencia de SMPL o de los datos
 

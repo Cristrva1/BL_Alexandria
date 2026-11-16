@@ -29,6 +29,15 @@ Requiere Python >=3.10 y <3.14. Se instala como herramienta (`uv tool install cr
 | [mem0](mem0.md) | Memoria persistente con la integración documentada por Mem0. | Configura Mem0 y pásalo como memoria de la crew. |
 | [langfuse](langfuse.md) | Trazas de código abierto como alternativa al plano de control comercial (integración oficial). | Instrumenta antes de pasar a producción. |
 | [FastMCP](fastmcp.md) | Exponer herramientas propias como servidor MCP que CrewAI puede consumir (combinación por arquitectura; CrewAI documenta soporte MCP). | Servidor MCP primero; conéctalo a los agentes. |
+| [500-AI-Agents-Projects](500-ai-agents-projects.md) | Combinación recíproca: 500-AI-Agents-Projects lo enlaza como «Framework más citado en la colección». | Orden indicado desde 500-AI-Agents-Projects: Instálalo en el entorno del agente que lo use. |
+| [ai-engineering-hub](ai-engineering-hub.md) | Combinación recíproca: ai-engineering-hub lo enlaza como «Framework de agentes usado en varios proyectos». | Orden indicado desde ai-engineering-hub: Instálalo en el entorno del proyecto que lo use. |
+| [CopilotKit](copilotkit.md) | Combinación recíproca: CopilotKit lo enlaza como «Equipos de agentes CrewAI con integración documentada». | Orden indicado desde CopilotKit: Despliega el crew y conéctalo al runtime. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (2). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[laya](laya.md) · [OpenBot](openbot.md)
 
 **Notas:** Alternativas (elige una): langgraph, agno, metagpt. Se quitó langchain: CrewAI no lo requiere.
 

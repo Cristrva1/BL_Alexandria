@@ -3,7 +3,7 @@
 Esta biblioteca es un menú curado de repos de IA y automatización, con datos completos para cada uno. Este archivo te dice cómo elegir los repos correctos **gastando el mínimo de tokens**. Es corto, así que léelo entero y luego abre solo lo que necesites.
 
 <!-- BL:STATS -->
-**635 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **100 subcategorías**
+**811 repos curados** · **13 áreas de trabajo** · **3 colecciones de configuración** · **98 subcategorías prácticas** · **32 categorías técnicas** · **110 subcategorías técnicas**
 <!-- /BL:STATS -->
 
 ---
@@ -55,7 +55,7 @@ Esta biblioteca es un menú curado de repos de IA y automatización, con datos c
 <!-- BL:AGENT_TOOLS -->
 | Herramienta | Repos específicos que le sirven |
 |---|---|
-| **Claude Code** | `claude-code`, `anthropic-skills`, `claude-plugins-official`, `superpowers`, `awesome-claude-code`, `awesome-claude-skills`, `claude-mem`, `n8n-skills`, `geo-seo-claude`, `agency-agents` — Skills en .claude/skills y plugins con /plugin marketplace. |
+| **Claude Code** | `claude-code`, `anthropic-skills`, `claude-plugins-official`, `superpowers`, `awesome-claude-code`, `awesome-claude-skills`, `claude-mem`, `geo-seo-claude`, `agency-agents` — Skills en .claude/skills y plugins con /plugin marketplace. |
 | **Codex** | `codex`, `agent-skills`, `antigravity-awesome-skills`, `awesome-agent-skills`, `spec-kit`, `marketingskills`, `taste-skill` — Lee AGENTS.md y skills portables (formato Agent Skills). |
 | **Antigravity** | `antigravity-awesome-skills`, `awesome-agent-skills`, `prompt-master`, `stitch-skills` |
 | **Gemini CLI** | `gemini-cli`, `awesome-agent-skills`, `antigravity-awesome-skills`, `stitch-skills` |
@@ -75,49 +75,49 @@ Las secciones técnicas siguientes conservan sus números y rutas. La lógica co
 <!-- BL:AGENT_CATEGORIES -->
 | # | Categoría | Repos | Subcategorías | Archivo |
 |---:|---|---:|---|---|
-| 1 | 🤖 Automatizar procesos y crear herramientas internas | 15 | Motores de workflow y automatización, Ecosistema n8n, Apps internas y bases de datos no-code | `human/categorias/01-automatizaci-n-mensajer-a-crm.md` |
+| 1 | 🤖 Automatizar procesos y crear herramientas internas | 17 | Motores de workflow y automatización, Apps internas y bases de datos no-code | `human/categorias/01-automatizaci-n-mensajer-a-crm.md` |
 | 2 | 🧠 Skills, plugins y métodos para agentes | 30 | Catálogos y marketplaces de skills, Metodologías y harness para agentes de código | `human/categorias/02-skills-prompts-gu-as-de-agente.md` |
-| 3 | 🕸️ Construir agentes y coordinar equipos de IA | 30 | Frameworks de agentes en Python, Frameworks en TypeScript y multi-lenguaje, Builders visuales y plataformas de agentes, Simulación, evolución y debate entre modelos | `human/categorias/03-frameworks-orquestaci-n-de-agentes.md` |
-| 4 | 🕷️ Buscar, extraer y monitorear información web | 20 | Crawlers y extracción para IA, Scraping guiado por LLM, Búsqueda, monitoreo y research web, Redes sociales y descarga de medios | `human/categorias/04-scraping-b-squeda-research-web.md` |
-| 5 | 🔌 Conectar herramientas con MCP | 23 | SDKs y frameworks para crear MCP, Servidores MCP destacados, Directorios, clientes y aprendizaje | `human/categorias/05-mcp-conectividad.md` |
-| 6 | 🧬 Memoria, RAG y búsqueda de conocimiento | 23 | Memoria persistente para agentes, RAG y motores de conocimiento, Bases vectoriales y búsqueda semántica | `human/categorias/06-memoria-rag-llm-ops.md` |
-| 7 | 🧑‍💻 Entender código y comprobar su calidad | 13 | Entender y empaquetar código para agentes, Calidad, seguridad y benchmarks de código, CLIs y SDKs de desarrollo | `human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md` |
-| 8 | 🏠 Chats, modelos locales y espacios privados | 26 | Motores para correr modelos en local, Interfaces de chat auto-hospedadas, Workspaces privados y segundos cerebros, NotebookLM: alternativas y clientes | `human/categorias/08-ia-local-modelos-chats-workspaces.md` |
-| 9 | 🎨 Diseñar y construir interfaces web | 28 | Componentes, iconos y sistemas de diseño, CSS y estilos, Diseño visual, canvas y builders, UI generada con IA y frontends para agentes | `human/categorias/09-dise-o-ui-frontend.md` |
-| 10 | 📊 Dashboards, analítica y mapas | 22 | Analítica web y de producto, BI, dashboards y chat con datos, Librerías de gráficos, Recursos y casos de uso, Inteligencia de fuentes abiertas y mapas, Fotogrametría y mapas desde imágenes | `human/categorias/10-anal-tica-visualizaci-n.md` |
-| 11 | 🖼️ Generar y editar imágenes con IA | 9 | Interfaces para generar imágenes, Modelos, librerías y control, Restauración, upscaling y edición, Suites generativas todo-en-uno | `human/categorias/11-generaci-n-de-imagen-visi-n.md` |
-| 12 | 🎬 Editar, grabar y generar video | 15 | Edición, grabación y subtítulos, Video generativo y pipelines automáticos | `human/categorias/12-audio-voz-video.md` |
-| 13 | 📄 PDF, OCR y procesamiento de documentos | 19 | Conversión de documentos para IA, OCR, Herramientas PDF, Gestión y archivo de documentos | `human/categorias/13-documentos-presentaciones.md` |
-| 14 | 📈 Investigar finanzas y mercados | 22 | Agentes de investigación financiera, Modelos y backtesting cuantitativo, Bots y conexiones a exchanges, Ejemplos y aprendizaje | `human/categorias/14-investigar-finanzas-y-mercados.md` |
-| 15 | 🗂️ Organizar notas, archivos y servicios personales | 27 | Notas, bóvedas y conocimiento personal, Sincronización y gestión de archivos, Credenciales y privacidad, Libros, podcasts y bibliotecas personales, Automatización del hogar, Herramientas y organización personal, Aprendizaje asistido | `human/categorias/15-notas-archivos-y-servicios-personales.md` |
-| 16 | 🔍 Analizar software y comprobar su seguridad | 26 | Ingeniería inversa y formatos binarios, Depuración e inspección de procesos, Tráfico, rendimiento y pruebas, Análisis y pruebas con agentes, Protección y verificación de software, Directorios y aprendizaje, Skills de análisis y seguridad | `human/categorias/16-analisis-de-software-y-seguridad.md` |
-| 17 | 🤖 WhatsApp, mensajería y chatbots | 10 | WhatsApp y mensajería, Chatbots y asistentes conversacionales, Comunidades,chat y llamadas | `human/categorias/17-mensajeria-chatbots.md` |
-| 18 | 🤖 CRM, ventas y marketing | 13 | CRM, ERP y soporte al cliente, Email, marketing y notificaciones, Reservas y programación de citas | `human/categorias/18-crm-ventas-marketing.md` |
-| 19 | 🧠 Aprender IA y escribir mejores prompts | 28 | Prompts y prompt engineering, Guías, cursos y cookbooks, Aprender LLMs desde cero | `human/categorias/19-aprender-ia-prompts.md` |
-| 20 | 🕸️ Programar con agentes de código | 19 | Agentes de terminal, Editores y extensiones de código, Agentes para issues y tareas de ingeniería, Interfaces para gestionar sesiones, Desarrollo móvil y de juegos | `human/categorias/20-agentes-de-codigo.md` |
+| 3 | 🕸️ Construir agentes y coordinar equipos de IA | 34 | Frameworks de agentes en Python, Frameworks en TypeScript y multi-lenguaje, Builders visuales y plataformas de agentes, Simulación, evolución y debate entre modelos | `human/categorias/03-frameworks-orquestaci-n-de-agentes.md` |
+| 4 | 🕷️ Buscar, extraer y monitorear información web | 28 | Crawlers y extracción para IA, Scraping guiado por LLM, Búsqueda, monitoreo y research web, Redes sociales y descarga de medios | `human/categorias/04-scraping-b-squeda-research-web.md` |
+| 5 | 🔌 Conectar herramientas con MCP | 25 | SDKs y frameworks para crear MCP, Servidores MCP destacados, Directorios, clientes y aprendizaje | `human/categorias/05-mcp-conectividad.md` |
+| 6 | 🧬 Memoria, RAG y búsqueda de conocimiento | 28 | Memoria persistente para agentes, RAG y motores de conocimiento, Bases vectoriales y búsqueda semántica | `human/categorias/06-memoria-rag-llm-ops.md` |
+| 7 | 🧑‍💻 Entender código y comprobar su calidad | 20 | Entender y empaquetar código para agentes, Calidad, seguridad y benchmarks de código, CLIs y SDKs de desarrollo | `human/categorias/07-inteligencia-de-c-digo-datos-entrenamiento.md` |
+| 8 | 🏠 Chats, modelos locales y espacios privados | 31 | Motores para correr modelos en local, Interfaces de chat auto-hospedadas, Workspaces privados y segundos cerebros, NotebookLM: alternativas y clientes | `human/categorias/08-ia-local-modelos-chats-workspaces.md` |
+| 9 | 🎨 Diseñar y construir interfaces web | 32 | Componentes, iconos y sistemas de diseño, CSS y estilos, Diseño visual, canvas y builders, UI generada con IA y frontends para agentes | `human/categorias/09-dise-o-ui-frontend.md` |
+| 10 | 📊 Dashboards, analítica y mapas | 31 | Analítica web y de producto, BI, dashboards y chat con datos, Librerías de gráficos, Recursos y casos de uso, Inteligencia de fuentes abiertas y mapas, Fotogrametría y mapas desde imágenes | `human/categorias/10-anal-tica-visualizaci-n.md` |
+| 11 | 🖼️ Generar y editar imágenes con IA | 10 | Interfaces para generar imágenes, Modelos, librerías y control, Restauración, upscaling y edición | `human/categorias/11-generaci-n-de-imagen-visi-n.md` |
+| 12 | 🎬 Editar, grabar y generar video | 19 | Edición, grabación y subtítulos, Video generativo y pipelines automáticos | `human/categorias/12-audio-voz-video.md` |
+| 13 | 📄 PDF, OCR y procesamiento de documentos | 22 | Conversión de documentos para IA, OCR, Herramientas PDF, Gestión y archivo de documentos | `human/categorias/13-documentos-presentaciones.md` |
+| 14 | 📈 Investigar finanzas y mercados | 23 | Agentes de investigación financiera, Modelos y backtesting cuantitativo, Bots y conexiones a exchanges, Ejemplos y aprendizaje | `human/categorias/14-investigar-finanzas-y-mercados.md` |
+| 15 | 🗂️ Organizar notas, archivos y servicios personales | 44 | Notas, bóvedas y conocimiento personal, Sincronización y gestión de archivos, Credenciales y privacidad, Libros, podcasts y bibliotecas personales, Automatización del hogar, Herramientas y organización personal, Aprendizaje asistido | `human/categorias/15-notas-archivos-y-servicios-personales.md` |
+| 16 | 🔍 Analizar software y comprobar su seguridad | 43 | Ingeniería inversa y formatos binarios, Depuración e inspección de procesos, Tráfico, rendimiento y pruebas, Análisis y pruebas con agentes, Protección y verificación de software, Directorios y aprendizaje, Skills de análisis y seguridad | `human/categorias/16-analisis-de-software-y-seguridad.md` |
+| 17 | 🤖 WhatsApp, mensajería y chatbots | 16 | WhatsApp y mensajería, Chatbots y asistentes conversacionales, Comunidades,chat y llamadas | `human/categorias/17-mensajeria-chatbots.md` |
+| 18 | 🤖 CRM, ventas y marketing | 17 | CRM, ERP y soporte al cliente, Email, marketing y notificaciones, Reservas y programación de citas | `human/categorias/18-crm-ventas-marketing.md` |
+| 19 | 🧠 Aprender IA y escribir mejores prompts | 31 | Prompts y prompt engineering, Guías, cursos y cookbooks, Aprender LLMs desde cero | `human/categorias/19-aprender-ia-prompts.md` |
+| 20 | 🕸️ Programar con agentes de código | 21 | Agentes de terminal, Editores y extensiones de código, Agentes para issues y tareas de ingeniería, Interfaces para gestionar sesiones | `human/categorias/20-agentes-de-codigo.md` |
 | 21 | 🕸️ Asistentes e investigación con agentes | 17 | Asistentes autónomos y equipos de agentes, Agentes de research autónomo | `human/categorias/21-asistentes-investigacion.md` |
-| 22 | 🕸️ Infraestructura, despliegue y herramientas para agentes | 17 | Infraestructura: sandboxes, herramientas y protocolos, Dominios y recursos de infraestructura, Redes y transporte, Alojamiento y backend | `human/categorias/22-infraestructura-despliegue.md` |
-| 23 | 🧬 Operar, evaluar y medir modelos de IA | 19 | Serving y gateways de LLM, Ahorro de contexto y tokens, Observabilidad, evaluación y guardrails | `human/categorias/23-operacion-evaluacion-modelos.md` |
-| 24 | 🧑‍💻 Modelos abiertos y entrenamiento | 14 | Entrenar y afinar modelos, Modelos abiertos y fundacionales | `human/categorias/24-modelos-entrenamiento.md` |
-| 25 | 🧑‍💻 Procesar datos y trabajar con notebooks | 9 | Datos y notebooks, Apps de datos en Python | `human/categorias/25-datos-notebooks.md` |
-| 26 | 🎨 Animación, gráficos y creación 3D | 19 | Animación y 3D, Creación, renderizado y animación 3D, Física y simulación | `human/categorias/26-animacion-graficos-3d.md` |
+| 22 | 🕸️ Infraestructura, despliegue y herramientas para agentes | 26 | Infraestructura: sandboxes, herramientas y protocolos, Dominios y recursos de infraestructura, Redes y transporte, Alojamiento y backend | `human/categorias/22-infraestructura-despliegue.md` |
+| 23 | 🧬 Operar, evaluar y medir modelos de IA | 26 | Serving y gateways de LLM, Ahorro de contexto y tokens, Observabilidad, evaluación y guardrails | `human/categorias/23-operacion-evaluacion-modelos.md` |
+| 24 | 🧑‍💻 Modelos abiertos y entrenamiento | 25 | Entrenar y afinar modelos, Modelos abiertos y fundacionales | `human/categorias/24-modelos-entrenamiento.md` |
+| 25 | 🧑‍💻 Procesar datos y trabajar con notebooks | 23 | Datos y notebooks, Apps de datos en Python | `human/categorias/25-datos-notebooks.md` |
+| 26 | 🎨 Animación, gráficos y creación 3D | 28 | Animación y 3D, Creación, renderizado y animación 3D, Física y simulación | `human/categorias/26-animacion-graficos-3d.md` |
 | 27 | 🎨 Skills de diseño, contenido y especialidades | 36 | Skills de diseño para agentes, Escritura y calidad de texto, Skills de dominio: marketing, SEO y negocio | `human/categorias/27-skills-especializadas.md` |
-| 28 | 🖼️ Visión artificial, rostros y percepción | 19 | Rostros y retratos animados, Visión por computador, Sensores y percepción espacial | `human/categorias/28-vision-percepcion.md` |
-| 29 | 🎬 Audio, transcripción, voz y música | 25 | Transcripción (voz a texto), Síntesis y clonación de voz, Agentes de voz en tiempo real, Música y audio generativo, Procesamiento y limpieza de audio | `human/categorias/29-audio-voz-musica.md` |
-| 30 | 🎬 Video con código y agentes creativos | 22 | Motores de video y escenas por código, Skills y métodos de producción audiovisual, Aplicaciones y flujos de producción | `human/categorias/30-video-codigo-agentes.md` |
-| 31 | 📄 Presentaciones, diagramas y explicación visual | 8 | Presentaciones, Diagramas y documentación | `human/categorias/31-presentaciones-diagramas.md` |
-| 32 | 🕷️ Navegadores y automatización web | 12 | Automatización y pruebas por código, Herramientas de navegación para agentes, Navegadores y servidores de ejecución, Directorios y recursos de navegador | `human/categorias/32-navegadores-automatizacion-web.md` |
+| 28 | 🖼️ Visión artificial, rostros y percepción | 21 | Rostros y retratos animados, Visión por computador | `human/categorias/28-vision-percepcion.md` |
+| 29 | 🎬 Audio, transcripción, voz y música | 33 | Transcripción (voz a texto), Síntesis y clonación de voz, Agentes de voz en tiempo real, Música y audio generativo, Procesamiento y limpieza de audio | `human/categorias/29-audio-voz-musica.md` |
+| 30 | 🎬 Video con código y agentes creativos | 23 | Motores de video y escenas por código, Skills y métodos de producción audiovisual, Aplicaciones y flujos de producción | `human/categorias/30-video-codigo-agentes.md` |
+| 31 | 📄 Presentaciones, diagramas y explicación visual | 12 | Presentaciones, Diagramas y documentación | `human/categorias/31-presentaciones-diagramas.md` |
+| 32 | 🕷️ Navegadores y automatización web | 19 | Automatización y pruebas por código, Herramientas de navegación para agentes, Navegadores y servidores de ejecución, Directorios y recursos de navegador | `human/categorias/32-navegadores-automatizacion-web.md` |
 <!-- /BL:AGENT_CATEGORIES -->
 
 ## 🔗 Recetas
 
 <!-- BL:RECIPES -->
-- [💬 Bot de WhatsApp con IA](human/playbooks/bot-de-whatsapp-con-ia.md) — `evolution-api`, `n8n`, `n8n-mcp`, `n8n-skills`, `chatwoot`, `novu`
+- [💬 Bot de WhatsApp con IA](human/playbooks/bot-de-whatsapp-con-ia.md) — `evolution-api`, `dify`, `chatwoot`, `novu`
 - [🎬 Pipeline de Reels / video corto](human/playbooks/pipeline-de-reels-video-corto.md) — `whisperx`, `kokoro`, `comfyui`, `real-esrgan`, `remotion`, `ffmpeg`, `moneyprinterturbo`
 - [🔎 Agente de research profundo](human/playbooks/agente-de-research-profundo.md) — `gpt-researcher`, `searxng`, `crawl4ai`, `browser-use`, `markitdown`, `langfuse`
 - [🏠 Workspace privado local soberano](human/playbooks/workspace-privado-local-soberano.md) — `ollama`, `odysseus`, `open-notebook`, `mem0`, `searxng`
-- [🧠 Análisis de repos grandes](human/playbooks/analisis-de-repos-grandes.md) — `repomix`, `codegraph`, `gitnexus`, `graphify`, `deepwiki-open`, `claude-code`
-- [📈 Marketing de agencia](human/playbooks/marketing-de-agencia.md) — `marketingskills`, `agency-agents`, `mautic`, `listmonk`, `posthog`, `open-generative-ai`
+- [🧠 Análisis de repos grandes](human/playbooks/analisis-de-repos-grandes.md) — `repomix`, `codegraph`, `gitnexus`, `graphify`, `claude-code`
+- [📈 Marketing de agencia](human/playbooks/marketing-de-agencia.md) — `marketingskills`, `agency-agents`, `mautic`, `listmonk`, `posthog`
 - [🌐 Web app moderna con IA](human/playbooks/web-app-moderna-con-ia.md) — `ui`, `tailwindcss`, `vercel-ai`, `assistant-ui`, `motion`, `recharts`, `swr`
 - [🔌 Construir una app o servidor MCP](human/playbooks/construir-una-appservidor-mcp.md) — `awesome-mcp-servers`, `fastmcp`, `mcp-typescript-sdk`, `mcp-inspector`, `servers`, `mcp-use`
 - [📊 Documentos → presentaciones](human/playbooks/documentos-presentaciones.md) — `markitdown`, `docling`, `ppt-master`, `slidev`, `marp`

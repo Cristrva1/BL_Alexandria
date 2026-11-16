@@ -10,6 +10,32 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Awesome Big Data, lista curada de frameworks, bases de datos y recursos de big data, mantenida por @oxnr desde 2014. Licencia MIT. Tiene ~15k estrellas y recibe contribuciones activas.
+
+## ¿Qué hace?
+
+Organiza enlaces por categorías: RDBMS, frameworks, programación distribuida, almacenes columnares, key-value, grafos, ingestión, BI, visualización, machine learning y más. Mezcla proyectos vigentes con otros históricos o descontinuados, así que conviene verificar cada uno.
+
+## ¿Cómo lo hace?
+
+Es un README en Markdown y no requiere instalación. Las contribuciones se hacen por pull request.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [awesome-dataviz](awesome-dataviz.md) | Lista complementaria de visualización. (combinación por arquitectura) | Consulta ambas listas. |
+| [DuckDB](duckdb.md) | Motor analítico moderno para empezar en local. (combinación por arquitectura) | Prueba DuckDB antes de montar un clúster. |
+| [hudi](hudi.md) | Formato lakehouse listado en el ecosistema. (combinación por arquitectura) | Evalúa Hudi para ingestión incremental. |
+
+**Notas:** Sin alternativas declaradas. Recurso, no software.
+
+Estado en GitHub: activo · último push 2026-11-13 · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/oxnr/awesome-bigdata/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. No se instala la colección entera ni se hereda la compatibilidad de sus enlaces |
 | Coste | Sin pago a un modelo en la ruta básica. El directorio no usa API; cada proyecto o servicio tiene coste, licencia y requisitos propios |
 | Equipo | Preparación según la ruta elegida. Navegador; problema de datos definido |
-
-No se instala la colección entera ni se hereda la compatibilidad de sus enlaces
-
-## Qué puedes hacer con él
-
-Directorio curado de frameworks, bases de datos y herramientas de big data, organizado por categorías para descubrir el ecosistema de datos a escala.
-
-## Por qué destaca
-
-Usos propuestos: Explorar el ecosistema de datos; Comparar motores antes de montar infraestructura.
-
-## Cómo funciona
 
 No se instala la colección entera ni se hereda la compatibilidad de sus enlaces
 
@@ -84,12 +98,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Navegador; problema de datos definido
 - **Etiquetas:** `data`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [awesome-dataviz](awesome-dataviz.md) | 4.5k | Directorio curado de herramientas, librerías y recursos de visualización de datos recopilados por la comunidad. |
 
 ## Enlaces
 

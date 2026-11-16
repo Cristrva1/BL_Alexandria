@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Fincept Terminal, terminal nativo de escritorio para investigación financiera, de Fincept Corporation. Licencia AGPL-3.0 o posterior, con una edición Enterprise propietaria de pago. Es popular (~34k estrellas, v4.5.2).
+
+## ¿Qué hace?
+
+Reúne datos de mercado, investigación, paneles, carteras, análisis cuantitativo y 37 agentes de IA (traders, economía, geopolítica) con tu propia clave (OpenAI, Anthropic, Gemini, Groq, DeepSeek, OpenRouter, Ollama). Incluye un editor visual de nodos, herramientas MCP y un laboratorio de quant (ML, factores, RL).
+
+## ¿Cómo lo hace?
+
+Es un binario C++20 con interfaz Qt6 y Python 3.11 embebido, sin Electron; se descarga desde las releases. Cada fuente de datos tiene sus propias condiciones, que normalmente limitan su uso al personal.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Proveedor local soportado para los agentes. | Configura Ollama en los ajustes de IA. |
+| [qlib](qlib.md) | Investigación cuantitativa más profunda fuera del terminal. (combinación por arquitectura) | Exporta datos y modela con Qlib. |
+| [ccxt](ccxt.md) | Datos de cripto adicionales. (combinación por arquitectura) | Usa CCXT para fuentes no integradas. |
+
+**Notas:** Sin alternativas declaradas. El README se centra en vender la edición Enterprise. Riesgo financiero: no es asesoramiento de inversión.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v4.5.2 (2026-11-09) · licencia declarada AGPL-3.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Fincept-Corporation/FinceptTerminal/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Verifica los módulos y límites de tu edición; la marca y ciertos derechos comerciales tienen condiciones adicionales |
 | Coste | El coste depende del proveedor o la ruta. Tiene planes, créditos y edición Enterprise; BYOK y Ollama son rutas distintas; el instalador no incluye todos los datos y modelos |
 | Equipo | Preparación según la ruta elegida. Instalador oficial para tu sistema; cuenta o claves según módulo; datos de prueba |
-
-Verifica los módulos y límites de tu edición; la marca y ciertos derechos comerciales tienen condiciones adicionales
-
-## Qué puedes hacer con él
-
-Terminal de análisis financiero que reúne datos, investigación, paneles y herramientas de agentes.
-
-## Por qué destaca
-
-Usos propuestos: Explorar indicadores de varios mercados; Comparar información económica de fuentes distintas.
-
-## Cómo funciona
 
 Verifica los módulos y límites de tu edición; la marca y ciertos derechos comerciales tienen condiciones adicionales
 

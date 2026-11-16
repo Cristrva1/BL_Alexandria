@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 📚 librería/SDK · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Loguru, librería de logging para Python de @Delgan. Licencia MIT. Es madura y muy usada (~24k estrellas, 0.8.0).
+
+## ¿Qué hace?
+
+Sustituye la configuración de handlers, formatters y filtros del logging estándar por un único objeto `logger` listo para usar. Añade rotación, retención y compresión de archivos, formato con llaves, colores y captura de excepciones con trazas descriptivas. Es segura en hilos, procesos y código asíncrono, y puede convivir con el módulo `logging` estándar.
+
+## ¿Cómo lo hace?
+
+Se instala con `pip install loguru` y se importa con `from loguru import logger`. Es Python puro, sin dependencias de servicios. Las trazas descriptivas pueden mostrar valores de variables: desactívalas en producción si hay datos sensibles.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [litellm](litellm.md) | Registrar en local las llamadas de un servicio que usa LiteLLM. (combinación por arquitectura) | Añade sinks de Loguru en tu aplicación. |
+| [langfuse](langfuse.md) | Logs técnicos en Loguru y trazas de LLM en Langfuse. (combinación por arquitectura) | Mantén ambos con un identificador de petición común. |
+| [Pydantic AI](pydantic-ai.md) | Logging sencillo en agentes Python. (combinación por arquitectura) | Configura Loguru al iniciar el agente. |
+
+**Notas:** Sin alternativas declaradas. Ojo con `diagnose=True` en producción.
+
+Estado en GitHub: activo · último push 2026-11-11 · última versión publicada 0.8.0 (2026-11-11) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Delgan/loguru/blob/master/README.md) · [2](https://loguru.readthedocs.io/en/stable/overview.html) · [3](https://loguru.readthedocs.io/en/stable/resources/recipes.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. Es una biblioteca de logging general y no un sistema de observabilidad LLM completo; evita registrar secretos o datos que no necesites |
 | Coste | Sin pago a un modelo en la ruta básica. No usa modelos ni API; almacenamiento y plataforma de logs externa se presupuestan aparte |
 | Equipo | Preparación según la ruta elegida. Python; script de prueba |
-
-Es una biblioteca de logging general y no un sistema de observabilidad LLM completo; evita registrar secretos o datos que no necesites
-
-## Qué puedes hacer con él
-
-Librería de logging para Python centrada en la simplicidad ("logging that doesn't suck"), lista para usar sin configuración previa.
-
-## Por qué destaca
-
-Usos propuestos: Depurar una automatización; Añadir logs legibles a una app.
-
-## Cómo funciona
 
 Es una biblioteca de logging general y no un sistema de observabilidad LLM completo; evita registrar secretos o datos que no necesites
 
@@ -91,12 +105,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; script de prueba
 - **Etiquetas:** `observability` `evaluation` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
 ## Enlaces
 

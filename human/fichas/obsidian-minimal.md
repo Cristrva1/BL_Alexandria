@@ -29,6 +29,7 @@ Se instala desde Ajustes → Apariencia → Temas de la comunidad, y los plugins
 | [Obsidian: distribución y extensiones](obsidian-releases.md) | Se distribuye a través del directorio oficial de temas de la comunidad, alojado en ese repo. | Instálalo desde el navegador de temas de Obsidian. |
 | [kepano-obsidian](kepano-obsidian.md) | Plantilla de vault del mismo autor pensada para este tema. (combinación por arquitectura) | Abre la plantilla y activa Minimal. |
 | [obsidian-clipper](obsidian-clipper.md) | Lectura cómoda de los artículos capturados. (combinación por arquitectura) | Captura con el Web Clipper y lee las notas con Minimal. |
+| [40-questions](40-questions.md) | Combinación recíproca: 40-questions lo enlaza como «Lectura cómoda de la lista en Obsidian con el tema del mismo autor. (combinación por arquitectura)». | Orden indicado desde 40-questions: Instala el tema desde los temas de la comunidad. |
 
 **Notas:** Sin alternativas declaradas.
 
