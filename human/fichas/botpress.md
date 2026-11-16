@@ -26,7 +26,7 @@ Es un monorepo en TypeScript. Se instala la CLI con `npm install -g @botpress/cl
 
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
-| [n8n](n8n.md) | Integración oficial `n8n` en la carpeta de integraciones para conectar el bot con flujos de automatización. | Cuenta en Botpress Cloud y n8n accesible por internet; luego activa la integración en el Hub. |
+| [activepieces](activepieces.md) | Botpress puede llamar a un webhook de Activepieces (o recibir llamadas de su pieza HTTP) para conectar el bot con otros servicios. (combinación por arquitectura) | Cuenta en Botpress y Activepieces accesible por internet; protege el webhook con un secreto. |
 | [Odoo](odoo.md) | Integración oficial con Odoo para consultar o registrar datos del ERP/CRM desde el bot. | Odoo con usuario de API; después configura la integración. |
 | [cal.diy](cal-diy.md) | Existe una integración oficial con Cal.com; cal.diy es su edición comunitaria, así que la compatibilidad con una instancia propia está [DATO NO VERIFICADO]. | Instancia de cal.diy accesible por internet y token de API antes de configurar la integración. |
 

@@ -41,7 +41,6 @@ Si tu producto aún tiene poco tráfico, empieza solo con PostHog o Umami: el re
 ## 🔁 Variantes
 
 - En lugar de [DuckDB](../fichas/duckdb.md): [Polars](../fichas/polars.md)
-- En lugar de [WrenAI](../fichas/wrenai.md): [PandasAI](../fichas/pandas-ai.md)
 - En lugar de [Apache Superset](../fichas/superset.md): [metabase](../fichas/metabase.md), [Redash](../fichas/redash.md)
 - En lugar de [Umami](../fichas/umami.md): [Plausible Analytics](../fichas/plausible.md), [Matomo](../fichas/matomo.md)
 

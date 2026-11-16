@@ -29,6 +29,7 @@ Se instala con `npx skills add google/skills`, eligiendo skills, agentes y alcan
 | [Gemini CLI](gemini-cli.md) | Agente de Google compatible con skills estándar (combinación por arquitectura). | Selecciónalo en el instalador. |
 | [gemini-skills](gemini-skills.md) | Skills de la API de Gemini (la de Vertex se movió aquí). | Instala ambas si trabajas con AI Studio y con Vertex. |
 | [Agent Development Kit (ADK)](adk-python.md) | Construir agentes que se despliegan en Google Cloud (combinación por arquitectura). | Independientes. |
+| [Antigravity CLI](antigravity-cli.md) | El README documenta la instalación de estas skills en Antigravity CLI con `agy plugin install`. | Instala la CLI y añade solo los plugins necesarios. |
 
 Estado en GitHub: activo · último push 2026-11-16 · licencia declarada Apache-2.0 (consultado el 2026-11-15).
 

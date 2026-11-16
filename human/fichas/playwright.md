@@ -10,6 +10,39 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📚 librería/SDK · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Playwright, framework de automatización y pruebas web de Microsoft. Licencia Apache-2.0. Es maduro y estándar en la industria (~100k estrellas, v1.65.1).
+
+## ¿Qué hace?
+
+Controla Chromium, Firefox y WebKit con una sola API para pruebas end-to-end (Playwright Test), scripts de automatización y como herramienta para agentes (CLI y MCP).
+
+## ¿Cómo lo hace?
+
+Se instala con `npm init playwright@latest` (pruebas), `npm i playwright` (librería) o `npm i -g @playwright/cli@latest` (agentes). También tiene bindings para Python, .NET y Java.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Playwright MCP](playwright-mcp.md) | Servidor MCP oficial. | Añade el MCP al agente. |
+| [playwright-cli](playwright-cli.md) | CLI con skills para agentes. | Instala la CLI global. |
+| [Lightpanda](lightpanda.md) | Navegador headless alternativo vía CDP. | Conecta Playwright al CDP de Lightpanda. |
+| [crawlee](crawlee.md) | Crawlee usa Playwright como uno de sus motores de navegador. | Instala crawlee junto con playwright. |
+
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (20). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[ai-website-cloner-template](ai-website-cloner-template.md) · [Camoufox](camoufox.md) · [crawlee-python](crawlee-python.md) · [diagram-design](diagram-design.md) · [Gemini Computer Use (preview)](computer-use-preview.md) · [GEO-SEO Claude](geo-seo-claude.md) · [llm-scraper](llm-scraper.md) · [Locust](locust.md) · [mitmproxy](mitmproxy.md) · [OpenManus](openmanus.md) · [Scrapegraph-ai](scrapegraph-ai.md) · [scrapy](scrapy.md) · [screenshot-to-code](screenshot-to-code.md) · [Skyvern](skyvern.md) · [Slidev](slidev.md) · [Steel Browser](steel-browser.md) · [Storybook](storybook.md) · [Trigger.dev](trigger-dev.md) · [UI SDK (Vercel)](ui-sdk.md) · [ZAP (Zed Attack Proxy)](zaproxy.md)
+
+**Notas:** Alternativas (elige una): puppeteer, selenium.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.65.1 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/microsoft/playwright/blob/main/README.md) · [2](https://playwright.dev/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +56,6 @@
 | Modelos locales | La función básica no necesita un modelo. El MCP es el proyecto compañero playwright-mcp y el CLI otra superficie; instala la ruta adecuada en lugar de confundir biblioteca, skill y servidor |
 | Coste | Sin pago a un modelo en la ruta básica. Los tests y control básico no necesitan API de IA; agente y servicios de browser Cloud son independientes |
 | Equipo | Preparación según la ruta elegida. Node; navegadores descargados; aplicación de prueba |
-
-El MCP es el proyecto compañero playwright-mcp y el CLI otra superficie; instala la ruta adecuada en lugar de confundir biblioteca, skill y servidor
-
-## Qué puedes hacer con él
-
-Framework de Microsoft para automatización y testing de navegadores Chromium, Firefox y WebKit, con una sola API multiplataforma y soporte multi-lenguaje.
-
-## Por qué destaca
-
-Usos propuestos: Probar un formulario; Crear regresiones de una web.
-
-## Cómo funciona
 
 El MCP es el proyecto compañero playwright-mcp y el CLI otra superficie; instala la ruta adecuada en lugar de confundir biblioteca, skill y servidor
 
@@ -94,19 +115,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Etiquetas:** `automation` `browser` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
 
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [browser-use](browser-use.md) | 121k | Librería Python para que los LLM usen un navegador real y actúen en páginas sin selectores fijos. |
-| [crawlee](crawlee.md) | 26.4k | Framework moderno de crawling para Node.js con antibloqueo integrado, que unifica scraping de HTTP y de navegador bajo una misma API con colas y reintentos. |
-
 ## Alternativas (elige una)
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
 | [Puppeteer](puppeteer.md) | 95.8k | Librería de Google para controlar Chrome y Firefox desde Node.js. |
 | [Selenium](selenium.md) | 34.6k | Framework veterano de automatización de navegadores con soporte para casi todos los lenguajes. |
+| [Cypress](cypress.md) | 51k | Framework de pruebas end-to-end y de componentes para todo lo que corre en un navegador, con ejecución interactiva, recarga en vivo y depuración paso a paso. |
+| [WebdriverIO](webdriverio.md) | 9.9k | Framework de automatización de navegadores y apps móviles para Node.js basado en WebDriver, WebDriver BiDi y Appium, con servidor MCP para asistentes de IA. |
 
 ## Enlaces
 

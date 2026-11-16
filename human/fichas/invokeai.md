@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🔴 pesado
 
+## ¿Qué es?
+
+Invoke (InvokeAI), suite creativa de IA para medios visuales, de Invoke AI. Licencia Apache-2.0. Es madura (~29k estrellas, v6.14.4).
+
+## ¿Qué hace?
+
+Ofrece una interfaz web profesional con lienzo unificado para generar, retocar (inpainting/outpainting), usar capas y regiones de control, y crear flujos con nodos. Gestiona modelos, LoRA y embeddings. Está pensado para uso profesional con licencia apta para empresas.
+
+## ¿Cómo lo hace?
+
+Se instala con el Launcher oficial en hardware compatible (GPU NVIDIA, AMD o Apple Silicon) o con Docker. Está escrito en Python (PyTorch, diffusers) con frontend React.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [diffusers](diffusers.md) | Ejecutar o entrenar fuera de la UI los mismos modelos. (combinación por arquitectura) | Usa diffusers para scripts y Invoke para trabajo visual. |
+| [FLUX.2](flux2.md) | Usar modelos FLUX en el lienzo de Invoke. (combinación por arquitectura) | Instala el modelo desde el gestor de modelos si está soportado. |
+| [Real-ESRGAN](real-esrgan.md) | Ampliar resultados finales. (combinación por arquitectura) | Exporta y amplía con Real-ESRGAN. |
+
+**Notas:** Alternativas (elige una): krita-ai-diffusion.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v6.14.4 (2026-11-03) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/invoke-ai/InvokeAI/blob/main/README.md) · [2](https://invoke.ai/start-here/installation/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. La interfaz y sus modelos se preparan por separado; comienza con la instalación recomendada y un único modelo |
 | Coste | El coste depende del proveedor o la ruta. La edición local no necesita API de modelo; productos comerciales y modelos tienen condiciones propias |
 | Equipo | Preparación según la ruta elegida. Launcher o instalación oficial; modelo admitido; hardware según checkpoint |
-
-La interfaz y sus modelos se preparan por separado; comienza con la instalación recomendada y un único modelo
-
-## Qué puedes hacer con él
-
-Suite profesional y unificada para Stable Diffusion que combina una UI web pulida con canvas por capas, inpainting, gestión de modelos y workflows encadenables.
-
-## Por qué destaca
-
-Usos propuestos: Retocar una ilustración por regiones; Organizar variantes de una producción visual.
-
-## Cómo funciona
 
 La interfaz y sus modelos se preparan por separado; comienza con la instalación recomendada y un único modelo
 
@@ -86,12 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Launcher o instalación oficial; modelo admitido; hardware según checkpoint
 - **Etiquetas:** `image` `typescript`
 - **Modo de instalación sugerido:** ⏳ **Diferir** — pesado: solo si llega a finalista
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [diffusers](diffusers.md) | 34.9k | Librería de Hugging Face para ejecutar y entrenar modelos de difusión de imagen, video y audio desde código. |
 
 ## Alternativas (elige una)
 

@@ -29,6 +29,8 @@ Skill con datos y plantillas, incluido un scaffold Vite + Three.js con gestión 
 | [three.js](three-js.md) | Base del scaffold incluido. | Usa la plantilla o tu proyecto Three.js existente. |
 | [Claude Code](claude-code.md) | Plugin documentado y validado. | `/plugin marketplace add viettranx/3dviz-pro-max`. |
 | [Codex CLI](codex.md) | Primer objetivo de evaluación. | Copia la carpeta de la skill a la ubicación que reconozca tu versión de Codex. |
+| [blender](blender.md) | Combinación recíproca: blender lo enlaza como «Skill de escenas 3D con Blender». | Orden indicado desde blender: Añade la skill al agente. |
+| [GlobalBuildingAtlas](globalbuildingatlas.md) | Combinación recíproca: GlobalBuildingAtlas lo enlaza como «Escenas 3D asistidas por agente. (combinación por arquitectura)». | Orden indicado desde GlobalBuildingAtlas: Usa los datos como entrada. |
 
 **Notas:** Alternativa (elige una): threejs-skills. El video de cabecera es material previo del autor, no una demo de la skill (lo aclara el README).
 

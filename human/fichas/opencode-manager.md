@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+OpenCode Manager, centro de mando web autoalojado para OpenCode, de @chriswritescode-dev. Licencia MIT. Tiene ~1k estrellas y está activo.
+
+## ¿Qué hace?
+
+Reúne en una app web, usable desde escritorio y móvil, las sesiones de OpenCode, git, una terminal y tareas programadas. Incluye la CLI `ocm`.
+
+## ¿Cómo lo hace?
+
+Requiere Docker con Compose v2. Se instala con `curl -fsSL https://opencodemanager.app/install | sh`, que lo arranca en http://localhost:5003 y pide crear una cuenta de administrador. Es un workspace pnpm: backend con Bun y Hono, frontend con React y Vite.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OpenCode](opencode.md) | Agente que gestiona. | Instala OpenCode y luego el gestor. |
+| [Ollama](ollama.md) | Modelos locales para las sesiones de OpenCode. (combinación por arquitectura) | Configura Ollama como proveedor en OpenCode. |
+| [coolify](coolify.md) | Desplegar el contenedor en un servidor propio. (combinación por arquitectura) | Despliega con Compose desde Coolify. |
+
+**Notas:** Alternativa (elige una): t3code.
+
+Estado en GitHub: activo · último push 2026-11-13 · última versión publicada v1.1.0 (2026-10-26) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/chriswritescode-dev/opencode-manager/blob/main/README.md) · [2](https://opencodemanager.app/docs/getting-started/installation)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Este panel es para OpenCode; no se deduce compatibilidad directa con Claude Code o Codex por usar tecnologías similares |
 | Coste | El coste depende del proveedor o la ruta. Alojamiento y modelo de OpenCode se pagan o ejecutan según configuración; el panel no incorpora créditos |
 | Equipo | Preparación según la ruta elegida. Docker Compose v2 o entorno de desarrollo; OpenCode; proveedor configurado |
-
-Este panel es para OpenCode; no se deduce compatibilidad directa con Claude Code o Codex por usar tecnologías similares
-
-## Qué puedes hacer con él
-
-Interfaz autoalojada para gestionar sesiones de OpenCode, repositorios, terminal y tareas desde web o móvil.
-
-## Por qué destaca
-
-Usos propuestos: Gestionar sesiones desde el navegador; Consultar un proyecto desde el móvil.
-
-## Cómo funciona
 
 Este panel es para OpenCode; no se deduce compatibilidad directa con Claude Code o Codex por usar tecnologías similares
 
@@ -86,6 +100,12 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Docker Compose v2 o entorno de desarrollo; OpenCode; proveedor configurado
 - **Etiquetas:** `coding` `agent` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [T3 Code](t3code.md) | 60.6k | Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina. |
 
 ## Enlaces
 

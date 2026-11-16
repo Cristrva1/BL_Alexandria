@@ -12,15 +12,15 @@
 
 ## ¿Qué es?
 
-Gateway de IA y SDK de Python de código abierto que unifica el acceso a más de 100 proveedores de LLM usando el formato de OpenAI.
+LiteLLM, gateway de IA y SDK de Python de BerriAI que unifica el acceso a más de 100 proveedores de LLM con el formato de OpenAI. El código es MIT, salvo `litellm/enterprise/`, que tiene licencia comercial (por eso GitHub muestra NOASSERTION). Es muy popular (~63k estrellas, v1.10x).
 
 ## ¿Qué hace?
 
-Permite llamar a OpenAI, Anthropic, Gemini, Bedrock, Azure, Ollama y otros con una sola interfaz. Como proxy centralizado añade claves virtuales, control de gasto, guardrails, balanceo de carga, enrutamiento automático por complejidad, panel de administración y una pasarela MCP.
+Permite llamar a OpenAI, Anthropic, Gemini, Bedrock, Azure, Ollama y otros con una sola interfaz. Como proxy centralizado añade claves virtuales, control de gasto, guardrails, balanceo de carga, enrutamiento automático por complejidad, panel de administración y una pasarela MCP. Funciones como SSO o ciertos guardrails requieren la licencia Enterprise.
 
 ## ¿Cómo lo hace?
 
-En el SDK, `completion()` traduce cada llamada al proveedor indicado en el prefijo del modelo (`openai/...`, `anthropic/...`) y `Router` reparte entre modelos. El proxy (`litellm[proxy]`, puerto 4000) expone endpoints compatibles con OpenAI como `/chat/completions`, `/embeddings`, `/responses` y `/messages`, de modo que un cliente de OpenAI solo cambia `base_url`. Los paquetes `litellm` y `litellm-core` no deben instalarse en el mismo entorno.
+En el SDK, `completion()` traduce cada llamada al proveedor indicado en el prefijo del modelo (`openai/...`, `anthropic/...`) y `Router` reparte entre modelos. El proxy (`litellm[proxy]`, puerto 4000) expone endpoints compatibles con OpenAI como `/chat/completions`, `/embeddings`, `/responses` y `/messages`, de modo que un cliente de OpenAI solo cambia `base_url`. Los paquetes `litellm` y `litellm-core` no deben instalarse en el mismo entorno. Fija versiones: el 24 de marzo de 2026 se publicaron en PyPI las versiones maliciosas 1.82.7 y 1.82.8, con un ladrón de credenciales. La imagen Docker oficial no se vio afectada.
 
 ## ¿Con qué otros repos se combina?
 
@@ -29,8 +29,19 @@ En el SDK, `completion()` traduce cada llamada al proveedor indicado en el prefi
 | [Ollama](ollama.md) | Proveedor local soportado (`ollama`, `ollama_chat`): mezcla modelos locales y de nube con la misma API. | Ollama primero; luego registra sus modelos en LiteLLM. |
 | [Open WebUI](open-webui.md) | Interfaz de chat que consume el proxy como si fuera OpenAI. | LiteLLM primero; después añade su URL como conexión en Open WebUI. |
 | [langfuse](langfuse.md) | Integración de observabilidad documentada por LiteLLM: trazas, costes y latencia de cada llamada. | Langfuse primero (para tener sus claves); luego actívalo como callback en LiteLLM. |
+| [Claude Code](claude-code.md) | El proxy expone `/messages` (formato Anthropic), así que Claude Code puede apuntar a LiteLLM para usar otros modelos o centralizar gasto. (combinación por arquitectura) | LiteLLM proxy primero; luego configura la URL base en Claude Code. |
 
-<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/BerriAI/litellm/blob/main/README.md) · [2](https://docs.litellm.ai/docs/providers/ollama) · [3](https://docs.litellm.ai/docs/observability/langfuse_integration)</sub>
+## Usado por
+
+Repos que lo citan en sus combinaciones sin que figuren arriba (48). La lista se genera automáticamente; el motivo está en la ficha de cada uno.
+
+[activepieces](activepieces.md) · [Agent Development Kit (ADK)](adk-python.md) · [AgentScope](agentscope.md) · [Aider](aider.md) · [AnythingLLM](anything-llm.md) · [Baileys](baileys.md) · [chatbox](chatbox.md) · [ChatDev](chatdev.md) · [Cherry Studio](cherry-studio.md) · [crawl4ai](crawl4ai.md) · [daily_stock_analysis](daily-stock-analysis.md) · [DeepSeek Harness (DSH)](deepseek-harness.md) · [DeepSeek-V3](deepseek-v3.md) · [exo](exo.md) · [FreeToken](freetoken.md) · [garak](garak.md) · [graphrag](graphrag.md) · [headroom](headroom.md) · [Helicone](helicone.md) · [huginn](huginn.md) · [Khoj](khoj.md) · [LibreChat](librechat.md) · [llama.cpp](llama-cpp.md) · [llm-council](llm-council.md) · [LobeHub](lobehub.md) · [loguru](loguru.md) · [Mercury Agent](mercury-agent.md) · [mini-swe-agent](mini-swe-agent.md) · [MiroFish](mirofish.md) · [MLC LLM](mlc-llm.md) · [MLX LM](mlx-lm.md) · [NextChat](nextchat.md) · [onyx](onyx.md) · [OpenAI Agents SDK](openai-agents-python.md) · [openai-python](openai-python.md) · [OpenCode](opencode.md) · [openevolve](openevolve.md) · [OpenManus](openmanus.md) · [Opik](opik.md) · [PDFMathTranslate](pdfmathtranslate.md) · [Presenton](presenton.md) · [promptfoo](promptfoo.md) · [SGLang](sglang.md) · [smolagents](smolagents.md) · [STORM](storm.md) · [TensorRT-LLM](tensorrt-llm.md) · [txtai](txtai.md) · [vLLM](vllm.md)
+
+**Notas:** Alternativas (elige una): omniroute, claude-code-router, backdoor. Incidente de cadena de suministro de marzo de 2026 (PYSEC-2026-2): si instalaste 1.82.7 o 1.82.8, rota todos los secretos y busca `litellm_init.pth`.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.109.1 (2026-11-12) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/BerriAI/litellm/blob/main/README.md) · [2](https://docs.litellm.ai/docs/providers/ollama) · [3](https://docs.litellm.ai/docs/observability/langfuse_integration) · [4](https://docs.litellm.ai/blog/security-update-march-2026) · [5](https://blog.pypi.org/posts/2026-04-02-incident-report-litellm-telnyx-supply-chain-attack/)</sub>
 
 ## Acceso, coste y equipo
 
@@ -103,6 +114,14 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python y uv; proveedor o endpoint local; presupuesto de prueba
 - **Etiquetas:** `inference` `llmops` `python` `docker`
 - **Modo de instalación sugerido:** 📦 **Dependencia del proyecto** — instálalo dentro de cada proyecto que lo use
+
+## Alternativas (elige una)
+
+| Repo | ⭐ | Qué hace |
+|---|---:|---|
+| [OmniRoute](omniroute.md) | 87.5k | Pasarela local para conectar proveedores de IA, enrutar solicitudes y gestionar cuotas y alternativas de acceso. |
+| [claude-code-router](claude-code-router.md) | 38.1k | Pasarela para configurar proveedores y modelos y enrutar el trabajo de agentes mediante un punto de control local. |
+| [backdoor](backdoor.md) | 302 | Proxy de terceros que adapta proveedores de modelos para usarlos con el flujo de herramientas de Claude Code. |
 
 ## Enlaces
 

@@ -29,8 +29,9 @@ Backend en Rust con servidores de API sin estado y workers que toman trabajos de
 | [DuckDB](duckdb.md) | Integración nativa: los scripts DuckDB de Windmill consultan CSV, Parquet y JSON en S3 o Azure Blob, tablas de datos y bases externas en SQL dentro de los workers. | No requiere instalación aparte; configura el recurso de almacenamiento S3 del espacio de trabajo. |
 | [Claude Code](claude-code.md) | El servidor MCP de Windmill deja que un agente ejecute scripts, gestione recursos y vigile trabajos; `wmill init` genera un AGENTS.md y archivos de skills para trabajar en local. | Windmill en marcha y CLI `wmill` sincronizada; después registra el MCP en el agente. |
 | [Polars](polars.md) | Scripts Python de Windmill pueden usar Polars para transformar datos tabulares grandes en los workers, con dependencias resueltas por uv (combinación por arquitectura). | Declara polars como dependencia del script; vigila la memoria del worker con archivos grandes. |
+| [coolify](coolify.md) | Combinación recíproca: coolify lo enlaza como «Plantilla de servicio oficial de Coolify para Windmill». | Orden indicado desde coolify: Coolify primero; luego despliega la plantilla `windmill`. |
 
-**Notas:** Alternativas (elige una): n8n, kestra, trigger-dev. La AGPLv3 obliga a publicar cambios si ofreces una versión modificada como servicio.
+**Notas:** Alternativas (elige una): kestra, trigger-dev. La AGPLv3 obliga a publicar cambios si ofreces una versión modificada como servicio.
 
 Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v1.875.0 (2026-11-14) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
 
@@ -115,7 +116,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 
 | Repo | ⭐ | Qué hace |
 |---|---:|---|
-| [n8n](n8n.md) | 211k | Plataforma de automatización de workflows que integra APIs, servicios y procesos de negocio con IA mediante un editor visual basado en nodos. |
 | [Kestra](kestra.md) | 30.2k | Orquestador declarativo de workflows en YAML para datos, infraestructura y procesos de negocio. |
 | [Trigger.dev](trigger-dev.md) | 16.8k | Plataforma para tareas en segundo plano y agentes de IA duraderos escritos en TypeScript. |
 

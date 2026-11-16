@@ -28,7 +28,7 @@ El repo contiene la especificación, el sitio jsoncanvas.org y ejemplos. Para us
 |---|---|---|
 | [obsidian-skills](obsidian-skills.md) | La skill oficial `json-canvas` enseña a los agentes a crear y editar archivos `.canvas` válidos. | Instala obsidian-skills en el agente y pídele lienzos. |
 | [Claude Code](claude-code.md) | Generar mapas, diagramas o tableros como `.canvas` desde un agente. (combinación por arquitectura) | Da al agente la especificación o la skill y abre el resultado en Obsidian. |
-| [Excalidraw](excalidraw.md) | Otro formato de lienzo abierto en JSON; no hay conversor oficial entre ambos. (combinación por arquitectura) | Elige el formato según la herramienta donde vayas a editar. |
+| [obsidian-help](obsidian-help.md) | La ayuda oficial de Obsidian documenta Canvas, la implementación de referencia del formato `.canvas` (página `Plugins/Canvas`). | Lee la especificación 1.0 y contrasta el comportamiento en la página de Canvas de la ayuda. |
 
 **Notas:** Sin alternativas declaradas.
 

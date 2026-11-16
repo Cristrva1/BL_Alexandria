@@ -31,7 +31,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Carga un programa propio sencillo y explora sus funciones y estados simbólicos
 **Qué comprobar:** Puedes relacionar una ruta analizada con la lógica del ejemplo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ghidra`, `frida`, `claude-code`
+**Combina con:** `ghidra`, `frida`, `claude-code`, `ghidramcp`, `rizin`
 
 ## `apktool`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,java
@@ -91,6 +91,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Elige una herramienta y contrasta su README, licencia y configuración antes de aceptar la etiqueta del directorio
 **Qué comprobar:** Puedes distinguir la evaluación del recopilador de la evidencia del autor
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ghidramcp`, `rea`, `jadx`
 
 ## `awesome-reverse-engineering`
 role=directory · exec=local · setup=easy · mcp=False · prov=— · tags=referencias,reference,python
@@ -120,6 +121,7 @@ _Una referencia no se instala como un servicio único._
 **Primera prueba propuesta:** Compara dos herramientas de análisis de tu formato por licencia y modo estático o dinámico
 **Qué comprobar:** Tienes candidatos con documentación y requisitos identificados
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `rea`, `ghidra`, `frida`
 
 ## `bla`
 role=app · exec=local · setup=medium · mcp=True · prov=— · tags=defensa,app,typescript
@@ -149,6 +151,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Inspecciona una protección en una copia pequeña y compara comportamiento y diferencias antes de adoptarla
 **Qué comprobar:** Puedes identificar qué transforma y qué pruebas conservarían la función original
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `rea`, `claude-code`, `frida`
+
+## `bloodhound`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=pruebas,go,security,graph
+
+**Qué es:** Aplicación de análisis de rutas de ataque basada en grafos para Active Directory, Entra ID y otros sistemas de identidad (edición comunitaria).
+**Stack:** Go, go.mod, package.json, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/SpecterOps/BloodHound
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/SpecterOps/BloodHound/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: identificar rutas de escalada hacia administrador de dominio en tu propio AD; priorizar qué permisos excesivos corregir primero
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Sigue la guía rápida de BloodHound CE con Docker Compose en un laboratorio y carga los datos de ejemplo o de un dominio de pruebas.
+**Qué comprobar:** El grafo muestra rutas de ataque entre usuarios, grupos y equipos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `hashcat`, `john`, `metasploit`
 
 ## `craft-anything`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=local · tags=agentes,app,rust
@@ -181,6 +214,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta doctor y prueba una consulta de análisis sobre una app pequeña propia antes de pedir reconstrucción
 **Qué comprobar:** Puedes identificar motores disponibles, proveedor y capacidades verificadas
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `ghidra`, `rea`
+
+## `crowdsec`
+role=platform · exec=local · setup=medium · mcp=False · prov=— · tags=security,go,server,self-hosted
+
+**Qué es:** IDS/IPS, WAF y detección de bots abiertos con lista de bloqueo colaborativa de IP maliciosas, para Linux, Windows, Docker y Kubernetes.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/crowdsecurity/crowdsec
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/crowdsecurity/crowdsec/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: bloquear ataques de fuerza bruta a SSH o paneles web de tu servidor; proteger un proxy inverso con WAF y lista comunitaria de IP maliciosas
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Instala CrowdSec en un servidor propio, añade la colección de SSH y un bouncer de cortafuegos, y consulta `cscli metrics`.
+**Qué comprobar:** CrowdSec muestra los registros analizados y las decisiones de bloqueo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `grafana`, `wazuh`, `coolify`, `traefik`
 
 ## `cybersecurity-skills`
 role=skill · exec=hybrid · setup=easy · mcp=False · prov=— · tags=cybersecurity,seguridad,skills,claude-code,codex,comunidad
@@ -211,6 +275,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Elige una skill de revisión defensiva y comprueba sus requisitos antes de usarla en un proyecto pequeño
 **Qué comprobar:** Puedes identificar entradas, herramientas, evidencias y límites del procedimiento
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `skillspector`, `promptfoo`
 
 ## `defending-code-reference-harness`
 role=skill · exec=cloud · setup=medium · mcp=False · prov=anthropic · tags=security,skills,coding-agent
@@ -242,7 +307,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre el repositorio en Claude Code y usa quickstart sobre el canary incluido
 **Qué comprobar:** Puedes revisar un hallazgo contra el objetivo y su evidencia de práctica
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `claude-code`, `semgrep`
+**Combina con:** `claude-code`, `semgrep`, `strix`
 
 ## `dnspy`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=depuracion,app,c
@@ -274,6 +339,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ilspy`, `x64dbg`, `imhex`
 
+## `ffuf`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pruebas,go,security,cli
+
+**Qué es:** Fuzzer web rápido en Go para descubrir contenido, hosts virtuales y parámetros, con filtros, modo interactivo y proxy.
+**Stack:** Go, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/ffuf/ffuf
+
+**Instalación** [+]:
+
+```
+brew install ffuf
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: descubrir rutas o archivos olvidados en tu aplicación web; probar parámetros GET y POST en una auditoría autorizada
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala con `brew install ffuf` o `go install` y lanza un descubrimiento de directorios contra un servidor de laboratorio.
+**Qué comprobar:** ffuf lista las rutas que responden con códigos de interés.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `subfinder`, `mitmproxy`, `nuclei`, `sqlmap`
+
 ## `frida`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,meson
 
@@ -303,6 +398,36 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El evento coincide con una llamada que puedes reproducir
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `radare2`, `mitmproxy`, `jadx`
+
+## `garak`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=security,llm,python,evaluation
+
+**Qué es:** Escáner de vulnerabilidades de LLM de NVIDIA: prueba jailbreaks, inyección de prompts, fugas de datos, alucinaciones y toxicidad con sondas automáticas.
+**Stack:** Python, pyproject.toml, requirements.txt
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/NVIDIA/garak
+
+**Instalación** [+]:
+
+```
+python -m pip install -U garak
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar un chatbot propio frente a inyección de prompts y jailbreaks antes de publicarlo; comparar la robustez de varios modelos locales con las mismas sondas
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala con `python -m pip install -U garak` y ejecuta una sonda sencilla contra un modelo pequeño de Hugging Face o local.
+**Qué comprobar:** Obtienes un informe con el porcentaje de fallos por sonda y un registro JSONL.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `litellm`, `promptfoo`
 
 ## `ghidra`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,java
@@ -334,6 +459,37 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ghidramcp`, `jadx`, `imhex`, `x64dbg`
 **Alternativas (elige una):** `radare2`
+
+## `hashcat`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=pruebas,c,security,cli
+
+**Qué es:** Utilidad de recuperación de contraseñas más rápida, acelerada por GPU, con más de 630 modos de hash y 10 modos de ataque.
+**Stack:** C
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/hashcat/hashcat
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/hashcat/hashcat/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar la fortaleza de las contraseñas de tu organización a partir de hashes autorizados; recuperar la contraseña de un archivo propio olvidado
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Descarga la release oficial y ejecuta el benchmark (`hashcat -b`) en tu equipo.
+**Qué comprobar:** Obtienes la velocidad de cálculo por tipo de hash en tu GPU o CPU.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `metasploit`, `bloodhound`, `claude-code`
+**Alternativas (elige una):** `john`
 
 ## `ilspy`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=reversing,app,c
@@ -423,7 +579,38 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Abre una app Android de prueba y navega por una clase y sus recursos
 **Qué comprobar:** Puedes identificar métodos y líneas que no se reconstruyen correctamente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `frida`, `apktool`, `ghidra`
+**Combina con:** `frida`, `apktool`, `ghidra`, `rea`, `awesome-ai-reverse-engineering`
+
+## `john`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=pruebas,c,security,cli
+
+**Qué es:** Crackeador de contraseñas offline de Openwall en su versión comunitaria jumbo: cientos de tipos de hash y cifrado, CPU, GPU y FPGA.
+**Stack:** C
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/openwall/john
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/openwall/john/blob/bleeding-jumbo/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: auditar contraseñas débiles a partir de hashes autorizados; extraer el hash de un archivo cifrado propio para recuperarlo
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Compila John desde `src/` según doc/INSTALL o usa los paquetes de john-packages y ejecuta `john --test`.
+**Qué comprobar:** John muestra la velocidad de los formatos soportados en tu equipo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `metasploit`, `wireshark`, `bloodhound`
+**Alternativas (elige una):** `hashcat`
 
 ## `k6`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=pruebas,app,go
@@ -453,6 +640,99 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Ejecuta una prueba local con un usuario y una petición antes de aumentar carga
 **Qué comprobar:** Puedes revisar tasa, errores y latencia de esa prueba limitada
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `grafana`, `mitmproxy`, `claude-code`
+**Alternativas (elige una):** `locust`
+
+## `locust`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pruebas,python,app
+
+**Qué es:** Herramienta de pruebas de carga y rendimiento donde los escenarios de usuario se escriben en Python normal, con interfaz web en tiempo real.
+**Stack:** Python, Dockerfile, package.json, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/locustio/locust
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/locustio/locust/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: medir cuántos usuarios concurrentes aguanta tu API; reproducir un flujo de usuario realista con login y varias peticiones
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala Locust con pip, escribe un `locustfile.py` con una tarea contra tu servicio local y abre la interfaz web.
+**Qué comprobar:** Ves en tiempo real peticiones por segundo, tiempos de respuesta y errores.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `grafana`, `playwright`, `claude-code`
+**Alternativas (elige una):** `k6`
+
+## `lynis`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,shell,cli
+
+**Qué es:** Herramienta de auditoría de seguridad y endurecimiento para Linux, macOS y otros Unix, sin agente, que sugiere mejoras concretas.
+**Stack:** Shell
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/CISOfy/lynis
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/CISOfy/lynis/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: revisar el endurecimiento de un servidor Linux recién instalado; preparar una auditoría de cumplimiento (ISO 27001, PCI DSS, HIPAA)
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Clona el repositorio y ejecuta `./lynis audit system` en una máquina propia.
+**Qué comprobar:** Obtienes advertencias, sugerencias y un índice de endurecimiento.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `wazuh`, `trivy`, `claude-code`
+
+## `metasploit`
+role=library · exec=local · setup=medium · mcp=False · prov=— · tags=pruebas,ruby,security,cli
+
+**Qué es:** Framework de referencia para pruebas de penetración: módulos de exploits, cargas útiles, escáneres y post-explotación con consola interactiva.
+**Stack:** Ruby, Dockerfile, Gemfile, docker-compose.yml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/rapid7/metasploit-framework
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/rapid7/metasploit-framework/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: validar en un laboratorio si una vulnerabilidad conocida es explotable; practicar post-explotación y escalada en máquinas vulnerables de entrenamiento
+**Evita si:** buscas una aplicación lista y no quieres preparar un proyecto de código
+**Primera prueba propuesta:** Instala Metasploit con los instaladores oficiales en una VM de laboratorio y arranca `msfconsole` para buscar un módulo auxiliar de escaneo.
+**Qué comprobar:** La consola muestra los módulos disponibles y sus opciones.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `nmap`, `hashcat`, `john`, `bloodhound`
 
 ## `mitmproxy`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=pruebas,app,python
@@ -482,7 +762,67 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Inspecciona una petición de tu app de laboratorio y revisa cabeceras y respuesta
 **Qué comprobar:** Puedes reconocer origen, destino y contenido capturado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `frida`, `playwright`, `k6`
+**Combina con:** `frida`, `playwright`, `k6`, `apktool`, `selenium`, `shannon`
+
+## `nmap`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pruebas,c,security,cli
+
+**Qué es:** El escáner de red de referencia: descubre hosts, puertos, servicios y sistemas operativos, con scripts NSE para detección avanzada.
+**Stack:** C
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/nmap/nmap
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/nmap/nmap/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: inventariar los equipos y puertos abiertos de tu red doméstica; comprobar qué servicios expone un servidor propio
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala Nmap desde nmap.org o tu gestor de paquetes y escanea tu propio equipo con `nmap localhost`.
+**Qué comprobar:** Obtienes la lista de puertos abiertos y los servicios detectados.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `metasploit`, `nuclei`, `wireshark`
+
+## `nuclei`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pruebas,go,security,cli
+
+**Qué es:** Escáner de vulnerabilidades rápido basado en plantillas YAML de la comunidad para aplicaciones, APIs, redes, DNS y configuraciones cloud.
+**Stack:** Go, Dockerfile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/projectdiscovery/nuclei
+
+**Instalación** [+]:
+
+```
+go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: revisar tus propios servicios expuestos frente a CVE recientes; añadir pruebas de regresión de seguridad a un pipeline de CI
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala con `go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest` y escanea un objetivo de laboratorio propio con las plantillas por defecto.
+**Qué comprobar:** Nuclei lista los hallazgos con su severidad y la plantilla que los detectó.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `subfinder`, `katana`, `nmap`, `ffuf`, `zaproxy`
 
 ## `radare2`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,c
@@ -573,6 +913,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Analiza estáticamente un pequeño proyecto JavaScript propio y revisa el informe y sus rutas de archivos
 **Qué comprobar:** Puedes contrastar cada elemento con el código del proyecto
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `ghidra`, `jadx`, `codex`, `awesome-ai-reverse-engineering`, `awesome-reverse-engineering`
 
 ## `rizin`
 role=app · exec=local · setup=medium · mcp=False · prov=— · tags=reversing,app,c
@@ -634,7 +975,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Solicita una revisión de una app pequeña propia y separa candidatos de hallazgos validados
 **Qué comprobar:** Cada hallazgo tiene ubicación, evidencia, impacto y veredicto revisable
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `codex`
+**Combina con:** `claude-code`, `codex`, `semgrep`
 
 ## `semgrep`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,code
@@ -664,8 +1005,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta una regla sencilla sobre un archivo ficticio con un patrón conocido
 **Qué comprobar:** El hallazgo señala la línea y puedes comprobarlo manualmente
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `defending-code-reference-harness`
-**Alternativas (elige una):** `ast-grep`
+**Combina con:** `claude-code`, `security-audit-skill`, `strix`, `defending-code-reference-harness`, `raddebugger`, `shannon`
+**Alternativas (elige una):** `ast-grep`, `sonarqube`
 
 ## `shannon`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=local · tags=agentes,agent,typescript
@@ -695,6 +1036,8 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Configura primero un objetivo desechable propio y revisa alcance, credenciales y límites antes de iniciar un análisis
 **Qué comprobar:** Puedes identificar exactamente qué se analizaría y dónde se guardarían hallazgos y costes
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `semgrep`, `mitmproxy`
+**Alternativas (elige una):** `strix`
 
 ## `skillspector`
 role=app · exec=cloud · setup=easy · mcp=True · prov=— · tags=skills,coding-agent,python
@@ -733,7 +1076,37 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Escanea una carpeta de skill de prueba con la opción no-llm
 **Qué comprobar:** Se genera un informe que enumera comprobaciones, hallazgos y cobertura
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `antigravity-awesome-skills`
+**Combina con:** `claude-code`, `antigravity-awesome-skills`, `cybersecurity-skills`
+
+## `sqlmap`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pruebas,python,security,cli
+
+**Qué es:** Herramienta de pruebas de penetración que detecta y explota automáticamente inyecciones SQL y permite tomar el control de servidores de bases de datos.
+**Stack:** Python
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/sqlmapproject/sqlmap
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/sqlmapproject/sqlmap/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: comprobar si un formulario de tu aplicación es vulnerable a inyección SQL; reproducir un hallazgo de inyección en una auditoría autorizada
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Clona el repositorio y ejecuta `python sqlmap.py -h` para ver las opciones; después pruébalo contra una aplicación vulnerable de laboratorio.
+**Qué comprobar:** sqlmap identifica el parámetro inyectable y el motor de base de datos.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `mitmproxy`, `zaproxy`, `ffuf`
 
 ## `strix`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=local · tags=agentes,agent,python
@@ -763,6 +1136,128 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Delimita una app propia desechable y revisa proveedor y modo antes de una evaluación pequeña
 **Qué comprobar:** Los hallazgos quedan asociados al alcance y evidencias que puedes revisar
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `github-mcp-server`, `semgrep`, `defending-code-reference-harness`
+**Alternativas (elige una):** `shannon`
+
+## `subfinder`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pruebas,go,security,osint
+
+**Qué es:** Herramienta rápida de enumeración pasiva de subdominios a partir de fuentes públicas en línea, diseñada para encadenarse con otras.
+**Stack:** Go, Dockerfile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/projectdiscovery/subfinder
+
+**Instalación** [+]:
+
+```
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: inventariar los subdominios públicos de tu propia organización; preparar el alcance de un programa de bug bounty
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala con `go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest` y enumera un dominio propio.
+**Qué comprobar:** Obtienes la lista de subdominios encontrados en fuentes pasivas.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `nuclei`, `katana`, `ffuf`
+
+## `trivy`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=security,go,cli,devops
+
+**Qué es:** Escáner de seguridad versátil: busca CVE, configuraciones erróneas de IaC, secretos y licencias en imágenes, repositorios, Kubernetes y nube.
+**Stack:** Go, Dockerfile, go.mod
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/aquasecurity/trivy
+
+**Instalación** [+]:
+
+```
+brew install trivy
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: escanear una imagen Docker antes de desplegarla; generar un SBOM y revisar dependencias vulnerables de un proyecto en CI
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala con `brew install trivy` (o la imagen Docker) y ejecuta `trivy fs .` en un proyecto propio.
+**Qué comprobar:** Obtienes una tabla de vulnerabilidades por paquete con severidad y versión corregida.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `claude-code`, `semgrep`, `pre-commit`, `coolify`, `wazuh`, `lynis`
+
+## `wazuh`
+role=platform · exec=local · setup=heavy · mcp=False · prov=— · tags=security,server,self-hosted,cpp
+
+**Qué es:** Plataforma de seguridad abierta con SIEM y XDR: agentes en los equipos, detección de intrusiones, integridad de archivos, vulnerabilidades y cumplimiento.
+**Stack:** C++
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/wazuh/wazuh
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/wazuh/wazuh/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: vigilar los servidores de tu laboratorio o pyme con alertas centralizadas; auditar cumplimiento (PCI DSS, CIS) y detectar cambios en archivos críticos
+**Evita si:** no quieres mantener un servidor, sus copias de seguridad y sus actualizaciones
+**Primera prueba propuesta:** Despliega Wazuh en una VM con el asistente o Docker siguiendo su guía rápida e instala un agente en otro equipo.
+**Qué comprobar:** El panel muestra el agente conectado y sus primeras alertas.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `crowdsec`, `lynis`, `trivy`
+
+## `wireshark`
+role=app · exec=local · setup=easy · mcp=False · prov=— · tags=pruebas,c,network,app
+
+**Qué es:** Analizador de protocolos de red de referencia: captura y decodifica paquetes de cientos de protocolos, con TShark para línea de comandos.
+**Stack:** C, CMakeLists.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/wireshark/wireshark
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/wireshark/wireshark/blob/master/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: depurar por qué una aplicación no se conecta a un servidor; aprender cómo funcionan protocolos como DNS, TLS o HTTP observando el tráfico
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala Wireshark desde wireshark.org, captura en tu propia interfaz y aplica el filtro `dns`.
+**Qué comprobar:** Ves las consultas y respuestas DNS de tu equipo decodificadas campo a campo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `mitmproxy`, `nmap`, `john`
 
 ## `x64dbg`
 role=app · exec=local · setup=easy · mcp=False · prov=— · tags=depuracion,app,c
@@ -792,4 +1287,34 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Depura un programa sencillo y detén la ejecución en una función conocida
 **Qué comprobar:** Puedes ver instrucciones, pila y valores del ejemplo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ghidra`, `imhex`, `dnspy`
+**Combina con:** `ghidra`, `imhex`, `dnspy`, `raddebugger`
+
+## `zaproxy`
+role=app · exec=local · setup=medium · mcp=False · prov=— · tags=pruebas,java,security,app
+
+**Qué es:** Escáner de seguridad de aplicaciones web más usado (antes OWASP ZAP, ahora ZAP by Checkmarx): proxy interceptor, araña y escaneo activo.
+**Stack:** Java
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La función básica es software o material que no necesita llamar a un modelo de IA.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: La función básica no necesita un modelo. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Sin pago a un modelo en la ruta básica. No exige consumo de un modelo en esa ruta. Revisar licencia, alojamiento, cuentas y servicios externos.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/zaproxy/zaproxy
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/zaproxy/zaproxy/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: buscar vulnerabilidades comunes en tu aplicación web durante el desarrollo; integrar un escaneo DAST en el pipeline de CI
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Descarga ZAP desde zaproxy.org y ejecuta el escaneo automatizado contra una aplicación de laboratorio propia.
+**Qué comprobar:** ZAP muestra alertas clasificadas por riesgo con evidencias y soluciones.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `sqlmap`, `playwright`, `nuclei`

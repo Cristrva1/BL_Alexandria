@@ -27,7 +27,7 @@ Se instala principalmente con Docker (imagen `appsmith/appsmith-ce`) o Kubernete
 | Repo | Para qué juntarlos | Orden de instalación y cuidados |
 |---|---|---|
 | [supabase](supabase.md) | Appsmith consulta PostgreSQL de forma nativa y Supabase ofrece un PostgreSQL gestionado con autenticación, así que sirve como backend de la app interna (combinación por arquitectura). | Supabase primero; crea un usuario con permisos mínimos y conéctalo como fuente PostgreSQL en Appsmith. |
-| [n8n](n8n.md) | Un botón de Appsmith llama a un webhook de n8n para tareas que tocan muchos servicios (combinación por arquitectura). | Crea el webhook en n8n, protégelo con un encabezado secreto y configúralo como API en Appsmith. |
+| [activepieces](activepieces.md) | Un botón de Appsmith llama a un webhook de Activepieces para tareas que tocan muchos servicios (combinación por arquitectura). | Crea el webhook en Activepieces, protégelo con un encabezado secreto y configúralo como API en Appsmith. |
 | [metabase](metabase.md) | Appsmith cubre los formularios y acciones; Metabase, los análisis y dashboards sobre la misma base (combinación por arquitectura). | Conecta ambos a la base con usuarios distintos: Metabase solo lectura. |
 
 **Notas:** Alternativas (elige una): tooljet, budibase, nocodb.

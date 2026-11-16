@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 📂 catálogo/recurso · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Lista de paquetes, servicios y manuales de web scraping, de @lorien. GitHub muestra licencia NOASSERTION. Es una lista veterana (~8k estrellas) que se sigue actualizando.
+
+## ¿Qué hace?
+
+Organiza los recursos por lenguaje (Python, PHP, Ruby, JavaScript, Go, Java y otros) en archivos separados, además de servicios, herramientas y manuales. Sirve para explorar opciones antes de elegir un framework.
+
+## ¿Cómo lo hace?
+
+Es un README con enlaces a subpáginas; no requiere instalación. Comprueba la vigencia de cada enlace, porque algunas herramientas antiguas ya no se mantienen.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [scrapy](scrapy.md) | Framework de referencia en la sección de Python. (combinación por arquitectura) | Revisa la lista de Python y empieza por Scrapy si necesitas crawling clásico. |
+| [crawlee](crawlee.md) | Opción moderna para JavaScript/TypeScript. (combinación por arquitectura) | Compárala con las demás de la sección de JavaScript. |
+| [firecrawl](firecrawl.md) | Servicio orientado a LLM para comparar con las librerías de la lista. (combinación por arquitectura) | Úsalo si prefieres una API gestionada. |
+
+**Notas:** Sin alternativas declaradas.
+
+Estado en GitHub: activo · último push 2026-11-11 · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/lorien/awesome-web-scraping/blob/master/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | La función básica no necesita un modelo. No se instala el directorio entero ni hereda compatibilidad de las herramientas que enumera |
 | Coste | Sin pago a un modelo en la ruta básica. Leer la lista no cuesta API; servicios enlazados pueden ser comerciales |
 | Equipo | Preparación según la ruta elegida. Navegador; lenguaje o formato objetivo |
-
-No se instala el directorio entero ni hereda compatibilidad de las herramientas que enumera
-
-## Qué puedes hacer con él
-
-Directorio de bibliotecas, herramientas y recursos para scraping web y procesamiento de datos.
-
-## Por qué destaca
-
-Usos propuestos: Buscar un parser para Python; Encontrar herramientas de extracción para JavaScript.
-
-## Cómo funciona
 
 No se instala el directorio entero ni hereda compatibilidad de las herramientas que enumera
 

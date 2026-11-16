@@ -61,7 +61,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un workspace con un PDF corto y consulta un dato presente en él
 **Qué comprobar:** Puedes abrir el fragmento que apoya la respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `qdrant`, `litellm`, `localai`
+**Combina con:** `ollama`, `qdrant`, `litellm`, `localai`, `chroma`, `milvus`
 **Alternativas (elige una):** `open-webui`, `khoj`, `private-gpt`, `onyx`
 
 ## `chatbox`
@@ -93,7 +93,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** Puedes identificar el modelo y recuperar el chat
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `litellm`, `localai`
-**Alternativas (elige una):** `jan`
+**Alternativas (elige una):** `jan`, `nextchat`, `lobehub`
 
 ## `cherry-studio`
 role=app · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=chatbot,agents,typescript
@@ -154,7 +154,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Empieza en un Mac y añade un segundo equipo compatible antes de repartir un modelo
 **Qué comprobar:** El panel muestra los dispositivos y la distribución de trabajo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `open-webui`, `librechat`, `litellm`
+**Combina con:** `open-webui`, `librechat`, `litellm`, `mlx-lm`
 
 ## `freetoken`
 role=runtime · exec=local · setup=heavy · mcp=False · prov=local · tags=motores,engine,python
@@ -278,6 +278,37 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `litellm`, `markitdown`
 **Alternativas (elige una):** `anything-llm`, `surfsense`
 
+## `koboldcpp`
+role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=inference,cpp,local,app
+
+**Qué es:** Ejecutable único basado en llama.cpp para correr modelos GGUF en local con interfaz web KoboldAI Lite y APIs compatibles con OpenAI y Ollama.
+**Stack:** C++, CMakeLists.txt, requirements.txt
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/LostRuins/koboldcpp
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/LostRuins/koboldcpp/blob/concedo/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: chatear o escribir historias con un modelo local sin instalar dependencias; dar a otras apps una API local compatible con OpenAI u Ollama
+**Evita si:** no quieres preparar modelos, dependencias y hardware propios
+**Primera prueba propuesta:** Descarga el ejecutable de la release para tu sistema, elige un modelo GGUF pequeño y arráncalo.
+**Qué comprobar:** La interfaz web local responde y el endpoint compatible con OpenAI devuelve texto.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `sillytavern`, `open-webui`, `kokoro`
+**Alternativas (elige una):** `llamafile`
+
 ## `librechat`
 role=app · exec=hybrid · setup=medium · mcp=True · prov=openai,anthropic,google,local · tags=chatbot,agents,typescript,docker
 
@@ -306,7 +337,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Conecta un proveedor y prueba un agente sin herramientas antes de añadir archivos
 **Qué comprobar:** Puedes identificar el modelo y revisar la conversación
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `litellm`, `ollama`, `langfuse`
+**Combina con:** `litellm`, `ollama`, `langfuse`, `llama-cpp`, `pgvector`, `exo`
 **Alternativas (elige una):** `open-webui`, `lobehub`
 
 ## `llama-cpp`
@@ -369,7 +400,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Qué comprobar:** El ejecutable carga el modelo y devuelve texto
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `open-webui`, `anything-llm`, `librechat`
-**Alternativas (elige una):** `ollama`, `llama-cpp`
+**Alternativas (elige una):** `ollama`, `llama-cpp`, `koboldcpp`
 
 ## `llmfit`
 role=app · exec=hybrid · setup=easy · mcp=False · prov=— · tags=inference,local,rust
@@ -399,7 +430,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Ejecuta el inspector y compara RAM y VRAM detectadas con tu equipo
 **Qué comprobar:** Las recomendaciones explican qué modelos y cuantizaciones podrían caber
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `llama-cpp`, `vllm`
+**Combina con:** `ollama`, `llama-cpp`, `vllm`, `airllm`, `jan`, `textgen`
 
 ## `lobehub`
 role=app · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=chatbot,agents,typescript
@@ -432,7 +463,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes identificar qué proveedor atiende cada conversación
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `litellm`, `playwright-mcp`
-**Alternativas (elige una):** `open-webui`, `librechat`, `cherry-studio`
+**Alternativas (elige una):** `open-webui`, `librechat`, `cherry-studio`, `nextchat`, `chatbox`
 
 ## `localai`
 role=runtime · exec=local · setup=medium · mcp=False · prov=local · tags=inference,local,go,docker
@@ -462,7 +493,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Arranca el servidor, instala un modelo pequeño y prueba una petición de texto
 **Qué comprobar:** El endpoint responde con el modelo elegido
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `anything-llm`, `open-webui`, `librechat`
+**Combina con:** `anything-llm`, `open-webui`, `librechat`, `chatbox`, `nextchat`
 **Alternativas (elige una):** `ollama`, `llama-cpp`
 
 ## `magnitude`
@@ -494,6 +525,97 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Qué comprobar:** Puedes comparar rendimiento en la misma máquina y con el mismo modelo
 Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `hermes-agent`, `codex`, `opencode`
+
+## `mlc-llm`
+role=runtime · exec=local · setup=heavy · mcp=False · prov=— · tags=inference,python,local,model
+
+**Qué es:** Motor universal de despliegue de LLM con compilación de ML: ejecuta modelos en GPU de escritorio, móviles y navegador con API compatible con OpenAI.
+**Stack:** Python, CMakeLists.txt, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/mlc-ai/mlc-llm
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/mlc-ai/mlc-llm/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: ejecutar un LLM en un móvil o en el navegador sin servidor; servir un modelo en GPU AMD, Intel o Apple con una API compatible con OpenAI
+**Evita si:** no quieres preparar modelos, dependencias y hardware propios
+**Primera prueba propuesta:** Sigue el quick start para instalar el paquete de tu plataforma y chatear con un modelo precompilado.
+**Qué comprobar:** El modelo responde en local y el servidor REST devuelve respuestas al endpoint de chat.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `transformers`, `open-webui`, `litellm`
+
+## `mlx-lm`
+role=runtime · exec=local · setup=easy · mcp=False · prov=— · tags=inference,python,local,training
+
+**Qué es:** Paquete de Apple para generar texto y afinar LLM en Apple Silicon con MLX: miles de modelos del Hub, cuantización, LoRA y servidor HTTP.
+**Stack:** Python, pyproject.toml
+**Acceso y costes:**
+- API de IA: Sin clave propia de API de IA en la ruta básica. La inferencia o el entrenamiento local documentado no necesita una API de IA alojada; sí necesita preparar sus modelos y dependencias.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. El proyecto documenta ejecución local de modelos. Descarga pesos compatibles y revisa sus condiciones de uso.
+- Coste: Sin pago a un modelo en la ruta básica. La ruta local no tiene factura por llamada a un modelo remoto. Sí consume hardware, energía y almacenamiento, y puede requerir licencias o acceso a pesos.
+- Equipo: Memoria y GPU según el modelo. RAM, disco, VRAM y aceleración dependen del modelo y del backend; no se promete rendimiento sin una prueba.
+**Repo:** https://github.com/ml-explore/mlx-lm
+
+**Instalación** [+]:
+
+```
+pip install mlx-lm
+```
+
+_Comando documentado en la fuente revisada; no equivale a una prueba de instalación._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: ejecutar un LLM local optimizado en un Mac con chip Apple; afinar un modelo con LoRA en un Mac sin GPU NVIDIA
+**Evita si:** no quieres preparar modelos, dependencias y hardware propios
+**Primera prueba propuesta:** Instala con `pip install mlx-lm` en un Mac con Apple Silicon y genera texto con un modelo cuantizado del Hub.
+**Qué comprobar:** El modelo se descarga, genera la respuesta y la CLI informa de tokens por segundo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `exo`, `open-webui`, `litellm`
+
+## `nextchat`
+role=app · exec=hybrid · setup=easy · mcp=True · prov=— · tags=chatbot,typescript,app,mcp
+
+**Qué es:** Cliente de chat de IA ligero y multiplataforma (web, escritorio y móvil) para Claude, GPT, Gemini, DeepSeek y modelos autoalojados, con soporte MCP.
+**Stack:** TypeScript, Dockerfile, docker-compose.yml, package.json
+**Acceso y costes:**
+- API de IA: API de IA necesaria. La ruta descrita necesita credenciales o acceso a un proveedor de IA independiente del agente que ayude a instalarla.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelo local no documentado. La función básica no depende de un modelo de lenguaje. No se presenta como un asistente de IA autónomo.
+- Coste: Consumo de APIs o servicios. Consultar cuotas, créditos y tarifas de los proveedores antes de ejecutar. El código no incluye ese consumo.
+- Equipo: Equipo normal; revisar dependencias. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/ChatGPTNextWeb/NextChat
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/ChatGPTNextWeb/NextChat/blob/main/README.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: desplegar un chat privado con tu propia clave para un equipo pequeño; usar un modelo autoalojado compatible con OpenAI desde una interfaz web ligera
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Despliega NextChat con Docker o Vercel usando tu clave de API y abre un chat.
+**Qué comprobar:** El chat responde con el modelo configurado y el historial queda en el navegador.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `localai`, `litellm`, `fastmcp`
+**Alternativas (elige una):** `lobehub`, `chatbox`
 
 ## `notebooklm-mcp-cli`
 role=runtime · exec=cloud · setup=easy · mcp=True · prov=— · tags=mcp,notebooks,python
@@ -616,7 +738,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Descarga un modelo pequeño y formula una pregunta antes de conectarlo a un agente
 **Qué comprobar:** Puedes identificar el modelo ejecutado y ver la respuesta en tu equipo
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `open-webui`, `n8n`, `litellm`, `crawl4ai`
+**Combina con:** `open-webui`, `litellm`, `crawl4ai`, `claude-code`
 **Alternativas (elige una):** `llama-cpp`, `localai`, `llamafile`
 
 ## `open-notebook`
@@ -647,7 +769,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Crea un notebook con dos fuentes y pregunta por un dato con referencia
 **Qué comprobar:** Puedes identificar la fuente y corregir un resumen
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `vllm`, `n8n`
+**Combina con:** `ollama`, `vllm`, `activepieces`, `scientific-agent-skills`, `olmocr`, `vibevoice`
 **Alternativas (elige una):** `deeptutor`, `surfsense`
 
 ## `open-webui`
@@ -712,6 +834,36 @@ Revisión documental individual; instalación no ejecutada por Alexandría.
 **Combina con:** `ollama`, `vllm`, `llama-cpp`
 **Alternativas (elige una):** `anything-llm`
 
+## `sillytavern`
+role=app · exec=hybrid · setup=medium · mcp=False · prov=— · tags=chatbot,javascript,local,app
+
+**Qué es:** Interfaz local avanzada para chatear con LLM: une muchas APIs, personajes, rol, generación de imágenes, voz y extensiones.
+**Stack:** JavaScript, Dockerfile, package.json
+**Acceso y costes:**
+- API de IA: API de IA opcional. El proyecto describe rutas locales y remotas. Las funciones seleccionadas determinan modelos, credenciales y consumos.
+- Claude Code: Integración no documentada
+- Codex: Integración no documentada
+- Antigravity: Integración no documentada
+- Modelos locales: Modelos locales documentados. Existe una ruta local documentada. Revisa qué componentes cubre: no equivale a ejecutar todas las funciones sin servicios remotos.
+- Coste: El coste depende del proveedor o la ruta. La ruta local consume recursos del equipo; las APIs y servicios remotos aplican sus cuotas o tarifas. Una integración de suscripción, cuando esté documentada, consume los límites de ese plan.
+- Equipo: Memoria y GPU según el modelo. Comprueba sistema operativo, memoria, disco y dependencias de la distribución elegida.
+**Repo:** https://github.com/SillyTavern/SillyTavern
+
+**Instalación** [?]:
+
+```
+Seguir la instalación original: https://github.com/SillyTavern/SillyTavern/blob/release/.github/readme.md
+```
+
+_No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
+
+**Elige si:** Tu objetivo encaja con estos ejemplos: escribir historias o partidas de rol con personajes y memoria persistente; probar el mismo prompt contra varios modelos locales y remotos
+**Evita si:** necesitas una instalación sin cuentas ni dependencias adicionales
+**Primera prueba propuesta:** Instala SillyTavern con Node.js 20+, conéctalo a un backend local como KoboldCpp u Ollama y abre un chat.
+**Qué comprobar:** El chat responde con el modelo conectado y la conversación se guarda en tu equipo.
+Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `koboldcpp`, `ollama`, `comfyui`, `kokoro`, `textgen`
+
 ## `surfsense`
 role=app · exec=hybrid · setup=medium · mcp=False · prov=openai,local · tags=research,rag,notebooks,python
 
@@ -771,7 +923,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Carga un modelo pequeño en la app y revisa texto generado y consumo de memoria
 **Qué comprobar:** Puedes identificar backend, modelo y memoria utilizada
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `librechat`, `llmfit`, `unsloth`
+**Combina con:** `librechat`, `llmfit`, `unsloth`, `sillytavern`
 **Alternativas (elige una):** `jan`, `open-webui`
 
 ## `transformers.js`
