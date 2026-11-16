@@ -10,6 +10,32 @@
 
 **Ejecución** 🏠 local · **Rol** 🖥️ app · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+T3 Code, plano de control open source para agentes de programación, de ping.gg. Licencia MIT. Es muy popular (~62k estrellas, v0.1.9).
+
+## ¿Qué hace?
+
+Ejecuta los agentes en tu máquina y les da una interfaz común en escritorio, web, iOS y Android: empiezas un hilo en el ordenador y apruebas el siguiente paso desde el móvil. Funciona con Claude Code, Codex, Cursor, OpenCode, Grok Build, Antigravity, Kiro y cualquier agente ACP, usando tus suscripciones.
+
+## ¿Cómo lo hace?
+
+Se instala con `brew install --cask t3-code` o las descargas por plataforma, o se prueba con `npx t3@latest`. Puede exponerse a agentes externos por MCP.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente soportado. | Instala Claude Code y ábrelo desde T3 Code. |
+| [Codex CLI](codex.md) | Agente soportado. | Instala Codex y selecciónalo. |
+| [OpenCode](opencode.md) | Agente soportado. | Instala OpenCode y selecciónalo. |
+
+**Notas:** Sin alternativas declaradas; solapa con opencode-manager (solo anotado).
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.1.9 (2026-11-11) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/pingdotgg/t3code/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Documenta Claude Code, Codex y Antigravity entre sus proveedores; acceso remoto requiere configuración propia y no ejecuta los agentes en el teléfono |
 | Coste | El coste depende del proveedor o la ruta. El proyecto dice no revender tokens; usa las cuentas y cuotas de los agentes ya configurados |
 | Equipo | Preparación según la ruta elegida. Un agente instalado y autenticado; equipo que permanezca disponible; proyecto de prueba |
-
-Documenta Claude Code, Codex y Antigravity entre sus proveedores; acceso remoto requiere configuración propia y no ejecuta los agentes en el teléfono
-
-## Qué puedes hacer con él
-
-Interfaz para controlar desde web, móvil o escritorio los agentes de código que ya corren en tu máquina.
-
-## Por qué destaca
-
-Usos propuestos: Controlar una sesión desde otro dispositivo; Comparar trabajo de Claude Code y Codex.
-
-## Cómo funciona
 
 Documenta Claude Code, Codex y Antigravity entre sus proveedores; acceso remoto requiere configuración propia y no ejecuta los agentes en el teléfono
 
@@ -86,14 +100,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Un agente instalado y autenticado; equipo que permanezca disponible; proyecto de prueba
 - **Etiquetas:** `coding-agent` `ui` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Claude Code](claude-code.md) | 156k | Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio. |
-| [Codex CLI](codex.md) | 135k | Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source. |
-| [OpenCode](opencode.md) | 227k | Agente de código open source para la terminal, compatible con más de 75 proveedores y modelos locales. |
 
 ## Enlaces
 

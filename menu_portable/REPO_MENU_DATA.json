@@ -59842,8 +59842,9 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Corregir una función pequeña; Programar en pareja desde terminal",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "litellm",
         "ollama",
-        "litellm"
+        "tree-sitter"
       ],
       "alt": [
         "opencode",
@@ -60101,6 +60102,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Explicar un error de código; Comparar una propuesta antes de editar",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "ollama",
         "context7",
         "playwright-mcp"
       ],
@@ -60229,7 +60231,8 @@
       "combines_with": [
         "agent-skills",
         "spec-kit",
-        "context7"
+        "context7",
+        "t3code"
       ],
       "alt": [
         "claude-code",
@@ -60693,7 +60696,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "stitch-skills",
-        "context7"
+        "context7",
+        "mcp"
       ],
       "alt": [
         "claude-code",
@@ -60821,6 +60825,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Automatizar una tarea de desarrollo; Comparar agentes conectados por ACP",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "ollama",
         "playwright-mcp",
         "github-mcp-server"
       ],
@@ -60946,7 +60951,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Probar un asistente de terminal; Estudiar memoria y herramientas del proyecto",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "opencode",
+        "headroom",
+        "rtk"
+      ],
       "alt": []
     },
     {
@@ -61065,7 +61074,8 @@
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
         "ollama",
-        "e2b"
+        "e2b",
+        "context7"
       ],
       "alt": [
         "goose"
@@ -61184,6 +61194,7 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Diseñar una fábrica interna de cambios; Estudiar un agente asíncrono con revisión",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
+        "deepagents",
         "langgraph",
         "e2b"
       ],
@@ -61307,7 +61318,11 @@
       "install_note": "Comando documentado en la fuente revisada; no equivale a una prueba de instalación.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Usar un agente con Ollama; Comparar un backend API con Codex OAuth",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ollama",
+        "litellm",
+        "context7"
+      ],
       "alt": []
     },
     {
@@ -61432,7 +61447,8 @@
       "combines_with": [
         "ollama",
         "litellm",
-        "awesome-agent-skills"
+        "opencode-manager",
+        "t3code"
       ],
       "alt": [
         "claude-code",
@@ -61674,7 +61690,11 @@
       "install_note": "No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo.",
       "choose_if": "Tu objetivo encaja con estos ejemplos: Trabajar con un agente dentro de VS Code; Comparar inferencia local con cuenta remota",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
-      "combines_with": [],
+      "combines_with": [
+        "ollama",
+        "llama-cpp",
+        "context7"
+      ],
       "alt": []
     },
     {
@@ -61794,8 +61814,10 @@
       "choose_if": "Tu objetivo encaja con estos ejemplos: Centralizar sesiones de agentes; Preparar una automatización de ingeniería",
       "avoid_if": "Necesitas funciones o garantías fuera del alcance descrito; revisa los límites y requisitos antes de elegirlo",
       "combines_with": [
-        "ecc",
-        "sandbox"
+        "claude-code",
+        "codex",
+        "sandbox",
+        "ecc"
       ],
       "alt": [
         "open-swe"

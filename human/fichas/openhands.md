@@ -10,6 +10,33 @@
 
 **Ejecución** 🔀 híbrido · **Rol** ⚙️ plataforma · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+OpenHands, cuyo repo principal es ahora Agent Canvas, centro de control autoalojado para agentes de programación y automatizaciones. Licencia MIT. Es muy activo (~94k estrellas, v1.40.0).
+
+## ¿Qué hace?
+
+Ejecuta OpenHands, Claude Code, Codex, Gemini, OpenCode o cualquier agente compatible con ACP en backends locales, remotos o en la nube, y automatiza tareas recurrentes. Se apoya en el OpenHands Agent Server y en el SDK `software-agent-sdk`.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install -g @openhands/agent-canvas` o con Docker. Por defecto corre en local y puede ejecutar agentes en contenedores, máquinas virtuales o la nube.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Claude Code](claude-code.md) | Agente soportado en Agent Canvas. | Configura Claude Code como agente ACP. |
+| [Codex CLI](codex.md) | Agente soportado en Agent Canvas. | Configura Codex como agente. |
+| [sandbox](sandbox.md) | Aislar la ejecución de los agentes. (combinación por arquitectura) | Ejecuta los agentes en un backend aislado. |
+| [ECC](ecc.md) | Configuración de agentes reutilizable. (combinación por arquitectura) | Aplica la configuración a los agentes que lances. |
+
+**Notas:** Alternativas (elige una): open-swe.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v1.40.0 (2026-11-12) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/OpenHands/OpenHands/blob/main/README.md) · [2](https://docs.openhands.dev)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelo local no documentado. El README actual presenta Agent Canvas con OpenHands, Claude Code, Codex y agentes ACP; la receta de Docker limita el puerto al equipo local |
 | Coste | El coste depende del proveedor o la ruta. Canvas usa el proveedor o plan del agente y la infraestructura elegida; ejecutar localmente la interfaz no elimina la facturación del modelo |
 | Equipo | Preparación según la ruta elegida. Node 24 o posterior; uv; repositorio de prueba; agente autenticado; Docker según backend |
-
-El README actual presenta Agent Canvas con OpenHands, Claude Code, Codex y agentes ACP; la receta de Docker limita el puerto al equipo local
-
-## Qué puedes hacer con él
-
-Agent Canvas: centro de sesiones autoalojado para OpenHands, Claude Code, Codex y agentes ACP.
-
-## Por qué destaca
-
-Usos propuestos: Centralizar sesiones de agentes; Preparar una automatización de ingeniería.
-
-## Cómo funciona
 
 El README actual presenta Agent Canvas con OpenHands, Claude Code, Codex y agentes ACP; la receta de Docker limita el puerto al equipo local
 
@@ -96,13 +111,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node 24 o posterior; uv; repositorio de prueba; agente autenticado; Docker según backend
 - **Etiquetas:** `agents` `automation` `typescript` `docker`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [ECC](ecc.md) | 303k | Sistema de skills, hooks y configuración para agentes de código, con rutas nativas y adaptadores cuya capacidad varía según el cliente. |
-| [sandbox](sandbox.md) | 6.3k | Entorno sandbox all-in-one para agentes que reúne navegador, terminal, archivos, VSCode, Jupyter y MCP en un mismo espacio aislado. |
 
 ## Alternativas (elige una)
 

@@ -10,6 +10,33 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Codex CLI, agente de programación de OpenAI que se ejecuta en local, escrito en Rust. Licencia Apache-2.0. Es muy activo (~135k estrellas, rust-v0.169.0).
+
+## ¿Qué hace?
+
+Lee, edita y ejecuta código en tu máquina con sandbox y niveles de aprobación. Existe también como extensión de IDE, app de escritorio (`codex app`) y agente en la nube (Codex Web). Admite MCP, skills y `AGENTS.md`.
+
+## ¿Cómo lo hace?
+
+Se instala con `curl -fsSL https://chatgpt.com/codex/install.sh | sh`, `npm install -g @openai/codex` o `brew install --cask codex`. Se inicia sesión con un plan de ChatGPT o, con configuración adicional, con una clave de API.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Agent Skills (Addy Osmani)](agent-skills.md) | Skills reutilizables para Codex. (combinación por arquitectura) | Copia las skills al directorio de Codex. |
+| [Spec Kit](spec-kit.md) | Desarrollo guiado por especificaciones con soporte para Codex. | Inicializa Spec Kit eligiendo Codex. |
+| [Context7](context7.md) | Documentación de librerías vía MCP. | Añade el MCP de Context7 a la configuración de Codex. |
+| [T3 Code](t3code.md) | Controlar Codex desde web o móvil. | Instala T3 Code con Codex presente. |
+
+**Notas:** Alternativas (elige una): claude-code, gemini-cli, opencode.
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada rust-v0.169.0 (2026-11-13) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/openai/codex/blob/main/README.md) · [2](https://developers.openai.com/codex/)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. El CLI corre en tu equipo pero el modelo puede ser remoto; --oss distingue la inferencia local y los servicios de búsqueda pueden seguir siendo externos |
 | Coste | El coste depende del proveedor o la ruta. Acceso oficial con plan de ChatGPT elegible o API con facturación separada; Ollama documenta la ruta --oss local |
 | Equipo | Preparación según la ruta elegida. Node o binario adecuado; terminal; proyecto de prueba; cuenta o backend local |
-
-El CLI corre en tu equipo pero el modelo puede ser remoto; --oss distingue la inferencia local y los servicios de búsqueda pueden seguir siendo externos
-
-## Qué puedes hacer con él
-
-Agente de código ligero de OpenAI para la terminal, escrito en Rust y open source.
-
-## Por qué destaca
-
-Usos propuestos: Explorar un proyecto; Preparar un cambio y revisar su diff.
-
-## Cómo funciona
 
 El CLI corre en tu equipo pero el modelo puede ser remoto; --oss distingue la inferencia local y los servicios de búsqueda pueden seguir siendo externos
 
@@ -95,14 +110,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Node o binario adecuado; terminal; proyecto de prueba; cuenta o backend local
 - **Etiquetas:** `coding-agent` `agents` `rust`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Agent Skills (Addy Osmani)](agent-skills.md) | 118k | Colección de Addy Osmani con skills de ingeniería para especificar, planificar, construir, verificar y revisar software con agentes. |
-| [Spec Kit](spec-kit.md) | 150k | Kit de GitHub para desarrollo guiado por especificaciones con agentes de código. |
-| [Context7](context7.md) | 64.8k | Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. |
 
 ## Alternativas (elige una)
 

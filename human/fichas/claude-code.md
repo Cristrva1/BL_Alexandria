@@ -10,6 +10,33 @@
 
 **Ejecución** ☁️ cloud/API · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+Claude Code, agente de programación de Anthropic para la terminal, el IDE y la web. Es software propietario: el repo contiene documentación, plugins y seguimiento de issues, y el uso se rige por los Términos Comerciales de Anthropic (GitHub no detecta licencia). Es muy activo (~156k estrellas, v2.1.325).
+
+## ¿Qué hace?
+
+Entiende la base de código, ejecuta tareas rutinarias, explica código y gestiona flujos de git mediante lenguaje natural. Se amplía con skills, plugins, hooks, subagentes y servidores MCP, y tiene SDK para automatización.
+
+## ¿Cómo lo hace?
+
+Se instala con el instalador nativo o `brew install --cask claude-code`; la instalación por npm está obsoleta. Requiere una cuenta de Anthropic (suscripción o API).
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [superpowers](superpowers.md) | Biblioteca de skills y flujos para Claude Code. | Instala el plugin desde su marketplace. |
+| [Anthropic Skills](anthropic-skills.md) | Skills oficiales de Anthropic. | Añade el marketplace de skills. |
+| [claude-mem](claude-mem.md) | Memoria persistente entre sesiones. | Instala el plugin claude-mem. |
+| [Context7](context7.md) | Documentación actualizada de librerías vía MCP. | Añade el servidor MCP de Context7. |
+
+**Notas:** Alternativas (elige una): codex, gemini-cli, opencode, goose. No es open source.
+
+Estado en GitHub: activo · último push 2026-11-15 · última versión publicada v2.1.325 (2026-11-13) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/anthropics/claude-code/blob/main/README.md) · [2](https://code.claude.com/docs/en/overview)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +50,6 @@
 | Modelos locales | Modelos locales documentados. La ruta local procede de la integración de Ollama y necesita modelos compatibles con herramientas; las funciones y el acceso no son idénticos a Claude alojado |
 | Coste | El coste depende del proveedor o la ruta. El cliente oficial admite suscripción o cuenta Console según ruta; Ollama documenta modelos locales y nube separada |
 | Equipo | Preparación según la ruta elegida. Equipo compatible; terminal; cuenta de Claude o proveedor elegido; carpeta de prueba |
-
-La ruta local procede de la integración de Ollama y necesita modelos compatibles con herramientas; las funciones y el acceso no son idénticos a Claude alojado
-
-## Qué puedes hacer con él
-
-Agente de código de Anthropic que trabaja en tu terminal, IDE o la web y entiende todo tu repositorio.
-
-## Por qué destaca
-
-Usos propuestos: Entender código sin editar; Preparar una propuesta de corrección.
-
-## Cómo funciona
 
 La ruta local procede de la integración de Ollama y necesita modelos compatibles con herramientas; las funciones y el acceso no son idénticos a Claude alojado
 
@@ -94,15 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Equipo compatible; terminal; cuenta de Claude o proveedor elegido; carpeta de prueba
 - **Etiquetas:** `coding-agent` `agents` `mcp` `typescript`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [superpowers](superpowers.md) | 318k | Metodología completa de desarrollo para agentes construida sobre skills composables más instrucciones que aseguran que el agente realmente las invoque. |
-| [Anthropic Skills](anthropic-skills.md) | 195k | Colección oficial de skills de Anthropic para Claude: ejemplos, skills de documentos Office/PDF y la especificación Agent Skills. |
-| [claude-mem](claude-mem.md) | 117k | Plugin que da memoria persistente entre sesiones a Claude Code y otros agentes, comprimida con IA. |
-| [Context7](context7.md) | 64.8k | Servidor MCP que trae documentación actualizada y por versión de librerías al contexto del agente. |
 
 ## Alternativas (elige una)
 

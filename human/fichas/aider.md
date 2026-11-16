@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🧩 motor/runtime · **Setup** 🟢 fácil
 
+## ¿Qué es?
+
+Aider, programación en pareja con IA en la terminal, de Aider-AI. Licencia Apache-2.0. Es maduro (~50k estrellas, v0.86.0), pero su último cambio es de mayo de 2026.
+
+## ¿Qué hace?
+
+Edita el repositorio a partir de instrucciones, con un mapa del código para proyectos grandes, soporte para más de 100 lenguajes, commits automáticos en git, lint y tests, voz e imágenes. Funciona con modelos en la nube y locales.
+
+## ¿Cómo lo hace?
+
+Se instala con `python -m pip install aider-install` y `aider-install`. Conecta con casi cualquier LLM mediante LiteLLM y construye el mapa del repo con Tree-sitter.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [litellm](litellm.md) | Capa de conexión con proveedores de modelos. | Viene incluida; configura las claves del proveedor. |
+| [Ollama](ollama.md) | Modelos locales documentados. | Ejecuta aider con un modelo `ollama/...`. |
+| [tree-sitter](tree-sitter.md) | Mapa del repositorio basado en Tree-sitter. | No requiere instalación aparte. |
+
+**Notas:** Alternativas (elige una): opencode, cline. Actividad reciente baja.
+
+Estado en GitHub: activo · último push 2026-05-22 · última versión publicada v0.86.0 (2025-08-09) · licencia declarada Apache-2.0 (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Aider-AI/aider/blob/main/README.md) · [2](https://aider.chat/docs/llms.html) · [3](https://aider.chat/docs/repomap.html)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. Sus modelos de ejemplo incluyen versiones antiguas; la presencia de Claude en la lista no implica una suscripción Claude Code |
 | Coste | El coste depende del proveedor o la ruta. APIs remotas por consumo o modelos locales según configuración; no aporta créditos |
 | Equipo | Preparación según la ruta elegida. Python; Git; proveedor o modelo local; repositorio de prueba |
-
-Sus modelos de ejemplo incluyen versiones antiguas; la presencia de Claude en la lista no implica una suscripción Claude Code
-
-## Qué puedes hacer con él
-
-Programación en pareja con IA en la terminal que edita tu repo y hace commits de Git automáticos.
-
-## Por qué destaca
-
-Usos propuestos: Corregir una función pequeña; Programar en pareja desde terminal.
-
-## Cómo funciona
 
 Sus modelos de ejemplo incluyen versiones antiguas; la presencia de Claude en la lista no implica una suscripción Claude Code
 
@@ -95,13 +109,6 @@ Prueba propuesta para ti; Alexandría no la ejecutó en este proyecto.
 - **Stack:** Python; Git; proveedor o modelo local; repositorio de prueba
 - **Etiquetas:** `coding-agent` `python`
 - **Modo de instalación sugerido:** 📖 **Referencia** — léelo o clónalo; no lo instales de entrada
-
-## Combina con
-
-| Repo | ⭐ | Qué hace |
-|---|---:|---|
-| [Ollama](ollama.md) | 187k | La forma más fácil de descargar y correr LLM en tu máquina, con API compatible con OpenAI. |
-| [litellm](litellm.md) | 63.3k | Gateway/SDK que unifica el acceso a 100+ proveedores de LLM bajo una sola interfaz compatible con el formato de OpenAI. |
 
 ## Alternativas (elige una)
 

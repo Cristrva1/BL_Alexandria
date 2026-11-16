@@ -32,7 +32,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre una copia de un proyecto y pide una explicación antes de aceptar cambios y commits
 **Qué comprobar:** Puedes revisar archivos incluidos y cualquier diff propuesto
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `litellm`
+**Combina con:** `litellm`, `ollama`, `tree-sitter`
 **Alternativas (elige una):** `opencode`, `cline`
 
 ## `claude-code`
@@ -94,7 +94,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Usa Plan mode para pedir un diagnóstico de un archivo antes de pasar a Act
 **Qué comprobar:** Puedes revisar el plan y los permisos solicitados
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `context7`, `playwright-mcp`
+**Combina con:** `ollama`, `context7`, `playwright-mcp`
 **Alternativas (elige una):** `aider`
 
 ## `codex`
@@ -126,7 +126,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala el CLI, inicia sesión por la ruta elegida y solicita una explicación sin cambios
 **Qué comprobar:** Puedes comprobar los archivos usados y el alcance de la propuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `agent-skills`, `spec-kit`, `context7`
+**Combina con:** `agent-skills`, `spec-kit`, `context7`, `t3code`
 **Alternativas (elige una):** `claude-code`, `gemini-cli`, `opencode`
 
 ## `dsh-android`
@@ -248,7 +248,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Lee primero el aviso de acceso y comprueba si corresponde este CLI empresarial o Antigravity CLI
 **Qué comprobar:** Puedes elegir el producto de Google apropiado antes de instalar
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `stitch-skills`, `context7`
+**Combina con:** `stitch-skills`, `context7`, `mcp`
 **Alternativas (elige una):** `claude-code`, `codex`, `opencode`
 
 ## `goose`
@@ -279,7 +279,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Configura un proveedor y solicita resumir una carpeta pequeña antes de añadir extensiones
 **Qué comprobar:** Puedes reconocer herramientas y contexto usados en la respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `playwright-mcp`, `github-mcp-server`
+**Combina con:** `ollama`, `playwright-mcp`, `github-mcp-server`
 **Alternativas (elige una):** `opencode`, `claude-code`, `open-interpreter`
 
 ## `mimo-code`
@@ -310,6 +310,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Sigue el primer inicio y comprueba proveedor y modelo antes de pedir explicar un archivo
 **Qué comprobar:** Puedes identificar la ruta de autenticación y revisar la respuesta
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `opencode`, `headroom`, `rtk`
 
 ## `open-interpreter`
 role=runtime · exec=local · setup=easy · mcp=False · prov=openai,local · tags=coding-agent,local,rust
@@ -339,7 +340,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Arranca interpreter y revisa modelo y harness antes de pedir una explicación de código
 **Qué comprobar:** Puedes identificar proveedor y permisos sin ejecutar cambios
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `e2b`
+**Combina con:** `ollama`, `e2b`, `context7`
 **Alternativas (elige una):** `goose`
 
 ## `open-swe`
@@ -370,7 +371,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Lee el flujo de issue a PR y prueba un issue ficticio sin habilitar entregas automáticas
 **Qué comprobar:** Puedes inspeccionar planificación, sandbox y validación por separado
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `langgraph`, `e2b`
+**Combina con:** `deepagents`, `langgraph`, `e2b`
 **Alternativas (elige una):** `openhands`
 
 ## `openclaude`
@@ -401,6 +402,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Instala el paquete actual y configura un modelo antes de solicitar una explicación sin edición
 **Qué comprobar:** Puedes revisar proveedor, contexto y permisos
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `litellm`, `context7`
 
 ## `opencode`
 role=runtime · exec=hybrid · setup=easy · mcp=True · prov=openai,anthropic,google,local · tags=coding-agent,agents,typescript
@@ -430,7 +432,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Abre una copia de un proyecto en modo plan y pide que explique su estructura
 **Qué comprobar:** Obtienes una explicación contrastable antes de permitir ediciones
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ollama`, `litellm`, `awesome-agent-skills`
+**Combina con:** `ollama`, `litellm`, `opencode-manager`, `t3code`
 **Alternativas (elige una):** `claude-code`, `codex`, `goose`, `gemini-cli`, `aider`
 
 ## `opencode-manager`
@@ -490,6 +492,7 @@ _No se adivina el paquete ni se ejecuta un despliegue por el nombre del repo._
 **Primera prueba propuesta:** Instala la extensión y usa un modelo local o cuenta para explicar un archivo antes de permitir comandos
 **Qué comprobar:** Puedes revisar contexto enviado, modelo y diff propuesto
 Revisión documental individual; instalación no ejecutada por Alexandría.
+**Combina con:** `ollama`, `llama-cpp`, `context7`
 
 ## `openhands`
 role=platform · exec=hybrid · setup=medium · mcp=False · prov=— · tags=agents,automation,typescript,docker
@@ -520,7 +523,7 @@ _Comando documentado en la fuente revisada; no equivale a una prueba de instalac
 **Primera prueba propuesta:** Arranca Agent Canvas y crea una sesión que solo examine un proyecto de ejemplo
 **Qué comprobar:** Puedes reconocer agente, backend y permisos de la sesión
 Revisión documental individual; instalación no ejecutada por Alexandría.
-**Combina con:** `ecc`, `sandbox`
+**Combina con:** `claude-code`, `codex`, `sandbox`, `ecc`
 **Alternativas (elige una):** `open-swe`
 
 ## `openidea`

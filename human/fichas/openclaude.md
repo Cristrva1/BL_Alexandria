@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio · **MCP** 🔌 sí
 
+## ¿Qué es?
+
+OpenClaude, CLI de agente de programación multi-proveedor publicada por Twigpine. Según su propio NOTICE, deriva del código propietario de Claude Code de Anthropic y solo las modificaciones se ofrecen con MIT «donde sea legalmente posible» (GitHub muestra NOASSERTION). Tiene ~34k estrellas (v0.36.0) y fue creado en abril de 2026.
+
+## ¿Qué hace?
+
+Mantiene un flujo de trabajo de terminal (herramientas, agentes, MCP, comandos slash) con proveedores compatibles con OpenAI, Gemini, GitHub Models, Codex OAuth, Ollama y otros. Usa Exa como búsqueda web por defecto en modelos que no son de Anthropic.
+
+## ¿Cómo lo hace?
+
+Se instala con `npm install -g @twigpine/openclaude@latest` (Node.js ≥24.22.1). El paquete anterior ya no se actualiza. Declara no estar afiliado a Anthropic.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [Ollama](ollama.md) | Proveedor local soportado. | Configura Ollama como backend. |
+| [litellm](litellm.md) | Usar el proxy LiteLLM como backend compatible con OpenAI. (combinación por arquitectura) | Apunta el proveedor OpenAI al proxy. |
+| [Context7](context7.md) | Documentación de librerías vía MCP. (combinación por arquitectura) | Añade el MCP de Context7. |
+
+**Notas:** Sin alternativas declaradas. Riesgo legal y de propiedad intelectual: deriva de código propietario de Anthropic. Pregunta de pertenencia al catálogo (solo anotada).
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.36.0 (2026-11-13) · licencia declarada no estándar (NOASSERTION) (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/Twigpine/openclaude/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelos locales documentados. El paquete actual es @twigpine/openclaude; no es Claude Code y el autor indica no copiar indiscriminadamente sus credenciales ni .claude |
 | Coste | El coste depende del proveedor o la ruta. Admite modelos locales y proveedores remotos con API u OAuth; las cuotas dependen de la ruta elegida |
 | Equipo | Preparación según la ruta elegida. Node >=24.22.1; proveedor o Ollama; carpeta de prueba |
-
-El paquete actual es @twigpine/openclaude; no es Claude Code y el autor indica no copiar indiscriminadamente sus credenciales ni .claude
-
-## Qué puedes hacer con él
-
-Agente de código abierto para terminal que conecta proveedores remotos y modelos locales con herramientas y MCP.
-
-## Por qué destaca
-
-Usos propuestos: Usar un agente con Ollama; Comparar un backend API con Codex OAuth.
-
-## Cómo funciona
 
 El paquete actual es @twigpine/openclaude; no es Claude Code y el autor indica no copiar indiscriminadamente sus credenciales ni .claude
 

@@ -10,6 +10,32 @@
 
 **Ejecución** 🔀 híbrido · **Rol** 🖥️ app · **Setup** 🟡 medio
 
+## ¿Qué es?
+
+MiMoCode, asistente de programación para terminal de Xiaomi MiMo, construido como fork de OpenCode. Licencia MIT. Tiene ~14k estrellas (v0.1.17).
+
+## ¿Qué hace?
+
+Mantiene las capacidades de OpenCode (múltiples proveedores, TUI, LSP, MCP, plugins) y añade memoria persistente, gestión inteligente de contexto, orquestación de subagentes, bucles autónomos guiados por objetivos y checkpoints automáticos. Incluye búsqueda web con Exa o Tavily.
+
+## ¿Cómo lo hace?
+
+Se instala con `curl -fsSL https://mimo.xiaomi.com/install | bash` o PowerShell. Admite cualquier proveedor de LLM y puede usar opcionalmente skills de `.opencode/skills`.
+
+## ¿Con qué otros repos se combina?
+
+| Repo | Para qué juntarlos | Orden de instalación y cuidados |
+|---|---|---|
+| [OpenCode](opencode.md) | Compatibilidad opcional con skills de OpenCode (`MIMOCODE_ENABLE_OPENCODE_SKILLS`). | Activa la variable para reutilizar tus skills. |
+| [headroom](headroom.md) | Comprimir el contexto en sesiones largas. (combinación por arquitectura) | Envuelve el agente con Headroom si es compatible. |
+| [rtk](rtk.md) | Reducir la salida de comandos. (combinación por arquitectura) | Configura los hooks de rtk si son compatibles. |
+
+**Notas:** Sin alternativas declaradas; funcionalmente compite con opencode (solo anotado).
+
+Estado en GitHub: activo · último push 2026-11-16 · última versión publicada v0.1.17 (2026-11-13) · licencia declarada MIT (consultado el 2026-11-15).
+
+<sub>Descripción redactada a partir de la documentación del autor (revisada el 2026-11-15); no se instaló ni ejecutó. Fuentes: [1](https://github.com/XiaomiMiMo/MiMo-Code/blob/main/README.md)</sub>
+
 ## Acceso, coste y equipo
 
 [Cómo interpretar estas rutas](../acceso.md)
@@ -23,18 +49,6 @@
 | Modelos locales | Modelo local no documentado. Son adaptadores de terceros y la importación de credenciales no demuestra autorización universal del proveedor; no se confirma una ruta local en este README |
 | Coste | El coste depende del proveedor o la ruta. Documenta MiMo OAuth, Codex Plus o Pro e importación de autenticación Claude Code además de API; los términos y límites dependen de cada servicio |
 | Equipo | Preparación según la ruta elegida. Terminal; cuenta o proveedor admitido; carpeta de prueba |
-
-Son adaptadores de terceros y la importación de credenciales no demuestra autorización universal del proveedor; no se confirma una ruta local en este README
-
-## Qué puedes hacer con él
-
-Asistente de código de Xiaomi MiMo para la terminal con herramientas de archivos, comandos, Git y memoria persistente.
-
-## Por qué destaca
-
-Usos propuestos: Probar un asistente de terminal; Estudiar memoria y herramientas del proyecto.
-
-## Cómo funciona
 
 Son adaptadores de terceros y la importación de credenciales no demuestra autorización universal del proveedor; no se confirma una ruta local en este README
 
